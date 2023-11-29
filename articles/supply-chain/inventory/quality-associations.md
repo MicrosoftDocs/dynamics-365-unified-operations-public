@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: InventTestAssociationTable
+ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
 # ROBOTS:
 audience: Application User
 # ms.devlang:

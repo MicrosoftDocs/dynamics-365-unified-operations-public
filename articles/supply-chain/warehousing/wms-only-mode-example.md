@@ -19,9 +19,17 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This article provides an example scenario that shows how to create inbound and outbound shipment orders. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
+This article provides an example scenario that shows how to create inbound and outbound shipment orders via a message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 
-To create inbound and outbound shipment orders, you must post a message by using [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. The [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management then processes the message, and the orders are created in the warehouse system.
+To easily tryout the creation process of inbound and outbound shipment orders via messages, you can set *Enable manual outbound shipment order message creation* and *Enable manual inbound shipment order message creation* to `Yes` for a *Source system* record. This will make it possible to create the shipment order messages directly within the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-using.md#maintain-messages) pages.
+
+Another quick way to post example messages are via the [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests.
+
+In both example cases the [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management will process the messages, and the orders are created in the warehouse system.
+
+> [!TIP]
+> To completely skip the shipment order creation processes via messages you can create the **Inbound shipment orders** and **Outbound shipment orders** directly in the order pages by enallowing the *Enable manual inbound shipment order creation* and *Enable manual outbound shipment order creation* settings for a *Source system*.
+
 
 The same message structure logic applies to both the inbound and outbound shipment order messages:
 
@@ -75,7 +83,7 @@ For the `InboundShipmentOrderMessages` inbound shipment order header message, yo
 When you use [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `InboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON example
-POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
+POST {{resource}}/data/InboundShipmentOrderMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -88,7 +96,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
 The `InboundShipmentOrderLineMessages` message looks like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/InboundShipmentOrderLineMessages
+POST {{resource}}/data/InboundShipmentOrderLineMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -104,7 +112,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderLineMessages
 To commit the messages, post a *complete* message for the header and lines. The complete message looks something like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
+POST {{resource}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
 ```
 
 > [!NOTE]
@@ -125,7 +133,7 @@ For the `OutboundShipmentOrderMessages` outbound shipment order header message, 
 When you use [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `OutboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages
+POST {{resource}}/data/OutboundShipmentOrderMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -140,7 +148,7 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages
 The `OutboundShipmentOrderLineMessages` message looks like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/OutboundShipmentOrderLineMessages
+POST {{resource}}/data/OutboundShipmentOrderLineMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -156,7 +164,7 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderLineMessages
 To commit the messages, post a *complete* message for the header. The complete message looks something like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
+POST {{resource}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
 ```
 
 > [!NOTE]

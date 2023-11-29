@@ -81,6 +81,7 @@ You can configure mobile device menu items that use one of the following **Work 
 - *Transfer order item receiving*
 - *Transfer order line receiving*
 - *Load item receiving*
+- *License plate receiving*
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
@@ -112,6 +113,9 @@ To use deferred receiving processing, you must first create a deferred receiving
 - *Error*
 - *Received*
 
-If an *Execute deferred receiving \[License plate ID\]* batch job fails, the related **Mixed license plate receiving status** field is set to *Error*. To view the reason for the failure, select the failed job, and then select **Processing errors**. Take the appropriate action to address the error (for example, by updating a line quantity or deleting a line). Then manually rerun the process by selecting **Complete license plate**.
+If an *Execute deferred receiving \[Receiving processing ID\]* batch job fails, the related **Mixed license plate receiving status** field is set to *Error*. To view the reason for the failure, select the failed job, and then select **Processing errors**. Take the appropriate action to address the error (for example, by updating a line quantity or deleting a line). Then manually rerun the process by selecting **Complete license plate**.
+
+> [!TIP]
+> In case you would like to view the guid value *Receiving processing ID* used for the background processing task, you can simply get the column added into the the Mixed license plate receiving grid via the [personalization tools](../../fin-ops-core/dev-itpro/get-started/personalize-user-experience#personalization-tools.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

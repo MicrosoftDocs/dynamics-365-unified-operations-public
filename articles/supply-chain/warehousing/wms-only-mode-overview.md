@@ -29,7 +29,7 @@ The integration of Supply Chain Management WMS functionality with external ERP a
 
 Warehouse management only mode provides several deployment options to support the business needs of running your [warehouse management](warehouse-management-overview.md) processes.
 
-The following illustration provides a high-level diagram of the elements and processes of an integrated system.
+You can [**start a free trial of Microsoft Dynamics 365 Supply Chain Management**](https://go.microsoft.com/fwlink/?linkid=2252982) via the [Unified admin experience for finance and operations apps](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview) to try out an implementation according to the below illustration of a high-level diagram of the elements and processes of an integrated system. See [here for an example](wms-only-mode-example.md).
 
 :::image type="content" source="media/wms-only-high-level-integrations.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-high-level-integrations.svg":::
 
@@ -79,12 +79,12 @@ For a more detailed description of this process and the related processes, see [
 
 ## Unsupported processes
 
-The following high-level processes aren't supported out of the box when Supply Chain Management is integrated with external systems.
+The following high-level processes aren't supported out of the box when Supply Chain Management is integrated with external systems. The list are mostly relevant for existing customers already running warehouse management processes and considering to uptake the *Warehouse management only mode* functionality.  
 
 | Process | Description |
 |---|---|
 | Return order processing with disposition codes | When you use the inbound shipment orders that are related to an inbound return process, you can't use the process that's used by [sales return orders](sales-returns.md). That process supports return reason codes and disposition codes as part of the flow for the **Return order receiving (and put away)** mobile device menu item. |
-| Inbound Warehouse Management mobile app flows | The Warehouse Management mobile app flows for inbound shipment orders don't support [goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), where the receiving process is handled against a container. |
+| Inbound Warehouse Management mobile app flows | The Warehouse Management mobile app flows for inbound shipment orders don't support: <li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), where the receiving process is handled against a container.</li><li>[Deferred receiving](mixed-license-plate-receiving.md#deferred-receiving-processing), where the actual inventory on-hand registration gets postponed and run via background processing.</li>  |
 | Production flows | Inbound and outbound shipment orders don't support production order, batch order, or kanban processing, including material consumption and reporting as finished via the Warehouse Management mobile app. In addition, you can't use [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md) in combination with inbound and outbound shipment orders. |
 | Transportation management processes | The transportation management engines that are currently supported for the purchase and sales orders aren't supported for the inbound and outbound shipment order processes. Therefore, Supply Chain Management Transportation management integration isn't supported out of the box. |
 | Creation of orders from the warehouse app | The process of creating outbound shipment orders from the Warehouse Management mobile app isn't supported. (That process resembles the *Create transfer order from license plates* process for mobile devices.) |
@@ -94,4 +94,3 @@ The following high-level processes aren't supported out of the box when Supply C
 | Items enabled for [catch weight processing](catch-weight-processing.md) | Items that are enabled for catch weight processing aren't supported for inbound or outbound shipping orders. |
 | Policies defined per vendor or customer accounts | Representations of vendors and customers aren't used for inbound or outbound shipping orders. Therefore, you can't use related order processing policies with this type of setup. For example, you can't use customer-specific or vendor-specific [product filters](filters-and-filter-codes.md). |
 | Order line *Registration* and *Pick* update processing | Inbound and outbound shipment order lines don't support the manual registration and unregistration processes that are supported by other types of order lines (such as purchase, sales, and transfer order lines). |
-| [Item arrival journal](../inventory/arrival-overview.md) processing | In the current version, inbound shipment order lines can be processed via an item arrival journal. However, no load ID is associated with the related inventory transactions. Therefore, you can't use the out-of-box [shipment receipt](wms-only-mode-using.md#shipment-receipts) information or have the [inbound shipment order status](wms-only-mode-using.md#inbound-shipment-orders) updated. |

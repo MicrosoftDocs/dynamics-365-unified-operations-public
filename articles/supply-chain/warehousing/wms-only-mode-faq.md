@@ -73,6 +73,7 @@ Depending on your setup on the **Inbound shipment order policies** FastTab of th
 - Automatically, when an advanced shipping notice (ASN) is imported
 - Via a manual process
 - As part of the Warehouse Management mobile app receiving process
+- As part of an *Order receiving completed* process
 
 When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
@@ -83,3 +84,15 @@ If you enable Warehouse management only mode and are already running a periodic 
 ## Why do I receive the following error when I process a transfer order: "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form"?
 
 In addition to setting up item model groups that don't use costing and general ledger settings (see [Master and reference data](wms-only-mode-exchange-data.md#master-data)), you must enable [Warehouse-specific inventory transactions](warehouse-transactions.md) for the *Transfer issue* and *Transfer receipt* warehouse scenarios.
+
+## Can I attach documents and notes to the inbound and outbound shipment orders?
+
+Yes you can. Both the *Inbound and Outbound shipment order messages* supports document attachments. You can view the [OData Postman example](https://go.microsoft.com/fwlink/?linkid=2250135), containing the `InboundShipmentOrderDocumentAttachmentMessages` and `OutboundShipmentOrderDocumentAttachmentMessages` and as well view the `Inbound shipment order messages composite entity` and `Outbound shipment order messages composite entity` in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) which contains the child entities `Inbound shipment order document attachment messages` and `Outbound shipment order document attachment messages`.
+
+## Why cant't I see and search for page names related to Warehouse management only mode?
+
+Even though the feature for the *Warehouse management only mode* functionality is enabled, you must create a record in the *Source systems* page before lookup of the related pages can be done. It as well requires the current user's default company having a *Source system* record inserted To search for the page names.
+
+## Why does my registered inventory transaction not have a *Load ID*?
+
+In case you use the [Item arrival journal](../inventory/arrival-overview.md) process to receive update inbound shipment order line quantities the inventory transaction will not get associated to a load. To archive this you must use the *Order receiving completed* process which creates loads for registered inventory transaction not being associated to a load. This process can get triggered directly from an *Inbound shipment order* or via a background process **Warehouse management** \> **Periodic tasks** \> **Inbound shipment order receiving completed**.

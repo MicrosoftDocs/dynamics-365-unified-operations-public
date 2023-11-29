@@ -4,7 +4,7 @@ description: This article explains how to exchange data and business events betw
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup
 ms.topic: how-to
 ms.date: 08/03/2023
 audience: Application User
@@ -59,6 +59,11 @@ For consistent communication, several types of master and reference data must be
 >
 > - For product variants, only the **Item number** field from the order line messages is used when message value mappings are applied for an item.
 > - Be sure to set the **Scanning** option on the **General** tab of the **Item - bar code** page to *Yes* for each bar code.
+
+### Consigner and consignee information
+
+To easy the warehouse operation setup you can create and use the data for *consigners* and *consignees* and their related group definitions. This could for example be for a setup process related to a [quality order creation process](../inventory/quality-associations.md) for a specific consigner og consigner group.
+Note that the *Inbound shipment order policies* as part of the *Source systems* setup nor the inbound shipment order message processing requires the fields for the *Consigner's account number* to exist in the entity for the **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Consigners**. The same "free text" concept exists for the outbound shipment order process related to the *Consigneer's account number*.
 
 ## Progress data and business events
 
@@ -143,9 +148,11 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 
 ## On-hand inventory reconciliation
 
-Warehouse management only mode can generate data for an on-hand inventory reconciliation process when you generate a **Create source system on-hand inventory** report (at **Warehouse management \> Inquiries and reports \> Create source system on-hand inventory report**).
+Warehouse management only mode can generate data for an on-hand inventory reconciliation process when you generate a **Create source system on-hand inventory** report (at **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Create source system on-hand inventory report**).
 
 To create the header and line data, you must specify **Source system** and **As of date** values. You must also select the level of inventory dimensions that the report should be generated for.
+
+When inventory related to *Inbound shipment orders* gets received the inventory on-hand gets physically updated based on the status of the `Registered` inventory transactions and when inventory gets shipped via *Outbound shipment orders* the physical inventory on-hand gets reduced base on the `Picked` inventory transactions. This physical inventory on-hand representation of the `Registered` and `Picked` items will remain until the related `Shipment receipt` and `Shipment packing slip` journals gets posted as part of the [background finalization processes](wms-only-mode-setup.md#background-processes). To include this part of the physical inventory on-hand for the export, make sure to enable the setting *Include Registered and Picked inventory quantities*.
 
 The external system will be informed about the available data via the `WHSSourceSystemInventoryOnhandReportBusinessEvent` business event. It can read the data via the `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines` data entities.
 
@@ -154,6 +161,6 @@ The external system will be informed about the available data via the `WHSSource
 
 ## Warehouse inventory update logs
 
-For integrations that require very quick on-hand inventory synchronization processes, you can use the *Warehouse inventory update log*. This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
+For integrations that require very quick on-hand inventory synchronization processes, you can use the **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**. This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
 
 By default, the *Publish warehouse inventory update log updates* background process is set to run every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.

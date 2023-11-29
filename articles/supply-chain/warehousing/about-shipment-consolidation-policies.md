@@ -34,10 +34,10 @@ The shipment consolidation process that uses shipment consolidation policies all
 
 Shipment consolidation policies are used for the following functionality:
 
-- The automated release-to-warehouse batch job
-- The **Release to warehouse** command in a sales order or transfer order
-- The dedicated **Release to warehouse** page
-- The **Release to warehouse** command on the **Load planning workbench** page
+- The automated release-to-warehouse batch jobs
+- The **Release to warehouse** command in a sales order, transfer order, and outbound shipment orders
+- The dedicated **Release to warehouse** pages
+- The **Release to warehouse** command on the **Outbound load planning workbench** page
 - The manual consolidation of shipments on the **Consolidate shipments** and **Shipment consolidation workbench** pages
 
 Before shipment consolidation policies were introduced, the consolidation function existed as a setting at the warehouse level. All orders for all customers from a single warehouse were treated as though they had the same consolidation requirements. Shipment consolidation policies add support for scenarios where different organizations have different requirements for shipment consolidation.
@@ -46,11 +46,11 @@ Queries are used to identify the shipment consolidation policy that applies, and
 
 When the *Shipment consolidation policies* feature is turned on for your system, the **Consolidate shipment at release to warehouse** setting that was previously available on the **Warehouses** setup page is hidden. To help you transition to the new shipment consolidation feature, a function on the **Shipment consolidation policies** page lets you create a default policy that automatically includes the old setting for existing warehouses. After that default policy is created, the **Consolidate shipment at release to warehouse** setting on the **Warehouses** setup page will no longer be considered. For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
 
-You can use the **Release to warehouse** page to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
+You can use the **Release [oot load prder type] to warehouse** pages to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
 
-You can use the **Release \> Release to warehouse** command on the **Load planning workbench** page to build outbound loads that are based on sales order and transfer order lines before you do the release to the warehouse. These loads use the same consolidation logic that was introduced together with the consolidation of shipment policies.
+You can use the **Release \> Release to warehouse** command on the **Outbound load planning workbench** page to build outbound loads that are based on sales, transfer, and outbound shipment order lines before you do the release to the warehouse. These loads use the same consolidation logic that was introduced together with the consolidation of shipment policies.
 
-You can use the **Shipment consolidation workbench** page to consolidate existing shipments that haven't yet been confirmed but have already been released to the warehouse. This functionality supports scenarios where the automated release process, which has its own shipment consolidation, is run multiple times a day, but potential additional consolidations are manually identified before the shipment to carriers is completed during the confirmation process. This functionality lets you consolidate outbound shipments that are created from sales order or transfer order lines at any time after the shipments are released to the warehouse but before they are confirmed.
+You can use the **Shipment consolidation workbench** page to consolidate existing shipments that haven't yet been confirmed but have already been released to the warehouse. This functionality supports scenarios where the automated release process, which has its own shipment consolidation, is run multiple times a day, but potential additional consolidations are manually identified before the shipment to carriers is completed during the confirmation process. This functionality lets you consolidate outbound shipments that are created from sales, transfer, or outbound shipment order lines at any time after the shipments are released to the warehouse but before they are confirmed.
 
 The **Shipment consolidation workbench** page works like the load building workbench, where you can assess multiple shipments at the same time and assign a non-consolidated order to a specific shipment. You can apply shipment consolidation templates to assess proposed consolidations multiple times and confirm them. Some rules are implemented to prevent unauthorized consolidation and to warn you about possible errors.
 
@@ -60,7 +60,7 @@ This section describes the pages, commands, and features that are changed or add
 
 ### Shipment consolidation policies page
 
-Policies are differentiated by work order type. The **Sales orders** type represents _Sales order_ shipments, and the **Transfer orders** type represents _Transfer issue_ shipments.
+Policies are differentiated by work order type. The **Sales orders** type represents *Sales order* shipments, the **Transfer orders** type represents *Transfer issue* shipments, and the **Outbound shipment order** type represents *Outbound shipment order* shipments.
 
 Every shipment consolidation policy has a query that defines when it's applied and a sequence number that determines the execution order. Consolidation is applied for each unique combination of the selected fields. An additional parameter that is provided is used for consolidation with existing (open) shipments. The policies are evaluated and applied every time that a new shipment is created (before wave processing).
 
@@ -79,6 +79,14 @@ The following list shows the mandatory fields. Because shipments are always spli
 
     - **From warehouse:** _InventTransferTable.InventLocationIdFrom_
     - **To warehouse:** _InventTransferTable.InventLocationIdTo_
+
+- For outbound shipment orders:
+
+    - **Account number:** _WHSShipmentTable.AccountNum_
+    - **Delivery recipient:** _WHSShipmentTable.DeliveryName_
+    - **Postal address (RecId):** _WHSShipmentTable.DeliveryPostalAddress_
+    - **Warehouse:** _WHSShipmentTable.InventLocationId_
+    - **Source system:** _WHSShipmentTable.SourceSystem_
 
 The following fields are unavailable for all document types. These fields aren't visible in the user interface (UI), and they can't be used for consolidation.
 

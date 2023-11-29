@@ -46,6 +46,9 @@ Use the **Source systems** page to set up each external system that you want to 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Message value mapping** to open a dialog box where you can define how items and warehouses are uniquely identified in incoming documents. You can also specify whether loads for inbound shipment orders are automatically created as part of the setup on the **Inbound shipment order policies** FastTab. Tooltip help is provided for each field. When you've finished configuring settings in the dialog box, select **OK**.
 
+> [!NOTE]
+> You cannot find the menu items related the Warehouse management only mode functionality, nor search for them, before a record has been created in the *Source systems* page. The search of pages as well requires the current user's default company having a *Source system* record inserted.
+
 ### Background processes
 
 As part of the [Source system](#source-systems) creation process, the following [automated background processes](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) are automatically created:

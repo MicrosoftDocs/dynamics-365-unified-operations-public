@@ -27,6 +27,15 @@ To set up your system so that it automatically creates an inbound load for each 
 
 An inbound load is now automatically created each time that you [create a purchase order](../procurement/tasks/create-purchase-order.md).
 
+## Automatically create inbound loads at Warehouse management mobile app purchase order receiving
+
+To set up your system so that it automatically creates an inbound load for purchase order lines not already related to open loads, follow these steps.
+
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. On the **Loads** tab, set the **Automatically create at purchase order receiving** option to *Yes*.
+
+This option is for example valuable when using the **Load receiving completed confirmation policy for purchase orders** without a process to create loads upfront. Each of the registered purchase order line transactions gets associated with the created *Load ID* and thereby the following cost update processes can get properly matched with the actual warehouse registered inventory. You can read more about the inbound flows [here](inbound-load-handling.md).
+
 ## Automatically create inbound loads for new inbound shipment orders
 
 To set up your system so that it automatically creates inbound loads for new inbound shipment orders, based on the source system, order type, and/or account, follow these steps.
@@ -38,9 +47,11 @@ To set up your system so that it automatically creates inbound loads for new inb
     - To edit an existing source system, select it in the list pane, and then select **Edit** on the Action Pane.
 
 1. For the new or selected source system, select the **Inbound shipment order policies** FastTab. The grid might have several rows to define policies for each of several order types and/or accounts. Alternatively, the grid might have just one row that applies to all order types and accounts. Use the toolbar on the FastTab to add or remove rows in the grid as required.
-1. For each row where you want to automatically create inbound loads, set the **Load synchronization policy** field to *Full synchronization*.
+1. For each row where you want to automatically create inbound loads as part of the inbound shipment order message processing, set the **Load synchronization policy** field to *Full synchronization*.
 
 An inbound load is now automatically created each time that you [import and process an inbound shipment order](wms-only-mode-overview.md) for the relevant source system, order type, and account.
+
+In case you perform an Warehouse management mobile app receiving process against an inbound shipment order line which is not associated with an open load a load will automatically get created as part of the registration process and the related inventory transaction will get the *Load ID* assigned.
 
 ## <a name="create-an-inbound-load-manually"></a>Manually create an inbound load from order lines
 
