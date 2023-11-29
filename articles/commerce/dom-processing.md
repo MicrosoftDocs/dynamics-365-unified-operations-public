@@ -2,7 +2,7 @@
 title: DOM processing
 description: This article describes how distributed order management (DOM) processes sales orders in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/17/2023
+ms.date: 11/29/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -19,7 +19,7 @@ This article describes how distributed order management (DOM) processes sales or
 
 ## Configure DOM processor batch job
 
-DOM will run only in a batch job. 
+DOM will run only in a batch job.
 
 To configure the DOM processor batch job for DOM runs, follow these steps.
 
@@ -56,9 +56,20 @@ If the **Maximum number of order lines per optimization** value is 0:
 - For the Simplified Solver type, DOM creates a batch for every 100 sales lines.
 - For the Production Solver type, DOM creates a batch for every 1500 sales lines.
 
+> [!NOTE]
+> If you set a large value for **Maximum number of order lines per optimization**, the DOM processor job takes a longer time to complete because it runs on a batch server. To improve performance, set an appropriate value to ensure that DOM can use more batch servers.
+
 ## Inventory lookup
 
-DOM looks up available inventory by viewing on-hand inventory in warehouse V2 entities (for example, `InventWarehouseOnHandAggregatedView`). The on-hand inventory supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. Other dimensions such as location, inventory status, license plate are not supported. To support on-hand inventory on other dimensions or custom dimensions, you must create customizations. For more information, see [DOM extensibility](./dom-extensibility.md).
+DOM looks up available inventory by viewing on-hand inventory in warehouse V2 entities (for example, `InventWarehouseOnHandAggregatedView`). The on-hand inventory supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. Other dimensions such as location, inventory status, license plate are not supported. 
+
+To view the on-hand inventory used by DOM, enter the following URL in your browser's address bar, replacing `<DomainName>` with the domain name of your environment and `<CompanyName>` with the name of your legal entity.
+
+`https://<DomainName>/?cmp=<CompanyName>&mi=SysTableBrowser&TableName=InventWarehouseOnHandAggregatedView`
+
+DOM also looks up reserved inventory on the sales lines to be processed. Similar to on-hand inventory, DOM only supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. If the reserved inventory uses other dimensions such as location, inventory status, license plate, it won't be considered by DOM.
+
+To support on-hand or reserved inventory on other dimensions or custom dimensions, you must build customizations. For more information, see [DOM extensibility](./dom-extensibility.md).
 
 ## Calculate distance
 

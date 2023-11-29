@@ -2,7 +2,7 @@
 title: DOM rules
 description: This article describes the rules of distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/17/2023
+ms.date: 11/29/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -21,7 +21,7 @@ Here are some of the common attributes that can be defined for all rule types:
 
 - **Start date** and **End date** – Use these fields to set the rule start and end dates.
 - **Disabled** – Only rules that have a value of **No** for this field are considered in a DOM run.
-- **Hard constraint** – A rule can be defined as either a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule, regardless of the setting of the **Hard constraint** attribute. In other words, every rule is applied. The only exception is the **Location priority** rule, which is always treated as a hard constraint. In the second iteration, rules that aren't defined as hard constraint rules are removed, and the order or order lines that weren't assigned to locations when all the rules were applied are assigned to locations.
+- **Hard constraint** – A rule can be defined as either a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule, regardless of the setting of the **Hard constraint** attribute. In other words, every rule is applied. In the second iteration, rules that aren't defined as hard constraint rules are removed, and the order or order lines that weren't assigned to locations when all the rules were applied are assigned to locations. The only exception is the **Location priority** rule, which is always treated as a hard constraint.
 
 ## Minimum inventory rule
 
@@ -40,7 +40,7 @@ Use the following parameters to configure partial orders rule:
 - **Fulfill partial orders?** - This parameter is only available when **Maximum fulfilling locations** is set to **Any number**. When enabled, a sales order can be partially fulfilled; the sales line with sufficient inventory is fulfilled first while remaining sales lines aren't fulfilled.
 - **Fulfill partial lines?** - This parameter is only available when **Maximum fulfilling locations** is set to **Any number**, and **Fulfill partial orders?** is enabled. When this parameter is enabled, a sales line can be partially fulfilled with current inventory, and the remaining quantity is split into a new sales line. If the sales line must be split between two locations, DOM ensures that prices and taxes are appropriately spread across the lines.
 
-Starting in Commerce version 10.0.31, the **Prevent order splitting by DOM based on order value or included products** feature was released to enhance the partial orders rule. Once the feature is enabled, you can specify a **Sales order amount** for the partial orders rule, and sales orders with amount less than the **Sales order amount** value aren't split even if you set **Maximum fulfilling locations** to a value greater than 1. Furthermore, you can define a list of categories or products to ensure that an order is never split when these categories or products are part of the order.
+To enhance the partial orders rule, in Commerce version 10.0.31 the **Prevent order splitting by DOM based on order value or included products** feature was introduced. After you enable the feature, you can specify a **Sales order amount** for the partial orders rule, and sales orders with amounts less than the **Sales order amount** value aren't split even if you set **Maximum fulfilling locations** to a value greater than "1". You can also define a list of categories or products to ensure that an order is never split when these categories or products are part of the order.
 
 ## Offline fulfillment location rule
 
@@ -60,7 +60,7 @@ This rule lets organizations define the maximum distance that a location or grou
 
 This rule lets organizations define the maximum number of orders that a location or group of locations can process. During the optimization process, the system considers orders that haven't been shipped from these locations. This check is done across profiles, so if overlapping maximum numbers of orders are defined across profiles for the same location, the system considers the maximum number of orders that's defined across all profiles.
 
-When the maximum orders rule is enabled and there are multiple fulfillment plan tasks created during DOM processing, due to technical limitation the rule might not be applied correctly. The number of fulfillment tasks created is determined by the **Thread utilization (percentage)**, see [Set up DOM](dom-set-up.md) for details. If you use this rule, Microsoft recommends that you set **Thread utilization (percentage)** to a value of **0**. For Commerce version 10.0.38 and later, when this rule is enabled, only one fulfillment plan task is created, regardless of the **Thread utilization (percentage)** value.
+When the maximum orders rule is enabled and there are multiple fulfillment plan tasks created during DOM processing, the rule might not be applied correctly due to technical limitations. The number of fulfillment tasks created is determined by the **Thread utilization (percentage)** value. If you enable the maximum order rule, Microsoft recommends that you set the **Thread utilization (percentage)** value to "0". For Commerce version 10.0.38 and later, when this rule is enabled only one fulfillment plan task is created, regardless of the **Thread utilization (percentage)** value. For more information, see [Set up DOM](dom-set-up.md).
 
 ## Additional resources
 
