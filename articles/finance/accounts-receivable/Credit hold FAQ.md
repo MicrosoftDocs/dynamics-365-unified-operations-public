@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Credit statistics FAQ
-description: This article answers some frequently asked questions about credit statistics
+title: Credit limit holds FAQ
+description: This article answers some frequently asked questions about credit checks, credit holds and the warning and error messages used in Credit management. 
 author: JodiChristiansen
-ms.date: 10/15/2023
+ms.date: 11/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.custom: 539093
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jchrist
-ms.search.validFrom: 2023-10-15
+ms.search.validFrom: 2023-11-29
 ms.dyn365.ops.version: 10.0.35
 
 ---
@@ -32,15 +32,18 @@ This article answers some frequently asked questions about the credit check, cre
 
 ## After upgrading to version 10.0.35 or above it seems like the credit check is not working when it was working before upgrading. 
 
-Blocking rules and credit management checkpoints are required to check the customer credit limit on a sales order. In versions 10.0.34 and before there was a bug that allowed the credit check to work even when the blocking rule(s) were not setup. This has been fixed in versions 10.0.35 and above. Be sure that a blocking rule is setup for the credit limit used (or another blocking rule) and that the credit management checkpoint(s) are selected in Credit and collections parameters. See the Blocking rules page for more information on the blocking rules. 
+Blocking rules and credit management checkpoints are required to check the customer credit limit on a sales order. In versions 10.0.34 and before there was a bug that allowed the credit check to work even when the blocking rule(s) were not setup. This has been fixed in versions 10.0.35 and above. Be sure that a blocking rule is setup for the credit limit used (or another blocking rule) and that the credit management checkpoint(s) are selected in **Credit and collections parameters**. See the Blocking rules page for more information on the blocking rules. 
 
 ## I am getting a warning or error message on the sales order but the sales order isn't on a credit hold and I cannot see it in the Credit management hold list. 
 
 If you see the below warning message in yellow or the error message in red these are messages from the "old" or prior credit functionality. The error or warning message is from the **Message when exceeding credit limit** in **Credit and collections parameters**, Credit tab, Credit limits fastTab. This error message is also because the **Check credit limit on sales order** option is set to **Yes** meaning we want the credit limit checked on sales orders. However, the warning/error message cannot be suppressed because they are the same messages that are used with Free text invoices. So these messages can be ignored. 
 
+[![Sales order warning and error message.](./media/SalesOrderWarning.png)](./media/SalesOrderWarning.png)
+
 ## If the warning/error message isn't used then how can I tell if a sales order went into a credit hold. 
 
 When a sales order is sent to the Credit management hold list you will see a posting message in Message details like below. It will also be in the Credit management hold list under Credit and collections > Credit management hold list > All credit holds or Open credit holds. 
+[![CreditManagmentError.](./media/CreditManagementError.png)](./media/CreditManagementError.png)
 
 ## I setup a customer with a credit limit of 0.00 USD. Does this mean the customer has unlimited credit? 
 
@@ -48,7 +51,7 @@ When Credit management is enabled in Feature management the credit limit of 0.00
 
 ## I have credit mangement groups setup but the sales orders are still not blocked based on the credit limit. 
 
-Sales orders are only blocked if there are credit management blocking rules and checkpoints setup, even when using cucstomer credit groups. See the Credit limit scenarios topic for how credit is calculated when using credit limit groups. 
+Sales orders are only blocked if there are credit management blocking rules and checkpoints setup, even when using customer credit groups. See the Credit limit scenarios topic for how credit is calculated when using credit limit groups. 
 
 
 
