@@ -110,7 +110,7 @@ If you need to use the above-mentioned features in your one-box development envi
 1. Create an application: [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app#register-an-application)
 2. [Create a certificate](/azure/key-vault/certificates/create-certificate#partnered-ca-providers) and [add it to your service principal](/entra/identity-platform/quickstart-register-app#add-a-certificate).
 3. Install the certificate in the Cloud-Hosted environment virtual machine. 
-4. In the K:\AosService\webroot\web.config file, replace the .Realm value with the  Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
+4. In the K:\AosService\webroot\web.config file, replace the **.Realm** value with the  Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
 
 <pre>&lt;add key="Aad.Realm" value="spn:&lt;insert your application id here&gt;" /&gt;
 &lt;add key="Infrastructure.S2SCertThumbprint" value="&lt;insert thumbprint here&gt;" /&gt;
@@ -123,7 +123,7 @@ If you need to use the above-mentioned features in your one-box development envi
         * Microsoft Graph (User.Read.All and Group.Read.All permissions of type Application) 
     * On the Cloud-Hosted Environment(CHE) grant Read Access to the Network Service for the newly installed certificate.  
 
-To import Electronic Reporting configurations customers can follow instructions for [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+For more information about importing Electronic Reporting configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
 
 ## Frequently asked questions
@@ -144,7 +144,7 @@ The [Deploy to a custom virtual network](#deploy-to-a-custom-virtual-network) se
 
 ### I have a development environment deployed prior to November 15, 2023. Do I need to take any action?
 
-No action is required for your development environment to continue to function as-is. However, Microsoft does encourage customers to limit their tenant's security exposure and recommends removing this certificate if isn't required. See the [External integrations](#external-integrations) section for details on the feature areas requiring this certificate.
+No action is required for your development environment to continue to function as-is. However, Microsoft does encourage customers to limit their tenant's security exposure and recommends removing this certificate if it isn't required. See the [External integrations](#external-integrations) section for details on the feature areas requiring this certificate.
 
 > To optionally remove the Dynamics ERP Application certificate from your tenant’s Service Principal, do the following from any one of your one-box development virtual machines: 
 >
