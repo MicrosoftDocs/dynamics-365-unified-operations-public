@@ -1680,6 +1680,10 @@ items:
         href: perf-test/rsat/rsat-devops-extension.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
+      - name: User-Based authentication
+        href: perf-test/rsat/rsat-user-based-authentication.md
+      - name: Use formulas as parameters
+        href: perf-test/rsat/rsat-using-formulas.md
     - name: Release solutions using Lifecycle Services
       items:
       - name: Develop and release
