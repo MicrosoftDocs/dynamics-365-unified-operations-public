@@ -3,7 +3,7 @@ title: Secure one-box development environments
 description: This article describes how to help secure one-box developer environments.
 author: mnordick
 ms.date: 11/29/2023
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
   - bap-template
 audience: Developer
@@ -110,7 +110,7 @@ If you need to use the above-mentioned features in your one-box development envi
 1. Create an application: [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app#register-an-application)
 2. [Create a certificate](/azure/key-vault/certificates/create-certificate#partnered-ca-providers) and [add it to your service principal](/entra/identity-platform/quickstart-register-app#add-a-certificate).
 3. Install the certificate in the Cloud-Hosted environment virtual machine. 
-4. In the K:\AosService\webroot\web.config file, replace the **.Realm** value with the  Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
+4. In the K:\AosService\webroot\web.config file, replace the "Aad.Realm" value with the  Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
 
 <pre>&lt;add key="Aad.Realm" value="spn:&lt;insert your application id here&gt;" /&gt;
 &lt;add key="Infrastructure.S2SCertThumbprint" value="&lt;insert thumbprint here&gt;" /&gt;
