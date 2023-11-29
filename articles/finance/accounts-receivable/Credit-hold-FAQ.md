@@ -34,7 +34,7 @@ This article answers some frequently asked questions about the credit check, cre
 
 Blocking rules and credit management checkpoints are required to check the customer credit limit on a sales order. In versions 10.0.34 and before there was a bug that allowed the credit check to work even when the blocking rule(s) were not setup. This has been fixed in versions 10.0.35 and above. Be sure that a blocking rule is setup for the credit limit used (or another blocking rule) and that the credit management checkpoint(s) are selected in **Credit and collections parameters**. See the [Credit holds for sales orders](cm-sales-order-credit-holds.md) for more information on the blocking rules. 
 
-## I am getting a warning or error message on the sales order but the sales order isn't on a credit hold and I cannot see it in the Credit management hold list. 
+### I am getting a warning or error message on the sales order but the sales order isn't on a credit hold and I cannot see it in the Credit management hold list. 
 
 If you see the below warning message in yellow or the error message in red these are messages from the "old" or prior credit functionality. The error or warning message is from the **Message when exceeding credit limit** in **Credit and collections parameters**, Credit tab, Credit limits fastTab. This error message is also because the **Check credit limit on sales order** option is set to **Yes** meaning we want the credit limit checked on sales orders. However, the warning/error message cannot be suppressed because they are the same messages that are used with Free text invoices. These messages will appear if Credit management is enabled or disabled. When Credit management is enabled, they can be ignored. 
 
