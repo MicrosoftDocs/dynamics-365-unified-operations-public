@@ -1,5 +1,5 @@
 ---
-title: Inventory Visibility app user interface version 2
+title: Inventory Visibility app user interface versions
 description: This article describes the difference between version 1 and version 2 of the Inventory Visibility app user interface. It describes the new operations supported in version 2 and how to migrate to it from version 1.
 author: yufeihuang
 ms.author: yufeihuang
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Inventory Visibility app user interface version 2
+# Inventory Visibility app user interface versions
 
 The Inventory Visibility app runs in Microsoft Power Apps. The current version of the app supports two user interface versions. You can choose which version you prefer to use. The following versions are available:
 
@@ -26,7 +26,7 @@ This article describes the differences between the two versions, the new operati
 The following settings and features are only accessible from the UI version 1 configuration page:
 
 - Clean up of preloaded on-hand results
-- Operations related to inventory allocation <!--KFM: Is this right? It seems like we have at least some settings for this...  -->
+- Operations related to inventory allocation <!--KFM: Is this right? It seems like we have at least some settings for this in V2.  -->
 
 > [!NOTE]
 > The majority of the features for setting up and viewing preloaded on-hand results are supported by both UI versions. Only the clean up of existing preloaded on-hand result requires UI version 1.
