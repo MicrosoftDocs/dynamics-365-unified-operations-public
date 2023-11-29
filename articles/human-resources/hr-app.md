@@ -170,7 +170,7 @@ This section is for administrators of an organization that has installed the app
         - EssWorkCalendarDayEntity
         - EssWorkerDetailEntity
 
-### Submitting questions or submit feedback about the Human Resources app
+### Submitting questions or feedback about the Human Resources app
 
 The Human Resources App Viva Engage (Yammer) group is a great place to exchange tips, check on issues, and submit feedback to Microsoft. The group includes Microsoft partners, customers, experts, and employees.
 
