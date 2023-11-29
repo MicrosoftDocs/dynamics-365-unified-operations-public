@@ -22,11 +22,11 @@ A business matrix is a roadmap for business data. Business data can be defined b
 
 *Record to report* covers the process from data collection through the final financial report. It ensures that business events are accurately recorded, processed, and summarized into financial statements and management reports.
 
-| Business process | Fact | Grain | Accounting Date Dim | CalendarDateDim | Reporting dimensions | Ledger | Reference Number | General ledger account | SubledgerNumber |
-|---|---|---|---|---|---|---|---|---|---|
-| General Ledger transactions | GeneralLedgerFact| One row per account entry per ledger account | X | X | X | X | X | X | X |
-| Budget transactions | BudgetFact | One row per account entry per ledger account | | X | X | X | X | X | |
-| Budget reservation transactions | BudgetReservationFact | One row per reservation transaction | X | | X | X | X | X | |
+| Business process                | Fact                  | Grain                                      | Accounting Date | Ledger | Reference Number | General ledger account | SubledgerNumber |
+| ------------------------------- | --------------------- | ------------------------------------------ | --------------- | ------ | ---------------- | ---------------------- | --------------- |
+| General Ledger Transactions     | GeneralLedgerFact     | 1 row per account entry per ledger account | x               | x      | x                | x                      | x               |
+| Budget transactions             | BudgetFact            | 1 row per account entry per ledger account |                 | x      | x                | x                      |                 |
+| Budget reservation transactions | BudgetReservationFact | 1 row per reservation transaction          | x               | x      | x                | x                      |                 |
 
 ## Procure to pay
 
@@ -34,17 +34,17 @@ A business matrix is a roadmap for business data. Business data can be defined b
 
 | Business process | Fact | Grain | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Purchase requisition | PurchaseRequisitionFact | One row per requisition line | X | X | | X | X | X | X | | X | X | X | X | | | |
+| Purchase requisition | PurchaseRequisitionFact | One row per requisition line | X |   | | X | X | X | X | | X | X | X | X | | | |
 | Purchase order | | | | | | | | | | | | | | | | | |
-| | PurchaseOrderFact | One row per purchase order (PO) line | X | X | | X | X | X | X | | X | X | X | X | | X | |
-| Product receipt | ProductReceiptFact | One row per receipt line | X | X | | X | X | X | X | | X | | X | X | | | |
+| | PurchaseOrderFact | One row per purchase order (PO) line | X |   | | X | X | X | X | | X | X | X | X | | X | |
+| Product receipt | ProductReceiptFact | One row per receipt line | X |   | | X | X | X | X | | X | | X | X | | | |
 | Purchase invoices | | | | | | | | | | | | | | | | | |
-| | PurchaseInvoiceFact | One row per invoice line item | X | X | X | X | X | X | X | | X | X | X | X | | X | |
-| Purchase invoice matching | PurchaseInvoiceMatchingFact | One row per invoice line that's matched to a PO | X | X | X | X | X | X | | | X | | X | X | | | |
-| Purchase payments | PurchasePaymentFact | One row per payment | X | X | X | | | | X | | X | | X | X | | X | X |
-| Purchase payment matching | PurchasePaymentMatchingFact | One row per payment that's matched to an invoice | X | X | | | | | X | | X | | X | X | | X | |
-| Expense requisition | ExpenseRequisitionFact | One row per requisition line | X | X | | | | | X | | X | X | X | | | | |
-| Expense report | ExpenseReportFact | One row per expense | X | X | | | | | X | | X | X | X | X | | X | |
+| | PurchaseInvoiceFact | One row per invoice line item | X |   | X | X | X | X | X | | X | X | X | X | | X | |
+| Purchase invoice matching | PurchaseInvoiceMatchingFact | One row per invoice line that's matched to a PO | X |   | X | X | X | X | | | X | | X | X | | | |
+| Purchase payments | PurchasePaymentFact | One row per payment | X |   | X | | | | X | | X | | X | X | | X | X |
+| Purchase payment matching | PurchasePaymentMatchingFact | One row per payment that's matched to an invoice | X |  | | | | | X | | X | | X | X | | X | |
+| Expense requisition | ExpenseRequisitionFact | One row per requisition line | X |  | | | | | X | | X | X | X | | | | |
+| Expense report | ExpenseReportFact | One row per expense | X |  | | | | | X | | X | X | X | X | | X | |
 | Purchase distribution | PurchaseDistributionFact | One row per term | X | X | | | | | | | | | X | X | | X | |
 | Purchase subledger | PurchaseSubledgerFact | One line per posted accounting event (voucher) | X | X | X | | | | X | X | X | X | | X | | X | |
 
@@ -52,19 +52,19 @@ A business matrix is a roadmap for business data. Business data can be defined b
 
 *Order to cash* covers the process from the receipt of a customer order through payment collection. It's crucial for managing revenue, ensuring customer satisfaction, and optimizing cash flow.
 
-| Business process | Fact | Grain | AccountingDateDim | BankAccountDim | LedgerDim | DateDim | NumberDim (RPD) | PartyDim | BuyingPartyDim | ProductDim | ProjectDim | PotalAddressDim | ReportingDimensionsDim | StorageLocationDim | SubledgerNumberDim | SalesCategory | WorkerDim | DeliveryModeDim |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Sales order | SalesOrderFact | One row per sales order line | | | X | | X | X | X | X | X | X | X | X | X | | | |
-| Service order | ServiceOrderFact | One row per sales order line | | | X | | X | | X | X | X | X | X | | X | | X | |
-| Picking slip | PickingSlipFact | One row per picked item | | | X | | X | | X | X | | | | X | | | X | X |
-| Packing slip | PackingSlipFact | One row per item on a packing slip | X | | X | | X | | X | X | | X | | X | X | X | | X |
-| Sales contract billing | SalesContractBillingFact| One row per sales billing line per contract period | | | X | | X | | X | X | X | | X | X | | | | |
-| Deferred revenue| DeferredRevenueFact | One row per billed revenue line per contract period | X | | X | | | | | | | | | | | | | |
-| Sales invoice | SalesInvoiceFact | One row per sales invoice line | X | | X | | X | | X | X | X | X | | X | X | X | | |
-| Sales returns | SalesReturnsFact | One row per returned order line | | | X | | X | | X | X | | X | | X | | X | | |
-| Sales payments| SalesPaymentFact | One row per payment | X | X | X | | X | X | X | | | X | X | | X | | | |
-| Sales payments matching | SalesPaymentMatchingFact | One row per payment that's matched to an invoice | X | | X | | X | | X | | | X | | | X | | | |
-| Sales subledger| SalesSubledgerFact| One row per posted accounting event (voucher) | X | | X | | | | X | | | X | X | | X | | | |
-| Sales distribution| SalesDistributionFact | One row per term | | | | | | | | | | | | | | | | |
-| Bank reconciliation | BankRegisterFact | One row per bank transaction | X | X | X | | X | | | | | | | | X | | | |
-| Bank reconciliation| BankStatementFact | One row per bank statement transaction | | X | X | | X | | | | | | | | X | | | |
+| Business process        | Fact                     | Grain                                             | AccountingDateDim | BankAccountDim | LedgerDim | DateDim | NumberDim (RPD) | PartyDim | BuyingPartyDim | ProductDim | ProjectDim | PotalAddressDim | ReportingDimensionsDim | StorageLocationDim | SubledgerNumberDim | SalesCategory | WorkerDim | DeliveryModeDim |
+| ----------------------- | ------------------------ | ------------------------------------------------- | ----------------- | -------------- | --------- | ------- | --------------- | -------- | -------------- | ---------- | ---------- | --------------- | ---------------------- | ------------------ | ------------------ | ------------- | --------- | --------------- |
+| Sales Order             | SalesOrderFact           | 1 row per sales order line                        |                   |                | x         |         | x               | x        | x              | x          | x          | x               |                        | x                  | x                  |               |           |                 |
+| Service Order           | ServiceOrderFact         | 1 row per sales order line                        |                   |                | x         |         | x               |          | x              | x          | x          | x               |                        |                    | x                  |               | x         |                 |
+| Picking Slip            | PickingSlipFact          | 1 row per item picked                             |                   |                | x         |         | x               |          | x              | x          |            |                 |                        | x                  |                    |               | x         | x               |
+| Packing Slip            | PackingSlipFact          | 1 row per item on packing slip                    | x                 |                | x         |         | x               |          | x              | x          |            | x               |                        | x                  | x                  | x             |           | x               |
+| Sales Contract Billing  | SalesContractBillingFact | 1 row per sales billing  line per contract period |                   |                | x         |         | x               |          | x              | x          | x          |                 |                        | x                  |                    |               |           |                 |
+| Deferred Revenue        | DeferredRevenueFact      | 1 row per revenue line billed per contract period | x                 |                | x         |         |                 |          |                |            |            |                 |                        |                    |                    |               |           |                 |
+| Sales Invoice           | SalesInvoiceFact         | 1 row per Sales Invoice line                      | x                 |                | x         |         | x               |          | x              | x          | x          | x               |                        | x                  | x                  | x             |           |                 |
+| Sales Returns           | SalesReturnsFact         | 1 row per order line returned                     |                   |                | x         |         | x               |          | x              | x          |            | x               |                        | x                  |                    | x             |           |                 |
+| Sales Payments          | SalesPaymentFact         | 1 row per payment                                 | x                 | x              | x         |         | x               | x        | x              |            |            | x               |                        |                    | x                  |               |           |                 |
+| Sales Payments Matching | SalesPaymentMatchingFact | 1 row per payment matched to invoice              | x                 |                | x         |         | x               |          | x              |            |            | x               |                        |                    | x                  |               |           |                 |
+| Sales Subledger         | SalesSubledgerFact       | 1 row per posted accounting event (voucher)       | x                 |                | x         |         |                 |          | x              |            |            | x               | x                      |                    | x                  |               |           |                 |
+| Sales Distribution      | SalesDistributionFact    | 1 row per term                                    |                   |                |           |         |                 |          |                |            |            |                 | x                      |                    |                    |               |           |                 |
+| Bank Reconciliation     | BankRegisterFact         | 1 row per bank transaction                        | x                 | x              | x         |         | x               |          |                |            |            |                 |                        |                    | x                  |               |           |                 |
+| Bank Reconciliation     | BankStatementFact        | 1 row per bank statement transaction              |                   | x              | x         |         | x               |          |                |            |            |                 |                        |                    | x                  |               |           |                 |
