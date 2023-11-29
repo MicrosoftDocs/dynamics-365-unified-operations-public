@@ -38,7 +38,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 |Canada	|04:00 UTC |Saturday, Sunday|Six hours|
 |China	|16:00 UTC|Friday, Saturday|Six hours|
 |Europe	|22:00 UTC|Friday, Saturday|Six hours|
-|France	|16:00 UTC|Friday, Saturday|Six hours|
+|France	|22:00 UTC|Friday, Saturday|Six hours|
 |India	|18:30 UTC|Friday, Saturday|Six hours|
 |Japan	|16:00 UTC|Friday, Saturday|Six hours|
 |Norway	|22:00 UTC|Friday, Saturday|Six hours|
