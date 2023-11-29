@@ -32,7 +32,7 @@ This article answers some frequently asked questions about the credit check, cre
 
 ## After upgrading to version 10.0.35 or above it seems like the credit check is not working when it was working before upgrading. 
 
-Blocking rules and credit management checkpoints are required to check the customer credit limit on a sales order. In versions 10.0.34 and before there was a bug that allowed the credit check to work even when the blocking rule(s) were not setup. This has been fixed in versions 10.0.35 and above. Be sure that a blocking rule is setup for the credit limit used (or another blocking rule) and that the credit management checkpoint(s) are selected in **Credit and collections parameters**. See the Blocking rules page for more information on the blocking rules. 
+Blocking rules and credit management checkpoints are required to check the customer credit limit on a sales order. In versions 10.0.34 and before there was a bug that allowed the credit check to work even when the blocking rule(s) were not setup. This has been fixed in versions 10.0.35 and above. Be sure that a blocking rule is setup for the credit limit used (or another blocking rule) and that the credit management checkpoint(s) are selected in **Credit and collections parameters**. See the Credit holds for sales orders Blocking rules page for more information on the blocking rules. 
 
 ## I am getting a warning or error message on the sales order but the sales order isn't on a credit hold and I cannot see it in the Credit management hold list. 
 
