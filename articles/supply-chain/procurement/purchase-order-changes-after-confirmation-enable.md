@@ -17,11 +17,12 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> The AI-powered and Copilot functionality that's described in this article is available as part of a preview release. All other functionality is generally available. The content and the functionality related to AI-powered and Copilot functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> Dependent on the availability of Copilot and generative AI  backoffices services in your region, the data verse environment needs to be enabled for cross region calls by enabling the ["Allow data movement across regions for generative AI features."](https://learn.microsoft.com/en-us/power-platform/admin/geographical-availability-copilot)
 >
-> **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
->
-> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
+> This is not needed if required AI services are available in the dataverse environment environment.
+
+> [!Important]
+> To learn about the capabilities and limitations of AI-powered Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
 
 <!--KFM: Preview until further notice -->
 
