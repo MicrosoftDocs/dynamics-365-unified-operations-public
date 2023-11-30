@@ -146,6 +146,7 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to sandbox or live environments. | Yes | Yes | *Sandbox* or *Live* |
     | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
+    | Enhanced totaling audit | Introduced in 10.0.35, This field when 'True' will revalidate online order total calculations with the PayPal service prior to authorization. | No | No | True/False (default False if blank) |
     
 > [!NOTE]
 > When testing payments in a sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API keys** must never be used. Sandbox environments are for sandbox testing only.
@@ -169,6 +170,7 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
     | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
+    | Enhanced totaling audit | Introduced in 10.0.35, This field when 'True' will revalidate online order total calculations with the PayPal service prior to authorization. | No | No | True/False (default False if blank) |
 
 ### Set up the PayPal payment method for the online store
 
