@@ -74,20 +74,26 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 7. Select **Application**, and then enter the same **Service ID** number.
 8. Select **Destination**, and then enter the **Service ID** number concatenated with the **_EDIWIN** value.
    > [!NOTE]
-   > For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*
-9. Select **Group**, and then select the name of the secret that you previously created for the Group.
-10. Select **Token**, and then select the name of the secret that you created for the token.
-11. Repeat steps 5 through 8 for the **Waiting for response from Edicom** action.
-12. Select **Save**, and close the page.
-13. Repeat steps 4 through 9 for the following feature setups if your business process assumes involvement of the related types of documents:
+   > For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*.
+   
+9. Select **Group**, and then enter the obtaind **Group** code.
+10. Select **Auth token**, and then select the name of the secret that you created for the token.
+11. Select **Save**, and close the page.
+12. Repeat steps 4 through 109 for the following feature setups if your business process assumes involvement of the related types of documents:
   
    - OIOUBL Sales credit note processing
    - OIOUBL Project invoice processing
    - OIOUBL Project credit note processing
-   - Peppol Sales invoice processing
-   - Peppol Sales credit note processing
+   - Peppol Sales invoice processing   - Peppol Sales credit note processing
    - Peppol Project invoice processing
    - Peppol Project credit processing
+
+13. On the **Setups** tab, in the grid, select the **Get status** feature setup, and then select **Edit**.
+14. In the **Export channel** tab, in the **Parameters** section, select the **Auth token**, and then select the name of the secret that you created for the token.
+15. Select **Domain**, and then enter the obtaind **Service ID** number.
+16. Select **Application**, and then enter the same **Service ID** number.
+17. Select **Group**, and then enter the obtaind **Group** code.
+18.  Select **Save**, and close the page.
 
 ## Finance configuration
 
