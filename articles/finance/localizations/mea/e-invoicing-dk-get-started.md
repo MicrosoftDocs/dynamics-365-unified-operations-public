@@ -84,7 +84,8 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
    - OIOUBL Sales credit note processing
    - OIOUBL Project invoice processing
    - OIOUBL Project credit note processing
-   - Peppol Sales invoice processing   - Peppol Sales credit note processing
+   - Peppol Sales invoice processing
+   - Peppol Sales credit note processing
    - Peppol Project invoice processing
    - Peppol Project credit processing
 
@@ -103,7 +104,12 @@ Some additional parameters must be configured directly in Microsoft Dynamics 365
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-5. Save your changes, and close the page.
+5. In the **Integration channels** section add the record for the channel which will be used for electronic invoices submission in a batch mode.
+6. In the **Channel**, column enter enter the **ISV** value. This channel name is used by default. You can use different channel name if needed. In this case you need to adjust **Customer invoice context model** configuration accordingly.
+7. In the **Company column** column, select a required legal entity code.
+8. In the **Document context** column, refer to the **Customer invoice context model** configuration with **Data channel context** definition.
+9. In the **Channel type** column, select the **Export** value.
+10. Save your changes, and close the page.
 
 ## Finance business data configuration
 
