@@ -80,18 +80,18 @@ You can automatically net customer and vendor balances by defining a netting rul
    - By invoice balance - From largest to smallest
    - By invoice balance - From smallest to largest
 
-4. Select the netting agreement scope. If you select **All**, all the active netting agreements are included in this rule; If you select **Selected**, you should define a netting agreement list.
+4. Select the netting agreement scope. If you select **All**, all the active netting agreements are included in this rule. If you select **Selected**, define a netting agreement list.
 5. In the **Include credit not and debit note** field, in the automatic netting, select **Yes** or **No**.
-6. On the **Netting criteria** FastTab define the criteria if users only want to automatically net certain vendor accounts, customer accounts, or invoice currency.
+6. On the **Netting criteria** FastTab, define the criteria if users only want to automatically net certain vendor accounts, customer accounts, or invoice currency.
 7. Activate the netting rule.
 
 ### Run automatic netting
 
 There are three ways to run the automatic netting.
 
-- Trigger a one time automatic netting by selecting **Automatic netting** on the **Customer and vendor balances netting** page.
-- Trigger a one time automatic netting by selecting **Automatic netting** on the **Netting** menu in the **Cash and bank management** modules.
-- Schedule periodical automatic netting by selecting **Process automation** on the **Netting** menu in the **Cash and bank management** modules.
+- Trigger a one-time automatic netting by selecting **Automatic netting** on the **Customer and vendor balances netting** page.
+- Trigger a one-time automatic netting by selecting **Automatic netting** on the **Netting** menu in the **Cash and bank management** modules.
+- Schedule periodic automatic netting by selecting **Process automation** on the **Netting** menu in the **Cash and bank management** modules.
 
 ## Reverse netting
 
