@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Install Microsoft Dynamics 365 Finance business performance planning application
-description: This article describes how to install the Microsoft Dynamics 365 Finance business performance planning application.
+title: Install the Business performance planning application
+description: This article describes how to install the Business performance planning application in Microsoft Dynamics 365 Finance.
 author: ShielaSogge
 ms.date: 11/28/2023
 ms.topic: article
@@ -26,29 +26,24 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: Human Resources
 
 ---
-# Installing the business performance planning application
+# Install the Business performance planning application
 
-This article describes how to install the business performance planning application. You must also install the Power BI visuals to fully use business performance planning. Please review the Power BI visual install documentation here: **xxxx.xxxx – link to that doc.**
+This article describes how to install the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](power-bi/developer/visuals/).
 
-## Install business performance planning
+## Install the planning application
+Complete the following steps to install the planning application.
 
-In **Power Platform admin center** navigate to the environment that you would like to install planning on by selecting **Environments** in the navigation pane.
+1, In the **Power Platform Admin Center**, in the navigation page, select **Environments**.
+2. Select the environment on which you will install the planning application.
+3. Select **Resources** > **Dynamics 365 apps**.
+4. Select **Install app**, and in the list of apps, find and select **Dynamics 365 Finance business performance planning**.
 
-Select the environment that you would like to install planning on.
+> [!IMPORTANT]
+> A Finance license is required to install the Business performance planning application. For more information about finance licensing, see [Finance pricing](https://dynamics.microsoft.com/en-us/finance/pricing/).
 
-Select **Resources** from the menu, and then select Dynamics 365 apps
-
-Select **Install app** from the menu.
-
-Select **Dynamics 365 Finance business performance planning** from the list of apps.
-
-Important! You must have purchased a Finance license to view and select the Dynamics 365 for Finance business performance planning application for install. Without having a Finance license, the app will not be visible in the Power Platform Admin Center. For more information about finance licensing, see: [Finance pricing](https://dynamics.microsoft.com/en-us/finance/pricing/)
-
-Once in the installation form, the agreement to the **terms of service** must be selected before the **install** button will be enabled.
-
-Once the installation has completed, navigate to the **Environment URL** for your environment. (This can be found by selecting Environments in the left navigation pane, and then selecting the environment where planning is installed. The environment URL will be in the Details section of the form.)
-
-Select the environment URL. The Apps form of the environment will display the **Business performance planning** app. Select the application.
+5. On the **Install** page, agree to the terms of service and select **Install**.
+6. After installation is complete, navigate to and select the **Environment URL** for your environment. To find this, on the left navigation pane, select **Environments** and then select the environment where you installed the planning application. The environment URL is located in the **Details** section of the page.
+7. The **Apps** page of the environment is available in the planning application. Select the application.
 
 The home screen should appear.
 
@@ -68,14 +63,13 @@ Business performance planning viewer
 
 To assign users to the roles select the ellipses to the right of the role and choose members. You can add people to the role. Alternatively, you can navigate to the users form, and add roles from there.
 
-## Delete Business performance planning
+## Delete the planning application
+If you need to delete the planning application, follow these steps.
 
-If you must delete Business performance planning, follow these steps.
-
-1.  In the planning application, delete all cubes.
-2.  In the planning application, delete all dimensions.
-1.  In the Microsoft Power Platform, go to the Maker Portal for the environment, and then select Solutions
-2.  Select to view All Solutions
+1.  In the planning application, delete all of the cubes.
+2.  In the planning application, delete all of the dimensions.
+1.  In **Microsoft Power Platform**, go to the **Maker Portal** for the environment, and then select **Solutions**.
+2.  Select to view all solutions.
 3.  To complete delete the solution, delete the solutions in the follow order:
     1.  Dynamics Extended Planning and Analysis Design
     2.  Dynamics Extended Planning and Analysis Controls
