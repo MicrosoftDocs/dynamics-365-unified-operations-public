@@ -43,34 +43,31 @@ Complete the following steps to install the planning application.
 
 5. On the **Install** page, agree to the terms of service and select **Install**.
 6. After installation is complete, navigate to and select the **Environment URL** for your environment. To find this, on the left navigation pane, select **Environments** and then select the environment where you installed the planning application. The environment URL is located in the **Details** section of the page.
-7. The **Apps** page of the environment is available in the planning application. Select the application.
+7. The **Apps** page of the environment is available in the planning application.
+8. Select the application.
 
-The home screen should appear.
+> [!IMPORTANT]
+> Before the planning application can be used, you must assign users to the **Business performance planning** role. The planning roles aren't assigned to anyone by default, including whoever performed the install. For more details about assigning security roles or people to the model-driven app, see [Assign security roles or people to a model-driven app](/power-apps/maker/model-driven-apps/share-model-driven-app#assign-security-roles-or-people-to-a-model-driven-app). 
 
-Important! Before other users can use the business performance planning app it must be shared. Please review the documentation on assign security roles or people to the model-driven app here: [https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/share-model-driven-app\#assign-security-roles-or-people-to-a-model-driven-app](../../power-apps/maker/model-driven-apps/share-model-driven-app#assign-security-roles-or-people-to-a-model-driven-app). The security roles that should be associated with the business performance planning app are: Business performance planning administrator, Business performance planning contributor, Business performance planning power user, Business performance planning viewer
+9. To assign the business performance planning roles to users, in the **Power Platform Admin Center**, in the navigation pane, select **Environments** and then select the environment on which you installed the planning application.
+10. On the home page of the environment, select **Security roles** > **See all**. The following **Business performance planning** roles should be listed:
 
-Important! The planning roles are not assigned to users by default, including the user who performed the install. You must assign users a Business performance planning role before accessing the application. If a role is not assigned you may not be able to access the home page or you may not be able create dimensions or cubes.
+    - Business performance planning administrator
+    - Business performance planning contributor
+    - Business performance planning power user
+    - Business perfromance planning viewer
 
-To assign the business performance planning roles to users, navigate to the home page of the environment by selecting the **Environment** option in the navigation pane within the **Power Platform Admin Center**. On the right side of the Environment form select **See all** under **Security roles.** The following planning roles will be listed:
 
-Business performance planning administrator
-
-Business performance planning contributor
-
-Business performance planning power user
-
-Business performance planning viewer
-
-To assign users to the roles select the ellipses to the right of the role and choose members. You can add people to the role. Alternatively, you can navigate to the users form, and add roles from there.
+11. Select the ellipses to the right of each role, and select users to add to the role. Alternatively, you can navigate to the **Users** page, and add roles from there.
 
 ## Delete the planning application
 If you need to delete the planning application, follow these steps.
 
 1.  In the planning application, delete all of the cubes.
 2.  In the planning application, delete all of the dimensions.
-1.  In **Microsoft Power Platform**, go to the **Maker Portal** for the environment, and then select **Solutions**.
-2.  Select to view all solutions.
-3.  To complete delete the solution, delete the solutions in the follow order:
+3.  In **Microsoft Power Platform**, go to the **Maker Portal** for the environment, and then select **Solutions**.
+4.  Select to view all solutions.
+5.  To delete the entire solution, delete the solutions in the following order:
     1.  Dynamics Extended Planning and Analysis Design
     2.  Dynamics Extended Planning and Analysis Controls
     3.  Dynamics Extended Planning and Analysts Power CAT
