@@ -53,9 +53,9 @@ The **Exchange rate type enhancement for bank foreign currency revaluation** fea
 1. Go to **Cash and bank management** > **Setup** > **Cash and bank management parameters**.
 2. On the **General** tab, in the **Exchange rate type source** field, select one of the following values:
 
-  - **Ledger** - Select this option to use the exchange rate type defined on the ledger setup.
-  - **Specific** - Select this option to use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
-  - **Bank** - Select this option use use the accounting currency exchange rate type and reporting currency exchange rate type defined in the bank account.
+  - **Ledger** - Use the exchange rate type defined on the ledger setup.
+  - **Specific** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
+  - **Bank** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the bank account.
 
 > [!NOTE]
 > If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation. You won't be able to use the foreign currency revaluation that is used by other countries or regions.
