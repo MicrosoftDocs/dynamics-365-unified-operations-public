@@ -32,7 +32,7 @@ This article describes dimensions and how dimensions are used in business perfor
 
 ## Dimensions
 
-Dimensions are descriptors that define your fact data. The structure of a dimension is comprised of columns, that are referred to as attributes of the dimension. These columns can be used for creating hierarchical structures in your analysis. For example, a dimension may include the columns of date, month, and year. This allows analyzing of data by drilling down from year, to month, to date. Common dimensions are people, product, places, and time.
+Dimensions are descriptors that define your fact data. The structure of a dimension is comprised of columns, that are referred to as attributes of the dimension. These columns can be used for creating hierarchical structures in your analysis. For example, a dimension may include the columns of date, month, and year. This allows users to analyze data by drilling down from year, to month, to date. Common dimensions are people, product, places, and time.
 
 There are two types of dimensions in planning: 
  - Linked dimensions - Linked dimensions are connected to Dataverse tables.
@@ -49,23 +49,23 @@ When creating a new dimension, you can choose to create a dimension from an exis
 
 To create a new linked dimension in planning, follow these steps:
 1. Go to **‘Create dimension**.
-2. Name the dimension - The dimension must have a name. Spaces and special characters can be used.
-3. Table name- The name of the table that will be created in Dataverse. This will also be the table name that is displayed in Power BI when working with the visuals.
-4. Select to add columns from the current environment - The current environment is the Power Platform environment in which planning was deployed. After this is selected, the **Linked table** list is enabled.
+2. In the **Dimension** field, enter a name. Spaces and special characters can be used.
+3. In the **Table** field, enter a name of the table that will be created in Dataverse. This will also be the table name that is displayed in Power BI when working with the visuals.
+4. Select to add columns from the current environment. The current environment is the Power Platform environment in which planning was deployed. After this is selected, the **Linked table** list is enabled.
 
 >[!Note]
 >Native Dataverse tables and enabled virtual entity tables will be displayed in the list. To learn more about enabling virtual entities, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
-5. Select the columns that you want to include in the dimension - You can select which columns from the Dataverse table to include in the dimension. The selected columns will display in Power BI and can be used for sorting and filtering data in the planning visuals. For example, the **Account** table is selected for the dimension. There are multiple columns in that table that you may want to filter or sort data on. However, there are also columns that may not provide value to your analysing of data such as **Created by** or **Modified by**. Therefore, these columns have been automatically removed. Select the columns that you would like to include in the dimension.
+5. Select the columns that you want to include in the dimension. Select which columns from the Dataverse table to include in the dimension. The selected columns will display in Power BI and can be used for sorting and filtering data in the planning visuals. For example, the **Account** table is selected for the dimension. There are multiple columns in that table that you may want to filter or sort data on. However, there are also columns that may not provide value to your analysing of data such as **Created by** or **Modified by**. Therefore, these columns have been automatically removed. Select the columns that you would like to include in the dimension.
 
 >[!Important]
 > When creating a dimension, the dimension must have a primary key to ensure that there are unique records within the dimension table. The planning application automatically selects the primary column from the source table. The column that is used for the primary column is displayed at the top of the page in the **Select columns** step of the wizard.
 
-To select a column that you want included in the dimension, you must select the circle to the left of the column name. This doesn’t show by default until you hover to the left side of the column name.
+To select a column to include in the dimension, select the circle to the left of the column name by hoving.
 
 6. Adjust columns - You can update the column name for the columns that you have selected to include in the dimension. For example, you may have selected to include the Address 1: City column in the entity, but would like it display as City. You can adjust the column name to be City.
 
-Once the information above has been entered, you can create the dimension.
+After the information above has been entered, you can create the dimension.
 
 ### Creating a dimension from Excel
 
