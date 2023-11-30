@@ -32,11 +32,11 @@ This article describes dimensions and how dimensions are used in business perfor
 
 ## Dimensions
 
-Dimensions are descriptors that define your fact data. The structure of a dimension is comprised of columns, that are referred to as attributes of the dimension. These columns can be used for creating hierarchical structures in your analysis. For example, a dimension may include the columns of date, month, and year. This allows users to analyze data by drilling down from year, to month, to date. Common dimensions are people, product, places, and time.
+Dimensions are descriptors that define your fact data. The structure of a dimension is composed of columns that are referred to as attributes of the dimension. These columns can be used for creating hierarchical structures in your analysis. For example, a dimension may include the columns of date, month, and year. This allows users to analyze data by drilling down from year, to month, to date. Common dimensions are people, product, places, and time.
 
 There are two types of dimensions in planning: 
  - Linked dimensions - Linked dimensions are connected to Dataverse tables.
- - Standard dimensions - Standard dimensions are non-dynamic dimensions that are updated manually by either adding new rows or uploading new data via Excel.
+ - Standard dimensions - Standard dimensions are nondynamic dimensions that are updated manually by either adding new rows or uploading new data via Excel.
 
 In business process planning, dimensions are created three ways:
  - From the current environment (linked dimensions)
@@ -50,22 +50,22 @@ When creating a new dimension, you can choose to create a dimension from an exis
 To create a new linked dimension in planning, follow these steps:
 1. Go to **‘Create dimension**.
 2. In the **Dimension** field, enter a name. Spaces and special characters can be used.
-3. In the **Table** field, enter a name of the table that will be created in Dataverse. This will also be the table name that is displayed in Power BI when working with the visuals.
+3. In the **Table** field, enter a name of the table that is created in Dataverse. This will be the table name that's displayed in Power BI when working with visuals.
 4. Select to add columns from the current environment. The current environment is the Power Platform environment in which planning was deployed. After this is selected, the **Linked table** list is enabled.
 
 >[!Note]
 >Native Dataverse tables and enabled virtual entity tables will be displayed in the list. To learn more about enabling virtual entities, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
-5. Select the columns that you want to include in the dimension. Select which columns from the Dataverse table to include in the dimension. The selected columns will display in Power BI and can be used for sorting and filtering data in the planning visuals. For example, the **Account** table is selected for the dimension. There are multiple columns in that table that you may want to filter or sort data on. However, there are also columns that may not provide value to your analysing of data such as **Created by** or **Modified by**. Therefore, these columns have been automatically removed. Select the columns that you would like to include in the dimension.
+5. Select the column from Dataverse table that you want to include in the dimension. The selected columns display in Power BI and can be used for sorting and filtering data in the planning visuals. For example, the **Account** table is selected for the dimension. There are multiple columns in that table that you may want to filter or sort data on. There are also columns that may not provide value to your analyzing of data such as **Created by** or **Modified by**. Therefore, these columns have been automatically removed. Select the columns that you would like to include in the dimension.
 
 >[!Important]
 > When creating a dimension, the dimension must have a primary key to ensure that there are unique records within the dimension table. The planning application automatically selects the primary column from the source table. The column that is used for the primary column is displayed at the top of the page in the **Select columns** step of the wizard.
 
-To select a column to include in the dimension, select the circle to the left of the column name by hoving.
+To select a column to include in the dimension, select the circle to the left of the column name by hovering.
 
-6. Adjust columns - You can update the column name for the columns that you have selected to include in the dimension. For example, you may have selected to include the Address 1: City column in the entity, but would like it display as City. You can adjust the column name to be City.
+6. Adjust columns - You can update the column name for the columns that you have selected to include in the dimension. For example, you may have selected to include the Address 1: City column in the entity, but would like it display as City.
 
-After the information above has been entered, you can create the dimension.
+After the information has been entered, you can create the dimension.
 
 ### Creating a dimension from Excel
 
@@ -73,16 +73,16 @@ When creating a new dimension, you can choose to create a dimension from an Exce
 To create a new dimension in planning from excel, follow these steps:
 1. Go to **Create dimension**.
 2. Name the dimension - Enter a name for the dimension. Spaces and special characters can be used.
-3. Table name - This is the name of the table that will be created in Dataverse. This will also be the table name that is displayed in Power BI when working with the visuals.
-4. Select to add columns from Excel - After this is selected, the **Upload an Excel** file option will be enabled. If your spreadsheet has multiple tabs, you can select which tab to use when creating the dimension.
-5. Select the columns that you want to include in the dimension - Select which columns from the Excel file to include in the dimension.
+3. In the **Table** field, enter a name of the table that is created in Dataverse and will be displayed in Power BI when working with visuals.
+4. Select to add columns from Excel and **Upload an Excel** file option is enabled. If your spreadsheet has multiple tabs, select the tab to use when creating the dimension.
+5. Select the columns from the Excel file that you want to include in the dimension.
 
 >[!Important]
 >When creating a dimension, the dimension must have a primary key to ensure that there are unique records within the dimension table. To accomplish this, select the column that would ensure that the records are unique. The column that is used for the primary column is displayed at the top of the page in the **Select columns** step of the wizard.
->To select a column that you want included in the dimension, you must select the circle to the left of the column name. This doesn’t show by default until you hover to the left side of the column name.
+>To select a column to include in the dimension, select the circle to the left of the column name by hovering.
 
 
-6. Adjust columns - You can update the column name for the columns that you have selected to include in the dimension. For example, you may have selected to include the Address 1: City column in the Excel sheet, but would like it display as City. You can adjust the column name to be City.
+6. Adjust columns - You can update the column name for the columns that you have selected to include in the dimension. For example, you may have selected to include the Address 1: City column in the Excel sheet, but would like it display as City.
 
 After the information above has been entered, you can create the dimensions.
 
@@ -90,17 +90,17 @@ After the information above has been entered, you can create the dimensions.
 
 When creating a new dimension, you can choose to create a dimension manually. To create a new dimension in planning, follow these steps:
 1. Go to **Create dimension**.
-2. Name the dimension - Enter the name for the dimension. Spaces and special characters can be used.
-3. Table name - Enter the name of the table that will be created in Dataverse. This will also be the table name that is displayed in Power BI when working with the visuals.
+2. In the **Dimension** field, enter the name for the dimension. Spaces and special characters can be used.
+3. In the **Table** field, enter a name of the table that is created in Dataverse. This will be the table name that's displayed in Power BI when working with visuals.
 4. Columns - Enter the name of the columns that you want included in the dimension, separated by a comma.
-5. Select columns - This step in the wizard is skipped, as the columns that were entered are automatically selected for inclusion in the creation of the dimension.
+5. Select columns - This step in the wizard is skipped, as the entered columns are automatically included in the creation of the dimension.
 
 >[!Important]
->When creating a dimension, the dimension must have a primary key to ensure that there are unique records within the dimension table. To accomplish this, the planning application will automatically create a name column for manually created dimensions and use that as the primary column. The column that is used for the primary column is displayed at the top of the form in the Select Columns step of the wizard.
+>When creating a dimension, the dimension must have a primary key to ensure that there are unique records within the dimension table. To accomplish this, the planning application will automatically create a name column for manually created dimensions and use that as the primary column. The column that is used for the primary column is displayed at the top of the page in the **Select columns** step of the wizard.
 
-6. Adjust columns - This step in the wizard is skipped, as the display names of the column will be what was used when the dimension was created in the **General** section.
+6. Adjust columns - This step in the wizard is skipped, as the display names of the column are used when the dimension is created in the **General** section.
 
-After the information above has been entered, you can create the dimension.
+After the information has been entered, you can create the dimension.
 
 ### Maintaining dimensions
 
@@ -123,7 +123,7 @@ When creating a new row, users can add values for the columns within a row, exce
 
 After adding or editing data, the user must choose to publish the data. If the user closes Excel before publishing the changes, the user will be prompted to save their changes.
 
-After publishing changes from Excel, select refresh on the dimension table to see the updates to the dimension.
+After publishing changes from Excel, select **Refresh** on the dimension table to see the updates to the dimension.
 
 >[!Important]
 >For every dimension, there is a **Source** column. The values can either be **User** or **System**. Rows with a source type of **System** are updated with the values from the linked Dataverse table upon a refresh. Rows that were created via the **Table edit** visual in Power BI will have a source type of **User** and will not be overwritten with any data updates.
@@ -138,9 +138,9 @@ To add a new column of data to any dimension, follow these steps:
 
 ### Delete a column of data
 
-Users can delete a column of data within a dimension. When a column of data in a dimension is deleted, the cube will not be updated. However, the Power BI visuals may be impacted.
+Users can delete a column of data within a dimension. When a column of data in a dimension is deleted, the cube isn't updated. However, the Power BI visuals may be impacted.
 
 ### Delete the dimension
 
-Users can delete a dimension that is not being used in a cube. Go to **Dimensions** and select the dimension in the left preview pane. AFter the appropriate dimension is selected, select **Delete**.
-When a dimension is deleted, the cube will not be updated. However, the Power BI visuals may be impacted.
+Users can delete a dimension that's not being used in a cube. Go to **Dimensions** and select the dimension in the left preview pane. After the appropriate dimension is selected, select **Delete**.
+When a dimension is deleted, the cube isn't updated. However, the Power BI visuals may be impacted.
