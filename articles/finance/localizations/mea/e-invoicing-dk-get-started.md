@@ -100,16 +100,17 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 
 Some additional parameters must be configured directly in Microsoft Dynamics 365 Finance.
 
-1. Make sure that the country/region-specific **Document context** and **Electronic document model mapping** ER configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
-2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-3. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
-4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-5. In the **Integration channels** section add the record for the channel which will be used for electronic invoices submission in a batch mode.
-6. In the **Channel**, column enter enter the **ISV** value. This channel name is used by default. You can use different channel name if needed. In this case you need to adjust **Customer invoice context model** configuration accordingly.
-7. In the **Company column** column, select a required legal entity code.
-8. In the **Document context** column, refer to the **Customer invoice context model** configuration with **Data channel context** definition.
-9. In the **Channel type** column, select the **Export** value.
-10. Save your changes, and close the page.
+1. In the **Feature management** workspace, the **Export channels for electronic invoicing integration** feature must be enabled. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+2. Make sure that the country/region-specific **Document context** and **Electronic document model mapping** ER configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+3. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+4. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
+5. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+6. <a id="ExChannel"></a>In the **Integration channels** section add the record for the channel which will be used for electronic invoices submission in a batch mode.
+7. In the **Channel**, column enter enter the **ISV** value. This channel name is used by default. You can use different channel name if needed. In this case you need to adjust **Customer invoice context model** configuration accordingly.
+8. In the **Company column** column, select a required legal entity code.
+9. In the **Document context** column, refer to the **Customer invoice context model** configuration with **Data channel context** definition.
+10. In the **Channel type** column, select the **Export** value.
+11. Save your changes, and close the page.
 
 ## Finance business data configuration
 
@@ -178,6 +179,14 @@ Follow these steps to enter the type of format for specific customers.
 
 When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**). 
 For more information about how to generate electronic invoices, see [Submit electronic documents to Electronic invoicing](../global/e-invoicing-submit-electronic-documents.md).
+
+> [!NOTE]
+> For Danish electronic invoices submission, additional steps must be completed in addition to the standard submission procedure that was described earlier.
+
+In current implementation, the standard submission procedure just generates electronic invoices and stores them on the service side. It doesn't actually submit them. To submit the generated electronic invoices in a batch mode, follow these steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
+2. In the **Channel** field, select the export channel that you [previously created](#ExChannel). Then select **OK**.
 
 You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**). 
 For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
