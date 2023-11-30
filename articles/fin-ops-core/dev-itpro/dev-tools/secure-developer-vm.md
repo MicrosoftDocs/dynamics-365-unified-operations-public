@@ -41,8 +41,8 @@ Because these Azure resources are under your own management, you might have to c
 Out of the box, your one-box developer environment has the following basic security configuration:
 
 - Management ports on your VM are restricted to Microsoft Dynamics Lifecycle Services IP addresses. You can view these restrictions in the network security group in the resource group for your environment. Lifecycle Services uses the Windows Remote Management (WinRM) management port (5986) to do the initial configuration of your environment and to enable operations such as package deployments from Lifecycle Services.
-- Remote Desktop Protocol (RDP) is one of the primary that ways one-box environments are accessed. Therefore, the RDP port (3389) is allowed by default. RDP access can be limited to your own client IP address in the network security group. As a best practice, you should limit RDP access to clients that require access after deployment. Customers can also consider using other Azure technologies, such as Azure Bastion, to securely obtain RDP access.
-- On port 443, the one-box environment has a public endpoint that is exposed for HTTPS traffic. This endpoint is used by the environment URL and provides access to the product itself, which runs on the VM. By default, the endpoint is exposed to the internet. Although authorization is required for any sign-in to the site, as a best practice, you should still restrict port 443 access to clients that require it. This configuration is specific to your organization, and you must define it after the environment is deployed.
+- Remote Desktop Protocol (RDP) is one of the primary ways that one-box environments are accessed. Therefore, the RDP port (3389) is allowed by default. RDP access can be limited to your own client IP address in the network security group. As a best practice, you should limit RDP access to clients that require access after deployment. Customers can also consider using other Azure technologies, such as Azure Bastion, to securely obtain RDP access.
+- On port 443, the one-box environment has a public endpoint that's exposed for HTTPS traffic. This endpoint is used by the environment URL and provides access to the product itself, which runs on the VM. By default, the endpoint is exposed to the internet. Although authorization is required for any sign-in to the site, as a best practice, you should still restrict port 443 access to clients that require it. This configuration is specific to your organization, and you must define it after the environment is deployed.
 - A storage account is associated with the environment for the storage of non-SQL data, such as document attachments. The configuration file on your VM contains a storage key in an encrypted field to enable your environment to access the storage account. The storage account has a publicly accessible IP address, because some product features require that the storage account be externally accessible.
 - Another storage account (prefixed with "dyn") in your subscription is used to host finance and operations code packages. This storage account is also publicly addressable and is required for Lifecycle Services to access code packages for deployment.
 
@@ -83,48 +83,51 @@ Deployment to a custom virtual network is an advanced configuration. The precedi
 
 Microsoft Defender and Azure Well-Architected security assessments provide general security guidance that applies to any Azure resources that you provision in your subscription, including your one-box development environment resources.
 
-When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, such restrictions break some integration scenarios, such as export to Microsoft Excel, that requires that files be externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner needs to consider if those recommendations are applicable to their needs.
+When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, these restrictions break some integration scenarios, such as export to Microsoft Excel, that require that files are externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner must consider if those recommendations are applicable to their needs.
 
 ## External integrations
 
-Your one-box development environment can integrate with your Microsoft Entra Tenant for added capabilities. These capabilities include,
+Your one-box development environment can integrate with your Microsoft Entra tenant for added capabilities. Here are some of these capabilities:
 
-- Import Users 
-- Import Microsoft Entra ID groups 
-- Import Electronics Reporting configurations
+- Import users.
+- Import Microsoft Entra ID groups.
+- Import Electronic reporting (ER) configurations.
 
-To use these capabilities, it's necessary to configure certificate access to your tenant.
-
-> [!NOTE]
-> Granting access to your Microsoft Entra Tenant should be done with care. Unless these capabilities are necessary for development, Microsoft recommends restricting certificate access to your tenant. 
+To use these capabilities, you must configure certificate access to your tenant.
 
 > [!NOTE]
-> Starting November 15 2023, certificates on your Microsoft Entra Tenant no longer installs on new one-box development environments by default. This impacts the external integrations mentioned in this section. See the following instructions for re-enabling this capability.
+> You should be careful about granting access to your Microsoft Entra tenant. Unless these capabilities are required for development, Microsoft recommends that you restrict certificate access to your tenant.
 >
-> This change does not impact development environments deployed prior to this date. Optionally, these certificates can be removed. See the [Frequently Asked Questions](#frequently-asked-questions) for instructions.
+> As of November 15, 2023, certificates in your Microsoft Entra tenant are no longer installed in new one-box development environments by default. This change affects the external integrations that are mentioned in this section. To reenable this capability, use the instructions that follow.
+>
+> This change doesn't affect development environments that were deployed before November 15, 2023. These certificates can optionally be removed. For instruction, see the [Frequently asked questions](#frequently-asked-questions) section of this article.
 
-If you need to use the above-mentioned features in your one-box development environment, it's necessary to follow the following steps to set up a new application and tenant certificate. 
+If you must use the previously mentioned capabilities in your one-box development environment, follow the steps in the next section to set up a new application and tenant certificate.
 
-### Setting up new application and certificate registration
+### Set up a new application and certificate registration
 
-1. Create an application: [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app#register-an-application)
-2. [Create a certificate](/azure/key-vault/certificates/create-certificate#partnered-ca-providers) and [add it to your service principal](/entra/identity-platform/quickstart-register-app#add-a-certificate).
-3. Install the certificate in the Cloud-Hosted environment virtual machine. 
-4. In the K:\AosService\webroot\web.config file, replace the "Aad.Realm" value with the  Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
+1. Create an application. For more information, see [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app#register-an-application).
+2. [Create a certificate](/azure/key-vault/certificates/create-certificate#partnered-ca-providers), and [add it to your service principal](/entra/identity-platform/quickstart-register-app#add-a-certificate).
+3. Install the certificate on the cloud-hosted environment virtual machine (VM).
+4. In the **web.config** file under **K:\\AosService\\webroot\\**, replace the value of the `Aad.Realm` key with the application ID/client ID. Replace the value of the `Infrastructure.S2SCertThumbprint` key and the `GraphApi.GraphAPIServicePrincipalCert` key with the value of the installed certificate's thumbprint.
 
-<pre>&lt;add key="Aad.Realm" value="spn:&lt;insert your application id here&gt;" /&gt;
-&lt;add key="Infrastructure.S2SCertThumbprint" value="&lt;insert thumbprint here&gt;" /&gt;
-&lt;add key="GraphApi.GraphAPIServicePrincipalCert" value="&lt;insert thumbprint here&gt;" /&gt;</pre>
+    ```
+    <add key="Aad.Realm" value="spn:<your application ID>" />
+    <add key="Infrastructure.S2SCertThumbprint" value="<certificate thumbprint>" />
+    <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
+    ```
 
-5. Add Environment URL as redirect URI for the  Application: [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri)
-6. Assign the following API permissions for the  Application: 
-    * Navigate to API Permissions, then select Add a Permission
-        * Dynamics ERP: Required for accessing Finance and Operations environments. 
-        * Microsoft Graph (User.Read.All and Group.Read.All permissions of type Application) 
-    * On the Cloud-Hosted Environment(CHE) grant Read Access to the Network Service for the newly installed certificate.  
+5. Add the environment URL as a redirect URI for the application. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
+6. Assign the API permissions for the application:
 
-For more information about importing Electronic Reporting configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+    1. Go to **API Permissions**, select **Add a Permission**, and add the following permissions:
 
+        - **Dynamics ERP** – This permission is required to access finance and operations environments.
+        - **Microsoft Graph** (**User.Read.All** and **Group.Read.All** permissions of the **Application** type)
+
+    2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
+
+For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
 ## Frequently asked questions
 
@@ -138,36 +141,34 @@ Many recommendations from such assessments require engagement from the resource 
 - Outbound internet access must remain available for finance and operations apps to work.
 - The environment's Azure storage account can have access restricted, but it must remain accessible by the VM's public IP address and the IP addresses of any authorized client. If you don't correctly allow access, finance and operations features that rely on the storage functionality fail.
 
-### My deployment fails when I try to provision with my custom virtual network. Can Microsoft tell me what is wrong?
+### My deployment fails when I try to provision with my custom virtual network. Can Microsoft tell me what's wrong?
 
 The [Deploy to a custom virtual network](#deploy-to-a-custom-virtual-network) section of this article lists the network access requirements for the Azure resources for your environment. Unfortunately, because of the wide variety of possible configurations, Microsoft Support can't help troubleshoot custom networking configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration. Then incrementally apply your other restrictions to isolate issues with the desired custom configuration.
 
-### I have a development environment deployed prior to November 15, 2023. Do I need to take any action?
+### I have a development environment that I deployed before November 15, 2023. Do I have to take any action?
 
-No action is required for your development environment to continue to function as-is. However, Microsoft does encourage customers to limit their tenant's security exposure and recommends removing this certificate if it isn't required. See the [External integrations](#external-integrations) section for details on the feature areas requiring this certificate.
+No action is required for your development environment to continue to function as is. However, Microsoft encourages customers to limit their tenant's security exposure and recommends that they remove this certificate if it isn't required. For information about the feature areas that require this certificate, see the [External integrations](#external-integrations) section.
 
-> To optionally remove the Dynamics ERP Application certificate from your tenant’s Service Principal, do the following from any one of your one-box development virtual machines: 
->
-> Download version 2.19.1 or later of the Infrastructure scripts for on-premises deployments from the Microsoft Lifecycle Services shared asset library. The asset is available in the global and EU Lifecycle Services regions. For more information see: [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment](../deployment/obtain-infrascripts-onprem.md#download-the-infrastructure-scripts).
->
-> Find the thumbprint of your S2S certificate. To do that open the  K:\AosService\webroot\web.config file and locate the ‘Infrastructure. S2SCertThumbprint’ key. You then specify this thumbprint when running the following script. 
->
-> To remove the certificate from your service principal you can run the following PowerShell script: 
->
-> ``` PowerShell script
-> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint \<thumbprint of your S2S cert\> 
-> ``` 
->
-> If you are unsure if a certificate is registered against your serviceprincipal you can run the following PowerShell script to validate: 
->
-> ``` PowerShell script
-> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint \<thumbprint of your S2S cert\> -Test 
-> ``` 
-> 
-> If your account has access to multiple tenants, you can specify the tenant in which to carry out the operation by running the PowerShell script with your tenant id: 
->
-> ``` PowerShell script
-> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint \<thumbprint of your S2S cert\> -Tenant \<your tenant id\>  
-> ```
->
+To optionally remove the Dynamics ERP application certificate from your tenant's service principal, follow these steps from any one of your one-box development VMs.
+
+1. In Lifecycle Services, download version 2.19.1 or later of the infrastructure scripts for on-premises deployments from the Shared asset library. This asset is available in the global and EU Lifecycle Services regions. For more information, see [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment](../deployment/obtain-infrascripts-onprem.md#download-the-infrastructure-scripts).
+2. Find the thumbprint of your S2S certificate. You must specify this thumbprint when you run the script in the next step. To find it, open the **web.config** file under **K:\\AosService\\webroot\\**, and look for the `Infrastructure.S2SCertThumbprint` key.
+3. Run the following PowerShell script to remove the certificate from your service principal.
+
+    ``` PowerShell
+    .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S certificate>
+    ```
+
+    If you're unsure whether a certificate is registered against your service principal, you can run the following PowerShell script to validate this fact.
+
+    ``` PowerShell
+    .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S certificate> -Test
+    ```
+
+    If your account has access to multiple tenants, you can run the following PowerShell script to specify the tenant where you want to perform the operation.
+
+    ``` PowerShell
+    .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S certificate> -Tenant <your tenant ID>
+    ```
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
