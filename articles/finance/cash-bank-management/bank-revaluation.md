@@ -48,6 +48,14 @@ Before you run the revaluation process, the following setup is required.
 - On the **Currency revaluation accounts** page, select different currency revaluation accounts for each currency and company. If no accounts are defined, the accounts from the **Ledger** page are used.
 - On the **Cash and bank management parameters** page, on the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 
+Feature **Exchange rate type enhancement for bank foreign currency revaluation** is available in 10.0.39 to provide the capability to use additional exchange rate type for foreign currency revaluation. Users can define accounting currency exchange rate type and reporting currency exchange rate type per legal entity or per bank account to override the default type on ledger setup when running foreign currency revaluation.
+
+1. Go to **Cash and bank management** > **Setup** > **Cash and bank management parameters**.
+2. Select **General** tab.
+3. Three options will available in **Exchange rate type source** parameter:
+-   **Ledger** - Select this option to use the exchange rate type defined on ledger setup.
+-   **Specific** - Select this option to use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
+-   **Bank** - Select this option use use the accounting currency exchange rate type and reporting currency exchange rate type defined in bank account.
 
 > [!NOTE]
 > If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation. You won't be able to use the foreign currency revaluation that is used by other countries or regions.
