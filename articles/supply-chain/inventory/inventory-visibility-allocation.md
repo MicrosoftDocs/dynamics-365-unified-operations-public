@@ -58,7 +58,13 @@ The following illustration shows the allocation hierarchy and allocation groups.
 
 [<img src="media/inventory-visibility-allocation-hierarchy.png" alt="Inventory Visibility allocation hierarchy." title="Inventory Visibility allocation hierarchy" width="720" />](media/inventory-visibility-allocation-hierarchy.png)
 
-## Set up inventory allocation
+## Turn on and set up inventory allocation in UI version 2 (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+
+<!--KFM: preview until further notice -->
+
+This section applies when you are using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
 To set up inventory allocation, you must complete the following tasks, which are described in the subsections of this section:
 
@@ -67,11 +73,13 @@ To set up inventory allocation, you must complete the following tasks, which are
 - Set up your allocation groups
 - Update the configuration to activate your new settings
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ### Enable the inventory allocation feature
 
 Follow these steps to enable the inventory allocation feature.
 
-1. In the **Inventory Visibility** app, select **Feature Management** on the navigation pane.
+1. In the **Inventory Visibility** app, select **Feature management** on the navigation pane.
 1. On the **Inventory allocation** tile, select **Manage**.
 1. Set **Enable feature** to *Yes*.
 1. On the toolbar, select **Save**.
@@ -131,11 +139,26 @@ Follow these steps to set up your allocation groups and hierarchy:
 > [!IMPORTANT]
 > Be careful when deleting or changing the allocation hierarchy. For guidance, see [Tips for using allocation](#allocation-tips).
 
-<!--KFM: Do we need a section here called **Update the configuration to activate your new settings** ? -->
+### Update the configuration to activate your new settings
 
-### Enable inventory allocation and set up allocation groups in UI version 1
+<!--KFM: I added this. Am I right that we need this section here? -->
 
-If Inventory Visibility user interface version 1 (UI version 1) is active in your environment, then the procedure for enabling and configuring inventory allocation is slightly different than described elsewhere in this section, but the settings and functionality are similar. See [Inventory Visibility app user interface versions](inventory-visibility-ui-version-2.md) for details about each UI version and how to switch between them. Follow these steps to enable inventory allocation and set up allocation groups if you are using UI version 1.
+After you are done updating your configuration, you must apply the changes to activate them. To do this, follow these steps:
+
+1. In the **Inventory Visibility** app, select **Admin Settings** on the navigation pane.
+1. On the **Update configuration** tile, select **Manage**.
+1. Check your modifications in the dialog box.
+
+    > [!IMPORTANT]
+    > Be sure to verify all of the important modifications that are about to be made to your data sources, physical measures, and dimension mappings.
+
+1. Select **Confirm Update** to apply your configuration change.
+
+## Turn on and set up inventory allocation in UI version 1
+
+This section applies when you are using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
+
+Follow these steps to enable inventory allocation and set up allocation groups if you are using UI version 1:
 
 1. Enable the inventory allocation feature.
 
@@ -143,7 +166,7 @@ If Inventory Visibility user interface version 1 (UI version 1) is active in you
 
 1. Configure the *available to allocate* calculated measure and *allocated* physical measure.
 
-    Open the **Calculated Measure** tab to view the initial calculated measure, which is named *@iv.@available_to_allocate*. Edit the formula to meet your business needs by adding and remove physical measures. Be sure to include the *@iv.@allocated* physical measure in the formula. <!--KFM: There is not measure with this name in my env. -->
+    Open the **Calculated Measure** tab to view the initial calculated measure, which is named *@iv.@available_to_allocate*. Edit the formula to meet your business needs by adding and remove physical measures. Be sure to include the *@iv.@allocated* physical measure in the formula. <!--KFM: There is no measure with this name in my env. -->
 
 1. Set up your allocation groups and hierarchy.
 
@@ -151,7 +174,7 @@ If Inventory Visibility user interface version 1 (UI version 1) is active in you
 
 1. Update the configuration to activate your new settings.
 
-    When you've finished configuring the allocation group and hierarchy settings, select **Save**, then select **Update Configuration** in the upper right. 
+    When you've finished configuring the allocation group and hierarchy settings, select **Save**, then select **Update Configuration** in the upper right.
 
 The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (`/api/environment/\{environmentId\}/allocation/allocate`). Details about both approaches are provided later in this article. If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 

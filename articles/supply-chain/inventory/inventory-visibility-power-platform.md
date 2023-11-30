@@ -71,7 +71,7 @@ The microservice of Inventory Visibility is deployed on Microsoft Azure Service 
 
 To obtain your service endpoint and runtime configuration, apply the following steps.
 
-1. Open the **Inventory Visibility** power app.
+1. Open the **Inventory Visibility** app in Power Apps.
 
 1. Go to **Settings (Preview)** - **Admin Settings** - **Show Service Details** and click **Manage** button.
 
@@ -101,7 +101,7 @@ Partition configuration controls how data is distributed. Operations inside the 
 > [!IMPORTANT]
 > Don't customize your partition configuration. If you delete or change it without official guide, you are likely to encounter an unexpected error.
 
-## Onhand index configuration
+## On-hand index configuration
 
 In many cases, on-hand inventory are queried not only at the most detailed level, but also at some aggregated levels based on the inventory dimensions.
 For frequently used query patterns, Inventory Visibility allows users to improve query performance by setting up *indexes*.

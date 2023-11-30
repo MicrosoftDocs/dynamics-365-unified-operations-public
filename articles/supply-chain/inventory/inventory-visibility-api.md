@@ -30,35 +30,35 @@ The following table lists the APIs that are currently available:
 
 | Path | Method | Description |
 |---|---|---|
-| /api/environment/{environmentId}/onhand | Post | [Create one on-hand change event](#create-one-onhand-change-event)|
-| /api/environment/{environmentId}/onhand/bulk | Post | [Create multiple change events](#create-multiple-onhand-change-events) |
-| /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
-| /api/environment/{environmentId}/onhand/reserve | Post | [Create one soft reservation event](#create-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple soft reservation events](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/reserve/resyncjob |Post | [Clean up reservation data](#clean-up-reservation-data) |
-| /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) (recommended) |
-| /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
-| /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query by using the post method](#exact-query-with-post-method) |
-| /api/environment/{environmentId}/allocation<wbr>/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with product search](#query_with_product_search) |
-| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with product search](#exact-query-with-product-search) |
+| `/api/environment/{environmentId}/onhand` | Post | [Create one on-hand change event](#create-one-onhand-change-event)|
+| `/api/environment/{environmentId}/onhand/bulk` | Post | [Create multiple change events](#create-multiple-onhand-change-events) |
+| `/api/environment/{environmentId}/setonhand/{inventorySystem}/bulk` | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
+| `/api/environment/{environmentId}/onhand/reserve` | Post | [Create one soft reservation event](#create-one-reservation-event) |
+| `/api/environment/{environmentId}/onhand/reserve/bulk` | Post | [Create multiple soft reservation events](#create-multiple-reservation-events) |
+| `/api/environment/{environmentId}/onhand/unreserve` | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
+| `/api/environment/{environmentId}/onhand/unreserve/bulk` | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
+| `/api/environment/{environmentId}/onhand/reserve/resyncjob` |Post | [Clean up reservation data](#clean-up-reservation-data) |
+| `/api/environment/{environmentId}/onhand/changeschedule` | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
+| `/api/environment/{environmentId}/onhand/indexquery` | Post | [Query by using the post method](#query-with-post-method) (recommended) |
+| `/api/environment/{environmentId}/onhand` | Get | [Query by using the get method](#query-with-get-method) |
+| `/api/environment/{environmentId}/onhand/exactquery` | Post | [Exact query by using the post method](#exact-query-with-post-method) |
+| `/api/environment/{environmentId}/allocation/allocate` | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/unallocate` | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/reallocate` | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/consume` | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/query` | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/onhand/productsearch/indexquery` | Post | [Post index query with product search](#query_with_product_search) |
+| `/api/environment/{environmentId}/onhand/productsearch/exactquery` | Post | [Post exact query with product search](#exact-query-with-product-search) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
-> 
+>
 > The bulk API can return a maximum of 512 records for each request.
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-[Service endpoint](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration) can be obtained from Power Apps UI.
+You can find the [service endpoint](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration) in the Inventory Visibility app in Power Apps.
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
@@ -154,7 +154,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> Due to the constraints of [partition configuration](inventory-visibility-power-platform.md#partition-configuration), `siteId` and `locationId` are required dimensions.
+> Due to the constraints of the [partition configuration](inventory-visibility-power-platform.md#partition-configuration), `siteId` and `locationId` are required dimensions.
 
 The following subsections provide examples that show how to use these APIs.
 
@@ -574,11 +574,10 @@ Body:
         ...
     ]
 ```
+
 ## Clean up reservation data
 
-This API is for cleaning up historical reservation data. <br>
-Body should be a list of dataSources. <br>
-Given an empty list, all dataSources will be cleaned up.
+The *clean up reservation data API* is for cleaning up historical reservation data. The body should be a list of data sources. Given an empty list, all data sources will be cleaned up.
 
 ```txt
 Path:
@@ -634,9 +633,9 @@ In the body part of this request, `dimensionDataSource` is still an optional par
 
 - `organizationId` should contain only one value, but it's still an array.
 - `productId` could contain one or more values. If it's an empty array, all products of the specific sites and locations will be returned. In this case, `siteId` and `locationId` should not be empty.
-- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both are empty arrays, all sites and locations of the specific products will be returned. In this case, `productId` should not be empty.
+- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations of the specific products; in this case, `productId` shouldn't be empty.
 
-We suggest that you use the `groupByValues` parameter following your configuration of indexing. For more information, refer to [onhand index configuration](inventory-visibility-power-platform.md#onhand-index-configuration).
+We recommend that you use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#onhand-index-configuration).
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
