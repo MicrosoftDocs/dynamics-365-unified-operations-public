@@ -66,25 +66,25 @@ A record is kept every time that you run a foreign currency revaluation. From th
 
 ## Additional exchange rate type for foreign currency revaluation
 
-Feature **Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation** is available in 10.0.39 to provide the capability to use additional exchange rate type for foreign currency revaluation. Users can define accounting currency exchange rate type and reporting currency exchange rate type per legal entity or per customer and vendor group to override the default type on ledger setup when running foreign currency revaluation.
+The **Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation** feature is available in version 10.0.39. This feature allows you to use additional exchange rate types for foreign currency revaluation. You can define the accounting currency exchange rate type and the reporting currency exchange rate type for each legal entity or per customer and vendor group. These defined types can override the default type on the ledger setup when you run the foreign currency revaluation.
 
 ### Additional exchange rate type setup for accounts payable foreign currency revaluation
 
 1. Go to **Accounts payable** > **Setup** > **Accounts payable parameters**.
-2. Select **Ledger and sales tax** tab.
-3. Three options will available in **Exchange rate type source** parameter:
--   **Ledger** - Select this option to use the exchange rate type defined on ledger setup.
--   **Specific** - Select this option to use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
--   **Group** - Select this option use use the accounting currency exchange rate type and reporting currency exchange rate type defined in vendor group.
+2. On the **Ledger and sales tax** tab, in the **Exchange rate type source** field, select one of the following options:
+
+  - **Ledger** - Use the exchange rate type defined on the ledger setup.
+  - **Specific** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
+  - **Group** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in a vendor group.
 
 ### Additional exchange rate type setup for accounts receivable foreign currency revaluation
 
 1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. Select **Ledger and sales tax** tab.
-3. Three options will available in **Exchange rate type source** parameter:
--   **Ledger** - Select this option to use the exchange rate type defined on ledger setup.
--   **Specific** - Select this option to use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
--   **Group** - Select this option use use the accounting currency exchange rate type and reporting currency exchange rate type defined in customer group.
+2. On the **Ledger and sales tax** tab, in the **Exchange rate type source** field, select on of the following options:
+
+  - **Ledger** - Use the exchange rate type defined on the ledger setup.
+  - **Specific** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
+  - **Group** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the customer group.
 
 > [!NOTE]
 > Exchange gain or loss isn't aggregated. At the time of settlement, the unrealized gain or loss for each open transaction should be reversed to recalculate any realized gain or loss. If the total gain or loss is posted to the general ledger, it isn't possible to reverse per transaction.
