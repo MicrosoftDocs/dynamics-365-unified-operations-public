@@ -70,12 +70,16 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **OIOUBL Sales invoice processing** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Integrate with Edicom** action.
-6. In the **Parameters** section, select **Service ID**, and then select the name of the secret that you previously created for the Service ID.
-7. Select **Group**, and then select the name of the secret that you previously created for the Group.
-8. Select **Token**, and then select the name of the secret that you created for the token.
-9. Repeat steps 5 through 8 for the **Waiting for response from Edicom** action.
-10. Select **Save**, and close the page.
-11. Repeat steps 4 through 9 for the following feature setups if your business process assumes involvement of the related types of documents:
+6. In the **Parameters** section, select **Domain**, and then enter the obtaind **Service ID** number.
+7. Select **Application**, and then enter the same **Service ID** number.
+8. Select **Destination**, and then enter the **Service ID** number concatenated with the **_EDIWIN** value.
+   > [!NOTE]
+   > For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*
+9. Select **Group**, and then select the name of the secret that you previously created for the Group.
+10. Select **Token**, and then select the name of the secret that you created for the token.
+11. Repeat steps 5 through 8 for the **Waiting for response from Edicom** action.
+12. Select **Save**, and close the page.
+13. Repeat steps 4 through 9 for the following feature setups if your business process assumes involvement of the related types of documents:
   
    - OIOUBL Sales credit note processing
    - OIOUBL Project invoice processing
