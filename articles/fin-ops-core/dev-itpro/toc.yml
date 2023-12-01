@@ -945,7 +945,7 @@ items:
             href: extensibility/compatibility-checker-tool.md
       - name: Performance
         items:
-        - name: Take traces using Trace parser
+        - name: Capture a trace
           href: perf-test/trace-trace-tutorial.md
         - name: Single-user testing using Performance SDK and Task recorder
           href: perf-test/single-user-test-perf-sdk.md 
