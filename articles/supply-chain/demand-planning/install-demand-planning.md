@@ -33,7 +33,8 @@ To use Demand planning with Supply Chain Management, you must be running one of 
 
 > [!NOTE]
 > You must install Demand planning on the same tenant as your Supply Chain Management environment to ensure that the built-in import and export profiles can be used to import and export data.
-> Note it is not supported to install Demand planning for the default environment for the tenant (current technical limitation)
+>
+> Due to a current technical limitation, you can't install Demand planning on your tenant's default environment.
 
 Follow these steps to install the Demand planning app in Power Platform admin center.
 
