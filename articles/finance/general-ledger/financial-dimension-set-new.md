@@ -57,6 +57,7 @@ Use the **Rebuild balances** button on the balance status page to re-create bala
 If you no longer require a dimension set, you can use the **Delete** button to remove it. Don't delete and re-create dimension sets as a workaround for potential issues with the balance data for a specific dimension set. Re-creation of a dimension set is costly. For help with issues, contact support.
 
 ## Techincal information 
+The below table describes the old data model and the new data model used for this feature. The outcome is less data to store resulting in faster performance for some queries such as ones used for the trial balance inquiry page. 
 
 | New Table | Old Table | Description |
 |-----------|-----------|-------------|
