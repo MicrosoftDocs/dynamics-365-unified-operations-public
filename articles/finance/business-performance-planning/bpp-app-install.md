@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Install the Business performance planning application
 
-This article describes how to install the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](power-bi/developer/visuals/).
+This article describes how to install the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals/).
 
 ## Install the planning application
 Complete the following steps to install the planning application.
