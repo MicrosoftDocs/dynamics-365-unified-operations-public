@@ -22,9 +22,9 @@ Before you print the report, the following prerequisites must be met:
   - LTM Tax Report
   - Format 1009 file
 
-  For more information, see [ER download reports](/../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+  For more information, see [ER download reports](/../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-- Configure ER parameters. To learn more, see [ER configuration](/../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
+- Configure ER parameters. To learn more, see [ER configuration](/../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 ## Configure application-specific parameters
 
