@@ -94,7 +94,8 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 15. Select **Domain**, and then enter the obtaind **Service ID** number.
 16. Select **Application**, and then enter the same **Service ID** number.
 17. Select **Group**, and then enter the obtaind **Group** code.
-18.  Select **Save**, and close the page.
+18. Select **Data channel**, and then enter the name of [integration channel](#ExChannel) configured in **Electronic document parameters** in Finance.
+19.  Select **Save**, and close the page.
 
 ## Finance configuration
 
