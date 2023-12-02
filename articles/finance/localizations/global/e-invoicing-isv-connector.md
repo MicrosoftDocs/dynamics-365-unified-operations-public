@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-Independent Software Vendor (ISV) last-mile connector complements the standard Electronic Invoicing Service functionality in the cases when no direct integration with final recepients is supported out of the box. In such scenarios Microsoft D365 Finance is used for the generation of electronic documents in legally required formats and then passes it to the ISV last-mile connector for further communication. In case of incoming electronic documents, the ISV last-mile connector is used as a source inbound documents which then will be handeled by Microsoft D365 Finance.
+Independent Software Vendor (ISV) last-mile connector complements the standard Electronic Invoicing Service functionality in the cases when no direct integration with final recepients is supported out of the box. In such scenarios Microsoft Dynamics 365 Finance is used for the generation of electronic documents in legally required formats and then passes it to the ISV last-mile connector for further communication. In case of incoming electronic documents, the ISV last-mile connector is used as a source inbound documents which then will be handeled by Microsoft Dynamics 365 Finance.
 
 This article provides information about how to configure and use the Electronic Invoicing service ISV last-mile connector.
 
@@ -44,13 +44,13 @@ The following required credentials must be prliminary obtailned from **Edicom** 
 - The **Group** which is required for internal routing within the Edicom infrastructure.
 - The **Token** which grants the authorization to access the Edicom services.
 
-These credentials must be uploaded to the secrets created in the **Azure Key Vault** managed by your company, for more information see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). Then the secrets will be used in the related Electronic Invoicing feature pipeline actions as parameters.
+The obtained **Token** must be uploaded to the secret created in the **Azure Key Vault** managed by your company, for more information see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). Then the secret will be used in the related Electronic Invoicing feature pipeline actions as a parameter.
 
 ### Electronic invoices submission
 
 The following pipeline actions are introduced for enabling outbound documents submission via the ISV list-mile connector.
 
-- **Integrate with Edicom**
+- **Integrate with Edicom** - submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
 
  **Parameter**       | **Description**     |
 |---------------------|------------------|
@@ -60,8 +60,17 @@ The following pipeline actions are introduced for enabling outbound documents su
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
   
-- **Waiting for response from Edicom**
-- **Get status from Edicom**
+- **Waiting for response from Edicom** - waits for the response from Edicom. No specific paramters need to be additionally configured.
+
+A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. Yo need to configure the Export channel's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
+
+ **Parameter**       | **Description**     |
+|---------------------|------------------|
+| **Domain** | Use the **Service ID** number provided by Edicom.|
+| **Application**                | Use  the same **Service ID** number. |
+| **Data channel**                | Enter the name of [integration channel](../mea/e-invoicing-dk-get-started.md#finance-configuration) configured in **Electronic document parameters** in Microsoft Dynamics 365 Finance. |
+| **Group**                  | Use the **Group** code provided by Edicom.  |
+| **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
 ### Electronic invoices receiption
 
