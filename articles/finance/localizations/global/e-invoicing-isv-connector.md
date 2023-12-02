@@ -68,14 +68,15 @@ A new data channel type **Get status from Edicom** is implemented for feature se
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
 | **Application**                | Use  the same **Service ID** number. |
-| **Data channel**                | Enter the name of [integration channel](../mea/e-invoicing-dk-get-started.md#finance-configuration) configured in **Electronic document parameters** in Microsoft Dynamics 365 Finance. |
+| **Data channel**                | Enter the name of [integration channel](../mea/e-invoicing-dk-get-started.md#finance-configuration) configured in **Electronic document parameters** (paragraph 7) in Microsoft Dynamics 365 Finance. |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
 ### Electronic invoices receiption
 
-The **Edicom service** feature setup type is introduced for enabling inbound documents receiving via ISV the list-mile connector.
+=======***The functionality is not ready***  - to describe later.=========
 
+he **Edicom service** feature setup type is introduced for enabling inbound documents receiving via ISV the list-mile connector.
 The following pipeline actions are introduced for enabling integration via ISV the list-mile connector.
 
 
@@ -83,14 +84,6 @@ The following pipeline actions are introduced for enabling integration via ISV t
 
 For the details of the electronic invoicing in Denmark, including the integration with [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, refer to [Get started with Electronic invoicing for Denmark](../mea/e-invoicing-dk-get-started.md)
 
-9. <a id="OutputFile"></a>On the 
-you [created earlier](#OutputFile).
-
-
-    > [!NOTE]
-    > The **Vendor invoice import (DK)** format configuration is based on the parent **Vendor invoice import** format configuration. The formats use the **Invoice model** configuration and the **Vendor invoice Mapping to destination** configuration. All required additional configurations are automatically imported.
-
-![Property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
 
 ## Additional resources
 
