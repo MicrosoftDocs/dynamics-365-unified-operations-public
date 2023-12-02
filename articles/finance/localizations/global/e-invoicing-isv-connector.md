@@ -52,13 +52,13 @@ The following pipeline actions are introduced for enabling outbound documents su
 
 - **Integrate with Edicom**
 
- **Parameter**          | **Value** | **Description**     |
-|-----------------------|------------------|------------------|
-| Service URI | ipaasgw.edicomgroup.com | Default value provided. No change needed.|
-| **Service ID**                   |    | Used for identification by Edicom. **Must be defined**. |
-| **Group**                   |    | Required for internal routing within the Edicom infrastructure. **Must be defined**.  |
-| **Token**                   |    | Used for accessing the Edicom services.  **Must be defined**.     |
-| ...                   | ...   |                   |
+ **Parameter**       | **Description**     |
+|---------------------|------------------|
+| **Domain** | Use the **Service ID** number provided by Edicom.|
+| **Application**                | Use  the same **Service ID** number. |
+| **Destination**                | Enter the **Service ID** number concatenated with the **_EDIWIN** value. For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*. |
+| **Group**                  | Use the **Group** code provided by Edicom.  |
+| **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
   
 - **Waiting for response from Edicom**
 - **Get status from Edicom**
