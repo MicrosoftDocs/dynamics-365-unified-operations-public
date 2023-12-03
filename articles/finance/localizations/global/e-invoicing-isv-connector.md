@@ -30,9 +30,9 @@ This article provides information about how to configure and use the Electronic 
 Before you begin the procedures in this article, complete the following prerequisites:
 
   > [!IMPORTANT]
-- Your company must have a separate signed service agreement with an Independent Software Vendor (ISV) who will provide electronic documents delivery service and obtain the required credentials to enable integration of the Electronic Invoicing service with the ISV connector. 
+- Your company must have a separate signed service agreement with an Independent Software Vendor (ISV) who will provide electronic documents delivery service and obtain the required credentials to enable integration of the Electronic Invoicing service with the ISV last-mile connector. 
 - Become familiar with Electronic invoicing functionality - [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Consult the list of [available Electronic invoicing features](e-invoicing-country-specific-availability.md).
+- Consult the list of available country-specific [Electronic invoicing features](e-invoicing-country-specific-availability.md) which can be complemented with the submission possibility using the ISV last-mile connector.
 
 ## Integration with Edicom
 
@@ -84,16 +84,17 @@ A new data channel type **Edicom service** is implemented for feature setups of 
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
-=======***The functionality is not ready***  - to describe later.=========
 
-### Integration with "NemHandel" in Denmark
+### Electronic invoicing in Denmark
 
 For the details of the electronic invoicing in Denmark, including the integration with [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, refer to [Get started with Electronic invoicing for Denmark](../mea/e-invoicing-dk-get-started.md)
 
 
 ## Additional resources
 
-- [Forced electronic invoices generation](../europe/emea-eur-forced-einvoices.md)
+- [Electronic invoicing administration and integration components](../global/e-invoicing-administration-integration-components.md)
+- [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md)
+- [Work with Globalization features](../global/e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
