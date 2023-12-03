@@ -31,18 +31,14 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
   > [!IMPORTANT]
-- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the ISV last-mile connector. For more information, see [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
+- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
     - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
     - [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md)  
 - Activate the integration between your Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
-- Create secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
-
-    - The **Service ID** which uniquely identifies the company by the provider of electronic documents delivery service.
-    - The **Group** which is required for internal routing within the infrastructure of the provider of electronic documents delivery service.
-    - The **Token** which grants the authorization to access the infrastructure of the provider of electronic documents delivery service.
+- Create the secret in the Azure Key Vault for the **Token** which grants the authorization to access the infrastructure of the provider of electronic documents delivery service, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
 
 - Make sure that the following Electronic Reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
@@ -250,6 +246,8 @@ To view successfully received invoices, go to **Accounts payable** \> **Invoices
 - [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
 - [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
 - [Get started with Electronic invoicing](../e-invoicing-get-started.md)
+- [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md)
+- [Vendor electronic invoice import in Denmark](../denmark/emea-dnk-vend-e-invoice.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
