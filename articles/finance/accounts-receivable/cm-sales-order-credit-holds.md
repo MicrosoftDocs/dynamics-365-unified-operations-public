@@ -54,7 +54,7 @@ As of version 10.0.21, the blocking rules in Credit management have been re-arch
 - Extensibility requests have been enabled, so that you can create your own blocking rules.
 - The **Release sales order** checkbox is available for all blocking rules. Previously, it was available only for the Sales order blocking rule. When this checkbox is selected, the exclusion rule releases the sales order without considering any other rules that can block sales orders. This checkbox is available only for the **Exclusion** rule type.
 
-Blocking rules and Credit management checkpoints are required to check the credit limit on a sales order. In versions 10.0.34 and below there was a bug that allowed the credit check without the blocking rules setup. This has been fixed as of 10.0.35 so blocking rules are required with Credit management. 
+Blocking rules and Credit management checkpoints are required to check the credit limit on a sales order. In versions 10.0.34 and earlier, there was a bug that allowed the credit check without the blocking rules setup. This has been fixed as of 10.0.35 and blocking rules are required with Credit management. 
 
 ### Days overdue
 
