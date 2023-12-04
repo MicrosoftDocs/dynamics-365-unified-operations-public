@@ -33,8 +33,8 @@ This article describes how to configure the Microsoft Power Platform for use wit
 
 To configure Microsoft Power Platform for Financial Reporting add-in, follow these steps:
 
-1. Signin to [Lifecycle Services](https://lcs.dynamics.com/Logon/Index).
-2. Go to the details page of the implementation project that's used to manage the Dynamics 365 Finance environment.
+1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/Logon/Index).
+2. Go to the details page of the implementation project used to manage the Dynamics 365 Finance environment.
 3. Select **Full details** for the environment that you want to use for the setup.
-4. Confirm that the Power Platform integration is set up. If Microsoft Power Platform hasn't yet been set up, select **Setup**, and follow the prompts as needed.
+4. Confirm that the Power Platform integration is set up. If Microsoft Power Platform isn't set up, select **Setup**.
 For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
