@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 10/02/2023
+ms.date: 12/02/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -203,6 +203,24 @@ The environment state will show the deployment progress. The state will be chang
 - If you're configuring integration with finance and operations apps, see [Migration considerations](hr-admin-integration-finance.md#migration-considerations).
 
 #### Dual-write integration
+
+##### Prerequisites
+
+Install Dynamics 365 Human Resources common tables:
+1. Go to the Power Platform admin center, select the environment. 
+2. In the **Resources** section, click **Dynamics 365 apps** and select **Install app**.
+3. Select **Dynamics 365 Human Resources common tables**, install the latest version.
+4. Verify the installation has completed successfully. 
+
+Add dual-write permission:
+1. Go to the Power Platform admin center, confirm that the dual-write Dynamic 365 Human Resources and Dynamics 365 Human Resources common tables solutions are installed.
+2. Go to **Power Platform admin center**, select your environment.
+3. **Teams** > Click **See all**.
+4. Select the business unit with the same name as environment name, click **Manage security roles**.
+5. Select **System administrator** and **Human Resources administrator** permissions, click **Save**. 
+
+
+
 
 ##### Set up Microsoft Power Platform dual-write integration
 
