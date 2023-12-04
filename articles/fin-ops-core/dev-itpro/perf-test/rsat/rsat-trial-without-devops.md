@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Regression suite automation tool (RSAT) can be used in a trial mode. The benefit of trial mode is that it doesn't require connections to Microsoft Azure DevOps.
 
-Organizations that are new to RSAT is able to explore the tool without having to commit to subscribing to Azure DevOps. In this way, you can experience the value of test automation, decide whether RSAT is the right tool for you, and then add Azure DevOps and Test Plan subscriptions to users if this approach makes sense for your organization.
+Organizations that are new to RSAT can explore the tool without having to commit to subscribing to Azure DevOps. In this way, you can experience the value of test automation, decide whether RSAT is the right tool for you, and then add Azure DevOps and Test Plan subscriptions to users if this approach makes sense for your organization.
 
 It's important to note that trial mode isn't time limited. If you find a long-term use for trial mode, keep it installed. Some organizations might even be fully satisfied with what trial mode offers, so that they continue to use it without ever subscribing to Azure DevOps and integrating RSAT with it.
 
@@ -28,7 +28,7 @@ RSAT in trial mode is based on the RSAT in Normal mode that is known from earlie
 
 RSAT in trial model is limited in some ways. For more information, see the [Differences when RSAT is run in trial mode instead of Normal mode](#differences) section later in this article.
 
-During the installation process, you select which of the RSAT modes you want to be available. Both modes are installed, and each have its own shortcut on the desktop. Both modes can be installed on the same machine, and they can be used interchangeably.
+During the installation process, you select which of the RSAT modes you want to be available. Both modes are installed, and each has its own shortcut on the desktop. Both modes can be installed on the same machine, and they can be used interchangeably.
 
 RSAT continues to work exactly as it used to work when it was run in Normal mode.
 
@@ -85,11 +85,11 @@ The **Save as** and **Open** commands that are available under **Settings** let 
 
 ## Using RSAT in trial mode
 
-To open RSAT in trial mode, select the desktop shortcut that has a "Trial" band on the icon. If you've used previous versions of RSAT, the application seems familiar. However, fewer commands are available.
+To open RSAT in trial mode, select the desktop shortcut that has a "Trial" band on the icon. If you've used previous versions of RSAT, the application should seem familiar. However, fewer commands are available.
 
 Trial mode works without a connection to Azure DevOps, and tests are maintained exclusively by local files. When you run RSAT in trial mode, you run an installation as a single user. Tests that you make aren't exchanged with other users. We recommend that you not share working directories between users.
 
-When you open RSAT in trial mode for the first time, no test suites or cases are shown. There's a single test plan that is named **Local Test Plan**. The test cases for trial mode are in a **Trial** folder under the working directory that you specified in RSAT settings. Each test case has its own subfolder in the **Trial** folder. The name of the subfolder indicates the ID of the case.
+When you open RSAT in trial mode for the first time, no test suites or cases are shown. There's a single test plan that's named **Local Test Plan**. The test cases for trial mode are in a **Trial** folder under the working directory that you specified in RSAT settings. Each test case has its own subfolder in the **Trial** folder. The name of the subfolder indicates the ID of the case.
 
 You can add one or more test suites under the **Local Test Plan** test plan by using the **New test suite** command. Although you can add test cases to the test plan, we highly recommend that you create test suites instead, and then add test cases to them. Tests are always added to the node that is currently selected in the tree on the left. For example, in the following illustration, tests are added to the **Purchase order** test suite.
 
