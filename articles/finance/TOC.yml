@@ -590,6 +590,8 @@
           href: accounts-receivable/cm-periodic-tasks.md
         - name: Credit statistics FAQ
           href: accounts-receivable/credit-statistics-faq.md
+        - name: Credit hold FAQ
+          href: accounts-receivable/Credit-hold-FAQ.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range
