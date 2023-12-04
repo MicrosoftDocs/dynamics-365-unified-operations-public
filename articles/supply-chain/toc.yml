@@ -3457,6 +3457,8 @@
           href: transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Load building workbench
           href: transportation/tasks/load-building-workbench.md
+        - name: Integrate with Microsoft Sustainability Manager (preview)
+          href: transportation/sustainability-manager-integration-setup.md
         - name: Plan loads using hub consolidation
           items:
           - name: Plan loads using hub consolidation overview
