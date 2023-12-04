@@ -27,11 +27,11 @@ To use this feature, you must enable the **Enable upload to Azure DevOps** optio
 
 Follow these steps to view information about a test case.
 
-1. In the **Test Cases** grid, find the relevant test case, and select this by checking the checkmark column, and then click the **Edit** action to open test case information.
+- In the **Test Cases** grid, find the relevant test case, and select it by selecting the check mark column. Then select the **Edit** action to open the test case information.
 
-    ![Edit test case](media/test-case-details.png)
+    ![Edit button.](media/test-case-details.png)
 
-2. This open the **Test Case information** dialog box.
+  The **Test Case information** dialog box appears.
 
     ![Test Case information dialog box.](media/test-case-information.png)
 
@@ -47,16 +47,16 @@ Follow these steps to add a new test case by using RSAT.
 
 1. Select the test suite that you want to add a new test case to (**Procure to Pay – v2** in this example). Then select **New** to open the **Test Case information** dialog box.
 
-    ![New button](media/test-case-add.png)
+    ![New button.](media/test-case-add.png)
 
 2. Enter the name of the test case, and add attachment files. These files include the recording XML file that contains steps for the test case. To add attachment files, select **Add**, and then, in the dialog box that appears, select the files to add as attachments.
-3. When finished, select **Save** to save the new test case or **Cancel** to discard it.
+3. When you're finished, select **Save** to save the new test case or **Cancel** to discard it.
 
-    ![Add and Save buttons](media/add-test-case.png)
+    ![Add and Save buttons.](media/add-test-case.png)
 
 When you save a new test case, RSAT copies the attachment files that you selected into your local RSAT working directory. It maintains the copies there so that they can be used with the test case.
 
-There isn't a feature that automatically clones test cases from one test suite to another. However, but you can manually clone test cases by following these steps.
+There isn't a feature that automatically clones test cases from one test suite to another. However, you can manually clone test cases by following these steps.
 
 1. Create a test case as described in the previous procedure. As part of this step, add the recording XML file.
 2. Save the new test case, and make a note of the **CaseID** value that is assigned to it.
@@ -80,13 +80,13 @@ You can also use this procedure if you've edited the recording XML file and you 
 
 Follow these steps to delete a test case.
 
-1. In the **Test Cases** grid, find the relevant test case, and select this by checking the checkmark column, and then click the **Delete** action to delete a test case.
+1. In the **Test Cases** grid, find the relevant test case, and select it by selecting the check mark column. Then select the **Delete** action to delete the test case.
 
-   ![Screenshot of the Delete Test Case command.](media/delete-test-case.png)
+   ![Delete button.](media/delete-test-case.png)
 
-2. This opens a dialog box to confirm that the test case should be deleted. Confirm by selecting **Yes** or cancel by **No**
+2. A message box prompts you to confirm that the test case should be deleted. Confirm the deletion by selecting **Yes**, or cancel it by selecting **No**
 
-    ![Screenshot of the confirmation for the Delete Test Case command.](media/confirm-delete-test-case.png)
+    ![Confirmation message box for the Delete command.](media/confirm-delete-test-case.png)
 
 A test case that you delete in RSAT is removed from the current test suite, both locally and in Azure DevOps.
 
