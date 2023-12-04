@@ -2,10 +2,12 @@
 title: Enable table maps for dual-write
 description: This article describes how the table maps work for dual-write.
 author: nhelgren
-ms.date: 02/21/2023
-ms.topic: article
+ms.date: 12/04/2023
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
