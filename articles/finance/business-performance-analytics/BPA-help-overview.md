@@ -19,11 +19,11 @@ audience: Application User
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, business performance analytics logs information in the `Bpa Self Help Logs` table in Microsoft Dataverse. This table provides insights into issues and helps you take appropriate action.
+To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, business performance analytics logs information in the `Bpa self help logs` table in Microsoft Dataverse. This table provides insights into issues and helps you take appropriate action.
 
-### Access the Bpa Self Help Logs table
+### Access the business performance analytics self help logs table
 
-To access the `Bpa Self Help Logs` table, follow these steps.
+To access the `Bpa self help logs` table, follow these steps.
 
 1. Open the [Power Apps maker portal](https://make.preview.powerapps.com/).
 2. Go to **Tables** \> **All**.
