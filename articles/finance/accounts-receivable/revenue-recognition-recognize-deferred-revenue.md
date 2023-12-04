@@ -5,7 +5,7 @@ title: Recognize deferred revenue
 description: This article provides information about how to recognize revenue by using the Revenue recognition feature. 
 author: bking
 ms.date: 08/16/2023
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.0.4
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
->This functionality will be deprecated October 2023, new users should use subscription billing.
+>This functionality will be deprecated January 2024, new users should use subscription billing.
 
 
 This article describes the process of recognizing revenue in the revenue recognition schedule. After an invoice has been posted for a sales order, a revenue recognition schedule is created for each sales order line that has a revenue schedule. The revenue schedule on a line is used to determine whether the line's revenue should be deferred.

@@ -34,7 +34,7 @@ This article provides information about purchase agreements. A purchase agreemen
 
 Purchase agreements can apply to a specific quantity of a product, a specific currency amount of a product, or a specific currency amount of the products in a procurement category. The prices and discounts of the purchase agreement override the prices and discounts that are specified in any trade agreements that exist.  
 
-On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors. For example, after you create a purchase agreement, you can order directly from it. Each purchase agreement has a validity period that is defined by the person who creates the purchase agreement. The delivery date of a purchase must be within the effective dates of this validity period.  
+On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors. For example, after you create a purchase agreement, you can order directly from it. Each purchase agreement has a validity period that is defined by the person who creates the purchase agreement. The receipt date of a purchase must be within the effective dates of this validity period.  
 
 After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to **Yes**. 
 

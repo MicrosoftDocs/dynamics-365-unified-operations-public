@@ -25,8 +25,8 @@ The following prerequisites must be in place before you can enable Power BI repo
 - You must be a system administrator in the Dynamics 365 application.
 - You must have a [PowerBI.com](https://powerbi.com/) account.
 - You must have at least one dashboard and one report in your Power BI account.
-- You must be an administrator for your Azure Active Directory (Azure AD) account.
-- The Azure AD domain must be the same domain that you used for your [PowerBI.com](https://powerbi.com/) account.
+- You must be an administrator for your Microsoft Entra account.
+- The Microsoft Entra domain must be the same domain that you used for your [PowerBI.com](https://powerbi.com/) account.
 
 ## Setup
 

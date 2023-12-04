@@ -15,13 +15,13 @@ ms.custom: bap-template
 # Dynamic printer selection
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.36 GA -->
 
 This article explains how to set up your system to dynamically select a printer when [license plate labels](print-license-plate-labels-using-label-layouts.md) and [container labels](print-container-labels.md) are printed.
 
 When dynamic printer selection is used, and a worker requests printing, the system selects a printer based on the current work user, warehouse, location, and/or zone. The warehouse manager can set up default printers for each work user, warehouse, location, and/or zone.
+
+> [!IMPORTANT]
+> The location is only considered when printing container labels.
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ Follow these steps to set the printer stock type for a label printer.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label printers**.
 1. Create or select a printer.
-1. For the new or selected printer, set the **Printer stock type** field to the relevant printer stock type. (For example, select one of the stock types that you set up in the previous section.) For information about the other settings that are available for a label printer, see [Set up a printer](label-printing-using-external-label-service.md#label-printers).
+1. For the new or selected printer, set the **Printer stock type** field to the relevant printer stock type. (For example, select one of the stock types that you set up in the previous section.) For information about the other settings that are available for a label printer, see [Set up a printer](../supply-chain-dev/label-printing-using-external-label-service.md#label-printers).
 1. Repeat steps 2 and 3 until you've set up all the stock types that you need.
 1. On the Action Pane, select **Save**.
 

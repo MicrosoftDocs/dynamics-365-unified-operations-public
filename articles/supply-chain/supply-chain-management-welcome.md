@@ -5,7 +5,7 @@ title: Welcome to Dynamics 365 Supply Chain Management
 description: This page provides a list of the help articles and other resources for Supply Chain Management features.   
 author: kamaybac
 ms.date: 09/15/2021
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -35,7 +35,7 @@ This article provides a list of the help articles and other resources in Dynamic
 
 ## What's new and in development
 
-Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features are released and what new features are in development.
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
 
 ## Core concepts and tasks
 
@@ -45,7 +45,7 @@ Select a feature area to learn more about it.
 - [Cost accounting](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
-- [IoT Intelligence](iot/iot-intelligence-home-page.md)
+- [IoT Intelligence](supply-chain-dev/iot-intelligence-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)

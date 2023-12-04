@@ -1,5 +1,5 @@
 ---
-title: Work with Warehouse management only mode in Supply Chain Management
+title: Work with Warehouse management only mode in Supply Chain Management (preview)
 description: This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Work with Warehouse management only mode in Supply Chain Management
+# Work with Warehouse management only mode in Supply Chain Management (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -80,11 +80,12 @@ Here's a high-level description of the inbound process:
 
 1. An external system submits an *inbound shipment order* message to Supply Chain Management.
 1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. Inbound loads are created in one of three ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
+1. Inbound loads are created in one of four ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
 
     - Manually, by using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
     - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
+    - Automatically during the Warehouse Management mobile app receiving process
 
 1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions.
 1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-using.md#shipment-receipts), and trigger *business events* for the external systems.
@@ -104,7 +105,14 @@ You can specify whether workers should capture a packing slip ID and date for ea
 - *Optional* – Prompt for the packing slip ID and date, but allow the worker to proceed without specifying them.
 
 > [!NOTE]
-> In the current version, load line quantities must be fulfilled according to over-delivery and under-delivery settings, and the *receiving completed* process must be manually triggered.
+> Depending on your setup on the **Inbound shipment order policies** FastTab of the **Source systems** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**), inbound loads might be created in any of the following ways:
+>
+> - Automatically, when an inbound shipment order is imported
+> - Automatically, when an ASN is imported
+> - Via a manual process
+> - As part of the Warehouse Management mobile app receiving process
+>
+> When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
 ## <a name="shipment-receipts"></a>Shipment receipts
 
@@ -119,6 +127,12 @@ To view all the background processes that you have running, go to [**System admi
 
 > [!WARNING]
 > If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you probably have to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
+
+External systems can be informed via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) when new data is available. They can read the data via the following data entities:
+
+- `ShipmentReceiptJournalHeaders` – The shipment receipt header data.
+- `ShipmentReceiptJournalLines` – The shipment receipt line data.
+- `ShipmentReceiptTransactionDimensions` – The detailed shipment receipt line data.
 
 ## Outbound process
 
@@ -156,6 +170,12 @@ To view all the background processes that you have running, go to [**System admi
 > [!NOTE]
 > If no language is defined for an order, the report uses the company-specific language settings.
 
+External systems can be informed via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) when new data is available. They can read the data via the following data entities:
+
+- `ShipmentPackingSlipJournalHeaders` – The shipment packing slip header data.
+- `ShipmentPackingSlipJournalLines` – The shipment packing slip line data.
+- `ShipmentPackingSlipTransactionDimensions` – The detailed shipment packing slip line data.
+
 ## <a name="maintain-messages"></a>View and maintain shipment order messages
 
 In Warehouse management only mode, you can both view and update shipment order messages. Therefore, you can quickly test integrations during the implementation process. When a message is in a *Failed* message state, you can update all field values except the order header and line numbers. Go to one of the following pages to view and maintain the messages:
@@ -168,11 +188,9 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 - *Receiving* – The message is in the process of being imported.
 - *Received* – The message has been received and is in a *Queued* state in the [message processor](../supply-chain-dev/message-processor.md). It's now ready to be picked up for processing.
 - *Accepted* – The message processor state is *Processed*. Therefore, a shipment order has been created.
-- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after editing.
+- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after you edit it.
 - *Draft* – The message is a copy that can be updated. To reprocess the message, move it into the *Queued* message state by selecting the **Queue** option.
-<!-- 
-- (*Canceled*) – New planned state in future version instead of using the *Failed* state for messages that have been canceled. You can resend a message (for the same order) from the external system.
--->
+- *Canceled* – The message has been manually canceled.
 
 > [!TIP]
 > Select **Show old versions** to follow manual message updates based on the value of the **Replaced by message** field.

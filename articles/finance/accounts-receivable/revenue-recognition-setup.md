@@ -5,7 +5,7 @@ title: Revenue recognition setup
 description: This article describes the setup options for Revenue recognition, and their implications.
 author: bking
 ms.date: 08/16/2023
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.0.4
 [!include [banner](../includes/banner.md)]
 
 >[!NOTE]
->This functionality will be deprecated October 2023, new users should use subscription billing.
+>This functionality will be deprecated January 2024, new users should use subscription billing.
 
 This article describes the setup options and their implications for the **Revenue recognition** module.
 

@@ -1,5 +1,5 @@
 ---
-title: Exchange data between systems
+title: Exchange data between systems (preview)
 description: This article explains how to exchange data and business events between systems in Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Exchange data between systems
+# Exchange data between systems (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -33,7 +33,7 @@ You can use inbound and outbound shipment order messages to inform Supply Chain 
 
 Messages between systems are exchanged by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses (such as sales orders, purchase orders, and transfer orders). Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
 
-Inbound and outbound shipment order messages can be exchanged by using [Dataverse](/power-platform/admin/data-integrator) or through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities.
+Inbound and outbound shipment order messages can be exchanged by using [Dataverse](/power-platform/admin/data-integrator). Alternatively, they can be exchanged through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities and/or by using the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process (for example, by using `Inbound shipment order messages composite entity` and `Outbound shipment order messages composite entity`).
 
 Supply Chain Management queues the incoming documents and then processes them by using the [message processor](warehouse-message-processor-messages.md). This approach ensures consistent data between the systems: both master data (such as products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job that the [message processor](../supply-chain-dev/message-processor.md) triggers by using the *Shipment orders* message queue.
 
@@ -69,16 +69,22 @@ Several out-of-box business events are supported for warehouse integration. The 
 | Business event ID | Description |
 |---|---|
 | `InventCountingJournalPostedBusinessEvent` | Counting journal posted |
+| `WHSSourceSystemInventoryOnhandReportBusinessEvent` | Source system on-hand inventory report created |
+| `WHSInventoryUpdateLogBusinessEvent` | Warehouse inventory update log updated |
 | `WHSOutboundNotificationCreatedBusinessEvent` | Outbound warehouse notification created |
-| `WHSShipmentOrderMessageChangedStatusBusinessEvent` | Status update for shipment order message |
-| `WHSShipmentPackingSlipJournalModifiedBusinessEvent` | Shipment packing slips updated |
+| `WHSShipmentOrderMessageChangedStatusBusinessEvent` | Shipment order message status updated |
+| `WHSShipmentPackingSlipJournalModifiedBusinessEvent` | Shipment packing slip updated |
+| `WHSShipmentPackingSlipJournalFailedBusinessEvent` | Shipment packing slips update failed |
 | `WHSShipmentReceivingJournalModifiedBusinessEvent` | Shipment receipts updated |
-| `SysMessageProcessorMessageProcessedBusinessEvent` | Message processor message failure |
+| `WHSShipmentReceivingJournalFailedBusinessEvent` | Shipment receipts update failed |
+| `SysMessageProcessorMessageProcessedBusinessEvent` | Message processor message failed |
 | `WhsWaveExecutedBusinessEvent` | Wave executed |
+| `WHSQualityOrderValidatedBusinessEvent` | Quality order validated |
 
 At a minimum, we recommend that you use the following business events:
 
 - `InventCountingJournalPostedBusinessEvent` – This event announces that an on-hand inventory adjustment has occurred and indicates where detailed information about the update can be found.
+- `WHSSourceSystemInventoryOnhandReportBusinessEvent` – This event announces that an on-hand inventory report has been generated and indicates where detailed information about the update can be found.
 - `WHSShipmentPackingSlipJournalModifiedBusinessEvent` – This event announces that an outbound shipment confirmation process has occurred and indicates where the detailed dispatch advice data can be found. (This data can be used for a sales invoicing process, for example.)
 - `WHSShipmentReceivingJournalModifiedBusinessEvent` – This event announces that an inbound receiving completion process has occurred and indicates where the detailed receiving advice data can be found. (This data can be used for a purchase order invoicing process, for example.)
 
@@ -134,3 +140,20 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 
 > [!NOTE]
 > Make sure that each of your items is assigned to an item model group that's configured as described in the [Master data](#master-data) section. In this way, you don't have configure [inventory postings](../../finance/general-ledger/inventory-posting.md) and [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when you make adjustments via the [counting journal](../inventory/tasks/define-inventory-counting-processes.md).
+
+## On-hand inventory reconciliation
+
+Warehouse management only mode can generate data for an on-hand inventory reconciliation process when you generate a **Create source system on-hand inventory** report (at **Warehouse management \> Inquiries and reports \> Create source system on-hand inventory report**).
+
+To create the header and line data, you must specify **Source system** and **As of date** values. You must also select the level of inventory dimensions that the report should be generated for.
+
+The external system will be informed about the available data via the `WHSSourceSystemInventoryOnhandReportBusinessEvent` business event. It can read the data via the `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines` data entities.
+
+> [!TIP]
+> If you run the **Create source system on-hand inventory** report as a recurring batch job, the **As of date** value is ignored, and data is generated based on the current processing date. For example, you set up the recurrence so that it has a **Start date** value of yesterday, and you set the job to run once per day. In this case, every day, the batch job automatically generates on-hand inventory data for the previous day.
+
+## Warehouse inventory update logs
+
+For integrations that require very quick on-hand inventory synchronization processes, you can use the *Warehouse inventory update log*. This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
+
+By default, the *Publish warehouse inventory update log updates* background process is set to run every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.

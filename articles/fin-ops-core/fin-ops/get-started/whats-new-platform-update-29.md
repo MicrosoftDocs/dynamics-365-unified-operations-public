@@ -6,7 +6,7 @@ ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Developer, IT Pro
+audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
@@ -49,7 +49,7 @@ As part of the Dynamics 365 app-wide effort, we're incrementally working toward 
 As part of this change, the workspace tiles on the dashboard now have a new visual style. See [Create icons for workspace tiles](../../dev-itpro/user-interface/create-icons-workspace-tiles.md) for updated guidance on creating images for workspace tiles that are visually aligned to out-of-the-box workspace tiles.
 
 ##  Saved views (Preview)
-Saved views are now available in preview. This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. For more information about how to enable this feature in a developer environment, see [Saved views](saved-views.md). Also refer to the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) article. Note that this preview feature will continue to evolve and change until it becomes generally available. 
+Saved views are now available in preview. This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. For more information about how to enable this feature in a developer environment, see [Saved views](../../dev-itpro/get-started/saved-views.md). Also refer to the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) article. Note that this preview feature will continue to evolve and change until it becomes generally available. 
 
 ## New grid control (Preview) 
 The [new grid control](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) is now available in preview. This new grid serves as a replacement for the existing grid control and features faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a nonreact extensible control, in which case the existing grid control will be used on that page. Note that this preview feature will continue to evolve and change until it becomes generally available.

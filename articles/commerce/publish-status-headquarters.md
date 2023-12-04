@@ -6,7 +6,7 @@ description: This article describes the capability to view product search publis
 author: ashishmsft
 ms.date: 06/21/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -62,7 +62,7 @@ Currently, the system shows the aggregated count of products that are published 
 
 #### Can the system show why products failed to be published?
 
-A product might fail to be published for a wide range of reasons. In some cases, there might be deeper technical issues that require support from Microsoft. However, in other cases, you might be able to fix the issues by updating the product configuration. In these cases, Microsoft recommends that you use the channel merchandising configuration validator that's available in headquarters. This tool can help you identify the product configurations issues that must be fixed. For example, publishing issues might be caused by missing values for specific locales. (These values include product names, category names, attribute values, and product descriptions.) The configuration validator can identify these missing values. For more information, see [Channel merchandising configuration validator](channel-merch-config-validator.md).
+A product might fail to be published for a wide range of reasons. In some cases, there might be deeper technical issues that require support from Microsoft. However, in other cases, you might be able to fix the issues by updating the product configuration. In these cases, Microsoft recommends that you use the channel merchandising configuration validator that's available in headquarters. This tool can help you identify the product configurations issues that must be fixed. For example, publishing issues might be caused by missing values for specific locales. (These values include product names, category names, attribute values, and product descriptions.) The configuration validator can identify these missing values. For more information, see [Channel merchandising configuration validator](dev-itpro/channel-merch-config-validator.md).
 
 #### Can the system show a breakdown of the products that were successfully published and failed to be published by catalog?
 

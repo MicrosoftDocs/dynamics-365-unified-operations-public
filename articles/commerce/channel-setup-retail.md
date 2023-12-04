@@ -4,7 +4,7 @@ description: This article describes how to create a new retail channel in Micros
 author: samjarawan
 ms.date: 08/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
@@ -51,7 +51,7 @@ The following image shows an example retail channel.
 
 There are numerous other optional settings that can be set in the **Statement/closing** and **Miscellaneous** sections, based on the needs of the retail store.
 
-In addition, see [Screen layouts for the point of sale (POS)](pos-screen-layouts.md) for information on setting up the default screen layout in the **Screen layout** section and [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) for setup information about the **Hardware stations** section.
+In addition, see [Screen layouts for the point of sale (POS)](pos-screen-layouts.md) for information on setting up the default screen layout in the **Screen layout** section and [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md) for setup information about the **Hardware stations** section.
 
 The following image shows an example retail channel setup configuration.
 

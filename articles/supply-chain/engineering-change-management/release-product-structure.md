@@ -169,4 +169,8 @@ Starting in Supply Chain Management version 10.0.34, it's now possible to releas
 
 When the *Release multiple BOMs/formulas for Engineering Change Management* feature is enabled, all BOMs or formulas that are active for a product will be released when you release the product. This functionality can be relevant, for example, if you have multiple active formulas that apply for various from quantities. You'll be able to view the different BOMs or formulas and their respective routes on the BOM designer when releasing on the **Release product structure** page and when reviewing the release on **Open product releases** page.
 
+## A product template is required for release
+
+The release policy for the company where a product is to be released must have a product template assigned. This is because some fields in the local company (such as item model group) are required to create a BOM, and many of them are company specific. These field values are copied to the released product from the release template and can be updated as needed.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

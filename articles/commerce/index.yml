@@ -1,0 +1,307 @@
+### YamlMime:Hub
+
+title:  Microsoft Dynamics 365 Commerce documentation
+summary: Discover how to make the most of Dynamics 365 Commerce with training, documentation, and videos covering product capabilities. Learn how to use Commerce to deliver unified, personalized, and seamless buying experiences for customers and partners. 
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Commerce documentation
+  description: Use Commerce to deliver unified, personalized, and seamless buying experiences for customers and partners.  
+  ms.topic: hub-page
+  author: v-chgri
+  ms.author: josaw
+  ms.date: 08/17/2023 
+  ms.custom: bap-template
+  hide_bc: true
+
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+# Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
+
+  items:
+    # Card
+    - title: Get started
+      itemType: get-started
+      url: /dynamics365/fin-ops-core/fin-ops/get-started/service-description?context=%2Fdynamics365%2Fcontext%2Fcommerce
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: /dynamics365/commerce/get-started/whats-new-home-page
+    # Card
+    - title: Training
+      itemType: training
+      url: /training/dynamics365/commerce
+    # Card
+    - title: Troubleshoot
+      itemType: concept
+      url: /troubleshoot/dynamics-365/commerce/welcome-commerce
+      
+additionalContent: 
+  sections:
+  - title: Implement
+# Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices. 
+# Each card should have at least three and no more than five links. Do not include a "See also" link.
+    items:
+    - title: Guidance 
+      links: 
+      - url: /dynamics365/guidance/
+        text: Dynamics 365 implementation guidance
+      - url: /dynamics365/guidance/implementation-guide/process-focused-solution-implementation-lifecycle
+        text: Implementation lifecycle management
+      - url: /dynamics365/adoption/adoption-guide
+        text: Adoption frameworks
+      - url: /dynamics365/guidance/implementation-guide/security
+        text: Security
+    - title: Try/Buy/Deploy
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Deploy a demo environment
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy
+        text: Before you buy
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Deployment options
+    - title: Set up 
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Environment planning
+      - url: /dynamics365/commerce/commerce-architecture
+        text: Architecture
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Onboard an implementation project 
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Prepare for go-live 
+      - url: /dynamics365/commerce/dev-itpro/retail-store-scale-unit-configuration-installation
+        text: Configure and install Commerce Scale Unit (self-hosted)
+  - title: Administer and develop
+    items:
+    - title: Platform development
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
+        text: Develop and customize your environment
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances
+        text: Deploy and access development environments 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
+        text: Application stack and server architecture 
+    - title: Commerce development
+      links:      
+      - url: /dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk
+        text: Migrate to the Commerce SDK
+      - url: /dynamics365/commerce/dev-itpro/csu-core
+        text: Introduction to Commerce Scale Unit (CSU) core
+      - url: /dynamics365/commerce/dev-itpro/pos-extension/pos-extension-overview
+        text: Point of sale (POS) extension
+      - url: /dynamics365/commerce/e-commerce-extensibility/sdk-getting-started
+        text: E-commerce online extensibility development
+      - url: /dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview
+        text: Retail software development kit (SDK) (legacy)  
+    - title: Manage environments
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs?context=/dynamics365/context/ops
+        text: Dynamics 365 Lifecycle Services resources
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page?context=/dynamics365/context/ops
+        text: Continuous delivery
+      - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page?context=/dynamics365/context/ops
+        text: Upgrades, updates, and hotfixes 
+      - url: /dynamics365/commerce/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects
+        text: Set up new environments, Azure DevOps, and branches for projects
+      - url: /dynamics365/commerce/dev-itpro/updating-environments
+        text: Update code and environments for Commerce projects
+    - title: Manage data storage
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?context=/dynamics365/context/ops
+        text: Data management
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?context=/dynamics365/context/ops
+        text: Data import and export
+      - url: /dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations?context=/dynamics365/context/ops
+        text: Database movement operations
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/ops
+        text: Data entities 
+    - title: System administration
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page
+        text: System administration
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation
+        text: Process automation
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview
+        text: Batch processing  
+    - title: Organization administration
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Organization administration
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Organizations and organizational hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Workflow system
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Number sequences
+    - title: Manage user access
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
+        text: Role-based security
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
+        text: Create users
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles
+        text: Assign users to security roles 
+      - url: /dynamics365/commerce/manage-ecommerce-users-roles
+        text: Manage e-commerce users and roles
+    - title: Set up channels
+      links:
+      - url: /dynamics365/commerce/channel-setup-retail
+        text: Set up a retail channel
+      - url: /dynamics365/commerce/channel-setup-online
+        text: Set up an online channel
+      - url: /dynamics365/commerce/pos-operations
+        text: Online and offline point of sale (POS) operations
+      - url: /dynamics365/commerce/dev-itpro/store-commerce
+        text: Store Commerce app
+      - url: /dynamics365/commerce/dev-itpro/adyen-connector
+        text: Dynamics 365 Payment Connector for Adyen
+    - title: Integration development
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
+        text: Integration between finance and operations apps and third party apps
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api  
+        text: Data management REST API
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
+        text: Service endpoint overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/design-best-practices?context=/dynamics365/context/ops
+        text: Design principles and best practices for data entities 
+      - url: /dynamics365/commerce/dev-itpro/consume-retail-server-api
+        text: Consume Retail Server APIs in external applications
+    - title: Microsoft Office integration
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Office integration
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Configure and send email
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Customize the Open in Microsoft Office menu 
+      - url: /dynamics365/commerce/commerce-teams-integration
+        text: Commerce and Microsoft Teams integration
+    - title: Microsoft Power Platform integration
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview?context=/dynamics365/context/ops
+        text: Power Platform integration
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview?context=/dynamics365/context/ops
+        text: Dual-write 
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview?context=/dynamics365/context/ops
+        text: Virtual entities
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
+        text: Dual-write mapping reference
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Reporting and analytics with Power BI 
+    - title: Azure Data Lake integration 
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
+        text: Export to Azure Data Lake
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
+        text: Export to Azure Data Lake in finance and operations apps  
+      - url: /dynamics365/commerce/enable-adls-environment
+        text: Enable Azure Data Lake Storage in a Commerce environment
+    - title: Developer reference
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
+        text: API references
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference
+        text: X++ language reference
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
+        text: Service endpoint overview 
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/odata
+        text: Open Data Protocol (OData) 
+      - url: /dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api
+        text: Commerce Scale Unit customer and consumer APIs
+    - title: Developer tools 
+      links: 
+      - url: /dynamics365/commerce/e-commerce-extensibility/setup-dev-environment
+        text: Set up a development environment
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/development-tools-overview?context=/dynamics365/context/ops
+        text: Development tools in Visual Studio
+      - url: /dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-packaging
+        text: Create deployable packages 
+    - title: Extend and customize 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page?context=/dynamics365/context/ops
+        text: Extensibility overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/writing-extensible-code?context=/dynamics365/context/ops
+        text: Write extensible code       
+      - url: /dynamics365/commerce/online-store-overview
+        text: Manage your e-commerce site
+      - url: /dynamics365/commerce/dev-itpro/pos-extension/pos-extension-basics
+        text: POS extension basics
+      - url: /dynamics365/commerce/pos-screen-layouts
+        text: POS user interface visual configurations
+  - title: Use
+    items:
+    - title: Merchandise products and services
+      links:
+      - url: /dynamics365/supply-chain/pim/product-information?context=%2Fdynamics365%2Fcontext%2Fcommerce
+        text: Product information
+      - url: /dynamics365/commerce/attribute-attributegroups-lifecycle
+        text: Manage attributes and attribute groups
+      - url: /dynamics365/commerce/price-management
+        text: Retail sales price management
+      - url: /dynamics365/commerce/retail-discounts-overview
+        text: Retail discounts
+      - url: /dynamics365/commerce/calculated-inventory-retail-channels
+        text: Inventory availability for online and retail channels
+    - title: Manage orders
+      links:
+      - url: /dynamics365/commerce/customer-orders-overview
+        text: Customer orders in point of sale (POS)
+      - url: /dynamics365/commerce/pos-returns
+        text: Create returns in point of sale (POS)
+      - url: /dynamics365/commerce/dom
+        text: Distributed order management (DOM)
+    - title: Manage customers
+      links:
+      - url: /dynamics365/commerce/set-up-customer-loyalty-program
+        text: Loyalty
+      - url: /dynamics365/commerce/clienteling-overview
+        text: Clienteling overview
+    - title: Manage financials
+      links:
+      - url: /dynamics365/commerce/retail-statements
+        text: Statements
+      - url: /dynamics365/commerce/edit-order-trans
+        text: Edit and audit online order and asynchronous customer order transactions
+    - title: Manage worker tasks
+      links:
+      - url: /dynamics365/commerce/task-mgmt-overview
+        text: Task management overview
+      - url: /dynamics365/commerce/task-mgmt-configure
+        text: Configure task management
+      - url: /dynamics365/commerce/task-mgmt-create-lists
+        text: Create task lists and add tasks
+      - url: /dynamics365/commerce/task-mgmt-assign-lists
+        text: Assign task lists to stores or employees       
+    - title: Manage your e-commerce site
+      links:
+      - url: /dynamics365/commerce/online-store-overview
+        text: E-commerce site overview
+      - url: /dynamics365/commerce/create-ecommerce-site
+        text: Create an e-commerce site
+      - url: /dynamics365/commerce/add-manage-content
+        text: Ways to add content
+      - url: /dynamics365/commerce/dam-overview
+        text: Digital asset management
+      - url: /dynamics365/commerce/compliance-overview
+        text: Make your site compliant
+  - title: Related products
+    items:
+        # Card
+        - title: Dynamics 365 Fraud Protection
+          summary: Help protect your revenue and customers with adaptive AI that continuously learns to protect you against payment fraud, bots, account takeover, and returns and discounts fraud.
+          url: /dynamics365/fraud-protection/
+        - title: Dynamics 365 Supply Chain Management
+          summary: Supply Chain Management allows you to provide the right services and products to your customers, manage relationships, drive targeted campaigns, and provide a great customer experience.
+          url: /dynamics365/supply-chain/
+        - title: Dynamics 365 Intelligent Order Management
+          summary: Centrally manage orders from capture to fulfillment using real-time inventory data tools. Meet growing digital commerce needs and scale easily to support contemporary methods. Drive business sales and manage top line revenue.
+          url: /dynamics365/intelligent-order-management/
+        - title: Dynamics 365 Sales
+          summary: Dynamics 365 Sales enables salespeople to build strong relationships with their customers, take actions based on insights, and close deals faster. 
+          url: /dynamics365/sales/overview
+        - title: Dynamics 365 Finance
+          summary: Reimagine your financial models to prepare, respond, and thrive in the face of disruption.
+          url: /dynamics365/finance/

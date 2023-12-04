@@ -4,7 +4,7 @@ description: This article describes Microsoft Dynamics 365 Commerce Scale Unit (
 author: josaw1
 ms.date: 02/02/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw

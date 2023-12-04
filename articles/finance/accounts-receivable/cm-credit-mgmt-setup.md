@@ -4,7 +4,7 @@
 title: Credit management parameters setup
 description: This article describes the options that you can use to configure Credit management to meet your business's requirements.
 author: JodiChristiansen
-ms.date: 11/21/2022
+ms.date: 10/09/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,7 @@ You can also define the number of grace days before the credit rules are checked
 
 If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set up to run credit management rules. If you release the sales order without posting and then run the same order processing step again, the credit rules will be checked again. For example, an order is put on hold after a confirmation, and you release it either with or without posting. In this case, the order will be put on hold again if you confirm it again. Use grace days if the order should move on to the next processing step without being held again.
 
-> [!Note]
+> [!NOTE]
 > If one posting checkpoint has a grace day entered, all checkpoints that are marked for posting need to have grace days.
 
 - Select the **Posting** checkbox to run the credit management rules when the posting checkpoint that is shown on the line is run. If you don't select the checkbox, the rules will be checked only once during the whole posting process.
@@ -76,6 +76,8 @@ Several credit management statistics are included in the **Customer credit manag
 4. Average balance 2
 5. Average credit limit %
 6. Average exposure %
+
+Set the **Calculate statistics for zero balance customers** to **Yes** to update the credit statistics for customers with no open transactions when running the aging snapshot process. This includes updating the open order amount. Selecting this option can slow down the aging process. 
 
 ### Credit limits
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
@@ -75,7 +75,8 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
-| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance will no longer receive support with bug fixes. Customers will be asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). In October 2023, the Revenue recognition feature will no longer be available. Customers will be asked to move to the improved Subscription billing functionality. The bundle feature, which is part of revenue recognition, is planned to be replaced and released as a separate feature available in preview Summer 2023.|
+| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance will no longer receive support with bug fixes. Customers will be asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). In January 2024, the Revenue recognition feature will no longer be available. Customers will be asked to move to the improved Subscription billing functionality. The bundle feature, which is part of revenue recognition, will be replaced and released as a separate feature available in 10.0.36.|
+
 
 ## Features removed or deprecated in the Finance 10.0.29 release
 
@@ -279,7 +280,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Workflow |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection. Find more details about the new design in [What's new in 10.0.7](whats-new-changed-10-0-7.md). |
+| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection. Find more details about the new design in [What's new in 10.0.7](../dev-itpro/whats-new-changed-10-0-7.md). |
 
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).

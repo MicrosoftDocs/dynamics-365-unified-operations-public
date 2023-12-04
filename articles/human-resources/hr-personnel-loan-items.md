@@ -57,7 +57,7 @@ If an item becomes damaged or misplaced, enter a fictitious return record. Then 
 
 ## Additional resources
 
-[Human resources](index.md)
+[Human resources](index.yml)
 
 
 

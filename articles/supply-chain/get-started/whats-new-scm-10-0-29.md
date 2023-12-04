@@ -38,7 +38,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -75,7 +75,7 @@ The table also lists features that were previously in public preview but have ch
 | Cost management | [Compare item prices storage](../cost-management/compare-item-price.md) | Mandatory |
 | Cost management | [Cost calculation level](../cost-management/cost-calculation-level.md) | On by default |
 | Cost management | Enable user-defined batch number setup for inventory closing reverse | On by default |
-| Cost management | [Inventory closing progress details](whats-new-scm-10-0-21.md) | On by default |
+| Cost management | [Inventory closing progress details](../supply-chain-dev/whats-new-scm-10-0-21.md) | On by default |
 | Cost management | [Inventory value report storage](../cost-management/inventory-value-report-storage.md) | Mandatory |
 | Cost management | Inventory value report data clean up | Mandatory |
 | Cost management | Moving average, fallback cost sequence | Mandatory |
@@ -110,23 +110,23 @@ The table also lists features that were previously in public preview but have ch
 | Manufacturing | [Show full serial, batch, and license plate numbers in the production floor execution interface](../production-control/production-floor-execution-configure.md) | Mandatory |
 | Manufacturing | [Validate expiration of raw materials against planned consumption date](whats-new-scm-10-0-23.md) | On by default |
 | Master planning | [Auto-firming for Planning Optimization](../master-planning/planning-optimization/planned-order-firming.md) | Mandatory |
-| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | On by default |
+| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Master planning | [Include items with on-hand when pre-processing filters are enabled](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled) | On by default |
 | Master planning | [Infinite capacity scheduling for Planning Optimization](../master-planning/planning-optimization/infinite-capacity-planning.md) | On by default |
 | Master planning | [Margins for Planning Optimization](../master-planning/planning-optimization/safety-margins.md) | Mandatory |
 | Master planning | [Negative days for Planning Optimization](../master-planning/planning-optimization/delay-tolerance.md) | Mandatory |
-| Master planning | [Parallel authorizing of adjusted demand forecast](whats-new-scm-10-0-20.md) | Mandatory |
+| Master planning | [Parallel authorizing of adjusted demand forecast](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Master planning | [Planned order firming with filtering](../master-planning/planning-optimization/planned-order-firming.md) | Mandatory |
 | Master planning | [Planned production orders for Planning Optimization](../master-planning/planning-optimization/production-planning.md) | Mandatory |
 | Master planning | [Purchase trade agreements for Planning Optimization](../master-planning/planning-optimization/purchase-trade-agreement.md) | Mandatory |
 | Master planning | [Saved views for planned orders](saved-views-scm.md) | Mandatory |
 | Procurement and sourcing | Charges from and to amounts on purchase orders | Mandatory |
 | Procurement and sourcing | Disable purchase requisition distribution Reset button | On by default |
-| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | On by default |
+| Procurement and sourcing | [Enable resetting procurement related workflows](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | On by default |
 | Procurement and sourcing | [Merge financial dimensions from the vendor with active dimension link financial dimension on the purchase order](whats-new-scm-10-0-25.md) | Mandatory |
 | Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | Generally available |
-| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](whats-new-scm-10-0-21.md) | On by default |
+| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](../supply-chain-dev/whats-new-scm-10-0-21.md) | On by default |
 | Procurement and sourcing | [Purchase agreement responsible party](../procurement/purchase-agreements.md) | Mandatory |
 | Procurement and sourcing | [Saved views for purchase orders](saved-views-scm.md) | Mandatory |
 | Product information management | Bill of materials report pre-processing to avoid timeout | Mandatory |
@@ -145,13 +145,13 @@ The table also lists features that were previously in public preview but have ch
 | Sales and marketing | [Improve "Top 100" customers report performance](whats-new-scm-10-0-23.md) | Mandatory |
 | Sales and marketing | Include waiting records in history cleanup tasks | Mandatory |
 | Sales and marketing | Limit the number of sales order lines per batch task | On by default |
-| Sales and marketing | [Limit the number of sales orders that can be selected for posting](whats-new-scm-10-0-21.md) | Mandatory |
+| Sales and marketing | [Limit the number of sales orders that can be selected for posting](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
 | Sales and marketing | Recalculate estimated customer balance | Mandatory |
 | Sales and marketing | [Sales return order line registration with decimal precision with and without catch weight](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight) | Mandatory |
 | Sales and marketing | [Saved views for sales and marketing](saved-views-scm.md) | Mandatory |
 | Sales and marketing | [Single click sales order confirmation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Mandatory |
 | Transportation management | Allow unmatching of freight bills from freight invoice lines without a posted vendor invoice journal | On by default |
-| Transportation management | [Enable creation of a vendor invoice journal when discarding a freight bill](whats-new-scm-10-0-20.md) | On by default |
+| Transportation management | [Enable creation of a vendor invoice journal when discarding a freight bill](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Transportation management | [Small Parcel Shipping](../warehousing/small-parcel-shipping.md) | Mandatory |
 | Transportation management | [USMCA certification of origin document](../transportation/usmca-certification-of-origin.md) | On by default |
 | Warehouse management | [Additional location zone](../warehousing/additional-location-zones.md) | Mandatory |
@@ -159,7 +159,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Consolidate shipment](../warehousing/configure-shipment-consolidation-policies.md) | Mandatory |
 | Warehouse management | [Create and process transfer orders from the warehouse app](../warehousing/create-transfer-order-from-warehouse-app.md) | Mandatory |
 | Warehouse management | Cross docking templates with location directives | On by default |
-| Warehouse management | [Decouple putaway work from ASNs](whats-new-scm-10-0-21.md) | Mandatory |
+| Warehouse management | [Decouple putaway work from ASNs](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
 | Warehouse management | [Deferred put operations](../warehousing/deferred-processing-manual-inventory-movement.md) | Mandatory |
 | Warehouse management | Deferred put - container | On by default |
 | Warehouse management | Deferred put processing – enable for audit template feature with trigger event set to Prior | Mandatory |
@@ -178,7 +178,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Planned cross docking](../warehousing/planned-cross-docking.md) | Mandatory |
 | Warehouse management | [Process warehouse app events](../warehousing/warehouse-app-events.md) | Mandatory |
 | Warehouse management | Query enhancement for the co-product and by-product put away work template | Mandatory |
-| Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](whats-new-scm-10-0-19.md) | Mandatory |
+| Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](../supply-chain-dev/whats-new-scm-10-0-19.md) | Mandatory |
 | Warehouse management | [Saved view for the load planning workbench](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Saved view for the work details page](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Saved view for wave processing](saved-views-scm.md) | Mandatory |
@@ -186,9 +186,9 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Saved views for shipment processing](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | Generally available |
 | Warehouse management | Shipment wave label details | Mandatory |
-| Warehouse management | [Slot mixed units](whats-new-scm-10-0-21.md) | Mandatory |
-| Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | On by default |
-| Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | On by default |
+| Warehouse management | [Slot mixed units](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
+| Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | On by default |
+| Warehouse management | [Validate templates selected for replenishment jobs](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Warehouse management | [Warehouse app promoted fields](../warehousing/warehouse-app-promoted-fields.md) | Mandatory |
 | Warehouse management | [Warehouse app step instructions](../warehousing/mobile-app-titles-instructions.md) | Mandatory |
 | Warehouse management | [Warehouse location status](../warehousing/warehouse-location-status.md) | Mandatory |

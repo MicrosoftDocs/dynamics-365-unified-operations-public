@@ -4,7 +4,7 @@ description: This article describes the capabilities of the point of sale (POS) 
 author: hhainesms
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines

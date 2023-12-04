@@ -2,7 +2,7 @@
 title: Online and offline point of sale (POS) operations
 description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: josaw1
-ms.date: 06/06/2023
+ms.date: 08/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -177,7 +177,7 @@ The following columns specify where the operations can be invoked:
 | 640  | Clear sales representative on line                | Removes the commission sales group (sale representatives) from the currently selected line.                                                                                                                                 | Yes            | Yes                | No             | Yes               | No              |
 | 641  | Carry Out Selected Products                       | Sets the mode of delivery for the selected lines to **Carryout**.                                                                                                                                                   | Yes            | Yes                | No             | Yes\*             | No              |
 | 642  | Carry Out All Products                            | Sets the mode of delivery for all lines to **Carryout**.                                                                                                                                                            | Yes            | Yes                | No             | Yes\*             | No              |
-| 643  | Add coupon code                                   | Adds a coupon by entering its code in the POS.                                                                                                                                                                  | Yes            | Yes                | No             | Yes               | No              |
+| 643  | Add coupon code                                   | Adds a coupon by entering its code in the POS.                                                                                                                                                                  | Yes            | Yes                | No             | Yes\*\*\*               | No              |
 | 644  | Remove coupon code                                | Prompts the user to remove coupons by selecting them from a list of coupons that are currently associated with the transaction.                                                                                   | Yes            | Yes                | No             | Yes               | No              |
 | 645  | View all discounts                                | Shows all the discounts that are currently running in a store.                                                                                                                                                  | Yes            | Yes                | Yes            | Yes               | No              |
 | 646  | View all discounts                                | Shows all the promotions that are applicable to a selected line, or to the whole cart.                                                                                                                     | Yes            | Yes                | Yes            | Yes               | Yes             |
@@ -292,5 +292,6 @@ The following columns specify where the operations can be invoked:
 
 \*\* When the POS is offline, only transactions in the current offline channel database are shown in the journal.
 
+\*\*\* When the POS is offline, coupon codes with usage limits can't be added to a transaction.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

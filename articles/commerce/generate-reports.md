@@ -125,7 +125,7 @@ To generate an **Organization sales** report, follow these steps.
 
 ## Additional resources
 
-- [Commerce home page](./index.md)
+- [Commerce home page](./welcome.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

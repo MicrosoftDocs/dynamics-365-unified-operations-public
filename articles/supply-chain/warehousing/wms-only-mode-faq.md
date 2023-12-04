@@ -1,5 +1,5 @@
 ---
-title: Warehouse management only mode FAQ
+title: Warehouse management only mode FAQ (preview)
 description: This article provides answers to frequently asked questions about Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode FAQ
+# Warehouse management only mode FAQ (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -67,8 +67,19 @@ Warehouse management only mode uses just two types of documents: *inbound shipme
 
 ## Why can't I just Receive complete what I have partly inbound registered?
 
-Depending on your setup, an inbound load is automatically created as part of the inbound shipment order import, via advanced shipping notice (ASN) import, or via a manual process. In the current version, the load line quantities must be fulfilled according to over-delivery and under-delivery settings, and *receiving completed* must be manually triggered.
+Depending on your setup on the **Inbound shipment order policies** FastTab of the **Source systems** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**), inbound loads might be created in any of the following ways:
+
+- Automatically, when an inbound shipment order is imported
+- Automatically, when an advanced shipping notice (ASN) is imported
+- Via a manual process
+- As part of the Warehouse Management mobile app receiving process
+
+When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
 ## Why do I receive the following error for my existing Update product receipts process: "Unable to update product receipt for a load with inbound shipment order lines"?
 
 If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you must update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
+
+## Why do I receive the following error when I process a transfer order: "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form"?
+
+In addition to setting up item model groups that don't use costing and general ledger settings (see [Master and reference data](wms-only-mode-exchange-data.md#master-data)), you must enable [Warehouse-specific inventory transactions](warehouse-transactions.md) for the *Transfer issue* and *Transfer receipt* warehouse scenarios.

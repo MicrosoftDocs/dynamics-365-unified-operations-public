@@ -6,7 +6,7 @@ description: This article describes various price and discount functions in the 
 author: boycez
 ms.date: 08/12/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: boycez

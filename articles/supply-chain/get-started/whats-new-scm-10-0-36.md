@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.36. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,12 +12,11 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.36. This version has a build number of 10.0.1695 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.36. This version has a build number of 10.0.1695 and is available on the following schedule:
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
@@ -29,18 +28,15 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Archive inventory transactions](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/archive-inventory-transactions) | [Move inventory transactions history to long-term data retention](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory-purge.md) | Feature management:<ul><li>*(Preview) Archive*</li><li>*(Preview) Archive data to Dataverse managed data lake and purge*</li><li>*(Preview) Purge archived inventory transactions*</li></ul> |
-| Inventory and logistics | [Empower users with near real-time inventory insights](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-users-near-real-time-inventory-insights) | *Coming soon* | Enabled by default |
-| Inventory and logistics | [Integrate Inventory Visibility with Dynamics 365 Commerce](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-inventory-visibility-dynamics-365-commerce) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [Empower users with near real-time inventory insights](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-users-near-real-time-inventory-insights) | [Inventory Visibility Power BI dashboard](../inventory/inventory-visibility-dashboard.md) | Enabled by default |
 | Inventory and logistics | [Sell and price multiple items as a bundle](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/sell-price-multiple-items-as-bundle) | [Product bundles overview](../sales-marketing/product-bundles-overview.md) | Feature management:<br>*Product bundles*  |
-| Manufacturing and asset management | [Detect spikes and deviations in sensor data](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/detect-spikes-deviations-sensor-data) | [Anomaly detection scenario](../sensor-data-intelligence/sdi-scenario-anomaly.md) | Enabled by default |
-| Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | *Coming soon* | Feature management:<br>*(Preview) Advanced export control configuration*  |
+| Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | [Advanced export control overview](../pim/export-control-overview.md) | Feature management:<br>*(Preview) Advanced export control configuration*  |
 | Warehouse management | Dynamic printer selection | [Dynamic printer selection](../warehousing/dynamic-printing-selection.md) | Enabled by default |
 | Warehouse management | Operate warehouses connected to external order management systems | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*(Preview) Warehouse management only mode* |
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -53,13 +49,14 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Master planning | (Preview) Ignore specific transaction types using Planning Optimization | Lets you select which transaction types should be considered on the master plan when running Planning Optimization |
 | Master planning | (Preview) Strict safety stock pegging for Planning Optimization | Gives you the option of directly pegging safety stock as demand against the planned order created for it. On the **Coverage groups** page, this feature adds a new parameter called **Strict safety stock pegging**, which lets you choose one of the following options for each coverage group:<ul><li>*No*: Safety stock is considered the least important of type of demand, so whenever a planned order is created for safety stock, all other demand will be prioritized, which lets you provide a higher service level for your customers. This is how the system always behaved in previous versions. </li><li>*Yes*: The system will apply strict safety stock pegging. When a planned order is created for fulfilling safety stock, it will always be pegged against safety stock, without allowing any other demand to be pegged against it (except when using a **Coverage code** of *Period*). This can provide better visibility in some scenarios, such as when you're using a high number of negative days.</li></ul> |
 | Procurement and sourcing | Show only delivery addresses for workers when creating category-based purchase requisition lines | Improves privacy of workers by adding an option that will prevent users from seeing workers' home addresses when creating category- based requisition lines and purchase requisition lines. Instead, only addresses marked with a **Purpose** of *Delivery* will be shown. Addresses marked for both home and delivery purposes will be available, but users won't be able to see that the address is also a home address. The option is available on the **Procurement and sourcing** page, on the **Purchase requisition** tab. |
-| Procurement and sourcing | (Preview) Supplier requested and confirmed shipment dates | Enables you to do the following:<ul><li>Determine the supplier's shipping calendar on the vendor and its subsequent default to the relevant document</li><li>Determine the delivery transport days from the supplier to the receiving point</li><li>Enhance the purchasing process through the incorporation of new requested and confirmed ship dates</li><li>Consider the supplier's shipping calendar and transport days for the automatic calculation of supplier ship dates.</li></ul> |
-| Sales and marketing | (Preview) Archive sales order from history tables to Dataverse managed data lake and purge | Performs the last step in the archival process, which is archiving from history tables to Dataverse managed data lake. For more information, see [Archive sales orders](../../fin-ops-core/dev-itpro/sysadmin/archive-sales-orders.md). |
 | Sales and marketing | Auto-create direct delivery intercompany orders originating from purchase order creation | Automates the creation of both an intercompany direct delivery sales order and an intercompany direct delivery purchase order when a purchase order in another legal entity is created. When this feature is disabled, the creation of the intercompany direct delivery purchase order is deferred until the intercompany direct delivery sales is opened in the sales order details page. When this feature is enabled, the intercompany direct delivery purchase order is created without having to open the intercompany direct delivery sales order from the sales order details form. This feature applies when both **Create Intercompany orders** and **Direct delivery** are set to *Yes* on an intercompany sales order. |
 | Sales and marketing | Copy customer reference and requisition to purchase order line when created from sales order line | When a purchase order line is created from a sales order line, this feature copies the customer reference and requisition values from the sales order line to the purchase order line. If one or both values aren't specified for the sales order line, then the feature copies values from the sales order header instead. |
-| Sales and marketing | Stop creation of source document header and line records related to sales packing slip posting | Stops unused source document header and source document line records from being created when posting sales order packing slips. |
+| Sales and marketing | Stop creation of source document header and line records related to sales packing slip posting | Stops unused source document header and source document line records from being created when posting sales order packing slips. This feature is turned on by default. |
 | Transportation management | (Preview) Match vendor invoice journal with voyage cost in different currency. | Lets you specify any currency code on a vendor invoice journal and match it with the voyage cost in another currency. |
 | Warehouse management | Consistent handling of license plate information for warehouse actions | Causes the system to be more consistent in the way it uses the columns of the `WHSWorkTrans` table, which stores information about user actions related to warehouse work. This change makes the system easier for developers to understand and may be required by future features related to inventory transactions. If your system includes customizations that affect or are affected by the `WHSWorkTrans` table, then you should enable this feature on a development system, test and modify your customizations as needed, and then deploy the updates to your production system. Then you can enable this feature on your production system to prepare it to take advantage of future updates. As a result of this feature, the system will store source and destination license plate information more consistently in the various columns of the table (no columns are removed or added). The first time you turn on this feature, it will process the `WHSWorkTrans` table by moving target license plate information for incomplete work to the `TargetLicensePlateId` column. It will also deduce the source license plate information for the pick work lines and update the `InventDimId` column accordingly. Records for already completed work won't be affected. Thereafter, the system will continue to work using the new convention. |
+
+> [!NOTE]
+> Supply Chain Management version 10.0.36 introduces a label change for purchase orders and related functionality. All labels that use the term *Delivery date* have been changed to use the term *Receipt date*. The functionality remains unchanged. The terminology has been changed to allow for an upcoming feature that distinguishes between the date a delivery is sent (*Ship date*) and the date it is received (*Receipt date*). This label change applies automatically starting in version 10.0.36 and is not managed through feature management.
 
 ## Feature state changes in this release
 
@@ -75,6 +72,8 @@ The table also lists features that were previously in public preview but have ch
 | Engineering Change Management | [Engineering Change Management](../engineering-change-management/product-engineering-overview.md) | Mandatory |
 | Engineering Change Management | [Manage changes to formulas and their ingredients](../engineering-change-management/product-engineering-overview.md) | Mandatory |
 | Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | Mandatory |
+| Inventory management | [(India) For transfer price rules, ignore location when "From warehouse code" is set to "All"](whats-new-scm-10-0-28.md) | Mandatory |
+| Inventory management | Cascade transfer order header date change to lines | On by default |
 | Inventory management | [Enable intercompany on-hand to only show nonzero on-hand quantity](whats-new-scm-10-0-28.md) | On by default |
 | Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | Mandatory |
 | Master planning | [Group transactions in Planning Optimization](whats-new-scm-10-0-29.md) | Mandatory |
@@ -90,26 +89,29 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | Charges setup with site and warehouse | Mandatory |
 | Procurement and sourcing | Check unit precision for not-stocked items | Mandatory |
 | Procurement and sourcing | [Consolidate multiple purchase requisitions into a single purchase order by accounting date](whats-new-scm-10-0-25.md) | Mandatory |
-| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | Mandatory |
+| Procurement and sourcing | [Enable resetting procurement related workflows](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | Mandatory |
 | Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | Mandatory |
-| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](whats-new-scm-10-0-21.md) | Mandatory |
+| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
 | Procurement and sourcing | RFQ reference link added to PO | Mandatory |
 | Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | Mandatory |
 | Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | Mandatory |
 | Procurement and sourcing | [Assess supply risks to prevent supply chain disruptions](../procurement/supply-risk-assessment-overview.md) | On by default |
+| Procurement and sourcing | [Check purchase order expenditure reviewers setup before enabling workflow](whats-new-scm-10-0-35.md) | On by default |
 | Procurement and sourcing | [Display legacy default RFQ reply field settings](whats-new-scm-10-0-25.md) | On by default |
 | Procurement and sourcing | Purchase agreement matching policy | On by default |
 | Procurement and sourcing | Purchase order delivery date | On by default |
+| Procurement and sourcing | Request for quotation amendment and cancellation email framework options | On by default |
+| Procurement and sourcing | [Review changes to confirmed purchase orders based on downstream impact](../procurement/purchase-order-changes-after-confirmation.md) | On by default |
 | Procurement and sourcing | [Purchase order workflow submission and approval performance enhancement](whats-new-scm-10-0-32.md) | Generally available |
 | Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | Mandatory |
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | Mandatory |
 | Product information management | [Product dimension version](../pim/product-dimensions.md#version-dim) | Mandatory |
 | Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md) | Mandatory |
-| Production control | [Copy generic routes](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [Copy generic routes](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Production control | [My jobs tab on the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
 | Production control | [Production teams in the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
-| Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [Update related resource requirements when a route operation is changed](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Production control | [Additional configuration on the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Enable use of a numpad in the sign-in page](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Improved user experience for the Report progress dialog in the Job Card Device](../production-control/report-finished-job-device.md) | On by default |
@@ -122,9 +124,9 @@ The table also lists features that were previously in public preview but have ch
 | Sales and marketing | [Prevent updates to intercompany sales order line requested dates in header to lines update scenario when derived](whats-new-scm-10-0-32.md) | Mandatory |
 | Sales and marketing | [Update prices and discounts entered manually for intercompany](whats-new-scm-10-0-29.md) | Mandatory |
 | Sales and marketing | [Adjusting reverse match for a settlement process](whats-new-scm-10-0-34.md) | On by default |
+| Sales and marketing | [Keep existing sorting on intercompany sales lines when updating them](whats-new-scm-10-0-35.md) | On by default |
 | Sales and marketing | [Settle customer payment deductions using the matching invoice](whats-new-scm-10-0-31.md) | On by default |
 | Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) | Generally available |
-| Sales and marketing | Unit of measure for line level charges | Generally available |
 | Shared AP and AR | [Rebate management](../rebate-management/rebate-management-overview.md) | Mandatory |
 | Shared AP and AR | Cancel posted rebate provision with a posting date | On by default |
 | Shared AP and AR | Enable auto negative tier in Rebate management | On by default |
@@ -148,6 +150,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | License plate validation on source document lines | Mandatory |
 | Warehouse management | Line reservation enhancements for the batch number reservation form feature | Mandatory |
 | Warehouse management | [Location directive scopes](../warehousing/create-location-directive.md) | Mandatory |
+| Warehouse management | [Multi-level detours for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | Mandatory |
 | Warehouse management | [Multiple product receipt postings per load](../warehousing/inbound-load-handling.md) | Mandatory |
 | Warehouse management | [Over receipt of load quantities](../warehousing/inbound-load-handling.md) | Mandatory |
 | Warehouse management | [Packing work for packing stations](../warehousing/packing-work.md) | Mandatory |
@@ -160,7 +163,6 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Mandatory |
 | Warehouse management | [Work policy enhancements for inbound work](../warehousing/warehouse-work-policies.md) | Mandatory |
 | Warehouse management | [Auto-submit detour steps for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
-| Warehouse management | [Multi-level detours for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | Options for validating ingredient batch expiration dates | On by default |
 | Warehouse management | [Pack containers using the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md) | On by default |
 
@@ -172,7 +174,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Procurement and sourcing | [Review and accept changes to confirmed purchase orders](../procurement/purchase-order-changes-after-confirmation.md) |
 | Responsible AI | [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md) |
-| Warehouse management | [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) now describes how to authenticate using device code flow |
+| Warehouse management | [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) now describes how to authenticate using device code flow |
 | Warehouse management | [Optimize location directive queries](../warehousing/location-directives-optimize.md) |
 | Warehouse management | [Warehouse Mobile app accessibility features](../warehousing/warehouse-app-accessibility.md) |
 
@@ -186,11 +188,11 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.36 includes platform updates
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.36, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=831854&dbType=3&qc=bffd63612a8f998d04f4f14d6d456f17d1f6038819d1225f612e2fd0f5c59e17).
 
-### Dynamics 365 and industry clouds: 2023 release wave 1 plan
+### Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan](/dynamics365/release-plan/2023wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

@@ -43,7 +43,7 @@ This article demonstrates how to create a delivery schedule for a purchase order
 9. In the **Quantity** field, change the quantity to `4`.
 10. Select **New**.
 11. In the **Quantity** field, enter `6` as the remaining quantity.
-- In the delivery date field, select a date that's one week after the date on the first delivery line.  
+- In the receipt date field, select a date that's one week after the date on the first delivery line.  
 - You can keep track of the total quantity that's allocated to the delivery schedule lines by looking at the **Total** and **Remaining** fields. When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.  
 12. Expand the **Charges conversion** section.
 - The options here allow you to control how you want charges to be distributed across the delivery schedule lines. If you select **Copy gross amounts**, the charge amount on the original order line is copied to each delivery line. The **Allocate to delivery lines** option divides the original line charge according to the quantity on each delivery line.  

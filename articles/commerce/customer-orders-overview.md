@@ -7,7 +7,7 @@ author: josaw1
 ms.date: 08/04/2023
 ms.topic: article
 ms.search.form: RetailFunctionalityProfile 
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.custom: ["260594"]
 ms.collection: get-started

@@ -1,6 +1,6 @@
 ---
-title: Mass deploy the Warehouse Management mobile app
-description: This article explains how to mass deploy the Warehouse Management mobile app by using Microsoft Intune.
+title: Mass deploy the mobile app for service-based authentication
+description: This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
@@ -12,13 +12,16 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Mass deploy the Warehouse Management mobile app
+# Mass deploy the mobile app for service-based authentication
 
 [!include [banner](../includes/banner.md)]
 
+> [!IMPORTANT]
+> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md).
+
 Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you have many devices to manage. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
 
-This article explains how to mass deploy the Warehouse Management mobile app by using Intune.
+This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using Microsoft Intune.
 
 ## Prerequisites
 
@@ -26,7 +29,7 @@ To use an MDM solution to deploy the Warehouse Management mobile app and the rel
 
 - Warehouse Management mobile app version 2.0.41.0 or later (This version number applies to all mobile platforms.)
 - A valid store account for each mobile platform that you'll support ([Microsoft account](https://account.microsoft.com/account/), [Google Account](https://www.google.com/account/about/), and/or [Apple ID](https://appleid.apple.com/sign-in))
-- [Azure Active Directory (Azure AD)](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview) (Azure AD Premium P2 license)
+- [Microsoft Entra ID](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview) (Microsoft Entra ID Premium P2 license)
 - [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home) (the Intune website)
 - [Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-overview) installed on a dedicated Windows PC
 - [PowerShell](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
@@ -203,12 +206,12 @@ The following subsections guide you through the process of creating the required
 
 Obtain a self-signed PFX certificate (.pfx file) either through the Windows Server Certificate Authority (see [Install the Certification Authority](/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority)) or by using PowerShell (see [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate)). Regardless of the source, when you export the certificate, be sure to include the private key and protect it through a password.
 
-#### Create an app registration for PFXImport PowerShell in Azure AD
+#### Create an app registration for PFXImport PowerShell in Microsoft Entra ID
 
-Follow these steps to create an app registration for PFXImport PowerShell in Azure AD.
+Follow these steps to create an app registration for PFXImport PowerShell in Microsoft Entra ID.
 
 1. Sign in to Azure.
-1. From the **Home** page, go to **Manage Azure Active Directory**.
+1. From the **Home** page, go to **Manage Microsoft Entra ID**.
 1. In the navigation pane, select **App registrations**.
 1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:
@@ -258,7 +261,7 @@ Follow these steps to set up your dedicated Certificate Connector machine.
 1. On the **Certificate connectors** tab, on the toolbar, select **Add**.
 1. In the **Install the certificate connector** dialog box, select the certificate connector link to download the *IntuneCertificateConnector.exe* file. This file is an installer for the Certificate Connector.
 1. Transfer the *IntuneCertificateConnector.exe* file to the designated Certificate Connector machine. Then run the file, and follow the on-screen instructions. During the installation process, be sure to select the **PKCS imported certificates** checkbox.
-1. Sign in to your Azure AD account as an admin user. If the Certificate Connector was successfully installed, there will be a green check mark on the **Endpoint Manager** page. For more information, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
+1. Sign in to your Microsoft Entra ID account as an admin user. If the Certificate Connector was successfully installed, there will be a green check mark on the **Endpoint Manager** page. For more information, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
 
 #### Import your PFX certificate into the Certificate Connector
 

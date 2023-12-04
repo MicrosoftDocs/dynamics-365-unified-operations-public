@@ -7,7 +7,7 @@ description: This article describes how to create Commerce catalogs for Microsof
 author: ashishmsft
 ms.date: 06/27/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -161,7 +161,7 @@ After a catalog is in an **Approved** status, you can publish it by selecting **
 
 ## Additional resources
 
-[Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
+[Extensibility impact of Commerce catalogs for B2B customizations](dev-itpro/catalogs-b2b-sites-dev.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
 
