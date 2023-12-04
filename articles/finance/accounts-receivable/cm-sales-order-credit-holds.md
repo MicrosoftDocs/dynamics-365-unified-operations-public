@@ -4,7 +4,7 @@
 title: Credit holds for sales orders
 description: This article describes the setup of rules used to place a sales order on credit hold. 
 author: JodiChristiansen
-ms.date: 10/05/2023
+ms.date: 12/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -187,7 +187,7 @@ Rules are run in a specific order that you change to suit the needs of your orga
 
 The behavior of the **Credit limit used** rule will change based on the settings for the **Check credit limit for sales order** parameter found on the **Credit and collections parameters** page.
 - If the parameter is set to **No**, then the **Credit limit used** rule isn't ran. 
-- If the parameter is set to **Yes** and the **Message when exceeding credit limit** is set to **Warning**, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be run to see if you have rules that you want to be run. For this scenario you would normally not add any rules.
+- If the parameter is set to **Yes** and the **Message when exceeding credit limit** is set to **Warning**, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be run to see if you have rules that you want to be run. For this scenario, you would normally not add any rules.
 - If the parameter is set to **Yes** and the **Message when exceeding credit limit** is set to **Error**, then the credit limit will be checked and the order is put on hold if credit limit is exceeded. In addition, the **Credit limit used** rules will be run to see if there are additional rules that should be run. An error message won't display, but the **Exceeded credit limit** blocking reason is displayed. 
 
 ## Settings that will change the way an order is placed on hold
