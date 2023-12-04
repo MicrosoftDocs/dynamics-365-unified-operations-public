@@ -40,7 +40,7 @@ This article describes where to access financial reporting and how to use the fi
 
 The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 	
-1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. See here for instructions to [Configure Power Platform](ConfigureMicrosoftPowerPlatform.md) 
+1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. For more information, see [Enable Power Platform integration](/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) 
 2. Select **Install a new add-in**, and search for **Financial reporting**.
 3. Agree to the terms, and then select **Install**.
 
