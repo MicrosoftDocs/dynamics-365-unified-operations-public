@@ -42,9 +42,8 @@ As soon as you submit the request, it's automatically approved. Within a minute 
 > [!NOTE]
 > The credentials are valid for eight hours, and then they expire. After the credentials expire, you have to request access again. 
 
-### For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?
-* If none of your external components have dependencies on an explicit inclusion list of IPs or special handling of outbound IP addresses for routing or firewall, no action is required.
-* If any of your external components have special handling for the outbound IP addresses to communicate to the AOS, add the new outbound IP addresses where the existing ones appear. Don’t replace the existing IP addresses. You can find the new outbound IP addresses by using the Service Tag Discovery API or using the downloadable JSON files. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
+### What are the outbound IP ranges for my finance and operations environment?
+For any of your external components that have special handling for the outbound IP addresses for requests originating from the AOS, you can find the new outbound IP addresses by using the Service Tag Discovery API or using the downloadable JSON files. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
 
 The inbound IP address to the AOS is dynamic. This can, and will, change over time as infrastructure changes occur.
 
