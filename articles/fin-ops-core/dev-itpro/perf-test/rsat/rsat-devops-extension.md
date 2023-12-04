@@ -125,8 +125,8 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
 2. In the **Command** field group, select the **Build test cases** option to create a task that builds test suites. This task generates test execution files and upload them to Azure DevOps test cases. This task is required after you make changes to your recordings or install a new version of RSAT.
 3. In the **RSAT location**, double-check the RSAT installation folder.
 4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
-5. Select the **Download** checkbox to download files from Azure DevOps. Leave this unchecked only if all files have been downloaded to the agent environment already.
-6. Select the **Upload** checkbox to upload edited files after the build process has run to Azure DevOps. Common use is to have this checked, and leave this unchecked only if the pipelines include an execute task that follow where download is unchecked.
+5. Select the **Download** checkbox to download files from Azure DevOps. Leave this checkbox cleared only if all files have already been downloaded to the agent environment.
+6. Select the **Upload** checkbox to upload edited files after the build process has run to Azure DevOps. Common practice is to have this checkbox selected, and to leave it cleared only if the pipelines include an execute task that follows, where the **Download** checkbox is cleared.
 7. Select the **Generate test execution files only** checkbox if you don't want to regenerate or overwrite existing Excel parameter files. This scenario is the most common, and the checkbox is selected by default.
 8. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
 9. Enter the name or ID of the test suite that you want to build. To specify multiple test suites, use commas to separate the values.
@@ -141,9 +141,9 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
 3. In the **RSAT location**, double-check the RSAT installation folder.
 4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
 5. Select the **Download** checkbox if you want to download attachments (test execution and parameter files) from the Azure DevOps test cases before execution starts. Clear the checkbox if files were downloaded from an earlier build task. In this case, the current files in the working directory are used.
-6. Select the **Update WebDriver for browser** checkbox to automate download of new required WebDriver that match the Browser version. Common use is to have this checked.
+6. Select the **Update WebDriver for browser** checkbox to automate the download of new required WebDrivers that match the browser version. Common practice is to have this checkbox selected.
 7. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
-8. Enter the name or ID of the test suite that you want to execute.  To specify multiple test suites, use commas to separate the values.
+8. Enter the name or ID of the test suite that you want to run. To specify multiple test suites, use commas to separate the values.
 9. Optional: Enter text in the **Comments** field. You can include Azure DevOps variables. The text is recorded in the test run summary and test case results for later reference.
 
 ![Configuring a new RSAT execute task.](media/pipeline-rsat-execute-task.png)
