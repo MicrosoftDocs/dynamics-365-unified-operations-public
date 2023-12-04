@@ -34,15 +34,17 @@ Before you can use the features that are described in this article, your system 
 
 ## Enable impersonation in Microsoft Power Platform
 
-To enable the two systems to communicate with each other, you must enable impersonation for Dynamics 365 Finance and Operations in Microsoft Power Platform.
+To enable the two systems to communicate with each other, you must enable impersonation for Microsoft finance and operations apps in Microsoft Power Platform.
+
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the left navigation pane, go to **Environment**, and then open the environment where you're running Microsoft Sustainability Manager.
 1. On the toolbar, select **Settings**.
 1. Expand **Product**, and select **Features**.
 1. Under **Finance and Operations in Dataverse**, set the **Enable Finance and Operations User Impersonation in Dataverse** option to *On*.
-1. Save your changes.
 
     :::image type="content" source="media/enable-fno-impersonation.svg" alt-text="Screenshot that shows the Enable Finance and Operations User Impersonation in Dataverse option set to On." lightbox="media/enable-fno-impersonation.svg":::
+
+1. Save your changes.
 
 ## Map transportation modes in Supply Chain Management
 
