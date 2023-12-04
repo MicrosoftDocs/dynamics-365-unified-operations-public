@@ -28,7 +28,7 @@ When RSAT generates the Excel parameters file, saved variables appear in the **S
 
 ![Saved variables in Excel.](media/saved-variables.png)
 
-To reuse these variables during test playback, copy the variable name and use it in place of a parameter value in the data file of another test (or the same test), as shown in the following image. Variables used in cells with strings like D4 may use variables directly by their name. When variables are used in formulas always surround the variable name by double quotes to make the variable part of a string, consider D9 should show use of the variable surrounded by double quotes.
+To reuse these variables during test playback, copy the variable name and use it in place of a parameter value in the data file of another test (or the same test), as shown in the following image. Variables that are used in cells with strings, such as cell D4, can be used directly by their name. When variables are used in formulas, always enclose the variable name in double quotation marks to make the variable part of a string. For example, in cell D9, the variable should be enclosed in double quotation marks.
 
 ![Reusing variables in Excel.](media/reuse-variables.png)
 
@@ -36,7 +36,7 @@ Variables can be used in the same test case where they're defined and can also b
 
 ## Support for formulas of saved variables
 
-You can create formulas that contain saved (copied) variables. If you have been using an older version of the Regression Suite Automation Tool, you need to regenerate new Excel parameter files to take advantage of this functionality. Supported operators are `+`, `-`, `/` and '\'. Only numerical variables can be used in the Regression Suite Automation Tool formulas. Strings or dates aren't supported. Always specify variable names with double braces and surrounded each variable by double quotes and obtain their value by the VALUE function. For example, `VALUE("{{var1}}") + VALUE("{{var2}}")`.
+You can create formulas that contain saved (copied) variables. If you have been using an older version of the Regression Suite Automation Tool, you need to regenerate new Excel parameter files to take advantage of this functionality. Supported operators are `+`, `-`, `/` and `\`. Only numerical variables can be used in the Regression Suite Automation Tool formulas. Strings or dates aren't supported. Always enclose variable names in double braces, enclose each variable in double quotation marks, and obtain the value each variable by using the **VALUE** function. For example, `VALUE("{{var1}}") + VALUE("{{var2}}")`.
 
 In the following image, two different variables are used in a formula.
 
@@ -44,7 +44,7 @@ In the following image, two different variables are used in a formula.
 
 As of RSAT version 1.220, you can also use Excel functions, such as **ROUND**, **CONCAT**, and **UPPER**, to create formulas with RSAT variables. This feature is implemented using the Excel formula evaluation functionality, so any function supported by Excel is supported by RSAT.
 
-This has changed with RSAT version 2.6 such that variables that contain numeric values should be considered a string, and converted to their number value using the VALUE function.
+This behavior has changed in RSAT version 2.6. Variables that contain numeric values should now be considered a string and should be converted to their number value by using the **VALUE** function.
 
 For example,
 
@@ -68,7 +68,7 @@ RSAT evaluates these formulas during test execution, so you must precede the for
 
 ## Use variables in message validation
 
-You can also use a saved variable as part of a string in the Message Validation tab. Here's an example that validates that the message `Customer account {{variable name}} already exists.`. It appears in the Infolog during test execution. `{{variable name}}` is a variable that is copied during the recording.
+You can also use a saved variable as part of a string in the Message Validation tab. Here's an example that validates that the message `Customer account {{variable name}} already exists`. It appears in the Infolog during test execution. `{{variable name}}` is a variable that is copied during the recording.
 
 Saved (Copied) variables can be used within the same test case or across more than one test case in the same test suite.
 
