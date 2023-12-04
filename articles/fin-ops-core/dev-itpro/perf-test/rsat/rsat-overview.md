@@ -131,17 +131,17 @@ The **Test plan** tab is the main tab that allows you to interact with and execu
 
 ![UI Test Plans Tab.](media/UI-test-plans-tab.png)
 
-The Test Plan tab is where the main page is located. Here tests are managed, run, and test results are inspected. Navigation between elements on this page can be done by tapping, or by using available shortcuts for productivity. Some shortcuts are only active when a test case is selected.
+The **Test Plan** tab is where the main page is located. Here, tests are managed and run, and test results are inspected. You can navigate between elements on this page by tapping (or clicking). Alternatively, for improved productivity, you can use the available keyboard shortcuts. Some shortcuts are active only when a test case is selected.
 
 | Action                                                                                                                   | Shortcut |
 |--------------------------------------------------------------------------------------------------------------------------|----------|
 | Load (Load test plan from Azure DevOps project)                                                                          | ALT+L    |
-| Generate (Create local automation files (execution files only)) – This is what clicking New was on earlier RSAT versions | ALT+G    |
+| Generate (Create local automation files \[execution files only\]) – This action is the same as selecting **New** in earlier RSAT versions. | ALT+G    |
 | Run                                                                                                                      | ALT+R    |
 | New (Add new Test Case)                                                                                                  | ALT+N    |
 | Parameters                                                                                                               | ALT+P    |
 | Edit (Open test case details page)                                                                                       | ALT+E    |
-| Delete (deleting test case – a prompt to confirm displays)                                                           | ALT+D    |
+| Delete (Delete test case) – A message box prompts you to confirm deletion.                                                           | ALT+D    |
 
 ### Settings
 
@@ -163,7 +163,7 @@ The **Links** tab provides new functionality. Select the **Links** tab to quickl
 
 ### Quick navigation to Azure DevOps
 
-When you work with your test plan, the **Open** button now provides 3 options.
+When you work with your test plan, the **Open** button now provides three options.
 
 + Open the selected test case in Azure DevOps.
 + Open the selected test suite.
