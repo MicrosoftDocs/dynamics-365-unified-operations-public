@@ -3,9 +3,11 @@ title: System requirements for dual-write
 description: This article describes the system requirements for the setup of a dual-write connection.
 author: RamaKrishnamoorthy
 ms.date: 01/14/2020
-ms.topic: article
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
