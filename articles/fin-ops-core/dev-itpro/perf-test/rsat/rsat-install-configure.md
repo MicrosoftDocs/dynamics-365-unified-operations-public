@@ -34,18 +34,17 @@ You need Microsoft Excel installed to edit test parameters.
 
 You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) or [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/).
 
-### Authentication by Certificate or User-Based
+### Certificate-based or user-based authentication
 
 RSAT is designed to be installed on any Windows 10 or later computer and connect remotely via a web browser to an environment.
 
 ![Client computer and environment.](media/client-environment.png)
 
-To enable secure authentication, RSAT need to authenticate access with the Dynamics 365 Finance and Operations apps environment tested. Two options exist to authenticate access either by a certificate or by user-based authentication.
+To enable secure authentication, RSAT must authenticate access with the Dynamics 365 finance and operations apps environment that's being tested. There are two options for authenticating access: certificate-based authentication and user-based authentication.
 
-Certificate based authentication requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog box allows you to automatically create and install the authentication certificate. You also need to configure the virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
+Certificate-based authentication requires that a certificate is installed on the RSAT client computer. The RSAT settings dialog box lets you automatically create and install the authentication certificate. You must also configure the virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
 
-User-based authentication requires some setup steps to enable. Detail of this is described in this topic:
-+ [User-Based authentication](rsat-user-based-authentication.md)
+User-based authentication requires some setup steps. For more information, see [User-based authentication](rsat-user-based-authentication.md).
 
 ## Installation
 
@@ -84,14 +83,14 @@ These settings are required.
 
 Configure your connection to the Azure DevOps project and test plan.
 
-+ **Azure DevOps URL** - This is the URL of your Azure DevOps organization. For example, `https://yourAzureDevOpsUrlHere.visualStudio.com`.
++ **Azure DevOps URL** – This is the URL of your Azure DevOps organization. For example, `https://yourAzureDevOpsUrlHere.visualStudio.com`.
 
     > [!NOTE]
     > If you're using Azure DevOps Server, add **/DefaultCollection** to the end of your Azure DevOps URL.
 
-+ **Access Token** - The access token that allows the tool to connect to Azure DevOps. You need to create a personal access token or use an existing one that you have saved. It's recommended you create this with scope selected as Full Access. For more information, see [Authenticate access with personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat).
-+ **Project Name** - The name of your Azure DevOps project. RSAT automatically detects project names and test plans available based the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
-+ **Test Plan** - The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan).
++ **Access Token** – The access token that allows the tool to connect to Azure DevOps. You need to create a personal access token or use an existing one that you have saved. We recommend that you create this with scope selected as Full Access. For more information, see [Authenticate access with personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat).
++ **Project Name** – The name of your Azure DevOps project. RSAT automatically detects project names and test plans available based on the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
++ **Test Plan** – The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan).
 
 Select **Test Connection** to test your connection to Azure DevOps.
 
@@ -101,26 +100,27 @@ Configure your connection to the test environment.
 
 + **Hostname** – The hostname of the test environment, such as myhost.cloudax.dynamics.com. Don't include the https:// or http:// prefix.
 + **SOAP Hostname** – The SOAP hostname of the test environment.
+
     + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal to the hostname.
     + For demo and development environments (also known as one-box environments), add a **soap** suffix to the hostname. For example, if your hostname is `myhost.cloudax.dynamics.com`, use `myhost.soap.cloudax.dynamics.com` as the SOAP hostname.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
 
 + **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the finance and operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
 
-+ **Authentication method** – Select the method for authenticating access to the Hostname. Options are Certificate and User-Based. Both options include steps to complete. The Microsoft recommended method is User-Based authentication, and it's planned that Dynamics 365 finance and operations apps remove the option of certificate-based authentication.
++ **Authentication method** – Select the method for authenticating access to the hostname. The options are **Certificate** and **User-Based**. Both options include steps to complete. The Microsoft-recommended method is user-based authentication, and there are plans to remove the option for certificate-based authentication in Dynamics 365 finance and operations apps.
 
 + **Thumbprint** – The thumbprint of the authentication certificate that you're using.
- If you don't have Remote Desktop Protocol (RDP) access to your environment, follow the steps lower in this article to download the certificate from Lifecycle Services and paste the thumbprint here.
+ If you don't have Remote Desktop Protocol (RDP) access to your environment, follow the steps later in this article to download the certificate from Lifecycle Services and paste the thumbprint here.
  Otherwise, if you do have RDP access to the environment, follow these steps to generate a self-signed certificate.
 
     1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file somewhere so you have it saved for your records.
-    2. When the process completes, the new certification is installed in the local machine's trusted root store.
+    2. When the process is completed, the new certification is installed in the local machine's trusted root store.
 
         ![Successfully created.](media/thumbprint-certificate.png)
 
     3. The thumbprint of the newly created certificate is automatically inserted on this form. Copy this thumbprint, you use it in the next section to configure the AOS to trust the connection.
 
-+ **KeyVault URL, Tenant ID, Client ID, Client Secret** - This is used when configuring user-based authentication. Detail on how to set this up is found in this topic: [User-Based authentication](rsat-user-based-authentication.md)
++ **KeyVault URL, Tenant ID, Client ID, Client Secret** – These fields are used when you configure user-based authentication. For information about how to set up user-based authentication, see [User-based authentication](rsat-user-based-authentication.md).
 
 + **Company name** – Specify a company name to use as your default company during creation of Excel parameters files. It can be changed later by editing an Excel file.
 
@@ -153,7 +153,7 @@ Select the **Optional** tab to configure optional settings.
 
 ### Configure the test environment to trust the connection
 
-The following paragraphs are only relevant when using Certificate-Based authentication. With User-Based authentication review this topic instead: [User-Based authentication](rsat-user-based-authentication.md)
+The following subsections are relevant only when you use certificate-based authentication. For user-based authentication, use the information in [User-based authentication](rsat-user-based-authentication.md) instead.
 
 #### If your AOS allows for Remote Desktop connections
 
@@ -185,7 +185,7 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 #### If you have no Remote Desktop access to the server
 
-In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft generates the certificate for your environment and have it preconfigured. Follow these steps to retrieve the RSAT certificate and use it using the LCS user interface. For automation, there's information on the [Fetch an environment's RSAT certificate in a zip file](../../lifecycle-services/api/v1/reference-download-rsat-certificate.md) API reference page.
+In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft generates the certificate for your environment and has it preconfigured. Follow these steps to retrieve the RSAT certificate and use it using the LCS user interface. For automation, there's information on the [Fetch an environment's RSAT certificate in a zip file](../../lifecycle-services/api/v1/reference-download-rsat-certificate.md) API reference page.
 
 1. Under **Maintain** on your environment details page in Lifecycle Services you see two new options.
 
@@ -228,7 +228,7 @@ You must generate the certificate file on the RSAT client computer. **The certif
 
 1. Create the **C:\Temp** folder if it does not already exist on your computer.
 2. Open a command-line window as Administrator.
-3. Go to the folder where you installed the Windows SDK. Your exact folder may be different, depending on where you installed the windows SDK). You can also use Windows Kits 8.1.
+3. Go to the folder where you installed the Windows SDK. Your exact folder may be different, depending on where you installed the windows SDK. You can also use Windows Kits 8.1.
 
     ```Console
     cd c:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64
