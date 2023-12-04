@@ -552,11 +552,6 @@ The following physical measures are configured for the `erp` (enterprise resourc
 - `Unrestricted`
 - `QualityInspection`
 
-## <a name="differences-between-v1-and-v2"></a>Differences between Version1 and Version 2
-
-**Physical measures**: Unlike version 1, user no longer needs to specify the data source for a physical measure, it's by default the current data source.
-**Calculated measures**: Unlike version 1, user specifies the measure in two steps: (1) Calculated measre metadata to specify the name and data source for a calculated measure; and (2) Calculated measure detail, each record consists of an addition / subtraction operator of an existing physical measure to a calculated measure with specified metadata.
-
 ## <a name="set-configuration-v1"></a>Set data source configuration on V1
 
 ### Data source configuration
