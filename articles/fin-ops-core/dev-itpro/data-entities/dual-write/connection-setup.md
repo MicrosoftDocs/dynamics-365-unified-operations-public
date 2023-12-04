@@ -102,17 +102,17 @@ For links to an example and an alternative approach, see the [Example](#example)
 The setup of a dual-write connection between an existing instance of a finance and operations app and a new instance of a customer engagement app occurs using Lifecycle Services power platform integration setup.
 
 1. Follow [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) to establish the link using Lifecycle Services.
-2. A dual-write connection is established for all legal entities. You can remove legal entities from Dual write workspace within Finance and Operations apps if you do not wish to synchronize the data for a specific company.
+2. A dual-write connection is established for all legal entities. You can remove legal entities from the dual-write workspace within finance and operations apps if you do not wish to synchronize the data for a specific company.
 3. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
 For links to an example and an alternative approach, see the [Example](#example) section.
 
 ## <a id="existing-existing"></a>An existing finance and operations app instance and an existing customer engagement app instance
 
-The setup of a dual-write connection between an existing instance of a finance and operations app and an existing instance of a customer engagement app occurs in the Finance and Operation environment.
+The setup of a dual-write connection between an existing instance of a finance and operations app and an existing instance of a customer engagement app occurs in the finance and operation apps environment.
 
 1. Follow [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv) to establish the link using Lifecycle Services.
-2. A dual-write connection is established for all legal entities. You can remove legal entities from Dual write workspace within finance and operations apps if you do not wish to synchronize the data for a specific company.
+2. A dual-write connection is established for all legal entities. You can remove legal entities from the dual-write workspace within finance and operations apps if you do not wish to synchronize the data for a specific company.
 3. To sync the existing Dataverse data to the finance and operations app, [bootstrap](bootstrap-company-data.md) the Dataverse data by using a three-letter ISO company code.
 4. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
