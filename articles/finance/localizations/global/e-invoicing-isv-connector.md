@@ -50,7 +50,7 @@ The obtained **Token** must be uploaded to the secret created in the **Azure Key
 
 The following pipeline actions are introduced for enabling outbound documents submission via the ISV list-mile connector.
 
-- **Integrate with Edicom** - submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
+- **Integrate with Edicom** - submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. 
 
  **Parameter**       | **Description**     |
 |---------------------|------------------|
@@ -59,6 +59,16 @@ The following pipeline actions are introduced for enabling outbound documents su
 | **Destination**                | Enter the **Service ID** number concatenated with the **_EDIWIN** value. For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*. |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
+
+The following parameters can be left unchanged with their default values provided by Microsoft in related globalization features.
+
+ **Parameter**       | **Description**     |
+|---------------------|------------------|
+| **Web service URL** | Default value: **https://ipaasgw.edicomgroup.com**.|
+| **Http request body**                | Default value: **Generate format: Output file**. |
+| **Schema**                 | Default value: **OUT_XML_UBL_INVOICE_2_MICROSOFT_DK**.   |
+
+The rest of the action's parameters can be left empty.
   
 - **Waiting for response from Edicom** - waits for the response from Edicom. No specific paramters need to be additionally configured.
 
