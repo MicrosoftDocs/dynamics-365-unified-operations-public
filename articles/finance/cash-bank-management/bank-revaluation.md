@@ -48,14 +48,14 @@ Before you run the revaluation process, the following setup is required.
 - On the **Currency revaluation accounts** page, select different currency revaluation accounts for each currency and company. If no accounts are defined, the accounts from the **Ledger** page are used.
 - On the **Cash and bank management parameters** page, on the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 
-The **Exchange rate type enhancement for bank foreign currency revaluation** feature is available in version 10.0.39. With this feature, you can use additional exchange rate types for foreign currency revaluation. You can define accounting currency exchange rate types and reporting currency exchange rate types for each legal entity or per bank account. These defined exchange rate types override the default type selected on the ledger setup when you run the foreign currency revaluation.
+In version 10.0.39, the **Exchange rate type enhancement for bank foreign currency revaluation** feature is available. This feature lets you use additional exchange rate types for foreign currency revaluation. You can define accounting currency exchange rate types and reporting currency exchange rate types for each legal entity or bank account. When you run foreign currency revaluation, these defined exchange rate types override the default type that's defined in the ledger setup.
 
-1. Go to **Cash and bank management** > **Setup** > **Cash and bank management parameters**.
+1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 2. On the **General** tab, in the **Exchange rate type source** field, select one of the following values:
 
-  - **Ledger** - Use the exchange rate type defined on the ledger setup.
-  - **Specific** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
-  - **Bank** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the bank account.
+    - **Ledger** – Use the exchange rate type that's defined in the ledger setup.
+    - **Specific** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the current legal entity.
+    - **Bank** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the bank account.
 
 > [!NOTE]
 > If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation. You won't be able to use the foreign currency revaluation that is used by other countries or regions.
@@ -111,7 +111,7 @@ Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000               | 23,500               | 700                             |
 | Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000               | 36,600               | -300                            |
 
-#### Example 2 - Postive and negative balance on the dimensions
+#### Example 2 - Positive and negative balance on the dimensions
 
 The following table shows one positive balance and one negative balance in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD. 
 
