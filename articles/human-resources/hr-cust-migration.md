@@ -156,15 +156,6 @@ Before you begin testing, validate the following details:
 - Confirm that your security policies are applicable.
 - Confirm that batch jobs are triggered as expected.
 
-You won't have Remote Desktop access to the migrated sandbox. You can use self-service capabilities and tools to perform the following actions for your Tier 2+ sandbox environments:
-
-- Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-the-azure-sql-database).
-- Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-log-files).
-- Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#use-perfmon-tools).
-- Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-self-service-logs).
-- Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#restart-services).
-- Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#configure-the-regression-suite-automation-tool).
-
 For more information, see [FAQ for self-service deployment](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md).
 
 ### Migrate a Human Resources production environment
@@ -174,7 +165,7 @@ After you've finished migrating and validating a sandbox environment, follow the
 #### Prerequisites
 
 - The Subscription estimator should be completed.
-- The Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed.
+- The Human Resources migration [Go-live readiness assessment](hr-migration-admin-go-live-readiness-review.md) should be completed.
 - The user initiating the Production migration in Lifecycle services should have a System administrator role on the Power Platform. 
 
 #### Migrate the production environment

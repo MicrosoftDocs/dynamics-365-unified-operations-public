@@ -1,6 +1,6 @@
 ---
-title: Review and accept changes to confirmed purchase orders
-description: This article describes how o use the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders, based on their downstream impact.
+title: Review and accept changes to confirmed purchase orders (preview)
+description: This article describes how to use the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders, based on their downstream impact.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -12,18 +12,25 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Review and accept changes to confirmed purchase orders
+# Review and accept changes to confirmed purchase orders (preview)
 
 [!include [banner](../includes/banner.md)]
-
-> [!IMPORTANT]
-> To learn about the capabilities and limitations of AI-powered Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!--KFM: Preview until further notice -->
 
-During procurement planning, any changes that are made to confirmed purchase orders can have a significant impact on downstream planned demand such as production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that have only a low risk of downstream impact and then focus on high-impact changes, to assess details of the downstream impacts and communicate directly with vendors.
+During procurement planning, any changes that are made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that have only a low risk of downstream impact. Therefore, procurement managers can focus on high-impact changes to assess downstream order impacts and communicate directly with vendors.
 
-This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
+> [!IMPORTANT]
+> The AI-powered and Copilot functionality that's described in this article is available as part of a preview release. All other functionality is generally available. The content and the functionality related to AI-powered and Copilot functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+>
+> **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
+>
+> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
+>
+> - Preview features are subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ## The Confirmed purchase orders with changes workspace
 

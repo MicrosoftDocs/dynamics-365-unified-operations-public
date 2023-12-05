@@ -3,8 +3,8 @@
 
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
-author: sericks007
-ms.date: 02/27/2023
+author: twheeloc
+ms.date: 12/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,6 +37,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Feature deprecation effective March 2024
+
+### Non-Azure AD external user sign-in 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Azure AD) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
+| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Azure AD portal. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. End of support date is targeted for October 2023. |
+
 ## Feature deprecation effective February 2024
 
 ### ISV Licenses generated using SHA1 algorithm (signature version 1)  
@@ -66,17 +78,6 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | **Deployment option**              | All |
 | **Status**                         | The User Log page will be removed by Jan 12 2024 (10.0.38/PU62) |
 
-## Feature deprecation effective July 2023
-
-### Non-Azure AD external user sign-in 
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Azure AD) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
-| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Azure AD portal. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
-| **Product areas affected**         | Finance and operations apps |
-| **Deployment option**              | All |
-| **Status**                         | Deprecated. End of support date is targeted for October 2023. |
 
 ## Feature deprecation effective August 2022
 
@@ -117,7 +118,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We're removing the following list of cipher suites to comply with our current security protocols.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Replaced by another feature?**   | Beginning January 2023, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers. For example, it may impact your third party integrations, that aren't adhering to our standard cipher suites. |
+| **Replaced by another feature?**   | Beginning January 2023, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers. For example, it may impact your third party integrations that aren't adhering to our standard cipher suites. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | Cloud deployments |
 | **Status**                         | Deprecated. Customers must upgrade their servers before January 2023. For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
@@ -356,10 +357,10 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This is a legacy page that was built for previous client/server architecture. The information on this page isn't always accurate, which can be confusing and misleading. |
-| **Replaced by another feature?**   | We'll provide a new page in a future update.|
+| **Replaced by another feature?**   | We'll provide a new page in a future update. As a workaround, use the table browser for the SysClientSessions table to view client sessions.|
 | **Product areas affected**         | System Administration |
 | **Deployment option**              | All |
-| **Status**                         | By October 2021 this form will be removed.   |
+| **Status**                         | This page will be removed in a future release.   |
 
 
 ## Platform updates for version 10.0.13 of finance and operations apps

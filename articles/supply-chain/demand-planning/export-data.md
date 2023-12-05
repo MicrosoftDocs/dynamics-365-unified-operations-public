@@ -1,5 +1,5 @@
 ---
-title: Export and download data
+title: Export and download data (preview)
 description: This article describes how to export a forecast that you've created, analyzed, and edited back to Microsoft Dynamics 365 Supply Chain Management, or download the data as a comma-separated values (CSV) file that can be viewed in Excel.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Export and download data
+# Export and download data (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

@@ -4,7 +4,7 @@ description: This article provides the release schedule for proactive quality up
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 10/23/2023
+ms.date: 11/15/2023
 ms.custom: bap-template
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -51,9 +51,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Completed |
 | 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| In-Progress |
 | 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| In-Progress |
-| 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to December 17, 2023| In-Progress |
+| 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to January 14, 2023| In-Progress |
 | 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Not Started |
-| 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 7, 2024| Not Started |
+| 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 14, 2024| In-Progress |
 | 10.0.37 PQU-2 | December 30, 2023 | January 8, 2024 to February 11, 2024| Not Started |
 | 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
 | 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
@@ -115,23 +115,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 2 | November 6 to November 9, 2023 | December 2 to December 3, 2023 |
 | Station 3 | November 7 to November 10, 2023 | December 2 to December 3, 2023 |
 | Station 4 | November 13 to November 16, 2023 | December 9 to December 10, 2023 |
-| Station 5 | November 20 to November 23, 2023 | December 16 to December 17, 2023 |
-| Station 6 | November 21 to November 24, 2023 | December 16 to December 17, 2023 |
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.36 Release-1 train schedule
-
-**App version: 10.0.1695.68**
-
-**Platform version: 7.0.7036.87**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | October 9 to October 12, 2023 | NA |
-| Station 2 | October 16 to October 19, 2023 | October 28 to October 29, 2023 |
-| Station 3 | October 17 to October 20, 2023 | October 28 to October 29, 2023 |
-| Station 4 | October 23 to October 26, 2023 | November 4 to November 5, 2023 |
-| Station 5 | October 30 to November 2, 2023 | November 11 to November 12, 2023 |
-| Station 6 | October 31 to November 3, 2023 | November 11 to November 12, 2023 |
+| Station 5 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
+| Station 6 | December 5 to December 8, 2023 | December 16 to December 17, 2023 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.36 Release-2 train schedule
 
@@ -144,9 +129,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 1 | November 6 to November 9, 2023 | NA |
 | Station 2 | November 13 to November 16, 2023 | December 2 to December 3, 2023 |
 | Station 3 | November 14 to November 17, 2023 | December 2 to December 3, 2023 |
-| Station 4 | November 20 to November 23, 2023 | December 9 to December 10, 2023 |
-| Station 5 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
-| Station 6 | December 5 to December 8, 2023 | December 16 to December 17, 2023 |
+| Station 4 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
+| Station 5 | December 11 to December 14, 2023 | January 13 to January 14, 2023 |
+| Station 6 | December 12 to December 15, 2023 | January 13 to January 14, 2023 |
 
 ### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.37 Release-1 train schedule
 
@@ -160,8 +145,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 2 | November 29 to December 2, 2023 | December 9 to December 10, 2023 |
 | Station 3 | November 30 to December 3, 2023 | December 9 to December 10, 2023 |
 | Station 4 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
-| Station 5 | December 11 to December 14, 2023 | January 6 to January 7, 2024 |
-| Station 6 | December 12 to December 15, 2023 | January 6 to January 7, 2024 |
+| Station 5 | December 11 to December 14, 2023 | January 13 to January 14, 2024 |
+| Station 6 | December 12 to December 15, 2023 | January 13 to January 14, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).

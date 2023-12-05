@@ -68,7 +68,7 @@ Customizations relying on FTP are not supported with self-service deployment. Yo
 
   - Use the “Local Filesystem” connector, as described in [Outbound IP addresses](/azure/logic-apps/logic-apps-limits-and-config#outbound), in combination with the on-premises data gateway. For more information, see [Install on-premises data gateway for Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install). This solution completely removes the need for the IP allowlist, which is deprecated in self-service deployment, while keeping a very high-level of security.
 
-  - Self-service capabilities:  If FTP scenarios are failing after migrating to self-service capabilities, review the configuration at the FTP server. The most common scenario is the need to update the allowed [IP list](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment) with the ranges for self-service environments.
+  - Self-service capabilities:  If FTP scenarios are failing after migrating to self-service capabilities, review the configuration at the FTP server. The most common scenario is the need to update the allowed [IP list](deploymentFAQ.md) with the ranges for self-service environments.
 
 > [!NOTE]
 > For more information about deprecated features, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md) and [Removed or deprecated features from previous releases](../migration-upgrade/deprecated-features.md).

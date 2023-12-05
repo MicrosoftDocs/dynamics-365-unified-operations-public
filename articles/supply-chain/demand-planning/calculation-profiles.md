@@ -1,5 +1,5 @@
 ---
-title: Work with calculation profiles
+title: Work with calculation profiles (preview)
 description: This article describes how to work with calculation profiles. Calculation profiles apply a set of predefined calculations to one or more existing time series to generate a new time series as output.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Work with calculation profiles
+# Work with calculation profiles (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -28,6 +28,8 @@ Here are some examples of purposes that you might use calculations for:
 - Remove outliers from the forecast by removing some values that are completely out of range.
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to generate new calculated time series as they require.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## View and run existing calculation profiles
 
