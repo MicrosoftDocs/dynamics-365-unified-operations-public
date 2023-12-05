@@ -38,7 +38,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 This chapter provides the information how to configure and use the Electronic Invoicing ISV last-mile connector's integration with the Global e-Invoicing Platform provided by [Edicom](https://edicomgroup.com/electronic-invoicing).
 
-The following required credentials must be prliminary obtailned from **Edicom** to enable integration of the Electronic Invoicing service with the list-mile connector. 
+The following required credentials must be prliminary obtailned from **Edicom** to enable integration of the Electronic Invoicing service with the last-mile connector. 
 
 - The **Service ID** which uniquely identifies the company by Edicom.
 - The **Group** which is required for internal routing within the Edicom infrastructure.
@@ -48,7 +48,7 @@ The obtained **Token** must be uploaded to the secret created in the **Azure Key
 
 ### Electronic invoices submission
 
-The following pipeline actions are introduced for enabling outbound documents submission via the ISV list-mile connector.
+The following pipeline actions are introduced for enabling outbound documents submission via the ISV last-mile connector.
 
 - **Integrate with Edicom** - submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. 
 
@@ -106,6 +106,8 @@ A new data channel type **Edicom service** is implemented for feature setups of 
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
+
+ResponseXML ????????????????????????
 
 ### Electronic invoicing in Denmark
 
