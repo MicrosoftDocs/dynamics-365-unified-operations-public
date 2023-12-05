@@ -69,29 +69,29 @@ You can manually net customer and vendor balances by selecting the open customer
 
 You can automatically net customer and vendor balances by defining a netting rule and then running it through a batch job or the process automation framework.
 
-### Set up netting rule
+### Set up a netting rule
 
-1. Go to **Cash and bank management** > **Netting** > **Netting rule**.
-2. Create a new record, and enter a name and description.
-3. Select a netting sequence. There are four options available:
+1. Go to **Cash and bank management** \> **Netting** \> **Netting rule**.
+2. Create a record, and enter a name and description.
+3. Select a netting sequence. Four options are available:
 
-   - By due date - From oldest to newest
-   - By due date - From newest to oldest
-   - By invoice balance - From largest to smallest
-   - By invoice balance - From smallest to largest
+    - By due date - From oldest to newest
+    - By due date - From newest to oldest
+    - By invoice balance - From largest to smallest
+    - By invoice balance - From smallest to largest
 
 4. Select the netting agreement scope. If you select **All**, all the active netting agreements are included in this rule. If you select **Selected**, define a netting agreement list.
-5. In the **Include credit not and debit note** field, in the automatic netting, select **Yes** or **No**.
-6. On the **Netting criteria** FastTab, define the criteria if users only want to automatically net certain vendor accounts, customer accounts, or invoice currency.
+5. In the **Include credit note and debit note** field, in the automatic netting, select **Yes** or **No**.
+6. On the **Netting criteria** FastTab, define the criteria if users want to automatically net only specific vendor accounts, customer accounts, or invoice currency.
 7. Activate the netting rule.
 
 ### Run automatic netting
 
-There are three ways to run the automatic netting.
+There are three ways to run automatic netting.
 
 - Trigger a one-time automatic netting by selecting **Automatic netting** on the **Customer and vendor balances netting** page.
-- Trigger a one-time automatic netting by selecting **Automatic netting** on the **Netting** menu in the **Cash and bank management** modules.
-- Schedule periodic automatic netting by selecting **Process automation** on the **Netting** menu in the **Cash and bank management** modules.
+- Trigger a one-time automatic netting by selecting **Automatic netting** on the **Netting** menu in the **Cash and bank management** module.
+- Schedule periodic automatic netting by selecting **Process automation** on the **Netting** menu in the **Cash and bank management** module.
 
 ## Reverse netting
 
