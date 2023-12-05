@@ -219,7 +219,13 @@ Add dual-write permission:
 4. Select the business unit with the same name as environment name, click **Manage security roles**.
 5. Select **System administrator** and **Human Resources administrator** permissions, click **Save**. 
 
+>[!Note]
+>The integration key for different maps are available here: [Human resources dataverse integration](hr-dataverse-integration.md#integration-considerations).
 
+After the relevant maps are configured, follow these steps: 
+1. Go to **Data management** > **Dual write UI**. In **Integration key**, confirm the correct keys are set.
+2. If any of the keys are different, update the keys.
+3. For modified integration key, you need to stop, refresh, and click **Start map again** for the keys were updated.
 
 
 ##### Set up Microsoft Power Platform dual-write integration
