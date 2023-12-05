@@ -34,9 +34,9 @@ To work with the Inventory Visibility app using UI version 2, the following prer
 
 1. Sign in to your Power Apps environment.
 1. Open the **Inventory Visibility** app.
-1. On the navigation pane, select **Settings**.
+1. On the navigation pane, select **Admin settings**.
 1. On the **Set tokens** tile, select **Manage**.
-1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. You should have found these values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. These values were established when [the Inventory Visibility Add-in was installed](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
 
 1. Select **Login**. The system generates a new bearer token for your sessions, which expires after one hour.
 
@@ -60,7 +60,7 @@ To obtain your service endpoint and runtime configuration, follow these steps:
 1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Admin settings**.
 1. On the **Show service details** tile, select **Manage**.
-1. A dialog opens where you can find  your service endpoint and configuration details.
+1. A dialog opens where you can find your service endpoint and configuration details.
 
 ## <a name="update-configuration"></a>Update the configuration
 

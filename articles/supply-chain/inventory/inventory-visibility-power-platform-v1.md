@@ -34,14 +34,13 @@ To work with the Inventory Visibility app using UI version 1, the following prer
 
 1. Sign in to your Power Apps environment.
 1. Open the **Inventory Visibility** app.
-1. Go to **Inventory Visibility (Legacy UI)** - **Operational Visibility** - **Onhand Query**.
-1. Click **Settings** button (gear symbol) at the top of the page.
-1. Enter `Client Id`, `Tenant Id`, and `Client Secret` in the **Settings** dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
-1. Click **Refresh** button next to the `Bearer Token` field. A new bearer token will be generated and will expire after an hour.
+1. At the bottom of the navigation pane, open the **Change area** menu and select *Legacy UI*.
+1. On the navigation pane, select **Operational Visibility**.
+1. Select **Settings** at the top of the page. <!--KFM: Seems unnecessary. For me, the settings opened when I came to Operational Visibility. -->
+1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. You should have found these values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Select the **Refresh** button on the right side of the **Bearer Token** field. The system generates a new bearer token for your sessions, which expires after one hour.
 
-    ![On-hand query settings.](media/inventory-visibility-query-settings.png "On-hand query settings")
-
-## Navigate between user interface versions
+## <a name="ui-version"></a>Navigate between user interface versions
 
 Regardless of which user interface version is active, you can navigate between the two versions at any time. However, only the settings you make to the active version of the UI will have any affect. To switch between the two versions, follow these steps:
 
@@ -50,15 +49,56 @@ Regardless of which user interface version is active, you can navigate between t
     - *Inventory Visibility* – The navigation pane displays the pages for UI version 2.
     - *Legacy UI* – The navigation pane displays the pages for UI version 1.
 
-## Set up on-hand index configuration
+## Find your service endpoint and read the configuration
+
+The Inventory Visibility service is deployed on Microsoft Azure Service Fabric in multiple geographies and multiple regions. Currently, there is no central endpoint to automatically redirect your requests to the appropriate geography and region. Therefore, the service endpoint uses the following pattern, which includes the necessary information:
+
+`https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
+
+To obtain your service endpoint and runtime configuration, follow these steps:
+
+1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
+1. Select **Show Service Details** in the upper-right corner.
+1. A dialog opens where you can find your service endpoint and configuration details.
+
+## <a name="update-configuration"></a>Update the configuration
+
+Any time you modify the configuration and save your settings, the system only saves the settings temporarily until you are ready to commit them to the system so they can take effect. Follow these steps to commit new configuration settings to the service:
+
+1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
+1. On the navigation pane, select **Configuration**.
+1. Select **Update Configuration** in the upper-right corner.
+1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. These values were established when [the Inventory Visibility Add-in was installed](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Select **Login**.
+1. Check your modifications in the dialog box.
+
+    > [!IMPORTANT]
+    > Be sure to verify all of the important modifications that are about to be made to your data sources, physical measures, and dimension mappings.
+
+1. Select **Confirm Update** to apply your configuration change.
+
+## Partition configuration
+
+<!--KFM: Why is this section here? What does this have to do with the app? -->
+
+Partition configuration controls how data is distributed. Operations inside the same partition will deliver better performance at lower cost, comparing to those cross multiple partitions. Below is the default partition configuration included in solution, so *you don't need to set it up yourself*.
+
+| Base dimension | Hierarchy |
+|---|---|
+| *SiteId* | 1 |
+| *LocationId* | 2 |
+
+> [!IMPORTANT]
+> Don't customize your partition configuration. If you delete or change it without official guide, you are likely to encounter an unexpected error.
+
+## Set up the on-hand index configuration
 
 Regardless of which user interface version is active, the purpose and functionally of on-hand index configuration is the same. For an overview and examples about how on-hand index configuration works, see [On-hand index configuration](inventory-visibility-power-platform.md#index). This section just describes how to find the on-hand index configuration settings in UI version 1.
 
-1. Open the **Inventory Visibility** power app.
-
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** - **Product Index Hierarchy**. Set number and hierarchy will be automatically generated when you make modification.
-
-1. [Update Configuration](#update-configuration) after you modify onhand index configuration.
+1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
+1. Open the **Product Index Hierarchy** tab.
+1. Add sets and dimensions as needed. Add dimensions in order according to the hierarchy you want to create. For details about what these settings mean and how they work, see [On-hand index configuration](inventory-visibility-power-platform.md#index). Set and dimensions numbers are generated automatically as you make modifications.
+1. [Update the configuration](#update-configuration) to apply your changes.
 
 ## Feature management
 
@@ -77,33 +117,7 @@ Inventory Visibility Add-in offers multiple features as below.
 By default, all features are disabled. This status can be managed on **Settings (Preview)** - **Feature Management** for UI Version 2 users, and on **Inventory Visibility (Legacy UI)** - **Configuration** - **Feature Management & Settings** for UI Version 1 users. [Update configuration](#update-configuration) is required to commit your modification.
 
 
-## Find service endpoint and read configuration (Legacy UI)
 
-The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. Currently there is no central endpoint to automatically redirect your request to the corresponding geography and region. Therefore, service endpoint is composed in the following pattern to include necessary information:
-
-`https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
-
-To obtain your service endpoint and runtime configuration, apply the following steps.
-
-1. Open the **Inventory Visibility** power app.
-
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **Show Service Details** on the upper-right corner.
-
-## Update configuration (Legacy UI)
-
-Each time configuration is modified, new configuration will not take effect until commited through update configuration.
-
-1. Open the **Inventory Visibility** power app.
-
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **Update Configuration** on the upper-right corner.
-
-1. Enter `Client Id`, `Tenant Id`, `and Client Secret` in the dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in). Click **Login** button.
-
-1. Check your configuration modification in the dialog box.
-    > [!IMPORTANT]
-    > Be sure to validate important modification on data sources, physical measures, and dimension mappings.
-    
-1. Click **Confirm Update** to commit. Runtime configuration will be replaced by your new configuration.
 
 ## Delete all inventory data (Legacy UI)
 
