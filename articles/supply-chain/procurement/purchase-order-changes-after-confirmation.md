@@ -32,6 +32,10 @@ During procurement planning, any changes that are made to confirmed purchase ord
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
+## Prerequisites
+
+The **Confirmed purchase orders with changes** workspace is enabled by default starting in Supply Chain Management version 10.0.36. <!-- KFM: Confirm version --> However, its AI-powered and Copilot functionality must be enabled Separately. If you'd also like to take advantage of the Copilot features, then see [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) for system requirements and details about how to set them up.
+
 ## The Confirmed purchase orders with changes workspace
 
 To open the workspace, go to **Procurement and sourcing \> Workspaces \> Confirmed purchase orders with changes**.
@@ -113,3 +117,4 @@ A good way to focus on the most pressing downstream impact is to sort and filter
 ## See also
 
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
+- For administrators: [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md)
