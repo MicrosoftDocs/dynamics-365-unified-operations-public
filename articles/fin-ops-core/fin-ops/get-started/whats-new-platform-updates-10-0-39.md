@@ -31,7 +31,7 @@ This section will contain a table that lists the features that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features]([grid-capabilities.md](removed-deprecated-features-platform-updates#isv-licenses-generated-using-sha1-algorithm-signature-version-1)) | Feature management | 
+| System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features]([grid-capabilities.md](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1)) | Feature management | 
 
 ## Feature enhancements included in this release
 
