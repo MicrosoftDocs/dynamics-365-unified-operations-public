@@ -21,3 +21,57 @@ During confirmation and similar posting steps, the system tracks the history of 
 The document-level *de minimis* threshold value is **not** computed. By default, it's always *0* (zero). To provide a computation of the document-level *de minimis* threshold value, extend the `COOValidateSalesTable::createRequest()` API.
 
 The `SalesLine.QtyOrdered` field is passed for the quantity, and the `SalesLine.LineAmount` field is passed for the value. No currency conversion is performed on these values. To override and pass different values, extend the `COOValidateSalesTable::createRequest()` method to update the values. The *de minimis* percentage from the associated item is passed for the line, without calculation.
+
+## Extended properties
+
+Additional properties can be added to requests from Finance and Operations to Export Control. These properties can then be referenced in PowerFx rules on both restrictions and exceptions.
+
+To add additional properties, create a chain of command extension of the COOValidateSalesTable class and override the appropriate method for your property.
+- **Document properties:** `getExtendedProperties()`
+- **Line properties:** `getExtendedLineProperties()`
+- **Line code properties:** `getExtendedLineCodeProperties()`
+
+Each of these methods contains a map named _extendedProperties. Add the physical name of the property and the value. For a given document part and property name, the same value type must always be used. For instance, the property TestProp can not be of type `string` on one call and type `int` on the next call. Here is an example which adds properties to the document, line, and line code.
+
+```plaintext
+[ExtensionOf(classStr(COOValidateSalesTable))]
+final class COOValidateSalesTable_SampleModel_Extension
+{
+    public void getExtendedProperties(Map _extendedProperties)
+    {
+        _extendedProperties.add("TestDocString", strFmt("SalesId = %1", this.parmSalesTable().SalesId));
+        _extendedProperties.add("TestDocInt", 42);
+        _extendedProperties.add("TestDocReal", 3.14159);
+        _extendedProperties.add("TestDocDate", today());
+        _extendedProperties.add("TestDocUtcDateTime", DateTimeUtil::utcNow());
+
+        next getExtendedProperties(_extendedProperties);
+    }
+
+    public void getExtendedLineProperties(Map _extendedProperties, COOValidationRequestLineContract _line)
+    {
+        _extendedProperties.add("TestLineString", strFmt("LineRecId = %1", _line.parmRecordId()));
+        _extendedProperties.add("TestLineInt", 43);
+        _extendedProperties.add("TestLineReal", 3.14159);
+        _extendedProperties.add("TestLineDate", today());
+        _extendedProperties.add("TestLineUtcDateTime", DateTimeUtil::utcNow());
+
+        next getExtendedLineProperties(_extendedProperties, _line);
+    }
+
+    public void getExtendedLineCodeProperties(Map _extendedProperties, COOValidationRequestLineContract _line, COOValidationRequestCodeContract _code)
+    {
+        _extendedProperties.add("TestLineCodeString", strFmt("Code = %1", _code.parmCode()));
+        _extendedProperties.add("TestLineCodeInt", 44);
+        _extendedProperties.add("TestLineCodeReal", 3.14159);
+        _extendedProperties.add("TestLineCodeDate", today());
+        _extendedProperties.add("TestLineCodeUtcDateTime", DateTimeUtil::utcNow());
+
+        next getExtendedLineCodeProperties(_extendedProperties, _line, _code);
+    }
+}
+```
+
+The first time a new property is used in an export control check, that property is added to the `msdyn_ExportControlExtendedProperty` table in the Export Control solution. After that, the property may be referenced in PowerFx rules. Properties can also be pre-added to this table prior to performing any checks. Following is an example of a PowerFx rule that makes use of the extension properties above.
+
+`And(And(Document.TestDocInt=42, Line.TestLineInt=43), LineCode.TestLineCodeInt=44`
