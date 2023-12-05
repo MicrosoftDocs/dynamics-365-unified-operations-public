@@ -66,25 +66,25 @@ A record is kept every time that you run a foreign currency revaluation. From th
 
 ## Additional exchange rate type for foreign currency revaluation
 
-The **Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation** feature is available in version 10.0.39. This feature allows you to use additional exchange rate types for foreign currency revaluation. You can define the accounting currency exchange rate type and the reporting currency exchange rate type for each legal entity or per customer and vendor group. These defined types can override the default type on the ledger setup when you run the foreign currency revaluation.
+In version 10.0.39, the **Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation** feature is available. This feature lets you use additional exchange rate types for foreign currency revaluation. You can define the accounting currency exchange rate type and the reporting currency exchange rate type for each legal entity, or for each customer and vendor group. When you run foreign currency revaluation, these defined exchange rate types can override the default type that's defined in the ledger setup.
 
-### Additional exchange rate type setup for accounts payable foreign currency revaluation
+### Set up an additional exchange rate type for Accounts payable foreign currency revaluation
 
-1. Go to **Accounts payable** > **Setup** > **Accounts payable parameters**.
+1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 2. On the **Ledger and sales tax** tab, in the **Exchange rate type source** field, select one of the following options:
 
-  - **Ledger** - Use the exchange rate type defined on the ledger setup.
-  - **Specific** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
-  - **Group** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in a vendor group.
+    - **Ledger** – Use the exchange rate type that's defined in the ledger setup.
+    - **Specific** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the current legal entity.
+    - **Group** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the vendor group.
 
-### Additional exchange rate type setup for accounts receivable foreign currency revaluation
+### Set up an additional exchange rate type for Accounts receivable foreign currency revaluation
 
-1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. On the **Ledger and sales tax** tab, in the **Exchange rate type source** field, select on of the following options:
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Ledger and sales tax** tab, in the **Exchange rate type source** field, select one of the following options:
 
-  - **Ledger** - Use the exchange rate type defined on the ledger setup.
-  - **Specific** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the current legal entity.
-  - **Group** - Use the accounting currency exchange rate type and reporting currency exchange rate type defined in the customer group.
+    - **Ledger** – Use the exchange rate type that's defined in the ledger setup.
+    - **Specific** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the current legal entity.
+    - **Group** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the customer group.
 
 > [!NOTE]
 > Exchange gain or loss isn't aggregated. At the time of settlement, the unrealized gain or loss for each open transaction should be reversed to recalculate any realized gain or loss. If the total gain or loss is posted to the general ledger, it isn't possible to reverse per transaction.
