@@ -2,7 +2,7 @@
 title: Platform settings file
 description: This article covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
 author: samjarawan
-ms.date: 12/03/2021
+ms.date: 12/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -84,9 +84,11 @@ Smaller JavaScript bundles put less pressure on the main thread by causing the b
 
 ### secondaryInstrumentationKey
 
-This is the Instrumentation Key for your Azure Application Insights subscription.  It is used to connect and log telemetry events as described in the [telemetry-logger article](telemetry-logger) to your own Application Insights subscription, as shown in the following example.
+This setting specifies the instrumentation key from your Azure Application Insights subscription that's used to connect and log telemetry events to your own Application Insights subscription, as shown in the following example.
 
 `"secondaryInstrumentationKey": "00000000-0000-0000-0000-000000000000" // Instrumentation Key GUID from your Azure Application Insights subscription`
+
+For more information, see [Telemetry logger](telemetry-logger.md).
 
 ## Additional resources
 
