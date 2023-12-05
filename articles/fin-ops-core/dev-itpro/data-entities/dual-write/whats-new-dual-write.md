@@ -18,6 +18,16 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## December 2023
+Release notes for the December 2023 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+**Version:** 1.0.23114.1
+
+| Type | Number | Description | Status | 
+| --- | --- | --- | --- |
+| Feature | 3620696 | Performance improvement in dual-write plugins by reducing the number of calls to the linked finance and operations apps environment. | General availability |
+| Bug fix | 3603874 | Fix for custom date field transformation from Dataverse to finance and operations apps environment during live sync. The GetTransformedValue method in the dual-write plugin returns a null value for unrecognized transform types instead of the passed in values. | General availability |
+| Optimization | N/A | Minor security improvements and updates | General availability | 
+
 ## November 2023 
 The November release of Dual-write Supply Chain solution 2.3.4.265 contains the following bug fixes.
 
