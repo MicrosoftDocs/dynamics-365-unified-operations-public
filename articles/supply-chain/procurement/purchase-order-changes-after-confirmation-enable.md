@@ -15,15 +15,15 @@ ms.custom: bap-template
 # Enable Copilot support for managing changes to confirmed purchase orders (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features.
 
-[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Turn on Copilot support for the Confirmed purchase orders with changes workspace
 
-The **Confirmed purchase orders with changes** workspace is enabled by default starting in Supply Chain Management version 10.0.36. <!-- KFM: Confirm version --> Tge workspace can be used either with or without its AI-powered and Copilot functionality. If you'd like to enable its AI features, then make sure you have also enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
+The **Confirmed purchase orders with changes** workspace is enabled by default starting in Supply Chain Management version 10.0.36. <!-- KFM: Confirm version --> Tge workspace can be used either with or without its AI-powered and Copilot functionality. If you'd like to enable its AI features, then make sure you have also enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps (preview)](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md).
 
 <!--KFM: Does the following also apply to Copilot for FnO in general? Maybe we should add it to that topic also/instead. -->
 

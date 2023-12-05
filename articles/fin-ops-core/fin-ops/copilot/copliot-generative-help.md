@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-## Generative help and guidance with Copilot (preview)
+# Generative help and guidance with Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
