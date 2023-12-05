@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features.
+This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features. For more information about how to use this workspace, see [Review and accept changes to confirmed purchase orders](purchase-order-changes-after-confirmation.md).
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 

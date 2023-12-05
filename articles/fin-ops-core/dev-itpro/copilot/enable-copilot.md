@@ -40,7 +40,7 @@ Follow these steps to check the status of the **Sql row version change tracking 
 1. Return to the **License configuration** page, and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
-### Step 2: Upgrade the Finance and Operations Virtual Entity solution
+## Step 2: Upgrade the Finance and Operations Virtual Entity solution
 
 Follow these steps to upgrade the *Finance and Operations Virtual Entity* solution.
 
