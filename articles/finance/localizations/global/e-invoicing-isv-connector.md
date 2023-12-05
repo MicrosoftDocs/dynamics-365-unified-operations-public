@@ -71,8 +71,9 @@ The following parameters can be left unchanged with their default values provide
 The rest of the action's parameters can be left empty.
   
 - **Waiting for response from Edicom** - waits for the response from Edicom. No specific paramters need to be additionally configured.
+- **Process response** - ????????????????.
 
-A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
+A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. 
 
  **Parameter**       | **Description**     |
 |---------------------|------------------|
@@ -81,6 +82,17 @@ A new data channel type **Get status from Edicom** is implemented for feature se
 | **Data channel**                | Enter the name of the [export channel](../mea/e-invoicing-dk-get-started.md#finance-configuration) configured in paragraph 7 of **Electronic document parameters** in Microsoft Dynamics 365 Finance. |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
+
+The following parameters can be left unchanged with their default values provided by Microsoft in related globalization features.
+
+ **Parameter**       | **Description**     |
+|---------------------|------------------|
+| **Web service URL** | Default value: **https://ipaasgw.edicomgroup.com**.|
+| **Document limit**                | Default value: **100**. |
+| **Schema**                 | Default value: **IN_INVOICE_STATUS_MICROSOFT_DK**.   |
+
+The rest of the action's parameters can be left empty.
+
 
 ### Electronic invoices receiption
 
