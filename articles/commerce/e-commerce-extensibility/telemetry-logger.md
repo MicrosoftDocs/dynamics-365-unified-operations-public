@@ -21,7 +21,7 @@ ms.assetid:
 
 This article covers the telemetry logger in Dynamics 365 Commerce.
 
-The Dynamics 365 Commerce online software development kit (SDK) includes a custom telemetry logger that you can use to log to multiple resources at various levels but also maintain a unified context on both the server and the client.
+The Dynamics 365 Commerce online software development kit (SDK) includes a custom telemetry logger that you can use to log to multiple resources at various levels while also maintaining a unified context on both the server and the client.
 
 ## Access the telemetry logger
 
@@ -114,11 +114,11 @@ Logging of **Error** objects (and classes that inherit from them) can be done th
 this.props.telemetry.exception(new Error("Something is broken!"));
 ```
 
-### .error() API vs. .exception() API
+### error() API vs. exception() API
 
-You might be confused about when you should use the `.error()` API to log an error in your application, and when you should use the `.exception()` API. This confusion can arise because the names are similar, and because you can use the `.error()` API to log **Error** objects by passing the **Error** objects as additional parameters.
+You might be confused about when you should use the **error()** API to log an error in your application, and when you should use the **exception()** API. This confusion can arise because the names are similar, and because you can use the **error()** API to log **Error** objects by passing the **Error** objects as additional parameters.
 
-The best guidance is to use the `.exception()` API to log actual **Error** objects and the `.error()` API to log string messages that state that an error occurred in the business logic. Generally, `.exception()` API logs are more easily correlated with issues and allow for faster debugging when real issues arise. The messages from the `.error()` API are treated as another trace log, and more detailed analysis might be required to find the issue than if you use the `.exception()` API. Therefore, it can take more time to recognize that an issue occurred. In addition, the `.exception()` API allows for better tracking across different requests. Therefore, it supports features such as automatic alerting when an issue begins to affect many requests.
+The best guidance is to use the **exception()** API to log actual **Error** objects and the **error()** API to log string messages that state that an error occurred in the business logic. Generally, **exception()** API logs are more easily correlated with issues and allow for faster debugging when real issues arise. The messages from the **error()** API are treated as another trace log, and more detailed analysis might be required to find the issue than if you use the **exception()** API. Therefore, it can take more time to recognize that an issue occurred. In addition, the **exception()** API allows for better tracking across different requests. Therefore, it supports features such as automatic alerting when an issue begins to affect many requests.
 
 ## Expose telemetry data in Azure Application Insights
 
