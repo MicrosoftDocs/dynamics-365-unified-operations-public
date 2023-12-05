@@ -21,7 +21,7 @@ audience: Application User
 
 ## Missing budget data: Error code: ERR00006 [Type: Warning]
 
-Error code *ERR00006* is logged in the `Bpa Self Help Logs` table in Microsoft Dataverse when no budget is created in Dynamics 365 Finance, and no budget data is available for reports.
+Error code *ERR00006* is logged in the `Bpa self help logs` table in Microsoft Dataverse when no budget is created in Dynamics 365 Finance, and no budget data is available for reports.
 
 Here's an example of a record:
 
