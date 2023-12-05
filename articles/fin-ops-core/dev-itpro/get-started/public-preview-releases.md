@@ -56,7 +56,7 @@ In the following table:
 - The "Auto-update schedule production start date" column refers to the auto-update schedule that's configured in the update settings in Lifecycle Services. See [Configure service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 - The "End of service" column indicates the date when no new cumulative service updates are provided.
 
-| Release version | Preview availability | Preview update availability | General availability (self-update) | Auto-update schedule production start date | End of service |
+| Release version | Preview availability | Preview latest possible update| General availability (self-update) | Auto-update schedule production start date | End of service |
 |---|---|---|---|---|---|
 | CY25Q4: 10.0.45\* | July 28, 2025 | August 8, 2025 | September 12, 2025 | October 3, 2025 | May 22, 2026 |
 | CY25Q3: 10.0.44 | April 25, 2025 | May 2, 2025 | June 6, 2025 | July 4, 2025 | February 17, 2026 |
