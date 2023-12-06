@@ -24,16 +24,16 @@ The `SalesLine.QtyOrdered` field is passed for the quantity, and the `SalesLine.
 
 ## Extended properties
 
-Additional properties can be added to requests from Finance and Operations to Export Control. These properties can then be referenced in PowerFx rules on both restrictions and exceptions.
+Additional properties can be added to requests from Supply Chain Management to Export Control. These properties can then be referenced in Power Fx rules on both restrictions and exceptions.
 
-To add additional properties, create a chain of command extension of the COOValidateSalesTable class and override the appropriate method for your property.
+To add additional properties, create a chain of command extension of the `COOValidateSalesTable` class and override the appropriate method for your property.
 - **Document properties:** `getExtendedProperties()`
 - **Line properties:** `getExtendedLineProperties()`
 - **Line code properties:** `getExtendedLineCodeProperties()`
 
-Each of these methods contains a map named _extendedProperties. Add the physical name of the property and the value. For a given document part and property name, the same value type must always be used. For instance, the property TestProp can not be of type `string` on one call and type `int` on the next call. Here is an example which adds properties to the document, line, and line code.
+Each of these methods contains a map named `_extendedProperties`. Add the physical name of the property and the value. For a given document part and property name, you must always use the same value type. For example, the property `TestProp` can't be of type `string` on one call and type `int` on the next call. Here is an example that adds properties to the document, line, and line code:
 
-```plaintext
+```xpp
 [ExtensionOf(classStr(COOValidateSalesTable))]
 final class COOValidateSalesTable_SampleModel_Extension
 {
@@ -44,10 +44,8 @@ final class COOValidateSalesTable_SampleModel_Extension
         _extendedProperties.add("TestDocReal", 3.14159);
         _extendedProperties.add("TestDocDate", today());
         _extendedProperties.add("TestDocUtcDateTime", DateTimeUtil::utcNow());
-
         next getExtendedProperties(_extendedProperties);
     }
-
     public void getExtendedLineProperties(Map _extendedProperties, COOValidationRequestLineContract _line)
     {
         _extendedProperties.add("TestLineString", strFmt("LineRecId = %1", _line.parmRecordId()));
@@ -55,10 +53,8 @@ final class COOValidateSalesTable_SampleModel_Extension
         _extendedProperties.add("TestLineReal", 3.14159);
         _extendedProperties.add("TestLineDate", today());
         _extendedProperties.add("TestLineUtcDateTime", DateTimeUtil::utcNow());
-
         next getExtendedLineProperties(_extendedProperties, _line);
     }
-
     public void getExtendedLineCodeProperties(Map _extendedProperties, COOValidationRequestLineContract _line, COOValidationRequestCodeContract _code)
     {
         _extendedProperties.add("TestLineCodeString", strFmt("Code = %1", _code.parmCode()));
@@ -66,12 +62,14 @@ final class COOValidateSalesTable_SampleModel_Extension
         _extendedProperties.add("TestLineCodeReal", 3.14159);
         _extendedProperties.add("TestLineCodeDate", today());
         _extendedProperties.add("TestLineCodeUtcDateTime", DateTimeUtil::utcNow());
-
         next getExtendedLineCodeProperties(_extendedProperties, _line, _code);
     }
 }
 ```
 
-The first time a new property is used in an export control check, that property is added to the `msdyn_ExportControlExtendedProperty` table in the Export Control solution. After that, the property may be referenced in PowerFx rules. Properties can also be pre-added to this table prior to performing any checks. Following is an example of a PowerFx rule that makes use of the extension properties above.
+The first time a new property is used in an export control check, that property is added to the `msdyn_ExportControlExtendedProperty` table in the export control solution. After that, the property may be referenced in Power Fx rules. Properties can also be pre-added to this table prior to performing any checks. Here is an example of a PowerFx rule that makes use of the mentioned extension properties:
+
+`And(And(Document.TestDocInt=42, Line.TestLineInt=43), LineCode.TestLineCodeInt=44`
+
 
 `And(And(Document.TestDocInt=42, Line.TestLineInt=43), LineCode.TestLineCodeInt=44`
