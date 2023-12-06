@@ -67,7 +67,7 @@ final class COOValidateSalesTable_SampleModel_Extension
 }
 ```
 
-The first time a new property is used in an export control check, that property is added to the `msdyn_ExportControlExtendedProperty` table in the export control solution. After that, the property may be referenced in Power Fx rules. Properties can also be pre-added to this table prior to performing any checks. Here is an example of a PowerFx rule that makes use of the mentioned extension properties:
+The first time a new property is used in an export control check, that property is added to the `msdyn_ExportControlExtendedProperty` table in the export control solution. After that, the property may be referenced in Power Fx rules. Properties can also be pre-added to this table prior to performing any checks. Here is an example of a Power Fx rule that makes use of the mentioned extension properties:
 
 `And(And(Document.TestDocInt=42, Line.TestLineInt=43), LineCode.TestLineCodeInt=44`
 
