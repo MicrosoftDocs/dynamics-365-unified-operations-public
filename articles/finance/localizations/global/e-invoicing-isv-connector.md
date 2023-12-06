@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-Independent Software Vendor (ISV) last-mile connector complements the standard Electronic Invoicing Service functionality in the cases when no direct integration with final recepients is supported out of the box. In such scenarios Microsoft Dynamics 365 Finance is used for the generation of electronic documents in legally required formats and then passes it to the ISV last-mile connector for further communication. In case of incoming electronic documents, the ISV last-mile connector is used as a source inbound documents which then will be handeled by Microsoft Dynamics 365 Finance.
+Independent Software Vendor (ISV) last-mile connector complements the standard Electronic Invoicing Service functionality in the cases when no direct integration with government electronic invoicing platforms or final electronic invoice recipients is supported out-of-the-box. In such scenarios Microsoft Dynamics 365 Finance is used for the generation of electronic documents in legally required formats and then passes it to the ISV last-mile connector for further communication. In case of incoming electronic documents, the ISV last-mile connector is used as a source of inbound documents which then will be handled by Microsoft Dynamics 365 Finance. 
 
 This article provides information about how to configure and use the Electronic Invoicing service ISV last-mile connector.
 
@@ -38,7 +38,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 This chapter provides the information how to configure and use the Electronic Invoicing ISV last-mile connector's integration with the Global e-Invoicing Platform provided by [Edicom](https://edicomgroup.com/electronic-invoicing).
 
-The following required credentials must be prliminary obtailned from **Edicom** to enable integration of the Electronic Invoicing service with the last-mile connector. 
+The following required credentials must be preliminary obtained from **Edicom** to enable the integration of the Electronic Invoicing service with the last-mile connector. 
 
 - The **Service ID** which uniquely identifies the company by Edicom.
 - The **Group** which is required for internal routing within the Edicom infrastructure.
@@ -50,7 +50,7 @@ The obtained **Token** must be uploaded to the secret created in the **Azure Key
 
 The following pipeline actions are introduced or updated for enabling outbound documents submission via the ISV last-mile connector.
 
-- **Integrate with Edicom** - a new action that submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. 
+- **Integrate with Edicom** - a new action that submits electronic documents generated using preceding actions to Edicom. You need to configure the action's parameters described in the table below. 
 
   ![Edicom connector actions.](../media/isv_connector_actions.jpg)
 
@@ -73,7 +73,7 @@ The following pipeline actions are introduced or updated for enabling outbound d
   The rest of the action's parameters can be left empty.
   
   
-- **Waiting for response from Edicom** - a new action that waits for the response from Edicom. No specific paramters need to be additionally configured.
+- **Waiting for response from Edicom** - a new action that waits for the response from Edicom. No specific parameters need to be additionally configured.
   
 - **Process response** - for this existing action new Electronic Reporting configurations **Edicom Response Processing** and **Error log import Json** were created for handeling the response received from Edicom by the preceding **Waiting for response from Edicom** action.
 
@@ -111,7 +111,7 @@ The following parameters can be left unchanged with their default values provide
 The rest of the action's parameters can be left empty.
 
 
-### Electronic invoices receiption
+### Electronic invoices reception
 
 A new data channel type **Edicom service** is implemented for feature setups of **Import channel** or **Import channel and processing pipeline** type. You need to create a new feature setup and configure the Import channel's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
 
