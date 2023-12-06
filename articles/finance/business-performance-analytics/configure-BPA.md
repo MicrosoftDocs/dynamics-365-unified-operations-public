@@ -13,7 +13,7 @@ ms.technology:
 ms.custom:
 audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
-ms.bpa-audience:administrator
+ms.audience: administrator
 ---
 
 # Set up business performance analytics
