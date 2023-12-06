@@ -4,26 +4,16 @@
 title: Dynamics 365 Payment Connector for PayPal
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: BrianShook
-ms.date: 09/02/2022
+ms.date: 11/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2020-10-31
-ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -38,19 +28,19 @@ This article provides an overview of the Microsoft Dynamics 365 Payment Connecto
 | Term | Description |
 |---|---|
 | PayPal Wallet | Also known as the PayPal "button", PayPal Wallet describes the customer experience and integration supported by the PayPal payment connector. |
-| Wallet | A payment type that does not include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
+| Wallet | A payment type that doesn't include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
 
-Microsoft Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the PayPal payment connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select **PayPal**, they are directed to complete their payment directly with PayPal and then are returned to the online storefront for order completion.  
+Microsoft Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the PayPal payment connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select **PayPal**, they're directed to complete their payment directly with PayPal and then are returned to the online storefront for order completion.  
 
-The PayPal payment connector is implemented using the same payments SDK that is leveraged for credit card payments. To better support PayPal payments, support for non-credit card payments has also been enhanced with the addition of support for "wallet" payment types. Specifically, PayPal payments do not return a BIN range. To support PayPal and other wallet payments, a new mapping for payments has been introduced that does not include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more details, see [Wallet payment support](wallets.md). 
+The PayPal payment connector is implemented using the same payments SDK that is used for credit card payments. To better support PayPal payments, support for non-credit card payments was enhanced with the addition of support for "wallet" payment types. Specifically, PayPal payments don't return a BIN range. To support PayPal and other wallet payments, a new mapping for payments was introduced that doesn't include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more information, see [Wallet payment support](wallets.md). 
 
-The PayPal payment connector is not available in China. For other locales where Dynamics 365 Commerce is available, there are currently no restrictions. 
+The PayPal payment connector isn't available in China. For other locales where Dynamics 365 Commerce is available, there are currently no restrictions. 
 
 ## Functional overview
 
 ### PayPal Wallet in storefront 
 
-The PayPal payment connector supports the use of the PayPal Wallet, or PayPal button, for e-commerce payments. When the PayPal payment connector is configured for the online storefront, customers will be presented with the option to pay using the PayPal button at the time of payment. When the customer selects the PayPal button, they will be redirected to a PayPal Wallet mini-browser window where they will be authenticated by PayPal and can select their method of payment. Upon successful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. When the order is placed, the PayPal payment will be included as a payment line on the order, and it will be synchronized to Commerce headquarters.
+The PayPal payment connector supports the use of the PayPal Wallet, or PayPal button, for e-commerce payments. When the PayPal payment connector is configured for the online storefront, customers are presented with the option to pay using the PayPal button at the time of payment. When customers select the PayPal button, they're redirected to a PayPal Wallet mini-browser window where they're authenticated by PayPal and can select their method of payment. Upon successful authentication and selection of a payment method, customers are redirected back to the storefront with the PayPal payment loaded into the checkout form. When the order is placed, the PayPal payment is included as a payment line on the order, and is synchronized to Commerce headquarters.
 
 For more information on PayPal Wallet, visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) hosted by PayPal. 
 
@@ -58,20 +48,20 @@ For more information on PayPal Wallet, visit the [PayPal Checkout page](https://
 
 Orders with PayPal payment lines are fulfilled in the same manner as orders that are paid using a credit card. When an order is created, the PayPal payment is added in an "authorized" state. Upon fulfillment, whether the order is shipped to the customer from a distribution center or picked up in a store, the payment authorization associated with the order is then "captured" using the same payments SDK requests used to capture credit card payments. 
 
-Fulfillment for PayPal orders supports incremental capture. This means that if an order is partially fulfilled and invoiced, a portion of the original authorization will be captured and, rather than getting a new authorization for the remainder, the same original authorization will be referenced when the remainder of the order is fulfilled. 
+Fulfillment for PayPal orders supports incremental capture. This means that if an order is partially fulfilled and invoiced, a portion of the original authorization is captured and, rather than getting a new authorization for the remainder, the same original authorization is referenced when the remainder of the order is fulfilled. 
 
 ### Authorization expiration
 
-Orders made using the PayPal payment connector should be fulfilled within 30 days. If an order cannot be fulfilled or invoiced within 30 days, the original authorization will expire. The PayPal payment connector does not currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens are required to automatically generate new authorizations after original authorization expiration. This means that if an authorization expires, the order will fall into a "do not process" state and the customer must be contacted to arrange for an alternate form of payment. 
+Orders made using the PayPal payment connector should be fulfilled within 30 days. If an order can't be fulfilled or invoiced within 30 days, the original authorization expires. The PayPal payment connector doesn't currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens, are required to automatically generate new authorizations after original authorization expiration. This means that if an authorization expires, the order falls into a "do not process" state and the customer must be contacted to arrange for an alternate form of payment. 
 
 ### Order Intent
 
-Beginning in Commerce version 10.0.30, the PayPal payment connector configuration in headquarters includes the **OrderIntent** field, which allows the configuration of the PayPal payment connector to operate with a saved order with the PayPal service for the online channel. After a payer approves an order, the PayPal payment connector sends a command to save the PayPal order, which allows for future references against the order within PayPal. For Commerce, this means a specific PayPal order reference can be reauthorized if a void was previously called. Merchants can also work with PayPal to configure the order expiry duration, and to customize functionality to reauthorize against a PayPal order if the original authorization has not expired.
+Beginning in Commerce version 10.0.30, the PayPal payment connector configuration in headquarters includes the **OrderIntent** field, which allows the configuration of the PayPal payment connector to operate with a saved order with the PayPal service for the online channel. After a payer approves an order, the PayPal payment connector sends a command to save the PayPal order, which allows for future references against the order within PayPal. For Commerce, this action means that a specific PayPal order reference can be reauthorized if a void was previously called. Merchants can also work with PayPal to configure the order expiry duration, and to customize functionality to reauthorize against a PayPal order if the original authorization isn't expired.
 
-When configuring the PayPal payment connector in Commerce headquarters, the **OrderIntent** field can have two values:
+When you configure the PayPal payment connector in Commerce headquarters, the **OrderIntent** field can have two values:
 
-- **Authorize**: This configuration value is the default value. If the field is left blank, **Authorize** will become the default value. Configuring the **OrderIntent** field with the **Authorize** value correlates to the PayPal processing instruction value of **NO_INSTRUCTION**. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
-- **Save**: Configuring the **OrderIntent** field with the **Save** value correlates to the PayPal processing instruction value of **ORDER_SAVED_EXPLICITLY**. When this value is used, order references will be saved in the PayPal service.
+- **Authorize**: This configuration value is the default value. If the field is left blank, **Authorize** becomes the default value. Configuring the **OrderIntent** field with the **Authorize** value correlates to the PayPal processing instruction value of **NO_INSTRUCTION**. The order is authorized with PayPal and the authorization can't be modified when this value is used.
+- **Save**: Configuring the **OrderIntent** field with the **Save** value correlates to the PayPal processing instruction value of **ORDER_SAVED_EXPLICITLY**. When this value is used, order references are saved in the PayPal service.
 
 ## Test the PayPal payment connector
 
@@ -94,7 +84,7 @@ To test the PayPal payment connector, you must first create PayPal developer cre
 9. Next, go to the [PayPal Developer page](https://developer.paypal.com/developer/applications) and select **Log in to Dashboard**.
 10. Sign in using the credentials used when creating your PayPal account.
 11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
-12. Note the **Client ID** and **Secret** for your sandbox account. These will be used to set up the PayPal payment connector in Dynamics 365 Commerce.
+12. Note the **Client ID** and **Secret** for your sandbox account. These values are used to set up the PayPal payment connector in Dynamics 365 Commerce.
 
     > [!NOTE]
     > To collect **Client ID** and **Secret** for a live environment, select the **Live** tab for the selected RestAPI app.
@@ -130,22 +120,23 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Payment service | Enter the name of the payment service to configure. | PayPal |
     | Payment connector | Select the PayPal payment connector. | Dynamics 365 Payment Connector for PayPal |
     | Test mode | For the PayPal payment connector, in production and test environments you should set this field to **False**. | False |
-    | Default processor for credit cards | This should be set to **No** because the call center uses the default processor. | No |
+    | Default processor for credit cards | This option should be set to **No** because the call center uses the default processor. | No |
     | Bypass payment processor for zero transactions | Specify whether this payment processor should be skipped for transactions that have a 0 (zero) amount. | Yes |
 
 3. On the **Payment service account** tab, enter the following information.
 
     | Field | Description | Required | Automatically set | Sample value |
     |---|---|:-:|:-:|---|
-    | Assembly Name | Auto-populated name of the assembly for the PayPal payment connector. | Yes | Yes | *Binary name* |
-    | Service account ID | Auto-populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes should use (such as invoicing). | Yes | Yes | *Guid* |
+    | Assembly Name | Autopopulated name of the assembly for the PayPal payment connector. | Yes | Yes | *Binary name* |
+    | Service account ID | Autopopulated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes should use (such as invoicing). | Yes | Yes | *Guid* |
     | Merchant client ID | Enter the sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**.  | Yes | Yes | *String* |
     | Merchant API key | Enter the sandbox **Secret** collected from the PayPal developer dashboard under **Default application**. | Yes | Yes | *String* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal payment connector. The default is **USD**. | Yes | Yes, but can be edited. | USD; CAD |
-    | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
-    | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method is **PayPal**. | Yes | Yes | PayPal |
+    | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant is **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to sandbox or live environments. | Yes | Yes | *Sandbox* or *Live* |
     | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
+    | Enhanced totaling audit | When this field is set to **True**, Commerce revalidates online order total calculations with the PayPal service prior to authorization. Introduced in Commerce version 10.0.35.  | No | No | True/False (If the field is blank, the default value is **False**. ) |
     
 > [!NOTE]
 > When testing payments in a sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API keys** must never be used. Sandbox environments are for sandbox testing only.
@@ -160,21 +151,22 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
 
     | Field | Description | Required | Automatically set | Sample value |
     |---|---|:-:|:-:|---|
-    | Assembly Name | Auto-populated name of the assembly for the PayPal payment connector. | Yes | Yes | *Binary name* |
-    | Service account ID | Auto-populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes should use (such as invoicing). | Yes | Yes | *Guid* |
+    | Assembly Name | Autopopulated name of the assembly for the PayPal payment connector. | Yes | Yes | *Binary name* |
+    | Service account ID | Autopopulated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes should use (such as invoicing). | Yes | Yes | *Guid* |
     | Merchant client ID | Enter the sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**.  | Yes | Yes | *String* |
     | Merchant API key | Enter the sandbox **Secret** collected from the PayPal developer dashboard under **Default application**. | Yes | Yes | *String* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal payment connector. The default is **USD**. | Yes | Yes, but can be edited. | USD; CAD |
-    | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
-    | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method is **PayPal**. | Yes | Yes | PayPal |
+    | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant is **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
     | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
+    | Enhanced totaling audit | When this field is set to **True**, Commerce revalidates online order total calculations with the PayPal service prior to authorization. Introduced in Commerce version 10.0.35.  | No | No | True/False (If the field is blank, the default value is **False**. ) |
 
 ### Set up the PayPal payment method for the online store
 
 To set up the PayPal payment method for the online store, follow these steps.
 
-1. In the online store where the PayPal payment connector has been configured, on the **Setup** tab, select **Payment methods**.
+1. In the online store where the PayPal payment connector is configured, on the **Setup** tab, select **Payment methods**.
 1. Select **New** to add a payment method.
 1. In the **Payment method** field, select the PayPal payment method that you created earlier. 
 1. In the **Operation name** field, select **Pay card**.
@@ -186,7 +178,7 @@ To set up the PayPal payment method for the online store, follow these steps.
 > [!NOTE]
 > When testing payments in a sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for sandbox testing only.
 
-After the above changes have been made in Commerce headquarters, synchronize the changes using the **1070** distribution schedule.
+After the above changes are made in Commerce headquarters, synchronize the changes using the **1070** distribution schedule.
 
 ### Configure PayPal for the storefront checkout module
 

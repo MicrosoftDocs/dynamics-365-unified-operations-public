@@ -57,7 +57,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 We have recently added or significantly updated the following help articles. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
 - [Attribute-based sales prices for constraint-based product configuration](../pim/attribute-based-product-configurator.md)
-- [Automatic allocation of charges](../procurement/automatic-charges-allocation.md)
+- [Automatic application of charges](../procurement/automatic-charges-allocation.md)
 - [Hazardous materials overview](../pim/hazmat-overview.md) (and related articles)
 - [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md)
 - [Purchasing cXML Enhancements](../procurement/purchasing-cxml-enhancements.md)

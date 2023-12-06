@@ -2,7 +2,7 @@
 title: Inventory Visibility public APIs
 description: This article describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 11/04/2022
+ms.date: 10/17/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -47,6 +47,8 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with product search](#query_with_product_search) |
+| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with product search](#exact-query-with-product-search) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
@@ -492,7 +494,7 @@ The *Unreserve* API serves as the reverse operation for [*Reservation*](#create-
 
 ### <a name="reverse-one-reservation-event"></a>Reverse one reservation event
 
-When a reservation is created, a `reservationId` will be included in the response body. You must provide the same `reservationId` to cancel the reservation, and include the same `organizationId` and `dimensions` used for the reservation API call. Finally, specify an `OffsetQty` value that represents the number of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on the specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initial reserved amount.
+When a reservation is created, a `reservationId` will be included in the response body. You must provide the same `reservationId` to cancel the reservation, and include the same `organizationId`, `productId`, and `dimensions` used for the reservation API call. Finally, specify an `OffsetQty` value that represents the number of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on the specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initial reserved amount.
 
 ```txt
 Path:
@@ -508,6 +510,7 @@ Body:
     {
         id: string,
         organizationId: string,
+        productId: string,
         reservationId: string,
         dimensions: {
             [key:string]: string,
@@ -522,6 +525,7 @@ The following code shows an example of body content.
 {
     "id": "unreserve-0",
     "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "reservationId": "RESERVATION_ID",
     "dimensions": {
         "siteid":"iv_postman_site",
@@ -572,6 +576,7 @@ Body:
         {
             id: string,
             organizationId: string,
+            productId: string,
             reservationId: string,
             dimensions: {
                 [key:string]: string,
@@ -772,6 +777,339 @@ The following example shows how to query all products in multiple sites and loca
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
+```
+
+## <a name="product-search-query"></a>Query with product search (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+
+<!-- KFM: Preview until Jan 2024 -->
+
+The following on-hand query APIs are enhanced to support product search:
+
+- [Query by using the post method](#query-with-post-method)
+- [Exact query by using the post method](#exact-query-with-post-method)
+
+> [!NOTE]
+> When you post an Inventory Visibility query that uses product search, use the `productSearch` request parameter (with a `ProductAttributeQuery` object inside) to find or filter by product ID. The newer APIs no longer support the older `productid` request parameter in the request body.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
+### Prerequisites
+
+Before you can start to use the product search APIs, your system must meet the following requirements:
+
+- You must be running Dynamics 365 Supply Chain Management 10.0.36 or later.
+- Inventory Visibility version 1.2.2.54 or later must be installed and set up as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+- The Inventory Visibility search service must be installed and set up as described in [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
+
+### Product search contract
+
+The product search contract defines the rules for communicating with the product search APIs. It provides a standardized way to describe the capabilities and behavior of the product search capabilities. Therefore, users can more easily understand, interact with, and build applications that consume the Inventory Visibility APIs.
+
+The following example shows a sample contract.
+
+```json
+{
+    "productFilter": {
+        "logicalOperator": "And",
+        "conditions": [
+            {
+                "conditionOperator": "Contains",
+                "productName": [
+                    "Deluxe"
+                ],
+            },
+        ],
+        "subFilters": [
+            {
+                "conditions": [
+                    {
+                        "conditionOperator": "IsExactly",
+                        "productType": [
+                            "Item"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "attributeFilter": {
+        "logicalOperator": "Or",
+        "conditions": [
+            {
+                "attributeName": "Weight Limit",
+                "attributeTypeName":"PoundDomain",
+                "attributeArea": " ProductAttribute",
+                "attributeValues": [
+                    "370"
+                ],
+                "conditionOperator": "GreaterEqual"
+            }
+        ],
+        "subFilters": [
+            {
+                "conditions": [
+                    {
+                        "attributeName": "Weight Limit",
+                        "attributeTypeName":"PoundDomain",
+                        "attributeArea": " ProductAttribute",
+                        "attributeValues": [
+                            "330"
+                        ],
+                        "conditionOperator": "LessEqual"
+                    }
+                ]
+            }
+        ]
+    },
+}
+```
+
+The following table describes the fields that are used in the contract.
+
+| Field ID | Description |
+|---|---|
+| `logicalOperator` | The possible values are `And` and `Or`. Use this field to connect multiple conditions or conditions and sub-filters. Note that `subFilters` is actually a `productFilter` or `attributeFilter` object. Therefore, you can have `subFilters` inside `subFilters`. |
+| `conditionOperator` | The possible values are `IsExactly`, `IsNot`, `Contains`, `DoesNotContain`, `BeginsWith`, `IsOneOf`, `GreaterEqual`, `LessEqual`, and `Between`. |
+| `ProductFilter`  | Use this field to filter products by product-related information. For example, you can change `productName` in the contract to `Company`, `itemNumber`, `productSearchName`, `productType`, `productName`, `productDescription`, `inventoryUnitSymbol`, `salesUnitSymbol`, or `purchaseUnitSymbol` to fit your business needs. |
+| `AttributeFilter`   | Use this field to filter products by attribute-related information. |
+| `attributeArea` | The possible values are `ProductAttribute`, `DimensionAttribute`, and `BatchAttribute`. |
+
+### <a name="query_with_product_search"></a>Query with product search
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/productsearch/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        productSearch: {ProductAttributeQuery contract object inherited from Product Search}
+            dimensionDataSource: string, # Optional
+            filters: {
+                organizationId: string[],
+                siteId: string[],
+                locationId: string[],
+                [dimensionKey:string]: string[],
+            },
+            groupByValues: string[],
+            returnNegative: boolean,
+    }
+```
+
+The following example shows sample body content.
+
+```JSON
+{
+    "productSearch": {
+        "productFilter": {
+            "conditions": [
+                {
+                    "conditionOperator": "contains",
+                    "productName": [
+                        "speaker cable"
+                    ],
+                },
+            ],
+        },
+    },
+    "returnNegative": true, 
+    "filters": 
+    {
+        "organizationId": ["usmf"], 
+        "siteId": ["1"], 
+        "locationId": ["13"],
+    },
+    "groupByValues": ["colorid"],
+}
+```
+
+The following example shows a successful response.
+
+```JSON
+[
+    {
+        "productId": "M0030",
+        "dimensions": {
+            "ColorId": "White",
+            "siteid": "1",
+            "locationid": "13"
+        },
+        "quantities": {
+            "fno": {
+                "arrived": 0,
+                "availordered": 20,
+                "onorder": 5,
+                "ordered": 20,
+                "physicalinvent": 0,
+                "reservordered": 0,
+                "reservphysical": 0,
+                "orderedsum": 20,
+                "softreserved": 0
+            },
+            "iv": {
+                "ordered": 0,
+                "softreserved": 0,
+                "softreservphysical": 0,
+                "softreservordered": 0,
+                "total ordered": 20,
+                "total on order": 5,
+                "availabletoreserve": 20,
+                "totalavailable": 20,
+                "totalordered": 20,
+                "totalonorder": 5
+            },
+            "pos": {
+                "inbound": 0,
+                "outbound": 0
+            },
+            "@iv": {
+                "@allocated": 0
+            }
+        }
+    },
+    {
+        "productId": "M0030",
+        "dimensions": {
+            "ColorId": "Black",
+            "siteid": "1",
+            "locationid": "13"
+        },
+        "quantities": {
+            "fno": {
+                "arrived": 0,
+                "availordered": 3,
+                "ordered": 3,
+                "physicalinvent": 0,
+                "reservordered": 0,
+                "reservphysical": 0,
+                "orderedsum": 3,
+                "softreserved": 0
+            },
+            "iv": {
+                "ordered": 0,
+                "softreserved": 0,
+                "softreservphysical": 0,
+                "softreservordered": 0,
+                "total ordered": 3,
+                "availabletoreserve": 3,
+                "totalavailable": 3,
+                "totalordered": 3
+            },
+            "pos": {
+                "inbound": 0,
+                "outbound": 0
+            },
+            "@iv": {
+                "@allocated": 0
+            }
+        }
+    }
+]
+```
+
+### <a name="exact-query-with-product-search"></a>Exact query with product search
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/productsearch/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        productSearch: {ProductAttributeQuery contract object inherited from Product Search}
+            dimensionDataSource: string, # Optional
+            filters: {
+                organizationId: string[],
+                dimensions: string[],
+                values: string[][],
+            },
+            groupByValues: string[],
+            returnNegative: boolean,
+    }
+```
+
+The following example shows sample body content.
+
+```JSON
+{
+    "productSearch": {
+        "productFilter": {
+            "conditions": [
+                {
+                    "conditionOperator": "contains",
+                    "productName": [
+                        "speaker cable"
+                    ],
+                },
+            ],
+        },
+    },
+    "filters": {
+        "organizationId": ["usmf"],
+        "dimensions": ["siteId", "locationId", "colorid"],
+        "values" : [
+            ["1", "13", "Black"],
+        ]
+    },
+    "groupByValues": [],
+    "returnNegative": true
+}
+```
+
+The following example shows a successful response.
+
+```JSON
+[
+    {
+        "productId": "M0030",
+        "dimensions": {
+            "ColorId": "Black",
+            "siteid": "1",
+            "locationid": "13"
+        },
+        "quantities": {
+            "fno": {
+                "arrived": 0,
+                "availordered": 3,
+                "ordered": 3,
+                "physicalinvent": 0,
+                "reservordered": 0,
+                "reservphysical": 0,
+                "orderedsum": 3,
+                "softreserved": 0
+            },
+            "iv": {
+                "ordered": 0,
+                "softreserved": 0,
+                "softreservphysical": 0,
+                "softreservordered": 0,
+                "total ordered": 3,
+                "availabletoreserve": 3,
+                "totalavailable": 3,
+                "totalordered": 3
+            },
+            "pos": {
+                "inbound": 0,
+                "outbound": 0
+            },
+            "@iv": {
+                "@allocated": 0
+            }
+        }
+    }
+]
 ```
 
 ## Available to promise
