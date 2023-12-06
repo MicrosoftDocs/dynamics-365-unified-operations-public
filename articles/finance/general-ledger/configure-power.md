@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure Microsoft Power Platform
+# Configure Microsoft Power Platform for use with the Financial reporting add-in
 This article describes how to configure the Microsoft Power Platform for use with the Financial reporting add-in.
 
 
