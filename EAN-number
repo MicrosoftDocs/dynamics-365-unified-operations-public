@@ -1,0 +1,36 @@
+---
+title: EAN Location Number
+description: This article provides information about  European Article Numbering (EAN) location number.
+author: kfend
+ms.date: 11/08/2017
+ms.topic: article
+ms.prod: 
+ms.technology: 
+audience: Application User
+ms.reviewer: kfend
+ms.search.region: Global
+ms.author: kfend
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.custom: 264824
+ms.search.form: EAN, GLN, Denmark, RegistrationIds
+---
+
+# EAN Location Number
+
+[!include [banner](../../includes/banner.md)]
+
+A European Article Numbering (EAN) location number is an electronic address that you can use when you send or receive an electronic invoice. This number uniquely identifies the buyer’s billing address. EAN location numbers can be used in countries/regions outside Europe and are also referred to as Global Location Numbers (GLN).
+
+## EAN Location Numbers in Microsoft Dynamics 365 Finance
+Departments, directorates, agencies, and other organizations in Denmark have EAN location numbers, which uniquely identifies the bill-to address of the customer. EAN location number can be defined as one of categories and types of Registration ID and then used for a legal entiry, a customer, a vendor or any other party supporting Registration IDs.
+
+An EAN location number has a fixed length of 13 digits. This number must be processed in its entirety. The following is an example of an EAN number.
+
+5790987654321
+
+EAN numbers start with a 3-digit prefix allocated by EAN International. For Denmark, the first three numbers are 579. The EAN number ends with a check digit that is calculated based on the first 12 digits.
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
