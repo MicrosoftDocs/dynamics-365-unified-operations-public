@@ -24,9 +24,11 @@ In addition, if the company isn't registered with the NemHandelsRegistret, a not
 
 ## Notification about option to register
 
-When you create a new legal entity with Denmark chosen as **Country/region**, a notification of the option to register in the Danish NemHandelsRegisteret (NHR) appears.  
+When you create a new legal entity with Denmark chosen as **Country/region**, a notification of the option to register in the Danish NemHandelsRegisteret (NHR) appears.   
 
 You can complete the registration process directly from the notification, by selecting either the **Register in NemHandel** link or the **Review NemHandel’s registration guide** link. Both links direct you to the external Nemhandel content.
+
+Existing users receive notification in a form of feature callout whenever you reach the Default Dashboard in a Danish legal entity, until you confirm you became familiar with the notification.
 
 ## Notification about not being registered
 
@@ -49,6 +51,7 @@ After you complete the registration with the NemHandelsRegistret, and both Centr
 ## See also
 
 [Registration IDs](../../emea-registration-ids.md)  
+[EAN Location Number](../../EAN-number.md)
 
 [place  holder for Get started with electronic invoicng in Denmark - a new article](../../???????.md)  
 
