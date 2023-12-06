@@ -115,6 +115,8 @@ The rest of the action's parameters can be left empty.
 
 A new data channel type **Edicom service** is implemented for feature setups of **Import channel** or **Import channel and processing pipeline** type. You need to create a new feature setup and configure the Import channel's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
 
+![Edicom import channel for new feature setup.](../media/isv_connector_import_channel_new.jpg)
+
  **Parameter**       | **Description**     |
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
