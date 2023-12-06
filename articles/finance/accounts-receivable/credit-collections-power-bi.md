@@ -43,6 +43,9 @@ All the amounts are shown in the system currency. You can set the system currenc
 
 By default, the credit and collections data for the current company is shown. To see the data across all companies, assign the **CustCollectionsBICrossCompany** duty to the role.
 
+>[!NOTE] 
+> In version 10.0.38 a new feature was added to improve the performance of the Power BI reports on the Credit and collections workspace. In **Feature management** enable **Credit and collections analytics performance improvements**. In prior versions the reports could time out and not display. This feature improves the data joins, filtering, currency calculation and computed columns processing. To allow for all of these improvements the Days sales outstanding calculation (DSO) was removed from the **Collections overview** report page. The DSO can be found on the **Credit statistics** factbox.
+
 ## Setup needed to view Power BI content
 
 The following setup needs to be completed for data to display in **Customer credit and collections** Power BI visuals.
@@ -51,7 +54,7 @@ The following setup needs to be completed for data to display in **Customer cred
 2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
 3. Go to **General Ledger > Setup > Ledger** and set **Accounting Currency** and **Exchange Rate Type**.
 4. Define exchange rates between transaction currencies and accounting currency, accounting currency, and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
+5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement. If the new feature noted above is enabled then refresh the **CustCollectionsBIMeasurementsV3** instead. 
 
 >[!NOTE] 
 > Aging period definitions must be set up in **Accounts receiveable parameters > Collections > Collections defaults** to enable aging data in the Power BI content.
