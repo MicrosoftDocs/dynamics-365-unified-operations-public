@@ -88,7 +88,7 @@ The following pipeline actions are introduced or updated for enabling outbound d
    ![Edicom process response action.](../media/isv_connector_response.jpg)
 
 
-A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. 
+A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to create a new feature setup and configure the Export channel's parameters described in the table below. 
 
 ![Edicom get status.](../media/isv_connector_get_status.jpg)
 
@@ -96,7 +96,7 @@ A new data channel type **Get status from Edicom** is implemented for feature se
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
 | **Application**                | Use  the same **Service ID** number. |
-| **Data channel**                | Enter the same name of the **export** channel which will be used in: <li>In the parent's feature setup applicability rules</li><li>In the used **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value</li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
+| **Data channel**                | Enter the same name of the **export** channel which will be used in: <li>In the parent's feature setup **Applicability rules**</li><li>In the used **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value</li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
@@ -113,18 +113,22 @@ The rest of the action's parameters can be left empty.
 
 ### Electronic invoices receiption
 
-A new data channel type **Edicom service** is implemented for feature setups of **Import channel** or **Import channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
+A new data channel type **Edicom service** is implemented for feature setups of **Import channel** or **Import channel and processing pipeline** type. You need to create a new feature setup and configure the Import channel's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
 
  **Parameter**       | **Description**     |
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
 | **Application**                | Use  the same **Service ID** number. |
-| **Data channel**                | Enter the same name of the **import** channel which will be used in: <li>In the parent's feature setup applicability rules</li><li>In the used **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value *need to finilize how this config will be used* </li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
+| **Data channel**                | Enter the same name of the **import** channel which will be used in: <li>In the parent's feature setup **Applicability rules**</li><li>In the used **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value *!!! We need to finilize how this config will be used !!!* </li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
+Additionally, the following feature setup **Variable** must be configured.
+
+![Edicom import channel.](../media/isv_connector_responseXML.jpg)
 
 ResponseXML ????????????????????????
+
 ![Edicom import channel.](../media/isv_connector_import_channel.jpg)
 
 ### Electronic invoicing in Denmark
