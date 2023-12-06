@@ -44,6 +44,7 @@ License consumption is automatically computed and updated based on checks when `
 
 ## Unit and currency conversion
 
-If a unit or currency is specified on both the license line as well as the incoming document, then automatic unit and currency conversions are performed. If either the document being checked or the license line does not specify a unit or currency, then it is assumed that the amount provided is in the same unit or currency as the license line.
+If a unit or currency is specified on both a license line and a related incoming document, then the system converts the unit and currency automatically. If either the document being checked or the license line doesn't specify a unit or currency, then it's assumed that the amount provided is in the same unit or currency as the license line.
 
-If the Dual Write Finance and Supply Chain Extended solutions are installed in the environment, then the `msdyn_unitofmeasureconversion` and `msdyn_currencyexchangerate` values are used to convert currencies and units. If the Dual Write solutions are not installed, then the defuault Dataverse conversions are applied. If a conversion for the currency or unit are not found in existing data, then a license issue is returned and the check is blocked.
+If the Dynamics 365 Supply Chain Extended and Dynamics 365 Finance Extended dual-write solutions are installed on your environment, then the system converts units and currencies using the `msdyn_unitofmeasureconversion` and `msdyn_currencyexchangerate` values, respectively. If the dual-write solutions aren't installed, then the system applies the default Dataverse conversions. If a conversion for the currency or unit isn't found in existing data, then a license issue is returned and the check is blocked.
+
