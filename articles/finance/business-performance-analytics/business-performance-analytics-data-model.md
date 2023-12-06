@@ -32,7 +32,7 @@ A business matrix is a roadmap for business data. Business data can be defined b
 
 *Procure to pay* covers the complete cycle from the procurement of goods and services through the payment of vendors. It's crucial for managing costs, ensuring timely payments, and maintaining good vendor relationships.
 
-| Business process | Fact | Grain | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim |
+| Business process | Fact | Grain | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim | 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Purchase requisition | PurchaseRequisitionFact | One row per requisition line | X |   | | X | X | X | X | | X | X | X | X | | | |
 | Purchase order | | | | | | | | | | | | | | | | | |
