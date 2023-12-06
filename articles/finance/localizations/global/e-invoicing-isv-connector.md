@@ -84,6 +84,8 @@ The following pipeline actions are introduced for enabling outbound documents su
 
 A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. 
 
+![Edicom get status.](../media/isv_connector_get_status.jpg)
+
  **Parameter**       | **Description**     |
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
