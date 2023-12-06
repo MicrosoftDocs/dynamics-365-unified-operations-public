@@ -12,6 +12,7 @@ ms.technology:
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
+ms.application-unique-name:msdyn_BusinessPerformanceAnalytics
 ---
 
 # Business performance analytics self-help
