@@ -1,16 +1,19 @@
 ---
 title: Notification and registration for the NemHandelsRegistret in Denmark 
-description: This article describes how to handle notification and registration with the NemHandelsRegistret in Denmark. 
+description: This article describes how to handle notification and registration with the NemHandelsRegistret in Denmark.
 author: mrolecki
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: nemhandel, NemHandelsRegistret, notification, registration, denmark
-ms.search.form: 1
-ms.date: 12/6/2023
-ms.author: mrolecki
-
+ms.date: 12/05/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+audience: Application User
+ms.reviewer: kfend
+ms.search.region: Global
+ms.author: kfend
+ms.search.validFrom: 2023-12-30
+ms.dyn365.ops.version: Version 1611
+ms.custom: 264824
+ms.search.form: nemhandel, NemHandelsRegistret, notification, registration, denmark
 ---
 
 # Notification and registration for the NemHandelsRegistret in Denmark
