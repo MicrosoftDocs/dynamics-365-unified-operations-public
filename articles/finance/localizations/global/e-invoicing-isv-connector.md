@@ -54,26 +54,27 @@ The following pipeline actions are introduced for enabling outbound documents su
 
   ![Edicom connector actions.](../media/isv_connector_actions.jpg)
 
- **Parameter**       | **Description**     |
-|---------------------|------------------|
-| **Domain** | Use the **Service ID** number provided by Edicom.|
-| **Application**                | Use  the same **Service ID** number. |
-| **Destination**                | Enter the **Service ID** number concatenated with the **_EDIWIN** value. For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*. |
-| **Group**                  | Use the **Group** code provided by Edicom.  |
-| **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
+  **Parameter**       | **Description**     |
+  |---------------------|------------------|
+  | **Domain** | Use the **Service ID** number provided by Edicom.|
+  | **Application**                | Use  the same **Service ID** number. |
+  | **Destination**                | Enter the **Service ID** number concatenated with the **_EDIWIN** value. For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*. |
+  | **Group**                  | Use the **Group** code provided by Edicom.  |
+  | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
-The following parameters are Edicom-specific and can be left unchanged with their default values provided by Microsoft in related globalization features.
+  The following parameters are Edicom-specific and can be left unchanged with their default values provided by Microsoft in related globalization features.
 
- **Parameter**       | **Description**     |
-|---------------------|------------------|
-| **Web service URL** | Default value for Edicom: **https://ipaasgw.edicomgroup.com**.|
-| **Http request body**                | Default value: **Generate format: Output file**. |
-| **Schema**                 | Default value for Edicom: **OUT_XML_UBL_INVOICE_2_MICROSOFT_DK**.   |
+  **Parameter**       | **Description**     |
+  |---------------------|------------------|
+  | **Web service URL** | Default value for Edicom: **https://ipaasgw.edicomgroup.com**.|
+  | **Http request body**                | Default value: **Generate format: Output file**. |
+  | **Schema**                 | Default value for Edicom: **OUT_XML_UBL_INVOICE_2_MICROSOFT_DK**.   |
 
-The rest of the action's parameters can be left empty.
+  The rest of the action's parameters can be left empty.
+  
   
 - **Waiting for response from Edicom** - waits for the response from Edicom. No specific paramters need to be additionally configured.
-- 
+  
 - **Process response** - ????????????????.
 
   ![Edicom process response action.](../media/isv_connector_response.jpg)
