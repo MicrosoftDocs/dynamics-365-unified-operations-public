@@ -207,7 +207,6 @@ Inventory Visibility provides a list of default physical measures that are mappe
 
 If your data source is Supply Chain Management, you don't have to recreate the default physical measures. However, for external data sources, you can create new physical measures as needed.
 
-
 ### Add physical measures in UI version 2 (preview)
 
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
@@ -551,62 +550,5 @@ The following physical measures are configured for the `erp` (enterprise resourc
 
 - `Unrestricted`
 - `QualityInspection`
-
-## <a name="set-configuration-v1"></a>Set data source configuration on V1
-
-### Data source configuration
-
-Add data source, follow these steps:
-
-1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-2. Open the **Configuration** page.
-3. On the **Data Source** tab, select **New Data Source** to add a data source (for example `ecommerce` or another meaningful data source ID).
-
-> [!NOTE]
-> When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
-
-### Dimension mappings configuration
-
-Add dimension mappings, follow these steps:
-
-1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Data Source** tab, select the data source where you want to do the dimension mapping. Then, in the **Dimension Mappings** section, select **Add** to add dimension mappings.
-
-    ![Adding dimension mappings](media/inventory-visibility-dimension-mapping.png "Adding dimension mappings")
-
-1. In the **Dimension Name** field, specify the source dimension.
-1. In the **To Base Dimension** field, select the dimension in Inventory Visibility that you want to map.
-1. Select **Save**.
-
-### Physical measures configuration
-
-Add new physical measures, follow these steps:
-
-1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Data Source** tab, select the data source to add physical measures to (for example, the `ecommerce` data source). Then, in the **Physical Measures** section, select **Add**, and specify the measure name (for example, `Returned` if you want to record returned quantities in this data source to Inventory Visibility). Save your changes.
-
-### Calculated measures configuration
-
-Add new custom calculated measure, follow these steps:
-
-1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Calculated Measure** tab, select **New Calculate Measure** to add a calculated measure.
-1. Set the following fields for the new calculated measure:
-
-    - **New calculated measure name** – Enter the name of the calculated measure.
-    - **Data source** – Select the data source to include the new calculated measure in. The querying system is a data source.
-
-1. Select **Add** to add a modifier to the new calculated measure.
-1. Set the following fields for the new modifier:
-
-    - **Modifier** – Select the modifier type (*Addition* or *Subtraction*).
-    - **Data source** – Select the data source where the measure that provides the modifier value should be found.
-    - **Measure** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
-
-1. Repeat steps 5 through 6 until you've added all the required modifiers and completed the formula for your calculated measure.
-1. Select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

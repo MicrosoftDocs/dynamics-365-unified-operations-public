@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
 ---
 
-# <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query
+# Preload a streamlined on-hand query
 
 Supply Chain Management stores a great deal of information about your current on-hand inventory and makes it available for a wide variety of purposes. However, many everyday operations and third-party integrations require just a small subset of these details, and querying the system for all of them can result in large data sets that take time to assemble and transfer. Therefore, the Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data to make that optimized information continuously available. The stored on-hand inventory details are filtered based on configurable business criteria to ensure that only the most relevant information is included. Because the filtered on-hand inventory lists are stored locally in the Inventory Visibility service and are regularly updated, they support quick access, on-demand data exports, and streamlined integration with external systems.
 

@@ -64,7 +64,7 @@ Soft reservations are usually created, consumed, and canceled by using API calls
 
     When switching the status of **Filter unconfigured dimensions** toggle, previous reservation should all be reversed for data consistency. Use [Clean up reservation data API](inventory-visibility-api.md#clean-up-reservation-data) to clean up existing soft reservation records.
 
-### Configure Reservation Mappings
+### Configure reservation mappings
 
 When you make a reservation, you might want to know whether on-hand inventory is currently available for reservation. The validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
 

@@ -142,15 +142,15 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
 1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
-    - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, refer to [find service endpoint](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration).
+    - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, refer to [find service endpoint](inventory-visibility-power-platform.md#endpoint).
     - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you have received advice from Microsoft Support or are otherwise certain that you need to change it.
 
 1. The following optional features enhance the functionality of Inventory Visibility. Decide whether you want to use one or both of these features. If you do, set them up. (You can also set them up later.)
 
     - **Soft reservations and offsets** – Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. For information about how to enable and set up this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
     - **Support for warehouse management processes (WMS) items** – This feature lets you use WMS items with Inventory Visibility. For information about how to enable and set up this feature, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
-    - **Inventory summary** – Provides an inventory summary for products together with all dimensions. For information about how to enable and set up this feature, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary).
-    - **Preload a streamlined on-hand query** – Provides an aggregated inventory summary for products by configured dimensions. For information about how to enable and set up this feature, see [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query).
+    - **Inventory summary** – Provides an inventory summary for products together with all dimensions. For information about how to enable and set up this feature, see [Inventory summary](inventory-visibility-inventory-summary.md).
+    - **Preload a streamlined on-hand query** – Provides an aggregated inventory summary for products by configured dimensions. For information about how to enable and set up this feature, see [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).
 
 1. After you finish setting up the optional features you selected, go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
@@ -176,7 +176,7 @@ Follow these steps to update your partition schema.
 
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature and [update configuration](inventory-visibility-power-platform.md#update-configuration).
 
-1. In Power Apps, [check runtime configuration](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration). The field `CachePartitonIdVersion` should show a value of `ByLocationAndProductIdMod64`.
+1. In Power Apps, [check runtime configuration](inventory-visibility-power-platform.md#endpoint). The field `CachePartitonIdVersion` should show a value of `ByLocationAndProductIdMod64`.
 
 1. In Supply Chain Management, go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job.
 

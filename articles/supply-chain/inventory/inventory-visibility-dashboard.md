@@ -32,7 +32,7 @@ Because the dashboard is a standard Power BI file (.pbix file), you must have a 
 ## Download the dashboard and connect it to Inventory Visibility
 
 1. Download the Inventory Visibility dashboard file from [Inventory Visibility samples folder on GitHub](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/tree/main/powerbi).
-1. For all the data that you plan to view by using the Power BI dashboard, configure *preloaded on-hand queries* in Inventory Visibility. For instructions, see [Turn on and configure preloaded on-hand queries](inventory-visibility-configuration.md#query-preload-configuration).
+1. For all the data that you plan to view by using the Power BI dashboard, configure *preloaded on-hand queries* in Inventory Visibility. For instructions, see [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).
 1. Connect the power BI report to your Dataverse environment by following these steps:
 
     1. Open the downloaded report in [Power BI desktop](https://powerbi.microsoft.com/downloads).

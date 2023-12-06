@@ -21,14 +21,14 @@ This article describes how to use the Inventory Visibility app, which runs in Mi
 
 The Inventory Visibility app offers two versions of model-driven user experiences for visualization. Users now have the option to choose between the new version UI (referred to as *UI version 2* in this article) and the legacy UI (also referred to as *UI version 1* in this article).
 
-This article describes how to work with UI version 1. For information about how to work with UI version 2, see [Use the Inventory Visibility app UI version 2](inventory-visibility-power-platform-v2.md).
+This article describes how to work with UI version 1. For information about how to work with UI version 2, see [Use the Inventory Visibility app UI version 2](inventory-visibility-power-platform.md).
 
 ## Prerequisites
 
 To work with the Inventory Visibility app using UI version 1, the following prerequisites must be in place:
 
 - You must [install and set up Inventory Visibility](inventory-visibility-setup.md).
-- You must [turn on Inventory Visibility UI version 1](inventory-visibility-ui-version-2).
+- You must [turn on Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
 ## Authenticate with the Inventory Visibility service
 
@@ -37,7 +37,7 @@ To work with the Inventory Visibility app using UI version 1, the following prer
 1. At the bottom of the navigation pane, open the **Change area** menu and select *Legacy UI*.
 1. On the navigation pane, select **Operational Visibility**.
 1. Select **Settings** at the top of the page. <!--KFM: Seems unnecessary. For me, the settings opened when I came to Operational Visibility. -->
-1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. You should have found these values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. You should have found these values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-add-in).
 1. Select the **Refresh** button on the right side of the **Bearer Token** field. The system generates a new bearer token for your sessions, which expires after one hour.
 
 ## <a name="ui-version"></a>Navigate between user interface versions
@@ -68,7 +68,7 @@ Any time you modify the configuration and save your settings, the system only sa
 1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
 1. On the navigation pane, select **Configuration**.
 1. Select **Update Configuration** in the upper-right corner.
-1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. These values were established when [the Inventory Visibility Add-in was installed](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. These values were established when [the Inventory Visibility Add-in was installed](inventory-visibility-setup.md#install-add-in).
 1. Select **Login**.
 1. Check your modifications in the dialog box.
 

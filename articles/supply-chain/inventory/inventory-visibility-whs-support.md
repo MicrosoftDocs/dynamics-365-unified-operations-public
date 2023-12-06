@@ -73,14 +73,14 @@ If you are using latest version 2 UI, you have already enabled the WMS feature a
 > [!NOTE]
 > Setup of *Truncated unused dimension* is only available on version 2 UI. If you are using version 1 UI, and would like to disable *Truncated unused dimension* , please consider to upgrade to version 2 UI.
 
-When you use the WMS feature, you can choose whether to truncate dimensions that you aren't using. When you choose to truncate the unused dimensions, the system can accept queries that exclude certain dimensions, which will increase query performance and reduce the amount of storage needed for the feature. The option to truncate unused dimensions is enabled by default when you sync WMS data from FinOps SCM unless one or more of the following dimensions is included in your [index hierarchy](./inventory-visibility-configuration.md#index-configuration):
+When you use the WMS feature, you can choose whether to truncate dimensions that you aren't using. When you choose to truncate the unused dimensions, the system can accept queries that exclude certain dimensions, which will increase query performance and reduce the amount of storage needed for the feature. The option to truncate unused dimensions is enabled by default when you sync WMS data from FinOps SCM unless one or more of the following dimensions is included in your [index hierarchy](inventory-visibility-power-platform.md#index):
 
 - Batch ID
 - Serial ID
 - License plate ID
 - WMS Location ID
 
-If you are using any of the dimensions in the previous list but haven't added them to your [index hierarchy](./inventory-visibility-configuration.md#index-configuration), then you should disable the **Truncate unused dimensions** by following these steps:
+If you are using any of the dimensions in the previous list but haven't added them to your [index hierarchy](inventory-visibility-power-platform.md#index), then you should disable the **Truncate unused dimensions** by following these steps:
 
 1. Sign into the Inventory Visibility power app.
 2. Go to **Settings \> Feature Management \> Advanced Warehouse Inventory \> Manage**.
@@ -109,7 +109,7 @@ For detailed information about how on-hand calculations for WMS items work, see 
 
 The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
 
-If you use Inventory Visibility with WMS items and want to view the on-hand list for WMS items, we recommend that you enable the *Preload the Inventory Visibility Summary* feature (see also [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). A corresponding data entity in Dataverse stores your query preload result, which is updated every 15 minutes. The data entity's name is `Onhand Index Query Preload Result`.
+If you use Inventory Visibility with WMS items and want to view the on-hand list for WMS items, we recommend that you enable the *Preload the Inventory Visibility Summary* feature (see also [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md)). A corresponding data entity in Dataverse stores your query preload result, which is updated every 15 minutes. The data entity's name is `Onhand Index Query Preload Result`.
 
 > [!IMPORTANT]
 > The Dataverse entity is read-only. You can view and export the data in the Inventory Visibility entities, but **do not modify it**.

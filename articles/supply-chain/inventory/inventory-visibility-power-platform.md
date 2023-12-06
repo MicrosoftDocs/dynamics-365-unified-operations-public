@@ -28,7 +28,7 @@ The Inventory Visibility app offers two versions of model-driven user experience
 To work with the Inventory Visibility app using UI version 2, the following prerequisites must be in place:
 
 - You must [install and set up Inventory Visibility](inventory-visibility-setup.md).
-- You must [turn on Inventory Visibility UI version 2](inventory-visibility-ui-version-2).
+- You must [turn on Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md). 
 
 ## Authenticate with the Inventory Visibility service
 
@@ -36,7 +36,7 @@ To work with the Inventory Visibility app using UI version 2, the following prer
 1. Open the **Inventory Visibility** app.
 1. On the navigation pane, select **Admin settings**.
 1. On the **Set tokens** tile, select **Manage**.
-1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. These values were established when [the Inventory Visibility Add-in was installed](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. These values were established when [the Inventory Visibility Add-in was installed](inventory-visibility-setup.md#install-add-in).
 
 1. Select **Login**. The system generates a new bearer token for your sessions, which expires after one hour.
 
@@ -49,7 +49,7 @@ Regardless of which user interface version is active, you can navigate between t
     - **Inventory Visibility** – The navigation pane displays the pages for UI version 2.
     - **Legacy UI** – The navigation pane displays the pages for UI version 1.
 
-## Find your service endpoint and read the configuration
+## <a name="endpoint"></a>Find your service endpoint and read the configuration
 
 The Inventory Visibility service is deployed on Microsoft Azure Service Fabric in multiple geographies and multiple regions. Currently, there is no central endpoint to automatically redirect your requests to the appropriate geography and region. Therefore, the service endpoint uses the following pattern, which includes the necessary information:
 

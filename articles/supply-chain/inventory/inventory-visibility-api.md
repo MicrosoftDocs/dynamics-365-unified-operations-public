@@ -58,7 +58,7 @@ The following table lists the APIs that are currently available:
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-You can find the [service endpoint](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration) in the Inventory Visibility app in Power Apps.
+You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
@@ -368,7 +368,7 @@ The following example shows sample body content. The behavior of this API differ
 
 ## Create reservation events
 
-To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information (including a dataflow and sample scenario), see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
+To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information (including a dataflow and sample scenario), see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
@@ -635,7 +635,7 @@ In the body part of this request, `dimensionDataSource` is still an optional par
 - `productId` could contain one or more values. If it's an empty array, all products of the specific sites and locations will be returned. In this case, `siteId` and `locationId` should not be empty.
 - `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations of the specific products; in this case, `productId` shouldn't be empty.
 
-We recommend that you use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#onhand-index-configuration).
+We recommend that you use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#index).
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
