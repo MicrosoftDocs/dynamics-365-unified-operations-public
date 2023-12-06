@@ -12,6 +12,8 @@ ms.prod:
 ms.technology:
 ms.custom:
 audience: Application User
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
+ms.audience:administrator
 ---
 
 # Set up security for business performance analytics
