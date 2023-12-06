@@ -119,6 +119,7 @@ A new data channel type **Edicom service** is implemented for feature setups of 
 
 
 ResponseXML ????????????????????????
+![Edicom import channel.](../media/isv_connector_import_channel.jpg)
 
 ### Electronic invoicing in Denmark
 
