@@ -40,31 +40,15 @@ Before you begin the procedures in this article, complete the following prerequi
 - Activate the integration between your Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
 - Create the secret in the Azure Key Vault for the **Token** which grants the authorization to access the infrastructure of the provider of electronic documents delivery service, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
 
-- Make sure that the following Electronic Reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-
-    - OIOUBL Sales invoice (DK)
-    - OIOUBL Sales credit note (DK)
-    - OIOUBL Project invoice (DK)
-    - OIOUBL Project credit note (DK)
- 
-- If submission of electronic invoices in PEPPOL format is required, make sure that the following ER format configurations are also imported.
-
-    - Peppol Sales Invoice
-    - Peppol Sales Credit Note
-    - Peppol Project Invoice
-    - Peppol Project Credit Note
-
-> [!NOTE]
-> The specified above ER formats are based on the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
 ## Country-specific configuration for the Danish electronic invoice (DK) feature
 
 Some of the parameters from the **Danish electronic invoice (DK)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
-1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature **version X** or later as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **OIOUBL Sales invoice processing** feature setup, and then select **Edit**.
+4. On the **Setups** tab, in the grid, select the **Sales invoice OIOUBL** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Integrate with Edicom** action.
 6. In the **Parameters** section, select **Domain**, and then enter the obtaind **Service ID** number.
 7. Select **Application**, and then enter the same **Service ID** number.
@@ -77,13 +61,13 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 11. Select **Save**, and close the page.
 12. Repeat steps 4 through 109 for the following feature setups if your business process assumes involvement of the related types of documents:
   
-   - OIOUBL Sales credit note processing
-   - OIOUBL Project invoice processing
-   - OIOUBL Project credit note processing
-   - Peppol Sales invoice processing
-   - Peppol Sales credit note processing
-   - Peppol Project invoice processing
-   - Peppol Project credit processing
+   - Sales credit note OIOUBL
+   - Project invoice OIOUBL
+   - Project credit note OIOUBL
+   - Sales invoice PEPPOL
+   - Peppol Sales credit note PEPPOL
+   - Peppol Project invoice PEPPOL
+   - Peppol Project credit PEPPOL
 
 13. On the **Setups** tab, in the grid, select the **Get status** feature setup, and then select **Edit**.
 14. In the **Export channel** tab, in the **Parameters** section, select the **Auth token**, and then select the name of the secret that you created for the token.
