@@ -73,11 +73,14 @@ The following pipeline actions are introduced for enabling outbound documents su
   The rest of the action's parameters can be left empty.
   
   
-- **Waiting for response from Edicom** - waits for the response from Edicom. No specific paramters need to be additionally configured.
+- **Waiting for response from Edicom** - this action waits for the response from Edicom. No specific paramters need to be additionally configured.
   
-- **Process response** - ????????????????.
+- **Process response** - this action handels the response received from Edicom by the preceding **Waiting for response from Edicom** action.
 
+  The following parameters must be configured for this action.
+  
   ![Edicom process response action.](../media/isv_connector_response.jpg)
+
 
 A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. 
 
