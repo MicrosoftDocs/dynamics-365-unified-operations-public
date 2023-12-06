@@ -52,6 +52,8 @@ The following pipeline actions are introduced for enabling outbound documents su
 
 - **Integrate with Edicom** - submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. 
 
+  ![Edicom connector actions.](../media/isv_connector_actions.jpg)
+
  **Parameter**       | **Description**     |
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
@@ -60,17 +62,18 @@ The following pipeline actions are introduced for enabling outbound documents su
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
-The following parameters can be left unchanged with their default values provided by Microsoft in related globalization features.
+The following parameters are Edicom-specific and can be left unchanged with their default values provided by Microsoft in related globalization features.
 
  **Parameter**       | **Description**     |
 |---------------------|------------------|
-| **Web service URL** | Default value: **https://ipaasgw.edicomgroup.com**.|
+| **Web service URL** | Default value for Edicom: **https://ipaasgw.edicomgroup.com**.|
 | **Http request body**                | Default value: **Generate format: Output file**. |
-| **Schema**                 | Default value: **OUT_XML_UBL_INVOICE_2_MICROSOFT_DK**.   |
+| **Schema**                 | Default value for Edicom: **OUT_XML_UBL_INVOICE_2_MICROSOFT_DK**.   |
 
 The rest of the action's parameters can be left empty.
   
 - **Waiting for response from Edicom** - waits for the response from Edicom. No specific paramters need to be additionally configured.
+- 
 - **Process response** - ????????????????.
 
   ![Edicom connector actions.](../media/isv_connector_actions.jpg)
