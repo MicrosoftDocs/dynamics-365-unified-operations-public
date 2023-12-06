@@ -1032,6 +1032,8 @@
             href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
           - name: Financial dimension sets
             href: general-ledger/financial-dimension-sets.md
+          - name: New finance dimension set feature (preview)
+            href: general-ledger/financial-dimension-set-new.md
           - name: Maintain financial dimension default templates
             href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
           - name: Financial dimensions and posting
