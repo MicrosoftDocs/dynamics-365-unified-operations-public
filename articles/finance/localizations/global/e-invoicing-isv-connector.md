@@ -73,6 +73,8 @@ The rest of the action's parameters can be left empty.
 - **Waiting for response from Edicom** - waits for the response from Edicom. No specific paramters need to be additionally configured.
 - **Process response** - ????????????????.
 
+  ![Edicom connector actions.](../media/isv_connector_actions.jpg)
+
 A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. 
 
  **Parameter**       | **Description**     |
