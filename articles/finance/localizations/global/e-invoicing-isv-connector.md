@@ -88,7 +88,7 @@ A new data channel type **Get status from Edicom** is implemented for feature se
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
 | **Application**                | Use  the same **Service ID** number. |
-| **Data channel**                | Enter the name of the [export channel](../mea/e-invoicing-dk-get-started.md#finance-configuration) configured in paragraph 7 of **Electronic document parameters** in Microsoft Dynamics 365 Finance. |
+| **Data channel**                | Enter the same name of the export channel which will be used in: <li>In the parent's feature setup applicability rules</li><li>In the used **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value</li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
