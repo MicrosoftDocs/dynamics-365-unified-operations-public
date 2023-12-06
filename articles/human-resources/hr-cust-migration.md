@@ -206,27 +206,29 @@ The environment state will show the deployment progress. The state will be chang
 
 ##### Prerequisites
 
-Install Dynamics 365 Human Resources common tables:
-1. Go to the Power Platform admin center, select the environment. 
-2. In the **Resources** section, click **Dynamics 365 apps** and select **Install app**.
-3. Select **Dynamics 365 Human Resources common tables**, install the latest version.
-4. Verify the installation has completed successfully. 
+Follow these steps to install Dynamics 365 Human Resources common tables.
 
-Add dual-write permission:
-1. Go to the Power Platform admin center, confirm that the dual-write Dynamic 365 Human Resources and Dynamics 365 Human Resources common tables solutions are installed.
-2. Go to **Power Platform admin center**, select your environment.
-3. **Teams** > Click **See all**.
-4. Select the business unit with the same name as environment name, click **Manage security roles**.
-5. Select **System administrator** and **Human Resources administrator** permissions, click **Save**. 
+1. Go to the Power Platform admin center, and select the environment.
+2. In the **Resources** section, select **Dynamics 365 apps**, and then select **Install app**.
+3. Select **Dynamics 365 Human Resources common tables**, and install the latest version.
+4. Verify that the installation was successfully completed. 
 
->[!Note]
->The integration key for different maps are available here: [Human resources dataverse integration](hr-dataverse-integration.md#integration-considerations).
+Follow these steps to add dual-write permissions.
 
-After the relevant maps are configured, follow these steps: 
-1. Go to **Data management** > **Dual write UI**. In **Integration key**, confirm the correct keys are set.
-2. If any of the keys are different, update the keys.
-3. For modified integration key, you need to stop, refresh, and click **Start map again** for the keys were updated.
+1. In the Power Platform admin center, confirm that the dual-write Dynamic 365 Human Resources and Dynamics 365 Human Resources common tables solutions are installed.
+2. Select your environment.
+3. In the **Access** section, under **Teams**, select **See all**.
+4. Select the business unit that has the same name as the environment, and then select **Manage security roles**.
+5. Select **System administrator** and **Human Resources administrator** permissions, and then select **Save**.
 
+> [!NOTE]
+> The integration keys for different maps are available in [Integration considerations](hr-dataverse-integration.md#integration-considerations).
+
+After the relevant maps are configured, follow these steps.
+
+1. Go to **Data management** \> **Dual write UI**.
+2. In **Integration key**, confirm that the correct keys are set. If any of the keys differ, update them.
+3. For modified integration keys, you must stop the map, refresh, and then select **Start map again** for the keys that were updated.
 
 ##### Set up Microsoft Power Platform dual-write integration
 
