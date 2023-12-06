@@ -45,9 +45,9 @@ To work with the Inventory Visibility app using UI version 1, the following prer
 Regardless of which user interface version is active, you can navigate between the two versions at any time. However, only the settings you make to the active version of the UI will have any affect. To switch between the two versions, follow these steps:
 
 1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
-1. At the bottom of the navigation pane, open the **Change area** menu and select one of the following values:
-    - *Inventory Visibility* – The navigation pane displays the pages for UI version 2.
-    - *Legacy UI* – The navigation pane displays the pages for UI version 1.
+1. At the bottom of the navigation pane, open the **Change area** menu and select one of the following entries:
+    - **Inventory Visibility** – The navigation pane displays the pages for UI version 2.
+    - **Legacy UI** – The navigation pane displays the pages for UI version 1.
 
 ## Find your service endpoint and read the configuration
 
@@ -97,12 +97,12 @@ Regardless of which user interface version is active, the purpose and functional
 
 1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
 1. Open the **Product Index Hierarchy** tab.
-1. Add sets and dimensions as needed. Add dimensions in order according to the hierarchy you want to create. For details about what these settings mean and how they work, see [On-hand index configuration](inventory-visibility-power-platform.md#index). Set and dimensions numbers are generated automatically as you make modifications.
+1. Add sets and dimensions as needed. Add dimensions in order according to the hierarchy you want to create. For details about what these settings mean and how they work, including some examples, see [On-hand index configuration](inventory-visibility-power-platform.md#index). Set and dimensions numbers are generated automatically as you make modifications.
 1. [Update the configuration](#update-configuration) to apply your changes.
 
-## Feature management
+## <a name="feature-management"></a>Feature management
 
-Inventory Visibility Add-in offers multiple features as below.
+Inventory Visibility offers the features listed in the following table, each of which can be turned on or off for your environment.
 
 | Feature name | Description |
 |---|---|
@@ -111,88 +111,73 @@ Inventory Visibility Add-in offers multiple features as below.
 | [Advanced warehouse inventory](inventory-visibility-whs-support.md) | Sync and view advanced warehouse item inventory with warehouse hierarchies. |
 | [Soft reservation](inventory-visibility-reservations.md) | Post your omnichannel reservations to Inventory Visibility soft reservations for real-time inventory availability checks and updates. |
 | [Inventory log history](inventory-visibility-track-inventory-log-history.md) | Allow Inventory Visibility to store your successful transaction logs. You can query your log history with details on organization, product, date range, site and warehouse. |
-| [Inventory summary](inventory-visibility-inventory-summary.md) | Periodically sync your raw Inventory summary from cache to dataverse. This feature is not compatible with advanced warehouse items. Either enable this feature or the Preloaded On-hand feature, do not enable both. |
-| [Preload on-hand](inventory-visibility-preload-on-hand.md) | Periodically preload the Inventory summary to Dataverse from a query result that is configurable with dimensions that are most relevant to your business. This feature is compatible with advanced warehouse items. Either enable this feature or Inventory Summary feature, do not enable both. |
+| [Inventory summary](inventory-visibility-inventory-summary.md) | Periodically sync your raw inventory summary from cache to dataverse. This feature is not compatible with advanced warehouse items. Either enable this feature or the *Preloaded on-hand* feature, do not enable both. |
+| [Preload on-hand](inventory-visibility-preload-on-hand.md) | Periodically preload the inventory summary to Dataverse from a query result that is configurable with dimensions that are most relevant to your business. This feature is compatible with advanced warehouse items. Either enable this feature or *Inventory summary* feature, do not enable both. |
 
-By default, all features are disabled. This status can be managed on **Settings (Preview)** - **Feature Management** for UI Version 2 users, and on **Inventory Visibility (Legacy UI)** - **Configuration** - **Feature Management & Settings** for UI Version 1 users. [Update configuration](#update-configuration) is required to commit your modification.
+By default, all of these features are disabled. To turn a feature on or off, and make related configuration settings, follow these steps:
 
+1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
+1. Find the tile named after the feature you want to turn on or off, and then select **Manage**.
+1. Open the **Feature management & settings** tab.
+1. Use the **Toggle switch** for each each listed feature to turn it on or off. Additional settings may be added to the page when some features are turned on. For more information, see the documentation for the feature you are setting up.
+1. [Update the configuration](#update-configuration) to commit your changes so they will take effect.
 
+## Delete all configurations
 
+If necessary, you can delete all configurations except for those contained in Inventory Visibility data sources *fno* and *@iv*. Deleted configurations can't be restored.
 
-## Delete all inventory data (Legacy UI)
+1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
+1. Open the **More** menu (three dots icon) in the upper-right corner and select **Delete all configurations**.
 
-Delete all Inventory Visibility data except configurations in both cache and Dataverse. Deleted data cannot be restored and users will be blocked until deletion completes.
+## Delete all inventory data
 
-1. Open the **Inventory Visibility** power app.
+If necessary, you can delete all Inventory Visibility data in both the cache and in Dataverse except for configurations. Deleted data can't be restored and users will be blocked until deletion completes.
 
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **More** button (three dots symbol) on the upper-right corner.
+1. On the [UI version 1](#ui-version) navigation pane, select **Configuration**.
+1. Open the **More** menu (three dots icon) in the upper-right corner and select **Delete all inventory data**.
 
-1. Click **Delete all inventory data**.
+## Inventory queries and updates
 
-## Delete all configurations (Legacy UI)
+The **Operational Visibility** page provides tabs for making real-time on-hand inventory queries and updates. When the [soft reservation](inventory-visibility-reservations.md) or [inventory allocation](inventory-visibility-allocation.md) feature is [turned on](#feature-management), reservation or allocation requests can also be posted. For more details about API requests, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
-Delete all out-of-box configurations except for ones contained in Inventory Visibility datasources `fno` and `@iv`. Deleted configurations cannot be restored. 
+Details about how to set up and use each tab are provided in the following subsections.
 
-1. Open the **Inventory Visibility** power app.
+### On-hand query
 
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **More** button (three dots symbol) on the upper-right corner.
+Use the **Onhand query** tab of the **Operational visibility** page to query real-time on-hand inventory. Follow these steps to set up and run a query.
 
-1. Click **Delete all configurations**.
+1. On the [UI version 1](#ui-version) navigation pane, select **Operational visibility** and open the **Onhand query** tab.
+1. Enter the **Organization ID**, **Site ID**, and **Location ID** for the products you want to look for.
+1. In the **Product ID** field, enter one or more product IDs to get an exact match for your query, or leave it blank to include all products at the specified organization, site, and location.
+1. To get a more granular result (for example, a view grouped by dimensions like color and size), select dimensions to group by in the **Group result by** field.
+1. To filter items with a specific dimension value (such as color = red), select the dimension in hte **Filter dimensions** field and then enter the value.
+1. If you want to include available-to-promise (ATP) information, select the **Query ATP** check box.
+1. Select **Query** to send the request.
 
-## Inventory query and update (Legacy UI)
+### Reservation posting
 
-The **Operational Visibility** page provides pages to make real-time on-hand inventory query and update. When the [soft reservation](inventory-visibility-reservations.md)/[inventory allocation](inventory-visibility-allocation.md) feature is [turned on](#feature-management), reservation/allocation requests can also be posted. For more details about API requests, refer to [Inventory Visibility public APIs](inventory-visibility-api.md).
+Use the **Reservation posting** tab of the **Operational visibility** page to make soft reservations of inventory.
 
-### Onhand query (Legacy UI)
+> [!IMPORTANT]
+> The ability to make soft reservations through the user interface should only be used to test the feature. Each soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you only make soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
-The **Onhand Query** tab of the **Operational Visibility** page allows users to query real-time on-hand inventory. Follow these steps to set up and run a query.
+Follow these steps to set up and submit a soft reservation.
 
-1. Enter the `Organization ID`, `Site ID`, and `Location ID` values that you want to query.
+1. On the [UI version 1](#ui-version) navigation pane, select **Operational visibility** and open the **Reservation posting** tab.
+1. In the **Quantity** field, enter the quantity that you want to soft reserve.
+1. Select the **Enable negative inventory to support oversell** check box to skip the available-for-reservation check, or unselect it to enforce the check.
+1. In the **Operator** field, select the data source and physical measure to make the soft reservation on.
+1. Enter the **Organization ID**, **Site ID**, **Location ID**, and **Product ID** values that you want to soft reserve.
+1. In **Dimension** field, select a data source and then add dimensions from that data source and enter values for each dimension you select.
+1. Select **Post** to send the request.
+1. Select **Show details** to see a detailed response, including the `reservationId` value.
 
-1. In `Product ID` field, enter one or more product IDs to get an exact match for your query, or leave it blank to include all products at the specific site and location.
+### Inventory allocation
 
-1. To get a more granular result (e.g., a view by dimensions color and size), select dimensions to group by in `Group Result By` field.
+The inventory allocation feature lets sales planners or key account managers manage and preallocate important stock across allocation groups (such as channels, regions, and customer groups). It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, to ensure that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast-sale or promotion events.
 
-1. To filter items with a specific dimension value (e.g., color = red), select the dimension in `Filter Dimensions` field and enter the value.
-
-1. Select `Query ATP` to include ATP related information.
-
-1. Click **Query** button to send the request.
-
-### Reservation posting (Legacy UI)
-
-The **Reservation Posting** tab of the **Operational Visibility** page allows users to make soft reservations to inventory.
-
-> [!NOTE]
-
-> The capability of making soft reservations through user interface is intended for feature test. Each soft reservation request should be associated with a transaction order line change (creation, modification, deletion, and so on). Therefore, it is recommended to only make soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
-
-Follow these steps to set up and run a soft reservation.
-
-1. In `Quantity` field, enter the quantity that you want to soft reserve.
-
-1. Select `Enable negative inventory to support oversell` to skip available-for-reservation check, or unselect it to enforce the check.
-
-1. In `Operator` field, select the data source and physical measure to execute the soft reservation on.
-
-1. Enter the `Organization ID`, `Site ID`, `Location ID`, and `Product ID` values that you want to make soft reservation.
-
-1. In `Dimension` field, select dimensions and enter correpsonding values.
-
-1. Click **Post** button to send the request. 
-
-1. Click **Show details** button for detailed response, including `reservationId` value.
-
-### Allocation (Legacy UI)
-
-Refer to [use the allocation user interface](inventory-visibility-allocation.md#use-the-allocation-user-interface) for details.
-
-> As with the *OnHandMostSpecificBackgroundService* feature, the *OnHandIndexQueryPreloadBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment.
->
-> When you change the settings for a calculated measure, data on the **Preload the Inventory Visibility Summary** page won't update automatically until the related product data is modified.
->
-> If your **Preload the Inventory Visibility Summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job, and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+For more information about inventory allocation, including how to work with it in the Inventory Visibility app, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md)
 
 ## Search for products in the Inventory Visibility app
 
-The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. For details about how to set up this feature, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md). For details about how to use it in the Inventory Visibility app, see [Search for products using the Inventory Visibility app](inventory-visibility-product-search-app.md).
+The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. For details about how to set up this feature, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md). For details about how to use it in the Inventory Visibility app, see [Search for products using the Inventory Visibility app](inventory-visibility-product-search-app.md). <!--KFM: Does this work when UIv1 is active? -->

@@ -479,24 +479,36 @@ Use \[site=1, location=11, color=red\] and groups \[channel=Online, customerGrou
 
 ## Use the allocation user interface
 
-You can manually manage allocations through the user interface by opening the Inventory Visibility app and going to **Operational Visibility \> Allocation**. From there, you can perform any of the actions that are described in the following subsections.
+You can manually manage allocations using the Inventory Visibility app in Power Apps.
+
+> [!IMPORTANT]
+> In the current version of the Inventory Visibility app, you can only manage allocations when you are using Inventory Visibility UI version 1. If you are using UI version 2, you must use the APIs to manage allocations. For more information about the two user interface versions and how to switch between them, see [Inventory Visibility app user interface versions](inventory-visibility-ui-version-2.md) <!-- KFM: I think this is true. -->
+
+### Open the allocation user interface
+
+To open the allocation user interface, follow these steps.
+
+1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
+1. At the bottom of the navigation pane, open the **Change area** menu and select **Legacy UI**.
+1. On the navigation pane, select **Operational visibility** and then open the **Allocation** tab.
 
 ### Create an allocation
 
-Follow these steps to create an allocation from the **Allocation** page of the Inventory Visibility app.
+Follow these steps to create an allocation in the Inventory Visibility app.
 
-1. Select **Allocate**.
-1. Set the base fields, dimensions, and target allocation groups values. (When you select the collect data source in the **Dimensions** section, first use the drop-down list to specify the dimensions (for example, `siteId`). Then enter dimension values in the fields that appear.)
+1. Open the allocation user interface, as described previously.
+1. On the toolbar, select **Allocate**.
+1. Set the **Base fields**, **Dimensions**, and **Target allocation groups** values. When you are selecting values in the **Dimensions** section, first select a data source, then select a dimension from that data source, and then enter dimension values in the fields that appear each time you add a dimension.
 1. Select **submit**.
 
 ### Consume an allocation
 
-Select **Consume** to consume an allocation. To ensure that you consume within the correct allocation group and hierarchy, enter the same sets of organization and dimension details when you create the allocation.
+On the toolbar of the **Allocation** tab, select **Consume** to consume an allocation. To ensure that you consume within the correct allocation group and hierarchy, enter the same sets of organization and dimension details when you specified creating the allocation.
 
 ### Reallocate an allocation
 
-Select **Reallocate** to move existing allocated quantity from one set of allocation groups to another.
+On the toolbar of the **Allocation** tab, select **Reallocate** to move existing allocated quantity from one set of allocation groups to another.
 
 ### Query existing allocations
 
-Select **Query**, and then enter product, organization, dimension, and allocation group values to obtain query results of existing allocations.
+On the toolbar of the **Allocation** tab, select **Query**, and then enter product, organization, dimension, and allocation group values to obtain query results of existing allocations.
