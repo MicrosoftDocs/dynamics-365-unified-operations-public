@@ -48,9 +48,9 @@ The obtained **Token** must be uploaded to the secret created in the **Azure Key
 
 ### Electronic invoices submission
 
-The following pipeline actions are introduced for enabling outbound documents submission via the ISV last-mile connector.
+The following pipeline actions are introduced or updated for enabling outbound documents submission via the ISV last-mile connector.
 
-- **Integrate with Edicom** - submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. 
+- **Integrate with Edicom** - a new action that submits electronic documents generated using preceeding actions to Edicom. You need to configure the action's parameters described in the table below. 
 
   ![Edicom connector actions.](../media/isv_connector_actions.jpg)
 
@@ -73,13 +73,19 @@ The following pipeline actions are introduced for enabling outbound documents su
   The rest of the action's parameters can be left empty.
   
   
-- **Waiting for response from Edicom** - this action waits for the response from Edicom. No specific paramters need to be additionally configured.
+- **Waiting for response from Edicom** - a new action that waits for the response from Edicom. No specific paramters need to be additionally configured.
   
-- **Process response** - this action handels the response received from Edicom by the preceding **Waiting for response from Edicom** action.
+- **Process response** - for this existing action new Electronic Reporting configurations **Edicom Response Processing** and **Error log import Json** were created for handeling the response received from Edicom by the preceding **Waiting for response from Edicom** action.
 
-  The following parameters must be configured for this action.
-  
-  ![Edicom process response action.](../media/isv_connector_response.jpg)
+  The following parameters are Edicom-specific and can be left unchanged with their default values provided by Microsoft in related globalization features.
+
+  **Parameter**       | **Description**     |
+  |---------------------|------------------|
+  | **Input file** | Default value for Edicom: **Waiting for response from Edicom: Output file**.|
+  | **Reporting configuration list**                | Default value for Edicom: **Edicom Response Processing: Edicom Response Processing**. |
+  | **Reporting configuration list**             | The second configuration, default value for Edicom: **Error log import Json: Error log import Json**.   |
+
+   ![Edicom process response action.](../media/isv_connector_response.jpg)
 
 
 A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to configure the Export channel's parameters described in the table below. 
