@@ -12,7 +12,7 @@ ms.prod:
 ms.technology:
 ms.custom:
 audience: Application User
-ms.application-unique-name:msdyn_BusinessPerformanceAnalytics
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
 # Reports in business performance analytics
