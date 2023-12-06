@@ -129,7 +129,7 @@ Additionally, the following feature setup **Variable** must be configured.
 
 ![Edicom import channel.](../media/isv_connector_responseXML.jpg)
 
-ResponseXML ????????????????????????
+The name of the variable used for the decoded file must be used as the **Import source** name for the import channel in the **Electronic document parameters** in Microsoft Dynamics 365 Finance.
 
 ![Edicom import channel.](../media/isv_connector_import_channel.jpg)
 
