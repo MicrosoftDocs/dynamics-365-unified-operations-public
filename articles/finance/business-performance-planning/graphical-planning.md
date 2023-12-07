@@ -46,8 +46,6 @@ It streamlines the process of adjusting values in forecasts and budgets, offerin
 
     Provide a visually intuitive tool for senior leadership to engage with forecasts and budgets, aiding in decision-making processes through hands-on data interaction.
 
-# Getting Started
-
 ## Prerequisites
 
 1.  Import business performance planning visuals from AppSource. Learn More.
@@ -67,7 +65,7 @@ It streamlines the process of adjusting values in forecasts and budgets, offerin
 
 Info on PBI versions where the visual is compatible.
 
-# Using the Visual
+### Using the Visual
 
 Once the visual is installed and setup on the Power BI canvas, follow the below steps to begin using it in your planning exercise.
 
