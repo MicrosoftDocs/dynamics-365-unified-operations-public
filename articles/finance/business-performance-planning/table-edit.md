@@ -124,11 +124,11 @@ Adjust column widths by dragging field separators. Save new widths using the **S
 
     Specify filtering behavior for users using linked columns of a dimension.
 
--   **Hiding Columns**
+-   **Hide Columns**
 
     Hide columns by name or multiple columns using comma separation.
 
--   **Lock Column**
+-   **Lock Column Edit**
 
     Prevent users from changing a specific column on the visual level.
 
@@ -144,4 +144,10 @@ Adjust column widths by dragging field separators. Save new widths using the **S
 
     Display images instead of links and configure image size.
 
+-   **Note Column**
+
+    Enter the column names of the columns that you want to add notes to.
+
+    [!Important]
+    When referencing any of the column names in the settings listed above, the name of the column must be the technical name.  For example: msdyn_description.  You can find this in the Data column of Power BI.
 
