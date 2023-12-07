@@ -85,69 +85,133 @@ For example, a customer wants to transfer three dimension fields from invoice ca
 class to update header and lines for pending invoice and invoice journal. 
 
 using Newtonsoft.Json.Linq; 
-public class VendInvoiceCapInvDataUpdateHandler 
-{ 
-    public static void updateInvoiceHeader(VendorInvoiceHeaderEntity _header, JArray _attributes, CapturedInvoiceType _invoiceType) 
-    { 
-    } 
-    public static void updateInvoiceLine(VendorInvoiceLineEntity _line, JArray _attributes, CapturedInvoiceType _invoiceType) 
-    { 
-    } 
-    public static void updateInvoiceJournalHeader(VendInvoiceJournalHeaderEntity _journalHeader, JArray _attributes) 
-    { 
-    } 
-    public static void updateInvoiceJournalLine(VendInvoiceJournalLineEntity _journalLine, JArray _attributes) 
-    { 
-    } 
-} 
 
+public class VendInvoiceCapInvDataUpdateHandler 
+
+{ 
+
+    public static void updateInvoiceHeader(VendorInvoiceHeaderEntity _header, JArray _attributes, CapturedInvoiceType _invoiceType) 
+
+    { 
+
+    } 
+
+  
+
+    public static void updateInvoiceLine(VendorInvoiceLineEntity _line, JArray _attributes, CapturedInvoiceType _invoiceType) 
+
+    { 
+
+    } 
+
+  
+
+    public static void updateInvoiceJournalHeader(VendInvoiceJournalHeaderEntity _journalHeader, JArray _attributes) 
+
+    { 
+
+    } 
+
+  
+
+    public static void updateInvoiceJournalLine(VendInvoiceJournalLineEntity _journalLine, JArray _attributes) 
+
+    { 
+
+    } 
+
+} 
 
 Customers need to use the chain of command to extend their own logic. Example code segments to extend functionality to update pending invoice lines are below: 
 
-using Newtonsoft.Json.Linq; 
+ using Newtonsoft.Json.Linq; 
+
 [ExtensionOf(classStr(VendInvoiceCapInvDataUpdateHandler))] 
+
 internal final class VendInvoiceCapInvPendingVendorInvoiceProcessor_Extension 
+
 { 
+
     public static void updateInvoiceLine(VendorInvoiceLineEntity _line, JArray _attributes, CapturedInvoiceType _invoiceType) 
+
     { 
+
         next updateInvoiceLine(_line, _attributes, _invoiceType); 
+
         Map dimensionMap = new Map(Types::String, Types::String); 
+
         System.Collections.IEnumerator iterator = _attributes.GetEnumerator(); 
+
         while (iterator.MoveNext()) 
+
         { 
+
             JObject attribute = iterator.Current; 
+
             str propName = attribute.GetValue('Key').ToString(); 
+
             switch (propName) 
+
             { 
+
                 case "vis_businessunit": 
+
                     dimensionMap.insert("BusinessUnit", attribute.GetValue('Value').ToString()); 
+
                     break; 
+
                 case "vis_costcenter": 
+
                     dimensionMap.insert("CostCenter", attribute.GetValue('Value').ToString()); 
+
                     break; 
+
                 case "vis_department": 
-                   dimensionMap.insert("Department", attribute.GetValue('Value').ToString()); 
+
+                    dimensionMap.insert("Department", attribute.GetValue('Value').ToString()); 
+
                     break; 
+
             } 
+
         } 
 
- // Below is the logic how to serialize the financial dimension set to a string 
-        str displayValue; 
+ Below is the logic how to serialize the financial dimension set to a string: 
+
+         str displayValue; 
+
         str dimensionSegmentDelimiter = DimensionParameters::getDimensionSegmentDelimiter(); 
+
         DefaultDimensionIntegrationStructureDisplay dimensionAttributesFormat = DimensionHierarchy::getDisplayStringDimensionIntegrationStructure(DimensionDataEntityStructureType::DataEntityDefaultDimensionFormat); 
+
         List dimensionNames = DimensionResolver::splitByDimensionIntegrationDelimiter(dimensionAttributesFormat); 
+
         ListEnumerator listEnum = dimensionNames.getEnumerator(); 
+
         while (listEnum.moveNext()) 
+
         { 
+
             str dimensionName = listEnum.current(); 
+
             str segmentValue; 
+
             if(dimensionMap.exists(dimensionName)) 
+
             { 
+
                 segmentValue = any2Str(dimensionMap.lookup(dimensionName)); 
+
             } 
+
             displayValue += ((displayValue == "")? segmentValue : (dimensionSegmentDelimiter + segmentValue)); 
+
         } 
+
         _line.DimensionDisplayValue = displayValue; 
+
         _line.update(); 
+
     } 
+
 } 
