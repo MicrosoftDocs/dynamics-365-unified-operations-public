@@ -26,18 +26,18 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: 
 
 ---
-# Table edit
+Table Edit
 
-This article describes how to use the table edit visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals/).
+# Introduction & Purpose
 
 ## Overview
 
-The Table Edit Visual is a powerful feature within D365 Finance business performance planning Power BI that enables direct dimension editing. This functionality offers a multitude of possibilities to modify and manage data directly within your financial planning Power BI reports. It enables:
+The Table Edit Visual is a powerful custom visual that enables direct dimension editing. This functionality offers a multitude of possibilities to modify and manage data directly within your financial planning Power BI reports. It enables:
 
 -   Creating New Scenarios and Versions - allows creation of new forecasting scenarios or versions (e.g., "Forecast," "Version 3").
 -   Updating Static Values - allows easy updates to fixed values like 401K match contributions (e.g., 5%).
 -   Managing Planning Process Status - enables updates to the status of different planning stages (e.g., "In Review," "Approved").
--   Modifying Drivers in Planning Solutions - Provides the ability to update drivers in driver-based planning solutions (e.g., "Units Sold").
+
 
 ## Benefits
 
@@ -47,26 +47,28 @@ The Table Edit Visual is a powerful feature within D365 Finance business perform
 
     -   **Streamlined Functionality**
 
-        Enables diverse functionalities within a single visual tool, facilitating tasks like managing approval statuses and manipulating static business drivers directly in Power BI.
+        Enables diverse functionalities within a single visual tool, facilitating tasks like creating new dimension values or updating existing dimension values.
 
 # Getting Started
 
 ## Prerequisites
 
-1.  Import business performance planning visuals from AppSource. Learn More.
-2.  Connect PowerBI to your Dataverse environment. Learn More.
-3.  Understanding Allocation. Learn More.
-4.  
+1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  Learn more about importing visuals [Importing visuals](https://learn.microsoft.com/en-us/power-bi/developer/visuals/import-visual)
+2.  Connect PowerBI to your Dataverse environment. [Connect to Dataverse using a Connector](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-use-directquery)
+
+
+[!Tip]  
+It is recommended to connect using **Direct Query**.  When using direct query, after the cube is selected, there is an option to **Load selected tables**.  Selecting this option will auto-select any dimension tables that are used in the cube.
 
 ## Installation Guide
 
-1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
-2.  Position the visual: Drag the Matrix Planning visual to the report canvas.
-3.  Add your **API Base URL** and optionally **Table name** to edit directly or leave it blank for dynamic selection within the Table Edit Visual, to the API Details window of the visual.
+1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the visual.
+2.  Ensure that the visual has been downloaded from AppSource.  See Pre-requisite step 1 above.  
+3.  Position the visual: Drag the visual to the report canvas.
+4.  Add your **API Base URL** to the API Details window of the visual. This will provide business performance planning app the details it needs to read and write data from the Cube. To add the API details, select the **Format visual** tab in the report canvas.  The API base URL will be the Environment URL where planning has been installed.  The environment URL must be preceded by https://.  For example:  https://environment.d365.com.  Learn more [Find your environment and organization ID and name](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name)  Note:The visual must be selected in the report canvas for the Format visual tab to display.
 
-## Compatibility
 
-Info on PBI versions where the visual is compatible.
+
 
 # Using the Visual
 
@@ -74,28 +76,28 @@ Info on PBI versions where the visual is compatible.
 
 **Editing Capabilities**
 
--   Provides an interface for direct editing of dimensions within Power BI.
-    -   Enables users to add, modify, or delete rows in selected dimensions.
+-   Provides an interface for direct editing of dimensions within Power BI. This enables users to add, modify, or delete rows in selected dimensions.
+ 
+  [!Important] Any user with the **Update dimension data privilege** can edit dimension values.  The out of the box roles of **Administrator, Power User** and **Contributor** have this privilege by default.
 
-**Scenario Creation and Management**
+**Scenario Creation and Management example**
 
 -   Facilitates the addition of new scenarios within the scenario dimension.
 
     To create additional scenarios within the scenario dimension:
 
-    -   Click on the ellipses icon at the top of the Table Edit Visual.
-        -   Select Add a row.
-        -   Input Forecast Upside and repeat to add Forecast Downside.
-        -   Click the ellipses icon again and choose Save changes
-        -   Allows users to create various scenarios for "what-if" analyses and exploration.
+    -   Click on the down arrow at the top of the Table Edit Visual and select a dimensions.
+        -   Select the **Scenario** dimension.
+        -   Select the **Plus sign** (+) at the top of the form to add a row. 
+        -   Input the **Name** of the new scenario.  For example, **Forecast Upside**.
+        -   Enter a **Description**.
+        -   Repeaat the same steps to add **Forecast Downside**.
+        -   Click **Save** icon to save changes.
+          
     -   Utilizing Created Scenarios
 
         The newly added scenarios (**Forecast Upside**, **Forecast Downside**) can be utilized for **what-if** **analyses** and exploration within D365 Finance business performance planning and Power BI. Examples include modeling sales forecasts based on various economic environments or creating different budget versions and approval statuses.
 
-**Workflow Enhancement**
-
--   Empowers teams to explore diverse scenarios and plan strategies efficiently within Power BI and BPP.
-    -   Facilitates the creation of different versions of forecasts, budgets, and approval statuses.
 
 ## Configuration Options
 
@@ -103,22 +105,21 @@ Info on PBI versions where the visual is compatible.
 Choose the table from the dropdown menu at the top of the Table Editor to initiate configuration.
 
 **Editing Modes:**  
-It has three editing modes—Grid, Row, and Form. These can be selected via the visual properties in the Toolbar actions.
+It has three editing modes—Grid, Row, and Form. To update this setting, select the visual properties icon.  Expand the **Toolbar actions** and update the **Edit Mode** selection.   
 
 -   **Grid Mode**
     -   Allows immediate editing of any record on a page.
         -   Save changes via the button at the top-right of the visual.
 -   **Row Mode**
-    -   Enables editing of a specific row with buttons for saving changes or deleting the record.
+    -   Enables editing of a specific row with buttons for saving changes or deleting the record.  When in the row mode, the new dimension value must be saved before a new dimension value can be added.
 -   **Form Mode**
-    -   Displays records vertically upon clicking the edit button, showing more attributes at once.
+    -   Upon selecting the **Edit** button, displays records vertically, showing more attributes at once.
 
 **Adding New Records**  
 Use the "plus" button in any editing mode to add new records.
 
 **Bulk Edit**  
-Select attributes, input values, and use bulk update to edit multiple records. Toggle this feature in the Power BI Format section of the visual.
-
+Select a column at the top of the visual.  Enter in a new or updated value.  Select Batch update.  All displayed rows will have the selected column values updated.   To update this setting, select the visual properties icon.  Expand the **Toolbar actions** and update the **Enable batch update** selection.   
 **Grouping**
 
 Right-click on column titles to group records with an expand/collapse option.
@@ -138,10 +139,8 @@ Automatically restrict entries in linked columns to available fields and apply d
     -   Enforces data types, allowing only specific entries (e.g., integers for "integer" type).
 
 **Column Filters / Search**  
-Filter rows using the inverse triangle icon on columns to select filter elements.
+Filter rows using the **inverse triangle** icon on columns to select filter elements.
 
-**Ext Editor / Notes**  
-Provides a Notes Column option for entering extensive formatted/unformatted text.
 
 **Changing Column Width**  
 Adjust column widths by dragging field separators. Save new widths using the **Save Settings** button.
@@ -149,9 +148,8 @@ Adjust column widths by dragging field separators. Save new widths using the **S
 **Visual Formatting / Toolbar**
 
 -   **Toolbar Actions:**  
-    Admins can specify available functions for users, such as batch update, filtering options, adding/editing/deleting records, and editing modes.
--   **Visual UI:**  
-    Configure formatting options (e.g., font, background details, column types) for the visual.
+    Admins can specify available functions for users, such as batch update, filtering options, adding/editing/deleting records, and editing modes.  To update any of these settings, select the visual properties icon and expand the **Visual UI** section.
+ 
 -   **Enable Lookup Cascade**
 
     Specify filtering behavior for users using linked columns of a dimension.
@@ -176,18 +174,4 @@ Adjust column widths by dragging field separators. Save new widths using the **S
 
     Display images instead of links and configure image size.
 
--   **Date Format**
 
-    Configure how dates are displayed in specific columns.
-
--   **Drill-Through**
-
-    Enable drill-through to another report page using Power BI dataset fields.
-
--   **Inbound Filters**
-
-    Set up inbound filters, supporting server-side and client-side filtering.
-
--   **Filter with Different Data Type**
-
-    Improved filter options for integer, date, and date/time data types within the Table Editor visual. Adjust settings accordingly for effective filtering based on data types.
