@@ -25,15 +25,6 @@ This article describes how to enable Copilot support for the **Confirmed purchas
 
 The **Confirmed purchase orders with changes** workspace is enabled by default starting in Supply Chain Management version 10.0.36. <!-- KFM: Confirm version --> The workspace can be used either with or without its AI-powered and Copilot functionality. If you'd like to enable its AI features, then make sure you have also enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps (preview)](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md).
 
-<!--KFM: Does the following also apply to Copilot for FnO in general? Maybe we should add it to that topic also/instead. -->
-
-> [!IMPORTANT]
-> Depending on the availability of Copilot and generative AI back-office services in your region, your Dataverse environment may also need to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot)
->
-> You don't need to set up support for cross-region calls if the required AI services are already available in your Dataverse environment.
->
-> To learn about the capabilities and limitations of AI-powered Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
-
 ## Troubleshoot the Copilot configuration
 
 The Copilot experience for the **Confirmed purchase orders with changes** workspace provides a troubleshooting feature that helps you identify missing configuration steps. If one or more of the configuration steps are missing, the Copilot summarization tiles will offer a troubleshooting link.

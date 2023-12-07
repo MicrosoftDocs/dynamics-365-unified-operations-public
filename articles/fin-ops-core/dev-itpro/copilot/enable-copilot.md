@@ -30,6 +30,13 @@ To enable Copilot capabilities in finance and operations apps, you must have the
 - You must be running version 10.0.38 or later of finance and operations apps. <!--KFM: Confirm minimum version. -->
 - You must have enabled the Power Platform integration in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable dual-write for this feature.)
 
+> [!IMPORTANT]
+> Depending on the availability of Copilot and generative AI back-office services in your region, your Dataverse environment may also need to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot)
+>
+> You don't need to set up support for cross-region calls if the required AI services are already available in your Dataverse environment.
+>
+> To learn about the capabilities and limitations of AI-powered Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
+
 ## <a name="enable-sql-key"></a>Step 1: Enable the Sql row version change tracking license key
 
 Follow these steps to check the status of the **Sql row version change tracking (Preview)** license key and enable it as required. If the key isn't enabled, you receive an error when you try to install the Copilot application in Power Platform admin center.
