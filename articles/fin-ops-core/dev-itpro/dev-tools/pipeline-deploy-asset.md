@@ -72,6 +72,9 @@ The following table describes the options that are available for this task.
 | Name for the update | Yes | Enter the name that is shown for the update in the environment history in Dynamics Lifecycle Services. |
 | Wait for Completion | Cleared (No) | Use this check box to instruct the task to wait until the deployment of the asset has either succeeded or failed. If it's cleared (**No**), the task will only start the deployment. If the task is instructed to wait, a pipeline time-out might occur during long-running deployments. For more information about time-out options, see [Timeouts](/azure/devops/pipelines/process/phases#timeouts). |
 
+> [!NOTE]
+> LCS File Asset ID can be obtained dynamically by using the output variable from the [Dynamics Lifecycle Services Asset Upload](pipeline-asset-upload.md) task. To get LCS File Asset ID please use FileAssetId. For example: $(<TASK NAME>.FileAssetId). For more information please read: [Use Output Variables From Tasks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#use-output-variables-from-tasks)
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
