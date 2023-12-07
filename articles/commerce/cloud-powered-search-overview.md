@@ -47,7 +47,7 @@ To configure cloud-powered search capabilities, follow these steps.
 
 1. Select **New** to add the **ProductSearch.UseAzureSearch** configuration parameter.
 1. Set the value of the **ProductSearch.UseAzureSearch** configuration parameter to **true**.
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedules**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run the **1110 (Global configuration)** job.
 
 ## Browse and search
