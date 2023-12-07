@@ -87,7 +87,7 @@ Some additional parameters must be configured directly in Microsoft Dynamics 365
 4. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 5. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 6. <a id="ExChannel"></a>In the **Integration channels** section add the record for the channel which will be used for electronic invoices submission in a batch mode.
-7. In the **Channel**, column enter enter the **EdiStatus** value. This channel name is used by default. You can use different channel name if needed. In this case you need to adjust **Customer invoice context model** configuration accordingly.
+7. In the **Channel**, column enter the **EdiStatus** value. This channel name is used by default. You can use different channel name if needed. In this case you need to accordingly adjust it in the **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value and in the related feature setup **Parameters** and **Applicability rules**.
 8. In the **Company column** column, select a required legal entity code.
 9. In the **Document context** column, refer to the **Customer invoice context model** configuration with **Data channel context** definition.
 10. In the **Channel type** column, select the **Export** value.
