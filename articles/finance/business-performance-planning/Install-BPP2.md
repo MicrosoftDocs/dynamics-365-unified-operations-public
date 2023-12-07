@@ -44,7 +44,7 @@ Before you can install business performance planning, the Power Platform environ
 In order to use the functionality in Dynamics 365 Finance business performance planning, a finance premium license must be purchased, and available on the tenant.
 
 >[!Important]
->If a finance license isn't purchased, business performance planning will not display in the Power Platform Admin Center as a Dynamics 365 app to install. To perform any planning operations, you will need a finance premium license.
+>To see business performance planning displayed in the Power Platform Admin Center as a Dynamics 365 app to install, a standard finance license must exist within the tenant. To perform any planning operations, you will need a finance premium license.
 
 To find out more about finance licensing, see [Finance pricing](https://dynamics.microsoft.com/finance/pricing/).
 
