@@ -56,15 +56,15 @@ The financial dimension fields are available on the invoice header in the side-b
 > When the feature **Integration of custom prebuilt model** is released, the value can be automatically captured from the document and assigned to the corresponding field.  
 
 
-During the invoice transfer, the default financial dimension fields from invoice capture are automatically mapped to the relevant fields in the invoice header in Dynamics 365 Finance. The financial dimension
-set are automatically serialized to accommodate the financial dimension setting within Dynamics 365 fields.  
+During the invoice transfer, the default financial dimension fields from invoice capture are automatically mapped to the relevant fields in the invoice header in Dynamics 365 Finance. The financial dimensions
+are automatically serialized to accommodate the financial dimension setting within Dynamics 365 fields.  
 
 When invoices are created using a **Vendor invoice**, the transferred financial dimension values can be viewed going to: **Pending vendor invoice** > **Invoice header** > **Financial dimensions**.  
 
-When invoices are created using the **Invoice journal**, the transferred financial dimension value can be viewed in the **Invoice journal detailed**. 
+When invoices are created using the **Invoice journal**, the transferred financial dimension values can be viewed in the **Invoice journal detailed**. 
 
 >[!Note]
->Starting in Dynamics 365 Finance version 10.0.39, standard financial dimension field mapping and serialization logic is available in Dynamics 365 Finance. Customers on an earlier version will have to implement their own logic in their own extension.  
+>Starting in Dynamics 365 Finance version 10.0.39, standard financial dimension field mapping and serialization logic is available in Dynamics 365 Finance. Customers on earlier versions will have to implement their own logic in their own extension.  
 
 ### Extension  
 
@@ -80,7 +80,7 @@ The definitions of financial dimension fields aren't different from the invoice 
 
 To import the financial dimensions into Dynamics 365 Finance, the financial dimensions have to be serialized to a string before importing into the corresponding vendor invoice entities.  
 
-In Dynamics 365 Finance version 10.0.39, serialization logic will be provided. 
+In Dynamics 365 Finance version 10.0.39, serialization logic is available. 
 
 ### Example
 
