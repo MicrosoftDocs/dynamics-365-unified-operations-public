@@ -31,19 +31,19 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about about using financial dimensions in invoice capture.
+This article provides information about using financial dimensions in invoice capture.
 
 ## Background 
 
 Financial dimensions play a crucial role in optimizing the invoice processing workflow for cost invoices. This ensures the invoices can be redirected to the appropriate individuals for approval within Dynamics
-365 Finance. Financial dimensions can be specified at either the invoice header or line level. When financial dimension values aren't provided in Invoice capture, defaulting logic will be used to transfer invoices from Invoice capture to Dynamics 365 Finance. 
+365 Finance. Financial dimensions can be specified at either the invoice header or line level. When financial dimension values aren't provided in Invoice capture, defaulting logic is used to transfer invoices from Invoice capture to Dynamics 365 Finance. 
  
 
-This article provides information about financial dimensions within Invoice capture. It provides guidance about extending the solution to support dynamic financial dimension settings that align with specific business requirements in the Dynamics 365 Finance. 
+This article provides information about financial dimensions within Invoice capture. It provides guidance about extending the solution to support financial dimensions that align with specific business requirements in the Dynamics 365 Finance. 
 
 ## Standard fields
 
-Invoice capture contains the following three financial dimension fields on the header to determine the right person for approval: 
+Invoice capture contains three financial dimension fields on the header that determines the right person for approval: 
  - Business unit
  - Department
  - Cost center 
@@ -53,7 +53,7 @@ To make these fields visible in the side-by-side viewer: **Select configuration 
 The financial dimension fields are available on the invoice header in the side-by-side viewer. During manual reviews, AP clerks can enter the financial dimension value from the lookup lists.  
 
 >[!Note]
-> When the feature **Integration of custom prebuilt model** is released, the value can be automatically captured from the document and assigned to the corresponding field.  
+> When the feature **Integration of custom prebuilt model** is released, values can be automatically captured from the document and assigned to the corresponding field.  
 
 
 During the invoice transfer, the default financial dimension fields from invoice capture are automatically mapped to the relevant fields in the invoice header in Dynamics 365 Finance. The financial dimensions
@@ -134,7 +134,7 @@ internal final class VendInvoiceCapInvPendingVendorInvoiceProcessor_Extension
             } 
         } 
 
-        // Below is the logic how to serialize the financial dimension set to a string 
+ // Below is the logic how to serialize the financial dimension set to a string 
         str displayValue; 
         str dimensionSegmentDelimiter = DimensionParameters::getDimensionSegmentDelimiter(); 
         DefaultDimensionIntegrationStructureDisplay dimensionAttributesFormat = DimensionHierarchy::getDisplayStringDimensionIntegrationStructure(DimensionDataEntityStructureType::DataEntityDefaultDimensionFormat); 
