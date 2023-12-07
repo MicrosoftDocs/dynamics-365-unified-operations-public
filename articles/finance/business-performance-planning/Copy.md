@@ -24,20 +24,20 @@ Copy visual empowers you to effortlessly transfer baseline data, including actua
 
 ## Prerequisites
 
-1.  Import business performance planning visuals from AppSource. Learn More.
-2.  Connect PowerBI to your Dataverse environment. Learn More.
-3.  Understanding Allocation. Learn More.
-4.  
+1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  Learn more about importing visuals [Importing visuals](https://learn.microsoft.com/en-us/power-bi/developer/visuals/import-visual).
+2.  Connect PowerBI to your Dataverse environment. [Connect to Dataverse using a Connector](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-use-directquery)
+
+[!Tip]  
+It is recommended to connect using **Direct Query**.  When using direct query, after the cube is selected, there is an option to **Load selected tables**.  Selecting this option will auto-select any dimension tables that are used in the cube.
 
 ## Installation Guide
 
-1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
-2.  Position the visual: Drag the Copy visual to the report canvas.
-3.  Add your **API Base URL** and **Cube name** to the API Details window of the visual. This will provide business performance planning app the details it needs to read and write data from the Cube.
+1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the visual.
+2.  Ensure that the visual has been downloaded from AppSource.  See Pre-requisite step 1 above.  
+3.  Position the visual: Drag the visual to the report canvas.
+4.  Add your **API Base URL** and **Cube name** to the API Details window of the visual. This will provide business performance planning app the details it needs to read and write data from the Cube. To add the API details, select the **Format visual** tab in the report canvas.  The API base URL will be the Environment URL where planning has been installed.  The environment URL must be preceded by https://.  For example:  https://environment.d365.com.  Learn more [Find your environment and organization ID and name](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name)  Note:The visual must be selected in the report canvas for the Format visual tab to display.
 
-## Compatibility
 
-Info on PBI versions where the visual is compatible.
 
 # Using the Visual
 
@@ -49,11 +49,13 @@ This custom visual enables copying data between different scenarios and models w
 
 Instead of creating forecasts from scratch, document assumptions about business evolution between quarters.
 
-## Configuration options
+## Configuration example
 
 -   **Defining Copy Criteria**
-    -   Click the "**+**" sign at the top-right corner of the Copy Wizard.
-    -   Configure fields for copy criteria, focusing on two dimensions: Fiscal Quarter and Scenario.
+    -   Select a Cube from the drop list at the top of the visual
+    -   Select the **Select** button
+    -   Click the "**+**" sign at the top-right corner of the visual
+    -   Configure fields for copy criteria, focusing on two dimensions.  For example:  Fiscal Quarter and Scenario.
 -   **Scenario Configuration**
 
     Specify the settings below
