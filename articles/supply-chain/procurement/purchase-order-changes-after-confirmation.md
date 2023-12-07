@@ -34,7 +34,7 @@ During procurement planning, any changes that are made to confirmed purchase ord
 
 ## Prerequisites
 
-The **Confirmed purchase orders with changes** workspace is enabled by default starting in Supply Chain Management version 10.0.36. <!-- KFM: Confirm version --> However, its AI-powered and Copilot functionality must be enabled Separately. If you'd also like to take advantage of the Copilot features, then see [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) for system requirements and details about how to set them up.
+The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled Separately. If you'd also like to take advantage of the Copilot features, then see [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) for system requirements and details about how to set them up.
 
 ## The Confirmed purchase orders with changes workspace
 

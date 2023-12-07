@@ -31,7 +31,7 @@ Please refer to the [Copilot international availability guide](https://dynamics.
 
 To enable Copilot capabilities in finance and operations apps, you must have the following prerequisites in place:
 
-- You must be running version 10.0.38 or later of finance and operations apps. <!--KFM: Confirm minimum version. -->
+- You must be running version 10.0.36 or later of finance and operations apps.
 - You must have enabled the Power Platform integration in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable dual-write for this feature.)
 
 > [!IMPORTANT]
