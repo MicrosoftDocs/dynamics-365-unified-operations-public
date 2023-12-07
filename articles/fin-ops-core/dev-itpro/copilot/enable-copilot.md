@@ -23,6 +23,10 @@ This article describes how to enable Copilot capabilities in finance and operati
 
 [!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
+## Country/region and language availability
+
+Please refer to the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/) for details about which countries/regions and languages the Copilot capability in Supply Chain Management will be come available.
+
 ## Prerequisites
 
 To enable Copilot capabilities in finance and operations apps, you must have the following prerequisites in place:
