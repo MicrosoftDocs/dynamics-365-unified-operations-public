@@ -212,9 +212,16 @@ Some additional parameters must be configured directly in Finance.
 9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 10. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same [import channel](#ImportChannel) name that you created earlier.
 11. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the **Customer invoice context model** configuration.
-12. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
-13. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (DK)** configuration.
-14. Select **Save**, and close the page.
+12. In the **Import sources** section, in the **Name** field, enter the same **ResponseXml** name that is used in the import feature setup's **Variable** for **Decoded file**.
+
+    ![Edicom import channel.](../media/isv_connector_responseXML.jpg)
+    
+14. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (DK)** configuration.
+
+    ![Edicom import channel.](../media/isv_connector_import_channel.jpg)
+
+15. Select **Save**, and close the page. 
+
 
 ### Configure Finance business data
 
