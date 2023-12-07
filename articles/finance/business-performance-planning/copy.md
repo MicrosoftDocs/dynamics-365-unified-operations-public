@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 ---
 # Copy visual
 
-This article describes how to use the copy visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals.md/).
+This article describes how to use the copy visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 Copy
 
 ## Overview
@@ -44,8 +44,8 @@ Copy visual empowers you to effortlessly transfer baseline data, including actua
 
 ## Prerequisites
 
-1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  To learn more about importing visuals, see [Importing visuals](../power-bi/developer/visuals.md/import-visual).
-2.  Connect PowerBI to your Dataverse environment. For more information, see [Connect to Dataverse using a connector](../../power-apps/maker/data-platform/data-platform-powerbi-connector.md?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](../../power-bi/connect-data/desktop-use-directquery.md).
+1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  To learn more about importing visuals, see [Importing visuals](/power-bi/developer/visuals.md/import-visual).
+2.  Connect PowerBI to your Dataverse environment. For more information, see [Connect to Dataverse using a connector](/power-apps/maker/data-platform/data-platform-powerbi-connector.md?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
 
 >[!Tip]
 >It's recommended to connect using **Direct Query**. When using direct query, after the cube is selected, there's a **Load selected tables** option. Select this option will auto-select any dimension tables that are used in the cube.
@@ -56,7 +56,7 @@ Copy visual empowers you to effortlessly transfer baseline data, including actua
 2.  Ensure that the visual has been downloaded from AppSource. See prerequisite step 1 above.  
 3.  Position the visual by dragging the visual to the report canvas.
 4.  Add your **API base URL** and **Cube name** to the API details window of the visual. This provides business performance planning the details to read and write data from the cube.
-5.  To add the API details, select the **Format visual** tab in the report canvas. The API base URL will be the environment URL where planning has been installed. The environment URL must be preceded by https://. For example:  https://environment.d365.com. For more information, see [Find your environment and organization ID and name](../../power-platform/admin/determine-org-id-name.md).
+5.  To add the API details, select the **Format visual** tab in the report canvas. The API base URL will be the environment URL where planning has been installed. The environment URL must be preceded by https://. For example:  https://environment.d365.com. For more information, see [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name).
 
 >[!Note]T
 >he visual must be selected in the report canvas for the format visual tab to display.
