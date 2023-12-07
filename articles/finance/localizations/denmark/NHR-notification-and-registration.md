@@ -50,10 +50,6 @@ After you complete the registration with the NemHandelsRegistret, and both Centr
 
 ## See also
 
-[Registration IDs](../../emea-registration-ids.md)  
-[EAN Location Number](../../EAN-number.md)
+[Registration IDs](https://review.learn.microsoft.com/en-us/dynamics365/finance/localizations/europe/emea-registration-ids?branch=pr-en-us-17322)  
+[EAN Location Number](https://review.learn.microsoft.com/en-us/dynamics365/finance/localizations/europe/ean-number?branch=pr-en-us-17322)
 
-[place  holder for Get started with electronic invoicng in Denmark - a new article](../../???????.md)  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
