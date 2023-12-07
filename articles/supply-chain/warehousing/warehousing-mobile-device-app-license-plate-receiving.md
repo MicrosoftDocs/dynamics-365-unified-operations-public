@@ -58,7 +58,7 @@ You can use the license plate receiving process without creating work. If you de
 
 > [!NOTE]
 > - You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
-> - The **Print label** option for Warehousing mobile device menu items won't print a license plate label without work creation.
+> - The **Print label** option for Warehousing mobile device menu items won't print a license plate label without work creation. You can though print a license plate label as part of the [deferred receiving process](#use-of-deferred-receiving).
 
 To make this functionality available on your system, you must turn on the *License plate receiving enhancements* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.
 
@@ -97,7 +97,7 @@ To manage the functionality when this feature is available, follow these steps.
     - **Allow reuse of non-tracked license plate** – The system works the same way that it works when the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature isn't available. This value is the default setting when you first activate the feature.
     - **Prevent reuse of non-tracked license plate** – Only on-hand updates that are related to a shipped license plate will be allowed at the destination warehouse until the transfer order has been received.
 
-## Use of deferred receiving processing
+## <a name="use-of-deferred-receiving"></a>Use of deferred receiving processing
 
 For businesses using the *License plate receiving* process to inbound receive thousands of lines related to the same license plate, the warehouse management mobile app receiving process must wait until all the lines and related work has been created as part of the registration process; unless using the [deferred receiving option](mixed-license-plate-receiving.md#deferred-receiving-processing) which will postpone the registration processes as part of a background process and thereby enable the the warehouse workers to immediately continue to do other work.
 

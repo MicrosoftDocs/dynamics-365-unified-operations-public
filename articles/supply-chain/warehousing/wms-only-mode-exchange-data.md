@@ -163,4 +163,9 @@ The external system will be informed about the available data via the `WHSSource
 
 For integrations that require very quick on-hand inventory synchronization processes, you can use the **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**. This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
 
+To keep the external systems updated about inventory transactions updates related the inbound and outbound shipment orders, make sure to enable the *Source systems* parameter *Enable warehouse inventory update logs* for both inbound and outbound shipment orders.
+
+> [!NOTE]
+> Make sure uptake the updates in the external systems in a way not resulting in double updates in combination with the data used as part of the [*Shipment receipts*](wms-only-mode-using.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-using.md#shipment-packing-slips) messages when have *Enable warehouse inventory update logs* activated.
+
 By default, the *Publish warehouse inventory update log updates* background process is set to run every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.
