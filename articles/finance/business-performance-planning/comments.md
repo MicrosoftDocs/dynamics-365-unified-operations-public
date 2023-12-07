@@ -1,6 +1,34 @@
-Comments
+---
+# required metadata
 
-# Introduction & Purpose
+title: Business performance planning application comments visual
+description: This article describes how to use the comments visual in the Business performance planning application.
+author: ShielaSogge
+ms.date: 12/03/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: 
+
+---
+# Comments visual
+
+This article describes how to use the comments visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 ## Overview
 
