@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 ---
 Table Edit
 
-# Introduction & Purpose
+# Table edit visual
 
 ## Overview
 
@@ -39,17 +39,6 @@ The Table Edit Visual is a powerful custom visual that enables direct dimension 
 -   Managing Planning Process Status - enables updates to the status of different planning stages (e.g., "In Review," "Approved").
 
 
-## Benefits
-
--   **Enhanced Planning Workflow**
-
-    Empowers users to establish a standardized and controlled workflow in the planning process, ensuring efficiency and consistency.
-
-    -   **Streamlined Functionality**
-
-        Enables diverse functionalities within a single visual tool, facilitating tasks like creating new dimension values or updating existing dimension values.
-
-# Getting Started
 
 ## Prerequisites
 
@@ -70,9 +59,9 @@ It is recommended to connect using **Direct Query**.  When using direct query, a
 
 
 
-# Using the Visual
 
-## Functionality
+
+## Using the visual
 
 **Editing Capabilities**
 
@@ -80,7 +69,9 @@ It is recommended to connect using **Direct Query**.  When using direct query, a
  
   [!Important] Any user with the **Update dimension data privilege** can edit dimension values.  The out of the box roles of **Administrator, Power User** and **Contributor** have this privilege by default.
 
-**Scenario Creation and Management example**
+
+
+**Example: Scenario creation**
 
 -   Facilitates the addition of new scenarios within the scenario dimension.
 
