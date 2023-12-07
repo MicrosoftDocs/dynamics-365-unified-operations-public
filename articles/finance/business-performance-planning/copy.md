@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 ---
 # Copy visual
 
-This article describes how to use the copy visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](../../power-bi/developer/visuals.md/).
+This article describes how to use the copy visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals.md/).
 Copy
 
 ## Overview
