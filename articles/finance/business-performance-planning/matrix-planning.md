@@ -26,7 +26,7 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version:
 
 ---
-# Business performance planning application matrix planning visual
+# Matrix planning visual
 This article describes how to use the matrix planning visual in the Business performance planning application
 
 ## Overview
@@ -45,7 +45,7 @@ The Matrix Planning visual is a custom Power BI visual built to transform the pl
 
 ## Prerequisites
 
-1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  Learn more about importing visuals [Importing visuals] (https://learn.microsoft.com/en-us/power-bi/developer/visuals/import-visual)
+1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  Learn more about importing visuals [Importing visuals](/power-bi/developer/visuals/import-visual)
 2.  Connect PowerBI to your Dataverse environment. [Connect to Dataverse using a Connector](/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery)
 3.  Understanding Data Model and Cube: The Matrix Planning visual writes back to the data model defined in the business performance planning app when creating the cube. This cube consolidates all dimensions at their intersections. To enable writing back to this data model, it's crucial to provide the primary keys of each dimension to the Matrix Planning visual during configuration.
 4.  Understanding Allocation. **This needs to link to the Allocation topic**
