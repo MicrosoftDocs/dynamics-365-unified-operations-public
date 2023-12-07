@@ -66,8 +66,10 @@ Examples include:
 
 ### Configuration options
 
- - Select tables - Choose the table from the dropdown menu at the top of the Table Editor to initiate configuration.
- - Editing modes - To update the editing setting, select the visual properties icon. Expand the **Toolbar actions**, update **Edit mode**.   
+To initiate configuration choose the table from the drop down menu at the top of the table edit visual.
+
+
+ - **Editing modes** - To update the editing setting, select the visual properties icon. Expand the **Toolbar actions**, update **Edit mode**.   
 There are three editing modes:    
  - **Grid** - Allows immediate editing of any record on a page. You can save changes using the button at the top-right of the visual.
  - **Row** - Enables editing of a specific row with buttons for saving changes or deleting the record. When in **Row** mode, the new dimension value must be saved before a new dimension value can be added.
