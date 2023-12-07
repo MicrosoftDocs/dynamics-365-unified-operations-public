@@ -30,7 +30,6 @@ Table Edit
 
 # Table edit visual
 
-## Overview
 
 The Table Edit Visual is a powerful custom visual that enables direct dimension editing. This functionality offers a multitude of possibilities to modify and manage data directly within your financial planning Power BI reports. It enables:
 
@@ -38,7 +37,7 @@ The Table Edit Visual is a powerful custom visual that enables direct dimension 
 -   Updating Static Values - allows easy updates to fixed values like 401K match contributions (e.g., 5%).
 -   Managing Planning Process Status - enables updates to the status of different planning stages (e.g., "In Review," "Approved").
 
-
+You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 ## Using the visual
 
