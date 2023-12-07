@@ -77,10 +77,7 @@ order. To accommodate the flexible settings of financial dimensions, two extensi
 The definitions of financial dimension fields aren't different from the invoice header or line within the Invoice capture. 
 
 ### Financial dimension serialization 
-
-To import the financial dimensions into Dynamics 365 Finance, the financial dimensions have to be serialized to a string before importing into the corresponding vendor invoice entities.  
-
-In Dynamics 365 Finance version 10.0.39, serialization logic is available. 
+Before importing the financial dimensions into the corresponding vendor invoice entities, the financial dimensions have to be serialized. In Dynamics 365 Finance version 10.0.39, serialization logic is available. 
 
 ### Example
 
