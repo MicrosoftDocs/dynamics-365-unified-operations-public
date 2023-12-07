@@ -1,4 +1,34 @@
-Reporting
+---
+# required metadata
+
+title: Business performance planning application reporting visual
+description: This article describes how to use the reporting visual in the Business performance planning application.
+author: ShielaSogge
+ms.date: 12/07/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: 
+
+---
+# Reporting visual
+
+This article describes how to use the reporting visual in the Business performance planning application.. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).Reporting
 
 # Introduction & Purpose
 
@@ -24,26 +54,16 @@ Reporting
 
     Gain deeper insights into financial data through variance views included within the reports, aiding in comprehensive financial analysis and decision-making.
 
-# Getting Started
+## Prerequisites and installation
 
-## Prerequisites
+For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
 
-1.  Import business performance planning visuals from AppSource. Learn More.
-2.  Connect PowerBI to your Dataverse environment. Learn More.
-3.  Understanding Allocation. Learn More.
-4.  
-
-## Installation Guide
-
-1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
-2.  Position the visual: Drag the Reporting visual to the report canvas.
-3.  Add your **API Base URL** to the API Details window of the visual.
 
 ## Compatibility
 
 Info on PBI versions where the visual is compatible.
 
-# Using the Visual
+## Using the Visual
 
 ## Functionality
 
