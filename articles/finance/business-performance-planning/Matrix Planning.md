@@ -4,7 +4,7 @@ Matrix Planning
 
 ## Overview
 
-The Matrix Planning visual is a purpose-built custom Power BI visual to transform the planning experience, offering a seamless and powerful approach to planning processes such as managing forecasts and budgets. Unlike traditional methods involving data downloads, manual Excel-based budgeting, and intricate data consolidation, it streamlines these operations within your Power BI dashboard.
+The Matrix Planning visual is a custom Power BI visual built to transform the planning experience, offering a seamless and powerful approach to planning processes such as managing forecasts and budgets. Unlike traditional methods involving data downloads, manual Excel-based budgeting, and intricate data consolidation, it streamlines these operations within your Power BI dashboard.
 
 ## Benefits
 
@@ -20,24 +20,25 @@ The Matrix Planning visual is a purpose-built custom Power BI visual to transfor
 
 ## Prerequisites
 
-1.  Import business performance planning visuals from AppSource. Learn More.
-2.  Connect PowerBI to your Dataverse environment. Learn More.
-3.  Understanding Data Model and Cube: The Matrix Planning visual writes back to the data model defined in the business performance planning Model app when creating the cube. This cube consolidates all dimensions at their intersections. To enable writing back to this data model, it's crucial to provide the primary keys of each dimension to the Matrix Planning visual during configuration.
-4.  Understanding Allocation. Learn More.
-5.  
+1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  Learn more about importing visuals [Importing visuals] (https://learn.microsoft.com/en-us/power-bi/developer/visuals/import-visual)
+2.  Connect PowerBI to your Dataverse environment. [Connect to Dataverse using a Connector](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-use-directquery)
+3.  Understanding Data Model and Cube: The Matrix Planning visual writes back to the data model defined in the business performance planning app when creating the cube. This cube consolidates all dimensions at their intersections. To enable writing back to this data model, it's crucial to provide the primary keys of each dimension to the Matrix Planning visual during configuration.
+4.  Understanding Allocation. **This needs to link to the Allocation topic**
+  
 
 ## Installation Guide
 
 1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
-2.  Position the visual: Drag the Matrix Planning visual to the report canvas.
-3.  Add your **API Base URL** and **Cube name** to the API Details window of the visual. This will provide business performance planning app the details it needs to read and write data from the Cube.
-4.  Access Visualization Pane: Select the visual, locate the Visualization pane for the visual. Add all the "Name" columns from each dimension to the Rows, Columns, or Filters fields in the Visualization pane. These columns will provide the structure (X and Y axis) for your matrix.
-5.  Structuring the Matrix: Arrange the fields in the rows and columns of the matrix to define its visual structure. Fields placed in rows and columns define the matrix's axes. Any fields not utilized in these sections are used as filter context and should be added to the Filters field in the Visualization pane.
-6.  Defining Matrix Shape: Determine the shape of the matrix table by placing values in the rows and columns. For dimensions intended solely as filter context (not part of the X or Y axis), add these to the Filters parameter in the Visualization pane.
-7.  Setting Write-Back Coordinates: Providing these dimensions and variables allows the Matrix Planning visual to establish the "write-back coordinates" necessary for building planning and budgeting models effectively.
-8.  Assigning Values Variable: Lastly, take the "Amount" column from your Cube and assign it to the Values variable in the Visualization pane. This step ensures the inclusion of specific data values within the Matrix Planning visual.
-9.  Verify Configuration: Double-check the configuration setup in the Visualization pane to ensure all necessary fields, dimensions, and variables are correctly assigned and placed within the Rows, Columns, Filters, and Values sections.
-10. Save and Apply Changes: Save the changes made to the configuration. Apply the settings to activate the Matrix Planning visual within your Power BI dashboard or report.
+2.  Ensure that the Matrix visual has been downloaded from AppSource.  See Pre-requisite step 1 above.  
+3.  Position the visual: Drag the Matrix Planning visual to the report canvas.
+4.  Add your **API Base URL** and **Cube name** to the API Details window of the visual. This will provide business performance planning app the details it needs to read and write data from the Cube. To add the API details, select the **Format visual** tab in the report canvas.  The API base URL will be the Environment URL where planning has been installed.  The environment URL must be preceded by https://.  For example:  https://environment.d365.com.  Learn more [Find your environment and organization ID and name](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name)  Note:The visual must be selected in the report canvas for the Format visual tab to display.
+5.  Access Visualization Pane: Select the visual, locate the Visualization pane for the visual. Add all the "Name" columns from each dimension to the Rows, Columns, or Filters fields in the Visualization pane. These columns will provide the structure (X and Y axis) for your matrix. 
+6.  Structuring the Matrix: Arrange the fields in the rows and columns of the matrix to define its visual structure. Fields placed in rows and columns define the matrix's axis. Any fields not utilized in these sections are used as filter context and should be added to the Filters field in the Visualization pane.
+7.  Defining Matrix Shape: Determine the shape of the matrix table by placing values in the rows and columns. For dimensions intended solely as filter context (not part of the X or Y axis), add these to the Filters parameter in the Visualization pane.
+8.  Setting Write-Back Coordinates: Providing these dimensions and variables allows the Matrix Planning visual to establish the "write-back coordinates" necessary for building planning and budgeting models effectively.
+9.  Assigning Values Variable: Lastly, take the "Amount" column from your Cube and assign it to the Values variable in the Visualization pane. This step ensures the inclusion of specific data values within the Matrix Planning visual.
+10.  Verify Configuration: Double-check the configuration setup in the Visualization pane to ensure all necessary fields, dimensions, and variables are correctly assigned and placed within the Rows, Columns, Filters, and Values sections.
+11. Save and Apply Changes: Save the changes made to the configuration. Apply the settings to activate the Matrix Planning visual within your Power BI dashboard or report.
 
 Note: Add All Dimensions to the Visual
 
@@ -53,19 +54,20 @@ Info on PBI versions where the visual is compatible.
 
 ### Entering Data
 
-To enable data entry, click the "Edit" button on the top left. Once the edit mode is active (indicated by the green color of the edit button), you can simply type in the field or use the right-click context menu.
+To enable data entry, click the "Edit" button on the top left. Once the edit mode is active (indicated by the green color of the edit button), you can simply type in the field or use the right-click context menu.  There is also a help menu in the upper right corner of the visual that supplies keyboard shortcuts for entering data.  This can be found under the '?' icon.
 
 ### Entering data on Aggregation cells
 
-To enter data on an aggregation cell in the matrix planning visual, set the **Allocation** attribute in the visual properties in the **Grid UI** section to **TRUE**.
+To enter data on an aggregation cell in the matrix planning visual, set the **Splashing at Parent** attribute in the visual properties in the **Grid UI** section to **On**.  (Navigate to Visual properties, expand the Grid UI section, and set 'Splashing at Parent Level' to On)
 
 #### Prerequisite for entering/editing data on aggregations
 
 -   The relevant hierarchy should be collapsed, and the children should not be visible
 
-There are multiple Allocation Options available. Learn More.
+There are multiple Allocation Options available. Learn More.  **This needs a link to the allocations doc**
 
-Note: A value entered on a base level (i.e., dimension coordinates that DO NOT contain aggregations) will only be saved if you press the "Save" button. Values entered on aggregations are immediately saved.
+[!Important] 
+A value entered on a base level (i.e., dimension coordinates that DO NOT contain aggregations) will only be saved if you press the "Save" button. Values entered on aggregations are immediately saved.
 
 Changes from base-level entries are immediately visible in the Matrix. To see results of Allocation or effects on other elements of the report you have to refresh the report page with the standard Power BI function or press the "Refresh" Button in the Matrix visual when using the Power BI Service.
 
@@ -87,7 +89,7 @@ You can directly enter comments by right-clicking on a base-level cell. Hovering
 
 ### Grid Properties
 
-In the Format pane in Power BI, set various design parameters like font size, colors, and layout. Other features available are:
+In the Format pane in Power BI, set various design parameters like font size, colors, and layout.
 
 #### Showing comment markers
 
