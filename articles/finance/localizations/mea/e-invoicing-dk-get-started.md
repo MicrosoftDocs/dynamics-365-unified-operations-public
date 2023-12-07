@@ -65,9 +65,9 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
    - Project invoice OIOUBL
    - Project credit note OIOUBL
    - Sales invoice PEPPOL
-   - Peppol Sales credit note PEPPOL
-   - Peppol Project invoice PEPPOL
-   - Peppol Project credit PEPPOL
+   - Sales credit note PEPPOL
+   - Project invoice PEPPOL
+   - Project credit PEPPOL
 
 13. On the **Setups** tab, in the grid, select the **Get status** feature setup, and then select **Edit**.
 14. In the **Export channel** tab, in the **Parameters** section, select the **Auth token**, and then select the name of the secret that you created for the token.
