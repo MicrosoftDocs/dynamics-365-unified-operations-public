@@ -100,4 +100,4 @@ You can choose a level of logging detail for the request by adding the optional 
 
 ## See also
 
-- [Responsible AI FAQ for Inquire into inventory with Copilot](../faq-inventory-query.md)
+- [Responsible AI FAQ for Inquire into inventory with Copilot (preview)](../faq-inventory-query.md)
