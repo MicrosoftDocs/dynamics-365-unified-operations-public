@@ -60,7 +60,7 @@ Note:  Because the reporting visual does not write data back Dataverse, the visu
 
 
 
-### Using the Visual
+### Using the reporting visual
 This visual enables the adding of subtotals and custom calcuations within the financial report.  By utilizing enhanced formatting options, you can create a professional and refined presentation of financial data.  You can als include variance views withn the reports, allowing for a deeper understanding an analysis of financial data.
 
 ### Initial setup
