@@ -90,7 +90,7 @@ public class VendInvoiceCapInvDataUpdateHandler
 
 { 
 
-    public static void updateInvoiceHeader(VendorInvoiceHeaderEntity _header, JArray _attributes, CapturedInvoiceType _invoiceType) 
+```    public static void updateInvoiceHeader(VendorInvoiceHeaderEntity _header, JArray _attributes, CapturedInvoiceType _invoiceType) 
 
     { 
 
@@ -132,7 +132,7 @@ internal final class VendInvoiceCapInvPendingVendorInvoiceProcessor_Extension
 
 { 
 
-    public static void updateInvoiceLine(VendorInvoiceLineEntity _line, JArray _attributes, CapturedInvoiceType _invoiceType) 
+```    public static void updateInvoiceLine(VendorInvoiceLineEntity _line, JArray _attributes, CapturedInvoiceType _invoiceType) 
 
     { 
 
@@ -178,7 +178,7 @@ internal final class VendInvoiceCapInvPendingVendorInvoiceProcessor_Extension
 
  Below is the logic how to serialize the financial dimension set to a string: 
 
-         str displayValue; 
+```     str displayValue; 
 
         str dimensionSegmentDelimiter = DimensionParameters::getDimensionSegmentDelimiter(); 
 
