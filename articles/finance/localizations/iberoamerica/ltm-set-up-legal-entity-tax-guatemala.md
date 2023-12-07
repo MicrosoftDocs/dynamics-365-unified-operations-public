@@ -2,7 +2,7 @@
 title: Set up a legal entity and tax information for Guatemala
 description: This article explains how to set up a legal entity and tax information for a company in Guatemala.
 author: Cpicon85
-ms.date: 12/06/2023
+ms.date: 12/07/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-cpicon
@@ -11,9 +11,11 @@ ms.custom: bap-template
 
 # Set up a legal entity and tax information for Guatemala
 
+[!include [banner](../../includes/banner.md)]
+
 This article explains how to set up a legal entity and tax information for a company that's located in Guatemala and is using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 
-Before you begin, open the **Feature management** workspace, and verify that the **LATAM globalization expansion – Guatemala** feature is enabled. If it isn't enabled, enable it. After you're sure that the feature is enabled, complete the following procedures.
+Before you begin, open the **Feature management** workspace, and verify that the **LATAM globalization expansion – Guatemala** feature is enabled. If it isn't enabled, search for it in the list, and enable it. After you're sure that the feature is enabled, complete the following procedures.
 
 ## Create a legal entity
 
