@@ -27,27 +27,27 @@ ms.dyn365.ops.version:
 
 ---
 
-# Invoice capture solution
+# Invoice capture customer fields
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about using custom fields in the Invoice capture solution.
+This article provides information about using custom fields in Invoice capture.
 
 ## Overview  
 
-Invoice capture introduced the standard fields on the header and lines to address processing invoices. However, due to the complexity of the business, customers often have additional fields that need to be 
-supported to meet their own business requirements. By introducing the feature "Support custom fields in Invoice capture", customers can tailor the solution on the top of Invoice capture by adding additional 
-field with different properties. The value of these fields can be either automatically extracted from the original document or manually entered by the reviewer. 
+Invoice capture introduced standard fields on the header and lines to address processing invoices. Customers often have additional fields that need to be supported to meet business requirements. The **Support custom fields in Invoice capture** feature can create additional fields with different properties. The value of these fields can be either automatically extracted from the original document or manually entered by the reviewer. 
 
 ### Custom fields properties 
 
 Invoice capture has two scopes of the invoice fields: Header and Line.  
-Invoice capture has three field groups: **General**, **Tax**, **Charges**. 
-**Tax** and **Charges** are used to increase the number of lines in **Tax** and **Charges** panels. **Tax** and **Charges** on the line level are not supported.  
+Invoice capture has three field groups: **General**, **Tax**, **Charges**. **Tax** and **Charges** are used to increase the number of lines in **Tax** and **Charges** panels. **Tax** and **Charges** on the line level aren't supported.  
 
 ### Data types  
 
-Invoice capture support three data types for custom fields: single line of text, date and time (date only), and currency. 
+Invoice capture support three data types for custom fields: 
+ - Single line of text
+ - Date and time (date only)
+ - Currency 
 
 ### Implementation  
 
@@ -75,7 +75,7 @@ c. In the side-by-side viewer, the added fields will be displayed to enter value
 
 The value of custom fields must be mapped to the corresponding fields in Dynamics 365 Finance using a custom extension.  
 
-Considering an example scenario, in invoice capture, there is a field with logical name “cus_udfdate”. This field will be mapped to the CashDiscountDate field in the invoice header of Dynamics 365 Finance. 
+Considering the following example. In invoice capture, there is a field with logical name “cus_udfdate”. This field will be mapped to the CashDiscountDate field in the invoice header of Dynamics 365 Finance. 
 Below is the sample code: 
 
 using Newtonsoft.Json.Linq; 
