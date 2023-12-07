@@ -1,6 +1,34 @@
-Variance
+---
+# required metadata
 
-# Introduction & Purpose
+title: Business performance planning application variance visual
+description: This article describes how to use the variance visual in the Business performance planning application.
+author: ShielaSogge
+ms.date: 12/07/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: 
+
+---
+# Variance visual
+
+This article describes how to use the variance visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 ## Overview
 
@@ -18,28 +46,14 @@ It aims to bridge the gap between budgeted and actual values, facilitating root 
 
     Enables users to understand discrepancies, fostering informed adjustments for improved future planning cycles**.**
 
-# Getting Started
-
-## Prerequisites
-
-1.  Import business performance planning visuals from AppSource. Learn More.
-2.  Connect PowerBI to your Dataverse environment. Learn More.
-3.  Understanding Allocation. Learn More.
-4.  
-
-## Installation Guide
-
-1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
-2.  Position the visual: Drag the visual to the report canvas.
-3.  Add your **API Base URL** and **Cube Name** to the API Details window of the visual.
-4.  Define dimensions by providing Name columns in Category, Small Multiple, and Filters sections.
-5.  Specify Value and Comparison columns to generate and visualize variances effectively.
+## Prerequisites and installation
+For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
 
 ## Compatibility
 
 Info on PBI versions where the visual is compatible.
 
-# Using the Visual
+## Using the Visual
 
 Utilize the Variance Visual to efficiently sort and visualize variances between budgeted and actual values, offering an intuitive and valuable tool within the reporting cycle.
 
