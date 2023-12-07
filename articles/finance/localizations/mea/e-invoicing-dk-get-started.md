@@ -1,8 +1,8 @@
 ---
-title: Electronic invoicing for Denmark
-description: This article provides information that will help you get started with Electronic invoicing for Denmark in Microsoft Dynamics 365 Finance.
+title: Get started with Electronic invoicing for Denmark
+description: This article explains how to get started with Electronic invoicing for Denmark in Microsoft Dynamics 365 Finance.
 author: ikondratenko
-ms.date: 11/15/2023
+ms.date: 12/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,45 +21,38 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Denmark and configure the system to enable generation, submission and reception of electronic invoices in Danish-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. 
-
-The article guides you through the configuration steps that are general and country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance.
+This article provides information that will help you get started with Electronic invoicing for Denmark. This includes configuring the system so you can generate, submit, and receive electronic invoices in Danish-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. The steps in this article are general and country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance. 
 
 ## Prerequisites
 
-Before you begin the procedures in this article, complete the following prerequisites:
+Before you begin the procedures in this article, the following prerequisites must be met:
 
 - The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
-  > [!IMPORTANT]
 - The company must have a signed agreement with the electronic documents delivery service provider which secures electronic document interchange in OIOUBL and PEPPOL formats.
-- Among registered ProfileIDs, the company should have the following profiles used by Microsoft Dynamics 365 Finance for electronic documents interchange.
-  - **Procurement-BilSim-1.0** - to interchange documents in OIOUBL format
-  - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** - to interchange documents in PEPPOL format
-- The company must obtain from the service provider the required credentials to enable integration of the electronic invoicing service with the [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
+- Among registered ProfileIDs, the company should have the following profiles used by Finance for electronic documents interchange:
+  - **Procurement-BilSim-1.0** - To interchange documents in OIOUBL format.
+  - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** - To interchange documents in PEPPOL format.
+- The company must obtain from the service provider, the required credentials to enable integration of the electronic invoicing service with the [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md).
+- Become familiar with Electronic invoicing as described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
     - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
     - [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md)  
-- Activate the integration between your Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
-- Create the secret in the Azure Key Vault for the **Token** which grants the authorization to access the infrastructure of the provider of electronic documents delivery service, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
-
+- Activate the integration between Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
+- Create the secret in the Azure Key Vault for the **Token** that grants the authorization to access the infrastructure of the provider of electronic documents delivery service, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
 
 ## Country-specific configuration for the Danish electronic invoice (DK) feature
 
-Some of the parameters from the **Danish electronic invoice (DK)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
+Some of the parameters from the **Danish electronic invoice (DK)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required to better reflect your business operations.
 
-1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature **version 4** or later as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
-3. On the **Versions** tab, verify that the **Draft** version is selected.
+1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature **version 4** or later. To learn more, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more details, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+3. On the **Versions** tab, verify that **Draft** is selected.
 4. On the **Setups** tab, in the grid, select the **Sales invoice OIOUBL** feature setup, and then select **Edit**.
-5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Integrate with Edicom** action.
+5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
 6. In the **Parameters** section, select **Domain**, and then enter the obtaind **Service ID** number.
 7. Select **Application**, and then enter the same **Service ID** number.
-8. Select **Destination**, and then enter the **Service ID** number concatenated with the **_EDIWIN** value.
-   > [!NOTE]
-   > For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*.
-   
+8. Select **Destination**, and then enter the **Service ID** number concatenated with the **_EDIWIN** value. For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*.
 9. Select **Group**, and then enter the obtaind **Group** code.
 10. Select **Auth token**, and then select the name of the secret that you created for the token.
 11. Select **Save**, and close the page.
@@ -79,7 +72,7 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 16. Select **Application**, and then enter the same **Service ID** number.
 17. Select **Group**, and then enter the obtaind **Group** code.
 18. Select **Data channel**, and then enter the name of [integration channel](#ExChannel) configured in **Electronic document parameters** in Finance.
-19.  Select **Save**, and close the page.
+19. Select **Save**, and close the page.
 
 ## Finance configuration
 
@@ -103,44 +96,46 @@ Please do the configuration steps described in the [Customer electronic invoices
 
 ### Seller identification
 
-A company which submints electronic invoices can be idendified eithr by its CVR number or by its [Global Location Number (GLN)](https://en.gs1.dk/services/gln).
-To use identification by the CVR number please complete the following configuration steps.
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. On the **Bank account information** FastTab, in **Codes** section, **Routing number** field, make sure that a valid Legal Entity CVR number is defined here.
-3. The CVR number will be populated to **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Seller's identification during the submission process.
+Companies that submit electronic invoices can be idendified by their CVR number or their [Global Location Number (GLN)](https://en.gs1.dk/services/gln). 
 
-To use identification by the GLN (EAN) number please complete the following configuration steps.
+To identify a company by their CVR number, complete the following steps.
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. On the **Bank account information** FastTab, in **Codes** section, **Routing number** field, make sure that a valid Legal Entity CVR number is entered.
+3. The CVR number will be populated to the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used as the seller's identification during the submission process.
+
+To identify a company by the GLN (EAN) number, complete the following configuration steps.
+
 1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
-2. Define a new registration type for Denmark with the **EAN** name, exactly as writteh here.
+2. Define a new registration type for Denmark with the **EAN** name, exactly as written here.
 3. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select the **Registration IDs** from the top menu.
-4. On the **Registration ID** FastTab, add a resitratoin ID of **EAN** registration type created on step 2.
-5. In the **Registration number** field enter a valid GLN number.
-6. The GLN number will be populated to **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Seller's identification during the submission process.
+4. On the **Registration ID** FastTab, add the **EAN** registration type ID that you previously created.
+5. In the **Registration number** field, enter a valid GLN number.
+6. The GLN number is populated to the element, **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** in the generated electronic invoice XML file and used for the Seller's identification during the submission process.
    
     > [!NOTE]
-    > The GLN number has higher priority than CVR number. If both numbers are configured simultaneously then the GLN number will be used.
-
+    > The GLN number has higher priority than the CVR number. If both numbers are configured simultaneously, the GLN number is used.
 
 ### Buyer identification
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**,  and select a customer.
-2. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure a valid customer's GLN number is defined here.
-3. The GLN number will be populated to **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Buyer's identification during the submission process.
+2. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure a valid customer's GLN number is entered.
+3. The GLN number is populated to the element, **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** in the generated electronic invoice XML file and used for the Buyer's identification during the submission process.
 
     > [!NOTE]
-    > If the GLN number is not defined then the customer's Tax exempt number will be used.
+    > If the GLN number isn't defined, the customer's Tax exempt number is used.
 
 ### Configure output format type
 
-By default all outgoing electronic invoices will be generated in **OIOUBL** format for all customers. User can configure generation of electronic invoices in **PEPPOL** format for specific customers using configurable electronic document property types.
+By default, all outgoing electronic invoices are generated in **OIOUBL** format for all customers. You can configure electronic invoices to generate in **PEPPOL** format for specific customers using configurable electronic document property types.
+
 > [!NOTE]
-> Perform the configuration steps described in this chapter only if you additionally need to generate electronic invoices in **PEPPOL** format. Skip these configuration steps if only generation in **OIOUBL** format is required.
+> Complete the following configuration steps only if you also need to generate electronic invoices in **PEPPOL** format. If you only need to generate in **OIOUBL** format, you can skip these steps.
 
 #### Configure electronic document properties
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
-2. Select **New** to add a property type.
-2. In the **Type** field, enter the **FormatType** value exactly as specified here.
+2. Select **New**, and in the **Type** field, enter the **FormatType** value exactly as specified.
 3. Select **Applicability** to add an applicable table.
 4. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Customers** table name.
 5. Save your changes, and return to the **Electronic document property types** page.
@@ -153,33 +148,33 @@ Follow these steps to enter the type of format for specific customers.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
-3. In the **Value** column, enter the **PEPPOL** value exactly as specified here.
+3. In the **Value** column, enter the **PEPPOL** value exactly as specified.
     > [!NOTE]
-    > Only if the **PEPPOL** value is entered, the system will generate electronic invoices in the PEPPOL format. All other values or missing values will lead to generation of electronic invoices in the default OIOUBL format.
+    > The system generates electronic invoices in the PEPPOL format only if the **PEPPOL** value is entered. All other values or missing values lead generating electronic invoices in the default OIOUBL format.
     
     ![Value entered on the Electronic document properties page.](../media/emea_dk_format_type.jpg)
 
 
 ## Issue electronic invoices
 
-When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**). 
+When you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by navigating to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**). 
 For more information about how to generate electronic invoices, see [Submit electronic documents to Electronic invoicing](../global/e-invoicing-submit-electronic-documents.md).
 
 > [!NOTE]
 > For Danish electronic invoices submission, additional steps must be completed in addition to the standard submission procedure that was described earlier.
 
-In current implementation, the standard submission procedure just generates electronic invoices and stores them on the service side. It doesn't actually submit them. To submit the generated electronic invoices in a batch mode, follow these steps.
+In current implementations, the standard submission procedure only generates electronic invoices and stores them on the service side. The invoices aren't submitted. To submit the generated electronic invoices in a batch mode, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-2. In the **Channel** field, select the export channel that you [previously created](#ExChannel). Then select **OK**.
+2. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**.
 
-You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**). 
+You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**). 
 For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 
 ## Receive incoming electronic invoices
 
-To enable import of incoming invoices in OIOUBL format, complete the following additional configuration steps for the same version of the **Danish electronic invoice (DK)** electronic invoicing feature that's used for outgoing invoice submission.
+To import incoming invoices in OIOUBL format, complete the following additional configuration steps for the same version of the **Danish electronic invoice (DK)** electronic invoicing feature that's used for outgoing invoice submission.
 
 1. In RCS, on the **Globalization features** tile, on the **Electronic invoicing** tile, select the required version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 2. On the **Setups** tab, in the grid, select **Incoming OIOUBL**, and then select **Edit**.
@@ -187,9 +182,9 @@ To enable import of incoming invoices in OIOUBL format, complete the following a
 4. Select the **Service ID** parameter, and then select the name of the secret that contains the Service identifier.
 5. Select the **Group** parameter, and then select the name of the secret that contains the Group identifier.
 6. Select the **Token** parameter, and then select the name of the secret created for the token.
-7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you previously defined in step 3.
-9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
-10. Select **Save**, and close the page.
+7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you previously defined.
+9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you'll use it in later configuration steps.
+10. Select **Save** and close the page.
 11. Complete and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 
 ### Finance configuration
@@ -201,22 +196,21 @@ Some additional parameters must be configured directly in Finance.
     > [!NOTE]
     > The **Vendor invoice import (DK)** format configuration is based on the parent **Vendor invoice import** format configuration. The formats use the **Invoice model** configuration and the **Vendor invoice Mapping to destination** configuration. All required additional configurations are automatically imported.
 
-
-2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select **Customer invoice context model**.
+3. Select **Create configuration**, and then, in the drop-down menu, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
 
     > [!NOTE]
-    > The derived configuration must differ from the configuration that's used for the invoice *submission* setup. 
+    > The derived configuration must be different than the configuration used for the invoice *submission* setup. 
 
-4. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
-5. Open the **DataChannel** definition for editing in the designer.
+4. Open the derived configuration to edit in the designer, and then select **Map model to datasource**.
+5. Open the **DataChannel** definition to edit in the designer.
 6. In the **Data sources** tree, expand the **$Context\_Channel** container.
 7. In the **Value** field, select **Edit**, and then enter the [import channel](#ImportChannel) name.
 8. Save your changes, and complete the derived configuration.
 9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 10. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same [import channel](#ImportChannel) name that you created earlier.
 11. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the **Customer invoice context model** configuration.
-12. In the **Import sources** section, in the **Name** field, enter the same **ResponseXml** name that is used in the import feature setup's **Variable** for **Decoded file**.
+12. In the **Import sources** section, in the **Name** field, enter the same **ResponseXml** name that's used in the import feature setup's **Variable** for **Decoded file**.
 
     ![Edicom import channel.](../media/isv_connector_responseXML.jpg)
     
@@ -224,7 +218,7 @@ Some additional parameters must be configured directly in Finance.
 
     ![Edicom import channel.](../media/isv_connector_import_channel.jpg)
 
-15. Select **Save**, and close the page. 
+15. Select **Save** and close the page. 
 
 
 ### Configure Finance business data
@@ -235,7 +229,7 @@ You must configure the following types of master data to provide a match for inc
 - Products
 - Units
 
-Please do the configuration steps described in the [Vendor electronic invoice import in Denmark](../denmark/emea-dnk-vend-e-invoice.md) article startin from the  [Configure vendor data](../denmark/emea-dnk-vend-e-invoice.md#configure-vendor-data) section.
+Complete the configuration steps described in the [Vendor electronic invoice import in Denmark](../denmark/emea-dnk-vend-e-invoice.md) article starting from the  [Configure vendor data](../denmark/emea-dnk-vend-e-invoice.md#configure-vendor-data) section.
 
 ### Receive electronic invoices
 
