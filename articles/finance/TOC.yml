@@ -3074,40 +3074,28 @@
           items:
           - name: Italy overview
             href: localizations/italy/italy.md
-          - name: VAT statements details
-            href: localizations/italy/emea-ita-vat-statements-details.md
+          - name: Sales tax books
+            items:
+            - name: Configure system parameters to report Sales tax books
+              href: localizations/italy/emea-ita-vat-statements-details.md
+            - name: Report Sales tax books
+              href: localizations/italy/emea-ita-fiscal-books.md
+            - name: Sales tax settlement and numbering of pages in Sales tax books
+              href: localizations/italy/emea-ita-vat-settlement.md
+            - name: Sales tax summary report
+              href: localizations/italy/emea-ita-sales-tax-summary.md
+          - name: VAT management and reporting by tax point date (Date of VAT register)
+            href: localizations/italy/emea-ita-vat-management.md
           - name: Quarterly VAT communication report
             href: localizations/italy/emea-ita-quarterly-vat-communication.md
+          - name: Yearly tax communication
+            href: localizations/italy/emea-ita-yearly-tax-communication.md
           - name: Fiscal journal report
             href: localizations/italy/emea-ita-fiscal-journal.md
           - name: Competence date for transactions in Italy 
             href: localizations/italy/emea-ita-competence-date.md
-          - name: Depreciation of fixed assets
-            href: localizations/italy/emea-ita-depreciation-of-fixed-assets.md
-          - name: Modello 770
-            href: localizations/italy/emea-ita-modello770.md
-          - name: Packing slip date verification on invoices
-            href: localizations/italy/emea-ita-packing-slip-date-verification-on-invoice.md
-          - name: Post and print a packing slip with transportation delivery details
-            href: localizations/italy/emea-ita-packing-slip.md
-          - name: Sales tax books
-            href: localizations/italy/emea-ita-fiscal-books.md
-          - name: VAT management and reporting by tax point date (Date of VAT register)
-            href: localizations/italy/emea-ita-vat-management.md
-          - name: Split payment for invoices issued to the Public Administration
-            href: localizations/italy/emea-ita-split-payment-invoices-issued-public-administration.md
-          - name: Credit invoicing (Italy)
-            href: localizations/italy/emea-ita-credit-invoicing.md
-          - name: Withholding tax
-            href: localizations/italy/emea-ita-withholding-tax.md
-          - name: Separate accounts for credit notes
-            href: localizations/italy/emea-ita-exil-separate-account-credit.md
-          - name: Sort sales invoice lines by packing slip
-            href: localizations/italy/emea-ita-exil-invoicing-packing-slips.md
-          - name: Posting invoices with zero amounts
-            href: localizations/italy/emea-ita-exil-zero-invoice-posting.md
-          - name: Bank data usability enhancement
-            href: localizations/italy/emea-ita-exil-bank-accounts-setup.md
+          - name: General ledger simulations (Italy)
+            href: localizations/italy/emea-ita-exil-general-ledger-simulations.md
           - name: Intrastat
             items:
             - name: Italian Intrastat
@@ -3116,8 +3104,24 @@
               href: localizations/italy/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
             - name: Intrastat (IT) file format
               href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
-          - name: Miscellaneous charges per kilogram in an Intrastat declaration
-            href: localizations/italy/emea-ita-exil-misc-charges-intrastat.md
+            - name: Miscellaneous charges per kilogram in an Intrastat declaration
+              href: localizations/italy/emea-ita-exil-misc-charges-intrastat.md
+          - name: Depreciation of fixed assets
+            href: localizations/italy/emea-ita-depreciation-of-fixed-assets.md
+          - name: Packing slip date verification on invoices
+            href: localizations/italy/emea-ita-packing-slip-date-verification-on-invoice.md
+          - name: Post and print a packing slip with transportation delivery details
+            href: localizations/italy/emea-ita-packing-slip.md
+          - name: Split payment for invoices issued to the Public Administration
+            href: localizations/italy/emea-ita-split-payment-invoices-issued-public-administration.md
+          - name: Separate accounts for credit notes
+            href: localizations/italy/emea-ita-exil-separate-account-credit.md
+          - name: Sort sales invoice lines by packing slip
+            href: localizations/italy/emea-ita-exil-invoicing-packing-slips.md
+          - name: Posting invoices with zero amounts
+            href: localizations/italy/emea-ita-exil-zero-invoice-posting.md
+          - name: Bank data usability enhancement
+            href: localizations/italy/emea-ita-exil-bank-accounts-setup.md
           - name: Intent letters - Invoicing usual exporters
             href: localizations/italy/emea-ita-exil-intent-letter.md
           - name: Tax invoice for goods delivered for free
@@ -3126,10 +3130,12 @@
             href: localizations/italy/emea-ita-exil-improved-inquiry-settlement.md
           - name: Commission settlement on payments
             href: localizations/italy/emea-ita-exil-commission-settlement.md
-          - name: General ledger simulations (Italy)
-            href: localizations/italy/emea-ita-exil-general-ledger-simulations.md
           - name: Configurable posting profiles for banks and remittance types
             href: localizations/italy/emea-ita-exil-bank-remittance.md
+          - name: Withholding tax
+            href: localizations/italy/emea-ita-withholding-tax.md
+          - name: Modello 770
+            href: localizations/italy/emea-ita-modello770.md
           - name: Unique certification
             href: localizations/italy/emea-ita-exil-unique-certification.md
           - name: Bills of exchange protest import
@@ -3140,8 +3146,6 @@
             href: localizations/italy/emea-ita-e-invoices.md
           - name: Vendor electronic invoices
             href: localizations/italy/emea-ita-vend-e-invoices.md
-          - name: Yearly tax communication
-            href: localizations/italy/emea-ita-yearly-tax-communication.md
           - name: Payment traceability
             href: localizations/italy/emea-ita-payment-traceability.md
           - name: Unified posting date control
