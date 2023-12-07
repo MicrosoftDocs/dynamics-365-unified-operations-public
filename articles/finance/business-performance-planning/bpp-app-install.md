@@ -39,12 +39,12 @@ Complete the following steps to install the planning application.
 4. Select **Install app**, and in the list of apps, find and select **Dynamics 365 Finance business performance planning**.
 
 > [!IMPORTANT]
-> A Finance license is required to install the Business performance planning application. For more information about finance licensing, see [Finance pricing](https://dynamics.microsoft.com/en-us/finance/pricing/).
+> A standard Finance license is required to install the Business performance planning application.  To perform any planning operations, you will need a finance premium license. For more information about finance licensing, see [Finance pricing](https://dynamics.microsoft.com/en-us/finance/pricing/).
 
 5. On the **Install** page, agree to the terms of service and select **Install**.
-6. After installation is complete, navigate to and select the **Environment URL** for your environment. To find this, on the left navigation pane, select **Environments** and then select the environment where you installed the planning application. The environment URL is located in the **Details** section of the page.
-7. The **Apps** page of the environment is available in the planning application.
-8. Select the application.
+6. After installation is complete, navigate back to the **Environments** page in the **Power Power admin center**  and select the **Environment URL** for your environment. To find this, on the left navigation pane, select **Environments** and then select the environment where you installed the planning application. The environment URL is located in the **Details** section of the page.
+7. Once the environment URL is selected, the **Apps** page is displayed.  
+8. Select the **Business performance planning** application.
 
 > [!IMPORTANT]
 > Before the planning application can be used, you must assign users to the **Business performance planning** role. The planning roles aren't assigned to anyone by default, including whoever performed the install. For more details about assigning security roles or people to the model-driven app, see [Assign security roles or people to a model-driven app](/power-apps/maker/model-driven-apps/share-model-driven-app#assign-security-roles-or-people-to-a-model-driven-app). 
@@ -74,3 +74,6 @@ If you need to delete the planning application, follow these steps.
     4.  Dynamics Extended Planning and Analysis Support
     5.  Dynamics Extended Planning and Analysis SQL Functionality
     6.  [Microsoft](https://make.preprod.powerapps.com/environments/072ff55f-8d3a-e292-b124-88c671ed04f1/solutions/b392f266-1d4b-4149-8b57-22d811e1741f) XPnA Anchor
+
+> [!IMPORTANT]
+> If the finance premium license is terminated, data will be retained until the solution is removed.
