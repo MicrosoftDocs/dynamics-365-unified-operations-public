@@ -2,7 +2,7 @@
 title: European article numbering location number
 description: This article provides information about European Article Numbering (EAN) location numbers.
 author: kfend
-ms.date: 12/06/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
