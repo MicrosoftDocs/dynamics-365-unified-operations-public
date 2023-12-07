@@ -25,6 +25,9 @@ The Matrix Planning visual is a custom Power BI visual built to transform the pl
 3.  Understanding Data Model and Cube: The Matrix Planning visual writes back to the data model defined in the business performance planning app when creating the cube. This cube consolidates all dimensions at their intersections. To enable writing back to this data model, it's crucial to provide the primary keys of each dimension to the Matrix Planning visual during configuration.
 4.  Understanding Allocation. **This needs to link to the Allocation topic**
   
+[!Tip]  
+It is recommended to connect using **Direct Query**.  When using direct query, after the cube is selected, there is an option to **Load selected tables**.  Selecting this option will auto-select any dimension tables that are used in the cube.
+
 
 ## Installation Guide
 
