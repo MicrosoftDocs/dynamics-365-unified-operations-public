@@ -43,12 +43,10 @@ The Matrix Planning visual is a custom Power BI visual built to transform the pl
 
     Matrix Planning visual’s purpose is to empower Power BI users with enhanced planning capabilities, real-time visualization, and collaborative decision-making, revolutionizing the way forecasts are managed and utilized within business contexts.
 
-# Getting Started
-
 ## Prerequisites
 
 1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  Learn more about importing visuals [Importing visuals] (https://learn.microsoft.com/en-us/power-bi/developer/visuals/import-visual)
-2.  Connect PowerBI to your Dataverse environment. [Connect to Dataverse using a Connector](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-use-directquery)
+2.  Connect PowerBI to your Dataverse environment. [Connect to Dataverse using a Connector](/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery)
 3.  Understanding Data Model and Cube: The Matrix Planning visual writes back to the data model defined in the business performance planning app when creating the cube. This cube consolidates all dimensions at their intersections. To enable writing back to this data model, it's crucial to provide the primary keys of each dimension to the Matrix Planning visual during configuration.
 4.  Understanding Allocation. **This needs to link to the Allocation topic**
   
@@ -61,7 +59,7 @@ It is recommended to connect using **Direct Query**.  When using direct query, a
 1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
 2.  Ensure that the Matrix visual has been downloaded from AppSource.  See Pre-requisite step 1 above.  
 3.  Position the visual: Drag the Matrix Planning visual to the report canvas.
-4.  Add your **API Base URL** and **Cube name** to the API Details window of the visual. This will provide business performance planning app the details it needs to read and write data from the Cube. To add the API details, select the **Format visual** tab in the report canvas.  The API base URL will be the Environment URL where planning has been installed.  The environment URL must be preceded by https://.  For example:  https://environment.d365.com.  Learn more [Find your environment and organization ID and name](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name)  Note:The visual must be selected in the report canvas for the Format visual tab to display.
+4.  Add your **API Base URL** and **Cube name** to the API Details window of the visual. This will provide business performance planning app the details it needs to read and write data from the Cube. To add the API details, select the **Format visual** tab in the report canvas.  The API base URL will be the Environment URL where planning has been installed.  The environment URL must be preceded by https://.  For example:  https://environment.d365.com.  Learn more [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name)  Note:The visual must be selected in the report canvas for the Format visual tab to display.
 5.  Access Visualization Pane: Select the visual, locate the Visualization pane for the visual. Add all the "Name" columns from each dimension to the Rows, Columns, or Filters fields in the Visualization pane. These columns will provide the structure (X and Y axis) for your matrix. 
 6.  Structuring the Matrix: Arrange the fields in the rows and columns of the matrix to define its visual structure. Fields placed in rows and columns define the matrix's axis. Any fields not utilized in these sections are used as filter context and should be added to the Filters field in the Visualization pane.
 7.  Defining Matrix Shape: Determine the shape of the matrix table by placing values in the rows and columns. For dimensions intended solely as filter context (not part of the X or Y axis), add these to the Filters parameter in the Visualization pane.
@@ -78,7 +76,7 @@ It is recommended that an attribute from every dimension of the cube that you ha
 
 Info on PBI versions where the visual is compatible.
 
-# Using the Visual
+## Using the Visual
 
 ## Functionality
 
