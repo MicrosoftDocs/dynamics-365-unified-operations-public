@@ -11,14 +11,16 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Paraguay
 
+[!include [banner](../../includes/banner.md)]
+
 The Paraguayan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
 Before you create records for customers and vendors who are located in Paraguay, the following setup must be completed:
-- Create departments and counties from Paraguay using states and counties from the address setup.
-- Create tax codes for the VAT that will be used (Vat general rate, exempt, etc).
-- Create sales tax groups containing the tax codes created.
-- Create item sales tax groups containing the tax codes created.
+- Address formats that are specific to Nicaragua. These formats must use states for departments and counties for countie
+- Tax codes for the value-added tax (VAT) that will be used (VAT general rate, exempt, and so on).
+- Sales tax groups that contain the tax codes that were created.
+- Item sales tax groups that contain the tax codes that were created.
 - Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. For more information, see [Configure sales and purchase invoices for Paraguay](ltm-configure-invoices-Paraguay.md).
 - A customer and vendor set that contains all the document classes that will be used.
 - A tax ID for each type of tax identification that your customers and suppliers have.
@@ -67,3 +69,6 @@ Before you create records for customers and vendors who are located in Paraguay,
     - In the **Based in country/region** field, select **Paraguay**.
     - In the **Country document type** field, select a tax ID type. For example, select **RUC**.
     - Complete the **Country document number** field with the vendor's tax ID number.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
