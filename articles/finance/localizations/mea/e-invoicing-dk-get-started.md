@@ -30,12 +30,12 @@ The article guides you through the configuration steps that are general and coun
 Before you begin the procedures in this article, complete the following prerequisites:
 
 - The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
+  > [!IMPORTANT]
+- The company must have a signed agreement with the electronic documents delivery service provider which secures electronic document interchange in OIOUBL and PEPPOL formats.
 - Among registered ProfileIDs, the company should have the following profiles used by Microsoft Dynamics 365 Finance for electronic documents interchange.
   - **Procurement-BilSim-1.0** - to interchange documents in OIOUBL format
   - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** - to interchange documents in PEPPOL format
-
-  > [!IMPORTANT]
-- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
+- The company must obtain from the service provider the required credentials to enable integration of the electronic invoicing service with the [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
