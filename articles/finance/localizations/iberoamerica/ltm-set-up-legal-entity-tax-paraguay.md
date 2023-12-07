@@ -11,6 +11,7 @@ ms.custom: bap-template
 
 # Set up a legal entity and tax information for Paraguay
 
+[!include [banner](../../includes/banner.md)]
 
 This article explains how to set up a legal entity and tax information for a company that's located in Paraguay and is using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 
@@ -38,3 +39,4 @@ Before you begin, open the **Feature management** workspace, and verify that the
     - In the **Country document type** field, select **RUC**.
     - Complete the country document number, including the tax ID number of the company.
     
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
