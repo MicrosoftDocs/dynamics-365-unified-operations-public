@@ -1,8 +1,8 @@
 ---
-title: Electronic invoicing service ISV connector
-description: This article provides information about how to configure and use the Electronic Invoicing service ISV connector.
+title: Electronic invoicing service ISV last-mile connector
+description: This article explains how to configure and use the Electronic Invoicing service ISV connector.
 author: ikondratenko
-ms.date: 11/15/2023
+ms.date: 12/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,43 +21,42 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-Independent Software Vendor (ISV) last-mile connector complements the standard Electronic Invoicing Service functionality in the cases when no direct integration with government electronic invoicing platforms or final electronic invoice recipients is supported out-of-the-box. In such scenarios Microsoft Dynamics 365 Finance is used for the generation of electronic documents in legally required formats and then passes it to the ISV last-mile connector for further communication. In case of incoming electronic documents, the ISV last-mile connector is used as a source of inbound documents which then will be handled by Microsoft Dynamics 365 Finance. 
+The Independent Software Vendor (ISV) last-mile connector complements the standard Electronic Invoicing Service functionality when no direct integration with government electronic invoicing platforms or final electronic invoice recipients is supported out-of-the-box. In these scenarios, Microsoft Dynamics 365 Finance is used to generate electronic documents in legally required formats. The documents are then passed to the ISV last-mile connector for further communication. In the case of incoming electronic documents, the ISV last-mile connector is used as a source of inbound documents which are then handled by Finance. 
 
 This article provides information about how to configure and use the Electronic Invoicing service ISV last-mile connector.
 
 ## Prerequisites
 
-Before you begin the procedures in this article, complete the following prerequisites:
+Before you begin the procedures in this article, the following prerequisites must be met:
 
-  > [!IMPORTANT]
-- Your company must have a separate signed service agreement with an Independent Software Vendor (ISV) who will provide electronic documents delivery service and obtain the required credentials to enable integration of the Electronic Invoicing service with the ISV last-mile connector. 
-- Become familiar with Electronic invoicing functionality - [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- Your company must have a separate signed service agreement with an Independent Software Vendor (ISV) who will provide electronic document delivery service and obtain the required credentials to enable integration of the Electronic Invoicing service with the ISV last-mile connector. 
+- Become familiar with Electronic invoicing functionality. To learn more, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
 - Consult the list of available country-specific [Electronic invoicing features](e-invoicing-country-specific-availability.md) which can be complemented with the submission possibility using the ISV last-mile connector.
 
 ## Integration with Edicom
 
-This chapter provides the information how to configure and use the Electronic Invoicing ISV last-mile connector's integration with the Global e-Invoicing Platform provided by [Edicom](https://edicomgroup.com/electronic-invoicing).
+You can configure and use the Electronic Invoicing ISV last-mile connector's integration with the Global e-Invoicing Platform provided by [Edicom](https://edicomgroup.com/electronic-invoicing).
 
-The following required credentials must be preliminary obtained from **Edicom** to enable the integration of the Electronic Invoicing service with the last-mile connector. 
+The following required credentials must be obtained from **Edicom** to enable the integration of the Electronic Invoicing service with the last-mile connector. 
 
-- The **Service ID** which uniquely identifies the company by Edicom.
-- The **Group** which is required for internal routing within the Edicom infrastructure.
-- The **Token** which grants the authorization to access the Edicom services.
+- **Service ID** - Used to identify the company by Edicom.
+- The **Group** - Used for internal routing within the Edicom infrastructure.
+- The **Token** - Used to grant the authorization to access the Edicom services.
 
-The obtained **Token** must be uploaded to the secret created in the **Azure Key Vault** managed by your company, for more information see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). Then the secret will be used in the related Electronic Invoicing feature pipeline actions as a parameter.
+The obtained **Token** must be uploaded to the secret you created in the **Azure Key Vault** managed by your company. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). Thee secret is used in the related Electronic Invoicing feature pipeline actions as a parameter.
 
 ### Electronic invoices submission
 
-The following pipeline actions are introduced or updated for enabling outbound documents submission via the ISV last-mile connector.
+The following pipeline actions are introduced or updated to enable outbound document submission by using the ISV last-mile connector.
 
-- **Integrate with Edicom** - a new action that submits electronic documents generated using preceding actions to Edicom. You need to configure the action's parameters described in the table below. 
+- **Integrate with Edicom** - A new action that submits electronic documents generated using preceding actions to Edicom. You must configure the action's parameters described in the table below. 
 
   ![Edicom connector actions.](../media/isv_connector_actions.jpg)
 
   **Parameter**       | **Description**     |
   |---------------------|------------------|
   | **Domain** | Use the **Service ID** number provided by Edicom.|
-  | **Application**                | Use  the same **Service ID** number. |
+  | **Application**                | Use the same **Service ID** number. |
   | **Destination**                | Enter the **Service ID** number concatenated with the **_EDIWIN** value. For example, if the **Service ID** number is *123456* the **Destination** value should be *123456_EDIWIN*. |
   | **Group**                  | Use the **Group** code provided by Edicom.  |
   | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
@@ -72,10 +71,8 @@ The following pipeline actions are introduced or updated for enabling outbound d
 
   The rest of the action's parameters can be left empty.
   
-  
-- **Waiting for response from Edicom** - a new action that waits for the response from Edicom. No specific parameters need to be additionally configured.
-  
-- **Process response** - for this existing action new Electronic Reporting configurations **Edicom Response Processing** and **Error log import Json** were created for handeling the response received from Edicom by the preceding **Waiting for response from Edicom** action.
+- **Waiting for response from Edicom** - A new action that waits for the response from Edicom. No specific parameters need to be configured.
+- **Process response** - For this existing action, new Electronic Reporting configurations **Edicom Response Processing** and **Error log import Json** were created tp handle the response received from Edicom by the preceding **Waiting for response from Edicom** action.
 
   The following parameters are Edicom-specific and can be left unchanged with their default values provided by Microsoft in related globalization features.
 
@@ -88,15 +85,15 @@ The following pipeline actions are introduced or updated for enabling outbound d
    ![Edicom process response action.](../media/isv_connector_response.jpg)
 
 
-A new data channel type **Get status from Edicom** is implemented for feature setups of **Export channel and processing pipeline** type. You need to create a new feature setup and configure the Export channel's parameters described in the table below. 
+A new data channel type, **Get status from Edicom** is implemented for feature setups of the **Export channel and processing pipeline** type. You need to create a new feature setup and configure the Export channel's parameters described in the table below. 
 
 ![Edicom get status.](../media/isv_connector_get_status.jpg)
 
  **Parameter**       | **Description**     |
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
-| **Application**                | Use  the same **Service ID** number. |
-| **Data channel**                | Enter the same name of the **export** channel which will be used in: <li>In the parent's feature setup **Applicability rules**</li><li>In the used **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value</li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
+| **Application**                | Use the same **Service ID** number. |
+| **Data channel**                | Enter the same name of the **export** channel to use: <li>In the parent's feature setup **Applicability rules**</li><li>In the used **Customer invoice context model** ER configuration, in the **DataChannel** definition, in the **$Context_Channel** variable's value</li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in MFinance</li>  |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
@@ -110,18 +107,17 @@ The following parameters can be left unchanged with their default values provide
 
 The rest of the action's parameters can be left empty.
 
-
 ### Electronic invoices reception
 
-A new data channel type **Edicom service** is implemented for feature setups of **Import channel** or **Import channel and processing pipeline** type. You need to create a new feature setup and configure the Import channel's parameters described in the table below. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
+A new data channel type, **Edicom service** is implemented for feature setups of the **Import channel** or **Import channel and processing pipeline** type. You need to create a new feature setup and configure the Import channel's parameters as described in the following table. All remaining parameters can be left unchanged with their default values provided by Microsoft in the related globalization feature.
 
 ![Edicom import channel for new feature setup.](../media/isv_connector_import_channel_new.jpg)
 
  **Parameter**       | **Description**     |
 |---------------------|------------------|
 | **Domain** | Use the **Service ID** number provided by Edicom.|
-| **Application**                | Use  the same **Service ID** number. |
-| **Data channel**                | Enter the same name of the **import** channel which will be used in: <li>In the parent's feature setup **Applicability rules**</li><li>In the derived version of **Customer invoice context model** ER configuration used for the import scenario, in the **DataChannel** definition, in the **$Context_Channel** variable's value. *The derived configuration must differ from the configuration that's used for the invoice submission setup*</li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
+| **Application**                | Use the same **Service ID** number. |
+| **Data channel**                | Enter the same name of the **import** channel to use: <li>In the parent's feature setup **Applicability rules**</li><li>In the derived version of **Customer invoice context model** ER configuration used for the import scenario, in the **DataChannel** definition, in the **$Context_Channel** variable's value. *The derived configuration must differ from the configuration that's used for the invoice submission setup*</li><li>**Organization administration** > **Setup** > **Electronic document parameters** > **Integration channels** in Microsoft Dynamics 365 Finance</li>  |
 | **Group**                  | Use the **Group** code provided by Edicom.  |
 | **Auth token**                 | Select the name of the secret that you created for the token provided by Edicom.   |
 
@@ -129,13 +125,13 @@ Additionally, the following feature setup **Variable** must be configured.
 
 ![Edicom import channel.](../media/isv_connector_responseXML.jpg)
 
-The name of the variable used for the decoded file must be used as the **Import source** name for the import channel in the **Electronic document parameters** in Microsoft Dynamics 365 Finance.
+The name of the variable used for the decoded file must be used as the **Import source** name for the import channel in the **Electronic document parameters** in Finance.
 
 ![Edicom import channel.](../media/isv_connector_import_channel.jpg)
 
 ### Electronic invoicing in Denmark
 
-For the details of the electronic invoicing in Denmark, including the integration with [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, refer to [Get started with Electronic invoicing for Denmark](../mea/e-invoicing-dk-get-started.md)
+For more details about electronic invoicing in Denmark, including the integration with [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../mea/e-invoicing-dk-get-started.md)
 
 
 ## Additional resources
