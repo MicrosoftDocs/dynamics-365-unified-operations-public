@@ -28,13 +28,13 @@ ms.dyn365.ops.version:
 ---
 # Reporting visual
 
-This article describes how to use the reporting visual in the Business performance planning application.. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).Reporting
+This article describes how to use the reporting visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 ## Overview
 
-## The Reporting visual is a powerful tool designed to craft polished financial reports seamlessly within Power BI. It enables the creation of comprehensive financial statements like cash flow statements, income statements, balance sheets, and more, offering advanced row and column formatting capabilities.
+The Reporting visual is a powerful tool designed to craft polished financial reports seamlessly within Power BI. It enables the creation of comprehensive financial statements like cash flow statements, income statements, balance sheets, and more, offering advanced row and column formatting capabilities.
 
-## Purpose and Benefits
+## Benefits
 
 -   **Tailored Financial Reports**
 
@@ -52,42 +52,32 @@ This article describes how to use the reporting visual in the Business performan
 
     Gain deeper insights into financial data through variance views included within the reports, aiding in comprehensive financial analysis and decision-making.
 
+
 ## Prerequisites and installation
+For more information about prerequisites and installation, see [Install Power BI visuals](PowerBI-visual-install).
 
-For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
+Note:  Because the reporting visual does not write data back Dataverse, the visual doesn't require API details to be entered.
 
 
-## Compatibility
 
-Info on PBI versions where the visual is compatible.
+### Using the Visual
+This visual enables the adding of subtotals and custom calcuations within the financial report.  By utilizing enhanced formatting options, you can create a professional and refined presentation of financial data.  You can als include variance views withn the reports, allowing for a deeper understanding an analysis of financial data.
 
-## Using the Visual
+### Initial setup
 
-## Functionality
+To begin using the visual, place the **amount** column from your cube into the **Values** field in the **Visualizations** pane.  The next step is to populate your rows and column data.  For a financial report, the rows would typically be populated with an account name and the columns would be populated with a time period, such as month, quarter, or year.
 
--   **Incorporate Subtotals and Custom Calculations**
-
-    Add subtotals and custom calculations at any point within the financial report.
-
--   **Format Data Professionally**
-
-    Utilize enhanced formatting options for a professional and refined presentation of financial data.
-
--   **Visualize Variances**
-
-    Include variance views within the reports, allowing for a deeper understanding and analysis of financial data.
-
-## Configuration Options
+[!Tip] The amount column can be found by expanding your cube in the **Data** pane, and looking for a field with the Sum symbol next to it.  The Sum symbol appears next to numeric fileds to indicate they are measures.
 
 ### Custom Calculations
 
-To add custom calculations, click on **edit** in the visual settings in the top right-hand corner of the visual
+To add custom calculations, click on the **ellipses** or **edit** in the visual settings in the top right-hand corner of the visual.
 
 *Row Calculations*  
 In the edit section, you can now add new rows by right-click on the position where you want to add
 
-*Column Calculations  
-*Right-click on the column header where you want to add your calculation and choose before or after. Then click on the column header items that you want to use in the calculation. In the editor at the top right, you can see a list of all row and column calculation. To edit calculations just click on the item that you want to use.
+*Column Calculations*  
+Right-click on the column header where you want to add your calculation and choose before or after. Then click on the column header items that you want to use in the calculation. In the editor at the top right, you can see a list of all row and column calculation. To edit calculations just click on the item that you want to use.
 
 ### *Supported Operators*
 
