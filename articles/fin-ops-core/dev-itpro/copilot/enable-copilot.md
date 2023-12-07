@@ -39,7 +39,7 @@ To enable Copilot capabilities in finance and operations apps, you must have the
 >
 > You don't need to set up support for cross-region calls if the required AI services are already available in your Dataverse environment.
 >
-> To learn about the capabilities and limitations of AI-powered Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
+> To learn about the capabilities and limitations of AI-powered Copilot features in Microsoft finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md)
 
 ## <a name="enable-sql-key"></a>Step 1: Enable the Sql row version change tracking license key
 
