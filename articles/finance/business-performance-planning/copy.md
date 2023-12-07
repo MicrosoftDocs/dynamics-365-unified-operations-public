@@ -42,7 +42,7 @@ Copy visual empowers you to effortlessly transfer baseline data, including actua
 
 
 ## Prerequisites and installation
-For more information about prerequisites and installation, see [Install Power BI visuals](PowerBI-visual-install).
+For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
 
 
 >[!Note]
