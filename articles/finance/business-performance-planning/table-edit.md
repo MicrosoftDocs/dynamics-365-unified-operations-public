@@ -26,128 +26,72 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: 
 
 ---
-Table Edit
-
 # Table edit visual
 
-
-The Table Edit Visual is a powerful custom visual that enables direct dimension editing. This functionality offers a multitude of possibilities to modify and manage data directly within your financial planning Power BI reports. It enables:
-
--   Creating New Scenarios and Versions - allows creation of new forecasting scenarios or versions (e.g., "Forecast," "Version 3").
--   Updating Static Values - allows easy updates to fixed values like 401K match contributions (e.g., 5%).
--   Managing Planning Process Status - enables updates to the status of different planning stages (e.g., "In Review," "Approved").
+The table edit visual is a powerful custom visual that enables direct dimension editing. This functionality offers a multitude of possibilities to modify and manage data directly within your financial planning Power BI reports. It enables:
+ - Creating new scenarios and versions - allows creation of new forecasting scenarios or versions.
+ - Updating static values - allows easy updates to fixed values like 401K match contributions.
+ - Managing planning process status - updates the status of different planning stages.
 
 
 You must install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 ## Using the visual
 
-**Editing Capabilities**
-
--   Provides an interface for direct editing of dimensions within Power BI. This enables users to add, modify, or delete rows in selected dimensions.
+The table edit visual provides an interface for direct editing of dimensions within Power BI. This enables users to add, modify, or delete rows in selected dimensions.
  
-  [!Important] Any user with the **Update dimension data privilege** can edit dimension values.  The out of the box roles of **Administrator, Power User** and **Contributor** have this privilege by default.
+>[!Important]
+> Any user with the **Update dimension data** privilege can edit dimension values. The out of the box roles of **Administrator, Power user** and **Contributor** include this privilege.
+
+### Example 
+
+The table edit visual facilitates the addition of new scenarios within the scenario dimension.
+
+To create additional scenarios within the scenario dimension, follow these steps:
+1. Click on the down arrow at the top of the Table edit visual and select a dimension.
+2. Select the **Scenario** dimension.
+3. Select **(+)** at the top of the page to add a row.
+4. In the **Name** field, enter the name of the new scenario.
+5. Enter a **Description**. Repeaat the same steps to add **Forecast downside**.
+6. Click **Save**.
 
 
+### Use the created scenario
 
-**Example: Scenario creation**
-
--   Facilitates the addition of new scenarios within the scenario dimension.
-
-    To create additional scenarios within the scenario dimension:
-
-    -   Click on the down arrow at the top of the Table Edit Visual and select a dimensions.
-        -   Select the **Scenario** dimension.
-        -   Select the **Plus sign** (+) at the top of the form to add a row. 
-        -   Input the **Name** of the new scenario.  For example, **Forecast Upside**.
-        -   Enter a **Description**.
-        -   Repeaat the same steps to add **Forecast Downside**.
-        -   Click **Save** icon to save changes.
-          
-    -   Utilizing Created Scenarios
-
-        The newly added scenarios (**Forecast Upside**, **Forecast Downside**) can be utilized for **what-if** **analyses** and exploration within D365 Finance business performance planning and Power BI. Examples include modeling sales forecasts based on various economic environments or creating different budget versions and approval statuses.
+The newly added scenarios can be utilized for what-if analyses and exploration within Dynamics 365 Finance business performance planning and Power BI. 
+Examples include:
+ - modeling sales forecasts based on various economic environments
+ - creating different budget versions and approval statuses
 
 
-## Configuration Options
+### Configuration options
 
-**Selecting Tables:**  
-Choose the table from the dropdown menu at the top of the Table Editor to initiate configuration.
+ - Select tables - Choose the table from the dropdown menu at the top of the Table Editor to initiate configuration.
+ - Editing modes - To update the editing setting, select the visual properties icon. Expand the **Toolbar actions**, update **Edit mode**.   
+There are three editing modes:    
+ - **Grid** - Allows immediate editing of any record on a page. You can save changes using the button at the top-right of the visual.
+ - **Row** - Enables editing of a specific row with buttons for saving changes or deleting the record. When in **Row** mode, the new dimension value must be saved before a new dimension value can be added.
+ - **Form** - After selecting the **Edit** button, records are displayed vertically and show more attributes at once.
 
-**Editing Modes:**  
-It has three editing modes—Grid, Row, and Form. To update this setting, select the visual properties icon.  Expand the **Toolbar actions** and update the **Edit Mode** selection.   
+ - Add a new record - Click **+** button in any editing mode to add new records.
+ - Bulk edit - Select a column, enter in a new or updated value. Select **Batch update**. All displayed rows will have the selected column values updated. To update this setting, select the visual properties icon and expand the **Toolbar actions**. Update the **Enable batch update** selection.   
+ - Grouping - Right-click on column titles to group records with an expand/collapse option.
+ - Fix column - Permanently fix a column on the grid with a right-click, ensuring it's always displayed irrespective of horizontal scrollbar movements.
+ - Validate data - Automatically restrict entries in linked columns to available fields and apply data validations based on column types.
+ - Date picker - Automatically displays a date picker when the date format is set for the column.
+ - Boolean/checkbox - Shows a checkbox for Boolean/Bit data columns, allowing users to set true or false.
+ - Number column types - Enforces data types, allowing only specific entries.
+ - Column filters and search - Filter rows using the inverse triangle icon on columns to select filter elements.
+ - Changing column width - Adjust column widths by dragging field separators. Save new widths using **Save settings**.
+ - Visual formatting and toolbar - Admins can specify available functions for users, such as batch update, filtering options, adding/editing/deleting records, and editing modes. To update any of these settings, select the visual properties icon and expand the **Visual UI** section.
+ - Enable lookup cascade - Specify filtering behavior for users using linked columns of a dimension.
+ - Hide columns - Hide columns by name or multiple columns using comma separation.
+ - Lock column edit - Prevents users from changing a specific column on the visual level.
+ - Required columns - Define columns as mandatory fields for editing records.
+ - URL columns - Add link behavior to HTTP links.
+ - Image column - Display images instead of links and configure image size.
+ - Note column - Enter the column names of the columns that you want to add notes to.
 
--   **Grid Mode**
-    -   Allows immediate editing of any record on a page.
-        -   Save changes via the button at the top-right of the visual.
--   **Row Mode**
-    -   Enables editing of a specific row with buttons for saving changes or deleting the record.  When in the row mode, the new dimension value must be saved before a new dimension value can be added.
--   **Form Mode**
-    -   Upon selecting the **Edit** button, displays records vertically, showing more attributes at once.
-
-**Adding New Records**  
-Use the "plus" button in any editing mode to add new records.
-
-**Bulk Edit**  
-Select a column at the top of the visual.  Enter in a new or updated value.  Select Batch update.  All displayed rows will have the selected column values updated.   To update this setting, select the visual properties icon.  Expand the **Toolbar actions** and update the **Enable batch update** selection.   
-**Grouping**
-
-Right-click on column titles to group records with an expand/collapse option.
-
-**Fix Column**  
-Permanently fix a column on the grid with a right-click, ensuring it's always displayed irrespective of horizontal scrollbar movements.
-
-**Data Validations**  
-Automatically restrict entries in linked columns to available fields and apply data validations based on column types:
-
--   **Date Picker:**
-    -   Automatically displays a date picker when the date format is set for the column.
-        -   Set desired display formats via the visual properties.
--   **Boolean / Check Box**
-    -   Shows a tick box for Boolean/Bit data columns, allowing users to set true or false.
--   **Number Column Types**
-    -   Enforces data types, allowing only specific entries (e.g., integers for "integer" type).
-
-**Column Filters / Search**  
-Filter rows using the **inverse triangle** icon on columns to select filter elements.
-
-
-**Changing Column Width**  
-Adjust column widths by dragging field separators. Save new widths using the **Save Settings** button.
-
-**Visual Formatting / Toolbar**
-
--   **Toolbar Actions:**  
-    Admins can specify available functions for users, such as batch update, filtering options, adding/editing/deleting records, and editing modes.  To update any of these settings, select the visual properties icon and expand the **Visual UI** section.
- 
--   **Enable Lookup Cascade**
-
-    Specify filtering behavior for users using linked columns of a dimension.
-
--   **Hide Columns**
-
-    Hide columns by name or multiple columns using comma separation.
-
--   **Lock Column Edit**
-
-    Prevent users from changing a specific column on the visual level.
-
--   **Required Columns**
-
-    Define columns as mandatory fields for editing records.
-
--   **URL Columns**
-
-    Add link behavior to HTTP links.
-
--   **Image Column**
-
-    Display images instead of links and configure image size.
-
--   **Note Column**
-
-    Enter the column names of the columns that you want to add notes to.
-
-    [!Important]
-    When referencing any of the column names in the settings listed above, the name of the column must be the technical name.  For example: msdyn_description.  You can find this in the Data column of Power BI.
+>[!Important]
+> When referencing any of the column names in the settings listed above, the name of the column must be the technical name. For example: msdyn_description. You can find this in the **Data** column of Power BI.
 
