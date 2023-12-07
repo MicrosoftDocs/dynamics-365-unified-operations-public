@@ -1,12 +1,42 @@
-Allocation
+---
+# required metadata
+
+title: Business performance planning application allocation visual
+description: This article describes how to use the allocation visual in the Business performance planning application.
+author: ShielaSogge
+ms.date: 12/03/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: 
+
+---
+# Allocation visual
+
+This article describes how to use the allocation visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 Understanding allocation in D365 business performance planning is fundamental for accurate and informed business planning. This article talks about how allocation operates at different levels within dimensions, so users can leverage D365 business performance planning effectively to strategize and plan business operations with confidence.
 
-# Understanding Data Levels in Dimensions
+## Understanding Data Levels in Dimensions
 
 Your data within Dataverse can have various levels underneath it. These levels depict hierarchical relationships, where for instance, a "parent" category may be followed by more specific "child" entities, such as a product category and its respective SKUs.
 
-# Allocation Principles
+## Allocation Principles
 
 ## Allocation at different levels
 
@@ -38,7 +68,7 @@ Copy Like
 
 This option is available only with right-click context menu and it enables you to apply any distribution in the used cube with your entry.
 
-# Power of BPP for Accurate Business Planning
+## Power of BPP for Accurate Business Planning
 
 BPP empowers high-level business planning with an assurance that forecasted or budgeted data accurately mirrors historical actuals. This functionality allows users to:
 
