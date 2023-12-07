@@ -41,24 +41,12 @@ Copy visual empowers you to effortlessly transfer baseline data, including actua
  - Scenario analysis simplification - Allows the creation of diverse forecast scenarios by leveraging a base case. Users can build a foundational forecast and efficiently generate multiple variations by copying, thereby simplifying scenario analysis without starting anew for each permutation.
 
 
-## Prerequisites
+## Prerequisites and installation
+For more information about prerequisites and installation, see [Install Power BI visuals](PowerBI-visual-install).
 
-1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  To learn more about importing visuals, see [Importing visuals](/power-bi/developer/visuals/import-visual).
-2.  Connect PowerBI to your Dataverse environment. For more information, see [Connect to Dataverse using a connector](/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
 
->[!Tip]
->It's recommended to connect using **Direct Query**. When using direct query, after the cube is selected, there's a **Load selected tables** option. Select this option will auto-select any dimension tables that are used in the cube.
-
-### Installation 
-
-1.  Launch the Power BI application and go to your workspace or enter where you're going to configure the visual.
-2.  Ensure that the visual has been downloaded from AppSource. See prerequisite step 1 above.  
-3.  Position the visual by dragging the visual to the report canvas.
-4.  Add your **API base URL** and **Cube name** to the API details window of the visual. This provides business performance planning the details to read and write data from the cube.
-5.  To add the API details, select the **Format visual** tab in the report canvas. The API base URL will be the environment URL where planning has been installed. The environment URL must be preceded by https://. For example:  https://environment.d365.com. For more information, see [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name).
-
->[!Note]T
->he visual must be selected in the report canvas for the format visual tab to display.
+>[!Note]
+>The visual must be selected in the report canvas for the format visual tab to display.
 
 ### Using the copy visual
 
