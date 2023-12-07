@@ -178,7 +178,7 @@ For more information, see [Work with Electronic document submission log](../glob
 To enable import of incoming invoices in OIOUBL format, complete the following additional configuration steps for the same version of the **Danish electronic invoice (DK)** electronic invoicing feature that's used for outgoing invoice submission.
 
 1. In RCS, on the **Globalization features** tile, on the **Electronic invoicing** tile, select the required version of the **Danish electronic invoice (DK)** electronic invoicing feature.
-2. On the **Setups** tab, in the grid, select **Import vendor invoice**, and then select **Edit**.
+2. On the **Setups** tab, in the grid, select **Incoming OIOUBL**, and then select **Edit**.
 3. <a id="ImportChannel"></a>On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
 4. Select the **Service ID** parameter, and then select the name of the secret that contains the Service identifier.
 5. Select the **Group** parameter, and then select the name of the secret that contains the Group identifier.
@@ -186,23 +186,35 @@ To enable import of incoming invoices in OIOUBL format, complete the following a
 7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you previously defined in step 3.
 9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
 10. Select **Save**, and close the page.
-11. Complete, publish and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
+11. Complete and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 
 ### Finance configuration
 
 Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the latest version of the **Vendor invoice import (DK)** Electronic Reporting configuration isimported.
+1. Make sure that the latest version of the **Vendor invoice import (DK)** Electronic Reporting configuration is imported.
 
     > [!NOTE]
     > The **Vendor invoice import (DK)** format configuration is based on the parent **Vendor invoice import** format configuration. The formats use the **Invoice model** configuration and the **Vendor invoice Mapping to destination** configuration. All required additional configurations are automatically imported.
 
-2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-3. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same [import channel](#ImportChannel) name that you created earlier.
-3. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the **Customer invoice context model** configuration.
-4. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
-5. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (DK)** configuration.
-6. Select **Save**, and close the page.
+
+2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
+3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+
+    > [!NOTE]
+    > The derived configuration must differ from the configuration that's used for the invoice *submission* setup. 
+
+4. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
+5. Open the **DataChannel** definition for editing in the designer.
+6. In the **Data sources** tree, expand the **$Context\_Channel** container.
+7. In the **Value** field, select **Edit**, and then enter the [import channel](#ImportChannel) name.
+8. Save your changes, and complete the derived configuration.
+9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+10. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same [import channel](#ImportChannel) name that you created earlier.
+11. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the **Customer invoice context model** configuration.
+12. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
+13. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (DK)** configuration.
+14. Select **Save**, and close the page.
 
 ### Configure Finance business data
 
