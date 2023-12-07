@@ -44,8 +44,8 @@ Copy visual empowers you to effortlessly transfer baseline data, including actua
 
 ## Prerequisites
 
-1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  To learn more about importing visuals, see [Importing visuals](/power-bi/developer/visuals.md/import-visual).
-2.  Connect PowerBI to your Dataverse environment. For more information, see [Connect to Dataverse using a connector](/power-apps/maker/data-platform/data-platform-powerbi-connector.md?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
+1.  Import business performance planning visuals from AppSource. [Microsoft AppSource]([https://appsource.microsoft.com])  To learn more about importing visuals, see [Importing visuals](/power-bi/developer/visuals/import-visual).
+2.  Connect PowerBI to your Dataverse environment. For more information, see [Connect to Dataverse using a connector](/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
 
 >[!Tip]
 >It's recommended to connect using **Direct Query**. When using direct query, after the cube is selected, there's a **Load selected tables** option. Select this option will auto-select any dimension tables that are used in the cube.
