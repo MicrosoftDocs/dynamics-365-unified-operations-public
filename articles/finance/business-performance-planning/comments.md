@@ -46,9 +46,7 @@ The primary purpose of the Comments Visual is to link Commentary to Data Values.
 
     Enables teams to discuss underlying assumptions, clarifying the rationale behind forecasted numbers and ensuring data consumers are well-informed.
 
-# Getting Started
-
-## Prerequisites
+### Prerequisites
 
 1.  Import business performance planning visuals from AppSource. Learn More.
 2.  Connect PowerBI to your Dataverse environment. Learn More.
@@ -68,7 +66,7 @@ The primary purpose of the Comments Visual is to link Commentary to Data Values.
 
 Info on PBI versions where the visual is compatible.
 
-# Using the Visual
+### Using the Visual
 
 ## Functionality
 
