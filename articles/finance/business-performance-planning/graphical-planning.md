@@ -46,24 +46,13 @@ It streamlines the process of adjusting values in forecasts and budgets, offerin
 
     Provide a visually intuitive tool for senior leadership to engage with forecasts and budgets, aiding in decision-making processes through hands-on data interaction.
 
-## Prerequisites
-
-1.  Import business performance planning visuals from AppSource. Learn More.
-2.  Connect PowerBI to your Dataverse environment. Learn More.
-3.  Understanding Allocation. Learn More.
-4.  
-
 ## Installation Guide
 
-1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
+1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the visual.
 2.  Position the visual: Drag the Graphical planning visual to the report canvas.
 3.  Add your **API Base URL** to the API Details window of the visual.
 4.  Set the **Value** variable with the relevant **Amount** column.
 5.  Define the **X and Y axes** using the **Legend** variable, incorporating name columns from the desired dimensions for plotting on the chart.
-
-## Compatibility
-
-Info on PBI versions where the visual is compatible.
 
 ### Using the Visual
 
