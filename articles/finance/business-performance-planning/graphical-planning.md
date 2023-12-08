@@ -46,7 +46,7 @@ It streamlines the process of adjusting values in forecasts and budgets, offerin
 
     Provide a visually intuitive tool for senior leadership to engage with forecasts and budgets, aiding in decision-making processes through hands-on data interaction.
 
-## Installation Guide
+## Setup
 
 1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the visual.
 2.  Position the visual: Drag the Graphical planning visual to the report canvas.
