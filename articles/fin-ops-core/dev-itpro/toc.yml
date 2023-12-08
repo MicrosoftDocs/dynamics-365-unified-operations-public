@@ -441,6 +441,8 @@ items:
             href: deployment/environment-migration-process.md
           - name: Lifecycle Services project migration manager
             href: lifecycle-services/project-migration-manager.md
+          - name: Region migration to support zone redundancy
+            herf: deployment/region-migration-support-zone-redundancy.md
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
         - name: Retail data residency
