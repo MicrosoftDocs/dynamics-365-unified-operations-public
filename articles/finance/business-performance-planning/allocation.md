@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Business performance planning application allocation visual
-description: This article describes how to use the allocation visual in the Business performance planning application.
+title: Allocation visual
+description: This article describes how to use the Allocation visual in the Business performance planning application.
 author: ShielaSogge
-ms.date: 12/03/2023
+ms.date: 12/08/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,49 +28,48 @@ ms.dyn365.ops.version:
 ---
 # Allocation visual
 
-This article describes how to use the allocation visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
+[!include [banner](../includes/banner.md)]
 
-Understanding allocation in D365 business performance planning is fundamental for accurate and informed business planning. This article talks about how allocation operates at different levels within dimensions, so users can leverage D365 business performance planning effectively to strategize and plan business operations with confidence.
+This article describes how to use the **Allocation** visual in the Business performance planning application. To fully use the planning application, you must also install Power BI visuals. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
-## Understanding Data Levels in Dimensions
+Understanding allocation in the planning application is fundamental for accurate and informed business planning. The **Allocation** visual operates at different levels within dimensions, so you can effectively strategize and plan business operations with confidence.
 
-Your data within Dataverse can have various levels underneath it. These levels depict hierarchical relationships, where for instance, a "parent" category may be followed by more specific "child" entities, such as a product category and its respective SKUs.
+## Understanding data levels in dimensions
 
-## Allocation Principles
+In Dataverse, your data can have various levels underneath it. These levels depict hierarchical relationships. For example, a "parent" category may be followed by more specific "child" entities, such as a product category and its respective SKUs.
 
 ## Allocation at different levels
 
-When writing values at the "parent" level, BPP engages in allocation across all subsidiary "child" values. The allocation process varies based on certain conditions as described below.
+When the planning application writes values at the "parent" level, it engages in allocation across all subsidiary "child" values. The allocation process varies based on certain conditions as described below.
 
-## Allocation Options
+### Equal allocation for zero and equal amount child values
 
-### Equal Allocation for zero and equal amount child values
+If all child values are \$0 or equal amounts, the planning application defaults to an equal allocation across each child cell. For instance, allocating \$1,000 across 10 child cells results in \$100 allocated to each child.
 
-If all child values are \$0 or equal amounts, D365 Finance business performance planning defaults to an equal allocation across each child cell. For instance, allocating \$1,000 across 10 child cells results in \$100 allocated to each child.
+### Respect for preexisting distributions
 
-### Respect for Preexisting Distributions
+When child cells contain preexisting values, the planning application respects this distribution. Allocation occurs proportionately based on existing values. For instance, allocating \$200 across two child cells with existing values \$5 and \$15 respectively results in \$50 and \$150 respectively.
 
-When child cells contain preexisting values, BPP respects this distribution. Allocation occurs proportionately based on existing values. For instance, allocating \$200 across 2 child cells with existing values \$5 and \$15 respectively results in \$50 and \$150 respectively.
+**Relative increase**
+To enter a relative increase or decrease, enter **i** or **d** in front of the number. For example, **i10%** or **d10%** to increase or decrease by 10%, or use the **Relative Increase/Decrease** option in the right-click context menu.
 
-Relative Increase
+**Fill right**
+Using **r**, write the entered value to every cell on the same level to the right. For example, **r1000** entered in January for a time dimension will write 1000 from February to December, or use the **Fill Right** option in the right-click context menu.
 
-To enter a relative increase or decrease use **i** or **d** in front of the number for example **i10%** or **d10%** to increase or decrease by 10% or use the **Relative Increase/Decrease** option in the right-click context menu.
+**Allocation with multi-select**
+If the multi-select mode is turned on, the **s** prefix in the multi-select value dialog field allows you to spread an entry to the selected cells and use their current distribution.
 
-Fill right
+**Copy Like**
+This option is available only with the right-click context menu and it enables you to apply any distribution in the used cube with your entry.
 
-Using **r** write the entered value to every cell on the same level to the right. For example **r1000** entered in January for a time dimension will write 1000 from February to December or use the **Fill Right** option in the right-click context menu.
+## Accurate business planning
 
-Allocation with multi-select
+USe the planning application for high-level business planning with an assurance that forecasted or budgeted data accurately mirrors historical actuals. With this functionality, you can:
 
-If the multiselect mode is turned on the **s** prefix in the multi-select value dialog field allows you to spread an entry to the selected cells and use their current distribution.
+- Plan business strategies confidently at higher levels, knowing that the planning application ensures alignment with historical data.
+- Leverage the planning application's allocation mechanism, which adapts to various levels of granularity, ensuring accurate planning even when working with complex hierarchical data structures.
 
-Copy Like
 
-This option is available only with right-click context menu and it enables you to apply any distribution in the used cube with your entry.
 
-## Power of BPP for Accurate Business Planning
 
-BPP empowers high-level business planning with an assurance that forecasted or budgeted data accurately mirrors historical actuals. This functionality allows users to:
-
--   Plan business strategies confidently at higher levels, knowing that BPP ensures alignment with historical data.
--   Leverage BPP's allocation mechanism, which adapts to various levels of granularity, ensuring accurate planning even when working with complex hierarchical data structures.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
