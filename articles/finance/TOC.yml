@@ -590,6 +590,8 @@
           href: accounts-receivable/cm-periodic-tasks.md
         - name: Credit statistics FAQ
           href: accounts-receivable/credit-statistics-faq.md
+        - name: Credit hold FAQ
+          href: accounts-receivable/Credit-hold-FAQ.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range
@@ -1310,6 +1312,8 @@
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/fin-ops/analytics/financial-reporting-intro.md?context=/dynamics365/context/finance
+      - name: Configure Microsoft Power Platform for use with the Financial reporting add-in
+        href: general-ledger/configure-power.md
       - name: Financial reporting best practices  
         href: general-ledger/fin-reports-best.md
       - name: Financial report components

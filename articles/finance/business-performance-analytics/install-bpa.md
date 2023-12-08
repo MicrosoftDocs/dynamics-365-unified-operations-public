@@ -12,7 +12,8 @@ ms.prod:
 ms.technology:
 ms.custom:
 audience: Application User
-
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
+ms.audience: administrator
 ---
 
 # Install business performance analytics
