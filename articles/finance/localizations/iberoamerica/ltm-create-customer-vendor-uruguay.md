@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in Uruguay
 description: This article explains how to set up records for customers and vendors in Uruguay.
 author: Cpicon85
-ms.date: 12/07/2023
+ms.date: 12/08/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-cpicon
@@ -17,8 +17,8 @@ The Uruguayan customer and vendor configuration contains the fiscal information 
 Before you create records for customers and vendors who are located in Uruguay, the following setup must be completed:
 - Create departments and counties from Uruguay using states and counties from the address setup.
 - Create tax codes for the VAT that will be used (Vat general rate, exempt, etc).
-- Create sales tax groups containing the tax codes created.
-- Create item sales tax groups containing the tax codes created.
+- Create sales tax groups that contain the tax codes created.
+- Create item sales tax groups that contain the tax codes created.
 - Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. For more information, see [Configure sales and purchase invoices for Uruguay](ltm-configure-invoices-Uruguay.md).
 - A customer and vendor set that contains all the document classes that will be used.
 - A tax ID for each type of tax identification that your customers and suppliers have.
