@@ -52,7 +52,7 @@ All the environments in Canada East, Australia Southeast, South India, Japan Wes
 
 ## What is the end user experience for customers during this migration?  
 
-End users can expect downtime during our planned migration within the [region's maintenance window](../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md). Duration varies based on the database and storage account size of your environment's storage footprint. Detailed downtime information is provided in a notification email before the migration.
+End users can expect downtime during our planned migration within the [region's maintenance window](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/planned-maintenance-window-faq). Duration varies based on the database and storage account size of your environment's storage footprint. Detailed downtime information is provided in a notification email before the migration.
 
 ## How are we notifying customers about migration?  
 
