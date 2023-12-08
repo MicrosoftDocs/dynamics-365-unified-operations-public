@@ -24,10 +24,10 @@ Some of the functionality that's referred to in this article might not yet be av
 
 | Country/region | Public preview | General availability (GA) |
 |----------------|----------------|----|
-| Chile and cross-LATAM features | 2023 wave 1 | 2023 wave 2 |
-| Costa Rica | Available | 2023 wave 2 |
-| Nicaragua | Available | 2023 Wave 2 |
-| Panama | Available | 2023 Wave 2 |
+| Chile and cross-LATAM features | Available | Available |
+| Costa Rica | Available | Available |
+| Nicaragua | Available | Available |
+| Panama | Available | Available |
 | Colombia | 2023 wave 2 | 2024 wave 1 |
 | Paraguay | 2023 wave 2  | 2024 wave 1 |
 | Uruguay | 2023 wave 2 | 2024 wave 1 |
@@ -37,7 +37,7 @@ Some of the functionality that's referred to in this article might not yet be av
 | Peru | 2024 wave 1  | 2024 wave 1 |
 | Dominican Republic | 2024 wave 1 | 2024 wave 1 |
 | Venezuela | 2024 wave 1 | 2024 wave 1 |
-| Argentina | 2024 wave 1 | 2024 wave 2 |
+| Argentina | 2024 wave 2 | 2024 wave 2 |
 
 ## See also
 
