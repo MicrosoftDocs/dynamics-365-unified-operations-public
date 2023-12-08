@@ -155,7 +155,7 @@ In the **Row/Column Style** section, you can define row and column styles that a
 
 **Conditional formatting**
 
-In the **Conditional Formatting** property of the visual, you can setup up to three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported Operators.** For example, Val \> 2000 formats all values greater than 2000 with the format for that measure.
+In the **Conditional Formatting** property of the visual, you can set up three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported Operators.** For example, Val \> 2000 formats all values greater than 2000 with the format for that measure.
 
 #### Row/column spacing
 
@@ -200,7 +200,7 @@ You can export data in Microsoft Excel format or CSV format.
 
 ### Cell setting and autowidth
 
-You can dynamically adjust the columnd width for every column.
+You can dynamically adjust the column width for every column.
 
 ### Rows header/flatten
 
