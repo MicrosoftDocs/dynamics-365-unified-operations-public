@@ -88,7 +88,7 @@ To enter data on an aggregation cell in the matrix planning visual, set **Splash
 
 #### Prerequisites for entering or editing data on aggregations
 
-The relevant hierarchy should be collapsed, and the children should not be visible. There are multiple allocation pptions available. For more information, see [Allocations](allocations.md).
+The relevant hierarchy should be collapsed, and the children should not be visible. There are multiple allocation pptions available. For more information, see [Allocations](allocation.md).
 
 >[!Important]
 >A value entered on a base level, dimension coordinates that don't contain aggregations, will be saved after you press **Save**. Values entered on aggregations are immediately saved.
