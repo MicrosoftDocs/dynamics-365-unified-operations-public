@@ -2,7 +2,7 @@
 title: Create customer and vendor records with an address in Colombia
 description: This topic provides information about how to set up records for customers and vendors located in Colombia. 
 author: Cpicon85
-ms.date: 12/06/2023
+ms.date: 12/08/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-cpicon
@@ -11,9 +11,11 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Colombia
 
-The Latin American customer and vendor configuration contains the fiscal information required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
-## Prerequisites
+[!include [banner](../../includes/banner.md)]
 
+The Latin American customer and vendor configuration contains the fiscal information required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
+
+## Prerequisites
 Before you create records for customers and vendors who are located in Colombia, the following setup must be completed:
 
 - Address formats that are specific to Colombia. These formats must use states for departments and counties for counties.
@@ -68,3 +70,7 @@ Before you create records for customers and vendors who are located in Colombia,
     - In the **Based in country/region** field, select **Colombia**.
     - In the **Country document type** field, select a tax ID type. For example, select **NIT**.
     - Complete the **Country document number** field with the vendor's tax ID number.
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
