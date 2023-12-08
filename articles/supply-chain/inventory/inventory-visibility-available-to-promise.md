@@ -96,7 +96,7 @@ Follow these steps to turn on the *On-hand change schedule* feature in Power App
 
 1. Sign in to Power Apps, and open Inventory Visibility.
 1. Open the **Configuration** page.
-1. On the **Feature Management** tab, turn on the *OnhandChangeSchedule* feature.
+1. On the **Feature Management** tab, turn on the *Available to promise* feature.
 1. Select the **ATP Setting** tab.
 1. When you query Inventory Visibility, it will provide a result that includes each ATP calculated measure that you add here. Select **Add** to add a new calculated measure for ATP.
 1. Set the following fields:

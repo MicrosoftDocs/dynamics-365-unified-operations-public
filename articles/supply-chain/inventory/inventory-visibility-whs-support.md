@@ -62,7 +62,7 @@ To enable the WMS feature for Inventory Visibility, follow these steps.
 1. On the **Enable WMS items** tab, set the **Enable WMS Items sync** option to *Yes* and save the setup.
 2. <a name="sync-WMS-data"></a> Click **Sync WMS data** button to sync the WMS data to Inventory Visibility. Because after you enable WMS items sync in step 4, only following WMS item on-hand change will sync to IV. This **Sync WMS data** will sync initial all WMS data to IV. This could take a lot of time depends upon your data volume, so we suggest you do this step in your non business hour. 
 
-If you are using latest version 2 UI, you have already enabled the WMS feature and can [query on-hand of WMS items](#query-on-hand-quantities-of-wms-items). If you are using version 1 UI, you still need to enable *AdvancedWHS* feature on power apps side. Please follow below steps:
+If you are using latest version 2 UI, you have already enabled the WMS feature and can [query on-hand of WMS items](#query-on-hand-quantities-of-wms-items). If you are using version 1 UI, you still need to enable *Advanced Warehouse Inventory* feature on power apps side. Please follow below steps:
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 2. Go to **Inventory Visibility (Legacy UI) \> Configuration \> Feature Management & Settings**.
