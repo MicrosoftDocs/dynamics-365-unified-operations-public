@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.29
 
 This article provides the release schedule for proactive quality updates (PQUs).
 
-The schedule for each PQU train and its corresponding build app version number is published seven days before the start of the PQU train. Five days before a PQU is applied, Microsoft sends a notification to customers who use the environments that will receive the update.
+The detailed schedule for each PQU train and its corresponding build app version number is published five days before the start of the PQU train. Five days before a PQU is applied, Microsoft sends a notification to customers who use the environments that will receive the update.
 
 Station 1 is the first release station. It consists of customers who opt in to have their sandbox environments receive the update before all other stations. More details will be published after this functionality is made generally available in May 2023.
 
