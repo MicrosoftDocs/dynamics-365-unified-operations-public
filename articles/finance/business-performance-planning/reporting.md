@@ -69,9 +69,9 @@ Right-click on the column header where you want to add your calculation and sele
 
 | **Operator** | **Name**               | **Syntax** | **Associativity** | **Example**          | **Result**    |
 |--------------|------------------------|------------|-------------------|----------------------|---------------|
-| (, )         | Grouping               | (x)        | None              | 2 \* (3 + 4)         | 14            |
-| [, ]         | Matrix, Index          | [...]      | None              | [[1,2],[3,4]]        | [[1,2],[3,4]] |
-| {, }         | Object                 | {...}      | None              | {a: 1, b: 2}         | {a: 1, b: 2}  |
+| (,)          | Grouping               | (x)        | None              | 2 \* (3 + 4)         | 14            |
+| [,]          | Matrix, Index          | [...]      | None              | [[1,2],[3,4]]        | [[1,2],[3,4]] |
+| {,}          | Object                 | {...}      | None              | {a: 1, b: 2}         | {a: 1, b: 2}  |
 | ,            | Parameter separator    | x, y       | Left to right     | max(2, 1, 5)         | 5             |
 | .            | Property accessor      | obj.prop   | Left to right     | obj={a: 12}; obj.a   | 12            |
 | ;            | Statement separator    | x; y       | Left to right     | a=2; b=3; a\*b       | [6]           |
@@ -151,11 +151,11 @@ The following options are available on the **Format** tab of the **Visualization
 
 **Row and column styles**
 
-In the **Row/Column Style** section, you can define row and column styles that are set for any row that's assigned this style. You can assign these styles to the calculations and achieve a format option that applies to all items that use this style. For example, text formats such as bold, color, underlines, and overlines. After the style is set, while in **Edit** mode, select the row in the visual and select the **Style** from the header of the report.
+In the **Row/Column Style** section, you can define row and column styles that are set for any row assigned this style. You can assign these styles to the calculations and achieve a format option that applies to all items that use this style. For example, text formats such as bold, color, underlines, and overlines. After the style is set, while in **Edit** mode, select the row in the visual and select the **Style** from the header of the report.
 
 **Conditional formatting**
 
-In the **Conditional Formatting** property of the visual, you can setup up to three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported Operators.** For example, Val \> 2000 will format all values greater than 2000 with the format for that measure.
+In the **Conditional Formatting** property of the visual, you can setup up to three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported Operators.** For example, Val \> 2000 formats all values greater than 2000 with the format for that measure.
 
 #### Row/column spacing
 
@@ -188,7 +188,7 @@ Automatically apply format styles that include:
 
 In the table that contains the row members, add a column with the format style that you want to apply in the following format:
 
-{"numberFormat": "\#,0,.0;(\#,0,.0)","FontSize": 8,"color": "blue","FontWeight": "bold","FontStyle" : "","LineFormat": "n","LineColor": "blue"}
+{"numberFormat": "\#,0,.0;(\#,0,.0)","FontSize": 8,"color": "blue","FontWeight": "bold","FontStyle": "","LineFormat": "n","LineColor": "blue"}
 
 ### Refresh button
 
