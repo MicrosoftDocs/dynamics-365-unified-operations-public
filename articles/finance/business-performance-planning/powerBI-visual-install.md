@@ -31,9 +31,7 @@ ms.dyn365.ops.version:
 This article describes how to install business performance planning visuals. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 
-## PowerBI visual install
-
-## Prerequisites
+## PowerBI visual install prerequisites
 
 1.  Import business performance planning visuals from [Microsoft AppSource](https://appsource.microsoft.com). For more information, see [Import visuals](/power-bi/developer/visuals/import-visual)
 2.  Connect PowerBI to your Dataverse environment. [Connect to Dataverse using a Connector](/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery)
