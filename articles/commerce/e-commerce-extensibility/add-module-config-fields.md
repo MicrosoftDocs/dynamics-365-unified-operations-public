@@ -2,12 +2,12 @@
 title: Add module configuration fields
 description: This article describes how to add module configuration fields in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/14/2021
+ms.date: 12/08/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
@@ -65,6 +65,30 @@ In the following example of a module definition file, an **imageAlignment** conf
             "default": "left",
             "scope": "module",
             "group": "Layout Properties"
+        },
+        "productTitle": {
+            "type": "string",
+            "friendlyName": "Title",
+            "description": "Example config value",
+            "default": "",
+            "scope": "module"
+        },
+        "productDetails": {
+            "type": "richText",
+            "friendlyName": "SubTitle",
+            "description": "Sub title rich text field"
+        },
+        "productImage": {
+            "type": "image",
+            "friendlyName": "Background image",
+            "description": "Background image"
+        },
+        "buttonText": {
+            "type": "string",
+            "friendlyName": "Button text",
+            "description": "Example config value",
+            "default": "",
+            "scope": "module"
         }
     }
 }
@@ -262,8 +286,7 @@ The following example shows how to set a mock value for a new configuration fiel
             "src": "https://bit.ly/33cMGxr",
             "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
         },
-        "buttonText": "Buy Now",
-        "productIds": "68719498121"
+        "buttonText": "Buy Now"
     },
     "data": {
         "actionResponse": {
