@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Dynamics 365 Finance business performance planning requirements
-description: This article describes the requirements to install Microsoft Dynamics 365 Finance business performance planning.
+description: This article describes the requirements for installing Microsoft Dynamics 365 Finance business performance planning.
 author: ShielaSogge
 ms.date: 11/28/2023
 ms.topic: article
@@ -27,30 +27,32 @@ ms.dyn365.ops.version:
 ---
 # Microsoft Dynamics 365 Finance business performance planning requirements
 
-This article describes the requirements to install business performance planning.
+This article describes the requirements for installing Microsoft Dynamics 365 Finance business performance planning.
 
 ## System requirements
 
-A Tier-2 environment (multi-box) is required to install business performance planning. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md). Business performance planning is currently supported in the following geographies: Australia, Brazil, UK, USA, Europe, Canada, France, Germany, India, Norway, Switzerland, UAE, South America, South Africa and Japan. Confirm the environment where you plan to install Business performance planning is in one of the above mentioned regions.
+Installation of business performance planning requires a Tier-2 environment (multi-box). For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+
+Business performance planning is currently supported in the following geographies: Australia, Brazil, UK, USA, Europe, Canada, France, Germany, India, Norway, Switzerland, UAE, South America, South Africa, and Japan. Confirm that the environment where you plan to install business performance planning is in one of these geographies.
 
 ## Version requirements
 
-While not required, Dynamics 365 Finance version 10.0.37 and PU 61 provides additional options for getting general ledger information into a balance format via process automations.
+Although Dynamics 365 Finance version 10.0.37 and Platform update (PU) 61 aren't required, they provide extra options for getting general ledger information into a balance format via process automations.
 
 ## Prerequisites
 
-Before you can install business performance planning, the Power Platform environment must be created.
+Before you can install business performance planning, the Microsoft Power Platform environment must be created.
 
-In order to use the functionality in Dynamics 365 Finance business performance planning, a finance premium license must be purchased, and available on the tenant.
+Before you can use the functionality of business performance planning, a Finance premium license must be purchased and available on the tenant.
 
->[!Important]
->To see business performance planning displayed in the Power Platform Admin Center as a Dynamics 365 app to install, a standard finance license must exist within the tenant. To perform any planning operations, you will need a finance premium license.
+> [!IMPORTANT]
+> If you don't purchase a Finance license, business performance planning doesn't appear in Power Platform admin center as a Dynamics 365 app that you can install. To perform any planning operations, you must have a Finance premium license.
 
-To find out more about finance licensing, see [Finance pricing](https://dynamics.microsoft.com/finance/pricing/).
+For more information about Finance licensing, see [Finance pricing](https://dynamics.microsoft.com/finance/pricing/).
 
-## Install
+## Installation
 
-There are two main components for installing Dynamics 365 for Finance business performance planning (preview):
+To install business performance planning (preview), you must install two main components.
 
-1.  Install the planning application from Power Platform admin center [Install the business performance planning app](bpp-App-install.md)
-2.  Installing the Power BI visuals from Appsource (Link to PBI Install doc)
+1. Install the business performance planning app from Power Platform admin center. For more information, see [Install the business performance planning app](bpp-App-install.md).
+1. Install the Power BI visuals from AppSource. For more information, see [link to PBI Install doc]().
