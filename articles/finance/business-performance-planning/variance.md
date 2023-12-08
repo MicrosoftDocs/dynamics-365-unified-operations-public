@@ -49,10 +49,6 @@ It aims to bridge the gap between budgeted and actual values, facilitating root 
 ## Prerequisites and installation
 For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
 
-## Compatibility
-
-Info on PBI versions where the visual is compatible.
-
 ## Using the Visual
 
 Utilize the Variance Visual to efficiently sort and visualize variances between budgeted and actual values, offering an intuitive and valuable tool within the reporting cycle.
