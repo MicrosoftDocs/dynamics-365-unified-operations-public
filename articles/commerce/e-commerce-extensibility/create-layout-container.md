@@ -32,7 +32,7 @@ The following example shows how to create a container module that is named **cam
 yarn msdyn365 add-module campaign-container
 ```
 
-After the command has finished running, open the new module's definition file, campaignContainer.definition.json, and change the **$type** value to **containerModule**.
+After the command finishes running, open the new module's definition file, campaignContainer.definition.json, and change the **$type** value to **containerModule**.
 
 The following example shows the addition of a **slots** section that contains two slots for this container. Notice that each slot lets you define **allowedTypes** to limit the types of modules that are allowed inside that slot. You can also specify the maximum and minimum number of modules that can be inserted into the slot.
 
@@ -65,7 +65,7 @@ The following example shows the addition of a **slots** section that contains tw
 }
 ```
 
-The following example shows the module's React view file, campaignContainer.view.tsx, which uses the slots for the container. Note that this example uses a single React/View file, and that the campaignContainer.tsx can be deleted.
+The following example shows the module's React view file, campaignContainer.view.tsx, which uses the slots for the container. This example uses a single React/View file, and that the campaignContainer.tsx can be deleted.
 
 ```typescript
 import * as React from 'react';
@@ -189,7 +189,7 @@ The following example shows a sample page mock, campaign-containerMock.json, tha
 
 To preview the page in a local web browser, follow these steps.
 
-1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+1. At a command prompt, go to your root SDK folder and run the **yarn start** command, as shown in the following example.
 
     ```Console
     c:\repos\Msdyn365.Commerce.Online\yarn start
