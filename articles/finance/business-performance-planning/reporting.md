@@ -34,7 +34,7 @@ The **Reporting** visual is a powerful tool designed to craft polished financial
 
 ## Benefits
 
-- **Tailored Financial Reports** - Craft detailed financial reports with precision by leveraging advanced row and column formatting options.
+- **Tailored Financial Reports** - Craft detailed financial reports with precision by using advanced row and column formatting options.
 - **Custom Calculations Integration** - Seamlessly integrate custom calculations and subtotals at any juncture within the report, ensuring accuracy and tailored insights.
 - **Professional Data Presentation** - Enhance the presentation of financial data by utilizing advanced formatting features for a polished and professional appearance.
 - **Insightful Variance Views** - Gain deeper insights into financial data through variance views included within the reports, aiding in comprehensive financial analysis and decision-making.
@@ -46,7 +46,7 @@ For more information about prerequisites and installation, see [Install Power BI
 > Because the **Reporting** visual doesn't write data back Dataverse, the visual doesn't require API details to be entered.
 
 ### Using the Reporting visual
-You can use this visual to add subtotals and custom calcuations within the financial report. By utilizing the enhanced formatting options, you can create a professional and refined presentation of financial data. You can also include variance views withn the reports, allowing for a deeper understanding an analysis of financial data.
+You can use this visual to add subtotals and custom calculations within the financial report. By utilizing the enhanced formatting options, you can create a professional and refined presentation of financial data. You can also include variance views in the reports, allowing for a deeper understanding an analysis of financial data.
 
 ### Initial setup
 
@@ -151,11 +151,11 @@ The following options are available on the **Format** tab of the **Visualization
 
 **Row and column styles**
 
-In the **Row/Column Style** section, you can define row and column styles that are set for any row that has been assigned this style. You can assign these to the calculations and achieve a format optionthat  applies to all items that use this style. For example, text formats such as bold, color, underlines, and overlines. After the style has been set, while in **Edit** mode, select the row in the visual and select the **Style** from the header of the report.
+In the **Row/Column Style** section, you can define row and column styles that are set for any row that's assigned this style. You can assign these styles to the calculations and achieve a format option that applies to all items that use this style. For example, text formats such as bold, color, underlines, and overlines. After the style is set, while in **Edit** mode, select the row in the visual and select the **Style** from the header of the report.
 
 **Conditional formatting**
 
-In the **Conditional Formatting** property of the visual, you can set up up to three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported Operators.** For example Val \> 2000 will format all values greater than 2000 with the format for that measure.
+In the **Conditional Formatting** property of the visual, you can setup up to three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported Operators.** For example, Val \> 2000 will format all values greater than 2000 with the format for that measure.
 
 #### Row/column spacing
 
@@ -198,7 +198,7 @@ Turn on **Refresh** in the **Visualization** section to get the **Refresh** butt
 
 You can export data in Microsoft Excel format or CSV format.
 
-### Cell setting and auto-width
+### Cell setting and autowidth
 
 You can dynamically adjust the columnd width for every column.
 
