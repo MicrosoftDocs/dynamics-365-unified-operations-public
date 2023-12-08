@@ -4,7 +4,7 @@ description: This article answers frequently asked questions about the migration
 author: rashmim
 ms.author: rashmim
 ms.topic: conceptual 
-ms.date: 12/7/2-23
+ms.date: 12/7/2023
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
