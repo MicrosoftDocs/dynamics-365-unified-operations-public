@@ -57,43 +57,18 @@ Before you use of the **Comments** visual, prepare a sample comment like, **Test
 
 When you finish, the **Comments** visual will display comments in a tabular format within the data.
 
-## Compatibility
-
-Info on PBI versions where the visual is compatible.
-
-### Using the Visual
-
 ## Functionality
 
--   **Collating Comments at Cell Level**
+- **Collating Comments at Cell Level** - Aggregates and displays comments tied to specific cell or pivot coordinates within the data.
+- **Facilitating Comment Management** - Offers a tabular view to manage and work through comments during the planning phase.
+- **Ensuring Data Consistency** - Requires matching filter contexts to maintain consistency between the **Comments** visual and the **Matrix planner** visual, ensuring the same dataset is examined.
 
-    Aggregates and displays comments tied to specific "cell" or pivot coordinates within the data.
+## Configuration options
 
--   **Facilitating Comment Management**
-
-    Offers a tabular view to manage and work through comments during the planning phase.
-
--   **Ensuring Data Consistency**
-
-    Requires matching filter contexts to maintain consistency between the Comments Visual and Matrix Planner, ensuring examination of the same dataset.
-
-## Configuration Options
-
--   **Pivot Property**
-
-    If you add one of the dimensions to the **Pivot** section of the visual, the values of that dimension will appear on the columns rather than rows.
-
--   **Filter Property**
-
-    If you have a slicer somewhere on the page, and you want to pass the filtered values from the slicer to the comments visual, you need to do this explicitly by using the filters section of the visual. Power BI slicer values are not transferred automatically to the visual. For example, if **DimOrganization** is a slicer on the page, In order to get this filter's selected value to transfer to the comments visual, you need to add this field to the **Filter** section of the comments visual.
-
--   **Editing Amounts**
-
-    It is possible to edit the amount related to the coordinate in the visual by activating this option in the properties.
-
--   **Entering comments directly in the Matrix planning visual**
-
-    It is possible to enter comments directly in the Matrix planning visual without the need for the additional Comment Visual.
+- **Pivot Property** - If you add one of the dimensions to the **Pivot** section of the visual, the values of that dimension appear on the columns rather than rows.
+- **Filter Property** - If you have a slicer somewhere on the page, and you want to pass the filtered values from the slicer to the comments visual, you need to do this explicitly by using the filters section of the visual. Power BI slicer values aren't transferred automatically to the visual. For example, if **DimOrganization** is a slicer on the page, you need to add this field to the **Filter** section of the comments visual to get this filter's selected value to transfer to the **Comments** visual.
+- **Editing Amounts** - Edit the amount related to the coordinate in the visual by activating this option in the properties.
+- **Entering comments directly in the Matrix planning visual** - Enter comments directly in the **Matrix planning** visual without the need for the additional **Comment** visual.
 
 
 
