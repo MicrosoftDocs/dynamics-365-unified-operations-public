@@ -2,7 +2,7 @@
 title: Configure sales and purchase invoices for Uruguay
 description: This topic explains how to configure sales and purchase invoices for a company in Uruguay.
 author: Cpicon85
-ms.date: 12/07/2023
+ms.date: 12/08/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-cpicon
@@ -11,12 +11,11 @@ ms.custom: bap-template
 
 # Configure sales and purchase invoices for Uruguay
 
-
-This article explains how to start to use fiscal documents that are specific to Uruguay through the Latin American (LATAM) features in purchase and sales transactions. An invoice is represented by a **document class** instead of an invoice transaction, and by all the information that a fiscal invoice document contains and can be related to. This information includes the typification, sales point, branch, invoice number structure, and additional fields that should be completed during posting.
+This article explains how to use fiscal documents that are specific to Uruguay through the Latin American (LATAM) features in purchase and sales transactions. An invoice is represented by a **document class** instead of an invoice transaction, and by all the information that a fiscal invoice document contains and can be related to. This information includes the typification, sales point, branch, invoice number structure, and additional fields that should be completed during posting.
 
 ## Sales invoice configuration
 
-Configure the following pages to use them in future sales transactions:
+Configure the following pages for use in future sales transactions:
 
 - Document class type
 - Document class letter
