@@ -2,7 +2,7 @@
 title: Set up a legal entity and tax information for Uruguay
 description: This article explains how to set up a legal entity and tax information for a company in Uruguay.
 author: Cpicon85
-ms.date: 12/07/2023
+ms.date: 12/08/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-cpicon
@@ -23,7 +23,7 @@ Before you begin, open the **Feature management** workspace, and verify that the
 
 ## Set up tax information
 
-1. [Create a document class letter](ltm-core-document-class-letter.md) without a prefix. This document class letter will be used in taxpayer and document class configurations.
+1. [Create a document class letter](ltm-core-document-class-letter.md) without a prefix. This document class letter is used in taxpayer and document class configurations.
 2. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
 3. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **RUT** (tax identification), which is one of the tax ID types for Uruguay.
 4. In the **Format** field, enter **XXXXXXXXXXXX**. For more information, see [Tax ID types for Latin America](ltm-core-tax-id-type.md).
