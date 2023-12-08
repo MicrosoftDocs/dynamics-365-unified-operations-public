@@ -161,9 +161,10 @@ For each row and column, you can either assign a style that you set in the visua
 
 ### Formatting
 
+The following options are available in the **Format** tab of the **Visualizations** pane within PowerBI.
 #### Row and Column Styles
 
-In the Row/Column Style section, you can define row and column styles that are set for any row that has been assigned this style. You can assign these to the calculations and achieve a format option applies to all items that use this style e.g. text formats: bold, color, underlines, overlines etc.
+In the **Row/Column Style** section, you can define row and column styles that are set for any row that has been assigned this style. You can assign these to the calculations and achieve a format option applies to all items that use this style e.g. text formats: bold, color, underlines, overlines etc.  Once the style has been set, select the row in the visual and select the **Style** from the header of the report, while in **edit** mode.
 
 #### Conditional Formatting
 
@@ -171,7 +172,7 @@ In the Conditional Formatting property of the visual, you can setup up to three 
 
 #### Row/ Column Spacing
 
-Using a right-click you can increase the space between that row/column.
+Using a right-click on the column header, you can increase the space between that row/column.
 
 #### Variance Visualization according to IBCS
 
