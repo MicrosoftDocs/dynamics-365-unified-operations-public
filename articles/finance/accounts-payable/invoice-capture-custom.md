@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice capture custom fields
-description: This article provides information about using custom fields in the Invoice capture solution.
+description: This article explains how to use custom fields in the Invoice capture solution.
 author: sunfzam
 ms.date: 12/07/2023
 ms.topic: overview
@@ -31,61 +31,67 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about using custom fields in Invoice capture.
+This article explains how to use custom fields in the Invoice capture solution.
 
-## Overview  
+Invoice capture introduced standard fields on the header and lines to address the processing of invoices. However, customers often have additional fields that must be supported to meet business requirements. The **Support custom fields in Invoice capture** feature can create additional fields that have different properties. The value of these fields can be either automatically extracted from the original document or manually entered by the reviewer.
 
-Invoice capture introduced standard fields on the header and lines to address processing invoices. Customers often have additional fields that need to be supported to meet business requirements. The **Support custom fields in Invoice capture** feature can create additional fields with different properties. The value of these fields can be either automatically extracted from the original document or manually entered by the reviewer. 
+## Custom field properties
 
-### Custom fields properties 
+Invoice capture has two scopes for the invoice fields: Header and Line.
 
-Invoice capture has two scopes of the invoice fields: Header and Line.  
-Invoice capture has three field groups: **General**, **Tax**, **Charges**. **Tax** and **Charges** are used to increase the number of lines in **Tax** and **Charges** panels. **Tax** and **Charges** on the line level aren't supported.  
+Invoice capture has three field groups: **General**, **Tax**, and **Charges**. **Tax** and **Charges** are used to increase the number of lines in the **Tax** and **Charges** panes. **Tax** and **Charges** aren't supported at the line level.
 
-### Data types  
+## Data types
 
-Invoice capture support three data types for custom fields: 
- - Single line of text
- - Date and time (date only)
- - Currency 
+Invoice capture support three data types for custom fields:
 
-### Implementation  
+- Single line of text
+- Date and time (date only)
+- Currency 
 
-To create a new solution and add custom fields, follow these steps: 
-1. Go to https://make.powerapps.com/ and select the target environment.
-2. Click **Solutions**, click **+ New solution**.
-3. Open the solution and add the following tables: 
- - Staging invoice header
- - Staging invoice line
- - User-defined field setting 
-4. Select the **Staging invoice header** or **Staging invoice line** table, click **Next**.
-5. Click **Add**.
-6. Select the table, click **New > Column**.
-7. Enter the field name and select the data type, click **Save**.
-8. Find the created column and record the logical name. 
-9. Select **User defined field setting**, click **Edit**.
-10. Click **New row using form**. Enter the value for fields properties and click **Save**. 
+## Implementation
 
-To check the details for each field, follow these steps:
-a. In Invoice capture, go to **Setup system** > **Manage configuration group**.
-b. Select the configuration group and add the fields by clicking **Manage visible fields**.
-c. In the side-by-side viewer, the added fields will be displayed to enter values.  
+To create a new solution and add custom fields, follow these steps.
 
-### Map custom fields 
+1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/), and select the target environment.
+2. Select **Solutions**, and then select **New solution**.
+3. Open the solution, and add the following tables:
 
-The value of custom fields must be mapped to the corresponding fields in Dynamics 365 Finance using a custom extension.  
+    - Staging invoice header
+    - Staging invoice line
+    - User-defined field setting
 
-Considering the following example. In invoice capture, there is a field with logical name “cus_udfdate”. This field will be mapped to the CashDiscountDate field in the invoice header of Dynamics 365 Finance. 
-Below is the sample code: 
+4. Select the **Staging invoice header** or **Staging invoice line** table, and then select **Next**.
+5. Select **Add**.
+6. Select the table, and then select **New** \> **Column**.
+7. Enter the field name, select the data type, and then select **Save**.
+8. Find the column that you just created, and make a note of the logical name.
+9. Select **User defined field setting**, and then select **Edit**.
+10. Select **New row using form**, enter the value for field properties, and then select **Save**.
 
+To review the details for each field, follow these steps.
+
+1. In Invoice capture, go to **Setup system** \> **Manage configuration group**.
+2. Select the configuration group, and then select **Manage visible fields** to add the fields.
+3. The side-by-side viewer shows the added fields, and you can enter values.
+
+## Map custom fields
+
+The value of custom fields must be mapped to the corresponding fields in Microsoft Dynamics 365 Finance. You must use a custom extension to do this mapping.
+
+For example, in Invoice capture, there's a field that has the logical name **cus\_udfdate**. This field will be mapped to the **CashDiscountDate** field in the invoice header of Dynamics 365 Finance.
+
+Here's the sample code.
+
+```
 using Newtonsoft.Json.Linq; 
 [ExtensionOf(classStr(VendInvoiceCapInvDataUpdateHandler))] 
 internal final class VendInvoiceCapInvDataUpdateHandler _Extension 
 { 
     public static void updateInvoiceHeader(VendorInvoiceHeaderEntity _header, JArray _attributes, CapturedInvoiceType _invoiceType) 
     { 
-        next updateInvoiceHeader(_header, _attributes, _invoiceType);   
-        // extend logic based on invoice type       
+        next updateInvoiceHeader(_header, _attributes, _invoiceType); 
+        // extend logic based on invoice type 
         if (_invoiceType == CapturedInvoiceType::CostInvoice) 
         { 
             System.Collections.IEnumerator iterator = _attributes.GetEnumerator(); 
@@ -104,5 +110,5 @@ internal final class VendInvoiceCapInvDataUpdateHandler _Extension
             _header.update(); 
         } 
     } 
-} 
-
+}
+```
