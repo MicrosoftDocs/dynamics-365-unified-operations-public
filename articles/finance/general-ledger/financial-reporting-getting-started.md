@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 11/04/2023
+ms.date: 11/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get started with Financial reporting 
+# Get started with financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
-This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
+This article describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
 > [!NOTE]
 > Financial reporting is now available through an add-in. Therefore, the default availability of Financial reporting through Microsoft Dynamics 365 Finance has changed. If you're an existing customer, Microsoft provides the new Financial reporting add-in in your Microsoft Dynamics Lifecycle Services environment. If you're currently using the **Financial reporting** module, there's no impact on your environments or your organization's ability to run financial reports.
@@ -40,7 +40,7 @@ This article describes where to access Financial reporting and how to use the fi
 
 The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 	
-1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. 
+1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. For more information, see [Configure Microsoft Power Platform](../business-performance-analytics/configure-bpa.md#configure-microsoft-power-platform) 
 2. Select **Install a new add-in**, and search for **Financial reporting**.
 3. Agree to the terms, and then select **Install**.
 
