@@ -40,7 +40,7 @@ The **Reporting** visual is a powerful tool designed to craft polished financial
 - **Insightful Variance Views** - Gain deeper insights into financial data through variance views included within the reports, aiding in comprehensive financial analysis and decision-making.
 
 ## Prerequisites and installation
-For more information about prerequisites and installation, see [Install Power BI visuals](PowerBI-visual-install).
+For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
 
 > [!NOTE]
 > Because the **Reporting** visual doesn't write data back Dataverse, the visual doesn't require API details to be entered.
