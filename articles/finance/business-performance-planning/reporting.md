@@ -28,24 +28,24 @@ ms.dyn365.ops.version:
 ---
 # Reporting visual
 
-This article describes how to use the **Reporting** visual in the Business performance planning application. To fully use the planning application, you must also install Power BI visuals. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
+This article describes how to use the **Reporting** visual in the Business performance planning application. To fully use the planning application, you must install Power BI visuals. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 The **Reporting** visual is a powerful tool designed to craft polished financial reports seamlessly within Power BI. You can use the **Reporting** visual to create comprehensive financial statements like cash flow statements, income statements, balance sheets, and more, offering advanced row and column formatting capabilities.
 
 ## Benefits
 
-- **Tailored Financial Reports** - Craft detailed financial reports with precision by using advanced row and column formatting options.
-- **Custom Calculations Integration** - Seamlessly integrate custom calculations and subtotals at any juncture within the report, ensuring accuracy and tailored insights.
-- **Professional Data Presentation** - Enhance the presentation of financial data by utilizing advanced formatting features for a polished and professional appearance.
-- **Insightful Variance Views** - Gain deeper insights into financial data through variance views included within the reports, aiding in comprehensive financial analysis and decision-making.
+- **Tailored financial reports** - Craft detailed financial reports with precision by using advanced row and column formatting options.
+- **Custom calculations integration** - Seamlessly integrate custom calculations and subtotals at any juncture within the report, ensuring accuracy and tailored insights.
+- **Professional data presentation** - Enhance the presentation of financial data by utilizing advanced formatting features for a polished and professional appearance.
+- **Insightful variance views** - Gain deeper insights into financial data through variance views included within the reports, aiding in comprehensive financial analysis and decision-making.
 
 ## Prerequisites and installation
-For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
+For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install.md).
 
 > [!NOTE]
-> Because the **Reporting** visual doesn't write data back Dataverse, the visual doesn't require API details to be entered.
+> Because the reporting visual doesn't write data back Dataverse, the visual doesn't require API details to be entered.
 
-### Using the Reporting visual
+### Using the reporting visual
 You can use this visual to add subtotals and custom calculations within the financial report. By utilizing the enhanced formatting options, you can create a professional and refined presentation of financial data. You can also include variance views in the reports, allowing for a deeper understanding an analysis of financial data.
 
 ### Initial setup
@@ -147,7 +147,7 @@ For each row and column, you can assign a style that you set in the visual prope
 
 ### Formatting
 
-The following options are available on the **Format** tab of the **Visualizations** pane in PowerBI.
+The following options are available on the **Format** tab of the **Visualizations** pane in Power BI.
 
 **Row and column styles**
 
