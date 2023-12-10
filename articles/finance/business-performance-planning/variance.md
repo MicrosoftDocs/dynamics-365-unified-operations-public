@@ -42,7 +42,7 @@ It aims to bridge the gap between budgeted and actual values, facilitating root 
  - Enhanced planning insights - Enables users to understand discrepancies, fostering informed adjustments for improved future planning cycles.
 
 ## Prerequisites and installation
-For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install).
+For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install.md).
 
 ### Using the Visual
 
