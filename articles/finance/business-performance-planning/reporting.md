@@ -59,13 +59,13 @@ To begin using the visual, place the **Amount** column from your cube into the *
 
 To add custom calculations, select **Edit** or the **ellipses** in the **Visual settings** in the top right corner of the visual.
 
-**Row Calculations** 
+**Row calculations** 
 In the **Edit** section, add new rows by right-clicking on the position where you want to add.
 
-**Column Calculations**  
+**Column calculations**  
 Right-click on the column header where you want to add your calculation and select **Before** or **After**. Next, select the column header items that you want to use in the calculation. In the Editor, you can see a list of all the row and column calculations. To edit the calculations, select the item that you want to work with.
 
-### Supported Operators
+### Supported operators
 
 | **Operator** | **Name**               | **Syntax** | **Associativity** | **Example**          | **Result**    |
 |--------------|------------------------|------------|-------------------|----------------------|---------------|
@@ -118,13 +118,13 @@ The operators have the following precedence, from highest to lowest.
 
 | Operators                | Description                                                                     |
 |--------------------------|---------------------------------------------------------------------------------|
-| (...) [...] {...}        | Grouping Matrix Object                                                          |
-| x(...) x[...] obj.prop : | Function call Matrix index Property accessor Key/value separator                |
+| (...) [...] {...}        | Grouping matrix object                                                          |
+| x(...) x[...] obj.prop : | Function call matrix index property accessor Key/value separator                |
 | '                        | Matrix transpose                                                                |
 | !                        | Factorial                                                                       |
 | \^, .\^                  | Exponentiation                                                                  |
 | +, -, \~, not            | Unary plus, unary minus, bitwise not, logical not                               |
-| See section below        | Implicit multiplication                                                         |
+| See next section         | Implicit multiplication                                                         |
 | \*, /, .\*, ./, %, mod   | Multiply, divide, modulus                                                       |
 | +, -                     | Add, subtract                                                                   |
 | :                        | Range                                                                           |
@@ -155,7 +155,7 @@ In the **Row/Column Style** section, you can define row and column styles that a
 
 **Conditional formatting**
 
-In the **Conditional Formatting** property of the visual, you can set up three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported Operators.** For example, Val \> 2000 formats all values greater than 2000 with the format for that measure.
+In the **Conditional formatting** property of the visual, you can set up three flexible rules for conditional formatting. The rule is set up using the keyword **Val** to refer to the value of the specific measure in the visual with all mathematical options as outlined in **Supported operators.** For example, Val \> 2000 formats all values greater than 2000 with the format for that measure.
 
 #### Row/column spacing
 
@@ -173,16 +173,16 @@ The **Reporting** visual supports the display of cell-based comments that can be
 
 #### Measure header
 
-In the **Measure header** section, in the visual properties, you can set the format for a measure underline to clearly identify a particular scenario type according to the IBCS guide.
+In the **Measure** header section, in the visual properties, you can set the format for a measure underline to clearly identify a particular scenario type according to the IBCS guide.
 
 #### Data-driven styles
 
 Automatically apply format styles that include:
 
 - Number Formats (.NET number format conventions)
-- Color (Hex Code or color name)
-- FontSize (integer number)
-- Font-weight (bold, n, italic or integer)
+- Color (Hex code or color name)
+- FontSize (Integer number)
+- Font-weight (Bold, n, italic or integer)
 - FontStyle (Italic, oblique, normal)
 - LineFormat (u= 1 underline, u2= 2 underlines, o = 1 over line, o2 = 2 over lines)
 
