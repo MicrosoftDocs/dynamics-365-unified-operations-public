@@ -134,7 +134,7 @@ For example:
 4.  Define calculation using any of the supported operators and the references **val1** to **valn**. Val1 to valn refers to the respective value field in the visual. For example, the first field amount is referred to as **val1,** the second field **PY AC** is referred to as **val2**.
 If you add the Amount, PY AC and the placeholder calculation PY AC % as **val1/val2**. Val1 refers to "Amount" and val2 to "PY AC" and this will calculate the relative percentage.
 
-##### Supported Operators
+##### Supported operators
 
 | **Operator** | **Name**               | **Syntax** | **Associativity** | **Example**          | **Result**    |
 |--------------|------------------------|------------|-------------------|----------------------|---------------|
