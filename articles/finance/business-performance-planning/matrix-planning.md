@@ -44,24 +44,24 @@ The matrix planning visual is a custom Power BI visual built to transform the pl
 
 ### Prerequisites and installation
 
-For more information about prerequisies and installation, see [Install planning visuals](powerBI-visual-install.md).
+For more information about prerequisites and installation, see [Install planning visuals](powerBI-visual-install.md).
 
 
 ### Installation Guide
 
 1.  Open Power BI: Launch the Power BI application and access your desired workspace or report where you intend to configure the Matrix Planner.
-2.  Confirm that the matrix visual has been downloaded from AppSource. See prerequisite step 1 above.  
+2.  Download the matrix visual from AppSource. 
 3.  Position the visual - Drag the matrix planning visual to the report canvas.
 4.  Add your API base URL and cube name to the API details window of the visual. This provides planning the details it needs to read and write data from the cube.
-5.  To add API details, select the **Format visual** tab in the report canvas. The API base URL is the environment URL where planning has been installed. The environment URL must be preceded by https://. For example: https://environment.d365.com. For more information, see [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name).
+5.  To add API details, select the **Format visual** tab in the report canvas. The API base URL is the environment URL where planning is installed. The environment URL must be preceded with https://. For example: https://environment.d365.com. For more information, see [Find your environment and organization ID and name](/power-platform/admin/determine-org-id-name).
 
 >[!Note]
 >The visual must be selected in the report canvas for the **Format visual** tab to display.
 
-6.  Access visualization pane - Select and locate the visualization pane for the visual. Enter names for the rows, columns, and filters fields in the visualization pane. These columns provides the structure (X and Y axis) for your matrix. 
+6.  Access visualization pane - Select and locate the visualization pane for the visual. Enter names for the rows, columns, and filters fields in the visualization pane. These columns provide the structure (X and Y axis) for your matrix. 
 7.  Structure the matrix - Arrange the fields in the rows and columns of the matrix to define its visual structure. Fields placed in rows and columns define the matrix's axis. Any fields not utilized in these sections are used as filter context and should be added to the **Filters** field in the visualization pane.
 8.  Define the matrix shape - Determine the shape of the matrix table by placing values in the rows and columns. For dimensions intended solely as filter context (not part of the X or Y axis), add these to the **Filters** parameter in the visualization pane.
-9. Set the write back coordinates - Provide dimensions and variables to allow the matrix planning visual to establish write back coordinates necessary for building planning and budgeting models effectively.
+9. Set the write-back coordinates - Provide dimensions and variables to allow the matrix planning visual to establish write-back coordinates necessary for building planning and budgeting models effectively.
 10. Assign values variable - Assign the **Amount** column from your cube to the values variable in the visualization pane. This step ensures the inclusion of specific data values within the matrix planning visual.
 11. Verify the configuration - Confirm the configuration setup in the visualization pane to ensure all necessary fields, dimensions, and variables are correctly assigned and placed within the rows, columns, filters, and values sections.
 12. Save and apply changes - Save the changes made to the configuration. Apply the settings to activate the matrix planning visual within your Power BI dashboard or report.
@@ -69,7 +69,7 @@ For more information about prerequisies and installation, see [Install planning 
 >[!Note]
 >Add all dimensions to the visual.
 
-It's recommended an attribute from every dimension of the cube that is specified in the visual settings is used in the visual (either in the row, column or filters section). Otherwise, the write-back is applied on the "All" level to all dimensions not used in the visual. This results in writing excessive numbers of records into the database.
+An attribute from every dimension of the cube that is specified in the visual settings should be used in the visual (either in the row, column or filters section). Otherwise, the write-back is applied on the "All" level to all dimensions not used in the visual. This results in writing excessive numbers of records into the database.
 
 
 ### Entering data
@@ -112,10 +112,10 @@ This comment count calculated column measure needs to be added to the **Comment 
 
 #### Conditional formatting
 
-The Conditional formatting section in the Power BI **Format pane** configures conditional formatting for background and font color for each value measure in the Matrix planning visual.
-The definition of the conditional format criteria uses the **Val** variable. You can use any mathematical operation to set up conditional format as required:
--   Val \> 10; will apply the formatting set for the specific measure for all values greater than 10.
--   Val \>=0 or Val \<=0; will apply the format for all values in the measure.
+The **Conditional formatting** section in the Power BI **Format pane** configures conditional formatting for background and font color for each value measure in the matrix planning visual.
+The definition of the conditional format criteria uses the **Val** variable. You can use any mathematical operation to set up conditional format as needed:
+-   Val \> 10; applies the formatting set for the specific measure for all values greater than 10.
+-   Val \>=0 or Val \<=0; applies the format for all values in the measure.
 
 
 #### Custom totals
@@ -128,11 +128,11 @@ The definition of the conditional format criteria uses the **Val** variable. You
 
 For example:
 
-1.  Create a measure with a calculation and any definition e.g. "PY AC % = 1" in Power BI.
+1.  Create a measure with a calculation and any definition. For example, PY AC % = 1 in Power BI.
 2.  Drag that measure into the value field of the visual.
-3.  Go to the Power BI **Values calculation** section of the matrix planning visual in the **Formatting** pane and choose **Custom**.
+3.  In the Power BI **Values calculation** section of the matrix planning visual in the **Formatting** pane and choose **Custom**.
 4.  Define calculation using any of the supported operators and the references **val1** to **valn**. Val1 to valn refers to the respective value field in the visual. For example, the first field amount is referred to as **val1,** the second field **PY AC** is referred to as **val2**.
-For example, if you have added Amount, PY AC and the placeholder calculation PY AC % as **val1/val2** (val1 referring to "Amount" and val2 to "PY AC"); will calculate the relative percentage.
+If you add the Amount, PY AC and the placeholder calculation PY AC % as **val1/val2**. Val1 refers to "Amount" and val2 to "PY AC" and this will calculate the relative percentage.
 
 ##### Supported Operators
 
@@ -195,10 +195,10 @@ Here:
 
 #### Column measure override 
 
-In scenarios where you need to write back on different measures that aren't part of a measure dimension, you can set the coordinates for the column that should be used when a value is written back on that column.
+In scenarios where you write back on different measures that aren't part of a measure dimension, set the coordinates for the column to be used when a value is written back on that column.
 
 -   Click **Edit** on the top right of the visual.
--   Click on the measure where you want to apply to override metadata. Set the dimension coordinates that should be used when a value is written on that column.
+-   Click on the measure to apply to override metadata. Set the dimension coordinates to be used when a value is written on that column.
 -   Click **Sync settings** to apply the changes.
 
 >[!Note]
@@ -206,46 +206,42 @@ In scenarios where you need to write back on different measures that aren't part
 
 #### Multi-select mode
 
-Multi select mode enables you to edit multiple cells at the same time.
+Multi-select mode enables you to edit multiple cells at the same time.
 -   To write the same value to every selected cell. Click **Multiselect**.
--   To distribute the value across the selected cells according to their current distribution. To use this mode, use the **s** prefix. For example, s15000 will distribute 15000 across the three selected cells. On the right side of the **Save** button, you can see the total value of the selected cells.
+-   To distribute the value across the selected cells according to their current distribution, use the **s** prefix. For example, s15000 distributes 15000 across the three selected cells. On the right side of the **Save** button, the total value of the selected cells is displayed.
 
 ### Subtotals formatting
 
-It is possible to have different formats for each level of subtotal rows in the matrix planning visual.
+It's possible to have different formats for each level of subtotal rows in the matrix planning visual.
 
 -   One level subtotal
 -   Two level subtotals
 
-#### DAX-based subtotal
+#### DAX based subtotal
 
-It is possible to use DAX measures for rollups and subtotals. The subtotal format for the lowest level of the hierarchy can't be changed.
+It's possible to use DAX measures for rollups and subtotals. The subtotal format for the lowest level of the hierarchy can't be changed.
 
 #### Grand total conditional formatting
 
 Using the Grid UI setting, change the background color of the grand total column.
-Default green color that has been set for the columns from the Grid UI option, you can use the **GT conditional formatting** option and set a new format.
+Default green color is set for the columns from the Grid UI option, you can use the **GT conditional formatting** option and set a new format.
 
-*Amount GT Format Formula*
+ - Amount GT format formula
 
 -   Val = Val; Use this formula to set the new format for all the grand total rows.
 -   Val \< Val; Set the format for a specific range of values.
 -   Val \> Val; Set the format for a specific range of values.
 
-*Amount Suffix icon*
+Amount suffix icon - this allows you to use ASCII or HTML code.
 
-It allows you to put an ASCII or HTML code.
+ - Amount GT format formula priority level - The priority of the Amount GT format formula 1 is higher than others.
 
-*Amount GT format formula Priority level*
-
-It's important to know that the priority of the Amount GT format formula 1 is higher than others.
-
--   Same formulas - In this example, two formulas are the same but only the first one has been applied.
--   Different formulas - In this example, two different formulas have been applied for the amount.
--   Three formulas added - In this example, three formulas have been added.
+-   Same formulas - In this example, two formulas are the same but only the first is applied.
+-   Different formulas - In this example, two different formulas are applied for the amount.
+-   Three formulas added - In this example, three formulas are added.
 
 #### Undo
-You can undo data entry changes before clicking **Save**. Undo data entry changes by right clicking on the respective cell and select the undo option. This shows the previous value at the top of the context menu. 
+You can undo data entry changes before clicking **Save**. To undo data entry changes, right-click the respective cell, select **Undo**. This shows the previous value at the top of the context menu. 
 
 #### Dynamic locking
 
