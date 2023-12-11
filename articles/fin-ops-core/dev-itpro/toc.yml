@@ -1197,19 +1197,10 @@ items:
               href: data-entities/dual-write/connection-setup.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
-            #--TODO ungroup this (a lot of the articles are removed) 
-            - name: Enable dual-write for existing finance and operations apps
-              items:
-                - name: Enable dual-write for existing finance and operations apps
-                  href: data-entities/dual-write/enable-dual-write.md
-                - name: Dual-write health check
-                  href: data-entities/dual-write/dual-write-health-check.md
-                - name: System requirements and prerequisites
-                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                - name: How to use the dual-write wizard to link your environments
-                  href: data-entities/dual-write/link-your-environment.md
-                - name: Enable table map for dual-write
-                  href: data-entities/dual-write/enable-entity-map.md
+            - name: Dual-write health check
+              href: data-entities/dual-write/dual-write-health-check.md
+            - name: Enable table map for dual-write
+              href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
               items:
                 - name: Separated dual-write application orchestration package
