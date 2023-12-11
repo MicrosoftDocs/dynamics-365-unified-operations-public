@@ -45,7 +45,7 @@ To define loyalty cards in Commerce headquarters, follow these steps.
 
 - The loyalty card tiers could be updated manually. In **Loyalty program** grid, select **Add line** to add a loyalty program that's associated with the card. You could specify loyalty program, loyalty tier, start date and end date. select **Remove line** to remove a loyalty program and tier. If you want to update an existing loyalty program and tier, you need remove it first and then add it back.
 
-- The loyalty card tiers could also be updated automatically. When a earn, return earn or adjustment transaction happened in this loyalty card, all the loyalty card tiers will be recalculated automatically. You could also schedule the **Update loyalty card tiers** to update loyalty tiers for all cards periodically.
+- The loyalty card tiers could also be updated automatically. When a earn, return earn or adjustment transaction happened in this loyalty card, all the loyalty card tiers will be recalculated automatically. You could also schedule the **Update loyalty card tiers** batch job to update loyalty tiers for all cards periodically.
 
 - The **Active** tick is calculated automatically based on today's date. For each loyalty program, it will select effective and max tier as **Active**.
 
