@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 
 > [!IMPORTANT]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change.
+>
+> Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred
 
 As businesses grow and evolve, planning becomes a critical part of putting strategic goals into operation. However, planning is often complex and time consuming because of disconnected systems, large volumes of data, and manual processes. These issues lead to inaccuracies, delays, and a high total cost of ownership (TCO). At a time when businesses are looking to take full advantage of key opportunities, they lack visibility into data relationships and any outliers.
 
