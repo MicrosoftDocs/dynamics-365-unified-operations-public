@@ -51,7 +51,7 @@ This procedure shows how to set up a loyalty program with two loyalty tiers. Thi
     * Tier rules define the minimum number of a reward point needed to be earned during a time period to qualify for the tier.  
 19. Toggle the expansion of the Tier rules section.
 20. Click New.
-    * You can have more than one tier rule per tier. For example, you could have three different criteria to earn a tier; by spending $500 in one month, by spending $1000 over one year, and by having 20 transactions in one year. To do this, you would need to create three tier rules. These three tier rules are OR relationship. It means when calculating a loyalty card tier, any tier rule is met for the card, the loyalty card could be in this tier.
+    * You can have more than one tier rule per tier. For example, you could have three different criteria to earn a tier; by spending $500 in one month, by spending $1000 over one year, and by having 20 transactions in one year. To do this, you would need to create three tier rules. These three tier rules are **OR relationship**. It means when calculating a loyalty card tier, any tier rule is met for the card, the loyalty card could be in this tier.
 21. In the Reward point field, click the drop-down button to open the lookup.
     * This should be a non-redeemable loyalty reward point.  
 22. In the list, click the link in the selected row.
