@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization results (planned orders, quantities and dates) might differ from results from the deprecated master planning engine. The differences can be caused by pending features. This article lists features that Planning Optimization doesn't yet support and that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page.
+Planning Optimization results (planned orders, quantities, and dates) might differ from results from the deprecated master planning engine. The differences can be caused by pending features. This article lists features that Planning Optimization doesn't yet support and that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page.
 
 | Feature | Current behavior in Planning Optimization |
 |---|---|
