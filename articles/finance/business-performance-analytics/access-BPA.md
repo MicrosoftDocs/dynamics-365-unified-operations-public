@@ -6,7 +6,7 @@ description: This article explains how to access business performance analytics.
 author: jkhaira7
 ms.author: jkhaira
 ms.reviewer: twheeloc 
-ms.date: 09/20/2023
+ms.date: 12/12/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
