@@ -155,15 +155,15 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 1. After you finish setting up the optional features you selected, go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
 > [!NOTE]
-> If, on enabling the Inventory Visibility integration job, you get an error that indicates that you need to update the partition schema, see [update partition schema to two](#update-partition-schema-to-two-if-you-get-an-error-when-enabling-the-inventory-visibility-integration-job) for instructions.
+> If, on enabling the Inventory Visibility integration job, you get an error that indicates that you need to update the partition schema, see [Update partition schema to two if you get an error when enabling the Inventory Visibility integration job](#update-partition-two) for instructions.
 
-### Update partition schema to two if you get an error when enabling the Inventory Visibility integration job
+### <a name="update-partition-two"></a>Update partition schema to two if you get an error when enabling the Inventory Visibility integration job
 
-If you get the following error when you try to enable Inventory Visibility integration batch job from Supply Chain Management, your [partition schema](inventory-visibility-power-platform.md#partition-configuration) should be changed to avoid out of memory issue.
+If you get the following error when you try to enable Inventory Visibility integration batch job from Supply Chain Management, your [partition schema](inventory-visibility-power-platform.md#partition-configuration) should be changed to avoid out of memory issues.
 
-> Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility add-in. Contact Inventory Visibility Support Team (inventvisibilitysupp@microsoft.com) for more info.
+> Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility add-in. Contact Inventory Visibility Support Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for more info.
 
-If you don’t get this error, you can ignore this section.
+If you don't get this error, you can ignore this section.
 
 Follow these steps to update your partition schema.
 
@@ -174,7 +174,7 @@ Follow these steps to update your partition schema.
 
 1. Call the `Post` API with a body of `none` to change partition schema (using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 
-1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature and [update configuration](inventory-visibility-power-platform.md#update-configuration).
+1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature and [update the configuration](inventory-visibility-power-platform.md#update-configuration).
 
 1. In Power Apps, [check runtime configuration](inventory-visibility-power-platform.md#endpoint). The field `CachePartitonIdVersion` should show a value of `ByLocationAndProductIdMod64`.
 
