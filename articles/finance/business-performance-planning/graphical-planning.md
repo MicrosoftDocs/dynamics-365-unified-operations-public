@@ -2,7 +2,7 @@
 # required metadata
 
 title: Graphical planning visual
-description: This article describes how to use the graphical planning visual in the Business performance planning application.
+description: This article describes how to use the Graphical planning visual in the Business performance planning application.
 author: ShielaSogge
 ms.date: 12/08/2023
 ms.topic: article
@@ -30,51 +30,47 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to use the graphical planning visual in the Business performance planning application. To fully use the planning application, you must also install Power BI visuals. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals/).
+This article describes how to use the **Graphical planning** visual in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals/).
 
-You can use the graphical planning visual to dynamically adjust underlying values by directly manipulating graphs and charts. Unlike traditional table-based data manipulation, this visual allows for precise adjustments through interactive chart interactions. The visual serves as an intuitive tool for presenting forecasts and budgets, facilitating a hands-on approach for stakeholders less familiar with detailed data.
+You can use the **Graphical planning** visual to dynamically adjust underlying values by directly manipulating charts. Unlike traditional table-based data manipulation, this visual allows for precise adjustments through chart interactions. It serves as an intuitive tool for presenting forecasts and budgets, and therefore facilitates a hands-on approach for stakeholders who are less familiar with detailed data.
 
 ## Purpose and benefits
 
-The graphical planning visual streamlines the process of adjusting values in forecasts and budgets and offers an intuitive and visually interactive method for you to engage with and modify underlying data represented in charts and graphs. This includes:
+The **Graphical planning** visual streamlines the process of adjusting values in forecasts and budgets. It provides an intuitive and visually interactive method for engaging with and modifying the underlying data that charts represent. Here are some of the benefits:
 
-- **Interactive Data Manipulation** - Seamlessly interact with visual elements, such as line charts, by directly adjusting data points to reflect business assumptions and changes in real time.
-- **Enhanced Visualization for Decision-making** - Provide a visually intuitive tool for senior leadership to engage with forecasts and budgets, aiding in decision-making processes through hands-on data interaction.
+- **Interactive data manipulation** – Seamlessly interact with visual elements, such as line charts, by directly adjusting data points so that they reflect business assumptions and changes in real time.
+- **Enhanced visualization for decision-making** – Senior leadership gets a visually intuitive tool that it can use to engage with forecasts and budgets. In this way, the visual helps with decision-making processes.
 
-## Set up the visual
+## Set up the Graphical planning visual
 
-1.  In Power BI, navigate to the workspace or report where you want to configure the visual.
-2.  Drag the **Graphical planning visual** to the report canvas.
-3.  Add your **API Base URL** to the **API Details** window of the visual.
-4.  In the **Amount** column, enter a value the **Value** variable.
-5.  Define the **X and Y axes** using the **Legend** variable, incorporating name columns from the dimensions you want to plot on the chart.
+1. In Power BI, go to the workspace or report where you want to configure the visual.
+2. Drag the **Graphical planning** visual onto the report canvas.
+3. In the **API Details** window for the visual, add your API base URL.
+4. In the **Amount** column, enter a value for the **Value** variable.
+5. Define the x-axis and y-axis by using the **Legend** variable. Incorporate name columns from the dimensions that you want to plot on the chart.
 
-### Use the visual
+## Use the Graphical planning visual
 
-After you install the visual and it's set up on the Power BI canvas, complete the following steps to begin using it in your planning.
+After you install the visual and set it up on the Power BI canvas, follow these steps to begin to use it in your planning.
 
-1. Select the **Edit** pencil icon to enter edit mode.
+1. Select the **Edit** button (pencil symbol) to enter edit mode.
 2. On the line chart, drag points to adjust the values according to your business assumptions.
-3. Select the **Save** icon to instantly reflect the changes in the data. The automatic update provides a more intuitive and visually appealing planning tool for clients and teams.
+3. Select the **Save** button to make the data instantly reflect your changes. The automatic update provides a more intuitive and visually appealing planning tool for clients and teams.
 
 ## Percentage entry
 
-In addition to changing the data points by using absolute numbers, you can switch to **Percentage** mode and change the values as a percentage of the total.
+In addition to using absolute numbers to change the data points, you can switch to **Percentage** mode and then change the values as a percentage of the total.
 
 ## Lock totals
 
-Using the **Pin** icon, you can enable the **lock total** mode which locks the total of all values. Any adjustment in that mode changes the values of all other elements in the visual to keep the total constant.
+By selecting the **Pin** button, you can enable lock total mode, which locks the total of all values. Any adjustment that you make then changes the values of all other elements in the visual, so that the total remains constant.
 
 ## Visual formatting
 
-In the **Chart UI** properties, configure the background color, bar color, comparison bar color, font color, display units, and rounding to the nearest, which applies to the interval size when you drag on the bar.
+In the **Chart UI** properties, configure the background color, bar color, comparison bar color, font color, display units. In addition, you can configure rounding by dragging the bar to define an interval size. Values are then rounded to the nearest multiple of that interval.
 
 ## Total display
 
-In the **Chart UU** properties, use the **Show Total Title** and **Show Total Indicator** properties to display the total and \$ variance of the **Value** and **Comparison** scenarios.
-
-
-
-
+In the **Chart UI** properties, use the **Show Total Title** and **Show Total Indicator** properties to show the total and dollar variance of the **Value** and **Comparison** scenarios.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
