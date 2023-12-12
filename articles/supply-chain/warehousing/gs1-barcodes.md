@@ -219,7 +219,7 @@ The purpose of the GS1 standard is to enable workers to load several values when
 
 If no barcode data policy is assigned to a menu item, the system can capture only a single value. This value is applied to the mobile app input that is selected when the worker takes the scan, as specified by the generic barcode data setup. If a barcode data policy is assigned to the menu item, the system still uses the generic barcode data setup to map the first bar code value to the selected field. However, it can then capture additional field values, as specified by the applicable policy.
 
-### Load the standard barcode data policies
+### Load the standard specific barcode data policies
 
 To get started quickly, you can load a set of standard barcode data policies. You can then extend or edit the policies later, as you require.
 
@@ -231,7 +231,7 @@ To load the standard application identifiers, follow these steps.
 > [!WARNING]
 > The **Create default setup** command deletes all currently defined policies and replaces them with the standard set of policies. However, after the default setup is loaded, you can customize the policies as you require.
 
-### Set up custom barcode data policies
+### Set up custom specific barcode data policies
 
 > [!WARNING]
 > Some barcode data policies might not work with every mobile flow that you use. When you configure custom barcode data policies, you must test the mobile device flow by using different pieces of information that are scanned at different points in the flow. In this way, you can determine whether the flow behaves as you expect.
