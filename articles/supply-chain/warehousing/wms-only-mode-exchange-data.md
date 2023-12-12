@@ -4,7 +4,7 @@ description: This article explains how to exchange data and business events betw
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable
 ms.topic: how-to
 ms.date: 08/03/2023
 audience: Application User
@@ -43,22 +43,39 @@ This following illustration shows how the message processor fits into an integra
 
 ## <a name="master-data"></a>Master and reference data
 
-For consistent communication, several types of master and reference data must be synced and available to both systems. One way to import the required master data into Supply Chain Management is to use its [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required:
+For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can easily get imported into Microsoft Dynamics 365 Supply Chain Management via the `Product message`. This message will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems).
 
-- **Released products** – This data is required to create inbound and outbound shipment orders. For more information about how to import product information, see [Product data entities](../pim/data-entities.md) and [Overview of ProductInformationManagement](/common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview).
-- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management. Therefore, at least one group must be available. Each group that you use with Warehouse management only mode must have the following settings. These settings eliminate the need to set up any costing data for the products:
+Only one [source system record](wms-only-mode-setup.md#source-systems) can be recorded as the external system maintaining the product master data related to the unique reference for a **Release product/Item number**, this data can be viewed and manually maintained in the **Source system items** page.
+
+> [!TIP]
+> The *Source system item number* will be used for the communication between the systems which is useful when for example an external system uses an EAN barcode as the unique identification number linked to a *item/variant number* having a different value.
+
+Additionally you can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create a **Release product/Item number** going to be used in warehouse management processes. Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to get the mandatory reference fields assigned:
+
+- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management. Therefore, at least one group must be available. The group can control business processes for batch tracked item and it is recommended that each group that you use with Warehouse management only mode have the following settings. These settings eliminate the need to set up any costing data for the products:
 
     - **Inventory model** – Set this field to *Non-valuated*.
+
     - **Post physical inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
+
     - **Post financial inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
 
-- **Countries/regions** – Each [country/region](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) where you do business must be defined in Supply Chain Management. The records are used in outbound shipment orders to create addresses. You also need this data to [create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses. Depending on your [address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might have to create additional data before you can import order messages (for example, to support state/province and county combinations).
+-  **Item groups** - Can be used to group business processes, especially when using [product filter codes](filters-and-filter-codes). No account setup is needed when using *Non-valuated* inventory model group.
+
+- **Storage dimension groups** - Used to enable the use of storage inventory dimensions values like sites, warehouses, locations, and license plates. Make sure to enable the *Use warehouse management processes* parameter.
+
+- **Tracking dimension groups** - Used to enable the use of tracking inventory dimensions like owner, batch, and serial numbers. Note that the *Owner* dimension support must equal the company a warehouse is associated with, see more [here](wms-only-mode-overview.md#unsupported-processes).
+
+- **Reservation hierarchy** - Used to define which dimensions are getting reserved as part of an outbound shipment order reservation process. Dimensions placed below the *Location* dimension gets controlled by the warehouse management processes.
+
+- **Units** - Every quantity getting handled as part of the warehouse processes must get associated with a *Unit*. When using multiple units like Each, Box, Pallet for an item, make sure to define the *Inventory unit* as the smallest unit for an item.
+
+- **Unit sequence groups** - Used to define the sequence of units that can be used in warehouse operations. You can read more about the needed setup [here](unit-measure-stocking-policies.md).
 
 > [!NOTE]
-> When you're using the **Item - bar code** page to map items to [bar codes](../pim/tasks/create-bar-code-product.md), keep the following points in mind:
->
-> - For product variants, only the **Item number** field from the order line messages is used when message value mappings are applied for an item.
-> - Be sure to set the **Scanning** option on the **General** tab of the **Item - bar code** page to *Yes* for each bar code.
+> The `Product message` uses the [*Product data entities*](../pim/data-entities.md) which of cause can be used isolated as well to maintain the product master data. You can read more about the entities as part of the [Overview of Product Information Management](/common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview).
+
+To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses and import *Outbound shipment orders* you must as well have [**country/region**](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) defined in Supply Chain Management. The records are used in outbound shipment orders to create addresses. Depending on your [address setup](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might have to create additional data before you can import order messages (for example, to support state/province and county combinations).
 
 ### Consigner and consignee information
 

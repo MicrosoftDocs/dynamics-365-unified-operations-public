@@ -43,8 +43,8 @@ Use the **Source systems** page to set up each external system that you want to 
 
 1. On the header of the new or selected record, enter a name for the source system. The source system must include this name in each message that it sends to Supply Chain Management, and the name in the message must exactly match the value that you specify here.
 1. Configure other settings as required to control the shipment order import processes. Tooltip help is provided for each field. Hover your mouse pointer over a field's label to view the tooltip.
+1. In case another *Source system* maintains the [product master data](wms-only-mode-exchange-data.md#master-and-reference-data) you can specify this in the **Product master source system** field. On the Action Pane, select **Source system items** to view and manually maintain the product's master data mapping integration.
 1. On the Action Pane, select **Save**.
-1. On the Action Pane, select **Message value mapping** to open a dialog box where you can define how items and warehouses are uniquely identified in incoming documents. You can also specify whether loads for inbound shipment orders are automatically created as part of the setup on the **Inbound shipment order policies** FastTab. Tooltip help is provided for each field. When you've finished configuring settings in the dialog box, select **OK**.
 
 > [!NOTE]
 > You cannot find the menu items related the Warehouse management only mode functionality, nor search for them, before a record has been created in the *Source systems* page. The search of pages as well requires the current user's default company having a *Source system* record inserted.
