@@ -30,46 +30,49 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to use the **Allocation** visual in the Business performance planning application. To fully use the planning application, you must also install Power BI visuals. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
+This article describes how to use the **Allocation** visual in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
-Understanding allocation in the planning application is fundamental for accurate and informed business planning. The **Allocation** visual operates at different levels within dimensions, so you can effectively strategize and plan business operations with confidence.
+An understanding of allocation in the Business performance planning application is fundamental for accurate and informed business planning. The **Allocation** visual works at different levels within dimensions to help you effectively strategize and confidently plan business operations.
 
-## Understanding data levels in dimensions
+## Allocation at different data levels in dimensions
 
-In Dataverse, your data can have various levels underneath it. These levels depict hierarchical relationships. For example, a "parent" category may be followed by more specific "child" entities, such as a product category and its respective SKUs.
+In Dataverse, your data can have different levels beneath it. These levels define hierarchical relationships. For example, a "parent" category might be followed by more specific "child" entities. An example is a product category and its different stockkeeping units (SKUs).
 
-## Allocation at different levels
-
-When the planning application writes values at the "parent" level, it engages in allocation across all subsidiary "child" values. The allocation process varies based on certain conditions as described below.
+When the Business performance planning application writes values at the parent level, it engages in allocation across all subsidiary child values. The allocation process varies, depending on specific conditions that are described in the following subsections.
 
 ### Equal allocation for zero and equal amount child values
 
-If all child values are \$0 or equal amounts, the planning application defaults to an equal allocation across each child cell. For instance, allocating \$1,000 across 10 child cells results in \$100 allocated to each child.
+By default, if all child values are 0 (zero) or equal amounts, the Business performance planning application does an equal allocation across every child cell. For example, if an allocation of $1,000 is done across 10 child cells, $100 is allocated to each child.
 
 ### Respect for preexisting distributions
 
-When child cells contain preexisting values, the planning application respects this distribution. Allocation occurs proportionately based on existing values. For instance, allocating \$200 across two child cells with existing values \$5 and \$15 respectively results in \$50 and \$150 respectively.
+If child cells contain preexisting values, the Business performance planning application respects this distribution. Allocation is done proportionately, based on existing values. For example, an allocation of $200 is done across two child cells. One cell has an existing value of $5, and the other has an existing value of $15. In this case, $50 is allocated to the first cell, and $150 is allocated to the second cell.
 
-**Relative increase**
-To enter a relative increase or decrease, enter **i** or **d** in front of the number. For example, **i10%** or **d10%** to increase or decrease by 10%, or use the **Relative Increase/Decrease** option in the right-click context menu.
+#### Relative increase
 
-**Fill right**
-Using **r**, write the entered value to every cell on the same level to the right. For example, **r1000** entered in January for a time dimension will write 1000 from February to December, or use the **Fill Right** option in the right-click context menu.
+To enter a relative increase or decrease, enter the prefix **i** or **d** in front of the number. For example, enter **i10%** to increase by 10 percent or **d10%** to decrease by 10 percent.
 
-**Allocation with multi-select**
-If the multi-select mode is turned on, the **s** prefix in the multi-select value dialog field allows you to spread an entry to the selected cells and use their current distribution.
+Alternatively, select and hold (or right-click), and then select **Relative Increase/Decrease**.
 
-**Copy Like**
-This option is available only with the right-click context menu and it enables you to apply any distribution in the used cube with your entry.
+#### Fill right
+
+To write a value to every cell to the right at the same level, enter the prefix **r** in front of the value. For example, if you enter **r1000** in January for a time dimension, **1000** is written from February through December.
+
+Alternatively, select and hold (or right-click), and then select **Fill Right**.
+
+#### Allocation with multi-select
+
+If multi-select mode is turned on, the **s** prefix in the multi-select field lets you spread an entry to the selected cells and use their current distribution.
+
+#### Copy like
+
+This option is available only on the shortcut menu that appears when you select and hold (or right-click). It lets you apply your entry to any distribution in the cube that's used.
 
 ## Accurate business planning
 
-USe the planning application for high-level business planning with an assurance that forecasted or budgeted data accurately mirrors historical actuals. With this functionality, you can:
+When you use the Business performance planning application for high-level business planning, you can be sure that forecasted or budgeted data accurately mirrors historical actuals. The functionality offers the following benefits:
 
-- Plan business strategies confidently at higher levels, knowing that the planning application ensures alignment with historical data.
-- Leverage the planning application's allocation mechanism, which adapts to various levels of granularity, ensuring accurate planning even when working with complex hierarchical data structures.
-
-
-
+- Confidently plan business strategies at higher levels, and know that the application ensures alignment with historical data.
+- Take advantage of the application's allocation mechanism, which adapts to different levels of granularity to ensure accurate planning even when you work with complex hierarchical data structures.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
