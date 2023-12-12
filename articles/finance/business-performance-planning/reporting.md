@@ -41,7 +41,7 @@ The **Reporting** visual is a powerful tool that's designed to seamlessly genera
 
 ## Prerequisites and installation
 
-For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install.md).
+For more information about prerequisites and installation, see [Install business performance planning visuals](powerBI-visual-install.md).
 
 > [!NOTE]
 > Because the **Reporting** visual doesn't write data back to Dataverse, it doesn't require that you enter API details.
