@@ -1169,6 +1169,8 @@ items:
           href: power-platform/environment-lifecycle-connect-finops-new-dv.md
         - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
           href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
+        - name: Dual-write setup from Lifecycle Services
+          href: data-entities/dual-write/lcs-setup.md
         - name: Edit the properties of connected environments
           href: power-platform/environment-lifecycle-edit-properties-dv.md
         - name: Delete environments when Power Platform Integration is enabled
@@ -1195,8 +1197,6 @@ items:
               href: data-entities/dual-write/dual-write-system-req.md
             - name: Guidance for how to set up dual-write
               href: data-entities/dual-write/connection-setup.md
-            - name: Dual-write setup from Lifecycle Services
-              href: data-entities/dual-write/lcs-setup.md
             - name: Dual-write health check
               href: data-entities/dual-write/dual-write-health-check.md
             - name: Enable table map for dual-write
