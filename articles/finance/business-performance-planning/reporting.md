@@ -185,7 +185,7 @@ Automatically apply format styles. Here are some examples:
 - **FontStyle** – Specify **italic**, **oblique**, or **normal**.
 - **LineFormat** – Specify **u** for a single underline, **u2** for a double underline, **o** for a single overline, or **o2** for a double overline.
 
-In the table that contains the row members, add a column the contains the format style that you want to apply. Use the following format:
+In the table that contains the row members, add a column that contains the format style that you want to apply. Use the following format:
 
 \{"numberFormat": "\#,0,.0;(\#,0,.0)","FontSize": 8,"color": "blue","FontWeight": "bold","FontStyle": "","LineFormat": "n","LineColor": "blue"\}
 
