@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Business performance planning application copy visual
-description: This article describes how to use the copy visual in the Business performance planning application.
+title: Copy visual
+description: This article describes how to use the Copy visual in the Business performance planning application.
 author: ShielaSogge
 ms.date: 12/03/2023
 ms.topic: article
@@ -28,46 +28,48 @@ ms.dyn365.ops.version:
 ---
 # Copy visual
 
-This article describes how to use the copy visual in the Business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
+This article describes how to use the **Copy** visual in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
-## Overview
-
-Copy visual empowers you to effortlessly transfer baseline data, including actuals or forecasts, into new planning or forecasting scenarios. You have the flexibility to choose the level of detail during copying, allowing for precise scenario creation. For instance, easily copy data from previous year's actuals as the foundation for a new plan, whether it is a complete copy or with specific dimensional filters, such as copying data for a particular department or product.
+The **Copy** visual lets you effortlessly transfer baseline data, including actuals or forecasts, to new planning or forecasting scenarios. The ability to select the level of detail during the copy process allows for precise scenario creation. For example, you can easily copy data from the previous year's actuals and use it as the foundation for a new plan. You can make a complete copy of the data, or you can apply dimensional filters to copy data only for a specific department or product, for example.
 
 ## Benefits
 
- - Time-saving functionality - by utilizing this visual, users can expedite the creation of forecasts and budgets. It eliminates the need to manually build each forecast from scratch, enabling a more rapid and efficient planning process.
- - Consistency and accuracy - Ensures consistency between historical data and planned budgets by facilitating the transfer of specific data coordinates. This alignment ensures accuracy and coherence within the planning structure.
- - Scenario analysis simplification - Allows the creation of diverse forecast scenarios by leveraging a base case. Users can build a foundational forecast and efficiently generate multiple variations by copying, thereby simplifying scenario analysis without starting anew for each permutation.
-
+- **Time-saving functionality** – The **Copy** visual helps expedite the creation of forecasts and budgets. Because users no longer have to manually build each forecast from scratch, the planning process is faster and more efficient.
+- **Consistency and accuracy** – The **Copy** visual ensures consistency between historical data and planned budgets by facilitating the transfer of specific data coordinates. Therefore, it helps ensure an accurate and coherent planning structure.
+- **Scenario analysis simplification** – Users can create diverse forecast scenarios by using a base case. Users can build a foundational forecast and then efficiently generate multiple variations by copying it. Therefore, scenario analysis is simplified and doesn't require that users start from scratch for each permutation.
 
 ## Prerequisites and installation
+
 For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install.md).
 
+> [!NOTE]
+> The **Format visual** tab is available only when a visual is selected on the report canvas.
 
->[!Note]
->The visual must be selected in the report canvas for the format visual tab to display.
+## Use the Copy visual
 
-### Using the copy visual
+This custom visual enables data to be copied between scenarios and models at any level of detail. For example, you can copy data from the previous quarter's sales actuals and use it as the basis for a new plan (for the upcoming quarter's sales forecast), based on the most recent quarter's "baseline." You can create a complete copy of the plan or apply further dimension details, such as a specific cost center or product.
 
-This custom visual enables copying data between different scenarios and models with the option to use any level of detail. For example, copying data from the previous quarter’s sales actuals as the basis for a new plan (upcoming quarter's sales forecast) based on the most recent quarter's "baseline”. You could build this either as a whole or with further dimension detail like only a particular cost center, or product.
-
-Instead of creating forecasts from scratch, users can use document assumptions about business evolution between quarters.
+Therefore, instead of creating forecasts from scratch, users can use document assumptions about business evolution between quarters.
 
 ### Example
 
-To define the copy criteria, follow these steps:
-1. Select a cube from the drop list at the top of the visual.
-2. Click **Select**.
-3. Click **+** at the top-right corner of the visual to configure fields for copy criteria, focusing on two dimensions.  For example:  Fiscal quarter and Scenario.
-4. Specify the settings below:
- - **Dimension** = Scenario
- - **Column** = Name
- - **From** = Actual
- - **To** = Forecast
-5. Configure the fiscal quarter by defining the following settings:
-  - **Dimension** = MonthYear
-  - **Column** = Fiscal quarter
-  - **From** = FY2020 Q4
-  - **To** = FY2021 Q4
-6. To start the copy process, after the configuration are complete, click **Copy**.
+To define the copy criteria, follow these steps.
+
+1. In the dropdown list at the top of the **Copy** visual, select a cube.
+2. Select **Select**.
+3. In the upper-right corner of the visual, select the plus sign (**+**) to configure fields for the copy criteria. Focus on two dimensions. This example uses Fiscal quarter and Scenario.
+4. Set the following values:
+
+    - **Dimension:** Scenario
+    - **Column:** Name
+    - **From:** Actual
+    - **To:** Forecast
+
+5. Configure the fiscal quarter by setting the following values:
+
+    - **Dimension:** MonthYear
+    - **Column:** Fiscal quarter
+    - **From:** FY2020 Q4
+    - **To:** FY2021 Q4
+
+6. After you've completed the configuration, select **Copy** to start the copy process.
