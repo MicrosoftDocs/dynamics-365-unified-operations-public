@@ -13,7 +13,6 @@ ms.author: laswenka
 ms.search.validFrom: 2020-01-06
 ---
 
-<!--TODO  Move this page under Power Platform configuration -->
 
 # Dual-write setup from Lifecycle Services
 
