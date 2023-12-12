@@ -71,7 +71,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 1. Go to the directory that contains your Azure AD B2C tenant. On the top menu, select the **Directory + subscription** filter, and then select the directory that contains your Azure AD B2C tenant.
 1. In the upper-left corner of the Azure portal, select **All services** , and then search for and select **Azure AD B2C**.
 1. Select **Identity providers**, and then select **New OpenID Connect provider**.
-1. In the **Name** field, enter **Store Manager B2B Sign in**. This exact name is required and can't be modified.
+1. In the **Name** field, enter **StoreManagerB2BSignin**. This exact name is required and can't be modified.
 1. In the **Metadata url** field, enter the URL of the Azure B2B OpenID Connect (OIDC) configuration document (for example, `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where `<TENANT-ID>` is the ID of your Azure AD B2B tenant). 
 
     > [!IMPORTANT]
