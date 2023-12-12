@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Business performance planning application variance visual
-description: This article describes how to use the variance visual in the business performance planning application.
+title: Variance visual
+description: This article describes how to use the Variance visual in the Business performance planning application.
 author: ShielaSogge
 ms.date: 12/07/2023
 ms.topic: article
@@ -28,35 +28,33 @@ ms.dyn365.ops.version:
 ---
 # Variance visual
 
-This article describes how to use the variance visual in the business performance planning application. You must also install Power BI visuals to fully use the planning application. To learn more about installing Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
+This article describes how to use the **Variance** visual in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
-## Overview
+The **Variance** custom visual plays a pivotal role in budget variance analysis (BVA) by helping users understand and address discrepancies between budgets and actual results. This visual generates sorted bar charts that highlight the differences between two values to help identify the key drivers behind variances. Users can analyze root causes and refine future planning cycles by sorting the variances from largest to smallest.
 
-The variance custom visual plays a pivotal role in budget variance analysis (BVA), enabling users to comprehend and address discrepancies between budgets and actual results. This visual generates sorted bar charts, showcasing the differences between two values, aiding in identifying key drivers behind variances. It empowers users to analyze root causes and refine future planning cycles by sorting variances from largest to smallest.
+The purpose of the **Variance** visual is to bridge the gap between budgeted and actual values, to facilitate root cause analysis and drive informed decision-making by presenting variances in a clear, sorted format.
 
-It aims to bridge the gap between budgeted and actual values, facilitating root cause analysis and driving informed decision-making by presenting variances in a clear, sorted format.
+## Benefits
 
-### Benefits
-
- - Efficient root cause analysis - Quickly identifies and sorts the most significant discrepancies between budgets and actuals, facilitating prompt investigation into underlying causes.
- - Enhanced planning insights - Enables users to understand discrepancies, fostering informed adjustments for improved future planning cycles.
+- **Efficient root cause analysis** – The **Variance** visual quickly identifies and sorts the most significant discrepancies between budgets and actuals to facilitate prompt investigation into underlying causes.
+- **Enhanced planning insights** – The **Variance** visual helps users understand discrepancies and therefore enables them to make informed adjustments for improved future planning cycles.
 
 ## Prerequisites and installation
+
 For more information about prerequisites and installation, see [Install Power BI visuals](powerBI-visual-install.md).
 
-### Using the Visual
+## Use the Variance visual
 
-Utilize the variance visual to efficiently sort and visualize variances between budgeted and actual values, offering an intuitive and valuable tool within the reporting cycle.
-You can also render customizable KPI cards and visualize variances in vertical or horizontal bar charts with small multiples display support and the option to switch between absolute, relative and waterfall variance displays according to IBCS principles as well as category drill down.
+The **Variance** visual lets you efficiently sort and visualize variances between budgeted and actual values. Therefore, it provides an intuitive and valuable tool during the reporting cycle. You can also render customizable key performance indicator (KPI) cards and visualize variances in vertical or horizontal bar charts. These charts support the display of small multiples, let you switch between absolute, relative, and waterfall variance displays according to International Business Communication Standards (IBCS) principles, and allow for category drill-down.
 
-### Configuration Options
+## Configuration options
 
-In the visual fields you can configure value, comparison value and small multiples.
+In the visual fields, you can configure the value, the comparison value, and small multiples.
 
-### Visual Formatting
+## Visual formatting
 
-In the visual formatting properties, you can configure various options like colors for the chart, chart border, border color, chart background color, comparison bar color, formatting font size, KPI card features, formatting of values and what visual elements should be visible. For example, the total display on the top right and whether the users can switch between different variance types.
+In the visual formatting properties, you can configure options such as colors for the chart, chart border, border color, chart background color, comparison bar color, formatting font size, KPI card features, and formatting of values. You can also specify which visual elements should be visible. For example, you can configure the total display in the upper right and specify whether users can switch between different variance types.
 
-### Visualization and writeback
+## Visualization and write-back
 
-It's possible to change data in the underlying data source by dragging and dropping on the bars.
+Users can change data in the underlying data source by dragging onto the bars.
