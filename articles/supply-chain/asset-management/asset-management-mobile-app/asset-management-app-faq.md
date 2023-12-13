@@ -56,7 +56,7 @@ If you see the error message "Error when trying to retrieve data from the networ
 1. Contact Microsoft Support and share the redacted HAR file with them.
 1. Microsoft Support will help you diagnose and solve the issue.
 
-The network trace might reveal an error similar to the following example:
+The content of the HAR file might reveal an error similar to the following example:
 
 ```text
 SecLib::CheckPrivilege failed. User: <EntraObjectID>, PrivilegeName: prvReadRelationship, PrivilegeId: <PrivilegeID>, Required Depth: Basic, BusinessUnitId: <BusinessUnitID>, MetadataCache Privileges Count: <CacheCount>, User Privileges Count: <UserPrivilegeCount>
