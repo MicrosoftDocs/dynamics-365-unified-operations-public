@@ -105,6 +105,16 @@ You can manually create a new dimension in business performance planning.
 
 After you finish entering the information, you can create the dimension.
 
+## Using dataflows to populate dimensions
+Oftentimes, dimension data is a combination of multiple sources or must have some level of transformation done to get data into the proper structure for planning.  If loading production data it is recommended to use dataflows, this will better support typical production volume and complexity.  Dataflows also provide a transform experience, detailed status results when loading data, and the option to schedule refreshes of the data.   
+
+Dataflows are a self-service, cloud-based data preparation technology.  Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account. Dataflows are authored by using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Customers can trigger dataflows to run either on demand or automatically on a schedule; data is always kept up to date.  Learn more about dataflows: [An overview of dataflows across Microsoft Power Platform and Dynamics 365 products - Power Query](https://learn.microsoft.com/en-us/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)
+
+Dataflows can be used to populate dimensions and cubes within planning.  One of the benefits of linking a dataflow to the dimension or cube, is that when the data source of the dataflow is updated with new data, the planning application will be updated based on the refresh frequency defined in the dataflow.
+
+To learn more about loading data via dataflows, see **Loading data via dataflows**
+
+
 ## Maintain dimensions
 
 After you create a dimension, you might want to add more dimension values or add more columns to the dimension. You can make these changes in the business performance planning app, or by using the **Table Edit** visual in Power BI or the Excel add-in (available after GA). For more information about how to maintain dimensions in the **Table Edit** visual, see [link to doc]().
