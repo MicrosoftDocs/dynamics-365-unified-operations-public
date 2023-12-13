@@ -1,0 +1,76 @@
+---
+title: Pricing extensions
+description: This article describes how to extend pricing and discount functionalities in Microsoft Dynamics 365 Commerce.
+author: zhizhen
+ms.date: 12/12/2023
+ms.topic: article
+audience: Application User
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: zhizhen
+ms.search.validFrom:
+
+---
+
+# Pricing extensions
+
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+This article describes how to extend pricing and discount functionalities in Microsoft Dynamics 365 Commerce.
+
+> [!NOTE]
+> The latest Commerce software development kit (SDK) samples are available at [https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/PricingEngine](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/PricingEngine).
+
+## Extend the Commerce pricing engine
+
+The Commerce pricing engine is the center of pricing and discounts functionalities in Microsoft Dynamics 365 Commerce. To extend the Commerce pricing engine, you must first be familiar with the terminologies in the following table.
+
+| Name | Description |
+| --- | --- |
+| Discount package | A discount package is a class that implements the *IDiscountPackage* interface, which serves as a different type of discount. You can define different discount behaviors by creating different discount packages.  |
+| Discount filter | To customize different discount applicabilities, you can filter out some discounts by implementing the *IDiscountFilter* interface based on your business requirements. |
+
+Commerce pricing engine is an assembly shared across headquarters and Scale Units. It means that you only need to write one piece of pricing engine extensions, like new discount packages - and that discount package can be used in both back-office and point of sale.
+
+## Register your extensions
+
+When you complete your pricing engine extension, you can register it through the *PricingEngineExtensionRepository*. The registration process varies by the product to which you're integrating.
+
+### Commerce Scale Unit and Store Commerce
+
+You can add pretriggers for the service requests to which you'd like your extension packages to be applied. The service requests are described in the following table.
+
+| Service request | Description |
+| --- | --- |
+| CalculatePricesServiceRequest | This service request calculates the prices (including base price), trade agreement, and price adjustments for a sales transaction.  |
+| CalculateDiscountsServiceRequest | This service request calculates the discounts (including discount trade agreements),  simple discounts, mix and match discounts, quantity discounts, and threshold discounts for a sales transaction. |
+| GetIndependentPriceDiscountServiceRequest| This service request only calculates prices and single line discounts. It's used for product listing and product details pages where product prices are calculated independently. |
+| CalculateShippingDiscountsServiceRequest | This service request calculates the shipping discounts for a sales transaction. |
+
+For example, when you create a new discount package, you can add a pretrigger to the CalculateDiscountsServiceRequest service request and call `PricingEngineExtensionRepository.RegisterDiscountPackage(new DiscountPackage());` inside of your pretrigger.
+
+### Finance and operations apps
+
+For finance and operations apps, you must register discounts through X++ extensions based on your user scenarios. For example, if you want to apply a customized discount package for call center sales orders, you can add a pretrigger on `RetailSalesOrderCalculator::setPricesDiscountsOnOrder` and call `Microsoft.Dynamics.Commerce.Runtime.Services.PricingEngine::RegisterDiscountPackage(new DiscountPackage());` inside of your pretrigger.
+
+## Calculate price and discounts against a date other than today
+
+By default, the Commerce pricing engine applies price and discounts based on the date that sales transaction happens, which typically is "today". 
+
+To override the default behavior, follow these steps.
+
+1. Add a pretrigger of *CalculatePricesServiceRequest* and update its *DateWhenActive* value to the date the calculation should happen on.
+1. Add a pretrigger of *CalculateDiscountsServiceRequest* and update its *DateWhenActive* value to the date on which the calculation should happen. Note: 
+    > [!NOTE]
+    > The DateWhenActive field on CalculateDiscountsServiceRequest is only modifiable in Commerce version 10.0.37 and later.
+
+1. Add following configuration key and value to **Commerce parameters**.
+    - Key: Pricing.ResetSalesDateKillSwitch
+    - Value: true
+1. Run the **1070 (Channel configuration)** CDX job
+
+> [!NOTE]
+> You must ensure that all SalesLine > SalesDate values match the date you set on DateWhenActive.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
