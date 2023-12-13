@@ -79,14 +79,14 @@ In the **Trailer** section, set the following fields if a trailer is used in the
 - **Trailer type**
 
 > [!NOTE]
-> If there is an additional trailer, set the fields in the **Additional trailer** section. If there is an additional driver, set the fields in the **Additional driver** section. When it comes to the **Additional driver**, the following fields are required in this section:
+> If there's an additional trailer, set the fields in the **Additional trailer** section. If there's an additional driver, set the fields in the **Additional driver** section. For **Additional driver**, the following fields are required in this section:
 >
 > - **Driver**
 > - **Registration number** or **RFC number**
 > - **Driver license**
 > - **Country/region**
 
-All the fields for a truck, trailer, and driver, except the **Federal motor transport configuration** field, can be filled in either manually or by using information from fixed asset and worker records.
+All the fields for a truck, trailer, and driver, except the **Federal motor transport configuration** field, can be filled in manually or by using information from fixed asset and worker records.
 
 ## Posting packing slips and shipping transfer orders that include the Waybill (Carta de Porte) complement
 
@@ -122,17 +122,18 @@ Follow these steps to set up the Mexican tax authorities (SAT) catalogs to add i
 ### Sales orders
 
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Select an existing sales order that you want to work with or create a new one.
+2. Select the sales order you want to work with or create a new one.
 3. On the **Header** tab, on the **General** FastTab, in the **Electronic invoices** section, select the value of the **Customs regime** field. The list of available values should be preliminary defined in the **Customs regime** catalog. The **Customs regime** is mandatory when the **Foreign trade** option is turned on.
 
 ### Sales order lines
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2. Select an existing sales order that you want to work with or create a new one.
 3. On the **Lines** tab, on the **Product** FastTab, in the **CFD - Electronic invoices** section, specify the following:
-- select the value of the **Customs material type** field. The list of available values should be preliminary defined in the **Customs material type** catalog. The **Customs material type** is mandatory when the **Foreign trade** option is turned on.
-- select the value of the **Customs document type** field. The list of available values should be preliminary defined in the **Customs document type** catalog. The **Customs document type** is mandatory when the **Foreign trade** option is turned on.
-- fill in the **Material description** field. The **Metarial description** is mandatory when the **Customs material type** attribute contains the value **05** with the description **Other** (**Otra**).
-- fill in the **Identifier of customs document** field. The **Identifier of customs document** is mandatory when the **Foreign trade** option is turned on.
+
+   - Select the value of the **Customs material type** field. The list of available values should already be defined in the **Customs material type** catalog. The **Customs material type** is mandatory when the **Foreign trade** option is turned on.
+   - Select the value of the **Customs document type** field. The list of available values should already be defined in the **Customs document type** catalog. The **Customs document type** is mandatory when the **Foreign trade** option is turned on.
+   - Enter a value in the **Material description** field. The **Metarial description** is mandatory when the **Customs material type** attribute contains the value **05** with the description **Other** (**Otra**).
+   - Fill in the **Identifier of customs document** field. The **Identifier of customs document** is mandatory when the **Foreign trade** option is turned on.
 
 ### Distance and time
 
@@ -162,8 +163,9 @@ If your company has implemented the **Fixed assets** module, enter information i
         - **Vehicle type**
         - **Federal motor transport configuration** (for trucks only)
         - **Trailer type**
-		- **Registration number**
-		- **Vehicle gross weight**
+
+           - **Registration number**
+           - **Vehicle gross weight**
 
     - In the **Model** section:
 
