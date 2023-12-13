@@ -764,6 +764,10 @@
           href: price-change-tracking.md
         - name: Price FAQ
           href: price-faq.md
+        - name: Pricing examples
+          href: pricing-examples.md
+        - name: Pricing extensions
+          href: pricing-extensions.md          
       - name: Recommendations
         items:
         - name: Product recommendations overview
