@@ -34,7 +34,7 @@ This article describes how to install business performance planning visuals. To 
 
 1. Import business performance planning visuals from [Microsoft AppSource](https://appsource.microsoft.com). For more information, see [Import visuals](/power-bi/developer/visuals/import-visual).
 2. Connect Power BI to your Dataverse environment. For more information, see [Connect to Dataverse using a Connector](/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use Direct Query in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
-3. To work with the visuals and publish to a Power BI workspace, a Power BI Premium licnese is required.  For more information, see [Licenses and subscriptions for business users](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-license)
+3. To work with the visuals and publish to a Power BI workspace, a Power BI Premium license is required.  For more information, see [Licenses and subscriptions for business users](/power-bi/consumer/end-user-license).
 
 ### Recommendations
 
