@@ -4,7 +4,7 @@
 title: Load data into Business performance planning using dataflows
 description: This article describes how to load data ino the Business performance planning application.
 author: ShielaSogge
-ms.date: 12/08/2023
+ms.date: 12/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
