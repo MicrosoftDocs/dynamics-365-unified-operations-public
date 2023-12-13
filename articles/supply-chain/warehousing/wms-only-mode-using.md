@@ -26,9 +26,9 @@ To monitor the integration between the external systems and Microsoft Dynamics 3
 - Get an overview of integration messages.
 - Go to pages that have related information and functionality, such as the [**Message processor messages**](warehouse-message-processor-messages.md) page.
 
-## <a name="inbound-shipment-orders"></a>Review inbound shipment orders
+## <a name="inbound-shipment-orders"></a>Maintain inbound shipment orders
 
-To review your inbound shipment orders, go to **Warehouse management** \> **Inbound shipment orders** \> **Inbound shipment orders**. The documents that are listed on the **Inbound shipment orders** page provide information about the expected product receipts. The page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the receiving status, inventory transactions, and associated warehouse work. You can also view and edit the receiving status on the order header and use it to follow the inbound progress of the orders. 
+To review and maintain your inbound shipment orders, go to **Warehouse management** \> **Inbound shipment orders** \> **Inbound shipment orders**. The documents that are listed on the **Inbound shipment orders** page provide information about the expected product receipts. The page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the receiving status, inventory transactions, and associated warehouse work. You can also view and the receiving status on the order header and lines and use it to follow the inbound progress of the orders.
 
 The following **Receiving status** values are available:
 
@@ -44,9 +44,14 @@ If you're already familiar with Supply Chain Management, you might recognize tha
 > [!NOTE]
 > The internal inbound shipment order number must be unique. You can configure the system to use the external order numbers as internal numbers. In this way, you don't have to use a [number sequence](wms-only-mode-setup.md#number-sequences) for the order. To ensure unique numbers across external systems, consider using the **Order number prefix/suffix** options.
 
-## Review outbound shipment orders
+### Enable manual inbound shipment order creation
 
-To view documents that contain information about products that have been requested for dispatch, go to **Warehouse management** \> **Outbound shipment orders** \> **Outbound shipment orders**. The **Outbound shipment orders** page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the release status, shipment status, inventory transactions, and associated warehouse work. You can also view and edit the release status and shipment status on the order header, and use them to follow the outbound progress of the orders.
+Besides using entity messages to create the *Inbound shipment orders* you can *Enable manual inbound shipment order creation* for one or more *Source systems* and thereby users are able to create inbound shipment orders directly in the *Inbound shipment orders* page.
+This setting will enable the user interface option for the **New** button.
+
+## Maintain outbound shipment orders
+
+To review and maintain documents that contain information about products that have been requested for dispatch, go to **Warehouse management** \> **Outbound shipment orders** \> **Outbound shipment orders**. The **Outbound shipment orders** page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the release status, shipment status, inventory transactions, and associated warehouse work. You can also view and edit the release status and shipment status on the order header, and use them to follow the outbound progress of the orders.
 
 The following **Release status** values are available:
 
@@ -62,13 +67,16 @@ The following **Shipment status** values are available:
 
 If you're already familiar with Supply Chain Management, you might recognize that this document resembles a simplified sales order that uses some of the same reservation and [release to warehouse](release-to-warehouse-process.md) processes. Use the [Source systems](wms-only-mode-setup.md#source-systems) settings to control whether you want to automatically trigger reservations when documents are imported, and/or automatically reject shipment orders that can't be partly or fully reserved.
 
-In the current release, outbound shipment order lines don't provide out-of-box support for being associated with loads before they're [released to the warehouse](release-to-warehouse-process.md). This association can occur only during the warehouse waving process.
-
 > [!WARNING]
 > For outbound shipment order lines, you can select **Update line** \> **Delivery remainder** to update expected order line transaction quantities. Make sure that you have the correct user role security privilege for this process, because this update (like message editing) allows for potential inconsistencies between the external systems and Supply Chain Management.
 
 > [!NOTE]
 > The internal outbound shipment order number must be unique. You can configure the system to use the external order numbers as internal numbers. In this way, you don't have to use a [number sequence](wms-only-mode-setup.md#number-sequences) for the order. To ensure unique numbers across external systems, consider using the **Order number prefix/suffix** options.
+
+### Enable manual outbound shipment order creation
+
+Besides using entity messages to create the *Outbound shipment orders* you can *Enable manual outbound shipment order creation* for one or more *Source systems* and thereby users are able to create outbound shipment orders directly in the *Outbound shipment orders* page.
+This setting will enable the user interface option for the **New** button.
 
 ## Inbound process
 

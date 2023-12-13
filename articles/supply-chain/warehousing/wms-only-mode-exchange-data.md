@@ -43,14 +43,17 @@ This following illustration shows how the message processor fits into an integra
 
 ## <a name="master-data"></a>Master and reference data
 
-For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can easily get imported into Microsoft Dynamics 365 Supply Chain Management via the `Product message`. This message will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems).
+For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can easily get imported into Microsoft Dynamics 365 Supply Chain Management via the `Product message`. This message will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems). <!-- Perlynne Message name?-->
 
 Only one [source system record](wms-only-mode-setup.md#source-systems) can be recorded as the external system maintaining the product master data related to the unique reference for a **Release product/Item number**, this data can be viewed and manually maintained in the **Source system items** page.
 
 > [!TIP]
 > The *Source system item number* will be used for the communication between the systems which is useful when for example an external system uses an EAN barcode as the unique identification number linked to a *item/variant number* having a different value.
+>
+> When using the Warehouse Management mobile app the value in the *Source system item number* field can be used to lookup the internally used *Item/variant number* as well.
+<!-- Perlynne check -->
 
-Additionally you can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create a **Release product/Item number** going to be used in warehouse management processes. Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to get the mandatory reference fields assigned:
+Additionally you can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create a **Release product/Item number** going to be used in warehouse management processes. Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to for example get the mandatory reference fields assigned:
 
 - **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management. Therefore, at least one group must be available. The group can control business processes for batch tracked item and it is recommended that each group that you use with Warehouse management only mode have the following settings. These settings eliminate the need to set up any costing data for the products:
 
