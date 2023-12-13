@@ -11,18 +11,20 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Guatemala
 
-The Guatemalan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
+The Guatemalan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. It also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
+
 Before you create records for customers and vendors who are located in Guatemala, the following setup must be completed:
-- Create departments and provinces from Guatemala using states and counties from the address setup.
-- Create tax codes for the VAT that will be used.
-- Create sales tax groups that contain the tax codes you created.
-- Create item sales tax groups that contain the tax codes you created.
-- Document classes to use with customer and vendor invoices, credit notes, debit notes, and packing slips. For more information, see [Configure sales and purchase invoices for Guatemala](ltm-configure-invoices-Guatemala.md).
-- A customer and vendor set that contains all the document classes that will be used.
-- A tax ID for each type of tax identification that your customers and suppliers have.
-- A taxpayer type for each type of taxpayer that your customers and suppliers have.
+
+- Create departments and provinces for Guatemala by using states and counties from the address setup.
+- Create tax codes for the value-added tax (VAT) that will be used.
+- Create sales tax groups that contain the tax codes that you created.
+- Create item sales tax groups that contain the tax codes that you created.
+- Create document classes to use with customer and vendor invoices, credit notes, debit notes, and packing slips. For more information, see [Configure sales and purchase invoices for Guatemala](ltm-configure-invoices-Guatemala.md).
+- Create a customer and vendor set that contains all the document classes that will be used.
+- Create a tax ID for each type of tax identification that your customers and suppliers have.
+- Create a taxpayer type for each type of taxpayer that your customers and suppliers have.
 
 ## Create a record for a customer in Guatemala
 
