@@ -4,7 +4,7 @@
 title: Microsoft Dynamics 365 Finance business performance planning dimensions
 description: This article describes dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning.
 author: ShielaSogge
-ms.date: 11/28/2023
+ms.date: 12/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -105,14 +105,14 @@ You can manually create a new dimension in business performance planning.
 
 After you finish entering the information, you can create the dimension.
 
-## Using dataflows to populate dimensions
-Oftentimes, dimension data is a combination of multiple sources or must have some level of transformation done to get data into the proper structure for planning.  If loading production data it is recommended to use dataflows, this will better support typical production volume and complexity.  Dataflows also provide a transform experience, detailed status results when loading data, and the option to schedule refreshes of the data.   
+## Use dataflows to populate dimensions
+Dimension data is a combination of multiple sources or must have some level of transformation done to get data into the proper structure for planning. It's recommended to use dataflows to load production data as this better supports typical production volume and complexity. Dataflows also provide a transform experience, detailed status results when loading data, and the option to schedule refreshes of the data.   
 
-Dataflows are a self-service, cloud-based data preparation technology.  Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account. Dataflows are authored by using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Customers can trigger dataflows to run either on demand or automatically on a schedule; data is always kept up to date.  Learn more about dataflows: [An overview of dataflows across Microsoft Power Platform and Dynamics 365 products - Power Query](https://learn.microsoft.com/en-us/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)
+Dataflows are a self-service, cloud-based data preparation technology. Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account. Dataflows are authored using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Dataflows can be triggered to run either on demand or automatically on a schedule and data is always kept up to date. For more information about dataflows, see [An overview of dataflows across Microsoft Power Platform and Dynamics 365](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
 
-Dataflows can be used to populate dimensions and cubes within planning.  One of the benefits of linking a dataflow to the dimension or cube, is that when the data source of the dataflow is updated with new data, the planning application will be updated based on the refresh frequency defined in the dataflow.
+Dataflows can populate dimensions and cubes within planning. Linking a dataflow to the dimension or cube, when the data source of the dataflow is updated, planning is updated based on the refresh frequency defined in the dataflow.
 
-To learn more about loading data via dataflows, see **Loading data via dataflows**
+For more information about loading data via dataflows, see [Loading data via dataflows](load-data-dataflows.md).
 
 
 ## Maintain dimensions
