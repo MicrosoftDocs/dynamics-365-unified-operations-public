@@ -56,21 +56,17 @@ If you see the error message "Error when trying to retrieve data from the networ
 1. Contact Microsoft Support and share the redacted HAR file with them.
 1. Microsoft Support will help you diagnose and solve the issue.
 
-### `SecLib::CheckPrivilege failed` for `prvReadRelationship`
+The network trace might reveal an error similar to the following example:
 
-The network trace may reveal an error like:
-
-```
+```text
 SecLib::CheckPrivilege failed. User: <EntraObjectID>, PrivilegeName: prvReadRelationship, PrivilegeId: <PrivilegeID>, Required Depth: Basic, BusinessUnitId: <BusinessUnitID>, MetadataCache Privileges Count: <CacheCount>, User Privileges Count: <UserPrivilegeCount>
 ```
 
-Privilege to read the "Relationship" table is not something the Asset Management app role covers, as that privilege is already covered by the "Finance and Operations Basic User" role in Dataverse. Add the "Finance and Operations Basic User" role to the user or team using the app and the issue is resolved.
+This error can occur because the *Asset Management app* role doesn't have the privileges required to read the `Relationship` table. Instead, that privilege is provided by the *Finance and Operations Basic User* role in Dataverse. To resolve this issue, add the *Finance and Operations Basic User* role to each user or team that's using the app.
 
-## Package installation issues
+## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-### "Could not delete solution .. because it has been modified. Please remove all unmanaged customizations from the Canvas App and try again."
-
-To avoid automatically removing your customizations on the Asset Management mobile application canvas app, updating the app fails with an error. Remove any customization layers by restoring the oldest version of the app. If the oldest version is over 6 months old, you will need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution, and then re-install the app from *Dynamics 365 apps* or *AppSource*.
+The update process fails with an error if it detects that you've customized the Asset Management mobile application canvas app. This helps prevent it from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over 6 months old, you will need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution, and then re-install the app from *Dynamics 365 apps* or *AppSource*.
 
 Consider cloning the canvas app before removing your customizations, in case you want to copy them to the updated app. See [Can I customize and extend the app?](#can-i-customize-and-extend-the-app) for more details.
 

@@ -50,7 +50,7 @@ After the mobile app solution is installed in your Dataverse environment, you mu
 
 Each relevant user must be assigned a role that lets them work with the Dataverse Supply Chain Management virtual tables that the solution installs. The solution installs a role named *Asset Management Mobile Application User Role* that grants access privileges to all the required virtual tables. You can assign this role to a Dataverse group team. Any user who's a member of that team will then have the role too. Alternatively, you can assign the role directly to a user.
 
-Additionally, the user must have the role *Finance and Operations Basic User*.
+Each relevant user must also have the *Finance and Operations Basic User* role.
 
 - To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. For information about how to manage team members, see [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
 - To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).
