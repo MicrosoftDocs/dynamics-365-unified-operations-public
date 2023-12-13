@@ -20,14 +20,14 @@ Before you begin, open the **Feature management** workspace, and verify that the
 ## Create a legal entity
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **New** to create a legal entity. Some functionality is enabled only for Guatemala. Examples include specific tax reports or electronic invoices.
-2. In the address setup, set up the address format for Guatemala by using **State** as **Departamento**and **County** as **Municipio**
+2. In the address setup, set up the address format for Guatemala by using **State** as **Departamento** and **County** as **Municipio**.
 3. Go to **Organization administration** \> **Setup** \> **LATAM** \> **LATAM parameters**.
 
 ## Set up tax information
 
 1. [Create a document class letter](ltm-core-document-class-letter.md) without a prefix. This document class letter will be used in taxpayer and document class configurations.
-2. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
-3. Select **New**, and then, in the **Overview** section, in the **Tax ID type** field, enter **NIT** (tax identification number), which is one of the tax ID types for Guatemala.
+2. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and select **New**.
+3. In the **Overview** section, in the **Tax ID type** field, enter **NIT** (tax identification number), which is one of the tax ID types for Guatemala.
 4. In the **Format** field, enter **XXXXXXXXXXXXX**. For more information, see [Tax ID types for Latin America](ltm-core-tax-id-type.md).
 5. Go to **Organization administration** \> **Global address book** \> **Addresses**, select the country where the company is set, and then select **LATAM** to add the **NIT** tax ID type. For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
 6. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**, and select **New** to create a record that represents organizations.
@@ -38,4 +38,3 @@ Before you begin, open the **Feature management** workspace, and verify that the
     - In the **Based in country/region** field, select **Guatemala**.
     - In the **Country document type** field, select **NIT**.
     - Complete the country document number, including the tax ID number of the company.
-    
