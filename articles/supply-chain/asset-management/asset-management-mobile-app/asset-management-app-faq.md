@@ -30,7 +30,7 @@ If you don't see any features in the app, you probably lack the permissions requ
 
 The Asset Management mobile app requires Supply Chain Management version 10.0.36 or newer.
 
-## Can I customize and extend the app?
+## <a name="customize"></a>Can I customize and extend the app?
 
 No, it isn't currently possible to customize or extend the app.
 
@@ -40,7 +40,7 @@ No, the Asset Management mobile app doesn't currently support offline mode.
 
 ## Is there multi-language support?
 
-Yes, the Asset Management mobile app is available in all the same languages as Supply Chain Management, except for right-to-left (RTL) languages. We are awaiting RTL support from the canvas app platform and plan to add RTL support in a future release.
+Yes, the Asset Management mobile app is available in all the same languages as Supply Chain Management, except for right-to-left (RTL) languages. We're awaiting RTL support from the canvas app platform and plan to add RTL support in a future release.
 
 ## Where can I go to discuss the app with the community and submit suggestions to Microsoft?
 
@@ -66,9 +66,12 @@ This error can occur because the *Asset Management app* role doesn't have the pr
 
 ## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-The update process fails with an error if it detects that you've customized the Asset Management mobile application canvas app. This helps prevent it from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over 6 months old, you will need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution, and then re-install the app from *Dynamics 365 apps* or *AppSource*.
+The update process fails with an error if it detects that the Asset Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *AppSource*.
 
-Consider cloning the canvas app before removing your customizations, in case you want to copy them to the updated app. See [Can I customize and extend the app?](#can-i-customize-and-extend-the-app) for more details.
+Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
+
+> [!NOTE]
+> Microsoft doesn't support [customizing or extending](#customize) the Asset Management mobile app.
 
 ## Are there any known issues affecting the release of the Asset Management mobile app?
 
