@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 ## Loading data via dataflows
 Fact data is a combination of multiple sources or must have some level of transformation done to get data into the proper structure for planning. If loading production data it is recommended to use dataflows, this will better support typical production volume and complexity. Dataflows also provide a transform experience, detailed status results when loading data, and the option to schedule refreshes of the data.
 
-Dataflows are a self-service, cloud-based data preparation technology. Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account. Dataflows are authored by using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Customers can trigger dataflows to run either on demand or automatically on a schedule; data is always kept up to date. Learn more about dataflows: [An overview of dataflows across Microsoft Power Platform and Dynamics 365 products - Power Query | Microsoft Learn](https://learn.microsoft.com/en-us/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)
+Dataflows are a self-service, cloud-based data preparation technology. Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account. Dataflows are authored by using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Customers can trigger dataflows to run either on demand or automatically on a schedule; data is always kept up to date. For more information, see [An overview of dataflows across Microsoft Power Platform and Dynamics 365 products](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
 
 Dataflows can be used to populate dimensions and cubes within planning. One of the benefits of linking a dataflow to the dimension or cube, is that when the data source of the dataflow is updated with new data, the planning application will be updated based on the refresh frequency defined in the dataflow.
 
@@ -52,7 +52,7 @@ To use dataflows to populate dimension or cube values, follow these steps:
     
 After the data flow is linked to the planning cube, an optional refresh can be specified.
 
-To load data using a dataflow, the dimension or the cube must already have been created in the planning application. For more information, see [Microsoft Dynamics 365 Finance business performance planning dimensions](dimensions.md) and [Create cubes](create-cubes.md).
+To load data using a dataflow, the dimension or the cube must already have been created in the planning application. For more information, see [Microsoft Dynamics 365 Finance business performance planning dimensions](dimensions) and [Create cubes](create-cubes).
 
 
 ### Load data into a cube example
@@ -72,13 +72,13 @@ Below is an example of how to create a dataflow when loading fact data into a cu
 ### Create the dataflow in the Power Apps 
 
 1.  Go to Power Apps for your environment.
-2.  Select dataflows – For more information about dataflows, see [Create and use dataflows in Microsoft Power Platform](/power-query/dataflows/create-use)
+2.  Select dataflows – For more information about dataflows, see [Create and use dataflows in Microsoft Power Platform](/power-query/dataflows/create-use-dataflows)
     - Any data connection can be used. In this example, Excel was selected.
 3.  Enter a name for the data flow.
-4.  Select the source of the data. For example, choose Excel and enter in the appropriate credentials. For more information about troubleshooting connection issues, see [Create and use dataflows](/power-apps/maker/data-platform/create-and-use-dataflows.md#troubleshooting-data-connections).
+4.  Select the source of the data. For example, choose Excel and enter in the appropriate credentials. For more information about troubleshooting connection issues, see [Create and use dataflows](/power-apps/maker/data-platform/create-and-use-dataflows#troubleshooting-data-connections).
 5.  In the left side, select the data to work with. For example, this is the Excel workbook sheet or a table of data.
 6.  Select **Transform data**.
-7.  In the **Transform data** page, columns can be combined, updated, or removed. For example, you may want to remove rows that are from the fiscal year of 2021, or for a product that is no longer being produced going forward. For more information about transforming data, see [Transform data](/power-apps/maker/data-platform/create-and-use-dataflows.md#use-the-dataflow-editor-to-shape-or-transform-data).
+7.  In the **Transform data** page, columns can be combined, updated, or removed. For example, you may want to remove rows that are from the fiscal year of 2021, or for a product that is no longer being produced going forward. For more information about transforming data, see [Transform data](/power-apps/maker/data-platform/create-and-use-dataflows#use-the-dataflow-editor-to-shape-or-transform-data).
 8.  After the data is transformed, select **Next**.
 9.  In the **Map tables** page, under **Load setting**, select ‘**Load to existing table’**. A **Destination table** needs to be selected.
 
@@ -96,7 +96,7 @@ Below is an example of how to create a dataflow when loading fact data into a cu
 
 You can leave the comment field unmapped.
 
-You can choose to refresh the dataflow manually or schedule a refresh cadence. For more information about refresh settings, see[Set the refresh frequency](/power-apps/maker/data-platform/create-and-use-dataflows.md#set-the-refresh-frequency).
+You can choose to refresh the dataflow manually or schedule a refresh cadence. For more information about refresh settings, see[Set the refresh frequency](/power-apps/maker/data-platform/create-and-use-dataflows#set-the-refresh-frequency).
 
 
 #### Recommendations
