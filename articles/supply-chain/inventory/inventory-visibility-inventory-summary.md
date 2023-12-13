@@ -59,7 +59,7 @@ To enable the **Inventory summary** page and set the synchronization frequency i
 1. From the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
 1. From the navigation pane, select **Configuration**.
 1. Open the **Feature management & settings** tab.
-1. Turn on the **Toggle switch** for the *Inventory summary* feature. <!--KFM: In my version, this is no longer *OnHandMostSpecificBackgroundService*. Is this right? -->
+1. Turn on the **Toggle switch** for the *Inventory summary* feature.
 1. When the feature is enabled, the **Service Configuration** section becomes available and includes a row for configuring the *OnHandMostSpecificBackgroundService* feature. This setting lets you choose the frequency at which inventory summary data is synced. Use the **Up** and **Down** buttons in the **Value** field to change the time between syncs (which can be as low as 5 minutes). Then select **Save**.
 1. Select **Update configuration** to save and apply your new settings.
 

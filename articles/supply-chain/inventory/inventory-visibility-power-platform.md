@@ -225,7 +225,7 @@ Use the **On hand query** page in the **Operational visibility** group to query 
 
 1. On the [UI version 2](#ui-version) navigation pane, select **On hand query**.
 1. In the **Product** section, enter the **Organization ID**, **Site ID**, and **Location ID** for the products you want to look for.
-1. In **Product ID** field, enter one or more product IDs to get an exact match for your query, or leave it blank to include all products at the specific site and location. <!--KFM: I copied this step from the UIv1 instructions. Please confirm it also applies here. -->
+1. In **Product ID** field, enter one or more product IDs to get an exact match for your query, or leave it blank to include all products at the specific site and location.
 1. Select the **Edit Dimensions** button in the **Product** section to choose which dimensions to include in the query body. Then enter values for your selected dimensions in the **Product** section.
 1. Select **Use all values** for each field that should be included in query without filtering on any certain value.
 1. In the **Query Settings** section, set the following options:

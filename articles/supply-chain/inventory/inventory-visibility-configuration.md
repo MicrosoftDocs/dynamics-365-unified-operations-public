@@ -53,10 +53,10 @@ When you are setting up data sources, UI version 2 differs from UI version 1 in 
 
 ## <a name="data-source-configuration"></a>Add data sources (data source names)
 
-Each data source represents a system that your data comes from. Example data source names include `fno` (which corresponds to Supply Chain Management) and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
+Each data source represents a system that your data comes from. Example data source names include *fno* (which corresponds to Supply Chain Management) and *pos* (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (*fno*) in Inventory Visibility.
 
 > [!NOTE]
-> The `fno` data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you don't delete configurations that are related to `fno` in the data source.
+> The *fno* data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you don't delete configurations that are related to *fno* in the data source.
 
 > [!IMPORTANT]
 > When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
@@ -98,30 +98,30 @@ To add a data source in UI version 1, follow these steps.
 
 The purpose of the dimension configuration is to standardize the multi-system integration for posting events and queries, based on dimension combinations. Inventory Visibility provides a list of base dimensions that can be mapped from the dimensions of your data source. Thirty-three dimensions are available for mapping.
 
-- If you're using Supply Chain Management as one of your data sources, 13 dimensions are already mapped to the Supply Chain Management standard dimensions by default. The other 12 dimensions (`inventDimension1` through `inventDimension12`) are also mapped to custom dimensions in Supply Chain Management. The remaining eight dimensions (`ExtendedDimension1` through `ExtendedDimension8`) are extended dimensions that you can map to external data sources.
+- If you're using Supply Chain Management as one of your data sources, 13 dimensions are already mapped to the Supply Chain Management standard dimensions by default. The other 12 dimensions (*inventDimension1* through *inventDimension12*) are also mapped to custom dimensions in Supply Chain Management. The remaining eight dimensions (*ExtendedDimension1* through *ExtendedDimension8*) are extended dimensions that you can map to external data sources.
 - If you don't use Supply Chain Management as one of your data sources, you can freely map the dimensions. The following table shows the full list of available dimensions.
 
 > [!NOTE]
-> If you use Supply Chain Management, and change the default dimension mappings between Supply Chain Management and Inventory Visibility, the changed dimension won't sync data. Therefore, if your dimension isn't on the default dimension list, and you're using an external data source, we recommend that you use `ExtendedDimension1` through `ExtendedDimension8` to do the mapping.
+> If you use Supply Chain Management, and change the default dimension mappings between Supply Chain Management and Inventory Visibility, the changed dimension won't sync data. Therefore, if your dimension isn't on the default dimension list, and you're using an external data source, we recommend that you use *ExtendedDimension1* through *ExtendedDimension8* to do the mapping.
 
 | Dimension type | Base dimension |
 |---|---|
-| Product | `ColorId` |
-| Product | `SizeId` |
-| Product | `StyleId` |
-| Product | `ConfigId` |
-| Tracking | `BatchId` |
-| Tracking | `SerialId` |
-| Location | `LocationId` |
-| Location | `SiteId` |
-| Inventory status | `StatusId` |
-| Warehouse specific | `WMSLocationId` |
-| Warehouse specific | `WMSPalletId` |
-| Warehouse specific | `LicensePlateId` |
-| Others | `VersionId` |
-| Inventory (custom) | `InventDimension1` through `InventDimension12` |
-| Extension | `ExtendedDimension1` through `ExtendedDimension8` |
-| System | `Empty` |
+| Product | *ColorId* |
+| Product | *SizeId* |
+| Product | *StyleId* |
+| Product | *ConfigId* |
+| Tracking | *BatchId* |
+| Tracking | *SerialId* |
+| Location | *LocationId* |
+| Location | *SiteId* |
+| Inventory status | *StatusId* |
+| Warehouse specific | *WMSLocationId* |
+| Warehouse specific | *WMSPalletId* |
+| Warehouse specific | *LicensePlateId* |
+| Others | *VersionId* |
+| Inventory (custom) | *InventDimension1* through *InventDimension12* |
+| Extension | *ExtendedDimension1* through *ExtendedDimension8* |
+| System | *Empty* |
 
 > [!NOTE]
 > The dimension types that are listed in the preceding table are for your reference only. You don't have to define them in Inventory Visibility.
@@ -132,11 +132,11 @@ External systems can access Inventory Visibility through its RESTful APIs. For t
 
 | External dimension | Base dimension |
 |---|---|
-| `MyColorId` | `ColorId` |
-| `MySizeId` | `SizeId` |
-| `MyStyleId` | `StyleId` |
-| `MyDimension1` | `ExtendedDimension1` |
-| `MyDimension2` | `ExtendedDimension2` |
+| *MyColorId* | *ColorId* |
+| *MySizeId* | *SizeId* |
+| *MyStyleId* | *StyleId* |
+| *MyDimension1* | *ExtendedDimension1* |
+| *MyDimension2* | *ExtendedDimension2* |
 
 By configuring a dimension mapping, you can send the external dimensions directly to Inventory Visibility. Inventory Visibility will then automatically convert external dimensions to base dimensions.
 
@@ -183,27 +183,27 @@ To add a dimension mapping in UI version 1, follow these steps.
 
 When a data source posts an inventory change to Inventory Visibility, it posts that change by using *physical measures*. Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures based on your requirements. Queries can be based on the physical measures.
 
-Inventory Visibility provides a list of default physical measures that are mapped to Supply Chain Management (the `fno` data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management \> Inquiries and Report \> On-hand list**). The following table provides an example of physical measures.
+Inventory Visibility provides a list of default physical measures that are mapped to Supply Chain Management (the *fno* data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management \> Inquiries and Report \> On-hand list**). The following table provides an example of physical measures.
 
 | Physical measure name | Description |
 |---|---|
-| `NotSpecified` | Not specified |
-| `Arrived` | Arrived |
-| `AvailOrdered` | Available ordered |
-| `AvailPhysical` | Available physical |
-| `Deducted` | Deducted |
-| `OnOrder` | OnOrder |
-| `Ordered` | Ordered |
-| `PhysicalInvent` | Physical inventory |
-| `Picked` | Picked |
-| `PostedQty` | Posted quantity |
-| `QuotationIssue` | Quotation issue |
-| `QuotationReceipt` | Quotation receipt |
-| `Received` | Received |
-| `Registered` | Registered |
-| `ReservOrdered` | Ordered reserved |
-| `ReservPhysical` | Physical reserved |
-| `OrderedSum` | Ordered in total |
+| *NotSpecified* | Not specified |
+| *Arrived* | Arrived |
+| *AvailOrdered* | Available ordered |
+| *AvailPhysical* | Available physical |
+| *Deducted* | Deducted |
+| *OnOrder* | OnOrder |
+| *Ordered* | Ordered |
+| *PhysicalInvent* | Physical inventory |
+| *Picked* | Picked |
+| *PostedQty* | Posted quantity |
+| *QuotationIssue* | Quotation issue |
+| *QuotationReceipt* | Quotation receipt |
+| *Received* | Received |
+| *Registered* | Registered |
+| *ReservOrdered* | Ordered reserved |
+| *ReservPhysical* | Physical reserved |
+| *OrderedSum* | Ordered in total |
 
 If your data source is Supply Chain Management, you don't have to recreate the default physical measures. However, for external data sources, you can create new physical measures as needed.
 
@@ -417,138 +417,138 @@ When you install Inventory Visibility, it sets up a default data source configur
 
 #### Configuration of the iv data source
 
-This section describes how the `iv` data source is configured.
+This section describes how the *iv* data source is configured.
 
 ##### Physical measures configured for the "iv" data source
 
-The following physical measures are configured for the `iv` data source:
+The following physical measures are configured for the *iv* data source:
 
-- `Ordered`
-- `Softreserved`
+- *Ordered*
+- *Softreserved*
 
 ##### AvailableToReserve calculated measure
 
-The `AvailableToReserve` calculated measure is configured for the `iv` data source as shown in the following table.
+The *AvailableToReserve* calculated measure is configured for the *iv* data source as shown in the following table.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
-| Addition | `fno` | `PhysicalInvent` |
-| Addition | `fno` | `Ordered` |
-| Addition | `fno` | `Arrived` |
-| Addition | `pos` | `Inbound` |
-| Addition | `iv` | `Ordered` |
-| Subtraction | `fno` | `ReservPhysical` |
-| Subtraction | `iv` | `Softreserved` |
-| Subtraction | `pos` | `Outbound` |
-| Subtraction | `fno` | `Softreserved` |
+| Addition | *fno* | *PhysicalInvent* |
+| Addition | *fno* | *Ordered* |
+| Addition | *fno* | *Arrived* |
+| Addition | *pos* | *Inbound* |
+| Addition | *iv* | *Ordered* |
+| Subtraction | *fno* | *ReservPhysical* |
+| Subtraction | *iv* | *Softreserved* |
+| Subtraction | *pos* | *Outbound* |
+| Subtraction | *fno* | *Softreserved* |
 
 ##### TotalAvailable calculated measure
 
-The `TotalAvailable` calculated measure is configured for the `iv` data source as shown in the following table.
+The *TotalAvailable* calculated measure is configured for the *iv* data source as shown in the following table.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
-| Addition | `fno` | `AvailOrdered` |
-| Subtraction | `iv` | `Softreserved` |
-| Subtraction | `@iv` | `@allocated` |
+| Addition | *fno* | *AvailOrdered* |
+| Subtraction | *iv* | *Softreserved* |
+| Subtraction | *@iv* | *@allocated* |
 
 ##### TotalOnHand calculated measure
 
-The `TotalOnHand` calculated measure is configured for the `iv` data source as shown in the following table.
+The *TotalOnHand* calculated measure is configured for the *iv* data source as shown in the following table.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
-| Addition | `fno` | `PhysicalInvent` |
+| Addition | *fno* | *PhysicalInvent* |
 
 #### Configuration of the "fno" data source
 
-This section describes how the `fno` data source is configured.
+This section describes how the *fno* data source is configured.
 
 ##### Dimension mappings for the "fno" data source
 
-The dimension mappings that are listed in the following table are configured for the `fno` data source.
+The dimension mappings that are listed in the following table are configured for the *fno* data source.
 
 | External dimension | Base dimension |
 |---|---|
-| `InventBatchId` | `BatchId` |
-| `InventColorId` | `ColorId` |
-| `InventLocationId` | `LocationId` |
-| `InventSerialId` | `SerialId` |
-| `InventSiteId` | `SiteId` |
-| `InventSizeId` | `SizeId` |
-| `InventStatusId` | `StatusId` |
-| `InventStyleId` | `StyleId` |
-| `LicensePlateId` | `LicensePlateId` |
-| `WMSLocationId` | `WMSLocationId` |
-| `WMSPalletId` | `WMSPalletId` |
-| `ConfigId` | `ConfigId` |
-| `InventVersionId` | `VersionId` |
-| `InventDimension1` | `CustomDimension1` |
-| `InventDimension2` | `CustomDimension2` |
-| `InventDimension3` | `CustomDimension3` |
-| `InventDimension4` | `CustomDimension4` |
-| `InventDimension5` | `CustomDimension5` |
-| `InventDimension6` | `CustomDimension6` |
-| `InventDimension7` | `CustomDimension7` |
-| `InventDimension8` | `CustomDimension8` |
-| `InventDimension9` | `CustomDimension9` |
-| `InventDimension10` | `CustomDimension10` |
-| `InventDimension11` | `CustomDimension11` |
-| `InventDimension12` | `CustomDimension12` |
+| *InventBatchId* | *BatchId* |
+| *InventColorId* | *ColorId* |
+| *InventLocationId* | *LocationId* |
+| *InventSerialId* | *SerialId* |
+| *InventSiteId* | *SiteId* |
+| *InventSizeId* | *SizeId* |
+| *InventStatusId* | *StatusId* |
+| *InventStyleId* | *StyleId* |
+| *LicensePlateId* | *LicensePlateId* |
+| *WMSLocationId* | *WMSLocationId* |
+| *WMSPalletId* | *WMSPalletId* |
+| *ConfigId* | *ConfigId* |
+| *InventVersionId* | *VersionId* |
+| *InventDimension1* | *CustomDimension1* |
+| *InventDimension2* | *CustomDimension2* |
+| *InventDimension3* | *CustomDimension3* |
+| *InventDimension4* | *CustomDimension4* |
+| *InventDimension5* | *CustomDimension5* |
+| *InventDimension6* | *CustomDimension6* |
+| *InventDimension7* | *CustomDimension7* |
+| *InventDimension8* | *CustomDimension8* |
+| *InventDimension9* | *CustomDimension9* |
+| *InventDimension10* | *CustomDimension10* |
+| *InventDimension11* | *CustomDimension11* |
+| *InventDimension12* | *CustomDimension12* |
 
 ##### Physical measures configured for the "fno" data source
 
-The following physical measures are configured for the `fno` data source:
+The following physical measures are configured for the *fno* data source:
 
-- `Arrived`
-- `PhysicalInvent`
-- `ReservPhysical`
-- `onorder`
-- `notspecified`
-- `availordered`
-- `availphysical`
-- `picked`
-- `postedqty`
-- `quotationreceipt`
-- `received`
-- `ordered`
-- `ReservOrdered`
-- `OrderedSum`
-- `SoftReserved`
+- *Arrived*
+- *PhysicalInvent*
+- *ReservPhysical*
+- *onorder*
+- *notspecified*
+- *availordered*
+- *availphysical*
+- *picked*
+- *postedqty*
+- *quotationreceipt*
+- *received*
+- *ordered*
+- *ReservOrdered*
+- *OrderedSum*
+- *SoftReserved*
 
 #### Configuration of the "pos" data source
 
-This section describes how the data source `pos` is configured.
+This section describes how the data source *pos* is configured.
 
 ##### Physical measures for the "pos" data source
 
-The following physical measures are configured for the `pos` data source:
+The following physical measures are configured for the *pos* data source:
 
-- `Inbound`
-- `Outbound`
+- *Inbound*
+- *Outbound*
 
 ##### AvailQuantity calculated measure
 
-The `AvailQuantity` calculated measure is configured for the `pos` data source as shown in the following table.
+The *AvailQuantity* calculated measure is configured for the *pos* data source as shown in the following table.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
-| Addition | `fno` | `AvailPhysical` |
-| Addition | `pos` | `Inbound` |
-| Subtraction | `pos` | `Outbound` |
+| Addition | *fno* | *AvailPhysical* |
+| Addition | *pos* | *Inbound* |
+| Subtraction | *pos* | *Outbound* |
 
 #### Configuration of the "iom" data source
 
-The following physical measures are configured for the `iom` (intelligent order management) data source:
+The following physical measures are configured for the *iom* (intelligent order management) data source:
 
-- `OnOrder`
-- `OnHand`
+- *OnOrder*
+- *OnHand*
 
 #### Configuration of the "erp" data source
 
-The following physical measures are configured for the `erp` (enterprise resource planning) data source:
+The following physical measures are configured for the *erp* (enterprise resource planning) data source:
 
-- `Unrestricted`
-- `QualityInspection`
+- *Unrestricted*
+- *QualityInspection*
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

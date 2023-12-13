@@ -171,7 +171,7 @@ Therefore, if you try to make reservations on `iv.SoftReservPhysical`, and the q
 
 This section applies when you are using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
-Turn on and set up the reservation feature UI version 1, follow these steps:
+To turn on and set up the reservation feature UI version 1, follow these steps:
 
 1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
 1. From the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.

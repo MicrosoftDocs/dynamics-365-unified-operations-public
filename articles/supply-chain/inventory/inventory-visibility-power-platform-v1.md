@@ -36,7 +36,7 @@ To work with the Inventory Visibility app using UI version 1, the following prer
 1. Open the **Inventory Visibility** app.
 1. At the bottom of the navigation pane, open the **Change area** menu and select *Legacy UI*.
 1. On the navigation pane, select **Operational Visibility**.
-1. Select **Settings** at the top of the page. <!--KFM: Seems unnecessary. For me, the settings opened when I came to Operational Visibility. -->
+1. Select **Settings** at the top of the page.
 1. Enter the **Client ID**, **Tenant ID**, and **Client secret** in the dialog box. You should have found these values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-add-in).
 1. Select the **Refresh** button on the right side of the **Bearer Token** field. The system generates a new bearer token for your sessions, which expires after one hour.
 

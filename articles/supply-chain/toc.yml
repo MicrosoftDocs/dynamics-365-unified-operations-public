@@ -1721,6 +1721,8 @@
           href: inventory/inventory-visibility.md
         - name: Install and set up Inventory Visibility
           href: inventory/inventory-visibility-setup.md
+        - name: Set up product search for Inventory Visibility (preview)
+          href: inventory/inventory-visibility-product-search.md
         - name: The Inventory Visibility app in Power Apps
           items:
           - name: Inventory Visibility app user interface versions (preview)
@@ -1733,8 +1735,6 @@
             href: inventory/inventory-visibility-product-search-app.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
-        - name: Set up product search for Inventory Visibility (preview)
-          href: inventory/inventory-visibility-product-search.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
         - name: Inventory summary
