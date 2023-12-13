@@ -44,15 +44,15 @@ To use dataflows to populate dimension or cube values, follow these steps:
 1. In Power Apps, create the dimension or cube in planning before creating the dataflow:
      - Note the table name for the cube and the dimension. For example: Msdyn\_xpna\_CUBENAME or Msdyn\_xpna\_dimDimensionName.
 2.  When creating the data flow map for:
-     - The cube load - confirm the columns in the cube map to the dimensions selected when the cube was created.
-     - The dimension load - confirm that the columns in the dimension map to the dimension attributes selected when the dimension was created.
+     - The cube load - confirm the columns in the cube are mapped to the dimensions selected when the cube was created.
+     - The dimension load - confirm that the columns in the dimension are mapped to the dimension attributes selected when the dimension was created.
 3.  When creating a dataflow for:
      - A cube load -  select the key for the cube in **Column mapping** section. The key will be the DimensionSetAltKey.
      - A dimension load - select the key for the dimension in the **Column mapping** section.
     
 After the data flow is linked to the planning cube, you can specified an optional refresh.
 
-To load data using a dataflow, the dimension or the cube must already have been created in planning. For more information, see [Microsoft Dynamics 365 Finance business performance planning dimensions](dimensions.md) and [Create cubes](create-cubes.md).
+To load data using a dataflow, the dimension or the cube must already have been created in planning. For more information, see [Microsoft Dynamics 365 Finance business performance planning dimensions](Dimensions.md) and [Create cubes](create-cubes.md).
 
 ### Example
 
@@ -70,11 +70,11 @@ To create the cube in planning, follow these steps:
 ### Create the dataflow in Power Apps 
 
 1.  Go to Power Apps for your environment.
-2.  Select dataflows: For more information about dataflows, see [Create and use dataflows in Microsoft Power Platform](/power-query/dataflows/create-and-use-dataflows)
+2.  Select dataflows: For more information about dataflows, see [Create and use dataflows in Microsoft Power Platform](/power-apps/maker/data-platform/create-and-use-dataflows).
     - Any data connection can be used. In this example, Excel is selected.
 3.  Enter a name for the dataflow.
 4.  Select the source of the data. For example, select Excel. For more information about troubleshooting connection issues, see [Create and use dataflows](/power-apps/maker/data-platform/create-and-use-dataflows#troubleshooting-data-connections).
-5.  In the left side, select the data to work with. For example, this is Excel or a table of data.
+5.  In the left side, select the data to work with.
 6.  Select **Transform data**.
 7.  In the **Transform data** page, columns can be combined, updated, or removed. For example, you may want to remove rows from the fiscal year of 2021, or for an obsolete product. For more information about transforming data, see [Transform data](/power-apps/maker/data-platform/create-and-use-dataflows#use-the-dataflow-editor-to-shape-or-transform-data).
 8.  After the data is transformed, select **Next**.
@@ -91,7 +91,7 @@ To create the cube in planning, follow these steps:
 >[!Important]
 >If you selected a key at the top of the **Column mapping** page, that column must be mapped to a destination column.
 
-12. After the appropriate source columns have been mapped to a destination column, select **Next**.
+12. After the appropriate source columns are mapped to a destination column, select **Next**.
 The **Comment** field doesn't need to be mapped.
 
 You can refresh the dataflow manually or schedule a refresh cadence. For more information about refresh settings, see [Set the refresh frequency](/power-apps/maker/data-platform/create-and-use-dataflows#set-the-refresh-frequency).
@@ -99,12 +99,12 @@ You can refresh the dataflow manually or schedule a refresh cadence. For more in
 
 #### Recommendations
 
-When importing data in the **Data transformation** page, it's recommended: 
- - If you are using headings in your data, set **Use first row as headers** in the **Transform** section.
- - When the planning app creates dimensions and cubes, everything is referenced by the primary columns and are typically string fields. When mapping columns for the data load, confirm that column types match between the source and the destination column types. For example, in the planning app, many of the dimensions references are by name and are type **Text**. For the account dimension, the account number would needs to be a type of **Text**. This can be changed by selecting the icon to the left of the column header. If the type isn't changed, this results in an error.
+When importing data in the **Data transformation** page, the following is recommended:
+ - If you're using headings in your data, set **Use first row as headers** in the **Transform** section.
+ - When the planning app creates dimensions and cubes, the primary columns are referenced and are typically string fields. When mapping columns for the data load, confirm that the column types match between the source and the destination column types. For example, in the planning app, many of the dimensions references are by name and are type **Text**. For the account dimension, the account number needs to be a type of **Text**. This can be changed by selecting the icon to the left of the column header. If the type isn't changed, an error is diplayed: 
 
 Error Code: Mashup Exception Data Format Error, Error Details: Couldn't refresh the entity because of an issue with the mashup document MashupException.Error: DataFormat.Error: We couldn't convert to Number. Details: Reason = DataFormat.Error;Detail = XHDCOU;Microsoft.Data.Mashup.Error.Context = User.
 
- - To add another column to an existing dimension, add the new column in planning first. Go to **Dimension**, select **New column**. Populate the data from dataflows by following the steps listed above. You only need to select the primary column and the new column in the table mapping. Only the mapped columns will be updated and any unmapped columns won't change.
- - If you don't know what the key is for the cube that you are importing into, go to Power Apps and select TablesCustom<Table name>. Double-click on the table nameSchemaKeys.
- - If you are unsure what the key is for the dimension that you are importing into, go to Power Apps and select TablesCustom<Table name>PropertiesPrimary column (DIMENSIONS).
+ - To add another column to an existing dimension, add the new column in planning first. Go to **Dimension**, select **New column**. Populate the data from dataflows by following the steps listed above. You only need to select the primary column and the new column in the table mapping. Only the mapped columns are updated.
+ - If you don't know what the key is for the cube that you're importing into, go to Power Apps and select TablesCustom<Table name>. Double-click on the table nameSchemaKeys.
+ - If you are unsure what the key is for the dimension that you're importing into, go to Power Apps and select TablesCustom<Table name>PropertiesPrimary column (DIMENSIONS).
