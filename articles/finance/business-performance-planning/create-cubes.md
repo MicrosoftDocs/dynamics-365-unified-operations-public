@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Business performance planning cubes
+description: This article describes cubes in Business performance planning application.
+author: ShielaSogge
+ms.date: 12/08/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: Human Resources
+
+---
+# Business performance planning cubes
+
+[!include [banner](../includes/banner.md)]
+
 **Cubes**
 
 Key terms:
