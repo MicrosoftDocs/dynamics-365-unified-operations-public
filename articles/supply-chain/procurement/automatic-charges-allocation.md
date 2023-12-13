@@ -197,4 +197,14 @@ The following procedure shows how to allocate header-level charges to a line. Be
 
 1. Select **Allocate** to apply your settings and close the dialog box.
 
+## Reapply charges on header
+
+Under certain conditions the header auto charges are reapplied/overwritten when the user are changing the header fields.
+
+### Examples
+Another example is when you create a purchase order header where auto charges is applied, then you can manually update the purhcase order header charges to a different value, and then change one of the following fields, it will reapply the charges on the purchase order header to the original header auto charge values.
+
+Allocate charges from purchase order header to lines. Hearder charges are removed applied to the lines. Then change one of the following fields on the purchase order header, it will add the header charges again and at the same time leave the line charges. This occurs when you you change one of the following fields on the header.
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
