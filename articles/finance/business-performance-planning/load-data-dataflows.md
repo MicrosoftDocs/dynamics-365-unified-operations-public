@@ -1,7 +1,37 @@
-Loading data via dataflows
-==========================
+---
+# required metadata
 
-Oftentimes, fact data is a combination of multiple sources or must have some level of transformation done to get data into the proper structure for planning. If loading production data it is recommended to use dataflows, this will better support typical production volume and complexity. Dataflows also provide a transform experience, detailed status results when loading data, and the option to schedule refreshes of the data.
+title: Load data into Business performance planning using dataflows
+description: This article describes how to load data ino the Business performance planning application.
+author: ShielaSogge
+ms.date: 12/08/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: Human Resources
+
+---
+# Load data into Business performance planning using dataflows
+
+[!include [banner](../includes/banner.md)]
+
+## Loading data via dataflows
+Fact data is a combination of multiple sources or must have some level of transformation done to get data into the proper structure for planning. If loading production data it is recommended to use dataflows, this will better support typical production volume and complexity. Dataflows also provide a transform experience, detailed status results when loading data, and the option to schedule refreshes of the data.
 
 Dataflows are a self-service, cloud-based data preparation technology. Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account. Dataflows are authored by using Power Query, a unified data connectivity and preparation experience already featured in many Microsoft products, including Excel and Power BI. Customers can trigger dataflows to run either on demand or automatically on a schedule; data is always kept up to date. Learn more about dataflows: [An overview of dataflows across Microsoft Power Platform and Dynamics 365 products - Power Query | Microsoft Learn](https://learn.microsoft.com/en-us/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)
 
