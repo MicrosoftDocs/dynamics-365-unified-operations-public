@@ -483,6 +483,8 @@ items:
         href: hr-employee-manager-self-service-custom-links.md
       - name: Change Employee self service workspace name
         href: hr-employee-self-service-workspace-name.md
+      - name: Human Resources app (preview)
+        href: hr-app.md
       - name: Edit personal information
         href: hr-employee-manager-self-service-edit-personal-information.md
       - name: Restrict editing of personal information
