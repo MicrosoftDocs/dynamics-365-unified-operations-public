@@ -791,6 +791,10 @@ items:
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
+    - name: Human Resources app (preview)
+      items:
+        - name: Human Resources app (preview)
+          href: hr-app.md
     - name: Use the Workflow system
       items:
         - name: Workflow system overview
