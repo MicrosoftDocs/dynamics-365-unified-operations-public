@@ -1628,6 +1628,8 @@
                 href: localizations/global/e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
               - name: Configure a SharePoint channel
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: localizations/global/e-invoicing-isv-connector.md
           - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
             items: 
             - name: Activate and set up integration with Electronic Invoicing
@@ -1650,6 +1652,8 @@
               href: localizations/apac/apac-aus-nzl-electronic-invoices.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic invoicing for Denmark
+              href: localizations/denmark/e-invoicing-dk-get-started.md
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for France
