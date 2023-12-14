@@ -24,7 +24,7 @@ This article gives an overview of cloud-powered search in Microsoft Dynamics 365
 
 Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across channels powered by Cloud Scale Unit (CSU), such as e-commerce and point of sale (POS).
 
-Customers are accustomed to the nearly instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, automatic suggestions that appear as they type search terms, faceted navigation, and highlighting. If customers can't quickly find the product that they are looking for in one e-commerce store, they won't hesitate to go to a different e-commerce store.
+Customers are accustomed to the nearly instantaneous response times of web search engines, sophisticated e-commerce websites, social apps, automatic suggestions that appear as they type search terms, faceted navigation, and highlighting. If customers can't quickly find the product that they are looking for in one e-commerce store, they won't hesitate to go to a different e-commerce store.
 
 The cloud-powered product discoverability in Commerce helps retailers continue to increase consumer retention and conversion rates across channels powered by CSU.
 
@@ -41,7 +41,7 @@ To configure cloud-powered search capabilities, follow these steps.
 
     ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
 
-    1. If the **ProductSearch.UseAzureSearch** configuration parameter exists and is set to **true**, cloud-powered search capabilities have already been configured.
+    1. If the **ProductSearch.UseAzureSearch** configuration parameter exists and is set to **true**, cloud-powered search capabilities are already configured.
     1. If the **ProductSearch.UseAzureSearch** configuration parameter exists but isn't set to **true**, set it to **true**.
     1. If the **ProductSearch.UseAzureSearch** configuration parameter isn't present, continue to the next step.
 
@@ -60,7 +60,7 @@ The following illustration shows an example of typical browse and search functio
 
 ## Faceted navigation and choice summary
 
-Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of their choices is shown.
+Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer selects and applies refiners, a summary of their choices is shown.
 
 By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages.
 
@@ -70,7 +70,7 @@ The following illustration shows an example where faceted navigation is used in 
 
 ## Immersive autosuggest
 
-Current autosuggest functionality shows keywords that trigger a search for the matching keyword. Because of new enhancements in Commerce, customers can often discover links to products before they have finished typing.
+Current autosuggest functionality shows keywords that trigger a search for the matching keyword. Because of new enhancements in Commerce, customers can often discover links to products before they finish typing.
 
 Commerce also supports functionality for keyword matches in various categories. This functionality lets customers see the number of matching keywords across categories and trigger a search for a keyword in other categories.
 
