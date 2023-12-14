@@ -111,7 +111,7 @@ You can track worker's Certificates in Dynamics 365 Human Resources by creating 
 
 ### Define skills and proficiencies in Project Operations
 
-Skills are resource characteristics that are shared between Dynamics 365 Project Operations and if present, Dynamics 365 Field Service. For more information, see [Defining skills and proficiencies](/project-operations/resource-management/define-skills-proficiencies).
+Skills are resource characteristics that are shared between Dynamics 365 Project Operations and if present, Dynamics 365 Field Service. For more information, see [Defining skills and proficiencies](/dynamics365/project-operations/resource-management/define-skills-proficiencies).
 
 ### Turn off integration
 
