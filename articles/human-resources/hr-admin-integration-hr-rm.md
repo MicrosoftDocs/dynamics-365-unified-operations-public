@@ -103,7 +103,7 @@ Relevant business events are registered in Human Resources and when there are ch
 
 ### Create skills 
 
-You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job. For more information, see [Create skills](hr-develop-skills).
+You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job. For more information, see [Create skills](hr-develop-skills.md).
 
 ### Create certificates 
 
@@ -111,7 +111,7 @@ You can track worker's Certificates in Dynamics 365 Human Resources by creating 
 
 ### Define skills and proficiencies in Project Operations
 
-Skills are resource characteristics that are shared between Dynamics 365 Project Operations and if present, Dynamics 365 Field Service. For more information, see [Defining skills and proficiencies](../project-operations/resource-management/define-skills-proficiencies.md).
+Skills are resource characteristics that are shared between Dynamics 365 Project Operations and if present, Dynamics 365 Field Service. For more information, see [Defining skills and proficiencies](../../project-operations/resource-management/define-skills-proficiencies.md).
 
 ### Turn off integration
 
