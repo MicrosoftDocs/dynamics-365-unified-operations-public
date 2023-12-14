@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Human Resources to resource integration
 
-Human Resources to Resource Integration allows organizations to integrate their worker information to enhance resource manager's experience by bringing together worker information including their skills and proficiencies to find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics in Project Operations and other areas that use universal resource scheduling solution for resource scheduling.
+Human Resources to resource Integration allows organizations to integrate their worker information to enhance resource manager's experience by bringing together worker information including their skills and proficiencies to find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics in Project Operations and other areas that use universal resource scheduling solution for resource scheduling.
 
 This feature enables resource managers to:
 
