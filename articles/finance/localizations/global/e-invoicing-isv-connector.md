@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: 
+ms.author: ikondratenko
 ms.search.validFrom: 2023-12-01
 ms.dyn365.ops.version: AX 10.0.37
 ms.collection: get-started
