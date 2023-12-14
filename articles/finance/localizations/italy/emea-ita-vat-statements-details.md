@@ -1,7 +1,7 @@
 ---
-title: VAT statements details for Italy
-description: This article explains how to set up a VAT statement for legal entities in Italy.
-author: AdamTrukawka
+title: Configure system parameters to report Sales tax books
+description: This article explains how to configure system parameters to report Sales tax books for legal entities in Italy.
+author: liza-golub
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Italy
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.custom: 269664
@@ -17,11 +17,13 @@ ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
 ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 ---
 
-# VAT statements details for Italy
+# Configure system parameters to report Sales tax books for Italy
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up a VAT statement for legal entities in Italy. 
+This article explains how to configure system parameters to report Sales tax books for legal entities in Italy.
+
+As of version 10.0.39 of Finance you can generate Italian Sales tax books in legal entities with multiple VAT registration numbers and promary address outside of Italy. For more information, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 
 ## Set up customer/vendor tax information for tax reports
 
