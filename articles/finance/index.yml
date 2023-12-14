@@ -188,7 +188,17 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines
         text: General form guidelines
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
-        text: Build extensible controls    
+        text: Build extensible controls  
+    - title: Translation Service  
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview
+        text: Dynamics 365 Translation Service overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/dts-api-info
+        text: Dynamics 365 Translation Service API
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-aad-app-reg
+        text: Dynamics Lifecycle Services API - Authentication
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service
+        text: Translate user interface files
   - title: Use 
     items:
     - title: General ledger
