@@ -6,7 +6,7 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 10/10/2023
+ms.date: 12/14/2023
 ms.topic: faq
 ms.prod: 
 ms.technology:
@@ -27,7 +27,7 @@ We're implementing a public preview to ensure that we can provide a successful e
 
 ### What's the estimated time that's required to set up business performance analytics?
 
-The setup of business performance analytics takes about 30 minutes. However, it takes up to 24 hours for data to be available on reports.
+The setup of business performance analytics takes up to 60 minutes. However, it takes up to 24 hours for data to be available on reports.
 
 ### I received an error during the installation of business performance analytics. How do I fix it?
 
