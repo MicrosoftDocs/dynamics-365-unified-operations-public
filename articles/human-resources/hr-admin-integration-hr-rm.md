@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: Human Resources to resource integration
@@ -9,6 +8,22 @@ ms.date: 12/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
+
+# optional metadata
+
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: tulsijhaveri
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
 
 ---
 
