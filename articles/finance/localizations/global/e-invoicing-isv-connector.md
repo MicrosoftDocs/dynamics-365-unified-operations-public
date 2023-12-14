@@ -141,7 +141,7 @@ The name of this variable must be used as the name of the import source for the 
 
 ### Electronic invoicing in Denmark
 
-For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../mea/e-invoicing-dk-get-started.md).
+For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../emea/e-invoicing-dk-get-started.md).
 
 ## Additional resources
 
