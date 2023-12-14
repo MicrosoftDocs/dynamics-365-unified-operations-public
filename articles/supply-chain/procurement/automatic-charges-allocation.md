@@ -211,26 +211,28 @@ The following examples show how to update header-level charges and select a new 
 
 #### Example 1
 
-<!--KFM: Intro needed. What does this example show? -->
+In this example we update existing purchase order header charge and then see how update mode of delivery will reapply the header charge back to the original value
 
-1. Open the purchase order or charge order.
-1. Do one of these steps: <!--KFM: Do you really mean that we should do just one of these steps? What happens next? -->
+1. Open the purchase order.
 
-    - **For purchase orders only** – On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. Enter a new value in the **Charges value** field.
-    - **For purchase or sales orders** – Open the **Header** tab. On the **Delivery** FastTab, enter a new value in the **Mode of delivery** field.
-    - **For purchase or sales orders** – On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. Note that the **Charges value** is reset to its original value.
+    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. Enter a new value in the **Charges value** field.
+    - Open the **Header** tab. On the **Delivery** FastTab, enter a new value in the **Mode of delivery** field.
+    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
+    Note that the **Charges value** is reset to its original value.
 
 #### Example 2
 
-<!--KFM: Intro needed. What does this example show? -->
+In this example we allocate purchase order header charge to the purchase order line and then see how update mode of delivery will reapply the header charge and still have the line charge.
 
-1. Open the purchase order or charge order.
-1. Do one of these steps: <!--KFM: Do you really mean that we should do just one of these steps? What happens next? -->
+1. Open the purchase order
 
-    - **For purchase orders only** – On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Allocate charges**. On the Allocate charges to order lines dialog, select the **Allocate all** to allocate charges to order lines. Then select **Allocate**.
-    - **For purchase or sales orders** – On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. Note that the charges are removed and allocated to the line level.
-    - **For purchase or sales orders** – On the **Purchase order lines** FastTab toolbar, select **Financials \> Maintain charges**. Note that the previous header charge is now at the line level.
-    - **For purchase or sales orders** – Open the **Header** tab. On the **Delivery** FastTab, enter a new value in the **Mode of delivery** field.
-    - **For purchase or sales orders** – On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. Note that the **Charges value** has been reapplied, while the original charges from the header still exist at the line level.
+    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Allocate charges**. On the Allocate charges to order lines dialog, select the **Allocate all** to allocate charges to order lines. Then select **Allocate**.
+    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
+    Note that the charges are removed and allocated to the line level.
+    - On the **Purchase order lines** FastTab toolbar, select **Financials \> Maintain charges**.
+    Note that the previous header charge is now at the line level.
+    - Open the **Header** tab. On the **Delivery** FastTab, enter a new value in the **Mode of delivery** field.
+    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
+    Note that the **Charges value** has been reapplied, while the original charges from the header still exist at the line level.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
