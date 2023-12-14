@@ -29,8 +29,8 @@ This article explains how you can use self-service to configure a Commerce Scale
 > - Do not install a CSU on a developer environment, which typically already has a configured Retail Server and Channel database.
 
 > [!IMPORTANT]
-> - It is critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
-> - It is critical that you have a plan to rotate this key at least 1 month prior to expiration. Planning is necessary when working with a high number of stores to ensure that there is sufficient time to roll out the change to all stores.
+> - It's critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+> - It's critical that you have a plan to rotate this key at least one month prior to expiration. Planning is necessary when working with a high number of stores to ensure that there is sufficient time to roll out the change to all stores.
 
 ## Before you begin
 
