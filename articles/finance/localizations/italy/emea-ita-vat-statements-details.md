@@ -23,46 +23,33 @@ ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 
 This article explains how to configure system parameters to report Sales tax books for legal entities in Italy.
 
-As of version 10.0.39 of Finance you can generate Italian Sales tax books in legal entities with multiple VAT registration numbers and promary address outside of Italy. For more information, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
+As of version 10.0.39 of Finance you can generate Italian Sales tax books in legal entities with multiple VAT registration numbers and primary address outside of Italy. For more information, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 
-## Set up customer/vendor tax information for tax reports
+## Set up a company, vendors and customers fiscal code and tax registration number
 
-To generate the sales tax report, the customer and vendor must be configured with the fiscal information for Italy. On the **Customers** page, select the fields in the following table.
+> [!NOTE]
+> When [Tax Calculation service](../global/global-tax-calcuation-service-overview.md) is used and [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) functionality is enabled, you must set up [**Registration IDs**](../europe/emea-registration-ids.md) to define **Tax exempt number** (Tax registration number) of your legal entity, customers and vendors as it is described in the [Set up a VAT ID for a legal entity, customers, and vendors](../global/emea-multiple-vat-registration-numbers.md#set-up-a-vat-id-for-a-legal-entity-customers-and-vendors) section of [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) guidance. 
 
-### Invoice and delivery
+### Company fiscal code and tax registration number
 
-| **Field**             | **Description**                                        |
-|-----------------------|--------------------------------------------------------|
-| **Tax exempt number** | Enter the tax exempt number for VAT declaration.       |
-| **Fiscal code**       | Enter the fiscal code for this customer.               |
-| **Sales tax Group**   | Select a sales tax group to be used for this customer. |
+| **Field**        | **Description**                                                    | **Page > FastTab** |
+|------------------|--------------------------------------------------------------------|--------------------|
+| **Fiscal Code**  | Enter the fiscal code from the legal entity registration in Italy. | Legal entities > Registration numbers |
+| **Tax registration number** | Enter the tax registration number for the legal entity in Italy |  Legal entities > Tax registration <br> See *Note* above in this section for reference on setup in **Multiple VAT registration numbers** scenario. |
 
-On the **Vendors** page, select the fields in the following table.
+### Customers fiscal code and tax registration number
 
-### Invoice and delivery
+| **Field**             | **Description**                                        | **Page > FastTab** |
+|-----------------------|--------------------------------------------------------|--------------------|
+| **Tax exempt number** | Enter the tax exempt number for VAT declaration.       | Account receivable > Customers > All customers > Invoice and delivery <br> See *Note* above in this section for reference on setup in **Multiple VAT registration numbers** scenario. |
+| **Fiscal code**       | Enter the fiscal code for this customer.               | Account receivable > Customers > All customers > Invoice and delivery |
 
-| **Field**             | **Description**                                      |
-|-----------------------|------------------------------------------------------|
-| **Tax exempt number** | Enter the tax exempt number for VAT declaration.     |
-| **Fiscal code**       | Enter the fiscal code for this vendor.               |
-| **Sales tax Group**   | Select a sales tax group to be used for this vendor. |
+### Vendors fiscal code and tax registration number
 
-## Set up a company fiscal code and tax registration number
-To generate reports, the company fiscal code and registration number should be set up on the **Legal entity** page. On the **Legal entity** page, select the fields in the following table.
-
-### Registration numbers
-
-| **Field**        | **Description**                                                    |
-|------------------|--------------------------------------------------------------------|
-| **Fiscal Code**  | Enter the fiscal code from the legal entity registration in Italy. |
-| **Legal Nature** | Enter the legal structure of the company.                          |
-| **CUC**          | Enter the CUC code.                                                |
-
-### Tax registration
-
-| **Field**               | **Description**                                                 |
-|-------------------------|-----------------------------------------------------------------|
-| Tax registration number | Enter the tax registration number for the legal entity in Italy |
+| **Field**             | **Description**                                      | **Page > FastTab** |
+|-----------------------|------------------------------------------------------|--------------------|
+| **Tax exempt number** | Enter the tax exempt number for VAT declaration.     | Account payable > Vendors > All vendors > Invoice and delivery <br> See *Note* above in this section for reference on setup in **Multiple VAT registration numbers** scenario. |
+| **Fiscal code**       | Enter the fiscal code for this vendor.               | Account payable > Vendors > All vendors > Invoice and delivery |
 
 ### Set up parameters for Italian sales tax book
 
