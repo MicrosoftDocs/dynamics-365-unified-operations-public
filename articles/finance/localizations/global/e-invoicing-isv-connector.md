@@ -2,7 +2,7 @@
 title: Electronic Invoicing service ISV last-mile connector
 description: This article explains how to configure and use the Electronic Invoicing service ISV connector.
 author: ikondratenko
-ms.date: 12/07/2023
+ms.date: 12/14/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
