@@ -2,7 +2,7 @@
 title: Pricing extensions
 description: This article describes how to extend pricing and discount functionalities in Microsoft Dynamics 365 Commerce.
 author: zhizhen
-ms.date: 12/12/2023
+ms.date: 12/14/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -15,7 +15,6 @@ ms.search.validFrom:
 # Pricing extensions
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to extend pricing and discount functionalities in Microsoft Dynamics 365 Commerce.
 
@@ -24,18 +23,18 @@ This article describes how to extend pricing and discount functionalities in Mic
 
 ## Extend the Commerce pricing engine
 
-The Commerce pricing engine is the center of pricing and discounts functionalities in Microsoft Dynamics 365 Commerce. To extend the Commerce pricing engine, you must first be familiar with the terminologies in the following table.
+The Commerce pricing engine is the hub of pricing and discounts functionalities in Microsoft Dynamics 365 Commerce. To extend the Commerce pricing engine, you must first be familiar with the terminologies in the following table.
 
 | Name | Description |
 | --- | --- |
-| Discount package | A discount package is a class that implements the *IDiscountPackage* interface, which serves as a different type of discount. You can define different discount behaviors by creating different discount packages.  |
-| Discount filter | To customize different discount applicabilities, you can filter out some discounts by implementing the *IDiscountFilter* interface based on your business requirements. |
+| Discount package | A discount package is a class that implements the IDiscountPackage interface, which serves as a different type of discount. You can define different discount behaviors by creating different discount packages.  |
+| Discount filter | To customize different discount applicabilities, you can filter out some discounts by implementing the IDiscountFilter interface based on your business requirements. |
 
-Commerce pricing engine is an assembly shared across headquarters and Scale Units. It means that you only need to write one piece of pricing engine extensions, like new discount packages - and that discount package can be used in both back-office and point of sale.
+The Commerce pricing engine is an assembly shared across headquarters and Commerce Scale Units (CSUs). This means that you only need to write one piece of pricing engine extension (for example, a new discount package), and that discount package extension can then be used both in Commerce headquarters and point of sale (POS).
 
 ## Register your extensions
 
-When you complete your pricing engine extension, you can register it through the *PricingEngineExtensionRepository*. The registration process varies by the product to which you're integrating.
+Once you create your pricing engine extension, you can register it through the PricingEngineExtensionRepository. The registration process varies by the product to which you're integrating.
 
 ### Commerce Scale Unit and Store Commerce
 
@@ -44,7 +43,7 @@ You can add pretriggers for the service requests to which you'd like your extens
 | Service request | Description |
 | --- | --- |
 | CalculatePricesServiceRequest | This service request calculates the prices (including base price), trade agreement, and price adjustments for a sales transaction.  |
-| CalculateDiscountsServiceRequest | This service request calculates the discounts (including discount trade agreements),  simple discounts, mix and match discounts, quantity discounts, and threshold discounts for a sales transaction. |
+| CalculateDiscountsServiceRequest | This service request calculates the discounts (including discount trade agreements), simple discounts, mix and match discounts, quantity discounts, and threshold discounts for a sales transaction. |
 | GetIndependentPriceDiscountServiceRequest| This service request only calculates prices and single line discounts. It's used for product listing and product details pages where product prices are calculated independently. |
 | CalculateShippingDiscountsServiceRequest | This service request calculates the shipping discounts for a sales transaction. |
 
@@ -56,16 +55,16 @@ For finance and operations apps, you must register discounts through X++ extensi
 
 ## Calculate price and discounts against a date other than today
 
-By default, the Commerce pricing engine applies price and discounts based on the date that sales transaction happens, which typically is "today". 
+By default, the Commerce pricing engine applies price and discounts based on the date that sales transaction happens, which is usually "today". 
 
 To override the default behavior, follow these steps.
 
-1. Add a pretrigger of *CalculatePricesServiceRequest* and update its *DateWhenActive* value to the date the calculation should happen on.
-1. Add a pretrigger of *CalculateDiscountsServiceRequest* and update its *DateWhenActive* value to the date on which the calculation should happen. Note: 
+1. Add a pretrigger to CalculatePricesServiceRequest and update its DateWhenActive value to the date on which the calculation should occur.
+1. Add a pretrigger to CalculateDiscountsServiceRequest and update its DateWhenActive value to the date on which the calculation should occur. 
     > [!NOTE]
-    > The DateWhenActive field on CalculateDiscountsServiceRequest is only modifiable in Commerce version 10.0.37 and later.
+    > You can only modify the DateWhenActive value of CalculateDiscountsServiceRequest in Commerce version 10.0.37 and later.
 
-1. Add following configuration key and value to **Commerce parameters**.
+1. In headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** and add the following configuration key and value:
     - Key: Pricing.ResetSalesDateKillSwitch
     - Value: true
 1. Run the **1070 (Channel configuration)** CDX job
