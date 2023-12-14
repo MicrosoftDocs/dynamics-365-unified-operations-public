@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 
-# Human Resource to resource integration
+# Human Resources to resource integration
 
 Human Resources to Resource Integration allows organizations to integrate their worker information to enhance resource manager's experience by bringing together worker information including their skills and proficiencies to find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics in Project Operations and other areas that use universal resource scheduling solution for resource scheduling.
 
@@ -56,11 +56,11 @@ This feature enables resource managers to:
 
 ### Process
 
-Human Resources to resource integration uses Dual-write. For more information, see [Dual-write](/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md). Dual write infrastructure provides near-real-time integration from Human Resources to Resource management. For more information, see [Guidance for dual-write setup](/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
+Human Resources to resource integration uses Dual-write. For more information, see [Dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md). Dual write infrastructure provides near-real-time integration from Human Resources to Resource management. For more information, see [Guidance for dual-write setup](../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
 
 ### Prerequisites
 
-Power Platform integration is a feature that's enabled in Microsoft Dynamics Lifecycle Services. It lets administrators link their finance and operations environments with new or existing Microsoft Power Platform–based environments. To learn more, see [Enable Power Platform Integration](/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).md
+Power Platform integration is a feature that's enabled in Microsoft Dynamics Lifecycle Services. It lets administrators link their finance and operations environments with new or existing Microsoft Power Platform–based environments. To learn more, see [Enable Power Platform Integration](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 #### Install and connect Dynamics 365 applications
 Some of the following Dual-write solutions may be required based on your organization's integration points:
@@ -87,11 +87,11 @@ Follow these steps to install the integration from the Power platform admin cent
 
 ### Install Dual-write packages
 
-The Dual-write Human Resources package contains the solutions and maps that are required to sync Human Resources data. For more information, see [Dual-write Human Resources](/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions#dual-write-human-resources).
+The Dual-write Human Resources package contains the solutions and maps that are required to sync Human Resources data. For more information, see [Dual-write Human Resources](../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
 
 ### Enable dual-write maps
 
-Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. For more information, see [Enable dual-write for existing finance and operations apps](/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write).
+Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. For more information, see [Enable dual-write for existing finance and operations apps](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 
 ### Integration process
 
@@ -111,7 +111,7 @@ You can track worker's Certificates in Dynamics 365 Human Resources by creating 
 
 ### Define skills and proficiencies in Project Operations
 
-Skills are resource characteristics that are shared between Dynamics 365 Project Operations and if present, Dynamics 365 Field Service. For more information, see [Defining skills and proficiencies](/project-operations/resource-management/define-skills-proficiencies).
+Skills are resource characteristics that are shared between Dynamics 365 Project Operations and if present, Dynamics 365 Field Service. For more information, see [Defining skills and proficiencies](../project-operations/resource-management/define-skills-proficiencies.md).
 
 ### Turn off integration
 
