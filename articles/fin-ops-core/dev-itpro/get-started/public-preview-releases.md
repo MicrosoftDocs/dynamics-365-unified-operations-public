@@ -65,7 +65,7 @@ In the following table:
 | CY24Q4: 10.0.41\* | July 29, 2024 | August 9, 2024 | September 13, 2024 | October 4, 2024 | May 23, 2025 |
 | CY24Q3: 10.0.40 | April 26, 2024 | May 3, 2024 | June 7, 2024 | July 5, 2024 | February 18, 2025 |
 | CY24Q2: 10.0.39\* | January 29, 2024 | February 9, 2024 | March 15, 2024 | April 5, 2024 | November 22, 2024 |
-| CY24Q1: 10.0.38 | October 27, 2023 | November 3, 2023 | January 12, 2023 | February 2, 2024 | August 23, 2024 |
+| CY24Q1: 10.0.38 | October 27, 2023 | November 3, 2023 | January 12, 2024 | February 2, 2024 | August 23, 2024 |
 | 10.0.37<br>(The "November" release) | September 1, 2023 | Not applicable | October 20, 2023 | November 3, 2023 | March 15, 2024 |
 | 10.0.36\*<br>(The "October" release) | July 31, 2023 | Not applicable | September 15, 2023 | September 29, 2023 | January 12, 2024 |
 | 10.0.35<br>(The "August" release) | May 26, 2023 | Not applicable | July 14, 2023 | July 28, 2023 | October 20, 2023 |
