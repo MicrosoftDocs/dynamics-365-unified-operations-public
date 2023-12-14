@@ -56,7 +56,7 @@ This feature enables resource managers to:
 
 ### Process
 
-Human Resources to resource integration uses Dual-write. For more information, see [Dual-write](/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview). Dual write infrastructure provides near-real-time integration from Human Resources to Resource management. For more information, see [Guidance for dual-write setup](/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup).
+Human Resources to resource integration uses Dual-write. For more information, see [Dual-write](/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md). Dual write infrastructure provides near-real-time integration from Human Resources to Resource management. For more information, see [Guidance for dual-write setup](/fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
 
 ### Prerequisites
 
