@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to use the **Allocation** methodin the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
+This article describes how to use the **Allocation** method in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 An understanding of allocation in the Business performance planning application is fundamental for accurate and informed business planning. The **Allocation** visual works at different levels within dimensions to help you effectively strategize and confidently plan business operations.
 
