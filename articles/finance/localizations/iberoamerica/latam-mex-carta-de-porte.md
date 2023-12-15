@@ -79,7 +79,7 @@ In the **Trailer** section, set the following fields if a trailer is used in the
 - **Trailer type**
 
 > [!NOTE]
-> If there's an additional trailer, set the fields in the **Additional trailer** section. If there's an additional driver, set the fields in the **Additional driver** section. For **Additional driver**, the following fields are required in this section:
+> If there's an additional trailer, set the fields in the **Additional trailer** section. If there's an additional driver, set the fields in the **Additional driver** section. For an additional driver, the following fields in the **Additional driver** section are required:
 >
 > - **Driver**
 > - **Registration number** or **RFC number**
@@ -105,7 +105,7 @@ Follow these steps to set up the Mexican tax authorities (SAT) catalogs to add i
     - For the **Permission type** field, the SAT catalog is **c\_TipoPermiso**.
     - For the **Federal motor transport configuration** field, the SAT catalog is **c\_ConfigAutotransporte**.
     - For the **Customs document type** field, the SAT catalog is **c\_DocumentoAduanero**.
-	- For the **Customs regime** field, the SAT catalog is **c\_RegimenAduanero**.
+    - For the **Customs regime** field, the SAT catalog is **c\_RegimenAduanero**.
     - For the **Customs material type** field, the SAT catalog is **c\_TipoMateria**.	
 
 ### Permission number
@@ -122,18 +122,19 @@ Follow these steps to set up the Mexican tax authorities (SAT) catalogs to add i
 ### Sales orders
 
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Select the sales order you want to work with or create a new one.
-3. On the **Header** tab, on the **General** FastTab, in the **Electronic invoices** section, select the value of the **Customs regime** field. The list of available values should be preliminary defined in the **Customs regime** catalog. The **Customs regime** is mandatory when the **Foreign trade** option is turned on.
+2. Select an existing sales order that you want to work with, or create a new one.
+3. On the **Header** tab, on the **General** FastTab, in the **Electronic invoices** section, in the **Customs regime** field, select a value. The list of available values should already be defined in the **Customs regime** catalog. The **Customs regime** field is mandatory when the **Foreign trade** option is turned on.
 
 ### Sales order lines
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Select an existing sales order that you want to work with or create a new one.
-3. On the **Lines** tab, on the **Product** FastTab, in the **CFD - Electronic invoices** section, specify the following:
 
-   - Select the value of the **Customs material type** field. The list of available values should already be defined in the **Customs material type** catalog. The **Customs material type** is mandatory when the **Foreign trade** option is turned on.
-   - Select the value of the **Customs document type** field. The list of available values should already be defined in the **Customs document type** catalog. The **Customs document type** is mandatory when the **Foreign trade** option is turned on.
-   - Enter a value in the **Material description** field. The **Metarial description** is mandatory when the **Customs material type** attribute contains the value **05** with the description **Other** (**Otra**).
-   - Fill in the **Identifier of customs document** field. The **Identifier of customs document** is mandatory when the **Foreign trade** option is turned on.
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+2. Select an existing sales order that you want to work with, or create a new one.
+3. On the **Lines** tab, on the **Product** FastTab, in the **CFD - Electronic invoices** section, specify the following information:
+
+    - In the **Customs material type** field, select a value. The list of available values should already be defined in the **Customs material type** catalog. The **Customs material type** field is mandatory when the **Foreign trade** option is turned on.
+    - In the **Customs document type** field, select a value. The list of available values should already be defined in the **Customs document type** catalog. The **Customs document type** field is mandatory when the **Foreign trade** option is turned on.
+    - In the **Material description** field, enter a value. The **Material description** field is mandatory when the **Customs material type** attribute contains the value **05** that has the description **Other** (**Otra**).
+    - Set the **Identifier of customs document** field. The **Identifier of customs document** field is mandatory when the **Foreign trade** option is turned on.
 
 ### Distance and time
 
@@ -164,8 +165,8 @@ If your company has implemented the **Fixed assets** module, enter information i
         - **Federal motor transport configuration** (for trucks only)
         - **Trailer type**
 
-           - **Registration number**
-           - **Vehicle gross weight**
+            - **Registration number**
+            - **Vehicle gross weight**
 
     - In the **Model** section:
 
