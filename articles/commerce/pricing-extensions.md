@@ -2,7 +2,7 @@
 title: Pricing extensions
 description: This article describes how to extend pricing and discount functionalities in Microsoft Dynamics 365 Commerce.
 author: zhizhen
-ms.date: 12/14/2023
+ms.date: 12/15/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -70,6 +70,6 @@ To override the default behavior, follow these steps.
 1. Run the **1070 (Channel configuration)** CDX job
 
 > [!NOTE]
-> You must ensure that all SalesLine > SalesDate values match the date you set on DateWhenActive.
+> You must ensure that all sales line SalesDate values match the date set for DateWhenActive.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
