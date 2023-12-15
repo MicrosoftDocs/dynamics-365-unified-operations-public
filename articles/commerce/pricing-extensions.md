@@ -30,7 +30,7 @@ The Commerce pricing engine is the hub of pricing and discounts functionalities 
 | Discount package | A discount package is a class that implements the IDiscountPackage interface, which serves as a different type of discount. You can define different discount behaviors by creating different discount packages.  |
 | Discount filter | To customize different discount applicabilities, you can filter out some discounts by implementing the IDiscountFilter interface based on your business requirements. |
 
-The Commerce pricing engine is an assembly shared across headquarters and Commerce Scale Units (CSUs). This means that you only need to write one piece of pricing engine extension (for example, a new discount package), and that discount package extension can then be used both in Commerce headquarters and point of sale (POS).
+The Commerce pricing engine is an assembly shared across headquarters and Commerce Scale Units (CSUs). This means that you only need to write one piece of pricing engine extension (for example, a new discount package), and that extension can be used both in Commerce headquarters and point of sale (POS).
 
 ## Register your extensions
 
@@ -44,7 +44,7 @@ You can add pretriggers for the service requests to which you'd like your extens
 | --- | --- |
 | CalculatePricesServiceRequest | This service request calculates the prices (including base price), trade agreement, and price adjustments for a sales transaction.  |
 | CalculateDiscountsServiceRequest | This service request calculates the discounts (including discount trade agreements), simple discounts, mix and match discounts, quantity discounts, and threshold discounts for a sales transaction. |
-| GetIndependentPriceDiscountServiceRequest| This service request only calculates prices and single line discounts. It's used for product listing and product details pages where product prices are calculated independently. |
+| GetIndependentPriceDiscountServiceRequest| This service request only calculates prices and single line discounts, and is used for product listing and product details pages where product prices are calculated independently. |
 | CalculateShippingDiscountsServiceRequest | This service request calculates the shipping discounts for a sales transaction. |
 
 For example, when you create a new discount package, you can add a pretrigger to the CalculateDiscountsServiceRequest service request and call `PricingEngineExtensionRepository.RegisterDiscountPackage(new DiscountPackage());` inside of your pretrigger.
@@ -55,7 +55,7 @@ For finance and operations apps, you must register discounts through X++ extensi
 
 ## Calculate price and discounts against a date other than today
 
-By default, the Commerce pricing engine applies price and discounts based on the date that sales transaction happens, which is usually "today". 
+By default, the Commerce pricing engine applies price and discounts based on the date that sales transaction happens, which is usually "today." 
 
 To override the default behavior, follow these steps.
 
