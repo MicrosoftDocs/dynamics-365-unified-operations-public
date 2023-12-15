@@ -207,7 +207,7 @@ You can also use the **help** command in PowerShell to find information about al
 | --skipversioncheck | Bypasses version validation during downgrade. |
 | --sqlservername \<SQL server name\> | Specifies the name of the SQL Server instance that Store Commerce uses in offline mode. If this parameter is omitted, the installer uses the default instance. |
 | --trustsqlservercertificate | Trusts the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
-| --usecommonapplicationdata                       | Use a common application data folder across all Windows users on this device. If this parameter is omitted, Store Commerce is only installed for the current user. |
+| --usecommonapplicationdata                       | Install Store Commerce app for all users on this device. This argument installs the device token in a common application data folder. Users must be added to the RetailChannelUsers group on the device in order to use Store Commerce app. If this argument is omitted, Store Commerce app is only installed for the current user. |
 | --useremoteappcontent | Download and display the Store Commerce UI from the Commerce Scale Unit (CSU.) If this parameter is omitted, the local application content that is deployed with Store Commerce is used. See the **Hybrid deployment** section in this document for more information. |
 | --verbosity | Specifies the verbosity of logs (0 - trace, 1 - debug, 2 - informational, 3 - warning, 4 - error, 5 - critical, 6 - silent). When this parameter is omitted, defaults to 2. |
 | --version | Shows information about the app version. |
