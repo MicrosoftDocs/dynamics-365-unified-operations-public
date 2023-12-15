@@ -20,7 +20,7 @@ Before you begin, open the **Feature management** workspace, and verify that the
 ## Create a legal entity
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **New** to create a legal entity. Some functionality is enabled only for Paraguay. Examples include specific tax reports or electronic invoices.
-2. In the address setup, set up the address format for Paraguay by using **State** as **Departamento** and **County** as **Municipio**
+2. In the address setup, set up the address format for Paraguay by using **State** as **Departamento** and **County** as **Municipio**.
 3. Go to **Organization administration** \> **Setup** \> **LATAM** \> **LATAM parameters**.
 
 ## Set up tax information
@@ -38,5 +38,5 @@ Before you begin, open the **Feature management** workspace, and verify that the
     - In the **Based in country/region** field, select **Paraguay**.
     - In the **Country document type** field, select **RUC**.
     - Complete the country document number, including the tax ID number of the company.
-    
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
