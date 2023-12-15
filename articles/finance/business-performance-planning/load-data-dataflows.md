@@ -34,7 +34,7 @@ Fact data is a combination of multiple sources, or some level of transformation 
 
 Dataflows are a self-service, cloud-based data preparation technology. They enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account.
 
-Dataflows are authored by using Power Query. Power Query is a unified data connectivity and preparation experience that's featured in many Microsoft products, including Excel and Power BI. Customers trigger dataflows to run either on demand or automatically on a schedule, and data is always kept up to date. For more information, see [What are dataflows?](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365.md)
+Dataflows are authored by using Power Query. Power Query is a unified data connectivity and preparation experience that's featured in many Microsoft products, including Excel and Power BI. Customers trigger dataflows to run either on demand or automatically on a schedule, and data is always kept up to date. For more information, see [What are dataflows?](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)
 
 Dataflows can populate dimensions and cubes in Business performance planning. After a dataflow is linked to a dimension or cube, when the data source of the dataflow is updated, Business performance planning is updated based on the refresh frequency that's defined in the dataflow.
 
@@ -78,15 +78,15 @@ To create the cube in Business performance planning dimensions, follow these ste
 ### Create the dataflow in Power Apps
 
 1. Go to Power Apps for your environment.
-2. Select dataflows. For more information about dataflows, see [Create and use dataflows in Power Apps](/power-apps/maker/data-platform/create-and-use-dataflows.md).
+2. Select dataflows. For more information about dataflows, see [Create and use dataflows in Power Apps](/power-apps/maker/data-platform/create-and-use-dataflows).
 
     Any data connection can be used. For this example, select Excel.
 
 3. Enter a name for the dataflow.
-4. Select the source of the data. For this example, select Excel. For more information about how to troubleshoot connection issues, see [Troubleshooting data connections](/power-apps/maker/data-platform/create-and-use-dataflows.md#troubleshooting-data-connections).
+4. Select the source of the data. For this example, select Excel. For more information about how to troubleshoot connection issues, see [Troubleshooting data connections](/power-apps/maker/data-platform/create-and-use-dataflows#troubleshooting-data-connections).
 5. On the left, select the data to work with.
 6. Select **Transform data**.
-7. On the **Transform data** page, you can combine, update, or remove columns. For example, you might want to remove rows for the fiscal year 2021 or rows for an obsolete product. For more information about how to transform data, see [Use the dataflow editor to shape or transform data](/power-apps/maker/data-platform/create-and-use-dataflows.md#use-the-dataflow-editor-to-shape-or-transform-data).
+7. On the **Transform data** page, you can combine, update, or remove columns. For example, you might want to remove rows for the fiscal year 2021 or rows for an obsolete product. For more information about how to transform data, see [Use the dataflow editor to shape or transform data](/power-apps/maker/data-platform/create-and-use-dataflows#use-the-dataflow-editor-to-shape-or-transform-data).
 8. After the data is transformed, select **Next**.
 9. On the **Map tables** page, under **Load setting**, select **Load to existing table**.
 10. Select a destination table.
@@ -108,7 +108,7 @@ To create the cube in Business performance planning dimensions, follow these ste
     > [!NOTE]
     > The **Comment** field doesn't have to be mapped.
 
-You can manually refresh the dataflow, or you can schedule a refresh cadence. For more information about refresh settings, see [Set the refresh frequency](/power-apps/maker/data-platform/create-and-use-dataflows.md#set-the-refresh-frequency).
+You can manually refresh the dataflow, or you can schedule a refresh cadence. For more information about refresh settings, see [Set the refresh frequency](/power-apps/maker/data-platform/create-and-use-dataflows#set-the-refresh-frequency).
 
 #### Recommendations
 
