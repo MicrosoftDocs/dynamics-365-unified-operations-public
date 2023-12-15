@@ -96,7 +96,7 @@ To load data from Excel, navigate to and select the workbook that contains the f
 
 After you select the data source, select the **Amount** column for your fact data. The values in the **Amount** column must be numeric. They can't contain non-numeric values. Fact data is typically general ledger (GL) account balances, product prices, sales amounts, or employee wages.
 
-Below the **Amount** column is list of the dimensions that were selected when the cube was created. Each dimension has a **Map type** value of either **Link to** or **Fixed value**.
+Below the **Amount** column is a list of the dimensions that were selected when the cube was created. Each dimension has a **Map type** value of either **Link to** or **Fixed value**.
 
 - When **Link to** is selected, the dimension must be mapped to its corresponding data column in the fact data.
 - When **Fixed value** is selected, a value must be entered in the **Table column** field. This value is used as the dimension value for all records in the cube.
