@@ -2,7 +2,7 @@
 # required metadata
 
 title: Load data into Business performance planning using dataflows
-description: This article describes how to load data ino the Business performance planning application.
+description: This article describes how to use dataflows to load data into the Business performance planning application.
 author: ShielaSogge
 ms.date: 12/13/2023
 ms.topic: article
@@ -30,81 +30,95 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](../includes/banner.md)]
 
-## Loading data via dataflows
-Fact data is a combination of multiple sources or must have some level of transformation done to get data into the proper structure for planning. When loading production data, it's recommended to use dataflows. Dataflows better supports typical production volume and complexity. Dataflows also provide a transform experience, detailed status results when loading data, and the option to schedule refreshes of the data.
+Fact data is a combination of multiple sources, or some level of transformation must be done to get the data into the correct structure for planning. When you load production data, we recommend that you use dataflows. Dataflows provide better support for typical production volume and complexity. They also provide a transformation experience, detailed status results when data is loaded, and the option to schedule refreshes of the data.
 
-Dataflows are a self-service, cloud-based data preparation technology. Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure data lake storage account. Dataflows are authored using Power Query, a unified data connectivity and preparation experience featured in many Microsoft products, including Excel and Power BI. Customers trigger dataflows to run either on demand or automatically on a schedule and data is always kept up to date. For more information, see [An overview of dataflows across Microsoft Power Platform and Dynamics 365 products](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
+Dataflows are a self-service, cloud-based data preparation technology. They enable customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or your organization's Azure Data Lake Storage account.
 
-Dataflows can populate dimensions and cubes within planning. When a dataflow is linked to the dimension or cube, when the data source of the dataflow is updated, planning is updated based on the refresh frequency defined in the dataflow.
+Dataflows are authored by using Power Query. Power Query is a unified data connectivity and preparation experience that's featured in many Microsoft products, including Excel and Power BI. Customers trigger dataflows to run either on demand or automatically on a schedule, and data is always kept up to date. For more information, see [What are dataflows?](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365.md)
+
+Dataflows can populate dimensions and cubes in Business performance planning. After a dataflow is linked to a dimension or cube, when the data source of the dataflow is updated, Business performance planning is updated based on the refresh frequency that's defined in the dataflow.
 
 ## Populate dimensions and cubes
 
-To use dataflows to populate dimension or cube values, follow these steps:
+To use dataflows to populate dimension or cube values, follow these steps.
 
-1. In Power Apps, create the dimension or cube in planning before creating the dataflow:
-     - Note the table name for the cube and the dimension. For example: Msdyn\_xpna\_CUBENAME or Msdyn\_xpna\_dimDimensionName.
-2.  When creating the data flow map for:
-     - The cube load - confirm the columns in the cube are mapped to the dimensions selected when the cube was created.
-     - The dimension load - confirm that the columns in the dimension are mapped to the dimension attributes selected when the dimension was created.
-3.  When creating a dataflow for:
-     - A cube load -  select the key for the cube in **Column mapping** section. The key will be the DimensionSetAltKey.
-     - A dimension load - select the key for the dimension in the **Column mapping** section.
-    
-After the data flow is linked to the planning cube, you can specified an optional refresh.
+1. In Power Apps, create the dimension or cube in Business performance planning before you create the dataflow. Make a note of the table name for the cube or dimension. Here are some examples:
 
-To load data using a dataflow, the dimension or the cube must already have been created in planning. For more information, see [Microsoft Dynamics 365 Finance business performance planning dimensions](Dimensions.md) and [Create cubes](create-cubes.md).
+    - **Cube:** Msdyn\_xpna\_CUBENAME
+    - **Dimension:** Msdyn\_xpna\_dimDimensionName
+
+2. Follow one of these steps, depending on what you're creating the dataflow map for:
+
+    - **For a cube load:** Confirm that the columns in the cube are mapped to the dimensions that were selected when the cube was created.
+    - **For a dimension load:** Confirm that the columns in the dimension are mapped to the dimension attributes that were selected when the dimension was created.
+
+3. Follow one of these steps, depending on what you're creating a dataflow for:
+
+    - **For a cube load:** In the **Column mapping** section, select the key for the cube. The key will be the **DimensionSetAltKey** value.
+    - **For a dimension load:** In the **Column mapping** section, select the key for the dimension.
+
+After the dataflow is linked to the planning cube, you can specify an optional refresh.
+
+A dataflow can be used to load data only if the dimension or cube has already been created in Business performance planning. For more information, see [Microsoft Dynamics 365 Finance business performance planning dimensions](Dimensions.md) and [Business performance planning cubes](create-cubes.md).
 
 ### Example
 
-Below is an example of how to create a dataflow when loading fact data into a cube. 
+This example shows how to create a dataflow when you're loading fact data into a cube.
 
-To create the cube in planning, follow these steps: 
-1.  In the **Cube list**, select **New cube**.
-2.  Enter a **Cube name**.
-3.  Select the **Dimensions** that will be a part of the cube. A minimum of two dimensions are required.
-4.  Select **Next** and **Create** the cube.
+To create the cube in Business performance planning dimensions, follow these steps.
 
->[!Tip]
->The name of the cube will be needed to create the dataflow. It will start with msdyn\_xpnacube. 
+1. In the **Cube** list, select **New cube**.
+2. Enter a name for the cube.
+3. Select the dimensions that should be a part of the cube. You must select a minimum of two dimensions.
+4. Select **Next**, and create the cube.
 
-### Create the dataflow in Power Apps 
+> [!NOTE]
+> You will need the name of the cube to create the dataflow in Power Apps. The name will start with **msdyn\_xpnacube**.
 
-1.  Go to Power Apps for your environment.
-2.  Select dataflows: For more information about dataflows, see [Create and use dataflows in Microsoft Power Platform](/power-apps/maker/data-platform/create-and-use-dataflows).
-    - Any data connection can be used. In this example, Excel is selected.
-3.  Enter a name for the dataflow.
-4.  Select the source of the data. For example, select Excel. For more information about troubleshooting connection issues, see [Create and use dataflows](/power-apps/maker/data-platform/create-and-use-dataflows#troubleshooting-data-connections).
-5.  In the left side, select the data to work with.
-6.  Select **Transform data**.
-7.  In the **Transform data** page, columns can be combined, updated, or removed. For example, you may want to remove rows from the fiscal year of 2021, or for an obsolete product. For more information about transforming data, see [Transform data](/power-apps/maker/data-platform/create-and-use-dataflows#use-the-dataflow-editor-to-shape-or-transform-data).
-8.  After the data is transformed, select **Next**.
-9.  In the **Map tables** page, under **Load setting**, select ‘**Load to existing table’**.
-10.  Select a **Destination table**.
+### Create the dataflow in Power Apps
 
->[!Important]
->The cube created in planning and is be named msdyn\_xpnacube\_<cube\_name>. The name of the cube is found on the **Cube** page in planning.
->Go to the cube, note the **Write back table** name under **Cube properties**.
+1. Go to Power Apps for your environment.
+2. Select dataflows. For more information about dataflows, see [Create and use dataflows in Power Apps](/power-apps/maker/data-platform/create-and-use-dataflows.md).
 
-10. After the planning cube is selected as the destination table, the **Source key** and **Column mapping section** is enabled. The source key is the DimensionSetAltKey for cubes. For the dimensions, it's the NameKey (msdyn\_name).
-11. The column mapping section reflects the **Source columns** and **Destination columns**. The source columns are the data from fact data loaded into the dataflow. The destination columns are the dimensions selected as part of the cube creation in the planning app. To ensure that data is populated into the destination column, map a source column to it.
+    Any data connection can be used. For this example, select Excel.
 
->[!Important]
->If you selected a key at the top of the **Column mapping** page, that column must be mapped to a destination column.
+3. Enter a name for the dataflow.
+4. Select the source of the data. For this example, select Excel. For more information about how to troubleshoot connection issues, see [Troubleshooting data connections](/power-apps/maker/data-platform/create-and-use-dataflows.md#troubleshooting-data-connections).
+5. On the left, select the data to work with.
+6. Select **Transform data**.
+7. On the **Transform data** page, you can combine, update, or remove columns. For example, you might want to remove rows for the fiscal year 2021 or rows for an obsolete product. For more information about how to transform data, see [Use the dataflow editor to shape or transform data](/power-apps/maker/data-platform/create-and-use-dataflows.md#use-the-dataflow-editor-to-shape-or-transform-data).
+8. After the data is transformed, select **Next**.
+9. On the **Map tables** page, under **Load setting**, select **Load to existing table**.
+10. Select a destination table.
 
-12. After the appropriate source columns are mapped to a destination column, select **Next**.
-The **Comment** field doesn't need to be mapped.
+    > [!IMPORTANT]
+    > The cube that's created in Business performance planning is named msdyn\_xpnacube\_\<*cube\_name*\>. You can find the name of the cube on the **Cube** page in Business performance planning.
+    >
+    > Go to the cube, and make a note of the **Write back table** name under **Cube properties**.
 
-You can refresh the dataflow manually or schedule a refresh cadence. For more information about refresh settings, see [Set the refresh frequency](/power-apps/maker/data-platform/create-and-use-dataflows#set-the-refresh-frequency).
+    After you select the planning cube as the destination table, **Source key** and **Column mapping** sections become available. The source key is the **DimensionSetAltKey** value for cubes. For dimensions, it's the **NameKey** value (**msdyn\_name**).
 
+11. The **Column mapping** section reflects the source columns and destination columns. The source columns are the data from fact data that was loaded into the dataflow. The destination columns are the dimensions that were selected as part of cube creation in the Business performance planning application. To ensure that data is populated in the destination column, map a source column to it.
+
+    > [!IMPORTANT]
+    > If you selected a key at the top of the **Column mapping** section, that column must be mapped to a destination column.
+
+12. After the appropriate source columns are mapped to destination columns, select **Next**.
+
+    > [!NOTE]
+    > The **Comment** field doesn't have to be mapped.
+
+You can manually refresh the dataflow, or you can schedule a refresh cadence. For more information about refresh settings, see [Set the refresh frequency](/power-apps/maker/data-platform/create-and-use-dataflows.md#set-the-refresh-frequency).
 
 #### Recommendations
 
-When importing data in the **Data transformation** page, the following is recommended:
- - If you're using headings in your data, set **Use first row as headers** in the **Transform** section.
- - When the planning app creates dimensions and cubes, the primary columns are referenced and are typically string fields. When mapping columns for the data load, confirm that the column types match between the source and the destination column types. For example, in the planning app, many of the dimensions references are by name and are type **Text**. For the account dimension, the account number needs to be a type of **Text**. This can be changed by selecting the icon to the left of the column header. If the type isn't changed, an error is diplayed: 
+When you import data on the **Data transformation** page, we recommend that you follow these guidelines:
 
-Error Code: Mashup Exception Data Format Error, Error Details: Couldn't refresh the entity because of an issue with the mashup document MashupException.Error: DataFormat.Error: We couldn't convert to Number. Details: Reason = DataFormat.Error;Detail = XHDCOU;Microsoft.Data.Mashup.Error.Context = User.
+- If you're using headings in your data, set the **Use first row as headers** option in the **Transform** section.
+- When the Business performance planning application creates dimensions and cubes, the primary columns are referenced and are typically string fields. When you map columns for the data load, confirm that the source column types and destination column types match. For example, in the Business performance planning application, many dimension references are by name and are of the **Text** type. For the account dimension, the account number must be of the **Text** type. You can change the type by selecting the button to the left of the column header. If you don't change the type, you receive the following error message:
 
- - To add another column to an existing dimension, add the new column in planning first. Go to **Dimension**, select **New column**. Populate the data from dataflows by following the steps listed above. You only need to select the primary column and the new column in the table mapping. Only the mapped columns are updated.
- - If you don't know what the key is for the cube that you're importing into, go to Power Apps and select TablesCustom<Table name>. Double-click on the table nameSchemaKeys.
- - If you are unsure what the key is for the dimension that you're importing into, go to Power Apps and select TablesCustom<Table name>PropertiesPrimary column (DIMENSIONS).
+    > Error Code: Mashup Exception Data Format Error, Error Details: Couldn't refresh the entity because of an issue with the mashup document MashupException.Error: DataFormat.Error: We couldn't convert to Number. Details: Reason = DataFormat.Error;Detail = XHDCOU;Microsoft.Data.Mashup.Error.Context = User.
+
+- To add another column to an existing dimension, first add the new column in Business performance planning. Go to **Dimension**, and select **New column**. Follow the steps earlier in this article to populate the data from dataflows. You only have to select the primary column and the new column in the table mapping. Only the mapped columns are updated.
+- If you don't know what the key is for the cube that you're importing into, in Power Apps, select **TablesCustom\<*Table name*\>**. Then double-tap (or double-click) the table **nameSchemaKeys**.
+- If you don't know what the key is for the dimension that you're importing into, in Power Apps, and select **TablesCustom\<*Table name*\>PropertiesPrimary column (DIMENSIONS)**.
