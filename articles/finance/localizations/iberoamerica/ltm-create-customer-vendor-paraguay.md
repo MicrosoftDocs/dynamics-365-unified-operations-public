@@ -13,11 +13,13 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-The Paraguayan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
+The Paraguayan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. It also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
+
 Before you create records for customers and vendors who are located in Paraguay, the following setup must be completed:
-- Address formats that are specific to Nicaragua. These formats must use states for departments and counties for countie
+
+- Address formats that are specific to Paraguay. These formats must use states for departments and counties for counties.
 - Tax codes for the value-added tax (VAT) that will be used (VAT general rate, exempt, and so on).
 - Sales tax groups that contain the tax codes that were created.
 - Item sales tax groups that contain the tax codes that were created.
@@ -36,7 +38,7 @@ Before you create records for customers and vendors who are located in Paraguay,
 6. Enter the street and street number.
 7. Select a state, county, and city, and mark the address as primary.
 8. In the **Contact information** section, select **New** to create a record for the company phone number.
-9. In the **Sales demographic** section, set the currency to **PYG** (Guaranies).
+9. In the **Sales demographic** section, set the currency to **PYG** (Paraguayan guaran&iacute;es).
 10. Configure the terms of payments and the invoice account.
 11. Set the delivery terms, mode of delivery, and delivery reason.
 12. Select a sales tax group that contains all the tax codes that can have transactions with this customer.
@@ -69,6 +71,5 @@ Before you create records for customers and vendors who are located in Paraguay,
     - In the **Based in country/region** field, select **Paraguay**.
     - In the **Country document type** field, select a tax ID type. For example, select **RUC**.
     - Complete the **Country document number** field with the vendor's tax ID number.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
