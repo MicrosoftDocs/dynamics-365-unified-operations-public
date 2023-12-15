@@ -23,7 +23,7 @@ This article provides examples of typical usages of pricing and discounts in Mic
 To configure a mix and match discount where when a user purchases product A, they receive a discount on product B when both items are in their cart, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Pricing and discounts \> Mix and match discounts**.
-1. On the action pane, select **New \> Mix and match discounta**.
+1. On the action pane, select **New \> Mix and match discounts**.
 1. Configure general settings for the new mix and match discount, such as price groups, discount name, priority, and validation period.
 1. On the **Price/discount** FastTab, for **Calculation type**, select **Line spec**.
 1. On the **Lines** FastTab, select **Add** to add the first product (product A), and then set the **Line group** as "A", with a **Discount value** of "0" (zero).
