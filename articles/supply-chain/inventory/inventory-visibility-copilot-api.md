@@ -20,7 +20,8 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-The inventory visibility service interacts with Copilot in Dynamics 365 Supply Chain Management to provide a natural-language inventory search feature. It lets users ask questions about inventory and receive answers in real time. The functionality is provided as an API, so developers can easily use it to create an interactive inventory chatbot for their own applications and web sites. By using Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
+Copilot for Inventory Visibility is an AI-powered inventory management solution designed to revolutionize the way businesses manage and optimize their inventory. In a dynamic and competitive marketplace, efficient and real-time inventory management is critical for success. Copilot for Inventory Visibility offers a natural-language based feature that provides real-time inventory query, seamless system integration, and extensible solutions. Using Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
+
 
 For example, a user might send the following natural-language query:
 
@@ -49,11 +50,11 @@ To use natural-language inventory search with Copilot, your system must meet the
 
 ## Use the query API
 
-You submit inventory queries and receive results using the query API, which is defined as follows
+You submit inventory queries and receive results using the query API, which is defined as follows:
 
 ```txt
 Path:
-/Copilot/nl/iv/{environmentId}/query
+    /nl/iv/{environmentId}/query
 Method:
     Post
 Headers:
@@ -67,6 +68,8 @@ Body:
         "Text" : { Your text input }
     }
 ```
+
+The path URL should resemble the following example: `https://inventoryservice-copilot.weu-il301.gateway.prod.island.powerapps.com/nl/iv/{{Supply_Chain_Management_environment_id}}/query`.
 
 The following example shows sample body content.
 

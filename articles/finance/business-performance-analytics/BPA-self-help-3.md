@@ -12,6 +12,7 @@ ms.technology:
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
 # Business performance analytics self-help error - Missing main account in budget
@@ -21,7 +22,7 @@ audience: Application User
 
 ## Missing main account in budget: Error code: ERR00003 [Type: Warning]
 
-Error code *ERR00003* is logged in the `Transform Log` table in Microsoft Dataverse when budget transaction lines in Dynamics 365 Finance are missing the main account in the ledger dimension column. Transactions in the budget are linked to a `generalledgeraccountkey` value of *-1*.
+Error code *ERR00003* is logged in the `Bpa self help logs` table in Microsoft Dataverse when budget transaction lines in Dynamics 365 Finance are missing the main account in the ledger dimension column. Transactions in the budget are linked to a `generalledgeraccountkey` value of *-1*.
 
 ### Resolution
 

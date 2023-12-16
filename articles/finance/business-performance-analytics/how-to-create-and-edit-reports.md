@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Application User
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
 # Create and edit business performance analytics reports

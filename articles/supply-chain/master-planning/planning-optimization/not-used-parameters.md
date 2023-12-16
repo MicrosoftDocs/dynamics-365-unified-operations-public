@@ -55,8 +55,6 @@ Planning Optimization doesn't use the following parameters or options on the **C
 - **Other** FastTab:
 
   - **Freeze time fence (days)** – Pending *Freeze time fence* support.
-  - **BOM explosion time fence (days)** – Not supported by Planning Optimization.
-  - **Capacity scheduling time fence (days)** – Not supported by Planning Optimization.
   - **Forecast plan time fence** – Forecast plans aren't supported by Planning Optimization. Instead, create a master plan that specifies a forecast model.
 
 - **Delays** FastTab:

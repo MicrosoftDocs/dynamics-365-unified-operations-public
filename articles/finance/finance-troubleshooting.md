@@ -1,14 +1,14 @@
 ---
 title: Finance troubleshooting and FAQs
 description: This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Finance
-author: Livbjerg
-ms.date: 05/24/2023
+author: twheeloc
+ms.date: 11/06/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: jlivbjerg
+ms.author: twheeloc
 ms.search.validFrom: 2023-02-28
 ms.dyn365.ops.version: 10.0.28
 ms.custom: bap-template
@@ -25,56 +25,6 @@ For a collection of troubleshooting articles grouped by topic, please see the fo
 - [Microsoft Dynamics 365 Finance troubleshooting](/troubleshoot/dynamics-365/finance/welcome-finance)
 
 These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Dynamics 365 Finance. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
-
-Additionally, the following troubleshooting articles are integrated into the Finance product documentation. These articles document how to troubleshoot a specific topic or subject within the Finance area.
-
-Accounts payable
-
-- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md#exception-processing)
-
-Business performance analytics
- - [Business performance analytics self-help overview](business-performance-analytics/BPA-help-overview.md)
- - [Missing fiscal calendar for general ledger](business-performance-analytics/BPA-self-help-1.md)
- - [Missing fiscal calendar for budget](business-performance-analytics/BPA-self-help-2.md)
- - [Missing main account in budget](business-performance-analytics/BPA-self-help-3.md)
- - [Missing journal entries](business-performance-analytics/BPA-self-help-4.md)
- - [Mismatch between debits and credits](business-performance-analytics/BPA-self-help-5.md)
- - [Missing budget data](business-performance-analytics/BPA-self-help-6.md)
- - [Missing budget transaction header](business-performance-analytics/BPA-self-help-7.md)
-
-
-Budgeting
-
-- [Position budgeting troubleshooting](budgeting/position-budgeting-set-up-issues.md)
-
-Cash and bank management
-
-- [Troubleshoot cash flow forecasting setup](cash-bank-management/cash-flow-forecasting-tsg.md)
-- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-cant-be-settled)
-
-General ledger
-
-- [Journal posting failure because of imbalance](general-ledger/posting-fail-imbalance.md)
-- [Why can't I reverse this transaction?](general-ledger/cant-reverse-transctns.md)
-- [Change the accounting or reporting currency](general-ledger/add-change-acctg-rprtg-crrncy.md)
-- [Change or reassign a ledger calendar](general-ledger/change-mdfy-clndr-to-ledger.md)
-- [Reverse settings on journals and lines](general-ledger/rvrs-settgs-on-jrnls-lines.md)
-- [Year-end close missing opening balances](general-ledger/yec-mssng-open-blnces.md)
-- [How do I set up balancing financial dimensions?](general-ledger/set-up-balance-dimensions.md)
-- [Open financial journal templates in Office](general-ledger/open-fincl-jrnls-in-office.md)
-- [Default financial dimensions on financial journals](general-ledger/dimension-default-values.md)
-- [General journal posting performance](general-ledger/posting-performance.md)
-
-Finance insights
-
-- [Troubleshoot Finance insights setup issues](finance-insights/finance-insights-troubleshooting-faq.md)
-
-Financial reporting
-
-- [Troubleshooting issues opening Report Designer](general-ledger/financial-reporting-getting-started.md#troubleshooting-issues-opening-report-designer)
-- [Troubleshoot report designer issues with Event viewer](general-ledger/financial-reporting-getting-started.md#troubleshoot-report-designer-issues-with-event-viewer)
-- [Troubleshoot issues connecting to Financial reporting](general-ledger/financial-reporting-getting-started.md#troubleshoot-issues-connecting-to-financial-reporting)
-- [Troubleshoot the Office integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/finance)
 
 ## Frequently asked questions
 

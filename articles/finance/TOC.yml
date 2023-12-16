@@ -205,13 +205,7 @@
         - name: Default offset accounts for vendor invoice journals and invoice approval journals
           href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md  
         - name: Accounting distributions and subledger journal entries for vendor invoices
-          href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md    
-        - name: Key invoice data into accounts payable using a vendor invoice
-          href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
-        - name: Key invoice data into accounts payable using an approval journal
-          href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
-        - name: Key invoice data into the AP system using invoice pool
-          href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+          href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md           
         - name: Copy vendors by using shared number sequences
           href: accounts-payable/vendor-copy.md
         - name: Apply a payment schedule to the invoice journal
@@ -226,18 +220,6 @@
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
       - name: Invoice capture solution
         items:
-        - name: Import and key vendor data
-          items: 
-          - name: Key invoice data into accounts payable using a vendor invoice
-            href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
-          - name: Key invoice data into accounts payable using an approval journal
-            href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
-          - name: Key invoice data into the AP system using invoice pool
-            href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
-          - name: Record a vendor invoice in the invoice journal
-            href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
-          - name: Record vendor invoice and match against received quantity
-            href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md    
         - name: Invoice capture overview
           href: accounts-payable/invoice-capture-overview.md
         - name: Invoice capture install
@@ -258,6 +240,18 @@
           href: accounts-payable/invoice-capture-rec-files.md
         - name: Invoice capture FAQ  
           href: accounts-payable/invoice-capture-faq.md
+      - name: Import and key vendor data
+        items: 
+        - name: Key invoice data into accounts payable using a vendor invoice
+          href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
+        - name: Key invoice data into accounts payable using an approval journal
+          href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
+        - name: Key invoice data into the AP system using invoice pool
+          href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+        - name: Record a vendor invoice in the invoice journal
+          href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+        - name: Record vendor invoice and match against received quantity
+          href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md      
       - name: Vendor invoice automation    
         items: 
         - name: Automated vendor invoicing processes overview
@@ -596,6 +590,8 @@
           href: accounts-receivable/cm-periodic-tasks.md
         - name: Credit statistics FAQ
           href: accounts-receivable/credit-statistics-faq.md
+        - name: Credit hold FAQ
+          href: accounts-receivable/Credit-hold-FAQ.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range
@@ -1038,6 +1034,8 @@
             href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
           - name: Financial dimension sets
             href: general-ledger/financial-dimension-sets.md
+          - name: New finance dimension set feature (preview)
+            href: general-ledger/financial-dimension-set-new.md
           - name: Maintain financial dimension default templates
             href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
           - name: Financial dimensions and posting
@@ -1314,6 +1312,8 @@
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/fin-ops/analytics/financial-reporting-intro.md?context=/dynamics365/context/finance
+      - name: Configure Microsoft Power Platform for use with the Financial reporting add-in
+        href: general-ledger/configure-power.md
       - name: Financial reporting best practices  
         href: general-ledger/fin-reports-best.md
       - name: Financial report components
@@ -1634,6 +1634,8 @@
                 href: localizations/global/e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
               - name: Configure a SharePoint channel
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: localizations/global/e-invoicing-isv-connector.md
           - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
             items: 
             - name: Activate and set up integration with Electronic Invoicing
@@ -1656,6 +1658,8 @@
               href: localizations/apac/apac-aus-nzl-electronic-invoices.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic invoicing for Denmark
+              href: localizations/denmark/e-invoicing-dk-get-started.md
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for France
