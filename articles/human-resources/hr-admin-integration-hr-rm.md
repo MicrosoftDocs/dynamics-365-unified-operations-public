@@ -2,7 +2,7 @@
 # required metadata
 
 title: Human Resources to resource integration
-description: This article describes the details on Human resources workers to bookable resource integration. 
+description: This article provides details about the integation of Microsoft Dynamics 365 Human Resources workers to bookable resources.
 author: tulsijhaveri
 ms.date: 12/05/2023
 ms.topic: article
@@ -27,17 +27,16 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-
 # Human Resources to resource integration
 
-Human Resources to resource Integration allows organizations to integrate their worker information to enhance resource manager's experience by bringing together worker information including their skills and proficiencies to find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics in Project Operations and other areas that use universal resource scheduling solution for resource scheduling.
+Human Resources to resource integration enables organizations to integrate their worker information. By bringing together worker information, including information about skills and proficiencies, the integration enhances the resource manager's experience and helps them find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics in Microsoft Dynamics 365 Project Operations and other areas that use the universal resource scheduling solution for resource scheduling.
 
-This feature enables resource managers to:
+This feature enables resource managers to achieve these goals:
 
-- Utilize workers that exist in Human Resources to set up as bookable resources in Project Operations.
-- Find or book resources by skills and certificates associated with the worker in Human Resources.
+- Set up existing workers in Dynamics 365 Human Resources as bookable resources in Project Operations.
+- Find or book resources based on the skills and certificates that are associated with workers in Human Resources.
 
-### Integration terminology
+## Integration terminology
 
 | Human Resources | Resource Management |
 | --- | --- |
@@ -46,24 +45,23 @@ This feature enables resource managers to:
 | Certificates | Characteristics |
 | Rating models | Proficiency models |
 
-### Integration dataflow
+## Integration dataflow
 
+1. **Human Resources:** Workers and their related skills and certificates are created.
+2. **Integration app:** New skills/certificates are created for the resource that's associated with a worker in Dataverse.
+3. **Project Operations:** The resource manager reviews the updated characteristics (skills/certificates).
 
-- _Human Resources_: Workers and related Skill/Certificate is created.
-- _Integration App_: Creates new skills/certificate for Resource associated with the worker in Dataverse
-- _Project Operations_: Resource Manager reviews updated characteristics (Skills/Certificates)
+## Process
 
+Human Resources to resource integration uses dual-write. For more information, see [Dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md). The dual-write infrastructure provides near-real-time integration from Human Resources to Resource Management. For more information, see [Guidance for dual-write setup](../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
 
-### Process
+## Prerequisites
 
-Human Resources to resource integration uses Dual-write. For more information, see [Dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md). Dual write infrastructure provides near-real-time integration from Human Resources to Resource management. For more information, see [Guidance for dual-write setup](../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
+Power Platform Integration is a feature that's enabled in Microsoft Dynamics Lifecycle Services. It lets administrators link their finance and operations environments with new or existing Microsoft Power Platform–based environments. For more information, see [Enable Power Platform Integration](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
-### Prerequisites
+### Install and connect Dynamics 365 applications
 
-Power Platform integration is a feature that's enabled in Microsoft Dynamics Lifecycle Services. It lets administrators link their finance and operations environments with new or existing Microsoft Power Platform–based environments. To learn more, see [Enable Power Platform Integration](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
-
-#### Install and connect Dynamics 365 applications
-Some of the following Dual-write solutions may be required based on your organization's integration points:
+Some of the following dual-write solutions might be required, depending on your organization's integration points:
 
 - Dual-write core solution (Required)
 - Dual-write Dynamics 365 Human Resources (Required)
@@ -74,46 +72,48 @@ Some of the following Dual-write solutions may be required based on your organiz
 - Microsoft Dynamics 365 Project Operations
 
 > [!NOTE]
-> The Dual-write solution(s) needed depends on the customer's scenario whether using the integration with Field service, Project Operations, or Scheduling.
+> The dual-write solutions that are required depend on the customer's scenario: whether they're using the integration with Dynamics 365 Field Service, Project Operations, or Scheduling.
 
-### Install solution from Power platform admin center 
+## Install the solution from Power Platform admin center 
 
-Follow these steps to install the integration from the Power platform admin center:
-1. Go to **Power Platform admin center \> Dynamics 365 apps**.
-2. **Install app** - in the **Install Dynamics 365 apps**, select **Dynamics 365 Human Resources Integration to URS**.
-3. Click **Next**. Agree to terms of service to install the app.
-4. The solution installation is in progress with the **Installing** status.
-5. After the solution is installed, the status is **Installed**.
+Follow these steps to install the integration from Power Platform admin center:
 
-### Install Dual-write packages
+1. Sign in to Power Platform admin center.
+2. On the left navigation, under **Resources**, select **Dynamics 365 apps**.
+3. Select **Install app**.
+4. In the **Install Dynamics 365 apps** dialog box, select **Dynamics 365 Human Resources Integration to URS**, and then select **Next**.
+5. Agree to the terms of service to install the app.
 
-The Dual-write Human Resources package contains the solutions and maps that are required to sync Human Resources data. For more information, see [Dual-write Human Resources](../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
+    While solution installation is in progress, the status is **Installing**. After the solution is installed, the status is changed to **Installed**.
 
-### Enable dual-write maps
+## Install dual-write packages
+
+The dual-write Human Resources package contains the solutions and maps that are required to sync Human Resources data. For more information, see [Dual-write Human Resources](../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
+
+## Enable dual-write maps
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. For more information, see [Enable dual-write for existing finance and operations apps](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 
-### Integration process
+## Integration process
 
-Installing and applying the Human Resources to URS Integration enables organizations to integrate the catalog of skills, certificates, and related information in Human Resources to the characteristics table on Dataverse; this also includes mapping for Rating models and rating levels.
+By installing and applying the **Dynamics 365 Human Resources Integration to URS** solution, organizations can integrate the catalog of skills, certificates, and related information in Human Resources with the characteristics table in Dataverse. The integration also includes mapping for rating models and rating levels.
 
-In addition to providing dual-write maps, this solution also includes virtual entities. Because this solution takes dependency on virtual entities for skills and certificates, those are automatically generated when the dual-write package completes installing.
+In addition to providing dual-write maps, the solution includes virtual entities. Because the solution takes a dependency on virtual entities for skills and certificates, those skills and certificates are automatically generated after the dual-write package is installed.
 
-Relevant business events are registered in Human Resources and when there are changes to those entities, Dataverse is able to consume those changes.
+Relevant business events are registered in Human Resources. Then, when there are changes to the entities, Dataverse can consume those changes.
 
-### Create skills 
+## Create skills
 
-You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job. For more information, see [Create skills](hr-develop-skills.md).
+You can track your workers' skills in Human Resources. You can also specify the skills that are required for a specific job. For more information, see [Create skills](hr-develop-skills.md).
 
-### Create certificates 
+## Create certificates
 
-You can track worker's Certificates in Dynamics 365 Human Resources by creating a library of certificate types and certificates. Those certificates can be added to a worker record to indicate what certificates are accredited to the worker. You can also specify the certificates that are required for a specific job.
+You can track workers' certificates in Human Resources by creating a library of certificate types and certificates. Certificates can then be added to a worker record to indicate the certificates that the worker has earned. You can also specify the certificates that are required for a specific job.
 
-### Define skills and proficiencies in Project Operations
+## Define skills and proficiencies in Project Operations
 
-Skills are resource characteristics that are shared between Dynamics 365 Project Operations and if present, Dynamics 365 Field Service. For more information, see [Defining skills and proficiencies](/dynamics365/project-operations/resource-management/define-skills-proficiencies).
+Skills are resource characteristics that are shared between Project Operations and, if it's present, Field Service. For more information, see [Defining skills and proficiencies](/dynamics365/project-operations/resource-management/define-skills-proficiencies).
 
-### Turn off integration
+## Turn off the integration
 
-When the integration is turned off, the field on bookable resource is removed, the data associated with field is also removed. If there were any characteristics added through the integration on the worker, those will remain on the bookable resource after the integration is turned off.
-
+If the integration is turned off, the field on bookable resources is removed. The data that's associated with the field is also removed. Any characteristics that were added on the worker through the integration remain on the bookable resource after the integration is turned off.
