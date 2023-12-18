@@ -4,7 +4,7 @@
 title: Credit and collections management Power BI content
 description: This article describes what is included in the Credit and collections management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 author: ShivamPandey-msft
-ms.date: 07/16/2020
+ms.date: 12/06/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  CustomerCollectionManagerWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -43,6 +43,9 @@ All the amounts are shown in the system currency. You can set the system currenc
 
 By default, the credit and collections data for the current company is shown. To see the data across all companies, assign the **CustCollectionsBICrossCompany** duty to the role.
 
+>[!NOTE] 
+> In Dynamics 365 finance version 10.0.38, a new feature was added to improve the performance of the Power BI reports on the Credit and collections workspace. In **Feature management**, enable **Credit and collections analytics performance improvements**. In prior versions, the reports could time out and not display. This feature improves the data joins, filtering, currency calculation and computed columns processing. To allow for all of these improvements, the **Days sales outstanding calculation (DSO)** was removed from the **Collections overview** report page. The DSO can be found on the **Credit statistics** factbox.
+
 ## Setup needed to view Power BI content
 
 The following setup needs to be completed for data to display in **Customer credit and collections** Power BI visuals.
@@ -51,7 +54,7 @@ The following setup needs to be completed for data to display in **Customer cred
 2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
 3. Go to **General Ledger > Setup > Ledger** and set **Accounting Currency** and **Exchange Rate Type**.
 4. Define exchange rates between transaction currencies and accounting currency, accounting currency, and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
+5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement. If the new feature noted above is enabled, refresh the **CustCollectionsBIMeasurementsV3**. 
 
 >[!NOTE] 
 > Aging period definitions must be set up in **Accounts receiveable parameters > Collections > Collections defaults** to enable aging data in the Power BI content.
@@ -66,7 +69,7 @@ The **CustCollectionsBICrossCompany** Power BI content includes a report that co
 
 | Report page                 | Visualization |
 |-----------------------------|---------------|
-| Collections overview        | <ul><li>Customers past due</li><li>Customers over credit limit</li><li>DSO 30 days</li><li>Open cases</li><li>Average days to close case</li><li>Open activities</li><li>Average days to close activities</li><li>Open interest notes</li><li>Open collections letters</li><li>Customer hold</li><li>Sales hold</li><li>Aged balances</li><li>Collections status amounts</li><li>Collections code amounts</li><li>Write-off by reason</li><li>Balance due by region</li><li>Expected payments</li></ul> |
+| Collections overview        | <ul><li>Customers past due</li><li>Customers over credit limit</li><li>DSO 30 days - This was removed in Dynamics 365 finance version 10.0.38.</li><li>Open cases</li><li>Average days to close case</li><li>Open activities</li><li>Average days to close activities</li><li>Open interest notes</li><li>Open collections letters</li><li>Customer hold</li><li>Sales hold</li><li>Aged balances</li><li>Collections status amounts</li><li>Collections code amounts</li><li>Write-off by reason</li><li>Balance due by region</li><li>Expected payments</li></ul> |
 | Credit overview             | <ul><li>Customers past due</li><li>Credit limit Vs balance due</li><li>Customers over credit limit grid</li><li>Customers over credit limit per company</li><li>Credit used Vs total credit limit</li><li>Credit limit Vs Credit used by region</li><li>Customers per credit rating</li></ul> |
 | Credit limit                | <ul><li>Credit limit</li><li>Credit limit details</li><li>Credit limit per customer</li><li>Credit limit per customer group</li><li>Credit limit per credit rating per company</li><li>Credit limit vs credit used by region</li></ul> |
 | Customers over credit limit | <ul><li>Customers over credit limit</li><li>Customers over credit limit detail</li><li>Customers over credit limit per company</li><li>Customer over credit limit per customer group</li><li>Customers over credit limit by region</li></ul> |
