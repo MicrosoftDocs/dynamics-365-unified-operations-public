@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Clean up the batch job records 
-description: This article provides information about how to clean up the batch job records.
+title: Clean up the batch job table 
+description: This article provides information about how to clean up the batch job table.
 author: snagamalla
-ms.date: 12/12/2023
+ms.date: 15/03/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: snagamalla
-ms.search.validFrom: 2023-12-18
+ms.search.validFrom: 2024-03-15
 ms.dyn365.ops.version: Platform update 63
 
 ---
