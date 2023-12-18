@@ -120,5 +120,6 @@ When you import data on the **Data transformation** page, we recommend that you 
     > Error Code: Mashup Exception Data Format Error, Error Details: Couldn't refresh the entity because of an issue with the mashup document MashupException.Error: DataFormat.Error: We couldn't convert to Number. Details: Reason = DataFormat.Error;Detail = XHDCOU;Microsoft.Data.Mashup.Error.Context = User.
 
 - To add another column to an existing dimension, first add the new column in Business performance planning. Go to **Dimension**, and select **New column**. Follow the steps earlier in this article to populate the data from dataflows. You only have to select the primary column and the new column in the table mapping. Only the mapped columns are updated.
-- If you don't know what the key is for the cube that you're importing into, in Power Apps, select **TablesCustom\<*Table name*\>**. Then double-tap (or double-click) the table **nameSchemaKeys**.
-- If you don't know what the key is for the dimension that you're importing into, in Power Apps, and select **TablesCustom\<*Table name*\>PropertiesPrimary column (DIMENSIONS)**.
+- If you don't know what the key is for the cube that you're importing into, in Power Apps, select **Tables** on the left navigation pane and select **Custom**, and select the table name in the grid. Then, on the details page under **Schema**, select **Keys**.
+- If you don't know what the key is for the dimension that you're importing into, in Power Apps, select **Tables** on the left navigation pane, select **Custom**, and select the table name in the grid. On the details page, select **Properties**. Then, in the **Edit table** dialog box, select the **Primary column** tab.
+
