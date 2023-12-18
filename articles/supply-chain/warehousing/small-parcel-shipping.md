@@ -47,13 +47,22 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 Supply Chain Management doesn't include any rate engines. You must obtain or create any rate engines that you require, and then add them to your system. However, Microsoft provides a demo rate engine that you can use for testing.
 
-#### Download and deploy the demo rate engine
+#### Download the demo rate engine
 
 Follow these steps to get the demo rate engine.
 
 1. On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS).
-1. On your Supply Chain Management server, save the DLL in the 
-**\\AOSService\\PackagesLocalDirectory\\ApplicationSuite\\bin** folder.
+
+#### Deploy the demo rate engine  <To be updated after meeting with Juan>
+You need to use LCS to deploy the demo rate engine into Dynamics 365 environment.
+
+1. Create a new model **TMSSmallParcelShippingDemo** reference to **ApplicationSuite** model.
+1. Create a project in the new model,  Add TMSSmallParcelShippingEngine.dll to reference of the new project. 
+1. Compile the project, make sure the reference is added to AOT node.
+1. Create deployment package for the new model.
+1. Upload the deployment package to LCS Asset library.
+1. Apply the deployment package to the cloud hosted environment by click *Apply updates* under *Maintain* dropdown menu.
+
 
 #### Create and deploy functional rate engines
 
