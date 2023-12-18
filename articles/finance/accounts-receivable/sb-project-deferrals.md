@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.34
 # Project deferrals
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 Subscription billing enables organizations to manage revenue and expense deferrals through deferral schedules. Projects help you plan, create, manage, control, and complete customer-focused work for your organization.
 
