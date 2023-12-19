@@ -1743,7 +1743,7 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
-        - name: Inquire into inventory with Copilot through API (preview)
+        - name: Inquire into inventory with Copilot (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
           href: inventory/inventory-visibility-track-inventory-log-history.md
@@ -3989,7 +3989,7 @@
         href: responsible-ai-overview.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
         href: faq-confirmed-po-changes.md
-      - name: Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)
+      - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
         href: faq-inventory-query.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
