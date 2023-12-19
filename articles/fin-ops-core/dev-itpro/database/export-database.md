@@ -76,7 +76,7 @@ GO
 Most often, export operations fail because the process in Lifecycle Services times out while it's waiting for a response from Microsoft Azure SQL Database. If the operation times out, it will *roll back* automatically and your sandbox environment is restored to the state it was before the export began.
 
 
-To cancel an export operation that failed, you can use the **Rollback** button.
+Failed export operation will automatically **Rollback**.
 
 ### Data elements that aren't exported
 

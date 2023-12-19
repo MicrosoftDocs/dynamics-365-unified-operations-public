@@ -12,6 +12,7 @@ ms.technology:
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
 # Business performance analytics self-help error - Missing fiscal calendar for general ledger
@@ -21,11 +22,11 @@ audience: Application User
 
 ## Missing fiscal calendar for GL: Error code: ERR00001 [Type: Error]
 
-Error code *ERR00001* is logged in the `Transform Log` table in Microsoft Dataverse when the accounting dates in the General journal entries table in Dynamics 365 Finance aren't aligned with the corresponding fiscal calendar in the ledger. This misalignment causes transactions in `generalledgerfact` to be linked to an accounting date key of *-1*. Therefore, it affects the accuracy of your reports.
+Error code *ERR00001* is logged in the `Bpa self help logs` table in Microsoft Dataverse when the accounting dates in the General journal entries table in Dynamics 365 Finance aren't aligned with the corresponding fiscal calendar in the ledger. This misalignment causes transactions in `generalledgerfact` to be linked to an accounting date key of *-1*. Therefore, it affects the accuracy of your reports.
 
 ### Resolution
 
-To address this error, include calendar years/periods from the `minAccountingDate` value through the `maxAccountingDate` value for the relevant fiscal calendars. You can find the fiscal calendar, the `minAccountingDate` value, and the `maxAccountingDate` value in the `LogDetails` column of the `Transform Log` table.
+To address this error, include calendar years/periods from the `minAccountingDate` value through the `maxAccountingDate` value for the relevant fiscal calendars. You can find the fiscal calendar, the `minAccountingDate` value, and the `maxAccountingDate` value in the `LogDetails` column of the `Bpa self help logs` table.
 
 Here's an example of a record:
 

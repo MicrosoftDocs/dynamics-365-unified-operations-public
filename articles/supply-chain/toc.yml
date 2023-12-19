@@ -2365,8 +2365,10 @@
           href: procurement/purchase-agreements.md
         - name: Create a purchase agreement
           href: procurement/tasks/create-purchase-agreement.md
-        - name: Automatic allocation of charges
+        - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
+        - name: Units of measure for line-level charges (preview)
+          href: sales-marketing/line-charges-specific-unit.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
       - name: Purchasing policies
@@ -3033,8 +3035,14 @@
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
           href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
-        - name: Automatic allocation of charges
+        - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
+        - name: Auto-charge compounding and sequencing (preview)
+          href: sales-marketing/auto-charge-sequence-compound.md
+        - name: Units of measure for line-level charges (preview)
+          href: sales-marketing/line-charges-specific-unit.md
+        - name: Period charges (preview)
+          href: sales-marketing/period-charges.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
@@ -3457,6 +3465,8 @@
           href: transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Load building workbench
           href: transportation/tasks/load-building-workbench.md
+        - name: Integrate with Microsoft Sustainability Manager (preview)
+          href: transportation/sustainability-manager-integration-setup.md
         - name: Plan loads using hub consolidation
           items:
           - name: Plan loads using hub consolidation overview
