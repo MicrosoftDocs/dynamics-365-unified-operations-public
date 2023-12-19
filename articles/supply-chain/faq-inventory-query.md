@@ -62,13 +62,13 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 ## What are the limitations of Inquire into inventory with Copilot? How can users minimize the impact of these limitations when using the system?
 
-The system doesn't yet support product search by product category or barcode number. If you are using the API to build your chatbot, to minimize the impact of erroneous responses, your chatbot should be designed to tell users to enter a natural-language prompt that specifies product names, descriptions, or other attributes.
+The system doesn't yet support product search by product category or barcode number. If you're using the API to build your chatbot, to minimize the impact of erroneous responses, your chatbot should be designed to tell users to enter a natural-language prompt that specifies product names, descriptions, or other attributes.
 
-The system works best in US English. While it can be used in other languages, we don't recommend doing so, because it might not function as intended. If you are using the API to build your chatbot, to minimize the impact to end users and ensure transparency, your chatbot must include a clear, noticeable disclaimer stating that the system is optimized for US English only (for example, *This chatbot is designed to accept input in US English only. Using other languages might affect accuracy and user experience*.). You must use this disclaimer or create your own that meets these requirements.
+The system works best in US English. While it can be used in other languages, we don't recommend doing so, because it might not function as intended. If you're using the API to build your chatbot, to minimize the impact to end users and ensure transparency, your chatbot must include a clear, noticeable disclaimer stating that the system is optimized for US English only (for example, *This chatbot is designed to accept input in US English only. Using other languages might affect accuracy and user experience*.). You must use this disclaimer or create your own that meets these requirements.
 
-If you are using the API to build your chatbot, your chatbot should limit conversation sessions to 20 rounds or less and it should include a refresh button so users can start a new session.
+If you're using the API to build your chatbot, your chatbot should limit conversation sessions to 20 rounds or less and it should include a refresh button so users can start a new session.
 
-AI-generated content should not be used without manual review or supervision. The feature applies filters on the input and output to restrict the system to only answer questions relevant to products and inventory, and only continue conversations that include benign questions and answers.
+AI-generated content shouldn't be used without manual review or supervision. The feature applies filters on the input and output to restrict the system to only answer questions relevant to products and inventory, and only continue conversations that include benign questions and answers.
 
 The system might lack contextual awareness and could therefore ask users to enter identical or similar conditions and questions.
 
