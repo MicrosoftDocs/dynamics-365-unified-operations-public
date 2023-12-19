@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Finance business performance planning dimensions
+title: Business performance planning dimensions
 description: This article describes dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning.
 author: ShielaSogge
 ms.date: 12/12/2023
@@ -26,7 +26,7 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: 
 
 ---
-# Microsoft Dynamics 365 Finance business performance planning dimensions
+# Business performance planning dimensions
 
 This article describes dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning.
 
