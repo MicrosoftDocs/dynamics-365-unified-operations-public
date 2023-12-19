@@ -30,11 +30,10 @@ ms.dyn365.ops.version: Platform update 63
 
 [!include [banner](../includes/banner.md)]
 
-Many orphaned or unused Batch jobs exists in system due to recreation of Batch jobs, new Batch jobs creation on certain user actions everytime, one time executed jobs etc. This would eventually grow the Batch Job and related tables and can negatively affect the performance of other jobs.
+Over time, many orphaned or unused Batch jobs accumulate in the system due to the creation of new Batch jobs on certain user actions, one-time executed jobs, and recreation of Batch jobs. This can eventually lead to the growth of Batch Job and related tables, which can negatively impact the performance of other jobs.
 
-Batch job table clean-up page have been added to the **System administration** module make it easy to clean up the batch job table:
-
-![Periodic tasks in System administration.](./media/Menu-Cleanup-1.png)
+The System administration module in platform update 10.0.39 (PU 63) now includes a Batch job clean-up page that simplifies the process of cleaning up the batch job table.
+To navigate to this page, go to System administration > Periodic tasks > Batch job clean-up.
 
 > [!NOTE]
 > We recommend that you regularly clean up the batch job table, and that you do this cleanup outside of business hours.
@@ -52,8 +51,6 @@ Follow these steps to quickly clean up the Batch job table records based on opti
 7. In the **Created by** field, specify the userId who have created the job.
 8. In **Withhold**, **Error**, **Finished** and **Cancelled** terminal status fields, select atleast one option to delete the batch jobs.
 9. Select **OK**.
-
-![Regular job.](./media/batch-job-cleanup.png)
 
 
 
