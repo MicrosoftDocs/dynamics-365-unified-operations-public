@@ -43,9 +43,9 @@ The **Home** button is in the upper-left corner of the authoring page. It provid
 
 ## View and clear notifications
 
-The **Notifications** button is one of the buttons in the upper-right corner of the authoring page. It looks like a bell. By selecting this button, you can view all the notifications that have been sent to you.
+The **Notifications** button is one of the buttons in the upper-right corner of the authoring page. It looks like a bell. By selecting this button, you can view all the notifications sent to you.
 
-Notifications are used throughout the authoring tool to inform you when actions have been completed. For example, a notification might state, "Your page has been published" to inform you that a publish action was successful.
+Notifications are used throughout the authoring tool to inform you when actions are completed. For example, a notification might state, "Your page has been published" to inform you that a publish action was successful.
 
 Notifications can also inform you about errors that were encountered while an action was being performed. Select the error notification to open its message. The information in this message can help you resolve the error.
 
@@ -89,10 +89,10 @@ To create a new website, follow these steps.
 
     - **Site name** – Enter the name of the website. This name isn't shown to website customers. Instead, it's used in the site list and other places in the authoring tool.
     - **Site administers security group** – Enter the full name of the Microsoft Azure Active Directory (Azure AD) security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
-    - **Default channel** – Enter the default merchandizing channel that should be associated with the website. The default channel determines the products that can be sold through the website.
+    - **Default channel** – Enter the default merchandising channel that should be associated with the website. The default channel determines the products that can be sold through the website.
     - **Default language** – After you specify the default channel, select the default language for the channel. The default channel defines the language that products are shown in if the customer doesn't specify a preferred language.
     - **Default market** – Enter the default market for the website. The default market defines the market that is shown if the customer doesn't specify a preferred market.
-    - **Domain** – Select the web domain that should be associated with the website. This domain is the domain that the website's customers will go to in their browser.
+    - **Domain** – Select the web domain that should be associated with the website. This domain is the domain that the website's customers go to in their browser.
 
 1. Select **OK**. The new website is created.
 
