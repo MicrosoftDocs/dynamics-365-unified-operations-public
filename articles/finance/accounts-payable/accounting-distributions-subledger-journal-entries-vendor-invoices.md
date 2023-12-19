@@ -4,7 +4,7 @@
 title: Accounting distributions and journal entries for vendor invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: sunfzam
-ms.date: 08/15/2023
+ms.date: 12/15/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -245,18 +245,20 @@ Before you post a vendor invoice, you can view the full accounting entry of the 
 
 If the subledger journal entry is incorrect when you preview it before you journalize the vendor invoice, you cannot modify the subledger journal entry. Instead, you must modify the accounting distributions or the posting profile. The accounting distributions are used to define one side of the accounting entry, the debit or the credit. The offsetting subledger journal account entry is created by using the posting profiles, such as from the vendor account or tax.
 
-## Split the vendor invoice posting in two stages
-During the posting of pending vendor invoices, the Accounts Payable (AP) module initiates a posting process that involves a substantial transaction flowing into the SDAF framework first and the General Ledger (GL) subsequently. When the invoice data flows into the SDAF framework, massive derivations and validations will be applied before the subledger is successfully journalized.  The performance and memory overflow issue might be raised in between when the invoice contains a lot of lines.
-To address these challenges, the feature "Enable the vendor invoice to be posted in two stages" is introduced to restructure the pending vendor invoice posting into two batches. The first batch does everything else in the old invoice posting except subledger journalization. The second batch is to journalize subledger to generate accounting. After the second batch, transferring subledger to general ledger can be done as before. This can reduce the likelihood of memory overflow and enhance overall system performance when the invoice contains thousands of lines.
-When the posting of pending vendor invoice has dependence on other modules or subsequent processes, it will be reverted to use the traditional way to post the invoice.
+## Split vendor invoice posting 
+
+During the posting of pending vendor invoices, the posting process involves a substantial transaction flowing into the SDAF framework first and the General ledger subsequently. When the invoice data flows into the SDAF framework, massive derivations and validations are applied before the subledger is updated. A performance and memory overflow issue might occur with invoices that contain a lot of lines.
+
+The **Enable the vendor invoice to be posted in two stages** feature breaks the pending vendor invoice posting into two batches. The first batch posts everything like the old invoice posting except subledger journalization. The second batch posting journalizes subledger to generate accounting. After the second batch is posted, transferring subledger to general ledger can be done. This reduces the likelihood of memory overflow and enhance overall performance when the invoice contains thousands of lines.
+When posting pending vendor invoices has dependencies on other modules or subsequent processes, the traditional way to post the invoice will be used.
 
 > [!NOTE]
-> When meeting one of the unsupported situations during vendor invoice posting process, the posting process will fall back to use the traditional way to post the invoice.The unsupported situations are:
+> The following situations will use the original posting process:
 - Prepayment invoice posting
 - Invoice posting with prepayment application
 - Invoice posting with budget control enabled
 - Project invoice posting
-- PO/invoice with Terms of payment is “Cash” 
+- PO/invoice with Terms of payment of Cash 
 - Invoice posting with AP parameter auto-settlement enabled 
 
 
