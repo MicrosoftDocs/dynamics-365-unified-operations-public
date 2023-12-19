@@ -2,7 +2,7 @@
 title: Authoring page overview
 description: This article provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 08/30/2023
+ms.date: 12/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ Dynamics 365 Commerce supports the creation and management of multiple websites,
 
 Currently, the authoring page consists of the following sections.
 
-- **Top bar** – The top bar appears at the top of the authoring page. It provides easy access to e-Commerce tools, notifications, support links, and user sign-in.
+- **Top bar** – The top bar appears at the top of the authoring page. It provides easy access to Commerce tools, notifications, support links, and user sign-in.
 - **Command bar** – The command bar appears below the top bar. It can be used to create new websites.
 - **Site list** – The site list fills all the space below the command bar. It provides a comprehensive list of websites and the domains that are associated with them.
 
@@ -39,7 +39,7 @@ The following illustration shows the authoring page.
 
 ## Use the Home button to select a tool
 
-The **Home** button is in the upper-left corner of the authoring page. It provides easy access to other e-Commerce tools. When you select this button, a menu of the tools that you can use is opened. When you select a tool, the menu is closed, and the selected tool is loaded in the browser.
+The **Home** button is in the upper-left corner of the authoring page. It provides easy access to other Commerce tools. When you select this button, a menu of the tools that you can use is opened. When you select a tool, the menu is closed, and the selected tool is loaded in the browser.
 
 ## View and clear notifications
 
@@ -101,13 +101,13 @@ To create a new website, follow these steps.
 
 ## Select a website to author
 
-The site list provides a comprehensive list of the websites that are associated with the e-Commerce system. Websites appear in alphabetical order. The domain that is associated with each website is also shown. To view the contents of a website and start to author pages, select the name of the website. The authoring tool and the content for the website are loaded.
+The site list provides a comprehensive list of the websites that are associated with the Commerce system. Websites appear in alphabetical order. The domain that is associated with each website is also shown. To view the contents of a website and start to author pages, select the name of the website. The authoring tool and the content for the website are loaded.
 
 After the authoring tool is loaded, you can select **Home** to return to the authoring page.
 
 ## Additional resources
 
-[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+[Manage e-commerce users and roles](manage-ecommerce-users-roles.md)
 
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 
