@@ -34,7 +34,7 @@ During procurement planning, any changes that are made to confirmed purchase ord
 
 ## Prerequisites
 
-The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled Separately. If you'd also like to take advantage of the Copilot features, then see [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) for system requirements and details about how to set them up.
+The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled separately. If you also want to take advantage of the Copilot features, see [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) for the system requirements and information about how to set them up.
 
 ## The Confirmed purchase orders with changes workspace
 
@@ -42,17 +42,17 @@ To open the workspace, go to **Procurement and sourcing \> Workspaces \> Confirm
 
 [<img src="media/po-change-review-highimpact-all-selected.png" alt="Screenshot of the Confirmed purchase orders with changes workspace." title="Screenshot of the Confirmed purchase orders with changes workspace" width="720" />](media/po-change-review-highimpact-all-selected.png#lightbox)
 
-The workspace lists all previously confirmed supplying purchase orders that have been changed since confirmation. It helps in the review process by identifying potential impacts on demand such as production work, service work orders, and sales orders.
+The workspace lists all previously confirmed supplying purchase orders that have been changed since confirmation. It helps during the review process by identifying potential impacts on demand such as production work, service work orders, and sales orders.
 
-The relations between supplying purchase orders and demand can originate from different sources, such as pegging from master panning, [inventory markings](../master-planning/planning-optimization/marking.md) and purchase orders created for demand in projects.
+The relations between supplying purchase orders and demand can originate from different sources, such as pegging from master panning, [inventory markings](../master-planning/planning-optimization/marking.md), and purchase orders that are created for demand in projects.
 
-At the top of the workspace, the three tiles summarize groups of changes to confirmed purchase orders and the related impact on downstream demand.
+At the top of the workspace, three tiles summarize groups of changes to confirmed purchase orders and the related impact on downstream demand:
 
-- **Low impact changes** – This tile highlights changes to purchase orders that have no known impact on downstream demand. No known impact is assumed if any changes to quantity of delivery dates do not impact those requirements from demand, for example an earlier date or increased quantity. A summary of changes is generated to help you review and validate the purchase orders.
+- **Low impact changes** – This tile highlights changes to purchase orders that have no known impact on downstream demand. No known impact is assumed if changes to the quantity or delivery dates don't affect those requirements from demand. Examples of these changes include an increased quantity or an earlier date. A summary of changes is generated to help you review and validate the purchase orders.
 - **High impact changes** – This tile highlights purchase orders that have known downstream impacts on demand. These changes are summarized together with the detected demand impacts, to help you investigate further and decide what action to take.
-- **Impacted downstream orders** – This tile summarizes impacts on different kinds of downstream demand orders by total per type of orders. This information helps you review potential impacts on demand and identify each originating change.
+- **Impacted downstream orders** – This tile summarizes impacts on different kinds of downstream demand orders by total per type of order. This information helps you review potential impacts on demand and identify each originating change.
 
-Each tile provides a **Show** link, which will change the view below to show the changes to supplying purchase orders and the impacted demand accrording to the tiles's classification and filter.
+Each tile provides a **Show** link. When you select this link, the view beneath shows the changes to supplying purchase orders and the affected demand according to the tiles's classification and filter.
 
 ## Review changes to confirmed purchase orders
 
@@ -60,7 +60,7 @@ Purchasers use the workspace to review and accept changes to confirmed purchase 
 
 1. Study all changes to confirmed purchase orders and their downstream impact.
 1. Focus on changes that have a low risk of downstream impact.
-1. Review changes that have a high risk of downstreamd impact.
+1. Review changes that have a high risk of downstream impact.
 1. Review the remaining impact on downstream demand orders.
 
 The following subsections describe these steps in more detail.
