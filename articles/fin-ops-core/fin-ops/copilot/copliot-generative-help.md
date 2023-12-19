@@ -1,6 +1,6 @@
 ---
 title: Generative help and guidance with Copilot (preview)
-description: Copilot provides in-app help guidance that uses the power of generative AI to give contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation though the extensive capabilities of finance and operations apps.
+description: Copilot provides in-app help and guidance that uses the power of generative AI to give contextual support to users. This article provides information about this feature, its prerequisites, and how it works.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -17,15 +17,15 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-Copilot provides in-app help guidance that uses the power of generative AI to give contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation though the extensive capabilities of finance and operations apps.
+Copilot provides in-app help and guidance that uses the power of generative AI to give contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation though the extensive capabilities of finance and operations apps.
 
-[<img src="media/copilot-homepage-explain-worflow.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
+[<img src="media/copilot-homepage-explain-worflow.png" alt="Screenshot of the Copilot help pane in the user experience." title="Screenshot of the Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
 
 [!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
 ## Prerequisites
 
-To use generative help and guidance with Copilot in finance and operations apps, the feature and its prerequisites must be installed and enabled on your system as described in [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copliot-generative-help.md).
+Before you can use generative help and guidance with Copilot in finance and operations apps, the feature and its prerequisites must be installed and enabled on your system, as described in [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copliot-generative-help.md).
 
 ## How Copilot works for in-app help and guidance
 
@@ -33,7 +33,7 @@ Copilot transforms the support experience by introducing a conversational sideca
 
 ## Grounded in public documentation
 
-Copilot in-app help guidance is deeply grounded in the official public documentation for Microsoft finance and operations apps. This grounding ensures that the AI has a comprehensive understanding of the system and can generate responses that are not only accurate but also aligned with the latest features and best practices that Microsoft has established.
+Copilot in-app help and guidance is deeply grounded in the official public documentation for Microsoft finance and operations apps. This grounding ensures that the AI has a comprehensive understanding of the system and can generate responses that are not only accurate but also aligned with the latest features and best practices that Microsoft has established.
 
 ## Powered by generative AI
 
