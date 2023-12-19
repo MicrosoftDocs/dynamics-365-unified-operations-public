@@ -247,13 +247,11 @@ If the subledger journal entry is incorrect when you preview it before you journ
 
 ## Split vendor invoice posting 
 
-During the posting of pending vendor invoices, the posting process involves a substantial transaction flowing into the SDAF framework first and the General ledger subsequently. When the invoice data flows into the SDAF framework, massive derivations and validations are applied before the subledger is updated. A performance and memory overflow issue might occur with invoices that contain a lot of lines.
+During the posting of pending vendor invoices, the posting process involves a substantial transaction flowing into the source document account framework first and the General ledger subsequently. When the invoice data flows into the source document account framework, massive derivations and validations are applied before the subledger is updated. A performance and memory overflow issue might occur with invoices that contain a lot of lines.
 
-The **Enable the vendor invoice to be posted in two stages** feature breaks the pending vendor invoice posting into two batches. The first batch posts everything like the old invoice posting except subledger journalization. The second batch posting journalizes subledger to generate accounting. After the second batch is posted, transferring subledger to general ledger can be done. This reduces the likelihood of memory overflow and enhance overall performance when the invoice contains thousands of lines.
-When posting pending vendor invoices has dependencies on other modules or subsequent processes, the traditional way to post the invoice will be used.
+The **Enable the vendor invoice to be posted in two stages** feature creates two batches for pending vendor invoice posting. The first batch posts uses the original invoice posting except creating the subledger journals. The second batch posting creates subledger journals to generate accounting. After the second batch is posted, transferring the subledger to general ledger can be done. This reduces the likelihood of memory overflow and enhance overall performance when the invoice contains thousands of lines. When posting pending vendor invoices has dependencies on other modules or subsequent processes, the original invoice posting process is used.
 
-> [!NOTE]
-> The following situations will use the original posting process:
+The following situations use the original posting process:
 - Prepayment invoice posting
 - Invoice posting with prepayment application
 - Invoice posting with budget control enabled
