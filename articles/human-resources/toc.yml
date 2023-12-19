@@ -899,6 +899,8 @@ items:
         href: hr-security-config.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
+      - name: Human resources to resource integration
+        href: hr-admin-integration-hr-rm.md
       - name: Create links from Human resources to another environment
         href: configure-links.md
       - name: Configure integration with Dayforce
