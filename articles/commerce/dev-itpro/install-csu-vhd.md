@@ -67,7 +67,7 @@ After creating the above App, the following changes need to be made inside Comme
 
 1. The application ID (client ID) must be entered in Commerce headquarters for the installation to succeed. Go to System administration > Setup > Azure Active Directory applications (Microsoft Entra ID Applications). Enter the application ID (client ID) in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.  
 
- 2. Create a new Channel DB record. Go to Retail and Commerce > Headquarters Setup > Commerce Scheduler > Channel Database.  
+2. Create a new Channel DB record. Go to Retail and Commerce > Headquarters Setup > Commerce Scheduler > Channel Database.  
 	A. Select New. 
 	B. Enter the following:  
 		- Channel Database ID = DevSealedCSU  
@@ -98,12 +98,12 @@ After creating the above App, the following changes need to be made inside Comme
 		K. Select Save.  
 			> [!NOTE]
                         > You may get a warning about “The store’s Closing method must be set to ‘shift’.   If you receive this expand the Statement/Closing fast tab on the store > Change the Closing Method field to "Shift".  
-5. Update CDX Data Groups.
+4. Update CDX Data Groups.
 	       L. Go to > Retail and Commerce > Distribution Schedule.
                M. Select the Default Data group.
                N. Remove the Default database record from this group (this will prevent future errors with trying to replicate to this DB).
 		
-6. Execute Sync jobs.  
+5. Execute Sync jobs.  
    A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule.   
    B. Select the 9999 job.  
    C. Select Run now.  
@@ -111,22 +111,23 @@ After creating the above App, the following changes need to be made inside Comme
    E. Select OK to schedule the job.  
 
 ## Install Sealed CSU Pre-requisites
-	1. Install .NET Core hosting bundle on DEV VM.
-		A. RDP into the Dev box.
-		B. Open a web browser and go to this site Download .NET 6.0 (Linux, macOS, and Windows) (microsoft.com).
-		C. Under ASP.Net Core Runtime 6.0.X  section > Select the Hosting Bundle link for Windows.
-		D. Run the Dotnet-hosting installer.
-	2. Download Sealed Self-hosted installer from LCS to the Dev VM, and copy configuration file.
-		A. Open a web browser and go to LCS.dynamics.com.
-		B. Select your Project from the list.
-		C. On the top of the screen click the three dashes > Select Asset Library.
-		D. Select Retail Self-service package.  
-		E. If you already have a sealed CSU installer in your list, click the package name to start the download.  
-			i. If you don’t have a sealed installer in the list, click Import.
-			ii. Select the Sealed Installer version you want to use. 
-			iii. Select Pick.
-			iv. Then follow the step above to download the installer file.
-		F. Copy the sealed installer from the Downloads folder to C:\temp.
+
+1. Install .NET Core hosting bundle on DEV VM.
+    A. RDP into the Dev box.
+    B. Open a web browser and go to this site Download .NET 6.0 (Linux, macOS, and Windows) (microsoft.com).
+    C. Under ASP.Net Core Runtime 6.0.X  section > Select the Hosting Bundle link for Windows.
+    D. Run the Dotnet-hosting installer.
+2. Download Sealed Self-hosted installer from LCS to the Dev VM, and copy configuration file.
+    A. Open a web browser and go to LCS.dynamics.com.
+    B. Select your Project from the list.
+    C. On the top of the screen click the three dashes > Select Asset Library.
+    D. Select Retail Self-service package.  
+    E. If you already have a sealed CSU installer in your list, click the package name to start the download.  
+        i. If you don’t have a sealed installer in the list, click Import.
+        ii. Select the Sealed Installer version you want to use. 
+        iii. Select Pick.
+        iv. Then follow the step above to download the installer file.
+    F. Copy the sealed installer from the Downloads folder to C:\temp.
 
 ## Install the Sealed CSU
 
