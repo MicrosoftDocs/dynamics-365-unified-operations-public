@@ -590,6 +590,8 @@
           href: accounts-receivable/cm-periodic-tasks.md
         - name: Credit statistics FAQ
           href: accounts-receivable/credit-statistics-faq.md
+        - name: Credit hold FAQ
+          href: accounts-receivable/Credit-hold-FAQ.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range
@@ -1310,6 +1312,8 @@
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/fin-ops/analytics/financial-reporting-intro.md?context=/dynamics365/context/finance
+      - name: Configure Microsoft Power Platform for use with the Financial reporting add-in
+        href: general-ledger/configure-power.md
       - name: Financial reporting best practices  
         href: general-ledger/fin-reports-best.md
       - name: Financial report components
@@ -1630,6 +1634,8 @@
                 href: localizations/global/e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
               - name: Configure a SharePoint channel
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: localizations/global/e-invoicing-isv-connector.md
           - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
             items: 
             - name: Activate and set up integration with Electronic Invoicing
@@ -1652,6 +1658,8 @@
               href: localizations/apac/apac-aus-nzl-electronic-invoices.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic invoicing for Denmark
+              href: localizations/denmark/e-invoicing-dk-get-started.md
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for France
@@ -3470,7 +3478,7 @@
             href: localizations/iberoamerica/mx-00010-e-invoicing-cfdi.md
           - name: Electronic invoices
             href: localizations/iberoamerica/latam-mex-CFDI-electronic-invoices.md
-          - name: Waybill (Carta de Porte) complement (version 1.0)
+          - name: Waybill (Carta de Porte) complement
             href: localizations/iberoamerica/latam-mex-carta-de-porte.md
           - name: Electronic ledger accounting statements
             href: localizations/iberoamerica/latam-mex-electronic-ledger-accounting-statements.md

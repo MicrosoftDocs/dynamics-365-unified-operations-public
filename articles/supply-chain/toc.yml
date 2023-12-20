@@ -1743,7 +1743,7 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
-        - name: Inquire into inventory with Copilot through API (preview)
+        - name: Inquire into inventory with Copilot (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
           href: inventory/inventory-visibility-track-inventory-log-history.md
@@ -2327,6 +2327,8 @@
           href: procurement/purchase-order-approval-confirmation.md
         - name: Calculate requested ship dates for purchase orders (preview)
           href: master-planning/supplier-requested-confirmed-dates.md
+        - name: Enable Copilot support for managing changes to confirmed purchase orders (preview)
+          href: procurement/purchase-order-changes-after-confirmation-enable.md
         - name: Review and accept changes to confirmed purchase orders (preview)
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
@@ -3047,6 +3049,8 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Calculate sales totals when prices include sales tax
+          href: sales-marketing/sales-tax-calculation.md
         - name: Manage order holds
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
@@ -3821,6 +3825,8 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for moving items in the warehouse
+            href: warehousing/mobile-device-movement-menu.md
           - name: Set up a mobile device menu item for completing work in a purchase order
             href: warehousing/tasks/set-up-mobile-device-menu.md
           - name: Set up a mobile device menu item to register received items
@@ -3989,7 +3995,7 @@
         href: responsible-ai-overview.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
         href: faq-confirmed-po-changes.md
-      - name: Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)
+      - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
         href: faq-inventory-query.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
