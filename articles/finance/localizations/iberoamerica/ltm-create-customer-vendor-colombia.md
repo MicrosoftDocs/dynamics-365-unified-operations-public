@@ -22,7 +22,7 @@ Before you create records for customers and vendors who are located in Colombia,
 - Tax codes for the value-added tax (VAT) that will be used (VAT general rate, exempt, and so on).
 - Sales tax groups that contain the tax codes that were created.
 - Item sales tax groups that contain the tax codes that were created.
-- Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. For more information, see [Configure sales and purchase invoices for Colombia](ltm-configure-invoices-Colombia.md).
+- Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. For more information, see [Configure sales and purchase invoices for Colombia](ltm-configure-invoices-colombia.md).
 - A customer and vendor set that contains all the document classes that will be used.
 - A tax ID for each type of tax identification that your customers and suppliers have.
 - A taxpayer type for each type of taxpayer that your customers and suppliers have.
