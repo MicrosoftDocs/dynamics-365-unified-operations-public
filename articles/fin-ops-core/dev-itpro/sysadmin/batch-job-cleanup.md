@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Clean up the batch job table 
-description: This article provides information about how to clean up the batch job table.
+title: Clean up the batch job table
+description: This article describes how to clean up the batch job table.
 author: snagamalla
 ms.date: 03/15/2024
 ms.topic: how-to
@@ -28,30 +28,28 @@ ms.dyn365.ops.version: Platform update 63
 
 ---
 
-# Clean up the batch job records
+# Clean up the batch job table
 
 [!include [banner](../includes/banner.md)]
 
-Over time, many abandoned or unused batch jobs accumulate in the system due to the creation of new batch jobs on certain user actions, one-time executed jobs, and recreation of batch jobs. Accumulated batch jobs can eventually lead to the growth of batch job and related tables, which can negatively impact the performance of other jobs.
+Over time, new batch jobs are created for specific user actions, one-time jobs are run, and batch jobs are re-created. As a result, many abandoned or unused batch jobs accumulate in the system. Accumulated batch jobs can eventually lead to the growth of the batch job table and related tables. This growth can negatively affect the performance of other jobs.
 
-The System administration module in platform update 10.0.39 (PU 63) now includes a **Batch job clean-up** page that simplifies the process of cleaning up the batch job table.
-
-To navigate to this page, go to **System administration** > **Periodic tasks** > **Batch job clean-up**.
+In version 10.0.39 (Platform update 63), the **System administration** module includes a **Batch job clean-up** page that simplifies the process of cleaning up the batch job table. To open this page, go to **System administration** \> **Periodic tasks** \> **Batch job clean-up**.
 
 > [!NOTE]
-> We recommend that you regularly clean up the batch job table, and that you do this cleanup outside of business hours.
+> We recommend that you regularly clean up the batch job table, and that you do this cleanup outside business hours.
 
-## Batch job clean-up
+## Run batch job cleanup
 
-To quickly clean up the batch job table records, follow these steps.
+To quickly clean up the records in the batch job table, follow these steps.
 
-1. On the **Periodic tasks** page in the **System administration** module, select **Batch job clean-up**.
+1. Go to **System administration** \> **Periodic tasks** \> **Batch job clean-up**.
 1. In the **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs.
-1. In the **Records to delete in a transaction** field, specify the number of records (1 - 200 records) to delete in a transaction.
+1. In the **Records to delete in a transaction** field, enter a value from **1** through **200** to specify the number of records to delete in a single transaction.
 1. In the **Caption** field, specify the caption of the batch job to delete.
-1. In the **Class** field, specify the class name of a batch task for the respective batch job to delete.
-1. Enable the **Delete by end date time** field to specify if the batch jobs to be deleted are based on the end date time of last execution. By default it considers the created date time.
-1. In the **Created by** field, specify the userId of the person who created the job.
+1. In the **Class** field, specify the class name of a batch task for the batch job to delete.
+1. Enable the **Delete by end date time** field if the cleanup should consider the end date/time of the last execution to determine which batch jobs to delete. By default, the cleanup considers the creation date/time.
+1. In the **Created by** field, specify the user ID of the person who created the job.
 1. In the **Withhold**, **Error**, **Finished**, and **Canceled** terminal status fields, select at least one option to delete the batch jobs.
 1. Select **OK**.
 
