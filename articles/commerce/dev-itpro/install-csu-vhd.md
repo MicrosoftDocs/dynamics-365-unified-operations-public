@@ -73,40 +73,40 @@ After you create the app, you must make the following changes in Commerce headqu
 1. The application ID (client ID) must be entered in Commerce headquarters for the installation to succeed. Go to System administration > Setup > Azure Active Directory applications (Microsoft Entra ID Applications). Enter the application ID (client ID) in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.  
 
 2. Create a new Channel DB record. Go to Retail and Commerce > Headquarters Setup > Commerce Scheduler > Channel Database.  
-	A. Select New. 
-	B. Enter the following:  
-		- Channel Database ID = DevSealedCSU  
-		- Channel Database Group = Default  
-	C. Select Save.  
-	D. Expand the Retail Channel FastTab.  
-	E. Select Add.  
-	F. Select the Store you normally work with.  
-	G. Select Save.  
-	H. Select Yes on the Mapping a New Retail Channel warning prompt.  
-	I. Select Download > Configuration file.  
-	J. Save the configuration file to C:\temp.  
-	K. Rename the configuration file to  StoreSystemSetup.xml  after its downloaded.  
+    A. Select New. 
+    B. Enter the following:  
+        - Channel Database ID = DevSealedCSU  
+	- Channel Database Group = Default  
+    C. Select Save.  
+    D. Expand the Retail Channel FastTab.  
+    E. Select Add.  
+    F. Select the Store you normally work with.  
+    G. Select Save.  
+    H. Select Yes on the Mapping a New Retail Channel warning prompt.  
+    I. Select Download > Configuration file.  
+    J. Save the configuration file to C:\temp.  
+    K. Rename the configuration file to  StoreSystemSetup.xml  after its downloaded.  
 3. Create new Channel Profile.  	
-		A. Go to Retail and Commerce > Channel Setup > Channel Profiles.  
-		B. Select New. 
-		C. Name = DevSealedCSUProfile.  
-		D. Select Save. 
-		E. Under Profile Properties – Select Add.  
-		F. For nonexternal VM connectivity set the following:  
-                   - Property Key: Property value  
-                   - Retail Server URL:`https://<HostName>:446/RetailServer/Commerce`  
-                   - Cloud POS URL: `https://<HostName>:446/POS`  
-		G. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.  
-		H. Edit the Houston and San Francisco record you normally work with.  
-		I. Update the Live Channel Database field = DevSealedCSU.  
-		J. Update Channel Profile = DevSealedCSUProfile.  
-		K. Select Save.  
+    A. Go to Retail and Commerce > Channel Setup > Channel Profiles.  
+    B. Select New. 
+    C. Name = DevSealedCSUProfile.  
+    D. Select Save. 
+    E. Under Profile Properties – Select Add.  
+    F. For nonexternal VM connectivity set the following:  
+        - Property Key: Property value  
+        - Retail Server URL:`https://<HostName>:446/RetailServer/Commerce`  
+        - Cloud POS URL: `https://<HostName>:446/POS`  
+    G. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.  
+    H. Edit the Houston and San Francisco record you normally work with.  
+    I. Update the Live Channel Database field = DevSealedCSU.  
+    J. Update Channel Profile = DevSealedCSUProfile.  
+    K. Select Save.  
 			> [!NOTE]
                         > If you get a warning saying "The store's closing method must be set to 'Shift'", on the **Statement/Closing** FastTab of the store, update the **Closing Method** value to **Shift**.  
 4. Update CDX Data Groups.
-	       L. Go to > Retail and Commerce > Distribution Schedule.
-               M. Select the Default Data group.
-               N. Remove the Default database record from this group (this will prevent future errors with trying to replicate to this DB).
+    L. Go to > Retail and Commerce > Distribution Schedule.
+    M. Select the Default Data group.
+    N. Remove the Default database record from this group (this will prevent future errors with trying to replicate to this DB).
 		
 5. Execute Sync jobs.  
    A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule.   
