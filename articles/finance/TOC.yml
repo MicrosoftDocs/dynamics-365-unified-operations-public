@@ -4246,7 +4246,45 @@
       - name: Business performance analytics reports
         href: business-performance-analytics/Reports-in-BPA.md
       - name: Create business performance analytics reports  
-        href: business-performance-analytics/how-to-create-and-edit-reports.md        
+        href: business-performance-analytics/how-to-create-and-edit-reports.md     
+    - name: Business performance planning
+      items:
+      - name: Business performance planning overview
+        href: business-performance-planning/business-performance-planning-overview.md
+      - name: Install business performance planning
+        href: business-performance-planning/Install-BPP2.md
+      - name: Install Planning app
+        href: business-performance-planning/bpp-app-install.md
+      - name: Install Power BI visuals
+        href: business-performance-planning/powerBI-visual-install.md
+      - name: Dimensions
+        items:
+        - name: Creating and maintaining dimensions
+          href: business-performance-planning/Dimensions.md
+        - name: Load data using dataflows
+          href: business-performance-planning/load-data-dataflows.md
+      - name: Cubes
+        items: 
+        - name: Creating cubes
+          href: business-performance-planning/create-cubes.md
+      - name: Power BI Visuals
+        items:
+        - name: Matrix
+          href: business-performance-planning/matrix-planning.md
+        - name: Graphical planning
+          href: business-performance-planning/graphical-planning.md
+        - name: Reporting            
+          href: business-performance-planning/reporting.md
+        - name: Table edit
+          href: business-performance-planning/table-edit.md
+        - name: Variance
+          href: business-performance-planning/variance.md
+        - name: Copy
+          href: business-performance-planning/copy.md
+        - name: Comments
+          href: business-performance-planning/comments.md
+        - name: Allocation method
+          href: business-performance-planning/allocation.md
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview
