@@ -68,54 +68,77 @@ To add the SSL certificate to the existing CSU Azure application, follow these s
 	
 ## Update Commerce headquarters
 
-After you create the app, you must make the following changes in Commerce headquarters:  
+After you create the app, you must make the following changes in Commerce headquarters. 
 
-1. The application ID (client ID) must be entered in Commerce headquarters for the installation to succeed. Go to System administration > Setup > Azure Active Directory applications (Microsoft Entra ID Applications). Enter the application ID (client ID) in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.  
+### Enter the application ID
 
-2. Create a new Channel DB record. Go to Retail and Commerce > Headquarters Setup > Commerce Scheduler > Channel Database.  
-    A. Select New. 
-    B. Enter the following:  
-        - Channel Database ID = DevSealedCSU  
-	- Channel Database Group = Default  
-    C. Select Save.  
-    D. Expand the Retail Channel FastTab.  
-    E. Select Add.  
-    F. Select the Store you normally work with.  
-    G. Select Save.  
-    H. Select Yes on the Mapping a New Retail Channel warning prompt.  
-    I. Select Download > Configuration file.  
-    J. Save the configuration file to C:\temp.  
-    K. Rename the configuration file to  StoreSystemSetup.xml  after its downloaded.  
-3. Create new Channel Profile.  	
-    A. Go to Retail and Commerce > Channel Setup > Channel Profiles.  
-    B. Select New. 
-    C. Name = DevSealedCSUProfile.  
-    D. Select Save. 
-    E. Under Profile Properties – Select Add.  
-    F. For nonexternal VM connectivity set the following:  
-        - Property Key: Property value  
-        - Retail Server URL:`https://<HostName>:446/RetailServer/Commerce`  
-        - Cloud POS URL: `https://<HostName>:446/POS`  
-    G. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.  
-    H. Edit the Houston and San Francisco record you normally work with.  
-    I. Update the Live Channel Database field = DevSealedCSU.  
-    J. Update Channel Profile = DevSealedCSUProfile.  
-    K. Select Save.  
-			> [!NOTE]
-                        > If you get a warning saying "The store's closing method must be set to 'Shift'", on the **Statement/Closing** FastTab of the store, update the **Closing Method** value to **Shift**.  
-4. Update CDX Data Groups.
-    L. Go to > Retail and Commerce > Distribution Schedule.
-    M. Select the Default Data group.
-    N. Remove the Default database record from this group (this will prevent future errors with trying to replicate to this DB).
+You must enter the application ID (client ID) in headquarters for the installation to succeed.
+
+To enter the application ID (client ID) in headquarters, follow these steps.
+
+1. Go to **System administration \> Setup \> Azure Active Directory applications (Microsoft Entra ID Applications)**.
+1. In the **Client ID** column, enter the application ID (client ID).
+1. in the **Name** column, enter descriptive text.
+1. In the **User ID** column, enter "RetailServiceAccount".  
+
+### Create a new channel database record
+
+To create a new channel database record, follow these steps.
+
+1. Go to **Retail and Commerce \> Headquarters Setup \> Commerce Scheduler \> Channel Database**.  
+1. Select **New**. 
+1. For **Channel Database ID**, enter "DevSealedCSU".  
+1. For **Channel Database Group**, enter "Default".  
+1. Select **Save**.  
+1. On the **Retail Channel** FastTab, select **Add**.  
+1. Select the store you normally work with.  
+1. Select **Save**.  
+1. On the **Mapping a New Retail Channel** warning dialog box, select **Yes**.  
+1. Select **Download \> Configuration file**.  
+1. Save the configuration file to C:\temp.  
+1. Rename the configuration file to "StoreSystemSetup.xml".  
+
+### Create a new channel profile  	
+
+To create a new channel profile, follow these steps.
+
+1. Go to **Retail and Commerce \> Channel Setup \> Channel Profiles**.  
+1. Select **New**. 
+1. For **Name**, enter "DevSealedCSUProfile".  
+1. Select **Save**. 
+1. Under **Profile Properties**, select **Add**.  
+1. For **Nonexternal VM connectivity**, enter the following:  
+    1. For **Property Key**, enter the property key value.  
+    1. For **Retail Server URL**, enter `https://<HostName>:446/RetailServer/Commerce`.  
+    1. For **Cloud POS URL**, enter `https://<HostName>:446/POS`.  
+1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.  
+1. For each store record you normally work, update the following:  
+    1. For **Live Channel Database**, enter "DevSealedCSU".  
+    1. For **Channel Profile**, enter "DevSealedCSUProfile".  
+    1. Select **Save**.  
+
+> [!NOTE]
+> If you get a warning saying "The store's closing method must be set to 'Shift'", on the **Statement/Closing** FastTab of the store, update the **Closing Method** value to **Shift**.  
+
+### Update CDX data groups
+
+To update Commerce Data Exchange (CDX) data groups, follow these steps.
+
+1. Go to **Retail and Commerce \> Distribution Schedule**.
+1. Select the **Default Data** group.
+1. Remove the default database record from this group, which prevents future errors when trying to replicate to this database.
 		
-5. Execute Sync jobs.  
-   A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule.   
-   B. Select the 9999 job.  
-   C. Select Run now.  
-   D. Select Yes to all the warning.  
-   E. Select OK to schedule the job.  
+### Execute sync jobs 
 
-## Install Sealed CSU Prerequisites
+To execute sync jobs, follow these steps.
+
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule**.   
+1. Select the **9999** job.  
+1. Select **Run now**.  
+1. For each warning, select **Yes**.  
+1. Select **OK** to schedule the job.  
+
+## Install Sealed CSU prerequisites
 
 1. Install .NET Core hosting bundle on DEV VM.
     A. RDP into the Dev box.
