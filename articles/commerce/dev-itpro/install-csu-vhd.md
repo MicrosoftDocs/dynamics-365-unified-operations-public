@@ -7,7 +7,7 @@ ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: bstor
+ms.author: brstor
 ms.search.validFrom: 2022-03-01
 ---
 
@@ -61,7 +61,7 @@ Open Server Manager > Local Server > Manage > Add roles and features > Under IIS
 7. Set Description = Devbox Self-signed Certificate.
 8. Select Add.
 	
-# Update Commerce headquarters
+## Update Commerce headquarters
 
 After creating the above App, the following changes need to be made inside Commerce headquarters:  
 
@@ -110,7 +110,7 @@ After creating the above App, the following changes need to be made inside Comme
    D. Select Yes to all the warning.  
    E. Select OK to schedule the job.  
 
-# Install Sealed CSU Pre-requisites
+## Install Sealed CSU Pre-requisites
 	1. Install .NET Core hosting bundle on DEV VM.
 		A. RDP into the Dev box.
 		B. Open a web browser and go to this site Download .NET 6.0 (Linux, macOS, and Windows) (microsoft.com).
