@@ -6,7 +6,7 @@ description: This article describes how to configure business performance analyt
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 11/02/2023
+ms.date: 12/20/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
