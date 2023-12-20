@@ -1,13 +1,32 @@
-[[_TOC_]]
+---
+title: Install Commerce Scale Unit on a virtual hard disk
+description: This article explains how to install Commerce Scale Unit on a virtual hard disk for Microsoft Dynamics 365 Commerce development.
+author: bstorie
+ms.date: 12/20/2023
+ms.topic: article
+audience: Developer, IT Pro
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: bstor
+ms.search.validFrom: 2022-03-01
+---
 
-# PreRequisite
+# Install Commerce Scale Unit on a virtual hard disk
+
+[!include [banner](../includes/banner.md)]
+
+This article explains how to install Commerce Scale Unit (CSU) on a virtual hard disk (VHD) for Microsoft Dynamics 365 Commerce development.
+
+## PreRequisite
+
 The following documentation provides a walk through for how to setup the base Sealed CSU in a VHD image that can be used for Development work.  
 
 ## Create AAD Apps
-Two AAD Apps need to be created one for CSU and one for CPOS(Store commerce for Web) App.  The below SSL Certificate will be added to this app.   [Review this public doc for more details](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/cpos-custom-aad)
 
+Two AAD Apps need to be created one for CSU and one for CPOS (Store commerce for Web) App. The below SSL Certificate will be added to this app. For more information, see [Configure Store Commerce for web to use a custom Azure AD app](cpos-custom-aad.md).
 
 ## Create SSL certificate to be used for website based on Host name
+
 1.  RDP into box
 2. Open IIS Manager
 3. Select to create a new Self-Signed Certificate  
@@ -18,6 +37,7 @@ Two AAD Apps need to be created one for CSU and one for CPOS(Store commerce for 
 Open Server Manager > Local Server > Manage > Add roles and features > Under IIS make sure the following component is marked: Management Tools > IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)
 
 ## Obtain a copy of previous created SSL Cert for adding to Azure Web App
+
 1.  Right Click Windows Start button > Run  
 2.  Type:  MMC  
 3.  Click File > Add/Remove Snap-in > Select Certificates > Click Add > Select Computer Account > Click Next > Select Local Computer > Click Finish  
@@ -31,22 +51,24 @@ Open Server Manager > Local Server > Manage > Add roles and features > Under IIS
 11. Click OK/Save  
 	
 ## Add SSL Certificate to the existing CSU Azure Application
+
 1. In the web browser on the VM, Edit the CSU Azure App registration created at the start of this article
 2. On the Client Credentials field > Click Add a certificate or secret 
 3. Click on the Certificates tab
 4. Click Upload Certificate
 5. Select the DevBoxSelfSigned certificate  from c:\temp
 6. Description = Devbox cert
-7. Set Description =  Devbox Self-signed Certificate
+7. Set Description = Devbox Self-signed Certificate
 8. Click Add
 	
-# Update Commerce HQ  
+# Update Commerce headquarters
+
 After creating the above App, the following changes need to be made inside Commerce HQ:  
 
 1. The application ID (client ID) must be entered in Commerce HQ for the installation to succeed. Go to System administration > Setup > Azure Active Directory applications (Microsoft Entra ID Applications). Enter the application ID (client ID) in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.  
 
  2. Create a new Channel DB record. Go to Retail and Commerce > Headquarters Setup > Commerce Scheduler > Channel Database  
-	 A. Click New  
+	A. Click New  
 	B. Enter the following:  
 		- Channel Database ID = DevSealedCSU  
 		- Channel Database Group = Default  
@@ -59,26 +81,26 @@ After creating the above App, the following changes need to be made inside Comme
 	I. Click Download > Configuration file  
 	J. Save the configuration file to C:\temp  
 	K. Rename the configuration file to  StoreSystemSetup.xml  after its downloaded  
-3. Create new Channel Profile    	
+3. Create new Channel Profile  	
 		A. Go to Retail and Commerce > Channel Setup > Channel Profiles  
 		B. Click New  
 		C. Name = DevSealedCSUProfile  
 		D. Click Save  
 		E. Under Profile Properties – Click Add  
 		F. For non-external VM connectivity set the following:  
-                   - Property Key	Property value  
-                   - Retail Server URL	https://<HostName>:446/RetailServer/Commerce  
-                   - Cloud POS URL	https://<HostName>:446/POS  
-		G. Go to Retail and Commerce > Channels > Stores > All Stores  
-		H. Edit the Houston and San Francisco record you normally work with  
+                   - Property Key: Property value  
+                   - Retail Server URL:`https://<HostName>:446/RetailServer/Commerce`  
+                   - Cloud POS URL: `https://<HostName>:446/POS`  
+		G. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.  
+		H. Edit the Houston and San Francisco record you normally work with.  
 		I. Update the Live Channel Database field = DevSealedCSU  
 		J. Update Channel Profile = DevSealedCSUProfile  
 		K. Click Save  
-			> Note: You may get a warning about “The store’s Closing method must be set to ‘shift’.   If you receive this expand the Statement/Closing fast tab on the store > Change the Closing Method field to "Shift"
-   4. Update CDX Data Groups
-               A. Go to > Retail and Commerce > Distribution Schedule
-               B. Select the Default Data group
-               C. Remove the Default database record from this group  (this will prevent future errors with trying to replicate to this DB)
+			> Note: You may get a warning about “The store’s Closing method must be set to ‘shift’.   If you receive this expand the Statement/Closing fast tab on the store > Change the Closing Method field to "Shift"  
+4. Update CDX Data Groups
+	       L. Go to > Retail and Commerce > Distribution Schedule
+               M. Select the Default Data group
+               N. Remove the Default database record from this group (this will prevent future errors with trying to replicate to this DB)
 		
 5. Execute Sync jobs  
    A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule   
@@ -105,14 +127,14 @@ After creating the above App, the following changes need to be made inside Comme
 			iv. Then follow the step above to download the installer file
 		F. Copy the sealed installer from the Downloads folder to C:\temp
 
-# Install the Sealed CSU	
+## Install the Sealed CSU
+
 We are going to use the below syntax to install the Sealed-CSU on the VHD image.   Since this is a Dev box, we will use the same SSL thumbprint to run all services. For Production/UAT systems these values should be different.   
 
 `CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "< SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
 
+## Database Restores from UAT
 
-
-# Database Restores from UAT
 If you previous setup a sealed CSU using the above steps and then restored a database from another environment, you will need to perform the following actions to make the Sealed CSU functional again. 
 
 1) Go through the steps in the **Update Commerce HQ** section again to recreate the records. 
@@ -120,3 +142,6 @@ If you previous setup a sealed CSU using the above steps and then restored a dat
 2) Check your download sessions to see if the jobs are applying. 
     - If the jobs are applying, then your CSU is working and you don't need to re-run the installer steps.
     - If the download jobs are not applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the Channel DB form and re-run the CSU installer using the new configuration file.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
