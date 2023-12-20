@@ -173,7 +173,7 @@ To install the Sealed CSU on the VHD image, use the syntax provided below. Since
 
 If you previously set up a sealed CSU using the steps above and then restored a database from another environment, you must perform the following steps to make the sealed CSU functional again. 
 
-1. Go through the steps in [Update Commerce headquarters](#[update-commerce-headquarter) to recreate the records. 
+1. Go through the steps in [Update Commerce headquarters](#update-commerce-headquarters) to recreate the records. 
     > [!NOTE]
     > You must use the same values for **Channel Database ID** and **Channel Profile** that you used in the previous installation. If these values are different than the previous installation, you must rerun the installer. 
 2. Check your download sessions to see if the jobs are applying. 
