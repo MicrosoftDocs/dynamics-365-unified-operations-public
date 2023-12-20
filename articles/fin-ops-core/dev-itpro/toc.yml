@@ -2196,8 +2196,12 @@ items:
       items:
       - name: Overview of Copilot capabilities in finance and operations apps (preview)
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
+      - name: Generative help and guidance with Copilot (preview)
+        href: ../fin-ops/copilot/copliot-generative-help.md
       - name: Enable Copilot capabilities in finance and operations apps (preview)
         href: copilot/enable-copilot.md
+      - name: Enable generative help and guidance with Copilot (preview)
+        href: copilot/enable-copliot-generative-help.md
   - name: Responsible AI
     items:
     - name: Overview

@@ -2327,6 +2327,8 @@
           href: procurement/purchase-order-approval-confirmation.md
         - name: Calculate requested ship dates for purchase orders (preview)
           href: master-planning/supplier-requested-confirmed-dates.md
+        - name: Enable Copilot support for managing changes to confirmed purchase orders (preview)
+          href: procurement/purchase-order-changes-after-confirmation-enable.md
         - name: Review and accept changes to confirmed purchase orders (preview)
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
