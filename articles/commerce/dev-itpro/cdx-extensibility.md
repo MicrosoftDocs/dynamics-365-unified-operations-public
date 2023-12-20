@@ -117,7 +117,7 @@ If you created a new HQ table and a new channel database table, follow these ste
 9. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler >Initialize commerce scheduler**.
 10. Run the CDX initialization by clicking the **OK** button on **Initialize commerce scheduler** dialog.
 
-## Pull data from a new channel database table to a new HQ table by using a push job
+## Pull data from a new channel database table to a new HQ table by using a pull job
 
 To pull data from a new channel table to HQ, you have two options:
 
