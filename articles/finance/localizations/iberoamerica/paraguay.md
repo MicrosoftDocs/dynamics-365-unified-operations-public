@@ -30,12 +30,10 @@ ms.dyn365.ops.version: App 10.0.38
 [!include [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Paraguay.
-- [Connection configuration for Chilean electronic invoicing](ltm-chile-elec-invo-conncection.md)
+- [Configure sales and purchase invoices for Paraguay](ltm-configure-invoices-paraguay.md)
+- [Create customer and vendor records with an address in Paraguay](ltm-create-customer-vendor-paraguay.md)
+- [Set up a legal entity and tax information for Paraguay](ltm-set-up-legal-entity-tax-paraguay.md)
   
-
-
-
-
 
 ## Additional resources
 
