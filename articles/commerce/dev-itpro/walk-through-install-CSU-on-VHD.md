@@ -27,17 +27,17 @@ Open Server Manager > Local Server > Manage > Add roles and features > Under IIS
 7.  In the export wizard > Click Next  
 8.  Select “No, do not export the private key” > Click Next  
 9.  Select “DER encoded binary X.509 (.CER)”  
-10. Select the folder C:\temp  and enter the file name = LCSDevBoxSelfSigned  
+10. Select the folder C:\temp  and enter the file name = DevBoxSelfSigned  
 11. Click OK/Save  
 	
 ## Add SSL Certificate to the existing CSU Azure Application
-1. In the web browser on the VM, Edit the Azure App registration created at the start of this article
+1. In the web browser on the VM, Edit the CSU Azure App registration created at the start of this article
 2. On the Client Credentials field > Click Add a certificate or secret 
 3. Click on the Certificates tab
 4. Click Upload Certificate
-5. Select the LCSDevBoxSelfSigned certificate  from c:\temp
-6. Description = LCS Devbox
-7. Set Description = LCS Devbox Self-signed Certificate
+5. Select the DevBoxSelfSigned certificate  from c:\temp
+6. Description = Devbox cert
+7. Set Description =  Devbox Self-signed Certificate
 8. Click Add
 	
 # Update Commerce HQ  
@@ -46,7 +46,7 @@ After creating the above App, the following changes need to be made inside Comme
 1. The application ID (client ID) must be entered in Commerce HQ for the installation to succeed. Go to System administration > Setup > Azure Active Directory applications (Microsoft Entra ID Applications). Enter the application ID (client ID) in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.  
 
  2. Create a new Channel DB record. Go to Retail and Commerce > Headquarters Setup > Commerce Scheduler > Channel Database  
-		 A. Click New  
+	 A. Click New  
 	B. Enter the following:  
 		- Channel Database ID = DevSealedCSU  
 		- Channel Database Group = Default  
@@ -59,7 +59,7 @@ After creating the above App, the following changes need to be made inside Comme
 	I. Click Download > Configuration file  
 	J. Save the configuration file to C:\temp  
 	K. Rename the configuration file to  StoreSystemSetup.xml  after its downloaded  
-3. If you’re using Demo Data, make the following additional changes  	
+3. Create new Channel Profile    	
 		A. Go to Retail and Commerce > Channel Setup > Channel Profiles  
 		B. Click New  
 		C. Name = DevSealedCSUProfile  
@@ -74,13 +74,14 @@ After creating the above App, the following changes need to be made inside Comme
 		I. Update the Live Channel Database field = DevSealedCSU  
 		J. Update Channel Profile = DevSealedCSUProfile  
 		K. Click Save  
-			> Note: You may get a warning about “The store’s Closing method must be set to ‘shift’.   If you receive this expand the Statement/Closing fast tab on the store > Change the Closing Method field to "Shift"  
-               L. Go to > Retail and Commerce > Distribution Schedule
-               M. Select the Default Data group
-               N. Remove the Default database record from this group  (this will no longer be used)
+			> Note: You may get a warning about “The store’s Closing method must be set to ‘shift’.   If you receive this expand the Statement/Closing fast tab on the store > Change the Closing Method field to "Shift"
+   4. Update CDX Data Groups
+               A. Go to > Retail and Commerce > Distribution Schedule
+               B. Select the Default Data group
+               C. Remove the Default database record from this group  (this will prevent future errors with trying to replicate to this DB)
 		
-4. Execute Sync jobs  
-	A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule   
+5. Execute Sync jobs  
+   A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule   
    B. Select the 9999 job  
    C. Click Run now  
    D. Click Yes to all the warning  
