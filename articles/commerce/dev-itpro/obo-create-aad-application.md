@@ -4,7 +4,7 @@
 title: Create and configure an Azure AD application for account manager sign-in
 description: This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author: mariash529
-ms.date: 09/22/2023
+ms.date: 12/20/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -74,7 +74,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 1. In the **Name** field, enter **StoreManagerB2BSignin**. This exact name is required and can't be modified.
 
     > [!IMPORTANT]
-    > For OBO sign-in to work, the identity provider name have to match to the id used in your sign-in module, default is **StoreManagerB2BSignin**.
+    > For on behalf of sign-in to work, the identity provider name must match the ID used in your sign-in module. The default value is **StoreManagerB2BSignin**.
     >
     > ![name matching to module - screen 3](../media/obo-configure-IDP-match.png)
 
