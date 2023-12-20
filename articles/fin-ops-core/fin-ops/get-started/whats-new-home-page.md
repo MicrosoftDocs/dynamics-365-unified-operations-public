@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
-ms.dyn365.ops.version: Platform update 56
+ms.dyn365.ops.version: Platform update 61
 ms.collection: get-started
 ms.assetid: 
 ---
@@ -23,6 +23,7 @@ To see what's new or changed in the Platform updates for finance and operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Platform updates for 10.0.37 | 7.0.7068 | November 2023    | [Platform updates for version 10.0.37 of finance and operations apps](whats-new-platform-updates-10-0-37.md)  |
 | Platform updates for 10.0.36 | 7.0.7036 | September 2023    | [Platform updates for version 10.0.36 of finance and operations apps](whats-new-platform-updates-10-0-36.md)  |
 | Platform updates for 10.0.35 | 7.0.6972 | July 2023    | [Platform updates for version 10.0.35 of finance and operations apps](whats-new-platform-updates-10-0-35.md)  |
 | Platform updates for 10.0.34 | 7.0.6931 | June 2023    | [Platform updates for version 10.0.34 of finance and operations apps](whats-new-platform-updates-10-0-34.md)  |
