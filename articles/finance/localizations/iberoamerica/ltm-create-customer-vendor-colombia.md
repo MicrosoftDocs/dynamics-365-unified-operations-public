@@ -1,6 +1,6 @@
 ---
 title: Create customer and vendor records with an address in Colombia
-description: This topic provides information about how to set up records for customers and vendors located in Colombia. 
+description: This topic explains how to set up records for customers and vendors in Colombia.
 author: Cpicon85
 ms.date: 12/08/2023
 ms.topic: Article
@@ -13,9 +13,10 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-The Latin American customer and vendor configuration contains the fiscal information required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
+The Latin American (LATAM) customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. It also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
+
 Before you create records for customers and vendors who are located in Colombia, the following setup must be completed:
 
 - Address formats that are specific to Colombia. These formats must use states for departments and counties for counties.
@@ -46,7 +47,7 @@ Before you create records for customers and vendors who are located in Colombia,
     - In the **Customer set** field, select a set that contains the document classes to use with the customer.
     - In the **Taxpayer type** field, select a taxpayer that represents an organization. For example, select **persona juridica**.
     - In the **Based in country/region** field, select **Colombia**.
-    - In the **Country document type** field, select a tax ID type. For example, select **NIT**.
+    - In the **Country document type** field, select a tax ID type. For example, select **NIT** (tax identification number).
     - Complete the **Country document number** field with the customer's tax ID number.
 
 ## Create a record for a vendor in Colombia
@@ -59,7 +60,7 @@ Before you create records for customers and vendors who are located in Colombia,
 6. Enter the street and street number.
 7. Select a state and county, and mark the address as primary.
 8. In the **Contact information** section, select **New** to create a record for the company phone number.
-9. In the **Sales demographic** section, set the currency to **COP** (Colombian peso).
+9. In the **Sales demographic** section, set the currency to **COP**.
 10. Configure the terms of payments and the invoice account.
 11. Set the delivery terms, mode of delivery, and delivery reason.
 12. Select a sales tax group that contains all the tax codes that can have transactions with this vendor.
@@ -70,7 +71,5 @@ Before you create records for customers and vendors who are located in Colombia,
     - In the **Based in country/region** field, select **Colombia**.
     - In the **Country document type** field, select a tax ID type. For example, select **NIT**.
     - Complete the **Country document number** field with the vendor's tax ID number.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
