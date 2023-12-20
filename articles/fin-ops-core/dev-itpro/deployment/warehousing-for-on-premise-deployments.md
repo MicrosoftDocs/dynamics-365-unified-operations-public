@@ -81,13 +81,14 @@ To enable Finance + Operations to use your AD FS application, you must create a 
 
 2.  Associate your AD FS application with the Warehousing app user.
 
-    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Azure Active Directory applications**.
+    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Microsoft Entra ID applications**.
     
     2.  Create a new line.
     
     3.  Enter the client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter a name, and select the Warehousing app user.
 
-    ![Azure Active Drectory applications .](media/azure-active-directory.png)
+    ![Azure Active Drectory applications .](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/assets/60176428/ae2ca504-e50d-4a1e-b856-ede5f7d7da42)
+
 
 ## Certificates 
 
