@@ -11,18 +11,20 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Uruguay
 
-The Uruguayan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
+The Uruguayan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. It also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
+
 Before you create records for customers and vendors who are located in Uruguay, the following setup must be completed:
-- Create departments and counties from Uruguay using states and counties from the address setup.
-- Create tax codes for the VAT that will be used (Vat general rate, exempt, etc).
-- Create sales tax groups that contain the tax codes created.
-- Create item sales tax groups that contain the tax codes created.
-- Document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. For more information, see [Configure sales and purchase invoices for Uruguay](ltm-configure-invoices-Uruguay.md).
-- A customer and vendor set that contains all the document classes that will be used.
-- A tax ID for each type of tax identification that your customers and suppliers have.
-- A taxpayer type for each type of taxpayer that your customers and suppliers have.
+
+- Create departments and counties from Uruguay by using states and counties from the address setup.
+- Create tax codes for the value-added tax (VAT) that will be used (VAT general rate, exempt, and so on).
+- Create sales tax groups that contain the tax codes that you created.
+- Create item sales tax groups that contain the tax codes that you created.
+- Create document classes to use with customer and vendor invoices, credit notes, debit notes, packing slips, and so on. For more information, see [Configure sales and purchase invoices for Uruguay](ltm-configure-invoices-Uruguay.md).
+- Create a customer and vendor set that contains all the document classes that will be used.
+- Create a tax ID for each type of tax identification that your customers and suppliers have.
+- Create a taxpayer type for each type of taxpayer that your customers and suppliers have.
 
 ## Create a record for a customer in Uruguay
 
