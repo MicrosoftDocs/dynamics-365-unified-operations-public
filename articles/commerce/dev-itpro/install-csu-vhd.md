@@ -17,40 +17,45 @@ ms.search.validFrom: 2022-03-01
 
 This article explains how to install Commerce Scale Unit (CSU) on a virtual hard disk (VHD) for Microsoft Dynamics 365 Commerce development.
 
-## PreRequisite
+## Create Azure Active Directory apps
 
-The following documentation provides a walk through for how to setup the base Sealed CSU in a VHD image that can be used for Development work.  
+First, you must create two Azure Active Directory (Azure AD) apps, one for CSU and one for the Store Commerce for Web app (formerly CPOS). The Secure Sockets Layer (SSL) certificate will be added to this app. For more information, see [Configure Store Commerce for web to use a custom Azure AD app](cpos-custom-aad.md).
 
-## Create AAD Apps
+## Create an SSL certificate for a website based on the host name
 
-Two AAD Apps need to be created one for CSU and one for CPOS (Store commerce for Web) App. The below SSL Certificate will be added to this app. For more information, see [Configure Store Commerce for web to use a custom Azure AD app](cpos-custom-aad.md).
+To create an SSL certificate for a website based on the host name, follow these steps.
 
-## Create SSL certificate to be used for website based on Host name
-
-1. RDP into box.
-2. Open IIS Manager.
-3. Select to create a new Self-Signed Certificate.
-4. Copy the ThumbPrint value of the new certificate to notepad as you will need it later.
+1. Remote Desktop Protocol (RDP) into box.
+1. Open Internet Information Services (IIS) Manager.
+1. Select **Create a Self-Signed Certificate**.
+1. Copy the thumbprint value of the new certificate to use later.
 
 ## Install IIS components
 
-Open Server Manager > Local Server > Manage > Add roles and features > Under IIS make sure the following component is marked: Management Tools > IIS 6 Management Compatibility (IIS 6 Metabase Compatibility).
+To install II components, go to **Server Manager \> Local Server \> Manage \> Add roles and features**. Under **IIS**, confirm that the **Management Tools \> IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)** component is checked.
 
-## Obtain a copy of previous created SSL Cert for adding to Azure Web App
+## Obtain a copy of a previously created SSL certificate to add to the Azure Web App
 
-1.  Right Click Windows Start button > Run.  
-2.  Type:  MMC.  
-3.  Select File > Add/Remove Snap-in > Select Certificates > Select Add > Select Computer Account > Select Next > Select Local Computer > Select Finish. 
-4.  Select Ok.  
-5.  Expand Certificates > Personal > Certificates.  
-6.  Locate the SSL Certificate you created from IIS in the list > Right Click it > All Tasks > Export.  
-7.  In the export wizard > Select Next.  
-8.  Select “No, do not export the private key” > Select Next.  
-9.  Select “DER encoded binary X.509 (.CER)”.  
-10. Select the folder C:\temp  and enter the file name = DevBoxSelfSigned.  
-11. Select OK/Save.  
+To obtain a copy of a previously created SSL certificate to add to the Azure Web App, follow these steps.
+
+1. Select the Windows logo key + R to open the **Run** dialog box.  
+1. Enter "MMC" to open the Microsoft Management Console.  
+1. Select **File > Add/Remove Snap-in**.
+1. Under **Available snap-ins**, select **Certificates**, and then select **Add**.
+1. In the **Certificates snap-in** dialof box, select **Computer Account**, and then select **Next**.
+1. Select **Local Computer**, and then select **Finish**. 
+1. Select **OK**.  
+1. Expand **Certificates \> Personal > Certificates**.  
+1. Locate the SSL Certificate you created from IIS in the list, then right-click it and select **All Tasks \> Export**.  
+1. In the export dialog box, select **Next**.  
+1. Select **No, do not export the private key**, and then select **Next**.  
+1. Select **DER encoded binary X.509 (.CER)**.  
+1. Select the C:\temp folder, and then enter "DevBoxSelfSigned" as the file name.  
+1. Select **OK**, and then select **Save**.  
 	
 ## Add SSL Certificate to the existing CSU Azure Application
+
+To add the SSL certificate to the existing CSU Azure application, follow these steps.
 
 1. In the web browser on the VM, Edit the CSU Azure App registration created at the start of this article.
 2. On the Client Credentials field > Select Add a certificate or secret. 
