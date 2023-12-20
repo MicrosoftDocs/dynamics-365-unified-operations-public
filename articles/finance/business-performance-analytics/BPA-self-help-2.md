@@ -5,7 +5,7 @@ description: This article provides information about the Missing fiscal calendar
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 09/09/2023
+ms.date: 12/05/2023
 ms.topic: welcome
 ms.prod: 
 ms.technology:
@@ -21,11 +21,11 @@ audience: Application User
 
 ## Missing fiscal calendar for budget: Error code: ERR00002 [Type: Error]
 
-Error code *ERR00002* is logged in the `Transform Log` table in Microsoft Dataverse when the transaction dates on budget transaction lines in Dynamics 365 Finance aren't aligned with the corresponding fiscal calendar in the ledger. This misalignment causes the transaction in the Budget fact to be linked to an accounting date key of *-1*.
+Error code *ERR00002* is logged in the `Bpa self help logs` table in Microsoft Dataverse when the transaction dates on budget transaction lines in Dynamics 365 Finance aren't aligned with the corresponding fiscal calendar in the ledger. This misalignment causes the transaction in the Budget fact to be linked to an accounting date key of *-1*.
 
 ### Resolution
 
-To address this error, include calendar years/periods from the `minBudgetTransactionDate` value through the `maxBudgetTransactionDate` value for the relevant Fiscal calendars. You can find the fiscal calendar, the `minBudgetTransactionDate` value, and the `maxBudgetTransactionDate` value in the `LogDetails` column of the `Transform Log` table.
+To address this error, include calendar years/periods from the `minBudgetTransactionDate` value through the `maxBudgetTransactionDate` value for the relevant Fiscal calendars. You can find the fiscal calendar, the `minBudgetTransactionDate` value, and the `maxBudgetTransactionDate` value in the `LogDetails` column of the `Bpa self help logs` table.
 
 Here's an example of a record:
 

@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 10/02/2023
+ms.date: 12/02/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -156,15 +156,6 @@ Before you begin testing, validate the following details:
 - Confirm that your security policies are applicable.
 - Confirm that batch jobs are triggered as expected.
 
-You won't have Remote Desktop access to the migrated sandbox. You can use self-service capabilities and tools to perform the following actions for your Tier 2+ sandbox environments:
-
-- Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-the-azure-sql-database).
-- Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-log-files).
-- Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#use-perfmon-tools).
-- Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-self-service-logs).
-- Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#restart-services).
-- Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#configure-the-regression-suite-automation-tool).
-
 For more information, see [FAQ for self-service deployment](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md).
 
 ### Migrate a Human Resources production environment
@@ -174,7 +165,7 @@ After you've finished migrating and validating a sandbox environment, follow the
 #### Prerequisites
 
 - The Subscription estimator should be completed.
-- The Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed.
+- The Human Resources migration [Go-live readiness assessment](hr-migration-admin-go-live-readiness-review.md) should be completed.
 - The user initiating the Production migration in Lifecycle services should have a System administrator role on the Power Platform. 
 
 #### Migrate the production environment
@@ -203,6 +194,32 @@ The environment state will show the deployment progress. The state will be chang
 - If you're configuring integration with finance and operations apps, see [Migration considerations](hr-admin-integration-finance.md#migration-considerations).
 
 #### Dual-write integration
+
+##### Prerequisites
+
+Follow these steps to install Dynamics 365 Human Resources common tables.
+
+1. Go to the Power Platform admin center, and select the environment.
+2. In the **Resources** section, select **Dynamics 365 apps**, and then select **Install app**.
+3. Select **Dynamics 365 Human Resources common tables**, and install the latest version.
+4. Verify that the installation was successfully completed. 
+
+Follow these steps to add dual-write permissions.
+
+1. In the Power Platform admin center, confirm that the dual-write Dynamic 365 Human Resources and Dynamics 365 Human Resources common tables solutions are installed.
+2. Select your environment.
+3. In the **Access** section, under **Teams**, select **See all**.
+4. Select the business unit that has the same name as the environment, and then select **Manage security roles**.
+5. Select **System administrator** and **Human Resources administrator** permissions, and then select **Save**.
+
+> [!NOTE]
+> The integration keys for different maps are available in [Integration considerations](hr-dataverse-integration.md#integration-considerations).
+
+After the relevant maps are configured, follow these steps.
+
+1. Go to **Data management** \> **Dual write UI**.
+2. In **Integration key**, confirm that the correct keys are set. If any of the keys differ, update them.
+3. For modified integration keys, you must stop the map, refresh, and then select **Start map again** for the keys that were updated.
 
 ##### Set up Microsoft Power Platform dual-write integration
 

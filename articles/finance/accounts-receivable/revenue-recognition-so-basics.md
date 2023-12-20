@@ -5,7 +5,7 @@ title: Revenue recognition on sales orders
 description: This article describes the basic functionality for recognizing revenue on sales orders and invoices. Revenue recognition is available on the sales order and on the corresponding invoice that is created from the sales order.
 author: bking
 ms.date: 08/16/2023
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

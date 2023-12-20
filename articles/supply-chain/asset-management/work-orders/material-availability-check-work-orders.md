@@ -1,5 +1,5 @@
 ---
-title: Material availability check for work orders
+title: Material availability check for work orders (preview)
 description: This article describes how supervisors can check whether all the required materials are available for one or more maintenance work orders.
 author: johanhoffmann
 ms.author: johanho
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Material availability check for work orders
+# Material availability check for work orders (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
@@ -20,6 +20,8 @@ ms.custom: bap-template
 <!--KFM: Preview until further notice -->
 
 Supervisors can do a material availability check for work orders. This process is relevant for organizations that want to confirm that all the required spare parts are available before workers start maintenance work. For example, a supervisor is responsible for all corrective maintenance at a manufacturing site. As a standard procedure, the supervisor checks whether all the materials that are required for each work order are available. After availability is confirmed, the supervisor releases the materials to maintenance workers for processing.
+
+[!INCLUDE [preview-note](../../includes/preview-note.md)]
 
 ## Prerequisites
 

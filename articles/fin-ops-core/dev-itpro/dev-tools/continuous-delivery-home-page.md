@@ -3,7 +3,7 @@ title: Continuous delivery home page
 description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: josaw1
 ms.date: 10/16/2019
-ms.topic: index-page
+ms.topic: conceptual
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

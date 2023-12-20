@@ -2,7 +2,7 @@
 title: Inventory availability APIs for e-commerce
 description: This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 07/18/2023
+ms.date: 11/07/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -22,9 +22,10 @@ Commerce provides the following APIs to query inventory availability of a produc
 - **GetEstimatedAvailability** – Use this API to query inventory for a product or product variant in the online channel's default warehouse or warehouses that are linked to the online channel's fulfillment group.
 - **GetEstimatedProductWarehouseAvailability** – Use this API to query inventory for a product or product variant in a specific warehouse.
 - **GetDimensionValuesWithEstimatedAvailabilities** – Use this API to query inventory levels that are aggregated on the dimensions for a product, either in the online channel's default warehouse or in warehouses that are linked to the online channel's fulfillment group.
+- **UpdateProductWarehouseAvailabilities** – Use this API to update inventory for products or product variants in specific warehouses.
 
 > [!NOTE]
-> The **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs that are used in Commerce version 10.0.7 and earlier.
+> The **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs used in Commerce version 10.0.7 and earlier.
 
 For more information about how to consume Retail Server APIs in external applications, see [Consume Retail Server APIs in external applications](consume-retail-server-api.md).
 
@@ -289,9 +290,73 @@ For more information about how to consume Retail Server APIs in external applica
 }
 ```
 
+## UpdateProductWarehouseAvailabilities
+
+The UpdateProductWarehouseAvailabilities API uses the Inventory Visibility Service (IVS) to update omnichannel inventory data in real time. As a prerequisite to using this API, you must first enable IVS as the inventory data provider for your Commerce environment. The UpdateProductWarehouseAvailabilities API operates under the [BusinessPartnerEmployee](./retail-server-customer-consumer-api.md#roles) role, which is used for requests that represent a contractor working for a seller channel in a business to business to business (B2B2B) scenario.
+
+### Input parameters
+
+| Name | Type | Required/Optional | Description |
+|----|----|----|----|
+| quantities | IEnumerable\<ProductWarehouseQuantity\> | Required | |
+
+#### ProductWarehouseQuantity
+
+| Name | Type | Required/Optional | Description |
+|----|----|----|----|
+| ProductId | long | Required | |
+| InventoryLocationId | string | Required | The ID of the warehouse. |
+| PhysicalInventory | decimal | Required | The target quantity. |
+
+### Sample request body
+
+```json
+{
+    "quantities": [
+        {
+            "ProductId": 123456,
+            "InventoryLocationId": "{WarehouseId}",
+            "PhysicalInventory": 100
+        }
+    ]
+}
+```
+
+### Sample response body
+
+```json
+{
+    "SuccessfulUpdates": [
+        {
+            "ProductId": 123456,
+            "ItemId": "0001",
+            "DataAreaId": "{DataAreaId}",
+            "ColorId": "",
+            "SizeId": "",
+            "StyleId": "",
+            "ConfigurationId": "",
+            "InventoryLocationId": "{WarehouseId}",
+            "InventorySiteId": "{SiteId}",
+            "TotalAvailable": 100.0,
+            "PhysicalAvailable": 100.0,
+            "PhysicalInventory": 100.0,
+            "PhysicalReserved": 0,
+            "OrderedInTotal": 0
+        }
+    ],
+    "FailedUpdates": [],
+    "ExtensionProperties": []
+}
+```
+
 ## The quantity output of APIs
 
-Both the **GetEstimatedAvailability** API and the **GetEstimatedProductWarehouseAvailability** API internally use the channel-side calculation logic and return an estimated *physical available* quantity, *total available* quantity, *unit of measure*, and *inventory level* for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products that have an "out of stock" inventory level.
+The GetEstimatedAvailability and GetEstimatedProductWarehouseAvailability APIs can fetch inventory data from two data sources:
+
+- When the **Use Inventory Visibility as inventory data provider** setting is turned on in **Commerce shared parameters** in headquarters, the inventory availability data is retrieved from the IVS you configured for your Commerce headquarters environment.
+- When the **Use Inventory Visibility as inventory data provider** setting is turned off in **Commerce shared parameters** in headquarters, the inventory availability data is retrieved from the Commerce Scale Unit (CSU) channel databases where estimated physical available and total available quantities are calculated.
+
+The returned values can be shown on your e-commerce site, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products that have an "out of stock" inventory level.
 
 Other APIs that are available in Commerce can also directly access Commerce headquarters to fetch on-hand quantities for products. However, we don't recommend that you use them in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your Commerce headquarters servers. For channel-side calculation, the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs can provide a more accurate estimate of a product's availability by considering the transactions that have been created in the channels but that aren't yet known to Commerce headquarters.
 

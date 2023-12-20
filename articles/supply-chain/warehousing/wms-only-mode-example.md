@@ -1,5 +1,5 @@
 ---
-title: Example of using inbound and outbound shipment orders
+title: Example of using inbound and outbound shipment orders (preview)
 description: This article provides an example scenario that shows how to create inbound and outbound shipment orders. 
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Example of using inbound and outbound shipment orders
+# Example of using inbound and outbound shipment orders (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

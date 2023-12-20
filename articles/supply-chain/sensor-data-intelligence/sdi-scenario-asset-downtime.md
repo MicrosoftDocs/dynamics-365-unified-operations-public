@@ -1,5 +1,5 @@
 ---
-title: Asset downtime scenario
+title: Asset downtime scenario (preview)
 description: This article describes the asset downtime scenario, which lets you use sensor data to monitor the availability of your assets.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Asset downtime scenario
+# Asset downtime scenario (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

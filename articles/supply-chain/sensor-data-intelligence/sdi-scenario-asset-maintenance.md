@@ -1,5 +1,5 @@
 ---
-title: Asset maintenance scenario
+title: Asset maintenance scenario (preview)
 description: This article describes the asset maintenance scenario, which lets you use sensor data to create counter records that track the use of a machine asset.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Asset maintenance scenario
+# Asset maintenance scenario (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

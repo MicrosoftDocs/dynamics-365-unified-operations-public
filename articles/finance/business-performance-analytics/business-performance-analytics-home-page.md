@@ -51,7 +51,9 @@ A Tier-2 environment (multi-box) is required to preview business performance ana
 
 ### Version requirements
 
-Business performance analytics requires Dynamics 365 Finance version 10.0.35 and PU59 and later and the selected language to be en-US.
+Business performance analytics requires Dynamics 365 Finance version 10.0.37 and PU61 and later and the selected language must be en-us.
+The minimum recommended platform build for PU61 for Dynamics 365 Finance is 7.0.7068.78
+
 
 ## Set up business performance analytics
 
