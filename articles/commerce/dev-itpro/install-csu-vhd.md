@@ -42,7 +42,7 @@ To obtain a copy of a previously created SSL certificate to add to the Azure Web
 1. Enter "MMC" to open the Microsoft Management Console.  
 1. Select **File > Add/Remove Snap-in**.
 1. Under **Available snap-ins**, select **Certificates**, and then select **Add**.
-1. In the **Certificates snap-in** dialof box, select **Computer Account**, and then select **Next**.
+1. In the **Certificates snap-in** dialog box, select **Computer Account**, and then select **Next**.
 1. Select **Local Computer**, and then select **Finish**. 
 1. Select **OK**.  
 1. Expand **Certificates \> Personal > Certificates**.  
@@ -68,7 +68,7 @@ To add the SSL certificate to the existing CSU Azure application, follow these s
 	
 ## Update Commerce headquarters
 
-After creating the above App, the following changes need to be made inside Commerce headquarters:  
+After you create the app, you must make the following changes in Commerce headquarters:  
 
 1. The application ID (client ID) must be entered in Commerce headquarters for the installation to succeed. Go to System administration > Setup > Azure Active Directory applications (Microsoft Entra ID Applications). Enter the application ID (client ID) in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.  
 
@@ -78,7 +78,7 @@ After creating the above App, the following changes need to be made inside Comme
 		- Channel Database ID = DevSealedCSU  
 		- Channel Database Group = Default  
 	C. Select Save.  
-	D. Expand the Retail Channel Fast tab.  
+	D. Expand the Retail Channel FastTab.  
 	E. Select Add.  
 	F. Select the Store you normally work with.  
 	G. Select Save.  
@@ -92,7 +92,7 @@ After creating the above App, the following changes need to be made inside Comme
 		C. Name = DevSealedCSUProfile.  
 		D. Select Save. 
 		E. Under Profile Properties – Select Add.  
-		F. For non-external VM connectivity set the following:  
+		F. For nonexternal VM connectivity set the following:  
                    - Property Key: Property value  
                    - Retail Server URL:`https://<HostName>:446/RetailServer/Commerce`  
                    - Cloud POS URL: `https://<HostName>:446/POS`  
@@ -102,7 +102,7 @@ After creating the above App, the following changes need to be made inside Comme
 		J. Update Channel Profile = DevSealedCSUProfile.  
 		K. Select Save.  
 			> [!NOTE]
-                        > You may get a warning about “The store’s Closing method must be set to ‘shift’.   If you receive this expand the Statement/Closing fast tab on the store > Change the Closing Method field to "Shift".  
+                        > If you get a warning saying "The store's closing method must be set to 'Shift'", on the **Statement/Closing** FastTab of the store, update the **Closing Method** value to **Shift**.  
 4. Update CDX Data Groups.
 	       L. Go to > Retail and Commerce > Distribution Schedule.
                M. Select the Default Data group.
@@ -115,7 +115,7 @@ After creating the above App, the following changes need to be made inside Comme
    D. Select Yes to all the warning.  
    E. Select OK to schedule the job.  
 
-## Install Sealed CSU Pre-requisites
+## Install Sealed CSU Prerequisites
 
 1. Install .NET Core hosting bundle on DEV VM.
     A. RDP into the Dev box.
@@ -136,20 +136,20 @@ After creating the above App, the following changes need to be made inside Comme
 
 ## Install the Sealed CSU
 
-We are going to use the below syntax to install the Sealed-CSU on the VHD image.   Since this is a Dev box, we will use the same SSL thumbprint to run all services. For Production/UAT systems these values should be different.   
+We're going to use the syntax below to install the Sealed-CSU on the VHD image. Since this is a Dev box, we'll use the same SSL thumbprint to run all services. For Production/UAT systems these values should be different.   
 
 `CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "< SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
 
 ## Database Restores from UAT
 
-If you previous setup a sealed CSU using the above steps and then restored a database from another environment, you will need to perform the following actions to make the Sealed CSU functional again. 
+If you previously set up a sealed CSU using the steps above and then restored a database from another environment, you much perform the following actions to make the sealed CSU functional again. 
 
 1. Go through the steps in the **Update Commerce headquarters** section again to recreate the records. 
     > [!NOTE]
-    > Make sure you use the same values for Channel Database ID and Channel Profile. If these values are different than the previous install you will need to re-run the installer. 
+    > Make sure you use the same values for Channel Database ID and Channel Profile. If these values are different than the previous install, you must rerun the installer. 
 2. Check your download sessions to see if the jobs are applying. 
-    - If the jobs are applying, then your CSU is working and you don't need to re-run the installer steps.
-    - If the download jobs are not applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the Channel DB form and re-run the CSU installer using the new configuration file.  
+    - If the jobs are applying, then your CSU is working and you don't need to rerun the installer steps.
+    - If the download jobs aren't applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the Channel DB form and rerun the CSU installer using the new configuration file.  
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
