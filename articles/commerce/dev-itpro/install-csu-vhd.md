@@ -25,7 +25,7 @@ First, you must create two Azure Active Directory (Azure AD) apps, one for CSU a
 
 To create an SSL certificate for a website based on the host name, follow these steps.
 
-1. Remote Desktop Protocol (RDP) into box.
+1. Connect to the development machine using Remote Desktop Protocol (RDP).
 1. Open Internet Information Services (IIS) Manager.
 1. Select **Create a Self-Signed Certificate**.
 1. Copy the thumbprint value of the new certificate to use later.
@@ -57,14 +57,14 @@ To obtain a copy of a previously created SSL certificate to add to the Azure Web
 
 To add the SSL certificate to the existing CSU Azure application, follow these steps.
 
-1. In the web browser on the VM, Edit the CSU Azure App registration created at the start of this article.
-2. On the Client Credentials field > Select Add a certificate or secret. 
-3. Select on the Certificates tab.
-4. Select Upload Certificate.
-5. Select the DevBoxSelfSigned certificate  from c:\temp.
-6. Description = Devbox cert.
-7. Set Description = Devbox Self-signed Certificate.
-8. Select Add.
+1. In a web browser on the virtual machine (VM), edit the CSU Azure App registration created earlier.
+1. For **Client Credentials**, select **Add a certificate or secret**. 
+1. Select the **Certificates** tab.
+1. Select **Upload Certificate**.
+1. From C:\temp, select the **DevBoxSelfSigned** certificate.
+1. For **Description**, enter "Devbox cert".
+1. For **Set Description**, enter "Devbox Self-signed Certificate".
+1. Select **Add**.
 	
 ## Update Commerce headquarters
 
@@ -138,24 +138,30 @@ To execute sync jobs, follow these steps.
 1. For each warning, select **Yes**.  
 1. Select **OK** to schedule the job.  
 
-## Install Sealed CSU prerequisites
+## Install sealed CSU prerequisites
 
-1. Install .NET Core hosting bundle on DEV VM.
-    A. RDP into the Dev box.
-    B. Open a web browser and go to this site Download .NET 6.0 (Linux, macOS, and Windows) (microsoft.com).
-    C. Under ASP.Net Core Runtime 6.0.X  section > Select the Hosting Bundle link for Windows.
-    D. Run the Dotnet-hosting installer.
-2. Download Sealed Self-hosted installer from LCS to the Dev VM, and copy configuration file.
-    A. Open a web browser and go to LCS.dynamics.com.
-    B. Select your Project from the list.
-    C. On the top of the screen click the three dashes > Select Asset Library.
-    D. Select Retail Self-service package.  
-    E. If you already have a sealed CSU installer in your list, click the package name to start the download.  
-        i. If you don’t have a sealed installer in the list, click Import.
-        ii. Select the Sealed Installer version you want to use. 
-        iii. Select Pick.
-        iv. Then follow the step above to download the installer file.
-    F. Copy the sealed installer from the Downloads folder to C:\temp.
+To install sealed CSU prerequisites, complete the following steps.
+
+### Install .NET Core hosting bundle on the development VM
+
+To install .NET Core hosting bundle on the development VM, follow these steps.
+
+1. Connect to the development machine using Remote Desktop Protocol (RDP).
+1. Open a web browser and go to [Download .NET 6.0 (Linux, macOS, and Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
+1. In the **ASP.Net Core Runtime 6.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
+1. Run the **dotnet-hosting-6.0.x-win.exe** installer.
+
+### Download the sealed self-hosted installer to the development VM and copy the configuration file
+
+To download the sealed self-hosted installer to the development VM and copy the configuration file, follow these steps.
+
+1. Open a web browser and sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
+1. Select your project from the list.
+1. From the hamburger menu at the top of the page, select **Asset library**.
+1. Select **Retail Self-service package**.  
+1. If you already have a sealed CSU installer in your list, select the package name to start the download.  
+1. If you don’t have a CSU sealed installer in the list, select **Import**, select the sealed installer version you want to use, select **Pick**, and then select the package name to start the download. 
+1. Copy the sealed installer from the **Downloads** folder to C:\temp.
 
 ## Install the Sealed CSU
 
