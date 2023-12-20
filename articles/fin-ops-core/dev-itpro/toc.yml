@@ -1826,6 +1826,8 @@ items:
           href: sysadmin/enhanced-forms.md
         - name: Clean up the batch history
           href: sysadmin/batch-history-cleanup.md
+        - name: Clean up the batch job table
+          href: sysadmin/batch-job-cleanup.md
         - name: Cancel an executing batch job
           href: sysadmin/batch-abort.md
         - name: Batch OData API
