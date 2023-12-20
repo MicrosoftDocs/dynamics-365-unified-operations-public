@@ -25,7 +25,7 @@ ms.dyn365.ops.version: App 10.0.38
 
 ---
 
-# Paraguayoverview
+# Columbia overview
 
 [!include [banner](../../includes/banner.md)]
 
