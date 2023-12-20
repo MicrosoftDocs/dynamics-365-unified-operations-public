@@ -84,14 +84,14 @@ The following setup is required in the Dynamics 365 Finance before you can insta
 
     1. Go to **System administration \> License configuration**.
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
-    3. Ensure that the following checkboxes are enabled
-       a. **General ledger** - **Budget**, **Reversing entries**, **Sales tax**
-       b. **Fixed assets**
-       c. **Bank**
-       d. **Trade**
-       e. **Trade agreements**
-       f. **Project**
-       g. **Procurement 1**
+    3. Confirm that the following checkboxes are enabled:
+        - **General ledger** - **Budget**, **Reversing entries**, **Sales tax**
+        - **Fixed assets**
+        - **Bank**
+        - **Trade**
+        - **Trade agreements**
+        - **Project**
+        - **Procurement 1**
        
 3. When you've finished, disable maintenance mode.
 
