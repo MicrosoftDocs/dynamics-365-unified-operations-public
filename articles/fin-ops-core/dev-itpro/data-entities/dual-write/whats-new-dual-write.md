@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 11/16/2023
+ms.date: 12/16/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -82,7 +82,7 @@ The October release of Dual-write GAB solution 3.5.1.135 contains the following 
 
 | Feature | Description | Status |
 | ---|---|---|
-|Bug fix | Address primary flag removed in Customer experience when adding contacts	|General availability |
+|Bug fix | Address primary flag removed in Customer experience when adding contacts.	|General availability |
 
 ### Solution details
 
