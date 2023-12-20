@@ -28,6 +28,22 @@ Release notes for the December 2023 release of [Dual-write core solution](https:
 | Bug fix | 3603874 | Fix for custom date field transformation from Dataverse to finance and operations apps environment during live sync. The GetTransformedValue method in the dual-write plugin returns a null value for unrecognized transform types instead of the passed in values. | General availability |
 | Optimization | N/A | Minor security improvements and updates | General availability | 
 
+The December release of Dual-write GAB solution 3.5.2.2 contains the following bug fixes.
+| Feature | Description | Status |
+| ---|---|---|
+|Bug fix |	Dual-write initial sync creates multiple active postal addresses on the same location id.|	General availability|
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.1.136 | 3.5.2.2 |
+| Dynamics365GABExtended | Yes | 3.5.1.136 | 3.5.2.2 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.136 | 3.5.2.2 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.1.136 | 3.5.2.2 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.136 | 3.5.2.2 |
+
+
 ## November 2023 
 The November release of Dual-write Supply Chain solution 2.3.4.265 contains the following bug fixes.
 
