@@ -165,20 +165,20 @@ To download the sealed self-hosted installer to the development VM and copy the 
 
 ## Install the Sealed CSU
 
-We're going to use the syntax below to install the Sealed-CSU on the VHD image. Since this is a Dev box, we'll use the same SSL thumbprint to run all services. For Production/UAT systems these values should be different.   
+To install the Sealed CSU on the VHD image, use the syntax provided below. Since this is a development box, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
 
 `CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "< SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
 
-## Database Restores from UAT
+## Database restores from UAT
 
-If you previously set up a sealed CSU using the steps above and then restored a database from another environment, you much perform the following actions to make the sealed CSU functional again. 
+If you previously set up a sealed CSU using the steps above and then restored a database from another environment, you must perform the following steps to make the sealed CSU functional again. 
 
-1. Go through the steps in the **Update Commerce headquarters** section again to recreate the records. 
+1. Go through the steps in [Update Commerce headquarters](#[update-commerce-headquarter) to recreate the records. 
     > [!NOTE]
-    > Make sure you use the same values for Channel Database ID and Channel Profile. If these values are different than the previous install, you must rerun the installer. 
+    > You must use the same values for **Channel Database ID** and **Channel Profile** that you used in the previous installation. If these values are different than the previous installation, you must rerun the installer. 
 2. Check your download sessions to see if the jobs are applying. 
     - If the jobs are applying, then your CSU is working and you don't need to rerun the installer steps.
-    - If the download jobs aren't applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the Channel DB form and rerun the CSU installer using the new configuration file.  
+    - If the download jobs aren't applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the channel database form and rerun the CSU installer using the new configuration file.  
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
