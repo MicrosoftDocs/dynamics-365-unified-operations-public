@@ -3,16 +3,17 @@ title: Configure sales and purchase invoices for Colombia
 description: This article explains how to configure sales and purchase invoices for a company in Colombia.
 author: Cpicon85
 ms.date: 12/08/2023
-ms.topic: Article
+ms.topic: how-to
 ms.reviewer: kfend
 ms.author: v-cpicon
 ms.custom: bap-template
 ---
 
 # Configure sales and purchase invoices for Colombia
+
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to use fiscal documents that are specific to Colombia through the Latin American (LATAM) features in purchase and sales transactions. An invoice is represented by a **document class** instead of an invoice transaction, and by all the information that a fiscal invoice document contains and can be related to. This information includes the typification, sales point, branch, invoice number structure, and additional fields that should be completed during posting.
+This article explains how to use fiscal documents that are specific to Colombia through the Latin American (LATAM) features in purchase and sales transactions. An invoice is represented by a **document class** instead of an invoice transaction, and by all the information that a fiscal invoice document contains and can be related to. This information includes the typification, sales point, branch, invoice number structure, and additional fields that are completed during posting.
 
 ## Sales invoice configuration
 
@@ -29,11 +30,11 @@ Configure the following pages for use in future sales transactions:
 Follow these steps to complete the configuration.
 
 1. Create the **document class types** that represent the fiscal documents to use in future transactions. Examples include invoices, credit notes, debit notes, and packing slips. For more information, see [Document class type for Latin America](ltm-core-document-class-type.md).
-2. Create at least one **sales point** to use in the document classes numeration. This sales point should match the document mask of the document class that it will be assigned to. For more information, see [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md).
+2. Create at least one **sales point** to use in the document classes numeration. This sales point should match the document mask of the document class that it is assigned to. For more information, see [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md).
 3. Create the **document classes** that are required for the commercial activity of the company according to the Colombian fiscal requirements.
 4. Set the **document mask** with the required number of characters for the sales point and the document number. Set the entry to automatic, assignment before post, and mandatory for both the prefix and the document number. For more information, see [Document classes for Latin America](ltm-core-document-class.md).
 5. Create a **document class sales point** in every document class that belongs to the company. On the **Document class point** page, select a sale point and a number sequence. The length of the sales point prefix must match the length of the document mask prefix, and the length of the number sequence must match the length of the document mask. For more information, see [Document class sales point for Latin America](ltm-core-document-class-sales-point.md).
-6. Create a **customer set**, and add the document classes you created in the previous steps. The customer set contains the document classes that can be used in a customer transaction when it's assigned to its LATAM configuration. For more information, see [Customer sets for Latin America](ltm-core-customers-set.md).
+6. Create a **customer set** and add the document classes you created in the previous steps. The customer set contains the document classes that can be used in a customer transaction when it's assigned to its LATAM configuration. For more information, see [Customer sets for Latin America](ltm-core-customers-set.md).
 
 ## Vendor invoice configuration
 
