@@ -2254,6 +2254,32 @@
             href: localizations/china/apac-chn-tax-integration-vat-customer-invoices.md   
           - name: GB/T 24589-2010 export
             href: localizations/china/apac-chn-gbt-24589-2010.md
+        - name: Columbia
+          items:
+          - name: Columbia overview
+            href: localizations/iberoamerica/columbia.md
+          - name: Configure sales and purchase invoices for Colombia
+            href: localizations/iberoamerica/ltm-configure-invoices-colombia.md
+          - name: Create customer and vendor records with an address in Colombia
+            href: localizations/iberoamerica/ltm-create-customer-vendor-colombia.md
+          - name: Format 1001 file for Colombia issue configuration
+            href: localizations/iberoamerica/ltm-Colombia-format-1001.md
+          - name: Format 1003 file for Colombia configuration
+            href: localizations/iberoamerica/ltm-Colombia-format-1003.md
+          - name: Format 1005 file for Colombia configuration
+            href: localizations/iberoamerica/ltm-Colombia-format-1005.md
+          - name: Format 1006 file for Colombia configuration
+            href: localizations/iberoamerica/ltm-Colombia-format-1006.md
+          - name: Format 1007 file for Colombia configuration
+            href: localizations/iberoamerica/ltm-Colombia-format-1007.md
+          - name: Format 1008 file for Colombia configuration
+            href: localizations/iberoamerica/ltm-Colombia-format-1008.md
+          - name: Format 1009 file for Colombia configuration
+            href: localizations/iberoamerica/ltm-Colombia-foramt-1009.md
+          - name: Format 1012 file for Colombia configuration
+            href: localizations/iberoamerica/ltm-Colombia-format-1012.md
+          - name: Set up legal entity and tax information for Colombia
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-colombia.md
         - name: Costa Rica
           items:
           - name: Costa Rica overview
@@ -2640,6 +2666,16 @@
             href: localizations/germany/emea-deu-print-separate-label-credit-memo-originating-sales.md
           - name: EU sales list
             href: localizations/germany/emea-deu-eu-sales-list.md
+        - name: Guatemala
+          items: 
+          - name: Guatemala overview
+            href: localizations/iberoamerica/guatemala.md
+          - name: Configure sales and purchase invoices for Guatemala
+            href: localizations/iberoamerica/ltm-configure-invoices-guatemala.md
+          - name: Create customer and vendor records with an address in Guatemala
+            href: localizations/iberoamerica/ltm-create-customer-vendor-guatemala.md
+          - name: Set up a legal entity and tax information for Guatemala
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-guatemala.md
         - name: Hungary
           items:
           - name: Hungary overview
@@ -3582,6 +3618,16 @@
             href: localizations/iberoamerica/ltm-create-customer-vendor-panama.md
           - name: Configure sales and purchase invoices for Panama
             href: localizations/iberoamerica/ltm-configure-invoices-panama.md
+        - name: Paraguay
+          items: 
+          - name: Paraguay overview
+            href: localizations/iberoamerica/paraguay.md
+          - name: Configure sales and purchase invoices for Paraguay
+            href: localizations/iberoamerica/ltm-configure-invoices-paraguay.md
+          - name: Create customer and vendor records with an address in Paraguay
+            href: localizations/iberoamerica/ltm-create-customer-vendor-paraguay.md
+          - name: Set up a legal entity and tax information for Paraguay
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-paraguay.md
         - name: Poland
           items:
           - name: Poland overview
@@ -4076,6 +4122,16 @@
             href: localizations/usa/noam-usa-form-1099-public-sector.md
           - name: Set up vendors for 1099 reporting
             href: localizations/usa/noam-usa-set-up-vndrs-1099-rprtg.md
+        - name: Uruguay
+          items:
+          - name: Uruguay overview
+            href: localizations/iberoamerica/uruguay.md
+          - name: Configure sales and purchase invoices for Uruguay
+            herf: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
+          - name: Create customer and vendor records with an address in Uruguay
+            href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
+          - name: Set up a legal entity and tax information for Uruguay
+            href: localizations/ltm-set-up-legal-entity-tax-uruguay.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
