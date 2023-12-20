@@ -79,8 +79,8 @@ After creating the above App, the following changes need to be made inside Comme
                M. Select the Default Data group
                N. Remove the Default database record from this group  (this will no longer be used)
 		
-4. Execute Sync jobs
-   A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule   
+4. Execute Sync jobs  
+	A. Go to Retail and Commerce > Retail and Commerce IT > Distribution Schedule   
    B. Select the 9999 job  
    C. Click Run now  
    D. Click Yes to all the warning  
