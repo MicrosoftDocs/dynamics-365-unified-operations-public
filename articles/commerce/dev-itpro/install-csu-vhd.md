@@ -83,9 +83,9 @@ To enter the application ID (client ID) in headquarters, follow these steps.
 
 ### Create a new channel database record
 
-To create a new channel database record, follow these steps.
+To create a new channel database record in headquarters, follow these steps.
 
-1. In headquarters, go to **Retail and Commerce \> Headquarters Setup \> Commerce Scheduler \> Channel Database**.  
+1. Go to **Retail and Commerce \> Headquarters Setup \> Commerce Scheduler \> Channel Database**.  
 1. Select **New**. 
 1. For **Channel Database ID**, enter "DevSealedCSU".  
 1. For **Channel Database Group**, enter "Default".  
@@ -100,9 +100,9 @@ To create a new channel database record, follow these steps.
 
 ### Create a new channel profile  	
 
-To create a new channel profile, follow these steps.
+To create a new channel profile in headquarters, follow these steps.
 
-1. In headquarters, go to **Retail and Commerce \> Channel Setup \> Channel Profiles**.  
+1. Go to **Retail and Commerce \> Channel Setup \> Channel Profiles**.  
 1. Select **New**. 
 1. For **Name**, enter "DevSealedCSUProfile".  
 1. Select **Save**. 
@@ -122,17 +122,17 @@ To create a new channel profile, follow these steps.
 
 ### Update CDX data groups
 
-To update Commerce Data Exchange (CDX) data groups, follow these steps.
+To update Commerce Data Exchange (CDX) data groups in headquarters, follow these steps.
 
-1. In headquarters, go to **Retail and Commerce \> Distribution Schedule**.
+1. Go to **Retail and Commerce \> Distribution Schedule**.
 1. Select the **Default Data** group.
 1. Remove the default database record from this group, which prevents future errors when trying to replicate to this database.
 		
 ### Execute sync jobs 
 
-To execute sync jobs, follow these steps.
+To execute sync jobs in headquarters, follow these steps.
 
-1. In headquarters, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule**.   
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule**.   
 1. Select the **9999** job.  
 1. Select **Run now**.  
 1. For each warning, select **Yes**.  
