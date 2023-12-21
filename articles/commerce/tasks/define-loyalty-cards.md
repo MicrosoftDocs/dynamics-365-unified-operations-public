@@ -54,7 +54,7 @@ The **Active** checkmark is calculated automatically based on today's date. For 
 
 Once a loyalty tier is granted for a loyalty card, the future loyalty tier calculation only includes loyalty points earned after the grant date. 
 
-For example, if a loyalty card is granted a "Diamond" tier on 11/01/2023 that is valid from 11/01/2023 to 11/01/2024, and the loyalty card then makes another transaction on 11/10/2023, this triggers the tier calculation again. For the 11/10/2023 tier calculation, the system only includes points earned between 11/01/2023 and 11/10/2023. If the total points don't meet the Diamond tier value threshold, the loyalty card's Diamond tier date range will stay the same. If the total points meet the Diamond tier value threshold again, then the loyalty card's Diamond tier grant date becomes 11/10/2024 and the Diamond tier is now valid until 11/10/2024.
+For example, if a loyalty card is granted a Diamond tier on 11/01/2023 that is valid from 11/01/2023 to 11/01/2024, and the loyalty card then makes another transaction on 11/10/2023, this triggers the tier calculation again. For the 11/10/2023 tier calculation, the system only includes points earned between 11/01/2023 and 11/10/2023. If the total points don't meet the Diamond tier value threshold, the loyalty card's Diamond tier date range remains the same. If the total points meet the Diamond tier value threshold again, then the loyalty card's Diamond tier grant date becomes 11/10/2024 and the Diamond tier is now valid until 11/10/2024.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
