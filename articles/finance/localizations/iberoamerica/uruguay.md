@@ -30,7 +30,7 @@ ms.dyn365.ops.version: App 10.0.38
 [!include [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Uruguay.
-- [Configure sales and purchase invoices for Uruguay[(ltm-configure-invoices-uruguay.md)
+- [Configure sales and purchase invoices for Uruguay](ltm-configure-invoices-uruguay.md)
 - [Create customer and vendor records with an address in Uruguay](ltm-create-customer-vendor-uruguay.md)
 - [Set up a legal entity and tax information for Uruguay](ltm-set-up-legal-entity-tax-uruguay.md)
   
