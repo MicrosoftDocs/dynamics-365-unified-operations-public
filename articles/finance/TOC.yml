@@ -2257,7 +2257,7 @@
         - name: Colombia
           items:
           - name: Colombia overview
-            href: localizations/iberoamerica/columbia.md
+            href: localizations/iberoamerica/colombia.md
           - name: Configure sales and purchase invoices for Colombia
             href: localizations/iberoamerica/ltm-configure-invoices-colombia.md
           - name: Create customer and vendor records with an address in Colombia
