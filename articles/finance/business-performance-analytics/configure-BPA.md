@@ -6,7 +6,7 @@ description: This article describes how to configure business performance analyt
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 11/02/2023
+ms.date: 12/20/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
@@ -84,8 +84,15 @@ The following setup is required in the Dynamics 365 Finance before you can insta
 
     1. Go to **System administration \> License configuration**.
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
-    3. In **General ledger**, confirm that **Budget** and **Reversing entries** are enabled. If they aren't, select the checkboxes.
-
+    3. Confirm that the following checkboxes are enabled:
+        - **General ledger** - **Budget**, **Reversing entries**, **Sales tax**
+        - **Fixed assets**
+        - **Bank**
+        - **Trade**
+        - **Trade agreements**
+        - **Project**
+        - **Procurement 1**
+       
 3. When you've finished, disable maintenance mode.
 
 ## Required configurations in Power Platform Admin Center
