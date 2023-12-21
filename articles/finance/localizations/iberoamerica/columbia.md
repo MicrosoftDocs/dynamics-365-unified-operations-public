@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Columbia overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Columbia. 
+title: Colombia overview
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Colombia. 
 author: kfend
 ms.date: 10/31/2023
 ms.topic: overview
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 
-ms.search.region: Columbia
+ms.search.region: Colombia
 # ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2023-10-20
@@ -25,11 +25,11 @@ ms.dyn365.ops.version: App 10.0.38
 
 ---
 
-# Columbia overview
+# Colombia overview
 
 [!include [banner](../../includes/banner.md)]
 
-This article includes information and links to resources that can help you set up legal entities with a primary address in Columbia.
+This article includes information and links to resources that can help you set up legal entities with a primary address in Colombia.
 - [Configure sales and purchase invoices for Colombia](ltm-configure-invoices-colombia.md)
 - [Create customer and vendor records with an address in Colombia](/ltm-create-customer-vendor-colombia.md)
 - [Format 1001 file for Colombia issue configuration](ltm-Colombia-format-1001.md)
