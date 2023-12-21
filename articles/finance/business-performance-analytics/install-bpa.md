@@ -6,7 +6,7 @@ description: This article describes how to install business performance analytic
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 07/20/2023
+ms.date: 12/12/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
@@ -32,6 +32,11 @@ Before installing business performance analytics, complete the following [steps]
 4. [Required configurations in Dynamics 365 Finance](configure-bpa.md#required-configurations-in-dynamics-365-finance)
 5. [Required configurations in Power Platform Admin Center](configure-bpa.md#required-configurations-in-power-platform-admin-center)
 6. Request the [install link](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2V_9HFL4cRGtih_PMMDw1dUMFZHOUlUNlpVN1c4V1VJM0RNNlk2UkQ1MC4u)
+
+
+>[!Important]
+>Always deploy environments using an unnamed account. This account must be from the customer domain, such as dynadmin@customer.com or dynadmin@customer.onmicrosoft.com. We strongly recommend using the same dedicated environment admin account on all environments. This avoids situations where an individual admin user leaving the organization disrupts administration operations in the business performance analytics app. 
+
 
 To install business performance analytics, follow these steps. 
 

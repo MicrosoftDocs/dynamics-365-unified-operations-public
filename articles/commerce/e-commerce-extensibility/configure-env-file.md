@@ -111,7 +111,7 @@ The **MSDyn365Commerce\_BASEURL** variable defines the URL of the Microsoft Dyna
 The following example shows the syntax for this variable.
 
 ```text
-MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com
+MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com/
 ```
 
 ## MSDyn365Commerce\_OUN

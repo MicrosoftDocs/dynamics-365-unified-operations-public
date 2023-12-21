@@ -34,4 +34,3 @@ To enable generative help and guidance with Copilot in finance and operations ap
 
 In the [**Feature management**](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *(Preview) User experience for Copilot in Finance and Operations*.
 
-[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
