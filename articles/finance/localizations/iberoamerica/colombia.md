@@ -31,7 +31,7 @@ ms.dyn365.ops.version: App 10.0.38
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Colombia.
 - [Configure sales and purchase invoices for Colombia](ltm-configure-invoices-colombia.md)
-- [Create customer and vendor records with an address in Colombia](/ltm-create-customer-vendor-colombia.md)
+- [Create customer and vendor records with an address in Colombia](ltm-create-customer-vendor-colombia.md)
 - [Format 1001 file for Colombia issue configuration](ltm-Colombia-format-1001.md)
 - [Format 1003 file for Colombia configuration](ltm-Colombia-format-1003.md)
 - [Format 1005 file for Colombia configuration](ltm-Colombia-format-1005.md)
