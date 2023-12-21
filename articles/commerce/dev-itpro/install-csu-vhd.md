@@ -1,6 +1,6 @@
 ---
-title: Install Commerce Scale Unit on a virtual hard disk
-description: This article explains how to install Commerce Scale Unit on a virtual hard disk for Microsoft Dynamics 365 Commerce development.
+title: Install Commerce Scale Unit on a development environment
+description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
 ms.date: 12/21/2023
 ms.topic: article
@@ -11,11 +11,11 @@ ms.author: brstor
 ms.search.validFrom: 2022-03-01
 ---
 
-# Install Commerce Scale Unit on a virtual hard disk
+# Install Commerce Scale Unit on a development environment
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to install Commerce Scale Unit (CSU) on a virtual hard disk (VHD) for Microsoft Dynamics 365 Commerce development.
+This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce. 
 
 ## Create Azure Active Directory apps
 
@@ -38,7 +38,7 @@ To install IIS components on the development machine, go to **Server Manager \> 
 
 To obtain a copy of a previously created SSL certificate to add to the Azure Web App, follow these steps.
 
-1. Select the Windows logo key + R to open the **Run** dialog box.  
+1. On the development machine, select the Windows logo key + R to open the **Run** dialog box.  
 1. Enter "MMC" to open the Microsoft Management Console.  
 1. Select **File > Add/Remove Snap-in**.
 1. Under **Available snap-ins**, select **Certificates**, and then select **Add**.
@@ -142,18 +142,18 @@ To execute sync jobs in headquarters, follow these steps.
 
 To install sealed CSU prerequisites, complete the following steps.
 
-### Install .NET Core hosting bundle on the development VM
+### Install .NET Core hosting bundle on the development machine
 
-To install .NET Core hosting bundle on the development VM, follow these steps.
+To install .NET Core hosting bundle on the development machine, follow these steps.
 
 1. Connect to the development machine using Remote Desktop Protocol (RDP).
 1. Open a web browser and go to [Download .NET 6.0 (Linux, macOS, and Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0).
 1. In the **ASP.Net Core Runtime 6.0.X** section, select the **Hosting Bundle** installer for Windows to download it.
 1. Run the **dotnet-hosting-6.0.x-win.exe** installer.
 
-### Download the sealed self-hosted installer to the development VM and copy the configuration file
+### Download the sealed self-hosted installer to the development machine and copy the configuration file
 
-To download the sealed self-hosted installer to the development VM and copy the configuration file, follow these steps.
+To download the sealed self-hosted installer to the development machine and copy the configuration file, follow these steps.
 
 1. Open a web browser on the development machine and sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
 1. Select your project from the list.
@@ -165,7 +165,14 @@ To download the sealed self-hosted installer to the development VM and copy the 
 
 ## Install the sealed CSU
 
-To install the sealed CSU on the VHD image, use the syntax provided below. Since this is a development machine, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
+> [!NOTE]
+> Since this is a development machine, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
+
+To install the sealed CSU on the development machine, follow these steps.
+
+1. Open a Windows Command Prompt with administrator privileges.
+1. Change directory to C:\temp (for example, `CD C:\temp`).
+1. Execute the following command.
 
 `CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
 
@@ -179,6 +186,57 @@ If you previously set up a sealed CSU using the steps above and then restored a 
 2. Check your download sessions to see if the jobs are applying. 
     - If the jobs are applying, then your CSU is working and you don't need to rerun the installer steps.
     - If the download jobs aren't applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the channel database form and rerun the CSU installer using the new configuration file.  
+
+## Additional steps for cloud (LCS) deployed development environments 
+
+To make the development environment accessible from outside the development VM, you must perform the following additional tasks. 
+
+> [!NOTE]
+> External accessible redirection has only been tested with Commerce version 10.0.37 and earlier. Support for this functionality is retired in newer versions with the removal of the legacy (default) Retail Server. 
+
+### Create a channel profile for external access
+
+Create a channel profile for external access, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce \> Channel Setup \> Channel Profiles** and create a new channel profile.
+1. Set the following property values: 
+    1. For **Retail Server URL**, enter `https://<LCSEnvironmentName>devret.axcloud.dynamics.com/RetailServer/Commerce`.
+    1. For **Cloud POS**, enter `https://<LCSEnvironmentName>devret.axcloud.dynamics.com/POS`.	
+1. Select **Save**.
+1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.
+1. Edit the store record you normally work with. 
+1. Update the **Channel Profile** to the value you just created.
+1. Select **Save**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule** and execute the **1070 (Channel configuration)** sync job.
+
+### Update IIS binding for website
+
+To update the IIS binding for the website, follow these steps.
+
+1. Connect to the development machine using Remote Desktop Protocol (RDP).
+1. Open IIS Manager and expand **Sites**.
+1. Select the **RetailServer** website.
+1. On the right side of the screen, select **Bindings**.
+1. Select the **HTTPS** binding, and then select **Edit**.
+1. Set the **Port** value to "444".
+1. For **Host name**, copy the entire URL string value for use later, and then delete the value.
+1. Select **OK**.
+1. Select **Close**.
+1. Select the **RetailStoreScaleUnitWebsite.AspNetCore** website.
+1. On the right side of the screen, select **Bindings**.
+1. Select the **HTTPS** binding, and then select **Edit**.
+1. Set the **Port** value to "443".
+1. For **Host name**, enter the **Host name** URL string value you copied earlier.
+1. For **SSL Certificate**, select the downward arrow.
+1. Select the SSL certificate that ends in `<LCS name>devaos.axcloud.dynamics.com`.
+1. Select **OK**.
+1. Select **Close**.
+
+
+
+
+
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
