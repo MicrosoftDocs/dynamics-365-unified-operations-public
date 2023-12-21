@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a virtual hard disk
 description: This article explains how to install Commerce Scale Unit on a virtual hard disk for Microsoft Dynamics 365 Commerce development.
 author: bstorie
-ms.date: 12/20/2023
+ms.date: 12/21/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -28,11 +28,11 @@ To create an SSL certificate for a website based on the host name, follow these 
 1. Connect to the development machine using Remote Desktop Protocol (RDP).
 1. Open Internet Information Services (IIS) Manager.
 1. Select **Create a Self-Signed Certificate**.
-1. Copy the thumbprint value of the new certificate to use later.
+1. Copy the thumbprint value of the new certificate for use later.
 
 ## Install IIS components
 
-To install II components, go to **Server Manager \> Local Server \> Manage \> Add roles and features**. Under **IIS**, confirm that the **Management Tools \> IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)** component is checked.
+To install IIS components on the development machine, go to **Server Manager \> Local Server \> Manage \> Add roles and features**. Under **IIS**, confirm that the **Management Tools \> IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)** component is checked.
 
 ## Obtain a copy of a previously created SSL certificate to add to the Azure Web App
 
@@ -53,7 +53,7 @@ To obtain a copy of a previously created SSL certificate to add to the Azure Web
 1. Select the C:\temp folder, and then enter "DevBoxSelfSigned" as the file name.  
 1. Select **OK**, and then select **Save**.  
 	
-## Add SSL Certificate to the existing CSU Azure Application
+## Add SSL certificate to the existing CSU Azure application
 
 To add the SSL certificate to the existing CSU Azure application, follow these steps.
 
@@ -68,7 +68,7 @@ To add the SSL certificate to the existing CSU Azure application, follow these s
 	
 ## Update Commerce headquarters
 
-After you create the app, you must make the following changes in Commerce headquarters. 
+After you create the app, you must make the following updates in Commerce headquarters. 
 
 ### Enter the application ID
 
@@ -165,9 +165,9 @@ To download the sealed self-hosted installer to the development VM and copy the 
 
 ## Install the Sealed CSU
 
-To install the Sealed CSU on the VHD image, use the syntax provided below. Since this is a development box, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
+To install the Sealed CSU on the VHD image, use the syntax provided below. Since this is a development machine, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
 
-`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "< SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
+`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
 
 ## Database restores from UAT
 
