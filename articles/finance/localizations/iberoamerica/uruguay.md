@@ -4,7 +4,7 @@
 title: Uruguay overview
 description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Uruguay. 
 author: kfend
-ms.date: 12/20/2023
+ms.date: 12/21/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
