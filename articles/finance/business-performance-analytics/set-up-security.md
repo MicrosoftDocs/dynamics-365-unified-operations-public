@@ -46,7 +46,7 @@ Dimension security lets admins control which data is visible on a report. The pr
 2. **Set up dimension groups.** You can create dimension groups only after step 1 is completed. A dimension group filters report data so that only the filtered values in a given dimension attribute are visible to users who are assigned that dimension group. You can assign one or more dimension groups to a user to control what data is visible on a report. At least one dimension group must be assigned to each user.
 
 >[!Important]
->You can only apply dimension security across facts that reference that dimension group. However, business performance analytics only makes one dataset available. This means a user can create a link between tables that can't be secured through dimension groups if those tables don't have any dimensions referenced in the dimension groups. 
+>You can only apply dimension security across facts that reference that dimension group. However, only one dataset is available in business performance analytics. This means a user can create a link between tables that can't be secured through dimension groups if those tables don't have any dimensions referenced in the dimension groups. 
 
 
 > [!NOTE]
