@@ -85,7 +85,7 @@ To enter the application ID (client ID) in headquarters, follow these steps.
 
 To create a new channel database record, follow these steps.
 
-1. Go to **Retail and Commerce \> Headquarters Setup \> Commerce Scheduler \> Channel Database**.  
+1. In headquarters, go to **Retail and Commerce \> Headquarters Setup \> Commerce Scheduler \> Channel Database**.  
 1. Select **New**. 
 1. For **Channel Database ID**, enter "DevSealedCSU".  
 1. For **Channel Database Group**, enter "Default".  
@@ -102,7 +102,7 @@ To create a new channel database record, follow these steps.
 
 To create a new channel profile, follow these steps.
 
-1. Go to **Retail and Commerce \> Channel Setup \> Channel Profiles**.  
+1. In headquarters, go to **Retail and Commerce \> Channel Setup \> Channel Profiles**.  
 1. Select **New**. 
 1. For **Name**, enter "DevSealedCSUProfile".  
 1. Select **Save**. 
@@ -124,7 +124,7 @@ To create a new channel profile, follow these steps.
 
 To update Commerce Data Exchange (CDX) data groups, follow these steps.
 
-1. Go to **Retail and Commerce \> Distribution Schedule**.
+1. In headquarters, go to **Retail and Commerce \> Distribution Schedule**.
 1. Select the **Default Data** group.
 1. Remove the default database record from this group, which prevents future errors when trying to replicate to this database.
 		
@@ -132,7 +132,7 @@ To update Commerce Data Exchange (CDX) data groups, follow these steps.
 
 To execute sync jobs, follow these steps.
 
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule**.   
+1. In headquarters, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule**.   
 1. Select the **9999** job.  
 1. Select **Run now**.  
 1. For each warning, select **Yes**.  
@@ -155,7 +155,7 @@ To install .NET Core hosting bundle on the development VM, follow these steps.
 
 To download the sealed self-hosted installer to the development VM and copy the configuration file, follow these steps.
 
-1. Open a web browser and sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
+1. Open a web browser on the development machine and sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
 1. Select your project from the list.
 1. From the hamburger menu at the top of the page, select **Asset library**.
 1. Select **Retail Self-service package**.  
@@ -163,9 +163,9 @@ To download the sealed self-hosted installer to the development VM and copy the 
 1. If you don’t have a CSU sealed installer in the list, select **Import**, select the sealed installer version you want to use, select **Pick**, and then select the package name to start the download. 
 1. Copy the sealed installer from the **Downloads** folder to C:\temp.
 
-## Install the Sealed CSU
+## Install the sealed CSU
 
-To install the Sealed CSU on the VHD image, use the syntax provided below. Since this is a development machine, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
+To install the sealed CSU on the VHD image, use the syntax provided below. Since this is a development machine, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
 
 `CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
 
