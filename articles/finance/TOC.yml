@@ -4131,7 +4131,7 @@
           - name: Create customer and vendor records with an address in Uruguay
             href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
           - name: Set up a legal entity and tax information for Uruguay
-            href: localizations/ltm-set-up-legal-entity-tax-uruguay.md
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI

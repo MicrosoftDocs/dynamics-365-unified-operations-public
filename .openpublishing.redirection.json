@@ -1,6 +1,10 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/localizations/ltm-set-up-legal-entity-tax-uruguay.md",
+      "redirect_url": "dynamics365/fin-ops-core/localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay",
+      "redirect_document_id": "false"
+    },    {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/requirements-and-prerequisites.md",
       "redirect_url": "dynamics365/fin-ops-core/fin-ops/",
       "redirect_document_id": "false"
