@@ -2254,9 +2254,9 @@
             href: localizations/china/apac-chn-tax-integration-vat-customer-invoices.md   
           - name: GB/T 24589-2010 export
             href: localizations/china/apac-chn-gbt-24589-2010.md
-        - name: Columbia
+        - name: Colombia
           items:
-          - name: Columbia overview
+          - name: Colombia overview
             href: localizations/iberoamerica/columbia.md
           - name: Configure sales and purchase invoices for Colombia
             href: localizations/iberoamerica/ltm-configure-invoices-colombia.md
