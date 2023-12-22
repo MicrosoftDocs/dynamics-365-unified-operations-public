@@ -2429,7 +2429,7 @@
           - name: EU sales list reporting
             href: localizations/europe/emea-eu-sales-list.md
           - name: European article numbering (EAN) location numbers
-            href: localizations/europe/ean-number,md
+            href: localizations/europe/ean-number.md
           - name: Example for generic European Union (EU) sales list
             href: localizations/europe/emea-eu-sales-list-example.md
           - name: Exchange rate adjustments
