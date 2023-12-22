@@ -4,7 +4,7 @@
 title: Clean up the batch job table
 description: This article describes how to clean up the batch job table.
 author: snagamalla
-ms.date: 03/15/2024
+ms.date: 12/22/2023
 ms.topic: how-to
 ms.custom: 
   - bap-template
