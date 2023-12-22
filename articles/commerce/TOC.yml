@@ -2644,6 +2644,8 @@
           items:
           - name: Local development environment
             href: dev-itpro/setup-local-dev-env.md
+          - name: Install Commerce Scale Unit on a development environment
+            href: dev-itpro/install-csu-dev-env.md
           - name: Commerce SDK build pipeline (independent packaging)
             href: dev-itpro/build-pipeline.md
         - name: Payments
