@@ -2350,6 +2350,8 @@
             href: localizations/norway/emea-dnk-e-invoices.md
           - name: Vendor electronic invoice import in Denmark
             href: localizations/denmark/emea-dnk-vend-e-invoice.md
+          - name: Notification and registration for the NemHandelsRegistret in Denmark
+            href: localizations/denmark/nhr-notification-registration.md
           - name: Post a free text invoice with a payment slip
             href: localizations/denmark/post-free-text-invoice-payment-slip.md
           - name: Post a project invoice with a payment slip
@@ -2426,6 +2428,8 @@
             href: localizations/europe/emea-entry-certificates.md
           - name: EU sales list reporting
             href: localizations/europe/emea-eu-sales-list.md
+          - name: European article numbering (EAN) location numbers
+            href: localizations/europe/ean-number,md
           - name: Example for generic European Union (EU) sales list
             href: localizations/europe/emea-eu-sales-list-example.md
           - name: Exchange rate adjustments
