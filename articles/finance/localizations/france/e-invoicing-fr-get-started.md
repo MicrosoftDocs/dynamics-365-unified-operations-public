@@ -163,13 +163,13 @@ Follow these steps to complete the configuration.
 
     1. In the **Submission status** field, select **Pending**.
     2. In the **Data entity name** field, select **Sales invoice Chorus Pro entity**.
-    3. In the **Model mapping** field, select **Chorus Pro invoice response data**.
+    3. In the **Configuration** field, select **Chorus Pro response invoice data import format (FR)**.
 
 6. Create another new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
 
     1. In the **Submission status** field, select **Pending update actions execution**.
     2. In the **Data entity name** field, select **Sales invoice Chorus Pro entity**.
-    3. In the **Model mapping** field, select **Chorus Pro invoice response data**.
+    3. In the **Configuration** field, select **Chorus Pro response invoice data import format (FR)**.
 
     ![Response type setup.](../media/emea-fr-einvoice-response.jpg)
 
