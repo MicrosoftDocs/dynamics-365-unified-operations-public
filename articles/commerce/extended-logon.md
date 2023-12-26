@@ -66,7 +66,8 @@ After extended sign-in is configured, and a barcode or magnetic stripe is assign
 
 ## Extend extended sign-in
 
-The first consideration of extending the extended sign-in is to enhance security as the physical staff card or barcode could be lost and easily duplicated. The second consideration is to provide flexibility to the customer, for example, use custom length of credential or credential ID per business requirement. In [Extended sign-in sample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/ExtendedLogon), a more secure end-to-end extension solution with 2nd factor authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended sign-in in its whole lifecycle, including enrolling user credential, staff card logon or barcode logon, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
+The first consideration of extending the extended sign-in is to enhance security as the physical staff card or barcode could be lost and easily duplicated. The second consideration is to provide flexibility to the customer, for example, use custom length of credential or credential ID per business requirement.\
+In the [Extended sign-in sample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/ExtendedLogon), a more secure end-to-end extension solution with 2nd factor authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended sign-in in its whole lifecycle, including enrolling user credential, staff card logon or barcode logon, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
 
 ### POS extensions
 
