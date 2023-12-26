@@ -4,7 +4,7 @@
 title: Create billing schedules
 description: This article explains how to create, delete, and edit billing schedules.
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,6 +88,15 @@ To remove an item from a billing schedule, follow these steps.
 1. On the **Billing schedule** page, in the **Schedule number** field, select the number of the billing schedule to edit.
 2. On the **Billing schedule lines** FastTab, select the line to delete, and then select **Remove**.
 3. Select **Save**.
+
+## Generate a quotation from a billing schedule
+
+To generate a quotation document from a billing schedule, follow these steps.
+
+1. On the **Billing schedule** page, select the number of the billing schedule to edit.
+2. On the **Billing schedule header** Action pane, select **Generate quotation**.
+3. Fill in options on the **Sales quotation** page, such as **From date** and **To date**.
+4. Click **Create**.
 
 The rest of this article describes the actions and details that are available for lines on the **Billing schedule lines** FastTab.
 

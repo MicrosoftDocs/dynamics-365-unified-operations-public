@@ -13,11 +13,11 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["20421", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
 # ms.search.industry: 
@@ -61,7 +61,7 @@ The global address book is a centralized repository for master data that must be
 
 After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business.
 
-- [Global address book overview](overview-global-address-book.md)
+- [Global address book overview](../../dev-itpro/organization-administration/overview-global-address-book.md)
 - [Plan for the global address book and other address books](plan-configuration-global-address-book-additional-address-books.md)
 - [Configure the global address book](tasks/configure-global-address-book.md)
 - [Address books FAQ](qa-address-books.md)
@@ -88,8 +88,8 @@ You can use electronic signatures for critical business processes. Some processe
 
 By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently.
 
-- [Case management overview](cases.md)
-- [Plan case category security, case processes, and case categories](plan-case-management.md)
+- [Case management overview](../../dev-itpro/organization-administration/cases.md)
+- [Plan case category security, case processes, and case categories](../../dev-itpro/organization-administration/plan-case-management.md)
 
 ## Record templates
 
@@ -102,9 +102,9 @@ Record templates can help you to create records more quickly. You can create a r
 ## General organization administration
 
 - [Change the banner or logo](../get-started/tasks/change-banner-or-logo.md) (Task guide)
-- [Configure document management](configure-document-management.md)
-- [Configure and send email](configure-email.md)
-- [Date/time data and time zones](date-time-zones.md)
+- [Configure document management](../../dev-itpro/organization-administration/configure-document-management.md)
+- [Configure and send email](../../dev-itpro/organization-administration/configure-email.md)
+- [Date/time data and time zones](../../dev-itpro/organization-administration/date-time-zones.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

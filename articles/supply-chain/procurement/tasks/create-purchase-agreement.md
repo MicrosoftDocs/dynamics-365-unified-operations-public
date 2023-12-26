@@ -5,7 +5,7 @@ title: Create a purchase agreement
 description: This article guides you through the creation of a purchase agreement. 
 author: GalynaFedorova
 ms.date: 07/18/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This article guides you through the creation of a purchase agreement. This would
 
 
 ## Create a new purchase agreement
-1. Go to **Navigation pane > Modules > Procurement and sourcing > Purchase agreements > Purchase agreements**.
+1. Go to **Procurement and sourcing > Purchase agreements > Purchase agreements**.
 2. Click **New**.
 3. In the **Vendor account** field, select the drop-down menu and select the row of the desired record.
 4. In the **Purchase agreement classification** field, select the drop-down menu and select the row of the desired record.

@@ -5,7 +5,7 @@ title: Create a request for quotation
 description: This procedure shows you how to create a request for quotation. 
 author: GalynaFedorova
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,13 +31,13 @@ This procedure shows you how to create a request for quotation. This would typic
 
 
 ## Prepare a new RFQ
-1. Go to **Navigation pane > Modules > Procurement and sourcing > Requests for quotations > All requests for quotations**.
+1. Go to **Procurement and sourcing > Requests for quotations > All requests for quotations**.
 2. Click **New**.
     The following purchase types are available: Purchase order (this is the default): a document that confirms the offer to buy products, or the acceptance of an offer to sell products in exchange for payment. Purchase requisition: this type is automatically selected if you create an RFQ directly from a purchase requisition. If you manually select this option, you'll get an error. Purchase agreement: an agreement to purchase a specific quantity or value of product over time. If you select this option, you must select the date range that applies to the purchase agreement.  
 3. In the **Document title** field, type a value.
 4. In the **Solicitation type** field, enter or select a value.
     + If a scoring method is associated with the solicitation type, this will be the default scoring method for the RFQ that you're creating. It is possible to change the scoring method later.  
-    + In the **Delivery date** field, enter a date.  
+    + In the **Receipt date** field, enter a date.  
     + Select the date by which you want to receive the items.  
     + In the **Expiration date and time** field, enter a date and time.  
     + Specify the date and time by which vendors must respond to the RFQ.  

@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["13971", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
@@ -114,6 +114,12 @@ While a vendor invoice is being used, it can't be edited by another user. Howeve
 You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited. You can open this page from the **Periodic task** navigation or a tile on the **Vendor invoice entry** workspace. After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.
 
 You can access the **Recover vendor invoices** page only if the **Recover vendor invoices in use** security duty and privilege are assigned to you. Additionally, the **Allow vendor invoice recovery** parameter on the **Accounts payable parameters** page must be turned on.
+
+## Default financial dimension in vendor invoice lines
+For vendor invoices which are associated with purchase order, the default financial dimension will be derived from corresponding purchase order lines. 
+
+For vendor invoices which are not associated with any purchase order, the default financial dimension will merge the dimension from dimension link, invoice header, item.  If the same dimension defined on dimension link, invoice header and item， the dimension on the invoice line will follow the priority sequence: 
+dimension link > invoice header > Item
 
 ## Resetting the workflow status for vendor invoices from Unrecoverable to Draft
 

@@ -5,7 +5,7 @@ title: Define coverage rules for items
 description: This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
 author: t-benebo
 ms.date: 07/01/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -33,7 +33,7 @@ The demo data company used to create this procedure is USMF. This procedure show
 
 Create a coverage group by doing the following:
 
-1. Go to **Navigation pane > Modules > Master planning > Setup > Coverage groups**.
+1. Go to **Master planning > Setup > Coverage groups**.
 1. Select **New**.
 1. In the **Coverage group** field, type a value.
 1. In the **Name** field, type a value.
@@ -52,7 +52,7 @@ Create a coverage group by doing the following:
 
 Create a new product by doing the following:
 
-1. Go to **Navigation pane > Modules > Product information management > Products > Released products**.
+1. Go to **Product information management > Products > Released products**.
 1. Select **New**.
 1. In the **Product number** field, type a value.
 1. In the **Product name** field, type a value.

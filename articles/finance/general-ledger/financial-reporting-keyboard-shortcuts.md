@@ -3,7 +3,7 @@
 
 title: Keyboard shortcuts for missing account analysis
 description: This article lists the keyboard shortcuts that are available when you run a missing account analysis in Management Reporter.
-author: panolte
+author: ShivamPandey-msft
 ms.date: 08/24/2019
 ms.topic: article
 ms.prod: 
@@ -12,14 +12,14 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]
-audience: Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: panolte
+ms.author: shpandey
 ms.search.validFrom: 2019-08-31 
 ms.dyn365.ops.version: 10.0.5
 ---

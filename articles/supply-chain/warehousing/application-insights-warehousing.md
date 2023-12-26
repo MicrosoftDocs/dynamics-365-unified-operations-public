@@ -70,4 +70,4 @@ Application Insights is billed based on the volume of telemetry data that your a
 
 ## Next steps
 
-- [Monitor Warehouse Management usage and performance](application-insights-wma.md)
+- [Monitor Warehouse Management usage and performance](application-insights-monitor-usage-performance.md)

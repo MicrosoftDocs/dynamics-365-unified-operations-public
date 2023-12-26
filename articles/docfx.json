@@ -52,7 +52,6 @@
         "Dynamics 365",
         "Unified Operations"
       ],
-      "extendBreadcrumb": "true",
       "breadcrumb_path": "/dynamics365/ops-bc/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
@@ -77,7 +76,7 @@
           "folder_relative_path_in_docset": ".",
           "depot_name": "MSDN.d365OpsSCM"
         },
-        "talent/": {
+        "human-resources/": {
           "folder_relative_path_in_docset": ".",
           "depot_name": "MSDN.d365OpsHR"
         }
@@ -95,24 +94,43 @@
           "Global"
         ]
       },
+      "uhfHeaderId":{
+        "finance/**/*.md": "MSDocsHeader-Dynamics365-Finance",
+        "finance/**/index.yml": "MSDocsHeader-Dynamics365-Finance",
+        "supply-chain/**/*.md": "MSDocsHeader-Dynamics365-SupplyChainManagement",
+        "supply-chain/**/index.yml": "MSDocsHeader-Dynamics365-SupplyChainManagement",
+        "commerce/**/*.md": "MSDocsHeader-Dynamics365-Commerce",
+        "commerce/**/index.yml": "MSDocsHeader-Dynamics365-Commerce",
+        "human-resources/**/*.md":"MSDocsHeader-Dynamics365-human-resources",
+        "human-resources/**/index.yml":"MSDocsHeader-Dynamics365-human-resources",
+        "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365",
+        "fin-ops-core/**/index.yml": "MSDocsHeader-Dynamics365"
+      },
       "search.app": {
         "finance/**/*.md": [
-          "FinanceAndOperations"
+          "FinanceAndOperations",
+          "financeandoperations-docs"
         ],
         "supply-chain/**/*.md": [
-          "FinanceAndOperations"
+          "FinanceAndOperations",
+          "supplychainmanagement-docs",
+          "supplychaincenter-docs"
         ],
         "commerce/**/*.md": [
-          "Commerce"
+          "Commerce",
+          "commerce-docs"
         ],
         "human-resources/**/*.md": [
-          "HumanResources"
+          "HumanResources",
+          "humanresources-docs"
         ],
         "talent/**/*.md": [
-          "HumanResources"
+          "HumanResources",
+          "humanresources-docs"
         ],
         "fin-ops-core/**/*.md": [
-          "FinanceAndOperations"
+          "FinanceAndOperations",
+          "financeandoperations-docs"
         ]
       },
       "featureFlags": {
@@ -188,6 +206,11 @@
         "talent/**.md": "Talent | Dynamics 365"
       },
       "breadcrumb_path": {
+        "commerce/**/*.md": "/dynamics365/commerce-bc/toc.json",
+        "supply-chain/**/*.md": "/dynamics365/supply-chain-bc/toc.json",
+        "human-resources/**/*.md": "/dynamics365/human-resources-bc/toc.json",
+        "fin-ops-core/**/*.md": "/dynamics365/ops-bc/toc.json",
+        "finance/**/*.md": "/dynamics365/finance-bc/toc.json",
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"
       },
       "ms.service": {

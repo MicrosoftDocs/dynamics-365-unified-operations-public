@@ -12,11 +12,11 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:
-audience: Application User, Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry:
 ms.author: sericks

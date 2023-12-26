@@ -4,7 +4,7 @@
 title: Virtual entities overview
 description: This article provides general information about virtual entities for finance and operations apps.
 author: RamaKrishnamoorthy
-ms.date: 05/14/2021
+ms.date: 02/24/2023
 ms.topic: overview
 audience: IT Pro
 ms.reviewer: sericks
@@ -26,10 +26,6 @@ ms.search.validFrom: 2021-05-31
 Finance and operations apps are a virtual data source in Dataverse, and enable full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Dataverse. Instead, it continues to reside in the app where it belongs. Before CRUD operations can be performed on finance and operations entities from Dataverse, the entities must be made available as virtual entities in Dataverse. CRUD operations can then be performed from Dataverse and Microsoft Power Platform on data that resides in finance and operations apps.
 
 All Open Data Protocol (OData) entities in finance and operations apps are available as virtual entities in Dataverse, and therefore also in Microsoft Power Platform. Makers can now use data directly from finance and operations apps to build experiences in customer engagement apps. These experiences offer full CRUD capability and don't require copying to Dataverse. Power Apps portals can be used to build external-facing websites that enable collaboration scenarios for business processes in finance and operations apps.
-
-## Virtual entities for core Human Resources
-
-Core Human Resources entities can also be virtualized, just as finance and operations entities can. For more information, see [Configure Dataverse virtual tables](../../../human-resources/hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## Architecture
 

@@ -28,8 +28,7 @@ ms.dyn365.ops.version: 10.0.24
 ---
 
 # Recurring contract billing parameters
-
-Use the **Recurring contract billing parameters** page to set up the default values for billing schedules that are created in Recurring contract billing. All billing schedules that you create will initially use these default values. However, you can change the values for each billing schedule as you require.
+Use the **Recurring contract billing parameters** page to set up the default values for billing schedules that are created in Recurring contract billing. (**Recurring contract billing > Setup > Recurring contract billing parameters**). All billing schedules that you create will initially use these default values. However, you can change the values for each billing schedule as you require.
 
 ## General tab
 
@@ -109,10 +108,9 @@ Use the **Sequence number** tab on the **Recurring contract billing parameters**
 
 ## Set up billing schedule groups
 
-Use the **Billing schedule group** page to create a billing schedule group for Recurring contract billing. When a new billing schedule is created, and a billing schedule group is applied to it, the values that are defined on the **Billing schedule group** page are entered as default values for the billing schedule. You can change any of the default values for the specific billing schedule that you create. You can set up multiple billing schedule groups and then assign one of them as the default billing schedule group on the **Recurring contract billing parameters** page.
+Use the **Billing schedule group** page to create a billing schedule group for Recurring contract billing. (**Recurring contract billing > Setup > Billing schedule group**). When a new billing schedule is created, and a billing schedule group is applied to it, the values that are defined on the **Billing schedule group** page are entered as default values for the billing schedule. You can change any of the default values for the specific billing schedule that you create. You can set up multiple billing schedule groups and then assign one of them as the default billing schedule group on the **Recurring contract billing parameters** page.
 
-To create a billing schedule group for Recurring contract billing, follow these steps.
-
+To create a billing schedule group for Recurring contract billing, follow these steps:
 1. On the **Billing schedule group** page, select **New** to create a billing schedule group.
 2. In the **Billing schedule group** field, enter a unique identifier.
 3. In the **Description** field, enter a description.
@@ -135,3 +133,14 @@ To create a billing schedule group for Recurring contract billing, follow these 
 8. Set the **Invoice separately** option to **Yes** to create a combination of consolidated invoices and separate invoices for the same customer. For example, a customer has five billing schedules. Three of them will be consolidated on a single invoice, but each of the other two requires a separate invoice. Set the option to **No** to create only one consolidated invoice for the customer.
 9. Set the **Renew automatically** option to **Yes** to automatically renew the recurring billing schedule for the next billing period when the invoice is created. Set it to **No** to manually renew the billing schedule. In the **Lines to add per renewal** field, specify how many lines to add for each renewal.
 10. Set the **Escalation** option to **Yes** to apply *escalations* (price increases) to the billing schedules associated with this billing schedule group.
+
+
+## Item group setup
+
+Use the **Item group setup** page to define item groups for support and renewal proration, alignment dates for renewal items and the Top billing functionality. **Recurring contract billing > Setup > Item group setup**. 
+
+ - **Prorate support and renewal** - Select whether to prorate the support or renewal amount based on the dates. Select the checkbox to prorate the support or renewal amount for items in the item group. When the checkbox isn't selected, the support or renewal amount for items in the item group isn't prorated.
+ - **Adjust renewal dates** - Select whether the alignment date for a renewal item is to be determined by the item group. Select the checkbox to update the renewal start and end dates based on the specified alignment date. 
+ - **Number of top lines** - Specify the top most expensive items to charge on an invoice for the specific item group for the Top billing functionality. This number must be zero (0) or a positive value. A zero-value indicates that the top billing feature isn't used. If used, this number typically ranges from zero to six items. 
+
+

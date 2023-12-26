@@ -4,7 +4,7 @@ description: This article describes how to set up and use the Operational Insigh
 author: ashishMSFT
 ms.date: 12/07/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw

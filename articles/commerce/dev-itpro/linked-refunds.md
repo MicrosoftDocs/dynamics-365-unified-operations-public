@@ -2,7 +2,7 @@
 title: Linked refunds of previously approved and confirmed transactions
 description: This article describes how to enable and use Linked refunds.
 author: josaw1
-ms.date: 11/04/2021
+ms.date: 05/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,15 +43,14 @@ Customers who aren't using the out-of-box implementation of the Adyen Connector 
 
 The linked refunds functionality works with the omni-channel payments functionality that is available in Microsoft Dynamics 365 Retail 8.1.3 and later.
 
-To turn on the linked refunds functionality, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
+To turn on the linked refunds functionality in headquarters, go to **System administration \> Workspaces \> Feature management** and enable the **Omni-channel payments** feature.
 
-![Omni-channel payments configuration.](media/LinkedRefundsOmniChannel.jpg)
-
-In Commerce version 10.0.11 and later, you can enable the **Omni-channel payments** feature in headquarters at **System administration \> Workspaces \> Feature management**.
+> [!NOTE]
+> In versions prior to Commerce version 10.0.11, omnichannel payments are enabled in headquarters at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
 
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
-When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Modern POS (MPOS)) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, MPOS, and e-commerce applications, customers can still manually enter card numbers for payment.
+When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or the Store Commerce app) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, Store Commerce app, and e-commerce applications, customers can still manually enter card numbers for payment.
 
 ### Supported flows
 

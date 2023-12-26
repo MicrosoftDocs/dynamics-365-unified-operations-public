@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
 # ms.search.industry: 
@@ -38,7 +37,7 @@ Some types of records, such as **Position** records, are shared across companies
 On the **Human resources shared parameters** page, parameters are grouped into areas, based on their functionality. 
 
 ### Settings
-On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, go to **Personnel management** &gt; **Links** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
+On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national/regional ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, go to **Personnel management** &gt; **Links** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
 
 On the **Number sequences** tab, you can select the number sequences that are used for the following records: **Personnel number**, **Position**, **User request ID**, **I-9 document**, **Applicant**, **Discussion**, **Benefit ID**, and **Personnel action** (if this record type is enabled). To maintain number sequence references and codes, use the **Number sequences** list page. To find this page, use the page search feature. 
 

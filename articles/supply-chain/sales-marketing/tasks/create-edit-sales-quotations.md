@@ -5,7 +5,7 @@ title: Create and edit sales quotations
 description: This procedure demonstrates how to create and update a sales quotation. 
 author: Henrikan
 ms.date: 06/26/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 
 
 ## Create a sales quotation
-1. Go to **Navigation pane > Modules > Sales and marketing > Sales quotations > All quotations**.
+1. Go to **Sales and marketing > Sales quotations > All quotations**.
 2. Click **New**.
 3. In the **Account type** field, select 'Prospect'.
 4. In the **Prospect** field, enter or select a value.
@@ -55,7 +55,7 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 20. Click **OK**. The report may take a minute to generate. Don't close the page until it does so.
 
 ## Update a sales quotation
-1. Go to **Navigation pane > Modules > Sales and marketing > Sales quotations > All quotations**.
+1. Go to **Sales and marketing > Sales quotations > All quotations**.
 2. On the **Action Pane**, click **Follow up**.
 3. Click **Convert to customer**.
 4. In the **Customer account** field, type a value.

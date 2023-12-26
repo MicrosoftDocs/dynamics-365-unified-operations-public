@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["62333", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 
@@ -54,7 +54,7 @@ For more information, see [Batch processing and batch servers](batch-server-over
 
 Administrators and Batch managers can perform common tasks including creating and copying batch jobs, changing a batch job user, and specifying a time period in which a job should not execute. For more information about these tasks, see the following topics:
 
--  [Create a batch job](tasks/create-batch-job.md)
+-  [Create a batch job](../../fin-ops/sysadmin/create-batch-job.md)
 -  [Batch manager security role](runby.md)
 -  [Active batch periods](activeperiod.md)
 -  [Copy a batch job](copy-batch-job.md)

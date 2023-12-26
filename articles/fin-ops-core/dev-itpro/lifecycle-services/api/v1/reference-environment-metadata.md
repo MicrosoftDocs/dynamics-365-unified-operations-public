@@ -135,11 +135,13 @@ For each environment, the following properties are available. If no value is ava
             "CurrentPlatformReleaseName": "Update44",
             "CurrentPlatformVersion": "7.0.6060.45",
             "DeployedOnUTC": "8/5/2021 11:00 PM",
-            "CloudStorageLocation": "East US",
-            "DisasterRecoveryLocation": "West US",
+            "CloudStorageLocation": "Central India",
+            "DisasterRecoveryLocation": "South India",
             "DeploymentStatusDisplay": "Deployed",
             "CanStart": false,
-            "CanStop": false
+            "CanStop": false,
+            "DatabaseDailyBackupsEnabled": true,
+            "DatabaseBackupLocation": "Central India"
         },
         {
             "EnvironmentId": "60b557b2-fefb-4690-859e-f83caf98c17e",
@@ -161,7 +163,9 @@ For each environment, the following properties are available. If no value is ava
             "DisasterRecoveryLocation": "West US",
             "DeploymentStatusDisplay": "Failed",
             "CanStart": false,
-            "CanStop": true
+            "CanStop": true,
+            "DatabaseDailyBackupsEnabled": true,
+            "DatabaseBackupLocation": "East US"
         }
     ],
     "IsSuccess": true,

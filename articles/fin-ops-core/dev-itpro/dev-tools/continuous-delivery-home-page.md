@@ -3,14 +3,14 @@ title: Continuous delivery home page
 description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: josaw1
 ms.date: 10/16/2019
-ms.topic: index-page
+ms.topic: conceptual
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ---
 
@@ -44,7 +44,6 @@ These topics describe tools and guidelines related to continuous delivery of you
 ## Servicing
 - [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md)
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
-- [Install metadata hotfixes in development environments](../migration-upgrade/install-metadata-hotfix-package.md)
 - [Patch SQL Server Reporting Services (SSRS) in one-box environments](../migration-upgrade/patch-reporting-service-environment.md)
 - [Update the Visual Studio development tools](update-development-tools.md)
 

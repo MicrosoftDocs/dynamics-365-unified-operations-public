@@ -19,7 +19,6 @@ ms.reviewer: kamaybac
 
 
 # ms.tgt_pltfrm:
-ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
 # ms.search.industry:

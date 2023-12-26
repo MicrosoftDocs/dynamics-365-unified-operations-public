@@ -5,7 +5,7 @@ title: Create a new product lifecycle state
 description: This procedure shows how to create a new product lifecycle state. 
 author: t-benebo 
 ms.date: 12/05/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

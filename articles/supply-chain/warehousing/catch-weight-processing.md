@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 8.1.3
 To use warehouse management to process catch weight products, you must use a license configuration key to turn on the functionality. Go to **System administration \> Setup \> License configuration**. Then, on the **Configuration keys** tab, expand **Trade \> Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**.
 
 > [!NOTE]
-> Both the **Warehouse and Transportation management** license configuration key and the **Process distribution \> Catch weight** license configuration keys must also be turned on. To set the configuration keys for catch weight, you must also turn on the feature by using the **Feature management** workspace. The main feature that must be turned on is **Catch weight product processing with warehouse management**. Two related but optional features that you might want to turn on are **Inventory status changes for catch weight products** and **Use existing catch weight tags when reporting production orders as finished**.
+> Both the **Warehouse and Transportation management** license configuration key and the **Process distribution \> Catch weight** license configuration keys must also be turned on. To set the configuration keys for catch weight, you must also turn on the feature by using the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. The main feature that must be turned on is *Catch weight product processing with warehouse management*. Two related but optional features that you might want to turn on are *Inventory status changes for catch weight products* and *Use existing catch weight tags when reporting production orders as finished*. As of Supply Chain Management version 10.0.36, all three of these features are mandatory and can't be turned off.
 
 After the license configuration key is turned on, when you create a released product, you can select **Catch weight**. You can also associate the released product with a storage dimension group that the **Use warehouse management processes** parameter is selected for.
 
@@ -110,7 +110,8 @@ Additionally, when an item is tag-tracked, there is an **Outbound tag capturing 
 **When catch weight tag tracking is used**, a tag must always be created for every catch weight unit that is received, and every tag must always be associated with a weight.
 
 For example, **Box** is the catch weight unit, and you receive one pallet of eight boxes. In this case, eight unique catch weight tags must be created, and a weight must be associated with each tag. Depending on the inbound catch weight tag, either the weight of all eight boxes can be captured, and the average weight can then be distributed to each box, or a unique weight can be captured for each box.
-When using the **Use existing catch weight tags when reporting production orders as finished** feature with the process enabled via a mobile device menu item, the inventory gets updated based on existing catch weight tag information. As a result, the Warehouse Management mobile app does not prompt for capturing the catch weight tag data as part of a production report as a finished operation.
+
+When using the *Use existing catch weight tags when reporting production orders as finished* feature with the process enabled via a mobile device menu item, the inventory gets updated based on existing catch weight tag information. As a result, the Warehouse Management mobile app does not prompt for capturing the catch weight tag data as part of a production report as a finished operation.
 
 **When catch weight tag tracking isn't used**, the weight can be captured for each dimension set (for example, for each license plate and tracking dimension). Alternatively, the weight can be captured based on an aggregated level, such as five license plates (pallets).
 
@@ -138,7 +139,7 @@ Not all workflows support catch weight product processing with warehouse managem
 - Only formula processing is supported for catch weight products (not bill of materials).
 - Catch weight products can't be associated with a tracking dimension group by using the Owner dimension.
 - Catch weight products can't be used as services.
-- Catch weight products can be used as "stocked products" only as part the item model group.
+- Catch weight products can be used as "stocked products" only as part of the item model group.
 - Catch weight products can't be used together with the functionality for tracking "Active in sales process."
 - Catch weight products can't be used together with the functionality for capturing serial numbers. Therefore, products can't be transferred from a "blank" to a serial number as part of the picking/packing process.
 - Catch weight products can't be used together with the functionality for registering serials before consumption.
@@ -197,11 +198,11 @@ Not all workflows support catch weight product processing with warehouse managem
 
 ### Catch weight tags
 
-A catch weight tag can be created by using a Warehouse Management mobile app process, it can be manually created in the form **Warehouse management > Inquiries and reports > Catch weight tag** or it can be created by using a data entity process. If a catch weight tag is associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing, the tag will be updated as shipped. You can view all the historical catch weight tag registration events via the **Catch weight tag registration** option from the **Catch weight tag** page.
+A catch weight tag can be created by using a Warehouse Management mobile app process, it can be manually created in the form **Warehouse management > Enquiries and reports > Catch weight tag** or it can be created by using a data entity process. If a catch weight tag is associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing, the tag will be updated as shipped. You can view all the historical catch weight tag registration events via the **Catch weight tag registration** option from the **Catch weight tag** page.
 
 You can use the **Change tag captured weight** option to manually update the weight value for a catch weight tag. Note that the weight for the inventory on-hand won't get adjusted as part of this manual process, but you can easily use the **On-hand discrepancies for catch weight tagged items** page to look up any discrepancies between the currently active catch weight tags and the current inventory.
 
-Other manual options are to **Register tag** to a source document line and **Register work** against a existing warehouse work.
+Other manual options are to **Register tag** to a source document line and **Register work** against an existing warehouse work.
 
 In addition to the restrictions that currently apply for catch weight products, tagged catch weight products have other restrictions that currently apply.
 

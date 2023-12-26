@@ -5,7 +5,7 @@ title: Define new departments
 description: Departments are operating units that represent a functional area of a business, such as sales or accounting. 
 author: twheeloc
 ms.date: 10/28/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -4,29 +4,21 @@
 title: Manage B2B business partners using customer hierarchies
 description: This article describes how to use customer hierarchies to manage business partners for Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 10/27/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-# optional metadata
 ms.search.form: RetailOperations
-audience: Application User, IT Pro
-# ms.devlang: 
+audience: Application User
 ms.reviewer: v-chgriffin
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.14
 
 ---
 
 # Manage B2B business partners using customer hierarchies
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article describes how to use customer hierarchies to manage business partners for Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 
@@ -88,5 +80,13 @@ In most cases, the property values of all customer records in a hierarchy should
 Commerce headquarters users can inspect property values for all customer records in a hierarchy in a side-by-side view. As the example in the following illustration shows, you can use the **General** option in the drop-down list on the **Hierarchy** FastTab and then select any section of the customer record to show the related properties. Users can edit the property values directly in this view. To copy all the values from an administrator customer record to all users, select **Override** on the **Hierarchy** FastTab.
 
 ![Example of a customer hierarchy record, showing the Override button and the option in the drop-down list.](../media/HierarchyDetails2.png)
+
+## Control access to the B2B ecommerce site
+
+When a business partner is onboarded to a B2B e-commerce site, by default the business partner has access to all B2B e-commerce sites under the same organization. To be able to restrict business partner access to B2B ecommerce sites, starting in Commerce version 10.0.38 administrators can associate online B2B channels with the customer hierarchy of a business partner. If no channel is associated with the business partner's customer hierarchy, then the business partner can access all of the B2B e-commerce sites under the same organization.
+
+The following example image shows the customer hierarchy of a business partner in headquarters with the associated retail channel highlighted.
+
+![Customer hierarchy of a business partner in headquarters with the associated retail channel highlighted](../media/customer_hierarchy_channels.png)
 
 [!include [footer-include](../../includes/footer-banner.md)]

@@ -23,7 +23,7 @@ This article describes how to enable and set up Supply risk assessment.
 To use supply risk assessment, the following prerequisites must be in place for your system:
 
 - **Supply Chain Management version** – You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.31 or later.
-- **Feature management** – The feature that is named *Assess supply risks to prevent supply chain disruptions* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- **Feature management** – The feature that is named *Assess supply risks to prevent supply chain disruptions* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is turned on by default.
 
 ## Configure thresholds
 
@@ -32,7 +32,7 @@ Use the following procedure to configure the feature by selecting the minimum ra
 1. Go to **Procurement and sourcing \> Setup \> Supply risk assessment parameters**.
 1. On the **General** tab, set the following fields:
 
-    - **Requested delivery date acceptance rate** – Enter the minimum percentage of orders where vendors are expected to return a confirmed delivery date (CDD) that meets your requested delivery date (RDD).
+    - **Requested receipt date acceptance rate** – Enter the minimum percentage of orders where vendors are expected to return a confirmed receipt date (CRD) that meets your requested receipt date (RRD).
     - **In-full delivery rate** – Enter the minimum percentage of deliveries that are expected to arrive in full (IF).
     - **On-Time delivery rate** – Enter the minimum percentage of deliveries that are expected to arrive on time (OT).
     - **On-time in-full delivery rate** – Enter the minimum percentage of deliveries that are expected to arrive on time and in full (OTIF).

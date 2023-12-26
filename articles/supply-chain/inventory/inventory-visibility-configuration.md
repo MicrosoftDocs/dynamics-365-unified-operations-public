@@ -2,7 +2,7 @@
 title: Configure Inventory Visibility
 description: This article describes how to configure Inventory Visibility.
 author: yufeihuang
-ms.date: 11/04/2022
+ms.date: 03/03/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -51,7 +51,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 | *OnHandIndexQueryPreloadBackgroundService* | This feature periodically fetches and stores a set of on-hand inventory summary data based on your preconfigured dimensions. It provides an inventory summary that only includes the dimensions that are relevant to your daily business and that is compatible with items enabled for warehouse management processes (WMS). For more information, see [Turn on and configure preloaded on-hand queries](#query-preload-configuration) and [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
 | *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ring fencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
-| *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
+| *AdvancedWHS* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
 
 > [!IMPORTANT]
 > We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
@@ -171,6 +171,7 @@ Inventory Visibility provides a list of default physical measures that are mappe
 | `Registered` | Registered |
 | `ReservOrdered` | Ordered reserved |
 | `ReservPhysical` | Physical reserved |
+| `OrderedSum` | Ordered in total |
 
 If your data source is Supply Chain Management, you don't have to re-create the default physical measures. However, for external data sources, you can create new physical measures by following these steps.
 
@@ -182,9 +183,9 @@ If your data source is Supply Chain Management, you don't have to re-create the 
 
 Customers who want to use external data sources in the data source can take advantages of the extensibility that Dynamics 365 offers by creating [Class Extensions](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
 
-Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to Dimensions section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
+Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to the "Dimensions" section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
-> [!NOTE] 
+> [!NOTE]
 > For additional details about creating extensions, see [Extensibility home page](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### Calculated measures
@@ -416,29 +417,29 @@ Before you set up this mapping, the physical measures, calculated measures, and 
 
 To define the soft reservation mapping, follow these steps.
 
-1. Define the physical measure that serves as the soft reservation measure (for example, `SoftReservPhysical`).
-1. On the **Calculated measure** tab of the **Configuration** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `AvailableToReserve` (available for reservation) so that it's mapped to the previously defined `SoftReservPhysical` physical measure. In this way, you can find which quantities that have the `SoftReservPhysical` inventory status will be available for reservation. The following table shows the AFR computation formula.
+1. Define the physical measure that serves as the soft reservation measure (for example, `Softreserved`).
+1. On the **Calculated measure** tab of the **Configuration** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `AvailableToReserve` (available for reservation) so that it's mapped to the previously defined `Softreserved` physical measure. In this way, you can find which quantities that have the `Softreserved` inventory status will be available for reservation. The following table shows the AFR computation formula.
 
     | Calculation type | Data source | Physical measure |
     |---|---|---|
-    | Addition | `fno` | `AvailPhysical` |
+    | Addition | `fno` | `PhysicalInvent` |
     | Addition | `pos` | `Inbound` |
     | Subtraction | `pos` | `Outbound` |
-    | Subtraction | `iv` | `SoftReservPhysical` |
+    | Subtraction | `iv` | `Softreserved` |
 
-    We recommend that you set up the calculated measure so that it contains the physical measure that the reservation measure is based on. In this way, the calculated measure quantity will be affected by the reservation measure quantity. Therefore, in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `SoftReservPhysical` physical measure from `iv` as a component.
+    We recommend that you set up the calculated measure so that it contains the physical measure that the reservation measure is based on. In this way, the calculated measure quantity will be affected by the reservation measure quantity. Therefore, in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `Softreserved` physical measure from `iv` as a component.
 
 1. Open the **Configuration** page.
-1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `AvailableToReserve` to the previously defined `SoftReservPhysical` physical measure.
+1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `AvailableToReserve` to the previously defined `Softreserved` physical measure.
 
     | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
     |---|---|---|---|
-    | `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
+    | `iv` | `Softreserved` | `iv` | `AvailableToReserve` |
 
     > [!NOTE]
     > If you can't edit the **Soft Reservation Mapping** tab, you may need to turn on the *OnHandReservation* feature on the **Feature Management** tab.
 
-Now, when you do reservation on `SoftReservPhysical`, Inventory Visibility will automatically find `AvailableToReserve` and its related computation formula to do the reservation validation.
+Now, when you do reservation on `Softreserved`, Inventory Visibility will automatically find `AvailableToReserve` and its related computation formula to do the reservation validation.
 
 For example, you have the following on-hand inventory in Inventory Visibility.
 
@@ -452,10 +453,10 @@ For example, you have the following on-hand inventory in Inventory Visibility.
     },
     "quantities": {
         "iv": {
-            "SoftReservPhysical": 90
+            "Softreserved": 90
         },
         "fno": {
-            "availphysical": 70.0,
+            "PhysicalInvent": 70.0,
         },
         "pos": {
             "inbound": 50.0,
@@ -467,11 +468,11 @@ For example, you have the following on-hand inventory in Inventory Visibility.
 
 In this case, the following calculation applies:
 
-`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservPhysical`  
+`AvailableToReserve` = `fno.PhysicalInvent` + `pos.inbound` – `pos.outbound` – `iv.Softreserved`  
 = 70 + 50 – 20 – 90  
 = 10
 
-Therefore, if you try to make reservations on `iv.SoftReservPhysical`, and the quantity is less than or equal to `AvailableToReserve` (10), the soft reservation request will succeed.
+Therefore, if you try to make reservations on `iv.Softreserved`, and the quantity is less than or equal to `AvailableToReserve` (10), the soft reservation request will succeed.
 
 > [!NOTE]
 > When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required (although you might end up with a negative `AvailableToReserve` quantity, the system will still allow you to soft reserve). The default value is `True`.
@@ -551,6 +552,9 @@ After you've completed the configuration, you must commit all the changes to Inv
 
 During its initialization stage, Inventory Visibility sets up a default configuration, which is detailed here. You can modify this configuration as you require.
 
+> [!IMPORTANT]
+> The default configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it may encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
+
 ### Data source configuration
 
 #### Configuration of the iv data source
@@ -562,90 +566,7 @@ This section describes how the `iv` data source is configured.
 The following physical measures are configured for the `iv` data source:
 
 - `Ordered`
-- `SoftReservPhysical`
-- `SoftReservOrdered`
-- `ReservOrdered`
-- `ReservPhysical`
-
-##### OrderedTotal calculated measure
-
-The `OrderedTotal` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `Ordered` |
-| Addition | `fno` | `Arrived` |
-| Addition | `iv` | `Ordered` |
-
-##### OnHand calculated measure
-
-The `OnHand` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `pos` | `PosOutbound` |
-
-##### ReservedTotal calculated measure
-
-The `ReservedTotal` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `ReservPhysical` |
-| Addition | `fno` | `ReservOrdered` |
-| Addition | `iv` | `SoftReservPhysical` |
-| Addition | `iv` | `SoftReservOrdered` |
-| Addition | `iv` | `ReservPhysical` |
-| Addition | `iv` | `ReservOrdered` |
-
-##### SoftReserved calculated measure
-
-The `SoftReserved` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `iv` | `SoftReservPhysical` |
-| Addition | `iv` | `SoftReservOrdered` |
-
-##### HardReserved calculated measure
-
-The `HardReserved` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `ReservPhysical` |
-| Addition | `fno` | `ReservOrdered` |
-| Addition | `iv` | `ReservPhysical` |
-| Addition | `iv` | `ReservOrdered` |
-
-##### OpenOrder calculated measure
-
-The `OpenOrder` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `OnOrder` |
-| Addition | `iom` | `OnOrder` |
-
-##### OnHandAvailable calculated measure
-
-The `OnHandAvailable` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `fno` | `ReservPhysical` |
-| Subtraction | `iv` | `SoftReservPhysical` |
-| Subtraction | `pos` | `PosOutbound` |
+- `Softreserved`
 
 ##### AvailableToReserve calculated measure
 
@@ -654,51 +575,32 @@ The `AvailableToReserve` calculated measure is configured for the `iv` data sour
 | Calculation type | Data source | Physical measure |
 |---|---|---|
 | Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
 | Addition | `fno` | `Ordered` |
 | Addition | `fno` | `Arrived` |
+| Addition | `pos` | `Inbound` |
 | Addition | `iv` | `Ordered` |
 | Subtraction | `fno` | `ReservPhysical` |
-| Subtraction | `fno` | `ReservOrdered` |
-| Subtraction | `iv` | `SoftReservPhysical` |
-| Subtraction | `iv` | `SoftReservOrdered` |
-| Subtraction | `iv` | `ReservPhysical` |
-| Subtraction | `iv` | `ReservOrdered` |
-| Subtraction | `pos` | `PosOutbound` |
+| Subtraction | `iv` | `Softreserved` |
+| Subtraction | `pos` | `Outbound` |
+| Subtraction | `fno` | `Softreserved` |
 
-##### InventorySupply calculated measure
+##### TotalAvailable calculated measure
 
-The `InventorySupply` calculated measure is configured for the `iv` data source as shown in the following table.
+The `TotalAvailable` calculated measure is configured for the `iv` data source as shown in the following table.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
-| Addition | `fno` | `Ordered` |
-| Addition | `fno` | `Arrived` |
-| Addition | `iv` | `Ordered` |
+| Addition | `fno` | `AvailOrdered` |
+| Subtraction | `iv` | `Softreserved` |
+| Subtraction | `@iv` | `@allocated` |
+
+##### TotalOnHand calculated measure
+
+The `TotalOnHand` calculated measure is configured for the `iv` data source as shown in the following table.
+
+| Calculation type | Data source | Physical measure |
+|---|---|---|
 | Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `pos` | `PosOutbound` |
-
-##### InventoryDemand calculated measure
-
-The `InventoryDemand` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `OnOrder` |
-| Addition | `iom` | `OnOrder` |
-| Addition | `iv` | `SoftReservPhysical` |
-| Addition | `iv` | `SoftReservOrdered` |
-| Addition | `fno` | `ReservPhysical` |
-| Addition | `fno` | `ReservOrdered` |
-| Addition | `iv` | `ReservPhysical` |
-| Addition | `iv` | `ReservOrdered` |
 
 #### Configuration of the "fno" data source
 
@@ -753,6 +655,8 @@ The following physical measures are configured for the `fno` data source:
 - `received`
 - `ordered`
 - `ReservOrdered`
+- `OrderedSum`
+- `SoftReserved`
 
 #### Configuration of the "pos" data source
 
@@ -762,8 +666,8 @@ This section describes how the data source `pos` is configured.
 
 The following physical measures are configured for the `pos` data source:
 
-- `PosInbound`
-- `PosOutbound`
+- `Inbound`
+- `Outbound`
 
 ##### AvailQuantity calculated measure
 
@@ -772,22 +676,8 @@ The `AvailQuantity` calculated measure is configured for the `pos` data source a
 | Calculation type | Data source | Physical measure |
 |---|---|---|
 | Addition | `fno` | `AvailPhysical` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `pos` | `PosOutbound` |
-
-#### Configuration of the "iom" data source
-
-The following physical measures are configured for the `iom` (intelligent order management) data source:
-
-- `OnOrder`
-- `OnHand`
-
-#### Configuration of the "erp" data source
-
-The following physical measures are configured for the `erp` (enterprise resource planning) data source:
-
-- `Unrestricted`
-- `QualityInspection`
+| Addition | `pos` | `Inbound` |
+| Subtraction | `pos` | `Outbound` |
 
 ### Partition configuration
 

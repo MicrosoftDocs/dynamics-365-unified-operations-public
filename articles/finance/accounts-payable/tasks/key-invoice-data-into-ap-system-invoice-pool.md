@@ -4,8 +4,8 @@
 title: Key invoice data into the AP system using invoice pool
 description: This article describes how to use the invoice register to create invoices. 
 author: abruer
-ms.date: 07/31/2019
-ms.topic: business-process 
+ms.date: 03/24/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30 
 ms.dyn365.ops.version: Platform update 36 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
@@ -48,26 +49,33 @@ For production environments, there should be at least three nodes of each type.
 
 ## New deployments
 
-1. When you're describing your configuration as explained in [Set up and deploy on-premises environments](./setup-deploy-on-premises-pu12.md#describeconfig), edit the **configtemplate.xml** file to add the new node types. When you've finished, the new **NodeType** sections should resemble the following example.
+1. When you're describing your configuration as explained in [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#describeconfig), edit the **configtemplate.xml** file to enable the new node types. When you are done, the template should resemble the following example.
 
-    ```xml
-    <NodeType name="InteractiveOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS">
-        <VMList>
-            <VM name="LBDE05FS1AOS01" ipAddress="192.168.5.51" faultDomain="fd:/fd0" updateDomain="ud0" />
-            <VM name="LBDE05FS1AOS02" ipAddress="192.168.5.52" faultDomain="fd:/fd1" updateDomain="ud1" />
-            <VM name="LBDE05FS1AOS03" ipAddress="192.168.5.53" faultDomain="fd:/fd0" updateDomain="ud2" />
-        </VMList>
-    </NodeType>
-    <NodeType name="BatchOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS">
-        <VMList>
-            <VM name="LBDE05FS1AOS04" ipAddress="192.168.5.54" faultDomain="fd:/fd0" updateDomain="ud0" />
-            <VM name="LBDE05FS1AOS05" ipAddress="192.168.5.55" faultDomain="fd:/fd1" updateDomain="ud1" />
-            <VM name="LBDE05FS1AOS06" ipAddress="192.168.5.56" faultDomain="fd:/fd0" updateDomain="ud2" />
-        </VMList>
-    </NodeType>
-    ```
+```xml
+<NodeType name="AOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="true">
+    <VMList>
+        <VM name="aos1" ipAddress="" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+        <VM name="aos2" ipAddress="" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+        <VM name="aos3" ipAddress="" faultDomain="fd:/fd0" updateDomain="ud2" hasSSIS="false" />
+    </VMList>
+</NodeType>
+<NodeType name="InteractiveOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="false">
+    <VMList>
+        <VM name="LBDE05FS1AOS01" ipAddress="192.168.5.51" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+        <VM name="LBDE05FS1AOS02" ipAddress="192.168.5.52" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+        <VM name="LBDE05FS1AOS03" ipAddress="192.168.5.53" faultDomain="fd:/fd0" updateDomain="ud2" hasSSIS="false" />
+    </VMList>
+</NodeType>
+<NodeType name="BatchOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="false">
+    <VMList>
+        <VM name="LBDE05FS1AOS04" ipAddress="192.168.5.54" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+        <VM name="LBDE05FS1AOS05" ipAddress="192.168.5.55" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+        <VM name="LBDE05FS1AOS06" ipAddress="192.168.5.56" faultDomain="fd:/fd0" updateDomain="ud2" hasSSIS="false" />
+    </VMList>
+</NodeType>
+```
 
-2. Follow the remaining instructions in [Set up and deploy on-premises environments](./setup-deploy-on-premises-pu12.md#describeconfig) in the usual way.
+2. Follow the remaining instructions in [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#describeconfig) in the usual way.
 
 ## Existing deployments
 

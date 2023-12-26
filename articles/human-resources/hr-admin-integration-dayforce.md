@@ -4,7 +4,7 @@
 title: Configure integration with Dayforce
 description: This article describes the required configuration steps needed for the integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
 author: twheeloc
-ms.date: 08/19/2021
+ms.date: 09/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Human Resources
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
+
+> [!NOTE]
+> The functionality noted in this article is only available for existing Ceridian Dayforce customers using 'V1' Dayforce integration with Dynamics 365 Human Resources. All new customers should work with the payroll provider to use API based payroll integration. 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -282,7 +285,7 @@ Employees may be assigned specific earnings at a given frequency of payment and 
 - Payment Method
 - Economic Region (required)
 - Employee Benefits ID
-- National ID Number (required)
+- National/Regional ID Number (required)
 - Military Service Number
 - Shift ID (required)
 - Tax Number (required)

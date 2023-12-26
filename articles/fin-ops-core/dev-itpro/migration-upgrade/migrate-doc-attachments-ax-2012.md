@@ -25,7 +25,7 @@ This article describes how to migrate document attachments from Microsoft Dynami
 
 In Dynamics AX 2012, attachments are stored in several locations, such as a file share, a database, or a local SharePoint server. The location for the attachments is set in the **Document Types** form for each file type.
 
-In Dynamics 365 Finance + Operations (on-premises), attachments are mostly stored in a private Azure Blob Storage location that is assigned to the environment. Alternatively, they are linked to a SharePoint online site that is under the customer's tenant.
+In Dynamics 365 finance and operations, attachments are mostly stored in a private Azure Blob Storage location that is assigned to the environment. Alternatively, they are linked to a SharePoint online site that is under the customer's tenant.
 
 Attachments will be available in Dynamics 365 after an upgrade from Dynamics AX 2012 only if they are migrated to the Dynamics AX 2012 database before the upgrade is done. A post-upgrade step then migrates them to the Blob Storage location.
 

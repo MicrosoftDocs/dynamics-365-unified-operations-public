@@ -3,7 +3,7 @@ title: Create a purchase order governed by budget
 description: Use this procedure to create a purchase order that is checked for available budget. 
 author: JennySong-SH
 ms.date: 06/15/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac

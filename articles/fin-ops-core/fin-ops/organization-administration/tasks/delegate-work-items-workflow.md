@@ -5,7 +5,7 @@ title: Delegate work items in a workflow
 description: If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users. 
 author: ChrisGarty
 ms.date: 07/07/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysUserSetup, WorkflowDelegationUserListLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 ## Manually delegate a work item
 

@@ -490,7 +490,7 @@ while select AccountNum, Value from custTable
 
 ## index hint keyword
 
-The **index hint** keyword gives the database a hint to use a specific index to sort the selected records as specified in the index. The database can ignore the hint. An incorrect index hint can greatly affect performance. Index hints should be applied only to SQL statements that don't have dynamic **where** clauses or **order by** clauses, and where the effect of the hint can be verified.
+The **index hint** keyword forces SQL Server to use a specific index. Using **index hint** keyword, means you take away the control of which index to use from the Query Optimizer. An incorrect index hint can greatly affect performance. Index hints should be applied only to SQL statements that don't have dynamic **where** clauses or **order by** clauses, and where the effect of the hint can be verified.
 
 Before you can use **index hint** in queries, you must call **allowIndexHint(true)** on the table. The default behavior for **index hint** is **false**, and the hint is ignored.
 

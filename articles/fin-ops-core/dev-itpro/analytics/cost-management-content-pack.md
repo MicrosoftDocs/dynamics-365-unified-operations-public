@@ -6,7 +6,7 @@ ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
@@ -194,7 +194,7 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Category hierarchies (Assigned to role Cost management) | Category hierarchy, Category level              |
 | Legal entities                                          | Legal entity names                              |
 | Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
-| Site                                                    | ID, Name, Address, State, Country               |
+| Site                                                    | ID, Name, Address, State, Country/Region               |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

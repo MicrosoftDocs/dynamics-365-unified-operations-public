@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.custom: 83892
 ---
 
 # Manage secrets for retail channels

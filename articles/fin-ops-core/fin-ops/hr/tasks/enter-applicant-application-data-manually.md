@@ -5,7 +5,7 @@ title: Enter applicant and application data manually
 description: This procedure shows how to manually maintain information about applicants and their application. 
 author: twheeloc
 ms.date: 01/10/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

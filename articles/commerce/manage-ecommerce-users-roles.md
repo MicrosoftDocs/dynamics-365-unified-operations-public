@@ -1,5 +1,5 @@
 ---
-title: Manage e-Commerce users and roles
+title: Manage e-commerce users and roles
 description: This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 ms.date: 10/01/2019
@@ -18,7 +18,7 @@ ms.search.industry:
 ms.search.form: 
 ---
 
-# Manage e-Commerce users and roles
+# Manage e-commerce users and roles
 
 
 [!include [banner](includes/banner.md)]
@@ -62,7 +62,7 @@ After your site is created, only users who are in the security groups that are a
 
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 
-[Manage Content Security Policy (CSP)](manage-csp.md)
+[Manage Content Security Policy (CSP)](dev-itpro/manage-csp.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

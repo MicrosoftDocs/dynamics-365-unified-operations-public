@@ -4,7 +4,7 @@ description: This article describes the integration of site and warehouse data b
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: benebotg

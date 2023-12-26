@@ -21,7 +21,7 @@ ms.search.form: NumberSequenceGroup
 [!include [banner](../includes/banner.md)]
 
 
-In some countries, there is a legal requirement to number documents and related vouchers in chronological order. The chronology must be supported by periods. All of the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
+In some countries/regions, there is a legal requirement to number documents and related vouchers in chronological order. The chronology must be supported by periods. All of the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
 This article explains how to configure and use chronological numbers for applicable documents and related vouchers.
 
 ## Prerequisites
@@ -96,7 +96,7 @@ When you post a document, the appropriate number sequence group is assigned to t
 ![Document number.](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
-> For some countries, there is a specific logic already implemented for document numbering. In this case, country-specific logic will override the **Chronological numbering** feature.
+> For some countries/regions, there is a specific logic already implemented for document numbering. In this case, country/region-specific logic will override the **Chronological numbering** feature.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

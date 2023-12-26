@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: ERBDWorkspace, ERBDParameters
 # ROBOTS: 
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
@@ -38,6 +38,11 @@ The new user interface (UI) is clearer and more comfortable to use. The **Busine
 You can use the **New document** button in the **Business document management** workspace to create and edit a template in an [Electronic reporting (ER)](general-electronic-reporting.md) format [configuration](general-electronic-reporting.md#Configuration) that is provided by another provider and located in the current Finance instance, or to upload a new template from an Excel workbook. Additionally, in version 10.0.25 and later, you can use the **New document** button to create and edit a template in an ER format configuration that is stored in the [Global repository](general-electronic-reporting.md#Repository).
 
 In the examples in this article, the active provider is Contoso, and you use it to create a template that is based on a template that is provided by Microsoft. Alternatively, you can create a template by uploading your own template in Excel format.
+
+> [!NOTE]
+> In versions of Finance before 10.0.21, Business document management functionality and the Microsoft Office–style UI had to be explicitly enabled. However, starting in version 10.0.21, the corresponding **Business document management** and **Office-like UI experience for Business document management** features were turned on by default. Then, starting in version 10.0.29, these features became mandatory. In other words, they were turned on by default and couldn't be turned off.
+>
+> Starting in Finance version 10.0.32, both features have been removed. Therefore, if you're using Finance version 10.0.32 and later, disregard the information about feature enablement later in this article.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

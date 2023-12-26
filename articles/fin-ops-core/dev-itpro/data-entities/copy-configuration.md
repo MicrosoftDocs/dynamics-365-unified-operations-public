@@ -15,9 +15,9 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["77523", "intro-internal"]
+ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peakerbl
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 7
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 There are two options for copying configuration data in finance and operations:
 

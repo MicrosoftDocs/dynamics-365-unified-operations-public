@@ -62,7 +62,6 @@ However, the performance improvement that the cleanup job provides should make u
 
 ## <a name="max-execution-time"></a>Make the Maximum execution time setting available
 
-The **Maximum execution time** setting is only available when the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature is turned on. As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
+The **Maximum execution time** setting is only available when the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature is turned on. As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

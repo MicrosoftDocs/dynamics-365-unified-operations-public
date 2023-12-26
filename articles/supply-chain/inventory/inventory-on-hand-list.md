@@ -50,7 +50,7 @@ For each matching item, the **On-hand** grid provides the following columns of i
 | Physical inventory | The physical quantity that is available in inventory. |
 | Physical reserved | The total quantity that was physically reserved. |
 | Available physical | The available (not reserved) quantity that is available in physical inventory.<p>**Available physical** is a calculated field. The value equals the **Physical inventory** value minus the **Physical reserved** value.</p> |
-| Available physical on extra dimensions | The available physical quantity for all the dimensions that are shown in the grid. |
+| Available physical on exact dimensions | The available physical quantity for all the dimensions that are shown in the grid. |
 | Ordered in total | The total quantity that is included on inbound orders or that has a positive quantity in various inventory journals. |
 | On order | The total quantity that is included on outbound orders or that has a negative quantity in various inventory journals. |
 | Ordered reserved | The total quantity that is reserved on ordered receipts. The value in this field represents the total quantity of items in outbound transactions that have a status of _Ordered reserved_. Items that are reserved as ordered aren't physically available in inventory. Therefore, they can't be directly picked and delivered. |

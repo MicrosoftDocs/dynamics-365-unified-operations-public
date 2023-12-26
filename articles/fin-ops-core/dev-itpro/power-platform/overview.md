@@ -28,19 +28,11 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
-
 Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. Today, finance and operations apps are not managed by the Power Platform admin center. However, over time more and more management capabilities will be migrated from Microsoft Dynamics Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Microsoft Power Platform integration functionality in LCS.
 
-## Environment lifecycle considerations
+## Getting started
 
-By default, all finance and operations apps environments that are managed by LCS will receive a linked Power Platform environment without Dataverse. The relationship is one to one. Over time, your finance and operations apps will be migrated to this location. You can determine whether an environment is linked to an environment from LCS by looking at the finance and operations apps URL on the environment details page in the Power Platform admin center.
-
-:::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
-
-This environment can't be deleted or reset, and a Dataverse database can't be manually added to it. To add Dataverse and fully set up the Microsoft Power Platform integration, follow the instructions in [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
-
-Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Enable integration with an existing Power Platform environment](enable-power-platform-integration.md#connect-to-existing-dataverse).
+To learn more about how to connect your environment to either a new or an existing Power Platform environment, see [Enable Power Platform Integration](enable-power-platform-integration.md).
 
 ## Prerequisite reading
 

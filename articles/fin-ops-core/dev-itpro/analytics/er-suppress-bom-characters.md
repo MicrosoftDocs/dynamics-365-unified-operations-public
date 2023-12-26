@@ -3,10 +3,10 @@ title: Design ER configurations to suppress BOM characters in generated files
 description: This article explains how to configure an Electronic reporting (ER) format to generate reports that suppress byte order mark (BOM) characters.
 author: kfend
 ms.date: 01/04/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

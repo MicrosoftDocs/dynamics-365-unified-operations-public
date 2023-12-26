@@ -4,7 +4,7 @@
 title: Configure the Invoice capture solution
 description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
-ms.date: 09/25/2022
+ms.date: 11/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["13971", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,96 +30,101 @@ ms.dyn365.ops.version:
 # Configure the Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-After the Invoice capture solution is installed, you must configure the environment. The process consists of the following basic steps.
+After the Invoice capture solution is installed, default configurations for using it are provided. These default configurations might not fully meet the customer's requirements. In Invoice capture, configurations can be found in **System preference**.
 
-1. **Required:** Synchronize the legal entities from Microsoft Dynamics 365 Finance. This step is used to set up the organization structure in Microsoft Power Platform.
-2. **Required:** Configure the channels for the import of invoice images. The solution supports the following channels:
+## System preference
 
-    - Office 365 Outlook (default)
-    - Outlook.com
-    - OneDrive
-    - SharePoint
+1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages.
 
-3. **Optional:** Define additional configuration groups for the optical character recognition (OCR) service.
-4. **Optional:** Define mapping rules for the legal entity, vendor account, item, and procurement type.
+    > [!NOTE]
+    > In a future release, customers can create their own custom prebuilt models to handle invoices that have more complex layouts. After a model is published, additional mapping is required to map the model fields to the invoice files.
 
-This article is focused on the two required steps of the process. For more information about configuration groups, see [Invoice capture solution configuration groups](invoice-capture-config-group.md). For more information about mapping rules, see [Invoice capture solution mapping rules](invoice-capture-mapping-rules.md).
+2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
+3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
+4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
+5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
+6. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices older than 180 days every day.
 
-## Manage legal entities
+## Manage processing rules
 
-Finance defines legal entities as organizations that are identified through registration with legal authorities. Business activities are performed and recorded in separate legal entities. In Microsoft Power Platform, business units, security roles, and users are linked together in a manner that conforms to the role-based security model.
+In invoice capture processing, different derivation rules are applied to ensure that the invoices are complete and correct. Because some rules aren't applicable to all customers, the processing uses the following parameters to enable or disable the logic:
 
-Business units are used together with security roles to control data access. Users see only the information that they require to do their jobs. The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities in Finance and manage those entities that are created manually. The legal entities are used on vendor invoices and in security control.
+- **Format purchase order** – Select this parameter to check the number sequence settings in Microsoft Dynamics 365 Finance and format the purchase order number accordingly. This parameter can increase the touchless rate when the purchase order number doesn't follow the format that's set in the number sequence settings.
 
-When a legal entity is created and shown in the list view, a default business unit that has the same name is automatically created. The team is granted the **AP clerk** security role. When legal entities are imported, basic master data from Finance is imported. The nonexistent items will be identified by legal entity and will add them to the Invoice capture solution. The default configuration group is assigned to new legal entities.
+    Here are some supported format examples:
+
+    - Purchase order number: "125", Format: "\#\#\#\#\#\#\#\#", Formatted purchase order number: "00000125"
+    - Purchase order number: "00125", Format: "\#\#\#\#\#\#\#\#", Formatted purchase order number: "00000125"
+    - Purchase order number: "125", Format: "USMF-\#\#\#\#\#\#\#\#", Formatted purchase order number: "USMF-00000125"
+    - Purchase order number: "PO00125", Format: "\#\#\#\#\#\#\#\#", Formatted purchase order number: "00000125"
+    - Purchase order number: "P.O.125", Format: "USMF-\#\#\#\#\#\#\#\#", Formatted purchase order number: "USMF-00000125"
+    - Purchase order number: "125", Format: "PO-\#\#\#\#\#\#\#\#", Formatted purchase order number: "PO-00000125"
+
+- **Derive currency code for cost invoice** – Select this parameter to automatically derive the currency code from invoice master data in Dynamics 365 Finance. The logic is applied only for cost invoices, because the currency code must be identical to the currency code on the purchase order.
+- **Validate total sales tax amount** – Select this parameter to validate the consistency between the sales tax amount on the **Sales tax** card and the total sales tax amount. If there's no sales tax line, the validation logic is skipped.
+- **Validate total amount** – Select this parameter to confirm alignment between the calculated total invoice amount and the captured total amount.
+
+    - If the line amount has a zero or null value, the line net amount is calculated as *Unit price* &times; *Quantity*.
+    - If the total sale tax has a zero or null value, the total sales tax is the sum of the sales tax lines.
+
+    *Total amount* == *Sum (line amount)* + *Sum (charge lines)* &minus; *ABS(Discount)* + *Total sales tax*
+
+    If there's no invoice line, or if the sum of the line amount is zero, the total amount validation is skipped.
+
+## Manage file filters (optional)
+
+**Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them. 
+
+> [!NOTE]
+> This behavior differs from the behavior that's defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
+
+After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.
+
+File filters are flexible and can be applied at different channel levels. When an invoice document is received, the channel is checked first for a file filter. If no file filter is assigned to the channel level, the file filter at the system level is used.
+
+### File filter settings
+
+Configure the following settings in the file filter:
+
+1. **Accepted file size** – Define the minimum and maximum accepted file sizes for invoice documents. The maximum file size can't exceed 20 megabytes (MB).
+2. **Supported file types** – Select at least one of the following file types that are currently supported for AI Builder recognition service:
+
+    - PDF
+    - PNG
+    - JPG
+    - JPEG
+    - TIF
+    - TIFF
+
+3. **Supported file names** – Use file name rules to filter out files that aren't relevant to invoices. Different rules can be applied to accept files only when the name contains predefined strings, or to exclude files that contain the defined strings.
+
+## Definition of master data
+
+Invoice capture processing requires two basic data types to classify invoices: legal entities and vendors.
+
+**Legal entities** are organizations that are registered with legal authorities and defined in Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Microsoft Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This link controls data access through business units and security roles, and allows Accounts payable clerks to view only the invoices that are assigned to their users.
+
+**Vendors** are individuals or organizations that supply goods or services to a business. In Dynamics 365 Finance, if a vendor provides services or product to multiple legal entities, a vendor account has to be created for each legal entity and business activity can be recorded. In Invoice capture, the vendor master data is used to automatically derive the vendor account and helps increase the touchless rate in invoice processing.
 
 ### Sync legal entities
 
-You can't create legal entities directly. However, you can sync legal entities from Finance. To sync legal entities, follow these steps.
+In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities by following these steps.
 
-1. Go to **Setup \> System setup \> Manage legal entities**.
-2. Select **Sync legal entities**, and then select **OK** in the confirmation dialog box.
+1. Go to **Setup** \> **System setup** \> **Manage legal entities**.
+2. Select **Sync**.
+3. In the confirmation message box, select **OK**.
 
-After synchronization is completed, the number of new legal entities is shown. The new legal entities are shown in the list view. The default configuration group is assigned to the new legal entities.
+After synchronization is completed, a message shows the number of new legal entities. The list view is automatically refreshed to show the new legal entities.
 
-## Configure invoice import channels
+### Sync vendors
+In **Manage vendors**, there are three options to sync the vendor accounts:
 
-Vendors send invoices from different channels (email, file workspace, or invoice portal) via different formats (paper or image). The Invoice capture solution can handle different channels and formats. The following types are supported:
+- **Sync all** – all vendor accounts are synced. This will potentially cause a performance issue.
+- **Sync by legal entity** – The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
+- **Sync by selection** – Administrators can search and select one or multiple vendors and sync the selected vendors.
+    
+An Accounts payable administrator can initiate the vendor synchronization manually or in real time. To enable real-time synchronization, follow these steps.
 
-- Office 365 Outlook
-- Outlook.com
-- SharePoint
-- OneDrive
-
-When a channel is created for a specific account, an automated flow that has a predefined template is constructed to monitor the incoming emails or files in the inbox or space. Any file that has a valid invoice can be recognized and sent to the invoice area to await processing by the Accounts payable (AP) clerk. The attachment should be in PDF or image format. Invoices can be loaded into the Invoice capture solution according to the channel configuration.
-
-### Create a channel
-
-If you've imported the additional solution package (Dynamics 365 Invoice capture – Installation Tools), the default connection for Office 365 Outlook is ready to use. If you want to create more connections for different email accounts or other channel types, see [Create additional connections for channels](invoice-capture-advanced-settings.md#create-additional-connections-for-channels).
-
-To create a channel, follow these steps.
-
-1. Go to **Setup \> System setup \> Config channels**.
-2. Select **New**.
-3. Set the following fields:
-
-    - Channel name
-    - Description
-    - Type
-    - Connection
-
-Only emails or files that match the following criteria can be imported into the solution.
-
-| Type               | Configuration  | More information |
-|--------------------|----------------|------------------|
-| Office 365 Outlook | Folder         | The email folder must be under the root directory. By default, the Inbox folder is used. A subfolder isn't supported. |
-|                    | Subject filter | (Optional) A substring that should be included in the subject. |
-|                    | From           | (Optional) The email address of the sender or senders. If you specify multiple addresses, use a semicolon (;) as the separator. |
-| SharePoint         | Site address   | The URL of the site address. |
-|                    | Folder         | The folder in the site address. |
-
-### Activate the channel
-
-When a flow is saved, fields show the status of the channel and the time when it was created. Initially, the **Status** field is set to **Inactive**. The **Status reason** field indicates that the channel has been initialized and is ready to be activated.
-
-To activate the channel, select **Activate**. The **Status** and **Status reason** fields are updated.
-
-If a channel isn't required, you can deactivate it. To deactivate a channel, select **Deactivate**. The **Status** and **Status reason** fields are updated.
-
-### Manage flows in flow management
-
-You can view a channel on the **Config channels** page or in flow management.
-
-To view more details, go to **Admin system \> Default solution \> Cloud flows**, and select the target flow. The details that are shown include linked connections, owners, and run histories.
-
-To sync the status, select **Check** to confirm that the status of the channel matches the status of the flow.
-
-Some cases of exception handling are shown in the **Status reason** field:
-
-- **Missing Dataverse connection** – The current user hasn't created at least one **Microsoft Dataverse** connection reference.
-- **Not found** – The flow that is linked to the channel has been deleted in flow management. The channel should be saved again to create a new channel.
-- **Deactivated in flow management** – The flow has been deactivated in flow management, and the status of the channel differs from the status of the flow.
-- **Activated in flow management** – The flow has been activated in flow management, and the status of the channel differs from the status of the flow.
-- **An unexpected error occurred** – The user must confirm that the site is a "Communication site," and that the folder is "Document library."
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Invoice capture**.
+2. Select the **Sync all vendors** checkbox next to the onboarded legal entity.

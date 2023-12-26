@@ -34,7 +34,7 @@ This article provides information about functionality that makes it easy for war
 Before you can use the features that are described in this article, you must turn them on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the features and turn them on if they are required. Turn on both the following features, in the order that they are listed in. (Both features are for the **Warehouse management** module.)
 
 1. *Warehouse location status*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
-2. *Item consolidation location utilization*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
+2. *Item consolidation location utilization*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
 
 ## Warehouse location status
 

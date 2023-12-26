@@ -4,7 +4,7 @@ description: This article explains how to filter intercompany orders so that the
 author: negudava
 ms.date: 11/09/2020
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: negudava

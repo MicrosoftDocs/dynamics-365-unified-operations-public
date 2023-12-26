@@ -44,7 +44,7 @@ The scenarios that are presented in this article show how to set up default and 
 
 ## Turn on the Shipment consolidation policies feature
 
-To use the *Shipment consolidation policies* feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Shipment consolidation policies* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use the *Shipment consolidation policies* feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Shipment consolidation policies* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## <a name="initial-policies"></a>Set up your initial consolidation policies
 

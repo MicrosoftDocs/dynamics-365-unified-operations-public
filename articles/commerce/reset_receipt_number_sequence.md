@@ -1,33 +1,29 @@
 ---
-title: Reset receipt numbers
-description: This article describes how to reset the receipt numbers that are used for various actions on a desired date (for example, the fiscal year or calendar year).
+
+title: Configure and manage receipt numbers
+description: This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 10/06/2020
+ms.date: 09/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-01-14
-ms.dyn365.ops.version: Application update 10.0.9
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail, Commerce
-ms.search.form: 
+
 ---
 
-# Reset receipt numbers 
+# Configure and manage receipt numbers 
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> We require that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the device, where the POS is being used, should match the corresponding store time zone. Due to these limitations, we recommend that you do not use this feature in production while we work to fix these issues in a future release. 
+This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 
-Retailers generate receipt numbers for various actions in the store, such as cash and carry transactions, return transactions, customer orders, quotations, and payments. Although retailers define their own receipt formats, some countries or regions have regulations that put restrictions on these receipt formats. For example, these regulations might limit the number of characters on the receipt, require consecutive receipt numbers, restrict some special characters, or require a reset of receipt numbers at the beginning of the year. Microsoft Dynamics 365 Commerce makes the process of managing receipt numbers very flexible, to help retailers meet regulatory requirements. This article explains how to use the functionality for resetting receipt numbers.
+Retailers generate receipt numbers for various actions in their stores such as cash and carry transactions, return transactions, customer orders, quotations, and payments. Although retailers define their own receipt formats, some countries or regions have regulations that put restrictions on receipt formats. For example, regulations might limit the number of characters on the receipt, require consecutive receipt numbers, restrict some special characters, or require a reset of receipt numbers at the beginning of each year. Dynamics 365 Commerce helps retailers meet regulatory requirements by making the process of managing receipt numbers very flexible.
 
-In Commerce, receipt formats can be alphanumeric. You can put both static content and dynamic content in them. Static content includes alphabetic character, numbers, and special characters. Dynamic content includes one or more characters that represent information such as the store number, terminal number, date, month, year, and number sequences that are automatically incremented. The formats are defined in the **Receipt numbering** section of the functionality profile. The following table describes the characters that represent the dynamic content.
+## Define receipt number formats
+
+Receipt numbering formats are composed of both static content and dynamic content. Static content includes alphabetic character, numbers, and special characters. Dynamic content includes one or more characters that represent information such as the store number, terminal number, date, month, year, and number sequences that are automatically incremented. The formats are defined in the **Receipt numbering** section of the functionality profile. The following table describes the characters that represent the dynamic content.
 
 | Characters | Description |
 |------------|-------------|
@@ -40,15 +36,21 @@ In Commerce, receipt formats can be alphanumeric. You can put both static conten
 | YY         | The characters **YY** are used for the two-digit year. For example, in any month during the year 2020, the format **YY** shows "20" on the receipt. |
 | \#         | A number sign (**\#**) is used for sequential numbering. For example, the format **####** shows "0001," "0002," "0003," and so on, on the receipt. |
 
+## Reset sequential receipt numbering
+
 You can reset the sequential numbering of the receipt on a specific date. Then, for the first transaction that occurs after 12:00 AM on the selected reset date, the system resets the receipt's number sequence to 1. You can also specify whether the reset occurs only one time, or whether it recurs every year. If yearly recurrence is specified, the reset automatically occurs every year until the retailer chooses to stop it. 
 
-To turn on the reset, follow these steps.
+> [!NOTE]
+> Microsoft requires that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the POS device must match the corresponding store time zone. Due to these limitations, Microsoft recommends that you don't use this feature in production until fixes for these issues are included in a future release. 
+
+To enable resetting of receipt numbers in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. On the **Receipt numbering** FastTab, select **Reset number reset date**.
 1. In the drop-down dialog box, in the **Reset date** field, select a future date when the reset should occur.
 1. In the **Reset receipt type** field, select **One time only** or **Yearly**.
 1. Select **OK**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule** and run the **1070 (Channel configuration)** job to synchronize the latest functionality profile settings to POS clients.
 
 ![Selecting a receipt reset date.](media/Enable_receipt_reset.png "Selecting a receipt reset date")
 
@@ -59,7 +61,35 @@ When the reset date arrives, the receipt number is reset for the first transacti
 You can use the **Clear reset date** functionality to clear future reset dates. However, if the reset date occurred in the past, it can't be undone. Therefore, the reset will still occur for all registers where the reset hasn't yet occurred.
 
 > [!NOTE]
-> Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
+> - If you use the **Independent sequence** property for some or all receipt types, ensure that you include dynamic date characters (for example, "ddd", "MM", "DD", and "YY") to help prevent duplicate receipt IDs.
+> - The reset date set in **Functionality profiles** isn't associated with a specific time zone. For example, if you select **January 1, 2020** as the reset date, POS devices in all time zones will reset the receipt back to "1" on January 1, 2020 local time.
+> - If you want the receipt masks to be changed together when the reset date arrives, follow the steps in [Make receipt masks change when the reset date arrive](#make-receipt-masks-change-when-the-reset-date-arrives) below. 
+> - Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
+
+## Force synchronization of number sequence data at app launch
+
+Organizations that have strict requirements for receipt ID uniqueness can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit whenever POS is initialized. This guarantees that the POS will always have the most current number sequence before any transactions are executed. 
+
+To enable synchronization of number sequence data at app launch, follow these steps.
+
+1. In headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and then select the functionality profile used by the store(s) for which you want to enable the feature.
+2. In the **Receipt number synchronization** section, enable the **Retrieve the latest number sequence data** setting. 
+3. Go to **Retail and Commerce \> Retail and Commerce ID > Distribution schedule**, and then run the **1070 (Channel configuration)** job.  
+
+> [!NOTE]
+> When the **Retrieve the latest number sequence data** setting is enabled, the first sign-in following app launch may take longer than usual and the Commerce Scale Unit (CSU) will incur some additional load.
+
+## Make receipt masks change when the reset date arrives
+
+To make receipt masks change when the reset date arrives in headquarters, follow these steps.
+
+1. In **Functionality profiles**, set the reset date to a date before the actual reset date (for example, one week before).
+1. Run the **1070 (Channel configuration)** job.
+1. When the reset date arrives, before opening the store, in **Functionality profiles**, set the receipt masks as desired.
+1. Run the **1090 (Registers)** job.
+1. After you finish configuring all these settings, ensure that you relaunch POS to update this new configuration to POS devices. 
+1. When you've completed the steps above, open POS and start creating new orders. POS will now create orders using new receipt masks with the receipt ID reset.
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: Define compensation process and calculate results
 description: Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. 
 author: twheeloc
 ms.date: 08/25/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

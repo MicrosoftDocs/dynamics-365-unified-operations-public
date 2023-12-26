@@ -2,17 +2,16 @@
 title: Commerce runtime (CRT) extensibility and triggers
 description: This article explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 author: josaw1
-ms.date: 08/20/2020
+ms.date: 11/14/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 17731
 ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc
 ms.search.industry: Retail
 ---
@@ -30,6 +29,9 @@ Commerce runtime (CRT) triggers give you a way to extend the CRT workflow, and l
 -   **OnExecuting** – This method is invoked before a request has been processed by a corresponding **IRequestHandler** implementation.
 -   **OnExecuted** – This method is invoked after the request has been processed by a corresponding **IRequestHandler** implementation.
 
+> [!NOTE]
+> If you extend a CRT request that is used by a high-volume API (for example, Carts/AddCartLines or Products/GetByIds), and your extension needs to read from the channel database, Microsoft recommends that you enable the cache for the database reading. Otherwise, the extension will consume too much Retail Server and channel database resources, which can cause overall Commerce Scale Unit (CSU) performance issues that impact your business.
+
 ## CRT trigger extension
 To implement a trigger, you must complete these tasks, as shown in the code example that follows:
 
@@ -41,14 +43,14 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 ### Sample trigger implementation for Get customer data request:
 
 ```C#
-    
+
         using Microsoft.Dynamics.Commerce.Runtime;
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
         using System;
         using System.Collections.Generic;
         using System.Threading.Tasks;
-        
+
         public class GetCustomerTriggers : IRequestTriggerAsync
         {
             /// <summary>
@@ -70,8 +72,8 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
             public async Task OnExecuted(Request request, Response response)
             {
                 //Custom logic
-                
-            // The only stub to handle async signature 
+
+            // The only stub to handle async signature
                 await Task.CompletedTask;
             }
 
@@ -81,7 +83,7 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
             /// <param name="request">The request.</param>
             public async Task OnExecuting(Request request)
             {
-                // custom logic 
+                // custom logic
                 await Task.CompletedTask;
             }
         }
@@ -92,7 +94,7 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section. In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.
 
 ```xml
-<add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
+<add source="assembly" value="Contoso.Commerce.Runtime.Services" />
 ```
 
 For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section. Then copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.

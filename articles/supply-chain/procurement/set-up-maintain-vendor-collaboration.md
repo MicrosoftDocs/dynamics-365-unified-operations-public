@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 # ROBOTS: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
@@ -117,7 +117,7 @@ To set up this branching, create a new workflow of the **User Request Workflow (
 #### Branch to provision new users
 
 1. Assign an approval task to the person who is responsible for approving that new users should be granted access to vendor collaboration information.
-2. Assign a task to the person who is responsible for requesting new Microsoft Azure Active Directory (Azure AD) user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. B2B users can be automatically exported to Azure AD. Use the predefined **Provision Azure AD B2B user**. For more information, see [Export B2B users to Azure AD](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).
+2. Assign a task to the person who is responsible for requesting new Microsoft Microsoft Entra user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. B2B users can be automatically exported to Microsoft Entra ID. Use the predefined **Provision Microsoft Entra B2B user**. For more information, see [Export B2B users to Microsoft Entra ID](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).
 3. Assign an approval task to the person who uploads to Azure. If an account isn't successfully created, this person rejects the task and ends the workflow. This approval task can be skipped if you've included the step that automatically exports new user accounts to Azure via the B2B application programming interface (API).
 4. Add an automated task that provisions a new user. Use the predefined **Automated provision user** task for this step.
 5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Supply Chain Management. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portalURL%** tag. When the welcome email is generated, this tag will be replaced by the URL of the Supply Chain Management tenant.
@@ -146,9 +146,9 @@ Before you create a user account for someone who will use vendor collaboration, 
 
 New vendor collaboration users are provisioned via the workflow that you set up to process vendor collaboration user requests of the **Provision vendor user** type.
 
-If the email address of a new vendor collaboration user belongs to a domain that is registered with Azure as a tenant (that is, if it's a managed domain account), the email address must be an existing Azure AD account. Otherwise, the provisioning process can't be completed.
+If the email address of a new vendor collaboration user belongs to a domain that is registered with Azure as a tenant (that is, if it's a managed domain account), the email address must be an existing Microsoft Entra account. Otherwise, the provisioning process can't be completed.
 
-For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Azure AD account management, see [Azure Active Directory B2B collaboration](/azure/active-directory/external-identities/what-is-b2b).
+For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Microsoft Entra account management, see [Microsoft Entra B2B collaboration](/azure/active-directory/external-identities/what-is-b2b).
 
 ## Additional resources
 

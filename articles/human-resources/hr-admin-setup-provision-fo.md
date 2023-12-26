@@ -93,7 +93,7 @@ Microsoft Power Platform provides a suite of capabilities for Dynamics 365 appli
 
 ## Supported geographies
 
-For information about the languages and geographies that are supported for Human Resources, see [Global by design: learn about countries and languages supported](https://dynamics.microsoft.com/availability-reports/).
+For information about the languages and geographies that are supported for Human Resources, see [Global by design: learn about countries/regions and languages supported](https://dynamics.microsoft.com/availability-reports/).
 
 ## Grant access to the environment
 

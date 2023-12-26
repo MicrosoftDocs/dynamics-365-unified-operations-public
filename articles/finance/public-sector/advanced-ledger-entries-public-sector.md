@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 19511
 ms.assetid: 3db0233e-d767-4dc0-b008-733098b6ca70
 ms.search.region: Global
 ms.search.industry: Public sector

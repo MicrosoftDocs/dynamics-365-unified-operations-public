@@ -17,7 +17,6 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 70292
 ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,22 +36,24 @@ This article provides information about maintenance mode in finance and operatio
 > After enabling maintenance mode on an environment, only one interactive AOS and one non-interactive AOS (batch AOS) will be available for use.
 
 ## Turn maintenance mode on and off on sandbox and production environments through Lifecycle Services 
-You can now turn maintenance mode on and off directly through Lifecycle Services (LCS) on your sandbox and production environments. Refer to the following steps to do this:
+You can now turn maintenance mode on and off directly through Microsoft Dynamics 365 Lifecycle Services on your sandbox and production environments. 
+
+To turn maintenance mode on and off directly through Lifecycle Services, follow these steps.
 
 1. Go to the environment details page and on the **Maintain** menu, click **Enable Maintenance Mode**. 
 2. In the slider, set **Turn maintenance mode on** for the environment and select **Confirm**.
 3. A servicing operation will begin and your system  will go into maintenance mode.
 4. On completion, the environment state will be **In Maintenance**. At this point, only the system administrator will have access to the environment.
 5. After you are done making system-wide changes, you can turn off maintenance mode by clicking **Disable Maintenance Mode** under the **Maintain** menu.
-6. This will start a servicing operation that takes your environment out of maintenance mode. You can see the progress of the operation in the environment details page.
+6. A servicing operation starts and takes your environment out of maintenance mode. You can see the progress of the operation in the environment details page.
 7. After this is complete, your environment goes back to the **Deployed** state. Now all users can sign in to the environment.
 8. You can check the environment history page to see when the maintenance mode was turned on or turned off. To get to the environment history page, select **History** and **Environment changes** on the environment details page.
 
-Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You also have the option to **download the logs** to troubleshoot why the operation failed.
+Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You can also **download the logs** to troubleshoot why the operation failed.
 
 ## Turn maintenance mode on and off in DevTest/Demo environments hosted in Customer's subscription
 1. Establish an RDP connection to the developer machine.
-2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from LCS. Then switch to the AXDB database, and run the following command.
+2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from Lifecycle Services. Then switch to the AXDB database, and run the following command.
 
     ```Console
     update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
@@ -85,6 +86,25 @@ The following table describes the parameters that are used in this command.
 | --sqluser                   | Use this parameter to specify the SQL Server user. You should use **AOSUser**.                                    |
 | --sqlpwd                    | Use this parameter to specify the SQL Server password.                                                            |
 | --isinmaintenancemode       | Use this parameter to turn configuration mode on or off. Use **true** to turn it on and **false** to turn it off. |
+
+
+## Turn maintenance mode on and off in Finance + Operations (on-premises) environments
+
+Ensure you have at least version 2.18.2 of the infrastructure scripts. For more information on obtaining the scripts, see [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment](../deployment/obtain-infrascripts-onprem.md).
+
+1. To enable maintenance mode, run the following script from any node in your Service Fabric cluster.
+```powershell
+.\Set-MaintenanceMode.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Enable
+```
+> [!IMPORTANT]
+> The script will restart all of your Application Object Server (AOS) instances.
+
+1. After your AOS instances are running again, the system will be in maintenance mode.
+1. When you've completed your maintenance mode activities, run the following script from any node in your Service Fabric cluster.
+```powershell
+.\Set-MaintenanceMode.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Disable
+```
+
 
 ## Enable (or disable) configuration keys
 

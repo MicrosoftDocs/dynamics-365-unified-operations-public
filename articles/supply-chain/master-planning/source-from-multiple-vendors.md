@@ -37,7 +37,7 @@ Automatic vendor selection that's based on predefined splits helps improve suppl
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.31 or later.
-- The feature that's named *Source products and materials from multiple vendors using Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Source products and materials from multiple vendors using Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is turned on by default.
 
 ## Define multisource policies
 
@@ -89,7 +89,7 @@ To set up minimum order per vendor rules, follow these steps.
     - **Vendor account** – Select the vendor that the rule applies to.
     - **Item number** – Select the item that the rule applies to.
     - **Minimum** – Enter the minimum purchase per order for the specified combination of a vendor and an item.
-    - **Unit** – Select the unit of measure that applies to the **Minimum** value.
+    - **Unit** – Shows the purchase unit of measure for the selected item (read only). It applies to the **Minimum** value.
 
 1. On the Action Pane, select **Save**.
 

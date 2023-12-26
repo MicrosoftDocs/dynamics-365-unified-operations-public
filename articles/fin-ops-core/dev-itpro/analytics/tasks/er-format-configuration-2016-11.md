@@ -3,10 +3,10 @@ title: ER Create a format configuration (November 2016)
 description: This article explains how to create a format configuration for Electronic reporting (ER).
 author: kfend
 ms.date: 08/02/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

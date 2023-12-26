@@ -5,7 +5,7 @@ title: Trace an item or raw material
 description: This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. 
 author: yufeihuang
 ms.date: 08/12/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure demonstrates how to use item tracing to identify where items or r
 
 
 ## Trace an item backwards using a known batch number
-1. In the **Navigation pane**, go to **Modules > Inventory management > Inquiries and reports > Tracking dimensions > Item tracing**.
+1. Go to **Inventory management > Inquiries and reports > Tracking dimensions > Item tracing**.
 2. In the **Item number** field, select 'P9100'.
 3. In the list, click the link in the selected row.
 4. In the **Forward or backward** field, select 'Backward'.

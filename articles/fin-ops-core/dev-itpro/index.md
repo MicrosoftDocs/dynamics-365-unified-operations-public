@@ -2,8 +2,8 @@
 title: Development and administration for finance and operations apps
 description: This page helps developers and IT Pros get started with finance and operations.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: index-page
+ms.date: 06/20/2023
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: IT Pro, Developer
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ---
 
@@ -66,6 +66,6 @@ Data from finance and operations can easily be integrated with Microsoft and non
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration overview](office-integration/office-integration.md).
 
 ## eLearning courses
-For online courses and training, check out [Dynamics 365 finance and operations](/training/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper).
+For online courses and training, check out [Dynamics 365 finance and operations](/training/browse/?expanded=dynamics-365&products=dynamics-finance&roles=administrator%2cdeveloper).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

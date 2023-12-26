@@ -6,13 +6,12 @@ ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 97423
 ms.assetid: 
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ---

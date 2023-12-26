@@ -2,17 +2,17 @@
 title: Help system (contains video)
 description: This article provides an overview of the Help system for finance and operations apps.
 author: edupont04
-ms.date: 08/16/2022
+ms.date: 04/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: edupont
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 16381,  ""intro-internal
+ms.collection: get-started
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
 ---
@@ -22,7 +22,7 @@ ms.search.form: SystemParameters
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 
@@ -44,6 +44,20 @@ The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn i
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
+## Use Microsoft Copilot to get conversational guidance (preview)
+
+[!INCLUDE [preview-banner-section](../../../supply-chain/includes/preview-banner-section.md)]
+
+Microsoft Copilot for finance and operations apps gives users a conversational guide that's always nearby and ready to help. Users can ask questions in natural language. Copilot then identifies the relevant content in the documentation and composes a targeted response to the question.
+
+[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
+
+After Copilot is enabled for your system, users can open the Copilot sidecar by using the Copilot button at the top of the page.
+
+[<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
+
+For more information, see [Microsoft Copilot for finance and operations apps (Preview)](../copilot/copilot-for-finance-operations.md).
+
 ## Get notified about changes through an RSS feed
 
 To subscribe to an RSS feed of all updates made to the content on Microsoft technical documentation across the finance and operations apps, use the following link:
@@ -63,7 +77,9 @@ Alternatively, you can subscribe to an RSS feed by app:
 
 ### Leave us feedback
 
-If you have feedback or questions about a article, leave us a comment at the bottom of the page.
+On the *learn.microsoft.com* website, each documentation article encourages you to provide feedback. We've changed the mechanism a couple of times based on, well, feedback. Currently, we ask you to choose the **Feedback** action below the article's title. You can give the article a rating, and write a comment if you want to. The feedback goes straight to the article's author and the team that owns the docs.  
+
+<!--If you have feedback or questions about an article, leave us a comment at the bottom of the page.
 
 1. Select **Feedback** to get to the comments at the bottom of the page. Then, select either **Product feedback** or **Sign in to give documentation feedback**.
 
@@ -72,17 +88,17 @@ If you have feedback or questions about a article, leave us a comment at the bot
     ![Post comment.](./media/feedback.png)
 
 > [!NOTE]
-> If you want to submit documentation feedback, you must sign in by using a GitHub account. For more information, see [Setting up and managing your GitHub profile](https://help.github.com/github/setting-up-and-managing-your-github-profile).
+> If you want to submit documentation feedback, you must sign in by using a GitHub account. For more information, see [Setting up and managing your GitHub profile](https://help.github.com/github/setting-up-and-managing-your-github-profile).-->
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a article. The following video shows how you can contribute to our documentation.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. The following video shows how you can contribute to our documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
 
-For more information, see the [Microsoft Docs contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
+For more information, see the [Microsoft Learn contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
@@ -114,14 +130,14 @@ To access Help content, select the **Help** button (**?**), and then select **He
 
 ### Accessing Help topics from the Help pane
 
-From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a article in the **Help** pane, it's opened on a new tab in your browser.
+From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select an article in the **Help** pane, it's opened on a new tab in your browser.
 
 > [!IMPORTANT]
 > This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to task guides for the product. Also, you cannot create custom task guides for Human Resources.
 
 ### Accessing task guides from the Help pane
 
-Before you can access task guides from the **Help** pane, a system admin must configure some settings on the **System parameters** page in Finance, Supply Chain Management, or Commerce. For more information, see [Adding task guides](help-connect.md#adding-task-guides).
+Before you can access task guides from the **Help** pane, a system admin must configure some settings on the **System parameters** page in Finance, Supply Chain Management, or Commerce. For more information, see [Adding task guides](../../dev-itpro/get-started/help-connect.md#adding-task-guides).
 
 <!-- > [!NOTE]
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.

@@ -5,7 +5,7 @@ title: Create call center orders
 description: This article walks through an example procedure where a call center user looks up a customer, creates a new order, searches for a product, and collects payment from the customer in Microsoft Dynamics 365 Commerce. 
 author: josaw1
 ms.date: 08/05/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

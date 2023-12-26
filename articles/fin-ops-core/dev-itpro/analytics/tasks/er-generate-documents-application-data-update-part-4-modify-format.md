@@ -3,10 +3,10 @@ title: Modify formats to generate documents that have application data
 description: This article describes how to design reporting configurations to generate an electronic document and update application data.
 author: kfend
 ms.date: 06/19/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 10.0.17
 
 You can use the *material handling equipment interface* (MHAX) to connect external physical material handling (MH) systems to a warehouse that is managed by warehouse management processes (WMS) in Microsoft Dynamics 365 Supply Chain Management. The interface between the WMS and MH systems consists of two queues: one for outbound events (WMS to MH) and one for inbound events (MH to WMS). The WMS system generates outbound events based on work lines that are created during various work creation and execution processes. The MH system then regularly polls the WMS system for new events and processes the responses. After the MH system has finished handling the events in accordance with work instructions, it sends inbound events, such as work line completion and short picking.
 
+> [!IMPORTANT]
+> By enabling this feature, your data may be shared with the third-party services that you select. You control what data is shared with the third-party (if any). Your use of the third-party services is your responsibility and is governed by terms agreed between you and the third party. Your privacy is important to us. To learn more, read our [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
+
 The following illustration shows the various elements and the order that processes occur in when you use MHAX integration.
 
 ![MHAX components and interactions.](media/mhax-components.png "MHAX components and interactions")
@@ -46,7 +49,7 @@ Here is an explanation of the interactions that are shown in the previous illust
 
 Before you can use the MHAX feature, you must turn on both its feature and its configuration key.
 
-1. If you are running Supply Chain Management version 10.0.28 or earlier, do the following steps:
+1. If you're running Supply Chain Management version 10.0.28 or earlier, do the following steps:
     1. Go to **System administration \> Workspaces \> Feature management**.
     1. In the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, turn on the feature that is named *Material handling equipment interface*. (As of Supply Chain Management 10.0.29, this feature is mandatory and can't be turned off.)
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).

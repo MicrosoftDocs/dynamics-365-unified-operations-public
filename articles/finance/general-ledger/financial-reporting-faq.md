@@ -5,7 +5,7 @@ title: Financial reporting FAQ
 description: This article provides answers to some frequently asked questions about Financial reporting.
 author: jinniew
 ms.date: 07/07/2021
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -84,7 +84,7 @@ The message indicates that an issue occurred when the system tried to retrieve f
 
 ## How does the selection of historical rate translation affect report performance?
 
-The historical rate is typically used with retained earnings, property, plant and equipment, and equity accounts. The historical rate might be required, based on guidelines of the Financial Accounting Standards Board (FASB) or generally accepted accounting principles (GAAP). For more information, see [Currency capabilities in financial reporting](financial-reporting-currency-capability.md).
+The historical rate is typically used with retained earnings, property, plant and equipment, and equity accounts. The historical rate might be required, based on guidelines of the Financial Accounting Standards Board (FASB) or generally accepted accounting principles (GAAP). For more information, see [Currency capabilities in financial reporting](../dev-itpro/financial-reporting-currency-capability.md).
 
 ## How many types of currency rate are there?
 

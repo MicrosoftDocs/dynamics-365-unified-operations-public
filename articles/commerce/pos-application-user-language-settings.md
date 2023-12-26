@@ -1,8 +1,8 @@
 ---
 title: Point of sale (POS) application and user language settings
-description: This article describes how to change language settings in Modern POS (MPOS) and Cloud POS.
+description: This article describes how to change language settings in the Store Commerce app and Store Commerce for web.
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.industry: Retail
 ms.search.form: HcmWorker, RetailStoreTable
@@ -22,14 +21,13 @@ ms.search.form: HcmWorker, RetailStoreTable
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to change language settings in Modern POS (MPOS) and Cloud POS.
+This article describes how to change language settings in the Store Commerce app and Store Commerce for web.
 
-## Overview
-Modern POS (MPOS) and Cloud POS support environments where language settings and translations can vary between the store and user settings. For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.
+The Store Commerce app and Store Commerce for web support environments where language settings and translations can vary between the store and user settings. For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.
 
 ## Data language
 
-Regardless of the user's settings, MPOS and Cloud POS will always use the store's language settings to determine the translations used for data. This will ensure that all users and customers will have a consistent experience. Examples of data include:
+Regardless of the user's settings, the Store Commerce app and Store Commerce for web will always use the store's language settings to determine the translations used for data. This will ensure that all users and customers will have a consistent experience. Examples of data include:
 
 - Products
 - Attributes and values

@@ -2,7 +2,7 @@
 title: Development in cloud-hosted environments without admin access
 description: This article demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
 author: josaw1
-ms.date: 07/28/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,13 +26,13 @@ You can use a remote desktop (RDP) to access these restricted environments using
 
 If you need admin access in your environment, use your Azure subscription and deploy the environment using LCS. You can also use the downloadable VHD and deploy it in your Azure VM or host it locally to get full admin access.
 
-If you don’t have admin access in the environment, you will not be able to test and debug using Modern POS. You can still do all commerce customization for POS if you are testing the customization, you must use Cloud POS in that environment. From a customization perspective, there is no difference between Cloud POS and Modern POS - any customization will work both in Cloud POS and Modern POS. There is no additional logic or code for customization completed in Cloud POS in order to work in Modern POS or vice versa, unless you added logic that is browser-specific or UWP app- specific for Hardware and other scenarios. Another option is to do all development work in the environment using Modern POS and test it in some other environment where you have admin access to install MPOS. In most cases, you should be able to test using Cloud POS, expect if you want to test for offline scenarios. If you want to test offline scenarios, you can create a Modern POS installer using the build script, and then test it in your test environment or some other POS registers.
+If you don’t have admin access in the environment, you will not be able to test and debug using the Store Commerce app. You can still do all commerce customization for POS if you are testing the customization, you must use Store Commerce for web in that environment. From a customization perspective, there is no difference between Store Commerce for web and the Store Commerce app - any customization will work both in Store Commerce for web and the Store Commerce app. There is no additional logic or code for customization completed in Store Commerce for web in order to work in the Store Commerce app or vice versa, unless you added logic that is browser-specific or UWP app- specific for hardware and other scenarios. Another option is to do all development work in the environment using the Store Commerce app and test it in some other environment where you have admin access to install the Store Commerce app. In most cases, you should be able to test using Store Commerce for web, expect if you want to test for offline scenarios. If you want to test offline scenarios, you can create a Store Commerce appS installer using the build script, and then test it in your test environment or some other POS registers.
 
-**If you are using Cloud POS for development, set up the following configuration before opening the Cloud POS project**
+**If you are using Store Commerce for web for development, set up the following configuration before opening the Store Commerce for web project**
 
-1. Open Visual Studio and go to **View** > **Application Explorer**. Wait for Internet Information Services (IIS) Express to start with all the Commerce websites deployed. You should see the IIS tray icon in the task bar with all the websites running, such as Cloud POS and Commerce Scale Unit.
+1. Open Visual Studio and go to **View \> Application Explorer**. Wait for Internet Information Services (IIS) Express to start with all the Commerce websites deployed. You should see the IIS tray icon in the task bar with all the websites running, such as Store Commerce for web and Commerce Scale Unit.
 4. To debug CRT/RS extensions, attach the CRT/RS project to the IIS Express process.
-5. When you open the Cloud POS project from the Retail SDK, IIS Express may fail with the following error. 
+5. When you open the Store Commerce for web project from the Retail SDK, IIS Express may fail with the following error. 
 
     ```Console
     Filename: redirection.config
@@ -55,9 +55,9 @@ If you don’t have admin access in the environment, you will not be able to tes
     ```
 5. Save the changes to **applicationhost.config** 
 6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the **applicationhost.config** file to a new location in **step 8**.
-7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated with the default config files.
+7. Start Visual Studio again with the Store Commerce for web project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated with the default config files.
 8. Copy the **applicationhost.config** file from the folder that you renamed in **step 6**, to the folder created in **step 7**. 
-9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Cloud POS URL and set **UseIIS** to false.
+9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Store Commerce for web URL and set **UseIIS** to false.
 ```    
     Ex:  
     <UseIIS>False</UseIIS>

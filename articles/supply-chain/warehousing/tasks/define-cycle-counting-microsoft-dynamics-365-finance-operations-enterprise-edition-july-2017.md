@@ -5,7 +5,7 @@ title: Define cycle counting
 description: Cycle counting is a warehouse process that you can use to audit on-hand inventory items. 
 author: Mirzaab
 ms.date: 08/12/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -30,14 +30,14 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 
 
 ## Set the priority of counting work
-1. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Warehouse management parameters**.
+1. Go to **Warehouse management > Setup > Warehouse management parameters**.
 2. Click the **Cycle counting** tab.
 3. In the **Default cycle count work priority** field, enter a number. This step changes the priority of cycle counting work compared to other types of work in the warehouse. By entering a number that is lower than the number for other types of work, you raise the priority of the cycle counting work.  
 4. Click **Save**.
 5. Close the page.
 
 ## Enable the mobile device
-1. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 2. Click **New**.
 3. In the **Menu item name** field, type a value.
 4. In the **Title** field, type a value.
@@ -51,7 +51,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 12. In the **Work class ID** field, select a value.
 13. In the **Action Pane**, click **Save**.
 14. Close the page.
-15. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.
+15. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
 16. In the list, find and select the desired record.
 17. In the tree, select 'the menu item that you just created'.
 18. Click **Edit**.
@@ -59,7 +59,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 20. Click **Save**.
 
 ## Create a counting threshold
-1. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Cycle counting > Cycle count thresholds**.
+1. Go to **Warehouse management > Setup > Cycle counting > Cycle count thresholds**.
 2. Click **New**.
 3. In the **Cycle counting threshold ID** field, type a value.
 4. Set the **Process cycle counting immediately** option to Yes.
@@ -72,7 +72,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 11. Close the page.
 
 ## Create a cycle count plan
-1. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Cycle counting > Cycle count plans**.
+1. Go to **Warehouse management > Setup > Cycle counting > Cycle count plans**.
 2. Click **New**.
 3. In the **Cycle counting plan ID** field, type a value.
 4. In the **Description** field, type a value.

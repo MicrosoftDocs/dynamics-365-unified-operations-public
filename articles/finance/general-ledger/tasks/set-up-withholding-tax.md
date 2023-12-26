@@ -4,8 +4,8 @@
 title: Set up withholding tax
 description: This article explains how to set up withholding tax.   
 author: twheeloc
-ms.date: 07/11/2019  
-ms.topic: business-process  
+ms.date: 05/23/2023  
+ms.topic: how-to  
 ms.prod:  
 ms.technology:  
  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This article explains how to set up withholding tax. *Withholding tax* is a tax on vendors that does not create sales tax transactions. Withholding tax that is calculated on vendor payments is a liability. Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax. This task guide demonstrates how to set up withholding tax.
 
-1. Go to **Navigation pane > Modules > Tax > Indirect taxes > Withholding tax > Withholding tax codes**.
+1. Go to **Tax > Indirect taxes > Withholding tax > Withholding tax codes**.
 2. Select **New**.
 3. In the **Withholding tax code** field, type a value.
 4. In the **Withholding tax name** field, enter the name of the withholding tax code.
@@ -41,7 +41,7 @@ This article explains how to set up withholding tax. *Withholding tax* is a tax 
 10. Close the page.
 11. Select **Save**.
 12. Close the page.
-13. Go to **Navigation pane > Modules > Tax > Indirect taxes > Withholding tax > Withholding tax groups**.
+13. Go to **Tax > Indirect taxes > Withholding tax > Withholding tax groups**.
 14. Select **New**.
 15. In the **Withholding tax group** field, enter the identifier of the withholding tax group.
 16. In the **Description** field, enter the name of the withholding tax group.

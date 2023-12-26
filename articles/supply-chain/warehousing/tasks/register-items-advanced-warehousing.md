@@ -5,7 +5,7 @@ title: Register items enabled for warehouse management processes using an item a
 description: This article presents a scenario that shows how to register items using the item arrival journal when you are using warehouse management processes (WMS). 
 author: Mirzaab
 ms.date: 03/24/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -4,8 +4,8 @@
 title: Record a vendor invoice in the invoice journal
 description: This task guide will show how to record vendor invoices that are not associated with purchase orders. 
 author: abruer
-ms.date: 07/11/2019
-ms.topic: business-process 
+ms.date: 02/08/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -34,7 +34,7 @@ This task guide will show how to record vendor invoices that are not associated 
 3. Click **New**.
 4. In the **Name** field, enter the journal name or click the drop down button to open the lookup.
 5. In the **Description** field, type a value.
-6. On the **Action pane**, click **Lines**. In the **Date** field, enter the posting date that will update General Ledger.  
+6. On the **Action pane**, click **Lines**. In the **Date** field, enter the posting date that will update General ledger.  
 7. In the **Account** field, specify the **Vendor account**.
 8. In the **Invoice** field, enter the invoice number.
 9. In the **Description** field, type a value.
@@ -45,10 +45,15 @@ This task guide will show how to record vendor invoices that are not associated 
     * The **Due date** will be calculated based on the Terms of payment.  
     * The **Cash discount** will default from the Vendor account.
 12. If you have enabled Vendor invoice journal workflow, click **Workflow > Submit**.
-    * When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is On hold or Closed for ledger posting.
-12. Click **Post**.
-13. Close the page.
+    * When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is **On hold** or **Closed** for ledger posting.
+13. Click **Post**.
+14. Close the page.
 
+## Validation and simulation posting in vendor invoice journal
+
+On the Vendor invoice journal, the **Validation** and **Simulate posting** options are available on the **Validate** menu. 
+ - **Validate** -  The journal is tested for specific error conditions. The validation will return only successful or error messages. 
+ - **Simulate posting** - The posting process is run without posting the journal and the details of voucher transactions will be diplayed. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

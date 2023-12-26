@@ -35,15 +35,10 @@ This warehousing functionality is also referred to by other names, such as put-t
 
 ## Turn on the Outbound sorting feature
 
-Before you can use the *Put to wall - put to store* functionality, the *Outbound sorting* feature must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+To use the *Put to wall - put to store* functionality, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if necessary. Both of the following features are required:
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Outbound sorting*
-
-The *Outbound sorting* feature can be used in conjunction with the *Organization wide wave step code* feature if it's turned on. You must also turn on this feature if you will use predefined codes that are set up in wave step codes. In the **Feature management** workspace, this feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Organization wide wave step code*
+- *Outbound sorting* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
+- *Organization wide wave step code* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
 
 ## Setup
 
@@ -113,7 +108,7 @@ For this demo, standard Contoso data and warehouse *62* are used. Some additions
 
 ### Wave step codes
 
-If you turned on the *Organization wide wave step code* feature, set up the following code.
+If the *Organization wide wave step code* feature is turned on for your system, set up the following code.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave step codes**.
 1. On the Action Pane, select **New**, and then set the following values:

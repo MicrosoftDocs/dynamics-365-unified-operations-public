@@ -13,11 +13,11 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["56381", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the workflow system.
 
@@ -50,7 +50,7 @@ A workflow represents a business process. It defines how a document flows, or mo
 
 ![Workflow with elements that are assigned to users.](./media/workflow_user.gif)
 
-To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
+To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts submitted by Sam. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
 
 ## Benefits of using the workflow system
 
@@ -63,7 +63,7 @@ There are several benefits of using the workflow system in your organization:
 
 ## Workflow content
 
-+ [Workflow system architecture](workflow-system-architecture.md)
++ [Workflow system architecture](../../dev-itpro/organization-administration/workflow-system-architecture.md)
 + [Workflow elements](workflow-elements.md)
 + [Actions in workflow approval processes](workflow-actions.md)
 + [Create workflows overview](create-workflow.md)

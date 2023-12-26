@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 7.3
 ms.custom: 
 ms.search.form: SysCorpNetPrinterList
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Install network printer devices in on-premises environments

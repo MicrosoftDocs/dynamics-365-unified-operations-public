@@ -2,19 +2,14 @@
 title: Inventory lookup operation in POS
 description: This article describes how to use the inventory lookup operation in Dynamics 365 Commerce point of sale (POS) to view the on-hand inventory availability of products across stores and warehouses.
 author: boycezhu
-ms.date: 08/12/2021
+ms.date: 09/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: 2018-03-30
-ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+
 ---
 
 # Inventory lookup operation in POS
@@ -42,8 +37,10 @@ The list view of locations includes all stores and warehouses that are configure
 
 ![Inventory lookup operation list view.](media/inventory-lookup-list-view.png)
 
+The **Current store quantity** value in the preceding image is the available physical quantity of the product in the store that is associated with the POS device. This value won't change when you select different entries in the list view.
+
 > [!NOTE]
-> Make sure your current store is included in the associated fulfillment groups.
+> Ensure that your current store is included in the associated fulfillment groups.
 
 The following actions are available on the POS app bar:
 
@@ -85,7 +82,7 @@ In the matrix view, each cell represents an individual variant, and displays an 
 | **0** (zero)                             | A variant has been released to the selected location, but the item isn't available at the selected location. You can perform additional actions in the cell. |
 | **n/a**, or an inactive cell              | A variant hasn't been released to the selected location, and you can't perform additional actions in the cell. |
 
-The display order of the dimension values in the matrix view is based on the dimension display order configuration in Commerce headquarters. You can change the dimension display order configuration by selecting a new dimension to use. 
+The display order of the dimension values in the matrix view is based on the dimension display order configuration in Commerce headquarters. You can change the dimension display order configuration by selecting a new dimension to use.
 
 The following actions are available in the matrix view cell:
 
@@ -113,7 +110,7 @@ You can configure the inventory lookup operation to appear as a link in the butt
 
 ## Inventory lookup with channel-side calculation
 
-In Commerce release 10.0.9 and earlier, the **available physical** value in the inventory lookup operation is retrieved from Commerce headquarters via a real-time service call. In Commerce release 10.0.10 and later, you can configure the POS inventory lookup operation to use channel-side calculation on the Commerce server to determine the available physical value, which can provide a more reliable and more accurate estimate of the on-hand inventory by factoring in the transactional data that is not yet synchronized to headquarters. For more information about channel-side inventory calculation and related POS configuration in headquarters, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
+In Commerce release 10.0.9 and earlier, the **available physical** value in the inventory lookup operation is retrieved from Commerce headquarters via a real-time service call. In Commerce release 10.0.10 and later, you can configure the POS inventory lookup operation to use channel-side calculation on the Commerce server to determine the available physical value, which can provide a more reliable and more accurate estimate of the on-hand inventory by factoring in the transactional data that is not yet synchronized to headquarters. For more information about channel-side inventory calculation and related POS configuration in headquarters, see [POS inventory lookup with channel-side calculation](inventory-lookup-channel-side-calc.md).
 
 ## Additional resources
 

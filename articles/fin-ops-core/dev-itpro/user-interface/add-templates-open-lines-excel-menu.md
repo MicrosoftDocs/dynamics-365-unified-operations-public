@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 77432
 ms.assetid: 9793bf54-cfb8-4ba1-bc8f-ba49ef37884a
 ---
 

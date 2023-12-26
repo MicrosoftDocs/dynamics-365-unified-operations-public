@@ -109,9 +109,9 @@ To add an Azure AD B2C tenant to your environment, follow these steps.
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
 
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
 

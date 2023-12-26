@@ -5,7 +5,7 @@ title: Set up number sequences on an individual basis
 description: This article explains how to set up number sequences on an individual basis.  
 author: SunilGarg  
 ms.date: 08/16/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

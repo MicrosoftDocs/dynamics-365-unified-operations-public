@@ -3,10 +3,10 @@ title: Create configuration providers and mark them as active
 description: This article explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider.
 author: kfend
 ms.date: 07/02/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

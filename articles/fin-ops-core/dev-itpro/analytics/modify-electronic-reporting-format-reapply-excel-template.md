@@ -6,13 +6,12 @@ ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Developer, IT Pro, Application user
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 27621
 ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ---

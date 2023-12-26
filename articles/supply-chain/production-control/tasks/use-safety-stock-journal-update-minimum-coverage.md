@@ -5,7 +5,7 @@ title: Use the safety stock journal to update minimum coverage
 description: This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals. 
 author: johanhoffmann
 ms.date: 08/09/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,14 +31,14 @@ This procedure shows how to calculate minimum coverage proposals based on histor
 
 
 ## Create a new safety stock journal name
-1. In the **Navigation pane**, go to **Master planning > Setup > Safety stock journal names**.
+1. Go to **Master planning > Setup > Safety stock journal names**.
 2. Click **New**.
 3. In the **Name** field, type 'Material'.
 4. In the **Description** field, type 'Material'.
 5. Close the page.
 
 ## Create a safety stock journal
-1. In the **Navigation pane**, go to **Master planning > Master planning > Run > Safety stock calculation**.
+1. Go to **Master planning > Master planning > Run > Safety stock calculation**.
 2. Click **New**.
 3. In the **Name** field, enter or select a value. Select the safety stock journal name that you created, for example, Material.  
 4. Click **Create lines**.

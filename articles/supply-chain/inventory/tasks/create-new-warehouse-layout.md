@@ -5,7 +5,7 @@ title: Create a new warehouse layout
 description: This article describes how to set up information about the locations in a warehouse. 
 author: yufeihuang
 ms.date: 07/29/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This article describes how to set up information about the locations in a wareho
 
 
 ## Set the default location capacity
-1. In the navigation pane, go to **Modules > Inventory management > Setup > Inventory and warehouse management parameters**.
+1. Go to **Inventory management > Setup > Inventory and warehouse management parameters**.
 2. Select the **Locations** tab.
 3. In the **Standard width** field, enter a number.
 4. In the **Standard depth** field, enter a number.
@@ -40,7 +40,7 @@ This article describes how to set up information about the locations in a wareho
 7. Close the page.
 
 ## Define the location name format
-1. In the navigation pane, go to **Modules > Inventory management > Setup > Inventory breakdown > Warehouses**.
+1. Go to **Inventory management > Setup > Inventory breakdown > Warehouses**.
 2. Select **New**.
 3. In the **Warehouse** field, type a value.
 4. In the **Name** field, type a value.

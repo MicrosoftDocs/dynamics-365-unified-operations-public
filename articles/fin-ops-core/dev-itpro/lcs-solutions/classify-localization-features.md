@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 27601
 ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86
 ---
 
@@ -46,7 +45,7 @@ For more information about BPM, see [Upload custom business processes to Busines
 
 ## Additional resources
 
-- [Globalization resources](country-region.md)
+- [Globalization resources](../../fin-ops/lcs/country-region.md)
 
 
 

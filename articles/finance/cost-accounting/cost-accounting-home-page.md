@@ -17,7 +17,8 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["256254", "intro-internal"]
+ms.custom: ["256254"]
+ms.collection: get-started
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 # ms.search.industry: 

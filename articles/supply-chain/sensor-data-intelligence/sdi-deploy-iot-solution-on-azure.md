@@ -1,5 +1,5 @@
 ---
-title: Deploy an IoT solution on Azure
+title: Deploy an IoT solution on Azure (preview)
 description: Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. This article explains how to deploy an Internet of Things (IoT) solution on your Azure subscription. 
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,15 +13,28 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Deploy an IoT solution on Azure
+# Deploy an IoT solution on Azure (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
 
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
+
+## Prerequisites
+
+To deploy and administer Azure components for Sensor Data Intelligence, your Azure environment and user account must meet the following requirements:
+
+1. You must sign in using an Azure organizational account that is tied to your Supply Chain Management environment. You can't use a personal Azure account (such as one registered to an Outlook or Gmail address).
+1. Your Azure account must have one of the following security roles:
+    - Owner
+    - Co-administrator
+    - Service administrator
+    - Account administrator
+1. The Power Apps component framework must be enabled for your Azure environment. For instructions, see [Enable the Power Apps component framework](/powerapps/developer/component-framework/overview#enable-the-power-apps-component-framework).
 
 ## Video instructions
 
@@ -30,6 +43,9 @@ The following video shows how to [turn on the Sensor Data Intelligence feature](
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
 
 ## Procedure
+
+> [!IMPORTANT]
+> Before you start this procedure, make sure your Azure environment and user account fulfil the [prerequisites](#prerequisites) listed earlier in this article.
 
 Follow these steps to deploy the required resources on Azure.
 
@@ -55,7 +71,7 @@ Follow these steps to deploy the required resources on Azure.
 1. Copy the value in the **Client ID** field (for example, by selecting the **Copy to clipboard** button).
 1. Go back to the browser tab where Supply Chain Management is running, *but don't close the tab for the Azure portal*. The **Deploy the sample IoT solution to Azure** wizard page should still be open. 
 1. Select **Next**.
-1. On the **Connect Azure resources** page, in the **Azure AD Application client ID** field, paste the **Client ID** value that you copied.
+1. On the **Connect Azure resources** page, in the **Microsoft Entra Application client ID** field, paste the **Client ID** value that you copied.
 1. Go back to the browser tab where the Azure portal is open, *but don't close the tab for Supply Chain Management*. The details page for the resource should still be open.
 1. Select the browser's **Back** button to return to the list of resources in the new resource group.
 1. In the resource list, find the record where the **Type** field is set to *Azure Cache for Redis*. In the **Name** column, select the name to open the details page for the resource.

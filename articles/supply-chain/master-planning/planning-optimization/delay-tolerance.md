@@ -24,7 +24,7 @@ The delay tolerance functionality enables Planning Optimization to consider the 
 To make the delay tolerance functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features:
 
 - *Negative days for Planning Optimization* – This feature enables negative days settings for coverage groups and item coverage. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off.
-- *Make-to-order supply automation* – This feature enables negative days settings for master plans. (For more information, see [Make-to-order supply automation](../make-to-order-supply-automation.md).)
+- *Make-to-order supply automation* – This feature enables negative days settings for master plans. (As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off.) For more information, see [Make-to-order supply automation](../make-to-order-supply-automation.md).
 
 ## Delay tolerance in Planning Optimization
 

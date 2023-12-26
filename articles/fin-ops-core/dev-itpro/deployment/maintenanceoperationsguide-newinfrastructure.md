@@ -17,7 +17,6 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 24211
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka

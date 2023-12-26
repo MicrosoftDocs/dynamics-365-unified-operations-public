@@ -10,7 +10,6 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 26821
 ---
 
 # Write business logic by using C# and X++ source code
@@ -39,7 +38,7 @@ You can create a reference from a project to the C\# class library, or to any ot
 
 1.  In Visual Studio, click **File** &gt; **Open project/solution**.
 2.  In the **Open Project** dialog box, in the **File name** text box, type the following path, and then press **Enter**: *C:\\users\\public\\desktop\\FleetManagement*.
-3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
 
     [![OpenProject\_LinqC.](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
 

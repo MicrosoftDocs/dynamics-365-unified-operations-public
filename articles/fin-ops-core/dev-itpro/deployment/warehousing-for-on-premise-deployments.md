@@ -17,7 +17,6 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
 # ms.search.industry: 
@@ -42,7 +41,7 @@ The Warehousing app is available on Android and Windows operating systems. To us
 | App version            | 1.1.1.0 and above                                                                  |
 | Dynamics 365 | Dynamics 365 Finance + Operations (on-premises) with Platform update 11 |
 
-To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-pu12.md#setup).
+To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-latest.md#setup).
 
 ## Create an application entry in AD FS
 For a successful authentication exchange between AD FS and Finance + Operations, an application entry must be registered in AD FS under an AD FS application group. To create this application entry, run the following Windows PowerShell commands on a machine where the AD FS is installed. The user account must have enough permissions to administer AD FS.
@@ -82,13 +81,14 @@ To enable Finance + Operations to use your AD FS application, you must create a 
 
 2.  Associate your AD FS application with the Warehousing app user.
 
-    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Azure Active Directory applications**.
+    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Microsoft Entra ID applications**.
     
     2.  Create a new line.
     
     3.  Enter the client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter a name, and select the Warehousing app user.
 
-    ![Azure Active Drectory applications .](media/azure-active-directory.png)
+    ![Azure Active Drectory applications .](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/assets/60176428/ae2ca504-e50d-4a1e-b856-ede5f7d7da42)
+
 
 ## Certificates 
 

@@ -23,6 +23,8 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Installation steps for Retail channel components in an on-premises environment

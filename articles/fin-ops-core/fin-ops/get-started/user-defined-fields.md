@@ -4,7 +4,7 @@
 title: Create and work with custom fields
 description: This article shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
-ms.date: 12/15/2022
+ms.date: 09/15/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 13
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 While there's an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there's a need for a company to track additional information in the system. While programmers can be used to add those fields as extensions in the developer tools, the custom fields feature allows fields to be added directly from the user interface, allowing you to tailor the application to fit your business using your web browser.
 
@@ -70,7 +70,7 @@ The following steps describe the process for creating a custom field and placing
 
 9. Leaving the **Create new field** dialog box will return you to the **Insert fields** dialog box. Any custom fields that were just added will be automatically marked in the field list to be inserted into the page.
 10. Click **Insert** to insert the marked fields into the selected region of the page.
-11. **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.
+11. **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](../../dev-itpro/get-started/personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.
 
 > [!WARNING]
 > The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read only. When the associated table is read only, all fields linked to that table, including any custom fields, will also be read only.
@@ -80,7 +80,7 @@ The following steps describe the process for creating a custom field and placing
 
 After you've created a custom field and exposed it on a page, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
-- The recommended route is to **publish a [saved view](saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature isn't enabled, the system administrator can apply the personalization to the desired users from the **Personalization** page. For more information, see [Personalize the user experience](personalize-user-experience.md).
+- The recommended route is to **publish a [saved view](../../dev-itpro/get-started/saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature isn't enabled, the system administrator can apply the personalization to the desired users from the **Personalization** page. For more information, see [Personalize the user experience](../../dev-itpro/get-started/personalize-user-experience.md).
 - Alternatively, you can export your changes (called *personalizations*), send them to one or more users, and have each of those users import your changes. The **Manage** option on the personalization toolbar enables you to export and import personalizations.
 
 ## Managing custom fields
@@ -180,6 +180,19 @@ For performance and technical reasons, only tables that meet the following condi
 ### Can I reference custom fields from the developer tools?  
 
 Custom fields can only be managed through the user interface and can't be referenced by code. 
+
+### Can I transfer the custom field to the table as an extension field while keeping the values?
+
+Custom field data can be transferred to the table as extension fields. 
+To use the custom [X++ scripts](../../dev-itpro/deployment/run-custom-scripts.md) to get and map the corresponding data from a custom field, follow these steps:
+
+1. Get the field name of the custom field.
+2. Use the `.getFieldValue(_fieldName)` method to get a value on the source table.
+
+You can use the `TableExtensionManagerFactory::CreateExtensionManager()` extension manager to create the `.GetRuntimeExtension(_tableName, SysCustomFieldConstants::ExtensionName)` extension build object on the **Microsoft.Dynamics.Ax.Xpp.MetadataExtensions** library to get more information about the type/metadata of the extension field.
+
+> [!NOTE]
+> Exclude records with default values from your query when transferring data for all records between a custom field and a new extension field. Use the [update statement](../../dev-itpro/dev-ref/sysda.md#update-statement) of the SysDa framework for better performance.
 
 ### How can I move custom fields between environments? 
 

@@ -6,13 +6,14 @@ ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.custom: 220314,  ""intro-internal
+ms.custom: 220314
+ms.collection: get-started
 ms.assetid: 
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 ---

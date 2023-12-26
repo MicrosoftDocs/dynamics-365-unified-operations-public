@@ -17,7 +17,6 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 # ms.search.industry: 
@@ -100,7 +99,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 
         - Workspace.Read.All
 
-9. Select **Add permissions**.
+9. Select **Add permissions**. You must grant admin consent for the permissions to allow reports to be published to Power BI.
 10. Select **Manage** \> **Certificates & secrets**.
 11. In the **Client secrets** field, select **New client secret**.
 12. Enter a value in the **Description** and **Expires** fields, and then select **Add**.

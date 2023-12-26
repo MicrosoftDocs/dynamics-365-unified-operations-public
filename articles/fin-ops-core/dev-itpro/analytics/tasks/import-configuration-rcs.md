@@ -3,10 +3,10 @@ title: (ER) Import configurations from RCS
 description: This article provides information about how a user can import a new version of an ER configuration from RCS.
 author: kfend
 ms.date: 07/03/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

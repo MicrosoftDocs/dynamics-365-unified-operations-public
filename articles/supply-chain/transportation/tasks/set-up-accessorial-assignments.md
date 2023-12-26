@@ -5,7 +5,7 @@ title: Set up accessorial assignments
 description: This procedure shows how to set up an accessorial assignment. 
 author: Weijiesa
 ms.date: 11/14/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -4,11 +4,11 @@
 title: Configure service updates through Lifecycle Services (LCS)
 description: This article explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
-ms.date: 08/01/2022
+ms.date: 03/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
+ms.custom: bap-template
 # optional metadata
 
 # ms.search.form: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 In Microsoft Dynamics Lifecycle Services (LCS), you can specify how and when you receive service updates from Microsoft for your environments.
 
 > [!IMPORTANT]
-> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../fin-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers. For customers who are on version 7.1, 7.2, or 8.0, you can take the update manually using the regular servicing flows.
+> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../fin-ops/get-started/public-preview-releases.md#release-processes) program. Microsoft is working to make the feature available to First release customers. For customers who are on version 7.1, 7.2, or 8.0, you can take the update manually using the regular servicing flows.
 
 Only users (customers or partners) who are assigned to the **Project owner** role in LCS can configure updates. Additionally, updates can be configured only for **implementation projects**.
 
@@ -69,10 +69,10 @@ Follow these steps to change your update settings.
 
  3. When you've finished setting the configuration options, select **Save**.
  
-After you set the update environment and update cadence, Microsoft generates an update calendar for the next six months. This calendar shows exactly when the configured sandbox and production environments will be updated. Therefore, you will know when to expect each update. To view the calendar, select **View the update calendar**.
+After you set the update environment and update cadence, Microsoft generates an update calendar for the next six months. This calendar shows exactly when the configured sandbox and production environments will be updated. Therefore, you'll know when to expect each update. To view the calendar, select **View the update calendar**.
 
 > [!IMPORTANT]
-> After the settings are saved, you can change them at any time. However, if there is an ongoing rollout, the new settings won't be used to update the existing rollout timings. Instead, they will start to be used in the next rollout. An ongoing rollout is defined by the 14-day period between the date when the email notification about the update of the sandbox environment is sent and the date when the production environment is updated.
+> After the settings are saved, you can change them at any time. However, if there is an ongoing rollout, the new settings won't be used to update the existing rollout timings. Instead, they'll start to be used in the next rollout. An ongoing rollout is defined by the 14-day period between the date when the email notification about the update of the sandbox environment is sent and the date when the production environment is updated.
 
 For more information about how to pause updates to configured sandbox and production environments, see [Pause service updates through Lifecycle Services (LCS)](pause-service-updates.md).
 
@@ -83,8 +83,8 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 - An error was found during update preparation. The update preparation starts approximately 4 hours before the update to ensure that the environment is in a healthy state. If the environment was in a failed state or maintenance mode, the scheduled update will be canceled before it starts.    
 - An error was found while updating the environment. If there were issues during the update, the scheduled update will be canceled and the environment is rolled back to the previous state.  
 - The environment is already running on the latest version.  There's no need to apply the update again, the scheduled update will be canceled before it starts. 
-- The target environment is not found. If the designated sandbox was deleted or the production environment has not been deployed, the scheduled update will be canceled before it starts.
-- You’re enrolled in the [First Release program](https://experience.dynamics.com).  The First Release program has different release cadence so the previously scheduled updates will be canceled. 
+- The target environment isn't found. If the designated sandbox was deleted or the production environment hasn't been deployed, the scheduled update will be canceled before it starts.
+- You’re enrolled in the [First Release program](https://aka.ms/FirstReleaseFnO).  The First Release program has different release cadence so the previously scheduled updates will be canceled. 
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
@@ -92,9 +92,9 @@ You can find the canceled updates via the **View recent canceled updates** in th
 In addition to the default sandbox environment and the production environment, if you have additional sandbox environments deployed in your LCS implementation project, the additional sandbox environments will also be auto-updated with the One Version service update. 
 
 ### Update additional sandbox environments
-The additional sandbox environments will be updated on the same cadence as your production environment, based on your update settings. If you have additional sandbox environments, they will be scheduled for update together.
+The additional sandbox environments will be updated on the same cadence as your production environment, based on your update settings. If you have additional sandbox environments, they'll be scheduled for update together.
 
-If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated.
+If you haven't deployed the production environment, none of the additional sandbox environments will be auto-updated.
 
 If the production environment is updated **before** the email about the production update is sent, then the production environment, as well as all additional sandbox environments, **will not** get updated. If the production environment is updated **after** the email about the production update is sent, then the production environment update **will** be canceled, but additional sandbox environments will get updated.
 
@@ -106,12 +106,12 @@ You can self-update any of your environments prior to the scheduled service upda
 If you already have selected a default sandbox environment, and want to change it with one of the additional sandbox environments, the change will take effect in the next scheduled service update.
 
 ### Pause service updates
-Additional sandbox environments cannot be paused independently. However, if you pause the default sandbox environment, then both the production environment and additional sandbox environments will be paused automatically. If you pause the production environment, then additional sandbox environments will also be paused.
+Additional sandbox environments can't be paused independently. However, if you pause the default sandbox environment, then both the production environment and additional sandbox environments will be paused automatically. If you pause the production environment, then additional sandbox environments will also be paused.
 
 The current [pause service updates](pause-service-updates.md) policy still applies.
 
 ### Email notifications 
-If your additional sandbox environments are scheduled for an update, you will receive reminder email notifications 6 days prior to the scheduled service update.
-After the update completes, you will also receive email notification regarding the update result for each environment.
+If your additional sandbox environments are scheduled for an update, you'll receive reminder email notifications 6 days prior to the scheduled service update.
+After the update completes, you'll also receive email notification regarding the update result for each environment.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

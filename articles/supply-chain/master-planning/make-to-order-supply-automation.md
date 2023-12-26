@@ -28,12 +28,9 @@ The *Make-to-order supply automation* feature adds several enhancements to Micro
 
 This article describes how to set up and use each enhancement.
 
-## Turn on the Make-to-order supply automation feature
+## Turn the Make-to-order supply automation feature on or off
 
-Before you can use the feature that is described in this article, you must turn it on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, where the feature is listed in the following way:
-
-- **Module:** *Master Planning*
-- **Feature name:** *Make-to-order supply automation*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Make-to-order supply automation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set the number of days to show on Capacity load page
 

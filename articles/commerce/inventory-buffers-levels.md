@@ -2,7 +2,7 @@
 title: Configure inventory buffers and inventory levels
 description: This article explains how to configure inventory buffers and inventory levels that determine inventory availability messaging on Microsoft Dynamics 365 Commerce sites.
 author: boycezhu
-ms.date: 06/01/2020
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,13 +20,13 @@ ms.dyn365.ops.version: 10.0.12
 
 This article explains how to configure inventory buffers and inventory levels that determine the messaging about inventory availability on Microsoft Dynamics 365 Commerce sites.
 
-Dynamics 365 Commerce headquarters holds inventory data and various channels such as point of sale (POS) applications, e-Commerce storefronts, and other custom integrated applications that pull and push inventory around in an asynchronous manner. Therefore, the available inventory values that are obtained through the on-hand inventory page in Commerce headquarters, through the POS user interface (UI), and through e-Commerce inventory availability APIs aren't always 100-percent accurate in real time.
+Dynamics 365 Commerce headquarters holds inventory data and various channels such as point of sale (POS) applications, e-commerce storefronts, and other custom integrated applications that pull and push inventory around in an asynchronous manner. Therefore, the available inventory values that are obtained through the on-hand inventory page in headquarters, through the POS user interface (UI), and through e-commerce inventory availability APIs aren't always 100-percent accurate in real time.
 
-Instead of showing actual inventory values in e-Commerce storefronts, many retailers prefer just to show messaging about inventory availability status (for example, "Available" or "Out of stock") to inform customers whether an item is available for purchase or potentially out of stock. For this approach, inventory buffers and inventory levels that determine the inventory availability messaging must be made available and configured.
+Instead of showing actual inventory values in e-commerce storefronts, many retailers prefer just to show messaging about inventory availability status (for example, "Available" or "Out of stock") to inform customers whether an item is available for purchase or potentially out of stock. For this approach, inventory buffers and inventory levels that determine the inventory availability messaging must be made available and configured.
 
 ## Prerequisite: Turn on the inventory buffers and inventory levels feature
 
-The feature for inventory buffers and inventory levels is controlled through Feature management in Commerce headquarters. To turn on the feature, follow these steps.
+The feature for inventory buffers and inventory levels is controlled through Feature management in headquarters. To turn on the feature, follow these steps.
 
 1. Go to **System administration** \> **Workspaces** \> **Feature management**.
 1. Search for the **Enable inventory buffers and inventory levels** feature, select its row, and then select **Enable now**.
@@ -37,9 +37,9 @@ After the feature is turned on, you can find inventory levels at **Retail and Co
 
 An *inventory level profile* determines whether a given product quantity status is considered in stock, out of stock, or some other custom status. You can create and configure multiple inventory level profiles per legal entity. Each profile consists of a set of inventory levels, and each level is defined by a *range*, a *code*, and a *label*.
 
-- **Range** – Each range is defined by a *start quantity* and an *end quantity*. A quantity value falls in a range if it's more than the start quantity of that range and not more than the end quantity.
+- **Range** – Each range is defined by a *start quantity* and an *end quantity*. A quantity value falls in a range if it's more than the start quantity of that range and not more than the end quantity. The quantity value is treated as the sales unit of measure in calculations.
 - **Code** – A code is an internal abbreviation that represents the level. Customers who directly integrate with the inventory APIs can use codes to build additional logic for a given inventory level. For example, they can turn off the purchase capability for a product when its inventory level code is **OOS** ("out of stock").
-- **Label** – A label is a meaningful customer-facing message that conveys an inventory level to customers on an e-Commerce site.
+- **Label** – A label is a meaningful customer-facing message that conveys an inventory level to customers on an e-commerce site.
 
 ### Create an inventory level profile
 
@@ -118,11 +118,11 @@ To sync the configurations of inventory buffers to channels, follow these steps.
 1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 1. Run the **1040** (**Product**) distribution schedule.
 
-## Use inventory buffers and inventory levels in e-Commerce scenario
+## Use inventory buffers and inventory levels in e-commerce scenario
 
-Commerce site builder uses the inventory buffer and inventory level capabilities in Commerce headquarters to determine inventory availability messaging on e-Commerce sites. For more information, see [Apply inventory settings](inventory-settings.md).
+Commerce site builder uses the inventory buffer and inventory level capabilities in headquarters to determine inventory availability messaging on e-commerce sites. For more information, see [Apply inventory settings](inventory-settings.md).
 
-Alternatively, if you integrate with a third-party e-Commerce solution, you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to show inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
+Alternatively, if you integrate with a third-party e-commerce solution, you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to show inventory availability for a product in your e-commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
 The introduction of inventory buffers and inventory levels enables these APIs to return inventory level codes and label messages that are determined based on total available and available physical values. The APIs can be further configured to determine whether the inventory quantity is returned together with the message, and whether the available quantity is reduced by the inventory buffer value.
 

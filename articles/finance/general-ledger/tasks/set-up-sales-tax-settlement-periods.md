@@ -5,7 +5,7 @@ title: Set up sales tax settlement periods
 description: This article explains how to set up sales tax settlement periods in Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

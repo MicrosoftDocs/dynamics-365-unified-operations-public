@@ -5,7 +5,7 @@ title: Enter project timesheets
 description: This procedure lets you create a timesheet by using an empty timesheet form. 
 author: twheeloc
 ms.date: 01/10/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

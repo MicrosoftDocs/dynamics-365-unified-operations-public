@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Order promising
 description: This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 author: Henrikan
-ms.date: 04/17/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 193933
-ms.assetid: 676fc53a-fa25-4688-9f26-1005316763b8
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
+ms.topic: conceptual
+ms.date: 02/06/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Order promising
@@ -57,7 +42,7 @@ ATP is calculated by using the following formula:
 
 ATP = ATP for the previous period + Receipts for the current period – Issues for the current period – Net issue quantity for each future period until the period when the sum of receipts for all future periods, up to and including the future period, exceeds the sum of issues up to and including the future period.
 
-Notice that the ATP calculation does not include information around expiry date and beyond the ATP time fence that the system expects when any quantity can be promised.
+Notice that the ATP calculation doesn't include information around expiry date and beyond the ATP time fence that the system expects when any quantity can be promised.
 
 When there are no more issues or receipts to consider, the ATP quantity for the following dates is the same as the latest calculated ATP quantity.
 
@@ -92,5 +77,11 @@ CTP extends ATP functionality by considering capacity information. Whereas ATP c
 CTP works slightly differently, depending on the master planning engine that you're using (Planning Optimization or the built-in engine). CTP for Planning Optimization currently supports only a subset of the CTP scenarios that are supported by the built-in engine.
 
 For detailed information about how to set up and use CTP for each engine, see [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md).
+
+## Next steps
+
+- [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md)
+- [Delivery alternatives](delivery-alternatives.md)
+- [Inventory Visibility on-hand change schedules and available to promise](../inventory/inventory-visibility-available-to-promise.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

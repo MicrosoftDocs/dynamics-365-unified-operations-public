@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.25
 
 This article lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
 
-- **Preview of release:** February 2022
+- **Preview of release:** January 2022
 - **General availability of release (self-update):** March 2022
 - **General availability of release (auto-update):** April 2022
 
@@ -50,7 +50,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Procurement and sourcing | Display legacy default RFQ reply field settings | This feature reintroduces the legacy default request for quotation (RFQ) reply field settings, which were previously removed from the user interface. These settings don't provide any functionality out of the box, but can be customized to provide it as required. Enable this feature if your organization has already added functionality for the default RFQ reply field settings or is planning to. When this feature is enabled, you can access the settings by going to the **Procurement and sourcing parameters** page, opening the **Request for quotation** tab, and selecting **Default request for quotation reply fields**. |
 | Procurement and sourcing | Merge financial dimensions from the vendor with active dimension link financial dimension on the purchase order | This feature lets you merge financial dimensions from vendors with active dimension link financial dimensions after purchase requisition approval if you set up a link between a financial dimension and the site inventory dimension. Purchase order creation and demand consolidation purchasing policy rules can be set up to drive the decision for merging financial dimensions from vendors with active dimension link financial dimension on the purchase order header level. |
 | Production control | (Russia) Enable default location setup for production formula/BOM and automatic GTD reservation/consumption in production | The feature enables additional options for production from imported raw materials (Russian localization only):<ul><li>Option to set the automatic default location for production formulas and bills of material on both resource groups and warehouses.</li><li>Automatic reservation of raw materials by the *GTD number* dimension at WMS-activated warehouses according to the non-WMS reservation algorithm. This applies in cases where a work policy for *Raw material picking* exists with **Work creation method** set to *Never* and the warehouse, location and item number setup matches the inventory transactions of the production (batch) order.</li><li>Automatic consumption of raw materials by *GTD number* dimension upon picking list posting, according to the acquired reservation described previously.</li></ul> |
-| Warehouse management | (Preview) Scale unit support for inbound and outbound warehouse orders | This feature causes the system to create outbound warehouse orders during the release-to-warehouse process, and to create inbound warehouse orders when transfer orders are posted as shipped. The system then synchronizes each inbound or outbound warehouse order to the scale unit responsible for shipping or receiving the order. Note that after enabling this feature, your warehouse execution workloads must be upgraded. For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>This feature requires the *Decouple putaway work from ASNs* feature and will enable the capability of receiving transfer orders using the license plate receiving process on the Warehouse Management mobile app. |
+| Warehouse management | Scale unit support for inbound and outbound warehouse orders | This feature causes the system to create outbound warehouse orders during the release-to-warehouse process, and to create inbound warehouse orders when transfer orders are posted as shipped. The system then synchronizes each inbound or outbound warehouse order to the scale unit responsible for shipping or receiving the order. Note that after enabling this feature, your warehouse execution workloads must be upgraded. For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>This feature requires the *Decouple putaway work from ASNs* feature and will enable the capability of receiving transfer orders using the license plate receiving process on the Warehouse Management mobile app. |
 
 ## Feature state changes in this release
 
@@ -64,7 +64,7 @@ The table also lists features that were previously in public preview, but have c
 | Asset management | [Counter-based maintenance enhancements](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Generally available |
 | Cost management | [Cost calculation level](../cost-management/cost-calculation-level.md) | Generally available |
 | Cost management | Enable user-defined batch number setup for inventory closing reverse | Generally available |
-| Cost management | [Inventory closing progress details](whats-new-scm-10-0-21.md) | Generally available |
+| Cost management | [Inventory closing progress details](../supply-chain-dev/whats-new-scm-10-0-21.md) | Generally available |
 | Cost management | [Options of defaulting financial dimensions for inventory standard cost revaluation](../cost-management/manage-standard-cost-updates.md) | Generally available |
 | Cost management | Inventory value report data clean up | On by default |
 | Cost management | [Inventory value report storage](../cost-management/inventory-value-report-storage.md) | On by default |
@@ -77,7 +77,7 @@ The table also lists features that were previously in public preview, but have c
 | Engineering change management | [Product readiness checks](../engineering-change-management/product-readiness.md) | On by default |
 | Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | On by default |
 | Inventory and warehouse management | Navigation to BOM version from BOM lines | Mandatory |
-| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Generally available |
+| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](../supply-chain-dev/whats-new-scm-10-0-20.md) | Generally available |
 | Master planning | Resource planning with maintenance | Generally available |
 | Master planning | Enable master plan setup wizard features | Mandatory |
 | Master planning | [Forecast model selection on Demand forecast details](../master-planning/manual-adjustments-baseline-forecast.md) | Mandatory |
@@ -86,7 +86,7 @@ The table also lists features that were previously in public preview, but have c
 | Master planning | [Planned order firming with filtering](../master-planning/planning-optimization/planned-order-firming.md) | On by default |
 | Master planning | [Saved views for planned orders](saved-views-scm.md) | On by default |
 | Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | Generally available |
-| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | Generally available |
+| Procurement and sourcing | [Enable resetting procurement related workflows](../supply-chain-dev/whats-new-scm-10-0-20.md) | Generally available |
 | Procurement and sourcing | Ability to confirm accepted purchase orders from vendor collaboration in batch | Mandatory |
 | Procurement and sourcing | Purchase agreement Closed status | Mandatory |
 | Procurement and sourcing | Add lines to PO invoices associated with a purchase agreement | On by default |
@@ -106,7 +106,7 @@ The table also lists features that were previously in public preview, but have c
 | Production control | Improved production catch weight quantity picking | Generally available |
 | Production control | A new button to Stop break has been added to the Job Card Terminal page | Mandatory |
 | Production control | [Enable automatic generation of license plate number when reporting as finished in the job card device](../production-control/production-floor-execution-configure.md) | Mandatory |
-| Production control | Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor | Mandatory |
+| Production control | Enable partial receipt of subcontracted items and fix an issue with the  calculation of scrap for BOM lines of type Vendor | Mandatory |
 | Production control | [Feature for locking job card device and job card terminal so that they can be sanitized](../production-control/production-floor-execution-configure.md) | Mandatory |
 | Production control | Improvements to the Approve and Transfer jobs dialogs | Mandatory |
 | Production control | [License plate for reporting as finished added to the Job Card Device](../production-control/production-floor-execution-configure.md) | Mandatory |
@@ -115,7 +115,7 @@ The table also lists features that were previously in public preview, but have c
 | Production control | [Asset management functionality for the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Job search for the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Override default production reservation](../production-control/override-default-reservation-principle.md) | On by default |
-| Production control | [Show full serial, batch, and license plate numbers in the production floor execution interface](whats-new-scm-10-0-21.md) | On by default |
+| Production control | [Show full serial, batch, and license plate numbers in the production floor execution interface](../supply-chain-dev/whats-new-scm-10-0-21.md) | On by default |
 | Sales and marketing | [Sales order details performance enhancement](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Generally available |
 | Sales and marketing | Sales quotation details performance enhancement | Generally available |
 | Sales and marketing | Sales order referenced data export policy | Mandatory |
@@ -132,11 +132,11 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | Generally available |
 | Warehouse management | License plate receiving history | Generally available |
 | Warehouse management | [Material handling equipment interface](../warehousing/mhax.md) | Generally available |
-| Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](whats-new-scm-10-0-19.md) | Generally available |
+| Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](../supply-chain-dev/whats-new-scm-10-0-19.md) | Generally available |
 | Warehouse management | Scale unit support for warehouse app work lists | Generally available |
 | Warehouse management | Shipment wave label details | Generally available |
-| Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | Generally available |
-| Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | Generally available |
+| Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Generally available |
+| Warehouse management | [Validate templates selected for replenishment jobs](../supply-chain-dev/whats-new-scm-10-0-20.md) | Generally available |
 | Warehouse management | Allow replenishment template to use existing immediate replenishment work (across units) | Mandatory |
 | Warehouse management | Automatic assigning of the GUIDs on WHS user creation | Mandatory |
 | Warehouse management | Capture product variants and tracking dimensions in the warehousing app during load item receiving | Mandatory |

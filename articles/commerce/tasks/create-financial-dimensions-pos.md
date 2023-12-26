@@ -5,7 +5,7 @@ title: Create financial dimensions for POS registers and configure dimension val
 description: This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. 
 author: jashanno
 ms.date: 11/14/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

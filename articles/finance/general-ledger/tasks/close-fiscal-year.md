@@ -4,8 +4,8 @@
 title: Close the fiscal year
 description: This procedure steps through the year end close process that transfers balances to a new fiscal year. 
 author: aprilolson
-ms.date: 11/11/2022
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure steps through the year end close process that transfers balances 
 
 
 ## Validate year-end close parameters
-1. Go to **Navigation pane > Modules > General ledger > Ledger setup > General ledger parameters**.
+1. Go to **General ledger > Ledger setup > General ledger parameters**.
 2. Expand the **Fiscal year close** section.
 3. Select **Yes** or **No** for the **Delete close-of-year transactions during transfer** option.
     
@@ -75,7 +75,7 @@ It's best practice to set this option to **Yes** for Balance sheet accounts. Thi
 18. Start the year-end close by choosing **Run fiscal close** on the **Action Pane**. The year-end close will be run for the selected template.  
 19. Select all or a subset of legal entities from the template for which to run the year-end close.
 
-When first running the year-end close, to get beginning balance,s most organizations may choose to run the year-end close for all legal entities within the template. If adjusting entries are made after that, you may choose to run the year-end close for only the legal entities that have adjustments.  
+When first running the year-end close, to get beginning balances, most organizations may choose to run the year-end close for all legal entities within the template. If adjusting entries are made after that, you may choose to run the year-end close for only the legal entities that have adjustments.  
 
 20. Click **OK**.
 21. Select the fiscal year for which to run the year-end close.

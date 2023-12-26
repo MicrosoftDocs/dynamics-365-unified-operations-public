@@ -4,7 +4,7 @@
 title: Set up default descriptions for automatic posting
 description: This article explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using free-form text or by selecting fixed variables.
 author: aprilolson
-ms.date: 07/23/2019
+ms.date: 02/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 This article explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using free-form text or by selecting fixed variables.
 
 > [!NOTE]
-> For some transaction types in some countries or regions, you can also include text from fields that are related to those transaction types. For a list of the transaction types, and the countries and regions, see the [Optional: Add other text to default descriptions](#optional-add-other-text-to-default-descriptions) section later in this article.
+> For some transaction types, you can include text from fields related to those transaction types. For examples of some of the supported transaction types, see the [Optional: Add other text to default descriptions](#optional-add-other-text-to-default-descriptions) section later in this article.
 
 ## Set up default descriptions
 
@@ -50,11 +50,11 @@ This article explains how to set up default text that is used to describe accoun
 
 ## Optional: Add other text to default descriptions
 
-For some transaction types in some countries or regions, default descriptions can include text that comes from fields in your data that are related to those transaction types. The following lists show the transaction types, and the countries and regions, that this option is available for.
+For some transaction types, default descriptions can include text from fields in your data that are related to those transaction types. The following list shows some of the transaction types that can be included.
 
 **Transaction types**
 
-You can add other text to default descriptions for transaction types that are related to the following document types:
+You can add other text to default descriptions for some transaction types, but not all. Some of the supported transaction types are:
 
 - Customer invoices
 - Customer credit notes
@@ -65,22 +65,6 @@ You can add other text to default descriptions for transaction types that are re
 - Inventory journals
 - Master planning (MRP)
 - Fixed assets
-
-**Countries and regions**
-
-This option is available for the following countries and regions:
-
-- Brazil
-- China
-- Czech Republic
-- Eastern Europe
-- Hungary
-- India
-- Japan
-- Lithuania
-- Latvia
-- Poland
-- Russia
 
 ### Add text to default descriptions
 

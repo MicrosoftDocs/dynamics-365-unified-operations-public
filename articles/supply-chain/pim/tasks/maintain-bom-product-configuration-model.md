@@ -5,7 +5,7 @@ title: Maintain BOM for a product configuration model
 description: Running this procedure requires an existing product configuration model. 
 author: t-benebo
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

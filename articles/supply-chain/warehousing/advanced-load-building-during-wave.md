@@ -40,17 +40,10 @@ To use the feature, you must set up the system in the following way:
 
 ## Turn on advanced wave load building in your system
 
-Before you can use advanced wave load building, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if they are required. In the **Feature management** workspace, the features are listed in the following way:
+To use advanced wave load building, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if necessary. Both of the following features are required:
 
-- Wave load building feature:
-
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Wave load building feature*
-
-- Organization wide wave step code:
-
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Organization wide wave step code*
+- *Wave load building feature* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
+- *Organization wide wave step code* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
 
 ### Make sample data available
 

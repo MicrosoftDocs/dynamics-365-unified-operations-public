@@ -2,7 +2,7 @@
 title: Add custom columns to a point of sale (POS) transaction grid
 description: This article explains how to add a new custom column to a POS transaction page using the screen layout designer.
 author: josaw1
-ms.date: 07/09/2018
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.custom: 83892
 ---
 
 # Add custom columns to a point of sale (POS) transaction grid
@@ -204,7 +203,7 @@ This article explains how to add a new custom column to a POS transaction page u
 
 ## Validate the customization
 
-1. Sign in to MPOS using **000160** as the operator ID and **123** as the password.
+1. Sign in to the Store Commerce app using **000160** as the operator ID and **123** as the password.
 2. Click the **Current transaction** button on the **Welcome** screen.
 3. Add item **(0005)** to the transaction.
 4. The custom column should display the line number.

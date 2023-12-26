@@ -2,12 +2,12 @@
 title: Deploy a demo environment
 description: This article explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 10/01/2019
+ms.date: 08/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30
@@ -23,7 +23,9 @@ This article explains how to deploy a demo environment on Microsoft Azure using 
 
 - Dynamics 365 Finance
 - Dynamics 365 Supply Chain Management
+- Dynamics 365 Human Resources
 - Dynamics 365 Commerce
+
 
 ## Prerequisites
 Before you begin your deployment, the following prerequisites must be in place:

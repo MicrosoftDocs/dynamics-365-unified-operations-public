@@ -17,7 +17,6 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
 # ms.search.industry: 

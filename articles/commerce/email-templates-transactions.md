@@ -2,7 +2,7 @@
 title: Create email templates for transactional events
 description: This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 12/10/2021
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ Dynamics 365 Commerce supports the following notification types.
 The *order created* notification type is triggered when a new sales order is created in Commerce headquarters.
 
 > [!NOTE]
-> The order created notification type isn't triggered for cash-and-carry transactions that occur at a point of sale (POS) terminal. In this case, an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Modern POS (MPOS)](email-receipts.md).
+> The order created notification type isn't triggered for cash-and-carry transactions that occur at a point of sale (POS) terminal. In this case, an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Store Commerce](email-receipts.md).
 
 ### Order confirmed
 
@@ -64,7 +64,7 @@ The packing completed notification type supports the following additional email 
 | `packingslipid`      | The ID of the packing slip for the order that will be picked up. |
 | `confirmationid`      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
 
-For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
+For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](dev-itpro/geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
 
 ### Order ready for pickup
 
@@ -342,7 +342,7 @@ For more information about how to configure emails in Dynamics 365 Commerce, see
 
 [Set up email receipts](/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
-[Send email receipts from Modern POS ](email-receipts.md)
+[Send email receipts from Store Commerce](email-receipts.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

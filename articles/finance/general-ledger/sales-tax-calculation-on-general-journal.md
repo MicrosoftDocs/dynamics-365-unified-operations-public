@@ -4,7 +4,7 @@
 title: Sales tax calculation on general journal lines
 description: This article explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 author: EricWangChen
-ms.date: 02/16/2022
+ms.date: 08/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -95,7 +95,7 @@ The following illustration shows the rule that applies when a voucher has only j
 
 •	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
 
-Otherwise, if the journal amount is debit (positive), sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
+Otherwise, if the journal amount is debit (positive), sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative), sales tax direction is Sales Tax Payable. 
 
 The following diagram illustrates the rule graphically.
 
@@ -103,9 +103,16 @@ The following diagram illustrates the rule graphically.
 
 #### Override the sales tax direction
 
-You can override the sales tax direction when the voucher contains only lines where the account type is **Ledger**.
+You can override the sales tax direction on general journal lines when the voucher contains **Ledger** as either the account or the offset account.
 
-Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and select the **Legal entity overrides** FastTab.
+1. Go to **General ledger** > **Chart of accounts** > **Accounts** > **Main accounts**, and select the **Legal entity overrides** FastTab. 
+2. Add a legal entity for which the **Sales tax direction** should be overridden, and select **Sales tax**. 
+3. Select the sales tax direction:
+
+ - **Purchase** – for **Sales tax receivable** tax direction
+ - **Sales** – for **Sales tax payable** tax direction
+
+If, on the general journal line, the **Account type** isn't **Ledger**, on the **General** tab, set the **Sales tax direction** to **Yes** to override the sales tax direction for the offset ledger account.
 
 ## Determine the sales tax amount
 
@@ -122,7 +129,7 @@ The following table shows the generic rule for determining the sales tax directi
 | Negative            | Sales Tax Receivable | Negative              |
 | Negative            | Sales Tax Payable    | Positive              |
 
-There is a special rule for vouchers that have only **Project** or **Ledger** lines, when a sales tax group or item sales tax group is selected on the **Ledger** line. This rule is controlled by the feature, **Enable independent sales tax calculation feature for general journals**. When this feature is turned off, the tax amount of the **Ledger** line uses the debit/credit direction of the **Project** line. When the feature is turned on, the tax amount of the **Ledger** line uses its own debit/credit direction. The following tables show the rule for each scenario. 
+There's a special rule for vouchers that have only **Project** or **Ledger** lines, when a sales tax group or item sales tax group is selected on the **Ledger** line. This rule is controlled by the feature, **Enable independent sales tax calculation of general journals**. When this feature is turned off, the tax amount of the **Ledger** line uses the debit/credit direction of the **Project** line. When the feature is turned on, the tax amount of the **Ledger** line uses its own debit/credit direction. The following tables show the rule for each scenario. 
 
 **Rule when the feature is turned on**
 

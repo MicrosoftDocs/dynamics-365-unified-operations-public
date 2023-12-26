@@ -4,7 +4,7 @@
 title: Commerce Data Exchange implementation guidance
 description: This article provides an overview of Commerce Data Exchange, including implementation tips, and overall guidance.
 author: jashanno
-ms.date: 08/26/2021
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -32,15 +32,13 @@ ms.dyn365.ops.version: 10.0.12
 
 This article is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It gives an overview, implementation tips, and overall guidance that you should consider as you plan your implementation, in regard to pages, setup, configuration, best practices, and more.
 
-## Overview
+Proper configuration and synchronization of data is crucial to a correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation. This goes from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use the Store Commerce app (with or without an offline database) and other in-store components. CDX is the Commerce functionality that replicates and synchronizes data across databases. However, CDX differs from typical data replication functionality because it also allows for filtering. Therefore, CDX helps minimize data sets by generating only data that is specific to the channels that were specified for selection, filtering specific tables from offline databases, and filtering expired records for data that is no longer used, such as expired discounts.
 
-Proper configuration and synchronization of data is crucial to a correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation. This goes from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use Modern POS (With or without an offline database) and other in-store components. CDX is the Commerce functionality that replicates and synchronizes data across databases. However, CDX differs from typical data replication functionality because it also allows for filtering. Therefore, CDX helps minimize data sets by generating only data that is specific to the channels that were specified for selection, filtering specific tables from offline databases, and filtering expired records for data that is no longer used, such as expired discounts.
-
-Before you go through this article, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this article, such as the Device management implementation guide and the overview of the Commerce architecture.
+Before you go through this article, it's important that you understand the concepts of a channel (store), registers and devices, and the Store Commerce app offline database. Therefore, we recommend that you review some of the resources at the end of this article, such as the Device management implementation guide and the overview of the Commerce architecture.
 
 ### Important Commerce headquarters pages
 
-- **Channel database** – Use this page to create, review, and edit the channel databases that are used in Commerce Scale Units (both Cloud and Self-hosted) and the offline databases that are used with Modern POS. Each database that you create here refers to a single, physical database (in other words, there is a one-to-one \[1:1\] mapping). A channel database or offline database must be associated with a channel database group. From this page, you can also create full synchronizations of a scheduler job for a selected channel database or offline database.
+- **Channel database** – Use this page to create, review, and edit the channel databases that are used in Commerce Scale Units (both Cloud and Self-hosted) and the offline databases that are used with the Store Commerce app. Each database that you create here refers to a single, physical database (in other words, there is a one-to-one \[1:1\] mapping). A channel database or offline database must be associated with a channel database group. From this page, you can also create full synchronizations of a scheduler job for a selected channel database or offline database.
 - **Channel database group** – Use this page to create, review, and edit channel database groups. Each group is associated with one or more channel or offline databases. The database group is responsible for gathering all the relevant data that is required by all the associated channel and offline databases, and that must be generated as part of CDX data synchronization.
 - **Channel profile** – Use this page to create, review, and edit channel profiles. Each channel profile stores the URLs that are relevant to the network-based communication that is required within a channel. A channel profile typically has a Retail Server URL and a Cloud POS URL. Often, there is also a Media Server Base URL. This URL is the internet addressable location of images that are used by the POS, E-Commerce, and other Commerce channels. Although a channel profile is automatically generated for a Commerce Scale Unit (Cloud), it must be manually generated as part of the configuration and installation steps for a Commerce Scale Unit (Self-hosted).
 - **Offline profile** – Use this page to create, review, and edit offline profiles. Each offline profile lets a user configure settings that are related to offline mode. For example, you can configure settings that let users manually switch to offline mode before they sign in, enable advanced offline switching, and pause offline synchronization. These settings are discussed later in this article and also in the related articles that are listed at the end of this article.
@@ -56,11 +54,11 @@ When a scheduler job is run, the channel database group selects, from the fields
 
 Data is generated and flows in a specific direction (either download or upload). To understand how best to configure the timing and select data for synchronization, it's important that you understand how the various pages in Commerce headquarters are used and how data generation occurs. When data generation is done correctly, it helps increase performance and reduce Commerce headquarters utilization.
 
-The following illustration shows the various pages in Commerce headquarters and how they are related to each other. (For descriptions of these pages, see the previous section.) CDX data generation can occur only if it's fully configured across all these pages. Data can be downloaded or uploaded. The data synchronization status is viewable on two different pages in Headquarters: Download sessions and Upload sessions. CDX data generation occurs through Headquarters and is synchronized down (download). Modern Point of Sale (POS) transactional data generated while offline requires the data to be synchronized up (upload).
+The following illustration shows the various pages in Commerce headquarters and how they are related to each other. (For descriptions of these pages, see the previous section.) CDX data generation can occur only if it's fully configured across all these pages. Data can be downloaded or uploaded. The data synchronization status is viewable on two different pages in headquarters: Download sessions and Upload sessions. CDX data generation occurs through headquarters and is synchronized down (download). Modern Point of Sale (POS) transactional data generated while offline requires the data to be synchronized up (upload).
 
 ![Commerce Data Exchange association map.](./media/CommerceDataExchange-AssociationMap.png)
 
-The following illustration shows the data flows for download and upload. Data packages that are generated through CDX flow downward. A generated data package can apply to the Commerce Scale Unit and to Modern POS offline databases, based on the channel database groups that are configured. Transactional data flows upward from the Modern POS offline databases to the Commerce Scale Unit channel database.  All transactional data stores in the channel database is then uploaded to the Headquarters database.
+The following illustration shows the data flows for download and upload. Data packages that are generated through CDX flow downward. A generated data package can apply to the Commerce Scale Unit and to the Store Commerce app offline databases, based on the channel database groups that are configured. Transactional data flows upward from the Store Commerce app offline databases to the Commerce Scale Unit channel database.  All transactional data stores in the channel database is then uploaded to the headquarters database.
 
 ![Download and upload data flows.](./media/CommerceArchitecture-DataSynchronization.jpg)
 
@@ -84,9 +82,9 @@ All these features are available in version 10.0.12 and later.
 
 This feature can be configured in the offline profile. Three settings are related to it:
 
-- **Allow manual switch to offline before sign in** – This setting lets Modern POS users switch to offline mode before they sign in to the POS. It's helpful in scenarios where time-outs might occur before sign-in is completed, or where atypical response codes from the Commerce Scale Unit (Cloud or Self-hosted) are occurring. When this setting is turned on, a Modern POS user who is using an offline database can access the **Settings** menu from the POS sign-in page. This menu includes a new option for switching to offline mode. By selecting this option, the user can sign in directly against the offline database instead of first having to sign in via a call to the Commerce Scale Unit.
-- **Enable advanced offline switching** – This setting enables Modern POS to switch to offline mode more easily and more often. Typically, Modern POS tries to maintain its online status and switches to offline mode only when such a switch is required to continue functionality. When this setting is turned on, Modern POS can switch more often, especially in scenarios that involve sign-in and additional Commerce Scale Unit responses that might be considered a delay to POS operation. This setting is most valuable in scenarios where speed is a higher priority than maintaining availability of online-only features (for example, paying with a gift card, which requires connection to Headquarters).
-- **System health check interval (mins)** – This setting works as a subfeature of the **Enable advanced offline switching** setting that was just described. Usually, when that setting is turned off, and Modern POS is in offline mode, the POS waits a specific amount of time, based on configuration in the **Offline profile**, and then tries to reconnect to the Commerce Scale Unit during the next operation call that occurs. This advanced offline health check provides a more frequent, operation-independent method of checking online availability and switching more quickly as soon as online functionality is available again.
+- **Allow manual switch to offline before sign in** – This setting lets Store Commerce app users switch to offline mode before they sign in to the POS. It's helpful in scenarios where time-outs might occur before sign-in is completed, or where atypical response codes from the Commerce Scale Unit (Cloud or Self-hosted) are occurring. When this setting is turned on, a Store Commerce app user who is using an offline database can access the **Settings** menu from the POS sign-in page. This menu includes a new option for switching to offline mode. By selecting this option, the user can sign in directly against the offline database instead of first having to sign in via a call to the Commerce Scale Unit.
+- **Enable advanced offline switching** – This setting enables the Store Commerce app to switch to offline mode more easily and more often. Typically, the Store Commerce app tries to maintain its online status and switches to offline mode only when such a switch is required to continue functionality. When this setting is turned on, the Store Commerce app can switch more often, especially in scenarios that involve sign-in and additional Commerce Scale Unit responses that might be considered a delay to POS operation. This setting is most valuable in scenarios where speed is a higher priority than maintaining availability of online-only features (for example, paying with a gift card, which requires connection to headquarters).
+- **System health check interval (mins)** – This setting works as a subfeature of the **Enable advanced offline switching** setting that was just described. Usually, when that setting is turned off and the Store Commerce app is in offline mode, the POS waits a specific amount of time, based on configuration in the **Offline profile**, and then tries to reconnect to the Commerce Scale Unit during the next operation call that occurs. This advanced offline health check provides a more frequent, operation-independent method of checking online availability and switching more quickly as soon as online functionality is available again.
 
 #### Offline data exclusion
 
@@ -119,13 +117,20 @@ To learn more about the versions of SQL Server and how to use them, see [Commerc
 
 ## Additional resources
 
-- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
-- [Commerce Data Exchange best practices](CDX-Best-Practices.md)
-- [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md)
-- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
-- [Select an in-store topology](retail-in-store-topology.md)
-- [Device management implementation guidance](../implementation-considerations-devices.md)
-- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
-- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+[Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
+
+[Commerce Data Exchange best practices](CDX-Best-Practices.md)
+
+[Commerce offline implementation and troubleshooting](implementation-considerations-offline.md)
+
+[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+
+[Select an in-store topology](retail-in-store-topology.md)
+
+[Device management implementation guidance](../implementation-considerations-devices.md)
+
+[Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+
+<!--[Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)-->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)] 

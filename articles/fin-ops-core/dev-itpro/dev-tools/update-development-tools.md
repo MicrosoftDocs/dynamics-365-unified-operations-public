@@ -10,7 +10,6 @@ ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 33571
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 ---
 
@@ -21,6 +20,11 @@ ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 This article explains how to update the development tools.
 
 Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics Lifecycle Services (LCS) site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package. 
+
+While working in Visual Studio, you will receive recurring feedback requests regarding new features.
+To prevent the feedback requests from appearing in Visual Studio, run the following PowerShell command from a developer’s machine:
+Set-ItemProperty HKCU:\Software\Microsoft\Dynamics\AX7\Development\Configurations  -Name ProvideFeedback  -Value "No"
+
 
 > [!NOTE]
 > You do not need to follow the instructions in this article if you are upgrading your finance and operations platform to Platform update 4 or newer. It is an automatic step that is part of the platform upgrade process.

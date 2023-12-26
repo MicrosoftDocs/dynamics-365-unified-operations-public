@@ -1,33 +1,20 @@
 ---
-# required metadata
-
-title: Customer portal for Dynamics 365 Supply Chain Management overview (contains video)
+title: Customer portal for Dynamics 365 Supply Chain Management overview
 description: This article introduces the Customer portal, and explains who should use it and how it works.
 author: Henrikan
-ms.date: 06/16/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
-ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 03/06/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Customer portal for Dynamics 365 Supply Chain Management overview
 
 [!include [banner](../includes/banner.md)]
-
 
 ## What is the Customer portal?
 
@@ -54,12 +41,12 @@ The [Overview of the Customer portal template in Dynamics 365 Supply Chain Manag
 The Customer portal is designed for companies that run Supply Chain Management and have these characteristics:
 
 - They want to build an externally facing website that communicates order processing information (such as order status or account information) directly from their Supply Chain Management system to their enterprise customers.
-- They are transitioning from Dynamics AX 2012 to Supply Chain Management and previously used the [AX 2012 Customer self-service portal](/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal).
+- They're transitioning from Dynamics AX 2012 to Supply Chain Management and previously used the [AX 2012 Customer self-service portal](/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal).
 
 The following types of organizations are **not** good candidates for implementing the Customer portal:
 
 - Companies that want to build a website for non-enterprise customers. These companies should consider creating a [Dynamics 365 Commerce e-commerce website](../../commerce/create-ecommerce-site.md).
-- Companies that are already using an existing Power Apps portals website for a similar purpose. These companies won't receive any additional benefits from the Customer portal. The Customer portal is delivered as a template that acts as a guide and a starting point for customers who want to "connect the dots" between dual-write, Supply Chain Management, and Power Apps portals. If you've already set up a website that serves this purpose, you might not gain much value from using the Customer portal template to re-provision that website.
+- Companies that are already using an existing Power Apps portals website for a similar purpose. These companies won't receive any additional benefits from the Customer portal. The Customer portal is delivered as a template that acts as a guide and a starting point for customers who want to "connect the dots" between dual-write, Supply Chain Management, and Power Apps portals. If you've already set up a website that serves this purpose, you might not gain much value from using the Customer portal template to reprovision that website.
 
 ## How does it work?
 
@@ -72,6 +59,5 @@ The Customer portal is provided as a Power Apps portals template. It depends on 
 ![Customer portal dependencies.](media/customer-portal-elements.png "Customer portal dependencies")
 
 The Customer portal acts as a starting point for organizations that want to use Power Apps portals to build an externally facing website that uses data from their Supply Chain Management installation. It helps organizations connect dual-write, Supply Chain Management, and Power Apps portals.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

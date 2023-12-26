@@ -3,7 +3,7 @@ title: Create cost elements
 description: There are several ways to create cost elements in Cost accounting.
 author: kfend
 ms.date: 08/29/2022
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

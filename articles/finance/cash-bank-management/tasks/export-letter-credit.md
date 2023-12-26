@@ -5,7 +5,7 @@ title: Export letter of credit
 description: This procedure walks through the process of the Export letter of credit. 
 author: kweekley
 ms.date: 11/15/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

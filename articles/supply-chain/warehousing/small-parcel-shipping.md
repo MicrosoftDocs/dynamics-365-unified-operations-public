@@ -41,7 +41,7 @@ Before you can start to use SPS functionality, you must turn on the SPS feature 
 
 ### Turn the SPS feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Small parcel shipping* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Small parcel shipping* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Deploy and set up rate engines
 
@@ -61,8 +61,6 @@ For information about how to create and deploy functional rate engines so that t
 
 - [Create a new transportation management engine](../transportation/create-new-transportation-management-engine.md)
 - [Set up transportation management engines](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
-
-For more information about how to create an SPS rate engine, see the following blog post: [Small Parcel Shipping: How to leverage small parcel shipping functionality in Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 
 #### Set up a rate engine in Supply Chain Management
 

@@ -5,7 +5,7 @@ title: Set up short picking item reallocation
 description: This article shows how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to. 
 author: Mirzaab
 ms.date: 06/29/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -42,7 +42,7 @@ It's possible to define several work exceptions with different item reallocation
 
 The USMF demo data company was used to create this procedure.
 
-1. In the **Navigation pane**, go to **Warehouse management > Setup > Work > Work exceptions**.
+1. Go to **Warehouse management > Setup > Work > Work exceptions**.
 2. Click **New** 
 3. In the **Work exception code** field, type a value. This will be the title of this exception . For example, Short picking manual.
 4. In the **Description** field, type a value. This will be a short description of the usage of this exception. For example, Short picking - item not available.
@@ -56,7 +56,7 @@ The USMF demo data company was used to create this procedure.
 The USMF demo data company was used to create this procedure.
 
 1. Close the page.
-2. In the **Navigation pane**, go to **Warehouse management > Setup > Worker**.
+2. Go to **Warehouse management > Setup > Worker**.
 3. Click **Edit**.
 4. In the list, select worker. For example, Julia Funderburk.
 5. Expand the **Users** FastTab.

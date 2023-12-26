@@ -6,13 +6,12 @@ ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.custom: 27621
 ms.assetid: 
 ms.search.form: EROperationDesigner, ERParameters
 ---

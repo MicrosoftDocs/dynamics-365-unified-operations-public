@@ -4,7 +4,7 @@ description: This article describes the integration of data about customer loyal
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

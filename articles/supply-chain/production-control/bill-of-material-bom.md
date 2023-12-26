@@ -97,6 +97,9 @@ Phantoms are typically used to simplify the engineering process. Extensive use o
 
 Select the **Pegged supply** line type when you want to create a subproduction, a BOM line event kanban, or a direct purchase order for any product variant that the BOM line references. The subproduction, event kanban, or purchase order is created when you estimate the production order. The required item quantities are automatically reserved for the consuming production order.
 
+> [!NOTE]
+> A subproduction order is always created for pegged supply, even if on-hand inventory or other supply is available to cover the demand.
+
 ### Vendor
 
 Select the **Vendor** line type if the production process uses a subcontractor, and you want a subproduction or purchase order to be created automatically for the subcontractor.  

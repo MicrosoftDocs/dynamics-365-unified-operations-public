@@ -4,8 +4,8 @@
 title: Assign a free text invoice template to a customer
 description: This task demonstrates how to assign a free text invoice template to a customer. 
 author: ShivamPandey-msft
-ms.date: 08/12/2019
-ms.topic: business-process 
+ms.date: 03/23/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -45,10 +45,10 @@ This task demonstrates how to assign a free text invoice template to a customer.
 11. In the **Maximum cumulative amount** field, enter the maximum cumulative amount after which invoice generation will stop. Enter the maximum cumulative amount that can be reached using the selected template. For example, if you enter 1,000.00 and generate monthly invoices for 100.00 each, invoices will stop generating after the tenth invoice is generated.  
 12. In the **Generate recurring invoices by using the default values from** section, select either free text invoice template or the customer account. Select whether to use the free text invoice template or the customer account to determine the default values for the language, posting profile, sales tax group, item sales tax group, list code, country/region for delivery, currency, terms of payment, method of payment, payment specification, payment schedule, cash discount, financial dimensions, and giro money transfer slip when invoices are created.  
 13. In the **Recurrence pattern** field, select the recurrence pattern.
-    - **Daily** – Select this option and enter the number of days in the Per field. For example, if you enter 15, an invoice will be generated every 15 days for this customer.
-    - **Weekly** - Select this option and enter the number of weeks in the Per field. For example, if you enter 2, an invoice will be generated every two weeks for this customer.
-    - **Monthly** - Select this option and enter the number of months in the Per field. For example, if you enter 6, an invoice will be generated every six months for this customer.
-    - **Yearly** – Select this option and enter the number of years in the Per field. For example, if you enter 2, an invoice will be generated every two years for this customer.  
+    - **Daily** – Select this option and enter the number of days in the **Per** field. For example, if you enter 15, an invoice will be generated every 15 days for this customer.
+    - **Weekly** - Select this option and enter the number of weeks in the **Per** field. For example, if you enter 2, an invoice will be generated every two weeks for this customer.
+    - **Monthly** - Select this option and enter the number of months in the **Per** field. For example, if you enter 6, an invoice will be generated every six months for this customer.
+    - **Yearly** – Select this option and enter the number of years in the **Per** field. For example, if you enter 2, an invoice will be generated every two years for this customer.  
 14. In the **Per** field, enter a number.
 
 

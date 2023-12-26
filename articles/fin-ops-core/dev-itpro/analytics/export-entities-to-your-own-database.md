@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). 
 
@@ -66,10 +66,10 @@ For one-box development environments, you can create a database in the local Mic
 
 You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
-If you're using the BYOD feature for integration for analytical purposes, you should consider using clustered columnstore indexes as described in [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15).
+If you're using the BYOD feature for integration for analytical purposes, you should consider using clustered columnstore indexes as described in [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview).
 
 > [!NOTE]
-> Your BYOD database must be accessible to finance and operations apps. If you encounter issues where you are unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
+> Your BYOD database must be accessible to finance and operations apps. If you encounter issues where you are unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](../deployment/deploymentFAQ.md).
 > > 
 > Selecting the correct service tier and compute size, is critical to secure expected performance. While doing this, it is important to consider the total, targeted workload and not just the load based on the finance and operations export. For production environments, it is recommended to use, at a minimum, compute size P2 in the Premium service tier or compute size S4 in the Standard service tier. Your specific BYOD usage might very well require a service tier greater than the above minimum. For more details about tiers and compute sizes, see [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
 
@@ -166,7 +166,7 @@ You can create a data project that has multiple entities. You can schedule this 
 
 #### Exporting data across companies
 
-Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BOYD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies will be sequential per company. This means that jobs with a high number of entities and companies take longer to run.
+Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BYOD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies will be sequential per company. This means that jobs with a high number of entities and companies take longer to run.
 
 To reduce the overall export times, consider the following:
 

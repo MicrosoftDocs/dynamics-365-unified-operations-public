@@ -5,7 +5,7 @@ title: Enroll and remove benefits from workers
 description: This procedure shows how to enroll a single worker in one or more benefits, as well as enrolling multiple workers in a benefit. 
 author: twheeloc
 ms.date: 08/23/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

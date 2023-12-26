@@ -2,7 +2,7 @@
 title: Development tools tutorial
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools.
 author: gianugo
-ms.date: 06/20/2017
+ms.date: 06/14/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -10,7 +10,7 @@ ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 ---
 
@@ -33,7 +33,7 @@ This tutorial requires you to access the environment using Remote Desktop and to
 
 1. Start Visual Studio using **Run as an administrator**.
 2. On the **File** menu, point to **Open** and then click **Project/Solution**.
-3. Browse to the **Desktop,** and then open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3. Browse to the **Desktop,** and then open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
 4. Select the solution file named **FleetManagement**. The file type listed is Microsoft Visual Studio Solution (**SLN** file).
     - The fleet management solution file is available on the downloadable
     - VHD.

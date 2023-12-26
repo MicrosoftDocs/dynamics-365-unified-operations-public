@@ -5,7 +5,7 @@ title: Set up postdated checks
 description: This article explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. 
 author: kweekley
 ms.date: 11/15/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

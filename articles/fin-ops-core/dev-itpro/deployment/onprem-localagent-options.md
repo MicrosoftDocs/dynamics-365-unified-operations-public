@@ -13,7 +13,8 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-08-03
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Deployment configurations for the local agent

@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Platform update 12
 ms.custom: 
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Redeploy on-premises environments
 

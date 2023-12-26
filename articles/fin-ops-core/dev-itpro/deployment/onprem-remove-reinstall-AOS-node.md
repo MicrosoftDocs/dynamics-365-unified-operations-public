@@ -23,6 +23,8 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Remove and reinstall, or add an AOS node

@@ -4,7 +4,7 @@
 title: Dedicated payment terminals and prompts for a printer and cash drawer
 description: This article provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
 author: BrianShook
-ms.date: 05/20/2020
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,14 +44,14 @@ Microsoft Dynamics 365 Commerce supports these trends by enabling a scenario whe
 | Term | Description |
 |---|---|
 | Register | The entity that is used to configure an instance of a POS register. |
-| Device | A representation of the physical instance of a POS register and the Modern POS application that is assigned to it. |
-| Dedicated hardware station | The hardware station business logic that is built into the Modern POS for Windows and Modern POS for Android applications. |
+| Device | A representation of the physical instance of a POS register and the Store Commerce app that is assigned to it. |
+| Dedicated hardware station | The hardware station business logic that is built into the Store Commerce app for Windows, Android, and iOS. |
 | Drawer kick (d/k) port | A traditional method for connecting a cash drawer to a receipt printer. |
 | Network peripherals | Built-in support for network-enabled payment terminals, receipt printers, and cash drawers. |
 
 ## Supported POS clients and devices
 
-The functionality that is described in this article is supported by the Modern POS for Windows and Modern POS for Android POS clients.
+The functionality that is described in this article is supported by the Store Commerce app for Windows, Android, and iOS clients.
 
 This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
 
@@ -87,7 +87,7 @@ To set up the hardware profile that is assigned to the register, follow these st
 
 5. In Dynamics 365 Commerce, search for **Registers**.
 6. Select a register by selecting the register number, and then select **Edit**.
-7. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Modern POS for Windows application or the Modern POS for Android application.
+7. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Store Commerce app for Windows, the Store Commerce app for Android, or the Store Commerce app for iOS.
 8. Select **Save**.
 9. On the Action Pane, on the **Registers** tab, select **Configure IP addresses**.
 10. On the **PIN pad** FastTab, enter the IP address of the payment terminal. For information about how to get the IP address of the payment terminal by using the Adyen connector, see [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3).

@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.custom: 44351
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 ---
 

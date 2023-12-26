@@ -14,6 +14,8 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.search.form: SysCorpNetPrinterList
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Document generation, publishing, and printing in on-premises deployments

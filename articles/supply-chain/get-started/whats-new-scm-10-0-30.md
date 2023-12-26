@@ -35,14 +35,13 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
 | Production control | On-hand information in production orders to release page | Adds a column for the on-hand inventory quantity for the line item in the lines section on the **Production orders to release** page. |
-| Transportation management | Assign shipments to related route segments | This feature enables the system to apportion shipment freight costs more accurately, including for loads with multiple shipments delivered to various segment destinations along a single route. It assigns each shipment to the most suitable route segment based on the destination addresses of the shipment and segment. The feature then calculates each shipment's freight cost as a proportion of the load's total freight cost, based on the shipment's relative weight, volume, quantity and distance traveled. This feature only applies to shipments managed using the Transportation management (TMS) module. |
 
 ## Additional resources
 
@@ -54,7 +53,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.30, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
 
-### Dynamics 365 and industry clouds: 2022 release wave 1 plan
+### Dynamics 365 and industry clouds: 2022 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 

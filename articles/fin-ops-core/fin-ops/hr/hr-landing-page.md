@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["20931", "intro-internal"]
+ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
@@ -85,9 +85,9 @@ In addition to compensating your staff with wages, salaries, and bonuses, you ca
 
 Microsoft Dynamics AX can help you maintain a safe work environment that's in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
 
-- [Form I-9 verification](localizations/noam-usa-form-i-9-verification.md)
-- [Comply with the Americans with Disabilities Act (ADA)](localizations/noam-usa-comply-ada.md)
-- [Track time off for the Family and Medical Leave Act (FMLA)](localizations/noam-usa-track-time-for-fmla.md)
+- [Form I-9 verification](localizations/usa/noam-usa-form-i-9-verification.md)
+- [Comply with the Americans with Disabilities Act (ADA)](localizations/usa/noam-usa-comply-ada.md)
+- [Track time off for the Family and Medical Leave Act (FMLA)](localizations/usa/noam-usa-track-time-for-fmla.md)
 
 ## Gather information using questionnaires
 

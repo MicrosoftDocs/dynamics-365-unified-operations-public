@@ -3,10 +3,10 @@ title: Upload a configuration into Lifecycle Services
 description: This article explains how to create a new Electronic reporting (ER) configuration and upload it into Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 ms.date: 06/17/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

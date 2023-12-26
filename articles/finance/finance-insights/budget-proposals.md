@@ -3,8 +3,8 @@
 
 title: Budget proposals
 description: This article describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
-author: panolte
-ms.date: 07/16/2021
+author: ShivamPandey-msft
+ms.date: 10/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,14 +12,14 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: BudgetProposalConfiguration, BudgetProposalConfigurationWizard  
-audience: Developer
+audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: panolte
+ms.author: shpandey
 ms.search.validFrom: 2020-05-31 
 ms.dyn365.ops.version: 10.0.4
 ---
@@ -44,8 +44,7 @@ The term *cleansing data* refers to ensuring that the data is consistent in term
 ### Budget proposals setup
 Complete the following steps to set up the Budget proposals feature.
 
-1. To access this functionality, the corresponding feature of **Budget proposals (preview)** needs to be enabled in feature management. 
-2. After enabling a feature, a new menu item named **Budget Proposal** under **Budgeting > Setup > Basic budgeting** will be accessible for users with the Finance Insights Administrator role. The setting of the **Enable feature** field must be changed from **No** to **Yes**. No predictions will be generated until the feature is enabled. 
+1. After enabling a feature, a new menu item named **Budget Proposal** under **Budgeting > Setup > Basic budgeting** will be accessible for users with the Finance Insights Administrator role. The setting of the **Enable feature** field must be changed from **No** to **Yes**. No predictions will be generated until the feature is enabled. 
 
 ### Example - Generating a budget proposal
 Budget proposals must go through the following steps to prepare the proposed budget as a draft budget register document:

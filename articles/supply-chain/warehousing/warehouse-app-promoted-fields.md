@@ -24,7 +24,7 @@ This article describes how to promote and highlight specific information for any
 
 ## Enable promoted fields in your system
 
-If you are running Supply Chain Management version 10.0.28 or earlier, then before you can set up promoted fields, you must complete the following procedure to enable the required features and generate the required field names in the Warehouse Management mobile app. If you are running Supply Chain Management version 10.0.29 or later, the features are mandatory and can't be turned off, so you can skip this procedure.
+If you're running Supply Chain Management version 10.0.28 or earlier, then before you can set up promoted fields, you must complete the following procedure to enable the required features and generate the required field names in the Warehouse Management mobile app. If you're running Supply Chain Management version 10.0.29 or later, the features are mandatory and can't be turned off, so you can skip this procedure.
 
 1. Go to **System administration \> Workspaces \> Feature management**. (See [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for more information about this page.)
 1. Make sure that the *Warehouse app step instructions* feature is turned on for your system. This feature is a prerequisite for the *Warehouse app promoted fields* feature. As of Supply Chain Management version 10.0.29, it's mandatory and can't be turned off. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
@@ -41,7 +41,10 @@ Use the following procedure to set up promoted fields.
 1. In the **Promoted fields** dialog box, select the fields that you want to promote. You can also highlight up to two of the selected fields. Highlighted fields will be shown in bold in the Warehouse Management mobile app. As you select fields, consider the fact that some screens might be large enough to show only the top one or two promoted fields. For an example that shows how to use these settings, see the scenario later in this article.
 
     > [!NOTE]
-    > The **Available fields** list is limited to the fields that can appear for the menu item. However, other factors (such as item composition) determine whether a field actually appears in the Warehouse Management mobile app. If you've configured promoted fields, only the selected fields will appear on the main page of the Warehouse Management mobile app. However, workers can still view the remaining fields by tapping on the details page.
+    > - The **Available fields** list includes all the fields that *could* appear for the menu item. However, other factors (such as item composition) determine which fields *actually do* appear in the Warehouse Management mobile app. 
+    > - You can only promote the fields that are shown in the **Available fields** list. You can't add new fields from here.
+    > - For a given step, you should only promote fields that are displayed by default in the mobile app for that step. If you promote a field that isn't shown in the app, that setting has no effect.
+    > - If you've promoted one or more fields, then only those fields will be shown on the main page of the app. However, workers can still view the remaining fields by opening the details page.
 
 1. Select **OK** to apply your settings. Your selected fields are now listed on the **Select promoted fields** FastTab.
 

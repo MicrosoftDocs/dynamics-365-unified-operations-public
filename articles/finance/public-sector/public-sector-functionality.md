@@ -3,7 +3,7 @@ title: Public sector home page
 description: Dynamics 365 Finance supports common public sector business processes. These processes include budgeting, purchasing, accounts payable, and accounts receivable tasks.
 author: velofog
 ms.date: 06/20/2017
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Application User
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 20691,  ""intro-internal
+ms.collection: get-started
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.industry: Public sector
 ms.search.form: SysConfiguration

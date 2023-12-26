@@ -3,7 +3,7 @@ title: Extensibility changes in Finance and Operations, Enterprise edition (July
 description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
 ms.date: 11/08/2017
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Developer

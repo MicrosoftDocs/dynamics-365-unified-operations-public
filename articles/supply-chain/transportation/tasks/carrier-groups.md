@@ -5,7 +5,7 @@ title: Carrier groups
 description: This article describes how to set up data for carrier groups.
 author: Weijiesa
 ms.date: 10/30/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Accounts payable home page
 description: This article provides an overview of Accounts payable.
 author: sunfzam
 ms.date: 02/15/2019
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 # ms.search.industry: 

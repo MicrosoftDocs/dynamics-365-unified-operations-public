@@ -6,13 +6,13 @@ ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Application User
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 69161,  ""intro-internal
+ms.collection: get-started
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ---
 

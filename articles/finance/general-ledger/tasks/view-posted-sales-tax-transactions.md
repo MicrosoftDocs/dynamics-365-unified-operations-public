@@ -5,7 +5,7 @@ title: View posted sales tax transactions
 description: This article describes some ways to view posted sales tax transactions.
 author: twheeloc
 ms.date: 08/08/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -34,6 +34,9 @@ This article describes some ways to view posted sales tax transactions. You can 
 1. In the navigation pane, go to **Modules > Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax**.
 2. Select **Show filters** to narrow the view to specific transactions.
 3. Close the page.
+
+> [!NOTE]
+> The **Delete** action isn't allowed for Posted sales tax transactions.
 
 ## Sales tax settlement periods page
 

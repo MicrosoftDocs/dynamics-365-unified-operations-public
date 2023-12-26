@@ -17,7 +17,8 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: ["2094", "intro-internal"]
+ms.custom: ["2094"]
+ms.collection: get-started
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +50,7 @@ The following learning map shows the major concepts and tasks that make up the f
 ## Additional resources
 
 ### What's new and in development
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
 
 ### Inventory accounting 
 To learn more, see [Inventory close](../cost-management/inventory-close.md).

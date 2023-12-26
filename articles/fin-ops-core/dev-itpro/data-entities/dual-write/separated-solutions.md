@@ -2,10 +2,9 @@
 title: Separated Dual-write Application Orchestration package
 description: The Dual-write Application Orchestration package is no longer a single package but has been separated into smaller packages. This article explains the solutions and maps that each package contains, and its dependency on other packages.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 05/04/2023
 ms.topic: article
-audience: Application User, IT Pro
-ms.reviewer: sericks
+audience: IT Pro
 ms.custom: "separate-solution"
 ms.search.region: global
 ms.author: ramasri
@@ -33,11 +32,13 @@ Previously, the Dual-write Application Orchestration package was a single packag
 - Currency Exchange Rates
 - Field Service Common
 
-Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customers can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations be upgraded.
+Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customers can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations can be upgraded.
 
 ![Separated package.](media/separated-package-1.png)
 
 This article explains the solutions and maps that each package contains, and its dependency on other packages.
+
+For step-by-step instructions that show how to transition to split packages, see [Transition from the Dual-write Application Orchestration package to split packages](separated-solutions-transition-guidance.md).
 
 ## Dual-write Application Core
 
@@ -76,31 +77,17 @@ The Dual-write Application Core package has no dependency on other packages.
 
 The Dual-write Human Resources package contains the solutions and maps that are required to sync Human Resources data. It contains the following three solutions.
 
-| Unique name                | Display name                             |
-|----------------------------|------------------------------------------|
-| HCMCommon                  | HCM Common                               |
-| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps |
-| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor      |
+| Unique name                | Display name                             | Solution/Package  |
+|----------------------------|------------------------------------------|-------------------|
+| HCMCommon                  | HCM Common                               |Dynamics 365 HR Common tables |
+| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps | Dual-write Human resources solution |
+| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor      |Dual-write Human resources solution|
 
-The following maps are available in this package.
-
-| Finance and operations apps | Customer engagement apps         |
-|-----------------------------|----------------------------------|
-| Ethnic origins              | cdm_ethnicorigins                |
-| Compensation job function   | cdm_jobfunctions                 |
-| Positions V2                | cdm_jobpositions                 |
-| Jobs                        | cdm_jobs                         |
-| Compensation job type       | cdm_jobtypes                     |
-| Language codes              | cdm_languages                    |
-| Position type               | cdm_positiontypes                |
-| Position worker assignments | cdm_positionworkerassignmentmaps |
-| Veteran status              | cdm_veteranstatuses              |
-| Worker                      | cdm_workers                      |
-| Employment per company      | cdm_employments                  |
+For more information on the mappings that are available in the solutions, see [Integration with Dataverse tables](/dynamics365/human-resources/hr-dataverse-integration#template-mappings).
 
 **Dependency information**
 
-The Dual-write Human Resources package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Human Resources package.
+The Dual-write Human Resources package depends on the [Dual-write Application Core](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwappcore?tab=Overview&exp=ubp8) and [Dynamics 365 HR Common Tables](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.hcmcommon?exp=ubp8) packages. Therefore, you should install these two solution packages before you install the Dual-write Human Resources package.
 
 ## Dual-write Supply Chain
 

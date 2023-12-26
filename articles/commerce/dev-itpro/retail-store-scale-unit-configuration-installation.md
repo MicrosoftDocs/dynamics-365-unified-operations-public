@@ -2,7 +2,7 @@
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: This article explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-ms.date: 08/31/2022
+ms.date: 05/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,12 +22,15 @@ ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, Retai
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how you can use self-service to configure a Commerce Scale Unit (self-hosted, previously called Retail Store Scale Unit) in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit (CSU) combines the Commerce channel database, Commerce Async Client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This article also explains how to uninstall and troubleshoot Commerce Scale Unit.
+This article explains how you can use self-service to configure a Commerce Scale Unit in Microsoft Dynamics 365 Commerce headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit (CSU) combines the Commerce channel database, Commerce async client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This article also explains how to uninstall and troubleshoot Commerce Scale Unit.
 
 > [!IMPORTANT]
 > - A basic design principle to follow is that if you are not able to customize in a requested manner on a Commerce Scale Unit (Cloud), you should not customize this way with a CSU (self-hosted).  It is critical to understand that direct database access is not supported and can easily cause breaks in customizations that use this concept.  A CSU (self-hosted) is primarily for enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
 > - Do not install a CSU on a developer environment, which typically already has a configured Retail Server and Channel database.
-> - It is critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+
+> [!IMPORTANT]
+> - It's critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+> - It's critical that you have a plan to rotate this key at least one month prior to expiration. Planning is necessary when working with a high number of stores to ensure that there is sufficient time to roll out the change to all stores.
 
 ## Before you begin
 
@@ -168,7 +171,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
    - Cloud POS
 
      > [!NOTE]
-     > - To install Cloud POS, you must also select and install Retail Server. If you will use only Modern POS in the store, clear the **Retail Cloud POS** check box, and continue with the installation process as it's described here.
+     > - To install Cloud POS, you must also select and install Retail Server.
      > - By default, the installer installs all components on one computer. To install the components across multiple computers, you must complete additional manual steps. For more information, see the "Multiple-computer installation" section.
 
      After you've selected all the components to install, select **Next** to continue.

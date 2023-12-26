@@ -13,7 +13,8 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2022-06-03
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Enable RSAT in Finance + Operations (on-premises) environments

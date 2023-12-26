@@ -5,7 +5,7 @@ title: Configure wave processing example
 description: This article provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
 author: Mirzaab
 ms.date: 03/17/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -37,7 +37,7 @@ To work through this scenario using the sample records and values specified here
 
 This example scenario walks through many of the diverse settings that affect how waves are created, populated, processed, and released.
 
-1. Go to **Navigation pane > Modules > Warehouse management > Setup > Waves > Wave templates**.
+1. Go to **Warehouse management > Setup > Waves > Wave templates**.
 1. Select **New**.
 1. In the **Wave template name** field, type a value. When you set up a wave template, you specify the sequence in which the templates will be matched to released lines on sales orders, production orders, or kanbans. When a line is released to the warehouse or to production, it uses the first wave template that it meets the criteria for. We recommend that you put templates with the most specific criteria at the top of the list. The broader the criteria, the more likely it is for a line to meet the criteria, and this could lead to lines being assigned to the wrong wave.  
 1. In the **Wave template description** field, type a value.
@@ -60,7 +60,7 @@ This example scenario walks through many of the diverse settings that affect how
 1. In the **Wait for lock (ms)** field, enter a number. Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed.  
 1. Select **Save**.
 1. Close the page.
-1. Go to **Navigation pane > Modules > Production control > Setup > Production control parameters**.
+1. Go to **Production control > Setup > Production control parameters**.
 1. In the **Release to warehouse** field, select an option.
 
     For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, the items or allocation lines cannot be processed in a wave. For production orders, you also have the option of choosing **Allow partial reservation**. For example, this is useful if you have the materials that you need to start production, and can wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.

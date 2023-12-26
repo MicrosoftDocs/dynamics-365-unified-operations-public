@@ -5,7 +5,7 @@ title: Set up dispositions codes
 description: This procedure focuses on the setup of a disposition code that can be used on a mobile device for the return order receiving process. 
 author: Mirzaab
 ms.date: 11/11/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

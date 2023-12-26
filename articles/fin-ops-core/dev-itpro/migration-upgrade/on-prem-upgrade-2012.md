@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30 
 ms.dyn365.ops.version: 10.0.0
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
@@ -141,7 +142,7 @@ If you will use a Dynamics 365 environment to perform the data upgrade, the foll
     > For information about how to monitor the upgrade, see the [Monitoring the data upgrade](#monitoring-the-data-upgrade) section in the [Appendix](#appendix) of this article.
 
 1. After the upgrade process is successfully completed, back up the newly upgraded database. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
-1. Restore the database into your on-premises environment's SQL Server, but give it a name that differs from the name of the AX 2012 database (for example, name it **AXDBupgraded**). The restored database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+1. Restore the database into your on-premises environment's SQL Server, but give it a name that differs from the name of the AX 2012 database (for example, name it **AXDBupgraded**). The restored database must be configured. Follow the steps in [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
 1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 
     - If you have customizations, follow these steps:
@@ -149,12 +150,12 @@ If you will use a Dynamics 365 environment to perform the data upgrade, the foll
         1. In LCS, go to the Shared asset library.
         1. Under **Select asset type**, select **Model**, and then download **Dynamics 365 Finance + Operations on-premises, Version 10.0.x Demo Data**. Select the version that is closest to the 10.0.x environment that you will deploy as the on-premises baseline.
         1. Use the restore backup option for SQL Server to create a new database from this file. (Typically, this database is named **AXDB**.) For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
-        1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
-        1. In LCS, set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy the environment, the name of the database that you specify should be the name of the database that you created earlier (typically **AXDB**).
+        1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
+        1. In LCS, set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-latest.md). When you deploy the environment, the name of the database that you specify should be the name of the database that you created earlier (typically **AXDB**).
         1. Apply your own customizations, and ISV and VAR modules, to the newly created 10.0.x environment. Otherwise, when the environment is initially synced with the database, it will delete any customization-related or extension-related data.
         1. Shut down on-premises Application Object Server (AOS), Business Intelligence (BI), and Management Reporter (MR) servers, or stop the services from the Azure Service Fabric portal by selecting **Deactivate (Restart)**.
         1. Rename or delete the demo database (typically **AXDB**) that you used for deployment, and then rename your new database (typically **AXDBupgraded**) to the name that the demo database had (typically **AXDB**).
-        1. The renamed database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+        1. The renamed database must be configured. Follow the steps in [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
         1. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal by selecting **Activate**.
 
             > [!NOTE]
@@ -163,7 +164,7 @@ If you will use a Dynamics 365 environment to perform the data upgrade, the foll
     - If you don't have customizations, follow these steps:
 
         1. Optional: Rename your old database (typically **AXDBold**), and then rename your new database (typically **AXDB**). In the next step, make sure that you enter the name of the upgraded database.
-        2. In LCS, set up a new environment, and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+        2. In LCS, set up a new environment, and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md).
 
 ### Upgrade where the VHD points to your database
 
@@ -198,7 +199,7 @@ If you will use a Dynamics 365 environment to perform the data upgrade, the foll
 
 1. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
 1. Run the **Configure-OnpremUpgrade.ps1** script by using the values that are stated in the [Resetting the VHD database (Optional)](#resetting-the-vhd-database-optional) section later in this article.
-1. Configure your upgraded database for Finance + Operations by following the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+1. Configure your upgraded database for Finance + Operations by following the steps in [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
 1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 
     - If you have customizations, follow these steps:
@@ -206,8 +207,8 @@ If you will use a Dynamics 365 environment to perform the data upgrade, the foll
         1. In LCS, go to the Shared asset library.
         1. Under **Select asset type**, select **Model**, and then download **Dynamics 365 Finance + Operations on-premises, Version 10.0.x Demo Data**. Select the version that is closest to the 10.0.x environment that you will deploy as the on-premises baseline.
         1. Use the restore backup option for SQL Server to create a new database (typically **AXDB**) from this file. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
-        1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
-        1. In LCS, set up a new environment, and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy the environment, the database that you should specify should be the database that you configured earlier (typically **AXDB**).
+        1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
+        1. In LCS, set up a new environment, and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md). When you deploy the environment, the database that you should specify should be the database that you configured earlier (typically **AXDB**).
         1. Apply your own customizations, and ISV and VAR modules, to the newly created 10.0.x environment. Otherwise, when the environment is initially synced with the database, it will delete any customization-related or extension-related data.
         1. Shut down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
         1. Rename or delete the demo database (typically **AXDB**) that you used for deployment, and then rename your new database (typically **AXDBupgraded**) to the name that the demo database had (typically **AXDB**).
@@ -219,7 +220,7 @@ If you will use a Dynamics 365 environment to perform the data upgrade, the foll
     - If you don't have customizations, follow these steps:
 
         1. Optional: Rename your old database (typically **AXDBold**), and then rename your new database (typically **AXDB**). In the next step, make sure that you enter the name of the upgraded database.
-        2. Set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+        2. Set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md).
 
 ### Configuring existing users
 

@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.search.industry: 
 ms.search.form: 
 ---

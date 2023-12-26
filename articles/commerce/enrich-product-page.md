@@ -1,8 +1,8 @@
 ---
-title: Enrich a product page
-description: This article describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
+title: Customize product detail pages
+description: This article describes how to customize product detail pages in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/14/2020
+ms.date: 08/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,38 +14,42 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
 ms.assetid: 
+
 ---
 
-# Enrich a product page
+# Customize product detail pages
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
+This article describes how to customize product detail pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
-By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product. This process is known as enriching the product page.
+By default, your Dynamics 365 Commerce e-commerce site uses a generic PDP to display product data. This PDP includes basic information about the product and page controls that allow site visitors to select and purchase the product. 
 
-In many cases, you will want to use specific additional content for your products. When you go to **Retail and Commerce** in the authoring tool, you will see a list of products from the channel that is assigned to the site. In this list, the **Enriched** column indicates whether the product page for a product has been enriched. If a check mark appears in the column, an enriched product page exists for the product. If no check mark appears, the default product page and content are used for the product. You can preview both enriched and non-enriched product pages by selecting a product name in the list.
+You can customize PDPs by adding information from the Commerce Scale Unit (CSU), such as additional images or product-specific text.
 
-## Enrich a product page
+In many cases, you'll want to use specific additional content for your products. When you go to the **Products** tab in Commerce site builder, you'll see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
 
-To enrich a product page, follow these steps.
+The following video provides an overview of PDP and category page customization using site builder.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1863o]
+
+## Customize a PDP
+
+To customize a PDP in site builder, follow these steps.
 
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Products**.
-1. Select any product that doesn't have an enriched product page.
-1. On the Action Pane, select **Enrich product page**.
-1. Select **PDP-template**, and then select **OK**.
-1. In the page outline tree on the left, expand the **Main** slot.
-1. Select the ellipsis button (**...**) for the **Main** slot, and then select **Add Module**.
-1. Select **Container 2**, and then select **OK**.
-1. Select the ellipsis button for **Container 2**, and then select **Add Module**.
-1. Select **Feature**, and then select **OK**.
-1. In the properties pane on the right, in the **Rich Text** field, enter the updated description of the product.
-1. In the **Heading** field, enter heading text, and then select **OK**.
-1. Select **Save**, and then select **Finish editing**.
-1. In the **Comments** field, enter **Enriched a product**, and then select **OK**.
-1. Select **Preview** to preview the enriched product page. When you've finished, close the preview tab to return to the authoring tool.
-1. Select **Publish**.
+1. Select any product that doesn't have a customized product page.
+1. On the action pane, select **Customize product page**.
+1. Select a template for your custom product page, and then select **OK**.
+
+    > [!NOTE]
+    > To make a template automatically show up in the list that appears when you select **Customize product page**, add the tag "product" to the desired product page template. Alternately, if you want to see all templates in the list for your custom product page, clear the filter at the top of the template picker by selecting the **X** next to the "product" tag filter.
+
+1. Edit your new custom product page by adding and configuring marketing modules and content to the page.
+1. When finished, select **Save**, and then select **Finish editing**.
+1. Select **Preview** to preview the preview the new product page in a browser or to send to test on a mobile device. When you've finished, close the preview tab to return to site builder.
+1. Select **Publish** to publish your page.
 
 ## Additional resources
 
@@ -59,7 +63,7 @@ To enrich a product page, follow these steps.
 
 [Save, preview, and publish a page](save-preview-publish-page.md)
 
-[Enrich a category landing page](enrich-category-page.md)
+[Customize a category landing page](enrich-category-page.md)
 
 [Verify page content accessibility](verify-accessibility.md)
 

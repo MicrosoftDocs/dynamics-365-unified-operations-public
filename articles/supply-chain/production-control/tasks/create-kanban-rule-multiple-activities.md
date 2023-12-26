@@ -5,7 +5,7 @@ title: Create a kanban rule for multiple activities
 description: This procedure shows how to create a kanban rule that includes multiple activities from a production flow. 
 author: johanhoffmann
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

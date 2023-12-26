@@ -1,15 +1,15 @@
 ---
 title: Connect a custom Help website to the Help pane
-description: This article explains how you can extend the in-product Help pane with custom Help content.
-author: edupont04
-ms.date: 11/21/2022
+description: You can extend the in-product Help pane with custom Help content.
+author: brentholtorf
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: edupont
+ms.author: bholtorf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---
@@ -31,7 +31,7 @@ The process for connecting your [custom Help website](custom-help-overview.md#cu
 
 ## <a name="extendhelppane"></a>Extend the Help pane and assign the custom Help indexes to languages
 
-The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-toolkit.md) contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
+The **Help Pane extension** folder contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
 
 ### Extend the Help pane
 
@@ -61,6 +61,8 @@ The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-tool
 5. Optional: If you want to change any of the user interface (UI) strings that appear in the **Help** pane, edit the **Customhelppane.en-US.label.txt** file.
 
 Next, you must specify the language that the search index for your custom Help is intended for.
+
+[!INCLUDE [custom-help-toolkit-tools](../includes/custom-help-toolkit-tools.md)]
 
 ### Assign a custom index to a language
 
@@ -139,11 +141,8 @@ If the client is set to the **de-AT** locale, but no results are found in the Ge
 
 ## See also
 
-[Deploy custom Help to Azure](walkthrough-help-azure.md)  
-[Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

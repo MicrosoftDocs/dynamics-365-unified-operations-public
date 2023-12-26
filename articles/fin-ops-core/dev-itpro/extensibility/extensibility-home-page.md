@@ -3,7 +3,7 @@ title: Extensibility home page
 description: This article provides links to topics about extensibility.
 author: FrankDahl
 ms.date: 05/14/2019
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Developer
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ---
 # Extensibility home page

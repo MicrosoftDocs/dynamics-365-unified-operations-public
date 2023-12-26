@@ -6,13 +6,12 @@ ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.custom: 21761, NotInToc
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

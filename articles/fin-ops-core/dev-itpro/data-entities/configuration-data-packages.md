@@ -20,7 +20,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 > [!IMPORTANT]
 > This article applies only to the July 2017 release of Microsoft Dynamics 365 Finance. If you are running a later release, refer to the article [Copy configuration data between companies or legal entities overview](copy-configuration.md). 

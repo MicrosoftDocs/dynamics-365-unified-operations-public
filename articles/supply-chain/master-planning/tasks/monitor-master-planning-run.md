@@ -5,7 +5,7 @@ title: Monitor a master planning run
 description: This article explains how the production planner can see whether a master planning run is in progress. 
 author: t-benebo
 ms.date: 11/04/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -34,7 +34,7 @@ From the **View master planning progress** page, you can view details of histori
 
 ### Turn the Master plan progress visualization feature on or off
 
-As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Master planning progress visualization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Master planning progress visualization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Master plan progress visualization feature
 

@@ -5,7 +5,7 @@ title: Create an open-ended question
 description: Open-ended questions enable respondents to provide their own response. 
 author: twheeloc
 ms.date: 01/03/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -1,5 +1,5 @@
 ---
-title: Create a retail functionality profile
+title: Create a commerce functionality profile
 description: This article describes how to create a functionality profile in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
@@ -31,7 +31,7 @@ To create a functionality profile, follow these steps.
 1. On the action pane, select **New**.
 1. In the **Profile** field, enter an ID for the profile ("FN006" in the example image below).
 1. In the **Description** field, enter a value ("Adventure Works Profile" in the example image below).
-1. In the **General** section, select a country for the **ISO** locale.
+1. In the **General** section, select a country/region for the **ISO** locale.
 1. In the **General** section, modify other settings, as needed.
 1. In the **General** section, select a **Receipt profile ID** for email receipts.
 1. In the **Functions** section, modify settings, as needed.
@@ -51,7 +51,7 @@ The following image shows an example functionality profile.
 
 [Screen layout overview](pos-screen-layouts.md)		  
 
-[Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) 
+[Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

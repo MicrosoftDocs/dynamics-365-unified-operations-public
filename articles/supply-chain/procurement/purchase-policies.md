@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: ["11614", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
 
@@ -67,7 +67,7 @@ Policy 123 is defined for the Department organization hierarchy for the Sales UK
 
 Policy 456 is defined for the Global purchasing control organization hierarchy for the Sales and Marketing department. In policy 456, the purchase requisition control rule doesn't specify that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is de-selected.  
 
-Sam works in the Sales UK – Sales department in Contoso’s United Kingdom office. The policies for both the Department and Global purchasing control organization hierarchies apply to his department. When Sam creates a purchase requisition, the system must determine which policy to apply. The system administrator set up the purchasing policy parameters to specify that purchasing policies must be applied in the following order of precedence:
+Sam works in the Sales UK – Sales department in Contoso’s United Kingdom office. The policies for both the Department and Global purchasing control organization hierarchies apply to Sam's department. When Sam creates a purchase requisition, the system must determine which policy to apply. The system administrator set up the purchasing policy parameters to specify that purchasing policies must be applied in the following order of precedence:
 
 1.  Global purchasing control
 2.  Department

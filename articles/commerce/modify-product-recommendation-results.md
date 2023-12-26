@@ -4,7 +4,7 @@
 title: Adjust AI-ML-based product recommendation results
 description: This article explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -63,23 +63,23 @@ The "Best selling" product list has one parameter that can be changed:
 
 ### For "New," "Trending," or "Best selling" lists
 
-1.	Go to **Retail and Commerce** > **Product recommendations** > **Recommendation parameters**.
-1.	In the list of shared parameters, select **Recommendation lists**.
-1.	Select the list add or remove products from.
-1.	To add products to the table, select **Add line.** 
-1.	Under the Product column, search for a product by **Name** or **Product number.**
+1.    Go to **Retail and Commerce** > **Product recommendations** > **Recommendation parameters**.
+1.    In the list of shared parameters, select **Recommendation lists**.
+1.    Select the list add or remove products from.
+1.    To add products to the table, select **Add line.** 
+1. Under the Product column, search for a product by **Name** or **Product number.**
 
-    ![Example of searching for a product on the New product list.](./media/examplenewlistconfiguration1.png)
+   ![Example of searching for a product on the New product list.](./media/examplenewlistconfiguration1.png)
 
-1.	Under the Line type column, select one of two options:
-    -	**Include** – forces a product to the front of the list
-    -	**Exclude** – removes a product from appearing in the list
+1. Under the Line type column, select one of two options:
+   - **Include** – forces a product to the front of the list
+   - **Exclude** – removes a product from appearing in the list
     
     ![Example of Including or Excluding a product from the New product list.](./media/examplenewlistconfiguration2.png)
 
-1.	Changing the **Display order** will change the order that products marked **include** will appear in the list.
-    - If two products have the same **display order** value, then the final order of those two results may differ from the back office.
-1.	To remove products from the table: select the line to remove and select **Remove**.
+1. Changing the **Display order** will change the order that products marked **include** will appear in the list.
+   - If two products have the same **display order** value, then the final order of those two results may differ from the back office.
+1. To remove products from the table: select the line to remove and select **Remove**.
 
 
 ### For "People also like" or "Frequently bought together" lists
@@ -89,14 +89,14 @@ In the context of "Frequently bought together" or "People also like" lists, mach
 A *seed product* is the product you want to generate results for. In the context of manually adjusting recommendation lists, you are adding or removing results for this product. 
 
 Follow these steps to manually add or remove results for a seed product:
-1.	Select the **Seed product**. 
-1.	Under the **Product** column, search for a product by **Name** or **Product number.**
+1.    Select the **Seed product**. 
+1.    Under the **Product** column, search for a product by **Name** or **Product number.**
 ![Example of searching for a product on the Frequently bought together list.](./media/exampleFBTlistconfiguration1.png)
 1. Under the **Line type** column, select one of two options:
     - **Include** – forces a product to the front of the list
     - **Exclude** – removes a product from appearing in the list     
 ![Example of Including or Excluding a product on the Frequently bought together list.](./media/exampleFBTlistconfiguration2.png)
-1.	To remove products from the table: select the line to remove and select Remove.
+1.    To remove products from the table: select the line to remove and select Remove.
 
 
 ## Additional resources
@@ -109,7 +109,7 @@ Follow these steps to manually add or remove results for a seed product:
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 

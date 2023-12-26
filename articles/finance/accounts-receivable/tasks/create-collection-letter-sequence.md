@@ -4,8 +4,8 @@
 title: Create a collection letter sequence
 description: Use this procedure to create a collection letter sequence. 
 author: JodiChristiansen
-ms.date: 12/07/2021
-ms.topic: business-process 
+ms.date: 02/22/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -35,7 +35,7 @@ Use this procedure to create a collection letter sequence. This task uses the US
 4. In the **Description** field, type a value. The terms of payment is optional. If you enter a value here, the collection letter fee invoice will use these terms of payment instead of the terms of payment stored with the customer.  
 5. In the **Collection letter code** field, select the code for the first collection letter that you want to send. The first collection letter is created according to the due date on the invoice, the value that you enter for the grace period in the Days field on this line, and other information that you enter on this line.  
 6. In the **Description** field, type a value. 
-7. The default currency for the fee is the currency of the legal entity. This currency code can be different than the invoice currency.   
+7. The default currency for the fee is the currency of the legal entity. This currency code can be different than the invoice currency. You must set up a collection letter sequence for every currency that you want to create a collection letter. Collection letters are automatically created for transactions in the currencies that are specified in a collection letter sequence, even if no fee is specified.
 8. Click **Add** to add the next collection letter that will be sent in the sequence. In many cases, the first collection letter is just a warning. You can add fees if needed.  
 9. In the **Collection letter code** field, select the next collection letter that will be sent in the sequence.
 10. In the **Main account** field, select the revenue account that will be used for fees.

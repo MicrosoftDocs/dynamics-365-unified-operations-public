@@ -20,7 +20,7 @@ This article shows how to complete the minimum setup that is required before the
 
 This is the third procedure [of an eight-procedure sequence](../dimension-based-product-configuration.md#sequence) that explains how to build combinations for dimension-based configuration. You should do all eight procedures, in order, because each new procedure builds on data created by the previous procedures. To work through this sequence by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed, and you must select the *USMF* legal entity before you begin.
 
-1. Go to **Navigation pane \> Modules \> Product information management \> Products \> Released products**.
+1. Go to **Product information management \> Products \> Released products**.
 2. In the list, find and select the desired record. Select the product master that you have released in the second procedure. This product master is created with the dimension-based configuration technology.  
 3. On the Action Pane, select **Product**.
 4. Select **Dimension groups** to open the drop dialog.
