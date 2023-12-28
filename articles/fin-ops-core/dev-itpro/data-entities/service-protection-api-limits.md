@@ -162,7 +162,6 @@ The service protection API limits don't apply to all Microsoft services. The fol
 - [Data Import/Export Framework (DIXF)](../../fin-ops/data-entities/data-import-export-job.md)
 - [Recurring integrations](recurring-integrations.md)
 - [Data Integrator](/power-platform/admin/data-integrator)
-- [Dual-write](dual-write/dual-write-overview.md)
 - [Power Platform virtual tables for finance and operations apps](../power-platform/virtual-entities-overview.md)
 - [Finance and operations apps Connector](fin-ops-connector.md)
 
