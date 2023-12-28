@@ -47,13 +47,38 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 Supply Chain Management doesn't include any rate engines. You must obtain or create any rate engines that you require, and then add them to your system. However, Microsoft provides a demo rate engine that you can use for testing.
 
-#### Download and deploy the demo rate engine
+#### Download the demo rate engine
 
 Follow these steps to get the demo rate engine.
 
-1. On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS).
-1. On your Supply Chain Management server, save the DLL in the 
-**\\AOSService\\PackagesLocalDirectory\\ApplicationSuite\\bin** folder.
+On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS).
+
+#### Deploy the demo rate engine
+
+This section describes how to deploy the demo rate engine by using Visual Studio.
+1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Model Management \> Create Model**.
+   
+2. Create a new model *TMSSmallParcelShippingDemo*, make it reference to *ApplicationSuite* and *ApplicationPlatform* models in the select referenced packages step.
+ 
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/d37af644-1870-4cca-9032-63481aca7adf)
+
+3. Create a project in the new model, add the downloaded `TMSSmallParcelShippingEngine.dll`  to reference of the new project.
+
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/23832635-f449-454d-a3c7-af6c5660da3e)
+
+4. On the solution Explorer pane, right click and select **Build Solution** to compile the project to make sure the reference is added to AOT node.
+
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/3f9acf17-3d96-4ca6-adef-f45ec62ed144)
+
+5. Go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** , to create a deployment package for the new model.
+
+6. In Dynamics Lifecycle Services, go to **Asset Library \>Software deployable package**,  click **ADD** to update Software deployable package from step 5 into LCS.
+
+7. After the auto validation complete, go to **Environments \> {Your Environement ID} \> Maintain \ Apply updates>**, select the deployable package and apply.
+
+ > [!NOTE]
+ > If the system warns you that you don't have permission to deploy package on Lifecycle Services, you must contact the LCS administrator for support.
+
 
 #### Create and deploy functional rate engines
 
