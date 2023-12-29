@@ -26,9 +26,9 @@ Each data source configuration includes the following components:
 - Calculated measures
 
 > [!NOTE]
-> If you have recently transitioned from UI version 1 to UI version 2, see [Differences between Version1 and Version 2](#differences-between-v1-and-v2) to learn what has changed. 
+> If you recently transitioned from UI version 1 to UI version 2, see the [Differences between Inventory Visibility UI version 1 and UI version 2 (preview)](#differences-between-v1-and-v2) section of this article to learn what has changed. 
 >
-> For new installations, we recommend you use UI version 2 from the start. If you are still using UI version 1, we recommend testing the new version and then [upgrading to UI version 2](inventory-visibility-ui-version-2.md) as soon as possible.
+> For new installations, we recommend that you use UI version 2 from the start. If you're still using UI version 1, we recommend that you test the new version and then [upgrade to UI version 2](inventory-visibility-ui-version-2.md) as soon as possible.
 
 ## Prerequisites
 
@@ -40,26 +40,27 @@ Before you begin, install and set up the Inventory Visibility Add-in as describe
 
 <!--KFM: preview until further notice -->
 
-The Inventory Visibility app in Power Apps supports [two user interface versions](inventory-visibility-ui-version-2.md) (UI version 1 and UI version 2). Each uses a different and independent collection of configuration settings, so you must choose which version you prefer to use.
+The Inventory Visibility app in Microsoft Power Apps supports [two versions of the user interface](inventory-visibility-ui-version-2.md): UI version 1 and UI version 2. Each version uses a different and independent collection of configuration settings. Therefore, you must choose which version you prefer to use.
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-When you are setting up data sources, UI version 2 differs from UI version 1 in the following ways:
+When you're setting up data sources, UI version 2 differs from UI version 1 in the following ways:
 
-- **Physical measures** – In UI version 2, you no longer need to specify the data source for a physical measure, it uses the current data source by default.
+- **Physical measures** – In UI version 2, you no longer have to specify the data source for a physical measure. By default, UI version 2 uses the current data source.
 - **Calculated measures** – In UI version 2, you specify calculated measures in two steps:
-    1. Set up calculated measure metadata to specify the name and data source for a calculated measure
-    1. Add calculated measure lines, with each line consisting of physical measure name and an operator (addition or subtraction) for combining it with the other lines during the calculation.
+
+    1. Set up calculated measure metadata to specify the name and data source for a calculated measure.
+    1. Add calculated measure lines. Each line consists of a physical measure name and an operator (addition or subtraction) that's used to combine the line with the other lines during the calculation.
 
 ## <a name="data-source-configuration"></a>Add data sources (data source names)
 
-Each data source represents a system that your data comes from. Example data source names include *fno* (which corresponds to Supply Chain Management) and *pos* (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (*fno*) in Inventory Visibility.
+Each data source represents a system that your data comes from. Example data source names include *fno* (which corresponds to Dynamics 365 Supply Chain Management) and *pos* (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (*fno*) in Inventory Visibility.
 
 > [!NOTE]
 > The *fno* data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you don't delete configurations that are related to *fno* in the data source.
 
 > [!IMPORTANT]
-> When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
+> When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
 ### Add a data source in UI version 2 (preview)
 
@@ -67,32 +68,31 @@ Each data source represents a system that your data comes from. Example data sou
 
 <!--KFM: preview until further notice -->
 
-This section applies when you are using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
+This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To add a data source in UI version 2, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
 1. On the **Data source settings** tile, select **Manage**.
-1. On the **Data source settings** page toolbar, select **New** to add a data source and give it name (for example *ecommerce* or another meaningful data source ID).
+1. On the **Data source settings** page, select **New** on the toolbar to add a data source. Enter a name for the new data source (for example, *ecommerce* or another meaningful data source ID).
 1. Select **Save**.
 
 ### Add a data source in UI version 1
 
-This section applies when you are using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
+This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
 To add a data source in UI version 1, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
-1. From the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
-1. From the navigation pane, select **Configuration**.
-1. Open the **Data Source** tab.
-1. Select **New data source** to add a data source and give it a name (for example *ecommerce* or another meaningful data source ID).
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
+1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
+1. On the navigation pane, select **Configuration**.
+1. On the **Data Source** tab, select **New data source** to add a data source. Enter a name for the new data source (for example, *ecommerce* or another meaningful data source ID).
 
 > [!NOTE]
-> When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
+> When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
 ## <a name="data-source-configuration-dimension"></a>Dimensions (dimension mapping)
 
@@ -102,7 +102,7 @@ The purpose of the dimension configuration is to standardize the multi-system in
 - If you don't use Supply Chain Management as one of your data sources, you can freely map the dimensions. The following table shows the full list of available dimensions.
 
 > [!NOTE]
-> If you use Supply Chain Management, and change the default dimension mappings between Supply Chain Management and Inventory Visibility, the changed dimension won't sync data. Therefore, if your dimension isn't on the default dimension list, and you're using an external data source, we recommend that you use *ExtendedDimension1* through *ExtendedDimension8* to do the mapping.
+> If you use Supply Chain Management, and you change the default dimension mappings between Supply Chain Management and Inventory Visibility, the changed dimension won't sync data. Therefore, if your dimension isn't on the default dimension list, and you're using an external data source, we recommend that you use *ExtendedDimension1* through *ExtendedDimension8* to do the mapping.
 
 | Dimension type | Base dimension |
 |---|---|
@@ -146,22 +146,23 @@ By configuring a dimension mapping, you can send the external dimensions directl
 
 <!--KFM: preview until further notice -->
 
-This section applies when you are using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
+This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To add a dimension mapping in UI version 2, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
 1. On the **Data source settings** tile, select **Manage**.
-1. On **Data source settings** page, select the data source where you want to set up a dimension mapping.
-1. In the **Dimension mappings** section toolbar, select **New Dimension Mapping**.
-1. On **New Dimension Mapping** page, make the following settings:
+1. On the **Data source settings** page, select the data source where you want to set up a dimension mapping.
+1. In the **Dimension mappings** section, select **New Dimension Mapping** on the toolbar.
+1. On the **New Dimension Mapping** page, set the following fields:
+
     - **Customer dimension** – Enter the name of the source dimension.
     - **Base Dimension** – Select the dimension in Inventory Visibility that you want to map to.
 
-    For example, suppose you've already created a data source named *ecommerce*, and it includes a product color dimension. In this case, to do the mapping, you can first add *ProductColor* to the **Dimension Name** field for the *ecommerce* data source and then select *ColorId* in the **To Base Dimension** field.
+    For example, you've already created a data source that's named *ecommerce*, and it includes a product color dimension. In this case, to do the mapping, first add *ProductColor* to the **Dimension Name** field for the *ecommerce* data source. Then select *ColorId* in the **To Base Dimension** field.
 
 1. On the toolbar, select **Save**.
 
@@ -169,21 +170,22 @@ To add a dimension mapping in UI version 2, follow these steps.
 
 To add a dimension mapping in UI version 1, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
-1. From the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
-1. From the navigation pane, select **Configuration**.
-1. Open the **Data source** tab.
-1. Expand the data source where you want to set up a dimension mapping.
-1. In the **Dimension Mappings** section, select **Add** to add a dimension mapping row and then make the following settings for the new row:
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
+1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
+1. On the navigation pane, select **Configuration**.
+1. On the **Data source** tab, expand the data source where you want to set up a dimension mapping.
+1. In the **Dimension Mappings** section, select **Add** to add a dimension mapping row. Then set the following fields for the new row:
+
     - **Dimension Name** – Enter the name of the source dimension.
     - **To Base Dimension** – Select the dimension in Inventory Visibility that you want to map to.
+
 1. Select the **Save** link for the new row.
 
 ## <a name="data-source-configuration-physical-measures"></a>Physical measures
 
 When a data source posts an inventory change to Inventory Visibility, it posts that change by using *physical measures*. Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures based on your requirements. Queries can be based on the physical measures.
 
-Inventory Visibility provides a list of default physical measures that are mapped to Supply Chain Management (the *fno* data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management \> Inquiries and Report \> On-hand list**). The following table provides an example of physical measures.
+Inventory Visibility provides a list of default physical measures that are mapped to Supply Chain Management (the *fno* data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management** \> **Inquiries and Report** \> **On-hand list**). The following table provides an example of physical measures.
 
 | Physical measure name | Description |
 |---|---|
@@ -205,7 +207,7 @@ Inventory Visibility provides a list of default physical measures that are mappe
 | *ReservPhysical* | Physical reserved |
 | *OrderedSum* | Ordered in total |
 
-If your data source is Supply Chain Management, you don't have to recreate the default physical measures. However, for external data sources, you can create new physical measures as needed.
+If your data source is Supply Chain Management, you don't have to recreate the default physical measures. However, for external data sources, you can create new physical measures as you require.
 
 ### Add physical measures in UI version 2 (preview)
 
@@ -213,39 +215,39 @@ If your data source is Supply Chain Management, you don't have to recreate the d
 
 <!--KFM: preview until further notice -->
 
-This section applies when you are using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
+This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To add a physical measure in UI version 2, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
 1. On the **Data source settings** tile, select **Manage**.
-1. On **Data source settings** page, select the data source where you want to do the dimension mapping. Then, on the **Physical Measure** section toolbar, select **New physical measure**. <!--KFM: Note that the current label is **New Dimension Mapping** -->
-1. On **New physical measure** page, set the following fields for the new physical measure:
-   - **Display name** – Enter a name that is unique not only within its own data source but also across all data sources. The recommended format is *[Data Source].[Physical Measure Name]* (for example, *ecommerce.returned*). This ensures that the display name is distinct and unique across all data sources. <!--KFM: Is it really the display name, not the measure name, that must be unique? -->
-   - **Physical measure name**– Enter the name of the physical measure.
+1. On the **Data source settings** page, select the data source where you want to do the dimension mapping. Then, in the **Physical Measure** section, select **New physical measure** on the toolbar. <!--KFM: Note that the current label is **New Dimension Mapping** -->
+1. On the **New physical measure** page, set the following fields for the new physical measure:
+
+    - **Display name** – Enter a name that's unique not only within the new measure's own data source but also across all data sources. The recommended format is \<*Data source*\>.\<*Physical measure name*\> (for example, *ecommerce.returned*). This format ensures that the display name is distinct and unique across all data sources. <!--KFM: Is it really the display name, not the measure name, that must be unique? -->
+    - **Physical measure name** – Enter the name of the physical measure.
+
 1. On the toolbar, select **Save**.
 
 ### Add physical measures in UI version 1
 
-This section applies when you are using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
+This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
-To add a physical measure in UI version 1, follow these steps:
+To add a physical measure in UI version 1, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
-1. From the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
-1. From the navigation pane, select **Configuration**.
-1. Open the **Data source** tab.
-1. Expand the data source where you want to set up a physical measure.
-1. In the **Physical measure** section, select **Add** to add a physical measure row and then make the following setting for the new row:
-    - **Measure name** – Enter the name of the measure  (for example, *Returned* if you want to record returned quantities in this data source for Inventory Visibility)
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
+1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
+1. On the navigation pane, select **Configuration**.
+1. On the **Data source** tab, expand the data source where you want to set up a physical measure.
+1. In the **Physical measure** section, select **Add** to add a physical measure row. Then, in the **Measure name** field for the new row, enter the name of the measure. For example, enter *Returned* if you want to record returned quantities in this data source for Inventory Visibility.
 1. Select the **Save** link for the new row.
 
 ### Extended dimensions
 
-If are using external data sources, then you can take advantage of the extensibility that the solution offers by creating [Class Extensions](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
+If you're using external data sources, you can take advantage of the extensibility that the solution offers by creating [class extensions](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
 
 Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to the "Dimensions" section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
@@ -267,51 +269,56 @@ The configuration lets you define a set of calculated measure formulas that incl
 
 <!--KFM: preview until further notice -->
 
-This section applies when you are using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
+This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-To add a calculated measure in UI version 2, follow these steps:
+To add a calculated measure in UI version 2, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
 1. On the **Data source settings** tile, select **Manage**.
-1. On **Data source settings** page, select the data source where you want to do the dimension mapping. Then, on the **Calculated measures** section toolbar, select **New calculated measure**. <!--KFM: Note that the current label is **New Dimension Mapping** -->
-1. On **New calculated measure** page, set the following fields for the new calculated measure:
-   - **Calculated measure display name** – Enter a name that is unique not only within its own data source but also across all data sources. The recommended format is *[Data Source].[Calculated Measure Name]* (for example, *iv.TotalAvailable*). This ensures that the display name is distinct and unique across all data sources. <!--KFM: Is it really the display name, not the measure name, that must be unique? -->
-   - **Calculated measure name**– Enter the name of the calculated measure.
-1. On the toolbar, select **Save & close**. The page refreshes to include the **Calculated measure details** section.
-1. On the **Calculated measure details** section toolbar, select **New calculated measure details V2** to add a new modifier row for the calculated measure.
+1. On the **Data source settings** page, select the data source where you want to do the dimension mapping. Then, in the **Calculated measures** section, select **New calculated measure** on the toolbar. <!--KFM: Note that the current label is **New Dimension Mapping** -->
+1. On the **New calculated measure** page, set the following fields for the new calculated measure:
+
+    - **Calculated measure display name** – Enter a name that's unique not only within the new measure's own data source but also across all data sources. The recommended format is \<*Data source*\>.\<*Calculated measure name*\> (for example, *iv.TotalAvailable*). This format ensures that the display name is distinct and unique across all data sources. <!--KFM: Is it really the display name, not the measure name, that must be unique? -->
+    - **Calculated measure name** – Enter the name of the calculated measure.
+
+1. On the toolbar, select **Save & close**. The page is refreshed and now includes the **Calculated measure details** section.
+1. In the **Calculated measure details** section, select **New calculated measure details V2** on the toolbar to add a modifier row for the calculated measure.
 1. On the **New calculated measure detail** page, set the following fields for the new modifier:
-    - **Calculated measure formula description** - Enter a detailed explanation of the significance and purpose of the formula within the calculated measure.
+
+    - **Calculated measure formula description** – Enter a detailed explanation of the significance and purpose of the formula in the calculated measure.
     - **+/- to result** – Select the modifier type (*Addition* or *Subtraction*).
     - **Physical measure name reference** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
+
 1. On the toolbar, select **Save & close**.
-1. Repeat the previous three steps until you've added all the modifiers needed to complete the formula for your calculated measure.
+1. Repeat steps 7 through 9 until you've added all the modifiers that are required to complete the formula for your calculated measure.
 1. On the toolbar, select **Save**.
 
 ### Add calculated measures in UI version 1
 
-This section applies when you are using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
+This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
 To add a calculated measure in UI version 1, follow these steps.
 
-1. Sign in to your Power Apps environment and open the **Inventory Visibility** app.
-1. From the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
-1. From the navigation pane, select **Configuration**.
-1. Open the **Calculated measure** tab.
-1. Select **New Calculate Measure** to add a calculated measure.
+1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
+1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
+1. On the navigation pane, select **Configuration**.
+1. On the **Calculated measure** tab, select **New Calculate Measure** to add a calculated measure.
 1. Set the following fields for the new calculated measure:
+
     - **New calculated measure name** – Enter the name of the calculated measure.
     - **Data source** – Select the data source to include the new calculated measure in. The querying system is a data source.
 
-1. A new, blank modifier line is automatically included for the new calculated measure. Make the following settings for it:
+1. A new, blank modifier line is automatically included for the new calculated measure. Set the following fields for it:
+
     - **Modifier** – Select the modifier type (*Addition* or *Subtraction*).
     - **Data source** – Select the data source where the measure that provides the modifier value is found.
     - **Measure** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
 
 1. Select **Save measure** to save your settings so far.
-1. If you need to add another modifier line, select **Add** to add a new row and then make settings similar to those you made for the first row. Select the **Save** link for the row when you're done.
+1. If you must add another modifier line, select **Add** to add a row, and then set the fields as you did for the first row. When you've finished, select the **Save** link for the row.
 1. Repeat the previous step until you've added all the required modifiers and completed the formula for your calculated measure.
 1. Select **Save**.
 
@@ -355,7 +362,7 @@ Without calculated measures, when you query for product D0002 (Cabinet) under si
 ]
 ```
 
-You then configure a calculated measure that is named `MyCustomAvailableforReservation`, as shown in the following table. This calculated measure will be consumed by the consumption system.
+You then configure a calculated measure that's named `MyCustomAvailableforReservation`, as shown in the following table. This calculated measure will be consumed by the consumption system.
 
 | Consumption system | Calculated measure | Data source | Physical measure | Calculation type |
 |---|---|---|---|---|
@@ -408,10 +415,10 @@ The `MyCustomAvailableforReservation` output, based on the calculation setting i
 
 ## <a name="default-configuration-sample"></a>The default data source configuration
 
-When you install Inventory Visibility, it sets up a default data source configuration, which is detailed here. You can modify this configuration as you require.
+This section provides details about the default data source configuration that's set up when you install Inventory Visibility. You can modify this configuration as you require.
 
 > [!IMPORTANT]
-> The default configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it may encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
+> The default configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it might encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
 
 ### Data source configuration
 
@@ -539,7 +546,7 @@ The *AvailQuantity* calculated measure is configured for the *pos* data source a
 
 #### Configuration of the "iom" data source
 
-The following physical measures are configured for the *iom* (intelligent order management) data source:
+The following physical measures are configured for the *iom* (Intelligent Order Management) data source:
 
 - *OnOrder*
 - *OnHand*
