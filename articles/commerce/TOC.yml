@@ -1338,6 +1338,8 @@
             href: pickup-info-module.md
           - name: Check-in for pickup module
             href: check-in-pickup-module.md
+          - name: Order history with search and filters module
+            href: filter-and-search-order-history.md
           - name: Order details module
             href: order-confirmation-module.md
           - name: Gift card module
