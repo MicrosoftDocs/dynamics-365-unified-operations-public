@@ -62,6 +62,7 @@ Always remain in control and have the ability to review and modify any content b
 ### Configure and pre-select tones well-suited for your brand and organization 
 
 Choose tone options for Copilot to craft the tone of the message that fits your brand. Also, by preselecting tones, you can set your preferred default tones for generating content with Copilot.
+
 - Navigate to 'Site settings'
 - Locate 'Copilot' tab
 - Locate 'Tones' and click 'Edit'
@@ -69,4 +70,15 @@ Choose tone options for Copilot to craft the tone of the message that fits your 
 - These options will be available at runtime for marketing team and other individuals responsible for updating product enrichment content.
   
 ![Choose tones and preselect for default selection](./media/Choose_Tones.png)
-### 
+
+### Configure and pre-select target client options to whom you may want to customize and tailor your marketing message
+Choose target client options for Copilot to craft to tailor the message for your intended audience. Also, by preselecting target clients, you can set your preferred default target clients for generating tailored content with Copilot.
+
+- Navigate to 'Site settings'
+- Locate 'Copilot' tab
+- Locate 'Target clients' and click 'Edit'
+- Choose upto 5 tones for the current site, and choose which options should be pre-selected for quick content generation using Copilot.
+- These options will be available at runtime for marketing team and other individuals responsible for updating product enrichment content.
+
+![Choose target clients and preselect for default selection](./media/Choose_Target_Clients.png)
+
