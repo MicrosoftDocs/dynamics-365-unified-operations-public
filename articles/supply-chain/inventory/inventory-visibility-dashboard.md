@@ -49,7 +49,7 @@ To use the visuals and KPIs that are provided in the sample dashboard, you must 
 - `Totalonhand` – The total physical inventory stock that you have in your warehouses.
 - `Totalavailablephysical` – The total available physical inventory quantities.
 - `Totalavailable` – The total quantities that are available. This total includes both available physical inventory and available ordered inventory, minus the on-order quantity that hasn't been promised.
-- `Totalordered` – The total quantity that has been purchased or produced, or that is otherwise inbound.
+- `Totalordered` – The total quantity that has been purchased or produced, or that's otherwise inbound.
 - `totalonorder` – The total quantities that are on order.
 - `Hardreserved` The total hard-reserved quantities. This total includes both reserve physical quantities and reserve ordered quantities.
 - `Returned` – The total returned quantities. Make sure that one of your data sources includes a physical measure for returns, and that this physical measure is added to the `Returned` calculated measure.
