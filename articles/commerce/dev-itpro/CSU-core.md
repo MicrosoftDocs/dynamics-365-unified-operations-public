@@ -36,7 +36,17 @@ CSU Core is available for new deployments as of the Dynamics 365 Commerce versio
 
 ## Deploy or migrate to CSU Core
 
-CSU Core offers highly performant headless commerce APIs and the benefits of .NET Core. To migrate your Microsoft-hosted CSU to CSU Core, or to deploy a new instance of CSU Core, contact the Dynamics 365 Commerce support team for help building an extension that uses the supported .NET framework.
+CSU Core offers highly performant headless commerce APIs and the benefits of .NET Core. To migrate your existing Microsoft-hosted CSU to CSU Core set the Disable CSU Core toggle to NO in LCS.
+
+### LCS - Disable CSU Core toggle
+This toggle allows you to switch an existing CSU Deployment between the legacy .NET Framework and the new .NET Core. 
+
+- Set Disable CSU Core = NO  If your extensions are compatbile with the Commerce SDK, or .Net Standard 2.0/.NET 6    
+  > Note: By default the Commerce SDK objects are already configured to use .NET 6
+  > Note: New CSU's deployments on 10.0.38 and higher will have this value set to NO by default and can not be switch off. 
+- Set Disable CSU Core = YES if your extensions are still using the Retail SDK or not compatiable with  .Net Standard 2.0/.NET 6.
+  > Note: The Retail SDK is configured to use .NET Framework by default. 
+  > Note: Setting this value to Yes is only available for version 10.0.37 and older.   If you want to update your CSU to 10.0.38 or higher you must set this value to NO and your extensions must be compatible with the Commerce SDK. 
 
 ### Extensions
 
