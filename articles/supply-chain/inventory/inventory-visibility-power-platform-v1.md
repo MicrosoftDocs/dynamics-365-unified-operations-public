@@ -36,7 +36,7 @@ Before you can use UI version 1 to work with the Inventory Visibility app, the f
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
 1. On the navigation pane, select **Operational Visibility**.
 1. Select **Settings** at the top of the page.
-1. In the dialog box, set the **Client ID**, **Tenant ID**, and **Client secret** fields. You should have found the values for these fields when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-add-in).
+1. In the dialog box, enter the **Client ID**, **Tenant ID**, and **Client secret** values. You should have found these values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-add-in).
 1. Select the **Refresh** button on the right side of the **Bearer Token** field. The system generates a new bearer token for your sessions. This token expires after one hour.
 
 ## <a name="ui-version"></a>Switch between user interface versions
