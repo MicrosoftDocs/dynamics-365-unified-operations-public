@@ -43,7 +43,13 @@ This following illustration shows how the message processor fits into an integra
 
 ## <a name="master-data"></a>Master and reference data
 
-For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can easily get imported into Microsoft Dynamics 365 Supply Chain Management via the `Product message`. This message will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems). <!-- Perlynne Message name?-->
+For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can easily get imported into Microsoft Dynamics 365 Supply Chain Management via the messages related to product master data:
+
+- `SourceSystemProductMessages`
+- `SourceSystemProductVariantMessages`
+- `SourceSystemProductBarcodeMessages`
+
+This messages will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems) via the 'Source system items' entity.
 
 Only one [source system record](wms-only-mode-setup.md#source-systems) can be recorded as the external system maintaining the product master data related to the unique reference for a **Release product/Item number**, this data can be viewed and manually maintained in the **Source system items** page.
 
@@ -51,7 +57,7 @@ Only one [source system record](wms-only-mode-setup.md#source-systems) can be re
 > The *Source system item number* will be used for the communication between the systems which is useful when for example an external system uses an EAN barcode as the unique identification number linked to a *item/variant number* having a different value.
 >
 > When using the Warehouse Management mobile app the value in the *Source system item number* field can be used to lookup the internally used *Item/variant number* as well.
-<!-- Perlynne check -->
+<!-- Perlynne check   "External item number" -->
 
 Additionally you can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create a **Release product/Item number** going to be used in warehouse management processes. Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to for example get the mandatory reference fields assigned:
 
@@ -76,14 +82,22 @@ Additionally you can import the required master data into Supply Chain Managemen
 - **Unit sequence groups** - Used to define the sequence of units that can be used in warehouse operations. You can read more about the needed setup [here](unit-measure-stocking-policies.md).
 
 > [!NOTE]
-> The `Product message` uses the [*Product data entities*](../pim/data-entities.md) which of cause can be used isolated as well to maintain the product master data. You can read more about the entities as part of the [Overview of Product Information Management](/common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview).
+> The messages to create the product master data uses the [*Product data entities*](../pim/data-entities.md) which of cause can be used isolated as well to maintain the product master data. You can read more about the entities as part of the [Overview of Product Information Management](/common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview).
 
-To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses and import *Outbound shipment orders* you must as well have [**country/region**](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) defined in Supply Chain Management. The records are used in outbound shipment orders to create addresses. Depending on your [address setup](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might have to create additional data before you can import order messages (for example, to support state/province and county combinations).
+### Try out product creation via messages
+
+You can quickly try out creating products via [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman).
+
+If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.
 
 ### Consigner and consignee information
 
 To easy the warehouse operation setup you can create and use the data for *consigners* and *consignees* and their related group definitions. This could for example be for a setup process related to a [quality order creation process](../inventory/quality-associations.md) for a specific consigner og consigner group.
 Note that the *Inbound shipment order policies* as part of the *Source systems* setup nor the inbound shipment order message processing requires the fields for the *Consigner's account number* to exist in the entity for the **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Consigners**. The same "free text" concept exists for the outbound shipment order process related to the *Consigneer's account number*.
+
+### country/region
+
+To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses and import *Outbound shipment orders* you must as well have [**country/region**](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) defined in Supply Chain Management. The records are used in outbound shipment orders to create addresses. Depending on your [address setup](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might have to create additional data before you can import order messages (for example, to support state/province and county combinations).
 
 ## Progress data and business events
 

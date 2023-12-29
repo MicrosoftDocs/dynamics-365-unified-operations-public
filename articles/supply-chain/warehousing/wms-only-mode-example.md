@@ -28,8 +28,7 @@ Another quick way to post example messages are via the [Open Data Protocol (ODat
 In both example cases the [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management will process the messages, and the orders are created in the warehouse system.
 
 > [!TIP]
-> To completely skip the shipment order creation processes via messages you can create the **Inbound shipment orders** and **Outbound shipment orders** directly in the order pages by enallowing the *Enable manual inbound shipment order creation* and *Enable manual outbound shipment order creation* settings for a *Source system*.
-
+> To completely skip the shipment order creation processes via messages you can create the **Inbound shipment orders** and **Outbound shipment orders** directly in the order pages by allowing the *Enable manual inbound shipment order creation* and *Enable manual outbound shipment order creation* settings for a *Source system*.
 
 The same message structure logic applies to both the inbound and outbound shipment order messages:
 
