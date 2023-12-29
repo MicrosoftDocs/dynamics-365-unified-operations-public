@@ -26,7 +26,9 @@ Copilot in site builder is a feature that works seamlessly with Sitebuilder, a r
 ![Copilot in sitebuilder](https://cloudblogs.microsoft.com/dynamics365/wp-content/uploads/sites/4/2023/10/Pic-1-2048x1204.webp)
 
 In this article, we will show you what Copilot in site builder is, how it works, and how you can use it to create amazing content for your e-commerce website. We will also give you some examples of Copilot-generated content and how you can edit and optimize it further. By the end of this article, you will see how Copilot in site builder can help you boost your online presence and sales. Let’s dive in!
-
+> [!NOTE]
+> Copilot in Sitebuilder preview is available for customers in United States with support for English *(en-us)* locale only. Support for additional regions and locales will be available soon in early part of CY2024, please follow updates and release announcement for future updates.
+ 
 ## Overview 
 Use Commerce Copilot to jump-start the creative process by first selecting a tone, configured by you, that aligns to your brand, like “adventurous”, “luxurious” or “bold”. Then select an audience choice from choices managed by you, like “sports enthusiast” or “college graduate”. Copilot will then use these prompts to craft compelling and engaging content that makes use of your existing product information like name, description, attributes, price and more! With Copilot in site builder, you can generate persuasive, compelling, and engaging product enrichment and marketing content for your e-commerce websites quickly and efficiently. This feature will offer the following capabilities:
 
@@ -37,4 +39,7 @@ Use Commerce Copilot to jump-start the creative process by first selecting a ton
 Amplify with key highlights: Augment your content with key highlights specific to the product in a natural language-based and interactive manner. Generate engaging text snippets that help amplify key highlights for your product.
 - **Make basic modifications**: Easily make basic text modifications using an inline rich text editor or by providing key prompts to format the text using natural language.
 
-Always remain in control and have the ability to review and modify any content before it is published! Copilot in sitebuilder is currently available when you enrich product pages individually (Learn more about standard product enrichment)
+Always remain in control and have the ability to review and modify any content before it is published! 
+
+> [!NOTE]
+> Copilot in sitebuilder is available with content-block or text-block module on your webpage when you enrich product pages [Learn more about standard product enrichment](./enrich-product-page.md) 
