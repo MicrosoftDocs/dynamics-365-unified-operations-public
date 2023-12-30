@@ -116,4 +116,4 @@ Here is a possible way to rewrite the text as an instruction manual for users to
 ![Review_and_make_last_minute_inline_edits](./media/Review_and_make_last_minute_inline_edits.png)
 
 When you are done editing, you can click on the 'Publish' button to make your product page live on your website. You have successfully used Copilot to create content for your product page!
-![EnrichedProductPageByCopilot](./media/EnrichedProductPageByCopilot.png)
+![EnrichedProductPageByCopilot](./media/EnrichedProductPageByCopilot.jpeg)
