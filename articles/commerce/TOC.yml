@@ -1206,6 +1206,8 @@
             href: save-preview-publish-page.md
           - name: Customize product detail pages
             href: enrich-product-page.md
+          - name: Use Copilot in sitebuilder to enrich product detail pages
+            href: enrich-product-page-using-copilot-in-sitebuilder.md
           - name: Enrich a category landing page
             href: enrich-category-page.md
           - name: Verify page content accessibility
