@@ -100,20 +100,22 @@ Here is a possible way to rewrite the text as an instruction manual for users to
 
 ### How to use Copilot to create content for your product page
 
-1. Choose a product that you want to customize the page for and follow the steps in [this guide](./enrich-product-page.md) to access the page editor.
+- Choose a product that you want to customize the page for and follow the steps in [this guide](./enrich-product-page.md) to access the page editor.
  ![Customize_Product_Page](./media/Customize_Product_Page.png)
-2. Launch Copilot in site builder for product enrichment by locating a module that says 'Content-block' or 'Text-block' and click on the 'Create Content' button in the module properties section, next to the Rich Text Formatting block.
+- Launch Copilot in site builder for product enrichment by locating a module that says 'Content-block' or 'Text-block' and click on the 'Create Content' button in the module properties section, next to the Rich Text Formatting block.
 ![Launch Copilot in Sitebuilder](./media/Customize_Product_Page_Launch_Copilot.png)
-5. You can select some product information that you want Copilot to use as input, such as Price, Attributes, Description, and Dimensions. You can also leave unselect fields if you don't want to include them.
-7. Next, you can type in some specific instructions for Copilot to follow when creating the content. For example, you can tell Copilot to highlight the benefits of the product and then make adjustments to use a friendly tone, or target a specific audience. If you don't provide any instructions, Copilot will use the default options from your site settings.
+- You can select some product information that you want Copilot to use as input, such as Price, Attributes, Description, and Dimensions. You can also leave unselect fields if you don't want to include them.
+- Next, you can type in some specific instructions for Copilot to follow when creating the content. For example, you can tell Copilot to highlight the benefits of the product and then make adjustments to use a friendly tone, or target a specific audience. If you don't provide any instructions, Copilot will use the default options from your site settings.
 ![Make selection of product information and provide initial instructions](./media/InitialGenerate_WithUserInstructionsAndAttributeChoices.png)
-9. After you enter the instructions, Copilot will process them and generate a response based on the product information and your instructions. You can see the response in the preview window.
-10. If you are not satisfied with the response, you can change the selection of product information or update the instructions and click on the 'Generate' (Arrow icon) again.
-11. Copilot will create a new response based on the updated input. You can repeat this process as many times as you want until you get a response that meets your expectations.
+- After you enter the instructions, Copilot will process them and generate a response based on the product information and your instructions. You can see the response in the preview window.
+- If you are not satisfied with the response, you can change the selection of product information or update the instructions and click on the 'Generate' (Arrow icon) again.
+- Copilot will create a new response based on the updated input. You can repeat this process as many times as you want until you get a response that meets your expectations.
 ![Reiterate upon updating product information and user instructions](./media/Reiterate_Initial_Response_With_Updated_User_Prompt.png)
-12. Once you are satisfied with the response, you can click on the 'Use response' button. This will copy the response to the text or content block that you selected in step 2.
-13. You can still review and edit the response in the text or content block if you want to make any final changes. You can also add images, links, or other elements to enhance your product page.
+- Once you are satisfied with the response, you can click on the 'Use response' button. This will copy the response to the text or content block that you selected in step 2.
+- You can still review and edit the response in the text or content block if you want to make any final changes. You can also add images, links, or other elements to enhance your product page.
 ![Review_and_make_last_minute_inline_edits](./media/Review_and_make_last_minute_inline_edits.png)
 
 When you are done editing, you can click on the 'Publish' button to make your product page live on your website. You have successfully used Copilot to create content for your product page!
 ![EnrichedProductPageByCopilot](./media/EnrichedProductPageByCopilot.jpeg)
+
+We hope that you are excited to use Copilot in sitebuilder as it can help you save time, improve customer engagement, and increase conversion rates. 
