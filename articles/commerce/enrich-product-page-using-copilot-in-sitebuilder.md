@@ -101,7 +101,7 @@ Here is a possible way to rewrite the text as an instruction manual for users to
 ### How to use Copilot to create content for your product page
 
 1. Choose a product that you want to customize the page for and follow the steps in [this guide](./enrich-product-page.md) to access the page editor.
- ![Customize_Product_Page](./media/Customize_Product_Page)
+ ![Customize_Product_Page](./media/Customize_Product_Page.png)
 2. Launch Copilot in site builder for product enrichment by locating a module that says 'Content-block' or 'Text-block' and click on the 'Create Content' button in the module properties section, next to the Rich Text Formatting block.
 ![Launch Copilot in Sitebuilder](./media/Customize_Product_Page_Launch_Copilot.png)
 5. You can select some product information that you want Copilot to use as input, such as Price, Attributes, Description, and Dimensions. You can also leave unselect fields if you don't want to include them.
