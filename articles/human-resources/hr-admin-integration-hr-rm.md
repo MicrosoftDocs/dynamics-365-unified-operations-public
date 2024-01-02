@@ -51,6 +51,8 @@ This feature enables resource managers to achieve these goals:
 2. **Integration app:** New skills/certificates are created for the resource that's associated with a worker in Dataverse.
 3. **Project Operations:** The resource manager reviews the updated characteristics (skills/certificates).
 
+![Integration Dataflow](./media/Dualwrite-1.png)
+
 ## Process
 
 Human Resources to resource integration uses dual-write. For more information, see [Dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md). The dual-write infrastructure provides near-real-time integration from Human Resources to Resource Management. For more information, see [Guidance for dual-write setup](../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
@@ -82,9 +84,14 @@ Follow these steps to install the integration from Power Platform admin center:
 2. On the left navigation, under **Resources**, select **Dynamics 365 apps**.
 3. Select **Install app**.
 4. In the **Install Dynamics 365 apps** dialog box, select **Dynamics 365 Human Resources Integration to URS**, and then select **Next**.
+
+![Install Dynamics 365 Human Resources Integration to URS](./media/Installing.jpg)
+
 5. Agree to the terms of service to install the app.
 
     While solution installation is in progress, the status is **Installing**. After the solution is installed, the status is changed to **Installed**.
+
+![Status is Installing](./media/Status-installing.jpg)   
 
 ## Install dual-write packages
 
