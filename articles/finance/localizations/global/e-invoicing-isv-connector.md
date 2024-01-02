@@ -35,7 +35,8 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 ## Integration with Edicom
 
-You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides.
+You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
+
 
 To enable the integration of the Electronic Invoicing service with the ISV last-mile connector, you must obtain the following required credentials from Edicom:
 
@@ -65,7 +66,7 @@ The following pipeline actions are introduced or updated to enable outbound docu
     |-----------|-------------|
     | Web service URL | Default value for Edicom: `https://ipaasgw.edicomgroup.com`. |
     | Http request body | Default value: **Generate format: Output file**. |
-    | Schema | Default value for Edicom: **OUT\_XML\_UBL\_INVOICE\_2\_MICROSOFT\_DK**. |
+    | Schema | Default value for Edicom: **OUTBOUND\_DOCUMENT\_MICROSOFT\_DK**. |
 
     You can leave all remaining parameters blank.
 
@@ -104,7 +105,7 @@ You can leave the following parameters set to the default values that Microsoft 
 |-----------|-------------|
 | Web service URL | Default value: `https://ipaasgw.edicomgroup.com`. |
 | Document limit | Default value: **100**. |
-| Schema | Default value: **IN\_INVOICE\_STATUS\_MICROSOFT\_DK**. |
+| Schema | Default value: **IN\_DOCUMENT\_STATUS\_MICROSOFT\_DK**. |
 
 You can leave all remaining parameters blank.
 
