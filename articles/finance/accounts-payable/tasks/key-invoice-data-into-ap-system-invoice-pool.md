@@ -67,8 +67,17 @@ This article describes how to use the invoice register to create invoices. Then 
 11. Select the vendor that was on the purchase order. For example, select vendor **1001**.
 12. On the action pane, select **Vendor**.
 13. Select **Transactions**.
-14. Select the invoice that you created. The invoice register accrual was reversed and posted to the appropriate expense account.  
+14. Select the invoice that you created. The invoice register accrual was reversed and posted to the appropriate expense account.
+    
 
+## Import the invoice with automatic posting of invoice register journal
+When receiving a vendor invoice, the initial step involves registering it in the invoice register to reflect the immediate accrual amount, which can align with some country specific tax registration legistitude requirements. Subsequently, the process involves applying receipt matching, executing a 3-way matching validation, and initiating workflow approval for pending vendor invoices residing in the invoice pool. 
 
+The feature **"Vendor invoice automation with tax registration"** is introduced to automate the invoice register process for the imported vendor invoice through the Data Management Framework (DMF). The field **VENDORINVOICETYPE** on vendor invoice header entity decides whether a standard pending vendor invoice is generated, or the invoice register journal shall be posted in advance. Specifically, when the field is set as **"InvoicePool"**, the system will automatically initiate the creation and posting of the invoice register journal. Following this, the pending vendor invoice is generated within the invoice pool.
+
+In summary, the streamlined process involves the steps:
+1. Create a Purchase Order
+2. Import the invoice via entities **Vendor invoice header** and **Vendor invoice line**
+When the invoice is imported successfully, the invoice register journal will be automatically posted, and the pending vendor invoice is concurrently created within invoice pool. This integrated approach ensures efficiency and compliance with tax registration requirements.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
