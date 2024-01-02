@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.38 (February 2024)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.38 preview release.
 author: twheeloc
-ms.date: 10/24/2023
+ms.date: 1/02/2024
 ms.topic: faq
 ms.prod: 
 ms.technology: 
