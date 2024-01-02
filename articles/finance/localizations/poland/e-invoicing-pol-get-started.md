@@ -1,15 +1,15 @@
 ---
 title: Electronic invoicing for Poland
 description: This article provides information that will help you get started with Electronic invoicing for Poland in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: mrolecki
-ms.date: 05/15/2023
+author: ikondratenko
+ms.date: 01/02/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 2022-07-15
 ms.dyn365.ops.version: AX 10.0.28
 ms.custom: 574537
