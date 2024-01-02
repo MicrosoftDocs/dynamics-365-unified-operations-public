@@ -62,14 +62,14 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 7. Select **Certificate name**, and then select the name of the digital certificate that you created.
 8. Select **Public key**, and then select the name of the secret that you created for the public key.
 9. Select **Service URI**, and make sure that a valid URI is configured. To get the testing and production URIs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
-10. Select **Archive name** parameter, and then enter the name which must contain at least **5** characters.
+10. Select the **Archive name** parameter, and then enter the name which must contain at least **5** characters.
 11. In the **Processing pipeline** section, select the **(Preview) KSeF get batch status from e-invoice system** action.
 12. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
 13. Select **Save**, and close the page.
 14. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setup, and then select **Edit**.
 15. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
 16. Select **Save** (if you made any changes), and close the page.
-17. Repeat steps 13 through 15 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+17. Repeat steps 14 through 16 for the **Submit project invoice** and **Submit advance invoice** feature setups.
 
 ## Finance configuration
 
