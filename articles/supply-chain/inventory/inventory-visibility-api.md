@@ -30,48 +30,39 @@ The following table lists the APIs that are currently available:
 
 | Path | Method | Description |
 |---|---|---|
-| /api/environment/{environmentId}/onhand | Post | [Create one on-hand change event](#create-one-onhand-change-event)|
-| /api/environment/{environmentId}/onhand/bulk | Post | [Create multiple change events](#create-multiple-onhand-change-events) |
-| /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
-| /api/environment/{environmentId}/onhand/reserve | Post | [Create one soft reservation event](#create-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple soft reservation events](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) (recommended) |
-| /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
-| /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query by using the post method](#exact-query-with-post-method) |
-| /api/environment/{environmentId}/allocation<wbr>/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with product search](#query_with_product_search) |
-| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with product search](#exact-query-with-product-search) |
+| `/api/environment/{environmentId}/onhand` | Post | [Create one on-hand change event](#create-one-onhand-change-event)|
+| `/api/environment/{environmentId}/onhand/bulk` | Post | [Create multiple change events](#create-multiple-onhand-change-events) |
+| `/api/environment/{environmentId}/setonhand/{inventorySystem}/bulk` | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
+| `/api/environment/{environmentId}/onhand/reserve` | Post | [Create one soft reservation event](#create-one-reservation-event) |
+| `/api/environment/{environmentId}/onhand/reserve/bulk` | Post | [Create multiple soft reservation events](#create-multiple-reservation-events) |
+| `/api/environment/{environmentId}/onhand/unreserve` | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
+| `/api/environment/{environmentId}/onhand/unreserve/bulk` | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
+| `/api/environment/{environmentId}/onhand/reserve/resyncjob` |Post | [Clean up reservation data](#clean-up-reservation-data) |
+| `/api/environment/{environmentId}/onhand/changeschedule` | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
+| `/api/environment/{environmentId}/onhand/indexquery` | Post | [Query by using the post method](#query-with-post-method) (recommended) |
+| `/api/environment/{environmentId}/onhand` | Get | [Query by using the get method](#query-with-get-method) |
+| `/api/environment/{environmentId}/onhand/exactquery` | Post | [Exact query by using the post method](#exact-query-with-post-method) |
+| `/api/environment/{environmentId}/allocation/allocate` | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/unallocate` | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/reallocate` | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/consume` | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/allocation/query` | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
+| `/api/environment/{environmentId}/onhand/productsearch/indexquery` | Post | [Post index query with product search](#query_with_product_search) |
+| `/api/environment/{environmentId}/onhand/productsearch/exactquery` | Post | [Post exact query with product search](#exact-query-with-product-search) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
-> 
+>
 > The bulk API can return a maximum of 512 records for each request.
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-## <a name = "endpoint-lcs"></a>Find the endpoint according to your Lifecycle Services environment
-
-The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. There isn't currently a central endpoint that can automatically redirect your request to the corresponding geography and region. Therefore, you must compose the pieces of information into a URL by using the following pattern:
-
-`https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
-
-The region short name can be found in the Lifecycle Services environment. For a list of regions (and region short names) that are currently supported, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
-
-The island number is where your Lifecycle Services environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
-
-Microsoft has built a user interface (UI) in Power Apps so that you can get the complete endpoint of the microservice. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
+You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
-The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
+The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
 
 Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -139,7 +130,7 @@ To get a security service token, follow these steps.
     ```
 
 > [!NOTE]
-> The `https://securityservice.operations365.dynamics.com/token` URL is a general URL for the security service. When you call the URL, the first response is an http redirect response with the status code `307` in the response headers, and an entry with the key "Location" that contains the target URL for the security service. The URL is in this format: `https://gw.{$geo}-il101.gateway.prod.island.powerapps.com/securityservice/token`. For example, if your environment locates in US geo, the URL could be "https://gw.us-il101.gateway.prod.island.powerapps.com/securityservice/token". If the 307 response status code is not acceptable for you, you can manually construct the actual URL according to your FinOps environment location. The simplest way is to open `https://gw.as-il101.gateway.prod.island.powerapps.com/securityservice/token` with your browser, and then copy the address in address bar.
+> The `https://securityservice.operations365.dynamics.com/token` URL is a general URL for the security service. When you call the URL, the first response is an http redirect response with the status code `307` in the response headers, and an entry with the key "Location" that contains the target URL for the security service. The URL is in this format: `https://gw.{$geo}-il101.gateway.prod.island.powerapps.com/securityservice/token`. For example, if your environment locates in US geo, the URL could be `https://gw.us-il101.gateway.prod.island.powerapps.com/securityservice/token`. If the 307 response status code isn't acceptable for you, you can manually construct the actual URL according to your FinOps environment location. The simplest way is to open `https://gw.as-il101.gateway.prod.island.powerapps.com/securityservice/token` with your browser, and then copy the address in address bar.
 
 > [!IMPORTANT]
 > When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
@@ -156,14 +147,14 @@ The following table summarizes the meaning of each field in the JSON body.
 | Field ID | Description |
 |---|---|
 | `id` | A unique ID for the specific change event. If a resubmission occurs due to a service failure, this ID is used to ensure the same event won't be counted twice in the system. |
-| `organizationId` | The identifier of the organization that is linked to the event. This value is mapped to an organization or data area ID in Supply Chain Management. |
+| `organizationId` | The identifier of the organization that's linked to the event. This value is mapped to an organization or data area ID in Supply Chain Management. |
 | `productId` | The identifier of the product. |
 | `quantities` | The quantity that the on-hand quantity must be changed by. For example, if 10 new books are added to a shelf, this value will be `quantities:{ shelf:{ received: 10 }}`. If three books are removed from the shelf or sold, this value will be `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | The data source of the dimensions that are used in the posting change event and query. If you specify the data source, you can use the custom dimensions from the specified data source. Inventory Visibility can use the dimension configuration to map the custom dimensions to the general default dimensions. If no `dimensionDataSource` value is specified, you can use only the general [base dimensions](inventory-visibility-configuration.md#data-source-configuration-dimension) in your queries. |
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> The `siteId` and `locationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
+> Because of the constraints of the [partition configuration](inventory-visibility-power-platform.md#partition-configuration), `siteId` and `locationId` are required dimensions.
 
 The following subsections provide examples that show how to use these APIs.
 
@@ -377,7 +368,7 @@ The following example shows sample body content. The behavior of this API differ
 
 ## Create reservation events
 
-To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information (including a dataflow and sample scenario), see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
+To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information (including a dataflow and sample scenario), see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
@@ -587,6 +578,27 @@ Body:
     ]
 ```
 
+## Clean up reservation data
+
+The *clean up reservation data* API is used to clean up historical reservation data. The body should be a list of data sources. If the list is empty, all data sources will be cleaned up.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/reserve/resyncjob
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        "iv",
+        "pos"
+    ]
+```
+
 ## Query on-hand
 
 Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
@@ -623,10 +635,10 @@ Body:
 In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, and `locationId`.
 
 - `organizationId` should contain only one value, but it's still an array.
-- `productId` could contain one or more values. If it's an empty array, all products will be returned.
-- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. In the current release, you must specify both `siteId` and `locationId` values.
+- `productId` can contain one or more values. If it's an empty array, the system will return all products of the specific sites and locations. In this case, `siteId` and `locationId` should not be empty.
+- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations of the specific products. In this case, `productId` should not be empty.
 
-We suggest that you use the `groupByValues` parameter to follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
+We recommend that you use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#index).
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
@@ -1114,7 +1126,7 @@ The following example shows a successful response.
 
 ## Available to promise
 
-You can set up Inventory Visibility to let you schedule future on-hand changes and calculate ATP quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of the ATP calculation can greatly increase your order fulfillment capability. For information about how to enable this feature, and how to interact with Inventory Visibility through its API after the feature is enabled, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md#api-urls).
+You can set up Inventory Visibility to let you schedule future on-hand changes and calculate ATP quantities. ATP is the quantity of an item that's available and can be promised to a customer in the next period. Use of the ATP calculation can greatly increase your order fulfillment capability. For information about how to enable this feature, and how to interact with Inventory Visibility through its API after the feature is enabled, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md#api-urls).
 
 ## Allocation
 

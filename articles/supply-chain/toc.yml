@@ -1721,18 +1721,28 @@
           href: inventory/inventory-visibility.md
         - name: Install and set up Inventory Visibility
           href: inventory/inventory-visibility-setup.md
-        - name: Configure Inventory Visibility
-          href: inventory/inventory-visibility-configuration.md
         - name: Set up product search for Inventory Visibility (preview)
           href: inventory/inventory-visibility-product-search.md
+        - name: The Inventory Visibility app in Power Apps
+          items:
+          - name: Inventory Visibility app user interface versions (preview)
+            href: inventory/inventory-visibility-ui-version-2.md
+          - name: Use the Inventory Visibility app UI version 2 (preview)
+            href: inventory/inventory-visibility-power-platform.md
+          - name: Use the Inventory Visibility app UI version 1
+            href: inventory/inventory-visibility-power-platform-v1.md
+          - name: Search for products using the Inventory Visibility app (preview)
+            href: inventory/inventory-visibility-product-search-app.md
+        - name: Configure Inventory Visibility
+          href: inventory/inventory-visibility-configuration.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
+        - name: Inventory summary
+          href: inventory/inventory-visibility-inventory-summary.md
+        - name: Preload a streamlined on-hand query
+          href: inventory/inventory-visibility-preload-on-hand.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
           href: inventory/inventory-onhand-consistency-check.md
-        - name: Use the Inventory Visibility app
-          href: inventory/inventory-visibility-power-platform.md
-        - name: Search for products using the Inventory Visibility app (preview)
-          href: inventory/inventory-visibility-product-search-app.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation
