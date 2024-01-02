@@ -36,28 +36,26 @@ CSU Core is available for new deployments as of the Dynamics 365 Commerce versio
 
 ## Deploy or migrate to CSU Core
 
-CSU Core offers highly performant headless Commerce APIs and the benefits of .NET Core. 
-
-
+CSU Core offers highly performant headless commerce APIs and the benefits of .NET Core. 
 
 ### Migrate your existing Microsoft-hosted CSU to CSU Core
 
-This toggle allows you to switch an existing CSU Deployment between the legacy .NET Framework and the new .NET Core. 
+The following instructions describe how to switch an existing CSU deployment from the legacy .NET Framework to .NET Core. 
 
-> [!NOTE]
+> [!IMPORTANT]
 > You can only migrate to CSU Core if your extensions are compatible with the Commerce SDK, or .NET Standard 2.0/.NET 6.
 
 To migrate your existing Microsoft-hosted CSU to CSU Core, follow these steps. 
 
-1. Sign in to to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). 
+1. Sign in to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). 
 1. On the LCS page where you manage CSUs, select **Update**.
 1. In the **Update** dialog box, set the **Disable CSU Core** option to **No**.
 1. Select **Update**.
 
 > [!NOTE]
 > - By default, Commerce SDK objects are already configured to use .NET 6.
-> - New CSU deployments on Commerce versions 10.0.38 and later have the **Disable CSU Core** option set to **No** by default. This option can't be set to **Yes**.
-> - If you are using Commerce versions 10.0.37 and earlier and your extensions are still using the Retail SDK, or not compatible with .NET Standard 2.0/.NET 6, you are allowed to set the **Disable CSU Core** option to **Yes**. However, if you want to update your CSU to Commerce version 10.0.38 or later, you must set this option to **No** after ensuring that your extensions are compatible with the Commerce SDK.
+> - New CSU deployments on Commerce version 10.0.38 and later have the **Disable CSU Core** option set to **No** by default. The option can't be set to **Yes**.
+> - If you are running Commerce version 10.0.37 and earlier and your extensions are still using the Retail SDK or aren't compatible with .NET Standard 2.0/.NET 6, you are allowed to set the **Disable CSU Core** option to **Yes**. However, if you want to update your CSU to Commerce version 10.0.38 or later, you must set this option to **No** after ensuring that your extensions are compatible with the Commerce SDK.
 
 ### Extensions
 
