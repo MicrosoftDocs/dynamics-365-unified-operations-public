@@ -65,8 +65,8 @@ Before getting started with the Microsoft Graph integration set up, you'll need 
 **Create an app**
 1. Sign in to https://portal.azure.com/ using an Azure tenant admin account.
 
-    > [!NOTE]
-    > The user who completes this procedure must have Admin rights for the tenant to register applications.
+   > [!NOTE]
+   > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
 2. Go to **Azure Active Directory** \> **App registrations** \> **New application**. 
 3. Enter the following values:
@@ -77,16 +77,16 @@ Before getting started with the Microsoft Graph integration set up, you'll need 
 4. Select **Register**.
 5. Copy the **Application (client) ID** value. You will use this value to connect to the Graph service from your finance and operations environment.
 
-    > [!IMPORTANT] 
-    > Be sure to capture the **Application (client) ID** value.
+   > [!IMPORTANT] 
+   > Be sure to capture the **Application (client) ID** value.
 
 **Add permissions**
 6. Select **Manage** \> **API permissions** \> **Add a permission** \> **Microsoft APIs** \> **Microsoft Graph**.
 
 7. Select **Application permissions** and enable **Mail.Send**.
 
-    > [!NOTE] 
-    > The app should have defaulted to including the **User.Read** delegated permission for Graph. If that is missing, you'll need to add that permission from the Delegated permissions.  
+   > [!NOTE] 
+   > The app should have defaulted to including the **User.Read** delegated permission for Graph. If that is missing, you'll need to add that permission from the Delegated permissions.  
    
 8. Select **Add permissions**.
 9. Select **Grant admin consent for ...** to allow emails to be sent.
@@ -98,8 +98,8 @@ Before getting started with the Microsoft Graph integration set up, you'll need 
 13. Enter a value in the **Description** and **Expires** fields, and then select **Add**.
 14. Make a note of the **Secret value** value. You will use this to connect to the Graph service fro your finance and operations environments.
 
-    > [!IMPORTANT]
-    > Be sure to capture the **Secret Value** value before you continue.
+> [!IMPORTANT]
+> Be sure to capture the **Secret Value** value before you continue.
 
 #### Restrict mailboxes
 If desired, administrators can choose to modify mailbox access. See [Limiting application permissions to mailboxes](https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access) for more details.
