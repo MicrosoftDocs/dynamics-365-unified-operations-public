@@ -52,7 +52,7 @@ You can find content on Microsoft Learn by using any search engine. For the best
 
 [!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
-After generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="media/copilot-icon.png" border="false"::: at the top of the page.
+After generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="../copilot/media/copilot-icon.png" border="false"::: at the top of the page.
 
 [<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
 
