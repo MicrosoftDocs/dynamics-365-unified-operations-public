@@ -47,7 +47,7 @@ If you're already familiar with Supply Chain Management, you might recognize tha
 ### Enable manual inbound shipment order creation
 
 Besides using entity messages to create the *Inbound shipment orders* you can *Enable manual inbound shipment order creation* for one or more *Source systems* and thereby users are able to create inbound shipment orders directly in the *Inbound shipment orders* page.
-This setting will enable the user interface option for the **New** button.
+This setting will enable the user interface option for the **New** button and the `Order type` field will contain the value *Manual order* instead of *Inbound shipment order* for shipment orders getting created without message processing.
 
 ## Maintain outbound shipment orders
 
@@ -76,7 +76,7 @@ If you're already familiar with Supply Chain Management, you might recognize tha
 ### Enable manual outbound shipment order creation
 
 Besides using entity messages to create the *Outbound shipment orders* you can *Enable manual outbound shipment order creation* for one or more *Source systems* and thereby users are able to create outbound shipment orders directly in the *Outbound shipment orders* page.
-This setting will enable the user interface option for the **New** button.
+This setting will enable the user interface option for the **New** button and the `Order type` field will contain the value *Manual order* instead of *Outbound shipment order* for shipment orders getting created without message processing.
 
 ## Inbound process
 
