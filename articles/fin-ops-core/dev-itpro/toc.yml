@@ -2196,11 +2196,11 @@ items:
           href: ../fin-ops/user-interface/task-recorder-training-docs.md
     - name: Copilot capabilities in finance and operations apps
       items:
-      - name: Overview of Copilot capabilities in finance and operations apps (preview)
+      - name: Overview of Copilot capabilities in finance and operations apps
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot (preview)
         href: ../fin-ops/copilot/copliot-generative-help.md
-      - name: Enable Copilot capabilities in finance and operations apps (preview)
+      - name: Enable Copilot capabilities in finance and operations apps
         href: copilot/enable-copilot.md
       - name: Enable generative help and guidance with Copilot (preview)
         href: copilot/enable-copliot-generative-help.md

@@ -44,19 +44,19 @@ The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn i
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
-## Use Microsoft Copilot to get conversational guidance (preview)
+## Generative help and guidance with Copilot (preview)
 
 [!INCLUDE [preview-banner-section](../../../supply-chain/includes/preview-banner-section.md)]
 
-Microsoft Copilot for finance and operations apps gives users a conversational guide that's always nearby and ready to help. Users can ask questions in natural language. Copilot then identifies the relevant content in the documentation and composes a targeted response to the question.
+*Generative help and guidance with Copilot* provides a conversational guide that's always nearby and ready to help. Users can ask questions in natural language. Copilot then identifies the relevant content in the documentation and composes a targeted response to the question.
 
 [!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
-After Copilot is enabled for your system, users can open the Copilot sidecar by using the Copilot button at the top of the page.
+After generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="../copilot/media/copilot-icon.png" border="false"::: at the top of the page.
 
 [<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
 
-For more information, see [Microsoft Copilot for finance and operations apps (Preview)](../copilot/copilot-for-finance-operations.md).
+For more information, see [Generative help and guidance with Copilot (preview)](../copilot/copliot-generative-help.md).
 
 ## Get notified about changes through an RSS feed
 
