@@ -2,7 +2,7 @@
 title: What's new or changed in Platform updates
 description: This article points to topics that describe the new and changed features in each Platform update for finance and operations apps.
 author: johnmichalak
-ms.date: 04/10/2023
+ms.date: 01/03/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -23,6 +23,7 @@ To see what's new or changed in the Platform updates for finance and operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Platform updates for 10.0.38 | 7.0.7120 | February 2024    | [Platform updates for version 10.0.38 of finance and operations apps](whats-new-platform-updates-10-0-38.md)  |
 | Platform updates for 10.0.37 | 7.0.7068 | November 2023    | [Platform updates for version 10.0.37 of finance and operations apps](whats-new-platform-updates-10-0-37.md)  |
 | Platform updates for 10.0.36 | 7.0.7036 | September 2023    | [Platform updates for version 10.0.36 of finance and operations apps](whats-new-platform-updates-10-0-36.md)  |
 | Platform updates for 10.0.35 | 7.0.6972 | July 2023    | [Platform updates for version 10.0.35 of finance and operations apps](whats-new-platform-updates-10-0-35.md)  |
