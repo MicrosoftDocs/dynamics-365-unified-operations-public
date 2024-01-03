@@ -31,6 +31,10 @@ Before you can use generative help and guidance with Copilot in finance and oper
 
 Copilot transforms the support experience by introducing a conversational sidecar in finance and operations apps. Therefore, users can enter questions or express their needs directly in the app. The system is effective at interpreting the context of user queries, and provides relevant, tailored information to help with task completion. Future enhancements are expected to expand the system's capabilities so that they include direct navigation and proactive action suggestions.
 
+When generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="media/copilot-icon.png" border="false"::: at the top of each page.
+
+[<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
+
 ## Grounded in public documentation
 
 Copilot in-app help and guidance is deeply grounded in the official public documentation for Microsoft finance and operations apps. This grounding ensures that the AI has a comprehensive understanding of the system and can generate responses that are not only accurate but also aligned with the latest features and best practices that Microsoft has established.
