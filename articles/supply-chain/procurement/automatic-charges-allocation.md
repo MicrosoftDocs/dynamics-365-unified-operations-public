@@ -197,7 +197,7 @@ The following procedure shows how to allocate header-level charges to a line. Be
 
 1. Select **Allocate** to apply your settings and close the dialog box.
 
-## Reapply header charges
+## Reapply header auto charges
 
 In some cases, header auto charges are reapplied (deleted and inserted) after you update a header field.
 
@@ -205,34 +205,51 @@ Auto charges can be set up to consider vendor charge groups or modes of delivery
 
 After an auto charge is allocated from the header to a line, the system doesn't track its origin (there's no reference from the line to the auto charge setup), so the charge is transformed to a line charge. If you then update the **Charges group** or **Mode of delivery** on a purchase order header, the system reapplies the new, recalculated header charge, but the line charges aren't affected. This pattern applies both for purchase order headers and sales order headers.
 
-### Examples
-
 The following examples show how to update header-level charges and select a new **Mode of delivery** on the purchase order header. Each example assumes that you already have a header-level charge of type *fixed amount* and an order where that charge is applied. The order must already include at least one line item.
 
-#### Example 1
+### Example 1: Header auto charge value is reset after changing the mode of delivery
 
-In this example we update existing purchase order header charge and then see how update mode of delivery will reapply the header charge back to the original value
+This example shows that if you customize the value of a header auto charge and then update the mode of delivery for the purchase order, the system resets the header auto charge to its original value.
 
-1. Open the purchase order.
+1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders** and open a purchase order that includes a header auto charge of type *fixed amount*.
+1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
+1. For the existing header auto charge, enter a new value in the **Charges value** field.
+1. On the Action Pane, select the **Back** button to return to the purchase order.
+1. Open the **Header** tab of the purchase order.
+1. Expand the **Delivery** FastTab and select a new value for the **Mode of delivery** field.
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
 
-    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. Enter a new value in the **Charges value** field.
-    - Open the **Header** tab. On the **Delivery** FastTab, enter a new value in the **Mode of delivery** field.
-    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
-    Note that the **Charges value** is reset to its original value.
+    Note that the **Charges value** is now reset to its original auto charge value.
 
-#### Example 2
+### Example 2: Header auto charge is reapplied after allocating it to a line and then changing the mode of delivery
 
-In this example we allocate purchase order header charge to the purchase order line and then see how update mode of delivery will reapply the header charge and still have the line charge.
+This example shows that if you allocate a header auto charge to a line and then update the mode of delivery for the order, the system then reapplies the original header auto charge while leaving the allocated charge applied to the line.
 
-1. Open the purchase order
+1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders** and open a purchase order that includes a header auto charge of type *fixed amount*.
+1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
 
-    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Allocate charges**. On the Allocate charges to order lines dialog, select the **Allocate all** to allocate charges to order lines. Then select **Allocate**.
-    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
-    Note that the charges are removed and allocated to the line level.
-    - On the **Purchase order lines** FastTab toolbar, select **Financials \> Maintain charges**.
-    Note that the previous header charge is now at the line level.
-    - Open the **Header** tab. On the **Delivery** FastTab, enter a new value in the **Mode of delivery** field.
-    - On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
-    Note that the **Charges value** has been reapplied, while the original charges from the header still exist at the line level.
+    Note the header auto charges listed here.
+
+1. On the Action Pane, select the **Back** button to return to the purchase order.
+1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Allocate charges**.
+1. On the **Allocate charges to order lines** dialog, select the **Allocate all** check box. Then select **Allocate** to allocate the header auto charge to the order lines.
+1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
+
+    Note that the header auto charges are no longer listed because you allocated them to the line level.
+
+1. On the Action Pane, select the **Back** button to return to the purchase order.
+1. On the **Purchase order lines** FastTab, select a purchase order line.
+1. On the **Purchase order lines** FastTab toolbar, select **Financials \> Maintain charges**.
+
+    Note that the previous header auto charge is now shown here, at the line level.
+
+1. On the Action Pane, select the **Back** button to return to the purchase order.
+1. Open the **Header** tab of the purchase order.
+1. Expand the **Delivery** FastTab and select a new value for the **Mode of delivery** field.
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**. 
+
+    Note that the original header auto charge is now reapplied to the order, even though the charge is also listed at the line level.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
