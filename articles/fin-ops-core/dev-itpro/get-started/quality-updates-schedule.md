@@ -103,21 +103,6 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.35 Release-3 train schedule
-
-**App version: 10.0.1627.138**
-
-**Platform version: 7.0.6972.170**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | October 30 to November 2, 2023 | NA |
-| Station 2 | November 6 to November 9, 2023 | December 2 to December 3, 2023 |
-| Station 3 | November 7 to November 10, 2023 | December 2 to December 3, 2023 |
-| Station 4 | November 13 to November 16, 2023 | December 9 to December 10, 2023 |
-| Station 5 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
-| Station 6 | December 5 to December 8, 2023 | December 16 to December 17, 2023 |
-
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.36 Release-2 train schedule
 
 **App version: 10.0.1695.90**
@@ -147,6 +132,21 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
 | Station 5 | December 11 to December 14, 2023 | January 13 to January 14, 2024 |
 | Station 6 | December 12 to December 15, 2023 | January 13 to January 14, 2024 |
+
+### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.37 Release-2 train schedule
+
+**App version: 10.0.1725.123**
+
+**Platform version: 7.0.7068.130**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | January 8 to January 11, 2024 | NA |
+| Station 2 | January 15 to January 18, 2024 | January 27 to January 28, 2024 |
+| Station 3 | January 16 to January 19, 2024 | January 27 to January 28, 2024 |
+| Station 4 | January 22 to January 25, 2024 | February 3 to February 4, 2024 |
+| Station 5 | January 29 to February 1, 2024 | February 10 to February 11, 2024 |
+| Station 6 | January 30 to February 2, 2024 | February 10 to February 11, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
