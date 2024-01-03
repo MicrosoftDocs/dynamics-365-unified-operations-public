@@ -106,10 +106,7 @@ If desired, administrators can choose to modify mailbox access. See [Limiting ap
 
 #### Configuring Microsoft Graph in finance and operations
 
-1. In the finance and operations client, open the **Email parameters** page.
-
-    ![PowerBI.com configuration page](./media/D365-PBI-Configuration.png)
-
+1. In the finance and operations client, open the **Email parameters** page.    
 2. Select the **Microsoft Graph settings** tab.
 3. In the **Application ID** field, enter the **Application ID** value that you captured after creating your new app in the previous procedure.
 4. In the **Application key** field, enter the **Secret Value** value that you captured when creating a client secret in the previous procedure.
