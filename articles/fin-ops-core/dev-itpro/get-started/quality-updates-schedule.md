@@ -118,7 +118,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | December 11 to December 14, 2023 | January 13 to January 14, 2023 |
 | Station 6 | December 12 to December 15, 2023 | January 13 to January 14, 2023 |
 
-### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.37 Release-1 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-1 train schedule
 
 **App version: 10.0.1725.73**
 
