@@ -19,7 +19,7 @@ ms.reviewer: twheeloc
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: raynezou
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
