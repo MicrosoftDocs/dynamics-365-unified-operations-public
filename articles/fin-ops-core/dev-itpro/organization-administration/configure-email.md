@@ -37,13 +37,13 @@ Both administrators and users set the behavior of the email subsystem.
 ## [Administrator] Email parameters page 
 
 ### Email configuration for the environment
-On the **Email parameters** page, admins can configure the high-level email behavior for the environment from the **Configuration** tab.
+On the **Email parameters** page, administrators can configure the high-level email behavior for the environment from the **Configuration** tab.
 
 | Field                 | Description |
 |-----------------------|-------------|
 | Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Graph and Exchange providers will use the account associated with the batch process. |
 | Attachment size limit | Specifies the maximum size of a single email that can be sent via the email subsystem. |
-| Email expiration in days | Specifies the number of days before an unsent message has its status set to Expired.  A value of 0 means the default period of 30 days is in effect. |
+| Email expiration in days | Specifies the number of days before an unsent message has its status set to **Expired**. A value of 0 means the default period of 30 days is in effect. |
 
 The **Email history** section serves two purposes. First, it provides an entry point to the **Email history** page, where administrators can review all sent emails and also any errors that prevented an email from being sent. Second, it lets you configure how long email history is maintained. By default, the last 30 days of email history are retained. You can adjust this period by changing the value of the **Number of days to retain email history** field to a non-zero number. If you set the value to **0** (zero), the default number and behavior are used.
 
@@ -52,26 +52,25 @@ The **Email throttling** section enables non-interactive email providers (such a
 > [!NOTE]
 > Use of the **Email throttling** feature isn't recommended for the Graph or Exchange email providers because they have their own throttling mechanisms. Therefore, you should ensure that the **per-minute email sending limit** field is set to **0** for both of these providers. 
 
-### Sending email with Microsoft Graph 
+### Send email with Microsoft Graph 
 
-For customers using Office 365, the recommended email provider for the finance and operations apps is Microsoft Graph. This is the replacement email provider for the deprecated Exchange email provider.  
+Customers using Office 365, the recommended email provider for Dynamics 365 finance and operations apps is Microsoft Graph. This is the replacement email provider for the deprecated Exchange email provider.  
 
-Before getting started with the Microsoft Graph integration set up, you'll need the following permissions:  
-- You must be a system administrator in the application to complete the linkage of the finance and operations environment to Microsoft Graph. 
-- You must be an administrator for your Microsoft Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform the first part of  configuration for you.
+The following permissions are required to set up the Microsoft Graph integration:  
+- You must be a system administrator in the application to link the Dynamics 365 finance and operations environment to Microsoft Graph. 
+- You must be an administrator for your Microsoft Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform the first part of the configuration for you.
 
 #### One-time registration process 
 
-**Create an app**
+To create an app, follow these steps: 
 1. Sign in to https://portal.azure.com/ using an Azure tenant admin account.
 
    > [!NOTE]
    > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
-2. Go to **Azure Active Directory** \> **App registrations** \> **New application**. 
+2. Go to **Azure Active Directory** > **App registrations** > **New application**. 
 3. Enter the following values:
-
-    - **Name** – Enter the name of your app  (e.g. GraphMailApp).
+    - **Name** – Enter the name of your app.
     - **Supported account types** – Enter only accounts that are directly in this organization (single tenant).    
     
 4. Select **Register**.
@@ -80,9 +79,9 @@ Before getting started with the Microsoft Graph integration set up, you'll need 
    > [!IMPORTANT] 
    > Be sure to capture the **Application (client) ID** value.
 
-**Add permissions**
-6. Select **Manage** \> **API permissions** \> **Add a permission** \> **Microsoft APIs** \> **Microsoft Graph**.
+To add permissions, follow these steps:
 
+6. Select **Manage** \> **API permissions** \> **Add a permission** \> **Microsoft APIs** \> **Microsoft Graph**.
 7. Select **Application permissions** and enable **Mail.Send**.
 
    > [!NOTE] 
@@ -90,40 +89,37 @@ Before getting started with the Microsoft Graph integration set up, you'll need 
    
 8. Select **Add permissions**.
 9. Select **Grant admin consent for ...** to allow emails to be sent.
-10. Select **Manage** \> **Certificates & secrets**.
+10. Select **Manage** \> **Certificates and secrets**.
 
-**Create client secret**
-11. Select **Manage** \> **Certificates & secrets**.
+To create client secret, follow these steps:
+11. Select **Manage** > **Certificates and secrets**.
 12. In the **Client secrets** tab, select **New client secret**.
 13. Enter a value in the **Description** and **Expires** fields, and then select **Add**.
-14. Make a note of the **Secret value** value. You will use this to connect to the Graph service fro your finance and operations environments.
+14. Make a note of the **Secret value** value. You will use this to connect to the Graph service for your Dynamics 365 finance and operations environments.
 
 > [!IMPORTANT]
-> Be sure to capture the **Secret Value** value before you continue.
+> Be sure to capture the **Secret value** value before you continue.
 
 #### Restrict mailboxes
-If desired, administrators can choose to modify mailbox access. For more information, see [Limiting application permissions to mailboxes](/graph/auth-limit-mailbox-access).
+Administrators can choose to modify mailbox access. For more information, see [Limiting application permissions to mailboxes](/graph/auth-limit-mailbox-access).
 
-#### Configuring Microsoft Graph in finance and operations
+#### Configuring Microsoft Graph in Dynamics 365 finance and operations
 
-1. In the finance and operations client, open the **Email parameters** page.    
+1. In Dynamics 365 finance and operations, go to **Email parameters** page.    
 2. Select the **Microsoft Graph settings** tab.
 3. In the **Application ID** field, enter the **Application ID** value that you captured after creating your new app in the previous procedure.
-4. In the **Application key** field, enter the **Secret Value** value that you captured when creating a client secret in the previous procedure.
+4. In the **Application key** field, enter the **Secret value** value that you captured when creating a client secret in the previous procedure.
 5. Select **Save**.
 
-#### [Deprecated] Exchange email provider
+#### Exchange email provider (Deprecated)
 
 The **Email parameters** page allows an administrator to select **Exchange** as an interactive email provider and as the Batch email provider. This mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
 If troubleshooting is needed, ensure that it's possible to sign in to the current user's account and that emails can be sent from that account to the intended recipients.
 
 Note that the Exchange mail provider is: 
 -  Not supported for external users, as those users will not have Exchange accounts on the system tenant.
--  Only available in Microsoft-managed environments.
+-  Only available in Microsoft managed environments.
 
-> [!WARNING]
-> The Exchange email provider is deprecated. See [] for more details.  If you are using this, move over to the Microsoft Graph email provider as described in this article.  
-  
 
 ### Sending email with SMTP
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
