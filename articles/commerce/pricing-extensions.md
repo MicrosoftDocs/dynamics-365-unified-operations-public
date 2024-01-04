@@ -18,9 +18,6 @@ ms.search.validFrom:
 
 This article describes how to extend pricing and discount functionalities in Microsoft Dynamics 365 Commerce.
 
-> [!NOTE]
-> The latest Commerce software development kit (SDK) samples are available at [https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/PricingEngine](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/PricingEngine).
-
 ## Extend the Commerce pricing engine
 
 The Commerce pricing engine is the hub of pricing and discounts functionalities in Microsoft Dynamics 365 Commerce. To extend the Commerce pricing engine, you must first be familiar with the terminologies in the following table.
@@ -42,8 +39,8 @@ You can add pretriggers for the service requests to which you'd like your extens
 
 | Service request | Description |
 | --- | --- |
-| CalculatePricesServiceRequest | This service request calculates the prices (including base price), trade agreement, and price adjustments for a sales transaction.  |
-| CalculateDiscountsServiceRequest | This service request calculates the discounts (including discount trade agreements), simple discounts, mix and match discounts, quantity discounts, and threshold discounts for a sales transaction. |
+| CalculatePricesServiceRequest | This service request calculates the prices for a sales transaction, including the base price, trade agreement, and price adjustments.  |
+| CalculateDiscountsServiceRequest | This service request calculates the discounts for a sales transaction, including discount trade agreements, simple discounts, mix and match discounts, quantity discounts, and threshold discounts. |
 | GetIndependentPriceDiscountServiceRequest| This service request only calculates prices and single line discounts, and is used for product listing and product details pages where product prices are calculated independently. |
 | CalculateShippingDiscountsServiceRequest | This service request calculates the shipping discounts for a sales transaction. |
 
