@@ -62,7 +62,6 @@ To determine the root cause of the failure, use the **Environment change history
 When you refresh a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, some elements of the database aren't copied over to the target environment. Here are some examples:
 
 * Email addresses in the LogisticsElectronicAddress table.
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 * Simple Mail Transfer Protocol (SMTP) Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
