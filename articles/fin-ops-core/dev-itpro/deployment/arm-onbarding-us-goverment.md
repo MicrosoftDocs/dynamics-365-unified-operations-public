@@ -24,9 +24,7 @@ To deploy Azure Resource Manager topologies, you must complete the Resource Mana
 - The Azure subscription ID that you're deploying to
 
     > [!NOTE]
-    > For US government Microsoft Dynamics Lifecycle Services (LCS) projects, 
-    > 1. Only Azure Government–specific Azure subscriptions are supported.
-    > 2. Azure Government Subscriptions where management certificate support is not available, for example CSP Azure subscriptions are **not** supported currently.
+    > For US government Microsoft Dynamics Lifecycle Services (LCS) projects, only Azure Government–specific Azure subscriptions are supported.
 
 
 - Ownership of the Azure subscription, or access to the subscription owner, so that you can add contributor workflows and upload the management certificate
@@ -120,10 +118,10 @@ Follow these steps to enable the Azure connector and, as required, add an LCS us
     > If you're enabling Resource Manager for an existing connector, select **Edit** instead of **Add**.
 
 4. Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager (ARM)** option to **Yes**.
-5. In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then select **Next**.
-6. On the **Microsoft Azure setup** page, select **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
-7. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Management Certificates**.
-8. Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, select **Upload**.
+5. In the **Azure subscription AAD Tenant domain** field, enter the domain name of the government Azure subscription account admin, and then select **Next**.
+6. On the **Microsoft Azure setup** page, select **Get a code**. Make a note of the information presented. You will use this information to configure a tag on the Azure subscription.
+7. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Tags**.
+8. Enter the **Name** and **Value** from the information presented above and select **Apply**.
 9. Select the Management certificate that you downloaded in step 5, and then select **OK**.
 
 #### Configure deployment settings
