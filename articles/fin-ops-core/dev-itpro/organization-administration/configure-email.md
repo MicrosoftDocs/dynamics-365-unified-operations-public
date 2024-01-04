@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 08/09/2023
+ms.date: 01/04/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: SysEmailParameters
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 268274
 ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
@@ -102,7 +102,7 @@ Before getting started with the Microsoft Graph integration set up, you'll need 
 > Be sure to capture the **Secret Value** value before you continue.
 
 #### Restrict mailboxes
-If desired, administrators can choose to modify mailbox access. See [Limiting application permissions to mailboxes](https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access) for more details.
+If desired, administrators can choose to modify mailbox access. For more information, see [Limiting application permissions to mailboxes](/graph/auth-limit-mailbox-access).
 
 #### Configuring Microsoft Graph in finance and operations
 
