@@ -99,11 +99,20 @@ To use deferred receiving processing, you must first create a deferred receiving
 1. In the list pane, select the menu item that you want to set up. The selected menu item must use one of the previously listed work creation policies.
 1. Set the **Deferred receiving policy ID** field to the policy that you identified in step 2.
 
-> [!NOTE]
-> As for the *Mixed license plate receiving* mobile device work creation process, the system can print license plate labels when you run a deferred receiving process. The options are among the settings that are established by the deferred receiving policy ID that's selected for each menu item.
->
-> If you set the **Label printing on confirming receiving** field so that labels are printed before work is created, the labels won't include details such as the "to" location for the license plate, because this information won't be available until the system has finished running the deferred receiving asynchronous process.
+#### License plate labels as part of the receiving process
 
+As for other mobile menu item receiving processes, the system can generate and print license plate labels when you run a deferred receiving process. This is getting enabled among the settings that are established by the deferred receiving policy ID that's selected for each menu item.
+
+You have two setting and can thereby get two license plate labels generated as part of the process:
+
+- **Label printing on confirming receiving** - Labels can get generated and printed immediately (before registration and work creation)
+- **Label printing on deferred receiving async processing** - Labels can get generated based on the work data
+
+If you set the **Label printing on confirming receiving** field so that labels are printed before work is created, the labels won't include details such as the "to" location for the license plate, because this information won't be available until the system has finished running the deferred receiving asynchronous process.
+
+> [!NOTE]
+> You can use the *Reprint label* mobile device menu item as a detour process to get the *Label printing on deferred receiving async processing* generated license plate label printed as part of the put away process.
+  
 ### Deferred receiving asynchronous processing
 
 *Deferred asynchronous receiving processing* automatically runs immediately after a mobile device menu item completes a *Receiving completed* process, which indicates that all the required *Mixed license plate receiving* data is available. You can monitor the status of the process on the **Mixed license plate receiving** page, where the **Mixed license plate receiving status** field shows one of the following values:
