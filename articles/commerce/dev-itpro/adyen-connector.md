@@ -216,6 +216,7 @@ The following countries/regions have Commerce components available and card pres
 | Spain | ✔ |
 | Sweden | ✔ |
 | Switzerland | ✔ |
+|  United Arab Emirates (UAE) | ✔ |
 | United Kingdom | ✔ |
 | United States | ✔ |
 | Brazil | ✔ |
