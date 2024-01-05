@@ -104,9 +104,16 @@ In Finance, the value in the **Source** field indicates that the tax groups were
 The **Override sales tax** check box is added to the **Customer** and **Vendor** master data on the **Invoice and delivery** FastTab. The check box is also added to the Sales order, Purchase order, Free text invoice header, and to the line level of those documents.
 
 Here is a process that combines tax code determination logic with override sales tax:
+
+#### Scenario 1: Override sales tax = Yes
+
 ![The flow that combines tax code determination logic with override sales tax yes](../media/OverrideSalesTax_Yes.jpg)
 
+#### Scenario 2: Override sales tax = No and applicability rule can be matched
+
 ![The flow that combines tax code determination logic with override sales tax no and matched applicability rules](../media/OverrideSalesTax_No1.jpg)
+
+#### Scenario 3: Override sales tax = No and applicability rule can not be matched
 
 ![The flow that combines tax code determination logic with override sales tax no and applicability rules mismatch](../media/OverrideSalesTax_No2.jpg)
 
