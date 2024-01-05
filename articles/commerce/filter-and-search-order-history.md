@@ -1,28 +1,27 @@
 ---
 title: Order history with search and filters module
-description: This article describes how ‘Order history with search and filters’ module enhances the shopper experience on your ecommerce website by enabling them to quickly locate their orders using various search and filter options.
+description: This article covers the order history with search and filters module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: ashish-msft
-ms.date: 10/30/2023
+ms.date: 01/05/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.38
-ms.search.industry: 
-ms.search.form: 
+
 ---
 
-# Order history with search and filters module on your eCommerce site
+# Order history with search and filters module
 
-## Overview
-The ‘Order history with search and filters’ module is a feature that enhances the user experience of your ecommerce website by allowing your shoppers to quickly locate their orders using various search and filter options. This module also provides a clear and organized view of the order details, such as order number, order confirmation number, order date, channel origin, order status, order total, and a link to view order details.
+[!include [banner](../includes/banner.md)]
+
+This article covers the order history with search and filters module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+
+The order history with search and filters module enhances the user experience of your e-commerce site by allowing shoppers to quickly locate their orders using various search and filter options. This module lists order search results with information such as order number, order confirmation number, order date, channel origin, order status, and order total, and provides links to view additional order details.
 
 ![Order history with Search and filters on an ecommerce website](./media/OrderHistoryWithSearchAndFilters.png)
-## How it works
+
 The ‘Order history with search and filters’ module works as follows:
 
 - The module is displayed on the user’s account page, under the ‘Order history’ section
@@ -32,11 +31,11 @@ The ‘Order history with search and filters’ module works as follows:
 - The module displays the order details in a grid or list form, with one row per order
 - The user can click on the link to view order details to see more information about the order, such as items, shipping, payment, and other details.
 
-## How to add module of order history with search and filters to your page
+## Add order history with search and filters module to a site page
 
 To add the module of order history with search and filters to your page, you need to make sure that your webpage template has a ‘Generic Container’ element that can contain this module. 
 
-![Add orer history with search and filters to an associated page template](./media/Template_With_OrderHistory_AllowingSearchAndFiltering.png)
+![Add order history with search and filters to an associated page template](./media/Template_With_OrderHistory_AllowingSearchAndFiltering.png)
 
 Then, you can add the module of order history with search and filters into the ‘Generic Container’ element to your order history page DOM structure.
 ![Add order history with search and filters to your page](./media/AddModuleToPageOfOrderHistoryWithSearchAndFilters.png)
@@ -48,3 +47,5 @@ You can configure the following module properties either at a template level or 
 3. Render sales order count - Enabling this property will show the total count of the orders. 
 4. Enable grid view - Enabling this property will allow users to switch between the list or grid view when viewing order history. 
 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
