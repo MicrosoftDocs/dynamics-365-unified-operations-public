@@ -108,6 +108,8 @@ Here is a process that combines tax code determination logic with override sales
 
 ![The flow that combines tax code determination logic with override sales tax no and matched applicability rules](../media/OverrideSalesTax_No1.jpg)
 
+![The flow that combines tax code determination logic with override sales tax no and applicability rules mismatch](../media/OverrideSalesTax_No2.jpg)
+
 ### Update order lines
 
 You can bulk update lines if the **Override sales tax** check box is changed on the header level and is added to the **Update order lines** parameters pages for Sales order, Sales quotation, and Purchase order.
