@@ -20,6 +20,7 @@ This article describes how to use Microsoft Copilot in site builder to enrich pr
 
 > [!NOTE]
 > A preview of Copilot in site builder is available for United States customers starting in Commerce version 10.0.38, with support for the English language (en-us) locale only. Support for additional regions and locales is planned for future releases. 
+
 If you run an e-commerce website, you know the importance of having engaging and persuasive product enrichment and marketing content that can attract and convert your customers. But creating such content can be time-consuming and challenging, especially if you have a large product catalog and a diverse audience. That's why Microsoft has introduced Copilot in site builder, a new AI-powered tool that helps you generate high-quality content with ease and efficiency.
 
 Copilot in site builder works seamlessly with Microsoft Dynamics 365 Commerce site builder to help you quickly creating product enrichment and marketing content that is tailored to your target audience and brand tone. Site builder offers a range of templates, features, and tools to help you customize your website to meet your needs and preferences. With Copilot in site builder, you can generate persuasive, compelling, and engaging product enrichment and marketing content for your e-commerce websites quickly and efficiently. 
