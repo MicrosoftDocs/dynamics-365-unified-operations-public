@@ -102,6 +102,7 @@ In Finance, the value in the **Source** field indicates that the tax groups were
 > If the **Sales tax group** or **Item sales tax group** field is left blank, and the **Override sales tax** option is set to **Yes**, the line won't be sent to the Tax calculation service for processing.
 
 The **Override sales tax** check box is added to the **Customer** and **Vendor** master data on the **Invoice and delivery** FastTab. The check box is also added to the Sales order, Purchase order, Free text invoice header, and to the line level of those documents.
+
 Here is a process that combines tax code determination logic with override sales tax:
 ![The flow that combines tax code determination logic with override sales tax](../media/OverrideSalesTax.jpg)
 
