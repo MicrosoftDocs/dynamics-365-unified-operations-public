@@ -25,7 +25,7 @@ If you run an e-commerce website, you know the importance of engaging and persua
 
 Copilot in site builder works seamlessly with Dynamics 365 Commerce site builder to help you quickly create product enrichment and marketing content that's tailored to your target audience and brand tone. Site builder offers a range of templates, features, and tools to help you customize your website to meet your needs and preferences. By using Copilot in site builder, you can quickly and efficiently generate persuasive, compelling, and engaging product enrichment and marketing content for your e-commerce websites.
 
-To use Copilot in site builder to initiate the creative process, first select a tone that's aligned to your brand, such as "adventurous," "luxurious," or "bold." Next, select an audience from among the choices that are managed by you, such as "sports enthusiast" or "college graduate." Copilot then uses these prompts to craft compelling and engaging content based on existing product information such as the name, description, attributes, and price.
+To use Copilot in site builder to initiate the creative process, first select a tone that's aligned to your brand, such as "adventurous," "luxurious," or "bold." Next, select an audience from a list of choices that you manage, such as "sports enthusiast" or "college graduate." Copilot then uses these prompts to craft compelling and engaging content based on existing product information such as the name, description, attributes, and price.
 
 Copilot in site builder offers the following capabilities:
 
