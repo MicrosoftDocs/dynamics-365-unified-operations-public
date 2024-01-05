@@ -82,6 +82,7 @@ Quality orders are used to track the details about inspections and test results 
 - **Quarantine** – This reference type indicates that you're inspecting inventory that is related to a quarantine order. Quarantine orders are a special type of order that tracks inventory in a segregated warehouse or a segregated area in your warehouse. Inspections of this type are often used to inspect goods that a customer has returned or that have been put into quarantine for further analysis. Quarantine orders can be generated from quality orders. Alternatively, they can be generated from other sources, and then quality orders can be related to the quarantine orders.
 - **Route operation** – This reference type indicates that you're inspecting inventory that is related to a specific step of the route for a production order. Inspections of this type are typically used to analyze the work in process (WIP) of a product before it moves to the next step in the production process.
 - **Co-product production** – This reference type indicates that you're inspecting inventory that is related to a co-product of a production order. Inspections of this type are typically used to inspect the co-product of a batch order before the co-product is added to inventory.
+- **Goods in transit order** – This reference type indicates that you're inspecting inventory that is related to a Goods in transit order from Landed Cost. Inspections of this type are often used to inspect incoming goods before they are put into inventory.
 
 ## View and create quality orders from various parts of the system
 
@@ -127,6 +128,12 @@ To work with quality orders that are related to your quarantine orders, go to **
 
 - Review the values in the **Quality order status** column. In this way, you can learn the overall status of all quality orders that are related to each quarantine order in grid.
 - Select a quarantine order in the grid, and then, on the Action Pane, select **Quality orders** to view, create, or update quality orders that are related to the quarantine order.
+
+  ### From Goods in transit order
+
+To work with quality orders that are related to your sales orders, go to **Landed cost \> Periodic tasks \>Goods in transit orders**, and then follow any of these steps:
+
+- Open a Goods in transit order, or select it in the grid. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the Goods in transit order.
 
 ## Advanced actions for quality orders
 
