@@ -21,7 +21,7 @@ ms.search.form: SysDataSharingConfiguration
 
 This article describes cross-company data sharing for developers. Cross-company data sharing is a mechanism for sharing reference and group data among companies in a deployment.
 
-## Enable a table for cross-company data sharing 
+## Enable a table for cross-company data sharing
 
 Enabling a table for data sharing is a two-step process that requires updating the metadata
 property for the table. To enable a custom table for cross-company data sharing, follow these steps: 
@@ -141,6 +141,7 @@ From a development perspective, it is not enough to look at the primary and alte
 <li>insert</li>
 <li>update</li>
 <li>write</li>
+<li>renamePrimaryKey</li>
 </ul>
 </td>
 <td><ul>Are there data dependencies not modeled?
@@ -171,4 +172,108 @@ Tables with this pattern may be shareable, but clear documentation will need to 
 </tbody>
 </table>
 
-The classes **SysDataSharingCrossCompanyValidator**, **SysDataSharingCrossCompanyValidatorQueryBuilder**, and methods on the table **SysDataSharingPolicy**, can be used to determine if a table is being used in a data sharing policy. These typically are used in the CRUD and logic default methods to handle table dependencies.
+The classes **SysDataSharingCommonAPI**, **SysDataSharingCrossCompanyValidator**, **SysDataSharingCrossCompanyValidatorQueryBuilder**, and methods on the table **SysDataSharingPolicy**, can be used to determine if a table is being used in a data sharing policy. These typically are used in the CRUD and logic default methods to handle table dependencies.
+
+## Examples
+Below is a set of examples on how to handle and analyse business logic that are take part of cross company data sharing.
+
+### Example 1 - Validate methods - check if transaction exist
+
+In this example we by default check if transactions exist in current company before deleting the object. This is not enough since object will also be deleted in all the companies that is part of the cross company data sharing policy. Therefore we need to extend the code to do the validation for all companies in the policy before deleting the object.
+
+**InventLocation** table has several examples of business logic that needs to be executed across all companies part of the policy.
+
+```X++
+public boolean validateDelete()
+{
+    SysDataSharingPolicy policy = SysDataSharingPolicy::findSharingPolicyByCompanyAndTable(curExt(), tableId2name(this.TableId));
+
+    if (policy.RecId && policy.IsEnabled)
+    {
+        Query query = SysDataSharingCrossCompanyValidatorQueryBuilder::buildQuery(this.orig(), policy.RecId);
+
+        QueryRun queryRun = new QueryRun(query);
+        while (queryRun.Next())
+        {
+            InventLocation companyInventLocation = queryRun.get(this.TableId);
+            DataAreaId company = companyInventLocation.DataAreaId;
+            if (companyInventLocation && company && company != curExt())
+            {
+                changecompany(company)
+                {
+                    if (inventLocation.hasOpenInventSumQuantity())
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+    }    
+}
+```
+
+### Example 2 - Rename primary key
+
+In case we want to rename the primary key of a table and the renamePrimaryKey() contains business logic we need to ensure the logic is executed for all companies part of a cross company data sharing policy. Below code show if renaming a site is allowed if the old site has a warehouse associated with it and the new site value has previously been used with any warehouse.
+
+```x++
+public void renamePrimaryKey()
+{
+    InventSiteId origSiteId = this.orig().SiteId;
+    container crossCompanyList = SysDataSharingCommonAPI::getCrossCompanySharingList(tableId2name(this.TableId), curExt());
+
+    // original SiteId    
+    select firstonly crosscompany:crossCompanyList RecId from inventDim
+        where inventDim.InventSiteId == origSiteId && inventDim.InventLocationId != '';
+
+    if (inventDim.RecId)
+    {
+        // new SiteId
+        select firstonly crosscompany:crossCompanyList RecId from inventDim
+            where inventDim.InventSiteId == this.SiteId && inventDim.InventLocationId != '';
+    
+        if (inventDim.RecId)
+        {
+            return checkFailed(Site 'XXX' can not be connected to warehouse 'YYY', since the warehouse has already been used in connection with site 'ZZZ'.);
+        }       
+}    
+
+}
+```
+
+### Example 3 - Defaulting / initialization logic
+
+Defaulting for a record, could have business logic that ensures that certain setup is done. In below example we need to ensure that **InventParameter** record exists before we can proper initialize an **InventTable** record, therefore we need to ensure this is done for all companies part of the cross company data sharing policy.
+
+```x++
+public void initValue()
+{
+    SetEnumerator crossCompanySet = SysDataSharingPolicy::crossCompaniesByCompanyAndTable(curExt(), tableStr(InventTable));
+    while (crossCompanySet.moveNext())
+    {
+        DataAreaId company = crossCompanySet.current();
+        changecompany(company)
+        {
+            InventParameters::find();
+        }
+    }
+}
+```
+
+Code analysis of defaulting logic is important, when defaulting a field value from a company specific table e.g. Parameter table, then the value might be different in the companies that are part of the cross company data sharing policy.
+
+Below is an example of a field defaulting from parameter table, and here the parameter field value might be different from company to company, leading to different value depending in which company the record is initialized. Either you need to ensure the parameter value is the same in all companies or use e.g. MasterCompany as the defaulting company in case of SRS policy, for DRS it could be the first company in the policy list.
+
+```x++
+public void initValue()
+{
+    SysDataSharingPolicy policy = SysDataSharingPolicy::findSharingPolicyByCompanyAndTable(curExt(), tableId2name(this.TableId));
+    if (policy.MasterCompany)
+    {
+        changecompany(policy.MasterCompany)
+        {
+            this.BOMUnitId = InventParameters::find().DefaultUnitId;
+        }
+    }
+}
+```
