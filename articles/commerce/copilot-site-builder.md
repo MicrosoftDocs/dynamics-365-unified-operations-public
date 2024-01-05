@@ -58,9 +58,9 @@ To control the availability of Copilot in site builder feature at the site level
 1. Set the **Copilot for Dynamics 365 content generation** option to **On** or **Off**.
 1. Repeat the previous steps for other sites that are associated with the tenant.
 
-## Configure and preselect preferred tones for your brand and organization 
+## Configure and preselect tones for your brand and organization 
 
-You can choose up to five tone options that Copilot will use to craft messaging that fits your brand and organization. These tones are then available for use by team members responsible for updating product enrichment content. From the list of chosen tones, you can also preselect any tones that you want to set as default tones for quickly generating content with Copilot.
+You can choose up to five tone options that Copilot in site builder uses to craft messaging that fits your brand and organization. These tones are then available for use by team members responsible for updating product enrichment content. From the list of chosen tones, you can also preselect any tones that you want to set as defaults for quickly generating content with Copilot.
 
 To choose and preselect tone options in site builder, follow these steps.
 
@@ -71,9 +71,9 @@ To choose and preselect tone options in site builder, follow these steps.
 1. Under **Chosen tones**, select any tones to be preselected as default tones.
 1. On the command bar, select **Save**.
 
-## Configure and preselect target client options to whom you may want to customize and tailor your marketing message
+## Configure and preselect target client options
 
-You can choose up to five target client options for Copilot to craft messaging that targets your intended audience. These target clients are then available for use by team members responsible for updating product enrichment content. From the list of target clients, you can also preselect any target clients that you want to set as default target clients for quickly generating content with Copilot.
+You can choose up to five target client options for Copilot to craft messaging that targets your intended audience. These target clients are then available for use by team members responsible for updating product enrichment content. From the list of target clients, you can also preselect any target clients that you want to set as defaults for quickly generating content with Copilot.
 
 To choose and preselect target clients in site builder, follow these steps.
 
@@ -86,9 +86,9 @@ To choose and preselect target clients in site builder, follow these steps.
 
 ## Selective content filtering 
 
-Microsoft is committed to providing you with a responsible and ethical solution for your e-commerce needs, and has designed Copilot in site builder to avoid the promotion of products from sensitive and regulated industries such as alcohol, tobacco, and soft drugs by default. We believe that such content filtering is a best practice to protect your customers and your reputation.
+Microsoft is committed to providing you with a responsible and ethical solution for your e-commerce needs, and has designed Copilot in site builder to avoid the promotion of products from sensitive and regulated industries such as alcohol, tobacco, and soft drugs by default.
 
-However, it is understood that you may have different preferences and requirements for your business. Site administrators have the ability to override the default behavior and customize the product enrichment and marketing content that Copilot in site builder generates. You can easily change the settings and choose which products you want to promote and how, and so have the full control and flexibility to make the best decisions for your business.
+However, you may have different preferences and requirements for your business. Site administrators have the ability to override the default content filtering settings and customize the product enrichment and marketing content that Copilot in site builder generates.
 
 To override content filtering restrictions in site builder, follow these steps.
 
@@ -96,7 +96,7 @@ To override content filtering restrictions in site builder, follow these steps.
 1. Under **Content filtering**, for the content themes you want to override, set the options to **Off**.
 
 > [!NOTE]
-> Copilot settings for tones, target clients, and sensitive/regulated industries are predefined by system. If you have feedback or requests to revise or add more options, contact Microsoft support.
+> Copilot settings for tones, target clients, and sensitive/regulated industries are predefined by the system. If you have feedback or requests to revise or add more options, contact Microsoft support.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
