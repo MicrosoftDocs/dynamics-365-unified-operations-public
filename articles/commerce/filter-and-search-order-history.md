@@ -20,14 +20,12 @@ This article covers the order history with search and filters module and explain
 
 The order history with search and filters module enhances the user experience of your e-commerce site by allowing shoppers to quickly locate their orders using various search and filter options. This module lists order search results with information such as order number, order confirmation number, order date, channel origin, order status, and order total, and provides links to view additional order details.
 
-![Order history with Search and filters on an ecommerce website](./media/OrderHistoryWithSearchAndFilters.png)
-
 The order history with search and filters module works in the following ways:
 
 - The module is displayed on a site user's account page, under the **Order history** section.
 - Users can enter the order confirmation number, order number, or origin channel in the search box to search for orders.
 - Users can filter by order date, channel origin, and order status.
-- Using the sort button, users can sort orders by order placed date or order confirmed date.
+- Users can sort orders by order placed date or order confirmed date.
 - The module displays the order details in grid or list formats, with one row per order.
 - Users can select order links to view order details such as items, shipping, and payment information.
 
