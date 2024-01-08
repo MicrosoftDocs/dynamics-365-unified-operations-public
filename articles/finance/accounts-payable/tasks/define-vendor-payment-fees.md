@@ -4,7 +4,7 @@
 title: Define vendor payment fees
 description: Set up vendor payment fees. 
 author: abruer
-ms.date: 02/11/2022
+ms.date: 01/08/2024
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang:  
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
-# ms.custom:  
+# ms.custom: evergreen 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: abruer
