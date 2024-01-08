@@ -53,10 +53,12 @@ Use the **Source systems** page to set up each external system that you want to 
 
 As part of the [Source system](#source-systems) creation process, the following [automated background processes](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) are automatically created:
 
-- **Post shipment packing slips** – This process is used for the outbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment packing slips posting delay** value is set to 1 day.)
-- **Post shipment receipts** – This process is used for the inbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment receipts posting delay** value is set to 1 day.)
+- **Process source system product messages** - This process is used for processing the product master data messages. (By default, the repeat interval is 1 minute.)
 - **Process shipment order messages** – This process is used for processing inbound and outbound shipment order messages. (By default, the repeat interval is 1 minute.)
 - **Publish warehouse inventory update log updates** – This process is used to make inventory update log data available to external systems via the `WarehouseInventoryUpdateLogs` entity. (By default, the repeat interval is 10 minutes.)
+- **Post shipment packing slips** – This process is used for the outbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment packing slips posting delay** value is set to 1 day.)
+- **Post shipment receipts** – This process is used for the inbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment receipts posting delay** value is set to 1 day.)
+
 
 ## Set up automatic release of outbound shipment orders
 

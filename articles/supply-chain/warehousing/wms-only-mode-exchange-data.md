@@ -43,18 +43,19 @@ This following illustration shows how the message processor fits into an integra
 
 ## <a name="master-data"></a>Master and reference data
 
-For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can easily get imported into Microsoft Dynamics 365 Supply Chain Management via the messages related to product master data:
+For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can easily get imported into Microsoft Dynamics 365 Supply Chain Management via the messages related to the product master data:
 
-- `SourceSystemProductMessages`
-- `SourceSystemProductVariantMessages`
-- `SourceSystemProductBarcodeMessages`
+- `SourceSystemProductMessages` - Used to create the products and released products, incl. product masters for variants
+- `SourceSystemProductVariantMessages` - Used to create variants for products masters having ProductSubtype = *ProductMaster*
+- `SourceSystemProductSpecificUnitOfMeasureConversionMessages` - Used to create product specific unit of measure conversions
+- `SourceSystemProductBarcodeMessages` - Used to create the product barcode setup
 
 This messages will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems) via the 'Source system items' entity.
 
 Only one [source system record](wms-only-mode-setup.md#source-systems) can be recorded as the external system maintaining the product master data related to the unique reference for a **Release product/Item number**, this data can be viewed and manually maintained in the **Source system items** page.
 
 > [!TIP]
-> The *Source system item number* will be used for the communication between the systems which is useful when for example an external system uses an EAN barcode as the unique identification number linked to a *item/variant number* having a different value.
+> The *Source system item number* will be used for the communication between the systems which is useful when for example an external system uses an EAN barcode as the unique identification number linked to a *item/variant number* having a different value. The *Source system item number* data will automatically get created when using the above messages.
 >
 > When using the Warehouse Management mobile app the value in the *Source system item number* field can be used to lookup the internally used *Item/variant number* as well.
 <!-- Perlynne check   "External item number" -->
