@@ -58,7 +58,6 @@ Only one [source system record](wms-only-mode-setup.md#source-systems) can be re
 > The *Source system item number* will be used for the communication between the systems which is useful when for example an external system uses an EAN barcode as the unique identification number linked to a *item/variant number* having a different value. The *Source system item number* data will automatically get created when using the above messages.
 >
 > When using the Warehouse Management mobile app the value in the *Source system item number* field can be used to lookup the internally used *Item/variant number* as well.
-<!-- Perlynne check   "External item number" -->
 
 Additionally you can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create a **Release product/Item number** going to be used in warehouse management processes. Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to for example get the mandatory reference fields assigned:
 
