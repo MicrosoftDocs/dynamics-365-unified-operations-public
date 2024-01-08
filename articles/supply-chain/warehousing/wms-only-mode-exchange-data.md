@@ -50,7 +50,7 @@ For consistent communication, several types of master and reference data must be
 - `SourceSystemProductSpecificUnitOfMeasureConversionMessages` - Used to create product specific unit of measure conversions
 - `SourceSystemProductBarcodeMessages` - Used to create the product barcode setup
 
-This messages will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems) via the 'Source system items' entity.
+This messages will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems) via the *Source system items* entity. As for the shipment order message processing the Source system product message processing status change can get monitored by the external system via [business events](#business-events).
 
 Only one [source system record](wms-only-mode-setup.md#source-systems) can be recorded as the external system maintaining the product master data related to the unique reference for a **Release product/Item number**, this data can be viewed and manually maintained in the **Source system items** page.
 
@@ -99,7 +99,7 @@ Note that the *Inbound shipment order policies* as part of the *Source systems* 
 
 To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses and import *Outbound shipment orders* you must as well have [**country/region**](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) defined in Supply Chain Management. The records are used in outbound shipment orders to create addresses. Depending on your [address setup](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might have to create additional data before you can import order messages (for example, to support state/province and county combinations).
 
-## Progress data and business events
+## <a name="business-events"></a>Progress data and business events
 
 External systems can have many different business process requests for the warehouse management system. For example, each external system can continuously poll for the progress of a sales order. To honor the process, Supply Chain Management can be set up to deliver [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) as required. Business events keep external systems informed about the progress and actions that are occurring in Supply Chain Management. When this setup is in place, the external systems don't have to continue to poll for information that might not have changed since the last request. Instead, they can react only when they're informed.
 
@@ -107,6 +107,7 @@ Several out-of-box business events are supported for warehouse integration. The 
 
 | Business event ID | Description |
 |---|---|
+| `WHSSourceSystemProductMessageChangedStatusBusinessEvent` | Source system product message changed status |
 | `InventCountingJournalPostedBusinessEvent` | Counting journal posted |
 | `WHSSourceSystemInventoryOnhandReportBusinessEvent` | Source system on-hand inventory report created |
 | `WHSInventoryUpdateLogBusinessEvent` | Warehouse inventory update log updated |
