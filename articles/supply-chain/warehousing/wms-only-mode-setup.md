@@ -44,6 +44,7 @@ Use the **Source systems** page to set up each external system that you want to 
 1. On the header of the new or selected record, enter a name for the source system. The source system must include this name in each message that it sends to Supply Chain Management, and the name in the message must exactly match the value that you specify here.
 1. Configure other settings as required to control the shipment order import processes. Tooltip help is provided for each field. Hover your mouse pointer over a field's label to view the tooltip.
 1. In case another *Source system* maintains the [product master data](wms-only-mode-exchange-data.md#master-and-reference-data) you can specify this in the **Product master source system** field. On the Action Pane, select **Source system items** to view and manually maintain the product's master data mapping integration.
+1. *Source system items* section is used to define how the [product creation message processing](wms-only-mode-exchange-data.md#master-data) must create the internal item numbers.
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
