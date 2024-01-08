@@ -38,7 +38,7 @@ Enabling a table for data sharing is a two-step process that requires updating t
 
 ## How does it work?
 
-When a table is enabled for data sharing, kernel logic autocreates a view with name "\<tablename\>_SharingView". This view should be used for nonkernel based access to the shared data.
+When a table is enabled for data sharing, kernel logic autocreates a view with name "\<tablename\>_SharingView." This view should be used for nonkernel based access to the shared data.
 
 In the following example, the **CustGroup** table is enabled for data sharing and **USMF** is selected as the master company, and **CH1** and **CH2** are the child companies. The output look likes this when you read records from CustGroup (Physical) and
 CustGroup_SharingView. (*View* illustrates kernel logic, but is only used for nonkernel based scenarios)
@@ -141,7 +141,7 @@ Due to data model decisions, the table metadata, Save date company property, may
 </tr>
 <tr class="5">
 <td>Design patterns using overloaded field values.</td>
-<td><ul>In some tables, there exists the pattern of two paired fields to indicate relationships. The most common usage is posting profiles. There is an enumeration field and then a field representing the alternate key from a referenced table. For example, the ProjPosting table has the field ProjCode derived from the enumeration TableGroupAll and an associated field ProjRelationship, which stores the natural key from ProjTable, ProjGroup, or it is empty. 
+<td><ul>In some tables, there exists the pattern of two paired fields to indicate relationships. The most common usage is posting profiles. There's an enumeration field and then a field representing the alternate key from a referenced table. For example, the ProjPosting table has the field ProjCode derived from the enumeration TableGroupAll and an associated field ProjRelationship, which stores the natural key from ProjTable, ProjGroup, or it's empty. 
 Tables with this pattern may be shareable, but clear documentation needs to be provided as to all related tables and fields need to be included in the policy.</ul>
 </td>
 </tr>
@@ -165,7 +165,7 @@ The following examples show how to handle and analyze business logic that takes 
 
 ### Example 1 - Validate methods - check if transaction exist
 
-In this example, we by default check if transactions exist in current company before deleting the object. This isn't enough since object are also deleted in all the companies that is part of the cross company data sharing policy. Therefore we need to extend the code to do the validation for all companies in the policy before deleting the object.
+In this example, check by default to see if transactions exist in the current company before deleting the object. This isn't enough since objects are also deleted in all the companies that is part of the cross company data sharing policy. Therefore we need to extend the code to do the validation for all companies in the policy before deleting the object.
 
 **InventLocation** table has several examples of business logic that needs to be executed across all companies part of the policy.
 
@@ -229,7 +229,7 @@ public void renamePrimaryKey()
 
 ### Example 3 - Defaulting / initialization logic
 
-Defaulting for a record, could have business logic that ensures that certain setup is done. In below example we need to ensure that **InventParameter** record exists before we can proper initialize an **InventTable** record, therefore we need to ensure this is done for all companies part of the cross company data sharing policy.
+The default for a record could have business logic that ensures that certain setup is done. In below example we need to ensure that **InventParameter** record exists before we can proper initialize an **InventTable** record, therefore we need to ensure this is done for all companies part of the cross company data sharing policy.
 
 ```x++
 public void initValue()
@@ -248,7 +248,7 @@ public void initValue()
 
 Code analysis of defaulting logic is important, when defaulting a field value from a company specific table. for example the Parameter table, then the value might be different in the companies that are part of the cross company data sharing policy.
 
-The following is an example of a field defaulting from parameter table, and here the parameter field value might be different from company to company, leading to different value depending in which company the record is initialized. Either you need to ensure the parameter value is the same in all companies or use for example, MasterCompany as the defaulting company with SRS policy, for DRS it could be the first company in the policy list.
+The following example of a field defaulting from the parameter table where the parameter field value might be different from company to company which leads to different value depending on which company the record is initialized. Either you need to ensure the parameter value is the same in all companies or use, for example, MasterCompany as the defaulting company with SRS policy, for DRS it could be the first company in the policy list.
 
 ```x++
 public void initValue()
