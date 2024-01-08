@@ -2,11 +2,13 @@
 title: Cross-company data sharing for developers
 description: This article describes cross-company data sharing for developers. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
-ms.date: 02/16/2022
-ms.topic: article
+ms.date: 01/08/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
@@ -23,49 +25,33 @@ This article describes cross-company data sharing for developers. Cross-company 
 
 ## Enable a table for cross-company data sharing
 
-Enabling a table for data sharing is a two-step process that requires updating the metadata
-property for the table. To enable a custom table for cross-company data sharing, follow these steps: 
+Enabling a table for data sharing is a two-step process that requires updating the metadata property for the table. To enable a custom table for cross-company data sharing, follow these steps. 
 
-1.  Open the table properties and set the **Data Sharing Type** property to
-    **Single** or **Duplicate**. **Single** stands for single record sharing (SRS) and
-    **Duplicate** stands for duplicate record sharing (DRS).
-
-2.  For each field on the table, you need to review 
-    the **Single Data Sharing Type** metadata property. **Always** is the default value and implies the field is shared always. **Never** implies the field is never
-    shared. Don’t choose **Optional** as there is currently no related logic.
+1.  Open the table properties and set the **Data Sharing Type** property to **Single** or **Duplicate**. **Single** stands for single record sharing (SRS) and **Duplicate** stands for duplicate record sharing (DRS).
+1.  For each field on the table, you need to review the **Single Data Sharing Type** metadata property. **Always** is the default value and implies the field is shared always. **Never** implies the field is never shared. Don’t choose **Optional** because there currently isn't any related logic.
 
 > [!NOTE]
-> -   When a table is set as **Duplicate**, it can participate in both DRS as well
-    as SRS policies.
+> - When a table is set as **Duplicate**, it can participate in both DRS as well as SRS policies.
 > - When a table is set to **Single**, it can participate in SRS policy only.
-> - When a table property is set to **Duplicate**, it cannot be changed to
-    **Single**. This would be seen as a breaking change as DRS policies using
-    the table would no longer be valid.
-> - When using SRS, fields set to **Never** will get the default value for the
-    field’s type in all child companies. You cannot update these fields in a child company to contain another value. For example,
-    integer/real will contain a value of 0, strings will be empty, enumerations
-    will be non-deterministic based on whether they are extensible.
+> - When a table property is set to **Duplicate**, it cannot be changed to **Single**. This would be seen as a breaking change as DRS policies using the table would no longer be valid.
+> - When using SRS, fields set to **Never** get the default value for the field’s type in all child companies. You cannot update these fields in a child company to contain another value. For example, integer/real contains a value of 0, strings will be empty, enumerations will be nondeterministic based on whether they're extensible.
 
 ## How does it work?
 
-When a table is enabled for data sharing, kernel logic auto-creates a view with
-name "\<tablename\>_SharingView". This view should be used for non-kernel based access to the shared
-data.
+When a table is enabled for data sharing, kernel logic autocreates a view with name "\<tablename\>_SharingView". This view should be used for nonkernel based access to the shared data.
 
-In the following example, the **CustGroup** table is enabled for data sharing and **USMF** is
-selected as the master company, and **CH1** and **CH2** are the child companies.
-The output will look like this when you read records from CustGroup (Physical) and
-CustGroup_SharingView. (*View* illustrates kernel logic, but is only used for
-non-kernel based scenarios)
+In the following example, the **CustGroup** table is enabled for data sharing and **USMF** is selected as the master company, and **CH1** and **CH2** are the child companies. The output look likes this when you read records from CustGroup (Physical) and
+CustGroup_SharingView. (*View* illustrates kernel logic, but is only used for nonkernel based scenarios)
 
 ![Single record sharing example.](media/SRS-image3.png)
 
 ## Guidelines to enable data sharing on tables
-The ability to define or modify DRS or SRS settings applies to base tables provided by the current model. For example, it is not possible to modify existing data sharing table or field properties using an extension.
 
-If a company-specific table has **Data Sharing Type = Single**, it means it has already been evaluated for SRS. You can’t revert it to **Duplicate** or **None**.
+The ability to define or modify DRS or SRS settings applies to base tables provided by the current model. For example, it isn't possible to modify existing data sharing table or field properties using an extension.
 
-If a company-specific table has **Data Sharing Type = Duplicate**, it means it has already been evaluated for DRS. If you want to enable it for SRS, you need to evaluate its functional eligibility before changing the property to **Single**.
+If a company-specific table has **Data Sharing Type = Single**, it means it has been evaluated for SRS. You can’t revert it to **Duplicate** or **None**.
+
+If a company-specific table has **Data Sharing Type = Duplicate**, it means it has been evaluated for DRS. If you want to enable it for SRS, you need to evaluate its functional eligibility before changing the property to **Single**.
 
 If a custom company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS whenever possible. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
 
@@ -82,11 +68,11 @@ If a custom company-specific table has **Data Sharing Type = None**, but you wan
 > [!NOTE]
 > Cross-company shared policy simulator detects the eligibility of a table and its fields along with table references associated with each field.
 
-After you have modified data sharing metadata properties, you need to do a full DB sync, which will create or update the _SharingView(s).
+After you modify data sharing metadata properties, you need to do a full DB sync, which creates or update the _SharingView(s).
 
-Data sharing is applicable for tables with the **Save data per company** property set to **Yes**. Tables with **Save data per company** set to **No**, are global and no additional sharing configuration is needed.
+Data sharing is applicable for tables with the **Save data per company** property set to **Yes**. Tables with **Save data per company** set to **No**, are global and no other sharing configuration is needed.
 
-From a development perspective, it is not enough to look at the primary and alternate key of a table to determine the sharing type. Additional work may be required to enable sharing without causing data issues.
+From a development perspective, it isn't enough to look at the primary and alternate key of a table to determine the sharing type. More work may be required to enable sharing without causing data issues.
 
 
 <table>
@@ -106,7 +92,7 @@ From a development perspective, it is not enough to look at the primary and alte
 <li>DeleteActions (Restricted/Casacade)</li>
 </ul>
 </td>
-<td><ul>Check the tables and fields and if they are required to be shared. Also, determine if there is impact of DRS versus SRS sharing for the table and field.</ul>
+<td><ul>Check the tables and fields and if they're required to be shared. Also, determine if there's an impact of DRS versus SRS sharing for the table and field.</ul>
 </td>
 </tr>
 <tr class="2">
@@ -119,7 +105,7 @@ From a development perspective, it is not enough to look at the primary and alte
 <li>validateFieldValue</li>
 </ul>
 </td>
-<td><ul>Logic might refer to table that is not shared such as transactions, therefore refactoring is required to handle the logic cross company.</ul>
+<td><ul>Logic might refer to table that isn't shared such as transactions, therefore refactoring is required to handle the logic cross company.</ul>
 </td>
 </tr>
 <tr class="3">
@@ -129,9 +115,9 @@ From a development perspective, it is not enough to look at the primary and alte
 <li>defaultField</li>
 </ul>
 </td>
-<td><ul>Check what logic is done in the defaulting, many places values are initialized from a non-shared table, resulting in records being initialized differently, depending on the company record that is created. </ul>
+<td><ul>Check what logic is done in the defaulting, many places values are initialized from a nonshared table, resulting in records being initialized differently, depending on the company record that is created. </ul>
 
-<ul>Are there data dependencies that are not modeled, such as fields shared between tables and used for validation. ProjCategory and ProjCategoryGroup have a CategoryType field. There is a code level validation that the value is the same for the project category and the group assigned. If the fields are not included in the policy update, the project category fails due to the validation check.</ul>
+<ul>Are there data dependencies that aren't modeled, such as fields shared between tables and used for validation. ProjCategory and ProjCategoryGroup have a CategoryType field. There's code level validation that the value is the same for the project category and the group assigned. If the fields aren't included in the policy update, the project category fails due to the validation check.</ul>
 </td>
 </tr>
 <tr class="4">
@@ -155,31 +141,31 @@ Due to data model decisions, the table metadata, Save date company property, may
 </tr>
 <tr class="5">
 <td>Design patterns using overloaded field values.</td>
-<td><ul>In some tables there exists the pattern of two paired fields to indicate relationships. The most common usage is posting profiles. There will be an enumeration field and then a field representing the alternate key from a referenced table. For example, the ProjPosting table has the field ProjCode derived from the enumeration TableGroupAll and an associated field ProjRelationship, which will store the natural key from ProjTable, ProjGroup, or it will be empty. 
-Tables with this pattern may be shareable, but clear documentation will need to be provided as to all related tables and fields need to be included in the policy.</ul>
+<td><ul>In some tables, there exists the pattern of two paired fields to indicate relationships. The most common usage is posting profiles. There is an enumeration field and then a field representing the alternate key from a referenced table. For example, the ProjPosting table has the field ProjCode derived from the enumeration TableGroupAll and an associated field ProjRelationship, which stores the natural key from ProjTable, ProjGroup, or it is empty. 
+Tables with this pattern may be shareable, but clear documentation needs to be provided as to all related tables and fields need to be included in the policy.</ul>
 </td>
 </tr>
     <tr class="6">
 <td>LedgerDimensionDefaultAccount</td>
-<td><ul>Tables using this are typically storing the reference to a main account value. These are not shareable.</ul>
+<td><ul>Tables that use this typically store the reference to a main account value, and aren't shareable.</ul>
 </td>
 </tr>
     <tr class="7">
 <td>Number sequences</td>
-<td><ul>Number sequences are typically set up per company. The defaulting logic fields using them will probably not work without code changes.</ul>
+<td><ul>Number sequences are typically set up per company. The defaulting logic fields using them probably won't work without code changes.</ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-The classes **SysDataSharingCommonAPI**, **SysDataSharingCrossCompanyValidator**, **SysDataSharingCrossCompanyValidatorQueryBuilder**, and methods on the table **SysDataSharingPolicy**, can be used to determine if a table is being used in a data sharing policy. These typically are used in the CRUD and logic default methods to handle table dependencies.
+The classes **SysDataSharingCommonAPI**, **SysDataSharingCrossCompanyValidator**, **SysDataSharingCrossCompanyValidatorQueryBuilder**, and methods on the table **SysDataSharingPolicy**, can be used to determine if a table is being used in a data sharing policy. These classes typically are used in the CRUD and logic default methods to handle table dependencies.
 
 ## Examples
-Below is a set of examples on how to handle and analyse business logic that are take part of cross company data sharing.
+The following examples show how to handle and analyze business logic that takes part of cross company data sharing.
 
 ### Example 1 - Validate methods - check if transaction exist
 
-In this example we by default check if transactions exist in current company before deleting the object. This is not enough since object will also be deleted in all the companies that is part of the cross company data sharing policy. Therefore we need to extend the code to do the validation for all companies in the policy before deleting the object.
+In this example, we by default check if transactions exist in current company before deleting the object. This isn't enough since object are also deleted in all the companies that is part of the cross company data sharing policy. Therefore we need to extend the code to do the validation for all companies in the policy before deleting the object.
 
 **InventLocation** table has several examples of business logic that needs to be executed across all companies part of the policy.
 
@@ -214,7 +200,7 @@ public boolean validateDelete()
 
 ### Example 2 - Rename primary key
 
-In case we want to rename the primary key of a table and the renamePrimaryKey() contains business logic we need to ensure the logic is executed for all companies part of a cross company data sharing policy. Below code show if renaming a site is allowed if the old site has a warehouse associated with it and the new site value has previously been used with any warehouse.
+In case we want to rename the primary key of a table and the renamePrimaryKey() contains business logic we need to ensure the logic is executed for all companies part of a cross company data sharing policy. The following code shows if renaming a site is allowed if the old site has a warehouse associated with it and the new site value has previously been used with any warehouse.
 
 ```x++
 public void renamePrimaryKey()
@@ -260,9 +246,9 @@ public void initValue()
 }
 ```
 
-Code analysis of defaulting logic is important, when defaulting a field value from a company specific table e.g. Parameter table, then the value might be different in the companies that are part of the cross company data sharing policy.
+Code analysis of defaulting logic is important, when defaulting a field value from a company specific table. for example the Parameter table, then the value might be different in the companies that are part of the cross company data sharing policy.
 
-Below is an example of a field defaulting from parameter table, and here the parameter field value might be different from company to company, leading to different value depending in which company the record is initialized. Either you need to ensure the parameter value is the same in all companies or use e.g. MasterCompany as the defaulting company in case of SRS policy, for DRS it could be the first company in the policy list.
+The following is an example of a field defaulting from parameter table, and here the parameter field value might be different from company to company, leading to different value depending in which company the record is initialized. Either you need to ensure the parameter value is the same in all companies or use for example, MasterCompany as the defaulting company with SRS policy, for DRS it could be the first company in the policy list.
 
 ```x++
 public void initValue()
