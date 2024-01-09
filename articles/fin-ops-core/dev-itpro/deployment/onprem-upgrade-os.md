@@ -20,6 +20,10 @@ This article explains how to upgrade Windows Server in your Microsoft Dynamics 3
 
 ## Prerequisites for upgrading Windows Server
 
+### Upgrade from Windows Server 2019 to Windows Server 2022
+
+- The Dynamics 365 Finance + Operations (on-premises) environment must be on application version 10.0.38 or later.
+
 ### Upgrade from Windows Server 2016 to Windows Server 2019
 
 - The Dynamics 365 Finance + Operations (on-premises) environment must be on application version 10.0.17 or later.
