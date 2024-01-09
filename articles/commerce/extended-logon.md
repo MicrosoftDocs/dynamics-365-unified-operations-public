@@ -62,13 +62,13 @@ To delete the extended sign-in that is assigned to a worker, search for the work
 
 ## Use extended sign-in
 
-After extended sign-in is configured, and a barcode or magnetic stripe is assigned to a worker, the worker just has to swipe or scan their card while the POS sign-in page is shown. If a password is also required before sign-in can continue, the worker is prompted to enter their password.
+After extended sign-in is configured and a barcode or magnetic stripe is assigned to a worker, the worker just has to swipe or scan their card while the POS sign-in page is displayed. If a password is also required before sign-in can continue, the worker is prompted to enter their password.
 
 ## Extend extended sign-in
 
 The first consideration of extending the extended sign-in is to enhance security, because a physical staff card or barcode can be lost and easily duplicated. The second consideration is to provide customers with the flexibility to, for example, use a custom length of credential or credential ID per a business requirement.
 
-In the [extended sign-in sample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/ExtendedLogon), a more secure end-to-end extension solution is provided with two factor authentication by PIN number, including both POS and Commerce runtime extensions. The sample covers the entire lifecycle of extended sign-in, including enrolling user credentials, staff card or barcode sign-in, unlocking terminals, and elevating user scenarios. The key extension points are described below, and must work together to make the whole scenario complete.
+In the [extended sign-in sample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/ExtendedLogon), a more secure end-to-end extension solution is provided with two factor authentication by PIN number, including both POS and Commerce runtime extensions. The sample covers the entire lifecycle of extended sign-in, including the enrollment user credentials, staff card or barcode sign-in, the unlocking terminals, and the elevation of user scenarios. The key extension points described in the following sections must work together to make the whole scenario complete.
 
 ### POS extensions
 
