@@ -2,7 +2,7 @@
 title: Set up extended sign-in functionality for Store Commerce
 description: This article describes how to set up and use the extended sign-on functionality for the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 author: boycezhu
-ms.date: 01/05/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,16 +26,16 @@ This article describes how to set up and use the extended sign-in functionality 
 
 The Store Commerce app and Store Commerce for web provide an extended sign-in capability that lets retail store workers sign in to the point of sale (POS) application by scanning a barcode or swiping a card by using a magnetic stripe reader (MSR).
 
-Before implementing the extended sign-in capability, customer **must** have their own extensions as out-of-box implementation isn't intentionally shipped for direct usage. See below [Extend extended sign-in](#extend-extended-sign-in) section for details.
+Before implementing the extended sign-in capability, you must create your own custom extensions because the out-of-box implementation isn't intended for use in production. For more information, see [Extend extended sign-in](#extend-extended-sign-in) section for details.
 
 ## User credential and credential ID
 
 User credential and credential ID are two important concepts related to the extended sign-in capability. 
 
-- A *user credential* is a secret string recorded in the physical staff card or barcode, which is scanned out during sign-in. For security reason, Microsoft recommends that the user credential should be at least 256 bits to meet the industry standard, which is 44 characters encoded as a Base 64 string.
-- A *credential ID* is an internal concept, and it's generated according to user credential and grant type. The credential ID must be unique to identify the staff. The maximum allowed length of credential ID is 256 due to data store restriction.
+- A *user credential* is a secret string recorded in the physical staff card or barcode, which is scanned during sign-in. For security reasons, Microsoft recommends that the user credential should be at least 256 bits to meet the industry standard, which is 44 characters encoded as a Base64 string.
+- A *credential ID* is an internal concept that is generated according to user credential and grant type. The credential ID must be unique to identify staff members. The maximum allowed length of a credential ID is 256 due to a data store restriction.
 
-The following example demonstrates the uniqueness requirement of credential IDs. You have two staff cards, one of which has the credentials 12345ABCDE, and one of which has the credentials 12345FGHIJ. The out-of-the-box extended sign-in implementation uses the first five characters as the credential ID. As a result, the two cards have the same credential ID (12345), and therefore can't both be used to uniquely identify staff workers.
+The following example demonstrates the uniqueness requirement of credential IDs. You have two staff cards, one of which has the credentials 12345ABCDE, and one of which has the credentials 12345FGHIJ. The out-of-box extended sign-in implementation uses the first five characters as the credential ID. As a result, the two cards have the same credential ID (12345), and therefore can't both be used to uniquely identify staff workers.
 
 ## Set up extended sign-in
 
@@ -66,18 +66,21 @@ After extended sign-in is configured, and a barcode or magnetic stripe is assign
 
 ## Extend extended sign-in
 
-The first consideration of extending the extended sign-in is to enhance security as the physical staff card or barcode could be lost and easily duplicated. The second consideration is to provide flexibility to the customer, for example, use custom length of credential or credential ID per business requirement.\
-In the [Extended sign-in sample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/ExtendedLogon), a more secure end-to-end extension solution with two factor authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended sign-in in its whole lifecycle, including enrolling user credential, staff card or barcode sign-in, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
+The first consideration of extending the extended sign-in is to enhance security, because a physical staff card or barcode can be lost and easily duplicated. The second consideration is to provide customers with the flexibility to, for example, use a custom length of credential or credential ID per a business requirement.
+
+In the [extended sign-in sample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.48/src/ExtendedLogon), a more secure end-to-end extension solution is provided with two factor authentication by PIN number, including both POS and Commerce runtime extensions. The sample covers the entire lifecycle of extended sign-in, including enrolling user credentials, staff card or barcode sign-in, unlocking terminals, and elevating user scenarios. The key extension points are described below, and must work together to make the whole scenario complete.
 
 ### POS extensions
 
 For POS extensions, the key actions are to collect the PIN number from an input dialog immediately after the user swipes the card or scans the barcode, and then pass the PIN number on to the corresponding requests. This operation can be done using an input dialog (**PinInputDialog**) and four pretriggers (**PreEnrollUserCredentialsTrigger**, **PreLogOnTrigger**, **PreUnlockTerminalTrigger**, and **PreElevateUserTrigger**).
 
 ### Commerce runtime extensions
-There are several important service requests that require customizations.
-- **OverrideUserCredentialServiceRequest** is used in both user the credential enroll and sign-in token validation scenarios, which is used to generate a new credential based on old one and extra parameters dictionary, where PIN number lies in. Note that PIN number and the original credential won't be persisted in the data store. Instead, the hashed value of the new credential will be persisted.
 
-- **GetUserAuthenticationCredentialIdServiceRequest** is used to calculate the credential ID based on user credential and extra parameters dictionary. Furthermore, minimum credential length check is also performed here. The out-of-box implementation of the extended sign-in capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. This behavior must be changed in the service handler, according to the security consideration and business requirement.
+There are two important service requests that require customizations.
+
+- **OverrideUserCredentialServiceRequest** is used in both user the credential enrollment and sign-in token validation scenarios, which are used to generate new credentials based on old credentials, and an extra parameters dictionary that contains the PIN number. The PIN number and the original credential aren't persisted in the data store. Instead, the hashed value of the new credential is persisted.
+
+- **GetUserAuthenticationCredentialIdServiceRequest** is used to calculate the credential ID based on user credentials and the extra parameters dictionary, and also performs a minimum credential length check. The out-of-box implementation of the extended sign-in capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. This behavior must be changed in the service handler, according to the security considerations and business requirements.
 
 You can also extend the sign-in service to support additional extended sign-in devices, such as palm scanners. For more information, see the [POS extensibility documentation](dev-itpro/pos-extension/pos-extension-overview.md).
 
