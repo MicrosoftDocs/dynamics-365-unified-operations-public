@@ -159,8 +159,14 @@ If the collection contains one or more calls to **error()**, the message bar is 
 
 The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Action center, which isn't associated with any page.
 
+## How do I manage processes that are generating lots volumnes of notifications? 
+Some processes (like batch processes or user-created alerts) can result in a storm of notifications that may negatively impact the performance of the system. The **Enable system notification management** feature allows administrators to monitor and take action on high-volume notification rules, which are defined as rules that generate more notifications per hour than the provided threshold. Admins can manage high-volume notifications via the following:   
 
+-  Admins can define the criteria for high-volume notifications rules on the **System notifications** tab of the **System parameters** page. The default criteria will flag notification processes that generate more than 100 notifications per hour as high-volume.
+-  Admins can monitor the number of high-volume notifications using the **High-volume notifications** tile on the **System administration** workspace.
+-  Admins can manage these notifications from the **High-volume notification rules** page directly. From here, admins can see which users are receiving these notifications and can decide to block processes that are generating large volumes of notifications so that no more notifications are created from these processes. Because these processes may have already generated a large number of notifications, admins can also purge the system of the existing notification using the **Clear notifications** action.
 
+Starting in version 10.0.39, notifications processes that meet the threshold for being high-volume will be automatically blocked via the **Auto-blocking of high-volume notification rules** feature. When this feature is enabled, users will be notified if a notification process associated with them becomes blocked.  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
