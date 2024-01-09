@@ -15,6 +15,7 @@ ms.custom: bap-template
 # Manage work orders using the Asset Management mobile app
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 Maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders. The app supports maintenance workers through the following main capabilities:
 
