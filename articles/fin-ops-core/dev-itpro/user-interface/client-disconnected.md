@@ -36,6 +36,11 @@ In addition to platform features that may not be accessible when the client can'
 
 ## Client internet connectivity options
 
-Client internet connectivity options allow an administrator to manually turn off the external connections that the client makes even when internet connectivity is available. This can be used for troubleshooting issues or to see what the client will look like when internet connectivity is not available. The client internet connectivity option can be found on the **System administration** > **Setup** > **Client performance options** page, specifically the **Internet connectivity enabled** field. This allows an administrator to turn off all external connections that the web client would otherwise make.
+Client internet connectivity options allow an administrator to manually turn off the external connections that the client makes even when internet connectivity is available. This can be used for troubleshooting issues or to see what the client will look like when internet connectivity is not available. 
+
+The client internet connectivity options can be found on the **System administration** > **Setup** > **Client performance options**  page.
+
+-  **Internet connectivity enabled** - Allows an administrator to turn off all external connections that the web client would otherwise make.
+-  **(Obsolete) Skype presence enabled** - Allows an administrator to turn off external connections to Skype that the web client would otherwise make.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
