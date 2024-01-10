@@ -14,7 +14,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-In Dynamics 365 finance version 10.0.38, the **Truncate staging table** feature allows for cleanup of individual Data Management staging tables. This truncate action permanently removes all records from the staging 
+In Dynamics 365 finance version 10.0.38, the **Truncate staging table** feature cleans up individual Data Management staging tables. This truncate action will permanently remove all records from the staging 
 table for the selected entity and should be used with caution. Currently, executing data import/export jobs involving the selected staging table (imports or exports through staging) will be impacted if the staging 
 table is truncated.  
 
