@@ -1206,6 +1206,8 @@
             href: save-preview-publish-page.md
           - name: Customize product detail pages
             href: enrich-product-page.md
+          - name: Use Copilot in sitebuilder to enrich product detail pages
+            href: copilot-site-builder.md
           - name: Enrich a category landing page
             href: enrich-category-page.md
           - name: Verify page content accessibility
@@ -1338,6 +1340,8 @@
             href: pickup-info-module.md
           - name: Check-in for pickup module
             href: check-in-pickup-module.md
+          - name: Order history with search and filters module
+            href: order-history-module.md
           - name: Order details module
             href: order-confirmation-module.md
           - name: Gift card module
