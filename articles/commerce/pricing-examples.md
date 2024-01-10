@@ -2,7 +2,7 @@
 title: Pricing examples
 description: This article provides examples of typical usages of pricing and discounts in Microsoft Dynamics 365 Commerce.
 author: zhizhen
-ms.date: 01/04/2024
+ms.date: 01/10/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -33,7 +33,7 @@ The following example screenshot shows:
 - When there are two quantities of items under category "Apparel and Footwear" and one quantity of item "0103" in the cart, the discount is applicable.
 - When the discount is applied, the item "0103" in the cart gets 100% off.
 
-![Purchase product A, and receive a discount on product B when both items are in your cart](./media/mix-and-match-sample-1.png)
+![Purchase product A, and receive a discount on product B when both items are in your cart](./media/mix-and-match-sample.png)
 
 ## Receive a discount on a specific item when cart total reaches a certain amount
 
