@@ -2,7 +2,7 @@
 title: Use Copilot in site builder to enrich product detail pages
 description: This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 01/05/2024
+ms.date: 01/10/2024
 ms.topic: article
 audience: Application user
 ms.reviewer: v-chrgriffin
@@ -24,6 +24,10 @@ This article describes how to use Microsoft Copilot in site builder to enrich pr
 If you run an e-commerce website, you know the importance of engaging and persuasive product enrichment and marketing content that can attract and convert your customers. However, it can be time-consuming and challenging to create such content, especially if you have a large product catalog and a diverse audience. To help with content creation, Microsoft introduced Copilot in site builder, a new AI-powered tool that helps you easily and efficiently generate high-quality content.
 
 Copilot in site builder works seamlessly with Dynamics 365 Commerce site builder to help you quickly create product enrichment and marketing content that's tailored to your target audience and brand tone. Site builder offers a range of templates, features, and tools to help you customize your website to meet your needs and preferences. By using Copilot in site builder, you can quickly and efficiently generate persuasive, compelling, and engaging product enrichment and marketing content for your e-commerce websites.
+
+The following video provides an overview of Copilot in site builder.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1gnCi]
 
 To use Copilot in site builder to initiate the creative process, first select a tone that's aligned to your brand, such as "adventurous," "luxurious," or "bold." Next, select an audience from a list of choices that you manage, such as "sports enthusiast" or "college graduate." Copilot then uses these prompts to craft compelling and engaging content based on existing product information such as the name, description, attributes, and price.
 
