@@ -67,4 +67,6 @@ You can configure the following module properties at either the template level o
 - **Render sales order count** – When this property is enabled, the module shows the total order count.
 - **Enable grid view** – When this property is enabled, users can switch between the list and the grid views when they view their order history.
 
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
