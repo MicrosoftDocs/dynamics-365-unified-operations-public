@@ -81,7 +81,7 @@ You can automatically net customer and vendor balances by defining a netting rul
     - By invoice balance - From smallest to largest
 
 4. Select the netting agreement scope. If you select **All**, all the active netting agreements are included in this rule. If you select **Selected**, define a netting agreement list.
-5. In the **Include credit note and debit note** field, in the automatic netting, select **Yes** or **No**.
+5. In the automatic netting, in the **Include credit note and debit note** field, select **Yes** or **No**.
 6. On the **Netting criteria** FastTab, define the criteria if users want to automatically net only specific vendor accounts, customer accounts, or invoice currency.
 7. Activate the netting rule.
 
