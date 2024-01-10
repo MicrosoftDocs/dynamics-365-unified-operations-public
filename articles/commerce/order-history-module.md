@@ -2,7 +2,7 @@
 title: Order history with search and filters module
 description: This article covers the order history with search and filters module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: ashish-msft
-ms.date: 01/05/2024
+ms.date: 01/10/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chrgriffin
