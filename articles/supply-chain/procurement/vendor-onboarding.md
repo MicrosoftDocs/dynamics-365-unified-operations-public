@@ -27,6 +27,7 @@ ms.dyn365.ops.version: 7.3
 # Onboard vendors
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 ---
 
