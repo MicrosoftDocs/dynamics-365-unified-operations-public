@@ -124,6 +124,7 @@ After the private preview is removed, you'll see the **Monitoring and telemetry*
 
 ## Telemetry data usage
 
+
 For more information about the daily cap setting for Application insights, see [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
 
 [!include [banner](../includes/banner.md)]
