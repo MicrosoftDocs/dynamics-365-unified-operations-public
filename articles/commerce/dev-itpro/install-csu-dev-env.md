@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 12/21/2023
+ms.date: 01/11/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -15,7 +15,7 @@ ms.search.validFrom: 2022-03-01
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce. 
+This article provides step-by-step instructions on how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce. 
 
 ## Create Azure Active Directory apps
 
@@ -165,8 +165,7 @@ To download the sealed self-hosted installer to the development machine and copy
 
 ## Install the sealed CSU
 
-> [!NOTE]
-> Since this is a development machine, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
+The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Regulatory Technical Standards (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md)
 
 To install the sealed CSU on the development machine, follow these steps.
 
@@ -174,7 +173,12 @@ To install the sealed CSU on the development machine, follow these steps.
 1. Change directory to C:\temp (for example, `CD C:\temp`).
 1. Execute the following command.
 
-`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
+`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate`
+
+> [!NOTE]
+> Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
+
+
 
 ## Database restores from UAT
 
@@ -205,7 +209,7 @@ Create a channel profile for external access, follow these steps.
 1. Select **Save**.
 1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.
 1. Edit the store record you normally work with. 
-1. Update the **Channel Profile** to the value you just created.
+1. Update the **Channel Profile** to the value you created.
 1. Select **Save**.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule** and execute the **1070 (Channel configuration)** sync job.
 
