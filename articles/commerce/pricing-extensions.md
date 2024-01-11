@@ -39,8 +39,8 @@ You can add pretriggers for the service requests that you want your extension pa
 
 | Service request | Description |
 | --- | --- |
-| CalculatePricesServiceRequest | This service request calculates the prices for a sales transaction, including the base price, trade agreement, and price adjustments. |
-| CalculateDiscountsServiceRequest | This service request calculates the discounts for a sales transaction, including discount trade agreements, simple discounts, mix and match discounts, quantity discounts, and threshold discounts. |
+| CalculatePricesServiceRequest | This service request calculates the prices for a sales transaction. These prices include the base price, trade agreement price, and price adjustments. |
+| CalculateDiscountsServiceRequest | This service request calculates the discounts for a sales transaction. These discounts include discount trade agreements, simple discounts, mix and match discounts, quantity discounts, and threshold discounts. |
 | GetIndependentPriceDiscountServiceRequest| This service request calculates only prices and single line discounts. It's used for product listing and product details pages where product prices are independently calculated. |
 | CalculateShippingDiscountsServiceRequest | This service request calculates the shipping discounts for a sales transaction. |
 
