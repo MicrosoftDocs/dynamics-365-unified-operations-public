@@ -174,7 +174,10 @@ To install the sealed CSU on the development machine, follow these steps.
 1. Change directory to C:\temp (for example, `CD C:\temp`).
 1. Execute the following command.
 
-`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck –trustSqlservercertificate`
+`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate`
+
+> [!Note]
+> This process uses a downloaded configuration file from HQ as it contains all of the information need for the RTS authentication.  If you don't use a configuration file then additional parameters such as --AadTokenIssuerPrefix, --StoreSystemAosURL, --StoreSystemChannelDatabaseId, --TenantId need to be specified.  For a full list of installer commands review the [Mass Deployment of sealed Commerce Self-service components](enhanced-mass-deployment.md)
 
 ## Database restores from UAT
 
