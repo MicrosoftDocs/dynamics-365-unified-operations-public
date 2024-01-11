@@ -209,7 +209,7 @@ Create a channel profile for external access, follow these steps.
 1. Select **Save**.
 1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.
 1. Edit the store record you normally work with. 
-1. Update the **Channel Profile** to the value you just created.
+1. Update the **Channel Profile** to the value you created.
 1. Select **Save**.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedule** and execute the **1070 (Channel configuration)** sync job.
 
