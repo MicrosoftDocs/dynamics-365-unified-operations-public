@@ -165,7 +165,7 @@ To download the sealed self-hosted installer to the development machine and copy
 
 ## Install the sealed CSU
 
-The process of installing a sealed CSU usually employs a downloaded configuration file from headquarters that contains all of the information needed for Regulatory Technical Standards (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md)
+The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Regulatory Technical Standards (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md)
 
 To install the sealed CSU on the development machine, follow these steps.
 
