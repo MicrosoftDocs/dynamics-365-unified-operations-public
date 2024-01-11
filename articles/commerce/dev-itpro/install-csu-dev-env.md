@@ -15,7 +15,7 @@ ms.search.validFrom: 2022-03-01
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce. 
+This article provides step by steps instructions to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce. 
 
 ## Create Azure Active Directory apps
 
@@ -164,9 +164,7 @@ To download the sealed self-hosted installer to the development machine and copy
 1. Copy the sealed installer from the **Downloads** folder to C:\temp.
 
 ## Install the sealed CSU
-
-> [!NOTE]
-> Since this is a development machine, use the same SSL thumbprint to run all services. For production and user acceptance testing (UAT) environments, these values should be different.   
+This process uses a downloaded configuration file from HQ as it contains all of the information need for the RTS authentication.  If you don't use a configuration file then additional parameters such as --AadTokenIssuerPrefix, --StoreSystemAosURL, --StoreSystemChannelDatabaseId, --TenantId need to be specified.  For a full list of installer commands review the [Mass Deployment of sealed Commerce Self-service components](enhanced-mass-deployment.md)
 
 To install the sealed CSU on the development machine, follow these steps.
 
@@ -176,8 +174,10 @@ To install the sealed CSU on the development machine, follow these steps.
 
 `CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate`
 
-> [!Note]
-> This process uses a downloaded configuration file from HQ as it contains all of the information need for the RTS authentication.  If you don't use a configuration file then additional parameters such as --AadTokenIssuerPrefix, --StoreSystemAosURL, --StoreSystemChannelDatabaseId, --TenantId need to be specified.  For a full list of installer commands review the [Mass Deployment of sealed Commerce Self-service components](enhanced-mass-deployment.md)
+> [!NOTE]
+> Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
+
+
 
 ## Database restores from UAT
 
