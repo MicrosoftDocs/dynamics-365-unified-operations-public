@@ -16,6 +16,7 @@ ms.dyn365.ops.version: 10.0.22
 # Mobile device user accounts
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 Every time that a worker starts to use the warehouse app, they must sign in by using a user name and password. Any number of warehouse app users can be associated with each worker in the system, and warehouses are typically associated with each of those warehouse app users. Various options are also configured for each worker, to establish default settings and other settings that are relevant to using the warehouse app.
 

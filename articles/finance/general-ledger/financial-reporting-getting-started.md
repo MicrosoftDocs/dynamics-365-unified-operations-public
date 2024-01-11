@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 11/04/2023
+ms.date: 11/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get started with Financial reporting 
+# Get started with financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
-This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
+This article describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
 > [!NOTE]
 > Financial reporting is now available through an add-in. Therefore, the default availability of Financial reporting through Microsoft Dynamics 365 Finance has changed. If you're an existing customer, Microsoft provides the new Financial reporting add-in in your Microsoft Dynamics Lifecycle Services environment. If you're currently using the **Financial reporting** module, there's no impact on your environments or your organization's ability to run financial reports.
@@ -40,7 +40,7 @@ This article describes where to access Financial reporting and how to use the fi
 
 The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 	
-1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. 
+1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. For more information, see [Configure Microsoft Power Platform](../business-performance-analytics/configure-bpa.md#configure-microsoft-power-platform) 
 2. Select **Install a new add-in**, and search for **Financial reporting**.
 3. Agree to the terms, and then select **Install**.
 
@@ -132,8 +132,8 @@ Financial reporting provides 22 default financial reports. Every report uses the
 | Default report                           | Description                                                         |
 |-------------------------------------------|--------------------------------------------------------------------------------|
 | 12 Month Rolling Single Column Income Statement – Default | View an organization's profitability for the past 12 months in a single column.            |
-| 12 Month Trend Income Statement – Default                 | View an organization's profitability for each of the last 12 months. These 12 months can span more than one fiscal year.                                                |
-| Actual vs Budget – Default                                | View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.                                                                       |
+| 12 Month Trend Income Statement – Default                 | View an organization's profitability for each of the last 12 months. These 12 months can span more than one fiscal year.                    |
+| Actual vs Budget – Default                                | View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.    |
 | Audit Details – Default                                  | View detailed balance information for all accounts. This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID. |
 | Balance List – Default                                   | View detailed balance information for all accounts. This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.                          |
 | Balance Sheet – Default                                   | View the organization's financial position for the year.                      |
@@ -142,7 +142,7 @@ Financial reporting provides 22 default financial reports. Every report uses the
 | Detailed JE and TB Review – Default                      | View opening balance and activity information for all accounts.                      |
 | [Detailed Trial Balance - Default](trial-balance-financial-reports.md)| View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.                                                                                 |
 | Expenses Three Year Quarterly Trend – Default             | Gain insight into expenses for the past 12 quarters over the previous three years.       |
-| Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.                                                                              |
+| Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.   |
 | [Income Statement – Default](income-statement-financial-report.md)| View the organization's profitability for the current period and the year to date.          |
 | Ledger Transaction List – Default                        | View detailed balance information for all accounts. This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.                |
 | Ratios – Default                                          | View the solvency, profitability, and efficiency ratios for the organization for the year.       |

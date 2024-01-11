@@ -22,7 +22,7 @@ highlightedContent:
     # Card
     - title: Get started
       itemType: get-started
-      url: /dynamics365/human-resources/
+      url: /dynamics365/human-resources/welcome
     # Card
     - title: What's new
       itemType: whats-new
