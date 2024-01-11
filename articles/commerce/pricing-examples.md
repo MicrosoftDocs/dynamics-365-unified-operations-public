@@ -32,7 +32,7 @@ Follow these steps to configure a mix and match discount so that users who purch
 In the example in the following image:
 
 - The discount is applicable when the cart contains a quantity of 2 for items in the **Apparel and Footwear** category and a quantity of 1 for item 0103.
-- When the discount is applied, the item 0103 in the cart get 100 percent off.
+- When the discount is applied, the item 0103 in the cart gets 100 percent off.
 
 ![Screenshot that shows an example of the setup for the Purchase product A, and receive a discount on product B when both items are in your cart scenario](./media/mix-and-match-sample.png)
 
