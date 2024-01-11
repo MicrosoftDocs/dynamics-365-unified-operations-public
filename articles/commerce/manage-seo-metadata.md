@@ -53,10 +53,18 @@ To manually manage your site map and host it in the site builder Media library, 
 1. Select **Upload \> Upload media items**.
 1. In the File Explorer window, browse to your custom sitemap XML file, select it, and then select **Open**.
 1. In the **Upload file** dialog box, select the **Publish media items after upload** checkbox, and then select **Upload now**.
-1. In the Media library, next to the **Search** field, select the information (**i**) symbol to open the property pane on the right.
-1. Select the site map file, and then, in the properties pane, under **Public URL**, copy the URL of the site map file. 
-1. Download your site's [robots.txt file](go-live/add-robots-txt.md). For instructions, see [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
-1. Open the robots.txt file in a text editor, and paste the site map file URL that you copied into the **Sitemap** key-value pair, as shown in the following example.
+1. In the left navigation pane, select **URLs**.
+2. Select **New > New URL** from the top action bar.
+3. Choose and enter a URL segment name for your sitemap in the **Enter URL Path** field (example: https://[yourdomain.com]/[channelname]/**sitemap**).
+4. From the **What are you creating a URL for?** options, choose the **Media library document** option and select the **Next** button.
+5. Find and select [your custom sitemap].xml file that you uploaded and published in steps 3 and 4 above, and select the **Create** button to create your domain specific URL for your sitemap file.
+6. With the new sitemap URL record selected in the URLs list view, select the **Publish** button in the top action bar to publish the URL.
+7. From the URL info panel on the right, right-click on the link underneath the **Channel and locale variants**.  Select **Copy link** to add the URL to your clipboard.
+> [!NOTE]
+> If you dont see the right URL info pannel mentioned in the step above, make sure the "**i**" info icon is selected next to the upper right search bar in site builder.  This toggles the right info pane between hidden and visibile.
+11. Open a new browser tab and paste the URL for the sitemap file to validate that the URL was correctly linked to your sitemap XML file.
+12. Next, download your site's [robots.txt file](go-live/add-robots-txt.md). For instructions, see [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
+13. Open the robots.txt file in a text editor, and paste the site map file URL that you copied to your clipboard in *step 11* above into the **Sitemap** key-value pair, as shown in the following example.
 
 
     ```txt
@@ -71,7 +79,7 @@ To manually manage your site map and host it in the site builder Media library, 
     Sitemap: <Your site map URL>
     ```
 
-1. Save the robots.txt file, and then [upload it](manage-robots-txt-files.md#upload-a-robotstxt-file) to your site. For go-live information about robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
+14. Save the robots.txt file, and then [upload it](manage-robots-txt-files.md#upload-a-robotstxt-file) to your site. For go-live information about robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
 
 > [!TIP]
 > Follow these steps to keep the URL of your site map file static. In this way, you can avoid having to update the robots.txt file the next time that you manually update your site map file.
