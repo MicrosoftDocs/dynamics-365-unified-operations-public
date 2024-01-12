@@ -17,7 +17,6 @@ ms.dyn365.ops.version:
 # Standard Audit File for Tax (SAF-T) for Norway
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article includes country/region-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
 
