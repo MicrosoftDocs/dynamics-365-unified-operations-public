@@ -4,7 +4,6 @@ description: This article provides information about how to enable Entity Store 
 author: MilindaV
 ms.date: 05/27/2021
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,7 +13,7 @@ ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.form: EntityStoreOnPrem
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---
