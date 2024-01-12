@@ -1570,6 +1570,8 @@
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/GS-e-invoicing-service-overview.md?context=/dynamics365/context/finance
+          - name: Electronic Invoicing administration and integration components
+            href: localizations/global/GS-e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
           items:
           - name: Electronic Invoicing overview
