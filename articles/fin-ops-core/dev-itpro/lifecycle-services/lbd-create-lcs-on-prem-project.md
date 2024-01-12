@@ -6,8 +6,7 @@ description: This article provides information about the process of setting up a
 author: PeterRFriis
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod: dynamics-365
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

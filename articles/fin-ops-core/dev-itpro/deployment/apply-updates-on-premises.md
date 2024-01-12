@@ -6,9 +6,8 @@ description: This article explains how to apply supported updates to Dynamics 36
 author: PeterRFriis
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: dynamics-365 
 ms.technology: 
-ms.service: 
+ms.service: dynamics-365
 
 # optional metadata
 
