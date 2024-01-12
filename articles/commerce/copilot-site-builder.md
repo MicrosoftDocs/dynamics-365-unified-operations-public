@@ -109,7 +109,7 @@ To override content filtering restrictions in site builder, follow these steps.
 To use Copilot to create content for a product page, follow these steps.
 
 1. In site builder for your site, in the left navigation pane, select **Products**.
-1. Select a product for which you want to create content for, and that doesn't already have a customized product page.
+1. Select a product for which you want to create content, and that doesn't already have a customized product page.
 1. On the action pane, select **Customize product page**.
 1. In the **Customize a product page** flyout menu, for **Page description**, enter a description. 
 1. For **Tags**, enter any tags you want to associate with the custom page, and then select **Next**.
