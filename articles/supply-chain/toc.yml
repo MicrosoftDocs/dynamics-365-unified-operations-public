@@ -1711,7 +1711,7 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
-      - name: Inventory On-hand mobile app (preview)
+      - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
       - name: Archive inventory transactions
         href: inventory/archive-inventory-transactions.md
@@ -1823,7 +1823,7 @@
           href: master-planning/more-about-dynamic-negative-days.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
-        - name: Calculate requested ship dates for purchase orders (preview)
+        - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Create a schedule for a site
           href: master-planning/tasks/create-schedule-site.md
@@ -2335,7 +2335,7 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
-        - name: Calculate requested ship dates for purchase orders (preview)
+        - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Enable Copilot support for managing changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation-enable.md
@@ -2379,7 +2379,7 @@
           href: procurement/tasks/create-purchase-agreement.md
         - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
-        - name: Units of measure for line-level charges (preview)
+        - name: Units of measure for line-level charges
           href: sales-marketing/line-charges-specific-unit.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
@@ -3049,11 +3049,11 @@
           href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
         - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
-        - name: Auto-charge compounding and sequencing (preview)
+        - name: Auto-charge compounding and sequencing
           href: sales-marketing/auto-charge-sequence-compound.md
-        - name: Units of measure for line-level charges (preview)
+        - name: Units of measure for line-level charges
           href: sales-marketing/line-charges-specific-unit.md
-        - name: Period charges (preview)
+        - name: Period charges
           href: sales-marketing/period-charges.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
@@ -3479,7 +3479,7 @@
           href: transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Load building workbench
           href: transportation/tasks/load-building-workbench.md
-        - name: Integrate with Microsoft Sustainability Manager (preview)
+        - name: Integrate with Microsoft Sustainability Manager
           href: transportation/sustainability-manager-integration-setup.md
         - name: Plan loads using hub consolidation
           items:

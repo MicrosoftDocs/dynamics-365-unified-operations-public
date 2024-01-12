@@ -1,5 +1,5 @@
 ---
-title: Auto charge compounding and sequencing (preview)
+title: Auto charge compounding and sequencing
 description: Advanced auto charges enable you to compound header charges for sales quotations and sales orders. They also let you apply charge category types of "specific unit" and "specific unit match" to calculate line charges for sales and purchase orders. 
 author: Henrikan
 ms.author: henrikan
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Auto charge compounding and sequencing (preview)
+# Auto charge compounding and sequencing
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!--KFM: Preview until 10.0.38 GA -->
 
 Advanced auto charges let you apply specific charges to order headers and order lines, based on the customer that you're working with and/or the items that you're selling. For sales quotations and sales orders, you can also choose to compound header charges.
 
@@ -30,8 +27,6 @@ Depending on how you configure the feature, interim header charge totals can be 
 You can define a default header charge sequence for your system. This charge sequence is then automatically applied to new sales quotations and sales orders.
 
 When several header charges that have the same sequence are applied, the position of the header charges controls the order that they're applied in during compounding. The position has an impact only when one or more charges are set to compound.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 
