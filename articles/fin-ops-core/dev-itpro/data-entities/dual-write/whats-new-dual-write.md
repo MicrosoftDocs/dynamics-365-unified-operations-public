@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 12/16/2023
+ms.date: 01/04/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -44,11 +44,11 @@ Release notes for the December 2023 release of [Dual-write core solution](https:
 
 **Version:** 1.0.23121.1
 
-Additional December updates in version 1.0.23121.1 of the Dual-write core solution include minor fixes for asynchrounous integration jobs for dual-write.
+Additional December updates in version 1.0.23121.1 of the Dual-write core solution include minor fixes for asynchronous integration jobs for dual-write.
 
 | Type | Number | Description | Status | 
 | --- | --- | --- | --- |
-| Update | 3730825 | Remove tables used for tracking reconcilation status and optimize the related API. | General availability |
+| Update | 3730825 | Remove tables used for tracking reconciliation status and optimize the related API. | General availability |
 
 ### Global address book
 The December release of Dual-write GAB solution 3.5.2.2 contains the following bug fixes.
