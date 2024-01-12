@@ -6,8 +6,7 @@ description: This article provides background information about how the authenti
 author: faix
 ms.date: 11/18/2020
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology:
 
 

@@ -4,7 +4,6 @@ description: This article provides information about redeploying an on-premises 
 author: faix
 ms.date: 10/14/2020
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,7 +13,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 ms.custom: 
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

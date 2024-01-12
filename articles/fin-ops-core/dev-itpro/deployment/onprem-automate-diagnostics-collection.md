@@ -6,8 +6,7 @@ description: This article explains how to quickly collect information that is re
 author: faix
 ms.date: 9/28/2023
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology:
 
 # optional metadata

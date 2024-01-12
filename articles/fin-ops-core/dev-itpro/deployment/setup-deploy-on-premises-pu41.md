@@ -6,8 +6,7 @@ description: This article explains how to plan, set up, and deploy Microsoft Dyn
 author: faix
 ms.date: 10/10/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

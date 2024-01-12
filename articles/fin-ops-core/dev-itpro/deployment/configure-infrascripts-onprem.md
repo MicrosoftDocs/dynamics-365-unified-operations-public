@@ -6,8 +6,7 @@ description: This article explains how to configure the infrastructure scripts t
 author: faix
 ms.date: 12/22/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

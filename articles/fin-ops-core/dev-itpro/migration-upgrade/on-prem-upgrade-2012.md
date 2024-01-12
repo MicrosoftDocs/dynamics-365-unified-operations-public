@@ -6,8 +6,7 @@ description: This article describes the process for upgrading Microsoft Dynamics
 author: faix
 ms.date: 9/16/2022
 ms.topic: article
-ms.prod: dynamics-365
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

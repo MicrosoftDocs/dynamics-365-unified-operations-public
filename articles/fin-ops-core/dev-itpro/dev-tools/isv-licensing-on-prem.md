@@ -4,7 +4,6 @@ description: This article describes the independent software vendor (ISV) licens
 author: faix
 ms.date: 09/16/2022
 ms.topic: article
-ms.prod: dynamics-365
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -12,7 +11,7 @@ ms.author: osfaixat
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

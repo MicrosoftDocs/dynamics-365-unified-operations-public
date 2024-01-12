@@ -6,8 +6,7 @@ description: This article explains which software component versions are compati
 author: faix
 ms.date: 9/21/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

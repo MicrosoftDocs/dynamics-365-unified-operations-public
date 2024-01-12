@@ -6,8 +6,7 @@ description: This article explains how to use the same instance of Active Direct
 author: faix
 ms.date: 01/13/2020
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

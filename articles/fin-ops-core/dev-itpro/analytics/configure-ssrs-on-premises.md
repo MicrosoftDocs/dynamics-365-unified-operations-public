@@ -4,7 +4,6 @@ description: This article provides information about configuring SQL Server Repo
 author: faix
 ms.date: 01/31/2023
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,7 +12,7 @@ ms.author: osfaixat
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

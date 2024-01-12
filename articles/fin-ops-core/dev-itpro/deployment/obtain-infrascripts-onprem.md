@@ -6,8 +6,7 @@ description: This article explains how to download or update the infrastructure 
 author: faix
 ms.date: 1/11/2023
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
