@@ -108,23 +108,23 @@ To override content filtering restrictions in site builder, follow these steps.
 
 To use Copilot to create content for a product page, follow these steps.
 
-1. In site builder for you site, in the left navigation pane, select **Products**.
-1. Select any product that doesn't have a customized product page.
+1. In site builder for your site, in the left navigation pane, select **Products**.
+1. Select a product for which you want to create content for, and that doesn't already have a customized product page.
 1. On the action pane, select **Customize product page**.
 1. In the **Customize a product page** flyout menu, for **Page description**, enter a description. 
 1. For **Tags**, enter any tags you want to associate with the custom page, and then select **Next**.
 1. Select a template, and then select **Next**.
 1. Select a layout, and then select **Next**.
-1. Review the summary of information you specified, and then select **Create page**.
+1. Review the summary of information you entered, and then select **Create page**.
 1. Select **Go to page**.
-1. To launch Copilot in site builder, in the Outline pane, select a **Content block** or **Text block** module, and then in the properties pane, select **Create Content**. If there are no **Content block** or **Text block** modules available, add one appropriate.
-1. In the **Generate content with Copilot** flyout menu, under **Select product information**, select product information that you want Copilot to use as input, such as **Price**, **Dimensions**, **Product description**, or **Product attributes**. Deselect items that you don't want to include.
-1. Under **Draft with Copilot**, enter specific instructions for Copilot to follow when creating the content, and then select **Generate content**. For example, you can tell Copilot to highlight the benefits of the product and then make adjustments to use a friendly tone, or target a specific audience. If you don't provide any instructions, Copilot uses the default options from your site settings.
+1. To launch Copilot in site builder, in the Outline pane, select a **Content block** or **Text block** module, and then in the module's properties pane, select **Create Content**. If there are no **Content block** or **Text block** modules available, add them as appropriate.
+1. In the **Generate content with Copilot** flyout menu, under **Select product information**, select product information that you want Copilot to use as input, such as **Price**, **Dimensions**, **Product description**, or **Product attributes**. Clear boxes for product information that you don't want to include.
+1. Under **Draft with Copilot**, enter specific instructions for Copilot to follow when creating the content, and then select **Generate content**. For example, you can tell Copilot to highlight the benefits of the product using a friendly tone, or targeting a specific audience. If you don't provide any instructions, Copilot uses the default options from your site settings.
 1. After processing, review the content Copilot generated in the **Copilot suggested enrichment content** preview box.
-1. If you aren't satisfied with the response, in the text box, add more details for Copilot to use, and then select the right-facing arrow to regenerate the content. You can also go back to **Update product information** and change the selection of product information if needed. 
-1. After Copilot creates a new response based on updated input, you can repeat this process as many times as you want until you get a response that meets your expectations.
-1. Once you're satisfied with the response, select **Use response**, which copies the response to the text or content block you're working on. If needed, you can review and edit the response again to make any final changes, and you can also add images, links, or other elements to enhance the product page.
-1. When you've finished, select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.  
+1. If you aren't satisfied with the response, in the text box, add more details for Copilot to use, and then select the right-facing arrow to generate updated content. You can also return to **Update product information** and change the selection of product information if needed. 
+1. After Copilot creates a new response based on your updated input, you can repeat the process as many times as necessary until you get a response that meets your expectations.
+1. Once you're satisfied with the response, select **Use response**, which copies the response to the text or content block you're updating. If needed, you can review and edit the response again to make any final changes, and also add images, links, or other elements to enhance the product page.
+1. When you're finished, select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
