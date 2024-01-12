@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 01/11/2024
+ms.date: 01/12/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -165,7 +165,7 @@ To download the sealed self-hosted installer to the development machine and copy
 
 ## Install the sealed CSU
 
-The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Regulatory Technical Standards (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md)
+The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Retail Transaction Service (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md)
 
 To install the sealed CSU on the development machine, follow these steps.
 
