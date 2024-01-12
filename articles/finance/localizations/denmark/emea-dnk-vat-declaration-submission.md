@@ -147,7 +147,8 @@ Before you use these classes for the first time, you must save the parameters.
 
 3. Select **OK** in the dialog box for each executable class to save the specified parameters.
 
-![Saving the executable class parameters for Electronic messaging.](../media/exec-class-parameters-dk.png)
+> [!IMPORTANT]
+> By clicking OK, you will access a third-party service and you agree: (a) to share your data with an external system that is governed by the third party's terms and privacy policy with you; and (b) any data imported from the external system into Microsoft Dynamics 365 is subject to Microsoft's privacy statement that can be accessed here. Please consult the feature technical documentation for more information about this feature.
 
 ### <a id="security-roles"></a>Set up security roles for electronic message processing
 
