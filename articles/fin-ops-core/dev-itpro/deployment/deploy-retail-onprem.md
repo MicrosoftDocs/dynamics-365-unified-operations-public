@@ -6,8 +6,7 @@ description: This article covers the installation steps for Commerce channel com
 author: jashanno
 ms.date: 08/31/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
