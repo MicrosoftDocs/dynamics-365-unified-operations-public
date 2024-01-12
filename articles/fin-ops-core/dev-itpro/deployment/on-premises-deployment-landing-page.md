@@ -6,8 +6,7 @@ description: This article provides information and links to content about on-pre
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

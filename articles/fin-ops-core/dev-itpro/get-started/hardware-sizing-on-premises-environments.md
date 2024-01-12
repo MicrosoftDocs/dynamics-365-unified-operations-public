@@ -4,7 +4,6 @@ description: This article lists the hardware sizing requirements for an on-premi
 author: sericks007
 ms.date: 06/02/2021
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,7 +12,7 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

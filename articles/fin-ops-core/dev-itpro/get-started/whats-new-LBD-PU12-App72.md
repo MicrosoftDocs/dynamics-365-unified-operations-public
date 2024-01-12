@@ -4,7 +4,6 @@ description: This article describes features that are either new or changed in o
 author: sericks007
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: IT Pro
 ms.reviewer: sericks
@@ -13,7 +12,7 @@ ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.custom: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---
