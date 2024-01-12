@@ -14,7 +14,6 @@ ms.search.validFrom: 2023-10-23
 # Retail product kit setup overview
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article provides an overview of the process flow for setting up retail product kits.
 
