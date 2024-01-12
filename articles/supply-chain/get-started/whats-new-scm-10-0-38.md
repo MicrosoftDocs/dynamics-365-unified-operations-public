@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
+title: What's new or changed in Dynamics Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.38. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,18 +12,15 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
+# What's new or changed in Dynamics Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.38. This version has a build number of 10.0.1777 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.38. This version has a build number of 10.0.1777 and is available on the following schedule:
 
 - **Preview of release:** October 2023
 - **General availability of release (self-update):** December 2023
 - **General availability of release (auto-update):** February 2024
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Features included in this release
 
@@ -38,7 +35,7 @@ The following table lists the features that are included in this release. We mig
 | Inventory and logistics | [Apply compound charges to quotations and sales orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/apply-compound-charges-quotations-sales-orders) | [Period charges](../sales-marketing/period-charges.md)<br><br> [Autocharge compounding and sequencing](../sales-marketing/auto-charge-sequence-compound.md)<br><br>[Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md) |  <p>Feature&nbsp;management:</p><ul><li>*Period charges*</li><li>*Sequence and compound for customer charges*</li><li>*Unit of measure for line level charges*</li></ul> |
 | Inventory and logistics | [Enhanced order processing in Pricing management](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enhanced-order-processing-pricing-management) | *Coming soon* | Enabled by default |
 | Inventory and logistics | [Find products and on-hand information by attribute](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/find-products-on-hand-information-attribute) | [Search for products using the Inventory Visibility app](../inventory/inventory-visibility-product-search-app.md)<br><br>[Query with product search](../inventory/inventory-visibility-api.md#product-search-query) (API) | Enabled by default |
-| Inventory and logistics | [Integrate transportation management with Microsoft Cloud for Sustainability](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-transportation-management-cloud-sustainability) | [Integrate with Microsoft Sustainability Manager (preview)](../transportation/sustainability-manager-integration-setup.md) | Feature management:<br>*Integrate Microsoft Sustainability Manager with transportation management* |
+| Inventory and logistics | [Integrate transportation management with Microsoft Cloud for Sustainability](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-transportation-management-cloud-sustainability) | [Integrate with Microsoft Sustainability Manager](../transportation/sustainability-manager-integration-setup.md) | Feature management:<br>*Integrate Microsoft Sustainability Manager with transportation management* |
 | Inventory and logistics | Log and view successful API posts in Inventory Visibility | [Log and view successful API posts](../inventory/inventory-visibility-track-inventory-log-history.md) | Enabled by default |
 | Inventory and logistics | [Manage prices with the pricing management workspace](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-prices-pricing-management-workspace) | Provides a pricing management workspace, which lets sales managers know about impending price rule status changes and supports their choice to modify pricing policies. Sales managers can perform light tasks to enable or disable the pricing rules without leaving the workspaces. | Feature management:<br>*(Preview) Pricing management workspace* |
 | Inventory and logistics | [View and manage inventory with a new mobile app](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/view-manage-inventory-new-mobile-app) | [Inventory On-hand mobile app](../inventory/inventory-onhand-mobile-app.md) | Enabled by default |
@@ -48,7 +45,6 @@ The following table lists the features that are included in this release. We mig
 | Master planning | Demand planning app for Dynamics 365 Supply Chain Management | [Demand planning home page](../demand-planning/demand-planning-home-page.md) | Feature management:<br>*(Preview) Demand Planning* |
 | Master planning | Prioritize existing supply over required BOM/route in Planning Optimization | [Demand-specified BOM or formula versions and/or routes](../master-planning/coverage-settings.md#specify-versions-routes) | Feature management:<br>*Prioritize existing supply over required BOM/route in Planning Optimization* |
 | Procurement | [Inform vendors about when to ship items](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/inform-vendors-about-when-ship-items) | [Calculate requested ship dates for purchase orders](../master-planning/supplier-requested-confirmed-dates.md) | Feature management:<br>*Supplier requested and confirmed shipment dates* |
-| Transportation management | Integrate Microsoft Sustainability Manager with transportation management | [Integrate with Microsoft Sustainability Manager](../transportation/sustainability-manager-integration-setup.md) | Feature management:<br>*Integrate Microsoft Sustainability Manager with transportation management*  |
 | Warehouse management | [Operate warehouses connected to external order management systems](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/operate-warehouses-connected-external-order-management-systems) | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*(Preview) Warehouse management only mode* |
 | Warehouse management | [Optimize the inbound receiving process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-inbound-receiving-process) | [Deferred receiving processing](../warehousing/mixed-license-plate-receiving.md#deferred-receiving-processing) | Enabled by default |
 

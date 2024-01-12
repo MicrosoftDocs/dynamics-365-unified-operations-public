@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 12/16/2023
+ms.date: 01/04/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -18,7 +18,21 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## January 2024
+Release notes for the January 2024 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+**Version:** 1.0.24011.1
+
+| Type | Number | Description | Status | 
+| --- | --- | --- | --- |
+| Bug | 1045001 | Allow customized views of `Dual Write Async Execution Summary` and `Dual Write Async Execution Error` tables. | General availability |
+| Bug | 25981168 | Update the SourceKey in `Dual Write Async Execution Error` table with the Dataverse RowVersion for sync from Dataverse to finance and operations apps. | General availability |
+| Bug | 3679902 | Update `Dual Write Async Execution Summary` table with Enqueue Count | General availability |
+| Bug | 3761962 | Fix for issue with queued records for asynchronous integration jobs not displaying correctly in the dual-write configuration interface. | General availability |
+
+
 ## December 2023
+
+### Dual-write core
 Release notes for the December 2023 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
 **Version:** 1.0.23114.1
 
@@ -28,12 +42,22 @@ Release notes for the December 2023 release of [Dual-write core solution](https:
 | Bug fix | 3603874 | Fix for custom date field transformation from Dataverse to finance and operations apps environment during live sync. The GetTransformedValue method in the dual-write plugin returns a null value for unrecognized transform types instead of the passed in values. | General availability |
 | Optimization | N/A | Minor security improvements and updates | General availability | 
 
+**Version:** 1.0.23121.1
+
+Additional December updates in version 1.0.23121.1 of the Dual-write core solution include minor fixes for asynchronous integration jobs for dual-write.
+
+| Type | Number | Description | Status | 
+| --- | --- | --- | --- |
+| Update | 3730825 | Remove tables used for tracking reconciliation status and optimize the related API. | General availability |
+
+### Global address book
 The December release of Dual-write GAB solution 3.5.2.2 contains the following bug fixes.
+
 | Feature | Description | Status |
 | ---|---|---|
-|Bug fix |	Dual-write initial sync creates multiple active postal addresses on the same location id.|	General availability|
+|Bug fix |	Dual-write initial sync creates multiple active postal addresses on the same location ID.|	General availability|
 
-### Solution details
+#### GAB solution details
 
 | Solution name | Has new changes? | Previous version | New version |
 |---|---|---|---|

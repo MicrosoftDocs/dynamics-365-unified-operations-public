@@ -53,7 +53,7 @@ You can set up calendars that define each vendor's standard operating hours (tha
 1. Go to **Organization administration** \> **Calendars** \> **Calendars**, and either set up or identify the calendars that you want to use for each purpose.
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select the vendor that you want to assign the calendars to.
 1. To set the standard operating hours for the vendor, on the **Purchase order defaults** FastTab, in the **Purchase calendar** field, select a calendar.
-1. The days when the vendor can ship orders might differ from the standard operating hours. To set the shipping days, on the **Invoice and delivery** FastTab, in the **Ship calendar** field, select a calendar. For more information about this field and how it's used, see [Calculate requested ship dates for purchase orders (preview)](supplier-requested-confirmed-dates.md).
+1. The days when the vendor can ship orders might differ from the standard operating hours. To set the shipping days, on the **Invoice and delivery** FastTab, in the **Ship calendar** field, select a calendar. For more information about this field and how it's used, see [Calculate requested ship dates for purchase orders](supplier-requested-confirmed-dates.md).
 
 #### Define the lead time for a purchased item
 

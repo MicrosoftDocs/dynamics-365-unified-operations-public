@@ -165,7 +165,7 @@ After your charges codes are set up, follow these steps to define the auto charg
 > [!NOTE]
 > Supply Chain Management provides the following optional functionality for calculating auto charges. You might have to enable and configure these features before you can use them. For more information, follow the links.
 >
-> - [Auto charge compounding and sequencing (preview)](../sales-marketing/auto-charge-sequence-compound.md)
+> - [Auto charge compounding and sequencing](../sales-marketing/auto-charge-sequence-compound.md)
 > - [Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md)
 
 ## Allocate charges from the header to a line
