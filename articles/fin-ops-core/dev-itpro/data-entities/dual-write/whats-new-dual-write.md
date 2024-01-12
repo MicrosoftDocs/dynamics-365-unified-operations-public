@@ -55,7 +55,7 @@ The December release of Dual-write GAB solution 3.5.2.2 contains the following b
 
 | Feature | Description | Status |
 | ---|---|---|
-|Bug fix |	Dual-write initial sync creates multiple active postal addresses on the same location id.|	General availability|
+|Bug fix |	Dual-write initial sync creates multiple active postal addresses on the same location ID.|	General availability|
 
 #### GAB solution details
 
