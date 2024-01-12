@@ -4,7 +4,6 @@ description: This article describes the capabilities for generating, publishing,
 author: RichdiMSFT
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: IT Pro
 ms.reviewer: sericks
@@ -13,7 +12,7 @@ ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.search.form: SysCorpNetPrinterList
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---
