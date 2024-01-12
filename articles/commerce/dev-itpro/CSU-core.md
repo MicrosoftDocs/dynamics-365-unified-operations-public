@@ -56,7 +56,7 @@ To migrate your existing Microsoft-hosted CSU to CSU Core, follow these steps.
 > - By default, Commerce SDK objects are already configured to use .NET 6.
 > - New CSU deployments on Commerce version 10.0.38 and later have the **Disable CSU Core** option set to **No** by default. The option can't be set to **Yes**.
 > - If you are running Commerce version 10.0.37 and earlier and your extensions are still using the Retail SDK or aren't compatible with .NET Standard 2.0/.NET 6, you are allowed to set the **Disable CSU Core** option to **Yes**. However, if you want to update your CSU to Commerce version 10.0.38 or later, you must set this option to **No** after ensuring that your extensions are compatible with the Commerce SDK.
-> - The switch to CSU Core does not require running the **Commerce Initialize** or execute the **9999(Download jobs)** after switching.
+> - The switch to CSU Core does not require running the **Commerce Initialize** or executing the **9999(Download jobs)** after switching.
 
 ### Extensions
 
