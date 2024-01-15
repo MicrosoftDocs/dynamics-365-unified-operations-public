@@ -37,6 +37,8 @@ The onboarding process consists of two steps:
 1. Obtain a Compliance CSID (CCSID), which ZATCA assigns to perform compliance checks of Electronic invoice generation solutions (EGSs).
 2. Obtain a Production CSID (PCSID), which ZATCA assigns to compliant EGSs.
 
+![Onboarding workflow.](../media/zatca_integration_workflow.png)
+
 ### Obtain a CCSID
 
 1. In the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/), go to the Onboarding and Management Portal by selecting the relevant tile.
