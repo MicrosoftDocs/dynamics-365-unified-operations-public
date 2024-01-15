@@ -1757,6 +1757,8 @@
           href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
           href: inventory/inventory-visibility-track-inventory-log-history.md
+        - name: Inventory Visibility diagnostic tool
+          href: inventory/inventory-visibility-diagnostic-tool.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
     - name: Sensor Data Intelligence (preview)

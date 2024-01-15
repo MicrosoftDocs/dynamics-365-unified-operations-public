@@ -140,7 +140,7 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
 Once you've installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
 
-1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
+1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility integration* feature.
 1. Go to **Inventory Management** \> **Set up** \> **Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
 
