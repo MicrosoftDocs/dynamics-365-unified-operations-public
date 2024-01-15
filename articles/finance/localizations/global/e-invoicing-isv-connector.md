@@ -46,6 +46,9 @@ To enable the integration of the Electronic Invoicing service with the ISV last-
 
 The token that you obtain must be uploaded to the secret that you created in the Azure key vault that your company manages. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). The secret is used as a parameter in the related Electronic Invoicing feature pipeline actions.
 
+> [!NOTE]
+> With this integration, you are able to submit generated e-invoices' files either in the **OIOUBL** format to the Danish electronic invoicing infrastructure, **NemHandel**, or in the **PEPPOL** format to the PEPPOL Delivery Network. The format of a submitted file will be dynamically analyzed by Edicom and routed correspondingly.
+
 ### Electronic invoice submission
 
 The following pipeline actions are introduced or updated to enable outbound document submission via the ISV last-mile connector.
