@@ -1913,6 +1913,8 @@
         items:
         - name: Safety stock fulfillment for items
           href: master-planning/safety-stock-replenishment.md
+        - name: Safety stock pegging options
+          href: master-planning/safety-stock-pegging.md
         - name: Use the safety stock journal to update minimum coverage for items
           href: master-planning/safety-stock-journal.md
       - name: Manage planned orders
