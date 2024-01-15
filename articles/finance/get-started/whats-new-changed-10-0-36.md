@@ -84,6 +84,7 @@ The following table lists the features that are turned on by default in version 
 | New voucher and date for new transactions in the advanced bank reconciliation bank statement | On by default | Cash and bank management |
 | Ability to post detailed vendor and customer payments, but summarize amounts to bank account | On by default | Cash and bank management |
 | Time zone for importing bank statements using Electronic reporting | On by default | Cash and bank management |
+| Optimized authorization check for POS user using external identity | Mandatory | Employee management |
 
 ## Features removed from Feature management
 
