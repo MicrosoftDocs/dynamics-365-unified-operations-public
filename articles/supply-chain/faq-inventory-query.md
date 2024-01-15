@@ -10,6 +10,7 @@ ms.date: 11/07/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 ---
 
 # Responsible AI FAQ for Inquire into inventory with Copilot (preview)

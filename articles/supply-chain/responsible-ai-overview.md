@@ -8,6 +8,7 @@ ms.topic: article
 author: kamaybac
 ms.author: kamaybac
 ms.reviewer: kamaybac
+ms.collection: bap-ai-copilot
 ---
 
 # Responsible AI FAQs for Dynamics 365 Supply Chain Management

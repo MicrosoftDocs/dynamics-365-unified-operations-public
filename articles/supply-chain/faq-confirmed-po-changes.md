@@ -9,6 +9,7 @@ ms.topic: article
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
+ms.collection: bap-ai-copilot
 ---
 # Responsible AI FAQ for the Confirmed purchase orders with changes workspace
 

@@ -22,6 +22,7 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 09/01/2023
 ms.dyn365.ops.version: 10.0.35 PU59
+ms.collection: bap-ai-copilot
 ---
 
 # Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot (preview)

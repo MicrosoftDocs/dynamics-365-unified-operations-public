@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.date: 10/30/2023
 ms.reviewer: johnmichalak
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 ---
 
 # Entities eligible for copilot
