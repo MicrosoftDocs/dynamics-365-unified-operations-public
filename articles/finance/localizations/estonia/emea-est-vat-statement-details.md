@@ -1,7 +1,7 @@
 ---
 title: VAT statement details for Estonia
 description: This article explains how to set up a VAT statement for legal entities in Estonia.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Estonia
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 266904
@@ -19,6 +19,9 @@ ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
 # VAT statement details for Estonia
 
 [!include [banner](../../includes/banner.md)]
+
+> [!NOTE]
+> This feature has been replaced with the VAT declaration functionality. For more information, see [VAT declaration (Estonia)](emea-est-vat-declaration.md).
 
 This article explains how to set up a VAT statement for legal entities in Estonia.
 
