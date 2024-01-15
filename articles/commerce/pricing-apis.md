@@ -113,7 +113,7 @@ The following table shows the input parameters for the *GetActivePrices* API.
 </details>
 
 ### Use PriceLookupContext
-The PriceLookupContext class was introduced in the Commerce version 10.0.37 release. It contains all the lookup criteria for the GetActivePrices API. This class replaces the previous parameters of productIds, activeDate, customerId, and affiliationLoyaltyTiers. It also has additional properties that you can use.
+The PriceLookupContext class was introduced in the Commerce version 10.0.37 release. It contains all the lookup criteria for the GetActivePrices API. This class replaces the previous parameters of productIds, activeDate, customerId, and affiliationLoyaltyTiers. It also has additional properties developers can use to filter discounts during discount lookup.
 
 The GetActivePrices API can accept either the previous parameters or the new parameters with the PriceLookupContext class. You can choose the one that suits your needs best.
 
@@ -552,15 +552,7 @@ The following table shows the input parameters for the *RemoveCoupons* API.
 
 ## GetProductPromotions
 
-The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. 
-
-This API gets a list of promotional products with given product discounts.
-
-This API can also take a list of product discount ids and pricing context as input and query the associate promotional products.
-
-The main use case for the *GetProductPromotions* API is the promotion page (PLP), where retailers show products with given product discounts.
-
-This API support both property-base pricing model and legacy pricing model.
+The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts. This API can also take a list of product discount ids and pricing context as input and query the associate promotional products. The main use case for the *GetProductPromotions* API is the promotion page (PLP), where retailers show products with given product discounts. This API support both property-base pricing model and legacy pricing model.
 
 The following table shows the input parameters for the *GetProductPromotions* API.
 
@@ -733,7 +725,7 @@ Sample
 ```
 
 Remark:
-In PriceLookupHeaderContext, we do not have customer group as it would be indicate by customer number.
-In PriceLookupHeaderContext, you can indicate channelId otherwise channelId from request context would be used.
+In PriceLookupHeaderContext, we do not have customer group as it would be indicate by customer account number.
+In PriceLookupHeaderContext, ChannelId could be specified. If it is not specified, the one from request context would be used (e.g. it's the current channel when using Store Commerce).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
