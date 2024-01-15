@@ -10,7 +10,8 @@ ms.date: 07/06/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
-ms.collection: bap-ai-copilot
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Review and accept changes to confirmed purchase orders

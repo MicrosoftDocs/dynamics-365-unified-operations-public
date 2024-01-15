@@ -1,16 +1,15 @@
 ---
 title: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in the "Inquire into inventory with Copilot" feature in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 11/07/2023
+ms.collection:
+  - bap-ai-copilot
+ms.custom: 
+  - responsible-ai-faqs
+ms.topic: article
 author: Weijiesa
 ms.author: weijiesa
 ms.reviewer: kamaybac
-ms.search.form:
-ms.topic: how-to
-ms.date: 11/07/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
-ms.collection: bap-ai-copilot
 ---
 
 # Responsible AI FAQ for Inquire into inventory with Copilot (preview)
