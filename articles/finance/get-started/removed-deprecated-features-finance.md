@@ -39,6 +39,20 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance 10.0.39 release
+
+### Sales tax report for Estonia (design based on reporting codes)
+
+[Sales tax report for Estonia](../localizations/emea-est-vat-statement-details.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Estonia](../localizations/emea-est-vat-declaration.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By February 1, 2025, we plan to no longer support the Sales tax report for Estonia (Estonian report layout). New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+
 ## Features removed or deprecated in the Finance 10.0.36 release
 
 ### "FTA VAT Audit File (AE)" Electronic reporting (ER) format using the "Standard Audit File model mapping" and "FAF declaration" menu item
