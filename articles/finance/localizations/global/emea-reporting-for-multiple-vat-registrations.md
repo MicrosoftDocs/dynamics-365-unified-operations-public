@@ -26,6 +26,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [Belgium](../belgium/emea-reporting-multiple-vat-registrations-be.md)
 - [Czechia](../czech-republic/emea-reporting-multiple-vat-registrations-cz.md)
 - [Denmark](../denmark/emea-reporting-multiple-vat-registrations-dk.md)
+- [Estonia](../estonia/emea-reporting-multiple-vat-registrations-ee.md)
 - [Finland](../finland/emea-reporting-multiple-vat-registrations-fi.md)
 - [France](../france/emea-reporting-multiple-vat-registrations-fr.md)
 - [Germany](../germany/emea-reporting-multiple-vat-registrations-de.md)
@@ -287,10 +288,11 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](../norway/emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](../spain/emea-esp-vat-declaration-spain.md) |
     | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](../denmark/emea-dnk-vat-declaration-denmark.md) |
-    | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](../norway/emea-pol-vat-declaration.md) |
+    | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](../poland/emea-pol-vat-declaration.md) |
+    | 10.0.36 | Estonia  | Tax declaration model.version.150<br>Tax declaration model mapping.version.150.317<br>VAT Declaration XML (EE).version.150.21<br>VAT Declaration Excel (EE).version.150.21.17 | [VAT declaration (Estonia)](../estonia/emea-pol-vat-declaration.md) |
 
     > [!NOTE]
-    > The VAT declaration of Poland (JPK-V7M) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](../poland/emea-pol-vdek.md).
+    > The VAT declaration of Poland (JPK-V7) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7, VDEK)](../poland/emea-pol-vdek.md).
 
 ### Generate a VAT declaration for multiple VAT registrations
 
