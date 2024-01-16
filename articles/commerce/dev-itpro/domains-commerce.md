@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/14/2023
+ms.date: 01/16/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -36,7 +36,7 @@ The following illustration shows the LCS e-commerce provisioning screen with the
 ![LCS e-commerce provisioning screen with the **Supported host names** box highlighted.](../media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 > [!NOTE]
-> Review the section below [Domains in site builder](#Domains-in-site-builder) to cover how domains entered in to the **Supported host names** field are used with site mapping. The first domain entered will default to the URL generated for your environment. Subsequent domains can be accessed using the **?domain=** attribute in the URL string.
+> The [Domains in site builder](#domains-in-site-builder) section describes how domains that you enter in the **Supported host names** field are used with site mapping. The first domain entered defaults to the URL generated for your environment. You can access any subsequent domains using the `?domain=` URL string attribute.
 
 ### Add supported host names
 
