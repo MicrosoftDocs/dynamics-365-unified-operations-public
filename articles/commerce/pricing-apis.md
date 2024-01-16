@@ -609,6 +609,7 @@ Restriction and limitation:
 }
 ```
 </details>
+
 <details>
     <summary>Sample response body</summary>
 
