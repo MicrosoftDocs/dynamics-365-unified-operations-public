@@ -668,7 +668,7 @@ Restriction and limitation:
                     "DateValidationTypeValue": 1
                 }
             ]   
-        }...
+        }
     ]
 }
 ```
