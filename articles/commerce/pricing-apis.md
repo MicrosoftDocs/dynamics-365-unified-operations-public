@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-07-15
 
 This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
 
-The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that can be consumed by external applications to support various pricing scenarios:
+The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that external applications can consume to support various pricing scenarios:
 
 - **GetActivePrices** – This API gets a product's calculated price, including simple discounts.
 - **CalculateSalesDocument** – This API calculates prices and discounts for products at given quantities if they're bought together.
@@ -43,7 +43,7 @@ The main use case for the *GetActivePrices* API is the product details page (PDP
 
 The following table shows the input parameters for the *GetActivePrices* API.
 
-| Name                                    | Sub-name | Type | Required/Optional | Description |
+| Name                                    | Subname | Type | Required/Optional | Description |
 |-----------------------------------------|----------|------|-------------------|-------------|
 | projectDomain                           | | ProjectionDomain | Required | |
 |                                         | ChannelId | long | Required | |
@@ -124,7 +124,7 @@ According to your organization's needs, the GetActivePrices API can either accep
 
 **Input parameters**
 
-| Name                                    | Sub-name | Type | Required/Optional | Description |
+| Name                                    | Subname | Type | Required/Optional | Description |
 |-----------------------------------------|----------|------|-------------------|-------------|
 | projectDomain                           | | ProjectionDomain | Required | |
 |                                         | ChannelId | long | Required | |
@@ -150,7 +150,7 @@ The scope of the *CalculateSalesDocument* API is just the calculation of prices 
 
 The following table shows the input parameters inside the object that is named **salesDocument**.
 
-| Name             | Sub-name | Type | Required/Optional | Description |
+| Name             | Subname | Type | Required/Optional | Description |
 |------------------|----------|------|-------------------|-------------|
 | Id               | | string | Required | The identifier of the sales document. |
 | CartLines        | | IList\<CartLine\> | Optional | The list of lines to calculate prices and discounts for. |
@@ -160,14 +160,14 @@ The following table shows the input parameters inside the object that is named *
 |                  | Quantity | decimal | Required in the scope of CartLine | The quantity of the product. |
 |                  | UnitOfMeasureSymbol | string | Optional | The unit of the product. By default, if a value isn't provided, the API uses the sale unit of the product. |
 | CustomerId       | | string | Optional | The customer account number. |
-| LoyaltyCardId    | | string | Optional | The loyalty card identifier. Any customer account that is associated with the loyalty card must match the value of the **CustomerId** parameter (if it's provided). The loyalty card won't be considered if it isn't found or its status is **Blocked**. |
-| AffiliationLines | | IList\<AffiliationLoyaltyTier\> | Optional | Affiliation loyalty tier lines. If **CustomerId** and/or **LoyaltyCardId** values are provided, the corresponding affiliation loyalty tier lines will be merged with lines that are provided in the **AffiliationLines** value. |
+| LoyaltyCardId    | | string | Optional | The loyalty card identifier. Any customer account that is associated with the loyalty card must match the value of the **CustomerId** parameter (if provided). The loyalty card isn't considered if it isn't found or its status is **Blocked**. |
+| AffiliationLines | | IList\<AffiliationLoyaltyTier\> | Optional | Affiliation loyalty tier lines. If **CustomerId** and/or **LoyaltyCardId** values are provided, the corresponding affiliation loyalty tier lines are merged with lines that are provided in the **AffiliationLines** value. |
 |                  | AffiliationId | long | Required in the scope of AffiliationLoyaltyTier | The affiliation record ID. |
 |                  | LoyaltyTierId | long | Required in the scope of AffiliationLoyaltyTier | The loyalty tier record ID. |
-|                  | AffiliationTypeValue | int | Required in the scope of AffiliationLoyaltyTier | A value that indicates whether the affiliation line is of the **General** type (**0**) or the **Loyalty** type (**1**). If this parameter is set to **0**, the API takes the **AffiliationId** value as the identifier and ignores the **LoyaltyTierId** value. If it's set to **1**, the API takes the **LoyaltyTierId** value as the identifier and ignores the **AffiliationId** value. |
+|                  | AffiliationTypeValue | int | Required in the scope of AffiliationLoyaltyTier | A value that indicates whether the affiliation line is of the **General** type (**0**) or the **Loyalty** type (**1**). If the parameter is set to **0**, the API takes the **AffiliationId** value as the identifier and ignores the **LoyaltyTierId** value. If the parameter is set to **1**, the API takes the **LoyaltyTierId** value as the identifier and ignores the **AffiliationId** value. |
 |                  | ReasonCodeLines | Collection\<ReasonCodeLine\> | Required in the scope of AffiliationLoyaltyTier | Reason code lines. This parameter has no effect on the pricing calculation but is required as part of the **AffiliationLoyaltyTier** object. |
 |                  | CustomerId | string | Required in the scope of AffiliationLoyaltyTier | The customer account number. |
-| Coupons          | | IList\<Coupon\> | Optional | Coupons that aren't applicable (inactive, expired, or not found) won't be considered in the pricing calculation. |
+| Coupons          | | IList\<Coupon\> | Optional | Coupons that aren't applicable (inactive, expired, or not found) aren't considered in the pricing calculation. |
 |                  | Code | string | Required in the scope of Coupon | The coupon code. |
 |                  | CodeId | string | Optional | The coupon code identifier. If a value is provided, it must match the value of the **Code** parameter. |
 |                  | DiscountOfferId | string | Optional | The discount identifier. If a value is provided, it must match the value of the **Code** parameter. |
@@ -223,14 +223,14 @@ The following table shows the input parameters inside the object that is named *
 
 The whole cart object is returned as the response body. To check prices and discounts, you should focus on the fields in the following table.
 
-| Name           | Sub-name | Type | Description |
+| Name           | Subname | Type | Description |
 |----------------|----------|------|--------------|
-| NetPrice       | | decimal | The net price of the whole sales document before discounts are applied. |
+| NetPrice       | | decimal | The net price of the whole sales document before any discounts are applied. |
 | DiscountAmount | | decimal | The total discount amount of the whole sales document. |
 | TotalAmount    | | decimal | The total amount of the whole sales document. |
 | CartLines      | | IList\<CartLine\> | Calculated lines that include price and discount details. |
 |                | Price | decimal | The unit price of the product. |
-|                | NetPrice | decimal | The net price of the line before discounts are applied (= *Price* &times; *Quantity*). |
+|                | NetPrice | decimal | The net price of the line before any discounts are applied (= *Price* &times; *Quantity*). |
 |                | DiscountAmount | decimal | The discount amount. |
 |                | TotalAmount | decimal | The final total pricing result of the line. |
 |                | PriceLines | IList\<PriceLine\> | Price details, including the source of the price (base price, price adjustment, or trade agreement) and the amount. |
@@ -292,7 +292,7 @@ The main use case for the *GetAvailablePromotions* API is the "All discounts" pa
 
 The following table lists the input parameters for the *GetAvailablePromotions* API.
 
-| Name        | Sub-name | Type | Required/Optional | Description |
+| Name        | Subname | Type | Required/Optional | Description |
 |-------------|----------|------|-------------------|-------------|
 | searchCriteria | | DiscountsSearchCriteria | Required | |
 | | ChannelId | long | Required | |
@@ -566,7 +566,7 @@ The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 re
 
 The following table shows the input parameters for the *GetProductPromotions* API.
 
-| Name                                    | Sub-name | Type | Required/Optional | Description |
+| Name                                    | Subname | Type | Required/Optional | Description |
 |-----------------------------------------|----------|------|-------------------|-------------|
 | productDiscountIds                      | | IEnumerable\<string\> | Required | The list of product discount ids to look for promotional products. |
 | priceLookupContext                      | | PriceLookupContext | Required | The context for pricing. |
