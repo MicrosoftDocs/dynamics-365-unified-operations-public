@@ -1,6 +1,6 @@
 ---
 title: Cash application in advanced bank reconciliation
-description: This article provides information about the feature enhancements in advanced bank reconciliation in 10.0.39.
+description: This article provides information about applying cash in advanced bank reconciliation.
 author: EricWang
 ms.date: 01/08/2024
 ms.topic: article
