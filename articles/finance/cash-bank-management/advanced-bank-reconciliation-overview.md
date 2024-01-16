@@ -50,7 +50,12 @@ The advanced bank reconciliation feature lets you import bank statements. The im
     -   Generate a reconciliation statement.
 
 
-
+> [!NOTE]
+> Starting from 10.0.39 release, a new feature **Modern bank reconciliation** will be available to enhancement the capabilities in advanced bank reconciliation. Because modern bank reconciliation is under preview in 10.0.39, the objects and code introduced by this feature are subject to change before the feature goes to GA. This could result in breaking changes being introduced to provide a better functional experience and address feedback from users. Forms and tables that mentioned below are not expected to be customized.
+> 
+> - public class BankAutomationReconciliationWorksheet extends FormRun
+> 
+> - public class BankStatementLinePostTable extends common
 
 
 
