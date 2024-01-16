@@ -43,6 +43,15 @@ For the Warehouse Management mobile app to function correctly, your internal net
 - \*.onyx.azure.net
 - play.google.com
 - itunes.apple.com
+- *.cdn-apple.com
+- *.networking.apple
+- login.microsoftonline.com
+- login.microsoft.com
+- sts.windows.net
+- login.partner.microsoftonline.cn
+- login.chinacloudapi.cn
+- login.microsoftonline.us
+- login-us.microsoftonline.com
 
 ### Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
