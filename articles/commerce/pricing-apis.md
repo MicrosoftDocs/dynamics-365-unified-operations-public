@@ -608,8 +608,7 @@ Restriction and limitation:
 }
 ```
 
-<details>
-    <summary>Sample response body</summary>
+**Sample response body**
 
 ```json
 {
@@ -669,8 +668,6 @@ Restriction and limitation:
     ]
 }
 ```
-
-</details>
 
 For more information, see [PriceLookupContext](#pricelookupcontext).
 
