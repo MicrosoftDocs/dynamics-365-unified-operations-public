@@ -49,7 +49,7 @@ You can also add an individual channel to the site by choosing the option to ass
 
 Our recommendations for using this feature are:
 
-- Enable cross-channel sharing when using the bulk association feature, as it lets you reuse and share content among multiple channels of a site. This capability is useful when the site channels have a compatible base language, or when they have numerous content items in common.
+- Enable cross-channel sharing when using the bulk association feature, as it lets you reuse and share content among multiple channels of a site. This capability is useful when the site channels have a compatible base language, or when they have numerous content items in common. [Learn more](./cross-channel-sharing.md)
 - Review the default and optional settings for each channel carefully, and make sure they match your expectations and requirements. You can always override the settings for individual channels as needed.
 - Test the channel associations and settings before launching the site, and verify that the site works as expected for different channels and locales. You can use the preview mode in Sitebuilder to test the site for different channels.
 
