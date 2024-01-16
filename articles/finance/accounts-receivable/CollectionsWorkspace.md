@@ -24,6 +24,7 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2023-06-05
 ms.dyn365.ops.version: 10.0.34
+ms.collection: bap-ai-copilot   
 
 ---
 
