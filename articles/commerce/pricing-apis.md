@@ -708,7 +708,8 @@ Structure of PriceLookupContext
 }
 ```
 
-Sample
+<details>
+    <summary>Sample request body</summary>
 
 ```json
 "PriceLookupContext":
@@ -738,6 +739,8 @@ Sample
     "LineContexts": []
 }
 ```
+
+</details>
 
 > [!NOTE]
 > - In PriceLookupHeaderContext, we do not have customer group as it would be indicate by customer account number.
