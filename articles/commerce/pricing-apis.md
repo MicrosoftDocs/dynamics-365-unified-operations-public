@@ -579,6 +579,7 @@ Restriction and limitation:
 
 <details>
     <summary>Sample request body</summary>
+
 ```json
 {
     {
