@@ -1,13 +1,13 @@
 ---
-title: Generate vouhcer in advanced bank reconciliation
-description: This article provides information about the feature enhancements in advanced bank reconciliation in 10.0.39.
+title: Generate voucher in advanced bank reconciliation
+description: This article provides information about generating vouchers in advanced bank reconciliation.
 author: EricWang
 ms.date: 01/08/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: 
 ms.author: wangchen
 ms.search.validFrom: 2024-01-29
