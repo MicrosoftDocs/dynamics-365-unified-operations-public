@@ -577,7 +577,8 @@ Restriction and limitation:
 1. No more than 5 product discount ids as input.
 2. Only simple discount is supported.
 
-**Sample request body**
+<details>
+    <summary>Sample request body</summary>
 
 ```json
 {
@@ -609,7 +610,10 @@ Restriction and limitation:
 }
 ```
 
-**Sample response body**
+</details>
+
+<details>
+    <summary>Sample response body</summary>
 
 ```json
 {
@@ -669,6 +673,8 @@ Restriction and limitation:
     ]
 }
 ```
+
+</details>
 
 For more information, see [PriceLookupContext](#pricelookupcontext).
 
