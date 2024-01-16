@@ -4,7 +4,7 @@
 title: Commerce pricing APIs
 description: This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
 author: boycez
-ms.date: 10/20/2023
+ms.date: 01/16/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
