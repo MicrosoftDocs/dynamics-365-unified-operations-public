@@ -579,7 +579,6 @@ Restriction and limitation:
 
 <details>
     <summary>Sample request body</summary>
-
 ```json
 {
     {
@@ -608,9 +607,7 @@ Restriction and limitation:
     "activeDate": "2023-08-20T14:40:05.873+08:00",
 }
 ```
-
 </details>
-
 <details>
     <summary>Sample response body</summary>
 
