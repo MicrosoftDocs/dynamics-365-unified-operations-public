@@ -19,6 +19,7 @@ ms.custom: bap-template
 The Warehouse Management mobile app supports the following type of user-based authentication:
 
 - Device code flow authentication
+- Username and Password authentication
 
 When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Microsoft Entra ID user account.
 
@@ -75,6 +76,24 @@ Create a user that corresponds to the user credentials for the Warehouse Managem
 1. Assign the *Warehousing mobile device user* role to the user.
 
 ![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
+
+## <a name="sso"></a>Single Sign-On
+
+SSO enables the potential for passwordless authentication by leveraging the reusability of credentials from Intune Company Portal ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal)).
+SSO is applicable exclusively to the `"UsernamePassword"` connection type (It doesn't work with `"DeviceCode"`).
+
+SSO requires additional configuration in your app registration.
+1. In the **Manage** list, select **App registrations**.
+1. Search for your **App registraion**.
+1. In the **Manage** list, select **Authentication**.
+1. Click **Add a platform**
+1. Select **Mobile and descktop applications**
+1. Set **Custom redirect URIs** `ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333`
+1. Select **Android**
+1. Set **Package name** `com.microsoft.warehousemanagement`
+1. Set **Signature hash** `hpavxC1xAIAr5u39m1waWrUbsO8=`
+1. Select **iOS / macOS**
+1. Set **Bundle ID** `com.microsoft.WarehouseManagement`
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using the device code flow
 
