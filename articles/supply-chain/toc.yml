@@ -1879,6 +1879,8 @@
           href: master-planning/master-plans.md
         - name: Master planning setup wizard
           href: master-planning/master-planning-setup-wizard.md
+        - name: Exclude specific transactions or transaction types from master planning
+          href: master-planning/ignore-transaction-types.md
         - name: Generate a constrained plan
           href: master-planning/tasks/constrained-plan.md
       - name: Set up replenishment strategies
