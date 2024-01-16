@@ -684,8 +684,8 @@ A class used for property-base pricing model.
 It is now used in *GetProductPromotions* and *GetActivePrices*.
 
 Structure of PriceLookupContext
-<!--
-```json
+
+`
 {
     HeaderContext: PriceLookupHeaderContext
     {
@@ -707,8 +707,8 @@ Structure of PriceLookupContext
         },
     ]
 }
-```
--->
+`
+
 Sample
 
 ```json
