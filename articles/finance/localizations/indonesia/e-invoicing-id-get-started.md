@@ -24,25 +24,17 @@ This article will help you get started with Electronic invoicing for Indonesia. 
 ## Prerequisites
 
 Before you use the invoicing functionality, the following prerequisites must be met:
-
-- [Configure the Electronic invoicing solution in Dataverse](../dev-itpro/e-invoicing-power-platform-plug-in.md).
-
-    > [!NOTE]
-    > [Microsoft Dynamics 365 Electronic Invoicing connector for Microsoft Dataverse](https://appsource.microsoft.com/product/dynamics-crm/mscrm.electronic-invoicing) isn't currently available from AppSource. If this connector is required to obtain the Dataverse solution for Electronic invoicing, send a request to <DataverseEnvoicing@microsoft.com> to get the Dataverse solution. For general questions about electronic invoicing, go to the dedicated Yammer group, [Electronic invoicing](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=9386819584&view=all). If you need further assistance, create a support ticket. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services](../../../fin-ops-core/fin-ops/lcs/lcs-support.md).
-
 - Follow the steps in the article,[Get started with Electronic invoicing](../global/e-invoicing-set-up-overview.md).
 
 ### Set up RCS
 
 During RCS setup, complete the following tasks.
 
-1. Enable the **Electronic reporting Microsoft Dataverse datasources support** feature in the **Feature management** workspace.
-2. Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
-3. Review the format configurations that are required to generate and export sales invoices.
-4. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
-5. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
-6. Import the **Invoices communication Dataverse mapping** configuration.
-7. Create a connected application to Dataverse.
+1. Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
+2. Review the format configurations that are required to generate and export sales invoices.
+3. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
+4. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
+5. Create a connected application to Dataverse.
 
 #### Import the Electronic Invoicing feature
 
@@ -76,11 +68,6 @@ In the list, select a configuration version, and then select **Edit** or **View*
 
 You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the Electronic reporting (ER) format file configurations. For more information, see [Create electronic document configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-#### Import the Invoices communication Dataverse mapping configuration
-
-1. Sign in to your RCS account.
-1. On the RCS home page, and select **Electronic reporting**.
-2. Select **Repositories**, and then find and import the **Invoices communication Dataverse mapping** configuration.
 
 #### Create a connected application for Dataverse
 
