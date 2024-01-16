@@ -83,6 +83,10 @@ SSO enables the potential for passwordless authentication by leveraging the reus
 SSO is applicable exclusively to the `"UsernamePassword"` connection type (It doesn't work with `"DeviceCode"`).
 
 SSO requires additional configuration in your app registration.
+1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
+1. Enter the name and password of the user who has access to the Azure subscription.
+1. In the Azure portal, on the left navigation pane, select **Microsoft Entra ID**.
+1. Make sure that you're working with the instance of Microsoft Entra ID that's used by Supply Chain Management.
 1. In the **Manage** list, select **App registrations**.
 1. Search for your **App registraion**.
 1. In the **Manage** list, select **Authentication**.
