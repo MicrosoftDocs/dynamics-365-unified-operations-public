@@ -35,6 +35,9 @@ The following illustration shows the LCS e-commerce provisioning screen with the
 
 ![LCS e-commerce provisioning screen with the **Supported host names** box highlighted.](../media/Domains_ProvisioningeCommerceScreen_publish.png)
 
+> [!NOTE]
+> Review the section below [Domains in site builder](#Domains-in-site-builder) to cover how domains entered in to the **Supported host names** field are used with site mapping. The first domain entered will default to the URL generated for your environment. Subsequent domains can be accessed using the **?domain=** attribute in the URL string.
+
 ### Add supported host names
 
 You can add additional supported host names to an environment in LCS after the initial environment provisioning. 
