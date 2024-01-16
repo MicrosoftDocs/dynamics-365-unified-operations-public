@@ -302,7 +302,7 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 | | EndDate | DateTimeOffset | Required | The ending date (inclusive). |
 
 <details>
-    <summary>Sample response body</summary>
+    <summary>Sample request body</summary>
 
 ```json
 {
@@ -684,7 +684,7 @@ The PriceLookupContext class is used for the property-base pricing model in the 
 
 The structure of the PriceLookupContext class is shown in the following example.
 
-`
+```
 {
     HeaderContext: PriceLookupHeaderContext
     {
@@ -706,7 +706,7 @@ The structure of the PriceLookupContext class is shown in the following example.
         },
     ]
 }
-`
+```
 
 <details>
     <summary>Sample request body</summary>
