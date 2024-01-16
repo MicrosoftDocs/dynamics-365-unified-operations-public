@@ -577,8 +577,8 @@ Restriction and limitation:
 1. No more than 5 product discount ids as input.
 2. Only simple discount is supported.
 
-<!--<details>
-    <summary>Sample request body</summary>-->
+<details>
+    <summary>Sample request body</summary>
 
 ```json
 {
@@ -609,7 +609,7 @@ Restriction and limitation:
 }
 ```
 
-<!--</details>-->
+</details>
 
 <details>
     <summary>Sample response body</summary>
@@ -683,7 +683,7 @@ A class used for the property-base pricing model in the *GetProductPromotions* a
 
 Structure of PriceLookupContext
 
-```json
+```
 {
     HeaderContext: PriceLookupHeaderContext
     {
