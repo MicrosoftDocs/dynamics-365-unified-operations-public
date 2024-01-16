@@ -241,6 +241,8 @@ items:
         items:
         - name: Clean up data management job history 
           href: data-entities/clean-up-data.md
+        - name: Clean up staging tables
+          href: data-entities/staging-tables.md
         - name: Data import and export jobs overview
           href: ../fin-ops/data-entities/data-import-export-job.md
         - name: Data import and export parameters 
