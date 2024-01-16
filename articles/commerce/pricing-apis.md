@@ -578,7 +578,7 @@ Restriction and limitation:
 2. Only simple discount is supported.
 
 <details>
-    <summary>Sample response body</summary>
+    <summary>Sample request body</summary>
 
 ```json
 {
@@ -685,29 +685,6 @@ It is now used in *GetProductPromotions* and *GetActivePrices*.
 
 Structure of PriceLookupContext
 
-`
-{
-    HeaderContext: PriceLookupHeaderContext
-    {
-        CustomerAccountNumber: string
-        AffiliationLoyaltyTierLines: IEnumerable<AffiliationLoyaltyTier>
-        ChannelId: long?
-        SalesOrderProperties: IEnumerable<AttributeValueBase>
-    },
-    LineContexts: IEnumerable<PriceLookupLineContext>
-    [
-        {
-            ProductRecordId: string
-            UnitOfMeasureSymbol: string
-            InventorySiteId: string
-            InventoryLocationId: string
-            DeliveryMode: string
-            CatalogId: string
-            SalesLineProperties: IEnumerable<AttributeValueBase>
-        },
-    ]
-}
-`
 
 Sample
 
