@@ -577,8 +577,7 @@ Restriction and limitation:
 1. No more than 5 product discount ids as input.
 2. Only simple discount is supported.
 
-<details>
-    <summary>Sample request body</summary>
+**Sample request body**
 
 ```json
 {
@@ -607,9 +606,7 @@ Restriction and limitation:
     },
     "activeDate": "2023-08-20T14:40:05.873+08:00",
 }
-
 ```
-</details>
 
 <details>
     <summary>Sample response body</summary>
