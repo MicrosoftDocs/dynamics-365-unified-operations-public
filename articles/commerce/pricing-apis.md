@@ -136,7 +136,7 @@ The GetActivePrices API can accept either the previous parameters or the new par
 | includeVariantPriceRange                | | bool | Optional | Set this parameter to **true** to get the minimum and maximum prices among all variants for a master product. The default value is **false**. |
 | includeAttainablePricesAndDiscounts     | | bool | Optional | Set this parameter to **true** to get attainable prices and discounts. The default value is **false**. |
 
-See [PriceLookupContext section](#PriceLookupContext) for details.
+For more information, see [PriceLookupContext](#pricelookupcontext).
 
 ## CalculateSalesDocument
 
@@ -675,7 +675,7 @@ Restriction and limitation:
 
 </details>
 
-See [PriceLookupContext section](#PriceLookupContext) for details.
+For more information, see [PriceLookupContext](#pricelookupcontext).
 
 ### PriceLookupContext
 
