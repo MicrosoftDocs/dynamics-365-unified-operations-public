@@ -684,7 +684,7 @@ A class used for the property-base pricing model in the *GetProductPromotions* a
 
 Structure of PriceLookupContext
 
-```
+```json
 {
     HeaderContext: PriceLookupHeaderContext
     {
