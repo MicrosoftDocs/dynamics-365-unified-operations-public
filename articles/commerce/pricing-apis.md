@@ -81,7 +81,7 @@ The following table shows the input parameters for the *GetActivePrices* API.
 </details>
 
 <details>
-    <summary>Sample request body</summary>
+    <summary>Sample response body</summary>
 
 ```json
 {
@@ -562,7 +562,7 @@ The following table shows the input parameters for the *RemoveCoupons* API.
 
 ## GetProductPromotions
 
-The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts. This API can also take a list of product discount ids and pricing context as input and query the associate promotional products. The main use case for the *GetProductPromotions* API is the promotion page (PLP), where retailers show products with given product discounts. This API support both property-base pricing model and legacy pricing model.
+The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts. This API can also take a list of product discount ids and pricing context as input and query the associate promotional products. The main use case for the *GetProductPromotions* API is the promotion page (PLP), where retailers show products with given product discounts. This API supports both the property-base pricing model and the legacy pricing model.
 
 The following table shows the input parameters for the *GetProductPromotions* API.
 
@@ -679,12 +679,33 @@ For more information, see [PriceLookupContext](#pricelookupcontext).
 
 ### PriceLookupContext
 
-A class used for property-base pricing model.
-
-It is now used in *GetProductPromotions* and *GetActivePrices*.
+A class used for the property-base pricing model in the *GetProductPromotions* and *GetActivePrices* APIs.
 
 Structure of PriceLookupContext
 
+```json
+{
+    HeaderContext: PriceLookupHeaderContext
+    {
+        CustomerAccountNumber: string
+        AffiliationLoyaltyTierLines: IEnumerable<AffiliationLoyaltyTier>
+        ChannelId: long?
+        SalesOrderProperties: IEnumerable<AttributeValueBase>
+    },
+    LineContexts: IEnumerable<PriceLookupLineContext>
+    [
+        {
+            ProductRecordId: string
+            UnitOfMeasureSymbol: string
+            InventorySiteId: string
+            InventoryLocationId: string
+            DeliveryMode: string
+            CatalogId: string
+            SalesLineProperties: IEnumerable<AttributeValueBase>
+        },
+    ]
+}
+```
 
 Sample
 
