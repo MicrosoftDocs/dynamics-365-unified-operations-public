@@ -9,7 +9,8 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Use Copilot in site builder to enrich product detail pages
