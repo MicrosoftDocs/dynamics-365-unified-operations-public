@@ -123,10 +123,11 @@ You can import connection settings from either a file or a QR code. For both app
 | `ActiveDirectoryResource` | Specify the root URL of Supply Chain Management. |
 | `ActiveDirectoryTenant` | Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | `Company` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"certificate"`](warehouse-app-authenticate-service-based.md), [`"clientsecret"`](warehouse-app-authenticate-service-based.md), and [`"devicecode"`](warehouse-app-authenticate-user-based.md). The default value is `"devicecode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
+| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"Certificate"`](warehouse-app-authenticate-service-based.md), [`"ClientSecret"`](warehouse-app-authenticate-service-based.md), [`"DeviceCode"`](warehouse-app-authenticate-user-based.md), and [`"UsernamePassword"`](warehouse-app-authenticate-user-based.md). The default value is `"DeviceCode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
 | `IsEditable` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
 | `IsDefault` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `CertificateThumbprint` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
+| `UseBroker` | (Optional) Applicable exclusively to the `"UsernamePassword"` connection type, determines whether a broker is utilized for [SSO]() authentication with Intune Company Portal ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal)). Set to `"true"` for broker-based authentication and `"false"` for an manual input of username and password.|
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
 
@@ -142,7 +143,7 @@ The following example shows a valid connection settings file that contains two c
             "IsEditable": false,
             "IsDefaultConnection": true,
             "CertificateThumbprint": "aaaabbbbcccccdddddeeeeefffffggggghhhhiiiii",
-            "ConnectionType": "certificate"
+            "ConnectionType": "Certificate"
         },
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
@@ -152,7 +153,7 @@ The following example shows a valid connection settings file that contains two c
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
-            "ConnectionType": "clientsecret"
+            "ConnectionType": "ClientSecret"
         },
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
@@ -162,7 +163,18 @@ The following example shows a valid connection settings file that contains two c
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
-            "ConnectionType": "devicecode"
+            "ConnectionType": "DeviceCode"
+        },
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection4",
+            "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
+            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "Company": "USMF",
+            "IsEditable": true,
+            "IsDefaultConnection": false,
+            "UseBroker": true,
+            "ConnectionType": "UsernamePassword"
         }
     ]
 }
