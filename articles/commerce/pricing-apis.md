@@ -118,11 +118,11 @@ The following table shows the input parameters for the *GetActivePrices* API.
 
 ### Use PriceLookupContext
 
-The PriceLookupContext class was introduced in the Commerce version 10.0.37 release. It contains all the lookup criteria for the GetActivePrices API. This class replaces the previous parameters of productIds, activeDate, customerId, and affiliationLoyaltyTiers. It also has additional properties developers can use to filter discounts during discount lookup.
+The PriceLookupContext class was introduced in the Commerce version 10.0.37 release. The class contains all the lookup criteria for the GetActivePrices API, and replaces the previous parameters of productIds, activeDate, customerId, and affiliationLoyaltyTiers. The class also has additional properties that developers can use to filter discounts during discount lookup.
 
-The GetActivePrices API can accept either the previous parameters or the new parameters with the PriceLookupContext class. You can choose the one that suits your needs best.
+According to your organization's needs, the GetActivePrices API can either accept the previous parameters or new parameters associated with the PriceLookupContext class.
 
-**input parameters**
+**Input parameters**
 
 | Name                                    | Sub-name | Type | Required/Optional | Description |
 |-----------------------------------------|----------|------|-------------------|-------------|
@@ -562,7 +562,7 @@ The following table shows the input parameters for the *RemoveCoupons* API.
 
 ## GetProductPromotions
 
-The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts. This API can also take a list of product discount ids and pricing context as input and query the associate promotional products. The main use case for the *GetProductPromotions* API is the promotion page (PLP), where retailers show products with given product discounts. This API supports both the property-base pricing model and the legacy pricing model.
+The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts, and can also take a list of product discount IDs and pricing context as input and query the associated promotional products. The main use case for the *GetProductPromotions* API is on product listing pages, where retailers showcase products with discounts. This API supports both the property-base pricing model and the legacy pricing model.
 
 The following table shows the input parameters for the *GetProductPromotions* API.
 
@@ -572,10 +572,10 @@ The following table shows the input parameters for the *GetProductPromotions* AP
 | priceLookupContext                      | | PriceLookupContext | Required | The context for pricing. |
 | activeDate                              | | DateTimeOffset | Optional | The date when promotion is considered. |
 
-Restriction and limitation:
+Restrictions and limitations:
 
-1. No more than 5 product discount ids as input.
-2. Only simple discount is supported.
+- Can only take a maximum of five product discount IDs as input.
+- Only simple discounts are supported.
 
 <details>
     <summary>Sample request body</summary>
@@ -680,9 +680,9 @@ For more information, see [PriceLookupContext](#pricelookupcontext).
 
 ### PriceLookupContext
 
-A class used for the property-base pricing model in the *GetProductPromotions* and *GetActivePrices* APIs.
+The PriceLookupContext class is used for the property-base pricing model in the *GetProductPromotions* and *GetActivePrices* APIs.
 
-Structure of PriceLookupContext
+The structure of the PriceLookupContext class is shown in the following example.
 
 `
 {
@@ -743,7 +743,7 @@ Structure of PriceLookupContext
 </details>
 
 > [!NOTE]
-> - In PriceLookupHeaderContext, we do not have customer group as it would be indicate by customer account number.
-> - In PriceLookupHeaderContext, ChannelId could be specified. If it is not specified, the one from request context would be used (e.g. it's the current channel when using Store Commerce).
+> - There isn't a customer group specified in the PriceLookupHeaderContext paramter becuase it had be inferred by the customer account number.
+> - The ChannelId can be specified in the PriceLookupHeaderContext parameter. If it isn't specified, the ChannelId from the request context (the current channel when using Store Commerce) is used.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
