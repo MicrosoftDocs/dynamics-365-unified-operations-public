@@ -1719,7 +1719,7 @@
           href: inventory/inventory-visibility.md
         - name: Install and set up Inventory Visibility
           href: inventory/inventory-visibility-setup.md
-        - name: Set up product search for Inventory Visibility (preview)
+        - name: Set up product search for Inventory Visibility
           href: inventory/inventory-visibility-product-search.md
         - name: The Inventory Visibility app in Power Apps
           items:
@@ -1729,7 +1729,7 @@
             href: inventory/inventory-visibility-power-platform.md
           - name: Use the Inventory Visibility app UI version 1
             href: inventory/inventory-visibility-power-platform-v1.md
-          - name: Search for products using the Inventory Visibility app (preview)
+          - name: Search for products using the Inventory Visibility app
             href: inventory/inventory-visibility-product-search-app.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
