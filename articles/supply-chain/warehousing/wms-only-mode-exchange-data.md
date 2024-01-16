@@ -21,25 +21,11 @@ ms.custom: bap-template
 
 Warehouse management only mode requires that you set up integration between external systems and the Microsoft Dynamics 365 Supply Chain Management system. The following categories of interactions are required:
 
-- Document data (such as purchase orders and sales orders)
 - Master data (such as product information)
+- Document data (such as purchase orders and sales orders)
 - Progress data (such as receiving, dispatch, and on-hand inventory information)
 
 Many different integration methodologies can be used for these three categories. This article describes the recommended integration process.
-
-## <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
-
-You can use inbound and outbound shipment order messages to inform Supply Chain Management about which physical inventory to receive and ship. These messages include both header data and lines data.
-
-Messages between systems are exchanged by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses (such as sales orders, purchase orders, and transfer orders). Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
-
-Inbound and outbound shipment order messages can be exchanged by using [Dataverse](/power-platform/admin/data-integrator). Alternatively, they can be exchanged through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities and/or by using the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process (for example, by using `Inbound shipment order messages composite entity` and `Outbound shipment order messages composite entity`).
-
-Supply Chain Management queues the incoming documents and then processes them by using the [message processor](warehouse-message-processor-messages.md). This approach ensures consistent data between the systems: both master data (such as products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job that the [message processor](../supply-chain-dev/message-processor.md) triggers by using the *Shipment orders* message queue.
-
-This following illustration shows how the message processor fits into an integrated system.
-
-:::image type="content" source="media/wms-only-shipment-order-integrations.svg" alt-text="Message processing diagram." lightbox="media/wms-only-shipment-order-integrations.svg":::
 
 ## <a name="master-data"></a>Master and reference data
 
@@ -50,7 +36,7 @@ For consistent communication, several types of master and reference data must be
 - `SourceSystemProductSpecificUnitOfMeasureConversionMessages` - Used to create product specific unit of measure conversions
 - `SourceSystemProductBarcodeMessages` - Used to create the product barcode setup
 
-This messages will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems) via the *Source system items* entity. As for the shipment order message processing the Source system product message processing status change can get monitored by the external system via [business events](#business-events).
+These messages will similar to the shipment orders be validated as part of the message processing and automatically enable the product information linking to a [source system record](wms-only-mode-setup.md#source-systems) via the *Source system items* entity. As for the shipment order message processing the source system product message processing status change can get monitored by the external system via [business events](#business-events).
 
 Only one [source system record](wms-only-mode-setup.md#source-systems) can be recorded as the external system maintaining the product master data related to the unique reference for a **Release product/Item number**, this data can be viewed and manually maintained in the **Source system items** page.
 
@@ -59,7 +45,8 @@ Only one [source system record](wms-only-mode-setup.md#source-systems) can be re
 >
 > When using the Warehouse Management mobile app the value in the *Source system item number* field can be used to lookup the internally used *Item/variant number* as well.
 
-Additionally you can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create a **Release product/Item number** going to be used in warehouse management processes. Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to for example get the mandatory reference fields assigned:
+Additionally you can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create a **Release product/Item number** going to be used in warehouse management processes:
+<!-- .40: Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to for example get the mandatory reference fields assigned: -->
 
 - **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management. Therefore, at least one group must be available. The group can control business processes for batch tracked item and it is recommended that each group that you use with Warehouse management only mode have the following settings. These settings eliminate the need to set up any costing data for the products:
 
@@ -98,6 +85,20 @@ Note that the *Inbound shipment order policies* as part of the *Source systems* 
 ### country/region
 
 To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses and import *Outbound shipment orders* you must as well have [**country/region**](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) defined in Supply Chain Management. The records are used in outbound shipment orders to create addresses. Depending on your [address setup](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might have to create additional data before you can import order messages (for example, to support state/province and county combinations).
+
+## <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
+
+You can use inbound and outbound shipment order messages to inform Supply Chain Management about which physical inventory to receive and ship. These messages include both header data and lines data.
+
+Messages between systems are exchanged by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses (such as sales orders, purchase orders, and transfer orders). Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
+
+Inbound and outbound shipment order messages can be exchanged by using [Dataverse](/power-platform/admin/data-integrator). Alternatively, they can be exchanged through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities and/or by using the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process (for example, by using `Inbound shipment order messages composite entity` and `Outbound shipment order messages composite entity`).
+
+Supply Chain Management queues the incoming documents and then processes them by using the [message processor](warehouse-message-processor-messages.md). This approach ensures consistent data between the systems: both master data (such as products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job that the [message processor](../supply-chain-dev/message-processor.md) triggers by using the *Shipment orders* message queue.
+
+This following illustration shows how the message processor fits into an integrated system.
+
+:::image type="content" source="media/wms-only-shipment-order-integrations.svg" alt-text="Message processing diagram." lightbox="media/wms-only-shipment-order-integrations.svg":::
 
 ## <a name="business-events"></a>Progress data and business events
 
