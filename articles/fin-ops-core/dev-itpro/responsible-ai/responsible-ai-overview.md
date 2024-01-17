@@ -10,8 +10,6 @@ ms.topic: article
 author: johnmichalak
 ms.author: johnmichalak
 ms.reviewer: johnmichalak
-ms.collection:
-  - bap-ai-copilot
 ---
 
 # Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform
