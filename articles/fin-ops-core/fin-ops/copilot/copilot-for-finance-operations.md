@@ -10,6 +10,8 @@ ms.date: 11/09/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Overview of Copilot capabilities in finance and operations apps
