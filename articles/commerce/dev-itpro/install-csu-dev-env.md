@@ -126,7 +126,7 @@ To update Commerce Data Exchange (CDX) data groups in headquarters, follow these
 
 1. Go to **Retail and Commerce \> Distribution Schedule**.
 1. Select the **Default Data** group.
-1. Remove the default database record from this group, which prevents future errors when trying to replicate to this database.
+1. Remove the default database record from this group, which will prevent future errors when trying to replicate to this database.
 		
 ### Execute sync jobs 
 
@@ -139,11 +139,9 @@ To execute sync jobs in headquarters, follow these steps.
 1. Select **OK** to schedule the job.  
 
 ## Install sealed CSU prerequisites
+The following steps need to be taken before we can run the Sealed CSU installer. 
 
-To install sealed CSU prerequisites, complete the following steps.
-
-### Install .NET Core hosting bundle on the development machine
-
+### Install .NET Core hosting bundle
 To install .NET Core hosting bundle on the development machine, follow these steps.
 
 1. Connect to the development machine using Remote Desktop Protocol (RDP).
@@ -165,7 +163,7 @@ To download the sealed self-hosted installer to the development machine and copy
 
 ## Install the sealed CSU
 
-The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Retail Transaction Service (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md)
+The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Retail Transaction Service (RTS) authentication. If you don't use a configuration file, then you must specify additional parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md) 
 
 To install the sealed CSU on the development machine, follow these steps.
 
@@ -173,10 +171,11 @@ To install the sealed CSU on the development machine, follow these steps.
 1. Change directory to C:\temp (for example, `CD C:\temp`).
 1. Execute the following command.
 
-`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" " --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate`
+`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<CSU Azure APP Client ID>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate`
 
 > [!NOTE]
 > Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
+> Do not enter port 80 or 443 during installation. Entering either of these values will break the AOS service hosting the F&O(Commerce HQ) Website. 
 
 
 
