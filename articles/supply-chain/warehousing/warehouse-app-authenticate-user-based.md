@@ -82,7 +82,10 @@ Create a user that corresponds to the user credentials for the Warehouse Managem
 SSO enables the potential for passwordless authentication by leveraging the reusability of credentials from Intune Company Portal ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal)).
 SSO is applicable exclusively to the `"UsernamePassword"` connection type (It doesn't work with `"DeviceCode"`).
 
-SSO requires additional configuration in your app registration.
+SSO requires additional configurations in your app registration and in the app itself.
+
+In app registration:
+
 1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
 1. Enter the name and password of the user who has access to the Azure subscription.
 1. In the Azure portal, on the left navigation pane, select **Microsoft Entra ID**.
@@ -98,6 +101,10 @@ SSO requires additional configuration in your app registration.
 1. Set **Signature hash** `hpavxC1xAIAr5u39m1waWrUbsO8=`
 1. Select **iOS / macOS**
 1. Set **Bundle ID** `com.microsoft.WarehouseManagement`
+
+In the app:
+
+Ensure that you enable **Brokered Authentication** inside the application connection edit screen or include `"UseBroker": true` into your [Connections.json](install-configure-warehouse-management-app.md#create-a-connection-settings-file-or-qr-code) file for for the required connection.
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using the device code flow
 
