@@ -2,10 +2,10 @@
 title: Submit a VAT return in XML format to the Danish Tax Agency
 description: This article describes how to set up, generate, and submit a value-added tax (VAT) declaration for Denmark in XML format.
 author: liza-golub
-ms.date: 08/22/2023
+ms.date: 01/17/2024
 ms.topic: article
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: egolub
 ms.search.validFrom: 
@@ -34,7 +34,7 @@ To submit your VAT return directly to the Danish Tax Agency, you must delegate r
 
 Before you start to prepare your Finance environment for direct submission of VAT return, you must set up Power Platform Integration for the environment in the LCS and install “Electronic Invoicing” add-in.
 
-To set up Power Platform Integration for your Finance environemnt, see the [Connect finance and operations apps with a new Microsoft Dataverse instance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) topic. 
+To set up Power Platform Integration for your Finance environment, see the [Connect finance and operations apps with a new Microsoft Dataverse instance](../../..//fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md) topic. 
 
 To install “Electronic Invoicing” add-in, see the [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md) topic.
 
