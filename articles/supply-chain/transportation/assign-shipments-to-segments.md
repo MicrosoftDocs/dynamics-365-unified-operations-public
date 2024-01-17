@@ -16,13 +16,16 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how the system apportions freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process.
+This article describes how to configure the system to apportion freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process. It also describes how this feature works.
 
-To use this feature, please follow below steps:
+## Enable the feature
 
-1. Go to **Transportation management > Setup > Transportation management parameters > General**.
-2. In the shipment fasttab, enable parameter **Assign shipment to related route segments**.
-3. Click save.
+To use this configure the system to apportion freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process, follow these steps:
+
+1. Go to **Transportation management \> Setup \> Transportation management parameters**.
+1. Open the **General** tab.
+1. On the **Shipment** FastTab, set **Assign shipment to related route segments** to *Yes*.
+1. On the Action Pane, select **Save**.
 
 ## How shipments are assigned to route segments
 
