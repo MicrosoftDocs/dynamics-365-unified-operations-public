@@ -20,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: elgolub
+ms.author: egolub
 ms.search.validFrom: 2022-20-06
 ms.dyn365.ops.version: AX 10.0.21
 
