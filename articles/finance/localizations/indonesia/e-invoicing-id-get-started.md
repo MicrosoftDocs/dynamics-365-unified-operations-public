@@ -162,25 +162,29 @@ To configure the Vendor invoice feature setup, you should already have created a
 4. Select **Global resource** \> **Open**.
 5. Import the following configurations:
 
-    - Customer invoice context model
-    - Invoice model
+    - Customer invoice context model      
+    - Invoices Communication Model
     - Vendor invoice Mapping to destination
     - Vendor invoice import (ID), Vendor invoice import XML (ID)
 
 ### Turn on the feature for processing Indonesian electronic invoices
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-2. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
+1. Go to **Feature management** and enable feature **Electronic document batch submission**.
+2. Additionally feature **Electronic documents configuration per legal entities in Electronic Invoicing** to configure Electronic document parameters on a legal entity basis.
+3. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+4. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
+
 
 ### Set up the processing for Indonesian electronic sales invoices
 
 1. Go to **Organization administration** \> **Setup**\ > **Electronic document parameters**.
 2. On the **Electronic document** tab, select **Add**, and enter the customer invoice journal.
 3. Optional: Select **Add** again, and enter the project invoice journal.
-4. In the **Batch submission ID** section, add a number sequence. The selected number sequence should be continuous. This number sequence is used to number the invoice batches when the system exports them.
-5. Select **Save**.
+4. Select **Batch submission** checkbox
+5. In the **Batch submission ID** section, add a number sequence. The selected number sequence should be continuous. This number sequence is used to number the invoice batches when the system exports them.
+6. Select **Save**.
 
-    ![Setting up the processing for electronic sales invoices.](../media/apac-idn-rcs-electronic-document-parameters.png)
+    ![Setting up the processing for electronic sales invoices.](../media/idn-eis-electronic-document-parameters.jpg)
 
 ### Set up the processing for Indonesian electronic vendor invoices
 
@@ -228,9 +232,8 @@ When issued invoices or imported vendor invoices are processed through Electroni
 ### Submit or export issued invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. Set the **Submit document batch** option to **Yes** to export invoices in batch. Otherwise, each invoice is exported separately. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+2. Set the **Submit document batch** option to **Yes** to export invoices in batch. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
 3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for export.
-4. Go to **System administration** \> **Setup** \> **Business events** \> **Business events parameters**, and then select **Business events batch job**. If you set up the Business event batch processor, this job can be run in batch mode.
 
 ### View submission logs
 
