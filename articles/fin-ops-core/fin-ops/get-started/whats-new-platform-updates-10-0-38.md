@@ -31,6 +31,7 @@ This section will contain a table that lists the features that are included in t
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Client | Bulk editing for grids | [Grid capabilities](grid-capabilities.md) | Feature management | 
+| Data Management | Truncate staging tables from Data Management menu | This feature allows Data Management Administrators to directly truncate the staging table associated with a data entity. The option is available in the Data Entities menu within the Data Management workspace. This action will remove all records from the staging table for the selected entity and should be used with caution. Currently running data import/export jobs involving the selected staging table (imports or exports through staging) is impacted if the staging table is truncated. Ensure there aren't any currently running jobs that involve this staging table before using this feature. | On by default|
 
 ## Feature enhancements included in this release
 

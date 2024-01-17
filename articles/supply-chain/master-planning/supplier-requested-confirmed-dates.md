@@ -1,5 +1,5 @@
 ---
-title: Calculate requested ship dates for purchase orders (preview)
+title: Calculate requested ship dates for purchase orders
 description: This article describes how the system calculates requested ship dates for purchase orders. It also explains how to set up this calculation.
 author: t-benebo
 ms.author: benebotg
@@ -12,20 +12,15 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Calculate requested ship dates for purchase orders (preview)
+# Calculate requested ship dates for purchase orders
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!--KFM: Preview until 10.0.38 GA -->
 
 Purchase orders in Microsoft Dynamics 365 Supply Chain Management can include both a *requested receipt date*, which specifies when the order should be received at your company's location, and a *requested ship date*, which specifies when the vendor should ship from their location. The system calculates requested ship dates based on the requested receipt date, lead time, the transport days setup, the vendor ship calendar, and other settings. The transport days setup lets you define the number of days that are required to transport items between pairs of addresses. Vendor ship calendars define the days when each vendor can ship.
 
 If any of your vendors don't have specific delivery terms (such as delivery duty paid, delivery at place, or delivery at place unloaded), you must tell them when they should ship.
 
 When master planning suggests a date for placing a planned order, it also considers the transport days setup. This approach helps ensure that the goods arrive on time.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 

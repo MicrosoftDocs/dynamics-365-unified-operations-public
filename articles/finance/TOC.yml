@@ -4327,8 +4327,12 @@
         items: 
         - name: Creating cubes
           href: business-performance-planning/create-cubes.md
+        - name: Load data using dataflows
+          href: business-performance-planning/load-data-dataflows.md
       - name: Power BI Visuals
         items:
+        - name: Overview
+          href: business-performance-planning/bpp-customs-visual-overview.md
         - name: Matrix
           href: business-performance-planning/matrix-planning.md
         - name: Graphical planning

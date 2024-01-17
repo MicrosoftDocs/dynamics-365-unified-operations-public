@@ -66,11 +66,7 @@ The following options for identifying the source document lines are available:
 > [!NOTE]
 > You can add multiple items to a license plate for all the source document line identification methods. However, although you can change the receiving order on a single license plate during the receiving process for all the other methods, you can't change the selected load for the *Load item receiving* method.
 
-## <a name="deferred-receiving-processing"></a>Deferred receiving processing (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!-- KFM: Preview until 10.0.38 GA -->
+## <a name="deferred-receiving-processing"></a>Deferred receiving processing
 
 The deferred receiving process lets you, for example, optimize the process of receiving shipments that include order lines for many items and/or serial numbers by assigning a **Deferred receiving policy ID** value to your mobile device menu item. In a scenario that involves several thousand serial numbers, the system quickly records the serial numbers and stores the information in the *mixed license plate receiving* entities. It then processes on-hand inventory updates and creates work in the background, so that warehouse workers can continue to do other work. Deferred receiving processing is useful for warehouse processes where different workers are responsible for inbound receiving and putaway.
 
@@ -81,8 +77,6 @@ You can configure mobile device menu items that use one of the following **Work 
 - *Transfer order item receiving*
 - *Transfer order line receiving*
 - *Load item receiving*
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Prerequisites
 

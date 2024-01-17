@@ -1,5 +1,5 @@
 ---
-title: Search for products using the Inventory Visibility app (preview)
+title: Search for products using the Inventory Visibility app
 description: This article describes how to search for products by using the Inventory Visibility app in Microsoft Power Apps.
 author: Weijiesa
 ms.author: weijiesa
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Search for products using the Inventory Visibility app (preview)
+# Search for products using the Inventory Visibility app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until Jan 2024 -->
 
 The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. It provides the following benefits:
 
@@ -26,8 +23,6 @@ The *product search* feature lets users search for products and on-hand inventor
 - **Increased product visibility** – Attribute-based search can highlight products that are less often searched for but still potentially relevant. Therefore, users are exposed to a broader range of options that they might not have considered.
 
 This feature is accessible both through the Inventory Visibility app in Microsoft Power Apps and through the [API](inventory-visibility-api.md#product-search-query). This article describes how to search for products by using the Inventory Visibility app in Power Apps.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 

@@ -21,8 +21,6 @@ items:
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-38.md
         - name: Platform updates for version 10.0.37 (November 2023)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-37.md
-        - name: Platform updates for version 10.0.36 (September 2023)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-36.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -243,6 +241,8 @@ items:
         items:
         - name: Clean up data management job history 
           href: data-entities/clean-up-data.md
+        - name: Clean up staging tables
+          href: data-entities/staging-tables.md
         - name: Data import and export jobs overview
           href: ../fin-ops/data-entities/data-import-export-job.md
         - name: Data import and export parameters 
