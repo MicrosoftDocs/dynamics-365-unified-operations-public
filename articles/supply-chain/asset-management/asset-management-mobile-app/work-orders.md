@@ -82,8 +82,8 @@ The **Jobs** tab of the job details page includes the following UI elements. The
 1. **Work order state** – This section shows the current state of the work order.
 1. **Change work order state button** – Select this button to change the state of the parent work order for the current job. You'll typically use this button to mark the work order as completed or to note a problem that prevents it from being completed.
 1. **Go to work order button** – Select this button to open the work order that the current job belongs to.
-1. **See jobs for this asset button** – Select this button to view a list of all open maintenance jobs that are associated with the same asset as the current job. This list includes jobs that are assigned to other workers.
-1. **See jobs for this location** – Select this button to view a list of all open maintenance jobs that are associated with the same location as the current job. This list includes jobs that are assigned to other workers.
+1. **See jobs for this asset button** – Select this button to view a list of all open maintenance jobs that are associated with the same asset as the current job. This list only includes jobs that are assigned to you.
+1. **See jobs for this location** – Select this button to view a list of all open maintenance jobs that are associated with the same location as the current job. This list only includes jobs that are assigned to you.
 
 ### Maintenance checklist
 
