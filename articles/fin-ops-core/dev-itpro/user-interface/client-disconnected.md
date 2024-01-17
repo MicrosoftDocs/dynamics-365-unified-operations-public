@@ -4,7 +4,6 @@ description: This article covers what will happen if a client machine cannot acc
 author: jasongre
 ms.date: 05/05/2020
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer
 ms.reviewer: josaw
@@ -13,7 +12,7 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---
