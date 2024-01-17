@@ -4,7 +4,6 @@ description: This article describes what happens when a client machine can't acc
 author: jasongre
 ms.date: 01/10/2024
 ms.topic: article
-ms.service: dynamics-365
 ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
@@ -30,13 +29,13 @@ The configuration of the local network for a deployment of Dynamics 365 Finance 
 + The Ideas portal isn't accessible from the web client. 
 + Users see their initials instead of a user image. 
 + The favorite icon shown in the browser tab is the browser's default favorite icon instead of the application icon. 
-+ The Open in Excel options are hidden because the Excel Add-in will not run.
++ The Open in Excel options are hidden because the Excel Add-in won't run.
 
-There also maybe application features that rely on an internet connection that developers need to hide or turn-off. Developers can use the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method returns true if the client doesn't have access to the internet.
+There also maybe application features that rely on an internet connection that developers need to hide or turn-off. Developers can use the **clientHasRestrictedInternet()** method that's added to the **Session** class. This method returns true if the client doesn't have access to the internet.
 
 ## Client internet connectivity options
 
-Client internet connectivity options allow administrators to manually turn-off the external connections that the client makes even when internet connectivity is available. This can be used for troubleshooting issues or to see what the client will look like when internet connectivity isn't available. 
+Client internet connectivity options allow administrators to manually turn-off the external connections that the client makes even when internet connectivity is available. This can be used for troubleshooting issues or to see what the client looks like when internet connectivity isn't available. 
 
 The client internet connectivity options can be found on the **System administration** > **Setup** > **Client performance options**  page.
 
