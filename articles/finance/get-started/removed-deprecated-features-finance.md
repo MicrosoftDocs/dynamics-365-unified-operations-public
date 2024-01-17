@@ -43,11 +43,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Sales tax report for Estonia (design based on reporting codes)
 
-[Sales tax report for Estonia](../localizations/emea-est-vat-statement-details.md)
+[Sales tax report for Estonia](../localizations/estonia/emea-est-vat-statement-details.md)
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Estonia](../localizations/emea-est-vat-declaration.md). | 
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Estonia](../localizations/estonia/emea-est-vat-declaration.md). | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
