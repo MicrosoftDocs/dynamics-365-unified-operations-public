@@ -3,11 +3,11 @@ title: VAT declaration for Estonia
 description: This article explains how to set up a VAT declaration for legal entities in Estonia.
 author: liza-golub
 ms.date: 01/15/2024
-ms.topic: article
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.author: egolub
 ms.search.validFrom: 2024-01-15
@@ -16,7 +16,7 @@ ms.custom: 266904
 ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
 ---
 
-# VAT declarationfor Estonia
+# VAT declaration for Estonia
 
 [!include [banner](../../includes/banner.md)]
 
@@ -163,7 +163,7 @@ The process of setting up the **Electronic messages** functionality to generate 
 > [!NOTE]
 > Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **EE VAT declaration - KMD - EM setup v.#**. The downloaded file is named **EE VAT declaration - KMD - EM setup v.#.zip**. Always dowload the latest version of the package that is available on the LCS.
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **EE VAT declaration - KMD - EM setup v.#**. The downloaded file is named **EE VAT declaration - KMD - EM setup v.#.zip**. Always download the latest version of the package that is available on the LCS.
 2. In Finance, in the **Data management** workspace, select **Import**.
 3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
 4. On the **Selected entities** FastTab, select **Add file**.
@@ -220,8 +220,8 @@ If the VAT registration number isn't specified in the **Tax registration number*
 | Field | Description |
 |---|---|
 | **Report composition** | Select one or multiple from the lookup list of values to define which parts must be included into the report:<br>	- Declaration body<br>	- Sales Annex - Part A<br>	- Purchases Annex - Part B |
-| **Summarize sales per partner** | Select this checkbox to report information in Sales Annexes grouped by partne. If this checkbox is selected, the invoice number and date are not mandatory fields in part A and amounts are summarized per partner. |
-| **Summarize purchases per partner** | Select this checkbox to report information in Sales Annexes grouped by partne. If this checkbox is selected, the invoice number and date are not mandatory fields in part B and amounts are summarized per partner. |
+| **Summarize sales per partner** | Select this checkbox to report information in Sales Annexes grouped by partner. If this checkbox is selected, the invoice number and date are not mandatory fields in part A and amounts are summarized per partner. |
+| **Summarize purchases per partner** | Select this checkbox to report information in Sales Annexes grouped by partner. If this checkbox is selected, the invoice number and date are not mandatory fields in part B and amounts are summarized per partner. |
 | **Number of cars used for business purposes** | Specify the number of cars acquired for business purposes (100%). When not specified, system collects the number from referred inventory transactions. |
 | **Number of cars used partially for business purposes** | Specify the number of cars acquired for business purposes partially. When not specified, system collects the number from referred inventory transactions. |
 | **Invoice threshold** | Specify threshold to apply for reporting invoices in Sales Annex and Purchase Annex. Invoices with amounts below the threshold specified are not included into the Annexes. |
