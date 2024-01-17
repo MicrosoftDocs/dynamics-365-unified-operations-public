@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 01/12/2024
+ms.date: 01/17/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -139,9 +139,11 @@ To execute sync jobs in headquarters, follow these steps.
 1. Select **OK** to schedule the job.  
 
 ## Install sealed CSU prerequisites
-The following steps need to be taken before we can run the Sealed CSU installer. 
+
+Before you can run the Sealed CSU installer, you must complete the following steps. 
 
 ### Install .NET Core hosting bundle
+
 To install .NET Core hosting bundle on the development machine, follow these steps.
 
 1. Connect to the development machine using Remote Desktop Protocol (RDP).
@@ -175,9 +177,7 @@ To install the sealed CSU on the development machine, follow these steps.
 
 > [!NOTE]
 > Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
-> Do not enter port 80 or 443 during installation. Entering either of these values will break the AOS service hosting the F&O(Commerce HQ) Website. 
-
-
+> Don't enter port 80 or 443 during installation. Entering either of these values interferes with the application object server (AOS) service that hosts the Commerce headquarters website. 
 
 ## Database restores from UAT
 
