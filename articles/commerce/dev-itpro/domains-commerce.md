@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/14/2023
+ms.date: 01/17/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -29,7 +29,7 @@ Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a w
 When you provision an e-commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** box on the e-commerce provisioning screen is used to enter domains associated with the deployed Commerce environment. These domains are the customer-facing Domain Name Server (DNS) names where e-commerce websites are hosted. Entering a domain at this stage doesn't start diverting traffic for the domain to Dynamics 365 Commerce. Traffic for a domain is only routed to the Commerce endpoint when the DNS CNAME record is updated to use the Commerce endpoint with the domain.
 
 > [!NOTE]
-> Multiple domains can be entered into the **Supported host names** box by separating them with semi-colons.
+> You can enter multiple domains in the LCS **Supported host names** box by separating them with semi-colons. The first domain you enter defaults to the URL generated for your environment. You can access any subsequent domains using the `?domain=` URL string attribute. For more information, see [Domains in site builder](#domains-in-site-builder).
 
 The following illustration shows the LCS e-commerce provisioning screen with the **Supported host names** box highlighted. 
 
@@ -97,9 +97,9 @@ The following illustration shows the **URLs** page in site builder with an examp
 
 The supported host names values are available to be associated as a domain when setting up a site. When selecting a supported host name value as the domain, you can see the chosen domain referenced throughout site builder. This domain is only a reference within the Commerce environment, live traffic for that domain isn't yet forwarded to Dynamics 365 Commerce.
 
-When working with sites in site builder, if you have two sites set up with two different domains, you can append the **?domain=** attribute to your working URL to access the published site content in a browser.
+When working with sites in site builder, if you have two sites set up with two different domains, you can append the `?domain=` attribute to your working URL to access the published site content in a browser.
 
-For example, environment "xyz" is provisioned, and two sites are created and associated in site builder: one with the domain `www.fabrikam.com` and the other with the domain `www.constoso.com`. Each site was set up using a blank path. These two sites could then be accessed in a web browser as follows using the **?domain=** attribute:
+For example, environment "xyz" is provisioned, and two sites are created and associated in site builder: one with the domain `www.fabrikam.com` and the other with the domain `www.constoso.com`. Each site was set up using a blank path. These two sites could then be accessed in a web browser as follows using the `?domain=` attribute:
 - `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
 - `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
@@ -131,7 +131,7 @@ For information about how to set up a CDN service directly, see [Add support for
 To use the Commerce-supplied Azure Front Door instance, you must create a service request for CDN setup assistance from the Commerce onboarding team. 
 
 - You must provide your company name, the production domain, environment ID, and production e-commerce tenant name. 
-- You must to confirm if this service request is for an existing domain (used for a currently active site) or a new domain. 
+- You must confirm if this service request is for an existing domain (used for a currently active site) or a new domain. 
 - The domain verification and SSL certificate are obtained via DNS TXT record verification. This process involves multiple sequential steps and it has a seven working day service level agreement (SLA) for a domain to go live. The process consists of the following steps:
   1. You create a support ticket requesting the domain setup.
   1. Microsoft support contacts you with the DNS record to verify the domain.
@@ -175,7 +175,7 @@ The Commerce-supplied Azure Front Door instance doesn't support apex domains (ro
 > [!NOTE]
 > If you are using Azure Front Door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure Front Door as an alias record. This is the only work around, as apex domains must always point to an IP address.
   
-If you have any questions regarding Apex domains, please reach out to [Microsoft Support](https://support.microsoft.com/).
+If you have any questions regarding Apex domains, contact [Microsoft Support](https://support.microsoft.com/).
 
   ## Additional resources
 
