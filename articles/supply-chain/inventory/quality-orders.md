@@ -133,8 +133,8 @@ To work with quality orders that are related to your quarantine orders, go to **
 
 To work with quality orders that are related to your goods-in-transit orders, follow any of these steps:
 
-- Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order in the grid. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
-- Go to **Landed cost \> Voyages \> All voyages**, and then open a voyage or select a voyage in the gird. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order in the grid. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
+- Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
+- Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
 
 ## Advanced actions for quality orders
 

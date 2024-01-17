@@ -47,13 +47,11 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 Supply Chain Management doesn't include any rate engines. You must obtain or create any rate engines that you require, and then add them to your system. However, Microsoft provides a demo rate engine that you can use for testing.
 
-#### Download the demo rate engine
+#### Download and deploy the demo rate engine
 
-Go to [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS) on GitHub and download the demo rate engine.
+Follow these steps to download and deploy the demo rate engine.
 
-#### Deploy the demo rate engine
-
-Follow these steps to deploy the demo rate engine using Visual Studio.
+1. On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS).
 
 1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Model Management \> Create Model**.
 
