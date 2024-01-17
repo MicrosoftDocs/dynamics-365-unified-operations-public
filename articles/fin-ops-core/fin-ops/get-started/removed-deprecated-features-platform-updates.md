@@ -37,6 +37,19 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Feature deprecation effective May 2024
+
+### Deprecating support of unregistered MSA and External Microsoft Entra users in Finance and operations apps
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | As part of our ongoing efforts to enhance the security and performance of Finance and operations apps, we're announcing deprecation of support to unregistered MSA and externals Microsoft Entra users in Finance and operations apps due to its relative obscurity and complexity associated with this feature in authorization scenario |
+| **What is changing?**   | If a [Microsoft Accounts (MSA)](https://learn.microsoft.com/en-us/azure/active-directory/external-identities/microsoft-account) or [Azure Active Directory (AAD ) accounts](https://learn.microsoft.com/en-us/azure/active-directory/external-identities/default-account) that are not registered in your AAD tenant, you will not be able to access Finance and Operations apps. You will see an error message like `AADSTS50020: user account ‘contoso@contoso.com; from identity provider ‘https://sts.windows.net/{tenant Id}/’ does not exist in tenant ‘{tenant name}’ and cannot access the application ‘{application Id}’(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account.The User will be blocked at the Microsoft Entra ID Tenant Level. This change does not affect [GDAP](https://learn.microsoft.com/en-us/partner-center/gdap-introduction) or CSP users.
+| **What do you need to do**         | Finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Microsoft Entra ID portal. If a user who is not part of your Microsoft Entra ID needs access to Finance and Operation, the User needs to be added to the Microsoft Entra ID Tenant as an external User or Guest User using this [article](https://learn.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b/). We will also share instructions for identifying unregistered MSA and External Microsoft Entra ID users in version 10.0.39 or later of finance and operations. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. End of support date is targeted for May 2024. |
+
 ## Feature deprecation effective March 2024
 
 ### Non-Azure AD external user sign-in 
