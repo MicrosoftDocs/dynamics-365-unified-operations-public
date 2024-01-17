@@ -133,7 +133,7 @@ The positive days also affect the action messages. For example, the system might
 
 As a rule, the positive days are set to a number that is between the longest lead time of the items and the coverage time fence. We recommend that you assign items that are regularly procured or produced to a coverage group where the positive days equal the item's lead time.
 
-<!-- KFM: Section needed with link to  [Dynamic positive days for last-minute orders (preview)](dynamic-positive-days.md)
+<!-- KFM: Section needed with link to  [Dynamic positive days for last-minute orders](dynamic-positive-days.md)
 
 ### Dynamic positive days
 
@@ -157,9 +157,6 @@ Lead time + Negative days + Current date – Requirement date
 
 The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that it will include the individual product lead time, to reuse existing orders and avoid creating new planned orders that will end up with a later day, due to delays caused by lead time.
 
-For more information, see [Negative days and dynamic negative days](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+For more information, see [Negative days and dynamic negative days](more-about-dynamic-negative-days.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
