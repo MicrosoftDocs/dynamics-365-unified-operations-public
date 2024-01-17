@@ -28,7 +28,7 @@ Before you start to prepare your Finance environment for direct submission of VA
 
 ### Delegate rights to RSU at skat.dk
 
-To submit your VAT return directly to the Danish Tax Agency, you must delegate rights to RSU (Regnskabssystemsudbyder / Accounting system provider). This is done on skat.dk. A guide on how to delegate rights to an RSU is published on [skat.dk portal](https://skat.dk/erhverv/moms/momsregnskab) and can also be found by the link: https://info.skat.dk/data.aspx?oid=2339573&chk=219318. Delegate the “NemVirksomhed - adgang for regnskabssystemudbyder” to the following CVR: `13612870` to be able to submit your VAT return directly from your Microsoft Dynamics 365 Finance to NemVirksomhed APIs.
+To submit your VAT return directly to the Danish Tax Agency, you must delegate rights to RSU (Regnskabssystemsudbyder / Accounting system provider). This is done on skat.dk. A guide on how to delegate rights to an RSU is published on [skat.dk portal](https://skat.dk/erhverv/moms/momsregnskab) and can also be found by the link: [https://info.skat.dk/data.aspx?oid=2339573&chk=219318](https://info.skat.dk/data.aspx?oid=2339573&chk=219318). Delegate the “NemVirksomhed - adgang for regnskabssystemudbyder” to the following CVR: `13612870` to be able to submit your VAT return directly from your Microsoft Dynamics 365 Finance to NemVirksomhed APIs.
 
 ### Set up Power Platform Integration for the environment in the LCS and install “Electronic Invoicing” add-in
 
@@ -36,7 +36,7 @@ Before you start to prepare your Finance environment for direct submission of VA
 
 To set up Power Platform Integration for your Finance environment, see the [Connect finance and operations apps with a new Microsoft Dataverse instance](../../..//fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md) topic. 
 
-To install “Electronic Invoicing” add-in, see the [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md) topic.
+To install **Electronic Invoicing** add-in, see the [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md) topic.
 
 ### Upgrade your Dynamics 365 Finance
 
@@ -148,7 +148,7 @@ Before you use these classes for the first time, you must save the parameters.
 3. Select **OK** in the dialog box for each executable class to save the specified parameters.
 
 > [!IMPORTANT]
-> By clicking OK, you will access a third-party service and you agree: (a) to share your data with an external system that is governed by the third party's terms and privacy policy with you; and (b) any data imported from the external system into Microsoft Dynamics 365 is subject to Microsoft's privacy statement that can be accessed here. Please consult the feature technical documentation for more information about this feature.
+> By selecting OK, you will access a third-party service and you agree: (a) to share your data with an external system that is governed by the third party's terms and privacy policy with you; and (b) any data imported from the external system into Microsoft Dynamics 365 is subject to Microsoft's privacy statement that can be accessed here. Consult the feature technical documentation for more information about this feature.
 
 ### <a id="security-roles"></a>Set up security roles for electronic message processing
 
