@@ -2397,7 +2397,7 @@
           - name: Personal information requests
             href: localizations/estonia/emea-est-personal-info.md
           - name: VAT declaration
-            href: localizations/estonia/eemea-est-vat-declaration.md
+            href: localizations/estonia/emea-est-vat-declaration.md
           - name: Estonian Intrastat
             href: localizations/estonia/emea-est-intrastat.md  
           - name: EU sales list
