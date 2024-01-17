@@ -6,8 +6,7 @@ description: This article provides the detailed process for upgrading on-premise
 author: laneswenka
 ms.date: 01/14/2021
 ms.topic: article
-ms.prod: dynamics-365
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
