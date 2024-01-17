@@ -2,19 +2,14 @@
 title: Apply inventory settings
 description: This article covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/31/2022
+ms.date: 01/17/2024
 ms.topic: article
-ms.prod:
-ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version:
-ms.custom:
-ms.assetid:
-ms.search.industry:
+
 ---
 
 # Apply inventory settings
@@ -36,7 +31,7 @@ In Commerce site builder, inventory thresholds and ranges can be defined for a p
 
 In Commerce, inventory settings are defined at **Site Settings \> Extensions \> Inventory Management** in site builder. There are six inventory settings, one of which is obsolete (deprecated):
 
-- **Enable stock check in app** – This setting turns on a product inventory check. Buy box, cart, and pick up in store modules will then check product inventory, and will allow a product to be added to the cart only if inventory is available. Inventory levels will only display if this setting is turned on.
+- **Enable stock check in app** – This setting turns on a product inventory check. Buy box, cart, and pick up in store modules will then check product inventory, and will allow a product to be added to the cart only if inventory is available. Inventory levels only display if this setting is turned on.
 - **Inventory level based on** – This setting defines how inventory levels are calculated. The available values are **Total Available**, **Physical Available**, and **Out of stock threshold**. In Commerce, inventory threshold and ranges can be defined for each product and category. The inventory APIs return product inventory information for both the **Total Available** property and the **Physical Available** property. The retailer decides whether the **Total Available** or **Physical Available** value should be used to determine the inventory count and the corresponding ranges for in-stock and out-of-stock statuses.
 
     The **Out of stock threshold** value of the **Inventory level based on** setting is an old (legacy), obsolete value. When it's selected, the inventory count is determined from the results of the **Total Available** value, but the threshold is defined by the **Out of stock threshold** numeric setting that is described later. This threshold setting applies to all products across an e-commerce site. If inventory is below the threshold number, a product is considered out of stock. Otherwise, it's considered in stock. The capabilities of the **Out of stock threshold** value are limited, and we don't recommend that you use it in version 10.0.12 and later.
