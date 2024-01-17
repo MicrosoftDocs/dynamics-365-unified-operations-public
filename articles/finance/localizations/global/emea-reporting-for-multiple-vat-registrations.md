@@ -2,7 +2,7 @@
 title: Reporting for multiple VAT registrations
 description: This article provides information about reporting for multiple value-added tax (VAT) registrations.
 author: liza-golub
-ms.date: 04/18/2023
+ms.date: 01/17/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
