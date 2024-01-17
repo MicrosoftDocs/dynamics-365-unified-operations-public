@@ -4,7 +4,6 @@ description: This article describes the process of developing customizations and
 author: gianugo
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,7 +13,7 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.custom: 107013
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

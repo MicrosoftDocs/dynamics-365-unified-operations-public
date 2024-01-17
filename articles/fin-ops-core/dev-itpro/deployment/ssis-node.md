@@ -5,8 +5,7 @@ description: This article explains how to add a Microsoft SQL Server Integration
 author: ttreen
 ms.date: 08/17/2023
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
