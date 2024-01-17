@@ -220,7 +220,7 @@ This section provides information that will help you set up and configure the pr
     4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the **App Registration Certificate** .cer file for S2S authentication.
     5. Go to **Enterprise applications**, and select the app that you created.
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
-    7. The Invoicing Service team must grant the app access to the service. Send the values of the following parameters to <D365EInvoiceSupport@microsoft.com>:
+    7. Microsoft team must grant the app access to the service. Please raise a support request with Microsoft including the values of following parameters:
 
         - AAD Tenant ID
         - LCS Environment ID
