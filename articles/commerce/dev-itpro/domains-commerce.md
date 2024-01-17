@@ -29,7 +29,7 @@ Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a w
 When you provision an e-commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** box on the e-commerce provisioning screen is used to enter domains associated with the deployed Commerce environment. These domains are the customer-facing Domain Name Server (DNS) names where e-commerce websites are hosted. Entering a domain at this stage doesn't start diverting traffic for the domain to Dynamics 365 Commerce. Traffic for a domain is only routed to the Commerce endpoint when the DNS CNAME record is updated to use the Commerce endpoint with the domain.
 
 > [!NOTE]
-> You can enter multiple domains in the LCS **Supported host names** box by separating them with semi-colons. The first domain entered defaults to the URL generated for your environment. You can access any subsequent domains using the `?domain=` URL string attribute. For more information, see [Domains in site builder](#domains-in-site-builder).
+> You can enter multiple domains in the LCS **Supported host names** box by separating them with semi-colons. The first domain you enter defaults to the URL generated for your environment. You can access any subsequent domains using the `?domain=` URL string attribute. For more information, see [Domains in site builder](#domains-in-site-builder).
 
 The following illustration shows the LCS e-commerce provisioning screen with the **Supported host names** box highlighted. 
 
