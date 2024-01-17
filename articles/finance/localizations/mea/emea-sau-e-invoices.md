@@ -89,6 +89,11 @@ If the **Enterprise ID (COID)** registration category already exists and has bee
 2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
 4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification.
+5. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
+6. Define exempt codes that will be used in the event of non-taxable, zero-rated or exempted operations.
+
+> [!NOTE]
+> The exempt codes have to be defined in the system without fixed "VATEX-SA-" prefix which is the same for all tax exempt codes in Saudi Arabia. For example, enter only "32" in the system if you need to define  the "VATEX-SA-32" (Export of goods). The system will automatically generate the full "VATEX-SA-32" code while creating the output XML files for electronic invoices.
 
 ## Configure unit codes
 
