@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 11/03/2023
+ms.date: 1/17/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -128,7 +128,7 @@ Users have always been able to export data from grids in finance and operations 
 - If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid.
 
 > [!NOTE]
-> This functionality cannot be used currently in some specific situations (e.g. in grids using the segmented entry control like General journal lines).  
+> Currently, this functionality can't be used in specific situations. For example, in grids using the segmented entry control like General journal lines.  
 
 ### Copying from a grid in the product
 Grids in finance and operations apps support a range selection capability that resembles the corresponding feature in Excel. This capability enables users to use the keyboard to select a range of cells (multiple rows and columns), which can then be copied and pasted as required.  
