@@ -104,14 +104,15 @@ The onboarding process consists of two steps:
     > For any other case, use the values as instructed above.
 
 8. Run the [onboarding script](#script) that is provided later in this article. Specify the OTP and configuration file as input parameters. Here is an example:
-
+   Script has two possible endpoints **simulation** & **prod**
+   
     `.\OnboardingScript.ps1 -action getComplianceCSID -endpoint prod -otp 123345 -csrconfig .\csr_config.txt -password 123`
 
     > [!NOTE]
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
-9. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
-10. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
+10. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
+11. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
 
 ### Compliance check
 
@@ -142,14 +143,15 @@ To obtain a PCSID, you must correctly configure the solution for electronic invo
 
 1. Make sure that all electronic invoices are successfully submitted to ZATCA.
 2. Run the [onboarding script](#script) that is provided later in this article. Specify the CCSID as an input parameter. Here is an example:
-
+   Script has two possible endpoints **simulation** & **prod**
+   
     `.\OnboardingScript.ps1 -action getProductionCSID -endpoint prod -password 123`
 
     > [!NOTE]
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
-3. The PCSID is received as a certificate file in PFX format. Save this PCSID certificate and secret file in the Azure key vault.
-4. Configure the related feature setup in the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. Include the PCSID certificate and secret in the key vault parameters in RCS.
+4. The PCSID is received as a certificate file in PFX format. Save this PCSID certificate and secret file in the Azure key vault.
+5. Configure the related feature setup in the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. Include the PCSID certificate and secret in the key vault parameters in RCS.
 
 After you complete all the configurations steps, the system is ready to be used in production mode.
 
