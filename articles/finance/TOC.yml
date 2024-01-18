@@ -3304,10 +3304,10 @@
                 href: localizations/tasks/set-up-master-data-inclusion.md
               - name: Maintain fixed asset master data files for deductible expenses
                 href: localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
-              - name: Inquire on deductible expenses
-                href: localizations/tasks/inquiry-deductible-expenses.md
               - name: Periodic settlement of over and under depreciation
                 href: localizations/tasks/periodic-settlement-over-under-depreciation.md
+              - name: Inquire on deductible expenses
+                href: localizations/tasks/inquiry-deductible-expenses.md
             - name: Fixed asset reporting
               items:
               - name: Form 26 for depreciable tax declaration
