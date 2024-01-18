@@ -43,9 +43,9 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. In the **Manage** list, select **App registrations**.
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
-1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
+1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*. 
 1. In the **Manage** list, select **Authentication**.
-1. Set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application.
+1. Set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
 1. Then Click **Add a platform**
 1. Select **Mobile and descktop applications**
 1. Set **Custom redirect URIs** `ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333`
@@ -53,7 +53,7 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. Set **Package name** `com.microsoft.warehousemanagement`
 1. Set **Signature hash** `hpavxC1xAIAr5u39m1waWrUbsO8=`
 1. Select **iOS / macOS**
-1. Set **Bundle ID** `com.microsoft.WarehouseManagement`. Then select **Save**.
+1. Set **Bundle ID** `com.microsoft.WarehouseManagement`.
 1. In the **Manage** list, select **API permissions**.
 1. Select **Add a permission**.
 1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
@@ -87,6 +87,8 @@ Create a user that corresponds to the user credentials for the Warehouse Managem
 
 ## <a name="sso"></a>Single Sign-On
 
+The Warehouse Management application begins supporting single sign-on starting with version 2.1.23.0.
+
 SSO enables the potential for passwordless authentication by leveraging the reusability of credentials from Intune Company Portal ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal)).
 SSO is applicable exclusively to the `"UsernamePassword"` connection type (It doesn't work with `"DeviceCode"`).
 
@@ -94,8 +96,13 @@ SSO does not necessitate additional configuration steps in your app registration
 
 Ensure that you enable **Brokered Authentication** inside the application connection edit screen or include `"UseBroker": true` into your [Connections.json](install-configure-warehouse-management-app.md#create-a-connection-settings-file-or-qr-code) file to all required connections.
 
-        > [!IMPORTANT]
-        > Enabling SSO is a prerequisite for mass deployment.
+> [!IMPORTANT]
+> Enabling SSO is a prerequisite for mass deployment.
+
+> [!IMPORTANT]
+> The Warehouse Management app does **not** support [shared device mode](https://learn.microsoft.com/en-us/entra/identity-platform/msal-shared-devices).
+
+ 
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using the device code flow
 
