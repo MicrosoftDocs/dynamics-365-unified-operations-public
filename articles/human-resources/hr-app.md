@@ -71,7 +71,7 @@ Use this procedure if the previous version of the Human Resources app is install
 1. In the **Status** column for Dynamics 365 Human Resources, if an update is available, select it, and then select **Update**.
 1. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
-For information about how to embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as personal app in Teams](../../power-apps/teams/embed-model-driven-teams-personal.md). The Human Resource app can also be used in a web browser.
+For information about how to embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as personal app in Teams](../power-apps/teams/embed-model-driven-teams-personal.md). The Human Resource app can also be used in a web browser.
 
 ## Onboard users to the Human Resources app
 
