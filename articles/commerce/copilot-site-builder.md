@@ -75,6 +75,9 @@ To choose tone options and preselect default tones in site builder, follow these
 1. Under **Tones**, select **Edit**.
 1. Select **Choose tones**. 
 1. On the **Tones** flyout menu, select up to five tones, and then select **Apply**.
+
+    ![Choose tones in site builder](media/choose-tones.png)
+
 1. Under **Chosen tones**, select any tones that you want to preselect as default tones.
 1. On the command bar, select **Save**.
 
@@ -86,8 +89,11 @@ To choose target client options and preselect default target clients in site bui
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Target clients**, select **Edit**.
-1. Select **Choose tones**.
+1. Select **Choose target clients**.
 1. On the **Target clients** flyout menu, select up to five target clients, and then select **Apply**.
+
+    ![Choose target clients in site builder](media/choose-target-clients.png)
+
 1. Under **Chosen target clients**, select any target clients that you want to preselect as default target clients.
 1. On the command bar, select **Save**.
 
