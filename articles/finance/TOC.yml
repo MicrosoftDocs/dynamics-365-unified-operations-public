@@ -3214,7 +3214,7 @@
                 href: localizations/apac-jpn-equally-divided-depreciation-method.md
               - name: Create lump-sum depreciation assets using equally-divided method
                 href: localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
-              - name: Allocation rules
+              - name: Depreciation allocation rules
                 href: localizations/apac-jpn-allocation-rules-fixed-assets.md
               - name: Define asset idle period and validate depreciation process
                 href: localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
