@@ -1,5 +1,5 @@
 ---
-title: User-based authentication
+title: User-based authentication for the Warehouse Management mobile app
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using user-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# User-based authentication
+# User-based authentication for the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
@@ -130,6 +130,6 @@ To disable a user in Microsoft Entra ID, follow these steps.
 
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [Service-based authentication](warehouse-app-authenticate-service-based.md)
+- [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

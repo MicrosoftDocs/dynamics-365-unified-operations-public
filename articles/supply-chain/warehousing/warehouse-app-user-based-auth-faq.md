@@ -26,7 +26,7 @@ Support for service-based authentication (client secret and certificate) will be
 
 More information about user-based authentication and the deprecation of service-based authentication methods is available in the following articles:
 
-- [User-based authentication](warehouse-app-authenticate-user-based.md)
+- [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md)
@@ -66,11 +66,11 @@ Device code flow provides a two-step process that authenticates users on devices
 
 Device code flow is a user-based authentication method that lets you enter a Microsoft Entra ID user name and password to sign in from a device. After the app is signed in, individual workers still sign in by entering their Supply Chain Management worker ID.
 
-For more information, see [User-based authentication](warehouse-app-authenticate-user-based.md). 
+For more information, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md). 
 
 ## How many Microsoft Entra ID app registrations do I have to set up in Azure?
 
-You only have to create one Microsoft Entra ID app registration. All your devices can then connect through it. For more information, see [User-based authentication](warehouse-app-authenticate-user-based.md).
+You only have to create one Microsoft Entra ID app registration. All your devices can then connect through it. For more information, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
 
 ## How many Microsoft Entra ID users do I need?
 

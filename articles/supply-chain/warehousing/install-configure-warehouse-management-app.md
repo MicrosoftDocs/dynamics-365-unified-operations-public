@@ -97,8 +97,8 @@ After a device is authenticated with Supply Chain Management, each worker who us
 
 For details about each authentication method and how to set it up, see the following articles:
 
-- User-based authentication: [User-based authentication](warehouse-app-authenticate-user-based.md)
-- Service-based authentication (deprecated): [Service-based authentication](warehouse-app-authenticate-service-based.md)
+- User-based authentication: [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
+- Service-based authentication (deprecated): [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 > [!IMPORTANT]
 > Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
@@ -233,11 +233,11 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 1. Enter the following information:
 
-    - **Authentication method** – Identify the method you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).) Choose one of the following values:
-        - *Client secret (Deprecated)* – Use a client secret to authenticate with Supply Chain Management. This is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
-        - *Certificate (Deprecated)* – Use a certificate for authentication. This is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
+    - **Authentication method** – Identify the method you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure. Choose one of the following methods:
         - *Device code* – Authenticate by using the device code flow. This is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
         - *Username and password* – Authenticate using single sign-on or by asking the user to enter a username and password. This is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
+        - *Client secret (Deprecated)* – Use a client secret to authenticate with Supply Chain Management. This is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
+        - *Certificate (Deprecated)* – Use a certificate for authentication. This is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
     - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
     - **Microsoft Entra ID client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Microsoft Entra ID client secret** – This field is available only when **Authentication method** is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
@@ -274,9 +274,9 @@ If a device is lost or compromised, you must remove its ability to access Supply
 
 ## Additional resources
 
-- [User-based authentication](warehouse-app-authenticate-user-based.md)
+- [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
-- [Service-based authentication](warehouse-app-authenticate-service-based.md)
+- [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
 
