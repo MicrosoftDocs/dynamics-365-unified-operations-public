@@ -2,12 +2,12 @@
 title: Electronic invoicing onboarding in Saudi Arabia
 description: This article explains how to onboard taxpayers and their electronic invoicing software with Saudi Arabian tax authorities.
 author: mrolecki
-ms.date: 09/13/2022
+ms.date: 01/18/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia
 ms.author: mrolecki
 ms.search.validFrom: 2022-07-15
@@ -104,15 +104,15 @@ The onboarding process consists of two steps:
     > For any other case, use the values as instructed above.
 
 8. Run the [onboarding script](#script) that is provided later in this article. Specify the OTP and configuration file as input parameters. Here is an example:
-   Script has two possible endpoints **simulation** & **prod**
+   Script has two possible endpoints **simulation** and **prod**.
    
     `.\OnboardingScript.ps1 -action getComplianceCSID -endpoint prod -otp 123345 -csrconfig .\csr_config.txt -password 123`
 
     > [!NOTE]
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
-10. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
-11. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
+10. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
+11. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
 
 ### Compliance check
 
