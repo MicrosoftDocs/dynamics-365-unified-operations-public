@@ -23,9 +23,9 @@ This article describes feature functionality enhancements that enable call cente
 
 The feature functionality enhancements provide the following benefits:
 
-- It enhances the customization of orders according to specific B2B channels and catalogs.
-- It streamlines the ordering process, ensuring accuracy and efficiency.
-- It assures the correct pricing application aligned with specific B2B catalogs and B2B online channels.
+- They enhance the customization of orders according to specific B2B channels and catalogs.
+- They streamline the ordering process, ensuring accuracy and efficiency.
+- They ensure that correct pricing is applied to specific B2B catalogs and B2B online channels.
 
 ## Prerequisites
 
@@ -33,8 +33,8 @@ For the feature functionality to work, the following prerequisites must be met.
 
 - Your site must be running Commerce version 10.0.38 or later. 
 - The customer hierarchy, the distributor—channel associations, and the catalog—channel associations must be set up correctly in the system.
-- The users accessing the customer service form in call center must be call center channel users. If not, add your user account as a 'Channel user' to a call-center channel from 'All Call Centers' form.
-- Customer account (C2), for whom order is being created, must be a B2B customer, meaning that they must be associated with a B2B customer hierarchy in the system. For more information, see [Learn more about managing customer hierarchies](./b2b/partners-customer-hierarchies.md)
+- The users accessing the customer service form in call center must be call center channel users. User accounts must be added as channel users to a call-center channel from the **All Call Centers** form in COmmerce headquarters.
+- Customer accounts for which orders are created must be a B2B customers, meaning that they must be associated with a B2B customer hierarchy in the system. For more information, see [Learn more about managing customer hierarchies](./b2b/partners-customer-hierarchies.md)
 
 ## Enable the feature
 
