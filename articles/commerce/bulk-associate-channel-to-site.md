@@ -1,6 +1,6 @@
 ---
-title: Simplify Your Site Creation Process with Bulk Channel Association in Dynamics 365 Commerce site builder using Channel Wizard
-description: This document describes the new feature that allows site authors to associate more than one channel in a bulk manner using a wizard experience.
+title: Bulk associate channels to e-commerce sites
+description: This article describes functionality that allows site authors to bulk associate more than one channel to Microsoft Dynamics 365 Commerce e-commerce sites.
 author: ashishmsft
 ms.date: 01/18/2024
 ms.topic: article
@@ -11,28 +11,41 @@ ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ---
 
-# Simplify Your Site Creation Process with Bulk Channel Association in Dynamics 365 Commerce site builder using Channel Wizard
+# Bulk associate channels to e-commerce sites
 
 [!include [banner](../includes/banner.md)]
 
+This article describes functionality that allows site authors to bulk associate more than one channel to Microsoft Dynamics 365 Commerce e-commerce sites.
 
-This document describes the new feature that allows site authors to associate more than one channel in a bulk manner using a wizard experience. This feature simplifies the process of creating and managing multiple channels for a site, and provides options to customize the domain, path, authentication profile, and geo-redirection settings for each channel. This feature also enables cross-channel sharing, which lets retailers reuse and share content among multiple channels of a site.
+This document describes the new feature that allows site authors to associate more than one channel in a bulk manner using a wizard experience. 
 
-## Value Proposition
+This feature simplifies the process of creating and managing multiple channels for a site, and provides options to customize the domain, path, authentication profile, and geo-redirection settings for each channel. This feature also enables cross-channel sharing, which lets retailers reuse and share content among multiple channels of a site.
+
+## Value proposition
 
 The value proposition of this feature is to save time and effort for site authors who need to create and manage multiple channels for a site. By using the wizard experience, site authors can easily select and associate multiple channels with a site, and configure the default and optional settings for each channel. This feature also allows site authors to enable cross-channel sharing, which reduces the duplication of content and improves the consistency and quality of the site.
+
+## Recommendations
+
+Our recommendations for using this feature are:
+
+- Enable cross-channel sharing when using the bulk association feature, as it lets you reuse and share content among multiple channels of a site. This capability is useful when the site channels have a compatible base language, or when they have numerous content items in common. [Learn more](./cross-channel-sharing.md)
+- Review the default and optional settings for each channel carefully, and make sure they match your expectations and requirements. You can always override the settings for individual channels as needed.
+- Test the channel associations and settings before launching the site, and verify that the site works as expected for different channels and locales. You can use the preview mode in site builder to test the site for different channels.
+
+> [!NOTE] 
+> This experience is available on a preview basis, to access it simply add the query string parameter `&set=enableBulkChannels` to your site builder URL.
 
 ## Applicable use cases
 
 The applicable use cases for this feature are:
 
-- As a site author, I want to associate multiple channels with a site in a bulk manner, so that I can create and manage multiple channels for a site more efficiently.
-- As a site author, I want to use an option to autodefault the domain, path, and authentication profile configurations for each channel, so that I don't have to manually provide those values for each channel-locale combination individually.
-- As a site author, I want to enable geo-redirection for each channel, so that I can direct users to the appropriate channel based on their location.
-- As a site author, I want to override the default settings for each channel, so that I can customize the channel properties according to my needs.
+- A site author wants to associate multiple channels with a site in a bulk manner to create and manage multiple channels for a site more efficiently.
+- A site author wants to use an option to autodefault the domain, path, and authentication profile configurations for each channel to avoid manually providing those values for each channel-locale combination individually.
+- A site author wants to enable geo-redirection for each channel to direct users to the appropriate channel based on their location.
+- A site author wants to override the default settings for each channel to customize the channel properties according to requirements.
 
-
-## How to Use
+## How to use
 
 The steps for using this feature are:
 
@@ -46,13 +59,4 @@ The steps for using this feature are:
 
 You can also add an individual channel to the site by choosing the option to associate a single channel. You can follow the same wizard steps to configure the channel settings as described above.
 
-## Recommendations
 
-Our recommendations for using this feature are:
-
-- Enable cross-channel sharing when using the bulk association feature, as it lets you reuse and share content among multiple channels of a site. This capability is useful when the site channels have a compatible base language, or when they have numerous content items in common. [Learn more](./cross-channel-sharing.md)
-- Review the default and optional settings for each channel carefully, and make sure they match your expectations and requirements. You can always override the settings for individual channels as needed.
-- Test the channel associations and settings before launching the site, and verify that the site works as expected for different channels and locales. You can use the preview mode in site builder to test the site for different channels.
-
-![NOTE] 
-> This experience is available on a preview basis, to access it simply add following query string parameter to your sitebuilder URL &set=enableBulkChannels.
