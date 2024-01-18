@@ -2,12 +2,12 @@
 title: Petty cash
 description: This article provides information about the global petty cash functionality that is available in all countries.
 author: EricWang
-ms.date: 01/08/2024
+ms.date: 01/18/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: 
 ms.author: wangchen
 ms.search.validFrom: 2024-01-29
@@ -20,46 +20,50 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the petty cash functionality that extends existing localization feature [Petty cash for Eastern Europe and Russia - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/europe/emea-petty-cash) as a global feature for all countries in the system.
+This article provides information about the petty cash functionality that extends existing localization feature as a global feature for all countries. For more information, see [Petty cash for Eastern Europe and Russia](/localizations/europe/emea-petty-cash.md). 
 
-You can use the petty cash functionality to automate operations for receipts and expenditures of cash, the creation of primary documents, and the printing of related reports. The petty cash functionality lets you perform the following operations:
+You can use the petty cash functionality to automate receipts and expenditures of cash, creation of primary documents, and the printing of related reports. 
 
+Petty cash performs the following:
 -   Account the receipt and expenditure of available cash assets.
--   Generate typical cash forms: Cash reimbursement slips, Cash disbursement slips, and a Journal of registration for cash slips.
--   Control the maximum cash amount that is allowed for operations with customers, vendors, and so on.
--   Reflect cash operations in various currencies in the system.
+-   Generate typical cash forms. For example, cash reimbursement slips, cash disbursement slips, and Journal of registration for cash slips.
+-   Control the maximum cash amount allowed for customers or vendors.
+-   Reflect cash operations in various currencies.
 -   Convert the amounts of cash operations in foreign currency to the default currency to provide accounting reporting.
 
 ## Prerequisites
-Before you can use the petty cash functionality, you must complete the following prerequisites:
+Before you can use the petty cash functionality, set up the following prerequisites:
 
 -   Enable petty cash
--   Set up cash accounts.
--   Set up cash posting profiles.
--   Set up number sequences for cash document numbering.
--   Set up default values for Cash and bank management parameters.
--   Set up cash journal names in General ledger.
+-   Cash accounts
+-   Cash posting profiles
+-   Number sequences for cash document numbering
+-   Default values for Cash and bank management parameters
+-   Cash journal names in General ledger
 
 ### Enable petty cash
-
-- Turn on feature **Petty cash** in feature management workspace.
-
-- Turn on parameter **Enable petty cash** in **Cash and bank management parameters > Cash**
+To enable petty cash, follow these steps:
+1. In **Feature management**, enable the **Petty cash** feature.
+2. On **Cash and bank management parameters > Cash**, select the **Enable petty cash** parameter.
 
 ### Set up cash accounts
 
-To set up a Cash, open **Cash and bank management** &gt; **Petty cash** &gt; **Cash accounts**, and enter the following information.
+To set up the cash accounts, follow these steps:
+1. Go to **Cash and bank management** &gt; **Petty cash** &gt; **Cash accounts**.
+2. Enter the following information:
 
 | Field                 | Description                                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------|
 | Cash                  | Enter a code to identify the cash account (cash).                                                                    |
 | Name                  | Enter a description of the cash account.                                                                             |
 | Currency              | Select the default currency code for cash transactions.                                                              |
-| Number sequence group | If the numbering of cash documents must differ from the numbering that is specified in the parameters, enter a code. |
-| More currencies       | Select this check box to allow currencies that differ from the accounting currency to be posted.                     |
-| Negative cash         | Select this check box to allow negative cash balances in any currency.                                               |
+| Number sequence group | If the numbering of cash documents is different from the numbering that is specified in the parameters, enter a code. |
+| More currencies       | Select this checkbox to allow currencies that are different from the accounting currency to be posted.                     |
+| Negative cash         | Select this checkbox to allow negative cash balances in any currency.                                               |
 
-To set up cash balance control rules for a cash account, select the cash account, and then, on the Action Pane, on the **Cash account** tab, in the **Balance limit** group, click **Balance limit**. Enter the following information.
+To set up cash balance control rules for a cash account:
+1. Select the cash account.
+2. On the **Cash account** tab, in the **Balance limit** group, click **Balance limit** and enter the following information:
 
 <table>
 <colgroup>
@@ -77,8 +81,8 @@ To set up cash balance control rules for a cash account, select the cash account
 <td>Currency type</td>
 <td>Select the type of currency:
 <ul>
-<li><strong>Accounting currency</strong> – Use the basic company currency code.</li>
-<li><strong>Indicated currency</strong> – Use a currency code that differs from the basic company currency code.</li>
+<li><strong>Accounting currency</strong> – Select the basic company currency code.</li>
+<li><strong>Indicated currency</strong> – Use a currency code different from the basic company currency code.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -89,8 +93,8 @@ To set up cash balance control rules for a cash account, select the cash account
 <td>Balance limit type</td>
 <td>Select one of the available values:
 <ul>
-<li><strong>Maximum</strong> – The cash balance should not be allowed to exceed the <strong>Balance limit</strong> amount for the cash account (upper bound).</li>
-<li><strong>Minimum</strong> – The cash balance should not be allowed to go below the <strong>Balance limit</strong> amount for the cash account (bottom bound).</li>
+<li><strong>Maximum</strong> – The cash balance shouldn't exceed the <strong>Balance limit</strong> amount for the cash account (upper bound).</li>
+<li><strong>Minimum</strong> – The cash balance shouldn't be less than the <strong>Balance limit</strong> amount for the cash account (bottom bound).</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -98,21 +102,23 @@ To set up cash balance control rules for a cash account, select the cash account
 <td>Select what occurs during the approval process for cash documents if the <strong>Balance limit</strong> amount for the cash account is exceeded:
 <ul>
 <li><strong>Accept</strong> – The limit can be exceeded.</li>
-<li><strong>Warning</strong> – The limit can be exceeded, but the user receives a warning message. The cash document is confirmed or approved.</li>
-<li><strong>Error</strong> – The limit can&#39;t be exceeded. The user receives an error message, and the cash document isn&#39;t confirmed or approved.</li>
+<li><strong>Warning</strong> – The limit can be exceeded and the user receives a warning message. The cash document is confirmed or approved.</li>
+<li><strong>Error</strong> – The limit can't be exceeded. The user receives an error message, and the cash document isn't confirmed or approved.</li>
 </ul>
-For more information about the approval process for cash documents, see the &quot;Cash transaction approval and posting&quot; section, later in this article.</td>
+For more information about the approval process for cash documents, see the Cash transaction approval and posting section later in this article.</td>
 </tr>
 <tr class="odd">
 <td>Balance limit</td>
-<td>Enter a limit for the cash account balance. The amount should be in the currency that you specified.</td>
+<td>Enter a limit for the cash account balance. The amount should be in the specified currency.</td>
 </tr>
 </tbody>
 </table>
 
 ### Set up cash posting profiles
 
-Cash posting profiles define postings to the general ledger. To set up a cash posting profile, go to **Cash** **and bank management** &gt; **Setup** &gt; **Cash posting profiles**, and select or create a posting profile. Enter the following information.
+Cash posting profiles define postings to the general ledger. To set up a cash posting profile, follow these steps:
+1. Go to **Cash** **and bank management** > **Setup** > **Cash posting profiles**.
+2. Select or create a posting profile and enter the following information:
 
 <table>
 <colgroup>
@@ -128,7 +134,7 @@ Cash posting profiles define postings to the general ledger. To set up a cash po
 <tbody>
 <tr class="odd">
 <td>Valid for</td>
-<td>Select whether the posting profile applies to a specific cash account or all cash accounts:
+<td>Select if the posting profile applies to a specific cash account or all cash accounts:
 <ul>
 <li><strong>Table</strong> – If there is a posting profile line for the cash account, that line is used for cash transaction posting.</li>
 <li><strong>All</strong> – There is no posting profile line for the cash account.</li>
@@ -148,11 +154,15 @@ Cash posting profiles define postings to the general ledger. To set up a cash po
 
 ### Set up number sequences for cash documents
 
-To set up number sequences for cash documents, go to **Cash and bank management** &gt; **Setup** &gt; **Cash and bank management parameters**. On the **Number sequence** tab, specify number sequence codes for the **Cash reimbursement slips**, **Cash disbursement slips**, **Cash correction voucher**, and **Exchange adjustment** documents.
+To set up number sequences for cash documents, follow these steps: 
+1. Go to **Cash and bank management** > **Setup** > **Cash and bank management parameters**.
+2. On the **Number sequence** tab, specify number sequence codes for **Cash reimbursement slips**, **Cash disbursement slips**, **Cash correction voucher**, and **Exchange adjustment**.
 
 ### Set up default values for Cash and bank management parameters
 
-To set up default values for Cash and bank management parameters for the petty cash functionality, go to **Cash and bank management** &gt; **Setup** &gt; **Cash and bank management parameters**. On the **Cash** tab, enter the following information.
+To set up default values for Cash and bank management parameters for the petty cash, follow these steps:
+1. Go to **Cash and bank management** > **Setup** > **Cash and bank management parameters**.
+2. On the **Cash** tab, enter the following information:
 
 <table>
 <colgroup>
@@ -189,13 +199,13 @@ To set up default values for Cash and bank management parameters for the petty c
 <td>Specify what occurs if the limit for operations with counteragents is exceeded:
 <ul>
 <li><strong>Accept</strong> – The limit can be exceeded.</li>
-<li><strong>Warning</strong> – The limit can be exceeded, but the user receives a warning message. The operation is posted.</li>
-<li><strong>Error</strong> – The limit can&#39;t be exceeded. The user receives an error message, and the operation isn&#39;t posted.</li>
+<li><strong>Warning</strong> – The limit can be exceeded and the user receives a warning message. The operation is posted.</li>
+<li><strong>Error</strong> – The limit can't be exceeded. The user receives an error message, and the operation isn't posted.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Validation method</td>
-<td>Select the validation method that is used to control exceeded limit amounts for operations:
+<td>Select the validation method to control exceeded limit amounts for operations:
 <ul>
 <li><strong>Operation</strong> – Validation is done per transaction</li>
 <li><strong>Agreement</strong> – Validation is done per transaction that has a specified contract with a counteragent.</li>
@@ -203,19 +213,19 @@ To set up default values for Cash and bank management parameters for the petty c
 </tr>
 <tr class="even">
 <td>Operations limit</td>
-<td>Enter the maximum amount that is allowed for operations with counteragents in cash.</td>
+<td>Enter the maximum amount allowed for operations with counteragents in cash.</td>
 </tr>
 <tr class="odd">
 <td>Posting on earlier date</td>
-<td>Select this check box to enable cash transactions to be posted before the last date of the cash transaction.</td>
+<td>Select this checkbox to allow cash transactions to be posted before the last date of the cash transaction.</td>
 </tr>
 <tr class="even">
 <td>Dimensions</td>
-<td>Enter dimensions in the <strong>Department code</strong>, <strong>Analytical code</strong>, and <strong>Purpose code</strong> fields. The printing form for cash documents will reflect this information.</td>
+<td>Enter dimensions in the <strong>Department code</strong>, <strong>Analytical code</strong>, and <strong>Purpose code</strong> fields. The printing page for cash documents will reflect this information.</td>
 </tr>
 <tr class="odd">
 <td>Use confirm status</td>
-<td>Select this check box to use an additional status, <strong>Confirmed</strong>, during the approval process for cash documents. </td>
+<td>Select this checkbox to use an additional status, <strong>Confirmed</strong>, during the approval process for cash documents. </td>
 </tr>
 </tbody>
 </table>
@@ -223,10 +233,15 @@ To set up default values for Cash and bank management parameters for the petty c
 
 ### Set up cash journal names in General ledger
 
-To create a journal for cash transaction posting, go to **General ledger** &gt; **Journal setup** &gt; **Journal names**, and create a new record. In the **Journal type** field, specify **Cash**. Define other default journal parameters as you require.
+To create a journal for cash transaction posting, follow these steps:
+1. Go to **General ledger** > **Journal setup** > **Journal names** and create a new record.
+2. In the **Journal type** field, specify **Cash**. Define other default journal parameters as needed
 
-## Daily cash operations via a Slip journal
-To create a cash document via a Slip journal, go to **Cash and bank management** &gt; **Petty cash** &gt; **Slip journal**, and create a new journal. On the Action Pane, click **Lines**. Add a new line, and enter the following information.
+## Daily cash operations using a Slip journal
+To create a cash document via a Slip journal, follow these steps:
+1. Go to **Cash and bank management** > **Petty cash** > **Slip journal** and create a new journal.
+2. On the Action Pane, click **Lines**.
+3. Add a new line, and enter the following information.
 
 <table>
 <colgroup>
@@ -250,7 +265,7 @@ To create a cash document via a Slip journal, go to **Cash and bank management**
 </tr>
 <tr class="odd">
 <td>Description</td>
-<td>Enter explanatory text for the transaction.</td>
+<td>Enter text for the transaction.</td>
 </tr>
 <tr class="even">
 <td>Debit Credit</td>
@@ -266,19 +281,19 @@ To create a cash document via a Slip journal, go to **Cash and bank management**
 </tr>
 <tr class="even">
 <td>Currency</td>
-<td>Select the code for the transaction currency.</td>
+<td>Select the transaction currency code.</td>
 </tr>
 <tr class="odd">
 <td>Voucher</td>
-<td>This field is filled in automatically, based on the journal setup.</td>
+<td>This field is filled in based on the journal setup.</td>
 </tr>
 <tr class="even">
 <td>Order number</td>
-<td>If no other number sequence is set up for the cash account, this field is filled in automatically, based on the number sequence that is specified in the parameters. You can manually enter an order number in this field as you require. To prevent inconsistence in cash document numbering, the following control is applied: the number of a cash document that has an earlier date of operation can&#39;t be higher than number of a cash document that has a later date of operation. If you don&#39;t require this control, select the <strong>Posting on earlier date</strong> check box in the Cash and bank management parameters.</td>
+<td>If no number sequence is set up for the cash account, this field is filled in automatically, based on the number sequence that is specified in the parameters. You can manually enter an order number in this field. To prevent inconsistence in cash document numbering, the following control is applied: the number of a cash document that has an earlier date of operation can't be higher than number of a cash document that has a later date of operation. If you don't need this control, select the <strong>Posting on earlier date</strong> checkbox in the Cash and bank management parameters.</td>
 </tr>
 <tr class="odd">
 <td>Approval status</td>
-<td>The first transaction status is <strong>None</strong>. For information about how to set the transaction status, See the &quot;Cash transaction approval and posting&quot; section.</td>
+<td>The first transaction status is <strong>None</strong>. For information about how to set the transaction status, see the Cash transaction approval and posting section.</td>
 </tr>
 <tr class="even">
 <td>Document type</td>
@@ -299,18 +314,18 @@ To create a cash document via a Slip journal, go to **Cash and bank management**
 </tr>
 <tr class="odd">
 <td>Reason</td>
-<td>On the <strong>Cash order</strong> tab, enter text that describes the transaction subject. This text will be printed on the cash slip reporting form.</td>
+<td>On the <strong>Cash order</strong> tab, enter text to describe the transaction subject. This text will be printed on the cash slip reporting page</td>
 </tr>
 <tr class="even">
-<td>Document Date</td>
+<td>Document date</td>
 <td>Enter the description, number, and date of the primary document that is the reason for the transaction (for example, advance reports, invoice, or order).</td>
 </tr>
 <tr class="odd">
 <td>Representative type</td>
-<td>This field can have the following values:
+<td>This field can have the following:
 <ul>
-<li><strong>Worker</strong> – The <strong>Representative</strong> lookup contains a list of employees if the <strong>Offset account</strong> field is set to <strong>Ledger</strong> or <strong>Bank</strong>, or a list of the counteragent&#39;s contact persons if the <strong>Offset account</strong> field is set to <strong>Customer</strong> or <strong>Vendor</strong>. To set up representatives, go to <strong>Basic</strong> &gt; <strong>Setup</strong> &gt; <strong>Contacts</strong> &gt; <strong>Contact person</strong>.</li>
-<li><strong>Other</strong> – The <strong>Representative</strong> lookup contains a list of other clients. To set up receivers who don&#39;t appear in the <strong>Customers</strong> or <strong>Vendors</strong> table, go to <strong>General ledger</strong> &gt; <strong>Receivers</strong>. This type is available only for Latvia. (The <strong>CSELatvia</strong> configuration key should be enabled.)</li>
+<li><strong>Worker</strong> – The <strong>Representative</strong> contains a list of employees if the <strong>Offset account</strong> field is set to <strong>Ledger</strong> or <strong>Bank</strong>. A list of the counteragents contact persons, if the <strong>Offset account</strong> field is set to <strong>Customer</strong> or <strong>Vendor</strong>. To set up representatives, go to <strong>Basic</strong> &gt; <strong>Setup</strong> &gt; <strong>Contacts</strong> &gt; <strong>Contact person</strong>.</li>
+<li><strong>Other</strong> – The <strong>Representative</strong> lookup contains a list of other clients. To set up receivers who don't appear in the <strong>Customers</strong> or <strong>Vendors</strong> table, go to <strong>General ledger</strong> &gt; <strong>Receivers</strong>. This type is available only for Latvia. (The <strong>CSELatvia</strong> configuration key should be enabled.)</li>
 <li><strong>Vendor</strong> – The <strong>Representative</strong> lookup contains a list of vendors. To set up vendors, go to <strong>Accounts payable</strong> &gt; <strong>Vendors</strong>.</li>
 <li><strong>Customer</strong> – The <strong>Representative</strong> lookup contains a list of customers. To set up customers, go to <strong>Accounts receivable</strong> &gt; <strong>Customers</strong>.</li>
 </ul></td>
@@ -321,7 +336,7 @@ To create a cash document via a Slip journal, go to **Cash and bank management**
 </tr>
 <tr class="odd">
 <td>Name of person</td>
-<td>This field is filled in automatically, based on the <strong>Offset account</strong> and <strong>Representative</strong> fields. The printing form for cash slips will reflect this information.</td>
+<td>This field is filled in automatically, based on the <strong>Offset account</strong> and <strong>Representative</strong> fields. The printing page for cash slips will reflect this information.</td>
 </tr>
 <tr class="even">
 <td>Remainder</td>
@@ -345,7 +360,9 @@ To create a cash document via a Slip journal, go to **Cash and bank management**
 To check journal entries, on the Action Pane, click **Validate**.
 
 ## Daily cash operations via a General journal
-To create a cash transaction via a General journal, go to **General ledger** &gt; **Journal entries** &gt; **General journals**, and create a new journal. On the Action Pane, click **Lines**. Add a new line, and enter the following information.
+To create a cash transaction via a General journal, follow these steps:
+1. Go to **General ledger** > **Journal entries** > **General journals**. Create a new journal.
+2. On the Action Pane, click **Lines**. Add a new line, and enter the following information:
 
 <table>
 <colgroup>
@@ -394,7 +411,8 @@ To create a cash transaction via a General journal, go to **General ledger** &gt
 </tbody>
 </table>
 
-On the **Invoice** tab, you can specify posting profiles for the selected account and offset account. If the registered transaction is a prepayment, select the **Prepayment** check box on the **Payment** tab. In the **Representative** field group, fill in the fields as you did for the Slip journal lines to print on the **Cash** report. To check journal entries, on the Action Pane, click **Validate**.
+On the **Invoice** tab, specify posting profiles for the selected account and offset account. If the registered transaction is a prepayment, select the **Prepayment** checkbox on the **Payment** tab. 
+In the **Representative** field group, fill in the fields to print on the **Cash** report. To check journal entries, on the Action Pane, click **Validate**.
 
 ## Cash transaction approval and posting
 For cash transactions, the following statuses can be applied: 
@@ -404,18 +422,23 @@ For cash transactions, the following statuses can be applied:
 - Approved
 - Rejected
 
-A **Use confirm status** parameter on the **Approval** FastTab of the **Cash** tab at **Cash and bank management** &gt; **Setup** &gt; **Cash and bank management parameters** lets you activate two additional statuses: **Confirmed** and **Rejected**. Confirmation is appropriate when cash documents are issued, and cash receipts or expenditures are shared between two employees: accountant and cashier. The **Reset status** function changes the current transaction status. **Approved** becomes **Confirmed**, and **Confirmed** becomes **None**. Cash journal entries can be edited only when the status is **None**. Cash transactions can be rejected only if the transaction status is **Confirmed**. To confirm a transaction, select the corresponding Slip journal line, and then click **Documents approval** &gt; **Confirm**. An order number is generated, based on the specified number sequence. The transaction status is changed to **Confirmed**, and you can no longer edit the journal line. The cash account balance remains unchanged. To reject a cash document, click **Documents approval** &gt; **Reject**. This option is available only for documents that have **Confirmed** status. To approve a transaction, select the corresponding Slip journal line, and then click **Documents approval** &gt; **Approve**. The **Approved** status indicates that cash funds are received or expended. The cash balance is changed. The cash transaction can be posted. To cancel an **Approved** status and reset the status to **None**, click **Documents approval** &gt; **Reset status**. Only approved cash transactions can be posted. To post a journal, click **Post** &gt; **Post**.
+A **Use confirm status** parameter on the **Approval** FastTab of the **Cash** tab. Go to **Cash and bank management** > **Setup** > **Cash and bank management parameters** to activate two additional statuses: **Confirmed** and **Rejected**. 
+**Confirmation** is appropriate when cash documents are issued, and cash receipts or expenditures are shared between two employees: accountant and cashier. The **Reset status** function changes the current transaction status. **Approved** becomes **Confirmed**, and **Confirmed** becomes **None**. Cash journal entries can be edited only when the status is **None**. Cash transactions can be rejected only if the transaction status is **Confirmed**. 
 
+ - To confirm a transaction, select the corresponding Slip journal line, and click **Documents approval** > **Confirm**. An order number is generated, based on the specified number sequence. The transaction status is changed to **Confirmed**, and you can no longer edit the journal line. The cash account balance remains unchanged.
+ - To reject a cash document, click **Documents approval** > **Reject**. This option is available for documents that have **Confirmed** status.
+ - To approve a transaction, select the corresponding Slip journal line, and then click **Documents approval** > **Approve**. The **Approved** status indicates that cash funds are received or expended. The cash balance is changed. The cash transaction can be posted.
+ - To cancel an **Approved** status and reset the status to **None**, click **Documents approval** > **Reset status**. Only approved cash transactions can be posted. To post a journal, click **Post** > **Post**.
 
 
 ## Periodic tasks
-The following tasks can be performed at **Cash and bank management** &gt; **Periodic tasks**.
+The complete the following tasks, go to **Cash and bank management** > **Periodic tasks**:
 
 | Periodic task                       | Description                                                  |
 | ----------------------------------- | ------------------------------------------------------------ |
 | Check balance limit                 | Check the balance for the selected cash account on the specified date, and show the result in an information message. Only approved transactions can be counted in the balance calculation. |
-| Cash balance recalculation          | Use this task to make sure that the ledger balances for cash accounts fit the cash balance. |
-| Foreign currency revaluation - Cash | Use this task to have an adequate balance in the default currency on the reporting date when the operations are entered in foreign currencies. Use the Filter function on the Records to include tab to specify the cash account to run the task for. In the dialog box for the task, use the From currency and To Currency fields to specify transaction currencies. The system compares the amount in the currency that was converted by using exchange rate on the selected date with the amount in the default currency. The difference between the two amounts (excluding the previous exchange adjustment) is the calculated exchange adjustment. This task creates an approved cash transaction of the Exchange adjustment type. The ledger transaction is formed by using the ledger account for cash and the ledger account that is specified in Unrealized profit or Unrealized loss in the Currency table. |
+| Cash balance recalculation          | Use this task to confirm the ledger balances for cash accounts fit the cash balance. |
+| Foreign currency revaluation - Cash | Use this task to have an adequate balance in the default currency on the reporting date when the operations are entered in foreign currencies. Use the **Filter** function on the **Records to include** tab to specify the cash account to run the task for. In the dialog box for the task, use the **From currency** and **To Currency** fields to specify transaction currencies. The system compares the amount in the currency that was converted by using exchange rate on the selected date with the amount in the default currency. The difference between the two amounts (excluding the previous exchange adjustment) is the calculated exchange adjustment. This task creates an approved cash transaction of the Exchange adjustment type. The ledger transaction is created using the ledger account for cash and that is specified in **Unrealized profit** or **Unrealized loss** in the Currency table. |
 
 
 
