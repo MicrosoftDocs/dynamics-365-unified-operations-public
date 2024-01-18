@@ -43,8 +43,8 @@ For the Warehouse Management mobile app to function correctly, your internal net
 - \*.onyx.azure.net
 - play.google.com
 - itunes.apple.com
-- *.cdn-apple.com
-- *.networking.apple
+- \*.cdn-apple.com
+- \*.networking.apple
 - login.microsoftonline.com
 - login.microsoft.com
 - sts.windows.net
@@ -105,14 +105,14 @@ For details about each authentication method and how to set it up, see the follo
 
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
-- User-based authentication: [Remove access for a device that authenticates by using the device code flow](warehouse-app-authenticate-user-based.md#revoke)
+- User-based authentication: [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke)
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
 
 ## Configure the application by importing connection settings
 
 To make it easier to maintain and deploy the application on many mobile devices, you can import the connection settings instead of manually entering them on each device. This section explains how to create and import the settings.
 
-### Create a connection settings file or QR code
+### <a name="connection-file-qr"></a>Create a connection settings file or QR code
 
 You can import connection settings from either a file or a QR code. For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that have to be added. The following table summarizes the parameters that you must specify in the connection settings file.
 
@@ -127,7 +127,7 @@ You can import connection settings from either a file or a QR code. For both app
 | `IsEditable` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
 | `IsDefault` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `CertificateThumbprint` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
-| `UseBroker` | (Optional) Applicable exclusively to the `"UsernamePassword"` connection type, determines whether a broker is utilized for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](https://learn.microsoft.com/en-us/mem/intune/user-help/sign-in-to-the-company-portal)). Set to `"true"` for broker-based authentication and `"false"` for an manual input of username and password.|
+| `UseBroker` | (Optional) Applies only to the `"UsernamePassword"` connection type, determines whether a broker is utilized for [single sign-on (SS)](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set to `"true"` for broker-based authentication. Set to `"false"` to require manual input of username and password.|
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
 
@@ -233,7 +233,11 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 1. Enter the following information:
 
-    - **Authentication method** – Set this option to *Client secret (Deprecated)* to use a client secret to authenticate with Supply Chain Management. Set it to *Certificate (Deprecated)* to use a certificate for authentication. Set it to *Device code* to authenticate by using the device code flow. The method that you select here must match the setup of the app in Azure. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Authentication method** – Identify the method you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).) Choose one of the following values:
+        - *Client secret (Deprecated)* – Use a client secret to authenticate with Supply Chain Management. This is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
+        - *Certificate (Deprecated)* – Use a certificate for authentication. This is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
+        - *Device code* – Authenticate by using the device code flow. This is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
+        - *Username and password* – Authenticate using single sign-on or by asking the user to enter a username and password. This is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
     - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
     - **Microsoft Entra ID client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Microsoft Entra ID client secret** – This field is available only when **Authentication method** is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
@@ -250,6 +254,8 @@ If you don't have a file or QR code, you can manually configure the app on the d
         > Don't end this value with a slash (/).
 
     - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
+
+    - **Brokered authentication** – This setting only applies when **Authentication method** is *Username and password*. Choose whether to use a broker for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set to *Yes* for broker-based authentication and SSO. Set to *No* to require manual input of username and password.
 
 1. Select the **Save** button in the upper-right corner of the page.
 1. If you're using a certificate for authentication, complete one of the following steps:
