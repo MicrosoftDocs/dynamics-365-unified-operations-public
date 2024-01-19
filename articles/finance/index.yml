@@ -196,8 +196,8 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/dts-api-info
         text: Dynamics 365 Translation Service API
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-aad-app-reg
-        text: Dynamics Lifecycle Services API - Authentication
-      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service
+        text: Dynamics 365 Translation Service Visual Studio extension (Public preview)
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/dts-visual-studio
         text: Translate user interface files
   - title: Use 
     items:
