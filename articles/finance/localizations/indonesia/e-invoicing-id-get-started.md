@@ -24,7 +24,16 @@ This article will help you get started with Electronic invoicing for Indonesia. 
 ## Prerequisites
 
 Before you use the invoicing functionality, the following prerequisites must be met:
-- Follow the steps in the article,[Get started with Electronic invoicing](../global/e-invoicing-set-up-overview.md).
+- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
+
+    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
+    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
+    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
+    - [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md)
+
+- In Microsoft Dataverse, configure virtual entities for Finance and Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
+- Enable the **BusinessDocumentTaxGroupHeadingEntity** and **BusinessDocumentTaxTableEntity** virtual entity. For more information, see [Enable Microsoft Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
 ### Set up RCS
 
