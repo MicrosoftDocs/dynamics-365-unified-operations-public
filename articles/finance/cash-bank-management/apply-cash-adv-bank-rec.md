@@ -2,12 +2,12 @@
 title: Cash application in advanced bank reconciliation
 description: This article provides information about applying cash in advanced bank reconciliation.
 author: EricWang
-ms.date: 01/08/2024
+ms.date: 01/18/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: 
 ms.author: wangchen
 ms.search.validFrom: 2024-01-29
@@ -20,9 +20,9 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about cash application in advanced bank reconciliation under feature **Modern bank reconciliation** starting from 10.0.39. 
+This article provides information about cash application in advanced bank reconciliation under feature **Modern bank reconciliation** starting in Dynamics 365 Finance version 10.0.39. 
 
-There may be some customer or vendor payments on bank statement not existing in the application. Users can leverage this feature enhancement to complete cash application in advanced bank reconciliation.
+There might be customer or vendor payments on bank statements in the application. Users can leverage this feature enhancement to complete cash application in advanced bank reconciliation.
 
 ## Prerequisites
 -   Turn on feature **Modern bank reconciliation** in feature management workspace.
