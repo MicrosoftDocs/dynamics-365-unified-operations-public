@@ -106,29 +106,33 @@ Follow these steps to assign the **Contributor** role to the **Dynamics Deployme
 
 Complete the following procedures to enable the Azure subscription to deploy Resource Manager resources.
 
-#### Enable the Azure connector and add an LCS user
+#### Enable the Azure connector
 
-Follow these steps to enable the Azure connector and, as required, add an LCS user.
+Follow these steps to enable the Azure connector.
 
 1. In LCS, on the **Project** page, at the top of the page, select the hamburger icon, and then select **Project settings**.
 2. On the **Project settings** page, select the **Azure connectors** tab.
-3. On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, select **Add**.
+3. On the **Azure connectors** tab, under **Azure connectors**, select **Add**.
+4. Enter the **Name**, the **Azure subscription ID** to deploy to, and set the **Configure to use Azure Resource manager (ARM)** option to **Yes**.
+5. In the **Azure subscription Microsoft Entra ID Tenant Domain (or ID)** field, enter the domain name of the government Azure subscription account admin, and then select **Next**.
+6. On the **Microsoft Azure setup** page, verify **Dynamics Deployment Services \[wsfed-enabled\]** has the contributor role and select **Next**.
 
     > [!NOTE]
-    > If you're enabling Resource Manager for an existing connector, select **Edit** instead of **Add**.
+    > If **Dynamics Deployment Services \[wsfed-enabled\]** doesn't appear, the authorization process hasn't been completed, or it was completed on another Azure subscription.
 
-4. Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager (ARM)** option to **Yes**.
-5. In the **Azure subscription AAD Tenant domain** field, enter the domain name of the government Azure subscription account admin, and then select **Next**.
-6. On the **Microsoft Azure setup** page, select **Get a code**. Make a note of the information presented. You will use this information to configure a tag on the Azure subscription.
-7. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Tags**.
-8. Enter the **Name** and **Value** from the information presented above and select **Apply**.
-9. Select the Management certificate that you downloaded in step 5, and then select **OK**.
+7. On the **Microsoft Azure setup** page, under **Apply a subscription tab**, select **Get a code** and make a note of the information presented. You will use this information to configure a tag on the Azure subscription.
 
-#### Configure deployment settings
+#### Configure the Azure subscription tag
 
-1. In LCS, on the **Project** page, at the top of the page, select the hamburger icon, and then select **Project settings**.
-2. On the **Project settings** page, select the **Azure connectors** tab.
-3. On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, select **Add**.
-4. On the **Microsoft Azure setup** page, select the region to deploy to, and then select **Connect**. The Resource Manager onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
+1. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Tags**.
+2. Enter the **Name** and **Value** from the information presented above and select **Apply**.
+
+#### Create the Azure connector
+
+1. In LCS, on the **Microsoft Azure setup** page, select **Next**.
+2. Select the **Azure region** and select **Connect**. The Resource Manager onboarding flow is now complete. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
+
+    > [!NOTE]
+    > Azure connectors configured using the Azure subscription tag option do not expire.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
