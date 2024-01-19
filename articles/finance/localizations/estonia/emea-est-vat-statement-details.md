@@ -21,11 +21,11 @@ ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> This feature has been replaced with the VAT declaration functionality. For more information, see [VAT declaration (Estonia)](emea-est-vat-declaration.md).
+> This feature has been replaced with the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Estonia)](emea-est-vat-declaration.md).
 
 This article explains how to set up a VAT statement for legal entities in Estonia.
 
-This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Estonia only. For more information about the setup of VAT statements, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
+This article includes country/region-specific information about the setup of the VAT statement for legal entities in Estonia only. For more information about the setup of VAT statements, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the correct format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Estonian report layout**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
