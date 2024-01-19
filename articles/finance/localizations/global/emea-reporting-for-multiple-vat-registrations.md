@@ -209,7 +209,7 @@ All tax registrations have the same settings for EU sales list parameters.
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country/region of your tax registration.
 3. In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
-4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
+4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report** or **EU sales list by columns report**.
 5. In the **Report cash discount** field, select **Yes** if the selected country/region cash discount must be transferred to the EU sales list. Select **No** if the selected country/region cash discount must not be transferred to EU sales list. Leave the value set to **Default** if the value that's specified in the **Report cash discount** field on **Transfer** FastTab must be applied to the selected country/region.
 
     ![Report cash discount field on the Foreign trade parameters page.](../media/Mult-tax-cash-disc.png)
