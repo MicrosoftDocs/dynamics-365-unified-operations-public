@@ -26,8 +26,7 @@ To deploy Azure Resource Manager topologies, you must complete the Resource Mana
     > [!NOTE]
     > For US government Microsoft Dynamics Lifecycle Services (LCS) projects, only Azure Government–specific Azure subscriptions are supported.
 
-
-- Ownership of the Azure subscription, or access to the subscription owner, so that you can add contributor workflows and upload the management certificate
+- Ownership of the Azure subscription, or access to the subscription owner, so that you can configure the  Azure subscription tag
 - The tenant administrator, so that you can work through the admin consent workflow
 
 ## Resource Manager onboarding process
@@ -41,8 +40,8 @@ You can consider Resource Manager onboarding a two-step procedure, where each st
 
 2. Enable the Azure subscription to deploy Resource Manager resources.
 
-    1. Enable the Azure connector, and add an LCS user.
-    2. Upload the management certificate.
+    1. Enable the Azure connector.
+    2. Configure the Azure subscription tag.
     3. Configure deployment settings.
 
 ### Authorize the LCS deployment service to work on the Azure subscription
@@ -127,12 +126,12 @@ Follow these steps to enable the Azure connector.
 1. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Tags**.
 2. Enter the **Name** and **Value** from the information presented above and select **Apply**.
 
-#### Create the Azure connector
+#### Configure deployment settings
 
 1. In LCS, on the **Microsoft Azure setup** page, select **Next**.
 2. Select the **Azure region** and select **Connect**. The Resource Manager onboarding flow is now complete. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
 
     > [!NOTE]
-    > Azure connectors configured using the Azure subscription tag option do not expire.
+    > Azure connectors configured using an Azure subscription tag do not expire.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
