@@ -31,8 +31,10 @@ This section will contain a table that lists the features that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features]([grid-capabilities.md](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1)) | Feature management | 
-
+| System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) | Feature management | 
+| Web client | Microsoft Graph mail provider | [Configure or send email](../../dev-itpro/organization-administration/configure-email.md#send-email-with-microsoft-graph) | Admin configuration |
+| Web client | Auto-blocking of high-volume notification rules | [Messaging system](../../dev-itpro/user-interface/messaging-user.md#how-do-i-manage-processes-that-generate-lots-of-notifications) | On by default (Feature management
+) |
 ## Feature enhancements included in this release
 
 This section will contain a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
@@ -52,8 +54,7 @@ Check out the [Dynamics 365: 2023 release wave 1 plan](/dynamics365/release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) topic describes features that have been removed, or that are planned for removal in platform updates of finance and 
-operations apps.
+The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) topic describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
