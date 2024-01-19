@@ -179,9 +179,10 @@ To configure the Vendor invoice feature setup, you should already have created a
 ### Turn on the feature for processing Indonesian electronic invoices
 
 1. Go to **Feature management** and enable feature **Electronic document batch submission**.
-2. Additionally feature **Electronic documents configuration per legal entities in Electronic Invoicing** to configure Electronic document parameters on a legal entity basis.
-3. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-4. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
+2. Feature **Electronic document batch submission** can't be enabled if feature **Electronic Invoicing integration using Microsoft Dataverse** is already enabled, please disable the latter to proceed.
+3. Additionally feature **Electronic documents configuration per legal entities in Electronic Invoicing** can be enabled to allow configuring Electronic document parameters on a legal entity basis.
+4. In-order to enable electronic invoice integration for **Indonesia** Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+5. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
 
 
 ### Set up the processing for Indonesian electronic sales invoices
