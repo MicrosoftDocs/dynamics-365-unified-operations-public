@@ -37,7 +37,7 @@ Demand planning features in Supply Chain Management are available only to users 
 
 The feature also adds a new system role and user. A record inserted into the Microsoft Entra ID application enables data to be exchange between Demand planning and Supply Chain Management. <!-- KFM: What is this referring to? Can we name the new role and user? Or is this talking about the role in Power Platform (described in the next section)?-->
 
-## Assign security roles for accessing the app on Power Platform
+## Assign security roles for accessing the Demand planning app on Power Platform
 
 When you install Demand planning on Power Platform, it creates several new security roles to control access to its various features. To be able to access the Demand planning app, users must sign in a Power Platform user account that has the security roles for the features they need.
 
@@ -69,7 +69,7 @@ The following security roles are available for Demand planning: <!-- KFM: Are th
 
 Use the Power Platform admin center to set up user accounts and assign security roles to them as needed. For more instructions, see [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 
-## Set up row-level accessing data within the Demand planning app
+## Set up row-level rules for accessing data within the Demand planning app
 
 Users who have the *Demand Planning Contributor* role (but not *Demand Planning Manager* or *System Administrator*) can access the Demand planning app, but they can only view and edit data that they're granted access to. You control this access using *row-level security*, which is set up in the Demand planning app. For example, a user might only be granted access to the specific products or product families they manage; or they might be restricted to only viewing data for a specific site or warehouse. By default, demand planning contributors can't see any data until they are granted access to it by a row-level access rule.
 
