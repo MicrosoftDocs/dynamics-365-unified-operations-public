@@ -2,7 +2,7 @@
 title: Electronic invoicing setup
 description: This article provides an overview of the process for setting up and configuring Electronic invoicing.
 author: ilikond
-ms.date: 02/28/2022
+ms.date: 01/29/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
