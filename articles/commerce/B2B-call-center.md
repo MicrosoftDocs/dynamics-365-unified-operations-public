@@ -54,7 +54,7 @@ To create an order in headquarters after you enable the feature, follow these st
     > [!NOTE]
     > The channel selection controls the downstream choices that are available. For example, if you select a B2B online channel associated with a customer's B2B customer hierarchy, then the available catalog selections are based on the catalogs associated with the selected B2B online channel. If you select the call center channel, you won't see the same catalog selection as for a B2B online channel. 
 
-1. Add order lines as needed. Order details such as delivery mode, delivery date, and payment method are also controlled by the selection or update to channel. 
+1. Add order lines as needed. Order details such as delivery mode, delivery date, and payment method are controlled by the selection or update to the channel. 
 
 ### Order lines
 
@@ -65,7 +65,7 @@ To create an order in headquarters after you enable the feature, follow these st
 
 ### Order modifications
 
-- Modifications to a channel are only allowed if no line has been fulfilled. If an order is partially fulfilled, then no modification is allowed to update the channel.
+- Modifications to a channel are only allowed if no line is fulfilled. If an order is partially fulfilled, then no modification is allowed to update the channel.
 - If no line is fulfilled, then the channel can be updated on the header, and the system must validate if the catalog on already added lines is still valid.
 - If the catalog isn't valid with the newly updated channel, the system flags those lines with a warning to update the valid catalog selection.
 - If the catalog on already existing order lines is valid with the newly updated channel, no action is required. The system also updates the pricing based on the updated channel information.
