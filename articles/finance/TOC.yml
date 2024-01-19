@@ -1572,6 +1572,10 @@
             href: localizations/global/GS-e-invoicing-service-overview.md?context=/dynamics365/context/finance
           - name: Electronic Invoicing administration and integration components
             href: localizations/global/GS-e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
+          - name: Set up Electronic Invoicing
+            items: 
+            - name: Setting up Electronic Invoicing
+              href: localizations/global/GS-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
           items:
           - name: Electronic Invoicing overview
