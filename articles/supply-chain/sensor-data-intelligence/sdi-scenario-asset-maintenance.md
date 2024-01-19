@@ -21,6 +21,8 @@ ms.dyn365.ops.version: 10.0.30
 
 The *asset maintenance* scenario lets you use sensor data to create counter records. Counter records track the use of a machine asset and are used as input to generate the maintenance schedule for machine assets.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Video instructions
 
 The following video shows how to set up and try out the asset maintenance scenario using standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md). The remaining sections in this article provide the same instructions in a text-based format.

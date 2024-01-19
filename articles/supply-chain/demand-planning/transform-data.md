@@ -32,6 +32,8 @@ Each transformation profile takes a selected [main table](tables.md) as its inpu
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to update the time series as they require.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## View and run existing transformation profiles
 
 You have to run a transformation profile only as often as you import new data into the relevant tables. Some profiles must be run only occasionally, whereas others must be run almost every time that a user works with the app.

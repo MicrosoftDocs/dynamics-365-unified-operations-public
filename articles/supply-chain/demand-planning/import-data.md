@@ -27,6 +27,8 @@ Typically, a manager or system administrator creates the initial collection of r
 
 In addition, you can use the standard user interface (UI) to import your custom data entities into custom tables or add custom fields that you've extended in the standard tables. No developer is required.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## <a name="existing-import-profiles"></a>View and run existing data import profiles
 
 You have to import data only as often as the relevant data changes in the external systems. Some profiles must be run only occasionally, whereas others must be run almost every time that a user works with the app.

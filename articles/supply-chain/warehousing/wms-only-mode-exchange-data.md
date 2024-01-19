@@ -27,6 +27,8 @@ Warehouse management only mode requires that you set up integration between exte
 
 Many different integration methodologies can be used for these three categories. This article describes the recommended integration process.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
 
 You can use inbound and outbound shipment order messages to inform Supply Chain Management about which physical inventory to receive and ship. These messages include both header data and lines data.

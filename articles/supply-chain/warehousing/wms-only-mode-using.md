@@ -19,6 +19,10 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
+This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Monitor the integration
 
 To monitor the integration between the external systems and Microsoft Dynamics 365 Supply Chain Management, go to **Warehouse management** \> **Workspaces** \> **Warehouse integration monitoring**. From the **Warehouse integration monitoring** page, you can perform the following tasks:

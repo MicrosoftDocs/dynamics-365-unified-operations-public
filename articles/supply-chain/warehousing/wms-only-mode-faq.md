@@ -18,6 +18,9 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
+This article provides answers to frequently asked questions about Warehouse management only mode.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## What should I do when a message is shown as Failed in the message processor?
 

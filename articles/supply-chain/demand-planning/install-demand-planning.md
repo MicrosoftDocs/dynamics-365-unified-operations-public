@@ -21,6 +21,8 @@ ms.custom: bap-template
 
 This article describes how to install, enable, and set up the Demand planning app for Microsoft Dynamics 365 Supply Chain Management. It explains how to use Power Platform admin center to install the Demand planning app in your tenant and set up the feature in Supply Chain Management.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Prerequisites
 
 To use Demand planning with Supply Chain Management, you must be running one of the following versions of Supply Chain Management:

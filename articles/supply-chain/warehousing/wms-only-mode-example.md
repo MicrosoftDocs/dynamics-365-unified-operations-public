@@ -22,6 +22,8 @@ ms.custom: bap-template
 
 This article provides an example scenario that shows how to create inbound and outbound shipment orders. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 To create inbound and outbound shipment orders, you must post a message by using [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. The [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management then processes the message, and the orders are created in the warehouse system.
 
 The same message structure logic applies to both the inbound and outbound shipment order messages:

@@ -23,6 +23,8 @@ The Demand planning app lets you build a collection of *forecast profiles*. Each
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to generate new calculated time series as they require.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## View and run existing forecast profiles
 
 To generate a new forecast by running an existing forecast profile, follow these steps.
