@@ -33,8 +33,8 @@ This section will contain a table that lists the features that are included in t
 |---|---|---|---|
 | System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) | Feature management | 
 | Web client | Microsoft Graph mail provider | [Configure or send email](../../dev-itpro/organization-administration/configure-email.md#send-email-with-microsoft-graph) | Admin configuration |
-| Web client | Auto-blocking of high-volume notification rules | [Messaging system](../../dev-itpro/user-interface/messaging-user.md#how-do-i-manage-processes-that-generate-lots-of-notifications) | On by default (Feature management
-) |
+| Web client | Auto-blocking of high-volume notification rules | [Messaging system](../../dev-itpro/user-interface/messaging-user.md#how-do-i-manage-processes-that-generate-lots-of-notifications) | On by default (Feature management) |
+
 ## Feature enhancements included in this release
 
 This section will contain a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
