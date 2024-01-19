@@ -10,7 +10,7 @@ audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ilikond
-ms.search.validFrom: 
+ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ms.custom: 
 ms.assetid: 
