@@ -1065,7 +1065,7 @@
         - name: Map channels to e-commerce sites
           href: map-channels-sites.md
         - name: Bulk associate channels to e-commerce sites
-          href: bulk-associate-channel-to-site.md
+          href: bulk-associate-channels.md
         - name: Configure your domain name
           href: configure-your-domain-name.md
         - name: Deploy a new e-commerce tenant
