@@ -32,7 +32,7 @@ This section will contain a table that lists the features that are included in t
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) | Feature management | 
-| Web client | Microsoft Graph mail provider | [Configure or send email](../../dev-itpro/organization-administration/configure-email.md#send-email-with-microsoft-graph) | Admin configuration |
+| Web client | Microsoft Graph mail provider | This is the replacement mail provider for the deprecated Exchange provider, which will no longer work mid September 2024. See [Configure or send email](../../dev-itpro/organization-administration/configure-email.md#send-email-with-microsoft-graph) for more details on configuration. | Admin configuration |
 | Web client | Auto-blocking of high-volume notification rules | [Messaging system](../../dev-itpro/user-interface/messaging-user.md#how-do-i-manage-processes-that-generate-lots-of-notifications) | On by default (Feature management) |
 
 ## Feature enhancements included in this release
