@@ -21,31 +21,36 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-The article provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that is specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality. There are 4 steps to this process. Steps 1 through 4 are required, and step 4 is optional.
+The article provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that is specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality. 
 
-### Step 1: Install the add-in for microservices in Microsoft Dynamics Lifecycle Services
+## Install the add-in for microservices in Microsoft Dynamics Lifecycle Services
 
 The Electronic Invoicing service is a set of microservices that is hosted in Microsoft datacenters. By default, customers of Dynamics 365 Finance and Dynamics 365 Supply Chain Management don't have access to the Electronic Invoicing service. You must install it as an add-in in Microsoft Dynamics Lifecycle Services (LCS). When you install the add-in, your Finance or Supply Chain Management environment is registered in the register of applications that are allowed to connect to the Electronic Invoicing service.
 
-To complete this step, see [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md).
+To register an environment, follow these steps.
 
-### Step 2: 
+1. Sign in to your LCS account.
+2. On the project dashboard, select an LCS project.
+2. In the project, on the **Environments** dashboard, select your deployed environment. The environment that you select must be running.
+3. On the **Power Platform Integration** tab, in the **Environment add-ins** section, select **Install a new add-in**.
+4. Select **Electronic Invoicing**.
+5. In the **AAD application ID** field, enter the fixed value **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is always fixed. Make sure that you enter only a globally unique identifier (GUID). Don't include any other symbols, such as spaces, commas, periods, or quotation marks.
+6. In the **AAD tenant ID** field, enter the Azure Active Directory tenant ID of your Azure subscription account.
+7. Review the terms and conditions, and then select the checkbox.
+8. Select **Install**. After a few minutes, the status should change from **Installing** to **Installed**. You might have to refresh the page to see this change.
+
+> [!NOTE]
+> Companies usually have several Finance or Supply Chain Management environments. These environments include production environments, User Acceptance Test (UAT) environments, and development (sandbox) environments. You must complete the preceding procedure for all environments that you want to connect to Electronic invoicing.
+
+## Step 2: 
 
 You must s.
 
 To complete this step, see [S](e-invoicing-........md).
 
-### Step 3: Configure the Azure resources for Electronic invoicing
+## Step 3: Configure the Azure resources for Electronic invoicing
 
 Set up the Azure resources that Electronic invoicing requires to do its work. For more information, see [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md).
-
-### Step 4: Microsoft Power Platform plug-in admin reference
-
-Some scenarios require integration with Dataverse in the scope of Microsoft Power Platform.
-
-Currently, this setup is mandatory if you will use Electronic invoicing solutions for Indonesian electronic invoicing scenarios. However, it's optional for Saudi Arabian electronic invoicing scenarios. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md).
-
-To complete this step, see [Microsoft Power Platform plug-in admin reference](../dev-itpro/e-invoicing-power-platform-plug-in.md).
 
 
 
