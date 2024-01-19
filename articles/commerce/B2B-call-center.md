@@ -2,7 +2,7 @@
 # required metadata
 
 title: Channel and catalog selection enhancements in call center for creating B2B orders
-description: This article describes feature functionality enhancements that enable call center workers to initiate orders on behalf of B2B partners in their B2B channels.
+description: This article describes channel and catalog selection enhancements in Microsoft Dynamics 365 Commerce that enable call center workers to initiate orders on behalf of B2B partners in their B2B channels.
 author: ashishmsft
 ms.date: 01/17/2024
 ms.topic: article
@@ -17,11 +17,11 @@ ms.search.validFrom: 2017-06-30
 
 [!include [banner](../includes/banner.md)]
 
-This article describes feature functionality enhancements that enable call center workers to initiate orders on behalf of business to business (B2B) partners in their B2B channels. When adding order lines, call center workers can select items from the B2B catalogs associated with the B2B channel.
+This article describes channel and catalog selection enhancements in Microsoft Dynamics 365 Commerce that enable call center workers to initiate orders on behalf of business to business (B2B) partners in their B2B channels. When adding order lines, call center workers can select items from the B2B catalogs associated with the B2B channel.
 
 ## Benefits
 
-The feature functionality enhancements provide the following benefits:
+The channel and catalog selection enhancements provide the following benefits:
 
 - Improving the customization of orders according to specific B2B channels and catalogs.
 - Streamlining the ordering process, ensuring accuracy and efficiency.
@@ -29,7 +29,7 @@ The feature functionality enhancements provide the following benefits:
 
 ## Prerequisites
 
-For the feature functionality to work, the following prerequisites must be met.
+For the channel and catalog selection functionality to work, the following prerequisites must be met.
 
 - Your site must be running Commerce version 10.0.38 or later. 
 - The customer hierarchy, the distributor—channel associations, and the catalog—channel associations must be set up correctly in the system.
