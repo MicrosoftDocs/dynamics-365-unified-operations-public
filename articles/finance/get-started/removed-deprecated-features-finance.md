@@ -47,7 +47,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Estonia](../localizations/estonia/emea-est-vat-declaration.md). | 
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [VAT declaration for Estonia](../localizations/estonia/emea-est-vat-declaration.md). | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
