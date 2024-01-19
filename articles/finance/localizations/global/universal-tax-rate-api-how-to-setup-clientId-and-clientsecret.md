@@ -2,12 +2,12 @@
 title: How to setup ClientId and ClientSecret
 description: This article explains how to setup ClientId and ClientSecret for universal tax rate API.
 author: Kai-Cloud
-ms.date: 09/15/2023
+ms.date: 01/20/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
 audience: Application user
-ms.reviewer: 
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: hailxu
 ms.search.validFrom: 2024-02-01
@@ -21,11 +21,12 @@ uid: D365.CFO.FunctionalTraining.Finance.Tax.TaxCalculationService.TaxCalculatio
 ## Introduction
 
 You need to setup your credential information to access the Tax provider's service. You should get Client ID and Client Secret from your Tax provider, and then store them in Azure key vault and config Key vault parameters in in Dynamics 365 Finance and Operations. And then you would be able to select the corresponding key vault secrets name in the tax feature setup.
+
 ![CustomerISVFeatureCredential-GTEPlus](../media/CustomerISVFeatureCredential-GTEPlus.png.png)
 
 ## Prerequisite Steps - Create an Azure key vault in the Azure portal
 
-All the secrets and certificates that are used in the Tax Calculation service must be stored in a Microsoft Azure key vault. This approach helps ensure that you don't work directly with the secrets, and that the secrets are securely stored. When you must use digital signing or secure a connection to external web services, set the reference to the Key Vault secrets instead of using the secrets and certificates directly. For more information, see [About Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview).
+All the secrets and certificates that are used in the Tax Calculation service must be stored in a Microsoft Azure key vault. This approach helps ensure that you don't work directly with the secrets, and that the secrets are securely stored. When you must use digital signing or secure a connection to external web services, set the reference to the Key Vault secrets instead of using the secrets and certificates directly. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
 
 ### Create a Key Vault
 
