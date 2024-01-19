@@ -1490,6 +1490,8 @@
           href: dev-itpro/obo-add-pages-site-builder.md
         - name: Set up and configure on behalf of functionality (OBO) in headquarters
           href: dev-itpro/obo-configure-hq.md
+      - name: Channel and catalog selection enhancements in call center for creating B2B orders
+        href: b2b-call-center.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
