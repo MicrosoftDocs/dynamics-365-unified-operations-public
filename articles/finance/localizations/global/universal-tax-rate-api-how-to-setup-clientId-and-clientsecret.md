@@ -21,7 +21,7 @@ uid: D365.CFO.FunctionalTraining.Finance.Tax.TaxCalculationService.TaxCalculatio
 ## Introduction
 
 You need to setup your credential information to access the Tax provider's service. You should get Client ID and Client Secret from your Tax provider, and then store them in Azure key vault and config Key vault parameters in in Dynamics 365 Finance and Operations. And then you would be able to select the corresponding key vault secrets name in the tax feature setup.
-![CustomerISVFeatureCredential-GTEPlus](/Attachments/CustomerISVFeatureCredential-GTEPlus.png.png)
+![CustomerISVFeatureCredential-GTEPlus](../media/CustomerISVFeatureCredential-GTEPlus.png.png)
 
 ## Prerequisite Steps - Create an Azure key vault in the Azure portal
 
@@ -44,15 +44,15 @@ All the secrets and certificates that are used in the Tax Calculation service mu
 6. Click next and set the **Permission model** to **Vault access policy**.
 7. Select **Review + Create**.
 8. Waiting for the deployment complete. Expand the Deployment details go to the Key Vault detail.
-![resource](/Attachments/items.png)
-![Key vault](/Attachments/items1.png)
+![resource](../media/items.png)
+![Key vault](../media/items1.png)
     >**NOTE:**
     > Please copy and save the **Vault URI** above, it will be referred in the section [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **\<Key Vault URL\>**.
 
 9. Click next and set the **Permission model** to **Vault access policy**.
 
 10. Select Secrets, Click **Generate/Import**
-![resource](/Attachments/items2.png)
+![resource](../media/items2.png)
     - **Upload options**: **Manual**.
     - **Name**: A name for the seceret. E.g.: **ClientID**
     - **Secret value**: Enter the Client ID that you get from the Tax provider.
@@ -60,7 +60,7 @@ All the secrets and certificates that are used in the Tax Calculation service mu
     >**NOTE:**
     > The **Secret Name** is a mandatory parameter for integration with the key vault, therefore it should be specified in the application. It is referred in [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **SecretName** parameter.
 11. Repeate step 10 for Client secret.
-![resource](/Attachments/items3.png)
+![resource](../media/items3.png)
 
 ### Setup Permissions
 
@@ -69,17 +69,17 @@ All the secrets and certificates that are used in the Tax Calculation service mu
 To access Azure key vault you need to create App registration under Azure Active Directory.
 
 1. Create a new App registration.
-   ![Find App registration](/Attachments/items4.png)
-   ![Create App registration](/Attachments/items5.png)
+   ![Find App registration](../media/items4.png)
+   ![Create App registration](../media/items5.png)
 2. Set the **Name** and **Supported account types**, and then click **Register**
 3. Copy and save **Application (Client) ID**. It should be specified in the application, and referred in [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **\<Key Vault client\>** parameter.
-   ![App registration](/Attachments/items6.png)
+   ![App registration](../media/items6.png)
 
 4. Create a new **Client secret**.
    >**Note**
    > The **Client secret** is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. It is referred in [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **\<Key Vault secret key\>** parameter.
 
-   ![Certificates & secrets](/Attachments/items7.png)
+   ![Certificates & secrets](../media/items7.png)
 
 #### Set Access policy of the Key Vault
 
@@ -88,9 +88,9 @@ You must set up the access policy to grant the App registration above the correc
 1. Open the Key Vault storage that you created above.
 2. Go to **Settings** \> **Access policies**, and click **Create**.
 3. In the **Secret permissions**, select the **Get** and **List** operations.
-   ![Acess policy - permission](/Attachments/items8.png)
+   ![Acess policy - permission](../media/items8.png)
 4. Click **Next**, in the **Select principal**, select the App registration that you created above.
-   ![cess policy - principal](/Attachments/items9.png)
+   ![cess policy - principal](../media/items9.png)
 5. Click **Next** till to "Review + create" and the click **Create**.
 
 ## Setup Key Vault parameters in Dynamics 365 Finance and Operations
@@ -115,4 +115,4 @@ After finishing the prerequisite steps, you setup the key vault parameters to li
     **vault:///\<SecretName>**
 
     If the secret version isn't defined in the Key Vault secret key, the system retrieves the active secret that has the latest expiration date.
-    ![Key vault parameters](/Attachments/items10.png)
+    ![Key vault parameters](../media/items10.png)
