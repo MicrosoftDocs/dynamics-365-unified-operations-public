@@ -20,27 +20,27 @@ This article describes how to prepare your Microsoft Dynamics 365 Finance enviro
 
 ## Prerequisites
 
-### Set up application-specific parameters of ER format for the VAT declaration
+### Set up application-specific parameters of the ER format for the VAT declaration
 
 To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](emea-dnk-vat-declaration-denmark.md).
 
 Before you start to prepare your Finance environment for direct submission of VAT returns in XML format to the Danish Tax Agency, complete the required setup in [Preview a VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md).
 
-### Delegate rights to RSU at skat.dk
+### Delegate rights to an accounting system provider at skat.dk
 
-To submit your VAT return directly to the Danish Tax Agency, you must delegate rights to RSU (Regnskabssystemsudbyder / Accounting system provider). This is done on skat.dk. A guide on how to delegate rights to an RSU is published on [skat.dk portal](https://skat.dk/erhverv/moms/momsregnskab) and can also be found by the link: [https://info.skat.dk/data.aspx?oid=2339573&chk=219318](https://info.skat.dk/data.aspx?oid=2339573&chk=219318). Delegate the “NemVirksomhed - adgang for regnskabssystemudbyder” to the following CVR: `13612870` to be able to submit your VAT return directly from your Microsoft Dynamics 365 Finance to NemVirksomhed APIs.
+To submit your VAT return directly to the Danish Tax Agency, you must delegate rights to an accounting system provider (Regnskabssystemsudbyder \[RSU\]) at skat.dk. A guide that explains how to delegate rights to an RSU is published in the [skat.dk portal](https://skat.dk/erhverv/moms/momsregnskab). You can also access it at [https://info.skat.dk/data.aspx?oid=2339573&chk=219318](https://info.skat.dk/data.aspx?oid=2339573&chk=219318). To submit your VAT returns directly from Dynamics 365 Finance to NemVirksomhed APIs, delegate the **NemVirksomhed - adgang for regnskabssystemudbyder** RSU to the following Danish Central Business Register (Centrale Virksomhedsregister \[CVR\]) number: **13612870**.
 
-### Set up Power Platform Integration for the environment in the LCS and install “Electronic Invoicing” add-in
+### Set up Power Platform Integration for the environment in Lifecycle Services and install the Electronic Invoicing add-in
 
-Before you start to prepare your Finance environment for direct submission of VAT return, you must set up Power Platform Integration for the environment in the LCS and install “Electronic Invoicing” add-in.
+Before you start to prepare your Finance environment for direct submission of VAT returns, you must set up Power Platform Integration for the environment in Microsoft Dynamics Lifecycle Services and install the Electronic Invoicing add-in.
 
-To set up Power Platform Integration for your Finance environment, see the [Connect finance and operations apps with a new Microsoft Dataverse instance](../../..//fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md) topic. 
+For information about how to set up Power Platform Integration for your Finance environment, see [Connect finance and operations apps with a new Microsoft Dataverse instance](../../..//fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md). 
 
-To install **Electronic Invoicing** add-in, see the [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md) topic.
+For information about how to install the Electronic Invoicing add-in, see [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md).
 
-### Upgrade your Dynamics 365 Finance
+### Upgrade Finance
 
-Before you start to prepare your Finance environment for direct submission of VAT returns, make sure the application build of your Finance environment is the following or higher:
+Before you start to prepare your Finance environment for direct submission of VAT returns, make sure that your Finance environment has the required application build number or later, as shown in the following table.
 
 | Finance version | Build |
 |-----------------|-------|
@@ -148,7 +148,12 @@ Before you use these classes for the first time, you must save the parameters.
 3. Select **OK** in the dialog box for each executable class to save the specified parameters.
 
 > [!IMPORTANT]
-> By selecting OK, you will access a third-party service and you agree: (a) to share your data with an external system that is governed by the third party's terms and privacy policy with you; and (b) any data imported from the external system into Microsoft Dynamics 365 is subject to Microsoft's privacy statement that can be accessed here. Consult the feature technical documentation for more information about this feature.
+> By selecting **OK**, you access a third-party service and agree to the following terms:
+>
+> 1. You will be sharing your data with an external system that's governed by the third party's terms and privacy policy with you.
+> 2. Any data that's imported from the external system into Dynamics 365 is subject to Microsoft's privacy statement.
+>
+> For more information about this feature, consult the technical documentation for it.
 
 ### <a id="security-roles"></a>Set up security roles for electronic message processing
 
