@@ -23,6 +23,9 @@ ms.search.form:
 
 The article provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that is specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality. 
 
+## Azure in general ?????
+As since on the next step we'll have to have **Azure Active Directory tenant ID**
+
 ## Install the add-in for microservices in Microsoft Dynamics Lifecycle Services
 
 The Electronic Invoicing service is a set of microservices that is hosted in Microsoft datacenters. By default, customers of Dynamics 365 Finance and Dynamics 365 Supply Chain Management don't have access to the Electronic Invoicing service. You must install it as an add-in in Microsoft Dynamics Lifecycle Services (LCS). When you install the add-in, your Finance or Supply Chain Management environment is registered in the register of applications that are allowed to connect to the Electronic Invoicing service.
@@ -62,9 +65,12 @@ Set up the Azure resources that Electronic invoicing requires to do its work. Fo
 
 
 
-After the main components are configured, work with ....
 
 After everything is set up, you can create your own Globalization features that define different scenarios for processing electronic documents and transforming data, or for importing the documents from the Global repository. For more information about how to work with Globalization features, see [Work with Globalization features](e-invoicing-working-globalization-features.md).
 
 If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
+
+After the main components are configured, work with ....
+
+Dynamics 365 Finance and Dynamics 365 Supply Chain Management  [Activate and set up integration with Electronic invoicing](e-invoicing-activate-setup-integration.md) and [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
 
