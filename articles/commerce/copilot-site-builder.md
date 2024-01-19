@@ -2,7 +2,7 @@
 title: Use Copilot in site builder to enrich product detail pages
 description: This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 01/12/2024
+ms.date: 01/19/2024
 ms.topic: article
 audience: Application user
 ms.reviewer: v-chrgriffin
@@ -20,7 +20,7 @@ ms.collection:
 This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
 
 > [!NOTE]
-> As of Commerce version 10.0.38, a preview of Copilot in site builder is available for United States customers. This preview supports only the English language (en-us) locale. Support for additional regions and locales is planned for future releases.
+> As of October 2023, a preview of Copilot in site builder is available for United States customers. This preview supports only the English language (en-us) locale. Support for additional regions and locales is planned for future releases.
 
 If you run an e-commerce website, you know the importance of engaging and persuasive product enrichment and marketing content that can attract and convert your customers. However, it can be time-consuming and challenging to create such content, especially if you have a large product catalog and a diverse audience. To help with content creation, Microsoft introduced Copilot in site builder, a new AI-powered tool that helps you easily and efficiently generate high-quality content.
 
