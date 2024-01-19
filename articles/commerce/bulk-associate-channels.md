@@ -21,6 +21,15 @@ The bulk association feature simplifies the process of creating and managing mul
 
 The main benefit of this feature is to save site authors time and effort when creating and managing multiple channels for a site. Site authors using the wizard experience can easily select and associate multiple channels with a site, and configure the default and optional settings for each channel.
 
+## Common uses of the bulk association feature
+
+Some common uses of the bulk association feature are:
+
+- A site author wants to bulk associate multiple channels with a site to more efficiently create and manage multiple site channels for that site.
+- A site author wants to use an option to automatically default the domain, path, and authentication profile configurations for each channel to avoid manually providing those values for each channel-locale combination individually.
+- A site author wants to enable geo redirection for each channel to direct users to the appropriate channel based on their location.
+- A site author wants to override the default settings for each channel to customize the channel properties according to requirements.
+
 ## Best practices for the bulk association feature
 
 The following best practices are recommended when using the bulk association feature.
@@ -29,16 +38,7 @@ The following best practices are recommended when using the bulk association fea
 - Review the default and optional settings for each channel carefully to ensure that they match your expectations and requirements. You can override the settings for individual channels as needed.
 - Test the channel associations and settings before launching the site, and verify that the site works as expected for different channels and locales. You can use the preview mode in site builder to test the site for different channels.
 
-## Common uses of the bulk association feature
-
-The applicable use cases for this feature are:
-
-- A site author wants to bulk associate multiple channels with a site to more efficiently create and manage multiple site channels for that site.
-- A site author wants to use an option to automatically default the domain, path, and authentication profile configurations for each channel to avoid manually providing those values for each channel-locale combination individually.
-- A site author wants to enable geo redirection for each channel to direct users to the appropriate channel based on their location.
-- A site author wants to override the default settings for each channel to customize the channel properties according to requirements.
-
-## Use the bulk association feature
+## Bulk associate multiple channels in site builder
 
 > [!NOTE] 
 > The bulk association feature is available on a preview basis. To access the feature, append the query string parameter `&set=enableBulkChannels` to your site builder URL.
