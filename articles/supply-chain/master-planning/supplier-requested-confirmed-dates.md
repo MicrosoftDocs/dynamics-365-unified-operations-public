@@ -90,57 +90,75 @@ To set up addresses for a vendor, follow these steps.
 1. Open the vendor record that you want to work with.
 1. On the **Addresses** FastTab, add and remove addresses as you require. If more than one address is specified on the **Addresses** FastTab, when the system uses the purchase transport days setup to calculate the shipping date, it uses the address where the **Primary** option is set to *Yes* as the shipping point.
 
-    > [!TIP]
-    > - The vendor address is applied to the purchase order and used as the shipping point from purchase transport days.
-    > - Th purchase transport days receiving point is second part for calculate shipping date. The delivery address is depending on the setup and can be defaulted from company, site, warehouse. Updating the site or warehouse for a purchase order header or line will trigger a recalculation of shipping date, since the transport days may be different based on different delivery address on site or warehouse.
+> [!TIP]
+>
+> - The vendor address is applied to the purchase order and used as the shipping point for purchase transport days.
+> - The purchase transport days receiving point is the second factor used to calculate the shipping date. The delivery address depends on the setup and can be defaulted from the company, site, or warehouse. Updating the site or warehouse for a purchase order header or line triggers a recalculation of the shipping date because the new site or warehouse could have a different delivery address.
 
-### <a name="calendars"></a>Calendars part of ship and receipt date calculation
+### <a name="calendars"></a>How calendars affect ship and receipt date calculations
 
-Three calendars comes into play as part of the calculation
+The following calendars are relevant for ship and receipt date calculations:
 
-- Purchase calendar - when vendor is open. For instance, you can place an order the whole week except weekends
-- Vendor Ship calendar - when purchase order can be shipped from the vendor
-- Warehouse calendar - when purchase order can be delivered in the site or warehouse
+- **Purchase calendar** – Defines when a vendor is open. For example, a vendor may accept orders on work days but not weekends.
+- **Vendor ship calendar** – Defines when purchase orders can be shipped from the vendor.
+- **Warehouse calendar** - Defines when a purchase order can be received at the site or warehouse.
 
-The Purchase and vendor ship calendars are taken into account when calculating the ship date where as the warehouse / item coverage group calendar is used when calculating the receipt date.
+The purchase and vendor-ship calendars are considered when calculating the ship date, while the warehouse (item coverage group) calendar is used when calculating the receipt date.
 
-Example
-Below table contains the three calendars that takes part of the calculation of purchase order request ship and receipt date.
+For more information, see [Calendars and master planning](supply-chain-calendars-master-planning.md).
 
-In first scenario we have a product with a lead time of 5 days and purchase transport days of 2 days.
+The following examples show how calendars affect the calculation of purchase order request ship and receipt dates.
 
-- Ship date is Saturday where vendor ship calendar is open after 5 days lead time
-- Receipt date is Tuesday since first open warehouse calendar day after 2 transport days
+#### Calculation example 1
 
-|                    |Mon   |Tue   |Wed   |Thu   |Fri   |Sat   |Sun   |Mon   |Tue   |
-|:-------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|Purchase calendar   |Open  |Open  |Open |Open   |Open  |Open  |Open  |Open  |Open  |
-|Vendor ship calendar|Open  |Closed|Closed|Closed|Open  |Open  |Open  |Open  |Open  |
-|Warehouse calendar  |Open  |Open  |Open  |Open  |Closed|Closed|Closed|Closed|Open  |
-|**Below is the calculated dates**|
-|Order date          |**X** |      |      |      |      |**X** |      |      |      |
-|Ship date           |      |      |      |      |      |      |      |      |      |
-|Receipt date        |      |      |      |      |      |      |      |      |**X** |
+This example shows how requested ship and receipt dates are calculated for a product with a five-day lead time and two purchase transport days.
 
-Second scenario we adjust the product lead time to 3 days and purchase transport days of 2 days.
+The following table shows the calendars that apply.
 
-- Ship date is moved one day, since vendor ship calendar is closed on Thursday
-- Receipt date is moved two days, since warehouse calendar is closed on Sunday and Monday
+| Calendar | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Mon | Tue |
+|--|--|--|--|--|--|--|--|--|--|
+| Purchase calendar | Open | Open | Open | Open | Open | Open | Open | Open | Open |
+| Vendor ship calendar | Open | Closed | Closed | Closed | Open | Open | Open | Open | Open |
+| Warehouse calendar | Open | Open | Open | Open | Closed | Closed | Closed | Closed | Open |
 
+The following table shows the calculated dates.
 
-|                    |Mon   |Tue   |Wed   |Thu   |Fri   |Sat   |Sun   |Mon   |Tue   |
-|:-------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|Purchase calendar   |Open  |Open  |Open |Open   |Open  |Open  |Open  |Open  |Open  |
-|Vendor ship calendar|Open  |Closed|Closed|Closed|Open  |Open  |Open  |Open  |Open  |
-|Warehouse calendar  |Open  |Open  |Open  |Open  |Closed|Closed|Closed|Closed|Open  |
-|**Below is the calculated dates**|
-|Order date          |**X** |      |      |      |      |      |      |      |      |
-|Ship date           |      |      |      |      |**X** |      |      |      |      |
-|Receipt date        |      |      |      |      |      |      |      |      |**X** |
+| Date type | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Mon | Tue |
+|--|--|--|--|--|--|--|--|--|--|
+| Order date | X |  |  |  |  |  |  |  |  |
+| Ship date |  |  |  |  |  | X |  |  |  |
+| Receipt date |  |  |  |  |  |  |  |  | X |
 
-Find more details on [Calendars and master planning](supply-chain-calendars-master-planning.md).
+The calculation results are based on the following information:
 
-#### Assign vendor ship calendars
+- The ship date is Saturday, which is when the vendor ship calendar is open after allowing five days lead time.
+- The receipt date is Tuesday because that's the first open warehouse calendar day available after allowing two transport days.
+
+#### Calculation example 2
+
+This example shows how request ship and receipt dates are calculated for a product with a three-day lead time and two purchase transport days.
+
+The following table shows the calendars that apply.
+
+| Calendar | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Mon | Tue |
+|--|--|--|--|--|--|--|--|--|--|
+| Purchase calendar | Open | Open | Open | Open | Open | Open | Open | Open | Open |
+| Vendor ship calendar | Open | Closed | Closed | Closed | Open | Open | Open | Open | Open |
+| Warehouse calendar | Open | Open | Open | Open | Closed | Closed | Closed | Closed | Open |
+
+The following table shows the calculated dates.
+| Calendar | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Mon | Tue |
+|--|--|--|--|--|--|--|--|--|--|
+| Order date | X |  |  |  |  |  |  |  |  |
+| Ship date |  |  |  |  | X |  |  |  |  |
+| Receipt date |  |  |  |  |  |  |  |  | X |
+
+Compared to the previous example, the calculation results are as follows:
+
+- The ship date is moved one day because the vendor ship calendar shows the vendor is closed on Thursday
+- The receipt date is moved two days because warehouse calendar shows the warehouse is closed on Sunday and Monday
+
+### Assign vendor ship calendars
 
 For each vendor, you can specify a ship calendar that indicates the dates when the vendor can ship. For example, some vendors might be able to ship during all opening hours, whereas others can ship only on Mondays. You can define as many specific ship calendars as you require and then apply them to each vendor as appropriate.
 
@@ -175,27 +193,32 @@ The requested ship date is also calculated for manually created planned purchase
 When you edit a purchase order where the requested and/or confirmed ship date has already been calculated, the system does the following recalculations:
 
 - If the **Requested ship date** value is changed, the **Requested receipt date** value is recalculated.
-- If the **Requested receipt date** value is changed, the **Requested ship date** value is recalculated.
-- If the **Confirmed ship date** value is changed, the **Confirmed receipt date** value is recalculated.
-- If the **Confirmed receipt date** value is changed, the **Confirmed ship date** value is recalculated.
-- If any of the following information is changed, the relevant ship and receipt dates are recalculated:
 
-  - Address on the header
-  - Mode of delivery (on the header or on a line)
-  - Warehouse on a line
+- If the **Requested receipt date** value is changed, the **Requested ship date** value is recalculated.
+
+- If the **Confirmed ship date** value is changed, the **Confirmed receipt date** value is recalculated.
+
+- If the **Confirmed receipt date** value is changed, the **Confirmed ship date** value is recalculated.
+
+- If any of the following information is changed, the relevant ship and receipt dates are recalculated:
+    - Address on the header
+    - Mode of delivery (on the header or on a line)
+    - Warehouse on a line
 
 If you change the **Requested ship date** or **Confirmed ship date** value on the header of a purchase order, the system asks you whether the relevant ship and receipt dates should also be updated for each line.
 
-## Scenario date calculation
+## Example date-calculation scenarios
 
-In this section purchase order requested ship and receipt date calculation is described.
+In this section provides examples of how purchase order requested ship and receipt dates are calculated in various scenarios.
+
+### Example scenario prerequisites
 
 Prerequisites for these scenario are:
 
-- The feature that's named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/
-- **Purchase transport days** is configured with receiving, shipping address and number of transport days. The address should match what is used for vendor and the purchase order line
-- All calendars have all days open, if nothing else is specified.
-- The **Procurement and sourcing parameters** field **Requested ship date in the past** is set to **None**
+- The feature that's named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The **Purchase transport days** page must be configured with receiving address, shipping address, and number of transport days. The addresses must match the vendors and the purchase order lines specified in these scenarios.
+- All calendars have all days open unless otherwise specified.
+- On the **Procurement and sourcing parameters** page, on the **Delivery** tab, the **Requested ship date in the past** field must be set to *None*.
 
 ### Create purchase order
 
@@ -213,9 +236,9 @@ The expected purchase order line requested dates should be :
 - Requested ship date is set to current date initialized from the purchase order header requested ship date.
 - Requested receipt date will be calculated to 2 purchase transport days ahead from the purchase order requested ship date.
 
-If the product given on the purchase orde line has lead time then requested ship date will be purchase order date plus product lead time.
+If the product given on the purchase order line has lead time then requested ship date will be purchase order date plus product lead time.
 
-Updating the requested ship or receipt date will trigger date re-calculation. Update requested ship date will do a forward calculation of the requested receipt date, and updates to requested receipt date will do backward calculation of the requested ship date. Important availabilty of the vendor ship calendar and warehouse calendar has impact on the date calculation, see the [Calendars part of ship and receipt date calculation](#calendars) section.
+Updating the requested ship or receipt date will trigger date re-calculation. Update requested ship date will do a forward calculation of the requested receipt date, and updates to requested receipt date will do backward calculation of the requested ship date. Important availability of the vendor ship calendar and warehouse calendar has impact on the date calculation, see the [Calendars part of ship and receipt date calculation](#calendars) section.
 
 ### Create purchase order with dates in the past
 
@@ -308,7 +331,7 @@ The expected purchase order line requested dates should be :
 The expected sales order line requested dates should match the dates on the purchase order line.
 
 > [!TIP]
-The sourcing order dictates how and if the purchase order transport days are calculated. 
+> The sourcing order dictates how and if the purchase order transport days are calculated.
 >
 > - If dates are updated on sales order then lead time and customer transport days takes presences and purchase order transports days are calculated.
 > - If dates are update on purchase order, then purchase transport days and lead time are calculated and requested and confirmed dates are synchronized back to the sales order.
@@ -330,7 +353,7 @@ In this scenario we create a purchase agreement, release purchase order setting 
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order noted from above.
 
-The expected purchase order line requested dates should be :
+The expected purchase order line requested dates should be:
 
 - Requested receipt date will be the value we did set when release order.
 - Requested ship date is calculated backward 2 purchase transport days from the purchase order requested receipt date.
@@ -347,11 +370,11 @@ Scenario describes creating purchase requisition, release of the order and the r
 
 The expected purchase requisition line requested date should be :
 
-- Requested date from header plus 2 purchase transport days calcualted forward.
+- Requested date from header plus 2 purchase transport days calculated forward.
 
 Generate purchase order for purchase requisition through the workflow **Submit requisition for approval**, will result in purchase order with following requested dates:
 
-- Requested receipt date will be the set to the value **Requested date** from purchase requisistion
+- Requested receipt date will be the set to the value **Requested date** from purchase requisition
 - Requested ship date is calculated backward 2 purchase transport days from the purchase order requested receipt date.
 
 ### Purchase request for quotation
@@ -374,7 +397,7 @@ Scenario describes creating purchase request for quotation, acceptance of RFQ re
 1. On the action pane, select **Submit**
 1. On the **Reply** action pane, select **Process** \> **Accept**
 1. Click **OK** to create the purchase order
-1. On the **Genreral** action pane, select **Othe3r information** \> **Purchase order**
+1. On the **General** action pane, select **Other information** \> **Purchase order**
 
 - Requested receipt date will be the set to the value **Requested receipt date** from request for quotation
 - Requested ship date is calculated backward 2 purchase transport days from the purchase order requested receipt date.
