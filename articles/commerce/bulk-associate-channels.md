@@ -17,9 +17,9 @@ ms.search.validFrom: 2019-10-31
 
 This article describes feature functionality that allows site authors to bulk associate more than one channel to Microsoft Dynamics 365 Commerce e-commerce sites using a wizard experience.
 
-The bulk association feature simplifies the process of creating and managing multiple channels for a site, and provides options to customize the domain, path, authentication profile, and georedirection settings for each channel. The feature also allows site authors to enable cross-channel sharing, which allows retailers to reuse and share content among multiple channels of a site, reducing content duplication and improving the consistency and quality of the site.
+The bulk association feature simplifies the process of creating and managing multiple channels for a site, and provides options to customize the domain, path, authentication profile, and geo redirection settings for each channel. The feature also allows site authors to enable cross-channel sharing, which lets retailers reuse and share content among multiple channels of a site, reducing content duplication and improving the consistency and quality of the site.
 
-The main benefit of this feature is to save site authors time and effort when creating and managing multiple channels for a site. By using the wizard experience, site authors can easily select and associate multiple channels with a site, and configure the default and optional settings for each channel.
+The main benefit of this feature is to save site authors time and effort when creating and managing multiple channels for a site. Site authors using the wizard experience can easily select and associate multiple channels with a site, and configure the default and optional settings for each channel.
 
 ## Best practices for the bulk association feature
 
@@ -35,7 +35,7 @@ The applicable use cases for this feature are:
 
 - A site author wants to bulk associate multiple channels with a site to more efficiently create and manage multiple site channels for that site.
 - A site author wants to use an option to automatically default the domain, path, and authentication profile configurations for each channel to avoid manually providing those values for each channel-locale combination individually.
-- A site author wants to enable georedirection for each channel to direct users to the appropriate channel based on their location.
+- A site author wants to enable geo redirection for each channel to direct users to the appropriate channel based on their location.
 - A site author wants to override the default settings for each channel to customize the channel properties according to requirements.
 
 ## Use the bulk association feature
@@ -49,10 +49,10 @@ To bulk associate multiple channels in site builder, follow these steps.
 1. Select **+Add channel**.
 1. In the **Add channel** flyout menu, for **Channel selection**, select **Add multiple channels**, and then select **Next**.   
 1. On the **Channel details** step, select the **Domain** and **Authentication profile** to be associated with each channel.
-1. Optionally, set the **Enable all channels for auto redirection** to **On** to enable georedirection by default. You can override this setting at the channel level later if needed.
+1. Optionally, set the **Enable all channels for auto redirection** to **On** to enable geo redirection by default. You can override this setting at the channel level later if needed.
 1. Select **Next**.
 1. On the **Add channels** step, search for and select the channels that you want to associate with the site. In the list of channels, you can see the **Channel name** and the **Operating Unit Number (OUN)** for each channel. Select the channels you want individually, or select all channels from the header, and then select **Next**.
-1. On the **Locales** step, a list displays all the locales that are associated with each channel by default. If you previously enabled georedirection, you can also see a list of countries or regions assigned to each locale. Optionally, select **Edit** to add or remove locales, countries, or regions from each channel as needed, and then select **Add locales**.
+1. On the **Locales** step, a list displays all the locales that are associated with each channel by default. If you previously enabled geo redirection, you can also see a list of countries or regions assigned to each locale. Optionally, select **Edit** to add or remove locales, countries, or regions from each channel as needed, and then select **Add locales**.
 1. Select **Next**.
 1. On the **URL paths** step, you can view the default URLs for each channel. You can override the URL paths, domain, or authentication profile for each channel as needed, and also select the **Set default application channel** drop-down list to choose which channel is the default application channel when authoring site pages in site builder.
 1. Select **Next**.
