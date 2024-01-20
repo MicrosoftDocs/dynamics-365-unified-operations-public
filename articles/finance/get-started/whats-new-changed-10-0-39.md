@@ -45,7 +45,12 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-
+|Cash and bank management|Modern bank reconciliation|This feature redesigns advanced bank reconciliation including usability improvements, feature enhancements and performance improvements. Bank reconciliation matching rules are enhanced in 10.0.39 to support four new automatic matching scenario including generating voucher, generating customer and vendor payment journal, settling customer open invoices, and clear reversal company transactions. This feature is a preview feature and is available in sandbox environments in Dynamics 365 Finance version 10.0.39.|Feature management|
+|Cash and bank management|Petty cash|Petty cash is extended from localization feature to a global feature for all countries in 10.0.39. You can use the petty cash functionality to automate operations for receipts and expenditures of cash, the creation of primary documents, and the printing of related reports.|Feature management|
+|Cash and bank management|Customer and vendor netting |This feature enables the netting capability between open customer balances and open vendor balances. Customer and vendor payment journals are no longer created to settle open vendor and customer transactions. Instead, netting journals are created. This feature is a preview feature and is available in production environments in Dynamics 365 Finance version 10.0.39.|Feature management|
+|Cash and bank management|Automatic clear bridged transactions through advanced bank reconciliation |This feature allows you to automatically clear bridged payment transactions through bank reconciliation instead of manually clearing them in general ledger. It also allows you to set up a bridging account per bank account. This feature is a preview feature and is available in production environments in Dynamics 365 Finance version 10.0.39.|Feature management|
+|Cash and bank management|Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation |This feature provides additional exchange rate type options for accounts payable and accounts receivable foreign currency revaluation. Users can define accounting currency exchange rate type and reporting currency exchange rate type per legal entity or per customer and vendor group to override the default type on ledger setup when running foreign currency revaluation.|Feature management|
+|Cash and bank management|Exchange rate type enhancement for bank foreign currency revaluation |This feature provides additional exchange rate type options for bank foreign currency revaluation. Users can define accounting currency exchange rate type and reporting currency exchange rate type per legal entity or per bank account to override the default type on ledger setup when running foreign currency revaluation.|Feature management|
 
 ## Feature enhancements included in this release
 
@@ -53,6 +58,9 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+|Cash and bank management|Customer and vendor netting|Automatic netting is available in 10.0.39. Users can configure netting rules and run batch job or process automation to automatically net the open balance under the selected netting agreements and additional critera|
+|Cash and bank management|Customer and vendor netting|Two data entities, Netting agreement and Netting agreement pair, are available in 10.0.39 to import netting agreements. |
+|Cash and bank management|Payment reversals|Check reversal is not allowed if the original check is marked as cleared in 10.0.39.|
 
 ## Additional resources
 
