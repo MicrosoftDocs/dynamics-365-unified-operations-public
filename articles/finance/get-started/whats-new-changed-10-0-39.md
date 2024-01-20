@@ -60,6 +60,7 @@ The following table lists the feature enhancements that are included in this rel
 |--------------|--------------|------------------|
 |Cash and bank management|Customer and vendor netting|Automatic netting is available in 10.0.39. Users can configure netting rules and run batch job or process automation to automatically net the open balance under the selected netting agreements and additional critera.|
 |Cash and bank management|Customer and vendor netting|Two data entities, Netting agreement and Netting agreement pair, are available in 10.0.39 to import netting agreements. |
+|Cash and bank management|Customer and vendor netting|Conditional tax is supported in customer and vendor netting in 10.0.39. |
 |Cash and bank management|Payment reversals|Check reversal is not allowed if the original check is marked as cleared in 10.0.39.|
 
 ## Additional resources
