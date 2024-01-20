@@ -63,6 +63,7 @@ The following table lists the feature enhancements that are included in this rel
 |Cash and bank management|Customer and vendor netting|Conditional tax is supported in customer and vendor netting in 10.0.39. |
 |Cash and bank management|Payment reversals|Check reversal is not allowed if the original check is marked as cleared in 10.0.39.|
 |Cash and bank management|Bank statements|BAI2 format bank statement importing performance is improved in 10.0.39.|
+|Cash and bank management|Bank reconciliation|Financial tags are supported in advanced bank reconciliation in 10.0.39.|
 
 ## Additional resources
 
