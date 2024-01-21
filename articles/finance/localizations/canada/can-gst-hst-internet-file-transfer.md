@@ -18,7 +18,6 @@ audience: Application User
 ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
-ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Canada
 # ms.search.industry: 

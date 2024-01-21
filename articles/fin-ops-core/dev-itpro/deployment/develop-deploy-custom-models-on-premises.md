@@ -11,7 +11,6 @@ ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.custom: 107013
 ms.assetid: 
 ms.service: dynamics-365
 search.app:

@@ -17,7 +17,6 @@ audience: IT Pro, Developer
 # ms.devlang:
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm:
-ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
 # ms.search.industry:

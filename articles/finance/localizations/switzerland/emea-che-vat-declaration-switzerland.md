@@ -12,7 +12,6 @@ ms.search.region: Switzerland
 ms.author: egolub
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 264584
 ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 ---
 

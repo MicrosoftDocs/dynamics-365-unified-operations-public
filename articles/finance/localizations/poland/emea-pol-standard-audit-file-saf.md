@@ -12,7 +12,6 @@ ms.search.region: Poland
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---

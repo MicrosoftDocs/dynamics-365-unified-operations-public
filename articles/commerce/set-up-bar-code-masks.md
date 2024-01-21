@@ -9,7 +9,6 @@ ms.topic: article
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: Global
 ms.author: brshoo
