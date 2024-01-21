@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-ms.custom: 267894
 ms.assetid: b74f8d8b-e20b-4ffd-8fd6-c64c2fe31c8a
 ms.search.form: SystemParameters, SysAbout
 ---

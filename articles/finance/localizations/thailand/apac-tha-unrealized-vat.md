@@ -12,7 +12,6 @@ ms.search.region: Thailand
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 265924
 ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 ms.search.form: TaxTable, VendParameters, CustParameters
 ---

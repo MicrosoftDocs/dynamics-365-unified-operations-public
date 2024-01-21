@@ -12,7 +12,6 @@ ms.search.region: China (PRC)
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 265044
 ms.assetid: 1f7abefa-8f87-4aa7-8eca-51974f91068d
 ms.search.form: CostingVersion
 ---
