@@ -18,7 +18,7 @@ In Latin America (LATAM), Microsoft Dynamics 365 Finance previously supported ou
 Tax compliance requirements are complex and change frequently. Companies are looking for more out-of-box geographic coverage and tax compliance automation from Microsoft. By releasing localizations for additional LATAM countries/regions, we significantly extend our country/region support. We also give customers more consistent out-of-box regulatory compliance coverage in multiple areas, including tax reporting and electronic invoicing.
 
 > [!NOTE]
-> Regulatory compliance coverage for the additional LATAM countries/regions does not currently include Dynamics 365 Commerce functionality. Localization of Commerce for these countries/regions may be added in future releases.
+> Out-of-box localization of Dynamics 365 Commerce for LATAM countries/regions is limited to Brazil and Mexico and does not include other LATAM countries/regions.
 
 ## Country/region localization availability
 
