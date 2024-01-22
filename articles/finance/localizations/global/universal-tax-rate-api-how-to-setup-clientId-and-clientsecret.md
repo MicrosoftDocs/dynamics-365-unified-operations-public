@@ -18,7 +18,7 @@ uid: D365.CFO.FunctionalTraining.Finance.Tax.TaxCalculationService.TaxCalculatio
 
 # Set up Client ID and Client Secret
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 This article explains how to set up ClientId and ClientSecret for the universal tax rate API.
 
@@ -48,7 +48,7 @@ To create a Key vault, follow these steps.
     - Leave the other options to their defaults.
       
     > [!NOTE]
-    > The **Name** above will be referred in the section [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **\<KeyVaultName\>**.
+    > The **Name** above will be referred in the section [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations-apps) as **\<KeyVaultName\>**.
     
 6. Select next and set the **Permission model** to **Vault access policy**.
 7. Select **Review + Create**.
@@ -57,7 +57,7 @@ To create a Key vault, follow these steps.
    :::image type="content" source="../media/items.png" alt-text="Screenshot of the TaxProvider-vault Overview page with the Deployment details expanded and the key vault highlighted.":::
 
    > [!NOTE]
-   > Copy and save the **Vault URI**, you need it when you complete the [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) section for the **\<Key Vault URI\>** value.
+   > Copy and save the **Vault URI**, you need it when you complete the [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations-apps) section for the **\<Key Vault URI\>** value.
     
    :::image type="content" source="../media/items1.png" alt-text="creenshot of the TaxProvider-vault Secrets page with the Secrets object and Generate/Import highlighted.":::
 
@@ -69,7 +69,7 @@ To create a Key vault, follow these steps.
 12. Select **Create**.
 
     > [!NOTE]
-    > The **Secret Name** is a mandatory parameter for integration with the key vault, therefore it should be specified in the application. It is referred in [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **SecretName** parameter.
+    > The **Secret Name** is a mandatory parameter for integration with the key vault, therefore it should be specified in the application. It is referred in [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations-apps) as **SecretName** parameter.
     
     :::image type="content" source="../media/items2.png" alt-text="Screenshot of the TaxProvider-vault Secrets page with the ClientSecret and ClientID highlighted.":::
 
@@ -94,13 +94,13 @@ To access Azure key vault you need to create App registration in Azure Active Di
    ![Create App registration](../media/items5.png)
    :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
 2. Set the **Name** and **Supported account types**, and then click **Register**
-3. Copy and save **Application (Client) ID**. It should be specified in the application, and referred in [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **\<Key Vault client\>** parameter.
+3. Copy and save **Application (Client) ID**. It should be specified in the application, and referred in [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations-apps) as **\<Key Vault client\>** parameter.
    ![App registration](../media/items6.png)
    :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
 
 4. Create a new **Client secret**.
    > [!NOTE]
-   > The **Client secret** is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. It is referred in [Setup Key Vault parameters in Dynamics 365 Finance and Operations](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations) as **\<Key Vault secret key\>** parameter.
+   > The **Client secret** is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. It is referred in [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations=apps) as **\<Key Vault secret key\>** parameter.
 
    ![Certificates & secrets](../media/items7.png)
    :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
