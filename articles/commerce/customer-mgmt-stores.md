@@ -42,7 +42,7 @@ Sales associates can capture multiple addresses for a customer. The customer's n
 The feature **Capture multiple emails and phone numbers and consent for marketing on these contacts** has been enabled by default in 10.0.36. This feature allows sales associates to capture multiple emails and phone numbers for customers on POS along with the consent for marketing information on these contacts.
 
 > [!NOTE]
-> This feature will cause UI change for customer creation or editing. Before enabling this feature, customer will only allow to have one email address and one phone number. After enabling this feature, customer can add multiple email addresses and phone numbers by clicking the **+ Add an email** or **+ Add a phone number** button. The existing format of email address and phone number will also change to list of tiles. Customer can edit the existing email address and phone number by clicking the tiles and edit in the pop-up dialog.
+> This feature will cause UI change for customer creation or editing. Before enabling this feature, customer will only allow to have one email address and one phone number. After enabling this feature, customer can add multiple email addresses and phone numbers by clicking the **+ Add an email** or **+ Add a phone number** button. The UI display of existing email address and phone number will also change to list of tiles. Customer can edit the existing email address and phone number by clicking the tiles and edit in the pop-up dialog. For each contact, customer can determine whether to use it for marketing opt-in.
 
 This feature **does not work for Async customers**. If the asynchronous customer creation functionality is enabled, these capabilities will not be available.
 
