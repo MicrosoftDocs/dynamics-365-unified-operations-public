@@ -86,8 +86,6 @@ To add....
 
 To inactivate old (legacy) ER functionality for some features and activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
 
-![Features tab of the Electronic document parameters page.](../media/electronic-document-parameters.png)
-
 When you enable a feature from the list, the legacy functionality will be inactivated for the corresponding country or region and feature name.
 
 ## Create a Key Vault reference
