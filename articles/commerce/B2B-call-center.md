@@ -49,7 +49,7 @@ To enable the feature in Commerce headquarters, follow these steps.
 To create an order in headquarters after you enable the feature, follow these steps.
 
 1. Go to **Retail and Commerce \> Customers \> Customer service**, and search for a B2B customer.
-1. Select either a B2B online channel that's associated with the customer or the call center channel that's associated with the customer service agent who is creating the order.
+1. Select a B2B online channel that's associated with the customer. Alternatively, select the call center channel that's associated with the customer service agent who is creating the order.
 
     > [!NOTE]
     > The channel selection controls the downstream choices that are available. For example, if you select a B2B online channel that's associated with a customer's B2B customer hierarchy, the available catalog selections are based on the catalogs that are associated with the selected B2B online channel. If you select the call center channel, different catalog selections are available.
