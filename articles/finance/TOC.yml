@@ -1580,7 +1580,7 @@
             items:
             - name: Work with Globalization features overview
               href: localizations/global/GS-e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
-         - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+          - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
             items: 
             - name: Set up Electronic Invoicing parameters
               href: localizations/global/GS-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
