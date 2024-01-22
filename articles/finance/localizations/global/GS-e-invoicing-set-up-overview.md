@@ -52,24 +52,28 @@ Make sure that the Globalization Studio is available in the system. For more inf
 
 To activate Electronic invoicing within the Globalization Studio, in the **Feature management** workspace, enable the following features. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
- - **Globalization features**
+ - *Globalization features*
  
- - **E-invoicing service workspace designer**
+ - *E-invoicing service workspace designer*
  
- - **Enable Globalization feature setup for Tax Calculation Service**
+ - *Enable Globalization feature setup for Tax Calculation Service*
  
- - **Electronic reporting globalization feature Key Vault parameters**
+ - *Electronic reporting globalization feature Key Vault parameters*
  
- - **Electronic reporting globalization feature JSON import/export**
+ - *Electronic reporting globalization feature JSON import/export*
  
- - **Dataverse repository**
+ - *Dataverse repository*
+
+## Configure Globalization features
+
+Different scenarios for processing electronic documents are implemented via Globalization features. A Globalization feature is a set of components that define the rules for data transformation and further processing of electronic documents such as sending them to or receiving them from external channels. You can use Globalization features provided by Microsoft or create your own ones. For more information about how to work with Globalization features, see [Work with Globalization features](e-invoicing-working-globalization-features.md).
 
 > [!NOTE]
 > If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
 
 ...
 
-After everything is set up, you can create your own Globalization features that define different scenarios for processing electronic documents and transforming data, or for importing the documents from the Global repository. For more information about how to work with Globalization features, see [Work with Globalization features](e-invoicing-working-globalization-features.md).
+## Configure Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 Dynamics 365 Finance and Dynamics 365 Supply Chain Management  [Activate and set up integration with Electronic invoicing](e-invoicing-activate-setup-integration.md) and [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
 
