@@ -66,7 +66,7 @@ To activate Electronic invoicing within the Globalization Studio, in the **Featu
 
 ## Configure Globalization features
 
-Different scenarios for processing electronic documents are implemented via Globalization features. A Globalization feature is a set of components that define the rules for data transformation and further processing of electronic documents such as sending them to or receiving them from external channels. You can use Globalization features provided by Microsoft or create your own ones. For more information about how to work with Globalization features, see [Work with Globalization features](e-invoicing-working-globalization-features.md).
+Different scenarios for processing electronic documents are implemented via Globalization features. A Globalization feature is a set of components that define the rules for data transformation and further processing of electronic documents such as sending them to or receiving them from external channels. You can use Globalization features provided by Microsoft or create your own ones. For more information about how to work with Globalization features, see [Work with Globalization features](GS-e-invoicing-working-globalization-features.md).
 
 > [!NOTE]
 > If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
