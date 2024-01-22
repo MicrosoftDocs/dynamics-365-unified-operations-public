@@ -2,12 +2,14 @@
 title: Get started with electronic invoicing for Indonesia
 description: This article explains how to configure and process electronic invoice for Indonesia.
 author: AdamTrukawka
-ms.date: 06/14/2022
-ms.topic: article
+ms.date: 01/22/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: 
+ms.reviewer: johnmichalak
 ms.search.region: Indonesia
 ms.author: atrukawk
 ms.search.validFrom: 
@@ -39,7 +41,7 @@ Before you use the invoicing functionality, the following prerequisites must be 
 
 During RCS setup, complete the following tasks.
 
-1. Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
+1. Import the **Electronic Invoicing features** to process invoice exports and import vendor invoices.
 2. Review the format configurations that are required to generate and export sales invoices.
 3. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
 4. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
@@ -179,9 +181,9 @@ To configure the Vendor invoice feature setup, you should already have created a
 ### Turn on the feature for processing Indonesian electronic invoices
 
 1. Go to **Feature management** and enable feature **Electronic document batch submission**.
-2. Feature **Electronic document batch submission** can't be enabled if feature **Electronic Invoicing integration using Microsoft Dataverse** is already enabled, please disable the latter to proceed.
-3. Additionally feature **Electronic documents configuration per legal entities in Electronic Invoicing** can be enabled to allow configuring Electronic document parameters on a legal entity basis.
-4. In-order to enable electronic invoice integration for **Indonesia** Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+2. The **Electronic document batch submission** feature can't be enabled if the feature **Electronic Invoicing integration using Microsoft Dataverse** is already enabled, please disable the latter to proceed.
+3. Additionally, the **Electronic documents configuration per legal entities in Electronic Invoicing** feature can be enabled to allow configuring Electronic document parameters on a legal entity basis.
+4. To enable electronic invoice integration for **Indonesia**, go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 5. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
 
 
@@ -190,7 +192,7 @@ To configure the Vendor invoice feature setup, you should already have created a
 1. Go to **Organization administration** \> **Setup**\ > **Electronic document parameters**.
 2. On the **Electronic document** tab, select **Add**, and enter the customer invoice journal.
 3. Optional: Select **Add** again, and enter the project invoice journal.
-4. Select **Batch submission** checkbox
+4. Select the **Batch submission** checkbox.
 5. In the **Batch submission ID** section, add a number sequence. The selected number sequence should be continuous. This number sequence is used to number the invoice batches when the system exports them.
 6. Select **Save**.
 
@@ -242,7 +244,7 @@ When issued invoices or imported vendor invoices are processed through Electroni
 ### Submit or export issued invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. Set the **Submit document batch** option to **Yes** to export invoices in batch. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+2. To export invoices in batch, set the **Submit document batch** option to **Yes**. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
 3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for export.
 
 ### View submission logs
