@@ -37,7 +37,14 @@ Retailers can use the **All stores** page in Commerce headquarters (**Retail and
 
 Sales associates can capture multiple addresses for a customer. The customer's name and phone number are inherited from the contact information that is associated with each address. The **Addresses** FastTab of a customer record includes a **Purpose** field that sales associates can edit. If the customer type is **Person**, the default value is **Home**. If the customer type is **Organization**, the default value is **Business**. Other values that this field supports include **Home**, **Office**, and **Post box**. The value of the **Country** field for an address is inherited from the primary address that is specified on the **Operating unit** page in Commerce headquarters at **Organization administration \> Organizations \> Operating units**.
 
+## Marketing Opt-in feature
 
+The feature **Capture multiple emails and phone numbers and consent for marketing on these contacts** has been enabled by default in 10.0.36. This feature allows sales associates to capture multiple emails and phone numbers for customers on POS along with the consent for marketing information on these contacts.
+
+> [!NOTE]
+> This feature will cause UI change for customer creation or editing. Before enabling this feature, customer will only allow to have one email address and one phone number. After enabling this feature, customer can add multiple email addresses and phone numbers by clicking the **+ Add an email** or **+ Add a phone number** button. The existing format of email address and phone number will also change to list of tiles. Customer can edit the existing email address and phone number by clicking the tiles and edit in the pop-up dialog.
+
+This feature **does not work for Async customers**. If the asynchronous customer creation functionality is enabled, these capabilities will not be available.
 
 ## Additional resources
 
