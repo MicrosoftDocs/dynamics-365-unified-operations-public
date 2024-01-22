@@ -1,5 +1,5 @@
 ---
-title: Set up Electronic invoicing parameters
+title: Configure Electronic invoicing parameters
 description: This article explains how to set up the Electronic invoicing parameters.
 author: ilikond
 ms.date: 01/29/2024
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Set up Electronic invoicing parameters 
+# Configure Electronic invoicing parameters 
 
 [!include [banner](../../includes/banner.md)]
 
