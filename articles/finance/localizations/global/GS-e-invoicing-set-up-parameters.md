@@ -99,9 +99,32 @@ When you enable a feature from the list, the legacy functionality will be inacti
 7. In the **Name** field, enter the name of the storage account secret or certificate. This name should match the name of the Key Vault secret that holds the storage shared access signature (SAS) token. For more information, see [Create an Azure storage account in the Azure portal](e-invoicing-create-azure-storage-account-azure-portal.md). 
 8. In the **Description** field, enter a description.
 9. In the **Type** field, select **Secret** or **Certificate** depending on what is being configured.
-10. Save the data and close the page.
-11. In **Key Vault** field, select the Key Vault created during the previous steps.
-12. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
+    > [!NOTE]
+    > In some scenarios, you must use public certificates that have the .cer file name extension. However, Key Vault doesn't support importing and storing certificates of this type as Key Vault certificates. In these scenarios, you should save the .cer file as a Base-64-encoded X.509 (.CER) string. Then, in a Key Vault secret, store the string that appears between the **BEGIN CERTIFICATE** line and the **END CERTIFICATE** line in the file. In the service environment, you should still create a reference to the Key Vault record and set the **Type** field to **Certificate**.
+
+   As an alternative to the approach that's described in the preceding note, use the following PowerShell script to generate a Base-64 string of the .cer certificate file.
+
+    ```powershell
+    $FilePath = ''
+    $Cer = New-Object -TypeName System.Security.Cryptography.X509Certificates.X509Certificate2($FilePath)
+    $BinCert = $Cer.GetRawCertData()
+    $Base64Cert = [System.Convert]::ToBase64String($BinCert)
+    echo $Base64Cert
+    ```
+
+10. If your specific scenario requires a chain of certificates to apply digital signatures or establish a secure (Secure Sockets Layer \[SSL\]) connection to external web services, create a chain of certificates where the certificates are in the following order: *Root certificates* > *Intermediate certificates* > *End-user certificates*. Root certificate authorities (CAs) are a trusted source of certificates. Intermediate CA certificates are bridges that link the end-user certificates to the root CA certificates. To create and set up a chain of certificates, follow these steps.
+
+    - On the Action Pane, select **Chain of certificates**.
+    - Select **New** to create a chain of certificates.
+    - In the **Name** field, enter the name of the chain of certificates.
+    - In the **Description** field, enter a description.
+    - In the **Certificates** section, select **Add** to add a certificate to the chain.
+    - Use the **Up** or **Down** button to change the position of the certificate in the chain. Keep the CA root certificate at the top of the list and the end-user certificate at the bottom.
+    - Save the data and close the **Chain of certificates** page.
+
+11. Save the data and close the **Key Vault parameters** page.
+12. In **Key Vault** field, select the Key Vault created during the previous steps.
+13. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
 
 ### Configure Number sequences
 
