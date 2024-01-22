@@ -227,9 +227,9 @@ In this scenario we are using 2 purchase transport days from vendor shipping add
 1. Go to **Procurement and sourcing** \> **Setup** \> **Distribution** \> **Purchase transport days**. Make sure you have a record for delivering from the vendor shipping address you plan to order from to the warehouse receiving address you plan to receive to. Set **Transport days** to *2* for this record.
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
 1. On the Action Pane, select **New** to create a new purchase order.
-1. On the **Vendor** FastTab, set **Vendor account** to the vendors whose shipping address you set up on the **Purchase transport days** page. Select **OK** to create the purchase order.
+1. On the **Vendor** FastTab, set **Vendor account** to the vendor whose shipping address you set up on the **Purchase transport days** page. Select **OK** to create the purchase order.
 1. On the **Purchase order lines** FastTab, select an item in the **Item number** field and set **Site** and **Warehouse** to the warehouse whose receiving address you set up on the **Purchase transport days** page.
-1. On the **Line details** FastTab, select **Delivery** FastTab. Note the following values:
+1. On the **Line details** FastTab, open the **Delivery** tab. Note the following values:
 
     - **Requested ship date** – Shows current date (unless you specified another date for the order header).
     - **Requested receipt date** – Shows a date that is two days later than the purchase order **Requested ship date**. The system calculated this date based on your **Purchase transport days** setup. The following settings can also affect the calculation:
@@ -250,54 +250,55 @@ Continue using 2 purchase transport days from vendor shipping address to site/wa
 1. Go to **Procurement and sourcing** \> **Setup** \> **Distribution** \> **Purchase transport days**. Make sure you have a record for delivering from the vendor shipping address you plan to order from to the warehouse receiving address you plan to receive to. Set **Transport days** to *2* for this record.
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
 1. On the Action Pane, select **New** to create a new purchase order.
-1. On the **Vendor** FastTab, set **Vendor account** to the vendors whose shipping address you set up on the **Purchase transport days** page. Select **OK** to create the purchase order.
+1. On the **Vendor** FastTab, set **Vendor account** to the vendor whose shipping address you set up on the **Purchase transport days** page. Select **OK** to create the purchase order.
 1. On the **Purchase order lines** FastTab, select an item in the **Item number** field and set **Site** and **Warehouse** to the warehouse whose receiving address you set up on the **Purchase transport days** page.
-1. On the **Line details** FastTab, select **Delivery** FastTab
-1. Set **Requested receipt date** that doesn't allow enough time for transport (for example, today).
+1. On the **Line details** FastTab, open the **Delivery** tab.
+1. Select a **Requested receipt date** that doesn't allow enough time for transport (for example, today).
 1. The system shows a warning message such as *The requested ship date 1/18/2024 is not valid because it is before today. Earliest possible requested ship date is 1/22/2024 with requested receipt date 1/26/2024.* The requested date fields are updated to match the warning message.
 
-    If you try to set the requested ship or receipt date all in the past, you'll get a warning without any suggested dates (*The requested ship date 1/8/2024 is not valid because it is before today.*). In this case, you won't be allowed to save the order until you have selected a valid date.
+    If you try to directly enter a requested ship or receipt date that's in the past, you'll get a warning without any suggested dates (*The requested ship date 1/8/2024 is not valid because it is before today.*). In this case, you won't be allowed to save the order until you have selected a valid date.
 
-### Create purchase order from sales order
+### Example scenario 3: Create a purchase order from a sales order
 
-In this scenario we are using 2 purchase transport days from vendor shipping address to site/warehouse receiving address.
+In this scenario, you'll create a purchase order from a related sales order and see how the requested ship and receipt dates are calculated for both orders.
+
+1. Go to **Procurement and sourcing** \> **Setup** \> **Distribution** \> **Purchase transport days**. Make sure you have a record for delivering from the vendor shipping address you plan to order from to the warehouse receiving address you plan to receive to. Set **Transport days** to *2* for this record.
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. On the Action Pane, select **New** to create a new sales order.
+1. On the **Customer** FastTab, select a **Customer account** (it doesn't matter which one). Select **OK** to create the sales order.
+1. On the **Sales order lines** FastTab, select an item in the **Item number** field. Set **Site** and **Warehouse** to the warehouse whose receiving address you set up on the **Purchase transport days** page.
+1. On the **Line details** FastTab, open the **Delivery** tab
+1. Set **Delivery date control** to *None*. Set both the **Requested ship date** and **Requested receipt date** to a date one week from now.
+1. On the Action Pane, open the **Sales order** tab and, from the **New** group, select **Purchase order**
+1. On the **Lines** FastTab, you should see a line that matches the one from your sales order. For this line, set **Vendor account** to the vendor whose shipping address you set up on the **Purchase transport days** page. 
+1. Mark the **Include** check box for the line.
+1. Select **OK** to create the purchase order and return to your sales order.
+1. On the Action Pane, open the **General** tab and, from the **Related information** group, select **Purchase order**
+1. The related purchase order opens. On the **Line details** FastTab, open the **Delivery** tab.
+1. You should see the following values:
+
+    - **Requested receipt date** – Matches the sales order's requested ship date.
+    - **Requested ship date** – Is calculated backward from the receipt date based on the number of purchase transport days to the first available open date.
+
+### Example scenario 4: Create direct delivery from a sales order
+
+This scenario is similar to the previous one, but this time, you will create a direct-delivery order from the sales order. Therefore, the sales order request receipt date is set to purchase order requested receipt date. Then, the system uses the purchase transport days to calculate backwards to find the requested ship date for both the purchase order and sales order.
+
+<!--KFM: Continue here. -->
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Create a new sales order, on the Action Pane, select **New**.
 1. On the **Customer** FastTab, enter a value in the **Customer account** field
 1. Click **OK** to create the sales order
 1. On the **Sales order lines** FastTab, enter a value in the **Item number** field and **Site / Warehouse** fields if required
-1. On the **Line details** FastTab, select **Delivery** FastTab
-1. Enter **None** for the the **Delivery date control** field and date value for **Requested receipt date** field e.g. 5 days from current date.
-1. On the **Sales order** action pane, select **Purchase order**
-1. In the **Vendor account** field select a vendor (vendor address needs to match the shipping address on purchase transport days)
-1. Select the **Include** checkbox, to include the sales for on the purchase order.
-1. Click **OK** to create the purchase order
-1. On the **General** action pane, select **Purchase order**
-1. On the **Line details** FastTab, select **Delivery** FastTab
-
-The expected purchase order line requested dates should be :
-
-- Requested receipt date will be the set to sales order requested ship date
-- Requested ship is calculated backward with number of purchase transport days to first available open date.
-
-### Create direct delivery from sales order
-
-This scenario is similar to above create purchase order from sales, difference is that sales order request receipt date is set to purchase order requested receipt date and then calculating purchase transport backward to set requested ship date both on purchase and sales order.
-
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
-1. Create a new sales order, on the Action Pane, select **New**.
-1. On the **Customer** FastTab, enter a value in the **Customer account** field
-1. Click **OK** to create the sales order
-1. On the **Sales order lines** FastTab, enter a value in the **Item number** field and **Site / Warehouse** fields if required
-1. On the **Line details** FastTab, select **Delivery** FastTab
+1. On the **Line details** FastTab, open the **Delivery** tab.
 1. Enter **None** for the the **Delivery date control** field and date value for **Requested receipt date** field e.g. 5 days from current date.
 1. On the **Sales order** action pane, select **Direct delivery**
 1. In the **Vendor account** field select a vendor (vendor address needs to match the shipping address on purchase transport days)
 1. Select the **Include** checkbox, to include the sales for on the purchase order.
 1. Click **OK** to create the purchase order
 1. On the **General** action pane, select **Purchase order**
-1. On the **Line details** FastTab, select **Delivery** FastTab
+1. On the **Line details** FastTab, open the **Delivery** tab.
 
 The expected sales and purchase order line requested dates should be :
 
@@ -315,7 +316,7 @@ Prerequisites is that intercompany relationship is set up between the customer a
 1. On the **Vendor** FastTab, enter a value in the **Vendor account** field (Intercompany vendor)
 1. Click **OK** to create the purchase order
 1. On the **Purchase order lines** FastTab, enter a value in the **Item number** field and **Site / Warehouse** fields if required
-1. On the **Line details** FastTab, select **Delivery** FastTab (Note the request ship and receipt date)
+1. On the **Line details** FastTab, open the **Delivery** tab. (Note the request ship and receipt date)
 
 The expected purchase order line requested dates should be :
 
