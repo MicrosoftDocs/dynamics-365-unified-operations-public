@@ -102,7 +102,7 @@ To access Azure key vault you need to create App registration in Azure Active Di
 
 4. Create a new **Client secret**.
    > [!NOTE]
-   > The **Client secret** is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. It is referred in [Setup key vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations=apps) as **\<Key vault secret key\>** parameter.
+   > The **Client secret** is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. It is referred in [Setup key vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations-apps) as **\<Key vault secret key\>** parameter.
 
    :::image type="content" source="../media/items7.png" alt-text="Screenshot of the Certificates & secrets page with add New client secret highlighted.":::
 
@@ -111,14 +111,16 @@ To access Azure key vault you need to create App registration in Azure Active Di
 You must set up the access policy to grant the App registration above the correct level of secure access to the secret that you created.
 
 1. Open the Key vault storage that you created above.
-2. Go to **Settings** \> **Access policies**, and click **Create**.
+2. Go to **Settings** \> **Access policies**, and select **Create**.
 3. In the **Secret permissions**, select the **Get** and **List** operations.
-   ![Acess policy - permission](../media/items8.png)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
-5. Click **Next**, in the **Select principal**, select the App registration that you created above.
-   ![cess policy - principal](../media/items9.png)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
-7. Click **Next** till to "Review + create" and the click **Create**.
+   
+   :::image type="content" source="../media/items8.png" alt-text="Screenshot of the Creat an access policy page with Secret permissions highlighted.":::
+
+4. Select **Next**, in the **Select principal**, select the App registration that you created above.
+   
+   :::image type="content" source="../media/items9.png" alt-text="Screenshot of the Principal tab on the Create and access policy page.":::
+
+5. Select **Next** till to "Review + create" and the select **Create**.
 
 ## Setup Key vault parameters in Dynamics 365 finance and operations apps
 
