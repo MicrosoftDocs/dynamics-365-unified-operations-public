@@ -37,7 +37,7 @@ Before you can submit documents to Electronic invoicing and process responses, y
 
 To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, complete the following procedures.
 
-1. In the **Globalization** workspace, select the **Electronic reporting** tile.
+1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 2. In the **Configuration providers** section, select the **Microsoft** configuration provider, and then select **Repositories**.
 3. Select the repository of the **Dataverse** type, and then, on the Action Pane, select **Open**.
 4. Import the following ER models:
@@ -73,9 +73,45 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
 If you derive a configuration from the configuration that is mentioned in the preceding table, define the new configuration.
 
 To set up the rules to process responses from the Electronic invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md)
- 
+
+### File name
+
+To add....
+
+### Batch submission ID
+
+To add....
+
+## Legacy Electronic invoicing functionality inactivation
+
 To inactivate old (legacy) ER functionality for some features and activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
 
 ![Features tab of the Electronic document parameters page.](../media/electronic-document-parameters.png)
 
-When you enable a new feature, the legacy functionality will be inactivated for the corresponding country or region and feature name.
+When you enable a feature from the list, the legacy functionality will be inactivated for the corresponding country or region and feature name.
+
+## Create a Key Vault reference
+
+1. In the **Electronic invoicing** tab, in the **Key Vault settings** FastTab, select **Key Vault parameters**.
+2. On the **Key Vault parameters** page, select **New** to create a Key Vault reference.
+3. In the **Name** field, enter the name of the Key Vault reference.
+4. In the **Description** field, enter a description.
+5. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure key vault in the Azure portal](e-invoicing-create-azure-key-vault-azure-portal.md).
+6. in the **Certificates** section, select **Add**.
+7. In the **Name** field, enter the name of the storage account secret or certificate. This name should match the name of the Key Vault secret that holds the storage shared access signature (SAS) token. For more information, see [Create an Azure storage account in the Azure portal](e-invoicing-create-azure-storage-account-azure-portal.md). 
+8. In the **Description** field, enter a description.
+9. In the **Type** field, select **Secret** or **Certificate** depending on what is being configured.
+10. Save the data and close the page.
+11. In **Key Vault** field, select the Key Vault created during the previous steps.
+12. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
+
+### Configure Number sequences
+
+If your scenarios require number sequences (for example, in file names), you can use number sequences that can be used either across Globalization features or for a specific Globalization feature. After a number sequence is defined, you can use it in variables and processing pipelines. To track its use, look for a value of **Current Value** field and the **In use** parameter for a selected number sequence.
+
+Select **New** to create a number sequence. Then enter a name and description. 
+Select **Delete** to delete a number sequence if it's no longer used.
+
+## Integration channels
+
+To add....
