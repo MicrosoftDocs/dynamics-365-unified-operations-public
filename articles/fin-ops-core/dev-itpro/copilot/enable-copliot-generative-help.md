@@ -29,7 +29,7 @@ This article describes how to enable generative help and guidance with Copilot.
 
 To enable generative help and guidance with Copilot in finance and operations apps, you must have the following prerequisites in place:
 
-- You must be running finance and operations apps version 10.0.38, build number 7.0.7120.98, or later.
+- You must be running finance and operations apps version 10.0.38, build number 7.0.7120.98, or later. (Be sure to check your build number if you're running version 10.0.38 because build 7.0.7120.98 is a quality update that was released somewhat after the initial preview of version 10.0.38.)
 - You must have enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Enable the feature in the Feature management workspace
