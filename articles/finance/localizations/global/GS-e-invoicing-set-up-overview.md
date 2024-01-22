@@ -23,10 +23,7 @@ ms.search.form:
 
 The article provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that is specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality. 
 
-## Azure in general ?????
-As since on the next step we'll have to have **Azure Active Directory tenant ID**
-
-## Install the add-in for microservices in Microsoft Dynamics Lifecycle Services
+## Install the add-in for Electronic invoicing microservices
 
 The Electronic Invoicing service is a set of microservices that is hosted in Microsoft datacenters. By default, customers of Dynamics 365 Finance and Dynamics 365 Supply Chain Management don't have access to the Electronic Invoicing service. You must install it as an add-in in Microsoft Dynamics Lifecycle Services (LCS). When you install the add-in, your Finance or Supply Chain Management environment is registered in the register of applications that are allowed to connect to the Electronic Invoicing service.
 
@@ -45,22 +42,15 @@ To register an environment, follow these steps.
 > [!NOTE]
 > Companies usually have several Finance or Supply Chain Management environments. These environments include production environments, User Acceptance Test (UAT) environments, and development (sandbox) environments. You must complete the preceding procedure for all environments that you want to connect to Electronic invoicing.
 
-## Step 2: 
-
-You must s.
-
-To complete this step, see [S](e-invoicing-........md).
-
-## Step 3: Configure the Azure resources for Electronic invoicing
+## Configure the Azure resources for Electronic invoicing
 
 Set up the Azure resources that Electronic invoicing requires to do its work. For more information, see [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md).
 
+## Configure Globalization Studio for Electronic invoicing: 
 
+Make sure that the [Globalization Studio](globalization-studio-overview.md) is available in the system.
 
-
-
-
-
+To activate Electronic invoicing within the Globalization Studio, do these steps.
 
 
 
