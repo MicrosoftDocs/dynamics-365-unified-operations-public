@@ -1,5 +1,5 @@
 ---
-title: Generate voucher in advanced bank reconciliation
+title: Generate a voucher in advanced bank reconciliation
 description: This article provides information about generating vouchers in advanced bank reconciliation.
 author: EricWang
 ms.date: 01/22/2024
@@ -16,7 +16,7 @@ ms.custom:
 ms.search.form:  
 ---
 
-# Generate voucher in advanced bank reconciliation 
+# Generate a voucher in advanced bank reconciliation 
 
 [!include [banner](../../includes/banner.md)]
 
