@@ -2,12 +2,14 @@
 title: Connect to an external tax solution provider via Universal Tax Rate API
 description: This article explains the overall scope of Universal Tax Rate API feature for the Tax Calculation.
 author: Kai-Cloud
-ms.date: 09/15/2023
-ms.topic: overview
+ms.date: 01/22/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.prod: 
 ms.technology: 
 audience: Application user
-ms.reviewer: 
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2024-02-01
@@ -17,21 +19,21 @@ ms.search.form:
 
 # Connect to an external tax solution provider via Universal Tax Rate API
 
-The connection to an external tax solution provider simplifies and reduces the effort of maintaining the tax rates and tax applicability rules for Tax Calculation. This is especially critical when you implement Tax Calculation for countries/regions where a significant number of tax jurisdictions need to be covered.
+The connection to an external tax solution provider simplifies and reduces the effort of maintaining the tax rates and tax applicability rules for Tax calculation. This is especially critical when you implement Tax calculation for countries/regions where a significant number of tax jurisdictions need to be covered.
 
-Universal Tax Rate API is a set of standard application programming interfaces defined by Microsoft in Tax Calculation based on the taxable document data model. It's an extended feature of Tax Calculation which enables external tax services to be connected under the same framework.
+The Universal Tax Rate API is a set of standard application programming interfaces defined by Microsoft in Tax calculation based on the taxable document data model. It's an extended feature of Tax calculation which enables external tax services to be connected under the same framework.
 
-With this extension, external tax solution providers can now provide tax rate determination, tax calculation and extended tax functionalities via standardized APIs. It introduces the following benefits:
+With this extension, external tax solution providers can now provide tax rate determination, tax calculations, and extended tax functionalities via standardized APIs. It introduces the following benefits:
 
-- **Seamless integration with Dynamics 365 applications**: The external tax solution is seamlessly integrated into Dynamics 365 applications, ensuring a smooth and unified experience accross Dynamics applications.
+- **Seamless integration with Dynamics 365 applications**: The external tax solution is seamlessly integrated into Dynamics 365 applications, ensuring a smooth and unified experience across Dynamics applications.
 - **Improved scalability**: By connecting to an external tax solution provider, you can leverage their infrastructure and expertise to handle large-scale tax calculations efficiently.
 - **Reduced maintenance overhead**: External tax solution providers are responsible for maintaining up-to-date tax rates and tax applicability rules, which saves you time and effort.
 - **Enhanced accuracy**: External tax services often have access to comprehensive tax databases and advanced algorithms, resulting in more accurate tax calculations.
 - **Flexibility and customization**: The standardized APIs allow you to integrate with various external tax solution providers, giving you the flexibility to choose the one that best fits your business needs.
 - **Compliance with local regulations**: External tax solution providers are well-versed in local tax laws and regulations, ensuring that your tax calculations are compliant with the specific requirements of each jurisdiction.
 
-> [!Note]
-> Universal Tax Rate API shares the same integration of Tax Calculation. Different tax solution provider may have different supported regions, scopes, scenarios and extended functionalities. For more information, please contact the [tax solution providers](#available-tax-solution-providers).
+> [!NOTE]
+> The Universal Tax Rate API shares the same integration of Tax calculation. Different tax solution providers may have different supported regions, scopes, scenarios, and extended functionalities. For more information, please contact the [tax solution providers](#available-tax-solution-providers).
 
 The following functionalities are available via Universal Tax Rate API supported by the tax solution providers.
 
@@ -47,20 +49,22 @@ Universal Tax Rate API is available on Dynamics Finance or Supply Chain Manageme
 
 ## Versions
 
-We recommend that you import and set up your Tax Calculation configuration with the version that matches your Finance or Supply Chain Management version.
+We recommend that you import and set up your Tax calculation configuration with the version that matches your Finance or Supply Chain Management version.
 
 | Finance or Supply Chain Management version | Tax configuration version               |
 | --------------- | --------------------------------------- |
 | 10.0.39         | Tax Calculation Data Model for ISV Integration 40.61.4 |
 
-## Steps to enable tax solution provider
+## Steps to enable a tax solution provider
+
+To enable a tax solution provider, follow these steps.
 
  1. Enable the following features in **Feature management**.
-    - Tax Calculation Service
-    - Enable external tax solution providers for Tax Calculation Service
+    - Tax calculation service
+    - Enable external tax solution providers for Tax calculation service
     - Globalization features
-    - Enable Globalization feature setup for Tax Calculation Service
-    - Electronic reporting globalization feature JSON import/export
+    - Enable Globalization feature setup for Tax calculation service
+    - Electronic reporting globalization feature Json import/export
 
  2. Engage and select one [tax solution provider](#available-tax-solution-providers), install the ISV application when required by the tax solution provider for the complete and extended functionality.
  3. [Setup ClientId and ClientSecret](./universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md) for the application access credential provided by your tax solution provider.
@@ -70,8 +74,8 @@ We recommend that you import and set up your Tax Calculation configuration with 
         - ISV tax configuration.xml (version 40.61.4.x)
      - **Tax calculation > Import from JSON**
         - ISV tax solution.json (version x)
-      >[!Note]
-      >Above xml and json files are destributed by the ISV for load and import to the Tax Calculation setup.
+      >[!NOTE]
+      >Above xml and Json files are distributed by the ISV for load and import to the Tax Calculation setup.
 
  5. Follow the implementation guidance provided by your tax solution provider to create and configure the customer ISV tax feature for your credentials, parameter values, mapping rules, etc. via **Globalization Studio > Tax calculation > Add**.
 
@@ -89,7 +93,7 @@ Universal Tax Rate API can be run for supported localization features. The follo
 |---------|----------------|
 | 10.0.39 | United States |
 
-For supported countries/regions details,  please contact your tax solution providers.
+For supported countries/regions details, contact your tax solution providers.
 
 ## Available tax solution providers
 
