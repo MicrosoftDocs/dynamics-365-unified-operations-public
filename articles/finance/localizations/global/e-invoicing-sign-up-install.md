@@ -2,12 +2,12 @@
 title: Sign up for and install the Electronic Invoicing service
 description: This article provides information about how to sign up for and install the Electronic Invoicing service.
 author: gionoder
-ms.date: 02/07/2022
+ms.date: 01/22/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gionoder
 ms.search.validFrom: 
