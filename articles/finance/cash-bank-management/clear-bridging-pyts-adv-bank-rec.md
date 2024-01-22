@@ -37,7 +37,7 @@ Bridging payments must be cleared in general journal prior to this feature. With
 - Complete **Clear bridged transactions during reconciliation** setup on **Bank accounts** page. You can find this field on **Reconciliation** tab. 
 
   -   If this parameter is turned on, when a bridging payment is reconciled in the reconciliation worksheet and the worksheet is marked as reconciled afterwards, a clearing journal will be posted in general ledger automatically.
-  -   If this parameter is turned off, user must clear the bridging payments in general ledger. For more information, see [Set up and process bridged payments](./accounts-receivable/set-up-and-process-bridged-payments#process-and-transfer-bridging-posting).
+  -   If this parameter is turned off, user must clear the bridging payments in general ledger. For more information, see [Set up and process bridged payments](../accounts-receivable/set-up-and-process-bridged-payments.md#process-and-transfer-bridging-posting).
 
 - Complete **Clearing journal name** setup on **Bank reconciliation** tab on **Cash and bank management parameters** page in **Cash and bank management** module.
 
@@ -57,7 +57,7 @@ The steps are applicable for Accounts payable transactions too.
 
 To clear bridging payment on reconciliation worksheet, follow these steps.
 
-1. Complete bank statement reconciliation. For more information, see [Reconcile bank statements by using advanced bank reconciliation](./cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation).
+1. Complete bank statement reconciliation. For more information, see [Reconcile bank statements by using advanced bank reconciliation](../cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md).
 2. Click **Mark as reconciled** on the reconciliation worksheet.
 3. After the reconciliation worksheet is marked as reconciled, clearing journals will be posted to general ledger automatically. The payment amount will be moved from bridging account to bank main account in the clearing journals.
 
