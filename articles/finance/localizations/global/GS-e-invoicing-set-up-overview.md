@@ -71,9 +71,7 @@ Different scenarios for processing electronic documents are implemented via Glob
 > [!NOTE]
 > If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
 
-...
-
 ## Configure Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
-Dynamics 365 Finance and Dynamics 365 Supply Chain Management  [Activate and set up integration with Electronic invoicing](e-invoicing-activate-setup-integration.md) and [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
+Set up Dynamics 365 Finance and Dynamics 365 Supply Chain Management parameters related to Electronic invoicing. For more information, see [Set up Electronic invoicing parameters](GS-e-invoicing-set-up-parameters.md)
 
