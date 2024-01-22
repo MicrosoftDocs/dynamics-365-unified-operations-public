@@ -2,10 +2,10 @@
 title: Set up direct integration of Italian FatturaPA with SDI
 description: This article provides information that will help you get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
 author: AdamTrukawka
-ms.date: 09/13/2023
+ms.date: 01/22/2024
 ms.topic: article
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: 2021-10-18
@@ -220,7 +220,7 @@ This section provides information that will help you set up and configure the pr
     4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the **App Registration Certificate** .cer file for S2S authentication.
     5. Go to **Enterprise applications**, and select the app that you created.
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
-    7. Microsoft team must grant the app access to the service. Please raise a support request with Microsoft including the values of following parameters:
+    7. Microsoft must grant the app access to the service. Submit a support request with Microsoft and include the values of following parameters:
 
         - AAD Tenant ID
         - LCS Environment ID
