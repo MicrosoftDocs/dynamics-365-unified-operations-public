@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: anuchansoriya 
+ms.author: achansoriya 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
