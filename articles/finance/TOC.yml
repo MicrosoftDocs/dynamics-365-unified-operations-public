@@ -1576,6 +1576,10 @@
             items: 
             - name: Setting up Electronic Invoicing
               href: localizations/global/GS-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
+          - name: Work with Globalization features
+            items:
+            - name: Work with Globalization features overview
+              href: localizations/global/GS-e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
