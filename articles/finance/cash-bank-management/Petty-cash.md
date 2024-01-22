@@ -219,7 +219,7 @@ To set up default values for Cash and bank management parameters for petty cash,
     </tr>
     <tr class="even">
     <td>Dimensions</td>
-    <td>Enter dimensions in the <strong>Department code</strong>, <strong>Analytical code</strong>, and <strong>Purpose code</strong> fields. The printing page for cash documents will reflect this information.</td>
+    <td>Enter dimensions in the <strong>Department code</strong>, <strong>Analytical code</strong>, and <strong>Purpose code</strong> fields. The printing page for cash documents reflects this information.</td>
     </tr>
     <tr class="odd">
     <td>Use confirm status</td>
@@ -310,7 +310,7 @@ To create a cash document via a Slip journal, follow these steps.
     </tr>
     <tr class="odd">
     <td>Reason</td>
-    <td>In this field on the <strong>Cash order</strong> tab, enter text to describe the transaction subject. This text will be printed on the cash slip reporting page.</td>
+    <td>In this field on the <strong>Cash order</strong> tab, enter text to describe the transaction subject. This text is printed on the cash slip reporting page.</td>
     </tr>
     <tr class="even">
     <td>Document date</td>
@@ -332,7 +332,7 @@ To create a cash document via a Slip journal, follow these steps.
     </tr>
     <tr class="odd">
     <td>Name of person</td>
-    <td>This field is automatically set based on the <strong>Offset account</strong> and <strong>Representative</strong> values. The printing page for cash slips will reflect this information.</td>
+    <td>This field is automatically set based on the <strong>Offset account</strong> and <strong>Representative</strong> values. The printing page for cash slips reflects this information.</td>
     </tr>
     <tr class="even">
     <td>Remainder</td>
