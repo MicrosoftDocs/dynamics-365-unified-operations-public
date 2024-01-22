@@ -1,13 +1,13 @@
 ---
 title: Clear bridging payments using advanced bank reconciliation
-description: This article provides information about the feature enhancements in advanced bank reconciliation in 10.0.39.
+description: This article provides information about clearing bridge payaments in advanced bank reconciliation in Dynamics 365 Finance version 10.0.39.
 author: EricWang
-ms.date: 01/08/2024
+ms.date: 01/22/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: 
 ms.author: wangchen
 ms.search.validFrom: 2024-01-29
@@ -20,7 +20,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about clearing bridging payments in advanced bank reconciliation under feature **Automatic clear bridged transactions through advanced bank reconciliation** starting from 10.0.39. 
+This article provides information about clearing bridging payments in advanced bank reconciliation using the **Automatic clear bridged transactions through advanced bank reconciliation** feature in Dynamics 365 Finance version 10.0.39. 
 
 A bridged payment is a payment that is posted to the general ledger in two steps. Typically, this approach is used when the method of payment is set to **Bank**, and you must post transactions to the bank account only when the transaction has cleared the bank. However, you can also use it for a ledger account. In this case, the amount will be moved from one main account to another main account when the bridging posting is processed.
 
