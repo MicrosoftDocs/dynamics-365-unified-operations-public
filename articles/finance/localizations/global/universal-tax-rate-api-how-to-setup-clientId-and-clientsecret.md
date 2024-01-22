@@ -4,6 +4,8 @@ description: This article explains how to set up ClientId and ClientSecret for t
 author: Kai-Cloud
 ms.date: 01/20/2024
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.prod: 
 ms.technology: 
 audience: Application user
@@ -75,7 +77,7 @@ To create a Key vault, follow these steps.
 
 13. Repeate step 10 for Client secret.
 
-:::image type="content" source="../media/items3.png" alt-text="Screenshot of the TaxProvider-vault Secrets page with the Deployment details expanded and the key vault highlighted.":::
+    :::image type="content" source="../media/items3.png" alt-text="Screenshot of the TaxProvider-vault Secrets page with the Deployment details expanded and the key vault highlighted.":::
 
 ### Setup Permissions
 
@@ -89,27 +91,26 @@ This section explains how to complete the following procedures.
 
 To access Azure key vault you need to create App registration in Azure Active Directory. To create an App registration, follow these steps.
 
-1. In Azure Active Directory search for **register**, and then select **App registration**.
+1. In Azure Active Directory search for **register**, and then select **App registrations**.
    
-   ![Create App registration](../media/items5.png)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
-2. Set the **Name** and **Supported account types**, and then click **Register**
-3. Copy and save **Application (Client) ID**. It should be specified in the application, and referred in [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations-apps) as **\<Key Vault client\>** parameter.
-   ![App registration](../media/items6.png)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
+   :::image type="content" source="../media/items5.png" alt-text="Screenshot of the App registrations page with add New registation highlighted.":::
+
+2. Set the **Name** and **Supported account types**, and then select **Register**
+3. Copy and save the **Application (Client) ID**. It should be specified in the application, and referred in [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations-apps) as the **\<Key Vault client\>** parameter.
+
+   :::image type="content" source="../media/items6.png" alt-text="Screenshot of the TaxProviderKeyVaultAccess page with the Application (client) ID highlighted.":::
 
 4. Create a new **Client secret**.
    > [!NOTE]
-   > The **Client secret** is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. It is referred in [Setup Key Vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations=apps) as **\<Key Vault secret key\>** parameter.
+   > The **Client secret** is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. It is referred in [Setup key vault parameters in Dynamics 365 finance and operations apps](#setup-key-vault-parameters-in-dynamics-365-finance-and-operations=apps) as **\<Key vault secret key\>** parameter.
 
-   ![Certificates & secrets](../media/items7.png)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
+   :::image type="content" source="../media/items7.png" alt-text="Screenshot of the Certificates & secrets page with add New client secret highlighted.":::
 
-#### Set Access policy of the Key Vault
+#### Set the Access policy of the Key vault
 
 You must set up the access policy to grant the App registration above the correct level of secure access to the secret that you created.
 
-1. Open the Key Vault storage that you created above.
+1. Open the Key vault storage that you created above.
 2. Go to **Settings** \> **Access policies**, and click **Create**.
 3. In the **Secret permissions**, select the **Get** and **List** operations.
    ![Acess policy - permission](../media/items8.png)
@@ -119,17 +120,17 @@ You must set up the access policy to grant the App registration above the correc
    :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image.":::
 7. Click **Next** till to "Review + create" and the click **Create**.
 
-## Setup Key Vault parameters in Dynamics 365 finance and operations apps
+## Setup Key vault parameters in Dynamics 365 finance and operations apps
 
-After finishing the prerequisite steps, you setup the key vault parameters to link to the azure key vault in Dynamics 365 Finance and Operations.
+After finishing the prerequisite steps, you setup the key vault parameters to link to the azure key vault in Dynamics 365 finance and operations apps.
 
-1. Go to **System administration > Setup > Key Vault parameters**.
-2. Select New to create a new instance.
-3. Enter a name and description, and then, on the General FastTab, set the fields that are required for the integration with Key Vault storage:
-   - **Key Vault URL** – The Vault URI that we saved in the section [Create a Key Vault](#create-a-key-vault).
-   - **Key Vault client** – Enter the interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication.
-   - **Key Vault secret key** – Enter the secret key that is associated with the Azure AD application that is used for authentication with the Key Vault storage.
-4. On the Secrets FastTab, click Add to add your secret. For each secret, set the following fields:
+1. Go to **System administration** \> **Setup** \> **Key vault parameters**.
+2. Select **New** to create a new instance.
+3. Enter a name and description, and then, on the **General** FastTab, set the fields that are required for the integration with Key vault storage:
+   - **Key vault URL** – The vault URI that was saved in the section [Create a Key vault](#create-a-key-vault).
+   - **KeyvVault client** – Enter the interactive client ID of the Microsoft Entra ID application that is associated with the Key vault storage for authentication.
+   - **Key vault secret key** – Enter the secret key that is associated with the Entra ID application that is used for authentication with the Key vault storage.
+4. On the **Secrets** FastTab, select **Add** to add your secret. For each secret, set the following fields:
     - **Name**
     - **Description**
     - **Secret** – Enter a secret reference to the key vault secret.
@@ -140,7 +141,7 @@ After finishing the prerequisite steps, you setup the key vault parameters to li
     Attributes that are marked with an asterisk (*) are **optional**. However, the **\<SecretName>** attribute is required. In most cases, you can define a Key Vault secret key in the following format:
     **vault:///\<SecretName>**
 
-    If the secret version isn't defined in the Key Vault secret key, the system retrieves the active secret that has the latest expiration date.
+    If the secret version isn't defined in the Key vault secret key, the system retrieves the active secret that has the latest expiration date.
     ![Key vault parameters](../media/items10.png)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
