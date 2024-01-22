@@ -6,8 +6,7 @@ description: This article explains how to configure environments to use dedicate
 author: faix
 ms.date: 01/21/2024
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
@@ -53,7 +52,7 @@ You can follow the guide to [Add an SSIS node to an existing environment](./ssis
 
 ### Use existing nodes
 
-1. Ensure you have downloaded the latest infrastructure scripts: [Update the infrastructure scripts](./obtain-infrascripts-onprem#update-the-infrastructure-scripts).
+1. Ensure you have downloaded the latest infrastructure scripts: [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 1. If you don't already have a gMSA account for the DMF service, create it by updating your ConfigTemplate.xml file and run the following command.
 
 ```powershell
@@ -99,7 +98,7 @@ You can follow the guide to [Add an SSIS node to an existing environment](./ssis
 .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 ```
 
-1. Setup the following predeployment script: [TSG_EnableDixfService.ps1](onprem-tsg-implementations#enableDixf)
+1. Setup the following predeployment script: [TSG_EnableDixfService.ps1](./onprem-tsg-implementations.md#enableDixf)
 
 1. Using the apply updates option in LCS, apply an update to the environment. The servicing flow will automatically enable/deploy the new DMF service.
 
