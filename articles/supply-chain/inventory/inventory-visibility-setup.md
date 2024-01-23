@@ -159,7 +159,7 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 > [!NOTE]
 > When you enable the Inventory Visibility integration job, if you receive an error that states that you must update the partition schema, see the [Update partition schema to two if you get an error when enabling the Inventory Visibility integration job](#update-partition-two) section of this article for instructions.
 
-### <a name="setup-inventory-visibility-integration"></a>Hotfixes for Inventory Visibility integration in Dynamics 365 SCM
+### <a name="setup-inventory-visibility-integration-hotfixes-link"></a>Hotfixes for Inventory Visibility integration in Dynamics 365 SCM
 
 You can find the latest hotfixes for Inventory Visibility integration feature in [Recent Dynamics 365 SCM hotfixes](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Recent%20Dynamics%20365%20SCM%20hotfixes.md).
 
