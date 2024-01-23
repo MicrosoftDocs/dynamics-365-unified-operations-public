@@ -1,6 +1,6 @@
 ---
-title: Globalization features
-description: This article explains the features of Globalization Studio workspace
+title: Upload ER configurations and Globalization features as a Dataverse solution
+description: This article explains how to upload ER configurations and globalization features as a Dataverse solution
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -13,63 +13,84 @@ ms.reviewer: johnmichalak
 
 # Upload ER configurations and Globalization features as a Dataverse solution
 
+[!INCLUDE[banner](../../../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../../../includes/rsc-to-gsw-banner.md)]
+
 You can use Dataverse solutions for Application Lifecycle Management (ALM) scenarios – moving ER configurations to other environments, sharing them with other tenants via AppSource, etc.
 
-You can also export and import specific versions as afile using export and import buttons on the form (existing functionality).
+You can also export and import specific versions as a file using export and import buttons on the form (existing functionality).
 
 ## Pre-requisites
 
-- Install PowerShell 7 [Installing PowerShell on Windows - PowerShell | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
-- Install [Microsoft Power Platform CLI - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction)
+- Install PowerShell 7 [Installing PowerShell on Windows - PowerShell | Microsoft Learn](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+- Install [Microsoft Power Platform CLI - Power Platform | Microsoft Learn](/power-platform/developer/cli/introduction)
 
 Get Generate-GlobalizationDataverseSolution.ps1 script from LCS Shared Asset Library, \<\<Asset type:, Asset name:\>\>
 
-## Step 1: Export your artefacts
+## Step 1: Export your artifacts
 
-- Create new folder, e.g. C:\DvArtifactsSrc
-- Export ER configurations .xml files (if any) and G. Features .json files (if any) to that folder.
-  - **Do not** include Microsoft configurations.
+To export your artifacts, follow these steps.
 
-## Step 2: Create Dataverse solution
+1. Create new folder. For example, C:\DvArtifactsSrc.
+1. Export any ER configurations .xml files, and any globalization features .json files to that folder.
+   > [!IMPORTANT]
+   > **Do not** include Microsoft configurations.
 
-- Create new solution in Dataverse [Create a solution in Power Apps - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-solution) and export it [Export solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/export-solutions)
-- Extract it with [pac solution unpack](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/solution#pac-solution-unpack) command, e.g.
+## Step 2: Create a Dataverse solution
 
-pac solution unpack --zipfile C:\SampleEmptySolution.zip --folder C:\SampleSolutionUnpacked
+To create a Dataverse solution, follow these steps.
+
+1. Create new solution in Dataverse. For more information, see [Create a solution in Power Apps - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/create-solution), and export it [Export solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/export-solutions).
+1. Extract the new solution with the **pac solution unpack** command. For example:
+   
+   ``` command
+   pac solution unpack --zipfile C:\SampleEmptySolution.zip --folder C:\SampleSolutionUnpacked
+   ```
+   For more information, see [pac solution unpack](/power-platform/developer/cli/reference/solution#pac-solution-unpack).
 
 ## Step 3: Run script
 
-Run Generate-GlobalizationDataverseSolution.ps1 script in PowerShell 7 specifying:
+Run the Generate-GlobalizationDataverseSolution.ps1 script in PowerShell 7 specifying the following parameters:
 
-- working folder as DvArtifactsSrcFolder parameter
-- solution folder as SolutionFolder parameter
-- ConfigurationsIndexRowName parameter: indicates name of Dataverse table record with index file for configurations. Use only alphanumeric characters and whitespaces. Note that if you change later that name then corresponding row in Dataverse table will have different GUID and index files will be duplicated. If you don't have any ER configurations you can omit this parameter.
- Example:
+- Working folder as DvArtifactsSrcFolder parameter.
+- Solution folder as SolutionFolder parameter.
+- ConfigurationsIndexRowName parameter: indicates name of Dataverse table record with index file for configurations. Use only alphanumeric characters and whitespaces. Note that if you change later that name then corresponding row in Dataverse table will have different GUID and index files will be duplicated. If you don't have any ER configurations you can omit this parameter. For example:
 
-"Contoso Electronic Reporting Configurations Index"
-
-- FeaturesIndexRowName parameter: indicates name of Dataverse table record with index file for features. Use only alphanumeric characters and whitespaces. Note that if you change later that name then corresponding row in Dataverse table will have different GUID and index files will be duplicated. If you don't have any G. Features you can omit this parameter.
- Example:
-
-"Contoso Globalization Features Index"
+  ``` command
+  Contoso Electronic Reporting Configurations Index
+  ``` 
+- FeaturesIndexRowName parameter: indicates name of Dataverse table record with index file for features. Use only alphanumeric characters and whitespaces. Note that if you change later that name then corresponding row in Dataverse table will have different GUID and index files will be duplicated. If you don't have any G. Features you can omit this parameter. For example:
+   
+  ``` command
+  Contoso Globalization Features Index
+  ```
 
 **Full PowerShell 7 command line example:**
 
+``` command
 pwsh -ExecutionPolicy RemoteSigned -File C:\Generate-GlobalizationDataverseSolution.ps1 -DvArtifactsSrcFolder C:\DvArtifactsSrc -SolutionFolder C:\SampleSolutionUnpacked -configurationsIndexRowName "Contoso Electronic Reporting Configurations Index" -featuresIndexRowName "Contoso Globalization Features Index"
+```
 
-## Step 4: Pack solution
+## Step 4: Pack the solution
 
-- Pack solution with [pac solution pack](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/solution#pac-solution-pack) command, e.g.
+Pack the solution with the **pac solition unpack** command. For example:
 
-  - pac solution pack --zipfile C:\SampleSolutionWithContents.zip --folder C:\SampleSolutionUnpacked --packagetype Both
+``` command
+pac solution pack --zipfile C:\SampleSolutionWithContents.zip --folder C:\SampleSolutionUnpacked --packagetype Both
+```
 
-- Check size of generated .zip file. If it exceeds 90 megabytes you need to split your source files into multiple Dataverse solutions.
+> [!NOTE]
+> Check size of generated .zip file. If it exceeds 90 megabytes you need to split your source files into multiple Dataverse solutions.
 
-## Step 5: Import solution to Dataverse
+For more information, see [pac solution unpack](/power-platform/developer/cli/reference/solution#pac-solution-unpack).
 
-- Import it back to Dataverse
+## Step 5: Import the solution to Dataverse
 
-  - [Import solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/import-update-export-solutions)
-  - You can also use [pac solution import](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/solution#pac-solution-import) command
-    - Note that after importing solution to Dataverse there is no way to remove it together with content. You can remove solution, but all inserted tables records will remain, they need to be cleaned up manually.
-- [Publish your app on AppSource - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/developer/appsource/publish-app)
+Import the solition back to Dataverse.
+
+- [Import solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/import-update-export-solutions).
+- You can also use [pac solution import](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/solution#pac-solution-import) command.
+  > [!NOTE]
+  > After importing the solution to Dataverse, there is no way to remove it together with content. You can remove the solution, but all inserted tables records will remain, they need to be cleaned up manually.
+- [Publish your app on AppSource - Power Platform | Microsoft Learn](/power-platform/developer/appsource/publish-app).
