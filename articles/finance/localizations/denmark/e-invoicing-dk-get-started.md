@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Denmark
 ms.author: ikondratenko
 ms.search.validFrom: 2023-12-01
@@ -181,14 +181,14 @@ To import incoming invoices in OIOUBL and PEPPOL formats, follow these additiona
 
 1. In RCS, on the **Globalization features** tile, on the **Electronic invoicing** tile, select the required version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 2. On the **Setups** tab, in the grid, select **Incoming OIOUBL**, and then select **Edit**.
-3. <a id="ImportChannel"></a>On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. Default channel name for the OIOUBL format is **EdiOIOUBL** and **EdiPEPPOL** for the PEPPOL format. In both cases, make a note of the value, because you'll use it in later configuration steps.
+3. <a id="ImportChannel"></a>On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. The default channel name for the OIOUBL format is **EdiOIOUBL** and for the PEPPOL format is **EdiPEPPOL**. In both cases, make a note of the value, because you'll use it in later configuration steps.
 4. Select the **Service ID** parameter, and then select the name of the secret that contains the service ID number.
 5. Select the **Group** parameter, and then select the name of the secret that contains the group code.
 6. Select the **Token** parameter, and then select the name of the secret that you created for the token.
 7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you defined earlier.
 9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you'll use it in later configuration steps.
 10. Select **Save**, and close the page.
-11. If import in the PEPPOL format is also required then repeat steps 2 till 10 for the **Incoming PEPPOL** feature setup.
+11. If an import in the PEPPOL format is also required, repeat steps 2 through 10 for the **Incoming PEPPOL** feature setup.
 12. Complete and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 
 ### Finance configuration
@@ -224,7 +224,7 @@ Some additional parameters must be configured directly in Finance.
 
     ![Screenshot that shows Vendor invoice import (DK) referenced in the Model mapping field.](../media/isv_connector_import_channel.jpg)
 
-16. If import in the PEPPOL format is also required then create another import channel and repeat steps 3 till 15 for this channel. Use the **Vendor invoice import** configuration on the step 15.
+16. If an import in the PEPPOL format is also required, create another import channel and repeat steps 3 through 15 for this channel. Use the **Vendor invoice import** configuration on the step 15.
 17. Select **Save**, and close the page.
 
 ### Configure Finance business data
