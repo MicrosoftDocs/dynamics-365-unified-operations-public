@@ -32,7 +32,7 @@ This section contains a table that lists the features that are included in this 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) | Feature management | 
-| Web client | Microsoft Graph mail provider | This is the replacement mail provider for the deprecated Exchange provider, which no longer works mid September 2024. For more information, see [Configure or send email](../../dev-itpro/organization-administration/configure-email.md#send-email-with-microsoft-graph) for more details on configuration. | Admin configuration |
+| Web client | Microsoft Graph mail provider | This is the replacement mail provider for the deprecated Exchange provider, which no longer works mid September 2024. For more information, see [Configure or send email](../../dev-itpro/organization-administration/configure-email.md#send-email-with-microsoft-graph). | Admin configuration |
 | Web client | Autoblocking of high-volume notification rules | For more information, see [Messaging system](../../dev-itpro/user-interface/messaging-user.md#how-do-i-manage-processes-that-generate-lots-of-notifications) | On by default (Feature management) |
 | System Administration | Clean stale data of Batch Job tables | For more information, see [Clean up the batch job table](../../dev-itpro/sysadmin/batch-job-cleanup.md) | Default |
 | System Administration | Batch Header now has a method BatchHeader::isCurrentBatchTaskBeingCancelled() which can be used in batch classes to immediately return and cancel execution if that is needed. | |
@@ -63,7 +63,7 @@ The [Removed or deprecated platform features](../../fin-ops/get-started/removed-
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice are added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
+Deprecation notices are added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are 
 functional updates that must be made to the compiler.
