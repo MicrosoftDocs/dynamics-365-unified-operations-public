@@ -58,17 +58,9 @@ The files attached to the electronic invoice are handled as embedded binary data
 
 Electronic Invoicing service is a microservice platform that will be globally available.
 
-Microsoft plans to publish the electronic invoice formats and integrations for the countries/regions that are functionally localized by Microsoft. For more information, see [Availability of electronic invoicing features](../e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
+Microsoft plans to publish the electronic invoice formats and integrations for the countries/regions that are functionally localized by Microsoft. For more information, see [Availability of electronic invoicing features](e-invoicing-country-specific-availability.md).
 
-If the electronic invoicing format for your country/region isn't listed, the platform aims to support this scenario in the future. You can still benefit from the configuration capabilities Electronic invoicing has, and configure the electronic invoicing format by yourself, or you can work with a partner/ISV to configure those for your organization.
-
-## Is Dynamics 365 for Regulatory Services a new module like Human Resources or Project Operations that is linked to Finance or Supply Chain Management? Are there extra costs for that?
-
-The Dynamics 365 for Regulatory Services (RCS) is a cloud service for configuring Globalization resources. RCS is free for all Finance, Supply Chain Management, and Project Operations license holders.
-
-For RCS sign-up, go to <https://marketing.configure.global.dynamics.com/>.
-
-For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md).
+If the electronic invoicing format for your country/region isn't listed, the platform aims to support this scenario in the future. You can still benefit from the configuration capabilities Electronic invoicing has, and configure the electronic invoicing format by yourself, or you can work with a partner/ISV to configure those for your organization. For more information, see [Electronic Invoicing service ISV last-mile connector](e-invoicing-isv-connector.md).
 
 ## Do I need to sign up to get Electronic Invoicing service, or just turn it on in Feature Management?
 
@@ -84,7 +76,7 @@ This can be achieved by configuration. To test invoice submission, you can conne
 
 ## Is there any documentation about the out-of-box country/region-specific Electronic Invoicing features?
 
-Yes. For information about the availability of Electronic Invoicing features and the formats they support, see [Availability of electronic invoicing features](../e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
+Yes. For information about the availability of Electronic Invoicing features and the formats they support, see [Availability of electronic invoicing features](e-invoicing-country-specific-availability.md).
 
 ## Does the Electronic Invoicing service allow a legal entity in Finance or Supply Chain Management that is configured for a specific country/region to consume electronic invoicing features from different countries/regions?
 
