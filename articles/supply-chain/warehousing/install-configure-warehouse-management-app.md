@@ -217,7 +217,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
     - **Microsoft Entra ID client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Microsoft Entra ID client secret** – This field is available only when **Authentication method** is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Certificate thumbprint** – This field is available only for Windows devices and only when **Authentication method** is set to *Certificate (Deprecated)*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Microsoft Entra ID resource** – Specify the root URL of Supply Chain Management.
+    - **Environment URL** – Specify the root URL of Supply Chain Management.
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
