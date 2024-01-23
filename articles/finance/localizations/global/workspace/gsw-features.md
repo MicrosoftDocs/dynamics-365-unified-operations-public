@@ -37,4 +37,4 @@ Globalization features have several components:
 
 For more details on Globalization features setup and usage, see [Electronic Invoicing and Tax Calculation Service](where should this go).
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
