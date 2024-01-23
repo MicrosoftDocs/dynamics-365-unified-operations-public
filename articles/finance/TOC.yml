@@ -1584,6 +1584,8 @@
               href: localizations/global/GS-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
             - name: Create a new Globalization feature
               href: localizations/global/GS-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
+            - name: Work with feature setups
+              href: localizations/global/GS-e-invoicing-feature-setup.md?context=/dynamics365/context/finance
           - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
             items: 
             - name: Set up Electronic Invoicing parameters
