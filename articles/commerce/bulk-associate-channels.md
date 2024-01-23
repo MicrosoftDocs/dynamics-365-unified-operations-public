@@ -2,7 +2,7 @@
 title: Bulk associate channels with e-commerce sites
 description: This article describes feature functionality that lets site authors bulk associate multiple channels with Microsoft Dynamics 365 Commerce e-commerce sites.
 author: ashishmsft
-ms.date: 01/19/2024
+ms.date: 01/23/2024
 ms.topic: article
 audience: Application user
 ms.reviewer: v-chrgriffin
