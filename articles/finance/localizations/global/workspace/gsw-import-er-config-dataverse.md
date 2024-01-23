@@ -13,9 +13,9 @@ ms.reviewer: johnmichalak
 
 # Import Electronic reporting (ER) configurations from Dataverse
 
-[!INCLUDE[banner](../../../../includes/banner.md)]
+[!INCLUDE[banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../../../includes/rsc-to-gsw-banner.md)]
+[!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 This article explains the how to import Electronic reporting (ER) configurations from Dataverse.
 
@@ -94,4 +94,6 @@ To import filtered configurations, follow these steps.
 > Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. Before you can use the imported configuration version, you must resolve the issues. For more information, see the list of related resources for this article.
 
 > [!NOTE]
-> ER configurations can be configured as being dependent on other configurations. Therefore, along with a selected configuration, other configurations might be automatically imported. For more about configuration dependencies, see [**Define the dependency of ER configurations on other components**](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017).
+> ER configurations can be configured as being dependent on other configurations. Therefore, along with a selected configuration, other configurations might be automatically imported. For more about configuration dependencies, see [**Define the dependency of ER configurations on other components**](../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
