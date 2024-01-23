@@ -29,7 +29,7 @@ The following table shows the Electronic invoicing features that are generally a
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
-| Australia | Electronic invoicing for Australia and New Zealand | Sales invoices and project invoices |
+| Australia | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Austria | Austrian electronic invoices (AT) | Sales invoices and project invoices |
 | Belgium | Belgian electronic invoice (BE) | Sales invoices and project invoices |
 | Brazil | Brazilian NF-e (BR)| Fiscal document model 55, correction letters, cancellations, and discards |
@@ -48,7 +48,7 @@ The following table shows the Electronic invoicing features that are generally a
 | Indonesia | Indonesian electronic invoice (ID) | Sales invoices, project invoices, and vendor invoices |
 | Italy | FatturaPA (IT) | Sales invoices and project invoices |
 | Netherlands | Dutch electronic invoice (NL) | Sales invoices and project invoices |
-| New Zealand | Electronic invoicing for Australia and New Zealand | Sales invoices and project invoices |
+| New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Norway | Norwegian electronic invoice (NO) | Sales invoices and project invoices |
 | Panama | LATAM e-invoice PA | Sales invoices and project invoices |
 | Saudi Arabia | Saudi Arabian electronic invoice (SA) | Phase 1: Sales invoices and project invoices |
