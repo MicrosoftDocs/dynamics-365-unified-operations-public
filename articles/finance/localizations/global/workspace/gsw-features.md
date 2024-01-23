@@ -13,9 +13,9 @@ ms.reviewer: johnmichalak
 
 # Globalization Studio workspace features
 
-[!INCLUDE[banner](../../../../includes/banner.md)]
+[!INCLUDE[banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../../../includes/rsc-to-gsw-banner.md)]
+[!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 You can use Globalization Studio to create a Globalization feature that can be used in Globalization services: Electronic Invoicing and Tax Calculation. Globalization Studio lets you perform these tasks:
 
@@ -35,6 +35,6 @@ Globalization features have several components:
 - **Configurations**  – This component lets users manage, view, and edit related ER formats and format mappings.
 - **Setups**  – This component lets users of Globalization services, such as an e-invoicing service, manage the setup of the related feature version. Therefore, it supports the flexible construction of communication and responses rules.
 
-For more details on Globalization features setup and usage, see [Electronic Invoicing and Tax Calculation Service](where).
+For more details on Globalization features setup and usage, see [Electronic Invoicing and Tax Calculation Service](where should this go).
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
