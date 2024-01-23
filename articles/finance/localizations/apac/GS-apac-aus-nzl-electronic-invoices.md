@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/GS-e-invoicing-set-up-overview.md).
 
 After you've configured electronic invoicing, you can generate XML files of electronic invoices by using the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format specification with the Australian and New Zealand extension.
 
@@ -32,23 +32,8 @@ After you've configured electronic invoicing, you can generate XML files of elec
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
-
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-
-- Activate the integration between your Finance or Supply Chain Management app and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
-- Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-
-    - Peppol Sales Invoice AU-NZ
-    - Peppol Sales Credit Note AU-NZ
-    - Peppol Project Invoice AU-NZ
-    - Peppol Project Credit Note AU-NZ
-
-    > [!NOTE]
-    > These formats are based on the corresponding **Peppol** format configurations. Those configurations, in turn, are based on the **UBL** format configurations that use the **Invoice model** and **Invoice model mapping** configurations. All required additional configurations are automatically imported.
+- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/GS-e-invoicing-service-overview.md).
+- Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/GS-e-invoicing-set-up-overview.md).
 
 ## Country/region-specific configuration for the Electronic invoicing for Australia and New Zealand feature
 
