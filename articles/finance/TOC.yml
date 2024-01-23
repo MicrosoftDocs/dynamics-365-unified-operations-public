@@ -1539,7 +1539,7 @@
           - name: Regulatory Configuration Service merge to Globalization Studio workspace
             href: localizations/global/workspace/merge-rcs-to-gsw.md
           - name: Globalization Studio workspace features
-            href: localizations/global/workspace/dsw-features.md
+            href: localizations/global/workspace/gsw-features.md
           - name: Import Electronic reporting (ER) configurations from Dataverse
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
           - name: Upload ER configurations and Globalization features as a Dataverse solution
