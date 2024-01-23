@@ -1595,7 +1595,7 @@
             - name: Get started with Electronic Invoicing for Australia and New Zealand
               href: localizations/apac/GS-apac-aus-nzl-electronic-invoices.md
           - name: Electronic Invoicing FAQ
-            href: localizations/global/e-invoicing-faq.md?context=/dynamics365/context/finance
+            href: localizations/global/GS-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
           items:
           - name: Electronic Invoicing overview
