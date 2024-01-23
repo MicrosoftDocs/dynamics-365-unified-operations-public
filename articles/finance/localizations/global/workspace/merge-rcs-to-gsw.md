@@ -13,9 +13,9 @@ ms.reviewer: johnmichalak
 
 # Regulatory Configuration Service merge to Globalization Studio workspace
 
-[!INCLUDE[banner](../../../../includes/banner.md)]
+[!INCLUDE[banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../../../includes/rsc-to-gsw-banner.md)]
+[!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39.
 
