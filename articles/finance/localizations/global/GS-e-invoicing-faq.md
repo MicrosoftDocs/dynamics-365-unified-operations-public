@@ -121,6 +121,4 @@ Electronic Invoicing supports different web-services end points. You can use con
 
 Microsoft continuously extends functional coverage to provide out-of-the box integrations by using the electronic invoicing features. For more information about the formats and integrations that are supported, see [Availability of electronic invoicing features](e-invoicing-country-specific-availability.md) and [Electronic Invoicing service ISV last-mile connector](e-invoicing-isv-connector.md).
 
-> [!NOTE] 
-> If you didn't find the answer you are looking for, email your question to the Product Development Team at <D365EInvoicePreview@microsoft.com>. We will either contact you or improve the coverage of this FAQ.
 
