@@ -13,6 +13,10 @@ ms.reviewer: johnmichalak
 
 # Globalization Studio workspace features
 
+[!INCLUDE[banner](../../../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../../../includes/rsc-to-gsw-banner.md)]
+
 You can use Globalization Studio to create a Globalization feature that can be used in Globalization services: Electronic Invoicing and Tax Calculation. Globalization Studio lets you perform these tasks:
 
 - Define related components of a feature.
@@ -33,3 +37,4 @@ Globalization features have several components:
 
 For more details on Globalization features setup and usage, see [Electronic Invoicing and Tax Calculation Service](where).
 
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
