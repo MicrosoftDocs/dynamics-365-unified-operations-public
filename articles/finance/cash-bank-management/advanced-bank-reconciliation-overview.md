@@ -35,31 +35,35 @@ This article describes the flow for the advanced bank reconciliation process. Th
 
 The advanced bank reconciliation feature lets you import bank statements. The imported bank statement can then be automatically reconciled from within bank transactions. Here are the steps in the advanced bank reconciliation flow.
 
-1.  Set up a bank statement import.
-    -   Import bank statements through the data entity framework.
-    -   Three typical bank statement formats are built in: ISO20022, BAI2, and MT940.
-    -   The functionality can be extended to any format.
+1. Set up a bank statement import.
 
-2.  Set up a number sequence to use for advanced bank reconciliation, and define the bank reconciliation matching rules.
-    -   A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 Finance bank transaction lines during the reconciliation process. Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.
+    - Import bank statements through the data entity framework.
+    - Three typical bank statement formats are built in: ISO20022, BAI2, and MT940.
+    - The functionality can be extended to any format.
 
-3.  Reconcile bank statements with Finance bank transactions.
-    -   Perform automatic matching and creation of reconciliation journals.
-    -   View bank statements and Finance bank transactions side by side.
-    -   Automatically post Finance bank transactions if they appear on a bank statement but don't appear in the Finance app.
-    -   Generate a reconciliation statement.
+1. Set up a number sequence to use for advanced bank reconciliation, and define the bank reconciliation matching rules.
 
+    - A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 Finance bank transaction lines during the reconciliation process. Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.
+
+1. Reconcile bank statements with Finance bank transactions.
+
+    - Perform automatic matching and creation of reconciliation journals.
+    - View bank statements and Finance bank transactions side by side.
+    - Automatically post Finance bank transactions if they appear on a bank statement but don't appear in the Finance app.
+    - Generate a reconciliation statement.
 
 > [!NOTE]
-> Starting from 10.0.39 release, a new feature **Modern bank reconciliation** will be available to enhancement the capabilities in advanced bank reconciliation. Because modern bank reconciliation is under preview in 10.0.39, the objects and code introduced by this feature are subject to change before the feature goes to GA. This could result in breaking changes being introduced to provide a better functional experience and address feedback from users. Classes, forms and tables that mentioned below are not expected to be customized.
+> As of the 10.0.39 release, a new feature that's named **Modern bank reconciliation** enhances the capabilities in advanced bank reconciliation. Because modern bank reconciliation is in preview in Finance version 10.0.39, the objects and code that this feature introduces are subject to change before the feature goes to general availability (GA). Therefore, to help provide a better functional experience and address feedback from users, breaking changes might be introduced. The expectation is that the following classes, forms, and tables won't be customized.
 > 
-> Class:
+> **Classes:**
+>
 > - BankReconciliationHeaderReconcileDP
 > - BankReconciliationHeaderUnreconDP
 > - BankReconciliationLineReconcileDP
 > - BankReconciliationLineUnreconDP
->  
-> Form:
+>
+> **Forms:**
+>
 > - BankAutomationReconciliationWorksheet
 > - BankAutomationStatementForm
 > - BankAutomationStatementGenerateVoucherDialog
@@ -68,13 +72,10 @@ The advanced bank reconciliation feature lets you import bank statements. The im
 > - BankAutomationStatementUnmatchedCardFormPart
 > - BankStatementLineDetails
 > - BankBridgingInquiryV2
->  
-> Table:
+>
+> **Tables:**
+>
 > - BankReconciliationElectronicReportDocumentTmp
 > - BankReconciliationElectronicReportStatementTmp
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
