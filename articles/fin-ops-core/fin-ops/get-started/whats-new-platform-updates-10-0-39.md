@@ -33,7 +33,9 @@ This section will contain a table that lists the features that are included in t
 |---|---|---|---|
 | System Administration | Removed or Deprecated - ISV Licenses generated using SHA1 algorithm (signature version 1) | [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) | Feature management | 
 | Web client | Microsoft Graph mail provider | This is the replacement mail provider for the deprecated Exchange provider, which will no longer work mid September 2024. See [Configure or send email](../../dev-itpro/organization-administration/configure-email.md#send-email-with-microsoft-graph) for more details on configuration. | Admin configuration |
-| Web client | Auto-blocking of high-volume notification rules | [Messaging system](../../dev-itpro/user-interface/messaging-user.md#how-do-i-manage-processes-that-generate-lots-of-notifications) | On by default (Feature management) |
+| Web client | Auto-blocking of high-volume notification rules | [Messaging system](../../dev-itpro/user-interface/messaging-user.md#how-do-i-manage-processes-that-generate-lots-of-notifications.md) | On by default (Feature management) |
+| System Administration | Clean stale data of Batch Job tables | [Clean up the batch job table](../../fin-ops-core/dev-itpro/sysadmin/batch-job-cleanup.md) | Default |
+| System Administration | Batch Header now has a method BatchHeader::isCurrentBatchTaskBeingCancelled() which can be used in batch classes to immediately return and cancel execution if that is needed. | |
 
 ## Feature enhancements included in this release
 
@@ -41,6 +43,8 @@ This section will contain a table that lists the enhancements that are included 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Lifecycle Services | Batch Job History cleanup as well as Custom Batch Job History cleanup | [Clean up the batch job history](../../fin-ops-core/dev-itpro/sysadmin/batch-history-cleanup.md) | |
+| Business Events | Fixed the issue where Business Events were always raised in DAT entity while Job was in any other business entity. | | |
 
 ### Bug fixes
 
