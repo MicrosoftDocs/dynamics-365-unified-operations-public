@@ -4,7 +4,7 @@
 title: Channel and catalog selection enhancements in call center for creating B2B orders
 description: This article describes channel and catalog selection enhancements in Microsoft Dynamics 365 Commerce that enable call center workers to initiate orders on behalf of B2B partners in their B2B channels.
 author: ashishmsft
-ms.date: 01/17/2024
+ms.date: 01/24/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
