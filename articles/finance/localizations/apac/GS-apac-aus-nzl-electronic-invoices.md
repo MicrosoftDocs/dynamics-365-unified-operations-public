@@ -39,7 +39,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 Some of the parameters from the **Electronic invoicing for Australia and New Zealand** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
-1. Import the latest version of the **Electronic invoicing for Australia and New Zealand** Globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Electronic invoicing for Australia and New Zealand** Globalization feature as described in [Import features from the repository](../global/GS-e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
 
     > [!NOTE]
