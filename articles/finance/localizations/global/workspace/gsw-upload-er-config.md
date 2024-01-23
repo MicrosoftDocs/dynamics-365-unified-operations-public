@@ -13,9 +13,9 @@ ms.reviewer: johnmichalak
 
 # Upload ER configurations and Globalization features as a Dataverse solution
 
-[!INCLUDE[banner](../../../../includes/banner.md)]
+[!INCLUDE[banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../../../includes/rsc-to-gsw-banner.md)]
+[!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 You can use Dataverse solutions for Application Lifecycle Management (ALM) scenarios – moving ER configurations to other environments, sharing them with other tenants via AppSource, etc.
 
@@ -23,7 +23,7 @@ You can also export and import specific versions as a file using export and impo
 
 ## Pre-requisites
 
-- Install PowerShell 7 [Installing PowerShell on Windows - PowerShell | Microsoft Learn](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+- Install PowerShell 7 [Installing PowerShell on Windows - PowerShell | Microsoft Learn](/powershell/scripting/install/installing-powershell-on-windows)
 - Install [Microsoft Power Platform CLI - Power Platform | Microsoft Learn](/power-platform/developer/cli/introduction)
 
 Get Generate-GlobalizationDataverseSolution.ps1 script from LCS Shared Asset Library, \<\<Asset type:, Asset name:\>\>
@@ -90,7 +90,9 @@ For more information, see [pac solution unpack](/power-platform/developer/cli/re
 Import the solition back to Dataverse.
 
 - [Import solutions - Power Apps | Microsoft Learn](/power-apps/maker/data-platform/import-update-export-solutions).
-- You can also use [pac solution import](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/solution#pac-solution-import) command.
+- You can also use [pac solution import](/power-platform/developer/cli/reference/solution#pac-solution-import) command.
   > [!NOTE]
   > After importing the solution to Dataverse, there is no way to remove it together with content. You can remove the solution, but all inserted tables records will remain, they need to be cleaned up manually.
 - [Publish your app on AppSource - Power Platform | Microsoft Learn](/power-platform/developer/appsource/publish-app).
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
