@@ -1590,6 +1590,14 @@
               href: localizations/global/GS-e-invoicing-feature-setup.md?context=/dynamics365/context/finance
             - name: Complete and deploy a Globalization feature
               href: localizations/global/GS-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
+             - name: Usage management dashboard
+              href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance   
+            - name: Process incoming electronic documents
+              items: 
+              - name: Processing incoming electronic documents
+                href: localizations/global/e-invoicing-process-incoming-electronic-documents.md
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: localizations/global/e-invoicing-isv-connector.md
           - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
             items: 
             - name: Set up Electronic Invoicing parameters
