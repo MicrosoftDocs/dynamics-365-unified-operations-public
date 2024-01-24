@@ -1,6 +1,6 @@
 ---
-title: Upload ER configurations and Globalization features as a Dataverse solution
-description: This article explains how to upload ER configurations and globalization features as a Dataverse solution
+title: Upload ER configurations and Globalization features as a Dataverse solution (preview)
+description: This article explains how to upload ER configurations and globalization features as a Dataverse solution (preview)
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 ---
 
-# Upload ER configurations and Globalization features as a Dataverse solution
+# Upload ER configurations and Globalization features as a Dataverse solution (preview)
 
 [!INCLUDE[banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
