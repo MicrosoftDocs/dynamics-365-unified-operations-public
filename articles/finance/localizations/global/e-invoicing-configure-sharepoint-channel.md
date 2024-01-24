@@ -31,7 +31,7 @@ You can then use the SharePoint channel to import electronic vendor invoices fro
     - **Archive folder** – The folder where processed files will be stored.
     - **Error folder** – The folder that the system will move files to if the processing fails.
 
-2. In Regulatory Configuration Service (RCS), select the Electronic invoicing feature that you created. Make sure that you select the version that has a status of **Draft**.
+2. Select the Electronic invoicing feature that you created. Make sure that you select the version that has a status of **Draft**.
 3. On **Setups** tab, select **Add**.
 4. In the **Create feature setup** drop-down dialog box, in the **New** field group, select the **Custom setup** option.
 5. In the **Setup type** field group, select the **Data channel** option.
