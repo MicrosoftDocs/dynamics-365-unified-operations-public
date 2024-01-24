@@ -52,10 +52,7 @@ You use the **Deploy** command to deploy an electronic invoicing feature version
 
 ## Remove feature versions
 
-In RCS, you can select **Cancel** to remove a specific electronic invoicing feature version from a service environment, if it was deployed there.
-
-> [!IMPORTANT]
-> The **Cancel** button works only for service environments. It doesn't remove anything from the connected application for the current electronic invoicing feature.
+You can select **Cancel deployment** command to remove a specific electronic invoicing feature version from the service, if it was deployed there. You can see in the **Deployed to the service** column if a specific feature version is deployed to the service or not.
 
 ## Rebase electronic invoicing features
 
