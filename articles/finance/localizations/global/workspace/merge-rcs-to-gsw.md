@@ -1,6 +1,6 @@
 ---
-title: Regulatory Configuration Service merge to Globalization Studio workspace
-description: This article explains the Regulatory Configuration Service merge to Globalization Studio workspace
+title: Regulatory Configuration Service merge to Globalization Studio workspace (preview)
+description: This article explains the Regulatory Configuration Service merge to Globalization Studio workspace (preview)
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 ---
 
-# Regulatory Configuration Service merge to Globalization Studio workspace
+# Regulatory Configuration Service merge to Globalization Studio workspace (preview)
 
 [!INCLUDE[banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
