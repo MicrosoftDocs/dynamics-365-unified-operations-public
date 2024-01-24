@@ -23,7 +23,7 @@ ms.search.form:
 
 If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that are received by email, configure an email account channel.
 
-1. In Regulatory Configuration Service (RCS), select the Electronic invoicing feature that you created. Select the version that has a status of **Draft**.
+1. Select the Electronic invoicing feature that you created. Select the version that has a status of **Draft**.
 2. On the **Setups** tab, select **Add**.
 3. In the **Create feature setup** drop-down dialog box, in the **New** field group, select the **Custom setup** option.
 4. In the **Setup type** field group, select the **Data channel** option.
