@@ -44,7 +44,7 @@ This section contains a table that lists the enhancements that are included in t
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Lifecycle Services | Batch Job History and Custom Batch Job History cleanup | For more information, see [Clean up the batch job history](../../dev-itpro/sysadmin/batch-history-cleanup.md) | |
-| Business Events | Fixed the issue where Business Events were always raised in DAT entity while Job was in any other business entity. | | |
+| Business Events | Fixed the issue where Batch Business Events were always raised in DAT entity while Job was in any other business entity. | | |
 
 ### Bug fixes
 
@@ -54,7 +54,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). All of the details, end to end, top to bottom, are captured in a single document that you can use for planning.
+Check out the [Dynamics 365: 2023 release wave 2 plan](/dynamics365/release-plan/2023wave2/). All of the details, end to end, top to bottom, are captured in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 
