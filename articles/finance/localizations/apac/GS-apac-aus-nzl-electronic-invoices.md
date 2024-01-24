@@ -45,13 +45,13 @@ Some of the parameters from the **Electronic invoicing for Australia and New Zea
     > [!NOTE]
     > The **Electronic invoicing for Australia and New Zealand** feature is provided by Microsoft. It's ready to use and requires no additional configuration. For information about how to configure invoicing features if you must apply changes, see [Work with feature setups](../global/GS-e-invoicing-feature-setup.md). For example, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Australia or New Zealand.
 
-3. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
+3. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/GS-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Finance configuration
 
 Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Australia and New Zealand are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Australia and New Zealand are imported. For more information, see [Set up Electronic invoicing parameters](../global/GS-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
     > After you import the **Electronic invoicing for Australia and New Zealand** electronic invoicing feature, electronic documents are configured by default. If you must make changes, complete the following steps.
@@ -138,9 +138,8 @@ To download the XML files of electronic invoices for successfully processed invo
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](../e-invoicing-get-started.md)
+- [Electronic invoicing overview](../global/GS-e-invoicing-service-overview.md)
+- [Customer electronic invoices in Australia and New Zealand](apac-aus-nzl-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
