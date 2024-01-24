@@ -30,7 +30,7 @@ Electronic invoicing supports two channels for incoming documents: e-mail and Mi
 
 There are twp setup types to specify whether documents undergo preprocessing or are passed directly to your connected application:
 
-- **Data channel** – The system will pass the document directly to the connected application.
-- **Data channel with processing pipeline** – You can set up additional actions that will be run before the document is passed to the connected application.
+- **Import channel** – The system will pass the document directly to the connected application.
+- **Import channel with processing pipeline** – You can set up additional actions that will be run before the document is passed to the connected application.
 
 For information about how to set up the scenarios for processing incoming electronic documents for the different channels, see [Configure an email channel](e-invoicing-configure-email.md) and [Configure a SharePoint channel](e-invoicing-configure-sharepoint-channel.md).
