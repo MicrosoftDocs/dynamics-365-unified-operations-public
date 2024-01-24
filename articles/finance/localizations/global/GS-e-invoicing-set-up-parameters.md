@@ -74,14 +74,6 @@ If you derive a configuration from the configuration that is mentioned in the pr
 
 To set up the rules to process responses from the Electronic invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md).
 
-### File name
-
-To add....
-
-### Batch submission ID
-
-To add....
-
 ## Legacy Electronic invoicing functionality inactivation
 
 To inactivate old (legacy) ER functionality for some features and activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
@@ -133,6 +125,3 @@ If your scenarios require number sequences (for example, in file names), you can
 Select **New** to create a number sequence. Then enter a name and description. 
 Select **Delete** to delete a number sequence if it's no longer used.
 
-## Integration channels
-
-To add....
