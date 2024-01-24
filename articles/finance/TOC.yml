@@ -1590,8 +1590,8 @@
               href: localizations/global/GS-e-invoicing-feature-setup.md?context=/dynamics365/context/finance
             - name: Complete and deploy a Globalization feature
               href: localizations/global/GS-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
-             - name: Usage management dashboard
-              href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance   
+            - name: Usage management dashboard
+              href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
             - name: Process incoming electronic documents
               items: 
               - name: Processing incoming electronic documents
