@@ -75,13 +75,5 @@ This procedure shows how to create the file format configurations that are requi
 9. Select **Designer**, and use the Format designer tool to configure the file layout so that it meets the file format specifications.
 10. Close the page.
 11. On the **Versions** tab, select **Change status** \> **Complete**.
-12. **!!!CLARIFY - DO WE NEED TO SHARE NOW?!!!** Select **Change status** \> **Share** to publish the format configuration to the Global repository.
 
-The new file format configurations must be shared with the Microsoft domain before they can be consumed by the Electronic invoicing service.
-
-1. Select the format configuration that you're working on. The status of the configuration must be **Shared**.
-2. On the **Versions** tab, select **Advanced sharing** \> **Global repository**.
-3. On the **Shared with** tab, select **Organization**.
-4. In the **Parameters** field, enter **microsoft.com** to share the format configuration with the Microsoft domain.
-5. Select **OK**.
 
