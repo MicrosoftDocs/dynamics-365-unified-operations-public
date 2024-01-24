@@ -25,8 +25,16 @@ This article provides information about how to get started with Tax Calculation.
 
 The setup consists of three main steps.
 
-1. In LCS, install the Tax Calculation add-in.
-2. In RCS, set up the Tax Calculation feature. This setup isn't specific to a legal entity. It can be shared across legal entities in Finance and Supply Chain Management.
+> [!NOTE]
+> For new environments with 10.0.39 and higher version, installing of the TCS add-in in LCS won't be required.
+> 
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](merge-rcs-to-gsw.md).
+>
+> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
+
+
+1. In LCS, install the **Tax Calculation** add-in in your LCS project.
+2. Set up the Tax Calculation feature. This setup isn't specific to a legal entity. It can be shared across legal entities in Finance and Supply Chain Management.
 3. In Finance and Supply Chain Management, set up the Tax Calculation parameters by legal entity.
 
 ## High-level design
@@ -51,11 +59,10 @@ The following illustration shows the high-level runtime design of Tax Calculatio
 
 ### High-level configuration
 
-The following steps provide a high-level overview of the configuration process for the Tax Calculation Service.
+The following steps provide a high-level overview of the configuration process for the Tax Calculation.
 
-1. In LCS, install the **Tax Calculation** add-in in your LCS project.
-2. In RCS, create the **Tax Calculation** feature.
-3. In RCS, set up the **Tax Calculation** feature:
+1. In RCS, create the **Tax Calculation** feature. If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
+2. Set up the **Tax Calculation** feature:
 
     1. Select the tax configuration version.
     2. Create tax codes.
@@ -64,10 +71,10 @@ The following steps provide a high-level overview of the configuration process f
     5. Optional: Create tax group applicability if you want to override the default sales tax group that is entered from customer or vendor master data.
     6. Optional: Create item group applicability if you want to override the default item sales tax group that is entered from the item master data.
 
-4. In RCS, complete and publish the **Tax Calculation** feature.
-5. In Finance, select the published **Tax Calculation** feature.
+3. Complete the **Tax Calculation** feature. If you configure your tax feature in RCS, you will need to publish it.  
+4. In Finance, select the **Tax Calculation** feature.
 
-After you complete these steps, the following setups are automatically synced from RCS to Finance.
+After you complete these steps, the following setups are automatically synced from Tax feature setup to Finance.
 
 - Sales tax codes
 - Sales tax groups
@@ -84,8 +91,14 @@ Before you can complete the remaining procedures in this article, the following 
 - The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
 
     - Tax Calculation Service
-    - Support multiple VAT registration numbers
+    - Support multiple VAT registration numbers (In the 10.0.39 update, this feature can no longer be enabled through feature management and is now controlled by the "Support multiple VAT registration numbers" parameter in the "Tax calculation parameters" page.)
     - Tax in transfer order
+
+   If you are on 10.0.39 or higher version, enable additional features in the **Feature management** workspace:
+   
+     - Globalization features
+     - Enable Globalization feature setup for Tax Calculation Service
+     - Enable applicability rules value lookup for Tax Calculation Service – optional.
 
 - The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
 
