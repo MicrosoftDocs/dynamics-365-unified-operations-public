@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: TAMRebateGroup
+ms.search.form: TAMRebatePosting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

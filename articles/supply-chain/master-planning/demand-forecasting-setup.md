@@ -15,6 +15,7 @@ ms.custom: bap-template
 # Demand forecasting setup
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes how to set up demand forecasting.  
 

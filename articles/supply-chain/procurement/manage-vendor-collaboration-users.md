@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 
@@ -31,6 +30,7 @@ ms.dyn365.ops.version: Version 1611
 # Manage vendor collaboration users
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 

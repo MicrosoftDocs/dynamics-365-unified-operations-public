@@ -29,7 +29,7 @@ Follow these steps to view information about a test case.
 
 - In the **Test Cases** grid, find the relevant test case, and select it by selecting the check mark column. Then select the **Edit** action to open the test case information.
 
-    ![Edit button.](media/test-case-details.png)
+    ![Edit button.](media/test-case-details2.png)
 
   The **Test Case information** dialog box appears.
 

@@ -1,5 +1,5 @@
 ---
-title: Inventory On-hand mobile app (preview)
+title: Inventory On-hand mobile app
 description: This article describes the function of the Inventory On-hand mobile app and how to onboard it.
 author: yufeihuang
 ms.author: yufeihuang
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Inventory On-hand mobile app (preview)
+# Inventory On-hand mobile app
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!--KFM: Preview until 10.0.38 GA -->
 
 The Inventory On-hand mobile app lets you query and view product inventory in Microsoft Dynamics 365 Supply Chain Management by using a mobile device. It was built by using Power Apps.
 
@@ -30,8 +27,6 @@ The app lets you perform the following tasks:
 - Switch among legal entities to check cross-organization inventory.
 
 This article describes how administrators can prepare your Supply Chain Management and Dataverse environments to support the Inventory On-hand mobile app. It also describes how to install the app on your mobile devices.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 

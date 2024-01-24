@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
-ms.date: 12/01/2023
+ms.date: 01/04/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -78,6 +78,15 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | **Deployment option**              | All |
 | **Status**                         | The User Log page will be removed by Jan 12 2024 (10.0.38/PU62) |
 
+### Exchange email provider
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The authentication mechanism that the Exchange email provider uses is being removed, and the Exchange provider never supported sovereign clouds. |
+| **Replaced by another feature?**   | Customers who use the Exchange email provider should migrate to the Microsoft Graph email provider. For more information, see [Configure and send email](../../dev-itpro/organization-administration/configure-email.md). |
+| **Product areas affected**         | System administration  |
+| **Deployment option**              | All |
+| **Status**                         | The Exchange email provider will stop sending emails as of September 15, 2024. |
 
 ## Feature deprecation effective August 2022
 

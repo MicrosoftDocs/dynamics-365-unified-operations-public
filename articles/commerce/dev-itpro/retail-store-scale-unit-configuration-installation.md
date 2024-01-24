@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
 ms.search.industry: Retail
 ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
@@ -27,7 +26,10 @@ This article explains how you can use self-service to configure a Commerce Scale
 > [!IMPORTANT]
 > - A basic design principle to follow is that if you are not able to customize in a requested manner on a Commerce Scale Unit (Cloud), you should not customize this way with a CSU (self-hosted).  It is critical to understand that direct database access is not supported and can easily cause breaks in customizations that use this concept.  A CSU (self-hosted) is primarily for enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
 > - Do not install a CSU on a developer environment, which typically already has a configured Retail Server and Channel database.
-> - It is critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+
+> [!IMPORTANT]
+> - It's critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+> - It's critical that you have a plan to rotate this key at least one month prior to expiration. Planning is necessary when working with a high number of stores to ensure that there is sufficient time to roll out the change to all stores.
 
 ## Before you begin
 

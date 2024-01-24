@@ -18,8 +18,6 @@
           href: get-started/whats-new-scm-10-0-38.md
         - name: Supply Chain Management 10.0.37 (November 2023)
           href: get-started/whats-new-scm-10-0-37.md
-        - name: Supply Chain Management 10.0.36 (October 2023)
-          href: get-started/whats-new-scm-10-0-36.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1711,7 +1709,7 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
-      - name: Inventory On-hand mobile app (preview)
+      - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
       - name: Archive inventory transactions
         href: inventory/archive-inventory-transactions.md
@@ -1721,18 +1719,28 @@
           href: inventory/inventory-visibility.md
         - name: Install and set up Inventory Visibility
           href: inventory/inventory-visibility-setup.md
+        - name: Set up product search for Inventory Visibility
+          href: inventory/inventory-visibility-product-search.md
+        - name: The Inventory Visibility app in Power Apps
+          items:
+          - name: Inventory Visibility app user interface versions (preview)
+            href: inventory/inventory-visibility-ui-version-2.md
+          - name: Use the Inventory Visibility app UI version 2 (preview)
+            href: inventory/inventory-visibility-power-platform.md
+          - name: Use the Inventory Visibility app UI version 1
+            href: inventory/inventory-visibility-power-platform-v1.md
+          - name: Search for products using the Inventory Visibility app
+            href: inventory/inventory-visibility-product-search-app.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
-        - name: Set up product search for Inventory Visibility (preview)
-          href: inventory/inventory-visibility-product-search.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
+        - name: Inventory summary
+          href: inventory/inventory-visibility-inventory-summary.md
+        - name: Preload a streamlined on-hand query
+          href: inventory/inventory-visibility-preload-on-hand.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
           href: inventory/inventory-onhand-consistency-check.md
-        - name: Use the Inventory Visibility app
-          href: inventory/inventory-visibility-power-platform.md
-        - name: Search for products using the Inventory Visibility app (preview)
-          href: inventory/inventory-visibility-product-search-app.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation
@@ -1743,10 +1751,12 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
-        - name: Inquire into inventory with Copilot through API (preview)
+        - name: Inquire into inventory with Copilot (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
           href: inventory/inventory-visibility-track-inventory-log-history.md
+        - name: Inventory Visibility diagnostic tool
+          href: inventory/inventory-visibility-diagnostic-tool.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
     - name: Sensor Data Intelligence (preview)
@@ -1813,7 +1823,7 @@
           href: master-planning/more-about-dynamic-negative-days.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
-        - name: Calculate requested ship dates for purchase orders (preview)
+        - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
         - name: Create a schedule for a site
           href: master-planning/tasks/create-schedule-site.md
@@ -1903,6 +1913,8 @@
         items:
         - name: Safety stock fulfillment for items
           href: master-planning/safety-stock-replenishment.md
+        - name: Safety stock pegging options
+          href: master-planning/safety-stock-pegging.md
         - name: Use the safety stock journal to update minimum coverage for items
           href: master-planning/safety-stock-journal.md
       - name: Manage planned orders
@@ -2325,9 +2337,11 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
-        - name: Calculate requested ship dates for purchase orders (preview)
+        - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
-        - name: Review and accept changes to confirmed purchase orders (preview)
+        - name: Enable Copilot support for managing changes to confirmed purchase orders
+          href: procurement/purchase-order-changes-after-confirmation-enable.md
+        - name: Review and accept changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
           href: procurement/purchase-order-mobile-workspace.md
@@ -2367,7 +2381,7 @@
           href: procurement/tasks/create-purchase-agreement.md
         - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
-        - name: Units of measure for line-level charges (preview)
+        - name: Units of measure for line-level charges
           href: sales-marketing/line-charges-specific-unit.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
@@ -3037,16 +3051,18 @@
           href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
         - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
-        - name: Auto-charge compounding and sequencing (preview)
+        - name: Auto-charge compounding and sequencing
           href: sales-marketing/auto-charge-sequence-compound.md
-        - name: Units of measure for line-level charges (preview)
+        - name: Units of measure for line-level charges
           href: sales-marketing/line-charges-specific-unit.md
-        - name: Period charges (preview)
+        - name: Period charges
           href: sales-marketing/period-charges.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Calculate sales totals when prices include sales tax
+          href: sales-marketing/sales-tax-calculation.md
         - name: Manage order holds
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
@@ -3465,7 +3481,7 @@
           href: transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Load building workbench
           href: transportation/tasks/load-building-workbench.md
-        - name: Integrate with Microsoft Sustainability Manager (preview)
+        - name: Integrate with Microsoft Sustainability Manager
           href: transportation/sustainability-manager-integration-setup.md
         - name: Plan loads using hub consolidation
           items:
@@ -3821,6 +3837,8 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for moving items in the warehouse
+            href: warehousing/mobile-device-movement-menu.md
           - name: Set up a mobile device menu item for completing work in a purchase order
             href: warehousing/tasks/set-up-mobile-device-menu.md
           - name: Set up a mobile device menu item to register received items
@@ -3987,9 +4005,9 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
+      - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md
-      - name: Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)
+      - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
         href: faq-inventory-query.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md

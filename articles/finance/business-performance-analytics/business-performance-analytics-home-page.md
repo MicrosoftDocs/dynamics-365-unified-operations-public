@@ -12,6 +12,7 @@ ms.technology:
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
 # About business performance analytics
@@ -51,8 +52,7 @@ A Tier-2 environment (multi-box) is required to preview business performance ana
 
 ### Version requirements
 
-Business performance analytics requires Dynamics 365 Finance version 10.0.37 and PU61 and later and the selected language must be en-us.
-The minimum recommended platform build for PU61 for Dynamics 365 Finance is 7.0.7068.78
+Business performance analytics requires at least Dynamics 365 Finance version 10.0.37 (Application version 10.0.1725.119) or Dynamics 365 Finance version 10.0.38 (Application version 10.0.1777.72).
 
 
 ## Set up business performance analytics
