@@ -1,6 +1,6 @@
 ---
-title: Globalization Studio workspace features
-description: This article explains the features of Globalization Studio workspace
+title: Globalization Studio workspace features (preview)
+description: This article explains the features of Globalization Studio workspace (preview)
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 ---
 
-# Globalization Studio workspace features
+# Globalization Studio workspace features (preview)
 
 [!INCLUDE[banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
