@@ -38,13 +38,13 @@ You can now import the Globalization solution by following these steps.
 
 ## Import configurations from Dataverse
 
-A new type of repository for getting ER configurations in Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Global repository enables. Therefore, you can import single and filtered configurations.
+A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Global repository enables. Therefore, you can import single and filtered configurations.
 
 ### Open the Dataverse configuration repository
 
 To open the Dataverse configuration repository, follow these steps.
 
-1. Sign in to the Finance app by using one of the following roles:
+1. Sign in to the Dynamics 365 Finance app by using one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -72,10 +72,10 @@ To import a single configuration, follow these steps.
 
 1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
 1. On the **Versions** FastTab, select the required version of the selected ER configuration.
-1. Select **Import** to download the selected version from the Global repository to the current Finance instance.
+1. Select **Import** to download the selected version from the Global repository to the current Dynamics 365 Finance instance.
 
     > [!NOTE]
-    > The **Import** button is unavailable for ER configuration versions that are already present in the current Finance instance.
+    > The **Import** button is unavailable for ER configuration versions that are already present in the current Dynamics 365 Finance instance.
 
 :::image type="content" source="media/gsw-config-repo.png" alt-text="Screenshot of the Configuration repository page, where a version of a configuration is selected for import.":::
 
@@ -86,7 +86,7 @@ To import filtered configurations, follow these steps.
 1. On the **Configuration repository** page, on the **Filter** FastTab, in the **Tags** grid, add any tags that are needed.
 1. In the **Country/region applicability** field, select the appropriate country/region codes.
 1. Select **Apply filter**.
-1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from the Global repository to the current Finance instance.
+1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from the Global repository to the current Dynamics 365 Finance instance.
 1. Select **Reset filter** to clean up the specified selection conditions.
 
 :::image type="content" source="media/gsw-config-repo-reset-filter.png" alt-text="Screenshot of the Configuration repository page, where a Country/region applicability filter is applied.":::
