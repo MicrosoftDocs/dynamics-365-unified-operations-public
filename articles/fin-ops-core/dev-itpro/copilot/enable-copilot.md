@@ -80,9 +80,6 @@ Follow these steps to enable your finance and operations apps to access your Dat
 
 ## Step 4: Install the Copilot application in your finance and operations apps environment
 
-> [!NOTE]
-> During the preview phase, the Copilot application can be installed only for environments on tenants that are hosted in the United States.
-
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 
 1. Open the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://aka.ms/dynamicsfnocopilot_scmaiapp) page in the Microsoft commercial marketplace.
