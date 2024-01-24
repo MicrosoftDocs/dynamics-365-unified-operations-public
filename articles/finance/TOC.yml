@@ -1610,6 +1610,10 @@
               items:
               - name: Submit electronic documents to Electronic Invoicing
                 href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
+              - name: Work with the Electronic documents submission log
+                href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+              - name: Work with the Electronic documents receiving log
+                href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
