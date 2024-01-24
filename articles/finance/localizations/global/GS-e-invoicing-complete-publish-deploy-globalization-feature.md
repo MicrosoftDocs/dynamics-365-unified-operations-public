@@ -60,7 +60,7 @@ When one electronic invoicing feature is derived from another, you can select **
 
 To rebase a derived version of a feature that you created, follow these steps.
 
-1. Get the latest version of the feature by importing it from the Global repository. For more information, see [Import feature from Global repository](e-invoicing-import-feature-global-repository.md).
+1. Get the latest version of the feature by importing it from the Global repository. For more information, see [Import features from the repository](GS-e-invoicing-import-feature-global-repository.md).
 2. In the list of features, select the feature to rebase.
 3. On the **Versions** tab, select **New** to create a draft version.
 4. Select **Rebase**.
@@ -71,5 +71,5 @@ To rebase a derived version of a feature that you created, follow these steps.
 
 ## Get a specific version of electronic invoicing features
 
-When you create a new version of an electronic invoicing feature, the system creates a copy of the latest feature version. To use an earlier version of the feature as the base for a new version, select the version, and then select **Get this version command**. A new draft version of the feature is created that is a copy of the selected version.
+When you create a new version of an electronic invoicing feature, the system creates a copy of the latest feature version. To use an earlier version of the feature as the base for a new version, select the version, and then select **Get this version** command. A new draft version of the feature is created that is a copy of the selected version.
 
