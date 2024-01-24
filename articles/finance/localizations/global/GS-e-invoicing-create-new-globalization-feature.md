@@ -54,7 +54,7 @@ To create an electronic invoicing feature, follow these steps.
 5. Select the electronic invoicing feature that you're working on.
 6. On the **Configurations** tab, select **Add**.
 7. In the **Configurations** grid, browse to and select the format configurations that are required for the processing pipeline (for example, to generate electronic invoice files or process responses from external web services).
-8. Select **OK**. You can now use the configurations in actions of the processing pipeline. For more information, see [Work with configurations](e-invoicing-work-configurations.md).
+8. Select **OK**. You can now use the configurations in actions of the processing pipeline. For more information, see [Work with configurations](GS-e-invoicing-work-configurations.md).
 9. To add an electronic invoicing feature setup, create it on the **Setups** tab of the **New feature** page. For more information, see [Work with feature setups](GS-e-invoicing-feature-setup.md).
 10. Complete the setup, and deploy the electronic invoicing feature to the service environment. For more information, see [Complete and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
