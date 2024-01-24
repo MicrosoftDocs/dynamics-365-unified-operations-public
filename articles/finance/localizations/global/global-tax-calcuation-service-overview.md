@@ -19,14 +19,12 @@ ms.search.form: TaxIntegrationTaxServiceParameters
 
 [!include [banner](../../includes/banner.md)]
 
-Tax Calculation is a hyper-scalable multitenant service that enables the global tax engine to automate and simplify the tax determination and calculation process. The tax engine is fully configurable. The elements that can be configured include, but aren't limited to, the taxable data model, tax code, tax applicability matrix, and tax calculation formula. The tax engine runs on the Microsoft Azure core services platform, and offers modern technology and exponential scalability.
-
-Tax Calculation integrates with Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Eventually, it will also integrate with Dynamics 365 Project Operations, Dynamics 365 Commerce, and other first-party and third-party applications.
+Tax Calculation helps to automate and simplify the tax determination and calculation process. The tax engine is fully configurable. The elements that can be configured include, but aren't limited to, the taxable data model, tax code, tax applicability matrix, and tax calculation formula. The tax engine runs on the Microsoft Azure core services platform, and offers modern technology and exponential scalability.
 
 > [!IMPORTANT]
 > When you enable Tax Calculation, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2156043) before you enable Tax Calculation. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-Tax Calculation is a microservice-based tax engine that offers exponential scalability and can help you perform the following tasks:
+Tax Calculation is a highly scalable tax engine designed to support you in performing the following tasks:
 
 - Automatically determine the correct sales tax group, item sales tax group, and tax codes through an enhanced determination mechanism.
 - Support multiple tax registration numbers in one legal entity, and automatically determine the correct tax registration number on taxable transactions.
@@ -38,6 +36,15 @@ Tax Calculation is a microservice-based tax engine that offers exponential scala
 - Support tax calculation parameters at the tax jurisdiction level.
 
 To use Tax Calculation, install the Tax Calculation add-in from your project in Microsoft Dynamics Lifecycle Services. Then complete the setup in [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/), and enable Tax Calculation in Finance and Supply Chain Management. For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
+
+> [!NOTE]
+> For new environments with 10.0.39 and higher version, installing of the TCS add-in in LCS won't be required.
+
+> [!IMPORTANT]
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39. ([More info](merge-rcs-to-gsw.md)
+>
+> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
+
 
 ## Availability
 
@@ -72,6 +79,8 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version               |
 | --------------- | --------------------------------------- |
+| 10.0.39         | Tax Calculation Configuration 40.65.249 |
+| 10.0.38         | Tax Calculation Configuration 40.61.246 |
 | 10.0.33         | Tax Calculation Configuration 40.60.244 |
 | 10.0.32         | Tax Calculation Configuration 40.60.244 |
 | 10.0.31         | Tax Calculation Configuration 40.56.240 |
