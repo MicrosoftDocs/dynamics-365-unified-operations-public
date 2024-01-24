@@ -40,10 +40,11 @@ You can create as many feature setup items as you require to define different sc
 5. If you selected the **Custom setup** option in the last step, enter a name and description of the feature setup item, and then, in the **Setup type** field group, select one of the following options:
 
     - **Processing pipeline** – Select this option to generate and process outbound electronic documents. For this setup type, the system creates an empty processing pipeline list, an empty section for applicability rules, and a default set of variables. You won't be able to work with the channels for inbound electronic documents.
-    - **Data channel** – Select this option to set up the process of receiving inbound electronic documents from one of the defined channels and passing them directly to Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management without additional actions. For this setup type, the system creates a predefined list of parameters for the data channels, an empty section for applicability rules, and a set of default variables. You won't be able to add any actions in the processing pipeline.
-    - **Data channel and processing pipeline** – This setup type resembles the **Data channel** setup type. However, before an inbound electronic document is passed to Finance or Supply Chain Management, you can set up additional actions in the processing pipeline.
+    - **Import channel** – Select this option to set up the process of receiving inbound electronic documents from one of the defined channels and passing them directly to Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management without additional actions. For this setup type, the system creates a predefined list of parameters for the data channels, an empty section for applicability rules, and a set of default variables. You won't be able to add any actions in the processing pipeline.
+    - **Import channel and processing pipeline** – This setup type resembles the **Import channel** setup type. However, before an inbound electronic document is passed to Finance or Supply Chain Management, you can set up additional actions in the processing pipeline.
+    - **Export channel and processing pipeline** – You can set up additional actions in the processing pipeline for outbound electronic documents being submittemd from Finance or Supply Chain Management.
 
-7. If you selected the **Data channel** or **Data channel and processing pipeline** option in the last step, in the **Select data channel** field, you must select the channel to integrate with.
+7. If you selected the **Import channel**, **Import channel and processing pipeline**, or **Export channel and processing pipeline** option in the last step, in the **Select data channel** field, you must select the channel to integrate with.
 8. Select **Create**.
 
 After a feature setup has been created, you can select **Edit** to configure it.
@@ -52,11 +53,11 @@ After a feature setup has been created, you can select **Edit** to configure it.
 
 Depending on the type of feature setup, you can configure the process of generating outbound electronic files and submitting them to external channels, or receiving inbound documents and passing them to your Finance or Supply Chain Management application.
 
-### Data channel
+### Import channel
 
-A *data channel* takes the electronic file, and either processes it or passes it directly to Finance or Supply Chain Management. This option isn't available for feature setups of the **Processing pipeline** type.
+A *import channel* takes the electronic file, and either processes it or passes it directly to Finance or Supply Chain Management. This option isn't available for feature setups of the **Processing pipeline** type.
 
-To set up a data channel, enter the name of the channel. Then define the parameters, based on the selected channel type. The data channel identifier must refer to the variable that is created specifically to identify the data channel. It will be used as a reference in Finance or Supply Chain Management.
+To set up an import channel, enter the name of the channel. Then define the parameters, based on the selected channel type. The import channel identifier must refer to the variable that is created specifically to identify the import channel. It will be used as a reference in Finance or Supply Chain Management.
 
 On the **Attachments filter** tab, you should define a set of filters to get specific files from the channel. You can create several lines if you expect that files will have different file name extensions, or if files must be processed differently depending on the file name. Here are the main parameters:
 
