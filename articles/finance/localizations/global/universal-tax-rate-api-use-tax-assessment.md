@@ -19,6 +19,8 @@ ms.search.form:
 
 # Use tax assessment
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 Use tax assessment is a feature that allows USA legal entities to calculate the tax liability for purchases that are subject to use tax. Use tax is a type of sales tax that applies when a taxable item is purchased from an out-of-state vendor or an online retailer that does not collect sales tax from the buyer. The buyer is responsible for paying the use tax to the state where the item is used, stored, or consumed. Accrue use tax helps US legal entities comply with the tax laws and regulations of their states by automatically generating use tax transactions based on the purchase transactions and the tax rates of the states.​
 
 1. Enable the **Accrue use tax** option to activate the use tax assessment related fields and functionalities in AP invoicing scenarios. Once enabled, the following fields and parameters shall be activated for use tax assessment.
