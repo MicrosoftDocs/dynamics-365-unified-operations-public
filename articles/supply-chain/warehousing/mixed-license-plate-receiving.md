@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Mixed license plate receiving
 description: This article describes how to use mixed license plate receiving to register and create work for multiple items with a mobile device.
 author: Mirzaab
-ms.date: 05/26/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269384
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy
+ms.topic: how-to
+ms.date: -1/29/2024
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Mixed license plate receiving
