@@ -99,3 +99,5 @@ For supported countries/regions details, contact your tax solution providers.
 
 - [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342)
 - [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
