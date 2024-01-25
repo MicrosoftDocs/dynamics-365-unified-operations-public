@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: License plate receiving via the Warehouse Management mobile app
 description: This article explains how to set up the Warehouse Management mobile app to support using a license plate receiving process to receive physical inventory.
 author: perlynne
-ms.date: 04/29/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
-ms.search.validFrom: 2020-03-31
-ms.dyn365.ops.version: 10.0.11
+ms.reviewer: kamaybac
+ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
+ms.topic: how-to
+ms.date: 01/29/2024
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # License plate receiving via the Warehouse Management mobile app
@@ -30,7 +18,7 @@ ms.dyn365.ops.version: 10.0.11
 
 This article explains how to set up the Warehouse Management mobile app so that it supports using a license plate receiving process to receive physical inventory.
 
-You can use this functionality to quickly record the receipt of inbound inventory that is related to an advance ship notice (ASN). The system automatically creates an ASN when warehouse management processes (WMS) are used to ship a transfer order. For the purchase and inbound shipment order processes, an ASN can be manually recorded, or it can be automatically imported by using an inbound ASN data entity process.
+You can use this functionality to quickly record the receipt of inbound inventory that is related to an advance ship notice (ASN). The system automatically creates an ASN when warehouse management processes (WMS) are used to ship a transfer order. For the purchase order and inbound shipment order processes, an ASN can be manually recorded, or it can be automatically imported by using an inbound ASN data entity process.
 
 The ASN data is linked to loads and shipments via the *packing structures*, where pallets (parent license plates) can contain cases (nested license plates).
 
@@ -57,8 +45,9 @@ You can use the license plate receiving process without creating work. If you de
 - *License plate receiving and put away*
 
 > [!NOTE]
+>
 > - You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
-> - The **Print label** option for Warehousing mobile device menu items won't print a license plate label without work creation. You can though print a license plate label as part of the [deferred receiving process](#use-of-deferred-receiving).
+> - The **Print label** option for mobile device menu items won't print a license plate label without work creation. However, you can print a license plate label as part of the [deferred receiving process](#deferred-receiving).
 
 To make this functionality available on your system, you must turn on the *License plate receiving enhancements* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.
 
@@ -97,21 +86,16 @@ To manage the functionality when this feature is available, follow these steps.
     - **Allow reuse of non-tracked license plate** – The system works the same way that it works when the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature isn't available. This value is the default setting when you first activate the feature.
     - **Prevent reuse of non-tracked license plate** – Only on-hand updates that are related to a shipped license plate will be allowed at the destination warehouse until the transfer order has been received.
 
-## <a name="use-of-deferred-receiving"></a>Use of deferred receiving processing
+## <a name="deferred-receiving"></a>Deferred receiving processing
 
 For businesses using the *License plate receiving* process to inbound receive thousands of lines related to the same license plate, the warehouse management mobile app receiving process must wait until all the lines and related work has been created as part of the registration process; unless using the [deferred receiving option](mixed-license-plate-receiving.md#deferred-receiving-processing) which will postpone the registration processes as part of a background process and thereby enable the the warehouse workers to immediately continue to do other work.
 
 ## More information
 
-For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
-
-For more information about work policies, see [work policies](warehouse-work-policies.md).
-
-For more information about deferred receiving, see [mixed license plate receiving](mixed-license-plate-receiving.md#deferred-receiving-processing).
-
-For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
-
-For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).
-
+- For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+- For more information about work policies, see [work policies](warehouse-work-policies.md).
+- For more information about deferred receiving, see [mixed license plate receiving](mixed-license-plate-receiving.md#deferred-receiving-processing).
+- For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+- For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

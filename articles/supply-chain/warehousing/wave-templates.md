@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Wave templates
 description: This article describes how to set up the criteria that determine whether waves are processed manually or automatically, and the work that is generated for a warehouse when a wave is processed.
 author: Mirzaab
-ms.date: 03/08/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: 10.0.18
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 01/29/2024
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Wave templates
@@ -42,6 +29,8 @@ When you set up a wave template, you specify the following:
 
 > [!NOTE]
 > If needed, a developer can create additional methods. You can view the full list of methods on the **Wave process methods** page.
+
+<!--KFM: continue here -->
 
 Some settings represent strategic decisions for wave processing, as follows:
 
