@@ -29,6 +29,8 @@ search.app:
 
 # Configure your environment with a dedicated Data Management Framework service.
 
+[!include[banner](../includes/banner.md)]
+
 You can have dedicated nodes that contain SSIS, or you can install SSIS on other node types. If you want dedicated SSIS nodes, specify which machines host the node type by filling in the details for that node in the ConfigTemplate.xml file.
 
 If your use of DMF is low, you might choose not to have dedicated nodes. Instead, you can choose which nodes have SSIS installed by updating the **hasSSIS** attribute to **true** for each VM in the **ServiceFabricCluster** section of your ConfigTemplate.xml file. In this case, you should set the **disabled** attribute to **true** for the **SSISNodeType** node type in your ConfigTemplate.xml file.
@@ -103,5 +105,7 @@ You can follow the guide to [Add an SSIS node to an existing environment](./ssis
 
 1. Using the **Apply updates** option in Lifecycle Services, apply an update to the environment. The servicing flow automatically enables/deploys the new DMF service.
 
-[!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
