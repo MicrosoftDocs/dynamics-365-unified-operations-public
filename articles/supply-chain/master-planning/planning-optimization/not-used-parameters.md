@@ -85,7 +85,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **General** FastTab:
 
   - **Include continuity plan** – Not supported by Planning Optimization.
-  - **Backward scheduling capacity time fence** – Not supported by Planning Optimization.
   - **Capacity time fence for bottleneck resources** – This field will no longer be supported by Planning Optimization because we detected that customers weren't using it.
   - **Planned orders** – Planning Optimization uses fixed number sequences.
   - **Session** – Planning Optimization uses fixed number sequences.
@@ -94,7 +93,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **Time fences in days** FastTab:
 
   - **Freeze** – *Freeze time fence* isn't yet supported by Planning Optimization.
-  - **Explosion** – Not supported by Planning Optimization.
   - **Forecast plan** – Not supported by Planning Optimization.
   - **Continuity plan** – Not supported by Planning Optimization.
   - **Calculated delays** – This parameter isn't considered. Calculated delays are created for the **coverage time fence (days)**.
