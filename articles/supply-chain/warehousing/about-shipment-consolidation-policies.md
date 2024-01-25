@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: Shipment consolidation policies overview
 description: This article provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
 author: Mirzaab
-ms.date: 05/12/2020
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry:
 ms.author: mirzaab
-ms.search.validFrom: 2020-05-01
-ms.dyn365.ops.version: 10.0.3
-
+ms.reviewer: kamaybac
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
+ms.topic: overview
+ms.date: 01/29/2024
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Shipment consolidation policies overview
@@ -35,7 +21,7 @@ The shipment consolidation process that uses shipment consolidation policies all
 Shipment consolidation policies are used for the following functionality:
 
 - The automated release-to-warehouse batch jobs
-- The **Release to warehouse** command in a sales order, transfer order, and outbound shipment orders
+- The **Release to warehouse** command on a sales order, transfer order, or outbound shipment order
 - The dedicated **Release to warehouse** pages
 - The **Release to warehouse** command on the **Outbound load planning workbench** page
 - The manual consolidation of shipments on the **Consolidate shipments** and **Shipment consolidation workbench** pages
