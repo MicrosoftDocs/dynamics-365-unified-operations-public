@@ -17,6 +17,8 @@ ms.dyn365.ops.version:
 ---
 # Configure a tax solution provider
 
+[!INCLUDE[banner](../../includes/banner.md)]
+
 This article explains how to configure tax solution provider section for Tax calculation. After completing the steps following the implementation guidance of your tax rate provider, select your tax feature setup in the **Tax calculation parameters** for the corresponding legal entity.
 
 To configure your tax solution provider, follow these steps.
@@ -34,3 +36,5 @@ To configure your tax solution provider, follow these steps.
     >For an accurate location-based tax calculation, the addresses in the master data shall be validated and corrected by your tax rate provider. Once enabled, the **Validate** button is available when you add or maintain the addresses in the master data.
     >In **Organization administration** \> **Global address book** \> **Global address book** under the **Registration** tab, select **Address validation** for a batch mode validation.
 8. For US legal entities, enable the **Accrue use tax** option, and maintain the fields in the **OVERCHARGE TOLERANCE** group to activate the assessment and processing of vendor charged sales taxes for AP invoicing scenarios. For more information, see [Use tax assessment](./universal-tax-rate-api-use-tax-assessment.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
