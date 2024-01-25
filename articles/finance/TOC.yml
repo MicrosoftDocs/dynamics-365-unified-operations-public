@@ -1608,6 +1608,8 @@
                 href: localizations/global/e-invoicing-process-incoming-electronic-documents.md
               - name: Configure an email channel
                 href: localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/finance
+              - name: Configure an email channel for Office 365 Exchange Online
+                href: localizations/global/GSe-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
               - name: Configure a SharePoint channel
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
             - name: Electronic Invoicing service ISV last-mile connector
