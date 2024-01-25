@@ -220,7 +220,7 @@ This section provides information that will help you set up and configure the pr
     4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the **App Registration Certificate** .cer file for S2S authentication.
     5. Go to **Enterprise applications**, and select the app that you created.
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
-    7. Microsoft must grant the app access to the service. Submit a support request with Microsoft and include the values of following parameters:
+    7. Microsoft must grant the app access to the service. Submit a support request to Microsoft, and include the values of the following parameters:
 
         - AAD Tenant ID
         - LCS Environment ID
