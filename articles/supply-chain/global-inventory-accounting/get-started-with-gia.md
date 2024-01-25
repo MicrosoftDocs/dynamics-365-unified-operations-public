@@ -101,8 +101,9 @@ Follow these steps to set up the integration between Global Inventory Accounting
 1. Sign in to Supply Chain Management.
 1. Go to **System administration \> Feature Management**.
 1. Select **Check for updates**.
-1. On the **All** tab, search for the feature that is named *Global inventory accounting*.
-1. Select **Enable now**.
+1. On the **All** tab, turn on one or both of the following features:
+    - *Global inventory accounting* – Provides basic Global Inventory Accounting functionality. You must enable this to use Global Inventory Accounting.
+    - *(Preview) Evaluate costs in discrete manufacturing using standard cost in Global Inventory Accounting* – Adds the ability for discrete manufacturing companies to perform parallel inventory accounting practices for standard cost using multiple configurations. (This is a preview feature. It requires Supply Chain Management version 10.0.38 or later.)
 1. Go to **Global inventory accounting \> Setup \> Global inventory accounting parameters \> Integrations parameters**.
 1. Depending on which version of Supply Chain Management you're running, do one of the following steps:
     - **Supply Chain Management version 10.0.19 to 10.0.26**: In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs that were sent to you by email from the Global Inventory Accounting team (see also [How to get the Global Inventory Accounting add-in](#sign-up)).
