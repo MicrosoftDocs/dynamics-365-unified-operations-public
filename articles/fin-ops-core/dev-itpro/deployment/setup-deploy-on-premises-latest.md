@@ -508,7 +508,7 @@ To enable data management and SSIS workloads, you must install SSIS on at least 
 > [!IMPORTANT]
 > For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available, and data management operations will be performed by the AOS.
 
-For information on configuring the DMF service, see [Configure your environment with a dedicated Data Management Framework service](onprem-DMFService.md)
+For information about how to configure the DMF service, see [Configure your environment with a dedicated Data Management Framework service](onprem-DMFService.md).
 
 1. After you've decided which VMs need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
 1. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
