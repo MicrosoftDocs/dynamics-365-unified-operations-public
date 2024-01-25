@@ -69,7 +69,7 @@ We have recently added or significantly updated the following help articles. The
 | Master planning | [Safety stock pegging options](../master-planning/safety-stock-pegging.md) |
 | Sales and marketing | [Calculate sales totals when prices include sales tax](../sales-marketing/sales-tax-calculation.md) |
 | Warehouse management | [Set up a mobile device menu item for moving items in the warehouse](../warehousing/mobile-device-movement-menu.md) |
-| Warehouse management | [Warehouse management only mode overview (preview)](../warehousing/wms-only-mode-overview.md) – This preview functionality is receiving regular updates throughout the preview period, and this article and its related articles receive multiple updates to match the changes released with each version. |
+| Warehouse management | [Warehouse management only mode overview (preview)](../warehousing/wms-only-mode-overview.md) – The preview functionality described in this article and its related articles is updated frequently. The documentation is regularly updated to match the changes released with each version of Supply Chain Management. |
 
 ## Additional resources
 
