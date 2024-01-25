@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Material handling equipment interface (MHAX)
 description: This article describes how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMHEInboundQueue, WMHEOutboundQueue
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2021-03-04
-ms.dyn365.ops.version: 10.0.17
+ms.reviewer: kamaybac
+ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMHEInboundQueue, WMHEOutboundQueue
+ms.topic: how-to
+ms.date: 01/29/2024
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Material handling equipment interface (MHAX)

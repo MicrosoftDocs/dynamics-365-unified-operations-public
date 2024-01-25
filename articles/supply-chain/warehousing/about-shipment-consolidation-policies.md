@@ -32,7 +32,7 @@ Queries are used to identify the shipment consolidation policy that applies, and
 
 When the *Shipment consolidation policies* feature is turned on for your system, the **Consolidate shipment at release to warehouse** setting that was previously available on the **Warehouses** setup page is hidden. To help you transition to the new shipment consolidation feature, a function on the **Shipment consolidation policies** page lets you create a default policy that automatically includes the old setting for existing warehouses. After that default policy is created, the **Consolidate shipment at release to warehouse** setting on the **Warehouses** setup page will no longer be considered. For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
 
-You can use the **Release [oot load prder type] to warehouse** pages to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
+You can use the various **Release to warehouse** pages to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
 
 You can use the **Release \> Release to warehouse** command on the **Outbound load planning workbench** page to build outbound loads that are based on sales, transfer, and outbound shipment order lines before you do the release to the warehouse. These loads use the same consolidation logic that was introduced together with the consolidation of shipment policies.
 
@@ -56,34 +56,34 @@ The following list shows the mandatory fields. Because shipments are always spli
 
 - For sales orders:
 
-    - **Account number:** _WHSShipmentTable.AccountNum_
-    - **Delivery recipient:** _WHSShipmentTable.DeliveryName_
-    - **Postal address (RecId):** _WHSShipmentTable.DeliveryPostalAddress_
-    - **Warehouse:** _WHSShipmentTable.InventLocationId_
+    - **Account number:** *WHSShipmentTable.AccountNum*
+    - **Delivery recipient:** *WHSShipmentTable.DeliveryName*
+    - **Postal address (RecId):** *WHSShipmentTable.DeliveryPostalAddress*
+    - **Warehouse:** *WHSShipmentTable.InventLocationId*
 
 - For transfer orders:
 
-    - **From warehouse:** _InventTransferTable.InventLocationIdFrom_
-    - **To warehouse:** _InventTransferTable.InventLocationIdTo_
+    - **From warehouse:** *InventTransferTable.InventLocationIdFrom*
+    - **To warehouse:** *InventTransferTable.InventLocationIdTo*
 
 - For outbound shipment orders:
 
-    - **Account number:** _WHSShipmentTable.AccountNum_
-    - **Delivery recipient:** _WHSShipmentTable.DeliveryName_
-    - **Postal address (RecId):** _WHSShipmentTable.DeliveryPostalAddress_
-    - **Warehouse:** _WHSShipmentTable.InventLocationId_
-    - **Source system:** _WHSShipmentTable.SourceSystem_
+    - **Account number:** *WHSShipmentTable.AccountNum*
+    - **Delivery recipient:** *WHSShipmentTable.DeliveryName*
+    - **Postal address (RecId):** *WHSShipmentTable.DeliveryPostalAddress*
+    - **Warehouse:** *WHSShipmentTable.InventLocationId*
+    - **Source system:** *WHSShipmentTable.SourceSystem*
 
 The following fields are unavailable for all document types. These fields aren't visible in the user interface (UI), and they can't be used for consolidation.
 
-- **Shipment ID:** _WHSShipmentTable.ShipmentId_
-- **Status:** _WHSShipmentTable.ShipmentStatus_
-- **Shipment consolidation policy:** _WHSShipmentTable.ShipConsolidationPolicyName_
-- **Work transaction type:** _WHSShipmentTable.WorkTransType_
-- **Wave ID:** _WHSShipmentTable.WaveId_
-- **Load ID:** _WHSShipmentTable.LoadId_
-- **Shipment ID:** _WHSLoadLine.ShipmentId_
-- **Load ID:** _WHSLoadLine.LoadId_
+- **Shipment ID:** *WHSShipmentTable.ShipmentId*
+- **Status:** *WHSShipmentTable.ShipmentStatus*
+- **Shipment consolidation policy:** *WHSShipmentTable.ShipConsolidationPolicyName*
+- **Work transaction type:** *WHSShipmentTable.WorkTransType*
+- **Wave ID:** *WHSShipmentTable.WaveId*
+- **Load ID:** *WHSShipmentTable.LoadId*
+- **Shipment ID:** *WHSLoadLine.ShipmentId*
+- **Load ID:** *WHSLoadLine.LoadId*
 
 By default, when you create a policy, the set of mandatory fields is used as the consolidation fields. However, you can modify the list by using left arrow and right arrow buttons. (The process resembles the process for selecting methods in wave templates.)
 
