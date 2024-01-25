@@ -47,7 +47,7 @@ You can add pretriggers for the service requests that you want your extension pa
 For example, when you create a new discount package, you can add a pretrigger to the CalculateDiscountsServiceRequest service request and call `PricingEngineExtensionRepository.RegisterDiscountPackage(new DiscountPackage());` inside the pretrigger.
 
     > [!NOTE]
-    > When you're replacing the out of box handlers for `CalculateDiscountsServiceRequest`, make sure to mark `request.Transaction.IsDiscountFullyCalculated` as true when the discounts are calculated. Failing to do so may block the checkout of the transaction with error similar to "Transaction totals must be calculated before checkout."
+    > When you're replacing the out of box handlers for **CalculateDiscountsServiceRequest**, make sure to mark **request.Transaction.IsDiscountFullyCalculated** as true when the discounts are calculated. Failing to do so may block the checkout of the transaction with error similar to **Transaction totals must be calculated before checkout**.
 
 ### Finance and operations apps
 
