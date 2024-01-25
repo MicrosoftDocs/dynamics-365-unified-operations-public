@@ -4,7 +4,7 @@
 title: Collections coordinator workspace
 description: This article describes the Collections coordinator overview and workspace, including the aged balances and customer timeline summary.
 author: JodiChristiansen
-ms.date: 06/04/2023
+ms.date: 01/25/2024
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ Each grid is independent of the others but will only display customers from the 
 
 ## Collections coordinator workspace 
 
-This page was updated in version 10.0.39 to have separate tabs for Open transactions, Disputed inovices, Promised to pay and Unsettled payments. The **Overview** tab shows the AI-generated text if the **Collections coordinator summary feature** is enabled. The **Create reminder email** button drafts an AI-generated email. For more information see the [Collections coordinator summary](tasks/collectionscoordinatorsummary.md#collections-coordinator-summary) page. The aged balances chart shows the aging bucket summary of current and overdue amounts.
+This page was updated in version 10.0.39 to have separate tabs for Open transactions, Disputed inovices, Promised to pay and Unsettled payments. The **Overview** tab shows the AI-generated text if the **Collections coordinator summary feature** is enabled. The **Create reminder email** button drafts an AI-generated email. For more information, see [Collections coordinator summary](collectionscoordinatorsummary.md) page. The aged balances chart shows the aging bucket summary of current and overdue amounts.
 
 The **Open transactions** tab shows the customer transactions that haven't been fully settled. Collections options on this page include **Change status**, **NSF payment**, **Write-off**, **Settle**, **Reprint**, and **View collections history**. These options are the same options that are available on the [View customer collections details](tasks/review-collections-information.md#view-aged-customer-balances) page. For clarity, the **Due date** column has been added for transactions. The **Disputed invoices** tab shows any open transactions where the collections status has been updated to Disputed. The **Promised to pay** tab shows any open transactions where the collections status has been updated to Promised to pay. The **Unsettled payments** tab shows any payments for the customer that have been posted but not settled against an invoice. 
 
