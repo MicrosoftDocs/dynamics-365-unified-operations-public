@@ -39,3 +39,5 @@ Use tax assessment is a feature that allows USA legal entities to calculate the 
 This option is available after you enabled the **Adjust sales tax amount per vendor charged sales tax** feature (in 10.0.39 and above). Select this option when you want to fully accept the vendor charged sales tax amount. It creates the sales tax adjustment transaction which overrides the tax calculation result.
 > [!NOTE]
 > The **Adjust sales tax amount per vendor charged sales tax** feature is a standalone core feature which does not depend on enabling the **tax solution provider**. You can enable the feature to activate **Vendor charged sales tax** and **Accrue sales tax type** already without connecting to an external tax solution provider.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
