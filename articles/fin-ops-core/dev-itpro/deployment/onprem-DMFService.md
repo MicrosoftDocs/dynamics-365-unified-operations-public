@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure your environment with a dedicated Data Management Framework service.
+title: Configure your environment with a dedicated Data Management Framework service
 description: This article explains how to configure environments to use dedicated a separate service for the Data Management Framework.
 author: faix
 ms.date: 01/21/2024
