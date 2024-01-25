@@ -1576,6 +1576,16 @@
             items: 
             - name: Setting up Electronic Invoicing
               href: localizations/global/GS-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
+            - name: Set up Azure Resources
+              items:
+              - name: Set up Azure resources for Electronic invoicing
+                href: localizations/global/GS-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
+              - name: Create an Azure Key Vault in the Azure portal
+                href: localizations/global/GS-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
+              - name: Create an Azure storage account in the Azure portal
+                href: localizations/global/GS-e-invoicing-create-azure-storage-account-azure-portal.md
+              - name: Configure a SharePoint connection
+                href: localizations/global/GS-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
