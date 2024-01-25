@@ -3221,7 +3221,7 @@
               - name: Define asset idle period and validate depreciation process
                 href: localizations/japan/define-asset-idle-period-validate-depreciation-process.md
               - name: Use assemble list for fixed assets
-                href: localizations/japan/tasks/use-assemble-list-fixed-asset.md
+                href: localizations/japan/use-assemble-list-fixed-asset.md
               - name: Use disassemble list for fixed assets
                 href: localizations/japan/use-disassemble-list-fixed-assets.md          
             - name: Accelerated depreciation
