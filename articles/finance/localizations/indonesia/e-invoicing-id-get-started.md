@@ -21,11 +21,12 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article will help you get started with Electronic invoicing for Indonesia. The article provides the configuration steps that are country/region-dependent in the Regulatory Configuration Service (RCS) and Dynamics 365 Finance. You'll be guided through the steps you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
+This article will help you get started with Electronic invoicing for Indonesia. The article provides the configuration steps that are country/region-dependent in the Regulatory Configuration Service (RCS) and Microsoft Dynamics 365 Finance. You'll be guided through the steps you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
 
 ## Prerequisites
 
 Before you use the invoicing functionality, the following prerequisites must be met:
+
 - Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
@@ -34,8 +35,8 @@ Before you use the invoicing functionality, the following prerequisites must be 
     - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
     - [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md)
 
-- In Microsoft Dataverse, configure virtual entities for Finance and Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
-- Enable the **BusinessDocumentTaxGroupHeadingEntity** and **BusinessDocumentTaxTableEntity** virtual entity. For more information, see [Enable Microsoft Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
+- In Dataverse, configure virtual entities for Dynamics 365 Finance and Dynamics 365 Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
+- Enable the **BusinessDocumentTaxGroupHeadingEntity** and **BusinessDocumentTaxTableEntity** virtual entities. For more information, see [Enable Microsoft Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
 ### Set up RCS
 
@@ -173,19 +174,20 @@ To configure the Vendor invoice feature setup, you should already have created a
 4. Select **Global resource** \> **Open**.
 5. Import the following configurations:
 
-    - Customer invoice context model      
+    - Customer invoice context model
     - Invoices Communication Model
     - Vendor invoice Mapping to destination
     - Vendor invoice import (ID), Vendor invoice import XML (ID)
 
 ### Turn on the feature for processing Indonesian electronic invoices
 
-1. Go to **Feature management** and enable feature **Electronic document batch submission**.
-2. The **Electronic document batch submission** feature can't be enabled if the feature **Electronic Invoicing integration using Microsoft Dataverse** is already enabled, please disable the latter to proceed.
-3. Additionally, the **Electronic documents configuration per legal entities in Electronic Invoicing** feature can be enabled to allow configuring Electronic document parameters on a legal entity basis.
-4. To enable electronic invoice integration for **Indonesia**, go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-5. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
+1. In the **Feature management** workspace, disable the **Electronic Invoicing integration using Microsoft Dataverse** feature if it's enabled. Then enable the **Electronic document batch submission** feature.
 
+    > [!IMPORTANT]
+    > The **Electronic document batch submission** feature can't be enabled if the **Electronic Invoicing integration using Microsoft Dataverse** feature is already enabled.
+
+2. If you want to be able to configure Electronic document parameters on a legal entity basis, enable the **Electronic documents configuration per legal entities in Electronic Invoicing** feature.
+3. To enable electronic invoice integration for Indonesia, go to **Organization administration** \> **Setup** \> **Electronic document parameters**, and then, on the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
 
 ### Set up the processing for Indonesian electronic sales invoices
 
@@ -244,7 +246,7 @@ When issued invoices or imported vendor invoices are processed through Electroni
 ### Submit or export issued invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. To export invoices in batch, set the **Submit document batch** option to **Yes**. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+2. To export invoices in a batch, set the **Submit document batch** option to **Yes**. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
 3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for export.
 
 ### View submission logs
