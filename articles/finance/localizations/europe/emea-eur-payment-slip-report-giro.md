@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 264604
 ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 # ms.search.industry: 
 ms.author: mrolecki

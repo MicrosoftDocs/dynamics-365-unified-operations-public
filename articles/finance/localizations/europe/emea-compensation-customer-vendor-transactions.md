@@ -18,7 +18,6 @@ audience: Application User
 ms.reviewer: kfend
 #ms.suite: 
 # ms.tgt_pltfrm: 
-ms.custom: 1691503
 ms.search.region: Hungary, Poland
 # ms.search.industry: 
 ms.author: mrolecki

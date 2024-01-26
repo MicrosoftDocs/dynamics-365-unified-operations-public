@@ -17,7 +17,6 @@ ms.search.validFrom: 2017-06-30
 # Coupons
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of coupon-related capabilities in Microsoft Dynamics 365 Commerce.
 

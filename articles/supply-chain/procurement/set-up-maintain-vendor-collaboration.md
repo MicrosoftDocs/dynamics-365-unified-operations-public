@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,6 +29,7 @@ ms.dyn365.ops.version: Version 1611
 # Set up and maintain vendor collaboration
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 

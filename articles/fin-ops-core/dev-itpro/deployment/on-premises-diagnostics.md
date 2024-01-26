@@ -4,7 +4,6 @@ description: This article provides information about how to expose the diagnosti
 author: faix
 ms.date: 04/05/2021
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,7 +12,7 @@ ms.author: osfaixat
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

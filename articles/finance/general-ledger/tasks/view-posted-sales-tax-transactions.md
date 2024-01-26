@@ -35,6 +35,9 @@ This article describes some ways to view posted sales tax transactions. You can 
 2. Select **Show filters** to narrow the view to specific transactions.
 3. Close the page.
 
+> [!NOTE]
+> The **Delete** action isn't allowed for Posted sales tax transactions.
+
 ## Sales tax settlement periods page
 
 1. In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.

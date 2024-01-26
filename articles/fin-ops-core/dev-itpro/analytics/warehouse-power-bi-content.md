@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.form: WHSWarehousePerformancePowerBI
 ---

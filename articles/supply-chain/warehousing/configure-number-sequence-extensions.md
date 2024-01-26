@@ -56,10 +56,10 @@ To set up number sequence extensions in your system, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **General** tab, in the **GS1 company prefix** field, and enter your company's GS1 prefix. This value will affect all number sequences where the GS1 prefix is included as a segment.
-1. If you want to generate BOL numbers for wave labels, on the **Reports** tab, select the **Generate BOL number when printing wave labels** check box.
+1. If you want to generate BOL numbers for wave labels, on the **Reports** tab, select the **Generate BOL number when printing wave labels** checkbox.
 
     > [!NOTE]
-    > This check box is available only if the functionality for [wave label printing](configure-wave-label-printing.md) is turned on.
+    > This checkbox is available only if the functionality for [wave label printing](configure-wave-label-printing.md) is turned on.
 
 1. Go to **Warehouse management** \> **Setup** \> **Number sequence extensions**
 1. On the Action Pane, select **Create default setup**. A GS1-compliant BOL number sequence and three types of SSCC number sequences are created. All these number sequences take the length of your company's GS1 prefix into account.
@@ -90,7 +90,7 @@ To create and edit number sequences, follow these steps.
     | Constant | This segment type adds the same constant text for each generated number in the sequence. In the **Value** field, enter the required text. The **Length** field is automatically updated to the length of the text that you entered in the **Value** field. |
     | Number sequence | In the **Value** field, enter a number sign (*\#*) for each character that should be shown in the generated sequence. The number sequence itself might generate longer numbers, but only the right-most characters will be shown. The **Length** field is automatically updated to the number of number signs that you entered in the **Value** field.<p>To comply with GS1 requirements for SSCC-18 numbers, make sure that the length of this segment is 16 minus the length of your GS1 prefix.</p> |
     | GS1 prefix | This segment type adds the value that is set in the **GS1 company prefix** field on the **Warehouse management parameters** page. The **Value** field shows the value that is set on the **Warehouse management parameters** page, and the **Length** field shows the number of characters in the value. Both the **Value** field and the **Length** field are read-only. |
-    | Application identifier | In the **Value** field, enter an application identifier, as specified by the relevant GS1 policy for this type of number sequence. For example, enter *00* for SSCC or *420* for BOL. The **Length** field is automatically updated to the length of the identifier that you entered in the **Value** field. |
+    | Application identifier | In the **Value** field, enter an application identifier, as specified by the relevant bar code data policy for this type of number sequence. For example, enter *00* for SSCC or *420* for BOL. The **Length** field is automatically updated to the length of the identifier that you entered in the **Value** field. |
     | Packing type | For items that can be clearly identified, this segment type adds a field value from the relevant unit sequence group (from the **Unit sequence groups** page). (This behavior matches the existing logic for license plate IDs.) For license plates that include multiple stock keeping units (SKUs), this segment type adds *0* (zero) by default. For this segment type, the **Value** field is always set to *P*, and the **Length** field is always set to *1*.|
     | Check digit | This segment type adds a check digit, which is a modulo 10 calculation. (This behavior matches the existing logic for license plate IDs.) For this segment type, the **Value** field is always set to a caret (*^*), and the **Length** field is always set to *1*. |
 

@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: Release 10.0.25
-ms.custom: 220314
 ms.assetid: 
 ms.search.form: ERSolutionTable, ERImportFormatSourceTable, ERWorkspace
 ---

@@ -33,9 +33,9 @@ To generate a new forecast by running an existing forecast profile, follow these
     The details page for the selected profile appears. It contains the following tabs:
 
     - **Summary** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with.
-    - **Horizon and time buckets** – This tab shows the granularity (bucket size) that the forecast will be made at (daily, weekly, or monthly) and the number of buckets that will be included in the forecast. You can modify the selections as you require. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-and-manage-forecast-profiles) section.
-    - **Input data** – This tab shows the full list of available time series and indicates which of them are used by the profile. You can change the selections as you require. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-and-manage-forecast-profiles) section.
-    - **Forecast model** – This tab shows the forecast calculation that the profile does. It uses a flowchart of interconnected tiles. Each tile does a specific type of operation and has settings that let you define how that operation works. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-and-manage-forecast-profiles) section.
+    - **Horizon and time buckets** – This tab shows the granularity (bucket size) that the forecast will be made at (daily, weekly, or monthly) and the number of buckets that will be included in the forecast. You can modify the selections as you require. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-profile) section.
+    - **Input data** – This tab shows the full list of available time series and indicates which of them are used by the profile. You can change the selections as you require. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-profile) section.
+    - **Forecast model** – This tab shows the forecast calculation that the profile does. It uses a flowchart of interconnected tiles. Each tile does a specific type of operation and has settings that let you define how that operation works. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-profile) section.
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, and the time series that was generated. Select a link in the **Time Series** column to open the time series.
 
 1. To run the profile, select **Run** on the Action Pane.
@@ -47,7 +47,7 @@ To generate a new forecast by running an existing forecast profile, follow these
 1. Select **Save and close**.
 1. The new job is added to the grid on the **Jobs** tab. There, you can follow the status of the new calculation. To update the status information, select **Refresh** on the grid toolbar.
 
-## Create and manage forecast profiles
+## <a name="create-profile"></a> Create and manage forecast profiles
 
 Each time that your organization requires a new type of forecast, a manager or admin must create a new forecast profile. After the profile is created, it becomes available to users, who can run it as often as they require.
 

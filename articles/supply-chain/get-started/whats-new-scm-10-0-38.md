@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
+title: What's new or changed in Dynamics Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.38. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,18 +12,15 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
+# What's new or changed in Dynamics Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.38. This version has a build number of 10.0.1777 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.38. This version has a build number of 10.0.1777 and is available on the following schedule:
 
 - **Preview of release:** October 2023
 - **General availability of release (self-update):** December 2023
 - **General availability of release (auto-update):** February 2024
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Features included in this release
 
@@ -31,17 +28,23 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Copilot and AI innovation | [Add an AI inventory chatbot to your app or website](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/add-natural-language-inventory-chatbot-third-party-app-or-website) | [Inquire into inventory with Copilot](../inventory/inventory-visibility-copilot-api.md) | Enabled by default |
+| Copilot and AI innovation | [Empower users with conversational product help and guidance](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/empower-users-conversational-product-help-guidance) | [Generative help and guidance with Copilot (preview)](../../fin-ops-core/fin-ops/copilot/copliot-generative-help.md) | [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copliot-generative-help.md) |
+| Copilot and AI innovation | [Use natural language to check inventory with Copilot](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/use-natural-language-check-inventory-copilot) | [Inquire into inventory with Copilot](../inventory/inventory-visibility-copilot-api.md) | Enabled by default |
 | Cost management | [Evaluate discrete manufacturing costs using standard cost](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/evaluate-costs-discrete-manufacturing-using-standard-cost) |  This enhancement for the Global Inventory Accounting enables discrete manufacturing companies to perform parallel inventory accounting practices for standard cost using multiple configurations. Though it's possible to enable this feature in Supply Chain Management 10.0.38, we recommend against doing so until further notice because additional service upgrades are still required (expected in early 2024). | Feature management:<br>*(Preview) Evaluate costs in discrete manufacturing using standard cost in Global Inventory Accounting*  |
-| Inventory and logistics | [Apply compound charges to quotations and sales orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/apply-compound-charges-quotations-sales-orders) | *Coming soon* |  <p>Feature&nbsp;management:</p><ul><li>*Period charges*</li><li>*Sequence and compound for customer charges*</li><li>*Unit of measure for line level charges*</li></ul> |
+| Inventory and logistics | [Apply compound charges to quotations and sales orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/apply-compound-charges-quotations-sales-orders) | [Period charges](../sales-marketing/period-charges.md)<br><br> [Autocharge compounding and sequencing](../sales-marketing/auto-charge-sequence-compound.md)<br><br>[Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md) |  <p>Feature&nbsp;management:</p><ul><li>*Period charges*</li><li>*Sequence and compound for customer charges*</li><li>*Unit of measure for line level charges*</li></ul> |
 | Inventory and logistics | [Enhanced order processing in Pricing management](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enhanced-order-processing-pricing-management) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [Find products and on-hand information by attribute](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/find-products-on-hand-information-attribute) | [Search for products using the Inventory Visibility app](../inventory/inventory-visibility-product-search-app.md)<br><br>[Query with product search](../inventory/inventory-visibility-api.md#product-search-query) (API) | Enabled by default |
+| Inventory and logistics | [Integrate transportation management with Microsoft Cloud for Sustainability](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-transportation-management-cloud-sustainability) | [Integrate with Microsoft Sustainability Manager](../transportation/sustainability-manager-integration-setup.md) | Feature management:<br>*Integrate Microsoft Sustainability Manager with transportation management* |
+| Inventory and logistics | Log and view successful API posts in Inventory Visibility | [Log and view successful API posts](../inventory/inventory-visibility-track-inventory-log-history.md) | Enabled by default |
 | Inventory and logistics | [Manage prices with the pricing management workspace](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-prices-pricing-management-workspace) | Provides a pricing management workspace, which lets sales managers know about impending price rule status changes and supports their choice to modify pricing policies. Sales managers can perform light tasks to enable or disable the pricing rules without leaving the workspaces. | Feature management:<br>*(Preview) Pricing management workspace* |
-| Inventory and logistics | [View and manage inventory with a new mobile app](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/view-manage-inventory-new-mobile-app) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [View and manage inventory with a new mobile app](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/view-manage-inventory-new-mobile-app) | [Inventory On-hand mobile app](../inventory/inventory-onhand-mobile-app.md) | Enabled by default |
 | Manufacturing and asset management | Change the asset type of existing assets | [Change the asset type of existing assets](../asset-management/objects/change-asset-type.md) | Feature management:<br>*(Preview) Change types on assets and functional locations*  |
 | Manufacturing and asset management | Change the functional location type of existing functional locations | [Change the type of existing functional locations](../asset-management/functional-locations/change-functional-location-type.md) | Feature management:<br>*(Preview) Change types on assets and functional locations*  |
 | Manufacturing and asset management | [React to last-minute changes in production](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/react-last-minute-changes-production) | [Feature enhancements included in this release](#enhancements) | <p>Feature&nbsp;management:</p><ul><li>*Dynamic positive days for Planning Optimization*</li><li>*Prevent production orders to be released when full material is not available*</li><li>*Use of margins for scheduling orders*</li></ul> |
 | Master planning | Demand planning app for Dynamics 365 Supply Chain Management | [Demand planning home page](../demand-planning/demand-planning-home-page.md) | Feature management:<br>*(Preview) Demand Planning* |
 | Master planning | Prioritize existing supply over required BOM/route in Planning Optimization | [Demand-specified BOM or formula versions and/or routes](../master-planning/coverage-settings.md#specify-versions-routes) | Feature management:<br>*Prioritize existing supply over required BOM/route in Planning Optimization* |
-| Procurement | [Inform vendors about when to ship items](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/inform-vendors-about-when-ship-items) | <p>Enables you to do the following:</p><ul><li>Determine the supplier's shipping calendar from the vendor and its subsequent default to the relevant document.</li><li>Determine the delivery transport days from the supplier to the receiving point.</li><li>Enhance the purchasing process through the incorporation of new requested and confirmed ship dates.</li><li>Consider the supplier's shipping calendar and transport days for the automatic calculation of supplier ship dates.</li></ul> | Feature management:<br>*Supplier requested and confirmed shipment dates* |
+| Procurement | [Inform vendors about when to ship items](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/inform-vendors-about-when-ship-items) | [Calculate requested ship dates for purchase orders](../master-planning/supplier-requested-confirmed-dates.md) | Feature management:<br>*Supplier requested and confirmed shipment dates* |
 | Warehouse management | [Operate warehouses connected to external order management systems](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/operate-warehouses-connected-external-order-management-systems) | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*(Preview) Warehouse management only mode* |
 | Warehouse management | [Optimize the inbound receiving process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-inbound-receiving-process) | [Deferred receiving processing](../warehousing/mixed-license-plate-receiving.md#deferred-receiving-processing) | Enabled by default |
 
@@ -68,15 +71,14 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Production control | Standard cost financial posting of a production/batch order with a scrap account method. | Enables the system to financially update a fully scrapped production or batch order with a scrap account method. |
 | Sales and marketing | Enable attribute-based pricing by company | Enables you to use attribute-based pricing by company. |
 | Sales and marketing | (Preview) Pricing management for pricing rule cleanup | Pricing management for pricing rule cleanup. |
-| Sales and marketing | Pricing management performance enhancement | Enables Pricing management to make some types of calculations more quickly. |
-| Transportation management | Integrate Microsoft Sustainability Manager with transportation management | Enables companies to significantly reduce their carbon footprint. This is achieved through route optimization, reduced fuel consumption, and the increased use of lower-emission transportation options. This feature can help improve visibility, control, and automation for the transportation process. |
+| Sales and marketing | Pricing management performance enhancement | Improves performance of pricing calculations by using pricing rule hash strings to filter potential pricing rules and speed up matching logic. The first time you enable the feature, it generates a hash string for all existing rules. Thereafter, it automatically generates a hash string for each new pricing rule. The feature adds a new batch job, *Generate pricing rule hash value*, which you can manually schedule either to generate hash strings for rules that are missing them (delta), or to regenerate hash strings for all existing pricing rules. |
 | Warehouse management | Prevent production orders to be released when full material is not available | Fixes an issue where the production control parameter **Requirement for material reservation** is set to *Require full reservation*. Previously, when a production order was released while this option was selected, its status was always changed from *Scheduled* to *Released*, even if all material couldn't be fully reserved. When this feature is enabled, when a production order is released with this option selected, the production order will only change status once all material is fully available for reservation. |
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md).<!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).<!--KFM: Confirm link -->
 
 ### Bug fixes
 

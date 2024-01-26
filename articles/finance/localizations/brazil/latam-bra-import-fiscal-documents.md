@@ -12,7 +12,6 @@ ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 270204
 ms.assetid: b2389297-1359-498f-b755-c20574248ae1
 ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, PurchImportDeclarationList_BR, VendEditInvoice
 ---

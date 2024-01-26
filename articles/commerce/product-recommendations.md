@@ -31,9 +31,6 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-> [!IMPORTANT]
-> The product recommendations service of Microsoft Dynamics 365 Commerce is paused for new customers. New customers can explore third-party solutions as a replacement option.
-
 Microsoft Dynamics 365 Commerce can be used to show product recommendations on the e-Commerce website and point of sale (POS) device. Product recommendations are items that a customer might be interested in. The recommendations are based on the purchase trends of other customers in online and brick-and-mortar stores.
 
 Product recommendations allow customers to easily and quickly find products that they want while they have an experience that serves them well. Cross-selling and upselling can even be used to assist customers find more products that they didn't originally intend to buy. When recommendations are used to enhance product discovery, they create more conversion opportunities, help increase sales revenue, and even amplify customer satisfaction and retention.

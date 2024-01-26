@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.custom: 141393
 ms.assetid: 
 ms.search.industry: Retail
 ---

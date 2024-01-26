@@ -37,7 +37,7 @@ The status of async operations can be viewed on the same page.
 
 To use real async operations, you must extend the `SysOperationServiceController` class.
 
-For more information about the SysOperation framework, see [SysOperation Framework Overview](../../dynamicsax-2012/developer/sysoperation-framework-overview.md).
+For more information about the SysOperation framework, see [SysOperation Framework Overview](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## Enable the real async feature
 

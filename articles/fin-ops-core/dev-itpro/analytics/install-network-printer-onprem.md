@@ -4,7 +4,6 @@ description: This article explains how to connect an on-premises deployment of M
 author: faix
 ms.date: 04/07/2022
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,7 +13,7 @@ ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.custom: 
 ms.search.form: SysCorpNetPrinterList
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

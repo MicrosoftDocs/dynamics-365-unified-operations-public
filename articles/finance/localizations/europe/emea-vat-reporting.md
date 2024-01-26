@@ -12,7 +12,6 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 266844
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 ---
 

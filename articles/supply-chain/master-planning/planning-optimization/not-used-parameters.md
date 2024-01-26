@@ -52,15 +52,9 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 Planning Optimization doesn't use the following parameters or options on the **Coverage groups** page:
 
-- **General** FastTab:
-
-  - **Positive days** – The *Positive days* value isn't used. With Planning Optimization, positive days are considered infinite.
-
 - **Other** FastTab:
 
   - **Freeze time fence (days)** – Pending *Freeze time fence* support.
-  - **BOM explosion time fence (days)** – Not supported by Planning Optimization.
-  - **Capacity scheduling time fence (days)** – Not supported by Planning Optimization.
   - **Forecast plan time fence** – Forecast plans aren't supported by Planning Optimization. Instead, create a master plan that specifies a forecast model.
 
 - **Delays** FastTab:
@@ -91,7 +85,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **General** FastTab:
 
   - **Include continuity plan** – Not supported by Planning Optimization.
-  - **Backward scheduling capacity time fence** – Not supported by Planning Optimization.
   - **Capacity time fence for bottleneck resources** – This field will no longer be supported by Planning Optimization because we detected that customers weren't using it.
   - **Planned orders** – Planning Optimization uses fixed number sequences.
   - **Session** – Planning Optimization uses fixed number sequences.
@@ -100,7 +93,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **Time fences in days** FastTab:
 
   - **Freeze** – *Freeze time fence* isn't yet supported by Planning Optimization.
-  - **Explosion** – Not supported by Planning Optimization.
   - **Forecast plan** – Not supported by Planning Optimization.
   - **Continuity plan** – Not supported by Planning Optimization.
   - **Calculated delays** – This parameter isn't considered. Calculated delays are created for the **coverage time fence (days)**.
