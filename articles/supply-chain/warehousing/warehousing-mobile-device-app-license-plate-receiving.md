@@ -39,7 +39,7 @@ When you register incoming items using a work policy that creates work, the syst
 
 ### Work policies without work creation
 
-You can use the license plate receiving process without creating work. If you define [work policies](warehouse-work-policies.md) that have a work order type of *Transfer receipt*, *Purchase orders*, and/or *Inbound shipment order* and you use the process for *License plate receiving (and put away)*, the following two Warehousing mobile app processes won't create work. Instead, they will just register the inbound physical inventory on the license plate at the inbound receiving dock.
+You can use the license plate receiving process without creating work. If you define [work policies](warehouse-work-policies.md) that have a work order type of *Transfer receipt*, *Purchase orders*, and/or *Inbound shipment order*, and you use the process for *License plate receiving (and put away)*, the following two Warehousing mobile app processes won't create work. Instead, they will just register the inbound physical inventory on the license plate at the inbound receiving dock.
 
 - *License plate receiving*
 - *License plate receiving and put away*
@@ -88,14 +88,14 @@ To manage the functionality when this feature is available, follow these steps.
 
 ## <a name="deferred-receiving"></a>Deferred receiving processing
 
-For businesses using the *License plate receiving* process to inbound receive thousands of lines related to the same license plate, the warehouse management mobile app receiving process must wait until all the lines and related work has been created as part of the registration process; unless using the [deferred receiving option](mixed-license-plate-receiving.md#deferred-receiving-processing) which will postpone the registration processes as part of a background process and thereby enable the the warehouse workers to immediately continue to do other work.
+For businesses that use the *License plate receiving* process to inbound receive thousands of lines that are related to the same license plate, the Warehouse Management mobile app receiving process must wait until all the lines and related work have been created as part of the registration process. The exception is when the [deferred receiving option](mixed-license-plate-receiving.md#deferred-receiving-processing) is used. This option postpones the registration processes as part of a background process. Therefore, the warehouse workers can immediately continue to do other work.
 
 ## More information
 
 - For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 - For more information about work policies, see [work policies](warehouse-work-policies.md).
 - For more information about deferred receiving, see [mixed license plate receiving](mixed-license-plate-receiving.md#deferred-receiving-processing).
-- For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+- For more information about the *Report as finished* production scenario, see [Warehouse work policies overview](warehouse-work-policies.md).
 - For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
