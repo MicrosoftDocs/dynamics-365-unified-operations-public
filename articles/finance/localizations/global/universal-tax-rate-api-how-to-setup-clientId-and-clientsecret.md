@@ -24,6 +24,9 @@ uid: D365.CFO.FunctionalTraining.Finance.Tax.TaxCalculationService.TaxCalculatio
 
 This article explains how to set up a client ID and a client secret for the Universal Tax Rate API.
 
+    > [!NOTE]
+    > You can create an SR ticket to ask Microsoft support connect you with the Tax Calculation - Universal Tax Rate API product team for a detailed guidance on setting up the client ID and client secret in your environment.
+
 ## Prerequisites
 
 Before you can access a tax provider's service, you must set up your client ID and client secret for the Universal Tax Rate API. Your tax provider provides these values. When you receive them, store them in a Microsoft Azure key vault, and configure Key Vault parameters for Dynamics 365 finance and operations apps. After you set up the client ID and client secret in the key vault, you can select the corresponding Key Vault secret name in the tax feature setup.
@@ -143,5 +146,8 @@ After you finish the prerequisite steps, set up the Key Vault parameters to link
     If the secret version isn't defined in the Key Vault secret key, the system retrieves the active secret that has the latest expiration date.
 
     :::image type="content" source="../media/items10.png" alt-text="Screenshot of the Key Vault parameters page.":::
+
+    > [!NOTE]
+    > You must create the Key vault parameters in each legal entity which is connected to the external tax solution provider for tax calculation.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
