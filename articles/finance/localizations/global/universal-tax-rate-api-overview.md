@@ -71,13 +71,13 @@ To enable a tax solution provider, follow these steps.
 
 1. Engage and select one [tax solution provider](#available-tax-solution-providers). Install the independent software vendor (ISV) application when the tax solution provider requires it for the complete and extended functionality.
 1. [Set up a client ID and client secret](./universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md) for the application access credentials that your tax solution provider provides.
-1. Import the tax calculation data models provided by Microsoft from global repository or dataverse repository via Globalization Studio.
+1. Import the tax calculation data models provided by Microsoft from the global repository or the Dataverse repository via Globalization Studio.
     - **Configuration providers** \> **Microsoft** \> **Repositories** \> **Global** \> **Open** \> **Import**
          
         - Tax Calculation Data Model for ISV integration.xml (version 40.61.4)
      
       > [!NOTE]
-      > If you want to import the tax data model from dataverse repository, make sure you have enabled the option **Enable Finance and Operations User Impersonation in Dataverse** under **Power Platform admin center** \> **Environments** \> **your environment id** \> **settings** \> **Features**.
+      > If you want to import the tax data model from the Dataverse repository, make sure you have enabled the option **Enable Finance and Operations User Impersonation in Dataverse** under **Power Platform admin center** \> **Environments** \> **your environment id** \> **settings** \> **Features**.
       >![Enable Finance and Operations User Impersionation in Dataverse](../media/EnableFOUserImpersonationInDataverse.png)
       
 1. Load the ISV provided tax configuration and tax features via Globalization Studio. Follow the implementation guidance that your tax solution provider provides.
