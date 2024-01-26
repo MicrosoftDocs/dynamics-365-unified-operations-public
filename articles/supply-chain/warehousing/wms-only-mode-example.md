@@ -20,16 +20,16 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This article provides an example scenario that shows how to create inbound and outbound shipment orders via a message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
+This article provides an example scenario that shows how to create inbound and outbound shipment orders via message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 
-To try out the creation process of inbound and outbound shipment orders via messages, set **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** to *Yes* for a **Source system** record. This lets you create shipment order messages directly within the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-using.md#maintain-messages) pages.
+To try out the creation process for inbound and outbound shipment orders via messages, set the **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** options to *Yes* for a **Source system** record. You can then create shipment order messages directly on the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-using.md#maintain-messages) pages.
 
 Another quick way to post example messages is to use [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests.
 
-In both example cases, the [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management will process the messages and create the orders in the warehouse system.
+In both example cases, the [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management processes the messages and creates the orders in the warehouse system.
 
 > [!TIP]
-> To completely skip the shipment order creation processes via messages you can create the **Inbound shipment orders** and **Outbound shipment orders** directly in the order pages by allowing the *Enable manual inbound shipment order creation* and *Enable manual outbound shipment order creation* settings for a *Source system*.
+> To completely skip the shipment order creation processes via messages, you can create the inbound shipment orders and outbound shipment orders directly on the order pages by allowing the *Enable manual inbound shipment order creation* and *Enable manual outbound shipment order creation* settings for a source system.
 
 The same message structure logic applies to both the inbound and outbound shipment order messages:
 
