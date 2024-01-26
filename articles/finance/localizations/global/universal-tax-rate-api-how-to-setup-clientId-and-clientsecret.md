@@ -25,7 +25,7 @@ uid: D365.CFO.FunctionalTraining.Finance.Tax.TaxCalculationService.TaxCalculatio
 This article explains how to set up a client ID and a client secret for the Universal Tax Rate API.
 
    > [!NOTE]
-   > You can create an SR ticket to ask Microsoft support connect you with the Tax Calculation - Universal Tax Rate API product team for a detailed guidance on setting up the client ID and client secret in your environment.
+   > You can create an SR ticket to ask Microsoft support to connect you with the Tax Calculation - Universal Tax Rate API product team for detailed guidance on setting up the client ID and client secret in your environment.
 
 ## Prerequisites
 
