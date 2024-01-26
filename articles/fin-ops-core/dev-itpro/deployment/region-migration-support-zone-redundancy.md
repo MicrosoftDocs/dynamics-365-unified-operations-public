@@ -31,11 +31,11 @@ This article answers frequently asked questions about the migration process and 
 | UK West | UK South |
 
 > [!NOTE]
-> As part of the migration effort, effective January 2024, finance and operations apps customers can no longer provision new environments in the current regions by using Microsoft Dynamics Lifecycle Services. Microsoft continues to support all customer environments in their existing regions until the migration is completed for all environments in customers' Lifecycle Services projects.
+> As part of the migration effort, effective January 29th, 2024, the current regions will no longer be available to finance and operations apps customers for new sandbox and production environment provisioning using Lifecycle Services. Microsoft continues to support all customer environments in their existing regions until the migration is completed for all environments in customers' Lifecycle Services projects.
 
 ## What types of environments are being migrated?
 
-We plan to migrate all sandbox and production environments in a Lifecycle Services project. There's no impact on data movement or servicing actions if environments in the same Lifecycle Services project are in different regions after a migration.
+We plan to migrate all sandbox and production environments in a Lifecycle Services project. There's no impact on data movement or servicing actions if environments in the same Lifecycle Services project are in different regions before or after a migration.
 
 ## What is the timeline for migration completion?
 
@@ -55,7 +55,7 @@ Users can expect downtime during the planned migration within the [region's main
 
 ## How is Microsoft notifying customers about this migration?
 
-Customers are notified about planned migrations for every implementation project or set of environments through email and message center five to seven business days in advance.
+Customers are notified about planned migrations for every implementation project or set of environments through email and message center five business days in advance.
 
 ## How does this migration affect environments that include Dynamics 365 Commerce Scale Unit?
 
