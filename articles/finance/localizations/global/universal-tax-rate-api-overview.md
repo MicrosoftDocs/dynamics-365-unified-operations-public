@@ -23,7 +23,7 @@ ms.search.form:
 
 A connection to an external tax solution provider helps simplify and reduce the effort of maintaining the tax rates and tax applicability rules for Tax calculation. This result is especially critical when you implement Tax calculation for countries or regions where a significant number of tax jurisdictions must be covered.
 
-The Universal Tax Rate API is a set of standard application programming interfaces that Microsoft has defined in Tax calculation, based on the taxable document data model. It's an extended feature of Tax calculation that enables external tax services to be connected under the same framework.
+The Universal Tax Rate API is a set of standard application programming interfaces that Microsoft has defined in Tax calculation, based on the tax calculation data model. It's an extended feature of Tax calculation that enables external tax services to be connected under the same framework.
 
 Through this extension, external tax solution providers can provide tax rate determination, tax calculations, and extended tax functionality via standardized APIs. This extension introduces the following benefits:
 
