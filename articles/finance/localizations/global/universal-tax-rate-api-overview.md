@@ -76,6 +76,10 @@ To enable a tax solution provider, follow these steps.
          
         - Tax Calculation Data Model for ISV integration.xml (version 40.61.4)
      
+      > [!NOTE]
+      > If you want to import the tax data model from dataverse repository, make sure you have enabled the option **Enable Finance and Operations User Impersonation in Dataverse** under **Power Platform admin center** \> **Environments** \> **your environment id** \> **settings** \> **Features**.
+      >![Enable Finance and Operations User Impersionation in Dataverse](../media/EnableFOUserImpersonationInDataverse.png)
+      
 1. Load the ISV provided tax configuration and tax features via Globalization Studio. Follow the implementation guidance that your tax solution provider provides.
 
     - **Tax configurations** \> **Exchange** \> **Load from XML**
