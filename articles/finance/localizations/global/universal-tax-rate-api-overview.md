@@ -71,11 +71,15 @@ To enable a tax solution provider, follow these steps.
 
 1. Engage and select one [tax solution provider](#available-tax-solution-providers). Install the independent software vendor (ISV) application when the tax solution provider requires it for the complete and extended functionality.
 1. [Set up a client ID and client secret](./universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md) for the application access credentials that your tax solution provider provides.
-1. Import the ISV-related tax data model and tax features via Globalization Studio. Follow the implementation guidance that your tax solution provider provides.
+1. Import the tax calculation data models provided by Microsoft from global repository or dataverse repository via Globalization Studio.
+    - **Configuration providers** \> **Microsoft** \> **Repositories** \> **Global** \> **Open** \> **Import**
+         
+        - Tax Calculation Data Model for ISV integration.xml (version 40.61.4)
+     
+1. Load the ISV provided tax configuration and tax features via Globalization Studio. Follow the implementation guidance that your tax solution provider provides.
 
     - **Tax configurations** \> **Exchange** \> **Load from XML**
 
-        - Tax Calculation Data Model for ISV integration.xml (version 40.61.4)
         - ISV tax configuration.xml (version 40.61.4.x)
 
     - **Tax calculation** \> **Import from JSON**
@@ -83,7 +87,7 @@ To enable a tax solution provider, follow these steps.
         - ISV tax solution.json (version x)
 
     > [!NOTE]
-    > The ISV distributes the preceding .xml and .json files for load and import into the Tax calculation setup.
+    > The ISV distributes the preceding .xml and .json files for load and import into the Tax calculation setup. The name of the files can be vary per different ISV naming rules.
 
 1. In Globalization Studio, select **Tax calculation** \> **Add**, and create and configure the customer ISV tax feature for your credentials, parameter values, mapping rules, and so on. Follow the implementation guidance that your tax solution provider provides.
 1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
