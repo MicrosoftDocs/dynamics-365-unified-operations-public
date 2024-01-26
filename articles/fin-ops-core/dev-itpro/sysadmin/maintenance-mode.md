@@ -121,6 +121,8 @@ J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.
 ```
 After running the command, you will want to restart the **World Wide Web Publishing Service** to reset IIS. The system will then be out of maintenance mode.  
 
+> [!NOTE]
+> If you use a Tier-1 (cloud-hosted) environment, you must do a full database synchronization (DBSync) and use Visual Studio to complete the maintenance mode.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
