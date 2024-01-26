@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ms.topic: how-to
-ms.date: 08/03/2023
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -44,10 +44,9 @@ If you're already familiar with Supply Chain Management, you might recognize tha
 > [!NOTE]
 > The internal inbound shipment order number must be unique. You can configure the system to use the external order numbers as internal numbers. In this way, you don't have to use a [number sequence](wms-only-mode-setup.md#number-sequences) for the order. To ensure unique numbers across external systems, consider using the **Order number prefix/suffix** options.
 
-### Enable manual inbound shipment order creation
+## Enable manual inbound shipment order creation
 
-Besides using entity messages to create the *Inbound shipment orders* you can *Enable manual inbound shipment order creation* for one or more *Source systems* and thereby users are able to create inbound shipment orders directly in the *Inbound shipment orders* page.
-This setting will enable the user interface option for the **New** button and the `Order type` field will contain the value *Manual order* instead of *Inbound shipment order* for shipment orders getting created without message processing.
+In addition to using entity messages to create inbound shipment orders, you can enable manual inbound shipment order creation for one or more source systems, which enables users to create inbound shipment orders directly on the **Inbound shipment orders** page. To do so, go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**, and then set **Enable manual inbound shipment order creation** to *Yes* for the relevant source system. This setting activates the **New** button on the **Inbound shipment orders** page. The **Order type** field will contain the value *Manual order* instead of *Inbound shipment order* for shipment orders that are created without message processing.
 
 ## Maintain outbound shipment orders
 
@@ -75,8 +74,7 @@ If you're already familiar with Supply Chain Management, you might recognize tha
 
 ### Enable manual outbound shipment order creation
 
-Besides using entity messages to create the *Outbound shipment orders* you can *Enable manual outbound shipment order creation* for one or more *Source systems* and thereby users are able to create outbound shipment orders directly in the *Outbound shipment orders* page.
-This setting will enable the user interface option for the **New** button and the `Order type` field will contain the value *Manual order* instead of *Outbound shipment order* for shipment orders getting created without message processing.
+In addition to using entity messages to create outbound shipment orders, you can enable manual outbound shipment order creation for one or more source systems, which enables users to create inbound shipment orders directly on the **Outbound shipment orders** page. To do so, go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**, and then set **Enable manual outbound shipment order creation** to *Yes* for the relevant source system. This setting activates the **New** button on the **Inbound shipment orders** page. The **External order type** field will contain the value *Manual order* instead of *Outbound shipment order* for shipment orders that are created without message processing.
 
 ## Inbound process
 
@@ -119,7 +117,7 @@ You can specify whether workers should capture a packing slip ID and date for ea
 > - Automatically, when an ASN is imported
 > - Via a manual process
 > - As part of the Warehouse Management mobile app receiving process
-> - As part of an *Order receiving completed* process which creates loads for registered inventory transaction not being associated to a load. This process is useful when using the [Item arrival journal](../inventory/arrival-overview.md) process. This process can get triggered directly from an *Inbound shipment order* or via a background process **Inbound shipment order receiving completed**.
+> - As part of an *Order receiving completed* process, which creates loads for registered inventory transactions that aren't associated to a load. This process is useful when using the [item arrival journal](../inventory/arrival-overview.md) process. This process can be triggered directly from an inbound shipment order or via the **Inbound shipment order receiving completed** background process.
 >
 > When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
@@ -187,12 +185,12 @@ External systems can be informed via [business events](wms-only-mode-exchange-da
 
 ## <a name="maintain-messages"></a>View and maintain shipment order messages
 
-In Warehouse management only mode, you can both view, update, and create shipment order messages. Therefore, you can quickly test integrations during the implementation process. When a external created message is in a *Failed* message state, you can update all field values except the order header and line numbers. Go to one of the following pages to view and maintain the messages:
+In Warehouse management only mode, you can view, update, and create shipment order messages. Therefore, you can quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update all field values except the order header and line numbers. Go to one of the following pages to view and maintain the messages:
 
 - **Warehouse management** \> **Inbound shipment orders** \> **Inbound shipment order messages**
 - **Warehouse management** \> **Outbound shipment orders** \> **Outbound shipment order messages**
 
-To easily tryout the creation process of inbound and outbound shipment orders via messages, you can set *Enable manual outbound shipment order message creation* and *Enable manual inbound shipment order message creation* to `Yes` for a *Source system* record. This will make it possible to create the shipment order messages directly within the **Outbound shipment order messages** and **Inbound shipment order messages** pages. You will be able to follow the *Message origin* which can be *Manual entry* or *Integration*.
+To try out the process of creating inbound and outbound shipment orders via messages, set **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** to *Yes* for the relevant **Source system** record. This will let you create shipment order messages directly on the **Outbound shipment order messages** and **Inbound shipment order messages** pages. You will then be able to follow the **Message origin** which can be *Manual entry* or *Integration*.
 
 Use the **Processing status** field to monitor the progress of each shipment order message. The following **Processing status** values are available:
 
@@ -200,11 +198,12 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 - *Received* – The message has been received and is in a *Queued* state in the [message processor](../supply-chain-dev/message-processor.md). It's now ready to be picked up for processing.
 - *Accepted* – The message processor state is *Processed*. Therefore, a shipment order has been created.
 - *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after you edit it.
-- *Draft* – The message is a copy or manually created message that can be updated. To reprocess the message, move it into the *Queued* message state by selecting the **Queue** option.
+- *Draft* – The message is a manually copied or created message that can be updated. To reprocess the message, move it into the *Queued* message state by selecting **Queue** on the Action Pane.
 - *Canceled* – The message has been manually canceled.
 
 > [!TIP]
 > Select **Show old versions** to follow manual message updates based on the value of the **Replaced by message** field.
 
 > [!WARNING]
-> Manual message creation and field updates in production environments can cause data inconsistency between the external source system and Supply Chain Management. For example, you might change an item number to a value that isn't known to the external system. This type of update will probably cause issues in progress information flows. The issues might even be impossible to correct in the external system. We recommend that you use user roles and security privileges to restrict access to this functionality to as few people as possible.
+> In a production environ,emt. manually entered messages and field updates can cause data inconsistencies between the external source system and Supply Chain Management. For example, you might change an item number to a value that isn't known to the external system. This type of update will probably cause issues in progress information flows. The issues might even be impossible to correct in the external system. We recommend that you use user roles and security privileges to restrict access to this functionality to as few people as possible.
+

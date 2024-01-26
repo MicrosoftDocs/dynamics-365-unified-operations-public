@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: faq
-ms.date: 08/03/2023
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -85,14 +85,14 @@ If you enable Warehouse management only mode and are already running a periodic 
 
 In addition to setting up item model groups that don't use costing and general ledger settings (see [Master and reference data](wms-only-mode-exchange-data.md#master-data)), you must enable [Warehouse-specific inventory transactions](warehouse-transactions.md) for the *Transfer issue* and *Transfer receipt* warehouse scenarios.
 
-## Can I attach documents and notes to the inbound and outbound shipment orders?
+## Can I attach documents and notes to inbound and outbound shipment orders?
 
-Yes you can. Both the *Inbound and Outbound shipment order messages* supports document attachments. You can view the [OData Postman example](https://go.microsoft.com/fwlink/?linkid=2250135), containing the `InboundShipmentOrderDocumentAttachmentMessages` and `OutboundShipmentOrderDocumentAttachmentMessages` and as well view the `Inbound shipment order messages composite entity` and `Outbound shipment order messages composite entity` in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) which contains the child entities `Inbound shipment order document attachment messages` and `Outbound shipment order document attachment messages`.
+Yes you can. Both inbound and outbound shipment order messages support document attachments. For example, the [OData Postman example](https://go.microsoft.com/fwlink/?linkid=2250135) contains both `InboundShipmentOrderDocumentAttachmentMessages` and `OutboundShipmentOrderDocumentAttachmentMessages`. See also the *Inbound shipment order messages composite entity* and *Outbound shipment order messages composite entity* descriptions in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md), which contain the child entities *Inbound shipment order document attachment messages* and *Outbound shipment order document attachment messages*.
 
 ## Why cant't I see and search for page names related to Warehouse management only mode?
 
-Even though the feature for the *Warehouse management only mode* functionality is enabled, you must create a record in the *Source systems* page before lookup of the related pages can be done. It as well requires the current user's default company having a *Source system* record inserted To search for the page names.
+Even if the *Warehouse management only mode* feature is enabled, you must also create a record in the **Source systems** page before the system can look up the related pages. The current user's default company must also have a **Source system** set up to search for the page names. See also [Enable and configure Warehouse management only mode (preview)](wms-only-mode-setup.md).
 
-## Why does my registered inventory transaction not have a *Load ID*?
+## Why does my registered inventory transaction not have a load ID?
 
-In case you use the [Item arrival journal](../inventory/arrival-overview.md) process to receive update inbound shipment order line quantities the inventory transaction will not get associated to a load. To archive this you must use the *Order receiving completed* process which creates loads for registered inventory transaction not being associated to a load. This process can get triggered directly from an *Inbound shipment order* or via a background process **Warehouse management** \> **Periodic tasks** \> **Inbound shipment order receiving completed**.
+If you use the [item arrival journal](../inventory/arrival-overview.md) process to receive updated inbound shipment order line quantities, then inventory transactions won't be associated to a load. To achieve this, you must use the *Order receiving completed* process, which creates loads for registered inventory transactions that aren't associated to a load. This process can be triggered directly from an inbound shipment order or via the **Inbound shipment order receiving completed** background process (available at **Warehouse management** \> **Periodic tasks** \> **Inbound shipment order receiving completed**).

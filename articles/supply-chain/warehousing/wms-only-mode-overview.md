@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 08/03/2023
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -29,7 +29,7 @@ The integration of Supply Chain Management WMS functionality with external ERP a
 
 Warehouse management only mode provides several deployment options to support the business needs of running your [warehouse management](warehouse-management-overview.md) processes.
 
-You can [**start a free trial of Microsoft Dynamics 365 Supply Chain Management**](https://go.microsoft.com/fwlink/?linkid=2252982) via the [Unified admin experience for finance and operations apps](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview) to try out an implementation according to the below illustration of a high-level diagram of the elements and processes of an integrated system. See [here for an example](wms-only-mode-example.md).
+You can [start a free trial of Microsoft Dynamics 365 Supply Chain Management](https://go.microsoft.com/fwlink/?linkid=2252982) via the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview) to try out an implementation as shown in the following high-level diagram of the elements and processes of an integrated system. See also [this example of using inbound and outbound shipment orders](wms-only-mode-example.md).
 
 :::image type="content" source="media/wms-only-high-level-integrations.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-high-level-integrations.svg":::
 
@@ -79,7 +79,7 @@ For a more detailed description of this process and the related processes, see [
 
 ## Unsupported processes
 
-The following high-level processes aren't supported out of the box when Supply Chain Management is integrated with external systems. The list are mostly relevant for existing customers already running warehouse management processes and considering to uptake the *Warehouse management only mode* functionality.  
+The following high-level processes aren't supported out of the box when Supply Chain Management is integrated with external systems. The list is mostly relevant for existing customers who are already running warehouse management processes and are considering to adopt the *Warehouse management only mode* functionality.  
 
 | Process | Description |
 |---|---|
@@ -92,5 +92,5 @@ The following high-level processes aren't supported out of the box when Supply C
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the *allow reservation on demand order* capability | *Outbound shipment order line* transaction reservations don't support reservations on inventory dimensions below the location in the reservation hierarchy. (However, these reservations are supported for *Sales order line* transactions.) |
 | [Owner dimension](../inventory/consignment.md#inventory-owners) values that differ from the operating legal entity | There isn't yet support for importing and processing shipment order lines where the *Owner* tracking dimension value differs from the legal entity (company) that's used. |
 | Items enabled for [catch weight processing](catch-weight-processing.md) | Items that are enabled for catch weight processing aren't supported for inbound or outbound shipping orders. |
-| Policies and processes around vendor or customer accounts | Representations of vendors and customers aren't used for inbound or outbound shipping orders. Therefore, you can't use related order processing policies with this type of setup. For example, you can't use customer-specific or vendor-specific [product filters](filters-and-filter-codes.md), same apply for [nonconformance management](../inventory/quality-management-processes.md#nonconformance). |
-| Order line *Registration* and *Pick* update processing | Inbound and outbound shipment order lines don't support the manual registration and unregistration processes that are supported by other types of order lines (such as purchase, sales, and transfer order lines). |
+| Policies and processes around vendor or customer accounts | Representations of vendors and customers aren't used for inbound or outbound shipping orders. Therefore, you can't use related order processing policies with this type of setup. For example, you can't use customer-specific or vendor-specific [product filters](filters-and-filter-codes.md) or [nonconformance management](../inventory/quality-management-processes.md#nonconformance). |
+| Order line registration and pick update processing | Inbound and outbound shipment order lines don't support the manual registration and un-registration processes that are supported by other types of order lines (such as purchase, sales, and transfer order lines). |

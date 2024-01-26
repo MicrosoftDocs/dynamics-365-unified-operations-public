@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy
 ms.topic: how-to
-ms.date: -1/29/2024
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
