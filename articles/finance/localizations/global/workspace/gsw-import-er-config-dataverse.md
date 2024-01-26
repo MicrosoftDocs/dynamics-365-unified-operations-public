@@ -94,6 +94,6 @@ To import filtered configurations, follow these steps.
 > [!NOTE]
 > Depending on the ER settings, configurations are validated after they're imported. You might be notified about any inconsistency issues that are found. Before you can use the imported configuration version, you must fix the issues. For more information, see the list of related resources for this article.
 >
-> ER configurations can be configured as dependent on other configurations. Therefore, when you import a selected configuration, other configurations might be automatically imported. For more information about configuration dependencies, see [Define the dependency of ER configurations on other components](../../../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
+> ER configurations can be configured as dependent on other configurations. Therefore, when you import a selected configuration, other configurations might be automatically imported. For more information about configuration dependencies, see [Define the dependency of ER configurations on other components](../../../../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
