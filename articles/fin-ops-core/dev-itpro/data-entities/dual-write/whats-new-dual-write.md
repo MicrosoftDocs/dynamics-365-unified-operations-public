@@ -19,8 +19,28 @@ ms.dyn365.ops.version: 10.0.8
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
 ## January 2024
-Release notes for the January 2024 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
-**Version:** 1.0.24011.1
+Release notes for January 2024 releases of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+
+### Version 1.0.24014.1
+
+| Type | Number | Description | Status | 
+| --- | --- | --- | --- |
+| Feature | 3786097 | Provide more actionable error messages to users in Dataverse in cases of system errors from finance and operations apps during live sync. | General availability |
+| Bug | 3782920 | Optimize asynchronous integration job operations for performance improvements | General availability |
+| Bug | 3771402 | Optimize asynchronous integration job operations for performance improvements | General availability |
+
+**Release timeline for version 1.0.24014.1**
+
+| Geography | Package publish date | Publisher-driven update|
+| --- | --- | --- |
+| First Release | January 29, 2024 | February 5, 2024 | 
+| Brazil, Canada, India, France, Africa, Germany, Switzerland, Norway, Korea, Singapore | February 5, 2024 | February 12, 2024 |
+| UAE, Japan, Asia, Australia, UK | February 12, 2024 | February 19, 2024 | 
+| Europe | February 19, 2024 | February 26, 2024 | 
+| North America | February 26, 2024 | March 4, 2024 | 
+| GCC | March 4, 2024 | March 11, 2024 | 
+
+### Version: 1.0.24011.1
 
 | Type | Number | Description | Status | 
 | --- | --- | --- | --- |
@@ -28,7 +48,6 @@ Release notes for the January 2024 release of [Dual-write core solution](https:/
 | Bug | 25981168 | Update the SourceKey in `Dual Write Async Execution Error` table with the Dataverse RowVersion for sync from Dataverse to finance and operations apps. | General availability |
 | Bug | 3679902 | Update `Dual Write Async Execution Summary` table with Enqueue Count | General availability |
 | Bug | 3761962 | Fix for issue with queued records for asynchronous integration jobs not displaying correctly in the dual-write configuration interface. | General availability |
-
 
 ## December 2023
 
