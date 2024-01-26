@@ -32,11 +32,11 @@ When you set up a wave template, you specify the following:
 
 Some settings represent strategic decisions for wave processing, as follows:
 
-- If the template is used for shipping items for sales, transfer, and outbound shipment orders or used for moving items to production for production orders or kanbans.
+- If the template is used to ship items for sales, transfer, and outbound shipment orders, or to move items to production for production orders or kanbans.
 - If a wave is processed manually or automatically, as follows:
 
-    - **Manual processing** – The line is added to a wave and the inventory is reserved, however, you must select **Process** on the **All waves** list page to create the picking work for the order.
-    - **Automatic processing** – You can fully or partially automate wave processing. If you fully-automate wave processing, a wave is created that includes the line from the sales order, production order, or kanban when a sales order, production order, or kanban is created. The items are deducted from on-hand inventory and the picking work is created. If you partially automate wave processing, you can specify values that will trigger wave processing. For example, you can specify a maximum weight for shipments that will trigger wave processing when the total weight of the lines in the wave reaches the value.
+    - **Manual processing** – The line is added to a wave, and the inventory is reserved. However, you must select **Process** on the **All waves** list page to create the picking work for the order.
+    - **Automatic processing** – You can fully or partially automate wave processing. If you fully automate wave processing, a wave is created that includes the line from the sales order, production order, or kanban when a sales order, production order, or kanban is created. The items are deducted from on-hand inventory, and the picking work is created. If you partially automate wave processing, you can specify values that will trigger wave processing. For example, you can specify a maximum weight for shipments. Wave processing is then triggered when the total weight of the lines in the wave reaches that value.
 
 - If you assign shipments to an open wave. For example, if you promise customers that an order placed by 12:00 PM will ship within 24 hours, you can set up the wave template to automatically assign order lines to an open wave until 12:00 PM. At that time, the wave is automatically processed.
 
