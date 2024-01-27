@@ -15,7 +15,7 @@ ms.custom: bap-template
 # Extending Copilot capabilities in finance and operations apps
 
 Copilot in finance and operations apps provides AI-powered assistance that helps application users with a sidecar chat experience with natural language guidance and actions. Copilot builds on contextual experiences that enrich the application. Copilot capabilities can include skills like:
-- Guidance on app features and functionality, such as [Generative help and guidance with Copilot](/copilot-generative-help).
+- Guidance on app features and functionality, such as [Generative help and guidance with Copilot](./copilot-generative-help).
 - Answer questions about your data
 - Recommend and perform client actions
 - Automate operations
