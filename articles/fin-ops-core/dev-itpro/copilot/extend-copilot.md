@@ -15,14 +15,19 @@ ms.custom: bap-template
 # Extending Copilot capabilities in finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-Copilot in finance and operations apps builds on [Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) for central orchestration of the Copilot capabilities. This framework enables you to extend the capabilities, creating powerful AI-powered experiences in finance and operations apps.
 
-[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
 ## Copilot architecture
-<This section provides an overview of the architecture to help the developer understand the components>
+Copilot in finance and operations apps builds on [Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio), which provides the central AI orchestration of the Copilot capabilities. This framework enables you to extend the capabilities, creating powerful AI-powered experiences in finance and operations apps. 
+
+### Copilot interface
+The Copilot interface for the chat experience in finance and operations apps uses the same [AI Copilot](https://learn.microsoft.com/power-apps/maker/canvas-apps/ai-overview) control that is used in [canvas apps](https://learn.microsoft.com/power-apps/maker/canvas-apps/add-ai-copilot) and [model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-ai-copilot), including other Dynamics 365 applications. The control is embedded in the finance and operations client, hosted in the `SysCopilotChatPanel` form. It manages the communication between the finance and operations client and Microsoft Copilot Studio, and acts as the executor for client actions.
+
+### Orchestration with Microsoft Copilot Studio
+[Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) (MCS) provides the central AI orchestration of the capabilities in finance and operations apps. When a prompt is entered in the Copilot chat panel, it is sent to Copilot Studio, which then determines the intent of the prompt and which topics or plugins should be invoked to provide a response. Copilot Studio executes plugins, gets the required data, and provides an output in natural language that is returned back to the user in the Copilot interface.
+
+Copilot in finance and operations apps is bound to a single chatbot in Copilot Studio, called **Copilot in Finance and Operation**. The chatbot is deployed as part of the Copilot in Finance and Operations (msdyn_FnoCopilot) solution. See [Step 4: Install the Copilot application in your finance and operations apps environment](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot#step-4-install-the-copilot-application-in-your-finance-and-operations-apps-environment) for guidance on installing the solution and chatbot in your envioronment.
 
 ## Plugins
 Plugins are used to enable Copilot capabilities. From a technical perspective, a **plugin** is a package that includes a description of an API and instructions on how to use it. Conceptually, a plugin is something Copilot knows how to do. For example, if you want Copilot to be able to get customer balances, you create a plugin with a manifest that describes the capability, and knows which API to call to get the information to be returned to the user.
