@@ -19,6 +19,9 @@ ms.custom: bap-template
 ## Copilot architecture
 Copilot in finance and operations apps builds on [Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio), which provides the central AI orchestration of the Copilot capabilities. This framework enables you to extend the capabilities, creating powerful AI-powered experiences in finance and operations apps. 
 
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/22238733/77fe0b54-c896-41c2-b969-5a46e5c13194)
+
+
 ### Copilot interface
 The Copilot interface for the chat experience in finance and operations apps uses the same [AI Copilot](https://learn.microsoft.com/power-apps/maker/canvas-apps/ai-overview) control that is used in [canvas apps](https://learn.microsoft.com/power-apps/maker/canvas-apps/add-ai-copilot) and [model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-ai-copilot), including other Dynamics 365 applications. The control is embedded in the finance and operations client, hosted in the `SysCopilotChatPanel` form. It manages the communication between the finance and operations client and Microsoft Copilot Studio, and acts as the executor for client actions.
 
