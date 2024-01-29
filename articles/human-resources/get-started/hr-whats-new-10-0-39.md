@@ -37,6 +37,14 @@ This article lists features that are new or changed for Microsoft Dynamics 365 H
 - **General availability of release (self-update):** March 2024
 - **General availability of release (auto-update):** April 2024
 
+## Features included in this release
+
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
+
+| Feature name | Overview | Release status |
+|--------------|----------|----------------|
+|Six additional languages are available |	Six new languages are available for user selection in the preferred language list: Spanish (Bolivia), Spanish (Dominican Republic), Spanish (Ecuador), Spanish (Guatemala), Spanish (Peru), Spanish (Venezuela). To select this option, go to **User options** > **Preferences** > **Language and country/region preference**.|	Localized preference |
+
 ## Features turned on by default in this release
 
 The following table lists the features that are turned on by default or are now mandatory in version 10.0.39. Most features that have been turned on automatically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change is made to ensure that customers are using current functionality. In this way, as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they're determined to be essential.
