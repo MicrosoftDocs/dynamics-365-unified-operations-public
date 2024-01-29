@@ -30,6 +30,10 @@ To create an SSL certificate for a website based on the host name, follow these 
 1. Select **Create a Self-Signed Certificate**.
 1. Copy the thumbprint value of the new certificate for use later.
 
+> [!NOTE]
+> The SSL Certificate being used must contain the following KeyUsage property values: Digital Signature, Key Encipherment, Data Encripherment
+
+
 ## Install IIS components
 
 To install IIS components on the development machine, go to **Server Manager \> Local Server \> Manage \> Add roles and features**. Under **IIS**, confirm that the **Management Tools \> IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)** component is checked.
