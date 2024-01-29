@@ -29,56 +29,57 @@ Many different integration methodologies can be used for these three categories.
 
 ## <a name="master-data"></a>Master and reference data
 
-For consistent communication, several types of master and reference data must be synced and available to both systems. One being the product master data, which can be imported into Supply Chain Management via messages related to the product master data:
+For consistent communication, several types of master and reference data must be synced and available to both systems. One example is the product master data. This type of data can be imported into Supply Chain Management via the following messages that are related to product master data:
 
 - `SourceSystemProductMessages` – Used to create products and released products, including product masters for variants.
-- `SourceSystemProductVariantMessages` – Used to create variants for product masters having **ProductSubtype** = *ProductMaster*.
-- `SourceSystemProductSpecificUnitOfMeasureConversionMessages` – Used to create product-specific units-of-measure conversions.
-- `SourceSystemProductBarcodeMessages` – Used to create the product barcode setup.
+- `SourceSystemProductVariantMessages` – Used to create variants for product masters where **ProductSubtype** = *ProductMaster*.
+- `SourceSystemProductSpecificUnitOfMeasureConversionMessages` – Used to create product-specific unit-of-measure conversions.
+- `SourceSystemProductBarcodeMessages` – Used to create the product bar code setup.
 
 Like shipment orders, these messages are validated during message processing and automatically link the product information to a [source system record](wms-only-mode-setup.md#source-systems) via the *Source system items* entity. The external system can use [business events](#business-events) to monitor how the status of shipment order messages changes during message processing.
 
-Only one [source system record](wms-only-mode-setup.md#source-systems) can be marked as the external system that maintains the product master data related to the unique reference for a released product or item number. You can view and maintain this data using the **Source system items** page.
+Only one [source system record](wms-only-mode-setup.md#source-systems) can be marked as the external system that maintains the product master data that's related to the unique reference for a released product or item number. You can view and maintain this data by using the **Source system items** page.
 
 > [!TIP]
-> The **Source system item number** is used when communicating between the systems. This value is useful when, for example, an external system uses an EAN barcode as the unique identification number linked to an **Item/variant number** that has a different value. The *Source system item number* data is automatically created when using the previously listed messages.
+> The **Source system item number** field is used during communication between the systems. It's useful when, for example, an external system uses a European Article Number (EAN) bar code as the unique identification number that's linked to an **Item/variant number** field that has a different value. The *Source system item number* data is automatically created when the previously listed messages are used.
 >
-> When using the Warehouse Management mobile app, the value in the **Source system item number** field can also be used to look up the **Item/variant number** used internally.
+> When the Warehouse Management mobile app is used, the **Source system item number** value can also be used to look up the **Item/variant number** value that's used internally.
 
-You can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create the **Release product/Item number** to be used in warehouse management processes:
+You can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create the **Release product/Item number** value that's used in warehouse management processes:
 
 <!-- .40: Note that you can apply a [record template](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) as part of the product import to for example get the mandatory reference fields assigned: -->
 
-- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management. Therefore, at least one group must be available. The group can control business processes for batch-tracked items and we recommend that each item model group used with Warehouse management only mode have the following settings. These settings eliminate the need to set up any costing data for the products:
+- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management. Therefore, at least one group must be available. The group can control business processes for batch-tracked items. The following settings are recommended for every item model group that's used with Warehouse management only mode. These settings eliminate the need to set up any costing data for the products.
+
     - **Inventory model** – Set this field to *Non-valuated*.
     - **Post physical inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
     - **Post financial inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
 
-- **Item groups** – Can be used to group business processes, especially when using [product filter codes](filters-and-filter-codes). No account setup is needed when using *Non-valuated* inventory model groups.
+- **Item groups** – Can be used to group business processes, especially when [product filter codes](filters-and-filter-codes) are used. No account setup is required when *Non-valuated* inventory model groups are used.
 - **Storage dimension groups** – Enable the use of storage inventory dimensions values such as sites, warehouses, locations, and license plates. Be sure to enable the **Use warehouse management processes** parameter.
-- **Tracking dimension groups** – Enable the use of tracking inventory dimensions such as owner, batch, and serial numbers. Note that the *Owner* dimension must equal the company a warehouse is associated with. See also [Unsupported processes](wms-only-mode-overview.md#unsupported-processes).
-- **Reservation hierarchy** – Defines which dimensions are reserved during the outbound shipment order reservation process. Dimensions placed below the *Location* dimension are controlled by the warehouse management processes.
-- **Units** – Each quantity handled by a warehouse process must be associated with a unit. When using multiple units (such as each, box, and/or pallet) for an item, be sure to define the *inventory unit* as the smallest unit for an item.
+- **Tracking dimension groups** – Enable the use of tracking inventory dimensions such as owner, batch, and serial numbers. Note that the *Owner* dimension value must equal the company that a warehouse is associated with. For more information, see [Unsupported processes](wms-only-mode-overview.md#unsupported-processes).
+- **Reservation hierarchy** – Defines which dimensions are reserved during the outbound shipment order reservation process. Dimensions that are put below the *Location* dimension are controlled by the warehouse management processes.
+- **Units** – Each quantity that a warehouse process handles must be associated with a unit. When multiple units (such as each, box, and/or pallet) are used for an item, be sure to define the *inventory unit* as the smallest unit for the item.
 - **Unit sequence groups** – Define the sequence of units that can be used in warehouse operations. For more information about the required setup, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
 
 > [!NOTE]
-> The messages that create product master data use the [*product data entities*](../pim/data-entities.md), which can be used by themselves or to maintain product master data.
+> The messages that create product master data use the [*product data entities*](../pim/data-entities.md). These entities can be used by themselves, or they can be used to maintain product master data.
 
 ### Test creating products by using messages
 
-You can try submitting messages to create products by using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman).
+You can try to submit messages to create products by using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman).
 
 If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.
 
 ### Consigner and consignee information
 
-To make it easier to set up your warehouse operation, you can create and use data for *consigners* and *consignees* and their related group definitions. This could, for example, be for a process related to setting up a [quality order creation process](../inventory/quality-associations.md) for a specific consigner og consigner group.
+To make it easier to set up your warehouse operation, you can create and use data for *consigners* and *consignees* and their related group definitions. For example, you can use this approach for a process that's related to setting up a [quality order creation process](../inventory/quality-associations.md) for a specific consigner or consigner group.
 
-Neither the *Inbound shipment order policies* (which are part of the **Source systems** setup) nor inbound shipment order message processing require the fields for the **Consigner's account number** to exist in the entity for the **Consigners** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Consigners**). The same "free text" concept exists for the outbound shipment order process related to the **Consigner's account number**.
+Neither the *Inbound shipment order policies* (which are part of the **Source systems** setup) nor inbound shipment order message processing requires that the fields for the **Consigner's account number** value exist in the entity for the **Consigners** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Consigners**). The same "free text" concept exists for the outbound shipment order process that's related to the **Consigner's account number** value.
 
 ### Country/region
 
-To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for your warehouses and import outbound shipment orders, you must have [**country/region**](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) values defined in Supply Chain Management. These records are used in outbound shipment orders to create addresses. Depending on your [address setup](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might need to create additional data before you can import order messages (for example, to support state/province and county combinations).
+To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for your warehouses and import outbound shipment orders, you must have [**country/region**](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) values defined in Supply Chain Management. These records are used in outbound shipment orders to create addresses. Depending on your [address setup](../../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md) and the way that you use address fields in order messages, you might have to create additional data before you can import order messages (for example, to support state/province and county combinations).
 
 ## <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
 
@@ -88,7 +89,7 @@ Messages between systems are exchanged by using lightweight *inbound shipment or
 
 Inbound and outbound shipment order messages can be exchanged by using [Dataverse](/power-platform/admin/data-integrator). Alternatively, they can be exchanged through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities and/or by using the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process (for example, by using the *Inbound shipment order messages composite entity* and *Outbound shipment order messages composite entity*).
 
-Supply Chain Management queues the incoming documents and then processes them by using the [message processor](warehouse-message-processor-messages.md). This approach ensures consistent data between the systems&mdash;both for master data (such as products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job that the [message processor](../supply-chain-dev/message-processor.md) triggers by using the *Shipment orders* message queue.
+Supply Chain Management queues the incoming documents and then processes them by using the [message processor](warehouse-message-processor-messages.md). This approach ensures consistent data between the systems, both for master data (such as products) and order progress status. Therefore, Supply Chain Management inbound and outbound shipment orders are prevented from creating or updating nonvalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job that the [message processor](../supply-chain-dev/message-processor.md) triggers by using the *Shipment orders* message queue.
 
 This following illustration shows how the message processor fits into an integrated system.
 
@@ -182,7 +183,7 @@ Warehouse management only mode can generate data for an on-hand inventory reconc
 
 To create the header and line data, you must specify **Source system** and **As of date** values. You must also select the level of inventory dimensions that the report should be generated for.
 
-When inventory related to *inbound shipment orders* is received, the on-hand inventory is physically updated based on the status of the registered inventory transactions and when inventory is shipped via *outbound shipment orders*, the physical on-hand inventory is reduced based on the `Picked` inventory transactions. This physical inventory on-hand representation of the registered and picked items will remain until the related *Shipment receipt* and *Shipment packing slip* journals are posted as part of the [background finalization processes](wms-only-mode-setup.md#background-processes). To include this part of the physical on-hand inventory in the export, be sure to enable the **Include Registered and Picked inventory quantities** setting.
+When inventory that's related to *inbound shipment orders* is received, the on-hand inventory is physically updated based on the status of the registered inventory transactions. When inventory is shipped via *outbound shipment orders*, the physical on-hand inventory is reduced based on the `Picked` inventory transactions. This physical inventory on-hand representation of the registered and picked items remains until the related *Shipment receipt* and *Shipment packing slip* journals are posted as part of the [background finalization processes](wms-only-mode-setup.md#background-processes). To include this part of the physical on-hand inventory in the export, be sure to enable the **Include Registered and Picked inventory quantities** parameter.
 
 The external system will be informed about the available data via the `WHSSourceSystemInventoryOnhandReportBusinessEvent` business event. It can read the data via the `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines` data entities.
 
@@ -191,11 +192,11 @@ The external system will be informed about the available data via the `WHSSource
 
 ## Warehouse inventory update logs
 
-For integrations that require very quick on-hand inventory synchronization processes, you can use the **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**. This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
+For integrations that require very quick on-hand inventory synchronization processes, you can use the Warehouse inventory update log (at **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
 
-To keep the external systems updated about inventory transactions updates related the inbound and outbound shipment orders, make sure to enable the **Source systems** parameter **Enable warehouse inventory update logs** for both inbound and outbound shipment orders.
+To keep the external systems updated about inventory transactions updates that are related to inbound and outbound shipment orders, enable the **Source systems** **Enable warehouse inventory update logs** parameter for both inbound and outbound shipment orders.
 
-> [!NOTE]
-> Make sure uptake the updates in the external systems in a way not resulting in double updates in combination with the data used as part of the [*Shipment receipts*](wms-only-mode-using.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-using.md#shipment-packing-slips) messages when have *Enable warehouse inventory update logs* activated.
+> [!IMPORTANT]
+> Be sure to uptake the updates in the external systems in such a way that they don't cause double updates in combination with the data that's used as part of the [*Shipment receipts*](wms-only-mode-using.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-using.md#shipment-packing-slips) messages when the **Enable warehouse inventory update logs** parameter is enabled.
 
 By default, the *Publish warehouse inventory update log updates* background process is set to run every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.
