@@ -96,4 +96,9 @@ To import filtered configurations, follow these steps.
 >
 > ER configurations can be configured as dependent on other configurations. Therefore, when you import a selected configuration, other configurations might be automatically imported. For more information about configuration dependencies, see [Define the dependency of ER configurations on other components](../../../../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
 
+## Related resources
+
+- [Get started with Tax Calculation - Hibh-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
+- [Globalization feature components](../e-invoicing-working-globalization-features)
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
