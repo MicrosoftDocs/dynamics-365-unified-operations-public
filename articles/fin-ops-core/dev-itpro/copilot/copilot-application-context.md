@@ -27,8 +27,7 @@ The navigation context provides the list of the finance and operations navigatio
 **Variable name**: Global.PA_Copilot_ServerForm_NavigationContext<br>
 **Type**: Table
 
-**Properties**
-
+**Properties**<br>
 | Name | Type | Description| 
 | --- | --- | --- |
 | DisplayName | String | The display name of the application menu item. |
@@ -67,8 +66,7 @@ The page context is the page open for the user in the current session.
 **Variable name**: Global.PA_Copilot_ServerForm_PageContext<br>
 **Type**: Record
 
-**Properties**
-
+**Properties**<br>
 | Name | Type | Description| 
 | --- | --- | --- |
 | caption | String | The page caption of the current page. |
@@ -88,8 +86,7 @@ This provides contextual information about the user.
 **Variable name**: Global.PA_Copilot_ServerForm_UserContext<br>
 **Type**: Record
 
-**Properties**
-
+**Properties**<br>
 | Name | Type | Description| 
 | --- | --- | --- |
 | dataAreaId | String | The legal entity the user is currently signed into.  |
