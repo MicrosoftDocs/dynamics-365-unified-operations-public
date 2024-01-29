@@ -27544,6 +27544,41 @@
       "redirect_url": "/training/dynamics365/scm",
       "redirect_document_id": false
     },
+     {
+      "source_path": "finance/business-performance-analytics/BPA-self-help-2.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-budget-err00002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "finance/business-performance-analytics/bpa-help-overview.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-3.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-main-account-in-budget-err00003",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-4.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-journal-entries-err00004",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-5.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/mismatch-between-debits-and-credits-err00005",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-6.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-data-err00006",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-7.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-transaction-header-err00007",
+      "redirect_document_id": false
+    },
     {
       "source_path": "articles/commerce/cost.md",
       "redirect_url": "/dynamics365/commerce/dom-costs",
