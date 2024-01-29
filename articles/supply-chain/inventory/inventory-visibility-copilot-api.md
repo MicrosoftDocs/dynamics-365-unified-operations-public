@@ -49,7 +49,7 @@ To use natural-language inventory search with Copilot API, your system must meet
 
 - You must be running Inventory Visibility version 1.2.2.54 or newer.
 
-To use natural-language inventory search with Copilot Sidecar, your system must meet the following requirement:
+To use the Copilot sidecar panel in the Inventory Visibility app, your system must meet the following requirement:
 
 - You must be running Inventory Visibility version 1.2.2.127 or newer.
 
@@ -62,18 +62,18 @@ To use natural-language inventory search with Copilot Sidecar, your system must 
 
 Users of the Inventory Visibility app can use Copilot to ask questions about inventory and receive answers in real time. The following sections describe how to use Copilot in the Inventory Visibility app.
 
-
 ### Open the Copilot panel
 
-In a browser, navigatate to a Inventory Visibility app in the environment and add below parameters in the URL to enable Copilot panel on page load:
+Follow these steps to open the Copilot sidecar panel in the Inventory Visibility app.
 
- ```Parameters
-{
-&flags=FCB.InitializeCopilotSidePaneOnBoot%3Dtrue%2CFCB.UsePVAInCopilot%3Dtrue%2CFCB.IsPPAPIHostedBotEnabled%3Dtrue&useServerResources=true
-}
-```
-To open the Copilot panel from anywhere in the Inventory Visibility app, select the **Copilot** button :::image type="icon" source="media/copilot-icon.png" border="false"::: in the top-right corner.
+1. In Power Apps, open the **Inventory Visibility** app.
+1. In the **Address** field of your browser, append the following parameters to the URL to enable the Copilot sidecar panel to load.
 
+    ```text
+    &flags=FCB.InitializeCopilotSidePaneOnBoot%3Dtrue%2CFCB.UsePVAInCopilot%3Dtrue%2CFCB.IsPPAPIHostedBotEnabled%3Dtrue&useServerResources=true
+    ```
+
+1. To open the panel, select the **Copilot** button :::image type="icon" source="media/copilot-icon.png" border="false"::: in the top-right corner.
 
 ### Chat with Copilot
 
