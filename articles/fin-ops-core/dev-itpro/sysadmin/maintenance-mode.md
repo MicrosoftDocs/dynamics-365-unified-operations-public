@@ -43,13 +43,13 @@ To turn maintenance mode on and off directly through Lifecycle Services, follow 
 1. Go to the environment details page and on the **Maintain** menu, click **Enable Maintenance Mode**. 
 2. In the slider, set **Turn maintenance mode on** for the environment and select **Confirm**.
 3. A servicing operation begins and your system  goes into maintenance mode.
-4. On completion, the environment state is **In Maintenance**. At this point, only the system administrator have access to the environment.
+4. On completion, the environment state is **In Maintenance**. At this point, only the system administrator has access to the environment.
 5. After you're done making system-wide changes, you can turn off maintenance mode by clicking **Disable Maintenance Mode** under the **Maintain** menu.
 6. A servicing operation starts and takes your environment out of maintenance mode. You can see the progress of the operation in the environment details page.
-7. After this is complete, your environment goes back to the **Deployed** state. Now all users can sign in to the environment.
+7. When complete, your environment goes back to the **Deployed** state. Now all users can sign in to the environment.
 8. You can check the environment history page to see when the maintenance mode was turned on or turned off. To get to the environment history page, select **History** and **Environment changes** on the environment details page.
 
-Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you'll see options such as **Resume**, **Rollback**, and **Abort**. You can also **download the logs** to troubleshoot why the operation failed.
+Turning maintenance mode on and off for your sandbox and production environment is similar to a servicing operation. If turning maintenance mode on or off fails, you see options such as **Resume**, **Rollback**, and **Abort**. You can also **download the logs** to troubleshoot why the operation failed.
 
 ## Turn maintenance mode on and off in DevTest/Demo environments hosted in Customer's subscription
 1. Establish an RDP connection to the developer machine.
@@ -100,7 +100,7 @@ Ensure you have at least version 2.18.2 of the infrastructure scripts. For more 
 > The script restarts all of your Application Object Server (AOS) instances.
 
 1. After your AOS instances are running again, the system is in maintenance mode.
-1. When you've completed your maintenance mode activities, run the following script from any node in your Service Fabric cluster.
+1. When you complete your maintenance mode activities, run the following script from any node in your Service Fabric cluster.
 ```powershell
 .\Set-MaintenanceMode.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Disable
 ```
