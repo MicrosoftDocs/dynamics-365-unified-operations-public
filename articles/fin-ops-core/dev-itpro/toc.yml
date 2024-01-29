@@ -2208,6 +2208,7 @@ items:
         href: copilot/enable-copilot.md
       - name: Extending Copilot capabilities in finance and operations apps
         href: copilot/extend-copilot.md
+        items:
         - name: Architecture of Copilot in finance and operations
           href: copilot/copilot-architecture.md
         - name: Using application context with Copilot
