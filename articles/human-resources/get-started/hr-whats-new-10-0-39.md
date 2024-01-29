@@ -91,4 +91,4 @@ The following table lists the features that have been removed from Feature manag
 | Leave accrual transaction auditing | The related functionality is enabled out of the box. | Leave and absence |
 | Use an employee's FTE for accruals (Leave) | The related functionality is enabled out of the box.| Leave and absence |
 | Absence manager to manage leave | The related functionality is enabled out of the box. | Leave and absence |
-| View all workers without employment | The related functionality is enabled out of the box. | |
+| View all workers without employment | The related functionality is enabled out of the box. | Personnel management |
