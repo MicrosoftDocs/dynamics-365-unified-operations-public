@@ -41,7 +41,7 @@ To use Tax Calculation, install the Tax Calculation add-in from your project in 
 > For new environments with 10.0.39 and higher version, installing of the TCS add-in in LCS won't be required.
 
 > [!IMPORTANT]
-> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39. ([More info](merge-rcs-to-gsw.md)
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39. ([More info](merge-rcs-to-gsw.md))
 >
 > If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
 
@@ -89,6 +89,10 @@ We recommend that you import and set up your Tax Calculation configuration with 
 ## Data flow
 
 Here is an outline of the data flow process for Tax Calculation. 
+> [!IMPORTANT]
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39. ([More info](merge-rcs-to-gsw.md))
+>
+> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
 
 1. In RCS, view and import taxable document model configurations and model mapping configurations. If you must extend configurations for an advanced scenario, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 2. In RCS, create or maintain tax features. You can use tax features to maintain tax rates and tax applicability rules.
