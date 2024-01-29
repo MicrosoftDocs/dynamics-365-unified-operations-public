@@ -50,10 +50,10 @@ The following table shows the high-level train schedule. It includes a descripti
 |---|---|---|---|
 | 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Completed |
 | 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Completed |
-| 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| In-Progress |
-| 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to January 14, 2023| In-Progress |
-| 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Not Started |
-| 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 14, 2024| In-Progress |
+| 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Completed |
+| 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to January 14, 2023| Completed |
+| 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| In-Progress |
+| 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 14, 2024| Completed |
 | 10.0.37 PQU-2 | December 30, 2023 | January 8, 2024 to February 11, 2024| In-Progress |
 | 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
 | 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
@@ -103,22 +103,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.36 Release-2 train schedule
-
-**App version: 10.0.1695.90**
-
-**Platform version: 7.0.7036.113**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | November 6 to November 9, 2023 | NA |
-| Station 2 | November 13 to November 16, 2023 | December 2 to December 3, 2023 |
-| Station 3 | November 14 to November 17, 2023 | December 2 to December 3, 2023 |
-| Station 4 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
-| Station 5 | December 11 to December 14, 2023 | January 13 to January 14, 2023 |
-| Station 6 | December 12 to December 15, 2023 | January 13 to January 14, 2023 |
-
-### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.36 Release-3 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.36 Release-3 train schedule
 
 **App version: 10.0.1695.148**
 
@@ -132,21 +117,6 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | February 5 to February 8, 2024 | February 17 to February 18, 2024 |
 | Station 5 | February 12 to February 15, 2024 | February 24 to February 25, 2024 |
 | Station 6 | February 13 to February 16, 2024 | February 24 to February 25, 2024 |
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-1 train schedule
-
-**App version: 10.0.1725.73**
-
-**Platform version: 7.0.7068.99**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | November 13 to November 16, 2023 | NA |
-| Station 2 | November 29 to December 2, 2023 | December 9 to December 10, 2023 |
-| Station 3 | November 30 to December 3, 2023 | December 9 to December 10, 2023 |
-| Station 4 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
-| Station 5 | December 11 to December 14, 2023 | January 13 to January 14, 2024 |
-| Station 6 | December 12 to December 15, 2023 | January 13 to January 14, 2024 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-2 train schedule
 
@@ -162,6 +132,21 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | January 22 to January 25, 2024 | February 3 to February 4, 2024 |
 | Station 5 | January 29 to February 1, 2024 | February 10 to February 11, 2024 |
 | Station 6 | January 30 to February 2, 2024 | February 10 to February 11, 2024 |
+
+### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.37 Release-3 train schedule
+
+**App version: 10.0.1725.146**
+
+**Platform version: 7.0.7068.154**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | February 5 to February 8, 2024 | NA |
+| Station 2 | February 12 to February 15, 2024 | February 24 to February 25, 2024 |
+| Station 3 | February 13 to February 16, 2024 | February 24 to February 25, 2024 |
+| Station 4 | February 19 to February 22, 2024 | March 2 to March 3, 2024 |
+| Station 5 | February 26 to February 29, 2024 | March 9 to March 10, 2024 |
+| Station 6 | February 27 to March 1, 2024 | March 9 to March 10, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
