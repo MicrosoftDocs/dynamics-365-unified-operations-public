@@ -43,7 +43,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature name | Overview | Release status |
 |--------------|----------|----------------|
-|Six additional languages are available |	Six new languages are available for user selection in the preferred language list: Spanish (Bolivia), Spanish (Dominican Republic), Spanish (Ecuador), Spanish (Guatemala), Spanish (Peru), Spanish (Venezuela). To select this option, go to **User options** > **Preferences** > **Language and country/region preference**.|	Localized preference |
+| Six additional languages are available | Six new languages are available for user selection in the preferred language list: Spanish (Bolivia), Spanish (Dominican Republic), Spanish (Ecuador), Spanish (Guatemala), Spanish (Peru), and Spanish (Venezuela). To select a language, go to **User options** \> **Preferences** \> **Language and country/region preference**. | Localized preference |
 
 ## Features turned on by default in this release
 
@@ -51,17 +51,17 @@ The following table lists the features that are turned on by default or are now 
 
 | Feature name | Enable date | Feature state | Module |
 |--------------|-------------|---------------|--------|
-|Advanced address maintenance|	1/27/2024|	Mandatory	|Human Resources|
-|(Russia)| Import addresses from the State Address Register (GAR)|	1/27/2024	|Mandatory	|Human Resources|
-|Cross company compensation view	|1/27/2024	|Mandatory|	Human Resources|
-|Absence manager to manage leave of absence requests|	1/27/2024|	On by default	|Human Resources|
-|Set job description on the Position and Forecast position pages be read-only|	1/27/2024	|Mandatory|	Human Resources|
-|Configure leave units per leave type|	1/27/2024|	Mandatory	|Human Resources|
-|Inclusion of weekends and holidays for leave and absence	|1/27/2024|	On by default|	Human Resources|
-|Leave and absence accrual suspension|	1/27/2024	|On by default|	Human Resources|
-|Leave carry-forward rules	|1/27/2024|	On by default|	Human Resources|
-|Hide leave balances	|1/27/2024	|On by default|	Human Resources|
-|Configure working time for service level agreements in Case management	|1/27/2024|	On by default	|Human Resources|
+| Advanced address maintenance | January 27, 2024 | Mandatory | Human Resources |
+| (Russia) Import addresses from the State Address Register (GAR) | January 27, 2024 | Mandatory | Human Resources |
+| Cross company compensation view | January 27, 2024 | Mandatory | Human Resources |
+| Absence manager to manage leave of absence requests | January 27, 2024 | On by default | Human Resources |
+| Set job description on the Position and Forecast position pages be read-only | January 27, 2024 | Mandatory | Human Resources |
+| Configure leave units per leave type | January 27, 2024 | Mandatory | Human Resources |
+| Inclusion of weekends and holidays for leave and absence | January 27, 2024 | On by default | Human Resources |
+| Leave and absence accrual suspension | January 27, 2024 | On by default | Human Resources |
+| Leave carry-forward rules | January 27, 2024 | On by default | Human Resources |
+| Hide leave balances | January 27, 2024 | On by default | Human Resources |
+| Configure working time for service level agreements in Case management | January 27, 2024 | On by default | Human Resources |
 
 ## Features removed from Feature management
 
@@ -69,32 +69,26 @@ The following table lists the features that have been removed from Feature manag
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
-|Enable translation for the Country/Region component of the Russian address format	|The related functionality is enabled out of the box.| Global address book |
-|Human resources user experience enhancements|	The related functionality is enabled out of the box.| Human Resources |
-|Years of service calculation|	The related functionality is enabled out of the box.| Personnel management| 
-|Workflow experience enhancements	|The related functionality is enabled out of the box.|Human Resources |
-|Leave accrual holiday corrections	|The related functionality is enabled out of the box.|Leave and absence |
-|Custom links in Manager self service	|The related functionality is enabled out of the box.| Manager self service |
-|Payroll integration	|The related functionality is enabled out of the box.| Payroll |
-|Parent Party relationship update	|The related functionality is enabled out of the box.| Global address book |
-|Update time off enhancements (Leave)|	The related functionality is enabled out of the box.|Leave and absence |
-|Leave and absence calendar	|The related functionality is enabled out of the box.|Leave and absence |
-|Leave and absence calendar enhancements|	The related functionality is enabled out of the box.|Leave and absence |
-|Cross company leave view	|The related functionality is enabled out of the box.|Leave and absence |
-|Leave accrual transaction auditing	|The related functionality is enabled out of the box.|Leave and absence |
-|Configure required attachment for leave requests	|The related functionality is enabled out of the box.|Leave and absence |
-|Leave accrual auditing|	The related functionality is enabled out of the box.|Leave and absence |
-|Leave accrual deletion	|The related functionality is enabled out of the box.|Leave and absence |
-|Leave accrual for a single company or a single plan	|The related functionality is enabled out of the box.|Leave and absence |
-|Leave accrual holiday corrections	|The related functionality is enabled out of the box.|Leave and absence |
-|Leave accrual rounding	 |The related functionality is enabled out of the box.|Leave and absence |
-|Leave accrual transaction auditing|	The related functionality is enabled out of the box.|Leave and absence |
-|Use an employee's FTE for accruals (Leave)	|The related functionality is enabled out of the box.|Leave and absence |
-|Absence manager to manage leave	|The related functionality is enabled out of the box.|Leave and absence |
-|View all workers without employment	|The related functionality is enabled out of the box.|
-
-
-
-
-
-
+| Enable translation for the Country/Region component of the Russian address format | The related functionality is enabled out of the box. | Global address book |
+| Human resources user experience enhancements | The related functionality is enabled out of the box. | Human Resources |
+| Years of service calculation | The related functionality is enabled out of the box. | Personnel management | 
+| Workflow experience enhancements | The related functionality is enabled out of the box. | Human Resources |
+| Leave accrual holiday corrections | The related functionality is enabled out of the box. | Leave and absence |
+| Custom links in Manager self service | The related functionality is enabled out of the box. | Manager self service |
+| Payroll integration | The related functionality is enabled out of the box. | Payroll |
+| Parent Party relationship update | The related functionality is enabled out of the box. | Global address book |
+| Update time off enhancements (Leave) | The related functionality is enabled out of the box. | Leave and absence |
+| Leave and absence calendar | The related functionality is enabled out of the box. | Leave and absence |
+| Leave and absence calendar enhancements | The related functionality is enabled out of the box. | Leave and absence |
+| Cross company leave view | The related functionality is enabled out of the box. | Leave and absence |
+| Leave accrual transaction auditing | The related functionality is enabled out of the box. | Leave and absence |
+| Configure required attachment for leave requests | The related functionality is enabled out of the box. | Leave and absence |
+| Leave accrual auditing | The related functionality is enabled out of the box. | Leave and absence |
+| Leave accrual deletion | The related functionality is enabled out of the box. | Leave and absence |
+| Leave accrual for a single company or a single plan | The related functionality is enabled out of the box. | Leave and absence |
+| Leave accrual holiday corrections | The related functionality is enabled out of the box. | Leave and absence |
+| Leave accrual rounding | The related functionality is enabled out of the box. | Leave and absence |
+| Leave accrual transaction auditing | The related functionality is enabled out of the box. | Leave and absence |
+| Use an employee's FTE for accruals (Leave) | The related functionality is enabled out of the box.| Leave and absence |
+| Absence manager to manage leave | The related functionality is enabled out of the box. | Leave and absence |
+| View all workers without employment | The related functionality is enabled out of the box. | |
