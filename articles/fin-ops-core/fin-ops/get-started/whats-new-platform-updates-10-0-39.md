@@ -55,7 +55,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2023 release wave 2 plan](/dynamics365/release-plan/2023wave2/). All of the details, end to end, top to bottom, are captured in a single document that you can use for planning.
+Check out the [Dynamics 365: 2024 release wave 1 plan](/dynamics365/release-plan/2024wave1/). All of the details, end to end, top to bottom, are captured in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 
