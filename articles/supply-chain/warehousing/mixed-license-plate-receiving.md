@@ -106,6 +106,6 @@ If you set the **Label printing on confirming receiving** option so that labels 
 If an *Execute deferred receiving* batch job fails, the related **Mixed license plate receiving status** field is set to *Error*. To view the reason for the failure, select the failed job, and then select **Processing errors**. Take the appropriate action to address the error (for example, by updating a line quantity or deleting a line). Then manually rerun the process by selecting **Complete license plate**.
 
 > [!TIP]
-> If you want the page to show the **Receiving processing ID** value that's used for each background processing task, use the [personalization tools](../../fin-ops-core/dev-itpro/get-started/personalize-user-experience#personalization-tools.md) to add the column to the **Mixed license plate receiving** grid.
+> If you want the page to show the **Receiving processing ID** value that's used for each background processing task, use the [personalization tools](../../fin-ops-core/dev-itpro/get-started/personalize-user-experience.md#personalization-tools) to add the column to the **Mixed license plate receiving** grid.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
