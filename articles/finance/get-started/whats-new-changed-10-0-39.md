@@ -145,7 +145,7 @@ For information about regulatory updates for finance and operations apps, see [R
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2023 release wave 2 plan](/dynamics365-release-plan/2024wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2024 release wave 2 plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 ### Removed and deprecated features
 
