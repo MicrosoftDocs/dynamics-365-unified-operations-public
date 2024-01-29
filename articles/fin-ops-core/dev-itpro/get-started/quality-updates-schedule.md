@@ -4,7 +4,7 @@ description: This article provides the release schedule for proactive quality up
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 11/15/2023
+ms.date: 01/29/2024
 ms.custom: bap-template
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -21,9 +21,9 @@ This article provides the release schedule for proactive quality updates (PQUs).
 
 The detailed schedule for each PQU train and its corresponding build app version number is published five days before the start of the PQU train. Five days before a PQU is applied, Microsoft sends a notification to customers who use the environments that will receive the update.
 
-Station 1 is the first release station. It consists of customers who opt in to have their sandbox environments receive the update before all other stations. More details will be published after this functionality is made generally available in May 2023.
+Station 1 is the first release station. It consists of customers who opt in to have their sandbox environments receive the update before all other stations. More details are published after this functionality is made generally available in May 2023.
 
-To determine when your Microsoft Dynamics Lifecycle Service environment will be updated, find the region and the station-to-region mapping, and cross-reference that information with the upcoming PQU train for a service update. For customers that must plan for a PQU ahead of time, there's a high-level schedule that outlines the train schedule for every service update in 2023.
+To determine when your Microsoft Dynamics Lifecycle Service environment is updated, find the region and the station-to-region mapping. Cross-reference thhe region and station-to-region mapping information with the upcoming PQU train for a service update. For customers that must plan for a PQU ahead of time, there's a high-level schedule that outlines the train schedule for every service update in 2023.
 
 For information about the maintenance windows for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows)
 
@@ -40,7 +40,7 @@ For information about the maintenance windows for each region, see [What are the
 
 > [!IMPORTANT]
 > 1. The PQU build for every train is typically published to Lifecycle Services after the change cutoff date that's shown in the following high-level PQU train schedule. In this way, customers can download and self-apply the build as needed, to frontload any testing requirements. 
-> 2. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments will receive PQUs on weekends. If a PQU of production environment, Standard performance test (tier4), or Premium performance test (tier5) sandboxes didn't complete on the scheduled weekend then the operation gets rescheduled to the next weekend.
+> 2. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments receive PQUs on weekends. If a PQU of production environment, Standard performance test (tier4), or Premium performance test (tier5) sandboxes didn't complete on the scheduled weekend then the operation gets rescheduled to the next weekend.
 
 ## High-level PQU train schedule
 
