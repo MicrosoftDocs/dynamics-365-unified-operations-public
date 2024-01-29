@@ -30,8 +30,8 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Huma
 
 See the release plans for what's coming. Choose the following links to learn about the latest versions of Human Resources.
 
-- [2024 release wave 1](/dynamics365-release-plan/2024wave1/human-resources/dynamics365-human-resources/planned-features)  
-- [2023 release wave 2](/dynamics365-release-plan/2023wave2/human-resources/dynamics365-human-resources/planned-features)  
+- [2024 release wave 1](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-human-resources)  
+- [2023 release wave 2](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-human-resources)  
 
 Keep track of changes on the [Dynamics 365 Human Resources release planner](https://experience.dynamics.com/releaseplans/?app=Human+Resources) site, or download the release plan as a single PDF.  
 
