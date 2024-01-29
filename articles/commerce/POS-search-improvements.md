@@ -8,7 +8,6 @@ ms.date: 08/03/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 141393
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2017-06-30

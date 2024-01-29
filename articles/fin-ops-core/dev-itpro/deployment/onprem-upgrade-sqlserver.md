@@ -6,8 +6,7 @@ description: This article explains how to upgrade the Microsoft SQL Server insta
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global

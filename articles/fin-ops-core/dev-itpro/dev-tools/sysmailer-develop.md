@@ -10,7 +10,6 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 270774
 ---
 
 # Develop email experiences by using the SysMailer framework

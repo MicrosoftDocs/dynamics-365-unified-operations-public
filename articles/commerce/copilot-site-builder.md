@@ -2,14 +2,15 @@
 title: Use Copilot in site builder to enrich product detail pages
 description: This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 01/12/2024
+ms.date: 01/19/2024
 ms.topic: article
 audience: Application user
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Use Copilot in site builder to enrich product detail pages
@@ -19,7 +20,7 @@ ms.search.validFrom: 2019-10-31
 This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
 
 > [!NOTE]
-> As of Commerce version 10.0.38, a preview of Copilot in site builder is available for United States customers. This preview supports only the English language (en-us) locale. Support for additional regions and locales is planned for future releases.
+> As of October 2023, a preview of Copilot in site builder is available for United States customers. This preview supports only the English language (en-us) locale. Support for additional regions and locales is planned for future releases.
 
 If you run an e-commerce website, you know the importance of engaging and persuasive product enrichment and marketing content that can attract and convert your customers. However, it can be time-consuming and challenging to create such content, especially if you have a large product catalog and a diverse audience. To help with content creation, Microsoft introduced Copilot in site builder, a new AI-powered tool that helps you easily and efficiently generate high-quality content.
 
@@ -74,6 +75,9 @@ To choose tone options and preselect default tones in site builder, follow these
 1. Under **Tones**, select **Edit**.
 1. Select **Choose tones**. 
 1. On the **Tones** flyout menu, select up to five tones, and then select **Apply**.
+
+    ![Choose tones in site builder](media/choose-tones.png)
+
 1. Under **Chosen tones**, select any tones that you want to preselect as default tones.
 1. On the command bar, select **Save**.
 
@@ -85,8 +89,11 @@ To choose target client options and preselect default target clients in site bui
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Target clients**, select **Edit**.
-1. Select **Choose tones**.
+1. Select **Choose target clients**.
 1. On the **Target clients** flyout menu, select up to five target clients, and then select **Apply**.
+
+    ![Choose target clients in site builder](media/choose-target-clients.png)
+
 1. Under **Chosen target clients**, select any target clients that you want to preselect as default target clients.
 1. On the command bar, select **Save**.
 

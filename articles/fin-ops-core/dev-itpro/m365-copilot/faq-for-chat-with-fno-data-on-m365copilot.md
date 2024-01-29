@@ -8,6 +8,8 @@ ms.date: 10/27/2023
 ms.topic: conceptual
 ms.prod:
 ms.technology: 
+ms.collection:
+  - bap-ai-copilot
 
 # optional metadata
 

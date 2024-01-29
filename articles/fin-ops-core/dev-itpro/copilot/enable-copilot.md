@@ -10,6 +10,8 @@ ms.date: 11/09/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Enable Copilot capabilities in finance and operations apps (preview)
@@ -77,9 +79,6 @@ Follow these steps to enable your finance and operations apps to access your Dat
 1. Set **Finance and Operations in Dataverse** to *On*.
 
 ## Step 4: Install the Copilot application in your finance and operations apps environment
-
-> [!NOTE]
-> During the preview phase, the Copilot application can be installed only for environments on tenants that are hosted in the United States.
 
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 

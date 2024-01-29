@@ -12,7 +12,6 @@ ms.search.region: Poland
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 263424
 ---
 
 # Line discount calculation from the unit price for Poland

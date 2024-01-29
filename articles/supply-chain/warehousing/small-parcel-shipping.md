@@ -49,11 +49,32 @@ Supply Chain Management doesn't include any rate engines. You must obtain or cre
 
 #### Download and deploy the demo rate engine
 
-Follow these steps to get the demo rate engine.
+Follow these steps to download and deploy the demo rate engine.
 
 1. On GitHub, download the [dynamic-link library (DLL) for the demo rate engine](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/SCM/SPS).
-1. On your Supply Chain Management server, save the DLL in the 
-**\\AOSService\\PackagesLocalDirectory\\ApplicationSuite\\bin** folder.
+
+1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Model Management \> Create Model**.
+
+1. Create a new model called *TMSSmallParcelShippingDemo* and make it reference the *ApplicationSuite* and *ApplicationPlatform* models in the select referenced packages step.
+
+    :::image type="content" source="media/visual-studio-create-model.png" alt-text="Create a model in Visual Studio":::
+
+1. Create a project in the new model and add the downloaded `TMSSmallParcelShippingEngine.dll` file to the references for the new project.
+
+    :::image type="content" source="media/visual-studio-solution-explorer.png" alt-text="The solution explorer in Visual Studio":::
+
+1. On the **Solution Explorer** pane, right-click and select **Build Solution** to compile the project and make sure the reference is added to the AOT node.
+
+    :::image type="content" source="media/visual-studio-aot-node.png" alt-text="The AOT node in Visual Studio":::
+
+1. Go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model.
+
+1. In Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to LCS.
+
+1. After the validation completes, go to **Environments \> {Your Environment ID} \> Maintain \> Apply updates**, select the deployable package, and apply.
+
+> [!NOTE]
+> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, please contact your LCS administrator for support.
 
 #### Create and deploy functional rate engines
 

@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2023-12-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 264824
 ms.search.form: nemhandel, NemHandelsRegistret, notification, registration, denmark
 ---
 
