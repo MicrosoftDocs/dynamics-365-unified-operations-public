@@ -27579,6 +27579,11 @@
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-transaction-header-err00007",
       "redirect_document_id": false
     },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-1.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-general-ledger-err00001",
+      "redirect_document_id": false
+    },
     {
       "source_path": "articles/commerce/cost.md",
       "redirect_url": "/dynamics365/commerce/dom-costs",
