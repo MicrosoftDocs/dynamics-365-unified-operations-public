@@ -55,7 +55,7 @@ You can import the required master data into Supply Chain Management by using [d
     - **Post physical inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
     - **Post financial inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
 
-- **Item groups** – Can be used to group business processes, especially when [product filter codes](filters-and-filter-codes) are used. No account setup is required when *Non-valuated* inventory model groups are used.
+- **Item groups** – Can be used to group business processes, especially when [product filter codes](filters-and-filter-codes.md) are used. No account setup is required when *Non-valuated* inventory model groups are used.
 - **Storage dimension groups** – Enable the use of storage inventory dimensions values such as sites, warehouses, locations, and license plates. Be sure to enable the **Use warehouse management processes** parameter.
 - **Tracking dimension groups** – Enable the use of tracking inventory dimensions such as owner, batch, and serial numbers. Note that the *Owner* dimension value must equal the company that a warehouse is associated with. For more information, see [Unsupported processes](wms-only-mode-overview.md#unsupported-processes).
 - **Reservation hierarchy** – Defines which dimensions are reserved during the outbound shipment order reservation process. Dimensions that are put below the *Location* dimension are controlled by the warehouse management processes.
