@@ -51,7 +51,7 @@ To use natural-language inventory search with Copilot API, your system must meet
 
 To use the Copilot sidecar panel in the Inventory Visibility app, your system must meet the following requirement:
 
-- You must be running Inventory Visibility version 1.2.2.127 or newer.
+- You must be running Inventory Visibility version 1.2.2.122 or newer.
 
 ## Country/region availability and language support
 
