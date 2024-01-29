@@ -65,7 +65,7 @@ Users of the Inventory Visibility app can use Copilot to ask questions about inv
 
 ### Open the Copilot panel
 
-In a browser, navigate to a Inventory Visibility app in the environment and add below parameters in the URL to enable Copilot panel on page load:
+In a browser, navigate to an Inventory Visibility app in the environment and add below parameters in the URL to enable Copilot panel on page load:
 
  ```Parameters
 {
