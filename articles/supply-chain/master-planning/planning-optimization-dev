@@ -1,0 +1,28 @@
+---
+# required metadata
+
+title: Unified developer experience for planning optimization (preview)
+description: This article provides information about the development experience for planning optimization. 
+author: bahbal
+ms.date: 01/02/2024
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+---
+
+[!include [banner](../includes/banner.md)]
+
+[This article is pre-release documentation and is subject to change.]
+
+Recently, the unified developer experience is introduced by Power Platform that you can use the same tools and environments for writing and debugging your extensions for Planning optimization. 
+For more information, please visit: [Unified developer experience for finance and operations apps](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview).
+
+> [!Important]
+> This is a preview feature.
+> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+## Scenario
+
+Planning optimization provides extensibility scenarios when master planning is completed. These extensibilities can be implemented by developer and also can be tested with Planning optimization service connected unified development environments.
+
