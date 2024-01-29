@@ -1,5 +1,5 @@
 ---
-title: User-based authentication
+title: User-based authentication for the Warehouse Management mobile app
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using user-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
@@ -12,13 +12,16 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# User-based authentication
+# User-based authentication for the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
-The Warehouse Management mobile app supports the following type of user-based authentication:
+The Warehouse Management mobile app supports the following types of user-based authentication:
 
 - Device code flow authentication
+- User name and password authentication
+
+## Device code flow authentication
 
 When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Microsoft Entra ID user account.
 
@@ -42,9 +45,25 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. In the **Manage** list, select **App registrations**.
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
-1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
+1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID is referred to later in this article as the *client ID*.
 1. In the **Manage** list, select **Authentication**.
-1. Set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
+1. On the **Authentication** page for the new app, set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
+1. Select **Add a platform**.
+1. In the **Configure platform** dialog box, select **Mobile and desktop applications**.
+1. In the **Configure Desktop \+ devices** dialog box, set the **Custom redirect URIs** field to *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*.
+1. Select **Configure** to save your settings and close the dialog boxes.
+1. You return to the **Authentication** page, which now shows your new platform configuration. Select **Add a platform** again.
+1. In the **Configure platform** dialog box, select **Android**.
+1. In the **Configure your Android app** dialog box, set the following fields:
+
+    - **Package name** – Enter *com.microsoft.warehousemanagement*.
+    - **Signature hash** – Enter *hpavxC1xAIAr5u39m1waWrUbsO8=*.
+
+1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
+1. Select **Add a platform** again.
+1. In the **Configure platform** dialog box, select **iOS / macOS**.
+1. In the **Configure your iOS or macOS app** dialog box, set the **Bundle ID** field to *com.microsoft.WarehouseManagement*.
+1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
 1. In the **Manage** list, select **API permissions**.
 1. Select **Add a permission**.
 1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
@@ -76,7 +95,24 @@ Create a user that corresponds to the user credentials for the Warehouse Managem
 
 ![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
 
-## <a name="revoke"></a>Remove access for a device that authenticates by using the device code flow
+## <a name="sso"></a>Single sign-on
+
+To use single sign-on (SSO), you must be running Warehouse Management mobile app version 2.1.23.0 or later.
+
+SSO enables users to sign in without having to enter a password. It works by reusing credentials from Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)).
+
+SSO applies exclusively to the `"UsernamePassword"` connection type. (It doesn't work with the `"DeviceCode"` connection type.)
+
+The procedure in [Create a web service application in Microsoft Entra ID](#create-service) describes all the settings that are required to prepare your system to use SSO. However, to use SSO, you must also follow one of these steps, depending on how you configure the connection.
+
+- If you *manually configure the connection* in the Warehouse Management mobile app, you must enable the **Brokered Authentication** option on the application's [connection edit [page]](install-configure-warehouse-management-app.md#config-manually).
+- If you *configure the connection by using a connection JavaScript Object Notation (JSON) file or QR code*, you must include `"UseBroker": true` in your [JSON file or QR code](install-configure-warehouse-management-app.md#connection-file-qr).
+
+> [!IMPORTANT]
+> - To use mass deployment, you must enable SSO.
+> - The Warehouse Management mobile app does **not** support [shared device mode](/entra/identity-platform/msal-shared-devices).
+
+## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
 If a device is lost or compromised, you must remove its ability to access Supply Chain Management. When a device is authenticated by using the device code flow, it's essential that you disable the associated user in Microsoft Entra ID to revoke access for that device if it's ever lost or compromised. By disabling the user in Microsoft Entra ID, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Microsoft Entra ID user per device.
 
@@ -95,6 +131,6 @@ To disable a user in Microsoft Entra ID, follow these steps.
 
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [Service-based authentication](warehouse-app-authenticate-service-based.md)
+- [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
