@@ -28,6 +28,7 @@ The navigation context provides the list of the finance and operations navigatio
 **Type**: Table
 
 **Properties**
+
 | Name | Type | Description| 
 | --- | --- | --- |
 | DisplayName | String | The display name of the application menu item. |
@@ -67,6 +68,7 @@ The page context is the page open for the user in the current session.
 **Type**: Record
 
 **Properties**
+
 | Name | Type | Description| 
 | --- | --- | --- |
 | caption | String | The page caption of the current page. |
@@ -87,6 +89,7 @@ This provides contextual information about the user.
 **Type**: Record
 
 **Properties**
+
 | Name | Type | Description| 
 | --- | --- | --- |
 | dataAreaId | String | The legal entity the user is currently signed into.  |
