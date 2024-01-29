@@ -35,3 +35,11 @@ The most common extensibility scenario for Planning optimization is to apply cus
 4. Connect to Finance and Operations environment (Finance and Operations URL can be found on Environment page in PPAC) and check Planning optimization parameters that service is connected or not. 
 4.1. See [Turn on Planning Optimization for your environment](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/get-started#turn-on-planning-optimization-for-your-environment).
 5. After Planning optimization is connected to the environment, please follow up [Unified developer experience for finance and operations apps](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview)
+
+## Related resources
+- [Unified developer experience for finance and operations apps](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview)
+- [Unified admin experience for finance and operations apps](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview)
+- [Install and configure development tools](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools)
+- [Provision a new environment with an ERP-based template](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/tutorial-deploy-new-environment-with-erp-template?tabs=PPAC)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
