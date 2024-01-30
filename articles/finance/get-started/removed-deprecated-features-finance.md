@@ -57,7 +57,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Dataverse solution for Electronic invoicing
 
-[Dataverse solution for Electronic invoicing](../localizations/dev-itpro/e-invoicing-power-platform-plug-in.md)
+Dataverse solution for Electronic invoicing
 
 | &nbsp;  | &nbsp;  |
 |---|---|
