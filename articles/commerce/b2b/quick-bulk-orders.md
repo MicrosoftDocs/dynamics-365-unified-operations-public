@@ -17,7 +17,7 @@ ms.search.form: RetailOperations
 
 ---
 
-# Place B2B website orders quickly
+# Place orders quickly using the B2B website
 
 [!include [banner](../../includes/banner.md)]
 
