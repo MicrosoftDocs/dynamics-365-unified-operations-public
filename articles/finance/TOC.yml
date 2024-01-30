@@ -236,6 +236,8 @@
           href: accounts-payable/invoice-capture-workspace.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
+        - name: Invoice capture advanced settings
+          href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture received files
           href: accounts-payable/invoice-capture-rec-files.md
         - name: Invoice capture FAQ  
