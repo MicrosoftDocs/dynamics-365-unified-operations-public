@@ -23,7 +23,7 @@ This article explains how to set up a local development environment for the Comm
 > The environment setup that is described in this article can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
 
 > [!NOTE]
-> The 10.0.38 release will not contain updates for the following components: MPOS, Retail SDK and the Retail Server / Channel Database.
+> The 10.0.38 release doesn't contain updates for the following components: Modern Point of Sale (MPOS), the Retail software development kit (SDK), and the Retail Server/channel database.
 
 ## Supported development environment types
 
