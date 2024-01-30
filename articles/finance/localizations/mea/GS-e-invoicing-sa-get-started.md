@@ -62,11 +62,11 @@ Follow these steps to complete the configuration.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Fiscal transaction document** table names. 
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+5. For the **Customer Invoice journal** table name, select **Response types**.
 
    > [!NOTE]
    > When tax invoices are cleared, ZATCA generates a QR code that contains the digital signature for that clearance. This QR code must be imported back into Finance, together with other clearance information that the tax authority returns as result of the submission of the tax invoices. To achieve this result, you must configure the response types in Finance.
 
-5. For the **Customer Invoice journal** table name, select **Response types**.
 6. Create a response type that has the same name that was defined for the related variable in the **Configuration Integration point** parameter's value in the **Transform document (export), export QRCode** processing pipeline's action of the **Sales invoice** feature setup. The defualt value is **ResponseData**.
 7. In the **Submission status** field, select **Pending**.
 8. In the **Data entity name** field, select **Sales invoice QR code entity**.
@@ -74,15 +74,7 @@ Follow these steps to complete the configuration.
 
     ![Response type setup.](../media/emea-sa-einvoice-response.jpg)
 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-10. In the **Globalization feature** workspace, select the **Environment setup** related link, and then, on the **Service environments** menu, select the environment to use for the feature deployment.
-11. In **Number sequences** section, add a record for the number sequence that should be used to count submitted electronic invoices.
-
-    ![Number sequence setup.](../media/emea-sa-einvoice-counter.jpg)
-
-For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
+10. In the **File name** FastTab, in the **Number sequences** field, select the number sequence that should be used to count submitted electronic invoices.
 
 ## Electronic invoicing features configuration
 
@@ -130,6 +122,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
    
 11. Complete and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/GS-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
+For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
 
 ## <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded ZATCA. As a result of the onboarding process, taxpayers obtain CSIDs, which are required for integration with the electronic invoicing portal that is managed by ZATCA and for further submission of electronic invoices.
@@ -138,7 +131,7 @@ Onboarding is an essential part of the Electronic invoicing configuration. For m
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
+- [Electronic invoicing overview](../global/GS-e-invoicing-service-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
