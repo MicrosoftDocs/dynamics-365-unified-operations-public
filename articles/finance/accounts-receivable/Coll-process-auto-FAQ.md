@@ -28,16 +28,17 @@ ms.collection: bap-ai-copilot
 ---
 # Collections process automation FAQ
 
-This article answers some frequently asked questions about the setup of Collections process automation and how it relates to the collections letter sequence and setup. 
+This article answers some frequently asked questions about the setup of Collections process automation and how it relates to the collections letter sequence. 
 
-To open the Collections process automation parameters go to **Accounts receivable > Setup > Accounts receivable parameters > Collections process automation** and select the **General tab**. To setup the Collections process automation go to **Credit and collections > Setup > Collections process setup**. 
+To open the Collections process automation parameters go to **Accounts receivable > Setup > Accounts receivable parameters > Collections process automation** and select the **General** tab. To setup the Collections process automation hierachy go to **Credit and collections > Setup > Collections process setup**. 
 
 ### Does the Collections process setup replace the Collection letter sequence?
 No, they work together, and both need to be set up.
 
 ### Does the “Days” in the Collection letter sequence need to match the “Days in relation to invoice due date” in Collections process setup?
-No, they should not match. The **Days** field on the Collection letter sequence is the grace days allowed. The grace period for collection letter 1 is relative to the due date on the invoice. The grace period for collection letters 2 and higher is relative to the date that the previous collection letter is posted or printed. *See Create a collection letter sequence - Finance | Dynamics 365 | Microsoft Learn for more information*. 
-On the Collections process setup, Process details, the **Days in relation to due date** is the number of days after the invoice is due. It is not in relation to the step before. See question #4.
+No, they should not match. The **Days** field on the Collection letter sequence is the grace days allowed. The grace period for collection letter 1 is relative to the due date on the invoice. The grace period for collection letters 2 and higher is relative to the date that the previous collection letter is posted or printed. See [Create a Collection letter sequence.](./tasks/create-collection-letter-sequence.md) for more information. 
+
+On the Collections process setup page, Process details, the **Days in relation to due date** is the number of days after the invoice is due. It is not in relation to the step before. 
 
 ### When running Collections process automation can you set it to run as of a specific date? 
 No, it always runs as of today’s date. If there are errors when running you can run it again but when successful, it will not run more than once per day. 
