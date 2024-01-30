@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: twheeloc
-ms.date: 01/17/2024
+ms.date: 01/30/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,7 +61,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Solution no longer required in the new version of globalization feature for Indoensia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
+| **Reason for deprecation/removal** | Solution no longer required in the new version of globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
