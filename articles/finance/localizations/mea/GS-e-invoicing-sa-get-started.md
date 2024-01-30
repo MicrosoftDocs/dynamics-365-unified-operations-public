@@ -34,7 +34,19 @@ Before you begin the procedures in this article, complete the following prerequi
 
 ## Finance configuration
 
-4. On the **Configurations** tab, go to **Application specific parameters** for a selected configuration. In the **Lookups** section, make sure that **PaymentMethodSubstitutionLookup** lookup is selected.
+### Application specific parameters configuration
+
+Make sure that the following Electronic reporting (ER) format configurations are imported.
+ - Sales e-invoice (SA)
+ - Project e-invoice (SA)
+ - Retail fiscal document format (for Retail-specific scenarios, if required)
+
+Do the following configuration steps.
+
+1. In the **Globalization studio** workspace, select the **Electronic reporting** tile and then select **Reporting configurations** tile.
+2. On the **Configurations** page, select **Sales e-invoice (SA)** format configuration.
+3. In the **Configurations** menu, in the **Application specific parameters** section, selected **Setup**.
+4. In the **Lookups** section, make sure that **PaymentMethodSubstitutionLookup** lookup is selected.
 5. In the **Conditions** section, select **Add** to add a condition.
 6. In the **Name** column for the new condition, select the method of payment that is defined in the application. Then, in the **Lookup result** column, select a standardized method of payment code according to [UN/EDIFACT Code list 4461](https://unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm).
 7. Add specific conditions for each method of payment that is defined in the system, and save your changes.
@@ -42,12 +54,9 @@ Before you begin the procedures in this article, complete the following prerequi
     > [!NOTE]
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific method of payment.
 
-8. On the **Setups** tab, select **Edit** for the selected configuration. 
-9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-10. In Key Vault, create certificates and secrets for Cryptographic Stamp Identifiers (CSIDs). For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
+8. Repeat steps 2 through 7 for the **Project e-invoice (SA)** and **Retail fiscal document format** ER format configurations, if necessary.
 
-    > [!NOTE]
-    > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID).
+###  !!!!!!!!!!!!!!! other parameters
 
 11. In the **Globalization feature** workspace, select the **Environment setup** related link, and then, on the **Service environments** menu, select the environment to use for the feature deployment.
 12. In **Number sequences** section, add a record for the number sequence that should be used to count submitted electronic invoices.
@@ -88,16 +97,17 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
    > [!NOTE]
    > Select the **Tax invoice compliance check** feature setup for the electronic invoicing feature, **Saudi Arabian ZATCA compliance check (SA)**.
    
-5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Get next number sequence value** action. 
-6. In the **Parameters** section, in the **Value** field, select the number sequence that you preliminary created in **Electronic document parameters**.
-7. In the **Processing pipeline** section, select **Prepare document for submit for Saudi Arabia Zatca service**, and then follow these steps:
+5. On the **Processing pipeline** tab, in the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
+6. In the **Processing pipeline** section, select the **Get next number sequence value** action. 
+7. In the **Parameters** section, in the **Value** field, select the number sequence that you preliminary created in **Electronic document parameters**.
+8. In the **Processing pipeline** section, select **Prepare document for submit for Saudi Arabia Zatca service**, and then follow these steps:
 
     1. In the **Parameters** section, select the **Invoice counter value** name. 
     2. In the **Value** field, select **Get next number sequence value: Number sequence value**.
     3. Select the **Invoice counter name** name.
     4. In the **Value** field, select **Get next number sequence value: Number sequence name**.
 
-8. In the **Processing pipeline** section, select **Integrate with Saudi Arabia Zatca service**, and then follow these steps:
+9. In the **Processing pipeline** section, select **Integrate with Saudi Arabia Zatca service**, and then follow these steps:
 
     1. In the **Parameters** section, select **Web service URL**.
     2. In the **Value** field, enter the URL of the development portal or the production environment that is provided by the Saudi Arabian tax authority (ZATCA).
@@ -108,12 +118,15 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
     7. Select the **Secret name** name.
     8. In the **Value** field, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process. 
 
-9. Repeat steps 3 through 8 for the **Project invoice** and **Retail simplified invoice** feature setups. 
+    > [!NOTE]
+    > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID). !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! In Key Vault, create certificates and secrets for Cryptographic Stamp Identifiers (CSIDs). For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
+
+10. Repeat steps 4 through 9 for the **Project invoice** and **Retail simplified invoice** feature setups. 
 
     > [!NOTE]
-    > Repeat steps 3 through 8 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups to set up the electronic invoicing feature, **Saudi Arabian ZATCA compliance check (SA)**.
+    > Repeat steps 4 through 9 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups to set up the electronic invoicing feature, **Saudi Arabian ZATCA compliance check (SA)**.
    
-10. Complete and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/GS-e-invoicing-complete-publish-deploy-globalization-feature.md).
+11. Complete and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/GS-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 
 ## <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
