@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.13
 This article describes the extensibility scenarios that are related to master planning and supported in Planning Optimization.
 
 > [!TIP]
-> If development has been completed but needs to be tested End-to-End in sandbox environment, consider reviewing [Unified developer experience for planning optimization (preview)](../master-planning/planning-optimization-dev).
+> If you've finished developing an extension and would like to set up an end-to-end testing environment, see [Unified developer experience for planning optimization (preview)](planning-optimization-dev.md).
 
 ## Custom processing when master planning is completed
 
