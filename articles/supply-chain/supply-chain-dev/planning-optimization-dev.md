@@ -26,9 +26,9 @@ For more information, see [Unified developer experience for finance and operatio
 
 ## Extensibility scenarios
 
-Developers can extend Planning Optimization to add support for scenarios that apply after master planning has run. Developers can test their extensions by connecting the Planning Optimization service to their development environment.
+Developers can extend Planning Optimization to add support for scenarios that apply after master planning runs. Developers can test their extensions by connecting the Planning Optimization service to their development environment.
 
-The most common extensibility scenario for Planning Optimization involves the application of custom processing after a plan has been updated. Microsoft Power Platform supports low-code development that enables new solutions to be created quickly. At the same time, developers can make sure that their extensions work correctly by using the real-time results that Planning Optimization produces.
+The most common extensibility scenario for Planning Optimization involves the application of custom processing after a plan is updated. Microsoft Power Platform supports low-code development that enables new solutions to be created quickly. At the same time, developers can make sure that their extensions work correctly by using the real-time results that Planning Optimization produces.
 
 ## Set up an environment for testing your Planning Optimization extensions
 
