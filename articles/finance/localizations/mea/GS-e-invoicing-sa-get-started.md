@@ -29,17 +29,14 @@ This article provides information that will help you get started with phase two 
 Before you begin the procedures in this article, complete the following prerequisites: 
 
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/GS-e-invoicing-service-overview.md).
-- Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/GS-e-invoicing-set-up-overview.md)..
+- Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/GS-e-invoicing-set-up-overview.md).
 - Import the **Saudi Arabian Zatca submission (SA)** and **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing features from the repository. For more information, see [Import features from the repository](../global/GS-e-invoicing-import-feature-global-repository.md).
 
-## Finance configuration
-
-### Application specific parameters configuration
+## Application specific parameters configuration
 
 Make sure that the following Electronic reporting (ER) format configurations are imported.
  - Sales e-invoice (SA)
  - Project e-invoice (SA)
- - Retail fiscal document format (for Retail-specific scenarios, if required)
 
 Do the following configuration steps.
 
@@ -55,9 +52,9 @@ Do the following configuration steps.
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific method of payment.
 
 8. In the **State** field, change the state of the Application specific parameters to **Completed** and click **Save**.
-9. Repeat steps 2 through 8 for the **Project e-invoice (SA)** and **Retail fiscal document format** ER format configurations, if necessary.
+9. Repeat steps 2 through 8 for the **Project e-invoice (SA)** ER format configuration, if necessary.
 
-###  Configure Electronic document parameters
+##  Configure Electronic document parameters
 
 Follow these steps to complete the configuration.
 
@@ -87,7 +84,7 @@ Follow these steps to complete the configuration.
 
 For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
 
-## Country/region-specific configuration for the Saudi Arabian Zatca submission (SA) Electronic invoicing feature
+## Electronic invoicing features configuration
 
 > [!NOTE]
 > The configuration steps in this section are described for **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. This assumes that the [onboarding](#onboarding) process is completed and the Production Cryptographic Stamp Identifier (PCSID) is obtained. If you are in the middle of the onboarding process and only the Compliance Cryptographic Stamp Identifier (CCSID) is received, do the same configuration steps for the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature. 
