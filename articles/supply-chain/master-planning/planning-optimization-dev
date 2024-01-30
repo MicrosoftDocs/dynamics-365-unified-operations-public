@@ -41,5 +41,6 @@ The most common extensibility scenario for Planning optimization is to apply cus
 - [Unified admin experience for finance and operations apps](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview)
 - [Install and configure development tools](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools)
 - [Provision a new environment with an ERP-based template](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/tutorial-deploy-new-environment-with-erp-template?tabs=PPAC)
+- [Write, deploy, and debug X++ code](https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-debug)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
