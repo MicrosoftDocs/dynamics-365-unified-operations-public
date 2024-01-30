@@ -215,5 +215,11 @@ Then, when the synchronization is enabled and takes place, the products from fin
 
 If other Dynamics 365 apps have products that aren't present in finance and operations, the administrator can use the **EcoResReleasedProductCreationV2Entity** for importing those products in finance and operations. And secondly, match the product data from finance and operations and other Dynamics 365 apps as described above.
 
+### Installing dual-write after a finance and operations environment and a Dataverse environment (with Field Service) is deployed
+
+The following error may appear when installing dual-write in a finance and operations environment with Dataverse environment (including Field Service): Dynamics365SupplyChainExtended GenericManagedPropertyFailure Microsoft.Crm.CrmException: The evaluation of the current component(name=Attribute, id=29245505-73df-4220-a894-b65c81616fe5) in the current operation (Create) failed during managed property evaluation of condition: Managed Property Name: iscomponentcreationenabled; Component Name: Attribute;
+
+This is due to an known issue on the installation. If you face this issue, please contact Microsoft support. 
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
