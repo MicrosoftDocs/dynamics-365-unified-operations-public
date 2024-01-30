@@ -9,7 +9,7 @@ ms.technology:
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jashanno
+ms.author: brstor
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
