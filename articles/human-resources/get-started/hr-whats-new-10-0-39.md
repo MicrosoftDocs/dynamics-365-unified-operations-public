@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.39. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.39. This version has a build number of 10.0.1860.18 and is available on the following schedule:
 
 - **Preview of release:** January 2024
 - **General availability of release (self-update):** March 2024
@@ -92,3 +92,14 @@ The following table lists the features that have been removed from Feature manag
 | Use an employee's FTE for accruals (Leave) | The related functionality is enabled out of the box.| Leave and absence |
 | Absence manager to manage leave | The related functionality is enabled out of the box. | Leave and absence |
 | View all workers without employment | The related functionality is enabled out of the box. | Personnel management |
+
+
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Human Resources version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=886261).
