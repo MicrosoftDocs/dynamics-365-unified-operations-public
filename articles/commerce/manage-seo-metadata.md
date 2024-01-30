@@ -2,7 +2,7 @@
 title: Manage SEO metadata
 description: This article describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 01/30/2023
+ms.date: 01/30/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,34 +52,34 @@ To manually manage your site map and host it in the site builder Media library, 
 1. In the left navigation pane, select **Media library**.
 1. Select **Upload \> Upload media items**.
 1. In the File Explorer window, browse to your custom sitemap XML file, select it, and then select **Open**.
-1. In the **Upload file** dialog box, select the **Publish media items after upload** checkbox, and then select **Upload now**.
+1. In the **Upload file** dialog box, select **Publish media items after upload**, and then select **Upload now**.
 1. In the left navigation pane, select **URLs**.
-2. Select **New > New URL** from the top action bar.
-3. Choose and enter a URL segment name for your sitemap in the **Enter URL Path** field (example: https://[yourdomain.com]/[channelname]/**sitemap**).
-4. From the **What are you creating a URL for?** options, choose the **Media library document** option and select the **Next** button.
-5. Find and select [your custom sitemap].xml file that you uploaded and published in steps 3 and 4 above, and select the **Create** button to create your domain specific URL for your sitemap file.
-6. With the new sitemap URL record selected in the URLs list view, select the **Publish** button in the top action bar to publish the URL.
-7. From the URL info panel on the right, right-click on the link underneath the **Channel and locale variants**.  Select **Copy link** to add the URL to your clipboard.
-> [!NOTE]
-> If you dont see the right URL info pannel mentioned in the step above, make sure the "**i**" info icon is selected next to the upper right search bar in site builder.  This toggles the right info pane between hidden and visibile.
-11. Open a new browser tab and paste the URL for the sitemap file to validate that the URL was correctly linked to your sitemap XML file.
-12. Next, download your site's [robots.txt file](go-live/add-robots-txt.md). For instructions, see [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
-13. Open the robots.txt file in a text editor, and paste the site map file URL that you copied to your clipboard in *step 11* above into the **Sitemap** key-value pair, as shown in the following example.
+1. On the command bar, select **New \> New URL**.
+1. In the **Create new URL** flyout menu, under **Enter URL Path**, enter a URL segment name for your sitemap (for example, `https://<yourdomain.com>/<channelname>/<sitemapname>`).
+1. Under **What are you creating a URL for?**, select **Media library document**, and then select **Next**.
+1. In the **Select a document to link to** flyout menu, find and select the custom sitemap XML file that you uploaded previously, and then select **Create** to create a domain-specific URL for your sitemap file.
+1. On the **URLs** page, select the new sitemap URL from the list, and then on the command bar select **Publish** 	to publish the URL.
+1. From the URL properties pane on the right, under **Channel and locale variants**, right-click on the correct variant, and then select **Copy link** to save it for later.
+    > [!NOTE]
+    > If you don't see the  URL properties pane on the right, select the **i** symbol on the upper right next to the search box. This action toggles the URL properties pane between hidden and visible.
+1. To validate that the URL is correctly linked to your sitemap XML file, open a new browser tab, paste in the sitemap URL, and select enter. If the sitemap doesn't appear, review the previous steps to check your work.
+1. Download your site's [robots.txt file](go-live/add-robots-txt.md), following the instructions in [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
+1. Open the robots.txt file in a text editor, and paste the site map file URL that you copied to your clipboard in step 11 above into the **Sitemap** key-value pair, as shown in the following example.
 
 
-    ```txt
+```Plaintext
     User-agent: *
-    Disallow: /EditService.asmx/
+    Disallow: /editservice.asmx/
     Disallow: /images/
     Disallow: /scripts/
-    Disallow: /SyndicationService.asmx/
-    Disallow: /EditConfig.aspx
-    Disallow: /Login.aspx
+    Disallow: /syndicationservice.asmx/
+    Disallow: /editconfig.aspx
+    Disallow: /login.aspx
     
     Sitemap: <Your site map URL>
-    ```
+```
 
-14. Save the robots.txt file, and then [upload it](manage-robots-txt-files.md#upload-a-robotstxt-file) to your site. For go-live information about robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
+15. Save the robots.txt file, and then upload it to your site following the instructions in (manage-robots-txt-files.md#upload-a-robotstxt-file). For go-live information about robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
 
 > [!TIP]
 > Follow these steps to keep the URL of your site map file static. In this way, you can avoid having to update the robots.txt file the next time that you manually update your site map file.
