@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 01/17/2024
+ms.date: 01/30/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -31,8 +31,7 @@ To create an SSL certificate for a website based on the host name, follow these 
 1. Copy the thumbprint value of the new certificate for use later.
 
 > [!NOTE]
-> The SSL Certificate being used must contain the following KeyUsage property values: Digital Signature, Key Encipherment, Data Encripherment
-
+> The SSL certificate you use must contain the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, and `dataEncipherment`.
 
 ## Install IIS components
 
