@@ -74,7 +74,7 @@ Follow these steps to complete the configuration.
 
     ![Response type setup.](../media/emea-sa-einvoice-response.jpg)
 
-10. In the **File name** FastTab, in the **Number sequences** field, select the number sequence that should be used to count submitted electronic invoices.
+10. <a id="NumberSequence"></a>In the **Electronic invoicing** section, in the **Number sequences** FastTab, add a record for the number sequence that should be used to count submitted electronic invoices.
 
 ## Electronic invoicing features configuration
 
@@ -93,7 +93,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
    
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
 6. In the **Processing pipeline** section, select the **Get next number sequence value** action. 
-7. In the **Parameters** section, in the **Value** field, select the number sequence that you preliminary created in **Electronic document parameters**.
+7. In the **Parameters** section, in the **Value** field, select the [number sequence](#NumberSequence) that you preliminary created in **Electronic document parameters**.
 8. In the **Processing pipeline** section, select **Prepare document for submit for Saudi Arabia Zatca service**, and then follow these steps:
 
     1. In the **Parameters** section, select the **Invoice counter value** name. 
