@@ -191,7 +191,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
    - The SSL certificate must use private key storage, and server authentication must be listed in the enhanced key usage property.
    - The SSL certificate must be trusted locally, and it can't be expired.
    - The SSL certificate must be stored in the personal certificate store location on the local computer.
-   - The SSL certificate must contain the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, `dataEncipherment`.
+   - The SSL certificate must contain the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, and `dataEncipherment`.
 
 5. If a specific user is required, enter the user name and password that the application pool should run under. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended.
 
