@@ -1632,6 +1632,10 @@
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Australia and New Zealand
               href: localizations/apac/GS-apac-aus-nzl-electronic-invoices.md
+            - name: Saudi Arabia
+              href: localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+            - name: Saudi Arabia - onboarding
+              href: localizations/mea/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
           - name: Electronic Invoicing FAQ
             href: localizations/global/GS-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
