@@ -328,22 +328,26 @@ To complete this scenario, you must already have an intercompany relationship be
 
 ### Example scenario 6: Purchase agreement
 
-<!--KFM: Continue here. -->
-
 In this scenario we create a purchase agreement, release purchase order setting request receipt date and see how the requested ship and receipt date are calculated. We still keep using 2 purchase transport days from vendor shipping address to site/warehouse receiving address.
+
+1. Go to **Procurement and sourcing** \> **Setup** \> **Distribution** \> **Purchase transport days**. Make sure you have a record for delivering from the vendor shipping address you plan to create a purchase agreement for to the warehouse receiving address you plan to receive to. Set **Transport days** to *2* for this record.
 
 1. Go to **Procurement and sourcing** \> **Purchase agreements** \> **Purchase agreements**.
 1. Create a new purchase agreement, on the Action Pane, select **New**.
-1. On the **Vendor** FastTab, enter a value in the **Vendor account** field
-1. Click **OK** to create the purchase agreement
+1. On the **Vendor** FastTab, set **Vendor account** to the vendor whose shipping address you set up on the **Purchase transport days** page. Select **OK** to create the purchase agreement.
 1. On the **Purchase agreement lines** FastTab, select **Add line**
-1. Enter a value in the **Item number** field and **Site / Warehouse** fields if required
-1. On the **Purchase agreement** action pane, select **Generate** \> **Confirmation**, click **OK**
-1. On the **Purchase agreement** action pane, select **New** \> **Release order**
-1. For the line enter value for the **Purchase quantity** field. (Note or set a different value in the **Requested receipt date** value)
-1. Click **Create** to create the purchase order (Note the purchase order number from the info log message)
+1. Select an item in the **Item number** field and set **Site** and **Warehouse** to the warehouse whose receiving address you set up on the **Purchase transport days** page.
+1. On the Action Pane, open the **Purchase agreement** tab and, from the **Generate** group, select **Confirmation**.
+1. The **Confirm purchase agreement** dialog opens. Select **OK**.
+1. On the Action Pane, open the **Purchase agreement** tab and, from the **New** group, select **Release order**.
+1. The **Create release order** dialog opens. For the line, enter a value for the **Purchase quantity** field. Note or set a different value in the **Requested receipt date** value. <!--KFM: The address here is read-only, and becomes the delivery address for the order line, rather than the warehouse address. Why is this different than standard POs? What is going on? -->
+1. Select **Create** to create the purchase order. Note the purchase order number shown in the info log message at the top of the page.
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
-1. Select the purchase order noted from above.
+1. Find and open the purchase order whose number you noted previously.
+1. On the **Line details** FastTab, open the **Delivery** tab. Note the following values:
+
+    - **Requested receipt date** – Shows the date you noted or entered when you released the purchase order:
+    - **Requested ship date** – Shows current date (unless you specified another date for the order header).
 
 The expected purchase order line requested dates should be:
 
