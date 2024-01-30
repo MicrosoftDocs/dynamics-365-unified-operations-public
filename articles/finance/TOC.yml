@@ -1584,8 +1584,6 @@
                 href: localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/finance
               - name: Set up Regulatory configuration services (RCS)
                 href: localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/finance
-              - name: Power platform plug-in admin reference
-                href: localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/finance   
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
