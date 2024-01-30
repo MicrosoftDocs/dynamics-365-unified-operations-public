@@ -1735,11 +1735,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
-      "redirect_url": "dev-itpro/e-invoicing-power-platform-plug-in",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "articles/finance/localizations/e-invoicing-process-incoming-electronic-documents.md",
       "redirect_url": "global/e-invoicing-process-incoming-electronic-documents",
       "redirect_document_id": "false"
