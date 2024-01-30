@@ -115,6 +115,9 @@ The Commerce Scale Unit (CSU) used by Commerce is typically selected when an env
 
 You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you must forward the traffic for your custom domain to the `<e-commerce tenant name>.dynamics365commerce.ms` endpoint.
 
+> [!IMPORTANT]
+> Setup for this process requires a minimum of seven days lead time. Its recommend to start this process at least 14 days before the go-live date. 
+
 The `<e-commerce tenant name>.dynamics365commerce.ms` endpoint doesn't support custom domain Secure Sockets Layers (SSLs), so you must set up custom domains using a front door service or content delivery network (CDN). 
 
 To set up custom domains using a front door service or CDN, you have two options:
