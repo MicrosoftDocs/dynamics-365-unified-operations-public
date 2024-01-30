@@ -2,7 +2,7 @@
 title: Set up a local development environment
 description: This article explains how to set up a local development environment for the Commerce Scale Unit (CSU) and point of Sale (POS) development in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/03/2023
+ms.date: 01/30/2024
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -123,7 +123,7 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
 
         > [!NOTE]
         > The base installer requires two more certificates, for a total of three. For all production deployments, three different certificates should be created for security reasons. However, for this development setup, you can save time by using the same certificate for all three configuration options, unless this approach violates your policies. In this case, you can provide the same thumbprint for the next two parameters.
-        > If the same SSL Certificate is being used for everything it must contain the following KeyUsage property values: Digital Signature, Key Encipherment, Data Encripherment
+        > If you use the same SSL certificate for everything, it must contain the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, and `dataEncipherment`.
 
     - **baseProduct\_RetailServerCertFullPath** – Update this parameter with the thumbprint of the certificate that you create. This certificate represents Retail Server's identity. The identity is used, for example, when CSU issues security tokens for POS scenarios. To create this certificate, follow the same procedure that you used for the SSL certificate, but specify any friendly name that you want (for example, **RsTestIdentity**). You will need this certificate later, when you set up the Azure AD application.
     - **baseProduct\_AsyncClientCertFullPath** – Async Client uses this certificate when it acquires a security token from Azure AD for communication with Commerce Headquarters. To create this certificate, follow the same procedure that you used for the SSL certificate, but specify any friendly name that you want (for example, **AsyncClientTestIdentity**).
