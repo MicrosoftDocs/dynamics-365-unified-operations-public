@@ -112,8 +112,8 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
     7. Select the **Secret name** name.
     8. In the **Value** field, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process. 
 
-    > [!NOTE]
-    > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID) that must be preliminary configured in the [Key Vault parameters](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
+        > [!NOTE]
+        > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID) that must be preliminary configured in the [Key Vault parameters](../global/GS-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
 10. Repeat steps 4 through 9 for the **Project invoice** and **Retail simplified invoice** feature setups. 
 
