@@ -113,7 +113,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
     8. In the **Value** field, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process. 
 
     > [!NOTE]
-    > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID). !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! In Key Vault, create certificates and secrets for Cryptographic Stamp Identifiers (CSIDs). For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
+    > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID) that must be preliminary configured in the [Key Vault parameters](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
 10. Repeat steps 4 through 9 for the **Project invoice** and **Retail simplified invoice** feature setups. 
 
@@ -127,7 +127,7 @@ For more information about business data configuration and processing in Finance
 ## <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded ZATCA. As a result of the onboarding process, taxpayers obtain CSIDs, which are required for integration with the electronic invoicing portal that is managed by ZATCA and for further submission of electronic invoices.
 
-Onboarding is an essential part of the Electronic invoicing configuration. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).
+Onboarding is an essential part of the Electronic invoicing configuration. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](GS-e-invoicing-sa-onboarding.md).
 
 ## Additional resources
 
