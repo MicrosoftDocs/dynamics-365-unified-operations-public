@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/17/2024
+ms.date: 01/30/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -116,7 +116,7 @@ The Commerce Scale Unit (CSU) used by Commerce is typically selected when an env
 You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you must forward the traffic for your custom domain to the `<e-commerce tenant name>.dynamics365commerce.ms` endpoint.
 
 > [!IMPORTANT]
-> Setup for this process requires a minimum of seven days lead time. Its recommend to start this process at least 14 days before the go-live date. 
+> The setup for the traffic forwarding process requires a minimum of seven days lead time. Microsoft recommends that you start the process at least 14 days before the go-live date. 
 
 The `<e-commerce tenant name>.dynamics365commerce.ms` endpoint doesn't support custom domain Secure Sockets Layers (SSLs), so you must set up custom domains using a front door service or content delivery network (CDN). 
 
