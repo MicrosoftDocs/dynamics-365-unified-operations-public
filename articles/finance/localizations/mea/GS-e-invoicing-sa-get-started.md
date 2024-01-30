@@ -54,7 +54,8 @@ Do the following configuration steps.
     > [!NOTE]
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific method of payment.
 
-8. Repeat steps 2 through 7 for the **Project e-invoice (SA)** and **Retail fiscal document format** ER format configurations, if necessary.
+8. In the **State** field, change the state of the Application specific parameters to **Completed** and click **Save**.
+9. Repeat steps 2 through 8 for the **Project e-invoice (SA)** and **Retail fiscal document format** ER format configurations, if necessary.
 
 ###  !!!!!!!!!!!!!!! other parameters
 
