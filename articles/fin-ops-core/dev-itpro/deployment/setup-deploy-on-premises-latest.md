@@ -505,14 +505,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 To enable data management and SSIS workloads, you must install SSIS on at least two nodes (at least one if the environment is a sandbox environment). This step is required for the DMF service to run.
 
 > [!IMPORTANT]
-> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available, and data management operations are performed by AOS.
+> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available, and data management operations will be performed by the AOS.
 
-You can have dedicated nodes that contain SSIS, or you can install SSIS on other node types. If you want to have dedicated SSIS nodes, specify which machines host the node type by filling in the details for that node in the ConfigTemplate.xml file.
-
-If your use of DMF is low, you might choose not to have dedicated nodes. Instead, you can choose which nodes will have SSIS installed by updating the **hasSSIS** attribute to **true** for each VM in the **ServiceFabricCluster** section of your ConfigTemplate.xml file. In this case, you should set the **disabled** attribute to **true** for the **SSISNodeType** node type in your ConfigTemplate.xml file.
-
-> [!NOTE]
-> If you disable the **SSISNodeType** node type but don't set the **hasSSIS** attribute on any node, the scripts and installation logic provision the DMF service to all nodes of the **BatchOnlyAOSNodeType** type. If that node type doesn't exist, the DMF service is provisioned to all nodes of the **AOSNodeType** type.
+For information about how to configure the DMF service, see [Configure your environment with a dedicated Data Management Framework service](onprem-DMFService.md).
 
 1. After you've decided which VMs need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
 1. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
@@ -668,12 +663,6 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > [!IMPORTANT]
     > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
-
-1. (Optional) If any of the nodes in your ConfigTemplate.xml have been set up with the **hasSSIS** attribute set to **true**, you must run the following command from a node that belongs to the Service Fabric cluster.
-
-```powershell
-.\Set-SFDynamicNodeTags.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-```
 
 ### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the tenant
 
