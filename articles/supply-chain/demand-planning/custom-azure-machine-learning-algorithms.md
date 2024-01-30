@@ -35,7 +35,7 @@ Follow the steps in this section to create a new Microsoft Entra application in 
 1. In the **Certificates & secrets** section of the new Microsoft Entra application, create a secret for the application as described in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 1. Make a note of the application ID and its secret. You'll need these details later.
 
-## Assign access for the new Microsoft Entra application to the Azure Machine Learning workspace
+## Assign access for the new Microsoft Entra application to the Azure Machine Learning workspace and Azure Machine Learning workspace Storage account
 
 Follow these steps to assign access for the new Microsoft Entra application to the Azure Machine Learning workspace.
 
@@ -49,7 +49,19 @@ Follow these steps to assign access for the new Microsoft Entra application to t
 1. The application now appears in the **Members** list. Select **Next**.
 1. On the **Review \+ assign** tab, select **Next**.
 
-The application is now listed in the **All** section of the **Role assignments** tab.
+Follow these steps to assing access for the new Microsoft Entra application to Storage account that Azure Machine Learning workspace is connected to.
+
+1. In the [Azure portal](https://portal.azure.com/), go to the resource group that contains your Storage account(Storage account that your Azure Machine Learning workspace is using).
+1. On the left navigation, select **Access control**.
+1. On the **Role assignments** tab, select **Add** to add a new role assignment.
+1. On the **Job function roles** tab, select **Storage Account Contributor** and **Storage Blob Data Contributor**. For quick find these two roles you can filter in the search box for **storage contributor**.
+1. Select **Next**.
+1. Select the **User, group, or service principal** option.
+1. Select **Select members**. Use the filter on the menu on the right to find the name of the Microsoft Entra application that you created, and then select it.
+1. The application now appears in the **Members** list. Select **Next**.
+1. On the **Review \+ assign** tab, select **Next**.
+
+The application is now listed in the **All** section of the **Role assignments** tab on both Azure Machine Learning workspace and Storage account.
 
 ## Connect to the Azure Machine Learning service from Demand planning
 
