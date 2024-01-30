@@ -57,15 +57,7 @@ Do the following configuration steps.
 8. In the **State** field, change the state of the Application specific parameters to **Completed** and click **Save**.
 9. Repeat steps 2 through 8 for the **Project e-invoice (SA)** and **Retail fiscal document format** ER format configurations, if necessary.
 
-###  !!!!!!!!!!!!!!! other parameters
-
-11. In the **Globalization feature** workspace, select the **Environment setup** related link, and then, on the **Service environments** menu, select the environment to use for the feature deployment.
-12. In **Number sequences** section, add a record for the number sequence that should be used to count submitted electronic invoices.
-
-    ![Number sequence setup.](../media/emea-sa-einvoice-counter.jpg)
-
-
-When tax invoices are cleared, ZATCA generates a QR code that contains the digital signature for that clearance. This QR code must be imported back into Finance, together with other clearance information that the tax authority returns as result of the submission of the tax invoices. To achieve this result, you must configure the response types in Finance. 
+###  Configure Electronic document parameters
 
 Follow these steps to complete the configuration.
 
@@ -73,13 +65,25 @@ Follow these steps to complete the configuration.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Fiscal transaction document** table names. 
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+
+   > [!NOTE]
+   > When tax invoices are cleared, ZATCA generates a QR code that contains the digital signature for that clearance. This QR code must be imported back into Finance, together with other clearance information that the tax authority returns as result of the submission of the tax invoices. To achieve this result, you must configure the response types in Finance.
+
 5. For the **Customer Invoice journal** table name, select **Response types**.
-6. Create a response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS. 
+6. Create a response type that has the same name that was defined for the related variable in the **Configuration Integration point** parameter's value in the **Transform document (export), export QRCode** processing pipeline's action of the **Sales invoice** feature setup. The defualt value is **ResponseData**.
 7. In the **Submission status** field, select **Pending**.
 8. In the **Data entity name** field, select **Sales invoice QR code entity**.
 9. In the **Model mapping** field, select **Zatca response data import**.
 
     ![Response type setup.](../media/emea-sa-einvoice-response.jpg)
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+10. In the **Globalization feature** workspace, select the **Environment setup** related link, and then, on the **Service environments** menu, select the environment to use for the feature deployment.
+11. In **Number sequences** section, add a record for the number sequence that should be used to count submitted electronic invoices.
+
+    ![Number sequence setup.](../media/emea-sa-einvoice-counter.jpg)
 
 For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
 
