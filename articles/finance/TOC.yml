@@ -1534,6 +1534,16 @@
         items:
         - name: Globalization services overview
           href: localizations/global/globalization-services-overview.md?context=/dynamics365/context/finance
+        - name: Globalization Studio workspace (preview)
+          items:
+          - name: Regulatory Configuration Service merge to Globalization Studio workspace (preview)
+            href: localizations/global/workspace/merge-rcs-to-gsw.md
+          - name: Globalization Studio workspace features (preview)
+            href: localizations/global/workspace/gsw-features.md
+          - name: Import Electronic reporting (ER) configurations from Dataverse (preview)
+            href: localizations/global/workspace/gsw-import-er-config-dataverse.md
+          - name: Upload ER configurations and Globalization features as a Dataverse solution (preview)
+            href: localizations/global/workspace/gsw-upload-er-config.md
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
@@ -1802,16 +1812,16 @@
               href: localizations/tcs-troubleshooting-enable-debug-mode.md
           - name: Tax Calculation FAQ
             href: localizations/global/global-tax-calcuation-service-faq.md?context=/dynamics365/context/finance              
-          - name: Universal tax rate API overview
+          - name: Universal tax rate API 
             items: 
+            - name: Universal tax rate API overview
+              href: localizations/global/universal-tax-rate-api-overview.md
             - name: Configure tax solution provider
               href: localizations/global/universal-tax-rate-api-configure-tax-solution-provider.md
             - name: How to set up ClientId and ClientSecret
-              href: localizations/global/universal-tax-rate-api-configure-tax-solution-provider.md
-            - name: Connect to an external tax solution provider via Universal Tax Rate API
               href: localizations/global/universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md
             - name: Use tax assessment
-              href: localizations/global/universal-tax-rate-api-overview.md
+              href: localizations/global/universal-tax-rate-api-use-tax-assessment.md
       - name: Tax
         items:
         - name: Sales tax

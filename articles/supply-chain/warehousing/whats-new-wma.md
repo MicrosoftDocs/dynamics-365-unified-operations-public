@@ -32,6 +32,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 - Improved support for Active Directory Federation Services (AD FS), thereby enabling device code flow, username/password, and SSO authentication in Dynamics 365 Finance + Operations (on-premises) environments.
 - Fixed a bug that prevented the app from saving manually entered connection settings after previously importing those settings from a file.
 - Added support for the new "back" gesture in Android 13.
+- White space on the details card now scales better with text zoom.
 - Added several accessibility improvements.
 
 ## Version 2.1.20.0
