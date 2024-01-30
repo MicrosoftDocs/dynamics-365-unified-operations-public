@@ -53,6 +53,8 @@ To use the Copilot sidecar panel in the Inventory Visibility app, your system mu
 
 - You must be running Inventory Visibility version 1.2.2.127 or newer.
 
+For instructions on how to check your Inventory Visibility version and how to update to the latest version, see [Update the Inventory Visibility Add-in](inventory-visibility-setup.md#update-add-in)
+
 ## Country/region availability and language support
 
 - Inquire into inventory with Copilot is only available in English. Using it in other languages may affect accuracy and the user experience.  
