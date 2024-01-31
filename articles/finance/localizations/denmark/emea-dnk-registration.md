@@ -62,7 +62,7 @@ The standard digital bookkeeping system must contain fields for the company to p
 
 Transactions entered in Dynamics 365 Finance contain a transaction date, amount, receipt number/voucher number/document number, transaction text/description, and exchange rates. 
 
-For more information, see [View journal entries and transactions](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/view-journal-entries-transactions). 
+For more information, see [View journal entries and transactions](../../../finance/general-ledger/view-journal-entries-transactions.md). 
 
 #### Ensuring audit trails for the company’s recorded transactions (Annex 1, 2, a – e) 
 
@@ -87,8 +87,8 @@ When a transaction is posted, it cannot be edited or deleted after posting. Corr
 
 For more information, see: 
 
-+ [General journal processing](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/general-journal-processing)
-+ [Allow edits to internal data on general ledger vouchers](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/allow-edits-internal-data-gl-vouchers)
++ [General journal processing](../../../finance/general-ledger/general-journal-processing.md)
++ [Allow edits to internal data on general ledger vouchers](../../../finance/general-ledger/allow-edits-internal-data-gl-vouchers.md)
 
 #### Storage of receipts covered by section 3 (Annex 1, 3, a – b) 
 
@@ -115,7 +115,7 @@ When an invoice is posted, its attachment cannot be deleted from the user interf
 
 ![This page displays all attachments linked to the relevant data source.](../media/emea-dnk-attachment-example.png)
 
-For more information about the document management functionality and document attachment history, see [Configure document management](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/configure-document-management). 
+For more information about the document management functionality and document attachment history, see [Configure document management](../../../fin-ops-core/dev-itpro/organization-administration/configure-document-management.md). 
 
 #### Storage of the company's recorded transactions and receipts covered by section 3 for 5 years (Annex 1, 4, a-d) 
 
@@ -143,7 +143,7 @@ By using Dynamics 365 Finance, the company agrees that Microsoft can store its r
 For more information, see the [Microsoft Dynamics 365 Service Specific Terms in the Microsoft Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDynamics365Services/EAEAS).   
 
 > [!NOTE]
-> Customers may enable [Customer-managed key](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys?tabs=portal) (CMK) and/or [Customer Lockbox](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-lockbox) on their Dynamics 365 Finance environment. However, this does not prevent Microsoft from copying, storing, and retaining their recorded transactions and receipts as required by the Act. 
+> Customers may enable [Customer-managed key](/azure/azure-monitor/logs/customer-managed-keys?tabs=portal) (CMK) and/or [Customer Lockbox](../../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) on their Dynamics 365 Finance environment. However, this does not prevent Microsoft from copying, storing, and retaining their recorded transactions and receipts as required by the Act. 
 
 ### 2. Meet recognized standards for IT security, including user and access management, and ensure automatic backup of records and receipts 
 
@@ -153,7 +153,7 @@ These requirements are described in section 8 of [Executive Order 97 26/01/2023]
 
 ##### Supported scope 
 
-Dynamics 365 Finance meets these IT security requirements as it is covered by ISO/IEC 27001. For more information, see [ISO/IEC 27001 Information Security Management Standards](https://learn.microsoft.com/en-us/compliance/regulatory/offering-iso-27001). 
+Dynamics 365 Finance meets these IT security requirements as it is covered by ISO/IEC 27001. For more information, see [ISO/IEC 27001 Information Security Management Standards](/compliance/regulatory/offering-iso-27001). 
 
 ### 3. Support the automation of administrative processes, including automatic distribution and receipt of e-invoices and the option of accounting in accordance with a public standard chart of accounts in registered bookkeeping systems.
 
@@ -191,7 +191,7 @@ In addition, Dynamics 365 Finance can automatically import incoming electronic d
 
 Furthermore, for documents received in the OIOUBL format, Dynamics 365 Finance can send application responses. For those received in the PEPPOL format, it can send message level responses about the reception acknowledgement and invoice level responses about the acceptance decision. 
 
-For more information, see [Get started with Electronic invoicing for Denmark](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/denmark/e-invoicing-dk-get-started). 
+For more information, see [Get started with Electronic invoicing for Denmark](../../../finance/localizations/denmark/e-invoicing-dk-get-started.md). 
 
 #### Support the possibility of reconciling the company’s bookkeeping with the company’s bank account (Annex 2, 3, a-c and d-e) 
 
@@ -213,8 +213,8 @@ Dynamics 365 Finance also supports advanced bank reconciliation, allowing compan
 
 For more information, please see: 
 
-+	[Advanced bank reconciliation overview](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/advanced-bank-reconciliation-overview). 
-+	[Set up advanced bank reconciliation import by using Electronic reporting](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/import-bai2-er). 
++	[Advanced bank reconciliation overview](../../../finance/cash-bank-management/advanced-bank-reconciliation-overview.md). 
++	[Set up advanced bank reconciliation import by using Electronic reporting](../../../finance/accounts-payable/import-bai2-er.md). 
 
 ##### Requirement (Annex 2, 3, d-e)  
 
@@ -234,9 +234,9 @@ The advanced bank reconciliation feature pages for “Unmatched transactions” 
 
 Read more about advanced bank reconciliation in Dynamics 365 Finance:
 
-+	[Advanced bank reconciliation overview](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/advanced-bank-reconciliation-overview) 
-+	[Advanced bank reconciliation setup process](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/configure-advanced-bank-reconciliation) 
-+	[Reconcile bank statements by using advanced bank reconciliation](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation)
++	[Advanced bank reconciliation overview](../../../finance/cash-bank-management/advanced-bank-reconciliation-overview.md) 
++	[Advanced bank reconciliation setup process](../../../finance/cash-bank-management/configure-advanced-bank-reconciliation.md) 
++	[Reconcile bank statements by using advanced bank reconciliation](../../../finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md)
 
 #### Support the possibility of using a public standard chart of accounts (Annex 2, 4, a – d) 
 
@@ -260,14 +260,14 @@ The bookkeeping system supports, in addition to the point a, b, or c above, the 
 
 In Dynamics 365 Finance, the company can create and share multiple charts of accounts. A shared chart of accounts can be used by multiple legal entities, but each entity can only be assigned one chart of accounts. The chart of accounts for a legal entity is set up on the Ledger page. 
 
-If a company’s chart of accounts does not use the Danish public standard chart of accounts, it can use the [consolidation account groups and additional consolidation accounts](https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-account-groups-consolidation-accounts) features to establish this connection. 
+If a company’s chart of accounts does not use the Danish public standard chart of accounts, it can use the [consolidation account groups and additional consolidation accounts](../../../finance/budgeting/consolidation-account-groups-consolidation-accounts.md) features to establish this connection. 
 
 Dynamics 365 Finance provides user interface to map VAT codes from tax transactions to standard VAT codes. This simplifies the reporting process for Standard Audit File for Tax (SAF-T). 
 
 For more information, see: 
 
-+	[Plan your local chart of accounts](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-local-chart-of-accounts),
-+	[Plan your chart of accounts](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-chart-of-accounts). 
++	[Plan your local chart of accounts](../../../finance/general-ledger/plan-local-chart-of-accounts.md),
++	[Plan your chart of accounts](../../../finance/general-ledger/plan-chart-of-accounts.md). 
 
 #### Support correct bookkeeping through the bookkeeping guide or accounting guide (Annex 2, 5, a – c) 
 
@@ -290,7 +290,7 @@ The digital standard bookkeeping system supports correct bookkeeping through the
 
 Users have the option to create their own task recordings, use task recordings provided by Microsoft, or modify Microsoft’s task recordings to reflect your configurations.  
 
-For more information, see [Task recorder resources](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder?context=%2Fdynamics365%2Fcontext%2Ffinance). 
+For more information, see [Task recorder resources](../../../fin-ops-core/dev-itpro/user-interface/task-recorder.md?context=%2Fdynamics365%2Fcontext%2Ffinance). 
 
 #### Support the sharing of the company's bookkeeping data (Annex 2, 6, a – c)
 
@@ -316,7 +316,7 @@ The Dynamics 365 Finance solution for SAF-T includes data source mapping for the
 | GeneralLedgerEntries  | •	GeneralLedgerEntries – General ledger entries. |
 | SourceDocuments | •	Sales invoices – Initial sales documents. <br>•	PurchaseInvoices – Accounting documents for purchases and acquisitions. <br>•	Payments – Payments. <br>•	MovementOfGoods – Information about the movement of goods. For example, movement occurs when goods are recorded, when goods are written off after they are sold or used in production, and when finished products, determined loss, and defective goods are recorded. <br>•	AssetTransactions – Economic transactions or events for tangible or intangible economic assets, and for financial assets. |
 
-For more information, see [Standard Audit File for Tax (SAF-T) for Denmark](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/denmark/emea-dnk-saf-t). 
+For more information, see [Standard Audit File for Tax (SAF-T) for Denmark](../../../finance/localizations/denmark/emea-dnk-saf-t.md). 
 
 #### Support the reporting of annual accounts and VAT (Annex 2, 7, a – b) 
 
@@ -328,7 +328,7 @@ The bookkeeping system creating a CSV file with the companies' bookkeeping data 
 
 Dynamics 365 Finance users can generate a CSV file of the company’s bookkeeping data according to "Vejledning til upload af regnskabsfil i Regnskab Basis". 
 
-For more information, see [Accounting basis (Regnskab Basis) electronic report for Denmark](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/denmark/emea-dnk-accounting-basis). 
+For more information, see [Accounting basis (Regnskab Basis) electronic report for Denmark](../../../finance/localizations/denmark/emea-dnk-accounting-basis.md). 
 
 ##### Requirement (Annex 2, 7, b) 
 
@@ -338,7 +338,7 @@ The bookkeeping system can support the reporting of VAT via the Danish Tax Agenc
 
 Dynamics 365 Finance supports VAT return reporting through the Danish Tax Agency's VAT API.   
 
-For more information, see [Submit a VAT return in XML format to the Danish Tax Agency](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/denmark/emea-dnk-vat-declaration-submission).
+For more information, see [Submit a VAT return in XML format to the Danish Tax Agency](../../../finance/localizations/denmark/emea-dnk-vat-declaration-submission.md).
 
 #### Support for NemHandelsregisteret (Annex 2, 8 – 9) 
 
@@ -355,4 +355,4 @@ Existing users will see a feature callout notification when they open the defaul
 
 To complete registration, users must enter a valid Central Business Register (CVR) number and European Article Number (EAN) in the registration IDs for the legal entity. Once all the necessary information is entered, the notification will no longer appear. 
 
-For more information, see [Notification and registration for the NemHandelsregisteret in Denmark](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/denmark/nhr-notification-registration). 
+For more information, see [Notification and registration for the NemHandelsregisteret in Denmark](../../../finance/localizations/denmark/nhr-notification-registration.md). 
