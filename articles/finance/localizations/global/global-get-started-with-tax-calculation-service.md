@@ -41,19 +41,19 @@ The setup consists of three main steps.
 
 ### <a name="runtime"></a> Runtime design
 
-The following illustration shows the high-level runtime design of Tax Calculation. Because Tax Calculation can be integrated with multiple Dynamics 365 apps, the illustration uses the integration with Finance as an example.
+The following illustration shows the high-level runtime design of Tax Calculation.
 
 1. A transaction, such as a sales order or purchase order, is created in Finance.
 2. Finance automatically uses the default values of the sales tax group and the item sales tax group.
-3. When the **Sales tax** button is selected on the transaction, the tax calculation is triggered. Finance then sends the payload to the Tax Calculation service.
-4. The Tax Calculation Service matches the payload with predefined rules in the tax feature to find a more accurate sales tax group and item sales tax group simultaneously.
+3. When the **Sales tax** button is selected on the transaction, the tax calculation is triggered. Finance then sends the transaction information to the Tax Calculation.
+4. The Tax Calculation matches the transaction information with predefined rules in the tax feature to find a more accurate sales tax group and item sales tax group simultaneously.
 
-    - If the payload can be matched with the **Tax Group Applicability** matrix, it overrides the sales tax group value with the matched tax group value in the applicability rule. Otherwise, it continues to use the sales tax group value from Finance.
-    - If the payload can be matched with the **Item Tax Group Applicability** matrix, it overrides the item sales tax group value with the matched item tax group value in the applicability rule. Otherwise, it continues to use the item sales tax group value from Finance.
+    - If the transaction information can be matched with the **Tax Group Applicability** matrix, it overrides the sales tax group value with the matched tax group value in the applicability rule. Otherwise, it continues to use the sales tax group value from the transaction information.
+    - If the transaction information can be matched with the **Item Tax Group Applicability** matrix, it overrides the item sales tax group value with the matched item tax group value in the applicability rule. Otherwise, it continues to use the item sales tax group value from the transaction information.
 
-5. The Tax Calculation Service determines the final tax codes by using the intersection of the sales tax group and the item sales tax group.
-6. The Tax Calculation Service calculates tax, based on the final tax codes that it determined.
-7. The Tax Calculation Service returns the tax calculation result to Finance.
+5. The Tax Calculation determines the final tax codes by using the intersection of the sales tax group and the item sales tax group.
+6. The Tax Calculation calculates tax, based on the final tax codes that it determined.
+7. The Tax Calculation returns the tax calculation result. The **Sales tax** form shows the tax calculation result.
 
 ![Tax Calculation runtime design.](../media/tax-calculation-runtime-logic.png)
 
