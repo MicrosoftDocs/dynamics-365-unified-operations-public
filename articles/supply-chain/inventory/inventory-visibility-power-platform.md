@@ -83,8 +83,6 @@ Inventory Visibility add-in provides 3 ways to distribute and store user's inven
 When data stored `By Location` and `By Location and Product ID`, inventory data are stored group by location IDs. Inventory operations, including queries and changes must take place in a specific location ID. 
 When data stored `By Product ID`, user are allowed to query and change inventory across locations. 
 
-For a complete list of how this setting affects Inventory Visibility API results, see ()
-
 To change data partition rule, user goes to Inventory Visibility App, select `Data Partition Rule` and choose the rule preferred. Then an update configuration is required. User need to [clear all inventory data](#delete-data) before updating configuration. Otherwise, the update configuration always fails.
 
 Data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, `By Product ID` is suggested when user do a lot of query across different location IDs; `By Location` is suggested when user queries for multiple products under same location. 
