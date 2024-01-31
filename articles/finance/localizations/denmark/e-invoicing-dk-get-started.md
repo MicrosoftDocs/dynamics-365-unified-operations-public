@@ -131,7 +131,7 @@ To identify a company by its GLN, follow these steps.
     > [!NOTE]
     > If no GLN is defined, the customer's tax exempt number is used.
 
-### Configure the output format type
+### <a id="FormatType"></a> Configure the output format type
 
 By default, all outgoing electronic invoices are generated in OIOUBL format for all customers. However, by using configurable electronic document property types, you can configure electronic invoices so that they're generated in PEPPOL format for specific customers.
 
@@ -248,7 +248,9 @@ To view the receipt logs for electronic invoices, go to **Organization administr
 
 To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 
-## Send responses for receive invoices
+## Send responses for received electronic invoices
+
+[format type](#FormatType)
 
 ## Additional resources
 
