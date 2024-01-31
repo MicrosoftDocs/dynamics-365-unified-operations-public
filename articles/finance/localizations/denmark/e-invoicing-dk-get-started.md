@@ -250,6 +250,9 @@ To view successfully received invoices, go to **Accounts payable** \> **Invoices
 
 ## Send responses for received electronic invoices
 
+After incoming vendor invoices are successfully received, users can respond to invoice issuers about the decision to accept or reject the received invoices.
+For both incoming invoice formats, **OIOUBL** and **PEPPOL**, a rejection response can be raised and sent back to the invoice issuers. Acceptance responses are not assumed. If no rejection response was sent during some agreed time, then such invoices are considered as automatically accepted. For **PEPPOL** format, there is a possibility to additionally send a reception acknowledgement message. It is a technical confirmation of invoices reception. Such invoices can anyway be later rejected from business perspective.
+
 [format type](#FormatType)
 
 ## Additional resources
