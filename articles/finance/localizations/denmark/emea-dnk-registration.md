@@ -21,18 +21,18 @@ In May 2022, Denmark updated its bookkeeping law, replacing the 1999 act. This n
 Dynamics 365 Finance, a cloud-based business management solution, is approved by the Danish Business Authority (Erhvervsstyrelsen) (“DBA”) as a registered digital standard bookkeeping system in Denmark.  It was registered under section 4 of [Executive Order no. 98 of January 26, 2023](https://go.microsoft.com/fwlink/?linkid=2259402), with registration number **fob31477**. 
 
 > [!IMPORTANT]
-> Customizing your cloud-based Dynamics 365 Finance may affect its classification as a digital standard bookkeeping system in Denmark. Such changes are not covered by its current registration.
+> Customizing your cloud-based Dynamics 365 Finance may affect its classification as a digital standard bookkeeping system in Denmark. Such changes are not covered by its registration.
 
 > [!NOTE]
-> This document explains how Dynamics 365 Finance supports the DBA’s certification requirements. However, it is not the official certification documentation for Dynamics 365 Finance.
+> This document explains how Dynamics 365 Finance supports the DBA’s certification requirements. However, it is not the official certificate for Dynamics 365 Finance.
 
 > [!IMPORTANT]
-> To use Dynamics 365 Finance as digital standard bookkeeping system in Denmark, you must **set up Power Platform integration for the environment in Microsoft Dynamics Lifecycle Services**.
+> To use Dynamics 365 Finance as digital standard bookkeeping system in Denmark, you must **connect to Dataverse** by setting up Power Platform integration for the environment in Microsoft Dynamics Lifecycle Services.
 > For set up instructions, see [Connect finance and operations apps with a new Microsoft Dataverse instance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv).
 
 ## How Dynamics 365 Finance supports digital bookkeeping requirements
 
-This section describes the requirements for digital standard bookkeeping systems per the Act and how Dynamics 365 Finance supports these requirements. 
+This section describes the requirements for digital standard bookkeeping systems under the Act and how Dynamics 365 Finance supports these requirements. 
 
 Per section 15 of Chapter 5 of the Act, a digital bookkeeping system must: 
 
@@ -61,6 +61,7 @@ The standard digital bookkeeping system must contain fields for the company to p
 ##### Supported scope 
 
 Transactions entered in Dynamics 365 Finance contain a transaction date, amount, receipt number/voucher number/document number, transaction text/description, and exchange rates. 
+
 For more information, see [View journal entries and transactions](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/view-journal-entries-transactions). 
 
 #### Ensuring audit trails for the company’s recorded transactions (Annex 1, 2, a – e) 
@@ -108,7 +109,7 @@ Dynamics 365 Finance users with the system administrator role can define the loc
 
 ![By default, attachments are stored in Azure Blob storage.](../media/emea-dnk-attachment.png)
 
-Document management appears to users as the Attach button at the top of most pages that contain data. When the admin selects the Attach button (or uses the keyboard shortcut `Ctrl+Shift+A`), the **Attachments** page opens, reflecting the data source of the currently selected control on the page. This page displays all attachments linked to the relevant data source. 
+Document management appears to users as the **Attach** button at the top of most pages that contain data. When the admin selects the **Attach** button (or uses the keyboard shortcut `Ctrl+Shift+A`), the **Attachments** page opens, reflecting the data source of the currently selected control on the page. This page displays all attachments linked to the relevant data source. 
 
 When an invoice is posted, its attachment cannot be deleted from the user interface. 
 
@@ -135,18 +136,14 @@ The storage obligation according to letters b and c applies if the company, in c
 
 ##### Supported scope 
 
-Dynamics 365 Finance supports storage of the company’s recorded transactions. Transactional records cannot be deleted or modified via the user interface of Dynamics 365 Finance. Dynamics 365 Finance also prevents backdating recorded transactions, meaning the posted transaction date cannot be changed. 
+Dynamics 365 Finance supports storage of the company’s recorded transactions. Transactional records cannot be deleted or modified via the user interface of Dynamics 365 Finance. Dynamics 365 Finance also prevents backdating recorded transactions, meaning the posted transaction date cannot be changed. Dynamics 365 Finance allows users to post transactions from previous periods (day, week, month).  It also records the date and time when these transactions are posted. Dynamics 365 Finance users can attach files to records in the system. 
 
-Dynamics 365 Finance allows users to post transactions from previous periods (day, week, month).  It also records the date and time when these transactions are posted.  
+By using Dynamics 365 Finance, the company agrees that Microsoft can store its recorded transactions and receipts for 5 years from the end of the financial year concerning such material. This applies even if the company changes their bookkeeping system, goes bankrupt, or is liquidated. The data will be stored in a Microsoft-managed storage, either in the same location as the primary computer equipment or in the European Union. In addition, Microsoft will disclose the company’s recorded transactions and receipts to Danish authorities as required by the Act. Microsoft will delete this data after the 5-year retention period required by the Act. 
 
-Dynamics 365 Finance users can attach files to records in the system. 
-
-By using Dynamics 365 Finance, the company agrees that Microsoft can store its recorded transactions and receipts for 5 years from the end of the financial year concerning such material. This applies even if the company changes their bookkeeping system, goes bankrupt, or is liquidated. The data will be stored in a Microsoft-managed storage, either in the same location as the primary computer equipment or in the European Union. In addition, Microsoft will disclose the company’s recorded transactions and receipts to Danish authorities as required by the Act. Microsoft will delete this data after the 5-year retention period required by the Act. For more information, see the [Microsoft Dynamics 365 Service Specific Terms in the Microsoft Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDynamics365Services/EAEAS).   
+For more information, see the [Microsoft Dynamics 365 Service Specific Terms in the Microsoft Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDynamics365Services/EAEAS).   
 
 > [!NOTE]
 > Customers may enable [Customer-managed key](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys?tabs=portal) (CMK) and/or [Customer Lockbox](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-lockbox) on their Dynamics 365 Finance environment. However, this does not prevent Microsoft from copying, storing, and retaining their recorded transactions and receipts as required by the Act. 
-
-Microsoft will disclose the company’s recorded transactions and receipts with Danish authorities as required by the Act. Other data stored by the company is not disclosed. Danish authorities can only request this information from providers like Microsoft if they cannot get it directly from the company. Microsoft is not liable for disclosing this information to Danish authorities. 
 
 ### 2. Meet recognized standards for IT security, including user and access management, and ensure automatic backup of records and receipts 
 
@@ -189,8 +186,11 @@ The digital standard bookkeeping system supports the automatic sending and recei
 ##### Supported scope 
 
 Dynamics 365 Finance allows customers to generate and send electronic versions of business documents, such as invoices or credit notes, in either OIOUBL or PEPPOL format.  These can be delivered through the Danish NemHandel system or the PEPPOL Delivery Network using API communication with a service provider. 
+
 In addition, Dynamics 365 Finance can automatically import incoming electronic documents, like vendor invoices or vendor credit notes, received in either OIOUBL or PEPPOL format. 
+
 Furthermore, for documents received in the OIOUBL format, Dynamics 365 Finance can send application responses. For those received in the PEPPOL format, it can send message level responses about the reception acknowledgement and invoice level responses about the acceptance decision. 
+
 For more information, see [Get started with Electronic invoicing for Denmark](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/denmark/e-invoicing-dk-get-started). 
 
 #### Support the possibility of reconciling the company’s bookkeeping with the company’s bank account (Annex 2, 3, a-c and d-e) 
