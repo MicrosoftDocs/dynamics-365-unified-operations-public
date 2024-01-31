@@ -256,9 +256,6 @@ For example, you want to allocate a quantity of 10 for product *Bike*, site *1*,
 
 The quantity must always be more than 0 (zero).
 
-> [!NOTE]
-> More often than not, `siteId` and `locationId` are required because they aren't empty for most data sources. In the rare case where either `siteId` or `locationId` is empty for a data source, allocation from that data source must omit the empty dimension too.
-
 ### Unallocate
 
 Use the `Unallocate` API to reverse the `Allocate` operation. Negative quantity isn't allowed in an `Allocate` operation. The body of `Unallocate` is identical to the body of `Allocate`.
