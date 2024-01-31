@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Collections coordinator summary FAQ
-description: This article answers some frequently asked questions about collections coordinator summary.
+title: Collections process automation FAQ
+description: This article answers some frequently asked questions about Collections process automation.
 author: JodiChristiansen
 ms.date: 01/31/2024
 ms.topic: conceptual
