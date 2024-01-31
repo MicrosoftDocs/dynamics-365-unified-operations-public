@@ -248,8 +248,6 @@
                 href: ../finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/supply-chain
               - name: Set up Regulatory configuration services (RCS)
                 href: ../finance/localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/supply-chain
-              - name: Power platform plug-in admin reference
-                href: ../finance/localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/supply-chain   
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
@@ -334,10 +332,6 @@
               href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing
               href: ../finance/localizations/e-invoicing-setup.md?context=/dynamics365/context/supply-chain
-            - name: Power Platform plug-in admin reference
-              href: ../finance/localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/supply-chain
-            - name: Electronic Invoicing FAQ
-              href: ../finance/localizations/global/e-invoicing-faq.md?context=/dynamics365/context/supply-chain
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview

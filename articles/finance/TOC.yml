@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.39 (April)
+          href: get-started/whats-new-changed-10-0-39.md  
         - name: Finance 10.0.38 (February)
           href: get-started/whats-new-changed-10-0-38.md   
         - name: Finance 10.0.37 (November)
           href: get-started/whats-new-changed-10-0-37.md
-        - name: Finance 10.0.36 (October)
-          href: get-started/whats-new-changed-10-0-36.md  
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -236,6 +236,8 @@
           href: accounts-payable/invoice-capture-workspace.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
+        - name: Invoice capture advanced settings
+          href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture received files
           href: accounts-payable/invoice-capture-rec-files.md
         - name: Invoice capture FAQ  
@@ -1594,8 +1596,6 @@
                 href: localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/finance
               - name: Set up Regulatory configuration services (RCS)
                 href: localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/finance
-              - name: Power platform plug-in admin reference
-                href: localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/finance   
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
