@@ -40,7 +40,7 @@ If the source storage dimension groups use the Pallet ID inventory dimension, th
 
 ## Find products that were blocked because of Pallet ID
 
-To view the list of released products that were blocked during upgrade and can't be processed, click **Inventory management** &gt; **Setup** &gt; **Inventory** &gt; **Items blocked for inventory updates**.
+To view the list of released products that were blocked during upgrade and can't be processed, click **Inventory management** \> **Setup** \> **Inventory** \> **Items blocked for inventory updates**.
 
 ## Change storage dimension group for blocked products
 
@@ -58,7 +58,7 @@ Before you can use released products in the **Warehouse management** module, the
 ### Enable warehouses to use WMS
 
 1. Create at least one new location profile.
-1. Click **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Enable warehouse setup**.
+1. Click **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Enable warehouse setup**.
 1. On the **Enable warehouse setup** page, add the warehouses that should be enabled. You can complete this step either directly on the page or by using the Microsoft Office integration.
 1. Assign a location profile to all the locations. You can easily complete this step by using the Microsoft Office integration directly from the page. You can either export and import the data, or use the data entity processing in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 1. Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, an additional data upgrade will be required.
@@ -70,59 +70,62 @@ Before you can use released products in the **Warehouse management** module, the
 1. Create a new storage dimension group where the **Use warehouse management processes** parameter is selected.
 1. On the **Reservation hierarchy** page, define a new reservation hierarchy according to the item’s storage and tracking dimension groups.
 1. Create one or more unit sequence groups that include at least the same units that are used for the items' inventory units.
-1. Click **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Change storage dimension group for items**.
+1. Click **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Change storage dimension group for items**.
 1. On the **Change storage dimension group for items** page, add the item numbers, storage dimension groups, and unit sequence groups. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 1. Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, additional data upgrade will be required.
 1. Process the changes. An update of all the inventory dimensions can take a while. You can monitor the progress by using the batch jobs tasks.
 
-
-
-
-
 ## Change storage dimension group for items to use warehouse management process
 
-This section provides an overview of process the change of product storage dimension group for items as part of the process of [upgrading warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management](upgrade-migration-warehouse-management-processes.md).
+This section describes how to change product storage dimension groups for items as part of the process of upgrading warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management.
 
-### Purpose to change storage dimension group for items
+### Purpose of changing storage dimension groups for items
 
-With the change storage dimension groups for items to use warehouse management process, you can migrate existing items with open inventory transactions so that they can use the new storage dimension, which is a necessary upgrade process to the Warehouse management feature in Dynamics 365 Supply Chain Management.
+Changing storage dimension groups for items lets you migrate existing items with open inventory transactions so that they can use the new storage dimension, which is a necessary for using WMS in Supply Chain Management.
 
-The typical migration scenario is that you have existing items with the location dimension enabled, and the migration process enables those items to fit the warehouse management item requirements and make sure all the related data matches the item's new settings enabling business processes to proceed after the migration.
+In a typical migration scenario, you'll have existing items with the location dimension enabled. The migration process enables those items to fulfil the WMS item requirements and ensures that all the related data matches the new settings, thereby enabling business processes to proceed after the migration.
 
-The requirements for items to use warehouse management process include:
+To use WMS, your items must been the following requirements:
 
-1. The [storage dimension group](/training/modules/configure-inventory-management-dyn365-supply-chain-mgmt/3-2-storage-dim) for the item must have 'Use warehouse management process' = 'Yes'. The storage dimension represents how you store or retrieve items in your inventory.
-1. An [inventory reservation hierarchy](flexible-warehouse-level-dimension-reservation.md#inventory-reservation-hierarchy) must be assigned.
-
-1. A **unit sequence group** must be assigned. The unit sequence group defines the sequence of units that can be used in warehouse operations.
+- The [storage dimension group](/training/modules/configure-inventory-management-dyn365-supply-chain-mgmt/3-2-storage-dim) for each item must have **Use warehouse management process** set to *Yes*. The storage dimension represents how you store or retrieve items in your inventory.
+- An [inventory reservation hierarchy](flexible-warehouse-level-dimension-reservation.md#inventory-reservation-hierarchy) must be assigned.
+- A **unit sequence group** must be assigned. The unit sequence group defines the sequence of units that can be used in warehouse operations.
 
 ### Prerequisite settings
 
+You must make the following settings before you start migrating items:
+
 1. Create a new **Inventory status** value and assign it as the **Default inventory status ID** value in the **Warehouse management parameters** settings.
-1. Create a new storage dimension group where the **Use warehouse management processes** parameter is selected.
-1. On the **Reservation hierarchy** page, define a new reservation hierarchy according to the item's storage and tracking dimension groups.
-1. Create one or more **unit sequence groups** that include at least the same units that are used for the items' inventory units.
+1. Create a new storage dimension group where the **Use warehouse management processes** parameter is set to *Yes*.
+1. On the **Reservation hierarchy** page, define a new reservation hierarchy to accommodate each item's storage and tracking dimension groups.
+1. Create one or more **unit sequence groups** that include the units used for each item's inventory units.
 
 ### Change storage dimension groups for items
 
-Dynamics 365 Supply Chain Management provides you with a migration cockpit to change the storage dimension group for items. You can access the cockpit from:
+Dynamics 365 Supply Chain Management provides a migration tool that helps you change the storage dimension group for items. Follow these steps to migrate an item.
 
-- **Inventory Management &gt; Setup &gt; Inventory &gt; Change storage dimension group for items**. Or,
-- **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Change storage dimension group for items**.
+1. Go to either of the following locations:
 
-1. Click **+New** to create a new record.
-1. Enter the **item number**, **storage dimension** group that you plan to change to, **reservation hierarchy** and **unit sequence groups**. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [data management](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
-1. **Validate changes**. As part of the validation process, various validations of data integrity occur. As part of a large upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, additional data upgrade will be required.
+    - **Inventory Management** \> **Setup** \> **Inventory** \> **Change storage dimension group for items**
+    - **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Change storage dimension group for items**
 
-    The validation checks several conditions, such as:
+1. On the Action Pane, select **New** to add a row to the grid and make the following settings for it:
+    - **Item number** – Select the item number to migrate.
+    - **Storage dimension group** – Select the new storage dimension group that you plan to migrate the item to.
+    - **Reservation hierarchy** – Select the reservation hierarchy that applies to the migrated item.
+    - **Unit sequence groups** – Select the unit sequence group that applies to the migrated item.
+
+    Continue working until you have added all of the rows you need. You can complete this step directly on the page (as described here), or by importing many rows at once using either Microsoft Office integration or the data entity process described in [data management](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
+
+1. On the Action Pane, select **Validate changes**. The system now validates all of the rows on the page to ensure data integrity will be maintained. As part of a large migration process, you may need to fix issues by adjusting data on the source implementation, so several additional rounds of data migration may be required. Among other things, the validation checks for the following conditions:
 
     - A default inventory status must be defined.
-    - Inventory on-hand on pallets must not exist on non-licenses- plate-tracked locations.
+    - Inventory on-hand with pallets must not exist on non-license-plate-tracked locations.
     - Inventory on-hand without pallets must not exist on license-plate-tracked locations.
-    - That the combination of the selected storage dimension group and reservation hierarchy is valid.
-    - If migrating to use warehouse management processes, the item cannot be enabled with catch weight.
+    - All combinations of storage dimension groups and reservation hierarchies must be valid.
+    - Items migrating to use WMS must not be enabled to use catch weight.
 
-1. **Process changes**. An update of all the inventory dimensions can take a while, you can monitor the progress by using the batch jobs tasks. Migration supports the parallel processing for parts of the process. The batch framework is used, and the difference will be handled by different batch tasks.
+1. On the Action Pane, select **Process changes**. Updating all the inventory dimensions can take a while. You can monitor the progress by using batch jobs tasks. The process uses both parallel processing and the batch framework, and the difference is handled by different batch tasks. <!-- KFM: continue here -->
 
     > [!NOTE]
     > If you upgrade from a version that supported pallets, the upgrade will identify the items that had the pallet dimension active and create a record in the **Items blocked for inventory updates** form. This is done to block the items from all inventory processes because the item is configured using unsupported settings. Items that are blocked must be migrated.
