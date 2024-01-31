@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Verify requirements and grant access
 
-In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the steps detailed below should be handled by the automation built into that process. If you are receiving errors similar to the following, this indicates failures occurred during the LCS provisioning process:
+In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the automation built into that process should handle the setup steps documented on this page. If you're receiving errors similar to the following, these errors indicate failures occurred during the LCS provisioning process:
 
 | Error code | Error message |
 | --- | --- |
@@ -29,7 +29,7 @@ In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.m
 
 This guide should assist you in recovering from these errors. In addition, this guide provides the steps taken to manually setup an environment for Dual-write.
 
-Before enabling Dual-write, reference [system requirements for Dual-write](dual-write-system-req.md) to make sure that you meet the minimum system requirements. Access must also be granted to the apps that must connect to each other. If you're attempting to reset an environment, the Dual-write health check validates the below prerequisites as you complete the Dual-write reset wizard.
+Before Dual-write enablement, reference [system requirements for Dual-write](dual-write-system-req.md) to make sure that you meet the minimum system requirements. Access must also be granted to the apps that must connect to each other. If you're attempting to reset an environment, the Dual-write health check validates the below prerequisites as you complete the Dual-write reset wizard.
 
 1. Grant Dataverse access so that it can connect to a finance and operations apps.
 
@@ -38,7 +38,7 @@ Before enabling Dual-write, reference [system requirements for Dual-write](dual-
     3. On the new row for the client, select an application user that is enabled and has the appropriate privileges for Dual-write data management.
     4. Repeat the previous three steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
-    When you've finished, follow these steps to refresh the list of tables:
+    When granted, follow these steps to refresh the list of tables:
 
     1. Go to **Workspaces \> Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
     2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entity settings** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entity list**.
@@ -90,7 +90,7 @@ Before enabling Dual-write, reference [system requirements for Dual-write](dual-
 
 4. Install **Dual-write application solutions**.
 
-    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
+    In the navigation pane in Power Apps, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
 
     + Customers, products, and vendors.
     + End-to-end process flows like quote to cash.
@@ -107,7 +107,7 @@ Before enabling Dual-write, reference [system requirements for Dual-write](dual-
 
 5. Uninstall the Prospect to Cash (P2C) solution.
 
-    The P2C solution doesn't work concurrently with Dual-write ([see documented limitations](dual-write-system-req.md)) and will need to be uninstalled before enabling Dual-write.
+    The P2C solution doesn't work concurrently with Dual-write ([see documented limitations](dual-write-system-req.md)) and needs to be uninstalled before enabling Dual-write.
 
 6. Provide the supported tenant configuration.
 
