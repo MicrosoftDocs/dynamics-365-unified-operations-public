@@ -73,11 +73,25 @@ Any time that you modify the configuration and save your changes, the system sav
 
 1. Select **Confirm Update** to apply your configuration change.
 
-## Partition configuration
+## Data Partition Rule
 
-<!--KFM: Why is this section here? What does this have to do with the app? -->
+Inventory Visibility add-in provides 3 ways to distribute and store user's inventory data: 
+- By Location
+- By Location and Product ID
+- By Product ID
 
-Partition configuration controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. The following partition configuration is included in the solution by default. Therefore, *you don't have to set it up yourself*.
+When data stored `By Location` and `By Location and Product ID`, inventory data are stored group by location IDs. Inventory operations, including queries and changes must take place in a specific location ID. 
+When data stored `By Product ID`, user are allowed to query and change inventory across locations. 
+
+For a complete list of how this setting affects Inventory Visibility API results, see ()
+
+To change data partition rule, user goes to Inventory Visibility App, select `Data Partition Rule` and choose the rule preferred. Then an update configuration is required. User need to [clear all inventory data](#delete-data) before updating configuration. Otherwise, the update configuration always fails.
+
+Data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, `By Product ID` is suggested when user do a lot of query across different location IDs; `By Location` is suggested when user queries for multiple products under same location. 
+
+`By Location and Product ID` is automatically selected when user pushes data from Dynamics 365 SCM for the first time. User do not need to switch to this option manually.
+
+When using partition rule `By Location` and `By Location and product ID`, the following rule is included in the solution by default and cannot be changed. This will be set 0 of Index Hierarchy. When using `By Product ID` the rule has no effect on Inventory Visibility APIs. 
 
 | Base dimension | Hierarchy |
 |---|---|
@@ -196,7 +210,7 @@ If necessary, you can delete all configurations except those in the *fno* and *@
 1. On the **Delete all configurations** tile, select **Manage**.
 1. You're prompted to confirm the deletion. Select **OK** to continue.
 
-## Delete all inventory data
+## <a name="delete-data"></a> Delete all inventory data
 
 If necessary, you can delete all Inventory Visibility data, except configurations, in both the cache and Dataverse. Deleted data can't be restored, and users are blocked until deletion is completed.
 
