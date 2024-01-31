@@ -248,6 +248,8 @@ To view the receipt logs for electronic invoices, go to **Organization administr
 
 To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 
+## Send responses for receive invoices
+
 ## Additional resources
 
 - [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
