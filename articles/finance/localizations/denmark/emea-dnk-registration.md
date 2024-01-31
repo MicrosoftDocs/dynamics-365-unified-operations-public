@@ -74,12 +74,12 @@ The digital standard bookkeeping system must ensure that:
   b.	the system assigns a consecutive transaction number or ID for each recorded transaction, <br>
   c.	the system assigns initials or similar to the person who has recorded a transaction, <br>
   d.	the system saves changes to the recording, for example, in that incorrect entries must be corrected with new entries, and <br>
-  e.	recorded transactions cannot be changed, backdated or deleted. 
+  e.	recorded transactions cannot be changed, backdated, or deleted. 
 </ul>
 
 ##### Supported scope 
 
-An audit trail record is created for every transaction upon posting that registers the Created Date and Created by user ID. For each audit trail record, you can also view the Created ID which is a system assigned ENUM. The voucher for each record is also available through the Voucher transactions button. The voucher number is setup through the number sequence framework, which allows each number sequence to be defined as consecutive. 
+An audit trail record is created for every transaction upon posting that registers the Created Date and Created by user ID. For each audit trail record, you can also view the Created ID which is a system-assigned ENUM. The voucher for each record is also available through the Voucher transactions button. The voucher number is setup through the number sequence framework, which allows each number sequence to be defined as consecutive. 
 
 During the posting process, a journal number is assigned to each accounting entry. This is not the same as the voucher number. Validation was added to the journal number, for any legal entity that has Denmark as its country context, to ensure the number sequence assigned to the journal number is sequential. This validation is done when assigning the number sequence in general ledger parameters, and during the posting process.   
 
