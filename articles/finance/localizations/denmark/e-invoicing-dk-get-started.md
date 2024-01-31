@@ -278,7 +278,7 @@ Responses can be configured by using electronic document property types in the s
      
 14. Save your changes, and return to the **Electronic document property types** page.
 
-    ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
+    ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_response_types_setup.jpg)
 
 #### Enter responses
 
