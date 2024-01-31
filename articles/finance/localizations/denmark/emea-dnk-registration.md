@@ -207,7 +207,9 @@ The digital standard bookkeeping system supports the possibility of reconciling 
 
 ##### Supported scope (Annex 2, 3, a-c) 
 
-Dynamics 365 Finance supports requirement annex 2, 3, a by providing a comprehensive solution for digital standard bookkeeping.  It allows companies to reconcile its book with its bank account. Dynamics 365 Finance also supports advanced bank reconciliation, allowing companies to import electronic bank statements in different formats and automatically reconcile them with the bank transactions in the system. 
+Dynamics 365 Finance supports requirement annex 2, 3, a by providing a comprehensive solution for digital standard bookkeeping.  It allows companies to reconcile its book with its bank account. 
+
+Dynamics 365 Finance also supports advanced bank reconciliation, allowing companies to import electronic bank statements in different formats and automatically reconcile them with the bank transactions in the system. 
 
 For more information, please see: 
 
@@ -251,7 +253,7 @@ The digital standard bookkeeping system supports the possibility of using a publ
 The bookkeeping system supports, in addition to the point a, b, or c above, the possibility of using a public standard chart of accounts by: 
 
 <ul>
-  d.	the bookkeeping system providing a tool that enables the customer to map to standard VAT codes in a simple way. <br>
+  d.	the bookkeeping system providing a tool that enables the customer to map to standard VAT codes in a simple way.
 </ul>
 
 ##### Supported scope
@@ -262,7 +264,7 @@ If a company’s chart of accounts does not use the Danish public standard chart
 
 Dynamics 365 Finance provides user interface to map VAT codes from tax transactions to standard VAT codes. This simplifies the reporting process for Standard Audit File for Tax (SAF-T). 
 
-For more information, please see: 
+For more information, see: 
 
 +	[Plan your local chart of accounts](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-local-chart-of-accounts),
 +	[Plan your chart of accounts](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-chart-of-accounts). 
@@ -347,7 +349,7 @@ For more information, see [Submit a VAT return in XML format to the Danish Tax A
 
 ##### Supported scope
 
-Dynamics 365 Finance users that create a new legal entity in Denmark will receive a notification to register in the NemHandelsregisteret. They can register directly from this notification by clicking on the provided links to NemHandel. 
+Dynamics 365 Finance users that create a new legal entity in Denmark will receive a notification to register in the NemHandelsregisteret. They can register directly from this notification by clicking on the links to NemHandel. 
 
 Existing users will see a feature callout notification when they open the default dashboard in a Danish legal entity. This notification will continue appearing until it's acknowledged.  
 
