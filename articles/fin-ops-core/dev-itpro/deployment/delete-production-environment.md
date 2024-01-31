@@ -4,7 +4,7 @@
 title: Delete a production finance and operations apps environment
 description: This article explains how to delete a production environment by using a self-service experience.
 author: laneswenka
-ms.date: 04/19/2023
+ms.date: 01/31/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
