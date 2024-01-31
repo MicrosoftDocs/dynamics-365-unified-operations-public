@@ -3,8 +3,8 @@
 
 title: Denmark overview
 description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Denmark. 
-author: kfend
-ms.date: 01/10/2022
+author: egolub
+ms.date: 01/31/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: kfend
+ms.author: geolub
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: July 2017 update
 > 
 > Dynamics 365 Finance, a cloud-based business management solution, is approved by the Danish Business Authority (Erhvervsstyrelsen) (“DBA”) as a registered digital standard bookkeeping system in Denmark.  It was registered under section 4 of [Executive Order no. 98 of January 26, 2023](https://go.microsoft.com/fwlink/?linkid=2259402), with registration number **fob31477**. 
 >
-> For more information, see [Dynamics 365 Finance - a digital standard bookkeeping system registered in Denmark.](emea-dnk-registration.md)
+> For more information, see [Dynamics 365 Finance - a digital standard bookkeeping system registered in Denmark](emea-dnk-registration.md).
 
 This article provides links to documentation resources for Denmark. 
 
