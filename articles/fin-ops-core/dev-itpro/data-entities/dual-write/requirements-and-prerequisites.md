@@ -7,7 +7,7 @@ ms.topic: article
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: ericcolvinmorgan
+ms.author: ericmorgan
 ms.search.validFrom: 2024-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
