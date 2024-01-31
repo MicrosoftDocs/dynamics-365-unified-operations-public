@@ -278,20 +278,31 @@ Responses can be configured by using electronic document property types in the s
      
 14. Save your changes, and return to the **Electronic document property types** page.
 
-    ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_response_types_setup.jpg)
+    ![Screenshot that shows the property type added on the Electronic document property types page for responses.](../media/emea_dk_response_types_setup.jpg)
 
-#### Enter responses
+#### Define responses formats
 
-Follow these steps to enter the enter the responses for specific pending vendor invoices.
+Follow these steps to identify which response format type will be used for a specific vendor.
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2. Select a specific vendor in the list, and then, on the Action Pane, on the **Vendor** tab, in the **Properties** group, select **Electronic document properties**.
 3. In the **Value** column, enter **PEPPOL**. You must enter the value exactly as it appears here.
 
     > [!NOTE]
-    > The system generates electronic invoices in PEPPOL format only if the value **PEPPOL** is entered. If another value or no value is entered, electronic invoices are generated in the default OIOUBL format.
+    > The system generates invoice level responses in PEPPOL format only if the value **PEPPOL** is entered. If another value or no value is entered, application responses are generated in the default **OIOUBL** format.
 
-    ![Screenshot that shows PEPPOL entered in the Value column on the Electronic document properties page.](../media/emea_dk_format_type.jpg)
+#### Enter responses
+
+Follow these steps to enter responses for specific pending vendor invoices.
+
+1. Go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
+2. Select a specific pending vendor invoice in the list, and then, on the Action Pane, on the **Vendor invoice** tab, in the **Properties** group, select **Electronic document properties**.
+3. Select the **RejectResponse** type.
+4. In the **Value** column, enter the rejection reason. This text will be send back to the invoice issuer as justification of rejection. **OIOUBL application response** or **PEPPOL invoice level response** messages will be generated and sent only if non-empty value is entered. 
+5. Select the **MessageResponse** type.
+6. In the **Value** column, enter any text which will be used as an acknowledgement message. This text will be send back to the invoice issuer as the invoice reception confirmation. **PEPPOL message level responses** will be generated and sent only if non-empty value is entered. 
+
+### Configure electronic invoicing feature setups
 
 ## Additional resources
 
