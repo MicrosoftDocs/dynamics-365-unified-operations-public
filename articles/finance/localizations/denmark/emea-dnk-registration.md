@@ -28,7 +28,7 @@ Dynamics 365 Finance, a cloud-based business management solution, is approved by
 
 > [!IMPORTANT]
 > To use Dynamics 365 Finance as digital standard bookkeeping system in Denmark, you must **connect to Dataverse** by setting up Power Platform integration for the environment in Microsoft Dynamics Lifecycle Services.
-> For set up instructions, see [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv).
+> For set up instructions, see [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md).
 
 ## How Dynamics 365 Finance supports digital bookkeeping requirements
 
