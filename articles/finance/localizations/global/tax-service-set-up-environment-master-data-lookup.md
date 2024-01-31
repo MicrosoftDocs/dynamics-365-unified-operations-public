@@ -34,7 +34,22 @@ This article explains how to set up and enable the tax calculation master data l
 > [!NOTE] 
 > The tax calculation master data lookup functionality is optional functionality. You can skip the following steps if you disable the **Tax Service Dataverse datasources support** feature in Regulatory Configuration Service (RCS). However, in that case, the drop-down list won't be available in the tax calculation configuration.
 
-To enable the drop-down list in the feature version configuration of Tax Calculation, complete the following steps.
+> [!NOTE] 
+> If you are on 10.0.39 or higher version, and use Globalization Studio Workspace in Dynamics 365 Finance instead of Regulatory Configuration Service (RCS), the lookup functionality can be controlled by the **Enable applicability rules value lookup for Tax Calculation Service** feature in the **Feature management** Workspace in Dynamics 365 Finance.
+
+If you are on 10.0.39 or higher version, to enable the drop-down list in the feature version configuration of Tax Calculation, make sure you complete the following steps in Dynamics 365 Finance.
+1. In the **Feature management** workspace, enable the **Enable applicability rules value lookup for Tax Calculation Service** feature.
+2. Make sure you imported the latest configuration and model mapping versions, if not, import them following the steps [Import Electronic reporting (ER) configurations from Dataverse](../workspace/gsw-import-er-config-dataverse.md):
+ - Tax Data Model.version.40.xml
+ - Tax Calculation Data Model 40.65.xml
+ - FNO Model Mapping 40.65.35.xml - set the **Default for model mapping** parameter to **Yes**
+ - Tax Calculation Configuration 40.65.249.xml
+3. On the tax **Feature version** setup page, select the configuration version 40.65.249.
+> [!NOTE] 
+> If you have a customized configuration, you will need to rebase the configuration and then use the customized configuration. 
+4.	Select legal entities in the **Source legal entity** field. You will be able to choose master data from these LEs.
+
+If you are on 10.0.38 or lower version, to enable the drop-down list in the feature version configuration of Tax Calculation, complete the following steps. 
 
 1. [Enable Microsoft Power Platform integration and open the Dataverse environment.](#enable)
 2. [Install finance and operations virtual entities.](#install)
