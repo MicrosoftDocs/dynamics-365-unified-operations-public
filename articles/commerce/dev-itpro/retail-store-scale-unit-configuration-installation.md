@@ -215,7 +215,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
 9. After the application ID (client ID) and key (secret) are created for Commerce Scale Unit, the application ID (client ID) must be accepted in Commerce. Follow the next procedure to finish the configuration in headquarters.
-1o. After the installation is complete, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this article. If the installation wasn't successful, the page shows the location of the log files. We recommend that you keep this final health page open until you've completed the configuration of Commerce Scale Unit and all components are working correctly (Requiring the completion of the following section).
+10. After the installation is complete, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this article. If the installation wasn't successful, the page shows the location of the log files. We recommend that you keep this final health page open until you've completed the configuration of Commerce Scale Unit and all components are working correctly (Requiring the completion of the following section).
 
 ### Finish the configuration in headquarters
 
