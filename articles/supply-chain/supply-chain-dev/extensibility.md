@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 10.0.13
 
 This article describes the extensibility scenarios that are related to master planning and supported in Planning Optimization.
 
+> [!TIP]
+> If you've finished developing an extension and want to set up an end-to-end testing environment, see [Unified developer experience for planning optimization (preview)](planning-optimization-dev.md).
+
 ## Custom processing when master planning is completed
 
 The most common extensibility scenario for Planning Optimization is to apply custom processing after the plan has been updated. For example, you might add a column to the planned orders table (`ReqPO`), or you might want to derive some statistical information from the generated plan. The main extensibility point that enables this scenario is the `jobCompletedSuccessfully` method in the `MpsMasterPlanningEvents` class. To apply processing after a job fails, use the `jobFailed` method in the same class.
