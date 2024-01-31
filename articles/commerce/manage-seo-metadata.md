@@ -62,9 +62,9 @@ To manually manage your site map and host it in the site builder Media library, 
 1. From the URL properties pane on the right, under **Channel and locale variants**, right-click on the correct variant, and then select **Copy link** to save it for later.
     > [!NOTE]
     > If you don't see the  URL properties pane on the right, select the **i** symbol on the upper right next to the search box. This action toggles the URL properties pane between hidden and visible.
-1. To validate that the URL is correctly linked to your sitemap XML file, open a new browser tab, paste in the sitemap URL, and select enter. If the sitemap doesn't appear, review the previous steps to check your work.
+1. To validate that the URL is correctly linked to your sitemap XML file, open a new browser tab, paste in the sitemap URL, and select enter. If the sitemap doesn't appear or doesn't render correctly, review the previous steps to check your work.
 1. Download your site's [robots.txt file](go-live/add-robots-txt.md), following the instructions in [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
-1. Open the robots.txt file in a text editor, and paste the site map file URL that you copied to your clipboard in step 11 above into the **Sitemap** key-value pair, as shown in the following example.
+1. Open the robots.txt file in a text editor, and paste in the sitemap file URL that you copied to your clipboard in step 11 above into the **Sitemap** key-value pair, as shown in the following example.
 
 
 ```Plaintext
@@ -79,7 +79,7 @@ To manually manage your site map and host it in the site builder Media library, 
     Sitemap: <Your site map URL>
 ```
 
-15. Save the robots.txt file, and then upload it to your site following the instructions in (manage-robots-txt-files.md#upload-a-robotstxt-file). For go-live information about robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
+15. Save the robots.txt file, and then upload it to your site following the instructions in [Upload a robots.txt file](manage-robots-txt-files.md#upload-a-robotstxt-file). For go-live information about robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
 
 > [!TIP]
 > Follow these steps to keep the URL of your site map file static. In this way, you can avoid having to update the robots.txt file the next time that you manually update your site map file.
