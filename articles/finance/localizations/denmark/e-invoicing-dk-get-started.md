@@ -269,6 +269,14 @@ Responses can be configured by using electronic document property types in the s
 8. Select **Applicability** to add an applicable table.
 9. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **VendInvoiceInfoTable** table name.
 10. Save your changes, and return to the **Electronic document property types** page.
+11. Select the existing [FormatType](#FormatType) electronic document property type.
+12. Select **Applicability** to add an applicable table.
+13. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Vendors** table name. 
+
+    > [!NOTE]
+    > The same electronic document property type will be used to determine which response type to generate for a specific vendor, **OIOUBL application response** or **PEPPOL invoice level response**.
+     
+14. Save your changes, and return to the **Electronic document property types** page.
 
     ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
 
