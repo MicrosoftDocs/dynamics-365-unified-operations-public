@@ -38,7 +38,7 @@ If the source storage dimension groups use the Pallet ID inventory dimension, th
 > [!NOTE]
 > You can change the storage dimension group for items even if open inventory transactions exist.
 
-## Find products that were blocked because of Pallet ID
+## Find products that were blocked because of pallet ID
 
 To view the list of released products that were blocked during upgrade and can't be processed, click **Inventory management** \> **Setup** \> **Inventory** \> **Items blocked for inventory updates**.
 
@@ -75,7 +75,7 @@ Before you can use released products in the **Warehouse management** module, the
 1. Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, additional data upgrade will be required.
 1. Process the changes. An update of all the inventory dimensions can take a while. You can monitor the progress by using the batch jobs tasks.
 
-## Change storage dimension group for items to use warehouse management process
+## Change the storage dimension group for items to use WMS
 
 This section describes how to change product storage dimension groups for items as part of the process of upgrading warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management.
 
@@ -125,14 +125,16 @@ Dynamics 365 Supply Chain Management provides a migration tool that helps you ch
     - All combinations of storage dimension groups and reservation hierarchies must be valid.
     - Items migrating to use WMS must not be enabled to use catch weight.
 
-1. On the Action Pane, select **Process changes**. Updating all the inventory dimensions can take a while. You can monitor the progress by using batch jobs tasks. The process uses both parallel processing and the batch framework, and the difference is handled by different batch tasks. <!-- KFM: continue here -->
+1. On the Action Pane, select **Process changes**. Updating all the inventory dimensions can take a while. You can monitor the progress by checking the batch jobs tasks. The process uses both parallel processing and the batch framework, and the difference is handled by different batch tasks. <!-- KFM: continue here -->
 
     > [!NOTE]
-    > If you upgrade from a version that supported pallets, the upgrade will identify the items that had the pallet dimension active and create a record in the **Items blocked for inventory updates** form. This is done to block the items from all inventory processes because the item is configured using unsupported settings. Items that are blocked must be migrated.
+    > If you upgrade from a version that supports pallets, the upgrade process will identify the items that have the pallet dimension active and create a record on the **Items blocked for inventory updates** page for each of them. This is done to block the items from all inventory processes because the item is configured using unsupported settings. Items that are blocked must be migrated.
 
 ### Unsupported scenarios
 
-- Catch weight enabled items: Catch weight enabled items have the pallet dimension active, they will need to be downgraded to a dimensions group where only the location is active.
-- Reserve Ordered transactions: Because of the way reservations work for warehouse management enabled items there are certain constraints on the state of the inventory transactions. If there are Reserved ordered transactions with a "hole" in the dimensions, the item cannot be converted. A "hole" could exist for an item that has the batch dimension active and has the batch placed below the location in the reservation hierarchy. If a reservation exists on site, warehouse, batch, then the location is missing, which is what we refer to as a "hole". This is not supported. The mitigation is to either assign the missing dimensions or clear the dimensions, so the "hole" is removed.
+The following scenarios aren't supported:
+
+- **Catch weight enabled items**: Catch weight enabled items have the pallet dimension active, so they must be downgraded to a dimensions group where only the location is active.
+- **Reserve ordered transactions**: Because of the way reservations work for WMS-enabled items, there are certain constraints on the state of the inventory transactions. If there are reserved ordered transactions with a *hole* in the dimensions, then then the item can't be converted. A hole could exist for an item that has the batch dimension active and has the batch placed below the location in the reservation hierarchy. If a reservation exists on site, warehouse, or batch, then the location is missing, which is what we refer to as a *hole*. This isn't supported. The mitigation is to either assign the missing dimensions or clear the dimensions, so the hole is removed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
