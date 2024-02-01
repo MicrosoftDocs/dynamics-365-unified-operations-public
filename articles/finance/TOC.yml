@@ -2372,6 +2372,8 @@
           items:
           - name: Denmark overview
             href: localizations/denmark/denmark.md
+          - name: Dynamics 365 Finance - a digital standard bookkeeping system registered in Denmark 
+            href: localizations/denmark/emea-dnk-registration.md
           - name: Assign a payment slip format to a customer account
             href: localizations/denmark/assign-payment-slip-format-customer-account.md
           - name: Create and post a customer invoice for a public sector customer
