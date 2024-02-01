@@ -36,21 +36,25 @@ ms.dyn365.ops.version:
 
 ## Prerequisites
 
+Invoice capture officially only supports [integrated Power Platform environments](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). 
+For an integrated Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps.
+1.	In the Power Platform admin center, go to Environment, and open the Environment details page.
+2.	Select Resource > Dynamic 365 apps.
+3.	Confirm that Finance and Operations Virtual Entity appears in the list, and that it has a status of Installed.
+
 Before you can install the Invoice capture solution, the following prerequisites must be met:
 
 - The **Invoice capture for Dynamics 365 Finance** feature should be enabled.
 - The Power Platform environment must be created.
 - The finance and operations virtual entity must be installed in the Power Platform environment.
 
-## Configure Dynamics 365 Finance
-
 Invoice capture GA version is supported in version 10.0.33 and later. The following Dynamics 365 Finance versions are required before installing Invoice capture (1.1.0.10 +):
 - Dynamics 365 Finance 10.0.36 10.0.1695.28 or later
 - Dynamics 365 Finance 10.0.35 10.0.1627.86 or later
 - Dynamics 365 Finance 10.0.34 10.0.1591.124 or later
 
-After the **Invoice capture for Dynamics 365 Finance** feature is enabled, users can go to **Accounts payable \> Set up \> Invoice capture**.
-
+## Configure Dynamics 365 Finance
+When the feature **Invoice Capture for Dynamics 365 Finance** is enabled, the menu under **Accounts Payable \> Set up \> Invoice capture** will be visible. 
 Before you install Invoice capture, complete the following setup in Invoice capture.
 
 1. In the **Synced legal entities** list, select the legal entities to onboard.
@@ -59,11 +63,11 @@ Before you install Invoice capture, complete the following setup in Invoice capt
    
 3. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
 
-   When the parameter is enabled, confirm the default document file is assigned to the **File** field on the **Default document types** page.
+   When the parameter is enabled, the column **Document type** in table **Synced legal entities** will be enabled and the value on field **File** under **Organization administration > Document management > Default document types** will be assigned. Admin can choose another value    from the list to decide which document type is used for the attachment from Invoice capture. 
    
 5. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
 
-    In the current version, the following options are available.
+    In the current version, it supports the following options.
 
     | Invoice type in Invoice capture | Invoice framework in Dynamics 365 Finance |
     |------|---------|
@@ -71,6 +75,20 @@ Before you install Invoice capture, complete the following setup in Invoice capt
     | Header-only invoice | Vendor invoice |
     | Cost invoice | Vendor invoice or Invoice journal |
 
+   When the invoice journal is chosen, the column “Invoice journal name” in table “Synced legal entities” will be enabled and the default journal name will be assigned. Admin can choose another journal name from the list to decide which journal name is used for creating the cost    invoices in Dynamics 365 Finance.
+   
+> [!NOTE]
+> The settings of document type and Invoice journal name are only available when the Dynamics 365 Finance version is equal to 10.0.39 or higher.
+
+
+## Invoice capture in Dynamics 365 Finance
+Within Dynamics 365 Finance release version 10.0.38 +, the tile **Invoice capture** was introduced on the home page. The feature **Invoice capture for Dynamics 365 Finance and Operations** decides whether to display the tile or not. 
+
+When the invoice capture is not installed in the integrated Power Platform environment, it will navigate to the install page of Dynamics 365 Finance. 
+When the invoice capture is installed, it will navigate to the home page of Invoice capture. Please ensure the toggle in **Environment settings \> product \> feature \> 'Enable Finance and Operations User Impersonation in Dataverse'** has to be enabled beforehand.
+
+
+   
 ## Install and set up the solution
 
 Invoice capture supports integrated Power Platform environments.
