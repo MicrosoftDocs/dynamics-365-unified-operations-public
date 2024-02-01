@@ -39,7 +39,7 @@ Through this extension, external tax solution providers can provide tax rate det
 
 The following functionality is available via the Universal Tax Rate API that the tax solution providers support:
 
-- **Encrypted connection** – The Universal Tax Rate API supports an encrypted connection via Azure Key Vault. This connection helps ensure the security and privacy of data that's transmitted between the API and external tax solution providers.
+- **Encrypted connection** – The Universal Tax Rate API supports an encrypted connection via Azure Key Vault. This connection helps ensure the security and privacy of data that's transmitted to external tax solution providers.
 - **Address validation** – This functionality lets you validate addresses that are maintained in the global address book. It helps ensure accurate tax calculations by confirming that addresses are valid and complete.
 - **Sales tax calculation** – External tax solution providers can use the Universal Tax Rate API to calculate sales tax, based on factors such as the location and the product type.
 - **Posted tax transactions** – This functionality enables tax transaction postings in the external tax solution system of the tax solution providers. Tax reporting is generated after the posting in the external tax solution system.
