@@ -207,7 +207,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Search for a page                                                             | Ctrl+/ or Alt+G            |
 | Open the help pane                                                            | Ctrl+?                     |
 | Open the trace parser                                                         | Alt+Shift+T                |
-| Move to the navigation pane                                                   | Alt+F1                     |
+| Toggle the navigation pane between open, pinned open, and closed              | Alt+F1                     |
 | Add/remove page as a favorite (with focus on a page in the navigation pane)   | Shift+F                    |
 | Move to the standard Action Pane                                              | Alt+M,A or Ctrl+F6         |
 | Move to the Filter pane (which may include opening it)                        | Alt+M,F or Ctrl+F3         |
