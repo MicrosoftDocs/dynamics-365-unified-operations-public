@@ -331,6 +331,18 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 5. In the **Company** column, you can select a legal entity code to limit the applicbility of this electronic document type. If no company is defined then electronic documents of this type will be proccessed in all legal entities.
 6. Save your changes, and close the page.
 
+### Send responses
+
+To generate and submit responses, follow these steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information, see [Submit electronic documents to Electronic invoicing](../global/e-invoicing-submit-electronic-documents.md).
+2. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
+3. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**.
+
+You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**). In the **Document type** field, select **Vendor invoices** value to filter only responses submissions.
+For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+
+
 ## Additional resources
 
 - [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
