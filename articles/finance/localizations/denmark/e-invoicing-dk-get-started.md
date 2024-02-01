@@ -322,6 +322,14 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
     - Invoice Response PEPPOL
     - Message Response PEPPOL
 
+### Configure electronic document parameters
+
+1. Make sure that the latest country/region-specific **Document context** and **Electronic document model mapping** electronic reporting configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+3. In the **Electronic document** section, add the record for the **VendInvoiceInfoTable** table name.
+4. Set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+5. In the **Company** column, you can select a legal entity code to limit the applicbility of this electronic document type. If no company is defined then electronic documents of this type will be proccessed in all legal entities.
+6. Save your changes, and close the page.
 
 ## Additional resources
 
