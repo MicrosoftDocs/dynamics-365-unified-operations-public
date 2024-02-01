@@ -72,7 +72,7 @@ Changing storage dimension groups for items lets you migrate existing items with
 
 In a typical migration scenario, you'll have existing items with the location dimension enabled. The migration process enables those items to fulfil the WMS item requirements and ensures that all the related data matches the new settings, thereby enabling business processes to proceed after the migration.
 
-To use WMS, your items must been the following requirements:
+To use WMS, your items must meet the following requirements:
 
 - The [storage dimension group](/training/modules/configure-inventory-management-dyn365-supply-chain-mgmt/3-2-storage-dim) for each item must have **Use warehouse management process** set to *Yes*. The storage dimension represents how you store or retrieve items in your inventory.
 - An [inventory reservation hierarchy](flexible-warehouse-level-dimension-reservation.md#inventory-reservation-hierarchy) must be assigned.
