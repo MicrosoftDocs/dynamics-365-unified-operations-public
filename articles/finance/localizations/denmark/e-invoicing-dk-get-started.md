@@ -304,6 +304,25 @@ Follow these steps to enter responses for specific pending vendor invoices.
 
 ### Configure electronic invoicing feature setups
 
+Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update the authorization credential required for responses submission via ISV last-mile connector.
+
+1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 5** or later. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+3. On the **Versions** tab, verify that **Draft** is selected.
+4. On the **Setups** tab, in the grid, select the **Application Response OIOUBL** feature setup, and then select **Edit**.
+5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
+6. In the **Parameters** section, select **Domain**, and then enter the service ID number that you obtained.
+7. Select **Application**, and then enter the same service ID number.
+8. Select **Destination**, and then enter the service ID number concatenated with the string **\_EDIWIN**. For example, if the service ID number is **123456**, enter **123456\_EDIWIN**.
+9. Select **Group**, and then enter the group code that you obtained.
+10. Select **Auth token**, and then select the name of the secret that you created for the token.
+11. Select **Save**, and close the page.
+12. Repeat steps 4 through 11 for each of the following feature setups if your business process assumes sending responses in the **PEPPOL** format:
+
+    - Invoice Response PEPPOL
+    - Message Response PEPPOL
+
+
 ## Additional resources
 
 - [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
