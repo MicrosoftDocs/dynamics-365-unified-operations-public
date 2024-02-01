@@ -1,8 +1,13 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery.md",
+      "redirect_url": "/power-platform/admin/business-continuity-disaster-recovery",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
-      "redirect_url": "finance/get-started/removed-deprecated-features-finance#Dataverse-solution-for-Electronic-invoicing",
+      "redirect_url": "dynamics365/finance/get-started/removed-deprecated-features-finance#Dataverse-solution-for-Electronic-invoicing",
       "redirect_document_id": "false"
     },
     {
