@@ -51,29 +51,16 @@ To unblock products that were blocked during upgrade, you must select a new stor
 - Change the storage dimension group for the item to a storage dimension group that uses only the Site, Warehouse, and Location inventory dimensions. As a result of this change, the Pallet ID inventory dimension is no longer used.
 - Change the storage dimension group for the item to a storage dimension group that uses WMS. As a result of this change, the License plate inventory dimension is now used.
 
-## Configure WMS
+## Enable warehouses to use WMS
 
-Before you can use released products in the **Warehouse management** module, the products must use a storage dimension group where the **Use warehouse management processes** parameter is selected.
-
-### Enable warehouses to use WMS
+Follow these steps to enable a warehouse to use WMS:
 
 1. Create at least one new location profile.
-1. Click **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Enable warehouse setup**.
+1. Go to **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Enable warehouse setup**.
 1. On the **Enable warehouse setup** page, add the warehouses that should be enabled. You can complete this step either directly on the page or by using the Microsoft Office integration.
 1. Assign a location profile to all the locations. You can easily complete this step by using the Microsoft Office integration directly from the page. You can either export and import the data, or use the data entity processing in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 1. Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, an additional data upgrade will be required.
 1. Process the changes.
-
-### Change the storage dimension group for items, so that it uses WMS
-
-1. Create a new **Inventory status** value, and assign it as the **Default inventory status ID** value in the **Warehouse management parameters** settings.
-1. Create a new storage dimension group where the **Use warehouse management processes** parameter is selected.
-1. On the **Reservation hierarchy** page, define a new reservation hierarchy according to the item’s storage and tracking dimension groups.
-1. Create one or more unit sequence groups that include at least the same units that are used for the items' inventory units.
-1. Click **Warehouse management** \> **Setup** \> **Enable warehouse management processes** \> **Change storage dimension group for items**.
-1. On the **Change storage dimension group for items** page, add the item numbers, storage dimension groups, and unit sequence groups. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
-1. Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, additional data upgrade will be required.
-1. Process the changes. An update of all the inventory dimensions can take a while. You can monitor the progress by using the batch jobs tasks.
 
 ## Change the storage dimension group for items to use WMS
 
