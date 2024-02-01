@@ -24,7 +24,7 @@ During an upgrade, all products that are associated with a storage dimension gro
 
 ## Upgrading to Supply Chain Management when AX 2012 R3 WMSII is used
 
-After the upgrade, you can use a set of options in the **Change storage dimension group for items** form to unblock products that were blocked during upgrade, and then process transactions for those products.
+After the upgrade, you can use a set of options on the **Change storage dimension group for items** page to unblock products that were blocked during upgrade, and then process transactions for those products.
 
 ### Enabling items in Supply Chain Management
 
@@ -40,7 +40,7 @@ If the source storage dimension groups use the Pallet ID inventory dimension, th
 
 ## Find products that were blocked because of pallet ID
 
-To view the list of released products that were blocked during upgrade and can't be processed, click **Inventory management** \> **Setup** \> **Inventory** \> **Items blocked for inventory updates**.
+To view the list of released products that were blocked during upgrade and can't be processed, go to **Inventory management** \> **Setup** \> **Inventory** \> **Items blocked for inventory updates**.
 
 ## Change storage dimension group for blocked products
 
