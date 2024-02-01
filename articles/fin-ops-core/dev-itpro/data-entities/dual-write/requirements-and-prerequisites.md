@@ -3,7 +3,9 @@ title: System requirements and prerequisites
 description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
 author: ericcolvinmorgan
 ms.date: 01/31/2024
-ms.topic: article
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -20,18 +22,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Verify requirements and grant access
 
-In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the automation built into that process should handle the setup steps documented on this page. If you're receiving errors similar to the following, these errors indicate failures occurred during the LCS provisioning process:
+In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the automation built into that process should handle the set up steps documented on this page. If you're receiving errors like the following, these errors indicate failures occurred during the Lifecycle Services provisioning process:
 
 | Error code | Error message |
 | --- | --- |
 | DW9003 | Failed to connect to CRM. Ensure that the service principal has the correct permissions to access CRM.|
 | DW9003 | Failed to connect to AX. Ensure that the service principal has the correct permissions to access AX. |
 
-This guide should assist you in recovering from these errors. In addition, this guide provides the steps taken to manually setup an environment for Dual-write.
+This guide should assist you in recovering from these errors. In addition, this guide provides the steps taken to manually set up an environment for Dual-write.
 
 Before Dual-write enablement, reference [system requirements for Dual-write](dual-write-system-req.md) to make sure that you meet the minimum system requirements. Access must also be granted to the apps that must connect to each other. If you're attempting to reset an environment, the Dual-write health check validates the below prerequisites as you complete the Dual-write reset wizard.
 
-1. Grant Dataverse access so that it can connect to a finance and operations apps.
+1. Grant Dataverse access so that it can connect to finance and operations apps.
 
     1. Open your instance of the finance and operations app, search and navigate to Microsoft Entra ID applications.
     2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that is used to connect from Dataverse to the finance and operations app.
@@ -40,8 +42,8 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
     When granted, follow these steps to refresh the list of tables:
 
-    1. Go to **Workspaces \> Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
-    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entity settings** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entity list**.
+    1. Go to **Workspaces** \> **Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
+    2. Go to **Workspaces** \> **Data management**, and select the **Framework parameters** tile. Then, on the **Entity settings** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entity list**.
 
     **Related health check result:**<br>
     *The Dataverse can connect to the finance and operations app*<br>
@@ -49,7 +51,7 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
-2. Grant a finance and operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
+2. Grant finance and operations apps access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
 
     + **Applications**: Add users to the following applications. The application users must be assigned to a security role that has **Create**, **Read**, **Write**, and **Delete** permissions on all tables in Microsoft Dataverse configured for Dual-write.
 
@@ -97,12 +99,12 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
     + On-demand functions like pricing, inventory, ATP dates.
     + Reference data for ledger, tax, payment terms, and schedules etc.
 
-    Follow the [separated solutions guide](separated-solutions.md) to find the solution you're looking for. Select the solution, and follow the prompts to import it.
+    Follow the [separated solutions guide](separated-solutions.md) to find the solution you're looking for. Select the solution and follow the prompts to import it.
 
     The Dual-write framework is extensible and accommodates customer-centric business data exchange through a few more select.
 
     > [!NOTE]
-    > You must select **Apply Solution** as part of the next steps, when you use the Dual-write wizard to link your environments.
+    > You must select **Apply Solution** as part of the next steps when you use the Dual-write wizard to link your environments.
     > It may take a few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
 
 5. Uninstall the Prospect to Cash (P2C) solution.
