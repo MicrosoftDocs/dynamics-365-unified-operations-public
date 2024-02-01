@@ -37,10 +37,10 @@ ms.dyn365.ops.version:
 ## Prerequisites
 
 Invoice capture officially only supports integrated Power Platform environments. For more information, see [Integrated Power Platform environments](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). 
-For an integrated Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps.
-1.	In the Power Platform admin center, go to Environment, and open the Environment details page.
-2.	Select Resource > Dynamic 365 apps.
-3.	Confirm that Finance and Operations Virtual Entity appears in the list, and that it has a status of Installed.
+For an integrated Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps:
+1.	In the Power Platform admin center, go to **Environment**, and open the **Environment details** page.
+2.	Select **Resource** > **Dynamic 365 apps**.
+3.	Confirm that **Finance and operations virtual entity** is displayed with a status of **Installed**.
 
 Before you can install the Invoice capture solution, the following prerequisites must be met:
 
