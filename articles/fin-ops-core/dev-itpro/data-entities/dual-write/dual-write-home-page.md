@@ -35,9 +35,7 @@ These topics describe dual-write integration.
 + [Guidance for how to set up dual-write](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 + Enable dual-write for existing finance and operations apps
-    + [Enable dual-write for existing finance and operations apps](enable-dual-write.md)
-    + [System requirements and prerequisites](requirements-and-prerequisites.md)
-    + [How to use the dual-write wizard to link your environments](link-your-environment.md)
+    + [System requirements and prerequisites troubleshooting](requirements-and-prerequisites.md)
     + [Enable table map for dual-write](enable-entity-map.md)  
 + [Separated Dual-write Application Orchestration package](separated-solutions.md)
 + [Setup security roles and permissions](security-roles.md)
