@@ -4,7 +4,7 @@
 title: Install the Invoice capture solution
 description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
-ms.date: 11/01/2023
+ms.date: 02/01/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version:
 
 ## Prerequisites
 
-Invoice capture officially only supports [integrated Power Platform environments](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). 
+Invoice capture officially only supports integrated Power Platform environments. For more information, see [Integrated Power Platform environments](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). 
 For an integrated Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps.
 1.	In the Power Platform admin center, go to Environment, and open the Environment details page.
 2.	Select Resource > Dynamic 365 apps.
