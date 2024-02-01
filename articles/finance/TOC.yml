@@ -269,7 +269,9 @@
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
         - name: Vendor invoice entry workspace
-          href: accounts-payable/vendor-invoices-workspace.md  
+          href: accounts-payable/vendor-invoices-workspace.md
+        - name: Recurring vendor invoices
+          href: accounts-payable/recurring-invoice.md
       - name: Accounts payable reports   
         items:
         - name: Vendor aging report
