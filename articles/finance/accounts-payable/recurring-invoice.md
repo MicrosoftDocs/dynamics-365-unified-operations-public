@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring vendor invoices
-description: This article explains how to set up and process recurring vendor invoices in Dynamics 365 Finance.
+description: This article explains how to set up and process recurring vendor invoices in Microsoft Dynamics 365 Finance.
 author: sunfzam
 ms.date: 2/1/2024
 ms.topic: article
@@ -30,40 +30,35 @@ ms.dyn365.ops.version: 10.0.38
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up and process recurring vendor invoices in Dynamics 365 Finance. You can use recurring vendor invoices when you receive vendor invoices with the same services, quantity and price on a regular basis. To use recurring invoices, enable the **Enable AP recurring invoice** feature in **Feature management**.  
+This article explains how to set up and process recurring vendor invoices in Microsoft Dynamics 365 Finance. You can use recurring vendor invoices when you regularly receive vendor invoices that have the same services, quantity, and price. To use recurring invoices, enable the **Enable AP recurring invoice** feature in Feature management.
 
-## Create a recurring vendor invoice template 
+## Create a recurring vendor invoice template
 
-To create the vendor invoice for the same services on a regular basis, create a vendor invoice template with the following information:
- - Header information, such as posting profile, sales tax groups, terms of payment, and the method of payment.
- - Line information, such as the service item number, procurement category code, quanity, unit price, and invoice amount.
- - Charges for shipping or handling.
- - Accounting distributions together with financial dimension information, such as cost centers and business units. 
+To create vendor invoices for the same services on a regular basis, create a vendor invoice template that has the following information:
 
-In the **Pending vendor invoice** page, you can save an invoice as a template. 
+- Header information, such as the posting profile, sales tax groups, terms of payment, and method of payment
+- Line information, such as the service item number, procurement category code, quantity, unit price, and invoice amount
+- Charges for shipping or handling
+- Accounting distributions together with financial dimension information, such as cost centers and business units
 
-### Assign a vendor invoice template to a vendor and enter recurrence details 
+On the **Pending vendor invoice** page, you can save an invoice as a template.
 
-After the template is created, assign the template to the vendors that you want to invoice. Additionally, specify when and how often the invoice will be used. 
+### Assign a vendor invoice template to a vendor and enter recurrence details
 
-Assign the templates on the **Invoice** tab of the **Vendor** page. Add the template to the list, and update the following information: 
- -  **Start date** and, optionally, the **End date** for the recurring billing
- - The frequency of the recurring billing (for example, every day or once a month)
- - The maximum billing amount (if this information is required)
- - A vendor can have multiple templates that have different frequencies 
+After the template is created, assign it to the vendors that you want to invoice. Additionally, specify when and how often the invoice is used.
 
-### Generate the recurring vendor invoices 
+Assign the templates on the **Invoice** tab of the **Vendor** page. Add the template to the list, and update the following information:
 
-On the **Recurring invoices** page, there's a task that processes recurring invoice templates. You specify the invoice date and the template to generate the invoices from. Invoices will be generated and assigned a
-single recurrence ID number for each group of invoices that is processed. 
+- The start date and, optionally, the end date for the recurring billing
+- The frequency of the recurring billing (for example, every day or once a month)
+- The maximum billing amount (if this information is required)
 
-### Post recurring vendor invoices 
+A single vendor can have multiple templates that have different frequencies.
 
-After recurring vendor invoices are generated, invoice recurrence IDs appear in a posting task on the **Recurring vendor invoices** page. You can view all of the invoices for a recurrence ID by clicking the link. 
-Individual invoices can be deleted. The vendor recurrence settings are reset for that template, so that it can be regenerated later. You can post one, many, or all of the invoices for a recurrence ID. If workflows are enabled, you must click Submit before you can post the invoices. 
+### Generate recurring vendor invoices
 
+The **Recurring invoices** page includes a task that processes recurring invoice templates. You specify the invoice date and the template to generate the invoices from. Invoices are generated, and a single recurrence ID number is assigned to each group of invoices that's processed. 
 
+### Post recurring vendor invoices
 
- 
-
-
+After recurring vendor invoices are generated, invoice recurrence IDs appear in a posting task on the **Recurring vendor invoices** page. You can view all the invoices for a recurrence ID by selecting the link. Individual invoices can be deleted. The vendor recurrence settings are reset for that template, so that it can be regenerated later. You can post one, many, or all of the invoices for a recurrence ID. If workflows are enabled, you must select **Submit** before you can post the invoices.
