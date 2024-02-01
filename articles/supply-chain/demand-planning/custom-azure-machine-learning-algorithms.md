@@ -35,14 +35,14 @@ Follow the steps in this section to create a new Microsoft Entra application in 
 1. In the **Certificates & secrets** section of the new Microsoft Entra application, create a secret for the application as described in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 1. Make a note of the application ID and its secret. You'll need these details later.
 
-## Assign access for the new Microsoft Entra application to the Azure Machine Learning workspace and Azure Machine Learning workspace Storage account
+## Assign access for the new Microsoft Entra application to the Azure Machine Learning workspace and Azure Machine Learning workspace storage account
 
 Follow these steps to assign access for the new Microsoft Entra application to the Azure Machine Learning workspace.
 
 1. In the [Azure portal](https://portal.azure.com/), go to the resource group that contains your Azure Machine Learning workspace.
 1. On the left navigation pane, select **Access control**.
 1. On the **Role assignments** tab, select **Add** to add a new role assignment.
-1. On the **Privileged administrator roles** tab, select **Contributor**.
+1. On the **Privileged administrator roles** tab, select *Contributor*.
 1. Select **Next**.
 1. Select the **User, group, or service principal** option.
 1. Select **Select members**. Use the filter on the menu on the right to find the name of the Microsoft Entra application that you created, and then select it.
@@ -54,7 +54,7 @@ Follow these steps to assign access for the new Microsoft Entra application to t
 1. In the [Azure portal](https://portal.azure.com/), go to the resource group that contains your storage account (the storage account that your Azure Machine Learning workspace is using).
 1. On the left navigation pane, select **Access control**.
 1. On the **Role assignments** tab, select **Add** to add a new role assignment.
-1. On the **Job function roles** tab, select **Storage account contributor** and **Storage blob data contributor**. To find these roles quickly, enter *storage contributor* into the **Search** field.
+1. On the **Job function roles** tab, select *Storage account contributor* and *Storage blob data contributor*. To find these roles quickly, enter *storage contributor* into the **Search** field.
 1. Select **Next**.
 1. Select the **User, group, or service principal** option.
 1. Select **Select members**. Use the filter on the menu on the right to find the name of the Microsoft Entra application that you created, and then select it.
