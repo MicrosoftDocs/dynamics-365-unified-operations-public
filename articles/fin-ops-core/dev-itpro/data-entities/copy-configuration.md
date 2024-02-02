@@ -233,6 +233,9 @@ Before you import a configuration, you might want to use some additional feature
 
 The **Data management** workspace is also your hub for copying configuration information from one legal entity to another. The process resembles an export and import that occur in one step. As in an import, if information that exists in the source legal entity doesn't exist in the destination legal entity, the copy process adds it. If information already exists in the destination legal entity, the copy process updates it.
 
+> [!NOTE]
+> Make sure that change tracking is enabled for the entity. This is required to ensure that only an incremental push, and not a full push, occurs.
+
 To copy a configuration from one legal entity to another legal entity in the same instance, follow these steps.
 
 1. Open the **Data management** workspace. If you're in Standard view, select **Enhanced view**.
