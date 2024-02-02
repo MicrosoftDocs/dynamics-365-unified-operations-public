@@ -46,6 +46,18 @@ This section contains a table that lists the enhancements that are included in t
 |---|---|---|---|
 | Lifecycle Services | Batch Job History and Custom Batch Job History cleanup | For more information, see [Clean up the batch job history](../../dev-itpro/sysadmin/batch-history-cleanup.md) | |
 | Business Events | Fixed the issue where Batch Business Events were always raised in DAT entity while Job was in any other business entity. | | |
+| Row version change tracking for tables and data entities | Row version change tracking | Finance and operations apps have a change tracking functionality option available that's known as row version change tracking. Change tracking enables incremental synchronization of Finance and Operations apps to Microsoft Dataverse and is a prerequisite for several features.
+</br></br>
+This feature has been available since version 10.0.34. With version 10.0.39 the feature will be enabled by default in all finance and operations apps environments. 
+</br></br>
+In version 10.0.39, the SysRowVersionNumber column is deprecated and replaced by SysRowVersion column for all out-of-the-box tables. 
+</br></br>
+For more information on  managing risks, see [Enable row version change tracking functionality](../..//fin-ops-core/dev-itpro/data-entities/rowversion-change-track.md#enable-row-version-change-tracking-functionality).
+| Default |
+| Generating ISV licenses | SHA256 algorithm for generating ISV licenses | SHA256 - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure SHA256 algorithm for generating ISV licenses. This [](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) the SHA1 algorithm. | Default |
+
+This replaces the SHA1 algorithm. 
+
 
 ### Bug fixes
 
