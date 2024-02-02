@@ -3,7 +3,7 @@ title: Service-based authentication for the Warehouse Management mobile app in o
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment using service-based authentication.
 author: faix
 ms.author: osfaixat
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.date: 10/18/2023
 audience: Developer
@@ -30,76 +30,63 @@ Certificates can be used as secrets to prove the application's identity when a t
 
 You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app for service-based authentication](warehouse-app-intune.md).
 
-## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
+## Create an application entry in AD FS
+For a successful authentication exchange between AD FS and Finance + Operations, an application entry must be registered in AD FS under an AD FS application group. To create this application entry, run the following Windows PowerShell commands on a machine where the AD FS is installed. The user account must have enough permissions to administer AD FS.
 
-To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
+1.  Enter the following command in the Windows PowerShell console to create the application entry.  
 
-1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
-1. Enter the name and password of the user who has access to the Azure subscription.
-1. In the Azure portal, on the left navigation pane, select **Microsoft Entra ID**.
-1. Make sure that you're working with the instance of Microsoft Entra ID that's used by Supply Chain Management.
-1. In the **Manage** list, select **App registrations**.
-1. On the toolbar, select **New registration** to open the **Register an application** wizard.
-1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
-1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
-1. In the **Manage** list, select **Certificate & secrets**.
-1. Select one of the following buttons, depending on whether you want to use certificates or client secrets for authentication:
+    ```powershell
+    Add-AdfsClient -Name 'Dynamics 365 Finance - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' 
+    ```
 
-    - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be more completely automated. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that's shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
-    - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
+    - The \<Resource URL\> can, for example, be `https://ax.d365ffo.onprem.contoso.com` (where `https://ax.d365ffo.onprem.contoso.com` is the URL to access Finance + Operations).
 
-For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
+2.  Save the values that you received.
 
-- For instructions that show how to use Windows PowerShell to set up web service applications in Microsoft Entra ID, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+3.  Run the following command to grant permission to the application.  
+    
+    ```powershell
+    Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
+    ```
 
-- For complete details about how to manually create a web service application in Microsoft Entra ID, see the following articles:
-    - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
-    - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
+## <a name="user-azure-ad"></a>Set up mobile-device user accounts in Finance + Operations (on-premises)
 
-## <a name="user-azure-ad"></a>Set up mobile-device user accounts in Supply Chain Management
-
-To enable Supply Chain Management to use your Microsoft Entra ID application, follow these steps.
+To enable Finance + Operations (on-premises) to use your AD FS application, follow these steps.
 
 1. Create a user that corresponds to the user credentials for the Warehouse Management mobile app:
 
-    1. In Supply Chain Management, go to **System administration \> Users \> Users**.
+    1. In Finance + Operations (on-premises), go to **System administration \> Users \> Users**.
     1. Create a user.
     1. Assign the *Warehousing mobile device user* role to the user.
 
     ![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
 
-1. Associate your Microsoft Entra ID application with the Warehouse Management mobile app user:
+1. Associate your AD FS application with the Warehouse Management mobile app user:
 
     1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
     1. On the Action Pane, select **New** to add a line.
-    1. In the **Client ID** field, enter the client ID that you made a note of when you set up the web service application in Microsoft Entra ID.
+    1. In the **Client ID** field, enter the client ID that you made a note of when you set up the application in AD FS.
     1. In the **Name** field, enter a name.
     1. In the **User ID** field, select the user ID that you just created.
 
 > [!TIP]
-> One way to use these settings is to create a client ID in Azure for each of your physical devices and then add each client ID to the **Microsoft Entra ID applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
+> One way to use these settings is to create a client ID in AD FS for each of your physical devices and then add each client ID to the **Microsoft Entra ID applications** page. Then, if a device is lost, you can easily remove its access to Finance + Operations (on-premises) by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
 >
 > Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using a certificate or client secret
 
-If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The following procedure describes the recommended process for removing access for a device that authenticates by using a certificate or client secret.
+If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). The following procedure describes the recommended process for removing access for a device that authenticates by using a certificate or client secret.
 
 1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
 1. Delete the line that corresponds to the device that you want to remove access for. Make a note of the client ID that's used for the device, because you'll need it later.
 
     If you've registered only one client ID, and multiple devices use the same client ID, you must push out new connection settings to those devices. Otherwise, they'll lose access.
 
-1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
-1. In the left navigation pane, select **Active Directory**, and make sure that you're in the correct directory.
-1. In the **Manage** list, select **App registrations**, and then select the application to configure. The **Settings** page appears and shows configuration information.
-1. Make sure that the client ID of the application matches the client ID that you made a note of in step 2.
-1. On the toolbar, select **Delete**.
-1. In the confirmation message that appears, select **Yes**.
-
-## Additional resources
-
-- [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
+1. Open your AD FS management tool.
+1. In the left navigation pane, select **Application Groups**, and then select the application group that corresponds Finance + Operations (on-premises).
+1. Find the client ID that corresponds to the client ID that you made a note of in step 2 under the server application group, and then select it.
+1. On the bottom right, select **Remove**.
+1. Then click **Apply**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

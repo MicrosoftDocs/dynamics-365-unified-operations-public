@@ -42,61 +42,31 @@ The Warehouse Management mobile app is available for Microsoft Windows, Google A
 
 To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-latest.md#setup).
 
-
-
-## Create an application entry in AD FS
-For a successful authentication exchange between AD FS and Finance + Operations, an application entry must be registered in AD FS under an AD FS application group. To create this application entry, run the following Windows PowerShell commands on a machine where the AD FS is installed. The user account must have enough permissions to administer AD FS.
-
-1.  Enter the following command in the Windows PowerShell console to create the application entry.  
-
-    ```powershell
-    Add-AdfsClient -Name 'Dynamics 365 Finance - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
-    ```
-
-    - The \<Resource URL\> can, for example, be `https://ax.d365ffo.onprem.contoso.com` (where `https://ax.d365ffo.onprem.contoso.com`
-is the URL to access Finance + Operations).
-    - The \<Admin user\> can be any user with admin access to the AD FS machine.
-
-2.  Save the values that you received.
-
-3.  Run the following command to grant permission to the application.  
-    
-    ```powershell
-    Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
-    ```
-
-## Create and configure a user account
-
-To enable Finance + Operations to use your AD FS application, you must create a user account in Microsoft Dynamics 365 with the same user credentials as the user of the Warehousing app:
-
-1.  Create a user in Finance + Operations and assign the Warehousing mobile
-    device user role to the user.
-
-    1.  Go to **System administration** \> **Common** \> **Users**.
-    
-    2.  Create a new user.
-    
-    3.  Assign the warehouse mobile device user role, as shown in the example screenshot.
-
-    ![Create and configure a user.](media/wmapp-users.png)
-
-2.  Associate your AD FS application with the Warehousing app user.
-
-    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Microsoft Entra ID applications**.
-    
-    2.  Create a new line.
-    
-    3.  Enter the client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter a name, and select the Warehousing app user.
-
-    ![Azure Active Drectory applications .](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/assets/60176428/ae2ca504-e50d-4a1e-b856-ede5f7d7da42)
-
-
 ## Certificates 
 
 Make sure that the devices where the app is installed have the correct certificates to access the resources. If you're using self-signed certificates, you must install them on each device by importing the Finance + Operations (on-premises) certificate and the AD FS certificate into the trusted root of the computer account/user account. For more information, see [Create and export a self-signed certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
 
 > [!IMPORTANT]
-> Environments with self-signed certificates will not be accessible from Android and iOS devices. If you need to access the environment from an Android or iOS device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you will have to manually import the certificate authority certificate into your Android or iOS device.   
+> Environments with self-signed certificates will not be accessible from Android and iOS devices. If you need to access the environment from an Android or iOS device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you will have to manually import the certificate authority certificate into your Android or iOS device.
+
+## <a name="authenticate"></a>Decide which authentication methods you'll use
+
+Because the Warehouse Management mobile app has read/write access to some of your Finance + Operations (on-premises) data, each device must be authenticated to interact with it. The app supports several authentication methods. Before you start to deploy the app, take the time to learn about the authentication methods that are available, and decide which one you want to use.
+
+After a device is authenticated with Finance + Operations (on-premises), each worker who uses that device signs in by using their Finance + Operations (on-premises) worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Finance + Operations (on-premises).
+
+For details about each authentication method and how to set it up, see the following articles:
+
+- User-based authentication: [User-based authentication for the Warehouse Management mobile app](warehousing-onprem-serviceauth.md)
+- Service-based authentication (deprecated): [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
+
+> [!IMPORTANT]
+> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
+
+If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
+
+- User-based authentication: [Remove access for a device that uses user-based authentication](warehousing-onprem-userauth.md#revoke)
+- Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehousing-onprem-serviceauth#revoke)
 
 ## Configure the application
 
