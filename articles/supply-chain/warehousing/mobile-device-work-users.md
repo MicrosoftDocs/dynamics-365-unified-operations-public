@@ -2,15 +2,14 @@
 title: Mobile device user accounts
 description: This article describes how to set up and manage user accounts that enable workers to sign in and use the warehouse app.
 author: Mirzaab
-ms.date: 09/15/2021
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-09-15
-ms.dyn365.ops.version: 10.0.22
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: M02/02/2024
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Mobile device user accounts
@@ -19,6 +18,13 @@ ms.dyn365.ops.version: 10.0.22
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 Every time that a worker starts to use the warehouse app, they must sign in by using a user name and password. Any number of warehouse app users can be associated with each worker in the system, and warehouses are typically associated with each of those warehouse app users. Various options are also configured for each worker, to establish default settings and other settings that are relevant to using the warehouse app.
+
+## <a name="scenarios"></a>Scenarios for managing users and devices
+
+There are two basic scenarios for managing users and devices in the warehouse app. In each case, you will have one Warehouse management *warehouse worker* record for each human worker, but might have any number of user accounts for each warehouse worker (for example, they might have a different user account for each warehouse they work in). For warehouse worker accounts that have more than one user account, it's possible to make one of them the default user account. The two scenarios are:
+
+- **Use one Microsoft Entra ID user for each mobile device** – In this scenario, admins set up the Warehouse Management mobile app to use either [device code authentication](warehouse-app-authenticate-user-based.md) or [username/password authentication](warehouse-app-authenticate-user-based.md) to connect to Supply Chain Management through the *device's* Microsoft Entra ID account (human workers don't need a Microsoft Entra ID account). The app then shows a sign-in screen that lets human workers sign in to the app so they can gain access to the work and other records that apply to them at their location. Human workers sign in using the user ID and password of one of the user accounts assigned to their warehouse worker record. Human workers must always enter a user ID, so it doesn't matter which of these user accounts is set as the default for the warehouse worker record. When a human worker signs out, the app remains authenticated with Supply Chain Management but shows the sign-in screen again, so the next human worker can sign in.
+- **Use one Microsoft Entra ID user for each human warehouse worker** – In this scenario, each human user has a Microsoft Entra ID that's linked to their warehouse worker account in Supply Chain Management. As a result, the Microsoft Entra ID might be all the human worker needs to both authenticate the app with Supply Chain Management and sign in to the app, provided the warehouse worker account has either just one user ID or a default user ID set for that worker account. This scenario also supports [single sign-on](warehouse-app-authenticate-user-based.md#sso) (SSO) because the same Microsoft Entra ID session can be shared across other apps on the device (such as Microsoft Teams or Microsoft Outlook) until the human worker signs out of the Microsoft Entra ID account.
 
 ## Set up the required worker and employee records
 
@@ -54,6 +60,7 @@ After the required workers and employees are set up in Human Resources, you can 
     - **Default warehouse** – Set the default warehouse where the worker usually works. You can use the toolbar to assign additional warehouses, and the worker can switch between warehouses by using the **Change warehouse** indirect activity of the mobile device menu item.
     - **Menu name** – Select the root menu that will be the starting page for the worker. The ability to set up a root menu for each worker is useful because it lets you control the menu structure that each worker can use. For example, the menu for workers that are active only in the outbound area can be tailored for tasks that are related to outbound operations for that area.
     - **Inactive** – A selected checkbox indicates that the user account is inactive. The user account is automatically inactivated if a worker enters the wrong password five times in a row in the warehouse app. However, you can also manually select this checkbox. Clear the checkbox to make the user active again.
+    - **Default user** – If you have more than one user set up for the current worker, then select this check box for the user account that should act as the default for this worker (if any). If you are using a sign-in scenario where you have one Microsoft Entra ID  for each human warehouse worker, then the Warehouse Management mobile app automatically signs in using default user account when the human worker signs in to the device using their Microsoft Entra ID (see also [Scenarios for managing users and devices](#scenarios)).
 
 1. On the **Work** FastTab, set the following fields:
 

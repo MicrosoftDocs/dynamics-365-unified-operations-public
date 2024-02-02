@@ -106,7 +106,7 @@ SSO applies exclusively to the `"UsernamePassword"` connection type. (It doesn't
 The procedure in [Create a web service application in Microsoft Entra ID](#create-service) describes all the settings that are required to prepare your system to use SSO. However, to use SSO, you must also follow one of these steps, depending on how you configure the connection.
 
 - If you *manually configure the connection* in the Warehouse Management mobile app, you must enable the **Brokered Authentication** option on the application's [connection edit [page]](install-configure-warehouse-management-app.md#config-manually).
-- If you *configure the connection by using a connection JavaScript Object Notation (JSON) file or QR code*, you must include `"UseBroker": true` in your [JSON file or QR code](install-configure-warehouse-management-app.md#connection-file-qr).
+- If you *configure the connection by using a JavaScript Object Notation (JSON) file or QR code*, you must include `"UseBroker": true` in your [JSON file or QR code](install-configure-warehouse-management-app.md#connection-file-qr).
 
 > [!IMPORTANT]
 > - To use mass deployment, you must enable SSO.
