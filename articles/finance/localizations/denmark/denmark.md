@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 > [!IMPORTANT]
 > In May 2022, Denmark updated its bookkeeping law, replacing the 1999 act. This new law, known as the [Danish Bookkeeping Act, no. 700 of 24 May 2022](https://go.microsoft.com/fwlink/?linkid=2259403) (the "Act"), and any issued Executive Orders, govern the bookkeeping responsibilities for commercial enterprises in Denmark, including foreign companies operating there and digital bookkeeping system providers. The law's primary purpose is to prevent tax fraud and promote digital accounting.
 > 
-> Dynamics 365 Finance, a cloud-based business management solution, is approved by the Danish Business Authority (Erhvervsstyrelsen) ("DBA") as a registered digital standard bookkeeping system in Denmark. It was registered under section 4 of [Executive Order no. 98 of January 26, 2023](https://go.microsoft.com/fwlink/?linkid=2259402), with registration number **fob31477**. 
+> Dynamics 365 Finance, a cloud-based business management solution, is approved by the Danish Business Authority (Erhvervsstyrelsen) ("DBA") as a registered digital standard bookkeeping system in Denmark. It was registered under section 4 of [Executive Order no. 98 of January 26, 2023](https://go.microsoft.com/fwlink/?linkid=2259402), with registration number **fob314877**. 
 >
 > For more information, see [Dynamics 365 Finance - a digital standard bookkeeping system registered in Denmark](emea-dnk-registration.md).
 
