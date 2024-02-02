@@ -1,6 +1,6 @@
 ---
 title: Site builder authoring page overview
-description: This article provides an overview of the site builder authoring page in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the Microsoft Dynamics 365 Commerce site builder authoring page.
 author: bicyclingfool
 ms.date: 02/02/2024
 ms.topic: overview
@@ -16,12 +16,11 @@ ms.assetid:
 
 ---
 
-# Authoring page overview
+# Site builder authoring page overview
 
-  
- [!include [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-This article provides an overview of the site builder authoring page in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the Microsoft Dynamics 365 Commerce site builder authoring page.
 
 Websites can be created to support various business needs. They can represent a whole business, offer a single channel of the business, or target a specific audience or segment of an audience. For example, a clothing manufacturer might have a website that showcases all the brands that it owns. The same clothing manufacturer might then have a separate website for each of those brands, and also a set of websites that feature luxury fashion, outdoor fashion, and children's fashion.
 
