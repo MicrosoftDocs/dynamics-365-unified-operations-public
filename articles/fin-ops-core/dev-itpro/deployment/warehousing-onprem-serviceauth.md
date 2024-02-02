@@ -17,7 +17,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> The authentication methods described in this topic are now deprecated. We strongly recommend that you authenticate using [device code flow](warehousing-onprem-serviceauth.md) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
+> The authentication methods described in this topic are now deprecated. We strongly recommend that you authenticate using [device code flow](warehousing-onprem-serviceauth.md) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md).
 
 Authentication with Active Directory Federation Services (AD FS) provides a secure way of authenticating a mobile device with Microsoft Dynamics 365 Finance + Operations (on-premises) environments. The Warehouse Management mobile app supports the following types of service-based authentication:
 
@@ -30,7 +30,7 @@ Each device should have its own unique certificate or client secret.
 
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the AD FS application, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use nonexportable certificates.
 
-You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app for service-based authentication](warehouse-app-intune.md).
+You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app for service-based authentication](../../../supply-chain/warehousing/warehouse-app-intune.md).
 
 ## Create an application entry in AD FS
 For a successful authentication exchange between AD FS and Finance + Operations, an application entry must be registered in AD FS under an AD FS application group. To create this application entry, run the following Windows PowerShell commands on a machine where the AD FS is installed. The user account must have enough permissions to administer AD FS.
@@ -61,7 +61,7 @@ To enable Finance + Operations (on-premises) to use your AD FS application, foll
     1. Create a user.
     1. Assign the *Warehousing mobile device user* role to the user.
 
-    ![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
+    ![Warehousing mobile device user role assigned to a user.](../../../supply-chain/warehousing/media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
 
 1. Associate your AD FS application with the Warehouse Management mobile app user:
 
@@ -74,7 +74,7 @@ To enable Finance + Operations (on-premises) to use your AD FS application, foll
 > [!TIP]
 > One way to use these settings is to create a client in AD FS for each of your physical devices and then add each client ID to the **Microsoft Entra ID applications** page. Then, if a device is lost, you can easily remove its access to Finance + Operations (on-premises) by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
 >
-> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
+> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](../../../supply-chain/warehousing/mobile-device-work-users.md).)
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using a certificate or client secret
 
@@ -91,4 +91,4 @@ If a device is lost or compromised, you must remove its ability to access Financ
 1. On the bottom right, select **Remove**.
 1. Then click **Apply**.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -89,7 +89,7 @@ Create a user that corresponds to the user credentials for the Warehouse Managem
 1. Create a user.
 1. Assign the *Warehousing mobile device user* role to the user.
 
-![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
+![Warehousing mobile device user role assigned to a user.](../../../supply-chain/warehousing/media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
@@ -102,3 +102,5 @@ To disable a user in Active Directory follow these steps:
 
 > [!NOTE]
 > Depending on how you set up your authentication system, you might also want to change the user's password or completely disable the user account.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

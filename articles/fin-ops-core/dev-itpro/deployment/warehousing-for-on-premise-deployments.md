@@ -61,12 +61,12 @@ For details about each authentication method and how to set it up, see the follo
 - Service-based authentication (deprecated): [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
 
 > [!IMPORTANT]
-> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
+> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](../../../supply-chain/warehousingwarehouse-app-user-based-auth-faq.md).
 
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
 - User-based authentication: [Remove access for a device that uses user-based authentication](warehousing-onprem-userauth.md#revoke)
-- Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehousing-onprem-serviceauth#revoke)
+- Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehousing-onprem-serviceauth.md#revoke)
 
 ## Configure the application
 
@@ -179,15 +179,15 @@ After you create your file, you must import it. For more information, see [Impor
         > Don't end this value with a slash (/).
 
     - **Company** – Enter the legal entity (company) in Finance + Operations (on-premises) that you want the application to connect to.
-    - **Brokered authentication** – This setting applies only when the **Authentication method** field is set to *Username and password*. Select whether to use a broker for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set the value to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password.
+    - **Brokered authentication** – This setting applies only when the **Authentication method** field is set to *Username and password*. Select whether to use a broker for [SSO](../../../supply-chain/warehousing/warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set the value to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password.
 
 1. Select the **Save** button in the upper-right corner of the page.
 1. If you're using a certificate for authentication, complete one of the following steps:
 
     - For Android devices, select the certificate when prompted.
-    - For iOS devices, follow the instructions given in step 5 in the [Import the connection settings](#config) section.
+    - For iOS devices, follow the instructions given in step 5 in the [Import the connection settings](../../../supply-chain/warehousing/install-configure-warehousing-app.md#import-the-connection-settings) section.
 
-1. The app connects to your Supply Chain Management server and shows the sign-in page.
+1. The app connects to your Finance + Operations (on-premises) server and shows the sign-in page.
 
 The application connects to Finance + Operations (on-premises), and the sign-in page for the warehouse worker appears.
 
