@@ -646,6 +646,8 @@
         href: budgeting/budget-planning-integration-other-modules.md
     - name: Cash and bank management
       items:
+      - name: Petty cash
+        href: cash-bank-management/Petty-cash.md
       - name: Cash and bank management home page
         href: cash-bank-management/cash-bank-management.md
       - name: Cash flow forecasting
@@ -664,10 +666,6 @@
         href: cash-bank-management/iban-validation.md
       - name: Net customer and vendor balances
         href: cash-bank-management/Net-customer-and-vendor-balances.md 
-      - name: Petty cash
-        items:  
-        - name: Petty cash
-          href: cash-bank-management/Petty-cash.md
       - name: Settlement overview
         href: cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
