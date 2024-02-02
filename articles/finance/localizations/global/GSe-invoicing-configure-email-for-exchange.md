@@ -114,7 +114,7 @@ Follow these steps to register service principals in Exchange.
 
     | Field              | Description |
     |--------------------|-------------|
-    | Data channel       | Enter a unique name to identify the data channel. The name can have a maximum of 10 characters. It will be referenced in applicability rules and in connected applications during the communication process. |
+    | Data channel       | Enter a unique name to identify the data channel. The name can have a maximum of 10 characters. It will be referenced in applicability rules and in Dynamics 365 finance application during the communication process. |
     | Server address     | Enter the server address of Exchange Online. For example, the default value for Office 365 Exchange Online is **outlook.office365.com**. |
     | Server port        | Enter the number of the port that the email account provider uses. For example, the default value for Office 365 Exchange Online is **993**.|
     | User name secret   | Enter the name of the Key Vault secret that contains the ID of the email user account. This secret must be created in Key Vault and set up in your service environment. |
