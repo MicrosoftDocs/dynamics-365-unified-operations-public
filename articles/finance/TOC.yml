@@ -1566,7 +1566,7 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing
+        - name: Electronic Invoicing (preview)
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/GS-e-invoicing-service-overview.md?context=/dynamics365/context/finance
