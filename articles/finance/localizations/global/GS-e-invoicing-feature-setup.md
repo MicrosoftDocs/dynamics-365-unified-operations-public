@@ -113,7 +113,7 @@ You can work with applicability rules in the following ways:
 
 *Variables* give you more flexibility when you set up a processing pipeline and the data flow among actions. You can refer to a variable in some action parameters to temporarily store data or electronic files. Some variables are used to pass data between Finance or Supply Chain Management applications and the Electronic Invoicing service.
 
-The system creates some variables by default. For example, the **BusinessDocumentDataModel** variable contains business data in a JavaScript Object Notation (JSON) structure that comes in the call from the connected application during the submission process.
+The system creates some variables by default. For example, the **BusinessDocumentDataModel** variable contains business data in a JavaScript Object Notation (JSON) structure that comes in the call from the Dynamics 365 finance application during the submission process.
 
 The following types of variables are available:
 
