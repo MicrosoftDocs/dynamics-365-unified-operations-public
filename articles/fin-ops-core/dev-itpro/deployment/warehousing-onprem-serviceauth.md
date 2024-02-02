@@ -5,7 +5,9 @@ author: faix
 ms.author: osfaixat
 ms.reviewer: johnmichalak
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.custom: 
+  - bap-template
+ms.date: 02/02/2024
 audience: Developer
 ms.search.region: Global
 ---
@@ -89,4 +91,4 @@ If a device is lost or compromised, you must remove its ability to access Financ
 1. On the bottom right, select **Remove**.
 1. Then click **Apply**.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
