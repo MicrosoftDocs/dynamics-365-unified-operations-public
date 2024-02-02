@@ -52,7 +52,7 @@ This feature has been available since version 10.0.34. With version 10.0.39 the 
 </br></br>
 In version 10.0.39, the SysRowVersionNumber column is deprecated and replaced by SysRowVersion column for all out-of-the-box tables. 
 </br></br>
-For more information on  managing risks, see [Enable row version change tracking functionality](../..//fin-ops-core/dev-itpro/data-entities/rowversion-change-track.md#enable-row-version-change-tracking-functionality).
+For more information on  managing risks, see [Enable row version change tracking functionality](../..//fin-ops-core/dev-itpro/data-entities/rowversion-change-track.md#enable-row-version-change-tracking-functionality).|
 | Default |
 | Generating ISV licenses | SHA256 algorithm for generating ISV licenses | SHA256 - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure SHA256 algorithm for generating ISV licenses. This [](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) the SHA1 algorithm. | Default |
 
