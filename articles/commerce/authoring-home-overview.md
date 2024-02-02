@@ -2,11 +2,11 @@
 title: Authoring page overview
 description: This article provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 12/19/2023
+ms.date: 02/02/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: Application USer
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brendans
