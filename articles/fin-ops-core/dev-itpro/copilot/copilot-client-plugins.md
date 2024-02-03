@@ -26,7 +26,7 @@ There are two key components in developing client plugins:
 See [Architecture of Copilot in finance and operations](copilot-architecture.md) for additional detail on the plugin architecture and execution.
 
 ## Defining the action in X++
-In X++ you must create a class that is called and can execute code when Copilot Studio invokes the method.
+In X++ you must create a class that is called and can execute code when Copilot Studio invokes the method. The new class must be a subclass extending the `SysCopilotChatAction` class.
 
 ### Data contract
 The method must be defined as a data contract. This enables passing complex data types as input and output parameters of the method so serialization and deserialization of the parameters isn't required for the communication Copilot Studio. Define the method as a data contract by decorating it with the `DataContract` attribute. See [Using Data Contracts in X++](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x) for more information in implementing data contracts in X++.
@@ -45,7 +45,7 @@ Decorate the class with the `SysCopilotChatActionDefinition` function to define 
 
 #### Example
 
-```X++
+```x++
 [SysCopilotChatActionDefinition(
     identifierStr(MS.ServerForm.CopilotExample.ConvertCurrency),
     'Currency converter',
@@ -68,11 +68,54 @@ Decorate the method with one or more `ExportMetadata` attributes to define the f
 
 The following example defines the action as a form action available on the `Batch` and `BatchGroup` forms.
 
-```X++
+```x++
 [ExportMetadata(formStr(SysCopilotTestActionForm), identifierStr(FormName))]
 [ExportMetadata(formStr(Batch), identifierStr(FormName))]
 [Export(identifierstr(Microsoft.Dynamics.AX.Application.SysCopilotChatAction))]
 
+```
+
+### Define input parameters
+Input parameters can be defined for the action, and are received with the event payload sent from Copilot Studio to finance and operations apps to invoke the action. These are defined as data members of the data contract.
+
+Use the `SysCopilotChatActionInputParameter` function to define the properties of the parameter:
+
+| Parameter | Type | Description | 
+| --- | --- | --- | 
+| description | string | A natural language description of the parameter. This is not currently used by Copilot, but should be provided in the definition. In a future release it will be used to enhance intelligent orchestration of plugins by linking the parameter to the user's natural language prompt. |
+| isRequired | boolean | Determines whether a value must be defined for the parameter |
+
+You must also define an accessor method for each parameter to get and set the variables. The following example shows defining a `currencyAmount` input parameter for a client action.
+
+```x++
+    [DataMember('currencyAmount'),
+    SysCopilotChatActionInputParameter('The currency value to be converted', true)]
+    public Money parmCurrencyAmount(Money _currencyAmount = currencyAmount)
+    {
+        currencyAmount = _currencyAmount;
+        return currencyAmount;
+    }
+```
+
+### Define output parameters
+Output parameters can be defined for the action, and are sent with the event payload from finance and operations apps to Copilot Studio as a response. Like input parameters, these are defined as data members of the data contract.
+
+Use the `SysCopilotChatActionOutputParameter` function to define the properties of the parameter:
+
+| Parameter | Type | Description | 
+| --- | --- | --- | 
+| description | string | A natural language description of the parameter. This is not currently used by Copilot, but should be provided in the definition. In a future release it will be used to enhance intelligent orchestration of plugins by linking the parameter to the user's natural language prompt. |
+
+You must define an accessor method for each output parameter. The following example shows defining a `convertedValue` output parameter for a client action.
+
+```x++
+    [DataMember('convertedValue'),
+    SysCopilotChatActionOutputParameter('The converted value after the exchange rate is applied')]
+    public Money parmConvertedValue(Money _convertedValue = convertedValue)
+    {
+        convertedValue = _convertedValue;
+        return convertedValue;
+    }
 ```
 
 ## Creating a plugin in Microsoft Copilot Studio
