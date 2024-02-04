@@ -118,6 +118,21 @@ You must define an accessor method for each output parameter. The following exam
     }
 ```
 
+### Defining the execution of the client action
+Create an instance of the `SysCopilotChatActionDefinitionAttribute` class to define business logic that should execute for action and set any output parameter values. When calling `executeAction`, the output parameters will be resealized and returned in the event payload to Copilot Studio.
+
+For example, if you have a `calculateForeignCurrency` class that you want to use to convert your input parameters to a foreign currency value as the Copilot action, you could do the following to call the class and set the `parmConvertedValue` output parameter to the resulting value.
+
+```x++
+public void executeAction(SysCopilotChatActionDefinitionAttribute _actionDefinition, object _context)
+{
+    date exchangeDate = systemDateGet();
+    Money foreignCurrencyValue = CurrencyConverter::calculateForeignCurrency(currencyAmount, exchangeDate, currencyCode);
+    this.parmConvertedValue(foreignCurrencyValue);
+}
+
+```
+
 ## Creating a plugin in Microsoft Copilot Studio
 
 
