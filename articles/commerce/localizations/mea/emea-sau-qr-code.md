@@ -544,7 +544,7 @@ Follow these steps to create a new extension and add it to your environment.
                 {
                     if (request is EncodeQrCodeServiceRequest encodeQrCodeServiceRequest)
                     {
-                        encodeQrCodeServiceRequest.ImageFormat = ImageFormat.Png;
+                        encodeQrCodeServiceRequest.ImageFormat = ImageFormat.Bmp;
                     }
 
                     return Task.CompletedTask;
