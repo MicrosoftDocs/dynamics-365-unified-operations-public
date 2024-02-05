@@ -54,20 +54,20 @@ Invoice capture GA version is supported in version 10.0.33 and later. The follow
 - Dynamics 365 Finance 10.0.34 10.0.1591.124 or later
 
 ## Configure Dynamics 365 Finance
-When the feature **Invoice Capture for Dynamics 365 Finance** is enabled, the menu under **Accounts Payable \> Set up \> Invoice capture** will be visible. 
-Before you install Invoice capture, complete the following setup in Invoice capture.
+When the **Invoice Capture for Dynamics 365 Finance** feature is enabled, the **Invoice capture** menu is available under **Accounts Payable \> Set up \> Invoice capture**. 
+Before you install Invoice capture, set up the following in Invoice capture:
 
 1. In the **Synced legal entities** list, select the legal entities to onboard.
 
-   By default, the option **Sync all vendors** is enabled. This option synchronizes any changes or additions to vendors within onboarded legal entities from Dynamics 365 finance and operations to Invoice capture in real-time. Manual vendor synchronization is needed for each individual legal entity to avoid potential failure due to a virtual entity bottleneck with larger data volume.
+By default, the **Sync all vendors** option is enabled. This option synchronizes any changes or additions to vendors within onboarded legal entities from Dynamics 365 finance and operations to Invoice capture in real-time. Manual vendor synchronization is needed for each individual legal entity to avoid potential failure due to a virtual entity bottleneck with larger data volume.
    
-3. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
+2. Select if an invoice attachment is transferred together with the invoice from Invoice capture.
 
-   When the parameter is enabled, the column **Document type** in table **Synced legal entities** will be enabled and the value on field **File** under **Organization administration > Document management > Default document types** will be assigned. Admin can choose another value    from the list to decide which document type is used for the attachment from Invoice capture. 
+When the parameter is enabled, the **Document type** column in **Synced legal entities** is enabled and the value in the **File** field is assigned. Administrators can select which document type is used for the attachment from Invoice capture. 
    
-5. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
+3. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
 
-    In the current version, it supports the following options.
+    In the current version, the following options are supported: 
 
     | Invoice type in Invoice capture | Invoice framework in Dynamics 365 Finance |
     |------|---------|
@@ -75,17 +75,17 @@ Before you install Invoice capture, complete the following setup in Invoice capt
     | Header-only invoice | Vendor invoice |
     | Cost invoice | Vendor invoice or Invoice journal |
 
-   When the invoice journal is chosen, the column “Invoice journal name” in table “Synced legal entities” will be enabled and the default journal name will be assigned. Admin can choose another journal name from the list to decide which journal name is used for creating the cost    invoices in Dynamics 365 Finance.
+When the invoice journal is selected, the **Invoice journal name** in **Synced legal entities**  is enabled and the default journal name is assigned. Administrators can select a journal name to decide which journal name is used for creating the cost invoices in Dynamics 365 Finance.
    
 > [!NOTE]
-> The settings of document type and Invoice journal name are only available when the Dynamics 365 Finance version is equal to 10.0.39 or higher.
+> **Document type** and **Invoice journal name** are available in Dynamics 365 Finance version 10.0.39 or later.
 
 
 ## Invoice capture in Dynamics 365 Finance
-Within Dynamics 365 Finance release version 10.0.38 +, the tile **Invoice capture** was introduced on the home page. The feature **Invoice capture for Dynamics 365 Finance and Operations** decides whether to display the tile or not. 
+In Dynamics 365 Finance release version 10.0.38 and later, the **Invoice capture** tile is available on the homepage. The **Invoice capture for Dynamics 365 finance and operations** feature controls if the tile is diplayed.  
 
-When the invoice capture is not installed in the integrated Power Platform environment, it will navigate to the install page of Dynamics 365 Finance. 
-When the invoice capture is installed, it will navigate to the home page of Invoice capture. Please ensure the toggle in **Environment settings \> product \> feature \> 'Enable Finance and Operations User Impersonation in Dataverse'** has to be enabled beforehand.
+When invoice capture is not installed in the integrated Power Platform environment, it navigates to the install page of Dynamics 365 Finance. 
+When the invoice capture is installed, it navigates to the Invoice capture homepage. the toggle in **Environment settings \> product \> feature \> 'Enable Finance and Operations User Impersonation in Dataverse'** has to be enabled beforehand.
 
 
    
@@ -108,10 +108,10 @@ To install Invoice capture, follow this step.
 > [!NOTE]
 > After installation, go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
 > 
-> The implementation guide can be found under tab **Details + support > Links**. 
+> The implementation guide can be found under tab **Details and support > Links**. 
 
 ## Upgrade the Invoice capture solution
-When a new solution is available, the user will be notified of the availability of the new version. Follow the steps below to complete the upgrade:
+When a new solution is available, users are notified of the availability of the new version. Follow the steps below to complete the upgrade:
 
 1. In Power Platform admin center, go to **Environment**, and open the **Environment details** page.
 2. Select **Resource \> Dynamic 365 apps**.
