@@ -21,12 +21,12 @@ The Warehouse Management mobile app supports the following types of user-based a
 
 ## Device code flow authentication
 
-When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Active Directory (AD) user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the AD user account.
+When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must enter this device code, and credentials (name and password) for an Active Directory (AD) user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the AD user account.
 
 Device code flow authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
 
 - You should create a unique AD user account for each device or user. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities*.
-- How you configure your Active Directory Federation Services (AD FS) server will determine for how long your device will be authenticated.
+- How you configure your Active Directory Federation Services (AD FS) server determines for how long your device is authenticated.
 - The device code flow isn't fully supported by mobile mass deployment (MDM) systems such as Intune.
 
 > [!IMPORTANT]
@@ -34,7 +34,7 @@ Device code flow authentication simplifies the authentication process, because u
 
 ## AD FS Device Code refresh token lifetimes
 
-A device that is configured to use Device Code flow will be authenticated for a limited time. Once authenticated, the AD FS will issue a refresh token to the mobile device. A refresh token is a credential that's used to obtain a new access token. Refresh tokens are valid for a limited time, and the lifetime of a refresh token is determined by the AD FS server.
+A device that is configured to use Device Code flow is authenticated for a limited time. Once authenticated, the AD FS issues a refresh token to the mobile device. A refresh token is a credential that's used to obtain a new access token. Refresh tokens are valid for a limited time, and the lifetime of a refresh token is determined by the AD FS server.
 
 You can check the maximum lifetime of a device code in the AD FS server settings. The value is specified in minutes. To check the maximum lifetime of a device code, run the following command in Windows PowerShell:
 
@@ -55,8 +55,8 @@ For more information on SSOLifetime, see [AD FS single sign-on settings](/window
 
 To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
 
-1. Decide which device types your native application will support. For example, you might want to support Windows, Android, and iOS devices.
-1. Make note of the redirect URIs for each device type. You'll need these URIs when you create the native application in AD FS.
+1. Decide which device types your native application supports. For example, you might want to support Windows, Android, and iOS devices.
+1. Make note of the redirect URIs for each device type. You need these URIs when you create the native application in AD FS.
     - Windows: ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
     - Android: msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=
     - iOS: msauth.com.microsoft.WarehouseManagement://auth
@@ -65,7 +65,7 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 > The redirect URIs are not necessary for the device code flow. However, you must provide them if you want to use the user name and password authentication method.
 
 1. Navigate to your AD FS server.
-1. Open a Powershell window as an administrator.
+1. Open a PowerShell window as an administrator.
 1. Run the following command to create a native application in AD FS:
 
     ```powershell
@@ -93,7 +93,7 @@ Create a user that corresponds to the user credentials for the Warehouse Managem
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
-If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). When a device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory to revoke access for that device if it's ever lost or compromised. By disabling the user in Active Directory, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Active Directory user per device.
+If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). When a device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory to revoke access for that device if it's lost or compromised. By disabling the user in Active Directory, you effectively revoke access for any device that uses the device code associated with that user. For this reason, we recommend that you have one Active Directory user per device.
 
 To disable a user in Active Directory follow these steps:
 
