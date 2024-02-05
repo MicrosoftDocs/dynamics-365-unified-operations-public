@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up a mobile device menu item that guides workers through warehouse movements. The worker doesn't decide where to move the items, but instead relies on the system to determine the target location based on the configured work template and/or location directive.
+This article explains how to set up a mobile device menu item that lets workers register movements of items in the warehouse. The worker doesn't decide where to move the items, but instead relies on the system to determine the target location based on the work template and/or location directive configured for the menu item.
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, select **New**.
