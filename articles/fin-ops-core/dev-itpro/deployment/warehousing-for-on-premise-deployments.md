@@ -61,7 +61,7 @@ For details about each authentication method and how to set it up, see the follo
 - Service-based authentication (deprecated): [Service-based authentication for the Warehouse Management mobile app](/dynamics365/supply-chain/warehousing/warehouse-app-authenticate-service-based)
 
 > [!IMPORTANT]
-> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](/supply-chain/warehousing/warehouse-app-user-based-auth-faq).
+> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](/supply-chain/warehousing/warehouse-app-user-based-auth-faq.md).
 
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
