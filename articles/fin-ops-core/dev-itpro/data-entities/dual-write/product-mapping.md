@@ -2,7 +2,7 @@
 title: Unified product experience
 description: This article describes the integration of product data between finance and operations apps and Dataverse.
 author: t-benebo
-ms.date: 02/23/2023
+ms.date: 01/30/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: twheeloc
@@ -214,6 +214,14 @@ Then, when the synchronization is enabled and takes place, the products from fin
 ### Migration of product data from other Dynamics 365 apps to finance and operations
 
 If other Dynamics 365 apps have products that aren't present in finance and operations, the administrator can use the **EcoResReleasedProductCreationV2Entity** for importing those products in finance and operations. And secondly, match the product data from finance and operations and other Dynamics 365 apps as described above.
+
+### Install dual-write after a finance and operations environment and a Dataverse environment (with Field Service) is deployed
+
+The following error may appear when installing dual-write in a finance and operations environment with Dataverse environment (including Field Service): 
+
+Dynamics365SupplyChainExtended GenericManagedPropertyFailure Microsoft.Crm.CrmException: The evaluation of the current component(name=Attribute, id=29245505-73df-4220-a894-b65c81616fe5) in the current operation (Create) failed during managed property evaluation of condition: Managed Property Name: iscomponentcreationenabled; Component Name: Attribute;
+
+This is a known issue on the installation and if you receive this error, contact Microsoft support. 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
