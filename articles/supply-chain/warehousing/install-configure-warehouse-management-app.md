@@ -52,6 +52,9 @@ For the Warehouse Management mobile app to function correctly, your internal net
 - login.chinacloudapi.cn
 - login.microsoftonline.us
 - login-us.microsoftonline.com
+- \*.applicationinsights.azure.com
+- \*.applicationinsights.azure.us
+- \*.applicationinsights.azure.cn
 
 ### Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
