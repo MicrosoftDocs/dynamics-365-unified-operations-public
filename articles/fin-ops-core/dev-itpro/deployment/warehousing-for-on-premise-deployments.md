@@ -40,16 +40,16 @@ The Warehouse Management mobile app is available for Microsoft Windows, Google A
 | Windows (UWP)          | Windows 10 (Universal Windows Platform [UWP]) October 2018 update 1809 (build 10.0.17763) or later                                                          |
 | iOS                    | 13.0 or later                       |
 
-To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-latest.md#setup).
+To be able to reach your on-premises resources with the app, you need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-latest.md#setup).
 
 ## Certificates 
 
 Make sure that the devices where the app is installed have the correct certificates to access the resources. If you're using self-signed certificates, you must install them on each device by importing the Finance + Operations (on-premises) certificate and the AD FS certificate into the trusted root of the computer account/user account. For more information, see [Create and export a self-signed certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
 
 > [!IMPORTANT]
-> Environments with self-signed certificates will not be accessible from Android and iOS devices. If you need to access the environment from an Android or iOS device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you will have to manually import the certificate authority certificate into your Android or iOS device.
+> Environments with self-signed certificates aren't accessible from Android and iOS devices. If you need to access the environment from an Android or iOS device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you have to manually import the certificate authority certificate into your Android or iOS device.
 
-## <a name="authenticate"></a>Decide which authentication methods you'll use
+## <a name="authenticate"></a>Decide which authentication methods use
 
 Because the Warehouse Management mobile app has read/write access to some of your Finance + Operations (on-premises) data, each device must be authenticated to interact with it. The app supports several authentication methods. Before you start to deploy the app, take the time to learn about the authentication methods that are available, and decide which one you want to use.
 
@@ -61,7 +61,7 @@ For details about each authentication method and how to set it up, see the follo
 - Service-based authentication (deprecated): [Service-based authentication for the Warehouse Management mobile app](/dynamics365/supply-chain/warehousing/warehouse-app-authenticate-service-based)
 
 > [!IMPORTANT]
-> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](/supply-chain/warehousing/warehouse-app-user-based-auth-faq.md).
+> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq.md).
 
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
@@ -82,14 +82,14 @@ You can import connection settings from either a file or a QR code. For both app
 
 | Parameter                  | Description | 
 |----------------------------|-------------|
-| ConnectionName             | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
+| ConnectionName             | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it is overridden by the settings from the imported file. |
 | ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up the AD FS application. |
-| ActiveDirectoryResource    | Specify the root URL of Finance + Operation (on-premises).</p><p>**Note:** Be sure to include **/namespaces/AXSF** and do not include a trailing slash. | 
-| ActiveDirectoryTenant      | Specify the Open Authorization (OAuth) 2.0 endpoint of your AD FS server. This value has the form `https://your-adfs-server/adfs/oauth2`. Here is an example: `https://adfs.contoso.com/adfs/oauth2`. | 
+| ActiveDirectoryResource    | Specify the root URL of Finance + Operation (on-premises).</p><p>**Note:** Be sure to include **/namespaces/AXSF** and don't include a trailing slash. | 
+| ActiveDirectoryTenant      | Specify the Open Authorization (OAuth) 2.0 endpoint of your AD FS server. This value has the form `https://your-adfs-server/adfs/oauth2`. Here's an example: `https://adfs.contoso.com/adfs/oauth2`. | 
 | Company                    | Specify the legal entity in Finance + Operation (on-premises) that you want the application to connect to. | 
-| ConnectionType             | (Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are "Certificate", "ClientSecret", "DeviceCode", and "UsernamePassword". The default value is "DeviceCode". |
+| ConnectionType             | (Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are **Certificate**, **ClientSecret**, **DeviceCode**, and **UsernamePassword**. The default value is **DeviceCode**. |
 | IsEditable                 | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are **"true"** and **"false"**. The default value is **"true"**. | 
-| IsDefault                  | (Optional) Specify whether the connection is the default connection. A connection that is set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are **"true"** and **"false"**. The default value is **"false"**. | 
+| IsDefault                  | (Optional) Specify whether the connection is the default connection. A connection that is set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are **"true"** and **"false"**. The default value is **"false"**. | 
 | CertificateThumbprint      | (Deprecated)(Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. | 
 | UseBroker                  | (Optional) This parameter applies only to the "UsernamePassword" connection type. It determines whether a broker is used for single sign-on (SSO) authentication with Intune Company Portal (Android only) and Microsoft Authenticator (Android and iOS). Set it to "true" for broker-based authentication. Set it to "false" to require manual input of a user name and password. |
 
@@ -163,7 +163,7 @@ After you create your file, you must import it. For more information, see [Impor
         - *Client secret (Deprecated)* – Authenticate by using a client secret. This method is a [service-based authentication method](warehousing-onprem-serviceauth.md).
         - *Certificate (Deprecated)* – Authenticate by using a certificate. This method is a [service-based authentication method](warehousing-onprem-serviceauth.md).
 
-    - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
+    - **Connection name** – Enter a name for the new connection. This name appears in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
     - **Microsoft Entra ID client ID** – Enter the client ID that you made a note of while you were setting up AD FS. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehousing-onprem-userauth.md) or [Service-based authentication](warehousing-onprem-serviceauth.md).)
     - **Microsoft Entra ID client secret** – This field is available only when **Authentication method** is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up AD FS. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehousing-onprem-userauth.md) or [Service-based authentication](warehousing-onprem-serviceauth.md).)
     - **Certificate thumbprint** – This field is available only for Windows devices and only when **Authentication method** is set to *Certificate (Deprecated)*. Enter the certificate thumbprint that you made a note of while you were setting up AD FS. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehousing-onprem-userauth.md) or [Service-based authentication](warehousing-onprem-serviceauth.md).)
@@ -173,7 +173,7 @@ After you create your file, you must import it. For more information, see [Impor
         > Don't end this value with a slash (/).
         > Ensure the HTTPS (SSL) certificate is valid.
 
-    - **Microsoft Entra ID tenant** – Specify the Open Authorization (OAuth) 2.0 endpoint of your AD FS server. This value has the form `https://your-adfs-server/adfs/oauth2`. Here is an example: `https://adfs.contoso.com/adfs/oauth2`.
+    - **Microsoft Entra ID tenant** – Specify the Open Authorization (OAuth) 2.0 endpoint of your AD FS server. This value has the form `https://your-adfs-server/adfs/oauth2`. Here's an example: `https://adfs.contoso.com/adfs/oauth2`.
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
