@@ -1,6 +1,6 @@
 ---
 title: Set up a mobile device menu item for moving items by template
-description:
+description: This article explains how to set up a mobile device menu item that guides workers through warehouse movements based on work templates and location directives.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
@@ -16,13 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-<!-- KFM: New intro needed. Below is the one we used for the similar menu item
-
-This article explains how to set up a mobile device menu item that lets workers register manual movements of items in the warehouse. The worker who uses this mobile device menu item decides what to move and where to move it.
-
-Follow these steps to create and configure a mobile device menu item for registering movements in the warehouse.
-
--->
+This article explains how to set up a mobile device menu item that guides workers through warehouse movements. The worker doesn't decide where to move the items, but instead relies on the system to determine the target location based on the configured work template and/or location directive.
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, select **New**.
@@ -42,8 +36,8 @@ Follow these steps to create and configure a mobile device menu item for registe
     - **Barcode data policy** – Select the policy to use when multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](gs1-barcodes.md).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate. A license plate is needed if part of the quantity is moved from a license plate. A license plate is also needed if the "from" location isn't license plate controlled, but the "to" location is.
     - **Create movement** – Set to *Yes* to all workers to create work for a movement without requiring that the worker do the work immediately. This option is useful, for example, after a quality inspection has been completed and the inspector wants the item to be moved from the quality inspection area.
-    - **Work template** – <!--KFM: Description needed. -->
-    - **Directive code** – To use a specific location directive, select a directive code here.
+    - **Work template** – Select a work template to use when creating the movement work.
+    - **Directive code** – To use a specific location directive, select the directive code that is associated the location directive.
     - **Override license plate during put** – Set to *Yes* to allow workers to consolidate the quantity on the license plate already at the location.
     - **Group put away** – Set to *Yes* to group the putaway work. This option is available when work is grouped either by the worker or by the system. When the worker has finished all the picking work in the group, putaway work is created for the same group.
     - **Audit template ID** – Select the work audit template that will interrupt the work process for this menu item so that another operation can be performed. For example, if this menu item is for inbound work, the audit template might require that the worker checks the temperature in the delivery container. The point at which the process is interrupted is specified on the audit template and can be, for example, when work is started or completed, or when its status changes.
