@@ -448,7 +448,7 @@ A purchase invoice is a source document transaction. Therefore, the calculated t
 
 ![Distribution and journalization rules.](../general-ledger/media/gte-distribution-journalization-rule.png)
 
-Two classes are created for a purchase invoice: **AcctDistRuleProductTaxMeasure** and **AccJourRuleVendPaymReqTaxMeasure**.
+Three classes are created for a purchase invoice: **AccPolicyVendPaymReqForExpensedProducts**, **AccDistRuleProductTaxMeasure** and **AccJourRuleVendPaymReqExpPurchTaxMeasure**.
 
 ![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/gte-class1.png)
 
