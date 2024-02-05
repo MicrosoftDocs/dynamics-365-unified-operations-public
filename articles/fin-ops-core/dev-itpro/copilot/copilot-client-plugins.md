@@ -69,7 +69,7 @@ Decorate the method with one or more `ExportMetadata` attributes to define the f
 The following example defines the action as a form action available on the `Batch` and `BatchGroup` forms.
 
 ```x++
-[ExportMetadata(formStr(SysCopilotTestActionForm), identifierStr(FormName))]
+[ExportMetadata(formStr(BatchGroup), identifierStr(FormName))]
 [ExportMetadata(formStr(Batch), identifierStr(FormName))]
 [Export(identifierstr(Microsoft.Dynamics.AX.Application.SysCopilotChatAction))]
 
