@@ -68,7 +68,7 @@ Electronic invoicing is deployed in the following Azure geographies:
 - Out-of-box integration with Finance and Supply Chain Management
 - A consistent user experience for the configuration and monitoring of the electronic invoice process for all countries and regions
 - Faster, easier, and less expensive adoption of Electronic invoicing solutions in new countries or regions
-- Configuration of the service through the setup of Globalization features in the [Globalization Studio workspace](../workspace/merge-rcs-to-gsw.md)
+- Configuration of the service through the setup of Globalization features in the [Globalization Studio workspace](workspace/merge-rcs-to-gsw.md)
 - Transformation of business data into multiple electronic invoice formats (XML, JSON, TXT, and CSV) by using [Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) format configurations
 - Configurable submission of electronic invoices to external web services, including certification handling through digital signatures
 - Handling of responses from web services, including configurable handling of exception messages
