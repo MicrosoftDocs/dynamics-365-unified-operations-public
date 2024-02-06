@@ -20,35 +20,32 @@ To view invalid users, follow these steps:
 
 After the administrator addressed these users, click **Refresh** to verify that there are no invalid users.  
 
-## Fix the invalid users  
+## Fix invalid users  
 
-There are three types of invalid users hat are the admins will be required to fix.  
+There are three types of invalid users that need to be fixed.  
 
-User not found in the Microsoft Entra ID  
+### Users not found in Microsoft Entra ID  
 
-It is required that all the F&O users must be present in your Microsoft Entra ID tenant (previously known as Microsoft Azure Active Directory).  Administrators can directly add users to your tenant through the
-Azure portal. Add or delete users | Microsoft Learn.  Alternatively, you can leverage the B2B functionality to include these users in Microsoft Entra ID. Export business-to-business (B2B) users to Azure Active 
-Directory - Finance & Operations | Dynamics 365 | Microsoft Learn.  
+It's required that all Dynamics 365 finance and operations users must be present in your Microsoft Entra ID tenant (previously known as Microsoft Azure Active Directory). Administrators can directly add users to your tenant through the Azure portal. 
+For more information, see [Add or delete users](../../entra/fundamentals/add-users.md) 
+You can leverage B2B functionality that includes these users in Microsoft Entra ID. For more information, see [Export business-to-business (B2B) users to Azure Active Directory](/fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).  
 
  
+### Telemetry id doesn't match object id from Microsoft Entra ID  
 
-Telemetry id does not match object id from Microsoft Entra ID  
+The telemetry ID of the user in your Dynamics 365 finance and operations must align with the Object ID for the same user in Microsoft Entra ID to ensure proper login functionality.  
+It's recommended to delete the user and reimport the user.
 
-The telemetry ID of the user in your Finance and Operations application must align with the Object ID for the same user in Microsoft Entra ID to ensure proper login functionality.  
+1. Verify the user with the corresponding email exists in your Microsoft Entra ID.
+2. Delete the user from Dynamics 365 finance and operations.
+3. Reimport the user. For more information, see [Create new users](create-new-users.md).   
 
-  
+If this proves challenging or requires substantial effort, administrators can update the email address on the **Users** page. This repopulates the Object ID for the new email.  
 
-Upon verifying that the user with the corresponding email exists in your Microsoft Entra ID, proceed to delete the user from Finance and Operations application and then reimport the user. Create new users - 
-Finance & Operations | Dynamics 365 | Microsoft Learn.   
+### Email contains invalid prefix MAIL#  
 
-It is recommended to delete the user and subsequently reimport. However, if this proves challenging or requires substantial effort, an alternative is to update the email address on the Users page. This action
-will repopulate the Object ID for the new email.  
-
-  
-
-Email contains invalid prefix MAIL#  
-
-In the past, certain customers were advised to append a "MAIL#" prefix to their Gmail or Live email addresses to mitigate login issues. The problem has since been resolved, and it is now necessary to eliminate 
-this prefix. Administrators can navigate to the Users page and select "Edit" to remove the prefix from the email addresses.  
+Previously, certain customers were advised to append a "MAIL#" prefix to their Gmail or Live email addresses to mitigate login issues. This problem is resolved, and it's necessary to eliminate this prefix. 
+1. Administrators go to **Users**.
+2. Select **Edit** to remove the prefix from the email addresses.  
 
  
