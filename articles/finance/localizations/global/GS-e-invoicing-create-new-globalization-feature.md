@@ -1,5 +1,5 @@
 ---
-title: Create a Globalization feature
+title: Create Globalization features
 description: This article explains how to create a Globalization feature.
 author: ilikond
 ms.date: 01/29/2024
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Create a Globalization feature
+# Create Globalization features
 
 [!include [banner](../../includes/banner.md)]
 
