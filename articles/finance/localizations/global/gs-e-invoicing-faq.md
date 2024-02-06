@@ -1,6 +1,6 @@
 ---
-title: Electronic invoicing service FAQ
-description: This article provides information about frequently asked questions regarding Electronic invoicing.
+title: Electronic invoicing service FAQ (preview)
+description: This article provides information about frequently asked questions regarding Electronic invoicing (preview).
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -16,9 +16,11 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic Invoicing Service FAQ
+# Electronic Invoicing Service FAQ (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 This article provides answers to frequently asked questions about Electronic Invoicing service. Electronic invoicing extends the electronic invoicing capabilities that exist in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Project Operations. 
 
