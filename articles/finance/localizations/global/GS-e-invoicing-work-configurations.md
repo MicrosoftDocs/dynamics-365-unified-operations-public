@@ -1,5 +1,5 @@
 ---
-title: Work with configurations
+title: Work with ER configurations
 description: This article provides an overview of the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace.
 author: ilikond
 ms.date: 01/29/2024
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Work with configurations
+# Work with Electronic Reporting configurations
 
 [!include [banner](../../includes/banner.md)]
 
