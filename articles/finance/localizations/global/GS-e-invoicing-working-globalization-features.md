@@ -1,5 +1,5 @@
 ---
-title: Globalization feature components
+title: Globalization features components
 description: This article provides an overview of Globalization feature components.
 author: ilikond
 ms.date: 01/29/2024
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Globalization feature components
+# Globalization features components
 
 [!include [banner](../../includes/banner.md)]
 
