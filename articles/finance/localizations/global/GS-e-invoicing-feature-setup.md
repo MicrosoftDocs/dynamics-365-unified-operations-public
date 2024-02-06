@@ -1,5 +1,5 @@
 ---
-title: Work with feature setups
+title: Configure feature setups
 description: This article explains how to set up Electronic invoicing features.
 author: ilikond
 ms.date: 01/29/2024
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Work with feature setups
+# Configure feature setups
 
 [!include [banner](../../includes/banner.md)]
 
