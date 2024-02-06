@@ -189,8 +189,6 @@ After you create your file, you must import it. For more information, see [Impor
     - For Android devices, select the certificate when you're prompted.
     - For iOS devices, follow the instructions in step 5 of [Import the connection settings](../../../supply-chain/warehousing/install-configure-warehousing-app.md#import-the-connection-settings).
 
-The app connects to your Finance + Operations (on-premises) server and shows the sign-in page.
-
 The application connects to Finance + Operations (on-premises), and the sign-in page for the warehouse worker appears.
 
 > [!NOTE]
