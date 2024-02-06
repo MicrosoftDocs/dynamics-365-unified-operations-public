@@ -1,6 +1,6 @@
 ---
-title: Configure Electronic invoicing parameters
-description: This article explains how to set up the Electronic invoicing parameters.
+title: Configure Electronic invoicing parameters (preview)
+description: This article explains how to set up the Electronic invoicing parameters (preview).
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -17,9 +17,11 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure Electronic invoicing parameters 
+# Configure Electronic invoicing parameters (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 ## Enable Electronic invoicing integration
 
@@ -86,9 +88,9 @@ When you enable a feature from the list, the legacy functionality will be inacti
 2. On the **Key Vault parameters** page, select **New** to create a Key Vault reference.
 3. In the **Name** field, enter the name of the Key Vault reference.
 4. In the **Description** field, enter a description.
-5. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure key vault in the Azure portal](GS-e-invoicing-create-azure-key-vault-azure-portal.md).
+5. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure key vault in the Azure portal](gs-e-invoicing-create-azure-key-vault-azure-portal.md).
 6. in the **Certificates** section, select **Add**.
-7. In the **Name** field, enter the name of the storage account secret or certificate. This name should match the name of the Key Vault secret that holds the storage shared access signature (SAS) token. For more information, see [Create an Azure storage account in the Azure portal](GS-e-invoicing-create-azure-storage-account-azure-portal.md). 
+7. In the **Name** field, enter the name of the storage account secret or certificate. This name should match the name of the Key Vault secret that holds the storage shared access signature (SAS) token. For more information, see [Create an Azure storage account in the Azure portal](gs-e-invoicing-create-azure-storage-account-azure-portal.md). 
 8. In the **Description** field, enter a description.
 9. In the **Type** field, select **Secret** or **Certificate** depending on what is being configured.
     > [!NOTE]
