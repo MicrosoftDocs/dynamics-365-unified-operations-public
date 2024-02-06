@@ -21,7 +21,7 @@ The Warehouse Management mobile app supports the following types of user-based a
 
 ## Device code flow authentication
 
-When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must enter this device code. They must also enter credentials (a user name and password) for a Microsoft Active Directory user account that represents either the device itself or the user who is signing in, depending on how the admin has implemented the system. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Active Directory user account.
+When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must enter this device code. They must also enter credentials (a user name and password) for a Microsoft Active Directory user account that represents either the device itself or the user who is signing in, depending on how the admin implemented the system. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Active Directory user account.
 
 Device code flow authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
 
@@ -55,7 +55,7 @@ For more information about `SSOLifetime`, see [AD&nbsp;FS single sign-on setting
 
 ## <a name="create-service"></a>Create a native application in AD FS
 
-To enable the Warehouse Management mobile app to interact with a specific Dynamics 365 Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
+To enable the Warehouse Management mobile app to interact with a specific Dynamics 365 Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task.
 
 1. Decide which device types your native application supports. For example, you might want to support Windows, Android, and iOS devices.
 1. Make a note of the redirect URIs for each device type. You'll need these URIs when you create the native application in AD&nbsp;FS.
@@ -96,7 +96,7 @@ To create a user that corresponds to the user credentials for the Warehouse Mana
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
-If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). When a device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory to revoke access for that device if it's lost or compromised. By disabling the user in Active Directory, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Active Directory user per device.
+If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). If the lost or compromised device is authenticated by using the device code flow, it's essential that you disable the associated user in Active Directory. In this way, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Active Directory user per device.
 
 To disable a user in Active Directory, follow these steps.
 
