@@ -450,13 +450,15 @@ A purchase invoice is a source document transaction. Therefore, the calculated t
 
 Three classes are created for a purchase invoice: **AccPolicyVendPaymReqForExpensedProducts**, **AccDistRuleProductTaxMeasure** and **AccJourRuleVendPaymReqExpPurchTaxMeasure**.
 
+![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/PurchaseOrderTaxAccountingPolicy)
+
 ![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/gte-class1.png)
 
 ![AccJourRuleVendPaymReqTaxMeasure class.](../general-ledger/media/gte-class2.png)
 
 When the source document classes are created correctly, the distribution page should show calculated tax together with the component label, tax amount, and ledger account.
 
-![Accounting distributions.](../general-ledger/media/gte-accounting-distribution.png)
+![Accounting distributions.](../general-ledger/media/gte-accounting-distribution.jpg)
 
 ### Delete a transaction
 
