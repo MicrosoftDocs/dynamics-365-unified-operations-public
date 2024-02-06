@@ -1,5 +1,5 @@
 ---
-title: Processing of incoming electronic documents
+title: Process incoming electronic documents
 description: This article provides an overview of the processing for incoming electronic documents.
 author: gionoder
 ms.date: 02/28/2022
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Processing of incoming electronic documents
+# Process incoming electronic documents
 
 [!include [banner](../../includes/banner.md)]
 
