@@ -1,6 +1,6 @@
 ---
-title: Electronic invoicing setup
-description: This article provides an overview of the process for setting up and configuring Electronic invoicing.
+title: Electronic invoicing setup (preview)
+description: This article provides an overview of the process for setting up and configuring Electronic invoicing (preview).
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -17,9 +17,11 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic invoicing setup
+# Electronic invoicing setup (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 The article provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that is specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality. 
 
@@ -66,12 +68,12 @@ To activate Electronic invoicing within the Globalization Studio, in the **Featu
 
 ## Configure Globalization features
 
-Different scenarios for processing electronic documents are implemented via Globalization features. A Globalization feature is a set of components that define the rules for data transformation and further processing of electronic documents such as sending them to or receiving them from external channels. You can use Globalization features provided by Microsoft or create your own ones. For more information about how to work with Globalization features, see [Work with Globalization features](GS-e-invoicing-working-globalization-features.md).
+Different scenarios for processing electronic documents are implemented via Globalization features. A Globalization feature is a set of components that define the rules for data transformation and further processing of electronic documents such as sending them to or receiving them from external channels. You can use Globalization features provided by Microsoft or create your own ones. For more information about how to work with Globalization features, see [Work with Globalization features](gs-e-invoicing-working-globalization-features.md).
 
 > [!NOTE]
 > If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
 
 ## Configure Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
-Set up Dynamics 365 Finance and Dynamics 365 Supply Chain Management parameters related to Electronic invoicing. For more information, see [Set up Electronic invoicing parameters](GS-e-invoicing-set-up-parameters.md)
+Set up Dynamics 365 Finance and Dynamics 365 Supply Chain Management parameters related to Electronic invoicing. For more information, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md)
 
