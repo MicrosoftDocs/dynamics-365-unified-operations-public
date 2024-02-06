@@ -446,11 +446,11 @@ For alignment with the existing logic, the existing **taxTotal** parameter is us
 
 A purchase invoice is a source document transaction. Therefore, the calculated tax result from the Tax engine should be integrated with the existing source document framework in Finance. The main logic is already completed and handled by the Tax engine integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
 
-![Distribution and journalization rules.](../general-ledger/media/gte-distribution-journalization-rule.png)
+![Distribution and journalization rules.](../general-ledger/media/gte-distribution-journalization-rule.jpg)
 
 Three classes are created for a purchase invoice: **AccPolicyVendPaymReqForExpensedProducts**, **AccDistRuleProductTaxMeasure** and **AccJourRuleVendPaymReqExpPurchTaxMeasure**.
 
-![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/PurchaseOrderTaxAccountingPolicy)
+![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/PurchaseOrderTaxAccountingPolicy.png)
 
 ![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/gte-class1.png)
 
@@ -458,7 +458,7 @@ Three classes are created for a purchase invoice: **AccPolicyVendPaymReqForExpen
 
 When the source document classes are created correctly, the distribution page should show calculated tax together with the component label, tax amount, and ledger account.
 
-![Accounting distributions.](../general-ledger/media/gte-accounting-distribution.jpg)
+![Accounting distributions.](../general-ledger/media/gte-accounting-distribution.png)
 
 ### Delete a transaction
 
