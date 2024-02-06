@@ -540,7 +540,7 @@ items:
           - name: User-based authentication
             href: deployment/warehousing-onprem-userauth.md
           - name: User-based authentication FAQ
-            href: ../supply-chain/warehousing/warehouse-app-user-based-auth-faq.md
+            href: ../../supply-chain/warehousing/warehouse-app-user-based-auth-faq.md
           - name: Service-based authentication
             href: deployment/warehousing-onprem-serviceauth.md
         - name: Troubleshooting
