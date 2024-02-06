@@ -3905,7 +3905,7 @@
             href: warehousing/wave-allocation-method.md
           - name: Schedule work creation during wave
             href: warehousing/configure-wave-schedule-work-creation.md
-          - name: Automatic rewaving of non-allocated shipment lines
+          - name: Automatic rewaving of nonallocated shipment lines
             href: warehousing/auto-rewave-shipments.md
           - name: Wave execution notifications
             href: warehousing/wave-execution-notifications.md
