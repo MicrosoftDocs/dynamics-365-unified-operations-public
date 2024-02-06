@@ -592,6 +592,8 @@
           href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
+        - name: Collections process automation FAQ
+          href: accounts-receivable/coll-process-auto-FAQ.md
         - name: Credit statistics FAQ
           href: accounts-receivable/credit-statistics-faq.md
         - name: Credit hold FAQ
