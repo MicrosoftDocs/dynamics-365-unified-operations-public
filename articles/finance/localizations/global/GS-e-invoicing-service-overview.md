@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing overview
+title: Electronic invoicing service overview
 description: This article provides an overview of Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: ilikond
 ms.date: 01/21/2022
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic invoicing overview
+# Electronic invoicing service overview
 
 [!include [banner](../../includes/banner.md)]
 
