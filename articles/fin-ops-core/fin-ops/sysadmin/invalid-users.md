@@ -11,7 +11,7 @@ ms.custom:
 ---
 # Invalid users in Dynamics 365 Finance  
 
-It is important that users in any Dynamics 365 finance and operations environments are compliant with Microsoft guidelines, to avoid any login failures.  
+Users in any Dynamics 365 finance and operations environments must be compliant with Microsoft guidelines to avoid any login failures.  
 Starting in Dynamics 365 Finance version 10.0.39, Administrators can use the **Invalid users** page to get details of invalid users.
  
 To view invalid users, follow these steps:
@@ -27,8 +27,8 @@ There are three types of invalid users that need to be fixed. 
 ### Users not found in Microsoft Entra ID  
 
 It's required that all Dynamics 365 finance and operations users must be present in your Microsoft Entra ID tenant (previously known as Microsoft Azure Active Directory). Administrators can directly add users to your tenant through the Azure portal. 
-For more information, see [Add or delete users](../../entra/fundamentals/add-users.md) 
-You can leverage B2B functionality that includes these users in Microsoft Entra ID. For more information, see [Export business-to-business (B2B) users to Azure Active Directory](/fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).  
+For more information, see [Add or delete users](/entra/fundamentals/add-users). 
+You can leverage B2B functionality that includes these users in Microsoft Entra ID. For more information, see [Export business-to-business (B2B) users to Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md).  
 
  
 ### Telemetry id doesn't match object id from Microsoft Entra ID  
