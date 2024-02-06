@@ -21,13 +21,20 @@ The Warehouse Management mobile app supports the following types of user-based a
 - Device code flow authentication
 - User name and password authentication
 
+## <a name="scenarios"></a>Scenarios for managing devices, Microsoft Entra ID users, and mobile device users
+
+For security purposes, the Warehouse Management mobile app uses Microsoft Entra ID to authenticate the connection between the app and Supply Chain Management. There are two basic scenarios for managing Microsoft Entra ID user accounts for your various devices and users: one where each Microsoft Entra ID user accounts represents a unique device and one where each Microsoft Entra ID user represents a unique human worker. In each case, each human worker will have one *warehouse worker* record set up in the Warehouse management module, but might have any number of *mobile device user accounts* for each warehouse worker record. For warehouse worker accounts that have more than one mobile device user account, it's possible to make one of them the default mobile device user account. The two scenarios are:
+
+- **Use one Microsoft Entra ID user account for each mobile device** – In this scenario, admins set up the Warehouse Management mobile app to use either [device code authentication](warehouse-app-authenticate-user-based.md) or [username/password authentication](warehouse-app-authenticate-user-based.md) to connect to Supply Chain Management through the *device's* Microsoft Entra ID account (in this scenario, human workers don't need a Microsoft Entra ID user account). The app then shows a sign-in screen that lets human workers sign in to the app so they can gain access to the work and other records that apply to them at their location. Human workers sign in using the user ID and password of one of the mobile device user accounts assigned to their warehouse worker record. Human workers must always enter a user ID, so it doesn't matter which of these mobile device user accounts is set as the default for the warehouse worker record. When a human worker signs out, the app remains authenticated with Supply Chain Management but shows the sign-in screen again, so the next human worker can sign in using their mobile device user account.
+- **Use one Microsoft Entra ID user account for each human worker** – In this scenario, each human user has a Microsoft Entra ID user account that's linked to their warehouse worker account in Supply Chain Management. As a result, the Microsoft Entra ID user sign-in might be all the human worker needs to both authenticate the app with Supply Chain Management and sign in to the app, provided the warehouse worker account has a default user ID set for that warehouse worker account (or just one user ID for the warehouse worker account). This scenario also supports [single sign-on](warehouse-app-authenticate-user-based.md#sso) (SSO) because the same Microsoft Entra ID session can be shared across other apps on the device (such as Microsoft Teams or Microsoft Outlook) until the human worker signs out of the Microsoft Entra ID user account.
+
 ## Device code flow authentication
 
-When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Microsoft Entra ID user account.
+When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The admin who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the human worker who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the admin must enter the code and the credentials for the Microsoft Entra ID user account.
 
 Device code flow authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
 
-- You should create a unique Microsoft Entra ID user account for each device or user. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities*.
+- You should create a unique Microsoft Entra ID user account for each device or human worker. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities*.
 - If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
 - The device code flow isn't fully supported by mobile mass deployment (MDM) systems such as Intune.
 
@@ -85,7 +92,7 @@ For more information about how to set up web service applications in Microsoft E
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="user-azure-ad"></a>Set up a mobile-device user account in Supply Chain Management
+## <a name="user-azure-ad"></a>Set up a mobile device user account in Supply Chain Management
 
 Create a user that corresponds to the user credentials for the Warehouse Management mobile app.
 
@@ -110,22 +117,22 @@ The procedure in [Create a web service application in Microsoft Entra ID](#creat
 
 > [!IMPORTANT]
 > - To use mass deployment, you must enable SSO.
-> - The Warehouse Management mobile app does **not** support [shared device mode](/entra/identity-platform/msal-shared-devices).
+> - The Warehouse Management mobile app does *not* support [shared device mode](/entra/identity-platform/msal-shared-devices).
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
-If a device is lost or compromised, you must remove its ability to access Supply Chain Management. When a device is authenticated by using the device code flow, it's essential that you disable the associated user in Microsoft Entra ID to revoke access for that device if it's ever lost or compromised. By disabling the user in Microsoft Entra ID, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Microsoft Entra ID user per device.
+If a device is lost or compromised, you must remove its ability to access Supply Chain Management. When a device is authenticated by using the device code flow, it's essential that you disable the associated user account in Microsoft Entra ID to revoke access for that device if it's ever lost or compromised. By disabling the user account in Microsoft Entra ID, you effectively revoke access for any device that uses the device code that's associated with that user account. For this reason, we recommend that you have one Microsoft Entra ID user account per device.
 
-To disable a user in Microsoft Entra ID, follow these steps.
+To disable a user account in Microsoft Entra ID, follow these steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the left navigation pane, select **Microsoft Entra ID**, and ensure that you're in the correct directory.
 1. In the **Manage** list, select **Users**.
-1. Find the user who is associated with the device code, and select the name to open the user's profile.
-1. On the toolbar, select **Revoke sessions** to revoke the user's sessions.
+1. Find the user account that is associated with the device code, and select the name to open the user's profile.
+1. On the toolbar, select **Revoke sessions** to revoke the user account's sessions.
 
 > [!NOTE]
-> Depending on how you set up your authentication system, you might also want to change the user's password or completely disable the user account.
+> Depending on how you set up your authentication system, you might also want to change the user account's password or completely disable the user account.
 
 ## Additional resources
 
