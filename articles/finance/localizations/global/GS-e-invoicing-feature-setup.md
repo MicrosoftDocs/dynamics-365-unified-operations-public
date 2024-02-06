@@ -1,6 +1,6 @@
 ---
-title: Configure feature setups
-description: This article explains how to set up Electronic invoicing features.
+title: Configure feature setups (preview)
+description: This article explains how to set up Electronic invoicing features (preview).
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -17,9 +17,11 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure feature setups
+# Configure feature setups (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 To set up the generation of electronic files and other processing steps (for example, digitally signing files, submitting them to the government web service and receiving a response, or storing them), set up the processing pipeline, applicability rules, and variables for Electronic invoicing features.
 
