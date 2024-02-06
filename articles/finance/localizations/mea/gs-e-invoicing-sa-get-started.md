@@ -1,6 +1,6 @@
 ---
-title: Electronic invoicing in Saudi Arabia - Phase two
-description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia.
+title: Electronic invoicing in Saudi Arabia - Phase two (preview)
+description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia (preview).
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -17,9 +17,11 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic invoicing in Saudi Arabia - Phase two
+# Electronic invoicing in Saudi Arabia - Phase two (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 
 This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
@@ -28,9 +30,9 @@ This article provides information that will help you get started with phase two 
 
 Before you begin the procedures in this article, complete the following prerequisites: 
 
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/GS-e-invoicing-service-overview.md).
-- Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/GS-e-invoicing-set-up-overview.md).
-- Import the **Saudi Arabian Zatca submission (SA)** and **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing features from the repository. For more information, see [Import features from the repository](../global/GS-e-invoicing-import-feature-global-repository.md).
+- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- Import the **Saudi Arabian Zatca submission (SA)** and **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing features from the repository. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
 ## Application specific parameters configuration
 
@@ -113,25 +115,25 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
     8. In the **Value** field, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process. 
 
         > [!NOTE]
-        > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID) that must be preliminary configured in the [Key Vault parameters](../global/GS-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
+        > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID) that must be preliminary configured in the [Key Vault parameters](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
 10. Repeat steps 4 through 9 for the **Project invoice** and **Retail simplified invoice** feature setups. 
 
     > [!NOTE]
     > Repeat steps 4 through 9 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups to set up the electronic invoicing feature, **Saudi Arabian ZATCA compliance check (SA)**.
    
-11. Complete and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/GS-e-invoicing-complete-publish-deploy-globalization-feature.md).
+11. Complete and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
 
 ## <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded ZATCA. As a result of the onboarding process, taxpayers obtain CSIDs, which are required for integration with the electronic invoicing portal that is managed by ZATCA and for further submission of electronic invoices.
 
-Onboarding is an essential part of the Electronic invoicing configuration. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](GS-e-invoicing-sa-onboarding.md).
+Onboarding is an essential part of the Electronic invoicing configuration. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](gs-e-invoicing-sa-onboarding.md).
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/GS-e-invoicing-service-overview.md)
+- [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
