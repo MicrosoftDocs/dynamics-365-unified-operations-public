@@ -112,7 +112,7 @@ Dynamics 365 Supply Chain Management provides a migration tool that helps you ch
     - All combinations of storage dimension groups and reservation hierarchies must be valid.
     - Items migrating to use WMS must not be enabled to use catch weight.
 
-1. On the Action Pane, select **Process changes**. Updating all the inventory dimensions can take a while. You can monitor the progress by checking the batch jobs tasks. The process uses both parallel processing and the batch framework, and the difference is handled by different batch tasks. <!-- KFM: continue here -->
+1. On the Action Pane, select **Process changes**. Updating all the inventory dimensions can take a while. You can monitor the progress by checking the batch jobs tasks. The process uses both parallel processing and the batch framework, and the difference is handled by different batch tasks.
 
     > [!NOTE]
     > If you upgrade from a version that supports pallets, the upgrade process will identify the items that have the pallet dimension active and create a record on the **Items blocked for inventory updates** page for each of them. This is done to block the items from all inventory processes because the item is configured using unsupported settings. Items that are blocked must be migrated.
