@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing onboarding in Saudi Arabia
+title: Onboarding for electronic invoicing in Saudi Arabia
 description: This article explains how to onboard taxpayers and their electronic invoicing software with Saudi Arabian tax authorities.
 author: ilikond
 ms.date: 01/29/2024
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic invoicing onboarding in Saudi Arabia
+# Onboarding for electronic invoicing in Saudi Arabia
 
 [!include [banner](../../includes/banner.md)]
 
