@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: ilikond
+ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ms.custom: 
@@ -50,7 +50,7 @@ Set up the Azure resources that Electronic invoicing requires to do its work. Fo
 
 ## Configure Globalization Studio for Electronic invoicing
 
-Make sure that the **Globalization Studio workspace** is available in the system. For more information, see [Globalization Studio workspace](../workspace/merge-rcs-to-gsw.md).
+Make sure that the **Globalization Studio workspace** is available in the system. For more information, see [Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
 
 To activate Electronic invoicing within the Globalization Studio, in the **Feature management** workspace, enable the following features. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
