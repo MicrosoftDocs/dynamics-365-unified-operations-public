@@ -1,6 +1,6 @@
 ---
-title: Onboarding for electronic invoicing in Saudi Arabia
-description: This article explains how to onboard taxpayers and their electronic invoicing software with Saudi Arabian tax authorities.
+title: Onboarding for electronic invoicing in Saudi Arabia (preview)
+description: This article explains how to onboard taxpayers and their electronic invoicing software with Saudi Arabian tax authorities (preview).
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -17,9 +17,11 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Onboarding for electronic invoicing in Saudi Arabia
+# Onboarding for electronic invoicing in Saudi Arabia (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. As a result of the onboarding process, taxpayers obtain Cryptographic Stamp Identifiers (CSIDs). CSIDs are required for integration with the electronic invoicing portal that is managed by the Saudi Arabian tax authority (ZATCA) and for further submission of electronic invoices.
 
