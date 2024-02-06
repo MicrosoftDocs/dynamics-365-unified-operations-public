@@ -1736,7 +1736,7 @@ items:
       items:
       - name: System administration home page
         href: sysadmin/system-administration-home-page.md
-      - name: Add links to your legal terms and privacy statement
+      - name: Add links to your legal terms and privacy statement      
         href: sysadmin/legal-terms-privacy-statement.md
       - name: License codes and configuration keys report
         href: sysadmin/license-codes-configuration-keys-report.md
@@ -1852,6 +1852,8 @@ items:
         href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
       - name: Cleanup routines
         href: sysadmin/cleanuproutines.md
+      - hame: Invalid users
+        href: sysadmin/invalid-users.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources
