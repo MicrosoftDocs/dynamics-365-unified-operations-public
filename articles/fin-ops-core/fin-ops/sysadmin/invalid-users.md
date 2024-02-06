@@ -1,6 +1,6 @@
 ---
 title: Invalid users in Dynamics 365 finance
-description: This article describes how to clean up Invalid users in Dynamics 365 finance.
+description: This article describes how to address invalid users in Dynamics 365 finance.
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -11,8 +11,8 @@ ms.custom:
 ---
 # Invalid users in Dynamics 365 Finance  
 
-It is important that the users in any Dynamics 365 finance and operations environments are compliant with Microsoft guidelines, to avoid any login failures for such users.  
-Starting in Dynamics 365 Finance version 10.0.39, Administrators can use the **Invalid users** page to get details of invalid users in the environment.
+It is important that users in any Dynamics 365 finance and operations environments are compliant with Microsoft guidelines, to avoid any login failures.  
+Starting in Dynamics 365 Finance version 10.0.39, Administrators can use the **Invalid users** page to get details of invalid users.
  
 To view invalid users, follow these steps:
 1. Go **System administration** > **Invalid users**.
