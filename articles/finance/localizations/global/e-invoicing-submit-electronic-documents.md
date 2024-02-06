@@ -1,5 +1,5 @@
 ---
-title: Submit electronic documents to Electronic invoicing
+title: Submit electronic documents
 description: This article explains how to submit electronic documents to the Electronic invoicing service.
 author: gionoder
 ms.date: 12/15/2021
@@ -9,14 +9,14 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
 ms.search.form: 
 ---
 
-# Submit electronic documents to Electronic invoicing
+# Submit electronic documents
 
 [!include [banner](../../includes/banner.md)]
 
