@@ -96,3 +96,11 @@ Even if the *Warehouse management only mode* feature is enabled, you must create
 ## Why doesn't my registered inventory transaction have a load ID?
 
 If you use the [item arrival journal](../inventory/arrival-overview.md) process to receive updated inbound shipment order line quantities, inventory transactions won't be associated with a load. To achieve this result, you must use the *Order receiving completed* process, which creates loads for registered inventory transactions that aren't associated with a load. This process can be triggered directly from an inbound shipment order or via the **Inbound shipment order receiving completed** background process (available at **Warehouse management** \> **Periodic tasks** \> **Inbound shipment order receiving completed**).
+
+## Why do I receive the following error when processing shipment orders: "Not able to resolve released item/variant for external item ID [ItemId]"?
+
+When processing shipment orders, you may receive the following error, even though a related item or variant exists:
+
+> Not able to resolve released item/variant for external item ID [ItemId].
+
+This error occurs because released products and variants must be linked to a source system through the [Source system items](wms-only-mode-exchange-data.md#master-data) data entity. This is crucial for recording how item and variant numbers must be handled for each external [source system](wms-only-mode-setup.md#source-systems).
