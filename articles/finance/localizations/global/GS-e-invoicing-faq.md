@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing FAQ
+title: Electronic invoicing service FAQ
 description: This article provides information about frequently asked questions regarding Electronic invoicing.
 author: ilikond
 ms.date: 01/29/2024
@@ -16,7 +16,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic Invoicing FAQ
+# Electronic Invoicing Service FAQ
 
 [!include [banner](../../includes/banner.md)]
 
