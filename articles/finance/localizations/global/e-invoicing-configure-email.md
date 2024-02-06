@@ -1,5 +1,5 @@
 ---
-title: Configure an email channel
+title: Configure email channels
 description: This article explains how to configure an email channel to receive electronic invoices.
 author: gionoder
 ms.date: 12/09/2022
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure an email channel
+# Configure email channels
 
 [!include [banner](../../includes/banner.md)]
 
