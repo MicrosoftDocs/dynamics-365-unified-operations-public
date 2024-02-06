@@ -1,5 +1,5 @@
 ---
-title: Get started with Electronic invoicing for Saudi Arabia - Phase two
+title: Electronic invoicing in Saudi Arabia - Phase two
 description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia.
 author: ilikond
 ms.date: 01/29/2024
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Get started with Electronic invoicing for Saudi Arabia - Phase two
+# Electronic invoicing in Saudi Arabia - Phase two
 
 [!include [banner](../../includes/banner.md)]
 
