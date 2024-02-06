@@ -6,7 +6,7 @@ ms.author: pavlodatsiuk
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 02/06/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
