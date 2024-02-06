@@ -54,5 +54,5 @@ Finance and Supply Chain Management generate business data in a unified structur
 
 The detailed results are received as a log that is linked to the generated electronic files or other data that is related to the submitted documents. Depending on the scenario, the system updates Finance and Supply Chain Management data. For example, it updates invoice status or externally provided universally unique identifiers (UUIDs) of invoices that are registered with the tax authority.
 
-For more information about Electronic invoicing components and how to set them up, see [Set up Electronic invoicing](GS-e-invoicing-set-up-overview.md).
+For more information about Electronic invoicing components and how to set them up, see [Set up Electronic invoicing](gs-e-invoicing-set-up-overview.md).
 
