@@ -1,6 +1,6 @@
 ---
-title: Import features from the repository
-description: This article explains how to import Globalization features from the Dataverse repository.
+title: Import features from the repository (preview)
+description: This article explains how to import Globalization features from the Dataverse repository (preview).
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -17,9 +17,11 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Import features from the repository
+# Import features from the repository (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 The Dataverse repository contains Electronic invoicing features that are shared with your configuration provider. All Electronic invoicing features that are provided by Microsoft are shared with all companies. You automatically have access to all the Electronic invoicing features that Microsoft releases and publishes to the Dataverse repository.
 
