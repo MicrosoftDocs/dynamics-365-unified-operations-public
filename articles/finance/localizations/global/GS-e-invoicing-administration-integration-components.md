@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing administration and integration components
+title: Electronic invoicing components
 description: This article provides an overview of the Electronic invoicing administration and integration components.
 author: ilikond
 ms.date: 01/29/2024
@@ -14,7 +14,7 @@ ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ---
 
-# Electronic invoicing administration and integration components
+# Electronic invoicing components
 
 [!include [banner](../../includes/banner.md)]
 
