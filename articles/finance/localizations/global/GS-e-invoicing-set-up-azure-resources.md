@@ -1,5 +1,5 @@
 ---
-title: Set up Azure resources for Electronic invoicing
+title: Configure Azure resources for Electronic invoicing
 description: This article provides an overview of the process for setting up Microsoft Azure resources for Electronic invoicing.
 author: ilikond
 ms.date: 01/21/2022
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Set up Azure resources for Electronic invoicing
+# Configure Azure resources for Electronic invoicing
 
 [!include [banner](../../includes/banner.md)]
 
