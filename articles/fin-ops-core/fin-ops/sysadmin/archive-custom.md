@@ -65,7 +65,7 @@ To create a history table corresponding to the live table in the archive scope, 
 |     |LEDGERENTRYJOURNALIZING  |LEDGERENTRYJOURNALIZINGHISTORY  |LedgerentryjournalizingBiEntity  |mserp_LedgerentryjournalizingBiEntity  |
 |     |LEDGERTRANSSETTLEMENT  |LEDGERTRANSSETTLEMENTHISTORY  |LedgertranssettlementBiEntity  |mserp_LedgertranssettlementBiEntity  |
 |     |SUBLEDGERVOUCHERGENERALJOURNALENTRY  |SUBLEDGERVOUCHERGENERALJOURNALENTRYHISTORY  |SubledgervouchergeneraljournalentryBiEntity  |mserp_SubledgervouchergeneraljournalentryBiEntity  |
-|SCM Sales Order|MCRRETURNSALESTABLE  |MCRRETURNSALESTABLEHISTORY  |McrreturnsalestableBiEntity  |mserp_McrreturnsalestableBiEntity  |
+|Supply Chain Management Sales order|MCRRETURNSALESTABLE  |MCRRETURNSALESTABLEHISTORY  |McrreturnsalestableBiEntity  |mserp_McrreturnsalestableBiEntity  |
 |     |MCRSALESLINE  |MCRSALESLINEHISTORY  |McrsaleslineBiEntity  |mserp_McrsaleslineBiEntity  |
 |     |MCRSALESTABLE |MCRSALESTABLEHISTORY |McrsalestableBiEntity |mserp_McrsalestableBiEntity  |
 |     |RETAILSALESLINE |RETAILSALESLINEHISTORY  |RetailsaleslineBiEntity  |mserp_RetailsaleslineBiEntity  |
@@ -78,7 +78,7 @@ To create a history table corresponding to the live table in the archive scope, 
 |     |SALESTABLE_BR  |SALESTABLEHISTORY_BR  |SalestablebrBiEntity  |mserp_SalestablebrBiEntity  |
 |     |SALESTABLE_RU |SALESTABLEHISTORY_RU  |SalestableruBiEntity  |mserp_SalestableruBiEntity  |
 |     |SALESTABLE_W  |SALESTABLEHISTORY_W  |SalestablewBiEntity  |mserp_SalestablewBiEntity  |
-|SCM Inventory Transaction|INVENTTRANSARCHIVE  |INVENTTRANSARCHIVEHISTORY  |InventtransarchiveBiEntity  |mserp_InventTransArchiveBiEntity  |
+|Supply Chain Management Inventory transaction|INVENTTRANSARCHIVE  |INVENTTRANSARCHIVEHISTORY  |InventtransarchiveBiEntity  |mserp_InventTransArchiveBiEntity  |
 
 
 
