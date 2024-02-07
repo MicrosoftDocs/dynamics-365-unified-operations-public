@@ -20,7 +20,6 @@ ms.search.form:
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 This article provides answers to frequently asked questions about Electronic Invoicing service. Electronic invoicing extends the electronic invoicing capabilities that exist in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Project Operations. 
 
