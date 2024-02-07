@@ -21,7 +21,6 @@ ms.search.form:
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can create an electronic invoicing feature from scratch, or you can base it on an existing feature. When you create a feature from scratch, you must manually add Electronic reporting (ER) configurations and other components, such as the feature setup and application setup details. When you create a feature that is based on an existing feature, the new feature inherits all the base feature's configurations and parameters. You can review what is copied from the base feature to the new feature.
 
