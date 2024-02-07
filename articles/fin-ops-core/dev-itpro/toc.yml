@@ -1853,7 +1853,7 @@ items:
       - name: Cleanup routines
         href: sysadmin/cleanuproutines.md
       - name: Invalid users
-        href: sysadmin/invalid-users.md
+        href: ../fin-ops/sysadmin/invalid-users.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources
