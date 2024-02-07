@@ -142,7 +142,8 @@ Create an action in the topic that uses a flow to get the course description.
     - **Enter a value to respond with**: Select the **CourseDescription** variable from the **Variables** parameters.
 11. Select the flow name and rename to "Get course description demo".
 12. Save the flow.
-	<img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
+<img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
+
 13. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
 14. Select **(+)** below the **Set variable value** node and select **Call an action**.
 15. On the **Select an action** dialog, select the **Get course description demo** action created in flow.
