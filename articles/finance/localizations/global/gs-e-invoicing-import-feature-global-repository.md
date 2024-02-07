@@ -21,7 +21,6 @@ ms.search.form:
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 The Dataverse repository contains Electronic invoicing features that are shared with your configuration provider. All Electronic invoicing features that are provided by Microsoft are shared with all companies. You automatically have access to all the Electronic invoicing features that Microsoft releases and publishes to the Dataverse repository.
 
