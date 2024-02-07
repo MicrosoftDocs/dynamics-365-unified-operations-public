@@ -169,3 +169,4 @@ Create a new action in the topic that uses a flow and AI Builder to translate th
    - Add an output with a type of **Text**.
    - Enter "TranslatedText" for the name of the output.
 8. Change the flow name to "Translate text demo", and select **Save**.
+   <img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibility-translate-text.png" width="70%">
