@@ -21,7 +21,6 @@ ms.search.form:
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 Electronic reporting (ER) configurations are one of the main sets of components of electronic invoicing features. An ER configuration contains the setup of the file structure and a set of transformation rules for transforming data in two ways:
 
