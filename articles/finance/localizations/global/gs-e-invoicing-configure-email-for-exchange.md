@@ -21,7 +21,6 @@ ms.search.form:
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that are received by email, you should configure an email account channel.
 
