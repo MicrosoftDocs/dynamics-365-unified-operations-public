@@ -44,7 +44,7 @@ In the new topic, add questions Copilot will ask the user to determine the cours
 
 > [!NOTE] In a coming release, the current record viewed by the user in finance and operations apps will be available as a variable in Microsoft Copilot Studio, similar to other contextual variables highlighted in [Using application context with Copilot](copilot-application-context.md). Having this available will enable having Copilot know the current record rather than requiring a question to the user to provide the course ID.
 
-1. Select the (+) icon below the **Trigger** node, and select **Ask a question**.
+1. Select the **(+)** icon below the **Trigger** node, and select **Ask a question**.
 2. On the **Question** node, enter the following:
    - **Enter a message**: "What is the course ID for the course description you want to translate?"
    - **Identify**: User's entire response
@@ -140,6 +140,32 @@ Create an action in the topic that uses a flow to get the course description.
     - On the **Parameters** tab, select **Add an output** and select **Text** as the type of output.
     - Enter "CourseDescription" for the parameter name.
     - **Enter a value to respond with**: Select the **CourseDescription** variable from the **Variables** parameters.
-11. Save the flow.
+11. Select the flow name and rename to "Get course description demo".
+12. Save the flow.
+	<img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
+13. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
+14. Select **(+)** below the **Set variable value** node and select **Call an action**.
+15. On the **Select an action** dialog, select the **Get course description demo** action created in flow.
+16. On the **Action** node, Select the `Topic.CourseID` variable for the **Power Automate inputs (1)** value.
 
-<img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
+## Step 4: Create an action to translate the course description
+Create a new action in the topic that uses a flow and AI Builder to translate the course description retrieved in the previous step.
+
+1. Select **(+)** below the **Get course description demo** action node, and select **Call an action** >> **Create a flow**.
+2. In Power Automate, select the **When Power Virtual Agents calls a flow**.
+3. On the **Parameters** tab of the options, select **Add an input**.
+   - **Input type**: Text
+   - **Input**: TextToTranslate
+4. Select **Add an input** to add a second input.
+   - **Input type**: Text
+   - **Input**: LanguageCode
+5. Select **(+)** below the **When Power Virtual Agents calls a flow** node of the flow, and select **Add an action**.
+6. Search for and select the **Translate text into another language** action in the **AI Builder** connector.
+   - **Translate from**: Detect automatically
+   - **Text**: Select the `TextToTranslate` variable from the **When Power Virtual Agents calls a flow** step.
+   - **Translate To**: Select **Enter custom value**, and select the `LanguageCode` variable from the **When Power Virtual Agents calls a flow** step.
+7. Select the value to return to Copilot Studio.
+   - Select the **Return value(s) to Power Virtual Agents** node.
+   - Add an output with a type of **Text**.
+   - Enter "TranslatedText" for the name of the output.
+8. Change the flow name to "Translate text demo", and select **Save**.
