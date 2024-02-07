@@ -63,7 +63,7 @@ In the new topic, add questions Copilot will ask the user to determine the cours
 	      "Spanish", "es",
 	      "Russian", "ru",
 	      "German", "de",
-	      "Latin", "la")
+	      "Japanese", "ja")
      ```
 ## Step 3: Create an action to get the course description
 Create an action in the topic that uses a flow to get the course description.
@@ -146,7 +146,7 @@ Create an action in the topic that uses a flow to get the course description.
 13. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
 14. Select **(+)** below the **Set variable value** node and select **Call an action**.
 15. On the **Select an action** dialog, select the **Get course description demo** action created in flow.
-16. On the **Action** node, Select the `Topic.CourseID` variable for the **Power Automate inputs (1)** value.
+16. On the **Course description demo** action node, select the `Topic.CourseID` variable for the **CourseID (String)** input.
 
 ## Step 4: Create an action to translate the course description
 Create a new action in the topic that uses a flow and AI Builder to translate the course description retrieved in the previous step.
@@ -168,5 +168,23 @@ Create a new action in the topic that uses a flow and AI Builder to translate th
    - Select the **Return value(s) to Power Virtual Agents** node.
    - Add an output with a type of **Text**.
    - Enter "TranslatedText" for the name of the output.
+   - In the **Enter a value to respond with** text box, select the **Translated text** variable from the outputs of the **Translate text into another language** action node.
 8. Change the flow name to "Translate text demo", and select **Save**.
    <img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibility-translate-text.png" width="70%">
+9. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
+10. Select **(+)** below the **Course description demo** node and select **Call an action** >> **Translate text demo**.
+    - On the **Translate text demo** action node, select the `Topic.CourseDescription` variable for the **TextToTranslate (String)** input.
+    - Select the `Topic.LanguageCode` variable for the **LanguageCode (String)** input.
+   
+## Step 5: Create a message to return the translated text to Copilot
+Add a message node to the chatbot that returns the translated course description output to the Copilot in Finance and Operations.
+
+1. Select **(+)** below the **Translate text demo** action node, and select **Send a message**.
+2. In the **Enter a message** text box, select the **Insert variable** action, and select the `Topic.TranslatedText` variable.
+
+## Step 6: Test the new capability in Copilot
+1. In Copilot Studio, **Save** the new topic.
+2. On the **Publish** tab, select **Publish** to publish your changes to the chatbot.
+3. In Finance and Operations, open the **Courses** form (Human Resources >> Courses), and select a course to open the details.
+4. Select the **Copilot** icon in the top navigation bar to open the Copilot pane.
+5. In the chat panel, enter "Translate the course description into Japanese", and follow the prompt to get a response.
