@@ -1,6 +1,6 @@
 ---
 title: Archive customization (preview)
-description: This article describes how the archive feature supports customization 
+description: This article describes how the archive feature supports table customizations 
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -10,6 +10,8 @@ ms.custom:
 
 ---
 # Archive customization 
+
+[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
 This article describes how the archive feature supports customization. The archival framework supports extensions to include table custom fields and custom tables in supported functional scenarios. 
 
@@ -35,7 +37,7 @@ Dataverse interacts with Dynamics 365 finance and operations using business enti
 
 ### Step 1: Add fields to history table via extension 
 The archive framework requires all live table columns be mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. 
-For more information about how to add fields to history tables through extension in Dynamics 365 finance and operations, see [Add fields to tables through extension](../dev-itpro/extensibility/add-field-extension). 
+For more information about how to add fields to history tables through extension in Dynamics 365 finance and operations, see [Add fields to tables through extension](/dev-itpro/extensibility/add-field-extension). 
 
 ### Step 2: Add fields to business intelligence entities via extension 
 Additional fields added to live tables are required to be added to corresponding BI entities. 
