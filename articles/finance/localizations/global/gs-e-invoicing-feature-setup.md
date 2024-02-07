@@ -21,7 +21,6 @@ ms.search.form:
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 To set up the generation of electronic files and other processing steps (for example, digitally signing files, submitting them to the government web service and receiving a response, or storing them), set up the processing pipeline, applicability rules, and variables for Electronic invoicing features.
 
