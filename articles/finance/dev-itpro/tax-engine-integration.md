@@ -450,7 +450,7 @@ A purchase invoice is a source document transaction. Therefore, the calculated t
 
 Three classes are created for a purchase invoice: **AccPolicyVendPaymReqForExpensedProducts**, **AccDistRuleProductTaxMeasure** and **AccJourRuleVendPaymReqExpPurchTaxMeasure**.
 
-![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/PurchaseOrderTaxAccountingPolicy.png)
+![AccPolicyVendPaymReqForExpensedProducts class.](../general-ledger/media/PurchaseOrderTaxAccountingPolicy.png)
 
 ![AcctDistRuleProductTaxMeasure class.](../general-ledger/media/gte-class1.png)
 
