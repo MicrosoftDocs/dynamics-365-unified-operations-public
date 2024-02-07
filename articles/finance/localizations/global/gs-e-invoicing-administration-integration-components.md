@@ -18,7 +18,6 @@ ms.dyn365.ops.version: 10.0.39
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 This article provides information about the components that are related to the administration of Electronic invoicing, and their roles in the setup and operation of Electronic invoicing.
 
