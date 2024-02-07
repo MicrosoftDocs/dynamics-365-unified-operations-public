@@ -175,6 +175,7 @@ Create a new action in the topic that uses a flow and AI Builder to translate th
 10. Select **(+)** below the **Course description demo** node and select **Call an action** >> **Translate text demo**.
     - On the **Translate text demo** action node, select the `Topic.CourseDescription` variable for the **TextToTranslate (String)** input.
     - Select the `Topic.LanguageCode` variable for the **LanguageCode (String)** input.
+<img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-create-actions.png" width="70%">
    
 ## Step 5: Create a message to return the translated text to Copilot
 Add a message node to the chatbot that returns the translated course description output to the Copilot in Finance and Operations.
@@ -188,3 +189,4 @@ Add a message node to the chatbot that returns the translated course description
 3. In Finance and Operations, open the **Courses** form (Human Resources >> Courses), and select a course to open the details.
 4. Select the **Copilot** icon in the top navigation bar to open the Copilot pane.
 5. In the chat panel, enter "Translate the course description into Japanese", and follow the prompt to get a response.
+<img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-translate-course-description.png" width="70%">
