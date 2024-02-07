@@ -493,8 +493,6 @@ items:
             href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
-          - name: Configure the Warehousing app for on-premises deployments
-            href: deployment/warehousing-for-on-premise-deployments.md
           - name: Configure your environment with a dedicated Data Management Framework service
             href: deployment/onprem-DMFService.md
           - name: Enable RSAT in on-premises environments
@@ -535,6 +533,16 @@ items:
             href: deployment/onprem-localagent-options.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
+        - name: Warehouse Mobile Application
+          items:
+          - name: Configure the Warehousing app for on-premises deployments
+            href: deployment/warehousing-for-on-premise-deployments.md
+          - name: User-based authentication
+            href: deployment/warehousing-onprem-userauth.md
+          - name: User-based authentication FAQ
+            href: ../../supply-chain/warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Service-based authentication
+            href: deployment/warehousing-onprem-serviceauth.md
         - name: Troubleshooting
           items:
           - name: Troubleshoot on-premises deployments
