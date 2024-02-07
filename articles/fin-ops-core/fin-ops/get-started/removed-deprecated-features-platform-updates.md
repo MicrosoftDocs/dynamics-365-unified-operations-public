@@ -39,7 +39,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective May 2024
 
-### Deprecating support of unregistered MSA and External Microsoft Entra users in Finance and operations apps
+### Deprecating support of unregistered MSA and External Microsoft Entra users
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
