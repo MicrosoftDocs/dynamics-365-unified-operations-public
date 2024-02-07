@@ -65,3 +65,81 @@ In the new topic, add questions Copilot will ask the user to determine the cours
 	      "German", "de",
 	      "Latin", "la")
      ```
+## Step 3: Create an action to get the course description
+Create an action in the topic that uses a flow to get the course description.
+
+1. Select **(+)** >> **Call an action** >> **Create a flow**.
+2. When Power Automate opens, select **(+)** below the **When Power Virtual Agents calls a flow** node, and select **Add an action**.
+3. Select the **When Power Virtual Agents calls a flow** node to open options, and define the parameters:
+   - Choose **Text** as the type of user input.
+   - Enter "CourseID" for the **Input**.
+4. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
+5. On the **Parameters** tab for the **List rows** options:
+   - **Table Name**: Courses V2 (mserp)
+     > [!NOTE] If the Courses V2 (mserp) table is not available in your environment, you will need to enable it following the steps outlined in [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
+   - **Select Columns**: mserp_coursedescription
+   - **Filter Rows**: mserp_courseid eq '`CourseID`'
+     > [!NOTE] Select the `CourseID` variable by selecting the **Parameters** icon (lightning bolt), allowing you to select data from a previous step.
+6. Add an action to compose the course record.
+   - Select **(+)** below the **List rows** action, and select **Add an action**.
+   - In the **Add an action** pane, search for and select the **Compose** data operation.
+   - Use the **Parameters** action on the **Inputs** field to select the **body/value** parameter from the **List rows** action as the input value.
+7. Add an action to parse the JSON for the course record.
+    - Select **(+)** below the **Compose** action, and select **Add an action**.
+    - In the **Add an action** pane, search for and select the **Parse JSON** data operation.
+    - In the **Content** parameter of the **Parameters** pane, select the **Outputs** parameter from the **Compose** action.
+    - In the **Schema** parameter, enter the following JSON schema:
+      ```json
+	  {
+	    "type": "array",
+	    "items": {
+	        "type": "object",
+	        "properties": {
+	            "@@odata.type": {
+	                "type": "string"
+	            },
+	            "@@odata.id": {
+	                "type": "string"
+	            },
+	            "@@odata.editLink": {
+	                "type": "string"
+	            },
+	            "mserp_coursedescription": {
+	                "type": "string"
+	            },
+	            "mserp_hcmcoursev2entityid@odata.type": {
+	                "type": "string"
+	            },
+	            "mserp_hcmcoursev2entityid": {
+	                "type": "string"
+	            }
+	        },
+	        "required": [
+	            "@@odata.type",
+	            "@@odata.id",
+	            "@@odata.editLink",
+	            "mserp_coursedescription",
+	            "mserp_hcmcoursev2entityid@odata.type",
+	            "mserp_hcmcoursev2entityid"
+	        ]
+	     }
+	   }
+       ```
+8. Initialize a variable to be used for the course description that will be the output of the flow.
+    - Select **(+)** below the **Parse JSON** action, and select **Add an action**.
+    - Search for and select the **Initialize variable** action in the **Variable** group of actions.
+    - **Name**: CourseDescription
+    - **Type**: String
+9. Set the variable to the course description.
+    - Select **(+)** below the **Initialize variable** action, and select **Add an action**.
+    - Search for and select the **Set variable** action in the **Variable** group of actions.
+    - **Name**: CourseDescription
+    - **Value**: Select the `Body mserp_coursedescription` parameter from the **Parse JSON** action.
+10. Select the flow output to send back to Microsoft Copilot Studio.
+    - Select the **Return value(s) to Power Virtual Agents** node.
+    - On the **Parameters** tab, select **Add an output** and select **Text** as the type of output.
+    - Enter "CourseDescription" for the parameter name.
+    - **Enter a value to respond with**: Select the **CourseDescription** variable from the **Variables** parameters.
+11. Save the flow.
+
+[!image](../media/Copilot-extensibility-get-course-description.png)
