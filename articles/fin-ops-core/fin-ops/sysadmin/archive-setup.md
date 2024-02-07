@@ -74,9 +74,9 @@ The dashboard in Dynamics 365 finance and operations archival workspace provides
 |---|---|---|  
 |Scheduled |Scheduled |Job scheduled to begin at scheduled date and time |
 |In progress | In progress – Initial synch  |Initial sync to Dataverse managed data lake in progress x of y records of <tablename> synced |
-|              |In progress – Initial synch complete| Initial sync to Dataverse managed data lake completed x records of <tablename> synced |
-|             |In progress – Retention [x of y] |The process is marking records in the Finance and Operations live application table for archival, and the equivalent records in Dataverse managed data lake are being updated as long term retained. |
-|             |In progress – Reconciliation |Reconciliation in progress to verify that the records marked as retained in Dataverse long term retention match the records marked for archival in the Finance and Operations live application tables.  |
+|            |In progress – Initial synch complete| Initial sync to Dataverse managed data lake completed x records of <tablename> synced |
+|            |In progress – Retention [x of y] |The process is marking records in the Finance and Operations live application table for archival, and the equivalent records in Dataverse managed data lake are being updated as long term retained. |
+|             |In progress – reconciliation |Reconciliation in progress to verify that the records marked as retained in Dataverse long term retention match the records marked for archival in the Finance and Operations live application tables.  |
 |            | In progress – Move to history [x of y records] |Archived records from the Finance and Operations live application table are being moved to the Finance and Operations history tables. |
 |Complete |Archival complete – Move to history [x of x records] |The move to the Finance and Operations history table is complete. |
 |Failed |Failed – Move to history failed |The move to history failed. |
