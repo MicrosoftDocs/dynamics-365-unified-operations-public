@@ -2214,6 +2214,10 @@ items:
           href: copilot/copilot-architecture.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
+        - name: Tutorials
+          items:
+          - name: Extending Copilot capabilities with low-code plugins
+            href: copilot/tutorial-create-low-code-plugins.md
   - name: Responsible AI
     items:
     - name: Overview
