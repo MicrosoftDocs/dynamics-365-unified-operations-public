@@ -31,6 +31,37 @@ The following is an overview of the steps of the tutorial:
 For this tutorial you must first have enabled Copilot in Finance and Operations in your environment by following the steps outlined in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Step 1: Create a new topic
-In this step you will create a new topic in the **Copilot in Finance and Operation** chatbot.
+In this step you will create a new topic in the **Copilot for finance and oerations apps** chatbot.
 
-1. Open Microsoft Copilot Studio
+1. Open [Microsoft Copilot Studio](https://web.powerva.microsoft.com) in the environment linked to your finance and operations apps.
+2. Open the **Copilot for finance and operations apps** Copilot chatbot.
+3. On the **Topics & Plugins** tab, select the **Add** drop-down list, and select **Topic** >> **From blank**.
+4. On the **Trigger** node, select **Edit** on the **Phrases** card.
+5. In the **Enter text** box on the **Phrases** pane, enter "Translate the course description" and hit Enter.
+
+## Step 2: Add questions to determine the course ID and language
+In the new topic, add questions Copilot will ask the user to determine the course ID of the course description to translate, and the language into which it will be translated.
+
+> [!NOTE] In a coming release, the current record viewed by the user in finance and operations apps will be available as a variable in Microsoft Copilot Studio, similar to other contextual variables highlighted in [Using application context with Copilot](copilot-application-context.md). Having this available will enable having Copilot know the current record rather than requiring a question to the user to provide the course ID.
+
+1. Select the (+) icon below the **Trigger** node, and select **Ask a question**.
+2. On the **Question** node, enter the following:
+   - **Enter a message**: "What is the course ID for the course description you want to translate?"
+   - **Identify**: User's entire response
+   - **Save response as**: Select the variable and change the **Variable name** to "CourseID".
+3. Below the **Question** node, select the (+) icon and select **Ask a question** to create a second **Question** node.
+   - **Enter a message**: "Into what language do you want the description translated?"
+   - **Idenfity**: Language
+   - **Save response as**: Select the variable and change the **Variable name** to "LanguageChoice".
+4. Select **(+)** >> **Variable management** >> **Set a variable value** to create a new node.
+   - **Set variable**: Create a new variable with the name **LanguageCode**.
+   - **To value**: Select the **Formula** tab and enter the following Power Fx:
+     ```powerapps-dot
+      Switch(Topic.LanguageChoice,
+	      "Italian", "it",
+	      "French", "fr",
+	      "Spanish", "es",
+	      "Russian", "ru",
+	      "German", "de",
+	      "Latin", "la")
+     ```
