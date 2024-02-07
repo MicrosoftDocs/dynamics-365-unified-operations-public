@@ -24,7 +24,7 @@ The following sections describe the three types of invalid users that must be ad
 
 ## Users who aren't found in Microsoft Entra ID
 
-All finance and operations apps users must be present in your Microsoft Entra ID tenant. (Microsoft Entra ID was previously known as Azure Active Directory \[Azure AD\].) Administrators can directly add users to your tenant through the Azure portal. For more information, see [Add or delete users](/entra/fundamentals/add-users). 
+All finance and operations apps users must be present in your Microsoft Entra ID tenant. (Microsoft Entra ID was previously known as Azure Active Directory \[Azure AD\].) Administrators can directly add users to your tenant through the Azure portal. For more information, see [Add or delete users](/entra/fundamentals/add-users).   
 
 You can use business-to-business (B2B) functionality to include these users in Microsoft Entra ID. For more information, see [Export business-to-business (B2B) users to Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md).
 
