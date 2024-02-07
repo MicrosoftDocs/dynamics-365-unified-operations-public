@@ -416,7 +416,7 @@ items:
           - name: Available geographies
             href: deployment/deployment-options-geo.md
           - name: US Government Community Cloud (GCC)
-            href: ../fin-ops/deployment/us-gcc-deployment.md
+            href: /power-platform/admin/business-continuity-disaster-recovery.md?context=/dynamics365/context/finance
           - name: China Operated by 21Vianet
             href: ../fin-ops/deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
