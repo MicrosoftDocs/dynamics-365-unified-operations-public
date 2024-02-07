@@ -142,4 +142,4 @@ Create an action in the topic that uses a flow to get the course description.
     - **Enter a value to respond with**: Select the **CourseDescription** variable from the **Variables** parameters.
 11. Save the flow.
 
-[!image](../media/Copilot-extensibility-get-course-description.png)
+<img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibility-get-course-description.png" width="70%">
