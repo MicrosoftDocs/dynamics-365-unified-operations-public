@@ -32,6 +32,17 @@ To use the B2B e-commerce capabilities, you must first enable the **Enable the u
 1. On the **All** tab, use the filter box to search for **Module: Retail and Commerce**.
 1. Find the **Enable the use of B2B eCommerce capabilities** feature, select it, and then select **Enable now** in the lower-right corner.
 
+Additionally, for a business buyer to successfully sign up on the website, it is required to turn on a feature that links their customer account from Commerce to their email address that they used to request onboarding. To enable the auto linking feature, follow these steps:
+
+1. Go to **System administration \> Workspaces \> Feature management** and select the **All** tab. 
+1. Search for the feature named **Local Identity Record and Commerce Customer automatic linking**.
+1. Select the feature, and then select **Enable now** in the properties pane.
+
+> [!NOTE]
+> Once enabled, the automatic linking feature will be enabled for all channels in your environment. Keep this in mind if you are hosting different types of sites within your environment.
+
+Please refer [Enable auto linking feature](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/identity-record-linking#automatic-linking-on-b2b-sites) to learn more.
+
 ## Define a number sequence for the customer hierarchy
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. You must define a number sequence that will be used to generate the ID for the customer hierarchy. For more information about number sequences, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
