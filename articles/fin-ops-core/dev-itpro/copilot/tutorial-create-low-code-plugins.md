@@ -23,9 +23,11 @@ In this scenario we will add the Copilot capability to translate a course descri
 
 The following is an overview of the steps of the tutorial:
 1. Create a new topic in Microsoft Copilot Studio triggered by a prompt to translate the course description.
-2. Create an action that uses a Power Automate flow to get the course description.
-3. Create an acton that uses Power Automate and AI Builder to translate the course description text.
-4. Create a message response to send the translated text back to the user in the Copilot pane.
+2. Add questions to the user to determine the course ID and language.
+3. Create an action that uses a Power Automate flow to get the course description.
+4. Create an acton that uses Power Automate and AI Builder to translate the course description text.
+5. Create a message response to send the translated text back to the user in the Copilot pane.
+6. Test the new Copilot capability.
 
 ### Prerequisites
 For this tutorial you must first have enabled Copilot in Finance and Operations in your environment by following the steps outlined in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
