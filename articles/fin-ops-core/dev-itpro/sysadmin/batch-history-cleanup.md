@@ -34,8 +34,8 @@ When you run a batch job, a history is recorded. This history can be used to mon
 
 Two pages that have been added to the **System administration** module make it easy to clean up the batch job history:
 
-- Batch job history clean-up
-- Custom batch job history clean-up
+- System administration > Periodic tasks > Batch job history clean-up
+- System administration > Periodic tasks > Batch job history clean-up (custom)
 
 > [!NOTE]
 > We recommend that you regularly clean up the batch job history, and that you do this cleanup outside of business hours.
@@ -55,7 +55,7 @@ The custom batch job lets you to apply additional filtering, based on criteria s
 
 1. On the **Periodic tasks in System administration** module, select **Batch job history clean-up (custom)**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
-3. In the **Records to delete in a transaction** field, enter a value from **10** through **100** to specify the number of records to delete in a single transaction. If the volume of jobs and respective tasks to delete is large, it is recommended to enter a smaller number to delete in smaller chunks and avoid blocking of other jobs.
+3. In the **Records to delete in a transaction** field, input a value ranging from **10** to **100** to indicate the number of records to be deleted within a single database transaction. The associated job will iterate through and remove data in batches of this size until all records are deleted. When dealing with a large volume of data, particularly within the parameters and information log fields of related jobs and tasks, it is advisable to enter a smaller number. This approach facilitates deletion in smaller segments, thereby preventing the obstruction of other jobs.
 4. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
 5. Select **OK**.
 
