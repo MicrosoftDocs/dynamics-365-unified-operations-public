@@ -78,7 +78,7 @@ Electronic invoicing is deployed in the following Azure geographies:
 
 - Handling of responses from web services, including configurable handling of exception messages
 - Support for electronic signatures (for example, electronic signatures that use the XMLDSig signing algorithm)
-- The capability to sending documents to emails and store them in SharePoint
+- The capability to send documents to emails and store them in SharePoint
 - Batch processing of electronic invoice messages
 - Configurable transformation of incoming documents, and processing of those documents in Finance and Supply Chain Management
 - The capability to receive incoming documents from channels such as email and SharePoint
