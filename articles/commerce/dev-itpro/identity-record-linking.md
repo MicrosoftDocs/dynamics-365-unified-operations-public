@@ -38,8 +38,7 @@ To enable the automatic linking feature for your environment in Commerce headqua
 1. Select the feature, and then select **Enable now** in the properties pane.
 
 > [!NOTE]
-> Once enabled, the automatic linking feature will be enabled for all channels in your environment. Keep this in mind if you are hosting different types of sites within your environment.
-
+> For auto linking to be successful, make sure to run the distribution schedule 1010 - "Customers" before the customer signs in on the website. Also, once enabled, the automatic linking feature will be enabled for all channels in your environment. This is important if you are hosting different types of sites within your environment.
 ## Automatic linking on B2B sites 
 
 A B2B site is a Commerce site connected to an online store with the **Customer type** property set to "B2B" during channel creation. For B2B sites, automatic linking of identity records to customer accounts is critical to the customer approval and sign-in process. Customer records are created when a B2B record is approved, or when a B2B administrator creates the user record. Once the customer record exists, the user will navigate to the B2B site and sign in. Once directed to the Azure AD B2C sign-in experience, the user can then proceed to sign up. When sign-up is complete, the user is redirected back to the B2B site. On this return call, Commerce will review the automatic link options for the customer's initial sign-in.
