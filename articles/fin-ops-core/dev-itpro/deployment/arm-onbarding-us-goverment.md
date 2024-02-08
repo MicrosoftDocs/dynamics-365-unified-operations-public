@@ -129,7 +129,7 @@ Follow these steps to enable the Azure connector.
 #### Configure deployment settings
 
 1. In Lifecycle Services, on the **Microsoft Azure setup** page, select **Next**.
-2. Select the **Azure region** and select **Connect**. The Resource Manager onboarding flow is now complete. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
+2. Select the **Azure region** and select **Connect**. The Resource Manager onboarding flow is now complete. You should now see that the subscription is added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
 
     > [!NOTE]
     > Azure connectors configured using an Azure subscription tag do not expire.
