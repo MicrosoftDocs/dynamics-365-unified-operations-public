@@ -4,10 +4,10 @@
 title: Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects
 description: This article explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors. This article applies to Azure US government projects.
 author: saurabhsurana
-ms.date: 08/12/2021
+ms.date: 02/08/2024
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sasurana
 ms.search.validFrom: 2021-07-31
@@ -24,16 +24,16 @@ To deploy Azure Resource Manager topologies, you must complete the Resource Mana
 - The Azure subscription ID that you're deploying to
 
     > [!NOTE]
-    > For US government Microsoft Dynamics Lifecycle Services (LCS) projects, only Azure Government–specific Azure subscriptions are supported.
+    > For US government Microsoft Dynamics Lifecycle Services projects, only Azure Government–specific Azure subscriptions are supported.
 
 - Ownership of the Azure subscription, or access to the subscription owner, so that you can configure the  Azure subscription tag
 - The tenant administrator, so that you can work through the admin consent workflow
 
 ## Resource Manager onboarding process
 
-You can consider Resource Manager onboarding a two-step procedure, where each step has its own sub-procedures. You must complete all these sub-procedures for every subscription that you add to the LCS project.
+You can consider Resource Manager onboarding a two-step procedure, where each step has its own sub-procedures. You must complete all these sub-procedures for every subscription that you add to the Lifecycle Services project.
 
-1. Authorize the LCS deployment service to work on the Azure subscription.
+1. Authorize the Lifecycle Services deployment service to work on the Azure subscription.
 
     1. Authorize the workflow.
     2. Set the contributor workflow.
@@ -44,9 +44,9 @@ You can consider Resource Manager onboarding a two-step procedure, where each st
     2. Configure the Azure subscription tag.
     3. Configure deployment settings.
 
-### Authorize the LCS deployment service to work on the Azure subscription
+### Authorize the Lifecycle Services deployment service to work on the Azure subscription
 
-Complete the following procedures to authorize the LCS deployment service to work on the Azure subscription.
+Complete the following procedures to authorize the Lifecycle Services deployment service to work on the Azure subscription.
 
 #### Authorize the workflow
 
@@ -109,10 +109,10 @@ Complete the following procedures to enable the Azure subscription to deploy Res
 
 Follow these steps to enable the Azure connector.
 
-1. In LCS, on the **Project** page, at the top of the page, select the hamburger icon, and then select **Project settings**.
+1. In Lifecycle Services, on the **Project** page, at the top of the page, select the hamburger icon, and then select **Project settings**.
 2. On the **Project settings** page, select the **Azure connectors** tab.
 3. On the **Azure connectors** tab, under **Azure connectors**, select **Add**.
-4. Enter the **Name**, the **Azure subscription ID** to deploy to, and set the **Configure to use Azure Resource manager (ARM)** option to **Yes**.
+4. Enter the **Name**, the **Azure subscription ID** to deploy to and set the **Configure to use Azure Resource manager (ARM)** option to **Yes**.
 5. In the **Azure subscription Microsoft Entra ID Tenant Domain (or ID)** field, enter the domain name of the government Azure subscription account admin, and then select **Next**.
 6. On the **Microsoft Azure setup** page, verify **Dynamics Deployment Services \[wsfed-enabled\]** has the contributor role and select **Next**.
 
@@ -128,7 +128,7 @@ Follow these steps to enable the Azure connector.
 
 #### Configure deployment settings
 
-1. In LCS, on the **Microsoft Azure setup** page, select **Next**.
+1. In Lifecycle Services, on the **Microsoft Azure setup** page, select **Next**.
 2. Select the **Azure region** and select **Connect**. The Resource Manager onboarding flow is now complete. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
 
     > [!NOTE]
