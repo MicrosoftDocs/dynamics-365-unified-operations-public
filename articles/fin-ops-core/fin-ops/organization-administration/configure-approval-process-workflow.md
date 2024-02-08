@@ -4,7 +4,7 @@
 title: Configure approval processes in a workflow
 description: Use the following procedure to configure the properties of the approval process.
 author: ChrisGarty
-ms.date: 01/24/2020
+ms.date: 02/08/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -144,7 +144,7 @@ You can send notifications to people when a document has been approved, rejected
 
 ## Specify a final approver
 
-To require an additional approval if the user that submitted the document also approves it, you can specify a final approver for the approval step.
+To require additional approval if the user that submitted the document also approves it, you can specify a final approver for the approval step.
 
 1. In the workflow editor, right-click the approval element, and then select **Properties** to open the **Properties** form.
 2. In the left pane, click **Advanced settings**.
@@ -154,11 +154,13 @@ To require an additional approval if the user that submitted the document also a
 
 ## Prevent the submitter from approving steps in the workflow
 
-To prevent users that submit documents for approval from being to approve them themselves, change the **Disallow approval by submitter** setting on the workflow to **Yes** from **System administration > Workflow > Workflow parameters > General > Approver**. 
+To prevent users that submit documents for approval from being to approve documents themselves, follow these steps: 
+1. Go to **System administration > Workflow > Workflow parameters > General > Approver**.
+2. Update the **Disallow approval by submitter** setting on the workflow to **Yes**. 
 
 By default, this is set to **No**, and users can approve the document if they are included in the approval step's assignment settings.
 
-If the workflow is set to **Disallow approval by submitter** and includes approval steps with a final approver, ensure that the final approver is not a user that will typically submit documents to the workflow, since they will not be able to complete the approval.
+If the workflow is set to **Disallow approval by submitter** and includes approval steps with a final approver, confirm that the final approver isn't a user that typically submits documents to workflow, since they won't be able to complete the approval.
 
 
 ## Set a time limit
