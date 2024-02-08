@@ -22,7 +22,7 @@ ms.search.validFrom: 2021-01-31
 
 This article describes how to use customer hierarchies to manage business partners for Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 
-In Commerce headquarters, a *customer hierarchy* entity is used to represent the business partner organizations that uses your B2B e-commerce site. Before you can start to use customer hierarchies to manage business partners, you must enable the B2B e-commerce capabilities in Commerce headquarters and then define a number sequence for the customer hierarchy.
+In Commerce headquarters, a *customer hierarchy* entity is used to represent the business partner organizations that use your B2B e-commerce site. Before you can start to use customer hierarchies to manage business partners, you must enable the B2B e-commerce capabilities in Commerce headquarters and then define a number sequence for the customer hierarchy.
 
 ## Enable the B2B e-commerce feature in Commerce headquarters
 
