@@ -55,7 +55,7 @@ The custom batch job lets you to apply additional filtering, based on criteria s
 
 1. On the **Periodic tasks in System administration** module, select **Batch job history clean-up (custom)**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
-3. In the **Records to delete in a transaction** field, enter a value from 10 through 100 to specify the number of records to delete in a single transaction. If the volume of jobs and respective tasks to delete is large, it is recommended to enter a smaller number to delete in smaller chunks and avoid blocking other jobs.
+3. In the **Records to delete in a transaction** field, enter a value from **10** through **100** to specify the number of records to delete in a single transaction. If the volume of jobs and respective tasks to delete is large, it is recommended to enter a smaller number to delete in smaller chunks and avoid blocking of other jobs.
 4. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
 5. Select **OK**.
 
