@@ -95,7 +95,7 @@ This provides contextual information about the user.
 | Name | Type | Description| 
 | --- | --- | --- |
 | dataAreaId | String | The legal entity the user is currently signed into.  |
-| userLanguageId | String | The language code selected for the user in [User options](../get-started/personalize-user-experience#system-wide-options-for-the-current-user).  |
+| userLanguageId | String | The language code selected for the user in [User options](../get-started/personalize-user-experience.md#system-wide-options-for-the-current-user).  |
 
 **Sample payload**
 ```json
