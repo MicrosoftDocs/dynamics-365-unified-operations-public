@@ -28,31 +28,38 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up item tax groups in the Tax Calculation service. It also explains how to set up the item tax group applicability rule matrix and configure lines in the matrix.
+This article explains how to set up item tax groups in the Tax Calculation feature. It also explains how to set up the item tax group applicability rule matrix and configure lines in the matrix.
 
-The concept of item tax groups in the Tax Calculation service resembles the concept of item sales tax groups in Microsoft Dynamics 365 Finance. They are groups of tax codes. The Tax Calculation service uses the intersection of a tax group and an item tax group to determine the tax codes.
+The concept of item tax groups in the Tax Calculation feature resembles the concept of item sales tax groups in Microsoft Dynamics 365 Finance. They are groups of tax codes. The Tax Calculation feature uses the intersection of a tax group and an item tax group to determine the tax codes.
 
 > [!IMPORTANT]
 > The setup of item tax groups in the Tax Calculation service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. When you enable the Tax Calculation service in Finance, item tax groups are automatically synced for the selected legal entity.
+
+> [!NOTE]
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](./workspace/merge-rcs-to-gsw.md).
+>
+> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
 
 ## Set up an item tax group 
 
 Follow these steps to set up an item tax group.
 
-1. Sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
-2. Go to **Workspaces** \> **Globalization features** \> **Tax calculation**.
-3. Select the feature and version that you want to set up, and then select **Edit**.
-4. On the **General** tab, select **Configuration version**.
-5. On the **Item tax group** tab, select **Manage column**. If you're setting up an item tax group for the first time, the fields in the **Manage column** dialog box are automatically set.
-6. In the list on the left, expand the **Lines** node, and select the checkbox for **Item Tax Group**.
+1. On the **Tax calculation features** page, select the feature and version that you want to set up, and select **Edit**. Depending on where you access it from, follow the navigation:
+
+ - In RCS (sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/)), open the **Globalization features** workspace, select **Features**, click **Tax Calculation tile**
+ - In Finance, open the **Globalization studio workspace**, select **Globalization services**, click **Tax Calculation** tile
+   
+2. On the **General** tab, select **Configuration version**.
+3. On the **Item tax group** tab, select **Manage column**. If you're setting up an item tax group for the first time, the fields in the **Manage column** dialog box are automatically set.
+4. In the list on the left, expand the **Lines** node, and select the checkbox for **Item Tax Group**.
 
     ![Item Tax Group selected under the Lines node in the Manage columns dialog box.](../media/select-item-tax-group.png)
 
-7. Select the right arrow button to add **Item Tax Group** to the **Selected columns** list on the right.
+5. Select the right arrow button to add **Item Tax Group** to the **Selected columns** list on the right.
 
     ![Item Tax Group added to the Selected columns list.](../media/add-item-tax-group.png)
 
-8. Select **OK**.
+6. Select **OK**.
 
 ## Configure an item tax group
 
