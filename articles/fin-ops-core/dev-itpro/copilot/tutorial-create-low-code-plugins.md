@@ -3,13 +3,15 @@ title: Extending Copilot capabilities with low-code plugins
 description: This article provides a tutorial on creating low-code plugins for Copilot for Finance and Operations using Microsoft Copilot Studio
 author: jaredha
 ms.author: jaredha
-ms.reviewer: kamaybac
+ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 2/6/2024
+ms.date: 02/08/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Extending Copilot capabilities with low-code plugins
@@ -19,13 +21,13 @@ ms.custom: bap-template
 Microsoft Copilot Studio provides the orchestration of AI capabilities for Copilot in Finance and Operations, which enables a low-code maker experience for customizing the Copilot capabilities. This tutorial walks through an example of adding a plugin to the Copilot in Finance and Operation chatbot in Copilot Studio to add new capabilities to Copilot.
 
 ## Scenario
-In this scenario we will add the Copilot capability to translate a course description into another language by entering a prompt in the Copilot panel like "Translate the course description into French." The steps provide guidance on creating low-code plugins in Microsoft Copilot Studio and AI translation capabilities of AI Builder.
+In this scenario we will add the Copilot capability to translate a course description into another language by entering a prompt in the Copilot panel like "Translate the course description into French." These steps provide guidance on creating low-code plugins in Microsoft Copilot Studio and AI translation capabilities of AI Builder.
 
 The following is an overview of the steps of the tutorial:
 1. Create a new topic in Microsoft Copilot Studio triggered by a prompt to translate the course description.
 2. Add questions to the user to determine the course ID and language.
 3. Create an action that uses a Power Automate flow to get the course description.
-4. Create an acton that uses Power Automate and AI Builder to translate the course description text.
+4. Create an action that uses Power Automate and AI Builder to translate the course description text.
 5. Create a message response to send the translated text back to the user in the Copilot pane.
 6. Test the new Copilot capability.
 
@@ -33,7 +35,7 @@ The following is an overview of the steps of the tutorial:
 For this tutorial you must first have enabled Copilot in Finance and Operations in your environment by following the steps outlined in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Step 1: Create a new topic
-In this step you will create a new topic in the **Copilot for finance and oerations apps** chatbot.
+In this step you will create a new topic in the **Copilot for finance and operations apps** chatbot.
 
 1. Open [Microsoft Copilot Studio](https://web.powerva.microsoft.com) in the environment linked to your finance and operations apps.
 2. Open the **Copilot for finance and operations apps** Copilot chatbot.
@@ -44,7 +46,7 @@ In this step you will create a new topic in the **Copilot for finance and oerati
 ## Step 2: Add questions to determine the course ID and language
 In the new topic, add questions Copilot will ask the user to determine the course ID of the course description to translate, and the language into which it will be translated.
 
-> [!NOTE] In a coming release, the current record viewed by the user in finance and operations apps will be available as a variable in Microsoft Copilot Studio, similar to other contextual variables highlighted in [Using application context with Copilot](copilot-application-context.md). Having this available will enable having Copilot know the current record rather than requiring a question to the user to provide the course ID.
+> [!NOTE] In a coming release, the current record viewed by the user in finance and operations apps will be available as a variable in Microsoft Copilot Studio, similar to other contextual variables highlighted in [Using application context with Copilot](copilot-application-context.md). Having this available enable having Copilot know the current record rather than requiring a question to the user to provide the course ID.
 
 1. Select the **(+)** icon below the **Trigger** node, and select **Ask a question**.
 2. On the **Question** node, enter the following:
@@ -53,7 +55,7 @@ In the new topic, add questions Copilot will ask the user to determine the cours
    - **Save response as**: Select the variable and change the **Variable name** to "CourseID".
 3. Below the **Question** node, select the (+) icon and select **Ask a question** to create a second **Question** node.
    - **Enter a message**: "Into what language do you want the description translated?"
-   - **Idenfity**: Language
+   - **Idenifty**: Language
    - **Save response as**: Select the variable and change the **Variable name** to "LanguageChoice".
 4. Select **(+)** >> **Variable management** >> **Set a variable value** to create a new node.
    - **Set variable**: Create a new variable with the name **LanguageCode**.
@@ -144,7 +146,8 @@ Create an action in the topic that uses a flow to get the course description.
     - **Enter a value to respond with**: Select the **CourseDescription** variable from the **Variables** parameters.
 11. Select the flow name and rename to "Get course description demo".
 12. Save the flow.
-<img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
+
+    <img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
 
 13. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
 14. Select **(+)** below the **Set variable value** node and select **Call an action**.
@@ -173,12 +176,14 @@ Create a new action in the topic that uses a flow and AI Builder to translate th
    - Enter "TranslatedText" for the name of the output.
    - In the **Enter a value to respond with** text box, select the **Translated text** variable from the outputs of the **Translate text into another language** action node.
 8. Change the flow name to "Translate text demo", and select **Save**.
+   
    <img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibility-translate-text.png" width="70%">
 9. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
 10. Select **(+)** below the **Course description demo** node and select **Call an action** >> **Translate text demo**.
     - On the **Translate text demo** action node, select the `Topic.CourseDescription` variable for the **TextToTranslate (String)** input.
     - Select the `Topic.LanguageCode` variable for the **LanguageCode (String)** input.
-<img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-create-actions.png" width="70%">
+    
+      <img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-create-actions.png" width="70%">
    
 ## Step 5: Create a message to return the translated text to Copilot
 Add a message node to the chatbot that returns the translated course description output to the Copilot in Finance and Operations.
@@ -189,7 +194,8 @@ Add a message node to the chatbot that returns the translated course description
 ## Step 6: Test the new capability in Copilot
 1. In Copilot Studio, **Save** the new topic.
 2. On the **Publish** tab, select **Publish** to publish your changes to the chatbot.
-3. In Finance and Operations, open the **Courses** form (Human Resources >> Courses), and select a course to open the details.
+3. In finance and operations apps, open the **Courses** form (Human Resources >> Courses), and select a course to open the details.
 4. Select the **Copilot** icon in the top navigation bar to open the Copilot pane.
 5. In the chat panel, enter "Translate the course description into Japanese", and follow the prompt to get a response.
-<img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-translate-course-description.png" width="70%">
+
+   <img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-translate-course-description.png" width="70%">
