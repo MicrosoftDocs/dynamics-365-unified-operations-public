@@ -24,19 +24,13 @@ This article explains the logic for determining sales tax applicability and sale
 
 ## Matching logic
 
-Before the 10.0.21 update, the Tax calculation service used straightforward logic to find a tax applicability rule in the tax applicability matrix:
-
-1. Start at the first row of the matrix.
-2. Check each row until a matching condition is found.
-3. Stop the search.
-
-In the 10.0.21 update, the applicability logic tries to match the condition that includes the most input fields. Each field that has a value has a *weight* of 10. A condition that has a higher total weight has a higher priority.
+The applicability logic tries to match the condition that includes the most input fields. Each field that has a value has a *weight* of 10. A condition that has a higher total weight has a higher priority.
 
 ### Example
 
 The following example shows how the matching logic works.
 
-In Regulatory Configuration Service (RCS), the **Tax group applicability** tab is configured as shown in the following table.
+The **Tax group applicability** tab is configured as shown in the following table.
 
 | Business process | Currency | Item code | Tax group | Weight |
 |------------------|----------|-----------|-----------|--------|
@@ -45,20 +39,20 @@ In Regulatory Configuration Service (RCS), the **Tax group applicability** tab i
 
 For the first line in the table, two input fields are set. Therefore, the line has a weight of 20. For the second line, three fields are set. Therefore, the line has a weight of 30.
 
-When sales tax is calculated for a purchase order that has the EUR currency and item D0001, the Tax calculation service uses the condition that has a higher weight. Therefore, it uses the second line in the table.
+When sales tax is calculated for a purchase order that has the EUR currency and item D0001, the Tax calculation uses the condition that has a higher weight. Therefore, it uses the second line in the table.
 
 ## Adjust execution sequence
 
 In the 10.0.28 update, you can adjust the execution sequence of the applicability rules which are equally weighted.
 
 > [!NOTE]
-> The **Tax calculation service feature setup new UI** feature must be enabled in feature management to make the **Adjust execution sequence** button visible in the **Applicability rules** tables.
+> In RCS, the **Tax calculation service feature setup new UI** feature must be enabled in feature management to make the **Adjust execution sequence** button visible in the **Applicability rules** tables.
 
 ### Example
 
 The following example shows how the **Adjust execution sequence** button works.
 
-In the Regulatory Configuration Service (RCS), the **Tax group applicability** tab is configured as follows:
+The **Tax group applicability** tab is configured as follows:
 
 | Business process | Currency | Item code | Tax group | Weight |
 |------------------|----------|-----------|-----------|--------|
@@ -81,22 +75,20 @@ Now, the second rule (Tax group **TG\_B**) is moved above the first one, and wou
 
 ## Sales tax group and item sale tax group determination logic
 
-Before the 10.0.21 update, the **Sales tax group** and **Item sales tax group** fields weren't editable. Instead, the field values were determined by the Tax calculation service, based on the condition that was met for the tax code applicability rule.
+When a document line is created on a business document, such as a sales order, purchase order, or vendor invoice, the **Sales tax group** and **Item sales tax group** fields are set to the values from the master data. Then, when tax is calculated, the fields are updated according to the conditions that are configured in the Tax feature setup on the **Tax group applicability** and **Item tax group applicability** tabs.
 
-In the 10.0.21 update, the sales tax group and item sale tax group determination logic has been updated. When a document line is created on a business document, such as a sales order, purchase order, or vendor invoice, the **Sales tax group** and **Item sales tax group** fields are set to the values from the master data. Then, when tax is calculated, the fields are updated according to the conditions that are configured in the Tax feature setup on the **Tax group applicability** and **Item tax group applicability** tabs in RCS.
-
-If no applicability rule is configured for the tax group or item tax group in the Tax feature setup in RCS, the Tax calculation service uses the default rules from the master data in Microsoft Dynamics 365 Finance.
+If no applicability rule is configured for the tax group or item tax group in the Tax feature setup, the Tax calculation uses the default rules from the master data in Microsoft Dynamics 365 Finance.
 
 > [!NOTE]
-> The sales tax group and item sales tax group must be created and maintained in RCS.
+> The sales tax group and item sales tax group must be created and maintained in Tax calculation feature.
 
 ## Override sales tax
-You can update the tax groups that the Tax calculation service determined, without having to reconfigure the Tax feature. For example, you might have to update the tax groups because the rule is incorrectly set up, or some exception to the rule is required. By setting the **Override sales tax** option to **Yes** on the line details page for a document line, you can select the required sales tax group and item sales tax group.
+You can update the tax groups that the Tax calculation determined, without having to reconfigure the Tax feature. For example, you might have to update the tax groups because the rule is incorrectly set up, or some exception to the rule is required. By setting the **Override sales tax** option to **Yes** on the line details page for a document line, you can select the required sales tax group and item sales tax group.
 
 :::image type="content" source="../media/Pict1%20Override%20sales%20tax%20parameter.jpg" alt-text="Screenshot of the Override sales tax option set to Yes on the line details page for a document line."::: 
 
-The tax codes are calculated based on the intersection of the tax codes that are defined on the **Tax group** and **Item tax group** tabs in the Tax feature setup in RCS.
-In Finance, the value in the **Source** field indicates that the tax groups were synchronized from the Tax feature setup in RCS.
+The tax codes are calculated based on the intersection of the tax codes that are defined on the **Tax group** and **Item tax group** tabs in the Tax feature setup.
+In Finance, the value in the **Source** field indicates that the tax groups were synchronized from the Tax feature setup.
 
 :::image type="content" source="../media/Pict2%20Source%20field%20in%20Item%20sales%20tax%20group.jpg" alt-text="Screenshot of the Source field set to Tax calculation service for an item sales tax group on the Item sales tax groups page."::: 
 
@@ -143,6 +135,6 @@ For information about the configuration for reverse charge rules, see [Set up re
 When the document lines meet the reverse charge rules that are configured in Finance, the **Override sales tax** check box is set to **Yes** for the affected lines. The default value for **Sales tax group** comes from the **Purchase order sales tax group** or **Sales order sales tax group** field, respectively. These fields are specified on the **General ledger parameters** page, on the **Reverse charge** tab. For more information about these fields, see [Set up default parameters](emea-reverse-charge.md#set-up-default-parameters).
 
 > [!NOTE]
-> For reverse charges, the sales tax groups and item sales tax groups must be also created and maintained in RCS.
+> For reverse charges, the sales tax groups and item sales tax groups must be also created and maintained in the Tax feature setup .
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
