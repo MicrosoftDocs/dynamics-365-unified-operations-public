@@ -27,7 +27,7 @@ As of Microsoft Dynamics 365 Finance version 10.0.35, the functionality for [val
 
 ## Prerequisites and setup
 
-This functionality is available only for legal entities that have enabled Tax Calculation service for the selected business processes. For more information about Tax Calculation service, its capabilities, and how to set it up, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
+This functionality is available only for legal entities that have enabled Tax Calculation feature for the selected business processes. For more information about Tax Calculation, its capabilities, and how to set it up, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
 
 In addition, you must enable the following features in the **Feature management** workspace:
 
