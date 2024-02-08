@@ -61,6 +61,7 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Set up alerts](alerts.md)
 -  [Enhanced batch forms](enhanced-forms.md)
 -  [Clean up the batch job history](batch-history-cleanup.md)
+-  [Clean up the batch job table](batch-job-cleanup.md)
 -  [Abort an executing batch job](batch-abort.md)
 
 
