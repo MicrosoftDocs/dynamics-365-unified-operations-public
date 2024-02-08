@@ -1,12 +1,12 @@
 ---
 title: Using application context with Copilot
-description: This article provide guidance
+description: This article provides guidance on how to use application context with Copilot.
 author: jaredha
 ms.author: jaredha
-ms.reviewer: kamaybac
+ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 1/28/2024
+ms.date: 02/08/2024
 audience: Developer
 ms.search.region: Global
 ms.custom: bap-template
@@ -16,10 +16,10 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-A benefit of Copilot in finance and operations apps is the opportunity to create contextual AI experiences embedded in the flow of the business process of the application. It's important that the Copilot sidecar chat understands the context in which the user is working.
+Copilot in finance and operations apps lets you create contextual AI experiences embedded in the flow of the business process of the application. It's important that the Copilot sidecar chat understands the context in which the user is working.
 
 ## Default contextual variables
-Some variables are available by default as base components of the Copilot in Finance and Operation chatbot. The global variables are set automatically for the user's Copilot session, making the values available when creating and extending plugins in Copilot Studio.
+Some variables are available by default as base components of the Copilot in the finance and operation chatbot. The global variables are set automatically for the user's Copilot session, making the values available when creating and extending plugins in Copilot Studio.
 
 ### Navigation context
 The navigation context provides the list of the finance and operations navigation menu items available to the user in the user's current client session. The available menu items are dependent on the user's permissions. The record set is limited to the first 500 records.
