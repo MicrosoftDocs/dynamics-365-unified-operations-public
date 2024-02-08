@@ -15,7 +15,7 @@ ms.custom:
 
 This article explains how archive data with Dataverse long term retention for inventory transactions.  
 
-Currently, users can consolidate and compress inventory transactions table (InventTrans) and archives the original records into InventTransArchive table. For more information, see [Archive inventory transactions](../../supply-chain/inventory/archive-inventory-transactions). This feature addresses the data volume issue of table InventTrans and improves system performance. 
+Currently, users can consolidate and compress inventory transactions table (InventTrans) and archives the original records into InventTransArchive table. For more information, see [Archive inventory transactions](../../supply-chain/inventory/archive-inventory-transactions.md). This feature addresses the data volume issue of table InventTrans and improves system performance. 
 
 The new feature **Archive with Dataverse long term retention** moves the InventTransArchive records to a data lake and replicate corresponding records to InventTransArchiveHistory in Dynamics 365 Supply 
 Chain Management for performance optimization. 
@@ -38,7 +38,7 @@ If your system doesn't already include the features, follow these steps:
 
 ### Archive inventory transactions before purge 
 
-For more information about archiving inventory transactions, see [Archive inventory transactions](supply-chain/inventory/archive-inventory-transactions). 
+For more information about archiving inventory transactions, see [Archive inventory transactions](../../supply-chain/inventory/archive-inventory-transactions.md). 
 
 ### Schedule long term retention job 
 
