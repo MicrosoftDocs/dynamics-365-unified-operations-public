@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax calculation rounding rules
-description: This article provides information about the rounding rules in the tax calculation parameters of the tax calculation service.
+description: This article provides information about the rounding rules in the tax calculation parameters.
 author: kailiang
 ms.date: 07/29/2021
 ms.topic: article
@@ -29,10 +29,10 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about how the rounding rules work in the tax calculation parameters of the tax calculation service.
+This article provides information about how the rounding rules work in the **Tax calculation parameters**.
 
 > [!NOTE] 
-> When the tax calculation service is enabled, the rounding rules on the **Sales tax code** and **Sales tax group** pages aren't effective.
+> When the **Enable advanced tax calculation** parameter is enabled, the rounding rules on the **Sales tax code** and **Sales tax group** pages aren't effective.
 
 You can view the configuration of rounding rules for the tax calculation service in the **Sales tax rounding rule** section on the **Calculation** FastTab on the **General** tab of the **Tax calculation parameters** page (**Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**).
 
