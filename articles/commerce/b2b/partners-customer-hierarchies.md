@@ -39,7 +39,7 @@ Additionally, for a business buyer to successfully sign up on the website, it is
 1. Select the feature, and then select **Enable now** in the properties pane.
 
 > [!NOTE]
-> Once enabled, the automatic linking feature will be enabled for all channels in your environment. Keep this in mind if you are hosting different types of sites within your environment.
+> For auto linking to be successful, make sure to run the distribution schedule 1010 - "Customers" before the customer signs in on the website. Also, once enabled, the automatic linking feature will be enabled for all channels in your environment. This is important if you are hosting different types of sites within your environment.
 
 Please refer [Enable auto linking feature](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/identity-record-linking#automatic-linking-on-b2b-sites) to learn more.
 
