@@ -17,12 +17,12 @@ items:
           href: ../fin-ops/get-started/whats-new-home-page.md
         - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
           href: get-started/whats-new-platform-updates-vcruntime.md
+        - name: Platform updates for version 10.0.39 (March 2024)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-39.md
         - name: Platform updates for version 10.0.38 (February 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-38.md
         - name: Platform updates for version 10.0.37 (November 2023)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-37.md
-        - name: Platform updates for version 10.0.36 (September 2023)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-36.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -243,6 +243,8 @@ items:
         items:
         - name: Clean up data management job history 
           href: data-entities/clean-up-data.md
+        - name: Clean up staging tables
+          href: data-entities/staging-tables.md
         - name: Data import and export jobs overview
           href: ../fin-ops/data-entities/data-import-export-job.md
         - name: Data import and export parameters 
@@ -414,7 +416,7 @@ items:
           - name: Available geographies
             href: deployment/deployment-options-geo.md
           - name: US Government Community Cloud (GCC)
-            href: ../fin-ops/deployment/us-gcc-deployment.md
+            href: /power-platform/admin/business-continuity-disaster-recovery.md?context=/dynamics365/context/finance
           - name: China Operated by 21Vianet
             href: ../fin-ops/deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
@@ -491,8 +493,8 @@ items:
             href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
-          - name: Configure the Warehousing app for on-premises deployments
-            href: deployment/warehousing-for-on-premise-deployments.md
+          - name: Configure your environment with a dedicated Data Management Framework service
+            href: deployment/onprem-DMFService.md
           - name: Enable RSAT in on-premises environments
             href: deployment/onprem-rsat-configuration.md
           - name: Install network printer devices in on-premises environments
@@ -531,6 +533,16 @@ items:
             href: deployment/onprem-localagent-options.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
+        - name: Warehouse Mobile Application
+          items:
+          - name: Configure the Warehousing app for on-premises deployments
+            href: deployment/warehousing-for-on-premise-deployments.md
+          - name: User-based authentication
+            href: deployment/warehousing-onprem-userauth.md
+          - name: User-based authentication FAQ
+            href: ../../supply-chain/warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Service-based authentication
+            href: deployment/warehousing-onprem-serviceauth.md
         - name: Troubleshooting
           items:
           - name: Troubleshoot on-premises deployments
@@ -1171,6 +1183,8 @@ items:
           href: power-platform/environment-lifecycle-connect-finops-new-dv.md
         - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
           href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
+        - name: Dual-write setup from Lifecycle Services
+          href: data-entities/dual-write/lcs-setup.md
         - name: Edit the properties of connected environments
           href: power-platform/environment-lifecycle-edit-properties-dv.md
         - name: Delete environments when Power Platform Integration is enabled
@@ -1197,20 +1211,10 @@ items:
               href: data-entities/dual-write/dual-write-system-req.md
             - name: Guidance for how to set up dual-write
               href: data-entities/dual-write/connection-setup.md
-            - name: Dual-write setup from Lifecycle Services
-              href: data-entities/dual-write/lcs-setup.md
-            - name: Enable dual-write for existing finance and operations apps
-              items:
-                - name: Enable dual-write for existing finance and operations apps
-                  href: data-entities/dual-write/enable-dual-write.md
-                - name: Dual-write health check
-                  href: data-entities/dual-write/dual-write-health-check.md
-                - name: System requirements and prerequisites
-                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                - name: How to use the dual-write wizard to link your environments
-                  href: data-entities/dual-write/link-your-environment.md
-                - name: Enable table map for dual-write
-                  href: data-entities/dual-write/enable-entity-map.md
+            - name: Dual-write health check
+              href: data-entities/dual-write/dual-write-health-check.md
+            - name: Enable table map for dual-write
+              href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
               items:
                 - name: Separated dual-write application orchestration package
@@ -1834,6 +1838,8 @@ items:
           href: sysadmin/enhanced-forms.md
         - name: Clean up the batch history
           href: sysadmin/batch-history-cleanup.md
+        - name: Clean up the batch job table
+          href: sysadmin/batch-job-cleanup.md
         - name: Cancel an executing batch job
           href: sysadmin/batch-abort.md
         - name: Batch OData API
@@ -2202,9 +2208,11 @@ items:
           href: ../fin-ops/user-interface/task-recorder-training-docs.md
     - name: Copilot capabilities in finance and operations apps
       items:
-      - name: Overview of Copilot capabilities in finance and operations apps (preview)
+      - name: Overview of Copilot capabilities in finance and operations apps
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
-      - name: Enable Copilot capabilities in finance and operations apps (preview)
+      - name: Generative help and guidance with Copilot (preview)
+        href: ../fin-ops/copilot/copliot-generative-help.md
+      - name: Enable Copilot capabilities in finance and operations apps
         href: copilot/enable-copilot.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
@@ -2218,6 +2226,8 @@ items:
           items:
           - name: Extending Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
+      - name: Enable generative help and guidance with Copilot (preview)
+        href: copilot/enable-copliot-generative-help.md
     - name: Responsible AI
       items:
       - name: Overview

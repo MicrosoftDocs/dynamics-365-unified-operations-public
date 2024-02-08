@@ -2,12 +2,14 @@
 title: Sales tax applicability and sales tax group determination logic
 description: This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 author: EricWangChen
-ms.date: 12/08/2021
-ms.topic: article
+ms.date: 01/08/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: wangchen
 ms.search.validFrom: 
@@ -91,17 +93,37 @@ If no applicability rule is configured for the tax group or item tax group in th
 ## Override sales tax
 You can update the tax groups that the Tax calculation service determined, without having to reconfigure the Tax feature. For example, you might have to update the tax groups because the rule is incorrectly set up, or some exception to the rule is required. By setting the **Override sales tax** option to **Yes** on the line details page for a document line, you can select the required sales tax group and item sales tax group.
 
-![Override sales tax option set to Yes on the line details page for a document line](../media/Pict1%20Override%20sales%20tax%20parameter.jpg)
+:::image type="content" source="../media/Pict1%20Override%20sales%20tax%20parameter.jpg" alt-text="Screenshot of the Override sales tax option set to Yes on the line details page for a document line."::: 
 
 The tax codes are calculated based on the intersection of the tax codes that are defined on the **Tax group** and **Item tax group** tabs in the Tax feature setup in RCS.
 In Finance, the value in the **Source** field indicates that the tax groups were synchronized from the Tax feature setup in RCS.
 
-![Source field set to Tax calculation service for an item sales tax group on the Item sales tax groups page](../media/Pict2%20Source%20field%20in%20Item%20sales%20tax%20group.jpg)
+:::image type="content" source="../media/Pict2%20Source%20field%20in%20Item%20sales%20tax%20group.jpg" alt-text="Screenshot of the Source field set to Tax calculation service for an item sales tax group on the Item sales tax groups page."::: 
 
 > [!NOTE]
 > If the **Sales tax group** or **Item sales tax group** field is left blank, and the **Override sales tax** option is set to **Yes**, the line won't be sent to the Tax calculation service for processing.
 
 The **Override sales tax** check box is added to the **Customer** and **Vendor** master data on the **Invoice and delivery** FastTab. The check box is also added to the Sales order, Purchase order, Free text invoice header, and to the line level of those documents.
+
+Here is a process that combines tax code determination logic with override sales tax:
+
+#### Scenario 1: Override sales tax = Yes
+
+The flow that combines tax code determination logic with override sales tax yes.
+
+:::image type="content" source="../media/OverrideSalesTax_Yes.jpg" alt-text="Screenshot of the flow that combines tax code determination logic with override sales tax yes."::: 
+
+#### Scenario 2: Override sales tax = No and applicability rule can be matched
+
+The flow that combines tax code determination logic with override sales tax no and matched applicability rules.
+
+:::image type="content" source="../media/OverrideSalesTax_No1.jpg" alt-text="Screenshot of the flow that combines tax code determination logic with override sales tax no and matched applicability rules."::: 
+
+#### Scenario 3: Override sales tax = No and applicability rule can not be matched
+
+The flow that combines tax code determination logic with override sales tax no and applicability rules mismatch.
+
+:::image type="content" source="../media/OverrideSalesTax_No2.jpg" alt-text="Screenshot of the flow that combines tax code determination logic with override sales tax no and applicability rules mismatch."::: 
 
 ### Update order lines
 

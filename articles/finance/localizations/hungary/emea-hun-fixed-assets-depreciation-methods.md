@@ -12,7 +12,6 @@ ms.search.region: Hungary
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 274443
 ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
 ms.search.form: AssetDepreciationProfile
 ---

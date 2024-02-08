@@ -4,7 +4,7 @@
 title: Create and configure an Azure AD application for account manager sign-in
 description: This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author: mariash529
-ms.date: 09/22/2023
+ms.date: 12/20/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -71,8 +71,14 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 1. Go to the directory that contains your Azure AD B2C tenant. On the top menu, select the **Directory + subscription** filter, and then select the directory that contains your Azure AD B2C tenant.
 1. In the upper-left corner of the Azure portal, select **All services** , and then search for and select **Azure AD B2C**.
 1. Select **Identity providers**, and then select **New OpenID Connect provider**.
-1. In the **Name** field, enter "Account Manager B2B Sign-in". This exact name is required and can't be modified. 
-1. In the **Metadata url** field, enter the URL of the Azure B2B OpenID Connect (OIDC) configuration document (for example, `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where `<TENANT-ID>` is the ID of your Azure AD B2B tenant). 
+1. In the **Name** field, enter **StoreManagerB2BSignin**. This exact name is required and can't be modified.
+
+    > [!IMPORTANT]
+    > For on behalf of sign-in to work, the identity provider name must match the ID used in your sign-in module. The default value is **StoreManagerB2BSignin**.
+    >
+    > ![name matching to module - screen 3](../media/obo-configure-IDP-match.png)
+
+1. In the **Metadata url** field, enter the URL of the Azure B2B OpenID Connect (OIDC) configuration document (for example, `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where `<TENANT-ID>` is the ID of your Azure AD B2B tenant).
 
     > [!IMPORTANT]
     > The OIDC configuration document URL must use HTTPS.

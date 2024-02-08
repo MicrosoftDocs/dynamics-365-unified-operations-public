@@ -12,7 +12,6 @@ ms.search.region: Poland
 ms.author: atrukawk
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 
-ms.custom: 414136
 ---
 
 # Split the realized exchange difference amount into the difference of the invoice net value and the VAT amount

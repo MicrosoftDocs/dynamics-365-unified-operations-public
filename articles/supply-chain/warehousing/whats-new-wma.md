@@ -16,8 +16,24 @@ ms.dyn365.ops.version: 10.0.21
 # What's new or changed in the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.1.23.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability.
+- Added the username/password authentication method.
+- Added support for single sign-on (SSO) when using username/password authentication.
+- Added support for assigning a default mobile device user for each worker account, which enables automatic sign-in for workers.
+- Added a pop-up message to confirm successful sign-out from Microsoft Entra.
+- Improved support for Active Directory Federation Services (AD FS), thereby enabling device code flow, username/password, and SSO authentication in Dynamics 365 Finance + Operations (on-premises) environments.
+- Fixed a bug that prevented the app from saving manually entered connection settings after previously importing those settings from a file.
+- Added support for the new "back" gesture in Android 13.
+- White space on the details card now scales better with text zoom.
+- Added several accessibility improvements.
 
 ## Version 2.1.20.0
 

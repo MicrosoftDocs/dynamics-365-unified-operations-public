@@ -4,11 +4,10 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 11/15/2023
+ms.date: 01/05/2024
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
@@ -216,6 +215,7 @@ The following countries/regions have Commerce components available and card pres
 | Spain | ✔ |
 | Sweden | ✔ |
 | Switzerland | ✔ |
+|  United Arab Emirates (UAE) | ✔ |
 | United Kingdom | ✔ |
 | United States | ✔ |
 | Brazil | ✔ |

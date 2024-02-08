@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ms.topic: how-to
-ms.date: 08/03/2023
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -26,9 +26,9 @@ To monitor the integration between the external systems and Microsoft Dynamics 3
 - Get an overview of integration messages.
 - Go to pages that have related information and functionality, such as the [**Message processor messages**](warehouse-message-processor-messages.md) page.
 
-## <a name="inbound-shipment-orders"></a>Review inbound shipment orders
+## <a name="inbound-shipment-orders"></a>Maintain inbound shipment orders
 
-To review your inbound shipment orders, go to **Warehouse management** \> **Inquiries and reports** \> **Inbound shipment orders**. The documents that are listed on the **Inbound shipment orders** page provide information about the expected product receipts. The page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the receiving status, inventory transactions, and associated warehouse work. You can also view and edit the receiving status on the order header and use it to follow the inbound progress of the orders. 
+To review and maintain your inbound shipment orders, go to **Warehouse management** \> **Inbound shipment orders** \> **Inbound shipment orders**. The documents that are listed on the **Inbound shipment orders** page provide information about the expected product receipts. The page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the receiving status, inventory transactions, and associated warehouse work. You can also view the receiving status on the order header and lines, and use it to follow the inbound progress of the orders.
 
 The following **Receiving status** values are available:
 
@@ -44,9 +44,13 @@ If you're already familiar with Supply Chain Management, you might recognize tha
 > [!NOTE]
 > The internal inbound shipment order number must be unique. You can configure the system to use the external order numbers as internal numbers. In this way, you don't have to use a [number sequence](wms-only-mode-setup.md#number-sequences) for the order. To ensure unique numbers across external systems, consider using the **Order number prefix/suffix** options.
 
-## Review outbound shipment orders
+## Enable manual inbound shipment order creation
 
-To view documents that contain information about products that have been requested for dispatch, go to **Warehouse management** \> **Inquiries and reports** \> **Outbound shipment orders**. The **Outbound shipment orders** page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the release status, shipment status, inventory transactions, and associated warehouse work. You can also view and edit the release status and shipment status on the order header, and use them to follow the outbound progress of the orders.
+In addition to using entity messages to create inbound shipment orders, you can enable manual inbound shipment order creation for one or more source systems. Users can then create inbound shipment orders directly on the **Inbound shipment orders** page. To enable manual inbound shipment order creation, go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**, and set the **Enable manual inbound shipment order creation** option to *Yes* for the relevant source system. This setting activates the **New** button on the **Inbound shipment orders** page.  For shipment orders that are created without message processing, the **Order type** field has the value *Manual order* instead of *Inbound shipment order*.
+
+## Maintain outbound shipment orders
+
+To review and maintain documents that contain information about products that have been requested for dispatch, go to **Warehouse management** \> **Outbound shipment orders** \> **Outbound shipment orders**. The **Outbound shipment orders** page provides a **Header** view and a **Lines** view of the available shipment orders as seen from Supply Chain Management. For each line, you can view detailed information about the release status, shipment status, inventory transactions, and associated warehouse work. You can also view and edit the release status and shipment status on the order header, and use them to follow the outbound progress of the orders.
 
 The following **Release status** values are available:
 
@@ -62,13 +66,15 @@ The following **Shipment status** values are available:
 
 If you're already familiar with Supply Chain Management, you might recognize that this document resembles a simplified sales order that uses some of the same reservation and [release to warehouse](release-to-warehouse-process.md) processes. Use the [Source systems](wms-only-mode-setup.md#source-systems) settings to control whether you want to automatically trigger reservations when documents are imported, and/or automatically reject shipment orders that can't be partly or fully reserved.
 
-In the current release, outbound shipment order lines don't provide out-of-box support for being associated with loads before they're [released to the warehouse](release-to-warehouse-process.md). This association can occur only during the warehouse waving process.
-
 > [!WARNING]
 > For outbound shipment order lines, you can select **Update line** \> **Delivery remainder** to update expected order line transaction quantities. Make sure that you have the correct user role security privilege for this process, because this update (like message editing) allows for potential inconsistencies between the external systems and Supply Chain Management.
 
 > [!NOTE]
 > The internal outbound shipment order number must be unique. You can configure the system to use the external order numbers as internal numbers. In this way, you don't have to use a [number sequence](wms-only-mode-setup.md#number-sequences) for the order. To ensure unique numbers across external systems, consider using the **Order number prefix/suffix** options.
+
+### Enable manual outbound shipment order creation
+
+In addition to using entity messages to create outbound shipment orders, you can enable manual outbound shipment order creation for one or more source systems. Users can then create inbound shipment orders directly on the **Outbound shipment orders** page. To enable manual outbound shipment order creation, go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**, and set the **Enable manual outbound shipment order creation** option to *Yes* for the relevant source system. This setting activates the **New** button on the **Inbound shipment orders** page. For shipment orders that are created without message processing, the **External order type** field has the value *Manual order* instead of *Outbound shipment order*.
 
 ## Inbound process
 
@@ -111,12 +117,13 @@ You can specify whether workers should capture a packing slip ID and date for ea
 > - Automatically, when an ASN is imported
 > - Via a manual process
 > - As part of the Warehouse Management mobile app receiving process
+> - As part of an *Order receiving completed* process, which creates loads for registered inventory transactions that aren't associated with a load. This process is useful when the [item arrival journal](../inventory/arrival-overview.md) process is used. It can be triggered directly from an inbound shipment order or via the **Inbound shipment order receiving completed** background process.
 >
 > When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
 ## <a name="shipment-receipts"></a>Shipment receipts
 
-Go to **Warehouse management** \> **Inquiries and reports** \> **Shipment receipts** to view the detailed line transactions that are related to received inventory. The data is version controlled, and you can follow the posting status on the header.
+Go to **Warehouse management** \> **Inbound shipment orders** \> **Shipment receipts** to view the detailed line transactions that are related to received inventory. The data is version controlled, and you can follow the posting status on the header.
 
 The header status is changed from *Ready for posting* to *Posted* as part of the *Post shipment receipts* [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) job. This job is automatically initialized as part of the [Source systems](wms-only-mode-setup.md#source-systems) setup. The Source systems setup also lets you schedule the batch job to ensure that the related inbound shipment order line transactions are moved to a finalized transaction state for the **Warehouse management** module.
 
@@ -128,7 +135,7 @@ To view all the background processes that you have running, go to [**System admi
 > [!WARNING]
 > If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you probably have to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
 
-External systems can be informed via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) when new data is available. They can read the data via the following data entities:
+External systems can be informed via [business events](wms-only-mode-exchange-data.md#business-events) when new data is available. They can read the data via the following data entities:
 
 - `ShipmentReceiptJournalHeaders` – The shipment receipt header data.
 - `ShipmentReceiptJournalLines` – The shipment receipt line data.
@@ -161,7 +168,7 @@ Here's a high-level description of the outbound process:
 
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
 
-To view detailed line transactions that are related to shipped inventory, and to print a report, go to **Warehouse management** \> **Inquiries and reports** \> **Shipment packing slips**, and select **Preview/Print**. To control the printed inventory dimension values, go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**, and then, on the **Reports** tab, select an option for **Shipment packing slip**.
+To view detailed line transactions that are related to shipped inventory, and to print a report, go to **Warehouse management** \> **Outbound shipment orders** \> **Shipment packing slips**, and select **Preview/Print**. To control the printed inventory dimension values, go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**, and then, on the **Reports** tab, select an option for **Shipment packing slip**.
 
 Shipment packing slip data is version controlled, and you can follow the posting status on the header. The **Posting status** value is changed from *Ready for posting* to *Posted* as part of the *Post shipment packing slips* [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) job. This job is automatically initialized as part of the [Source systems](wms-only-mode-setup.md#source-systems) setup. The Source systems setup also lets you schedule the batch job to ensure that related outbound shipment order line transactions are moved to a finalized transaction state for the **Warehouse management** module.
 
@@ -170,7 +177,7 @@ To view all the background processes that you have running, go to [**System admi
 > [!NOTE]
 > If no language is defined for an order, the report uses the company-specific language settings.
 
-External systems can be informed via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) when new data is available. They can read the data via the following data entities:
+External systems can be informed via [business events](wms-only-mode-exchange-data.md#business-events) when new data is available. They can read the data via the following data entities:
 
 - `ShipmentPackingSlipJournalHeaders` – The shipment packing slip header data.
 - `ShipmentPackingSlipJournalLines` – The shipment packing slip line data.
@@ -178,10 +185,12 @@ External systems can be informed via [business events](wms-only-mode-exchange-da
 
 ## <a name="maintain-messages"></a>View and maintain shipment order messages
 
-In Warehouse management only mode, you can both view and update shipment order messages. Therefore, you can quickly test integrations during the implementation process. When a message is in a *Failed* message state, you can update all field values except the order header and line numbers. Go to one of the following pages to view and maintain the messages:
+In Warehouse management only mode, you can view, update, and create shipment order messages. Therefore, you can quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update all field values except the order header and line numbers. Go to one of the following pages to view and maintain the messages:
 
-- **Warehouse management** \> **Inquiries and reports** \> **Inbound shipment order messages**
-- **Warehouse management** \> **Inquiries and reports** \> **Outbound shipment order messages**
+- **Warehouse management** \> **Inbound shipment orders** \> **Inbound shipment order messages**
+- **Warehouse management** \> **Outbound shipment orders** \> **Outbound shipment order messages**
+
+To try out the process of creating inbound and outbound shipment orders via messages, set the **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** options to *Yes* for the relevant **Source system** record. You can then create shipment order messages directly on the **Outbound shipment order messages** and **Inbound shipment order messages** pages. In addition, you can follow the **Message origin** value, which can be *Manual entry* or *Integration*.
 
 Use the **Processing status** field to monitor the progress of each shipment order message. The following **Processing status** values are available:
 
@@ -189,11 +198,12 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 - *Received* – The message has been received and is in a *Queued* state in the [message processor](../supply-chain-dev/message-processor.md). It's now ready to be picked up for processing.
 - *Accepted* – The message processor state is *Processed*. Therefore, a shipment order has been created.
 - *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after you edit it.
-- *Draft* – The message is a copy that can be updated. To reprocess the message, move it into the *Queued* message state by selecting the **Queue** option.
+- *Draft* – The message is a manually copied or created message that can be updated. To reprocess the message, move it into the *Queued* message state by selecting **Queue** on the Action Pane.
 - *Canceled* – The message has been manually canceled.
 
 > [!TIP]
 > Select **Show old versions** to follow manual message updates based on the value of the **Replaced by message** field.
 
 > [!WARNING]
-> Manual message field updates in production environments can cause data inconsistency between the external source system and Supply Chain Management. For example, you might change an item number to a value that isn't known to the external system. This type of update will probably cause issues in progress information flows. The issues might even be impossible to correct in the external system. We recommend that you use user roles and security privileges to restrict access to this functionality to as few people as possible.
+> In a production environment, manually entered messages and field updates can cause data inconsistencies between the external source system and Supply Chain Management. For example, you might change an item number to a value that isn't known to the external system. This type of update will probably cause issues in progress information flows. The issues might even be impossible to correct in the external system. We recommend that you use user roles and security privileges to restrict access to this functionality to as few people as possible.
+

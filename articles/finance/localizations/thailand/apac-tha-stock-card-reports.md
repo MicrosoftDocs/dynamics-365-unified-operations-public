@@ -12,7 +12,6 @@ ms.search.region: Thailand
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 265184
 ms.assetid: 1ce8c70b-c6af-4171-98d2-2aa8e9563c5b
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 ---
