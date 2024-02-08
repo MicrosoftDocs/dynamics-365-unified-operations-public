@@ -10,6 +10,8 @@ ms.date: 02/08/2024
 audience: Developer
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Using application context with Copilot
