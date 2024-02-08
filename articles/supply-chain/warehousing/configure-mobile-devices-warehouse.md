@@ -4,7 +4,7 @@ description: This article describes how to configure the menu items that warehou
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
-ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings, WHSRFMenu
 ms.topic: how-to
 ms.date: 10/14/2022
 audience: Application User
@@ -16,21 +16,20 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+This article describes how to configure the menu items that warehouse workers use to perform their work in the Warehouse management mobile app.
 
-> [!NOTE]
-> This article applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
+In **Mobile device menu items** page you can for example configure menu items to perform the following tasks:
 
 - Process an inquiry or perform an activity, such as printing a label, generating license plate numbers, starting a production order, or quickly looking up information about items in a location.
 - Create work that will be performed through another process. For example, receiving an item for a purchase order can create putaway work for another worker.
-- Perform work that was created by another process (existing work), such as putaway work that was created when an item was received for a purchase order.
+- Perform work that was created by another process (existing work), such as putaway work that was created when an item was received for a purchase order or picking work related to a sales order.
+
+## Configure menu items for activities and inquiries
 
 To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**.
 
 > [!NOTE]
 > Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the "Additional menu item options" section later in this article.
-
-## Configure menu items for activities and inquiries
 
 If the **Mode** field for a menu item is set to **Indirect**, you can create a menu item to perform a general activity or inquiry that doesn't create work. Examples include reprinting license plate labels and an inquiry about the items in a location. The following table lists the options that are available.
 
@@ -453,13 +452,20 @@ The following table describes the various work types that you can use work confi
 > [!NOTE]
 > You can require product confirmation only for pick and put work types.
 
+## <a name="mobile-device-menu"></a>Mobile device menu
+
+The menu items that appear on the menus in the Warehouse management mobile app are configured on the **Mobile device menu items** page, but because the menu items can be put onto different menus in the **Mobile device menu** page, it's easy to configure menu structures so that only specific types of work are exposed to specific users, which gets defined as part of the **Worker** page.
+
+To create a new menu, open the **Mobile device menu** page, select *New* and provide a *Name* and *Description* to the new menu.
+In the *Mobile device menus* section you can define the nested menu structure by moving the available menus and menu items into the selected menu structure.
+
+> [!TIP]
+> You can also adjust which menu items are visible to the warehouse workers by, when being in edit mode, right clicking on them in the **Mobile device menu** page and selecting *Show* or *Hide*. This is helpful for [detour](warehouse-app-detours.md) menu items, which have to be part of a menu structure before they can be configured as detours in the **Mobile device steps**.
+
 ## Additional resources
 
 - [Set up a mobile device menu item for completing work of type Purchase order](tasks/set-up-mobile-device-menu.md)
 - [Set up a mobile device menu item to register received items](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 - [Inventory statuses](../inventory/inventory-statuses.md)
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
