@@ -35,14 +35,19 @@ This article provides information about tax calculation and posting integration 
 To configure and use this functionality, you must complete three main steps:
 
 1. **RCS setup:** In Regulatory Configuration Service, set up the tax feature, tax codes, and tax codes applicability for tax code determination in transfer orders.
-2. **Dynamics 365 Finance setup:** In Finance, enable the **Tax in transfer order** feature, set up the tax calculation service parameters for inventory, and set up core tax parameters.
+2. **Dynamics 365 Finance setup:** In Finance, enable the **Tax in transfer order** feature, set up the tax calculation parameters for inventory, and set up core tax parameters.
 3. **Inventory setup:** Set up the inventory configuration for transfer order transactions.
 
-## Set up RCS for tax and transfer order transactions
+> [!NOTE]
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](./workspace/merge-rcs-to-gsw.md).
+>
+> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
+
+## Set up Tax calculation for tax and transfer order transactions
 
 Follow these steps to set up the tax that is involved in a transfer order. In the example that is shown here, the transfer order is from the Netherlands to Belgium.
 
-1. On the **Tax features** page, on the **Versions** tab, select the draft feature version, and then select **Edit**.
+1. On the **Tax calculation features** page, on the **Versions** tab, select the draft feature version, and then select **Edit**.
 
 2. On the **Tax features setup** page, on the **Tax codes** tab, select **Add** to create new tax codes. For this example, three tax codes are created: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**.
 
@@ -136,14 +141,14 @@ Follow these steps to enable and set up taxes for transfer orders.
 2. In the list, find and select the **Tax in transfer order** feature, and then select **Enable now** to turn it on.
 
     > [!IMPORTANT]
-    > The **Tax in transfer order** feature is fully dependent on the tax calculation service. Therefore, it can be turned on only after you've installed the tax calculation service.
+    > The **Tax in transfer order** feature is fully dependent on the tax calculation feature. Therefore, it can be turned on only after you've enabled the **Enable advanced tax calculation** parameter in the **Tax calculation parameters**.
 
     ![Tax in transfer order feature.](../media/image7.png)
 
-3. Enable the tax calculation service, and select the **Inventory** business process.
+3. Enable the tax calculation**Enable advanced tax calculation** parameter, and select the **Inventory** business process.
 
     > [!IMPORTANT]
-    > You must complete this step for each legal entity in Finance where you want the tax calculation service and the functionality for tax in transfer orders to be available.
+    > You must complete this step for each legal entity in Finance where you want the tax calculation feature and the functionality for tax in transfer orders to be available.
 
     1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax calculation parameters**.
     2. In the **Business process** field, select **Inventory**.
@@ -152,7 +157,7 @@ Follow these steps to enable and set up taxes for transfer orders.
 
     ![Enable reverse charge option.](../media/image9.png)
 
-5. Verify that the related tax codes, tax groups, item tax groups, and VAT registration numbers have been set up in Finance according to the tax calculation service guidance.
+5. Verify that the related tax codes, tax groups, item tax groups, and VAT registration numbers have been set up in Finance according to the tax calculation guidance.
 6. Set up an interim transit account. This step is required only when the tax that is applied to a transfer order isn't applicable to a tax exempted or reverse charge mechanism.
 
     1. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
