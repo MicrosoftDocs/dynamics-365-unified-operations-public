@@ -197,6 +197,7 @@ Follow these steps to create a new extension and add it to your environment.
         </ItemGroup>
     </Project>
     ```
+
     # [Commerce 10.0.38 and later](#tab/commerce-10-0-38)
 
     For information on the availability of the change, see [Details for issue 871646](https://fix.lcs.dynamics.com/Issue/Details?bugId=871646&dbType=3).
