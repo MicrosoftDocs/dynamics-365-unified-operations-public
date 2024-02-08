@@ -40,6 +40,6 @@ The submission process can be run manually or in the background.
 To submit the generated electronic invoices in batch mode, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-2. In the **Channel** field, select the export channel that that must have been previously created, and then select **OK**.
+2. In the **Channel** field, select the export channel, and then select **OK**. The export channel must be created in advance.
 
-You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**). For more information, see [Work with Electronic document submission log](e-invoicing-submission-log.md).  
+You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. For more information, see [Work with Electronic document submission log](e-invoicing-submission-log.md).  
