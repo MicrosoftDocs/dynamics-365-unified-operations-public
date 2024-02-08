@@ -32,18 +32,19 @@ To use the B2B e-commerce capabilities, you must first enable the **Enable the u
 1. On the **All** tab, use the filter box to search for **Module: Retail and Commerce**.
 1. Find the **Enable the use of B2B eCommerce capabilities** feature, select it, and then select **Enable now** in the lower-right corner.
 
-For a business buyer to successfully sign up on the website, you must first enable the automatic linking feature, which links their Commerce customer account to the email address they used to request onboarding. 
+For a business buyer to successfully sign up on the website, you must first enable the automatic linking feature, which links the business buyer's Commerce customer account to the email address they used to request onboarding. 
 
 To enable the automatic linking feature, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management** and select the **All** tab. 
-1. Search for the feature named **Local Identity Record and Commerce Customer automatic linking**.
+1. Search for the **Local Identity Record and Commerce Customer automatic linking** feature.
 1. Select the feature, and then in the properties pane, select **Enable now**.
 
 > [!NOTE]
-> For automatic linking to be successful, you must run the **1010 (Customers)** distribution schedule job before the customer signs in to the website. Once enabled, the automatic linking feature is enabled for all channels in your environment, which is important to be aware of if you are hosting different types of sites within your environment.
+> - For automatic linking to be successful, you must run the **1010 (Customers)** distribution schedule job before the customer signs in to the website.
+> - Once turned on, the automatic linking feature is enabled for all channels in your environment, which is important to be aware of if you are hosting different types of sites within your environment.
 
-For more information, see [Automatic linking on B2B sites](../dev-itpro/identity-record-linking.md#automatic-linking-on-b2b-sites) to learn more.
+For more information, see [Automatic linking on B2B sites](../dev-itpro/identity-record-linking.md#automatic-linking-on-b2b-sites).
 
 ## Define a number sequence for the customer hierarchy
 
