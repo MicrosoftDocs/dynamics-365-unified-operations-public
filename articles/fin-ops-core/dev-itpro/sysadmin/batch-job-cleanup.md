@@ -45,7 +45,7 @@ To quickly clean up the records in the batch job table, follow these steps.
 
 1. Go to **System administration** \> **Periodic tasks** \> **Batch job clean-up**.
 1. In the **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs.
-1. In the **Records to delete in a transaction** field, enter a value from **1** through **200** to specify the number of records to delete in a single transaction. If the volume of jobs and respective tasks to delete is large, it is recommended to enter a smaller number to delete in smaller chunks and avoid blocking other jobs.
+1. In the **Records to delete in a transaction** field, enter a value from **1** through **200** to specify the number of records to delete in a single transaction. If the volume of jobs and respective tasks to delete is large, it is recommended to enter a smaller number to delete in smaller chunks and avoid blocking of other jobs.
 1. In the **Caption** field, specify the caption of the batch job to delete.
 1. In the **Class** field, specify the class name of a batch task for the batch job to delete.
 1. Enable the **Delete by end date time** field if the cleanup should consider the end date/time of the last execution to determine which batch jobs to delete. By default, the cleanup considers the creation date/time.
