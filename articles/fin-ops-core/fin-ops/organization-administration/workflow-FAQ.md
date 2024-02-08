@@ -4,7 +4,7 @@
 title: Workflow FAQ
 description: This article answers frequently asked questions about the workflow system.
 author: ChrisGarty 
-ms.date: 06/12/2023
+ms.date: 02/08/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,7 @@ If a user doesn't get the proper notification from the Action Center when they'r
 There's some overlap between workflow and Microsoft Power Automate. 
  - Workflows that are created in Dynamics 365 Finance are restricted to run inside Dynamics 365 Finance. 
      - Use Dynamics 365 Finance to set up workflows that are specific to your Dynamics 365 Finance.
- - Power Automate allows users to set up workflows that run outside of Dynamics 365 Finance. For more information, see [Power Automate](https://learn.microsoft.com/power-automate/getting-started)
+ - Power Automate allows users to set up workflows that run outside of Dynamics 365 Finance. For more information, see [Power Automate](../../power-automate/getting-started.md)
     - Use Power Automate to set up flows that involve information that flows through your company. 
 
 ## Why is workflow editor not able to start under AD FS?
