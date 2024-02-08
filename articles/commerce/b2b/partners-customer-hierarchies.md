@@ -4,7 +4,7 @@
 title: Manage B2B business partners using customer hierarchies
 description: This article describes how to use customer hierarchies to manage business partners for Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 author: josaw1
-ms.date: 10/27/2023
+ms.date: 02/08/2024
 ms.topic: article
 ms.search.form: RetailOperations
 audience: Application User
@@ -41,7 +41,7 @@ Additionally, for a business buyer to successfully sign up on the website, it is
 > [!NOTE]
 > For auto linking to be successful, make sure to run the distribution schedule 1010 - "Customers" before the customer signs in on the website. Also, once enabled, the automatic linking feature will be enabled for all channels in your environment. This is important if you are hosting different types of sites within your environment.
 
-Please refer [Enable auto linking feature](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/identity-record-linking#automatic-linking-on-b2b-sites) to learn more.
+Please refer [Enable auto linking feature](https://learn.microsoft.com/dynamics365/commerce/dev-itpro/identity-record-linking#automatic-linking-on-b2b-sites) to learn more.
 
 ## Define a number sequence for the customer hierarchy
 
