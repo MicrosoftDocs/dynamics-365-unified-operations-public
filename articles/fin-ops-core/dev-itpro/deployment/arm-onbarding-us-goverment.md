@@ -21,17 +21,17 @@ This article explains how to complete the Microsoft Azure Resource Manager onboa
 
 To deploy Azure Resource Manager topologies, you must complete the Resource Manager onboarding process for your connectors. To start the onboarding process, you must have the following items:
 
-- The Azure subscription ID that you're deploying to
+- The Azure subscription ID that you're deploying to.
 
     > [!NOTE]
     > For US government Microsoft Dynamics Lifecycle Services projects, only Azure Government–specific Azure subscriptions are supported.
 
-- Ownership of the Azure subscription, or access to the subscription owner, so that you can configure the  Azure subscription tag
-- The tenant administrator, so that you can work through the admin consent workflow
+- Ownership of the Azure subscription, or access to the subscription owner, so that you can configure the  Azure subscription tag.
+- The tenant administrator, so that you can work through the admin consent workflow.
 
 ## Resource Manager onboarding process
 
-You can consider Resource Manager onboarding a two-step procedure, where each step has its own sub-procedures. You must complete all these sub-procedures for every subscription that you add to the Lifecycle Services project.
+You can consider Resource Manager onboarding a two-step procedure, where each step has its own subprocedures. You must complete all these subprocedures for every subscription that you add to the Lifecycle Services project.
 
 1. Authorize the Lifecycle Services deployment service to work on the Azure subscription.
 
@@ -119,7 +119,7 @@ Follow these steps to enable the Azure connector.
     > [!NOTE]
     > If **Dynamics Deployment Services \[wsfed-enabled\]** doesn't appear, the authorization process hasn't been completed, or it was completed on another Azure subscription.
 
-7. On the **Microsoft Azure setup** page, under **Apply a subscription tab**, select **Get a code** and make a note of the information presented. You will use this information to configure a tag on the Azure subscription.
+7. On the **Microsoft Azure setup** page, under **Apply a subscription tab**, select **Get a code**, and make a note of the information presented. You use this information to configure a tag on the Azure subscription.
 
 #### Configure the Azure subscription tag
 
