@@ -5,7 +5,7 @@ author: jaredha
 ms.author: jaredha
 ms.reviewer: johnmichalak
 ms.search.form:
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 02/08/2024
 audience: Developer
 ms.search.region: Global
