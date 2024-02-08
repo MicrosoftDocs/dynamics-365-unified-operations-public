@@ -33,23 +33,30 @@ This article explains how to set up tax codes in the Tax Calculation service. It
 > [!IMPORTANT]
 > The setup of tax codes in the Tax Calculation Service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. Tax codes are automatically synced to Microsoft Dynamics 365 Finance when you enable the Tax Calculation service for a selected legal entity in Finance.
 
+> [!NOTE]
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](./workspace/merge-rcs-to-gsw.md).
+>
+> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
+
 ## Simple setup
 
 Follow these steps to use a tax code in a simple scenario, such as a scenario where there is only one tax rate.
 
-1. Sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
-2. Go to **Workspaces** \> **Globalization features** \> **Tax calculation**.
-3. Select the feature and version that you want to set up, and select **Edit**.
-4. On the **General** tab, select **Configuration version**.
-5. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
-6. Select **Calculation origin**. A calculation origin is a group of methods that are defined in the tax configuration version that you selected. For this simple scenario, select **By net amount**.
-7. Select **Save**. More fields become available, based on the calculation origin that you selected.
-8. On the **Rates** FastTab, select **Add** to add one tax rate for this tax code.
-9. Select **Save**.
+1. On the **Tax calculation features** page, select the feature and version that you want to set up, and select **Edit**. Depending on where you access it from, follow the navigation:
+
+ - In RCS (sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/)), open the **Globalization features** workspace, select **Features**, click **Tax Calculation tile**
+ - In Finance, open the **Globalization studio workspace**, select **Globalization services**, click **Tax Calculation** tile 
+   
+2. On the **General** tab, select **Configuration version**.
+3. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
+4. Select **Calculation origin**. A calculation origin is a group of methods that are defined in the tax configuration version that you selected. For this simple scenario, select **By net amount**.
+5. Select **Save**. More fields become available, based on the calculation origin that you selected.
+6. On the **Rates** FastTab, select **Add** to add one tax rate for this tax code.
+7. Select **Save**.
 
 ## Calculation origin
 
-The calculation origin defines how the tax base amount and the tax amount are calculated. It's configured by tax configuration in the **Electronic Reporting** workspace. The following values are available in the **Calculation origin** field:
+The calculation origin defines how the tax base amount and the tax amount are calculated. The following values are available in the **Calculation origin** field:
 
 - By net amount
 - By gross amount
