@@ -22,7 +22,7 @@ ms.search.validFrom: 2021-01-31
 
 This article describes how to use customer hierarchies to manage business partners for Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 
-In Commerce headquarters, a *customer hierarchy* entity is used to represent the business partner organizations that will use your B2B e-commerce site. Before you can start to use customer hierarchies to manage business partners, you must enable the B2B e-commerce capabilities in Commerce headquarters and then define a number sequence for the customer hierarchy.
+In Commerce headquarters, a *customer hierarchy* entity is used to represent the business partner organizations that uses your B2B e-commerce site. Before you can start to use customer hierarchies to manage business partners, you must enable the B2B e-commerce capabilities in Commerce headquarters and then define a number sequence for the customer hierarchy.
 
 ## Enable the B2B e-commerce feature in Commerce headquarters
 
@@ -32,20 +32,22 @@ To use the B2B e-commerce capabilities, you must first enable the **Enable the u
 1. On the **All** tab, use the filter box to search for **Module: Retail and Commerce**.
 1. Find the **Enable the use of B2B eCommerce capabilities** feature, select it, and then select **Enable now** in the lower-right corner.
 
-Additionally, for a business buyer to successfully sign up on the website, it is required to turn on a feature that links their customer account from Commerce to their email address that they used to request onboarding. To enable the auto linking feature, follow these steps:
+For a business buyer to successfully sign up on the website, you must first enable the automatic linking feature, which links their Commerce customer account to the email address they used to request onboarding. 
+
+To enable the automatic linking feature, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management** and select the **All** tab. 
 1. Search for the feature named **Local Identity Record and Commerce Customer automatic linking**.
-1. Select the feature, and then select **Enable now** in the properties pane.
+1. Select the feature, and then in the properties pane, select **Enable now**.
 
 > [!NOTE]
-> For auto linking to be successful, make sure to run the distribution schedule 1010 - "Customers" before the customer signs in on the website. Also, once enabled, the automatic linking feature will be enabled for all channels in your environment. This is important if you are hosting different types of sites within your environment.
+> For automatic linking to be successful, you must run the **1010 (Customers)** distribution schedule job before the customer signs in to the website. Once enabled, the automatic linking feature is enabled for all channels in your environment, which is important to be aware of if you are hosting different types of sites within your environment.
 
 For more information, see [Automatic linking on B2B sites](../dev-itpro/identity-record-linking.md#automatic-linking-on-b2b-sites) to learn more.
 
 ## Define a number sequence for the customer hierarchy
 
-Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. You must define a number sequence that will be used to generate the ID for the customer hierarchy. For more information about number sequences, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. You must define a number sequence that is used to generate the ID for the customer hierarchy. For more information about number sequences, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
 To define a number sequence for the customer hierarchy in Commerce headquarters, follow these steps.
 
@@ -78,7 +80,7 @@ The person who submitted the onboarding request is added on the **Hierarchy** Fa
 
 A person who is named Sam J. submits an onboarding request on behalf of the Microsoft organization. After the request is approved, two new customer accounts are created: one of the **Person** type for Sam J. and one of the **Organization** type for Microsoft.
 
-As the example in the following illustration shows, a new customer hierarchy record is also created. This record has the same name as the organization (**Microsoft**), and the **Admin** role is assigned to Sam J. As the administrator, Sam J. adds any other Microsoft users of the B2B site to this hierarchy and assigns the **User** to them. In this example, Sush R. has been added as a user.
+As the example in the following illustration shows, a new customer hierarchy record is also created. This record has the same name as the organization (**Microsoft**), and the **Admin** role is assigned to Sam J. As the administrator, Sam J. adds any other Microsoft users of the B2B site to this hierarchy and assigns the **User** to them. In this example, Sush R. is added as a user.
 
 ![Example of a customer hierarchy record.](../media/CustomerHierarchy2.png)
 
