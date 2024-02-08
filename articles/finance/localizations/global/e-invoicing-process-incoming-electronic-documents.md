@@ -28,7 +28,7 @@ Incoming electronic documents, such as vendor electronic invoices, can be import
 
 Electronic invoicing supports two channels for incoming documents: e-mail and Microsoft SharePoint folders.
 
-There are twp setup types to specify whether documents undergo preprocessing or are passed directly to your connected application:
+There are two setup types to specify whether documents undergo preprocessing or are passed directly to your connected application:
 
 - **Import channel** – The system will pass the document directly to the connected application.
 - **Import channel with processing pipeline** – You can set up additional actions that will be run before the document is passed to the connected application.
