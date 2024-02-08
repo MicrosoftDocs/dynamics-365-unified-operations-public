@@ -460,7 +460,7 @@ To create a new menu, open the **Mobile device menu** page, select *New* and pro
 In the *Mobile device menus* section you can define the nested menu structure by moving the available menus and menu items into the selected menu structure.
 
 > [!TIP]
-> You can also adjust which menu items are visible to the warehouse workers by, when being in edit mode, right clicking on them in the **Mobile device menu** page and selecting *Show* or *Hide*. This is helpful for [detour](warehouse-app-detours.md) menu items, which have to be part of a menu structure before they can be configured as detours in the **Mobile device steps**.
+> You can also adjust which menu items are visible to the warehouse workers by, when being in edit mode, right clicking on them in the **Mobile device menu** page and selecting *Show* or *Hide*. This is helpful for [detour](warehouse-app-detours.md) menu items, which have to be part of a menu structure before they can be configured as detours in the **Mobile device steps**, but would typically not be displayed on any users menu.
 
 ## Additional resources
 
