@@ -59,7 +59,7 @@ The following illustration shows an example of typical browse and search functio
 ![Search landing page.](./media/SearchLanding.png)
 
 > [!NOTE]
-> Product information is regularly published to the Azure Cognitive Search index, but the prices associated with a specific customer through trade agreements, price adjustments, or discounts aren't reflected in product search refiners. If you enable **Show affiliation prices** for the **Search results** container in site builder, customer-specific prices will load dynamically when products are shown.
+> Product information is regularly published to the Azure Cognitive Search index, but the prices associated with specific customers through trade agreements, price adjustments, or discounts aren't reflected in product search refiners. If you enable **Show affiliation prices** for the **Search results** container in site builder, customer-specific prices will load dynamically when products are shown.
 
 ## Faceted navigation and choice summary
 
