@@ -46,7 +46,8 @@ In this step you will create a new topic in the **Copilot for finance and operat
 ## Step 2: Add questions to determine the course ID and language
 In the new topic, add questions Copilot will ask the user to determine the course ID of the course description to translate, and the language into which it will be translated.
 
-> [!NOTE] In a coming release, the current record viewed by the user in finance and operations apps will be available as a variable in Microsoft Copilot Studio, similar to other contextual variables highlighted in [Using application context with Copilot](copilot-application-context.md). Having this available enable having Copilot know the current record rather than requiring a question to the user to provide the course ID.
+> [!NOTE]
+> In a coming release, the current record viewed by the user in finance and operations apps will be available as a variable in Microsoft Copilot Studio, similar to other contextual variables highlighted in [Using application context with Copilot](copilot-application-context.md). Having this available enable having Copilot know the current record rather than requiring a question to the user to provide the course ID.
 
 1. Select the **(+)** icon below the **Trigger** node, and select **Ask a question**.
 2. On the **Question** node, enter the following:
@@ -80,10 +81,12 @@ Create an action in the topic that uses a flow to get the course description.
 4. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
 5. On the **Parameters** tab for the **List rows** options:
    - **Table Name**: Courses V2 (mserp)
-     > [!NOTE] If the Courses V2 (mserp) table is not available in your environment, you will need to enable it following the steps outlined in [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
+     > [!NOTE]
+     > If the Courses V2 (mserp) table is not available in your environment, you will need to enable it following the steps outlined in [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
    - **Select Columns**: mserp_coursedescription
    - **Filter Rows**: mserp_courseid eq '`CourseID`'
-     > [!NOTE] Select the `CourseID` variable by selecting the **Parameters** icon (lightning bolt), allowing you to select data from a previous step.
+     > [!NOTE]
+     > Select the `CourseID` variable by selecting the **Parameters** icon (lightning bolt), allowing you to select data from a previous step.
 6. Add an action to compose the course record.
    - Select **(+)** below the **List rows** action, and select **Add an action**.
    - In the **Add an action** pane, search for and select the **Compose** data operation.
@@ -147,7 +150,7 @@ Create an action in the topic that uses a flow to get the course description.
 11. Select the flow name and rename to "Get course description demo".
 12. Save the flow.
 
-    <img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
+    <img alt="Screenshot of an action using a flow to get the course description" src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
 
 13. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
 14. Select **(+)** below the **Set variable value** node and select **Call an action**.
@@ -177,13 +180,13 @@ Create a new action in the topic that uses a flow and AI Builder to translate th
    - In the **Enter a value to respond with** text box, select the **Translated text** variable from the outputs of the **Translate text into another language** action node.
 8. Change the flow name to "Translate text demo", and select **Save**.
    
-   <img alt="Create an action using a flow to get the course description" src="../media/Copilot-extensibility-translate-text.png" width="70%">
+   <img alt="Screenshot of an action using a flow to translate text into another language." src="../media/Copilot-extensibility-translate-text.png" width="70%">
 9. Return to Copilot Studio and select **Done** on the **Save and refresh** dialog.
 10. Select **(+)** below the **Course description demo** node and select **Call an action** >> **Translate text demo**.
     - On the **Translate text demo** action node, select the `Topic.CourseDescription` variable for the **TextToTranslate (String)** input.
     - Select the `Topic.LanguageCode` variable for the **LanguageCode (String)** input.
     
-      <img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-create-actions.png" width="70%">
+      <img alt="Screenshot of an action to translate a course description into a another language" src="../media/Copilot-extensibility-create-actions.png" width="70%">
    
 ## Step 5: Create a message to return the translated text to Copilot
 Add a message node to the chatbot that returns the translated course description output to the Copilot in Finance and Operations.
@@ -198,4 +201,4 @@ Add a message node to the chatbot that returns the translated course description
 4. Select the **Copilot** icon in the top navigation bar to open the Copilot pane.
 5. In the chat panel, enter "Translate the course description into Japanese", and follow the prompt to get a response.
 
-   <img alt="Copilot translates a course description into a foreign language" src="../media/Copilot-extensibility-translate-course-description.png" width="70%">
+   <img alt="Screenshot of Copilot translating a course description into another language" src="../media/Copilot-extensibility-translate-course-description.png" width="70%">
