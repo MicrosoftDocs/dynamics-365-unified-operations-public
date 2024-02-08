@@ -197,7 +197,26 @@ Follow these steps to create a new extension and add it to your environment.
         </ItemGroup>
     </Project>
     ```
+    # [Commerce 10.0.38 and later](#tab/commerce-10-0-38)
 
+    You can refer to [Details for issue 871646](https://fix.lcs.dynamics.com/Issue/Details?bugId=871646&dbType=3) for details of the availability of the change.
+
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+        <PropertyGroup>
+            <TargetFramework>netstandard2.0</TargetFramework>
+            <AssemblyName>$(AssemblyNamePrefix).Commerce.Runtime.QrCodeExtension</AssemblyName>
+            <RootNamespace>Contoso.Commerce.Runtime.QrCodeExtension</RootNamespace>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Framework" Version="$(FrameworkRepoPackagesVersion)" />
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+            <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+        </ItemGroup>
+    </Project>
+    ```
     ---
 
 1. Use the following code, based on your Commerce version, to create an extension class.
@@ -486,6 +505,26 @@ Follow these steps to create a new extension and add it to your environment.
     }
     ```
 
+    # [Commerce 10.0.38 and later](#tab/commerce-10-0-38)
+
+    You can refer to [Details for issue 871646](https://fix.lcs.dynamics.com/Issue/Details?bugId=871646&dbType=3) for details of the availability of the change.
+
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+        <PropertyGroup>
+            <TargetFramework>netstandard2.0</TargetFramework>
+            <AssemblyName>$(AssemblyNamePrefix).Commerce.Runtime.QrCodeExtension</AssemblyName>
+            <RootNamespace>Contoso.Commerce.Runtime.QrCodeExtension</RootNamespace>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Framework" Version="$(FrameworkRepoPackagesVersion)" />
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+            <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+        </ItemGroup>
+    </Project>
+    ```
     ---
 
 1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
