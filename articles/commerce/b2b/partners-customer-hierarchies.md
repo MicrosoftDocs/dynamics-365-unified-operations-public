@@ -41,7 +41,7 @@ Additionally, for a business buyer to successfully sign up on the website, it is
 > [!NOTE]
 > For auto linking to be successful, make sure to run the distribution schedule 1010 - "Customers" before the customer signs in on the website. Also, once enabled, the automatic linking feature will be enabled for all channels in your environment. This is important if you are hosting different types of sites within your environment.
 
-Please refer [Enable auto linking feature](https://learn.microsoft.com/dynamics365/commerce/dev-itpro/identity-record-linking#automatic-linking-on-b2b-sites) to learn more.
+For more information, see [Automatic linking on B2B sites](../dev-itpro/identity-record-linking.md#automatic-linking-on-b2b-sites) to learn more.
 
 ## Define a number sequence for the customer hierarchy
 
