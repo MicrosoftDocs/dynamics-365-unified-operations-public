@@ -98,11 +98,12 @@ Before you can complete the remaining procedures in this article, the following 
    
      - Globalization features
      - Enable Globalization feature setup for Tax Calculation Service
-     - Enable applicability rules value lookup for Tax Calculation Service – optional.
+     - Enable applicability rules value lookup for Tax Calculation Service – _optional_.
 
 - The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
 
     - Globalization features
+    - Prevent Tax calculation feature publishing in Regulatory Configuration Service - see [Changes in Tax calculation feature publishing in RCS](global-get-started-with-tax-calculation-service.md#changes-in-tax-calculation-feature-publishing-in-rcs) for details.
 
 - The following roles should be assigned as appropriate to the users in your RCS environment:
 
@@ -122,9 +123,10 @@ Before you can complete the remaining procedures in this article, the following 
 
 ## Configure Tax Calculation feature
 
-The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time, and you can complete it in any legal entity in RCS (sign in to [RCS](https://marketing.configure.global.dynamics.com/)),if you are on 10.0.38 or lower version or in [Globalization studio workspace in Finance] (./workspace/gsw-features.md), if you are on 10.0.39 or higher version.
+The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time, and you can complete it in any legal entity in RCS (sign in to [RCS](https://marketing.configure.global.dynamics.com/)),if you are on 10.0.38 or lower version, or in [Globalization studio workspace in Finance](./workspace/gsw-features.md), if you are on 10.0.39 or higher version.
 
-Import the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on you Finance version. Follow the steps described in [Import Electronic reporting (ER) configurations from Dataverse] (./workspace/gsw-import-er-config-dataverse.md).
+Import the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on you Finance version. Follow the steps described in [Import Electronic reporting (ER) configurations from Dataverse](./workspace/gsw-import-er-config-dataverse.md).
+
 To access the page for tax feature configuration, click the **Tax Calculation** tile. Depending on where you access it from, follow the navigation: 
  - In RCS, open the **Globalization features** workspace, select **Features**
  - In Finance, open the **Globalization studio workspace**, select **Globalization services**
