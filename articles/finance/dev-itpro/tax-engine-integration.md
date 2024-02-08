@@ -4,7 +4,7 @@
 title: Tax engine integration
 description: This article provides information about Tax engine integration.
 author: kailiang
-ms.date: 12/15/2017
+ms.date: 2/8/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-To integrate the [Tax engine](../general-ledger/tax-engine.md) (also referred to as GTE) with Dynamics 365 Finance, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
+To integrate the [Tax engine](../general-ledger/tax-engine.md) (GTE) with Dynamics 365 Finance, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. The tax calculation can either include or exclude tax adjustments. 
 
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
@@ -54,7 +54,7 @@ The set of ITaxDocument interfaces and implementations enables information to be
 
 ![GTE interfaces.](../general-ledger/media/gte-itaxdocument_interfaces.jpg)
 
-These interfaces also provide methods for retrieving a specified field value (**ITaxDocumentField**) from ITaxDocumentLine and an expected measure value (**ITaxDocumentMeasure**) from ITaxDocumentComponentLine.
+These interfaces provide methods for retrieving a specified field value (**ITaxDocumentField**) from ITaxDocumentLine and an expected measure value (**ITaxDocumentMeasure**) from ITaxDocumentComponentLine.
 
 - The set of ITaxDocumentMetaData interfaces enables model information to be read from a tax document. This set includes ITaxDocumentMetaData, ITaxDocumentLineMetaData, ITaxDocumentComponentLineMetaData, and ITaxDocumentMeasureMetaData.
 - The set of ITaxDocumentEnumerator and ITaxDocumentMeataDataEnumerator interfaces provides an enumerator to read a list of tax document–related objects, such as ITaxDocumentLine, ITaxDocumentField, ITaxDocumentComponentLine, and ITaxDocumentMeasure.
@@ -122,7 +122,7 @@ The Tax business service model is part of the Finance integration framework, and
 </tr>
 <tr>
 <td>MarkTaxDocumentTaxStatus</td>
-<td>Mark a tax document as <strong>Dirty</strong> when the underlining transaction has been updated. <ul>
+<td>Mark a tax document as <strong>Dirty</strong> when the underlining transaction is updated. <ul>
 <li><strong>Input</strong>: Taxable document identifier, Tax document status</li>
 <li><strong>Output</strong>: Not applicable</li>
 </ul>
@@ -212,10 +212,10 @@ Transaction integration occurs only on a case-by-case basis. For each transactio
 
 ##### Tax accounting
 
-The accounting of Finance transactions has two parts: source document accounting and non-source document accounting. The same behavior applies to Tax engine tax accounting, which is integrated with the Finance implementation on both sides:
+The accounting of Finance transactions has two parts: source document accounting and nonsource document accounting. The same behavior applies to Tax engine tax accounting, which is integrated with the Finance implementation on both sides:
 
 - For source document transactions, such as a purchase order or free text invoice, the account information for tax is fetched when the tax document is created.
-- For non-source document transactions, such as a sales order or general journal, the account information is determined when tax is posted.
+- For nonsource document transactions, such as a sales order or general journal, the account information is determined when tax is posted.
 
 > [!NOTE]
 > If any additional source document transaction requires Tax engine support, you should create source document–related classes to extend AccountingJournalizationRule and AccountingDistributionRule for the specified business event and monetary amount.
@@ -426,7 +426,7 @@ The following table lists the taxable document fields that are mapped in Finance
 
 ### Add the Tax document button on a transaction
 
-One way to trigger tax calculation in the Tax engine is through a **Tax document** button that you add on the transaction. When this button is clicked, transactional data is sent to the Tax engine as a predefined taxable document object, and tax calculation is triggered in the Tax engine. The button is usually added to a transaction page, such as **VendEditInvoice**. Immediately after tax is calculated, the result appears in the tax document user interface (UI).
+One way to trigger tax calculation in the Tax engine is through a **Tax document** button that you add on the transaction. When this button is clicked, transactional data is sent to the Tax engine as a predefined taxable document object, and tax calculation is triggered in the Tax engine. The button is usually added to a transaction page, such as **VendEditInvoice**. Immediately after tax is calculated, the result appears in the tax document user interface.
 
 ![Tax document button on the Action Pane.](../general-ledger/media/gte-vend-taxdocument.png)
 
@@ -434,7 +434,7 @@ One way to trigger tax calculation in the Tax engine is through a **Tax document
 
 ### Integrate with transaction totals
 
-The **Totals** button is used to show a transaction's financial information, such as the tax amount, discount amount, and total amounts. The tax amount that appears on the total page will also be added to the invoiced amount of the journal.
+The **Totals** button displays a transaction's financial information, such as the tax amount, discount amount, and total amounts. The tax amount that appears on the total page will also be added to the invoiced amount of the journal.
 
 For an existing implementation of Finance, a set of **PurchTotals** classes is created to handle this functionality. Therefore, Tax engine-related code is inserted into the class's **calcTax** method to help guarantee that the expected tax total amount is initiated.
 
