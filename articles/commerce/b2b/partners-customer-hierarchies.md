@@ -42,7 +42,7 @@ To enable the automatic linking feature, follow these steps:
 
 > [!NOTE]
 > - For automatic linking to be successful, you must run the **1010 (Customers)** distribution schedule job before the customer signs in to the website.
-> - Once turned on, the automatic linking feature is enabled for all channels in your environment, which is important to be aware of if you are hosting different types of sites within your environment.
+> - Once turned on, the automatic linking feature is enabled for all channels in your environment. This functionality is important to be aware of if you are hosting different types of sites within your environment.
 
 For more information, see [Automatic linking on B2B sites](../dev-itpro/identity-record-linking.md#automatic-linking-on-b2b-sites).
 
