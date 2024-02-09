@@ -287,19 +287,19 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 The process of setting up the EM functionality for VAT returns with direct submission to Altinn has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities package include a link to ER configurations. Before you start to import the data entities package, import ER configurations into Finance.
 
 1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
-2. In the list of data package files, find **NO VAT return – Altinn**, and download it to your computer.
+2. In the list of data package files, find **NO VAT return Altinn vN** (where "N" is the version of the package), and download it to your computer. We recommend to download the latest available version of the package.
 3. In Finance, select the company that you will interoperate with Altinn from, and then go to **Workspaces** \> **Data management**.
 4. Before you import setup data from the data entities package, make sure that the data entities in your application are refreshed and synced. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
 5. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 6. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, set the **Group name** field.
 7. On the **Selected entities** FastTab, select **Add file**.
 8. In the **Source data format** field, select **Package**, and then select **Upload and add**. 
-9. Find and select the **NO VAT return – Altinn** setup file that you previously downloaded.
+9. Find and select the **NO VAT return Altinn vN** setup file that you previously downloaded.
 10. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab, and then select **Close**.
 11. Before the data entities are used for the first time to import the data from the package, sync the mapping of the source data and the target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. 
 12. Above the grid for the package, select **Generate mapping** to create a mapping from scratch. Then save the mapping.
 13. Repeat steps 11 and 12 for every data entity in the package before you start the import.
-14. You can now import data from the **NO VAT return – Altinn** setup file into the selected company. On the Action Pane, select **Import** to start the import.
+14. You can now import data from the **NO VAT return Altinn vN** setup file into the selected company. On the Action Pane, select **Import** to start the import.
 
     ![Importing a package of data entities that includes a predefined EM setup.](../media/emea-nor-vat-return-importem-setup.png)
 
