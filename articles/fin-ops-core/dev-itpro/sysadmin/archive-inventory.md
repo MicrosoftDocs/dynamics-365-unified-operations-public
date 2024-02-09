@@ -1,6 +1,6 @@
 ---
-title: Archive inventory transaction data in Dynamics 365 Supply chain (preview)
-description: This article explains how to archive inventory transaction data in Dynamics 365 Supply chain.
+title: Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
+description: This article explains how to archive inventory transaction data in Dynamics 365 Supply Chain Management.
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -9,7 +9,7 @@ ms.date: 2/06/2024
 ms.custom:
 
 ---
-# Archive inventory transaction data in Dynamics 365 Supply chain (preview)
+# Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
@@ -44,13 +44,13 @@ For more information about archiving inventory transactions, see [Archive invent
 
 To move InventTransArchive records to Dataverse managed data lake, follow these steps: 
 1. Go to **Workspaces** > **Archive with Dataverse long term retention** > **Inventory transactions**.
-2. Click **New long term retention job**. The wizard of long term retention job creation is available.
+2. Click **New long term retention job**. The **Long term retention job creation** wizard is available.
 3. Enter a job name and click **Next**.
 5. Select the period that has been processed by Inventory transactions archive and click **Next**.
 6. Enter the start date and time of long term retention job and click **Next**.
 7. Review the job details and create long term retention job. 
 
-You receive a message that the long term retention job is created. The archived records are purged on the scheduled date. 
+You'll receive a message that the long term retention job is created. The archived records are purged on the scheduled date. 
 
 ### View long term retention job status 
 
