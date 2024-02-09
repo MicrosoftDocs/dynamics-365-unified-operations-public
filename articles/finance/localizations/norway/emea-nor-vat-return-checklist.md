@@ -44,9 +44,9 @@ The following table shows the web application parameters that the **NO VAT retur
 
 | Parameter | Value for NO Altinn | Value for NO ID-Porten |
 |---|---|---|
-| Base URL | `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` | `https://oidc-ver2.difi.no/idporten-oidc-provider` |
-| Authorization URL path | Blank | **/authorize** |
-| Token URL path | Blank | **/token** |
+| Base URL | `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` | **Blank** |
+| Authorization URL path | Blank | `https://login.idporten.no/authorize` |
+| Token URL path | Blank | `https://idporten.no/token` |
 | Redirect URL | Blank | Set up the value according to the information in [Set up the internet address of ID-porten and Altinn web services](emea-nor-vat-return-setup.md#internet-address). |
 | Authorization format mapping | **Altinn VAT authorization format (NO)** | **Altinn VAT authorization format (NO)** |
 | Import token model mapping | **Altinn VAT import Altinn token format (NO)** | **Altinn VAT import ID-Porten token format (NO)** |
