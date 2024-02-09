@@ -2,12 +2,12 @@
 title: Exchange rate type for sales tax
 description: This article explains the logic for calculating sales tax on the special exchange rate.
 author: epodkolz
-ms.date: 07/10/2023
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: epodkolzina
 ms.search.validFrom: 
