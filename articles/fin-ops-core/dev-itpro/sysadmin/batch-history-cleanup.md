@@ -3,8 +3,8 @@
 
 title: Clean up the batch job history 
 description: This article provides information about how to clean up the batch job history.
-author: Peakerbl
-ms.date: 03/12/2019
+author: SaiChander-MS
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,12 +15,12 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: snagamalla
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
 
@@ -42,7 +42,7 @@ Two pages added to the **System administration** module make it easy to clean up
 
 ## Batch job history clean-up
 
-Follow these steps to quickly clean-up all history entries that are older than a specified number of days.
+Follow these steps to quickly clean up all history entries that are older than a specified number of days.
 
 1. On the **Periodic tasks in System administration** module, select **Batch job history clean-up**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
@@ -55,7 +55,7 @@ The custom batch job lets you apply other filtering, based on criteria such as s
 
 1. On the **Periodic tasks in System administration** module, select **Batch job history clean-up (custom)**.
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
-3. In the **Records to delete in a transaction** field, input a value ranging from **10** to **100** to indicate the number of records to be deleted within a single database transaction. The associated job iterates through and remove data in batches of this size until all records are deleted. When handling a large volume of data, particularly within the parameters and information log fields of related jobs and tasks, it is advisable to enter a smaller number. This approach facilitates deletion in smaller segments, hence preventing the obstruction of other jobs.
+3. In the **Records to delete in a transaction** field, input a value ranging from **10** to **100** to indicate the number of records to delete within a single database transaction. The associated job iterates through and removes data in batches of this size until all records are deleted. When the batch job processes a large volume of data, particularly within the parameters and information log fields of related jobs and tasks, it's advisable to enter a smaller number. This approach facilitates deletion in smaller segments and prevents the obstruction of other jobs.
 4. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
 5. Select **OK**.
 
