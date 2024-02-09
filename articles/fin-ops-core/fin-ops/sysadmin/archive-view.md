@@ -17,9 +17,9 @@ This article describes how to view archived data in Dataverse long term retentio
 
 ## Microsoft Fabric for viewing data 
 
-You can view the live(active) and archived (inactive long term retained) Dynamics 365 Finance application data using Microsoft Fabric. You'll require to link your Dataverse environment to Fabric.  
+You can view the live(active) and archived (inactive long term retained) Dynamics 365 Finance application data using Microsoft Fabric. You're required to link your Dataverse environment to Fabric.  
 
-If the link to Fabric set up isn't working, follow the steps [Link to Microsoft Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric).  
+If the link to Fabric setup isn't working, follow these steps: [Link to Microsoft Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric).  
 Confirm that Microsoft Fabric is enabled. If Microsoft Fabric isn't enabled, go to https://app.fabric.microsoft.com/. 
 
 >[!Note]
@@ -27,19 +27,19 @@ Confirm that Microsoft Fabric is enabled. If Microsoft Fabric isn't enabled, go 
 
 ### Viewing archived data in Dataverse managed data lake 
 
-To view the archived data in dataverse, follow these steps:
+To view the archived data in Dataverse, follow these steps:
 1. After the archival job completes, go to the Power Apps maker portal.
 2. Select **Azure synapse** > **Microsoft one Lake**.
 3. Select **View in Microsoft Fabric**. 
 
-The data in the Dataverse managed data lake is available in Dataverse tables prefixed by **mserp_**. The Dataverse table column msft_datastate, available in the Dataverse tables prefixed by “mserp”_ can be used to filter the data with the SQL WHERE clause: 
+The data in the Dataverse managed data lake is available in Dataverse tables prefixed by **mserp_**. The Dataverse table column msft_datastate, available in the Dataverse tables prefixed by **mserp**_ can be used to filter the data with the SQL WHERE clause: 
  - Inactive(archived) application data: WHERE msft_datastate=1
  - Active (live) application data: WHERE msft_datastate=0 
 
 
 ### Archived data in Dataverse long term retention limitations
 
-You can access archived data using a model driven Power App that uses Dataverse Advanced Find or build canvas Power apps. 
+You can access archived data using a model driven Power App that uses Dataverse Advanced Find or build canvas Power Apps. 
 To view limitations with these options, see [Viewing archive data limitations](/power-apps/maker/data-platform/data-retention-view#limitations-for-retrieval-of-retained-data).  
 
  
