@@ -2,12 +2,12 @@
 title: Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance
 description: This article explains how to sync tax setup master data from the Tax Calculation feature to Microsoft Dynamics 365 Finance.
 author: EricWangChen
-ms.date: 01/05/2022
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application user
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
