@@ -133,7 +133,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | January 29 to February 1, 2024 | February 10 to February 11, 2024 |
 | Station 6 | January 30 to February 2, 2024 | February 10 to February 11, 2024 |
 
-### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.37 Release-3 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-3 train schedule
 
 **App version: 10.0.1725.146**
 
@@ -147,6 +147,21 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | February 19 to February 22, 2024 | March 2 to March 3, 2024 |
 | Station 5 | February 26 to February 29, 2024 | March 9 to March 10, 2024 |
 | Station 6 | February 27 to March 1, 2024 | March 9 to March 10, 2024 |
+
+### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.38 Release-1 train schedule
+
+**App version: 10.0.1777.115**
+
+**Platform version: 7.0.7120.116**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | February 12 to February 15, 2024 | NA |
+| Station 2 | February 19 to February 22, 2024 | March 2 to March 3, 2024 |
+| Station 3 | February 20 to February 23, 2024 | March 2 to March 3, 2024 |
+| Station 4 | February 26 to February 29, 2024 | March 9 to March 10, 2024 |
+| Station 5 | March 4 to March 7, 2024 | March 16 to March 17, 2024 |
+| Station 6 | March 5 to March 8, 2024 | March 16 to March 17, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
