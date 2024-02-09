@@ -2,12 +2,12 @@
 title: Get started with Tax Calculation
 description: This article explains how to set up Tax Calculation.
 author: EricWangChen
-ms.date: 10/18/2022
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application user
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
@@ -28,7 +28,7 @@ The setup consists of three main steps.
 > [!NOTE]
 > For new environments with 10.0.39 and higher version, installing of the TCS add-in in LCS won't be required.
 > 
-> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](merge-rcs-to-gsw.md).
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
 >
 > If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
 
@@ -249,7 +249,7 @@ To access the page for tax feature configuration, click the **Tax Calculation** 
 Starting from the 10.0.39 version, publishing of Tax calculation features is not available in RCS any longer. Instead, you can configure features in the **Globalization Studio** workspace in Dynamics 365 Finance and Operations apps.
 If your Finance and Operations apps version is lower than 10.0.39, you can bring back the publishing in RCS capability by disabling the **Prevent Tax calculation feature publishing in Regulatory Configuration Service** feature in the **Feature management** workspace in **RCS**. 
 
-> [!IMPORTANT].
+> [!IMPORTANT]
 > Tax calculation features that were published in RCS won’t be available in Finance and Operations apps that are updated to 10.0.39 or a later version.
 
 ## Set up Tax Calculation in Dynamics 365 Finance
