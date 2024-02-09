@@ -1,8 +1,8 @@
 ---
-title: Site builder authoring page overview
+title: Site builder authoring page
 description: This article provides an overview of the Microsoft Dynamics 365 Commerce site builder authoring page.
 author: bicyclingfool
-ms.date: 02/02/2024
+ms.date: 02/09/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ ms.assetid:
 
 ---
 
-# Site builder authoring page overview
+# Site builder authoring page
 
 [!include [banner](includes/banner.md)]
 
@@ -54,9 +54,9 @@ You can clear notifications from the notification menu by selecting **Remove** a
 
 The **Help** button is another button in the upper-right corner of the authoring page. It looks like a question mark. When you select this button, a menu of the following predefined options is opened:
 
-- **Site development help** – If you select this option, the documentation for creating a new website is opened on a new browser tab.
-- **Feedback and support** – Select this option to open a Microsoft Yammer channel where you can leave feedback about site builder or request support.
-- **Privacy and cookies** – If you select this option, the Microsoft privacy statement is opened on a new browser tab.
+- **Documentation** – If you select this option, the documentation for creating a new website is opened on a new browser tab.
+- **Community** – Select this option to open the Commerce forum where you get help from experts and peers, leave feedback about site builder, or request support.
+- **Privacy Statement** – If you select this option, the Microsoft Privacy Statement is opened on a new browser tab.
 - **About** – Select this option to open a message box that contains information about site builder and the version that you're currently using.
 
 ## Sign in to and out of site builder
@@ -83,17 +83,24 @@ Dynamics 365 Commerce supports the creation and management of multiple websites,
 
 To create a new website, follow these steps.
 
-1. On the command bar, select **New Website**. A dialog box appears.
-2. Enter the following required information for the new website:
-
+1. On the command bar, select **New site**. The **Create site** dialog appears.
+1. On the **Site details** page, enter the following required information, and then select **Next**.
     - **Site name** – Enter the name of the website. This name isn't shown to website customers. Instead, it's used in the site list and other places in site builder.
     - **Site administers security group** – Enter the full name of the Microsoft Azure Active Directory (Azure AD) security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
-    - **Default channel** – Enter the default merchandising channel that should be associated with the website. The default channel determines the products that can be sold through the website.
-    - **Default language** – After you specify the default channel, select the default language for the channel. The default channel defines the language that products are shown in if the customer doesn't specify a preferred language.
-    - **Default market** – Enter the default market for the website. The default market defines the market that is shown if the customer doesn't specify a preferred market.
-    - **Domain** – Select the web domain that should be associated with the website. This domain is the domain that the website's customers go to in their browser.
-
-1. Select **OK**. The new website is created.
+    - **Theme pack** - Select a them pack for your site, for example **Adventure works**.
+    - **Site type** - Select **Business to consumer** or **Business to business** .
+1. On the **Channel selection** page, select **Add a single channel** or **Add multiple channels**, and then select **Next**.
+1. On the **Channel details** page, select the domain and authentication profile to associate with each channel.
+1. For your default channel, under **Channel defaults**, select **Set as default channel**. 
+1. Optionally, set the **Automatic geo redirection** option to **On** to enable geo redirection by default. You can override this setting at the channel level later, as needed.
+1. Select **Next**
+1. On the **Locales** page, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries or regions is assigned to each locale. Optionally select **Edit** to add or remove locales, countries, or regions from each channel as needed. Then select **Add locales**.
+1. Select **Next**.
+1. On the **URL paths** page, you can view the default URLs for each channel. You can override the URL paths, domain, or authentication profile for each channel as needed. In addition, in the Set default application channel field, you can select which channel is the default application channel when site pages are authored in site builder.
+1. Select **Next**.
+1. On the **Locale defaults** page, select the default locale for each channel, and then select **Next**.
+1. On the **Review and finish** page, review the configuration, and make any changes that are required.
+1. Select **Save and publish**. The new website is created.   
 
 > [!NOTE]
 > Creation of a new website can take up to 60 seconds. After the process is completed, a notification appears in the notification area. Additionally, the website appears in the site list and has the site name that you entered.
