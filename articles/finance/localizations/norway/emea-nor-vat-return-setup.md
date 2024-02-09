@@ -2,12 +2,12 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 08/09/2022
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Norway
 # ms.search.industry: 
 ms.author: egolub
