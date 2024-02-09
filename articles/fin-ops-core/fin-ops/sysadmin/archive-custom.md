@@ -37,7 +37,7 @@ Dataverse interacts with Dynamics 365 Finance. These virtual entities are used t
 
 ### Step 1: Add fields to history table via extension 
 The archive framework requires all live table columns be mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. 
-For more information about how to add fields to history tables through extension in Dynamics 365 Finance, see [Add fields to tables through extension](/dev-itpro/extensibility/add-field-extension). 
+For more information about how to add fields to history tables through extension in Dynamics 365 Finance, see [Add fields to tables through extension](/dev-itpro/extensibility/add-field-extension.md). 
 
 ### Step 2: Add fields to business intelligence entities via extension 
 Additional fields added to live tables are required to be added to corresponding BI entities. 
