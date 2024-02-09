@@ -472,24 +472,19 @@ When you [register an integration point in the ID-porten web portal](emea-nor-va
 
 Internet addresses (URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website. 
 
-Follow these steps to set up a URL that is used in ID-porten.
+Follow these steps to set up a URL that is used in **ID-porten**.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
-2. In the **Base URL** field, enter one of the following internet addresses:
-
-    - `https://oidc-ver2.difi.no/idporten-oidc-provider` to interoperate with the *sandbox* endpoint of ID-porten
-    - `https://oidc.difi.no/idporten-oidc-provider` to interoperate with the *production* endpoint of ID-porten
+2. **Base URL** field is blank.
 
     > [!IMPORTANT]
-    > For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+    > For actual production internet addresses, go to <https://idporten.no/.well-known/openid-configuration>.
 
-3. In the **Authorization URL path** field, enter **/authorize**.
-4. In the **Token URL path** field, enter **/token**.
+3. In the **Authorization URL path** field, enter `https://login.idporten.no/authorize`.
+4. In the **Token URL path** field, enter `https://idporten.no/token`.
 5. Copy the full URL of the current page from your browser's Address bar, and paste it into the **Redirect URL** field.
 
-    ![Copying the full URL of the current page from the browser's Address bar and pasting into the Redirect URL field.](../media/emea-nor-vat-return-redirect-url.png)
-
-Follow these steps to set up an internet address that is used by Altinn web services.
+Follow these steps to set up an internet address that is used by **Altinn** web services.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
 2. In the **Base URL** field, enter one of the following internet addresses:
