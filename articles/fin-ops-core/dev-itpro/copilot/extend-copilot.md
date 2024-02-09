@@ -1,6 +1,6 @@
 ---
-title: Extending Copilot in finance and operations apps
-description: This article provide guidance on Extending Copilot capabilities in finance and operations apps.
+title: Extend Copilot in finance and operations apps
+description: This article provide guidance about how to extend Copilot capabilities in finance and operations apps.
 author: jaredha
 ms.author: jaredha
 ms.reviewer: johnmichalak
@@ -14,19 +14,17 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Extending Copilot capabilities in finance and operations apps
+# Extend Copilot capabilities in finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
-Copilot in finance and operations apps provides AI-powered assistance that helps application users with a sidecar chat experience with natural language guidance and actions. Copilot builds on contextual experiences that enrich the application. Copilot capabilities can include skills like:
+Copilot in finance and operations apps provides AI-powered assistance that helps application users through a sidecar chat experience that includes natural language guidance and actions. Copilot builds on contextual experiences that enrich the application. Here are some examples of the skills that Copilot capabilities can include:
 
-- Guidance on app features and functionality, such as [Generative help and guidance with Copilot](enable-copliot-generative-help.md).
-- Answer questions about your data
-- Recommend and perform client actions
-- Automate operations
+- Provide guidance about app features and functionality, such as [generative help and guidance with Copilot](enable-copliot-generative-help.md).
+- Answer questions about your data.
+- Recommend and perform client actions.
+- Automate operations.
 
-There's massive potential for these Copilot capabilities in finance and operations apps as Microsoft engineering teams continue to build on Copilot. Copilot becomes more useful the more questions and prompts it knows how to answer and perform. A key to accelerating the growth in these capabilities is providing extensibility tools for users to extend and customize the Copilot experience. Each capability added becomes something new that Copilot knows how to do, making it a richer experience and better guide for users in finance and operations apps.
+There's massive potential for these Copilot capabilities in finance and operations apps as Microsoft engineering teams continue to build on Copilot. The more questions Copilot knows how to answer and the more prompts it knows how to perform, the more useful it becomes. A key to accelerating the growth of these capabilities is to provide extensibility tools that users can use to extend and customize the Copilot experience. Each capability that's added becomes something new that Copilot knows how to do. Therefore, it becomes a richer experience and a better guide for users in finance and operations apps.
 
 Use the following topics and tutorials to understand the architecture and options for extending the sidecar chat Copilot in finance and operations apps.
-
-
