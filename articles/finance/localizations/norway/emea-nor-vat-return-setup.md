@@ -1,7 +1,7 @@
 ---
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
@@ -10,7 +10,7 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
 ---
@@ -480,8 +480,8 @@ Follow these steps to set up a URL that is used in **ID-porten**.
     > [!IMPORTANT]
     > For actual production internet addresses, go to <https://idporten.no/.well-known/openid-configuration>.
 
-3. In the **Authorization URL path** field, enter `https://login.idporten.no/authorize`.
-4. In the **Token URL path** field, enter `https://idporten.no/token`.
+3. In the **Authorization URL path** field, enter `https://login.idporten.no/authorize` for *production* integration or `https://login.test.idporten.no/authorize` for *sandbox* integration.
+4. In the **Token URL path** field, enter `https://idporten.no/token` for *production* integration or `https://test.idporten.no/token` for *sandbox* integration.
 5. Copy the full URL of the current page from your browser's Address bar, and paste it into the **Redirect URL** field.
 
 Follow these steps to set up an internet address that is used by **Altinn** web services.
