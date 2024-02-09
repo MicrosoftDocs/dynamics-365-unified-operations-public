@@ -4,7 +4,7 @@
 title: Tax calculation data model
 description: This article provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
 author: kailiang
-ms.date: 10/15/2021
+ms.date: 02/09/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -37,7 +37,7 @@ The *tax data model* is made up of fields that are required for tax calculations
 Follow these steps to view the tax calculation data model.
 
 > [!NOTE]
-> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](./workspace/merge-rcs-to-gsw.md).
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
 >
 > If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
 
@@ -50,13 +50,13 @@ Follow these steps to view the tax calculation data model.
 3. On the **Versions** FastTab, select a version.
 4. Select **Designer**.
 
-    [![Designer button.](../media/tax-calculation-model-mapping-1.png)](/media/tax-calculation-model-mapping-1.png)
+    [![Designer button.](../media/tax-calculation-model-mapping-1.png)](../media/tax-calculation-model-mapping-1.png)
 
 5. Expand the **Tax Calculation** node.
 6. Expand the **Header** node to view the header data models.
 7. Expand the **Lines** node to view the line data models.
 
-    [![Data models.](../media/tax-calculation-model-mapping-2.png)](/media/tax-calculation-model-mapping-2.png)
+    [![Data models.](../media/tax-calculation-model-mapping-2.png)](../media/tax-calculation-model-mapping-2.png)
 
 You can also view the tax calculation data model and the available columns in the applicability rules table.
 
@@ -69,7 +69,7 @@ You can also view the tax calculation data model and the available columns in th
 3. On the **General** tab, select the configuration version, based on the version of the tax calculation data model. For example, select **40.46.212**.
 4. On the **Tax group applicability** tab, select **Manage columns**.
 
-    [![Manage columns.](../media/tax-calculation-model-mapping-3.png)](/media/tax-calculation-model-mapping-3.png)
+    [![Manage columns.](../media/tax-calculation-model-mapping-3.png)](../media/tax-calculation-model-mapping-3.png)
 
 The tax calculation data model is integrated with finance and operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
 
