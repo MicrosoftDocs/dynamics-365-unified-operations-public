@@ -4,7 +4,7 @@
 title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 description: The article provides an overview of cleanup routines in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dvliegen
-ms.date: 08/01/2023
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,7 +43,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | System administration \> Periodic tasks \> Notification clean up | <p>This cleanup routine is used to periodically delete records from the EventInbox and EventInboxData tables.</p><p>**Recommendation:** If you don't use alert functionality, turn off the alert from the batch job.</p> |
 | System administration \> Periodic tasks \> Batch job history clean-up | This regular version of the [batch job history cleanup](batch-history-cleanup.md) routine lets you quickly clean all history entries that are older than a specified number of days. Any entry that was created earlier will be deleted from the BatchJobHistory table, and also from linked tables that have related records (BatchHistory and BatchConstraintsHistory). This version has improved performance optimization, because it doesn't have to run any filtering. |
 | System administration \> Periodic tasks \> Batch job history clean-up (custom) | This [custom batch job history cleanup](batch-history-cleanup.md) routine should be used only when specific entries must be deleted. You can clean up selected types of batch job history records, based on criteria such as status, job description, company, or user. You can add other criteria by using the **Filter** button. |
-| System administration \> Periodic tasks \> Batch job clean-up | This [Clean up the batch job table](batch-job-cleanup.md) should be used regularly to clean up the batch job table. In **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs. This cleanup should be done outside business hours. |
+| System administration \> Periodic tasks \> Batch job clean-up | [Clean up the batch job table](batch-job-cleanup.md) should be used regularly to clean up the batch job table. In **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs. This cleanup should be done outside business hours. |
 | System administration \> Inquiries \> Database \> Database Log \> Clean up log | <p>This cleanup routine lets you delete database logs as you require. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created.</p><p>**Note:** Records that have been electronically signed can't be deleted from logs.</p> |
 
 ## Data management
