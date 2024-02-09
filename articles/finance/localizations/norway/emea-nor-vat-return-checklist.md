@@ -2,12 +2,12 @@
 title: Checklist for Electronic messages setup for VAT returns with direct submission to Altinn
 description: This article contains a checklist for setting up Electronic messages functionality for VAT returns of Norway.
 author: AdamTrukawka
-ms.date: 12/13/2021
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
