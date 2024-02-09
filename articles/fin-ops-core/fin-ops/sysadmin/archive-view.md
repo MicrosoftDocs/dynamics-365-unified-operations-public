@@ -19,7 +19,7 @@ This article describes how to view archived data in Dataverse long term retentio
 
 You can view the live(active) and archived (inactive long term retained) Dynamics 365 Finance application data using Microsoft Fabric. You'll require to link your Dataverse environment to Fabric.  
 
-If the link to Fabric set up isn't working, follow the steps [Link to Microsoft Fabric](../power-apps/maker/data-platform/azure-synapse-link-view-in-fabric.md#link-to-microsoft-fabric).  
+If the link to Fabric set up isn't working, follow the steps [Link to Microsoft Fabric](../../power-apps/maker/data-platform/azure-synapse-link-view-in-fabric.md#link-to-microsoft-fabric).  
 Confirm that Microsoft Fabric is enabled. If Microsoft Fabric isn't enabled, go to https://app.fabric.microsoft.com/. 
 
 >[!Note]
@@ -40,7 +40,7 @@ The data in the Dataverse managed data lake is available in Dataverse tables pre
 ### Archived data in Dataverse long term retention limitations
 
 You can access archived data using a model driven Power App that uses Dataverse Advanced Find or build canvas Power apps. 
-To view limitations with these options, see [Viewing archive data limitations](../power-apps/maker/data-platform/data-retention-view#.mdlimitations-for-retrieval-of-retained-data).  
+To view limitations with these options, see [Viewing archive data limitations](../../power-apps/maker/data-platform/data-retention-view#.mdlimitations-for-retrieval-of-retained-data).  
 
  
 
