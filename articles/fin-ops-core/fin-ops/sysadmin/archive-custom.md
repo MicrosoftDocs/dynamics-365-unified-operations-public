@@ -1,6 +1,6 @@
 ---
 title: Archive customization (preview)
-description: This article describes how the archive feature supports table customizations 
+description: This article describes how the archive feature in Dynamics 365 Finance supports table customizations. 
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -26,18 +26,18 @@ All columns in a live table must be present in its mirrored history table.
 
  - Columns exclusion rule: SysRowVersion and SysDataState columns are added by the platform and are managed via table metadata properties. These columns aren't required to be added to the history table. 
 
-Beginning in Dynamics 365 finance and operations version 10.0.39 archive General Ledger is in the standard product. Development in other functional areas is in progress to support archiving of other transaction data such as Sales Order or Inventory transactions. 
+Beginning in Dynamics 365 Finance version 10.0.39 archiving the General Ledger is available. 
 
 ### Business entity 
 
-Dataverse interacts with Dynamics 365 finance and operations using business entities. These virtual entities are used to retrieve data from the Dynamics 365 finance and operations database and save it to their corresponding Dataverse managed data lake tables.  
+Dataverse interacts with Dynamics 365 Finance. These virtual entities are used to retrieve data from the Dynamics 365 Finance database and save it to their corresponding Dataverse managed data lake tables.  
 
 >[!Important]
 > Don’t add relationships between the entities. 
 
 ### Step 1: Add fields to history table via extension 
 The archive framework requires all live table columns be mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. 
-For more information about how to add fields to history tables through extension in Dynamics 365 finance and operations, see [Add fields to tables through extension](/dev-itpro/extensibility/add-field-extension). 
+For more information about how to add fields to history tables through extension in Dynamics 365 Finance, see [Add fields to tables through extension](/dev-itpro/extensibility/add-field-extension). 
 
 ### Step 2: Add fields to business intelligence entities via extension 
 Additional fields added to live tables are required to be added to corresponding BI entities. 
@@ -53,7 +53,7 @@ To create a history table corresponding to the live table in the archive scope, 
 2. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on RecId column is sufficient. Create additional index to improve query performance if needed and to maintain foreign key relationships.
 3. Extend ArchiveAutomationJobRequestCreator class for a scenario to add the new table to archive table graph.
 
-#### Dynamics 365 finance and operations table names in live, history and Dataverse managed data lake   
+#### Dynamics 365 Finance table names in live, history and Dataverse managed data lake   
 
 |Scenario|Live table     |  History table   |  Bi Entity     | Dataverse managed data lake table    |
 |---|---|---|---|---|
