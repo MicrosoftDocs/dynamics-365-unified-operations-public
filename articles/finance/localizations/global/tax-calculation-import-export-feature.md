@@ -4,7 +4,7 @@
 title: Import and export tax calculations
 description: This article provides information about the import and export functionality of the tax calculation feature.
 author: Kai-Cloud
-ms.date: 10/17/2022
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.23
 This article provides information about the import and export functionality of the tax calculation feature. This functionality helps ensure a flexible and efficient configuration experience.
 
 > [!NOTE]
-> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](./workspace/merge-rcs-to-gsw.md).
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
 >
 > If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
 
@@ -97,7 +97,7 @@ You can also directly import the zip file that includes all three CSV files. In 
 4. On the **Tax group applicability** tab, select the rows in the **Set up tax group applicability** grid.
 5. Select the **Open in Microsoft Office** button, and then select **Tax service dynamic applicability matrix**.
 
-    [![Exporting applicability rules to Microsoft Excel on the Tax calculation feature page.](../media/tax-cal-import-export-1.png)](/media/tax-cal-import-export-1.png)
+    [![Exporting applicability rules to Microsoft Excel on the Tax calculation feature page.](../media/tax-cal-import-export-1.png)](../media/tax-cal-import-export-1.png)
 
 8. Select **Download** to export the selected rows to a Microsoft Excel worksheet.
 
