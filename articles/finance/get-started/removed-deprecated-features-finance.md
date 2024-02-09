@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: twheeloc
-ms.date: 01/17/2024
+ms.date: 01/30/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,6 +52,20 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By February 1, 2025, we plan to no longer support the Sales tax report for Estonia (Estonian report layout). New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+
+## Features removed or deprecated in the Finance 10.0.38 release
+
+### Dataverse solution for Electronic invoicing
+
+Dataverse solution for Electronic invoicing
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Solution no longer required in the new version of globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: From Finance 10.0.38 release we plan to no longer support **Dataverse solution for Electronic invoicing**. This plugin is no longer required by the new version of globalization feature for Electronic invoicing in Indonesia. |
 
 ## Features removed or deprecated in the Finance 10.0.36 release
 
