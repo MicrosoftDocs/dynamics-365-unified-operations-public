@@ -1,7 +1,7 @@
 ---
 title: Register an integration point in the ID-porten web portal
 description: This article explains how to register an integration point in the ID-porten web portal in Norway.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 02/08/2024
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Norway
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2022-11-15
 ---
 
@@ -17,7 +17,7 @@ ms.search.validFrom: 2022-11-15
 
 [!include [banner](../../includes/banner.md)]
 
-Companies that are registered for value-added tax (VAT) in the territory of Norway have their accounts in the [ID-porten](https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94) web portal. To enable the direct submission of VAT returns to Altinn, you must create an [integration point](https://docs.digdir.no/oidc_index.html) in the company's account in ID-porten. For more information, see [ID-Porten & Authentication](https://skatteetaten.github.io/mva-meldingen/english/idportenauthentication/).
+Companies that are registered for value-added tax (VAT) in the territory of Norway have their accounts in the [ID-porten](https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94) web portal. To enable the direct submission of VAT returns to Altinn, you must create an integration point in the company's account in ID-porten. For more information, see [ID-Porten & Authentication](https://skatteetaten.github.io/mva-meldingen/english/idportenauthentication/).
 
 We recommend that you set the following parameters for your integration point for direct submission of VAT returns to Altinn from Microsoft Dynamics 365 Finance.
 
