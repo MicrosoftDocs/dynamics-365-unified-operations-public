@@ -4,7 +4,7 @@
 title: Set up tax groups
 description: This article explains how to set up tax groups in the Tax Calculation service.
 author: wangchen
-ms.date: 11/30/2021
+ms.date: 02/09/2024
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: TaxTable, TaxData   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -38,7 +38,7 @@ However, tax groups in the Tax Calculation feature differ from sales tax groups 
 > The setup of tax groups in the Tax Calculation service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. When you enable the Tax Calculation service in Finance, tax groups are automatically synced for the selected legal entity.
 
 > [!NOTE]
-> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](./workspace/merge-rcs-to-gsw.md).
+> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](workspace/merge-rcs-to-gsw.md).
 >
 > If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
 
