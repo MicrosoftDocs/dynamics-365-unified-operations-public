@@ -53,6 +53,21 @@ Follow these steps to set up dual-write from Lifecycle Services **Environment De
 
 8. When the linking is complete, a hyperlink is displayed. Use the link to sign in to the dual-write administration area in the finance and operations environment. From there, you can set up entity mappings.
 
+## Configure app user for one-box environments
+Certificates in your Microsoft Entra tenant are no longer installed in new one-box development environments by default. To enable dual-write on a one-box environment you must grant the application user configured for the environment with a role and permissions for dual-write. To configure these permissions:
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select your environment where you are configuring dual-write, and select **Settings** on the environment details page.
+3. On the **Users + permissions** list, select **Application users**.
+4. Select the **New app user** action.
+5. On the **Create a new app user** pane:
+   - Select the **Add an app** action, and select the new application previously registered for your environment following the [Set up a new application and certification registration](../../dev-tools/secure-developer-vm.md#set-up-a-new-application-and-certificate-registration).
+   - In the **Business unit** drop-down list, select the root business unit for the environment.
+   - In the **Security roles** text box, add the **System Administrator** role.
+   - Select **Create**.
+
+> [!NOTE] If permissions for the application user are not configured for your one-box environment, you may receive the following error message during dual-write sync operations:
+> "0x80072560 response message: The user is not a member of the organization".
+
 ## Troubleshooting
 
 ### Linking mismatch
