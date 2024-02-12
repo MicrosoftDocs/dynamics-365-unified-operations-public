@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery.md",
+      "redirect_url": "/power-platform/admin/business-continuity-disaster-recovery",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
+      "redirect_url": "dynamics365/finance/get-started/removed-deprecated-features-finance#Dataverse-solution-for-Electronic-invoicing",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/norway/emea-pol-vat-declaration.md",
       "redirect_url": "dynamics365/fin-ops-core/localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay",
       "redirect_document_id": "false"
@@ -8,11 +18,6 @@
     {
       "source_path": "articles/finance/localizations/ltm-set-up-legal-entity-tax-uruguay.md",
       "redirect_url": "dynamics365/fin-ops-core/localizations/poland/emea-pol-vat-declaration",
-      "redirect_document_id": "false"
-    },    
-    {
-      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/requirements-and-prerequisites.md",
-      "redirect_url": "dynamics365/fin-ops-core/fin-ops/",
       "redirect_document_id": "false"
     },
     {
@@ -1727,11 +1732,6 @@
     {
       "source_path": "articles/finance/localizations/e-invoicing-install-add-in-microservices-lcs.md",
       "redirect_url": "global/e-invoicing-install-add-in-microservices-lcs",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
-      "redirect_url": "dev-itpro/e-invoicing-power-platform-plug-in",
       "redirect_document_id": "false"
     },
     {

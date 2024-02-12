@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.39 (April)
+          href: get-started/whats-new-changed-10-0-39.md  
         - name: Finance 10.0.38 (February)
           href: get-started/whats-new-changed-10-0-38.md   
         - name: Finance 10.0.37 (November)
           href: get-started/whats-new-changed-10-0-37.md
-        - name: Finance 10.0.36 (October)
-          href: get-started/whats-new-changed-10-0-36.md  
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -236,6 +236,8 @@
           href: accounts-payable/invoice-capture-workspace.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
+        - name: Invoice capture advanced settings
+          href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture received files
           href: accounts-payable/invoice-capture-rec-files.md
         - name: Invoice capture FAQ  
@@ -267,7 +269,9 @@
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
         - name: Vendor invoice entry workspace
-          href: accounts-payable/vendor-invoices-workspace.md  
+          href: accounts-payable/vendor-invoices-workspace.md
+        - name: Recurring vendor invoices
+          href: accounts-payable/recurring-invoice.md
       - name: Accounts payable reports   
         items:
         - name: Vendor aging report
@@ -398,6 +402,8 @@
         href: accounts-receivable/credit-card-refactor.md
       - name: Create a free text invoice
         href: accounts-receivable/create-free-text-invoice-new.md
+      - name: Use financial tags to display free text invoice descriptions
+        href: accounts-receivable/free-text-inv-desc.md
       - name: Accounting distributions and subledger journal entries for free text invoices
         href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
       - name: Create a free text invoice template
@@ -588,6 +594,8 @@
           href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
+        - name: Collections process automation FAQ
+          href: accounts-receivable/coll-process-auto-FAQ.md
         - name: Credit statistics FAQ
           href: accounts-receivable/credit-statistics-faq.md
         - name: Credit hold FAQ
@@ -642,6 +650,8 @@
         href: budgeting/budget-planning-integration-other-modules.md
     - name: Cash and bank management
       items:
+      - name: Petty cash
+        href: cash-bank-management/Petty-cash.md
       - name: Cash and bank management home page
         href: cash-bank-management/cash-bank-management.md
       - name: Cash flow forecasting
@@ -712,16 +722,26 @@
         href: cash-bank-management/reconcile-bank-account.md        
       - name: Advanced bank reconciliation
         items:
+        - name: Advanced bank reconciliation overview
+          href: cash-bank-management/advanced-bank-reconciliation-overview.md 
         - name: Advanced bank reconciliation setup process
           href: cash-bank-management/configure-advanced-bank-reconciliation.md
-        - name: Set up advanced bank reconciliation import process using Electronic reporting
-          href: accounts-payable/import-bai2-er.md
         - name: Set up bank reconciliation matching rules
           href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
+        - name: Set up advanced bank reconciliation import process using Electronic reporting
+          href: accounts-payable/import-bai2-er.md
         - name: Reconcile bank statements by using advanced bank reconciliation
           href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-        - name: Advanced bank reconciliation overview
-          href: cash-bank-management/advanced-bank-reconciliation-overview.md
+        - name: Clear reversal bank statements
+          href: cash-bank-management/clear-reverse-bank-stmt-trx.md
+        - name: Clear reversal company transactions
+          href: cash-bank-management/clear-reverse-comp-trans.md
+        - name: Generate vouchers in the reconcilation worksheet
+          href: cash-bank-management/vouchers-adv-bank-rec.md
+        - name: Apply cash in the reconcilation worksheet
+          href: cash-bank-management/apply-cash-adv-bank-rec.md
+        - name: Clear bridging payments using advanced bank reconciliation
+          href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
         - name: Update the bank journal composite entity
           href: dev-itpro/upgrade-bank-journal-composite-entity.md
     - name: Cost accounting
@@ -1594,8 +1614,6 @@
                 href: localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/finance
               - name: Set up Regulatory configuration services (RCS)
                 href: localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/finance
-              - name: Power platform plug-in admin reference
-                href: localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/finance   
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
@@ -2358,6 +2376,8 @@
           items:
           - name: Denmark overview
             href: localizations/denmark/denmark.md
+          - name: Dynamics 365 Finance - a digital standard bookkeeping system registered in Denmark 
+            href: localizations/denmark/emea-dnk-registration.md
           - name: Assign a payment slip format to a customer account
             href: localizations/denmark/assign-payment-slip-format-customer-account.md
           - name: Create and post a customer invoice for a public sector customer

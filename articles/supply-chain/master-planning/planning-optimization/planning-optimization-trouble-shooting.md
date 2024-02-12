@@ -96,7 +96,9 @@ Follow these steps to review your setup and remove time fences and other options
 
 ### Reduce scheduling time
 
-Reduce the scheduling time by following the instructions in [Improve scheduling engine performance](../scheduling-engine-performance.md).
+It's always beneficial to review your scheduling configuration to optimize run times. To check whether scheduling is the main reason that Planning Optimization is timing out, try disabling finite capacity in the plan settings and then rerun planning to see if the issue is solved.
+
+For more information about how to reduce scheduling times, see [Improve scheduling engine performance](../scheduling-engine-performance.md).
 
 ### Plan only for the products you need
 

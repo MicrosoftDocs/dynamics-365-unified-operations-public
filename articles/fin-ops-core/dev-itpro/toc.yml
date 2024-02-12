@@ -17,6 +17,8 @@ items:
           href: ../fin-ops/get-started/whats-new-home-page.md
         - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
           href: get-started/whats-new-platform-updates-vcruntime.md
+        - name: Platform updates for version 10.0.39 (March 2024)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-39.md
         - name: Platform updates for version 10.0.38 (February 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-38.md
         - name: Platform updates for version 10.0.37 (November 2023)
@@ -414,7 +416,7 @@ items:
           - name: Available geographies
             href: deployment/deployment-options-geo.md
           - name: US Government Community Cloud (GCC)
-            href: ../fin-ops/deployment/us-gcc-deployment.md
+            href: /power-platform/admin/business-continuity-disaster-recovery.md?context=/dynamics365/context/finance
           - name: China Operated by 21Vianet
             href: ../fin-ops/deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
@@ -491,8 +493,6 @@ items:
             href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
-          - name: Configure the Warehousing app for on-premises deployments
-            href: deployment/warehousing-for-on-premise-deployments.md
           - name: Configure your environment with a dedicated Data Management Framework service
             href: deployment/onprem-DMFService.md
           - name: Enable RSAT in on-premises environments
@@ -533,6 +533,16 @@ items:
             href: deployment/onprem-localagent-options.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
+        - name: Warehouse Mobile Application
+          items:
+          - name: Configure the Warehousing app for on-premises deployments
+            href: deployment/warehousing-for-on-premise-deployments.md
+          - name: User-based authentication
+            href: deployment/warehousing-onprem-userauth.md
+          - name: User-based authentication FAQ
+            href: ../../supply-chain/warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Service-based authentication
+            href: deployment/warehousing-onprem-serviceauth.md
         - name: Troubleshooting
           items:
           - name: Troubleshoot on-premises deployments
@@ -1734,7 +1744,7 @@ items:
       items:
       - name: System administration home page
         href: sysadmin/system-administration-home-page.md
-      - name: Add links to your legal terms and privacy statement
+      - name: Add links to your legal terms and privacy statement      
         href: sysadmin/legal-terms-privacy-statement.md
       - name: License codes and configuration keys report
         href: sysadmin/license-codes-configuration-keys-report.md
@@ -1850,6 +1860,8 @@ items:
         href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
       - name: Cleanup routines
         href: sysadmin/cleanuproutines.md
+      - name: Invalid users
+        href: ../fin-ops/sysadmin/invalid-users.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources
@@ -2204,16 +2216,28 @@ items:
         href: ../fin-ops/copilot/copliot-generative-help.md
       - name: Enable Copilot capabilities in finance and operations apps
         href: copilot/enable-copilot.md
+      - name: Extending Copilot capabilities in finance and operations apps
+        items:
+        - name: Overview
+          href: copilot/extend-copilot.md
+        - name: Architecture of Copilot in finance and operations
+          href: copilot/copilot-architecture.md
+        - name: Using application context with Copilot
+          href: copilot/copilot-application-context.md
+        - name: Tutorials
+          items:
+          - name: Extending Copilot capabilities with low-code plugins
+            href: copilot/tutorial-create-low-code-plugins.md
       - name: Enable generative help and guidance with Copilot (preview)
         href: copilot/enable-copliot-generative-help.md
-  - name: Responsible AI
-    items:
-    - name: Overview
-      href: responsible-ai/responsible-ai-overview.md
-    - name: Responsible AI FAQ for chat with finance and operations data on Microsoft 365 Copilot (preview)
-      href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
-    - name: Responsible AI FAQ for Generative help and guidance with Copilot (preview)
-      href: ../fin-ops/copilot/faq-copilot-generative-help.md
+    - name: Responsible AI
+      items:
+      - name: Overview
+        href: responsible-ai/responsible-ai-overview.md
+      - name: Responsible AI FAQ for chat with finance and operations data on Microsoft 365 Copilot (preview)
+        href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
+      - name: Responsible AI FAQ for Generative help and guidance with Copilot (preview)
+        href: ../fin-ops/copilot/faq-copilot-generative-help.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 

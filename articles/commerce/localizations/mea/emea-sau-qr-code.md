@@ -2,12 +2,12 @@
 title: Generate QR codes and print them on receipts for Saudi Arabia
 description: This article provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 07/05/2023
+ms.date: 02/08/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail
 ms.author: josaw
@@ -199,7 +199,9 @@ Follow these steps to create a new extension and add it to your environment.
     ```
 
     # [Commerce 10.0.38 and later](#tab/commerce-10-0-38)
-    You can refer to [Details for issue 871646](https://fix.lcs.dynamics.com/Issue/Details?bugId=871646&dbType=3) for details of the availability of the change.
+
+    For information on the availability of the change, see [Details for issue 871646](https://fix.lcs.dynamics.com/Issue/Details?bugId=871646&dbType=3).
+
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -506,6 +508,7 @@ Follow these steps to create a new extension and add it to your environment.
     ```
 
     # [Commerce 10.0.38 and later](#tab/commerce-10-0-38)
+
     ```C#
     /**
      * SAMPLE CODE NOTICE

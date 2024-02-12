@@ -129,12 +129,19 @@ To work with quality orders that are related to your quarantine orders, go to **
 - Review the values in the **Quality order status** column. In this way, you can learn the overall status of all quality orders that are related to each quarantine order in grid.
 - Select a quarantine order in the grid, and then, on the Action Pane, select **Quality orders** to view, create, or update quality orders that are related to the quarantine order.
 
-### From goods-in-transit order
+### From goods-in-transit orders (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+
+> [!IMPORTANT]
+> This feature is currently in private preview and is therefore only available to a limited number of customers. If you are interested in testing this feature, please contact Microsoft Support.
 
 To work with quality orders that are related to your goods-in-transit orders, follow any of these steps:
 
 - Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
 - Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Advanced actions for quality orders
 

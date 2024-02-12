@@ -1466,7 +1466,7 @@
         href: b2b/manage-b2b-users.md
       - name: Manage business partner users on B2B e-commerce sites using Dynamics 365 Sales
         href: b2b/prospect-management-sales.md
-      - name: Place B2B website orders quickly
+      - name: Place B2B bulk and repeat orders quickly
         href: b2b/quick-bulk-orders.md
       - name: Invoice management for B2B e-commerce websites
         href: b2b/invoice-management.md
