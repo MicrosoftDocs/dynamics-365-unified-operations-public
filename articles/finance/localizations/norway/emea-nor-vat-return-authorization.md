@@ -2,12 +2,12 @@
 title: Authorize interoperation with ID-porten and Altinn web services
 description: This article explains how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 11/28/2021
+ms.date: 02/12/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.author: egolub
 ms.search.validFrom: 2022-11-18
@@ -27,8 +27,8 @@ Follow these steps to authorize your Finance environment in ID-porten and Altinn
 4. On the Action Pane, select **Get authorization code**.
 5. In the **Electronic report parameters** dialog box, in the **Requested language in the user interface** field, specify **en** for English. Other values supported by ID-porten: nb, nn, en or se.
 
- > [!NOTE]
-> The list of supported values of **Requested language in the user interface** field is subject to change by ID-porten. We recommend to check the official ID-porten documentation for actual information.
+   > [!NOTE]
+   > The list of supported values of **Requested language in the user interface** field is subject to change by ID-porten. We recommend to check the official ID-porten documentation for actual information.
 
 6. In **Requested security level** lookup field select one of the available values according to your preference of the security level of your autorization in ID-porten. The following values of **Requested security level** lookup field are available that can be used as `acr_values` parameter of autorization request to ID-porten:
    
@@ -37,8 +37,8 @@ Follow these steps to authorize your Finance environment in ID-porten and Altinn
 - **Low**: Equivalent of `idporten-loa-low`.
 - **Not use**: Equivalent of `acr_values` parameter is not used (optional).
 
- > [!NOTE]
-> The list of supported values of `acr_values` parameter is subject to change by ID-porten. We recommend to check the official ID-porten documentation for actual information.
+  > [!NOTE]
+  > The list of supported values of `acr_values` parameter is subject to change by ID-porten. We recommend to check the official ID-porten documentation for actual information.
 
 7. Select **OK** to proceed with authorization in ID-porten.
 
@@ -49,12 +49,12 @@ You're redirected to ID-porten for user authorization. The user who is authorize
 8. When authorization is successful, you're redirected back to Finance, and a new browser tab shows the **Success** page. Close that browser tab, and return to the browser tab that shows the **Web applications** page where you started the authorization process.
 9. On the Action Pane, select **Obtain access token**.
 
-    > [!NOTE]
-    > You must complete this step immediately after you obtain the authorization code. Otherwise, you might receive the following error message:
-    >
-    > > Web service returned error code 400 ({"error":"invalid_grant","error_description":"invalid_grant (correlation id: 08ede4e5-4720-5edb-8fd2-a4f6a1902b74)"}).
-    >
-    > If you receive this error message, go back to the step 4. This time, select **Obtain access token** immediately after you obtain the authorization code.
+   > [!NOTE]
+   > You must complete this step immediately after you obtain the authorization code. Otherwise, you might receive the following error message:
+   >
+   > Web service returned error code 400 ({"error":"invalid_grant","error_description":"invalid_grant (correlation id: 08ede4e5-4720-5edb-8fd2-a4f6a1902b74)"}).
+   >
+   > If you receive this error message, go back to the step 4. This time, select **Obtain access token** immediately after you obtain the authorization code.
 
 10. In the **Electronic reporting parameters** dialog box, select **OK**.
 
