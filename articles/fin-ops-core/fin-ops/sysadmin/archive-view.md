@@ -37,9 +37,7 @@ The data in the Dataverse managed data lake is available in Dataverse tables pre
  - Active (live) application data: WHERE msft_datastate=0 
 
 
-### Archived data in Dataverse long term retention limitations
-
-You can access archived data using a model driven Power App that uses Dataverse Advanced Find or build canvas Power Apps. 
+You can also access archived data using a model driven Power App that uses Dataverse Advanced Find or build canvas Power Apps. 
 To view limitations with these options, see [Viewing archive data limitations](/power-apps/maker/data-platform/data-retention-view#limitations-for-retrieval-of-retained-data).  
 
  
