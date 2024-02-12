@@ -30,7 +30,7 @@ Follow these steps to authorize your Finance environment in ID-porten and Altinn
    > [!NOTE]
    > The list of supported values of **Requested language in the user interface** field is subject to change by ID-porten. We recommend to check the official ID-porten documentation for actual information.
 
-6. In **Requested security level** lookup field select one of the available values according to your preference of the security level of your autorization in ID-porten. The following values of **Requested security level** lookup field are available that can be used as `acr_values` parameter of autorization request to ID-porten:
+6. In the **Requested security level** lookup field, select one of the available values according to your preference of the security level of your authorization in ID-porten. The following values of **Requested security level** lookup field are available that can be used as `acr_values` parameter of authorization request to ID-porten:
    
 - **High**: Equivalent of `idporten-loa-high` value which is equivalent of security level “high” in eIDAS.
 - **Substantial**: Equivalent of `idporten-loa-substantial` value which is equivalent of security level “substantial” in eIDAS.
@@ -38,15 +38,15 @@ Follow these steps to authorize your Finance environment in ID-porten and Altinn
 - **Not use**: Equivalent of `acr_values` parameter is not used (optional).
 
   > [!NOTE]
-  > The list of supported values of `acr_values` parameter is subject to change by ID-porten. We recommend to check the official ID-porten documentation for actual information.
+  > The list of supported values of `acr_values` parameter is subject to change by ID-porten. Check the official ID-porten documentation for actual information.
 
 7. Select **OK** to proceed with authorization in ID-porten.
 
-![Specify parameters in In the Electronic report parameters dialog box.](../media/emea-nor-vat-return-no-authorization-params.png)
+   ![Specify parameters in In the Electronic report parameters dialog box.](../media/emea-nor-vat-return-no-authorization-params.png)
    
-You're redirected to ID-porten for user authorization. The user who is authorized in ID-porten must have the rights that are required to complete and submit VAT returns.
+   You're redirected to ID-porten for user authorization. The user who is authorized in ID-porten must have the rights that are required to complete and submit VAT returns.
 
-8. When authorization is successful, you're redirected back to Finance, and a new browser tab shows the **Success** page. Close that browser tab, and return to the browser tab that shows the **Web applications** page where you started the authorization process.
+8. When authorization is successful, you're redirected back to Finance, and a new browser tab shows the **Success** page. Close that browser tab and return to the browser tab that shows the **Web applications** page where you started the authorization process.
 9. On the Action Pane, select **Obtain access token**.
 
    > [!NOTE]
