@@ -14,7 +14,7 @@ If you are moving a database to a sandbox UAT or production environment, you mus
 To be able to access Commerce self-service installers in HQ, you must [Synchronize self-service installers](../../../commerce/dev-itpro/synchronize-installers.md) after the database movement operation is complete.
 
 > [!IMPORTANT]
-> The Environment re-provisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. The Environment re-provisioning tool is still available in the Asset Library and is only required for restoring a database to a development environment. 
+> The Environment re-provisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. The Environment re-provisioning tool is still available in the Asset Library and is only required for restoring a database to a development environment running version 10.0.37 or older. For Development environments running version 10.0.38 and later the Environment re-reprovisioning tool does not apply as these environments used a Sealed CSU.  
 
 To run the Environment re-provisioning tool on the destination environment, run the following steps:
 
