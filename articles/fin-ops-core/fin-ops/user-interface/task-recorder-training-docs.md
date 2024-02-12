@@ -115,7 +115,5 @@ You can download and edit Microsoft's task recordings to use them for your own H
 
 [Task Recorder](../../dev-itpro/user-interface/task-recorder.md)
 
-[Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
