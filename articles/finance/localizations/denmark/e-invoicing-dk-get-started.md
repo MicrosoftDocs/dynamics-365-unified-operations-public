@@ -2,7 +2,7 @@
 title: Get started with Electronic invoicing for Denmark
 description: This article explains how to get started with Electronic invoicing for Denmark in Microsoft Dynamics 365 Finance.
 author: ikondratenko
-ms.date: 12/14/2023
+ms.date: 02/12/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Denmark. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the Denmark-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. The steps in this article are general and country/region-dependent in Regulatory Configuration Service (RCS) and Microsoft Dynamics 365 Finance.
+This article provides information that helps you get started with Electronic invoicing for Denmark. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the Denmark-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. The steps in this article are general and country/region-dependent in Regulatory Configuration Service (RCS) and Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
@@ -86,7 +86,7 @@ Some additional parameters must be configured directly in Finance.
 3. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 4. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 5. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-6. <a id="ExChannel"></a>In the **Integration channels** section, add a record for the channel that will be used for electronic invoice submission in batch mode.
+6. <a id="ExChannel"></a>In the **Integration channels** section, add a record for the channel that is used for electronic invoice submission in batch mode.
 7. In the **Channel** column, enter **EdiStatus**. This channel name is used by default, but you can use a different channel name as you require. In this case, you must enter the same name in the value of the **$Context\_Channel** variable in the **DataChannel** definition in the **Customer invoice context model** ER configuration. You must also enter it in the parameters and applicability rules of the related feature setup.
 8. In the **Company** column, select a required legal entity code.
 9. In the **Document context** column, refer to the **Customer invoice context model** configuration by using the **Data channel context** definition.
@@ -106,7 +106,7 @@ To identify a company by its CVR number, follow these steps.
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Bank account information** FastTab, in **Codes** section, in the **Routing number** field, make sure that a valid CVR number is entered for the legal entity.
 
-    The CVR number will be entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that's generated. It will be used as the seller's identification during the submission process.
+    The CVR number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that's generated. It's used as the seller's identification during the submission process.
 
 To identify a company by its GLN, follow these steps.
 
@@ -116,7 +116,7 @@ To identify a company by its GLN, follow these steps.
 4. On the **Registration ID** FastTab, add the **EAN** registration type that you created.
 5. In the **Registration number** field, enter a valid GLN.
 
-    The GLN will be entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that's generated. It will be used as the seller's identification during the submission process.
+    The GLN is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that's generated. It is used as the seller's identification during the submission process.
 
     > [!NOTE]
     > The GLN has higher priority than the CVR number. If both numbers are configured at the same time, the GLN is used.
@@ -126,7 +126,7 @@ To identify a company by its GLN, follow these steps.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure that a valid GLN is entered for the customer.
 
-    The GLN will be entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that's generated. It will be used as the buyer's identification during the submission process.
+    The GLN is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that's generated. It's used as the buyer's identification during the submission process.
 
     > [!NOTE]
     > If no GLN is defined, the customer's tax exempt number is used.
@@ -250,8 +250,8 @@ To view successfully received invoices, go to **Accounts payable** \> **Invoices
 
 ## Send responses for received electronic invoices
 
-After incoming vendor invoices are successfully received, users can respond to invoice issuers about the decision to accept or reject the received invoices.
-For both incoming invoice formats, **OIOUBL** and **PEPPOL**, a rejection response can be raised and sent back to the invoice issuers. Acceptance responses are not assumed. If no rejection response was sent during some agreed time, then such invoices are considered as automatically accepted. For **PEPPOL** format, there is a possibility to additionally send a reception acknowledgement message. It is a technical confirmation of invoices reception. Such invoices can anyway be later rejected from business perspective.
+After incoming vendor invoices are successfully received, you can respond to invoice issuers about the decision to accept or reject the received invoices.
+For both incoming invoice formats, **OIOUBL** and **PEPPOL**, a rejection response can be raised and sent back to the invoice issuers. Acceptance responses aren't assumed. If no rejection response was sent during an agreed time, then such invoices are considered as automatically accepted. For **PEPPOL** format, there's a possibility to additionally send a reception acknowledgement message. It is a technical confirmation of invoices reception. Such invoices can anyway be later rejected from business perspective.
 
 ### Configure responses
 
@@ -259,30 +259,30 @@ Responses can be configured by using electronic document property types in the s
 
 #### Configure electronic document properties
 
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types** and select **New**.
 2. In the **Type** field, enter **RejectResponse**. You must enter the value exactly as it appears here.
 3. Select **Applicability** to add an applicable table.
 4. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **VendInvoiceInfoTable** table name.
-5. Save your changes, and return to the **Electronic document property types** page.
-6. Select **New** to create another Electronic document property type.
+5. Save your changes and return to the **Electronic document property types** page.
+6. Select **New** to create another lectronic document property type.
 7. In the **Type** field, enter **MessageResponse**. You must enter the value exactly as it appears here.
 8. Select **Applicability** to add an applicable table.
 9. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **VendInvoiceInfoTable** table name.
-10. Save your changes, and return to the **Electronic document property types** page.
+10. Save your changes and return to the **Electronic document property types** page.
 11. Select the existing [FormatType](#FormatType) electronic document property type.
 12. Select **Applicability** to add an applicable table.
 13. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Vendors** table name. 
 
     > [!NOTE]
-    > The same electronic document property type will be used to determine which response type to generate for a specific vendor, **OIOUBL application response** or **PEPPOL invoice level response**.
+    > The same electronic document property type is used to determine which response type to generate for a specific vendor, **OIOUBL application response** or **PEPPOL invoice level response**.
      
-14. Save your changes, and return to the **Electronic document property types** page.
+14. Save your changes and return to the **Electronic document property types** page.
 
     ![Screenshot that shows the property type added on the Electronic document property types page for responses.](../media/emea_dk_response_types_setup.jpg)
 
 #### Define responses formats
 
-Follow these steps to identify which response format type will be used for a specific vendor.
+Follow these steps to identify which response format type is used for a specific vendor.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 2. Select a specific vendor in the list, and then, on the Action Pane, on the **Vendor** tab, in the **Properties** group, select **Electronic document properties**.
@@ -298,16 +298,16 @@ Follow these steps to enter responses for specific pending vendor invoices.
 1. Go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 2. Select a specific pending vendor invoice in the list, and then, on the Action Pane, on the **Vendor invoice** tab, in the **Properties** group, select **Electronic document properties**.
 3. Select the **RejectResponse** type.
-4. In the **Value** column, enter the rejection reason. This text will be send back to the invoice issuer as justification of rejection. **OIOUBL application response** or **PEPPOL invoice level response** messages will be generated and sent only if non-empty value is entered. 
+4. In the **Value** column, enter the rejection reason. This text is sent back to the invoice issuer as justification of rejection. **OIOUBL application response** or **PEPPOL invoice level response** messages is generated and sent only if non-empty value is entered. 
 5. Select the **MessageResponse** type.
-6. In the **Value** column, enter any text which will be used as an acknowledgement message. This text will be send back to the invoice issuer as the invoice reception confirmation. **PEPPOL message level responses** will be generated and sent only if non-empty value is entered. 
+6. In the **Value** column, enter any text which is used as an acknowledgement message. This text is sent back to the invoice issuer as invoice reception confirmation. **PEPPOL message level responses** is generated and sent only if non-empty value is entered. 
 
 ### Configure electronic invoicing feature setups
 
 Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update the authorization credential required for responses submission via ISV last-mile connector.
 
 1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 5** or later. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md#create-a-feature-that-is-based-on-an-existing-feature).
+2. Create a copy of the imported Globalization feature and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md#create-a-feature-that-is-based-on-an-existing-feature).
 3. On the **Versions** tab, verify that **Draft** is selected.
 4. On the **Setups** tab, in the grid, select the **Application Response OIOUBL** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
@@ -316,7 +316,7 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 8. Select **Destination**, and then enter the service ID number concatenated with the string **\_EDIWIN**. For example, if the service ID number is **123456**, enter **123456\_EDIWIN**.
 9. Select **Group**, and then enter the group code that you obtained.
 10. Select **Auth token**, and then select the name of the secret that you created for the token.
-11. Select **Save**, and close the page.
+11. Select **Save** and close the page.
 12. Repeat steps 4 through 11 for each of the following feature setups if your business process assumes sending responses in the **PEPPOL** format:
 
     - Invoice Response PEPPOL
@@ -328,8 +328,8 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add the record for the **VendInvoiceInfoTable** table name.
 4. Set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-5. In the **Company** column, you can select a legal entity code to limit the applicbility of this electronic document type. If no company is defined then electronic documents of this type will be proccessed in all legal entities.
-6. Save your changes, and close the page.
+5. In the **Company** column, you can select a legal entity code to limit the applicability of this electronic document type. If no company is defined, then electronic documents of this type is processed in all legal entities.
+6. Save your changes and close the page.
 
 ### Send responses
 
