@@ -41,11 +41,11 @@ New long term retention jobs can be scheduled for one or more companies at a tim
 8. Click **Next**. 
  
 Two types of scheduling are supported: 
- - **Single run** - Long term retention and saving to history will run continuously until both are completed. Data is always archived in long term retention in Dataverse followed by saving to history tables.
- - **Daily during allotted time** - This option runs the job continuously until completed. The **Save to history** runs only during the start and stop archiving time.
+ - **Single run** - Long term retention and saving to history runs continuously until both are completed. Data is always archived in long term retention in Dataverse followed by saving to history tables.
+ - **Daily during allotted time** - The long term retention runs continuously until completed. The **Save to history** runs only during the start and stop archiving time.
 
 8. Click **Finish** to schedule the archive job for selected fiscal years and the companies. 
-9. Archive jobs for selected fiscal years and companies will be scheduled for archiving.
+9. Archive jobs for selected fiscal years and companies are scheduled for archiving.
 10. Click **View progress** to view the detailed logs.
 11. Archived general ledger transactions from a completed archive job can be optionally restored back to live tables from the history tables. When the restore job completes, the retained status is reset in Dataverse managed data lake. To restore data, select a fiscal year and company with job status completed, choose start date and time of job execution and click **Ok**. 
 
@@ -54,13 +54,13 @@ To view the historical transactional detail, follow these steps:
 1. Go to **General Ledger** > **Inquiries and reports** > **Voucher transactions history**. 
 
 >[!Important]
-> Trial balance data is in summary for viewing of archived data, but drilling into transactional detail display empty window. The data was moved to Dataverse long term storage and the local history copy. 
+> Trial balance data is in summary for viewing of archived data, but drilling into transactional detail displays an empty window. The data was moved to Dataverse long term storage and the local history copy. 
 
 ### Capacity reports 
 
-The Dynamics 365 Finance application tables moved to Dataverse long term retention will show up under the database storage capacity reports. 
+The Dynamics 365 Finance application tables moved to Dataverse long term retention shows up under the database storage capacity reports. 
 
-For example, Finance General Ledger data is archived. The administrator sees the General ledger tables in the Dataverse database storage report as tablename **Retained**. These tables provide a logical view of the storage capacity consumed by the Finance table archived in Dataverse long term retention. For example, the mesrp_generaljournalentrybientity-Retained table in a report is an Finance General ledger functional scenario table that has been archived. If the tablename-Retained isn't visible in the report, download the report into excel to view. 
+For example, Finance General Ledger data is archived. The administrator sees the General ledger tables in the Dataverse database storage report as tablename **Retained**. These tables provide a logical view of the storage capacity consumed by the Finance table archived in Dataverse long term retention. For example, the mesrp_generaljournalentrybientity-Retained table in a report is a Finance General ledger functional scenario table that has been archived. If the tablename-Retained isn't visible in the report, download the report into excel to view. 
 
 
 ### Finance storage capacity reports 
