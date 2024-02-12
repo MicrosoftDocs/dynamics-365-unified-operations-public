@@ -16,24 +16,25 @@ ms.custom:
 
 This article explains how to create a data archival job for sales orders.  
 
->[!Important]
-> Sales orders can be archived only if all the following conditions are met:
-> The sales orders are fully invoiced.
-> The sales orders shouldn't be part of an intercompany order chain.  
+## Prerequisites
+
+The following prerequisites must be met before sales orders can be archived:
+ - The sales orders are fully invoiced.
+ - The sales orders shouldn't be part of an intercompany order chain.  
 
 
 ## Install solution in Power platform  
 To install the solution in Power platform, see [Set up and management](archive-setup.md).
 
 ### Turn on the features in your Dynamics 365 Supply Chain Management  
-The Archive with Dataverse long term retention feature should be enabled.  
+The **Archive with Dataverse long term retention** feature should be enabled.  
 
 ### Schedule long term retention job  
 
 To schedule a long term retention job, follow these steps:
 1. In Dynamics 365 Supply Chain Management, go to **System administration** > **Archive with Dataverse long term retention workspace**
 2. Select **Sales orders scenario**.
-3. Select **New long term retention**. This will open a wizard to schedule a new Sales order archival job with Dataverse long term retention.
+3. Select **New long term retention**. This opens a wizard to schedule a new **Sales order archival job with Dataverse long term retention**.
 4. Enter job name and click **Next**.
 5. Select the date of the oldest sales order (from date) required to be archived. Select the date of the newest sales orders (To date) required to be archived.
 6. Select the legal entity (company) that for the sales orders to be archived.
@@ -48,23 +49,26 @@ The archive jobs will be visible in the dashboard. 
 
 
 ### View long term retention job status  
-Select **View progress** on the archival job dashboard to see the details of the job status.   
+Select **View progress** on the archival job dashboard to view job status details.   
 
 
 ### Restore long term retention job  
 
-Archived Sales orders from a completed archive job can be optionally restored back to live tables from the history tables. On completion of restore job, the retained status is reset in Dataverse managed data lake.
-To restore, click **Restore** on the toolbar. In the dialog, select period and company with job status completed, choose start date and time of job execution and click **Ok**.  
+Archived Sales orders from a completed archive job can be optionally restored back to live tables from the history tables. After the restore job is complete, the retained status is reset in Dataverse managed data lake. 
+1. To restore, click **Restore** on the toolbar.
+2. In the dialog, select the period and company with job status completed.
+3. Select the start date and time of job execution.
+4. Click **Ok**.  
 
 ### View historical data  
 
-The Archive with Dataverse long term retention workspace shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its
+The **Archive with Dataverse long term retention** workspace displays full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its
 status. 
 
 To view details about a selected archive, follow these steps:
 1. Select the job and select **View history data** on the toolbar.  
-
 The **Archived sales orders** page displays every sales order that's included in the archive job. 
-To view an order, including its header and all its order lines, select it in the grid. 
-On the Action Pane, select **Archived sales order details**. From the order details, you can view more related information about the order. 
-On the Action Pane, select **Inquiry**. On the menu, select the type of records to view.   
+2. To view an order, including its header and all its order lines, select it in the grid.
+3. On the Action Pane, select **Archived sales order details**. From the order details, you can view more related information about the order.
+4. Select **Inquiry**.
+5. On the menu, select the type of records to view.   
