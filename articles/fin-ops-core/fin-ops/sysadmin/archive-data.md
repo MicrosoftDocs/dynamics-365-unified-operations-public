@@ -41,10 +41,10 @@ Additional data types are planned for future releases.
 
 ### How does archiving Dymamics 365 finance and operations data work 
 
-Application administrators can schedule archiving jobs with criteria for supported functional scenarios. The data from the tables for the functional scenario are archived in Dataverse long term retention, within a Dataverse managed data lake. 
+Application administrators can schedule archiving jobs with criteria for supported functional scenarios. The data from the tables for a functional scenario are archived in Dataverse long term retention. 
 
 When an archive job is initiated from the Dynamics 365 finance and operations archival workspace, it contains multiple stages:
-1. Data from the live application tables in the functional scenario being archived is replicated into a Dataverse managed data lake.
+1. Data from the live application tables in the functional scenario being archived is replicated into a Dataverse long term retention.
 2. Data that meets the archival criteria is marked as ready for archival in the live Dynamics 365 finance and operations application tables.
 3. The live table records will be marked as retained(archived) in Dataverse long term retention.
 4. A reconciliation process verifies that all the live application table records previously marked as ready for archival are available in Dataverse long term retention.
@@ -70,11 +70,9 @@ Important
  
 ### Understanding Dataverse storage costs for archived data  
 
-Every GB moved from the database to Dataverse long term retention (Dataverse managed data lake), consumes, on average, 50% less database capacity. Live application data is compressed in Dataverse long term retention.  
+Every GB moved from the Finance and Operations application to Dataverse long term retention, consumes, on average, 50% less database capacity. Live application data is compressed in Dataverse long term retention and the savings can vary based on the table data. You might notice larger than 50% savings or lower than 50%. Savings might be more evident when higher volumes of data (hundreds of GB) are retained.  
 
-This cost saving is passed onto the customer. The amount of compression depends on the kind of data. You might notice larger than 50% savings or lower than 50%. Savings might be more evident when higher volumes of data (hundreds of GB) are retained.  
-
-Archived data is available in the history tables by allowing access using a Dynamics 365 finance and operations inquiry page. History tables don't contain indexes will consume 10% to 30% less capacity than the live tables, depending on the table and indexes. When in-app access to archived data isn't required, delete the data permanently from the History tables to get full savings. 
+Archived data is available in the history tables by allowing access using a Dynamics 365 finance and operations inquiry page. History tables don't contain indexes and will consume 10% to 30% less capacity than the live tables, depending on the table and indexes. When in-app access to archived data isn't required, delete the data permanently from the History tables to get full capacity savings. 
 
 ### Storage capacity reports 
 
