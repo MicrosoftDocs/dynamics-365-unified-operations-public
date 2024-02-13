@@ -81,6 +81,14 @@ To inactivate old (legacy) ER functionality for some features and activate addit
 
 When you enable a feature from the list, the legacy functionality will be inactivated for the corresponding country or region and feature name.
 
+## Service environments
+With the merge of RCS experience we are moving away from the notion of service environments. Since RCS standalone was configured at a tenant level, service environment were being used to logically separate globalization feature setups, which in a way could mimic different finance environments. This experience goes away post RCS merge into Finance.
+
+Once **Globalization Studio** and **E-invoicing service workspace designer** feature are enabled, service environment text box will be disbaled for user input, hence for existing setup's its recommended to finalize the relevant service environment name before proceeding to enable the new **Globalization Studio** experience. 
+
+![Service environment.](../media/eInvoicing_service_environment_setup.png)
+
+
 ## Create a Key Vault reference
 
 1. In the **Electronic invoicing** tab, in the **Key Vault settings** FastTab, select **Key Vault parameters**.
