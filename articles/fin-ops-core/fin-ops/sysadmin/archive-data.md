@@ -1,6 +1,6 @@
 ---
-title: Archive data in Dynamics 365 finance and operations with Dataverse (preview) 
-description: This article describes how to archive data in Dynamics 365 finance and operations. 
+title: Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
+description: This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps.
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -10,96 +10,100 @@ ms.custom:
 
 ---
 
-# Overview (preview)  
+# Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-This article describes how to archive data in Dynamics 365 finance and operations. Dynamics 365 finance and operations supports custom retention policies to securely archive and retain unlimited data long term in a cost-efficient way. While Dynamics 365 finance and operations supports your business growth with no limit on active data, you might want to consider moving historical inactive data, required for compliance and regulatory reasons, to Dataverse long term retention. 
+This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long-term retention.
 
->[!NOTE]
-> This feature doesn't limit the total records that can be archived, however, the largest table that can be archived is limited to a maximum 100M records. It's recommended to trim any table with greater than 100M records. 
+> [!NOTE]
+> This feature doesn't limit the total number of records that can be archived. However, the largest table that can be archived is limited to a maximum of 100 million records. We recommend that you trim any table that have more than 100 million records.
 
-## Business application data lifecycle 
+## Business application data lifecycle
 
-The business application data lifecycle has three stages: 
- - First - active data
- - Second - transitions to historic inactive data required for compliance and regulatory reasons
- - Third - transitions to deleted data. 
+The business application data lifecycle has three stages:
 
-Dynamics 365 finance and operations applications allows organizations to receive the following benefits with archiving:
- - Secures historical inactive application data long term for audit, legal, and regulatory requirements.
- - Reduces the application database size and the capacity consumed to potentially improve application performance associated with very large tables. 
+1. Active data
+1. Transitions to historical, inactive data that's required for compliance and regulatory reasons
+1. Transitions to deleted data
 
-## Dynamics 365 finance and operations data types that can be archived with Dataverse longterm retention  
+Finance and operations apps enable organizations to achieve the following benefits through archiving:
 
-This feature currently supports:
- - Dynamics 365 Finance General ledger
- - Dynamics 365 Supply Chain inventory transactions
- - Dynamics 365 Supply Chain sales order
+- Secure historical, inactive application data for the long term to meet audit, legal, and regulatory requirements.
+- Reduce the size of the application database and the capacity that consumed, to potentially improve application performance that's associated with very large tables.
 
-Additional data types are planned for future releases.  
+## Finance and operations data types that can be archived with Dataverse long-term retention
 
-### How does archiving Dymamics 365 finance and operations data work 
+This feature currently supports archiving the following types of finance and operations data with Dataverse long-term retention:
 
-Application administrators can schedule archiving jobs with criteria for supported functional scenarios. The data from the tables for a functional scenario are archived in Dataverse long term retention. 
+- Dynamics 365 Finance General ledger
+- Dynamics 365 Supply Chain Management inventory transactions
+- Dynamics 365 Supply Chain Management sales orders
 
-When an archive job is initiated from the Dynamics 365 finance and operations archival workspace, it contains multiple stages:
-1. Data from the live application tables in the functional scenario being archived is replicated into a Dataverse long term retention.
-2. Data that meets the archival criteria is marked as ready for archival in the live Dynamics 365 finance and operations application tables.
-3. The live table records will be marked as retained(archived) in Dataverse long term retention.
-4. A reconciliation process verifies that all the live application table records previously marked as ready for archival are available in Dataverse long term retention.
-5. Live application data previously marked as archiving is moved to history tables in the Dynamics 365 finance and operations database, and are deleted from the live application tables. Application specific inquiry pages access this history table data from the live application. Data from history tables can be either restored back to live table or purged permanently. This functionality is planned for a future release.  
+Support for additional data types is planned in future releases.
 
->[!Note]
->During archiving, no data is archived from tables outside the functional scenario, even if they are related. For example, when inventory transaction tables are archived, the Sales tables aren't archived automatically. 
+## How archiving of finance and operations data works
 
-### Customization 
+Application administrators can schedule archival jobs and specify criteria for supported functional scenarios. The data from the tables for the functional scenarios is archived in Dataverse long-term retention.
 
-The archiving framework includes custom fields and custom tables in supported functional scenarios. This enables customers to build their own archival scenario for custom tables. Customers need to configure the table customizations prior to initiating an archival job. 
+When an archival job is initiated from the archival workspace in finance and operations apps, it has the following stages:
 
- 
-Important 
- - The long-term retained data is Read-only.
- - X++ delete action isn't honored when data archival policy is run to move data out of the live Dynamics 365 finance and operations database.
- - Dynamics 365 finance and operations attachments aren't currently supported.
- - The archive process for scenarios with Dataverse long term retention entails multiple stages that run sequentially in the background and the process can take up to 14 days to complete.
- - The archived data in Dataverse long term retention can't be moved back to the live application table.
- - The archived data in Dataverse long term retention is secured with Dataverse security backed by Microsoft Entra ID.
- - Customers using self-managed encryption key (BYOK) in Dataverse should be aware that long term retained data in the Azure data lake is encrypted with Microsoft managed key. Customer should consider migrating to customer managed key. For more information, see [Migrate bring-your-own-key environments to customer-managed key](/power-platform/admin/cmk-migrate-from-byok). 
+1. Data from the live application tables in the functional scenario that's being archived is replicated to Dataverse long-term retention.
+1. Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
+1. The live table records are marked as retained (archived) in Dataverse long-term retention.
+1. A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long-term retention.
+1. Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations database and deleted from the live application tables. Application-specific inquiry pages access this history table data from the live application. Data from history tables can be either restored to the live table or permanently purged. This functionality is planned for a future release.
 
- 
-### Understanding Dataverse storage costs for archived data  
+> [!NOTE]
+> During archiving, no data is archived from tables outside the functional scenario, even if it's related. For example, when inventory transaction tables are archived, the sales tables aren't automatically archived.
 
-Every GB moved from the Dynamics 365 Finance application to Dataverse long term retention, consumes, on average, 50% less database capacity. Live application data is compressed in Dataverse long term retention and the savings can vary based on the table data. You might notice larger than 50% savings or lower than 50%. Savings might be more evident when higher volumes of data (hundreds of GB) are retained.  
+## Customization
 
-Archived data is available in the history tables by allowing access using a Dynamics 365 finance inquiry page. History tables don't contain indexes and will consume 10% to 30% less capacity than the live tables, depending on the table and indexes. When in-app access to archived data isn't required, delete the data permanently from the History tables to get full capacity savings. 
+The archival framework includes custom fields and custom tables in supported functional scenarios. Therefore, customers can build their own archival scenario for custom tables. Customers must configure the table customizations before they initiate an archival job.
 
-### Storage capacity reports 
+Note the following important points:
 
-Administrators can view the storage size in the existing Power Platform admin center reports for Dynamics 365 finance and operations tables as well as Dataverse long term retention. 
+- The long-term-retained data is read-only.
+- The X\+\+ delete action isn't honored when a data archival policy is run to move data out of the live finance and operations database.
+- Finance and operations attachments aren't currently supported.
+- The archival process for scenarios that involve Dataverse long-term retention has multiple stages that run sequentially in the background. The process can take up to 14 days.
+- The archived data in Dataverse long-term retention can't be moved back to the live application table.
+- The archived data in Dataverse long-term retention is secured through Dataverse security that's backed by Microsoft Entra ID.
+- Customers who use a self-managed encryption key (bring your own key \[BYOK\]) in Dataverse should be aware that long-term-retained data in the Azure data lake is encrypted through a Microsoft-managed key. Customers should consider migrating to a customer-managed key. For more information, see [Migrate bring-your-own-key environments to customer-managed key](/power-platform/admin/cmk-migrate-from-byok).
 
-### View the storage consumed by the archived data in Dataverse long term retention  
+## Understanding Dataverse storage costs for archived data
 
-To view storage consumed by archived data, follow these steps:
-1. Go to [Power Platform admin center reports](/power-platform/admin/capacity-storage) for Dataverse.
-2. The archived Dynamics 365 finance and operations tables with a prefix **Retained** in the Dataverse DB storage report provide a logical view of the storage capacity consumed by the Dynamics 365 finance and operations archived in Dataverse long term retention.
+On average, every gigabyte (GB) that's moved from the Finance application to Dataverse long-term retention consumes 50 percent less database capacity. Live application data is compressed in Dataverse long-term retention. Savings can vary, depending on the table data. You might notice savings that are more than or less than 50 percent. Savings might be more evident when higher volumes of data (hundreds of GBs) are retained.
 
-For example, the administrator sees the general ledger tables in the Dataverse database storage report as tablename-Retained. These tables provide a logical view of the storage capacity consumed by the finance table archived in Dataverse long term retention. The mesrp_generaljournalentrybientity-Retained table in the report below is a Finance General ledger functional scenario table that has been archived. If the tablename-Retained isn't visible in the report, download the report into excel to view. 
+Archived data is made available in the history tables by allowing access through an inquiry page in Finance. History tables that have no indexes consume 10 to 30 percent less capacity than the live tables, depending on the table and indexes. If in-app access to archived data isn't required, permanently delete the data from the history tables to achieve full savings.
 
-[![Dataverse database storage report](.media/storage.png)](.media/storage.png)
+## Storage capacity reports
 
+Administrators can view the storage size in the existing Power Platform admin center reports for both finance and operations tables and Dataverse long-term retention.
 
-To view storage consumed by the Dynamics 365 finance and operations data, follow these steps:
-1. Go to [Power Platform admin center reports for Dynamics 365 finance and operations](/power-platform/admin/finance-operations-storage-capacity).
-2. Select **Capacity** > **Finance and operations**.
-3. The administrator can view details of the Dynamics 365 finance and operations application tables as well as the history tables. The history tables with no indexes consume lesser capacity than the live application table.  
+### View the storage that's consumed by the archived data in Dataverse long-term retention
 
-The live table consumes the highest capacity, followed by the history table and then the tablename-Retained in Dataverse long term retention.  
+To view the storage that's consumed by archived data, follow this step.
 
-In production, to get maximum capacity savings, consider purging the data from the history tables. 
+- Go to the [Power Platform admin center reports for Dataverse](/power-platform/admin/capacity-storage).
 
-To understand the capacity savings, compare the table data, for the live, history and tablename-Retained tables, from the reports post an archival job run. 
+On the **Dataverse database storage** report, the archived finance and operations tables that have the "\-Retained" suffix provide a logical view of the storage capacity that's consumed by the finance and operations archived data in Dataverse long-term retention.
 
->[!Note]
-> Post archival, the auto tuning process could take up to seven days before the reduced capacity is reflected in the history table and up to a day before the archived data capacity for tablename-Retained shows  in the Dataverse database capacity. 
+For example, when the administrator views the **Dataverse database storage** report, the General ledger tables are shown as **\<*table name*\>-Retained**. These tables provide a logical view of the storage capacity that's consumed by the Finance table that's archived in Dataverse long-term retention. In the example of the report in the following illustration, the mesrp\_generaljournalentrybientity-Retained table is a Finance General ledger functional scenario table that has been archived. If the \<*table name*\>-Retained table isn't visible on the report, download the report to Excel for viewing.
 
+[![Screenshot that shows an example of the Dataverse database storage report.](.media/storage.png)](.media/storage.png)
+
+To view the storage that's consumed by finance and operations data, follow these steps.
+
+1. Go to the [Power Platform admin center reports for finance and operations apps](/power-platform/admin/finance-operations-storage-capacity).
+1. Select **Capacity** \> **Finance and operations**.
+1. The administrator can view details of both the finance and operations application tables and the history tables. History tables that have no indexes consume less capacity than live application tables.
+
+The live table consumes the highest capacity, followed by the history table, and then the \<*tablename*\>-Retained table in Dataverse long-term retention.
+
+To get maximum capacity savings in production, consider purging data from the history tables.
+
+To understand the capacity reduced savings, compare the table data for the live, history, and \<*tablename*\>-Retained tables from the reports after an archival policy run.
+
+> [!NOTE]
+> After archiving, the automatic tuning process can take up to seven days before the reduced capacity is reflected in the history table. It can take up to a day before the archived data capacity for \<*tablename*\>-Retained tables is reflected in the Dataverse database capacity.
