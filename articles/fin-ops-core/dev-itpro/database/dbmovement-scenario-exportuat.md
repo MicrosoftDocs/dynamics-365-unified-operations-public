@@ -4,7 +4,7 @@
 title: Export a copy of the standard user acceptance testing (UAT) database
 description: This article explains a database export scenario for finance and operations.
 author: LaneSwenka
-ms.date: 03/22/2021
+ms.date: 02/13/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
