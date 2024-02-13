@@ -81,14 +81,20 @@ Administrators can view the storage size in the existing Power Platform admin ce
 ### View the storage consumed by the archived data in Dataverse long term retention  
 
 To view storage consumed by archived data, follow these steps:
-1. Go to [Power Platform admin center reports](https://learn.microsoft.com/power-platform/admin/capacity-storage) for Dataverse.
+1. Go to [Power Platform admin center reports](/power-platform/admin/capacity-storage) for Dataverse.
 2. The archived Dynamics 365 finance and operations tables with a prefix **Retained** in the Dataverse DB storage report provide a logical view of the storage capacity consumed by the Dynamics 365 finance and operations archived in Dataverse long term retention.  
 
 To view storage consumed by the Dynamics 365 finance and operations data, follow these steps:
-1. Go to [Power Platform admin center reports for Dynamics 365 finance and operations](https://learn.microsoft.com/power-platform/admin/finance-operations-storage-capacity).
+1. Go to [Power Platform admin center reports for Dynamics 365 finance and operations](/power-platform/admin/finance-operations-storage-capacity).
 2. Select **Capacity** > **Finance and operations**.
 3. The administrator can view details of the Dynamics 365 finance and operations application tables as well as the history tables. The history tables with no indexes consume lesser capacity than the live application table.  
 
- 
+The live table consumes the highest capacity, followed by the history table and then the tablename-Retained in Dataverse long term retention.  
 
-Refer to Finance General Ledger documentation for  examples. 
+In production, to get maximum capacity savings, consider purging the data from the history tables. 
+
+To understand the capacity savings, compare the table data, for the live, history and tablename-Retained tables, from the reports post an archival job run. 
+
+>[!Note]
+> Post archival, the auto tuning process could take up to seven days before the reduced capacity is reflected in the history table and up to a day before the archived data capacity for tablename-Retained shows  in the Dataverse database capacity. 
+
