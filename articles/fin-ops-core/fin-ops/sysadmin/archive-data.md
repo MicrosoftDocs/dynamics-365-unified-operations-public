@@ -70,9 +70,9 @@ Important
  
 ### Understanding Dataverse storage costs for archived data  
 
-Every GB moved from the Finance and Operations application to Dataverse long term retention, consumes, on average, 50% less database capacity. Live application data is compressed in Dataverse long term retention and the savings can vary based on the table data. You might notice larger than 50% savings or lower than 50%. Savings might be more evident when higher volumes of data (hundreds of GB) are retained.  
+Every GB moved from the Dynamics 365 Finance application to Dataverse long term retention, consumes, on average, 50% less database capacity. Live application data is compressed in Dataverse long term retention and the savings can vary based on the table data. You might notice larger than 50% savings or lower than 50%. Savings might be more evident when higher volumes of data (hundreds of GB) are retained.  
 
-Archived data is available in the history tables by allowing access using a Dynamics 365 finance and operations inquiry page. History tables don't contain indexes and will consume 10% to 30% less capacity than the live tables, depending on the table and indexes. When in-app access to archived data isn't required, delete the data permanently from the History tables to get full capacity savings. 
+Archived data is available in the history tables by allowing access using a Dynamics 365 finance inquiry page. History tables don't contain indexes and will consume 10% to 30% less capacity than the live tables, depending on the table and indexes. When in-app access to archived data isn't required, delete the data permanently from the History tables to get full capacity savings. 
 
 ### Storage capacity reports 
 
