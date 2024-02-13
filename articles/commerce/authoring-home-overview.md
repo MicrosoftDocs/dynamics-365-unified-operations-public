@@ -1,8 +1,8 @@
 ---
-title: Site builder authoring page
+title: Site builder authoring page overview
 description: This article provides an overview of the Microsoft Dynamics 365 Commerce site builder authoring page.
 author: bicyclingfool
-ms.date: 02/09/2024
+ms.date: 02/13/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ ms.assetid:
 
 ---
 
-# Site builder authoring page
+# Site builder authoring page overview
 
 [!include [banner](includes/banner.md)]
 
@@ -24,7 +24,7 @@ This article provides an overview of the Microsoft Dynamics 365 Commerce site bu
 
 Websites can be created to support various business needs. They can represent a whole business, offer a single channel of the business, or target a specific audience or segment of an audience. For example, a clothing manufacturer might have a website that showcases all the brands that it owns. The same clothing manufacturer might then have a separate website for each of those brands, and also a set of websites that feature luxury fashion, outdoor fashion, and children's fashion.
 
-Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content. The authoring page serves as a common access point for these websites. You can use it to sign in to and out of the system, and to create new websites.
+Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content. The site builder authoring page serves as a common access point for these websites. You can use it to sign in to and out of the system, and to create new websites.
 
 Currently, the site builder authoring page consists of the following sections.
 
@@ -84,11 +84,12 @@ Dynamics 365 Commerce supports the creation and management of multiple websites,
 To create a new website, follow these steps.
 
 1. On the command bar, select **New site**. The **Create site** dialog appears.
-1. On the **Site details** page, enter the following required information, and then select **Next**.
+1. On the **Site details** page, enter the following required information.
     - **Site name** – Enter the name of the website. This name isn't shown to website customers. Instead, it's used in the site list and other places in site builder.
     - **Site administers security group** – Enter the full name of the Microsoft Azure Active Directory (Azure AD) security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
     - **Theme pack** - Select a them pack for your site, for example **Adventure works**.
     - **Site type** - Select **Business to consumer** or **Business to business** .
+1. Select **Next**.
 1. On the **Channel selection** page, select **Add a single channel** or **Add multiple channels**, and then select **Next**.
 1. On the **Channel details** page, select the domain and authentication profile to associate with each channel.
 1. For your default channel, under **Channel defaults**, select **Set as default channel**. 
@@ -96,7 +97,7 @@ To create a new website, follow these steps.
 1. Select **Next**
 1. On the **Locales** page, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries or regions is assigned to each locale. Optionally select **Edit** to add or remove locales, countries, or regions from each channel as needed. Then select **Add locales**.
 1. Select **Next**.
-1. On the **URL paths** page, you can view the default URLs for each channel. You can override the URL paths, domain, or authentication profile for each channel as needed. In addition, in the Set default application channel field, you can select which channel is the default application channel when site pages are authored in site builder.
+1. On the **URL paths** page, you can view the default URLs for each channel. You can override the URL paths, domain, or authentication profile for each channel as needed. To select which channel is the default application channel when site pages are authored in site builder, select the channel in the **Set default application channel** field.
 1. Select **Next**.
 1. On the **Locale defaults** page, select the default locale for each channel, and then select **Next**.
 1. On the **Review and finish** page, review the configuration, and make any changes that are required.
