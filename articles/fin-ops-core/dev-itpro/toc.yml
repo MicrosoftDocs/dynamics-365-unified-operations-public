@@ -306,7 +306,7 @@ items:
         - name: Archive customization (preview)
           href: sysadmin/archive-custom.md
         - name: View archive data (preview)
-          href: sysadmin/Archive-view-data.md
+          href: sysadmin/archive-view.md
         - name: Archive data scenarios (preview)
           items:
           - name: Archive Dynamics 365 Finance General ledger (preview)
