@@ -69,7 +69,7 @@ The **Archive with Dataverse long term retention** workspace (archival workspace
 
 ### View archive job progress
 
-The dashboard in the archival workspace in Finance provides the following details about the archival process as it progresses though its various stages.
+The dashboard in the archival workspace in Finance provides the following details about the archival process as it progresses through its various stages.
 
 The **Job status** column that's visible for each archive scenario captures the overall status of the archive job, as mentioned later.
 
