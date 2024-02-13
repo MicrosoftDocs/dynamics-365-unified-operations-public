@@ -1112,7 +1112,7 @@
           href: quick-tour-account-management.md
       - name: Manage your site settings
         items:
-        - name: Authoring page overview
+        - name: Site builder authoring page overview
           href: authoring-home-overview.md
         - name: Manage users and roles
           href: manage-ecommerce-users-roles.md
