@@ -297,8 +297,26 @@ items:
         href: data-entities/dm-error-descriptions.md  
       - name: Archive historical records
         items:
-        - name: The archive solution preview is currently paused
-          href: ../fin-ops/sysadmin/archive-overview.md
+        - name: Archive overview (preview)
+          href: ../fin-ops/sysadmin/archive-data.md
+        - name: Set up and manage archive
+          items:
+          - name: Set up and manage archive data in Dynamics 365 Finance (preview)
+            href: ../fin-ops/sysadmin/archive-setup.md
+        - name: Archive customization (preview)
+          href: ../fin-ops/sysadmin/archive-custom.md
+        - name: View archive data (preview)
+          href: ../fin-ops/sysadmin/Archive-view-data.md
+        - name: Archive data scenarios (preview)
+          items:
+          - name: Archive Dynamics 365 Finance General ledger (preview)
+            href: ../fin-ops/sysadmin/archive-general-ledger.md
+          - name: Archive Dynamics 365 Supply Chain transactions (preview)
+            href: ../fin-ops/sysadmin/archive-so.md
+          - name: Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
+            href: ../fin-ops/sysadmin/archive-inventory.md
+        - name: Dynamics 365 Finance archive with Dataverse long term retention FAQ (preview)
+          href: ../fin-ops/sysadmin/archive-faq.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
