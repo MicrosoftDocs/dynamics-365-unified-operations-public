@@ -1631,11 +1631,13 @@
             - name: Availability of Electronic Invoicing features
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Australia and New Zealand
-              href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md
+              href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+            - name: Indonesia
+              href: localizations/apac/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia
-              href: localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia - onboarding
-              href: localizations/mea/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
           - name: Electronic Invoicing FAQ
             href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
