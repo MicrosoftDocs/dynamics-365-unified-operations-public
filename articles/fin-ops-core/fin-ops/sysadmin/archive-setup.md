@@ -61,35 +61,45 @@ To enable the archive feature, follow these steps:
 ### Archive with Dataverse long term retention workspace  
 The **Archive with Dataverse long term retention** workspace should be visible under in the **Workspaces** list in Dynamics 365 Finance. 
 
-### Dashboard  
+### View archive job progress  
+The dashboard in Dynamics 365 Finance archival workspace provides the below details on the archival process:  
 
-The dashboard in Dynamics 365 Finance archival workspace provides details on the archival process as it progresses though its various stages.  
+The job status column visible for each archive scenario captures the overall status of the archive job as mentioned below 
+
+|Job Status|Description |
+|---------|-------------|
+|Scheduled |A job has been scheduled but it's not processing. Details on scheduled date and time are available in the dashboard. |
+|In progress |The end-to-end archival process is in progress. Some of the interim stages in the archival process might be complete. |
+|Complete |All stages of the archival process are complete. |
+|Failed |The archive process failed. |
+
+The dashboard in the Dynamics 365 Finance archival workspace provides details on the archival process as it progresses though its various stages. You can view the detailed progress log for each individual archive job by clicking **View progress** > **View detailed logs**. 
 
 >[!Note]
 > The **In-progress** prefix indicates the end-to-end archival process is ongoing even if individual stages are complete.  
 
-| Job status  | View details  |   Description |
-|---|---|---|  
-|Scheduled |Scheduled |Job scheduled to begin at scheduled date and time |
-|In progress | In progress – Initial synch  |Initial sync to Dataverse managed data lake in progress x of y records of tablename synced. |
-|            |In progress – Initial synch complete| Initial sync to Dataverse managed data lake completed x records of tablename synced. |
-|            |In progress – Retention [x of y] |The process is marking records in the Dynamics 365 Finance live application table for archival, and the equivalent records in Dataverse managed data lake are being updated as long term retained. |
-|             |In progress – reconciliation |Reconciliation in progress to verify that the records marked as retained in Dataverse long term retention match the records marked for archival in the Dynamics 365 Finance.  |
-|            | In progress – Move to history [x of y records] |Archived records from the Dynamics 365 Finance application table are being moved to the Dynamics 365 Finance history tables. |
-|Complete |Archival complete – Move to history [x of x records] |The move to the Dynamics 365 Finance history table is complete. |
-|Failed |Failed – Move to history failed |The move to history failed. |
+### Archive with Dataverse long term retention workspace  
+The **Archive with Dataverse long term retention** workspace should be visible under in the **Workspaces** list in Dynamics 365 Finance. 
 
-### Restore from history table to live table  
 
-The archival workspace dashboard also provides progress details on the restore from the history table to the live table. 
+|Information |Description |
+|-------|--------|
+|Initiating long term retention |Long term retention job has been activated |
+|Initial sync for <tablename> in progress [x of y records synced] |Initial sync to Dataverse managed data lake is in progress |
+|Initial sync for <tablename> completed |Initial sync to Dataverse managed data lake is completed |
+|Retention in progress [x of y records of <tablename> marked |The process is marking records in the Finance and Operations live application table for archival, and the equivalent records in Dataverse managed data lake are being updated as long term retained.   |
+|Reconciliation in progress |Reconciliation in progress to verify that the records marked as retained in Dataverse long term retention match the records marked for archival in the Finance and Operations live application tables.    Note: The reconciliation process runs for all FNO entities and not just the entities related to the archive scenario.  |
+|Reconciliation completed |Reconciliation for all FnO entities has been completed |
+|Pending move to history |Awaiting move to history process to begin |
+|Initiating move to history |Move to history process has been activated |
+|Staging data for move to history in progress |Data is in the staging/queueing process for moving to history. |
+|Staging data for move to history completed |Staging/queueing has been completed |
+|Move to history in progress [x of y records of <tablename> moved |Data is being moved from live to history tables |
+|Completed archival of table <tablename> |The move to history process is complete for the mentioned table |
+|The archive job is complete |The end-to-end archival process for ALL tables is completed |
 
-| Job status  | View details  |   Description |
-|---|---|---|  
-|Scheduled |Scheduled |Job scheduled to begin at scheduled date and time |
-|In Progress |In progress – Restored [x of y records] |Restore to live application table in progress |
-|Restored |Complete – Restored [x of x records] |Restore to live application table process completed |
 
->[!Note]
->When data from the history table is restored to the live table, duplicate records are created in the Dataverse long term retention. 
+
+ 
 
  
