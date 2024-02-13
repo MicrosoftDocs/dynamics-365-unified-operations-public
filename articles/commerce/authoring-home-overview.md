@@ -46,7 +46,7 @@ The **Notifications** button is one of the buttons in the upper-right corner of 
 
 Notifications are used throughout site builder to inform you when actions are completed. For example, a notification might state, "Your page has been published" to inform you that a publish action was successful.
 
-Notifications can also inform you about errors that were encountered while an action was being performed. Select the error notification to open its message. The information in this message can help you resolve the error.
+Notifications can also inform you about errors that were encountered while an action was being performed. The information in the message can help you resolve the error. To view an error notification message, select the notification. 
 
 You can clear notifications from the notification menu by selecting **Remove** at the bottom of the notification message. To clear notifications in bulk, select **Remove all** at the bottom of the notification menu.
 
@@ -85,7 +85,7 @@ To create a new website, follow these steps.
 
 1. On the command bar, select **New site**. The **Create site** dialog appears.
 1. On the **Site details** page, enter the following required information.
-    - **Site name** – Enter the name of the website. This name isn't shown to website customers. Instead, it's used in the site list and other places in site builder.
+    - **Site name** – Enter the name of the website. This name is used in the site list and other places in site builder, and isn't shown to website users.
     - **Site administers security group** – Enter the full name of the Microsoft Azure Active Directory (Azure AD) security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
     - **Theme pack** - Select a them pack for your site, for example **Adventure works**.
     - **Site type** - Select **Business to consumer** or **Business to business** .
@@ -93,7 +93,7 @@ To create a new website, follow these steps.
 1. On the **Channel selection** page, select **Add a single channel** or **Add multiple channels**, and then select **Next**.
 1. On the **Channel details** page, select the domain and authentication profile to associate with each channel.
 1. For your default channel, under **Channel defaults**, select **Set as default channel**. 
-1. Optionally, set the **Automatic geo redirection** option to **On** to enable geo redirection by default. You can override this setting at the channel level later, as needed.
+1. Optionally, to enable geo redirection by default, set the **Automatic geo redirection** option to **On**. You can override this setting at the channel level later, as needed.
 1. Select **Next**
 1. On the **Locales** page, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries or regions is assigned to each locale. Optionally select **Edit** to add or remove locales, countries, or regions from each channel as needed. Then select **Add locales**.
 1. Select **Next**.
