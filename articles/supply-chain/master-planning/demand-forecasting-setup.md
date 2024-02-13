@@ -10,6 +10,8 @@ ms.date: 01/05/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Demand forecasting setup
