@@ -82,7 +82,12 @@ Administrators can view the storage size in the existing Power Platform admin ce
 
 To view storage consumed by archived data, follow these steps:
 1. Go to [Power Platform admin center reports](/power-platform/admin/capacity-storage) for Dataverse.
-2. The archived Dynamics 365 finance and operations tables with a prefix **Retained** in the Dataverse DB storage report provide a logical view of the storage capacity consumed by the Dynamics 365 finance and operations archived in Dataverse long term retention.  
+2. The archived Dynamics 365 finance and operations tables with a prefix **Retained** in the Dataverse DB storage report provide a logical view of the storage capacity consumed by the Dynamics 365 finance and operations archived in Dataverse long term retention.
+
+For example, the administrator sees the general ledger tables in the Dataverse database storage report as tablename-Retained. These tables provide a logical view of the storage capacity consumed by the finance table archived in Dataverse long term retention. The mesrp_generaljournalentrybientity-Retained table in the report below is a Finance General ledger functional scenario table that has been archived. If the tablename-Retained isn't visible in the report, download the report into excel to view. 
+
+[![Dataverse database storage report](.media/storage.png)](.media/storage.png)
+
 
 To view storage consumed by the Dynamics 365 finance and operations data, follow these steps:
 1. Go to [Power Platform admin center reports for Dynamics 365 finance and operations](/power-platform/admin/finance-operations-storage-capacity).
