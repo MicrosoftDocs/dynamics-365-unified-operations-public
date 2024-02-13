@@ -89,7 +89,7 @@ To view the storage that's consumed by archived data, follow this step.
 
 On the **Dataverse database storage** report, the archived finance and operations tables that have the "\-Retained" suffix provide a logical view of the storage capacity that's consumed by the finance and operations archived data in Dataverse long-term retention.
 
-For example, when the administrator views the **Dataverse database storage** report, the General ledger tables are shown as **\<*table name*\>-Retained**. These tables provide a logical view of the storage capacity that's consumed by the Finance table that's archived in Dataverse long-term retention. In the example of the report in the following illustration, the mesrp\_generaljournalentrybientity-Retained table is a Finance General ledger functional scenario table that has been archived. If the \<*table name*\>-Retained table isn't visible on the report, download the report to Excel for viewing.
+For example, when the administrator views the **Dataverse database storage** report, the General ledger tables are shown as **\<*tablename*\>-Retained**. These tables provide a logical view of the storage capacity that's consumed by the Finance table that's archived in Dataverse long-term retention. In the example of the report in the following illustration, the mesrp\_generaljournalentrybientity-Retained table is a Finance General ledger functional scenario table that has been archived. If the \<*tablename*\>-Retained table isn't visible on the report, download the report to Excel for viewing.
 
 [![Screenshot that shows an example of the Dataverse database storage report.](.media/storage.png)](.media/storage.png)
 
