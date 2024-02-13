@@ -2,7 +2,7 @@
 title: Process incoming electronic documents
 description: This article provides an overview of the processing for incoming electronic documents.
 author: ilikond
-ms.date: 02/28/2022
+ms.date: 02/12/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
