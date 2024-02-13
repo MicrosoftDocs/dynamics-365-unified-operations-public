@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance archive with Dataverse long term retention FAQ (preview)
-description: This article answers FAQ about archiving data in Dynamics 365 Finance with Dataverse. 
+title: Dynamics 365 Finance archive with Dataverse long-term retention FAQ (preview)
+description: This article answers frequently asked questions about archiving data in Microsoft Dynamics 365 Finance with Dataverse.
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -10,36 +10,46 @@ ms.custom:
 
 ---
 
-# Dynamics 365 finance and operations archive with Dataverse long term retention FAQ 
+# Dynamics 365 Finance archive with Dataverse long-term retention FAQ (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-## After data is archived, can I access the live data and archived data from Dataverse long term retention? 
-Yes, you can use Microsoft Fabric (with Power BI option) to query live and archived data. Dataverse makes it simple to set up Fabric. 
+## After data is archived, can I access the live data and the archived data from Dataverse long-term retention?
 
-### Can I view archived data from my Dynamics 365 Finance application? 
-Yes, an application specific inquiry page is available to view archived data. After data is permanently purged from history tables, the data isn't available for viewing. You can use Microsoft Fabric (with Power BI option) to query data from Dataverse long term retention. 
+Yes, you can use Microsoft Fabric (with the Power BI option) to query live and archived data. Dataverse makes it easy to set up Fabric.
 
-### Can I restore data from history tables to live tables? 
-This isn't currently supported and is planned for a future release. 
+## Can I view archived data from my Dynamics 365 Finance application?
 
-### Can I restore data from Dataverse long term retention back to live tables?
-No, restoring data isn't supported.  
+Yes, an application-specific inquiry page is available so that you can view archived data. After data is permanently purged from history tables, it's no longer available for viewing. You can use Fabric (with the Power BI option) to query data from Dataverse long-term retention.
 
-### Will I save the maximum database capacity if I purge data from the history table? 
-For full savings, users can purge data from the history table. 
+## Can I restore data from history tables to live tables?
 
-### Does this feature archive related tables? 
-No. The data from only the live application tables that are in the scenario are archived. Dependent transactions outside the supported archive scenario aren't archived. For example, archiving Inventory Transaction doesn't archive its original transactions. Administrators are required to set up the archival of SalesOrder separately.  
+No, data restore from history tables to live tables isn't currently supported. However, it's planned in a future release.
 
-### I linked my Dynamics 365 Finance environment with a Dataverse environment and run a successful archival job from my workspace. Can I make a change to relink the Dynamics Finance environment to a new PowerApps/CE environment?
-No, making changes causes data loss and shouldn't be done.  
+## Can I restore data from Dataverse long-term retention back to live tables?
 
-### I ran a successful archival job from my Dynamics 365 Finance archival workspace. When I refresh the Dynamics 365 Finance database with new production data, is my archived data refreshed with the same production Dataverse backup?  
-No. Currently, refreshing the Dynamics 365 Finance database doesn't automatically refresh the Dataverse. You'll need to refresh Dataverse separately from production. 
+No, data restore from Dataverse long-term retention to live tables isn't supported.
 
-### There's no inventory closing for **Moving average transactions**. Does this mean we can't archive these transactions? 
-No, Inventory transactions archival scenario isn't limited for transactions. Moving average transactions and standard cost transactions can be archived if they have closed inventory. 
+## Will I save the maximum database capacity if I purge data from history tables?
 
-### What if I don't want to use long term retention? I just need to delete data from Dynamics 365 Finance database? 
-Purge history is planned for a future release. 
+For full savings, users can purge data from history tables.
+
+## Does this feature archive related tables?
+
+No. Only the data from the live application tables that are in the scenario is archived. Dependent transactions outside the supported archive scenario aren't archived. For example, archiving of the Inventory Transaction table doesn't archive its original transactions. Administrators must set up archiving of the SalesOrder table separately.
+
+## I linked my Finance environment with a Dataverse environment and ran a successful archival job from my workspace. Can I make a change to relink the Finance environment to a new Power Apps/CE environment?
+
+No, changes cause data loss and shouldn't be made.
+
+## I ran a successful archival job from my archival workspace in Finance. When I refresh the Finance database with new production data, is my archived data refreshed with the same production Dataverse backup?
+
+No. Currently, a refresh of the Finance database doesn't automatically refresh Dataverse. You must refresh Dataverse separately from production.
+
+## There's no inventory closing for moving average transactions. Does this mean that we can't archive these transactions?
+
+No, the inventory transaction archival scenario isn't limited for transactions. Moving average transactions and standard cost transactions can be archived if they have closed inventory.
+
+## What if I don't want to use long-term retention? I just need to delete data from the Finance database.
+
+Purge history is planned for a future release.
