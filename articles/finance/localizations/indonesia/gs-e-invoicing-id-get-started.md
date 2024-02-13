@@ -1,6 +1,6 @@
 ---
-title: Get started with electronic invoicing for Indonesia
-description: This article explains how to configure and process electronic invoice for Indonesia.
+title: Get started with electronic invoicing for Indonesia (preview)
+description: This article explains how to configure and process electronic invoice for Indonesia (preview).
 author: AnupamChansoriya
 ms.date: 02/14/2024
 ms.topic: article
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.39
 ms.search.form: 
 ---
 
-# Get started with electronic invoicing for Indonesia
+# Get started with electronic invoicing for Indonesia (preview)
 
 [!include [banner](../../includes/banner.md)]
 
