@@ -36,7 +36,7 @@ As an example of this scenario, a customer who has already gone live wants to lo
 
 ## Known limitations
 
-Because of recent restrictions by the Microsoft Azure SQL Database platform, we don't recommend that you export your database if it's larger than 200 gigabytes (GB). If you must export a larger database, we recommend that you use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until SQL Database can support larger exports. This recommendation applies to export operations, not refresh operations. Refresh operations can support databases that are up to 4 terabytes (TB) in size.
+Because of recent restrictions by the Microsoft Azure SQL Database platform, Microsoft doesn't recommend that you export your database if it's larger than 200 gigabytes (GB). If you must export a larger database, Microsoft recommends that you use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until SQL Database can support larger exports. This recommendation applies to export operations, not refresh operations. Refresh operations can support databases that are up to 4 terabytes (TB) in size.
 
 ## Prerequisites
 
@@ -224,7 +224,7 @@ If the automation from LCS times out, the state of the export database is change
 
 ### The export database takes a long time
 
-The Azure SQL team announced that the Import/Export application programming interface (API) that LCS uses has variable execution times for any database that is over 200 GB in size. If you encounter this issue, you can either [connect your DevTest environment directly to the UAT database](dbmovement-scenario-debugdiag.md) or follow the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md). We don't recommend that you export databases for backup purposes, because the point-in-time restore functionality is available and included with your environment.
+The Azure SQL team announced that the Import/Export application programming interface (API) that LCS uses has variable execution times for any database that is over 200 GB in size. If you encounter this issue, you can either [connect your DevTest environment directly to the UAT database](dbmovement-scenario-debugdiag.md) or follow the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md). Microsoft doesn't recommend that you export databases for backup purposes, because the point-in-time restore functionality is available and included with your environment.
 
 The Lifecycle Services team works directly with the Azure SQL team to increase the performance of the Import/Export API to make improvements in upcoming releases of LCS.
 
