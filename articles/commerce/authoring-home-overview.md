@@ -94,7 +94,7 @@ To create a new website, follow these steps.
 1. On the **Channel details** page, select the domain and authentication profile to associate with each channel.
 1. For your default channel, under **Channel defaults**, select **Set as default channel**. 
 1. Optionally, to enable geo redirection by default, set the **Automatic geo redirection** option to **On**. You can override this setting at the channel level later, as needed.
-1. Select **Next**
+1. Select **Next**.
 1. On the **Locales** page, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries or regions is assigned to each locale. Optionally select **Edit** to add or remove locales, countries, or regions from each channel as needed. Then select **Add locales**.
 1. Select **Next**.
 1. On the **URL paths** page, you can view the default URLs for each channel. You can override the URL paths, domain, or authentication profile for each channel as needed. To select which channel is the default application channel when site pages are authored in site builder, select the channel in the **Set default application channel** field.
