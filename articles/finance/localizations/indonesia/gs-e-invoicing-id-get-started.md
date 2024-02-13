@@ -23,10 +23,14 @@ This article will help you get started with Electronic invoicing for Indonesia. 
 
 ## Prerequisites
 
-Before you begin the procedures in this article, complete the following prerequisites: 
+- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
-- Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
+    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
+    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
+    - [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md)
+
 
 ## Electronic invoicing features configuration
 
@@ -89,7 +93,7 @@ To enable the system to determine which sales tax code in Finance corresponds to
 
 3. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered luxury tax by the system.
 
-    ![Setting application-specific parameters for sales tax codes.](../media/apac-idn-aplication-specific-parameters-tax-code.png)
+    ![Setting application-specific parameters for sales tax codes.](../media/idn-eis-appSpecificParams-taxTypeLookup.png)
 
 To enable the system to determine which sales tax group in Finance corresponds to VAT-free reasons (transaction code 07, reasons 1 through 8) or VAT-exempt reasons (transaction code 08, reasons 1 through 5) when invoices are exported, follow these steps to set the application specific parameters for those reasons.
 
@@ -98,7 +102,7 @@ To enable the system to determine which sales tax group in Finance corresponds t
 3. Set the **Tax group (TaxGroup)** field to the sales group that is used for exemption operations in Finance.
 4. On the last line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that all other sales tax groups should not be considered exemption groups by the system.
 
-    ![Setting application-specific parameters for transaction codes.](../media/apac-idn-aplication-specific-parameters-transaction-codes-07-08.png)
+    ![Setting application-specific parameters for transaction codes.](../media/idn-eis-appSpecificParams-vatFreeInfoLookup.png)
 
 Save your changes, once specific conditions for each application specific parameters is defined.
 
@@ -155,24 +159,29 @@ To configure the Vendor invoice feature setup, you should already have created a
 5. Import the following configurations:
 
     - Customer invoice context model
-    - Invoice model
+    - Invoices Communication Model
     - Vendor invoice Mapping to destination
     - Vendor invoice import (ID), Vendor invoice import XML (ID)
 
-### Turn on the feature for processing Indonesian electronic invoices
+### Enable Finance features for processing Indonesian electronic invoices
+1. In the **Feature management** workspace, disable the **Electronic Invoicing integration using Microsoft Dataverse** feature if it's enabled. Then enable the **Electronic document batch submission** feature.
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-2. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
+    > [!IMPORTANT]
+    > The **Electronic document batch submission** feature can't be enabled if the **Electronic Invoicing integration using Microsoft Dataverse** feature is already enabled.
+    
+2. If you want to be able to configure Electronic document parameters on a legal entity basis, enable the **Electronic documents configuration per legal entities in Electronic Invoicing** feature.
+3. To enable electronic invoice integration for Indonesia, go to **Organization administration** \> **Setup** \> **Electronic document parameters**, and then, on the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
 
 ### Set up the processing for Indonesian electronic sales invoices
 
 1. Go to **Organization administration** \> **Setup**\ > **Electronic document parameters**.
 2. On the **Electronic document** tab, select **Add**, and enter the customer invoice journal.
 3. Optional: Select **Add** again, and enter the project invoice journal.
-4. In the **Batch submission ID** section, add a number sequence. The selected number sequence should be continuous. This number sequence is used to number the invoice batches when the system exports them.
-5. Select **Save**.
-
-    ![Setting up the processing for electronic sales invoices.](../media/apac-idn-rcs-electronic-document-parameters.png)
+4. Select the **Batch submission** checkbox.
+5. In the **Batch submission ID** section, add a number sequence. The selected number sequence should be continuous. This number sequence is used to number the invoice batches when the system exports them.
+6. Select **Save**.
+   
+     ![Setting up the processing for electronic sales invoices.](../media/idn-electronic-document-parameters.jpg)
 
 ### Set up the processing for Indonesian electronic vendor invoices
 
@@ -220,9 +229,8 @@ When issued invoices or imported vendor invoices are processed through Electroni
 ### Submit or export issued invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. Set the **Submit document batch** option to **Yes** to export invoices in batch. Otherwise, each invoice is exported separately. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+2. To export invoices in a batch, set the **Submit document batch** option to **Yes**. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
 3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for export.
-4. Go to **System administration** \> **Setup** \> **Business events** \> **Business events parameters**, and then select **Business events batch job**. If you set up the Business event batch processor, this job can be run in batch mode.
 
 ### View submission logs
 
