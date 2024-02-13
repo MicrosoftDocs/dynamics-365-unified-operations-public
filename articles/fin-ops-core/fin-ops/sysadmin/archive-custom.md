@@ -52,6 +52,67 @@ To create a history table corresponding to the live table in the archive scope, 
 2. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on RecId column is sufficient. Create additional index to improve query performance if needed and to maintain foreign key relationships.
 3. Extend ArchiveAutomationJobRequestCreator class for a scenario to add the new table to archive table graph.
 
+#### Code example
+Here's a code example to customize the general ledger archive job request creator class to add a new table:
+using Microsoft.Dynamics.Archive.Contracts; 
+
+  
+
+[ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator] 
+
+final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension 
+
+{ 
+
+    public ArchiveJobPostRequest createPostJobRequestForArchiveTrans(LedgerArchiveTrans _archiveTrans 
+
+    { 
+
+        ArchiveJobPostRequest postRequest = next createPostJobRequestForArchiveTrans(_archiveTrans; 
+
+        ArchiveServiceArchiveJobPostRequestBuilder builder = 
+
+            ArchiveServiceArchiveJobPostRequestBuilder::createFromArchiveJobPostRequest(postRequest; 
+
+        // Use builder to add more live tables, history tables, join conditions and where conditions (if needed 
+
+        // Example: Adding my new general ledger table to archive table graph 
+
+        var generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry; 
+
+        var generalJournalAccountEntryTableName = generalJournalAccountEntryTable.name(DbBackend::Sql; 
+
+        var newMyNewGeneralLedgerTable = new DictTable(tableNum(MyNewGeneralLedgerTable; 
+
+        var newMyNewGeneralLedgerTableName = newMyNewGeneralLedgerTable.name(DbBackend::Sql; 
+
+        var newMyNewGeneralLedgerTableHistory = new DictTable(tableNum(MyNewGeneralLedgerTableHistory; 
+
+        var newMyNewGeneralLedgerTableHistoryName = newMyNewGeneralLedgerTableHistory.name(DbBackend::Sql; 
+
+        var myNewGeneralLedgerTableSourceTable = ArchiveServiceSourceTableConfiguration::newForSourceTable( 
+
+            newMyNewGeneralLedgerTableName, 
+
+            newMyNewGeneralLedgerTableHistoryName, 
+
+            tableStr(MyNewGeneralLedgerTableBiEntity; 
+
+        // Add parent table 
+
+        myNewGeneralLedgerTableSourceTable.parmParentSourceTableName(generalJournalAccountEntryTableName; 
+
+        builder.addSourceTableForLongTermRetention(myNewGeneralLedgerTableSourceTable 
+
+            .addJoinCondition(newMyNewGeneralLedgerTableName, 
+
+            newMyNewGeneralLedgerTable.fieldName(fieldNum(MyNewGeneralLedgerTable, GeneralJournalAccountEntry, DbBackend::Sql, 
+
+            generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId, DbBackend::Sql; 
+
+        return builder.completeArchiveJobPostRequest(; 
+
+
 #### Dynamics 365 Finance table names in live, history and Dataverse managed data lake   
 
 |Scenario|Live table     |  History table   |  Bi Entity     | Dataverse managed data lake table    |
