@@ -2,7 +2,7 @@
 title: Receive electronic documents
 description: This article explains how to work with incoming electronic documents.
 author: ilikond
-ms.date: 02/14/2022
+ms.date: 02/12/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
