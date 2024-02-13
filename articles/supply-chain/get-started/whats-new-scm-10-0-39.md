@@ -69,8 +69,10 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Inventory management | [Inventory Visibility diagnostic tool](../inventory/inventory-visibility-diagnostic-tool.md) |
+| Inventory management | [Use the Inventory Visibility app UI version 2 (preview)](../inventory/inventory-visibility-power-platform.md) – Many other articles about the Inventory Visibility Add-in have also been updated to reflect the new UI for the Inventory Visibility app in Power Apps. |
 | Master planning | [Safety stock pegging options](../master-planning/safety-stock-pegging.md) |
 | Sales and marketing | [Calculate sales totals when prices include sales tax](../sales-marketing/sales-tax-calculation.md) |
+| Warehouse management | [Automatic rewaving of nonallocated shipment lines](../warehousing/auto-rewave-shipments.md) |
 | Warehouse management | [Set up a mobile device menu item for moving items in the warehouse](../warehousing/mobile-device-movement-menu.md) |
 | Warehouse management | [Set up a mobile device menu item for moving items by template](../warehousing/mobile-device-move-by-template-menu.md) |
 | Warehouse management | [Warehouse management only mode overview (preview)](../warehousing/wms-only-mode-overview.md) – The preview functionality that's described in this article and its related articles is frequently updated. The documentation is regularly updated to match the changes that are released with each version of Supply Chain Management. |
@@ -79,7 +81,7 @@ We have recently added or significantly updated the following help articles. The
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of Finance and Operations apps (April 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).<!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of Finance and Operations apps (April 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
 
 ### Bug fixes
 
