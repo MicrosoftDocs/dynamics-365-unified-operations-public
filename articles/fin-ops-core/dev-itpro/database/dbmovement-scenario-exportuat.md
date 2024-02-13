@@ -192,7 +192,8 @@ If you are using Commerce channels, when importing a database to a developer env
 1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update, which will create the channel database.
 2.	To restore any previously deployed channel database extensions, re-apply the corresponding Retail self-service deployable package.
 
->Note: Starting with version 10.0.38 the collated/legacy Channel DB is no longer updated or supported.  Restore Commerce Channel functionality you will need to setup a Sealed CSU following the instructions [here](/commerce/dev-itpro/install-csu-dev-env.md)
+> [!NOTE]
+> Starting with Commerce version 10.0.38, the collated/legacy channel database is no longer updated or supported. To restore Commerce channel functionality, you must set up a sealed CSU following the instructions in [Install Commerce Scale Unit on a development environment](/commerce/dev-itpro/install-csu-dev-env.md)
 
 ### Reprovision the target environment
 
