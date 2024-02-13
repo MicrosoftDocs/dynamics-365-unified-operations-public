@@ -42,8 +42,8 @@ This article will help you get started with Electronic invoicing for Indonesia. 
 6. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
 7. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
    
-> [!NOTE]
-    > If you don't see the feature in the list, select **Synchronize**, and then repeat step 2.
+   > [!NOTE]
+   > If you don't see the feature in the list, select **Synchronize**, and then repeat step 2.
 
 When you import the **Indonesian electronic invoice (ID)** feature from the Dataverse repository, all the feature settings are imported. These settings include the configurations and actions of the processing pipeline.
 
