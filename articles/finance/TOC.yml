@@ -1633,7 +1633,7 @@
             - name: Australia and New Zealand
               href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
             - name: Indonesia
-              href: localizations/mea/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
+              href: localizations/apac/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia
               href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia - onboarding
