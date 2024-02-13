@@ -1,8 +1,8 @@
 ---
 title: Get started with setting up the Warehouse management module
 description: This article explains how to work with the built-in wizards and checklists that help you quickly and efficiently set up and configure the Warehouse management module.
-author: GalynaFedorova
-ms.author: gfedorova 
+author: Mirzaab
+ms.author: mirzaab 
 ms.reviewer: kamaybac
 ms.search.form: WHSWarehouseInitiationWizard, WHSManagementInitiationWizard, WHSImplementationWorkspace, WHSImplementationTaskListPage
 ms.topic: how-to

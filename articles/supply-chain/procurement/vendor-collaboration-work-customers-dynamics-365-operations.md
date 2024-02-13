@@ -3,7 +3,7 @@
 
 title: Vendor collaboration with customers
 description: This article describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
-author: GalynaFedorova
+author: Henrikan
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: kamaybac
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
 

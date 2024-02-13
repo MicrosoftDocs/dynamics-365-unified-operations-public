@@ -10,6 +10,8 @@ ms.date: 11/15/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Use your own custom Azure Machine Learning algorithms in Demand planning (preview)
