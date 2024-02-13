@@ -45,7 +45,7 @@ Whether you’re creating a new task recording or basing your recording on a Mic
 -   When you walk through the process before you record, notice where you use shortcut keys or the **Enter** key, so that you can avoid using them during the actual recording.
 -   Identify the following:
     -   Do you want to group steps together into sub-tasks? Sub-tasks visually set apart sections of a process. For example, if you are creating a recording for "Creating and releasing a product," you may want to group together the steps that are required to create a product, and then group together the steps that are required to release the product. Sub-tasks also make longer processes easier to read.
-    -   Do you want to add annotations, and if so, where? See "Understand the different types of annotations" below for more information.
+    -   Do you want to add annotations? See "Understand the different types of annotations" below for more information.
     -   What values are added in the various fields as you complete the steps of the business process? 
 
 **Write your description and annotations ahead of time**
@@ -55,17 +55,17 @@ Whether you’re creating a new task recording or basing your recording on a Mic
 
 **Understand the different types of annotations** All annotations are optional. Only add them if they provide helpful information to the user.
 
--   **Title**: A title annotation will appear before the step text that task recorder automatically generates. In the task guide, the title annotation appears above the automatically generated text. Use this type of annotation to explain why the user is doing the step or to give additional context.
+-   **Title**: A title annotation appears before the step text that task recorder automatically generates. In the task guide, the title annotation appears above the automatically generated text. Use this type of annotation to explain why the user is doing the step or to give context.
 
 This is the editing pane that you see when you add an annotation as you create your recording. Enter a title annotation in the **Title** box. 
 
 [![Editing pane with title annotation.](../../dev-itpro/user-interface/media/screen1.png)](/media/screen1.png) 
 
-This is what the title annotation looks like in the "bubble" in the task guide. 
+This is what the title annotation looks like in the task guide. 
 
 [![Title annotation appearance in task guide.](../../dev-itpro/user-interface/media/screen2.png)](/media/screen2.png)
 
--   **Notes:** A notes annotation will appear after the step text that task recorder automatically generates. In the task guide it will only be visible if the user clicks the **Show more** link in the task guide bubble. Use this type of annotation to describe anything that a user needs to know to complete the step.
+-   **Notes:** A notes annotation appears after the step text that task recorder automatically generates. In the task guide, it'll only be visible if the user clicks **Show more** in the task guide bubble. Use this type of annotation to describe anything that a user needs to know to complete the step.
 
 This is the editing pane that you see when you add an annotation as you create your recording. Enter a notes annotation in the **Notes** box. 
 
@@ -75,17 +75,17 @@ This is what the notes annotation looks like in the "bubble" in the task guide.
 
 [![Notes annotation appearance in task guide.](../../dev-itpro/user-interface/media/screen4.png)](/media/screen4.png)
 
--   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step.** Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of the application, or to refer to other recordings (although you cannot create hyperlinks in annotations).
+-   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step.** Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a page, the task guide “bubble” appears someplace on the page, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” points to the control when the task guide is played. In the Help pane, an info step annotation appears as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of the application, or to refer to other recordings (although you cannot create hyperlinks in annotations).
 
 **Determine how long to make your recording**
 
--   The user will generally either read or play the recording from start to finish, so don’t combine steps or tasks that are better done separately.
+-   The user will either read or play the recording from start to finish, so don’t combine steps or tasks that are better done separately.
 -   Try not to record a long scenario that spans multiple sub-processes. For example, “Operate in-store customer service desk” is too broad; break it up into shorter tasks such as “Accept returns” and “Add to gift card.”
 -   If a task can be carried out as part of several different business processes, create a separate recording for it, and you can refer to it in the other recordings.
 -   If the process involves multiple tasks that the person likely does all at once, you can keep the tasks in one recording, for example, “Set up and assign functionality profiles.”
 -   If it is something someone does once (such as configuration) and then another task that they can do immediately afterward but may do repeatedly, and on its own, break them up into two task recordings.
 
-**Decide where, in the UI, to start a recording** The page that you are on when you start recording a task recording affects which page the task guide is displayed for. For example, if you want your task recording to be listed in the Help pane when a user clicks Help on the General ledger parameters page, you must start your recording on the General ledger parameters page. **Save recordings as .axtr files** When you are done creating or editing a task recording, you are presented with several options for how you want to download, or save the recording. You can download the file as a task recording package (.axtr), download it as a raw recording file (.xml), download it as a Word document, or save the file to an LCS library. It is a good idea to always save your task recording as a task recording package file (.axtr). This will help make maintenance of the file easier if procedures or annotations need to change later. If you want to download the file as a Word document, also save it as a task recording package file.
+**Decide where, in the UI, to start a recording** The page that you are on when you start recording a task recording affects which page the task guide is displayed for. For example, if you want your task recording to be listed in the Help pane when a user clicks Help on the **General ledger parameters** page, start your recording on the **General ledger parameters** page. **Save recordings as .axtr files** When you are done creating or editing a task recording, you are presented with several options for how you want to download, or save the recording. You can download the file as a task recording package (.axtr), download it as a raw recording file (.xml), download it as a Word document, or save the file to an LCS library. It's a good idea to always save your task recording as a task recording package file (.axtr). This helps make maintenance of the file easier if procedures or annotations need to change later. If you want to download the file as a Word document, also save it as a task recording package file.
 
 ## Create your task recording
 For detailed walk-through steps, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
