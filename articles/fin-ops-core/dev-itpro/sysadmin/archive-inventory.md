@@ -17,7 +17,7 @@ This article explains how to archive data for inventory transactions with Datave
 
 Currently, users can consolidate and compress the inventory transactions table (InventTrans) and archive the original records in the InventTransArchive table. For more information, see [Archive inventory transactions](../../supply-chain/inventory/archive-inventory-transactions.md).
 
-The new **Archive with Dataverse long term retention** feature addresses the data volume issue of the InventTrans table and helps improves system performance. It moves InventTransArchive records to a Microsoft Azure data lake and replicates corresponding records to InventTransArchiveHistory in Dynamics 365 Supply Chain Management for performance optimization.
+The new **Archive with Dataverse long term retention** feature addresses the data volume issue of the InventTrans table and helps improve system performance. It moves InventTransArchive records to a Microsoft Azure data lake and replicates corresponding records to InventTransArchiveHistory in Dynamics 365 Supply Chain Management for performance optimization.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ To move InventTransArchive records to the Dataverse-managed data lake, follow th
 1. Go to **Workspaces** \> **Archive with Dataverse long term retention** \> **Inventory transactions**.
 1. Select **New long term retention job** to open the **Long term retention job creation** wizard.
 1. Enter a name for the job, and then select **Next**.
-1. Select the period that has been processed by the **Inventory transactions archive** feature, and then select **Next**.
+1. Select the period that was processed by the **Inventory transactions archive** feature, and then select **Next**.
 1. Enter the start date and time of the long-term retention job, and then select **Next**.
 1. Review the job details, and create the long-term retention job.
 
