@@ -1,6 +1,6 @@
 ---
 title: Archive customization (preview)
-description: This article describes how the archive feature in Dynamics 365 Finance supports table customizations. 
+description: This article describes how the archive feature in Microsoft Dynamics 365 Finance supports table customizations.
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -9,139 +9,116 @@ ms.date: 2/06/2024
 ms.custom:
 
 ---
-# Archive customization 
+# Archive customization (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-This article describes how the archive feature Dynamics 365 Finance supports customization. The archival framework supports extensions to include table custom fields and custom tables in supported functional scenarios. 
+This article describes how the archive feature in Microsoft Dynamics 365 Finance supports customization. The archival framework supports extensions to include custom table fields and custom tables in supported functional scenarios.
 
-## Add custom fields in history tables and business intelligence entities 
+## Add custom fields in history tables and business intelligence entities
 
-Custom fields added to a standard table are required to be added to the corresponding history table and the business intelligence entity. Customized business intelligence entity is required to be refreshed in Dataverse to archive data with Dataverse long term retention. 
+Custom fields that are added to a standard table must be added to the corresponding history table and the business intelligence (BI) entity. The customized BI entity must be refreshed in Dataverse to archive data with Dataverse long-term retention.
 
-### History tables 
+### History tables
 
-Transactions records are moved to the history tables and the history table schema must match with its corresponding live table. All columns in live tables must be present in its mirrored history table. 
+Transactions records are moved to the history tables. The schema of a history table must match its corresponding live table. All columns in the live table must be present in its mirrored history table.
 
- - Columns exclusion rule: SysRowVersion and SysDataState columns are added by the platform and are managed using table metadata properties. These columns aren't required to be added to the history table. 
+<a id="excl-rule"></a>**Column exclusion rule:** `SysRowVersion` and `SysDataState` columns are added by the platform and managed by using table metadata properties. These columns don't have to be added to the history tables.
 
-Beginning in Dynamics 365 Finance version 10.0.39 archiving General Ledger data is available. 
+As of Finance version 10.0.39, archiving of General ledger data is available.
 
-### Business entity 
+### Business entity
 
-Dataverse interacts with Dynamics 365 Finance. These virtual entities are used to retrieve data from the Dynamics 365 Finance database and save it to their corresponding Dataverse managed data lake tables.  
+Dataverse interacts with Finance. These virtual entities are used to retrieve data from the Finance database and save it to the corresponding tables in the Dataverse-managed Azure data lake.
 
->[!Important]
-> Don’t add relationships between the entities. 
+> [!IMPORTANT]
+> Don't add relationships between the entities.
 
-### Step 1: Add fields to history table via extension 
-The archive framework requires all live table columns be mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. 
-For more information about how to add fields to history tables through extension in Dynamics 365 Finance, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md). 
+### Step 1: Add fields to the history table via extensions
 
-### Step 2: Add fields to business intelligence entities via extension 
-Additional fields added to live tables are required to be added to corresponding BI entities. 
+The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in Finance, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
 
-### Step 3: Refresh Virtual entity in Dataverse 
-The customized business entity must be refreshed in Dataverse to archive data in Dataverse long term retention store.  
+### Step 2: Add fields to BI entities via extensions
 
-### Add new table to archive scenario 
+Additional fields that are added to live tables must be added to the corresponding BI entities.
 
-Additional tables can be included in the archive scenario if they have a direct or indirect relationship to the main live table. 
-To create a history table corresponding to the live table in the archive scope, follow these steps:  
-1. Create a new history table mirroring all fields from the corresponding live table including all metadata properties on the live table. See column exclusion rule above.
-2. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on RecId column is sufficient. Create additional index to improve query performance if needed and to maintain foreign key relationships.
-3. Extend ArchiveAutomationJobRequestCreator class for a scenario to add the new table to archive table graph.
+### Step 3: Refresh the virtual entity in Dataverse
 
-#### Code example
-Here's a code example to customize the general ledger archive job request creator class to add a new table:
+The customized business entity must be refreshed in Dataverse to archive data in the Dataverse long-term retention store.
+
+## Add new tables to the archive scenario
+
+Additional tables can be included in the archive scenario if they have a direct or indirect relationship with the main live table.
+
+To create a history table that corresponds to the live table in the archive scope, follow these steps.
+
+1. Create a new history table that mirrors all fields from the corresponding live table, including all metadata properties on the live table. See the [column exclusion rule](#excl-rule) earlier in this article.
+1. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on the `RecId` column is sufficient. Create an additional index to improve query performance as required and to maintain foreign key relationships.
+1. Extend the `ArchiveAutomationJobRequestCreator` class for a scenario to add the new table to archive table chart.
+
+### Code example
+
+The following example shows how to customize the General ledger archive job request creator class to add a new table.
+
+```
 using Microsoft.Dynamics.Archive.Contracts; 
-
-  
-
 [ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator] 
-
 final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension 
-
-{ 
-
+{
     public ArchiveJobPostRequest createPostJobRequestForArchiveTrans(LedgerArchiveTrans _archiveTrans 
-
     { 
-
         ArchiveJobPostRequest postRequest = next createPostJobRequestForArchiveTrans(_archiveTrans; 
-
         ArchiveServiceArchiveJobPostRequestBuilder builder = 
-
             ArchiveServiceArchiveJobPostRequestBuilder::createFromArchiveJobPostRequest(postRequest; 
 
         // Use builder to add more live tables, history tables, join conditions and where conditions (if needed 
-
         // Example: Adding my new general ledger table to archive table graph 
-
         var generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry; 
-
         var generalJournalAccountEntryTableName = generalJournalAccountEntryTable.name(DbBackend::Sql; 
-
         var newMyNewGeneralLedgerTable = new DictTable(tableNum(MyNewGeneralLedgerTable; 
-
         var newMyNewGeneralLedgerTableName = newMyNewGeneralLedgerTable.name(DbBackend::Sql; 
-
         var newMyNewGeneralLedgerTableHistory = new DictTable(tableNum(MyNewGeneralLedgerTableHistory; 
-
         var newMyNewGeneralLedgerTableHistoryName = newMyNewGeneralLedgerTableHistory.name(DbBackend::Sql; 
-
         var myNewGeneralLedgerTableSourceTable = ArchiveServiceSourceTableConfiguration::newForSourceTable( 
-
             newMyNewGeneralLedgerTableName, 
-
             newMyNewGeneralLedgerTableHistoryName, 
-
             tableStr(MyNewGeneralLedgerTableBiEntity; 
 
         // Add parent table 
-
         myNewGeneralLedgerTableSourceTable.parmParentSourceTableName(generalJournalAccountEntryTableName; 
-
         builder.addSourceTableForLongTermRetention(myNewGeneralLedgerTableSourceTable 
-
             .addJoinCondition(newMyNewGeneralLedgerTableName, 
-
             newMyNewGeneralLedgerTable.fieldName(fieldNum(MyNewGeneralLedgerTable, GeneralJournalAccountEntry, DbBackend::Sql, 
-
             generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId, DbBackend::Sql; 
 
         return builder.completeArchiveJobPostRequest(; 
+```
 
+### Finance table names in live, history, and Dataverse-managed data lake tables
 
-#### Dynamics 365 Finance table names in live, history and Dataverse managed data lake   
-
-|Scenario|Live table     |  History table   |  Bi Entity     | Dataverse managed data lake table    |
+| Scenario | Live table | History table | BI entity | Dataverse-managed data lake table |
 |---|---|---|---|---|
-|Finance General Ledger | GENERALJOURNALACCOUNTENTRY | GENERALJOURNALACCOUNTENTRYHISTORY | GeneraljournalaccountentryBiEntity|  mserp_GeneraljournalaccountentryBiEntity  |
-|     |GENERALJOURNALACCOUNTENTRY_W  |GENERALJOURNALACCOUNTENTRYHISTORY_W  |GeneraljournalaccountentrywBiEntity |mserp_GeneraljournalaccountentrywBiEntity  |
-|     |GENERALJOURNALENTRY  |GENERALJOURNALENTRYHISTORY  |cus  |mserp_GeneraljournalentryBiEntity  |
-|     |GENERALJOURNALENTRY_W  |GENERALJOURNALENTRYHISTORY_W  |GeneraljournalentrywBiEntity  |mserp_GeneraljournalentrywBiEntity  |
-|     |LEDGERCONSOLIDATEHISTREF  |LEDGERCONSOLIDATEHISTREFHISTORY  |LedgerconsolidatehistrefBiEntity  |mserp_LedgerconsolidatehistrefBiEntity  |
-|     |LEDGERENTRY  | LEDGERENTRYHISTORY  |LedgerentryBiEntity  |mserp_LedgerentryBiEntity  |
-|     |LEDGERENTRYJOURNAL  |LEDGERENTRYJOURNALHISTORY  |LedgerentryjournalBiEntity  |mserp_LedgerentryjournalBiEntity  |
-|     |LEDGERENTRYJOURNALIZING  |LEDGERENTRYJOURNALIZINGHISTORY  |LedgerentryjournalizingBiEntity  |mserp_LedgerentryjournalizingBiEntity  |
-|     |LEDGERTRANSSETTLEMENT  |LEDGERTRANSSETTLEMENTHISTORY  |LedgertranssettlementBiEntity  |mserp_LedgertranssettlementBiEntity  |
-|     |SUBLEDGERVOUCHERGENERALJOURNALENTRY  |SUBLEDGERVOUCHERGENERALJOURNALENTRYHISTORY  |SubledgervouchergeneraljournalentryBiEntity  |mserp_SubledgervouchergeneraljournalentryBiEntity  |
-|Supply Chain Management Sales order|MCRRETURNSALESTABLE  |MCRRETURNSALESTABLEHISTORY  |McrreturnsalestableBiEntity  |mserp_McrreturnsalestableBiEntity  |
-|     |MCRSALESLINE  |MCRSALESLINEHISTORY  |McrsaleslineBiEntity  |mserp_McrsaleslineBiEntity  |
-|     |MCRSALESTABLE |MCRSALESTABLEHISTORY |McrsalestableBiEntity |mserp_McrsalestableBiEntity  |
-|     |RETAILSALESLINE |RETAILSALESLINEHISTORY  |RetailsaleslineBiEntity  |mserp_RetailsaleslineBiEntity  |
-|     |RETAILSALESTABLE|  RETAILSALESTABLEHISTORY  |RetailsalestableBiEntity  |mserp_RetailsalestableBiEntity  |
-|     |SALESLINE  |SALESLINEHISTORY  |SaleslineBiEntity  |mserp_SaleslineBiEntity  |
-|     |SALESLINE_BR  |SALESLINEHISTORY_BR  |SaleslinebrBiEntity  |mserp_SaleslinebrBiEntity  |
-|     | SALESLINE_IN  |SALESLINEHISTORY_IN  |SaleslineinBiEntity  |mserp_SaleslineinBiEntity  |
-|     | SALESLINE_W  |SALESLINEHISTORY_W  |SaleslinewBiEntity  |mserp_SaleslinewBiEntity  |
-|     | SALESTABLE  |SALESTABLEHISTORY  |SalestableBiEntity  | mserp_SalestableBiEntity  |
-|     |SALESTABLE_BR  |SALESTABLEHISTORY_BR  |SalestablebrBiEntity  |mserp_SalestablebrBiEntity  |
-|     |SALESTABLE_RU |SALESTABLEHISTORY_RU  |SalestableruBiEntity  |mserp_SalestableruBiEntity  |
-|     |SALESTABLE_W  |SALESTABLEHISTORY_W  |SalestablewBiEntity  |mserp_SalestablewBiEntity  |
-|Supply Chain Management Inventory transaction|INVENTTRANSARCHIVE  |INVENTTRANSARCHIVEHISTORY  |InventtransarchiveBiEntity  |mserp_InventTransArchiveBiEntity  |
-
-
-
-
+| Finance General ledger | GENERALJOURNALACCOUNTENTRY | GENERALJOURNALACCOUNTENTRYHISTORY | GeneraljournalaccountentryBiEntity | mserp\_GeneraljournalaccountentryBiEntity |
+| | GENERALJOURNALACCOUNTENTRY\_W | GENERALJOURNALACCOUNTENTRYHISTORY\_W | GeneraljournalaccountentrywBiEntity | mserp\_GeneraljournalaccountentrywBiEntity |
+| | GENERALJOURNALENTRY | GENERALJOURNALENTRYHISTORY | cus | mserp\_GeneraljournalentryBiEntity |
+| | GENERALJOURNALENTRY\_W | GENERALJOURNALENTRYHISTORY\_W | GeneraljournalentrywBiEntity | mserp\_GeneraljournalentrywBiEntity |
+| | LEDGERCONSOLIDATEHISTREF | LEDGERCONSOLIDATEHISTREFHISTORY | LedgerconsolidatehistrefBiEntity | mserp\_LedgerconsolidatehistrefBiEntity |
+| | LEDGERENTRY | LEDGERENTRYHISTORY | LedgerentryBiEntity | mserp\_LedgerentryBiEntity |
+| | LEDGERENTRYJOURNAL | LEDGERENTRYJOURNALHISTORY | LedgerentryjournalBiEntity | mserp\_LedgerentryjournalBiEntity |
+| | LEDGERENTRYJOURNALIZING | LEDGERENTRYJOURNALIZINGHISTORY | LedgerentryjournalizingBiEntity | mserp\_LedgerentryjournalizingBiEntity |
+| | LEDGERTRANSSETTLEMENT | LEDGERTRANSSETTLEMENTHISTORY | LedgertranssettlementBiEntity | mserp\_LedgertranssettlementBiEntity |
+| | SUBLEDGERVOUCHERGENERALJOURNALENTRY | SUBLEDGERVOUCHERGENERALJOURNALENTRYHISTORY | SubledgervouchergeneraljournalentryBiEntity |mserp\_SubledgervouchergeneraljournalentryBiEntity |
+| Supply Chain Management Sales order | MCRRETURNSALESTABLE | MCRRETURNSALESTABLEHISTORY | McrreturnsalestableBiEntity | mserp\_McrreturnsalestableBiEntity |
+| | MCRSALESLINE | MCRSALESLINEHISTORY | McrsaleslineBiEntity | mserp\_McrsaleslineBiEntity |
+| | MCRSALESTABLE | MCRSALESTABLEHISTORY | McrsalestableBiEntity | mserp\_McrsalestableBiEntity |
+| | RETAILSALESLINE | RETAILSALESLINEHISTORY | RetailsaleslineBiEntity | mserp\_RetailsaleslineBiEntity |
+| | RETAILSALESTABLE | RETAILSALESTABLEHISTORY | RetailsalestableBiEntity | mserp\_RetailsalestableBiEntity |
+| | SALESLINE | SALESLINEHISTORY | SaleslineBiEntity | mserp\_SaleslineBiEntity |
+| | SALESLINE\_BR | SALESLINEHISTORY\_BR | SaleslinebrBiEntity | mserp\_SaleslinebrBiEntity |
+| | SALESLINE\_IN | SALESLINEHISTORY\_IN | SaleslineinBiEntity | mserp\_SaleslineinBiEntity |
+| | SALESLINE\_W | SALESLINEHISTORY\_W | SaleslinewBiEntity | mserp\_SaleslinewBiEntity |
+| | SALESTABLE | SALESTABLEHISTORY | SalestableBiEntity | mserp\_SalestableBiEntity |
+| | SALESTABLE\_BR | SALESTABLEHISTORY\_BR | SalestablebrBiEntity | mserp\_SalestablebrBiEntity |
+| | SALESTABLE\_RU | SALESTABLEHISTORY\_RU | SalestableruBiEntity | mserp\_SalestableruBiEntity |
+| | SALESTABLE\_W | SALESTABLEHISTORY\_W | SalestablewBiEntity | mserp\_SalestablewBiEntity |
+| Supply Chain Management Inventory transaction | INVENTTRANSARCHIVE | INVENTTRANSARCHIVEHISTORY | InventtransarchiveBiEntity | mserp\_InventTransArchiveBiEntity |
