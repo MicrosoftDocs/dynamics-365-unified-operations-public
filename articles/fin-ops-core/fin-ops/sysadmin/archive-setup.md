@@ -30,22 +30,25 @@ To prepare your environment to archive data, follow these steps.
 > [!NOTE]
 > If the Microsoft Power Platform environment isn't set up for the sandbox instance, complete the setup in Lifecyle Services.
 
-## Set up Finance to archive data with Dataverse long-term retention
+## Set up Dynamics 365 Finance and Operations to archive data with Dataverse long-term retention
 
-To set up Finance to archive data, follow these steps to confirm that the Finance archive add-in can be installed.
+To archive data, follow these steps to confirm that the Dataverse archive add-in can be installed.
 
-1. In Power Platform admin center, go to **Environments**, select the environment, and then select **Dynamics 365 apps**.
+1. In [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/applications), go to **Environments**, select the environment, and then select **Dynamics 365 apps**.
 1. Update the **Finance and operations virtual entity** app if the status is **Update available**.
+> [!Note]
+> Known issue - If msft_DataArchivalBaseComponents version is below 1.0.0.178 then download the corresponding component as per Dynamics 365 CE version below. This is required because Dynamics 365 CE is native to Dataverse and Dynamics 365 Finance and Operations data archival feature leverages Dataverse.
+
+| Dynamics 365 CE Version | msft_DataArchivalBaseComponent |
+|---|---|
+| 9.2.23121.00190 | . |
+| 9.2.23122.00186 | . |
+| 9.2.23123.00210 | . |
+  
 1. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
+2. Install Dynamics 365 Archive with Dataverse Long Term Retention - From the Power Platform admin center, Click on Install App and search for Dynamics 365 Archive with Dataverse Long Term Retention (Preview). Select and click install. If you already have the app installed, you should install the latest update.
 
-## Install the archive service package
 
-To install the archive service package, follow these steps.
-
-1. Go to the [Archive service package](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-archiveservice-preview?flightCodes=0538131b166e4600b7ea7a53cc34f6b8) on AppSource.
-1. Select **Get it now**.
-1. You're redirected to the Power Platform admin center portal. Confirm that you're signed in as an administrator.
-1. Select the environment, and then select **Install**.
 
 ## Enable Synapse link profile creation in the Power Apps maker portal
 
@@ -58,10 +61,8 @@ To install the archive service package, follow these steps.
 
 ## Enable the archival service and update entities feature
 
-To enable the archive feature, follow these steps.
-
-1. In Finance, go to **Feature management**.
-1. Select the **Archive with Dataverse long term retention** feature for overall archival service integration. This feature enables Finance functional scenarios that are available for archiving with Dataverse long-term retention.
+1. In Dynamics 365 Finance and Operations, go to **Feature management**.
+1. Select the **Archive with Dataverse long term retention** feature for overall archival service integration. This will enable all supported Dynamics 365 Finance and Operations functional scenarios for archiving with Dataverse long-term retention.
 
 ## Archive with Dataverse long term retention workspace
 
@@ -69,7 +70,7 @@ The **Archive with Dataverse long term retention** workspace (archival workspace
 
 ### View archive job progress
 
-The dashboard in the archival workspace in Finance provides the following details about the archival process as it progresses through its various stages.
+The dashboard in the Dynamicsw 365 Finance and Operations archival workspace provides the following details about the archival process as it progresses through its various stages.
 
 The **Job status** column that's visible for each archive scenario captures the overall status of the archive job, as mentioned later.
 
