@@ -6,19 +6,9 @@ description: This article explains a database export scenario for finance and op
 author: LaneSwenka
 ms.date: 02/13/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro, Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
