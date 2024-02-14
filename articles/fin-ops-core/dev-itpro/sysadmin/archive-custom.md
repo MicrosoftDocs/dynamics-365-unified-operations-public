@@ -17,7 +17,7 @@ This article describes how the archive feature in Microsoft Dynamics 365 Finance
 
 ## Add custom fields in history tables and business intelligence entities
 
-Custom fields that are added to a standard table must be added to the corresponding history table and the business intelligence (BI) entity. The customized BI entity must be refreshed in Dataverse to archive data with Dataverse long-term retention.
+Custom fields that are added to a standard table must be added to the corresponding history table and the business intelligence (BI) entity. The customized BI entity must be refreshed in Dataverse to archive data with Dataverse long term retention.
 
 ### History tables
 
@@ -25,11 +25,9 @@ Transactions records are moved to the history tables. The schema of a history ta
 
 <a id="excl-rule"></a>**Column exclusion rule:** `SysRowVersion` and `SysDataState` columns are added by the platform and managed by using table metadata properties. These columns don't have to be added to the history tables.
 
-As of Finance version 10.0.39, archiving of General ledger data is available.
-
 ### Business entity
 
-Dataverse interacts with Finance. These virtual entities are used to retrieve data from the Finance database and save it to the corresponding tables in the Dataverse-managed Azure data lake.
+Dataverse interacts with Dynamics 365 Finance and Operations. These virtual entities are used to retrieve data from the Finance and Operations database and save it to the corresponding tables in the Dataverse long term retention.
 
 > [!IMPORTANT]
 > Don't add relationships between the entities.
