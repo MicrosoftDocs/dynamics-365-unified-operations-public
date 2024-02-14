@@ -59,7 +59,7 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 > [!NOTE]
 > 1. Refer to the table list in the archive customizations document, and select the correct entities for each functional scenario that you plan to archive.
 >   
-> 2. Don't select all tables. Otherwise, data from all the live application tables is synced to tables in the Dataverse-managed Azure data lake.
+> 2. Don't select all tables. Otherwise, data from all the live application tables is synced to tables in the Dataverse long term retention.
 
 ### Enable Finance and Operation data archival with Dataverse long term retention  
 
