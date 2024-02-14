@@ -17,9 +17,9 @@ This article describes how to view archived data in Microsoft Dataverse long-ter
 
 ## View data by using Fabric
 
-You can use Fabric to view the live (active) and archived (inactive, long-term-retained) Dynamics 365 Finance application data. To use this capability, you must link your Dataverse environment to Fabric. If the setup for the link to Fabric isn't working, follow the steps in [Link to Microsoft Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric).
+You can use Fabric to view both the live (active) and archived (inactive long term retained) Dynamics 365 Finance and Operations application data. To use this capability, you must link your Dataverse environment to Fabric. If the setup for the link to Fabric isn't working, follow the steps in [Link to Microsoft Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric).
 
-Confirm that Fabric is enabled. If it isn't enabled, go to [https://app.fabric.microsoft.com](https://app.fabric.microsoft.com/).
+Confirm that Fabric is enabled. If it isn't enabled, go to [https://app.fabric.microsoft.com](https://app.fabric.microsoft.com/) using the Azure global admin user account. In Microsoft Fabric, select the settings gear and go ->  Admin portal -> Tenant settings and enable the setting for “Users can create Fabric items”.
 
 > [!NOTE]
 > If you don't have a Fabric subscription, you can use a Fabric trial to access data in a Dataverse-managed Azure data lake. After the trial period expires, you must have the Fabric capacity or Premium per capacity Power BI SKU for users.
