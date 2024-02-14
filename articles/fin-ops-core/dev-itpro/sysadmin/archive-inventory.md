@@ -13,7 +13,7 @@ ms.custom:
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-This article explains how to archive data for inventory transactions with Dataverse long-term retention.
+This article explains how to archive data for inventory transactions with Dataverse long term retention.
 
 Currently, users can consolidate and compress the inventory transactions table (InventTrans) and archive the original records in the InventTransArchive table. For more information, see [Archive inventory transactions](../../supply-chain/inventory/archive-inventory-transactions.md).
 
@@ -32,44 +32,44 @@ If your system doesn't already include the features, follow these steps.
 2. Enable both the following features:
 
     - **Inventory transactions archive** – This feature archives inventory transactions from the InventTrans table to the InventTransArchive table.
-    - **Archive with Dataverse long term retention** – This feature moves archived inventory transactions from the InventTransArchive table to the Dataverse-managed data lake and replicates the data to the InventTransArchiveHistory table.
+    - **Archive with Dataverse long term retention** – This feature moves archived inventory transactions from the InventTransArchive table to  Dataverse long term retention and replicates the data to the InventTransArchiveHistory table.
 
 ### Considerations before you purge inventory transactions
 
 - The **Reverse** function of the **Inventory transactions archive** feature isn't available for purged inventory transaction records.
-- The unpurge activity isn't available from the Dataverse-managed data lake to Supply Chain Management.
+- The unpurge activity isn't available from the Dataverse long term retention to Supply Chain Management.
 
 ### Archive inventory transactions before you purge
 
 For more information about how to archive inventory transactions, see [Archive inventory transactions](../../supply-chain/inventory/archive-inventory-transactions.md).
 
-## Schedule the long-term retention job
+## Schedule the long term retention job
 
-To move InventTransArchive records to the Dataverse-managed data lake, follow these steps.
+To move InventTransArchive records to the Dataverse long term retention, follow these steps.
 
 1. Go to **Workspaces** \> **Archive with Dataverse long term retention** \> **Inventory transactions**.
 1. Select **New long term retention job** to open the **Long term retention job creation** wizard.
 1. Enter a name for the job, and then select **Next**.
 1. Select the period that was processed by the **Inventory transactions archive** feature, and then select **Next**.
-1. Enter the start date and time of the long-term retention job, and then select **Next**.
-1. Review the job details, and create the long-term retention job.
+1. Enter the start date and time of the long term retention job, and then select **Next**.
+1. Review the job details, and create the long term retention job.
 
-You receive a message that the long-term retention job has been created. The archived records are purged on the scheduled date.
+You receive a message that the long term retention job has been created. The archived records are purged on the scheduled date.
 
-## View the status of the long-term retention job
+## View the status of the long term retention job
 
-To view the results of the long-term retention job, follow these steps.
+To view the results of the long term retention job, follow these steps.
 
 1. Go to **Workspaces** \> **Archive** \> **Inventory transactions**.
-1. A list of long-term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.
+1. A list of long  term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.
 1. Under **Results**, select the link.
 1. View the **Inventory transactions archive progress** information.
-1. Select **View detailed logs** to view the Archive job message log. This log describes the steps of the long-term retention job in detail.
+1. Select **View detailed logs** to view the Archive job message log. This log describes the steps of the long term retention job in detail.
 
 ## View historical data
 
-When the long-term retention job moves archived inventory transactions from the InventTransArchive table to the Dataverse-managed data lake, the same data is replicated to the InventTransArchiveHistory table. To view the historical data in the InventTransArchiveHistory table, follow these steps.
+When the long term retention job moves archived inventory transactions from the InventTransArchive table to the Dataverse long term retention, the same data is replicated to the InventTransArchiveHistory table. To view the historical data in the InventTransArchiveHistory table, follow these steps.
 
 1. Go to **Workspaces** \> **Archive** \> **Inventory transactions**.
-1. A list of long-term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.
+1. A list of long term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.
 1. Select **View historical data** to view the data in the InventTransArchiveHistory table.
