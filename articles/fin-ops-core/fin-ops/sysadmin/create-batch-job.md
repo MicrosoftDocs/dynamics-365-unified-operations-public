@@ -70,7 +70,9 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
     - **Errors Only**: History for the job is only created, if the job ended in the error state.
     - **Never**: No history will be created for the batch job.
 3. If the batch job has many batch tasks, then it's recommended to set this field to *Errors Only*, Never*.
-4. If the batch job has more than 4000 batch tasks, then the corresponding job history would only save first 1000 tasks, preferring tasks with status in following order
+
+> [!IMPORTANT]
+> - Starting release 10.0.39, If the batch job has more than 4000 batch tasks, then the corresponding job history would only save first 1000 tasks, preferring tasks with status in following order
 **Error -> Cancelled -> Finished -> Not Run**
 
 ## Adjust batch job status
