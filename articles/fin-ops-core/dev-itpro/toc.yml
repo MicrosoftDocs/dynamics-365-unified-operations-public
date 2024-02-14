@@ -302,7 +302,7 @@ items:
         - name: Set up and manage archive
           items:
           - name: Set up and manage archive data in Dynamics 365 Finance (preview)
-            href: sysadmin/archive-setup.md
+            href: sysadmin/archive-setup-manage.md
         - name: Archive customization (preview)
           href: sysadmin/archive-custom.md
         - name: View archive data (preview)
@@ -310,7 +310,7 @@ items:
         - name: Archive data scenarios (preview)
           items:
           - name: Archive Dynamics 365 Finance General ledger (preview)
-            href: sysadmin/archive-general-ledger.md
+            href: sysadmin/archive-gl.md
           - name: Archive Dynamics 365 Supply Chain transactions (preview)
             href: sysadmin/archive-so.md 
           - name: Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
