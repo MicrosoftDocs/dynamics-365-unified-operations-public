@@ -1,6 +1,6 @@
 ---
 title: Set up and manage archive data in Dynamics 365 Finance (preview)
-description: This article describes how to set up and manage archive data in Microsoft Dynamics 365 Finance.
+description: This article describes how to set up and manage archive data in Microsoft Dynamics 365 Finance. 
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -25,7 +25,7 @@ To prepare your environment to archive data, follow these steps.
 
     1. In Microsoft Dynamics Lifecycle Services, select the environment, and then select **Maintain** \> **Enable Maintenance Mode**.
     1. Sign in to Finance, and go to **System administrator** \> **Setup** \> **License configuration**. Select the **SQL row version change tracking** checkbox, and then select **Save**.
-    1. In Lifecycle Services, select the environment, and then select **Maintain** \> **Disable Maintenance Mode**.
+    1. In Lifecycle Services, select the environment, and then select **Maintain** \> **Disable Maintenance Mode**.  
 
 > [!NOTE]
 > If the Microsoft Power Platform environment isn't set up for the sandbox instance, complete the setup in Lifecyle Services.
