@@ -52,30 +52,30 @@ When an archival job is initiated from the archival workspace in finance and ope
 1. Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
 1. The live table records are marked as retained (archived) in Dataverse long-term retention.
 1. A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long-term retention.
-1. Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations database and deleted from the live application tables. Application-specific inquiry pages access this history table data from the live application. Data from history tables can be either restored to the live table or permanently purged. This functionality is planned for a future release.
-
-> [!NOTE]
-> During archiving, no data is archived from tables outside the functional scenario, even if it's related. For example, when inventory transaction tables are archived, the sales tables aren't automatically archived.
+1. Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations database and deleted from the live application tables. Application-specific inquiry pages access this history table data from the live application. Data from history tables can be either restored to the live table or permanently purged. This functionality is not yet supported.
 
 ## Customization
 
 The archival framework includes custom fields and custom tables in supported functional scenarios. Therefore, customers can build their own archival scenario for custom tables. Customers must configure the table customizations before they initiate an archival job.
 
-Note the following important points:
+> [!NOTE]
+> During archiving, no data is archived from tables outside the functional scenario, even if it's related. For example, when inventory transaction tables are archived, the sales tables aren't automatically archived.
 
-- The long-term-retained data is read-only.
-- The X\+\+ delete action isn't honored when a data archival policy is run to move data out of the live finance and operations database.
-- Finance and operations attachments aren't currently supported.
-- The archival process for scenarios that involve Dataverse long-term retention has multiple stages that run sequentially in the background. The process can take up to 14 days.
-- The archived data in Dataverse long-term retention can't be moved back to the live application table.
-- The archived data in Dataverse long-term retention is secured through Dataverse security that's backed by Microsoft Entra ID.
-- Customers who use a self-managed encryption key (bring your own key \[BYOK\]) in Dataverse should be aware that long-term-retained data in the Azure data lake is encrypted through a Microsoft-managed key. Customers should consider migrating to a customer-managed key. For more information, see [Migrate bring-your-own-key environments to customer-managed key](/power-platform/admin/cmk-migrate-from-byok).
+> [!IMPORTANT]
+> - The long-term-retained data is read-only.
+> - The X\+\+ delete action isn't honored when a data archival policy is run to move data out of the live finance and operations database
+> - Finance and operations attachments aren't currently supported
+> - The archival process for scenarios that involve Dataverse long-term retention has multiple stages that run sequentially in the background. The process can take up to 14 days.
+> - The archived data in Dataverse long-term retention can't be moved back to the live application table
+> - The archived data in Dataverse long-term retention is secured through Dataverse security that's backed by Microsoft Entra ID
+> - Customers who use a self-managed encryption key (bring your own key \[BYOK\]) in Dataverse should be aware that long-term-retained data is encrypted through a Microsoft-managed key. Customers should consider migrating to a customer-managed key. For more information, see [Migrate bring-your-own-key environments to customer-managed key](/power-platform/admin/cmk-migrate-from-byok)
+
 
 ## Understanding Dataverse storage costs for archived data
 
 On average, every gigabyte (GB) that's moved from the Finance application to Dataverse long-term retention consumes 50 percent less database capacity. Live application data is compressed in Dataverse long-term retention. Savings can vary, depending on the table data. You might notice savings that are more than or less than 50 percent. Savings might be more evident when higher volumes of data (hundreds of GBs) are retained.
 
-Archived data is made available in the history tables by allowing access through an inquiry page in Finance. History tables that have no indexes consume 10 to 30 percent less capacity than the live tables, depending on the table and indexes. If in-app access to archived data isn't required, permanently delete the data from the history tables to achieve full savings.
+Archived data is made available in the history tables by allowing access through an inquiry page in Finance. History tables that have no indexes consume on average 30 percent (or more) less capacity than the live tables, depending on the table and indexes. If in-app access to archived data isn't required, permanently delete the data from the history tables to achieve full savings.
 
 ## Storage capacity reports
 
@@ -106,4 +106,6 @@ To get maximum capacity savings in production, consider purging data from the hi
 To understand the capacity reduced savings, compare the table data for the live, history, and \<*tablename*\>-Retained tables from the reports after an archival policy run.
 
 > [!NOTE]
-> After archiving, the automatic tuning process can take up to seven days before the reduced capacity is reflected in the history table. It can take up to a day before the archived data capacity for \<*tablename*\>-Retained tables is reflected in the Dataverse database capacity.
+> 1. After archiving, the automatic tuning process can take up to seven days before the reduced capacity is reflected in the history table. It can take up to a day before the archived data capacity for \<*tablename*\>-Retained tables is reflected in the Dataverse database capacity.
+>   
+> 2. Purge from history table is not yet supported.
