@@ -47,22 +47,13 @@ To schedule the long-term retention job, follow these steps.
     - **Single run** – Long-term retention and saving to history run continuously until both processes are completed. Data is always archived in Dataverse long-term retention first. Then the save to history tables occurs.
     - **Daily during allotted time** – The long-term retention runs continuously until it's completed. The **Save to history** process runs only during the specified start and stop archiving time.
 
-1. On the last page of the wizard, confirm the details, and then select **Finish** to schedule the **Sales orders archive with Dataverse long-term retention** job for the selected interval and company.
+1. On the last page of the wizard, confirm the details, and then select **Finish** to schedule the **Sales orders archive with Dataverse long term retention** job for the selected interval and company.
 
 The archive jobs appear on the dashboard.
 
-## View the status of the long-term retention job
+## View the status of the long term retention job
 
 Select **View progress** on the archival job dashboard to view job status details.
-
-## Restore the long-term retention job
-
-Archived sales orders from a completed archive job can optionally be restored back to live tables from the history tables. After the restore job is completed, the retained status is reset in the Dataverse-managed Azure data lake.
-
-1. On the toolbar, select **Restore**.
-1. In the dialog box, select the period and company that have the job status **Completed**.
-1. Select the start date and time of job execution.
-1. Select **OK**.
 
 ## View historical data
 
