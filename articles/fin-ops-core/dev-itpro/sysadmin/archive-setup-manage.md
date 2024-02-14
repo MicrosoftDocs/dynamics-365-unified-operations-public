@@ -67,6 +67,12 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 1. Select the **Archive with Dataverse long term retention** feature for overall archival service integration. This will enable all supported Dynamics 365 Finance and Operations functional scenarios for archiving with Dataverse long-term retention.
 2. The **Archive with Dataverse long term retention** workspace should be available in the **Workspaces** list in Finance and Operations.
 
+<br/>
+
+### Scheduling an archive job
+Finance and Operations archive jobs can be scheduled from the archive workspace for supported functional scenarios using the new long term retention job wizard. 
+- While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process will execute during the scheduled window. The other asynchronous archive processes for Dataverse long term retention will occur continuously even outside of the scheduled duration.
+- Only one archive job across all scenarios will be executed at any given point of time.  The scheduled job will start executing only after the previous archive job has completed its execution.
 
 ## View archive job progress
 
