@@ -14,7 +14,7 @@ If you're moving a database to a sandbox user acceptance testing (UAT) or produc
 To be able to access Commerce self-service installers in headquarters, you must [Synchronize self-service installers](../../../commerce/dev-itpro/synchronize-installers.md) after the database movement operation is complete.
 
 > [!IMPORTANT]
-> The environment reprovisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. The environment reprovisioning tool is still available in the asset library and is only required for restoring a database to a development environment running Commerce version 10.0.37 or later. For development environments running Commerce version 10.0.38 and later, the environment reprovisioning tool doesn't apply because these environments use a sealed CSU.  
+> The environment reprovisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. The environment reprovisioning tool is still available in the asset library, but is only required for restoring a database to a development environment running Commerce version 10.0.37 or earlier. For development environments running Commerce version 10.0.38 and later, the environment reprovisioning tool doesn't apply because these environments use a sealed CSU.  
 
 To run the environment reprovisioning tool on the destination environment, run the following steps:
 
