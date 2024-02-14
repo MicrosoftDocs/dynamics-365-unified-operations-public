@@ -62,6 +62,17 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 
     For more information about batch retries, see [Enable batch retries](../../dev-itpro/sysadmin/retryable-batch.md).
 
+## Batch Job History
+
+1. Under the **Batch Jobs** in **Save Jobs to History**, you can select one of three options *Always*, *Errors Only*, *Never*.
+2. If you select
+    - **Always**: History for the job will always be created, irrespective of terminal status of the batch job.
+    - **Errors Only**: History for the job is only created, if the job ended in the error state.
+    - **Never**: No history will be created for the batch job.
+3. If the batch job has many batch tasks, then it's recommended to set this field to *Errors Only*, Never*.
+4. If the batch job has more than 4000 batch tasks, then the corresponding job history would only save first 1000 tasks, preferring tasks with status in following order
+**Error -> Cancelled -> Finished -> Not Run**
+
 ## Adjust batch job status
 1. Go to **System administration > Inquiries > Batch jobs**.
 2. Select the appropriate batch job.
