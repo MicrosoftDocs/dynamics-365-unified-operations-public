@@ -52,7 +52,7 @@ To set up an archival job, follow these steps.
 
 1. Select **Finish** to schedule the archive job for the selected fiscal years and the companies.
 1. Select **View progress** to view the detailed logs.
-1. Optional: Archived General ledger transactions from a completed archive job can be restored back to live tables from the history tables. When the restore job is completed, the retained status is reset in the Dataverse-managed Azure data lake. To restore data, select a fiscal year and company that have a job status of **Completed**, select a start date and time for job execution, and then select **OK**.
+
 
 ## View historical data from the history table
 
@@ -65,24 +65,5 @@ To view the historical transactional details, follow this step.
 
 ## Capacity reports
 
-The Finance application tables that are moved to Dataverse long-term retention appear under the database storage capacity reports.
+The Finance application tables that are moved to Dataverse long term retention appear in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), under the database storage capacity reports.The live and history tables are available in the **Finance** section of the Power Platform admin center capacity reports.
 
-For example, Finance General ledger data is archived. When the administrator views the **Dataverse database storage** report, the General ledger tables are shown as **\<*tablename*\>-Retained**. These tables provide a logical view of the storage capacity that's consumed by the Finance table that's archived in Dataverse long-term retention. For example, the mesrp\_generaljournalentrybientity-Retained table on a report is a Finance General ledger functional scenario table that has been archived. If the \<*tablename*\>-Retained table isn't visible on the report, download the report to Excel for viewing.
-
-### Finance storage capacity reports
-
-The live and history tables are available in the **Finance** section of the Power Platform admin center capacity reports.
-
-> [!NOTE]
-> The history table contains a copy of the archived data in Dataverse long-term retention.
-
-The history tables have fewer indexes and consume less capacity than the live application tables.
-
-To understand the capacity reduced savings, compare the table data for the live, history, and \<*tablename*\>-Retained tables from the reports after an archival policy run.
-
-> [!NOTE]
-> After archiving, the automatic tuning process can take up to seven days before the reduced capacity is reflected in the history table. It can take up to a day before the archived data capacity for \<*tablename*\>-Retained tables is reflected in the Dataverse database capacity.
-
-The live table consumes the highest capacity, followed by the history table, and then the \<*tablename*\>-Retained table in Dataverse long-term retention.
-
-To get maximum capacity savings in production, consider purging data from the history tables.
