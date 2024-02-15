@@ -410,13 +410,13 @@ items:
           - name: Planned maintenance in self-service environments FAQ
             href: deployment/plannedmaintenance-selfservice.md
           - name: Business continuity and disaster recovery
-            href: sysadmin/business-continuity-disaster-recovery.md
+            href: /power-platform/admin/business-continuity-disaster-recovery.md?context=/dynamics365/context/finance
         - name: Finance and operations apps regional services
           items:
           - name: Available geographies
             href: deployment/deployment-options-geo.md
           - name: US Government Community Cloud (GCC)
-            href: /power-platform/admin/business-continuity-disaster-recovery.md?context=/dynamics365/context/finance
+            href: ../fin-ops/deployment/us-gcc-deployment.md
           - name: China Operated by 21Vianet
             href: ../fin-ops/deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
