@@ -410,7 +410,7 @@ items:
           - name: Planned maintenance in self-service environments FAQ
             href: deployment/plannedmaintenance-selfservice.md
           - name: Business continuity and disaster recovery
-            href: /power-platform/admin/business-continuity-disaster-recovery.md?context=/dynamics365/context/finance
+            href: /power-platform/admin/business-continuity-disaster-recovery?context=/dynamics365/context/finance
         - name: Finance and operations apps regional services
           items:
           - name: Available geographies
