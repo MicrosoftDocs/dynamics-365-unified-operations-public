@@ -91,7 +91,7 @@ On the **Dataverse database storage** report, the archived finance and operation
 
 For example, when the administrator views the **Dataverse database storage** report, the General ledger tables are shown as **\<*tablename*\>-Retained**. These tables provide a logical view of the storage capacity that's consumed by the Finance table that's archived in Dataverse long term retention. In the example of the report in the following illustration, the mesrp\_generaljournalentrybientity-Retained table is a Finance General ledger functional scenario table that has been archived. If the \<*tablename*\>-Retained table isn't visible on the report, download the report to Excel for viewing.
 
-![Screenshot that shows an example of the Dataverse database storage report.](./media/storage.png)
+[!INCLUDE [Screenshot that shows an example of the Dataverse database storage report.](./media/storage.png)]
 
 To view the storage that's consumed by finance and operations data, follow these steps.
 
