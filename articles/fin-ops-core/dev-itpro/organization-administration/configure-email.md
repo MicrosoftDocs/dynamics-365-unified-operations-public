@@ -40,7 +40,7 @@ On the **Email parameters** page, administrators can configure the high-level em
 
 | Field                 | Description |
 |-----------------------|-------------|
-| Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Microsoft Graph and Exchange providers will use the account that's associated with the batch process. |
+| Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Microsoft Graph and Exchange providers will use the account that's associated with the batch process. Note: Microsoft Graph is available in Dynamics 365 Finance version 10.0.38 and later. |
 | Attachment size limit | Specifies the maximum size of a single email that can be sent via the email subsystem. |
 | Email expiration in days | Specifies the number of days before the status of an unsent message is set to **Expired**. A value of **0** means that the default period of 30 days is in effect. |
 
