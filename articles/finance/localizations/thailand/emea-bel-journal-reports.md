@@ -187,7 +187,7 @@ To print the **Purchase journal** report, follow these steps:
 
     - In the **Vendor account** field, select **1001**.
     - In the **Item number** field, select **0001**.
-    - In the **Quality** field, enter 3.
+    - In the **Quantity** field, enter 3.
     - On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax** section, in the **Item sales tax group**, select **NORMAL**. In the **Sales tax group**, select **VE-DOM**.
 
 3. Go to **Purchase** > **Actions** > **Confirm**.
