@@ -34,26 +34,26 @@ This article provides information about tax calculation and posting integration 
 
 To configure and use this functionality, you must complete three main steps:
 
-1. **RCS setup:** In Regulatory Configuration Service, set up the tax feature, tax codes, and tax codes applicability for tax code determination in transfer orders.
+1. **RCS setup:** In Regulatory Configuration Service (RCS), set up the tax feature, tax codes, and tax codes applicability for tax code determination in transfer orders.
 2. **Dynamics 365 Finance setup:** In Finance, enable the **Tax in transfer order** feature, set up the tax calculation parameters for inventory, and set up core tax parameters.
 3. **Inventory setup:** Set up the inventory configuration for transfer order transactions.
 
 > [!NOTE]
-> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [More info](workspace/merge-rcs-to-gsw.md).
+> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace (preview)](workspace/merge-rcs-to-gsw.md).
 >
-> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
+> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
 
 ## Set up Tax calculation for tax and transfer order transactions
 
 Follow these steps to set up the tax that is involved in a transfer order. In the example that is shown here, the transfer order is from the Netherlands to Belgium.
 
 1. On the **Tax calculation features** page, on the **Versions** tab, select the draft feature version, and then select **Edit**.
-
 2. On the **Tax features setup** page, on the **Tax codes** tab, select **Add** to create new tax codes. For this example, three tax codes are created: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**.
 
     - When a transfer order is shipped from a warehouse in the Netherlands, the Netherlands VAT exempted tax code (**NL-Exempt**) is applied.
-      
+
         Create the tax code **NL-Exempt**.
+
         1. Select **Add**, enter **NL-Exempt** in the **Tax code** field.
         2. Select **By Net Amount** in the **Tax component** field.
         3. Select **Save**.
@@ -62,8 +62,9 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         6. In the **Exempt Code** field, enter **EC**.
 
     - When a transfer order is received at a Belgium warehouse, the reverse charge mechanism is applied by using the **BE-RC-21** and **BE-RC+21** tax codes.
-        
-        Create the tax code **BE-RC-21**.      
+
+        Create the tax code **BE-RC-21**.
+
         1. Select **Add**, enter **BE-RC-21** in the **Tax code** field.
         2. Select **By Net Amount** in the **Tax component** field.
         3. Select **Save**.
@@ -71,8 +72,9 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         5. Enter **-21** in the **Tax Rate** field.
         6. Set **Is Reverse Charge** to **Yes** in the **General** section.
         7. Select **Save**.
-        
+
         Create the tax code **BE-RC+21**.
+
         1. Select **Add**, enter **BE-RC+21** in the **Tax code** field.
         2. Select **By Net Amount** in the **Tax component** field.
         3. Select **Save**.
@@ -81,17 +83,21 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         6. Select **Save**.
 
 3. Define the tax group.
+
     1. Select **Manage columns**, and then select the line field **Tax Group**.
     2. Select **->**, and then select **OK**.
     3. Select **Add** to add a tax group.
     4. In the **Tax Group** column, enter **AR-EU** and then select the **NL-Exempt** tax code.
     5. Select **Add** to add a tax group.
     6. In the **Tax Group** column, enter **RC-VAT** and then select the **BE-RC-21** and **BE-RC+21** tax codes.
-4. Define Item tax group.
+
+4. Define the item tax group.
+
     1. Select **Manage columns**, and then select the line field **Item Tax Group**.
     2. Select **->** and then select **OK**.
     3. Select **Add** to add an item tax group.
     4. Enter **FULL** in the column **Item Tax Group**. Select tax codes **BE-RC-21**, **BE-RC+21**, and **NL-Exempt**.
+
 5. Define the applicability of the tax group.
 
     1. Select **Manage columns**, and then select columns that should be used to build the applicability table.
@@ -100,17 +106,18 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         > Be sure to add the **Business process** and **Tax directions** columns to the table. Both columns are essential to the functionality for tax in transfer orders.
 
     2. Add applicability rules. Don't leave the **Tax group** field blank.
-        
+
         Add a new rule for transfer order shipment.
+
         1. Select **Add** in the **Applicability rules** table.
         2. In the **Business process** field, select **Inventory** to make the rule applicable for a transfer order.
         3. In the **Ship From Country/Region** field, enter **NLD**.
         4. In the **Ship To Country/Region** field, enter **BEL**.
         5. In the **Tax direction** field, select **Output** to make the rule applicable to transfer order shipment.
         6. In the **Tax Group** field, select **AR-EU**.
-        
+
         Add another rule for transfer order receipt.
-        
+
         1. Select **Add** in the **Applicability rules** table.
         2. In the **Business process** field, select **Inventory** to make the rule applicable for a transfer order.
         3. In the **Ship From Country/Region** field, enter **NLD**.
@@ -122,16 +129,17 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 
     1. Select **Manage columns**, and then select columns that should be used to build the applicability table.
     2. Add applicability rules.
-        
-       > [!NOTE]
-       > If the item sales tax group defaulted on your taxable document lines is already correct, leave this matrix blank. 
-        
+
+        > [!NOTE]
+        > If the item sales tax group defaulted on your taxable document lines is already correct, leave this matrix blank. 
+
         Add a new rule for transfer order shipment and receipt.
+
         1. On the **Applicability rules** page, select **Add**.
         2. In the **Business process** field, select **Inventory** to make the rule applicable for the transfer order.
         3. In the **Item Tax Group** field, select **FULL**.
-7. Complete and publish the new tax feature version.
 
+7. Complete and publish the new tax feature version.
 
 ## Set up Finance for transfer order transactions
 
@@ -141,11 +149,11 @@ Follow these steps to enable and set up taxes for transfer orders.
 2. In the list, find and select the **Tax in transfer order** feature, and then select **Enable now** to turn it on.
 
     > [!IMPORTANT]
-    > The **Tax in transfer order** feature is fully dependent on the tax calculation feature. Therefore, it can be turned on only after you've enabled the **Enable advanced tax calculation** parameter in the **Tax calculation parameters**.
+    > The **Tax in transfer order** feature is fully dependent on the tax calculation feature. Therefore, it can be turned on only after you enable the **Enable advanced tax calculation** parameter on the **Tax calculation parameters** page.
 
     ![Tax in transfer order feature.](../media/image7.png)
 
-3. Enable the tax calculation**Enable advanced tax calculation** parameter, and select the **Inventory** business process.
+3. Enable the tax calculation **Enable advanced tax calculation** parameter, and select the **Inventory** business process.
 
     > [!IMPORTANT]
     > You must complete this step for each legal entity in Finance where you want the tax calculation feature and the functionality for tax in transfer orders to be available.
@@ -163,7 +171,7 @@ Follow these steps to enable and set up taxes for transfer orders.
     1. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
     2. In the **Interim transit** field, select a ledger account.
 
-       ![Selecting an interim transit account.](../media/image10.png)
+        ![Selecting an interim transit account.](../media/image10.png)
 
 ## Set up basic inventory for transfer order transactions
 
@@ -186,7 +194,7 @@ Follow these steps to set up basic inventory to enable transfer order transactio
     2. Select **New** to create a warehouse, and assign it to the corresponding site.
     3. Repeat step 2 to create a warehouse for each site as required.
 
-       ![Setting up warehouses.](../media/image12.png)
+        ![Setting up warehouses.](../media/image12.png)
 
     > [!NOTE]
     > For a ship-from warehouse, a transit warehouse must be selected in the **Transit warehouse** field for transfer order transactions.
@@ -207,6 +215,5 @@ Follow these steps to set up basic inventory to enable transfer order transactio
     4. Verify that a ledger account is set up for **Inter-unit receivable** posting.
 
         ![Setting up Inter-unit receivable posting.](../media/image16.png)
-        
-        
-  [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
