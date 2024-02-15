@@ -42,9 +42,9 @@ This article provides information about the import and export functionality of t
     - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
     - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
 
-2. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
+2. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 3. In the **Versions** grid, select **Edit**.
-4. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
+4. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 5. On the **Tax codes** tab, select **Import**.
 6. Select **Export a tax code template** to download the **TaxCodesTemplate.zip** file.
 7. Unzip the **TaxCodesTemplate.zip** file. The tax code templates are compressed separately according to **Calculation origin** value.
@@ -91,9 +91,9 @@ You can also directly import the zip file that includes all three CSV files. In 
 
 ### Export applicability rules
 
-1. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
+1. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 2. In the **Versions** grid, select **Edit**.
-3. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
+3. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 4. On the **Tax group applicability** tab, select the rows in the **Set up tax group applicability** grid.
 5. Select the **Open in Microsoft Office** button, and then select **Tax service dynamic applicability matrix**.
 
