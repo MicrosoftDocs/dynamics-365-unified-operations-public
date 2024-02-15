@@ -35,6 +35,7 @@ To enable Copilot capabilities in finance and operations apps, you must have the
 
 - You must be running version 10.0.36 or later of finance and operations apps.
 - You must have enabled the Power Platform integration in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable dual-write for this feature.)
+- Your environment must be a cloud-deployed environment. Copilot in Finance and Operations is not supported in cloud-hosted development environments.
 
 > [!IMPORTANT]
 > Depending on the availability of Copilot and generative AI back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
