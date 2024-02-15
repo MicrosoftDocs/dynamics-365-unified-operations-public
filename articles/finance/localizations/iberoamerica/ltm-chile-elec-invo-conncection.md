@@ -2,9 +2,9 @@
 title: Configure connections for Chilean electronic invoicing
 description: This article explains how to set up Microsoft Dynamics 365 Finance and Regulatory Configuration Service (RCS) to use Chilean electronic invoices formats. 
 author: Fhernandez0088 
-ms.date: 10/17/2023 
+ms.date: 02/15/2024 
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---
