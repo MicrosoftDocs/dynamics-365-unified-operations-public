@@ -56,7 +56,7 @@ The following table shows the web application parameters that the **NO VAT retur
 > [!IMPORTANT]
 > To enable access to the access token and interoperation with ID-porten and Altinn APIs for business users, you must define security roles for both web applications.
 
-Internet addresses (base URLs, Authorization URL path, Token URL path) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual internet addresses on the official Altinn and ID-porten website. For actual internet addresses of the sandbox setup of **NO ID-Porten** web application, go to <https://test.idporten.no/.well-known/openid-configuration>. For production setup of **NO ID-Porten** web application, go to <https://idporten.no/.well-known/openid-configuration>.
+Internet addresses (base URLs, Authorization URL path, and Token URL path) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual internet addresses on the official Altinn and ID-porten website. For actual internet addresses of the sandbox setup of the **NO ID-Porten** web application, go to <https://test.idporten.no/.well-known/openid-configuration>. For the production setup of the **NO ID-Porten** web application, go to <https://idporten.no/.well-known/openid-configuration>.
 
 ## Web service settings
 
