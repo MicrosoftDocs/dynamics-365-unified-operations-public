@@ -62,7 +62,7 @@ Certificates in your Microsoft Entra tenant are no longer installed in new one-b
 5. On the **Create a new app user** pane:
    - Select the **Add an app** action, and select the new application previously registered for your environment following the [Set up a new application and certification registration](../../dev-tools/secure-developer-vm.md#set-up-a-new-application-and-certificate-registration).
    - In the **Business unit** drop-down list, select the root business unit for the environment.
-   - In the **Security roles** text box, add the **System Administrator** role.
+   - In the **Security roles** text box, add select a security role that has create, read, update, and delete permissions on Dataverse tables used for dual-write, such as the **System Administrator** role.
    - Select **Create**.
 
 > [!NOTE] If permissions for the application user are not configured for your one-box environment, you may receive the following error message during dual-write sync operations:
