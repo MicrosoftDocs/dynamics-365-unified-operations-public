@@ -33,7 +33,7 @@ To use the Dynamics 365 Payment Connector for Adyen, you must have a separate ag
 > These instructions assume that you've already signed up for a merchant account with Adyen, and that you have access to the Adyen merchant dashboard.
 
 > [!IMPORTANT]
-> Adyen no longer supports [hosted payment pages](https://docs.adyen.com/online-payments/classic-integrations/hosted-payment-pages) as of October 2022. When configuring the Dynamics 365 Payment Connector for Adyen, version V001 will no longer be supported for call center and e-commerce because it uses hosted payment pages from Adyen. Instead, use version V002 (with origin key) or version V003 (with client key). Version V003 is recommended by Microsoft and is available in Commerce versions 10.0.29 and higher. Also, ensure that you set the **Allowed Origins** in the Adyen configuration by adding the full URL (for example, 'https://www.adventure-works.com') for your site (for e-commerce) or Commerce headquarters (for call center).
+> Adyen no longer supports [hosted payment pages](https://docs.adyen.com/online-payments/classic-integrations/hosted-payment-pages) as of October 2022. When configuring the Dynamics 365 Payment Connector for Adyen, version V001 is no longer be supported for call center and Commerce e-commerce because it uses hosted payment pages from Adyen. You should instead use version V002 (with origin key) or version V003 (with client key). Microsoft recommends using version V003, which is available in Commerce versions 10.0.29 and later. Ensure that you set the **Allowed Origins** in the Adyen configuration by adding the full URL (for example, 'https://www.adventure-works.com') for your site (for e-commerce) or Commerce headquarters (for call center).
 
 ### Prerequisites
 
