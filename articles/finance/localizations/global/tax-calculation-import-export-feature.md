@@ -29,26 +29,26 @@ ms.dyn365.ops.version: 10.0.23
 This article provides information about the import and export functionality of the tax calculation feature. This functionality helps ensure a flexible and efficient configuration experience.
 
 > [!NOTE]
-> The functionality of Regulatory Configuration Service (RCS) is merged to Dynamics 365 Finance Globalization Studio Workspace in 10.0.39, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
+> The functionality of Regulatory Configuration Service (RCS) is merged to the **Globalization Studio** workspace in Microsoft Dynamics Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
 >
-> If you are on 10.0.39 or higher version, instead of Regulatory Configuration Service (RCS), use Globalization Studio Workspace in Dynamics 365 Finance. 
+> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
 
 ## Import and export tax codes
 
 ### Export templates
 
-1. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
-   Depending on where you access it from, follow the navigation:
+1. Follow one of these steps, depending on where you're completing the procedure:
 
- - In RCS (sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/)), open the **Globalization features** workspace, select **Features**, click **Tax Calculation tile**
- - In Finance, open the **Globalization studio workspace**, select **Globalization services**, click **Tax Calculation** tile 
-   
-2. In the **Versions** grid, select **Edit**.
-3. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
-4. On the **Tax codes** tab, select **Import**.
-5. Select **Export a tax code template** to download the **TaxCodesTemplate.zip** file.
-6. Unzip **TaxCodesTemplate.zip**. The tax code templates are compressed separately according to **Calculation origin** value.
-7. Unzip **By Net Amount.zip** to get the following comma-separated values (CSV) files:
+    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
+    - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
+
+2. On the **Tax calculation features** page, select an existing feature, or [create a new feature](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
+3. In the **Versions** grid, select **Edit**.
+4. On the **Tax calculation** feature page, set the [configuration version](global-get-started-with-tax-calculation-service.md#configure-tax-calculation-feature).
+5. On the **Tax codes** tab, select **Import**.
+6. Select **Export a tax code template** to download the **TaxCodesTemplate.zip** file.
+7. Unzip the **TaxCodesTemplate.zip** file. The tax code templates are compressed separately according to **Calculation origin** value.
+8. Unzip the **By Net Amount.zip** file to get the following comma-separated values (CSV) files:
 
     - **TaxCode.csv** – Enter the tax codes.
     - **TaxLimit.csv** – Enter the tax limits for each tax code.
@@ -61,7 +61,7 @@ This article provides information about the import and export functionality of t
 
 Follow these steps to import the **Sample** tax code in the template into your tax calculation feature.
 
-1. On the **Tax calculation features** page, select the feature and in the **Versions** grid, click **Edit**.
+1. On the **Tax calculation features** page, select the feature, and then, in the **Versions** grid, select **Edit**.
 2. On the **Tax codes** tab, select **Import**.
 3. Select **Browse**, find and select the **TaxCode.csv** file, and then, in the **Target table** field, select **Tax code**.
 4. Select **OK** to import the tax code.
@@ -77,7 +77,7 @@ You can also directly import the zip file that includes all three CSV files. In 
 
 ### Export tax codes
 
-1. On the **Tax calculation features** page, select the feature and in the **Versions** grid, click **Edit**
+1. On the **Tax calculation features** page, select the feature, and then, in the **Versions** grid, select **Edit**.
 2. On the **Tax codes** tab, select **Export**.
 
     The **Export** button is available when there is at least one tax code in the **Tax codes** grid.
@@ -99,7 +99,7 @@ You can also directly import the zip file that includes all three CSV files. In 
 
     [![Exporting applicability rules to Microsoft Excel on the Tax calculation feature page.](../media/tax-cal-import-export-1.png)](../media/tax-cal-import-export-1.png)
 
-8. Select **Download** to export the selected rows to a Microsoft Excel worksheet.
+6. Select **Download** to export the selected rows to a Microsoft Excel worksheet.
 
 ### Import applicability rules
 
@@ -120,8 +120,8 @@ Follow these steps to import feature demo data.
 4. Switch to the **DEMF** legal entity, and then go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
 5. On the **General** tab, select **Enable advanced tax calculation**.
 6. In the **Feature setup name** field, select **tax-calculation-feature-demo-data**.
-7. Select a **Settlement period** and a **Ledger posting group** for the new demo tax codes, and then select **Confirm**.
+7. Select a settlement period and a ledger posting group for the new demo tax codes, and then select **Confirm**.
 8. Select **Save**.
 
 > [!NOTE]
-> The **tax-calculation-feature-demo-data** demo feature is based on feature version **40.54.234** and designed for the **DEMF** demo legal entity.
+> The **tax-calculation-feature-demo-data** demo feature is based on feature version **40.54.234** and is designed for the **DEMF** demo legal entity.
