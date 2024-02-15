@@ -27,6 +27,7 @@ The `SalesLine.QtyOrdered` field is passed for the quantity, and the `SalesLine.
 Additional properties can be added to requests from Supply Chain Management to the advanced export control solution. These properties can then be referenced in Power Fx rules on both restrictions and exceptions.
 
 To add additional properties, create a chain of command extension of the `COOValidateSalesTable` class and override the appropriate method for your property.
+
 - **Document properties:** `getExtendedProperties()`
 - **Line properties:** `getExtendedLineProperties()`
 - **Line code properties:** `getExtendedLineCodeProperties()`
