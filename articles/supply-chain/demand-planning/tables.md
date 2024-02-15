@@ -151,3 +151,38 @@ You can easily import data from Supply Chain Management into the standard tables
 You can edit any relationship, unmap fields, or add custom field mappings as you require. Before you can import a custom field, you must add it in the standard table.
 
 When you create an import job, an export data project for the required data entities is created in Supply Chain Management.
+
+## Setting up Security configuration for custom entities in Supply Chain Management
+
+You are required to configure security settings for custom entities in Dynamics 365 Finance and Operations (D365 F&O) to grant access for reading data from the entity.
+
+To set up security settings, follow these steps:
+
+1. Navigate to Security Configuration:
+
+    - Go to System Administration.
+    - Select Security.
+    - Click on Security Configuration.
+
+2. Create New Privilege:
+
+    - Within Security Configuration, create a new privilege.
+    - Add your custom entity to this privilege.
+
+3. Assign Privileges to Duties
+
+    - Proceed to Duties section.
+    - Locate the duty named "View Document entity data for data management" or "Create data management project and details using entity"
+    - Select the respective duty based on the required level of access.
+      
+4. Add Privileges to Duties:
+
+    - Within the chosen duty, navigate to Privileges.
+    - Add a reference to the privilege created in Step 2.
+
+5. Publish Changes. After configuring the privileges, click on Publish all to apply the changes.
+
+> [!NOTE]
+>
+> - "View Document entity data for data management" duty is commonly associated with entities utilized in the Data Management Framework within D365 F&O. It is typically assigned to the role of "Data management migration user", which is a subordinate role to "Demand planning app role".
+> - "Create data management project and details using entity" duty is part of the "Demand planning app role". The "Demand planning app role" is assigned to "DemandPlanAppUser", a user role often employed for integrating the Demand Planning Service with the Supply Chain Management.
