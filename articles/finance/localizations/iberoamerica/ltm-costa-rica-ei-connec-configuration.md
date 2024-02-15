@@ -73,7 +73,7 @@ You can inquire about the results of the submission by going to **Organization a
 To download the XML files of electronic invoices for successfully processed invoices, select **Electronic document** \> **Download file**.
 
 > [!IMPORTANT]
-> In current implementations, the standard submission procedure described above only generates electronic invoices and stores their XML files on the service side, but it does not submit the invoices. For the submission of Costa Rican electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, this connector has not been released yet.
+> In current implementations, the standard submission procedure described above only generates electronic invoices and stores their XML files on the service side, but it doesn't submit the invoices. For the submission of Costa Rican electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, this connector hasn't been released yet.
 
 ## More resources
 
