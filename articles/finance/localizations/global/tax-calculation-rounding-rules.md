@@ -29,14 +29,14 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about how the rounding rules work in the **Tax calculation parameters**.
+This article provides information about how the rounding rules work on the **Tax calculation parameters** page.
 
 > [!NOTE] 
 > When the **Enable advanced tax calculation** parameter is enabled, the rounding rules on the **Sales tax code** and **Sales tax group** pages aren't effective.
 
 You can view the configuration of rounding rules for the tax calculation service in the **Sales tax rounding rule** section on the **Calculation** FastTab on the **General** tab of the **Tax calculation parameters** page (**Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**).
 
-[![Rounding rule configuration on the Tax calculation parameters page](../media/tax-calculation-parameters-calculation-1.png)](../media/tax-calculation-parameters-calculation-1.png)
+[![Rounding rule configuration on the Tax calculation parameters page.](../media/tax-calculation-parameters-calculation-1.png)](../media/tax-calculation-parameters-calculation-1.png)
 
 The **Rounding precision** and **Rounding method** fields determine how calculated amounts in the payload from the tax calculation service are rounded.
 
