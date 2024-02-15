@@ -46,7 +46,7 @@ Support for additional data types is planned in future releases.
 
 Application administrators can schedule archival jobs and specify criteria for supported functional scenarios. The data from the tables for the functional scenarios is archived in Dataverse long term retention.
 
-When an archival job is initiated from the archival workspace in finance and operations apps, it has the following stages:
+When an archival job is initiated from the Finance and operations archive workspace, it has the following stages:
 
 1. Data from the live application tables in the functional scenario that's being archived is replicated to Dataverse long term retention.
 1. Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
