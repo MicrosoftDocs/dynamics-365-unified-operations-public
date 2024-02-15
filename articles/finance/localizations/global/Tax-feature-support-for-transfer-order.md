@@ -39,7 +39,7 @@ To configure and use this functionality, you must complete three main steps:
 3. **Inventory setup:** Set up the inventory configuration for transfer order transactions.
 
 > [!NOTE]
-> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace (preview)](workspace/merge-rcs-to-gsw.md).
+> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
 >
 > If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
 
