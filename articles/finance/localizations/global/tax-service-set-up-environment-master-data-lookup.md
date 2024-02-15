@@ -29,27 +29,31 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up and enable the tax calculation master data lookup functionality. A drop-down list is available to select values in the tax calculation configuration for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term**. These values come from the connected Microsoft Dynamics 365 Finance environment using the Microsoft Dataverse data source.
+This article explains how to set up and enable the tax calculation master data lookup functionality. A dropdown list is available to select values in the tax calculation configuration for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term**. These values come from the connected Microsoft Dynamics 365 Finance environment using the Microsoft Dataverse data source.
 
 > [!NOTE] 
-> The tax calculation master data lookup functionality is optional functionality. You can skip the following steps if you disable the **Tax Service Dataverse datasources support** feature in Regulatory Configuration Service (RCS). However, in that case, the drop-down list won't be available in the tax calculation configuration.
+> The tax calculation master data lookup functionality is optional functionality. You can skip the following steps if you disable the **Tax Service Dataverse datasources support** feature in Regulatory Configuration Service (RCS). However, in that case, the dropdown list won't be available in the tax calculation configuration.
+>
+> If you're using version 10.0.39 or later, and you use the **Globalization Studio** workspace in Finance instead of RCS, you can control the lookup functionality by using the **Enable applicability rules value lookup for Tax Calculation Service** feature in the **Feature management** workspace in Finance.
 
-> [!NOTE] 
-> If you are on 10.0.39 or higher version, and use Globalization Studio Workspace in Dynamics 365 Finance instead of Regulatory Configuration Service (RCS), the lookup functionality can be controlled by the **Enable applicability rules value lookup for Tax Calculation Service** feature in the **Feature management** Workspace in Dynamics 365 Finance.
+If you're using version 10.0.39 or later, follow these steps in Finance to enable the dropdown list in the feature version configuration of Tax Calculation.
 
-If you are on 10.0.39 or higher version, to enable the drop-down list in the feature version configuration of Tax Calculation, make sure you complete the following steps in Dynamics 365 Finance.
 1. In the **Feature management** workspace, enable the **Enable applicability rules value lookup for Tax Calculation Service** feature.
-2. Make sure you imported the latest configuration and model mapping versions, if not, import them following the steps [Import Electronic reporting (ER) configurations from Dataverse](workspace/gsw-import-er-config-dataverse.md):
- - Tax Data Model.version.40.xml
- - Tax Calculation Data Model 40.65.xml
- - FNO Model Mapping 40.65.35.xml - set the **Default for model mapping** parameter to **Yes**
- - Tax Calculation Configuration 40.65.249.xml
-3. On the tax **Feature version** setup page, select the configuration version 40.65.249.
-> [!NOTE] 
-> If you have a customized configuration, you will need to rebase the configuration and then use the customized configuration. 
-4.	Select legal entities in the **Source legal entity** field. You will be able to choose master data from these LEs.
+2. Make sure that you imported the latest configuration and model mapping versions. If you didn't, follow the steps in [Import Electronic reporting (ER) configurations from Dataverse](workspace/gsw-import-er-config-dataverse.md) to import them.
 
-If you are on 10.0.38 or lower version, to enable the drop-down list in the feature version configuration of Tax Calculation, complete the following steps. 
+    - Tax Data Model.version.40.xml
+    - Tax Calculation Data Model 40.65.xml
+    - FNO Model Mapping 40.65.35.xml (For this model mapping, set the **Default for model mapping** parameter to **Yes**.)
+    - Tax Calculation Configuration 40.65.249.xml
+
+3. On the tax **Feature version** setup page, select configuration version 40.65.249.
+
+    > [!NOTE] 
+    > If you have a customized configuration, you must rebase the configuration and then use the customized configuration. 
+
+4. In the **Source legal entity** field, select legal entities. You'll be able to choose master data from these legal entities.
+
+If you're using version 10.0.38 or earlier, follow these steps to enable the dropdown list in the feature version configuration of Tax Calculation. 
 
 1. [Enable Microsoft Power Platform integration and open the Dataverse environment.](#enable)
 2. [Install finance and operations virtual entities.](#install)
@@ -62,9 +66,9 @@ If you are on 10.0.38 or lower version, to enable the drop-down list in the feat
 
 ## <a name='enable'></a>Enable Microsoft Power Platform integration and open the Dataverse environment
 
-The integration of finance and operations apps with Microsoft Power Platform can be enabled when you create a new finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). When you've finished, the name of a Microsoft Power Platform environment will appear in the **Power Platform Integration** section.
+The integration of finance and operations apps with Microsoft Power Platform can be enabled when you create a new finance and operations apps environment in Microsoft Dynamics Lifecycle Services. For more information, see [Microsoft Power Platform integration - Add-ins overview](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). When you've finished, the name of a Microsoft Power Platform environment will appear in the **Power Platform Integration** section.
 
-1. In LCS, in your finance and operations environment, in the **Power Platform Integration** section, find and make a note of the **Environment name** value for the linked environment.
+1. In Lifecycle Services, in your finance and operations environment, in the **Power Platform Integration** section, find and make a note of the **Environment name** value for the linked environment.
 
     [![Environment name value.](../media/tcs-dataverse-master-data-lookup-1.png)](../media/tcs-dataverse-master-data-lookup-1.png)
 
@@ -144,7 +148,7 @@ You must provide Dataverse with the finance and operations app instance to conne
 
     [![Opening Advanced settings in the Dataverse environment.](../media/tcs-dataverse-master-data-lookup-4.png)](../media/tcs-dataverse-master-data-lookup-4.png)
 
-2. On the **Settings** drop-down menu, select **Administration**.
+2. On the **Settings** dropdown menu, select **Administration**.
 
     [![Administration.](../media/tcs-dataverse-master-data-lookup-5.png)](../media/tcs-dataverse-master-data-lookup-5.png)
 
@@ -212,7 +216,7 @@ The visibility of the virtual entities from finance and operations apps must be 
     - InventWarehouseEntity
 
     > [!NOTE]
-    > Only the first 5,000 records of an entity can be retrieved by Dataverse and made available in the drop-down list of the Tax Calculation configuration.
+    > Only the first 5,000 records of an entity can be retrieved by Dataverse and made available in the dropdown list of the Tax Calculation configuration.
 
 For more information, see [Enable Microsoft Dataverse virtual entities](../../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
@@ -267,8 +271,8 @@ Microsoft provides default model mapping configurations for entities from financ
 9. In **Connected application** field, select the connected application that you set up in [Step 7. Set up the connected application for Tax Calculation](#set-up).
 10. Set the **Set virtual table visibility** option to **Yes** to set all Tax Calculation–related virtual entities to visible.
 
-You've now completed the setup for the master data lookup functionality. A drop-down list for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term** from Dynamics 365 Finance will now be enabled in the **Tax Calculation feature version** setup.
+You've now completed the setup for the master data lookup functionality. A dropdown list for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term** from Dynamics 365 Finance will now be enabled in the **Tax Calculation feature version** setup.
 
-[![Legal entity drop-down list.](../media/tcs-dataverse-master-data-lookup-17.png)](../media/tcs-dataverse-master-data-lookup-17.png)
+[![Legal entity dropdown list.](../media/tcs-dataverse-master-data-lookup-17.png)](../media/tcs-dataverse-master-data-lookup-17.png)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
