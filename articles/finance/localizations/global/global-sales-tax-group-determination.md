@@ -59,7 +59,7 @@ The **Tax group applicability** tab is configured as shown in the following tabl
 | Purchase         | EUR      | &nbsp;    | TG\_A     | 20     |
 | Purchase         | &nbsp;   | D0001     | TG\_B     | 20     |
 
-Per the matching logic, the rules in the table are equally weighted. If you are purchase item **D0001** with the transaction currency **EUR**, the first rule (Tax group **TG\_A**) is applied.
+Per the matching logic, the rules in the table are equally weighted. If you purchase item **D0001** with the transaction currency **EUR**, the first rule (Tax group **TG\_A**) is applied.
 
 Complete the following steps to adjust the rule which is applied.
 
@@ -67,7 +67,7 @@ Complete the following steps to adjust the rule which is applied.
 2. Select the second rule, and the select **Move up**. 
 3. Select **Complete**.
 
-Now, the second rule (Tax group **TG\_B**) is moved above the first one, and would be applied first.
+Now, the second rule (Tax group **TG\_B**) is moved above the first one and would be applied first.
 
 > [!NOTE]
 > You can't move a rule above or under another rule which has a different **Weight**.
@@ -111,7 +111,7 @@ The flow that combines tax code determination logic with override sales tax no a
 
 :::image type="content" source="../media/OverrideSalesTax_No1.jpg" alt-text="Screenshot of the flow that combines tax code determination logic with override sales tax no and matched applicability rules."::: 
 
-#### Scenario 3: Override sales tax = No and applicability rule can not be matched
+#### Scenario 3: Override sales tax = No and applicability rule can't be matched
 
 The flow that combines tax code determination logic with override sales tax no and applicability rules mismatch.
 
@@ -120,10 +120,10 @@ The flow that combines tax code determination logic with override sales tax no a
 ### Update order lines
 
 You can bulk update lines if the **Override sales tax** checkbox is changed on the header level and is added to the **Update order lines** parameters pages for Sales order, Sales quotation, and Purchase order.
-For example, if the option is set to **Prompt**, when the **Override sales tax** is changed on the header of the document, the dialog box opens and you can select whether the document lines should be updated.
+For example, if the option is set to **Prompt**, when the **Override sales tax** is changed on the header of the document, the dialog box opens, and you can select whether the document lines should be updated.
 
 > [!NOTE]
-> Header level and line level charges inherit the **Override sales tax** option from the header or line of the document respectively.
+> Header-level and line-level charges inherit the **Override sales tax** option from the header or line of the document, respectively.
 > 
 > Current limitation:
 > When updating **Override sales tax** checkbox on a header or line level the respective charges do not inherit this checkbox in case the charges were already created.
@@ -135,6 +135,6 @@ For information about the configuration for reverse charge rules, see [Set up re
 When the document lines meet the reverse charge rules that are configured in Finance, the **Override sales tax** checkbox is set to **Yes** for the affected lines. The default value for **Sales tax group** comes from the **Purchase order sales tax group** or **Sales order sales tax group** field, respectively. These fields are specified on the **General ledger parameters** page, on the **Reverse charge** tab. For more information about these fields, see [Set up default parameters](emea-reverse-charge.md#set-up-default-parameters).
 
 > [!NOTE]
-> For reverse charges, the sales tax groups and item sales tax groups must be also created and maintained in the Tax feature setup .
+> For reverse charges, the sales tax groups and item sales tax groups also must be created and maintained in the Tax feature setup.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
