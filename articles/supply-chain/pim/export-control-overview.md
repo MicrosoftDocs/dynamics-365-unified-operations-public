@@ -74,4 +74,4 @@ Authorities issue licenses to give a company specific permission to trade in res
 ## Next steps
 
 - [Enable and configure advanced export control](export-control-configure.md)
-- [Work with advanced export control for products and sales orders](export-control-use.md)
+- [Work with advanced export control for products, sales orders, and sales quotations](export-control-use.md)
