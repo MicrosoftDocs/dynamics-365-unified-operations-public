@@ -85,4 +85,4 @@ Licenses from the sales order header can be overridden on the sales order lines.
 
 ## Checking and enforcing export control rules for sales quotations
 
-Export control functionality works similarly for sales quotations as it does for sales orders. See the previous section for guidelines.
+Advanced export control functionality works similarly for sales quotations as it does for sales orders. See the previous section for guidelines.
