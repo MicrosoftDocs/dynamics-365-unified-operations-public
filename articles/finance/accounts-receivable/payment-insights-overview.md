@@ -37,9 +37,9 @@ This article describes the payment insights capability that helps improve unders
 ## Overview
 
 It can be hard to predict when customers pay their invoices. This lack of insight can lead to:
- - less accurate cash flow forecasts
- - collections processes that start too late
- - orders that are released to customers who may default on their payment.
+ - Less accurate cash flow forecasts
+ - Collections processes that start too late
+ - Orders released to customers who may default on their payment
 
 Customer payment insights help organizations predict when a customer invoice will be paid. This information helps organizations create collections strategies to improve the probability of being paid on time. 
 
@@ -49,13 +49,12 @@ Payment predictions enable organizations to improve their business processes by 
 
 Using a machine learning model, which uses historical invoices, payments, and customer data, Customer payment insights more accurately predicts when a customer will pay an outstanding invoice.
 
-For each open invoice, Customer payment insights predicts three payment probabilities:
-
+For each open invoice, Customer payment insights predict three payment probabilities:
 -	Probability of payment being made on time 
 -	Probability of payment being made late
 -	Probability of payment being made very late
 
-Customer payment insights provides an aggregated view of expected payments, helping organizations understand the total payment amount expected from a customer in one of the three buckets:
+Customer payment insights provides an aggregated view of expected payments from a customer in one of the three buckets:
  - **On time**
  - **Late**
  - **Very late**
@@ -66,7 +65,7 @@ Each invoice is assigned a probability of payment on time. If the probability of
 
 [![List of payment probabilities.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
-Customer payment insights provides the following contextual information to explain the prediction:
+Customer payment insights provides the following information about the prediction:
  - The top factors that influenced the predictions
  - The current state of business with the customer
  - Details about the historical customer payment behavior 
@@ -80,11 +79,11 @@ Developing and deploying an AI solution is hard. It takes a team of data scienti
 
 ## How to get Customer payment insights 
 
-Send email to [Customer payment insights](mailto:fiap@microsoft.com) if you are interested in trying the Customer payment insights.
+Send email to [Customer payment insights](mailto:fiap@microsoft.com) if you're interested in trying the Customer payment insights.
 
 ## Privacy Notice
 
-Previews (1) may utilize less privacy and security measures than the Dynamics 365 finance and operations service, (2) are not included in the service level agreement for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) has limited support.
+Previews (1) may utilize less privacy and security measures than the Dynamics 365 finance and operations service, (2) aren't included in the service level agreement for this service, (3) shouldn't be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) has limited support.
 
 
 
