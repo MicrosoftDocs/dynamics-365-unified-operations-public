@@ -37,7 +37,7 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 1. In [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/applications), go to **Environments**, select the environment, and then select **Dynamics 365 apps**.
 1. Update the **Finance and operations virtual entity** app if the status is **Update available**.
 > [!Note]
-> Known issue - If msft_DataArchivalBaseComponents version is below 1.0.0.178 then [download the corresponding component](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/blob/main/Dataverse/msft_DataArchivalBaseComponents/README.md) as per Dynamics 365 CE version below. This is required because Dynamics 365 CE is native to Dataverse and Dynamics 365 Finance and Operations data archival feature leverages Dataverse. 
+> Known Issue: [Download msft_DataArchivalBaseComponents](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/blob/main/Dataverse/msft_DataArchivalBaseComponents/README.md) component to enable Finance and Operation data to synch to Dataverse long term retention
 
  
 1. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
