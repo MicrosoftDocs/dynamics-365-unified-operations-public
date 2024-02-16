@@ -69,7 +69,7 @@ Developing and deploying an AI solution is hard. It takes a team of data scienti
 
 ## How to get Customer payment insights 
 
-Send email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in trying the Customer payment insights.
+Send email to [Customer payment insights](mailto:fiap@microsoft.com) if you are interested in trying the Customer payment insights.
 
 ## Privacy Notice
 
