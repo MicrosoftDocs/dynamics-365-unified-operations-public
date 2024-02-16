@@ -66,8 +66,8 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 
 ### Scheduling an archive job
 Finance and Operations archive jobs can be scheduled from the archive workspace for supported functional scenarios using the new long term retention job wizard. 
-- While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process runs during the scheduled window. The other asynchronous archive processes for Dataverse long term retention occurs continuously even outside of the scheduled duration.
-- Only one archive job across all scenarios run at any given point of time.  The scheduled job starts running only after the previous archive job completes.
+- While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process runs during the scheduled window. The other asynchronous archive processes for Dataverse long term retention occur continuously even outside of the scheduled duration.
+- Only one archive job across all scenarios runs at any given point of time.  The scheduled job starts running only after the previous archive job completes.
 
 ## View archive job progress
 
