@@ -3,9 +3,9 @@ title: Set up and manage archive data in Dynamics 365 Finance (preview)
 description: This article describes how to set up and manage archive data in Microsoft Dynamics 365 Finance. 
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
+ms.reviewer: johnmichalak
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 2/16/2024
 ms.custom:
 
 ---
@@ -59,15 +59,15 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 ### Enable Finance and Operation data archival with Dataverse long term retention  
 
 1. In Dynamics 365 Finance and Operations, go to **Feature management**.
-1. Select the **Archive with Dataverse long term retention** feature for overall archival service integration. This will enable all supported Dynamics 365 Finance and Operations functional scenarios for archiving with Dataverse long-term retention.
+1. Select the **Archive with Dataverse long term retention** feature for overall archival service integration. This feature enables all supported Dynamics 365 Finance and Operations functional scenarios for archiving with Dataverse long-term retention.
 2. The **Archive with Dataverse long term retention** workspace should be available in the **Workspaces** list in Finance and Operations.
 
 <br/>
 
 ### Scheduling an archive job
 Finance and Operations archive jobs can be scheduled from the archive workspace for supported functional scenarios using the new long term retention job wizard. 
-- While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process will execute during the scheduled window. The other asynchronous archive processes for Dataverse long term retention will occur continuously even outside of the scheduled duration.
-- Only one archive job across all scenarios will be executed at any given point of time.  The scheduled job will start executing only after the previous archive job has completed its execution.
+- While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process runs during the scheduled window. The other asynchronous archive processes for Dataverse long term retention occurs continuously even outside of the scheduled duration.
+- Only one archive job across all scenarios run at any given point of time.  The scheduled job starts running only after the previous archive job completes.
 
 ## View archive job progress
 
@@ -77,7 +77,7 @@ The **Job status** column that's visible for each archive scenario captures the 
 
 | Job status | Description |
 |---|---|
-| Scheduled | A job has been scheduled, but it isn't being processed yet. Details about the scheduled date and time are available on the dashboard. |
+| Scheduled | A job is scheduled, but it isn't being processed yet. Details about the scheduled date and time are available on the dashboard. |
 | In progress | The archive job is in progress. Some of the interim stages in the archive job might be completed. |
 | Complete | All stages of the archive job have been completed. |
 | Failed | The archive job has failed. |
@@ -91,16 +91,16 @@ You can view the detailed progress log for each archive job by selecting **View 
 
 | Information | Description |
 |---|---|
-| Initiating long term retention | The long-term retention job has been activated. |
+| Initiating long term retention | The long-term retention job is activated. |
 | Initial sync for \<*tablename*\> in progress \[x of y records synced\] |Initial synchronization to the Dataverse long term retention is in progress. |
-| Initial sync for \<*tablename*\> completed | Initial synchronization to the Dataverse long term retention has been completed. |
+| Initial sync for \<*tablename*\> completed | Initial synchronization to the Dataverse long term retention is completed. |
 | Retention in progress \[x of y records of \<*tablename*\> marked\] | The process is marking records in the finance and operations live application table for archiving, and the equivalent records in the Dataverse long term retention are being updated as retained. |
 | Reconciliation in progress | <p>Reconciliation is in progress to verify that the records that are marked as retained in Dataverse long term retention match the records that are marked for archiving in the finance and operations live application tables.|
-| Reconciliation completed | Reconciliation for all finance and operations entities has been completed. |
+| Reconciliation completed | Reconciliation for all finance and operations entities are completed. |
 | Pending move to history | The move to history process is waiting to begin. |
-| Initiating move to history | The move to history process has been activated. |
+| Initiating move to history | The move to history process is activated. |
 | Staging data for move to history in progress | Data is in the staging/queueing process for the move to history. |
-| Staging data for move to history completed | Staging/queueing has been completed. |
+| Staging data for move to history completed | Staging/queueing has completed. |
 | Move to history in progress \[x of y records of \<*tablename*\> moved\] | Data is being moved from live tables to history tables. |
-| Completed archival of table \<*tablename*\> | The move to history process has been completed for the specified table. |
-| The archive job is complete | The end-to-end archival process has been completed for all tables in the functional scenario. |
+| Completed archival of table \<*tablename*\> | The move to history process has completed for the specified table. |
+| The archive job is complete | The end-to-end archival process has completed for all tables in the functional scenario. |
