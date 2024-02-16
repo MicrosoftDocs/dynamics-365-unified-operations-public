@@ -27,7 +27,7 @@ The following prerequisites must be met before you archive General ledger transa
 - Year-end close must be run for the fiscal year for the company.
 - General ledger transactions for the previous fiscal year for the company must be archived.
 
-[![Archive with Dataverse long term retention.](./media/archive-with-dataverse-longterm1.jpg)](./media/archive-with-dataverse-longterm1.jpg)
+![Archive with Dataverse long term retention.](media/archive-with-dataverse-longterm1.jpg)
 
 ## Set up an archival job
 
