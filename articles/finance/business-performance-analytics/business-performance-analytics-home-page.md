@@ -81,5 +81,5 @@ Business performance analytics lets user create and edit reports. For more infor
 
 ### Business analytics self-help
 
-To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. For more information, see [Business performance analytics self-help](bpa-help-overview.md).
+To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. For more information, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
