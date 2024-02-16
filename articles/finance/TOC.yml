@@ -374,7 +374,7 @@
         href: accounts-receivable/tasks/establish-customer-method-payment.md
       - name: Establish customer payment fees
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
-      - name: Customer payment insights (preview)
+      - name: Customer payment insights 
         href: accounts-receivable/payment-insights-overview.md
       - name: Accounts receivable posting
         href: general-ledger/accts-recvble-posting.md 
