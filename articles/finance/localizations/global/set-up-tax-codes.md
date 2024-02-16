@@ -4,7 +4,7 @@
 title: Set up tax codes
 description: This article explains how to set up tax codes in the Tax Calculation Service. 
 author: wangchen
-ms.date: 11/30/2021
+ms.date: 02/09/2024
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: TaxTable, TaxData   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -33,23 +33,31 @@ This article explains how to set up tax codes in the Tax Calculation service. It
 > [!IMPORTANT]
 > The setup of tax codes in the Tax Calculation Service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. Tax codes are automatically synced to Microsoft Dynamics 365 Finance when you enable the Tax Calculation service for a selected legal entity in Finance.
 
+> [!NOTE]
+> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
+>
+> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
+
 ## Simple setup
 
 Follow these steps to use a tax code in a simple scenario, such as a scenario where there is only one tax rate.
 
-1. Sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
-2. Go to **Workspaces** \> **Globalization features** \> **Tax calculation**.
-3. Select the feature and version that you want to set up, and select **Edit**.
-4. On the **General** tab, select **Configuration version**.
-5. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
-6. Select **Calculation origin**. A calculation origin is a group of methods that are defined in the tax configuration version that you selected. For this simple scenario, select **By net amount**.
-7. Select **Save**. More fields become available, based on the calculation origin that you selected.
-8. On the **Rates** FastTab, select **Add** to add one tax rate for this tax code.
-9. Select **Save**.
+1. Follow one of these steps, depending on where you're completing the procedure:
+
+    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
+    - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
+
+2. On the **Tax calculation features** page, select the feature and version that you want to set up, and then select **Edit**.
+3. On the **General** tab, select **Configuration version**.
+4. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
+5. Select **Calculation origin**. A calculation origin is a group of methods that are defined in the tax configuration version that you selected. For this simple scenario, select **By net amount**.
+6. Select **Save**. More fields become available, based on the calculation origin that you selected.
+7. On the **Rates** FastTab, select **Add** to add one tax rate for this tax code.
+8. Select **Save**.
 
 ## Calculation origin
 
-The calculation origin defines how the tax base amount and the tax amount are calculated. It's configured by tax configuration in the **Electronic Reporting** workspace. The following values are available in the **Calculation origin** field:
+The calculation origin defines how the tax base amount and the tax amount are calculated. The following values are available in the **Calculation origin** field:
 
 - By net amount
 - By gross amount
@@ -91,7 +99,7 @@ If you select **By quantity** in the **Calculation origin** field, the tax amoun
 For example, the tax code is set up as 1.20 per unit. On a sales invoice line, 25 units of an item are sold. In this case, the tax amount is calculated as 25 × 1.20 = 30.00.
 
 > [!NOTE] 
-> Unit conversion isn't supported for **By quantity** calculation. However you can create multiple tax codes in RCS for different units and maintain converted tax rates by quantity.
+> Unit conversion isn't supported for **By quantity** calculation. However, you can create multiple tax codes in RCS for different units and maintain converted tax rates by quantity.
 
 ### By margin
 
@@ -99,7 +107,7 @@ If you select **By margin** in the **Calculation origin** field, the tax amount 
 
 For example, the tax rate is 25 percent, the invoice line shows a quantity of 10 items at 10.00 each, and the cost per item is 6. In this case, amounts are calculated in the following way:
 
-- **Sales margin:** 10 × ( 10.00 – 6.00) = 40.00
+- **Sales margin:** 10 × (10.00 – 6.00) = 40.00
 - **Tax amount:** 40.00 × 25 percent = 10.00
 - **Total invoice amount:** 100.00 + 10.00 = 110.00
 

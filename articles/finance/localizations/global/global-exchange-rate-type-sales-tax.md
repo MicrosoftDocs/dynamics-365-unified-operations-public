@@ -2,12 +2,12 @@
 title: Exchange rate type for sales tax
 description: This article explains the logic for calculating sales tax on the special exchange rate.
 author: epodkolz
-ms.date: 07/10/2023
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: epodkolzina
 ms.search.validFrom: 
@@ -27,7 +27,7 @@ As of Microsoft Dynamics 365 Finance version 10.0.35, the functionality for [val
 
 ## Prerequisites and setup
 
-This functionality is available only for legal entities that have enabled Tax Calculation service for the selected business processes. For more information about Tax Calculation service, its capabilities, and how to set it up, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
+This functionality is available only for legal entities that have enabled Tax Calculation feature for the selected business processes. For more information about Tax Calculation, its capabilities, and how to set it up, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
 
 In addition, you must enable the following features in the **Feature management** workspace:
 
