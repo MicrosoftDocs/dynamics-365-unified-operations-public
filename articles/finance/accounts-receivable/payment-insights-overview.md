@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customer payment insights (Preview)
+title: Customer payment insights
 description: This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
@@ -27,10 +27,10 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Customer payment insights (Preview)
+# Customer payment insights 
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise. 
 
