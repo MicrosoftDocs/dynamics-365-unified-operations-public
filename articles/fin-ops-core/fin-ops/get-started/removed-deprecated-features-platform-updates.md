@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
-ms.date: 01/04/2024
+ms.date: 02/16/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
