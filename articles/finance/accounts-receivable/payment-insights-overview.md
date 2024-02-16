@@ -56,9 +56,9 @@ For each open invoice, Customer payment insights predicts three payment probabil
 -	Probability of payment being made very late
 
 Customer payment insights provides an aggregated view of expected payments, helping organizations understand the total payment amount expected from a customer in one of the three buckets:
- - On time
- - Late
- - Very late
+ - **On time**
+ - **Late**
+ - **Very late**
 
 [![Aggregated view of payment predictions.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
@@ -76,7 +76,7 @@ With Customer payment insights, organizations can be more proactive about collec
 
 ## Methodology
 
-Developing and deploying an AI solution is hard. It takes a team of data scientists, subject matter experts and engineers, working for an extended period of time to formulate, develop, deploy, and maintain a usable AI solution. We make it easy to deploy and use AI solutions in Finance. We're prepackaging AI solutions in Finance that are built on top of Microsoft AI Builder. An end user, with the single click of button, can deploy the AI solution and start leveraging the benefits of intelligent predictions. If an organization isn't satisfied with the accuracy of predictions, a power user, again using a single click, can enter the AI builder extension experience, and then select or deselect the fields used to generate predictions. Once ready, they can train and publish the changes, and the newly trained model will be automatically picked up for predictions in Finance.
+Developing and deploying an AI solution is hard. It takes a team of data scientists, subject matter experts and engineers, working for an extended period of time to formulate, develop, deploy, and maintain a usable AI solution. It's easy to deploy and use AI solutions in Finance. AI solutions are prepackaged in Finance that are built on top of Microsoft AI Builder. An end user, with the single click of button, can deploy the AI solution and start leveraging the benefits of intelligent predictions. If an organization isn't satisfied with the accuracy of predictions, a power user can enter the AI builder extension experience, and select or deselect the fields used to generate predictions. They can train and publish the changes, and the newly trained model is automatically picked up for predictions in Finance.
 
 ## How to get Customer payment insights 
 
