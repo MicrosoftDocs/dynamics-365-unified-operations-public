@@ -12,9 +12,25 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Mass deploy the mobile app for user-based authentication
+# Mass deploy the mobile app with user-based authentication
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Microsoft doesn't currently support mass deployment of the Warehouse Management mobile app when you are using user-based authentication (such as device code flow) to sign in to Supply Chain Management. We expect to add support for this scenario in the near future. [Service-based authentication](warehouse-app-authenticate-service-based.md) has now been deprecated, so user-based authentication will soon be required. We recommend that you use [user-based authentication](warehouse-app-authenticate-user-based.md) for new deployments, and that you migrate existing deployments to user-based authentication as soon as possible. This article will be updated as soon as mass deployment is supported for user-based authentication. For more information about the deprecation of service-based authentication methods, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
+> In order to leverage the advantages of mobile mass deployment (MDM), you must have configured the Warehouse Management mobile app to use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamepassword-authentication) with [single sign-on](warehouse-app-authenticate-user-based.md#single-sign-on). This is because ...
+
+## Prerequisites
+
+ - Follow the [guide to mass deploy the Warehouse Management mobile app and manage connection configurations](warehouse-app-intune.md)
+
+## How the Warehouse Management mobile app authenticates
+
+[comment]: <> (Here we will write that after the app and the connections.json is installed, the app needs to retrieve the Entra ID session from somewhere. That somewhere is either Microsoft Intune, if the customer used this to mass deploy, or any other app that is authenticated using the Entra ID user that will be entered to authenticate wma.)
+
+## Additional resources
+
+- [Mass deploy the Warehouse Management mobile app and manage connection configurations](warehouse-app-intune.md)
+- [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
+- [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

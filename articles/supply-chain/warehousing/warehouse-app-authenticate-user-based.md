@@ -19,27 +19,34 @@ ms.custom: bap-template
 The Warehouse Management mobile app supports the following types of user-based authentication:
 
 - Device code flow authentication
-- User name and password authentication
+- Username and password authentication
 
 ## <a name="scenarios"></a>Scenarios for managing devices, Microsoft Entra ID users, and mobile device users
 
 For security purposes, the Warehouse Management mobile app uses Microsoft Entra ID to authenticate the connection between the app and Supply Chain Management. There are two basic scenarios for managing Microsoft Entra ID user accounts for your various devices and users: one where each Microsoft Entra ID user accounts represents a unique device and one where each Microsoft Entra ID user represents a unique human worker. In each case, each human worker will have one *warehouse worker* record set up in the Warehouse management module, plus one or more *mobile device user accounts* for each warehouse worker record. For warehouse worker accounts that have more than one mobile device user account, it's possible to make one of them the default mobile device user account. The two scenarios are:
 
-- **Use one Microsoft Entra ID user account for each mobile device** – In this scenario, admins set up the Warehouse Management mobile app to use either [device code authentication](warehouse-app-authenticate-user-based.md) or [username/password authentication](warehouse-app-authenticate-user-based.md) to connect to Supply Chain Management through the *device's* Microsoft Entra ID account (in this scenario, human workers don't need a Microsoft Entra ID user account). The app then shows a sign-in screen that lets human workers sign in to the app so they can gain access to the work and other records that apply to them at their location. Human workers sign in using the user ID and password of one of the mobile device user accounts assigned to their warehouse worker record. Human workers must always enter a user ID, so it doesn't matter which of these mobile device user accounts is set as the default for the warehouse worker record. When a human worker signs out, the app remains authenticated with Supply Chain Management but shows the sign-in screen again, so the next human worker can sign in using their mobile device user account.
-- **Use one Microsoft Entra ID user account for each human worker** – In this scenario, each human user has a Microsoft Entra ID user account that's linked to their warehouse worker account in Supply Chain Management. As a result, the Microsoft Entra ID user sign-in might be all the human worker needs to both authenticate the app with Supply Chain Management and sign in to the app, provided the warehouse worker account has a default user ID set for that warehouse worker account (or just one user ID for the warehouse worker account). This scenario also supports [single sign-on](warehouse-app-authenticate-user-based.md#sso) (SSO) because the same Microsoft Entra ID session can be shared across other apps on the device (such as Microsoft Teams or Microsoft Outlook) until the human worker signs out of the Microsoft Entra ID user account.
+- **Use one Microsoft Entra ID user account for each mobile device** – In this scenario, admins set up the Warehouse Management mobile app to use either [device code flow authentication](warehouse-app-authenticate-user-based.md#device-code-authentication) or [username/password authentication](warehouse-app-authenticate-user-based.md#usernamepassword-authentication) to connect to Supply Chain Management through the *device's* Microsoft Entra ID account (in this scenario, human workers don't need a Microsoft Entra ID user account). The app then shows a sign-in screen that lets human workers sign in to the app so they can gain access to the work and other records that apply to them at their location. Human workers sign in using the user ID and password of one of the mobile device user accounts assigned to their warehouse worker record. Human workers must always enter a user ID, so it doesn't matter which of these mobile device user accounts is set as the default for the warehouse worker record. When a human worker signs out, the app remains authenticated with Supply Chain Management but shows the sign-in screen again, so the next human worker can sign in using their mobile device user account.
+- **Use one Microsoft Entra ID user account for each human worker** – In this scenario, each human user has a Microsoft Entra ID user account that's linked to their warehouse worker account in Supply Chain Management. As a result, the Microsoft Entra ID user sign-in might be all the human worker needs to both authenticate the app with Supply Chain Management and sign in to the app, provided the warehouse worker account has a [default user ID](mobile-device-work-users.md#set-up-mobile-device-user-accounts)  set for that warehouse worker account (or just one user ID for the warehouse worker account). This scenario also supports [single sign-on](warehouse-app-authenticate-user-based.md#single-sign-on) (SSO) because the same Microsoft Entra ID session can be shared across other apps on the device (such as Microsoft Teams or Microsoft Outlook) until the human worker signs out of the Microsoft Entra ID user account.
 
-## Device code flow authentication
+## <a name="deviceCodeFlow"></a>Device code flow authentication
 
-When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The admin who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the human worker who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the admin must enter the code and the credentials for the Microsoft Entra ID user account.
+When you use device code authentication, the Warehouse Management mobile app generates and shows a unique device code. The admin who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the human worker who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the admin must enter the code and the credentials for the Microsoft Entra ID user account.
 
-Device code flow authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
+Device code authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
 
 - You should create a unique Microsoft Entra ID user account for each device or human worker. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities*.
+- If a generated device code that is not used for authentication will expire after 15 minutes and the Warehouse Management mobile app will hide it. The user needs to press
+*Connect* once more for the mobile app to generate a new code.
 - If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
-- The device code flow isn't fully supported by mobile mass deployment (MDM) systems such as Intune.
+- The device code flow isn't supported by mobile mass deployment (MDM) systems such as Intune, as the code is generated the moment one unauthenticated device tries to connect to Supply Chain Management.
 
+[comment]: <> (Does this apply to both devicecode and userpass? if so we should move it below and change the text)
 > [!IMPORTANT]
 > All Microsoft Entra ID accounts that are used to sign in via the device code flow must be granted only the minimum set of permissions that they require to perform their warehousing tasks. Permissions should be strictly limited to warehouse mobile device user activities. Never use an admin account to sign in to devices.
+
+## <a name="usernamePasswordFlow"></a>Username/password authentication
+[comment]: <> (Does this section bring value? I added it because Bostjan created a hyperlink in his "scenarios" above)
+When you use username/password authentication, the human worker must enter the Microsoft Entra ID username and password accossiated either with the device of with themselves (see (#scenarios)). Whether or not this is all the human worker needs to authenticate and sign in to the app, so they can gain access to the work depends on the Supply Chain Management [worker setup](mobile-device-work-users.md). This scenario also supports [single sign-on](warehouse-app-authenticate-user-based.md#single-sign-on) (SSO), which also enabled mobile mass deployment (MDM).
 
 ## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
 
@@ -106,9 +113,10 @@ Create a user that corresponds to the user credentials for the Warehouse Managem
 
 To use single sign-on (SSO), you must be running Warehouse Management mobile app version 2.1.23.0 or later.
 
-SSO enables users to sign in without having to enter a password. It works by reusing credentials from Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)).
+SSO enables users to sign in without having to enter a password. It works by reusing credentials from Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only), Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)) or other apps on the device.
 
-SSO applies exclusively to the `"UsernamePassword"` connection type. (It doesn't work with the `"DeviceCode"` connection type.)
+> [!NOTE]
+> SSO applies exclusively to the [username/password](#usernamepassword-authentication) authentication.
 
 The procedure in [Create a web service application in Microsoft Entra ID](#create-service) describes all the settings that are required to prepare your system to use SSO. However, to use SSO, you must also follow one of these steps, depending on how you configure the connection.
 
@@ -116,7 +124,7 @@ The procedure in [Create a web service application in Microsoft Entra ID](#creat
 - If you *configure the connection by using a JavaScript Object Notation (JSON) file or QR code*, you must include `"UseBroker": true` in your [JSON file or QR code](install-configure-warehouse-management-app.md#connection-file-qr).
 
 > [!IMPORTANT]
-> - To use mass deployment, you must enable SSO.
+> - To use mobile mass deployment (MDM), you must enable SSO.
 > - The Warehouse Management mobile app does *not* support [shared device mode](/entra/identity-platform/msal-shared-devices).
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
