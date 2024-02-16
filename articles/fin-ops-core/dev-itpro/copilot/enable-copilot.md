@@ -63,6 +63,7 @@ Follow these steps to upgrade the *Finance and Operations Virtual Entity* soluti
 1. In the **Resources** field, select **Dynamics 365 apps**.
 1. Find the app named *Finance and Operations Virtual Entity*.
 1. If the status is *Installed*, you're already running the latest version. If the status is *Update available*, you must update the solution by following these steps:
+   
    1. Select the ellipsis button (**&hellip;**), and then select **Update**.
    1. Accept the terms of service, and then select **Update**.
 
