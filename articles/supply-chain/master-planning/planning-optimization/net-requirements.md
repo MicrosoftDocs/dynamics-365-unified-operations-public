@@ -33,6 +33,12 @@ You can open the **Net requirements** page in any of the following ways:
 
 The **Net requirements** page consists of upper and lower sections. The Action Pane on this page includes an **Update** button. When this button is selected, a menu of commands appears.
 
+### Update of the net requirements page
+
+Any supply or demand won't appear among the net requirements of an item until Planning Optimization is run (using a plan that includes the item), or until you select Update > Master planning on the Action Pane on the Net requirements page, which will run master planning for the item. 
+For example, a manually created planned order (supply), changes in an existing planned order, or sales orders created during the day (demand) will not appear in the net requirements form until the net requirements page is updated. 
+If you would need to ensure that the net requirements page is updated, please run master planning. 
+
 ### Select a master plan to view
 
 Before you review the net requirements of the product, be sure to select the relevant master plan in the **Plan** field at the top of the page.
