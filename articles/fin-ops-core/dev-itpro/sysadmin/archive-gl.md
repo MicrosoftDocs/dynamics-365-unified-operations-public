@@ -42,13 +42,13 @@ To set up an archival job, follow these steps.
 
 4. Select **New long term retention** to open a wizard that you can use to schedule a new General ledger long term retention job.
 
-[![New long term retention job - General ledger.](./media/new-long-term-retenttion-job2.jpg)](./media/new-long-term-retenttion-job2.jpg)
+![New long term retention job - General ledger.](./media/new-long-term-retenttion-job2.jpg)
    
 6. Enter a name for the job, and then select **Next**.
 
     New long term retention jobs can be scheduled for one or more companies at a time. Execution of these jobs is sequential.
 
- [![Schedule New long term retention job - General ledger.](./media/long-term-schedule3.jpg)](./media/long-term-schedule3.jpg)  
+![Schedule New long term retention job - General ledger.](./media/long-term-schedule3.jpg)  
 
 8. On the **Define criteria** page, select the combination of fiscal years and companies to archive General ledger data for.
 9. Select **Next**.
