@@ -166,7 +166,7 @@ To print the **Sales journal** report, follow these steps:
     - On the **Invoice lines** FastTab, in the **Main account** field, select **701000**.
     - In the **Sales tax group** field, select VE-DOM.
     - In the **Item sales tax group** field, select NORMAL.
-    - In the **Quality** field, enter 1.
+    - In the **Quantity** field, enter 1.
     - In the **Unit price** field, enter 100.
 
 3. Post the free text invoice.
@@ -187,7 +187,7 @@ To print the **Purchase journal** report, follow these steps:
 
     - In the **Vendor account** field, select **1001**.
     - In the **Item number** field, select **0001**.
-    - In the **Quality** field, enter 3.
+    - In the **Quantity** field, enter 3.
     - On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax** section, in the **Item sales tax group**, select **NORMAL**. In the **Sales tax group**, select **VE-DOM**.
 
 3. Go to **Purchase** > **Actions** > **Confirm**.
