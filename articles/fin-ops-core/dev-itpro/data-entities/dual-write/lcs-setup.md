@@ -65,7 +65,8 @@ Certificates in your Microsoft Entra tenant are no longer installed in new one-b
    - In the **Security roles** text box, select a security role with create, read, update, and delete permissions on Dataverse tables used for dual-write, such as the **System Administrator** role.
    - Select **Create**.
 
-> [!NOTE] If permissions for the application user are not configured for your one-box environment, you may receive the following error message during dual-write sync operations:
+> [!NOTE]
+> If permissions for the application user are not configured for your one-box environment, you may receive the following error message during dual-write sync operations:
 > "0x80072560 response message: The user is not a member of the organization".
 
 ## Troubleshooting
