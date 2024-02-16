@@ -32,36 +32,47 @@ ms.dyn365.ops.version: AX 10.0.8
 [!include [banner](../includes/banner.md)]
 
 
-This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature helps you identify circumstances that justify initiating collection processes earlier than you might have done otherwise. 
+This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature helps identify circumstances that justify initiating collection processes earlier than normal.  
 
 ## Overview
 
-It can be hard to predict when customers pay their invoices. This lack of insight leads to less accurate cash flow forecasts, collections processes that start too late, and orders that are released to customers who may default on their payment. Customer payment insights help organizations predict when a customer invoice will be paid. This information can help organizations create collections strategies that improve the probability of being paid on time. 
+It can be hard to predict when customers pay their invoices. This lack of insight can lead to:
+ - less accurate cash flow forecasts
+ - collections processes that start too late
+ - orders that are released to customers who may default on their payment.
+
+Customer payment insights help organizations predict when a customer invoice will be paid. This information helps organizations create collections strategies to improve the probability of being paid on time. 
 
 ## Predictions
 
 Payment predictions enable organizations to improve their business processes by helping them easily identify the invoices that are likely to be paid late, and to take appropriate measures that improve their chances of getting paid on time.
 
-Using a machine learning model, which leverages historical invoices, payments and customer data, Customer payment insights more accurately predicts when a customer will pay an outstanding invoice.
+Using a machine learning model, which uses historical invoices, payments, and customer data, Customer payment insights more accurately predicts when a customer will pay an outstanding invoice.
 
-For each open invoice, Customer payment insights can predict three payment probabilities:
+For each open invoice, Customer payment insights predicts three payment probabilities:
 
 -	Probability of payment being made on time 
 -	Probability of payment being made late
 -	Probability of payment being made very late
 
-Customer payment insights provides an aggregated view of expected payments, which can help organizations understand the total payment amount they can expect from a customer in one of the three buckets, On time, Late, and Very late.
+Customer payment insights provides an aggregated view of expected payments, helping organizations understand the total payment amount expected from a customer in one of the three buckets:
+ - On time
+ - Late
+ - Very late
 
 [![Aggregated view of payment predictions.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
-Also, each invoice is assigned a probability of payment on time. If the probability of payment on time is less than 50%, the invoices are tagged with a red circle to indicate that these invoices may require collections attention. 
+Each invoice is assigned a probability of payment on time. If the probability of payment on time is less than 50%, the invoices are tagged with a red circle indicating that these invoices may require collections attention. 
 
 [![List of payment probabilities.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
-Customer payment insights also provides contextual information to explain the prediction, such as the top factors that influenced the predictions, the current state of business with the customer, and details about the historical customer payment behavior. 
-In many businesses, the collections process has been a reactive activity; the collections process doesn’t start until invoices come due. 
+Customer payment insights provides the following contextual information to explain the prediction:
+ - The top factors that influenced the predictions
+ - The current state of business with the customer
+ - Details about the historical customer payment behavior 
+In many businesses, the collections process has been a reactive activity and the collections process doesn’t start until invoices are due. 
 
-With Customer payment insights, organizations can be more proactive about collections. They no longer have to wait for the transactions to become due to start the collection process. Instead, they can use the payment prediction capability to determine whether proactive collections will improve the probability of being paid on time. Payment prediction also gives businesses the information needed to justify starting the collection process early.
+With Customer payment insights, organizations can be more proactive about collections. They no longer have to wait for the transactions to become due to start the collection process. They can use the payment prediction capability to determine whether proactive collections improves the probability of being paid on time. Payment prediction provides information needed to justify starting the collection process early.
 
 ## Methodology
 
