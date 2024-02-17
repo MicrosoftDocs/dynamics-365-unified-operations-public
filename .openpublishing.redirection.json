@@ -27584,6 +27584,11 @@
       "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-general-ledger-err00001",
       "redirect_document_id": false
     },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-help-overview.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
+      "redirect_document_id": false
+    },
     {
       "source_path": "articles/commerce/cost.md",
       "redirect_url": "/dynamics365/commerce/dom-costs",
