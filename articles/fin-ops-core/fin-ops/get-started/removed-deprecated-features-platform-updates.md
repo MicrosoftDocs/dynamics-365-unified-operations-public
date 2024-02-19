@@ -94,7 +94,7 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are discontinuing support for Microsoft SQL Server 14.x in Finance and Operations (Dynamics 365) and older versions, as active support for 14.x ended in October 2022. Starting from 10.0.40 (PU 64), there may be SQL-related updates in FinOps that are not compatible with older versions of MS SQL Server. |
+| **Reason for deprecation/removal** | We are discontinuing support for Microsoft SQL Server 14.x or older in Finance and Operations (Dynamics 365) and older versions, as active support for 14.x ended in October 2022. Starting from 10.0.40 (PU 64), there may be SQL-related updates in FinOps that are not compatible with older versions of MS SQL Server. |
 | **Replaced by another feature?**   | Yes, customers can use Microsoft SQL Server 15.x or higher with their Finance and Operations (Dynamics 365).|
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
