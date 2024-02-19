@@ -66,7 +66,7 @@ Data is refreshed once per day, at 00:00:00 AM (UTC).
 The amount of time that's required depends on the volume of data. However, there should be fresh data every 24 hours.
 
 ### How do I uninstall business performance analytics?
-There are two options available to uninstall business performance analytics. 
+There are two options available to uninstall business performance analytics. Incase you need to install business performance analytics again once Uninstall is successful, please make sure that you Install business performance analytics after gap of four hours since uninstall was successful.
 
 Option one:
 
