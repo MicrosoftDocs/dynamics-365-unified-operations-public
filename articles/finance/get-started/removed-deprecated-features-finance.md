@@ -57,6 +57,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Dataverse solution for Electronic invoicing
 
+Electronic Invoicing integration using Microsoft Dataverse
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Feature no longer required in the new version of globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: From Finance 10.0.38 release we plan to no longer support **Electronic Invoicing integration using Microsoft Dataverse**. This feature is no longer required by the new version of globalization feature for Electronic invoicing in Indonesia. |
+
 Dataverse solution for Electronic invoicing
 
 | &nbsp;  | &nbsp;  |
@@ -66,6 +76,8 @@ Dataverse solution for Electronic invoicing
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: From Finance 10.0.38 release we plan to no longer support **Dataverse solution for Electronic invoicing**. This plugin is no longer required by the new version of globalization feature for Electronic invoicing in Indonesia. |
+
+
 
 ## Features removed or deprecated in the Finance 10.0.36 release
 
