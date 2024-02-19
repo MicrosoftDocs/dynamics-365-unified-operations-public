@@ -94,6 +94,7 @@ The following setup is required in the Dynamics 365 Finance before you can insta
         - **Procurement 1**
         - **Process distribution**
         - **Retail channels**
+        - **Service management**
        
         
        
