@@ -23,7 +23,6 @@ This article explains how to change the [asset type](../setup-for-objects/object
 
 [!INCLUDE [preview-note](../../includes/preview-note.md)]
 
-
 ## Prerequisites
 
 Before you can use this feature, your system must meet the following requirements:
