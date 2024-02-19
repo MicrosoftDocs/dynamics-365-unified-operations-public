@@ -145,7 +145,12 @@ Follow these steps to set up Intune to support managed configuration for Windows
 1. In the **Add Row** dialog box, set the following fields:
     - **Name** – Enter a name for the new row.
     - **Description** – Enter a short description for the new row.
-    - **OMA-URI** – Enter the following value:<br/>*./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson*
+    - **OMA-URI** – Enter the following value:<br/>
+
+        ```txt
+        ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson
+        ```
+
     - **Data type** – Select *String*.
     - **Configuration value** – Paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
 1. Select **Save** to apply your settings and close the dialog box.
