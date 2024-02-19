@@ -64,7 +64,7 @@ Follow these steps to enable your finance and operations apps to access your Dat
 1. Go to **Product \> Features**.
 1. Set **Finance and Operations in Dataverse** to *On*.
 
-## Step 3: Install the Copilot application in your finance and operations apps environment
+## <a name="install-copilot-app"></a>Step 3: Install the Copilot application in your finance and operations apps environment
 
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 
