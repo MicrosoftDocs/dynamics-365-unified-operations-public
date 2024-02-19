@@ -27,6 +27,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 - Fixed an issue where the selected value was not being respected when moving back and forth in detours. 
 - Fixed an issue where the page layout would sometimes be wrong, if the device was on landscape mode and if the user had selected to never show the *quantity spinner*. 
 - The app now moves back to the **Select connection page** when the device code expires after 15 minutes, instead of showing an ambiguous error message. 
+- Fixed an issue that would prevent the app from being installed on Windows when the package was downloaded from App Center.
 - Accessibility improvements. 
 
 ## Version 2.1.23.0
