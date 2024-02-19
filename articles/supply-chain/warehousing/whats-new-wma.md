@@ -20,6 +20,15 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.25.0
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Improved the username and password authentication. Now, if the domain name is present in the connection configuration, the user now only needs to enter the alias part of the Entra ID username that they will use to authenticate, and the app will retrieve the domain name from the connection configuration. However, the user can still enter a valid Entra ID email and authenticate with no issue. 
+- Fixed an issue where the selected value was not being respected when moving back and forth in detours. 
+- Fixed an issue where the page layout would sometimes be wrong, if the device was on landscape mode and if the user had selected to never show the *quantity spinner*. 
+- The app now moves back to the **Select connection page** when the device code expires after 15 minutes, instead of showing an ambiguous error message. 
+- Accessibility improvements. 
+
 ## Version 2.1.23.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
