@@ -44,6 +44,7 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 > [!NOTE]
 > Only en-US operating system installations are supported.
+> These software requirements are relevant to all non-Microsoft managed environments, including development boxes, cloud-hosted environments, and similar setups.
 
 ## Microsoft SQL Server
 
