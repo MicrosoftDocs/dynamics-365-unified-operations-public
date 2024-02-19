@@ -1,5 +1,5 @@
 ---
-title: Mass deploy the mobile app for service-based authentication
+title: Mass deploy the mobile app and manage connection configurations
 description: This article explains how to mass deploy the Warehouse Management mobile app by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
@@ -12,14 +12,14 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Mass deploy the Warehouse Management mobile app and manage connection configurations
+# Mass deploy the mobile app and manage connection configurations
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you have many devices to manage. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
 
-This article explains how to mass deploy the Warehouse Management mobile app by using Microsoft Intune. 
+This article explains how to mass deploy the Warehouse Management mobile app by using Microsoft Intune.
 
 ## Prerequisites
 

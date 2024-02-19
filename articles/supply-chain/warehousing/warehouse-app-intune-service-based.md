@@ -1,5 +1,5 @@
 ---
-title: Mass deployment and service-based authentication
+title: Mass deploy the mobile app with service-based authentication
 description: This article explains how to mass deploy the Warehouse Management mobile app service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Mass deploy the Warehouse Management mobile app with service-based authentication
+# Mass deploy the mobile app with service-based authentication
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
@@ -24,7 +24,7 @@ ms.custom: bap-template
 
 To use an MDM solution to deploy the Warehouse Management mobile app and the related authentication certificates, you must have the following resources available:
 
-- Follow the [guide to mass deploy the Warehouse Management mobile app and manage connection configurations](warehouse-app-intune.md)
+- Follow the [guide to mass deploy the mobile app and manage connection configurations](warehouse-app-intune.md)
 - [Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-overview) installed on a dedicated Windows PC
 - [PowerShell](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
@@ -195,8 +195,8 @@ Another way to verify that your certificates are being correctly distributed is 
 
 ## Additional resources
 
-- [Mass deploy the Warehouse Management mobile app and manage connection configurations](warehouse-app-intune.md)
-- [Mass deploy the Warehouse Management mobile app with user-based authentications](warehouse-app-intune-user-based.md)
+- [Mass deploy the mobile app and manage connection configurations](warehouse-app-intune.md)
+- [Mass deploy the mobile app with user-based authentications](warehouse-app-intune-user-based.md)
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
