@@ -54,22 +54,7 @@ Follow these steps to check the status of the **Sql row version change tracking 
 1. Return to the **License configuration** page, and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
-## Step 2: Upgrade the Finance and Operations Virtual Entity solution
-
-Follow these steps to upgrade the *Finance and Operations Virtual Entity* solution.
-
-1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select the Power Platform environment connected to your finance and operations app, and open the detail view.
-1. In the **Resources** field, select **Dynamics 365 apps**.
-1. Find the app named *Finance and Operations Virtual Entity*.
-1. If the status is *Installed*, you're already running the latest version. If the status is *Update available*, you must update the solution by following these steps:
-   
-   1. Select the ellipsis button (**&hellip;**), and then select **Update**.
-   1. Accept the terms of service, and then select **Update**.
-
-You can follow the status of the update. During the update, the status is *Installing*. After the update is completed, the status changes to *Installed*.
-
-## Step 3: Enable your finance and operations apps to access your Dataverse environment
+## Step 2: Enable your finance and operations apps to access your Dataverse environment
 
 Follow these steps to enable your finance and operations apps to access your Dataverse environment.
 
@@ -79,7 +64,7 @@ Follow these steps to enable your finance and operations apps to access your Dat
 1. Go to **Product \> Features**.
 1. Set **Finance and Operations in Dataverse** to *On*.
 
-## Step 4: Install the Copilot application in your finance and operations apps environment
+## Step 3: Install the Copilot application in your finance and operations apps environment
 
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 
@@ -88,11 +73,11 @@ Follow these steps to install the Copilot application in your finance and operat
 1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment connected to your finance and operations apps environment to install the Copilot application.
 
     > [!IMPORTANT]
-    > **Troubleshooting:** You might receive the following error message while you install the Copilot application in Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you receive this error, follow the instructions in the [Step 2: Enable the Sql row version change tracking license key](#enable-sql-key) section.
+    > **Troubleshooting:** You might receive the following error message while you install the Copilot application in Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you receive this error, follow the instructions in the [Step 1: Enable the Sql row version change tracking license key](#enable-sql-key) section.
 
 1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. During installation, the status of the Copilot application is *Installing*. After installation is completed, the status changes to *Installed*. If an error occurs, the status changes to *Failed*. In this case, you can find details about the error in the **Notifications** field.
 
-## Step 5: Enable the required security roles
+## Step 4: Enable the required security roles
 
 Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
 
