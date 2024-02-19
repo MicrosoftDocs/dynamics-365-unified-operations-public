@@ -25,7 +25,10 @@ ms.custom: bap-template
 
 ## How the Warehouse Management mobile app authenticates
 
-[comment]: <> (Here we will write that after the app and the connections.json is installed, the app needs to retrieve the Entra ID session from somewhere. That somewhere is either Microsoft Intune, if the customer used this to mass deploy, or any other app that is authenticated using the Entra ID user that will be entered to authenticate wma.)
+When using the device code flow authentication or the username/password authentication without single sign-on, after deploying the app and the connection configurations, each instance will need to be authenticated separately.
+
+When using single sign-on, provided that the Entra ID that will be used to authenticate the Warehouse Management mobile app is already signed in the device in another application (for example Microsoft Teams, Company Portal or Outlook), the Warehouse Management mobile app will automatically get the authentication token, without the user needing to enter the Entra ID password.
+Then, the user can proceed with logging in to their work user account to access the work, or will be logged in automatically, if you are using [default user ID](mobile-device-work-users.md#set-up-mobile-device-user-accounts).
 
 ## Additional resources
 
