@@ -27,10 +27,13 @@ When master planning suggests a date for placing a planned order, it also consid
 Before you can calculate requested ship dates, your system must meet the following requirements:
 
 - You must be running Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The *Supplier requested and confirmed shipment dates* parameter must be enabled.
+- The **Supplier requested and confirmed shipment dates** parameter must be enabled.
 - 1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
 - 1. On the **Delivery** tab, select the **Supplier requested and confirmed shipment dates** checkbox
 - You must be using Planning Optimization, not the [deprecated master planning engine](deprecated-master-planning-overview.md).
+
+> [!IMPORTANT]
+> The **Supplier requested and confirmed shipment dates** must be turned on for all companies where the date calculation is expected, e.g. intercompany purchase orders where there is a company relationship between the vendors.
 
 ## Requested and confirmed receipt dates on purchase orders
 
