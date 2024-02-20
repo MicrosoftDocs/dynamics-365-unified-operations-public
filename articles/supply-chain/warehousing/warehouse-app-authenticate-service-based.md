@@ -30,7 +30,7 @@ Each device should have its own unique certificate or client secret.
 
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use nonexportable certificates.
 
-You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app for service-based authentication](warehouse-app-intune-service-based.md).
+You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app with service-based authentication](warehouse-app-intune-service-based.md).
 
 ## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
 

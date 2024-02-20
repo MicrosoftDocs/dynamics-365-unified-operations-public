@@ -18,7 +18,7 @@ ms.custom: bap-template
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]
-> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md).
+> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you have many devices to manage. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
 

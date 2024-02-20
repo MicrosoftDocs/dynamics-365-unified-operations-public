@@ -1,5 +1,5 @@
 ---
-title: Mass deploy the mobile app for user-based authentication
+title: Mass deploy the mobile app with user-based authentication
 description: This article explains how to mass deploy the Warehouse Management mobile app for user-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
@@ -18,10 +18,6 @@ ms.custom: bap-template
 
 > [!IMPORTANT]
 > To leverage the advantages of mobile mass deployment (MDM), you must have configured the Warehouse Management mobile app to use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) with [single sign-on](warehouse-app-authenticate-user-based.md#sso). This is because it isn't possible to distribute authentication tokens to mobile devices using MDM.
-
-## Prerequisites
-
-Follow the [guide to mass deploy the mobile app and manage connection configurations](warehouse-app-intune.md)
 
 ## How the Warehouse Management mobile app authenticates
 
@@ -214,22 +210,10 @@ There are several ways to enroll a Windows device. For example, you can install 
 ## Additional resources
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [Mass deploy the Warehouse Management mobile app with user-based authentications](warehouse-app-intune-user-based.md)
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
+- [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Mass deploy the Warehouse Management mobile app with service-based authentications](warehouse-app-intune-service-based.md)
 - [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
-
-
-
-
-
-## Additional resources
-
-- [Mass deploy the mobile app and manage connection configurations](warehouse-app-intune.md)
-- [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
-- [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

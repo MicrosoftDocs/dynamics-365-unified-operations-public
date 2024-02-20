@@ -61,7 +61,7 @@ To use the Warehouse Management mobile app, the *User settings, icons, and step 
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
 
-For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md) or [Mass deploy the mobile app for service-based authentication](warehouse-app-intune-service-based.md) (depending on which type of authentication method you are using).
+For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md) or [Mass deploy the mobile app with service-based authentication](warehouse-app-intune.md) (depending on which type of authentication method you are using).
 
 ### Install the app from an app store
 
