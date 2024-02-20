@@ -184,7 +184,81 @@ After the above changes are made in Commerce headquarters, synchronize the chang
 
 ### Configure PayPal for the storefront checkout module
 
-For details related to configuring storefront to use PayPal in the checkout module, see [Payment module](../payment-module.md).  
+For details related to configuring storefront to use PayPal in the checkout module, see [Payment module](../payment-module.md).
+
+#### Use the payment express section in the Cart and Checkout pages with PayPal using the Payment module
+
+> [!WARNING]
+> The Dynamics 365 Commerce pattern for PayPal Express is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** for PayPal support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the PayPal express patterns to support express flows by updating order details within the PayPal payment window as a delivery address is selected.
+
+The Commerce **Payment** module payment express patterns give site customers the option to check out faster by using their payment service account information during the checkout process. The **Payment** module payment express actions reference the linked payment connector via the **Supported tender types** string used in the same attribute of the payment connector. Express payments with the **Payments** module then returns the user-selected order details (address, contact information, and payment method) to prefill the checkout form.
+
+When the **Payment** module is used with express patterns with PayPal, if customers select the PayPal button in the **Payment Express** section, the PayPal payment window is opened. Users can then sign in to their PayPal account to use their account shipping address, billing address, email address, and PayPal payment method of choice to pay for the transaction.
+
+When users complete the action in the PayPal window, they're directed to the Commerce site checkout page, where the checkout form is prefilled with their PayPal account details. After users return to the checkout page from the PayPal window, they'll see the following details:
+
+- In the payment express flow, the first delivery option that is available for the shipping address that was returned will be preselected for the customer.
+- The shipping address and contact information, such as the customer's email address, are populated in the checkout form. If they're using express checkout, the email address from the express account is used.
+- The payment method is selected from the customer's digital PayPal wallet.
+
+Customers can review orders and change checkout order details before they select **Place order** to finalize the order.
+
+#### Configure the checkout fragment for express using PayPal with the Payment module
+
+To set up the checkout fragment for express payment using PayPal in site builder, follow these steps.
+
+1. Go to **Fragments**.
+1. Select the **Checkout** fragment, and then select **Edit**.
+1. In the **Checkout express payment container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select **Payment express**, and then select **OK**.
+1. In the Payment express module's properties pane, update the module properties as needed: 
+
+    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol.
+    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter **65** to set a height of 65 pixels).
+    1. Set the **Supported tender types** value to **PayPal**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel.
+    1. The **Payment style override** is used to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
+    1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
+    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the shopper's view when interacting within the page. When set, the module will render on the shopper's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
+
+1. Optional: In the **Checkout express payment container** module, add a text block module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
+1. Select **Save** to save your changes, and then select **Finish editing**.
+1. Select **Publish** to publish the fragment.
+
+#### Configure the cart page for express using PayPal with the Payment module
+
+To set up the cart page for express payment using PayPal in site builder, follow these steps.
+
+1. Go to **Pages**.
+1. Select your site's cart page, and then select **Edit**.
+1. Under the **Main slot**, find the container that contains the **Cart** module.
+1. Under the **Cart** module, select the **Payment express** section.
+1. In the **Payment express** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select **Payment express**, and then select **OK**.
+1. In the Payment express module's properties pane, update the module properties as needed: 
+
+    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol.
+    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter **50** to set a height of 50 pixels).
+    1. Set the **Supported tender types** value to **PayPal**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel.
+    1. The **Payment style override** is used to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
+    1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
+    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the shopper's view when interacting within the page. When set, the module will render on the shopper's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
+
+1. Optional: In the **Checkout express payment container** module, add a text block module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
+1. Select **Save** to save your changes, and then select **Finish editing**.
+1. Select **Publish** to publish the page.
+
+Users can include up to three supported **Payment Express** modules (in other words, three available supported payment options) in the cart **Payment Express** slot.
+
+#### Modes of delivery
+
+With the payment express module that uses PayPal, the first delivery option that is returned against the selected shipping address from the PayPal account will be preselected. Users have an opportunity to adjust the shipping address to a different option if they want.
+
+The order in which the delivery methods are displayed in the payment express module is configured on the channel's **Modes of delivery** page in Commerce headquarters. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**, and select the **Retail channel ID** value for your store. On the Action Pane, on the **Setup** tab,  select **Modes of delivery**. The modes of delivery that are listed will be displayed in the same order in the payment express module. Select **Manage modes of delivery** on the Action Pane to add or remove modes of delivery for a retail channel or product. For more information about how to set up modes of delivery, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+
+The checkout module also uses the delivery options module when modes of delivery are rendered during checkout. For more information, see [Delivery options module](../delivery-options-module.md).
+
+Modes of delivery are displayed as they're added to the **Modes of delivery** list in the online store.
+
 
 ## Enter a merchant relationship with PayPal
 
