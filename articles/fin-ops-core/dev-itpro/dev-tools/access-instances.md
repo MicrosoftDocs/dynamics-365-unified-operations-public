@@ -279,7 +279,7 @@ These environments haven't been tested, nor are they supported with Azure Bastio
 This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different from the one used at the time of deployment. There are different options available to help resolve this issue:
 1. (Recommended) Delete the environment and redeploy with the tenant in which the environment will be used. 
 2. Revert the settings to the tenant configuration used at the time of deployment.
-3. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I'm getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i'm-getting-sign-in-errors) to update the reply URL in the target tenant.  
+3. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I am getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
@@ -294,7 +294,7 @@ To facilitate cloud-hosted deployments, we recommend that partners follow this s
 ### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application."
 As was stated earlier, it's important that finance and operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via Lifecycle Services, changes to the Azure AD tenant settings aren't supported after deployment.
 
-### How can I fix my existing environment when my environment is in a failed state or I'm getting sign-in errors?
+### How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?
 
 If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
 
