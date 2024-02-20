@@ -110,11 +110,7 @@ You can't currently use this approach. However, we plan to add a feature to supp
 
 ## Can I Mass deploy the mobile app with user-based authentication?
 
-Microsoft doesn't currently support mass deployment of the Warehouse Management mobile app when you're using user-based authentication (such as device code flow) to sign in to Supply Chain Management. We expect to add support for this scenario some time in early 2024. For the latest news and more information, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
-
-## Which mass deployment solutions will be supported?
-
-Initially, we'll support Microsoft Intune for mass deployment. We're also investigating adding support for other mass deployment solutions. For the latest news and more information, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
+Yes. For details and instructions, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 ## What about single sign-on? Will I be able to use the mobile app alongside Microsoft Teams to chat with my coworkers?
 
