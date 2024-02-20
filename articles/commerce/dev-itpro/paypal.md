@@ -22,6 +22,9 @@ ms.search.validFrom: 2020-10-31
 
 This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal (PayPal payment connector). It includes a list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
 
+> [!WARNING]
+> The Dynamics 365 Commerce pattern for PayPal Express payment behavior is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** for PayPal express support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update PayPal module behavior to support express flows by updating order details within the PayPal payment window as a delivery address is selected.
+
 ## Key terms
 
 | Term | Description |
