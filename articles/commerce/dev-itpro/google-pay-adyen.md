@@ -122,9 +122,13 @@ To configure a Commerce online store to use Google Pay with the **Google Pay** m
 
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
 
-### Configure the checkout fragment with Google Pay 
+### Configure the checkout fragment with the Google Pay module
+You can set up Google Pay as an option in the checkout payment section for payment-only, non-express functionality. The checkout form is filled in by the user, and the Google Pay payment page only readies the checkout for payment by Google Pay. No Google account information is used to overwrite the filled-in checkout details.
 
-To set up the checkout fragment with Google Pay in site builder, follow these steps.
+> [!NOTE]
+> The following procedure assumes that your site uses a checkout fragment that is configured with pickup information, a shipping address, delivery options, contact information, optional terms and conditions, and a section for checkout elements. The default module library checkout module is released with a checkout section container that has text block, loyalty points, gift card, and payment modules. For more information, see [Payment module](../payment-module.md).
+
+To set up Google Pay as a regular payment option in the **Payment Method** section of the checkout page using the Google Pay module, follow these steps.
 
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
@@ -249,7 +253,7 @@ The checkout module also uses the delivery options module when modes of delivery
 
 Modes of delivery are displayed as they're added to the **Modes of delivery** list in the online store.
 
-### Set up Google Pay as an option in the checkout payment section
+### Set up Google Pay as an option in the checkout payment section with they Payment module
 
 You can set up Google Pay as an option in the checkout payment section for payment-only, non-express functionality. The checkout form is filled in by the user, and the Google Pay payment page only readies the checkout for payment by Google Pay. No Google account information is used to overwrite the filled-in checkout details.
 
@@ -260,7 +264,7 @@ To set up Google Pay as a regular payment option in the **Payment Method** secti
 
 1. In site builder, go to **Fragments**, and then select your site's checkout fragment.
 1. Select **Edit**.
-1. In the **Checkout information** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Checkout information** slot, navigate to the **Checkout section container** and select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Payment** module, and then select **OK**.
 1. In the **Payment** module's properties pane on the right, set the properties for the container module:
 
@@ -270,6 +274,9 @@ To set up Google Pay as a regular payment option in the **Payment Method** secti
     - **Is primary payment** – Leave the checkbox cleared. (This property is typically enabled for the Adyen checkout module.)
     - **Payment style override** – This property isn't supported for the Google Pay configuration.
     - **Use connector id** – This property must be selected if multiple payment connectors are used on the page.
+    - **Use browser set language code for iFrame** – This property isn't supported for the Google Pay configuration
+    - A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
+    - The **Render when module scrolls into view** is recommended for modules that are hidden below the shopper's view when interacting within the page. When set, the module will render on the shopper's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
 
 1. Position the module above or below other payment modules by selecting the ellipsis (**...**) in the **Payment** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
