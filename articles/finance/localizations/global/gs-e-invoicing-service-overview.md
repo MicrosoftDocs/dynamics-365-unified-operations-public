@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing service overview (preview)
+title: Electronic Invoicing service overview (preview)
 description: This article provides an overview of Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management (preview).
 author: ilikond
 ms.date: 01/21/2022
@@ -17,19 +17,19 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic invoicing service overview (preview)
+# Electronic Invoicing service overview (preview)
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Electronic invoicing for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is a hyper-scalable multitenant service that enables configurable processing of electronic invoices and configurable electronic documents exchange. The processing and integration rules are fully configurable, and the logic is run outside Finance and Supply Chain Management. The service is targeted mainly at processing of electronic invoices in various scenarios. However, it can be configured for other scenarios for different types of the documents.
+Electronic invoicing for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is a hyper-scalable multitenant service that enables configurable processing of electronic invoices and configurable electronic documents exchange. The processing and integration rules are fully configurable, and the logic is run outside Finance and Supply Chain Management. The service is targeted mainly at processing electronic invoices in various scenarios. However, it can be configured for other scenarios for different types of documents.
 
 Electronic invoicing can help you achieve the following goals:
 
 - Fast and easy adoption of country/region-specific requirements
 - Standardized implementations of an Electronic invoicing solution
 - Enhanced traceability of document history
-- Shorter implementation cycle
+- A shorter implementation cycle
 - Reduced total cost of ownership (TCO)
 - Easily adjustable configurations that don't require code changes
 - Simplified configuration packaging
@@ -72,14 +72,13 @@ Electronic invoicing is deployed in the following Azure geographies:
 - Configurable submission of electronic invoices to external web services, including certification handling through digital signatures
 - Handling of responses from web services, including configurable handling of exception messages
 - Support for electronic signatures (for example, electronic signatures that use the XMLDSig signing algorithm)
-- The capability to sending documents to emails and store them in SharePoint
+- The capability to send documents to emails and store them in SharePoint
 - Batch processing of electronic invoice messages
-- Configurable transformation of incoming documents, and processing of those documents in Finance and Supply Chain Management
+- Configurable transformation of incoming documents and processing of those documents in Finance and Supply Chain Management
 - The capability to receive incoming documents from channels such as email and SharePoint
 
 ## Privacy notice
 
-Enabling and using Electronic invoicing might require that limited data be sent. This data includes the organization's tax registration ID. This data will be transmitted to third-party agencies that are authorized by the tax authorities for the purpose of sending electronic invoices in the predefined formats required for integration with government web services. Data that is imported from these external systems into this Dynamics 365 online service is subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). For more information, see the "Privacy notice" section in country/region-specific feature documentation.
+Enabling and using Electronic invoicing might require that limited data be sent. This data includes the organization's tax registration ID. This data will be transmitted to third-party agencies that are authorized by the tax authorities for the purpose of sending electronic invoices in the predefined formats required for integration with government web services. Data that's imported from these external systems into this Dynamics 365 online service is subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). For more information, see the "Privacy notice" section in country/region-specific feature documentation.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
