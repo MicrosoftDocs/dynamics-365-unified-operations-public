@@ -22,6 +22,9 @@ ms.assetid:
 
 This article covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
+> [!WARNING]
+> The Dynamics 365 Commerce pattern for PayPal and Google Pay Express payment behavior is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** express payment patterns will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update PayPal and Google Pay module behavior to support express flows by updating order details within the wallet payment window as a delivery address is selected.
+
 The payment module lets customers pay for orders by using credit or debit cards. Payment integration for this module is provided by the Dynamics 365 Payment Connector for Adyen. For more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).  
 
 As of Commerce release 10.0.14, the payment module has also been integrated with the Dynamics 365 Payment Connector for PayPal to allow customers to pay for orders using PayPal. For more information on how to set up and configure the Dynamics 365 Payment Connector for PayPal, see [Dynamics 365 Payment Connector for PayPal](dev-itpro/paypal.md). 
