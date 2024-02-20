@@ -1,5 +1,5 @@
 ---
-title: Set up a simulated sensor for testing
+title: Set up a simulated sensor for testing (preview)
 description: This article describes how to set up a simulator that you can use to test Sensor Data Intelligence without installing any physical sensors.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Set up a simulated sensor for testing
+# Set up a simulated sensor for testing (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -75,7 +75,6 @@ You must now set up the Raspberry Pi IoT simulator with simulated sensors and th
             cb(JSON.stringify({ value: 1, sensorId: 'AssetMaintenance' }), false);
             cb(JSON.stringify({ value: 1, sensorId: 'ProductionDelay' }), false);
             cb(JSON.stringify({ value: 20, sensorId: 'AssetDowntime' }), false);
-            cb(JSON.stringify({ value: 5, sensorId: 'AnomalyDetector' }), false);
         })
         .catch(function (err) {
             console.error('Failed to read out sensor data: ' + err);
@@ -84,7 +83,7 @@ You must now set up the Raspberry Pi IoT simulator with simulated sensors and th
     ```
 
     > [!IMPORTANT]
-    > The sensors IDs that are defined in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs that you will specify later for the scenarios in Supply Chain Management. The preceding example code uses human-readable sensor IDs. However, in an actual scenario, the sensor IDs will be globally unique identifier (GUID) values that are provided by the sensor manufacturer. The human-readable sensor IDs that are used in this example code are also used in the examples for the [product quality scenario](sdi-scenario-product-quality.md), [asset maintenance scenario](sdi-scenario-asset-maintenance.md), [production delays scenario](sdi-scenario-production-delays.md), [anomaly detection scenario](sdi-scenario-anomaly.md), [asset downtime scenario](sdi-scenario-asset-downtime.md), and [machine status scenario](sdi-scenario-equipment-downtime.md)). Therefore, use this code if you will work through those scenarios.
+    > The sensors IDs that are defined in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs that you will specify later for the scenarios in Supply Chain Management. The preceding example code uses human-readable sensor IDs. However, in an actual scenario, the sensor IDs will be globally unique identifier (GUID) values that are provided by the sensor manufacturer. The human-readable sensor IDs that are used in this example code are also used in the examples for the [product quality scenario](sdi-scenario-product-quality.md), [asset maintenance scenario](sdi-scenario-asset-maintenance.md), [production delays scenario](sdi-scenario-production-delays.md), [asset downtime scenario](sdi-scenario-asset-downtime.md), and [machine status scenario](sdi-scenario-equipment-downtime.md)). Therefore, use this code if you will work through those scenarios.
 
 ## Edit the interval for sending sensor signals
 

@@ -5,7 +5,7 @@ title: Reverse settings on journals and lines
 description: This article addresses why a reversing entry that was entered on a general journal might not be included on the posted transaction. 
 author: kweekley
 ms.date: 04/29/2021
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

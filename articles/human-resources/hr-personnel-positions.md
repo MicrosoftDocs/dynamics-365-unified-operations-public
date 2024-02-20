@@ -19,7 +19,6 @@ ms.author: twheeloc
 ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
-ms.custom: 269054
 ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2016-11-30

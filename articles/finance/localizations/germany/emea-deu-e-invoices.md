@@ -19,7 +19,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format, version 1.2, has been implemented.
+To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format has been implemented.
 
 This article explains how to set up and process customer electronic invoices in **xRechnung** format.
 
@@ -33,7 +33,7 @@ The setup and the specifics of electronic invoices that are used in Germany depe
 
 For more information about how to set up and use customer electronic invoices in Germany, see the Knowledge Base (KB) article for the appropriate supported version:
 
-- [Dynamics 365 Finance](https://support.microsoft.com/help/4490705)
+- [Dynamics 365 Finance](emea-deu-cust-e-invoices.md)
 - [Dynamics AX 2012 R3](https://fix.lcs.dynamics.com/Issue/Details?kb=4494484&bugId=3979521)
 
 

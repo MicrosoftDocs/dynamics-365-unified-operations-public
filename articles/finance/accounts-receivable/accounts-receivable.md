@@ -5,7 +5,7 @@ title: Accounts receivable home page
 description: Use Accounts receivable to track customer invoices and incoming payments.
 author: abruer
 ms.date: 10/24/2022
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

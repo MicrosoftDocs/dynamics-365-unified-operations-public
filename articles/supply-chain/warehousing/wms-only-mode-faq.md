@@ -1,18 +1,18 @@
 ---
-title: Warehouse management only mode FAQ
+title: Warehouse management only mode FAQ (preview)
 description: This article provides answers to frequently asked questions about Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: faq
-ms.date: 08/03/2023
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode FAQ
+# Warehouse management only mode FAQ (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -73,9 +73,34 @@ Depending on your setup on the **Inbound shipment order policies** FastTab of th
 - Automatically, when an advanced shipping notice (ASN) is imported
 - Via a manual process
 - As part of the Warehouse Management mobile app receiving process
+- As part of an *Order receiving completed* process
 
 When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
 ## Why do I receive the following error for my existing Update product receipts process: "Unable to update product receipt for a load with inbound shipment order lines"?
 
 If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you must update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
+
+## Why do I receive the following error when I process a transfer order: "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form"?
+
+In addition to setting up item model groups that don't use costing and general ledger settings (see [Master and reference data](wms-only-mode-exchange-data.md#master-data)), you must enable [Warehouse-specific inventory transactions](warehouse-transactions.md) for the *Transfer issue* and *Transfer receipt* warehouse scenarios.
+
+## Can I attach documents and notes to inbound and outbound shipment orders?
+
+Yes. Both inbound and outbound shipment order messages support document attachments. For example, the [Open Data Protocol (OData) Postman example](https://go.microsoft.com/fwlink/?linkid=2250135) contains both `InboundShipmentOrderDocumentAttachmentMessages` and `OutboundShipmentOrderDocumentAttachmentMessages`. For more information, see the descriptions of *Inbound shipment order messages composite entity* and *Outbound shipment order messages composite entity* in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). These entities contain the child entities *Inbound shipment order document attachment messages* and *Outbound shipment order document attachment messages*.
+
+## Why can't I see and search for page names that are related to Warehouse management only mode?
+
+Even if the *Warehouse management only mode* feature is enabled, you must create a record on the **Source systems** page before the system can look up the related pages. In addition, the current user's default company must have a source system set up to search for the page names. For more information, see [Enable and configure Warehouse management only mode (preview)](wms-only-mode-setup.md).
+
+## Why doesn't my registered inventory transaction have a load ID?
+
+If you use the [item arrival journal](../inventory/arrival-overview.md) process to receive updated inbound shipment order line quantities, inventory transactions won't be associated with a load. To achieve this result, you must use the *Order receiving completed* process, which creates loads for registered inventory transactions that aren't associated with a load. This process can be triggered directly from an inbound shipment order or via the **Inbound shipment order receiving completed** background process (available at **Warehouse management** \> **Periodic tasks** \> **Inbound shipment order receiving completed**).
+
+## Why do I receive the following error when processing shipment orders: "Not able to resolve released item/variant for external item ID [ItemId]"?
+
+When processing shipment orders, you may receive the following error, even though a related item or variant exists:
+
+> Not able to resolve released item/variant for external item ID [ItemId].
+
+This error occurs because released products and variants must be linked to a source system through the [Source system items](wms-only-mode-exchange-data.md#master-data) data entity. This is crucial for recording how item and variant numbers must be handled for each external [source system](wms-only-mode-setup.md#source-systems).

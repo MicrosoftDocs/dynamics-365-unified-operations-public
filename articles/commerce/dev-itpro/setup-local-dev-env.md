@@ -2,7 +2,7 @@
 title: Set up a local development environment
 description: This article explains how to set up a local development environment for the Commerce Scale Unit (CSU) and point of Sale (POS) development in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/03/2023
+ms.date: 01/31/2024
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -21,6 +21,9 @@ This article explains how to set up a local development environment for the Comm
 
 > [!IMPORTANT]
 > The environment setup that is described in this article can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
+
+> [!NOTE]
+> The 10.0.38 release doesn't contain updates for the following components: Modern Point of Sale (MPOS), the Retail software development kit (SDK), and the Retail Server/channel database.
 
 ## Supported development environment types
 
@@ -119,7 +122,8 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
         9. Copy and paste the thumbprint into a text editor, and convert all the letters to uppercase. Then add the converted value to the end of the predefined template for the **baseProduct\_SslCertFullPath** option, so that the template resembles `store:///My/LocalMachine?FindByThumbprint=YourThumbprintGoesHere`.
 
         > [!NOTE]
-        > The base installer requires two more certificates, for a total of three. For all production deployments, three different certificates should be created for security reasons. However, for this development setup, you can save time by using the same certificate for all three configuration options, unless this approach violates your policies. In this case, you can provide the same thumbprint for the next two parameters.
+        > - The base installer requires two more certificates, for a total of three. For all production deployments, three different certificates should be created for security reasons. However, for this development setup, you can save time by using the same certificate for all three configuration options, unless this approach violates your policies. In this case, you can provide the same thumbprint for the next two parameters.
+        > - If you use the same SSL certificate for everything, it must contain the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, and `dataEncipherment`.
 
     - **baseProduct\_RetailServerCertFullPath** – Update this parameter with the thumbprint of the certificate that you create. This certificate represents Retail Server's identity. The identity is used, for example, when CSU issues security tokens for POS scenarios. To create this certificate, follow the same procedure that you used for the SSL certificate, but specify any friendly name that you want (for example, **RsTestIdentity**). You will need this certificate later, when you set up the Azure AD application.
     - **baseProduct\_AsyncClientCertFullPath** – Async Client uses this certificate when it acquires a security token from Azure AD for communication with Commerce Headquarters. To create this certificate, follow the same procedure that you used for the SSL certificate, but specify any friendly name that you want (for example, **AsyncClientTestIdentity**).

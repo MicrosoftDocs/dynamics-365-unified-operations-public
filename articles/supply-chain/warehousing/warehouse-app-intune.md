@@ -15,6 +15,7 @@ ms.custom: bap-template
 # Mass deploy the mobile app for service-based authentication
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]
 > Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md).
@@ -211,7 +212,7 @@ Obtain a self-signed PFX certificate (.pfx file) either through the Windows Serv
 Follow these steps to create an app registration for PFXImport PowerShell in Microsoft Entra ID.
 
 1. Sign in to Azure.
-1. From the **Home** page, go to **Manage Azure Active Directory**.
+1. From the **Home** page, go to **Manage Microsoft Entra ID**.
 1. In the navigation pane, select **App registrations**.
 1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:

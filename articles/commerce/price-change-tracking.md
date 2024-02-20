@@ -4,7 +4,7 @@
 title: Price change tracking
 description: This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 author: boycez
-ms.date: 10/09/2023
+ms.date: 10/25/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -20,7 +20,7 @@ ms.search.validFrom: 2023-06-01
 
 This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 
-A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions), and might go up and down over time. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Here are some examples of these triggered business workflows:
+A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions), and might go up and down over time. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Here are some examples of these triggered business workflows. (Note that these two examples aren't out-of-box features.)
 
 - A retail store must update shelf labels so that they reflect changed prices.
 - An e-commerce website alerts shoppers about a price drop for items in their shopping carts.
@@ -46,7 +46,7 @@ On top of the baseline, the price change tracking feature monitors the following
 - A simple discount is added, updated, removed, or expired.
 
 > [!NOTE]
-> To determine price changes, the price change tracking feature currently monitors only trade agreements, price adjustments, and simple discounts that are linked to channel-specific price groups or catalog-specific price groups. Pricing rules that are linked to affiliation-specific price groups or loyalty program–specific price groups aren't in the tracking scope. 
+> To determine price changes, the price change tracking feature currently monitors only trade agreements, price adjustments, and simple discounts that are linked to channel-specific price groups or catalog-specific price groups. Pricing rules that are linked to affiliation-specific price groups or loyalty program–specific price groups aren't in the tracking scope.
 
 The price change tracking feature depends on the following two batch jobs to detect and record price changes:
 
@@ -64,7 +64,7 @@ Price changes are recorded in the **RetailPriceChangeTracking** table, as descri
 
 ## Configure price change tracking
 
-Price change tracking can be enabled at the legal entity level. 
+Price change tracking can be enabled at the legal entity level.
 
 To configure the price change tracking feature in Commerce headquarters, follow these steps.
 
@@ -72,21 +72,21 @@ To configure the price change tracking feature in Commerce headquarters, follow 
 1. On the **Prices and discounts** tab, add the legal entities that you want to enable price change tracking for, and then select **Save**.
 1. Run the **1110 (Global configuration)** distribution schedule job.
 
-After organizations that use Commerce [cloud-powered product search](cloud-powered-search-overview.md) upgrade to Commerce version 10.0.32 or later for the first time, the price change tracking feature is enabled by default for all legal entities where cloud-powered product search is enabled. This enhancement helps improve efficiency when pricing data is published in the search index, because only incremental updates for products that have changed prices are monitored. A full synchronization of product data isn't required. To take advantage of this enhancement, ensure that you [initialize the base configuration data for Commerce scheduler](dev-itpro/CDX-Best-Practices.md#update-configurations), and then run the **1020 (Prices and discounts)** distribution schedule job after you upgrade your environment. 
+After organizations that use Commerce [cloud-powered product search](cloud-powered-search-overview.md) upgrade to Commerce version 10.0.32 or later for the first time, the price change tracking feature is enabled by default for all legal entities where cloud-powered product search is enabled. This enhancement helps improve efficiency when pricing data is published in the search index, because only incremental updates for products that have changed prices are monitored. A full synchronization of product data isn't required. To take advantage of this enhancement, ensure that you [initialize the base configuration data for Commerce scheduler](dev-itpro/CDX-Best-Practices.md#update-configurations), and then run the **1020 (Prices and discounts)** distribution schedule job after you upgrade your environment.
 
 To disable price change tracking in headquarters for a specific legal entity, remove the legal entity from the price change tracking setting in Commerce shared parameters (**Retail and Commerce \> Headquarters setup > Parameters \> Commerce shared parameters**). The removed legal entities won't automatically be added again, even if cloud-powered product search is enabled for them. If you remove all legal entities, you effectively disable the price change tracking feature.
 
 ### Specify a batch group for price change tracking batch jobs
 
 The price change tracking feature triggers batch jobs to run in the background. To prevent the batch jobs blocking other critical jobs from processing, Microsoft recommends that you specify a batch group for price change tracking batch jobs.
- 
+
 To specify a batch group for price change tracking batch jobs in headquarters, follow these steps.
 
 1. Reuse an existing batch group or [create a batch group](/dynamicsax-2012/appuser-itpro/create-a-batch-group).
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**.
 1. Under **Backend tasks**, specify the batch group to be used to run pricing batch jobs. Microsoft recommends that you dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
 
-For information on the the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
+For information about the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
 
 ### Usage patterns not suitable for feature enablement
 
@@ -109,7 +109,7 @@ The following tables are cross-company entities that trigger change tracking whe
 
 ## Other considerations
 
-For customer environments where pricing or product data is updated very frequently (for example, more than one line per second), Microsoft recommends that you extensively test the price change feature to assess performance implications before you enable it in your production environment.
+For customer environments where pricing or product data is updated frequently (for example, more than one line per second), Microsoft recommends that you extensively test the price change feature to assess performance implications before you enable it in your production environment.
 
 When you make large-scale changes (for example, bulk data migration), Microsoft recommends that you temporarily remove all legal entities from the price change tracking setting before the changes. Then add them back after the changes are completed. In this way, the system mitigates the performance impact by making a one-time full refresh instead of tracking every single line change.
 

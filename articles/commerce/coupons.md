@@ -4,7 +4,7 @@
 title: Coupons
 description: This article provides an overview of coupon-related capabilities in Microsoft Dynamics 365 Commerce.
 author: boycez
-ms.date: 09/06/2022
+ms.date: 11/09/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -75,5 +75,12 @@ After a coupon is added to a sales order, the pricing engine immediately trigger
 Coupons can be configured for limited use. The usage limit can be defined per customer, per channel, or globally. The usage limit is enforced per coupon code on a coupon. For example, a single-use coupon that has two coupon codes can be used two times, one time for each coupon code.
 
 Coupons can be used across selling channels. However, for call center, limited-use coupons can be applied only when the **Enable order completion** setting for the call center channel is enabled. If the **Enable order completion** setting is disabled, only non-limited-use coupons can be applied.
+
+## Other considerations
+
+If a coupon has a large number of coupon codes, activating all the coupon codes by setting the coupon status to **Active** can be time-consuming. For such cases, the following best practices are recommended:
+
+- Split large groups of coupon codes into multiple coupons, with each coupon linked to the same discount.
+- If you create a large number of coupon codes by data import, if you import them as **Active** and with the **From date** value set as the desired effective date, you don't need to manually activate the coupon codes.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: EU Sales list for Czech Republic
 description: This article provides information about the European Union (EU) sales list report for Czech Republic.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 06/09/2022
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -30,7 +30,7 @@ This article provides information about the EU sales list report for the Czech R
     - Company name
     - Company name appendix
     - Company street and street number
-    - Company district
+    - Company building complement
     - Company postcode
     - Company location
     - Name and role of the person authorizing the report
@@ -56,16 +56,16 @@ For general setup information, see [EU Sales list reporting](../europe/emea-eu-s
 2. On the **Country/region** tab, in the **Country/region** field, select **CZE**.
 3. Select the address format in the **Address format** field.
 4. On the **Address format** tab, set cursor on the line with the address format selected earlier.
-5. In the **Configure address component** section, add a **District** line after the **ZIP/postal code** line.
+5. In the **Configure address component** section, add a **Building complement** line after the **ZIP/postal code** line.
 6. Add a **Street number** line after the **Street** line.
-7. For the **Street number** and **District** lines, select the **New line** checkbox.
+7. For the **Street number** and **Building complement** lines, select the **New line** checkbox.
 8. On the Action Pane, select **Save**.
 
 ### Set up information about the company
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select your company.
-3. On the **Addresses** FastTab, set the city, ZIP/postal code, street, street number, and district for the primary address that should be shown on the EU sales list report.
+3. On the **Addresses** FastTab, set the city, ZIP/postal code, street, street number, and building complement for the primary address that should be shown on the EU sales list report.
 
 ### Import Electronic reporting configurations
 
@@ -161,11 +161,8 @@ For information about how to create a general setup, create postings, and transf
 
 1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
 2. On the **Country/region** tab, in the **Country/region** field, select **CZE**.
-3. Select **0016** in the **Address format** field.
+3. Select **0010** in the **Address format** field.
 4. On the **Address format** tab, set cursor on the line with the address format selected earlier.
-5. In the **Configure address component** section, add a **District** line after the **ZIP/postal code** line.
-6. Add a **Street number** line after the **Street** line.
-7. For the **Street number** and **District** lines, select the **New line** checkbox.
 8. On the Action Pane, select **Save**.
 
 ### Set up information about the company
@@ -183,12 +180,12 @@ For information about how to create a general setup, create postings, and transf
     | Country/region      | CZE             |
     | ZIP/postal code     | 19800           |
     | Street              | Ulitsa          |
-    | Street number       | 35              |
+    | Street number       | 10              |
+    | Building complement | 50              |
     | City                | Gorod           |
-    | District            | 1               |
     | Primary             | Yes             |
 
-6. Select **OK**.
+7. Select **OK**.
 
 ### Set up foreign trade parameters
 
@@ -259,8 +256,8 @@ For information about how to create a general setup, create postings, and transf
     | dodobchjm      | CNAppendix    | The value from the **Company name appendix** field.   |
     | naz_obce       | Gorod        | The company's city.     |
     | ulice          | Ulitsa      | The company's street.    |
-    | c_pop          | 35         | The company's street number. If the **Street number** field on the **Legal entity** page is blank, this field is set to **0**.   |
-    | c_orient       | 1        | The company's district.     |
+    | c_pop          | 50         | The company's **Building complement**. If the **Building complement** field on the **Address** page of the **Legal entity** is blank, this field is set to **0**.   |
+    | c_orient       | 10        | The company's **Street number**.     |
     | psc            | 19800      | The company's ZIP/postal code.    |
     | opr_prijmeni   | Carson   | The last name of the person who is authorizing the report.   |
     | opr_jmeno      | Charlie     | The first name of the person who is authorizing the report.    |
@@ -325,8 +322,8 @@ For information about how to create a general setup, create postings, and transf
     | dodobchjm      | CNAppendix                                  |
     | naz_obce       | Gorod                                       |
     | ulice          | Ulitsa                                      |
-    | c_pop          | 35                                          |
-    | c_orient       | 1                                           |
+    | c_pop          | 50                                          |
+    | c_orient       | 10                                           |
     | psc            | 19800                                       |
     | opr_prijmeni   | Carson                                      |
     | opr_jmeno      | Charlie                                     |

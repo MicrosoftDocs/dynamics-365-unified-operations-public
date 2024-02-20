@@ -101,10 +101,10 @@ To review the imported processing, go to **Tax** \> **Setup** \> **Electronic me
 2. Define the internet addresses for web services. The addresses that are shown here are testing addresses that are applicable to the sandbox environment.
 
     - **Authentication:** `https://einv-apisandbox.nic.in/eivital/v1.04/auth`
-    - **Generate IRN:** `https://einv-apisandbox.nic.in/eicore/v1.04/Invoice`
-    - **Cancel IRN:** `https://einv-apisandbox.nic.in/eicore/v1.04/Invoice/Cancel`
-    - **Generate WEB:** `https://einv-apisandbox.nic.in/eiewb/v1.04/ewaybill`
-    - **Cancel EWB:** `https://einv-apisandbox.nic.in/ewaybillapi/v1.04/ewayapi`
+    - **Generate IRN:** `https://einv-apisandbox.nic.in/eicore/v1.03/Invoice`
+    - **Cancel IRN:** `https://einv-apisandbox.nic.in/eicore/v1.03/Invoice/Cancel`
+    - **Generate WEB:** `https://einv-apisandbox.nic.in/eiewb/v1.03/ewaybill`
+    - **Cancel EWB:** `https://einv-apisandbox.nic.in/ewaybillapi/v1.03/ewayapi`
 
     > [!NOTE]
     > Internet addresses are subject to change by the National Informatics Centre (NIC). We recommend that you check for actual internet addresses on the official website of the e-Invoice System or other appropriate sources. The official documentation also has information about the available production internet addresses that you should set up.

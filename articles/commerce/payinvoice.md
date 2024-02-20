@@ -5,7 +5,7 @@ title: Set up pay invoice scenarios
 description: This article describes how to configure Dynamics 365 Commerce to support various scenarios relating to invoice payments.
 author: josaw1
 ms.date: 11/14/2018
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

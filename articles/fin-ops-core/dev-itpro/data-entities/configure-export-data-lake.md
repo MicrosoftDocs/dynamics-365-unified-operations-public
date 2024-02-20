@@ -31,14 +31,13 @@ ms.dyn365.ops.version: Platform Update 33
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
+> Over the past 12 months, we've been working to fill in gaps and add new features that members of the user community have highlighted. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to the **Export to Data Lake** feature in finance and operations apps, is generally available and ready for you. Synapse Link provides one experience for working with data from all Microsoft Dynamics 365 apps.
 >
-> **Export to Data Lake** add-in is deprecated as of 15-Oct-2023 and we advise new customers to use [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) New customers may not be able to install the Export to data Lake add-in after this date.
-> 
-> Existing customers may transition to Synapse Link by following guidance provided in [https://aka.ms/TransitionToSynapseLink](https://aka.ms/FnOtoSynapseLink). Existing customers can continue to install and use **Export to Data Lake** add-in until the service is decommissioned on 1-Nov-2024. 
+> We want you to benefit from the enhanced performance, flexibility, and improved user experience that Synapse Link offers as soon as possible. Therefore, we've announced the deprecation of the **Export to Data Lake** feature, effective October 15, 2023. If you're already using the **Export to Data Lake** feature, you can continue to use it until November 1, 2024. If you're new to the **Export to Data Lake** feature or are planning to adopt this feature in the coming months, we recommend that you use Synapse Link instead. 
+>
+> We understand that that transition might seem daunting, but we want to provide a smoother experience and offer guidance. To get started, see the [Synapse Link transition guide](https://aka.ms/TransitionToSynapseLink). We're listening closely to the community and are working on multiple features to help make the transition smoother. We'll announce these other improvements to the transition process as we bring new features online. If you want to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics).
 >
 > The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. 
-> 
-
 
 Before you can use the **Export to Data Lake** feature in finance and operations environments, your administrator must install the **Export to Data Lake** add-in and connect your environment with a data lake. The **Export to Data Lake** add-in must be installed in your environment via Lifecycle Services. You must contact your Lifecycle Services administrator to perform this operation.
 
@@ -62,7 +61,7 @@ To add the service principal, complete the following steps.
     |--------------------------------------|--------|
     | Microsoft Dynamics ERP Microservices | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
 
-    If you're unable to find the above applications, complete following steps.
+    If you're unable to find the above applications, complete the following steps.
 
 3. On your local machine, open the **Start** menu, and search for **PowerShell**.
 4. Right-click **Windows PowerShell**, and then select **Run as administrator**.
@@ -126,7 +125,7 @@ The Data Lake Storage account is used to store data from your finance and operat
 1. In the Azure portal, select **Create new resource**, and then search for and select **Storage account – blob, file, table, queue**.
 2. In the **Create storage account** dialog box, provide values for the following parameter fields:
 
-    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you may incur more data movement costs. If your Microsoft Power BI or your data warehouse is in a different region, you can use replication to move storage between regions.
+    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you might incur more data movement costs. If your Microsoft Power BI or your data warehouse is in a different region, you can use replication to move storage between regions.
     - **Performance**: We recommend you select **Standard**.
     - **Account kind**: You must select **StorageV2**. In the **Advanced options** dialog box, you see the option, **Data Lake storage Gen2**.
 
@@ -195,9 +194,9 @@ You notice the secret created in the list of secrets.
 
     > [!NOTE]
     > If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principal](#createServicePrincipal) section in this document.
-6. Select **Save**
+6. Select **Save**.
 
-    You should see application with access to your key vault similar to the following example.
+    You should see the application with access to your key vault, similar to the following example.
 
     | Application                          | Secret permissions |
     |--------------------------------------|--------------------|
@@ -207,7 +206,7 @@ You notice the secret created in the list of secrets.
 
 ## <a name="powerplatformintegration"></a>Power Platform integration
 
-If this is the first time you're installing add-ins in this environment, you may need to enable the **Power Platform integration** for this environment. For more information, see [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md).
+If you're installing add-ins in this environment for the first time, you might need to enable the **Power Platform integration** for this environment. For more information, see [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md).
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in Lifecycle Services 
 

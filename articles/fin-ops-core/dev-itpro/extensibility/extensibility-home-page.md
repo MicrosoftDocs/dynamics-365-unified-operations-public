@@ -3,7 +3,7 @@ title: Extensibility home page
 description: This article provides links to topics about extensibility.
 author: FrankDahl
 ms.date: 05/14/2019
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Developer

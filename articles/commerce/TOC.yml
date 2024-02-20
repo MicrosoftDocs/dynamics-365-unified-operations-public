@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.38 (February 2024)
+          href: get-started/whats-new-commerce-10-0-38.md
         - name: Commerce 10.0.37 (November 2023)
           href: get-started/whats-new-commerce-10-0-37.md
         - name: Commerce 10.0.36 (October 2023)
@@ -134,26 +136,6 @@
           href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/commerce
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/commerce
-      - name: Learning catalog
-        items:
-        - name: Learning catalog home page
-          href: ./get-started/learning-catalog.md
-        - name: Business decision makers
-          href: ./get-started/learning-catalog-bdm.md?
-        - name: Business users
-          href: ./get-started/learning-catalog-business-user.md
-        - name: Implementation project managers
-          href: ./get-started/learning-catalog-project-manager.md
-        - name: Administrators
-          href: ./get-started/learning-catalog-administrator.md
-        - name: Developers
-          href: ./get-started/learning-catalog-developer.md
-        - name: Partner sales and marketing
-          href: ./get-started/learning-catalog-partner-sales.md
-        - name: Functional consultants
-          href: ./get-started/learning-catalog-functional-consultant.md
-        - name: Solution architects
-          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -728,8 +710,20 @@
             href: dev-itpro/copy-content-between-tenants.md
           - name: Bulk import and export digital assets using manifests
             href: dev-itpro/import-export-manifest.md
+        - name: Retail product kits
+          items:
+          - name: Retail product kit setup overview
+            href: retail-product-kit-setup.md
+          - name: Create retail product kits
+            href: create-retail-product-kits.md
+          - name: Generate assembly and disassembly orders
+            href: generate-assembly-and-disassembly-orders.md
+          - name: Process kit assembly and disassembly orders
+            href: process-kit-assembly-and-disassembly-orders.md
         - name: Consume Commerce runtime (CRT) Product service requests
           href: dev-itpro/crt-product-requests.md
+        - name: Product discovery checklist
+          href: product-discovery-checklist.md
       - name: Pricing and discounts
         items:
         - name: Discounts
@@ -768,6 +762,12 @@
           href: pricing-apis.md
         - name: Price change tracking
           href: price-change-tracking.md
+        - name: Price FAQ
+          href: price-faq.md
+        - name: Pricing examples
+          href: pricing-examples.md
+        - name: Pricing extensions
+          href: pricing-extensions.md          
       - name: Recommendations
         items:
         - name: Product recommendations overview
@@ -902,12 +902,26 @@
           href: customize-email-delivery-mode.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
-      - name: Distributed order management
+      - name: Distributed order management (DOM)
         items:
         - name: DOM overview
           href: dom.md
-        - name: Cost configuration
-          href: cost.md
+        - name: Set up DOM
+          href: dom-set-up.md
+        - name: DOM rules
+          href: dom-rules.md
+        - name: DOM cost configuration
+          href: dom-costs.md
+        - name: DOM processing
+          href: dom-processing.md
+        - name: Results of DOM runs
+          href: dom-runs-results.md
+        - name: Clean up DOM fulfillment plans and logs
+          href: dom-clean-up.md
+        - name: DOM extensibility
+          href: dom-extensibility.md
+        - name: DOM limitations
+          href: dom-limitations.md
       - name: Order fulfillment and processing
         items:
         - name: Store order fulfillment
@@ -1050,6 +1064,8 @@
         items:
         - name: Map channels to e-commerce sites
           href: map-channels-sites.md
+        - name: Bulk associate channels with e-commerce sites
+          href: bulk-associate-channels.md
         - name: Configure your domain name
           href: configure-your-domain-name.md
         - name: Deploy a new e-commerce tenant
@@ -1114,7 +1130,7 @@
           href: quick-tour-account-management.md
       - name: Manage your site settings
         items:
-        - name: Authoring page overview
+        - name: Site builder authoring page overview
           href: authoring-home-overview.md
         - name: Manage users and roles
           href: manage-ecommerce-users-roles.md
@@ -1196,6 +1212,8 @@
             href: save-preview-publish-page.md
           - name: Customize product detail pages
             href: enrich-product-page.md
+          - name: Use Copilot in sitebuilder to enrich product detail pages
+            href: copilot-site-builder.md
           - name: Enrich a category landing page
             href: enrich-category-page.md
           - name: Verify page content accessibility
@@ -1328,6 +1346,8 @@
             href: pickup-info-module.md
           - name: Check-in for pickup module
             href: check-in-pickup-module.md
+          - name: Order history with search and filters module
+            href: order-history-module.md
           - name: Order details module
             href: order-confirmation-module.md
           - name: Gift card module
@@ -1446,7 +1466,7 @@
         href: b2b/manage-b2b-users.md
       - name: Manage business partner users on B2B e-commerce sites using Dynamics 365 Sales
         href: b2b/prospect-management-sales.md
-      - name: Place B2B website orders quickly
+      - name: Place B2B bulk and repeat orders quickly
         href: b2b/quick-bulk-orders.md
       - name: Invoice management for B2B e-commerce websites
         href: b2b/invoice-management.md
@@ -1472,6 +1492,8 @@
           href: dev-itpro/obo-add-pages-site-builder.md
         - name: Set up and configure on behalf of functionality (OBO) in headquarters
           href: dev-itpro/obo-configure-hq.md
+      - name: Channel and catalog selection enhancements in call center for creating B2B orders
+        href: b2b-call-center.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
@@ -2634,6 +2656,8 @@
           items:
           - name: Local development environment
             href: dev-itpro/setup-local-dev-env.md
+          - name: Install Commerce Scale Unit on a development environment
+            href: dev-itpro/install-csu-dev-env.md
           - name: Commerce SDK build pipeline (independent packaging)
             href: dev-itpro/build-pipeline.md
         - name: Payments

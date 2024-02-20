@@ -1,27 +1,35 @@
 ---
-title: Example of using inbound and outbound shipment orders
+title: Example of using inbound and outbound shipment orders (preview)
 description: This article provides an example scenario that shows how to create inbound and outbound shipment orders. 
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ms.topic: how-to
-ms.date: 08/03/2023
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Example of using inbound and outbound shipment orders
+# Example of using inbound and outbound shipment orders (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 <!-- KFM: Preview until further notice -->
 
-This article provides an example scenario that shows how to create inbound and outbound shipment orders. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
+This article provides an example scenario that shows how to create inbound and outbound shipment orders via message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 
-To create inbound and outbound shipment orders, you must post a message by using [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. The [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management then processes the message, and the orders are created in the warehouse system.
+To try out the creation process for inbound and outbound shipment orders via messages, set the **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** options to *Yes* for a **Source system** record. You can then create shipment order messages directly on the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-using.md#maintain-messages) pages.
+
+Another quick way to post example messages is to use [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests.
+
+In both example cases, the [message processor](../supply-chain-dev/message-processor.md) in Microsoft Dynamics 365 Supply Chain Management processes the messages and creates the orders in the warehouse system.
+
+> [!TIP]
+> To completely skip the shipment order creation processes via messages, you can create the inbound shipment orders and outbound shipment orders directly on the order pages by allowing the *Enable manual inbound shipment order creation* and *Enable manual outbound shipment order creation* settings for a source system.
 
 The same message structure logic applies to both the inbound and outbound shipment order messages:
 
@@ -38,7 +46,9 @@ The same message structure logic applies to both the inbound and outbound shipme
 
 This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders that have minimal payload.
 
-The example data uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
+If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.
+
+The example data that's provided in this article uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
 
 > [!NOTE]
 > To make messages processing easier, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated by double braces (\{\{&hellip;\}\}).
@@ -73,7 +83,7 @@ For the `InboundShipmentOrderMessages` inbound shipment order header message, yo
 When you use [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `InboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON example
-POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
+POST {{resource}}/data/InboundShipmentOrderMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -86,7 +96,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
 The `InboundShipmentOrderLineMessages` message looks like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/InboundShipmentOrderLineMessages
+POST {{resource}}/data/InboundShipmentOrderLineMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -102,7 +112,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderLineMessages
 To commit the messages, post a *complete* message for the header and lines. The complete message looks something like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
+POST {{resource}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
 ```
 
 > [!NOTE]
@@ -123,7 +133,7 @@ For the `OutboundShipmentOrderMessages` outbound shipment order header message, 
 When you use [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `OutboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages
+POST {{resource}}/data/OutboundShipmentOrderMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -138,7 +148,7 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages
 The `OutboundShipmentOrderLineMessages` message looks like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/OutboundShipmentOrderLineMessages
+POST {{resource}}/data/OutboundShipmentOrderLineMessages
 {
 "MessageId": "{{MessageId}}",
 "dataAreaId": "{{dataAreaId}}",
@@ -154,7 +164,7 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderLineMessages
 To commit the messages, post a *complete* message for the header. The complete message looks something like the following example.
 
 ``` JSON
-POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
+POST {{resource}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
 ```
 
 > [!NOTE]

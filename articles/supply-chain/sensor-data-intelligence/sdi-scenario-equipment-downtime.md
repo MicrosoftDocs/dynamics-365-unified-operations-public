@@ -1,5 +1,5 @@
 ---
-title: Machine status scenario
+title: Machine status scenario (preview)
 description: This article describes the machine status scenario, which lets you use sensor data to monitor the availability of your equipment.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Machine status scenario
+# Machine status scenario (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

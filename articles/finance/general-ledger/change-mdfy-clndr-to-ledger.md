@@ -5,7 +5,7 @@ title: Change or reassign a ledger calendar
 description: This article explains how to change the calendar that is currently assigned to a ledger, and how to assign a new calendar to the ledger.
 author: kweekley
 ms.date: 02/07/2023
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

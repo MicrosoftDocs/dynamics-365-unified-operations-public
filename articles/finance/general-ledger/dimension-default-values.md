@@ -5,7 +5,7 @@ title: Default financial dimensions on financial journals
 description: This article describes the rules that define how financial dimension values are set on transactions that are entered through financial journals. It also includes details for scenarios where fixed dimensions are used.
 author: kweekley
 ms.date: 09/04/2021
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

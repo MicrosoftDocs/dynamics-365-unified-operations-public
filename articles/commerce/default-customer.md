@@ -86,7 +86,7 @@ The following image shows a default customer configuration.
 
 ![Sample customer configuration.](media/default-customer-configuration1.png)
 
-Most of the default values on the customer detials screen can remain, but two values should be changed.
+Most of the default values on the customer details screen can remain, but two values should be changed.
 
 1. On the customer details screen, expand **Sales order defaults**.
 1. In the **Site** drop-down list, select or enter a pre-configured site.

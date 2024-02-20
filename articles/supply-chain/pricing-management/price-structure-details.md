@@ -1,5 +1,5 @@
 ---
-title: Arrange price component codes into a price structure
+title: Arrange price component codes into a price structure (preview)
 description: This article explains how to arrange price component codes into a price structure.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Arrange price component codes into a price structure
+# Arrange price component codes into a price structure (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

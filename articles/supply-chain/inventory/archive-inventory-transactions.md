@@ -45,8 +45,8 @@ If your system doesn't already include the features that is described in this ar
 Before you archive inventory transactions, you should consider the following business scenarios, because they will be affected by the operation:
 
 - When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as archived. To review the archived transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transactions archive**.
-- Inventory closing can't be canceled for archived periods. Before you can cancel an inventory closing, you must reverse the inventory transaction archive for the relevant period.
-- Standard cost conversion can't be done for archived periods. Before you can do standard cost conversion, you must reverse the inventory transaction archive for the relevant period.
+- Inventory closing can't be canceled for archived periods. 
+- Standard cost conversion can't be done for archived periods. 
 - Inventory reports that are sourced from inventory transactions will be affected when you archive inventory transactions. These reports include the inventory aging report and inventory value reports.
 - Inventory forecasts might be affected if they are run during the time horizon of archived periods.
 
@@ -94,8 +94,8 @@ The **Inventory transactions archive** page shows your full archiving history. E
 
 In the drop-down list at the top of the page select one of the following values to filter the archives that are shown in the grid:
 
-- **Active** – Show only active archives, not reversed archives.
-- **All** – Show all archives, both active and reversed.
+- **Active** – Show only active archives.
+- **All** – Show all archives.
 
 For each archive in the grid, the following information is provided:
 
@@ -104,7 +104,6 @@ For each archive in the grid, the following information is provided:
 - **To date** – The date of the latest transaction that can be included in the archive.
 - **Scheduled by** – The user account that created the archive.
 - **Executed** – The date when the archive was created.
-- **Reverse** – A check mark indicates that the archive has been reversed.
 - **Stop current update** – A check mark indicates that the archive is in progress, but it has been paused.
 - **State** – The processing status of the archive. The possible values are *Waiting*, *In progress*, and *Finished*.
 
@@ -118,7 +117,6 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 - **Pause archiving** – Pause a selected archive that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If an archive has been paused, a check mark appears in its **Stop current update** field.
 - **Resume archiving** – Resume processing for a selected archive that is currently paused.
-- **Reverse** – Reverse the selected archive. You can reverse an archive only if its **State** field is set to *Finished*. If an archive has been reversed, a check mark appears in its **Reverse** field.
 
 ## Extend your code to support custom fields
 

@@ -5,7 +5,7 @@ title: Revenue recognition setup
 description: This article describes the setup options for Revenue recognition, and their implications.
 author: bking
 ms.date: 08/16/2023
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
