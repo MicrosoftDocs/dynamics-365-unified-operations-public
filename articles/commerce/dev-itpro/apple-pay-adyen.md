@@ -42,6 +42,8 @@ The Apple Pay payment method must also be integrated with your Adyen account. Ad
 
 To enable the enhanced wallet feature flag in Commerce headquarters, go to **Workspaces \> Feature management**, and search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
 
+Apple Pay will require the Site builder setting found at **Site \> Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to be enabled.
+
 ## Map the Apple Pay payment method
 
 Apple Pay is a digital wallet payment method. For information about how to set up payment mapping for Apple Pay, see [Wallet payment support](../wallets.md).
@@ -136,6 +138,10 @@ To configure content security policies in site builder, follow these steps.
 1. Go to **Site Settings \> Extensions**.
 1. On the **Content security policy** tab, select **Add** to add a line that has `https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js` to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
 1. When you've finished, select **Save and publish** to commit the changes.
+
+### Set the Enable single payment authorization checkout property in Site builder's Site settings
+
+Apple Pay will require the Site builder setting found at **Site \> Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to be enabled (checked).
 
 ### Set up Apple Pay as a checkout payment option
 
