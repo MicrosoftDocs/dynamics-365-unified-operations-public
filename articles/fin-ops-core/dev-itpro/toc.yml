@@ -239,6 +239,16 @@ items:
                 href: data-entities/entity-vendor-invoice-charges-vendorinvoiceheadercharge.md
               - name: Vendor invoice line charges entity
                 href: data-entities/entity-vendor-invoice-line-charges-vendorinvoicelinecharge.md
+          - name: Import general journals
+            items:
+              - name: Import general journals with data entities
+                href: /dynamics365/guidance/resources/import-general-journals?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
+              - name: General journal entity
+                href: data-entities/entity-general-journal.md
+              - name: General journal headers entity
+                href: data-entities/entity-general-journal-ledgerjournalheader.md
+              - name: General journal lines entity
+                href: data-entities/entity-general-journal-ledgerjournalline.md
       - name: Data import and export jobs
         items:
         - name: Clean up data management job history 
