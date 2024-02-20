@@ -42,6 +42,7 @@ When Google Pay is used with the express checkout module in Commerce, the user's
 - Review steps 1 and 2 of [Adyen Google Pay Drop-in integration - Before you go live](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-go-live).
 - The Google Pay payment method must be integrated with your Adyen account. For instructions, see [Adyen Google Pay](https://www.adyen.com/payment-methods/google-pay).
 - You must enable the enhanced wallet feature in Dynamics 365 Commerce headquarters. Go to **Workspaces \> Feature management**, search for the **Enhanced wallet support and payment improvements** feature, select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
+- Google Pay will require the Site builder setting found at **Site \> Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to be enabled.
 
 ## Map the Google Pay payment method
 
@@ -117,7 +118,7 @@ To configure a Commerce online store to use Google Pay with the **Google Pay** m
     | Gateway environment    | The Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | "Live" |
     | Supported Currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
     | Supported Tender Types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
-    | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Authorization stale period (days) | Number of days before an authorization is considered stale and should decline before going to the processor for capture. See [Manage payment authorizations](manage-payment-authorizations.md#adyen-connector-authorization-stale-period-parameter) for more details.| Yes | Yes | "14" |
     | Use the Dedicated Google Pay Payment Module | When using the direct **Google Pay** module, this property should be set to 'True'. This informs the Google Pay connector to interact with the direct module instead of the **Payment** module | Yes (for this configuration with **Google Pay** module | No | "True" |
 
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
@@ -175,7 +176,7 @@ To configure a Commerce online store to use Google Pay with the **Payment** modu
     | Gateway environment    | The Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | "Live" |
     | Supported Currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
     | Supported Tender Types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
-    | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Authorization stale period (days) | Number of days before an authorization is considered stale and should decline before going to the processor for capture. See [Manage payment authorizations](manage-payment-authorizations.md#adyen-connector-authorization-stale-period-parameter) for more details. | Yes | Yes | "14" |
     | Use the Dedicated Google Pay Payment Module | When using the direct **Payment** module, this property should be set to 'False' (or left blank). This informs the Google Pay connector to interact with the payment module instead of the **Google Pay** module | No (blank defaults as "False") | No | "False" |
 
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
@@ -291,6 +292,8 @@ To ensure that your content security policies are set in site builder, follow th
 1. In your site, go to **Site settings \> Extensions**.
 1. On the **Content security policy** tab, add a line for `*.google.com` to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** directives.
 1. When you've finished, select **Save and publish**.
+
+Additionally, set the Site builder site's **Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to enabled (checked).
 
 ## Configure Commerce POS for Google Pay
 
