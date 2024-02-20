@@ -24,7 +24,7 @@ In Dynamics 365 finance and operations, invoices are an essential part of the sa
 
 ## Sales orders fields
  
-When creating an order or sales order in Dynamics 365 finance and operations, the **Invoice and delivery** Fast Tab provides the necessary fields to manage the invoicing process. 
+When creating an order or sales order in Dynamics 365 finance and operations, the **Invoice and delivery** FastTab provides the necessary fields to manage the invoicing process. 
  
 The **Invoice account** field allows users to select a different customer account to invoice, other than the customer account associated with the order. This is useful when dealing with intermediary parties, such as resellers or distributors, who act as an intermediary between the order customer and the invoicing party. 
  
@@ -38,8 +38,8 @@ the invoice directly. The **Invoice account** field is updated with the order cu
 There are situations when the customer placing the order isn't responsible for receiving the invoice directly. For example, a sales scenario involving a distributor placing an order on behalf of a 
 retailer. In such cases, the distributor's account can be selected in the **Invoice account** field. 
  
-Some additional considerations: 
- - **Billing address** - When invoicing a different customer account, it is essential to ensure that the correct billing address associated with the invoice recipient is provided.
+Additional fields to consider:  
+ - **Billing address** - When invoicing a different customer account, it's essential to provide the correct billing address associated with the invoice recipient.
  - **Financial agreement** - Any financial agreements, such as payment terms or credit limits, should be aligned with the selected invoice account.
  - **Communication** - Clear communication and information exchange between involved parties, including the order customer and invoice recipient, are critical to avoiding any misunderstandings or delays. 
  
