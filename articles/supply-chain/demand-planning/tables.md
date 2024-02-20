@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 10/19/2023
+ms.date: 02/20/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -152,37 +152,22 @@ You can edit any relationship, unmap fields, or add custom field mappings as you
 
 When you create an import job, an export data project for the required data entities is created in Supply Chain Management.
 
-## Setting up Security configuration for custom entities in Supply Chain Management
+## Security configuration for custom entities
 
-You are required to configure security settings for custom entities in Dynamics 365 Finance and Operations (D365 F&O) to grant access for reading data from the entity.
+To allow data to be read from custom entities, you configure their security settings in Dynamics 365 Supply Chain Management. To do so, follow these steps:
 
-To set up security settings, follow these steps:
+1. Go to **System Administration \> Security \> Security Configuration**.
+1. Open the **Privileges** tab.
+1. Select **Create new** from the toolbar.
+1. In the dialog, add a **Name** for your new privilege, and then select **OK**.
+1. Your new privilege is added to the list and selected. In the middle column, select **Entities**.
+1. On the toolbar, select **Add references**.
+1. In the dialog, find and select your custom entity. Select the access properties you want to grant and then select **OK**.
+1. In the middle column, select **Duties**.
+1. On the toolbar, select **Add references**.
+1. In the dialog, find and select the duty named *View Document entity data for data management* or *Create data management project and details using entity*. Choose the duty based on the level of access you require.
+    - *View Document entity data for data management* is commonly associated with entities used in the Data Management Framework in Supply Chain Management. It's typically assigned to the role *Data management migration user*, which is a subordinate role to *Demand planning app role*.
+    - *Create data management project and details using entity* is part of the *Demand planning app role* role. *Demand planning app role* is assigned to *DemandPlanAppUser*, which is a user role often employed for integrating the Demand Planning Service with Supply Chain Management.
 
-1. Navigate to Security Configuration:
-
-    - Go to System Administration.
-    - Select Security.
-    - Click on Security Configuration.
-
-2. Create New Privilege:
-
-    - Within Security Configuration, create a new privilege.
-    - Add your custom entity to this privilege.
-
-3. Assign Privileges to Duties
-
-    - Proceed to Duties section.
-    - Locate the duty named "View Document entity data for data management" or "Create data management project and details using entity"
-    - Select the respective duty based on the required level of access.
-      
-4. Add Privileges to Duties:
-
-    - Within the chosen duty, navigate to Privileges.
-    - Add a reference to the privilege created in Step 2.
-
-5. Publish Changes. After configuring the privileges, click on Publish all to apply the changes.
-
-> [!NOTE]
->
-> - "View Document entity data for data management" duty is commonly associated with entities utilized in the Data Management Framework within D365 F&O. It is typically assigned to the role of "Data management migration user", which is a subordinate role to "Demand planning app role".
-> - "Create data management project and details using entity" duty is part of the "Demand planning app role". The "Demand planning app role" is assigned to "DemandPlanAppUser", a user role often employed for integrating the Demand Planning Service with the Supply Chain Management.
+1. Select **OK** to add the selected duty to your new privilege.
+1. Open the **Unpublished objects** tab. On the toolbar, select **Publish all**.
