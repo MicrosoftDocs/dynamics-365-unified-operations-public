@@ -20,8 +20,6 @@ Automated deployment and configuration of Warehouse Management can be more effic
 
 This article explains how to mass deploy the Warehouse Management mobile app with user-based authentication by using Microsoft Intune.
 
-For an overview of the various ways you can set up authentication and user accounts for your mobile devices, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md). The information in that article will help you decide which authentication method is best for your organization and your users.
-
 > [!IMPORTANT]
 > To use mobile mass deployment (MDM), you must configure the Warehouse Management mobile app to use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) with [single sign-on](warehouse-app-authenticate-user-based.md#sso). This is because it isn't possible to distribute authentication tokens to mobile devices using MDM.
 
@@ -33,6 +31,11 @@ To use an MDM solution to deploy the Warehouse Management mobile app and the rel
 - A valid store account for each mobile platform that you'll support ([Microsoft account](https://account.microsoft.com/account/), [Google Account](https://www.google.com/account/about/), and/or [Apple ID](https://appleid.apple.com/sign-in))
 - [Microsoft Entra ID](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview) (Microsoft Entra ID Premium P2 license)
 - [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home) (the Intune website)
+
+## Authenticating with or without single sign-on after mass deployment
+You can set up user-based authentication for the Warehouse Management mobile app either with or without single sign-on.
+- **Without single sign-on** – If you choose use device code flow authentication, or username/password authentication without single sign-on, then you (or a worker) must authenticate the Warehouse Management mobile app on each device after deploying with MDM.
+- **With single sign-on** – If you use username/password authentication with single sign-on, then the Warehouse Management mobile app can authenticate using an existing authentication token on each device, provided the Microsoft Entra ID account required to authenticate the Warehouse Management mobile app is already signed for another application on the device (such as Microsoft Teams, Company Portal, or Outlook). In this case, no additional authentication may be needed for the device. However, workers may still need to sign in using their warehouse app user account, depending on how you've configured your Microsoft Entra ID and work user accounts (see also [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users]( warehouse-app-authenticate-user-based.md# scenarios).
 
 ## Set up the source files for distribution
 
