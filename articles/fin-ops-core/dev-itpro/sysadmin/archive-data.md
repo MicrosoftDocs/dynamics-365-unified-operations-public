@@ -17,7 +17,7 @@ ms.custom:
 This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
 > [!NOTE]
-> This feature doesn't limit the total number of records that can be archived. However, the largest table that can be archived is limited to a maximum of 100 million records. We recommend that you trim any table that have more than 100 million records.
+> This feature doesn't limit the total number of records that can be archived. However, the largest table that can be archived is limited to a maximum of 100 million records. We recommend that you either trim any table that have more than 100 million records or adjust the selection criteria accordingly to have less than this limit in your archive job.
 
 ## Business application data lifecycle
 
@@ -52,7 +52,7 @@ When an archival job is initiated from the Finance and operations archive worksp
 1. Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
 1. The live table records are marked as retained (archived) in Dataverse long term retention.
 1. A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
-1. Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations database and deleted from the live application tables. Application-specific inquiry pages access this history table data from the live application. Data from history tables can be either restored to the live table or permanently purged. This functionality is not yet supported.
+1. Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations database and deleted from the live application tables. Application-specific inquiry pages access this history table data from the live application. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality is not yet supported.
 
 ## Customization
 
