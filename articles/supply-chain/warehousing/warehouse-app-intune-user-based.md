@@ -1,12 +1,12 @@
 ---
 title: Mass deploy the mobile app with user-based authentication
-description: This article explains how to mass deploy the Warehouse Management mobile app for user-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
+description: This article explains how to mass deploy the Warehouse Management mobile app with user-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 03/09/2023
+ms.date: 02/20/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -16,21 +16,14 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
+Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you have many devices to manage. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
+
+This article explains how to mass deploy the Warehouse Management mobile app with user-based authentication by using Microsoft Intune.
+
+For an overview of the various ways you can set up authentication and user accounts for your mobile devices, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md). The information in that article will help you decide which authentication method is best for your organization and your users.
+
 > [!IMPORTANT]
-> To leverage the advantages of mobile mass deployment (MDM), you must have configured the Warehouse Management mobile app to use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) with [single sign-on](warehouse-app-authenticate-user-based.md#sso). This is because it isn't possible to distribute authentication tokens to mobile devices using MDM.
-
-## How the Warehouse Management mobile app authenticates
-
-When using the device code flow authentication or the username/password authentication without single sign-on, after deploying the app and the connection configurations, each instance will need to be authenticated separately.
-
-When using single sign-on, provided that the Entra ID that will be used to authenticate the Warehouse Management mobile app is already signed in the device in another application (for example Microsoft Teams, Company Portal or Outlook), the Warehouse Management mobile app will automatically get the authentication token, without the user needing to enter the Entra ID password. Then, the user can proceed with logging in to their work user account to access the work, or will be logged in automatically, if you are using [default user ID](mobile-device-work-users.md#set-wma-users).
-
-
-
-
-
-
-
+> To use mobile mass deployment (MDM), you must configure the Warehouse Management mobile app to use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) with [single sign-on](warehouse-app-authenticate-user-based.md#sso). This is because it isn't possible to distribute authentication tokens to mobile devices using MDM.
 
 ## Prerequisites
 
@@ -156,7 +149,7 @@ Follow these steps to set up Intune to support managed configuration for Windows
 1. In the **Add Row** dialog box, set the following fields:
     - **Name** – Enter a name for the new row.
     - **Description** – Enter a short description for the new row.
-    - **OMA-URI** – Enter the following value:<br/>
+    - **OMA-URI** – Enter the following value:
 
         ```txt
         ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson
@@ -216,4 +209,3 @@ There are several ways to enroll a Windows device. For example, you can install 
 - [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

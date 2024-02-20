@@ -90,7 +90,7 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. On the **Add Assignment** page, select the link under the **Users** heading.
 1. In the **Users** dialog box, select each user that you'll use to authenticate devices with Supply Chain Management.
 1. In the **Security** list, select **Permissions**.
-1. Select **Grand admin consent for *your tenant*** and grant admin consent on behalf of your users. If you lack the necessary permissions, return to the **Manage** list, access **Properties**, and set the **Assignment required?** option to *False*. Subsequently, each user will be able to provide consent individually.
+1. Select **Grand admin consent for *your tenant*** and grant admin consent on behalf of your users. If you lack the necessary permissions, return to the **Manage** list, open **Properties**, and set the **Assignment required?** option to *False*. Subsequently, each user will be able to provide consent individually.
 
 For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
 
