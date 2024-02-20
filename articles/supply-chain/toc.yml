@@ -3809,12 +3809,10 @@
             href: warehousing/warehouse-app-user-based-auth-faq.md
           - name: Service-based authentication
             href: warehousing/warehouse-app-authenticate-service-based.md
-          - name: Mass deploy the mobile app and manage connection configurations
-            href: warehousing/warehouse-app-intune.md
-          - name: Mass deploy the mobile app for user-based authentication
+          - name: Mass deploy the mobile app with user-based authentication
             href: warehousing/warehouse-app-intune-user-based.md
           - name: Mass deploy the mobile app with service-based authentication
-            href: warehousing/warehouse-app-intune-service-based.md
+            href: warehousing/warehouse-app-intune.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
             href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
