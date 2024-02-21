@@ -1,15 +1,15 @@
 ---
-title: Configure an email channel
+title: Configure email channels
 description: This article explains how to configure an email channel to receive electronic invoices.
-author: gionoder
-ms.date: 12/09/2022
+author: ilikond
+ms.date: 02/12/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure an email channel
+# Configure email channels
 
 [!include [banner](../../includes/banner.md)]
 
 If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that are received by email, configure an email account channel.
 
-1. In Regulatory Configuration Service (RCS), select the Electronic invoicing feature that you created. Select the version that has a status of **Draft**.
+1. Select the Electronic invoicing feature that you created. Select the version that has a status of **Draft**.
 2. On the **Setups** tab, select **Add**.
 3. In the **Create feature setup** drop-down dialog box, in the **New** field group, select the **Custom setup** option.
 4. In the **Setup type** field group, select the **Data channel** option.
