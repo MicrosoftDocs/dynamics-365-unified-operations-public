@@ -1,7 +1,7 @@
 ---
 title: Customer and invoice accounts
 description: This article describes customer and invoice accounts in Microsoft Dynamics 365 Finance.
-author: twheeloc
+author: Prabhatb-ship-it
 ms.date: 02/20/2024
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: prabhatb
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
