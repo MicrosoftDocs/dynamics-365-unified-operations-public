@@ -4,7 +4,7 @@
 title: Set up Apple Pay with Adyen in Dynamics 365 Commerce
 description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/21/2023
+ms.date: 02/21/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -42,7 +42,7 @@ The Apple Pay payment method must also be integrated with your Adyen account. Ad
 
 To enable the enhanced wallet feature flag in Commerce headquarters, go to **Workspaces \> Feature management**, and search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
 
-Apple Pay will require the Site builder setting found at **Site \> Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to be enabled.
+To use Apple Pay, you must also enable the **Enable single payment authorization checkout** property in site builder at **Site \> Site settings \> Extensions \> Cart and checkout**.
 
 ## Map the Apple Pay payment method
 
@@ -139,9 +139,9 @@ To configure content security policies in site builder, follow these steps.
 1. On the **Content security policy** tab, select **Add** to add a line that has `https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js` to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
 1. When you've finished, select **Save and publish** to commit the changes.
 
-### Set the Enable single payment authorization checkout property in Site builder's Site settings
+### Enable single payment authorization checkout in site builder
 
-Apple Pay will require the Site builder setting found at **Site \> Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to be enabled (checked).
+To use Apple Pay, you must select the **Enable single payment authorization checkout** property in site builder at **Site \> Site settings \> Extensions \> Cart and checkout**.
 
 ### Set up Apple Pay as a checkout payment option
 
