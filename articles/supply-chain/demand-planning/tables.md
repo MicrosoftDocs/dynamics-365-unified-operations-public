@@ -154,7 +154,7 @@ When you create an import job, an export data project for the required data enti
 
 ## Security configuration for custom entities
 
-To allow data to be read from custom entities, you configure their security settings in Dynamics 365 Supply Chain Management. To do so, follow these steps:
+To allow data to be read from custom entities, you must configure their security settings in Dynamics 365 Supply Chain Management. To do so, follow these steps:
 
 1. Go to **System Administration \> Security \> Security Configuration**.
 1. Open the **Privileges** tab.
