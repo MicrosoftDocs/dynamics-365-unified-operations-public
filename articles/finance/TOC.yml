@@ -1596,7 +1596,81 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing
+        - name: Electronic Invoicing (preview)
+          items:
+          - name: Electronic Invoicing overview
+            href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
+          - name: Electronic Invoicing administration and integration components
+            href: localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
+          - name: Set up Electronic Invoicing
+            items: 
+            - name: Setting up Electronic Invoicing
+              href: localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
+            - name: Set up Azure Resources
+              items:
+              - name: Set up Azure resources for Electronic invoicing
+                href: localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
+              - name: Create an Azure Key Vault in the Azure portal
+                href: localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
+              - name: Create an Azure storage account in the Azure portal
+                href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
+              - name: Configure a SharePoint connection
+                href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+          - name: Work with Globalization features
+            items:
+            - name: Work with Globalization features overview
+              href: localizations/global/gs-e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
+            - name: Import a feature from the repository
+              href: localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
+            - name: Create a new Globalization feature
+              href: localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
+            - name: Work with configurations
+              href: localizations/global/gs-e-invoicing-work-configurations.md
+            - name: Work with feature setups
+              href: localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/finance
+            - name: Complete and deploy a Globalization feature
+              href: localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
+            - name: Usage management dashboard
+              href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
+            - name: Process incoming electronic documents
+              items: 
+              - name: Processing incoming electronic documents
+                href: localizations/global/e-invoicing-process-incoming-electronic-documents.md
+              - name: Configure an email channel
+                href: localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/finance
+              - name: Configure an email channel for Office 365 Exchange Online
+                href: localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
+              - name: Configure a SharePoint channel
+                href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: localizations/global/e-invoicing-isv-connector.md
+          - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+            items: 
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
+            - name: Work with Electronic Invoicing
+              items:
+              - name: Submit electronic documents
+                href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
+              - name: Work with the Electronic documents submission log
+                href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+              - name: Receive electronic documents
+                href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
+          - name: Country/region-specific scenarios
+            items:
+            - name: Availability of Electronic Invoicing features
+              href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
+            - name: Australia and New Zealand
+              href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+            - name: Indonesia
+              href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
+            - name: Saudi Arabia
+              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+            - name: Saudi Arabia - onboarding
+              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+          - name: Electronic Invoicing FAQ
+            href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
+        - name: Electronic Invoicing (RCS)
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/e-invoicing-service-overview.md?context=/dynamics365/context/finance
