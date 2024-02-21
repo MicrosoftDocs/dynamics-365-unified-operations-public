@@ -1,28 +1,28 @@
 ---
-title: Mass deploy the mobile app for service-based authentication
-description: This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
+title: Mass deploy the mobile app with service-based authentication
+description: This article explains how to mass deploy the Warehouse Management mobile app with service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 03/09/2023
+ms.date: 02/20/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Mass deploy the mobile app for service-based authentication
+# Mass deploy the mobile app with service-based authentication
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]
-> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md).
+> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you have many devices to manage. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
 
-This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using Microsoft Intune.
+This article explains how to mass deploy the Warehouse Management mobile app with service-based authentication by using Microsoft Intune.
 
 ## Prerequisites
 
@@ -157,7 +157,12 @@ Follow these steps to set up Intune to support managed configuration for Windows
 1. In the **Add Row** dialog box, set the following fields:
     - **Name** – Enter a name for the new row.
     - **Description** – Enter a short description for the new row.
-    - **OMA-URI** – Enter the following value:<br/>*./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson*
+    - **OMA-URI** – Enter the following value:
+
+        ```txt
+        ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson
+        ```
+
     - **Data type** – Select *String*.
     - **Configuration value** – Paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
 1. Select **Save** to apply your settings and close the dialog box.
