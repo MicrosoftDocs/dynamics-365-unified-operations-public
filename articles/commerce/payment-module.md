@@ -2,7 +2,7 @@
 title: Payment module
 description: This article covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/12/2022
+ms.date: 02/22/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -23,7 +23,7 @@ ms.assetid:
 This article covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
 > [!WARNING]
-> The Dynamics 365 Commerce pattern for PayPal and Google Pay Express payment behavior is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** express payment patterns will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update PayPal and Google Pay module behavior to support express flows by updating order details within the wallet payment window as a delivery address is selected.
+> The Dynamics 365 Commerce pattern for PayPal and Google Pay Express payment behavior is not currently recommended for regions enforcing Revised Payment Services Directive (PSD2) requirements. The Commerce payment module express payment patterns calculate the final order price on the Commerce checkout page when it has acquired delivery address information for a user's order. PSD2 recommends that the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update PayPal and Google Pay module behavior to support express flows by updating order details within the wallet payment window as a delivery address is selected.
 
 The payment module lets customers pay for orders by using credit or debit cards. Payment integration for this module is provided by the Dynamics 365 Payment Connector for Adyen. For more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).  
 
