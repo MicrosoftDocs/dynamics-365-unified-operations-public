@@ -27,6 +27,8 @@ Warehouse management only mode requires that you set up integration between exte
 
 Many different integration methodologies can be used for these three categories. This article describes the recommended integration process.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## <a name="master-data"></a>Master and reference data
 
 For consistent communication, several types of master and reference data must be synced and available to both systems. One example is the product master data. This type of data can be imported into Supply Chain Management via the following messages that are related to product master data:

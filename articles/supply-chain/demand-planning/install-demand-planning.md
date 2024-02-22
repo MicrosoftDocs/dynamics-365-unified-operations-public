@@ -21,6 +21,8 @@ ms.custom: bap-template
 
 This article describes how to install, enable, and set up the Demand planning app for Microsoft Dynamics 365 Supply Chain Management. It explains how to use Power Platform admin center to install the Demand planning app in your tenant and set up the feature in Supply Chain Management.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Prerequisites
 
 To use Demand planning with Supply Chain Management, you must be running one of the following versions of Supply Chain Management:
@@ -65,21 +67,3 @@ Follow these steps to enable and configure Demand planning in Supply Chain Manag
     1. Select the **Framework parameters** tile.
     1. Open the **Entity settings** tab.
     1. Select **Refresh entity list**.
-
-## Security roles and duties
-
-Demand planning features in Supply Chain Management are available only to users who have the required security roles and related duties. When you enable the feature in Supply Chain Management, it adds a privilege that's named *Demand planning informational tile*. This privilege grants users access to a button that opens the Demand planning app from the home page of Supply Chain Management. The privilege is added to the out-of-box roles and duties that are listed in the following table. If you're using custom roles, you must manually assign the privilege to them after you enable the feature.
-
-| Role name | Duty |
-|---|---|
-| Production planner | Maintain forecasts |
-| Production planner | Maintain firming of planned orders |
-| Production manager | Enable forecast process |
-| Production planner | Maintain forecast planning |
-| Production planner | Maintain demand forecasts |
-| Sales manager | Maintain demand forecast |
-| Production manager | Enable the demand planning process |
-
-The feature also adds a new system role and user. A record that's inserted into the Microsoft Entra ID applications enables data to be exchange between Demand planning and Supply Chain Management.
-
-To access the Demand planning app, users must be granted access to the Dataverse environment through *Demand planning service role* or *System administrator*. If you're the administrator of your Microsoft Power Platform environment, you can add the required users by selecting **Users** on the relevant environment.

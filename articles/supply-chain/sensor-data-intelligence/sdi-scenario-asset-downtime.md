@@ -21,6 +21,8 @@ ms.dyn365.ops.version: 10.0.30
 
 The asset downtime scenario generates a maintenance downtime record if no signal is received from a machine within a defined time threshold since the last signal was received. The scenario requires that you fit your machine with a sensor that periodically sends a signal to your Azure IoT Hub while the machine is operating, but doesn't send a signal when the machine isn't operating.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Set up the asset downtime scenario
 
 Follow these steps to set up the *asset downtime* scenario in Supply Chain Management.
