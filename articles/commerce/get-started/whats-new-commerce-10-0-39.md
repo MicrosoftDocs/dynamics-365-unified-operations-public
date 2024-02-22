@@ -32,12 +32,6 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Point of sale (POS) | Exclude orders from aggregation - Poland | Poland fiscal regulations mandate that customers must be provided with a printed invoice upon request for up to four weeks following a transaction under certain conditions. However, order aggregation prevents those orders from being retrieved in Commerce headquarters. This feature excludes qualifying orders from being aggregated so that they're available to be opened individually in headquarters. | IT administrators |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
 
 ## Additional resources
 
