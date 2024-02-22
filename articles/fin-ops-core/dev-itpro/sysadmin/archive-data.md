@@ -17,7 +17,7 @@ ms.custom:
 This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
 > [!NOTE]
-> This feature doesn't limit the total number of records that can be archived. However, the largest table that can be archived is limited to a maximum of 100 million records. We recommend that you either trim any table that have more than 100 million records or adjust the selection criteria accordingly to have less than this limit in your archive job.
+> This feature doesn't limit the total number of records that can be archived. However, the current limitation in the initial synchronization of data replication to Dataverse is that the largest table is limited to a maximum of 100 million records.  Prior to testing this feature, we recommend that you trim any tables that have more than 100 million records. 
 
 ## Business application data lifecycle
 
