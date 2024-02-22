@@ -41,6 +41,16 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Functionality will be removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plug-in. |
 
+### You can no longer download packages from within HQ
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are no longer supporting maintaining packages within HQ directly. Users are encouraged to use LCS or other means to download these packages.
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | HQ |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: UI may still be available but will not be supported |
+
 ## Features removed or deprecated in the Commerce 10.0.29 release
 
 ### Commerce parameters setting - Allow price adjustments to increase product price
