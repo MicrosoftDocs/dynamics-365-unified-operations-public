@@ -52,7 +52,7 @@ When an archival job is initiated from the Finance and operations archive worksp
  -  Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
  -  The live table records are marked as retained (archived) in Dataverse long term retention.
  -  A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
- -  Live application data that was previously marked as ready for archiving is moved to history tables in the Dynamics 365 finance database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality isn't yet supported.
+ -  Live application data that was previously marked as ready for archiving is moved to history tables in the Dynamics 365 finance database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
 
 ## Customization
 
