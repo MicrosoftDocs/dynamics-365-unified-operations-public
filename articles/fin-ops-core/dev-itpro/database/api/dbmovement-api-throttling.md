@@ -49,6 +49,19 @@ If you exceed the limit, you won't be able to start a new operation and will rec
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+### Frequently asked questions
+The following are frequently asked questions, and related answers when it comes to throttling limits on the Lifecycle Services APIs.
 
+**Question**: Which start time is used by the throttling, the beginning of the database operation or the end?
+**Answer**:  The start time (aka created time) of the database operation is used for the throttling checking. If you have 3 database operations started in the last 24 hours, then the 4th is blocked until sufficient time has passed.
+
+**Question**:  How can I monitor this throttling limit?
+**Answer**:  You may review the activity on an environment in the history view within Lifecycle Services or using the Environment History API. 
+
+**Question**:  If the limit is reached via API, are manual operations still possible via Lifecycle Services and if yes how many?
+**Answer**: Only API operations are throttled, you can perform as many manual operations as time allows in Lifecycle Services.  Keep in mind that manual operations will be included in throttling limits for service level protection.
+
+**Question**:  Is the throttling a maximum of 3 operations for the entire LCS project or customer tenant?  Or is it per environment?
+**Answer**:  The throttling limit is per environment (3 requests per environment per 24 hours).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

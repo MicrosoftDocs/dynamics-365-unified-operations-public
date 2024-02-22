@@ -43,7 +43,9 @@ For information about how to purchase a subscription, see [Buy and manage a subs
 
 ### Get started with Lifecycle Services 
 
-When you purchase a subscription, it's assigned to your Microsoft Online Services ID. The Microsoft Online Services ID is required to provision and register Microsoft Dynamics 365 applications. The Microsoft Online Services ID is used to provision a Microsoft Dynamics Lifecycle Services project that contains the necessary artifacts for on-premises environments. Lifecycle Services is the service where on-premises environments are provisioned, Business process models are created and uploaded, hotfixes are made available, support cases are entered and managed, subscriptions are validated, and so on. Follow the [Provisioning guide](https://mbs2.microsoft.com/fileexchange/?fileID=7ddd6ddf-aa22-402a-baa1-5405ce0b1076) to obtain an on-premises license.
+When you purchase a subscription, it's assigned to your Microsoft Online Services ID. The Microsoft Online Services ID is required to provision and register Microsoft Dynamics 365 applications. The Microsoft Online Services ID is used to provision a Microsoft Dynamics Lifecycle Services project that contains the necessary artifacts for on-premises environments. Lifecycle Services is the service where on-premises environments are provisioned, Business process models are created and uploaded, hotfixes are made available, support cases are entered and managed, subscriptions are validated, and so on.
+
+Before you can create your Lifecycle Services project and begin creating on-premise environments, you will need to follow the [Provisioning guide](https://mbs2.microsoft.com/fileexchange/?fileID=7ddd6ddf-aa22-402a-baa1-5405ce0b1076) to obtain an on-premises license.
 
 If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. When you sign in to [Lifecycle Services](https://lcs.dynamics.com), select to use this account for sign-in if you want to use the same Azure Active Directory (Azure AD) tenant for the on-premises environment.
 

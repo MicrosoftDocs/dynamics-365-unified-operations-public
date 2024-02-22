@@ -38,6 +38,9 @@ This article goes through the following steps.
 
 As an example of this scenario, a customer who has deployed a finance and operations apps environment wants to connect it to a new Dataverse environment. This operation unlocks popular features such as add-ins, dual-write, virtual entities, and out-of-box business events, so that the rich finance and operations apps data can be made available for low-code applications and services.
 
+## Power Platform connection is not reversible
+Note that connecting, or linking as it is also referred, a finance and operations apps environment to a Microsoft Dataverse instance is not reversible.  The integration between the two systems is done via the infrastructure and disconnecting them would result in data loss.  If you wish to delete the Microsoft Dataverse instance, you may follow the guide - [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md).
+
 ## Prerequisites
 
 The following prerequisites must be in place before you set up the Microsoft Power Platform integration:

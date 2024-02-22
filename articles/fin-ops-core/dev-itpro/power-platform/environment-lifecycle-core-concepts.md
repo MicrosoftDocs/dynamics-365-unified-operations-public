@@ -59,5 +59,10 @@ The following list of continually updated scenario articles provides a walkthrou
 
 - [Connect finance and operations apps with a new Microsoft Dataverse instance](./environment-lifecycle-connect-finops-new-dv.md)
 - [Connect finance and operations apps with an existing Microsoft Dataverse instance](./environment-lifecycle-connect-finops-existing-dv.md)
+- [Change the type of connected environments](./environment-lifecycle-change-env-type-dv.md)
+- [Database and environment movements when Power Platform Integration is enabled](./environment-lifecycle-database-movements.md)
+- [Set up developer cloud-hosted environments by using Power Platform Integration](./environment-lifecycle-development-environments.md)
+- [Edit the properties of connected Dataverse environments](./environment-lifecycle-edit-properties-dv.md)
+- [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
