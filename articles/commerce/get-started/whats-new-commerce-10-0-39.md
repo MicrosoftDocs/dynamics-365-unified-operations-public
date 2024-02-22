@@ -31,13 +31,13 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-|  lorem   |  lorem ipsum dolor sit amet   |  - lorem ipsum dolor sit amet.<p><p>- lorem ipsum dolor sit amet.<p><p>- lorem ipsum dolor sit amet.<p><p>- lorem ipsum dolor sit amet. | By default  |
-|  lorem   | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet| Site admin |
-|  lorem  | lorem ipsum dolor sit amet   |  lorem ipsum dolor sit amet. | Feature management<p><p>"lorem ipsum" |
-|   lorem  |  lorem ipsum dolor sit amet  |  lorem ipsum dolor sit amet.  | Feature management<p><p>"lorem ipsum"  |
-| lorem | lorem ipsum dolor sit amet| lorem ipsum dolor sit amet. | By default |
-| lorem  |  lorem ipsum dolor sit amet   |  lorem ipsum dolor sit amet.  |  Site author  |
-| lorem | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet. | By default |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 
 ## Additional resources
 
@@ -45,7 +45,6 @@ The following table lists the features that are included in this release. We mig
 
 Microsoft Dynamics 365 Commerce version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md). 
   
-
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.39, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=886261).
@@ -64,7 +63,6 @@ The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months prior to the removal.
-
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
