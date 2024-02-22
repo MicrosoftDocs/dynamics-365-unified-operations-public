@@ -20,7 +20,7 @@ ms.search.form: LedgerTransVoucher, LedgerJournalTable
 
 [!include [banner](../includes/banner.md)]
 
-This article describes capabilities Microsoft Dynamics 365 Finance to reverse an entire journal, or reverse one or more vouchers from the voucher transaction list, regardless of their origin. 
+This article describes the capabilities in Microsoft Dynamics 365 Finance to reverse an entire journal, or reverse one or more vouchers from the voucher transaction list, regardless of their origin. 
 
 Before you can use one of the features described in this article, it must be turned on. Administrators can use the **Feature management** workspace to check the status of the feature. 
 The feature is listed in the following way:
