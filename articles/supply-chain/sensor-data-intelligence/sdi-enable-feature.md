@@ -19,6 +19,9 @@ ms.dyn365.ops.version: 10.0.30
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
+This article explains how to turn on Sensor Data Intelligence for your system.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Video instructions
 

@@ -422,6 +422,8 @@
         href: accounts-receivable/configure-customer-invoices.md
       - name: Customer transactions list page
         href: accounts-receivable/customer-transactions-list-page.md
+      - name: Customer and invoice accounts
+        href: accounts-receivable/customer-inv-account.md
       - name: Set up bills of exchange
         href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable

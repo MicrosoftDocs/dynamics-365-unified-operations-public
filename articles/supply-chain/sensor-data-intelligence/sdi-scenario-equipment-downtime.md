@@ -21,6 +21,8 @@ ms.dyn365.ops.version: 10.0.30
 
 The *machine status* scenario lets you use sensor data to monitor the availability of your equipment. If you set up a sensor that sends a signal when a production job on a machine resource produces output, but no sensor signal is received within a specified interval, a notification is shown on the supervisor's dashboard.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Scenario dependencies
 
 The *machine status* scenario has the following dependencies:

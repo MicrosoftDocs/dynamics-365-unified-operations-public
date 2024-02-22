@@ -23,6 +23,8 @@ ms.dyn365.ops.version: 10.0.30
 
 The **Sensor Data Intelligence parameters** page provides a few settings that you can use to configure the feature. These settings include Azure connection parameters and a parameter for the lifetime of alert messages that are sent to users in response to sensor measurements.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Read and change connection details for your Azure IoT solution
 
 Typically, you will set up your Azure IoT solution and connect it to Microsoft Dynamics 365 Supply Chain Management from the **Deploy and connect Azure resources** page, which will guide you through both procedures. (For more information, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).) You can also view and edit the connection details at any time in Supply Chain Management by following these steps.

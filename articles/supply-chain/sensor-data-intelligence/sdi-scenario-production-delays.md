@@ -21,6 +21,8 @@ ms.dyn365.ops.version: 10.0.30
 
 The *production delays* scenario generates a notification if production throughput falls below a specific threshold value. In this scenario, a *part-out* signal is sent to Microsoft Azure IoT Hub for each item that is produced. In Dynamics 365 Supply Chain Management, the order delay is calculated based on the amount of time that the production order is scheduled to run, the number of items that should be produced, the amount of time that the job has been running, and the number of *part-out* signals that have been received. A delay notification is generated if the number of *part-out* signals for the job falls below the threshold value.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Scenario dependencies
 
 The *production delays* scenario has the following dependencies:

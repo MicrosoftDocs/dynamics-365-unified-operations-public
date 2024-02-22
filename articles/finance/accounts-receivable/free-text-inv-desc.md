@@ -3,7 +3,7 @@
 
 title: Use financial tags to display free text invoice descriptions
 description: This article explains how to use financial tags to display the description of free text invoices.
-author: prabhatb
+author: Prabhatb-ship-it
 ms.date: 2/08/2024
 ms.topic: article
 ms.prod: 
