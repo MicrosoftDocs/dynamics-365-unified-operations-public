@@ -2007,8 +2007,12 @@
       items:
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md
-      - name: Install and enable the Demand planning app
-        href: demand-planning/install-demand-planning.md
+      - name: Setup and administration
+        items:
+        - name: Install and enable the Demand planning app
+          href: demand-planning/install-demand-planning.md
+        - name: Security roles and row-level security
+          href: demand-planning/users-access.md
       - name: Import data
         items:
         - name: View and customize tables for holding imported data

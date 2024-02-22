@@ -21,6 +21,8 @@ ms.custom: bap-template
 
 Time series represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## <a name="explore"></a>Explore time series
 
 To view all your time series, on the navigation pane, select **Planning data** \> **All**. (Alternatively, select an appropriate time series category under **Planning data**.)

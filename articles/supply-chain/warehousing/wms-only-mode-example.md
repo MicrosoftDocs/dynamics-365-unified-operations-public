@@ -22,6 +22,10 @@ ms.custom: bap-template
 
 This article provides an example scenario that shows how to create inbound and outbound shipment orders via message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
+## How to test the creation process
+
 To try out the creation process for inbound and outbound shipment orders via messages, set the **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** options to *Yes* for a **Source system** record. You can then create shipment order messages directly on the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-using.md#maintain-messages) pages.
 
 Another quick way to post example messages is to use [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests.
