@@ -64,9 +64,9 @@ Certificates in your Microsoft Entra tenant are no longer installed in new one-b
    - In the **Business unit** drop-down list, select the root business unit for the environment.
    - In the **Security roles** text box, select a security role with create, read, update, and delete permissions on Dataverse tables used for dual-write, such as the **System Administrator** role.
    - Select **Create**.
-6. Enable 'DualWriteUnoAuthenticationFnoToCds' flight:
+6. Enable the "DualWriteUnoAuthenticationFnoToCds" flight:
    - Open SQL Server Management Studio and connect to the "AXDB" on your one-box environment.
-   - Run the following SQL script to enable the 'DualWriteUnoAuthenticationFnoToCds' flight:
+   - Run the following SQL script to enable the "DualWriteUnoAuthenticationFnoToCds" flight:
 
     ```sql
     DECLARE @flightName NVARCHAR(100) = 'DualWriteUnoAuthenticationFnoToCds';
