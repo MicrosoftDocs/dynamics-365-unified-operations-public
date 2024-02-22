@@ -4,7 +4,7 @@
 title: Financial journal posting performance 
 description: The article suggests ways to troubleshoot performance issues when you post financial journals. For example, you can adjust the number sequence setup and limit journal lines.
 author: Livbjerg
-ms.date: 08/24/2023
+ms.date: 02/24/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,7 @@ For more information about preallocation of number sequences, see [Number sequen
 
 ### Run journal posting in batch mode
 
-We recommend that you post journals in the background as a batch job. Journal posting in batch mode can improve performance in several ways:
+We recommend that you post journals in the background as a batch job. Journal posting in batch mode uses a [top picking pattern](../../fin-ops-core/dev-itpro/perf-test/batch-para-multi-thread.md) and can improve performance in several ways:
 
 - Because it runs in the background, users can continue to work on other tasks while the journal is being processed.
 - It supports parallel processing.
