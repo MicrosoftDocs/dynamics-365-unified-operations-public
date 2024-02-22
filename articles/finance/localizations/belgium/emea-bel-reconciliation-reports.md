@@ -12,7 +12,6 @@ ms.search.region: Belgium
 ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 273103
 ms.search.form: TaxReportExtraFieldsBE
 ---
 

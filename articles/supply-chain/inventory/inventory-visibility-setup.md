@@ -159,6 +159,10 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 > [!NOTE]
 > When you enable the Inventory Visibility integration job, if you receive an error that states that you must update the partition schema, see the [Update partition schema to two if you get an error when enabling the Inventory Visibility integration job](#update-partition-two) section of this article for instructions.
 
+### <a name="setup-inventory-visibility-integration-hotfixes-link"></a>Inventory Visibility integration hotfixes
+
+For a list of the latest hotfixes available for Inventory Visibility integration features in Supply Chain Management, see [Recent Dynamics 365 SCM hotfixes](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Recent%20Dynamics%20365%20SCM%20hotfixes.md).
+
 ### <a name="update-partition-two"></a>Update partition schema to two if you get an error when enabling the Inventory Visibility integration job
 
 When you try to enable the Inventory Visibility integration batch job from Supply Chain Management, you might receive the following error:
@@ -174,6 +178,25 @@ If you receive this error, follow these steps to update your [partition schema](
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature, and [update the configuration](inventory-visibility-power-platform.md#update-configuration).
 1. In Power Apps, [review the runtime configuration](inventory-visibility-power-platform.md#endpoint). The `CachePartitonIdVersion` field should show a value of `ByLocationAndProductIdMod64`.
 1. In Supply Chain Management, go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration**, and enable the job.
+
+## <a name="update-add-in"></a>Update the Inventory Visibility Add-in
+
+To update an installed version of the Inventory Visibility Add-in to the latest version, follow these steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. On the navigation pane, select **Environments**.
+1. Open the environment where you want to update the Inventory Visibility Add-in.
+1. In the **Resources** section, select **Dynamics 365 apps**.
+1. In the list, find the row where **Name** is *Dynamics 365 Inventory Visibility*. Check the value in the **Status** column for this row.
+    - If the **Status** is *Installed*, then you're already running the latest version so you can skip the rest of this procedure.
+    - If the **Status** is *Update available*, then an update is available. Continue with the next step.
+
+    > [!TIP]
+    > To see which version of the add-in you are currently running, regardless of the status, open the **More application actions** menu (ellipsis button) and then select **Details**.
+
+1. If the page shows that an update is available, open the **More application actions** menu (ellipsis button) and then select **Update**.
+1. A dialog opens. Select the **I agree to the terms of service** check box and then select **Update**.
+1. A pop-up window opens asking you to confirm the action. To proceed, enter the name of your environment in the field provided and then select **Update**.
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 

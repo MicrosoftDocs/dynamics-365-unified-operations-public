@@ -31,14 +31,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.39 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-39.md  
         - name: Human Resources 10.0.38 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-38.md   
         - name: Human Resources 10.0.37 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-37.md  
         - name: Human Resources 10.0.36 (merged infrastructure)          
-          href: ./get-started/hr-whats-new-10-0-36.md   
-        - name: Human Resources 10.0.35 (merged infrastructure)          
-          href: ./get-started/hr-whats-new-10-0-35.md                            
+          href: ./get-started/hr-whats-new-10-0-36.md                             
         - name: What's new in Dynamics 365 Human Resources (stand-alone)
           items: 
           - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
@@ -93,6 +93,46 @@ items:
         href: hr-admin-overview.md
       - name: System requirements
         href: hr-admin-system-requirements.md
+      - name: One Version service updates 
+        items:
+        - name: One Version service updates overview
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/human-resources
+        - name: One Version service updates FAQ
+          href: ../fin-ops-core/dev-itpro/get-started/one-version.md?context=/dynamics365/context/human-resources
+        - name: Manage updates and the custom code lifecycle, including Dynamics 365 Commerce
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?context=/dynamics365/context/human-resources
+        - name: Software lifecycle policy - Cloud
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?context=/dynamics365/context/human-resources
+        - name: Software lifecycle policy - On-premises
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?context=/dynamics365/context/human-resources
+        - name: Service update availability
+          href: ../fin-ops-core/dev-itpro/get-started/public-preview-releases.md?context=/dynamics365/context/human-resources
+        - name: Apply updates to cloud environments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/human-resources
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?context=/dynamics365/context/human-resources
+        - name: Configure service updates
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/human-resources
+        - name: Pre-servicing and post-servicing
+          href: ../fin-ops-core/fin-ops/lcs/pre-post-servicing.md?context=/dynamics365/context/human-resources
+        - name: Pause service updates
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/human-resources
+        - name: Get notified about service updates
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/human-resources
+        - name: Proactive quality updates
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates.md?context=/dynamics365/context/human-resources
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-schedule.md?context=/dynamics365/context/human-resources
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-faq.md?context=/dynamics365/context/human-resources
+        - name: Data task automation
+          href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/human-resources
+        - name: Delivering ISV solutions using One Version
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/human-resources
+        - name: Create and automate user acceptance tests
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/human-resources        
       - name: Set up and manage instances
         items:
         - name: Provision Human Resources in the finance and operations infrastructure

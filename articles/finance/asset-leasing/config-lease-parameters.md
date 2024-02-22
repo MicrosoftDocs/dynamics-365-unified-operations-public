@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure lease parameters (Preview)
+title: Configure lease parameters
 description: This article describes the configuration settings for Asset leasing, such as security information and accounting settings.
 author: moaamer
 ms.date: 01/11/2022
@@ -18,7 +18,6 @@ audience: Application User
 ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
-ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 

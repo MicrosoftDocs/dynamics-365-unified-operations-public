@@ -2,12 +2,12 @@
 title: Create a batch job
 description: A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing.
 author: matapg007
-ms.date: 11/22/2021
+ms.date: 02/14/2024
 ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2016-06-30
@@ -46,7 +46,7 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 5.	In the **Class name** field, select the process that the task should run. 
 6.	As appropriate, select a batch group for the task.
 
-    Client tasks must be assigned to a batch group. They are automatically assigned to the default batch group (also known as the Empty batch group).
+    Client tasks must be assigned to a batch group. They're automatically assigned to the default batch group (also known as the Empty batch group).
 
 7.	Select **Ctrl+S** to save the task.
 8.	To make the selected task dependent on another task in the job, select the **Has conditions** grid, and then follow these steps for each condition that you want to define:
@@ -62,13 +62,25 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 
     For more information about batch retries, see [Enable batch retries](../../dev-itpro/sysadmin/retryable-batch.md).
 
+## Batch Job History
+
+1. Under the **Batch Jobs** in **Save Jobs to History**, you can select one of three options **Always**, **Errors Only**, or **Never**.
+2. If you select
+    - **Always**: The history for the job is always created, irrespective of terminal status of the batch job.
+    - **Errors Only**: The history of the job is only created if the job ended in the error state.
+    - **Never**: No history is created for the batch job.
+3. If the batch job has many batch tasks, then it's recommended to set this field to **Errors Only** or **Never**.
+
+> [!IMPORTANT]
+> - Starting with release 10.0.39, If the batch job has more than 5000 batch tasks, then the corresponding job history would only save first 2500 tasks, preferring tasks with status in following order: **Error -> Cancelled -> Finished -> Not Run**. This measure has been implemented to prevent blocking batch related tables that may occur due to such large jobs.
+
 ## Adjust batch job status
 1. Go to **System administration > Inquiries > Batch jobs**.
 2. Select the appropriate batch job.
 3. On the Action Pane, select **Batch job > Functions > Change status**.
 4. Select the appropriate status:
-    - **Withhold**: Set the batch job as **withhold** so it is withheld from the batch job scheduler. Equivalent to *stop*.
-    - **Waiting**: Set the batch job as **waiting** so it is waiting to be picked up by the batch job scheduler. Equivalent to *go*.
+    - **Withhold**: Set the batch job as **withhold** so it's withheld from the batch job scheduler. Equivalent to *stop*.
+    - **Waiting**: Set the batch job as **waiting** so it's waiting to be picked up by the batch job scheduler. Equivalent to *go*.
 5. Select **OK**.
 
 

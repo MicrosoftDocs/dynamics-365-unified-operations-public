@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 2474
 ms.assetid: 316da918-67ae-43c5-baea-00ae559e29b0
 ms.search.region: Global
 ms.search.industry: Manufacturing

@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 2871
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: wangchen

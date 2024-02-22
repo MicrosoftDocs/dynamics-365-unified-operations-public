@@ -4,7 +4,7 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
 description: This article explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 9/21/2022
+ms.date: 02/16/2024
 ms.topic: article
 ms.service: dynamics-365
 ms.technology: 
@@ -38,11 +38,13 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft Windows Server 2019 | 10.0.17          | Not available |
+| Microsoft Windows Server 2022 | 10.0.38          | Not available |
+| Microsoft Windows Server 2019 | 10.0.17          | 10.0.41       |
 | Microsoft Windows Server 2016 | Original release | 10.0.26       |
 
 > [!NOTE]
 > Only en-US operating system installations are supported.
+> These software requirements are relevant to all non-Microsoft managed environments, including development boxes, cloud-hosted environments, and similar setups.
 
 ## Microsoft SQL Server
 
@@ -69,6 +71,7 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 
 | Version                                                     | Supported since  | End of life   |
 |-------------------------------------------------------------|------------------|---------------|
+| Active Directory Federation Services on Windows Server 2022 | 10.0.38          | Not available |
 | Active Directory Federation Services on Windows Server 2019 | 10.0.17          | Not available |
 | Active Directory Federation Services on Windows Server 2016 | Original release | 10.0.26       |
 

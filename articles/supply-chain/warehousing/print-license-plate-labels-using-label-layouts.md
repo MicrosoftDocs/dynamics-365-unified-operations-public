@@ -1,8 +1,8 @@
 ---
 title: License plate label layouts and printing
 description: This article describes how to set up and print license plate labels using label layouts.
-author: GalynaFedorova
-ms.author: gfedorova
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource, WHSDocumentRouting
 ms.topic: how-to

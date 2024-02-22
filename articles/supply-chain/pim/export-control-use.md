@@ -1,20 +1,20 @@
 ---
-title: Work with advanced export control for products and sales orders
-description: Learn how to work with advanced export control for products and sales orders.
+title: Work with advanced export control for products, sales orders, and quotations
+description: Learn how to work with advanced export control for products and sales orders, and sales quotations.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended
 ms.topic: overview
-ms.date: 08/29/2023
+ms.date: 02/15/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Work with advanced export control for products and sales orders
+# Work with advanced export control for products, sales orders, and sales quotations
 
-The advanced export control feature lets you apply export control rules to sales orders. Individual jurisdictions can be enabled or disabled for each legal entity (company). Therefore, each company can have different export control behaviors and rules.
+The advanced export control feature lets you apply export control rules to sales orders and sales quotations. Individual jurisdictions can be enabled or disabled for each legal entity (company). Therefore, each company can have different export control behaviors and rules.
 
 ## Set up jurisdictions, codes, restrictions, exceptions, and licenses
 
@@ -82,3 +82,7 @@ During confirmation and similar posting steps, the system tracks the history of 
 Licenses from the sales order header can be overridden on the sales order lines. In this way, different lines can be related to different licenses. You can also override the export control check at the line level. In this case, the export control check is still performed and tracked, but failures don't block the document processing. The user who edited the override information is automatically tracked on the record. This information can be audited by using the standard [logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md) functionality for finance and operations apps.
 
 [<img src="media/export-control-sales-order-line.png" alt="Export control settings for sales order lines." title="Export control settings for sales order lines" width="720" />](media/export-control-sales-order-line.png#lightbox)
+
+## Checking and enforcing export control rules for sales quotations
+
+Advanced export control functionality works similarly for sales quotations as it does for sales orders. See the previous section for guidelines.

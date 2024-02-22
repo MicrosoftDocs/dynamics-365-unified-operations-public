@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.39 (April 2024)
+          href: get-started/whats-new-scm-10-0-39.md
         - name: Supply Chain Management 10.0.38 (February 2024)
           href: get-started/whats-new-scm-10-0-38.md
         - name: Supply Chain Management 10.0.37 (November 2023)
@@ -248,8 +250,6 @@
                 href: ../finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/supply-chain
               - name: Set up Regulatory configuration services (RCS)
                 href: ../finance/localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/supply-chain
-              - name: Power platform plug-in admin reference
-                href: ../finance/localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/supply-chain   
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
@@ -334,10 +334,6 @@
               href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing
               href: ../finance/localizations/e-invoicing-setup.md?context=/dynamics365/context/supply-chain
-            - name: Power Platform plug-in admin reference
-              href: ../finance/localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/supply-chain
-            - name: Electronic Invoicing FAQ
-              href: ../finance/localizations/global/e-invoicing-faq.md?context=/dynamics365/context/supply-chain
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
@@ -1805,6 +1801,8 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Unified developer experience for planning optimization (preview)
+          href: supply-chain-dev/planning-optimization-dev.md
         - name: Planning Optimization extensibility
           href: supply-chain-dev/extensibility.md
         - name: View plan history and planning logs
@@ -2537,7 +2535,7 @@
             href: pim/export-control-overview.md
           - name: Enable and configure advanced export control
             href: pim/export-control-configure.md
-          - name: Work with advanced export control for products and sales orders
+          - name: Work with advanced export control for products, sales orders, and quotations
             href: pim/export-control-use.md
           - name: Extend export control sales order functionality
             href: pim/export-control-extend-sales-orders.md
@@ -3529,7 +3527,7 @@
         href: landed-cost/landed-cost-vs-tms.md
       - name: Set up and configure the Landed cost module
         items:
-        - name: Turn on the Landed cost module and related features for your system (preview)
+        - name: Turn on the Landed cost module and related features for your system
           href: landed-cost/landed-cost-enable.md
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md
@@ -3813,11 +3811,11 @@
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
             href: warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Mass deploy the mobile app with user-based authentication
+            href: warehousing/warehouse-app-intune-user-based.md
           - name: Service-based authentication
             href: warehousing/warehouse-app-authenticate-service-based.md
-          - name: Mass deploy the mobile app for user-based authentication
-            href: warehousing/warehouse-app-intune-user-based.md
-          - name: Mass deploy the mobile app for service-based authentication
+          - name: Mass deploy the mobile app with service-based authentication
             href: warehousing/warehouse-app-intune.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
             href: warehousing/warehouse-app-company-logo.md
@@ -3843,6 +3841,8 @@
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for moving items in the warehouse
             href: warehousing/mobile-device-movement-menu.md
+          - name: Set up a mobile device menu item for moving items by template
+            href: warehousing/mobile-device-move-by-template-menu.md
           - name: Set up a mobile device menu item for completing work in a purchase order
             href: warehousing/tasks/set-up-mobile-device-menu.md
           - name: Set up a mobile device menu item to register received items
@@ -3909,6 +3909,8 @@
             href: warehousing/wave-allocation-method.md
           - name: Schedule work creation during wave
             href: warehousing/configure-wave-schedule-work-creation.md
+          - name: Automatic rewaving of nonallocated shipment lines
+            href: warehousing/auto-rewave-shipments.md
           - name: Wave execution notifications
             href: warehousing/wave-execution-notifications.md
           - name: Wave label printing

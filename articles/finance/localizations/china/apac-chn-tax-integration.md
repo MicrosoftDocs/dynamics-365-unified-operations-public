@@ -12,7 +12,6 @@ ms.search.region: China (PRC)
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 265264
 ms.assetid: e5dbbbe1-935f-4fb4-a014-447916051628
 ms.search.form: CustParameters, VATInvoiceDescTable_CN, TaxProfileTable_CN
 ---

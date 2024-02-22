@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 270754
 ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
 ---
 
