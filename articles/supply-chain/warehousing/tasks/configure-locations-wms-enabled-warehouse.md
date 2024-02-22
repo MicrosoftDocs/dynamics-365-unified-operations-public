@@ -4,7 +4,7 @@ description: This guide shows you how to configure the location setup for a new 
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup   
+ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup, WMSBlockingCause   
 ms.topic: how-to
 ms.date: 12/01/2022
 audience: Application User
@@ -139,7 +139,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 22. In the **To number** field, enter a number.
 23. Select Create.
 
-## Create locations manually
+## <a name="create-locations-manually"></a>Create locations manually
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Locations**. Manually creation of locations within a warehouse can easily be done. The location name and the location profile ID are mandatory values.
 2. Select **New**.
@@ -176,5 +176,14 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 5. In the **Location** field, select the drop-down button to open the lookup.
 6. In the list, select the link in the selected row.
 7. Close the page.
+
+## <a name="define-location-blocking-causes"></a>Define location blocking causes
+
+1.	Go to **Warehouse management \> Setup \> Inventory \> Blocking causes**. Each [location](#create-locations-manually) can have an _Input blocked_ and _Output blocked_ cause that can affect the warehouse management business processes and determine if a specific location can be used for input and/or output. One possible reason to block a location could be maintenance.
+2. Select **New**.
+3. In the **Cause of blocking** field, type an Id value.
+4. In the **Description** field, type a description.
+5. In the **Policy** field, select _Do not use warehouse work_ in case you do not want the locations with blocking causes blocked as part of warehouse work processing. Select _Also use for warehouse work_ in case you want the blocking cause also be used when processing warehouse work.
+6. Close the page.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
