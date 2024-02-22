@@ -34,8 +34,8 @@ As of version 10.0.39 of Finance you can generate Italian Sales tax books in leg
 
 | **Field**        | **Description**                                                    | **Page > FastTab** |
 |------------------|--------------------------------------------------------------------|--------------------|
-| **Fiscal Code**  | Enter the fiscal code from the legal entity registration in Italy. | Legal entities > Registration numbers |
 | **Tax registration number** | Enter the tax registration number for the legal entity in Italy |  Legal entities > Tax registration <br> See *Note* above in this section for reference on setup in **Multiple VAT registration numbers** scenario. |
+| **Fiscal Code**  | Enter the fiscal code from the legal entity registration in Italy. | Legal entities > Registration numbers |
 
 ### Customers fiscal code and tax registration number
 
