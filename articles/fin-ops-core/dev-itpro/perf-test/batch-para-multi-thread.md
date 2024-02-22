@@ -79,7 +79,7 @@ The posting journal process has the following changes when using the top picking
      - Each batch task continues posting journals until all journals are posted from the posting queue
 
 
-### Related class and table 
+### Related classes and tables 
 LedgerJournalMultiPost: 
   - Add selected journal to top picking queue
   - Schedule limit number of batch tasks for the top picking batch post
