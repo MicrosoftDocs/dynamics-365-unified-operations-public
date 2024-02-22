@@ -2,7 +2,7 @@
 title: Pre-extended columns in the channel database
 description: This article explains how the pre-extended columns in the channel database are consumed for extensions.
 author: josaw1
-ms.date: 01/12/2023
+ms.date: 02/22/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
