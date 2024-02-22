@@ -23,7 +23,7 @@ ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 
 This article explains how to configure system parameters to report Sales tax books for legal entities in Italy.
 
-As of version 10.0.39 of Finance you can generate Italian Sales tax books in legal entities with multiple VAT registration numbers and primary address outside of Italy. For more information, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
+As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** functionality supports reporting of Italian sales tax book in [Electronic reporting (ER) tool](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) and accomodates reporting for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
 
 ## Set up a company, vendors and customers fiscal code and tax registration number
 
