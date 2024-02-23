@@ -20,6 +20,8 @@ This article describes how administrators can prepare your Microsoft Dynamics 36
 
 ## Prerequisites
 
+TEST
+
 Before you can start to onboard the Approvals Management mobile app, you must meet the requirements that are outlined in this section.
 
 ### System requirements
