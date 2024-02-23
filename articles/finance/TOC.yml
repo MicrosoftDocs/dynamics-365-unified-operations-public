@@ -1648,7 +1648,7 @@
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
             - name: Electronic Invoicing service ISV last-mile connector
               href: localizations/global/e-invoicing-isv-connector.md
-          - name: Work with Electronic invoicing in Finance and Supply Chain Management
+          - name: Work with Electronic invoicing
             items: 
             - name: Submit electronic documents
               href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
