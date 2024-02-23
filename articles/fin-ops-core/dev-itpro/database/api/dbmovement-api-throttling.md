@@ -63,7 +63,7 @@ You may review the activity on an environment in the **History** view in Lifecyc
 #### If the limit is reached via API, are manual operations still possible via Lifecycle Services and if yes how many?
 Only API operations are throttled. You can perform as many manual operations as time allows in Lifecycle Services. Keep in mind that manual operations are included in throttling limits for service level protection.
 
-#### Is the throttling a maximum of three operations for the entire Lifecycle Services project or customer tenant?  Or, is it per environment?
+#### Is the throttling a maximum of three operations for the entire Lifecycle Services project or customer tenant? Or, is it per environment?
 The throttling limit is per environment (three requests per environment per 24 hours).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
