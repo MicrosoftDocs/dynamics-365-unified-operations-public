@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/19/2023
+ms.date: 02/24/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -30,6 +30,13 @@ To use Demand planning with Supply Chain Management, you must be running one of 
 - Supply Chain Management version 10.0.36, build 10.0.1695.83
 - Supply Chain Management version 10.0.37, build 10.0.1725.60
 - Supply Chain Management version 10.0.38 (any build) or later
+
+> [!IMPORTANT]
+> **The Demand planning app is discontinuing support for Supply Chain Management "Cloud hosted" environments.**
+>
+> Demand planning app support for Supply Chain Management environments of type "Cloud hosted" will be discontinued as of February 28, 2024. After that date, you will no longer be able to import, export, or synchronize data between the Demand planning app and Supply Chain Management environments of this type.
+>
+> To continue using the Demand planning app, you must switch to a Supply Chain Management environment of type "Tier-2" or above or set up a [unified development environment](/power-platform/developer/unified-experience/finance-operations-dev-overview). You must then create new import and export profiles in your Demand planning app and configure them to connect to your new Supply Chain Management environment.
 
 ## Install the Demand planning app in Power Platform admin center
 
