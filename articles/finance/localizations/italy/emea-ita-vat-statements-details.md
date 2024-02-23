@@ -53,9 +53,9 @@ In some cases, the <strong>Italian sales tax book</strong> field is set automati
 For vouchers to follow the number sequences of the related invoices and credit notes, you must select the <strong>Reuse numbers</strong> check box when you define the number sequences for those invoices and credit notes. You can find this check box on the <strong>Number sequences</strong> tab of the following pages:
 
 <ul>
-<li>Accounts receivable parameters</li>
-<li>Accounts payable parameters</li>
-<li>Project management and accounting parameters</li>
+<li><strong>Accounts receivable parameters</strong></li>
+<li><strong>Accounts payable parameters</strong></li>
+<li><strong>Project management and accounting parameters</strong></li>
 </ul>
 
 For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.
