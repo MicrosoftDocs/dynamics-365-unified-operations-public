@@ -67,6 +67,7 @@ Add-on sandbox environments that customers purchase to use in Lifecycle Services
 To learn the core concepts of Power Platform Integration and view a detailed list of supported scenarios, see [Environment lifecycle operations - Core concepts](./environment-lifecycle-core-concepts.md).
 
 ## Power Platform connection isn't reversible
+
 Note that connecting, or linking as it is also referred, a finance and operations apps environment to a Microsoft Dataverse instance isn't reversible.  The integration between the two systems is done via the infrastructure and disconnecting them would result in data loss.  If you wish to delete the Microsoft Dataverse instance, you may follow the guide - [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md).
 
 ## Troubleshooting the setup
