@@ -35,39 +35,33 @@ As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** f
 
 Before you begin, you must [Configure system parameters to report Sales tax books for Italy](emea-ita-vat-statements-details.md).
 
-### Sales tax settlement period
-
-<td>For a <strong>Sales tax settlement period</strong> that's set up and used for sales tax accounting, specify the parameters, <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> to determine whether zero and reverse transactions must be included into sales tax books by default. Values from these parameters are used as default values during the sales tax settlement process. For each period interval of the sales tax settlement, these parameters can be changed specifically during the sales tax settlement process. If the sales tax settlement process is run in batch, Finance applies the default parameter values of <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> parameters from the <strong>Sales tax settlement period</strong> setup. You can see the values of the <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> parameters that were used for each closed period interval of sales tax settlement period on the <strong>Sales tax payment</strong> page. You can't change the values of the parameters <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> for the closed period interval of the sales tax settlement period. Including zero and reverse transactions to the sales tax books may impact the page numbering in the report.</td>
-</tr>
-</tbody>
-</table>
-
 ## Set up sales tax books
 
-Sales tax books are used for sales tax reporting. To set up Italian sales tax books, click **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Italian sales tax books**. The following table describes the fields that are available on the **Italian sales tax books** page.
+To set up Italian sales tax books, go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Italian sales tax books**. 
+The following table describes the fields that are available on the **Italian sales tax books** page.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Field</th>
-<th>Description</th>
+<th><strong>Field</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Sales tax book</td>
+<td><strong>Sales tax book</strong></td>
 <td>Enter the ID of the sales tax book.</td>
 </tr>
 <tr class="even">
-<td>Name</td>
+<td><strong>Name</strong></td>
 <td>Enter a description of the sales tax book.</td>
 </tr>
 <tr class="odd">
-<td>Sales tax book type</td>
+<td><strong>Sales tax book type</strong></td>
 <td>Select the nature of the operations that will be performed through the sales tax book sections that you will attach to the sales tax book. The following values are available:
 <ul>
 <li><strong>Purchase</strong> – Select this value for purchase invoices and credit notes.</li>
@@ -76,23 +70,31 @@ Sales tax books are used for sales tax reporting. To set up Italian sales tax bo
 </ul></td>
 </tr>
 <tr class="even">
-<td>Settlement period</td>
+<td><strong>Settlement period</strong></td>
 <td>Select an existing sales tax settlement period. When a sales tax book is printed, if the <strong>Update</strong> check box is selected on the <strong>Sales tax payment</strong> page, the date in the <strong>From date</strong> field is compared to the selected settlement period. The settlement period is also used to identify which sales tax books and sales tax book sections must be closed when a sales tax settlement is updated for a settlement period.</td>
 </tr>
 <tr class="odd">
-<td>Closed to</td>
+<td><strong>Closed to</strong></td>
 <td>The latest closing date from the related sales tax book sections that belong to the selected sales tax book.</td>
 </tr>
 <tr class="even">
-<td>EU sales</td>
+<td><strong>EU sales</strong></td>
 <td>Select a sales tax book of the <strong>Sales</strong> type, and attach it to the current sales tax book of the <strong>Purchase</strong> type. This field is used if the selected sales tax book must include European Union (EU) purchase transactions from the current book on sales tax reports. This field is unavailable for sales tax books of the <strong>Sales</strong> and <strong>Not included</strong> types.</td>
 </tr>
 <tr class="odd">
-<td>ATECOFIN Code</td>
+<td><strong>ATECOFIN Code</strong></td>
 <td>Select the tax code for reporting.</td>
 </tr>
+<tr class="odd">
+<td><strong>Include reverse transactions</strong></td>
+<td>Select this option to include reverse documents in Sales tax books report for this book.</td>
+</tr>
+<tr class="odd">
+<td><strong>Include zero lines</strong></td>
+<td>Select this option to include documents with zero amount in Sales tax books report for this book.</td>
+</tr>
 <tr class="even">
-<td>Print summary and payment</td>
+<td><strong>Print summary and payment</strong></td>
 <td>Select this option to print the summary and payment report. This field is available only for sales tax books of the <strong>Sales</strong> type.</td>
 </tr>
 </tbody>
