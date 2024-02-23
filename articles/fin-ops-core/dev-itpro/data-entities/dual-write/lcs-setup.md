@@ -2,7 +2,7 @@
 title: Dual-write setup from Lifecycle Services
 description: This article explains how to set up a dual-write connection from Microsoft Dynamics 365 Lifecycle Services.
 author: laneswenka
-ms.date: 02/16/2024
+ms.date: 02/23/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -98,7 +98,7 @@ If you receive this warning, try one of the following solutions:
 - If your Lifecycle Services environment hasn't ever been set up for Power Platform integration, you can connect to the Dataverse instance that is configured in dual-write by following the instructions in this article.
 - If your Lifecycle Services environment is already set up for Power Platform integration, you should reset your dual-write connection to the one specified by Lifecycle Services using the [Reset dual-write connections](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/reset).
 
-In the past a manual support ticket option was available, but that was before option 1 above existed.  Microsoft no longer supports manual relinking requests via Support tickets.
+In the past a manual support ticket option was available, but that was before option 1 above existed. Microsoft no longer supports manual relinking requests via Support tickets.
 
 ### Incorrect permissions on service principal
 
