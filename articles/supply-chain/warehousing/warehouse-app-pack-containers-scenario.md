@@ -455,6 +455,9 @@ Your new mobile device menu items are now ready to be added to the mobile device
 1. In the list pane on the left, select the *Main* menu.
 1. In the **Available menus and menu items** list, in the **Menus** section, select your new *Inquire* menu. Then select the **Add** button (right arrow) to move that item into the **Menu structure** list.
 
+> [!TIP]
+> You can also adjust which menu items are visible to the warehouse workers by, when being in page edit mode, right clicking on them in the **Menu structure** list and selecting *Show* or *Hide*.
+
 ## Configure detours in your mobile device steps
 
 To complete the setup, you must now use the detour configuration on the **Mobile device steps** page to add the five new mobile device menu items to existing menu item flows.

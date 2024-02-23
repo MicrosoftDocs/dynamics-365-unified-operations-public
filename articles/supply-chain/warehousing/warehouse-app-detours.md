@@ -45,6 +45,9 @@ Use the following procedure to set up a detour from a menu-specific override.
 1. Find the combination of **Step ID** and **Menu item name** values that you want to edit, and then select the value in the **Step ID** column.
 1. On the page that appears, on the **Available detours (menu items)** FastTab, you can specify the menu item that should act as a detour. You can also select which field values from the main task should automatically be copied to and from the detour. For examples that show how to use these settings, see the scenarios later in this article.
 
+> [!NOTE]
+> If you want to use detour menu items as buttons on the Warehouse management mobile app pages, they need to be part of a mobile menu that the warehouse worker has access to. Otherwise, they won't appear on the Warehouse management mobile app. You can find out how to show or hide the detour menu items [here](configure-mobile-devices-warehouse.md#mobile-device-menu).
+
 ## <a name="scenario-1"></a>Sample scenario 1: Sales picking where a location inquiry acts as a detour
 
 This scenario shows how to configure a location inquiry as a detour in a worker-directed sales picking task flow. This detour will enable workers to look up all the license plates in the location that they are picking from and pick the license plate that they want to use to complete the pick. This type of detour might be useful if the bar code is damaged and therefore unreadable by the scanner device. Alternatively, it might be useful if a worker must learn what is actually on hand in the system. Note that this scenario works only if you're picking from license plate–controlled locations.
