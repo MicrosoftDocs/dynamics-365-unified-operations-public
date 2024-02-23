@@ -77,6 +77,11 @@ To activate Electronic invoicing in Globalization Studio, enable the following f
 - Electronic reporting globalization feature JSON import/export
 - Dataverse repository
 
+> [!NOTE]
+> The **E-invoicing service workspace designer** feature also activates a batch job that starts required data transfer from RCS related data sources to Dynamics 365 Finance database. The process will be run in background and requires some time to complete. You can potentially encounter the following error message that indicates that the process of data transfering is not complete yet.
+
+=========  TO DO: insert the snippet of the error-message ==================
+
 ## Configure the Azure resources for Electronic invoicing
 
 Set up the Azure resources that Electronic invoicing requires to do its work. For more information, see [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md).
