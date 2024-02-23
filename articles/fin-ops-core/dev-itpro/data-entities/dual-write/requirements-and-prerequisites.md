@@ -1,8 +1,8 @@
 ---
 title: System requirements and prerequisites
-description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
+description: This article describes the system requirements and prerequisites that must be in place before you can enable Dual-write for finance and operations apps.
 author: ericcolvinmorgan
-ms.date: 01/31/2024
+ms.date: 02/23/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
@@ -22,7 +22,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Verify requirements and grant access
 
-In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the automation built into that process should handle the set up steps documented on this page. If you're receiving errors like the following, these errors indicate failures occurred during the Lifecycle Services provisioning process:
+In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the automation built into that process should handle the setup steps documented on this page. If you're receiving errors like the following, these errors indicate failures occurred during the Lifecycle Services provisioning process:
 
 | Error code | Error message |
 | --- | --- |
@@ -35,7 +35,7 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
 1. Grant Dataverse access so that it can connect to finance and operations apps.
 
-    1. Open your instance of the finance and operations app, search and navigate to Microsoft Entra ID applications.
+    1. Open your instance of the finance and operations app, search, and navigate to Microsoft Entra ID applications.
     2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that is used to connect from Dataverse to the finance and operations app.
     3. On the new row for the client, select an application user that is enabled and has the appropriate privileges for Dual-write data management.
     4. Repeat the previous three steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
@@ -120,6 +120,6 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
 ## Next steps
 
-[Enable table maps for dual-write](enable-entity-map.md)
+[Enable table maps for Dual-write](enable-entity-map.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
