@@ -68,12 +68,6 @@ If you derive a configuration from the configuration that's mentioned in the pre
 
 To set up the rules to process responses from the Electronic Invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md).
 
-## Inactivate legacy Electronic invoicing functionality
-
-To inactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
-
-When you enable a feature in the list, the legacy functionality is inactivated for the corresponding country or region and feature name.
-
 ## Create a Key Vault reference
 
 1. On the **Electronic document parameters** page, on the **Electronic Invoicing** tab, on the **Key Vault settings** FastTab, select **Key Vault parameters**.
@@ -120,3 +114,9 @@ If your scenarios require number sequences (for example, in file names), you can
 To create a number sequence, select **New** on the **Number sequences** FastTab. Then enter a name and description.
 
 To delete a number sequence if it's no longer used, select **Delete**.
+
+## Inactivate legacy Electronic invoicing functionality
+
+To inactivate old (legacy) ER functionality for some features, and to activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
+
+When you enable a feature in the list, the legacy functionality is inactivated for the corresponding country or region and feature name.
