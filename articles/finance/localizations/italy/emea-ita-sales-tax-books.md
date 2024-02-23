@@ -33,60 +33,10 @@ As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** f
 
 ## Prerequisites
 
-This section describes the prerequisites necessary to configure and report Italian sales tax books.
+Before you begin, you must [Configure system parameters to report Sales tax books for Italy](emea-ita-vat-statements-details.md).
 
-### Address of the legal entity
+### Sales tax settlement period
 
-The primary address of the legal entity must be in Italy. (Click **Organization administration** > **Organizations** > **Legal entities** > **Addresses** > **Country/region**.)
-
-As of 10.0.39 version of Dynamics 365 Finance, ER format of Italian sales tax book can be generated from a legal entity with primary address outside of Italy. Address in Italy must be specified  
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Category</th>
-<th>Prerequisite</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Setup:</strong> Legal entity</td>
-<td>The primary address of the legal entity must be in Italy. (Click <strong>Organization administration</strong> &gt; <strong>Organizations</strong> &gt; <strong>Legal entities</strong> &gt; <strong>Addresses</strong> &gt; <strong>Country/region</strong>.)</td>
-</tr>
-<tr class="even">
-<td><strong>Setup:</strong> Number sequences</td>
-<td>Set up as many number sequences as you require to cover all the required types of sales tax transactions. (Click <strong>Organization administration</strong> &gt; <strong>Number sequences</strong> &gt; <strong>Number sequences</strong>.) All these number sequences must be continuous and must have <strong>Company</strong> scope.</td>
-</tr>
-<tr class="odd">
-<td><strong>Setup:</strong> Journal names</td>
-<td>Set up the required journal names. (Click <strong>General Ledger</strong> &gt; <strong>Journal setup</strong> &gt; <strong>Journal names</strong> or <strong>Project management and accounting</strong> &gt; <strong>Setup</strong> &gt; <strong>Journals</strong> &gt; <strong>Journal names</strong>.) On the <strong>General</strong> FastTab, in the <strong>Sales tax</strong> section, in the <strong>Italian sales tax book</strong> field, specify one of the following values:
-<ul>
-<li><strong>Not included</strong> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community.</li>
-<li><strong>Purchase</strong> – Select this value for purchase invoices and credit notes.</li>
-<li><strong>Sales</strong> – Select this value for sales invoices and credit notes.</li>
-<li><strong>Empty</strong> – Select this value for all other types of transactions.</li>
-</ul>
-In some cases, the <strong>Italian sales tax book</strong> field is set automatically, based on the <strong>Journal type</strong> value. For example, if the <strong>Journal type</strong> field is set to <strong>Invoice register</strong>, the <strong>Italian sales tax book</strong> field is set to <strong>Purchase</strong> by default.</td>
-</tr>
-<tr class="even">
-<td><strong>Setup:</strong> Module parameters</td>
-<td>For vouchers to follow the number sequences of the related invoices and credit notes, you must select the <strong>Reuse numbers</strong> check box when you define the number sequences for those invoices and credit notes. You can find this check box on the <strong>Number sequences</strong> tab of the following pages:
-<ul>
-<li>Accounts receivable parameters</li>
-<li>Accounts payable parameters</li>
-<li>Project management and accounting parameters</li>
-</ul>
-For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.
-
-In the Italian localization, corrections to the Italian sales tax payment report for an already settled sales tax period are not supported. So on the <strong>General ledger parameters</strong> page, on the <strong>Sales tax</strong> tab, set the Special report **Include corrections** option to **NO**.
-</td>
-</tr>
-<tr class="odd">
-<td><strong>Setup:</strong> Sales tax settlement period</td>
 <td>For a <strong>Sales tax settlement period</strong> that's set up and used for sales tax accounting, specify the parameters, <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> to determine whether zero and reverse transactions must be included into sales tax books by default. Values from these parameters are used as default values during the sales tax settlement process. For each period interval of the sales tax settlement, these parameters can be changed specifically during the sales tax settlement process. If the sales tax settlement process is run in batch, Finance applies the default parameter values of <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> parameters from the <strong>Sales tax settlement period</strong> setup. You can see the values of the <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> parameters that were used for each closed period interval of sales tax settlement period on the <strong>Sales tax payment</strong> page. You can't change the values of the parameters <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> for the closed period interval of the sales tax settlement period. Including zero and reverse transactions to the sales tax books may impact the page numbering in the report.</td>
 </tr>
 </tbody>
