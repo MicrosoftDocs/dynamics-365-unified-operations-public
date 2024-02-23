@@ -21,14 +21,13 @@ ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, Ta
 
 The article describes how to set up and use Italian sales tax books.
 
-According to Italian legislation, every value-added tax (VAT) transaction must belong to a tax book (*Libro IVA*) that will be used for tax reporting. 
+According to Italian legislation, every value-added tax (VAT) transaction must be recorded in a tax book (*Libro IVA*) that will be used for tax reporting. 
 To fulfill these legislative requirements, Dynamics 365 Finance implements **Italian sales tax books** functionality. 
-Sales tax books can be of different types. 
-You must specify the sales tax book type to help guarantee that all sales and purchase transactions are included on the **Sales tax payment** report. 
-You can keep as many sales tax books of the **Sales** and **Purchase** types as you require. 
-Every tax book can be divided into multiple tax book sections (*Sezionale IVA*). 
-All sales tax transactions must be sequentially numbered (without gaps) and ordered by posting date. 
-A tax book section is equivalent to a number sequence for the Italian sales tax voucher number (*Protocollo IVA*) that must always be applied during posting to help guarantee chronological order by posting date.
+Sales tax books can be of **Purchase** or **Sales** types. 
+You can keep as many sales tax books as you require. 
+Every tax book is divided into multiple tax book sections (*Sezionale IVA*). 
+All sales tax transactions must be sequentially numbered (without gaps) and ordered by posting date within each sales tax book section. 
+Tax transaction voucher in Finance is equivalent to the Italian *Protocollo IVA* that must always be applied during posting to help guarantee chronological order by posting date.
 
 As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** functionality supports reporting of Italian sales tax book in [Electronic reporting (ER) tool](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) and accomodates reporting for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
 
