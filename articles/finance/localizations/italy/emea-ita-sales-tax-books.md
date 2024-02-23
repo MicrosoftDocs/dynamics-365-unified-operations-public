@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, TaxBookSection, TaxBookSectionLookupVoucherSeries, TaxBookStatus, TaxBookTable, VendParameters, LedgerParameters
 ---
 
-# Italian sales tax books
+# Configure and report Italian sales tax books
 
 [!include [banner](../../includes/banner.md)]
 
@@ -32,7 +32,14 @@ Tax transaction voucher in Finance is equivalent to the Italian *Protocollo IVA*
 As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** functionality supports reporting of Italian sales tax book in [Electronic reporting (ER) tool](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) and accomodates reporting for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
 
 ## Prerequisites
-The following table shows the prerequisites that must be in place before you start.
+
+This section describes the prerequisites necessary to configure and report Italian sales tax books.
+
+### Address of the legal entity
+
+The primary address of the legal entity must be in Italy. (Click **Organization administration** > **Organizations** > **Legal entities** > **Addresses** > **Country/region**.)
+
+As of 10.0.39 version of Dynamics 365 Finance, ER format of Italian sales tax book can be generated from a legal entity with primary address outside of Italy. Address in Italy must be specified  
 
 <table>
 <colgroup>
