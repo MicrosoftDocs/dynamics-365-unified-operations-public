@@ -2,7 +2,7 @@
 title: Set up a local development environment
 description: This article explains how to set up a local development environment for the Commerce Scale Unit (CSU) and point of Sale (POS) development in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/31/2024
+ms.date: 02/23/2024
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -77,7 +77,7 @@ IIS mode is a complete on-premises scale unit, where all the components match re
 Before you set up the self-hosted or IIS-hosted environment, complete the following prerequisites in this order:
 
 1. Install .NET Core SDK 6.0 for Windows x64 from [Download .NET Core 6.0](https://dotnet.microsoft.com/download/dotnet/6.0).
-2. Install ASP.NET Core Runtime 6.0.x Hosting Bundle (click  "Hosting Bundle" link, not "x64" nor "x86") for Windows from  [Download ASP.NET Core Runtime 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
+2. Install ASP.NET Core Runtime 6.0.x Hosting Bundle for Windows from [Download ASP.NET Core Runtime 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)(select **Hosting Bundle**, not **x64** or **x86**).
 3. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
 
     + Enable Mixed (SQL + Windows/Integrated) authentication.
