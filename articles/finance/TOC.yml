@@ -3078,7 +3078,7 @@
             items:
             - name: Configure system parameters to report Sales tax books
               href: localizations/italy/emea-ita-vat-statements-details.md
-            - name: Set up and report Sales tax books for Italy
+            - name: Configure and report Sales tax books for Italy
               href: localizations/italy/emea-ita-sales-tax-books.md
             - name: Sales tax settlement and numbering of pages in Sales tax books
               href: localizations/italy/emea-ita-vat-settlement.md
