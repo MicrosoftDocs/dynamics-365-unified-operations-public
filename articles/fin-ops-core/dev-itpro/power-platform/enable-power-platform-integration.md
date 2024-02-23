@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
-As part of the One Dynamics, One Platform effort, a growing number of customers get value out of integrating their finance and operations apps with Microsoft Dataverse and the Microsoft Power Platform ecosystem. Whether it is used to build low-code applications, or to fully integrate front-office and back-office processes and applications, the integration of these two systems is a common requirement for many customers.
+As part of the One Dynamics, One Platform effort, a growing number of customers get value out of integrating their finance and operations apps with Microsoft Dataverse and the Microsoft Power Platform ecosystem. Whether it's used to build low-code applications, or to fully integrate front-office and back-office processes and applications, the integration of these two systems is a common requirement for many customers.
 
 Power Platform Integration is a feature you can enable in Microsoft Dynamics Lifecycle Services. It lets administrators link their finance and operations environments with new or existing Microsoft Power Platform–based environments. 
 
@@ -60,7 +60,7 @@ When you purchase a license for any finance and operations app, such as Dynamics
 
 The same purchase of licenses entitles you to one self-service sandbox environment and production environment in Lifecycle Services. Because of this, an initial Power Platform environment can automatically be created for every finance and operations apps environment. Every initial environment in Power Platform admin center is without Dataverse. Therefore, it uses only 1 GB of database capacity to provision apps that are created by using Power Apps and flows that are created by using Power Automate. When you set up Power Platform integration, a Dataverse database is added to the same environment. This database often consumes 3 GB or more.
 
-Add on sandbox environments that customers purchase to use in Lifecycle Services do **not** entitle them to more Dataverse database capacity. Customers who require Power Platform integration capabilities should purchase add on Dataverse database storage. For more information about how to manage capacity in Power Platform admin center, see [Free up storage space](/power-platform/admin/free-storage-space).
+Add-on sandbox environments that customers purchase to use in Lifecycle Services do **not** entitle them to more Dataverse database capacity. Customers who require Power Platform integration capabilities should purchase add-on Dataverse database storage. For more information about how to manage capacity in Power Platform admin center, see [Free up storage space](/power-platform/admin/free-storage-space).
 
 ## Scenarios and core concepts
 
