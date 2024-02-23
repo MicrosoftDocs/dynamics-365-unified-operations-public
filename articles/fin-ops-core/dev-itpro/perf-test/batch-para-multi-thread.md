@@ -1,6 +1,6 @@
 ---
-title: Batch parallelism and multi-threading in Dynamics 365 finance and operations
-description: This article describes batch parallelism and multi-threading in Dynamics 365 finance and operations.
+title: Batch parallelism and multi-threading in Dynamics 365 finance and operations apps
+description: This article describes batch parallelism and multi-threading in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.date: 02/20/2024
 ms.topic: article
@@ -15,84 +15,82 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ---
 
-# Batch parallelism and multi-threading in Dynamics 365 finance and operations
+# Batch parallelism and multi-threading in Dynamics 365 finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the different approaches available to break large batch jobs into small fragments in Dynamics 365 finance and operations.
+This article describes the different approaches that are available for breaking large batch jobs into small fragments in Microsoft Dynamics 365 finance and operations apps.
 
-There are three approaches to break up large batch jobs:
-1. Individual task modeling
-2. Batch bundling
-3. Top picking pattern
+Three approaches can be used to break up large batch jobs:
 
-There are pros and cons to using each of these approaches:
-Individual task modeling pros: 
-   - Works well with a few work items of any type
-   - Simple to write
-   - Best fits to create dependency among the work items
-Cons: 
-  - When there's a large number of tasks, the extra overhead impedes performance due to the batch throttling mechanism and delays between batch task runs
-  - Negatively affects other batch jobs 
+- Individual task modeling
+- Batch bundling
+- Top picking pattern
 
-Batch bundling pros: 
-  - Works well for a simple even workload
-  - No need for a staging table, no extra maintenance by the application code
-  - Doesn't overpollute the batch table
-  - Bypasses batch throttling mechanism when bundle size is chosen properly
-Cons: 
-  - When distribution of the work isn't equal, performance degrades because batch tasks finish processing with differences in time
-  - In some cases, it's possible to distribute the workload evenly
- 
-Top picking pattern pros:
- - Bypasses batch throttling mechanism
- - Works well with an uneven workload
- - Not over-pollutes the batch table
-Cons:
- - An extra staging table needed to track the progress
- - When a large number of small work items need to be processed, tracking the work items through the staging table affects the performance
+Each approach has pros and cons, as described in the following table.
 
+| Approach | Pros | Cons |
+|---|---|---|
+| Individual task modeling | <ul><li>It works well with a few work items of any type.</li><li>It's simple to write.</li><li>It's the best fit for creating dependency among the work items.</li></ul> | <ul><li>When there's a large number of tasks, the extra overhead impedes performance because of the batch throttling mechanism and delays between batch task runs.</li><li>It negatively affects other batch jobs.</li></ul> |
+| Batch bundling | <ul><li>It works well with a simple, even workload.</li><li>There's no need for a staging table and no extra maintenance by the application code.</li><li>It doesn't over-pollute the batch table.</li><li>It bypasses the batch throttling mechanism when the appropriate bundle size is selected.</li></ul> | <ul><li>When the work isn't evenly distributed, performance degrades because batch tasks finish processing at different times.</li><li>In some cases, it's possible to distribute the workload evenly.</li></ul> |
+| Top picking pattern | <ul><li>It works well with an uneven workload.</li><li>It doesn't over-pollute the batch table.</li><li>It bypasses the batch throttling mechanism.</li></ul> | <ul><li>An extra staging table is needed to track the progress.</li><li>When a large number of small work items must be processed, tracking the work items through the staging table affects performance.</li></ul> |
 
-### Current journal batch processing 
+## Current journal batch processing
 
-Currently, journal batch posting uses a bundling mechanism to schedule batch tasks. This leads to an excessive number of bundles generated, especially if there's a high volume of journals to be posted. Each of these bundles creates a batch task and the concurrent execution of numerous batch tasks contributes to a high DTU load and affects overall performance. While it's possible to manually adjust the bundle size to a fixed value, this approach lacks flexibility to manage varying volumes of journal posting. 
+Currently, journal batch posting uses a bundling mechanism to schedule batch tasks. As a result, an excessive number of bundles is generated, especially if a high volume of journals must be posted. Each bundle creates a batch task, and the concurrent execution of numerous batch tasks contributes to a high database transaction unit (DTU) load and affects overall performance. Although the bundle size can be manually adjusted to a fixed value, this approach lacks the flexibility to manage varying volumes of journal posting.
 
-### Why use top picking pattern in journal batch posting? 
-The benefits of using top picking pattern in journal posting are: 
- - Reduced DTU usage: By limiting the number of batch tasks, DTU is decreased.
- - Optimal performance: Each task starts processing the next journal as soon as it completes the previous one. The workload of each task is balanced. The performance is optimized based on the number of batch tasks scheduled.
+## Benefits of using the top picking pattern in journal batch posting
 
-When posting global journals and the selected journals span multiple companies, the top picking feature isn't used to avoid creating an excessive number of tasks across multiple companies.
+Use of the top picking pattern in journal posting has the following benefits:
 
-### Changes in journal posting process when using top picking
+- **Reduced DTU use** – Because the number of batch tasks is limited, DTU use is reduced.
+- **Optimal performance** – Each task starts to process the next journal as soon as it completes the previous journal. The workload of each task is balanced. The performance is optimized based on the number of batch tasks that are scheduled.
 
-The posting journal process has the following changes when using the top picking pattern: 
- - Adding a journal:
-     - Every individual journal is added to the journal post job
-     - When journals are split into multiple journals, the split journals are added to the journal post job
- - Retrieving journal:
-     - The journal posting process retrieves one journal from the queue and posts
- - Delete record:
-     - Clean up all records older than 14 days
-     - Remove records from posting queue after retrieved the record
- - Posting:
-     - Each batch task continues posting journals until all journals are posted from the posting queue
+When global journals are posted, if the selected journals span multiple companies, the top picking pattern isn't used. This behavior prevents an excessive number of tasks from being created across multiple companies.
 
+### Changes in the journal posting process when the top picking pattern is used
 
-### Related classes and tables 
-LedgerJournalMultiPost: 
-  - Add selected journal to top picking queue
-  - Schedule limit number of batch tasks for the top picking batch post
-LedgerJournalBatchPost:
- - Retrieve a record from the top picking queue
- - Post one by one until the top picking queue is empty
-LedgerJournalPostQueue:
- - Top picking queue for journal posting
- - Each batch job has a unique GUID stored in this queue
-LedgerJournalPostTopPickingFeature:
- - Journal batch posting using top picking feature class
-LedgerJournalMultiCompanyPostController:
- - When posting journals starts from this controller, it's multi-company journal post and top picking won't be used.
+The journal posting process has the following changes when the top picking pattern is used:
 
+- Adding a journal:
 
+    - Every individual journal is added to the journal posting job.
+    - When journals are split into multiple journals, the split journals are added to the journal posting job.
 
+- Retrieving a journal:
+
+    - The journal posting process retrieves one journal from the queue and posts it.
+
+- Deleting a record:
+
+    - The journal posting process cleans up all records that are older than 14 days.
+    - The process removes records from the posting queue after the record is retrieved.
+
+- Posting:
+
+    - Each batch task continues to post journals until all journals are posted from the posting queue.
+
+### Related classes and tables
+
+- LedgerJournalMultiPost:
+
+    - Add the selected journal to the top picking queue.
+    - Schedule a limited number of batch tasks for the top picking batch post.
+
+- LedgerJournalBatchPost:
+
+    - Retrieve a record from the top picking queue.
+    - Post one record at a time until the top picking queue is empty.
+
+- LedgerJournalPostQueue:
+
+    - Use the top picking queue for journal posting.
+    - For each batch job, a globally unique identifier (GUID) is stored in this queue.
+
+- LedgerJournalPostTopPickingFeature:
+
+    - Journal batch posting uses the top picking feature class.
+
+- LedgerJournalMultiCompanyPostController:
+
+    - When journal posting starts from this controller, it's multicompany journal posting. Top picking isn't used.
