@@ -106,6 +106,8 @@ View the settlement period status and report if it refers to a year closing.
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**.
 2. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
+3. Select **Attach report to Sales tax book status** checkbox to attach generated Italian sales tax book ER to the **Sales tax book status** records.
+4. Select **Report in tax currency** checkbox to report amounts in Italian sales tax book ER in tax currency.
 
 In legal entities with address in Italy, on **Sales tax settlement periods** page there are following columns added for **Period intervals**.
 
