@@ -43,10 +43,27 @@ To register an environment, follow these steps.
 > [!NOTE]
 > Companies usually have several Finance or Supply Chain Management environments. These environments include production environments, user acceptance testing (UAT) environments, and development (sandbox) environments. You must complete the preceding procedure for all environments that you want to connect to Electronic invoicing.
 
-## Configure the Azure resources for Electronic invoicing
+## Enable Electronic invoicing integration
 
-Set up the Azure resources that Electronic invoicing requires to do its work. For more information, see [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md).
+To enable communication between Electronic invoicing and Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management, you must enable the **Electronic Invoicing integration** feature.
 
+1. In the **Feature management** workspace, on the **All** tab, search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
+2. Select the feature, and then select **Enable now**.
+
+## Service environment configuration
+
+> [!NOTE]
+> The steps described in the following chapter are required if **Regulatory Configuration Service** (RCS) experience was previously used for Invoicing Service configuration. If the Invoicing Service is being initially configured via **Globalization Studio** then the following chapter can be skipped.
+
+1. Determine one of the already deployed service environments. This will be the only environment to be configured in the Globalization Studio and then used by the Electronic Invoicing Service.
+2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+3. In the **Electronic invoicing** tab, in the **Service parameters** FastTab, in the **Environment** field, enter the name of the environment determind during the first step.
+
+![Screenshot that shows the Environment field for a service environment unavailable on the Electronic document parameters page.](../media/eInvoicing_service_environment_setup.png)
+
+> [!IMPORTANT]
+> After the **Globalization Studio** and **E-invoicing service workspace designer** features are enabled, the field for the service environment name becomes unavailable. Therefore, you need to finalize the name of the relevant service environment before you enable the new Globalization Studio experience.
+  
 ## Configure Globalization Studio for Electronic invoicing
 
 Make sure that the **Globalization Studio** workspace is available in the system. For more information, see [Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
@@ -59,6 +76,10 @@ To activate Electronic invoicing in Globalization Studio, enable the following f
 - Electronic reporting globalization feature Key Vault parameters
 - Electronic reporting globalization feature JSON import/export
 - Dataverse repository
+
+## Configure the Azure resources for Electronic invoicing
+
+Set up the Azure resources that Electronic invoicing requires to do its work. For more information, see [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md).
 
 ## Configure Globalization features
 
