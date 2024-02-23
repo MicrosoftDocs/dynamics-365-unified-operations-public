@@ -76,8 +76,9 @@ IIS mode is a complete on-premises scale unit, where all the components match re
 
 Before you set up the self-hosted or IIS-hosted environment, complete the following prerequisites in this order:
 
-1. Install .NET Core SDK 3.1 for Windows x64 from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1).
-2. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
+1. Install .NET Core SDK 6.0 for Windows x64 from [Download .NET Core 6.0](https://dotnet.microsoft.com/download/dotnet/6.0).
+2. Install ASP.NET Core Runtime 6.0.x Hosting Bundle (click  "Hosting Bundle" link, not "x64" nor "x86") for Windows from  [Download ASP.NET Core Runtime 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
+3. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
 
     + Enable Mixed (SQL + Windows/Integrated) authentication.
     + If no default instance of SQL Server is installed, the deployment of CSU will fail. An error message will indicate that an instance could not be found. If you want to use a named instance instead, edit the **Install.ps1** file by inserting the following line after line 78. (You can find this script in **Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Scripts** folder.)
@@ -88,19 +89,19 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
 
         (When you insert this line, substitute **PutYourSqlServerSeenInSSMSHere** with your SQL Server name.)
 
-3. Install NuGet.exe from [Available NuGet Distribution Versions](https://www.nuget.org/downloads). Copy it to some location, and then add update the **PATH** environment variable so that it points to that location.
-4. If MSBuild isn't installed, install the Visual Studio tools from [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/). Expand the **Tools for Visual Studio** section, and download and run **Build Tools for Visual Studio**. Don't specify any components. Select **Install** for the default installation.
+4. Install NuGet.exe from [Available NuGet Distribution Versions](https://www.nuget.org/downloads). Copy it to some location, and then add update the **PATH** environment variable so that it points to that location.
+5. If MSBuild isn't installed, install the Visual Studio tools from [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/). Expand the **Tools for Visual Studio** section, and download and run **Build Tools for Visual Studio**. Don't specify any components. Select **Install** for the default installation.
 
     + After Visual Studio tools are installed, open a Command Prompt window, and run the command `where msbuild`. If msbuild.exe isn't found, run the command from Visual Studio Developer Command Prompt.
     + After you find msbuild.exe, make sure that the **PATH** environment variable points to the folder that contains "msbuild" at the beginning of the path. The path should contain a version of msbuild.exe that is at least version 15. To determine the version number, run the command `msbuild /version`.
     + To verify that the **PATH** variable is set correctly, run the command `msbuild/version` from a regular command prompt. Don't use Developer Command Prompt. The command should print a version number of at least 15. After you've finished setting up MSBuild, restart Visual Studio Code.
 
-5. Install Microsoft.NET.Sdk by using the previously downloaded Visual Studio tools. Go to **Individual components**, enter **.NET SDK**, select the checkbox for the .NET SDK, and then select **Install**.
-6. Install the 64-bit version of Node.js from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
-7. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
-8. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the instructions in [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
-9. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
-10. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), select **Retail Self-service package** as the asset type, and find the file that ends with **Commerce Scale Unit (SEALED)**. Be sure to select the version for the release that you require (for example, version 10.0.22 or 10.0.23). Download the file, and put it in the **Download** folder in the Scale Unit GitHub repo that you cloned or downloaded in the previous step (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**).
+6. Install Microsoft.NET.Sdk by using the previously downloaded Visual Studio tools. Go to **Individual components**, enter **.NET SDK**, select the checkbox for the .NET SDK, and then select **Install**.
+7. Install the 64-bit version of Node.js from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
+8. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
+9. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the instructions in [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
+10. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
+11. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), select **Retail Self-service package** as the asset type, and find the file that ends with **Commerce Scale Unit (SEALED)**. Be sure to select the version for the release that you require (for example, version 10.0.22 or 10.0.23). Download the file, and put it in the **Download** folder in the Scale Unit GitHub repo that you cloned or downloaded in the previous step (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**).
 
 ## Additional prerequisites for IIS-hosted CSU
 
