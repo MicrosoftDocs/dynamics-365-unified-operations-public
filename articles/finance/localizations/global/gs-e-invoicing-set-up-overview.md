@@ -95,4 +95,4 @@ Different scenarios for processing electronic documents are implemented via Glob
 
 ## Configure Electronic invoicing parameters
 
-For the additional configuration steps related refer to [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
+For the additional configuration steps related to Electronic invoicing, refer to [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
