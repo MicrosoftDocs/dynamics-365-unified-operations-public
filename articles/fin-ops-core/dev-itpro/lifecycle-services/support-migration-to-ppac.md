@@ -19,12 +19,12 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-To consolidate related functionality from multiple sites and more effectively provide help content, the Lifecycle Services (LCS) Support page is being retired. Users will transition to the [Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/admin-documentation) (PPAC) for support request submission and viewing. 
+To consolidate related functionality from multiple sites and more effectively provide help content, the Lifecycle Services (LCS) Support page is being retired. Users will transition to the [Power Platform admin center](/power-platform/admin/admin-documentation) (PPAC) for support request submission and viewing. 
 <br/>
 
 ## Stages of LCS Support migration to PPAC 
 
-The LCS Support transition to PPAC will follow these stages. Each stage will last one month or until all required fixes are deployed to production, whichever is later. 
+The LCS Support transition to PPAC follows these stages. Each stage lasts one month or until all required fixes are deployed to production, whichever is later. 
 
 1. A banner with a redirect link is shown on the LCS Support page to allow users to test PPAC Help + Support behavior. 
 1. All support page entry points in LCS begin redirecting the user to PPAC Help + Support. 
@@ -47,26 +47,26 @@ When PPAC is accessed using the LCS support link, LCS project details are pass
 
 <br/>
 
-To access support functionality in PPAC, users must have one of the admin roles outlined [here](https://learn.microsoft.com/en-us/power-platform/admin/get-help-support#prerequisites). To provide users persistent ability to submit and view support requests without elevated admin privileges, customer administrators can grant them one of the following roles:
-- [Service Support Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#service-support-administrator)
-- [Helpdesk Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
+To access support functionality in PPAC, users must have one of the admin roles outlined [here](/power-platform/admin/get-help-support#prerequisites). To provide users persistent ability to submit and view support requests without elevated admin privileges, customer administrators can grant them one of the following roles:
+- [Service Support Administrator](/entra/identity/role-based-access-control/permissions-reference#service-support-administrator)
+- [Helpdesk Administrator](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
     - Note: In addition to support access, this role can reset passwords for nonadmin users.
 <br/>
 
 ## Role Change Advisory
 
-The LCS User role temporarily granted when a user enters PPAC from LCS is present to reduce the immediate impact of transitioning to PPAC. This role will be removed at a future date after the transition is complete. In the long term, customers are advised to assign appropriate admin roles to all users who require access to support functionality. Users with no admin roles other than LCS User will be shown a reminder to request permanent admin roles for their account.
+The LCS User role temporarily granted when a user enters PPAC from LCS is present to reduce the immediate impact of transitioning to PPAC. This role will be removed at a future date after the transition is complete. In the long term, customers are advised to assign appropriate admin roles to all users who require access to support functionality. Users with no admin roles other than LCS User are shown a reminder to request permanent admin roles for their account.
 
-A user who doesn't have a permanent admin role won't be able to access Help + Support in PPAC when they navigate directly to [Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/admin-documentation) without passing LCS project information.
+A user who doesn't have a permanent admin role can't access Help + Support in PPAC when they navigate directly to [Power Platform admin center](/power-platform/admin/admin-documentation) without passing LCS project information.
 <br/>
 
 ## Partner Scenarios
 
 In LCS, users from any tenant can be added to a customer’s project to allow them to create support tickets on the customer’s behalf and view tickets previously submitted from that project. These users often work on customer workloads while signed in under the partner tenant.
 
-In PPAC, partner users must be granted [delegated admin](https://learn.microsoft.com/en-us/power-platform/admin/for-partners-delegated-administrator?wt.mc_id=ppac_inproducthelp_ghp) permissions, allowing them to sign in under the customer’s tenant. In the long term, partners are advised to move to the delegated admin model when working on behalf of customers.
+In PPAC, partner users must be granted [delegated admin](/power-platform/admin/for-partners-delegated-administrator?wt.mc_id=ppac_inproducthelp_ghp) permissions, allowing them to sign in under the customer’s tenant. In the long term, partners are advised to move to the delegated admin model when working on behalf of customers.
 
-If a partner user creates a support ticket in PPAC while signed in with the partner tenant, customer users won't be able to view it unless they are signed in with LCS project context. Submitting support tickets as delegated admin links them to the customer tenant, providing correct visibility outside of the LCS project.
+If a partner user creates a support ticket in PPAC while signed in with the partner tenant, customer users can't view it unless they're signed in with LCS project context. Submitting support tickets as delegated admin links them to the customer tenant, providing correct visibility outside of the LCS project.
 <br/>
 
 ## Active Issue Submission
