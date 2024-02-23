@@ -46,7 +46,7 @@ Connecting, or linking as it's also referred, a finance and operations apps envi
 
 The following prerequisites must be in place before you set up the Microsoft Power Platform integration:
 
-- Make sure that at least 1 gigabyte (GB) of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup will fail. To view your capacity, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
+- Make sure that at least 1 gigabyte (GB) of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup fails. To view your capacity, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
 - Validate the governance policy of your tenant in Power Platform admin center. To do this validation, you must have either the **Global administrator** role or the **Power Platform administrator** role.
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -67,13 +67,13 @@ In Lifecycle Services, go to your sandbox or production environment, and select 
 
 :::image type="content" source="media/Scenario1_Step1.png" alt-text="Screenshot of the Power Platform Integration FastTab.":::
 
-A Power Platform environment ID should already be listed on the **Power Platform Integration** FastTab. The specified environment is the "initial Power Platform environment," which is the free placeholder environment that's created in Power Platform admin center for every sandbox and production environment in Lifecycle Services. There's a one-to-one (1:1) relationship, and it will eventually be the migration path to Power Platform admin center.
+A Power Platform environment ID should already be listed on the **Power Platform Integration** FastTab. The specified environment is the "initial Power Platform environment," which is the free placeholder environment that's created in Power Platform admin center for every sandbox and production environment in Lifecycle Services. There's a one-to-one (1:1) relationship, and it's eventually the migration path to Power Platform admin center.
 
 ## Step 2: Configure Dataverse by using a template
 
 In this step, you add Dataverse to your initial Power Platform environment. To enable this connection, leave the **Use a different Power Platform Environment** option set to **No** in the **Power Platform Integration Setup** dialog box. If you've already deployed a Dataverse instance with other Dynamics 365 applications, and you want to connect to it, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
 
-Select an available template. A Dataverse instance will be created, and several applications will be preinstalled, based on your requirements.
+Select an available template. A Dataverse instance is created, and several applications are preinstalled, based on your requirements.
 
 The following templates are available:
 
@@ -87,7 +87,7 @@ After you select a template, select the **Agree** checkbox, and then select **Se
 
 A dialog box appears and indicates that the action can't be reversed. The action of connecting finance and operations apps with Microsoft Power Platform and Dataverse is similar in nature to the action of applying a Microsoft platform update to your environment. After it's done, it can't be undone.
 
-Enter your name in the dialog box to proceed with the setup activity.
+To proceed with the setup activity, enter your name in the dialog box.
 
 :::image type="content" source="media/Scenario1_Step3.png" alt-text="Screenshot of the Setup Power Platform Integration - This can't be reversed dialog box.":::
 
