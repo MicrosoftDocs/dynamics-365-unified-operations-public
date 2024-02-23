@@ -5,7 +5,7 @@ title: Connect finance and operations apps with a new Microsoft Dataverse instan
 description: This article explains how to connect finance and operations apps with a new Microsoft Dataverse instance.
 ms.author: laswenka
 author: laneswenka
-ms.date: 05/02/2023
+ms.date: 02/23/2024
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -38,8 +38,9 @@ This article goes through the following steps.
 
 As an example of this scenario, a customer who has deployed a finance and operations apps environment wants to connect it to a new Dataverse environment. This operation unlocks popular features such as add-ins, dual-write, virtual entities, and out-of-box business events, so that the rich finance and operations apps data can be made available for low-code applications and services.
 
-## Power Platform connection is not reversible
-Note that connecting, or linking as it is also referred, a finance and operations apps environment to a Microsoft Dataverse instance is not reversible.  The integration between the two systems is done via the infrastructure and disconnecting them would result in data loss.  If you wish to delete the Microsoft Dataverse instance, you may follow the guide - [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md).
+## Power Platform connection isn't reversible
+
+Connecting, or linking as it's also referred, a finance and operations apps environment to a Microsoft Dataverse instance isn't reversible.  The integration between the two systems is done via the infrastructure and disconnecting them would result in data loss. If you wish to delete the Microsoft Dataverse instance, you may follow the guide - [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md).
 
 ## Prerequisites
 
@@ -88,7 +89,7 @@ A dialog box appears and indicates that the action can't be reversed. The action
 
 Enter your name in the dialog box to proceed with the setup activity.
 
-:::image type="content" source="media/Scenario1_Step3.png" alt-text="Screenshot of the Setup Power Platform Integration - This cannot be reversed dialog box.":::
+:::image type="content" source="media/Scenario1_Step3.png" alt-text="Screenshot of the Setup Power Platform Integration - This can't be reversed dialog box.":::
 
 ## Step 4: Wait for provisioning to be completed
 
