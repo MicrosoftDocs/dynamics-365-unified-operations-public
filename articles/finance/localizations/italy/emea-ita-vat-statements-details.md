@@ -25,6 +25,43 @@ This article explains how to configure system parameters to report Sales tax boo
 
 As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** functionality supports reporting of Italian sales tax book in [Electronic reporting (ER) tool](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) and accomodates reporting for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
 
+### Address of the legal entity
+
+The primary address of the legal entity must be in Italy. (Click **Organization administration** > **Organizations** > **Legal entities** > **Addresses** > **Country/region**.)
+
+As of 10.0.39 version of Dynamics 365 Finance, ER format of Italian sales tax book can be generated from a legal entity with primary address outside of Italy. In this scenario, you must set up address and tax registration number in Italy. For more information, see [Set up a VAT ID for a legal entity, customers, and vendors](../global/emea-multiple-vat-registration-numbers.md#set-up-a-vat-id-for-a-legal-entity-customers-and-vendors) section of [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) guidance.
+
+### Number sequences
+
+Set up as many number sequences as you require to cover all the required types of sales tax transactions. (Click <strong>Organization administration</strong> &gt; <strong>Number sequences</strong> &gt; <strong>Number sequences</strong>.) All these number sequences must be continuous and must have <strong>Company</strong> scope.
+
+### Journal names
+
+Set up the required journal names. (Click <strong>General Ledger</strong> &gt; <strong>Journal setup</strong> &gt; <strong>Journal names</strong> or <strong>Project management and accounting</strong> &gt; <strong>Setup</strong> &gt; <strong>Journals</strong> &gt; <strong>Journal names</strong>.) On the <strong>General</strong> FastTab, in the <strong>Sales tax</strong> section, in the <strong>Italian sales tax book</strong> field, specify one of the following values:
+
+<ul>
+<li><strong>Not included</strong> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community.</li>
+<li><strong>Purchase</strong> – Select this value for purchase invoices and credit notes.</li>
+<li><strong>Sales</strong> – Select this value for sales invoices and credit notes.</li>
+<li><strong>Empty</strong> – Select this value for all other types of transactions.</li>
+</ul>
+
+In some cases, the <strong>Italian sales tax book</strong> field is set automatically, based on the <strong>Journal type</strong> value. For example, if the <strong>Journal type</strong> field is set to <strong>Invoice register</strong>, the <strong>Italian sales tax book</strong> field is set to <strong>Purchase</strong> by default.
+
+### Module parameters
+
+For vouchers to follow the number sequences of the related invoices and credit notes, you must select the <strong>Reuse numbers</strong> check box when you define the number sequences for those invoices and credit notes. You can find this check box on the <strong>Number sequences</strong> tab of the following pages:
+
+<ul>
+<li>Accounts receivable parameters</li>
+<li>Accounts payable parameters</li>
+<li>Project management and accounting parameters</li>
+</ul>
+
+For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.
+
+In the Italian localization, corrections to the Italian sales tax payment report for an already settled sales tax period are not supported. So on the <strong>General ledger parameters</strong> page, on the <strong>Sales tax</strong> tab, set the Special report **Include corrections** option to **NO**.
+
 ## Set up a company, vendors and customers fiscal code and tax registration number
 
 > [!NOTE]
