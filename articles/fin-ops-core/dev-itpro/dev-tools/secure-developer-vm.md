@@ -91,7 +91,8 @@ Your one-box development environment can integrate with your Microsoft Entra ten
 
 - Import users.
 - Import Microsoft Entra ID groups.
-- Import Electronic reporting (ER) configurations.
+- Import Electronic reporting (ER) configurations. For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+
 
 To use these capabilities, you must configure certificate access to your tenant.
 
@@ -127,7 +128,6 @@ If you must use the previously mentioned capabilities in your one-box developmen
 
     2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
 
-For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
 ## Frequently asked questions
 
