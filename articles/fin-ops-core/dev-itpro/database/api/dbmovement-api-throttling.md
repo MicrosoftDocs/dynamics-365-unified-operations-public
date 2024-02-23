@@ -4,7 +4,7 @@
 title: Database movement API - Throttling
 description: This article provides an overview of throttling for the Database Movement application programming interface (API).
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 02/23/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -33,13 +33,14 @@ This article provides an overview of throttling for the Database Movement applic
 
 ## Rate limits
 
-To help maintain the reliability of the service and reduce costs, excessive calls to the Database Movement API are being throttled. Throttling helps protect against malicious and excessive use of the RESTful endpoints. Database movement operations are some of the most time-consuming and CPU-intensive tasks that can be run from Lifecycle Services (LCS) which is why they are being throttled.
+To help maintain the reliability of the service and reduce costs, excessive calls to the Database Movement API are being throttled. Throttling helps protect against malicious and excessive use of the RESTful endpoints. Database movement operations are some of the most time-consuming and CPU-intensive tasks that can be run from Lifecycle Services. Therefore, database movement operations are throttled.
 
 ### Current limits
 
 Currently, the Database Movement API has a global call limit of **three executions per 24-hour timeframe per environment** for all actions that trigger a new operation. These operations include database refresh operations.
 
 Calls to the API that exceed the limit are presented with the following error message:
+
 ```json
 {
     "IsSuccess": false,
@@ -48,19 +49,21 @@ Calls to the API that exceed the limit are presented with the following error me
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
 ### Frequently asked questions
-The following are frequently asked questions, and related answers when it comes to throttling limits on the Lifecycle Services APIs.
 
-**Question**: Which start time is used by the throttling, the beginning of the database operation or the end?
-**Answer**:  The start time of the database operation is used for the throttling logic. If you have three database operations started in the last 24 hours, then the fourth is blocked until sufficient time elapses.
+The following are frequently asked questions, and related answers regarding throttling limits for the Lifecycle Services APIs.
 
-**Question**:  How can I monitor this throttling limit?
-**Answer**:  You may review the activity on an environment in the history view within Lifecycle Services or using the Environment History API. 
+#### Which start time is used by the throttling, the start time of the database operation or the end time?
+The start time of the database operation is used for the throttling logic. If you have three database operations started in the last 24 hours, then the fourth is blocked until sufficient time elapses.
 
-**Question**:  If the limit is reached via API, are manual operations still possible via Lifecycle Services and if yes how many?
-**Answer**: Only API operations are throttled, you can perform as many manual operations as time allows in Lifecycle Services.  Keep in mind that manual operations are included in throttling limits for service level protection.
+#### How can I monitor this throttling limit?
+You may review the activity on an environment in the **History** view in Lifecycle Services, or using the Environment History API. 
 
-**Question**:  Is the throttling a maximum of three operations for the entire LCS project or customer tenant?  Or is it per environment?
-**Answer**:  The throttling limit is per environment (3 requests per environment per 24 hours).
+#### If the limit is reached via API, are manual operations still possible via Lifecycle Services and if yes how many?
+Only API operations are throttled. You can perform as many manual operations as time allows in Lifecycle Services. Keep in mind that manual operations are included in throttling limits for service level protection.
+
+#### Is the throttling a maximum of three operations for the entire Lifecycle Services project or customer tenant?  Or, is it per environment?
+The throttling limit is per environment (three requests per environment per 24 hours).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
