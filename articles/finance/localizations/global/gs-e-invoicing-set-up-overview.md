@@ -93,6 +93,6 @@ Different scenarios for processing electronic documents are implemented via Glob
 > [!NOTE]
 > If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
 
-## Configure Finance and Supply Chain Management
+## Configure Electronic invoicing parameters
 
-Set up Finance and Supply Chain Management parameters that are related to Electronic invoicing. For more information, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
+For the additional configuration steps related refer to [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
