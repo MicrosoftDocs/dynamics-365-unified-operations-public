@@ -35,7 +35,7 @@ As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** f
 
 Before you begin, you must [Configure system parameters to report Sales tax books for Italy](emea-ita-vat-statements-details.md).
 
-## Set up sales tax books
+## Configure Set up sales tax books
 
 To set up Italian sales tax books, go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Italian sales tax books**. 
 The following table describes the fields that are available on the **Italian sales tax books** page.
@@ -100,7 +100,7 @@ The following table describes the fields that are available on the **Italian sal
 </tbody>
 </table>
 
-## <a id="sales-tax-book-sections"></a> Set up sales tax book sections
+## <a id="sales-tax-book-sections"></a> Configure sales tax book sections
 Sales tax book sections are a repository where ledger transactions are posted according to their nature. The voucher numbering is driven by the sales tax book sections. To set up Italian sales tax book sections, click **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Italian sales tax book sections**. The following table describes the fields that are available on the **Italian sales tax book sections** page.
 
 <table>
@@ -166,40 +166,25 @@ You can configure chronology control of invoices posting dates within a specific
 
 ## Sales tax book status
 
-When a new sales tax period is created, sales tax book lines are automatically set up for every sales tax book that exists. If an additional sales tax book is created, lines can be manually created for existing periods that haven't been closed. Click **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Sales tax settlement periods**, and then click **Sales tax book status**. The following table describes the tabs on the **Sales tax book status** page.
+When a new **Sales tax settlement period** is created, **Sales tax book status** records are automatically created for every sales tax book that exists in your legal entity. 
+If an additional sales tax book is created, lines can be manually created for existing periods that haven't been closed. 
+Click **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Sales tax settlement periods**, and then click **Sales tax book status** on the Action pane. 
 
-| Tab      | Description                                                                                               |
-|----------|-----------------------------------------------------------------------------------------------------------|
-| Overview | View the page status of the sales tax books. All the fields are locked for manual updates.                |
-| General  | View the same information that appears on the **Overview** tab, but only for the selected sales tax book. |
+The following table describes the fields that are available on **Sales tax book status** page.
 
-The following table describes the fields that are available.
+| Field                 | Description                                                                                      |
+|-----------------------|--------------------------------------------------------------------------------------------------|
+| **Sales tax book**    | Select the sales tax book ID that you set up on the **Italian sales tax books** page. |
+| **Name**              | Name of selected **Sales tax book** is displayed.                             |
+| **First page number** | The first page number that will be used by Italian sales tax books report. |
+| **Changed to**        | When you update the **First page number** by using **Change first page number** function, this filedrepresents the first page number after the update. |
+| **Last page number**  | The last page number that is used on the final page of Italian sales tax report for this period.  |
+| **Settlement period** | This field displays the settlement period that is used in the sales tax book. |
+| **From date**         | This field displays the start date for the settlement period.  |
+| **To date**           | This field displays the end date for the settlement period.    |
 
-| Field             | Description                                                                                      |
-|-------------------|--------------------------------------------------------------------------------------------------|
-| Sales tax book    | Select the sales tax book ID that you set up on the **Italian sales tax books** page.            |
-| Name              | Enter the name of the tax book.                                                                  |
-| First page number | The first page number that will be used on the final sales tax report for this sales tax period. |
-| Changed to        | The page number that is specified in the **Change first page number** dialog box.                |
-| Last page number  | The last page number that will be used on the final sales tax report for this sales tax period.  |
-| Settlement period | The settlement period that is used in the sales tax book.                                        |
-| From date         | The start date for the settlement period.                                                        |
-| To date           | The end date for the settlement period.                                                          |
-
-The following button is also available.
-
-| Button                   | Description                                                                                                                                            |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Change first page number | Open the **Change first page number** dialog box, where you can change the first page number that will be used for the current open settlement period. |
-
-### Change first page number dialog box
-
-Use the **Change first page number** dialog box to change the number of the first page on the final sales tax report for this sales tax settlement period. The page number then appears in the **Changed to** column on the **Sales tax book status** page and is used as the first page number of the final sales tax report that is printed for the current tax period. The following table describes the fields that are available in the **Change first page number** dialog box.
-
-| Field             | Description                                                           |
-|-------------------|-----------------------------------------------------------------------|
-| First page number | The current first page number for the selected sales tax book.        |
-| Changed to        | Enter the new first page number to use on the final sales tax report. |
+Use **Change first page number** button on the Action pane to open the **Change first page number** dialog box, to change the first page number that will be used for the current open settlement period. 
+The page number then appears in the **Changed to** column on the **Sales tax book status** page and is used as the first page number of the final sales tax report that is printed for the current tax period. 
 
 ## Using sales tax books
 When the setup is completed, the sales tax book section that corresponds to the appropriate number sequence code appears in the **Sales tax book section** column on the **Number sequences** tab of the following pages:
