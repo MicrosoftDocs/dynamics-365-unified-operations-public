@@ -52,12 +52,12 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Completed |
 | 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Completed |
 | 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to January 14, 2023| Completed |
-| 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| In-Progress |
+| 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Completed |
 | 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 14, 2024| Completed |
-| 10.0.37 PQU-2 | December 30, 2023 | January 8, 2024 to February 11, 2024| In-Progress |
-| 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
+| 10.0.37 PQU-2 | December 30, 2023 | January 8, 2024 to February 11, 2024| Completed |
+| 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| In-Progress |
 | 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
-| 10.0.38 PQU-1 | February 7, 2024 | February 12, 2024 to March 17, 2024| Not Started |
+| 10.0.38 PQU-1 | February 7, 2024 | February 12, 2024 to March 17, 2024| In-Progress |
 | 10.0.38 PQU-2 | March 6, 2024 | March 11, 2024 to April 14, 2024| Not Started |
 | 10.0.38 PQU-3 | April 3, 2024 | April 8, 2024 to May 12, 2024| Not Started |
 | 10.0.38 PQU-4 | May 1, 2024 | May 6, 2024 to June 9, 2024| Not Started |
@@ -118,21 +118,6 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | February 12 to February 15, 2024 | February 24 to February 25, 2024 |
 | Station 6 | February 13 to February 16, 2024 | February 24 to February 25, 2024 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-2 train schedule
-
-**App version: 10.0.1725.123**
-
-**Platform version: 7.0.7068.130**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | January 8 to January 11, 2024 | NA |
-| Station 2 | January 15 to January 18, 2024 | January 27 to January 28, 2024 |
-| Station 3 | January 16 to January 19, 2024 | January 27 to January 28, 2024 |
-| Station 4 | January 22 to January 25, 2024 | February 3 to February 4, 2024 |
-| Station 5 | January 29 to February 1, 2024 | February 10 to February 11, 2024 |
-| Station 6 | January 30 to February 2, 2024 | February 10 to February 11, 2024 |
-
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-3 train schedule
 
 **App version: 10.0.1725.146**
@@ -148,7 +133,22 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | February 26 to February 29, 2024 | March 9 to March 10, 2024 |
 | Station 6 | February 27 to March 1, 2024 | March 9 to March 10, 2024 |
 
-### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.38 Release-1 train schedule
+### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.37 Release-4 train schedule
+
+**App version: 10.0.1725.168**
+
+**Platform version: 7.0.7068.168**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | March 4 to March 7, 2024 | NA |
+| Station 2 | March 11 to March 14, 2024 | March 23 to March 24, 2024 |
+| Station 3 | March 12 to March 15, 2024 | March 23 to March 24, 2024 |
+| Station 4 | March 18 to March 21, 2024 | March 30 to March 31, 2024 |
+| Station 5 | March 25 to March 28, 2024 | April 6 to April 7, 2024 |
+| Station 6 | March 26 to March 29, 2024 | April 7 to April 7, 2024 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.38 Release-1 train schedule
 
 **App version: 10.0.1777.115**
 
