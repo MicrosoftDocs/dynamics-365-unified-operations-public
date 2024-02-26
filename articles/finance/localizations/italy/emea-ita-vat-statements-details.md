@@ -31,44 +31,55 @@ The primary address of the legal entity must be in Italy. (Click **Organization 
 
 As of 10.0.39 version of Dynamics 365 Finance, ER format of Italian sales tax books can be generated from a legal entity with primary address outside of Italy. In this scenario, you must set up address and tax registration number in Italy. For more information, see [Set up a VAT ID for a legal entity, customers, and vendors](../global/emea-multiple-vat-registration-numbers.md#set-up-a-vat-id-for-a-legal-entity-customers-and-vendors) section of [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) guidance.
 
-## Number sequences
+## <a id="number-sequences"></a> Number sequences and number sequence groups 
 
-Set up as many number sequences as you require to cover all the required types of sales tax transactions. 
+Set up as many number sequences and number sequence groups as you require to cover all the required types of sales tax transactions. For more information about number sequences in Finance, see [Number sequences overview](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
-Go to <strong>Organization administration</strong> &gt; <strong>Number sequences</strong> &gt; <strong>Number sequences</strong>. 
+For continuous numbering of document in Italian sales tax books, number sequences must be continuous and must have <strong>Company</strong> scope.
 
-All these number sequences must be continuous and must have <strong>Company</strong> scope.
+In parameters of **Accounts receivable**, **Accounts payable** and **Project management and accounting** modules of Finance you can set up number sequence groups to allocate specific number sequences to specific customers or vendors.
+
+### Accounts receivable parameters
+
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**, select **Number secuence** tab.
+2. Select **Free text invoice** in the **Reference** column.
+3. Click on **Group** button on the top of the table.
+4. On the **Number sequence groups** page define necessary number sequence groups and assosiate previously set up number sequences with respective **Area** on References FastTab. **Sales tax book section** column displays the Sales tax book section that is associated with selected Number sequence when you set up [Sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** check box when you define the number sequences for those invoices and credit notes. For example, on the **Accounts receivable parameters** page, on the **Number sequences** tab, select the **Reuse numbers** check box for **Free text invoice voucher** to synchronize number allocation for free text invoice vouchers and free text invoices.
+
+### Accounts payable parameters
+
+1. Go to **Accounts payable** > **Setup** > **Accounts payable parameters**, select **Number secuence** tab.
+2. Select **Internal invoice** in the **Reference** column.
+3. Click on **Group** button on the top of the table.
+4. On the **Number sequence groups** page define necessary number sequence groups and assosiate previously set up number sequences with respective **Area** on References FastTab. **Sales tax book section** column displays the Sales tax book section that is associated with selected Number sequence when you set up [Sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** check box when you define the number sequences for those invoices and credit notes. 
+
+### Project management and accounting parameters
+
+1. Go to **Project management and accounting** > **Setup** > **Project management and accounting parameters**, select **Number secuence** tab.
+2. Select **Invoice voucher** in the **Reference** column.
+3. Click on **Group** button on the top of the table.
+4. On the **Number sequence groups** page define necessary number sequence groups and assosiate previously set up number sequences with respective **Area** on References FastTab. **Sales tax book section** column displays the Sales tax book section that is associated with selected Number sequence when you set up [Sales tax book sections](emea-ita-sales-tax-books.md#sales-tax-book-sections).
+5. For vouchers to follow the number sequences of the related invoices and credit notes, you must select the **Reuse numbers** check box when you define the number sequences for those invoices and credit notes. 
 
 ## Journal names
 
 Set up the required journal names. 
 
-To set up journal names for General ledger, go to <strong>General Ledger</strong> &gt; <strong>Journal setup</strong> &gt; <strong>Journal names</strong>.
+To set up journal names for **General ledger**, go to <strong>General Ledger</strong> &gt; <strong>Journal setup</strong> &gt; <strong>Journal names</strong>.
 
-To set up journal names for Project management, gp to <strong>Project management and accounting</strong> &gt; <strong>Setup</strong> &gt; <strong>Journals</strong> &gt; <strong>Journal names</strong>.) 
+To set up journal names for **Project management and accounting parameters**, go to <strong>Project management and accounting</strong> &gt; <strong>Setup</strong> &gt; <strong>Journals</strong> &gt; <strong>Journal names</strong>.
 
-On the <strong>General</strong> FastTab, in the <strong>Sales tax</strong> section, in the <strong>Italian sales tax book</strong> field, specify one of the following values:
+The following table represents recommended setup of parameters of journal names for legal entities reporting Italian sales tax books:
 
-<ul>
-<li><strong>Not included</strong> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community.</li>
-<li><strong>Purchase</strong> – Select this value for purchase invoices and credit notes.</li>
-<li><strong>Sales</strong> – Select this value for sales invoices and credit notes.</li>
-<li><strong>Empty</strong> – Select this value for all other types of transactions.</li>
-</ul>
+| Parameter | Value |
+|-----------|-------|
+| **Number allocation at posting** | Yes |
+| **Italian sales tax book** | **- Not included** – Select this value for invoices and credit notes that come from countries/regions that are outside the European community. <br> **- Purchase** – Select this value for purchase invoices and credit notes.<br> **- Sales** – Select this value for sales invoices and credit notes.<br> **- Empty** – Select this value for all other types of transactions. <br> In some cases, the **Italian sales tax book** field is set automatically, based on the **Journal type** value. For example, if the **Journal type** field is set to **Invoice register**, the **Italian sales tax book** field is set to **Purchase** by default. |
+| **Voucher series** | Select number sequence previousely set up in [Number sequences and number sequence groups](#number-sequences) section. |
 
-In some cases, the <strong>Italian sales tax book</strong> field is set automatically, based on the <strong>Journal type</strong> value. For example, if the <strong>Journal type</strong> field is set to <strong>Invoice register</strong>, the <strong>Italian sales tax book</strong> field is set to <strong>Purchase</strong> by default.
-
-## Module parameters
-
-For vouchers to follow the number sequences of the related invoices and credit notes, you must select the <strong>Reuse numbers</strong> check box when you define the number sequences for those invoices and credit notes. You can find this check box on the <strong>Number sequences</strong> tab of the following pages:
-
-<ul>
-<li><strong>Accounts receivable parameters</strong></li>
-<li><strong>Accounts payable parameters</strong></li>
-<li><strong>Project management and accounting parameters</strong></li>
-</ul>
-
-For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.
+## General ledger parameters
 
 In the Italian localization, corrections to the Italian sales tax payment report for an already settled sales tax period are not supported. So on the <strong>General ledger parameters</strong> page, on the <strong>Sales tax</strong> tab, set the Special report **Include corrections** option to **NO**.
 
@@ -125,7 +136,5 @@ In legal entities with address in Italy, on **Sales tax settlement periods** pag
 |------------------------------|---------------------------------------------------------------------------------------------------|
 |   <strong>Closed</strong>    | Indicates if the interval of the sales tax settlement period has been settled and closed. |
 | <strong>Last period</strong> |             Select this option if the period is the last period in a sales tax year.              |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
