@@ -105,31 +105,31 @@ Sales tax book sections are a repository where ledger transactions are posted ac
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Field</th>
-<th>Description</th>
+<th><strong>Field</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Sales tax book</td>
+<td><strong>Sales tax book</strong></td>
 <td>Select one of the existing sales tax books that the sales tax book section is attached to.</td>
 </tr>
 <tr class="even">
-<td>Sales tax book section</td>
+<td><strong>Sales tax book section</strong></td>
 <td>Enter the ID of sales tax book section.</td>
 </tr>
 <tr class="odd">
-<td>Name</td>
+<td><strong>Name</strong></td>
 <td>Enter a description of the sales tax book section.</td>
 </tr>
 <tr class="even">
-<td>Number sequence code</td>
-<td>Select the number sequence code for the sales tax book section. The number sequence code that you select depends on the type of sales tax book that the sales tax book section is attached to:
+<td><strong>Number sequence code</strong></td>
+<td>Select the number sequence code for the sales tax book section that you previously set up in [Number sequences and number sequence groups](emea-ita-vat-statements-details.md#number-sequences) section. The number sequence code that you select depends on the type of sales tax book that the sales tax book section is attached to:
 <ul>
 <li>For a sales tax book of the <strong>Purchase</strong> type: Select number sequence codes that are defined for purchase invoice vouchers or purchase credit note vouchers on the <strong>Accounts payable parameters</strong> page, or number sequence codes that are used on the <strong>Journal names</strong> page for vouchers that have the <strong>Italian sales tax book</strong> field set to <strong>Purchase</strong>.</li>
 <li>For a sales tax book of the <strong>Sales</strong> type: Select number sequence codes that are defined for sales invoice vouchers or sales credit note vouchers or free text invoice vouchers or free text credit note vouchers on the <strong>Accounts receivable</strong> <strong>parameters</strong> page, or number sequence codes that are used on the <strong>Journal names</strong> page for vouchers that have the <strong>Italian sales tax book</strong> field set to <strong>Sales</strong>.</li>
@@ -137,23 +137,22 @@ Sales tax book sections are a repository where ledger transactions are posted ac
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Closed to</td>
-<td>Enter the end date of the last closed sales tax settlement period. This field is used to filter data on the sales tax report.</td>
+<td><strong>Closed to</strong></td>
+<td>Enter the end date of the last closed sales tax settlement period. This field is used to filter data on the sales tax report. If the field is filled in with date before reporting period and there are no transaction in reporting period for this sales tax book section, the section is not included in the report.</td>
 </tr>
 <tr class="even">
-<td>Close Italian sales tax book section</td>
+<td><strong>Close Italian sales tax book section</strong></td>
 <td>The closing date of the Italian sales tax book for a tax period. You can&#39;t post or reverse an invoice that has a date that is earlier than the closing date of the tax period. This field is updated with the closing date of the tax period. The <strong>Update</strong> check box must also be selected on the <strong>Sales tax payment</strong> page.</td>
 </tr>
 </tbody>
 </table>
 
-The following button is also available.
-
-| Button | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Create | Automatically create all the required sales tax book sections for existing sales tax books of the **Sales** and **Purchase** types. Sales tax book sections are created for every number sequence that is defined for purchase invoice vouchers or purchase credit note vouchers or sales invoice vouchers or sales credit note vouchers or free text invoice vouchers or free text credit note vouchers on the **Accounts payable parameters**, **Accounts receivable parameters**, or **Project management and accounting parameters** page, and for every number sequence that is used on the **Journal names** page for vouchers that have the **Italian sales tax book** field set to **Purchase** or **Sales**. Every sales tax book section that is created is automatically attached to the default sales tax book. (The sales tax book must be created before the sales tax book sections.) If several sales tax books of the same sales tax book type (**Sales** or **Purchase**) exist, the first sales tax book is used by default. However, you can manually change this attachment. If no sales tax book exists, no sales tax book sections are automatically created. |
+**Create** button on the Action pane of **Italian sales tax book sections** page automatically creates all the required sales tax book sections for existing sales tax books of the **Sales** and **Purchase** types. 
+Sales tax book sections are created for every number sequence that is defined for purchase invoice vouchers or purchase credit note vouchers or sales invoice vouchers or sales credit note vouchers or free text invoice vouchers or free text credit note vouchers on the **Accounts payable parameters**, **Accounts receivable parameters**, or **Project management and accounting parameters** page, and for every number sequence that is used on the **Journal names** page for vouchers that have the **Italian sales tax book** field set to **Purchase** or **Sales**. 
+Every sales tax book section that is created is automatically attached to the default sales tax book. (The sales tax book must be created before the sales tax book sections.) If several sales tax books of the same sales tax book type (**Sales** or **Purchase**) exist, the first sales tax book is used by default. However, you can manually change this attachment. If no sales tax book exists, no sales tax book sections are automatically created. 
 
 ## Sales tax book status
+
 When a new sales tax period is created, sales tax book lines are automatically set up for every sales tax book that exists. If an additional sales tax book is created, lines can be manually created for existing periods that haven't been closed. Click **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Sales tax settlement periods**, and then click **Sales tax book status**. The following table describes the tabs on the **Sales tax book status** page.
 
 | Tab      | Description                                                                                               |
