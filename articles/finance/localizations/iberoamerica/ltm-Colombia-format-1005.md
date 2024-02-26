@@ -4,7 +4,7 @@ description: This article provides information about the configuration that's re
 author: Fhernandez0088 
 ms.date: 11/20/2023 
 ms.topic: article
-ms.reviewer: kfend
+ms.reviewer:johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---
