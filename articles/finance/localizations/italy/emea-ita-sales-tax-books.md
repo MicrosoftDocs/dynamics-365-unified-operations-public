@@ -19,7 +19,7 @@ ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, Ta
 
 [!include [banner](../../includes/banner.md)]
 
-The article describes how to set up and use Italian sales tax books.
+The article describes how to configure and generate Italian sales tax books.
 
 According to Italian legislation, every value-added tax (VAT) transaction must be recorded in a tax book (*Libro IVA*) that will be used for tax reporting. 
 To fulfill these legislative requirements, Dynamics 365 Finance implements **Italian sales tax books** functionality. 
@@ -214,23 +214,37 @@ For more information about how to download ER configurations from the Microsoft 
 > [!IMPORTANT]
 > The **VAT Declaration PDF (IT)** electronic reporting format is generated using specifically prepared data for Italian sales tax books. It is important to set up parameters of **Sales tax authority** and **Sales tax settlement periods** in accordance to guidance provided in [Configure system parameters to report Sales tax books for Italy](emea-ita-vat-statements-details.md) section of documentation.
 
-## Using Italian sales tax books electronic report
+## Generate Italian sales tax books electronic report
 
 To generate Italian sales tax books electronic report, follow these steps.
 
-1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Sales Tax (Italy)**.
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. The **Report sales tax for settlement period** dialog is shown.
 2. In the **Settlement period** field, select the sales tax settlement period to generate the report for.
 3. In the **From date** field, specify a date in the interval of the settlement period that you want to generate the report for.
-4. In the **Sales tax book type** field, select the type of sales tax book to generate the report for. If this field is blank, the report is generated for all types.
-5. In the **From sales tax book** and **To sales tax book** fields, specify the sales tax books to generate the report for. If these fields are blank, the report is generated for all sales tax books.
-6. In the **Printout** section, select the **Sales tax books** checkbox to generate a report that includes the details of the taxable documents in the sales tax books.
-7. Select the **Sales tax summary** checkbox to generate a report that includes a summary section of the sales tax books.
-8. Select the **Sales tax payment** checkbox to generate a report that includes the **Sales tax payment** page of the report.
-9. Select the **Include zero lines** checkbox if you selected the **Sales tax books** checkbox and want to generate a report that includes details and zero-line details of the taxable documents in the sales tax books.
-10. Select the **Include reverse transaction** checkbox if you selected the **Sales tax books** checkbox and want to generate a report that includes details and reverse transaction details of the taxable documents in the sales tax books.
-11. On the **Destination** FastTab, set up a destination where the report must be generated.
-12. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode.
-13. Select **OK** to generate the report.
+4. In the **Sales tax payment version** field, select **Original** and click **OK** button. For **Sales tax settlement periods** associated with **Sales tax authority** connected to a **Vendor account** with address in Italy, only **Original** **Sales tax payment version** can be selected.
+5. The **Sales tax (Italy)** dialog is shown. In the **Settlement period** field of **Sales tax (Italy)** dialog the previously selected **Settlement period** is displayed for information.
+6. When **Variative period** checkbox of the **Sales tax (Italy)** dialog is not selected, in the **From date** and **To date** fields of **Sales tax (Italy)** dialog you can see the begining and end of the dates of period interval where **From date** that was selected on previouse dialog belongs to. Use **Variative period** checkbox of the **Sales tax (Italy)** dialog to generate Italian sales tax books electronic report for a period different from the interval of **Sales tax settlement period**. When **Variative period** checkbox is selected, the **Last page number** value in related **Sales tax book status** cannot be updated.
+7. In the **Sales tax book type** field, select the type of sales tax book to generate the report for. If this field is blank, the report is generated for all types.
+8. In the **From sales tax book** and **To sales tax book** fields, specify the sales tax books to generate the report for. If these fields are blank, the report is generated for all sales tax books.
+9. In the **Printout** group of parameters, select the **Sales tax books** checkbox to generate a report that includes the details of the taxable documents in the sales tax books.
+10. In the **Printout** group of parameters, select the **Sales tax summary** checkbox to generate a report that includes a summary section of the sales tax books.
+11. In the **Printout** group of parameters, select the **Sales tax payment** checkbox to generate a report that includes the **Sales tax payment** page of the report.
+12. In the **Printout** group of parameters, select **Plafond** checkbox to generate a report that includes the **Tax plafond** section of the Sales tax payment report. For more information, see [Tax plafond](emea-ita-exil-tax-plafond.md).
+13. In the **Printout** group of parameters, select the language that you want to generate report on in **Language** field.
+14. When **Sales tax payment** checkbox is selected, the **Sales tax payment** FastTab of the **Sales tax (Italy)** dialog is available and represents following fields necessary for sales ta payment report:
+   - **Sales tax balance in period**. This field displays the sales tax balance in period.
+   - **Previous sales tax credit (-)**. Enter manually previous sales tax credit amount.
+   - **Sales tax credit for compensation (-)**. Enter manually sales tax credit for compensation amount.
+   - **Previous sales tax debit (+)**. Enter manually previous sales tax debit amount.
+   - **Sales tax paid in advance (-)**. Enter manually sales tax paid in advance.
+   - **Sales tax balance**. This field displays calculated sales tax balance for selected period.
+   - **Amount of payment**. Enter manually amount of payment.
+   - **Date of payment**. Enter manually the date of payment.
+   - **Bank account**. Enter manually the bank account.
+   - **Bank reference ABI**. Enter manually the bank reference ABI.
+   - **Bank reference CAB**. Enter manually the bank reference CAB.
+15. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode.
+16. Select **OK** to generate the report.
 
 ## Additional information
 Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
