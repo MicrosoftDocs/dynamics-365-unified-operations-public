@@ -100,7 +100,7 @@ The following table describes the fields that are available on the **Italian sal
 </tbody>
 </table>
 
-## Set up sales tax book sections
+## <a id="sales-tax-book-sections"></a> Set up sales tax book sections
 Sales tax book sections are a repository where ledger transactions are posted according to their nature. The voucher numbering is driven by the sales tax book sections. To set up Italian sales tax book sections, click **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Italian sales tax book sections**. The following table describes the fields that are available on the **Italian sales tax book sections** page.
 
 <table>
