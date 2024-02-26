@@ -1001,6 +1001,8 @@ items:
           href: perf-test/trace-parser.md
         - name: Performance timer
           href: perf-test/performance-timer.md
+        - name: Batch parallel and multithreading
+          href: perf-test/batch-para-multi-thread.md	
       - name: Testing support in Visual Studio
         items:
         - name: Testing and validations
