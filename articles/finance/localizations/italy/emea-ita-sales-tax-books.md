@@ -186,18 +186,37 @@ The following table describes the fields that are available on **Sales tax book 
 Use **Change first page number** button on the Action pane to open the **Change first page number** dialog box, to change the first page number that will be used for the current open settlement period. 
 The page number then appears in the **Changed to** column on the **Sales tax book status** page and is used as the first page number of the final sales tax report that is printed for the current tax period. 
 
-## Using sales tax books
-When the setup is completed, the sales tax book section that corresponds to the appropriate number sequence code appears in the **Sales tax book section** column on the **Number sequences** tab of the following pages:
+When **Attach report to Sales tax book status** checkbox is marked for selected **Sales tax settlement period**, use **Attachments** button in the upper-right corner of **Sales tax book status** page to review previously created Italian sales tax books electronic reports.
 
--   Accounts receivable parameters
--   Accounts payable parameters
--   Project management and accounting parameters
+## Set up Italian sales tax books electronic report
 
-Voucher numbers that are assigned during posting must be sequentially ordered by posting date. Sales tax transactions that use the same number sequence code must be posted in order. If the voucher numbers aren't sequentially ordered, you will receive an error message. Additionally, posting is interrupted if a sales tax transaction isn't assigned to a sales tax book section when you update an invoice. When a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions. (Go to **Tax** \> **Sales tax inquiries** \> **Posted sales tax**, and then select the **Posting** tab.) This data can be used during further sales tax reporting. Italian sales tax books are used for filtering, grouping, and sorting on the **Sales Tax (Italy)** report.
+As of 10.0.39 version of Dynamics 365 Finance, you can use Italian sales tax books electronic report in PDF format. To prepare your Finance to generate Italian sales tax books electronic report in PDF format, follow these steps.
 
-## Sales Tax (Italy) report
+1. Import the following ER configurations.
 
-To report sales tax for Italy, follow these steps.
+| ER configuration name             | Type | Description |
+|-----------------------------------|------|-------------|
+| Tax declaration model              | Model | A generic model for different tax declarations. |
+| Tax declaration model mapping (IT) | Model mapping | Model mapping for Italian sales tax books. |
+| VAT Declaration PDF (IT)           | Format (exporting) | The PDF format of Italian sales tax books. |
+
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
+
+For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+> [!NOTE]
+> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Tax declaration model mapping (IT)** configuration on the **Configurations** page.
+>
+
+2. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
+3. To define the **VAT Declaration PDF (IT)** format, go to **Tax** \> **Setup** \> **General ledger parameters**. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, enter the format information.
+
+> [!IMPORTANT]
+> The **VAT Declaration PDF (IT)** electronic reporting format is generated using specifically prepared data for Italian sales tax books. It is important to set up parameters of **Sales tax authority** and **Sales tax settlement periods** in accordance to guidance provided in [Configure system parameters to report Sales tax books for Italy](emea-ita-vat-statements-details.md) section of documentation.
+
+## Using Italian sales tax books electronic report
+
+To generate Italian sales tax books electronic report, follow these steps.
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Sales Tax (Italy)**.
 2. In the **Settlement period** field, select the sales tax settlement period to generate the report for.
