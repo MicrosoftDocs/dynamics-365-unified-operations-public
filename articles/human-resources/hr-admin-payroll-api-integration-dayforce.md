@@ -45,6 +45,10 @@ For more information, see [Configure Human resources parameters](hr-setup-parame
 
 Before you can use the API, the virtual tables must be generated. For more information, see [Virtual tables for Human Resources in Dataverse](hr-admin-integration-payroll-api-introduction.md#virtual-tables-for-human-resources-in-dataverse).
 
+>[!NOTE]
+>For the payroll integration to work, the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight must be enabled. To enable this flight, reach out to Microsoft support.
+
+
 ## Enable features
 
 You must enable features in Feature management to enable Microsoft APIs to be exposed to the integration and the data to be passed to Dayforce.
