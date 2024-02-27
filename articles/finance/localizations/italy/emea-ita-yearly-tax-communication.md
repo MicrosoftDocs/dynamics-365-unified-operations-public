@@ -86,7 +86,7 @@ For more information about how to download ER configurations from the Microsoft 
 
     However, if the same sales tax code can be linked to multiple fields, you should set up additional filters for the tax transaction.
 
-10. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
+10. Select **Query** and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
 
 You can do the following additional setup for fields where the **Calculation** field is set to **Total**. The system can then automatically calculate values for tags that should represent a result that is calculated by using a formula that consists of the values of other fields (but only fields where the **Calculation** field isn't set to **Total**).
 
@@ -935,7 +935,7 @@ The following table provides an example of the structure of the yearly VAT decla
 
 Here is an example for the **ITCO** legal entity.
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and set up the following sales tax codes.
 
     | Sales tax code | Percentage | Description                                                                              |
     |----------------|------------|------------------------------------------------------------------------------------------|
