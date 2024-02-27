@@ -1,5 +1,5 @@
 ---
-title: Italian sales tax books
+title: Configure and report Italian sales tax books
 description: The article describes how to set up and use Italian sales tax books.
 author: liza-golub
 ms.date: 02/22/2024
@@ -79,7 +79,7 @@ The following table describes the fields that are available on the **Italian sal
 </tr>
 <tr class="even">
 <td><strong>EU sales</strong></td>
-<td>Select a sales tax book of the <strong>Sales</strong> type, and attach it to the current sales tax book of the <strong>Purchase</strong> type. This field is used if the selected sales tax book must include European Union (EU) purchase transactions from the current book on sales tax reports. This field is unavailable for sales tax books of the <strong>Sales</strong> and <strong>Not included</strong> types.</td>
+<td>Select a sales tax book of the <strong>Sales</strong> type and attach it to the current sales tax book of the <strong>Purchase</strong> type. This field is used if the selected sales tax book must include European Union (EU) purchase transactions from the current book on sales tax reports. This field is unavailable for sales tax books of the <strong>Sales</strong> and <strong>Not included</strong> types.</td>
 </tr>
 <tr class="odd">
 <td><strong>ATECOFIN Code</strong></td>
@@ -138,7 +138,7 @@ Sales tax book sections are a repository where ledger transactions are posted ac
 </tr>
 <tr class="odd">
 <td><strong>Closed to</strong></td>
-<td>Enter the end date of the last closed sales tax settlement period. This field is used to filter data on the sales tax report. If the field is filled in with date before reporting period and there are no transaction in reporting period for this sales tax book section, the section is not included in the report.</td>
+<td>Enter the end date of the last closed sales tax settlement period. This field is used to filter data on the sales tax report. If the field is filled in with date before reporting period and there are no transactions in reporting period for this sales tax book section, the section is not included in the report.</td>
 </tr>
 <tr class="even">
 <td><strong>Close Italian sales tax book section</strong></td>
@@ -153,7 +153,7 @@ Every sales tax book section that is created is automatically attached to the de
 
 ### <a id="unified-posting-date-control"></a> Unified posting date control
 
-You can configure chronology control of invoices posting dates within a specific sales tax book section. 
+You can configure chronology control of invoice posting dates within a specific sales tax book section. 
 
 1. In the Feature management workspace, turn on the **(Italy) Unified posting date control** feature. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 2. When the feature is enabled, you can see **Skip posting date control** column on **Italian sales tax book sections** page. Select whether posting date control is required for a selected sales tax book section.
@@ -177,7 +177,7 @@ The following table describes the fields that are available on **Sales tax book 
 | **Sales tax book**    | Select the sales tax book ID that you set up on the **Italian sales tax books** page. |
 | **Name**              | Name of selected **Sales tax book** is displayed.                             |
 | **First page number** | The first page number that will be used by Italian sales tax books report. |
-| **Changed to**        | When you update the **First page number** by using **Change first page number** function, this filedrepresents the first page number after the update. |
+| **Changed to**        | When you update the **First page number** by using **Change first page number** function, this field represents the first page number after the update. |
 | **Last page number**  | The last page number that is used on the final page of Italian sales tax report for this period.  |
 | **Settlement period** | This field displays the settlement period that is used in the sales tax book. |
 | **From date**         | This field displays the start date for the settlement period.  |
@@ -186,7 +186,7 @@ The following table describes the fields that are available on **Sales tax book 
 | **Print blank page with no transactions** | This field displays the state of **Print blank page with no transactions** parameter of related [Sales tax authority](emea-ita-vat-statements-details.md#sales-tax-authority) when the Italian sales tax books electronic report was generated for the selected period interval. |
 | **Include zero lines** | This field displays the state of **Include zero lines** parameter of related [Italian sales tax book]([emea-ita-vat-statements-details.md#sales-tax-authority](emea-ita-sales-tax-books.md#configure-set-up-sales-tax-books) when the Italian sales tax books electronic report was generated for the selected period interval.    |
 | **Include reverse transactions** | This field displays the state of **Include reverse transactions** parameter of related [Italian sales tax book]([emea-ita-vat-statements-details.md#sales-tax-authority](emea-ita-sales-tax-books.md#configure-set-up-sales-tax-books) when the Italian sales tax books electronic report was generated for the selected period interval.    |
-| **Printout status** | This field displays the status of generation of Italian sales tax books electronic report in PDF format. Following values are available: <br> **- Not generated:** when Italian sales tax books electronic report in PDF format has not been generated for selected period interval with enabled **Update number of pages** checkbox parameter. <br> **- Generated:** when Italian sales tax books electronic report in PDF format has been generated for selected period interval with enabled **Update number of pages** checkbox parameter. You can review generated rport as attachement for each **Sales tax book status** line if **Attach report to Sales tax book status** checkbox was selected for the **Sales tax settlement period**.   |
+| **Printout status** | This field displays the status of generation of Italian sales tax books electronic report in PDF format. Following values are available: <br> **- Not generated:** when Italian sales tax books electronic report in PDF format has not been generated for selected period interval with enabled **Update number of pages** checkbox parameter. <br> **- Generated:** when Italian sales tax books electronic report in PDF format has been generated for selected period interval with enabled **Update number of pages** checkbox parameter. You can review the generated report as an attachment for each **Sales tax book status** line if **Attach report to Sales tax book status** checkbox was selected for the **Sales tax settlement period**.   |
 
 Use **Change first page number** button on the Action pane to open the **Change first page number** dialog box, to change the first page number that will be used for the current open settlement period. 
 The page number then appears in the **Changed to** column on the **Sales tax book status** page and is used as the first page number of the final sales tax report that is printed for the current tax period. 
@@ -228,7 +228,7 @@ To generate Italian sales tax books electronic report, follow these steps.
 3. In the **From date** field, specify a date in the interval of the settlement period that you want to generate the report for.
 4. In the **Sales tax payment version** field, select **Original** and click **OK** button. For **Sales tax settlement periods** associated with **Sales tax authority** connected to a **Vendor account** with address in Italy, only **Original** **Sales tax payment version** can be selected.
 5. The **Sales tax (Italy)** dialog is shown. In the **Settlement period** field of **Sales tax (Italy)** dialog the previously selected **Settlement period** is displayed for information.
-6. When **Variative period** checkbox of the **Sales tax (Italy)** dialog is not selected, in the **From date** and **To date** fields of **Sales tax (Italy)** dialog you can see the begining and end dates of period interval where **From date** that was selected on previouse dialog belongs to. Use **Variative period** checkbox of the **Sales tax (Italy)** dialog to generate Italian sales tax books electronic report for a period different from the interval of **Sales tax settlement period**. When **Variative period** checkbox is selected, the **Last page number** value in related **Sales tax book status** cannot be updated.
+6. When **Variative period** checkbox of the **Sales tax (Italy)** dialog is not selected, in the **From date** and **To date** fields of **Sales tax (Italy)** dialog you can see the beginning and end dates of period interval where **From date** that was selected on previous dialog belongs to. Use **Variative period** checkbox of the **Sales tax (Italy)** dialog to generate Italian sales tax books electronic report for a period different from the interval of **Sales tax settlement period**. When **Variative period** checkbox is selected, the **Last page number** value in related **Sales tax book status** cannot be updated.
 7. In the **Sales tax book type** field, select the type of sales tax book to generate the report for. If this field is blank, the report is generated for all types.
 8. In the **From sales tax book** and **To sales tax book** fields, specify the sales tax books to generate the report for. If these fields are blank, the report is generated for all sales tax books.
 9. In the **Printout** group of parameters, select the **Sales tax books** checkbox to generate a report that includes the details of the taxable documents in the sales tax books.
