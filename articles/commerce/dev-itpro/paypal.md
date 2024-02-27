@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for PayPal
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: BrianShook
-ms.date: 11/30/2023
+ms.date: 02/27/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -23,7 +23,7 @@ ms.search.validFrom: 2020-10-31
 This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal (PayPal payment connector). It includes a list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
 
 > [!WARNING]
-> The Dynamics 365 Commerce pattern for PayPal Express payment behavior is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** for PayPal express support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update PayPal module behavior to support express flows by updating order details within the PayPal payment window as a delivery address is selected.
+> The Dynamics 365 Commerce pattern for PayPal and Google Pay Express payment behavior isn't currently recommended for regions enforcing Revised Payment Services Directive (PSD2) requirements. The Commerce payment module express payment patterns calculate the final order price on the Commerce checkout page when it has obtained the delivery address for a user's order. PSD2 recommends that users see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update PayPal and Google Pay module behavior to support express flows by updating order details within the wallet payment window when a delivery address is selected.
 
 ## Key terms
 
@@ -184,26 +184,26 @@ After the above changes are made in Commerce headquarters, synchronize the chang
 
 ### Configure PayPal for the storefront checkout module
 
-For details related to configuring storefront to use PayPal in the checkout module, see [Payment module](../payment-module.md).
+For information on configuring the storefront checkout module to use PayPal in the checkout module, see [Payment module](../payment-module.md).
 
-#### Use the payment express section in the Cart and Checkout pages with PayPal using the Payment module
+#### Use the payment express section in the cart and checkout pages with PayPal using the payment module
 
 > [!WARNING]
-> The Dynamics 365 Commerce pattern for PayPal Express is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** for PayPal support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the PayPal express patterns to support express flows by updating order details within the PayPal payment window as a delivery address is selected.
+> The Dynamics 365 Commerce pattern for PayPal Express isn't currently recommended for regions enforcing PSD2 requirements. The payment module used for PayPal support calculates the final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends that users see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the PayPal express patterns to support express flows by updating order details within the PayPal payment window when a delivery address is selected.
 
-The Commerce **Payment** module payment express patterns give site customers the option to check out faster by using their payment service account information during the checkout process. The **Payment** module payment express actions reference the linked payment connector via the **Supported tender types** string used in the same attribute of the payment connector. Express payments with the **Payments** module then returns the user-selected order details (address, contact information, and payment method) to prefill the checkout form.
+The Commerce payment module payment express patterns provide site users with the option to check out faster by using their payment service account information during the checkout process. The payment module payment express actions reference the linked payment connector via the **Supported tender types** attribute string of the payment connector. Express payment actions within the payment module then returns the user-selected order details (address, contact information, and payment method) to prefill the checkout form.
 
-When the **Payment** module is used with express patterns with PayPal, if customers select the PayPal button in the **Payment Express** section, the PayPal payment window is opened. Users can then sign in to their PayPal account to use their account shipping address, billing address, email address, and PayPal payment method of choice to pay for the transaction.
+When the payment module is used with express patterns for PayPal, if customers select the PayPal button in the **Payment Express** section, the PayPal payment window opens. Users can then sign in to their PayPal account to use their account shipping address, billing address, email address, and PayPal payment method of choice to pay for the transaction.
 
-When users complete the action in the PayPal window, they're directed to the Commerce site checkout page, where the checkout form is prefilled with their PayPal account details. After users return to the checkout page from the PayPal window, they'll see the following details:
+When users complete the action in the PayPal window, they're directed to the Commerce site checkout page, where the checkout form is prefilled with their PayPal account details. After users return to the checkout page from the PayPal window, they see the following details:
 
 - In the payment express flow, the first delivery option that is available for the shipping address that was returned will be preselected for the customer.
-- The shipping address and contact information, such as the customer's email address, are populated in the checkout form. If they're using express checkout, the email address from the express account is used.
+- The shipping address and contact information, such as the customer's email address, are prepopulated in the checkout form. If they're using express checkout, the email address from the express account is used.
 - The payment method is selected from the customer's digital PayPal wallet.
 
 Customers can review orders and change checkout order details before they select **Place order** to finalize the order.
 
-#### Configure the checkout fragment for express using PayPal with the Payment module
+#### Configure the checkout fragment for express using PayPal with the payment module
 
 To set up the checkout fragment for express payment using PayPal in site builder, follow these steps.
 
