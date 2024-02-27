@@ -231,7 +231,12 @@ To generate Italian sales tax books electronic report, follow these steps.
 11. In the **Printout** group of parameters, select the **Sales tax payment** checkbox to generate a report that includes the **Sales tax payment** page of the report.
 12. In the **Printout** group of parameters, select **Plafond** checkbox to generate a report that includes the **Tax plafond** section of the Sales tax payment report. For more information, see [Tax plafond](emea-ita-exil-tax-plafond.md).
 13. In the **Printout** group of parameters, select the language that you want to generate report on in **Language** field.
-14. When **Sales tax payment** checkbox is selected, the **Sales tax payment** FastTab of the **Sales tax (Italy)** dialog is available and represents following fields necessary for sales ta payment report:
+14. In the **Update** group of parameters, select **Update number of pages** checkbox to update  **Last page number** value in related **Sales tax book status** record for the sales tax settlement period.
+
+> [!IMPORTANT]
+> It is important to generate **Italian sales tax books electronic report** with selected **Update number of pages** checkbox at least onece per each interval of sales tax settlement period to support correct numbering of pages. When **Update number of pages** checkbox is selected and **Attach report to Sales tax book status** checkbox is selected in parameters of the **Sales tax settlement period**, you can find the generated **Italian sales tax books electronic report** attached to the **Sales tax book status** records.
+
+15. When **Sales tax payment** checkbox is selected, the **Sales tax payment** FastTab of the **Sales tax (Italy)** dialog is available and represents following fields necessary for sales ta payment report:
    - **Sales tax balance in period**. This field displays the sales tax balance in period.
    - **Previous sales tax credit (-)**. Enter manually previous sales tax credit amount.
    - **Sales tax credit for compensation (-)**. Enter manually sales tax credit for compensation amount.
@@ -243,8 +248,8 @@ To generate Italian sales tax books electronic report, follow these steps.
    - **Bank account**. Enter manually the bank account.
    - **Bank reference ABI**. Enter manually the bank reference ABI.
    - **Bank reference CAB**. Enter manually the bank reference CAB.
-15. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode.
-16. Select **OK** to generate the report.
+16. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode.
+17. Select **OK** to generate the report.
 
 ## Additional information
 Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
