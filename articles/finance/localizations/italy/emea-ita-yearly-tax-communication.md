@@ -1,15 +1,15 @@
 ---
 title: Yearly tax communication
 description: This article provides information about the yearly tax communication report in Italy.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: 
 ms.search.region: Italy
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 264294
@@ -24,32 +24,43 @@ The **Yearly tax communication** report contains annual tax information for Ital
 
 ## Prerequisites
 
-Set up Italian sales tax books by following the instructions in [Italian sales tax books](emea-ita-fiscal-books.md#set-up-sales-tax-books).
+Configure Finance for **Italian sales tax books** functionality by following the instructions in [Italian sales tax books](emea-ita-sales-tax-books.md).
+
+As of 10.0.38 version of Dynamics 365 Finance, the **Yearly tax communication** feature supports reporting for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
+
+> [!NOTE]
+> In the **Feature management** workspace, turn on the **Enable Settlement period for Italian Yearly tax communication** feature. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). **Enable Settlement period for Italian Yearly tax communication** feature introduces new reference to the **Sales tax settlement period** in **Yearly tax communication** table. This makes it possible to create a **Yearly tax communication** with same ATECOFIN code and year for different **Sales tax settlement periods** and report **Yearly tax communication** separately for different (multiple) **Sales tax settlement periods**. When you enable the feature, the new tables are used as data sources for **Yearly tax communication** and data from old data sources `TaxYearlyCom_IT`, `TaxYearlyComReport_IT` is populated in the new tables `TaxYearlyComV2_IT`, `TaxYearlyComReportV2_IT`. If new tables already contain records with same values in **Years** and **ATECOFIN** code fields, these records in the new tables will *NOT* be replaced with data from old tables.
 
 ## Set up the Yearly tax communication report
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. On the **Registration numbers** FastTab, in the **Tax registration number** field, enter the tax registration number of your company.
-3. On the **Tax registration** FastTab, in the **Fiscal code** field, enter the fiscal code of your company.
-4. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
+2. Import the following ER configurations.
 
-    - **Italian tax reports model**
-    - **Yearly tax communication (IT)**
-    - **Yearly VAT communication model mapping**
+| ER configuration name             | Type | Description |
+|-----------------------------------|------|-------------|
+| **Italian tax reports model**              | Model | Italian tax reports model configuration. |
+| **Yearly VAT communication model mapping** | Model mapping | Model mapping for Italian Yearly tax communication report. |
+| **Yearly tax communication (IT)**          | Format (exporting) | Yearly tax communication format for Italy. |
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
 
-5. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
-6. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
-7. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
-8. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
+For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+> [!NOTE]
+> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Yearly VAT communication model mapping** configuration on the **Configurations** page.
+>
+
+3. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters** page.
+4. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
+5. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
+6. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
 ![Yearly tax communication setup page.](../media/1_Yearly_tax_communication_setup.png)
 
 > [!NOTE]
 > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni).
 
-9. On the **Field setup** tab, create lines, and set the following fields on them.
+7. On the **Field setup** tab, create lines, and set the following fields on them.
 
     | Field     | Description                             |
     |-----------|-----------------------------------------|
@@ -65,26 +76,26 @@ For more information, see [Download Electronic reporting configurations from Lif
 > [!NOTE]
 > If any changes are made in the declaration, you must change the field settings.
 
-10. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to a add a line for each sales tax code that should be available as a field value.
+8. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to a add a line for each sales tax code that should be available as a field value.
 
     ![Yearly tax communication setup page, Selected tax codes tab.](../media/2_Yearly_tax_communication_setup.png)
 
-11. Select **Exceptions** to set up main accounts that should be excluded from the query.
+9. Select **Exceptions** to set up main accounts that should be excluded from the query.
 
     Create enough unique sales tax codes so that each is linked to a single field in the yearly declaration. This approach helps simplify the setup of the yearly declaration.
 
     However, if the same sales tax code can be linked to multiple fields, you should set up additional filters for the tax transaction.
 
-12. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
+10. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
 
 You can do the following additional setup for fields where the **Calculation** field is set to **Total**. The system can then automatically calculate values for tags that should represent a result that is calculated by using a formula that consists of the values of other fields (but only fields where the **Calculation** field isn't set to **Total**).
 
-13. Select the line where the **Calculation** field is set to **Total**.
-14. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
+11. Select the line where the **Calculation** field is set to **Total**.
+12. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
 
     ![Yearly tax communication setup page, Total amount tab.](../media/3_Yearly_tax_communication_setup.png)
 
-15. Set the following fields.
+13. Set the following fields.
 
     | Field name | Description                                                                                                                 |
     |------------|-----------------------------------------------------------------------------------------------------------------------------|
