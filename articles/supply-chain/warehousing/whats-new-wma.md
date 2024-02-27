@@ -23,9 +23,9 @@ This article lists new features, fixes, improvements, and known issues for each 
 ## Version 2.1.25.0
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
-- Improved username and password authentication. Now, if the domain name is present in the connection configuration, then you can sign in by specifying a username that only includes the alias part of the Entra ID account. The app will retrieve the domain name from the connection configuration. You can still sign in using the full Entra ID account email address if you prefer. 
+- Improved username and password authentication. Now, if the domain name is present in the connection configuration, then you can sign in using only the alias part of the Entra ID account username (rather than a complete email address). The app will retrieve the domain name from the connection configuration. You can still sign in using the full email address as the username if you prefer. 
 - Fixed an issue where a selected value wasn't respected when moving back and forth within detours. 
-- Fixed an issue where the page would sometimes lay out incorrectly when the device was in landscape mode and the user had selected to never show the *quantity spinner*. 
+- Fixed an issue where the page would sometimes be rendered incorrectly when the device was in landscape mode and the user had selected to never show the *quantity spinner*. 
 - The app now moves back to the **Select connection** page if the device code expires (after 15 minutes of inactivity) instead of showing an ambiguous error message. 
 - Fixed an issue that would prevent the app from being installed on Windows when the package was downloaded from Microsoft App Center.
 - Added several accessibility improvements.
