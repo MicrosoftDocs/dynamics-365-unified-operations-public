@@ -78,7 +78,7 @@ To activate Electronic invoicing in Globalization Studio, enable the following f
 - Dataverse repository
 
 > [!NOTE]
-> The **E-invoicing service workspace designer** feature also activates a batch job that starts required data transfer from RCS related data sources to Dynamics 365 Finance database. The process will be run in background and requires some time to complete. You can potentially encounter the following error message that indicates that the process of data transfering is not complete yet.
+> The **E-invoicing service workspace designer** feature enabling also activates a batch job **Feature design-time restoration procedure** that starts required data transfer from RCS related data sources (if applicable) to Dynamics 365 Finance database. The process will be run in background and requires some time to complete. The **Electronic invoicing** tile in the Globalization Studio cannot be accessed untill the batch job is completed. The following error message indicates that the batch job is not complete yet and you need to give the system more time to complete the process.
 
 =========  TO DO: insert the snippet of the error-message ==================
 
