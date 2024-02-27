@@ -253,31 +253,7 @@ To generate Italian sales tax books electronic report, follow these steps.
    - **Bank account**. Enter manually the bank account.
    - **Bank reference ABI**. Enter manually the bank reference ABI.
    - **Bank reference CAB**. Enter manually the bank reference CAB.
-16. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode.
-17. Select **OK** to generate the report.
-
-## Additional information
-Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
-
- - Reverse customer transaction (**All customers** page, select **Transactions** > **Reverse**) 
- - Reverse vendor transaction (**All vendors** page, select **Transactions** > **Reverse**). 
- 
-These functions must be hidden using the functionality of Privileges. For more information, see [Role based security privileges](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#privileges) 
-
-To hide these functions from the user interface for all security roles, follow these steps:
-
-1.	Go to **System administration** > **Security** > **Security configuration**.
-2.	On the **Privileges** tab, select **Reverse customer transactions**.
-3.	Select **Action menu items** > **TransactionReversal_Cust**. 
-4.	Select **Deny** for **Read**, **Update**, **Create**, **Delete**.
-
-![Security configuration.](../media/security-configuration.png)
-
-5.	On the **Unpublished objects** tab, select **Publish all**.
-
-![Unpublished objects.](../media/unpublished-objects.png)
-
-7.	Repeat these steps for the privilege, **Reverse vendor transactions**.
-
+16. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+17. Select **OK** to generate the report. When **Update number of pages** checkbox is selected and **Attach report to Sales tax book status** checkbox is selected in parameters of the **Sales tax settlement period**, you can find the generated **Italian sales tax books electronic report** attached to the **Sales tax book status** records and the **Last page number** value in related **Sales tax book status** record for the sales tax settlement period is updated. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
