@@ -38,6 +38,8 @@ When the **Sales tax settlement** process is executed, the **Closed** parameter 
 
 For **Sales tax settlement periods** associated with **Sales tax authority** connected to a **Vendor account** with address in Italy, only **Original** **Sales tax payment version** can be selected for **Sales tax settlement** process.
 
+When you run **Sales tax settlement** process for Italian **Sales tax settlement period**, the main accounts that are set up in **Account gain** and **Account loss** fields for related **Sales tax authority** are used for posting of rounding result.
+
 As of 10.0.39 version of Dynamics 365 Finance, when [Italian sales tax book in Electronic reporting (ER) tool is enabled](emea-ita-sales-tax-books.md), number of page of Italian sales tax books is updated only when [Italian sales tax books electronic report is generated](emea-ita-sales-tax-books.md#generate-italian-sales-tax-books-electronic-report) with selected **Update number of pages** checkbox parameter.
 
 > [!IMPORTANT]
