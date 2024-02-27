@@ -35,7 +35,7 @@ As of 10.0.39 version of Dynamics 365 Finance, the **Italian sales tax books** f
 
 Before you begin, you must [Configure system parameters to report Sales tax books for Italy](emea-ita-vat-statements-details.md).
 
-## Configure Set up sales tax books
+## Configure sales tax books
 
 To set up Italian sales tax books, go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Italian sales tax books**. 
 The following table describes the fields that are available on the **Italian sales tax books** page.
