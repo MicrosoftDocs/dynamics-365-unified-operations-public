@@ -23,7 +23,8 @@ This article describes how to install the Inventory Visibility Add-in for Micros
 You must use [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2) to install the Inventory Visibility Add-in. Lifecycle Services is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 > [!TIP]
-> We recommend that you join the Inventory Visibility Add-in user group, where you can find useful guides, get our latest updates, and post any questions you might have about using Inventory Visibility. To join, please send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) and include your Supply Chain Management environment ID.
+> We recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896) for any feature/solution consultant. And if any technical issue/exception you’d like to seek help you can send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) directly and include your Supply Chain Management environment ID.
+> On the other hand, you can go to [Inventory Visibility Github](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples) to see some useful example codes and troubleshooting guides.
 
 ## Inventory Visibility prerequisites
 
