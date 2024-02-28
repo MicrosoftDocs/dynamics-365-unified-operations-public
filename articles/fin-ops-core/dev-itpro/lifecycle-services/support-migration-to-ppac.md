@@ -23,9 +23,9 @@ The transition from Lifecycle Services Support to Power Platform admin center ha
 1. A banner appears on the Lifecycle Services **Support** page. This banner includes a redirect link so that users can test the Power Platform admin center Help \+ Support behavior.
 1. All entry points to the **Support** page in Lifecycle Services begin to redirect users to Power Platform admin center Help \+ Support.
 
-    - The **Support** item on the Menu button in Lifecycle Services projects of all types (The Menu button is sometimes referred to as the hamburger or the hamburger button.)
-    - The **Support** tile in Learn projects
-    - The **Manage incidents** tile on the Lifecycle Services home page
+    - The **Support** item on the Menu button in Lifecycle Services projects of all types. (The Menu button is sometimes referred to as the hamburger or the hamburger button.)
+    - The **Support** tile in Learn projects.
+    - The **Manage incidents** tile on the Lifecycle Services home page.
 
 1. The **Support issues** vertical tile on the Lifecycle Services **Work items** page is removed, and access to the Lifecycle Services **Support** page is blocked.
 
