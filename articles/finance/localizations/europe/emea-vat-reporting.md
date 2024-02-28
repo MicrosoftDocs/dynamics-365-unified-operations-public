@@ -50,9 +50,9 @@ Before you can set up sales tax reporting codes, you must select the correct rep
 
 Sales tax reporting codes are box codes in the tax statement or tag names in XML format. These codes are used to aggregate and prepare amounts for the report. When you configure the electronic reporting format of the tax statement, the names of the result amounts will be used. You can create and maintain sales tax reporting codes on the [Sales tax reporting codes](../../general-ledger/tasks/set-up-sales-tax-reporting-codes.md) page. You must assign each code a report layout. After you create the sales tax reporting codes, you can choose the codes in the **Report setup** section on the **Sales tax codes** page.
 
-### Sales tax codes for VAT reporting
+### Sales tax codes for tax reporting
 
-<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the <strong>Sales tax codes</strong> page. The following table describes the transaction types in the report setup for sales tax codes. The calculation includes transactions for all types of sources except sales tax.
+<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the tax statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the <strong>Sales tax codes</strong> page. The following table describes the transaction types in the report setup for sales tax codes. The calculation includes transactions for all types of sources except sales tax.
 
 <table>
 <colgroup>
@@ -236,7 +236,7 @@ d<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</str
 
 ## Countryspecific resources for tax statements
 
-The VAT statement for each country/region must meet the requirements of the country/region’s legislation. There are predefined general models and formats of VAT statements for the countries/regions listed in the following table.
+The tax statement for each country/region must meet the requirements of the country/region’s legislation. There are predefined general models and formats of tax statements for the countries/regions listed in the following table.
 
 | Country/region | Additional information                                                          |
 |----------------|---------------------------------------------------------------------------------|
