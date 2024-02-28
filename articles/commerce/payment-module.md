@@ -2,7 +2,7 @@
 title: Payment module
 description: This article covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/22/2024
+ms.date: 02/28/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
