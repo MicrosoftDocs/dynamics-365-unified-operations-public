@@ -255,7 +255,7 @@ To manually start a snapshort, follow these steps:
 3. Select **Start**.
 4. Start one snapshot at a time, and wait for the replication of that snapshot to be completed.
 5. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
-   For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](migration-upgrade/monitor-replication).
+   For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](migration-upgrade/monitor-replication.md).
     
 You must manually start the publisher snapshots for steps 6 and 7.
 Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
