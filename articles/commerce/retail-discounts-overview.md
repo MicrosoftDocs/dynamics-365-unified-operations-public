@@ -180,6 +180,9 @@ To enable the improved discount calculation feature, follow these steps.
 > [!NOTE]
 > Make sure that you test this feature extensively before you enable it in production environments, especially if you have customizations in the Commerce pricing engine.
 
+> [!NOTE]
+> The feature is enabled by default for environments on Application Release 10.0.32 or later. When this feature is enabled, a batch job will be scheduled when a discount is enabled or a product master associated with a discount has a new product variant. The [Issue 856877](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=856877&dbType=3) which incorrectly scheduled amount of *Process commerce discounts* batch jobs has been fixed on 10.0.38 release. The users can disable the feature *Improve discount computation performance by using flattened discount tables* before upgrading to an application version with the fix.
+
 ## Best practices
 
 - Before you create discounts, document your discounting strategy and procedure. Keep your documentation up to date as your use of the product evolves.
