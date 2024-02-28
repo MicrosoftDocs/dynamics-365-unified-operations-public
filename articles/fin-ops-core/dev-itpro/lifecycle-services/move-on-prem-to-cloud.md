@@ -255,14 +255,14 @@ To manually start a snapshort, follow these steps:
 3. Select **Start**.
 4. Start one snapshot at a time, and wait for the replication of that snapshot to be completed.
 5. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
-   For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](/migration-upgrade/monitor-replication).
+   For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](../migration-upgrade/monitor-replication).
     
 You must manually start the publisher snapshots for steps 6 and 7.
 Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
    > [!NOTE]
-   > After the replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job takes some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see [Reporting section of the application](/migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
+   > After the replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job takes some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see [Reporting section of the application](../migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
 
 6. **Replication: Setup Publication for Other Objects (functions)**
 
@@ -294,7 +294,7 @@ Older versions of the Data Migration Toolkit have automatic and manual starts. W
     > [!NOTE]
     > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
     > 
-    > To learn more about the **'dv'** option, see [Reporting section of the application](/migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
+    > To learn more about the **'dv'** option, see [Reporting section of the application](../migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
   
 8. **Cutover: Remove replication setup**
 
