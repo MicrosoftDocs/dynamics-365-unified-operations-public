@@ -244,14 +244,23 @@ After the validation is successful, the application presents a set of menu optio
 
 5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
-    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. If any **special-table** entries were added, they will be added to additional special tables publications. 
-    
-    You will receive the following prompt: "Do you want the snapshot to start automatically? Continue by giving Y (Yes) for Automatic, else N (No) for manual (If No you have to manually start the snapshots from replication monitor)." If you select **Yes**, the snapshot replication will be started automatically. If you select **No**, you will have to open SQL Server Management Studio (SSMS), open the replication monitor, and manually start each snapshot. The advantage of manually starting snapshots is that you can control the load on the source SQL Server instance. This approach can be useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it lets you split up when you start the snapshot process. 
+    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
+
+    > [!NOTE]
+    > All snapshots must be manually started in SQL Management Studio. Open the replication monitor, and select your SQL Server instance. Then, on the **Agents** tab, select and hold (or right-click) the publisher that you want to start, and select **Start**.
+    >
+    > Start one snapshot at a time, and wait for the replication of that snapshot to be completed. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
+    >
+    > For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](monitor-replication.md).
+    >
+    > You must manually start the publisher snapshots for steps 6 and 7.
+    >
+    > Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](#reporting-section-of-the-application) section later in this article.
+    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
 6. **Replication: Setup Publication for Other Objects (functions)**
 
@@ -259,36 +268,32 @@ After the validation is successful, the application presents a set of menu optio
 
     **Created publisher:** AX\_PUB\_OtherObjects
 
-    > [!IMPORTANT]
-    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
-
     > [!NOTE]
     > The replication will take some time to be completed. You can view the replication status by providing the **'rs'** option.
     >
     > If there are no functions to replicate, the publication won't be created.
+    > 
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-7. **Cutover: Set up publication for non-primary key tables**
+7. **Cutover: Setup Publication for Non PK Tables**
 
-    This step creates two publications: 
-
-    - One publication is used to replicate non-primary key tables.
-    - One publication is used to replicate locked tables.
-
-    As in step 5, you will be prompted to specify whether you want the snapshot to be started automatically or manually. 
+    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. 
     
     > [!NOTE]
-    > If there are no locked tables, the publication won't be created.
+    > If there are no locked tables, then publication will not be created.
 
     **Publication names:** AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
-    If the AX service acquires a schema lock during the creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during the creation of the cutover publication.
+    If AX Service acquires a schema lock during creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during creation of the cutover publication.
 
     > [IMPORTANT]
-    > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
-
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
+   
     > [!NOTE]
-    > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in the **Data/IgnoreTables.xml** field. Then rerun the app, and use the **'dv'** option. To learn more about the **'dv'** option, see the [Reporting section of the application](#reporting-section-of-the-application) section later in this article.
- 
+    > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
+    > 
+    > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
+  
 8. **Cutover: Remove replication setup**
 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
