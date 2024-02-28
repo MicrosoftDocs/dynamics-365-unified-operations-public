@@ -154,65 +154,55 @@ Set up ledger accounts for bad debt and collected bad debt that will be used to 
 | **Item9**      | Amount of tax payable （②＋③－⑦）| The value of this field is calculated as **Item 2** + **Item 3** - **Item 7**.  |
 | **Item10**     | Tax refund due to insufficient amount of tax deduction （⑧）| The value of this field is calculated as **Item 8**.  |
 | **Item11**     | Netted tax amount （⑨）| The value of this field is calculated as **Item 9**.  |
-| **Item12**     | Tax refund | The value of this field is calculated as **Item 10** * 22 // 78.  |
-| **Item13**     | Tax payment | The value of this field is calculated as **Item 11** * 22 // 78.  |
+| **Item12**     | Tax refund | The value of this field is calculated as **Item 10** * 22 ÷ 78.  |
+| **Item13**     | Tax payment | The value of this field is calculated as **Item 11** * 22 ÷ 78.  |
 
 ### Appendix 2-3 - Calculation table for taxable sales ratio, deductible purchase tax amount, etc.
 
 > [!NOTE] 
 > In the "Calculation" column of the following table, brackets ([…]) in the formulas enclose the values of the reporting codes.
 
-| Field (Row)     | Description   | Calculation  |
-|-----------------|---------------|--------------|
-| Item1 (Row1)   | Taxable sales (excluding tax amount)  | The value of this field is calculated as [1] – [9001].  |
-| Item2 (Row2)   | Tax-exempt sales  | The value of this field is calculated as [202] – [9202].   |
-| Item3 (Row3)   | Amount of non-taxable assets for export, amount of assets transferred to offices abroad | The value of this field is calculated as [203] – [9203]. |
-| Item4 (Row4)   | Amount of all taxable sales  | The value of this field is calculated as **Item1** + **Item2** + **Item3**. |
-| Item5 (Row5)   | Amount of the transfer value of taxable assets, etc.  | The value of this field equals **Item4**.   |
-| Item6 (Row6)   | Non-taxable sales   | The value of this field is calculated as [206] – [9206].    |
-| Item7 (Row7)   | Total amount of sales   | The value of this field is calculated as **Item5** + **Item6**.   |
-| Ratio of taxable sales (Row8)   | Ratio of taxable sales   | The value of this field is calculated as **Item4** ÷ **Item7**.    |
-| Item8 (Row9)   | Amount of taxable purchases (including tax amount)  | The value of this field is calculated as [208] + [214] + [215] + [8208] + [8214] + [8215] – [9208] – [9214] – [9215] – [7208] – [7214] – [7215].  |
-| Item9 (Row10)  | Amount of consumption tax on taxable purchases   | The value of this field is calculated as the sum of consumption tax amounts of **Item8** by tax rate.   |
-| Item10 (Row13)  | Amount of consumption tax on taxable import  | The value of this field is calculated as the sum of consumption tax amounts of ([210] + [8210] – [9210] – [7210]) by tax rate.  |
-| Item11 (Row14)    | Amount of consumption tax adjustment (addition and subtraction)  | The value of this field is **0** (zero).   |
-| Item12 (Row15)  | Total amount of taxes on taxable purchases    | The value of this field is calculated as **Item9** + **Item10** + **Item11**.   |
-| Item13 (Row16)  | Total amount of taxes on taxable purchases, if **Ratio of taxable sales** is \>= 0.95    | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field equals **Item12**. Otherwise, the value is **0** (zero).  |
+| Field        | Description   | Calculation  |
+|--------------|---------------|--------------|
+| **Item1**    | Taxable sales (excluding tax amount)  | The value of this field is calculated as [1] – [9001].  |
+| **Item2**    | Tax-exempt sales  | The value of this field is calculated as [202] – [9202].   |
+| **Item3**    | Amount of non-taxable assets for export, amount of assets transferred to offices abroad | The value of this field is calculated as [203] – [9203]. |
+| **Item4**    | Amount of the transfer value of taxable assets,etc.（①＋②＋③）  | The value of this field is calculated as **Item1** + **Item2** + **Item3**. |
+| **Item5**    | Amount of the transfer value of taxable assets,etc.（Amount of ④） | The value of this field equals **Item4**.   |
+| **Item6**    | Non-taxable sales   | The value of this field is calculated as [206] – [9206].    |
+| **Item7**    | Amount of the transfer value of assets,etc.（⑤＋⑥）   | The value of this field is calculated as **Item5** + **Item6**.   |
+| **Item8**    | Taxable sales ratio（④／⑦）   | The value of this field is calculated as **Item4** ÷ **Item7**.    |
+| **Item9**    | Amount of expenses relating to taxable purchases (tax included)  | The value of this field is calculated as [208] + [214] + [215] + [8208] + [8214] + [8215] – [9208] – [9214] – [9215] – [7208] – [7214] – [7215].  |
+| **Item10**   | Amount of consumption taxes on taxable purchases   | The value of this field is calculated as the sum of consumption tax amounts of **Item8** by tax rate.   |
+| **Item11**   | Amount of consideration paid for specified taxable purchases  | The value of this field is calculated as the sum of consumption tax amounts of ([210] + [8210] – [9210] – [7210]) by tax rate.  |
+| **Item12**   | Consumption tax amount related to specified tax purchases  | The value of this field is **0** (zero).   |
+| **Item13**   | Amount of consumption tax relating to taxable freight    | The value of this field is calculated as **Item9** + **Item10** + **Item11**.   |
+| **Item14**   | Amount of consumption tax adjustment(addition & subtraction) in the event tax liability exemption status is granted or lost    |   |
+| **Item15**   | Total amount of taxes on taxable purchases, etc. （⑩＋⑫＋⑬±⑭）  | The value of this field is calculated as the sum of consumption tax amounts of ([208] + [8208] – [9208] – [7208]) by tax rate.   |
+| **Item16**   | Taxable sales are 500 million yen or less, and if the taxable sales ratio is 95% or more (Amount of ⑮)  | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item15**. |
+| **Item17**   | Portion of ⑮ required for taxable sales only | If the value of the **Ratio of taxable sales** field is less than 0.95, or amount of the transfer value of taxable assets is less then 500 million yen and **Individual method** is selected, the value of this field is calculated as [208] + [8208] + [9208] + [7208].  |
+| **Item18**   | Portion of ⑮ required for both taxable and non-taxable sales  |  If the value of the **Ratio of taxable sales** field is less than 0.95, or amount of the transfer value of taxable assets is less then 500 million yen and **Individual method** is selected, the value of this field is calculated as [215] + [8215] - [9215] - [7215]. |
+| **Item19**   | Amount of deductible taxes on taxable purchases, etc based on the itemized method 〔⑰＋（⑱×④／⑦）〕  | If the value of the **Ratio of taxable sales** field is less than 0.95, or amount of the transfer value of taxable assets is less then 500 million yen and **Individual method** is selected, the value of this field is calculated as **Item17** + **Item18** × **Ratio of taxable sales**. Otherwise, the value is **0** (zero). |
+| **Item20**   | Amount of deductible taxes on taxable purchases, etc. based on proportional method （⑮×④／⑦） | If the value of the **Ratio of taxable sales** field is less than 0.95, or amount of the transfer value of taxable assets is less then 500 million yen and **Lump sum method** is selected, the value of this field is calculated as **Item15** × **Ratio of taxable sales**. Otherwise, the value is **0** (zero).  |
+| **Item21**   | Amount of consumption tax adjustment (addition and subtraction) relating to fixed assets subject to adjustment in the event of a change in the taxable sales ratio  | The value of this field is calculated as [221] |
+| **Item22**    | Amount of consumption tax adjustment(addition & subtraction) in the event fixed assets subject to adjustment are converted is to taxable or are nontaxable business assets    | The value of this field is calculated as [222].   |
+| **Item23**   | Additional amount when a residential rental building is provided (transferred) for tax rental purposes     | The value of this field is calculated as [223].  |
+| **Item24** | Deductible tax on purchase. When 〔Amount of （⑯、⑲、or ⑳）±㉑±㉒＋㉓〕 is positive | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item16** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Individual method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item19** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Lump sum method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item20** + **Item21** + **Item22** + **Item23**. Positive result.|
+| **Item25** | Tax adjustment for excess deduction. When 〔Amount of （⑯、⑲、or ⑳）±㉑±㉒＋㉓〕 is negative | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item16** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Individual method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item19** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Lump sum method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item20** + **Item21** + **Item22** + **Item23**. Negative result. |
+| **Item26** | Amount of consumption tax relating to recovered bad debt | The value of this field is calculated as [8310]. **Note:** The amount of reporting code 8310 is related to the ledger account that is set up in the **Collected bad debt** field on the **Tax reporting accounts** page. For more information, see the [Set up tax reporting accounts for bad debts](#set-up-tax-reporting-accounts-for-bad-debts) section of this topic. |
 
-    **Item14**, **Item15**, and **Item16** are calculated if both the following conditions are met: 
-    
-    - The value of the **Ratio of taxable sales** field is less than 0.95.
-    - **Individual method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box.
-    
-    Otherwise, the value of these fields is **0** (zero).
+5. Select **Finalize** to finalize tax amounts.
+6. After you've finalized tax amounts, select **Consumption tax report** button on the Action pane to generate amounts on the **Consumption tax report** page.
+7. On the **Header** tab, review the header information.
 
-| Field (Row)  | Description  | Calculation   |
-|--------------|--------------|---------------|
-| Item14 (Row17)   | Portion of Item12 related to taxable sales only  | The value of this field is calculated as the sum of consumption tax amounts of ([208] + [8208] – [9208] – [7208]) by tax rate.   |
-| Item15 (Row18)   | Portion of Item12 related to both taxable and nontaxable sales  | The value of this field is calculated as the sum of consumption tax amounts of ([215] + [8215] – [9215] – [7215]) by tax rate.  |
-| Item16 (Row19)  | Amount of deductible taxes on taxable purchases. | The value of this field is calculated as **Item14** + **Item15** × **Ratio of taxable sales**  |
-| Item17 (Row20)  | Amount of deductible taxes on taxable purchases calculated by the lump sum distribution method  | If the value of the **Ratio of taxable sales** field is less than 0.95, and **Lump sum method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item12** × **Ratio of taxable sales**. Otherwise, the value is **0** (zero).  |
-| Item18 (Row21)  | Adjustment (addition or decrease) of consumption tax on fixed assets subject to adjustment when sales ratio changes | The value of this field is **0** (zero).     |
-| Item19 (Row22)   | Adjustment (addition or decrease) of consumption tax amount when the fixed assets are moved to taxable business (from non-taxable business) | The value of this field is **0** (zero).  |
-| Item20 (Row23)     | Deductible tax on purchase  | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item13** + **Item18** + **Item19**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Individual method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item16** + **Item18** + **Item19**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Lump sum method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item17** + **Item18** + **Item19**. |
-| Item21 (Row24)   | Excess deduction on purchases    | If the value of the **Item20** field is more than 0, the value of this field is **0** (zero). Otherwise, the value of this field is calculated as ABS(Item20), and the **Item20** field is set to **0** (zero).   |
-| Item22 (Row25)  | Amount of consumption tax relating to recovered bad debt    | The value of this field is calculated as [8310] × 6.3 ÷ 108. **Note:** The amount of reporting code 8310 is related to the ledger account that is set up in the **Collected bad debt** field on the **Tax reporting accounts** page. For more information, see the [Set up tax reporting accounts for bad debts](#set-up-tax-reporting-accounts-for-bad-debts) section of this topic.  |
+| Field                                                                    | Description                              |
+|--------------------------------------------------------------------------|------------------------------------------|
+| **Taxation office name**                                                 | The details of the tax office name.      |
+| **Company representative, Accounting personnel**                         | The name of the company representative.  |
+| **From date, To date**                                                   | The tax calculation period.              |
+| **From date for mid term declaration, To date for mid term declaration** | The dates for interim sales tax reports. |
 
-6. Select **Finalize** to finalize tax amounts.
-7. After you've finalized tax amounts, select **Consumption tax report** to generate amounts on the **Consumption tax report** page.
-
-    ![Consumption tax report page, Tax calculation tab.](../media/e8aaba7ef01662b2bd6aaec8be74cc2d.png)
-
-8. On the **Header** tab, review the header information.
-
-| Field                                                                | Description                              |
-|----------------------------------------------------------------------|------------------------------------------|
-| Taxation office name                                                 | The details of the tax office name.      |
-| Company representative, Accounting personnel                         | The name of the company representative.  |
-| From date, To date                                                   | The tax calculation period.              |
-| From date for mid term declaration, To date for mid term declaration | The dates for interim sales tax reports. |
-
-9. On the **Tax calculation** tab, review the tax amounts in the **Items** fields. The values represent the amounts that will be entered in the rows of Table 3-(2) ("Consumption tax return form").
+8. On the **Tax calculation** tab, review the tax amounts in the **Items** fields. The values represent the amounts that will be entered in the rows of **Table 1** and **Table 2**.
 
 > [!NOTE]
 > In the "Calculation" column of the following table, brackets ([…]) in the formulas enclose the values of the reporting codes. The values of **Item** fields on the **Consumption tax calculation sheet** page are referenced as **CalcSheet.Item**.
