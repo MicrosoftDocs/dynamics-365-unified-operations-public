@@ -16,7 +16,7 @@ ms.:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
+This article describes how to set up and work with the functionality for generation of electronic invoices for sales and project invoices and credit notes in the Italy-specific **FatturaPA** ordinary format. Genereation of electronic invoices in the simplified **FatturaPA** format is out of scope of the standard Microsoft Dynamics 365 Finance functionality.
 
 As of version 1.2 of the FatturaPA format, electronic invoices can be used for all types of businesses. These types include public administrations, private companies, and professionals.
 
