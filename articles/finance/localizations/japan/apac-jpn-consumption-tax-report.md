@@ -47,10 +47,6 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 The following table provides an example of sales tax reporting codes for Japan.
 
-The "Where it's used for Consumption tax calculation sheet" column shows which **Item** field on the **Consumption tax calculation sheet** page and which row on the **Consumption tax calculation sheet** report (Table 2-1) each reporting code is used in. (For more information about the **Item** fields, see step 4 in the [Generate the Japan consumption tax report](#generate-the-japan-consumption-tax-report) section of this topic. For more information about the rows on the report, see step 15 in the [Example](#example) section.)
-
-The "Where it's used for Consumption tax report" column shows which **Item** field on the **Consumption tax report** page and which row on the **Consumption tax report** report (Table 3-(2)) each reporting code is used in. (For more information about the **Item** fields, see step 8 in the [Generate the Japan consumption tax report](#generate-the-japan-consumption-tax-report) section of this topic. For more information about the rows on the report, see step 15 in the [Example](#example) section.)
-
 | Reporting code | Reporting code name | Sales tax codes setup  |
 |----------------|---------------------|-------------------------------------------------------|
 | **1**          | **Taxable sales**   | Taxable sales     |
