@@ -277,6 +277,7 @@ The following placeholders retrieve and show data for individual products (lines
 | `giftcardexpiration`             | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
 | `giftcardrecipientname`          | The name of the gift card recipient, for products of the gift card type. |
 | `giftcardbuyername`              | The name of the gift card buyer, for products of the gift card type. |
+| `lineproductvariantinfo`         | The dimensions of the variant for the line. |
 
 ### Format of order line placeholders in the email message body
 
