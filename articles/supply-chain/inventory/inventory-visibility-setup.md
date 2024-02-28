@@ -23,8 +23,11 @@ This article describes how to install the Inventory Visibility Add-in for Micros
 You must use [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2) to install the Inventory Visibility Add-in. Lifecycle Services is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 > [!TIP]
-> We recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896) for any feature/solution consultant. And if any technical issue/exception you’d like to seek help you can send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) directly and include your Supply Chain Management environment ID.
-> On the other hand, you can go to [Inventory Visibility Github](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples) to see some useful example codes and troubleshooting guides.
+> If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features. 
+>
+> If you're experiencing technical issues or running into exceptions, you can get help by sending email directly to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) (please be sure to include your Supply Chain Management environment ID).
+> 
+> For useful code samples and troubleshooting guides, visit to the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 
 ## Inventory Visibility prerequisites
 
