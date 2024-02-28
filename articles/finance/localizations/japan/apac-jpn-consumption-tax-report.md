@@ -51,36 +51,46 @@ The "Where it's used for Consumption tax calculation sheet" column shows which *
 
 The "Where it's used for Consumption tax report" column shows which **Item** field on the **Consumption tax report** page and which row on the **Consumption tax report** report (Table 3-(2)) each reporting code is used in. (For more information about the **Item** fields, see step 8 in the [Generate the Japan consumption tax report](#generate-the-japan-consumption-tax-report) section of this topic. For more information about the rows on the report, see step 15 in the [Example](#example) section.)
 
-| Reporting code | Reporting code name | Where it's used for Consumption tax calculation sheet | Where it's used for Consumption tax report | Sales tax codes setup  |
-|----------------|---------------------|-------------------------------------------------------|--------------------------------------------|------------------------|
-| **1**          | **Taxable sales**   | Item1 (Row1)   | Item1 (Row1..Row6 (at tax rates), Row7 (total)) | Taxable sales     |
-| 8001           | Consumption tax amount of taxable sales   | Not used  | Item2 (Row11..Row16 (at tax rates))      | Sales tax payable     |
-| 9001           | Taxable sales credit note   | Item1 (Row1)   | Not used    | Taxable sales credit note    |
-| 7001           | Consumption tax amount of taxable sales credit note     | Not used   | Item5 (Row18)    | Sales tax on sales credit note    |
-| **202**        | **Tax-exempt sales**    | Item2 (Row2)    | Not used     | Tax-free sale      |
-| 9202           | Tax-exempt sales credit note    | Same as 202   | Not used     | Tax exempt sales credit note    |
-| **203**        | **Non-taxable export**    | Item3 (Row3)    | Not used        | Tax-free sale    |
-| 9203           | Credit note on non-taxable export     | Same as 203     | Not used   | Tax exempt sales credit note    |
-| **206**        | **Non-taxable sales**    | Item6 (Row6)   | Not used    | Tax-free sale      |
-| 9206           | Non-taxable sales credit note   | Same as 206    | Not used     | Tax exempt sales credit note    |
-| **208**        | **Taxable purchases related to taxable sales**     | Item8 (Row9), Item14 (Row17) (if the ratio is less than 0.95 and **Individual method** is selected as the calculation method) | Not used    | Taxable purchases     |
-| 8208           | Consumption tax amount of taxable purchases related to taxable sales   | Same as 208   | Row22, Row23   | Sales tax receivable     |
-| 9208           | Taxable purchase credit note related to taxable sales   | Same as 208  | Not used    | Taxable purchase credit note     |
-| 7208           | Consumption tax amount of taxable purchase credit note related to taxable sales   | Same as 208    | Row22, Row23   | Sales tax on purchase credit note |
-| **214**        | **Taxable purchases related to non-taxable sales**     | Item8 (Row9)  | Not used    | Taxable purchases   |
-| 8214           | Consumption tax amount of taxable purchases related to non-taxable sales  | Same as 214  | Row22, Row23   | Sales tax receivable     |
-| 9214           | Taxable purchase credit note related to non-taxable sales   | Same as 214   | Not used   | Taxable purchase credit note   |
-| 7214           | Consumption tax amount of taxable purchase credit note related to non-taxable sales | Same as 214 | Row22, Row23  | Sales tax on purchase credit note |
-| **215**        | **Common taxable purchases (related to both taxable and non-taxable sales)**        | Item8 (Row9), Item15 (Row18) (if the ratio is less than 0.95 and **Individual method** is selected as the calculation method) | Not used   | Taxable purchases   |
-| 8215           | Consumption tax amount of common taxable purchases    | Same as 215    | Row22, Row23      | Sales tax receivable    |
-| 9215           | Common taxable purchase сredit note    | Same as 215  | Not used      | Taxable purchase credit note      |
-| 7215           | Consumption tax amount of common taxable purchase credit note   | Same as 215  | Row22, Row23   | Sales tax on purchase credit note |
-| **210**        | **Taxable import**     | Item10 (Row13)     | Not used     | Taxable import   |
-| 8210           | Consumption tax amount of taxable import  | Same as 210    | Row22, Row23   | Use tax  |
-| 9210           | Taxable import credit note   | Same as 210    | Not used    | Taxable import credit note        |
-| 7210           | Consumption tax amount of taxable import credit note   | Same as 210    | Row22, Row23   | Sales tax on import credit note   |
-| **8308**       | **Bad debt**   | Not used   | Item6       | Sales tax receivable  |
-| 8310           | Bad debt - paid    | Item22 (Row25)    | Not used   | Sales tax on purchase credit note |
+| Reporting code | Reporting code name | Sales tax codes setup  |
+|----------------|---------------------|-------------------------------------------------------|
+| **1**          | **Taxable sales**   | Taxable sales     |
+| 8001           | Consumption tax amount of taxable sales   | Sales tax payable     |
+| 9001           | Taxable sales credit note   | Taxable sales credit note    |
+| 7001           | Consumption tax amount of taxable sales credit note     | Sales tax on sales credit note    |
+| **12**         | Taxable purchases related to specified taxable purchases - reverse charge | Taxable sales <br> Taxable import |
+| 8012           | Consumption tax on taxable purchases related to specified taxable purchases - reverse charge | Sales tax payable <br> Use tax |
+| 9012           | Taxable purchases credit note related to specified taxable purchases - reverse charge  | Taxable sales credit note <br> Taxable import credit note |
+| 7012           | Consumption tax on taxable purchases credit note related to specified taxable purchases - reverse charge | Sales tax on sales credit note <br> Sales tax on import credit note |
+| **202**        | **Tax-exempt sales**    | Tax-free sale      |
+| 9202           | Tax-exempt sales credit note    | Tax exempt sales credit note    |
+| **203**        | **Non-taxable export**    |  Tax-free sale    |
+| 9203           | Credit note on non-taxable export     |  Tax exempt sales credit note    |
+| **206**        | **Non-taxable sales**    | Tax-free sale      |
+| 9206           | Non-taxable sales credit note   |  Tax exempt sales credit note    |
+| **208**        | **Taxable purchases related to taxable sales**     | Taxable purchases     |
+| 8208           | Consumption tax amount of taxable purchases related to taxable sales   |  Sales tax receivable     |
+| 9208           | Taxable purchase credit note related to taxable sales   | Taxable purchase credit note     |
+| 7208           | Consumption tax amount of taxable purchase credit note related to taxable sales   | Sales tax on purchase credit note |
+| **214**        | **Taxable purchases related to non-taxable sales**     | Taxable purchases   |
+| 8214           | Consumption tax amount of taxable purchases related to non-taxable sales  |  Sales tax receivable     |
+| 9214           | Taxable purchase credit note related to non-taxable sales   |  Taxable purchase credit note   |
+| 7214           | Consumption tax amount of taxable purchase credit note related to non-taxable sales | Sales tax on purchase credit note |
+| **215**        | **Common taxable purchases (related to both taxable and non-taxable sales)**        |  Taxable purchases   |
+| 8215           | Consumption tax amount of common taxable purchases    |  Sales tax receivable    |
+| 9215           | Common taxable purchase сredit note    | Taxable purchase credit note      |
+| 7215           | Consumption tax amount of common taxable purchase credit note   | Sales tax on purchase credit note |
+| **210**        | **Taxable import**     |  Taxable import   |
+| 8210           | Consumption tax amount of taxable import  |  Use tax  |
+| 9210           | Taxable import credit note   |  Taxable import credit note        |
+| 7210           | Consumption tax amount of taxable import credit note   | Sales tax on import credit note   |
+|                | **Bad debt** | |
+| 8308           | Bad debt   |  Sales tax receivable  |
+| 8310           | Bad debt - paid    |  Sales tax on purchase credit note |
+|                | **Adjustments** | |
+| 221            | Adjustment (addition or subtraction) amount of consumption tax related to fixed assets subject to adjustment when taxable sales ratio changes |  - Sales tax payable <br> Sales tax on purchase credit note <br> Sales tax receivable <br> Sales tax on purchase credit note |
+| 222            | Adjustment (addition or subtraction) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | Sales tax payable <br> Sales tax on purchase credit note <br> Sales tax receivable <br> Sales tax on purchase credit note  |
+| 223            | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | Sales tax payable <br> Sales tax on purchase credit note <br> Sales tax receivable <br> Sales tax on purchase credit note  |
+| 2014           | Amount of adjustment (addition or subtraction) to the amount of consumption tax in case you do not receive (receive) exemption from tax liability | Sales tax payable <br> Sales tax on purchase credit note <br> Sales tax receivable <br> Sales tax on purchase credit note  |
 
 ## Set up Sales tax codes
 
