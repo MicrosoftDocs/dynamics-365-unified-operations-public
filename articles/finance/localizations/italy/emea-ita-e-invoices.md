@@ -16,7 +16,7 @@ ms.:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and work with the functionality for generation of electronic invoices for sales and project invoices and credit notes in the Italy-specific **FatturaPA** ordinary format. Genereation of electronic invoices in the simplified **FatturaPA** format is out of scope of the standard Microsoft Dynamics 365 Finance functionality.
+This article describes how to set up and work with the functionality for generation of electronic invoices for sales and project invoices and credit notes in the Italy-specific **FatturaPA** ordinary format. <a id="simplified"></a>Genereation of electronic invoices in the simplified **FatturaPA** format is out of scope of the standard Microsoft Dynamics 365 Finance functionality.
 
 As of version 1.2 of the FatturaPA format, electronic invoices can be used for all types of businesses. These types include public administrations, private companies, and professionals.
 
@@ -241,6 +241,9 @@ If a required document type isn't listed, you can manually adjust the document t
 - Invoice document type registration
 
 For more information, see the "Invoice types configuration" section in [A country/region-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+> [!NOTE]
+> The system allows to configure any Invoice type for a specific electronic invoice. It is users' responsibility that the manually assigned Invoice Type is inline with the rest of the electronic invoice content. Take into account that not all possible electronic invoicing [scenarios](#simplified) are covered by out of the box.
 
 ### <a id="digitalcert"></a>Digital certificates
 
