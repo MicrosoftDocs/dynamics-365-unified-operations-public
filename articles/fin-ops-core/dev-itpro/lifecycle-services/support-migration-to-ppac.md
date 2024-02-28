@@ -1,6 +1,6 @@
 ---
-title: Migration of Lifecycle Services Support to PPAC
-description: Outline of Lifecycle Services Support removal and migration to PPAC.
+title: Migration of the Lifecycle Services Support experience to Power Platform admin center
+description: This article provides information about the removal of Microsoft Dynamics Lifecycle Services Support and migration to Power Platform admin center.
 author: dgorn
 ms.author: dgorn
 ms.topic: conceptual 
@@ -10,55 +10,60 @@ ms.custom:
 ms.reviewer: johnmichalak
 ---
 
-# Migration of Lifecycle Services Support Experience to Power Platform Admin Center
+# Migration of the Lifecycle Services Support experience to Power Platform admin center
 
 [!include[banner](../includes/banner.md)]
 
-To consolidate related functionality from multiple sites and more effectively provide help content, the Lifecycle Services Support page is being retired. Users will transition to the [Power Platform admin center](/power-platform/admin/admin-documentation) (PPAC) for support request submission and viewing. 
+To consolidate related functionality from multiple sites and more effectively provide Help content, the **Support** page in Microsoft Dynamics Lifecycle Services is being retired. Users will transition to [Power Platform admin center](/power-platform/admin/admin-documentation) and use it to submit and view support requests.
 
-## Stages of Lifecycle Services Support migration to PPAC 
+## Stages of the Lifecycle Services Support migration to Power Platform admin center
 
-The Lifecycle Services Support transition to PPAC follows these stages. Each stage lasts one month or until all required fixes are deployed to production, whichever is later. 
+The transition from Lifecycle Services Support to Power Platform admin center has these stages. Each stage lasts one month or until all required fixes are deployed to production, whichever is later.
 
-1. A banner with a redirect link is shown on the Lifecycle Services Support page to allow users to test PPAC Help + Support behavior. 
-1. All support page entry points in Lifecycle Services begin redirecting the user to PPAC Help + Support. 
-    - Support menu item in the hamburger menu in all Lifecycle Services project types. 
-    - Support tile in Learn projects. 
-    - **Manage incidents** tile on the Lifecycle Services home page. 
-1. The **Support issues** vertical tile on the Lifecycle Services **Work items** page is removed and access to the Lifecycle Services Support page is blocked. 
+1. A banner appears on the Lifecycle Services **Support** page. This banner includes a redirect link so that users can test the Power Platform admin center Help \+ Support behavior.
+1. All entry points to the **Support** page in Lifecycle Services begin to redirect users to Power Platform admin center Help \+ Support.
 
-## Access to PPAC Help + Support Page 
+    - The **Support** item on the Menu button in Lifecycle Services projects of all types (The Menu button is sometimes referred to as the hamburger or the hamburger button.)
+    - The **Support** tile in Learn projects
+    - The **Manage incidents** tile on the Lifecycle Services home page
 
-When PPAC is accessed using the Lifecycle Services support link, Lifecycle Services project details are passed to PPAC. This information enables the following behavior in PPAC: 
-- The user is granted the Lifecycle Services User role in PPAC, allowing access to the Help + Support section without a permanent admin role. 
-- Support requests previously submitted in the source Lifecycle Services project are visible alongside support requests for other PPAC-managed products. 
-- The **Manage incidents** tile redirects to a PPAC Help + Support page that lists all of the support requests the user has permission to view across all of their Lifecycle Services projects. 
-- The following fields are prepopulated when the user opens the support request creation form: 
+1. The **Support issues** vertical tile on the Lifecycle Services **Work items** page is removed, and access to the Lifecycle Services **Support** page is blocked.
+
+## Access to the Power Platform admin center Help + Support page
+
+When Power Platform admin center is accessed by using the support link in Lifecycle Services, Lifecycle Services project information is passed to Power Platform admin center. This information enables the following behavior in Power Platform admin center:
+
+- The user is granted the **Lifecycle Services User** role in Power Platform admin center. This role allows the user to access the Help \+ Support section without a permanent admin role.
+- Support requests that were previously submitted in the source Lifecycle Services project are visible alongside support requests for other products that are managed by Power Platform admin center.
+- The **Manage incidents** tile redirects to a Power Platform admin center Help \+ Support page that lists all the support requests that the user has permission to view across all their Lifecycle Services projects.
+- The following fields are prepopulated when the user opens the support request creation form:
+
     - Product
     - Lifecycle Services region
     - Lifecycle Services project
 
-To access support functionality in PPAC, users must have one of the admin roles outlined in the [Prerequisites](/power-platform/admin/get-help-support#prerequisites). To provide users persistent ability to submit and view support requests without elevated admin privileges, customer administrators can grant them one of the following roles:
+To access support functionality in Power Platform admin center, users must have one of the admin roles that are outlined in [Prerequisites](/power-platform/admin/get-help-support#prerequisites). To give users the persistent ability to submit and view support requests without elevated admin privileges, customer administrators can grant them one of the following roles:
+
 - [Service Support Administrator](/entra/identity/role-based-access-control/permissions-reference#service-support-administrator)
 - [Helpdesk Administrator](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
-  
-  > [!NOTE]
-  > In addition to support access, this role can reset passwords for nonadmin users.
 
-## Role Change Advisory
+    > [!NOTE]
+    > In addition to having support access, users who have this role can reset passwords for non-admin users.
 
-The Lifecycle Services User role temporarily granted when a user enters PPAC from Lifecycle Services is present to reduce the immediate impact of transitioning to PPAC. This role will be removed at a future date after the transition is complete. In the long term, customers are advised to assign appropriate admin roles to all users who require access to support functionality. Users with no admin roles other than Lifecycle Services User are shown a reminder to request permanent admin roles for their account.
+## Role change advisory
 
-A user who doesn't have a permanent admin role can't access Help + Support in PPAC when they navigate directly to [Power Platform admin center](/power-platform/admin/admin-documentation) without passing Lifecycle Services project information.
+The **Lifecycle Services User** role that's temporarily granted when a user enters Power Platform admin center from Lifecycle Services helps reduce the immediate impact of the transition to Power Platform admin center. This role will eventually be removed, after the transition is completed. For the long term, customers should assign appropriate admin roles to all users who require access to support functionality. Users who have no admin role except **Lifecycle Services User** receive a message that reminds them to request permanent admin roles for their account.
 
-## Partner Scenarios
+Users who don't have a permanent admin role can't access Help \+ Support in Power Platform admin center if they go directly to [Power Platform admin center](/power-platform/admin/admin-documentation) without passing Lifecycle Services project information.
 
-In Lifecycle Services, users from any tenant can be added to a customer’s project to allow them to create support tickets on the customer’s behalf and view tickets previously submitted from that project. These users often work on customer workloads while signed in under the partner tenant.
+## Partner scenarios
 
-In PPAC, partner users must be granted [delegated admin](/power-platform/admin/for-partners-delegated-administrator?wt.mc_id=ppac_inproducthelp_ghp) permissions, allowing them to sign in under the customer’s tenant. In the long term, partners are advised to move to the delegated admin model when working on behalf of customers.
+In Lifecycle Services, users from any tenant can be added to a customer's project. They're then allowed to create support tickets on the customer's behalf and view tickets that were previously submitted from that project. These users often work on customer workloads while they're signed in under the partner tenant.
 
-If a partner user creates a support ticket in PPAC while signed in with the partner tenant, customer users can't view it unless they're signed in with Lifecycle Services project context. Submitting support tickets as delegated admin links them to the customer tenant, providing correct visibility outside of the Lifecycle Services project.
+In Power Platform admin center, partner users must be granted [delegated admin](/power-platform/admin/for-partners-delegated-administrator?wt.mc_id=Power%20Platform%20admin%20center_inproducthelp_ghp) permissions that allow them to sign in under the customer's tenant. For the long term, partners that work on behalf of customers should move to the delegated admin model.
 
-## Active Issue Submission
+If a partner user creates a support ticket in Power Platform admin center while they're signed in under the partner tenant, customer users can view that support ticket only if they're signed in with Lifecycle Services project context. However, if a partner user submits a support ticket as a delegated admin, they're linked to the customer tenant. This link provides correct visibility outside the Lifecycle Services project.
 
-Submission of active issues stored as Azure DevOps work items in the customer's project is no longer supported. Submission of active issues to Microsoft Support is disabled in Lifecycle Services. Submission of issues is being removed from the Dynamics Finance and Operations help menu in a future update.
+## Active issue submission
+
+Submission of active issues that are stored as Azure DevOps work items in the customer's project is no longer supported. Submission of active issues to Microsoft Support is disabled in Lifecycle Services. Submission of issues is being removed from the **Help** menu in Dynamics 365 finance and operations apps in a future update.
