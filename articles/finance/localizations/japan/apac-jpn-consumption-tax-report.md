@@ -45,7 +45,7 @@ For a description of the calculation rules for JCT return report, see [Procedure
 
 Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](../../general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
 
-The following table provides an example of sales tax reporting codes for Japan.
+The following table provides an example of sales tax reporting codes for Japan. For some of the **Reporting codes** several options are available.
 
 | Reporting code | Reporting code name | Sales tax codes setup  |
 |----------------|---------------------|-------------------------------------------------------|
@@ -87,6 +87,8 @@ The following table provides an example of sales tax reporting codes for Japan.
 | 222            | Adjustment (addition or subtraction) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | <li> Sales tax payable <br> <li> Sales tax on purchase credit note <br> <li> Sales tax receivable <br> <li> Sales tax on purchase credit note  |
 | 223            | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | <li> Sales tax payable <br> <li> Sales tax on purchase credit note <br> <li> Sales tax receivable <br> <li> Sales tax on purchase credit note  |
 | 2014           | Amount of adjustment (addition or subtraction) to the amount of consumption tax in case you do not receive (receive) exemption from tax liability | <li> Sales tax payable <br> <li> Sales tax on purchase credit note <br> <li> Sales tax receivable <br> <li> Sales tax on purchase credit note  |
+
+You can download 
 
 ## Set up Sales tax codes
 
