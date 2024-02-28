@@ -19,9 +19,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides general information about setting up and generating the tax statement by **Reporting codes** for some countries/regions.
-
-This article provides a generic approach to setting up and generating the tax statement. This approach is common for users in legal entities in the following countries/regions:
+This article provides general approach about setting up and generating the tax statement by **Reporting codes** for some countries/regions. This approach is common for users in legal entities in the following countries/regions:
 
 -   Australia
 -   Japan
