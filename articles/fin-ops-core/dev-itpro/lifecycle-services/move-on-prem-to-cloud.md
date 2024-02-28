@@ -4,7 +4,7 @@
 title: Move Lifecycle Services implementation projects from on-premises to the cloud
 description: This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: ttreen
-ms.date: 10/12/2023
+ms.date: 02/28/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -247,20 +247,22 @@ After the validation is successful, the application presents a set of menu optio
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
 
     > [!NOTE]
-    > All snapshots must be manually started in SQL Management Studio. Open the replication monitor, and select your SQL Server instance. Then, on the **Agents** tab, select and hold (or right-click) the publisher that you want to start, and select **Start**.
-    >
-    > Start one snapshot at a time, and wait for the replication of that snapshot to be completed. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
-    >
-    > For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](monitor-replication.md).
-    >
-    > You must manually start the publisher snapshots for steps 6 and 7.
-    >
-    > Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
+    > All snapshots must be manually started in SQL Management Studio.
 
+To manually start a snapshort, follow these steps:
+1. Open the replication monitor and select your SQL Server instance.
+2. On the **Agents** tab, select and hold (or right-click) the publisher to start.
+3. Select **Start**.
+4. Start one snapshot at a time, and wait for the replication of that snapshot to be completed.
+5. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
+   For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](migration-upgrade/monitor-replication).
+    
+You must manually start the publisher snapshots for steps 6 and 7.
+Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
-    > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
+   > [!NOTE]
+   > After the replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job takes some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see [Reporting section of the application](migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
 
 6. **Replication: Setup Publication for Other Objects (functions)**
 
@@ -273,18 +275,18 @@ After the validation is successful, the application presents a set of menu optio
     >
     > If there are no functions to replicate, the publication won't be created.
     > 
-    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
+    > Don't move to the next step until the **DataReplicationStatus** property is shown as completed.
 
 7. **Cutover: Setup Publication for Non PK Tables**
 
     This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. 
     
     > [!NOTE]
-    > If there are no locked tables, then publication will not be created.
+    > If there are no locked tables, then publication won't be created.
 
     **Publication names:** AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
-    If AX Service acquires a schema lock during creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during creation of the cutover publication.
+    If the AX Service acquires a schema lock during creation of the primary key publication, those tables are ignored and omitted from the publication. They are added to temporary tables and marked for replication during creation of the cutover publication.
 
     > [IMPORTANT]
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
@@ -292,7 +294,7 @@ After the validation is successful, the application presents a set of menu optio
     > [!NOTE]
     > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
     > 
-    > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
+    > To learn more about the **'dv'** option, see [Reporting section of the application](migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
   
 8. **Cutover: Remove replication setup**
 
