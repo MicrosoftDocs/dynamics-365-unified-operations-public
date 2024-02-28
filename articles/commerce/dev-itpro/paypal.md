@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for PayPal
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: BrianShook
-ms.date: 02/27/2024
+ms.date: 02/28/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
