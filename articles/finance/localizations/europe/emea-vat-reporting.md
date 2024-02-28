@@ -1,6 +1,6 @@
 ---
-title: VAT reporting for Europe
-description: This article provides general information about setting up and generating the value-added tax (VAT) statement for some European countries/regions.
+title: Tax reporting by Reporting codes
+description: This article provides general information about setting up and generating the value-added tax (VAT) statement.
 author: mrolecki
 ms.date: 03/24/2022
 ms.topic: article
@@ -15,46 +15,22 @@ ms.dyn365.ops.version: Version 1611
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 ---
 
-# VAT reporting for Europe
+# Tax reporting by Reporting codes
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides general information about setting up and generating the value-added tax (VAT) statement for some European countries/regions.
+This article provides general information about setting up and generating the tax statement by **Reporting codes** for some countries/regions.
 
-This article provides a generic approach to setting up and generating the VAT statement. This approach is common for users in legal entities in the following countries/regions:
+This article provides a generic approach to setting up and generating the tax statement. This approach is common for users in legal entities in the following countries/regions:
 
--   Austria
--   Belgium
--   Czech Republic
--   Estonia
--   Finland
--   Germany
+-   Australia
+-   Japan
 -   Latvia
 -   Lithuania
--   Netherlands
--   Sweden
-
-> [!IMPORTANT]
-> Features described in this article for Austria, Czech Republic, Germany, Netherlands, and Sweden are deprecated. For more information, see [Removed and deprecated features](../../get-started/removed-deprecated-features-finance.md).
-> Use the links in the following table to learn more about the new design of VAT declarations in the corresponding countries/regions.
-> 
->
-> | Country/region | Additional information                                                          |
-> |----------------|---------------------------------------------------------------------------------|
-> | Austria        | [VAT declaration (Austria)](../austria/emea-aut-vat-declaration-austria.md)       |                                                                           
-> | Czech Republic | [VAT declaration (Czech Republic](../czech-republic/emea-cze-vat-declaration-tax-declaration-model.md) |
-> | Denmark        | [VAT declaration (Denmark)](../denmark/emea-dnk-vat-declaration-denmark.md)         |
-> | France         | [VAT declaration (France)](../france/emea-fra-VAT-declaration-preview-France.md)       |
-> | Germany        | [VAT declaration (Germany)](../germany/emea-deu-vat-declaration-germany.md)           |
-> | Netherlands    | [VAT declaration (Netherlands)](../netherlands/emea-nl-vat-declaration-netherlands.md)    |
-> | Norway         | [VAT return with direct submission to Altinn](../norway/emea-nor-vat-return.md) |
-> | Spain          | [VAT declaration (Spain)](../spain/emea-esp-vat-declaration-spain.md)              |
-> | Sweden         | [VAT declaration (Sweden)](../sweden/emea-swe-VAT-declaration-Sweden.md)          |
-> | Switzerland    | [VAT declaration (Switzerland)](../switzerland/emea-che-vat-declaration-switzerland.md) |
-> | UK             | [Prepare for integration with MRD for VAT](../united-kingdom/emea-gbr-mtd-vat-integration.md) |
 
 ## VAT statement overview
-The VAT statement is based on tax transactions’ amounts. The process of generating a VAT statement is part of the Sales tax payment process, which is implemented through the Settle and post sales tax function. This function calculates the sales tax that is due for a given period. The settlement calculation includes the posted sales tax for the selected settlement period for the tax transactions. The process for calculating data for a VAT statement is based on the relationship between sales tax codes and sales tax reporting codes, where sales tax reporting codes match the VAT statements boxes (or tags in XML). For each sales tax code, sales tax reporting codes should be set up for each type of transaction, such as taxable sales, taxable purchases, taxable import. These type of transactions are described in the Sales tax codes for VAT reporting section later in this article.
+
+The VAT statement is based on tax transactions’ amounts. The process of generating a tax statement is part of the Sales tax payment process, which is implemented through the Settle and post sales tax function. This function calculates the sales tax that is due for a given period. The settlement calculation includes the posted sales tax for the selected settlement period for the tax transactions. The process for calculating data for a VAT statement is based on the relationship between sales tax codes and sales tax reporting codes, where sales tax reporting codes match the VAT statements boxes (or tags in XML). For each sales tax code, sales tax reporting codes should be set up for each type of transaction, such as taxable sales, taxable purchases, taxable import. These type of transactions are described in the Sales tax codes for VAT reporting section later in this article.
 
 For each sales tax reporting code, a specific report layout should be determined. At the same time, sales tax codes are linked to a specific sales tax authority through sales tax settlement periods. For every sales tax authority, a report layout should be determined. Thus, only sales tax reporting codes with the same report layout that is set up for a sales tax authority in sales tax settlement periods for the sales tax code can be selected in the report setup of the sales tax code. A sales tax transaction generated upon posting an order or a journal, contains a sales tax code, sales tax source, sales tax direction, and transaction amounts (tax base amount and tax amount in accounting currency, sales-tax currency, and transaction currency). Based on the combination of tax transaction attributes, transaction amounts compose total amounts for sales tax reporting codes specified for sales tax codes. The following illustration shows the data relationship.
 
@@ -257,37 +233,15 @@ d<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</str
 > -   The tax base amount is a transaction amount from the **Origin in Accounting currency** field.
 > -   The tax amount is a transition amount from the **Actual sales tax amount in Accounting currency** field.
 
-### Configure the ER model and format for the report
+## Countryspecific resources for tax statements
 
-You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
-
--   [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
--   [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Localization requirements – Create a GER configuration](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
-
-
-## Countryspecific resources for VAT statements
 The VAT statement for each country/region must meet the requirements of the country/region’s legislation. There are predefined general models and formats of VAT statements for the countries/regions listed in the following table.
-
 
 | Country/region | Additional information                                                          |
 |----------------|---------------------------------------------------------------------------------|
-| Austria        | [VAT statement details for Austria](../emea-aut-vat-statement-details.md)         |
-| Belgium        |                                                                                 |
-| Czech Republic | [VAT statement for the Czech Republic](../emea-cze-vat-statement-details.md)   |
-| Estonia        | [VAT statement details for Estonia](../estonia/emea-est-vat-statement-details.md) |
-| Finland        | [Sales tax report for Finland](../norway/emea-fin-sales-tax-payment-report-finland.md)          |
-| Germany        | [VAT declaration for Germany](../emea-de-vat-declaration.md)                       |
-| Italy          | [VAT statements details for Italy](../italy/emea-ita-vat-statements-details.md)            |
-| Latvia         | [VAT statement details for Latvia](../latvia/emea-lva-vat-statement-details.md)           |
-| Lithuania      | [VAT statement details for Lithuania](../lithuania/emea-ltu-vat-statement-details.md)         |
-| Netherlands    | [VAT declaration for the Netherlands](../emea-nl-vat-declaration.md)           |
-| Sweden         | [Sales tax report for Sweden](../sweden/emea-swe-sales-tax-payment-report-sweden.md)          |
-
-
-
-
-
-
+| Australia      | [Business activity statement (BAS)](../australia/apac-aus-business-activity-statement.md)   |                                                                           
+| Japan          | [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md)                 |
+| Latvia         | [VAT statement details for Latvia](../latvia/emea-lva-vat-statement-details.md)             |
+| Lithuania      | [VAT statement details for Lithuania](../lithuania/emea-ltu-vat-statement-details)          |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
