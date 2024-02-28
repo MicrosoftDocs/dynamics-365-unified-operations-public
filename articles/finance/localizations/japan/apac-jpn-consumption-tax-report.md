@@ -1,7 +1,7 @@
 ---
 title: Japan consumption tax report
 description: This article explains how to set up and generate the Japan consumption tax report for legal entities in Japan.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 06/10/2022
 ms.topic: article
 ms.prod: 
@@ -9,44 +9,39 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
+ms.search.form: LedgerConsumptionTaxCalcTrans_JP,LedgerConsumptionTaxCalcTrans2023_JP, LedgerConsumptionTaxReportTrans_JP, LedgerConsumptionTaxReportTrans2023_JP
 ---
 
 # Japan consumption tax report
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up and generate the Japan consumption tax report for legal entities in Japan.
+This topic explains how to set up and generate the Japan Consumption Tax (JCT) return report for legal entities in Japan.
 
-The Japan consumption tax report consists of two reports: **Consumption tax calculation sheet** and **Consumption tax report**.
+The Japan consumption tax report consists of: **Consumption Tax and Local Consumption Tax Return** (Table 1), **Breakdown of Taxable Base Amount** (Table 2) and Appendixes:
 
-- **Consumption tax calculation sheet** – This report corresponds to Table 2-1, "Calculation table of taxable sales ratio/deductible purchase tax amount."
-- **Consumption tax report** – This report corresponds to Table 3-(2), "Consumption tax return form."
+- **Appendix 1**, that represents **Consumption tax amount calculation table by tax rate and consumption tax amount calculation sheet that serves as the tax base for local consumption tax** and can be composed of Appendix 1-3 for tax rates 6.24 ％ and 7.8 ％ supplemented with Appendix 1-1 and Appendix 1-2 in case when other tax rates were used during reporting period (3%, 4%, 6.3%).
 
-For a description of the calculation rules for Table 2-1 and Table 3-(2), see [Procedure 1 for preparing a tax return](https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0018008-056_01.pdf).
+- **Appendix 2**, that represents **Calculation table for taxable sales ratio, deductible purchase tax amount, etc.** and can be composed of Appendix 2-3 for tax rates 6.24 ％ and 7.8 ％ supplemented with Appendix 2-1 and Appendix 2-2 in case when other tax rates were used during reporting period (3%, 4%, 6.3%).
 
-## Prerequisites
+For a description of the calculation rules for JCT return report, see [Procedure 1 for preparing a tax return](https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0018008-056_01.pdf).
 
-To calculate the consumption tax report that should be submitted from October 1, 2019, you must enable the **Japanese sales tax report** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-## Setup
-
-### Enable the consumption tax report
+## Enable the consumption tax report
 
 1. Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Japanese tax reporting** FastTab, set the **Consumption tax reports** option to **Yes**.
 
-### Enter Japan reporting information for a legal entity
+## Enter Japan reporting information for a legal entity
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. On the **Registration numbers** FastTab, select **Edit**.
 3. In the **Accounting personnel** field, enter a value.
 4. In the **Company representative** field, enter a value.
 
-### Set up sales tax reporting codes for consumption tax reporting
+## Set up Sales tax reporting codes for consumption tax reporting
 
 Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](../../general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
 
@@ -87,7 +82,7 @@ The "Where it's used for Consumption tax report" column shows which **Item** fie
 | **8308**       | **Bad debt**   | Not used   | Item6       | Sales tax receivable  |
 | 8310           | Bad debt - paid    | Item22 (Row25)    | Not used   | Sales tax on purchase credit note |
 
-## Set up sales tax codes
+## Set up Sales tax codes
 
 Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
@@ -104,7 +99,7 @@ The following table shows the correspondence between sales tax rates in the sale
 | 8 (reduced)    | 6.24                 | Sales amount including tax × 6.24 ÷ 108   |
 | 10             | 7.8                  | Sales amount including tax × 7.8 ÷ 110    |
 
-### Set up tax reporting accounts for bad debts
+## Set up tax reporting accounts for bad debts
 
 Set up ledger accounts for bad debt and collected bad debt that will be used to select the transactions to report.
 
