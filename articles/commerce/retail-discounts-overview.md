@@ -2,7 +2,7 @@
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: ShalabhjainMSFT
-ms.date: 07/26/2023
+ms.date: 02/29/2024
 ms.topic: overview
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -178,10 +178,8 @@ To enable the improved discount calculation feature, follow these steps.
 1. Run the **1020** (**Prices and discounts**) and **1070** (**Channel configuration**) distribution schedule jobs.
 
 > [!NOTE]
-> Make sure that you test this feature extensively before you enable it in production environments, especially if you have customizations in the Commerce pricing engine.
-
-> [!NOTE]
-> The feature is enabled by default for environments on Application Release 10.0.32 or later. When this feature is enabled, a batch job will be scheduled when a discount is enabled or a product master associated with a discount has a new product variant. The [Issue 856877](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=856877&dbType=3) which incorrectly scheduled amount of *Process commerce discounts* batch jobs has been fixed on 10.0.38 release. The users can disable the feature *Improve discount computation performance by using flattened discount tables* before upgrading to an application version with the fix.
+> Ensure that you test the improved discount calculation feature extensively before you enable it in production environments, especially if you have customizations in the Commerce pricing engine.
+> The improved discount calculation feature is enabled by default for environments running Commerce version 10.0.32 or later. When the feature is enabled, a batch job is scheduled when a discount is enabled or a product master associated with a discount has a new product variant. The [issue](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=856877&dbType=3) that incorrectly scheduled multiple "Process commerce discounts" batch jobs that blocked other jobs from running has been fixed in the Commerce 10.0.38 release. Until users upgrade to a Commerce version with the fix, they can avoid the issue by disabling the **Improve discount computation performance by using flattened discount tables** feature.
 
 ## Best practices
 
