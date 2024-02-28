@@ -201,45 +201,75 @@ Set up ledger accounts for bad debt and collected bad debt that will be used to 
 | **Company representative, Accounting personnel**                         | The name of the company representative.  |
 | **From date, To date**                                                   | The tax calculation period.              |
 | **From date for mid term declaration, To date for mid term declaration** | The dates for interim sales tax reports. |
+| **Registration number**                                                  | The company registration number. |
 
-8. On the **Tax calculation** tab, review the tax amounts in the **Items** fields. The values represent the amounts that will be entered in the rows of **Table 1** and **Table 2**.
+8. On the **Tax calculation** tab, review the tax amounts in the **Items** fields. The values represent the amounts that will be entered in the rows of **Table 1**.
 
 > [!NOTE]
-> In the "Calculation" column of the following table, brackets ([…]) in the formulas enclose the values of the reporting codes. The values of **Item** fields on the **Consumption tax calculation sheet** page are referenced as **CalcSheet.Item**.
-> 
-> Fields that are marked with an asterisk (\*) in the "Field (Row)" column aren't used on the **Consumption tax report** report (Table 3-(2)) as of October 1, 2019.
+> In the "Calculation" column of the following table, brackets ([…]) in the formulas enclose the values of the reporting codes.
 
-| Field (Row)  | Description   | Calculation  |
+| Field   | Description   | Calculation  |
 |--------------|---------------|--------------|
 | **Calculation of consumption tax**   |   &nbsp;   |   &nbsp;  |
-| Item1 (Row1..Row6 (at tax rates), Row7 (total)) | Taxable base amount   | The value of this field equals [1] rounded to the thousands.  |
-| Item2 (Row11..Row16 (at tax rates))  | Consumption tax amount  | The value of this field is calculated as the sum of the consumption tax amounts of ([1] + [8001]) by tax rate.   |
-| Item3\*   | Adjustment amount of excessive tax deduction | The value of this field is calculated as **CalcSheet.Item21** + **CalcSheet.Item22**.  |
-| Item4\*    | Deductible tax on purchases     | The value of this field equals **CalcSheet.Item20**.  |
-| Item5 (Row18)  | Tax amount refund from sales credit notes   | The value of this field is calculated as the sum of the consumption tax amounts of ([9001] + [7001]) by tax rate.     |
-| Item6\*        | Tax amount related to uncollectable debts   | The value of this field is calculated as [8308] × 6.3 ÷ 108. **Note:** The amount of reporting code 8308 is related to the ledger account that is set up in the **Bad debt** field on the **Tax reporting accounts** page. For more information, see the [Set up tax reporting accounts for bad debts](#set-up-tax-reporting-accounts-for-bad-debts) section of this topic. |
-| Item7\*    | Tax deduction subtotal   | The value of this field is calculated as **Item4** + **Item5** + **Item6**.   |
-| Item8\*      | Tax refund        | The value of this field is calculated as **Item7** – **Item2** – **Item3** if the resulting value is positive. Otherwise, the value is **0** (zero).   |
-| Item9\*     | Netted tax amount     | The value of this field is calculated as **Item2** + **Item3** – **Item7** if the resulting value is positive. Otherwise, the value is zero.     |
-| Item10\*     | Intermediate tax payment  | The value of this field is zero.    |
-| Item11\*     | Tax to be paid          | If **Item9** is more than **Item10**, the value of this field is calculated as **Item9** – **Item10**. Otherwise, the value is zero.     |
-| Item12\*    | Tax to be refunded     | If **Item10** is more than **Item9**, the value of this field is calculated as **Item10** – **Item9**. Otherwise, the value is zero.    |
-| Item13\*    | Previously declared tax (If this declaration is an amended declaration)   | The value of this field is zero.   |
-| Item14\*    | Tax due (If this declaration is an amended declaration)    | The value of this field is zero.     |
-| Item15\*    | Amount of taxable sales (taxable sales percentage)    | The value of this field equals **CalcSheet.Item4**.    |
-| Item16\*    | Total amount of sales (taxable sales percentage)    | The value of this field is calculated as **Item15** + [206] – [9206] and equals **CalcSheet.Item7**.    |
+| **Item1**  | Taxable base amount   | The value of this field is calculated as sum by tax rates of **Item1** from **Appendix 1** rounded to the thousands.  |
+| **Item2**  | Consumption tax amount  | The value of this field is calculated as sum by tax rates of **Item2** from **Appendix 1**.   |
+| **Item3**  | Adjustment amount of excessive tax deduction | The value of this field is calculated as sum by tax rates of **Item3** from **Appendix 1**.  |
+| **Item4**  | Deductible tax on purchases     | The value of this field is calculated as sum by tax rates of **Item4** from **Appendix 1**.  |
+| **Item5**  | Tax amount refund from sales credit notes   | The value of this field is calculated as sum by tax rates of **Item5** from **Appendix 1**.     |
+| **Item6**  | Tax amount related to uncollectable debts   | The value of this field is calculated as sum by tax rates of **Item6** from **Appendix 1**. |
+| **Item7**  | Tax deduction subtotal   | The value of this field is calculated as **Item4** + **Item5** + **Item6**.   |
+| **Item8**  | Tax refund        | The value of this field is calculated as **Item7** – **Item2** – **Item3** if the resulting value is positive. Otherwise, the value is **0** (zero).   |
+| **Item9**  | Netted tax amount     | The value of this field is calculated as **Item2** + **Item3** – **Item7** if the resulting value is positive. Otherwise, the value is zero.     |
+| **Item10** | Intermediate tax payment  | The value of this field can be filled in manually.    |
+| **Item11** | Tax to be paid          | If **Item9** is more than **Item10**, the value of this field is calculated as **Item9** – **Item10**. Otherwise, the value is zero.     |
+| **Item12** | Tax to be refunded     | If **Item10** is more than **Item9**, the value of this field is calculated as **Item10** – **Item9**. Otherwise, the value is zero.    |
+| **Item13** | Previously declared tax (If this declaration is an amended declaration)   | The value of this field can be filled in manually.   |
+| **Item14** | Tax due (If this declaration is an amended declaration)    | The value of this field can be filled in manually.     |
+| **Item15** | Amount of taxable sales  | The value of this field is calculated as **Item4** from **Appendix 2**. |
+| **Item16** | Total amount of sales    | The value of this field is calculated **Item7** from **Appendix 2**.    |
 | **Calculation of local consumption tax**  | &nbsp; |   &nbsp; |
-| Item17\*   | Tax refund     | The value of this field equals **Item8**.   |
-| Item18\*   | Netted tax amount      | The value of this field equals **Item9**.  |
-| Item19\*   | Tax refund amount (Transfer amount)      | The value of this field is calculated as -((Row22 × 17 ÷ 63) + (Row23 × 22 ÷78)) rounded to the thousands if the value in parentheses is negative. You can find an example of the calculation of Row22 and Row23 at the end of the [Example](#example) section of this topic.  |
-| Item20\*   | Tax payment amount (Transfer amount)    | The value of this field is calculated as (Row22 × 17 ÷ 63) + (Row23 × 22 ÷ 78) rounded to the thousands if the resulting value is positive. You can find an example of the calculation of Row22 and Row23 at the end of the [Example](#example) section. |
-| Item21\*   | Interim tax payment (local)   | The value of this field is zero.   |
-| Item22\*   | Tax to be paid     | If **Item20** is more than **Item21**, the value of this field is calculated as **Item20** – **Item21**. Otherwise, the value is **0** (zero).    |
-| Item23\*    | Tax to be refunded     | If **Item21** is more than **Item20**, the value of this field is calculated as **Item21** – **Item20**. Otherwise, the value is **0** (zero).    |
-| Item24\*    | Previously declared tax (if this declaration is an amended declaration)   | The value of this field is zero.   |
-| Item25\*      | Netted tax payment amount (if this declaration is an amended declaration) | The value of this field is zero.   |
-| Item26\*    | Total consumption tax and local consumption tax (payment or refund)    | If you set the **Amendment** option to **Yes** in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item14** + **Item25**. Otherwise, the value is calculated as **Item11** + **Item22** – **Item8** – **Item12** – **Item19** – **Item23**.    |
+| **Item17**   | Tax refund     | The value of this field equals **Item8**.   |
+| **Item18**   | Netted tax amount      | The value of this field equals **Item9**.  |
+| **Item19**   | Tax refund amount (Transfer amount)      | The value of this field is calculated as Tax refund amount multiplied by local rate rounded to the thousands if the value in parentheses is negative. |
+| **Item20**   | Tax payment amount (Transfer amount)    | The value of this field is calculated as Tax payment amount multiplied by local rate rounded to the thousands if the resulting value is positive. |
+| **Item21**   | Interim tax payment (local)   | The value of this field can be filled in manually.   |
+| **Item22**   | Tax to be paid     | If **Item20** is more than **Item21**, the value of this field is calculated as **Item20** – **Item21**. Otherwise, the value is **0** (zero).    |
+| **Item23**   | Tax to be refunded     | If **Item21** is more than **Item20**, the value of this field is calculated as **Item21** – **Item20**. Otherwise, the value is **0** (zero).    |
+| **Item24**   | Previously declared tax (if this declaration is an amended declaration)   | The value of this field can be filled in manually.   |
+| **Item25**   | Netted tax payment amount (if this declaration is an amended declaration) | The value of this field can be filled in manually.   |
+| **Item26**   | Total consumption tax and local consumption tax (payment or refund)    | If you set the **Amendment** option to **Yes** in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item14** + **Item25**. Otherwise, the value is calculated as **Item11** + **Item22** – **Item8** – **Item12** – **Item19** – **Item23**.    |
 
+9. On the **Breakdown of taxable base amount** tab, review the tax amounts in the **Items** fields. The values represent the amounts that will be entered in the rows of **Table 2**.
+
+> [!NOTE]
+> In the "Calculation" column of the following table, brackets ([…]) in the formulas enclose the values of the reporting codes.
+
+| Field       | Description   | Calculation  |
+|-------------|---------------|--------------|
+| **Item1**   | Tax base amount. **Item1** of the Declaration form (Table 1) | The value of this field is calculated as sum by tax rates of **Item1** from **Appendix 1**. |
+| **Item2**   | Total amount of consideration for transfer of taxable assets, etc. 3% applicable | The value of this field is calculated as **Item 1-1** from **Appendix 1** by 3% tax rate. |
+| **Item3**   | Total amount of consideration for transfer of taxable assets, etc. 4% applicable | The value of this field is calculated as **Item 1-1** from **Appendix 1** by 4% tax rate.|
+| **Item4**   | Total amount of consideration for transfer of taxable assets, etc. 6.3% applicable | The value of this field is calculated as **Item 1-1** from **Appendix 1** by 6.3% tax rate.|
+| **Item5**   | Total amount of consideration for transfer of taxable assets, etc. 6.24% applicable | The value of this field is calculated as **Item 1-1** from **Appendix 1** by 6.24% tax rate.|
+| **Item6**   | Total amount of consideration for transfer of taxable assets, etc. 7.8% applicable | The value of this field is calculated as **Item 1-1** from **Appendix 1** by 7.8% tax rate.|
+| **Item7**   | Total amount of consideration for transfer of taxable assets, etc. | The value of this field is calculated as sum by tax rates of **Item 1-1** from **Appendix 1**. |
+| **Item8**   | Total amount of consideration paid for specific taxable purchases Note(1). 6.3% applicable | The value of this field is calculated as **Item 1-2** from **Appendix 1** by 6.3% tax rate. |
+| **Item9**   | Total amount of consideration paid for specific taxable purchases Note(1). 7.8% applicable | The value of this field is calculated as **Item 1-2** from **Appendix 1** by 7.8% tax rate.|
+| **Item10**  | Total amount of consideration paid for specific taxable purchases Note(1).| The value of this field is calculated as sum by tax rates of **Item 1-2** from **Appendix 1**. |
+| **Item11**  | Consumption tax amount. **Item2** of the Declaration form (Table 1) | The value of this field is calculated as sum by tax rates of **Item2** from **Appendix 1**. |
+| **Item12**  | (11) Breakdown. 3% applicable | The value of this field is calculated as **Item2** from **Appendix 1** by 3% tax rate.|
+| **Item13**  | (11) Breakdown. 4% applicable| The value of this field is calculated as **Item2** from **Appendix 1** by 4% tax rate. |
+| **Item14**  | (11) Breakdown. 6.3% applicable| The value of this field is calculated as **Item2** from **Appendix 1** by 6.3% tax rate. |
+| **Item15**  | (11) Breakdown. 6.24% applicable| The value of this field is calculated as **Item2** from **Appendix 1** by 6.24% tax rate. |
+| **Item16**  | (11) Breakdown. 7.8% applicable| The value of this field is calculated as **Item2** from **Appendix 1** by 7.8% tax rate. |
+| **Item17**  | Reimbursed tax amount. **Item5** of the Declaration form (Table 1).| The value of this field is calculated as sum by tax rates of **Item5** from **Appendix 1**. |
+| **Item18**  | Tax amount related to return of sales | The value of this field is calculated as sum by tax rates of **Item 5-1** from **Appendix 1**. |
+| **Item19**  | Tax amount related to refund of specific taxable purchases| The value of this field is calculated as sum by tax rates of **Item 5-2** from **Appendix 1**. |
+| **Item20**  | Consumption tax as local consumption tax base Note(2) | The value of this field is calculated as sum by tax rates of **Item 5-1** from **Appendix 1**. |
+| **Item21**  | Consumption tax as local consumption tax base Note(2). 4% applicable | The value of this field is calculated as **Item 5-1** from **Appendix 1** by 4% tax rate. |
+| **Item22**  | Consumption tax as local consumption tax base Note(2). 6.3% applicable | The value of this field is calculated as **Item 5-1** from **Appendix 1** by 6.3% tax rate. |
+| **Item23**  | Consumption tax as local consumption tax base Note(2). 6.24% and 7.8% applicable | The value of this field is calculated as **Item 5-1** from **Appendix 1** by 6.24% and 7.8% tax rate. |
+ 
 10. On the **Consumption tax report** page, on the **Additional information** tab, set the following fields.
 
 | Field                                    | Description                                                                       |
