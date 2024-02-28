@@ -230,14 +230,14 @@ Set up ledger accounts for bad debt and collected bad debt that will be used to 
 | **Calculation of local consumption tax**  | &nbsp; |   &nbsp; |
 | **Item17**   | Tax refund     | The value of this field equals **Item8**.   |
 | **Item18**   | Netted tax amount      | The value of this field equals **Item9**.  |
-| **Item19**   | Tax refund amount (Transfer amount)      | The value of this field is calculated as Tax refund amount multiplied by local rate rounded to the thousands if the value in parentheses is negative. |
-| **Item20**   | Tax payment amount (Transfer amount)    | The value of this field is calculated as Tax payment amount multiplied by local rate rounded to the thousands if the resulting value is positive. |
+| **Item19**   | Tax refund amount (Transfer amount)      | The value of this field is calculated as Tax refund amount (**Item12** from **Appendix 1**) multiplied by local rate rounded to the thousands if the value in parentheses is negative. |
+| **Item20**   | Tax payment amount (Transfer amount)    | The value of this field is calculated as Tax payment amount (**Item13** from **Appendix 1**) multiplied by local rate rounded to the thousands if the resulting value is positive. |
 | **Item21**   | Interim tax payment (local)   | The value of this field can be filled in manually.   |
 | **Item22**   | Tax to be paid     | If **Item20** is more than **Item21**, the value of this field is calculated as **Item20** – **Item21**. Otherwise, the value is **0** (zero).    |
 | **Item23**   | Tax to be refunded     | If **Item21** is more than **Item20**, the value of this field is calculated as **Item21** – **Item20**. Otherwise, the value is **0** (zero).    |
 | **Item24**   | Previously declared tax (if this declaration is an amended declaration)   | The value of this field can be filled in manually.   |
 | **Item25**   | Netted tax payment amount (if this declaration is an amended declaration) | The value of this field can be filled in manually.   |
-| **Item26**   | Total consumption tax and local consumption tax (payment or refund)    | If you set the **Amendment** option to **Yes** in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item14** + **Item25**. Otherwise, the value is calculated as **Item11** + **Item22** – **Item8** – **Item12** – **Item19** – **Item23**.    |
+| **Item26**   | Total consumption tax and local consumption tax (payment or refund)    | The value is calculated as **Item11** + **Item22** – **Item8** – **Item12** – **Item19** – **Item23**.    |
 
 9. On the **Breakdown of taxable base amount** tab, review the tax amounts in the **Items** fields. The values represent the amounts that will be entered in the rows of **Table 2**.
 
