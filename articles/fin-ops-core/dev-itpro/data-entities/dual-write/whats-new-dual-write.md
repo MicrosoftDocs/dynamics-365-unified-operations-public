@@ -80,11 +80,11 @@ The December release of Dual-write GAB solution 3.5.2.2 contains the following b
 
 | Solution name | Has new changes? | Previous version | New version |
 |---|---|---|---|
-| Party | Yes | 3.5.1.136 | 3.5.2.2 |
-| Dynamics365GABExtended | Yes | 3.5.1.136 | 3.5.2.2 |
-| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.136 | 3.5.2.2 |
-| Dynamics365GABPartyAnchor |Yes | 3.5.1.136 | 3.5.2.2 |
-| Dynamics365GABPartyCommon | Yes | 3.5.1.136 | 3.5.2.2 |
+| Party | Yes | 3.5.1.135 | 3.5.2.2 |
+| Dynamics365GABExtended | Yes | 3.5.1.135 | 3.5.2.2 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.135 | 3.5.2.2 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.1.135 | 3.5.2.2 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.135 | 3.5.2.2 |
 
 
 ## November 2023 
