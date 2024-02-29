@@ -321,6 +321,9 @@ additionalContent:
         - title: Dynamics 365 Commerce
           summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
           url: /dynamics365/commerce/
+        - title: Microsoft Copilot for Finance
+          summary: Copilot for Finance helps you surface insights that support strategic decision-making and reduce the time spent on manual, repetitive work.
+          url: /copilot/finance
         - title: Dynamics 365 Project Operations
           summary: Project Operations connects sales, resourcing, project management, and finance teams in a single application to win more deals, accelerate project delivery, and maximize profitability.
           url: /dynamics365/project-operations/
