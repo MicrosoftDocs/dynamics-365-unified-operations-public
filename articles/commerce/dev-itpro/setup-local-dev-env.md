@@ -2,7 +2,7 @@
 title: Set up a local development environment
 description: This article explains how to set up a local development environment for the Commerce Scale Unit (CSU) and point of Sale (POS) development in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/23/2024
+ms.date: 02/29/2024
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -23,7 +23,7 @@ This article explains how to set up a local development environment for the Comm
 > The environment setup that is described in this article can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
 
 > [!NOTE]
-> The 10.0.38 release doesn't contain updates for the following components: Modern Point of Sale (MPOS), the Retail software development kit (SDK), and the Retail Server/channel database.
+> Starting with Commerce version 10.0.38, predeployed channel-side Commerce components aren't updated due to the retirement of the Retail software development kit (SDK). The last version of the predeployed components is version 10.0.37, regardless of the version of the rest components on the virtual machine (VM). If you need to develop channel-side Commerce components on a VM, employ the Commerce SDK with a reliance on sealed installers as described in [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Predeployed channel-side Commerce components are set to be completely removed in a future release.
 
 ## Supported development environment types
 
