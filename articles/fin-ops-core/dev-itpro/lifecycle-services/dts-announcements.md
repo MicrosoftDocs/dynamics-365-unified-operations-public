@@ -9,14 +9,11 @@ ms.topic: overview
 ms.prod: 
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: johnmichaalk
 ms.search.region: Global
-ms.author: arianap
+ms.author: joshsantana
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
-ms.custom:
-ms.assetid:
-
 ---
 
 # What's new in Dynamics Translation Service
@@ -28,10 +25,9 @@ This article provides information about the new or changed features in Microsoft
 
 ## Service Degradation: Increased Translation Request Failures  
 
-There is an increase in failed translation requests, and we are working with the Microsoft 
-Translator team to resolve this. You may see some failed requests complete after being re-ran, in that case you'll receive a completion email.
+There's an increase in failed translation requests, and we're working with the Microsoft Translator team to resolve this. You may see some failed requests complete after being reran, in that case you'll receive a completion email.
 
-We understand the inconvenience that this issue has caused and appreciate your patience and continuous support for DTS.
+We understand the inconvenience that this issue has caused and we appreciate your patience and continuous support for DTS.
 
 Should you require immediate support, contact the support team at dtssup@microsoft.com.
 
@@ -49,7 +45,7 @@ To learn more, see [Dynamics Translation Service](/connectors/dynamicstranslatio
 
 ## DTS API release
 
-The DTS API is now available for DTS users. With the API, customers can perform Translation, Alignment, and Regeneration actions without the need to visit LCS. This release allows developers to create custom translation solutions, leveraging the capabilities of DTS. For more details, see [the documentation](dts-api-info.md).
+The DTS API is now available for DTS users. With the API, customers can perform Translation, Alignment, and Regeneration actions without the need to visit LCS. This release allows developers to create custom translation solutions, leveraging the capabilities of DTS. For more information, see [Dynamics 365 Translation Service API](dts-api-info.md).
 
 ## Incident update: DTS API failures impacting extension users
 
@@ -61,7 +57,7 @@ If you require immediate support, contact the support team at dtssup@microsoft.c
 
 ## Incident: DTS API failures impacting extension users
 
-We are investigating an issue that causes intermittent API failures across DTS endpoints. This is an active incident which impacts the usability of the DTS extensions. Contact dtssup@microsoft.com if you require immediate support. 
+We're investigating an issue that causes intermittent API failures across DTS endpoints. This is an active incident which impacts the usability of the DTS extensions. Contact dtssup@microsoft.com if you require immediate support. 
 
 ## DTS will stop supporting Dynamics AX 2012 by March 31, 2023
 
@@ -76,7 +72,7 @@ The following features are included in the Visual Studio Code extension:
 - **DTS Translation** – Create translation requests for resource files in a workspace.
 - **Resource file explorer** – View and manage existing resource files.
 
-To download the Visual Studio Code extension, go to [Dynamics 365 Translation Service Visual Studio Code extension on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dts-publisher.dts-vsc). For more details about it, see [Dynamics 365 Translation Service Visual Studio Code extension](dts-vscode-doc.md).
+To download the Visual Studio Code extension, go to [Dynamics 365 Translation Service Visual Studio Code extension on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dts-publisher.dts-vsc). For more information, see [Dynamics 365 Translation Service Visual Studio Code extension](dts-vscode-doc.md).
 
 ## Visual Studio extension release
 
@@ -88,4 +84,4 @@ The following features are included in the Visual Studio extension release:
 - **Regenerate** – Post-edit the XLIFF outputs, and regenerate the label resource files.
 - **Align** – Create XLIFF translation memories (TMs) from previously translated label resource files.
 
-To download the Visual Studio extension, go to [Dynamics 365 Translation Service Visual Studio extension on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dts-publisher.dts-vs-ext&ssr=false#overview). For more details about it, see [Dynamics 365 Translation Service Visual Studio extension](dts-visual-studio.md).
+To download the Visual Studio extension, go to [Dynamics 365 Translation Service Visual Studio extension on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dts-publisher.dts-vs-ext&ssr=false#overview). For more information, see [Dynamics 365 Translation Service Visual Studio extension](dts-visual-studio.md).
