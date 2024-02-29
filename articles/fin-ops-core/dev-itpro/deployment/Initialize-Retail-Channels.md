@@ -1,7 +1,7 @@
 ---
 title: Initialize Commerce Scale Unit (cloud)
 description: This article explains how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce.
-author: jashanno
+author: aneesmsft
 ms.date: 05/18/2023
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: jashanno
+ms.author: aneesmsft
 ms.search.validFrom: 2018-04-30
 ---
 
