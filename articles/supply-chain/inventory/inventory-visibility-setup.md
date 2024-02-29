@@ -27,7 +27,7 @@ You must use [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2
 >
 > If you're experiencing technical issues or running into exceptions, you can get help by sending email directly to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) (please be sure to include your Supply Chain Management environment ID).
 > 
-> For useful code samples and troubleshooting guides, visit to the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
+> For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 
 ## Inventory Visibility prerequisites
 
