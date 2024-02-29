@@ -26,6 +26,15 @@ ms.assetid:
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
 
+## Service Degradation: Increased Translation Request Failures  
+
+There is an increase in failed translation requests, and we are working with the Microsoft 
+Translator team to resolve this. You may see some failed requests complete after being re-ran, in that case you'll receive a completion email.
+
+We understand the inconvenience that this issue has caused and appreciate your patience and continuous support for DTS.
+
+Should you require immediate support, contact the support team at dtssup@microsoft.com.
+
 ## Dynamics 365 Translation Service Connector release
 
 The Dynamics 365 Translation Service Connector is now available. Because this connector integrates with Microsoft Power Platform, you can access DTS directly from a flow or app. The connector calls the DTS API on the user's behalf, saving them a trip to the website.
