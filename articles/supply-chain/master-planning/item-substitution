@@ -1,0 +1,57 @@
+---
+# required metadata
+
+title: Authorize an adjusted forecast
+description: Not all forecast data must be authorized immediately. This article explains how you can specify the period that a forecast is authorized for. It also explains how you can authorize the forecast for specific companies and forecast models.
+author: t-benebo
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: ReqDemPlanImportForecastDialog
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+# ms.tgt_pltfrm: 
+ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: benebotg
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Item substitution in planning (for formulas) 
+
+You can use substitute materials during plannign only when you are using formulas, not when you are using a BOM. 
+
+Consider the following scenario: a food manufacturing company is making sacu from a formula that has 20 ingredients. One of the ingredients in the formula can be substituted by one of two other ingredients. However, because these two ingrdients are expensive than the preferred ingredients, substitution is only used when the preferred item is out of stock. 
+
+The material that can be substituted is called A, whereas the two materials tha can replace it are called B and C. Material substituion by planning is contoled by the *Plan group* and *Priority* fields on the formula lines. 
+For example, you coudl create formula lines for hte three materials, and associated formula lines with the same plan group. In the setup, the formula line for material A has the highest priority (lowest number), the formula line for material C has the lowest prioirty, and the formula line for material B has a priority that is between of the other two lines. 
+
+If you have a demand of the finished item, master planning determines whether the demand for material A can be covered. If the demand can't be covered, master planning looks at materials B and C, in order of priority. If material B is on hand, it will be used after a batch order is firmed for the formula. 
+If none of the materials are on-hand, it will create a planned order for material A. 
+
+Note: when you setup formula lines in a plan group, you should specify the quantity only on the material that has the highest priority. This quantity will be used to calculate the demand of all the materials in the plan, even the materials that have the lower priority. You can't specify different quantity on lower-priority items in the plan group. 
+The quantities for the substitute items should be zero. 
+
+## Shelf life and item substitution
+
+While using material substitution wiht shelf-life products, master planning will always make sure that the shelf life of a substitute is also respected and they are considered from the priority established. 
+For example, if the formula item has the following:
+- Ingredients, quantity 10, priority 1, Plan group Organic oils with available on-hand 4, expiry date = today + 5 days
+- Substitute, priority 2, Plan group Organic Oils, Available on-hand 6, Expected receipt date= today + 6 days and negative days = 10 days
+
+Master planning first picks the ingredient with its available quantity 4. As the required is 10, and there is not enough of the ingredient, master planning will try to take the substitute for the remaining quantity 6 if available on-han. 
+However, as the available receipt date of the material is laer than the expiry date of the first ingredient, it will not be used. Therefore, it will create a planned order for quantity 6 of the ingredient to fulfill the rest of the material needed. 
+
+
+## Enable item substitution
+
+Enable the feature on feature management *Item substitution (plan group) support for Planning Optimization, available on release 10.0.40
