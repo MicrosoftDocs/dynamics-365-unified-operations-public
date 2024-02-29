@@ -227,7 +227,7 @@ This section provides information that will help you set up and configure the pr
     4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the **App Registration Certificate** .cer file for S2S authentication.
     5. Go to **Enterprise applications**, and select the app that you created.
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
-    7. The Invoicing Service team must grant the app access to the service. Open support ticket with theme **Electronic invoicing service integration with SDI. Application allow-listing** and provide the folowwing information:
+    7. The Invoicing Service team must grant the app access to the service. Open support ticket with theme **Electronic invoicing service integration with SDI. Application allow-listing** and provide the following information:
 
         - AAD Tenant ID
         - LCS Environment ID
@@ -472,7 +472,7 @@ Follow these steps on the machine where the proxy service is hosted.
 	
     5. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
 2. Rotate proxy server certificate.
-    1. Request new server sertificate from the tax autority portal.
+    1. Request new server certificate from the tax authority portal.
     2. Install the .pfx certificate file into Local Machine\Personal storage.
     3. Open IIS Manager, select the proxy website in the tree on the left part of the window, go to **Bindings** on the right part of the window.
     4. Select existing binding and then **Edit**. Select newly added certificate for the **SSL certificate** field and then **OK**.
@@ -482,7 +482,7 @@ Follow these steps on the machine where the proxy service is hosted.
 		
     6. Perform **Enable Client certificate renegotiation** steps from the [Set up the SDI Proxy service in IIS](../e-invoicing-ita-fatturapa-get-started.md#set-up-the-sdi-proxy-service-in-iis) section of this article.
 3. Rotate Client identity certificate.
-    1. Request new client certificate from the tax autority portal.
+    1. Request new client certificate from the tax authority portal.
     2. In the [Azure portal](https://portal.azure.com), go to **Key Vaults** and find the key vault linked to the service.
     3. In the **Certificates** section find the client identity certificate and select it. Then select **New Version**.
     4. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
