@@ -9,7 +9,7 @@ ms.technology:
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: aneesmsft
+ms.author: aneesa
 ms.search.validFrom: 2018-04-30
 ---
 
