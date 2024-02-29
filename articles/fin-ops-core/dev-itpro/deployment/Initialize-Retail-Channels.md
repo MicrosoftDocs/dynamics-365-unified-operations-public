@@ -22,7 +22,7 @@ This article explains how to initialize Commerce Scale Unit (CSU) (cloud) in Mic
 If you're using a Tier-2 sandbox or production environment that has application version 8.1.2.x or later, you must initialize CSU (cloud) before you can use retail channel functionality either for point of sale (POS) operations or for e-commerce operations that use Retail Server in the cloud. Initialization will deploy a CSU (cloud).
 
 > [!IMPORTANT]
-> Before trying to deploy a CSU, please ensure you have the required license(s). If you don't have the required licenses, you will see a message that reads *"The current licenses do not allow for the deployment of this Commerce Scale Unit. Contact support or your sales associate for assistance"*. For details on licensing please refer to the [D365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+> Before trying to deploy a CSU, please ensure you have the required license(s). If you don't have the required license(s), you will see a message that reads *"The current licenses do not allow for the deployment of this Commerce Scale Unit. Contact support or your sales associate for assistance"*. For details on licensing please refer to the [D365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Prerequisites
 
