@@ -23,7 +23,11 @@ This article describes how to install the Inventory Visibility Add-in for Micros
 You must use [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2) to install the Inventory Visibility Add-in. Lifecycle Services is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 > [!TIP]
-> We recommend that you join the Inventory Visibility Add-in user group, where you can find useful guides, get our latest updates, and post any questions you might have about using Inventory Visibility. To join, please send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) and include your Supply Chain Management environment ID.
+> If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features. 
+>
+> If you're experiencing technical issues or running into exceptions, you can get help by sending email directly to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) (please be sure to include your Supply Chain Management environment ID).
+> 
+> For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 
 ## Inventory Visibility prerequisites
 
@@ -218,6 +222,11 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
     1. Dynamics 365 Inventory Visibility – Base
 
     After you delete these solutions, the data that's stored in tables will also be deleted.
+
+> [!IMPORTANT]
+> You should only delete the data and solutions related to Inventory Visibility in Power Apps if you're sure you won't use Inventory Visibility in the current environment ever again. If you delete them and then try to reinstall Inventory Visibility from the LCS page again later, you might encounter issues such as getting stuck during the install and being unable to recover.
+>
+> If you need to uninstall and reinstall the add-in because you restored the Supply Chain Management database, then don't delete the data and solutions in Power Apps. Instead, follow the procedure in [Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database](#restore-environment-database) to fix any data issues.
 
 ## <a name="restore-environment-database"></a>Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database
 
