@@ -178,8 +178,9 @@ To enable the improved discount calculation feature, follow these steps.
 1. Run the **1020** (**Prices and discounts**) and **1070** (**Channel configuration**) distribution schedule jobs.
 
 > [!NOTE]
-> Ensure that you test the improved discount calculation feature extensively before you enable it in production environments, especially if you have customizations in the Commerce pricing engine.
-> The improved discount calculation feature is enabled by default for environments running Commerce version 10.0.32 or later. When the feature is enabled, a batch job is scheduled when a discount is enabled or a product master associated with a discount has a new product variant. The [issue](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=856877&dbType=3) that incorrectly scheduled multiple "Process commerce discounts" batch jobs that blocked other jobs from running has been fixed in the Commerce 10.0.38 release. Until users upgrade to a Commerce version with the fix, they can avoid the issue by disabling the **Improve discount computation performance by using flattened discount tables** feature.
+> - Ensure that you test the improved discount calculation feature extensively before you enable it in production environments, especially if you have customizations in the Commerce pricing engine.
+> - The improved discount calculation feature is enabled by default for environments running Commerce version 10.0.32 or later. When the feature is enabled, a batch job is scheduled when a discount is enabled or a product master associated with a discount has a new product variant.
+> - The [issue](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=856877&dbType=3) that incorrectly scheduled multiple "Process commerce discounts" batch jobs that blocked other jobs from running has been fixed in the Commerce 10.0.38 release. Until users upgrade to a Commerce version with the fix, they can avoid the issue by disabling the **Improve discount computation performance by using flattened discount tables** feature.
 
 ## Best practices
 
