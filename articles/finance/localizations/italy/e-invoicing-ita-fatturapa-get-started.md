@@ -193,24 +193,25 @@ This section provides information that will help you set up and configure the pr
 
 1. Use the following Windows PowerShell script to create a self-signed certificate for service-to-service (S2S) authentication.
 
-> [!NOTE]
-> The certificate is set to expire in 12 months. You may extend this by modifying **NotAfter** parameter value. To establish proper rotation of the certificates used for this integration, please refer to the **Certificate rotation** section of the article.
+   > [!NOTE]
+   > The certificate is set to expire in 12 months. You may extend this by modifying **NotAfter** parameter value. To establish proper rotation of the certificates used for this integration, please refer to the **Certificate rotation** section of the article.
 
-    ```powershell
-    $certOutputLocation = "C:\certs\proxytest"
-    $certName = "sdiProxyClientS2SCert"
-    $certPassword = "123"
+   ```powershell
+   $certOutputLocation = "C:\certs\proxytest"
+   $certName = "sdiProxyClientS2SCert"
+   $certPassword = "123"
 
-    $certCerFile = Join-Path $certOutputLocation "$certName.cer"
-    $certPfxFile = Join-Path $certOutputLocation "$certName.pfx"
+   $certCerFile = Join-Path $certOutputLocation "$certName.cer"
+   $certPfxFile = Join-Path $certOutputLocation "$certName.pfx"
 
-    $securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
+   $securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
 
-    $cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter (Get-Date).AddMonths(12)
+   $cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft 
+   Enhanced RSA and AES Cryptographic Provider" -NotAfter (Get-Date).AddMonths(12)
 
-    Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
-    Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
-    ```
+   Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
+   Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
+   ```
 
 2. Save the .pfx certificate file to the key vault. This certificate will be mentioned later as **App Registration Certificate**.
 3. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
