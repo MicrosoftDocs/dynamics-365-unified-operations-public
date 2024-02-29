@@ -12,7 +12,6 @@ ms.search.region: Mexico
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 270644
 ms.assetid: bcc395db-7c00-4151-9340-e83415cb0882
 ms.search.form: ISRConcept_MX, ISRConceptMainAccount_MX, ISRRateTable_MX
 ---

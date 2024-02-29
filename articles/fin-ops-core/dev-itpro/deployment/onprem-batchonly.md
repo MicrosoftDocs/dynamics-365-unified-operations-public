@@ -6,8 +6,7 @@ description: This article explains how to configure your environment so that you
 author: faix
 ms.date: 07/08/2020
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

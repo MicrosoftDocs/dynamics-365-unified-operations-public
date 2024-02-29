@@ -1,5 +1,5 @@
 ---
-title: Service-based authentication
+title: Service-based authentication for the Warehouse Management mobile app
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using service-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Service-based authentication
+# Service-based authentication for the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,7 +30,7 @@ Each device should have its own unique certificate or client secret.
 
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use nonexportable certificates.
 
-You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app for service-based authentication](warehouse-app-intune.md).
+You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app with service-based authentication](warehouse-app-intune.md).
 
 ## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
 
@@ -58,9 +58,30 @@ For more information about how to set up web service applications in Microsoft E
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## Set up mobile-device user accounts in Supply Chain Management
+## <a name="user-azure-ad"></a>Set up mobile-device user accounts in Supply Chain Management
 
-To manage user access and permissions in Supply Chain Management while integrating with Microsoft Entra ID, you must follow the procedures outlined in [Create and configure a user account in Supply Chain Management](install-configure-warehouse-management-app.md#user-azure-ad).
+To enable Supply Chain Management to use your Microsoft Entra ID application, follow these steps.
+
+1. Create a user that corresponds to the user credentials for the Warehouse Management mobile app:
+
+    1. In Supply Chain Management, go to **System administration \> Users \> Users**.
+    1. Create a user.
+    1. Assign the *Warehousing mobile device user* role to the user.
+
+    ![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
+
+1. Associate your Microsoft Entra ID application with the Warehouse Management mobile app user:
+
+    1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
+    1. On the Action Pane, select **New** to add a line.
+    1. In the **Client ID** field, enter the client ID that you made a note of when you set up the web service application in Microsoft Entra ID.
+    1. In the **Name** field, enter a name.
+    1. In the **User ID** field, select the user ID that you just created.
+
+> [!TIP]
+> One way to use these settings is to create a client ID in Azure for each of your physical devices and then add each client ID to the **Microsoft Entra ID applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
+>
+> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using a certificate or client secret
 
@@ -81,6 +102,6 @@ If a device is lost or compromised, you must remove its ability to access Supply
 ## Additional resources
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [User-based authentication](warehouse-app-authenticate-user-based.md)
+- [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

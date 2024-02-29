@@ -19,6 +19,7 @@ ms.search.form: ERSolutionTable, ERWorkspace, RCS
 # Create ER configurations in Regulatory Configuration Services (RCS) and upload them to the Global repository
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can use Microsoft Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations and publish them so that they can be used in your organization.
 

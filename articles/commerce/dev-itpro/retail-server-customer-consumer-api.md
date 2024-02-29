@@ -2,7 +2,7 @@
 title: Commerce Scale Unit customer and consumer APIs
 description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients.
 author: josaw1
-ms.date: 06/02/2020
+ms.date: 11/08/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
+This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and e-commerce clients.
 
 - Commerce Scale Unit business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
@@ -33,8 +33,9 @@ Every request to Commerce Scale Unit (via commerce proxy) operates under these m
 - CommerceRole.Anonymous
 - CommerceRole.Customer
 - CommerceRole.Application
+- CommerceRole.BusinessPartnerEmployee
 
-The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Commerce Scale Unit. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them.
+The Anonymous and Customer roles apply to e-commerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an e-commerce customer who hasn't signed in. The Customer role is used for requests that represent an e-commerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Commerce Scale Unit (CSU). For e-commerce scenarios, you can use only APIs that have either the CommerceRole.Anonymous or CommerceRole.Customer roles associated with them. The BusinessPartnerEmployee role is used for requests that represent a contractor that works for a seller channel in a business to business to business (B2B2B) scenario.
 
 > [!NOTE]
 > By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
@@ -387,7 +388,8 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetChannel- ProductAttributes       | QueryResultSettings queryResultSettings                                                                                                                                                                                                                                     | PageResult\<AttributeProduct\>         | Employee, Customer, Anonymous,  Application               | Gets the channel product attributes.                                                                                                      |
 | GetProductRatings                 | IEnumerable\<long\> productIds, QueryResultSettings settings                                                                                                                                                                                                            | PageResult\<ProductRating\>            | Employee, Customer, Anonymous,  Application              | Gets a collection of product ratings based on product identifiers.                                                                        |
 | GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | Employee, Customer, Anonymous, Application               | Get estimated product availability based on search criteria.                                                                                               |
-| GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | Employee, Customer, Anonymous, Application               | Get estimated product availability for specific product warehouse pairs.                                                                                               |
+| GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | Employee, Customer, Anonymous, Application               | Get estimated product availability for specific product warehouse pairs.
+| UpdateProductWarehouseAvailability                            | IEnumerable\<ProductWarehouseQuantity\> quantities                                                                                                                                                                                        | UpdateProductWarehouseAvailabilityResult                 | BusinessPartnerEmployee, Application               | Update inventory for products or product variants in specific warehouses. |
 
 ## Product lists controller
 

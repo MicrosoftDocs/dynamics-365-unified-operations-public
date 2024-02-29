@@ -32,6 +32,8 @@ The mobile app uses [Dataverse virtual tables that are connected to Supply Chain
 
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
 
+The [Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
+
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
 You must install the Asset Management mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
@@ -47,6 +49,8 @@ Follow these steps to install the Asset Management mobile app in Dataverse.
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Asset Management mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
 Each relevant user must be assigned a role that lets them work with the Dataverse Supply Chain Management virtual tables that the solution installs. The solution installs a role named *Asset Management Mobile Application User Role* that grants access privileges to all the required virtual tables. You can assign this role to a Dataverse group team. Any user who's a member of that team will then have the role too. Alternatively, you can assign the role directly to a user.
+
+Each relevant user must also have the *Finance and Operations Basic User* role.
 
 - To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. For information about how to manage team members, see [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
 - To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).

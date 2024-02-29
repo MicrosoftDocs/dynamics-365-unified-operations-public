@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.custom: 265844
 ms.assetid: a0011a12-a1eb-46bd-8d28-e532fec14e09
 ---
 

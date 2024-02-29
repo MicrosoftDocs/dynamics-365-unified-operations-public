@@ -12,7 +12,6 @@ ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 1174003
 ---
 
 # Corrective invoicing

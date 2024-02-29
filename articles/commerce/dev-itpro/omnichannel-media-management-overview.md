@@ -2,7 +2,7 @@
 title: Omnichannel media management overview
 description: This article provides an overview of omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/20/2023
+ms.date: 10/26/2023
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -40,25 +40,31 @@ When the new media assignments are staged, you can use feature switches to updat
 To configure omnichannel media management features in your Commerce environments, follow these steps.
 
 1. In site builder, go to **Tenant settings \> Features**, set the **Omnichannel content** feature flag to **On**, and then select **Save and publish**. These actions make all omnichannel content authoring controls visible in site builder.
-1. In headquarters, go to **Workspaces \> Feature management**.
+1. In Commerce headquarters, go to **Workspaces \> Feature management**.
 1. In the upper right, select **Check for updates**.
 1. On the **All** tab, use the **Filter** field to search for "\*omni".
 1. In the search results, select **Enable omnichannel media assignment authoring UX**.
 1. In the lower right, select **Enable now**.
-1. Go to **Distribution schedules**, and run the **1110 (Global configuration)** job.
-1. At this point, you can use all authoring experiences to stage product media assignments. However, nothing flows through to headquarters, CSU databases, or end clients yet. ***For an existing environment migration (see migration note below), you'll want to stage all your new assignments before you move on to step 9.*** For new or test environments, you can move on to step 9 now.
-1. In headquarters, search for and open the **CMS to HQ omnichannel media sync** page.
-1. Set the **Batch processing** option to **Yes**.
-1. Select **Recurrence**, and schedule the **CMS to HQ omnichannel media sync** job to run on your preferred schedule (typically once per hour).
-1. Search for and open the **Channel database** page, select **Full data sync \> 1040 (Products)** on the dropdown menu, and then select **OK**.
-1. Search for and open the **Batch jobs** page from the headquarters search control. In the filter control for the **Job description** column, search for "omni", and confirm that the **CMS to HQ omnichannel media sync** job has finished running and has a status of **Ended**.
-1. In the filter control for the **Job description** column, search for "Full sync", and then confirm that the **Full sync...** job has finished running and has a status of **Ended**.
-1. Go to **Workspaces \> Feature management**.
-1. On the **All** tab, use the **Filter** field to search for "\*omni".
-1. In the search results, select **Enable omnichannel media assignments for CSU media locations**, and then select **Enable now**. This action changes how CSU delivers product media from the legacy data to the version 10.0.35 product media data model. This feature switch can be disabled if you must revert to the old data model.
-1. Search for and open the **Distribution schedules** page from the headquarters search control. Then run the **1110 (Global configuration)** job to push the feature flag settings to CSU.
-1. For any e-commerce channels, open site builder, and go to each site's **Site settings \> Extensions** controls. Select the **Enable omnichannel media management** feature switch until a check mark appears, and then select **Save and publish**. If you don't see the **Enable omnichannel media management** feature switch, see the note following this procedure.  
-1. If you have an existing custom e-commerce deployment, you must update and redeploy your site's e-commerce modules and data actions to benefit from new omnichannel media scenarios such as "additional media" and "product videos." For instructions on how to pull the latest module library dependencies into your development environment, see [Pull updates](../e-commerce-extensibility/sdk-updates.md#pull-updates).
+1. Go to **Distribution schedules** in Commerce headquarters, and run the **1110 (Global configuration)** job.
+1. Go to **Commerce parameters** in Commerce headquarters, and select the **Omnichannel media management** tab.
+1. Enter the CMS endpoint, CMS tenant code, site builder endpoint, and CMS tenant ID fields. You can copy these values from the **Tenant settings > Tenant information** tab in the tenant level view within site builder. Select **Save**. 
+
+> [!NOTE]
+> If the **Tenant information** tab isn't available in site builder, open a support request with the title "Help with configuring omnichannel media management HQ parameters".
+
+10. You can now use all of the authoring experiences to stage product media assignments. However, nothing flows through to Commerce headquarters, CSU databases, or end clients at this point. For an existing environment migration, stage all of your new assignments before you move on to the next step. For new or test environments, you can move on to the next step now.
+11. In Commerce headquarters, search for and open the **CMS to HQ omnichannel media sync** page.
+12. Set the **Batch processing** option to **Yes**.
+13. Select **Recurrence**, and schedule the **CMS to HQ omnichannel media sync** job to run on your preferred schedule (typically once per hour).
+14. Search for and open the **Channel database** page, select **Full data sync \> 1040 (Products)** on the dropdown menu, and then select **OK**.
+15. Search for and open the **Batch jobs** page from the headquarters search control. In the filter control for the **Job description** column, search for "omni", and confirm that the **CMS to HQ omnichannel media sync** job has finished running and has a status of **Ended**.
+16. In the filter control for the **Job description** column, search for "Full sync", and then confirm that the **Full sync...** job has finished running and has a status of **Ended**.
+17. Go to **Workspaces \> Feature management**.
+18. On the **All** tab, use the **Filter** field to search for "\*omni".
+19. In the search results, select **Enable omnichannel media assignments for CSU media locations**, and then select **Enable now**. This action changes how CSU delivers product media from the legacy data to the version 10.0.35 product media data model. This feature switch can be disabled if you must revert to the old data model.
+20. Search for and open the **Distribution schedules** page from the headquarters search control. Then run the **1110 (Global configuration)** job to push the feature flag settings to CSU.
+21. For any e-commerce channels, open site builder, and go to each site's **Site settings \> Extensions** controls. Select the **Enable omnichannel media management** feature switch until a check mark appears, and then select **Save and publish**. If you don't see the **Enable omnichannel media management** feature switch, see the note following this procedure.  
+22. If you have an existing custom e-commerce deployment, you must update and redeploy your site's e-commerce modules and data actions to benefit from new omnichannel media scenarios such as "additional media" and "product videos." For instructions on how to pull the latest module library dependencies into your development environment, see [Pull updates](../e-commerce-extensibility/sdk-updates.md#pull-updates).
 
 > [!NOTE]
 > If you do not see the **Enable omnichannel media management** feature switch under a site's **Site settings \> Extensions**, read the documentation on how to [update your site's app.settings.json file](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file), and then add the following code to your app.settings.json file.

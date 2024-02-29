@@ -1,8 +1,8 @@
 ---
 title: Set up vendor accounts
 description: This article describes the types of information that you must specify when you create a new vendor account.
-author: GalynaFedorova
-ms.author: gfedorova
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 ms.topic: how-to

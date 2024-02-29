@@ -5,7 +5,7 @@ title: Recognize deferred revenue
 description: This article provides information about how to recognize revenue by using the Revenue recognition feature. 
 author: bking
 ms.date: 08/16/2023
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

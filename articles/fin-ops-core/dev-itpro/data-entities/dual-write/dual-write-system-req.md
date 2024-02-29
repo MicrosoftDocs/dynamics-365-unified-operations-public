@@ -2,10 +2,12 @@
 title: System requirements for dual-write
 description: This article describes the system requirements for the setup of a dual-write connection.
 author: RamaKrishnamoorthy
-ms.date: 01/14/2020
-ms.topic: article
+ms.date: 12/12/2023
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
@@ -15,6 +17,28 @@ ms.dyn365.ops.version: AX 7.0.0
 # System requirements for dual-write
 
 [!include [banner](../../includes/banner.md)]
+
+## What regions are available?
+
+Currently, we support dual-write in the following regions:
+
++ Asia
++ Australia
++ Brazil
++ Canada
++ Europe
++ France
++ Germany
++ India
++ Japan
++ South America
++ Switzerland
++ United Arab Emirates
++ United Kingdom
++ United States
+
+> [!NOTE]
+> There are currently no plans to support more regions.
 
 The setup of a dual-write connection has the following requirements:
 

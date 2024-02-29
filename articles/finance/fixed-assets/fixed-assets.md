@@ -5,7 +5,7 @@ title: Fixed assets home page
 description: This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. 
 author: moaamer
 ms.date: 08/31/2017
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

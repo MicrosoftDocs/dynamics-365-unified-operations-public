@@ -2,12 +2,12 @@
 title: Multiple VAT registration numbers
 description: This article provides information about the functionality for multiple value-added tax (VAT) registration numbers.
 author: liza-golub
-ms.date: 04/05/2022
+ms.date: 02/09/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: wangchen
 ms.search.validFrom: 
@@ -26,18 +26,21 @@ Here are the main steps to configure and use this functionality:
 - Set up the legal entity's, customers', and vendors' VAT registration numbers on the **Registration ID** FastTab on the **Manage addresses** page.
 - Specify the legal entity's VAT registration number for the sales tax authority, and specify the settlement period. The sales tax codes that are assigned to the settlement period will identify the legal entity's VAT registration.
 
-The customer and vendor VAT registration numbers for transactions can be identified by the tax calculation service. The identified tax registration numbers are available in the sales tax transactions.
+The customer and vendor VAT registration numbers for transactions can be identified by the tax calculation feature. The identified tax registration numbers are available in the sales tax transactions.
 
 The sales tax settlement procedure uses the country/region code of the registration ID.
 
 ## Prerequisites
 
-Before you begin, the Tax Calculation service must be configured. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
+Before you begin, Tax Calculation must be configured. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 ## Enable the feature
 
 1. In the **Feature management** workspace, turn on the **Support multiple VAT registration numbers** feature.
-2. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**, and turn on the **Enable tax calculation service** option.
+2. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**, and turn on the **Enable advanced tax calculation** option.
+
+> [!NOTE]
+> In the 10.0.39 update, this feature can no longer be enabled through Feature management. It's now controlled by the **Support multiple VAT registration numbers** parameter on the **Tax calculation parameters** page.
 
 ## Set up a VAT ID for a legal entity, customers, and vendors
 
@@ -65,7 +68,7 @@ To set up the VAT registration numbers for a legal entity and its customers and 
     ![Assigning VAT ID registration to addresses on the Legal entities page.](../media/Tax-Service-MultVATID-Registration-Legal-entity-04.png)
 
 > [!NOTE]
-> To automatically identify customer and vendor VAT registration numbers for sales tax transactions, sales documents, and purchase documents, create the numbers in the tax calculation service on the **Customer tax registration number applicability** and **Vendor tax registration number applicability** tabs.
+> To automatically identify customer and vendor VAT registration numbers for sales tax transactions, sales documents, and purchase documents, you can either create the numbers in the tax calculation feature on the **Customer tax registration number applicability** and **Vendor tax registration number applicability** tabs or enable the **Update tax exempt number from customer address** parameter on the **Multiple VAT registrations** tab of the **Tax calculation parameters** page.
 
 ### Set up number sequences for a legal entity's registration numbers
 
@@ -73,14 +76,14 @@ To generate separate number sequences for documents such as packing slips and in
 
 ![Assigning a number sequence group to the VAT ID of a legal entity on the Manage addresses page.](../media/Tax-Service-MultVATID-Number-sequence-group-05.png)
 
-Next, on the  **Number sequence groups** page, in the **Reference** section, set up the required number sequences codes for the supported references.
+Next, on the **Number sequence groups** page, in the **Reference** section, set up the required number sequences codes for the supported references.
 
 The code for the number sequence group is then entered by default on the sales order or purchase order header after the legal entity's tax registration is determined. The documents are numbered according to the number sequences that are assigned to the references.
 
 ![Number sequence codes on the Number sequence groups page.](../media/Tax-Service-MultVATID-Number-sequence-group-06.png)
 
 > [!NOTE]
-> Currently, the default logic supports only sales orders and purchase orders.
+> The default logic supports only sales orders, purchase orders, and free text invoices.
 
 ### Set up tax authorities
 
@@ -102,20 +105,20 @@ On the **Sales tax settlement periods** page, create sales tax settlement period
 
 ### Set up customer and vendor tax registration numbers in the Tax feature setup
 
-1. In Regulatory Configuration Service (RCS), open the tax calculation feature setup. 
+1. Open the tax calculation feature setup. 
 2. On the **Customer Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for customers are defined. 
 3. On the **Vendor Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for vendors are defined.
 
-   ![Customer and vendor registration IDs on the Tax feature setup page.](../media/tax-service-multvatid-tax-feature-setup-09-2NewUI.png)
+    ![Customer and vendor registration IDs on the Tax feature setup page.](../media/tax-service-multvatid-tax-feature-setup-09-2NewUI.png)
 
     > [!NOTE]
-    > This step is optional unless the customer or vendor has multiple tax registration numbers, and you want the Tax Calculation service to determine the ID. As the default value for the customer/vendor tax registration number, the Tax Calculation service will use the value that is entered in the **Tax exempt number** field on the header of sales and purchase documents. It will replace that default value with the value that you defined in customer/vendor tax registration number applicability rules.
+    > This step is optional unless the customer or vendor has multiple tax registration numbers, and you want the Tax Calculation feature to determine the ID. As the default value for the customer/vendor tax registration number, the Tax Calculation feature will use the value that is entered in the **Tax exempt number** field on the header of sales and purchase documents. It will replace that default value with the value that you defined in customer/vendor tax registration number applicability rules.
     >
-    > During sales tax calculation and document posting, the tax service returns the customer's or vendor's tax registration number to Dynamics 365 Finance and updates the **Tax exempt number** field on the sales order or purchase order. If the corresponding value isn't set up on the **Registration ID** FastTab on the **Manage addresses** page for the customer or vendor, the registration ID is left blank, and you receive the following message: "Customer tax registration 'xxx' is not found in the customer's Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup."
+    > During sales tax calculation and document posting, the tax feature returns the customer's or vendor's tax registration number to Dynamics 365 Finance and updates the **Tax exempt number** field on the sales order or purchase order. If the corresponding value isn't set up on the **Registration ID** FastTab on the **Manage addresses** page for the customer or vendor, the registration ID is left blank, and you receive the following message: "Customer tax registration 'xxx' is not found in the customer's Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup."
 
 ## Sales order and purchase order processing
 
-On the **Tax service parameters** page, make sure that the **Enable tax service** option is turned on, and that **Sales** and **Purchase** are selected in the **Business process** field.
+On the **Tax calculation parameters** page, make sure that the **Enable advanced tax calculation** option is turned on, and that **Sales** and **Purchase** are selected in the **Business process** field.
 
 If the sales tax codes on lines that are created for a sales order or purchase order are assigned to different sales tax settlement periods and tax registrations, there are multiple registration numbers for the order. To control the system behavior in this scenario, the **Check Tax registration number in document lines** option has been added on the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
@@ -148,4 +151,4 @@ After the settlement process is completed, no sales tax payment report is printe
 You can still manually run the sales tax payment report by going to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**.
 
 > [!NOTE]
-> Even if the feature isn't enabled on the **Tax service parameters** page, the tax registration ID will be copied from the original sales tax transactions to the offset sales tax transactions.
+> Even if the feature isn't enabled on the **Tax calculation parameters** page, the tax registration ID will be copied from the original sales tax transactions to the offset sales tax transactions.

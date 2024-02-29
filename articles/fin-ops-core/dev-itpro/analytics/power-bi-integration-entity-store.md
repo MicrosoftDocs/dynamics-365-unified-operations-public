@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
 ms.search.form: BIMeasurementDeployManagementEntityStore
 ---

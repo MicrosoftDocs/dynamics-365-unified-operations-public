@@ -4,7 +4,6 @@ description: This article outlines the lifecycle and support policies for Micros
 author: faix
 ms.date: 10/02/2023
 ms.topic: conceptual
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -14,7 +13,7 @@ ms.author: osfaixat
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
 ms.search.form: SysAbout
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

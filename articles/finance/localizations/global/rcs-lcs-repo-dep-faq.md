@@ -18,6 +18,7 @@ ms.search.form: RCS, Regulatory Configuration Services, Localization, LCS storag
 # Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 The use of Microsoft Dynamics Lifecycle Services (LCS) as a storage repository for Electronic reporting (ER) configurations is being deprecated. This deprecation will involve the following changes:
 

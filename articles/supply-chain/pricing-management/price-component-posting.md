@@ -1,5 +1,5 @@
 ---
-title: Price component posting
+title: Price component posting (preview)
 description: This article describes how to set up different sales order posting ledgers for different price component codes.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Price component posting
+# Price component posting (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

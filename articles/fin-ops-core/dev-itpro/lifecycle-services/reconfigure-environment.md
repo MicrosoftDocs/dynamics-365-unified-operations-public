@@ -6,8 +6,7 @@ description: This article describes how to reconfigure your environment with a n
 author: PeterRFriis
 ms.date: 12/05/2017
 ms.topic: article
-ms.prod: dynamics-365
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

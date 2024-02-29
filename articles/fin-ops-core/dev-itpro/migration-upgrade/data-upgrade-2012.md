@@ -17,7 +17,6 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

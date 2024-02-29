@@ -5,7 +5,7 @@ title: Year-end close missing opening balances
 description: This article explains why opening balances might be missing when you close a year, and how to rebuild those balances if they are missing.
 author: kweekley
 ms.date: 05/12/2021
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

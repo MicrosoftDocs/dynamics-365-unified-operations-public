@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.custom: 220314
 ms.assetid: 
 ms.search.form: EROperationDesigner
 ---

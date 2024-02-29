@@ -3,7 +3,7 @@
 
 title: Import vendor catalogs
 description: This article describes the process to import vendor catalog data.
-author: GalynaFedorova
+author: Henrikan
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2018-04-20 
 ms.dyn365.ops.version: 7.3
 ---

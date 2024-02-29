@@ -12,7 +12,6 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 270434
 ms.search.form: RegisterVAT_W, TaxTable
 ---
 

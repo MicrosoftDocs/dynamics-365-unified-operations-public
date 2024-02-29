@@ -1,12 +1,12 @@
 ---
-title: Enable and configure Warehouse management only mode
+title: Enable and configure Warehouse management only mode (preview)
 description: This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ms.topic: how-to
-ms.date: 08/03/2023
+ms.date: 01/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom:
@@ -16,12 +16,16 @@ ms.custom:
   - ai-seo-date:08/10/2023
 ---
 
-# Enable and configure Warehouse management only mode
+# Enable and configure Warehouse management only mode (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
+
+This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## <a name="feature-management"></a>Turn on Warehouse management only mode
 
@@ -43,16 +47,22 @@ Use the **Source systems** page to set up each external system that you want to 
 
 1. On the header of the new or selected record, enter a name for the source system. The source system must include this name in each message that it sends to Supply Chain Management, and the name in the message must exactly match the value that you specify here.
 1. Configure other settings as required to control the shipment order import processes. Tooltip help is provided for each field. Hover your mouse pointer over a field's label to view the tooltip.
+1. If another source system maintains the [product master data](wms-only-mode-exchange-data.md#master-data), specify that source system in the **Product master source system** field. To view and manually maintain the product master data mapping integration, select **Source system items** on the Action Pane.
+1. Use the **Source system items** FastTab to define how the [product creation message processing](wms-only-mode-exchange-data.md#master-data) must create the internal item numbers.
 1. On the Action Pane, select **Save**.
-1. On the Action Pane, select **Message value mapping** to open a dialog box where you can define how items and warehouses are uniquely identified in incoming documents. You can also specify whether loads for inbound shipment orders are automatically created as part of the setup on the **Inbound shipment order policies** FastTab. Tooltip help is provided for each field. When you've finished configuring settings in the dialog box, select **OK**.
+
+> [!NOTE]
+> You can't find or search for the menu items that are related to Warehouse management only mode until you create at least one record on the **Source systems** page. In addition, searching for pages requires that the current user's default company has a **Source system** record.
 
 ### Background processes
 
 As part of the [Source system](#source-systems) creation process, the following [automated background processes](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) are automatically created:
 
-- **Post shipment packing slips** – This process is used for the outbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment packing slips posting delay** value is set to 1 day.)
-- **Post shipment receipts** – This process is used for the inbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment receipts posting delay** value is set to 1 day.)
-- **Process shipment order messages** – This process is used for processing inbound and outbound shipment order messages. (By default, the repeat interval is 1 minute.)
+- **Process source system product messages** – Processes product master data messages. (By default, the repeat interval is one minute.)
+- **Process shipment order messages** – Processes inbound and outbound shipment order messages. (By default, the repeat interval is one minute.)
+- **Publish warehouse inventory update log updates** – Makes inventory update log data available to external systems via the `WarehouseInventoryUpdateLogs` entity. (By default, the repeat interval is 10 minutes.)
+- **Post shipment packing slips** – Finalizes outbound shipment orders. (By default, the repeat interval is 10 minutes if the **Shipment packing slips posting delay** value is set to one day.)
+- **Post shipment receipts** – Finalizes inbound shipment orders. (By default, the repeat interval is 10 minutes if the **Shipment receipts posting delay** value is set to one day.)
 
 ## Set up automatic release of outbound shipment orders
 

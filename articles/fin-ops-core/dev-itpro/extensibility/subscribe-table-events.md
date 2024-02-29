@@ -3,7 +3,7 @@ title: Perform business actions throughout the lifecycle of table records
 description: This article provides information about business actions that you can perform throughout the lifecycle of a table record.
 author: ivanv-microsoft
 ms.date: 07/11/2017
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Developer
@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
 ms.assetid: 
 ---
 

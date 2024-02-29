@@ -3,7 +3,7 @@ title: Extensibility changes in Finance and Operations, Enterprise edition (July
 description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
 ms.date: 11/08/2017
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Developer
@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
 ms.assetid: 
 ---
 

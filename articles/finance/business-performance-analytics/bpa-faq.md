@@ -6,13 +6,13 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 10/10/2023
+ms.date: 02/20/2024
 ms.topic: faq
 ms.prod: 
 ms.technology:
 ms.custom:
 audience: Application User
-
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 # Business performance analytics FAQ
 
@@ -27,7 +27,7 @@ We're implementing a public preview to ensure that we can provide a successful e
 
 ### What's the estimated time that's required to set up business performance analytics?
 
-The setup of business performance analytics takes about 30 minutes. However, it takes up to 24 hours for data to be available on reports.
+The setup of business performance analytics takes up to 60 minutes. However, it takes up to 24 hours for data to be available on reports.
 
 ### I received an error during the installation of business performance analytics. How do I fix it?
 
@@ -66,7 +66,7 @@ Data is refreshed once per day, at 00:00:00 AM (UTC).
 The amount of time that's required depends on the volume of data. However, there should be fresh data every 24 hours.
 
 ### How do I uninstall business performance analytics?
-There are two options available to uninstall business performance analytics. 
+There are two options available to uninstall business performance analytics. If you need to install business performance analytics after uninstalling, wait four hours before installing.
 
 Option one:
 
