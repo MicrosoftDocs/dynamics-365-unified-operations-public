@@ -224,8 +224,9 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
     After you delete these solutions, the data that's stored in tables will also be deleted.
 
 > [!IMPORTANT]
-> For the procedure to delete the data and all solutions related to Inventory Visibility in Power Apps, this preocedure should only be done when you don't use Inventory Visibility Add-in anymore in current environment. If you delete the Inventory Visibility solutions in Power Apps and then reinstall Inventory Visiblity Add-in from LCS page, you may face unexpected issue, such as stuck in installing status and cannot recover.
-> If you will uninstall Inventory Visibility Add-in and reinstall it because you restore the Supply Chain Management database, remember not delete the Inventory Visibility solutions in Power Apps, please follow the guides in below section [Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database](#restore-environment-database) to fix data issue.
+> You should only delete the data and solutions related to Inventory Visibility in Power Apps if you are sure you won't use Inventory Visibility in the current environment ever again. If you delete them and then try later to reinstall Inventory Visibility from the LCS page, you might encounter issues such as getting stuck during the install and being unable to recover.
+>
+> If you need to uninstall and reinstall the add-in because you restored the Supply Chain Management database, then don't delete the data and solutions in Power Apps. Instead, follow the procedure in [Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database](#restore-environment-database) to fix any data issues.
 
 ## <a name="restore-environment-database"></a>Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database
 
