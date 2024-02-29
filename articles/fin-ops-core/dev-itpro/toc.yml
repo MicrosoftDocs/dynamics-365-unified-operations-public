@@ -1766,6 +1766,8 @@ items:
         href: lifecycle-services/support-experience.md
       - name: Manage support experiences for finance and operations apps
         href: lifecycle-services/cloud-powered-support-lcs.md
+      - name: Migration of Lifecycle Services Support to Power Platform admin center
+        href: lifecycle-services/support-migration-to-ppac.md
       - name: Production support and monitoring
         href: organization-administration/production-support-monitoring.md
       - name: Use Customer Lockbox to manage secure access to customer data
