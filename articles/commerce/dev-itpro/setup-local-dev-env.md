@@ -23,7 +23,7 @@ This article explains how to set up a local development environment for the Comm
 > The environment setup that is described in this article can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
 
 > [!NOTE]
-> Starting with Commerce version 10.0.38, predeployed channel-side Commerce components aren't updated due to the retirement of the Retail software development kit (SDK). The last version of the predeployed components will be version 10.0.37, regardless of the version of the rest components on the virtual machine (VM). If you need to develop channel-side Commerce components on those VMs, employ the Commerce SDK relying on sealed installers as described in [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Predeployed channel-side Commerce components will be completely removed in the near future.
+> Starting with Commerce version 10.0.38, predeployed channel-side Commerce components aren't updated due to the retirement of the Retail software development kit (SDK). The last version of the predeployed components is version 10.0.37, regardless of the version of the rest components on the virtual machine (VM). If you need to develop channel-side Commerce components on a VM, employ the Commerce SDK with a reliance on sealed installers as described in [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Predeployed channel-side Commerce components are set to be completely removed in a future release.
 
 ## Supported development environment types
 
