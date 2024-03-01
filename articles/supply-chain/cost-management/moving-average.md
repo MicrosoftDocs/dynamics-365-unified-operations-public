@@ -155,6 +155,6 @@ In this moving average example, the inventory value report is printed to support
 
 > [!NOTE]
 > You cannot reconcile the general ledger with inventory by using the **Transaction time sorting** option. The report must be printed by using the **Posting date** option.
-
+> After the release of Inventory value report storage, the default version of Inventory value report no longer supports transaction-level calculations since 10.0.29. As a result, the **Average unit cost** is set to be invisible by default.However, an extension point has been provided for customization to support the calculation of cost prices on a transaction level and make the **Average Unit Cost**field visible.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
