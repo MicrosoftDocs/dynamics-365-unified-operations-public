@@ -24,7 +24,7 @@ This article provides answers to frequently asked questions about Warehouse mana
 
 ## What should I do when a message is shown as Failed in the message processor?
 
-The [message processor](../supply-chain-dev/message-processor.md) retries three times before it fails. You can use [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this failure. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page, and use that information to take the next appropriate action: queue the message (that is, move it back into the processing queue), cancel it, or [manually update it](wms-only-mode-using.md#maintain-messages).
+The [message processor](../supply-chain-dev/message-processor.md) retries three times before it fails. You can use [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this failure. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page, and use that information to take the next appropriate action: queue the message (that is, move it back into the processing queue), cancel it, or [manually update it](wms-only-mode-shared-and-external-detail-use.md#maintain-messages).
 
 > [!NOTE]
 > Usually, you must correct errors in the data before it makes sense to try to reprocess a failed message.
@@ -51,7 +51,7 @@ Warehouse management only mode is part of a larger deployment of Microsoft Dynam
 - *Warehouse manager* – Enable and review processes, maintain master data, and respond to inquiries.
 - *Warehouse mobile device user* – Access the *Warehouse Mobile Devices Portal* service.
 - *Warehouse planner* – Work with setup and planning processes.
-- *Warehouse system integration operator* – Set up integration processes that are related to inbound and outbound shipment orders.
+- *Warehouse system integration operator* – Set up integration processes that are related to inbound/outbound shipment orders and the on-hand synchronization update processes.
 - *Receiving clerk* – Work with inbound processes.
 - *Shipping clerk* – Work with outbound processes.
 - *Warehouse worker* – Work with daily warehouse processes.

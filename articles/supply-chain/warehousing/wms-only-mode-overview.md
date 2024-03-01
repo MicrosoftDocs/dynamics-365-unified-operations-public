@@ -21,7 +21,9 @@ ms.custom: bap-template
 
 *Warehouse management only mode* lets you take advantage of the core warehouse management (WMS) functionality that Microsoft Dynamics 365 Supply Chain Management offers while you also continue to take advantage of your existing investments in third-party enterprise resource planning (ERP) and order management systems. Regardless of the ERP or ordering systems that you have in place, you can now quickly deploy our advanced WMS functionality without having to set up or maintain areas of Supply Chain Management that you don't need. You're then ready to benefit from advanced WMS features such as automation integration, carrier integration, and the Warehouse Management mobile app.
 
-The integration of Supply Chain Management WMS functionality with external ERP and ordering systems is made possible by lightweight source documents that are dedicated to inbound and outbound shipment orders. Because these documents focus exclusively on warehouse management, they can replace multiple types of more general-purpose documents (such as sales orders, purchase orders, and transfer orders) from a pure warehouse management perspective.
+The integration of Supply Chain Management WMS functionality with [external ERP and ordering systems](wms-only-mode-external-erp.md) is made possible by lightweight source documents that are dedicated to inbound and outbound shipment orders. Because these documents focus exclusively on warehouse management, they can replace multiple types of more general-purpose documents (such as sales orders, purchase orders, and transfer orders) from a pure warehouse management perspective.
+
+Another scenario where the Warehouse management only mode feature can be helpful is to work with [external shared warehouses](wms-only-mode-external-shared-warehouse.md) in the Microsoft Dynamics 365 deployment. This involves running the logistic operations in a separate legal entity and linking warehouses between this legal entity and the other legal entities that manage all the order and financial processing.
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
@@ -33,53 +35,23 @@ You can [start a free trial of Dynamics 365 Supply Chain Management](https://go.
 
 :::image type="content" source="media/wms-only-high-level-integrations.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-high-level-integrations.svg":::
 
-The solution is very flexible. Therefore, you can choose the configuration of features and systems that best fits your business needs. Here are a few examples of ways that you can integrate Supply Chain Management warehouse management mode with other systems:
+The solution is very flexible. Therefore, you can choose the configuration of features and systems that best fits your business needs. Here are a few examples of ways that you can integrate Supply Chain Management warehouse management mode:
 
-- Use Supply Chain Management to handle only warehouse operations, and use an external system to handle all orders and financial processing. For this type of implementation, you must configure the warehouse management processes as part of Supply Chain Management.
-- Use Supply Chain Management to handle warehousing plus a wider range of processes (such as sales, purchase, and production orders), and also use it to handle warehouse operations for other ERP and order processing systems. For this type of implementation, the same warehouse instance can handle all the logistic warehouse processes for both internal and external integrations.
-- Use a combination of the previous two approaches. For example, you can set up a dedicated legal entity in the Supply Chain Management deployment that handles only the warehouse management processes for external systems.
+- Use Supply Chain Management to handle only warehouse operations, and use an external system to handle all orders and financial processing.
+:::image type="content" source="media/wms-only-ERP-WOM-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-ERP-WOM-integration.svg":::
+For this type of implementation, you must configure the warehouse management processes as part of Supply Chain Management. For a more detailed description of this process and the related processes, see [Warehouse management only mode with External shared warehouse processing](wms-only-mode-external-erp.md).
 
-## Inbound process
+- Create a separate legal entity in the Supply Chain Management deployment that manages the warehouse management processes for Dynamics 365 itself, including tracking the ownership of shared items using an owner inventory dimension.
+:::image type="content" source="media/wms-only-D365-shared-warehouse-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-D365-shared-warehouse-integration.svg":::
+ For a more detailed description of this process and the related processes, see [Warehouse management only mode with external shared warehouse]((wms-only-mode-external-shared-warehouse.md)).
 
-The following illustration highlights the elements of the inbound process.
-
-:::image type="content" source="media/wms-only-inbound-wom-process.svg" alt-text="Inbound process for Warehouse management only mode." lightbox="media/wms-only-inbound-wom-process.svg":::
-
-Here's a high-level description of the inbound process:
-
-1. An external system submits an *inbound shipment order* message to Supply Chain Management.
-1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. Inbound loads are created manually, automatically, or through import (depending on your configuration).
-1. A warehouse worker uses the Warehouse Management mobile app to *register* the inbound shipment transactions.
-1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-using.md#shipment-receipts), and trigger *business events* for the external systems.
-1. The external systems read and use the [shipment receipt](wms-only-mode-using.md#shipment-receipts) data for further processing. For example, if purchase orders are associated with the inbound shipment orders in the external system, this processing involves purchase order invoicing.
-1. Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
-
-For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-using.md).
-
-## Outbound process
-
-The following illustration highlights the elements of the outbound process.
-
-:::image type="content" source="media/wms-only-outbound-wom-process.svg" alt-text="Outbound process for Warehouse management only mode." lightbox="media/wms-only-outbound-wom-process.svg":::
-
-Here's a high-level description of the outbound process:
-
-1. An external system submits an *outbound shipment order* message.
-1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. Inventory reservations are created either manually or automatically (depending on your configuration).
-1. The orders are released for further warehouse processing, either manually or automatically. If you're using outbound load planning processes, you can create loads by using the outbound load planning workbench before you release the orders.
-1. Depending on the setup of your [wave template](wave-templates.md) definitions, warehouse work might be created and released immediately.
-1. The outbound warehouse work is processed, and the status of the related outbound shipment order line transactions is updated to *Picked*.
-1. The loads are outbound ship confirmed. As a result, *business events* and a [*shipment packing slip*](wms-only-mode-using.md#shipment-packing-slips) are created for the external system.
-1. The external system reads the shipment packing slip and uses its data for further processing (such as sales order invoicing for sales orders that are associated with outbound shipment orders).
-1. Supply Chain Management finalizes the outbound shipment order by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
-
-For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-using.md).
+- Use Supply Chain Management to handle warehousing plus a wider range of processes (such as sales, purchase, and production orders), and also use it to handle warehouse operations for other ERP and order processing systems.
+:::image type="content" source="media/wms-only-D365-wms-and-ERP-WOM-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-D365-wms-and-ERP-WOM-integration.svg":::
+For this type of implementation, the same warehouse instance can handle all the logistic warehouse processes for both internal and external integrations.
 
 ## Unsupported processes
 
-The following high-level processes aren't supported out of the box when Supply Chain Management is integrated with external systems. The list is most relevant to existing customers who already run warehouse management processes and are considering adopting the *Warehouse management only mode* functionality.  
+The following high-level processes aren't supported out of the box when processing warehouse management only mode. The list is most relevant to existing customers who already run warehouse management processes and are considering adopting the *Warehouse management only mode* functionality.
 
 | Process | Description |
 |---|---|
@@ -88,9 +60,8 @@ The following high-level processes aren't supported out of the box when Supply C
 | Production flows | Inbound and outbound shipment orders don't support production order, batch order, or kanban processing, including material consumption and reporting as finished via the Warehouse Management mobile app. In addition, you can't use [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md) in combination with inbound and outbound shipment orders. |
 | Transportation management processes | The transportation management engines that are currently supported for purchase order loads aren't supported for the inbound shipment order processes. Note that charges can't be assigned, and direct invoicing can't be processed, for either inbound shipment orders or outbound shipment orders. Therefore, the apportionment weight engine can't be used to generate freight bills. |
 | Creation of orders from the warehouse app | The process of creating outbound shipment orders from the Warehouse Management mobile app isn't supported. (That process resembles the *Create transfer order from license plates* process for mobile devices.) |
-| Internal order processing information that's provided to external systems | When you're using the supported orders in Supply Chain Management (such as transfer, sales, purchase, and production orders), all the related business process data is automatically maintained in Supply Chain Management. However, no business events or related inbound and outbound on-hand information is provided to external systems for these types of processes. For example, if you create a transfer order, ship inventory out of one warehouse, and receive it in another warehouse in Supply Chain Management, you can't use the method that's described for inbound and outbound shipment orders to inform the external systems about the operations. You must use a different method. |
+| Internal order processing information that's provided to external systems | When you're using the supported orders in Supply Chain Management (such as transfer, sales, purchase, and production orders), all the related business process data is automatically maintained in Supply Chain Management. However, no business events or related inbound and outbound on-hand information is provided to external systems for these types of processes. For example, if you create a transfer order, ship inventory out of one warehouse, and receive it in another warehouse in Supply Chain Management, you can't use the method that's described for inbound and outbound shipment orders to inform the external systems about the operations. You must use a different method like for example using the [warehouse inventory log updates data](wms-only-mode-exchange-data.md#warehouse-inventory-update-logs). |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the *allow reservation on demand order* capability | *Outbound shipment order line* transaction reservations don't support reservations on inventory dimensions below the location in the reservation hierarchy. (However, these reservations are supported for *Sales order line* transactions.) |
-| [Owner dimension](../inventory/consignment.md#inventory-owners) values that differ from the operating legal entity | There isn't yet support for importing and processing shipment order lines where the *Owner* tracking dimension value differs from the legal entity (company) that's used. |
 | Items enabled for [catch weight processing](catch-weight-processing.md) | Items that are enabled for catch weight processing aren't supported for inbound or outbound shipping orders. |
 | Policies and processes around vendor or customer accounts | Representations of vendors and customers aren't used for inbound or outbound shipping orders. Therefore, you can't use related order processing policies with this type of setup. For example, you can't use customer-specific or vendor-specific [product filters](filters-and-filter-codes.md) or [nonconformance management](../inventory/quality-management-processes.md#nonconformance). |
 | Order line registration and pick update processing | Inbound and outbound shipment order lines don't support the manual registration and un-registration processes that are supported by other types of order lines (such as purchase, sales, and transfer order lines). |

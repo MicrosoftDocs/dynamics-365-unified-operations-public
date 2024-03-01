@@ -54,7 +54,7 @@ Use the **Source systems** page to set up each external system that you want to 
 > [!NOTE]
 > You can't find or search for the menu items that are related to Warehouse management only mode until you create at least one record on the **Source systems** page. In addition, searching for pages requires that the current user's default company has a **Source system** record.
 
-### Background processes
+### <a name="background-processes"></a>Background processes
 
 As part of the [Source system](#source-systems) creation process, the following [automated background processes](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) are automatically created:
 
@@ -82,6 +82,12 @@ If the order numbers that the external system provides don't match the order num
 - *Shipment receipt*
 - *Warehouse outbound notification ID*
 - *Load line inventory pick*
+- *Internal consigner's account number*
+- *Internal consignee's account number*
+- *External warehouse outbound shipment order origin id*
+- *External warehouse inbound shipment order origin*
+- *External warehouse outbound shipment order update id*
+- *External warehouse inbound shipment order update*
 
 > [!TIP]
 > You can quickly enable all number sequences by using the **Generate** option on the [**Number sequences**](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) page.
