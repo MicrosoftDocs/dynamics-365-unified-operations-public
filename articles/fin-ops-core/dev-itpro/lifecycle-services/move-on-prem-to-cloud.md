@@ -214,7 +214,7 @@ After the validation is successful, the application presents a set of menu optio
     >
     > You must use the SQL server (NetBIOS) name, and not the fully qualified domain name (FQDN). If you have a SQL cluster, you must use the server name of the active primary node.
     >
-    > If you have an issue connecting with the SQL Server (NetBIOS) name, ensure that the certificate used for SQL encryption has the server’s name registered as an DNS entry in the Subject Alternative Names property. The SQL encryption certificate should have NetBIOS as well as FQDN entries for all SQL server nodes, and the listener if a cluster.
+    > If you have an issue connecting with the SQL Server (NetBIOS) name, ensure that the certificate used for SQL encryption has the server's name registered as an DNS entry in the Subject Alternative Names property. The SQL encryption certificate should have NetBIOS as well as FQDN entries for all SQL server nodes, and the listener if a cluster.
     > 
     > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you've used compression in your Dynamics 365 database, more space will be required, because the snapshot is uncompressed. The paths should be on the local disk of the machine. (Avoid using shared paths.)
     > 
@@ -244,25 +244,28 @@ After the validation is successful, the application presents a set of menu optio
 
 5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
-    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
+    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. If any **special-table** entries were added, they will be added to additional special tables publications. 
 
     > [!NOTE]
-    > All snapshots must be manually started in SQL Management Studio.
+    > All snapshots must be manually started in SQL Server Management Studio.
 
-To manually start a snapshort, follow these steps:
-1. Open the replication monitor and select your SQL Server instance.
+To manually start a snapshot, follow these steps.
+
+1. Open the replication monitor, and select your SQL Server instance.
 2. On the **Agents** tab, select and hold (or right-click) the publisher to start.
 3. Select **Start**.
 4. Start one snapshot at a time, and wait for the replication of that snapshot to be completed.
 5. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
-   For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](../migration-upgrade/monitor-replication.md).
-    
-You must manually start the publisher snapshots for steps 6 and 7.
-Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
+
+    For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](../migration-upgrade/monitor-replication.md).
+
+    You must manually start the publisher snapshots for steps 6 and 7.
+    Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
+
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
-   > [!NOTE]
-   > After the replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job takes some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see [Reporting section of the application](../migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
+    > [!NOTE]
+    > After the replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job takes some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see [Reporting section of the application](../migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
 
 6. **Replication: Setup Publication for Other Objects (functions)**
 
@@ -275,14 +278,14 @@ Older versions of the Data Migration Toolkit have automatic and manual starts. W
     >
     > If there are no functions to replicate, the publication won't be created.
     > 
-    > Don't move to the next step until the **DataReplicationStatus** property is shown as completed.
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
 7. **Cutover: Setup Publication for Non PK Tables**
 
-    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. 
-    
+    This step creates two publications. One is used to replicate non-primary key tables, and the other is used to replicate locked tables. 
+
     > [!NOTE]
-    > If there are no locked tables, then publication won't be created.
+    > If there are no locked tables, the publication won't be created.
 
     **Publication names:** AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
@@ -290,12 +293,12 @@ Older versions of the Data Migration Toolkit have automatic and manual starts. W
 
     > [IMPORTANT]
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
-   
+
     > [!NOTE]
     > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
     > 
     > To learn more about the **'dv'** option, see [Reporting section of the application](../migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
-  
+
 8. **Cutover: Remove replication setup**
 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
@@ -372,7 +375,7 @@ You can use the following options to review the reports of the replication valid
 
 Follow all previous steps to migrate data, and then follow the instructions in [Golden configuration promotion - Copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
-1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the LCS methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](../../fin-ops/imp-lifecycle/prepare-go-live.md).
+1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the Lifecycle Services methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](../../fin-ops/imp-lifecycle/prepare-go-live.md).
 2. Apply the final version of the software deployable package to production.
 3. Stop making data changes to the on-premises production environment.
 4. Repeat steps 3 through 6 in the [Do a trial migration and resolve issues](#prerequisites) section to copy the final/up-to-date on-premises production database to the cloud sandbox.
