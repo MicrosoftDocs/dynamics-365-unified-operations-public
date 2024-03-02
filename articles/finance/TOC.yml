@@ -1196,6 +1196,8 @@
             href: general-ledger/open-lines-excel-journals-documents.md
           - name: Automatic split of financial journals
             href: general-ledger/auto-split-journal.md
+          - name: Delete master records
+            href: general-ledger/master-rec-del.md          
           - name: Create ledger accrual transactions
             href: general-ledger/tasks/create-ledger-accrual-transactions.md
           - name: One voucher
