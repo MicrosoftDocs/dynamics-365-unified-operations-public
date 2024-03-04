@@ -153,7 +153,12 @@ NEW - Dynamics 365 Sales Prospect (contacts)
 For information about price lists, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> For more information about the five entities that are prefixed with "Dynamics," see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
+> For more information about the entities introduced in Supply Chain Management version 10.0.34 (Dynamics 365 Sales orders header, Dynamics 365 Sales order lines, Dynamics 365 Sales quotation, Dynamics 365 Sales quotation lines, Dynamics 365 Sales feature management states), see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
+>
+> 
+> [!NOTE]
+> For more information about the entities introduced in Supply Chain Management version 10.0.39 (Total discount customer groups, Line discount customer groups, Multiline discount customer groups, Dynamics 365 Sales Prospect (accounts), Dynamics 365 Sales Prospect (contacts)), see [Enable prospect in prospect-to-cash with Dynamics 365 Sales].
+> 
 
 ## Limitations
 
