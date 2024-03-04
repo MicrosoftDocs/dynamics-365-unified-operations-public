@@ -3,9 +3,9 @@ title: Yearly tax communication
 description: This article provides information about the yearly tax communication report in Italy.
 author: liza-golub
 ms.date: 03/04/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.topic: conceputal
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy
