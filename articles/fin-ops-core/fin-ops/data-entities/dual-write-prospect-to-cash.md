@@ -11,11 +11,11 @@ ms.author: ramasri
 ms.search.validFrom: 2020-01-27
 ---
 
-# Quote-to-cash in dual-write
+# Prospect-to-cash in dual-write
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-In Microsoft Dynamics 365 apps, the quote-to-cash process occurs through quotations or order processing workflows, and the financials are reconciled and recognized. Integration of quote-to-cash with dual-write creates a workflow that takes a quotation and an order that originate in either Dynamics 365 Sales or Dynamics 365 Supply Chain Management, and makes the quotation and order available in both apps.
+In Microsoft Dynamics 365 apps, the prospect-to-cash process occurs through quotations or order processing workflows, and the financials are reconciled and recognized. Integration of prospect-to-cash with dual-write creates a workflow that takes a quotation and an order that originate in either Dynamics 365 Sales or Dynamics 365 Supply Chain Management, and makes the quotation and order available in both apps.
 
 In the app interfaces, you can access the processing statuses and invoice information in real time. Therefore, you can more easily manage functions such as product stocking, inventory handling, and fulfillment in Supply Chain Management, without having to re-create the quotations and orders.
 
@@ -24,7 +24,8 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](../../dev-itpro/data-entities/dual-write/customer-mapping.md). For information about product integration, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> In Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is set to either *Prospect* or *Customer*. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, that record is synced to the finance and operations app only when it's a customer (`RelationshipType=Customer`). Synchronizing the **Account** row as a prospect and supporting the prospect in an integrated quotation process require a custom map to integrate the prospect data and customizations into business logic.
+> In Supply Chain Management version 10.0.39 and later, **Account** of type customer and prospect is supported. This supports both an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, and a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales]. [To be added]
+>
 
 ## Prerequisites and mapping setup
 
@@ -52,7 +53,13 @@ For example, the number sequence in Supply Chain Management is **1, 2, 3, 4, 5, 
 
 ## Sales quotations
 
-Sales quotations can be created in either Sales or Supply Chain Management. If you create a quotation in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a quotation in Supply Chain Management, it's synced to Sales in real time. Note the following points:
+Sales quotations can be created in either Sales or Supply Chain Management. 
+
+> [!NOTE]
+> In Supply Chain Management version 10.0.39 and later, **Account** of both type customer and prospect is supported. This enables an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, aswell as a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales]. [To be added]
+>
+
+If you create a quotation in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a quotation in Supply Chain Management, it's synced to Sales in real time. Note the following points:
 
 - You can add a discount to the product on the quotation. In this case, the discount will be synced to Supply Chain Management. The **Discount**, **Charges**, and **Tax** columns on the header are controlled by a setup in Supply Chain Management. This setup doesn't support integration mapping. Instead, the **Price**, **Discount**, **Charge**, and **Tax** columns are maintained and handled in Supply Chain Management.
 - The **Discount %**, **Discount**, and **Freight Amount** columns on the sales quotation header are read-only columns.
@@ -137,6 +144,11 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 [Dynamics 365 Sales quotation header](../../dev-itpro/data-entities/dual-write/mapping-reference.md#240) | quotes | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 [Dynamics 365 Sales quotation lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#241) | quotedetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 [Dynamics 365 Sales feature management states](../../dev-itpro/data-entities/dual-write/mapping-reference.md#237) | msdyn_supplychainfeaturestate | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
+NEW - Total discount customer groups
+NEW - Line discount customer groups
+NEW - Multiline discount customer groups
+NEW - Dynamics 365 Sales Prospect (accounts)
+NEW - Dynamics 365 Sales Prospect (contacts)
 
 For information about price lists, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
