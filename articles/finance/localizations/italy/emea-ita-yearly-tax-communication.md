@@ -2,12 +2,12 @@
 title: Yearly tax communication
 description: This article provides information about the yearly tax communication report in Italy.
 author: liza-golub
-ms.date: 05/02/2022
+ms.date: 03/04/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: 
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: egolub
 ms.search.validFrom: 2016-05-31
@@ -29,7 +29,7 @@ Configure Finance for **Italian sales tax books** functionality by following the
 As of 10.0.38 version of Dynamics 365 Finance, the **Yearly tax communication** feature supports reporting for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
 
 > [!NOTE]
-> In the **Feature management** workspace, turn on the **Enable Settlement period for Italian Yearly tax communication** feature. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). **Enable Settlement period for Italian Yearly tax communication** feature introduces new reference to the **Sales tax settlement period** in **Yearly tax communication** table. This makes it possible to create a **Yearly tax communication** with same ATECOFIN code and year for different **Sales tax settlement periods** and report **Yearly tax communication** separately for different (multiple) **Sales tax settlement periods**. When you enable the feature, the new tables are used as data sources for **Yearly tax communication** and data from old data sources `TaxYearlyCom_IT`, `TaxYearlyComReport_IT` is populated in the new tables `TaxYearlyComV2_IT`, `TaxYearlyComReportV2_IT`. If new tables already contain records with same values in **Years** and **ATECOFIN** code fields, these records in the new tables will *NOT* be replaced with data from old tables.
+> In the **Feature management** workspace, turn on the **Enable Settlement period for Italian Yearly tax communication** feature. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). The **Enable Settlement period for Italian Yearly tax communication** feature introduces a new reference to the **Sales tax settlement period** in the **Yearly tax communication** table. This makes it possible to create a **Yearly tax communication** with the same ATECOFIN code and year for different **Sales tax settlement periods** and report the **Yearly tax communication** separately for different (multiple) **Sales tax settlement periods**. When you enable the feature, the new tables are used as data sources for **Yearly tax communication** and data from the old data sources `TaxYearlyCom_IT`, `TaxYearlyComReport_IT` is populated in the new tables `TaxYearlyComV2_IT`, `TaxYearlyComReportV2_IT`. If new tables already contain records with same values in **Years** and **ATECOFIN** code fields, these records in the new tables will *NOT* be replaced with data from the old tables.
 
 ## Set up the Yearly tax communication report
 
@@ -42,7 +42,7 @@ As of 10.0.38 version of Dynamics 365 Finance, the **Yearly tax communication** 
 | **Yearly VAT communication model mapping** | Model mapping | Model mapping for Italian Yearly tax communication report. |
 | **Yearly tax communication (IT)**          | Format (exporting) | Yearly tax communication format for Italy. |
 
-Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2) to find the KB article by number.
 
 For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
