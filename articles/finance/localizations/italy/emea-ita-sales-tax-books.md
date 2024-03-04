@@ -2,12 +2,12 @@
 title: Configure and report Italian sales tax books
 description: The article describes how to set up and use Italian sales tax books.
 author: liza-golub
-ms.date: 02/22/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 03/04/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
-ms.reviewer: 
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: egolub
 ms.search.validFrom: 2024-02-22
@@ -19,7 +19,7 @@ ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, Ta
 
 [!include [banner](../../includes/banner.md)]
 
-The article describes how to configure and generate Italian sales tax books.
+This article describes how to configure and generate Italian sales tax books.
 
 According to Italian legislation, every value-added tax (VAT) transaction must be recorded in a tax book (*Libro IVA*) that will be used for tax reporting. 
 To fulfill these legislative requirements, Dynamics 365 Finance implements **Italian sales tax books** functionality. 
