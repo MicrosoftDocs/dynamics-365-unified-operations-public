@@ -24,8 +24,8 @@ This article lists new features, fixes, improvements, and known issues for each 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
 - Increased stability.
-- Fixed an issue where non-GS1 barcodes would not be properly scanned on the **Inquiry pages**.
-- Fixed an issue where connection configurations using the user-based authentication methods would be saved even if values where wrong or missing.
+- Fixed an issue where non-GS1 barcodes wouldn't scan correctly on inquiry pages.
+- Fixed an issue where connection configurations that use a user-based authentication method could be saved even if values were wrong or missing.
 
 ## Version 2.1.25.0
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
