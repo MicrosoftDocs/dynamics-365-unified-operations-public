@@ -28,7 +28,7 @@ The *Return item receiving* flow in the Warehouse Management mobile app supports
 
 The following illustration shows how the flow works for each of these processes.
 
-:::image type="content" source="media/unannounced-return-process.svg" alt-text="Unannounced return receiving processes" lightbox="media/unannounced-return-process.svg":::
+:::image type="content" source="media/unannounced-return-process.svg" alt-text="Unannounced return receiving processes":::
 
 ### The blind return process
 
@@ -243,7 +243,7 @@ Blind receiving is a process that allows warehouse workers to receive return ite
 
 The following illustration shows a flowchart of the blind receiving process.
 
-:::image type="content" source="media/blind-return-policy.svg" alt-text="The blind receiving process" lightbox="media/blind-return-policy.svg":::
+:::image type="content" source="media/blind-return-policy.svg" alt-text="The blind receiving process":::
 
 ### Use the mobile app to receive a blind return to a mixed license plate
 
@@ -278,11 +278,11 @@ With return details, when an order is processed at the packing station for shipm
 
 The following illustration shows the steps needed to create a sales order and complete the work of moving the ordered items to the packing area. Workers then pack the order and, on closing the container, return details are generated.
 
-:::image type="content" source="media/generate-return-details.svg" alt-text="Process for generating return details" lightbox="media/generate-return-details.svg":::
+:::image type="content" source="media/generate-return-details.svg" alt-text="Process for generating return details":::
 
 The following illustration shows a flowchart of the receiving process using the *Return item receiving* mobile menu item to process a return with return details.
 
-:::image type="content" source="media/return-details-policy.svg" alt-text="The return-details receiving process" lightbox="media/return-details-policy.svg":::
+:::image type="content" source="media/return-details-policy.svg" alt-text="The return-details receiving process":::
 
 ### Create a sales order and release it to the warehouse for packing
 
