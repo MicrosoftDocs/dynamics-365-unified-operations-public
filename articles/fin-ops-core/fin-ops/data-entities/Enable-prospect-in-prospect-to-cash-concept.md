@@ -1,22 +1,22 @@
 ---
-title: Add efficiency in quote-to-cash with Dynamics 365 Sales
-description: This article provides a conceptual overview of how the improved quote-to-cash system works and how it can help improve your business processes.
+title: Enable prospect in prospect to cash with Dynamics 365 Sales
+description: This article provides a conceptual overview of how the improved prospect-to-cash system works and how it can help improve your business processes.
 author: henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 05/01/2023
+ms.date: 03/01/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Add efficiency in quote-to-cash with Dynamics 365 Sales
+# Enable prospect in prospect-to-cash with Dynamics 365 Sales
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 and later, this capability has been improved to provide a more seamless quotation process flow across the two systems. Therefore, it allows for fewer touch points, better efficiency, and improved transparency. These changes are intended to be used only in the context of quote-to-cash integration between Sales and Supply Chain Management.
+Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.39 and later, this capability has been improved to integrate accounts of type prospect and customer seamlessly in the quotation process flow and the prospect qualification process across the two systems. These changes are intended to be used only in the context of quote-to-cash integration between Sales and Supply Chain Management.
 
 ## Sales quotation origin and ownership
 
