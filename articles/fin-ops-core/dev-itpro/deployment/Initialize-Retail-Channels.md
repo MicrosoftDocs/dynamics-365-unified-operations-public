@@ -25,10 +25,11 @@ If you're using a Tier-2 sandbox or production environment that has application 
 
 1. Before deploying CSU(s), please ensure you have the required license(s). Example: CSU licenses, device licenses, e-commerce licenses. If you do not have the required license(s), you will see a message that reads *"The current licenses do not allow for the deployment of this Commerce Scale Unit. Contact support or your sales associate for assistance"*.<br><br>
 For details on licenses, please refer to the [D365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544) and contact your [Microsoft account team](https://dynamics.microsoft.com/pricing/), or your [Dynamics Certified Partner](https://dynamics.microsoft.com/partners/find-a-partner/), or a [Dynamics 365 sales expert](https://go.microsoft.com/fwlink/?LinkId=2240698).
-2. Deploy a Tier-2 sandbox or production environment that has version 8.1.2.x or later.
-3. You can self-deploy up to two CSUs per environment. If you require more than two CSUs per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of CSUs, and desired datacenter regions. The request will be completed within five business days. If you don't require more than two CSUs per environment, you don't need to create a support request. 
-4. You must have project owner permissions in LCS before you can initialize CSU.
-5. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use CSU.
+2. Deploy a Tier-2 sandbox or production environment using a [supported release](../get-started/public-preview-releases.md).
+3. If you have the required licenses, you can self-deploy up to two CSUs per environment. If you have licenses for more than two CSUs and want to deploy them in an environment, you need to create a support request. <br><br>
+In Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of CSUs, and desired datacenter regions. The request will be completed within five business days. 
+5. You must have project owner permissions in LCS before you can initialize CSU.
+6. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use CSU.
 
     - RetailBasic
     - RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
