@@ -1,15 +1,15 @@
 ---
 title: Italy overview
 description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Italy.
-author: kfend
-ms.date: 12/01/2021
+author: liza-golub
+ms.date: 03/04/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
-ms.author: kfend
+ms.author: egolub
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
