@@ -3161,6 +3161,8 @@
         items:
         - name: Sales returns
           href: warehousing/sales-returns.md
+        - name: Receive unannounced sales returns
+          href: warehousing/sales-returns-unannounced.md
       - name: Commission
         items:
         - name: Register sales commissions
