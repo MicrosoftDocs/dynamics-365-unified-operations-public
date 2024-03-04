@@ -4,8 +4,8 @@ description: This article provides links to Microsoft Dynamics 365 Finance docum
 author: liza-golub
 ms.date: 03/04/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy
