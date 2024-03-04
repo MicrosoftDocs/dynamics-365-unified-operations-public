@@ -70,7 +70,13 @@
    overflow="visible">&#10;			<use
    xlink:href="#lend4"
    transform="scale(-6.04)"
-   id="use1" />&#10;		</marker>&#10;	</defs>&#10;	<g
+   id="use1" />&#10;		</marker>&#10;	</defs>&#10;	&#10;<rect
+   style="fill:#ffffff;stroke-width:0.75"
+   id="rect1"
+   width="687.27673"
+   height="291.32104"
+   x="-1.505535"
+   y="-1.505535" /><g
    v:mID="8"
    v:index="3"
    v:groupContext="foregroundPage"
@@ -1282,4 +1288,4 @@
    id="title23">Dynamic connector.19</title>&#10;			<path
    d="M 0,603 H 113.21"
    class="st3"
-   id="path23" />&#10;		</g>&#10;	</g>&#10;</svg>
+   id="path23" />&#10;		</g>&#10;	</g></svg>

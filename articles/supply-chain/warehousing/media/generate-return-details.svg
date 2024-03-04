@@ -27,9 +27,9 @@
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
    inkscape:document-units="in"
-   inkscape:zoom="0.51325758"
-   inkscape:cx="534.81919"
-   inkscape:cy="727.7048"
+   inkscape:zoom="1.4517117"
+   inkscape:cx="456.35784"
+   inkscape:cy="227.66229"
    inkscape:window-width="1920"
    inkscape:window-height="1009"
    inkscape:window-x="1912"
@@ -72,7 +72,13 @@
    overflow="visible">&#10;			<use
    xlink:href="#lend4"
    transform="scale(-6.04)"
-   id="use1" />&#10;		</marker>&#10;	&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;	</defs>&#10;	<g
+   id="use1" />&#10;		</marker>&#10;	&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;		&#10;	</defs>&#10;	<rect
+   style="fill:#ffffff;stroke-width:0.75"
+   id="rect1"
+   width="588.4433"
+   height="267.09848"
+   x="-1.033263"
+   y="-0.51663148" /><g
    id="shape1-1"
    v:mID="1"
    v:groupContext="shape"

@@ -70,12 +70,18 @@
    overflow="visible">&#10;			<use
    xlink:href="#lend4"
    transform="scale(-6.04)"
-   id="use1" />&#10;		</marker>&#10;	</defs>&#10;	<g
+   id="use1" />&#10;		</marker>&#10;	</defs>&#10;	&#10;<rect
+   style="fill:#ffffff;stroke-width:0.75"
+   id="rect1"
+   width="641.35797"
+   height="269.49078"
+   x="-2.2583025"
+   y="-1.505535" /><g
    v:mID="6"
    v:index="2"
    v:groupContext="foregroundPage"
    id="g22"
-   transform="translate(-51.188193,-92.590407)">&#10;		<v:userDefs>&#10;			<v:ud
+   transform="translate(-51.188193,-92.590411)">&#10;		<v:userDefs>&#10;			<v:ud
    v:nameU="msvThemeOrder"
    v:val="VT0(0):26" />&#10;		</v:userDefs>&#10;		<title
    id="title1">20.Blind Return</title>&#10;		<v:pageProperties
@@ -1174,4 +1180,4 @@
    id="title22">Dynamic connector.23</title>&#10;			<path
    d="M 0,603 H 74.96"
    class="st3"
-   id="path22" />&#10;		</g>&#10;	</g>&#10;</svg>
+   id="path22" />&#10;		</g>&#10;	</g></svg>
