@@ -3,9 +3,9 @@ title: Sales tax settlement and numbering of pages in Sales tax books
 description: This article explains sales tax settlement and numbering of pages in Sales tax books for legal entities in Italy.
 author: liza-golub
 ms.date: 03/04/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy
@@ -27,7 +27,7 @@ The **Sales tax settlement** process can be run independently from the **Italian
 
 The **Sales tax settlement** process can be run in batch mode. Select the **Use batch processing for sales tax settlement** check box parameter for the **Sales tax settlement period** in **Tax \> Indirect taxes \> Sales tax \> Sales tax settlement periods** to enable executing of the sales tax settlement process for the settlement period as batch job in the background. This is recommended for a large number of tax transactions within a period interval.
 
-Per Italian legislation, rules apply to settlement periods. For example, after the settlement period is closed, no change is allowed. You are required to report if the settlement refers to the last period on the fiscal year. View the settlement period status and report if it refers to a year closing. To support these rules, in legal entities with address in Italy, on **Sales tax settlement periods** page there are following columns added for **Period intervals**.
+According to Italian legislation, rules apply to settlement periods. For example, after the settlement period is closed, no change is allowed. You are required to report if the settlement refers to the last period on the fiscal year. View the settlement period status and report if it refers to a year closing. To support these rules, in legal entities with address in Italy, on **Sales tax settlement periods** page there are following columns added for **Period intervals**.
 
 |    Field    |  Description                              |
 |------------------------------|--------------------------|
