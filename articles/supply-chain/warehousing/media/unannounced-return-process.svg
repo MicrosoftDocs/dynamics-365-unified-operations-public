@@ -70,7 +70,13 @@
    overflow="visible">&#10;			<use
    xlink:href="#lend4"
    transform="scale(-6.04)"
-   id="use1" />&#10;		</marker>&#10;	</defs>&#10;	<g
+   id="use1" />&#10;		</marker>&#10;	</defs>&#10;	<rect
+   style="fill:#ffffff;stroke:none;stroke-width:0.75"
+   id="rect1"
+   width="581.13654"
+   height="180.6642"
+   x="-3.01107"
+   y="-1.505535" /><g
    v:mID="4"
    v:index="1"
    v:groupContext="foregroundPage"
