@@ -45,7 +45,7 @@ To register an environment, follow these steps.
 
 ## Enable Electronic invoicing integration
 
-To enable communication between Electronic invoicing and Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management, you must enable the **Electronic Invoicing integration** feature.
+To enable communication between Electronic invoicing and Finance or Supply Chain Management, you must enable the **Electronic Invoicing integration** feature.
 
 1. In the **Feature management** workspace, on the **All** tab, search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
 2. Select the feature, and then select **Enable now**.
@@ -53,17 +53,17 @@ To enable communication between Electronic invoicing and Microsoft Dynamics 365 
 ## Service environment configuration
 
 > [!NOTE]
-> The steps described in the following chapter are required if **Regulatory Configuration Service** (RCS) experience was previously used for Invoicing Service configuration. If the Invoicing Service is being initially configured via **Globalization Studio** then the following chapter can be skipped.
+> The following procedure is required if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. If you're doing the initial configuration of the Electronic Invoicing service through Globalization Studio, you can skip this procedure.
 
-1. Determine one of the already deployed service environments. This will be the only environment to be configured in the Globalization Studio and then used by the Electronic Invoicing Service.
+1. Identify one of the previously deployed service environments. This environment will be the only one that's configured in the Globalization Studio and then used by the Electronic Invoicing service.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-3. In the **Electronic invoicing** tab, in the **Service parameters** FastTab, in the **Environment** field, enter the name of the environment determind during the first step.
+3. On the **Electronic invoicing** tab, on the **Service parameters** FastTab, in the **Environment** field, enter the name of the environment that you identified in step 1.
 
 ![Screenshot that shows the Environment field for a service environment unavailable on the Electronic document parameters page.](../media/eInvoicing_service_environment_setup.png)
 
 > [!IMPORTANT]
-> After the **Globalization Studio** and **E-invoicing service workspace designer** features are enabled, the field for the service environment name becomes unavailable. Therefore, you need to finalize the name of the relevant service environment before you enable the new Globalization Studio experience.
-  
+> After the **Globalization Studio** and **E-invoicing service workspace designer** features are enabled, the field for the service environment name becomes unavailable. Therefore, you must finalize the name of the relevant service environment before you enable the new Globalization Studio experience.
+
 ## Configure Globalization Studio for Electronic invoicing
 
 Make sure that the **Globalization Studio** workspace is available in the system. For more information, see [Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
@@ -78,9 +78,11 @@ To activate Electronic invoicing in Globalization Studio, enable the following f
 - Dataverse repository
 
 > [!NOTE]
-> The **E-invoicing service workspace designer** feature enabling also activates a batch job **Feature design-time restoration procedure** that starts required data transfer from RCS related data sources (if applicable) to Dynamics 365 Finance database. The process will be run in background and requires some time to complete. The **Electronic invoicing** tile in the Globalization Studio cannot be accessed untill the batch job is completed. The following error message indicates that the batch job is not complete yet and you need to give the system more time to complete the process.
+> By enabling the **E-invoicing service workspace designer** feature, you also activate a **Feature design-time restoration procedure** batch job that starts the required data transfer from RCS-related data sources (if applicable) to the Finance database. The process runs in the background and requires some time to be completed. The **Electronic invoicing** tile in Globalization Studio can't be accessed until the batch job is completed. The following error message indicates that the batch job isn't yet completed, and you must give the system more time to complete the process:
 
-![Screenshot that shows the Electronic invoicing tile is unavailable](../media/EinvTileGS.jpg)
+> The design-time restoration procedure has already been started. Please, wait until it is finished.
+
+![Screenshot that shows that the Electronic invoicing tile is unavailable.](../media/EinvTileGS.jpg)
 
 ## Configure the Azure resources for Electronic invoicing
 
@@ -95,4 +97,4 @@ Different scenarios for processing electronic documents are implemented via Glob
 
 ## Configure Electronic invoicing parameters
 
-For the additional configuration steps related to Electronic invoicing, refer to [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
+For the additional configuration steps that are related to Electronic invoicing, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
