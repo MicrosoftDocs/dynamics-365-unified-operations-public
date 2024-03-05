@@ -1,3 +1,6 @@
+---
+# required metadata
+
 title: FAQ for Copilot in site builder
 description: This FAQ provides information about the AI technology used in Copilot in site builder, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 03/05/2024
@@ -41,4 +44,4 @@ These frequently asked questions (FAQ) describe the AI impact of the Copilot in 
 
 - [Use Copilot in site builder to enrich product detail pages](../copilot-site-builder.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
