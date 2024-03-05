@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.custom: 
   - bap-template
 audience: Application User
-ms.reviewer: 
 ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: egolub
