@@ -10,6 +10,8 @@ ms.date: 10/19/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Design forecast models (preview)
@@ -20,6 +22,8 @@ ms.custom: bap-template
 <!-- KFM: Preview until further notice -->
 
 *Forecast models* let you arrange and configure tiles to define the forecast that's made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## <a name="forecasting-algorithms"></a>Demand forecasting algorithms
 

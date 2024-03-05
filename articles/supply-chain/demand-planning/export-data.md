@@ -21,6 +21,8 @@ ms.custom: bap-template
 
 When you've finished creating, analyzing, and editing a forecast, you can export it back to Microsoft Dynamics 365 Supply Chain Management. Alternatively, you can download the data as a comma-separated values (CSV) file that can be viewed in Excel.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Download time series values as a CSV file
 
 You can download the data table from any selected time series as a CSV file that you can open in Excel, for example.

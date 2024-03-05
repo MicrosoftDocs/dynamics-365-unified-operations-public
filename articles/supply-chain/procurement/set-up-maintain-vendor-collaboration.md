@@ -3,7 +3,7 @@
 
 title: Set up and maintain vendor collaboration
 description: This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
-author: GalynaFedorova
+author: Henrikan
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
@@ -17,11 +17,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -30,6 +29,7 @@ ms.dyn365.ops.version: Version 1611
 # Set up and maintain vendor collaboration
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 

@@ -3,8 +3,8 @@
 
 title: Batch processing overview
 description: This article provides an overview of batch processing.
-author: Peakerbl
-ms.date: 07/23/2019
+author: snagamalla
+ms.date: 02/09/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: snagamalla
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,9 +39,9 @@ The tasks in a batch job can run either sequentially or at the same time. Additi
 
 You can set up recurrence patterns for batch jobs. For example, you can set up a job to process invoices automatically at the end of every month. 
 
-To monitor batch jobs, you can set up alerts. Alerts can be sent when the batch job succeeds, fails, or has finished running. 
+To monitor batch jobs, you can set up alerts. Alerts can be sent when the batch job succeeds, fails, or finishes. 
 
-After a batch job has been processed, you can view the history. The history includes any messages that were encountered while the job was running. 
+After a batch job is processed, you can view the history. The history includes any messages that were encountered while the job was running. 
 
 Use batch groups to categorize batch tasks and run them on specific servers. The servers in your environment might have different software installed, or they might be available at different times of the day. Batch groups are used to direct batch tasks to the most appropriate server. Tasks in the same batch job can belong to different batch groups. 
 
@@ -52,7 +52,7 @@ For more information, see [Batch processing and batch servers](batch-server-over
 
 ## Batch functions
 
-Administrators and Batch managers can perform common tasks including creating and copying batch jobs, changing a batch job user, and specifying a time period in which a job should not execute. For more information about these tasks, see the following topics:
+Administrators and Batch managers can perform common tasks including creating and copying batch jobs, changing a batch job user, and specifying a time period in which a job shouldn't run. For more information about these tasks, see the following topics:
 
 -  [Create a batch job](../../fin-ops/sysadmin/create-batch-job.md)
 -  [Batch manager security role](runby.md)
@@ -61,6 +61,7 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Set up alerts](alerts.md)
 -  [Enhanced batch forms](enhanced-forms.md)
 -  [Clean up the batch job history](batch-history-cleanup.md)
+-  [Clean up the batch job table](batch-job-cleanup.md)
 -  [Abort an executing batch job](batch-abort.md)
 
 

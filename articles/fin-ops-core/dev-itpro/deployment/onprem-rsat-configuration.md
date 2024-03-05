@@ -6,8 +6,7 @@ description: This topic explains the steps that are required to configure and en
 author: faix
 ms.date: 03/06/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global

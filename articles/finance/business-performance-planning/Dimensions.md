@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -164,4 +163,4 @@ You can delete a dimension that isn't being used in a cube.
 1. On **Dimensions** page, select the dimension in the left preview pane.
 1. Select **Delete**.
 
-When a dimension is deleted, the cube isn't updated. However, the Power BI visuals might be affected.
+

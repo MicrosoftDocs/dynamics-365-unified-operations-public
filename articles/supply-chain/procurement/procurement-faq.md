@@ -1,7 +1,7 @@
 ---
 title: Procurement FAQ
 description: This article provides answers to frequently asked questions (FAQs) about the procurement functionality of Supply Chain Management
-author: GalynaFedorova
+author: Henrikan
 ms.date: 05/31/2021
 ms.topic: article
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable

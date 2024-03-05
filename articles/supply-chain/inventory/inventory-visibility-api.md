@@ -16,6 +16,7 @@ ms.dyn365.ops.version: 10.0.22
 # Inventory Visibility public APIs
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes the public APIs that are provided by Inventory Visibility.
 
@@ -791,11 +792,7 @@ The following example shows how to query all products in multiple sites and loca
 }
 ```
 
-## <a name="product-search-query"></a>Query with product search (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!-- KFM: Preview until Jan 2024 -->
+## <a name="product-search-query"></a>Query with product search
 
 The following on-hand query APIs are enhanced to support product search:
 
@@ -804,8 +801,6 @@ The following on-hand query APIs are enhanced to support product search:
 
 > [!NOTE]
 > When you post an Inventory Visibility query that uses product search, use the `productSearch` request parameter (with a `ProductAttributeQuery` object inside) to find or filter by product ID. The newer APIs no longer support the older `productid` request parameter in the request body.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Prerequisites
 

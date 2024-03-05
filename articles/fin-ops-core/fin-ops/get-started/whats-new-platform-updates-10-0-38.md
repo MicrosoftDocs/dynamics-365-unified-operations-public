@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.38 of finance and operations apps (February 2024)
 description: This article lists the features that are included in the platform updates for version 10.0.38 of finance and operations apps.
 author: johnmichalak
-ms.date: 10/24/2023
+ms.date: 01/22/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: johnmichalak
@@ -31,6 +31,7 @@ This section will contain a table that lists the features that are included in t
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Client | Bulk editing for grids | [Grid capabilities](grid-capabilities.md) | Feature management | 
+| Data Management | Clean up staging tables from Data Management menu | This [feature](/dynamics365/fin-ops-core/dev-itpro/data-entities/staging-tables) allows Data Management Administrators to directly truncate the staging table associated with a data entity. The option is available in the Data Entities menu within the Data Management workspace. This action will remove all records from the staging table for the selected entity and should be used with caution. Currently running data import/export jobs involving the selected staging table (imports or exports through staging) is impacted if the staging table is truncated. Ensure there aren't any currently running jobs that involve this staging table before using this feature. | On by default|
 
 ## Feature enhancements included in this release
 

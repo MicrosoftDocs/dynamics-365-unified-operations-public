@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
-ms.date: 12/01/2023
+ms.date: 02/16/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,12 +39,12 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective March 2024
 
-### Non-Azure AD external user sign-in 
+### Non-Entra ID external user sign-in 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Azure AD) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
-| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Azure AD portal. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
+| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Entra ID) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
+| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Microsoft Entra admin center. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. End of support date is targeted for March 2024. |
@@ -77,6 +77,28 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | **Product areas affected**         | System Administration  |
 | **Deployment option**              | All |
 | **Status**                         | The User Log page will be removed by Jan 12 2024 (10.0.38/PU62) |
+
+### Exchange email provider
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The authentication mechanism that the Exchange email provider uses is being removed, and the Exchange provider never supported sovereign clouds. |
+| **Replaced by another feature?**   | Customers who use the Exchange email provider should migrate to the Microsoft Graph email provider. For more information, see [Configure and send email](../../dev-itpro/organization-administration/configure-email.md). |
+| **Product areas affected**         | System administration  |
+| **Deployment option**              | All |
+| **Status**                         | The Exchange email provider will stop sending emails as of September 15, 2024. |
+
+## Feature deprecation effective October 2022
+
+### Microsoft SQL Server 14.x or older 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We're discontinuing support for Microsoft SQL Server 14.x and older versions in Finance and Operations (Dynamics 365), as active support for 14.x ended in October 2022. Starting from 10.0.40 (PU 64), there may be SQL-related updates in FinOps that aren't compatible with older versions of MS SQL Server. |
+| **Replaced by another feature?**   | Yes, customers can use Microsoft SQL Server 15.x or higher with their Finance and Operations (Dynamics 365).|
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. End of support date is targeted for 10.0.28 (PU 52), which went out of support on October 21, 2022. |
 
 
 ## Feature deprecation effective August 2022
@@ -394,7 +416,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | The [new grid control](../../dev-itpro/get-started/grid-capabilities.md) |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | The new grid control is mandatory with the October 2022 release (version 10.0.29). The **forceLegacyGrid()** API is currently still being honored if the old grid is still needed; however, this API is targeted to be deprecated by the October 2023 release. When the deprecation of this API is announced, it is available for at least 12 months before no longer being available. |
+| **Status**                         | The new grid control is mandatory with the October 2022 release (version 10.0.29). The **forceLegacyGrid()** API is currently still being honored if the old grid is still needed; however, this API is targeted to be deprecated by the October 2023 release. When the deprecation of this API is announced, it's available for at least 12 months before no longer being available. |
 
 ### Personalization without saved views 
 

@@ -119,7 +119,7 @@ There are several methods for processing cycle counting work by using Supply Cha
 -   **User directed** – The worker can specify a cycle counting work ID that has a status of **Open**.
 -   **System directed** – Supply Chain Management assigns a cycle counting work ID to the worker.
 -   **Cycle count grouping** – The worker can group cycle counting work IDs that are specific to a particular location, zone, or work pool.
--   **Spot cycle counting** – The worker can count items in a warehouse location at any time, without creating cycle counting work. To perform spot cycle counting in a location, the worker enters the location ID.
+-   **Spot cycle counting** – The worker can count items in a warehouse location at any time, even if no open cycle counting work exists for that location. To initiate spot cycle counting in a location, the worker enters the location ID. If no open cycle counting work exists for that location, then the system creates a new work record for spot cycle counting. If open cycle counting work does exist for the location, then the existing work record will be used for spot cycle counting.
 
 The following example shows how you can perform spot cycle counting by using a mobile device. The instructions that the worker sees on the device vary, depending on the setup of the menu item for spot cycle counting.
 

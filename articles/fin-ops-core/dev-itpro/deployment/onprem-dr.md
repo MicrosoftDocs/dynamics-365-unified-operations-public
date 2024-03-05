@@ -6,8 +6,7 @@ description: This article describes how to configure Dynamics 365 Finance + Oper
 author: faix
 ms.date: 09/11/2020
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

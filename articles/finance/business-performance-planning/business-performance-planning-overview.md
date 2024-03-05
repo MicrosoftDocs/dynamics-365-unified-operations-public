@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -48,7 +47,7 @@ An Excel add-in (available in a later release) provides more ways to update dime
 ## Key concepts and terms
 
 - **Cube** – A collection of dimension and fact data that's used for modeling and analytical purposes.
-- **Dimensions** – Descriptors that define the facts. They're typically what you want to use to slide and view your fact data. Common dimensions are people, product, place, and time. A dimension consists of one or more columns. For example, a time dimension might contain the date, month, year, and other aggregation details or attributes. These columns can then be used in the analysis of transactions to create a hierarchical structure that provides a drill-down path from the year to the month to the date.
+- **Dimensions** – Descriptors that define the facts. They're typically what you want to use to slice and view your fact data. Common dimensions are people, product, place, and time. A dimension consists of one or more columns. For example, a time dimension might contain the date, month, year, and other aggregation details or attributes. These columns can then be used in the analysis of transactions to create a hierarchical structure that provides a drill-down path from the year to the month to the date.
 - **Facts** – Numeric values that can be aggregated and analyzed. (Aggregation and analysis are the fundamental reasons for defining a cube.) Examples of fact data include sales invoices, production costs, or salaries and wages.
 
 ## Cube example

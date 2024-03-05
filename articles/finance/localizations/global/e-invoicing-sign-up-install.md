@@ -1,15 +1,15 @@
 ---
 title: Sign up for and install the Electronic Invoicing service
 description: This article provides information about how to sign up for and install the Electronic Invoicing service.
-author: gionoder
-ms.date: 02/07/2022
+author: anuchansoriya
+ms.date: 01/22/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: achansoriya 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about how to sign up for and install the Electronic Invoicing service. There are four steps to this process. Steps 1 through 3 are required, and step 4 is optional.
+This article provides information about how to sign up for and install the Electronic Invoicing service. There are three steps to this process.
 
 ### Step 1: Sign up for Regulatory Configuration Service
 
@@ -42,11 +42,3 @@ To complete this step, see [Install the add-in for microservices in Lifecycle Se
 You must set up the integration between RCS and the Electronic Invoicing service. You must also set up the main components.
 
 To complete this step, see [Set up Regulatory Configuration Service (RCS)](e-invoicing-set-up-rcs.md).
-
-### Step 4: Microsoft Power Platform plug-in admin reference
-
-Some scenarios require integration with Dataverse in the scope of Microsoft Power Platform.
-
-Currently, this setup is mandatory if you will use Electronic invoicing solutions for Indonesian electronic invoicing scenarios. However, it's optional for Saudi Arabian electronic invoicing scenarios. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md).
-
-To complete this step, see [Microsoft Power Platform plug-in admin reference](../dev-itpro/e-invoicing-power-platform-plug-in.md).

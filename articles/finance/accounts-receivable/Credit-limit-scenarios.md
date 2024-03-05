@@ -18,7 +18,6 @@ audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 539093
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jchrist

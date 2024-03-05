@@ -12,7 +12,6 @@ ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 269544
 ms.assetid: 92b0cf1b-51ec-4611-bf8e-db4cd10ffed0
 ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 ---

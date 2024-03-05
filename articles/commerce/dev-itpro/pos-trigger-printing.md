@@ -17,7 +17,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 # Store Commerce app triggers and printing
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 

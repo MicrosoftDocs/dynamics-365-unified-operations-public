@@ -12,7 +12,6 @@ ms.search.region: China (PRC)
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 265884
 ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
 ms.search.form: LedgerParameters
 ---

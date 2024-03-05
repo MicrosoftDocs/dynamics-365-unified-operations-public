@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 08/09/2023
+ms.date: 01/04/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,9 +15,8 @@ ms.search.form: SysEmailParameters
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 268274
 ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
 ms.search.region: Global
 # ms.search.industry: 
@@ -36,22 +35,97 @@ Both administrators and users set the behavior of the email subsystem.
 
 ## [Administrator] Email parameters page 
 
-### Configuration tab
-On the **Email parameters** page, note the following settings on the **Configuration** tab.
+### Email configuration for the environment
+On the **Email parameters** page, administrators can configure the high-level email behavior for the environment from the **Configuration** tab.
 
 | Field                 | Description |
 |-----------------------|-------------|
-| Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
+| Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Microsoft Graph and Exchange providers will use the account that's associated with the batch process. Note: Microsoft Graph is available in Dynamics 365 Finance version 10.0.38 and later. |
 | Attachment size limit | Specifies the maximum size of a single email that can be sent via the email subsystem. |
+| Email expiration in days | Specifies the number of days before the status of an unsent message is set to **Expired**. A value of **0** means that the default period of 30 days is in effect. |
 
 The **Email history** section serves two purposes. First, it provides an entry point to the **Email history** page, where administrators can review all sent emails and also any errors that prevented an email from being sent. Second, it lets you configure how long email history is maintained. By default, the last 30 days of email history are retained. You can adjust this period by changing the value of the **Number of days to retain email history** field to a non-zero number. If you set the value to **0** (zero), the default number and behavior are used.
 
 The **Email throttling** section enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. This feature can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't originally be sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email regardless. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**. The sending limits for the Office 365 SMTP email provider is automatically set according to the [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers. 
 
 > [!NOTE]
-> Use of the **Email throttling** feature isn't recommended for the Exchange email provider, because it has its own throttling mechanism. Therefore, if you're using Exchange, you should ensure that the **per-minute email sending limit** field for it is set to **0**.
+> Use of the **Email throttling** feature isn't recommended for the Microsoft Graph and Exchange email providers, because they have their own throttling mechanisms. Therefore, you should ensure that the **per-minute email sending limit** field is set to **0** for both those providers. 
 
-### SMTP settings tab
+### Send email with Microsoft Graph
+
+For customers who use Office 365, Microsoft Graph is the recommended email provider for Dynamics 365 finance and operations apps. This email provider replaces the deprecated Exchange email provider.
+
+You must have the following permissions to set up the Microsoft Graph integration:
+
+- You must be a system administrator in the application to link the Dynamics 365 finance and operations environment to Microsoft Graph.
+- You must be an administrator for your Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform the first part of the configuration for you.
+
+#### One-time registration process
+
+To create an app, follow these steps.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/) by using an Azure tenant admin account.
+
+    > [!NOTE]
+    > The user who completes this procedure must have Admin rights for the tenant to register applications.
+
+2. Go to **Azure Active Directory** \> **App registrations** \> **New application**.
+3. Enter the following values:
+
+    - **Name** – Enter the name of your app.
+    - **Supported account types** – Enter only accounts that are directly in this organization (single tenant).
+
+4. Select **Register**.
+5. Make a note of the **Application (client) ID** value. You will use this value to connect to the Microsoft Graph service from your finance and operations environment.
+
+    > [!IMPORTANT]
+    > Be sure to capture the **Application (client) ID** value before you continue.
+
+6. To add permissions, follow these steps:
+
+    1. Select **Manage** \> **API permissions** \> **Add a permission** \> **Microsoft APIs** \> **Microsoft Graph**.
+    2. Select **Application permissions**, and enable **Mail.Send**.
+
+        > [!NOTE]
+        > By default, the app should include the **User.Read** delegated permission for Microsoft Graph. If that permission is missing, you must add it from the delegated permissions.
+
+    3. Select **Add permissions**.
+    4. Select **Grant admin consent for** to allow emails to be sent.
+
+7. To create a client secret, follow these steps:
+
+    1. Select **Manage** \> **Certificates and secrets**.
+    2. On the **Client secrets** tab, select **New client secret**.
+    3. Enter a value in the **Description** and **Expires** fields, and then select **Add**.
+    4. Make a note of the **Secret value** value. You will use this value to connect to the Microsoft Graph service from your Dynamics 365 finance and operations environments.
+
+    > [!IMPORTANT]
+    > Be sure to capture the **Secret value** value before you continue.
+
+#### Restrict mailboxes
+
+Administrators can modify mailbox access. For more information, see [Limiting application permissions to mailboxes](/graph/auth-limit-mailbox-access).
+
+#### Configure Microsoft Graph in Dynamics 365 finance and operations apps
+
+1. In Dynamics 365 finance and operations apps, open the **Email parameters** page.
+2. On the **Microsoft Graph settings** tab, in the **Application ID** field, enter the **Application ID** value that you captured when you created the new app in the previous procedure.
+3. In the **Application key** field, enter the **Secret value** value that you captured when you created a client secret in the previous procedure.
+4. Select **Save**.
+
+#### Exchange email provider (Deprecated)
+
+On the **Email parameters** page, an administrator can select **Exchange** as an interactive email provider and as the Batch email provider. This mail provider will use the current user's Exchange Online account to send emails. When it's used as the Batch email provider, the batch account will be used. No additional configuration is required.
+
+If troubleshooting is required, ensure that it's possible to sign in to the current user's account, and that emails can be sent from that account to the intended recipients.
+
+Note that the Exchange mail provider has the following limitations:
+
+- It isn't supported for external users, because those users won't have Exchange accounts on the system tenant.
+- It's available only in Microsoft-managed environments.
+
+### Send email by using SMTP
+
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
 #### Server information
@@ -115,13 +189,13 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </table>
 
 > [!NOTE]
-> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). The Exchange mail provider can be used if a more modern integration is desired. Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) doesn't affect the use of SMTP in finance and operations apps, because "SMTP AUTH will still be available when Basic authentication is permanently disabled."
+> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. The Microsoft Graph email provider can be used if a more modern integration is desired. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) doesn't affect the use of SMTP in finance and operations apps, because "SMTP AUTH will still be available when Basic authentication is permanently disabled."
 
 ## [Administrator] Email distributor batch process
 
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
 
-If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be the sender.
+If the Microsoft Graph or Exchange provider is used, then the user account associated with the batch process (usually admin) will be the sender.
 
 ## [Administrator] User email
 
@@ -271,16 +345,6 @@ The testing for email notifications is to simply trigger the notification and th
 
 4. Check for the email notification in the appropriate inbox.
 
-## Exchange mail provider
-
-The **Email parameters** page allows an administrator to select **Exchange** as an interactive email provider and as the Batch email provider. The **Exchange** mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
-If troubleshooting is needed, ensure that it's possible to sign in to the current user's account and that emails can be sent from that account to the intended recipients.
-
-> [!IMPORTANT]
-> The Exchange mail provider is: 
-> -  Not supported for external users, as those users will not have Exchange accounts on the system tenant.
-> -  Only available in Microsoft-managed environments. 
-
 ## Troubleshooting
 
 ### Common issues with sending email
@@ -348,7 +412,7 @@ There are some standard processes that can help you troubleshoot the configurati
   </tr>
 </table>
 
- ### Specific Exchange email issues
+ ### Specific Microsoft Graph/Exchange email issues
 
 -  **<span id="unauthorized-forbidden-error">"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange</span>**
 
@@ -504,9 +568,9 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
 The email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.
 
-### What email limits apply when using Exchange or SMTP?  
+### What email limits apply when using Microsoft Graph, Exchange, or SMTP?  
 
-The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) apply.
+The system communicates with Microsoft Graph, Exchange, or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) apply.
 
 
 ## Additional resources

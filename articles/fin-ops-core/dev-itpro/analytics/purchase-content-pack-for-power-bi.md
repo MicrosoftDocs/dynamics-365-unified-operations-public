@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.form: PurchaseSpendAnalysisPowerBI
 ---
