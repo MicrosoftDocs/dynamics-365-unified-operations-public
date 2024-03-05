@@ -281,7 +281,7 @@ Follow these steps to receive products to a mixed license plate in a warehouse w
 The returned products have now been put onto a mixed license plate for further processing. (For more information, see [Mixed license plate receiving](/dynamics365/supply-chain/warehousing/mixed-license-plate-receiving).) Follow these steps to finish receiving the returned items.
 
 1. Go to **Warehouse Management** \> **Inquiries and reports** \> **Mixed license plate receiving**.
-1. In the **Licensed plate** grid, find the mixed license plate that you processed by using the mobile app.
+1. In the **License plate** grid, find the mixed license plate that you processed by using the mobile app.
 1. On the Action Pane, on the **License plate** tab, select **Complete license plate** to complete mixed license plate receiving.
 
 After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](/dynamics365/supply-chain/warehousing/sales-returns).
@@ -376,7 +376,7 @@ Follow these steps to receive returned items into the warehouse.
 The returned products have now been put onto a mixed license plate for further processing. (For more information, see [Mixed license plate receiving](/dynamics365/supply-chain/warehousing/mixed-license-plate-receiving).) Follow these steps to finish receiving the returned items.
 
 1. Go to **Warehouse Management** \> **Inquiries and reports** \> **Mixed license plate receiving**.
-1. In the **Licensed plate** grid, find the mixed license plate that you processed by using the mobile app.
+1. In the **License plate** grid, find the mixed license plate that you processed by using the mobile app.
 1. On the Action Pane, on the **License plate** tab, select **Complete license plate** to complete the mixed license plate receiving.
 
 After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](/dynamics365/supply-chain/warehousing/sales-returns).
