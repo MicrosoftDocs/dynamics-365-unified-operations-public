@@ -1117,7 +1117,7 @@ PRODUCTNAME | > | msdyn_productname |
 PRODUCTDESCRIPTION | > | msdyn_productdescription |
 ISSTOCKEDPRODUCT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isstockedproduct |
 FIELDSERVICEPRODUCTTYPE | >><br>`Inventory` : `690970000`<br>`NonInventory` : `690970001`<br>`Service` : `690970002` | msdyn_fieldserviceproducttype |
-CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
+CURRENCYCODE | > | msdyn_transactioncurrencyid.isocurrencycode |
 [None] | >> | msdyn_shouldsyncwithproducts | True
 
 ###  <a name="237"></a>Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)
