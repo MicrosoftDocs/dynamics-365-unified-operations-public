@@ -91,14 +91,16 @@ The creation of product families from Dynamics 365 Sales isn't supported with th
 The synchronization of products happens from the finance and operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a finance and operations app), this overwrites the values in Dataverse.
 
 ### New approach for integration of products
+
 Starting from Supply Chain Management version 10.0.39 and Dynamics 365 Supply Chain Extended v2.3.4.294 a new approach is introduced for product synchronization to improve the overall performance.
-In this approach, the new data entities [DV released distinct products](mapping-reference.md#242) and [DV released products](mapping-reference.md#243) only contain the information that is synchronized to Dataverse, which makes the data entities more performant, having fewer joints and data sources. And the Dataverse plugins are taking care of updating the relevant product information from **msdyn\_sharedproductdetails** to **Product**.
+
+The new data entities [DV released distinct products](mapping-reference.md#242) and [DV released products](mapping-reference.md#243) only contain the information that is synchronized to Dataverse to make the data entities more performant by having fewer joins and data sources. The Dataverse plugins take care of updating the relevant product information from **msdyn\_sharedproductdetails** to **Product**.
  
-As it's mentioned in [Sync on-demand with the Supply Chain Management pricing engine](../../../fin-ops/data-entities/pricing-engine.md) Dynamics 365 Sales uses  Supply Chain Management pricing engine for price-related calculations, so in this approach the UnitCost and SalesPrice are no longer needed or synchronized to Dataverse.
+As mentioned in [Sync on-demand with the Supply Chain Management pricing engine](../../../fin-ops/data-entities/pricing-engine.md), Dynamics 365 Sales uses the Supply Chain Management pricing engine for price-related calculations, so the UnitCost and SalesPrice are no longer needed or synchronized to Dataverse.
 
-In order to start using this new approach, verify that you use Supply Chain Management version 10.0.39 or older and that solution Dynamics 365 Supply Chain Extended v2.3.4.294 is installed on Power Platform. The old Dual-write maps [CDS released distinct products](mapping-reference.md#213) and [Released products V2](mapping-reference.md#189) should be stopped and the new maps should be started. The plugins are made to be working with the new maps, so they are automatically triggered and executed only when new maps are activated.
+To start using this new approach, verify that you use Supply Chain Management version 10.0.39 or older and that solution Dynamics 365 Supply Chain Extended v2.3.4.294 is installed on Power Platform. The old Dual-write maps [CDS released distinct products](mapping-reference.md#213) and [Released products V2](mapping-reference.md#189) should be stopped and the new maps should be started. The plugins are made to work with the new maps, so they are automatically triggered and executed only when the new maps are activated.
 
-Stopping the new maps [DV released distinct products](mapping-reference.md#242) and [DV released products](mapping-reference.md#243) and starting the old maps, would use the old approach for product synchronization.
+Stopping the new maps [DV released distinct products](mapping-reference.md#242) and [DV released products](mapping-reference.md#243) and starting the old maps, uses the old approach for product synchronization.
 
 When running initial sync, [DV released products](mapping-reference.md#243) map should be run first, and then [DV released distinct products](mapping-reference.md#242).
 
