@@ -27,48 +27,48 @@ The following image shows the product data model from finance and operations app
 
 ![Data model for products in finance and operations.](media/dual-write-products-5.jpg)
 
-These two product data models have been integrated in Dataverse as shown below.
+These two product data models are integrated into Dataverse as shown in the following image.
 
 ![Data model for products in Dynamics 365 apps.](media/dual-write-products-6.jpg)
 
-The Dual-write table maps for products have been designed to flow data one-way only, in near-real time from finance and operations apps to Dataverse. However, the product infrastructure has been made open to make it bi-directional if required. Although you can customize it, it's at your own risk, as Microsoft doesn't recommend this approach.
+The Dual-write table maps for products are designed to flow data one-way only, in near-real time from finance and operations apps to Dataverse. However, the product infrastructure is open to make it bi-directional if necessary. Although you can customize it, it's at your own risk, as Microsoft doesn't recommend this approach.
 
 ## Templates
 
 Product information contains all the information related to the product and its definition, such as the product dimensions or the tracking, and storage dimensions. As the following table shows, a collection of table maps is created to sync products and related information.
 
-Finance and operations apps | Other Dynamics 365 apps | Description
------------------------|--------------------------------|---
-[All products](mapping-reference.md#138) | msdyn_globalproducts | The all products table contains all the products available in finance and operations apps, both the released products and the nonreleased products.
-[CDS released distinct products](mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
-[Colors](mapping-reference.md#170) | msdyn\_productcolors
-[Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
-[Default order settings](mapping-reference.md#172) | msdyn_productdefaultordersettings |
-[DV released distinct products](mapping-reference.md#242) | Product |  The **DV released distinct products** entity is a simpler version of **CDS released distinct products** entity. It contains only variant specific information, and relies on Dataverse plugins to automatically set relevant product master information from **msdyn\_sharedproductdetails** to **Product**. Available in solution Dynamics 365 Supply Chain Extended v2.3.4.294
-[DV released products](mapping-reference.md#243) | msdyn\_sharedproductdetails | The **DV released products** entity is a simpler version of **Released products V2** entity. It contains product master relevant information, and relies on Dataverse plugins to automatically update relevant products from **msdyn\_sharedproductdetails** to **Product**. Available in solution Dynamics 365 Supply Chain Extended v2.3.4.294.
-[Product categories](mapping-reference.md#166) | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category table.
-[Product category assignments](mapping-reference.md#167) | msdyn_productcategoryassignments | To assign a product to a category the product category assignments table can be used.
-[Product category hierarchies](mapping-reference.md#168) | msdyn_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse using the Product category hierarchy table.
-[Product category hierarchy roles](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Product hierarchies can be used for different roles in Dynamics 365 finance and operations. They specify which category is used in each role the product category role table is used.
-[Product default order settings V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
-[Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups | The product dimension group defined which product dimensions define the product.
-[Product master colors](mapping-reference.md#187) | msdyn_sharedproductcolors | The **Shared product color** table indicates the colors that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
-[Product master configurations](mapping-reference.md#188) | msdyn_sharedproductconfigurations | The **Shared product configuration** table indicates the configurations that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
-[Product master sizes](mapping-reference.md#190) | msdyn_sharedproductsizes | The **Shared product size** table indicates the sizes that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
+|Finance and operations apps | Other Dynamics 365 apps | Description|
+|-----------------------|--------------------------------|---|
+|[All products](mapping-reference.md#138) | msdyn_globalproducts | The all products table contains all the products available in finance and operations apps, both the released products and the nonreleased products.|
+|[CDS released distinct products](mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.|
+|[Colors](mapping-reference.md#170) | msdyn\_productcolors|
+|[Configurations](mapping-reference.md#171) | msdyn\_productconfigurations|
+|[Default order settings](mapping-reference.md#172) | msdyn_productdefaultordersettings |
+|[DV released distinct products](mapping-reference.md#242) | Product |  The **DV released distinct products** entity is a simpler version of **CDS released distinct products** entity. It contains only variant specific information, and relies on Dataverse plugins to automatically set relevant product master information from **msdyn\_sharedproductdetails** to **Product**. Available in solution Dynamics 365 Supply Chain Extended v2.3.4.294|
+|[DV released products](mapping-reference.md#243) | msdyn\_sharedproductdetails | The **DV released products** entity is a simpler version of **Released products V2** entity. It contains product master relevant information, and relies on Dataverse plugins to automatically update relevant products from **msdyn\_sharedproductdetails** to **Product**. Available in solution Dynamics 365 Supply Chain Extended v2.3.4.294.|
+|[Product categories](mapping-reference.md#166) | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category table.|
+|[Product category assignments](mapping-reference.md#167) | msdyn_productcategoryassignments | To assign a product to a category, the product category assignments table can be used.|
+|[Product category hierarchies](mapping-reference.md#168) | msdyn_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse using the Product category hierarchy table.|
+|[Product category hierarchy roles](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Product hierarchies can be used for different roles in Dynamics 365 finance and operations. They specify which category is used in each role the product category role table is used.|
+|[Product default order settings V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
+|[Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups | The product dimension group defined which product dimensions define the product.|
+|[Product master colors](mapping-reference.md#187) | msdyn_sharedproductcolors | The **Shared product color** table indicates the colors that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.|
+|[Product master configurations](mapping-reference.md#188) | msdyn_sharedproductconfigurations | The **Shared product configuration** table indicates the configurations that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.|
+|[Product master sizes](mapping-reference.md#190) | msdyn_sharedproductsizes | The **Shared product size** table indicates the sizes that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.|
 [Product master styles](mapping-reference.md#191) | msdyn_sharedproductstyles | The **Shared product style** table indicates the styles that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
-[Product Number Identified Barcode](mapping-reference.md#164) | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
-[Product specific unit conversions](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** table contains the columns from finance and operations apps that define the product, and that contain the product's financial and management information.
-[Sizes](mapping-reference.md#174) | msdyn\_productsizes
-[Storage dimension groups](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | The product storage dimension group represents the method used to define the placement the product in the warehouse.
-[Styles](mapping-reference.md#178) | msdyn\_productstyles
-[Tracking dimension groups](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | The product tracking dimension group represents the method used to track the product in inventory.
-[Units](mapping-reference.md#219) | uoms
-[Unit conversions](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
+|[Product Number Identified Barcode](mapping-reference.md#164) | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.|
+|[Product specific unit conversions](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
+|[Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** table contains the columns from finance and operations apps that define the product, and that contain the product's financial and management information.|
+|[Sizes](mapping-reference.md#174) | msdyn\_productsizes| |
+|[Storage dimension groups](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | The product storage dimension group represents the method used to define the placement the product in the warehouse.|
+|[Styles](mapping-reference.md#178) | msdyn\_productstyles| |
+|[Tracking dimension groups](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | The product tracking dimension group represents the method used to track the product in inventory.|
+|[Units](mapping-reference.md#219) | uoms| |
+|[Unit conversions](mapping-reference.md#199) | msdyn_ unitofmeasureconversions| |
 
 ## Integration of products
 
-In this model, the product is represented by the combination of two tables in Dataverse: **Product** and **msdyn\_sharedproductdetails**. Whereas the first table contains the definition of a product (the unique identifier for the product, the product name, and the description), the second table contains the columns stored at the product level. The combination of these two tables is used to define the product according to the concept of the stockkeeping unit (SKU). Each released product has its information in the mentioned tables (Product and Shared Product Details). To keep track of all products (released and not released), the **Global products** table is used.
+In this model, the product represents the combination of two tables in Dataverse: **Product** and **msdyn\_sharedproductdetails**. Whereas the first table contains the definition of a product (the unique identifier for the product, the product name, and the description), the second table contains the columns stored at the product level. The combination of these two tables is used to define the product according to the concept of the stockkeeping unit (SKU). Each released product has its information in the mentioned tables (Product and Shared Product Details). To keep track of all products (released and not released), the **Global products** table is used.
 
 Because the product is represented as a SKU, the concepts of distinct products, product masters, and product variants can be captured in Dataverse in the following way:
 
@@ -78,17 +78,17 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 ![Data model for products.](media/dual-write-product.png)
 
-With the Dual-write functionality enabled, the products from finance and operations is synchronized in other Dynamics 365 products in **Draft** state. They're added to the first price list with the same currency used in the customer engagement app and using alphabetical sort on the price list name. In other words, they're added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a finance and operations app. If there's no price list for the given currency, a price list is automatically be created and the product is assigned to it.
+With the Dual-write functionality enabled, the products from finance and operations are synchronized in other Dynamics 365 products in **Draft** state. They're added to the first price list with the same currency used in the customer engagement app and using alphabetical sort on the price list name. In other words, they're added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a finance and operations app. If there's no price list for the given currency, a price list is automatically be created and the product is assigned to it.
 
-The current implementation of the Dual-write plugins that associate the default price list to the unit look up the currency associated with the finance and operations app and find the first price list in the customer engagement app using alphabetical sort on the price list name. To set a default price list for a specific currency when you have multiple price lists for that currency, you must update the price list name to a name that is earlier in alphabetical order than any other price lists for that same currency. If it doesn't have any price list for the given currency, a new one is created.
+The current implementation of the Dual-write plugins associate the default price list to the unit look up the currency that is associated with the finance and operations app. It finds the first price list in the customer engagement app using an alphabetical sort on the price list name. To set a default price list for a specific currency, when you have multiple price lists for that currency, you must update the price list name to a name that is earlier in alphabetical order than any other price lists for that same currency. If it doesn't have any price list for the given currency, a new one is created.
 
-By default products from finance and operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**.
+By default products from finance and operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with the **Active** state so you can directly use it in sales order quotations, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**.
 
 When products are synchronized, you must enter a value for the **Sales unit** field in the finance and operations app, because it's a mandatory field in Sales.
 
 The creation of product families from Dynamics 365 Sales isn't supported with the Dual-write synchronization of products.
 
-The synchronization of products happens from the finance and operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a finance and operations app), this overwrites the values in Dataverse.
+The synchronization of products happens from the finance and operations app to Dataverse. As a result, the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a finance and operations app), the values in Dataverse are overwritten.
 
 ### New approach for integration of products
 
@@ -192,7 +192,7 @@ The column msdyn_symbol must be filled in for all units. The units can always be
 
 ## Product policies: dimension, tracking, and storage groups
 
-The product policies are sets of policies used for defining products and its characteristics in inventory. The product dimension group, product tracking dimension group and storage dimension group can be found as product policies.
+The product policies are sets of policies used for defining products and its characteristics in inventory. The product dimension group, product tracking dimension group, and storage dimension group can be found as product policies.
 
 Finance and operations apps | Customer engagement apps |
 ---|---
@@ -210,7 +210,7 @@ Finance and operations apps | Customer engagement apps |
 
 ## Integration key for products
 
-To uniquely identify products between Dynamics 365 Finance and products in Dataverse the integration keys are used.
+To identify unique products between Dynamics 365 Finance and products in Dataverse, the integration keys are used.
 For products, the **(productnumber)** is the unique key that identifies a product in Dataverse. It's composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in finance and operations and **msdyn_productnumber** indicates the product number for the specific product in finance and operations.
 
 For users of other Dynamics 365 apps, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the column is **Product number**). In the product page, both the company and the msydn_productnumber are shown. However, the (productnumber) column, the unique key for a product, isn't shown.
@@ -221,18 +221,18 @@ If you build apps on Dataverse, you should pay attention to using the **productn
 
 ### Initial synchronization of products
 
-When Dual-write is enabled, products from finance and operations apps are synchronized to Dataverse and customer engagement apps. Products created in Dataverse and other Dynamics 365 apps before Dual-write was released won't be updated or matched with product data from finance and operations apps.
+When Dual-write is enabled, products from finance and operations apps are synchronized to Dataverse and customer engagement apps. Products created in Dataverse and other Dynamics 365 apps before Dual-write was released aren't updated or matched with product data from finance and operations apps.
 
 ### Matching product data from finance and operations and other Dynamics 365 apps
 
 If the same products are kept (overlapping/matching) in finance and operations and in Dataverse and other Dynamics 365 apps, when enabling Dual-write the synchronization of products from finance and operations apps takes place, and duplicate rows appear in Dataverse for the same product.
 To avoid the previous situation, if other Dynamics 365 apps have products that are overlapping/matching with finance and operations, then the administrator enabling dual write must bootstrap the columns **Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") before the synchronization of products takes place. In other words, these two columns in the product in Dataverse must be filled in with the respective company in finance and operations to which the product needs to be matched with and with its product number.
 
-Then, when the synchronization is enabled and takes place, the products from finance and operations apps are be synchronized with the matched products in Dataverse and other Dynamics 365 apps. This is applicable for both distinct products and product variants.
+Then, when the synchronization is enabled and takes place, the products from finance and operations apps are synchronized with the matched products in Dataverse and other Dynamics 365 apps. This applies to both distinct products and product variants.
 
 ### Migration of product data from other Dynamics 365 apps to finance and operations
 
-If other Dynamics 365 apps have products that aren't present in finance and operations, the administrator can use the **EcoResReleasedProductCreationV2Entity** for importing those products in finance and operations. And secondly, match the product data from finance and operations and other Dynamics 365 apps as described above.
+If other Dynamics 365 apps have products that aren't present in finance and operations, the administrator can use the **EcoResReleasedProductCreationV2Entity** for importing those products in finance and operations. And secondly, match the product data from finance and operations and other Dynamics 365 apps as previously described.
 
 ### Install Dual-write after a finance and operations environment and a Dataverse environment (with Field Service) is deployed
 
