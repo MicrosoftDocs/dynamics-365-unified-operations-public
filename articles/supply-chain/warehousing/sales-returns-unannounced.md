@@ -28,7 +28,7 @@ The *Return item receiving* flow in the Warehouse Management mobile app supports
 
 The following illustration shows how the flow works for each process.
 
-:::image type="content" source="media/unannounced-return-process.svg" alt-text="Diagram that shows the processes for receiving unannounced returns.":::
+:::image type="content" source="media/unannounced-return-process.svg" alt-text="Diagram that shows the processes for receiving unannounced returns." lightbox="media/unannounced-return-process.svg":::
 
 ### Blind return process
 
@@ -220,11 +220,10 @@ For information about how to configure these settings, see the [Enable unannounc
 1. Go to **Warehouse management** \> **Setup** \> **Return items** \> **Return item policies**.
 1. Add a return item policy to define the conditions under which the item that's used in the scenarios can be returned.
 1. Set the following values for the new policy:
-
-- **Item code:** *Table*
-- **Item:** *A0001*
-- **Return acceptance:** *Allowed days after shipment*
-- **Allowed days for return:** *28*
+    - **Item code:** *Table*
+    - **Item:** *A0001*
+    - **Return acceptance:** *Allowed days after shipment*
+    - **Allowed days for return:** *28*
 
 For more information, see the [Set up return item policies](#set-up-return-item-policies) section.
 
@@ -257,7 +256,7 @@ In the blind receiving process, warehouse workers can receive return items witho
 
 The following illustration shows a flowchart for the blind receiving process.
 
-:::image type="content" source="media/blind-return-policy.svg" alt-text="Diagram that shows the blind receiving process.":::
+:::image type="content" source="media/blind-return-policy.svg" alt-text="Diagram that shows the blind receiving process." lightbox="media/blind-return-policy.svg":::
 
 ### Use the mobile app to receive a blind return to a mixed license plate
 
@@ -292,11 +291,11 @@ For this scenario, return details are generated when an order is processed for s
 
 The following illustration shows the steps that are required to create a sales order and complete the work of moving the ordered items to the packing area. Workers then pack the order, and return details are generated when the container is closed.
 
-:::image type="content" source="media/generate-return-details.svg" alt-text="Diagram that shows the process for generating return details.":::
+:::image type="content" source="media/generate-return-details.svg" alt-text="Diagram that shows the process for generating return details." lightbox="media/generate-return-details.svg":::
 
 The following illustration shows a flowchart of the receiving process where the *Return item receiving* mobile menu item is used to process a return that has return details.
 
-:::image type="content" source="media/return-details-policy.svg" alt-text="Diagram that shows the return details receiving process.":::
+:::image type="content" source="media/return-details-policy.svg" alt-text="Diagram that shows the return details receiving process." lightbox="media/return-details-policy.svg":::
 
 ### Create a sales order and release it to the warehouse for packing
 
