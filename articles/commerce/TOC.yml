@@ -3088,6 +3088,8 @@
       items: 
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
+      - name: FAQ for Copilot in site builder
+        href: responsible-ai/faqs-copilot-site-builder.md
     - name: Dynamics 365 Commerce troubleshooting and FAQs
       href: commerce-troubleshooting.md
   - name: Development and administration for finance and operations apps
