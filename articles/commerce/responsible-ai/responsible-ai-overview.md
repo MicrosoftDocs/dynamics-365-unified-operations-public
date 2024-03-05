@@ -6,13 +6,13 @@ description: Responsible AI FAQs provide information about the AI technology use
 ms.date: 03/05/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: overview
 author: v-chgri
 ms.author: v-chrgriffin
 ms.reviewer: v-chrgriffin
 ---
 
-# Responsible AI FAQs for [Product]
+# Responsible AI FAQs for Microsoft Dynamics 365 Commerce
 
 [!INCLUDE [responsible-ai-intro](../../includes/responsible-ai-intro.md)]
 
