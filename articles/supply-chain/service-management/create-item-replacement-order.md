@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Item replacement orders are usually created after a product is returned and inspected. However, when an item must be replaced before it has been returned, or when the original item will not be returned, you can create an item replacement order immediately after you create a return order.
+Item replacement orders are usually created after a product is returned and inspected. However, when an item must be replaced before it has been returned, or when the original item won't be returned, you can create an item replacement order immediately after you create a return order.
 
 ## Create a replacement order after you receive an item that is returned
 
@@ -44,7 +44,7 @@ Item replacement orders are usually created after a product is returned and insp
 
 1. Select **Packing slip** to generate the packing slip for the return order. A sales order is generated for the replacement item that you selected.
 
-    After the sales order is created for the replacement item, sales agreements are automatically searched and if there is an applicable sales agreement, it is applied to the sales order.
+    After the sales order is created for the replacement item, sales agreements are automatically searched and if there's an applicable sales agreement, it's applied to the sales order.
 
 ## Create a replacement order before you receive an item that will be returned
 
@@ -64,6 +64,6 @@ Item replacement orders are usually created after a product is returned and insp
 
 1. Select **OK** to close the **Create sales order** form and open the **Sales order** form, where you can continue to enter information for the new sales order. Any applicable return order lines will be copied to the new sales order.
 
-    If the identifier of the sales agreement is automatically displayed in the **Sales agreement ID** field, then the sales agreement has been linked to the sales order header for the item replacement order. If there is an applicable commitment in the sales agreement that has not been fulfilled yet, and the sales order is created before the sales agreement expires, a link is established between the sales agreement line and the sales order line. Therefore, information from the sales agreement, such as item price, is copied to the new sales order line.
+    If the identifier of the sales agreement is automatically displayed in the **Sales agreement ID** field, then the sales agreement has been linked to the sales order header for the item replacement order. If there's an applicable commitment in the sales agreement that hasn't been fulfilled yet, and the sales order is created before the sales agreement expires, a link is established between the sales agreement line and the sales order line. Therefore, information from the sales agreement, such as item price, is copied to the new sales order line.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
