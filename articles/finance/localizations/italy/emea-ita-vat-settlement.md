@@ -39,7 +39,7 @@ For sales tax settlement periods that are associated with a sales tax authority 
 
 When you run the sales tax settlement process for an Italian sales tax settlement period, the main accounts that are set up in the **Account gain** and **Account loss** fields for the related sales tax authority are used to posting rounding results.
 
-As of Dynamics 365 Finance version 10.0.39, when [reporting of Italian sales tax books in the ER tool is enabled](emea-ita-sales-tax-books.md), the number of pages of Italian sales tax books is updated only when the [Italian sales tax books electronic report is generated](emea-ita-sales-tax-books.md#generate-italian-sales-tax-books-electronic-report) with the **Update number of pages** checkbox selected.
+As of Dynamics 365 Finance version 10.0.39, when [reporting of Italian sales tax books in the ER tool is enabled](emea-ita-sales-tax-books.md), the number of pages of Italian sales tax books is updated only when the [Italian sales tax books electronic report is generated](emea-ita-sales-tax-books.md#generate-the-italian-sales-tax-books-electronic-report) with the **Update number of pages** checkbox selected.
 
 > [!IMPORTANT]
 > To ensure correct numbering of pages, be sure to generate the Italian sales tax books electronic report with the **Update number of pages** checkbox selected at least once for each interval of the sales tax settlement period. If the **Update number of pages** checkbox is selected, and the **Attach report to Sales tax book status** checkbox is selected in the parameters of the sales tax settlement period, you can find the generated Italian sales tax books electronic report attached to the **Sales tax book status** records.
