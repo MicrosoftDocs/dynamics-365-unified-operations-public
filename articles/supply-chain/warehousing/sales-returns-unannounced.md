@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSReturnItemPolicy, WHSReturnItemReceivingPolicy, WHSRFMenuItem
 ms.topic: how-to
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
