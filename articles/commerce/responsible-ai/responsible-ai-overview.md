@@ -18,4 +18,4 @@ ms.reviewer: v-chrgriffin
 
 [!INCLUDE [responsible-ai-features](../../includes/responsible-ai-features.md)]
 
-<!-- - [Feature](Link) -->
+- [FAQ for Copilot in site builder](faqs-copilot-site-builder.md)
