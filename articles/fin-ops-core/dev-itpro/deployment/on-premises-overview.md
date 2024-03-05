@@ -4,7 +4,6 @@ description: Dynamics 365 Finance + Operations (on-premises) supports running bu
 author: faix
 ms.date: 11/30/2021
 ms.topic: overview
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,7 +13,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.collection: get-started
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

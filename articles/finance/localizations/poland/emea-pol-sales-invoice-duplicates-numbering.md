@@ -12,7 +12,6 @@ ms.search.region: Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 263534
 ---
 
 # Duplicate sales invoice numbering for Poland

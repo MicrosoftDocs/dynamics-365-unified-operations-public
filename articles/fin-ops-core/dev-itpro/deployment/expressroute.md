@@ -6,8 +6,7 @@ description: Customers can use Microsoft Azure ExpressRoute to connect to their 
 author: PeterRFriis
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: dynamics-365
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 260954
 ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
 ms.search.region: Global
 # ms.search.industry: 

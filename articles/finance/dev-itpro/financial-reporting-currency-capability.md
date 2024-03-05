@@ -17,7 +17,6 @@ audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 261824
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: panolte

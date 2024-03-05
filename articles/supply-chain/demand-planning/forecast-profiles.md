@@ -10,6 +10,8 @@ ms.date: 10/19/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Work with forecast profiles (preview)
@@ -22,6 +24,8 @@ ms.custom: bap-template
 The Demand planning app lets you build a collection of *forecast profiles*. Each profile takes an existing time series as input, prepares the data, and then runs forecasting algorithms to create a new time series that predicts demand over a coming period.
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to generate new calculated time series as they require.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## View and run existing forecast profiles
 

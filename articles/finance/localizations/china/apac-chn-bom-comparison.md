@@ -12,7 +12,6 @@ ms.search.region: China (PRC)
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 268584
 ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3
 ms.search.form: InventBOMComparison_CN
 ---

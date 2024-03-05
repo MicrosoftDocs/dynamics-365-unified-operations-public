@@ -1,5 +1,5 @@
 ---
-title: Service-based authentication
+title: Service-based authentication for the Warehouse Management mobile app
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using service-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Service-based authentication
+# Service-based authentication for the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,7 +30,7 @@ Each device should have its own unique certificate or client secret.
 
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use nonexportable certificates.
 
-You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app for service-based authentication](warehouse-app-intune.md).
+You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app with service-based authentication](warehouse-app-intune.md).
 
 ## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
 
@@ -102,6 +102,6 @@ If a device is lost or compromised, you must remove its ability to access Supply
 ## Additional resources
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [User-based authentication](warehouse-app-authenticate-user-based.md)
+- [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

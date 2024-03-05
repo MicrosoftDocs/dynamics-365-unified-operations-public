@@ -12,7 +12,6 @@ ms.search.region: Latvia
 ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 266924
 ms.search.form: AssetTable
 ---
 

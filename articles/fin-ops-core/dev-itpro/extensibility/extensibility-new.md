@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 268724
 ms.assetid: 
 ---
 # What's new or changed for extensibility

@@ -12,7 +12,6 @@ ms.search.region: Poland
 ms.author: ikondratenko
 ms.search.validFrom: 2022-07-15
 ms.dyn365.ops.version: AX 10.0.28
-ms.custom: 574537
 ms.assetid: 
 ms.search.form: 
 ---

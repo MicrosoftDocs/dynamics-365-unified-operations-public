@@ -18,12 +18,12 @@ audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 539093
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jchrist
 ms.search.validFrom: 2023-06-05
 ms.dyn365.ops.version: 10.0.24
+ms.collection: bap-ai-copilot   
 
 ---
 # Collections coordinator summary

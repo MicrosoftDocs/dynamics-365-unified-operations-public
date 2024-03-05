@@ -225,7 +225,7 @@ To automatically generate a VAT declaration, associate sales tax codes in the ap
 Follow these steps to define which sales tax codes generate which boxes on the VAT declaration.
 
 1. Go to **Workspaces** > **Electronic reporting** and select **Reporting configurations**.
-2.  Select the **VAT declaration XML (BE)** configuration, and then select **Configurations \> Application specific parameters setup**.
+2.  Select the **VAT declaration XML (BE)** configuration, and then select **Configurations \> Application specific parameters \> Setup**.
 3.  On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
 4.  On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
 
@@ -342,7 +342,7 @@ Follow these steps to define which item sales tax groups generate which descript
 
 3. In the **State** field, change the value to **Completed**.
 4. On the Action Pane, select **Export** to export the settings in an XML file. Then close the page.
-5. Select the **VAT declaration Excel (BE)** configuration, and then select **Configurations** \> **Application specific parameters setup**.
+5. Select the **VAT declaration Excel (BE)** configuration, and then select **Configurations** \> **Application specific parameters** \> **Setup**.
 6. Select **Import**, and select the file that you exported earlier.
 
 ### Set up the VAT reporting format for preview amounts in Excel

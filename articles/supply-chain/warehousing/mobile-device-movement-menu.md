@@ -4,7 +4,7 @@ description: This article explains how to set up a mobile device menu item that 
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: WHSRFMenuItem
 ms.topic: how-to
 ms.date: 12/12/2023
 audience: Application User
