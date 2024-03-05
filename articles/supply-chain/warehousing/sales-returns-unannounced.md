@@ -207,8 +207,8 @@ You must have number sequences that generate unique return IDs and load line inv
 #### Enable unannounced return features
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
-1. On the **Number sequences** tab, set the **Number sequence code** field for *ReturnID*.
-1. Set **Number sequence code** field for *LLIP*.
+1. On the **Number sequences** tab, set the **Number sequence code** field to *ReturnID*.
+1. Set **Number sequence code** field to *LLIP*.
 1. On the **General** tab, turn on the **Enable return details creation** option.
 1. Turn on the **Enable return order creation from mobile device** option.
 1. On the **Loads** tab, turn on the **Enable sales load line picking route** option.
