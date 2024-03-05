@@ -1,4 +1,4 @@
-title: FAQ for [Feature]
+title: FAQ for Copilot in site builder
 description: This FAQ provides information about the AI technology used in Copilot in site builder, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 03/05/2024
 ms.custom: 
@@ -9,7 +9,7 @@ ms.author: v-chrgriffin
 ms.reviewer: v-chrgriffin
 ---
 
-# FAQ for [Feature]
+# FAQ for Copilot in site builder
 
 These frequently asked questions (FAQ) describe the AI impact of the Copilot in site builder feature in Microsoft Dynamics 365 Commerce.
 
