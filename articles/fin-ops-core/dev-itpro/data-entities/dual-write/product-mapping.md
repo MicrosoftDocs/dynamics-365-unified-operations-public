@@ -44,6 +44,8 @@ Finance and operations apps | Other Dynamics 365 apps | Description
 [Colors](mapping-reference.md#170) | msdyn\_productcolors
 [Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
 [Default order settings](mapping-reference.md#172) | msdyn_productdefaultordersettings |
+[DV released distinct products](mapping-reference.md#242) | Product |  The **DV released distinct products** entity is a simpler version of **CDS released distinct products** entity. It contains only variant specific information, and relies on Dataverse plugins to automatically set relevant product master information from **msdyn\_sharedproductdetails** to **Product**. Available in solution Dynamics 365 Supply Chain Extended v2.3.4.294
+[DV released products](mapping-reference.md#243) | msdyn\_sharedproductdetails | The **DV released products** entity is a simpler version of **Released products V2** entity. It contains product master relevat information, and relies on Dataverse plugins to automatically update relevant products from **msdyn\_sharedproductdetails** to **Product**. Available in solution Dynamics 365 Supply Chain Extended v2.3.4.294.
 [Product categories](mapping-reference.md#166) | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category table.
 [Product category assignments](mapping-reference.md#167) | msdyn_productcategoryassignments | To assign a product to a category the product category assignments table can be used.
 [Product category hierarchies](mapping-reference.md#168) | msdyn_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse using the Product category hierarchy table.
@@ -88,10 +90,25 @@ The creation of product families from Dynamics 365 Sales isn't supported with th
 
 The synchronization of products happens from the finance and operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a finance and operations app), this will overwrite the values in Dataverse.
 
+### New approach for integration of products
+Starting from Supply Chain Management version 10.0.39 and Dynamics 365 Supply Chain Extended v2.3.4.294 a new approach is introduced for product synchronization to improve the overall performance.
+In this approach, the new data entities [DV released distinct products](mapping-reference.md#242) and [DV released products](mapping-reference.md#243) only contain the information that is synchronized to Dataverse, which makes the data entities more performant, having fewer joints and data sources. And the dataverse plugins are taking care of updating the relevant product information from **msdyn\_sharedproductdetails** to **Product**.
+ 
+As it is mentioned in [Sync on-demand with the Supply Chain Management pricing engine](../../../fin-ops/data-entities/pricing-engine.md) Dynamics 365 Sales uses  Supply Chain Management pricing engine for price-related calculations, so in this approach the UnitCost and SalesPrice are no longer needed or synchronized to Dataverse.
+
+In order to start using this new approach, verify that you use Supply Chain Management version 10.0.39 or older and that solution Dynamics 365 Supply Chain Extended v2.3.4.294 is installed on Power Platform. The old dual-write maps [CDS released distinct products](mapping-reference.md#213) and [Released products V2](mapping-reference.md#189) should be stopped and the new maps should be started. The plugins are made to be working with the new maps, so they will be automatically triggered and executed only when new maps are activated.
+
+Stopping the new maps [DV released distinct products](mapping-reference.md#242) and [DV released products](mapping-reference.md#243) and starting the old maps, would use the old approach for product synchronization.
+
+When running initial sync, [DV released products](mapping-reference.md#243) map should be run first, and then [DV released distinct products](mapping-reference.md#242).
+
+
 Finance and operations apps | Customer engagement apps |
 ---|---
 [CDS released distinct products](mapping-reference.md#213) | Product |
 [Released products V2](mapping-reference.md#189) | msdyn_sharedproductdetails |
+[DV released distinct products](mapping-reference.md#242) | Product |
+[DV released products](mapping-reference.md#243) | msdyn_sharedproductdetails |
 [All products](mapping-reference.md#138) | msdyn_globalproducts |
 
 ## Product dimensions
