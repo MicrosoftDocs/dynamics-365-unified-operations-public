@@ -54,7 +54,7 @@ Planning Optimization doesn't use the following parameters or options on the **C
 
 - **Other** FastTab:
 
-  - **Freeze time fence (days)** – Pending *Freeze time fence* support.
+  - **Freeze time fence (days)** – Freeze time fence is supported from release 10.0.39. Please enable Freeze time fence support for Planning Optimization feature on feature management.
   - **Forecast plan time fence** – Forecast plans aren't supported by Planning Optimization. Instead, create a master plan that specifies a forecast model.
 
 - **Delays** FastTab:
@@ -69,14 +69,10 @@ Planning Optimization doesn't use the following parameters or options on the **I
 - **General** tab:
 
   - **Planned order type** – Planning Optimization doesn't support the *Kanban* option.
-  - **Freeze time fence (days)** – Pending *Freeze time fence* support.
-  - **BOM explosion time fence (days)** – Not supported by Planning Optimization.
+  - **Freeze time fence (days)** – Freeze time fence is supported from release 10.0.39. Please enable Freeze time fence support for Planning Optimization feature on feature management.
   - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
   - **Minimum periods** – Not supported by Planning Optimization.
   - **Planning formula** – Pending. *Planning items support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Default priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
-  - **Current priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
-  - **Date changed** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
 
 ## Master plans page
 
@@ -92,7 +88,7 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **Time fences in days** FastTab:
 
-  - **Freeze** – *Freeze time fence* isn't yet supported by Planning Optimization.
+  - **Freeze** – Freeze time fence is supported from release 10.0.39. Please enable Freeze time fence support for Planning Optimization feature on feature management.
   - **Forecast plan** – Not supported by Planning Optimization.
   - **Continuity plan** – Not supported by Planning Optimization.
   - **Calculated delays** – This parameter isn't considered. Calculated delays are created for the **coverage time fence (days)**.
@@ -101,29 +97,17 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **Calculated delays** FastTab:
 
   - **Ensure that the planned orders are not created prior to the master planning run date** – Not supported by Planning Optimization. Planning Optimization never creates planned orders in the past.
-  - **Add the calculated delay to the requirement date** (in the **Planned purchase orders** section) – Starting January 18, 2023, Planning Optimization supports this field.
-  - **Add the calculated delay to the requirement date** (in the **Planned production orders** section) – Starting January 18, 2023, Planning Optimization supports this field.
-  - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – Starting January 18, 2023, Planning Optimization supports this field.
   - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Kanban isn't supported by Planning Optimization.
 
 - **Action message** FastTab:
 
   - **Update postponed date as requirement date** – This parameter is discontinued with Planning Optimization.
 
-- **Sequencing** FastTab:
-
-- **Sequence planned orders after master planning** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
-- **Bucket type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
-- **Period type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
-- **Number of buckets in the campaign cycle** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
 
 ## Released product details page
 
 Planning Optimization doesn't use the following parameter option on the **Released product details** page:
 
-- **Engineer** FastTab:
-
-  - **Production type** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
 
 ## Scheduling parameters page
 
