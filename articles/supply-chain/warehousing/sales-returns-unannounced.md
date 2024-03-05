@@ -220,11 +220,10 @@ For information about how to configure these settings, see the [Enable unannounc
 1. Go to **Warehouse management** \> **Setup** \> **Return items** \> **Return item policies**.
 1. Add a return item policy to define the conditions under which the item that's used in the scenarios can be returned.
 1. Set the following values for the new policy:
-
-- **Item code:** *Table*
-- **Item:** *A0001*
-- **Return acceptance:** *Allowed days after shipment*
-- **Allowed days for return:** *28*
+    - **Item code:** *Table*
+    - **Item:** *A0001*
+    - **Return acceptance:** *Allowed days after shipment*
+    - **Allowed days for return:** *28*
 
 For more information, see the [Set up return item policies](#set-up-return-item-policies) section.
 
