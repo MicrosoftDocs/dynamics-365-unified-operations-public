@@ -22,7 +22,7 @@ This article provides links to documentation resources for Italy.
 
 - [Sales tax books]()
   - [Configure system parameters to report Sales tax books](emea-ita-vat-statements-details.md)
-  - [Report Sales tax books](emea-ita-fiscal-books.md)
+  - [Configure and report Sales tax books for Italy](emea-ita-fiscal-books.md)
   - [Sales tax settlement and numbering of pages in Sales tax books](emea-ita-vat-settlement.md)
   - [Sales tax summary report](emea-ita-sales-tax-summary.md)
 - [VAT management and reporting by tax point date (Date of VAT register)](emea-ita-vat-management.md)
@@ -57,7 +57,7 @@ This article provides links to documentation resources for Italy.
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
 - [Customer electronic invoices](emea-ita-e-invoices.md)
 - [Vendor electronic invoices](emea-ita-vend-e-invoices.md)
-- [Unified posting date control](emea-ita-post-date-control.md)
+
 
 
 
