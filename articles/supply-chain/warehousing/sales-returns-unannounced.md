@@ -30,7 +30,7 @@ The following illustration shows how the flow works for each process.
 
 :::image type="content" source="media/unannounced-return-process.svg" alt-text="Diagram that shows the processes for receiving unannounced returns." lightbox="media/unannounced-return-process.svg":::
 
-### Blind return process
+### <a name="blind-return-process"></a> Blind return process
 
 A blind return is a return where no RMA order or return details record exists in advance, and where no original sales order or shipment must be specified during receiving. During the *Return item receiving* process, workers must use the mobile app to identify and confirm the following information:
 
@@ -41,7 +41,7 @@ A blind return is a return where no RMA order or return details record exists in
 > [!NOTE]
 > When running the return process for [*Inbound shipment orders*](wms-only-mode-using.md#inbound-shipment-orders) you must as well define [Source system disposition codes](#source-system-disposition-codes).
 
-### Return details process
+### <a name="return-details-process"></a> Return details process
 
 The *Return details* return process uses a return details record. This record is automatically generated when an order is shipped. It contains all the information that's required to process a return, such as the return ID, original order ID, shipment ID, order lines, and return-until dates.
 
