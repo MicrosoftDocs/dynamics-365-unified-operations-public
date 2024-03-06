@@ -240,6 +240,6 @@ The tax statement for each country/region must meet the requirements of that cou
 | Australia      | [Business activity statement (BAS)](../australia/apac-aus-business-activity-statement.md) |
 | Japan          | [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
 | Latvia         | [VAT statement details for Latvia](../latvia/emea-lva-vat-statement-details.md) |
-| Lithuania      | [VAT statement details for Lithuania](../lithuania/emea-ltu-vat-statement-details) |
+| Lithuania      | [VAT statement details for Lithuania](../lithuania/emea-ltu-vat-statement-details.md) |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
