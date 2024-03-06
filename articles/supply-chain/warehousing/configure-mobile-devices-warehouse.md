@@ -60,6 +60,7 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Container closing | Enable the container closing process. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Print container label | Enable container label printing. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). For more information, see [Container label layouts and printing](print-container-labels.md). |
 | Receiving completed confirmation | Enable support for receiving clerks to indicate *Receiving completed* for a load. |
+| Complete mixed license plate | Enable support for warehouse workers to [*Complete license plates*](sales-returns-unannounced.md#complete-mixed-license-plate-receiving) recorded in [*Mixed license plate receiving*](mixed-license-plate-receiving.md) entity. |
 
 ## Configure menu items to create work for another worker or process
 
@@ -75,7 +76,7 @@ You can set up a menu item that creates work for another worker after an initial
 </thead>
 <tbody>
 <tr>
-<td rowspan="8">Inbound shipment order</td>
+<td rowspan="9">Inbound shipment order</td>
 <td>Inbound shipment order line receiving</td>
 <td><p>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and create putaway work for another worker.</p>
 </td>
@@ -111,6 +112,10 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the order lines. The same worker performs both actions.</td>
 </tr>
 <tr>
+<td><a href="sales-returns-unannounced.md">Return item receiving</a></td>
+<td>Recording of data captured as part of the Mixed license plate receiving entity.</td>
+</tr>
+<tr>
 <td rowspan="8">Purchase order</td>
 <td>Purchase order line receiving</td>
 <td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and create putaway work for another worker.</td>
@@ -144,13 +149,17 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the purchase order lines. The same worker performs both actions.</td>
 </tr>
 <tr>
-<td rowspan="2">Return order</td>
+<td rowspan="3">Return order</td>
 <td>Return order receiving</td>
 <td>Register the receipt of a quantity of an item by registering the RMA number, and create putaway work for another worker.</td>
 </tr>
 <tr>
 <td>Return order receiving and put away</td>
 <td>Register the receipt of a quantity of an item by registering the RMA number, and put the items away. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td><a href="sales-returns-unannounced.md">Return item receiving</a></td>
+<td>Recording of data captured as part of the Mixed license plate receiving entity.</td>
 </tr>
 <tr>
 <td rowspan="6">Transfer order</td>
