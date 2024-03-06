@@ -91,11 +91,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | TaxYearlyCom_IT, TaxYearlyComReport_IT tables for Italian Yearly tax communication are replaced with new TaxYearlyComV2_IT, TaxYearlyComReportV2_IT tables. | 
+| **Reason for deprecation/removal** | The `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` tables for Italian Yearly tax communication are replaced with new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables. | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports TaxYearlyCom_IT, TaxYearlyComReport_IT tables for Italian Yearly tax communication are replaced with new TaxYearlyComV2_IT, TaxYearlyComReportV2_IT tables for Italian Yearly tax communication. |
+| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports the `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` tables for Italian Yearly tax communication. They are replaced with new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables for Italian Yearly tax communication. |
 
 ## Features removed or deprecated in the Finance 10.0.36 release
 
