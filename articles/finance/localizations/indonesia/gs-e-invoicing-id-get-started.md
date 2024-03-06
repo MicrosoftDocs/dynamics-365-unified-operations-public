@@ -90,7 +90,7 @@ To enable the system to determine which sales tax code in Finance corresponds to
 
 3. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered as luxury tax by the system..
 
-![Screenshot that shows application-specific parameters set for sales tax codes.](../media/idn-eis-appSpecificParams-taxTypeLookup.png)
+![Screenshot that shows application-specific parameters set for sales tax codes.](../media/gs-idn-eis-appSpecificParams-taxTypeLookup.png)
 
 To enable the system to determine which sales tax group in Finance corresponds to VAT-free reasons (transaction code 07, reasons 1 through 8) or VAT-exempt reasons (transaction code 08, reasons 1 through 5) when invoices are exported, follow these steps to set the application-specific parameters for those reasons.
 
@@ -99,7 +99,7 @@ To enable the system to determine which sales tax group in Finance corresponds t
 3. Set the **Tax group (TaxGroup)** field to the sales group that's used for exemption operations in Finance.
 4. On the last line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that all other sales tax groups should not be considered exemption groups by the system.
 
-![Screenshot that shows application-specific parameters set for transaction codes.](../media/idn-eis-appSpecificParams-vatFreeInfoLookup.png)
+![Screenshot that shows application-specific parameters set for transaction codes.](../media/gs-idn-eis-appSpecificParams-vatFreeInfoLookup.png)
 
 After you define specific conditions for each application-specific parameter, save your changes.
 
@@ -115,7 +115,7 @@ To generate the comma-separated values (CSV) file for a sales invoice, you must 
 1. On the **Electronic invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select the **Invoice issued** record.
 1. Select **Edit** to review or configure the actions, applicability rules, and variables.
 
-![Screenshot that shows the Sales invoice feature setup.](../media/apac-idn-rcs-setups.png)
+![Screenshot that shows the Sales invoice feature setup.](../media/gs-apac-idn-rcs-setups.png)
 
 #### Configure the Vendor invoice feature setup
 
@@ -127,7 +127,7 @@ Before you configure the Vendor invoice feature setup, you should create a draft
 1. Set the other parameters for SharePoint.
 1. In the **Custom file name** record, set up a filter for the file names of vendor invoices.
 1. On the **Applicability rules** tab, in the record that has a **Channel** field, in the **Value** field, enter **$Context Channel** from the derived configuration.
-1. On the **Variables** tab, create or validate the record.
+1. On the **Variables** tab, create or validate the record. From client variable **OutputFile** is included by default, which represents the **import source** to be configured in Finance.
 
     ![Screenshot that shows the Variables tab for the Vendor invoice feature setup.](../media/apac-idn-feature-version-setup-variables.png)
 
