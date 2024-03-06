@@ -83,21 +83,21 @@ Follow these steps to begin the configuration.
 To enable the system to determine which sales tax code in Finance corresponds to the tax code for luxury goods (PPnBM) when invoices are exported, follow these steps to set the application-specific parameters for luxury sales tax.
 
 1. In the **Lookups** grid, select the row for **TaxTypeLookup**.
-1. In the **Conditions** grid, on the first line, set the **Lookup result** field to **PPnBM** and the **Sales tax code (TaxCode)** field to the sales tax code that's used for luxury tax in Finance.
+2. In the **Conditions** grid, on the first line, set the **Lookup result** field to **PPnBM** and the **Sales tax code (TaxCode)** field to the sales tax code that's used for luxury tax in Finance.
 
     > [!NOTE]
     > You can set up several sales tax codes for PPnBM and have several lines for them in the **Conditions** grid.
 
-1. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that the system should consider no other sales tax codes luxury tax.
+3. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered as luxury tax by the system..
 
 ![Screenshot that shows application-specific parameters set for sales tax codes.](../media/idn-eis-appSpecificParams-taxTypeLookup.png)
 
 To enable the system to determine which sales tax group in Finance corresponds to VAT-free reasons (transaction code 07, reasons 1 through 8) or VAT-exempt reasons (transaction code 08, reasons 1 through 5) when invoices are exported, follow these steps to set the application-specific parameters for those reasons.
 
 1. In the **Lookups** grid, select the row for **VATFreeInfoLookup**.
-1. In the **Conditions** grid, on the first line, set the **Lookup result** field from **1** through **8** for transaction code **07** and from **1** through **5** for transaction code **08**.
-1. Set the **Tax group (TaxGroup)** field to the sales group that's used for exemption operations in Finance.
-1. On the last line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that the system should consider no other sales tax groups exemption groups.
+2. In the **Conditions** grid, on the first line, set the **Lookup result** field from **1** through **8** for transaction code **07** and from **1** through **5** for transaction code **08**.
+3. Set the **Tax group (TaxGroup)** field to the sales group that's used for exemption operations in Finance.
+4. On the last line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that all other sales tax groups should not be considered exemption groups by the system.
 
 ![Screenshot that shows application-specific parameters set for transaction codes.](../media/idn-eis-appSpecificParams-vatFreeInfoLookup.png)
 
