@@ -77,10 +77,15 @@ The data about the available inventory should match between each of the sales su
 
 :::image type="content" source="media/wms-only-shared-warehouse-inventory-process.svg" alt-text="Internal process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inventory-process.svg":::
 
-## Setup requirements for external shared warehouse processing in D365
+## Setup example using external shared warehouse processing in D365
 
-To use the Warehouse management only mode in the way shown above, you need to have at least two legal entities and you need to set up an *External warehouse management system* with the type `Legal entity` in *LE1* and link it to a [*Source system*](wms-only-mode-setup.md#source-systems) in the *WOM* legal entity. You can do this setup in the **Warehouse management \> Setup \> Warehouse management integration External warehouse management systems** page.
+To use the Warehouse management only mode in the way shown above, you need to have at least two legal entities, *LE1* and *WOM*. In the *WOM* legal entity you  to create a [*Source system*](wms-only-mode-setup.md#source-systems) - let's call this *SS-LE1*.
 
-In the *LE1* **Warehouse management \> Setup \> Warehouse \> Warehouses** page you can now select the warehouses that you want to manage externally and specify the *External warehouse management system* that you use. You should assign a default location that does not track license plates. This location will be used for all the inventory updates from the external warehouse in the *WOM* legal entity. <!-- TODO perlynne CHECK if we manage to move the External warehouse to WOM LE setup! >
+In legal entity *LE1* you need to set up an *External warehouse management system* with the type `Legal entity` and link it to the [*Source system*](wms-only-mode-setup.md#source-systems) *SS-LE1* in the *WOM* legal entity. You can do this setup in the **Warehouse management \> Setup \> Warehouse management integration \> External warehouse management systems** page.
 
+In the *LE1* **Warehouse management \> Setup \> Warehouse \> Warehouses** page you can now select the warehouses that you want to manage externally and specify the *External warehouse management system* for each of the warehouses. You should assign a default location that does not track license plates. This location will be used for all the inventory request updates coming from the external warehouses in the *WOM* legal entity. <!-- TODO perlynne CHECK if we manage to move the External warehouse to WOM LE setup! >
+
+### Product master and reference data
+
+Like for any other warehouse management process you must have all the needed warehouse management setup in the *WOM* legal entity defined including the product master data. Note that the *Released products* in all legal entities uses the same *Product*/*Product variant*, it is therefore recommended to use yet a *Source system* to handle the maintenance of the product master data including the mandatory creation of the [Source system items](wms-only-mode-exchange-data.md#master-data) data in case you share products between multiple sales subsidiaries. In this example let's create a new *Source system* called *PIM-D365* and make sure to assign this *Source system* as the *Product master source system* for the *SS-LE1* source system. And let's at the same time enter the vale *LE1* into the *Default inventory owner* field to prepare for using the *Inventory ownership tracking dimension* for inventory related to this source system.
 

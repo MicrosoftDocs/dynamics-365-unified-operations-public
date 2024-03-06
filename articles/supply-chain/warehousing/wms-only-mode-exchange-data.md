@@ -4,7 +4,9 @@ description: This article explains how to exchange data and business events betw
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
+
+
 ms.topic: how-to
 ms.date: 01/29/2024
 audience: Application User
@@ -71,6 +73,21 @@ You can import the required master data into Supply Chain Management by using [d
 
 > [!NOTE]
 > The messages that create product master data use the [*product data entities*](../pim/data-entities.md). These entities can be used by themselves, or they can be used to maintain product master data.
+
+### View and maintain source system product messages
+
+In Warehouse management only mode, you can view, update, and create the product messages. Therefore, you can quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message will get versioned and non editable. Go to one of the following pages under **Warehouse management** \> **Inquiries and reports** \> **Source system product messages** to view and maintain the messages:
+
+<!-- CHECK perlynne -->
+- **Source system product messages**
+- **Source system product variant messages**
+- **Source system product document attachment messages**
+- **Source system product barcode messages**
+- **Source system product global trade item number messages**
+- **Source system product specific unit of measure conversion messages**
+
+> [!NOTE]
+> The `Enable manual source system product message creation` parameter on a [source system record](wms-only-mode-setup.md#source-systems) makes it possible to manually create messages in the above mentioned pages. Be aware that the manually created messages do not get versioned like the messages getting imported via integration.
 
 ### Test creating products by using messages
 
