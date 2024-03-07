@@ -21,7 +21,7 @@ This article describes how create or link to a Microsoft Entra business-to-consu
 To create or link to an existing Microsoft Entra B2C tenant in the Azure portal, follow these steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that will be connected with your Commerce environment.
+1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that you'll connect with your Commerce environment.
 
     ![Create a Resource in Azure Portal.](../media/B2CImage_1.png)
 
@@ -39,12 +39,12 @@ To create or link to an existing Microsoft Entra B2C tenant in the Azure portal,
 
      - **Link an existing Microsoft Entra B2C Tenant to my Azure subscription**: Use this option if you already have a Microsoft Entra B2C tenant you want to link to.
         1. Select **Link an existing Microsoft Entra B2C Tenant to my Azure subscription**.
-        1. For **Microsoft Entra B2C Tenant**, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
-        1. For **Resource group**, select **Create new**. Enter a **Name** for the resource group that will contain the tenant, select the **Resource group location**, and then select **Create**.
+        1. For **Microsoft Entra B2C Tenant**, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you don't have an existing eligible B2C tenant and must create a new one.
+        1. For **Resource group**, select **Create new**. Enter a **Name** for the resource group that contains the tenant, select the **Resource group location**, and then select **Create**.
 
     ![Link an existing Microsoft Entra B2C Tenant to Azure Subscription.](../media/B2CImage_3.png)
 
-1. Once the new Microsoft Entra B2C directory is created (this may take a few moments), a link to the new directory will appear on the dashboard. This link will direct you to the "Welcome to Microsoft Entra B2C" page.
+1. Once the new Microsoft Entra B2C directory is created (this may take a few moments), a link to the new directory appears on the dashboard. This link directs you to the "Welcome to Microsoft Entra B2C" page.
 
     ![Link to new Microsoft Entra Directory](../media/B2CImage_4.png)
 
