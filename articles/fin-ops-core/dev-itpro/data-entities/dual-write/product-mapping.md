@@ -38,7 +38,7 @@ Product information contains all the information that's related to the product a
 | Finance and operations apps | Other Dynamics 365 apps | Description |
 |---|---|---|
 | [All products](mapping-reference.md#138) | msdyn\_globalproducts | The all products table contains all the products that are available in finance and operations apps, both released products and nonreleased products. |
-| [CDS released distinct products](mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and product variants. The following table shows the mappings. |
+| [CDS released distinct products](mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and product variants. |
 | [Colors](mapping-reference.md#170) | msdyn\_productcolors | |
 | [Configurations](mapping-reference.md#171) | msdyn\_productconfigurations | |
 | [Default order settings](mapping-reference.md#172) | msdyn\_productdefaultordersettings | |
