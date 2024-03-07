@@ -7,9 +7,9 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: v-chgriffin
+ms.author: josaw
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ms.search.industry: Retail
@@ -107,7 +107,7 @@ To configure a certificate profile in Commerce headquarters, follow these steps.
     - **Store location** – This field is optional and is available only if you set the **Location type** field to **Local certificate**. Use it to specify a default store location that should be used to search local certificates.
 
         > [!NOTE]
-        > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders in its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](//dotnet/api/system.security.cryptography.x509certificates.storelocation).
+        > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders in its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](/dotnet/api/system.security.cryptography.x509certificates.storelocation).
 
     - **Thumbprint** – This field is required and is available only if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
 
