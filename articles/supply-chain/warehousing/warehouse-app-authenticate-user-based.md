@@ -6,7 +6,7 @@ ms.author: pavlodatsiuk
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.topic: how-to
-ms.date: 02/06/2024
+ms.date: 03/07/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -28,8 +28,8 @@ The Warehouse Management mobile app supports the following types of user-based a
 
 For security purposes, the Warehouse Management mobile app uses Microsoft Entra ID to authenticate the connection between the app and Supply Chain Management. There are two basic scenarios for managing Microsoft Entra ID user accounts for your various devices and users: one where each Microsoft Entra ID user accounts represents a unique device and one where each Microsoft Entra ID user represents a unique human worker. In each case, each human worker will have one *warehouse worker* record set up in the Warehouse management module, plus one or more *mobile device user accounts* for each warehouse worker record. For warehouse worker accounts that have more than one mobile device user account, it's possible to make one of them the default mobile device user account. The two scenarios are:
 
-- **Use one Microsoft Entra ID user account for each mobile device** – In this scenario, admins set up the Warehouse Management mobile app to use either [device code flow authentication](#deviceCodeFlow) or [username/password authentication](#usernamePasswordFlow) to connect to Supply Chain Management through the *device's* Microsoft Entra ID account (in this scenario, human workers don't need a Microsoft Entra ID user account). The app then shows a sign-in screen that lets human workers sign in to the app so they can gain access to the work and other records that apply to them at their location. Human workers sign in using the user ID and password of one of the mobile device user accounts assigned to their warehouse worker record. Human workers must always enter a user ID, so it doesn't matter which of these mobile device user accounts is set as the default for the warehouse worker record. When a human worker signs out, the app remains authenticated with Supply Chain Management but shows the sign-in screen again, so the next human worker can sign in using their mobile device user account.
-- **Use one Microsoft Entra ID user account for each human worker** – In this scenario, each human user has a Microsoft Entra ID user account that's linked to their warehouse worker account in Supply Chain Management. As a result, the Microsoft Entra ID user sign-in might be all the human worker needs to both authenticate the app with Supply Chain Management and sign in to the app, provided the warehouse worker account has a [default user ID](mobile-device-work-users.md#set-wma-users) set for that warehouse worker account (or just one user ID for the warehouse worker account). This scenario also supports [single sign-on](#sso) (SSO) because the same Microsoft Entra ID session can be shared across other apps on the device (such as Microsoft Teams or Microsoft Outlook) until the human worker signs out of the Microsoft Entra ID user account.
+- **Use one Microsoft Entra ID user account for each mobile device** – In this scenario, admins set up the Warehouse Management mobile app to use either [device code flow authentication](#deviceCodeFlow) or [username/password authentication](#usernamePasswordFlow) to connect to Supply Chain Management through the *device's* Microsoft Entra ID account (in this scenario, human workers don't need a Microsoft Entra ID user account). The app then shows a sign-in screen that lets human workers sign in to the app so they can gain access to the work and other records that apply to them at their location. Human workers sign in using the user ID and password of one of the mobile device user accounts assigned to their warehouse worker record. Human workers must always enter a user ID, so it doesn't matter whether any of these mobile device user accounts is set as the default for the warehouse worker record. When a human worker signs out, the app remains authenticated with Supply Chain Management but shows the sign-in screen again, so the next human worker can sign in using their mobile device user account.
+- **Use one Microsoft Entra ID user account for each human worker** – In this scenario, each human user has a Microsoft Entra ID user account that's linked to their warehouse worker account in Supply Chain Management. As a result, the Microsoft Entra ID user sign-in might be all the human worker needs to both authenticate the app with Supply Chain Management and sign in to the app, provided the warehouse worker account has a [default user ID](mobile-device-work-users.md#set-wma-users) set for that warehouse worker account. This scenario also supports [single sign-on](#sso) (SSO) because the same Microsoft Entra ID session can be shared across other apps on the device (such as Microsoft Teams or Microsoft Outlook) until the human worker signs out of the Microsoft Entra ID user account.
 
 ## <a name="deviceCodeFlow"></a>Device code flow authentication
 
@@ -101,29 +101,9 @@ For more information about how to set up web service applications in Microsoft E
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="user-azure-ad"></a>Set up a mobile device user account in Supply Chain Management
+## <a name="user-azure-ad"></a>Set up employee, user, and warehouse worker records Supply Chain Management
 
-<!-- KFM:
-
-I think we should move this section to [Mobile device user accounts](mobile-device-work-users.md) because we already need a "person" account (in HR), which is what links the SCM user to the Warehouse worker account. That article is where we mention that we need a "person" account (employee or worker). That would also keep the SCM setup in one article and the Entra ID setup in this article. In addition, this section should probably do the following:
-
-- Explain that the reader should either create one SCM user for each device or one SCM user for each human worker, depending on the scenario they are using.
-- Point out that the SCM user account needs to specify a related **Person** (representing either a human worker or a device) and (I think) the same **Email** as the related Entra ID account. I think this email is the link between Entra ID and SCM user accounts.
-- Describe each other field here (User ID, User name (what's the difference?), Provider, Telemetry ID, and Company) 
-- Mention that the next step is to set up a warehouse worker account for each SCM User we create here, and that each warehouse worker account must use the **Person** (unhelpfully called **Worker** on that form) that applies.
-- Mention that the setup is slightly different for service-based authentication, and just link to that article for details, while also recommending against using that deprecated method going forward.
-
-(Link to manage Entra ID accounts assigned to an enterprise application in the Azure portal: https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/assign-user-or-group-access-portal?pivots=portal)
-
--->
-
-Create a user that corresponds to the user credentials for the Warehouse Management mobile app.
-
-1. In Supply Chain Management, go to **System administration \> Users \> Users**.
-1. Create a user.
-1. Assign the *Warehousing mobile device user* role to the user.
-
-![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
+Before workers can begin to sign in using the mobile app, each Microsoft Entra ID account that you assigned to the enterprise app in Azure must have a corresponding employee, user, and warehouse worker record in Supply Chain Management. For details about how to set these up, see [Mobile device user accounts](mobile-device-work-users.md).
 
 ## <a name="sso"></a>Single sign-on
 

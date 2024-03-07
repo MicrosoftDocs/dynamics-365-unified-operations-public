@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 02/06/2024
+ms.date: 03/07/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -19,25 +19,58 @@ ms.custom: bap-template
 
 Every time that a worker starts to use the warehouse app, they must sign in by using a user name and password. Any number of warehouse app users can be associated with each warehouse worker in the system, and warehouses are typically associated with each of those warehouse app users. Various options are also configured for each warehouse worker record, to establish default settings and other settings that are relevant to using the warehouse app.
 
-## Set up the required worker and employee records
+> [!IMPORTANT]
+> This article assumes you are using user-based authentication. If you are still using service-based authentication (which is now deprecated), then you must set up Supply Chain Management slightly differently. See [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md) for details. Then follow the instructions provided here under [Set up mobile device user accounts](#set-wma-users), which apply to both types of authentication methods.
 
-Before you can set up warehouse app users, a record for each human worker must already exist as a Supply Chain Management employee or worker in the **Human Resources** module.
+## Assign Microsoft Entra ID accounts to the mobile app in Azure
+
+The Warehouse Management mobile app connects to Supply Chain Management through an *enterprise application* set up in Azure. Azure provides tools for creating Microsoft Entra ID user accounts and assigning them to the enterprise application.
+
+Depending on which [authentication scenario](warehouse-app-authenticate-user-based.md#scenarios) you're using, you must set up a unique Microsoft Entra ID user account either for each mobile device or for each human worker that will authenticate with Supply Chain Management. Make a note of the **User principal name** of each Microsoft Entra ID account you use for this purpose, as you'll need them later when you set up the Supply Chain Management user records for each of these accounts.
+
+For more information about how to set up an enterprise application for the Warehouse Management mobile app, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
+
+For more information about how to assign Microsoft Entra ID user accounts to enterprise applications in Azure, see [Manage users and groups assignment to an application](/entra/identity/enterprise-apps/assign-user-or-group-access-portal).
+
+## Set up employee records for each device or human worker
+
+For each of the Microsoft Entra ID user accounts you set up in the previous section, you must have a matching employee record in Supply Chain Management. Later, you'll link each of these employee records to their related Supply Chain Management user record and warehouse worker record.
+
+To create, view, and manage your employee records, go to **Human resources \> Workers \> Employees**.
+
+## Set up Supply Chain Management user records for each device or human worker
+
+For each of the employee records you set up in the previous section, you must have a matching Supply Chain Management user record, which identifies both the Microsoft Entra ID user account and the employee record. Follow these steps to set up a Supply Chain Management user record:
+
+1. Go to **System administration \> Users \> Users**.
+1. On the Action Pane, select **New**.
+1. Make the following settings for the new user record:
+    - **User ID** – Enter a unique ID for the user or device.
+    - **User name** – Enter a descriptive name for the user or device.
+    - **Provider** – Leave set to its default value.
+    - **Email** – Enter the *User principal name* of the Microsoft Entra ID account you set up for the user or device.
+    - **Telemetry ID** – Leave set to its default value.
+    - **Company** – Select the legal entity (company) where the user works.
+    - **Person** – Select the employee record that corresponds to the user or device.
+    - **Enabled** – Set to *Yes*.
+
+1. On the **User's roles** FastTab, assign the *Warehouse mobile device user* role to the user account. This role is required for the user to sign in to the warehouse app.
 
 ## <a name="set-wma-users"></a>Set up mobile device user accounts
 
-After the required worker and employee records are set up in Human Resources, you can create *warehouse worker records* for each of them as required, create one or more *mobile device user accounts* for each warehouse worker record, and set up other options that affect how each worker can use the app.
+For each of the user records you created in the previous section, you must create a *warehouse worker record* and assign one or more *mobile device user accounts* to those records.
 
 1. Go to **Warehouse management \> Setup \> Worker**.
 1. To edit an existing worker, select it in the list pane. To add a new record, select **New** on the Action Pane.
 1. If you're setting up a new worker, follow these steps:
 
-    1. In the **Worker** field, select the related worker or employee record from the Human Resources module.
+    1. In the **Worker** field, select the related employee record from the Human Resources module. This value must match the **Person** value selected for the related Supply Chain Management user record.
     1. Select **Select**.
     1. On the Action Pane, select **Save**.
 
 1. A default profile can be used to guide the warehouse worker at the packing station through the process that is required there. Alternatively, the default profile can be used to save the preferred profile settings for the worker. On the **Profile** FastTab, set the following fields:
 
-    - **Container packing policy** – Select a container packing policy that defines how containers at the packing station should be processed. The container packing policy that is selected here will be pre-selected for the worker when they open the packing station. For more information, see the following blog post: [Improved packing functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611).
+    - **Container packing policy** – Select a container packing policy that defines how containers at the packing station should be processed. The container packing policy that is selected here will be preselected for the worker when they open the packing station. For more information, see the following blog post: [Improved packing functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611).
     - **Packing profile ID** – Select a packing profile ID that defines the packing policy and container settings that are used. If the selected packing profile ID is associated with a container packing policy, you won't be able to change the **Container packing policy** setting on this page.
 
 1. On the **Default packing station** FastTab, set the following fields to define the default packing station that applies when the worker signs in. The worker can still select another packing station as required.
@@ -53,7 +86,7 @@ After the required worker and employee records are set up in Human Resources, yo
     - **Default warehouse** – Set the default warehouse where the worker usually works. You can use the toolbar to assign additional warehouses, and the worker can switch between warehouses by using the **Change warehouse** indirect activity of the mobile device menu item.
     - **Menu name** – Select the root menu that will be the starting page for the worker. The ability to set up a root menu for each worker is useful because it lets you control the menu structure that each worker can use. For example, the menu for workers that are active only in the outbound area can be tailored for tasks that are related to outbound operations for that area.
     - **Inactive** – A selected checkbox indicates that the mobile device user account is inactive. The mobile device user account is automatically inactivated if a worker enters the wrong password five times in a row in the warehouse app. However, you can also manually select this checkbox. Clear the checkbox to make the user active again.
-    - **Default user** – If you have more than one mobile device user account set up for the current worker, then select this check box for the mobile device user account that should act as the default for this worker (if any). If you are using a sign-in scenario where you have a unique Microsoft Entra ID user account for each human warehouse worker, then the Warehouse Management mobile app will automatically sign in using the default mobile device user account when the human worker signs in to the device using their Microsoft Entra ID user account (see also [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios)).
+    - **Default user** – Select this check box for the mobile device user account that should act as the default for this worker (if any). If you're using a sign-in scenario where you have a unique Microsoft Entra ID user account for each human warehouse worker, then the Warehouse Management mobile app will automatically sign in using the default mobile device user account when the human worker signs in to the device using their Microsoft Entra ID user account (see also [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios)).
 
 1. On the **Work** FastTab, set the following fields:
 
@@ -73,12 +106,12 @@ After the required worker and employee records are set up in Human Resources, yo
 
 ## Set the language, number formats, and time zone for each warehouse app user
 
-When a worker signs in to the Warehouse Management mobile app, the language, number formats, and time zone change to match that worker's preferences. The account settings for the worker that is selected in step 3 in the [Set up mobile device user accounts](#set-wma-users) section determines the settings that are used. If you require separate settings for each user, use different worker accounts. The following procedure shows how to change the language, number formats, and time zone for each warehouse app user.
+When a worker signs in to the Warehouse Management mobile app, the language, number formats, and time zone change to match that worker's preferences. The account settings for the worker that is selected in step 3 in the [Set up mobile device user accounts](#set-wma-users) section determines the settings that are used. If you require separate settings for each worker, use different worker accounts. The following procedure shows how to change the language, number formats, and time zone for a warehouse app user.
 
 1. Go to **Warehouse management \> Setup \> Worker**.
-1. Find the name of the worker that you want to set up. Make sure that the worker has all the required mobile device user accounts that are listed on the **Users** FastTab. Create a new worker and/or add mobile device user accounts as required, by following the steps in the [Set up mobile device user accounts](#set-wma-users) section.
+1. Find the worker that you want to set up and make a note of the value shown for **Worker**.
 1. Go to **System administration \> Users \> Users**.
-1. Select the mobile device user account where the **Person** column shows the name of the worker that you found in step 2.
+1. Open the user record where the **Person** column shows the **Worker** name that you found in step 2.
 
     > [!IMPORTANT]
     > The **User ID** values that are listed on the **Users** page are *not* related to the value that are shown on the **Users** FastTab of the **Worker** page that you opened in step 1.

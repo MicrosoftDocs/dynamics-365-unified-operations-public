@@ -256,9 +256,8 @@ If you don't have a file or QR code, you can manually configure the app on the d
         > Don't end this value with a slash (/).
 
     - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
-    - **Brokered authentication** – This setting applies only when the **Authentication method** field is set to *Username and password*. Select whether to use a broker for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set the value to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password. <!-- KFM: Renamed to **Use Broker**?>
-
-<!-- KFM: New setting **Domain name**? -->
+    - **Use Broker** – This setting applies only when the **Authentication method** field is set to *Username and password*. Select whether to use a broker for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set the value to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password.
+    - **Domain name** – This setting applies only when the **Authentication method** field is set to *Username and password*. You can use this setting to make it easier for workers to sign in. If you don't specify a domain name, workers must sign in by entering their full Microsoft Entra ID user principal name, which takes the form *\<user name\>@\<domain name\>*. If you specify the *\<domain name\>* part here, workers can sign in by entering only their *\<user name\>* (though their full user principal name will also work).
 
 1. Select the **Save** button in the upper-right corner of the page.
 1. If you're using a certificate for authentication, complete one of the following steps:
