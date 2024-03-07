@@ -76,13 +76,13 @@ If the Dual write GAB solution is not deployed, no delivery and invoice addresse
 ### Scenario 3: Prospect lifecycle managed from Dynamics 365 Supply Chain Management - prospect of type person (Need to be tested)
 The following steps show what happens when you manage prospect lifecycle from Dynamics 365 Supply Chain Management and the prospect is of type person.
 1. In Supply Chain Management, navigate to Sales and Marketing>Relationships>Prospects>All prospects. Create New prospect as type person.
-Result: The new prospect is created using the number sequence setup for the prospect entity. The new prospect is created as a Contact with the Is Prospect value set to Yes in Dynamics 365 Sales. 
+Result: The new prospect is created using the number sequence setup for the prospect entity in Dynamics 365 Supply Chain Management. The new prospect is createdas a Contact with the Is Prospect value set to Yes in Dynamics 365 Sales. 
 
-2. Add an address of role Delivery to the prospect. Add an address of role invoice. Create a new contact of type person for the prospect.
+2. Add an address of role Delivery to the prospect. Add an address of role invoice. Create a new contact for the prospect.
 Result: A contact is created in Dynamics 365 Sales and associated with the contact with the Is Prospect value set to Yes in Dynamics 365 Sales.
 
     > [!NOTE]
-    > Depending on whether the dual write GAB solution is deployed, either both the delivery address and invoice address is created in Dynamics 365 Sales for the contact with the Is Prospect value set to Yes. Depending on whether the dual write GAB solution is deployed, the  contact surfaces either in Associated organizations tab for the contact or ?? **Does it at all synchronize??**. 
+    > Depending on whether the dual write GAB solution is deployed, either both the delivery address and invoice address is created in Dynamics 365 Sales for the contact with the Is Prospect value set to Yes. Depending on whether the dual write GAB solution is deployed, the  contact surfaces either in Associated organizations tab for the contact or ?? **Does it at all synchronize??**. *** Henrikan: Test at contacts kun synkroniseres dersom contacten er knyttet til en type account (organization) og ikke type contact (type person) *** 
     > 
    
 4. In Dynamics 365 Supply Chain Management, navigate to Sales and Marketing>Relationships > Prospects > All prospects. Open the prospect and select header ribbon action General > Convert > Convert to customer.
