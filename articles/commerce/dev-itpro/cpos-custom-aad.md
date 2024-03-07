@@ -53,7 +53,7 @@ To create and configure a custom Retail Server app in Microsoft Entra ID, follow
 ## Set up a custom app for Store Commerce for web in Microsoft Entra ID
 
 > [!IMPORTANT]
-> If you're upgrading an existing custom Store Commerce for web Microsoft Entra app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom Store Commerce for web Microsoft Entra app created before Commerce version 10.0.21](#upgrade-an-existing-custom-store-commerce-for-web-azure-ad-app-created-before-commerce-version-10021).
+> If you're upgrading an existing custom Store Commerce for web Microsoft Entra app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom Store Commerce for web Microsoft Entra app created before Commerce version 10.0.21](#upgrade-an-existing-custom-store-commerce-for-web-microsoft-entra-app-created-before-commerce-version-10021).
 
 To create and configure a custom app for Store Commerce for web in Microsoft Entra ID, follow these steps.
 
@@ -75,7 +75,7 @@ To create and configure a custom app for Store Commerce for web in Microsoft Ent
     1. Select **Add optional claim**. Set the **Token type** field to **Access**, and then select the **sid** claim. Select **Add**.
 
 1. In the **API permissions** section, select **Add a permission**.
-1. On the **APIs my organization uses** tab, search for the Retail Server app that you created in the [Set up a custom Retail Server app in Microsoft Entra ID](#set-up-a-custom-retail-server-app-in-azure-ad) section. Then select **Add permissions**.
+1. On the **APIs my organization uses** tab, search for the Retail Server app that you created in the [Set up a custom Retail Server app in Microsoft Entra ID](#set-up-a-custom-retail-server-app-in-microsoft-entra-id) section. Then select **Add permissions**.
 1. In the **Overview** section, make a note of the value in the **Application (client) ID** field.
 
 ### Upgrade an existing custom Store Commerce for web Microsoft Entra app created before Commerce version 10.0.21
@@ -95,8 +95,8 @@ To upgrade an existing custom Store Commerce for web Microsoft Entra app created
 
 The following steps only apply to a CSU (self-hosted) that uses the Retail SDK. If you are using a sealed CSU installer, this process is completed automatically during the installation process. Open the Store Commerce for web config.json file, and make the following changes.
 
-1. Replace the **Microsoft Entra IDClientId** key value with the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Microsoft Entra ID](#set-up-a-custom-app-for-store-commerce-for-web-in-azure-ad) section.
-1. Replace the **Microsoft Entra IDRetailServerResourceId** key value with the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Microsoft Entra ID](#set-up-a-custom-retail-server-app-in-azure-ad) section.
+1. Replace the **Microsoft Entra IDClientId** key value with the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Microsoft Entra ID](#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id) section.
+1. Replace the **Microsoft Entra IDRetailServerResourceId** key value with the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Microsoft Entra ID](#set-up-a-custom-retail-server-app-in-microsoft-entra-id) section.
 
 Store Commerce for web will use both parameters when it sends requests to Microsoft Entra ID to acquire a security token.
 
@@ -109,13 +109,13 @@ Next, you must update identity providers settings in Commerce headquarters.
 1. In the **Relying parties** section, select **Add** to add a row.
 1. Set the following fields:
 
-    - **ClientId** – Enter the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Microsoft Entra ID](#set-up-a-custom-app-for-store-commerce-for-web-in-azure-ad) section.
+    - **ClientId** – Enter the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Microsoft Entra ID](#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id) section.
     - **Type** – Select **Public**.
     - **UserType** – Select **Worker**.
 
 1. Select the row that you added. The **Server Resource IDs** section below the **Relying Parties** section shows the Retail Server app IDs that can be accessed by the app that you selected in the **Relying Parties** grid.
 1. In the **Server Resource IDs** section, select **Add** to add a row.
-1. In the **Server Resource Id** field, enter the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Microsoft Entra ID](#set-up-a-custom-retail-server-app-in-azure-ad) section.
+1. In the **Server Resource Id** field, enter the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Microsoft Entra ID](#set-up-a-custom-retail-server-app-in-microsoft-entra-id) section.
 
     > [!IMPORTANT]
     > All the fields that are mentioned in the preceding steps are case-sensitive. The values that you enter must exactly match the values that are configured in the Microsoft Entra admin center.
