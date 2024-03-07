@@ -38,10 +38,10 @@ Use this procedure to initialize the e-commerce feature in an existing environme
 
 Before you begin, make sure that you have the following required information:
 
-- The RCSU that you will use.
-- The Microsoft Entra ID security group that you will use for e-commerce system admins.
-- The Microsoft Entra ID security group that you will use for ratings and reviews moderators.
-- The domains that you will associate with the environment.
+- The RCSU to use.
+- The Microsoft Entra ID security group to use for e-commerce system admins.
+- The Microsoft Entra ID security group to use for ratings and reviews moderators.
+- The domains to associate with the environment.
 
 In addition, you can collect the following optional information:
 
