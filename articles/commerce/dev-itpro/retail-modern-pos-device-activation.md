@@ -10,7 +10,7 @@ audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
-ms.author: jashanno
+ms.author: stuharg
 ms.search.validFrom: 2016-02-28
 
 ---
