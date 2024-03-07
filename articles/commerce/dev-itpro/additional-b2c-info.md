@@ -20,23 +20,23 @@ This article provides additional information on how to set your business-to-cons
 
 ### Customer migration
 
-If you are considering migrating customer records from a previous identity provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
+If you're considering migrating customer records from a previous identity provider platform, work with the Dynamics 365 Commerce team to review your customer migration needs.
 
 For additional Microsoft Entra B2C documentation on customer migration, see [Migrate users to Microsoft Entra ID B2C](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### Custom policies
 
-For additional information regarding customizing Microsoft Entra B2C interactions and policy flows beyond what is offered by B2C standard policies, see [Custom policies in Microsoft Entra ID B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+For more information regarding customizing Microsoft Entra B2C interactions and policy flows beyond what is offered by B2C standard policies, see [Custom policies in Microsoft Entra ID B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### Secondary admin
 
-An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Microsoft Entra B2C, a common account should be monitored closely per your company's security practices.
+An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This account can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Microsoft Entra B2C, a common account should be monitored closely per your company's security practices.
 
 ### Enable Microsoft Entra B2C phone sign-up and sign-in 
 
 To enable Microsoft Entra B2C phone sign-up and sign-in for Commerce, follow the instructions in [Set up phone sign-up and sign-in for user flows](/azure/active-directory-b2c/phone-authentication-user-flows). Microsoft recommends that you use a generic Commerce Microsoft Entra identity module. If you need to include the style, you must use the generic Microsoft Entra identity module.
 
-Both the **Phone signup** and **Phone/Email signup** options are supported. When selecting return values for **Phone signup**, Microsoft recommends that you select **Email Address** as a required value, because Commerce uses email for receipts and other purposes.
+Both the **Phone signup** and **Phone/Email signup** options are supported. When you select return values for **Phone signup**, Microsoft recommends that you select **Email Address** as a required value, because Commerce uses email for receipts and other purposes.
 
 ### Set up a custom sign-in domain
 
