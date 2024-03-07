@@ -35,7 +35,7 @@ For help with diagnosing activation issues, see [Troubleshoot device activation 
 
     [![POS Wizard, add server URL page.](./media/p18.png)](./media/p18.png)
 
-1. Sign in using your Azure Active Directory (Azure AD) credentials. The Azure AD account must already be mapped. For instructions, see [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
+1. Sign in using your Microsoft Entra credentials. The Microsoft Entra account must already be mapped. For instructions, see [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
 1. Select **Next** to populate the list of stores.
 1. Select the correct store in the list, and then select **Next**.
 
@@ -77,9 +77,9 @@ If you encounter errors while activating your POS device, follow these steps and
 
 1. Complete the **Validate devices for activation** check in headquarters, and ensure that the device passes validation.
 1. On the client machine where you're activating the device, run the Commerce Scale Unit URL health check, and confirm that the health check is passed. Use the following URL format: `https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping`.
-1. Confirm that the worker is mapped to an Azure AD account (under **External identity**). This mapping is required.
-1. Confirm that the Azure AD account for mapping belongs to the same tenant, which is required.
-1. To map the worker to the Azure AD account, sign in to headquarters using the administrator account for Microsoft Dynamics Lifecycle Services (LCS).
+1. Confirm that the worker is mapped to an Microsoft Entra account (under **External identity**). This mapping is required.
+1. Confirm that the Microsoft Entra account for mapping belongs to the same tenant, which is required.
+1. To map the worker to the Microsoft Entra account, sign in to headquarters using the administrator account for Microsoft Dynamics Lifecycle Services (LCS).
 1. Confirm that the worker is set up as a user in the manager role (checked by validation).
 1. Confirm that the channel is published (checked by validation).
 1. Confirm that the channel database has the synced data from headquarters and that download jobs are running by executing the following SQL command in the channel database for the store. After running the command, confirm that data is returned, and that the result isn't empty.

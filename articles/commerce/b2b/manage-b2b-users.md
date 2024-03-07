@@ -50,7 +50,7 @@ To approve a business partner request in Commerce headquarters, follow these ste
 > [!NOTE]
 > To ensure that the new customer records are sent to the channel database, at least one of the address books that are associated with the customer should be included in the customer address book that is associated with the online store. You can automate this process by configuring the address book on the default customer of the online store so that the system copies the address book value to every new customer.
 
-After the customer hierarchy records are synchronized to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the onboarding request. Users can use the sign-up flow to define the password for their account. For information about how to enable the Azure Active Directory (Azure AD) B2C identity provider record to be linked to the B2B customer record that was created on prospect approval, see [Enable automatic linking](../identity-record-linking.md).
+After the customer hierarchy records are synchronized to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the onboarding request. Users can use the sign-up flow to define the password for their account. For information about how to enable the Microsoft Entra B2C identity provider record to be linked to the B2B customer record that was created on prospect approval, see [Enable automatic linking](../identity-record-linking.md).
 
 ## Notify B2B prospects when they are approved or rejected
 
@@ -75,7 +75,7 @@ After the **P-0001** and **Synchronize customers and channel requests** jobs hav
 
 Next, run the **1010 (Customers)** job to synchronize the new business partner user to the channel database.
 
-After the customer record is synchronized, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account. For information about how to enable the Azure AD B2C identity provider record to be linked to the B2B customer record that was created in Commerce headquarters, see [Enable automatic linking](/dynamics365/commerce/identity-record-linking).
+After the customer record is synchronized, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account. For information about how to enable the Microsoft Entra B2C identity provider record to be linked to the B2B customer record that was created in Commerce headquarters, see [Enable automatic linking](/dynamics365/commerce/identity-record-linking).
 
 ## Edit business partner user details
 
