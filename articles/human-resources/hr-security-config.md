@@ -36,12 +36,12 @@ This article describes an architecture for using [Microsoft Dataverse virtual ta
 
 The following articles provide more information about the concepts in this article:
 
-- [Virtual entities overview](/dev-itpro/power-platform/virtual-entities-overview)
-- [Get started with virtual tables (entities)](/developer/data-platform/virtual-entities/get-started-ve)
-- [Use multi-tenant server-to-server authentication (Microsoft Dataverse)](/developer/data-platform/use-multi-tenant-server-server-authentication)
-- [Use OAuth authentication with Microsoft Dataverse (Dataverse)](/developer/data-platform/authenticate-oauth)
+- [Virtual entities overview](../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md)
+- [Get started with virtual tables (entities)](../fin-ops-core/developer/data-platform/virtual-entities/get-started-ve.md)
+- [Use multi-tenant server-to-server authentication (Microsoft Dataverse)](../fin-ops-core/developer/data-platform/use-multi-tenant-server-server-authentication.md)
+- [Use OAuth authentication with Microsoft Dataverse (Dataverse)](../fin-ops-core/developer/data-platform/authenticate-oauth.md)
 - [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
-- [Authentication and authorization](/dev-itpro/power-platform/authentication-and-authorization)
+- [Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization.md)
 
 ## Architecture 
 
@@ -117,14 +117,14 @@ If Dataverse-level application permission checks are passed, the Virtual entity 
 
 ![Finance and Operations virtual data source configuration record in the sandbox environment.](./media/sandbox.jpg)
 
-For more information, see [Configure Dataverse virtual entities](/dev-itpro/power-platform/admin-reference).
+For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 
 The call from the Dataverse Virtual entity plugin to Finance or Human Resources includes the adapter identity of the original call to Dataverse from the adapter (the identity that's designated "\<guid A\>" in the architectural diagram). If the virtual entity data source is correctly configured, and the S2S authentication checks are passed, the Virtual entity service in Finance or Human Resources will run the query in the context of the original caller (the adapter, \<guid A\>). Application permission checks (authorization) at the Finance or Human Resources level will be done to ensure that the adapter has the privileges that are required to access the data entities that are requested through the query.
 
 Finance and Human Resources security is managed in the following ways:
 
-1. By mapping the adapter identity (\<guid A\>) to a specific Finance or Human Resources user. This mapping is done on the **Azure active directory applications** page. For more information, see [Register your external application](/dev-itpro/data-entities/services-home-page.md#register-your-external-application).
-2. By granting the Finance or Human Resources user the appropriate application-level roles, duties, and privileges. For more information, see [Role-based security](/dev-itpro/sysadmin/role-based-security).
+1. By mapping the adapter identity (\<guid A\>) to a specific Finance or Human Resources user. This mapping is done on the **Azure active directory applications** page. For more information, see [Register your external application](../fin-ops-core/dev-itpro/data-entities/services-home-page.md#register-your-external-application.md).
+2. By granting the Finance or Human Resources user the appropriate application-level roles, duties, and privileges. For more information, see [Role-based security](../fin-ops-core/dev-itpro/sysadmin/role-based-security.md).
 
 If the adapter application (\<guid A\>) is granted the privileges that are required to access the requested data, the following events occur:
 
