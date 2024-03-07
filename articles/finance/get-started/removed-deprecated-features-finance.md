@@ -59,7 +59,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [Configure and report Italian sales tax books](../localizations/estonia/emea-ita-sales-tax-books.md). | 
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [Configure and report Italian sales tax books](../../localizations/estonia/emea-ita-sales-tax-books.md). | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
