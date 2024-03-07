@@ -50,7 +50,7 @@ For each of the employee records you set up in the previous section, you must ha
     - **Provider** – Leave set to its default value.
     - **Email** – Enter the *User principal name* of the Microsoft Entra ID account you set up for the user or device.
     - **Telemetry ID** – Leave set to its default value.
-    - **Company** – Select the legal entity (company) where the user works.
+    - **Company** – Select the legal entity (company) where the user works or where the device is used.
     - **Person** – Select the employee record that corresponds to the user or device.
     - **Enabled** – Set to *Yes*.
 
