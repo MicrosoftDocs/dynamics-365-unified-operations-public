@@ -7,7 +7,7 @@ ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2017-06-20
 ---
 
