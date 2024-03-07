@@ -35,7 +35,7 @@ This article explains how to set up Phased Rollout (N-1) components so that your
 
 The sections in this article describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
-- **[Set up Microsoft Entra accounts](#set-up-azure-ad-accounts)** – This section explains how to set up the Microsoft Microsoft Entra accounts that the N-1 components use to connect to Headquarters.
+- **[Set up Microsoft Entra accounts](#set-up-microsoft-entra-accounts)** – This section explains how to set up the Microsoft Microsoft Entra accounts that the N-1 components use to connect to Headquarters.
 - **[Configure N-1 components](#configure-n-1-components)** – This section explains how to configure the N-1 components in Headquarters.
 - **[Install N-1 components](#install-n-1-components)** – This section explains how to download and install N-1 components in the existing AX 2012 R3 environment.
 - **[Cutover steps to switch to N-1](#cutover-steps-to-switch-to-n-1)** – This section explains how to use the new N-1 components to cut an existing AX 2012 R3 environment over from the AX 2012 R3 headquarters to the Dynamics 365 Headquarters.
@@ -300,7 +300,7 @@ Follow these steps to prepare your environment for the cutover.
 |---|---|---|
 | 1. Deploy Headquarters. | Headquarters is up and running. Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
 | 2. Install the Commerce application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
-| 3. Set up Microsoft Entra accounts. | Follow the instructions in the [Set up Microsoft Entra accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Headquarters. | Weeks or months before the cutover |
+| 3. Set up Microsoft Entra accounts. | Follow the instructions in the [Set up Microsoft Entra accounts](#set-up-microsoft-entra-accounts) section to create the accounts that are required for the N-1 components to authenticate against Headquarters. | Weeks or months before the cutover |
 | 4. Configure Headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
 | 5. Configure Headquarters. | Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**, select the **Security** tab, and change the value in **TS password encryption name** to "SHA256". |
 | 6. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately turned off to ensure that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
