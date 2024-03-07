@@ -4,7 +4,6 @@ description: This article will help you plan and prepare for your on-premises de
 author: faix
 ms.date: 01/26/2022
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,7 +12,7 @@ ms.author: osfaixat
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

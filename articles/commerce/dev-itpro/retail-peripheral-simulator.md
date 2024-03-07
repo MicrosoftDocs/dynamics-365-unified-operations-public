@@ -9,7 +9,6 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: brshoo
 ms.search.validFrom: 2016-06-30
-ms.custom: 266544
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.industry: Retail
 ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable

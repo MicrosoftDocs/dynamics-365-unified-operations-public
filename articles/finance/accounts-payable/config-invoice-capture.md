@@ -4,7 +4,7 @@
 title: Configure the Invoice capture solution
 description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
-ms.date: 11/01/2023
+ms.date: 11/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,8 @@ After the Invoice capture solution is installed, default configurations for usin
 
 1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages.
 
-    For invoices that have more complex layouts, customers can create their own custom prebuilt models. After a model is published, it appears in the dropdown list, and additional mapping is required to map the model fields to the invoice files. This feature will be supported in a future release.
+    > [!NOTE]
+    > In a future release, customers can create their own custom prebuilt models to handle invoices that have more complex layouts. After a model is published, additional mapping is required to map the model fields to the invoice files.
 
 2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
 3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
@@ -73,7 +74,10 @@ In invoice capture processing, different derivation rules are applied to ensure 
 
 ## Manage file filters (optional)
 
-**Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them. This behavior differs from the behavior that is defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
+**Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them. 
+
+> [!NOTE]
+> This behavior differs from the behavior that's defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
 
 After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.
 
@@ -97,7 +101,7 @@ Configure the following settings in the file filter:
 
 ## Definition of master data
 
-Invoice capture processing requires two data types: legal entities and vendors.
+Invoice capture processing requires two basic data types to classify invoices: legal entities and vendors.
 
 **Legal entities** are organizations that are registered with legal authorities and defined in Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Microsoft Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This link controls data access through business units and security roles, and allows Accounts payable clerks to view only the invoices that are assigned to their users.
 
@@ -107,18 +111,20 @@ Invoice capture processing requires two data types: legal entities and vendors.
 
 In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities by following these steps.
 
-1. Go to **Setup \> System setup \> Manage legal entities**.
+1. Go to **Setup** \> **System setup** \> **Manage legal entities**.
 2. Select **Sync**.
 3. In the confirmation message box, select **OK**.
 
 After synchronization is completed, a message shows the number of new legal entities. The list view is automatically refreshed to show the new legal entities.
 
 ### Sync vendors
- In **Manage vendors**, there are three options to sync the vendor accounts:
- 1. **Sync all** - all vendor accounts are synced. This will potentially cause a performance issue.
- 2. **Sync by legal entity** - The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
- 3. **Sync by selection** - Administrators can search and select one or multiple vendors and sync the selected vendor. 
- 
-An Accounts payable administrator needs manually trigger synchronization. 
->[!NOTE]
->Automatic synchronization is under development that could let the system automatically sync the data in a scheduled time in a recurring way.
+In **Manage vendors**, there are three options to sync the vendor accounts:
+
+- **Sync all** – all vendor accounts are synced. This will potentially cause a performance issue.
+- **Sync by legal entity** – The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
+- **Sync by selection** – Administrators can search and select one or multiple vendors and sync the selected vendors.
+    
+An Accounts payable administrator can initiate the vendor synchronization manually or in real time. To enable real-time synchronization, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Invoice capture**.
+2. Select the **Sync all vendors** checkbox next to the onboarded legal entity.

@@ -12,7 +12,6 @@ ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 262514
 ms.search.form: CustPaymMode, VendPaymMode
 ---
 

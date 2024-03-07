@@ -3,7 +3,7 @@
 
 title: Manage vendor collaboration users
 description: This article describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
-author: GalynaFedorova
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,12 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 
 # ms.search.industry: 
-ms.author: gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -31,6 +30,7 @@ ms.dyn365.ops.version: Version 1611
 # Manage vendor collaboration users
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 
@@ -63,12 +63,12 @@ When a request is submitted it is added to the **Vendor collaboration user reque
 Before you can request that a new user is provisioned, that person must be set up as a contact for one or more vendor accounts. To create a request for a new vendor collaboration user:
 
 1. On the **All contacts** page, click **Provision vendor user**.
-2. Enter an email address for the user. This address will be used by the user to sign in to Supply Chain Management. If the email address belongs to a domain registered as a tenant with Microsoft Azure, then the email address has to be an existing Azure Active Directory (AAD) account in order for the provisioning process to complete successfully. If the email address does not belong to a domain registered with Microsoft Azure, an AAD account will be created as part of the provisioning process and the new user will receive an invitation mail. Consumer email addresses with domains such as @hotmail.com, @gmail.com, or @comcast.net cannot be used to register a  user.
+2. Enter an email address for the user. This address will be used by the user to sign in to Supply Chain Management. If the email address belongs to a domain registered as a tenant with Microsoft Azure, then the email address has to be an existing Microsoft Entra ID (Microsoft Entra ID) account in order for the provisioning process to complete successfully. If the email address does not belong to a domain registered with Microsoft Azure, a Microsoft Entra account will be created as part of the provisioning process and the new user will receive an invitation mail. Consumer email addresses with domains such as @hotmail.com, @gmail.com, or @comcast.net cannot be used to register a  user.
 3. Set the **Vendor collaboration access allowed** option to **Yes** for all the legal entities that the user needs access to.
 4. In the **Assign user roles** section, select the **Assign** check box for the security roles that the new user should have.
 5. Click **Submit**.
 
-When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing AAD account with the Supply Chain Management user account. For more information, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing Microsoft Entra account with the Supply Chain Management user account. For more information, see [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### Inactivate a user
 

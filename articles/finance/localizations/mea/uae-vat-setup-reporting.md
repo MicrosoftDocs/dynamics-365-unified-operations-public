@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 272683
 ms.search.region: UAE
 # ms.search.industry: 
 ms.author: kfend

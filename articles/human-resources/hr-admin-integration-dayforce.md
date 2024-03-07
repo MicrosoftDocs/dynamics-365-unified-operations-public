@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -33,7 +32,10 @@ ms.dyn365.ops.version: Human Resources
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 > [!NOTE]
-> The functionality noted in this article is only available for existing Ceridian Dayforce customers using 'V1' Dayforce integration with Dynamics 365 Human Resources. All new customers should work with the payroll provider to use API based payroll integration. 
+> The functionality noted in this article is only available for existing Ceridian Dayforce customers using 'V1' Dayforce integration with Dynamics 365 Human Resources. All new customers should work with the payroll provider to use API based payroll integration.
+
+For the payroll integration to work, the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight must be enabled. To enable this flight, reach out to Microsoft support. 
+ 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

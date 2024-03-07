@@ -1,5 +1,5 @@
 ---
-title: Pricing rules for discounts and margin price adjustments
+title: Pricing rules for discounts and margin price adjustments (preview)
 description: This article explains how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts, and free-item discounts.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Pricing rules for discounts and margin price adjustments
+# Pricing rules for discounts and margin price adjustments (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

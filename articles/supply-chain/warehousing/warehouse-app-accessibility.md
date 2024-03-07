@@ -1,8 +1,8 @@
 ---
 title: Warehouse Mobile app accessibility features
 description: This article describes the accessibility features of the Warehouse Management mobile app.
-author: GalynaFedorova
-ms.author: gfedorova
+author: Mirzaab
+ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual

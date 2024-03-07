@@ -4,7 +4,6 @@ description: This article provides troubleshooting information for deployments o
 author: faix
 ms.date: 05/04/2023
 ms.topic: article
-ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -12,7 +11,7 @@ ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.assetid: 
-ms.service: 
+ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

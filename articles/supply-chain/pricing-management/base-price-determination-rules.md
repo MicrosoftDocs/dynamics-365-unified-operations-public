@@ -1,5 +1,5 @@
 ---
-title: Sales order base price determination rules
+title: Sales order base price determination rules (preview)
 description: This article describes the price determination rules for calculating an item's base price.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Sales order base price determination rules
+# Sales order base price determination rules (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

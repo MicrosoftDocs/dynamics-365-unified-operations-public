@@ -6,8 +6,7 @@ description: This article lists the system requirements for on-premises deployme
 author: PeterRFriis
 ms.date: 02/08/2022
 ms.topic: article
-ms.prod: dynamics-365
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

@@ -4,7 +4,7 @@
 title: Delete a production finance and operations apps environment
 description: This article explains how to delete a production environment by using a self-service experience.
 author: laneswenka
-ms.date: 04/19/2023
+ms.date: 01/31/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -43,8 +43,12 @@ You can delete an environment that's in the deployed state directly through the 
 
 After you enter the environment name and select **Yes**, you're prompted to confirm that you want to delete the production environment. In the **Step 2 of 2 - Delete environment** dialog box, you're prompted to enter your name to confirm and capture your intent to delete the environment.
 
-:::image type="content" source="media/deleteprodenvironment_2.png" alt-text="Screenshot of the prompt to enter your first and last names to delete the production environment.":::
+:::image type="content" source="media/deleteprodenvironment_2-dk.png" alt-text="Screenshot of the prompt to enter your first and last names to delete the production environment.":::
 
 After the final confirmation, the deletion operation starts. After it's completed, if you want to redeploy the production environment, the **Configure** button for the environment is available on the project dashboard.
 
+> [!IMPORTANT]
+> Solely for enterprises with an address or VAT registration in Denmark:  Microsoft will retain accounting materials (i.e., all documents that comprise bookkeeping, including recorded transactions and receipts) for legal entities in Denmark in a Microsoft-managed storage for 5 years from the end of the financial year the materials concern as required by Danish law. Learn more at: [Compliance with requirements for digital standard bookkeeping systems in Denmark](https://go.microsoft.com/fwlink/?linkid=2258103). 
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

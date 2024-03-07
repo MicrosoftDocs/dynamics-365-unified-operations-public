@@ -12,7 +12,6 @@ ms.search.region: Sweden
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 262684
 ms.search.form: 
 ---
 
@@ -72,7 +71,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Set up sales tax codes
 
-Set up sales tax codes by following the instructions in the topics, [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
+Set up sales tax codes by following the instructions in the topics, [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-tax-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
 ## <a name="generate"></a> Generate a sales tax payment and print the Swedish sales tax report
 

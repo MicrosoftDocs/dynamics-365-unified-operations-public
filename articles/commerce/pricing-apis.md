@@ -4,7 +4,7 @@
 title: Commerce pricing APIs
 description: This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
 author: boycez
-ms.date: 10/20/2023
+ms.date: 01/17/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-07-15
 
 This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
 
-The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that can be consumed by external applications to support various pricing scenarios:
+The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that external applications can consume to support various pricing scenarios:
 
 - **GetActivePrices** – This API gets a product's calculated price, including simple discounts.
 - **CalculateSalesDocument** – This API calculates prices and discounts for products at given quantities if they're bought together.
@@ -43,7 +43,7 @@ The main use case for the *GetActivePrices* API is the product details page (PDP
 
 The following table shows the input parameters for the *GetActivePrices* API.
 
-| Name                                    | Sub-name | Type | Required/Optional | Description |
+| Name                                    | Subname | Type | Required/Optional | Description |
 |-----------------------------------------|----------|------|-------------------|-------------|
 | projectDomain                           | | ProjectionDomain | Required | |
 |                                         | ChannelId | long | Required | |
@@ -58,7 +58,8 @@ The following table shows the input parameters for the *GetActivePrices* API.
 | includeVariantPriceRange                | | bool | Optional | Set this parameter to **true** to get the minimum and maximum prices among all variants for a master product. The default value is **false**. |
 | includeAttainablePricesAndDiscounts     | | bool | Optional | Set this parameter to **true** to get attainable prices and discounts. The default value is **false**. |
 
-**Sample request body**
+<details>
+    <summary>Sample request body</summary>
 
 ```json
 {
@@ -77,7 +78,10 @@ The following table shows the input parameters for the *GetActivePrices* API.
 }
 ```
 
-**Sample response body**
+</details>
+
+<details>
+    <summary>Sample response body</summary>
 
 ```json
 {
@@ -110,6 +114,30 @@ The following table shows the input parameters for the *GetActivePrices* API.
 }
 ```
 
+</details>
+
+### Use PriceLookupContext
+
+The PriceLookupContext class was introduced in the Commerce version 10.0.37 release. The class contains all the lookup criteria for the GetActivePrices API, and replaces the previous parameters of productIds, activeDate, customerId, and affiliationLoyaltyTiers. The class also has additional properties that developers can use to filter discounts during discount lookup.
+
+According to your organization's needs, the GetActivePrices API can either accept the previous parameters or new parameters associated with the PriceLookupContext class.
+
+**Input parameters**
+
+| Name                                    | Subname | Type | Required/Optional | Description |
+|-----------------------------------------|----------|------|-------------------|-------------|
+| projectDomain                           | | ProjectionDomain | Required | |
+|                                         | ChannelId | long | Required | |
+|                                         | CatalogId | long | Required | |
+| priceLookupContext                      | | PriceLookupContext | Required | |
+|                                         | HeaderContext | PriceLookupHeaderContext | Required | Contains CustomerAccountNumber, AffiliationLoyaltyTierLines and SalesOrderProperties |
+|                                         | LineContexts | IEnumerable\<PriceLookupLineContext\> | Required | Contains ProductRecordId, UnitOfMeasureSymbol, InventorySiteId, InventoryLocationId, DeliveryMode, CatalogId and SalesLineProperties. |
+| includeSimpleDiscountsInContextualPrice | | bool | Optional | Set this parameter to **true** to include simple discounts in the pricing calculation. The default value is **false**. |
+| includeVariantPriceRange                | | bool | Optional | Set this parameter to **true** to get the minimum and maximum prices among all variants for a master product. The default value is **false**. |
+| includeAttainablePricesAndDiscounts     | | bool | Optional | Set this parameter to **true** to get attainable prices and discounts. The default value is **false**. |
+
+For more information, see [PriceLookupContext](#pricelookupcontext).
+
 ## CalculateSalesDocument
 
 The *CalculateSalesDocument* API was introduced in the Commerce version 10.0.25 release. This API calculates prices and discounts for products at given quantities if they're bought together in an order. The pricing calculation behind the *CalculateSalesDocument* API considers both single-line discounts and multi-lines discounts.
@@ -122,7 +150,7 @@ The scope of the *CalculateSalesDocument* API is just the calculation of prices 
 
 The following table shows the input parameters inside the object that is named **salesDocument**.
 
-| Name             | Sub-name | Type | Required/Optional | Description |
+| Name             | Subname | Type | Required/Optional | Description |
 |------------------|----------|------|-------------------|-------------|
 | Id               | | string | Required | The identifier of the sales document. |
 | CartLines        | | IList\<CartLine\> | Optional | The list of lines to calculate prices and discounts for. |
@@ -132,19 +160,20 @@ The following table shows the input parameters inside the object that is named *
 |                  | Quantity | decimal | Required in the scope of CartLine | The quantity of the product. |
 |                  | UnitOfMeasureSymbol | string | Optional | The unit of the product. By default, if a value isn't provided, the API uses the sale unit of the product. |
 | CustomerId       | | string | Optional | The customer account number. |
-| LoyaltyCardId    | | string | Optional | The loyalty card identifier. Any customer account that is associated with the loyalty card must match the value of the **CustomerId** parameter (if it's provided). The loyalty card won't be considered if it isn't found or its status is **Blocked**. |
-| AffiliationLines | | IList\<AffiliationLoyaltyTier\> | Optional | Affiliation loyalty tier lines. If **CustomerId** and/or **LoyaltyCardId** values are provided, the corresponding affiliation loyalty tier lines will be merged with lines that are provided in the **AffiliationLines** value. |
+| LoyaltyCardId    | | string | Optional | The loyalty card identifier. Any customer account that is associated with the loyalty card must match the value of the **CustomerId** parameter (if provided). The loyalty card isn't considered if it isn't found or its status is **Blocked**. |
+| AffiliationLines | | IList\<AffiliationLoyaltyTier\> | Optional | Affiliation loyalty tier lines. If **CustomerId** and/or **LoyaltyCardId** values are provided, the corresponding affiliation loyalty tier lines are merged with lines that are provided in the **AffiliationLines** value. |
 |                  | AffiliationId | long | Required in the scope of AffiliationLoyaltyTier | The affiliation record ID. |
 |                  | LoyaltyTierId | long | Required in the scope of AffiliationLoyaltyTier | The loyalty tier record ID. |
-|                  | AffiliationTypeValue | int | Required in the scope of AffiliationLoyaltyTier | A value that indicates whether the affiliation line is of the **General** type (**0**) or the **Loyalty** type (**1**). If this parameter is set to **0**, the API takes the **AffiliationId** value as the identifier and ignores the **LoyaltyTierId** value. If it's set to **1**, the API takes the **LoyaltyTierId** value as the identifier and ignores the **AffiliationId** value. |
+|                  | AffiliationTypeValue | int | Required in the scope of AffiliationLoyaltyTier | A value that indicates whether the affiliation line is of the **General** type (**0**) or the **Loyalty** type (**1**). If the parameter is set to **0**, the API takes the **AffiliationId** value as the identifier and ignores the **LoyaltyTierId** value. If the parameter is set to **1**, the API takes the **LoyaltyTierId** value as the identifier and ignores the **AffiliationId** value. |
 |                  | ReasonCodeLines | Collection\<ReasonCodeLine\> | Required in the scope of AffiliationLoyaltyTier | Reason code lines. This parameter has no effect on the pricing calculation but is required as part of the **AffiliationLoyaltyTier** object. |
 |                  | CustomerId | string | Required in the scope of AffiliationLoyaltyTier | The customer account number. |
-| Coupons          | | IList\<Coupon\> | Optional | Coupons that aren't applicable (inactive, expired, or not found) won't be considered in the pricing calculation. |
+| Coupons          | | IList\<Coupon\> | Optional | Coupons that aren't applicable (inactive, expired, or not found) aren't considered in the pricing calculation. |
 |                  | Code | string | Required in the scope of Coupon | The coupon code. |
 |                  | CodeId | string | Optional | The coupon code identifier. If a value is provided, it must match the value of the **Code** parameter. |
 |                  | DiscountOfferId | string | Optional | The discount identifier. If a value is provided, it must match the value of the **Code** parameter. |
 
-**Sample request body**
+<details>
+    <summary>Sample request body</summary>
 
 ```json
 {
@@ -190,16 +219,18 @@ The following table shows the input parameters inside the object that is named *
 }
 ```
 
+</details>
+
 The whole cart object is returned as the response body. To check prices and discounts, you should focus on the fields in the following table.
 
-| Name           | Sub-name | Type | Description |
+| Name           | Subname | Type | Description |
 |----------------|----------|------|--------------|
-| NetPrice       | | decimal | The net price of the whole sales document before discounts are applied. |
+| NetPrice       | | decimal | The net price of the whole sales document before any discounts are applied. |
 | DiscountAmount | | decimal | The total discount amount of the whole sales document. |
 | TotalAmount    | | decimal | The total amount of the whole sales document. |
 | CartLines      | | IList\<CartLine\> | Calculated lines that include price and discount details. |
 |                | Price | decimal | The unit price of the product. |
-|                | NetPrice | decimal | The net price of the line before discounts are applied (= *Price* &times; *Quantity*). |
+|                | NetPrice | decimal | The net price of the line before any discounts are applied (= *Price* &times; *Quantity*). |
 |                | DiscountAmount | decimal | The discount amount. |
 |                | TotalAmount | decimal | The final total pricing result of the line. |
 |                | PriceLines | IList\<PriceLine\> | Price details, including the source of the price (base price, price adjustment, or trade agreement) and the amount. |
@@ -224,7 +255,8 @@ The following table lists the input parameters for the *Carts/GetAvailablePromot
 | key         | string | Required | The cart ID. |
 | cartLineIds | IEnumerable\<string\> | Optional | Set this parameter to return discounts for selected cart lines only. |
 
-**Sample response body**
+<details>
+    <summary>Sample response body</summary>
 
 ```json
 {
@@ -250,6 +282,8 @@ The following table lists the input parameters for the *Carts/GetAvailablePromot
 }
 ```
 
+</details>
+
 ### GetAvailablePromotions
 
 The *GetAvailablePromotions* API returns all applicable discounts for the given channel.
@@ -258,7 +292,7 @@ The main use case for the *GetAvailablePromotions* API is the "All discounts" pa
 
 The following table lists the input parameters for the *GetAvailablePromotions* API.
 
-| Name        | Sub-name | Type | Required/Optional | Description |
+| Name        | Subname | Type | Required/Optional | Description |
 |-------------|----------|------|-------------------|-------------|
 | searchCriteria | | DiscountsSearchCriteria | Required | |
 | | ChannelId | long | Required | |
@@ -267,9 +301,8 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 | | StartDate | DateTimeOffset | Required | The starting date (inclusive). |
 | | EndDate | DateTimeOffset | Required | The ending date (inclusive). |
 
-
 <details>
-    <summary>Sample request</summary>
+    <summary>Sample request body</summary>
 
 ```json
 {
@@ -526,5 +559,191 @@ The following table shows the input parameters for the *RemoveCoupons* API.
 |-------------|------|-------------------|-------------|
 | key         | string | Required | The cart ID. |
 | couponCodes | IEnumerable\<string\> | Required | The coupon codes to remove from the cart. |
+
+## GetProductPromotions
+
+The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts, and can also take a list of product discount IDs and pricing context as input and query the associated promotional products. The main use case for the *GetProductPromotions* API is on product listing pages, where retailers showcase products with discounts. This API supports both the property-base pricing model and the legacy pricing model.
+
+The following table shows the input parameters for the *GetProductPromotions* API.
+
+| Name                                    | Subname | Type | Required/Optional | Description |
+|-----------------------------------------|----------|------|-------------------|-------------|
+| productDiscountIds                      | | IEnumerable\<string\> | Required | The list of product discount ids to look for promotional products. |
+| priceLookupContext                      | | PriceLookupContext | Required | The context for pricing. |
+| activeDate                              | | DateTimeOffset | Optional | The date when promotion is considered. |
+
+Restrictions and limitations:
+
+- Can only take a maximum of five product discount IDs as input.
+- Only simple discounts are supported.
+
+<details>
+    <summary>Sample request body</summary>
+
+```json
+{
+    {
+    "productDiscountIds": 
+    [
+        "ST100009",
+        "ST100024"
+    ],
+    "priceLookupContext": 
+    {
+        "HeaderContext": 
+        {
+            "AffiliationLoyaltyTierLines": 
+            [
+                {
+                    "AffiliationId": 5637144577,
+                    "LoyaltyTierId": 0, 
+                    "AffiliationTypeValue": 0,
+                    "ReasonCodeLines": [],
+                    "CustomerId": "2001"
+                }
+            ]
+        },
+        "LineContexts": []
+    },
+    "activeDate": "2023-08-20T14:40:05.873+08:00",
+    },
+}
+```
+
+</details>
+
+<details>
+    <summary>Sample response body</summary>
+
+```json
+{
+    "value": 
+    [
+        {
+            "ProductId": 68719489871,
+            "ProductDiscounts":
+            [
+                {
+                    "OfferId": "ST100009",
+                    "OfferName": "Student discount",
+                    "PeriodicDiscountTypeValue": 2,
+                    "IsDiscountCodeRequired": false,
+                    "ValidationPeriodId": null,
+                    "AdditionalRestrictions": null,
+                    "Description": "Students get 10% off on Jeans and Backpacks",
+                    "ValidFromDate": "1900-01-01T00:00:00.0000000Z",
+                    "ValidToDate": "2154-12-31T00:00:00.0000000Z",
+                    "CouponCodes": [],
+                    "DateValidationTypeValue": 1
+                },
+                {
+                    "OfferId": "ST100024",
+                    "OfferName": "Weekly ad",
+                    "PeriodicDiscountTypeValue": 2,
+                    "IsDiscountCodeRequired": false,
+                    "ValidationPeriodId": null,
+                    "AdditionalRestrictions": null,
+                    "Description": "",
+                    "ValidFromDate": "1900-01-01T00:00:00.0000000Z",
+                    "ValidToDate": "2154-12-31T00:00:00.0000000Z",
+                    "CouponCodes": [],
+                    "DateValidationTypeValue": 1
+                }
+            ]   
+        },
+        {
+            "ProductId": 68719489872,
+            "ProductDiscounts":
+            [
+                {
+                    "OfferId": "ST100009",
+                    "OfferName": "Student discount",
+                    "PeriodicDiscountTypeValue": 2,
+                    "IsDiscountCodeRequired": false,
+                    "ValidationPeriodId": null,
+                    "AdditionalRestrictions": null,
+                    "Description": "Students get 10% off on Jeans and Backpacks",
+                    "ValidFromDate": "1900-01-01T00:00:00.0000000Z",
+                    "ValidToDate": "2154-12-31T00:00:00.0000000Z",
+                    "CouponCodes": [],
+                    "DateValidationTypeValue": 1
+                }
+            ]   
+        }
+    ]
+}
+```
+
+</details>
+
+For more information, see [PriceLookupContext](#pricelookupcontext).
+
+### PriceLookupContext
+
+The PriceLookupContext class is used for the property-base pricing model in the *GetProductPromotions* and *GetActivePrices* APIs.
+
+The structure of the PriceLookupContext class is shown in the following example.
+
+```
+{
+    HeaderContext: PriceLookupHeaderContext
+    {
+        CustomerAccountNumber: string
+        AffiliationLoyaltyTierLines: IEnumerable<AffiliationLoyaltyTier>
+        ChannelId: long?
+        SalesOrderProperties: IEnumerable<AttributeValueBase>
+    },
+    LineContexts: IEnumerable<PriceLookupLineContext>
+    [
+        {
+            ProductRecordId: string
+            UnitOfMeasureSymbol: string
+            InventorySiteId: string
+            InventoryLocationId: string
+            DeliveryMode: string
+            CatalogId: string
+            SalesLineProperties: IEnumerable<AttributeValueBase>
+        },
+    ]
+}
+```
+
+<details>
+    <summary>Sample request body</summary>
+
+```json
+"PriceLookupContext":
+{
+    "HeaderContext": 
+    {
+        "CustomerAccount": 2001,
+        "AffiliationLoyaltyTierLines": 
+        [
+            {
+                "AffiliationId": 5637144577,
+                "LoyaltyTierId": 0, 
+                "AffiliationTypeValue": 0,
+                "ReasonCodeLines": [],
+                "CustomerId": "2001"
+            }
+        ],
+        "SalesOrderProperties":
+        [
+            {
+                "@odata.type": "#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue",
+                "Name": "CalcDate",
+                "TextValue": "2022-10-10"
+            }
+        ]
+    },
+    "LineContexts": []
+}
+```
+
+</details>
+
+> [!NOTE]
+> - There isn't a customer group specified in the PriceLookupHeaderContext paramter becuase it had be inferred by the customer account number.
+> - The ChannelId can be specified in the PriceLookupHeaderContext parameter. If it isn't specified, the ChannelId from the request context (the current channel when using Store Commerce) is used.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -6,8 +6,7 @@ description: This article explains how to remove an Application Object Server (A
 author: ttreen
 ms.date: 07/28/2021
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
