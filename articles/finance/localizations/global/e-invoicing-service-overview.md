@@ -1,15 +1,15 @@
 ---
 title: Electronic invoicing overview
 description: This article provides an overview of Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: gionoder
-ms.date: 01/21/2022
+author: ilikond
+ms.date: 02/12/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.collection: get-started
@@ -20,6 +20,7 @@ ms.search.form:
 # Electronic invoicing overview
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 Electronic invoicing for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is a hyper-scalable multitenant service that enables configurable processing of electronic invoices and configurable electronic document exchange. The processing and integration rules are fully configurable, and the logic is run outside Finance and Supply Chain Management. The service is targeted mainly at processing of electronic invoice documents in business-to-government scenarios. However, it can be custom configured for other purposes, such as business-to-business scenarios for different types of the documents.
 
@@ -77,7 +78,7 @@ Electronic invoicing is deployed in the following Azure geographies:
 
 - Handling of responses from web services, including configurable handling of exception messages
 - Support for electronic signatures (for example, electronic signatures that use the XMLDSig signing algorithm)
-- The capability to sending documents to emails and store them in SharePoint
+- The capability to send documents to emails and store them in SharePoint
 - Batch processing of electronic invoice messages
 - Configurable transformation of incoming documents, and processing of those documents in Finance and Supply Chain Management
 - The capability to receive incoming documents from channels such as email and SharePoint

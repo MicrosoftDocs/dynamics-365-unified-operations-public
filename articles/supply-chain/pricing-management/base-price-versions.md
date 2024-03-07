@@ -1,5 +1,5 @@
 ---
-title: Base price versions
+title: Base price versions (preview)
 description: This article describes how base price versions work in Pricing management.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Base price versions
+# Base price versions (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

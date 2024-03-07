@@ -6,8 +6,7 @@ description: This article explains how to configure Microsoft SQL Server Reporti
 author: faix
 ms.date: 02/08/2023
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

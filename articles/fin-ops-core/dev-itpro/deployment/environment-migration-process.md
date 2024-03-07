@@ -42,7 +42,7 @@ Be sure to review the [availability of features in the selected target geography
 - We recommend that you migrate sandbox environments first and validate them before you trigger a production migration.
 - Environment migrations aren't self-service operations and require a customer-initiated support ticket.
 - Create your support request for migration at least 10 days before you want the environment to be migrated.
-- The overall migration activity requires up to 48 hours of downtime. The overall time varies, depending on connectivity between the two geographies, and on the database and storage account size.
+- The overall migration activity requires up to 6 hours of downtime. The overall time varies, depending on connectivity between the two geographies, and on the database and storage account size.
 
 ### Geo migration between Lifecycle Services endpoints
 

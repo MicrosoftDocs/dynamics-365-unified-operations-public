@@ -4,7 +4,7 @@
 title: Payroll integration API introduction
 description: This article describes the Dynamics 365 Human Resources Payroll integration API.
 author: twheeloc
-ms.date: 02/03/2021
+ms.date: 02/03/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
+
+>[!NOTE]
+>For the payroll integration to work, the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight must be enabled. To enable this flight, reach out to Microsoft support.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

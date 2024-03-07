@@ -18,7 +18,6 @@ audience: IT Pro
 # 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

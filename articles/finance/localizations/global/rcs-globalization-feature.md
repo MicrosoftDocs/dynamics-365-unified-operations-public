@@ -19,6 +19,7 @@ ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 # Regulatory Configuration Services (RCS) - Globalization features
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can use Microsoft Regulatory Configuration Services (RCS) to create a Globalization feature that can be used in Globalization services, such as an e-invoicing service. RCS lets you perform these tasks:
 

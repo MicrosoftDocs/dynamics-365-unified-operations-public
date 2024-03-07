@@ -1,26 +1,31 @@
 ---
-title: Work with the Electronic document receipt log
-description: This article explains how to work with the Electronic document receipt log.
-author: gionoder
-ms.date: 02/14/2022
+title: Receive electronic documents
+description: This article explains how to work with incoming electronic documents.
+author: ilikond
+ms.date: 02/12/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
 ms.search.form: 
 ---
 
-# Work with the Electronic document receipt log
+# Receive electronic documents 
 
 [!include [banner](../../includes/banner.md)]
 
-In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, you can use the receipt log to view the results of the processing of incoming documents.
+In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, follow these steps to receive electronic invoices.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
+2. Select **OK**, and then close the page.
+
+You can use the receipt log to view the results of the processing of incoming documents.
 
 To open the log, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
@@ -42,3 +47,5 @@ The receipt log includes the following additional commands:
 - **Inquiries** \> **Submission details** – View the details of the main submission. The visualization shows the complete execution log of the actions that are configured in the electronic invoicing feature. You can download the files that are created as a result of each action during the processing. When the invoice must be approved by an external web service, you can view the status of the invoice.
 
 Processing data contains variables that are sent to the Electronic invoicing service or returned from it. You can review the value of these variables.
+
+To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.

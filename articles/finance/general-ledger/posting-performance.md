@@ -4,7 +4,7 @@
 title: Financial journal posting performance 
 description: The article suggests ways to troubleshoot performance issues when you post financial journals. For example, you can adjust the number sequence setup and limit journal lines.
 author: Livbjerg
-ms.date: 08/24/2023
+ms.date: 02/24/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,7 @@ For more information about preallocation of number sequences, see [Number sequen
 
 ### Run journal posting in batch mode
 
-We recommend that you post journals in the background as a batch job. Journal posting in batch mode can improve performance in several ways:
+We recommend that you post journals in the background as a batch job. Journal posting in batch mode uses a [top picking pattern](../../fin-ops-core/dev-itpro/perf-test/batch-para-multi-thread.md) and can improve performance in several ways:
 
 - Because it runs in the background, users can continue to work on other tasks while the journal is being processed.
 - It supports parallel processing.
@@ -100,7 +100,7 @@ The **Lines limit** value on a journal enables parallel processing when journals
 Splitting a journal works best for vouchers that have a smaller number of lines. A voucher can't be split across journals. The **Original journal No.** field on a journal indicates the journal that it was split from. The **Lines limit** field can be set for a journal name. The value is then used by default for all journals that are created that have that journal name.
 
 > [!NOTE]
-> In Dynamics 365 Finance version 10.0.36, financial journals supports auto-split of large journals with threshold value of 1000 lines per journal. Journals with lines more than 1000 will post as part of the batch job and will be split into 1000 lines per journal. For more information, see [Autosplit of large financial journals](auto-split-journal.md).   
+> In Dynamics 365 Finance version 10.0.36, financial journals supports auto-split of large journals with a threshold value of 1,000 lines per journal. Journals with more than 1,000 lines will be posted as part of the batch job and will be split into 1,000 lines per journal. For more information, see [Autosplit of large financial journals](auto-split-journal.md).   
 
 #### Voucher size
 

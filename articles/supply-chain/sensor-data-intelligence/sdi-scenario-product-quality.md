@@ -1,5 +1,5 @@
 ---
-title: Product quality scenario
+title: Product quality scenario (preview)
 description: This article provides information about the product quality scenario. This scenario uses a sensor to measure the quality of a product batch and generates an alert if a measurement falls outside a defined threshold.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,13 +13,15 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Product quality scenario
+# Product quality scenario (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 In the *product quality* scenario, a sensor is set up to measure the quality of a product batch on the shop floor. If a measurement falls outside a defined threshold for the product, a notification is shown on the supervisor's dashboard. For example, a sensor is measuring the moisture of a food product that comes out of the production line. If the measurement is outside the allowed minimum or maximum value for moisture for the product, a notification is generated.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Scenario dependencies
 

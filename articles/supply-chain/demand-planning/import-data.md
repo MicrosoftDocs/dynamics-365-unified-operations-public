@@ -1,5 +1,5 @@
 ---
-title: Import data into Demand planning
+title: Import data into Demand planning (preview)
 description: This article describes how to import data from different sources and file types, and also data that is stored in a Microsoft Azure data lake.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Import data into Demand planning
+# Import data into Demand planning (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -26,6 +26,8 @@ The Demand planning app lets you build a collection of *import profiles*. Each p
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to update the data as they require.
 
 In addition, you can use the standard user interface (UI) to import your custom data entities into custom tables or add custom fields that you've extended in the standard tables. No developer is required.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## <a name="existing-import-profiles"></a>View and run existing data import profiles
 
