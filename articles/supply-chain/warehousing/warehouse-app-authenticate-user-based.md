@@ -81,7 +81,7 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. Select **Add a permission**.
 1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
 1. On the left navigation pane, select **Microsoft Entra ID**.
-1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select the **All applications** tab.
+1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select **All applications**.
 1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
 1. In the **Manage** list, select **Properties**.
 1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
@@ -89,8 +89,9 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. On the toolbar, select **Add user/group**.
 1. On the **Add Assignment** page, select the link under the **Users** heading.
 1. In the **Users** dialog box, select each user that you'll use to authenticate devices with Supply Chain Management.
+1. Select **Select** to apply your settings and close the dialog. Then select **Assign** to apply your settings and close the **Add Assignment** page.
 1. In the **Security** list, select **Permissions**.
-1. Select **Grand admin consent for *your tenant*** and grant admin consent on behalf of your users. If you lack the necessary permissions, return to the **Manage** list, open **Properties**, and set the **Assignment required?** option to *False*. Subsequently, each user will be able to provide consent individually.
+1. Select **Grant admin consent for *your tenant*** and grant admin consent on behalf of your users. If you lack the necessary permissions, return to the **Manage** list, open **Properties**, and set the **Assignment required?** option to *False*. Subsequently, each user will be able to provide consent individually.
 
 For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
 
@@ -101,6 +102,18 @@ For more information about how to set up web service applications in Microsoft E
     - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="user-azure-ad"></a>Set up a mobile device user account in Supply Chain Management
+
+<!-- KFM:
+
+I think we should move this section to [Mobile device user accounts](mobile-device-work-users.md) because we already need a "person" account (in HR), which is what links the SCM user to the Warehouse worker account. That article is where we mention that we need a "person" account (employee or worker). That would also keep the SCM setup in one article and the Entra ID setup in this article. In addition, this section should probably do the following:
+
+- Explain that the reader should either create one SCM user for each device or one SCM user for each human worker, depending on the scenario they are using.
+- Point out that the SCM user account needs to specify a related **Person** (representing either a human worker or a device) and (I think) the same **Email** as the related Entra ID account. I think this email is the link between Entra ID and SCM user accounts.
+- Describe each other field here (User ID, User name (what's the difference?), Provider, Telemetry ID, and Company) 
+- Mention that the next step is to set up a warehouse worker account for each SCM User we create here, and that each warehouse worker account must use the **Person** (unhelpfully called **Worker** on that form) that applies.
+- Mention that the setup is slightly different for service-based authentication, and just link to that article for details, while also recommending against using that deprecated method going forward.
+
+-->
 
 Create a user that corresponds to the user credentials for the Warehouse Management mobile app.
 
@@ -121,7 +134,7 @@ SSO enables users to sign in without having to enter a password. It works by reu
 
 The procedure in [Create a web service application in Microsoft Entra ID](#create-service) describes all the settings that are required to prepare your system to use SSO. However, to use SSO, you must also follow one of these steps, depending on how you configure the connection.
 
-- If you *manually configure the connection* in the Warehouse Management mobile app, you must enable the **Brokered Authentication** option on the application's [connection edit [page]](install-configure-warehouse-management-app.md#config-manually).
+- If you *manually configure the connection* in the Warehouse Management mobile app, you must enable the **Brokered Authentication** option on the mobile app's [**Edit connection** page](install-configure-warehouse-management-app.md#config-manually).
 - If you *configure the connection by using a JavaScript Object Notation (JSON) file or QR code*, you must include `"UseBroker": true` in your [JSON file or QR code](install-configure-warehouse-management-app.md#connection-file-qr).
 
 > [!IMPORTANT]
