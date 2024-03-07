@@ -113,6 +113,8 @@ I think we should move this section to [Mobile device user accounts](mobile-devi
 - Mention that the next step is to set up a warehouse worker account for each SCM User we create here, and that each warehouse worker account must use the **Person** (unhelpfully called **Worker** on that form) that applies.
 - Mention that the setup is slightly different for service-based authentication, and just link to that article for details, while also recommending against using that deprecated method going forward.
 
+(Link to manage Entra ID accounts assigned to an enterprise application in the Azure portal: https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/assign-user-or-group-access-portal?pivots=portal)
+
 -->
 
 Create a user that corresponds to the user credentials for the Warehouse Management mobile app.
