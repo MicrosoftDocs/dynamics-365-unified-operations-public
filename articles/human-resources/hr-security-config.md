@@ -123,7 +123,7 @@ The call from the Dataverse Virtual entity plugin to Finance or Human Resources 
 
 Finance and Human Resources security is managed in the following ways:
 
-1. By mapping the adapter identity (\<guid A\>) to a specific Finance or Human Resources user. This mapping is done on the **Azure active directory applications** page. For more information, see [Register your external application](../fin-ops-core/dev-itpro/data-entities/services-home-page.md#register-your-external-application.md).
+1. By mapping the adapter identity (\<guid A\>) to a specific Finance or Human Resources user. This mapping is done on the **Azure active directory applications** page. For more information, see [Register your external application](../fin-ops-core/dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 2. By granting the Finance or Human Resources user the appropriate application-level roles, duties, and privileges. For more information, see [Role-based security](../fin-ops-core/dev-itpro/sysadmin/role-based-security.md).
 
 If the adapter application (\<guid A\>) is granted the privileges that are required to access the requested data, the following events occur:
