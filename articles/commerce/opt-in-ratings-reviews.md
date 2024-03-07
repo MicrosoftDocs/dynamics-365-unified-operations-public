@@ -9,12 +9,10 @@ ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+
 ---
 
 # Opt in to use ratings and reviews
