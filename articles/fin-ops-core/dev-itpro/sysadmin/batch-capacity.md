@@ -51,7 +51,7 @@ The lower load threshold signifies the point at which the service scales in. If 
 Conversely, the upper load threshold indicates when the service scales out. If the average load exceeds this threshold, the service scales out.
 
 > [!NOTE]
-> - For Batch Auto Scaling to work, your environment should be have [Batch Priority based scheduling](priority-based-batch-scheduling.md) enabled and your PU should be 10.0.26 (PU 50) or higher.
+> - For Batch Auto Scaling to work, your environment should have [Batch Priority based scheduling](priority-based-batch-scheduling.md) enabled and your PU should be 10.0.26 (PU 50) or higher.
 > - Once Batch Auto Scaling is activated for the environment, the platform will periodically adjust the thread count for each server as per Batch Capacity. Any manual alterations to the thread count will be disregarded and overridden by the platform's automated processes.
 
 
@@ -65,4 +65,4 @@ This approach ensures that the total active threads for your environment remain 
 
 ## How to increase Batch Capacity
 
-To increase the Batch Capacity, you need to acquire more user licenses. With updated user licenses, we automatically augment the Batch Capacity by adjusting the thread count per existing server. Additionally, the platform adds more Batch Servers once the existing Batch Servers reach their threshold limits of CPU/Memory.
+To increase the Batch Capacity, you need to acquire more user licenses and update subscription estimates in Microsoft Dynamics Lifecycle Services (LCS). With updated user licenses, we automatically augment the Batch Capacity by adjusting the thread count per existing server. Additionally, the platform adds more Batch Servers once the existing Batch Servers reach their threshold limits of CPU/Memory.
