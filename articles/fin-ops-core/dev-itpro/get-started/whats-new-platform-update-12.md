@@ -45,20 +45,20 @@ The 'bring your own database' feature, also called BYOD, enables incrementally e
 
 You can now use SQL database triggers in your own database, for data that is exported or BYOD. This allows for downstream processes to easily integrate with the BYOD processes.
 
-## Export B2B users to Azure AD
+## Export B2B users to Microsoft Entra ID
 
-You can automatically export business-to-business (B2B) users to Azure Active Directory (Azure AD).
+You can automatically export business-to-business (B2B) users to Microsoft Entra ID.
 
-In the past, B2B users were exported manually to a .csv file. Then the Azure AD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal.
+In the past, B2B users were exported manually to a .csv file. Then the Microsoft Entra tenant administrator had to use this file to manually add the users to Microsoft Entra using the Azure portal.
 
-To enable the automatic export feature, a one-time setup and configuration process must be completed. When the process is completed, you can use the Provision new user workflow task to automatically export B2B users to Azure AD.
+To enable the automatic export feature, a one-time setup and configuration process must be completed. When the process is completed, you can use the Provision new user workflow task to automatically export B2B users to Microsoft Entra ID.
 
 The one-time set up and configuration means that you'll need to:
 
-- Set up a B2B invitation service application in Azure AD.
+- Set up a B2B invitation service application in Microsoft Entra ID.
 - Configure the B2B invitation service settings in finance and Operations.
 
-For more information, see [Export business-to-business (B2B) users to Azure Active Directory](../sysadmin/implement-b2b.md).
+For more information, see [Export business-to-business (B2B) users to Microsoft Entra ID](../sysadmin/implement-b2b.md).
 
 ## Personalizations can easily be shared with one or more roles in your organization
 

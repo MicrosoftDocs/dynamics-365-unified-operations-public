@@ -56,7 +56,9 @@ Because the Warehouse Management mobile app has read/write access to some of you
 
 After a device is authenticated with Finance + Operations (on-premises), each worker who uses that device signs in by using their Finance + Operations (on-premises) worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Finance + Operations (on-premises).
 
+
 For details about each authentication method and how to set it up, see the following articles:
+
 
 - **User-based authentication:** [User-based authentication for the Warehouse Management mobile app](warehousing-onprem-serviceauth.md)
 - **Service-based authentication (deprecated):** [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
@@ -195,4 +197,3 @@ The application connects to Finance + Operations (on-premises), and the sign-in 
 > In older releases, if you don't have a telemetry ID for the Warehousing app user, you might encounter some errors. The workaround is to sign in to Finance + Operations (on-premises) through the web client to get a telemetry ID.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
