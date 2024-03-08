@@ -23,8 +23,6 @@ Dynamic positive days help increase your sales order fulfillment rate by using o
 
 This strategy allows sales orders that are created later, but requested earlier, than another sales order to use existing purchase orders. It lets you fulfill all demand while better managing your supply and delivery dates (including when using capable to promise).
 
-<!--KFM: Definitions of "positive days" and "dynamic positive days" are needed. Make it clear how they are different. Link to [Master plans overview](master-plans.md)-->
-
 The system doesn't only use the lead time when deciding which supply to peg. Outside of the lead time, it also takes into account the positive days. The number of positive days that apply for a given item are set on its item coverage group, and this value can be overwritten at the master plan level. This strategy allows certain master plans to have a higher number of positive days than others, allowing different plans to be used for capable-to-promise than for day-to-day business.
 
 ## Prerequisites
@@ -32,7 +30,7 @@ The system doesn't only use the lead time when deciding which supply to peg. Out
 To use dynamic positive days, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
-- The feature that is named *Dynamic positive days for Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Dynamic positive days for Planning Optimisation* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up your system to use dynamic positive days
 
@@ -52,12 +50,6 @@ Follow these steps to assign the number of positive days to an item coverage gro
 1. Go to **Master planning \> Setup \> Coverage \> Coverage groups**.
 1. Select an existing coverage group or create a new one.
 1. On the **General** FastTab, set **Positive days** to the number of days that you want to use for this coverage group.
-
-## Assign the number of dynamic positive days to a master plan
-
-1. Go to **Master planning \> Setup \> Plans \> Master plans**.
-1. Select an existing plan or create a new one.
-1. <!--KFM: I expected to find a setting here, but I didn't. How do we override positive days at the master plan level? -->
 
 ## Example scenarios
 
@@ -79,8 +71,6 @@ The following scenario shows how the system handles demand requested for inside 
 1. The system therefore pegs the new sales order to the existing purchase order because the requested ship date is within the lead time.
 
 :::image type="content" source="media/dynamic-pos-days-scenario-1.png" alt-text="Timeline for example scenario 1":::
-
-<!--KFM: We should convert this image to SVG. Is the original (PPT?) available? -->
 
 ## Example scenario 2: Demand outside of the lead time
 
@@ -109,8 +99,6 @@ The following scenario shows how the system handles demand requested for outside
 
 :::image type="content" source="media/dynamic-pos-days-scenario-2.png" alt-text="Timeline for example scenario 2":::
 
-<!--KFM: We should convert this image to SVG. Is the original (PPT?) available? -->
-
 ## Example scenario 3: Sales order within the positive days but outside of the lead time
 
 The following scenario shows how the system handles demand requested within the positive days but outside of the lead time.
@@ -135,5 +123,3 @@ The following scenario shows how the system handles demand requested within the 
     - Peg SO2 against the existing PO2.
 
 :::image type="content" source="media/dynamic-pos-days-scenario-3.png" alt-text="Timeline for example scenario 3":::
-
-<!--KFM: We should convert this image to SVG. Is the original (PPT?) available? -->

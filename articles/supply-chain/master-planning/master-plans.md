@@ -133,12 +133,6 @@ The positive days also affect the action messages. For example, the system might
 
 As a rule, the positive days are set to a number that is between the longest lead time of the items and the coverage time fence. We recommend that you assign items that are regularly procured or produced to a coverage group where the positive days equal the item's lead time.
 
-<!-- KFM: Section needed with link to  [Dynamic positive days for last-minute orders](dynamic-positive-days.md)
-
-### Dynamic positive days
-
--->
-
 ### Negative days
 
 Negative days indicate how late item receipts will be allowed. They represent the number of days that you're willing to wait before you order new replenishment when you have negative inventory or don't have enough inventory. Negative days answer the question, Should we create a new purchase order for the item, or should we use an existing purchase, even though we know that the item will be late?
