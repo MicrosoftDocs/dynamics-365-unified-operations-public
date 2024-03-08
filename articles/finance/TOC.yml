@@ -1610,6 +1610,8 @@
             items: 
             - name: Setting up Electronic Invoicing
               href: localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance  
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
@@ -1648,18 +1650,14 @@
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
             - name: Electronic Invoicing service ISV last-mile connector
               href: localizations/global/e-invoicing-isv-connector.md
-          - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+          - name: Work with Electronic invoicing
             items: 
-            - name: Set up Electronic Invoicing parameters
-              href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
-            - name: Work with Electronic Invoicing
-              items:
-              - name: Submit electronic documents
-                href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
-              - name: Work with the Electronic documents submission log
-                href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
-              - name: Receive electronic documents
-                href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
+            - name: Submit electronic documents
+              href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
+            - name: Work with the Electronic documents submission log
+              href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+            - name: Receive electronic documents
+              href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features

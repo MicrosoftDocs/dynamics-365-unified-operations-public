@@ -1848,6 +1848,8 @@ items:
           href: sysadmin/batch-processing-overview.md
         - name: Batch processing and batch servers
           href: sysadmin/batch-server-overview.md
+        - name: Batch Capacity
+          href: sysadmin/batch-capacity.md
         - name: Create batch jobs
           href: ../fin-ops/sysadmin/create-batch-job.md
         - name: Enable batch retries

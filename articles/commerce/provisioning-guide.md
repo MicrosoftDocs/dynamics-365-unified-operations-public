@@ -37,8 +37,8 @@ The following prerequisites must be in place before you can provision your Comme
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and have an implementation project already created and available to use in LCS.  
-- You have created an Azure Active Directory (Azure AD) security group that can be used as a Commerce system administrator group, and you have its ID available.
-- You have created an Azure AD security group that can be used as a ratings and reviews moderator group, and you have its ID available. (This security group can be the same as the Commerce system administrator group.)
+- You have created a Microsoft Entra security group that can be used as a Commerce system administrator group, and you have its ID available.
+- You have created a Microsoft Entra security group that can be used as a ratings and reviews moderator group, and you have its ID available. (This security group can be the same as the Commerce system administrator group.)
 - You have deployed a headquarters instance within LCS. For more information, see [Deploy a new environment](/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure).
 
 Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
@@ -75,8 +75,8 @@ To initialize Commerce, follow these steps.
 
 1. Select **Next** to continue.
 1. In the **Supported host names** field, enter any valid domain, such as `www.fabrikam.com`.
-1. In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
-1.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
+1. In the **Microsoft Entra security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
+1.	In the **Microsoft Entra security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results. Select the correct security group in the list.
 1. Leave the **Enable ratings and review service** option set to **Yes**.
 1. Select **Initialize**. The **Commerce management** view displays again, where the **e-Commerce** tab is selected. E-Commerce initialization has started.
 1. Before you continue, wait until the status of Commerce initialization is **INITIALIZATION SUCCESSFUL**.

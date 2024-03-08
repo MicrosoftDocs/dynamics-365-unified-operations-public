@@ -9,9 +9,9 @@ ms.technology:
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jashanno
+ms.author: stuharg
 ms.search.validFrom: 2019-03-01
-ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
+ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfile
 ---
 
 # Select an in-store topology
