@@ -5,7 +5,7 @@ author: pnghub
 ms.author: gned
 ms.reviewer: johnmichalak
 ms.topic: conceptual
-ms.date: 2/16/2024
+ms.date: 03/08/2024
 ms.custom:
 
 ---
@@ -68,7 +68,7 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 Finance and Operations archive jobs can be scheduled from the archive workspace for supported functional scenarios using the new long term retention job wizard. 
 - While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process runs during the scheduled window. The other asynchronous archive processes for Dataverse long term retention occur continuously even outside of the scheduled duration.
 - Only one archive job across all scenarios runs at any given point of time.  The scheduled job starts running only after the previous archive job completes.
-> Known Issue: When submitting a new archive job first time, you may see this error - "An error occured while accessing the archive service. Please check your archive service installation". Workaround - Wait for 15 minutes before re-submitting the archive job.
+> Known Issue: When submitting a new archive job for the first time, you may see this error **An error occured while accessing the archive service. Please check your archive service installation**. Workaround - Wait for 15 minutes before re-submitting the archive job.
 
 ## View archive job progress
 
