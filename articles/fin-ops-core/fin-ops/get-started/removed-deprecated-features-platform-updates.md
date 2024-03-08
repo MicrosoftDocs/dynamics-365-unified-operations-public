@@ -43,7 +43,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Entra ID) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
+| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Entra ID tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. It implies any alias other than, for example, user@contoso.com (service to service or interactive) in the Contoso tenant context doesn't have access to Contoso's Dynamics 365 finance and operations environment.|
 | **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Microsoft Entra admin center. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
@@ -325,7 +325,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | Visual Studio 2017 replaces Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: After updating to version 10.0.17, the previous X++ tools are removed from Visual Studio 2015, and the updated tools won't install on Visual Studio 2015. There isn't an impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../../dev-itpro/dev-tools/pipeline-msbuild-update.md). |
+| **Status**                         | Deprecated: After you update to version 10.0.17, the previous X++ tools are removed from Visual Studio 2015, and the updated tools won't install on Visual Studio 2015. There isn't an impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../../dev-itpro/dev-tools/pipeline-msbuild-update.md). |
 
 ### User avatar 
 
@@ -431,7 +431,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 ## Platform updates for version 10.0.12 of finance and operations apps
 
-### Grid or group control form extensions containing invalid field references
+### Grid or group control from extensions containing invalid field references
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
