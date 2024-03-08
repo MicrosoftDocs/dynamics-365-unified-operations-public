@@ -23,7 +23,27 @@ The changes are introduced to allow companies to have a seamless prospect lifecy
 These changes are intended to be used only in the context of prospect-to-cash integration between Microsoft Dynamics 365 Sales and Microsoft Dynamics 365 Supply Chain Management.
 
 ## Enable prospect in prospect-to-cash with Microsoft Dynamics 365 Sales
-In order to leverage prospect integration **
+In order to leverage prospect integration apart from a the required SCM dual write solution [Link below to the enable and configure...] use the [Feature management](../get-started/feature-management/feature-management-overview.md) workspace to turn on the feature in the following table. 
+
+| Feature | Required or optional | Description |
+|---|---|---|
+| *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* | Required | <p>This feature enables the integration of prospects between Dynamics 365 Sales and Supply Chain management over dual-write. Prospects in Supply Chain Management integrate with account type "prospect" in Dynamics 365 Sales. The lifecycle of a prospect from creation to converting into a customer is supported from both Dynamics 365 Sales and Supply Chain Management and is seamlessly integrated into the quotation winning process. With this feature, it is possible to use the prospect on a quotation in Supply Chain Management and as a potential customer in Dynamics 365 Sales. After you enable this feature, you can turn the functionality on or off by using the **Integrate quotation lifecycles** option on the **Accounts receivable parameters** page (as described in the next section).</p> |
+
+## <a name="config-parameters"></a>Configure prospect in prospect-to-cash with Micsoroft Dynamics 365 Sales
+After you've completed the initial setup, you need to configure the feature that you enabled in the previous section. For initial setup, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).</p><p>
+
+To open the configuration settings, follow these steps.
+
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. On the **Dynamics 365 Sales integration** tab, set the fields that are described in the following table. A tooltip is also provided for each field on the page.
+
+    | FastTab | Field | Required features | Description |
+    |---|---|---|---|
+ | **General** | **Enable prospects** | <p>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p><p>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p> | <p>Enable or disable the functionality that's added by the *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* feature. This option requires Supply Chain Management version 10.0.39 or later. p> |
+
+ > [!NOTE]
+    > The **Enable prospects** settting can only be set to yes, when the **Integrate quotation lifecycles** is yes. The **Integrate quotation lifecycles** setting available when feature *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* is turned on. </p><p>For more information about this functionality, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).</p><p>
+
 
 ## Definition of a prospect in prospect-to-cash with Dynamics 365 Sales
 A prospect in Microsoft Dynamics 365 Sales is an account of type Prospect. From an integration perspective, a lead in neither Microsoft Dynamics 365 Sales nor in Microsoft Dynamics 365 Supply Chain management is considered a prospect. A prospect in Microsoft Dynamics 365 Supply Chain Management is a business relation with the business relation type Prospect, while a prospect inMicrosoft Dynamics 365 Sales is an account of type prospect. The feature _Enable prospect in sales quotation lifecycle with Dynamics 365 Sales_ covers the lifecycle integration of Microsoft Dynamics 365 Sales account type Prospect and Microsoft Dynamics 365 SCM business relation, business relation type Prospect.
