@@ -3,7 +3,7 @@
 
 title: Troubleshoot service authentication issues
 description: This article provides some tips for troubleshooting issues that involve service authentication.
-author: nimakms
+author: pnghub
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: gned
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
