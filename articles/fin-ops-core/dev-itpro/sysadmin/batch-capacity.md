@@ -50,7 +50,7 @@ For example, where your environment comprises six Batch Servers, each with eight
 
 If your environment encounters elevated CPU and Memory usage on Batch Servers, the platform may introduce another Batch server while decreasing the thread count per server to seven. This action ensures that even with seven batch servers, the total thread count remains consistent at 49, closely aligning with the initial count of 48.
 
-Conversely, when Batch Server CPU and Memory utilization is low, platform may opt to remove two servers while increasing the thread count per server to 12, maintaining a total of 48 threads.
+Conversely, when Batch Server CPU and Memory utilization are low, platform may opt to remove two servers while increasing the thread count per server to 12, maintaining a total of 48 threads.
 
 This approach ensures that the total active threads for your environment remain constant while optimizing the number of Batch Servers, thus ensuring appropriate allocation of infrastructure resources. 
 
