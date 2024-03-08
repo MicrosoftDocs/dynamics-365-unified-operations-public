@@ -34,7 +34,7 @@ To prepare your environment to archive data, follow these steps.
 
 To archive data, follow these steps to confirm that the Dataverse archive add-in can be installed.
 
-1. In [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/applications), go to **Environments**, select the environment, and then select **Dynamics 365 apps**. 
+1. In [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/applications), go to **Environments**, select the environment, and then select **Dynamics 365 apps**. Ensure that the Power Platform environment is a [Managed Environment](/power-platform/admin/managed-environment-overview).
 1. Update the **Finance and operations virtual entity** app if the status is **Update available**.
 > [!Note]
 > Known Issue: [Download msft_DataArchivalBaseComponents](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/blob/main/Dataverse/msft_DataArchivalBaseComponents/README.md) component to enable Finance and Operation data to synch to Dataverse long term retention
