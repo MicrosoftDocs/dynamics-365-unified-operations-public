@@ -54,7 +54,6 @@ External users must be represented in your tenant directory (Azure Active Direct
 4. In the **User name** field, enter the user's name.  
 5. In the **Provider** field:
  - For internal users, use the defaulted value. For example, your Azure AD tenant prefixed with https://sts.windows.net/.  
- - For non-Azure AD users, such as Service-2-Service accounts, enter a basic text value. For example, NA. This value will help avoid incorrect authentication calls that might result in errors if a valid identity provider value is used.  
  - For external or guest users, add their Azure AD tenant name after https://sts.windows.net/.
 6. In the **Email** field, enter the user's full Email/User Principle Name.  
 7. In the **Company** field, select the default startup company for the user. 
@@ -64,6 +63,9 @@ The values for Identity provider and Telemetry ID will be updated based on a [Mi
 
 > [!NOTE]
 > After you add a user, you must assign roles and organizations as applicable. For more information, see [Assign users to security roles](assign-users-security-roles.md). Conditionally, it might also be required to associate the user with a **Person** and to update **User options** such as language.
+> 
+> From March 2024, non AAD users are not supported. It implies, any alias other than, for example, user@contoso.com (service to service or interactive) in the Contoso tenant context will not have access to Contoso's Dynamics 365 finance and operations environment.
+
 
 ## Change a user ID
 To change a user ID, you must rename the key in the database. When you change a user ID by using this procedure, all related user settings are modified to use the new user ID. For example, the usage information in the **SysLastValue** table is updated to reference the new user ID.
