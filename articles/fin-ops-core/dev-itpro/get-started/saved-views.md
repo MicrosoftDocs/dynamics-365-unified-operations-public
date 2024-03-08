@@ -51,12 +51,7 @@ After views have been made available for an environment, the top of any page tha
 There are two size variations to the view selector: 
 
 - **Large view selectors** – Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters and sorts. Because filters and sorts are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types. Grouping in a grid can also be saved to views on a page with large view selectors. 
-    
-    [![Large view selector that supports query modifications on the view.](../../fin-ops/get-started/media/views-largeViewSelector.png)](/media/views-largeViewSelector.png)
-
 - **Small view selectors** – All other full-screen pages (except workspaces and the dashboard) have a smaller view selector that appears next to the page caption. Views on these pages include only personalizations, not user-defined filters. On these pages, the caption or record title is often the most important information at the top of the page. The smaller size of the view selector also reflects the lower frequency of view switching that is expected on these pages. 
-    
-    [![Small view selector that does not support query modifications on the view.](../../fin-ops/get-started/media/views-smallViewSelector.png)](/media/views-smallViewSelector.png)
  
 If you select the view name, the view selector is opened and shows the list of available views for the page.
 
@@ -74,8 +69,6 @@ To switch to a different view, first open the view selector and then select the 
 Unlike traditional personalization, views aren't automatically saved when a user personalizes the page, or when a user applies a filter to a list or sorts it. An explicit action is required to save these changes to a view. This requirement gives users the flexibility to create a view before or after the changes that are associated with that view have been made. It also ensures that view definitions aren't unintentionally changed by one-time filters or personalizations. Note that typical page usage items (for example, column widths, or the expanded or collapsed state of sections) are automatically saved to the current view, even for locked views.
 
 To ensure that the current state of the view is known, when you start to change a view by personalizing or filtering it, an asterisk (\*) appears next to the current view name. This symbol indicates that you're looking at an unsaved, modified version of that view.
-
-[![Unsaved changes on a view.](../../fin-ops/get-started/media/views-unsavedChanges.png)](/media/views-unsavedChanges.png)
 
 If you want to save those changes, follow these steps.
 
