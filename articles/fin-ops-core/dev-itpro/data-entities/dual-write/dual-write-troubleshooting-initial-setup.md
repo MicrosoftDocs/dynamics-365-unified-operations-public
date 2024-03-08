@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
@@ -99,7 +99,7 @@ This error occurs because of the lack of a Power Apps license. Assign an appropr
 
 For more information about Power Apps license, see the following articles:
 
-- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users)
 - [Purchase Power Apps for your organization](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
