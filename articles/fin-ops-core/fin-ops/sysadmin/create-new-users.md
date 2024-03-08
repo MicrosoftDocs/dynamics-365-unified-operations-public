@@ -34,8 +34,8 @@ For information about how to buy and license for finance and operations apps, se
 ## Assign a license to a user
 System admins can [assign licenses to users](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) in the [Microsoft 365 admin center](/office365/admin/admin-overview/about-the-admin-center).
 
-## Add an external user in Microsoft Entra and assign a license 
-External users must be represented in your tenant directory (Microsoft Entra ID) so that they can be assigned licenses. Those external users should be added to the tenant in Microsoft Entra as guest users and then assigned the appropriate licenses. A requirement for finance and operations apps is that the guest user's company must use Microsoft Entra ID. For more information, see [Add Microsoft Entra B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
+## Add an external user in Entra ID and assign a license 
+External users must be represented in your tenant directory (Microsoft Entra ID) so that they can be assigned licenses. Those external users should be added to the tenant in Entra ID as guest users and then assigned the appropriate licenses. A requirement for finance and operations apps is that the guest user's company must use Entra ID. For more information, see [Add Entra ID B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
 
 ## Import new users from Microsoft Entra ID 
 1. Go to **System administration** \> **User** \> **Users**.
