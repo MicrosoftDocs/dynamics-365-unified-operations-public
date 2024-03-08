@@ -39,7 +39,11 @@ To open the configuration settings, follow these steps.
 
     | FastTab | Field | Required features | Description |
     |---|---|---|---|
- | **General** | **Enable prospects** | <p>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p><p>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p> | <p>Enable or disable the functionality that's added by the *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* feature. This option requires Supply Chain Management version 10.0.39 or later. p> |
+ | **General** | **Integrate prospects** | <p>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p><p>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p> | <p>Enable or disable the functionality that's added by the *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* feature. This option requires Supply Chain Management version 10.0.39 or later. p> |
+
+In the page, expand the fast tab _Prospect_. Set the _Default relation type_ to the default prospect type that you will set in Sales and Marketing>Setup>Sales and marketing parameters for prospects.
+
+Then navigate to Sales and Marketing>Setup>Sales and marketing parameters. Expand the _Prospects_ tab and for _Prospect defaults _in the _Type_ field select the type Prospect. Ensure that the Table source is Relation table. It is also recommended to set a default _Customer Group_ to allow for a seamless prospect to customer conversion process. 
 
  > [!NOTE]
     > The **Enable prospects** settting can only be set to yes, when the **Integrate quotation lifecycles** is yes. The **Integrate quotation lifecycles** setting available when feature *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* is turned on. </p><p>For more information about this functionality, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).</p><p>
