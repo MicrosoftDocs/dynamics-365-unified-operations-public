@@ -114,7 +114,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | Crash and dump analysis | Yes | No | No |
 | Feedback and bugs | Yes | Yes | No |
 | My subscription | Yes | Yes | No |
-| Office 365 | Yes | Yes | Yes: Azure Active Directory or Microsoft admin portal. |
+| Office 365 | Yes | Yes | Yes: Microsoft Entra ID or Microsoft admin portal. |
 | Impact analysis | No | Yes | No |
 | Total economic impact estimator | No | Yes | No |
 | Service requests | No | Yes | Yes: [Self-service deployments](../../dev-itpro/deployment/infrastructure-stack.md) |
@@ -448,7 +448,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
-| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
+| **Replaced by another feature?**   | For more information, see [Configuring Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
 | **Status**                         | Deprecated: This feature is fully deprecated for self-service deployments. |
@@ -511,4 +511,3 @@ To learn more about features that have been removed or deprecated in previous re
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

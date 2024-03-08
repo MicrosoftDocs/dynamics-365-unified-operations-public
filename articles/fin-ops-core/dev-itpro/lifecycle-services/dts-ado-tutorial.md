@@ -101,7 +101,7 @@ To consume the DTS API, the extension must acquire an access token from the Micr
 Now that you have an app that is registered with the LCS API connections, you can create an LCS service connection. This service connection will enable the extension to obtain LCS permissions through the registered application.
 
 > [!NOTE]
-> LCS authentication requires Azure Active Directory (Azure AD) accounts that multi-factor authentication is turned off for, and that aren't backed by federated sign-ins. For the service connection, we recommend that you use a separate account that has limited permissions.
+> LCS authentication requires Microsoft Entra accounts that multi-factor authentication is turned off for, and that aren't backed by federated sign-ins. For the service connection, we recommend that you use a separate account that has limited permissions.
 
 1. In your Azure DevOps project, at the bottom of the left menu, select the **Project settings** button (gear symbol).
 1. In the **Project settings** pane, under **Pipelines**, select **Service connections**. Then select **Create service connection**.
@@ -390,4 +390,3 @@ After the pipeline is run, you're redirected to the pipeline summary page.
 ## Summary
 
 In this tutorial, you learned about the functionality and features that the DTS Azure DevOps extension provides. You learned how to create a pipeline to automate translation requests. You also learned how to edit the translations and then regenerate them, based on your edits. Finally, you learned how to create XLIFF translation memories by using the alignment task.
-

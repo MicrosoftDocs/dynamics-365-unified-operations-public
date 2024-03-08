@@ -80,7 +80,7 @@ Here is an overview of the procedures that you must complete:
 
 ## Create a new key vault
 
-In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault.
+In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Microsoft Entra and grant it the right to retrieve the secret from the key vault.
 
 1. In the Azure portal, select **All services \> Security \> Key vaults**.
 2. Create a new key vault in your resource group and set the default parameters.
@@ -99,9 +99,9 @@ In this procedure, you will create a key vault to store the key that you copied 
 
 ## Register a new application
 
-In this procedure, you will register a new application with Azure AD, and give it read and retrieve access to key vault secrets. Finance and operations will then use this application to retrieve Service Bus secrets.
+In this procedure, you will register a new application with Microsoft Entra ID, and give it read and retrieve access to key vault secrets. Finance and operations will then use this application to retrieve Service Bus secrets.
 
-1. In the Azure portal, select **All services \> Security \> Azure Active Directory**.
+1. In the Azure portal, select **All services \> Security \> Microsoft Entra ID**.
 2. Select **App registrations (preview) \> New registration**, and enter a name for your application.
 3. Select **Register**.
 4. Select the new application, and then select **Certificates & secrets \> New client secret**. Enter a name for your secret, and set the secret so that it never expires. Then select **Add**.

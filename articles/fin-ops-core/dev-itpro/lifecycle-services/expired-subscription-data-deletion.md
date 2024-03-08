@@ -82,7 +82,7 @@ Sometimes purchasing licenses or renewing them can be a lengthy process for some
 
 After your implementation project is deleted, if you deployed cloud-hosted environments in it via a customer-owned Azure subscription, Lifecycle Services will no longer have access to the Azure subscription or any of the cloud-hosted environments. However, some resources might remain in your Azure subscription.
 
-Follow these steps to free up the resources, and to remove application permissions in your Azure Active Directory (Azure AD) tenant and each Azure subscription that you previously added to Lifecycle Services so that you could deploy the cloud-hosted environments.
+Follow these steps to free up the resources, and to remove application permissions in your Microsoft Entra tenant and each Azure subscription that you previously added to Lifecycle Services so that you could deploy the cloud-hosted environments.
 
 1. Delete the Azure resources:
 
@@ -94,13 +94,13 @@ Follow these steps to free up the resources, and to remove application permissio
 
 1. Remove the deployment service application from the subscription:
 
-    1. Sign in to Azure AD via the PowerShell cmdlet.
+    1. Sign in to Microsoft Entra via the PowerShell cmdlet.
 
         ```powershell
         Connect-AzureAD (Using Tenant Administrator account)
         ```
 
-    1. Determine whether the app is still enabled on the Azure AD tenant.
+    1. Determine whether the app is still enabled on the Microsoft Entra tenant.
 
         ```powershell
         Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'"
@@ -126,4 +126,4 @@ Follow these steps to free up the resources, and to remove application permissio
 
 [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
 
-[Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
+[Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
