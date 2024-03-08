@@ -59,8 +59,8 @@ Result: An address of role delivery and an address of role invoice is created in
 2b. If the Dual write GAB solution is not deployed, in Microsoft Dynamics 365 Sales on the account, on the Summary tab, add a delivery address and an invoice address. 
 Result: It is intentional that no addresses are created in Microsoft Dynamics 365 Supply Chain Management and associated with the prospect. 
 
-Bug in the solution - _Cannot save the changes to the database. Unit of Work can not commit transaction.
-Unable to write data to entity msdyn_postaladdresses.Unable to lookup msdyn_postaladdresscollections with values {LOC-000001004}.Writes to msdyn_postaladdresses failed with error message Exception message: One or more errors occurred..For information on troubleshooting see https://go.microsoft.com/fwlink/?linkid=2244045..Unable to lookup msdyn_postaladdresscollections with values {LOC-000001004}.Writes to msdyn_postaladdresses failed with error message For information on troubleshooting see https://go.microsoft.com/fwlink/?linkid=2244045.._
+**Delete Bug in the solution - _Cannot save the changes to the database. Unit of Work can not commit transaction.
+Unable to write data to entity msdyn_postaladdresses.Unable to lookup msdyn_postaladdresscollections with values {LOC-000001004}.Writes to msdyn_postaladdresses failed with error message Exception message: One or more errors occurred..For information on troubleshooting see https://go.microsoft.com/fwlink/?linkid=2244045..Unable to lookup msdyn_postaladdresscollections with values {LOC-000001004}.Writes to msdyn_postaladdresses failed with error message For information on troubleshooting see https://go.microsoft.com/fwlink/?linkid=2244045.._**
 
  > [!NOTE]
     > For addresses created on the account in Microsoft Dynamics 365 Sales to synchronize to Microsoft Dynamics 365 Supply Chain Management, a role must be associated with each address. It is only possible to associate a role when creating an address on an account in Microsoft Dynamics 365 Sales when the dual write GAB solution is deployed.
