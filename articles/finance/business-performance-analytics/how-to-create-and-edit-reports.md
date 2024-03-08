@@ -79,6 +79,7 @@ To share a report that isn't currently open, follow these steps:
 4. Specify to provide **Edit** or **View** access to the report. 
 
 >[!NOTE:]
+> You can't share reports of the **Microsoft** type. You must duplicate them as described in one of the above sections. You can then share the duplicate report. 
 > Only admin users may also see an additional **Share** button. This button currently doesn't provide any use.
 >Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with others users who did not originally have access to the report.
 
