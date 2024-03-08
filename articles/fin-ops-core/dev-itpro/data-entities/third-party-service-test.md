@@ -3,7 +3,7 @@
 
 title: Test services by using third-party utilities
 description: This article describes how to set up third-party utilities to test services.
-author: peakerbl
+author: pnghub
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: twheeloc
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: gned
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -44,11 +44,7 @@ Many frequently used tools that will help you perform these actions are availabl
 ## Prerequisites
 
 Before you can test a service by using an external application, you must register the application in Microsoft Azure, and in finance and operations.
-
-For details, see:
-
-- [Register an application with Microsoft Entra ID](services-home-page.md#register-a-web-application-with-aad)
-- [Register your external application](services-home-page.md#register-your-external-application)
+For details, see [Register your external application](services-home-page.md#register-your-external-application)
 
 ## Query OData by using Postman
 
