@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 01/17/2024
+ms.date: 03/08/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -22,6 +22,8 @@ Dynamic positive days help increase your sales order fulfillment rate by using o
 - When an item is needed within the lead time, master planning suggests using existing supply.
 
 This strategy allows sales orders that are created later, but requested earlier, than another sales order to use existing purchase orders. It lets you fulfill all demand while better managing your supply and delivery dates (including when using capable to promise).
+
+<!--KFM: Definitions of "positive days" and "dynamic positive days" are needed. Make it clear how they are different. Link to [Master plans overview](master-plans.md)-->
 
 The system doesn't only use the lead time when deciding which supply to peg. Outside of the lead time, it also takes into account the positive days. The number of positive days that apply for a given item are set on its item coverage group, and this value can be overwritten at the master plan level. This strategy allows certain master plans to have a higher number of positive days than others, allowing different plans to be used for capable-to-promise than for day-to-day business.
 
@@ -51,6 +53,12 @@ Follow these steps to assign the number of positive days to an item coverage gro
 1. Select an existing coverage group or create a new one.
 1. On the **General** FastTab, set **Positive days** to the number of days that you want to use for this coverage group.
 
+## Assign the number of dynamic positive days to a master plan
+
+1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. Select an existing plan or create a new one.
+1. <!--KFM: I expected to find a setting here, but I didn't. How do we override positive days at the master plan level? -->
+
 ## Example scenarios
 
 This section provides few example scenarios to help you understand how dynamic positive days work.
@@ -71,6 +79,8 @@ The following scenario shows how the system handles demand requested for inside 
 1. The system therefore pegs the new sales order to the existing purchase order because the requested ship date is within the lead time.
 
 :::image type="content" source="media/dynamic-pos-days-scenario-1.png" alt-text="Timeline for example scenario 1":::
+
+<!--KFM: We should convert all images to SVG. Is the original (PPT?) available for all of these? -->
 
 ## Example scenario 2: Demand outside of the lead time
 

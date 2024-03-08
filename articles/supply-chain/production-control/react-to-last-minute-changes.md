@@ -1,12 +1,12 @@
 ﻿---
 title: React to last minute changes in production
-description: Components or routes can often change at the list minute of the manufacturing process, just before production orders are released to the shop floor. This topic describes a few types of changes that often occur and how to react to manage them in Supply Chain Management.
+description: Components or routes can often change at the list minute of the manufacturing process, just before production orders are released to the shop floor. This article describes a few types of changes that often occur and how to react to manage them in Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 11/16/2023
+ms.date: 03/08/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -16,34 +16,44 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Components or routes can often change at the list minute of the manufacturing process, just before production orders are released to the shop floor. This topic describes a few types of changes that often occur and how to react to manage them in Supply Chain Management.
+Components or routes can often change at the last minute of the manufacturing process, just before production orders are released to the shop floor. This article describes a few types of changes that often occur and how to manage them in Supply Chain Management.
 
 ## Change BOM items on production orders  
 
 It can sometimes be necessary to change a bill of materia (BOM) item on multiple production orders. This is common when a change of revision is applied to a raw item. To allow for such changes, you can change one BOM item to another in estimated or scheduled production orders. You can also choose to use up the existing on-hand inventory of an item and then substitute it for a new one once that inventory has been used.
 
-### Prerequisites
+### Prerequisites to change BOM items on production orders
 
-To use this feature, your system must meet the following requirements:
+To change BOM items on production orders, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
 - The feature that is named *Change BOM item* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Change a production order BOM item
 
-When you enter the old item number (the "from item"), the system looks up all transactions with a reference of *Production line*. The system shows on-hand inventory from the net requirement for the old item (the "from item"). <!--KFM: The context here isn't clear. This paragraph requires revision. -->
+To change a production order BOM item, follow these steps:
 
-The purpose is to easily change an item for another one in the bill of materials of an item being produced.
+1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Open the production order that you want to change. You can only change BOM items for production orders with a status of *Estimated* or *Scheduled* (not with status *Created* <!--KFM: It seems like we have more status values than this.-->).
+1. On the Action Pane, open the **Production order** tab and, from the **Change** group, select **Change BOM item**.
+1. The **Change production order BOM** item dialog opens.
+1. On the **Parameters** FastTab, in the **From item** section, specify the item you want to change from, including its inventory dimensions.
 
-A special case for this is when an item is being replaced by a new version or a new product. To find at which point in time the on-hand of the item (from item) is consumed so that the new item can be made active from there on and change the current production. You want to use-up the on-hand until it becomes 0, and then forward from there, you want to mark all orders to be using the new orders. For this case you can use the button Proposal to use-up on-hand, which will automatically change the product once its on-hand has become 0 (in other words, when the accumulated goes into negative). This helps to see the date when the item will be no longer used, so the effective dates can be changed for the version or item if applicable on the bill of materials.
+    <!--KFM: I didn't see this. I'm not sure what this means. --> When you enter the **From item**, the system looks up all transactions with a reference of *Production line*. The system shows on-hand inventory from the net requirement for the **From item**. The purpose is to easily change an item for another one in the BOM of an item being produced.
 
-It is only possible to select production orders with status estimated or scheduled, not with status created.
+1. On the **Parameters** FastTab, in the **To item** section, specify the item you want to change to, including its inventory dimensions. 
+    - The **To item** must use the same inventory unit of measure as the **From item**..
+    - If the new item demands a different quantity, specify the new quantity in the **New quantity** field.
+    - If **New quantity** is set to zero, the system uses the same quantity as the existing item.
+1. On the **Production order** lines FastTab <!-- KFM: What Can we do here? What is this for? -->
+1. A special case occurs when an item is to be replaced by a new version or a new product. Here, you may need to find the time when the on-hand inventory of an item (the *from item*) will be consumed so that the new item can be swapped in for the production. You'll use the on-hand inventory until it becomes 0, and thereafter mark all orders to use the new item. Select  **Proposal to use-up on-hand** on the **Production order lines** FastTab toolbar to automatically change the product once its on-hand inventory reaches 0 (in other words, when the accumulated inventory goes negative). This lets you see the date when the item will be no longer used, so the effective dates can be changed for the version or item on the BOM. <!--KFM: I don't really understand this, but maybe it's ok? -->
+1. On the **Run in the background** FastTab, choose to implement the changes right away or make settings to control whether and how to run it as a batch job.
+1. Select **OK** to apply your settings.
 
-What the form actually does when the change is being applied is it changes the quantity of the from item to 0. And it creates a new line with the to item, with the new quantity, defaulting all information for this item on the line.
+When the change is applied, the system changes the quantity of the **From item** to 0. Then it creates a new line <!--KFM: What kind of line is this? -->with the **To item**, with the new quantity, and updates the line <!--KFM: What line? --> to show the information for this item. The following fields from the *from line* are copied to the *to line* (so no manual changes are needed):
 
-The following fields from the "from line" are copied to the "new line/to line":
-
-- line type, vendor
+- Line type
+- Vendor
 - Site
 - Warehouse
 - Scrap
@@ -51,31 +61,26 @@ The following fields from the "from line" are copied to the "new line/to line":
 - Resource consumption
 - Per series
 
-So no manual changes are needed.
-
-If the new item demands a different quantity, the new quantity can be applied in the field New quantity.
-
-If no quantity is specified, it will take the same quantity as the existing item.
-
-It can also be done as a batch job.
-
-This form is available from the top of the **Production orders** form, which opens any pre-selected planned orders or if none selected, it will open the blank form until a product is specified.
-
-Note it is a requirement that the products must have the same inventory unit of measure so they can be changed.
-
 ## Change production order routes
 
-The same way, it is a common change to change setup times for routes when improvements are made or machines are changed for the same process.
+It's often useful to change setup times for routes when improvements are made or machines are changed for the same process.
 
-### Prerequisites
+### Prerequisites to change production order routes
 
-To use this feature, your system must meet the following requirements:
+To change production order routes, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
 - The feature that is named *Production order route change* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Change a production order route
 
-A way to easily change them is now available.
+To change a production order route, follow these steps:
 
-It is also available on the top of the **Production orders** form for easier use, and the same way, when the **from route** is entered, it just changes it for the **to route**.
+1. Go to **Production control** \> **Production orders** \> **All production orders**.
+1. Open the production order that you want to change.  <!--KFM: Mention status values here?-->
+1. On the Action Pane, open the **Production order** tab and, from the **Change** group, select **Change route**.
+1. The **Production order change route** item dialog opens.
+1. On the **Parameters** FastTab, identify the **From route** and **To route**.
+1. On the **Production order lines** FastTab <!-- KFM: What Can we do here? What is this for? -->
+1. On the **Run in the background** FastTab, choose to implement the changes right away or make settings to control whether and how to run it as a batch job.
+1. Select **OK** to apply your settings.
