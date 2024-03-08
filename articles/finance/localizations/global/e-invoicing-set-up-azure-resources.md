@@ -26,7 +26,7 @@ The process for setting up Microsoft Azure resources for Electronic invoicing ha
 2. **Executing Azure PowerShell Script**
 3. **Deploying an ARM template**
 
-Please proceed if you prefer using the UI. Alternatively, if you opt for the PowerShell script or the ARM template, instructions are provided here.
+Please proceed if you prefer using the UI. Alternatively, if you opt for the PowerShell script or the ARM template, instructions are provided [here](articles/finance/localizations/global/e-invoicing-set-up-azure-resources-automation.md).
 
 ## Create an Azure key vault in the Azure portal
 
