@@ -3819,6 +3819,8 @@
             href: warehousing/warehouse-app-authenticate-service-based.md
           - name: Mass deploy the mobile app with service-based authentication
             href: warehousing/warehouse-app-intune.md
+          - name: Mobile device user accounts
+            href: warehousing/mobile-device-work-users.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
             href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
@@ -3861,8 +3863,6 @@
             href: warehousing/pick-oldest-batch.md
         - name: Global mobile device parameters
           href: warehousing/mobile-device-parameters.md
-        - name: Mobile device user accounts
-          href: warehousing/mobile-device-work-users.md
         - name: Warehouse mobile devices workspace
           href: warehousing/mobile-device-workspace.md
         - name: Mobile device user settings
