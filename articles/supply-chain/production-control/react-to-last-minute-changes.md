@@ -20,7 +20,7 @@ Components or routes can often change at the last minute of the manufacturing pr
 
 ## Change BOM items on production orders  
 
-It can sometimes be necessary to change a bill of materia (BOM) item on multiple production orders. This is common when a change of revision is applied to a raw item. To allow for such changes, you can change one BOM item to another in estimated or scheduled production orders. You can also choose to use up the existing on-hand inventory of an item and then substitute it for a new one once that inventory has been used.
+It can sometimes be necessary to change a bill of material (BOM) item on multiple production orders. Such changes are common when a change of revision is applied to a raw item. To allow for such changes, you can change one BOM item to another in estimated or scheduled production orders. You can also choose to use up the existing on-hand inventory of an item and then substitute it for a new one once that inventory has been used.
 
 ### Prerequisites to change BOM items on production orders
 
@@ -34,7 +34,7 @@ To change BOM items on production orders, your system must meet the following re
 To change a production order BOM item, follow these steps:
 
 1. Go to **Production control** \> **Production orders** \> **All production orders**.
-1. Open the production order that you want to change. You can only change BOM items for production orders with a status of *Estimated* or *Scheduled* (not with status *Created* <!--KFM: It seems like we have more status values than this.-->).
+1. Open the production order that you want to change. You can only change BOM items for production orders with a status of *Estimated* or *Scheduled* (not with status *Created*). <!--KFM: It seems like we have more status values than this.-->
 1. On the Action Pane, open the **Production order** tab and, from the **Change** group, select **Change BOM item**.
 1. The **Change production order BOM** item dialog opens.
 1. On the **Parameters** FastTab, in the **From item** section, specify the item you want to change from, including its inventory dimensions.
@@ -45,8 +45,8 @@ To change a production order BOM item, follow these steps:
     - The **To item** must use the same inventory unit of measure as the **From item**..
     - If the new item demands a different quantity, specify the new quantity in the **New quantity** field.
     - If **New quantity** is set to zero, the system uses the same quantity as the existing item.
-1. On the **Production order** lines FastTab <!-- KFM: What Can we do here? What is this for? -->
-1. A special case occurs when an item is to be replaced by a new version or a new product. Here, you may need to find the time when the on-hand inventory of an item (the *from item*) will be consumed so that the new item can be swapped in for the production. You'll use the on-hand inventory until it becomes 0, and thereafter mark all orders to use the new item. Select  **Proposal to use-up on-hand** on the **Production order lines** FastTab toolbar to automatically change the product once its on-hand inventory reaches 0 (in other words, when the accumulated inventory goes negative). This lets you see the date when the item will be no longer used, so the effective dates can be changed for the version or item on the BOM. <!--KFM: I don't really understand this, but maybe it's ok? -->
+1. On the **Production order** lines FastTab, <!-- KFM: What Can we do here? What is this for? -->
+1. A special case occurs when an item is to be replaced by a new version or a new product. Here, you might need to find the time when the on-hand inventory of an item (the *from item*) will be consumed so that the new item can be swapped in for the production. You'll use the on-hand inventory until it becomes 0, and thereafter mark all orders to use the new item. Select  **Proposal to use-up on-hand** on the **Production order lines** FastTab toolbar to automatically change the product once its on-hand inventory reaches 0 (in other words, when the accumulated inventory goes negative). This lets you see the date when the item will no longer be used, so the effective dates can be changed for the version or item on the BOM. <!--KFM: I don't really understand this, but maybe it's ok? -->
 1. On the **Run in the background** FastTab, choose to implement the changes right away or make settings to control whether and how to run it as a batch job.
 1. Select **OK** to apply your settings.
 
@@ -81,6 +81,6 @@ To change a production order route, follow these steps:
 1. On the Action Pane, open the **Production order** tab and, from the **Change** group, select **Change route**.
 1. The **Production order change route** item dialog opens.
 1. On the **Parameters** FastTab, identify the **From route** and **To route**.
-1. On the **Production order lines** FastTab <!-- KFM: What Can we do here? What is this for? -->
+1. On the **Production order lines** FastTab, <!-- KFM: What Can we do here? What is this for? -->
 1. On the **Run in the background** FastTab, choose to implement the changes right away or make settings to control whether and how to run it as a batch job.
 1. Select **OK** to apply your settings.

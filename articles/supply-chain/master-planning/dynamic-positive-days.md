@@ -72,8 +72,8 @@ The following scenario shows how the system handles demand requested for inside 
     - You have an item that belongs to a coverage group set up with 3 positive days and 3 negative days.
     - The lead time of the item is 5 days.
     - Dynamic positive days are enabled.
-    - Your master plans do not include any positive days overrides.
-    - You have a purchase order for the item that is scheduled to be delivered in on day 2.
+    - Your master plans don't include any positive days overrides.
+    - You have a purchase order for the item that is scheduled to be delivered on day 2.
 
 1. A new sales order is now created for the item. The requested ship date is day 3.
 1. The system therefore pegs the new sales order to the existing purchase order because the requested ship date is within the lead time.
@@ -91,7 +91,7 @@ The following scenario shows how the system handles demand requested for outside
     - You have an item that belongs to a coverage group set up with 3 positive days and 3 negative days.
     - The lead time of the item is 5 days.
     - Dynamic positive days are enabled.
-    - Your master plans do not include any positive days overrides.
+    - Your master plans don't include any positive days overrides.
     - You have a purchase order (PO1) for the item that is scheduled to be delivered on day 2.
     - You have a second purchase order (PO2) for the item that is scheduled to be delivered on day 6.
 
@@ -105,7 +105,7 @@ The following scenario shows how the system handles demand requested for outside
     - Peg SO2 against the existing PO1.
     - Create a new planned purchase order (PPO) and peg SO1 against it.
 
-    Because SO1 is outside of the lead time, the system create a new planned order to supply it (there is no supply within the positive days).
+    Because SO1 is outside of the lead time, the system creates a new planned order to supply it (there's no supply within the positive days).
 
 :::image type="content" source="media/dynamic-pos-days-scenario-2.png" alt-text="Timeline for example scenario 2":::
 
@@ -118,7 +118,7 @@ The following scenario shows how the system handles demand requested within the 
     - You have an item that belongs to a coverage group set up with 3 positive days and 3 negative days.
     - The lead time of the item is 5 days.
     - Dynamic positive days are enabled.
-    - Your master plans do not include any positive days overrides.
+    - Your master plans don't include any positive days overrides.
     - You have a purchase order (PO1) for the item that is scheduled to be delivered on day 2.
     - You have a second purchase order (PO2) for the item that is scheduled to be delivered on day 8. (Unlike previous example, this second purchase order is now scheduled for delivery within the positive days range.)
 
