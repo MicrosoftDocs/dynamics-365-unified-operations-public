@@ -612,7 +612,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     | Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | [Update for Visual C++ 2013 and Visual C++ Redistributable Package](https://support.microsoft.com/help/3179560) | vcredist\_x64.exe | 10.0.0 | Not applicable |
     | Microsoft Visual C++ 2015-2019 Redistributable | [Combined Visual C++](/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) | vc\_redist.x64\_1519.exe | 10.0.17 | 10.0.30 |
     | Microsoft Visual C++ 2015-2022 Redistributable | [Combined Visual C++](/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) | vc\_redist.x64\_1522.exe | 10.0.31 | Not applicable|
-    | Access Database Engine 2010 Redistributable | [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) | AccessDatabaseEngine\_x64.exe | 10.0.0 | Not applicable |
+    | Access Database Engine 2010 Redistributable | [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx) | AccessDatabaseEngine\_x64.exe | 10.0.0 | Not applicable |
     | The .NET Framework version 4.8 (CLR 4.0) | [.NET Framework 4.8 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net48-offline) | ndp48-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
     | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
 
