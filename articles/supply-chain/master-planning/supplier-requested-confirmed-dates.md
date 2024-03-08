@@ -37,7 +37,7 @@ If you are running Supply Chain Management version 10.0.38 or 10.0.39, the featu
 
 ### Supply Chain Management version 10.0.40 or later
 
-Starting in version 10.0.40 (and later), the *Supplier requested and confirmed shipment dates* feature is no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Instead, the feature is always available and is instead controlled by a setting on the **Procurement and sourcing parameters** page. The setting is turned off by default for all legal entities unless you had previously turned on the *Supplier requested and confirmed shipment dates* feature in feature management (before upgrading to version 10.0.40 or later), in which case the setting will be turned on for all legal entities.
+Starting in version 10.0.40 (and later), the *Supplier requested and confirmed shipment dates* feature is no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Instead, the feature is always available and is controlled by a setting on the **Procurement and sourcing parameters** page. The setting is turned off by default for all legal entities unless you had previously turned on the *Supplier requested and confirmed shipment dates* feature in feature management (before upgrading to version 10.0.40 or later), in which case the setting will be turned on for all legal entities.
 
 To turn on the feature, follow these steps:
 
