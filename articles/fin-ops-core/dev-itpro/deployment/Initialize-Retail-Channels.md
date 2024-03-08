@@ -70,7 +70,7 @@ CSU is available for deployment in the following regions.
 | EMEA            | North Europe        | Generally available |  No comments.                         |
 | EMEA            | UK South            | Generally available |    No comments.                       |
 | EMEA            | UK West             | Generally available |    No comments.                       |
-| UAE             | UAE North           | Capacity restricted | LCS UAE can be used to deploy CSU in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to in case of Azure regional failure.  |
+| UAE             | UAE North           | Capacity restricted | LCS UAE can be used to deploy CSU in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to if there is Azure regional failure.  |
 
 Deployment capacity in limited capacity regions is constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently don't allow for CSU deployment at this time. 
 
@@ -115,7 +115,7 @@ You can issue a redeployment of the CSU, without changing any components, by sel
 To select the same version of your CSU to deploy, follow these steps.
 
 1. In LCS, on the environment details page, select **Environment features \> Retail**.
-2. On the setup deployment page, select the CSU you want redeploy.
+2. On the setup deployment page, select the CSU you want to redeploy.
 3. On the CSU's operation menu, select **Update**.
 4. On the slider, on the drop-down menu for **Select version**, select **Specify a version**.
 5. On the text box under **Specify a version**, type in the version shown for your CSU, shown beside the **Current version** label.
@@ -181,7 +181,7 @@ During the initialization period:
 After initialization is completed:
 
 - The device activation state of all activated POS devices is preserved so that the devices don't have to be reactivated.
-- Stand-alone hardware station instances continues to work.
+- Stand-alone hardware station instances continue to work.
 - POS channel–side reports are reset and don't show data from before the initialization.
 - Show journal operations are reset and don't show data from before the initialization.
 
