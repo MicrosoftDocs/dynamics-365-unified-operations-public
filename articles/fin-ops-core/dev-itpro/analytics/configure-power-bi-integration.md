@@ -45,8 +45,8 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 - You must be a system administrator in the application. This option is available on the **System administration** menu.
 - You must have a PowerBI.com account. You can create a trial account if you don't have an account. (A Pro license isn't required for this configuration step.)
 - You must have at least one dashboard and one report in your Power BI account. Although the dashboard and report aren't required for this configuration step, you might not be able to validate the configuration if you don't have any content in your PowerBI.com account.
-- You must be an administrator for your Microsoft Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform this configuration step for you.
-- The Azure AD domain that is configured must be the same domain that you used for your PowerBI.com account. For example, if you provisioned the application in the Contoso.com domain, you must have Power BI accounts in that domain, such as `Tim@ContosoAX7.onmicrosoft.com`.
+- You must be an administrator for your Microsoft Microsoft Entra account. If you aren't the administrator, an administrative user must perform this configuration step for you.
+- The Microsoft Entra domain that is configured must be the same domain that you used for your PowerBI.com account. For example, if you provisioned the application in the Contoso.com domain, you must have Power BI accounts in that domain, such as `Tim@ContosoAX7.onmicrosoft.com`.
 - Users navigating to these pinned tiles must have a valid Power BI.com license.
 
 ## Registration process 
@@ -56,7 +56,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
     > [!NOTE]
     > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
-2. Go to **Azure Active Directory** \> **App registrations** \> **New application registration**. 
+2. Go to **Microsoft Entra** \> **App registrations** \> **New application registration**. 
 3. Enter the following values:
 
     - **Name** – Enter the name of your app.
@@ -117,7 +117,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 2. Select **Edit**.
 3. Set the **Enabled** option to **Yes**.
 4. In the **Application ID** field, enter the **Application ID** value that you got from Power BI in the previous procedure.
-5. In the **Application key** field, enter the **Secret Value** value that you captured in Azure AD in the previous procedure.
+5. In the **Application key** field, enter the **Secret Value** value that you captured in Microsoft Entra ID in the previous procedure.
 
     You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released uses this convention.
 
@@ -138,8 +138,8 @@ Complete the steps in the next section to verify the changes and enable PowerBI.
 
     Users must complete this step the first time they pin Power BI content.
 
-2. The Azure AD consent page asks for your consent. User consent is required for the application to access PowerBI.com on behalf of the user. Select **Accept**.
-3. Because you're already signed in to Azure AD, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between the application and Power BI. Authorize the connection, and then return to the original tab.
+2. The Microsoft Entra consent page asks for your consent. User consent is required for the application to access PowerBI.com on behalf of the user. Select **Accept**.
+3. Because you're already signed in to Microsoft Entra ID, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between the application and Power BI. Authorize the connection, and then return to the original tab.
 4. A list of tiles from your PowerBI.com account appears. Select one or more tiles to pin to the selected workspace.
 
     ![Validate Power BI integration.](./media/D365-PBI-Validation.png)
@@ -159,4 +159,3 @@ In the procedure above, after you select **Accept**, you might receive the follo
 | Sorry, something went wrong. The authentication process was not successful. Please contact your system administrator.  | This may occur in cases where service keys have expired. We recommend performing the registration process above, starting with step 3. When complete, be sure to update the PowerBI.com settings at **AX client \> System administration \> Set up \> PowerBI.com integration**. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -37,10 +37,10 @@ System admins can [assign licenses to users](/office365/admin/subscriptions-and-
 ## Add an external user in Entra ID and assign a license 
 External users must be represented in your tenant directory (Microsoft Entra ID) so that they can be assigned licenses. Those external users should be added to the tenant in Entra ID as guest users and then assigned the appropriate licenses. A requirement for finance and operations apps is that the guest user's company must use Entra ID. For more information, see [Add Entra ID B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
 
-## Import new users from Entra ID 
+## Import new users from Microsoft Entra ID 
 1. Go to **System administration** \> **User** \> **Users**.
 2. On the Action Pane, select **Import users**.
-3. Select the users to be imported. The list includes Entra ID users that are currently not users in this environment.
+3. Select the users to be imported. The list includes Microsoft Entra users that are currently not users in this environment.
 4. Select **Import users**.
 5. Select **Close**.
 
@@ -82,6 +82,7 @@ To change a user ID, you must rename the key in the database. When you change a 
 ## Additional resources
 
 For more options to implement B2B users, see [Export B2B users to Entra ID](../../dev-itpro/sysadmin/implement-b2b.md).
+
 
 For information about preconfigured system accounts, see [Preconfigured system accounts](../../dev-itpro/sysadmin/pre-configured-system-accounts.md)
 

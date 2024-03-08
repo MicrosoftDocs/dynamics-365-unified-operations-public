@@ -39,7 +39,7 @@ Finance and operations apps that are operated by 21Vianet support data residency
 
 ## Compliance
 
-Customers in China can choose 21Vianet's sovereign cloud deployment offering, but they can also deploy to the public cloud offering that's managed by Microsoft. The Microsoft-managed public cloud offering is globally connected over the public internet and has data centers outside China. One advantage of choosing this public cloud offering is that if the customer purchases Azure, Dynamics 365, and Microsoft 365, these products and services can coexist on the same Azure Active Directory (Azure AD) tenant.
+Customers in China can choose 21Vianet's sovereign cloud deployment offering, but they can also deploy to the public cloud offering that's managed by Microsoft. The Microsoft-managed public cloud offering is globally connected over the public internet and has data centers outside China. One advantage of choosing this public cloud offering is that if the customer purchases Azure, Dynamics 365, and Microsoft 365, these products and services can coexist on the same Microsoft Entra tenant.
 
 The final choice of a deployment option depends on the customer's assessment of how it should operate to meet regulatory requirements in China. Customers who are wondering how to be compliant should ask their internal compliance team to review the regulatory requirements for the industry that they belong to and the mode of operation in China. In this way, they can determine whether they must deploy a separate instance through 21Vianet or whether they can use a global cloud deployment option.
 
