@@ -245,7 +245,7 @@ The following URLs are accessed for authentication.
 - `https://login.microsoftonline.com`
 
 
-**Alternate solution:** If the user is running an older version of Windows 10 (earlier than version 1909), consider upgrading Windows 10 to version 1909 or later. Version 1909 may need KB5003635. For more information, see [May 2021 resolved issues](/windows/release-health/resolved-issues-windows-10-1909#1610msgdesc). 
+**Alternate solution:** If the user is running an older version of Windows 10 (earlier than version 1909), consider upgrading Windows 10 to version 1909 or later. Version 1909 may need KB5003635. For more information, see [May 2021 resolved issues](/windows/release-health/resolved-issues-windows-10-1909). 
 
 ### Issue: The Excel Add-in needs an explicit sign out after encountering a Microsoft EntraSTS50058 "silent sign in failed" error
 
