@@ -91,9 +91,9 @@ The abandoned cart connector sample code uses Azure default credentials to acces
 
 For more information about Azure default credentials, see [DefaultAzureCredential Class](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true).
 
-## Create an abandoned cart connector sample app application ID for the Azure AD tenant
+## Create an abandoned cart connector sample app application ID for the Microsoft Entra tenant
 
-You must create an abandoned cart connector sample app application ID for the Azure Active Directory (AD) tenant. For information about how to create an application ID, see [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+You must create an abandoned cart connector sample app application ID for the Microsoft Entra (AD) tenant. For information about how to create an application ID, see [Use the portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 ## Add the abandoned cart connector sample app application ID to the allow list for the Retail Server API
 
@@ -113,7 +113,7 @@ To configure the abandoned cart connector sample app, modify the **appSettings.j
 
 | Property                                      | Description |
 | --------------------------------------------- | ----------- |
-| TenantId                                      | The Azure AD tenant ID of your Azure tenant. |
+| TenantId                                      | The Microsoft Entra tenant ID of your Azure tenant. |
 | RetailServerAudienceId                        | The Retail Server audience ID. You can leave the default value. |
 | AppIdKeyVaultSecretName                       | The name of the secret that you created for the abandoned cart connector sample app application ID. |
 | AppSecretKeyVaultSecretName                   | The name of the secret that stores the app secret for the abandoned cart connector sample app application ID. |
