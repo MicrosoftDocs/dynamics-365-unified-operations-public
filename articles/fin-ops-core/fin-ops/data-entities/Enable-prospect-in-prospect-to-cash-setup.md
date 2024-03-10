@@ -73,131 +73,99 @@ Proceed with the setup below that matches your environment.
 For GAB dual-write solution see https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/party-gab
 
 6.	Stop the following maps, since they are no longer required.
-a.	Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)
-b.	CDS sales order headers (salesorders)
-c.	CDS sales order lines (salesorderdetails)
-d.	CDS sales order lines V2 (salesorderdetails)
-e.	CDS sales quotation header (quotes)
-f.	CDS sales quotation lines (quotedetails)
 
-The following entity mappings are updated for party functionality, so the latest version must be applied to these mappings.
-Map	Update to this version	Details
-Dynamics 365 Sales feature parameters (msdyn_supplychainfeaturestates)	1.0.0.0	New map for set up parameters for Dynamics 365 Sales integration
-Dynamics 365 Sales order headers (salesorders)	1.0.2.1	New map with discount customer groups and delivery date control.
-Dynamics 365 Sales order lines (salesorderdetails)	1.0.1.0	New map with delivery date control.
-Dynamics 365 Sales quotation header (quotes)	1.0.4.1	New map for quotation revision feature with ownership change capability, prospect integration, discount customer groups and delivery date control.
-Dynamics 365 Sales quotation lines (quotedetails)	1.0.0.0	New map for quotation lines
-Dynamics 365 Sales prospects (accounts)	1.0.0.1	New map for prospects of type organization
-Dynamics 365 Sales prospects (contacts)	1.0.0.1	New map for prospects of type person
-CDS Contacts V2 (contacts)	1.0.0.0	New map for prospect contact persons
-Customers V3 (accounts)	1.0.1.5	New map for setting relationship type when Dynamics 365 Sales prospects map is running.
+| Map | 
+|---|
+|Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)|
+|CDS sales order headers (salesorders)|
+|CDS sales order lines (salesorderdetails)|
+|CDS sales order lines V2 (salesorderdetails)|
+|CDS sales quotation header (quotes)|
+|CDS sales quotation lines (quotedetails)|
 
-Removed PartyNumber and other party-related fields like name, personal details, postal address fields, and electronic contact address.
-Customers V3 (contacts)	1.0.1.5	New map for setting relationship type when Dynamics 365 Sales prospects map is running.
+7. The following entity maps are updated for Gobal Address Book Party functionality, so the latest version must be applied to these maps and running.
 
-Removed PartyNumber and other party-related fields like name, personal details, postal address fields, and electronic contact address.
-
+| Map | Update to this version | Details |
+|---|---|---|
+|Dynamics 365 Sales feature parameters (msdyn_supplychainfeaturestates)|	1.0.0.0|<p>	New map for set up parameters for Dynamics 365 Sales integration<p>|
+|Dynamics 365 Sales order headers (salesorders)| 1.0.2.1 | <p>New map with discount customer groups and delivery date control.</p> |
+|Dynamics 365 Sales order lines (salesorderdetails)| 1.0.1.0 | <p>New map with delivery date control.</p> |
+|Dynamics 365 Sales quotation header (quotes)| 1.0.4.1	 | <p>New map for quotation revision feature with ownership change capability, prospect integration, discount customer groups and delivery date control.</p> |
+|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>New map for quotation lines.</p> |
+|Dynamics 365 Sales prospects (accounts)|	1.0.0.1	| <p>New map for prospects of type organization.</p> |
+|Dynamics 365 Sales prospects (contacts)|	1.0.0.1	| <p>New map for prospects of type person.</p> |
+|CDS Contacts V2 (contacts)|	1.0.0.0	| <p>New map for prospect contact persons.</p> |
+|Customers V3 (accounts)|	1.0.1.5	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running. Removed PartyNumber and other party-related fields like name, personal details, postal address fields, and electronic contact address.</p> |
+|Customers V3 (contacts)|	1.0.1.5	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running. Removed PartyNumber and other party-related fields like name, personal details, postal address fields, and electronic contact address.</p> |
 
 On the **Dual-write** page, make sure that all the above maps in the table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
 #### Setup (Without GAB solution – FnO version 10.0.39 or later) ####
 6.	Stop the following maps, since they are no longer required.
-a.	Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)
-b.	CDS sales order headers (salesorders)
-c.	CDS sales order lines (salesorderdetails)
-d.	CDS sales order lines V2 (salesorderdetails)
-e.	CDS sales quotation header (quotes)
-f.	CDS sales quotation lines (quotedetails)
-The following entity mappings are updated, so the latest version must be applied to these mappings.
-Map	Update to this version	Details
-Dynamics 365 Sales feature parameters (msdyn_supplychainfeaturestates)	1.0.0.0	New map for set up parameters for Dynamics 365 Sales integration
-Dynamics 365 Sales order headers (salesorders)	1.0.2.0	New map with discount customer groups and delivery date control.
-Dynamics 365 Sales order lines (salesorderdetails)	1.0.1.0	New map with delivery date control.
-Dynamics 365 Sales quotation header (quotes)	1.0.4.0	New map for quotation revision feature with ownership change capability, prospect integration, discount customer groups and delivery date control.
-Dynamics 365 Sales quotation lines (quotedetails)	1.0.0.0	New map for quotation lines
-Dynamics 365 Sales prospects (accounts)	1.0.0.0	New map for prospects of type organization
-Dynamics 365 Sales prospects (contacts)	1.0.0.0	New map for prospects of type person
-CDS Contacts V2 (contacts)	1.0.0.0	New map for prospect contact persons
-Customers V3 (accounts)	1.0.1.1	New map for setting relationship type when Dynamics 365 Sales prospects map is running.
-Customers V3 (contacts)	1.0.1.1	New map for setting relationship type when Dynamics 365 Sales prospects map is running.
 
+| Map | 
+|---|
+|Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)|
+|CDS sales order headers (salesorders)|
+|CDS sales order lines (salesorderdetails)|
+|CDS sales order lines V2 (salesorderdetails)|
+|CDS sales quotation header (quotes)|
+|CDS sales quotation lines (quotedetails)|
+
+7. The following entity maps are updated, so the latest version must be applied to these maps and be running.
+
+| Map | Update to this version | Details |
+|---|---|---|
+|Dynamics 365 Sales feature parameters (msdyn_supplychainfeaturestates)|	1.0.0.0|<p>	New map for set up parameters for Dynamics 365 Sales integration<p>|
+|Dynamics 365 Sales order headers (salesorders)| 1.0.2.0 | <p>New map with discount customer groups and delivery date control.</p> |
+|Dynamics 365 Sales order lines (salesorderdetails)| 1.0.1.0 | <p>New map with delivery date control.</p> |
+|Dynamics 365 Sales quotation header (quotes)| 1.0.4.0	 | <p>New map for quotation revision feature with ownership change capability, prospect integration, discount customer groups and delivery date control.</p> |
+|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>New map for quotation lines.</p> |
+|Dynamics 365 Sales prospects (accounts)|	1.0.0.0	| <p>New map for prospects of type organization.</p> |
+|Dynamics 365 Sales prospects (contacts)|	1.0.0.0	| <p>New map for prospects of type person.</p> |
+|CDS Contacts V2 (contacts)|	1.0.0.0	| <p>New map for prospect contact persons.</p> |
+|Customers V3 (accounts)|	1.0.1.1	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running.</p> |
+|Customers V3 (contacts)|	1.0.1.1	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running.</p> |
 
 On the **Dual-write** page, make sure that all the above maps in the table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
 #### Setup (FnO version 10.0.38 or earlier) ####
 6.	Stop the following maps, since they are no longer required.
-a.	CDS sales order headers (salesorders)
-b.	CDS sales order lines (salesorderdetails)
-c.	CDS sales order lines V2 (salesorderdetails)
-d.	CDS sales quotation header (quotes)
-e.	CDS sales quotation lines (quotedetails)
-The following entity mappings are updated, so the latest version must be applied to these mappings.
-Map	Update to this version	Details
-Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)	1.0.0.0	New map for Dynamics 365 Sales integration features
-Dynamics 365 Sales order headers (salesorders)	1.0.0.0	New map for sales orders.
-Dynamics 365 Sales order lines (salesorderdetails)	1.0.0.0	New map for sales order lines.
-Dynamics 365 Sales quotation header (quotes)	1.0.1.0	New map for quotation revision feature with ownership change capability.
-Dynamics 365 Sales quotation lines (quotedetails)	1.0.0.0	New map for quotation lines
- 
+
+| Map | 
+|---|
+|CDS sales order headers (salesorders)|
+|CDS sales order lines (salesorderdetails)|
+|CDS sales order lines V2 (salesorderdetails)|
+|CDS sales quotation header (quotes)|
+|CDS sales quotation lines (quotedetails)|
+
+7. The following entity maps are updated, so the latest version must be applied to these maps and be running.
+
+| Map | Update to this version | Details |
+|---|---|---|
+|Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)| 1.0.0.0 | <p>New map for Dynamics 365 Sales integration features.</p> |
+|Dynamics 365 Sales order headers (salesorders)| 1.0.0.0 | <p>New map for sales orders.</p> |
+|Dynamics 365 Sales order lines (salesorderdetails)| 1.0.0.0 | <p>New map for sales order lines.</p> |
+|Dynamics 365 Sales quotation header (quotes)| 1.0.1.0	 | <p>New map for quotation revision feature with ownership change capability.</p> |
+|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>New map for quotation lines.</p> |
+
 On the **Dual-write** page, make sure that all the above maps in the table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
 ### Step 3: Turn on the feature you need in Feature management
 
-Use the [Feature management](../get-started/feature-management/feature-management-overview.md) workspace to turn on the feature that's listed as required in the following table. Then use the workspace to turn on each optional feature that you want to use. For more information about what each feature does and how to work with it, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md).
+Use the [Feature management](../get-started/feature-management/feature-management-overview.md) workspace to turn on the feature that's listed in the following table. Then use the workspace to turn on the feature that you want to use. For more information about what each of the features released in 10.0.34 and 10.0.39 does and how to work with it, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md) and 
+[Enable prospect in prospect to cash with Dynamics 365 Sales](Enable prospect in prospect to cash concept.md)
 
 | Feature | Required or optional | Description |
 |---|---|---|
-| *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | Required | <p>This feature changes the way that sales quotations in Sales are integrated with sales quotations in Supply Chain Management through dual-write. After it's enabled, state and status transitions throughout the lifecycle of a sales quotation are mapped between the two apps, and a policy of ownership is applied to control the actions that are available for a sales quotation while it's in either Sales or Supply Chain Management.</p><p>In Supply Chain Management version 10.0.37 and later, after you enable this feature, you can turn the functionality on or off by using the **Integrate quotation lifecycles** option on the **Accounts receivable parameters** page (as described in the next section).</p> |
-| *Set default ownership for sales quotations when integrated with Dynamics 365 Sales* | Optional | This feature adds a field for setting default ownership to the **Accounts receivable parameters** page. This field can be set to *Based on origin*, *Dynamics 365 Sales*, or *Supply Chain Management*. If this feature is disabled, ownership is always based on the origin. |
-| *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* | Optional | <p>When this feature is enabled, calculations for extended amounts, summary amounts, subtotals, and totals for sales quotations and sales orders aren't done in Sales. When quotations or sales orders are created in Sales, if a price list exists in Sales, the price from that price list is used, but no other calculations are done. All calculated monetary fields are calculated in and synced from Supply Chain Management.</p><p>The following changes are made in the Sales user interface (UI) for sales quotation and sales order lines: the **Volume discount** field is hidden, and the **Manual discount** field becomes read-only and is relabeled **Discount**. Manual discounts can then be entered in the **Line discount amount** field.</p><p>In Supply Chain Management version 10.0.37 and later, after you enable this feature, you can turn the functionality on or off by using the **Make Supply Chain Management price master** option on the **Accounts receivable parameters** page (as described in the next section).</p> |
-| *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Optional | <p>This feature enables the system to calculate and push line prices, discounts, charges, taxes, and totals for a single sales order and sales quotation to Sales.</p><p>This feature adds a new menu item to the sales order and sales quotation list and details pages in Supply Chain Management. When this menu item is selected, it enables the calculation and pushes to Sales. The feature also adds two new pages that complement the existing **Calculate sales totals** page: **Calculate sales order totals for Sales** and **Calculate sales quotation totals for Sales**. Each of these pages lets you specify a range of sales orders or sales quotations that the calculation should consider.</p><p>In Supply Chain Management version 10.0.37 and later, after you enable this feature, you can turn the functionality on or off by using the **Calculate and push prices** option on the **Accounts receivable parameters** page (as described in the next section).</p> |
-| *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* | Optional | <p>This feature helps ensure data consistency between sales orders and related sales quotations in Supply Chain Management when sales orders are created from sales quotations in Sales and synced through dual-write. As a result, sales orders in Supply Chain Management contain the information from the sales quotation in Supply Chain Management.</p><p>This feature adds a field to the **Dynamics 365 Sales integration** tab of the **Accounts receivable parameters** page. Admins can use this field to specify whether quotation information is copied upon order creation or through the message processor.</p><p>In Supply Chain Management version 10.0.37 and later, after you enable this feature, you can turn the functionality on or off by using the **Copy quotation data to sales orders** option on the **Accounts receivable parameters** page (as described in the next section).</p> |
-| *Process Dynamics 365 Sales integration related events* | Optional | <p>This feature enables Sales integration-related events to be processed asynchronously via the message processor framework. This capability can improve performance in some scenarios, such as a scenario where the status of a sales quotation is transitioned when a quotation journal or quotation confirmation journal must be created.</p><p>In Supply Chain Management version 10.0.37 and later, after you enable this feature, you can turn the functionality on or off by using the **Use message processor** option on the **Accounts receivable parameters** page (as described in the next section).</p> |
+| *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* | Required | <p>This feature enables the integration of prospects between Dynamics 365 Sales and Supply Chain management over dual-write. Prospects in Supply Chain Management integrate with account type "prospect" in Dynamics 365 Sales. The lifecycle of a prospect from creation to converting into a customer is supported from both Dynamics 365 Sales and Supply Chain Management and is seamlessly integrated into the quotation winning process. With this feature, it is possible to use the prospect on a quotation in Supply Chain Management and as a potential customer in Dynamics 365 Sales. After you enable this feature, you can turn the functionality on or off by using the **Integrate quotation lifecycles** option on the **Accounts receivable parameters** page.</p> |
 
-> [!NOTE]
-> The status of these features in Supply Chain Management is exposed to Dataverse and will be consumed by business logic that's run in Sales. If **Integrate quotation lifecycles** and **Calculate and push prices** functionalities are enabled, they affect the process for working with sales quotations in both Sales and Supply Chain Management, and price calculations for sales orders and sales quotations in Sales. The exposure of feature statuses to Dataverse helps ensure consistency of feature statuses between the two apps. In Supply Chain Management version 10.0.37 and later, after you enable the features in Feature management, you can turn both functionalities on or off by using the **Accounts receivable parameters** page (as described in the next section).<!--Does this apply just when the feature is enabled in FM, or only when the parameters are also enabled? -->
-
-## <a name="config-parameters"></a>Configure extra efficiency in quote-to-cash with Dynamics 365 Sales
-
-After you've completed the initial setup, you can configure the features that you enabled in the previous section. The configuration settings that are available depend both on which features you've enabled in Feature management and which version of Supply Chain Management you're running. In Supply Chain Management versions 10.0.34 through 10.0.36, several features are managed by using Feature management only. However, as of version 10.0.37, these features can also be managed by using the **Accounts receivable parameters** page (after they're enabled in Feature management).
-
-To open the configuration settings, follow these steps.
+After you've completed the initial setup, you can configure the feature that you enabled. To open the configuration settings, follow these steps.
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. On the **Dynamics 365 Sales integration** tab, set the fields that are described in the following table. A tooltip is also provided for each field on the page.
 
     | FastTab | Field | Required features | Description |
     |---|---|---|---|
-    | **General** | **Integrate quotation lifecycles** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Enable or disable the functionality that's added by the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature. All other fields on the **General** FastTab require that this option is enabled.</p><p>For more information about this functionality, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).</p><p>This option requires Supply Chain Management version 10.0.37 or later. In previous versions, use Feature management to turn this feature on or off.</p> |
-    | **General** | **Copy quotation data to sales orders** | <p>*Integrate Sales Quotation lifecycle with Dynamics 365 Sales*</p><p>*Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales*</p> | <p>Enable or disable the functionality that's added by the *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* feature.</p><p>For more information about this functionality, see [Copy Supply Chain Management sales quotation data to sales orders synced from Sales](add-efficiency-in-quote-to-cash-use.md#copy-quotation-data).</p><p>This option requires Supply Chain Management version 10.0.37 or later. In previous versions, use Feature management to turn this feature on or off.</p> |
-    | **General** | **Make Supply Chain Management price master** | <p>*Integrate Sales Quotation lifecycle with Dynamics 365 Sales*</p><p>*Make Supply Chain Management price master when integrated with Dynamics 365 Sales*</p> | <p>Enable or disable the functionality that's added by the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature.</p><p>For more information about this functionality, see [Make Supply Chain Management the price master](add-efficiency-in-quote-to-cash-use.md#scm-price-master).</p><p>This option requires Supply Chain Management version 10.0.37 or later. In previous versions, use Feature management to turn this feature on or off.</p> |
-    | **General** | **Use message processor** | <p>*Integrate Sales Quotation lifecycle with Dynamics 365 Sales*</p><p>*Process Dynamics 365 Sales integration related events*</p> | <p>Enable or disable the functionality that's added by the *Process Dynamics 365 Sales integration related events* feature.</p><p>For more information about this functionality, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md).</p><p>This option requires Supply Chain Management version 10.0.37 or later. In previous versions, use Feature management to turn this feature on or off.</p> |
-    | **General** | **Calculate and push prices** | <p>*Integrate Sales Quotation lifecycle with Dynamics 365 Sales*</p><p>*Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales*</p> | <p>Enable or disable the functionality that's added by the *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* feature.</p><p>For more information about this functionality, see [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales](add-efficiency-in-quote-to-cash-use.md#push-to-sales).</p><p>This option requires Supply Chain Management version 10.0.37 or later. In previous versions, use Feature management to turn this feature on or off.</p> |
-    | **Message processor** | **Messages per task** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Set the maximum number of messages from the *Dynamics 365 Sales integration* queue that the message processor can process in a single batch task.</p><p>For more information about this field, see [Set message processor options](add-efficiency-in-quote-to-cash-use.md#processor-options).</p> |
-    | **Message processor** | **Create quotation journal in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Specify whether the message processor creates quotation journals asynchronously. Asynchronous creation improves performance when a quotation is activated in Sales.</p><p>For more information about this option, see [Set message processor options](add-efficiency-in-quote-to-cash-use.md#processor-options).</p> |
-    | **Message processor** | **Create quotation confirmation journal in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Specify whether the message processor creates quotation confirmation journals asynchronously. Asynchronous creation improves performance when a quotation is won in Sales.</p><p>For more information about this option, see [Set message processor options](add-efficiency-in-quote-to-cash-use.md#processor-options).</p> |
-    | **Message processor** | **Copy quotation data to sales order in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Specify whether the message processor copies quotation data to sales orders asynchronously. Asynchronous copying improves performance when a quotation is won in Sales.</p><p>For more information about this functionality, see [Copy Supply Chain Management sales quotation data to sales orders synced from Sales](add-efficiency-in-quote-to-cash-use.md#copy-quotation-data).</p> |
-    | **Message processor** | **Calculate and push prices and totals in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | <p>Specify whether the message processor runs the *Push price and totals*, *Calculate sales order totals for Sales*, and *Calculate sales quotation totals for Sales* processes asynchronously. Asynchronous runs improve performance.</p><p>For more information about this functionality, see [Choose whether to process and push totals synchronously or asynchronously](add-efficiency-in-quote-to-cash-use.md#synch-async).</p> |
-    | **Sales quotation** | **Default ownership** | <p>*Integrate Sales Quotation lifecycle with Dynamics 365 Sales*</p><p>*Set default ownership for sales quotations when integrated with Dynamics 365 Sales*</p>	| <p>Set the owner of the sales quotations (Supply Chain Management or Sales).</p><p>For more information about this functionality, see [Set the default ownership for all sales quotations](add-efficiency-in-quote-to-cash-use.md#default-ownership).</p> |
-
-## Troubleshooting
-
-After you enable the **Integrate quotation lifecycles** functionality, if the sales quotation lifecycle flow doesn't work as expected for newly created sales quotations, follow these steps. For more information about each step, see the [Step 2: Enable mappings in Supply Chain Management](#enable-mappings) section.
-
-1. In Supply Chain Management, go to **System administration \> Workspaces \> Data management**.
-1. In the **Data management** workspace, select **Dual-write**.
-1. Run an initial synchronization for the table map that's named *Dynamics 365 Sales feature management states (msdyn\_supplychainfeaturestates)*.
-1. Make sure that the following maps are running:
-
-    - *Dynamics 365 Sales order headers (salesorders)*
-    - *Dynamics 365 Sales order lines (salesorderdetails)*
-    - *Dynamics 365 Sales quotation header (quotes)*
-    - *Dynamics 365 Sales quotation lines (quotedetails)*
-
-1. Make sure that the following table maps have been stopped:
-
-    - *CDS Sales order headers (salesorders)*
-    - *CDS Sales order lines (salesorderdetails)*
-    - *CDS Sales quotation header (quotes)*
-    - *CDS Sales quotation lines (quotedetails)*
-
+    | **General** | **Integrate prospect** | *Integrate prospect with Dynamics 365 Sales* | <p>Enable or disable the functionality that's added by the *Enable prospect integration with Dynamics 365 Sales* feature. </p> |
