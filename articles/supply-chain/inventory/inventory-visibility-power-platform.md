@@ -1,5 +1,5 @@
 ---
-title: Use the Inventory Visibility app UI version 2 (preview)
+title: Use the Inventory Visibility app UI version 2
 description: This article describes how to use the Inventory Visibility app UI version 2.
 author: yufeihuang
 ms.author: yufeihuang
@@ -12,8 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Use the Inventory Visibility app UI version 2 (preview)
-
+# Use the Inventory Visibility app UI version 2
 This article describes how to use the Inventory Visibility app, which runs in Microsoft Power Apps.
 
 The Inventory Visibility app offers two versions of a model-driven user experience for visualization. Users can now choose between the new user interface (referred to as *UI version 2* in this article) and the old (legacy) user interface (referred to as *UI version 1* in this article).
