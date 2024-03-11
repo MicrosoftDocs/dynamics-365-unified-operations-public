@@ -20,7 +20,7 @@ Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with
 
 To take advantage of these improvements, you must enable the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature in Supply Chain Management and make sure that you're using a qualifying version of the Dual-write Supply chain solution.
 
-For a conceptual overview that describes how the improved prospect-to-cash system works and how the integrated system will behave, see [Enable-prospect-in-prospect-to-cash with Dynamics 365 Sales](Enable prospect-in-prospect-to-cash-concept.md).
+For a conceptual overview that describes how the improved prospect-to-cash system works and how the integrated system will behave, see [Enable-prospect-in-prospect-to-cash with Dynamics 365 Sales](Enable prospect-in-prospect-to-cash-concept.md). <!--KFM: Correct link to be added by Karl -->
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Before you can use the feature that is described in this article, your system mu
 
 ## Initial setup
 
-To add **Enable prospect in prospect-to-cash with Dynamics 365 Sales** functionality to your system, you must install the required solution in your dual-write environment, enable mappings in Supply Chain Management, and turn on the features that you want to use.
+To add **Enable prospect in prospect-to-cash with Dynamics 365 Sales** functionality to your system, you must install the required solution in your dual-write environment, enable mappings in Supply Chain Management, and turn on the feature that you want to use.
 
 ### Step 1: Add the Dual-write Supply Chain solution to your Power Platform environment
 
@@ -56,9 +56,9 @@ Follow these steps to add the Dual-write Supply Chain solution to your Power Pla
 
 ### <a name="enable-mappings"></a>Step 2: Enable mappings in Supply Chain Management
 Maps to enable depend on whether your Supply Chain Management version is 10.0.38 or older and on whether you have deployed the GAB dual-write solution.The following permutations exist and are described in the following: 
-* Supply Chain Management version 10.0.39 or later with GAB dual-write solution
-* Supply Chain Management version 10.0.39 or later without GAB dual-write solution
-* Supply Chain Management version 10.0.38 or older irrespective of GAB dual-write solution
+A. **Supply Chain Management version 10.0.39 or later with GAB dual-write solution**
+B. **Supply Chain Management version 10.0.39 or later without GAB dual-write solution**
+C. **Supply Chain Management version 10.0.38 or older irrespective of GAB dual-write solution**
 
 Follow these common steps to enable the required mappings in Supply Chain Management.
 1. Sign in to Supply Chain Management.
@@ -97,6 +97,9 @@ For GAB dual-write solution see https://learn.microsoft.com/en-us/dynamics365/fi
 |CDS Contacts V2 (contacts)|	1.0.0.0	| <p>New map for prospect contact persons.</p> |
 |Customers V3 (accounts)|	1.0.1.5	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running. Removed PartyNumber and other party-related fields like name, personal details, postal address fields, and electronic contact address.</p> |
 |Customers V3 (contacts)|	1.0.1.5	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running. Removed PartyNumber and other party-related fields like name, personal details, postal address fields, and electronic contact address.</p> |
+|Total discount customer groups| 1.0.0.0|<p>New map for Total discount customer groups.</p> | 
+|Line discount customer groups| 1.0.0.0|<p>New map for Line discount customer groups.</p> | 
+|Multiline discount customer groups| 1.0.0.0|<p>New map for Multiline discount customer groups.</p> | 
 
 On the **Dual-write** page, make sure that all the above maps in the table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
@@ -126,6 +129,9 @@ On the **Dual-write** page, make sure that all the above maps in the table show 
 |CDS Contacts V2 (contacts)|	1.0.0.0	| <p>New map for prospect contact persons.</p> |
 |Customers V3 (accounts)|	1.0.1.1	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running.</p> |
 |Customers V3 (contacts)|	1.0.1.1	| <p>New map for setting relationship type when Dynamics 365 Sales prospects map is running.</p> |
+|Total discount customer groups| 1.0.0.0|<p>New map for Total discount customer groups.</p> | 
+|Line discount customer groups| 1.0.0.0|<p>New map for Line discount customer groups.</p> | 
+|Multiline discount customer groups| 1.0.0.0|<p>New map for Multiline discount customer groups.</p> | 
 
 On the **Dual-write** page, make sure that all the above maps in the table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
@@ -149,17 +155,20 @@ On the **Dual-write** page, make sure that all the above maps in the table show 
 |Dynamics 365 Sales order lines (salesorderdetails)| 1.0.0.0 | <p>Existing map for sales order lines.</p> |
 |Dynamics 365 Sales quotation header (quotes)| 1.0.1.0	 | <p>New map for quotation revision feature with ownership change capability.</p> |
 |Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>Existing map for quotation lines.</p> |
+|Total discount customer groups| 1.0.0.0|<p>New map for Total discount customer groups.</p> | 
+|Line discount customer groups| 1.0.0.0|<p>New map for Line discount customer groups.</p> | 
+|Multiline discount customer groups| 1.0.0.0|<p>New map for Multiline discount customer groups.</p> | 
 
 On the **Dual-write** page, make sure that all the above maps in the table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
 ### Step 3: Turn on the feature you need in Feature management
 
 Use the [Feature management](../get-started/feature-management/feature-management-overview.md) workspace to turn on the feature that's listed in the following table. Then use the workspace to turn on the feature that you want to use. For more information about what each of the features released in 10.0.34 and 10.0.39 does and how to work with it, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md) and 
-[Enable prospect in prospect to cash with Dynamics 365 Sales](Enable prospect in prospect to cash concept.md)
+[Enable-prospect-in-prospect-to-cash with Dynamics 365 Sales](Enable prospect-in-prospect-to-cash-concept.md). <!--KFM: Correct link to be added by Karl -->
 
 | Feature | Required or optional | Description |
 |---|---|---|
-| *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* | Required | <p>This feature enables the integration of prospects between Dynamics 365 Sales and Supply Chain management over dual-write. Prospects in Supply Chain Management integrate with account type "prospect" in Dynamics 365 Sales. The lifecycle of a prospect from creation to converting into a customer is supported from both Dynamics 365 Sales and Supply Chain Management and is seamlessly integrated into the quotation winning process. With this feature, it is possible to use the prospect on a quotation in Supply Chain Management and as a potential customer in Dynamics 365 Sales. After you enable this feature, you can turn the functionality on or off by using the **Integrate quotation lifecycles** option on the **Accounts receivable parameters** page.</p> |
+| *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* | Required to enable prospect integration | <p>This feature can only be enabled when *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* is enabled. The feature enables the integration of prospects between Dynamics 365 Sales and Supply Chain management over dual-write. Prospects in Supply Chain Management integrate with account type "prospect" in Dynamics 365 Sales. The lifecycle of a prospect from creation to converting into a customer is supported from both Dynamics 365 Sales and Supply Chain Management and is seamlessly integrated into the quotation winning process. With this feature, it is possible to use the prospect on a quotation in Supply Chain Management and as a potential customer in Dynamics 365 Sales. After you enable this feature, you can turn the functionality on or off by using the **Integrate quotation lifecycles** option on the **Accounts receivable parameters** page.</p> |
 
 After you've completed the initial setup, you can configure the feature that you enabled. To open the configuration settings, follow these steps.
 
@@ -168,4 +177,4 @@ After you've completed the initial setup, you can configure the feature that you
 
     | FastTab | Field | Required features | Description |
     |---|---|---|---|
-    | **General** | **Integrate prospect** | *Integrate prospect with Dynamics 365 Sales* | <p>Enable or disable the functionality that's added by the *Enable prospect integration with Dynamics 365 Sales* feature. </p> |
+    | **General** | **Integrate prospect** | *Integrate prospect with Dynamics 365 Sales* | <p>This feature can only be turned on when *Integrate quotation lifecycles* is turned on. Enable or disable the functionality that's added by the *Enable prospect integration with Dynamics 365 Sales* feature. </p> |
