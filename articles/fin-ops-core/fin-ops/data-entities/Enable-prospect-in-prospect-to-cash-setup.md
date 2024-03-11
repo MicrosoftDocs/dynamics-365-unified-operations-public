@@ -24,10 +24,10 @@ For a conceptual overview that describes how the improved prospect-to-cash syste
 
 ## Prerequisites
 
-Before you can use the features that are described in this article, your system must meet the following requirements:
+Before you can use the feature that is described in this article, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.39 or later.
-- You must be running [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.XXX [To Be entered].
+- You must be running [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.XXX <!--KFM: Update when solution ID is provided by HenrikJ-->.
 
 ## Initial setup
 
