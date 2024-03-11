@@ -24,7 +24,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](../../dev-itpro/data-entities/dual-write/customer-mapping.md). For information about product integration, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.39 and later, **Account** of type customer and prospect is supported. This supports both an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, and a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales]. <!--KFM: Correct link to be added by Karl -->
+> In Supply Chain Management version 10.0.39 and later, **Account** of type customer and prospect is supported. This supports both an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, and a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales]. <!--KFM: Correct link to be added by Karl -->
 >
 
 ## Prerequisites and mapping setup
@@ -56,7 +56,7 @@ For example, the number sequence in Supply Chain Management is **1, 2, 3, 4, 5, 
 Sales quotations can be created in either Sales or Supply Chain Management. 
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.39 and later, **Account** of both type customer and prospect is supported. This enables an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, aswell as a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales].  <!--KFM: Correct link to be added by Karl -->
+> In Supply Chain Management version 10.0.39 and later, **Account** of both type customer and prospect is supported. This enables an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, aswell as a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales].  <!--KFM: Correct link to be added by Karl -->
 >
 
 If you create a quotation in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a quotation in Supply Chain Management, it's synced to Sales in real time. Note the following points:
@@ -66,7 +66,7 @@ If you create a quotation in Sales, it's synced to Supply Chain Management in re
 - The **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** columns aren't part of the default mappings. To map these columns, you must set up a value mapping that is specific to the data in the organizations that the table is synced between.
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.34 and later, the sales quotation lifecycle can be integrated between Sales and Supply Chain Management. For details about how to set up and enable this integration, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). When this functionality is enabled, state and status transitions throughout the lifecycle of a sales quotation are mapped between the two apps, and a policy of ownership is applied to control the actions that are available for a sales quotation when you work in Sales or Supply Chain Management. There's also related **Make Supply Chain Management price master** functionality that changes how calculations for sales quotations and sales orders are done in Sales. For more information about both functionalities, see [Add efficiency in Quote to Cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).
+> In Supply Chain Management the sales quotation lifecycle can be integrated between Sales and Supply Chain Management. For details about how to set up and enable this integration, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). When this functionality is enabled, state and status transitions throughout the lifecycle of a sales quotation are mapped between the two apps, and a policy of ownership is applied to control the actions that are available for a sales quotation when you work in Sales or Supply Chain Management. There's also related **Make Supply Chain Management price master** functionality that changes how calculations for sales quotations and sales orders are done in Sales. For more information about both functionalities, see [Add efficiency in Quote to Cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).
 
 If you are also using the Field Service solution, make sure to re-enable the **Quote Line Quick Create** parameter. Re-enabling the parameter lets you continue creating quote lines using the quick create function.
 
@@ -153,7 +153,7 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 For information about price lists, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> For more information about the entities introduced in Supply Chain Management version 10.0.39 (Total discount customer groups, Line discount customer groups, Multiline discount customer groups, Dynamics 365 Sales Prospect (accounts), Dynamics 365 Sales Prospect (contacts)), see [Enable prospect in prospect-to-cash with Dynamics 365 Sales].  <!--KFM: Correct link to be added by Karl -->
+> For more information about the entities introduced in Supply Chain Management version 10.0.39 (Dynamics 365 Sales Prospect (accounts), Dynamics 365 Sales Prospect (contacts),Dynamics 365 Sales feature parameters), see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales].  <!--KFM: Correct link to be added by Karl -->
 > 
 
 ## Limitations
