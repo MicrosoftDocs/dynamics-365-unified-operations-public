@@ -144,9 +144,9 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 [Dynamics 365 Sales quotation header](../../dev-itpro/data-entities/dual-write/mapping-reference.md#240) | quotes | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 [Dynamics 365 Sales quotation lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#241) | quotedetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 [Dynamics 365 Sales feature management states](../../dev-itpro/data-entities/dual-write/mapping-reference.md#237) | msdyn_supplychainfeaturestate | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
-|Dynamics 365 Sales Prospect (accounts)| | This entity is introduced through the *Enable prospects in prospect-to-cash with dual-write* feature.| 
-|Dynamics 365 Sales Prospect (contacts)| | This entity is introduced through the *Enable prospects in prospect-to-cash with dual-write* feature.|
-|Dynamics 365 Sales feature parameters| | This entity is introduced through the *Enable prospects in prospect-to-cash with dual-write* feature.|
+|Dynamics 365 Sales Prospect (accounts)| | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature.| 
+|Dynamics 365 Sales Prospect (contacts)| | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature.|
+|Dynamics 365 Sales feature parameters| | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature.|
 
  <!--KFM: Correct links to be added by Karl when the mapping reference page is updated by HenrikJ. Also add the colum detals for Customer engagement apps from the mapping reference -->
 
