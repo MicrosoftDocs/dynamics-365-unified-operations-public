@@ -1,5 +1,5 @@
 ---
-title: Customer and product price attribute groups
+title: Customer and product price attribute groups (preview)
 description: This article explains how to configure customer and product price attribute groups for the Pricing management module.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Customer and product price attribute groups
+# Customer and product price attribute groups (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

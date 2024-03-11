@@ -188,7 +188,17 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines
         text: General form guidelines
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
-        text: Build extensible controls    
+        text: Build extensible controls  
+    - title: Translation Service  
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview
+        text: Dynamics 365 Translation Service overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/dts-api-info
+        text: Dynamics 365 Translation Service API
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-aad-app-reg
+        text: Dynamics 365 Translation Service Visual Studio extension (Public preview)
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/dts-visual-studio
+        text: Translate user interface files
   - title: Use 
     items:
     - title: General ledger
@@ -311,6 +321,9 @@ additionalContent:
         - title: Dynamics 365 Commerce
           summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
           url: /dynamics365/commerce/
+        - title: Microsoft Copilot for Finance
+          summary: Copilot for Finance helps you surface insights that support strategic decision-making and reduce the time spent on manual, repetitive work.
+          url: /copilot/finance/
         - title: Dynamics 365 Project Operations
           summary: Project Operations connects sales, resourcing, project management, and finance teams in a single application to win more deals, accelerate project delivery, and maximize profitability.
           url: /dynamics365/project-operations/

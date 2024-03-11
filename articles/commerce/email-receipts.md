@@ -8,7 +8,6 @@ ms.date: 01/30/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 252934
 ms.assetid: 4b9f733b-bf28-4b85-94de-4f7adf67a62c
 ms.search.region: global
 ms.search.industry: Retail

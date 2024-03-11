@@ -1,5 +1,45 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery.md",
+      "redirect_url": "/power-platform/admin/business-continuity-disaster-recovery",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
+      "redirect_url": "dynamics365/finance/get-started/removed-deprecated-features-finance#Dataverse-solution-for-Electronic-invoicing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/norway/emea-pol-vat-declaration.md",
+      "redirect_url": "dynamics365/fin-ops-core/localizations/iberoamerica/ltm-set-up-legal-entity-tax-uruguay",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/ltm-set-up-legal-entity-tax-uruguay.md",
+      "redirect_url": "dynamics365/fin-ops-core/localizations/poland/emea-pol-vat-declaration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/link-your-environment.md",
+      "redirect_url": "fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md",
+      "redirect_url": "fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38",
+      "redirect_document_id": "false"
+    },    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",
       "redirect_url": "../apac/fixed-asset-depreciation-allocation",
       "redirect_document_id": "false"
@@ -1692,11 +1732,6 @@
     {
       "source_path": "articles/finance/localizations/e-invoicing-install-add-in-microservices-lcs.md",
       "redirect_url": "global/e-invoicing-install-add-in-microservices-lcs",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "articles/finance/localizations/e-invoicing-power-platform-plug-in.md",
-      "redirect_url": "dev-itpro/e-invoicing-power-platform-plug-in",
       "redirect_document_id": "false"
     },
     {
@@ -27360,8 +27395,203 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md ",
+      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md",
       "redirect_url": "../supply-chain-dev/production-floor-execution-styles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "articles/finance/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/sensor-data-intelligence/sdi-scenario-anomaly.md",
+      "redirect_url": "/dynamics365/supply-chain/sensor-data-intelligence/sdi-home-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/faq-sdi-spike.md",
+      "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/BPA-self-help-2.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-budget-err00002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "finance/business-performance-analytics/bpa-help-overview.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-3.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-main-account-in-budget-err00003",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-4.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-journal-entries-err00004",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-5.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/mismatch-between-debits-and-credits-err00005",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-6.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-data-err00006",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-7.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-budget-transaction-header-err00007",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-self-help-1.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/missing-fiscal-calendar-for-general-ledger-err00001",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "finance/business-performance-analytics/bpa-help-overview.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/cost.md",
+      "redirect_url": "/dynamics365/commerce/dom-costs",
       "redirect_document_id": false
     }
   ]

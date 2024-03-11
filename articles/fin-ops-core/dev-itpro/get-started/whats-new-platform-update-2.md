@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.custom: 140993
 ms.assetid: 7ab12871-d7b9-4bf8-9bde-1ab372db421a
 ROBOTS: NOINDEX, NOFOLLOW
 ---
@@ -117,7 +116,7 @@ Extensibility features are key features of the Dynamics AX platform because the 
 
 | What can you do? | Why is this important? |
 |------------------|------------------------|
-| Enable business-to-business scenarios by using the Azure AD Business to Business service. | External users can be invited to Dynamics AX using an externally managed identity. External users no longer have to be part of an existing Azure AD tenant. |
+| Enable business-to-business scenarios by using the Microsoft Entra Business to Business service. | External users can be invited to Dynamics AX using an externally managed identity. External users no longer have to be part of an existing Microsoft Entra tenant. |
 | Enable service-to-service authentication. | Registered services can connect to Dynamics AX without requiring a user to sign in. |
 
 ## Integrations

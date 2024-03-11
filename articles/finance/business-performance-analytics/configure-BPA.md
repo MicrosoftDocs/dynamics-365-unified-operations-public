@@ -6,13 +6,14 @@ description: This article describes how to configure business performance analyt
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 05/19/2023
+ms.date: 12/20/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
 ms.custom:
 audience: Application User
-
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
+ms.audience: administrator
 ---
 
 # Set up business performance analytics
@@ -25,7 +26,15 @@ This article describes how to configure business performance analytics.
 To complete the following procedures and successfully configure business performance analytics, you must have the following privileges:
 
 - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+  Follow these steps to confirm that you have these privileges:
+  1. In the Power Platform Admin Center, go to **Environments**. Select the relevant environment.
+  2. In the **Access** section, select users.
+  3. Click **Installing user** > **Roles**. Confirm the necessary privileges.
 - The **System administrator** role in Microsoft Dynamics 365 Finance.
+  Follow these steps to confirm that you have these privileges:
+  1. In Dynamics 365 Finance, go to **System administration**.
+  2. Select **Users** > **Users**.
+  3. Click **Installing user** > **Roles**. Confirm the necessary permissions.
 - The **Organization Admin** role to create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
 
 ## Configure Microsoft Power Platform
@@ -75,8 +84,20 @@ The following setup is required in the Dynamics 365 Finance before you can insta
 
     1. Go to **System administration \> License configuration**.
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
-    3. In **General ledger**, confirm that **Budget** and **Reversing entries** are enabled. If they aren't, select the checkboxes.
-
+    3. Confirm that the following checkboxes are enabled:
+        - **General ledger** - **Budget**, **Reversing entries**, **Sales tax**
+        - **Fixed assets**
+        - **Bank**
+        - **Trade**
+        - **Trade agreements**
+        - **Project**
+        - **Procurement 1**
+        - **Process distribution**
+        - **Retail channels**
+        - **Service management**
+       
+        
+       
 3. When you've finished, disable maintenance mode.
 
 ## Required configurations in Power Platform Admin Center

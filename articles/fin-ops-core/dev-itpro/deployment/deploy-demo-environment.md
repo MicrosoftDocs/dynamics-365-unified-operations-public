@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.custom: 141093
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 ---
 # Deploy a demo environment

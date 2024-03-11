@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: twheeloc
-ms.date: 06/07/2023
+ms.date: 02/22/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,64 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Finance 10.0.39 release
+
+### Sales tax report for Estonia (design based on reporting codes)
+
+[Sales tax report for Estonia](../localizations/estonia/emea-est-vat-statement-details.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [VAT declaration for Estonia](../localizations/estonia/emea-est-vat-declaration.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By February 1, 2025, we plan to no longer support the Sales tax report for Estonia (Estonian report layout). New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+
+### Sales tax (Italy) SSRS format, Italian report layout, menu item
+
+[Italian sales tax books](../localizations/italy/emea-ita-fiscal-books.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [Configure and report Italian sales tax books](../localizations/italy/emea-ita-sales-tax-books.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By March 1, 2025, we plan to no longer support the Sales tax (Italy) SSRS format, Italian report layout, menu item. New **VAT Declaration PDF (IT)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+
+## Features removed or deprecated in the Finance 10.0.38 release
+
+### Electronic Invoicing integration using Microsoft Dataverse
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | This feature is no longer required in the new version of the globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports **Electronic Invoicing integration using Microsoft Dataverse**. This feature is no longer required by the new version of the globalization feature for Electronic invoicing in Indonesia. |
+
+### Dataverse solution for Electronic invoicing
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | This solution is no longer required in the new version of the globalization feature for Indonesia, [Electronic invoicing for Indonesia](../localizations/indonesia/e-invoicing-id-get-started.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports **Dataverse solution for Electronic invoicing**. This plugin is no longer required by the new version of the globalization feature for Electronic invoicing in Indonesia. |
+
+### TaxYearlyCom_IT, TaxYearlyComReport_IT tables for Italian Yearly tax communication
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` tables for Italian Yearly tax communication are replaced with new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables. | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports the `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` tables for Italian Yearly tax communication. They are replaced with new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables for Italian Yearly tax communication. |
 
 ## Features removed or deprecated in the Finance 10.0.36 release
 

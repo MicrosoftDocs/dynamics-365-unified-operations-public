@@ -1,8 +1,8 @@
 ---
 title: Product receipt against purchase orders
 description: This article describes the various options for registering products as received.
-author: GalynaFedorova
-ms.author: gfedorova
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 ms.topic: conceptual

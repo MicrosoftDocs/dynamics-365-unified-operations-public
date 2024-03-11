@@ -7,6 +7,8 @@ ms.topic: conceptual
 ms.date: 10/30/2023
 ms.reviewer: johnmichalak
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot 
 ---
 
 # Entities eligible for copilot
@@ -1683,7 +1685,7 @@ This article contains a list of entities eligible for copilot.
 - SVC_ODataViewOverrideWithoutTable_DE
 - SVC_ODataViewOverrideWithTable_DE
 - SVC_ThrowExceptionDataEntity
-- SysAADClientTableEntity
+- SysMicrosoft Entra IDClientTableEntity
 - SysCompositeHeaderTableEntity
 - SysCompositeHeaderTestLineEntity
 - SysCompositeLineChildTableEntity

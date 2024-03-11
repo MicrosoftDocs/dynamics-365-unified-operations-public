@@ -4,10 +4,10 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This article explains how to upgrade data from Microsoft Dynamics AX 2012 in self-service environments.
 author: ttreen  
-ms.date: 04/03/2023
+ms.date: 11/03/2023
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2021-06-30
@@ -108,13 +108,13 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
    ```
    
     > [!IMPORTANT]
-    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours. 
+    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you might need to manually start the replication on during downtime hours. 
     
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start process, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
-    - **snapshotPostPublication** - This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
+    - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there might be situations where you want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This change, in conjunction with the manual snapshot start, lets you run smaller initial snapshots, which can be useful if you have limited maintenance windows and must split the startup of the replication over several.  
+    - **snapshotPostPublication** – This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
 
 
 > [!NOTE]
@@ -194,8 +194,17 @@ After the validation is successful, the application presents a set of menu optio
 5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
-    
-    You will be prompted with: **Do you want the snapshot to start automatically ? Continue by giving Y(Yes) for Automatic, else N(No) for manual(If No you have to manually start the snapshots from replication monitor)**. Selecting **Yes** will start the snapshot replication automatically, **No** will require that you go into SQL Management Studio, launch the Replication Monitor and manually start each snapshot. The advantage of manually starting snapshots allows you to control the load on the source SQL Server. This can use useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it allows you to split up when you start the snapshot process. 
+
+    > [!NOTE]
+    > Snapshots must be manually started in SQL Management Studio. Open the replication monitor, and select your SQL Server instance. Then, on the **Agents** tab, select and hold (or right-click) the publisher that you want to start, and select **Start**.
+    >
+    > Start one snapshot at a time, and wait for the replication of that snapshot to be completed. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
+    >
+    > For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](monitor-replication.md).
+    >
+    > You must manually start the publisher snapshots for steps 6 and 7.
+    >
+    > Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
@@ -217,7 +226,7 @@ After the validation is successful, the application presents a set of menu optio
 
 7. **Cutover: Setup Publication for Non PK Tables**
 
-    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. Again, you will be prompted as in the PK table step if you want to automatically or manually start the snapshot. 
+    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. 
     
     > [!NOTE]
     > If there are no locked tables, then publication will not be created.

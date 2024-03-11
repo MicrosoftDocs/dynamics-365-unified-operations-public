@@ -1,5 +1,5 @@
 ---
-title: Price component codes
+title: Price component codes (preview)
 description: This article describes how to create a price structure for pricing at the macro level by using Pricing management.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Price component codes
+# Price component codes (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

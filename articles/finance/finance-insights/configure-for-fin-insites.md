@@ -108,6 +108,6 @@ After the add-in is successfully installed, it might take up to an hour for the 
    After the **Insights provisioning status check** process is successfully run, you can view the enabled Finance insights features in the **Feature management** workspace.
 
 > [!NOTE]
-> If the **Insights provisioning status check** process doesn't run, go to **System administration** > **Inquiries** > **Batch jobs**. In the **Process automation polling system** field, change the value to **Waiting** to initiate the process. 
+> If the **Insights provisioning status check** process doesn't run, go to **System administration** > **Inquiries** > **Batch jobs**. In the **Process automation background process system job** field, change the value to **Waiting** to initiate the process. 
 > 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

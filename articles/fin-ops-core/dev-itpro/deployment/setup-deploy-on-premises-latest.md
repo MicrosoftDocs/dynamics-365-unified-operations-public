@@ -6,8 +6,7 @@ description: This article explains how to plan, set up, and deploy Microsoft Dyn
 author: faix
 ms.date: 02/08/2023
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata
@@ -16,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -86,7 +85,7 @@ Finance + Operations (on-premises) bits are distributed through Microsoft Dynami
 
 ## Authentication
 
-The on-premises application works with AD&nbsp;FS. To interact with Lifecycle Services, you must also configure Azure Active Directory (Azure AD). To complete the deployment and configure the Lifecycle Services local agent, you must have Azure AD. If you don't already have an Azure AD tenant, you can get one for free by using one of the options that Azure AD provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+The on-premises application works with AD&nbsp;FS. To interact with Lifecycle Services, you must also configure Microsoft Entra ID. To complete the deployment and configure the Lifecycle Services local agent, you must have Microsoft Entra ID. If you don't already have an Microsoft Entra tenant, you can get one for free by using one of the options that Microsoft Entra ID provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
@@ -273,7 +272,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
 | SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
-| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Azure AD tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
+| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
 You can use the wildcard SSL certificate for your domain to combine the Service Fabric Server certificate and the AOS SSL certificate. Here's an example of a Service Fabric Server certificate that's combined with an AOS SSL certificate.
 
@@ -506,14 +505,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 To enable data management and SSIS workloads, you must install SSIS on at least two nodes (at least one if the environment is a sandbox environment). This step is required for the DMF service to run.
 
 > [!IMPORTANT]
-> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available, and data management operations are performed by AOS.
+> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available, and data management operations will be performed by the AOS.
 
-You can have dedicated nodes that contain SSIS, or you can install SSIS on other node types. If you want to have dedicated SSIS nodes, specify which machines host the node type by filling in the details for that node in the ConfigTemplate.xml file.
-
-If your use of DMF is low, you might choose not to have dedicated nodes. Instead, you can choose which nodes will have SSIS installed by updating the **hasSSIS** attribute to **true** for each VM in the **ServiceFabricCluster** section of your ConfigTemplate.xml file. In this case, you should set the **disabled** attribute to **true** for the **SSISNodeType** node type in your ConfigTemplate.xml file.
-
-> [!NOTE]
-> If you disable the **SSISNodeType** node type but don't set the **hasSSIS** attribute on any node, the scripts and installation logic provision the DMF service to all nodes of the **BatchOnlyAOSNodeType** type. If that node type doesn't exist, the DMF service is provisioned to all nodes of the **AOSNodeType** type.
+For information about how to configure the DMF service, see [Configure your environment with a dedicated Data Management Framework service](onprem-DMFService.md).
 
 1. After you've decided which VMs need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
 1. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
@@ -670,15 +664,9 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-1. (Optional) If any of the nodes in your ConfigTemplate.xml have been set up with the **hasSSIS** attribute set to **true**, you must run the following command from a node that belongs to the Service Fabric cluster.
-
-```powershell
-.\Set-SFDynamicNodeTags.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-```
-
 ### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the tenant
 
-An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations (on-premises) through Lifecycle Services. To establish connectivity from Lifecycle Services to the Finance + Operations (on-premises) tenant, you must configure a certificate that enables the local agent to act on behalf of your Azure AD tenant (for example, contoso.onmicrosoft.com).
+An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations (on-premises) through Lifecycle Services. To establish connectivity from Lifecycle Services to the Finance + Operations (on-premises) tenant, you must configure a certificate that enables the local agent to act on behalf of your Microsoft Entra tenant (for example, contoso.onmicrosoft.com).
 
 Use the on-premises agent certificate that you acquired from a CA or the self-signed certificate that you generated by using scripts. The on-premises agent certificate can be reused across multiple sandbox and production environments per tenant.
 

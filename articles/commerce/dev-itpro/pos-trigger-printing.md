@@ -17,7 +17,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 # Store Commerce app triggers and printing
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 
@@ -42,7 +41,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
 | PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
 | PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
-| PreElevateUserTrigger      | Cancelable | This trigger is executed before the manager override and only works for non-Microsoft Azure Active Directory (Azure AD) user authentication. If Azure AD is enabled, this trigger won't work.   | 
+| PreElevateUserTrigger      | Cancelable | This trigger is executed before the manager override and only works for non-Microsoft Microsoft Entra user authentication. If Microsoft Entra is enabled, this trigger won't work.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 | PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 

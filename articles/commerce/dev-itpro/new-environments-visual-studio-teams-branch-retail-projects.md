@@ -279,7 +279,7 @@ Regardless of whether there are customizations in the code branches, the followi
 15. Open a browser window, and paste the URL into the address bar. You should be able to browse to your local Commerce Scale Unit.
 16. In Commerce, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
 17. In Commerce, run job **1060** (**AX/Distribution schedule**).
-18. Activate MPOS by using the same Azure Active Directory (Azure AD) user that you added in step 16. Paste the Commerce Scale Unit URL, select a store and a register, and finish the activation.
+18. Activate MPOS by using the same Microsoft Entra user that you added in step 16. Paste the Commerce Scale Unit URL, select a store and a register, and finish the activation.
 
 You should now be able to run MPOS in the debugger from your local sources.
 

@@ -12,7 +12,6 @@ ms.search.region: Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.custom: 274063
 ---
 
 # Sales tax reports for Poland

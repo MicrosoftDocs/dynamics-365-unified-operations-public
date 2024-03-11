@@ -1,5 +1,5 @@
 ---
-title: Price attributes for products, customers, and orders
+title: Price attributes for products, customers, and orders (preview)
 description: This article explains how to set up the configurable price attributes and link them to the products, customers, and orders.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Price attributes for products, customers, and orders
+# Price attributes for products, customers, and orders (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

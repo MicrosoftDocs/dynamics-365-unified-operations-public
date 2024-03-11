@@ -1,5 +1,5 @@
 ---
-title: Price attribute groups
+title: Price attribute groups (preview)
 description: This article explains how to configure price attribute groups for the Pricing management module.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Price attribute groups
+# Price attribute groups (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

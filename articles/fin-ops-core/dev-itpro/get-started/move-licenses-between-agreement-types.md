@@ -35,7 +35,7 @@ Less often, a customer who originally purchased the subscriptions through a Volu
 The process of moving subscriptions from one type of agreement to another is primarily a commercial process. The technical implications for the LCS Implementation project are minimal.
 
 > [!NOTE]
-> The movement of subscriptions between agreement types isn't the same as the movement of an Azure Active Directory (Azure AD) tenant. If the contractual changes in the agreements require that the **Azure AD tenant** on the subscriptions be changed, you must also follow the process that is described in [Move LCS implementation projects to different Azure AD tenants](move-lcs-implementation-project-tenant.md).
+> The movement of subscriptions between agreement types isn't the same as the movement of a Microsoft Entra tenant. If the contractual changes in the agreements require that the **Microsoft Entra tenant** on the subscriptions be changed, you must also follow the process that is described in [Move LCS implementation projects to different Microsoft Entra tenants](move-lcs-implementation-project-tenant.md).
 
 Subscriptions come with two standard environments: 
 
@@ -54,7 +54,7 @@ Use the following steps to complete the commercial transaction.
 1. The customer places the order for subscriptions under the new agreement with the Volume Licensing reseller or the CSP.
 
     > [!IMPORTANT]
-    > Make sure that the subscriptions are purchased against the same Azure AD tenant that is used on the original agreement.
+    > Make sure that the subscriptions are purchased against the same Microsoft Entra tenant that is used on the original agreement.
 
 2. The customer activates the subscriptions.
 3. In Microsoft 365 Admin Center, the customer verifies that both the new and the existing subscriptions are active for all user and device licenses, as well as for the add-on environment subscriptions. 
