@@ -110,7 +110,7 @@ New columns have been added to the **Order** table and appear on the page. Most 
 - The **Sales order status** value will remain **Active** to help ensure that changes from Supply Chain Management can flow to the sales order in Sales. To control this behavior, set the default **Statecode \[Status\]** value to **Active**.
 
 > [!NOTE]
-> The status integration of sales orders differ on whether you use the *CDS Sales order headers* (*salesorders*) entity or the  *Dynamics 365 Sales order headers* (*salesorders*) entity. For more information about the differences, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).
+> The status integration of sales orders differ on whether you use the *CDS Sales order headers* (*salesorders*) entity or the  *Dynamics 365 Sales order headers* (*salesorders*) entity. For more information about the differences, see [Set up the mapping for sales order status columns](../../dev-itpro/data-entities/dual-write/sales-status-map.md).
 
 ## Invoices
 
