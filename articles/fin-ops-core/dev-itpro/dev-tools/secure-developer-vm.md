@@ -92,6 +92,8 @@ Your one-box development environment can integrate with your Microsoft Entra ten
 - Import users.
 - Import Microsoft Entra ID groups.
 - Import Electronic reporting (ER) configurations.
+- Report execution using WCF service.
+- Data Task Automation.
 
 To use these capabilities, you must configure certificate access to your tenant.
 
@@ -117,15 +119,30 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. Add the environment URL as a redirect URI for the application. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
-6. Assign the API permissions for the application:
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, replace the value of the `audienceUris` key with the application ID/client ID.
+    ```
+    <securityTokenHandlerConfiguration>
+    <audienceUris>
+    <add value="spn:<your application ID>" />
+    </audienceUris>
+    ```
+6. Add the environment URL as a redirect URI for the application under **Web App** platform. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
+7. Add the environment OAUTH URL (EnvironmentURL/oauth) as a redirect URI for the application under **Web App** platform
+8. Assign the API permissions for the application:
 
     1. Go to **API Permissions**, select **Add a Permission**, and add the following permissions:
 
         - **Dynamics ERP** – This permission is required to access finance and operations environments.
         - **Microsoft Graph** (**User.Read.All** and **Group.Read.All** permissions of the **Application** type)
+        - **Dynamics Lifecycle service** (permission of type **Delegated**)
 
     2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
+9. Clear any cached configurations for LCS access using the SQL query on AX DB:
+     ```
+     DELETE FROM SYSOAUTHCONFIGURATION where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+  
+     DELETE FROM  SYSOAUTHUSERTOKENS where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+     ```
 
 For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
