@@ -1,8 +1,8 @@
 ---
-title: Quote-to-cash in dual-write
+title: Prospect-to-cash in dual-write
 description: This article provides information about Quote-to-cash in dual-write.
-author: RamaKrishnamoorthy
-ms.date: 01/07/2021
+author: Henrikan 
+ms.date: 03/15/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: sericks
@@ -24,7 +24,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](../../dev-itpro/data-entities/dual-write/customer-mapping.md). For information about product integration, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.39 and later, **Account** of type customer and prospect is supported. This supports both an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, and a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales]. [To be added]
+> In Supply Chain Management version 10.0.39 and later, **Account** of type customer and prospect is supported. This supports both an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, and a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales]. <!--KFM: Correct link to be added by Karl -->
 >
 
 ## Prerequisites and mapping setup
@@ -39,7 +39,7 @@ In Sales, go to **Settings \> Administration \> System settings \> Sales**, and 
 - The **Discount calculation method** column is set to **Line item**.
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.34 and later, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md). <!--KFM: Is this the right link? Which feature do you mean? -->
+> In Supply Chain Management an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md). 
 
 ### Sites and warehouses
 
@@ -56,7 +56,7 @@ For example, the number sequence in Supply Chain Management is **1, 2, 3, 4, 5, 
 Sales quotations can be created in either Sales or Supply Chain Management. 
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.39 and later, **Account** of both type customer and prospect is supported. This enables an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, aswell as a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales]. [To be added]
+> In Supply Chain Management version 10.0.39 and later, **Account** of both type customer and prospect is supported. This enables an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, aswell as a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable prospect in prospect-to-cash with Dynamics 365 Sales].  <!--KFM: Correct link to be added by Karl -->
 >
 
 If you create a quotation in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a quotation in Supply Chain Management, it's synced to Sales in real time. Note the following points:
@@ -100,7 +100,7 @@ If you sync from Supply Chain Management to Sales, you get the following result:
 - **Sales:** Quantity = 3, per-line discount = (3 × $3.33) + $0.01 = $10.00
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.34 and later, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md). <!--KFM: Is this the right link? Which feature do you mean? -->
+> In Supply Chain Management an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
 
 ## Dual-write solution for Sales
 
@@ -139,25 +139,21 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 [Sales invoice headers V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the finance and operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 [Sales invoice lines V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#117) | invoicedetails | |
 [Sales order origin codes](../../dev-itpro/data-entities/dual-write/mapping-reference.md#186) | msdyn_salesorderorigins | |
-[Dynamics 365 Sales order headers](../../dev-itpro/data-entities/dual-write/mapping-reference.md#238) | salesorders | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
+[Dynamics 365 Sales order headers](../../dev-itpro/data-entities/dual-write/mapping-reference.md#238) | salesorders | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature.|
 [Dynamics 365 Sales order lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#239) | salesorderdetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 [Dynamics 365 Sales quotation header](../../dev-itpro/data-entities/dual-write/mapping-reference.md#240) | quotes | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 [Dynamics 365 Sales quotation lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#241) | quotedetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 [Dynamics 365 Sales feature management states](../../dev-itpro/data-entities/dual-write/mapping-reference.md#237) | msdyn_supplychainfeaturestate | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
-NEW - Total discount customer groups
-NEW - Line discount customer groups
-NEW - Multiline discount customer groups
-NEW - Dynamics 365 Sales Prospect (accounts)
-NEW - Dynamics 365 Sales Prospect (contacts)
+|Dynamics 365 Sales Prospect (accounts)| | This entity is introduced through the *Enable prospects in prospect-to-cash with dual-write* feature.| 
+|Dynamics 365 Sales Prospect (contacts)| | This entity is introduced through the *Enable prospects in prospect-to-cash with dual-write* feature.|
+|Dynamics 365 Sales feature parameters| | This entity is introduced through the *Enable prospects in prospect-to-cash with dual-write* feature.|
+
+ <!--KFM: Correct links to be added by Karl when the mapping reference page is updated by HenrikJ. Also add the colum detals for Customer engagement apps from the mapping reference -->
 
 For information about price lists, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> For more information about the entities introduced in Supply Chain Management version 10.0.34 (Dynamics 365 Sales orders header, Dynamics 365 Sales order lines, Dynamics 365 Sales quotation, Dynamics 365 Sales quotation lines, Dynamics 365 Sales feature management states), see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
->
-> 
-> [!NOTE]
-> For more information about the entities introduced in Supply Chain Management version 10.0.39 (Total discount customer groups, Line discount customer groups, Multiline discount customer groups, Dynamics 365 Sales Prospect (accounts), Dynamics 365 Sales Prospect (contacts)), see [Enable prospect in prospect-to-cash with Dynamics 365 Sales].
+> For more information about the entities introduced in Supply Chain Management version 10.0.39 (Total discount customer groups, Line discount customer groups, Multiline discount customer groups, Dynamics 365 Sales Prospect (accounts), Dynamics 365 Sales Prospect (contacts)), see [Enable prospect in prospect-to-cash with Dynamics 365 Sales].  <!--KFM: Correct link to be added by Karl -->
 > 
 
 ## Limitations
