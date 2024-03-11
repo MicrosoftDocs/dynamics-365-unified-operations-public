@@ -20,7 +20,7 @@ Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with
 
 To take advantage of these improvements, you must enable the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature in Supply Chain Management and make sure that you're using a qualifying version of the Dual-write Supply chain solution.
 
-For a conceptual overview that describes how the improved prospect-to-cash system works and how the integrated system will behave, see [Enable-prospect-in-prospect-to-cash with Dynamics 365 Sales](Enable prospect-in-prospect-to-cash-concept.md). <!--KFM: Correct link to be added by Karl -->
+For a conceptual overview that describes how the improved prospect-to-cash system works and how the integrated system will behave, see [Work with prospect in prospect-to-cash with Microsoft Dynamics 365 Sales](Enable prospect-in-prospect-to-cash-concept.md). <!--KFM: Correct link to be added by Karl -->
 
 ## Prerequisites
 
@@ -164,7 +164,7 @@ On the **Dual-write** page, make sure that all the above maps in the table show 
 ### Step 3: Turn on the feature you need in Feature management
 
 Use the [Feature management](../get-started/feature-management/feature-management-overview.md) workspace to turn on the feature that's listed in the following table. Then use the workspace to turn on the feature that you want to use. For more information about what each of the features released in 10.0.34 and 10.0.39 does and how to work with it, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md) and 
-[Enable-prospect-in-prospect-to-cash with Dynamics 365 Sales](Enable prospect-in-prospect-to-cash-concept.md). <!--KFM: Correct link to be added by Karl -->
+[Work with prospect in prospect-to-cash with Microsoft Dynamics 365 Sales](Enable prospect-in-prospect-to-cash-concept.md). <!--KFM: Correct link to be added by Karl -->
 
 | Feature | Required or optional | Description |
 |---|---|---|
@@ -186,3 +186,5 @@ Then navigate to Sales and Marketing>Setup>Sales and marketing parameters. Expan
  > [!NOTE]
     > The **Enable prospects** settting can only be set to yes, when the **Integrate quotation lifecycles** is yes. The **Integrate quotation lifecycles** setting available when feature *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* is turned on. </p><p>For more information about this functionality, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).</p><p>
     
+## Next steps
+- [Work with prospect in prospect-to-cash with Microsoft Dynamics 365 Sales]. <!--KFM: Correct link to be added by Karl -->
