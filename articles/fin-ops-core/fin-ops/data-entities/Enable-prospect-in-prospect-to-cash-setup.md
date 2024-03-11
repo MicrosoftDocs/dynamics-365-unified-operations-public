@@ -91,7 +91,7 @@ For GAB dual-write solution see https://learn.microsoft.com/en-us/dynamics365/fi
 |Dynamics 365 Sales order headers (salesorders)| 1.0.2.1 | <p>New map with discount customer groups and delivery date control.</p> |
 |Dynamics 365 Sales order lines (salesorderdetails)| 1.0.1.0 | <p>New map with delivery date control.</p> |
 |Dynamics 365 Sales quotation header (quotes)| 1.0.4.1	 | <p>New map for quotation revision feature with ownership change capability, prospect integration, discount customer groups and delivery date control.</p> |
-|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>New map for quotation lines.</p> |
+|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>Existing map for quotation lines.</p> |
 |Dynamics 365 Sales prospects (accounts)|	1.0.0.1	| <p>New map for prospects of type organization.</p> |
 |Dynamics 365 Sales prospects (contacts)|	1.0.0.1	| <p>New map for prospects of type person.</p> |
 |CDS Contacts V2 (contacts)|	1.0.0.0	| <p>New map for prospect contact persons.</p> |
@@ -120,7 +120,7 @@ On the **Dual-write** page, make sure that all the above maps in the table show 
 |Dynamics 365 Sales order headers (salesorders)| 1.0.2.0 | <p>New map with discount customer groups and delivery date control.</p> |
 |Dynamics 365 Sales order lines (salesorderdetails)| 1.0.1.0 | <p>New map with delivery date control.</p> |
 |Dynamics 365 Sales quotation header (quotes)| 1.0.4.0	 | <p>New map for quotation revision feature with ownership change capability, prospect integration, discount customer groups and delivery date control.</p> |
-|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>New map for quotation lines.</p> |
+|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>Existing map for quotation lines.</p> |
 |Dynamics 365 Sales prospects (accounts)|	1.0.0.0	| <p>New map for prospects of type organization.</p> |
 |Dynamics 365 Sales prospects (contacts)|	1.0.0.0	| <p>New map for prospects of type person.</p> |
 |CDS Contacts V2 (contacts)|	1.0.0.0	| <p>New map for prospect contact persons.</p> |
@@ -145,10 +145,10 @@ On the **Dual-write** page, make sure that all the above maps in the table show 
 | Map | Update to this version | Details |
 |---|---|---|
 |Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)| 1.0.0.0 | <p>New map for Dynamics 365 Sales integration features.</p> |
-|Dynamics 365 Sales order headers (salesorders)| 1.0.0.0 | <p>New map for sales orders.</p> |
-|Dynamics 365 Sales order lines (salesorderdetails)| 1.0.0.0 | <p>New map for sales order lines.</p> |
+|Dynamics 365 Sales order headers (salesorders)| 1.0.0.0 | <p>Existing map for sales orders.</p> |
+|Dynamics 365 Sales order lines (salesorderdetails)| 1.0.0.0 | <p>Existing map for sales order lines.</p> |
 |Dynamics 365 Sales quotation header (quotes)| 1.0.1.0	 | <p>New map for quotation revision feature with ownership change capability.</p> |
-|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>New map for quotation lines.</p> |
+|Dynamics 365 Sales quotation lines (quotedetails)| 1.0.0.0 | <p>Existing map for quotation lines.</p> |
 
 On the **Dual-write** page, make sure that all the above maps in the table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
