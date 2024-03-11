@@ -23,15 +23,9 @@ The **Inventory summary** page is a customized view for the *Inventory OnHand Su
 >
 > If the **Inventory summary** page doesn't show all the on-hand information that you expect, open Dynamics 365 Supply Chain Management, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility integration**, disable the batch job, and then reenable it to do the initial push. All data will be synced to the *Inventory OnHand Sum* entity immediately after the initial push. If you want to use the inventory summary feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
-## Turn on the inventory summary feature in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## Turn on the inventory summary feature in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To enable the **Inventory summary** page and set the synchronization frequency in UI version 2, follow these steps.
 
