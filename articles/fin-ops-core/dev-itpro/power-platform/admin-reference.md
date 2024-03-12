@@ -3,8 +3,8 @@
 
 title: Configure Dataverse virtual entities
 description: This article explains how to configure virtual entities for finance and operations apps in Microsoft Dataverse.
-author: Sunil-Garg
-ms.date: 06/14/2022
+author: pnghub
+ms.date: 03/12/2024
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
 # ms.search.industry:
-ms.author: sunilg
+ms.author: gned
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
 ---
@@ -35,7 +35,7 @@ This article explains how to configure virtual entities for finance and operatio
 > [!IMPORTANT]
 > The configuration steps in this article are required only for finance and operations apps environments for which the Microsoft Power Platform integration is **not** enabled. For finance and operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration that is outlined in this article is automatically performed as part of the process for enabling the integration. 
 > 
-> If Dataverse virtual entities were configured manually, following the guidance in this article, prior to enabling the Microsoft Power Platform integration the manual configuration will no longer be used for the linked Power Platform environment after the Microsoft Power Platform integration is enabled. The virtual entities will connect to the Dataverse environment using the automatic configuration provided by the Microsoft Power Platform integration. However, manual configuration for virtual entities may still be used to connect the finance and operations apps environment to additional Power Platform environments with which the Microsoft Power Platform integration has not been enabled.
+> If Dataverse virtual entities were configured manually prior to enabling the Microsoft Power Platform integration, following the guidance in this article, the manual configuration is no longer used for the linked Power Platform environment after the Microsoft Power Platform integration is enabled. The virtual entities connect to the Dataverse environment using the automatic configuration provided by the Microsoft Power Platform integration. However, manual configuration for virtual entities may still be used to connect the finance and operations apps environment to additional Power Platform environments with which the Microsoft Power Platform integration has not been enabled.
 > 
 > For more information about how to enable the Microsoft Power Platform integration for finance and operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
@@ -51,7 +51,7 @@ Ensure the following solutions are installed in Dataverse.
 
 - **MicrosoftOperationsERPCatalog** - This provides a list of available finance and operations entities through the mserp_financeandoperationsentity virtual entity.
 
-- **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
+- **MicrosoftOperationsERPVE** - This is the API-managed solution that contains the generated virtual entities as they're made visible.
 
 When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. For more information about how to manually install and update the virtual entity solution, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps). 
 
@@ -60,7 +60,7 @@ When updates are available for the virtual entity solution, they can be manually
 
 ## Authentication and authorization
 
-After the solutions are imported into the Dataverse environment, both environments must be set up to connect to each other. Dataverse will call finance and operations apps by using Service-to-Service (S2S) authentication, based on a Microsoft Entra application. This new Microsoft Entra application represents the single instance of the Dataverse environment. If you have multiple pairs of Dataverse and finance and operations apps environments, separate Microsoft Entra applications must be created for each pair to ensure that connections are established between the correct pair of finance and operations apps and Microsoft Power Platform environments. 
+After the solutions are imported into the Dataverse environment, both environments must be set up to connect to each other. Dataverse calls finance and operations apps by using Service-to-Service (S2S) authentication, based on a Microsoft Entra application. This new Microsoft Entra application represents the single instance of the Dataverse environment. If you have multiple pairs of Dataverse and finance and operations apps environments, separate Microsoft Entra applications must be created for each pair to ensure that connections are established between the correct pair of finance and operations apps and Microsoft Power Platform environments. 
 
 > [!NOTE]
 > Virtual entities are not supported across tenants. The Microsoft Power Platform environment must be on the same Microsoft Entra tenant as the finance and operations apps environment.
@@ -78,13 +78,13 @@ The following procedure explains how to create the Microsoft Entra application.
 
     - **Name** - Enter a unique name.
 
-    - **Account type** - Enter **Any Microsoft Entra directory** (single or multi-tenant).
+    - **Account type** - Enter **Any Microsoft Entra directory** (single or multitenant).
 
     - **Redirect URI** - Leave blank.
 
     - Select **Register**.
 
-    - Make a note of the **Application (client) ID** value, because you will need it later.
+    - Make a note of the **Application (client) ID** value, because you need it later.
 
 3.  Create a symmetric key for the application.
 
@@ -94,29 +94,21 @@ The following procedure explains how to create the Microsoft Entra application.
 
     - Provide a description and an expiration date.
 
-    - Select **Save**. A key will be created and displayed. Copy this value for later use.
+    - Select **Save**. A key is created and displayed. Copy this value for later use.
 
 ### Grant app permissions in finance and operations apps
 
-The Microsoft Entra application that you created will be used by Dataverse to call finance and operations apps. Therefore, it must be trusted by finance and operations apps and associated with a user account that has the appropriate rights. A special service user that has rights **only** to the virtual entity functionality must be created in finance and operations apps. This service user must have no other rights. After you complete this step, any application that has the secret of the Microsoft Entra application that you created will be able to call this finance and operations apps environment and access the virtual entity functionality.
+The Microsoft Entra application that you created is used by Dataverse to call finance and operations apps. Therefore, it must be trusted by finance and operations apps and associated with a user account that has the appropriate rights. A special service user that has rights **only** to the virtual entity functionality must be created in finance and operations apps. This service user must have no other rights. After you completed this step, any application that has the secret of the Microsoft Entra application that you created is able to call this finance and operations apps environment and access the virtual entity functionality.
 
 1.  In finance and operations, go to **System Administration \> Users \> Users**.
-
-2.  Select **New** to add a new user. Enter the following information:
-
-    - **User ID** - Enter **dataverseintegration** (or a different value).
-
-    - **User name** - Enter **dataverse integration** (or a different value).
-
-    - **Provider** - Set to **NonMicrosoft Entra ID**.
-
-    - **Email** - Enter **dataverseintegration** (or a different value, does *not* need to be a valid email account).
-
+2.  Create a user in your Microsoft Entra ID. For example, dataverseintegration@contoso.com.
+3.  Go to **System Administration** \> **Users**, and then select **Import** Users and import this user to your finance and operations apps environment.
+    
     - Assign the security role **Dataverse Virtual entity integration app** to this user.
 
     - Remove all other roles including **System user**.
 
-3.  Go to **System Administration \> Setup \> Microsoft Entra applications** to register Dataverse. 
+4.  Go to **System Administration** \> **Setup** \> **Microsoft Entra applications** to register Dataverse. 
 
     - Add a new row.
 
