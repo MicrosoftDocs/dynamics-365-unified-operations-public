@@ -2029,6 +2029,8 @@
           href: demand-planning/design-calculation-models.md
       - name: Forecasts
         items:
+        - name: Rolling forecasts
+          href: demand-planning/rolling-forecasts.md
         - name: Work with forecast profiles
           href: demand-planning/forecast-profiles.md
         - name: Design forecast models
