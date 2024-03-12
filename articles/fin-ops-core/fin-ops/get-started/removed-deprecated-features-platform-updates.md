@@ -3,7 +3,7 @@
 
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
-author: pnghub
+author: twheeloc
 ms.date: 03/12/2024
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: gned
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-29 
 ms.dyn365.ops.version: Platform update 33
 
