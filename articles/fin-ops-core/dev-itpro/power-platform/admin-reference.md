@@ -102,21 +102,14 @@ The Microsoft Entra application that you created will be used by Dataverse to ca
 
 1.  In finance and operations, go to **System Administration \> Users \> Users**.
 
-2.  Select **New** to add a new user. Enter the following information:
-
-    - **User ID** - Enter **dataverseintegration** (or a different value).
-
-    - **User name** - Enter **dataverse integration** (or a different value).
-
-    - **Provider** - Set to **NonMicrosoft Entra ID**.
-
-    - **Email** - Enter **dataverseintegration** (or a different value, does *not* need to be a valid email account).
-
+2.  Create a user in your Entra ID like dataverseintegration@contoso.com.
+3.  Go to System Administration -> Users. Click on Import Users and import this user to your F&O environment
+    
     - Assign the security role **Dataverse Virtual entity integration app** to this user.
 
     - Remove all other roles including **System user**.
 
-3.  Go to **System Administration \> Setup \> Microsoft Entra applications** to register Dataverse. 
+5.  Go to **System Administration \> Setup \> Microsoft Entra applications** to register Dataverse. 
 
     - Add a new row.
 
