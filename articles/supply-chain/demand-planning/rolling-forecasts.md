@@ -14,12 +14,12 @@ ms.collection:
   - bap-ai-copilot
 ---
  
+# Rolling forecasts (preview)
+
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!-- KFM: Preview until April 1 -->
-
-# Rolling forecasts (preview)
 
 Rolling forecasts continuously update and extend their forecast horizon based on the latest data and assumptions. Rolling forecasts help to align the demand planning process with the changing business environment and improve the accuracy and reliability of the forecasts.
 
