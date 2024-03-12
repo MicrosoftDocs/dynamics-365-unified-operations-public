@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
-ms.date: 12/01/2023
+ms.date: 03/12/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,11 +44,22 @@ Detailed information about objects in finance and operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance the security and performance of Finance and operations apps, we're announcing deprecation of support to unregistered MSA and externals Microsoft Entra users in Finance and operations apps. |
-| **What is changing?**   | If a [Microsoft account (MSA)](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) aren't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. An error message will be displayed: `AADSTS50020: user account ‘contoso@contoso.com; from identity provider ‘https://sts.windows.net/{tenant Id}/’ doesn't exist in tenant ‘{tenant name}’ and can't access the application ‘{application Id}’(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account. The user will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect Granular delegated admin permissions (GDAP) or CSP users.
+| **What is changing?**   | If a [Microsoft account (MSA)](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) aren't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. An error message will be displayed: `AADSTS50020: user account ‘contoso@contoso.com; from identity provider ‘https://sts.windows.net/{tenant Id}/’ doesn't exist in tenant ‘{tenant name}’ and can't access the application ‘{application Id}’(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account. The user will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect Granular delegated admin permissions (GDAP) or CSP users.|
 | **What do you need to do?**         | If a user isn't part of your Microsoft Entra ID needs access to finance and operations, the user needs to be added to the Microsoft Entra ID Tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/).  |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | End of support date is targeted for May 2024. |
+
+### Mutitenant apps without service principal in AAD (Azure Active Directory) tenant 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** |Multitenant apps without client service principal have been recognised as vulnerable as it poses significant risk of acquiring cross-tenant OAuth app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without service principal in tenant will no longer be authenticated. Finance and operations APIs would start to fail from these apps on deprecated environments. For more information, see [Guidance on potential misconfiguration of authorization of multitenant applications that use Azure AD](/fin-ops-core/dev-itpro/data-entities/services-home-page#register-your-external-application). You can review your onboarded applications [here](/fin-ops-core/dev-itpro/data-entities/services-home-page#register-your-external-application). 
+|  **Replaced by another feature?**   |To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant applications in their AAD tenant. For more information, see [Create an enterprise application from a multi-tenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Support for app only tokens by multitenant apps without service principal id will be removed by February 2024 for non-production environments. By March 2024, support for app only tokens will be removed for production environments. |
+
 
 ## Feature deprecation effective March 2024
 
