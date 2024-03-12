@@ -1,5 +1,5 @@
 ---
-title: Transform data (preview)
+title: Transform data
 description: This article describes how to transform the imported data in a selected table into time series. You can then use the time series to create a forecast, do a comparison to a forecast, or do calculations.
 author: t-benebo
 ms.author: benebotg
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Transform data (preview)
+# Transform data
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Transformations let you transform the imported data in a selected table into time series. You can then use the time series to create a forecast, do a comparison to a forecast, or do calculations. For example, you might want to shift the historical demand time from last year by 12 months, so that it can be used as the basis for next year's forecast. Alternatively, you might want to combine daily historical demand data into monthly buckets, because you run planning on a monthly basis.
 
@@ -31,8 +28,6 @@ Each transformation profile takes a selected [main table](tables.md) as its inpu
 - Either the main table or one of its related tables must include at least one dimension column. Often, you'll select more than one dimension, so that you can analyze the data in multiple ways. For example, if you're looking at T-shirts, you might include columns for the color, size, style, and warehouse dimensions. You can then view the output time series to see, for example, the historical demand for red, extra-large T-shirts that are sold from the Chicago warehouse. You can also compare that demand with the overall sales of all T-shirts from all warehouses.
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to update the time series as they require.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## View and run existing transformation profiles
 

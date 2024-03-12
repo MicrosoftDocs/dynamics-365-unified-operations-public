@@ -2003,7 +2003,7 @@
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
-    - name: Demand planning (preview)
+    - name: Demand planning
       items:
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md

@@ -1,5 +1,5 @@
 ---
-title: Demand planning home page (preview)
+title: Demand planning home page
 description: This article introduces the Demand planning app for Microsoft Dynamics 365 Supply Chain Management, Microsoft's next-generation collaborative demand planning solution.
 author: t-benebo
 ms.author: benebotg
@@ -14,7 +14,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Demand planning home page (preview)
+# Demand planning home page
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,8 +30,6 @@ The Demand planning app provides the following capabilities:
 - **Disruption readiness** with interactive and fast what-if analysis. Version history enables tracking, evaluating forecast changes, and using the lessons learned to improve the decision making process.
 - **Effective collaboration throughout the planning cycle**. This capability is enabled through Microsoft Teams in-context communication, in-product commenting, and restorable versions of forecast values throughout the planning process.
 - **Increased agility through integrated planning and execution flow** with native integration with Supply Chain Management, customizable worksheets, and exception-based planning.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## The demand planning process
 
