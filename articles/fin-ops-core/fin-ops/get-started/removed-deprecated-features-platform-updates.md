@@ -58,7 +58,7 @@ Detailed information about objects in finance and operations apps can be found i
 |  **Replaced by another feature?**   |To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant applications in their AAD tenant. For more information, see [Create an enterprise application from a multi-tenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Support for app only tokens by multitenant apps without service principal id will be removed by February 2024 for non-production environments. By March 2024, support for app only tokens will be removed for production environments. |
+| **Status**                         | Support for app only tokens by multitenant apps without service principal id will be removed by February 2024 for non-production environments and by March 2024, for production environments. |
 
 
 ## Feature deprecation effective March 2024
