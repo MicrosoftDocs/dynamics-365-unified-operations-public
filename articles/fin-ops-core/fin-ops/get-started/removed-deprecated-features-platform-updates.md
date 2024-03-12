@@ -43,7 +43,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Entra ID tenant that's used for your finance and operations apps environment. Microsoft has identified this type of access as a security issue. Fore more information, see [Manually add a new user](../sysadmin/create-new-users#manually-add-a-new-user.md).|
+| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Entra ID tenant that's used for your finance and operations apps environment. Microsoft has identified this type of access as a security issue. For more information, see [Manually add a new user](../sysadmin/create-new-users#manually-add-a-new-user.md).|
 | **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Microsoft Entra admin center. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
@@ -191,7 +191,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The support for XSLT scripting in Data management is deprecated to improve security and data protection within finance and operations apps.  |
-| **Replaced by another feature?**   | No. Customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
+| **Replaced by another feature?**   | No, customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception will expire effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
@@ -226,7 +226,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The feature was returning unexpected results. |
-| **Replaced by another feature?**   | No. Any further plans regarding this functionality is communicated through our standard release wave disclosure process. |
+| **Replaced by another feature?**   | No, any further plans regarding this functionality is communicated through our standard release wave disclosure process. |
 | **Product areas affected**         | Web client - Document attachment experience |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated  |
