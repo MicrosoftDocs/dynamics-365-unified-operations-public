@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Data management error descriptions
+title: Data management error descriptions and known limitations
 description: This article describes the error messages that you might encounter in data management.
 author: peakerbl
 ms.date: 01/08/2024
@@ -116,6 +116,13 @@ Remove any control characters from the data or use a different file type for the
 |DMF2061|	Destination table is missing expected columns.|	Republish the entity.|
 |FF004|	Header row is missing.	|File imports not using xml are expected to have a row listing the column names. If that row is missing, or if there's a blank line at start of the file, this error is displayed. The header row determines which values belongs to their respective columns. Add the missing header row to the import file and remove any blank lines.|
 |MAP011|	Xml node not found.	|This occurs during composite entity import. You must have an element for every entity in the composite entity. Check your import file. You need xml element for every entity that makes up your composite entity. If there is an missing entity, add an element for it to the import file.  Data rows can be empty, but the element for the entity is required in the file.|
+
+### Known limitations
+
+Data management(DMF/DIXF) export to Excel has a 255 characters limit: 
+ - Data management(DMF) export job will truncate data with the Excel file type if there are more than 255 characters.
+ - This is a known SSIS limitation. Data longer than 255 characters will be truncated when exporting to Excel file type. For more information, see [Import from Excel or export to Excel with SSIS](/sql/integration-services/load-data-to-from-excel-with-ssis?view=sql-server-ver16#export-long-text-values).
+ - Use a different file type to export data using Data management(DMF) export job.
 
 
 
