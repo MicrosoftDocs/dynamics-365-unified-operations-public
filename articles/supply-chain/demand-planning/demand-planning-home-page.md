@@ -54,4 +54,4 @@ The Demand planning app provides functionality for the complete demand planning 
 
 ## Licensing
 
-The Demand planning app is currently in public preview and is free to use for testing and evaluation purposes. When the application becomes generally available, it will be licensed separately, and there will be an added cost to use it in a production environment.
+To use the Demand planning app in a production environment, you must have a license for it. For licensing options and pricing details, see [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
