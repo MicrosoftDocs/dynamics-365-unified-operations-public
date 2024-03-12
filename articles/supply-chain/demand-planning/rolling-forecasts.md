@@ -31,29 +31,29 @@ The following illustration shows an example of when rolling forecast processes c
 
 :::image type="content" source="media/rolling-forecast-processes.svg" alt-text="Example of rolling forecast processes and output" lightbox="media/rolling-forecast-processes.svg":::
 
-> [!NOTE]
-> On a continuous basis, if a forecast is fully recalculated, its baseline forecast is automatically recalculated and edits made during the previous period aren't kept.
-
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## How to use rolling forecasts
 
-Once you have set up the rolling forecasts in Demand planning, you can use the same worksheet <!--KFM: what worksheet? --> to compare the historical demand, the current forecast and the previous forecast. You can also modify, review, and edit the forecast as needed. Rolling forecasts automatically update and extend the forecast horizon each time they run.
+Once you have set up a rolling forecast, you can use the same worksheet <!--KFM: what worksheet? --> to compare the historical demand, the current forecast, and the previous forecast. You can also modify, review, and edit the forecast as needed. Rolling forecasts automatically update and extend the forecast horizon each time they run.
 
 Rolling forecasts can help you to monitor the performance of your demand planning process, identify and address issues by collaborating on the same forecast, and adjust your plans accordingly. Rolling forecasts can also help you to communicate and collaborate with other stakeholders, such as sales, marketing and finance, and align your demand planning with the strategic goals of the organization.
 
+> [!NOTE]
+> On a continuous basis, if a forecast is fully recalculated, its baseline forecast is automatically recalculated and edits made during the previous period aren't kept. <!--KFM: This isn't clear. Please revise. -->
+
 ## Set up rolling forecasts
+
+<!-- KFM: Shorten this, move instructions to [Work with forecast profiles (preview)](forecast-profiles.md), and add a link to that topic here.  -->
 
 You can fully automate a rolling forecast by scheduling each of its steps (import data, run a transformation, run a calculation, run a forecast, and export the forecast). There are two types of schedules for each step:
 
-- **Recurrent** – Triggered when a certain time and date are met according to the setup recurrence (daily, weekly, or monthly). The schedule begins on the first instance after the start date, and then the X time will be set between the<!--KFM: incomplete sentence. Please finish... -->.
+- **Recurrent** – Triggered at a certain date and time according to the configured schedule (daily, weekly, or monthly). The first run occurs on the first scheduled instance after the start date, and then the X time will be set between the<!--KFM: incomplete sentence. Please finish... -->.
 - **Event triggered** – Triggered when a certain event occurs, such as when new historical data exists (such as for transformations) or when there's a new version of the input time series for the given step.
 
 For each process, the schedule that applies is shown<!-- KFM: Shown where? -->. For example, for import, the only available option is to schedule<!-- KFM: Same as recurrent? -->. Transformations can be either recurrent or triggered by a new historical data import. Other processes can be either recurrent or triggered when a new version of the existing time series exists.
 
 You can create the schedule at either of the following times:
-
-<!--KFM: What kind of profiles are these? We should probably integrate these descriptions into the relevant profile topic. -->
 
 - **While creating the profile** – The **Set run schedule** section of the wizard provides settings that let you set up the recurrence and allow it to run automatically. To fully automate the process, you must have an existing time series, so we recommend that you run the profile for the first time manually and then use the existing time series.
 - **By editing an existing profile** – To add or modify the schedule to go the **Run Schedule** tab on the profile itself and modify the settings.
