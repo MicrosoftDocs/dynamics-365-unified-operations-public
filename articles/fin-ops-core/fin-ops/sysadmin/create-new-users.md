@@ -64,7 +64,13 @@ The values for Identity provider and Telemetry ID will be updated based on a [Mi
 > [!NOTE]
 > After you add a user, you must assign roles and organizations as applicable. For more information, see [Assign users to security roles](assign-users-security-roles.md). Conditionally, it might also be required to associate the user with a **Person** and to update **User options** such as language.
 > 
-> From March 2024, non Entra ID users are not supported. It implies, any alias other than, for example, user@contoso.com (service to service or interactive) in the Contoso tenant context will not have access to Contoso's Dynamics 365 finance and operations environment.
+> From March 2024, non Entra ID users are not supported.
+> 
+> 1. Any user who is not part of your Microsoft Entra ID (service-to-service or interactive) will not be allowed to onboard to your Dynamics 365 Finance and Operations environment.
+> 
+> 2. Any existing user(s) not part of your Microsoft Entra ID will not be allowed to log in to your Dynamics 365 Finance and Operations environment.
+> 
+> 3. If an existing user is not part of your Microsoft Entra ID, you cannot modify the details of the  user in the "Users" page under the System Admininstration workspace.
 
 
 ## Change a user ID
