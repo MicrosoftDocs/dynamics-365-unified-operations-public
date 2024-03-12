@@ -35,7 +35,7 @@ This article explains how to configure virtual entities for finance and operatio
 > [!IMPORTANT]
 > The configuration steps in this article are required only for finance and operations apps environments for which the Microsoft Power Platform integration is **not** enabled. For finance and operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration that is outlined in this article is automatically performed as part of the process for enabling the integration. 
 > 
-> If Dataverse virtual entities were configured manually, following the guidance in this article, prior to enabling the Microsoft Power Platform integration the manual configuration will no longer be used for the linked Power Platform environment after the Microsoft Power Platform integration is enabled. The virtual entities connect to the Dataverse environment using the automatic configuration provided by the Microsoft Power Platform integration. However, manual configuration for virtual entities may still be used to connect the finance and operations apps environment to additional Power Platform environments with which the Microsoft Power Platform integration has not been enabled.
+> If Dataverse virtual entities were configured manually prior to enabling the Microsoft Power Platform integration, following the guidance in this article, the manual configuration is no longer used for the linked Power Platform environment after the Microsoft Power Platform integration is enabled. The virtual entities connect to the Dataverse environment using the automatic configuration provided by the Microsoft Power Platform integration. However, manual configuration for virtual entities may still be used to connect the finance and operations apps environment to additional Power Platform environments with which the Microsoft Power Platform integration has not been enabled.
 > 
 > For more information about how to enable the Microsoft Power Platform integration for finance and operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
@@ -51,7 +51,7 @@ Ensure the following solutions are installed in Dataverse.
 
 - **MicrosoftOperationsERPCatalog** - This provides a list of available finance and operations entities through the mserp_financeandoperationsentity virtual entity.
 
-- **MicrosoftOperationsERPVE** - This is the API-managed solution that contains the generated virtual entities as they are made visible.
+- **MicrosoftOperationsERPVE** - This is the API-managed solution that contains the generated virtual entities as they're made visible.
 
 When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. For more information about how to manually install and update the virtual entity solution, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps). 
 
