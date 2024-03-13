@@ -55,6 +55,16 @@ To enter a custom sign-in domain in site builder, follow these steps.
 > [!WARNING]
 > When you update to a custom domain for the Microsoft Entra B2C tenant, the change affects the tenant's issuer details for the token generated. Issuer details will then include the custom domain instead of the default domain provided by Microsoft Entra B2C. A different **Issuer** configuration in Commerce headquarters (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Identity Providers**) changes the system's interaction with site users, potentially creating a new customer record if a user is authenticating against the new issuer. Any custom domain changes should be thoroughly tested before switching to the custom domain in a live Microsoft Entra B2C environment.
 
+### Configure a sign-in link with a custom return URL
+
+Use the following format to define a return URL from your Azure AD B2C login page:
+
+```{domainurl}/_msdyn365/signin?ru={channelUrl}```
+
+For example: https://www.adventure-works.com/_msdyn365/signin?ru=https://www.adventure-works.com/kiama-classic-surfboard/68719518371.p
+
+This URL format can be used in emails or other web communications to link users to an Azure AD B2C login screen and directly return them to a specific page on your site after login.
+
 ## Additional resources
 
 [Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
