@@ -2,12 +2,12 @@
 title: Japan consumption tax report
 description: This article explains how to set up and generate the Japan consumption tax report for legal entities in Japan.
 author: liza-golub
-ms.date: 06/10/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 03/13/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.author: egolub
 ms.search.validFrom: 2016-02-28
