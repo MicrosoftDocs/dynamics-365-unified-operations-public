@@ -29,7 +29,23 @@ Here are the main use cases for manifest-driven asset import and export operatio
 - Performing search and replace operations on the metadata (for example, rebranding)
 - Performing actions in bulk (for example, publishing or deleting assets)
 
+## Bulk import and export for product media
+
 Manifests can also be used to import and export product media assignments. The schema that's used for product media assignments is an extended version of the plain asset management manifest schema. For information about product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
+
+>[!NOTE]
+>To use bulk import and export product media assignment features for **Omnichannel (Channel) - Neutral (locale)**, HQ must be configured with **site builder's** application ID.  This step is a temporary requirement that will be unnecessary in a future update.
+>
+>To configure this, follow these steps:
+>
+>1. First, create a new user account in HQ by following the instructions [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/create-new-users#manually-add-a-new-user). This account will be used by the bulk CMS service to access HQ product data. The account name can be anything (example: "Bulk operations user").
+>2. Follow the instruction [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles#manually-assign-users-to-roles) to assign the [TODO] role to the new user account created in the previous step. *Note: The bulk CMS service only needs read-only privileges for HQ product data to function.*
+>3. In HQ, type **entra** in the top search field and select **Microsoft Entra ID applications** from the dropdown results.
+>4. Select **New** on the top action bar
+>5. Copy and paste the following GUID into the new record's **Client ID** field: ```3530b95b-aca8-4164-b78e-0c07cbfd0681```
+>6. Enter **CMS Bulk Operations** in the **Name** field.
+>7. Select the new user created in **step 1** from the **User ID** field.
+>8. Select **Save** from the top command bar.
 
 ## Manifest schema
 
