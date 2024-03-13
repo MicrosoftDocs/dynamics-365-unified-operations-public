@@ -29,6 +29,23 @@ If you updated to version 1.37 or higher of the online SDK package, you may expe
 
 To resolve this issue you must update Node.js to version 16.x on local build environments and any automated build environments such as Azure DevOps pipelines. 
 
+### How do I upgrade to Node 18?
+
+First, ensure you are on version 1.49+ of Commerce's [e-Commerce SDK](https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/setup-dev-environment#install-the-online-sdk-and-module-library).
+
+> [!NOTE] 
+> If after upgrading you experience an error running `yarn` like `node-sass: Command failed` you will need to remove `node-sass` and `sass-loader` from your `package.json` file, and re-run `yarn`.
+
+In order for your deployed app to run on Node 18, you will need to set the NODE_RUNTIME_VERSION environment variable in your build script.
+
+For example, your package.json should look like:
+
+```JSON
+
+"build": "SET NODE_RUNTIME_VERSION=18 && yarn msdyn365b build --use-eslint",
+
+```
+
 ### How do I resolve heap out of memory errors?
 
 If you are experiencing heap out of memory errors when building the online SDK, it is possible that the code has incorrect imports. To ensure that paths are set up correctly we recommend that you use the [CLI tools](cli-command-reference.md) included with the online SDK for creating customizations such as view extensions, component overrides, and module clones.
