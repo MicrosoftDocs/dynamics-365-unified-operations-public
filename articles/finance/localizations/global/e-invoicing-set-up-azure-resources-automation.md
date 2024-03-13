@@ -16,7 +16,7 @@ ms.author: amkedi
 
 This article explains how to create Microsoft Azure resources required for Electronic invoicing using Azure PowerShell or ARM templates.
 
-To enable e-invoicing in Dynamics 365 Finance, you need to create and configure several Azure resources, such as Azure Key Vault, Azure storage account, Azure container etc. This process can be time-consuming and error-prone if done manually. To simplify and automate this process, you can use a PowerShell script or an [ARM template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) that creates and configures all the required Azure resources for you.
+To enable e-invoicing in Dynamics 365 Finance, you need to create and configure several Azure resources, such as Azure Key Vault, Azure storage account, Azure container etc. This process can be time-consuming and error-prone if done manually. To simplify and automate this process, you can use a PowerShell script or an [ARM template](/azure/azure-resource-manager/templates/overview) that creates and configures all the required Azure resources for you.
 
 ## Use Azure PowerShell
 
@@ -24,7 +24,7 @@ To enable e-invoicing in Dynamics 365 Finance, you need to create and configure 
 
 Before you run the PowerShell script, you need to have the following prerequisites:
 - An Azure subscription with sufficient permissions to create and manage resources.
-- You have installed the [Azure PowerShell](https://learn.microsoft.com/en-us/powershell/azure/install-azure-powershell) module (A supported version of [PowerShell version 7 or higher](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows) is the recommended version of PowerShell for use with the Az PowerShell module)
+- You have installed the [Azure PowerShell](/powershell/azure/install-azure-powershell) module (A supported version of [PowerShell version 7 or higher](/powershell/scripting/install/installing-powershell-on-windows) is the recommended version of PowerShell for use with the Az PowerShell module)
 - The PowerShell script file.
 
 ### PowerShell script
@@ -418,4 +418,4 @@ To verify that the Azure resources are created and configured correctly, you can
 - Log in to the Azure portal and navigate to the resource group that contains the Azure resources. You should see the resources with the names specified in the PowerShell script/ARM template parameters.
 - Open the Azure Key Vault resource and check if the SAS token for the Azure storage account is created and has the correct value.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
