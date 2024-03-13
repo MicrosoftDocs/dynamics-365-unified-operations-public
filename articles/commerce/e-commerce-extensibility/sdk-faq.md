@@ -334,11 +334,11 @@ Core data actions with signature changes include:
 - **get-loyalty-transaction-estimation**
 - **issue-loyalty**
 
-The module library modules are updated with the correct calling pattern to the above data actions, so you don't receive any errors in these modules. However, if one of the modules was previously [cloned](clone-starter-module.md), it still has the older data action signature and displays the following error at runtime: "UserAuthorizationException. Customer account number on the request was wrong". The signatures need to be updated accordingly. One way to resolve this issue is to temporarily clone the module library module again with a new name, then differentiate the new module code with the previously cloned custom module and merge the changes. The temporary module can then be deleted.
+The module library modules are updated with the correct calling pattern to the above data actions, so you don't receive any errors in these modules. However, if one of the modules was previously [cloned](clone-starter-module.md), it still has the older data action signature and displays the following error at runtime: "UserAuthorizationException. Customer account number on the request was wrong." The signatures need to be updated accordingly. One way to resolve this issue is to temporarily clone the module library module again with a new name, then differentiate the new module code with the previously cloned custom module and merge the changes. The temporary module can then be deleted.
 
 ### After upgrading to module library version 9.23 (10.0.13 release), cloned modules or view extensions that import "CartlineComponent" or "WishListIconComponent" components may display the errors "export 'CartlineComponent' was not found in '@msdyn365-commerce/components'" or "export 'WishListIconComponent' was not found in '@msdyn365-commerce/components'".
 
-The "CartlineComponent" and "WishListIconComponent" components have been renamed to "CartLineItemComponent" and "WishlistIconComponent" respectively. If the previous component names are used in either a cloned module or a view extension, the build errors mentioned are displayed. To fix these issues, update the previous component names to the new component names in the cloned module or view extension code.
+The "CartlineComponent" and "WishListIconComponent" components are renamed to "CartLineItemComponent" and "WishlistIconComponent" respectively. If the previous component names are used in either a cloned module or a view extension, the build errors mentioned are displayed. To fix these issues, update the previous component names to the new component names in the cloned module or view extension code.
 
 ## Additional resources
 
