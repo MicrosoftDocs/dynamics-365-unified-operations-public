@@ -22,6 +22,15 @@ However, in some business scenarios, customers might request to return products 
 
 This article explains how to set up Supply Chain Management to support unannounced returns, and how to receive unannounced returns in the warehouse.
 
+## Prerequisites
+
+<!-- KFM: We might need this. I'm not sure. -->
+
+To receive unannounced sales returns, your system must meet the following prerequisites:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
+- If you also want to print return labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
+
 ## Receiving process for unannounced returns
 
 The *Return item receiving* flow in the Warehouse Management mobile app supports two processes for receiving unannounced returns: *Blind return* and *Return details*.
@@ -61,6 +70,10 @@ During the *Return item receiving* process, workers must use the mobile app to i
 - **Item number and quantity** – The items that are being returned and the quantity that's being returned for each item.
 - **License plate ID** – The license plate of the location where the incoming items are stored after they're received.
 - **Disposition code** – Depending on the setup of the mobile device menu item, workers might be able to select a disposition code to specify what should be done with the returned products. If this option isn't shown in the app during receiving, a Supply Chain Management user must enter a disposition code when they complete the mixed license plate.
+
+## Print return labels from a mobile device
+
+<!--KFM: Here is where we can tell more about this feature if we really want to. I'm not sure it's necessary. Links to how to set up printers, routing, etc. could also be included here. -->
 
 ## Set up unannounced sales return receiving
 
@@ -160,6 +173,7 @@ To enable workers to process unannounced returns, you must create a separate mob
     - **Barcode data policy** – Select the policy to use if multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](/dynamics365/supply-chain/warehousing/gs1-barcodes).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate.
     - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process.
+    - **Print label** – <!--KFM: Describe what happens if the user turns this on. Describe what the label is for. Maybe refer to the earlier section about printing labels if we choose to keep that. I don't think we need to mention printing in our scenarios. -->
     - **Return item receiving policy ID** – Select the [item receiving policy](#create-return-item-receiving-policies) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat steps 2 and 3 to create a menu item for the other process
