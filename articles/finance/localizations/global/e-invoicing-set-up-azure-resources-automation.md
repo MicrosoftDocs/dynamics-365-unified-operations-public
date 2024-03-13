@@ -394,7 +394,7 @@ To run the PowerShell script, follow these steps:
 }
 ```
 ## Deploying the ARM template
-1. Go to the [Azure portal](https://portal.azure.com/) and search for "Deploy a custom templates".
+1. Go to the [Azure portal](https://portal.azure.com/) and search for "Deploy a custom template".
 2. Click on 'Build your own template in the editor'
 3. Copy the ARM template provided above in the editor and click on Save.
 4. Provide the required parameters.
