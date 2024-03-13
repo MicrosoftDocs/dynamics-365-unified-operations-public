@@ -3,36 +3,33 @@ title: Create Azure resources using Azure PowerShell or ARM templates
 description: This article explains how to create Microsoft Azure resources required for Electronic invoicing using Azure PowerShell or ARM templates.
 author: amkedi
 ms.date: 03/11/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: amkedi
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: how-to
 ms.custom: 
-ms.assetid: 
-ms.search.form: 
+  - bap-template
+ms.reviewer: johnmichalak
+ms.author: amkedi
 ---
 
-# A step-by-step guide to automate the creation of Azure resources for e-invoicing.
+# Create Azure resources using Azure PowerShell or ARM templates
 
 [!include [banner](../../includes/banner.md)]
 
-# Introduction
+This article explains how to create Microsoft Azure resources required for Electronic invoicing using Azure PowerShell or ARM templates.
+
 To enable e-invoicing in Dynamics 365 Finance, you need to create and configure several Azure resources, such as Azure Key Vault, Azure storage account, Azure container etc. This process can be time-consuming and error-prone if done manually. To simplify and automate this process, you can use a PowerShell script or an [ARM template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) that creates and configures all the required Azure resources for you.
 
-# Using Azure PowerShell
-## Prerequisites
+## Use Azure PowerShell
+
+### Prerequisites
+
 Before you run the PowerShell script, you need to have the following prerequisites:
 - An Azure subscription with sufficient permissions to create and manage resources.
 - You have installed the [Azure PowerShell](https://learn.microsoft.com/en-us/powershell/azure/install-azure-powershell) module (A supported version of [PowerShell version 7 or higher](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows) is the recommended version of PowerShell for use with the Az PowerShell module)
 - The PowerShell script file.
 
-## PowerShell script
-```
+### PowerShell script
+
+``` powershell
 param (
     [Parameter(Mandatory=$true)]
     [string]$subscriptionId,
@@ -249,24 +246,33 @@ try {
 # Display the secret
 Write-Host "Secret created successfully."
 ```
-## Running the PowerShell script
-To run the PowerShell script, follow these steps:
-1. Open PowerShell and navigate to the folder where the PowerShell script file and the configuration file are located.
-2. Run the following command to execute the PowerShell script using your own parameters:
-```
-.\Create-AzureResourcesForEInvoice.ps1 -subscriptionId <azure_subscription_id> -resourceGroup <resource_group_name> -location <resource_group_location> -storageAccountName <storage_account_name> -containerName <container_name> -storageAccountKeyVaultSecretName <SAS_token_keyvault_secret_name>
-```
-3. The script will prompt you to sign in to your Azure account. Enter your credentials and click Sign in.
-4. The script will first check if the e-invoice service principal already exists and create if it doesn’t.
-5. The script will create and configure the following Azure resources: Azure resource group, Azure key vault, Azure storage account, Azure storage account container.
-6. It will check if the Azure resources already exist. If any resource already exists, it will skip creating it and proceed to the next one.
-7. It also generates a SAS token for the storage account container and add it as a key vault secret in the Azure key vault.
-8. Finally, the script also sets the access policy on the key vault to provide get and list permission to the e-Invoicing application.
-9. The script will output the details of the created Azure resources, such as the names, URLs, etc.
-10. Note: You can execute the same script in case you need to renew a SAS token that has expired. It will skip creation of the resources but generate a new SAS token and update it in the key vault.
 
-# Using ARM template
-## ARM template
+### Run the PowerShell script
+
+To run the PowerShell script, follow these steps.
+
+1. Open PowerShell and navigate to the folder where the PowerShell script file and the configuration file are located.
+1. Run the following command to execute the PowerShell script using your own parameters.
+ 
+   ``` script
+   .\Create-AzureResourcesForEInvoice.ps1 -subscriptionId <azure_subscription_id> -resourceGroup <resource_group_name> -location <resource_group_location> -storageAccountName <storage_account_name> -containerName <container_name> -storageAccountKeyVaultSecretName <SAS_token_keyvault_secret_name>
+   ```
+The PowerShell script performs the following actions.
+1. The script prompts you to sign in to your Azure account. Enter your credentials and select **Sign in**.
+1. The script checks if the e-invoice service principal already exists and creates it if it doesn’t.
+1. The script creates and configures the following Azure resources: Azure resource group, Azure key vault, Azure storage account, Azure storage account container.
+1. The script checks if the Azure resources already exist. If any resource already exists, it skips creating it and proceeds.
+1. The script generates an SAS token for the storage account container and adds it as a key vault secret in the Azure key vault.
+1. The script sets the access policy on the key vault to provide get and list permission to the e-Invoicing application.
+1. The script outputs the details of the created Azure resources, such as the names, URLs, etc.
+   
+   > [!NOTE]
+   > You can run the same script in case you need to renew a SAS token that has expired. It skips creation of the resources but generate a new SAS token and update it in the key vault.
+
+## Use the ARM template
+
+### ARM template
+
 ```
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
@@ -393,16 +399,23 @@ To run the PowerShell script, follow these steps:
     "outputs": {}
 }
 ```
-## Deploying the ARM template
-1. Go to the [Azure portal](https://portal.azure.com/) and search for "Deploy a custom template".
-2. Click on 'Build your own template in the editor'
-3. Copy the ARM template provided above in the editor and click on Save.
+
+### Deploy the ARM template
+
+To deploy the ARM template, follow these steps.
+
+1. Go to the [Azure portal](https://portal.azure.com/) and search for **Deploy a custom template**.
+2. Select **Build your own template in the editor**.
+3. Copy the ARM template provided above in the editor and select **Save**.
 4. Provide the required parameters.
    ![ARM template parameters for creating Azure resources.](../media/02_input_parameters.png)
-6. Click on "Review + Create".
-7. Review the details and click on "Create".
+6. Select **Review + Create**.
+7. Review the details and select **Create**.
 
-# Verifying the Azure resources
+## Verifying the Azure resources
+
 To verify that the Azure resources are created and configured correctly, you can do the following:
 - Log in to the Azure portal and navigate to the resource group that contains the Azure resources. You should see the resources with the names specified in the PowerShell script/ARM template parameters.
 - Open the Azure Key Vault resource and check if the SAS token for the Azure storage account is created and has the correct value.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
