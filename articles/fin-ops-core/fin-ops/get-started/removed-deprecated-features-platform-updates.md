@@ -50,6 +50,19 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | End of support date is targeted for May 2024. |
 
+
+## Feature deprecation effective April 2024
+
+###  Tokens without environment URL in finance and operations apps 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** |To enhance security compliance, we are deprecating the usage of tokens that aren't acquired with the resource or audience set as the environment URL in finance and operations apps.|
+|  **Replaced by another feature?**   |To ensure the security and integrity of your system and data, we strongly encourage all our customers to ensure that tokens are acquired with the resource or audience set as the environment URL only. Failure to comply with this requirement will result in API calls in finance and operations apps beginning to fail. We encourage all developers and administrators to update their token acquisition processes accordingly to avoid any disruption in API functionality. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Support for app only tokens by multitenant apps without service principal id will be removed by April 2024 for non-production environments and by May 2024, for production environments. |
+
 ### Mutitenant apps without service principal in AAD (Azure Active Directory) tenant 
 
 | &nbsp;  | &nbsp; |
@@ -97,7 +110,7 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The **Inquiries** > **User Log** is a legacy page that was built for the older client/server architecture. The information on this page isn't always accurate and can be misleading. |
-| **Replaced by another feature?**   | In Microsoft Dynamics 365 finance and operations apps, this information is captured in telemetry and Lifecycle Services has details. For more information, see [Track user sign-ins](../../dev-itpro/lifecycle-services/user-logins.md). |
+| **Replaced by another feature?**   | In finance and operations apps, this information is captured in telemetry and Lifecycle Services has details. For more information, see [Track user sign-ins](../../dev-itpro/lifecycle-services/user-logins.md). |
 | **Product areas affected**         | System Administration  |
 | **Deployment option**              | All |
 | **Status**                         | The User Log page will be removed by Jan 12 2024 (10.0.38/PU62) |
