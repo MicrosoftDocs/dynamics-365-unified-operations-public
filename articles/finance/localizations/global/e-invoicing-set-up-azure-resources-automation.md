@@ -398,8 +398,9 @@ To run the PowerShell script, follow these steps:
 2. Click on 'Build your own template in the editor'
 3. Copy the ARM template provided above in the editor and click on Save.
 4. Provide the required parameters.
-5. Click on "Review + Create".
-6. Review the details and click on "Create".
+   ![ARM template parameters for creating Azure resources.](../media/02_input_parameters.png)
+6. Click on "Review + Create".
+7. Review the details and click on "Create".
 
 # Verifying the Azure resources
 To verify that the Azure resources are created and configured correctly, you can do the following:
