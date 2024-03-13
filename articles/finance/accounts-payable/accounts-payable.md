@@ -4,7 +4,7 @@
 title: Accounts payable home page
 description: This article provides an overview of Accounts payable.
 author: sunfzam
-ms.date: 02/15/2019
+ms.date: 03/13/2024
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -41,8 +41,7 @@ You can enter vendor invoices manually or receive them electronically through a 
 
 ## Set up Accounts payable
 
-Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, 
-deliveries and destinations, promissory notes, and other types of Accounts payable information. 
+Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, deliveries and destinations, promissory notes, and other types of Accounts payable information. 
 
 [Configure Accounts payable overview](accounts-payable-overview.md)
 
@@ -71,6 +70,8 @@ Use Accounts payable to track invoices and outgoing expenditures to vendors.
 [Mobile invoice approvals](mobile-invoice-approvals.md)
 
 [Vendor collaboration invoicing workspace](vendor-portal-invoicing-workspace.md)
+
+[Invoice capture](invoice-capture-overview.md)
 
 [Vendor invoice automation](vendor-invoice-automation.md)
 
