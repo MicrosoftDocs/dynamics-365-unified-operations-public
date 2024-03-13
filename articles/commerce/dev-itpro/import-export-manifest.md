@@ -39,7 +39,7 @@ Manifests can also be used to import and export product media assignments. The s
 >To configure this, follow these steps:
 >
 >1. First, create a new user account in HQ by following the instructions [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/create-new-users#manually-add-a-new-user). This account will be used by the bulk CMS service to access HQ product data. The account name can be anything (example: "Bulk operations user").
->2. Follow the instruction [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles#manually-assign-users-to-roles) to assign the ```Quality control manager``` role to the new user account created in the previous step. *Note: The bulk CMS service only needs read-only privileges for HQ product data to function.*
+>2. Follow the instruction [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles#manually-assign-users-to-roles) to assign the ```Quality control manager``` role to the new user account created in the previous step. *Note: The bulk CMS service simply requires read-only privileges for HQ product data to function.*
 >3. In HQ, type "entra" in the top search field and select **Microsoft Entra ID applications** from the dropdown results.
 >4. Select **New** on the top action bar.
 >5. Copy and paste the following GUID into the new record's **Client ID** field: ```3530b95b-aca8-4164-b78e-0c07cbfd0681```
