@@ -24,11 +24,11 @@ This article explains how to set up Supply Chain Management to support unannounc
 
 ## Prerequisites
 
-<!-- KFM: We might need this. I'm not sure. -->
+<!-- KFM: We might need this. I'm not sure. Need to fill in the actual version numbers! -->
 
-To receive unannounced sales returns, your system must meet the following prerequisites:
+To use the features described in this article, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
+- To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
 - If you also want to print return labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
 
 ## Receiving process for unannounced returns
