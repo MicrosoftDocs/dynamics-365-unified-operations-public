@@ -84,10 +84,13 @@ The following table provides an example of sales tax reporting codes for Japan. 
 | 8308           | Bad debt | <ul><li>Sales tax receivable</li></ul> |
 | 8310           | Bad debt - paid | <ul><li>Sales tax on purchase credit note</li></ul> |
 |                | **Adjustments** | |
-| 221            | Adjustment (addition or subtraction) amount of consumption tax related to fixed assets subject to adjustment when taxable sales ratio changes | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note</li></ul> |
-| 222            | Adjustment (addition or subtraction) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note</li></ul> |
-| 223            | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note </li></ul> |
-| 2014           | Amount of adjustment (addition or subtraction) to the amount of consumption tax in case you do not receive (receive) exemption from tax liability | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note</li></ul> |
+| 8221           | Adjustment (addition) amount of consumption tax related to fixed assets subject to adjustment when taxable sales ratio changes | <ul><li>Sales tax receivable</li></ul> |
+| 8222           | Adjustment (addition) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | <ul><li>Sales tax receivable</li></ul> |
+| 8223           | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | <ul><li>Sales tax receivable</li></ul> |
+| 8014           | Amount of adjustment (addition) to the amount of consumption tax in case you do not receive exemption from tax liability | <ul><li>Sales tax receivable</li></ul> |
+| 7221           | Adjustment (subtraction) amount of consumption tax related to fixed assets subject to adjustment when taxable sales ratio changes | <ul><li>Sales tax on sales credit note</li></ul> |
+| 7222           | Adjustment (subtraction) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | <ul><li>Sales tax on sales credit note</li></ul> |
+| 7014           | Amount of adjustment (subtraction) to the amount of consumption tax in case you receive exemption from tax liability | <ul><li>Sales tax on sales credit note</li></ul> |
 
 ## Set up sales tax codes
 
