@@ -158,7 +158,7 @@ Follow the process in the article, [Tax engine import configuration](../../dev-i
 | <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.300.xml</li></ul> | <ul><li>Support the IGST tax calculation when the <b>with IGST payment</b> option is set to <b>Yes</b> on the SEZ/DE/Export order. The configuration can be used only in version 10.0.14 and later.</li></ul> |
 | <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.301.xml</li></ul> | <ul><li>Support decoupling of GST posting from inventory posting and the addition of **Interim transit** as a stock transfer posting type. The configuration can be used only in version 10.0.14 and later.</li></ul> |
 | <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.156.xml</li><li>Tax (India GST).version.82.156.302.xml</li></ul> | <ul><li>Support calculation of GST-TDS in vendor and customer payment journals. The configuration can be used only in version 10.0.18 and later.</li></ul> |
-| <ul><li>Taxable Document.version.83.xml</li><li>Taxable Document (India).version.83.157.xml</li><li>Tax (India GST).version.83.157.303.xml</li></ul> | <ul><li>Support project operation integration journals. The configuration can be used only in version 10.0.35 and later.</li></ul> |
+| <ul><li>Taxable Document.version.83.xml</li><li>Taxable Document (India).version.83.157.xml</li><li>Tax (India GST).version.83.157.303.xml</li></ul> | <ul><li>Support Microsoft Dynamics 365 Poject Operations integration journals. The configuration can be used only in version 10.0.35 and later.</li></ul> |
 
 ### Report configurations
 
