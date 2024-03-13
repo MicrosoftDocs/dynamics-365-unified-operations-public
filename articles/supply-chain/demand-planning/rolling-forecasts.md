@@ -27,15 +27,19 @@ The following illustration shows an example of a rolling forecast that recurs on
 
 :::image type="content" source="media/rolling-forecast-monthly.svg" alt-text="Example of a monthly rolling forecast" lightbox="media/rolling-forecast-monthly.svg":::
 
+<!-- KFM: Add this when event-triggered processes are supported:
+
 The following illustration shows an example of when rolling forecast processes could run and what their outputs could be.
 
 :::image type="content" source="media/rolling-forecast-processes.svg" alt-text="Example of rolling forecast processes and output" lightbox="media/rolling-forecast-processes.svg":::
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
+-->
+
 ## How to use rolling forecasts
 
-Once you have set up a rolling forecast, you can use the same worksheet <!--KFM: what worksheet? --> to compare the historical demand, the current forecast, and the previous forecast. You can also modify, review, and edit the forecast as needed. Rolling forecasts automatically update and extend the forecast horizon each time they run.
+Once you have set up a rolling forecast, you can use different versions of the same time series to compare the historical demand, the current forecast, and the previous forecast. You can also modify, review, and edit the forecast as needed. Rolling forecasts automatically update and extend the forecast horizon each time they run.
 
 Rolling forecasts can help you to monitor the performance of your demand planning process, identify and address issues by collaborating on the same forecast, and adjust your plans accordingly. Rolling forecasts can also help you to communicate and collaborate with other stakeholders, such as sales, marketing and finance, and align your demand planning with the strategic goals of the organization.
 
@@ -44,18 +48,27 @@ Rolling forecasts can help you to monitor the performance of your demand plannin
 
 ## Set up rolling forecasts
 
-<!-- KFM: Shorten this, move instructions to [Work with forecast profiles (preview)](forecast-profiles.md), and add a link to that topic here.  -->
+You can fully automate a rolling forecast by scheduling each of its processes (import data, run a transformation, run a calculation, run a forecast, and export the forecast).
 
-You can fully automate a rolling forecast by scheduling each of its steps (import data, run a transformation, run a calculation, run a forecast, and export the forecast). There are two types of schedules for each step:
+Follow these steps to schedule a process.
 
-- **Recurrent** – Triggered at a certain date and time according to the configured schedule (daily, weekly, or monthly). The first run occurs on the first scheduled instance after the start date, and then the X time will be set between the<!--KFM: incomplete sentence. Please finish... -->.
-- **Event triggered** – Triggered when a certain event occurs, such as when new historical data exists (such as for transformations) or when there's a new version of the input time series for the given step.
+1. Go to one of the following pages, depending on which type of process you want to schedule:
+    - **Data management** \> **Import**
+    - **Data management** \> **Export**
+    - **Operations** \> **Forecast profile**
+    - **Operations** \> **Calculations**
+    - **Operations** \> **Transformations**
 
-For each process, the schedule that applies is shown<!-- KFM: Shown where? -->. For example, for import, the only available option is to schedule<!-- KFM: Same as recurrent? -->. Transformations can be either recurrent or triggered by a new historical data import. Other processes can be either recurrent or triggered when a new version of the existing time series exists.
+1. Select the profile that you want to schedule or create a new profile.
+    - If you're create a new profile, then work through the creation wizard as usual. When you get to the **Set run schedule** page of the wizard, you can set up a schedule by making the settings described in the rest of this procedure. However, to fully automate most types of processes, you must have an existing time series, so we recommend that you run the profile for the first time manually to create the required time series and then edit the profile to set up the schedule using that time series.
+    - If you're editing an existing profile, then go the **Run Schedule** tab.
 
-You can create the schedule at either of the following times:
+1. Set **Run schedule** to one of the following values:
+    - **None** – The process isn't scheduled to run automatically. You must run it manually.
+    - **Recurring** – The process is triggered at a certain date and time according to the configured schedule (daily, weekly, or monthly).
+    - **Event triggered** – The process is triggered when a certain event occurs, such as when new historical data exists (such as for transformations) or when there's a new version of the input time series for the given process. <!--KFM: I expected to see this. Is it coming later? -->
 
-- **While creating the profile** – The **Set run schedule** section of the wizard provides settings that let you set up the recurrence and allow it to run automatically. To fully automate the process, you must have an existing time series, so we recommend that you run the profile for the first time manually and then use the existing time series.
-- **By editing an existing profile** – To add or modify the schedule to go the **Run Schedule** tab on the profile itself and modify the settings.
-
-When scheduling for the output settings, you can set the system to create a new time series every time or to create a new version of the same time series. We recommend that you create a new version so the process can be fully automated. To keep traceability of the whole process, we recommend that you choose to save current version as new version before overwriting.
+1. In the **Set run date recurrence** section, define how often the process should run and the start and end dates during which it should run.
+1. In the **Output settings** section, choose how you want to save the output of the process. Choose one of the following options:
+    - To create a new time series after each run, set **Save output as** to *Create new time series*. In the **Time series name** field, enter a base name for the new time series, and in the **Append to name** field, choose a dynamic suffix to add to the base name, which will give each time series a unique name. You can choose to use the *Run date*, *Run month*, or *Run month & year* as your suffix.
+    - To add a new version to an existing time series after each run, set **Save output as** to *New version of the same time series*. Then set **Use existing time series** to the target time series (it must already exist). We recommend that you also select the **Save current as a version before overwriting** check box to maintain traceability of the whole process and make sure the system doesn't overwrite data you'll need later. For more information about how time series versions work, see [Time series and planning data](time-series.md).
