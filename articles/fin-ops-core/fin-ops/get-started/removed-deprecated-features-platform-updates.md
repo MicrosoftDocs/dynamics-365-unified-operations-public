@@ -147,7 +147,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | AX 2012 versions | Yes | No | No |
 | Work items stored in Lifecycle Services storage | Yes | Yes | No |
 | Hotfix requests | Yes | Yes | No |
-
+ 
 
 ### Transport Layer Security (TLS) RSA cipher suites
 
