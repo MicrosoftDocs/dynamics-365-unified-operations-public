@@ -143,6 +143,7 @@ If you must use the previously mentioned capabilities in your one-box developmen
   
      DELETE FROM  SYSOAUTHUSERTOKENS where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
      ```
+10. Perform IISRESET from administartor command prompt.    
 
 For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
