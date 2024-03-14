@@ -39,13 +39,13 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective May 2024
 
-### Support for unregistered Microsoft account and external Microsoft Entra users
+### Support for unregistered Microsoft account and external Microsoft Entra ID users
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
 | **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You'll receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant Id}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application Id\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account. The user will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect Granular delegated admin permissions (GDAP) or CSP users. |
-| **What do you need to do?**         | If a user who isn't part of your Microsoft Entra ID requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
+| **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | End of support date is targeted for May 2024. |
@@ -62,24 +62,25 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by April 2024 for non-production environments and by May 2024 for production environments. |
 
-### Multitenant apps without a service principal in the Azure AD tenant 
+### Multitenant apps without a service principal in the Microsoft Entra ID tenant 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Multitenant apps that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant Open Authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant will no longer be authenticated. Finance and operations APIs will start to fail from these apps in deprecated environments. For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application). |
-| **Replaced by another feature?**   | To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Azure Active Directory (Azure AD) tenant. For more information, see [Create an enterprise application from a multi-tenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). |
+| **Replaced by another feature?**   | To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multi-tenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). 
+Note – If application onboarding isn't expected, remove that app or replace with a compliant app that has a client service principal in tenant. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for non-production environments and by March 2024 for production environments. |
+| **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for non-production environments and by May 2024 for production environments. |
 
 ## Feature deprecation effective March 2024
 
-### Non-Azure AD external user sign-in 
+### Non Microsoft Entra ID external user sign-in 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Azure AD) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
-| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Azure AD portal. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
+| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Entra ID tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
+| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Microsoft Entra ID portal. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. End of support date is targeted for March 2024. |
