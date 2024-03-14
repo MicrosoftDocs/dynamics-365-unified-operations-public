@@ -121,9 +121,9 @@ The default cloud-based WOPI server in Finance + Operations can't read the attac
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview then shows the message "No preview available" instead of an error message.
 
-### Document preview (WOPI) won't work in environments with an IP safe list enabled
+### Document preview (WOPI) doesn't work in environments with an IP safe list enabled
 
-Document preview (WOPI) won't work in environments with an IP safe list enabled, because the WOPI service that provides the preview aren't able to connect back to the file service to retrieve the file for rendering.
+Document preview (WOPI) doesn't work in environments with an IP safe list enabled, because the WOPI service that provides the preview aren't able to connect back to the file service to retrieve the file for rendering.
 
 ## Other configuration
 
@@ -131,7 +131,7 @@ Here are some other configuration options to consider:
 
 - On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Only turn on this option when required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. When SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes. 
-- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you're using SharePoint for storing attachments, as this prevents the finance and operations user session from resetting when opening attachments. This option is available starting in version 10.0.23. 
+- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you're using SharePoint for storing attachments, because this option prevents the finance and operations user session from resetting when opening attachments. This option is available starting in version 10.0.23. 
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments 
@@ -161,7 +161,7 @@ In Platform update 29, an attachment recovery feature was added that provides a 
 
 Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days but can be changed as needed. If the **Number of days to defer deletion** value is zero, the deleted attachments are recoverable for an indefinite period. 
 
-After attachment recovery is enabled, a batch job with this name is created, "Scans for deleted references which have reached the end of their retention period." This batch job will use the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
+After attachment recovery is enabled, a batch job with this name is created, "Scans for deleted references which have reached the end of their retention period." This batch job uses the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
 
 ### Deleting attachments when attachment recovery is active
 
@@ -265,7 +265,7 @@ To export attachments, follow these steps.
 | **Date field label** | Label assigned to the selected date field. | Date |
 | **Enabled**          | When the checkbox is selected, the system includes the related table with the next exporting job. | Yes |
 
-    ![Export attachments page.](../media/docu-ref-export-attachments-page.png)
+![Export attachments page.](../media/docu-ref-export-attachments-page.png)
 
 3. Select **Export** on the Action Pane to open the **Export attachments** dialog. The following table describes the fields available on **Export attachments** dialog.
 
@@ -280,7 +280,7 @@ To export attachments, follow these steps.
 4. Expand **Run in the background** FastTab, select **Batch processing** checkbox, and then specify the necessary parameters to run the **Export attachments** job in the background. Attachments are exported for the legal entity where the job is executed.
 5. Select **OK** to start executing **Export attachments** job.
 
-    ![Export attachments dialog.](../media/docu-ref-export-attachments-dialog.png)
+![Export attachments dialog.](../media/docu-ref-export-attachments-dialog.png)
 
 When execution of the **Export attachments** job is completed, you can find exported attachments in the archives attached for each enabled table. Depending on the volume of the exported attachments in the specified period, and value specified for the **Maximum file size in megabytes** parameter on the **Export attachments** dialog, the archive can be automatically split into several files. 
 
@@ -328,7 +328,7 @@ By default, attachments are saved in Azure Blob storage automatically as part of
 
 ### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 
-If an attachment stored in Azure Blob storage is accidentally deleted, it can't be restored or recovered because it is permanently deleted, and the reference to it is also deleted.
+If an attachment stored in Azure Blob storage is accidentally deleted, it can't be restored or recovered because it's permanently deleted, and the reference to the attachment is also deleted.
 
 ### Is the database information about attachments stored separately from the attachments themselves?
 
@@ -360,15 +360,15 @@ Although attachments can be exported, that capability isn't a standard capabilit
 
 ### How can attachments be extracted from the system?
 
-To extract attachments, an Attachments entity must be built for a specific business document or record. there isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for "Attachment" under the **AOT > Data Model > Data Entities** node.
+To extract attachments, an Attachments entity must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for "Attachment" under the **AOT > Data Model > Data Entities** node.
 
 ### How does the document preview work for attachments stored in SharePoint?
 
-The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
+The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. The current user needs access to the files to be able to preview them or open them.
 
 ## Troubleshooting issues
 
-### Issue: When interacting with Document management or Electronic reporting, users receive an error similar to "Invalid length for a Base-64 char array or string"
+### Issue: When users interact with Document management or Electronic reporting, they receive an error similar to "Invalid length for a Base-64 char array or string"
 
 **Explanation**: Typically, this issue occurs because the token for the Office Web Apps Server is no longer valid.  
 
