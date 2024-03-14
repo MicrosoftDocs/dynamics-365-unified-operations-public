@@ -43,7 +43,7 @@ Manifests can also be used to import and export product media assignments. The s
 >3. In HQ, type "entra" in the top search field and select **Microsoft Entra ID applications** from the dropdown results.
 >4. Select **New** on the top action bar.
 >5. Copy and paste the following GUID (site builder's application ID) into the new record's **Client Id** field: ```3530b95b-aca8-4164-b78e-0c07cbfd0681```
->6. Enter a friendly name (example:```CMS Bulk Operations```) in the **Name** field.
+>6. Enter a friendly name (example: "CMS Bulk Operations") in the **Name** field.
 >7. Select the new user created in *step 1* above from the **User Id** field.
 >8. Select **Save** from the top command bar.
 
