@@ -59,7 +59,7 @@ Follow these steps to complete the configuration.
 
 Follow these steps to complete the configuration.
 
-1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md)
+1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md)
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Project invoice**, and **Fiscal transaction document** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
