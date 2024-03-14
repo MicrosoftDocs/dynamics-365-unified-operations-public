@@ -95,13 +95,14 @@ You can view the detailed progress log for each archive job by selecting **View 
 | Initiating long term retention | The long-term retention job is activated. |
 | Initial sync for \<*tablename*\> in progress \[x of y records synced\] |Initial synchronization to the Dataverse long term retention is in progress. |
 | Initial sync for \<*tablename*\> completed | Initial synchronization to the Dataverse long term retention is completed. |
-| Retention in progress \[x of y records of \<*tablename*\> marked\] | The process is marking records in the finance and operations live application table for archiving, and the equivalent records in the Dataverse long term retention are being updated as retained. |
+| Marking in progress \[x of y records of \<*tablename*\> marked\] | The process is marking records in the finance and operations live application table for archiving, and the equivalent records in the Dataverse long term retention are being updated as retained. |
 | Reconciliation in progress | <p>Reconciliation is in progress to verify that the records that are marked as retained in Dataverse long term retention match the records that are marked for archiving in the finance and operations live application tables.|
 | Reconciliation completed | Reconciliation for all finance and operations entities are completed. |
 | Pending move to history | The move to history process is waiting to begin. |
 | Initiating move to history | The move to history process is activated. |
-| Staging data for move to history in progress | Data is in the staging/queueing process for the move to history. |
-| Staging data for move to history completed | Staging/queueing has completed. |
+| Staging data for move to history in progress \[x of y records of \<*tablename*\> staged\]| Data is in the staging/queueing process for the move to history. |
+| Staging data for move to history completed for \<*tablename*\> | Staging/queueing has completed. |
+| Staging data for move to history completed for all tables | Staging/queueing has completed. |
 | Move to history in progress \[x of y records of \<*tablename*\> moved\] | Data is being moved from live tables to history tables. |
 | Completed archival of table \<*tablename*\> | The move to history process has completed for the specified table. |
 | The archive job is complete | The end-to-end archival process has completed for all tables in the functional scenario. |
