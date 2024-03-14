@@ -4,7 +4,7 @@
 title: Vendor invoice dates
 description: This article describes the dates that appear on vendor invoices. It also explains how to automatically adjust the posting date.
 author: sunfzam
-ms.date: 2/09/2022
+ms.date: 3/14/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ Follow these steps to automatically adjust the posting date for vendor invoices.
     - Allowed with warning, if you want to allow invoice posting with a warning and the posting date of the invoice updated to the next period’s open period.
   
 > [!NOTE]
-> The feature "Adjust the posting date automatically" only covers the scope of Vendor invoice, Invoice register journal, Invoice journal. 
+> The **Adjust the posting date automatically** only covers the Vendor invoice, Invoice register journal, Invoice journal. 
  
 ## Impact of posting date changes
 
@@ -76,18 +76,18 @@ When the posting date on a pending vendor invoice is changed, the change has the
     - If the **Invoice date** field was previously set, the cash discount isn't changed.
       
 > [!NOTE]
-> For invoice register journal or invoice journal, the due date and cash discount date won't be recalculated based on the new posting date and payment terms.
+> For the invoice register or invoice journals, the due date and cash discount date isn't recalculated based on the new posting date and payment terms.
       
 ## Exchange rate date
 
-The exchange rate date is determined by the setting of the **Default exchange rate date** on the **General** tab of the **Accounts payable parameters** page (**Account payable \> Setup \> Account payable parameters**).
+The exchange rate date is determined by the **Default exchange rate date** option on the **General** tab of the **Accounts payable parameters** page (**Account payable \> Setup \> Account payable parameters**).
 
-- The value is set to **Posting date** as a default value. By such setting, the **Posting date** change will affect the exchange rate. When the posting date is updated, accounting and reporting amounts are recalculated. Therefore, matching validation must be done again.
-- If the value is set to **Document date**, the **Invoice date** is used, and the **Posting date** change doesn't affect the exchange rate. 
+- The **Posting date** is the default value for the **Default exchange rate date**. When the **Posting date** changes, this affects the exchange rate, and accounting and reporting amounts are recalculated. Matching validation must be done again.
+- If the **Default exchange rate date** is set to **Document date**, the **Invoice date** is used, and the change doesn't affect the exchange rate. 
 
 > [!NOTE]
-> This parameter is only enabled when parameter “Update vendor accounting using the invoice date” is disabled. If this parameter is enabled, it will not only use "Invoice date" as "Accounting date" to post the invoice but use it to determine the exchange rate as well.
-> There is no fixed exchange rate setting in the invoice register and invoice journal line level. The fixed exchange rate can only be set under Invoice register or Invoice journal header \> Setup.
+> This parameter is only enabled when the **Update vendor accounting using the invoice date** parameter is disabled. If this parameter is enabled, it will use the **Invoice date** as **Accounting date** to post the invoice and it determines the exchange rate.
+> There is no fixed exchange rate setting in the **Invoice register** and **Invoice journal line** level. The fixed exchange rate is set on the **Invoice register** or **Invoice journal header** > **Setup**.
 
 ## Validation
 
