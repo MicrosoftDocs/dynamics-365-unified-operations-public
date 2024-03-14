@@ -19,12 +19,13 @@ ms.dyn365.ops.version: 10.0.39
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The process for setting up Microsoft Azure resources for Electronic invoicing has three steps. The first two steps, **Create an Azure key vault in the Azure portal** and **Create an Azure storage account in the Azure portal**, are mandatory. The third step, **Configure a SharePoint connection**, is optional. These steps can be executed via any of the following methods:
-- **Utilizing Azure portal UI**
-- **Executing Azure PowerShell Script**
- -**Deploying an ARM template**
+The process for setting up Microsoft Azure resources for Electronic invoicing has three steps. The first two steps, "Create an Azure key vault in the Azure portal" and "Create an Azure storage account in the Azure portal," are mandatory. The third step, "Configure a SharePoint connection," is optional. These steps can be completed by using any of the following methods:
 
-Please proceed following this document if you prefer using the UI. Alternatively, if you opt for the PowerShell script or the ARM template. For more information on using the PowerShell script or the ARM template, see [Create Azure resources using Azure PowerShell or ARM templates](e-invoicing-set-up-azure-resources-automation.md).
+- Use the Azure portal user interface (UI).
+- Run an Azure PowerShell script.
+- Deploy an Azure Resource Manager (ARM) template.
+
+If you prefer to use the Azure portal UI, continue with this article. If you prefer to use the PowerShell script or an ARM template, see [Create Azure resources using Azure PowerShell or ARM templates](e-invoicing-set-up-azure-resources-automation.md).
 
 ## Create an Azure key vault in the Azure portal
 
