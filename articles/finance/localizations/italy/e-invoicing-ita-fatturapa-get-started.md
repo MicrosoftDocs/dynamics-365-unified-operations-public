@@ -230,7 +230,7 @@ This section provides information that will help you set up and configure the pr
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
     7. The Invoicing Service team must grant the app access to the service. Open a support ticket that has the theme **Electronic invoicing service integration with SDI. Application allow-listing**. Provide the following information:
 
-        - AAD Tenant ID
+        - Microsoft Entra Tenant ID
         - LCS Environment ID
         - Application ID
         - Object ID
