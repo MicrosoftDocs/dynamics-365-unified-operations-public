@@ -68,7 +68,7 @@ To control the availability of Copilot in site builder feature at the site level
 ## Enable cross geo communication for Copilot
 Currently, Copilot services are hosted in a [limited number of data centers](https://learn.microsoft.com/en-us/power-platform/admin/geographical-availability-copilot) accross the world.  To prevent unwanted cross-geo services, the default behavior is to disable Copilot features in geos that do not have local Copilot services.  To enable Copilot in geos that do not have local Copilot services, you must:
 1. Opt-in to this service by setting the **Enable cross geo communication for Copilot** feature flag to **On** in **site builder's** **Tenant settings > Features**
-2. Accept the consent modal by clicking **Agree**
+2. Accept the consent modal by selecting **Agree**
 3. Select **Save** in the top action bar
 
 ## Configure and preselect tones for your brand and organization
