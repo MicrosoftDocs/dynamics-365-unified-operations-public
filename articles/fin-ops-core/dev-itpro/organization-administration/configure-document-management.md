@@ -4,7 +4,7 @@
 title: Configure document management
 description: This article explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 01/05/2022
+ms.date: 03/14/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -250,43 +250,55 @@ If this file content type is not specified correctly, the attached document may 
 
 ## <a id="export-attachments"></a> Export attachments
 
-As of 10.0.40 version of Dynamics 365 Finance, the **Export attachments** feature is available in **Document management**. Use this feature to export files and metadata attached to records of tables in Finance.
+As of version 10.0.40 of Dynamics 365 Finance, the **Export attachments** feature is available in **Document management**. Use this feature to export files and metadata attached to records of tables in Finance.
 
 To export attachments, follow these steps.
 
 1. Go to the **Modules** \> **Organization administration** \> **Document management parameters** \> **Export attachments**.
-2. On the **Export attachments** page, add lines for each table that you want to export attachments for using the **New** button on the Action pane. The following table descibes the fileds available on **Export attachments** page.
+2. On the **Export attachments** page, to add lines for each table for which you want to export attachments, select **New** on the Action Pane. The following table describes the fields available on **Export attachments** page.
 
-| Filed name           | Field description | Example |
+| Field name           | Field description | Example |
 |----------------------|-------------------|---------|
-| **Table name**       | Select name of a table for which you want to export attachments.  | CustInvoiceJour |
-| **Table label**      | This field displays the lable assigned to the selected table. | Customer invoice journal |
-| **Date field name**  | Select a date-type filed of the selected table. Exporting job uses this filed of the table as criteria to apply **Date from** and **Date to** that you specify to export attachments. | InvoiceDate |
-| **Date field label** | This field displays the lable assigned to the selected date field. | Date |
-| **Enabled**          | Select this check box to include related table to the next exporting job. | Yes |
+| **Table name**       | Name of a table for which you want to export attachments.  | CustInvoiceJour |
+| **Table label**      | Label assigned to the selected table. | Customer invoice journal |
+| **Date field name**  | The date type of the selected table. The exporting job uses this field as criteria to apply the **Date from** and **Date to** range that you specify to export attachments. | InvoiceDate |
+| **Date field label** | Label assigned to the selected date field. | Date |
+| **Enabled**          | When the checkbox is selected, the system includes the related table with the next exporting job. | Yes |
 
-![Export attachments page.](../media/docu-ref-export-attachments-page.png)
+    ![Export attachments page.](../media/docu-ref-export-attachments-page.png)
 
-3. Click **Export** button on the Action pane to open **Export attachments** dialog. The following table descibes the fileds available on **Export attachments** dialog.
+3. Select **Export** on the Action Pane to open the **Export attachments** dialog. The following table describes the fields available on **Export attachments** dialog.
 
-| Filed name                         | Field description | Example |
+| Field name                         | Field description | Example |
 |------------------------------------|-------------------|---------|
-| **From date**<br> **To date**      | Select period for which you want to export attachments. Exporting job applies this period to the **Date field name** of the selected tables that you enabled to export attachments for.  | 1/1/2023 <br> 12/31/2023 |
-| **File type**                      | Select the **File type** to be used for creating an archive of exported attachments. This **File type** must be preliminary set up as described in [Configure file types](#configure-file-types) section of this topic. | File |
-| **Compression level**              | Select the compression level of an archive to specify how much the data within the archive is compressed. This parameter indicates whether a compression operation emphasizes speed or compression size. Fastest - the compression operation should complete as quickly as possible, even if the resulting file is not optimally compressed. No compression - no compression should be performed on the file. Optimal - the compression operation should optimally balance compression speed and output size. | Optimal |
-| **Maximum file size in megabytes** | This parameter redefines the value specified as **Maximum file size in megabytes** parameter on **Document management parameters** page for specific execution of **Export attachments** job and is applied to limit the size of archive that is created. If the size of archive exceeds the Maximum file size in megabytes, multiple files are created and attached. Setting up an extensive value for **Maximum file size in megabytes** may influence the performance of job execution. | 90 |
-| **Include metadata**               | Select this checkbox to include attachments of **Note** and **URL** type, as well as metadata of **File** type attachments in the export job. Exported metadata is exported as separate files of `JSON` type. When this checkbox is not selected, only attachments of **File** type are exported without metadata from the system. | Yes |
+| **From date**<br> **To date**      | The period for which you want to export attachments. The exporting job applies this period to the **Date field name** of the selected tables for which you enabled to export attachments.  | 1/1/2023 <br> 12/31/2023 |
+| **File type**                      | File type used for creating an archive of exported attachments. This file type must be set up as described in [Configure file types](#configure-file-types). | File |
+| **Compression level**              | Compression level parameter of an archive that specifies how much the data within the archive is compressed. This parameter indicates whether a compression operation emphasizes speed or compression size. <ul><li>**Fastest** - The compression operation should complete as quickly as possible, even if the resulting file is not optimally compressed.</li><li>**No compression** - No compression should be performed on the file. </li><li>**Optimal** - The compression operation should optimally balance compression speed and output size.</li></ul> | Optimal |
+| **Maximum file size in megabytes** | This parameter redefines the value specified by the **Maximum file size in megabytes** parameter on the **Document management parameters** page for specific execution of the **Export attachments** job, and is applied to limit the size of archive that is created. If the size of archive exceeds the **Maximum file size in megabytes** value, multiple files are created and attached. Configuring an extensive value for **Maximum file size in megabytes**  may impact job execution performance. | 90 |
+| **Include metadata**               | When the checkbox is selected, the system includes **Note** and **URL** type attachments and the metadata of **File** type attachments in the export job. Exported metadata is exported as separate JavaScript Object Notation (JSON) files. When the checkbox isn't selected, only attachments of the **File** type are exported without metadata. | Yes |
 
-5. Expand **Run in the background** FastTab, select **Batch processing** check box and specify necessary parameters to run the **Export attachments** job in the background. Attachments are exported for the legal entity where the job is executed.
-6. Click **OK** button to start executing **Export attachments** job.
+4. Expand **Run in the background** FastTab, select **Batch processing** checkbox, and then specify the necessary parameters to run the **Export attachments** job in the background. Attachments are exported for the legal entity where the job is executed.
+5. Select **OK** to start executing **Export attachments** job.
 
-![Export attachments dialog.](../media/docu-ref-export-attachments-dialog.png)
+    ![Export attachments dialog.](../media/docu-ref-export-attachments-dialog.png)
 
-When execution of **Export attachments** job is completed, find exported attachments in archive(s) attached for each enabled table. Depending on volume of the exported attachments in the specified period and value specified in **Maximum file size in megabytes** parameter on **Export attachments** dialog, the archive can be automatically split into several files. 
+When execution of the **Export attachments** job is completed, you can find exported attachments in the archive(s) attached for each enabled table. Depending on the volume of the exported attachments in the specified period, and value specified for the **Maximum file size in megabytes** parameter on the **Export attachments** dialog, the archive can be automatically split into several files. 
 
-The name of each attached archive contains the following information: `LE_TableName_DateFieldName_Period_SeqNum.zip`, where *LE* - the id of the legal entity, *TableName* - the name of the referred table, *DateFieldName* - the date-type filed selected as criteria, *Period* - the values of **Date from** and **Date to** parameters, *SeqNum* - sequential number of archive in case there are several archive files created. 
+The name of each attached archive is in the format `LE_TableName_DateFieldName_Period_SeqNum.zip`, and contains the following information: 
 
-The attachments included into the archive are named as following: `RecID_AttachmentName_AttachmentDate_SeqNum.xxx`, where *RecID* - the RecId of the referred record in selected table, *AttachmentName* - the original file name of the attachment, *AttachmentDate* - the date when the attachment was attached to the referred record of the table, *SeqNum* - sequential number in case there are simultaneously duplicate attachments.
+- **LE**: The ID of the legal entity.
+- **TableName**: The name of the referred table.
+- **DateFieldName**: The date type field selected as criteria.
+- **Period**: The values of the **Date from** and **Date to** parameters.
+- **SeqNum**: The sequential number of the archive in case there are several archive files created. 
+
+The names of the attachments included in an archive are in the format `RecID_AttachmentName_AttachmentDate_SeqNum.xxx`, and contains the following information: 
+
+- **RecID**: The ID of the referred record in selected table. 
+- **AttachmentName**: The original file name of the attachment. 
+- **AttachmentDate**: The date when the attachment was attached to the referred record of the table. 
+- **SeqNum**: The sequential number in case there are simultaneously duplicate attachments.
+- **xxx**: The attachment file extension.
 
 ## Frequently asked questions
 
