@@ -39,14 +39,14 @@ This article explains how to configure a Microsoft Azure Service Bus Queue endpo
 
 4. In the **Endpoint name** field, enter the name of the endpoint.
 5. Set up Azure Key Vault to provide the secret to the Azure messaging resource.
-6. Set up the Azure Active Directory (Azure AD) application ID and application secret.
+6. Set up the Microsoft Entra application ID and application secret.
 7. Back in the **Configure new endpoint** dialog box, in the **Queue name** field, enter the name that you created for the Service Bus queue  in the Azure Service Bus Queue configuration in Azure.
 
     ![Service Bus Queue name in the Azure Service Bus Queue configuration in Azure.](../../media/BusinessEventsSBQueueName.PNG)
 
-8. In the **Azure Active Directory application ID** field, enter the application ID that you created in Azure AD in the Azure portal.
+8. In the **Microsoft Entra application ID** field, enter the application ID that you created in Microsoft Entra ID in the Azure portal.
 
-    ![Application ID in Azure AD in the Azure portal.](../../media/businesseventsaad1.png)
+    ![Application ID in Microsoft Entra ID in the Azure portal.](../../media/businesseventsaad1.png)
 
 9. In the **Azure application secret** field, enter the secret value for the application.
 

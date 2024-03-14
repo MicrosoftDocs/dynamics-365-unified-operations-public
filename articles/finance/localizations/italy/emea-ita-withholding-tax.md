@@ -12,7 +12,6 @@ ms.search.region: Italy
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 272733
 ms.assetid: a5628f89-2ebb-4df2-a8a5-522649fb66da
 ---
 

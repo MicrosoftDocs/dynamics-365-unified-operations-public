@@ -39,7 +39,7 @@ It's important that you understand business events. For more information, see th
 
 ### Using the finance and operations connector
 
-The finance and operations connector communicates directly with finance and operations apps to establish subscriptions, but it's triggered by Dataverse at runtime. The connector can connect to any instance of finance and operations apps on the Azure Active Directory (Azure AD) tenant. 
+The finance and operations connector communicates directly with finance and operations apps to establish subscriptions, but it's triggered by Dataverse at runtime. The connector can connect to any instance of finance and operations apps on the Microsoft Entra tenant. 
 
 After the **When a Business Event occurs** trigger is added to a flow, the following information must be provided:
 
@@ -105,4 +105,3 @@ This approach is applicable to any messaging or event platform that is used as a
 For information about how to use business events in Microsoft Flow, see [Consume business events in Microsoft Flow](how-to/how-to-flow.md). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

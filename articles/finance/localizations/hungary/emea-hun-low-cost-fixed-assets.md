@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 264684
 ms.search.region: Hungary
 # ms.search.industry: 
 ms.author: epopov

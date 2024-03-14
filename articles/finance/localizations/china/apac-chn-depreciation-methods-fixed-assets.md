@@ -12,7 +12,6 @@ ms.search.region: China (PRC)
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 265244
 ms.search.form: AssetParameters
 ---
 

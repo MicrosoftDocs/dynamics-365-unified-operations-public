@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 270254
 ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 ms.search.region: Brazil
 # ms.search.industry: 

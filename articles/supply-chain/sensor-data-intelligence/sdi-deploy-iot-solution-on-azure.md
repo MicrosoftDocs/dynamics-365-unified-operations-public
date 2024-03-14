@@ -24,6 +24,8 @@ Sensor Data Intelligence uses data from sensors that are connected to Microsoft 
 
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Prerequisites
 
 To deploy and administer Azure components for Sensor Data Intelligence, your Azure environment and user account must meet the following requirements:

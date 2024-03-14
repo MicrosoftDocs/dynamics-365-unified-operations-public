@@ -22,12 +22,15 @@ Each release is published to the individual regions where Planning Optimization 
 
 While Planning Optimization is being updated, master planning might run a bit more slowly than usual.
 
-Environments that use Planning Optimization automatically receive the latest release. No user action is required: the service is automatically updated. However, no breaking-change functionality is ever automatically pushed to environments. By default, any changes that are considered breaking are turned off and must be explicitly turned on by using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, those changes won't appear in environments until you choose to enable them.
+All environments that use Planning Optimization automatically receive the latest release regardless which version of Supply Chain Management you are using. Therefore, no backports are needed. No user action is required: the service is automatically updated. However, no breaking-change functionality is ever automatically pushed to environments. By default, any changes that are considered breaking are turned off and must be explicitly turned on by using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, those changes won't appear in environments until you choose to enable them.
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | February  10–15, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | January  19–25, 2024 |
+| <p>Planning items support.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | December  10–15, 2023 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | October 12–19, 2023 |
 | <p>Positive days support.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | October 2–6, 2023 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | September 20–22, 2023 |

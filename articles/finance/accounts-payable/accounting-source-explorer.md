@@ -4,7 +4,7 @@
 title: Accounting source explorer
 description: This article provides information about the Accounting source explorer page, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 author: RyanCCarlson2
-ms.date: 11/21/2022
+ms.date: 10/31/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,6 +51,11 @@ For source documents that use the source document reference identities concept, 
 For these documents, you can also navigate to the actual source document from the **Accounting source explorer** page.
 
 > [!NOTE]
-> As of version 10.0.31, a new **Accounting source explorer advanced filtering** feature is available in Feature management. This feature replaces the **Update** button to provide a more robust advanced query experience that resembles what is available on the **Voucher transactions** page. The advanced filter will let you filter on similar fields to what you find on the **Voucher transactions query** page, such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
+> As of in Microsoft Dynamics 365 version 10.0.36, a **Accounting source explorer advanced filtering** feature is available in **Feature management** and will be set to mandatory in version 10.0.39. This feature replaces the **Update** button and provides a more robust advanced query experience that resembles what is available on the **Voucher transactions** page. The advanced filter lets you filter on fields such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
+
+> [!NOTE]
+> In version 10.0.39, the accounting source explorer will have a performance boost by having a background process keep the recently posted documents updated and ready for viewing in the accounting source explorer.
+On the **Process automation administration** page > **Background processes**, there is a new process **Accounting source explorer background preprocessing**. This background process continuously looks for recently posted source document backed documents and keep the data structure used for the accounting source explorer up-to-date.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

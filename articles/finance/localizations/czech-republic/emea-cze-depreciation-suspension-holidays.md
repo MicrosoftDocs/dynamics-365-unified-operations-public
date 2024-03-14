@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 265124
 ms.search.region: Czech Republic
 # ms.search.industry: 
 ms.author: epopov

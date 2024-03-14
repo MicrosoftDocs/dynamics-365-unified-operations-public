@@ -208,8 +208,8 @@ This article describes features that are either new or changed in Microsoft Dyna
 </td>
 </tr>
 <tr>
-<td>Add your domain as a verified AAD domain to the tenant in which Dynamics AX is deployed.</td>
-<td>Using Azure AD portal, you can now add your domain as a verified AAD domain to the tenant in which Dynamics AX is deployed. Doing so will not only allow you to log in and use your domain email accounts to log into Dynamics AX, but you will also be able to use those same accounts to pin Power BI tiles and Power BI reports within the Dynamics AX client.</td>
+<td>Add your domain as a verified Microsoft Entra domain to the tenant in which Dynamics AX is deployed.</td>
+<td>Using Microsoft Entra portal, you can now add your domain as a verified Microsoft Entra domain to the tenant in which Dynamics AX is deployed. Doing so will not only allow you to log in and use your domain email accounts to log into Dynamics AX, but you will also be able to use those same accounts to pin Power BI tiles and Power BI reports within the Dynamics AX client.</td>
 </tr>
 </tbody>
 </table>

@@ -39,7 +39,7 @@ The product search service is included in the current version of the Inventory V
 
 ### Existing Inventory Visibility installations
 
-If your system is running Inventory Visibility version 1.2.2.53 or earlier, you must uninstall Inventory Visibility in your Microsoft Dynamics Lifecycle Services project and then install the newest version. For more information, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+If your system is running Inventory Visibility version 1.2.2.53 or earlier, you must update Inventory Visibility in your Microsoft Dynamics Lifecycle Services project and then install the newest version. For more information, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ## Configure the product search service
 
@@ -61,10 +61,9 @@ If some table maps fail to do an initial synchronization because of a permission
 
 1. Sign in to your Dataverse environment, go to **Settings** \> **Security**, and select **Teams**.
 1. Open your team, and select **Manage Roles**.
-1. Make sure that the following roles are assigned to your team:
-
-    - *Dual-write app user*
-    - *Dual-write runtime user*
+1. Make sure that the following role is assigned to your team:
+    
+    - *System Administrator*
 
 For more information about how to set up dual-write security roles, see [Set up dual-write security roles and permissions](../../fin-ops-core/dev-itpro/data-entities/dual-write/security-roles.md).
 

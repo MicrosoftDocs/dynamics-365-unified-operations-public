@@ -17,7 +17,6 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 254564
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
 ms.search.region: Global
 # ms.search.industry: 
@@ -109,7 +108,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
-      - Tenant move of a live Production environment. Request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant if you are moving tenant on a live Production environment. Make sure that you only request this service when you are ready with all prerequisites. For more details, see [Move LCS implementation projects to different Azure AD tenants](../../fin-ops/get-started/move-lcs-implementation-project-tenant.md).
+      - Tenant move of a live Production environment. Request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant if you are moving tenant on a live Production environment. Make sure that you only request this service when you are ready with all prerequisites. For more details, see [Move LCS implementation projects to different Microsoft Entra tenants](../../fin-ops/get-started/move-lcs-implementation-project-tenant.md).
       - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]
@@ -148,4 +147,3 @@ Here are some typical examples of service requests that will be denied:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

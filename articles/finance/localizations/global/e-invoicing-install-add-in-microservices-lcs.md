@@ -30,8 +30,8 @@ To register an environment, follow these steps.
 2. In the project, on the **Environments** dashboard, select your deployed environment. The environment that you select must be running.
 3. On the **Power Platform Integration** tab, in the **Environment add-ins** section, select **Install a new add-in**.
 4. Select **Electronic Invoicing**.
-5. In the **AAD application ID** field, enter the fixed value **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is always fixed. Make sure that you enter only a globally unique identifier (GUID). Don't include any other symbols, such as spaces, commas, periods, or quotation marks.
-6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account. The Azure Active Directory (Azure AD) tenant that you specify should be the same tenant that is used for Regulatory Configuration Service (RCS).
+5. In the **Microsoft Entra application ID** field, enter the fixed value **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is always fixed. Make sure that you enter only a globally unique identifier (GUID). Don't include any other symbols, such as spaces, commas, periods, or quotation marks.
+6. In the **Microsoft Entra tenant ID** field, enter the tenant ID of your Azure subscription account. The Microsoft Entra tenant that you specify should be the same tenant that is used for Regulatory Configuration Service (RCS).
 7. Review the terms and conditions, and then select the checkbox.
 8. Select **Install**. After a few minutes, the status should change from **Installing** to **Installed**. You might have to refresh the page to see this change.
 

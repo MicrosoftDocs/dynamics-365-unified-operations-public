@@ -6,8 +6,7 @@ description: This article describes how you can secure the on-premises environme
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.service: dynamics-365
 ms.technology: 
 
 # optional metadata

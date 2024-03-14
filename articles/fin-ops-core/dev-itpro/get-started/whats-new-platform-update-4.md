@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 271823
 ms.assetid: a98f6291-347c-4616-ad80-84d3eb648cba
 ROBOTS: NOINDEX, NOFOLLOW
 ---

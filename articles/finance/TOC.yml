@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.39 (April)
+          href: get-started/whats-new-changed-10-0-39.md  
         - name: Finance 10.0.38 (February)
           href: get-started/whats-new-changed-10-0-38.md   
         - name: Finance 10.0.37 (November)
           href: get-started/whats-new-changed-10-0-37.md
-        - name: Finance 10.0.36 (October)
-          href: get-started/whats-new-changed-10-0-36.md  
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -176,17 +176,17 @@
           href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/finance
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/finance
-        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+        - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
           href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/finance      
         - name: Move environments between data centers
           href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/finance      
         - name: Move licenses between agreement types
           href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/finance 
-        - name: Move LCS implementation projects to different Azure AD tenants
+        - name: Move LCS implementation projects to different Microsoft Entra tenants
           href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/finance
         - name: Move LCS implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/finance 
-        - name: Multiple LCS projects and production environments on one Azure AD tenant
+        - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/finance    
     - name: Finance troubleshooting and FAQs
       href: finance-troubleshooting.md
@@ -236,6 +236,8 @@
           href: accounts-payable/invoice-capture-workspace.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
+        - name: Invoice capture advanced settings
+          href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture received files
           href: accounts-payable/invoice-capture-rec-files.md
         - name: Invoice capture FAQ  
@@ -267,7 +269,9 @@
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
         - name: Vendor invoice entry workspace
-          href: accounts-payable/vendor-invoices-workspace.md  
+          href: accounts-payable/vendor-invoices-workspace.md
+        - name: Recurring vendor invoices
+          href: accounts-payable/recurring-invoice.md
       - name: Accounts payable reports   
         items:
         - name: Vendor aging report
@@ -374,7 +378,7 @@
         href: accounts-receivable/tasks/establish-customer-method-payment.md
       - name: Establish customer payment fees
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
-      - name: Customer payment insights (preview)
+      - name: Customer payment insights 
         href: accounts-receivable/payment-insights-overview.md
       - name: Accounts receivable posting
         href: general-ledger/accts-recvble-posting.md 
@@ -398,6 +402,8 @@
         href: accounts-receivable/credit-card-refactor.md
       - name: Create a free text invoice
         href: accounts-receivable/create-free-text-invoice-new.md
+      - name: Use financial tags to display free text invoice descriptions
+        href: accounts-receivable/free-text-inv-desc.md
       - name: Accounting distributions and subledger journal entries for free text invoices
         href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
       - name: Create a free text invoice template
@@ -416,6 +422,8 @@
         href: accounts-receivable/configure-customer-invoices.md
       - name: Customer transactions list page
         href: accounts-receivable/customer-transactions-list-page.md
+      - name: Customer and invoice accounts
+        href: accounts-receivable/customer-inv-account.md
       - name: Set up bills of exchange
         href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
@@ -588,6 +596,8 @@
           href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
+        - name: Collections process automation FAQ
+          href: accounts-receivable/coll-process-auto-FAQ.md
         - name: Credit statistics FAQ
           href: accounts-receivable/credit-statistics-faq.md
         - name: Credit hold FAQ
@@ -642,6 +652,8 @@
         href: budgeting/budget-planning-integration-other-modules.md
     - name: Cash and bank management
       items:
+      - name: Petty cash
+        href: cash-bank-management/Petty-cash.md
       - name: Cash and bank management home page
         href: cash-bank-management/cash-bank-management.md
       - name: Cash flow forecasting
@@ -712,16 +724,26 @@
         href: cash-bank-management/reconcile-bank-account.md        
       - name: Advanced bank reconciliation
         items:
+        - name: Advanced bank reconciliation overview
+          href: cash-bank-management/advanced-bank-reconciliation-overview.md 
         - name: Advanced bank reconciliation setup process
           href: cash-bank-management/configure-advanced-bank-reconciliation.md
-        - name: Set up advanced bank reconciliation import process using Electronic reporting
-          href: accounts-payable/import-bai2-er.md
         - name: Set up bank reconciliation matching rules
           href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
+        - name: Set up advanced bank reconciliation import process using Electronic reporting
+          href: accounts-payable/import-bai2-er.md
         - name: Reconcile bank statements by using advanced bank reconciliation
           href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-        - name: Advanced bank reconciliation overview
-          href: cash-bank-management/advanced-bank-reconciliation-overview.md
+        - name: Clear reversal bank statements
+          href: cash-bank-management/clear-reverse-bank-stmt-trx.md
+        - name: Clear reversal company transactions
+          href: cash-bank-management/clear-reverse-comp-trans.md
+        - name: Generate vouchers in the reconcilation worksheet
+          href: cash-bank-management/vouchers-adv-bank-rec.md
+        - name: Apply cash in the reconcilation worksheet
+          href: cash-bank-management/apply-cash-adv-bank-rec.md
+        - name: Clear bridging payments using advanced bank reconciliation
+          href: cash-bank-management/clear-bridging-pyts-adv-bank-rec.md
         - name: Update the bank journal composite entity
           href: dev-itpro/upgrade-bank-journal-composite-entity.md
     - name: Cost accounting
@@ -1174,6 +1196,8 @@
             href: general-ledger/open-lines-excel-journals-documents.md
           - name: Automatic split of financial journals
             href: general-ledger/auto-split-journal.md
+          - name: Delete master records
+            href: general-ledger/master-rec-del.md          
           - name: Create ledger accrual transactions
             href: general-ledger/tasks/create-ledger-accrual-transactions.md
           - name: One voucher
@@ -1534,6 +1558,16 @@
         items:
         - name: Globalization services overview
           href: localizations/global/globalization-services-overview.md?context=/dynamics365/context/finance
+        - name: Globalization Studio workspace (preview)
+          items:
+          - name: Regulatory Configuration Service merge to Globalization Studio workspace (preview)
+            href: localizations/global/workspace/merge-rcs-to-gsw.md
+          - name: Globalization Studio workspace features (preview)
+            href: localizations/global/workspace/gsw-features.md
+          - name: Import Electronic reporting (ER) configurations from Dataverse (preview)
+            href: localizations/global/workspace/gsw-import-er-config-dataverse.md
+          - name: Upload ER configurations and Globalization features as a Dataverse solution (preview)
+            href: localizations/global/workspace/gsw-upload-er-config.md
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
@@ -1566,7 +1600,79 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing
+        - name: Electronic Invoicing (preview)
+          items:
+          - name: Electronic Invoicing overview
+            href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
+          - name: Electronic Invoicing administration and integration components
+            href: localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
+          - name: Set up Electronic Invoicing
+            items: 
+            - name: Setting up Electronic Invoicing
+              href: localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance  
+            - name: Set up Azure Resources
+              items:
+              - name: Set up Azure resources for Electronic invoicing
+                href: localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
+              - name: Create an Azure Key Vault in the Azure portal
+                href: localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
+              - name: Create an Azure storage account in the Azure portal
+                href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
+              - name: Configure a SharePoint connection
+                href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+          - name: Work with Globalization features
+            items:
+            - name: Work with Globalization features overview
+              href: localizations/global/gs-e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
+            - name: Import a feature from the repository
+              href: localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
+            - name: Create a new Globalization feature
+              href: localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
+            - name: Work with configurations
+              href: localizations/global/gs-e-invoicing-work-configurations.md
+            - name: Work with feature setups
+              href: localizations/global/gs-e-invoicing-feature-setup.md?context=/dynamics365/context/finance
+            - name: Complete and deploy a Globalization feature
+              href: localizations/global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
+            - name: Usage management dashboard
+              href: localizations/global/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
+            - name: Process incoming electronic documents
+              items: 
+              - name: Processing incoming electronic documents
+                href: localizations/global/e-invoicing-process-incoming-electronic-documents.md
+              - name: Configure an email channel
+                href: localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/finance
+              - name: Configure an email channel for Office 365 Exchange Online
+                href: localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
+              - name: Configure a SharePoint channel
+                href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+            - name: Electronic Invoicing service ISV last-mile connector
+              href: localizations/global/e-invoicing-isv-connector.md
+          - name: Work with Electronic invoicing
+            items: 
+            - name: Submit electronic documents
+              href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
+            - name: Work with the Electronic documents submission log
+              href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+            - name: Receive electronic documents
+              href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
+          - name: Country/region-specific scenarios
+            items:
+            - name: Availability of Electronic Invoicing features
+              href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
+            - name: Australia and New Zealand
+              href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+            - name: Indonesia
+              href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
+            - name: Saudi Arabia
+              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+            - name: Saudi Arabia - onboarding
+              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+          - name: Electronic Invoicing FAQ
+            href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
+        - name: Electronic Invoicing (RCS)
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/e-invoicing-service-overview.md?context=/dynamics365/context/finance
@@ -1584,8 +1690,6 @@
                 href: localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/finance
               - name: Set up Regulatory configuration services (RCS)
                 href: localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/finance
-              - name: Power platform plug-in admin reference
-                href: localizations/dev-itpro/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/finance   
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
@@ -1732,6 +1836,8 @@
                 href: localizations/czech-republic/emea-reporting-multiple-vat-registrations-cz.md
               - name: Denmark 
                 href: localizations/denmark/emea-reporting-multiple-vat-registrations-dk.md
+              - name: Estonia 
+                href: localizations/estonia/emea-reporting-multiple-vat-registrations-ee.md
               - name: Finland  
                 href: localizations/finland/emea-reporting-multiple-vat-registrations-fi.md
               - name: France 
@@ -1800,6 +1906,16 @@
               href: localizations/tcs-troubleshooting-enable-debug-mode.md
           - name: Tax Calculation FAQ
             href: localizations/global/global-tax-calcuation-service-faq.md?context=/dynamics365/context/finance              
+          - name: Universal tax rate API 
+            items: 
+            - name: Universal tax rate API overview
+              href: localizations/global/universal-tax-rate-api-overview.md
+            - name: Configure tax solution provider
+              href: localizations/global/universal-tax-rate-api-configure-tax-solution-provider.md
+            - name: How to set up ClientId and ClientSecret
+              href: localizations/global/universal-tax-rate-api-how-to-setup-clientId-and-clientsecret.md
+            - name: Use tax assessment
+              href: localizations/global/universal-tax-rate-api-use-tax-assessment.md
       - name: Tax
         items:
         - name: Sales tax
@@ -2336,6 +2452,8 @@
           items:
           - name: Denmark overview
             href: localizations/denmark/denmark.md
+          - name: Dynamics 365 Finance - a digital standard bookkeeping system registered in Denmark 
+            href: localizations/denmark/emea-dnk-registration.md
           - name: Assign a payment slip format to a customer account
             href: localizations/denmark/assign-payment-slip-format-customer-account.md
           - name: Create and post a customer invoice for a public sector customer
@@ -2394,8 +2512,8 @@
             href: localizations/estonia/estonia.md
           - name: Personal information requests
             href: localizations/estonia/emea-est-personal-info.md
-          - name: VAT statement
-            href: localizations/estonia/emea-est-vat-statement-details.md
+          - name: VAT declaration
+            href: localizations/estonia/emea-est-vat-declaration.md
           - name: Estonian Intrastat
             href: localizations/estonia/emea-est-intrastat.md  
           - name: EU sales list
@@ -3122,40 +3240,28 @@
           items:
           - name: Italy overview
             href: localizations/italy/italy.md
-          - name: VAT statements details
-            href: localizations/italy/emea-ita-vat-statements-details.md
+          - name: Sales tax books
+            items:
+            - name: Configure system parameters to report Sales tax books
+              href: localizations/italy/emea-ita-vat-statements-details.md
+            - name: Configure and report Sales tax books for Italy
+              href: localizations/italy/emea-ita-sales-tax-books.md
+            - name: Sales tax settlement and numbering of pages in Sales tax books
+              href: localizations/italy/emea-ita-vat-settlement.md
+            - name: Sales tax summary report
+              href: localizations/italy/emea-ita-sales-tax-summary.md
+          - name: VAT management and reporting by tax point date (Date of VAT register)
+            href: localizations/italy/emea-ita-vat-management.md
           - name: Quarterly VAT communication report
             href: localizations/italy/emea-ita-quarterly-vat-communication.md
+          - name: Yearly tax communication
+            href: localizations/italy/emea-ita-yearly-tax-communication.md
           - name: Fiscal journal report
             href: localizations/italy/emea-ita-fiscal-journal.md
           - name: Competence date for transactions in Italy 
             href: localizations/italy/emea-ita-competence-date.md
-          - name: Depreciation of fixed assets
-            href: localizations/italy/emea-ita-depreciation-of-fixed-assets.md
-          - name: Modello 770
-            href: localizations/italy/emea-ita-modello770.md
-          - name: Packing slip date verification on invoices
-            href: localizations/italy/emea-ita-packing-slip-date-verification-on-invoice.md
-          - name: Post and print a packing slip with transportation delivery details
-            href: localizations/italy/emea-ita-packing-slip.md
-          - name: Sales tax books
-            href: localizations/italy/emea-ita-fiscal-books.md
-          - name: VAT management and reporting by tax point date (Date of VAT register)
-            href: localizations/italy/emea-ita-vat-management.md
-          - name: Split payment for invoices issued to the Public Administration
-            href: localizations/italy/emea-ita-split-payment-invoices-issued-public-administration.md
-          - name: Credit invoicing (Italy)
-            href: localizations/italy/emea-ita-credit-invoicing.md
-          - name: Withholding tax
-            href: localizations/italy/emea-ita-withholding-tax.md
-          - name: Separate accounts for credit notes
-            href: localizations/italy/emea-ita-exil-separate-account-credit.md
-          - name: Sort sales invoice lines by packing slip
-            href: localizations/italy/emea-ita-exil-invoicing-packing-slips.md
-          - name: Posting invoices with zero amounts
-            href: localizations/italy/emea-ita-exil-zero-invoice-posting.md
-          - name: Bank data usability enhancement
-            href: localizations/italy/emea-ita-exil-bank-accounts-setup.md
+          - name: General ledger simulations (Italy)
+            href: localizations/italy/emea-ita-exil-general-ledger-simulations.md
           - name: Intrastat
             items:
             - name: Italian Intrastat
@@ -3164,8 +3270,24 @@
               href: localizations/italy/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
             - name: Intrastat (IT) file format
               href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
-          - name: Miscellaneous charges per kilogram in an Intrastat declaration
-            href: localizations/italy/emea-ita-exil-misc-charges-intrastat.md
+            - name: Miscellaneous charges per kilogram in an Intrastat declaration
+              href: localizations/italy/emea-ita-exil-misc-charges-intrastat.md
+          - name: Depreciation of fixed assets
+            href: localizations/italy/emea-ita-depreciation-of-fixed-assets.md
+          - name: Packing slip date verification on invoices
+            href: localizations/italy/emea-ita-packing-slip-date-verification-on-invoice.md
+          - name: Post and print a packing slip with transportation delivery details
+            href: localizations/italy/emea-ita-packing-slip.md
+          - name: Split payment for invoices issued to the Public Administration
+            href: localizations/italy/emea-ita-split-payment-invoices-issued-public-administration.md
+          - name: Separate accounts for credit notes
+            href: localizations/italy/emea-ita-exil-separate-account-credit.md
+          - name: Sort sales invoice lines by packing slip
+            href: localizations/italy/emea-ita-exil-invoicing-packing-slips.md
+          - name: Posting invoices with zero amounts
+            href: localizations/italy/emea-ita-exil-zero-invoice-posting.md
+          - name: Bank data usability enhancement
+            href: localizations/italy/emea-ita-exil-bank-accounts-setup.md
           - name: Intent letters - Invoicing usual exporters
             href: localizations/italy/emea-ita-exil-intent-letter.md
           - name: Tax invoice for goods delivered for free
@@ -3174,10 +3296,12 @@
             href: localizations/italy/emea-ita-exil-improved-inquiry-settlement.md
           - name: Commission settlement on payments
             href: localizations/italy/emea-ita-exil-commission-settlement.md
-          - name: General ledger simulations (Italy)
-            href: localizations/italy/emea-ita-exil-general-ledger-simulations.md
           - name: Configurable posting profiles for banks and remittance types
             href: localizations/italy/emea-ita-exil-bank-remittance.md
+          - name: Withholding tax
+            href: localizations/italy/emea-ita-withholding-tax.md
+          - name: Modello 770
+            href: localizations/italy/emea-ita-modello770.md
           - name: Unique certification
             href: localizations/italy/emea-ita-exil-unique-certification.md
           - name: Bills of exchange protest import
@@ -3188,160 +3312,178 @@
             href: localizations/italy/emea-ita-e-invoices.md
           - name: Vendor electronic invoices
             href: localizations/italy/emea-ita-vend-e-invoices.md
-          - name: Yearly tax communication
-            href: localizations/italy/emea-ita-yearly-tax-communication.md
           - name: Payment traceability
             href: localizations/italy/emea-ita-payment-traceability.md
-          - name: Unified posting date control
-            href: localizations/italy/emea-ita-post-date-control.md
         - name: Japan
           items:
           - name: Japan overview
             href: localizations/japan/japan.md
-          - name: Acquire a fixed asset and claim for the government grant subsidy
-            href: localizations/japan/acquire-fixed-asset-claim-government-grant-subsidy.md
-          - name: Acquire a fixed asset with asset retirement obligations
-            href: localizations/japan/acquire-fixed-asset-asset-retirement-obligations.md
-          - name: Adjust an asset retirement obligation estimate
-            href: localizations/japan/adjustment-asset-retirement-obligation-estimate.md
-          - name: Allocate carrying amount of shared asset and goodwill to cash generating units
-            href: localizations/japan/allocate-carrying-amount.md
-          - name: Allocation rules
-            href: localizations/japan/apac-jpn-allocation-rules-fixed-assets.md
+          - name: Fixed assets
+            items:
+            - name: Regular operations and depreciation
+              items:
+              - name: Depreciation FAQ
+                href: localizations/japan/apac-jpn-fixed-asset-depreciation.md
+              - name: Enter a depreciation rate schedule and associate to a depreciation profile
+                href: localizations/japan/enter-depreciation-rate-schedule.md
+              - name: Change the depreciation method during the asset life for one asset
+                href: localizations/japan/change-depreciation-method-during-asset-life-one-asset.md
+              - name: Change the depreciation method during the asset life for book
+                href: localizations/japan/change-depreciation-method-during-asset-life-book.md
+              - name: Equally divided depreciation method
+                href: localizations/japan/apac-jpn-equally-divided-depreciation-method.md
+              - name: Create lump-sum depreciation assets using equally-divided method
+                href: localizations/japan/create-lump-sum-depreciation-assets-equally-divided-method.md
+              - name: Depreciation allocation rules
+                href: localizations/japan/apac-jpn-allocation-rules-fixed-assets.md
+              - name: Define asset idle period and validate depreciation process
+                href: localizations/japan/define-asset-idle-period-validate-depreciation-process.md
+              - name: Use assemble list for fixed assets
+                href: localizations/japan/use-assemble-list-fixed-asset.md
+              - name: Use disassemble list for fixed assets
+                href: localizations/japan/use-disassemble-list-fixed-assets.md          
+            - name: Accelerated depreciation
+              items:
+              - name: Configure accelerated depreciation parameters and posting profiles
+                href: localizations/japan/accelerated-depreciation-posting-profiles.md
+              - name: Create an accelerated depreciation profile and assign it to book
+                href: localizations/japan/create-accelerated-depreciation-profile-assign-it-book.md
+              - name: Create and assign an equipment group
+                href: localizations/japan/create-assign-equipment-group.md
+              - name: Create an accelerated depreciation document and enter usage data
+                href: localizations/japan/create-accelerated-depreciation-document-enter-usage-data.md
+              - name: Propose and post accelerated depreciation
+                href: localizations/japan/propose-post-accelerated-depreciation.md
+            - name: Additional and special depreciation
+              items:
+              - name: Configure depreciation profile and posting profile for additional depreciation
+                href: localizations/japan/configure-depreciation-profile-posting.md
+              - name: Create a fixed asset with additional depreciation
+                href: localizations/japan/create-fixed-asset-additional-depreciation.md
+              - name: Create a fixed asset with special depreciation profile
+                href: localizations/japan/create-fixed-asset-special-depreciation-profile.md
+              - name: Propose additional depreciation
+                href: localizations/japan/propose-additional-depreciation.md
+              - name: Propose special depreciation
+                href: localizations/japan/propose-special-depreciation.md
+            - name: Reduction entries for government subsidies
+              items:
+              - name: Set up reduction entries
+                href: localizations/japan/apac-jpn-reduction-entry-fixed-assets.md
+              - name: Create and assign a reduction entry document for a government grant subsidy
+                href: localizations/japan/create-assign-reduction-document.md
+              - name: Acquire a fixed asset and claim for the government grant subsidy
+                href: localizations/japan/acquire-fixed-asset-claim-government-grant-subsidy.md
+              - name: Depreciate fixed assets with reduction entry posted
+                href: localizations/japan/depreciation-fixed-assets-reduction-entry-posted.md
+              - name: Dispose of a fixed asset with reduction entry
+                href: localizations/japan/dispose-fixed-asset-reduction-entry.md
+            - name: Impairment accounting
+              items:
+              - name: Impairment accounting on CGU
+                href: localizations/japan/apac-jpn-impairment-accounting-cash-generating-unit.md
+              - name: Impairment accounting FAQ
+                href: localizations/japan/apac-jpn-impairment-accounting-fixed-assets.md
+              - name: Set up impairment accounting common parameters and posting profile
+                href: localizations/japan/impairment-accounting.md
+              - name: Create CGU group and cash generating units
+                href: localizations/japan/create-cgu-group-cash-generating-units.md
+              - name: Allocate carrying amount of shared asset and goodwill to cash generating units
+                href: localizations/japan/allocate-carrying-amount.md
+              - name: Maintain impairment indicators on individual assets
+                href: localizations/japan/maintain-impairment-indicators-individual-assets.md
+              - name: Create and confirm a recognition test
+                href: localizations/japan/create-confirm-recognition-test.md
+              - name: Run the recognition test and calculate the impairment amount on individual assets
+                href: localizations/japan/run-recognition-test-calculate.md
+              - name: Propose and post the impairment amount by using fixed asset journal
+                href: localizations/japan/propose-post-impairment-amount-fixed-asset-journal.md
+              - name: Propose and post the impairment amount on a cash generating unit
+                href: localizations/japan/propose-post-impairment-amount-cash-generating-unit.md
+              - name: Propose and post the impairment amount by batch
+                href: localizations/japan/propose-post-impairment-amount-batch.md
+            - name: Asset retirement obligations
+              items:
+              - name: Set up ARO
+                href: localizations/japan/apac-jpn-asset-retirement-obligation-fixed-assets.md
+              - name: Configure main accounts for asset retirement obligation posting and market discount rates
+                href: localizations/japan/configure-main-accounts-asset-retirement.md
+              - name: Set up asset retirement obligation documents and enter ARO amount on a fixed asset
+                href: localizations/japan/set-up-asset-retirement-obligation.md
+              - name: Acquire a fixed asset with asset retirement obligations
+                href: localizations/japan/acquire-fixed-asset-asset-retirement-obligations.md
+              - name: Adjust an asset retirement obligation estimate
+                href: localizations/japan/adjustment-asset-retirement-obligation-estimate.md
+              - name: Depreciate and accrue the interest expense for asset retirement obligations
+                href: localizations/japan/depreciate-accrue-interest-expense.md
+              - name: Inquire on asset retirement obligation-related transactions
+                href: localizations/japan/inquiries-asset-retirement-obligation.md
+            - name: Deductible expenses
+              items:
+              - name: Set up master data for inclusion of deductible expenses for multiple posting layers
+                href: localizations/japan/set-up-master-data-inclusion.md
+              - name: Maintain fixed asset master data files for deductible expenses
+                href: localizations/japan/maintain-fixed-asset-master-data-files-deductible-expenses.md
+              - name: Periodic settlement of over and under depreciation
+                href: localizations/japan/periodic-settlement-over-under-depreciation.md
+              - name: Inquire on deductible expenses
+                href: localizations/japan/inquiry-deductible-expenses.md
+            - name: Fixed asset reporting
+              items:
+              - name: Form 26 for depreciable tax declaration
+                href: localizations/japan/jp-00027-form-26-depreciable-tax-declaration.md
           - name: Bank payment fees covered by vendors
             href: localizations/japan/apac-jpn-bank-payment-fees-vendors.md
-          - name: Change the depreciation method during the asset life for book
-            href: localizations/japan/change-depreciation-method-during-asset-life-book.md
-          - name: Change the depreciation method during the asset life for one asset
-            href: localizations/japan/change-depreciation-method-during-asset-life-one-asset.md
-          - name: Configure accelerated depreciation parameters and posting profiles
-            href: localizations/japan/accelerated-depreciation-posting-profiles.md
           - name: Configure consolidated invoice parameters and setup for accounts payable
             href: localizations/japan/consolidated-invoice-parameters-setup-accounts-payable.md
-          - name: Configure depreciation profile and posting profile for additional depreciation
-            href: localizations/japan/configure-depreciation-profile-posting.md
-          - name: Configure main accounts for asset retirement obligation posting and market discount rates
-            href: localizations/japan/configure-main-accounts-asset-retirement.md
           - name: Consumption tax report
             href: localizations/japan/apac-jpn-consumption-tax-report.md
           - name: Qualified Invoice System
             href: localizations/japan/apac-jpn-qualified-invoice-system.md            
           - name: Consolidated invoices
             href: localizations/japan/apac-jpn-consolidate-invoices.md
-          - name: Create a fixed asset with additional depreciation
-            href: localizations/japan/create-fixed-asset-additional-depreciation.md
-          - name: Create a fixed asset with special depreciation profile
-            href: localizations/japan/create-fixed-asset-special-depreciation-profile.md
-          - name: Create an accelerated depreciation document and enter usage data
-            href: localizations/japan/create-accelerated-depreciation-document-enter-usage-data.md
-          - name: Create an accelerated depreciation profile and assign it to book
-            href: localizations/japan/create-accelerated-depreciation-profile-assign-it-book.md
-          - name: Create and assign a reduction entry document for a government grant subsidy
-            href: localizations/japan/create-assign-reduction-document.md
-          - name: Create and assign an equipment group
-            href: localizations/japan/create-assign-equipment-group.md
           - name: Create and confirm a customer consolidated invoice
             href: localizations/japan/create-confirm-customer-consolidated-invoice.md
-          - name: Create and confirm a recognition test
-            href: localizations/japan/create-confirm-recognition-test.md
           - name: Create and confirm a vendor consolidated invoice
             href: localizations/japan/create-confirm-vendor-consolidated-invoice.md
-          - name: Create CGU group and cash generating units
-            href: localizations/japan/create-cgu-group-cash-generating-units.md
-          - name: Create lump-sum depreciation assets using equally-divided method
-            href: localizations/japan/create-lump-sum-depreciation-assets-equally-divided-method.md
-          - name: Define asset idle period and validate depreciation process
-            href: localizations/japan/define-asset-idle-period-validate-depreciation-process.md
-          - name: Depreciate and accrue the interest expense for asset retirement obligations
-            href: localizations/japan/depreciate-accrue-interest-expense.md
-          - name: Depreciate fixed assets with reduction entry posted
-            href: localizations/japan/depreciation-fixed-assets-reduction-entry-posted.md
-          - name: Depreciation FAQ
-            href: localizations/japan/apac-jpn-fixed-asset-depreciation.md
-          - name: Dispose of a fixed asset with reduction entry
-            href: localizations/japan/dispose-fixed-asset-reduction-entry.md
           - name: Enable the JBA payment file format
             href: localizations/japan/jba-payment-file-format.md
-          - name: Enter a depreciation rate schedule and associate to a depreciation profile
-            href: localizations/japan/enter-depreciation-rate-schedule.md
-          - name: Equally divided depreciation method
-            href: localizations/japan/apac-jpn-equally-divided-depreciation-method.md
-          - name: Form 26 for depreciable tax declaration
-            href: localizations/japan/jp-00027-form-26-depreciable-tax-declaration.md
           - name: Generate an EFT payment file with JBA format
             href: localizations/japan/eft-payment-file-jba-format.md
           - name: Generate and post payment fee
             href: localizations/japan/post-payment-fee.md
           - name: Generate consumption tax report
             href: localizations/japan/japan-consumption-tax-report.md
-          - name: Impairment accounting on CGU
-            href: localizations/japan/apac-jpn-impairment-accounting-cash-generating-unit.md
-          - name: Impairment accounting
-            href: localizations/japan/apac-jpn-impairment-accounting-fixed-assets.md
           - name: Import a customer payment with JBA file format
             href: localizations/japan/import-customer-payment-jba-file-format.md
           - name: Import postal codes
             href: localizations/japan/apac-jpn-import-postal-codes.md
           - name: Input journal in T account form
             href: localizations/japan/jp-00005-input-journal-t-account-form-japan.md
-          - name: Inquire on asset retirement obligation-related transactions
-            href: localizations/japan/inquiries-asset-retirement-obligation.md
-          - name: Inquire on deductible expenses
-            href: localizations/japan/inquiry-deductible-expenses.md
           - name: Inquire on payment fees in a journal
             href: localizations/japan/inquiries-payment-fee-journal.md
-          - name: Maintain fixed asset master data files for deductible expenses
-            href: localizations/japan/maintain-fixed-asset-master-data-files-deductible-expenses.md
-          - name: Maintain impairment indicators on individual assets
-            href: localizations/japan/maintain-impairment-indicators-individual-assets.md
           - name: Pay a vendor by endorsing a bill of exchange
             href: localizations/japan/apac-jpn-endorse-bill-of-exchange.md
           - name: Pay a vendor transaction by endorsing a customer bill of exchange
             href: localizations/japan/pay-vendor-transaction.md
-          - name: Periodic settlement of over and under depreciation
-            href: localizations/japan/periodic-settlement-over-under-depreciation.md
           - name: Progressive withholding tax calculation
             href: localizations/japan/apac-jpn-progressive-withholding-tax-calculation.md
-          - name: Propose additional depreciation
-            href: localizations/japan/propose-additional-depreciation.md
-          - name: Propose and post accelerated depreciation
-            href: localizations/japan/propose-post-accelerated-depreciation.md
-          - name: Propose and post the impairment amount by batch
-            href: localizations/japan/propose-post-impairment-amount-batch.md
-          - name: Propose and post the impairment amount by using fixed asset journal
-            href: localizations/japan/propose-post-impairment-amount-fixed-asset-journal.md
-          - name: Propose and post the impairment amount on a cash generating unit
-            href: localizations/japan/propose-post-impairment-amount-cash-generating-unit.md
-          - name: Propose special depreciation
-            href: localizations/japan/propose-special-depreciation.md
           - name: Reopen and edit a customer consolidated invoice
             href: localizations/japan/reopen-edit-customer-consolidated-invoice.md
           - name: Reopen and edit a vendor consolidated invoice
             href: localizations/japan/reopen-edit-vendor-consolidated-invoice.md
           - name: Reverse an endorsed bill of exchange
             href: localizations/japan/reverse-endorsed-bill-exchange.md
-          - name: Run the recognition test and calculate the impairment amount on individual assets
-            href: localizations/japan/run-recognition-test-calculate.md
           - name: Set up a customer and sales order to be target of consolidated invoice
             href: localizations/japan/set-up-customer-sales-order-target-consolidated-invoice.md
-          - name: Set up ARO
-            href: localizations/japan/apac-jpn-asset-retirement-obligation-fixed-assets.md
-          - name: Set up asset retirement obligation documents and enter ARO amount on a fixed asset
-            href: localizations/japan/set-up-asset-retirement-obligation.md
           - name: Set up consolidated invoices
             href: localizations/japan/set-up-consolidated-invoices.md
-          - name: Set up impairment accounting common parameters and posting profile
-            href: localizations/japan/impairment-accounting.md
           - name: Set up Japan consumption tax report
             href: localizations/japan/setup-japan-consumption-tax-report.md
           - name: Set up Japan payment by endorsing a customer bill of exchange
             href: localizations/japan/setup-japan-payment-endorsing-customer-bill-exchange.md
-          - name: Set up master data for inclusion of deductible expenses for multiple posting layers
-            href: localizations/japan/set-up-master-data-inclusion.md
           - name: Set up payment fee for Japan
             href: localizations/japan/setup-payment-fee-japan.md
-          - name: Set up reduction entries
-            href: localizations/japan/apac-jpn-reduction-entry-fixed-assets.md
           - name: Set up vendor master and purchase order to be target of consolidated invoice
             href: localizations/japan/vendor-master-po.md
           - name: Settle an endorsed bill of exchange
@@ -3354,10 +3496,6 @@
             href: localizations/japan/settle-vendor-consolidated-invoices-payment-journal.md
           - name: Settle vendor consolidated invoices by using settle transactions
             href: localizations/japan/settle-vendor-consolidated-invoices-settle-transactions.md
-          - name: Use assemble list for fixed assets
-            href: localizations/japan/use-assemble-list-fixed-asset.md
-          - name: Use disassemble list for fixed assets
-            href: localizations/japan/use-disassemble-list-fixed-assets.md          
         - name: Kuwait
           items: 
           - name: Kuwait overview

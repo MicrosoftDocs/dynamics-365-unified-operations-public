@@ -22,7 +22,7 @@ ms.search.validFrom: 2020-01-06
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that are related to upgrades of finance and operations apps.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Microsoft Entra tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## Database synchronization errors
 

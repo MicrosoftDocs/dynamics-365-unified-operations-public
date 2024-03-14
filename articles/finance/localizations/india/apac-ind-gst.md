@@ -2,17 +2,16 @@
 title: India Goods and Services Tax (GST) overview
 description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance.
 author: EricWangChen
-ms.date: 05/20/2021
+ms.date: 03/13/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: India
 ms.author: wangchen
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-ms.custom: 1587884
 ms.collection: get-started
 ---
 # India Goods and Services Tax (GST) overview
@@ -159,6 +158,7 @@ Follow the process in the article, [Tax engine import configuration](../../dev-i
 | <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.300.xml</li></ul> | <ul><li>Support the IGST tax calculation when the <b>with IGST payment</b> option is set to <b>Yes</b> on the SEZ/DE/Export order. The configuration can be used only in version 10.0.14 and later.</li></ul> |
 | <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.301.xml</li></ul> | <ul><li>Support decoupling of GST posting from inventory posting and the addition of **Interim transit** as a stock transfer posting type. The configuration can be used only in version 10.0.14 and later.</li></ul> |
 | <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.156.xml</li><li>Tax (India GST).version.82.156.302.xml</li></ul> | <ul><li>Support calculation of GST-TDS in vendor and customer payment journals. The configuration can be used only in version 10.0.18 and later.</li></ul> |
+| <ul><li>Taxable Document.version.83.xml</li><li>Taxable Document (India).version.83.157.xml</li><li>Tax (India GST).version.83.157.303.xml</li></ul> | <ul><li>Support Microsoft Dynamics 365 Project Operations integration journals. The configuration can be used only in version 10.0.35 and later.</li></ul> |
 
 ### Report configurations
 
