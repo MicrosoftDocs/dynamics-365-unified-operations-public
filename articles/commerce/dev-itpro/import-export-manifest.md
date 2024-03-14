@@ -42,9 +42,9 @@ Manifests can also be used to import and export product media assignments. The s
 >2. Follow the instruction [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles#manually-assign-users-to-roles) to assign the ```Quality control manager``` role to the new user account created in the previous step. *Note: The bulk CMS service simply requires read-only privileges for HQ product data to function.*
 >3. In HQ, type "entra" in the top search field and select **Microsoft Entra ID applications** from the dropdown results.
 >4. Select **New** on the top action bar.
->5. Copy and paste the following GUID (site builder's application ID) into the new record's **Client ID** field: ```3530b95b-aca8-4164-b78e-0c07cbfd0681```
->6. Enter ```CMS Bulk Operations``` in the **Name** field.
->7. Select the new user created in *step 1* above from the **User ID** field.
+>5. Copy and paste the following GUID (site builder's application ID) into the new record's **Client Id** field: ```3530b95b-aca8-4164-b78e-0c07cbfd0681```
+>6. Enter a friendly name (example:```CMS Bulk Operations```) in the **Name** field.
+>7. Select the new user created in *step 1* above from the **User Id** field.
 >8. Select **Save** from the top command bar.
 
 ## Manifest schema
