@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Install the Excel Add-in for business performance planning 
-description: This article describes how to install the Excel Add-in for business performance planning. 
+title: Install the Excel add-in for business performance planning 
+description: This article describes how to install the Excel add-in for business performance planning. 
 author: ShielaSogge
 ms.date: 03/15/2024
 ms.topic: article
@@ -25,23 +25,23 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: 
 
 ---
-# Install the Excel Add-in for business performance planning 
+# Install the Excel add-in for business performance planning 
 
-This article describes how to install the Excel AddIn for the business performance planning app. 
+This article describes how to install the Excel add-in for the business performance planning app. 
 
 ## Prerequisites  
 
-To work with the Excel Add-in, the following prerequisties are required:   
+To work with the Excel add-in, the following prerequisties are required:   
  - Business planning app is installed. For more information, see [Install business performance planning](bpp-app-install.md). 
  - The dimensions and cubes have been created. For more information, see [Business performance planning dimensions](dimensions.md) and [Business performance planning cubes](create-cubes.md). 
 
 ### Install the Excel Add-in 
 
-To install the business performance planning Excel Add-in, follow these steps:
+To install the business performance planning Excel add-in, follow these steps:
 1. Sign into business performance planning app.
 2. On the app homepage, on the **Plan in Excel** tile.
 3. Click **Install add-in** and accept Terms and Conditions.
-4. Click **Download** to open the addin installer.
+4. Click **Download** to open the add-in installer.
 5. After the app is downloaded, click **Install**. 
 
 ### Delete the Excel Add-in 
