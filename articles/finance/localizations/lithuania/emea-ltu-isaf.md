@@ -1,7 +1,7 @@
 ---
 title: i.SAF reporting for Lithuania
 description: This article explains how to set up and work with the i.SAF report for legal entities in Lithuania.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 03/22/2022
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Lithuania
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
@@ -224,6 +224,8 @@ Complete the following steps to limit access to the **i.SAF** processing.
 ## Set up the VAT registration number for the company that is reporting i.SAF
 
 The system retrieves the VAT registration number of the company that is reporting i.SAF from the registration ID that is defined in the properties of the legal entity. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories). The tax registration type must be assigned to the **VAT ID** tax registration category. For a more detailed walkthrough of the prerequisites for VAT ID registration, see [Set up VAT ID](../europe/eur-00015-vat-id.md).
+
+As of version 52.26 of **i.SAF model mapping** you can also set up registration ID assigned to **Enterprise ID (COID)** tax registration category for your legal entity. In case registration number of **Enterprise ID (COID)** tax registration category is configured for legal entity, it is reported in `RegistrationNumber` field of i.SAF. Otherwise, `RegistrationNumber` field of i.SAF is reported with value set up for **VAT ID** tax registration category.
 
 ## Collect data for the i.SAF report
 
