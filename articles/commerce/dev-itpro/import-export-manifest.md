@@ -2,7 +2,7 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets by using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 09/08/2023
+ms.date: 03/15/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -29,23 +29,27 @@ Here are the main use cases for manifest-driven asset import and export operatio
 - Performing search and replace operations on the metadata (for example, rebranding)
 - Performing actions in bulk (for example, publishing or deleting assets)
 
-## Bulk import and export for product media
+## Bulk import and export product media
 
 Manifests can also be used to import and export product media assignments. The schema that's used for product media assignments is an extended version of the plain asset management manifest schema. For information about product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
 
->[!NOTE]
->To use bulk import and export product media assignment features for **Omnichannel (Channel) - Neutral (locale)**, HQ must be configured with **site builder's** application ID.  This step is a temporary requirement that will be unnecessary in a future update.
->
->To configure this, follow these steps:
->
->1. First, create a new user account in HQ by following the instructions [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/create-new-users#manually-add-a-new-user). This account will be used by the bulk CMS service to access HQ product data. The account name can be anything (example: "Bulk operations user").
->2. Follow the instruction [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles#manually-assign-users-to-roles) to assign the ```Quality control manager``` role to the new user account created in the previous step. *Note: The bulk CMS service simply requires read-only privileges for HQ product data to function.*
->3. In HQ, type "entra" in the top search field and select **Microsoft Entra ID applications** from the dropdown results.
->4. Select **New** on the top action bar.
->5. Copy and paste the following GUID (site builder's application ID) into the new record's **Client Id** field: ```3530b95b-aca8-4164-b78e-0c07cbfd0681```
->6. Enter a friendly name (example: "CMS Bulk Operations") in the **Name** field.
->7. Select the new user created in *step 1* above from the **User Id** field.
->8. Select **Save** from the top command bar.
+> [!NOTE]
+> To use bulk import and export product media assignment features for **Omnichannel (Channel) - Neutral (locale)**, you must configure Commerce headquarters with site builder's application ID. This action is a temporary requirement that will be made unnecessary in a future update.
+
+To configure Commerce headquarters with site builder's application ID, follow these steps:
+
+1. Create a new user account in headquarters by following the instructions in [Manually add a new user](/dynamics365/fin-ops-core/fin-ops/sysadmin/create-new-users#manually-add-a-new-user). The new user account is used by the bulk CMS service to access headquarters product data. The account name can be anything (for example, "Bulk operations user").
+1. To assign the quality control manager role to the new user account, follow the instructions in [Manually assign users to roles](/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles#manually-assign-users-to-roles) .
+
+    > [!NOTE]
+    > The bulk CMS service only requires read-only privileges to access headquarters product data.
+
+1. In headquarters, search for "entra" and select **Microsoft Entra ID applications** from the search results.
+1. On the Action Pane, select **New**.
+1. Copy and paste the following site builder application ID GUID into the new record's **Client Id** field: `3530b95b-aca8-4164-b78e-0c07cbfd0681`.
+1. For **Name**, enter a friendly name (for example, "CMS Bulk Operations").
+1. In the **User Id** field, select the new user.
+1. On the Action Pane, select **Save**.
 
 ## Manifest schema
 
