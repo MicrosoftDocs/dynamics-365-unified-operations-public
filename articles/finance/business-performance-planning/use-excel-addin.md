@@ -28,56 +28,54 @@ ms.dyn365.ops.version:
 This article describes how to configure and use the Excel add-in for business performance planning. 
 
 The process of configuring and using the Excel add-in involves the following tasks: 
-1. Prepare your Excel file. 
-2. Connect to Dataverse and load your data model to your Excel file. 
-3. Create a Pivot table based on your data model. 
-4. Begin planning on Excel. 
+ - Prepare your Excel file
+ - Connect to Dataverse and load your data model to your Excel file
+ - Create a pivot table based on your data model
+ - Begin planning in Excel
 
 ## Prepare your Excel file
-
-Ensure you have the AddIn installed. Learn more here on Installation (need to link it to Install AddIn page). 
-
-Navigate to the cube of your choice on your business performance planning app and click on Plan in Excel. This will download the Excel file setting the context for the cube. 
-
-Open the file and click Enable Editing. 
-
-You should see the Planning tab on the Excel ribbon added. 
+To prepare your Excel file to use the add-in, follow these steps:
+1. Confirm the Excel add-in is installed. For more information, see [Install the Excel add-in for business performance planning](install-excel-add.md).
+2. In business performance planning, go to the cube of your choice.
+3. Click **Plan in Excel**. This downloads the Excel file setting the context for the cube.
+4. Open the file and click **Enable editing**.
+5. On the Excel ribbon, a **Planning** tab as been added. 
 
 ### Connect to Dataverse and load your data model
 
-1. Navigate to Data tab on Excel ribbon and select Get Data.
-2. Then select From Database and finally SQL server Database.
-3. Enter your server as your Environment URL from your Power Platform environment Details section and click OK.
-4. Use the same credentials that you use to login to your business performance planning application and click Connect.
-5. Once it is connected, you will see Navigator window that will show you all your Dataverse tables in the environment.
-6. Check the box for Select multiple items.
-7. Search for your cube and select it.
-8. Click Select Related Tables at the bottom of the window to select all the dimensions automatically and then click Load.
-9. This will begin the process of loading your data model and bring in your data from dataverse to your Excel workbook.
-10. It is recommended to save your workbook at this point since data load may take some time depending on the volume of data you have in dataverse. 
+To connect to dataverse and load a data model, follow these steps:
+1. Go to the **Data** tab on the Excel ribbon.
+2. Select **Get data**.
+3. Select **From database** and then **SQL server database**.
+4. Enter your server in the **Environment URL** field from the Power Platform environment **Details** section.
+5. Click **OK**.
+6. Use the same credentials that you log into your business performance planning application and click **Connect**.
+7. After it's connected, a **Navigator** window displays all Dataverse tables in the environment.
+8. Check **Select multiple items**.
+9. Search and select your cube.
+10. Click **Select related tables** to select all the dimensions automatically.
+11. Click **Load**. This begins loading your data model and bringing data from dataverse to your Excel workbook.
+It's recommended to save your workbook at this point. The data load may take some time depending on the volume of data in dataverse. 
 
-### Create a Pivot table based on your data model. 
+### Create a pivot table based on your data model
 
-1. Navigate to Insert tab on Excel ribbon and click on Pivot table From Data Model.
-2. You should see your cube and dimension tables there.
-3. Configure your Pivot table by bringing in your fact data (amount/values) from your cube to the values section of the pivot table.
-4. Bring in dimensions that describe the fact data as rows, columns and filters of your pivot table such as cost centers, scenario, regions, Years etc. 
+To create a pivot table based on a data model, follow these steps:
+1. Go to the **Insert** tab in Excel.
+2. Click **Pivot table from data model**. Your cube and dimension tables should be displayed.
+3. Configure the pivot table by bringing in fact data, amounts or values, from your cube to the **Values** section of the pivot table.
+4. Bring in dimensions that describe the fact data as rows, columns, and filters of your pivot table such as cost centers, scenario, regions, or years. 
 
-### Begin Planning 
+### Begin planning 
 
-Cube 
-1. In case the Planning tab on the ribbon is not selected, you’d need to navigate to it. You are in Viewing mode currently, change it to Editing mode. It will prompt you to authenticate. Based on your permissions
-and access, you should be able to modify values in the pivot table and save them back to Dataverse with the Save option in the Planning tab ribbon.
-Optional: you should be able to modify the values at the top level (parent level) and/or the bottom level (children level) and apply allocations proportionately. 
-Optional: You can save the workbook locally/on OneDrive/SharePoint and share with co-workers to plan collaboratively. Keep in mind they will need to authenticate with their credentials and refresh the data from
-under the Data tab on your Excel ribbon. 
-Optional: You can add comments to the cells that you are modifying the values for; however, the comments are workbook specific and do not get stored on Dataverse. Hence, they will not be retained if a new workbook
-is downloaded/created from the business performance planning app. 
+To begin planning, use a cube:
+1. In case the **Planning** tab isn't selected, navigate to it. If you are in **Viewing** mode, change it to **Editing** mode. It will prompt you to authenticate. Based on your permissions and access, you should be able to modify values in the pivot table and save them back to Dataverse with the **Save** option.
+2. Optional - you should be able to modify the values at the top level (parent level) and/or the bottom level (children level) and apply allocations proportionately.
+3. Optional - you can save the workbook locally and share with co-workers to plan collaboratively. They'll need to authenticate with their credentials and refresh the data from the **Data** tab on your Excel ribbon.
+4. Optional - you can add comments to the cells that you are modifying the values for. The comments are workbook specific and aren't stored on Dataverse. They're not retained if a new workbook is downloaded/created from the business performance planning app. 
 
-Dimensions 
+To begin planning, use dimensions: 
 
-1. Click on Edit dimension in the Planning tab ribbon. This will show you a list of all the dimensions that you can view and edit.
-2. Select the dimension of your preference. It will open that dimension with its contents in another sheet.
+1. Click **Edit dimension** on the **Planning** tab ribbon. This shows you a list of all the dimensions that you can view and edit.
+2. Select a dimension to open its contents in another sheet.
 3. Based on your access and permissions, you can modify the values, entire rows, add new rows and delete rows and save the changes back to Dataverse.
-4. Optional: You can add comments to the cells that you are modifying the values for; however, the comments are workbook specific and do not get stored on Dataverse. Hence, they will not be retained if a new
-workbook is downloaded/created from the business performance planning app. 
+4. Optional: You can add comments to the cells that you are modifying the values for. The comments are workbook specific and aren't stored in Dataverse. They're not retained if a new workbook is downloaded/created from the business performance planning app. 
