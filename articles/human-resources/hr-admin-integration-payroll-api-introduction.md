@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 >[!NOTE]
->For the payroll integration to work, the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight must be enabled. To enable this flight, reach out to Microsoft support.
+>For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
