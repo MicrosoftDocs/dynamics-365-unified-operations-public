@@ -2,7 +2,7 @@
 title: Additional B2C information
 description: This article provides additional information on how to set your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/24/2023
+ms.date: 03/15/2024
 ms.topic: article 
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -54,6 +54,16 @@ To enter a custom sign-in domain in site builder, follow these steps.
 
 > [!WARNING]
 > When you update to a custom domain for the Microsoft Entra B2C tenant, the change affects the tenant's issuer details for the token generated. Issuer details will then include the custom domain instead of the default domain provided by Microsoft Entra B2C. A different **Issuer** configuration in Commerce headquarters (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Identity Providers**) changes the system's interaction with site users, potentially creating a new customer record if a user is authenticating against the new issuer. Any custom domain changes should be thoroughly tested before switching to the custom domain in a live Microsoft Entra B2C environment.
+
+### Configure a sign-in link with a custom return URL
+
+To define a return URL from your Microsoft Entra B2C sign-in page, use a URL in the following format:
+
+`{domainurl}/_msdyn365/signin?ru={channelUrl}`
+
+For example, `https://www.adventure-works.com/_msdyn365/signin?ru=https://www.adventure-works.com/kiama-classic-surfboard/68719518371.p`.
+
+You can use this URL format in emails or other web communications to link users to a Microsoft Entra B2C sign-in screen and directly return them to a specific page on your site after they sign in.
 
 ## Additional resources
 
