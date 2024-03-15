@@ -6,8 +6,6 @@ description: This article describes how to install the Excel add-in for business
 author: ShielaSogge
 ms.date: 03/15/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
