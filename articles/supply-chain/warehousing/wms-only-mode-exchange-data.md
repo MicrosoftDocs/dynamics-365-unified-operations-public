@@ -70,11 +70,11 @@ You can import the required master data into Supply Chain Management by using [d
 > [!NOTE]
 > The messages that create product master data use the [*product data entities*](../pim/data-entities.md). These entities can be used by themselves, or they can be used to maintain product master data.
 
-### Test creating products by using messages
+<!-- ### Test creating products by using messages
 
 You can try to submit messages to create products by using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman).
 
-If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.
+If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.-->
 
 ### Consigner and consignee information
 

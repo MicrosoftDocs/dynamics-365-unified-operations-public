@@ -57,7 +57,6 @@ This documentation includes details and developer guidance for using the Dataver
 
 - [Authenticate to Microsoft Dataverse with the Web API](/powerapps/developer/data-platform/webapi/authenticate-web-api)
 - [Perform operations using the Web API](/powerapps/developer/data-platform/webapi/perform-operations-web-api)
-- [Use Postman with the Web API](/powerapps/developer/data-platform/webapi/use-postman-web-api)
 - [Use change tracking to synchronize data with external systems](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
 
 ### Virtual tables for Human Resources in Dataverse
