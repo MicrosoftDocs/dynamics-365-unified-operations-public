@@ -6,8 +6,6 @@ description: This article provides overview information about how to authenticat
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
