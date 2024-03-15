@@ -4,7 +4,7 @@ description: This article explains how to use Warehouse only mode to perform day
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSInventoryUpdateLog
 ms.topic: how-to
 ms.date: 01/29/2024
 audience: Application User
@@ -151,6 +151,8 @@ The external system will be informed about the available data via the `WHSSource
 For integrations that require very quick on-hand inventory synchronization processes, you can use the Warehouse inventory update log (at **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
 
 To keep the external systems updated about inventory transactions updates that are related to inbound and outbound shipment orders, enable the **Source systems** **Enable warehouse inventory update logs** parameter for both inbound and outbound shipment orders.
+
+You can view the update log data in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** page
 
 > [!IMPORTANT]
 > Be sure to uptake the updates in the external systems in such a way that they don't cause double updates in combination with the data that's used as part of the [*Shipment receipts*](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-shared-and-external-detail-use.md#shipment-packing-slips) messages when the **Enable warehouse inventory update logs** parameter is enabled.
