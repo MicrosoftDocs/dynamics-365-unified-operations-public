@@ -2,7 +2,7 @@
 title: Additional B2C information
 description: This article provides additional information on how to set your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/24/2023
+ms.date: 03/15/2024
 ms.topic: article 
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -57,13 +57,13 @@ To enter a custom sign-in domain in site builder, follow these steps.
 
 ### Configure a sign-in link with a custom return URL
 
-Use the following format to define a return URL from your Azure AD B2C login page:
+To define a return URL from your Microsoft Entra B2C sign-in page, use an URL in the following format:
 
-```{domainurl}/_msdyn365/signin?ru={channelUrl}```
+`{domainurl}/_msdyn365/signin?ru={channelUrl}`
 
-For example: https://www.adventure-works.com/_msdyn365/signin?ru=https://www.adventure-works.com/kiama-classic-surfboard/68719518371.p
+For example, `https://www.adventure-works.com/_msdyn365/signin?ru=https://www.adventure-works.com/kiama-classic-surfboard/68719518371.p`.
 
-This URL format can be used in emails or other web communications to link users to an Azure AD B2C login screen and directly return them to a specific page on your site after login.
+You can use this URL format in emails or other web communications to link users to a Microsoft Entra B2C sign-in screen and directly return them to a specific page on your site after they sign in.
 
 ## Additional resources
 
