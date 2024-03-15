@@ -41,7 +41,7 @@ Follow these steps to view the log by using the Inventory Visibility app in Powe
 
 Follow these steps to retrieve log entries by calling the [Inventory Visibility API](inventory-visibility-api.md).
 
-1. Run a tool that lets you call APIs, such as [Postman](https://www.postman.com/). Use the tool to access the `{inventoryVisibilityEndpoint}/api/environment/{yourEnvironmentId}/logTransactionDetails` API by using the `Post` method.
+1. Run a tool that lets you call APIs. Use the tool to access the `{inventoryVisibilityEndpoint}/api/environment/{yourEnvironmentId}/logTransactionDetails` API by using the `Post` method.
 1. Set up and submit a request body to retrieve the log data that you're interested in. The following example shows a request body that asks the system to prepare and retrieve the log. This step is necessary because the log is stored in Azure Data Lake and is transferred to Dataverse only on request. The API returns a log history job ID that you can use to check the job completion status.
 
     ```txt
@@ -66,7 +66,7 @@ Follow these steps to retrieve log entries by calling the [Inventory Visibility 
     Body:
     
         {
-        "id": "id-postman-{{datetime}}",
+        "id": "id-"  "{{datetime}}",
         "organizationId": "usmf",
         "UtcFromDate": "2023/8/23",
         "UtcToDate": "2023/8/23",
