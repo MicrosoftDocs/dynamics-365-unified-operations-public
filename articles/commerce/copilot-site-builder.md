@@ -71,7 +71,7 @@ Currently, Copilot services are hosted in a [limited number of data centers](htt
 
 To enable Copilot in geos that do not have local Copilot services, follow these steps.
 
-1. To opt-in to the service, in site builder, go to **Tenant settings > Features** and set the **Enable cross geo communication for Copilot** feature flag to **On**.
+1. To opt-in to the service, in site builder, go to **Tenant settings \> Features** and set the **Enable cross geo communication for Copilot** feature flag to **On**.
 1. In the consent dialog, select **Agree**
 1. On the command bar, select **Save**.
 
