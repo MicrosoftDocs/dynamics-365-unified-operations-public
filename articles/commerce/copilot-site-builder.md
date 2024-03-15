@@ -37,7 +37,7 @@ Copilot in site builder offers the following capabilities:
 - **Initiate the creative process** – Copilot generates content based on basic product information such as the name, description, attributes, and dimensions. You can then use the generated content to spark further ideas.
 - **Optimize for search engines** – Optimize your product marketing content for search engines to help rank your e-commerce site rank higher in internet search results and drive up sales.
 - **Choose the messaging tone** – You can select the voice that best fits your brand and audience, and you can specify a unique tone for each product. For example, the tone of the messaging for a product might be adventurous, casual, luxurious, formal, informational, or educational.
-- **Create custom messages for specific buyers** – Select the intended audience to create custom messages for specific buyers, such as new parents, graduates, senior citizens, and health care workers.
+- **Create custom messages for specific buyers** – Select the intended audience to create custom messages for specific buyers, such as new parents, graduates, older adults, and health care workers.
 - **Amplify with key highlights** – Use natural language to augment your content with key highlights that are specific to a product, and generate engaging text snippets that help amplify key highlights for your product.
 - **Make basic modifications** – Easily make basic text modifications, either by using an inline rich text editor or by using natural language to provide key prompts to format text.
 
@@ -67,9 +67,9 @@ To control the availability of Copilot in site builder feature at the site level
 
 ## Enable cross-geo communication for Copilot
 
-Currently, Copilot services are hosted in a [limited number of data centers](https://learn.microsoft.com/en-us/power-platform/admin/geographical-availability-copilot) accross the world. To prevent unwanted use of cross-geo services, the default behavior is to disable Copilot features in geos that don't have local Copilot services. To enable Copilot in geos that don't have local Copilot service, there are steps you must take.
+Currently, Copilot services are hosted in a [limited number of data centers](/power-platform/admin/geographical-availability-copilot) across the world. To prevent unwanted use of cross-geo services, the default behavior is to disable Copilot features in geos that don't have local Copilot services. To enable Copilot in geos that don't have local Copilot service, there are steps that you must take.
 
-To enable Copilot in geos that do not have local Copilot services, follow these steps.
+To enable Copilot in geos that don't have local Copilot services, follow these steps.
 
 1. To opt-in to the service, in site builder, go to **Tenant settings \> Features** and set the **Enable cross geo communication for Copilot** feature flag to **On**.
 1. In the consent dialog, select **Agree**
