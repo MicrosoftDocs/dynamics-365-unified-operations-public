@@ -263,8 +263,7 @@ The PowerShell script performs the following actions.
 
 1. The script prompts you to sign in to your Azure account. Enter your credentials, and then select **Sign in**.
 1. The script determines whether the e-invoice service principal already exists. If it doesn't exist, the script creates it.
-1. The script creates and configures the following Azure resources: an Azure resource group, Azure key vault, Azure storage account, and Azure storage account container.
-1. The script determines whether the Azure resources already exist. If any resource already exists, the script continues without creating it.
+1. The script determines whether the following Azure resources already exist: an Azure resource group, Azure key vault, Azure storage account, and Azure storage account container. If any of them don't exist, the script creates and configures them.
 1. The script generates a shared access signature (SAS) token for the storage account container and adds it as a Key Vault secret in the key vault.
 1. The script sets the access policy on the key vault to provide *get* and *list* permissions to the e-invoicing application.
 1. As output, the script generates the details of the Azure resources that were created. These details include names and URLs.
@@ -276,7 +275,7 @@ The PowerShell script performs the following actions.
 
 ### ARM template
 
-```
+``` json
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
