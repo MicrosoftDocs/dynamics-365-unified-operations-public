@@ -100,7 +100,7 @@ Microsoft Entra assigns a unique application ID (client ID) to your app, and tak
 
 ## Retrieving an access token
 
-The specifics of how you retrieve an access token for calling the Human Resources data API will depend on what technologies you're using to develop your client application. For example, you might be [testing with a third party utility](../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md), developing a C# console application or web service, or building a javascript/TypeScript client.
+The specifics of how you retrieve an access token for calling the Human Resources data API will depend on what technologies you're using to develop your client application. For example, you might be testing with a third party utility, developing a C# console application or web service, or building a javascript/TypeScript client.
 
 Example C# client application:
 ```C#
