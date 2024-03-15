@@ -57,7 +57,7 @@ To enter a custom sign-in domain in site builder, follow these steps.
 
 ### Configure a sign-in link with a custom return URL
 
-To define a return URL from your Microsoft Entra B2C sign-in page, use an URL in the following format:
+To define a return URL from your Microsoft Entra B2C sign-in page, use a URL in the following format:
 
 `{domainurl}/_msdyn365/signin?ru={channelUrl}`
 
