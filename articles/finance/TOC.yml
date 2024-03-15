@@ -4455,6 +4455,8 @@
         href: business-performance-planning/bpp-app-install.md
       - name: Install Power BI visuals
         href: business-performance-planning/powerBI-visual-install.md
+      - name: Install the Excel add-in
+        href: business-performance-planning/install-excel-add.md
       - name: Dimensions
         items:
         - name: Creating and maintaining dimensions
