@@ -237,7 +237,7 @@ To retrieve messages from the outbound queue, use one of the following methods:
 
 You can experiment with the material handling interface by using a third-party.
 
-You can create a *fork* of the third-part environment. Be sure to select the environment and enter the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection. In this way, you can run all the collections that have a name that starts with *MHE*.
+You can create a *fork* of the third-party environment. Be sure to select the environment and enter the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection. In this way, you can run all the collections that have a name that starts with *MHE*.
 
 > [!TIP]
 > If you want to simulate inbound messages by creating records directly from the **Inbound queue** page, turn on the **Enable manual inbound message creation** option on the **Material handling equipment interface parameters** page.

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/third-party-service-test.md",
+      "redirect_url": "dynamics365/fin-ops-core/fin-ops",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery.md",
       "redirect_url": "/power-platform/admin/business-continuity-disaster-recovery",
       "redirect_document_id": "false"

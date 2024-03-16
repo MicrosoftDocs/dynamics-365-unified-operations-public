@@ -57,15 +57,15 @@ The following table lists the APIs that are currently available:
 >
 > The bulk API can return a maximum of 512 records for each request.
 
-Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
+<!-- Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.
+You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.-->
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
 
-Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+<!--Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.-->
 
 To get a security service token, follow these steps.
 
@@ -133,8 +133,8 @@ To get a security service token, follow these steps.
 > [!NOTE]
 > The `https://securityservice.operations365.dynamics.com/token` URL is a general URL for the security service. When you call the URL, the first response is an http redirect response with the status code `307` in the response headers, and an entry with the key "Location" that contains the target URL for the security service. The URL is in this format: `https://gw.{$geo}-il101.gateway.prod.island.powerapps.com/securityservice/token`. For example, if your environment locates in US geo, the URL could be `https://gw.us-il101.gateway.prod.island.powerapps.com/securityservice/token`. If the 307 response status code isn't acceptable for you, you can manually construct the actual URL according to your FinOps environment location. The simplest way is to open `https://gw.as-il101.gateway.prod.island.powerapps.com/securityservice/token` with your browser, and then copy the address in address bar.
 
-> [!IMPORTANT]
-> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
+<!-- > [!IMPORTANT]
+> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step. -->
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
@@ -410,7 +410,7 @@ Body:
     }
 ```
 
-The following example shows sample body content.
+<!--  The following example shows sample body content.
 
 ```json
 {
@@ -428,7 +428,7 @@ The following example shows sample body content.
         "sizeId": "small"
     }
 }
-```
+``` -->
 
 The following example shows a successful response.
 
@@ -511,7 +511,7 @@ Body:
     }
 ```
 
-The following code shows an example of body content.
+<!-- The following code shows an example of body content.
 
 ```json
 {
@@ -527,7 +527,7 @@ The following code shows an example of body content.
     },
     "OffsetQty": 1
 }
-```
+``` -->
 
 The following code shows an example of a successful response body.
 
@@ -696,11 +696,11 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Here's a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
+<!-- Here's a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
-```
+``` -->
 
 ## <a name="exact-query-with-post-method"></a>On-hand exact query
 
@@ -755,7 +755,7 @@ In the body part of this request, `dimensionDataSource` is an optional parameter
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
-The following example shows sample body content.
+<!--  The following example shows sample body content.
 
 ```json
 {
@@ -790,7 +790,7 @@ The following example shows how to query all products in multiple sites and loca
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
-```
+```  -->
 
 ## <a name="product-search-query"></a>Query with product search
 

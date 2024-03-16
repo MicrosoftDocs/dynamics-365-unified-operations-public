@@ -71,8 +71,6 @@ items:
           href: data-entities/service-request-tracing.md
         - name: Recurring integrations
           href: data-entities/recurring-integrations.md
-        - name: Test services using third-party utilities
-          href: data-entities/third-party-service-test.md
       - name: Service protection limits
         items:
         - name: Service protection API limits
@@ -291,8 +289,6 @@ items:
           href: data-entities/validations-defaults-unmapped-fields.md
         - name: Security and data entities
           href: data-entities/security-data-entities.md
-        - name: Use third-party service testing utilities
-          href: data-entities/third-party-service-test.md
         - name: Create read-only entities that expose financial dimensions
           href: financial/read-only-entity-financial.md
       - name: Bring your own database
