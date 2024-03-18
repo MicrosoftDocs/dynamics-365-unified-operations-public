@@ -35,7 +35,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
 
    If your batch tasks are dynamically generated, such as if it's a runtime job, you can configure this value programmatically using the **BatchInfo** class or **BatchHeader** class. For example:
 
-```csharp
+```X++
    class SampleBatchClass extends RunBaseBatch
    {
        void new()
@@ -48,7 +48,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
    }
 ```
 
-```csharp
+```X++
    class SampleBatchClass extends RunBaseBatch
    {
       void new()
@@ -73,7 +73,7 @@ Currently, if finance and operations apps experience a brief loss of connection 
 There are three ways to indicate that a batch class is retryable for SQL transient connection errors:
 
 1. By implementing the **BatchRetryable** interface on the batch class. This interface has a single method, **isRetryable**, which returns a Boolean value. If the value is **True**, the batch class is retryable. If the value is **False**, the batch class isn't retryable. The **BatchRetryable** interface is available from version 10.0.18 (with Platform update 40). Here's code sample to set isRetryable to a Batch Class. 
-```csharp
+```X++
 //RunBaseBatch
 class SampleBatchClass extends RunBaseBatch implements BatchRetryable
 {
@@ -86,7 +86,7 @@ class SampleBatchClass extends RunBaseBatch implements BatchRetryable
 } 
 ```
 
-```csharp
+```X++
 //SysOperationServiceController 
 class SampleBatchClass extends SysOperationServiceController implements BatchRetryable
 {
@@ -102,7 +102,7 @@ class SampleBatchClass extends SysOperationServiceController implements BatchRet
 
 3. By setting **isIdempotent** flag in code of your batch class. Here's code sample to set idempotent to a Batch Class. The default value of idempotent is **False**. 
 
-```csharp
+```X++
 //RunBaseBatch
 class SampleBatchClass extends RunBaseBatch
 {
@@ -115,7 +115,7 @@ class SampleBatchClass extends RunBaseBatch
 } 
 ```
 
-```csharp
+```X++
 //SysOperationServiceController 
 class SampleBatchClass extends SysOperationServiceController
 {
@@ -142,7 +142,7 @@ To ensure that in the event of an SQL Transient connection error, we expect the 
 
 In below example platform won't be able to retry:
 
-```csharp
+```X++
 class SampleBatchClass extends RunBaseBatch
 {
     public void run()
@@ -164,7 +164,7 @@ class SampleBatchClass extends RunBaseBatch
 
 Here's correct way to do it:
 
-```csharp
+```X++
 class SampleBatchClass extends RunBaseBatch
 {
     public void run()
