@@ -4,10 +4,8 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: josaw1
-ms.date: 11/10/2023
+ms.date: 03/18/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 ms.custom: bap-template
 # optional metadata
 
