@@ -1622,6 +1622,8 @@
                 href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
                 href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
@@ -1700,6 +1702,8 @@
                 href: localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
                 href: localizations/global/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
             - name: Set up environments
               items:
               - name: Configure service environments and connected applications
