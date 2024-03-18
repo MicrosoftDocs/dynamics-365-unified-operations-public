@@ -6,8 +6,6 @@ description: This article provides information about the functionality for prior
 author: matapg007
 ms.date: 04/06/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

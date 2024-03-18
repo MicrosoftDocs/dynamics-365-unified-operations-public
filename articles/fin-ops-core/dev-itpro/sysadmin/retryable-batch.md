@@ -18,9 +18,9 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-## Retry Mechanisms for Batch Jobs in Finance and Operations Applications
+## Retry Mechanisms for Batch Tasks in Finance and Operations Applications
 
-This article details the implementation of retry mechanisms for batch jobs in finance and operations applications, along with instructions on enabling automatic retries. There are two distinct types of retries that can be used for batch tasks:
+This article details the implementation of retry mechanisms for batch tasks in finance and operations applications, along with instructions on enabling automatic retries. There are two distinct types of retries that can be used for batch tasks:
 
 - **Retry for any error or Batch Server restart**: It can be configured via the Batch Job form by adjusting the retry count on the Batch Task.
 - **Retry for SQL transient connection errors**: It can be achieved through code either by implementing the **BatchRetryable** interface on the Batch class or by setting the Batch Class **Idempotent** attribute using **BatchInfo**.
@@ -68,7 +68,7 @@ When you set the **Maximum retries** parameter, using **BatchHeader** then it ov
 
 ## Retry for SQL transient connection errors
 
-Currently, if finance and operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
+Currently, if finance and operations apps experience a brief loss of connection to Microsoft SQL Server, all batch tasks that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
 
 > [!NOTE]
 > Runtime tasks can be designated as retryable or idempotent. In the event of a SQL transient connection error, the platform will automatically retry them.
@@ -123,7 +123,7 @@ class SampleBatchClass extends RunBaseBatch
 //SysOperationServiceController 
 class SampleBatchClass extends SysOperationServiceController
 {
-    public static TestBatchJob construct(Args _args)
+    public static SampleBatchClass construct(Args _args)
     {
         SampleBatchClass controller = new SampleBatchClass();
         controller.batchInfo().parmIdempotent(true); // You can also use false if you do not want to enforce retryable behavior using Idempotent
@@ -141,9 +141,9 @@ The batch platform governs the maximum number of retries and the retry interval 
 > [!NOTE]
 > For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the respective batch class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
 
-To ensure that in the event of an SQL Transient connection error, we expect the batch class to throw the exact error. If the error isn't of type **TransientSqlConnectionError**, the platform won't recognize the issue, and consequently, it won't retry the corresponding batch task.
+To ensure that if there's an SQL Transient connection error, we expect the batch class to throw the exact error. If the error isn't of type **TransientSqlConnectionError**, the platform wouldn't recognize the issue, and so, it shall not retry the corresponding batch task.
 
-In below example platform won't be able to retry:
+In this example platform shall not be able to retry:
 
 ```X++
 class SampleBatchClass extends RunBaseBatch
@@ -187,8 +187,8 @@ class SampleBatchClass extends RunBaseBatch
 } 
 ```
 
-## Batch OData action capability
+## Batch Job Retry - OData action capability
 
-This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform has exposed a new Open Data Protocol (OData) action from version 10.0.22 (with Platform update 46). When a job ID is provided in a call to the endpoint, the job is requeued for execution.
+This option isn't a direct execution retry for Batch Jobs Themselves, like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform provides an Open Data Protocol (OData) action from version 10.0.22 (with Platform update 46). When a Batch Job ID is provided in a call to the endpoint, the job is requeued for execution.
 
 For more information, see [Batch OData API](batch-odata-api.md).
