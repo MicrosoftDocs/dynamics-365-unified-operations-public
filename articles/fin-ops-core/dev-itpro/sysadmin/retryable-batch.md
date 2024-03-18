@@ -215,7 +215,7 @@ By implementing one or more of these strategies, you can ensure that your batch 
 
 The main task, often referred to as the controller or driver, shouldn't finish immediately after queuing the child tasks. Instead, it should keep monitoring, in a loop say with delay of 15 seconds, the progress of each child runtime task to ensure successful completion. If a runtime task failed, the controller should requeue a new runtime task to attempt the operation again. It's important to manage the number of retries performed by the controller for each task. This can be achieved by maintaining a log of retries in a dedicated table or by structuring task identifiers, by using caption field, to reflect the retry count. It's advisable to limit retries, perhaps to a maximum of Five attempts, to avoid excessive processing or potential issues.
 
-### Why do Batch Platform doesn't retry Runtime Tasks?
+### Why do Batch Platform doesn't retry Runtime Tasks for errors other than SQL Transient connection error?
 
 Batch platform doesn't retry Runtime tasks due to two primary reasons. 
 
