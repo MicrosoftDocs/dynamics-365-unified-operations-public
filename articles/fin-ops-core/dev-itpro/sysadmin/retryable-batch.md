@@ -41,7 +41,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
 ```X++
    class SampleBatchClass extends RunBaseBatch
    {
-       void new()
+       void scheduleMyBatchClass()
        {
            BatchInfo info = this.batchInfo();
            info.parmRetriesOnFailure(5);
@@ -54,7 +54,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
 ```X++
    class SampleBatchClass extends RunBaseBatch
    {
-      void new()
+      void scheduleMyBatchClass()
       {
           BatchInfo info = this.batchInfo();
           BatchHeader header = batchInfo.parmBatchHeader(); 
