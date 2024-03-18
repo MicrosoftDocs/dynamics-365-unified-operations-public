@@ -33,6 +33,9 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
    1. From **Batch jobs** page and select **Batch task details**.
    2. Go to the **General** tab, and adjust the **Maximum retries** field for the batch task.
 
+> [!NOTE]
+> Setting the retry count on a Runtime Batch Task is not supported. If you attempt to define this value programmatically, the platform will override it to zero, and the runtime task will not be retried. 
+
    If your batch tasks are dynamically generated, such as if it's a runtime job, you can configure this value programmatically using the **BatchInfo** class or **BatchHeader** class. For example:
 
 ```X++
@@ -63,12 +66,13 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
 
 When you set the **Maximum retries** parameter, using **BatchHeader** then it overrides the value set in the Batch Task using **BatchInfo**. If the **Maximum retries** parameter is set to 0, the batch task shall not be retried.
 
-> [!NOTE]
-> Setting the retry count on a Runtime Batch Task is not supported. If you attempt to define this value programmatically, the platform will override it to zero, and the runtime task will not be retried. 
-
 ## Retry for SQL transient connection errors
 
 Currently, if finance and operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
+
+> [!NOTE]
+> Runtime tasks can be designated as retryable or idempotent. In the event of a SQL transient connection error, the platform will automatically retry them.
+
 
 There are three ways to indicate that a batch class is retryable for SQL transient connection errors:
 
@@ -135,8 +139,7 @@ Either batch class is marked Retryable or Idempotent, we retry it for SQL Transi
 The batch platform governs the maximum number of retries and the retry interval for SQL transient connection errors. Initially, retries begin after five seconds and cease when the interval reaches five minutes. The interval time increases exponentially with each retry: starting at 5 seconds, then 8 seconds, 16 seconds, 32 seconds, and so forth.
 
 > [!NOTE]
-> - For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the respective batch class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
-> - Runtime tasks can be designated as retryable or idempotent. In the event of a SQL transient connection error, the platform will automatically retry them.
+> For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the respective batch class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
 
 To ensure that in the event of an SQL Transient connection error, we expect the batch class to throw the exact error. If the error isn't of type **TransientSqlConnectionError**, the platform won't recognize the issue, and consequently, it won't retry the corresponding batch task.
 
