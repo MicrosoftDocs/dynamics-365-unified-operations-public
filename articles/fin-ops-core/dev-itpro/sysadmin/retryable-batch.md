@@ -20,18 +20,18 @@ ms.search.validFrom: 2021-05-31
 
 ## Retry Mechanisms for Batch Jobs in Finance and Operations Applications
 
-This article details the implementation of retry mechanisms for batch jobs in finance and operations applications, along with instructions on enabling automatic retries. There are two distinct types of retries that can be activated for batch jobs:
+This article details the implementation of retry mechanisms for batch jobs in finance and operations applications, along with instructions on enabling automatic retries. There are two distinct types of retries that can be used for batch tasks:
 
 - **Retry for any error or Batch Server restart**: It can be configured via the Batch Job Setup by adjusting the retry count on the Batch Task.
 - **Retry for SQL transient connection errors**: It can be achieved through code either by implementing the **BatchRetryable** interface on the Batch class or by setting the Batch Class **Idempotent** attribute using **BatchInfo**.
 
 ## Retry for any error or Batch Server restart 
  
-This functionality is configurable through the Batch Job Setup by adjusting the retry count on the Batch Task. The "Maximum retries" parameter determines the number of retries that would be attempted for a task, irrespective of the error type or Batch Server restart. If a task fails, the batch platform evaluates the number of retries performed. If the count is below the specified "Maximum retries," the task is reset to a ready state for reprocessing. The highest allowed value for "Maximum retries" is 5.
+This functionality is configurable through the Batch Job Setup by adjusting the retry count on the Batch Task. The **Maximum retries** parameter determines the number of retries that would be attempted for a task, irrespective of the error type or Batch Server restart. If a task fails, the batch platform evaluates the number of retries performed. If the count is below the specified "Maximum retries," the task is reset to a ready state for reprocessing. The highest allowed value for **Maximum retries** is 5.
 
    To set this value via the Batch user interface, follow these steps:
-   1. From **Batch jobs** page and select "Batch task details."
-   2. Go to the **General** tab, and adjust the "Maximum retries" field for the batch task.
+   1. From **Batch jobs** page and select **Batch task details**.
+   2. Go to the **General** tab, and adjust the **Maximum retries** field for the batch task.
 
    If your batch tasks are dynamically generated, such as if it's a runtime job, you can configure this value programmatically using the **BatchInfo** class or **BatchHeader** class. For example:
 
@@ -61,7 +61,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
    }
 ```
 
-When you set the "Maximum retries" parameter, using **BatchHeader** then it overrides the value set in the Batch Task using **BatchInfo**. If the "Maximum retries" parameter is set to 0, the batch task shall not be retried.
+When you set the **Maximum retries** parameter, using **BatchHeader** then it overrides the value set in the Batch Task using **BatchInfo**. If the **Maximum retries** parameter is set to 0, the batch task shall not be retried.
 
 > [!NOTE]
 > Setting the retry count on a Runtime Batch Task is not supported. If you attempt to define this value programmatically, the platform will override it to zero, and the runtime task will not be retried. 
