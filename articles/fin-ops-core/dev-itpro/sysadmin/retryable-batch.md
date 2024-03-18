@@ -63,7 +63,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
 
 When you set the "Maximum retries" parameter, using **BatchHeader** then it overrides the value set in the Batch Task using **BatchInfo**. If the "Maximum retries" parameter is set to 0, the batch task shall not be retried.
 
-[!NOTE]
+> [!NOTE]
 > Setting the retry count on a Runtime Batch Task is not supported. If you attempt to define this value programmatically, the platform will override it to zero, and the runtime task will not be retried. 
 
 ## Retry for SQL transient connection errors
