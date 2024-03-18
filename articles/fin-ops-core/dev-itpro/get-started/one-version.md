@@ -45,21 +45,21 @@ The following changes are being implemented:
 - The autoupdate and feedback phase of the [First Release program](https://aka.ms/FirstReleaseFnO) is extended by two weeks.
 - The servicing window of every release is substantially extended. It now lasts 186 to 214 days, and there's improved overlap between releases.
 - The maximum number of consecutive updates that can be paused is reduced from three to one. However, because release durations are extended, the same minimum of two service updates per year is maintained.
-- We're introducing an additional autoupdate window for each service update, starting with version 10.0.39. For more information, see the FAQ for autoupdate section in this article.
+- We're introducing another autoupdate window for each service update, starting with version 10.0.39. For more information, see the FAQ for autoupdate section in this article.
 
 ### What can I expect with the new (autoupdate) cadence?
-Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a 4-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring seven days prior to production.
+Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring seven days prior to production.
 
 ### Does the new release schedule affect when I can schedule autoupdates?
 Yes, with version 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is which service updates are released each year. 
 
-As an example, let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15th. This occurs during the first autoupdate window, starting either on April 5, April 12, or April 19, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10, or May 17. Opting for the second window gives you an additional four weeks between general availability and the final broadcast weekend, extending beyond the standard 6-week timeframe.
+As an example, let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15. This occurs during the first autoupdate window, starting either on April 5, April 12, or April 19, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10, or May 17. Opting for the second window gives you four more weeks between general availability and the final broadcast weekend, extending beyond the standard six-week timeframe.
 
 In this example, if a customer opts out of both autoupdate windows for the 10.0.39 release, they aren't able to opt out of both autoupdate windows for the next  release 10.0.40 ("July"), because skipping an autoupdate is longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### Is the change from the maximum of three pauses to one already in effect?
 
-No. The enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled autoupdates for version 10.0.38 are completed. From a release version perspective, beginning with 10.0.39 you'll only be able to pause a maximum of one update. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for GA (self-update) and autoupdate dates by version.
+No, the enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled autoupdates for version 10.0.38 are completed. From a release version perspective, beginning with 10.0.39 you'll only be able to pause a maximum of one update. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for GA (self-update) and autoupdate dates by version.
 
 The following table shows the allowed pauses through the transition based on your installed version. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
@@ -89,7 +89,7 @@ Yes. To enable version 10.0.38 to act as a transition release, some release mile
 
 ### Can the updates be delayed? What's the policy?
 
-Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. As of the April 2024 autoupdate, customers can choose to pause one update. Before April 2024, the number of pauses that are available to a customer depends on that customer's release version relative to the latest version. For more information, see **Is the change from the maximum of three pauses to one already in effect?** earlier in this FAQ. For more information on the twice autoupdate window we're introducing starting 10.0.39 see **What can I expect with the new (autoupdate) cadence?** earlier in this FAQ.
+Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. As of the April 2024 autoupdate, customers can choose to pause one update. Before April 2024, the number of pauses that are available to a customer depends on that customer's release version relative to the latest version. For more information, see **Is the change from the maximum of three pauses to one already in effect?** in this FAQ. For more information on the twice autoupdate window we're introducing starting 10.0.39 see **What can I expect with the new (autoupdate) cadence?** in this FAQ.
 
 For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
@@ -174,7 +174,7 @@ Ensuring the quality of releases is a fundamental principle that's enabled throu
 
 ### Can I select the day and time of the update?
 
-You can configure the day and maintenance time windows in Lifecycle Services. The service update, which is based on your update settings, starts within 15 minutes. If you opt in to receive Lifecycle Services notifications, you receive an email that includes update instructions. You can select the designated Tier-2/user acceptance testing (UAT) sandbox for the update. You have seven calendar days to do testing and validation before the production environment is updated. All additional sandboxes are automatically updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
+You can configure the day and maintenance time windows in Lifecycle Services. The service update, which is based on your update settings, starts within 15 minutes. If you opt in to receive Lifecycle Services notifications, you receive an email that includes update instructions. You can select the designated Tier-2/user acceptance testing (UAT) sandbox for the update. You have seven calendar days to do testing and validation before the production environment is updated. All other sandboxes are automatically updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
 You can optionally apply the update earlier to all environments through Lifecycle Services. The production-ready deployable package is available to all customers via the Action Center in Lifecycle Services by the general availability (self-update) date. For the targeted release schedule of upcoming releases, see [Service update availability](public-preview-releases.md).
 
@@ -199,11 +199,11 @@ The expected downtime for a successful update is approximately 15 minutes. Howev
 
 ### Can I delay an update?
 
-Yes, you can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. However, this option is unavailable if any of your sandbox and production environments are more than one version behind the latest available update. After the delay, Microsoft schedules and automatically applies an update. The update experience for a delayed update incurs additional downtime.
+Yes, you can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. However, this option is unavailable if any of your sandbox and production environments are more than one version behind the latest available update. After the delay, Microsoft schedules and automatically applies an update. The update experience for a delayed update incurs more downtime.
 
 ### Can I delay an update for longer than the one permitted skipped service update because of seasonal activity or other business reasons?
 
-No, after your environment version is more than one version older than the latest version, Microsoft automatically applies the latest service update to the default Tier-2 sandbox. Seven days later, the update is applied to all additional sandbox environments and production environments that are also more than one version older than the latest version. You can pause only one update before you must take the next service update. Therefore, in effect, a minimum of two service updates are required annually. For example, a customer is running version 10.0.39 and chooses to pause update 10.0.40. In this case, service update 10.0.41 is automatically applied first to the Tier-2 sandbox environment, and then later to all additional sandbox environments and production environments.
+No, after your environment version is more than one version older than the latest version, Microsoft automatically applies the latest service update to the default Tier-2 sandbox. Seven days later, the update is applied to all other sandbox environments and production environments that are also more than one version older than the latest version. You can pause only one update before you must take the next service update. Therefore, in effect, a minimum of two service updates are required annually. For example, a customer is running version 10.0.39 and chooses to pause update 10.0.40. In this case, service update 10.0.41 is automatically applied first to the Tier-2 sandbox environment, and then later to all other sandbox environments and production environments.
 
 ### What does it mean for a release to be "in service"?
 
@@ -268,7 +268,7 @@ Critical issues should always be submitted to the Support team via Lifecycle Ser
 
 ### How much time do I have for validation?
 
-You have seven calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the Action Center in Lifecycle Services and apply it to your environments. In this way, you get additional time to test the update before a production roll-out.
+You have seven calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the Action Center in Lifecycle Services and apply it to your environments. In this way, you get more time to test the update before a production roll-out.
 
 ### What happens when the service update is completed?
 
