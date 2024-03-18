@@ -40,7 +40,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
    {
        void new()
        {
-           BatchInfo info = super();
+           BatchInfo info = this.batchInfo();
            info.parmRetriesOnFailure(5);
            ...
        }
@@ -53,7 +53,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
    {
       void new()
       {
-          BatchInfo info = super();
+          BatchInfo info = this.batchInfo();
           BatchHeader header = batchInfo.parmBatchHeader(); 
           header.parmRetriesOnFailure(5);
           ...
