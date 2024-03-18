@@ -152,7 +152,7 @@ class SampleBatchClass extends RunBaseBatch
             this.batchInfo().parmIdempotent(true); 
             .....
         }
-        catch(TransientSqlConnectionError)
+        catch(Exception::TransientSqlConnectionError)
         {
             error("Batch class failed to run.");
             throw Exception::Error; //Throwing a new exception
@@ -174,7 +174,7 @@ class SampleBatchClass extends RunBaseBatch
             this.batchInfo().parmIdempotent(true); 
             .....
         }
-        catch(TransientSqlConnectionError)
+        catch(Exception::TransientSqlConnectionError)
         {
             error("Batch class failed to run.");
             throw; //Throwing the same exception
