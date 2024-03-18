@@ -18,103 +18,170 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how retries are implemented on batch jobs in finance and operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the batch platform provides three ways to enable batch resiliency and prevent transient failures.
+## Retry Mechanisms for Batch Jobs in Finance and Operations Applications
 
-## Retry the batch job task, regardless of the error type
+This article details the implementation of retry mechanisms for batch jobs in finance and operations applications, along with instructions on enabling automatic retries. There are two distinct types of retries that can be activated for batch jobs:
 
-We recommended that you use this option when you want a batch job task always to be retried, regardless of the error type. The **Maximum retries** value specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **Maximum retries**, the task is put back into a ready state so that it can be picked up again. Maximum allowed value for **Maximum retries** is **5**.
+- **Retry for any error or Batch Server restart**: It can be configured via the Batch Job Setup by adjusting the retry count on the Batch Task.
+- **Retry for SQL transient connection errors**: It can be achieved through code either by implementing the **BatchRetryable** interface on the Batch class or by setting the Batch Class **Idempotent** attribute using **BatchInfo**.
 
-1. On the **Batch jobs** page, select **Batch task details**.
-2. On the **General** tab, set the **Maximum retries** field.
+## Retry for any error or Batch Server restart 
+ 
+This functionality is configurable through the Batch Job Setup by adjusting the retry count on the Batch Task. The "Maximum retries" parameter determines the number of retries that would be attempted for a task, irrespective of the error type or Batch Server restart. If a task fails, the batch platform evaluates the number of retries performed. If the count is below the specified "Maximum retries," the task is reset to a ready state for reprocessing. The highest allowed value for "Maximum retries" is 5.
 
-## Retry the batch job task when transient SQL Server errors occur
+   To set this value via the Batch user interface, follow these steps:
+   1. From **Batch jobs** page and select "Batch task details."
+   2. Go to the **General** tab, and adjust the "Maximum retries" field for the batch task.
+
+   If your batch tasks are dynamically generated, such as if it's a runtime job, you can configure this value programmatically using the **BatchInfo** class or **BatchHeader** class. For example:
+
+```csharp
+   class SampleBatchClass extends RunBaseBatch
+   {
+       void new()
+       {
+           BatchInfo info = super();
+           info.parmRetriesOnFailure(5);
+           ...
+       }
+       ...
+   }
+```
+
+```csharp
+   class SampleBatchClass extends RunBaseBatch
+   {
+      void new()
+      {
+          BatchInfo info = super();
+          BatchHeader header = batchInfo.parmBatchHeader(); 
+          header.parmRetriesOnFailure(5);
+          ...
+     }
+   }
+```
+
+When you set the "Maximum retries" parameter, using **BatchHeader** then it overrides the value set in the Batch Task using **BatchInfo**. If the "Maximum retries" parameter is set to 0, the batch task shall not be retried.
+
+## Retry for SQL transient connection errors
 
 Currently, if finance and operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
 
-By default, all batch classes that are idempotent and produce the same results even after multiple runs are retryable. You can set an idempotency flag in the batch class instance by using **classinstance.BatchInfo().parmIdempotent(boolean)**. 
+There are three ways to indicate that a batch class is retryable for SQL transient connection errors:
 
-Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can be safely enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **False**.
-
-Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **True**. In this functionality, retries occur after any interruption of the SQL Server connection. Microsoft will continue to add retries on other exceptions.
-
-Precedence for the retryable flag for a class evaluation is in the following order: the **isIdempotent** flag, the batch class override configuration, and the **isRetryable** flag. 
-
-1. If the **isIdempotent** flag is **True**, the task will be retried, regardless of the other two flags. 
-2. If the **isIdempotent** is **False**, and the batch class override configuration is **True**, the task will be retried. If the batch class override configuration is **False**, the task won't be retried, because that value is an override value.
-3. If the **isIdempotent** flag is **False**, and the batch class override configuration isn't implemented, the **isRetryable** flag is evaluated. If the value is **True**, the task will be retried. If it's **False**, the task won't be retried.
-
-The maximum number of retries and the retry interval are controlled by the batch platform. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
-
-> [!NOTE]
-> For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the customer class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
-
-## Batch OData action capability
-
-This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform has exposed a new Open Data Protocol (OData) action from version 10.0.22 (with Platform update 46). When a job ID is provided in a call to the endpoint, the job will be requeued for execution.
-
-For more information, see [Batch OData API](batch-odata-api.md).
-
-## Frequently asked questions
-
-### How do retries work for my custom batch jobs?
-
-There is no change to the custom batch jobs. To take advantage of automated retries, explicitly implement the **BatchRetryable** interface on the custom batch jobs, and set **isRetryable** to **true**. Note that you might have to modify the batch jobs to ensure that they are safe to retry.
-
-### How do I implement the retryable interface?
-
-Add the following code to your batch class.
-
-For more information, see [Final methods and the Wrappable attribute](../extensibility/method-wrapping-coc.md).
-
-```
+1. By implementing the **BatchRetryable** interface on the batch class. This interface has a single method, **isRetryable**, which returns a Boolean value. If the value is **True**, the batch class is retryable. If the value is **False**, the batch class isn't retryable. The **BatchRetryable** interface is available from version 10.0.18 (with Platform update 40). Here's code sample to set isRetryable to a Batch Class. 
+```csharp
 //RunBaseBatch
-class TestBatchJob extends RunBaseBatch implements BatchRetryable
+class SampleBatchClass extends RunBaseBatch implements BatchRetryable
 {
     [Wrappable(true), Replaceable(true)] // Change to meet your customizability requirements
     public boolean isRetryable() // Use final if you want to prevent overriding
     {
-        return false; // You can also use true if you want to enforce retryable behavior
+        return true; // You can also use fasle if you do not want to enforce retryable behavior using isRetryable
     }
     ...
 } 
+```
 
+```csharp
 //SysOperationServiceController 
-class TestBatchJob extends SysOperationServiceController implements BatchRetryable
+class SampleBatchClass extends SysOperationServiceController implements BatchRetryable
 {
     [Wrappable(true), Replaceable(true)] // Change to meet your customizability requirements
     public boolean isRetryable() // Use final if you want to prevent overriding
     {
-        return false; // You can also use true if you want to enforce retryable behavior
+        return true; // You can also use fasle if you do not want to enforce retryable behavior using isRetryable
+    }
+}
+```
+
+2. By setting override of **isRetryable** in Batch user interface. To do it, you have to navigate to **System Administration > Setup > Batch class configuration overrides** and add the batch class and desired value of Is Retryable. The value entered here shall override for the value provided in code by option 1.
+
+3. By setting **isIdempotent** flag in code of your batch class. Here's code sample to set idempotent to a Batch Class. The default value of idempotent is **False**. 
+
+```csharp
+//RunBaseBatch
+class SampleBatchClass extends RunBaseBatch
+{
+    public void run()
+    {
+        this.batchInfo().parmIdempotent(true); // You can also use false if you do not want to enforce retryable behavior using Idempotent
+        .....
+    }
+    ...
+} 
+```
+
+```csharp
+//SysOperationServiceController 
+class SampleBatchClass extends SysOperationServiceController
+{
+    public static TestBatchJob construct(Args _args)
+    {
+        SampleBatchClass controller = new SampleBatchClass();
+        controller.batchInfo().parmIdempotent(true); // You can also use false if you do not want to enforce retryable behavior using Idempotent
+        ....
+        return controller;
     }
     ...
 }
 ```
 
-### I am extending a Microsoft batch that is retryable, but my batch job isn't retryable. Will the retry be triggered?
+Either batch class is marked Retryable or Idempotent, we retry it for SQL Transient connection error and this has no relation to Batch retry count on Batch Task. 
 
-Provided that **isRetryable** is set to **false** for the extended job, the job won't be retried.
+The maximum number of retries and the retry interval, for SQL Transient connection error, is controlled by the batch platform. The Batch platform starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.).
 
-### I mistakenly marked my custom job as retryable. Can I override without taking another code change?
+> [!NOTE]
+> For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the respective batch class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
 
-Yes. You can go to **System administration \> Setup \> Batch class configuration overrides** to unregister your class from being retried when SQL Server connection failures occur, without having to go through a code change. On the **Batch class configuration overrides** page, you must create a new record and add the batch class that you want to unregister. You can use this feature to react quickly to changes that are required. The best practice recommendation is to make sure that the code is updated.
+To ensure that in event of SQL Transient connection error, we expect batch class to throw us exact error, if the error isn't of type **TransientSqlConnectionError**, then platform won't know of the issue and won't retry the respective batch task.
 
-### My batch jobs are designed to run multithreaded. How do I implement retries?
+In below example platform won't be able to retry:
 
-If your custom batch process is designed to run in multithreading (that is, if you're creating multiple tasks and adding runtime tasks), you must implement the **BatchRetryable** interface in both the main controller and the task controller.
+```csharp
+class SampleBatchClass extends RunBaseBatch
+{
+    public void run()
+    {
+        try
+        {
+            this.batchInfo().parmIdempotent(true); 
+            .....
+        }
+        catch(TransientSqlConnectionError)
+        {
+            error("Batch class failed to run.");
+            throw Exception::Error; //Throwing a new exception
+        }
+    }
+    ...
+} 
+```
 
-### What is the best practice for the execution time for a batch job?
+Here's correct way to do it:
 
-A batch job that has a shorter execution time is more likely to be successfully completed. Therefore, the need for a retry is avoided.
+```csharp
+class SampleBatchClass extends RunBaseBatch
+{
+    public void run()
+    {
+        try
+        {
+            this.batchInfo().parmIdempotent(true); 
+            .....
+        }
+        catch(TransientSqlConnectionError)
+        {
+            error("Batch class failed to run.");
+            throw; //Throwing the same exception
+        }
+    }
+    ...
+} 
+```
 
-### What is the best practice for the transaction size for a batch job?
+## Batch OData action capability
 
-A batch job that has a smaller transaction size reduces the amount of work that can be lost because of a transient failure. Therefore, the need for a retry won't drastically increase the total execution time.
+This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform has exposed a new Open Data Protocol (OData) action from version 10.0.22 (with Platform update 46). When a job ID is provided in a call to the endpoint, the job is requeued for execution.
 
-### What does idempotent mean for a batch job?
-
-In this context, *idempotent* means that a retry won't change or affect the overall result. For example, something should be done only one time and won't be done more than one time. Therefore, something that is done in the original run won't be done again during the retry.
-
-### Can I change the maximum number of retries and the retry interval?
-
-The **BatchRetryable** interface enables transient SQL connection issues to be handled. It's mainly controlled by the framework. Customers can't update settings for **BatchRetryable**, such as the maximum number of retries and the retry interval.
-
+For more information, see [Batch OData API](batch-odata-api.md).
