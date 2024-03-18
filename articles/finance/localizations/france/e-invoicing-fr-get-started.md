@@ -70,7 +70,7 @@ Some of the parameters from the **French Chorus Pro submission (FR)** electronic
 3. Create a copy of the imported globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
 4. On the **Versions** tab, verify that the **Draft** version is selected.
 5. On the **Setups** tab, in the grid, select the **UBL Sales invoice derived** feature setup.
-6. Select **Edit**, and then, on the **Processing pipeline** tab, in the **Processing pipeline** section, select **(Preview) Integrate with French Chorus Pro** with the action name **French Chorus Pro submit**.
+6. Select **Edit**, and then, on the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with French Chorus Pro** with the action name **French Chorus Pro submit**.
 7. In the **Parameters** section, in the **Client ID secret name** field, select the secret name that you created for the client ID in the key vault.
 8. In the **Client Secret secret name** field, select the secret name you created for the client secret in the key vault.
 9. In the **Technical login secret name** field, select the secret name that you created for technical account sign-in in the key vault.
