@@ -66,7 +66,7 @@ Follow these steps to retrieve log entries by calling the [Inventory Visibility 
     Body:
     
         {
-        "id": "id-"  "{{datetime}}",
+        "id": "id-contoso-{{datetime}}",
         "organizationId": "usmf",
         "UtcFromDate": "2023/8/23",
         "UtcToDate": "2023/8/23",

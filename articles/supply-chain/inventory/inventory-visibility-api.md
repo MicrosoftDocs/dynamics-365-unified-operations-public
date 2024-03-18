@@ -410,25 +410,25 @@ Body:
     }
 ```
 
-<!--  The following example shows sample body content.
+The following example shows sample body content.
 
 ```json
 {
     "id": "reserve-0",
     "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "productId": "iv_contoso_product",
     "quantity": 1,
     "quantityDataSource": "iv",
     "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "iv_contoso_site",
+        "locationId": "iv_contoso_location",
         "colorId": "red",
         "sizeId": "small"
     }
 }
-``` -->
+```
 
 The following example shows a successful response.
 
@@ -511,23 +511,23 @@ Body:
     }
 ```
 
-<!-- The following code shows an example of body content.
+The following code shows an example of body content.
 
 ```json
 {
     "id": "unreserve-0",
     "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "productId": "iv_contoso_product",
     "reservationId": "RESERVATION_ID",
     "dimensions": {
-        "siteid":"iv_postman_site",
-        "locationid":"iv_postman_location",
+        "siteid":"iv_contoso_site",
+        "locationid":"iv_contoso_location",
         "ColorId": "red",
         "SizeId": "small"
     },
     "OffsetQty": 1
 }
-``` -->
+```
 
 The following code shows an example of a successful response body.
 
@@ -696,11 +696,11 @@ Query(Url Parameters):
     [Filters]
 ```
 
-<!-- Here's a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
+Here's a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
-``` -->
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_contoso_product&siteId=iv_contoso_site&locationId=iv_contoso_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
 
 ## <a name="exact-query-with-post-method"></a>On-hand exact query
 
@@ -755,18 +755,18 @@ In the body part of this request, `dimensionDataSource` is an optional parameter
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
-<!--  The following example shows sample body content.
+The following example shows sample body content.
 
 ```json
 {
     "dimensionDataSource": "pos",
     "filters": {
         "organizationId": ["SCM_IV"],
-        "productId": ["iv_postman_product"],
+        "productId": ["iv_contoso_product"],
         "dimensions": ["siteId", "locationId", "colorId"],
         "values" : [
-            ["iv_postman_site", "iv_postman_location", "red"],
-            ["iv_postman_site", "iv_postman_location", "blue"],
+            ["iv_contoso_site", "iv_contoso_location", "red"],
+            ["iv_contoso_site", "iv_contoso_location", "blue"],
         ]
     },
     "groupByValues": ["colorId", "sizeId"],
@@ -783,14 +783,14 @@ The following example shows how to query all products in multiple sites and loca
         "productId": [],
         "dimensions": ["siteId", "locationId"],
         "values" : [
-            ["iv_postman_site_1", "iv_postman_location_1"],
-            ["iv_postman_site_2", "iv_postman_location_2"],
+            ["iv_contoso_site_1", "iv_contoso_location_1"],
+            ["iv_contoso_site_2", "iv_contoso_location_2"],
         ]
     },
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
-```  -->
+```
 
 ## <a name="product-search-query"></a>Query with product search
 
