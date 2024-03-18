@@ -22,7 +22,7 @@ ms.search.validFrom: 2021-05-31
 
 This article details the implementation of retry mechanisms for batch jobs in finance and operations applications, along with instructions on enabling automatic retries. There are two distinct types of retries that can be used for batch tasks:
 
-- **Retry for any error or Batch Server restart**: It can be configured via the Batch Job Setup by adjusting the retry count on the Batch Task.
+- **Retry for any error or Batch Server restart**: It can be configured via the Batch Job form by adjusting the retry count on the Batch Task.
 - **Retry for SQL transient connection errors**: It can be achieved through code either by implementing the **BatchRetryable** interface on the Batch class or by setting the Batch Class **Idempotent** attribute using **BatchInfo**.
 
 ## Retry for any error or Batch Server restart 
@@ -135,8 +135,8 @@ Either batch class is marked Retryable or Idempotent, we retry it for SQL Transi
 The batch platform governs the maximum number of retries and the retry interval for SQL transient connection errors. Initially, retries begin after five seconds and cease when the interval reaches five minutes. The interval time increases exponentially with each retry: starting at 5 seconds, then 8 seconds, 16 seconds, 32 seconds, and so forth.
 
 > [!NOTE]
-> For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the respective batch class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
-> Runtime tasks can be designated as retryable or idempotent. In the event of a SQL transient connection error, the platform will automatically retry them.
+> - For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the respective batch class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
+> - Runtime tasks can be designated as retryable or idempotent. In the event of a SQL transient connection error, the platform will automatically retry them.
 
 To ensure that in the event of an SQL Transient connection error, we expect the batch class to throw the exact error. If the error isn't of type **TransientSqlConnectionError**, the platform won't recognize the issue, and consequently, it won't retry the corresponding batch task.
 
