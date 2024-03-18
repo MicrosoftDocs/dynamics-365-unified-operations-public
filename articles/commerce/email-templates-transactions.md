@@ -12,8 +12,6 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
 ---
 # Create email templates for transactional events
 
