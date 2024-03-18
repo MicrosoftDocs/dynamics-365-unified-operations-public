@@ -18,9 +18,11 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
+Implementing a retry mechanism in Finance and Operations Batch is vital for maintaining robust data processing. It provides fault tolerance by automatically handling transient errors, ensuring uninterrupted operation without manual intervention. It enhances data integrity by reprocessing incomplete or failed transactions, reducing the risk of data loss. By minimizing downtime and manual intervention, retry mechanisms improve operational efficiency, enabling batch processing to proceed smoothly despite intermittent errors or disruptions.
+
 ## Retry Mechanisms for Batch Tasks
 
-This article details the implementation of retry mechanisms for batch tasks in finance and operations applications, along with instructions on enabling automatic retries. There are two distinct types of retries that can be used for batch tasks:
+There are two distinct types of retries that can be used for batch tasks:
 
 - **Retry for any error or Batch Server restart**: It can be configured via the Batch Job form by adjusting the retry count on the Batch Task.
 - **Retry for SQL transient connection errors**: It can be achieved through code either by implementing the **BatchRetryable** interface on the Batch class or by setting the Batch Class **Idempotent** attribute using **BatchInfo**.
@@ -192,3 +194,23 @@ class SampleBatchClass extends RunBaseBatch
 - All recurring Batch Jobs are automatically returned to the waiting state, regardless of whether they fail or succeed. It ensures that recurring jobs can complete any pending work in the next run if the previous run failed. To enable this functionality, the Batch Job's recurrence conditions must still be valid. It includes having a remaining recurrence count or a recurrence end date that hasn't passed.
 
 - This option isn't a direct execution retry for Batch Jobs themselves, like the previous option. It enables the customer to add custom logic before the job is retriggered. When job execution fails, one can listen to corresponding business events and decide whether the failure can be retried. The batch platform provides an Open Data Protocol (OData) action from version 10.0.22 (with Platform update 46). When a Batch Job ID is provided in a call to the endpoint, the job is requeued for execution. For more information, refer [Batch OData API](batch-odata-api.md).
+
+## Frequently asked questions
+
+### How can I prevent my batch task from sending multiple emails as a result of retries?
+
+To prevent the batch task from sending multiple emails due to retries, you can implement a mechanism to ensure that the email is sent only once, regardless of the number of retries. Here are a few strategies you can consider:
+
+1. **Use Transactional Email Services**: Utilize transactional email services that provide features for ensuring message delivery and avoiding duplication. These services often include built-in mechanisms to prevent duplicate emails from being sent, even if the task is retried.
+
+2. **Check Email Status**: Before sending the email, check the status of previous email deliveries to ensure that the same email isn't sent multiple times. You can maintain a log or database table to track the status of email deliveries and prevent duplicate sends.
+
+3. **Implement Idempotent Email Sending**: Make the email sending process idempotent, meaning that sending the same email multiple times has the same effect as sending it once. It can be achieved by including a unique identifier (such as a message ID or transaction ID) in the email content and checking for its existence before sending the email.
+
+4. **Use different Runtime Batch Task to send email**: In your main batch task, initiate a new runtime batch task for sending emails. Keep track of the batch task's state to confirm if the email was successfully sent. When the main task is retried, verify the runtime task's state to check if the email was already sent, and if so, bypass the sending process.
+
+By implementing one or more of these strategies, you can ensure that your batch task sends emails reliably without the risk of duplicates, even if there are retries.
+
+### I have a multi-threaded Batch Job, where the main task is static and it queues multiple runtime tasks to do the work. As runtime tasks don't undergo retries, how can I make sure my Job completes successfully.
+
+The main task, often referred to as the controller or driver, shouldn't finish immediately after queuing the child tasks. Instead, it should keep monitoring, in a loop say with delay of 15 seconds, the progress of each child runtime task to ensure successful completion. If a runtime task failed, the controller should requeue a new runtime task to attempt the operation again. It's important to manage the number of retries performed by the controller for each task. This can be achieved by maintaining a log of retries in a dedicated table or by structuring task identifiers, by using caption field, to reflect the retry count. It's advisable to limit retries, perhaps to a maximum of Five attempts, to avoid excessive processing or potential issues.
