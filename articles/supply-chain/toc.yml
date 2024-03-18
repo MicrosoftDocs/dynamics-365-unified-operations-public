@@ -3857,6 +3857,8 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
+          - name: Set up a mobile device menu item for completing mixed license plates
+            href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
