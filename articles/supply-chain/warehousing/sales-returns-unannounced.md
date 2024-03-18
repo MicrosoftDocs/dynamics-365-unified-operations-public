@@ -24,8 +24,6 @@ This article explains how to set up Supply Chain Management to support unannounc
 
 ## Prerequisites
 
-<!-- KFM: We might need this. I'm not sure. Need to fill in the actual version numbers! -->
-
 To use the features described in this article, your system must meet the following requirements:
 
 - To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
@@ -73,19 +71,12 @@ During the *Return item receiving* process, workers must use the mobile app to i
 
 ## Print return labels from a mobile device
 
-<!--KFM: Here is where we can tell more about this feature if we really want to. I'm not sure it's necessary. Links to how to set up printers, routing, etc. could also be included here. -->
+It's possible for workers to print return labels directly from a mobile device as part of the *Return item receiving* process. Return labels make it easier for staff to manage and track returns. To add this capability, you must turn on the feature for the relevant mobile device menu items (as described later in this topic) and set up a label printer for the warehouse. For more information about how to set up a printer, see the following articles:
 
-Enabling printing for return orders is a feature designed to enhance your business returns manegement.
-It offers traceability for your return transactions, making it easier for staff to manage and track returns. Overall, enabling printing for return orders is a step towards a more streamlined and effective return management system.
-
-•	First, we need to enable the Print label for our system. Head into the mobile device menu items settings by going into Warehouse Management > Set up > Mobile device > Mobile device menu items. 
-•	Select the mobile device menu item you want to enable label printing for, select edit, and toggle the Print label to Yes.
-
-When that has been done, we can set up external printers, and after that the document routing, to complete the setup.
-
-To set up external printers: Print labels using an external service - Supply Chain Management | Dynamics 365 | Microsoft Learn
-
-Follow these steps to set up document routing:  Document routing label layouts - Supply Chain Management | Dynamics 365 | Microsoft Learn
+- [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md)
+- [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
+- [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
+- [Document routing label layouts](document-routing-layout-for-license-plates.md)
 
 ## Set up unannounced sales return receiving
 
@@ -184,9 +175,8 @@ To enable workers to process unannounced returns, you must create a separate mob
     - **Work creation process** – Select *Return item receiving*.
     - **Barcode data policy** – Select the policy to use if multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](/dynamics365/supply-chain/warehousing/gs1-barcodes).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate.
-    - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process.
-    - **Print label** – Select this option to print a return label only after all steps in the work template has been completed. If the print label option is selected, labels are always printed for the work order. This is true regardless of whether a print step is included in the work template. 
-Additionally, if a work template does include a print step, the position of the step in the sequence is disregarded and labels are always printed last. This is useful if you always want to print labels at the end of the process. If you want to use the work template to print labels at a specific point in the process, do not select this option. 
+    - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process. The disposition code determines the inventory status, work template, and location directive for the returned items.
+    - **Print label** – Set this option to *Yes* to always print a return label after all steps in the related work template have been completed (regardless of whether a print step is included in the work template). If the work template includes a print step, the position of that step in the sequence is disregarded and labels are always printed last. This is useful if you always want to print labels at the end of the process. If you want to allow the work template to print labels at a different point in the process, then set this option to *No*.
     - **Return item receiving policy ID** – Select the [item receiving policy](#create-return-item-receiving-policies) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat steps 2 and 3 to create a menu item for the other process
