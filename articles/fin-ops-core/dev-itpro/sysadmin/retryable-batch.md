@@ -1,17 +1,16 @@
 ---
-# required metadata
-
 title: Enable batch retries
-description: This article describes how to enable automatic retries on batch jobs & tasks when failures occur.
+description: This article describes how to enable automatic retries on batch jobs and tasks when failures occur.
 author: matapg007
-ms.date: 06/16/2022
-ms.topic: article
+ms.date: 03/18/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-05-31
-
 ---
 
 # Enable batch retries
@@ -33,7 +32,7 @@ This functionality is configurable through the Batch Job Setup by adjusting the 
 
    To set this value via the Batch user interface, follow these steps:
    1. From **Batch jobs** page and select **Batch task details**.
-   2. Go to the **General** tab, and adjust the **Maximum retries** field for the batch task.
+   2. Go to the **General** tab and adjust the **Maximum retries** field for the batch task.
 
 > [!NOTE]
 > Setting the retry count on a Runtime Batch Task is not supported. If you attempt to define this value programmatically, the platform will override it to zero, and the runtime task will not be retried. 
@@ -211,14 +210,14 @@ To prevent the batch task from sending multiple emails due to retries, you can i
 
 By implementing one or more of these strategies, you can ensure that your batch task sends emails reliably without the risk of duplicates, even if there are retries.
 
-### I have a multi-threaded Batch Job, where the main task is static and it queues multiple runtime tasks to do the work. As runtime tasks don't undergo retries, how can I make sure my Job completes successfully.
+### I have a multi-threaded Batch Job, where the main task is static, and it queues multiple runtime tasks to do the work. As runtime tasks don't undergo retries, how can I make sure my Job completes successfully.
 
-The main task, often referred to as the controller or driver, shouldn't finish immediately after queuing the child tasks. Instead, it should keep monitoring, in a loop say with delay of 15 seconds, the progress of each child runtime task to ensure successful completion. If a runtime task failed, the controller should requeue a new runtime task to attempt the operation again. It's important to manage the number of retries performed by the controller for each task. This can be achieved by maintaining a log of retries in a dedicated table or by structuring task identifiers, by using caption field, to reflect the retry count. It's advisable to limit retries, perhaps to a maximum of Five attempts, to avoid excessive processing or potential issues.
+The main task, often referred to as the controller or driver, shouldn't finish immediately after queuing the child tasks. Instead, it should keep monitoring, in a loop say with delay of 15 seconds, the progress of each child runtime task to ensure successful completion. If a runtime task fails, the controller should requeue a new runtime task to attempt the operation again. It's important to manage the number of retries performed by the controller for each task. This can be achieved by maintaining a log of retries in a dedicated table or by structuring task identifiers, by using caption field, to reflect the retry count. It's advisable to limit retries, perhaps to a maximum of Five attempts, to avoid excessive processing or potential issues.
 
 ### Why do Batch Platform doesn't retry Runtime Tasks for errors other than SQL Transient connection error?
 
 Batch platform doesn't retry Runtime tasks due to two primary reasons. 
 
-- Runtime tasks are designed to be temporary and in-memory, and are cleared upon server restart events. It's primarily because the driver or controller class, which is always static, handles child task retries upon restart by requeuing new runtime tasks for the once which failed. Retrying the runtime tasks could lead to the creation of duplicate tasks, potentially causing mutation issues and system overload with excessive duplicate batch tasks. 
+- Runtime tasks are designed to be temporary and in-memory and are cleared upon server restart events. It's primarily because the driver or controller class, which is always static, handles child task retries upon restart by requeuing new runtime tasks for the once which failed. Retrying the runtime tasks could lead to the creation of duplicate tasks, potentially causing mutation issues and system overload with excessive duplicate batch tasks. 
 
 - Runtime tasks, if retried, could complicate system management and lead to unexpected behavior, especially considering the potential cascading effect of runtime tasks creating extra tasks.
