@@ -4,10 +4,12 @@
 title: Maintenance in self-service environments FAQ
 description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
-ms.date: 09/08/2022
-ms.topic: article
+ms.date: 03/18/2024
+ms.topic: faq
+ms.custom: 
+  - bap-template
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-05-13
