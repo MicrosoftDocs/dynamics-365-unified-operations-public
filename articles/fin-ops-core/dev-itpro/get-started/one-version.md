@@ -39,37 +39,37 @@ For more information about One Version service updates, see [One Version service
 
 The following changes are being implemented:
 
-- Service updates are released only in February (December self-update), April, July, and October. The May, August, and November releases are no longer available for self-update or auto-update.
+- Service updates are released only in February (December self-update), April, July, and October. The May, August, and November releases are no longer available for self-update or autoupdate.
 - The lifecycle of each release is substantially extended. It now lasts 404 to 414 days.
 - The preview period is extended. Every release now includes one scheduled update to the preview build.
-- The auto-update and feedback phase of the [First Release program](https://aka.ms/FirstReleaseFnO) is extended by two weeks.
+- The autoupdate and feedback phase of the [First Release program](https://aka.ms/FirstReleaseFnO) is extended by two weeks.
 - The servicing window of every release is substantially extended. It now lasts 186 to 214 days, and there's improved overlap between releases.
 - The maximum number of consecutive updates that can be paused is reduced from three to one. However, because release durations are extended, the same minimum of two service updates per year is maintained.
-- We are introducing an additional auto-update window for each service update, starting with 10.0.39 see the FAQ for auto update below.
+- We're introducing an additional autoupdate window for each service update, starting with 10.0.39 see the FAQ for autoupdate below.
 
-### What can I expect with the new (auto-update) cadence?
-Beginning version 10.0.39, the service update auto-update window will be divided into two windows, separated by approximately a 4-week gap. This change provides customers with greater flexibility in scheduling their auto-updates.
-Auto-update Window 1 closely resembles the historical approach of OneVersion service updates. Auto-update Window 2 allows you to schedule your update for 4 weeks later. Apart from this, auto-updates will continue to function as before, with UAT sandbox updates occurring 7 days prior to production.
+### What can I expect with the new (autoupdate) cadence?
+Beginning version 10.0.39, the service update autoupdate window is divided into two windows, separated by approximately a 4-week gap. This change provides customers with greater flexibility in scheduling their autoupdates.
+Autoupdate Window 1 closely resembles the historical approach of OneVersion service updates. Autoupdate Window 2 allows you to schedule your update for 4 weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring 7 days prior to production.
 
-### Does the new release schedule affect when I can schedule auto-updates?
-Yes. With 10.0.39, there will be two auto update windows to choose from for every service update. Customers can then select a weekend for the second auto-update, which commences one month after the first auto update instance. There is no change in how auto-updates are scheduled in Microsoft Dynamics Lifecycle Services and when those auto-updates occur. The only change is what service updates are released each year. 
-As an example - let's say you have opted for the 10.0.39 ("April") release through auto-update. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled auto-updates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15th. This will occur during the first auto-update window, starting either on April 5, April 12, or April 19, depending on your chosen configuration. Alternatively, if you've selected the second auto-update window, your updates will begin on May 3, May 10, or May 17. Opting for the second window gives you an additional 4 weeks between general availability and the final broadcast weekend, extending beyond the standard 6-week timeframe.
-In this example - if a customer opts out of both auto-update windows for the 10.0.39 release, they will not be able to opt out of both auto-update windows for the next ->10.0.40 ("July") release, as skipping an auto-update will no longer be possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+### Does the new release schedule affect when I can schedule autoupdates?
+Yes, with 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is what service updates are released each year. 
+As an example - let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15th. This occurs during the first autoupdate window, starting either on April 5, April 12, or April 19, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10, or May 17. Opting for the second window gives you an additional 4 weeks between general availability and the final broadcast weekend, extending beyond the standard 6-week timeframe.
+In this example - if a customer opts out of both autoupdate windows for the 10.0.39 release, they aren't able to opt out of both autoupdate windows for the next ->10.0.40 ("July") release, as skipping an autoupdate is longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### Is the change from the maximum of three pauses to one already in effect?
 
-No. The enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled auto-updates for version 10.0.38 are completed. From a release version perspective, beginning with 10.0.39 you'll only be able to pause a maximum of one update. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for GA (self-update) and auto-update dates by version.
+No. The enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled autoupdates for version 10.0.38 are completed. From a release version perspective, beginning with 10.0.39 you'll only be able to pause a maximum of one update. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for GA (self-update) and autoupdate dates by version.
 
 The following table shows the allowed pauses through the transition based on your installed version. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 | On 10.0.35 | On 10.0.36  | On 10.0.37  | On 10.0.38  | February 19, 2024  | On 10.0.39   |
 |------------|-------------|-------------|-------------|--------------------|--------------|
-| 10.0.36 auto-update pause allowed. | 10.0.37 auto-update pause allowed. | 10.0.38 auto-update pause allowed. | 10.0.39 auto-update pause allowed after February 19. | Max. of 1 pause starts February 19 after 10.0.38 auto-update completes. | 10.0.40 auto-update pause allowed. |
-| 10.0.37 auto-update pause allowed. | 10.0.38 auto-update pause allowed. | Must take 10.0.39 auto-update. | Must take 10.0.40 auto-update. |  | Must take 10.0.41 auto-update. |
-| 10.0.38 auto-update pause allowed. | Must take 10.0.39 auto-update. | 10.0.40 auto-update pause allowed. |  |  |  |
-| Must take 10.0.39 auto-update. | 10.0.40 auto-update pause allowed. | Must take 10.0.41 auto-update. |  |  |  |
-| 10.0.40 auto-update pause allowed. | Must take 10.0.41 auto-update. |  |  |  |  |
-| Must take 10.0.41 auto-update. |  |  |  |  |  |
+| 10.0.36 autoupdate pause allowed. | 10.0.37 autoupdate pause allowed. | 10.0.38 autoupdate pause allowed. | 10.0.39 autoupdate pause allowed after February 19. | Max. of 1 pause starts February 19 after 10.0.38 autoupdate completes. | 10.0.40 autoupdate pause allowed. |
+| 10.0.37 autoupdate pause allowed. | 10.0.38 autoupdate pause allowed. | Must take 10.0.39 autoupdate. | Must take 10.0.40 autoupdate. |  | Must take 10.0.41 autoupdate. |
+| 10.0.38 autoupdate pause allowed. | Must take 10.0.39 autoupdate. | 10.0.40 autoupdate pause allowed. |  |  |  |
+| Must take 10.0.39 autoupdate. | 10.0.40 autoupdate pause allowed. | Must take 10.0.41 autoupdate. |  |  |  |
+| 10.0.40 autoupdate pause allowed. | Must take 10.0.41 autoupdate. |  |  |  |  |
+| Must take 10.0.41 autoupdate. |  |  |  |  |  |
 
 ### When does the new service update release cadence take effect?
 
@@ -80,25 +80,25 @@ Version 10.0.38 (the "February" release) is revised to act as a transition relea
 Yes. To enable version 10.0.38 to act as a transition release, some release milestones were adjusted for alignment with the new release cadence.
 
 - Preview availability was pushed out by two weeks, from October 13 to October 27, 2023.
-- An update to the preview was added and will be released on November 3, 2023.
-- Customers who participate in the [First Release program](https://aka.ms/FirstReleaseFnO) receive their auto-updates a month earlier, in December 2023.
+- An update to the preview was added and released on November 3, 2023.
+- Customers who participate in the [First Release program](https://aka.ms/FirstReleaseFnO) receive their autoupdates a month earlier, in December 2023.
 - General availability for self-update occurs a month earlier, on December 22, 2023.
-- There's no change to the general availability broadcast (auto-update) dates.
+- There's no change to the general availability broadcast (autoupdate) dates.
 - The servicing window is extended from April 12 to August 9, 2024.
 
 ### Can the updates be delayed? What's the policy?
 
-Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. As of the April 2024 auto-update, customers can choose to pause one update. Before April 2024, the number of pauses that are available to a customer depends on that customer's release version relative to the latest version. For more information, see **Is the change from the maximum of three pauses to one already in effect?** earlier in this FAQ. For more information on the twice auto-update window we are introducing starting 10.0.39 see **What can I expect with the new (auto-update) cadence?** earlier in this FAQ.
+Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. As of the April 2024 autoupdate, customers can choose to pause one update. Before April 2024, the number of pauses that are available to a customer depends on that customer's release version relative to the latest version. For more information, see **Is the change from the maximum of three pauses to one already in effect?** earlier in this FAQ. For more information on the twice autoupdate window we're introducing starting 10.0.39 see **What can I expect with the new (autoupdate) cadence?** earlier in this FAQ.
 
 For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### How does the timing for general availability of a release work?
 
-The release package is made generally available to all customers for self-update before auto-updates. The timing of the package release for self-update relative to the production auto-updates varies. To determine the timing of self-update and auto-updates for upcoming releases, see [Targeted release schedule (dates subject to change)](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
-Sandbox updates are always scheduled a week before the update. Production auto-updates for release are scheduled for the first, second, and third weeks of the month  . Updates are received during the selected week based on the configuration set up in Lifecycle Services.
+The release package is made generally available to all customers for self-update before autoupdates. The timing of the package release for self-update relative to the production autoupdates varies. To determine the timing of self-update and autoupdates for upcoming releases, see [Targeted release schedule (dates subject to change)](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
+Sandbox updates are always scheduled a week before the update. Production autoupdates for release are scheduled for the first, second, and third weeks of the month. Updates are received during the selected week based on the configuration set up in Lifecycle Services.
 
 > [!IMPORTANT]
-> Starting 10.0.39, customers can choose between two auto-update windows that occur 4 weeks apart for every service update. There is no change in how the broadcast occurs between the first and second windows. Please see **What can I expect with the new (auto-update) cadence?** earlier in this FAQ page.
+> Starting 10.0.39, customers can choose between two autoupdate windows that occur 4 weeks apart for every service update. There isn't a change in how the broadcast occurs between the first and second windows. Please see **What can I expect with the new (autoupdate) cadence?** earlier in this FAQ page.
 
 Customers can always choose to apply the update earlier than the suggested times in Lifecycle Services, or at a time that's more convenient. If a customer is already on the latest version, the automatic update is canceled.
 
@@ -158,7 +158,7 @@ Deprecated features are documented for each release. For more information, see [
 
 ### Can I update just the platform? Similarly, can I update just the application?
 
-No. Only combined application and platform update packages are released for both service updates and quality updates.
+No, only combined application and platform update packages are released for both service updates and quality updates.
 
 ### Service updates for on-premises deployments
 
@@ -178,7 +178,7 @@ You can optionally apply the update earlier to all environments through Lifecycl
 
 ### A service update was applied to the environment. In Lifecycle Services, what does the number on the tile for this environment represent?
 
-Microsoft automatically applies the same service update to all customers. Microsoft continues to service the update until the end-of-service date for that release is reached. In Lifecycle Services, the available updates tile for the environment represents the cumulative quality update package that's available to be applied to your environment. There are two numbers on the tile. The top number is the release version, and the bottom number is the build number of the latest quality update package. The build number is always larger than the number of the service update that was applied to your environment, either through self-update or auto-update. Because Microsoft automatically applies the same version to all customers, you're responsible for applying the cumulative hotfix package if it's required.
+Microsoft automatically applies the same service update to all customers. Microsoft continues to service the update until the end-of-service date for that release is reached. In Lifecycle Services, the available updates tile for the environment represents the cumulative quality update package that's available to be applied to your environment. There are two numbers on the tile. The top number is the release version, and the bottom number is the build number of the latest quality update package. The build number is always larger than the number of the service update that was applied to your environment, either through self-update or autoupdate. Because Microsoft automatically applies the same version to all customers, you're responsible for applying the cumulative hotfix package if it's required.
 
 > [!NOTE]
 > If your environment version is earlier than the latest release version, a tile appears under **Available updates** to remind you to apply the latest service update by using self-update.
@@ -191,7 +191,7 @@ You can self-update to the latest version by using the tile on the **Environment
 
 When Microsoft updates a sandbox environment, the package that's used for the update is saved in the project's Asset library. The name of the package is prefixed with the words "Service Update." Because the package was already applied to the sandbox environment, you can mark it as a release candidate. You can then go to the production environment and schedule to apply the package, just as you might schedule any other update.
 
-### What's the expected downtime during an auto-update?
+### What's the expected downtime during an autoupdate?
 
 The expected downtime for a successful update is approximately 15 minutes. However, Microsoft asks for three hours of downtime in case issues occur while the update is being applied.
 
@@ -201,13 +201,13 @@ Yes, you can pause, delay, or opt out of an update by using the update settings 
 
 ### Can I delay an update for longer than the one permitted skipped service update because of seasonal activity or other business reasons?
 
-No. After your environment version is more than one version older than the latest version, Microsoft automatically applies the latest service update to the default Tier-2 sandbox. Seven days later, the update is applied to all additional sandbox environments and production environments that are also more than one version older than the latest version. You can pause only one update before you must take the next service update. Therefore, in effect, a minimum of two service updates are required annually. For example, a customer is running version 10.0.39 and chooses to pause update 10.0.40. In this case, service update 10.0.41 is automatically applied first to the Tier-2 sandbox environment, and then later to all additional sandbox environments and production environments.
+No, after your environment version is more than one version older than the latest version, Microsoft automatically applies the latest service update to the default Tier-2 sandbox. Seven days later, the update is applied to all additional sandbox environments and production environments that are also more than one version older than the latest version. You can pause only one update before you must take the next service update. Therefore, in effect, a minimum of two service updates are required annually. For example, a customer is running version 10.0.39 and chooses to pause update 10.0.40. In this case, service update 10.0.41 is automatically applied first to the Tier-2 sandbox environment, and then later to all additional sandbox environments and production environments.
 
 ### What does it mean for a release to be "in service"?
 
 A release is a service update version that has been made available to customers. A release is "in service" from the day when it's made available to customers for production use through its end-of-service date. For release milestones by release, see [Targeted release schedule (dates subject to change)](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
 
-A release in post-update servicing reaches its end-of-service date about one month after auto-updates are completed for the latest version. Therefore, customers who chose to pause have time to complete their required update before the servicing window for their version is closed. The following illustration shows the staggered release rollout and servicing model.
+A release in post-update servicing reaches its end-of-service date about one month after autoupdates are completed for the latest version. Therefore, customers who chose to pause have time to complete their required update before the servicing window for their version is closed. The following illustration shows the staggered release rollout and servicing model.
 
 ![Staggered release rollout servicing model.](../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png)
 
@@ -236,17 +236,17 @@ All additional sandbox environments are updated during the same update window as
 
 ### What happens during an update when my additional sandboxes are on different versions than the default sandbox and production environments, which are scheduled to receive the latest service update?
 
-All environments are updated to the current version that's being used for auto-updates.
+All environments are updated to the current version that's being used for autoupdates.
 
 ### What if the default sandbox environment is manually updated to the same version as, or a newer version than, the automatic update version?
 
-Automatic updates for the production environment and all additional sandbox environments are updated to the current version that's being used for auto-updates.
+Automatic updates for the production environment and all additional sandbox environments are updated to the current version that's being used for autoupdates.
 
 Updates for the default sandbox environment are canceled.
 
 ### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
 
-The default sandbox environment, the production environment, and all additional sandbox environments are updated to the current version that's being used for auto-updates.
+The default sandbox environment, the production environment, and all additional sandbox environments are updated to the current version that's being used for autoupdates.
 
 ### What if the production environment is manually updated before the production environment email is sent?
 
@@ -254,7 +254,7 @@ Automatic updates for the production environment and all additional sandbox envi
 
 ### What if the production environment is manually updated after the production environment email is sent?
 
-Automatic updates for the production environment are canceled, but all additional sandbox environments are updated to the current version that's being used for auto-updates.
+Automatic updates for the production environment are canceled, but all additional sandbox environments are updated to the current version that's being used for autoupdates.
 
 ### What if I find an issue during the sandbox update?
 
@@ -277,11 +277,11 @@ After the service update is applied by Microsoft, you receive a notification tha
 
 ### If there's a failure, can I reschedule the update to be automatically applied?
 
-No. You can't reschedule the update. However, you can apply the package when it's convenient, just as you might schedule any other update.
+No, you can't reschedule the update. However, you can apply the package when it's convenient, just as you might schedule any other update.
 
 ### Will critical hotfixes be automatically applied to my sandbox/production environment during automatic update?
 
-The service update that's generally available to all customers for self-update and auto-update contains hotfixes and new functionality. If a critical issue is reported and fixed after the service update was applied, you can pull the latest cumulative quality update from the tile in Lifecycle Services.
+The service update that's generally available to all customers for self-update and autoupdate contains hotfixes and new functionality. If a critical issue is reported and fixed after the service update was applied, you can pull the latest cumulative quality update from the tile in Lifecycle Services.
 
 ### How do my ISVs stay current?
 
@@ -339,7 +339,7 @@ For every preview and general availability release, a searchable summary list of
 
 ### What options are available to help minimize the impact on my Commerce cloud components?
 
-Commerce cloud components require the same downtime as Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. For more information about RCSU, see the published release information on our [documentation](/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](/business-applications-release-notes/?panel=products1#pivot=products) sites.
+Commerce cloud components require the same downtime as Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) are available to reduce and further schedule updates to your deployment. For more information about RCSU, see the published release information on our [documentation](/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](/business-applications-release-notes/?panel=products1#pivot=products) sites.
 
 ### Will there be options to take individual hotfixes for my Commerce solution components?
 
