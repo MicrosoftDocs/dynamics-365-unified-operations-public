@@ -207,10 +207,18 @@ To prevent the batch task from sending multiple emails due to retries, you can i
 
 3. **Implement Idempotent Email Sending**: Make the email sending process idempotent, meaning that sending the same email multiple times has the same effect as sending it once. It can be achieved by including a unique identifier (such as a message ID or transaction ID) in the email content and checking for its existence before sending the email.
 
-4. **Use different Runtime Batch Task to send email**: In your main batch task, initiate a new runtime batch task for sending emails. Keep track of the batch task's state to confirm if the email was successfully sent. When the main task is retried, verify the runtime task's state to check if the email was already sent, and if so, bypass the sending process.
+4. **Use different Runtime Batch Task to send email**: In your main batch task, initiate a new runtime batch task for sending emails. Confirm if the email was successfully sent, by keep track of the batch task's state. When the main task is retried, verify the runtime task's state to check if the email was already sent, and if so, bypass the sending process.
 
 By implementing one or more of these strategies, you can ensure that your batch task sends emails reliably without the risk of duplicates, even if there are retries.
 
 ### I have a multi-threaded Batch Job, where the main task is static and it queues multiple runtime tasks to do the work. As runtime tasks don't undergo retries, how can I make sure my Job completes successfully.
 
 The main task, often referred to as the controller or driver, shouldn't finish immediately after queuing the child tasks. Instead, it should keep monitoring, in a loop say with delay of 15 seconds, the progress of each child runtime task to ensure successful completion. If a runtime task failed, the controller should requeue a new runtime task to attempt the operation again. It's important to manage the number of retries performed by the controller for each task. This can be achieved by maintaining a log of retries in a dedicated table or by structuring task identifiers, by using caption field, to reflect the retry count. It's advisable to limit retries, perhaps to a maximum of Five attempts, to avoid excessive processing or potential issues.
+
+### Why do Batch Platform doesn't retry Runtime Tasks on server restarts?
+
+Batch platform doesn't retry Runtime tasks on Batch Server restart due to several reasons. 
+
+- Runtime tasks are designed to be temporary and in-memory, and are cleared upon server restart events. It's primarily because the driver or controller class, which is always static, handles child task retries upon restart by requeuing new runtime tasks for the once which failed. Retrying the runtime tasks could lead to the creation of duplicate tasks, potentially causing mutation issues and system overload with excessive duplicate batch tasks. 
+
+- Runtime tasks, if retried, could complicate system management and lead to unexpected behavior, especially considering the potential cascading effect of runtime tasks creating extra tasks.
