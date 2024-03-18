@@ -185,7 +185,8 @@ To enable workers to process unannounced returns, you must create a separate mob
     - **Barcode data policy** – Select the policy to use if multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](/dynamics365/supply-chain/warehousing/gs1-barcodes).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate.
     - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process.
-    - **Print label** – <!--KFM: Describe what happens if the user turns this on. Describe what the label is for. Maybe refer to the earlier section about printing labels if we choose to keep that. I don't think we need to mention printing in our scenarios. -->
+    - **Print label** – Select this option to print a return label only after all steps in the work template has been completed. If the print label option is selected, labels are always printed for the work order. This is true regardless of whether a print step is included in the work template. 
+Additionally, if a work template does include a print step, the position of the step in the sequence is disregarded and labels are always printed last. This is useful if you always want to print labels at the end of the process. If you want to use the work template to print labels at a specific point in the process, do not select this option. 
     - **Return item receiving policy ID** – Select the [item receiving policy](#create-return-item-receiving-policies) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat steps 2 and 3 to create a menu item for the other process
