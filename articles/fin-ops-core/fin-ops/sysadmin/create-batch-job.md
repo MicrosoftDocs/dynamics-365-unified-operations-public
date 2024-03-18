@@ -33,6 +33,9 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 2. Select **Recurrence**. Use these options to enter a range and pattern for the recurrence.  
 3. Select **OK**.
 
+> [!NOTE]
+> All recurring Batch Jobs are automatically returned to the waiting state, regardless of whether they fail or succeed. It ensures that recurring jobs can complete any pending work in the next run if the previous run failed. To enable this functionality, the Batch Job's recurrence conditions must still be valid. It includes having a remaining recurrence count or a recurrence end date that hasn't passed.
+
 ## Add alerts
 1. On the Action Pane, select **Batch job**.
 2. Select **Alerts**. Indicate if you want alert messages sent when the batch job ends, has an error, or is canceled. Then specify if you want the alerts to be displayed as pop-up messages.   
