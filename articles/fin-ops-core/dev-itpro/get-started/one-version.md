@@ -45,16 +45,17 @@ The following changes are being implemented:
 - The autoupdate and feedback phase of the [First Release program](https://aka.ms/FirstReleaseFnO) is extended by two weeks.
 - The servicing window of every release is substantially extended. It now lasts 186 to 214 days, and there's improved overlap between releases.
 - The maximum number of consecutive updates that can be paused is reduced from three to one. However, because release durations are extended, the same minimum of two service updates per year is maintained.
-- We're introducing an additional autoupdate window for each service update, starting with 10.0.39 see the FAQ for autoupdate below.
+- We're introducing an additional autoupdate window for each service update, starting with version 10.0.39. For more information, see the FAQ for autoupdate section in this article.
 
 ### What can I expect with the new (autoupdate) cadence?
-Beginning version 10.0.39, the service update autoupdate window is divided into two windows, separated by approximately a 4-week gap. This change provides customers with greater flexibility in scheduling their autoupdates.
-Autoupdate Window 1 closely resembles the historical approach of OneVersion service updates. Autoupdate Window 2 allows you to schedule your update for 4 weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring 7 days prior to production.
+Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a 4-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring seven days prior to production.
 
 ### Does the new release schedule affect when I can schedule autoupdates?
-Yes, with 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is what service updates are released each year. 
-As an example - let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15th. This occurs during the first autoupdate window, starting either on April 5, April 12, or April 19, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10, or May 17. Opting for the second window gives you an additional 4 weeks between general availability and the final broadcast weekend, extending beyond the standard 6-week timeframe.
-In this example - if a customer opts out of both autoupdate windows for the 10.0.39 release, they aren't able to opt out of both autoupdate windows for the next ->10.0.40 ("July") release, as skipping an autoupdate is longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+Yes, with version 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is which service updates are released each year. 
+
+As an example, let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15th. This occurs during the first autoupdate window, starting either on April 5, April 12, or April 19, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10, or May 17. Opting for the second window gives you an additional four weeks between general availability and the final broadcast weekend, extending beyond the standard 6-week timeframe.
+
+In this example, if a customer opts out of both autoupdate windows for the 10.0.39 release, they aren't able to opt out of both autoupdate windows for the next  release 10.0.40 ("July"), because skipping an autoupdate is longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### Is the change from the maximum of three pauses to one already in effect?
 
@@ -95,10 +96,11 @@ For information about how to pause an update, see [Pause service updates through
 ### How does the timing for general availability of a release work?
 
 The release package is made generally available to all customers for self-update before autoupdates. The timing of the package release for self-update relative to the production autoupdates varies. To determine the timing of self-update and autoupdates for upcoming releases, see [Targeted release schedule (dates subject to change)](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
-Sandbox updates are always scheduled a week before the update. Production autoupdates for release are scheduled for the first, second, and third weeks of the month. Updates are received during the selected week based on the configuration set up in Lifecycle Services.
+
+Sandbox updates are always scheduled one week before the update. Production autoupdates for releases are scheduled for the first, second, and third weeks of the month. Updates are received during the selected week based on the configuration set up in Lifecycle Services.
 
 > [!IMPORTANT]
-> Starting 10.0.39, customers can choose between two autoupdate windows that occur 4 weeks apart for every service update. There isn't a change in how the broadcast occurs between the first and second windows. Please see **What can I expect with the new (autoupdate) cadence?** earlier in this FAQ page.
+> Starting with version 10.0.39, customers can choose between two autoupdate windows that occur four weeks apart for every service update. There isn't a change in how the broadcast occurs between the first and second windows. Please see **What can I expect with the new (autoupdate) cadence?** in this FAQ.
 
 Customers can always choose to apply the update earlier than the suggested times in Lifecycle Services, or at a time that's more convenient. If a customer is already on the latest version, the automatic update is canceled.
 
