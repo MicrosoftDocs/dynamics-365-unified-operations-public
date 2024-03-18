@@ -28,8 +28,8 @@ This article explains how to set up Supply Chain Management to support unannounc
 
 To use the features described in this article, your system must meet the following requirements:
 
-- To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
-- If you also want to print return labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.XX or later.
+- To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+- If you also want to print return labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
 
 ## Receiving process for unannounced returns
 
@@ -74,6 +74,18 @@ During the *Return item receiving* process, workers must use the mobile app to i
 ## Print return labels from a mobile device
 
 <!--KFM: Here is where we can tell more about this feature if we really want to. I'm not sure it's necessary. Links to how to set up printers, routing, etc. could also be included here. -->
+
+Enabling printing for return orders is a feature designed to enhance your business returns manegement.
+It offers traceability for your return transactions, making it easier for staff to manage and track returns. Overall, enabling printing for return orders is a step towards a more streamlined and effective return management system.
+
+•	First, we need to enable the Print label for our system. Head into the mobile device menu items settings by going into Warehouse Management > Set up > Mobile device > Mobile device menu items. 
+•	Select the mobile device menu item you want to enable label printing for, select edit, and toggle the Print label to Yes.
+
+When that has been done, we can set up external printers, and after that the document routing, to complete the setup.
+
+To set up external printers: Print labels using an external service - Supply Chain Management | Dynamics 365 | Microsoft Learn
+
+Follow these steps to set up document routing:  Document routing label layouts - Supply Chain Management | Dynamics 365 | Microsoft Learn
 
 ## Set up unannounced sales return receiving
 
