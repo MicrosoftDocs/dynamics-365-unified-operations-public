@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CompanyNAFCode
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: France
 # ms.search.industry: 

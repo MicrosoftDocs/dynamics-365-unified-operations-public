@@ -15,7 +15,7 @@ ms.search.form: LogisticsAddressSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Belgium, Netherlands, Sweden
 # ms.search.industry: 

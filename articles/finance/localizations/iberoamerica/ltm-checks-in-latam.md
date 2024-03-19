@@ -4,7 +4,7 @@ description: This article explains how use LATAM functionality for checks.
 author: Cpicon85 
 ms.date: 10/20/2023 
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon 
 ms.custom: bap-template
 ---
