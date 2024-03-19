@@ -66,6 +66,16 @@ To control the availability of Copilot in site builder feature at the site level
 1. Set the **Copilot for Dynamics 365 content generation** option to **On** or **Off**.
 1. Repeat the previous steps for other sites that are associated with the tenant.
 
+## Enable cross-geo communication for Copilot
+
+Currently, Copilot services are hosted in a [limited number of data centers](/power-platform/admin/geographical-availability-copilot) across the world. To prevent unwanted use of cross-geo services, the default behavior is to disable Copilot features in geos that don't have local Copilot services. To enable Copilot in geos that don't have local Copilot service, there are steps that you must take.
+
+To enable Copilot in geos that don't have local Copilot services, follow these steps.
+
+1. To opt-in to the service, in site builder, go to **Tenant settings \> Features** and set the **Enable cross geo communication for Copilot** feature flag to **On**.
+1. In the consent dialog, select **Agree**
+1. On the command bar, select **Save**.
+
 ## Configure and preselect tones for your brand and organization
 
 You can choose up to five tone options that Copilot in site builder uses to craft messaging that fits your brand and organization. These tones are then available for use by team members who are responsible for updating product enrichment content. You can also preselect any of the chosen tones to set them as defaults for quickly generating content via Copilot.

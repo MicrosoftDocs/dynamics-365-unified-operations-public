@@ -113,7 +113,7 @@ For more information about supported countries/regions, contact your tax solutio
 
 ## Available tax solution providers
 
-- [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342)
-- [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284)
+- [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
+- [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

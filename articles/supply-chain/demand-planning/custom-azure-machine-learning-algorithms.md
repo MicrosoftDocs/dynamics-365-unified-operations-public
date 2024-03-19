@@ -25,8 +25,6 @@ If you're already using your own Microsoft Azure Machine Learning algorithms for
 
 This article describes the setup that is required to enable the Demand planning app to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## Set up a new Microsoft Entra application
 
 Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables the Demand planning app to connect to your Azure Machine Learning algorithms. (For more information about how to set up a Microsoft Entra application, see [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).)
