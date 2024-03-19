@@ -2,10 +2,10 @@
 title: Create a batch job
 description: A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing.
 author: matapg007
-ms.date: 02/14/2024
+ms.date: 03/18/2024
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
