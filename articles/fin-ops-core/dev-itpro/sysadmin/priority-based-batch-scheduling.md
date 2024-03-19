@@ -207,7 +207,7 @@ As a prerequisite, the **Batch Priority Based Scheduling** feature must be enabl
 
 ### Why do you need batch concurrency control?
 
-Batch jobs are a common way to perform background tasks, such as data processing, reporting, or integration. However, if too many batch tasks are running at the same time, they can cause performance issues or resource contention. For example, you have one batch job that runs every hour and processes a large amount of data, but you have another batch job that runs every 15 minutes and has high priority. Without batch concurrency control, you can't ensure that the high-priority batch job gets enough resources to run smoothly and in a timely manner.
+Batch jobs are a common way to perform background tasks, such as data processing, reporting, or integration. However, if too many batch tasks are running at the same time, they can cause performance issues or resource contention. For example, one of your batch jobs runs every hour and processes a large amount of data. Another batch job runs every 15 minutes and has high priority. Without batch concurrency control, you can't ensure that the high-priority batch job gets enough resources to run smoothly and in a timely manner.
 
 > [!NOTE]
 > - This feature is available as of version 10.0.34.
