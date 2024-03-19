@@ -56,7 +56,7 @@ This approach ensures that the total active threads for your environment remain 
 
 ## How to increase Batch Capacity
 
-To increase the Batch Capacity production, you need to acquire more user licenses and update subscription estimates in Microsoft Dynamics Lifecycle Services. With updated user licenses, we automatically augment the Batch Capacity by adjusting the thread count per existing server. The platform adds more Batch Servers once the existing Batch Servers reach their threshold limits of CPU and Memory.
+To increase the Batch Capacity for production environment, you need to acquire more user licenses and update subscription estimates in Microsoft Dynamics Lifecycle Services. With updated user licenses, we automatically augment the Batch Capacity by adjusting the thread count per existing server. The platform adds more Batch Servers once the existing Batch Servers reach their threshold limits of CPU and Memory.
 
 To increase the Batch Capacity within a sandbox environment, you require a Tier-4 or Tier-5 sandbox. Once such an environment is established, you can proceed to update subscription estimates within Microsoft Dynamics Lifecycle Services. In Tier-2 or Tier-3 sandbox, such an action isn't possible.
 
