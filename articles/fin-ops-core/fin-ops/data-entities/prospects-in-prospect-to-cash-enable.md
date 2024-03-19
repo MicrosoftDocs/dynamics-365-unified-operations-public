@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 a number of enhancements were released providing a more seamless quotation process flow across the two systems. In Supply Chain Management version 10.0.39 or later, it is supported to use a prospect in the sales quotation process while a number of additional enhancements such as delivery date control support in quote revision and quote winning scenarioes are supported.
+Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 a number of enhancements were released providing a more seamless quotation process flow across the two systems. In Supply Chain Management version 10.0.39 or later, it is supported to use a prospect in the sales quotation process while a number of additional enhancements such as delivery date control support in quote revision and quote winning scenarios are supported.
 
 To take advantage of these improvements, you must enable the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature in Supply Chain Management and make sure that you're using a qualifying version of the Dual-write Supply chain solution.
 
