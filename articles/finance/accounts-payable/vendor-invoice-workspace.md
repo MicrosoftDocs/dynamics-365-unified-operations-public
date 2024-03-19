@@ -29,8 +29,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to enable the Vendor invoice center workspace in Dynamics 365 Finance. The vendor invoice center workspace offers an intuitive view of the overall processing status of vendor invoices at
-various stages. This functionality assists with Accounts Payable (AP) Managers or AP Clerks in decision making and more efficient exceptions handling. 
+This article explains how to enable the Vendor invoice center workspace in Dynamics 365 Finance. The vendor invoice center workspace offers a view of the overall processing status of vendor invoices at
+various stages. This functionality helps Accounts Payable (AP) Managers or AP Clerks with decision making and more efficient exception handling. 
 
 ## Overview: 
 
@@ -49,8 +49,8 @@ The **Vendor invoice center** is available when the **(Preview) New vendor invoi
 
 ### Vendor invoice center workspace 
 
-The workspace is made up of following components: 
- - Global filter for legal entity - Accounts Payable clerks can switch between different legal entities to check the overall invoice processing status. The invoice number and pending vendor invoice list will display the respective counts or lists based on the chosen legal entity.
+The workspace is made up of following: 
+ - Global filter for legal entity - Accounts Payable clerks can switch between different legal entities to check the overall invoice processing status. The invoice number and pending vendor invoice list displays the respective counts or lists based on the chosen legal entity.
  - Invoice processing tiles - The vendor invoice process tiles display different stages of invoices:
      - Capture and import
      - Manual entry
@@ -65,37 +65,37 @@ Invoices in the Capture and import stage can have the following status:
 - **Imported failed** - The invoice is being imported using the data entity, and it fails to be persisted in the pending vendor invoice. The subtile navigates to the **Vendor invoices that failed import** page to correct.
   
 ### Manual entry stage
-Invoices in the Manual entry stage can have the following status:
-- **Without errors** - Invoices that are created manually and aren't complete are in this status. The **Include in automation** action allows users to manually include the selected invoices in automation. The processing automation job automatically picks up the invoices and execute the corresponding jobs. The action button is visible when either the **Automatically submit invoice to workflow** or **Automatically match product receipts to invoice lines** are enabled.   
+Invoices in the **Manual entry** stage can have the following status:
+- **Without errors** - Invoices that are created manually and aren't complete are in this status. The **Include in automation** action allows users to manually include the selected invoices in automation. The processing automation job automatically picks up the invoices and execute the corresponding jobs. The action button is visible when either the **Automatically submit invoice to workflow** or **Automatically match product receipts to invoice lines** parameters are enabled.   
  - **With validation errors** - The manually created invoice contains matching errors, caused by discrepancies during the two-way or three-way matching process. The **Accept price discrepancy** is available when it's required to resolve these discrepancies before proceeding with the vendor invoice process. This is controlled by the **Post invoice with discrepancies** parameter.
- - **With other errors**  - The invoice is generated manually, but it may contain post errors, that require manually correction of the invoice details before submitting it to the vendor invoice automation system.
+ - **With other errors**  - The invoice is generated manually, but it may contain errors. These errors require correction of the invoice details before submitting it to vendor invoice automation.
 
 
 ### Automation stage 
 
-Invoice in the Automation stage can have the following status's:
+Invoice in the **Automation** stage can have the following status's:
 - **In process** - Invoices are in automation processing and can't be edited. If additional changes are needed, the invoices can be manually excluded from automation process by clicking **Exclude from automation**.
- - **Apply prepayment error** - During the vendor invoice import process, the prepayment application will be triggered if an existing prepayment is identified. An error may occur if the prepayment amount exceeds the invoice amount. In such cases, the user will need to manually adjust the prepayment amount before applying for it or skip the prepayment application completely.
- - **Receipt match error** - The invoices are received prior to the product receipts. However, the invoices are not completely matched with the product receipts, but the receipt matching automation job has reached the maximum trials. The error will alert the accounts payable (AP) clerk and display a detailed list.
- - **Workflow submission error** - During invoice submission into the workflow, various validations are applied to ensure the invoice's completeness and accuracy. The detailed list view will column of validation error, which can help AP clerks to understand which action shall be taken in the next.
- - **Others** - The invoices that have been included in automation but are temporarily paused due to the need for additional corrections or adjustments without automation-related error. This feature enables the resumption of automation, allowing the invoices to be included in the process once more. 
+ - **Apply prepayment error** - During the vendor invoice import process, the prepayment application is triggered if an existing prepayment is identified. An error may occur if the prepayment amount exceeds the invoice amount. The user needs to manually adjust the prepayment amount before applying for it or skip the prepayment application completely.
+ - **Receipt match error** - The invoices are received prior to the product receipts. The invoices aren't completely matched with product receipts, but the receipt matching automation job has reached the maximum trials. The error displays a detailed list.
+ - **Workflow submission error** - During invoice submission into the workflow, various validations are applied to ensure the invoice's completeness and accuracy. The detailed list view displays validation errors, which can help AP clerks to understand which action to be taken.
+ - **Others** - The invoices that are included in automation but are temporarily paused due to additional corrections or adjustments needed without automation-related error. This feature enables the resumption of automation, allowing the invoices to be included in the process. 
 
 
 ### Workflow stage
 
 Invoices in the workflow stage can have the following status:
- - **In process** - The invoices which are waiting for someone’s approval will be counted. It will show the additional fields to understand the invoices pending for which person’s approval, the pending time, and the due date for the approval. There is no batch action.
- - **Workflow failed** - The invoice was successfully submitted into the workflow, but an error occurred during the process due to additional validations within the workflow. This requires the Accounts Payable (AP) clerk to amend the invoice or the settings before resubmitting the invoice into the workflow.
- - **Workflow rejected** - The invoice has been submitted for approval but was rejected due to specific reasons. The list provides the rejection reason given by the approver for Accounts Payable (AP) clerks' reference, helping them decide the appropriate action for the next steps.
- - **For my approvals** - The invoice was submitted for approval within the workflow and is awaiting my review. This process applies specifically to invoices configured with the Vendor Invoice Workflow settings. 
+ - **In process** - The invoices that are waiting for approval are displayed. Additional fields are available for the pending invoices that shows which person needs to approve the invoice, the pending time, and the due date for the approval. 
+ - **Workflow failed** - The invoice was successfully submitted into the workflow, but an error occurred during the process due to additional validations within the workflow. This requires the invoice or settings to be updated before resubmitting the invoice into the workflow.
+ - **Workflow rejected** - The invoice has been submitted for approval but was rejected due to specific reasons. The list provides the rejection reason given by the approver.
+ - **For my approvals** - The invoice was submitted for approval within the workflow and is awaiting review. This process applies specifically to invoices configured with Vendor invoice workflow settings. 
 
 ### To post
-Invoices in the to post stage can have the following status:
- - **Complete not posted** - The invoice has completed the workflow approval process and is now awaiting final posting. 
+Invoices in the To post stage can have the following status:
+ - **Complete not posted** - The invoice has completed the workflow approval process and is waiting final posting. 
 
  
 
 #### Documents not invoiced 
 
-The majority of the functions are inherited from the previous version. The pending vendor invoice is displayed as the default option in this section. **Edit all** is available to navigate to a list page for pending vendor invoices. 
+Most of the functions are inherited from the previous version. The pending vendor invoice is displayed as the default option in this section. **Edit all** is available to navigate to a list page for pending vendor invoices. 
 
