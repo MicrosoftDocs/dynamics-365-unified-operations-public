@@ -5,7 +5,7 @@ author: henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 03/19/2024
 audience: Application User
 ms.search.region: Global
@@ -26,117 +26,113 @@ This article describes how prospects work in prospect-to-cash scenarios and pres
 
 A prospect in Supply Chain Management is a *business relation* of type *Prospect*, while a prospect in Dynamics 365 Sales is an *account* of type *Prospect*. From an integration perspective, leads are completely different from prospects in both Dynamics 365 Sales and in Dynamics 365 Supply Chain management. The features described in this article integrate accounts of type *Prospect* in Dynamics 365 Sales with business relations of type *Prospect* in Dynamics 365 Supply Chain Management.
 
-## Basic integration design assumption - Number sequences
+## Scenario 1: Prospect lifecycle managed from Dynamics 365 Supply Chain Management (prospect of type *Organization*)
 
-The integration design of prospects between Dynamics 365 Sales and Dynamics 365 Supply Chain Management *requires* that prospect account numbers are the same in Dynamics 365 Sales and Dynamics 365 Supply Chain Management. To support this design, it is *required* that number sequences for prospect and the number sequence for customer account in Dynamics 365 Supply Chain management do not overlap. If number sequences overlap, conflicts can occur when converting a prospect to a customer account disallowing the prospect to be converted to a customer.
+The following steps show what happens when you manage the prospect lifecycle from Dynamics 365 Supply Chain Management and the prospect is of type *Organization*.
 
-## Scenario 1: Prospect lifecycle managed from Dynamics 365 Supply Chain Management - prospect of type organization
+1. In Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Create New prospect as type *Organization*.
 
-The following steps show what happens when you manage prospect lifecycle from Dynamics 365 Supply Chain Management and the prospect is of type organization.
+    **Result:** The new prospect is created using the number sequence set up for the prospect entity in Dynamics 365 Supply Chain Management. A new account with a **Relationship type** of *Prospect* is created in Dynamics 365 Sales with the same account number as in Dynamics 365 Supply Chain Management.
 
-1. In Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Create New prospect as type organization.
-
-    **Result:** The new prospect is created using the number sequence setup for the prospect entity in Dynamics 365 Supply Chain Management. A new account of *relationship type* Prospect is created in Dynamics 365 Sales with same account number as in Dynamics 365 Supply Chain Management.
-
-1. Add an address of role delivery to the prospect. Add an address of role invoice. Create a new contact for the prospect.
+1. Add an address of role *Delivery* to the prospect. Add an address of role *Invoice*. Create a new contact for the prospect.
 
     **Result:** A contact is created in Dynamics 365 Sales and associated with the account type Prospect.
 
     > [!NOTE]
-    > Depending on whether the dual write GAB solution is deployed, either both the delivery address and invoice address is created in Dynamics 365 Sales for the new account, or only the delivery address. Depending on whether the dual write GAB solution is deployed, the contact surfaces either in the Associated contacts tab for the account or on the Account page, Summary tab in the primary contact section in Dynamics 365 Sales.
+    > Depending on whether the dual-write global address book (GAB) solution is deployed, either both the delivery address and invoice address are created in Dynamics 365 Sales for the new account, or only the delivery address. Depending on whether the dual-write GAB solution is deployed, the contact surfaces in Dynamics 365 Sales either in the **Associated contacts** tab for the account or on the **Summary** tab in the **Primary contact** section of the **Account** page.
 
-1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Open the prospect and select header ribbon action **General** \> **Convert** \> **Convert to customer**.
+1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Open the prospect. On the Action Pane, open the **General** tab and, in the **Convert** group, select **Convert to customer**.
 
-    **Result:**A customer account is created in Dynamics 365 Supply Chain Management from the prospect. Customer account number is the same as prospect irrespective of customer number sequence setup in Dynamics 365 Supply Chain Management. It is intentional that it cannot be changed in the converting process. Customer group is defaulted into the process from the setup in Sales and Marketing parameters for prospects. The prospect in Dynamics 365 Supply Chain Management is retired and the *relationship type* is changed from Prospect to Customer. Addresses and contacts in Dynamics 365 Supply Chain Management are related to the new customer account created. The account of *relationship type* Prospect in Dynamics 365 Sales is changed to account *relationship type* customer.
+    **Result:** A customer account is created in Dynamics 365 Supply Chain Management from the prospect. The customer account number is the same as the prospect, irrespective of the customer number sequence set up in Dynamics 365 Supply Chain Management. It can't be changed in the conversion process. The customer group is defaulted based on the setup on the **Prospects** tab of the **Sales and Marketing parameters** page. The prospect in Dynamics 365 Supply Chain Management is retired and the **Relationship type** is changed from *Prospect* to *Customer*. Addresses and contacts in Dynamics 365 Supply Chain Management are related to the new customer account. The account with a **Relationship type** of *Prospect* in Dynamics 365 Sales is changed to have a **Relationship type** of *Customer*.
 
     > [!NOTE]
-    > If the dual write GAB solution is deployed, then there are no changes to the already created and synchronized delivery and invoice addresses and contact. If the dual write GAB solution is not deployed, then the address of type invoice is synchronized from the newly created customer account in Dynamics 365 Supply Chain Management to the account in Dynamics 365 Sales. 
+    > If the dual-write GAB solution is deployed, then no changes are made to the already created and synchronized delivery and invoice addresses and contact. If the dual-write GAB solution is not deployed, then the address of type *Invoice* is synchronized from the newly created customer account in Dynamics 365 Supply Chain Management to the account in Dynamics 365 Sales.
 
-## Scenario 2: Prospect lifecycle managed from Dynamics 365 Sales - Prospect as account
+## Scenario 2: Prospect lifecycle managed from Dynamics 365 Sales (prospect as account)
 
-The following steps show what happens when you manage prospect lifecycle from Dynamics 365 Sales.
+The following steps show what happens when you manage the prospect lifecycle from Dynamics 365 Sales.
 
-1. In Dynamics 365 Sales, go to **Customers** \> **Accounts**. Create New account *relationship type* Prospect. A new prospect is created with the account number selected by the user. Create a new contact for the prospect.
+1. In Dynamics 365 Sales, go to **Customers** \> **Accounts**. Create a new account with a **Relationship type** of *Prospect*. A new prospect is created with the account number you selected. Create a new contact for the prospect.
 
-    **Result:** A new business relation type Prospect (of type organization) is created in Dynamics 365 Supply Chain Management with same number as in Dynamics 365 Sales, irrespective of number sequence for prospect setup in Dynamics 365 Supply Chain Management. A contact is created in Dynamics 365 Supply Chain Management and associated with the prospect. 
+    **Result:** A new business relation of type *Prospect* (of type *Organization*) is created in Dynamics 365 Supply Chain Management with same number as in Dynamics 365 Sales, irrespective of the number sequence for prospects set up in Dynamics 365 Supply Chain Management. A contact is created in Dynamics 365 Supply Chain Management and associated with the prospect.
 
 1. Do one of the following steps:
 
-    - If the Dual write GAB solution is deployed, in Dynamics 365 Sales on the account, on the Addresses tab of the account, add a new address with the role of delivery, and a new address with the role of invoice.
+    - If the dual-write GAB solution is deployed, then in Dynamics 365 Sales, on the **Addresses** tab of the account, add a new address with a role of *Delivery*, and a new address with a role of *Invoice*.
 
-        **Result:** An address of role delivery and an address of role invoice is created in Dynamics 365 Supply Chain Management and associated with the prospect.
+        **Result:** An address of role *Delivery* and an address of role *Invoice* is created in Dynamics 365 Supply Chain Management and associated with the prospect.
 
-    - If the Dual write GAB solution is not deployed, in Dynamics 365 Sales on the account, on the Summary tab, add a delivery address and an invoice address.
+    - If the dual-write GAB solution is not deployed, then in Dynamics 365 Sales, on the **Addresses** tab of the account, add a delivery address and an invoice address.
 
-        **Result:** It is intentional that no addresses are created in Dynamics 365 Supply Chain Management and associated with the prospect.
+        **Result:** No addresses are created in Dynamics 365 Supply Chain Management and associated with the prospect.
 
     > [!NOTE]
-    > For addresses created on the account in Dynamics 365 Sales to synchronize to Dynamics 365 Supply Chain Management, a role must be associated with each address. It is only possible to associate a role when creating an address on an account in Dynamics 365 Sales when the dual write GAB solution is deployed.
+    > To sync addresses from an account in Dynamics 365 Sales to Dynamics 365 Supply Chain Management, each address needs a role assigned to it. When the dual-write GAB solution is deployed, roles can only be assigned when adding an address on an account in Dynamics 365 Sales.
 
-1. In Dynamics 365 Sales go to **Customers** \> **Accounts**. Select the account *relationship type* prospect. Change the  *relationship type* to Customer. Select the appropriate Customer group.
+1. In Dynamics 365 Sales, go to **Customers** \> **Accounts**. Select an account with a **Relationship type** of *Prospect*. Change the **Relationship type** to *Customer*. Select the appropriate **Customer group**.
 
-    **Result:**The business relation type for the prospect in Dynamics 365 Supply Chain Management is changed from Prospect to Customer. A customer account is created with the same account number as the prospect, irrespective of the number sequence for customer accounts in Dynamics 365 Supply Chain Management. The contact is associated with the customer account in Dynamics 365 Supply Chain Management.
+    **Result:** The business relation type for the prospect in Dynamics 365 Supply Chain Management is changed from *Prospect* to *Customer*. A customer account is created with the same account number as the prospect, irrespective of the number sequence for customer accounts in Dynamics 365 Supply Chain Management. The contact is associated with the customer account in Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
 >
-> - If the Dual write GAB solution is deployed, then delivery and invoice addresses already synchronized are associated with the customer account in Dynamics 365 Supply Chain Management. The contact is associated with the customer account. If the Dual write GAB solution is not deployed, then no delivery and invoice addresses are synchronized and created in Dynamics 365 Supply Chain Management for the customer account.
-> - If the dual write GAB solution is not deployed, then best practice is to create and maintain delivery and invoice addresses for customers and prospects in Dynamics 365 Supply Chain Management.
+> - If the dual-write GAB solution is deployed, then delivery and invoice addresses already synchronized are associated with the customer account in Dynamics 365 Supply Chain Management. The contact is associated with the customer account. If the dual-write GAB solution is not deployed, then no delivery and invoice addresses are synchronized and created in Dynamics 365 Supply Chain Management for the customer account.
+> - If the dual-write GAB solution is not deployed, then best practice is to create and maintain delivery and invoice addresses for customers and prospects in Dynamics 365 Supply Chain Management.
 
-## Scenario 3: Prospect lifecycle managed from Dynamics 365 Supply Chain Management - Prospect of type person
+## Scenario 3: Prospect lifecycle managed from Dynamics 365 Supply Chain Management (prospect of type *Person*)
 
-The following steps show what happens when you manage prospect lifecycle from Dynamics 365 Supply Chain Management and the prospect is of type person.
+The following steps show what happens when you manage prospect lifecycle from Dynamics 365 Supply Chain Management and the prospect is of type *Person*.
 
-1. In Dynamics 365 Supply Chain Management, go to Sales and **Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Create a new prospect of type person.
+1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Create a new prospect of type *Person*.
 
-    **Result:** The new prospect is created using the number sequence setup for the prospect entity in Dynamics 365 Supply Chain Management. The new prospect is created as a contact with the *Is Prospect* value set to Yes in Dynamics 365 Sales.
+    **Result:** The new prospect is created using the number sequence setup for the prospect entity in Dynamics 365 Supply Chain Management. The new prospect is created as a contact with the **Is prospect** value set to *Yes* in Dynamics 365 Sales.
 
-1. Add an address of role delivery to the prospect. Add an address of role invoice. Create a new contact for the prospect.
+1. Add an address of role *Delivery* to the prospect. Add an address of role *Invoice*. Create a new contact for the prospect.
 
     > [!NOTE]
-    > Depending on whether the dual write GAB solution is deployed, either both the delivery and invoice addresses or only the delivery address are created in Dynamics 365 Sales for the contact with the Is Prospect value set to Yes. If dual write GAB solution is deployed, then the contact is associated to the prospect represented by the contact *IS Prospect* Yes via the party relation. The contact can be accessed in the *Contacts for Party* tab for the contact in Dynamics 365 Sales.
+    > Depending on whether the dual-write GAB solution is deployed, either both the delivery and invoice addresses or only the delivery address are created in Dynamics 365 Sales for the contact with the **Is prospect** value set to *Yes*. If the dual-write GAB solution is deployed, then the contact is associated to the prospect represented by the contact with **Is prospect** set to *Yes* via the party relation. The contact can be accessed on the **Contacts for party** tab for the contact in Dynamics 365 Sales.
 
-1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Open the prospect and select header ribbon action **General** \> **Convert** \> **Convert to customer**.
+1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Open the prospect. On the Action Pane, open the **General** tab and, in the **Convert** group, select **Convert to customer**.
 
-    **Result:** A customer account of type person is created in Dynamics 365 Supply Chain Management from the prospect. Customer account number is the same as prospect irrespective of customer number sequence setup in Dynamics 365 Supply Chain Management. It is intentional that it cannot be changed in the converting process. Customer group is defaulted into the process from the setup in Sales and Marketing parameters for prospects. The prospect in Dynamics 365 Supply Chain Management is retired and the type is changed from Prospect to Customer. Addresses and contacts in Dynamics 365 Supply Chain Management are related to the new customer account created in Dynamics 365 Supply Chain Management. The contact in Dynamics 365 Sales is changed from *Is Prospect* value Yes to No, and *Is Customer* value No to Yes. The contact associated with the contact *IS Customer* Yes, can now be accessed from the *Associated Contacts* tab.
+    **Result:** A customer account of type *Person* is created in Dynamics 365 Supply Chain Management from the prospect. Customer account number is the same as prospect irrespective of customer number sequence setup in Dynamics 365 Supply Chain Management. It is intentional that it cannot be changed in the converting process. Customer group is defaulted into the process from the setup in Sales and Marketing parameters for prospects. The prospect in Dynamics 365 Supply Chain Management is retired and the type is changed from *Prospect* to *Customer*. Addresses and contacts in Dynamics 365 Supply Chain Management are related to the new customer account created in Dynamics 365 Supply Chain Management. The contact in Dynamics 365 Sales is changed from **Is prospect** value *Yes* to *No*, and **Is Customer** value *No* to *Yes*. The contact associated with the contact **Is Customer** *Yes*, can now be accessed from the **Associated contacts** tab.
 
-## Scenario 4:  Prospect lifecycle managed from Dynamics 365 Sales - Prospect of type person
+## Scenario 4:  Prospect lifecycle managed from Dynamics 365 Sales (prospect of type *Person*)
 
 The following steps show what happens when you manage prospect lifecycle from Dynamics 365 Sales.
 
-1. In Dynamics 365 Sales, go to **Customers** \> **Contacts**. Create new contact with **Is Prospect** set to *Yes*. Create a new contact from the **Contacts for Party** tab.
+1. In Dynamics 365 Sales, go to **Customers** \> **Contacts**. Create new contact with **Is prospect** set to *Yes*. Create a new contact from the **Contacts for Party** tab.
 
-    **Result:** A new business relation type prospect (of type person) is created in Dynamics 365 Supply Chain Management with contact Last name as prospect ID irrespective of number sequence for prospect setup in Dynamics 365 Supply Chain Management.  
+    **Result:** A new business relation type prospect (of type *Person*) is created in Dynamics 365 Supply Chain Management with contact Last name as prospect ID irrespective of number sequence for prospect setup in Dynamics 365 Supply Chain Management.  
 
 1. Do one of the following steps:
 
-    - If the Dual write GAB solution is deployed, in Dynamics 365 Sales on the contact, on the Addresses tab of the contact, add a new address with the role of delivery and a new address with the role of invoice.
+    - If the dual-write GAB solution is deployed, in Dynamics 365 Sales on the contact, on the Addresses tab of the contact, add a new address with the role of delivery and a new address with the role of invoice.
 
         **Result:** An address of role delivery and an address of role invoice is created in Dynamics 365 Supply Chain Management and associated with the prospect.
 
-    - If the Dual write GAB solution is not deployed, in Dynamics 365 Sales on the contact, on the Summary tab, add a delivery address and an invoice address.
+    - If the dual-write GAB solution is not deployed, in Dynamics 365 Sales on the contact, on the Summary tab, add a delivery address and an invoice address.
 
         **Result:** No addresses are created in Dynamics 365 Supply Chain Management and associated with the prospect. This is intentional.
 
     > [!NOTE]
-    > For addresses created on the contact in Dynamics 365 Sales to synchronize to Dynamics 365 Supply Chain Management, a role must be associated with each address. it is only possible to associate a role when creating an address on an contact in Dynamics 365 Sales when the dual write GAB solution is deployed.
+    > For addresses created on the contact in Dynamics 365 Sales to synchronize to Dynamics 365 Supply Chain Management, a role must be associated with each address. it is only possible to associate a role when creating an address on an contact in Dynamics 365 Sales when the dual-write GAB solution is deployed.
 
-1. In  Dynamics 365 Sales go to **Customers** \> **Contacts**. Find the contact you just created. Change the **IS Customer** value from *No* to *Yes*. Select the appropriate Customer group.
+1. In  Dynamics 365 Sales go to **Customers** \> **Contacts**. Find the contact you just created. Change the **Is customer** value from *No* to *Yes*. Select the appropriate Customer group.
 
-    **Result:** The business relation type for the prospect in Dynamics 365 Supply Chain Management is changed from Prospect to Customer. A customer account is created in with the same account number as prospect, irrespective of the number sequence for customer accounts in Dynamics 365 Supply Chain Management.
+    **Result:** The business relation type for the prospect in Dynamics 365 Supply Chain Management is changed from *Prospect* to *Customer*. A customer account is created in with the same account number as prospect, irrespective of the number sequence for customer accounts in Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
 >
-> - If the Dual write GAB solution is deployed, delivery and invoice addresses already synched are associated with the customer account in Dynamics 365 Supply Chain Management. If the Dual write GAB solution is not deployed, no delivery and invoice addresses associated with the contact in Dynamics 365 Sales are synchronized and created in Dynamics 365 Supply Chain Management.
-> - If the dual write GAB solution is not deployed, then best practice is to create and maintain delivery and invoice addresses for prospects in Dynamics 365 Supply Chain Management.
+> - If the dual-write GAB solution is deployed, delivery and invoice addresses already synched are associated with the customer account in Dynamics 365 Supply Chain Management. If the dual-write GAB solution is not deployed, no delivery and invoice addresses associated with the contact in Dynamics 365 Sales are synchronized and created in Dynamics 365 Supply Chain Management.
+> - If the dual-write GAB solution is not deployed, then best practice is to create and maintain delivery and invoice addresses for prospects in Dynamics 365 Supply Chain Management.
 
 ## Scenario 5:  Use prospect on sales quotation lifecycle from Dynamics 365 Supply Chain Management
 
 1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Relationships** \> **Prospects** \> **All prospects**. Create a new prospect of type *Organization*
-1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Sales Quotations** \> **All quotations**. Create New quotation. Select account type Prospect and select the prospect. Proceed with creating the sales quotation details and add lines.
+1. In Dynamics 365 Supply Chain Management, go to **Sales and Marketing** \> **Sales Quotations** \> **All quotations**. Create New quotation. Select account type *Prospect* and select the prospect. Proceed with creating the sales quotation details and add lines.
 1. In Dynamics 365 Supply Chain Management go to **Sales and Marketing** \> **Sales quotations** \> **All quotations**. Select the quotation you just created. Select Header ribbon action **Quotation** \> **Generate** \> **Send quotation**.
 1. Then select Header ribbon action **Follow up** \> **Modify** \> **Convert to customer**. It is intentional, that no dialogue is thrown in the UI.
 
-    **Result:** In Dynamics 365 Supply Chain Management, A customer account is created in Dynamics 365 Supply Chain Management from the prospect. Customer account number is the same as prospect irrespective of customer number sequence setup in Dynamics 365 Supply Chain Management. Customer group is defaulted into the process from Dynamics 365 Supply Chain Management Sales and Marketing parameters for prospects. The prospect in Dynamics 365 Supply Chain Management is retired and the type is changed from Prospect to Customer. In Dynamics 365 Sales, the account type prospect is changed to type Customer.
+    **Result:** In Dynamics 365 Supply Chain Management, A customer account is created in Dynamics 365 Supply Chain Management from the prospect. Customer account number is the same as prospect irrespective of customer number sequence setup in Dynamics 365 Supply Chain Management. Customer group is defaulted into the process from Dynamics 365 Supply Chain Management Sales and Marketing parameters for prospects. The prospect in Dynamics 365 Supply Chain Management is retired and the type is changed from *Prospect* to *Customer*. In Dynamics 365 Sales, the account type prospect is changed to type *Customer*.
 
 1. In Dynamics 365 Supply Chain Management, from the sales quotation page select header ribbon action **Follow up** \> **Generate** \> **Confirm**.
 
@@ -144,15 +140,15 @@ The following steps show what happens when you manage prospect lifecycle from Dy
 
 ## Scenario 6:  Use prospect on sales quotation lifecycle from Dynamics 365 Sales
 
-1. In Dynamics 365 Sales, go to **Customers** \> **Accounts**. Create New account type Prospect. A new prospect is created with the account number selected by the user.
-1. In Dynamics 365 Sales, go to **Quotes**. Create a new quote, select the new account type prospect as potential customer. Proceed with creating the sales quotation details and add lines.
+1. In Dynamics 365 Sales, go to **Customers** \> **Accounts**. Create a new account of type *Prospect*. A new prospect is created with the account number selected by the user.
+1. In Dynamics 365 Sales, go to **Quotes**. Create a new quote, select the new account of type *Prospect* as potential customer. Proceed with creating the sales quotation details and add lines.
 
     > [!NOTE]
-    > If the dual write GAB solution is deployed then, in Dynamics 365 Sales on the quote, use the address lookup to choose a delivery address by choosing ship to address in the Summary tab, Address section. If the dual write GAB solution is not deployed, there is no address lookup.
+    > If the dual-write GAB solution is deployed then, in Dynamics 365 Sales on the quote, use the address lookup to choose a delivery address by choosing ship to address in the Summary tab, Address section. If the dual-write GAB solution is not deployed, there is no address lookup.
 
 1. In Dynamics 365 Sales *Activate* the quote. Then select the action *Create order*.
 
-    **Result:** In Dynamics 365 Sales, the account type prospect is changed to type customer. In Dynamics 365 Supply Chain Management, a customer account is created from the prospect with the same account number as the prospect, irrespective of customer number sequence setup in Dynamics 365 Supply Chain Management. Customer group is defaulted into the process from Dynamics 365 Supply Chain Management Sales and Marketing parameters for prospects. The prospect in Dynamics 365 Supply Chain Management is retired and the type is changed from Prospect to Customer. The sales quotation in Dynamics 365 Supply Chain Management is processed to confirmed, and the sales order is synchronized from Dynamics 365 Sales and created in Dynamics 365 Supply Chain Management.
+    **Result:** In Dynamics 365 Sales, the account type *Prospect* is changed to type *Customer*. In Dynamics 365 Supply Chain Management, a customer account is created from the prospect with the same account number as the prospect, irrespective of customer number sequence setup in Dynamics 365 Supply Chain Management. Customer group is defaulted into the process from Dynamics 365 Supply Chain Management Sales and Marketing parameters for prospects. The prospect in Dynamics 365 Supply Chain Management is retired and the type is changed from *Prospect* to *Customer*. The sales quotation in Dynamics 365 Supply Chain Management is processed to confirmed, and the sales order is synchronized from Dynamics 365 Sales and created in Dynamics 365 Supply Chain Management.
 
 ## Next steps
 
