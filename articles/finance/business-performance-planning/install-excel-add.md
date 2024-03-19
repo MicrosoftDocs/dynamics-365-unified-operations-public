@@ -33,7 +33,7 @@ Before you can work with the Excel add-in, the following prerequisites must be i
 
 - The business planning app is installed. For more information, see [Install business performance planning](bpp-app-install.md).
 - The dimensions and cubes have been created. For more information, see [Business performance planning dimensions](dimensions.md) and [Business performance planning cubes](create-cubes.md).
-- Supported Web browsers - Microsoft Edge
+- Supported Web browser - Microsoft Edge.
 
 >[!NOTE]
 > Updates for add-ins aren't delivered automatically. Click **Install add-in** tile on the homepage to get the latest update.
