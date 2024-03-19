@@ -20,8 +20,6 @@ ms.custom: bap-template
 <!-- KFM: Preview until further notice -->
 This article provides answers to frequently asked questions about Warehouse management only mode.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## What should I do when a message is shown as Failed in the message processor?
 
 The [message processor](../supply-chain-dev/message-processor.md) retries three times before it fails. You can use [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this failure. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page, and use that information to take the next appropriate action: queue the message (that is, move it back into the processing queue), cancel it, or [manually update it](wms-only-mode-using.md#maintain-messages).
