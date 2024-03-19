@@ -72,7 +72,7 @@ To import a single configuration, follow these steps.
 
 1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
 1. On the **Versions** FastTab, select the required version of the selected ER configuration.
-1. Select **Import** to download the selected version from the Global repository to the current Dynamics 365 Finance instance.
+1. Select **Import** to download the selected version from the Dataverse repository to the current Dynamics 365 Finance instance.
 
     > [!NOTE]
     > The **Import** button is unavailable for ER configuration versions that are already present in the current Dynamics 365 Finance instance.
@@ -86,7 +86,7 @@ To import filtered configurations, follow these steps.
 1. On the **Configuration repository** page, on the **Filter** FastTab, in the **Tags** grid, add any tags that are needed.
 1. In the **Country/region applicability** field, select the appropriate country/region codes.
 1. Select **Apply filter**.
-1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from the Global repository to the current Dynamics 365 Finance instance.
+1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from the Dataverse repository to the current Dynamics 365 Finance instance.
 1. Select **Reset filter** to clean up the specified selection conditions.
 
 :::image type="content" source="media/gsw-config-repo-reset-filter.png" alt-text="Screenshot of the Configuration repository page, where a Country/region applicability filter is applied.":::
@@ -98,7 +98,7 @@ To import filtered configurations, follow these steps.
 
 ## Related resources
 
-- [Get started with Tax Calculation - Hibh-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
+- [Get started with Tax Calculation - High-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
 - [Globalization feature components](../e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -77,7 +77,7 @@ The output of the upgrade analysis report becomes the upgrade project plan for t
 
 ### Pre-upgrade checklist
 
-As part the upgrade, the pre-upgrade checklist must be installed in your AX 2012 environment to upgrade data. Use this checklist to enter required data for the upgrade. For example, one pre-upgrade checklist task is to provide the Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user. Each user will have to sign in to Dynamics 365 finance and operations apps. 
+As part the upgrade, the pre-upgrade checklist must be installed in your AX 2012 environment to upgrade data. Use this checklist to enter required data for the upgrade. For example, one pre-upgrade checklist task is to provide the Microsoft Entra sign-in information for each current AX 2012 user. Each user will have to sign in to Dynamics 365 finance and operations apps. 
 
 - If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255).
    

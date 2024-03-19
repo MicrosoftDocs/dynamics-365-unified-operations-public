@@ -207,7 +207,7 @@ First, sign in to the environment by using the admin account that can be found o
 * **System administration** \> **Inquiries** \> **Batch jobs:** Select the jobs that you want to run in your UAT environment, and update the status to **Waiting**.
 
 > [!NOTE]
-> As a best practice, all mission-critical batch jobs that run with recurrence should be created and run by the admin account. The admin should be a generic user such as `erp@customer.com`. It should not be linked to a specific employee's Azure Active Directory (Azure AD) account, because that account might be disabled later if the employee leaves the company.
+> As a best practice, all mission-critical batch jobs that run with recurrence should be created and run by the admin account. The admin should be a generic user such as `erp@customer.com`. It should not be linked to a specific employee's Microsoft Entra account, because that account might be disabled later if the employee leaves the company.
 
 ## Open the environment to users
 
@@ -224,4 +224,3 @@ Are you looking for more tools to help you prepare backup files from your develo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
