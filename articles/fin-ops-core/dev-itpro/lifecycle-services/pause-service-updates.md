@@ -35,9 +35,9 @@ This article explains how to pause updates to your sandbox and production cloud 
 Microsoft updates your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Lifecycle Services. At that point, if you can't proceed with the update for some reason, you can pause it through Lifecycle Services.
 
 > [!IMPORTANT]
-> As of February 19, 2024, the maximum number of consecutive updates that can be paused is being reduced from three to one. However, because the service update cadence is also being reduced, from seven to four releases, the same minimum of two service updates per year is maintained. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
-
-For information about how to change the configured sandbox environment and set the production update cadence, see [Configure service updates through Lifecycle Services (LCS)](configure-service-updates.md).
+> As of February 19, 2024, the maximum number of consecutive updates that can be paused is being reduced from three to one. However, because the service update cadence is also being reduced, from seven to four releases, the same minimum of two service updates per year is maintained. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md). For information about how to change the configured sandbox environment and set the production update cadence, see [Configure service updates through Lifecycle Services (LCS)](configure-service-updates.md).
+>
+> We are giving customers more flexibility in their update schedules. Beginning with the 10.0.39 release, customers can choose from two auto-update windows that are 4 weeks apart for each service update. Organizations can select the update window that better accommodates their validation process and operational schedules. For more details about how this affects pause policy see **Who can pause service updates?** in this FAQ.
 
 ## Who can pause service updates?
 
@@ -47,9 +47,14 @@ Staying current with service updates helps guarantee that customers always run o
 
 As of February 19, 2024, the maximum number of consecutive updates that can be paused is being reduced from three to one. Therefore, customers are required to take a minimum of two service updates annually.
 
-You can't use Lifecycle Services to pause an update if any sandbox and production environments in your project are two updates behind the latest update that Microsoft has released. For example, if the latest update that Microsoft has released is version 10.0.41, customers who have environments that are running version 10.0.40 **can** pause updates. However, customers who have environments that are running version 10.0.39 **can't** pause updates, because the environments are two updates behind. If any sandbox or production environment is too far behind, you receive the following error message if you try to pause updates in Lifecycle Services:
+You can't use Lifecycle Services to pause a release if any sandbox and production environments in your project are more than two updates behind the latest release. This is applicable even in the case of two autoupdate windows now available with 10.0.39 release. For instance, if Microsoft's latest released version is 10.0.39, customers with version 10.0.38 can pause one or both autoupdate windows to completely pause the 10.0.39 release. Customers with version 10.0.37 can pause only the first autoupdate window and must take the 10.0.39 release in the second update window. If environments are two releases behind the latest release (i.e older than 10.0.37 in this example), none of the autoupdate windows are applicable as no pauses will be allowed. 
+
+If any sandbox or production environment is too far behind, you receive the following error message if you try to pause updates in Lifecycle Services:
 
 > One or more sandbox and/or production environments are not compliant with Microsoft's service update policy. All your environments need to be compliant before you can pause updates.
+
+> [!IMPORTANT]
+> Customers are explicitly required to pause both autoupdate windows to pause a release if they are eligible to do so, based on the pause policy. Pausing the first autoupdate window will not auto pause the second window.
 
 ## What can I pause?
 
