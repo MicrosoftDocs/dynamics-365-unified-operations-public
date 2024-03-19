@@ -2,7 +2,7 @@
 title: Use Copilot in site builder to enrich product detail pages
 description: This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 01/19/2024
+ms.date: 03/19/2024
 ms.topic: article
 audience: Application user
 ms.reviewer: v-chrgriffin
@@ -21,7 +21,7 @@ This article describes how to use Microsoft Copilot in site builder to enrich pr
 
 > [!NOTE]
 > - Starting in March 2024, Copilot in site builder is generally available for all Dynamics 365 Commerce customers globally. With this release, Copilot in site builder is supported in 23+ locales. For more information, see [Copilot International Availability](https://go.microsoft.com/fwlink/?linkid=2263265).
-> - Depending on the hosting region for your environment, some organizations may need to access Copilot resources that aren't in your hosting region. If so, you can allow your request to be routed to another region by asking your system administrator to turn on the **Enable cross geo communication for Copilot** flag in your tenant settings, which affirms your consent to use Copilot resources from other regions. For more information, see [Enable copilots and generative AI features](https://go.microsoft.com/fwlink/?linkid=2263523).
+> - Depending on the hosting region for your environment, some organizations may need to access Copilot resources that aren't in your hosting region. If so, you can allow your request to be routed to another region by asking your system administrator to turn on the **Enable cross geo communication for Copilot** flag in your tenant settings, which enables cross-geo communication and affirms your consent to use Copilot resources from other regions. For more information, see [Enable copilots and generative AI features](https://go.microsoft.com/fwlink/?linkid=2263523).
 
 If you run an e-commerce website, you know the importance of engaging and persuasive product enrichment and marketing content that can attract and convert your customers. However, it can be time-consuming and challenging to create such content, especially if you have a large product catalog and a diverse audience. To help with content creation, Microsoft introduced Copilot in site builder, a new AI-powered tool that helps you easily and efficiently generate high-quality content.
 
