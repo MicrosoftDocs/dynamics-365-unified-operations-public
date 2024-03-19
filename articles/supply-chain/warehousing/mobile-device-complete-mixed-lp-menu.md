@@ -26,6 +26,10 @@ Mixed license plate receiving helps warehouse managers achieve these goals:
 
 You can add this capability directly to the mobile device menu, so that workers can run the flow by itself. Alternatively, you can set up a *detour* to make the flow available immediately after a related flow (such as the flow for receiving a purchase order or sales return). A detour is a menu item that can be opened from a step in a main task. Detours let workers "park" the current task, perform another task, and then return to the original task without losing any information.
 
+## Prerequisites
+
+To use the features describe in this article, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+
 ## Create a mobile device menu item for completing mixed license plates
 
 Follow these steps to create a mobile device menu item that runs the *Complete mixed license plate* mobile device flow.
