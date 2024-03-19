@@ -46,14 +46,17 @@ The following changes are being implemented:
 - We're introducing another autoupdate window for each service update, starting with version 10.0.39. For more information, see the FAQ for autoupdate section in this article.
 
 ### What can I expect with the new (autoupdate) cadence?
-Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring seven days prior to production.
+Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring seven days prior to production. For more information regarding how this pause policy works please see the **Is the change from the maximum of three pauses to one already in effect?** FAQ below.
 
 ### Does the new release schedule affect when I can schedule autoupdates?
 Yes, with version 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is which service updates are released each year. 
 
-As an example, let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15. This occurs during the first autoupdate window, starting either on April 5, April 12, or April 19, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10, or May 17. Opting for the second window gives you four more weeks between general availability and the final broadcast weekend, extending beyond the standard six-week timeframe.
+As an example, let's say you have opted for the 10.0.39 ("April") release through autoupdate. Microsoft makes this release generally available for self-update by all customers on March 15, 2024. If you've enabled autoupdates through Lifecycle Services, you'll start receiving production updates two weeks after the public availability date, which is March 15. This occurs during the first autoupdate window, starting either on April 5, April 12, depending on your chosen configuration. Alternatively, if you've selected the second autoupdate window, your updates begins on May 3, May 10. Opting for the second window gives you four more weeks between general availability and the final broadcast weekend, extending beyond the standard six-week timeframe.
 
-In this example, if a customer opts out of both autoupdate windows for the 10.0.39 release, they aren't able to opt out of both autoupdate windows for the next  release 10.0.40 ("July"), because skipping an autoupdate is longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+In the example above, if a customer opts out of both autoupdate windows for the 10.0.39 release, they can only opt out of the first autoupdate window for the next release, 10.0.40 ("July"). This is because skipping a release is no longer possible due to a previous pause under the new pause policy. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+
+> [!IMPORTANT]
+> Customers are explicitly required to pause both autoupdate windows to pause a release if they are eligible to do so, based on the pause policy. Pausing the first autoupdate window will not auto pause the second window.
 
 ### Is the change from the maximum of three pauses to one already in effect?
 
@@ -61,14 +64,15 @@ No, the enforcement of one maximum pause goes into effect on February 19, 2024, 
 
 The following table shows the allowed pauses through the transition based on your installed version. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
-| On 10.0.35 | On 10.0.36  | On 10.0.37  | On 10.0.38  | February 19, 2024  | On 10.0.39   |
-|------------|-------------|-------------|-------------|--------------------|--------------|
-| 10.0.36 autoupdate pause allowed. | 10.0.37 autoupdate pause allowed. | 10.0.38 autoupdate pause allowed. | 10.0.39 autoupdate pause allowed after February 19. | Max. of 1 pause starts February 19 after 10.0.38 autoupdate completes. | 10.0.40 autoupdate pause allowed. |
-| 10.0.37 autoupdate pause allowed. | 10.0.38 autoupdate pause allowed. | Must take 10.0.39 autoupdate. | Must take 10.0.40 autoupdate. |  | Must take 10.0.41 autoupdate. |
-| 10.0.38 autoupdate pause allowed. | Must take 10.0.39 autoupdate. | 10.0.40 autoupdate pause allowed. |  |  |  |
-| Must take 10.0.39 autoupdate. | 10.0.40 autoupdate pause allowed. | Must take 10.0.41 autoupdate. |  |  |  |
-| 10.0.40 autoupdate pause allowed. | Must take 10.0.41 autoupdate. |  |  |  |  |
-| Must take 10.0.41 autoupdate. |  |  |  |  |  |
+> [!NOTE]
+> Maximum pause of one release is allowed after 10.0.38 autoupdate schedule is complete.
+
+| On 10.0.35 | On 10.0.36  | On 10.0.37  | On 10.0.38  | On 10.0.39   |
+|------------|-------------|-------------|-------------|--------------------|
+| 10.0.36 release can be paused. | 10.0.37 release can be paused. | 10.0.38 release can be paused. | 10.0.39 release can be paused. |10.0.40 release can be paused|
+| 10.0.37 release can be paused. | 10.0.38 release can be paused. | Must take 10.0.39 release, in one of the two autoupdate windows. | Must take 10.0.40 release in one of the two autoupdate windows. | Must take 10.0.41 release in one of the two autoupdate windows. |
+| 10.0.38 release can be paused. | Must take 10.0.39 release, autoupdate windows for pausing not applicable. | |  |  |
+| Must take 10.0.39 release, autoupdate windows for pausing not applicable. | | |  |  |
 
 ### When does the new service update release cadence take effect?
 
