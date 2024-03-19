@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-05-13
 ---
 
 # Maintenance in self-service environments FAQ
-Because of the changing nature of technology, the continual appearance of new security threats, and compliance requirements, environments must be updated with all critical security and quality updates. Microsoft has built the framework for performing all maintenance activity, such as operating system patching, deployment of security hotfixes, and deployment of quality updates, during the dark hours of the geographic region where your environment is deployed. To minimize application downtime, upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time. This approach enables servicing that involves a small window of service degradation instead of complete downtime.
+Because of the changing nature of technology, the continual appearance of new security threats, and compliance requirements, environments must be updated with all critical security and quality updates. Microsoft built the framework for performing all maintenance activity, such as operating system patching, deployment of security hotfixes, and deployment of quality updates, during the dark hours of the geographic region where your environment is deployed. To minimize application downtime, upgrades occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time. This approach enables servicing that involves a small window of service degradation instead of complete downtime.
 
 ## Infrastructure maintenance in self-service environments
 Infrastructure maintenance is the process of updating the environments with the latest security updates and critical hotfixes. Microsoft must complete this process on your environments to ensure security, availability, reliability. This article provides answers to frequently asked questions about Microsoft planned maintenance in self-service environments.
@@ -60,10 +60,10 @@ For information on the upcoming proactive quality update schedule, see the [Rele
 > All the maintenance activity (system updates, security hotfixes, and quality updates) is performed during the dark-hour window to provide a near-zero-downtime experience.
 
 ## What does near-zero-downtime maintenance mean?
-Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but won't need to take a full downtime.
+Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but don't need full downtime.
 
 ## What is the experience during the near-zero-downtime maintenance window?
-Upgrades occurs in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt [priority-based scheduling](../sysadmin/priority-based-batch-scheduling.md) of batch jobs. Priority-based scheduling eliminates the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing or maintenance operations.
+Upgrades occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt [priority-based scheduling](../sysadmin/priority-based-batch-scheduling.md) of batch jobs. Priority-based scheduling eliminates the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing or maintenance operations.
 
 ### Interactive usage
 Users who are connected to the environment might experience a brief disconnection of less than 60 seconds a few times during the servicing window. After recovery, users might experience one of the following outcomes:
@@ -74,7 +74,7 @@ Users who are connected to the environment might experience a brief disconnectio
 For example, the user may be working on a sales order creating lines or posting. After the interruption, the user might return to the Sales workspace, but the new order and lines should still be available. We recommend that users go back to the main form and check their work. 
 
 ### Batch service
-Individual batch servers won't be available for up to 30 minutes. The following activities occur: 
+Individual batch servers aren't available for up to 30 minutes. The following activities occur: 
 
 - Any executing batch jobs terminate.
 - Jobs that were terminated are automatically restarted when the batch service recovers. Set the maximum number of retries to zero for any jobs that shouldn't be restarted automatically.
@@ -85,8 +85,8 @@ Individual batch servers won't be available for up to 30 minutes. The following 
 For more information, see [Retry the batch job task, regardless of the error type](../sysadmin/retryable-batch.md#retry-for-any-error-or-batch-server-restart) to learn more about batch retry.
 
 ### Priority-based scheduling
-- If priority-based scheduling is enabled, users experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs are served by the available AOS instances. Therefore, there eventually won't be any complete downtime during the servicing window.
-- If priority-based scheduling isn't enabled, any batch groups that are configured with AOS instances experience downtime until the associated AOS instance updates and is back in rotation.
+- If priority-based scheduling is enabled, users experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs are served by the available AOS instances. Therefore, there eventually isn't any complete downtime during the servicing window.
+- If priority-based scheduling isn't enabled, any batch groups configured with AOS instances experience downtime until the associated AOS instance updates and is back in rotation.
 
 > [!NOTE] 
 > We are working to reduce the downtime for batch service to a few minutes. This requires customers to adopt priority-based scheduling of batch jobs.
