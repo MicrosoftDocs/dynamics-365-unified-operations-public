@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: SysIntParameters
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 03/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -23,7 +23,7 @@ This article describes how to set up Microsoft Dynamics 365 Supply Chain Managem
 Before you can use the telemetry feature in Supply Chain Management, you must turn it on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *System administration*
-- **Feature name:** *Monitoring and Telemetry*
+- **Feature name:** *Monitoring and telemetry*
 
 ## Set up Application Insights
 
@@ -46,8 +46,8 @@ After you've set up Application Insights and have a copy of its instrumentation 
 1. Go to **System administration \> Setup \> Monitoring and telemetry parameters**.
 1. On the **Configure** tab, set the following fields:
 
-    - **User sessions (Custom Events)** - This must be enabled to capture Warehoue events. You should set this option to *Yes*.
-    - **Warehouse events** – Specify whether you want to send warehousing telemetry data to Application Insights. You should set this option to *Yes*.    
+    - **User sessions (custom events)** - This must be enabled to capture warehouse events. You should set this option to *Yes*.
+    - **Warehouse events** – Specify whether you want to send warehousing telemetry data to Application Insights. You should set this option to *Yes*.
 
 1. On the **Environments** tab, set the following fields:
 
@@ -57,7 +57,7 @@ After you've set up Application Insights and have a copy of its instrumentation 
 1. On the **Application Insights registry** tab, set the following fields:
 
     - **Environment mode** – Specify the mode of your selected environment. The value must match the value that you specified on the **Environments** tab.
-    - **Connection string** or **Instrumentation key** – Enter the value that you copied when you set up Application Insights in Azure.    
+    - **Connection string** or **Instrumentation key** – Enter the value that you copied when you set up Application Insights in Azure.
 
     > [!NOTE]
     > You can use the same instrumentation key for different environment modes.
