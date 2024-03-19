@@ -1,8 +1,8 @@
 ---
-title: self checkout
+title: Use self checkout
 description: This article explains how to use self checkout
 author: anush6121
-ms.author:anvenkat 
+ms.author: anvenkat 
 ms.topic: how-to 
 ms.date: 03/19/2024
 ms.custom: 
@@ -10,6 +10,6 @@ ms.custom:
 ms.reviewer: johnmichalak
 ---
 
-# self checkout
+# Use self checkout
 
 This article explains how to use self checkout.
