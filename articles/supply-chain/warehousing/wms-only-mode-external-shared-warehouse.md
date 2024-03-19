@@ -4,7 +4,7 @@ description: This article provides information about running Warehouse managemen
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog
+ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog, WHSExternalInventoryAdjustment
 ms.topic: overview
 ms.date: 01/29/2024
 audience: Application User
@@ -28,7 +28,7 @@ In addition, the warehouse management processes can track which legal entity own
 
 The warehouse management only mode is active with an external shared warehouse in the legal entity *WOM* that deals with logistics warehouse operations for two sales subsidiaries that manage the order and financial processing in the legal entities *LE1* and *LE2*.
 
-:::image type="content" source="media/wms-only-shared-warehouse-high-level-set-up.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-shared-warehouse-high-level-set-up.svg":::
+:::image type="content" source="media/wms-only-D365-shared-warehouse-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-D365-shared-warehouse-integration.svg":::
 
 ## Inbound example process (Shared warehouse in D365)
 
@@ -48,6 +48,11 @@ The processing of releasing purchase orders to the external managed warehouse ca
 1. *WOM*: The *Inbound shipment order line* transactions get finalized by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
+
+
+<!-- perlynne -->
+"Create external warehouse inbound shipment order requests"
+
 
 ## Outbound example process (Shared warehouse in D365)
 
@@ -71,10 +76,9 @@ For a more detailed description of this process and the related processes, see [
 
 ## On-hand adjustments
 
-The above mentioned **Process external warehouse inbound shipment orders updates** and **Process external warehouse outbound shipment orders updates** handle all the changes related to the *Inbound and Outbound shipment order* on-hand processes. However, other warehouse adjustments such as a warehouse counting operation also need to keep the inventory on-hand consistent between the *WOM* legal entity and any related order processing legal entities *LE1, ...*. For this, the *Warehouse management only mode* records all the changes in the warehouse inventory in the Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log and this data will be used to automatically create the **External inventory adjustments journals** that will be used for the actual inventory update process.
+The changes in the inventory on-hand that happen when processing *Inbound and Outbound shipment orders* are handled by the **Process external warehouse inbound shipment orders updates** and **Process external warehouse outbound shipment orders updates**. However, other warehouse movements such as a warehouse counting operation also need to make sure the inventory on-hand is the same between the *WOM* legal entity and any related order processing legal entities *LE1, ...*. For this, the *Warehouse management only mode* records all the changes in the warehouse inventory in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** and this data will be used to automatically create the **External inventory adjustments** for the relevant legal entities.
 
-<!-- perlynne -->
-WHSExternalInventoryAdjustment
+You can use the **Warehouse management \> Periodic tasks \> Create external inventory adjustment journals** process to generate the real *Inventory adjustment journals* that will be used to update the on-hand inventory and thus keeping it synchronized between the two legal entities.
 
 :::image type="content" source="media/wms-only-shared-warehouse-inventory-process.svg" alt-text="Internal process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inventory-process.svg":::
 
@@ -93,6 +97,8 @@ In the *LE1* **Warehouse management \> Setup \> Warehouse \> Warehouses** page y
 
 You need to have all the required warehouse management setup in the *WOM* legal entity defined for any warehouse management process, including the product master data. Note that the same *Product*/*Product variant* is used for the *Released products* in all legal entities, so we suggest using a separate *Source system* as the source for managing the product master data, including creating the necessary [*Source system items*](wms-only-mode-exchange-data.md#master-data) data if you share products between multiple sales subsidiaries. In this example, we will create a new *Source system* called *PIM-D365* and make sure to assign this *Source system* as the *Product master source system* for the *SS-LE1* source system. You also need to make sure that the products have a *Tracking dimension group* with the *Owner* dimension enabled if you use the owner dimension.
 You don't have to turn on the *Owner* tracking dimension for the *Released product* in the *LE1* company for this example setup, but if you do this the legal entity owner dimension value will be automatically assigned to the purchase and sales order lines, and you won't be able to change it.
+
+You can find more details about the product master data [here](wms-only-mode-exchange-data.md#master-data), but a key point to keep in mind is to use the *Non-valuated* inventory model for the products in the *WOM* legal entity.
 > [!NOTE]
 > The products need to be linked to a *Storage dimension group* that has the **Use warehouse management processes** option turned on.
 
