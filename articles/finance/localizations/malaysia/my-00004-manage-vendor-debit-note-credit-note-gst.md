@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, VendInvoiceJourLookup_MY, TaxGroupLookup, TaxTmpWorkTrans, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, SrsReportViewerForm, DefaultDashboard   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia

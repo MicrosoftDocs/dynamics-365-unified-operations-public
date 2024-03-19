@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesEditLines   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France

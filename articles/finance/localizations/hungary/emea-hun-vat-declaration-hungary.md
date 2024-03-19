@@ -5,7 +5,7 @@ author: Andosip
 ms.date: 09/14/2022
 ms.topic: article
 audience: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: 
