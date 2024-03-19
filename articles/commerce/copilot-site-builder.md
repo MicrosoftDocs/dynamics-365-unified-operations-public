@@ -68,7 +68,7 @@ To control the availability of Copilot in site builder feature at the site level
 
 ## Enable cross-geo communication for Copilot
 
-Currently, Copilot services are hosted in a [limited number of data centers](/power-platform/admin/geographical-availability-copilot) across the world. To prevent unwanted use of cross-geo services, the default behavior is to disable Copilot features in geos that don't have local Copilot services. To enable Copilot in geos that don't have local Copilot service, there are steps that you must take.
+Currently, Copilot services are hosted in a [limited number of data centers](/power-platform/admin/geographical-availability-copilot) across the world. To prevent unwanted use of cross-geo services, the default behavior is to disable Copilot features in geos that don't have local Copilot services.
 
 To enable Copilot in geos that don't have local Copilot services, follow these steps.
 
