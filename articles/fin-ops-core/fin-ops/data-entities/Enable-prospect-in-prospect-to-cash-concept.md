@@ -1,26 +1,25 @@
 ---
-title: Work with prospect in prospect to cash with Dynamics 365 Sales
-description: This article provides a conceptual overview of how the improved prospect-to-cash system works and how it can help improve your business processes.
+title: Work with prospects in prospect-to-cash with Dynamics 365 Sales
+description: This article provides a conceptual overview of how the prospect-to-cash system works and how it can help improve your business processes.
 author: henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 03/01/2024
+ms.date: 03/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Work with prospect in prospect-to-cash with Microsoft Dynamics 365 Sales
+# Work with prospects in prospect-to-cash with Dynamics 365 Sales
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.39 and later, this capability has been improved to integrate accounts of type prospect seamlessly in the quotation and qualification process across the two systems. 
+Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.39 and later, this capability has been improved to seamlessly integrate accounts of type *prospect* into the quotation and qualification process across the two systems. The solution enables companies to integrate the prospect lifecycle and quotation process flow across Sales and Supply Chain Management, allowing for fewer touch points and higher efficiency and transparency.  
+The features described in this article build on the [sales quotation lifecycle integration features](add-efficiency-in-quote-to-cash-concept.md) introduced in Supply Chain Management version 10.0.34. These features are intended to be used only in the context of prospect-to-cash integration between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 
-The changes are introduced to allow companies to have a seamless prospect lifecycle integration and quotation process flow across Sales and Supply Chain Management allowing for fewer touch points and higher efficiency and transparency. The changes are enabled in a combination of a feature in feature management in Supply Chain Management and an updated dual write supply chain solution to support the prospect lifecycle integration with Sales. These changes are an extension to the sales quotation lifecycle integration generally available from Microsoft Dynamics Supply Chain Management version 10.0.34. 
-
-These changes are intended to be used only in the context of prospect-to-cash integration between Microsoft Dynamics 365 Sales and Microsoft Dynamics 365 Supply Chain Management.
+This article describes how the feature works and presents several scenarios that illustrate this functionality. For details about how to enable and configure prospects in prospect-to-cash with Dynamics 365 Sales, see 
 
 On how to enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales]. <!--KFM: Correct link to be added by Karl -->
 
