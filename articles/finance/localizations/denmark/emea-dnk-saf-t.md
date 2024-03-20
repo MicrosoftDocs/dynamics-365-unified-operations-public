@@ -159,3 +159,17 @@ In the Danish SAF-T report, main accounts that are used in Finance must be assoc
     When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 4. Select **OK** to generate the report.
+
+## Export attachments
+
+As of version 10.0.40 of Dynamics 365 Finance, the **Export attachments** feature is available in **Document management**. Use this feature to export files attached to records of tables in Finance to supplement your SAF-T file if required. For more information, see [Export attachments](../../../fin-ops-core/dev-itpro/organization-administration/configure-document-management#export-attachments).
+
+Selection of tables to export attachments for is company-specific and may depend on particular request. For example, to supplement sections of source documents reported in SAF-T, select the following set of tables of Finance for export attachments:
+
+| Table name | Table label | SAF-T source documents section |
+|------------|-------------| -------------------------------|
+| CustInvoiceJour <br> ProjInvoiceJour | Customer invoice journal <br> Project invoice | SalesInvoices |
+| VendInvoiceJour | Vendor invoice journal | PurchaseInvoices |
+| CustTrans <br> VendTrans <br> BankAccountTrans | Customer transactions <br> Vendor transactions <br> Bank transactions | Payments |
+| InventTrans <br> CustTrans <br> VendTrans | Inventory transactions <br> Customer transactions <br> Vendor transactions | MovementOfGoods |
+| AssetTrans | Fixed asset transactions | AssetTransactions |
