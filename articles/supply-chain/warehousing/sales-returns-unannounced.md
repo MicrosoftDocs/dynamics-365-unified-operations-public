@@ -69,13 +69,13 @@ During the *Return item receiving* process, workers must use the mobile app to i
 - **License plate ID** – The license plate of the location where the incoming items are stored after they're received.
 - **Disposition code** – Depending on the setup of the mobile device menu item, workers might be able to select a disposition code to specify what should be done with the returned products. If this option isn't shown in the app during receiving, a Supply Chain Management user must enter a disposition code when they complete the mixed license plate.
 
-## Print return labels from a mobile device (Preview)
+## Print return labels from a mobile device (preview)
 
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 
-You can set up your *Return item receiving* mobile device menu items to print a return label as workers receive a return order. If you enable this feature, the system always prints the label right after the relevant work template is finished being processed. Return labels can be printed as a part of the workflow for both blind-return and return-details receiving.
+You can set up your *Return item receiving* mobile device menu items to print a return label as workers receive a return order. If you enable this feature, the system always prints the label right after all steps in the related work template have been completed. Return labels can be printed as a part of the workflow for both blind-return and return-details receiving.
 
-Return labels resemble license plate labels and include a barcode that contains necessary information such as the relevant order lines from the purchase order, information about the sender (such as their customer number), returned item numbers, and item quantities. The label also contains information such as the location we received the items in, and the location to put them.
+Return labels resemble license plate labels and include a barcode that contains necessary information such as the relevant order lines from the related purchase order, information about the sender (such as their customer number), returned item numbers, and item quantities. The label also contains information such as the location the items were received to and the location where they should be put.
 
 This feature is useful if you always want to print a return label at the end of your returns receiving workflow. It will disregard any other printing options in the work template and print the label as the last step of the template.
 
