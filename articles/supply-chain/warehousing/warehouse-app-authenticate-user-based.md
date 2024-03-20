@@ -41,11 +41,11 @@ Device code authentication simplifies the authentication process, because users 
 - If a generated device code that isn't used for authentication will expire after 15 minutes and the Warehouse Management mobile app will hide it. The user needs to press
 *Connect* once more for the mobile app to generate a new code.
 - If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
-- The device code flow isn't supported by mobile mass deployment (MDM) systems such as Intune, as the code is generated the moment one unauthenticated device tries to connect to Supply Chain Management.
+- The device code flow, although supported by mobile mass deployment (MDM) systems like Intune, requires manual user authorization because it doesn’t support [single sign-on](#sso) (SSO), as the code is generated the moment one unauthenticated device tries to connect to Supply Chain Management.
 
 ## <a name="usernamePasswordFlow"></a>Username/password authentication
 
-When you use username/password authentication, each human worker must enter the Microsoft Entra ID username and password associated either with the device or with themselves (depending on the [authentication scenario](#scenarios) you're using). They might also need to enter a mobile device user account ID and password, depending on their [warehouse worker record setup](mobile-device-work-users.md). This authentication method supports [single sign-on](#sso) (SSO), which also enables mobile mass deployment (MDM).
+When you use username/password authentication, each human worker must enter the Microsoft Entra ID username and password associated either with the device or with themselves (depending on the [authentication scenario](#scenarios) you're using). They might also need to enter a mobile device user account ID and password, depending on their [warehouse worker record setup](mobile-device-work-users.md). This authentication method supports [single sign-on](#sso) (SSO), which also enhances the convenience of mobile mass deployment (MDM).
 
 ## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
 
