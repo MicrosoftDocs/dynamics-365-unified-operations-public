@@ -59,7 +59,6 @@ Bank statement validation verifies the following details:
 -   The bank statement currency matches the bank account currency.
 -   The opening balance of the statement equals the closing balance of the previous statement for the bank account.
 -   The date doesn’t overlap the date for another bank statement for the same bank account.
--   There are no gaps in the dates for statements for the bank account.
 -   Dates on the statement lines are between the from-date and to-date of the bank statement.
 -   The opening balance and summarized line amounts equal the ending balance.
 
