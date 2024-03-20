@@ -28,6 +28,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | March  15–20, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | February  10–15, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | January  19–25, 2024 |
 | <p>Planning items support.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | December  10–15, 2023 |
