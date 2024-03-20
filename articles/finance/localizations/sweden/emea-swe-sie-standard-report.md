@@ -2,10 +2,10 @@
 title: Export financial information for auditors in Sweden
 description: This article provides information about the SIE standard report for Sweden.
 author: liza-golub
-ms.date: 04/05/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 03/20/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Sweden
