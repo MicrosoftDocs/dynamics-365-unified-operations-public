@@ -69,20 +69,24 @@ During the *Return item receiving* process, workers must use the mobile app to i
 - **License plate ID** – The license plate of the location where the incoming items are stored after they're received.
 - **Disposition code** – Depending on the setup of the mobile device menu item, workers might be able to select a disposition code to specify what should be done with the returned products. If this option isn't shown in the app during receiving, a Supply Chain Management user must enter a disposition code when they complete the mixed license plate.
 
-## Print return labels from a mobile device
+## Print return labels from a mobile device (Preview)
 
-This section provides an overview of Label printing for return orders. Enabling this feature allows you to print a label when we receive a return order at the end of your work template. 
-When this feature is enabled, as we complete a return order from a customer, whether it is using blind or return details receiving, a system trigger to print a label is sent, and a label for that return order is printed as a part of the workflow. 
-The label is in the form of a license plate label and holds necessary information such as the order lines from the purchase order and information about the sender such as customer number, returned item numbers and item quantities.
-That label also contains information such as the location we received the items in, and the location to put them. 
-This feature is useful if you always want to print a return label at the end of your returns receiving workflow. It will disregard if there are any other printing options in the work template and print the label at the last step of the template.
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 
-It's possible for workers to print return labels directly from a mobile device as part of the *Return item receiving* process. Return labels make it easier for staff to manage and track returns. To add this capability, you must turn on the feature for the relevant mobile device menu items (as described later in this topic) and set up a label printer for the warehouse. For more information about how to set up a printer, see the following articles:
+You can set up your *Return item receiving* mobile device menu items to print a return label as workers receive a return order. If you enable this feature, the system always prints the label right after the relevant work template is finished being processed. Return labels can be printed as a part of the workflow for both blind-return and return-details receiving.
+
+Return labels resemble license plate labels and include a barcode that contains necessary information such as the relevant order lines from the purchase order, information about the sender (such as their customer number), returned item numbers, and item quantities. The label also contains information such as the location we received the items in, and the location to put them.
+
+This feature is useful if you always want to print a return label at the end of your returns receiving workflow. It will disregard any other printing options in the work template and print the label as the last step of the template.
+
+Return labels make it easier for staff to manage and track returns. To add this capability, you must turn on the feature for the relevant mobile device menu items (as described later in this topic) and set up a label printer for the warehouse. For more information about how to set up a printer, see the following articles:
 
 - [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md)
 - [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
 - [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Set up unannounced sales return receiving
 
