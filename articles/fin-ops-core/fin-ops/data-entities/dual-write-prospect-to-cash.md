@@ -25,7 +25,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](../../dev-itpro/data-entities/dual-write/customer-mapping.md). For information about product integration, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.39 and later, accounts of type *Customer* and *Prospect* are supported. This enables an account qualification process where the account record is created and qualified first as a prospect and then as a customer, including a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
+> In Supply Chain Management version 10.0.39 and later, accounts of the *Customer* and *Prospect* types are supported. This support enables an account qualification process where the account record is created and qualified first as a prospect and then as a customer. This process includes a process for automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
 
 ## Prerequisites and mapping setup
 
@@ -56,7 +56,7 @@ For example, the number sequence in Supply Chain Management is **1, 2, 3, 4, 5, 
 Sales quotations can be created in either Sales or Supply Chain Management.
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.39 and later, accounts of type *Customer* and *Prospect* are supported. This enables an account qualification process where the account record is created and qualified first as a prospect and then as a customer, including a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
+> In Supply Chain Management version 10.0.39 and later, accounts of the *Customer* and *Prospect* types are supported. This support enables an account qualification process where the account record is created and qualified first as a prospect and then as a customer. This process includes a process for automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
 
 If you create a quotation in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a quotation in Supply Chain Management, it's synced to Sales in real time. Note the following points:
 
@@ -109,7 +109,7 @@ New columns have been added to the **Order** table and appear on the page. Most 
 - The **Sales order status** value will remain **Active** to help ensure that changes from Supply Chain Management can flow to the sales order in Sales. To control this behavior, set the default **Statecode \[Status\]** value to **Active**.
 
 > [!NOTE]
-> The status integration of sales orders differ based on whether you use the *CDS Sales order headers* (*salesorders*) entity or the  *Dynamics 365 Sales order headers* (*salesorders*) entity. For more information about the differences, see [Set up the mapping for sales order status columns](../../dev-itpro/data-entities/dual-write/sales-status-map.md).
+> The status integration of sales orders differs, depending on whether you use the *CDS Sales order headers* (*salesorders*) entity or the *Dynamics 365 Sales order headers* (*salesorders*) entity. For more information about the differences, see [Set up the mapping for sales order status columns](../../dev-itpro/data-entities/dual-write/sales-status-map.md).
 
 ## Invoices
 
@@ -125,38 +125,38 @@ Sales invoices are created in Supply Chain Management and synced to Sales. Note 
 Prospect-to-cash includes a collection of core table maps that work together during data interaction, as shown in the following table.
 
 | Finance and operations apps | Customer engagement apps | Description |
-|--|--|--|
-| [All products](../../dev-itpro/data-entities/dual-write/mapping-reference.md#138) | msdyn_globalproducts |  |
-| [Customers V3](../../dev-itpro/data-entities/dual-write/mapping-reference.md#101) | accounts |  |
-| [Customers V3](../../dev-itpro/data-entities/dual-write/mapping-reference.md#116) | contacts |  |
-| [Contacts V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#221) | msdyn_contactforparties |  |
-| [CDS sales order headers](../../dev-itpro/data-entities/dual-write/mapping-reference.md#217) | salesorders |  |
-| [CDS sales order lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#216) | salesorderdetails |  |
-| [CDS sales quotation header](../../dev-itpro/data-entities/dual-write/mapping-reference.md#215) | quotes |  |
-| [CDS sales quotation lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#214) | quotedetails |  |
-| [Released products V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#189) | msdyn_sharedproductdetails |  |
-| [Sales invoice headers V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the finance and operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
-| [Sales invoice lines V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#117) | invoicedetails |  |
-| [Sales order origin codes](../../dev-itpro/data-entities/dual-write/mapping-reference.md#186) | msdyn_salesorderorigins |  |
+|---|---|---|
+| [All products](../../dev-itpro/data-entities/dual-write/mapping-reference.md#138) | msdyn\_globalproducts | |
+| [Customers V3](../../dev-itpro/data-entities/dual-write/mapping-reference.md#101) | accounts | |
+| [Customers V3](../../dev-itpro/data-entities/dual-write/mapping-reference.md#116) | contacts | |
+| [Contacts V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#221) | msdyn\_contactforparties | |
+| [CDS sales order headers](../../dev-itpro/data-entities/dual-write/mapping-reference.md#217) | salesorders | |
+| [CDS sales order lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#216) | salesorderdetails | |
+| [CDS sales quotation header](../../dev-itpro/data-entities/dual-write/mapping-reference.md#215) | quotes | |
+| [CDS sales quotation lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#214) | quotedetails | |
+| [Released products V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#189) | msdyn\_sharedproductdetails | |
+| [Sales invoice headers V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the finance and operations app contains invoices for sales orders and free text invoices. A filter that's applied in Dataverse for dual-write will filter out any free text invoice documents. |
+| [Sales invoice lines V2](../../dev-itpro/data-entities/dual-write/mapping-reference.md#117) | invoicedetails | |
+| [Sales order origin codes](../../dev-itpro/data-entities/dual-write/mapping-reference.md#186) | msdyn\_salesorderorigins | |
 | [Dynamics 365 Sales order headers](../../dev-itpro/data-entities/dual-write/mapping-reference.md#238) | salesorders | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 | [Dynamics 365 Sales order lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#239) | salesorderdetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 | [Dynamics 365 Sales quotation header](../../dev-itpro/data-entities/dual-write/mapping-reference.md#240) | quotes | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 | [Dynamics 365 Sales quotation lines](../../dev-itpro/data-entities/dual-write/mapping-reference.md#241) | quotedetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
-| [Dynamics 365 Sales feature management states](../../dev-itpro/data-entities/dual-write/mapping-reference.md#237) | msdyn_supplychainfeaturestate | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
-| Dynamics 365 Sales Prospect (accounts) |  | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature (available in Supply Chain Management 10.0.39 and later). |
-| Dynamics 365 Sales Prospect (contacts) |  | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature (available in Supply Chain Management 10.0.39 and later). |
-| Dynamics 365 Sales feature parameters |  | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature (available in Supply Chain Management 10.0.39 and later). |
+| [Dynamics 365 Sales feature management states](../../dev-itpro/data-entities/dual-write/mapping-reference.md#237) | msdyn\_supplychainfeaturestate | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
+| Dynamics 365 Sales Prospect (accounts) | | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature (available in Supply Chain Management 10.0.39 and later). |
+| Dynamics 365 Sales Prospect (contacts) | | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature (available in Supply Chain Management 10.0.39 and later). |
+| Dynamics 365 Sales feature parameters | | This entity is introduced through the *Enable prospect in prospect-to-cash with Dynamics 365 Sales* feature (available in Supply Chain Management 10.0.39 and later). |
 
- <!--KFM: Add links for the last three rows when the mapping reference page is updated by HenrikJ. Also add the column details for Customer engagement apps from the mapping reference. -->
+<!--KFM: Add links for the last three rows when the mapping reference page is updated by HenrikJ. Also add the column details for Customer engagement apps from the mapping reference. -->
 
 For information about price lists, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> For more information about the entities introduced in Supply Chain Management version 10.0.39 (Dynamics 365 Sales Prospect (accounts), Dynamics 365 Sales Prospect (contacts), and Dynamics 365 Sales feature parameters), see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
+> For more information about the entities that are introduced in Supply Chain Management version 10.0.39 (*Dynamics 365 Sales Prospect* (*accounts*), *Dynamics 365 Sales Prospect* (*contacts*), and *Dynamics 365 Sales feature parameters*), see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
 
 ## Limitations
 
-The following limitations apply.
+The following limitations apply:
 
 - Return orders aren't supported. A return order is a sales order that has a sales order type of **Returned order**.
 - Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flow to the order automatically. Currently dual-write does not include financial dimensions data for master data.
