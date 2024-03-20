@@ -1,10 +1,24 @@
-# Batch Parameter Versioning
+---
+# required metadata
 
-When updating the parameters list of a batch job, it is recommended to version the list to prevent encountering an error message such as '_an error occurred while unpacking parameters for batch job XXXXX_' during execution. Incorporating versioning when updating the parameter list helps mitigate this issue and aligns with recommended best practices.
+title: Batch Parameter Versioning
+description: This article provides information about the Batch parameter versioning and explains how you can use versioning to avoid issues related to pack/unpack.
+author: raanandm
+ms.date: 03/20/2024
+ms.topic: article
+audience: Developer, IT Pro
+ms.reviewer: vikaush
+ms.search.region: Global
+ms.author: raanandm
+ms.search.validFrom: 2024-03-20
+---
+# How to use Batch Parameter Versioning
 
-Below is an example for how it could be achieved:
+When updating the parameters list of a batch job, it's advisable to implement versioning. This practice helps prevent errors like 'an error occurred while unpacking parameters for batch job XXXXX' during execution. Integrating versioning into the parameter list updates is beneficial as it mitigates this issue and aligns with recommended best practices.
 
-```csharp
+Here's an example for how it could be achieved:
+
+```X++
 #define.Version2(2)
 #localMacro.Version2List
 #Version1List
@@ -58,92 +72,88 @@ boolean unpack(container packedClass)
 }
 ```
 
-Example for SysOperationServiceController, where you wish to have pack/unpack logic based on some pre-condition. Here, in the example it is based on isSessionInRealAsyncContext.
+Example for SysOperationServiceController, where you wish to have pack/unpack logic based on some pre-condition. Here, in the example it's based on isSessionInRealAsyncContext.
 
-```csharp
-    #define.CurrentVersion(2)
-    #define.version1(1)
-    #define.version2(2)
-    #localmacro.version1List
-        className,
-        methodName
-    #endmacro
-    #localmacro.CurrentList
-        #version1List
-        ,hasPendingAfterOperation
-        ,operationReturnValuePacked
-    #endmacro
+```X++
+#define.CurrentVersion(2)
+#define.version1(1)
+#define.version2(2)
+#localmacro.version1List
+    className,
+    methodName
+#endmacro
+#localmacro.CurrentList
+    #version1List
+    ,hasPendingAfterOperation
+    ,operationReturnValuePacked
+#endmacro
 
-    public container pack()
+public container pack()
+{
+    Version packVersion = SysOperationServiceController::getPackVersion();
+    operationReturnValuePacked = conNull();
+    if (#version2 == packVersion)
     {
-        Version packVersion = SysOperationServiceController::getPackVersion();
-
-        operationReturnValuePacked = conNull();
-
-        if (#version2 == packVersion)
+        if (this.canServiceReturnValueBePacked())
         {
-            if (this.canServiceReturnValueBePacked())
-            {
-                operationReturnValuePacked = this.packServiceReturnValue();
-            }
+            operationReturnValuePacked = this.packServiceReturnValue();
+        }
+        return [#version2,#CurrentList, super()];
+    }
+    else
+    {
+        return [#version1,#version1List, super()];
+    }
+}
 
-            return [#version2,#CurrentList, super()];
-        }
-        else
-        {
-            return [#version1,#version1List, super()];
-        }
+internal static Version getPackVersion()
+{
+    if (SysRealAsyncContext::isSessionInRealAsyncContext())
+    {
+        // Use the version that packs the real async data members
+        return #version2;
+    }
+    else
+    {
+        return #version1;
+    }
+}
+
+public boolean unpack(container packedState)
+{
+    container packedSuper;
+    int version;
+
+    version = SysOperationHelper::getVersion(packedState);
+    switch (version)
+    {
+        case #CurrentVersion:
+            [version, #CurrentList, packedSuper] = packedState;
+            break;
+        case #version1:
+            [version, #version1List, packedSuper] = packedState;
+            break;
+        default:
+            return false;
     }
 
+    // Check access before unpacking full state
+    this.checkAccess();
 
-    internal static Version getPackVersion()
+    if (version == #CurrentVersion && operationReturnValuePacked != conNull())
     {
-        if (SysRealAsyncContext::isSessionInRealAsyncContext())
-        {
-            // Use the version that packs the real async data members
-            return #version2;
-        }
-        else
-        {
-            return #version1;
-        }
+        this.unPackServiceReturnValue(operationReturnValuePacked);
     }
 
-    public boolean unpack(container packedState)
-    {
-        container packedSuper;
-        int version;
-
-        version = SysOperationHelper::getVersion(packedState);
-        switch (version)
-        {
-            case #CurrentVersion:
-                [version, #CurrentList, packedSuper] = packedState;
-                break;
-            case #version1:
-                [version, #version1List, packedSuper] = packedState;
-                break;
-            default:
-                return false;
-        }
-
-        // Check access before unpacking full state
-        this.checkAccess();
-
-        if (version == #CurrentVersion && operationReturnValuePacked != conNull())
-        {
-            this.unPackServiceReturnValue(operationReturnValuePacked);
-        }
-
-        return super(packedSuper);
-    }
+    return super(packedSuper);
+}
 ```
 Recommendations for future changes to batch job parameters:
 
-- **Maintain Versioned Parameter Lists**: Ensure that both the old and new versions of the parameters list are retained. This allows for backward compatibility and facilitates the smooth transition between parameter versions.
+- **Maintain Versioned Parameter Lists**: Ensure that both the old and new versions of the parameters list are retained. Further, versioning allows for backward compatibility and helps the smooth transition between parameter versions.
 
-- **Adapt Unpacking Process**: Modify the unpacking process to handle both old and new versions of the parameters list. The unpacking mechanism should be able to identify and process parameters from either version seamlessly.
+- **Adapt Unpacking Process**: Modify the unpacking process to handle both old and new versions of the parameters list. The unpacking mechanism can identify and process parameters from either version seamlessly.
 
-- **Functional Logic Consideration**: The functional logic of the batch job should be designed to accommodate scenarios where an old version of the parameters list is provided. In such cases, the batch job should revert to the previous behavior, adhering to the specifications defined prior to the parameter change.
+- **Functional Logic Consideration**: The functional logic of the batch job should be designed to accommodate scenarios where an old version of the parameters list is provided. In such cases, the batch job should revert to the previous behavior, adhering to the specifications defined before the parameter change.
 
-By implementing these guidelines, the batch job system can effectively manage changes to parameters while maintaining compatibility and ensuring consistent functionality across different versions of the parameters list.
+Implementing these guidelines empowers the batch job system to effectively manage changes to parameters. It ensures compatibility and consistency in functionality across different versions of the parameters list.
