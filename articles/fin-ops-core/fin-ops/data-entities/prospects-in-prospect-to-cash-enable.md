@@ -198,7 +198,9 @@ After you've completed the initial setup, you can configure the features that yo
     Other settings on this tab affect various other aspects of the integrated prospect-to-cash functionality. For more information about the other settings here, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). Tooltips are also provided for each field on the page.
 
 1. On the **Prospect** FastTab, set the **Default relation type** field to the default prospect type that you'll also set on the **Sales and marketing parameters** page for prospects.
-1. Go to **Sales and marketing \> Setup \> Sales and marketing parameters**. Open the **Prospects** tab and set **Type** to *Prospect*. Ensure that the **Table source** is *Relation table*. <!--KFM: I don't see a **Table source** setting here... --> We recommend that you select a default **Customer group** to allow for a seamless prospect-to-customer conversion process.
+1. Go to **Sales and marketing \> Setup \> Sales and marketing parameters**. Open the **Prospects** tab and set **Type** to *Prospect*. Ensure that the **Table source** is *Relation table*. We recommend that you select a default **Customer group** to allow for a seamless prospect-to-customer conversion process.
+
+<!--KFM: Follow up on the **Table source** setting. I didn't see it here in the UI. -->
 
 ## Next steps
 

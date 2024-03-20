@@ -1,14 +1,15 @@
 ---
 title: Prospect-to-cash in dual-write
 description: This article provides information about Quote-to-cash in dual-write.
-author: Henrikan 
+author: henrikan
+ms.author: henrikan
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
 ms.date: 03/20/2024
-ms.topic: article
 audience: Application User
-ms.reviewer: sericks
-ms.search.region: global
-ms.author: ramasri
-ms.search.validFrom: 2020-01-27
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Prospect-to-cash in dual-write
@@ -24,8 +25,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](../../dev-itpro/data-entities/dual-write/customer-mapping.md). For information about product integration, see [Unified product experience](../../dev-itpro/data-entities/dual-write/product-mapping.md).
 
 > [!NOTE]
-> In Supply Chain Management version 10.0.39 and later, **Account** of type customer and prospect is supported. This supports both an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, and a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales]. <!--KFM: Correct link to be added by Karl -->
->
+> In Supply Chain Management version 10.0.39 and later, accounts of type *Customer* and *Prospect* are supported. This enables an account qualification process where the account record is created and qualified first as a prospect and then as a customer, including a process of automatically converting a prospect to a customer account in an integrated quotation scenario. For details about how to set up and enable this capability, see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
 
 ## Prerequisites and mapping setup
 
@@ -39,7 +39,7 @@ In Sales, go to **Settings \> Administration \> System settings \> Sales**, and 
 - The **Discount calculation method** column is set to **Line item**.
 
 > [!NOTE]
-> In Supply Chain Management, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md). 
+> In Supply Chain Management, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
 
 ### Sites and warehouses
 
@@ -155,6 +155,8 @@ For information about price lists, see [Unified product experience](../../dev-it
 > For more information about the entities introduced in Supply Chain Management version 10.0.39 (Dynamics 365 Sales Prospect (accounts), Dynamics 365 Sales Prospect (contacts), and Dynamics 365 Sales feature parameters), see [Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales](prospects-in-prospect-to-cash-enable.md).
 
 ## Limitations
+
+The following limitations apply.
 
 - Return orders aren't supported. A return order is a sales order that has a sales order type of **Returned order**.
 - Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flow to the order automatically. Currently dual-write does not include financial dimensions data for master data.
