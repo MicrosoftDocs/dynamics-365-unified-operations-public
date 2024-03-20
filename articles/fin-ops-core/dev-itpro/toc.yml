@@ -1311,16 +1311,20 @@ items:
                 href: data-entities/dual-write/ledger-mapping.md            
               - name: Integrated tax master
                 href: data-entities/dual-write/tax-mapping.md
-            - name: Quote-to-cash with Dynamics 365 Sales
+            - name: Prospect-to-cash with Dynamics 365 Sales
               items:
-              - name: Quote-to-cash in dual-write
+              - name: Prospect-to-cash in dual-write
                 href: ../fin-ops/data-entities/dual-write-prospect-to-cash.md
               - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md
               - name: Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md
+              - name: Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales
+                href: ../fin-ops/data-entities/prospects-in-prospect-to-cash-enable.md                
               - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md
+              - name: Work with prospects in prospect-to-cash with Dynamics 365 Sales
+                href: ../fin-ops/data-entities/prospects-in-prospect-to-cash-use.md
               - name: Sync on-demand with the Supply Chain Management pricing engine
                 href: ../fin-ops/data-entities/pricing-engine.md
               - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
