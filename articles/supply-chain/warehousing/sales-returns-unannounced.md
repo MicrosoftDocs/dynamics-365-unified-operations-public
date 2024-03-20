@@ -71,6 +71,12 @@ During the *Return item receiving* process, workers must use the mobile app to i
 
 ## Print return labels from a mobile device
 
+This section provides an overview of Label printing for return orders. Enabling this feature allows you to print a label when we receive a return order at the end of your work template. 
+When this feature is enabled, as we complete a return order from a customer, whether it is using blind or return details receiving, a system trigger to print a label is sent, and a label for that return order is printed as a part of the workflow. 
+The label is in the form of a license plate label and holds necessary information such as the order lines from the purchase order and information about the sender such as customer number, returned item numbers and item quantities.
+That label also contains information such as the location we received the items in, and the location to put them. 
+This feature is useful if you always want to print a return label at the end of your returns receiving workflow. It will disregard if there are any other printing options in the work template and print the label at the last step of the template.
+
 It's possible for workers to print return labels directly from a mobile device as part of the *Return item receiving* process. Return labels make it easier for staff to manage and track returns. To add this capability, you must turn on the feature for the relevant mobile device menu items (as described later in this topic) and set up a label printer for the warehouse. For more information about how to set up a printer, see the following articles:
 
 - [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md)
