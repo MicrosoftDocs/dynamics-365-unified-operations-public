@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  FBTaxStatement_BR
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 

@@ -4,7 +4,7 @@ description: This article explains how to post bank expenses for Latin America.
 author: Fhernandez0088
 ms.date: 06/02/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---

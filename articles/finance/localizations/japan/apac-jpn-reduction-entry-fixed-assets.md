@@ -15,7 +15,7 @@ ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Japan
 # ms.search.industry: 

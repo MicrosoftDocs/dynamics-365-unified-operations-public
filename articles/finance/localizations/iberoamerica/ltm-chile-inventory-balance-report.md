@@ -4,7 +4,7 @@ description: The article describes how to set up and print the Inventory and bal
 author: Cpicon85 
 ms.date: 10/09/2023 
 ms.topic: article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: kfend
 ms.custom: bap-template
 ---

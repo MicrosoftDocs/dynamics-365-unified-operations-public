@@ -4,7 +4,7 @@ description: This article provides information about the vendor set configuratio
 author: Fhernandez0088
 ms.date: 01/31/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---

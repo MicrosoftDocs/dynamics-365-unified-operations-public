@@ -15,7 +15,7 @@ ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 #ms.suite: 
 # ms.tgt_pltfrm: 
 ms.search.region: Hungary, Poland

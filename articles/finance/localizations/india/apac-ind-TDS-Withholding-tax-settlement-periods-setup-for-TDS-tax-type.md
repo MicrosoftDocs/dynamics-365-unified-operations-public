@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # 
 # ms.tgt_pltfrm: 
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef

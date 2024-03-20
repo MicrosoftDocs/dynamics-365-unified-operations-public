@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Japan
 # ms.search.industry: 

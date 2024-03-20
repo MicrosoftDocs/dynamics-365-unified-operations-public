@@ -3,7 +3,7 @@ title: Latin America overview
 description: This article provides an overview of functionality specific to Latin American.
 author: kfend
 ms.author: kfend
-ms.reviewer: kfend 
+ms.reviewer: johnmichalak 
 ms.topic: overview
 ms.date: 08/22/2023
 ms.custom: bap-template 
