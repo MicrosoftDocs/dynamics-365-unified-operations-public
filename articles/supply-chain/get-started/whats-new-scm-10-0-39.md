@@ -33,7 +33,7 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | *Coming soon* | Enabled by default |
 | Inventory and logistics | [Enable prospects in prospect-to-cash with dual-write](/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enable-prospects-prospect-to-cash-dual-write) | [Work with prospects in prospect-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/prospects-in-prospect-to-cash-use.md) | Feature management:<br>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* |
-| Warehouse management | [Optimize the customer returns process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-customer-returns-process) | *Coming soon* | Enabled by default |
+| Warehouse management | [Optimize the customer returns process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-customer-returns-process) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default |
 | Warehouse management | Username/password and single-sign-on authentication for mobile devices | [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md) | Enabled by default |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release

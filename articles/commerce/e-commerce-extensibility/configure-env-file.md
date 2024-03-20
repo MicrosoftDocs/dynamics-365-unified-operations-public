@@ -45,8 +45,8 @@ PORT=4000
 
 # MSDyn365_HOST variable defines the domain name of your customer-facing e-Commerce site. 
 #   When this variable is set, if the URL https://localhost:4000/ is opened in a development environment, 
-#   your e-Commerce site will be rendered locally. If your site is protected through Azure Active Directory 
-#   (Azure AD) credentials, a prompt for a user name and password will appear.
+#   your e-Commerce site will be rendered locally. If your site is protected through Microsoft Entra ID 
+#   (Microsoft Entra ID) credentials, a prompt for a user name and password will appear.
 
 MSDyn365_HOST=
 
@@ -96,7 +96,7 @@ Here is an example of a development environment URL that includes the port numbe
 
 ## MSDyn365\_HOST
 
-The **MSDyn365\_HOST** variable defines the domain name of your customer-facing e-Commerce site. When this variable is set, if the URL `https://localhost:4000/` is opened in a development environment, your e-Commerce site will be rendered locally. If your site is protected through Azure Active Directory (Azure AD) credentials, a prompt for a user name and password will appear.
+The **MSDyn365\_HOST** variable defines the domain name of your customer-facing e-Commerce site. When this variable is set, if the URL `https://localhost:4000/` is opened in a development environment, your e-Commerce site will be rendered locally. If your site is protected through Microsoft Entra credentials, a prompt for a user name and password will appear.
 
 The following example shows the syntax for this variable.
 

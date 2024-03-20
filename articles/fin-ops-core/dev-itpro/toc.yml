@@ -71,8 +71,6 @@ items:
           href: data-entities/service-request-tracing.md
         - name: Recurring integrations
           href: data-entities/recurring-integrations.md
-        - name: Test services using third-party utilities
-          href: data-entities/third-party-service-test.md
       - name: Service protection limits
         items:
         - name: Service protection API limits
@@ -291,8 +289,6 @@ items:
           href: data-entities/validations-defaults-unmapped-fields.md
         - name: Security and data entities
           href: data-entities/security-data-entities.md
-        - name: Use third-party service testing utilities
-          href: data-entities/third-party-service-test.md
         - name: Create read-only entities that expose financial dimensions
           href: financial/read-only-entity-financial.md
       - name: Bring your own database
@@ -472,7 +468,7 @@ items:
           - name: Lifecycle Services project migration manager
             href: lifecycle-services/project-migration-manager.md
           - name: Region migration to support zone redundancy
-            herf: deployment/region-migration-support-zone-redundancy.md
+            href: deployment/region-migration-support-zone-redundancy.md
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
         - name: Retail data residency
@@ -1387,7 +1383,9 @@ items:
                 href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
               - name: Verify dual-write configuration in finance and operations apps and Dataverse
                 href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-              - name: Errors codes for the table map health check
+              - name: Dual-write error codes
+                href: data-entities/dual-write/dual-write-error-codes.md
+              - name: Error codes for the table map health check
                 href: data-entities/dual-write/table-map-health-check.md
                   
       - name: Virtual entities
@@ -1794,7 +1792,7 @@ items:
         href: sysadmin/maintenance-mode.md
       - name: Preconfigured system accounts
         href: sysadmin/pre-configured-system-accounts.md
-      - name: Export B2B users to Azure AD
+      - name: Export B2B users to Microsoft Entra ID
         href: sysadmin/implement-b2b.md
       - name: Data maintenance
         href: sysadmin/DataMaintenancePortal.md
@@ -1820,7 +1818,7 @@ items:
           href: sysadmin/security-reports.md
         - name: Create new users
           href: ../fin-ops/sysadmin/create-new-users.md
-        - name: Block access by location with Azure AD Conditional Access
+        - name: Block access by location with Microsoft Entra Conditional Access
           href: /power-platform/admin/restrict-access-online-trusted-ip-rules?context=/dynamics365/context/ops
         - name: Import users in bulk
           href: ../fin-ops/sysadmin/import-bulk-users.md
@@ -1852,6 +1850,8 @@ items:
           href: sysadmin/batch-processing-overview.md
         - name: Batch processing and batch servers
           href: sysadmin/batch-server-overview.md
+        - name: Batch Capacity
+          href: sysadmin/batch-capacity.md
         - name: Create batch jobs
           href: ../fin-ops/sysadmin/create-batch-job.md
         - name: Enable batch retries

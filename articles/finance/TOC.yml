@@ -176,17 +176,17 @@
           href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/finance
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/finance
-        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+        - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
           href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/finance      
         - name: Move environments between data centers
           href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/finance      
         - name: Move licenses between agreement types
           href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/finance 
-        - name: Move LCS implementation projects to different Azure AD tenants
+        - name: Move LCS implementation projects to different Microsoft Entra tenants
           href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/finance
         - name: Move LCS implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/finance 
-        - name: Multiple LCS projects and production environments on one Azure AD tenant
+        - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/finance    
     - name: Finance troubleshooting and FAQs
       href: finance-troubleshooting.md
@@ -1610,6 +1610,8 @@
             items: 
             - name: Setting up Electronic Invoicing
               href: localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance  
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
@@ -1620,6 +1622,8 @@
                 href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
                 href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
@@ -1648,18 +1652,14 @@
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
             - name: Electronic Invoicing service ISV last-mile connector
               href: localizations/global/e-invoicing-isv-connector.md
-          - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+          - name: Work with Electronic invoicing
             items: 
-            - name: Set up Electronic Invoicing parameters
-              href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
-            - name: Work with Electronic Invoicing
-              items:
-              - name: Submit electronic documents
-                href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
-              - name: Work with the Electronic documents submission log
-                href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
-              - name: Receive electronic documents
-                href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
+            - name: Submit electronic documents
+              href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
+            - name: Work with the Electronic documents submission log
+              href: localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/finance
+            - name: Receive electronic documents
+              href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
@@ -1702,6 +1702,8 @@
                 href: localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
                 href: localizations/global/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
             - name: Set up environments
               items:
               - name: Configure service environments and connected applications
@@ -3242,40 +3244,28 @@
           items:
           - name: Italy overview
             href: localizations/italy/italy.md
-          - name: VAT statements details
-            href: localizations/italy/emea-ita-vat-statements-details.md
+          - name: Sales tax books
+            items:
+            - name: Configure system parameters to report Sales tax books
+              href: localizations/italy/emea-ita-vat-statements-details.md
+            - name: Configure and report Sales tax books for Italy
+              href: localizations/italy/emea-ita-sales-tax-books.md
+            - name: Sales tax settlement and numbering of pages in Sales tax books
+              href: localizations/italy/emea-ita-vat-settlement.md
+            - name: Sales tax summary report
+              href: localizations/italy/emea-ita-sales-tax-summary.md
+          - name: VAT management and reporting by tax point date (Date of VAT register)
+            href: localizations/italy/emea-ita-vat-management.md
           - name: Quarterly VAT communication report
             href: localizations/italy/emea-ita-quarterly-vat-communication.md
+          - name: Yearly tax communication
+            href: localizations/italy/emea-ita-yearly-tax-communication.md
           - name: Fiscal journal report
             href: localizations/italy/emea-ita-fiscal-journal.md
           - name: Competence date for transactions in Italy 
             href: localizations/italy/emea-ita-competence-date.md
-          - name: Depreciation of fixed assets
-            href: localizations/italy/emea-ita-depreciation-of-fixed-assets.md
-          - name: Modello 770
-            href: localizations/italy/emea-ita-modello770.md
-          - name: Packing slip date verification on invoices
-            href: localizations/italy/emea-ita-packing-slip-date-verification-on-invoice.md
-          - name: Post and print a packing slip with transportation delivery details
-            href: localizations/italy/emea-ita-packing-slip.md
-          - name: Sales tax books
-            href: localizations/italy/emea-ita-fiscal-books.md
-          - name: VAT management and reporting by tax point date (Date of VAT register)
-            href: localizations/italy/emea-ita-vat-management.md
-          - name: Split payment for invoices issued to the Public Administration
-            href: localizations/italy/emea-ita-split-payment-invoices-issued-public-administration.md
-          - name: Credit invoicing (Italy)
-            href: localizations/italy/emea-ita-credit-invoicing.md
-          - name: Withholding tax
-            href: localizations/italy/emea-ita-withholding-tax.md
-          - name: Separate accounts for credit notes
-            href: localizations/italy/emea-ita-exil-separate-account-credit.md
-          - name: Sort sales invoice lines by packing slip
-            href: localizations/italy/emea-ita-exil-invoicing-packing-slips.md
-          - name: Posting invoices with zero amounts
-            href: localizations/italy/emea-ita-exil-zero-invoice-posting.md
-          - name: Bank data usability enhancement
-            href: localizations/italy/emea-ita-exil-bank-accounts-setup.md
+          - name: General ledger simulations (Italy)
+            href: localizations/italy/emea-ita-exil-general-ledger-simulations.md
           - name: Intrastat
             items:
             - name: Italian Intrastat
@@ -3284,8 +3274,24 @@
               href: localizations/italy/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
             - name: Intrastat (IT) file format
               href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
-          - name: Miscellaneous charges per kilogram in an Intrastat declaration
-            href: localizations/italy/emea-ita-exil-misc-charges-intrastat.md
+            - name: Miscellaneous charges per kilogram in an Intrastat declaration
+              href: localizations/italy/emea-ita-exil-misc-charges-intrastat.md
+          - name: Depreciation of fixed assets
+            href: localizations/italy/emea-ita-depreciation-of-fixed-assets.md
+          - name: Packing slip date verification on invoices
+            href: localizations/italy/emea-ita-packing-slip-date-verification-on-invoice.md
+          - name: Post and print a packing slip with transportation delivery details
+            href: localizations/italy/emea-ita-packing-slip.md
+          - name: Split payment for invoices issued to the Public Administration
+            href: localizations/italy/emea-ita-split-payment-invoices-issued-public-administration.md
+          - name: Separate accounts for credit notes
+            href: localizations/italy/emea-ita-exil-separate-account-credit.md
+          - name: Sort sales invoice lines by packing slip
+            href: localizations/italy/emea-ita-exil-invoicing-packing-slips.md
+          - name: Posting invoices with zero amounts
+            href: localizations/italy/emea-ita-exil-zero-invoice-posting.md
+          - name: Bank data usability enhancement
+            href: localizations/italy/emea-ita-exil-bank-accounts-setup.md
           - name: Intent letters - Invoicing usual exporters
             href: localizations/italy/emea-ita-exil-intent-letter.md
           - name: Tax invoice for goods delivered for free
@@ -3294,10 +3300,12 @@
             href: localizations/italy/emea-ita-exil-improved-inquiry-settlement.md
           - name: Commission settlement on payments
             href: localizations/italy/emea-ita-exil-commission-settlement.md
-          - name: General ledger simulations (Italy)
-            href: localizations/italy/emea-ita-exil-general-ledger-simulations.md
           - name: Configurable posting profiles for banks and remittance types
             href: localizations/italy/emea-ita-exil-bank-remittance.md
+          - name: Withholding tax
+            href: localizations/italy/emea-ita-withholding-tax.md
+          - name: Modello 770
+            href: localizations/italy/emea-ita-modello770.md
           - name: Unique certification
             href: localizations/italy/emea-ita-exil-unique-certification.md
           - name: Bills of exchange protest import
@@ -3308,12 +3316,8 @@
             href: localizations/italy/emea-ita-e-invoices.md
           - name: Vendor electronic invoices
             href: localizations/italy/emea-ita-vend-e-invoices.md
-          - name: Yearly tax communication
-            href: localizations/italy/emea-ita-yearly-tax-communication.md
           - name: Payment traceability
             href: localizations/italy/emea-ita-payment-traceability.md
-          - name: Unified posting date control
-            href: localizations/italy/emea-ita-post-date-control.md
         - name: Japan
           items:
           - name: Japan overview
@@ -4455,6 +4459,8 @@
         href: business-performance-planning/bpp-app-install.md
       - name: Install Power BI visuals
         href: business-performance-planning/powerBI-visual-install.md
+      - name: Install the Excel add-in
+        href: business-performance-planning/install-excel-add.md
       - name: Dimensions
         items:
         - name: Creating and maintaining dimensions
@@ -4487,6 +4493,10 @@
           href: business-performance-planning/comments.md
         - name: Allocation method
           href: business-performance-planning/allocation.md
+      - name: Excel add-in
+        items:
+        - name: Configure and use the Excel add-in
+          href: business-performance-planning/use-excel-addin.md
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview

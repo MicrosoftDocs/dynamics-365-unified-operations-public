@@ -332,7 +332,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
     3.  Download and open the document that is generated.
 
 2.  Sign in to the app:
-    1.  Select **Sign In**. The Azure Active Directory sign-in screen should provide a list of credentials. If you encounter an error, force a sign-out (by using the sign-out link), and then sign in again.
+    1.  Select **Sign In**. The Microsoft Entra sign-in screen should provide a list of credentials. If you encounter an error, force a sign-out (by using the sign-out link), and then sign in again.
     2.  Select the appropriate account, or click **Use another account**.
     3.  Enter the credentials for that environment, and then click **Sign in**.
 
@@ -465,4 +465,3 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

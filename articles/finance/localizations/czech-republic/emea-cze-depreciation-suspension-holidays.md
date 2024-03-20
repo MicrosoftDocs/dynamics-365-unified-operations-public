@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Czech Republic
 # ms.search.industry: 

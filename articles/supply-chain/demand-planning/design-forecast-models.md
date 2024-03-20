@@ -23,8 +23,6 @@ ms.collection:
 
 *Forecast models* let you arrange and configure tiles to define the forecast that's made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## <a name="forecasting-algorithms"></a>Demand forecasting algorithms
 
 Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and *prophet*. The demand forecasting algorithm that you use depends on the specific characteristics of your historical data.

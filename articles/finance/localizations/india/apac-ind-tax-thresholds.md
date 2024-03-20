@@ -14,7 +14,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.suite: 
 # ms.tgt_pltfrm: 
 ms.search.region: India
