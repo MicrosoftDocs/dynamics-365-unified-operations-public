@@ -4,7 +4,7 @@ description: This article explains how to configure the information required to 
 author: Fhernandez0088
 ms.date: 10/18/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---

@@ -4,7 +4,7 @@ description: This article provides information about the Value query for Latin A
 author: Fhernandez0088
 ms.date: 05/04/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---

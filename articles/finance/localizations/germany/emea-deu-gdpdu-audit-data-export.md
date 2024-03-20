@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.search.region: Austria, Germany
