@@ -27,7 +27,7 @@ You can export financial data using the formats specified by the Standard Import
   - Type 2 – Exports year-end balances and period balances. 
   - Type 3 – Exports dimension balances. 
   - Type 4I – Exports transactions. 
-  - Type 4E – Exports period balances and transactions. 
+  - Type 4E – Exports year-end balances and transactions. 
 8. Click **OK**. 
 
 
