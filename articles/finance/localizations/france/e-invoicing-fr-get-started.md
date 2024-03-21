@@ -121,13 +121,6 @@ Follow these steps to enable the project manager for a project invoice.
     > [!NOTE]
     > The **Project manager** field is available only when the funding type is **Customer**.
 
-### Define electronic invoice frameworks
-
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
-2. In the **Type** field, enter the electronic invoicing framework.
-
-If no electronic invoice framework is configured, all invoices are sent as **A1 - simple invoice**. Use the following codes for the invoice framework to attribute work invoices: A4 , A7, A8, A9, A10, A12, A13, A14, and A22. For more information, see [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
-
 ### Set up Chorus Pro electronic document parameters
 
 You can enable Siret numbers and service code validation before you post and invoice documents.
@@ -146,15 +139,7 @@ You can enable Siret numbers and service code validation before you post and inv
     > We recommend that you use Azure Key Vault storage to store the secrets. For more information, see [Set up the Azure Key Vault client](../global/setting-up-azure-key-vault-client.md).
 
 3. Enable the **SIRET and service code validation during invoice posting** parameter.
-4. If **SIRET and service code validation during invoice posting** is enabled, to have more granular control over the validations that run in the invoice posting process, make the following additional setup:
-
-    1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
-	2. Add the required setup lines to allow users to enable/disable validation per document and party type.
-	
-	> [!NOTE]
-    > Where relevant (Project invoice proposal, Free text invoice, Sales order), **only enabled validations** will be run after selecting the Invoicing framework and during posting when **SIRET and Service code validation during invoice posting** is enabled. When validation for the Service code is enabled, it will validate ONLY when the MOE/MOA SIRET structure requires it, not indiscriminately.
-
-5. In the **Report format** field, select the configurable business document to use when a submission report is printed.
+4. In the **Report format** field, select the configurable business document to use when a submission report is printed.
 
 > [!NOTE]
 > To create a new submission report instead of customizing a default report, use the **DocumentSubmitted** model name and the **SubmittedInvoice** mapping name for the integration point.
@@ -180,6 +165,21 @@ Follow these steps to complete the configuration.
     3. In the **Configuration** field, select **Chorus Pro response invoice data import format (FR)**.
 
     ![Response type setup.](../media/emea-fr-einvoice-response.jpg)
+
+### Define electronic invoice frameworks
+
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
+2. In the **Type** field, enter the electronic invoicing framework.
+
+If no electronic invoice framework is configured, all invoices are sent as **A1 - simple invoice**. Use the following codes for the invoice framework to attribute work invoices: A4 , A7, A8, A9, A10, A12, A13, A14, and A22. For more information, see [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
+
+3. If **SIRET and service code validation during invoice posting** is enabled, to have more granular control over the validations that run in the invoice posting process, make the following additional setup:
+
+    1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
+	2. Add the required setup lines to allow users to enable/disable validation per document and party type.
+	
+	> [!NOTE]
+    > Where relevant (Project invoice proposal, Free text invoice, Sales order), **only enabled validations** will be run after selecting the Invoicing framework and during posting when **SIRET and Service code validation during invoice posting** is enabled. When validation for the Service code is enabled, it will validate ONLY when the MOE/MOA SIRET structure requires it, not indiscriminately.
 
 ## Issue electronic invoices
 
