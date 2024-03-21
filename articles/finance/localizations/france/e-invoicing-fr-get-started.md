@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing for France
 description: Learn how to get started with Electronic invoicing for France in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dkalyuzh
-ms.date: 05/17/2023
+ms.date: 03/21/2024
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -171,15 +171,15 @@ Follow these steps to complete the configuration.
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
 2. In the **Type** field, enter the electronic invoicing framework.
 
-If no electronic invoice framework is configured, all invoices are sent as **A1 - simple invoice**. Use the following codes for the invoice framework to attribute work invoices: A4 , A7, A8, A9, A10, A12, A13, A14, and A22. For more information, see [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
+   If no electronic invoice framework is configured, all invoices are sent as **A1 - simple invoice**. Use the following codes for the invoice framework to attribute work invoices: A4 , A7, A8, A9, A10, A12, A13, A14, and A22. For more information, see [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
 
 3. If **SIRET and service code validation during invoice posting** is enabled, to have more granular control over the validations that run in the invoice posting process, make the following additional setup:
 
-    1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
-	2. Add the required setup lines to allow users to enable/disable validation per document and party type.
+   1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
+   2. Add the required setup lines to allow users to enable/disable validation per document and party type.
 	
-	> [!NOTE]
-    > Where relevant (Project invoice proposal, Free text invoice, Sales order), **only enabled validations** will be run after selecting the Invoicing framework and during posting when **SIRET and Service code validation during invoice posting** is enabled. When validation for the Service code is enabled, it will validate ONLY when the MOE/MOA SIRET structure requires it, not indiscriminately.
+      > [!NOTE]
+      > Where relevant (Project invoice proposal, Free text invoice, Sales order), **only enabled validations** will be run after selecting the Invoicing framework and during posting when **SIRET and Service code validation during invoice posting** is enabled. When validation for the Service code is enabled, it will validate ONLY when the MOE/MOA SIRET structure requires it, not indiscriminately.
 
 ## Issue electronic invoices
 
