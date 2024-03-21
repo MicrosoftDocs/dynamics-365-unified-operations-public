@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
@@ -48,18 +48,18 @@ The feature that is described in this article automatically adjusts the posting 
 Follow these steps to automatically adjust the posting date for vendor invoices.
 
 1.	Go to **Account payable \> Setup \> Account payable parameters**.
-2.	On the **Ledger and sales tax** tab, in the **Adjust posting date automatically** field, select one of the following values:
+2.	On the **Ledger and sales tax** tab, in the **Adjust invoice posting date automatically** field, select one of the following values:
 
     - **No change** – The posting date isn't automatically changed during posting. This value is selected by default.
     - **Always change posting date to system date** – The posting date is automatically changed to the system date during posting.
     - **Change posting date to system date when posting date period is closed or on hold** – The posting date is automatically changed to the system date during posting, but only if the corresponding period of the posting date has a **Closed** or **On hold** status.
     - **Change posting date to first day of new period when posting date period is closed or on hold** – The posting date is changed to the first day of the new open period, but only if the corresponding period of the posting date has a **Closed** or **On hold** status.
-3.  The **Adjust invoice posting date to next year’s open period** is only enabled when **Adjust posting date automatically** option is **NOT** set **No change**. This controls if invoice posting automatically adjusts the posting date in a new fiscal year. The following values are available for selection:
+3.  The **Adjust invoice posting date to next year’s open period** is only enabled when **Adjust invoice posting date automatically** option is **NOT** set **No change**. This controls if invoice posting automatically adjusts the posting date in a new fiscal year. The following values are available for selection:
     - **Block with error** - if you want to stop invoice posting with an error that the posting date can’t be updated. This value is selected by default.
     - **Allowed with warning** - if you want to allow invoice posting with a warning and update the posting date of the invoice to the next period’s open period.
   
 > [!NOTE]
-> The **Adjust the posting date automatically** will update Vendor invoice, Invoice register journal, Invoice journal. 
+> The **Adjust the invoice posting date automatically** will only do the posting date adjustment in Vendor invoice, Invoice register journal, Invoice journal. 
  
 ## Impact of posting date changes
 
