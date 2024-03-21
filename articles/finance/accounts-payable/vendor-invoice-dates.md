@@ -59,7 +59,7 @@ Follow these steps to automatically adjust the posting date for vendor invoices.
     - **Allowed with warning** - if you want to allow invoice posting with a warning and update the posting date of the invoice to the next period’s open period.
   
 > [!NOTE]
-> The **Adjust the invoice posting date automatically** will only do the posting date adjustment in Vendor invoice, Invoice register journal, Invoice journal. 
+> The **Adjust the invoice posting date automatically** will only affect the posting date adjustments in Vendor invoice, Invoice register journal, Invoice journal. 
  
 ## Impact of posting date changes
 
