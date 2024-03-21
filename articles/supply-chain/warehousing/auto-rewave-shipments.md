@@ -42,7 +42,7 @@ The rewaving workflow ensures continuous, uninterrupted warehouse operations, ev
 1. **Replenish inventory.** Inventory at the picking location is replenished according to standard warehouse operations. That inventory then becomes available for shipment in the next wave.
 1. **Automatically rewave.** At the next scheduled run of the *Auto add shipments to wave* batch job, the system checks for previously failed shipments and creates work for them.
 1. **Add work to the next wave.** The *Auto add shipments to wave* batch job adds the newly created work to the next wave for processing.
-1. **Control and remove placeholders for completed shipments.** The *Auto add shipments to wave* batch job ends by checking the *Wave Processing Removed Shipment* table for records that were successfully processed (that is, their status is no longer *Open*) and that the *Shipment* table includes a shipment for. These records indicate shipments that were successfully rewaved. The system cleans up these placeholders by removing them from the table.
+1. **Control and remove placeholders for completed shipments.** The *Auto add shipments to wave* batch job ends by checking the 'WHSWaveProcessingRemovedShipment' table for records that were successfully processed (that is, their status is no longer *Open*) and that the *Shipment* table includes a shipment for. These records indicate shipments that were successfully rewaved. The system cleans up these placeholders by removing them from the table.
 
 ## Enable wave processing in batches to allow for rewaving
 
