@@ -58,11 +58,12 @@ For example, a formula item could be set up as follows:
     - Plan group: Organic oils
     - Priority: 1
     - Available on-hand: 4, with expiry date of today + 5 days
+    - Lead time: 1 day
 - **Material B (Substitute for material A):**
     - Quantity: 0
     - Plan group: Organic oils
     - Priority 2
-    - Available on-hand: 6
-    - Expected receipt date: Today + 6 days, with 10 negative days
+    - Available on-hand: 0
+    - Expected receipt date (of existing purchase order): Today + 6 days, with 10 negative days
 
-Master planning first picks material A with its available quantity 4. Because the required quantity is 10, and there is not enough of material A, master planning will try to use the substitute (material B) for the remaining quantity of 6. However, because the available receipt date of the substitute is later than the expiry date of the on-hand inventory of material A, the substitute won't be used. Instead, master planning creates a planned order for quantity 6 of material A to fulfill the rest of the material needed. <!--KFM: Don't we need to know the expected receipt date of material A in order to know whether we need to order 6 or 10 of them? Does Item B have no expiry date? How are the negative days relevant? -->
+Master planning first picks material A with its available quantity 4. Because the required quantity is 10, and there is not enough of material A, master planning will try to use the existing purchase order for the substitute (material B) for the remaining quantity of 6. However, because the available receipt date of the substitute is later than the expiry date of the on-hand inventory of material A, the substitute won't be used. Instead, master planning creates a planned order for quantity 6 of material A to fulfill the rest of the material needed.
