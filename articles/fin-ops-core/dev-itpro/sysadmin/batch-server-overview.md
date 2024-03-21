@@ -56,8 +56,8 @@ Because batch servers are also active AOS instances that service requests from t
 ## Understanding Batch server restarts
 During routine maintenance activities, such as patching, there might be temporary interruptions to batch services. To understand the impact of maintenance activities and access-known maintenance schedules, see the following articles:
 
-- [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-operating-system-maintenance) - Learn more about planned operating system maintenance schedules.
-- [Experience during the nZDT Maintenance Window](../deployment/planned-maintenance-selfservice.md#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
+- [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md) - Learn more about planned operating system maintenance schedules.
+- [Experience during the nZDT Maintenance Window](../deployment/plannedmaintenance-selfservice.md#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
 
 It's recommended to utilize the 'Abort' option with the [Enhanced Batch Abort feature](../sysadmin/batch-abort.md). This option triggers a restart of the Batch server specific to the server where the Batch job was executing.
 
