@@ -609,6 +609,22 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
+    - name: Time and attendance
+      items:
+      - name: Time and attendance information
+        href: hr-about-time-and-attendance-information.md
+      - name: Set up time and attendance information
+        href: hr-set-up-time-and-attendance-information.md
+      - name: Register time for workers
+        href: hr-register-time.md
+      - name: Communicate with and deploy assignments to workers
+        href: hr-communicate-and-deploy-assignments.md
+      - name: Calculate, approve, and transfer registrations
+        href: hr-about-calculate-approve-transfer-registrations.md
+      - name: Work planner and time profiles
+        href: hr-about-work-planner-time-profiles.md
+      - name: Update time and attendance information
+        href: hr-update-time-and-attendance-information.md
     - name: Task management
       items:
       - name: Overview
