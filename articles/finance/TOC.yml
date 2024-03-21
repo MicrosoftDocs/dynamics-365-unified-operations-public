@@ -272,6 +272,10 @@
           href: accounts-payable/vendor-invoices-workspace.md
         - name: Recurring vendor invoices
           href: accounts-payable/recurring-invoice.md
+      - name: Vendor invoice workspace
+        items:
+        - name: Vendor invoice center
+          href: accounts-payable/vendor-invoice-workspace.md
       - name: Accounts payable reports   
         items:
         - name: Vendor aging report
