@@ -33,12 +33,12 @@ When the *Ignore specific transaction types using Planning Optimization* feature
 
 1. Go to **Master planning** \> **Setup** \> **Plans**.
 1. Select an existing master plan or create a new one.
-1. Set **Exclude specific transactions** to *Yes*. The settings in the next step have no effect if **Exclude specific transactions** is set to *No*. <!--KFM: We have several other "include" settings here that aren't part of this feature. Are they also affected by this setting? Maybe we should also mention them here, since this is a topic about excluding things from plans? -->
+1. Set **Exclude specific transactions** to *Yes*. The settings in the next step have no effect if **Exclude specific transactions** is set to *No*.
 1. Make the following settings on your new or selected master plan:
-    - **Include sales orders** – <!--KFM: description needed. -->
-    - **Include transfer orders** – Set to *No* to ignore all existing transfer orders, which means that master planning will replan transfer orders for requirements that need to be transferred <!--KFM: More detail needed here. --> (which may be useful for simulation scenarios). Set to *Yes* to include transfer orders as supply.
-    - **Include purchase returns** – When a purchase order is returned in a date in the future <!--KFM: I don't understand this. Are we talking about returned SALES orders? What do we mean about "date in the future"? -->, it can be picked up for another customer order. Useful for high value goods like jewelry or watches where the return of an order must be taken into account to not over purchase, where a single item in stock is high value.
-    - **Include retail sales orders** – Set to *No* to ignore orders originating from the Retail module. Set to *Yes* to include orders originating from the Retail module as supply. <!--KFM: I don't think we have a Retail module anymore. Are you referring to Dynamics 365 Commerce -->
+    - **Include sales orders** – Set to *No* to ignore all existing sales orders. Set to *Yes* to plan supply for sales orders.
+    - **Include transfer orders** – Set to *No* to ignore all existing transfer orders, which means that master planning will replan transfer orders for requirements that need to be transferred (which may be useful for simulation scenarios). Set to *Yes* to include transfer orders as supply.
+    - **Include purchase returns** – When a purchase order is scheduled to be returned at a future date, it can be picked up for another customer order. Useful for high value goods like jewelry or watches where the return of an order must be taken into account to not over purchase, where a single item in stock is high value.
+    - **Include retail sales orders** – Set to *No* to ignore orders originating from the Commerce module. Set to *Yes* to include orders originating from the Retail module as supply.
 
 ## Exclude specific sales orders or sales order lines from master planning
 
@@ -46,7 +46,7 @@ When the *Exclude specific sales orders or sales order lines in Planning Optimiz
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Select an existing sales order or create a new one.
-1. If you'd like to exclude the entire order from master planning, follow these steps: <!--KFM: Does this override each line setting, or just establish the default for new lines? -->
+1. If you'd like to exclude the entire order from master planning, follow these steps. The settings here establish defaults for new lines, but don't override existing lines.
     1. Open the **Header** tab.
     1. On the **Master planning** FastTab, set **Exclude from master planning** to *Yes*.
 1. If you'd like to exclude one or more order lines from master planning, follow these steps:
