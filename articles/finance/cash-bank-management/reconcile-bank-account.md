@@ -4,10 +4,9 @@
 title: Reconcile a bank account
 description: This article describes how to reconcile a bank account.
 author: angelad116
-ms.date: 11/16/2022
+ms.date: 03/16/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ 
 
 # optional metadata
 
@@ -66,11 +65,17 @@ To select the **Cleared** checkbox for an interval of checks that all are displa
 
 ## Cancel bank statement reconciliation 
 
-The **Cancel bank statement reconciliation** functionality enables you to cancel bank statement reconciliation. To use this feature, enable the **Cancel bank statement reconciliation** feature in the **Feature management** workspace. You also need to enable the **Allow bank statement edit** parameter. To do this, go to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation**.
+The **Cancel bank statement reconciliation** functionality enables you to cancel bank statement reconciliation. You need to enable the **Allow bank statement edit** parameter. To do this, go to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation**.
  
 Bank statement reconciliations can only be canceled in the chronological order in which they were entered. When a bank statement reconciliation is canceled, new transactions and corrections will be reversed and all other transactions will be marked as un-reconciled.
  
-To cancel bank statement reconciliation, select the bank statement and select **Bank statement > Cancel bank reconciliation**. On the **Cancel bank reconciliation** page, provide the **Reason code**, **Reason comment**, and **Cancellation date**. Select **OK** to begin cancellation. Note, the bank statement cancellation date must be on or after the bank statement date. After the bank statement reconciliation has been canceled, the **Cancellation date** field for the bank statement will be updated with the **Cancellation date** provided. Select the **Transactions** button to view the transactions for which the reconciliation was canceled.
+To cancel bank statement reconciliation, follow these steps:
+1. Select the bank statement and select **Bank statement > Cancel bank reconciliation**.
+2. On the **Cancel bank reconciliation** page, provide the **Reason code**, **Reason comment**, and **Cancellation date**.
+3. Select **OK**.
+
+>[!Note]
+> The bank statement cancellation date must be on or after the bank statement date. After the bank statement reconciliation has been canceled, the **Cancellation date** field for the bank statement is updated with the **Cancellation date** provided. Select the **Transactions** button to view the transactions for which the reconciliation was canceled.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
