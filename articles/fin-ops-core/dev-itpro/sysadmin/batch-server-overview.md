@@ -57,11 +57,11 @@ Because batch servers are also active AOS instances that service requests from t
 During routine maintenance activities, such as patching, there might be temporary interruptions to batch services. To understand the impact of maintenance activities and access-known maintenance schedules, see the following articles:
 
 - [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-operating-system-maintenance) - Learn more about planned operating system maintenance schedules.
-- [Experience during the nZDT Maintenance Window](../deployment/planne.mddmaintenance-selfservice#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
+- [Experience during the nZDT Maintenance Window](../deployment/planned-maintenance-selfservice.md#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
 
 It's recommended to utilize the 'Abort' option with the [Enhanced Batch Abort feature](../sysadmin/batch-abort.md). This option triggers a restart of the Batch server specific to the server where the Batch job was executing.
 
-Batch servers might also restart because of server crashes that are potentially influenced by any batch job in execution at that time. Detailed crash information is available on Lifecycle Services. For more information about monitoring crash information, see [monitoring diagnostics](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs) for further details.
+Batch servers might also restart because of server crashes that are potentially influenced by any batch job in execution at that time. Detailed crash information is available on Lifecycle Services. For more information about monitoring crash information, see [monitoring diagnostics](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs).
 
 Restarts can happen if infrastructure problems lead to an internal failover. Autoscaling and capacity management are employed to ensure optimal environment performance and availability.
 
@@ -129,7 +129,7 @@ The purpose of this approach is to maintain a balance between the workload deman
 
 In essence, this delay mechanism serves as a proactive measure to optimize resource utilization and ensure that your environment continues to perform at its best, even under challenging conditions.
 
-For more information to help you successfully diagnose performance issues using Lifecycle Services, see [Troubleshooting SQL performance](../lifecycle-services/performancetroubleshooting#details.md).
+For more information to help you successfully diagnose performance issues using Lifecycle Services, see [Troubleshooting SQL performance](../lifecycle-services/performancetroubleshooting.md#details).
 
 > [!NOTE]
 > The batch framework is able to detect instances when there are no non-throttled tasks to be scheduled and executed at any given time. When this occurs, the batch tries to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
