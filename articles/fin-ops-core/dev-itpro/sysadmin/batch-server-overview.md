@@ -3,11 +3,9 @@
 
 title: Batch processing and batch servers
 description: This article describes batch processing and batch servers, and how to plan for their use.
-author: Peakerbl
-ms.date: 01/22/2020
+author: raanandm
+ms.date: 03/21/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -15,13 +13,13 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: raanandm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,7 +37,7 @@ You should become familiar with the following aspects of the batch framework:
 
 -   A **batch job** is a process that is used to achieve a specific goal. A batch job consists of one or more batch tasks.
 -   A **batch task** is an activity that is run by a batch job. You can add batch tasks that have multiple types of dependencies to a batch job. You can also configure AOS instances to run multiple threads, each of which runs a task. All batch tasks that are waiting to be run can be run by any available AOS instance that is configured as a batch server. To improve throughput and reduce overall execution time, you can define a batch job as many tasks and then use a batch server to run the tasks against all available AOS instances.
--   A **batch group** is an attribute of a batch task. A batch group lets the administrator determine or specify which AOS instance runs the task. When you create a new task, it's put in the default batch group. All batch servers are configured to process the default batch group and the waiting tasks from any job. Additionally, you can create a named batch group, and then set an affinity between that batch group and specific AOS instances. After you create this affinity, only the specified AOS instances will process tasks from the named batch group, and those AOS instances will process tasks from the named batch group only. You can also add the default batch group to the configured servers, if that batch group is required.
+-   A **batch group** is an attribute of a batch task. A batch group lets the administrator determine or specify which AOS instance runs the task. When you create a new task, it's put in the default batch group. All batch servers are configured to process the default batch group and the waiting tasks from any job. Additionally, you can create a named batch group, and then set an affinity between that batch group and specific AOS instances. After you create this affinity, only the specified AOS instances process tasks from the named batch group, and those AOS instances process tasks from the named batch group only. You can also add the default batch group to the configured servers, if that batch group is required.
 
 ## Batch server topology planning
 The capacity of a batch server is based on the maximum number of threads that can run concurrently on the AOS instance. Each thread runs one batch task. You can add complex dependencies between or among tasks. You can run these tasks in serial steps or parallel steps, depending on the business logic and requirements. All tasks that don't have any dependencies are considered parallel tasks. AOS instances that are configured as batch servers periodically check for tasks that are waiting to be processed. The batch server assigns each parallel task to a thread and starts to process the thread. 
@@ -51,26 +49,26 @@ A batch server checks for available threads one time per minute. Therefore, you 
 ## Batch server management planning
 All batch servers can be managed from a single location. 
 
-One typical use of batch servers is to load balance jobs across multiple servers. You can set the number of threads that the batch server will process. 
+One typical use of batch servers is to load balance jobs across multiple servers. You can set the number of threads that the batch server process. 
 
 Because batch servers are also active AOS instances that service requests from the client and other associated components, you must carefully determine when an AOS instance should be available to process batches. 
 
 ## Understanding Batch server restarts
 During routine maintenance activities such as patching, there might be temporary interruptions to batch services. To understand the impact of maintenance activities and access-known maintenance schedules, kindly refer to the following articles:
 
-- [Operating System Maintenance Schedule](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-operating-system-maintenance) - Learn more about planned operating system maintenance schedules.
-- [Experience during the nZDT Maintenance Window](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
+- [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-operating-system-maintenance) - Learn more about planned operating system maintenance schedules.
+- [Experience during the nZDT Maintenance Window](../deployment/planne.mddmaintenance-selfservice#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
 
-Additionally, it's recommended to utilize the 'Abort' option with the [Enhanced Batch Abort feature](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-abort). This triggers a restart of the Batch server specific to the server where the Batch job was executing.
+Additionally, it's recommended to utilize the 'Abort' option with the [Enhanced Batch Abort feature](../sysadmin/batch-abort.md). This triggers a restart of the Batch server specific to the server where the Batch job was executing.
 
-Batch servers might also restart because of server crashes, which could potentially be influenced by any batch job in execution at that time. Detailed crash information is available on LCS; kindly refer to [monitoring diagnostics](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics#raw-information-logs) for further details.
+Batch servers might also restart because of server crashes, which could potentially be influenced by any batch job in execution at that time. Detailed crash information is available on Lifecycle Services; kindly refer to [monitoring diagnostics](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs) for further details.
 
-Restarts could also be observed in the event of infrastructure problems leading to internal failover. Measures such as auto-scaling and capacity management are employed to ensure optimal environment performance and availability.
+Restarts could also be observed if infrastructure problems leading to internal failover. Measures such as autoscaling and capacity management are employed to ensure optimal environment performance and availability.
 
-Ensure to retry batch jobs affected by interruptions, and consider implementing retry mechanisms within your batch job logic for enhanced reliability. Detailed documentation on how to implement retry logic can be found [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch).
+Ensure to retry batch jobs affected by interruptions, and consider implementing retry mechanisms within your batch job logic for enhanced reliability. Detailed documentation on how to implement retry logic can be found [Enable batch retries](../sysadmin/retryable-batch.md).
 
 > [!NOTE]
-> - Ensure that you are on the [supported version](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases) to maintain system stability and compatibility.
+> - Ensure that you are on the [supported version](../get-started/public-preview-releases.md) to maintain system stability and compatibility.
 > - Review any customizations and file uploads to mitigate potential impacts on batch job execution and system performance.
 
 ## Walkthroughs
@@ -78,7 +76,7 @@ The following walkthroughs describe how tasks are processed, and how batch group
 
 ### Batch processing of dependent tasks
 
-For this example, you've created a job that is called JOB 1. As the following diagram shows, the job has seven tasks: TASK 1, TASK 2, TASK 3, TASK 4, TASK 5, TASK 6, and TASK 7. 
+For this example, you create a job that is called JOB 1. As the following diagram shows, the job has seven tasks: TASK 1, TASK 2, TASK 3, TASK 4, TASK 5, TASK 6, and TASK 7. 
 
 ![A job that has dependent tasks.](./media/batch_framework_programmability.gif) 
 
@@ -92,13 +90,13 @@ The tasks have the following dependencies:
 -   TASK 6 runs when TASK 3 fails.
 -   TASK 7 runs when both TASK 3 and TASK 4 are successful.
 
-Two batch servers, Batch1 and Batch2, are configured. Each server has a capacity of one thread. 
+Two batch servers, Batch 1 and Batch 2, are configured. Each server has a capacity of one thread. 
 
-Imagine that Batch1 checks for waiting tasks, assigns TASK 1 to its thread, and starts to run TASK 1. Although Batch2 and its single thread are also available, TASK 2 continues to wait until TASK 1 is completed. 
+Imagine that Batch 1 checks for waiting tasks, assigns TASK 1 to its thread, and starts to run TASK 1. Although Batch 2 and its single thread are also available, TASK 2 continues to wait until TASK 1 is completed. 
 
-As soon as TASK 1 is completed, TASK 2 is ready to be run. This time, imagine that Batch2 checks for waiting tasks, assigns TASK 2 to its thread, and starts to run TASK 2. 
+As soon as TASK 1 is completed, TASK 2 is ready to be run. This time, imagine that Batch 2 checks for waiting tasks, assigns TASK 2 to its thread, and starts to run TASK 2. 
 
-If TASK 2 is successful, TASK 3 and TASK 4 are ready to be run. This time, imagine that Batch2 checks for waiting tasks, assigns TASK 3 to its thread, and starts to run TASK 3. Batch1 also checks for waiting tasks, assigns TASK 4 to its thread, and starts to run TASK 4. 
+If TASK 2 is successful, TASK 3 and TASK 4 are ready to be run. This time, imagine that Batch 2 checks for waiting tasks, assigns TASK 3 to its thread, and starts to run TASK 3. Batch 1 also checks for waiting tasks, assigns TASK 4 to its thread, and starts to run TASK 4. 
 
 If TASK 3 and TASK 4 are successful, one of the batch servers runs TASK 7. 
 
@@ -106,7 +104,7 @@ If TASK 2 fails, one of the batch servers runs TASK 5.
 
 If TASK 3 fails, one of the available batch servers runs TASK 6. 
 
-**Note:** For this walkthrough, we're using Batch1 and Batch2 to explain the concept. Any batch server that has available threads will start to run a waiting task. You must create a batch group to determine or specify which batch job runs on which server.
+**Note:** For this walkthrough, we're using Batch 1 and Batch 2 to explain the concept. Any batch server that has available threads starts to run a waiting task. You must create a batch group to determine or specify which batch job runs on which server.
 
 ### Batch processing that uses batch groups
 
@@ -114,13 +112,13 @@ This example shows how batch jobs can be processed on specific batch servers.
 
 You have three batch servers: AOS1, AOS2, and AOS3. By default, all the batch servers process tasks from all batch jobs, depending on the number of available threads. 
 
-You create a named batch group, BG1, and configure it to run on AOS2 and AOS3. Therefore, tasks from jobs in BG1 will run only on AOS2 or AOS3, depending on the number available threads. AOS1 won't process tasks from jobs in BG1. Likewise, AOS2 and AOS3 will process tasks from BG1 only. 
+You create a named batch group, BG1, and configure it to run on AOS2 and AOS3. Therefore, tasks from jobs in BG1 run only on AOS2 or AOS3, depending on the number available threads. AOS1 won't process tasks from jobs in BG1. Likewise, AOS2 and AOS3 process tasks from BG1 only. 
 
 You can configure AOS2 and AOS3 to process tasks from other batch groups. These batch groups include the default batch group.
 
 ### Batch excessive tasks configuration (Batch throttling)
 
-Batch throttling can prevent excessive tasks by limiting the average number of executions of a certain batch class per minute. The default upper-bound is 60 tasks per minute. After that, batch framework will suspend the execution of classes for the offending class for another minute, to prevent that specific class from monopolizing the system resources.
+Batch throttling can prevent excessive tasks by limiting the average number of executions of a certain batch class per minute. The default upper-bound is 60 tasks per minute. After that, batch framework suspends the execution of classes for the offending class for another minute, to prevent that specific class from monopolizing the system resources.
 
 When the available resources within your system, particularly SQL resources, CPU, and memory allocated to Batch Server, are nearing their capacity limits, we implement a delay in the execution of new batch tasks. This delay allows the system to manage its resources more efficiently by ensuring that the existing workload doesn't overwhelm the system.
 
@@ -130,10 +128,10 @@ The purpose of this approach is to maintain a balance between the workload deman
 
 In essence, this delay mechanism serves as a proactive measure to optimize resource utilization and ensure that your environment continues to perform at its best, even under challenging conditions.
 
-To successfully diagnose performance issues using LCS, visit [Troubleshooting SQL performance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting#details) for more details.
+To successfully diagnose performance issues using Lifecycle Services, visit [Troubleshooting SQL performance](../lifecycle-services/performancetroubleshooting#details.md) for more details.
 
 > [!NOTE]
-> The batch framework is able to detect instances when there are no non-throttled tasks to be scheduled and executed at any given time. When this occurs, the batch will try to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
+> The batch framework is able to detect instances when there are no non-throttled tasks to be scheduled and executed at any given time. When this occurs, the batch tries to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
