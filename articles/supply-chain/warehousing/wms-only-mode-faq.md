@@ -107,3 +107,7 @@ When processing shipment orders, you may receive the following error, even thoug
 > Not able to resolve released item/variant for external item ID [ItemId].
 
 This error occurs because released products and variants must be linked to a source system through the [Source system items](wms-only-mode-exchange-data.md#master-data) data entity. This is crucial for recording how item and variant numbers must be handled for each external [source system](wms-only-mode-setup.md#source-systems).
+
+## Why do I not get any *External inventory updates* recorded when running *External shared warehouse* processing?
+One typical case is to create a counting journal for an item, which will adjust the inventory on-hand for the chosen warehouse. Before you proceed, make sure that the *Warehouse inventory update log* page shows the information you need for this adjustment. If it doesn't, you need to verify that the *Source system* and *Source system item* information are in place.
+But even if the *Warehouse inventory update log* has the correct information, it will only send the data to the *External inventory updates* page for the warehouse inventory dimensions that are connected through the *External warehouse management system* and the relevant *Warehouses*.  You can access more information about how to configure this process [here](wms-only-mode-external-shared-warehouse.md).

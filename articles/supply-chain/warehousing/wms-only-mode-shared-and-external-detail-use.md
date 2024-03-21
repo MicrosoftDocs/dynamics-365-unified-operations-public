@@ -165,4 +165,3 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 
 > [!WARNING]
 > In a production environment, manually entered messages and field updates can cause data inconsistencies between the external source system and Supply Chain Management. For example, you might change an item number to a value that isn't known to the external system. This type of update will probably cause issues in progress information flows. The issues might even be impossible to correct in the external system. We recommend that you use user roles and security privileges to restrict access to this functionality to as few people as possible.
-
