@@ -23,8 +23,6 @@ Dynamic positive days help increase your sales order fulfillment rate by using o
 
 This strategy allows sales orders that are created later, but requested earlier, than another sales order to use existing purchase orders. It lets you fulfill all demand while better managing your supply and delivery dates (including when using capable to promise).
 
-<!--KFM: Definitions of "positive days" and "dynamic positive days" are needed. Make it clear how they are different. Link to [Master plans overview](master-plans.md)-->
-
 The system doesn't only use the lead time when deciding which supply to peg. Outside of the lead time, it also takes into account the positive days. The number of positive days that apply for a given item are set on its item coverage group, and this value can be overwritten at the master plan level. This strategy allows certain master plans to have a higher number of positive days than others, allowing different plans to be used for capable-to-promise than for day-to-day business.
 
 ## Prerequisites
@@ -32,7 +30,7 @@ The system doesn't only use the lead time when deciding which supply to peg. Out
 To use dynamic positive days, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
-- The feature that is named *Dynamic positive days for Planning Optimisation* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Dynamic positive days for Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up your system to use dynamic positive days
 
