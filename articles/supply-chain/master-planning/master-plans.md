@@ -133,9 +133,9 @@ The positive days also affect the action messages. For example, the system might
 
 As a rule, the positive days are set to a number that is between the longest lead time of the items and the coverage time fence. We recommend that you assign items that are regularly procured or produced to a coverage group where the positive days equal the item's lead time.
 
-<!-- KFM: Section needed with link to  [Dynamic positive days for last-minute orders](dynamic-positive-days.md)
 ### Dynamic positive days
--->
+
+Dynamic positive days work like positive days but also consider the lead time. For more information, see [Dynamic positive days for last-minute orders](dynamic-positive-days.md).
 
 ### Negative days
 

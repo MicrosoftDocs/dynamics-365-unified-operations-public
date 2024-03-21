@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 03/08/2024
+ms.date: 03/21/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -51,11 +51,15 @@ Follow these steps to assign the number of positive days to an item coverage gro
 1. Select an existing coverage group or create a new one.
 1. On the **General** FastTab, set **Positive days** to the number of days that you want to use for this coverage group.
 
+<!--KFM: I expected to find a setting here, but I didn't. How do we override positive days at the master plan level?
+
 ## Assign the number of dynamic positive days to a master plan
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
 1. Select an existing plan or create a new one.
-1. <!--KFM: I expected to find a setting here, but I didn't. How do we override positive days at the master plan level? -->
+1.  
+
+-->
 
 ## Example scenarios
 
@@ -77,8 +81,6 @@ The following scenario shows how the system handles demand requested for inside 
 1. The system therefore pegs the new sales order to the existing purchase order because the requested ship date is within the lead time.
 
 :::image type="content" source="media/dynamic-pos-days-scenario-1.png" alt-text="Timeline for example scenario 1":::
-
-<!--KFM: We should convert all images to SVG. Is the original (PPT?) available for all of these? -->
 
 ## Example scenario 2: Demand outside of the lead time
 
