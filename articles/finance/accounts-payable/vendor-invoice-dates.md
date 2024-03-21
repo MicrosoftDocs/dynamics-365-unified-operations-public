@@ -6,8 +6,7 @@ description: This article describes the dates that appear on vendor invoices. It
 author: sunfzam
 ms.date: 3/14/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
