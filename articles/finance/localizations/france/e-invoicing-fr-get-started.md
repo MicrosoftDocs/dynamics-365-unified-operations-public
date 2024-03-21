@@ -5,10 +5,9 @@ title: Get started with Electronic invoicing for France
 description: Learn how to get started with Electronic invoicing for France in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dkalyuzh
 ms.date: 03/21/2024
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 
 # optional metadata
 
