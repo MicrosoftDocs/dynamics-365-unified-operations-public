@@ -73,13 +73,13 @@ During the *Return item receiving* process, workers must use the mobile app to i
 
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 
-You can set up your *Return item receiving* mobile device menu items to print a return label as workers receive a return order. If you enable this feature, the system always prints the label right after all steps in the related work template have been completed. Return labels can be printed as a part of the workflow for both blind-return and return-details receiving.
+Return labels make it easier for staff to manage and track returns. You can set up your *Return item receiving* mobile device menu items to print a return label as workers receive a return order. If you enable this feature, the system always prints the label right after all steps in the related work template have been completed. Return labels can be printed as a part of the workflow for both blind-return and return-details receiving.
 
 Return labels resemble license plate labels and include a barcode that contains necessary information such as the relevant order lines from the related purchase order, information about the sender (such as their customer number), returned item numbers, and item quantities. The label also contains information such as the location the items were received to and the location where they should be put.
 
 This feature is useful if you always want to print a return label at the end of your returns receiving workflow. It will disregard any other printing options in the work template and print the label as the last step of the template.
 
-Return labels make it easier for staff to manage and track returns. To add this capability, you must turn on the feature for the relevant mobile device menu items (as described later in this topic) and set up a label printer for the warehouse. For more information about how to set up a printer, see the following articles:
+To add this capability, you must turn on the feature for the relevant mobile device menu items (as described later in this topic) and set up a label printer for the warehouse. For more information about how to set up a printer, see the following articles:
 
 - [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md)
 - [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
