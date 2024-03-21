@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Batch Parameter Versioning
 description: This article provides information about the Batch parameter versioning and explains how you can use versioning to avoid issues related to pack/unpack.
 author: raanandm
@@ -12,9 +10,12 @@ ms.search.region: Global
 ms.author: raanandm
 ms.search.validFrom: 2024-03-20
 ---
+
 # How to use Batch Parameter Versioning
 
-When updating the parameters list of a batch job, it's advisable to implement versioning. This practice helps prevent errors like 'an error occurred while unpacking parameters for batch job XXXXX' during execution. Integrating versioning into the parameter list updates is beneficial as it mitigates this issue and aligns with recommended best practices.
+[!include [banner](../includes/banner.md)]
+
+When updating the parameters list of a batch job, it's advisable to implement versioning. This practice helps prevent errors like **an error occurred while unpacking parameters for batch job XXXXX** during execution. Integrating versioning into the parameter list updates is beneficial as it mitigates this issue and aligns with recommended best practices.
 
 Here's an example for how it could be achieved:
 
@@ -72,7 +73,7 @@ boolean unpack(container packedClass)
 }
 ```
 
-Example for SysOperationServiceController, where you wish to have pack/unpack logic based on some pre-condition. Here, in the example it's based on isSessionInRealAsyncContext.
+Example for SysOperationServiceController, where you wish to have pack/unpack logic based on some precondition. The following example is based on isSessionInRealAsyncContext.
 
 ```X++
 #define.CurrentVersion(2)
@@ -148,6 +149,7 @@ public boolean unpack(container packedState)
     return super(packedSuper);
 }
 ```
+
 Recommendations for future changes to batch job parameters:
 
 - **Maintain Versioned Parameter Lists**: Ensure that both the old and new versions of the parameters list are retained. Further, versioning allows for backward compatibility and helps the smooth transition between parameter versions.
@@ -157,3 +159,5 @@ Recommendations for future changes to batch job parameters:
 - **Functional Logic Consideration**: The functional logic of the batch job should be designed to accommodate scenarios where an old version of the parameters list is provided. In such cases, the batch job should revert to the previous behavior, adhering to the specifications defined before the parameter change.
 
 Implementing these guidelines empowers the batch job system to effectively manage changes to parameters. It ensures compatibility and consistency in functionality across different versions of the parameters list.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
