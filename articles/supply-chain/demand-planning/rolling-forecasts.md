@@ -27,6 +27,9 @@ The following illustration shows an example of a rolling forecast that recurs on
 
 :::image type="content" source="media/rolling-forecast-monthly.svg" alt-text="Example of a monthly rolling forecast" lightbox="media/rolling-forecast-monthly.svg":::
 
+> [!NOTE]
+> On a continuous basis, when a forecast is fully recalculated, its baseline forecast is also automatically recalculated and edits made during the previous period aren't kept.
+
 <!-- KFM: Add this when event-triggered processes are supported:
 
 The following illustration shows an example of when rolling forecast processes could run and what their outputs could be.
@@ -42,9 +45,6 @@ The following illustration shows an example of when rolling forecast processes c
 Once you have set up a rolling forecast, you can view different versions of the same time series to compare the historical demand, the current forecast, and the previous forecast. You can also modify, review, and edit the forecast as needed. Rolling forecasts automatically update and extend the forecast horizon each time they run.
 
 Rolling forecasts can help you to monitor the performance of your demand planning process, identify and address issues by collaborating on the same forecast, and adjust your plans accordingly. Rolling forecasts can also help you to communicate and collaborate with other stakeholders (such as sales, marketing, and finance) and align your demand planning with the strategic goals of your organization.
-
-> [!NOTE]
-> On a continuous basis, if a forecast is fully recalculated, its baseline forecast is automatically recalculated and edits made during the previous period aren't kept. <!--KFM: This isn't clear. Please revise. -->
 
 ## Set up rolling forecasts
 
