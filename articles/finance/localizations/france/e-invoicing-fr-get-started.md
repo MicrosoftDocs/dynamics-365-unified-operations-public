@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
