@@ -73,10 +73,10 @@ To set up an archival job, follow these steps.
 ![DV_Long_term_retention_Tax transactions_4](./media/DV_Long_term_retention_Tax transactions_4.png)
   
   Two types are supported:
-
-    - **Single run** – long term retention and saving to history run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
-    - **Daily during allotted time** – The long term retention runs continuously until it's completed. The **Save to history** process runs only during the specified start and stop archiving time.
-
+  
+  - **Single run** – long term retention and saving to history run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
+  - **Daily during allotted time** – The long term retention runs continuously until it's completed. The **Save to history** process runs only during the specified start and stop archiving time.
+    
 9. Select **Finish** to schedule the archive job for the selected fiscal years and the companies.
 
 ![DV_Long_term_retention_Tax transactions_5](./media/DV_Long_term_retention_Tax transactions_5.png)
