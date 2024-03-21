@@ -145,8 +145,16 @@ You can enable Siret numbers and service code validation before you post and inv
     > [!NOTE]
     > We recommend that you use Azure Key Vault storage to store the secrets. For more information, see [Set up the Azure Key Vault client](../global/setting-up-azure-key-vault-client.md).
 
-3. Enable the **SIRET and service code validation** parameter.
-4. In the **Report format** field, select the configurable business document to use when a submission report is printed.
+3. Enable the **SIRET and service code validation during invoice posting** parameter.
+4. If **SIRET and service code validation during invoice posting** is enabled, to have more granular control over the validations that run in the invoice posting process, make the following additional setup:
+
+    1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
+	2. Add the required setup lines to allow users to enable/disable validation per document and party type.
+	
+	> [!NOTE]
+    > Where relevant (Project invoice proposal, Free text invoice, Sales order), **only enabled validations** will be run after selecting the Invoicing framework and during posting when **SIRET and Service code validation during invoice posting** is enabled. When validation for the Service code is enabled, it will validate ONLY when the MOE/MOA SIRET structure requires it, not indiscriminately.
+
+5. In the **Report format** field, select the configurable business document to use when a submission report is printed.
 
 > [!NOTE]
 > To create a new submission report instead of customizing a default report, use the **DocumentSubmitted** model name and the **SubmittedInvoice** mapping name for the integration point.
@@ -188,7 +196,7 @@ In France, you can add extra information before you run the standard invoice pos
     - Invoice account service code
 
         > [!NOTE]
-        > If you enabled the **SIRET and service code validation** parameter in the previous section, the list of available service codes is obtained from Chorus Pro.
+        > If you enabled the **SIRET and service code validation during invoice posting** parameter in the previous section, the list of available service codes is obtained from Chorus Pro.
 
     - Project manager
 
