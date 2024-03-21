@@ -54,18 +54,18 @@ One typical use of batch servers is to load balance jobs across multiple servers
 Because batch servers are also active AOS instances that service requests from the client and other associated components, you must carefully determine when an AOS instance should be available to process batches. 
 
 ## Understanding Batch server restarts
-During routine maintenance activities such as patching, there might be temporary interruptions to batch services. To understand the impact of maintenance activities and access-known maintenance schedules, kindly refer to the following articles:
+During routine maintenance activities, such as patching, there might be temporary interruptions to batch services. To understand the impact of maintenance activities and access-known maintenance schedules, see the following articles:
 
 - [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-operating-system-maintenance) - Learn more about planned operating system maintenance schedules.
 - [Experience during the nZDT Maintenance Window](../deployment/planne.mddmaintenance-selfservice#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
 
-Additionally, it's recommended to utilize the 'Abort' option with the [Enhanced Batch Abort feature](../sysadmin/batch-abort.md). This triggers a restart of the Batch server specific to the server where the Batch job was executing.
+It's recommended to utilize the 'Abort' option with the [Enhanced Batch Abort feature](../sysadmin/batch-abort.md). This option triggers a restart of the Batch server specific to the server where the Batch job was executing.
 
-Batch servers might also restart because of server crashes, which could potentially be influenced by any batch job in execution at that time. Detailed crash information is available on Lifecycle Services; kindly refer to [monitoring diagnostics](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs) for further details.
+Batch servers might also restart because of server crashes that are potentially influenced by any batch job in execution at that time. Detailed crash information is available on Lifecycle Services. For more information about monitoring crash information, see [monitoring diagnostics](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs) for further details.
 
-Restarts could also be observed if infrastructure problems leading to internal failover. Measures such as autoscaling and capacity management are employed to ensure optimal environment performance and availability.
+Restarts can happen if infrastructure problems lead to an internal failover. Autoscaling and capacity management are employed to ensure optimal environment performance and availability.
 
-Ensure to retry batch jobs affected by interruptions, and consider implementing retry mechanisms within your batch job logic for enhanced reliability. Detailed documentation on how to implement retry logic can be found [Enable batch retries](../sysadmin/retryable-batch.md).
+For enhanced reliability, retry batch jobs affected by interruptions, and consider implementing retry mechanisms within your batch job logic. For information about how to implement retry logic, see [Enable batch retries](../sysadmin/retryable-batch.md).
 
 > [!NOTE]
 > - Ensure that you are on the [supported version](../get-started/public-preview-releases.md) to maintain system stability and compatibility.
@@ -104,7 +104,8 @@ If TASK 2 fails, one of the batch servers runs TASK 5.
 
 If TASK 3 fails, one of the available batch servers runs TASK 6. 
 
-**Note:** For this walkthrough, we're using Batch 1 and Batch 2 to explain the concept. Any batch server that has available threads starts to run a waiting task. You must create a batch group to determine or specify which batch job runs on which server.
+> [!NOTE]
+> For this example walkthrough, we're using Batch 1 and Batch 2 to explain the concept. Any batch server that has available threads starts to run a waiting task. You must create a batch group to determine or specify which batch job runs on which server.
 
 ### Batch processing that uses batch groups
 
@@ -128,7 +129,7 @@ The purpose of this approach is to maintain a balance between the workload deman
 
 In essence, this delay mechanism serves as a proactive measure to optimize resource utilization and ensure that your environment continues to perform at its best, even under challenging conditions.
 
-To successfully diagnose performance issues using Lifecycle Services, visit [Troubleshooting SQL performance](../lifecycle-services/performancetroubleshooting#details.md) for more details.
+For more information to help you successfully diagnose performance issues using Lifecycle Services, see [Troubleshooting SQL performance](../lifecycle-services/performancetroubleshooting#details.md).
 
 > [!NOTE]
 > The batch framework is able to detect instances when there are no non-throttled tasks to be scheduled and executed at any given time. When this occurs, the batch tries to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
