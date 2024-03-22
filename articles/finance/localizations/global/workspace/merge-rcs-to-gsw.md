@@ -50,4 +50,8 @@ The UX for the configuration of tax features remains consistent and is unaffecte
 
 Be aware that Microsoft will enable the Tax Calculation service in all environments. Activities that are related to the discontinuation of the Tax Calculation service as an add-in will be aligned with the timeline that has been set for RCS.
 
+## Additional resources
+- [Globalization Studio workspace features](gsw-features.md)
+- [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md)
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
