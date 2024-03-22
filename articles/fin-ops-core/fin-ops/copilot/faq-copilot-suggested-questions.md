@@ -1,7 +1,7 @@
 ---
-title: Responsible AI FAQ for suggested questions provided with Copilot
-description: This FAQ provides answers to frequently asked questions about the AI technology that's used to generated Suggested Questions in Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 11/09/2023
+title: Responsible AI FAQ for Suggested questions within Copilot (preview)
+description: This FAQ provides answers to frequently asked questions about the AI technology that's used to generate suggested questions within Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 04/01/2024
 ms.collection:
   - bap-ai-copilot
 ms.custom:
@@ -12,40 +12,42 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# Responsible AI FAQ for Suggested Questions within Copilot
+# Responsible AI FAQ for Suggested questions within Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
-[This article is prerelease documentation and is subject to change.]
+[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-This FAQ provides answers to frequently asked questions about the AI technology *Suggested Questions*. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+This FAQ provides answers to frequently asked questions about the *Suggested questions within Copilot* AI feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
-## What is Suggested Questions?
+[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
-*Suggested Questions* is an AI technology that's used in the [Copilot side car experience](copilot-for-finance-operations.md) which provides the conversational Copilot experiences in finance and operations apps.
+## What is Suggested questions within Copilot?
 
- *Suggested Questions* will give you up to three questions you can ask Copilot once you have started a new conversation. The sugested questions are based on the existing conversation of questions and provided answers.
+*Suggested questions within Copilot* is an AI technology that's used in the [Copilot side car experience](copilot-for-finance-operations.md), which provides conversational Copilot experiences in finance and operations apps.
 
-It is powered by [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to offer the user additional information in the context of the current conversation.
+*Suggested questions within Copilot* generates and displays up to three questions that you can choose from to ask Copilot to keep the conversation going. Each question is generated based on the existing conversation so far and represents something that Copilot thinks you are likely to want to ask next.
 
-## What can Suggested Questions do?
+The feature is powered by [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) and helps guide you to additional information in the context of the current conversation.
 
-*Suggested Questions* will enable you to quickly post follow-up questions and get answers from Copilot. It’s designed to provide a diversity of follow-up questions, and will avoid repeating questions you have already asked. The suggested questions will be answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers) which is the foundation for [Generative Help And Guidance](copliot-generative-help.md) in finance and operation apps.
+## What can Suggested questions within Copilot do?
 
-## What is the intended use of Suggested Questions in Copilot?
+The *Suggested questions within Copilot* feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and will avoid repeating questions you have already asked. The suggested questions will be answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers) which is the foundation for the [Generative help and guidance with Copilot](copliot-generative-help.md) feature in finance and operation apps.
 
-*Suggested Questions* are intended to be used to save you time compared to typing your next question and help you get answers sooner from Copilot.
+## What is the intended use of Suggested questions within Copilot?
 
-## How was Suggested Questions in Copilot evaluated? What metrics are used to measure performance?
+The *Suggested questions within Copilot* feature is intended to save you time compared to typing your next question so you can get answers sooner from Copilot.
 
-We evaluated the system by testing a variety of starting questions and conversations with copilot to see what questions it suggests. We evaluated if the suggested questions resulted in answers that were useful through manual labeling. Additionally, we tested the system to make sure it does not produce any harmful content.
+## How was Suggested questions within Copilot evaluated? What metrics are used to measure performance?
 
-If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback helps improve the functionality.
+We evaluated the system by testing a variety of starting questions and conversations with copilot to see what questions it suggests. We evaluated whether the suggested questions resulted in answers that were useful through manual labeling. Additionally, we tested the system to make sure it does not produce any harmful content.
+
+If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/). Your feedback helps improve the functionality.
 
 Microsoft might disable Copilot-driven features for selected customers if abuse of the functionality is detected.
 
-## What are the limitations of Suggested Questions in Copilot? How can users minimize the impact of its limitations when they use it?
+## What are the limitations of Suggested questions within Copilot? How can users minimize the impact of its limitations when they use it?
 
-*Suggested Questions* will only be based on the conversation, so it is not able to consider other context when making recommendations. You can always ignore the suggestions and type your own prompt to Copilot.
+*Suggested questions within Copilot* only generates questions based on the current conversation, so it can't consider other contexts when making recommendations. You can always ignore the suggestions and type your own prompt to Copilot if needed.
 
 ## See also
 

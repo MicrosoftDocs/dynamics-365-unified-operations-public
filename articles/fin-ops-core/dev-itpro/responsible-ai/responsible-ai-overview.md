@@ -20,4 +20,4 @@ ms.reviewer: johnmichalak
 
 - [Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot (preview)](../m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot (preview)](../../fin-ops/copilot/faq-copilot-generative-help.md)
-- [Responsible AI FAQ for Suggested Actions within Copilot](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
+- [Responsible AI FAQ for Suggested questions within Copilot (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
