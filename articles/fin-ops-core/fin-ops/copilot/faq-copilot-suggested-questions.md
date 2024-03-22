@@ -33,7 +33,7 @@ It appears in [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-d
 
 *Suggested Questions* are intended to be used to save you time compared to typing your next question and help you get answers sooner from Copilot. 
 
-## How was *Suggested Questions* in Copilot evaluated? What metrics are used to measure performance?
+## How was Suggested Questions in Copilot evaluated? What metrics are used to measure performance?
 
 We evaluated the system by testing a variety of starting questions and conversations with copilot to see what questions it suggests. We evaluated if the suggested questions resulted in answers that were useful through manual labeling. Additionally, we tested the system to make sure it does not produce any harmful content.
 
@@ -41,7 +41,7 @@ If you encounter inappropriate generated content, report it to Microsoft by usin
 
 Microsoft might disable Copilot-driven features for selected customers if abuse of the functionality is detected.
 
-## What are the limitations of *Suggested Questions* in Copilot? How can users minimize the impact of its limitations when they use it?
+## What are the limitations of Suggested Questions in Copilot? How can users minimize the impact of its limitations when they use it?
 
 *Suggested Questions* will only be based on the conversation, so it is not able to consider other context when making recommendations. You can always ignore the suggestions and type your own prompt to Copilot.
 
