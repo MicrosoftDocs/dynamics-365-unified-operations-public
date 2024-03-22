@@ -1,6 +1,6 @@
 ---
-title: Globalization Studio workspace features (preview)
-description: This article explains the features of the Globalization Studio workspace (preview).
+title: Globalization Studio workspace features
+description: This article explains the features of the Globalization Studio workspace.
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -11,10 +11,10 @@ ms.reviewer: johnmichalak
 
 ---
 
-# Globalization Studio workspace features (preview)
+# Globalization Studio workspace features 
 
 [!INCLUDE[banner](../../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 Globalization Studio lets you create Globalization features that can be used in the following Globalization services: Electronic Invoicing and Tax Calculation. You can perform these tasks:
