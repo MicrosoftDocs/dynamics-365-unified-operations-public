@@ -39,6 +39,10 @@ You should become familiar with the following aspects of the batch framework:
 -   A **batch task** is an activity that is run by a batch job. You can add batch tasks that have multiple types of dependencies to a batch job. You can also configure AOS instances to run multiple threads, each of which runs a task. All batch tasks that are waiting to be run can be run by any available AOS instance that is configured as a batch server. To improve throughput and reduce overall execution time, you can define a batch job as many tasks and then use a batch server to run the tasks against all available AOS instances.
 -   A **batch group** is an attribute of a batch task. A batch group lets the administrator determine or specify which AOS instance runs the task. When you create a new task, it's put in the default batch group. All batch servers are configured to process the default batch group and the waiting tasks from any job. Additionally, you can create a named batch group, and then set an affinity between that batch group and specific AOS instances. After you create this affinity, only the specified AOS instances process tasks from the named batch group, and those AOS instances process tasks from the named batch group only. You can also add the default batch group to the configured servers, if that batch group is required.
 
+> [!NOTE]
+> After implementing Batch Priority Based Scheduling, batch groups no longer control associations with batch servers. Instead, they are utilized to assign priorities to batch jobs and manage the maximum concurrency of batch tasks within their respective batch job. For more information, see [Batch Priority Based Scheduling](../sysadmin/batch-priority-based-scheduling.md).
+
+
 ## Batch server topology planning
 The capacity of a batch server is based on the maximum number of threads that can run concurrently on the AOS instance. Each thread runs one batch task. You can add complex dependencies between or among tasks. You can run these tasks in serial steps or parallel steps, depending on the business logic and requirements. All tasks that don't have any dependencies are considered parallel tasks. AOS instances that are configured as batch servers periodically check for tasks that are waiting to be processed. The batch server assigns each parallel task to a thread and starts to process the thread. 
 
@@ -52,24 +56,6 @@ All batch servers can be managed from a single location.
 One typical use of batch servers is to load balance jobs across multiple servers. You can set the number of threads that the batch server process. 
 
 Because batch servers are also active AOS instances that service requests from the client and other associated components, you must carefully determine when an AOS instance should be available to process batches. 
-
-## Understanding Batch server restarts
-During routine maintenance activities, such as patching, there might be temporary interruptions to batch services. To understand the impact of maintenance activities and access-known maintenance schedules, see the following articles:
-
-- [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md) - Learn more about planned operating system maintenance schedules.
-- [Experience during the nZDT Maintenance Window](../deployment/plannedmaintenance-selfservice.md#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
-
-It's recommended to utilize the 'Abort' option with the [Enhanced Batch Abort feature](../sysadmin/batch-abort.md). This option triggers a restart of the Batch server specific to the server where the Batch job was executing.
-
-Batch servers might also restart because of server crashes that are potentially influenced by any batch job in execution at that time. Detailed crash information is available on Lifecycle Services. For more information about monitoring crash information, see [monitoring diagnostics](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs).
-
-Restarts can happen if infrastructure problems lead to an internal failover. Autoscaling and capacity management are employed to ensure optimal environment performance and availability.
-
-For enhanced reliability, retry batch jobs affected by interruptions, and consider implementing retry mechanisms within your batch job logic. For information about how to implement retry logic, see [Enable batch retries](../sysadmin/retryable-batch.md).
-
-> [!NOTE]
-> - Ensure that you are on the [supported version](../get-started/public-preview-releases.md) to maintain system stability and compatibility.
-> - Review any customizations and file uploads to mitigate potential impacts on batch job execution and system performance.
 
 ## Walkthroughs
 The following walkthroughs describe how tasks are processed, and how batch groups can be used to associate batch jobs with batch servers.
@@ -117,11 +103,42 @@ You create a named batch group, BG1, and configure it to run on AOS2 and AOS3. T
 
 You can configure AOS2 and AOS3 to process tasks from other batch groups. These batch groups include the default batch group.
 
-### Batch excessive tasks configuration (Batch throttling)
+## Understanding batch server restarts
 
-Batch throttling can prevent excessive tasks by limiting the average number of executions of a certain batch class per minute. The default upper-bound is 60 tasks per minute. After that, batch framework suspends the execution of classes for the offending class for another minute, to prevent that specific class from monopolizing the system resources.
+The batch server might undergo restart due to several factors. Here's an overview of these reasons:
 
-When the available resources within your system, particularly SQL resources, CPU, and memory allocated to Batch Server, are nearing their capacity limits, we implement a delay in the execution of new batch tasks. This delay allows the system to manage its resources more efficiently by ensuring that the existing workload doesn't overwhelm the system.
+- **Routine maintenance activities**:
+During routine maintenance activities, such as patching, there might be temporary interruptions to batch services. To understand the effect of maintenance activities and access-known maintenance schedules, see the following articles:
+
+	- [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md) - Learn more about planned operating system maintenance schedules.
+	- [Experience during the nZDT Maintenance Window](../deployment/plannedmaintenance-selfservice.md#batch-service) - Discover insights into system behavior during the nZDT maintenance window.
+
+- **Batch server crash**:
+Batch server crashes on batch servers might occur due to batch jobs executing on the respective servers at that time. Detailed crash information is available on Lifecycle Services. For more information about monitoring crash information, see [monitoring diagnostics](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs).
+
+- **Ensuring Optimal Performance, Infrastructure Failover and Management**:
+Restarts can happen if infrastructure problems lead to an internal failover. Autoscaling and capacity management are employed to ensure optimal environment performance and availability.
+
+- **Utilizing enhanced batch abort feature**:
+When it becomes necessary to forcefully halt an executing batch job, you should utilize the [Enhanced Batch Abort feature](../sysadmin/batch-abort.md). This action prompts a restart of the specific batch servers where the job was running.
+
+For enhanced reliability, retry batch jobs affected by interruptions, and consider implementing retry mechanisms within your batch job logic. For information about how to implement retry logic, see [Enable batch retries](../sysadmin/retryable-batch.md).
+
+> [!NOTE]
+> - Ensure that you are on the [supported version](../get-started/public-preview-releases.md) to maintain system stability and compatibility.
+> - Review any customizations and file uploads to mitigate potential impacts on batch job execution and system performance.
+
+### Batch throttling
+
+Batch platform employ two types of batch throttling to ensure smooth operation:
+
+#### Batch class throttling
+
+This method prevents excessive tasks by limiting the average number of executions of a specific batch class per minute per batch server. By default, the upper limit is set to 60 tasks per minute. If this limit is exceeded, the batch framework temporarily suspends the execution of tasks, for such batch class for another minute, preventing it from monopolizing system resources.
+
+#### Batch resource based throttling
+
+When system resources, such as SQL Database Transaction Units (DTU), CPU, or memory allocated to the Batch Server, approach their capacity limits, we introduce a delay in the execution of new batch tasks. This delay allows the system to manage its resources efficiently, ensuring that the existing workload doesn't overwhelm the system.
 
 By delaying the execution of new batch tasks until the resource levels return to normal, we're effectively employing a guardrail mechanism. This guardrail is put in place to safeguard the performance and stability of your environment, ensuring that it operates optimally even during periods of increased demand or resource constraints.
 
