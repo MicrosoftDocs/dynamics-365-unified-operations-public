@@ -11,38 +11,64 @@ ms.author: raanandm
 ms.search.validFrom: 2024-03-20
 ---
 
-# How to use Batch Parameter Versioning
+# Batch parameter versioning
 
 [!include [banner](../includes/banner.md)]
 
-When updating the parameters list of a batch job, it's advisable to implement versioning. This practice helps prevent errors like **an error occurred while unpacking parameters for batch job XXXXX** during execution. Integrating versioning into the parameter list updates is beneficial as it mitigates this issue and aligns with recommended best practices.
 
-Here's an example for how it could be achieved:
+In Finance and Operations, batch processing is used for executing tasks asynchronously in the background. Batch jobs can range from simple tasks like data imports to complex calculations or integrations.
+
+Updating batch parameters and versioning them might be necessary in various situations, including:
+
+- **Configuration Changes**: When there are changes in the configuration settings or parameters required for batch processing. For example, if a batch job previously processed data in a certain way but now needs to accommodate new fields or data sources, the batch parameters might need to be updated accordingly.
+
+- **Performance Optimization**: As your system evolves and grows, you might find opportunities to optimize batch processing for better performance. It could involve tweaking batch parameters such as batch size or datasets to make the processing more efficient.
+
+- **Bug Fixes or Enhancements**: If bugs are found in batch processing or if new features affect batch jobs, you might have to change batch parameters to fix problems or include new functions.
+
+- **Integration Changes**: If there are changes in external systems or interfaces that interact with batch jobs, such as API endpoints or data formats, you might need to update batch parameters to accommodate these changes and ensure seamless integration.
+
+Versioning batch parameters is essential for maintaining a record of changes and ensuring consistency and reliability in batch processing. Versioning allows you to track the history of parameter changes, revert to previous versions if necessary, and maintain documentation for auditing purposes. It also helps in managing and deploying changes across different environments such as development, testing, and production. 
+
+## Why do you get errors during batch parameter unpack?
+
+While executing a batch, you might get error message like **an error occurred while unpacking parameters for batch job XXXXX**. This error occurs when the batch job is unable to unpack the parameters correctly due to issues such as:
+
+- **Parameter Changes**: When you update batch parameters, you might encounter errors during the pack/unpack process if the batch job isn't designed to handle different versions of the parameters list. The pack/unpack process is used to serialize and deserialize batch parameters for storage and execution. If the batch job expects a specific set of parameters and receives a different set due to version changes, it can lead to errors during execution.
+
+- **Custom Code or Extensions**: If custom code or extensions are being used with the batch job, errors in the code or extensions could cause issues during parameter unpacking. Check the custom code or extensions for any errors or inconsistencies and address them accordingly.
+
+- **Security Permissions**: Insufficient permissions or security settings can sometimes prevent the batch job from accessing the necessary data or resources, resulting in errors during parameter unpacking. Ensure that the user executing the batch job has the appropriate permissions to access all required resources.
+
+## How to version batch parameters?
+
+Here's an example for how it could be achieved in **RunBaseBatch** or **SysOperationServiceController** implementation of batch class:
 
 ```X++
 #define.Version2(2)
-#localMacro.Version2List
-#Version1List
-,includeNewParam1
-,includeNewParam2
+    #localMacro.Version2List
+    #Version1List
+    ,includeNewParam1
+    ,includeNewParam2
 #endmacro
 
 #define.Version3(3)
-#localMacro.Version3List
-#Version2List
-,includeNewParam3
-,includeNewParam4
+    #localMacro.Version3List
+    #Version2List
+    ,includeNewParam3
+    ,includeNewParam4
 #endmacro
 
 #define.Version4(4)
-#localMacro.Version4List
-#Version3List
-,includeNewParam5
-,includeNewParam6
+    #localMacro.Version4List
+    #Version3List
+    ,includeNewParam5
+    ,includeNewParam6
 #endmacro
+
 #localMacro.VersionList
-#Version4List
-,includeNewParam7
+    #Version4List
+    ,includeNewParam7
 #endmacro
 
 boolean unpack(container packedClass)
@@ -69,63 +95,32 @@ boolean unpack(container packedClass)
              return false;
     }
     projectQueryRun = new QueryRun(packedQueryRun);
+
     return true;
 }
 ```
 
-Example for SysOperationServiceController, where you wish to have pack/unpack logic based on some precondition. The following example is based on isSessionInRealAsyncContext.
+Here's an example for how it could be achieved in a batch class that is extending another batch class, which has its own implementation of unpack:
 
 ```X++
-#define.CurrentVersion(2)
-#define.version1(1)
-#define.version2(2)
 #localmacro.version1List
-    className,
-    methodName
+    param1,
+    param2
 #endmacro
+
 #localmacro.CurrentList
     #version1List
-    ,hasPendingAfterOperation
-    ,operationReturnValuePacked
+    param3,
+    param4
 #endmacro
-
-public container pack()
-{
-    Version packVersion = SysOperationServiceController::getPackVersion();
-    operationReturnValuePacked = conNull();
-    if (#version2 == packVersion)
-    {
-        if (this.canServiceReturnValueBePacked())
-        {
-            operationReturnValuePacked = this.packServiceReturnValue();
-        }
-        return [#version2,#CurrentList, super()];
-    }
-    else
-    {
-        return [#version1,#version1List, super()];
-    }
-}
-
-internal static Version getPackVersion()
-{
-    if (SysRealAsyncContext::isSessionInRealAsyncContext())
-    {
-        // Use the version that packs the real async data members
-        return #version2;
-    }
-    else
-    {
-        return #version1;
-    }
-}
 
 public boolean unpack(container packedState)
 {
     container packedSuper;
     int version;
 
-    version = SysOperationHelper::getVersion(packedState);
+    version = conPeek(packedState,1);
+
     switch (version)
     {
         case #CurrentVersion:
@@ -138,17 +133,11 @@ public boolean unpack(container packedState)
             return false;
     }
 
-    // Check access before unpacking full state
-    this.checkAccess();
-
-    if (version == #CurrentVersion && operationReturnValuePacked != conNull())
-    {
-        this.unPackServiceReturnValue(operationReturnValuePacked);
-    }
-
     return super(packedSuper);
 }
 ```
+
+## Best practices
 
 Recommendations for future changes to batch job parameters:
 
@@ -158,6 +147,6 @@ Recommendations for future changes to batch job parameters:
 
 - **Functional Logic Consideration**: The functional logic of the batch job should be designed to accommodate scenarios where an old version of the parameters list is provided. In such cases, the batch job should revert to the previous behavior, adhering to the specifications defined before the parameter change.
 
-Implementing these guidelines empowers the batch job system to effectively manage changes to parameters. It ensures compatibility and consistency in functionality across different versions of the parameters list.
+Implementing these guidelines enables the batch processing to effectively manage changes to parameters. It ensures compatibility and consistency in functionality across different versions of the parameters list.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

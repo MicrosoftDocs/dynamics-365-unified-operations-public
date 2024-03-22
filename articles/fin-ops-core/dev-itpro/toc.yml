@@ -1860,7 +1860,7 @@ items:
           href: dev-tools/real-async.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
-        - name: Use Batch Parameter Versioning
+        - name: Batch parameter versioning
           href: sysadmin/batch-parameter-versioning.md
         - name: Daylight saving time support for active batch periods
           href: sysadmin/batch-active-period-dst.md
