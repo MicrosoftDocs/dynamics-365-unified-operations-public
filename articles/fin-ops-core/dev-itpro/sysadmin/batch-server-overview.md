@@ -40,7 +40,7 @@ You should become familiar with the following aspects of the batch framework:
 -   A **batch group** is an attribute of a batch task. A batch group lets the administrator determine or specify which AOS instance runs the task. When you create a new task, it's put in the default batch group. All batch servers are configured to process the default batch group and the waiting tasks from any job. Additionally, you can create a named batch group, and then set an affinity between that batch group and specific AOS instances. After you create this affinity, only the specified AOS instances process tasks from the named batch group, and those AOS instances process tasks from the named batch group only. You can also add the default batch group to the configured servers, if that batch group is required.
 
 > [!NOTE]
-> After implementing Batch Priority Based Scheduling, batch groups no longer control associations with batch servers. Instead, they are utilized to assign priorities to batch jobs and manage the maximum concurrency of batch tasks within their respective batch job. For more information, see [Batch Priority Based Scheduling](../sysadmin/batch-priority-based-scheduling.md).
+> After implementing Batch Priority Based Scheduling, batch groups no longer control associations with batch servers. Instead, they are utilized to assign priorities to batch jobs and manage the maximum concurrency of batch tasks within their respective batch job. For more information, see [Batch Priority Based Scheduling](../sysadmin/priority-based-batch-scheduling.md).
 
 
 ## Batch server topology planning
