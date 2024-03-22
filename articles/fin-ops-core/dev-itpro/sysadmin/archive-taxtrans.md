@@ -79,7 +79,7 @@ To set up an archival job, follow these steps.
     
 9. Select **Finish** to schedule the archive job for the selected fiscal years and the companies.
 
-![DV_Long_term_retention_Tax transactions_5](./media/DV_Long_term_retention_Tax%@)transactions_5.png)
+![DV_Long_term_retention_Tax transactions_5](./media/DV_Long_term_retention_Tax%20transactions_5.png)
 
 10. Select **View progress** to view the detailed logs.
 
