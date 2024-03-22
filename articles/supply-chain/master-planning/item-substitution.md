@@ -1,6 +1,6 @@
 ---
 title: Item substitution for formulas
-description: This articles describes how to set up item substitution for formulas in master planning.
+description: This article describes how to set up item substitution for formulas in master planning.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -37,18 +37,18 @@ Follow these steps to set up item substitution for a formula:
 
 1. Go to **Product information management \> Bills of materials and formulas \> Formulas**.
 1. Open the formula that you want to set up substitution for.
-1. Find the formula line for the material that you want to substitute. Make the following settings for it:
+1. Find the formula line for the material that you want to substitute. Make the following settings for it.
     - **Plan group** – Enter a locally unique name that identifies the group of items that could serve as substitutes for this material.
     - **Priority** – Enter a number that indicates the priority of this material in the plan group. The lower the number, the higher the priority. The most preferred material should have the lowest number.
-1. Find or add a formula line for the lower-priority substitute material. Make the following settings for it:
+1. Find or add a formula line for the lower-priority substitute material. Make the following settings for it.
     - **Plan group** – Enter the same name that you entered for the preferred material.
     - **Priority** – Enter a number that indicates the priority of this material in the plan group. The lower the number, the higher the priority. Each material in the plan group must have a unique priority number.
-    - **Quantity** – Enter 0. This field is not used for substitutes. The quantity of the preferred material (the one with the lowest priority) specifies the quantity for any of the materials in the plan group.
+    - **Quantity** – Enter 0. This field isn't used for substitutes. The quantity of the preferred material (the one with the lowest priority) specifies the quantity for any of the materials in the plan group.
 1. Repeat the previous step for each substitute material.
 
 ## Shelf life and item substitution
 
-When using material substitution with products that have a limited shelf-life, master planning always ensures that the shelf life of each substitute is also respected.
+When using material substitution with products that have a limited shelf-life, master planning always ensures that the shelf life of all materials is respected.
 
 For example, a formula item could be set up as follows:
 
@@ -61,8 +61,8 @@ For example, a formula item could be set up as follows:
 - **Material B (Substitute for material A):**
     - Quantity: 0
     - Plan group: Organic oils
-    - Priority 2
+    - Priority: 2
     - Available on-hand: 0
-    - Expected receipt date (of existing purchase order): Today + 6 days, with 10 negative days
+    - Existing purchase order: Qty 6, with an expected receipt date of today + 6 days, with 10 negative days
 
-Master planning first picks material A with its available quantity 4. Because the required quantity is 10, and there is not enough of material A, master planning will try to use the existing purchase order for the substitute (material B) for the remaining quantity of 6. However, because the available receipt date of the substitute is later than the expiry date of the on-hand inventory of material A, the substitute won't be used. Instead, master planning creates a planned order for quantity 6 of material A to fulfill the rest of the material needed.
+Master planning first selects material A with its available quantity 4. Because the required quantity is 10, and there isn't enough of material A, so master planning checks to see if it can use the existing purchase order for the substitute (material B) for the remaining quantity. However, because the available receipt date of the substitute is later than the expiry date of the on-hand inventory of material A, the substitute won't be used. Instead, master planning creates a planned order for quantity 6 of material A to fulfill the rest of the material needed.
