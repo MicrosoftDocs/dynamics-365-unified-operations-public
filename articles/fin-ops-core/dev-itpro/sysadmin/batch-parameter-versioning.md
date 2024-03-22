@@ -45,56 +45,44 @@ While executing a batch, you might get error message like **an error occurred wh
 Here's an example for how it could be achieved in **RunBaseBatch** or **SysOperationServiceController** implementation of batch class:
 
 ```X++
+#define.Version1(1)
 #define.Version2(2)
-    #localMacro.Version2List
+#define.CurrentVersion(3)
+
+#localMacro.Version1List
+    includeNewParam1
+#endmacro
+
+#localMacro.Version2List
     #Version1List
-    ,includeNewParam1
     ,includeNewParam2
-#endmacro
-
-#define.Version3(3)
-    #localMacro.Version3List
-    #Version2List
     ,includeNewParam3
-    ,includeNewParam4
 #endmacro
 
-#define.Version4(4)
-    #localMacro.Version4List
-    #Version3List
-    ,includeNewParam5
-    ,includeNewParam6
+#localMacro.CurrentVersionList
+    #Version2List
+    ,includeNewParam8
 #endmacro
 
-#localMacro.VersionList
-    #Version4List
-    ,includeNewParam7
-#endmacro
 
-boolean unpack(container packedClass)
+boolean unpack(container _packedClass)
 {
-    boolean ret = next unpack(packedClass);
-    Integer version = conPeek(packedClass,1);
-    container packedQueryRun;
+    Integer version = conPeek(_packedClass,1); 
 
     switch(version)
     {
         case #CurrentVersion:
-             [version, #VersionList, packedQueryRun] = _packedClass;
+             [version, #CurrentVersionList] = _packedClass;
              break;
         case #Version2:
-             [version, #Version2List, packedQueryRun] = _packedClass;
+             [version, #Version2List] = _packedClass;
              break;
-        case #Version3:
-             [version, #Version3List, packedQueryRun] = _packedClass;
-             break;
-        case #Version4:
-             [version, #Version4List, packedQueryRun] = _packedClass;
-             break;
+        case #Version1:
+             [version, #Version1List] = _packedClass;
+             break; 
         default:
              return false;
     }
-    projectQueryRun = new QueryRun(packedQueryRun);
 
     return true;
 }
@@ -103,13 +91,16 @@ boolean unpack(container packedClass)
 Here's an example for how it could be achieved in a batch class that is extending another batch class, which has its own implementation of unpack:
 
 ```X++
-#localmacro.version1List
+#define.Version1(1)
+#define.CurrentVersion(2)
+
+#localmacro.Version1List
     param1,
     param2
 #endmacro
 
-#localmacro.CurrentList
-    #version1List
+#localmacro.CurrentVersionList
+    #Version1List
     param3,
     param4
 #endmacro
@@ -124,10 +115,10 @@ public boolean unpack(container packedState)
     switch (version)
     {
         case #CurrentVersion:
-            [version, #CurrentList, packedSuper] = packedState;
+            [version, #CurrentVersionList, packedSuper] = packedState;
             break;
-        case #version1:
-            [version, #version1List, packedSuper] = packedState;
+        case #Version1:
+            [version, #Version1List, packedSuper] = packedState;
             break;
         default:
             return false;
