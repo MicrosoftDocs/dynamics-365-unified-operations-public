@@ -43,7 +43,7 @@ To set up an archival job, follow these steps.
 1. Go to **System administration** \> **Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
 2. Select **Tax transactions functional scenario**.
 
-![DV_Long_term_retention_Tax transactions_1](./media/DV_Long_term_retention_Tax%20transactions_1.png)
+![Dataverse_long_term_retention_tax transactions](./media/DV_Long_term_retention_Tax%20transactions_1.png)
 
 3. Select **Refresh** to populate the fiscal years and company dataset to archive.
 
@@ -52,27 +52,21 @@ To set up an archival job, follow these steps.
 
 4. Select **New long term retention** to open a wizard that you can use to schedule a new **Tax transactions long term retention** job.
 
-![DV_Long_term_retention_Tax transactions_2](./media/DV_Long_term_retention_Tax%20transactions_2.png)
+![New long_term_retention_Tax transactions](./media/DV_Long_term_retention_Tax%20transactions_2.png)
    
 5. Enter a name for the job, and then select **Next**. New long term retention jobs can be scheduled for one or more companies at a time. Execution of these jobs is sequential.
 6. On the **Define criteria** page, select the combination of fiscal years and companies to archive tax transactions data for.
 
-![DV_Long_term_retention_Tax transactions_3](./media/DV_Long_term_retention_Tax%20transactions_3.png)
+![Defin criteria New long_term_retention_Tax transactions](./media/DV_Long_term_retention_Tax%20transactions_3.png)
   
 7. Select **Next**.
 8. Select the type of scheduling.
-
-![DV_Long_term_retention_Tax transactions_4](./media/DV_Long_term_retention_Tax%20transactions_4.png)
-  
 Two types of scheduling are supported:
   
   - **Single run** – The long term retention and saving to history are run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
   - **Daily during allotted time** – The long term retention runs continuously until it's completed. The **Save to history** process runs only during the specified start and stop archiving time.
     
 9. Select **Finish** to schedule the archive job for the selected fiscal years and the companies.
-
-![DV_Long_term_retention_Tax transactions_5](./media/DV_Long_term_retention_Tax%20transactions_5.png)
-
 10. Select **View progress** to view the detailed logs.
 
 ## View historical data from the history table
