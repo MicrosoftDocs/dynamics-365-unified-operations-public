@@ -32,14 +32,9 @@ When you archive tax transactions, data from the following tables will be moved 
 
 Make sure your environment is confugured to utilize archive feature. For details, see [Set up and manage archive data](archive-setup-manage.md).
 In addition, the following prerequisites must be met before you archive Tax transactions:
-- No periods for a fiscal year and the company can be open.
-- Year-end close must be run for the fiscal year for the company.
+- All periods within the fiscal year are either in permanently closed or on hold state.
 - Tax transactions for the previous fiscal year for the company must be archived.
-
-> [!NOTE]
-> Tax archive utilizes the same conditions of data readiness for archiving as for [General ledger data](archive-gl.md):
-> - Tax transactions archiving can occur only for fiscal years that the year-end close process has been run for.
-> - The archive jobs for different years must be run in chronological order. For example, 2020 Tax transactions data must be archived before 2021 Tax transactions data.
+- The archive jobs for different years must be run in chronological order. For example, 2020 Tax transactions data must be archived before 2021 Tax transactions data.
 
 ## Set up an archival job
 
