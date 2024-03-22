@@ -134,7 +134,7 @@ Batch platform employ two types of batch throttling to ensure smooth operation:
 
 #### Batch class throttling
 
-This method prevents excessive tasks by limiting the average number of executions of a specific batch class per minute per batch server. By default, the upper limit is set to 60 tasks per minute. If this limit is exceeded, the batch framework temporarily suspends the execution of tasks, for such batch class for another minute, preventing it from monopolizing system resources.
+This method prevents excessive tasks by limiting the average number of executions of a specific batch class per minute per batch server. By default, the upper limit is set to 60 tasks per minute. If this limit is exceeded, the batch framework temporarily suspends the execution of new tasks of that batch class for another minute, preventing it from monopolizing system resources.
 
 #### Batch resource based throttling
 

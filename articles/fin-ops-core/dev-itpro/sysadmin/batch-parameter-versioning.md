@@ -61,7 +61,7 @@ Here's an example for how it could be achieved in **RunBaseBatch** or **SysOpera
 
 #localMacro.CurrentVersionList
     #Version2List
-    ,includeNewParam8
+    ,includeNewParam4
 #endmacro
 
 
