@@ -47,7 +47,7 @@ Here are some of the limitations:
 - You can use sales tax functionality only with legal entities, not with financial dimensions.
 - Some reports don't include financial dimensions. Therefore, to report by financial dimension, you might have to modify the reports.
 
-Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](/financial-tag.md).
+Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md).
 
 ## Custom dimensions
 
