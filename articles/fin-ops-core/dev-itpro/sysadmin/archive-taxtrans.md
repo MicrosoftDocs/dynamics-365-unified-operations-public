@@ -14,7 +14,7 @@ ms.custom:
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
 This article explains how to archive data in Microsoft Dynamics 365 Finance Tax transactions.
-When you archive tax transactions, data from the following tables will be moved to history tables:
+When you archive tax transactions, data from the following tables are moved to history tables:
 - TaxTrans
 - TaxTrans_BR
 - TaxTrans_IN
@@ -30,9 +30,9 @@ When you archive tax transactions, data from the following tables will be moved 
 
 ## Prerequisites
 
-Make sure your environment is confugured to utilize archive feature. For details, see [Set up and manage archive data](archive-setup-manage.md).
+Confirm that your environment is confugured to utilize archive feature. For more information, see [Set up and manage archive data](archive-setup-manage.md).
 In addition, the following prerequisites must be met before you archive Tax transactions:
-- All periods within the fiscal year are either in permanently closed or on hold state.
+- All periods within the fiscal year are either permanently closed or on hold state.
 - Tax transactions for the previous fiscal year for the company must be archived.
 - The archive jobs for different years must be run in chronological order. For example, 2020 Tax transactions data must be archived before 2021 Tax transactions data.
 
@@ -48,17 +48,14 @@ To set up an archival job, follow these steps.
 3. Select **Refresh** to populate the fiscal years and company dataset to archive.
 
     > [!NOTE]
-    > Run the refresh after you do period and year-end close on the Tax transactions data for the fiscal years and the companies. The **Ready to archive** state must be **Ready** before you can schedule a new long term retention job.
+    > After a period and year-end close is completed on the Tax transactions data for the fiscal years and the companies, run a **Refresh**. The **Ready to archive** state must be **Ready** before you can schedule a new long term retention job.
 
-4. Select **New long term retention** to open a wizard that you can use to schedule a new Tax transactions long term retention job.
+4. Select **New long term retention** to open a wizard that you can use to schedule a new **Tax transactions long term retention** job.
 
 ![DV_Long_term_retention_Tax transactions_2](./media/DV_Long_term_retention_Tax%20transactions_2.png)
    
-5. Enter a name for the job, and then select **Next**.
-
-    New long term retention jobs can be scheduled for one or more companies at a time. Execution of these jobs is sequential.
-
-6. On the **Define criteria** page, select the combination of fiscal years and companies to archive Tax transactions data for.
+5. Enter a name for the job, and then select **Next**. New long term retention jobs can be scheduled for one or more companies at a time. Execution of these jobs is sequential.
+6. On the **Define criteria** page, select the combination of fiscal years and companies to archive tax transactions data for.
 
 ![DV_Long_term_retention_Tax transactions_3](./media/DV_Long_term_retention_Tax%20transactions_3.png)
   
@@ -67,9 +64,9 @@ To set up an archival job, follow these steps.
 
 ![DV_Long_term_retention_Tax transactions_4](./media/DV_Long_term_retention_Tax%20transactions_4.png)
   
-  Two types are supported:
+Two types of scheduling are supported:
   
-  - **Single run** – long term retention and saving to history run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
+  - **Single run** – The long term retention and saving to history are run continuously until both processes are completed. Data is always archived in Dataverse long term retention first. Then the save to history tables occurs.
   - **Daily during allotted time** – The long term retention runs continuously until it's completed. The **Save to history** process runs only during the specified start and stop archiving time.
     
 9. Select **Finish** to schedule the archive job for the selected fiscal years and the companies.
