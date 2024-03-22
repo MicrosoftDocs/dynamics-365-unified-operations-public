@@ -203,7 +203,9 @@
         - name: Vendor posting profiles
           href: accounts-payable/vendor-posting-profiles.md   
         - name: Default offset accounts for vendor invoice journals and invoice approval journals
-          href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md  
+          href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md 
+        - name: Vendor invoice dates
+          href: accounts-payable/vendor-invoice-dates.md            
         - name: Accounting distributions and subledger journal entries for vendor invoices
           href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md           
         - name: Copy vendors by using shared number sequences
@@ -308,8 +310,6 @@
         href: general-ledger/accts-payble-posting.md
       - name: Create charges codes
         href: accounts-receivable/create-charges-codes.md
-      - name: Vendor invoice dates
-        href: accounts-payable/vendor-invoice-dates.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
         href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
       - name: Mobile invoice approvals
