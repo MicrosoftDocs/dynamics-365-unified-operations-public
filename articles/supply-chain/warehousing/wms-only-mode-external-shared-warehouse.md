@@ -39,11 +39,11 @@ The following illustration highlights the elements of the inbound process.
 Here's a high-level description of the inbound process:
 
 1. *LE1*: *Purchase orders* get created and released to warehouse which will create **Warehouse management \> External warehouse shipment orders \> External warehouse inbound shipment order requests**, resulting in *Inbound shipment order messages* getting delivered to the *WOM* legal entity.
-The processing of releasing purchase orders to the external managed warehouse can happen via either a  periodically background process **Warehouse management \> Periodic tasks \> Create external warehouse inbound shipment order requests** or manually by selecting the **Release to warehouse** option on the purchase orders page.
+The processing of releasing purchase orders to the external managed warehouse can happen via either a periodically background process **Warehouse management \> Periodic tasks \> Create external warehouse inbound shipment order requests** or manually by selecting the **Release to warehouse** option on the purchase orders page.
 1. *WOM*: Processing of the *Inbound shipment order messages* resulting in the creation of *Inbound shipment orders*.
 1. *WOM*: Inbound loads are created manually, automatically, or through import (depending on your configuration).
 1. *WOM*: Warehouse workers uses the Warehouse Management mobile app to *register* the inbound shipment order transactions.
-1. *WOM* [Receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) gets processed for the related loads. These processes update the load status to *Received*, generates *External warehouse inbound shipment order updates* for *LE1*. <!-- perlynne Check message  name! -->
+1. *WOM* [Receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) gets processed for the related loads. These processes update the load status to *Received*, generates *External warehouse inbound shipment order updates* for *LE1*. You can enable automatic [message processing](../supply-chain-dev/message-processor.md) for the *External warehouse shipment order updates* message queue.
 1. *LE1*: During the processing of the *External warehouse inbound shipment order updates* inbound loads and shipments get created and the related purchase order line transactions updated to *Registered* enabling the further processing of the *Product receipt* and *Invoicing*.
 1. *WOM*: The *Inbound shipment order line* transactions get finalized by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
@@ -58,26 +58,49 @@ The following illustration highlights the elements of the outbound process.
 
 Here's a high-level description of the outbound process:
 
-1. *ERP1*: *Sales order* gets created and released to the warehouse which will create shipments and *External warehouse outbound shipment order requests*, resulting in *Outbound shipment order messages* getting delivered to the *WOM* legal entity.
+1. *LE1*: *Sales order* gets created and released to the warehouse which will create shipments and *External warehouse outbound shipment order requests*, resulting in *Outbound shipment order messages* getting delivered to the *WOM* legal entity.
 1. *WOM*: Processing of the *Outbound shipment order messages* resulting in the creation of *Outbound shipment orders*.
 1. *WOM*: Inventory reservations are created either manually or automatically (depending on your configuration).
 1. *WOM*: The orders are released for further warehouse processing, either manually or automatically. If you're using outbound load planning processes, you can create loads by using the outbound load planning workbench before you release the orders.
 1. *WOM*: Depending on the setup of your [wave template](wave-templates.md) definitions, warehouse work might be created and released immediately.
 1. *WOM*: The outbound warehouse work is processed, and the status of the related outbound shipment order line transactions is updated to *Picked*.
 1. *WOM*: The loads are outbound ship confirmed. As a result, *External warehouse inbound shipment order updates* will get generated for *LE1*.
-1. *LE1*: During the processing of the *External warehouse inbound shipment order updates* the outbound shipment data and the related sales order line transactions gets updated. The transactions will become *Picked* and thereby enabling the further processing of the *Packing slip* and *Invoicing* processing. 1. *WOM*: The *Outbound shipment order line* transactions get finalized by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). <!-- perlynne Check message  name! -->
+1. *LE1*: During the processing of the *External warehouse inbound shipment order updates* the outbound shipment data and the related sales order line transactions gets updated. The transactions will become *Picked* and thereby enabling the further processing of the *Packing slip* and *Invoicing* processing. You can enable automatic [message processing](../supply-chain-dev/message-processor.md) for the *External warehouse shipment order updates* message queue.
+1. *WOM*: The *Outbound shipment order line* transactions get finalized by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
+
+> [!WARNING]
+> [*Allow load split during ship confirm*](confirm-and-transfer.md) for outbound loads is not supported for the above flow in the *WOM* legal entity.
+
+> [!NOTE]
+> When you release orders/loads to warehouse in the *LE1* legal entity, the shipments that are created will be locked until order data from the *WOM* legal entity is returned. If this does not happen or there are other problems, you can get update rights for the shipments by choosing **Claim processing ownership** on the shipments. Please ensure that only admin roles use this action.
 
 ## On-hand adjustments
 
-The changes in the inventory on-hand that happen when processing *Inbound and Outbound shipment orders* are handled by the *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* [message processing](../supply-chain-dev/message-processor.md) in the *LE1* legal entity. However, other warehouse movements such as a warehouse counting operation also need to make sure the inventory on-hand is the same between the *WOM* legal entity and any related order processing legal entities *LE1, ...*. For this, the *Warehouse management only mode* records all the changes in the warehouse inventory in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** and this data will be used to automatically create the **External inventory adjustments** for the relevant legal entities.
+The changes in the inventory on-hand that happen when processing *Inbound and Outbound shipment orders* are handled by the *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* [message processing](../supply-chain-dev/message-processor.md) in the *LE1* legal entity. However, other warehouse movements such as a warehouse counting operation also need to make sure the inventory on-hand is the same between the *WOM* legal entity and any related order processing legal entities *LE1, ...*. For this, the *Warehouse management only mode* records all the changes in the warehouse inventory in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** and this data will be used to automatically create the **External inventory adjustments** for the relevant legal entities via the *Publish warehouse inventory update log updates* background process (running every 10 minutes by default).
 
 You can use the **Warehouse management \> Periodic tasks \> Create external inventory adjustment journals** process to generate the real *Inventory adjustment journals* that will be used to update the on-hand inventory and thus keeping it synchronized between the two legal entities.
+
+To automatically post the created *Inventory adjustment journals* use the **Inventory management \> Periodic tasks \> CDS integration \> Post integration inventory journals**
+<!-- CHECK if we got to update in .40 -->
 
 > [!WARNING]
 > If the *Source systems* are related to *External warehouse management systems*, turn off the *Enable warehouse inventory update logs* for the *Inbound and Outbound shipment orders*. This will prevent your inventory on-hand from being updated by inventory adjustment journal processing.
 
 :::image type="content" source="media/wms-only-shared-warehouse-inventory-process.svg" alt-text="Internal process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inventory-process.svg":::
+
+
+## <a name="warehouse-inventory-update-logs"></a>Warehouse inventory update logs
+
+For integrations that require very quick on-hand inventory synchronization processes, you can use the Warehouse inventory update log (at **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
+
+To keep the external systems updated about inventory transactions updates that are related to inbound and outbound shipment orders, enable the **Source systems** **Enable warehouse inventory update logs** parameter for both inbound and outbound shipment orders.
+
+You can view the update log data in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** page
+
+> [!IMPORTANT]
+> Be sure to uptake the updates in the external systems in such a way that they don't cause double updates in combination with the data that's used as part of the [*Shipment receipts*](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-shared-and-external-detail-use.md#shipment-packing-slips) messages when the **Enable warehouse inventory update logs** parameter is enabled.
+
 
 ## Setup example using external shared warehouse processing in D365
 
@@ -86,8 +109,9 @@ In the *WOM* legal entity you create a [*Source system*](wms-only-mode-setup.md#
 
 In legal entity *LE1* you need to set up an *External warehouse management system* with the type `Legal entity` and link it to the [*Source system*](wms-only-mode-setup.md#source-systems) *SS-LE1* in the *WOM* legal entity. You do this setup in the **Warehouse management \> Setup \> Warehouse management integration \> External warehouse management systems** page.
 
-<!-- perlynne Check Process automation name! -->
+<!-- 10.0.41 
 A *External warehouse management system* definition creates a process automation background task automatically to handle the [message processing](../supply-chain-dev/message-processor.md) for the *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* message types. You can modify the default settings of the *Process external warehouse shipment orders updates* background task that is set to run every minute by default by going to [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+-->
 
 You can now go to the *LE1* **Warehouse management \> Setup \> Warehouse \> Warehouses** page and choose the warehouses that you want to handle externally and specify the *External warehouse management system* and the *External warehouse* name from *WOM*. You should select a *Default location* that does not use license plates. This location will be used for all the inventory changes from the external warehouses in the *LE1* legal entity.
 > [!NOTE]
@@ -106,20 +130,14 @@ To use the *Owner* dimension you must create a record in **Warehouse management 
 
 If you use this setup example in an environment where you already have some released products, please ensure that you create the data for the *Released products and variants* in the [*Source system items*](wms-only-mode-exchange-data.md#master-data) page.
 
-<!-- CHECK Perlynne -->
 > [!TIP]
-> When you *Release* products to the *WOM* legal entity, the *Source system item* data will be created for you automatically if you set the **Create source system item policy** to *Create at release* on the *PIM-D365* source system in *WOM*.
+> When you *Release* products to the *WOM* legal entity, the *Source system item* data will be created for you automatically if you set the **Product maintenance rule** to *Maintain source system items* on the *PIM-D365* source system in *WOM*.
 
 <!--
 CHECK:
 Process automation
 Publish warehouse inventory update log updates
 
-
-Message processor: ???
-Create external warehouse inbound shipment order requests
-Process external warehouse outbound shipment orders updates
-Process external warehouse inbound shipment orders updates
 
 **Enable warehouse inventory update logs**
 -->
