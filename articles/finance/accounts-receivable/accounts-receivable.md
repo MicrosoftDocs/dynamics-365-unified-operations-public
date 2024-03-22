@@ -57,7 +57,7 @@ Use Accounts receivable to track customer invoices and payments that you receive
 - [Close Accounts receivable](close-accounts-receivable.md)
 
 ## Subscription billing
-Subscription billing enables organizations to manage subscription revenue opportunities and recurring billing through billing schedules.
+Subscription billing enables organizations to manage subscription revenue opportunities and recurring billing through billing schedules. 
 - [Subscription billing overview](subscription-billing-summary.md)
 
 ## Set up credit and collections
