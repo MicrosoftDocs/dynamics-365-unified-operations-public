@@ -28,7 +28,7 @@ For example, a demand planner might be interested in tracking down the most sign
 
 > The top 10 most significant changes contributing to the change in demand are:<br><br>1. Car Audio Unit-500 in Distribution center increased by 31% or 208 units.<br>2. Car Audio Unit-65-Black in Distribution center increased by 31% or 173 units.<br>3. Car Audio Unit-65-Silver in Store 2 increased by 29% or 574 units.<br>4. Mid-Range Speaker in Store 1 increased by 29% or 509 units.<br>5. High End Speaker in Store 4 increased by 28% or 298 units.<br>6. High End Speaker in Store 1 increased by 28% or 351 units.<br>7. Car Audio Unit-65-Silver in Store 1 increased by 28% or 405 units.<br>8. High End Cabinet-Oak in Distribution center increased by 28% or 190 units.<br>9. Car Audio Unit-500 in Store 4 increased by 28% or 123 units.<br>10. Car Audio Unit-200 in Store 1 increased by 27% or 240 units.<br><br>AI-generated content may be incorrect.
 
-[!INCLUDE [preview-note](includes/preview-note.md)]
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 
