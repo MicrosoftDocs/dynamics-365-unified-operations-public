@@ -35,6 +35,5 @@ Globalization features have several components:
 - **Configurations** – This component lets users manage, view, and edit related Electronic reporting (ER) formats and format mappings.
 - **Setups** – This component lets users of Globalization services, such as an e-invoicing service, manage the setup of the related feature version. Therefore, it supports the flexible construction of communication and responses rules.
 
-For more detailed information about how to set up and use Globalization features, see [Electronic Invoicing and Tax Calculation Service](where should this go).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
