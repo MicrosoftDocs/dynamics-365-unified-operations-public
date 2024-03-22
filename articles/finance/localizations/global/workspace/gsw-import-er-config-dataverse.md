@@ -1,6 +1,6 @@
 ---
-title: Import Electronic reporting (ER) configurations from Dataverse (preview)
-description: This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse (preview).
+title: Import Electronic reporting (ER) configurations from Dataverse
+description: This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse.
 author: filatovm
 ms.author: filatovm
 ms.topic: how-to
@@ -11,10 +11,10 @@ ms.reviewer: johnmichalak
 
 ---
 
-# Import Electronic reporting (ER) configurations from Dataverse (preview)
+# Import Electronic reporting (ER) configurations from Dataverse
 
 [!INCLUDE[banner](../../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse.
