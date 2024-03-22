@@ -4,7 +4,7 @@
 title: Dispose of a fixed asset as scrap
 description: The article describes the process of eliminating transactions for a fixed asset that was disposed of as scrap.
 author: moaamer
-ms.date: 01/19/2023
+ms.date: 01/19/2024
 ms.topic: article
 ms.custom: evergreen
 
