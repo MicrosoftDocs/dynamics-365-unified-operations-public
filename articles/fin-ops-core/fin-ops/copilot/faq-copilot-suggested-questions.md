@@ -17,21 +17,23 @@ ms.reviewer: kamaybac
 [!include [banner](../includes/banner.md)]
 [This article is prerelease documentation and is subject to change.]
 
-This FAQ provides answers to frequently asked questions about the AI technology that's used in *conversational Copilot experiences in finance and operations apps*. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+This FAQ provides answers to frequently asked questions about the AI technology *Suggested Questions*. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
 ## What is Suggested Questions?
 
-*Suggested Questions* will give you up to three questions you can ask Copilot once you have started a conversation. The questions are based on the conversation and the answers the system returns.
+*Suggested Questions* is an AI technology that's used in the [Copilot side car experience](copilot-for-finance-operations.md) which provides the conversational Copilot experiences in finance and operations apps.
 
-It appears in [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to offer the user additional information in the context of the current conversation.
+ *Suggested Questions* will give you up to three questions you can ask Copilot once you have started a new conversation. The sugested questions are based on the existing conversation of questions and provided answers.
+
+It is powered by [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to offer the user additional information in the context of the current conversation.
 
 ## What can Suggested Questions do?
 
-*Suggested Questions* will enable you to quickly ask follow-up questions to get answers from Copilot. It’s designed to provide a diversity of follow-up questions, and to avoid repeating questions you have already asked. The questions are intended to be answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers).
+*Suggested Questions* will enable you to quickly post follow-up questions and get answers from Copilot. It’s designed to provide a diversity of follow-up questions, and will avoid repeating questions you have already asked. The suggested questions will be answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers) which is the foundation for [Generative Help And Guidance](copliot-generative-help.md) in finance and operation apps.
 
 ## What is the intended use of Suggested Questions in Copilot?
 
-*Suggested Questions* are intended to be used to save you time compared to typing your next question and help you get answers sooner from Copilot. 
+*Suggested Questions* are intended to be used to save you time compared to typing your next question and help you get answers sooner from Copilot.
 
 ## How was Suggested Questions in Copilot evaluated? What metrics are used to measure performance?
 
