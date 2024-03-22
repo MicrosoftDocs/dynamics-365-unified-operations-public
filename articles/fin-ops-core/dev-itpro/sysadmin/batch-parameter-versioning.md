@@ -1,5 +1,5 @@
 ---
-title: Batch Parameter Versioning
+title: Batch parameter versioning
 description: This article provides information about the Batch parameter versioning and explains how you can use versioning to avoid issues related to pack/unpack.
 author: raanandm
 ms.date: 03/20/2024
