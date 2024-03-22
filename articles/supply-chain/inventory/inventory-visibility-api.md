@@ -57,15 +57,15 @@ The following table lists the APIs that are currently available:
 >
 > The bulk API can return a maximum of 512 records for each request.
 
-Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
+<!-- Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.
+You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.-->
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
 
-Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+<!--Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.-->
 
 To get a security service token, follow these steps.
 
@@ -133,8 +133,8 @@ To get a security service token, follow these steps.
 > [!NOTE]
 > The `https://securityservice.operations365.dynamics.com/token` URL is a general URL for the security service. When you call the URL, the first response is an http redirect response with the status code `307` in the response headers, and an entry with the key "Location" that contains the target URL for the security service. The URL is in this format: `https://gw.{$geo}-il101.gateway.prod.island.powerapps.com/securityservice/token`. For example, if your environment locates in US geo, the URL could be `https://gw.us-il101.gateway.prod.island.powerapps.com/securityservice/token`. If the 307 response status code isn't acceptable for you, you can manually construct the actual URL according to your FinOps environment location. The simplest way is to open `https://gw.as-il101.gateway.prod.island.powerapps.com/securityservice/token` with your browser, and then copy the address in address bar.
 
-> [!IMPORTANT]
-> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
+<!-- > [!IMPORTANT]
+> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step. -->
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
@@ -416,14 +416,14 @@ The following example shows sample body content.
 {
     "id": "reserve-0",
     "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "productId": "iv_contoso_product",
     "quantity": 1,
     "quantityDataSource": "iv",
     "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "iv_contoso_site",
+        "locationId": "iv_contoso_location",
         "colorId": "red",
         "sizeId": "small"
     }
@@ -517,11 +517,11 @@ The following code shows an example of body content.
 {
     "id": "unreserve-0",
     "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "productId": "iv_contoso_product",
     "reservationId": "RESERVATION_ID",
     "dimensions": {
-        "siteid":"iv_postman_site",
-        "locationid":"iv_postman_location",
+        "siteid":"iv_contoso_site",
+        "locationid":"iv_contoso_location",
         "ColorId": "red",
         "SizeId": "small"
     },
@@ -699,7 +699,7 @@ Query(Url Parameters):
 Here's a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_contoso_product&siteId=iv_contoso_site&locationId=iv_contoso_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="exact-query-with-post-method"></a>On-hand exact query
@@ -762,11 +762,11 @@ The following example shows sample body content.
     "dimensionDataSource": "pos",
     "filters": {
         "organizationId": ["SCM_IV"],
-        "productId": ["iv_postman_product"],
+        "productId": ["iv_contoso_product"],
         "dimensions": ["siteId", "locationId", "colorId"],
         "values" : [
-            ["iv_postman_site", "iv_postman_location", "red"],
-            ["iv_postman_site", "iv_postman_location", "blue"],
+            ["iv_contoso_site", "iv_contoso_location", "red"],
+            ["iv_contoso_site", "iv_contoso_location", "blue"],
         ]
     },
     "groupByValues": ["colorId", "sizeId"],
@@ -783,8 +783,8 @@ The following example shows how to query all products in multiple sites and loca
         "productId": [],
         "dimensions": ["siteId", "locationId"],
         "values" : [
-            ["iv_postman_site_1", "iv_postman_location_1"],
-            ["iv_postman_site_2", "iv_postman_location_2"],
+            ["iv_contoso_site_1", "iv_contoso_location_1"],
+            ["iv_contoso_site_2", "iv_contoso_location_2"],
         ]
     },
     "groupByValues": ["colorId", "sizeId"],

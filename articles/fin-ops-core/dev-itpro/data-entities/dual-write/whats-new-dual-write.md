@@ -2,8 +2,10 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 01/29/2024
-ms.topic: article
+ms.date: 03/04/2024
+ms.topic: whats-new
+ms.custom: 
+  - bap-template
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -17,6 +19,35 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## March 2024
+Release notes for March 2024 releases of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+
+### Version 1.0.24031.1
+
+| Type | Number | Description | Status | 
+| --- | --- | --- | --- |
+| Bug | 3833504 | Critical bug fix for asynchronous processing with Dual-write. | General availability |
+| Bug | 3801381 | Bug fixes and code enhancements for the data synchronization pipeline between finance and operations apps and Dataverse. | General availability | 
+| Bug | 25500975 | <ul><li>Optimizing fetch for non-relational database tables to improve data sync performance between finance and operations apps and Dataverse.</li><li> Correcting column values for msdyn_datasyncexecutionsummary_elastic, sourceType, update count, and error count.</li></ul>  | General availability |
+
+### Global address book
+The March release of Dual-write GAB solution 3.5.2.35 contains the following bug fixes.
+
+| Feature | Description | Status |
+| ---|---|---|
+|Bug fix |Dataverse solutions must be CAB based by August 21st.|	General availability|
+|Bug fix |Dual-write Global address book plugin county isn't propagated properly in CE|	General availability|
+
+#### GAB solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.2.2 | 3.5.2.35 |
+| Dynamics365GABExtended | Yes | 3.5.2.2 | 3.5.2.35 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.2.2| 3.5.2.35 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.2.2 | 3.5.2.35 |
+| Dynamics365GABPartyCommon | Yes | 3.5.2.2 | 3.5.2.35 |
 
 ## January 2024
 Release notes for January 2024 releases of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>

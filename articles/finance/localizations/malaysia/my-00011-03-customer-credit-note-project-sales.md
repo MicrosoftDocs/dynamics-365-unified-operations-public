@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: ProjProjectsListPage, ProjJournalTable, ProjJournalTransEmpl, ResourceLookup, TaxGroupLookup, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, CustInvoiceJourLookup_MY, TaxTmpWorkTrans, ProjInvoiceEditLines,  SysOperationSandboxForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia

@@ -6,7 +6,7 @@ description: This article provides information that will help you get started wi
 author: gionoder
 ms.author: gionoder
 ms.audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.service: dynamics-365-finance
 ms.topic: how-to
 ms.date: 11/28/2022

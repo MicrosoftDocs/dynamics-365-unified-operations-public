@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This article reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
 
 -   Working in Microsoft Azure
--   Working with Azure Active Directory (Azure AD)
+-   Working with Microsoft Entra ID
 -   Running a web client in multiple browsers
 
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products.
@@ -56,7 +56,7 @@ Excel &gt; VSTO (.NET) Add-in &gt; Windows Communication foundation (WCF) &gt; A
 
 #### Finance and operations
 
-Excel &gt; Office Web Add-in (JS + HTML) &gt; JavaScript OData API (Olingo) &gt; Authentication through Azure Active Directory (AAD) &gt; AX OData services on the AOS &gt; AX Entities &gt; AX LINQ provider &gt; AX Database
+Excel &gt; Office Web Add-in (JS + HTML) &gt; JavaScript OData API (Olingo) &gt; Authentication through Microsoft Entra ID (Microsoft Entra ID) &gt; AX OData services on the AOS &gt; AX Entities &gt; AX LINQ provider &gt; AX Database
 
 ### Office Add-in explained
 
@@ -99,7 +99,7 @@ To retrieve the resulting workbook, click **Create workbook** in the app bar.
 Click **View related form** to see the data that the entity exposes. This button is only enabled for entities that have a **FormRef** property value.
 
 ## Document management
-Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through the application and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. 
+Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through the application and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/Microsoft Entra tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. 
 
 [![Screen shot showing Document handling active option set to Yes.](./media/4_office.png)](./media/4_office.png) 
 

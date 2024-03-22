@@ -55,7 +55,7 @@ We recommend that you import and set up your Tax calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 |---|---|
-| 10.0.39 | Tax Calculation Data Model for ISV Integration 40.61.4 |
+| 10.0.39 | Tax Calculation Data Model for ISV Integration 40.65.5 |
 
 ## Enable a tax solution provider
 
@@ -74,7 +74,7 @@ To enable a tax solution provider, follow these steps.
 1. Import the tax calculation data models provided by Microsoft from the global repository or the Dataverse repository via Globalization Studio.
     - **Configuration providers** \> **Microsoft** \> **Repositories** \> **Global** \> **Open** \> **Import**
          
-        - Tax Calculation Data Model for ISV integration.xml (version 40.61.4)
+        - Tax Calculation Data Model for ISV integration.xml (version 40.65.5)
      
       > [!NOTE]
       > If you want to import the tax data model from the Dataverse repository, make sure you have enabled the option **Enable Finance and Operations User Impersonation in Dataverse** under **Power Platform admin center** \> **Environments** \> **your environment id** \> **settings** \> **Features**.
@@ -84,7 +84,7 @@ To enable a tax solution provider, follow these steps.
 
     - **Tax configurations** \> **Exchange** \> **Load from XML**
 
-        - ISV tax configuration.xml (version 40.61.4.x)
+        - ISV tax configuration.xml (version 40.65.5.x)
 
     - **Tax calculation** \> **Import from JSON**
 
@@ -113,7 +113,7 @@ For more information about supported countries/regions, contact your tax solutio
 
 ## Available tax solution providers
 
-- [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342)
-- [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284)
+- [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
+- [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

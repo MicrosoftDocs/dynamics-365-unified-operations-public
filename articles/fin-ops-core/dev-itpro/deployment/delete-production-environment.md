@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1.1
 This article explains the process of deleting a production [self-service environment](infrastructure-stack.md). Deletion of a production self-service environments is rarely done after a customer goes live with the software. However, it might be done several times as part of the preparation for the final deployment. In many cases, customers will go through the motions of deploying the production environment, applying code, bringing in data, and capturing how long each step of the process takes. If you want to delete and repeat the steps, this article will help you accomplish that task.
 
 > [!IMPORTANT]
-> Deletion of a production environment that's used for your business can have severe consequences. To help safeguard against mistakes, this process is available only to project owners in the Microsoft Dynamics Lifecycle Services project who are also from the same Azure Active Directory (Azure AD) tenant that owns the project.
+> Deletion of a production environment that's used for your business can have severe consequences. To help safeguard against mistakes, this process is available only to project owners in the Microsoft Dynamics Lifecycle Services project who are also from the same Microsoft Entra tenant that owns the project.
 
 ## Delete a production environment
 
@@ -51,3 +51,4 @@ After the final confirmation, the deletion operation starts. After it's complete
 > Solely for enterprises with an address or VAT registration in Denmark:  Microsoft will retain accounting materials (i.e., all documents that comprise bookkeeping, including recorded transactions and receipts) for legal entities in Denmark in a Microsoft-managed storage for 5 years from the end of the financial year the materials concern as required by Danish law. Learn more at: [Compliance with requirements for digital standard bookkeeping systems in Denmark](https://go.microsoft.com/fwlink/?linkid=2258103). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

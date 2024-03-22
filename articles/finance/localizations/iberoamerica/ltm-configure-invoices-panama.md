@@ -4,7 +4,7 @@ description: This article explains how to configure sales and purchase invoices 
 author: Cpicon85
 ms.date: 10/11/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon
 ms.custom: bap-template
 ---

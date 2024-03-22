@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28

@@ -19,8 +19,6 @@ ms.custom: bap-template
 
 This article describes how to set up users, security roles, and access rules for the Demand planning app. It explains how to configure security roles and duties in Supply Chain Management and how to assign security roles for accessing the app and its various features on Power Platform. It also explains how to set up row-level security within the Demand planning app.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## Configure security roles and duties in Supply Chain Management
 
 Demand planning features in Supply Chain Management are available only to users who have the required security roles and related duties. When you [enable Demand planning in Supply Chain Management](install-demand-planning.md), the feature adds a privilege named *Demand planning informational tile*. This privilege grants users access to a button that opens the Demand planning app from the home page of Supply Chain Management. The privilege is added to the out-of-box roles and duties that are listed in the following table.

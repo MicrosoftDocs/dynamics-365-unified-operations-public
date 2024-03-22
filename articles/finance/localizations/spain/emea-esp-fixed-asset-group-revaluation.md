@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetRevaluationGroup, AssetBookTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Spain
 # ms.search.industry: 
