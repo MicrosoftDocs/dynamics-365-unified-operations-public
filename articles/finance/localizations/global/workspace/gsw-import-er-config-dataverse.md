@@ -98,7 +98,7 @@ To import filtered configurations, follow these steps.
 
 ## Related resources
 
-- [Get started with Tax Calculation - Hibh-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
+- [Get started with Tax Calculation - High-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
 - [Globalization feature components](../e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
