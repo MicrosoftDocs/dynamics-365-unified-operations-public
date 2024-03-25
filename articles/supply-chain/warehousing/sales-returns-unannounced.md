@@ -27,7 +27,9 @@ This article explains how to set up Supply Chain Management to support unannounc
 To use the features described in this article, your system must meet the following requirements:
 
 - To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
-- If you also want to print return labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+- If you also want to print license plate labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+
+ <!--KFM: Find out whether SPS integration also requires 10.0.40 -->
 
 ## Receiving process for unannounced returns
 
@@ -68,25 +70,6 @@ During the *Return item receiving* process, workers must use the mobile app to i
 - **Item number and quantity** – The items that are being returned and the quantity that's being returned for each item.
 - **License plate ID** – The license plate of the location where the incoming items are stored after they're received.
 - **Disposition code** – Depending on the setup of the mobile device menu item, workers might be able to select a disposition code to specify what should be done with the returned products. If this option isn't shown in the app during receiving, a Supply Chain Management user must enter a disposition code when they complete the mixed license plate.
-
-## Print return labels from a mobile device (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-Return labels make it easier for staff to manage and track returns. You can set up your *Return item receiving* mobile device menu items to print a return label as workers receive a return order. If you enable this feature, the system always prints the label right after all steps in the related work template have been completed. Return labels can be printed as a part of the workflow for both blind-return and return-details receiving.
-
-Return labels resemble license plate labels and include a barcode that contains necessary information such as the relevant order lines from the related purchase order, information about the sender (such as their customer number), returned item numbers, and item quantities. The label also contains information such as the location the items were received to and the location where they should be put.
-
-This feature is useful if you always want to print a return label at the end of your returns receiving workflow. It will disregard any other printing options in the work template and print the label as the last step of the template.
-
-To add this capability, you must turn on the feature for the relevant mobile device menu items (as described later in this topic) and set up a label printer for the warehouse. For more information about how to set up a printer, see the following articles:
-
-- [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md)
-- [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
-- [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
-- [Document routing label layouts](document-routing-layout-for-license-plates.md)
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Set up unannounced sales return receiving
 
@@ -186,12 +169,22 @@ To enable workers to process unannounced returns, you must create a separate mob
     - **Barcode data policy** – Select the policy to use if multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](/dynamics365/supply-chain/warehousing/gs1-barcodes).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate.
     - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process. The disposition code determines the inventory status, work template, and location directive for the returned items.
-    - **Print label** – Set this option to *Yes* to always print a return label after all steps in the related work template have been completed (regardless of whether a print step is included in the work template). If the work template includes a print step, the position of that step in the sequence is disregarded and labels are always printed last. This is useful if you always want to print labels at the end of the process. If you want to allow the work template to print labels at a different point in the process, then set this option to *No*.
+    - **Print label** – Set this option to *Yes* to always print a license plate label after all steps in the related work template have been completed (regardless of whether a print step is included in the work template).  If you want to allow the work template to print the license plate label at a different point in the process, then set this option to *No*. The license plate label provides a bar code provides the license plate ID of the license plate where the worker places the returned items. For more information, see [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md).
     - **Return item receiving policy ID** – Select the [item receiving policy](#create-return-item-receiving-policies) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat steps 2 and 3 to create a menu item for the other process
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add the new menu items to an appropriate place in your mobile device menu structure.
+
+## Integrate return label printing with small parcel shipping
+
+<!--KFM:
+
+Introduce what this means and why it's useful (e.g., costs automatically handled by SPS provider (but I suppose ultimately paid by "us", the vendor; label encodes all the info we need to process the return). Explain what the label contains (I suppose it's the return-details record ID, but check whether it can also or instead be a RMA-order ID, and whether other info might be in there).
+
+Then describe/summarize how to set up the integration--mostly just refer to https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping. If there are any differences or additional steps, call them out here. If that topic requires an update (maybe there's a new setting, I dunno), then go ahead and edit that topic too (with link back here), so it remains the go-to source for setting up SPS.
+
+-->
 
 ## Example scenarios
 
