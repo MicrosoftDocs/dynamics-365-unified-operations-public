@@ -31,7 +31,28 @@ TAXUNITCONVERSION(itemId, quantity, base unit, tax unit, invent dimension Id, pa
 
 `itemId`: *String*
 
-The Item Id defined in FinOps.
+The Item Id defined in Finance and Operations Apps.
+
+`quantity`: *Real*
+
+The quantity of original unit.
+
+`base unit`: *String*
+
+The unit of original transaction.
+
+`tax unit`: *String*
+
+The unit defined in tax configuration.
+
+`invent dimension Id`: *String*
+
+The invent dimension defined in Finance and Operations Apps transaction.
+
+`packaging`: *Bool*
+
+The packaging parameter from tax configuration.
+
 
 ## Return values
 
