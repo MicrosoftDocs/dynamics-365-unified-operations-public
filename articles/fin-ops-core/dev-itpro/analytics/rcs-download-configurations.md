@@ -18,6 +18,7 @@ ms.search.form: ERSolutionRepositoryTable
 # Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can use Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations. The ER tool provides access to the list of configurations that have been configured in each instance of RCS that has been provisioned for your company. You can use this feature to import configurations that you configured in an RCS instance into the current instance. After configurations are imported, they can be used to handle incoming documents or generate outgoing electronic documents.
 
