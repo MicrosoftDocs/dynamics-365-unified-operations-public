@@ -51,16 +51,6 @@ Follow these steps to assign the number of positive days to an item coverage gro
 1. Select an existing coverage group or create a new one.
 1. On the **General** FastTab, set **Positive days** to the number of days that you want to use for this coverage group.
 
-<!--KFM: I expected to find a setting here, but I didn't. How do we override positive days at the master plan level?
-
-## Assign the number of dynamic positive days to a master plan
-
-1. Go to **Master planning \> Setup \> Plans \> Master plans**.
-1. Select an existing plan or create a new one.
-1.  
-
--->
-
 ## Example scenarios
 
 This section provides few example scenarios to help you understand how dynamic positive days work.
