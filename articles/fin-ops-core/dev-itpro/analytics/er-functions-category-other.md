@@ -2,11 +2,9 @@
 title: List of ER functions in the business domain–specific category
 description: This article provides information about the business domain–specific functions that are supported in Electronic reporting (ER).
 author: kfend
-ms.date: 12/12/2019
-ms.prod: 
-ms.technology: 
+ms.date: 03/25/2024
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
@@ -38,7 +36,7 @@ Electronic reporting (ER) domain-specific functions can be used to perform calcu
 | [NumSeqValue](er-functions-other-numseqvalue.md) | This function returns a *String* value that represents the new generated value of a number sequence, based on the specified number sequence, scope, and scope ID. The scope ID equals the company code that is supplied by the context that the ER format is run under. |
 | [RoundAmount](er-functions-other-roundamount.md) | This function returns a *Real* value that represents the result of rounding the specified amount to the specified number of decimal places according to the specified rounding rule. |
 | [TableName2ID](er-functions-other-tablename2id.md) | This function returns a numeric representation of the table ID for the specified table name as an *Integer* value. |
-| [TaxUnitConversion](er-functions-other-taxunitconversion.md) | This function returns a *Real* value that represents the quantity result of converting the specified unit from transaction to the specified unit in tax configuration. And it should be noticed that this function requires context that from an original sourcing system. The method `ConverUnit` in interface `IExternalAPIProvider` must be implemented in a sourcing ERP environment. |
+| [TaxUnitConversion](er-functions-other-taxunitconversion.md) | This function returns a *Real* value that represents the quantity result of converting the specified unit from a transaction to the specified unit in a tax configuration. This function requires context that's from an original sourcing system. The method `ConverUnit` in interface `IExternalAPIProvider` must be implemented in a sourcing ERP environment. |
 
 ## Additional resources
 
