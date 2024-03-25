@@ -59,7 +59,7 @@ To use a fixed receipt price for a product, configure the following:
   - Fixed receipt price loss
   - Fixed receipt price offset
 
-For more information, go to [Fixed receipt price](/supply-chain/cost-management/fixed-receipt-price.md).
+For more information, see [Fixed receipt price](../../supply-chain/cost-management/fixed-receipt-price.md).
 
 ## Purchase charges and stock variation posting
 
@@ -79,7 +79,7 @@ On the **Inventory posting profile** page, you must specify the main accounts fo
 > [!NOTE]
 > The **Charge** posting type isn't used when the **Post to charge account in ledger** parameter is selected.
 
-For more information, go to [Post to charge account accounting principle](/supply-chain/cost-management/post-to-charge-account-accounting-principle.md).
+For more information, see [Post to charge account accounting principle](../../supply-chain/cost-management/post-to-charge-account-accounting-principle.md).
 
 ## Sample posting profile configuration
 
@@ -106,7 +106,7 @@ The following table shows examples of the default posting types with sample main
 | Stock variation | 600170 | Stock variation | Expense | Credit | No | Both | | This account is used when: <ul><li>There's a difference in the unit price between product receipt and invoice.</li><li>Charges are posted to the item.</li><li>Indirect costs have been added to the purchased items. </li><li>The offset to this account is the Purchase expenditure, uninvoiced account.</li></ul> |
 | Purchase, accrual | 200140 | Accrued Purchases | Liability | Credit | Y | P | |Used when a purchase order product receipt is posted and the option to accrue purchase amounts is enabled. |
 | Accrued sales tax on receipt | 250500 | Accrued Sales Tax | Liability | Credit | Y | Both  | |This account is used when you select the **Post physical tax** option on the **Inventory and warehouse management parameters** and you have a purchase order with tax. The amount is posted when you update the purchase order physically (product receipt), and reversed when you post the purchase order financially (invoice). |
-| Fixed asset receipt (Fixed asset debit*) | 180100 | Tangible fixed assets | Asset | Debit | N | Both | Both | This account is used when you select the option on the purchase order line for Fixed assets. The purchase order integration has been configured to acquire the fixed asset upon product receipt or invoice. For more information about Fixed asset purchase order integration, go to [Acquire assets through procurement](/fixed-assets/acquire-assets-procurement). |
+| Fixed asset receipt (Fixed asset debit*) | 180100 | Tangible fixed assets | Asset | Debit | N | Both | Both | This account is used when you select the option on the purchase order line for Fixed assets. The purchase order integration has been configured to acquire the fixed asset upon product receipt or invoice. For more information about Fixed asset purchase order integration, see [Acquire assets through procurement](../fixed-assets/acquire-assets-procurement). |
 | Purchase expenditure for expense | 618900 | Miscellaneous expense | Expense | Debit | N | Both | |Used when posting a product receipt or invoice for a purchase order where the items aren't stocked, or a procurement category is used. |
 | Prepayment | 132190 | Prepaid expense | Asset | Debit | N | Both | | Used when processing a prepayment invoice on a purchase order. |
 
@@ -115,11 +115,11 @@ The following table shows examples of the default posting types with sample main
 
 ## Fixed asset posting with purchase orders
 
-If you use the **Fixed assets** module and plan to purchase fixed assets through purchase orders, configure the **Fixed asset receipt** posting type on the **Purchase order** tab of the **Inventory posting profile** page. For more information, see [Fixed assets integration](/fixed-assets/fixed-asset-integration.md) and [Create and acquire assets from Accounts payable](/fixed-assets/tasks/create-acquire-assets-accounts-payable.md).
+If you use the **Fixed assets** module and plan to purchase fixed assets through purchase orders, configure the **Fixed asset receipt** posting type on the **Purchase order** tab of the **Inventory posting profile** page. For more information, see [Fixed assets integration](../fixed-assets/fixed-asset-integration.md) and [Create and acquire assets from Accounts payable](../fixed-assets/tasks/create-acquire-assets-accounts-payable.md).
 
 ## Prepayment purchase order invoice posting
 
-If you plan to use the **Prepayment invoice** feature for purchase orders, the **Prepayment** posting type must be selected on the **Purchase order** tab on the **Inventory posting profile** page. For more information, see [Prepayment invoices vs. prepayments](/accounts-payable/prepayments-invoices-vs-prepayments.md).
+If you plan to use the **Prepayment invoice** feature for purchase orders, the **Prepayment** posting type must be selected on the **Purchase order** tab on the **Inventory posting profile** page. For more information, see [Prepayment invoices vs. prepayments](../accounts-payable/prepayments-invoices-vs-prepayments.md).
 
 ## Purchase requisition and purchase order confirmation posting
 
@@ -147,4 +147,4 @@ Some benefits of using procurement categories for vendor invoices include:
 
 ## Consignment inventory posting
 
-Consignment inventory uses the same ledger posting as other purchased items. The key difference is that when the inventory is received, no ledger transactions are recorded. To transfer ownership to the organization when an **Inventory ownership change** journal is posted, a voucher is generated to record the cost of the item. For more information, see [Set up consignment](/supply-chain/inventory/consignment.md).
+Consignment inventory uses the same ledger posting as other purchased items. The key difference is that when the inventory is received, no ledger transactions are recorded. To transfer ownership to the organization when an **Inventory ownership change** journal is posted, a voucher is generated to record the cost of the item. For more information, see [Set up consignment](../../supply-chain/inventory/consignment.md).
