@@ -2,10 +2,10 @@
 title: Download ER configurations from the Global repository of Configuration service
 description: This article explains how to download Electronic reporting (ER) configurations from the Global repository of Configuration service.
 author: kfend
-ms.date: 06/02/2020
+ms.date: 03/25/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
