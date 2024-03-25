@@ -31,11 +31,11 @@ This article describes enhanced filtering capabilities for Regulatory Configurat
 
 To make it easier to discover specific or related configurations you can apply filters, either individually or as a group. For example, to find a single type of 'configurable business documents that are related to vendor invoices, you could apply a **Business document type** filter to search for that type of document. 
 
-[![Filter section for Global repository.](../media/rcs-enhanced-filter-section.JPG)](/media/rcs-enhanced-filter-section.JPG) 
+[![Filter section for Global repository.](/media/rcs-enhanced-filter-section.JPG) 
 
 You can further refine the search by selecting document type, for example 'vendor invoice' and clicking **Apply filter**. The following example shows the results when filtering on **Business document type** with the document type added. 
 
-[![Applied filter and Import for business document type.](../media/rcs-enhanced-filtering-applied.JPG)](/media/rcs-enhanced-filtering-applied.JPG) 
+[![Applied filter and Import for business document type.](/media/rcs-enhanced-filtering-applied.JPG) 
 
 Filtered results can be imported into a users RCS repository or a Dynamics 365 Finance environment, either individually or as a set. To do this, select the group of configurations, and click **Import**.
 
