@@ -49,9 +49,11 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 ## What are the limitations of the Analyze demand plans with Copilot? How can users minimize the impact of these limitations when using the system?
 
-The AI-generated result will always be in US English.
+Copilot displays a maximum of ten results, ordered by significance. Results of equal significance are ordered arbitrarily. Copilot won't indicate whether results exist beyond the tenth result that are equally significant to the tenth result.
 
-AI-generated content shouldn't be used without manual review or supervision.
+The AI-generated result are always presented in US English.
+
+AI-generated content should not be used without manual review or supervision.
 
 ## What operational factors and settings allow for effective and responsible use of the Analyze demand plans with Copilot?
 
