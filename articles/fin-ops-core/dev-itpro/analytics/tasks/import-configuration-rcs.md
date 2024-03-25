@@ -6,7 +6,6 @@ ms.date: 03/25/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
