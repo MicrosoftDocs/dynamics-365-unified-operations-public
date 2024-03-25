@@ -3,15 +3,15 @@ title: TAXUNITCONVERSION ER function
 description: This article provides information about how the TAXUNITCONVERSION Electronic reporting (ER) function is used.
 author: johnmichalak
 ms.date: 03/25/2024
-ms.prod: 
-ms.technology: 
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: epodkolzina
 ms.search.validFrom: 2024-04-26
 ms.dyn365.ops.version: App AX10.0.40/Plat Update64
-ms.assetid: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
@@ -24,41 +24,41 @@ The `TAXUNITCONVERSION` function returns a *Real* value that represents the quan
 ## Syntax
 
 ```vb
-TAXUNITCONVERSION(itemId, quantity, base unit, tax unit, invent dimension Id, packaging)
+TAXUNITCONVERSION(itemId, quantity, base unit, tax unit, invent dimension ID, packaging)
 ```
 
 ## Arguments
 
 `itemId`: *String*
 
-The Item Id defined in Finance and Operations Apps.
+The Item ID defined in Finance and Operations Apps.
 
 `quantity`: *Real*
 
-The quantity of original unit.
+The quantity of the original unit.
 
 `base unit`: *String*
 
-The unit of original transaction.
+The unit of the original transaction.
 
 `tax unit`: *String*
 
-The unit defined in tax configuration.
+The unit is defined in the tax configuration.
 
 `invent dimension Id`: *String*
 
-The invent dimension defined in Finance and Operations Apps transaction.
+The invent dimension defined in the finance and operations apps transaction.
 
 `packaging`: *Bool*
 
-The packaging parameter from tax configuration.
+The packaging parameter is from the tax configuration.
 
 
 ## Return values
 
 *Real*
 
-The converted quantity of tax unit.
+The converted quantity of the tax unit.
 
 ## Example
 
