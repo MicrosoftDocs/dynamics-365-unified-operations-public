@@ -63,8 +63,8 @@ For example, a formula item is set up in the following way:
     - **Quantity:** 10
     - **Plan group:** Organic oils
     - **Priority:** 1
-    - **Available on-hand:** 4, with an expiry date of today \+ 5 days
-    - **Lead time:** 1 day
+    - **Available on-hand:** 4, with an expiry date of today \+ five days
+    - **Lead time:** One day
 
 - **Material B (Substitute for material A):**
 
@@ -72,6 +72,6 @@ For example, a formula item is set up in the following way:
     - **Plan group:** Organic oils
     - **Priority:** 2
     - **Available on-hand:** 0
-    - **Existing purchase order:** Qty 6, with an expected receipt date of today \+ 6 days, with 10 negative days
+    - **Existing purchase order:** Qty 6, with an expected receipt date of today \+ six days, with 10 negative days
 
-Master planning first selects material A, which has an available quantity of *4*. Because the required quantity is *10*, and there isn't enough of material A, master planning checks whether it can use the existing purchase order for the substitute (material B) for the remaining quantity. However, because the available receipt date of the substitute is later than the expiry date of the on-hand inventory of material A, the substitute isn't used. Instead, master planning creates a planned order for a quantity of *6* of material A to fulfill the remaining material that's required.
+Master planning first selects material A, which has an available quantity of *4*. Because the required quantity is *10*, there isn't enough of material A. Therefore, master planning determines whether it can use the existing purchase order for the substitute (material B) for the remaining quantity. However, because the available receipt date of the substitute is later than the expiry date of the on-hand inventory of material A, the substitute isn't used. Instead, master planning creates a planned order for a quantity of *6* of material A to fulfill the remaining material that's required.
