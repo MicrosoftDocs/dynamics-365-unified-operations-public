@@ -1,7 +1,7 @@
 ---
 title: Discontinue configurations in the RCS Global repository
 description: This article describes how to discontinue configurations in the RCS Global repository.
-author: gionoder
+author: filatovm
 ms.date: 03/25/2024
 ms.topic: how-to
 ms.custom: 
@@ -9,7 +9,7 @@ ms.custom:
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: filatovm
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
 ms.assetid: 
