@@ -2,12 +2,12 @@
 title: Import updated versions of ER configurations
 description: This article explains how to import updated versions of Electronic reporting (ER) configurations from the Global repository of the Configuration service.
 author: kfend
-ms.date: 06/09/2020
+ms.date: 03/25/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-05-31
@@ -19,6 +19,7 @@ ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 # Import updated versions of ER configurations
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE[banner](../../../finance/includes/rsc-to-gsw-banner.md)]
 
 Electronic reporting (ER) [repositories](general-electronic-reporting.md#Repository) are used to share [ER configurations](general-electronic-reporting.md#Configuration). You can [import](download-electronic-reporting-configuration-lcs.md) ER configurations from different repositories into your instance of Microsoft Dynamics 365 Finance. When you import ER configurations, [configuration providers](general-electronic-reporting.md#Provider) can publish new versions repositories so that they can be shared.
 
