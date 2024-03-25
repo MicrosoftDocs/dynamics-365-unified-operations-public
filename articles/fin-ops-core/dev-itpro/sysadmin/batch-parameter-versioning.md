@@ -36,7 +36,7 @@ When you run a batch, you might receive an error message like "An error occurred
 
 ## How to version batch parameters
 
-The following examples shows how batch parameter versioning can be achieved in the **RunBaseBatch** or **SysOperationServiceController** implementation of a batch class.
+The following example shows how batch parameter versioning can be achieved in the **RunBaseBatch** or **SysOperationServiceController** implementation of a batch class.
 
 ```X++
 #define.Version1(1)
