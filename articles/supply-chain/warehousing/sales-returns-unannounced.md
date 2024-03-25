@@ -180,7 +180,9 @@ To enable workers to process unannounced returns, you must create a separate mob
 
 <!--KFM:
 
-Introduce what this means and why it's useful (e.g., costs automatically handled by SPS provider (but I suppose ultimately paid by "us", the vendor; label encodes all the info we need to process the return). Explain what the label contains (I suppose it's the return-details record ID, but check whether it can also or instead be a RMA-order ID, and whether other info might be in there).
+Introduce what this means and why it's useful (e.g., return shipping costs automatically handled by SPS provider (but I suppose ultimately paid by "us", the vendor), so customer doesn't have to pay). 
+
+Explain what the label contains (I suppose "our" postage address, and a bar code with the return-details record ID (or RMA-order ID?), maybe more (such as a bar code that the SPS provider can scan, I dunno)).
 
 Then describe/summarize how to set up the integration--mostly just refer to https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping. If there are any differences or additional steps, call them out here. If that topic requires an update (maybe there's a new setting, I dunno), then go ahead and edit that topic too (with link back here), so it remains the go-to source for setting up SPS.
 
