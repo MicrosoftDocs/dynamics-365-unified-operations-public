@@ -6,8 +6,7 @@ description: This article explains the various ways that you can view journal en
 author: aprilolson
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
