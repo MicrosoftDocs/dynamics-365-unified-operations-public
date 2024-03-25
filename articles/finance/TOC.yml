@@ -4793,6 +4793,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?context=/dynamics365/context/finance
             - name: TableName2ID
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/finance
+            - name: TaxUnitConversion
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-taxunitconversion.md?context=/dynamics365/context/finance
           - name: Type conversion
             items: 
             - name: Type conversion functions
