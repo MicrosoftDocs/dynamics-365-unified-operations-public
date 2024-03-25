@@ -1860,6 +1860,8 @@ items:
           href: sysadmin/priority-based-batch-scheduling.md
         - name: Real async feature enhancements
           href: dev-tools/real-async.md
+        - name: Batch parameter versioning
+          href: sysadmin/batch-parameter-versioning.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
         - name: Daylight saving time support for active batch periods
