@@ -2,10 +2,10 @@
 title: RCS enhanced filtering in the RCS/Global repository
 description: This article describes enhanced filtering capabilities for the RCS Global repository, which have been improved to include the additional filters.
 author: kfend
-ms.date: 04/24/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 03/25/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -19,6 +19,7 @@ ms.search.form: ERSolutionTable, ERWorkspace
 # RCS enhanced filtering options for finding configurations in the RCS/Global repository
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 This article describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the ability to filter with the following criteria: 
 - **Country/region** - Based on ISO country codes  
