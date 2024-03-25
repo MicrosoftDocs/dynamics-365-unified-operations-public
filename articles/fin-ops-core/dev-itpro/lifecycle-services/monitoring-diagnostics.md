@@ -139,7 +139,7 @@ You can use the filters on this page to narrow the information logs. Here are so
 > The page doesn't load data by default. To load the data that is required in order to show the page, you must select the time duration and then select **Submit time**.
 
 > [!IMPORTANT]
-> The Activity monitoring tool retains data for only 30 days.
+> The Activity monitoring tool retains data for only 16 days.
 
 ### Raw information logs
 
