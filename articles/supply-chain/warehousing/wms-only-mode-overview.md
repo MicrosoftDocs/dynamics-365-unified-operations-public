@@ -39,11 +39,11 @@ The solution is very flexible. Therefore, you can choose the configuration of fe
 
 - Use Supply Chain Management to handle only warehouse operations, and use an external system to handle all orders and financial processing.
 :::image type="content" source="media/wms-only-ERP-WOM-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-ERP-WOM-integration.svg":::
-For this type of implementation, you must configure the warehouse management processes as part of Supply Chain Management. For a more detailed description of this process and the related processes, see [Warehouse management only mode with External shared warehouse processing](wms-only-mode-external-erp.md).
+For this type of implementation, you must configure the warehouse management processes as part of Supply Chain Management. For a more detailed description of this process and the related processes, see [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
 
 - Create a separate legal entity in the Supply Chain Management deployment that manages the warehouse management processes for Dynamics 365 itself, including tracking the ownership of shared items using an owner inventory dimension.
 :::image type="content" source="media/wms-only-D365-shared-warehouse-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-D365-shared-warehouse-integration.svg":::
- For a more detailed description of this process and the related processes, see [Warehouse management only mode with external shared warehouse]((wms-only-mode-external-shared-warehouse.md)).
+ For a more detailed description of this process and the related processes, see [Warehouse management only mode with external shared warehouse](wms-only-mode-external-shared-warehouse.md).
 
 - Use Supply Chain Management to handle warehousing plus a wider range of processes (such as sales, purchase, and production orders), and also use it to handle warehouse operations for other ERP and order processing systems.
 :::image type="content" source="media/wms-only-D365-wms-and-ERP-WOM-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-D365-wms-and-ERP-WOM-integration.svg":::
