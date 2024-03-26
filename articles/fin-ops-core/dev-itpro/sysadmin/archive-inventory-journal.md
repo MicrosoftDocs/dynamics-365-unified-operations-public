@@ -18,14 +18,14 @@ This article explains how to archive data for inventory journal with Dataverse l
 ## Prerequisites 
 
 The following prerequisites must be met before you archive inventory journal data:
- - The ledger period of inventory journal which need be archived must be closed.
+ - The ledger period of inventory journal, which need be archived must be closed.
  - The period must be at least one year before the from-period date of the archive. 
 
-## Turn on the features in Supply Chain Management  
+## Turn on the feature in Dynamics 365 Supply Chain Management  
 
-If your system doesn't already enable the features, follow these steps:
-1. Go to **Feature management**.
-2. Enable **Archive with Dataverse long term retention** feature. This feature moves inventory journal to Dataverse long term retention and replicates the data to the history table. 
+1. In Dynamics 365 Finance and Operations, go to **Feature management**.
+2. Select the **Archive with Dataverse long term retention** feature for overall archival service integration. This feature enables all supported Dynamics 365 Finance and Operations functional scenarios for archiving with Dataverse long-term retention.
+3. The **Archive with Dataverse long term retention** workspace should be available in the **Workspaces** list in Finance and Operations.
 
 
 ### Schedule the long term retention job 
@@ -60,6 +60,6 @@ To view the historical data, follow these steps.
 2. A list of long term retention jobs is shown. Select the job where **Job status** is **Completed**.
 3. Select **View historical data** to view the data in the history table. 
 
-###C apacity reports 
+### Capacity reports 
 
 The capacity consumed by Inventory journal tables that are archived with Dataverse long term retention appear in the Power Platform admin center, under the database storage capacity reports. The capacity consumed by the live and history tables in the Dynamics 365 Finance and Operations tables are available in the Finance section of the Power Platform admin center capacity reports. 
