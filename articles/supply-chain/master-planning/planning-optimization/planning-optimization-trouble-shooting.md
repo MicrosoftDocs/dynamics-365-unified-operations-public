@@ -272,6 +272,10 @@ This is related to a pending feature that is planned as part of the support for 
 
 **Fix:** Avoid CTP calculations when Planning Optimization is enabled until CTP support is available.
 
+## Error message on active planning dimensions not matching
+
+If you receie the error *Supply setting with id: REQITEMTABLE#XYZ for MinMax on product ABC does not match the active planning attributes for this product and was ignored*, please doublecheck the tracking dimensions for the item and the coverage dimensions. For example, if the item is being serial number tracked, this dimension cannot be used as a coverage dimension, as it will not be supplied on specific serial numbers. Make sure to uncheck the serial number as a coverage dimension, or change item coverage group if not needed. 
+
 ## Additional resources
 
 - [Get started with master planning](get-started.md)
