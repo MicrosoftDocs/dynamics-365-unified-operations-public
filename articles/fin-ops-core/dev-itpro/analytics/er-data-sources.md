@@ -1,20 +1,18 @@
 ---
 title: Supported data source types for ER components
-description: This article explains the data sources that are supported in the Electronic reporting (ER) framework.
+description: Learn about the data sources that are supported in the Electronic reporting (ER) framework, including how to add new data sources.
 author: NickSelin
-ms.date: 04/28/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Release 7.0.0
+ms.topic: article
+ms.date: 04/28/2023
 ms.custom: bap-template
-ms.assetid: 
+ms.reviewer: kfend
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: ERSolutionTable, EROperationDesigner, ERModelMappingDesigner, ERExpressionDesignerFormula
+ms.dyn365.ops.version: Release 7.0.0
+ms.assetid: 
 ---
 
 # Supported data source types for ER components

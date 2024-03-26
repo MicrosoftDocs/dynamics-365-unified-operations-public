@@ -1,15 +1,13 @@
 ---
 title: Loyalty extension sample
-description: This article explains how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
+description: Learn how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
 author: ShalabhjainMSFT
-ms.date: 05/15/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: shajain
+ms.topic: article
+ms.date: 05/15/2017
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-05-15
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: 

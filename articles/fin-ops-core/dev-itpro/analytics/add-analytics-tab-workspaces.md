@@ -1,15 +1,13 @@
 ---
 title: Add analytics to workspaces by using Power BI Embedded
-description: This article shows how to embed a Power BI report on the Analytics tab of a workspace.
+description: Learn how to embed a Power BI report on the Analytics tab of a workspace, including prerequisites and how to add resources and controls.
 author: RichdiMSFT
-ms.date: 06/21/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: richdi
+ms.topic: article
+ms.date: 06/21/2017
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---

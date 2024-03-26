@@ -1,13 +1,13 @@
 ---
 title: Migrate to the Commerce SDK
-description: This article explains how to migrate to the Commerce software development kit (SDK).
+description: Learn how to migrate to the Commerce software development kit (SDK) and how the SDK simplifies the Commerce developer and upgrade experience.
 author: josaw1
-ms.date: 05/03/2023
+ms.author: josaw
 ms.topic: article
+ms.date: 05/03/2023
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
 ms.search.validFrom: 2021-02-11
 ms.dyn365.ops.version: AX 10.0.19
 ---
