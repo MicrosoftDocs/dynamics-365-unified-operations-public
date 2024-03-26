@@ -1,5 +1,5 @@
 ---
-title: Rolling forecasts (preview)
+title: Rolling forecasts
 description: Rolling forecasts let you establish a regular schedule by which your time series can automatically update and extend their forecast horizon based on the latest data and assumptions.
 author: t-benebo
 ms.author: benebotg
@@ -14,12 +14,9 @@ ms.collection:
   - bap-ai-copilot
 ---
  
-# Rolling forecasts (preview)
+# Rolling forecasts
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until April 1 -->
 
 Rolling forecasts let you establish a regular schedule by which your time series can automatically update and extend their forecast horizon based on the latest data and assumptions. Rolling forecasts help to align the demand planning process with the changing business environment and improve the accuracy and reliability of the forecasts.
 
@@ -37,8 +34,6 @@ The following illustration shows an example of when rolling forecast processes c
 :::image type="content" source="media/rolling-forecast-processes.svg" alt-text="Example of rolling forecast processes and output" lightbox="media/rolling-forecast-processes.svg":::
 
 -->
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## How to use rolling forecasts
 

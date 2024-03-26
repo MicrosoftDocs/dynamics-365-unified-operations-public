@@ -25,8 +25,6 @@ When you've finished creating, analyzing, and editing a forecast, you can export
 
 ## Download time series values as a CSV file
 
-<!-- KFM: We can now create and schedule profiles for CSV exports instead of using the process described here. This topic requires updating. -->
-
 You can download the data table from any selected time series as a CSV file that you can open in Excel, for example.
 
 1. Open the time series that you want to export from.
