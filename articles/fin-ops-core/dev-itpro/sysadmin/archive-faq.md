@@ -16,7 +16,7 @@ ms.custom:
 
 ## Does testing archiving with Dataverse long-term retention require a sandbox environment?
 
-Yes, it requires use of a Tier-2 or greater Sandbox instance. It will not work on Tier CHE. 
+Yes, it requires use of a Tier-2 or greater Sandbox instance. It won't work on Tier CHE. 
 
 ## After data is archived, can I access the live data and the archived data from Dataverse long term retention?
 
@@ -38,9 +38,9 @@ Purge history is planned for a future release.
 
 For full savings, users can purge data from history tables.
 
-## Does this feature archive related tables?
+## Are related tables archived by this feature?
 
-No. Only the data from the live application tables that are in the scenario is archived. Dependent transactions outside the supported archive scenario aren't archived. For example, archiving of the Inventory Transaction table doesn't archive its original transactions. Administrators must set up archiving of the SalesOrder table separately.
+No, only the data from the live application tables that are in the scenario is archived. Dependent transactions outside the supported archive scenario aren't archived. For example, archiving of the Inventory Transaction table doesn't archive its original transactions. Administrators must set up archiving of the SalesOrder table separately.
 
 ## I linked my Finance environment with a Dataverse environment and ran a successful archival job from my workspace. Can I make a change to relink the Finance environment to a new Power Apps/CE environment?
 
@@ -48,7 +48,7 @@ No, changes cause data loss and shouldn't be made.
 
 ## I ran a successful archival job from my archival workspace in Finance. When I refresh the Finance database with new production data, is my archived data refreshed with the same production Dataverse backup?
 
-No. Currently, a refresh of the Finance database doesn't automatically refresh Dataverse. You must refresh Dataverse separately from production.
+No, Currently, a refresh of the Finance database doesn't automatically refresh Dataverse. You must refresh Dataverse separately from production.
 
 ## There's no inventory closing for moving average transactions. Does this mean that we can't archive these transactions?
 
