@@ -54,6 +54,3 @@ No. Currently, a refresh of the Finance database doesn't automatically refresh D
 
 No, the inventory transaction archival scenario isn't limited for transactions. Moving average transactions and standard cost transactions can be archived if they have closed inventory.
 
-## What if I don't want to use long term retention? I just need to delete data from the Finance database.
-
-Purge history is planned for a future release.
