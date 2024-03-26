@@ -6,15 +6,15 @@ ms.author: gned
 ms.reviewer: twheeloc
 ms.topic: conceptual
 ms.date: 2/06/2024
-ms.custom:
-
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Finance archive with Dataverse long term retention FAQ (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-## Will testing archival with Dataverse long term retention require a sandbox environment?
+## Does testing archiving with Dataverse long-term retention require a sandbox environment?
 
 Yes, it requires use of a Tier-2 or greater Sandbox instance. It will not work on Tier CHE. 
 
@@ -30,7 +30,7 @@ Yes, an application-specific inquiry page is available so that you can view arch
 
 No, data restore from Dataverse long term retention to live tables isn't supported. 
 
-## What if I don't want to use long term retention? I just need to delete data from the Finance database.
+## What if I don't want to use long-term retention? I just need to delete data from the Finance database.
 
 Purge history is planned for a future release.
 
