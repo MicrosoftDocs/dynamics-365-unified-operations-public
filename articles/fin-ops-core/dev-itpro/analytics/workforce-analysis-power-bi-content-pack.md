@@ -55,6 +55,7 @@ Be sure to download the **Workforce metrics** Power BI content that applies to t
 > The .pbix files available in Lifecycle Services apply to finance and operations apps only.
 
 ## Understanding the data model and entities
+
 The following table shows the entities that the content was based on.
 
 | Entity                   | Contents                                                                            | Relationships with other entities |
