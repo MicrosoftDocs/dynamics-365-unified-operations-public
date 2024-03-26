@@ -274,7 +274,7 @@ This is related to a pending feature that is planned as part of the support for 
 
 ## Error message about active planning dimensions not matching
 
-<!--KFM: What is the user or system trying to do when this message is shown? -->If you might receive the following error:
+<!--KFM: What is the user or system trying to do when this message is shown? -->You might receive the following error:
 
 > Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
 
