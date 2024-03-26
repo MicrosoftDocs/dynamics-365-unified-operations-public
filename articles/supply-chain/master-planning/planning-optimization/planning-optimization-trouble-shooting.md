@@ -274,11 +274,11 @@ This is related to a pending feature that is planned as part of the support for 
 
 ## Error message about active planning dimensions not matching
 
-<!--KFM: What is the user or system trying to do when this message is shown? -->You might receive the following error:
+After running a master plan, you might receive the following error:
 
 > Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
 
-If you see this error, check the tracking and coverage dimensions for the identified product. For example, if the product is being tracked by serial number, this dimension <!--KFM: Which dimension?  --> can't be used as a coverage dimension because it <!--KFM: What is "it" referring to? --> won't be supplied on specific serial numbers <!--KFM: Is "on" the right word here? -->. Either deselect the serial number as a coverage dimension or change the item coverage group if not needed <!--KFM: If what isn't needed?  -->.
+If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is being tracked by serial number, then the serial number dimension can't be used as a coverage dimension because the system doesn't know which serial numbers should be supplied. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
 
 ## Additional resources
 
