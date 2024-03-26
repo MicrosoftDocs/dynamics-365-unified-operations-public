@@ -77,12 +77,12 @@ For a more detailed description of this process and the related processes, see [
 
 ## On-hand adjustments
 
-The changes in the inventory on-hand that happen when processing *Inbound and Outbound shipment orders* are handled by the *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* [message processing](../supply-chain-dev/message-processor.md) in the *LE1* legal entity. However, other warehouse movements such as a warehouse counting operation also need to make sure the inventory on-hand is the same between the *WOM* legal entity and any related order processing legal entities *LE1, ...*. For this, the *Warehouse management only mode* records all the changes in the warehouse inventory in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** and this data will be used to automatically create the **External inventory adjustments** for the relevant legal entities via the *Publish warehouse inventory update log updates* background process (running every 10 minutes by default).
+The changes in the inventory on-hand that happen when processing *Inbound and Outbound shipment orders* are handled by the *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* [message processing](../supply-chain-dev/message-processor.md) in the *LE1* legal entity. However, other warehouse movements such as a warehouse counting operation also need to make sure the inventory on-hand is the same between the *WOM* legal entity and any related order processing legal entities *LE1, ...*. For this, the *Warehouse management only mode* records all the changes in the warehouse inventory in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** and this data will be used to automatically create the **External inventory adjustments** for the relevant legal entities via the *Publish warehouse inventory update log updates* [process automation background process](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) (running every 10 minutes by default).
 
 You can use the **Warehouse management \> Periodic tasks \> Create external inventory adjustment journals** process to generate the real *Inventory adjustment journals* that will be used to update the on-hand inventory and thus keeping it synchronized between the two legal entities.
 
 To automatically post the created *Inventory adjustment journals* use the **Inventory management \> Periodic tasks \> CDS integration \> Post integration inventory journals**
-<!-- CHECK if we got to update in .40 -->
+<!-- CHECK-perlynne if we got the folder name updated for .40 -->
 
 > [!WARNING]
 > If the *Source systems* are related to *External warehouse management systems*, turn off the *Enable warehouse inventory update logs* for the *Inbound and Outbound shipment orders*. This will prevent your inventory on-hand from being updated by inventory adjustment journal processing.
@@ -132,13 +132,3 @@ If you use this setup example in an environment where you already have some rele
 
 > [!TIP]
 > When you *Release* products to the *WOM* legal entity, the *Source system item* data will be created for you automatically if you set the **Product maintenance rule** to *Maintain source system items* on the *PIM-D365* source system in *WOM*.
-
-<!--
-CHECK:
-Process automation
-Publish warehouse inventory update log updates
-
-
-**Enable warehouse inventory update logs**
--->
-
