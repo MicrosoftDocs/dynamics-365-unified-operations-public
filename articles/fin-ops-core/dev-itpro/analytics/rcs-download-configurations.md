@@ -1,18 +1,18 @@
 ---
 title: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
-description: This article provides information about how to import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS).
+description: Learn about how to import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS).
 author: kfend
+ms.author: filatovm
+ms.topic: how-to
 ms.date: 03/25/2024
-ms.topic: how-to 
 ms.custom: 
   - bap-template
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-ms.author: filatovm
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
 ms.search.form: ERSolutionRepositoryTable
+ms.dyn365.ops.version: 8.1
 ---
 
 # Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)

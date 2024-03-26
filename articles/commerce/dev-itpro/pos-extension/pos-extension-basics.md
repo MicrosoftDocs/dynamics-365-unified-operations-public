@@ -1,13 +1,13 @@
 ---
 title: POS extension basics
-description: Learn the basic concepts of Point of Sale (POS) extensions, including terminology, extension types, structures, and types of packages.
+description: This article describes the basic concepts of Point of Sale (POS) extension.
 author: josaw1
-ms.author: josaw
-ms.topic: article
 ms.date: 04/13/2021
-ms.reviewer: josaw
+ms.topic: article
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---

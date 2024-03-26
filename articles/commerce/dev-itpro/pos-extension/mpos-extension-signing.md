@@ -1,13 +1,13 @@
 ---
 title: Code signing a Modern POS (MSIX) extension package
-description: Learn how to code sign a Modern POS (MSIX) extension package and include certificates as they apply to the Retail software development kit.
+description: This article explains how to code sign a Modern POS (MSIX) extension package.
 author: josaw1
-ms.author: josaw
-ms.topic: article
 ms.date: 05/03/2023
-ms.reviewer: josaw
+ms.topic: article
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---

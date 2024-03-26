@@ -1,13 +1,13 @@
 ---
 title: Create an .appx file for a Modern POS extension package
-description: Learn how to create a Modern Point of Sale (MPOS) packaging project by using Microsoft Visual Studio 2017, including a list of steps for packaging projects.
+description: This article explains how to create a Modern Point of Sale (MPOS) packaging project by using Microsoft Visual Studio 2017.
 author: josaw1
-ms.author: josaw
-ms.topic: article
 ms.date: 05/03/2023
-ms.reviewer: josaw
+ms.topic: article
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---

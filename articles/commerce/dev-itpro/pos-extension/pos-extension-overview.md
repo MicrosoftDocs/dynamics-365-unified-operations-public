@@ -1,13 +1,15 @@
 ---
 title: POS extension overview
-description: Learn about how you can create point of sale (POS) extensions by using the new independent POS extension model and sealed software development kit (SDK).
+description: This article provides information about how you can create point of sale (POS) extensions by using the new independent POS extension model and sealed software development kit (SDK).
 author: josaw1
-ms.author: josaw
-ms.topic: overview
 ms.date: 05/03/2023
-ms.reviewer: josaw
+ms.topic: overview
+ms.prod: 
+ms.technology: 
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---

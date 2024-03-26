@@ -1,15 +1,13 @@
 ---
 title: Update the Document Routing Agent
-description: This article explains how to update the Document Routing Agent.
-author: RichdiMSFT
-ms.date: 05/14/2020
+description: Learn how to update, uninstall, and re-install the Document Routing Agent, including an outline of best practices.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
+ms.date: 05/14/2020
 ms.reviewer: sericks
+audience: IT Pro
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

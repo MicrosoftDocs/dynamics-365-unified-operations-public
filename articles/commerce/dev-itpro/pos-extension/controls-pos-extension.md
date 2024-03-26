@@ -1,13 +1,13 @@
 ---
 title: Use POS controls in extensions
-description: Learn how to use Point of Sale (POS) controls in extensions as it applies to the Retail devleopment kit, including examples of controls and functions.
+description: This article explains how to use Point of Sale (POS) controls in extensions.
 author: josaw1
-ms.author: josaw
-ms.topic: article
 ms.date: 04/13/2021
-ms.reviewer: josaw
+ms.topic: article
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---

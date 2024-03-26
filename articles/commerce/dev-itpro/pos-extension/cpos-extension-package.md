@@ -1,13 +1,13 @@
 ---
 title: Create a Cloud POS extension package
-description: Learn how to create a Cloud POS extension package, which can be deployed to either Cloud Scale Units or be self-hosted with lists for packaging for boht methods.
+description: This article explains how to create a Cloud POS extension package.
 author: josaw1
-ms.author: josaw
-ms.topic: article
 ms.date: 04/13/2021
-ms.reviewer: josaw
+ms.topic: article
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---
