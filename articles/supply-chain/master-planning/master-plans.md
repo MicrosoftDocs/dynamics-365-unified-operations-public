@@ -135,7 +135,7 @@ As a rule, the positive days are set to a number that is between the longest lea
 
 ### Dynamic positive days
 
-Dynamic positive days work like positive days but also consider the lead time. For more information, see [Dynamic positive days for last-minute orders](dynamic-positive-days.md).
+Dynamic positive days work like positive days, but they also consider the lead time. For more information, see [Dynamic positive days for last-minute orders](dynamic-positive-days.md).
 
 ### Negative days
 
