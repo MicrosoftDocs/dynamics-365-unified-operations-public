@@ -1847,6 +1847,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Item substitution for formulas
+          href: master-planning/item-substitution.md
         - name: Set up scrap to calculate raw material requirements
           href: master-planning/scrap-calculations.md
         - name: Master planning for products with limited shelf life
