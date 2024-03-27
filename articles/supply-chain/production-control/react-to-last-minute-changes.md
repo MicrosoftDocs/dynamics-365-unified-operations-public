@@ -20,7 +20,7 @@ Components or routes can often change at the last minute of the manufacturing pr
 
 ## Change BOM items on production orders
 
-Sometimes, a bill of materials (BOM) item must be changed on multiple production orders. These changes are common when a change of revision is applied to a raw item. To allow for such changes, you can change one BOM item to another on estimated or scheduled production orders. Alternatively, you can use all the existing on-hand inventory of an item and then substitute a new item for that item.
+Sometimes, a bill of materials (BOM) item must be changed on multiple production orders. These changes are common when a change or revision is applied to a raw item. To allow for such changes, you can change one BOM item to another on estimated or scheduled production orders. Alternatively, you can use all the existing on-hand inventory of an item and then substitute a new item for that item.
 
 ### Prerequisites to change BOM items on production orders
 
