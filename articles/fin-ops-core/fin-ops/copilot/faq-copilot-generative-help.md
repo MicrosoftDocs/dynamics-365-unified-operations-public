@@ -47,7 +47,7 @@ It's designed to aid new users to onboard, assist with problem-solving, and mini
 
 The evaluation of *Generative help and guidance with Copilot* was conducted through rigorous testing across various scenarios within finance and operations apps. Performance metrics include accuracy of information provided, user satisfaction ratings, reduction in support ticket volumes, and overall impact on user productivity and application usability.
 
-If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback helps improve the functionality.
+If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report). Your feedback helps improve the functionality.
 
 Microsoft might disable Copilot-driven features for selected customers if abuse of the functionality is detected.
 
