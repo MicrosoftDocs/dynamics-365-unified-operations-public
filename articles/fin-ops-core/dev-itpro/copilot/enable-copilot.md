@@ -54,7 +54,17 @@ Follow these steps to check the status of the **Sql row version change tracking 
 1. Return to the **License configuration** page, and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
-## <a name="install-copilot-app"></a>Step 2: Install the Copilot application in your finance and operations apps environment
+## Step 3: Enable Power Platform to publish bots with AI features
+
+To enable Power Platform to publish bots with AI features, follow these steps.
+
+1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Settings**.
+1. In the list, select the row where the **Name** is *Publish bots with AI features*.
+1. The **Publish bots with AI features** dialog opens. Set the slider to **Enabled**.
+1. Select **Save**.
+
+## <a name="install-copilot-app"></a>Step 4: Install the Copilot application in your finance and operations apps environment
 
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 
