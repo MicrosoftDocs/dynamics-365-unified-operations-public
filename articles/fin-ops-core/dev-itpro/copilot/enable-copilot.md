@@ -6,10 +6,11 @@ ms.author: cabeln
 ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 02/16/2024
+ms.custom: 
+  - bap-template
+ms.date: 03/27/2024
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
 ---
@@ -64,7 +65,17 @@ Follow these steps to enable your finance and operations apps to access your Dat
 1. Go to **Product \> Features**.
 1. Set **Finance and Operations in Dataverse** to *On*.
 
-## <a name="install-copilot-app"></a>Step 3: Install the Copilot application in your finance and operations apps environment
+## Step 3: Enable Power Platform to publish bots with AI features
+
+To enable Power Platform to publish bots with AI features, follow these steps.
+
+1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Settings**.
+1. In the list, select the row where the **Name** is *Publish bots with AI features*.
+1. The **Publish bots with AI features** dialog opens. Set the slider to **Enabled**.
+1. Select **Save**.
+
+## <a name="install-copilot-app"></a>Step 4: Install the Copilot application in your finance and operations apps environment
 
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 
