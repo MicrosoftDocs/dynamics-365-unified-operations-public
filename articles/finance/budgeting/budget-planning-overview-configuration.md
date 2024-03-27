@@ -4,7 +4,7 @@
 title: Budget planning overview
 description: This article describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
 author: SAURABHGUPTA
-ms.date: 03/11/2014
+ms.date: 03/11/2024
 ms.topic: overview
 ms.custom: evergreen 
 
