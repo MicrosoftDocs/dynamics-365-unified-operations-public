@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Business events in financial period close
 description: This article explains how to use business events in the financial period close business process to gain insights and provide internal controls.
 author: Sunil-Garg
-ms.date: 10/11/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 10/11/2019
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: Global 
 ms.search.validFrom: Platform update 26
+# ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-6-30 
-
 ---
 
 # Business events in financial period close
