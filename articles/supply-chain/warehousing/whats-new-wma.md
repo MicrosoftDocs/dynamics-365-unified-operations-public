@@ -20,6 +20,16 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.2.1.0
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- The minimum Android version has been switched to 5.
+- Fixed the managed configuration, and now it available for the uploaded APK in SOTI MobiControl.
+- Improved performance for a huge action list.
+- Enhanced authentication secret validation on the edit connection page.
+- Fixed an issue on certain Honeywell devices caused by the enter key.
+- Added the ability to change the minimum server timeout to 1 minute.
+
 ## Version 2.1.26.0
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
