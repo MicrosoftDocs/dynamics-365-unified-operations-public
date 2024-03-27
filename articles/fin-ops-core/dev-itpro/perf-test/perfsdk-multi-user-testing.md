@@ -21,7 +21,7 @@ This article explains how to run multi-user testing by using Microsoft Visual St
 > [!IMPORTANT]
 > Visual Studio 2019 is the last version of Visual Studio that includes web performance and load testing features and will be deprecated in the future. We suggest using Apache JMeter for performance testing. For more information, see [JMeter](https://jmeter.apache.org/).
 >
-> JMeter is owned by Apache, and therefore not supported by Microsoft. However, the following series of blog posts provides some helpful tips for using JMeter with Dynamics 365 finance and operations apps.
+> JMeter is owned by Apache, and therefore isn't supported by Microsoft. However, the following series of blog posts provides some helpful tips for using JMeter with Dynamics 365 finance and operations apps.
 >
 > - [Part 1 - Dynamics 365 finance and operations apps performance testing with JMeter - Introduction](https://community.dynamics.com/blogs/post/?postid=587b9524-30c9-422c-a5f8-4e3726f749b8)
 > - [Part 2 - Dynamics 365 finance and operations apps performance testing with JMeter - Execution](https://community.dynamics.com/blogs/post/?postid=4fc1ab59-1948-ee11-be6d-00224827e8f9)
