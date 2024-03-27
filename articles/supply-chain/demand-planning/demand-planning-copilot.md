@@ -70,8 +70,8 @@ The following table provides a quick reference to the predefined questions that 
 
 | Example question | Description |
 |---|---|
-| Largest shifts from Apr 24 to May 24 | <p>Compare two consecutive periods in the same year. The length of the period (day, week, or month) depends on the setup of the times series in your worksheet.</p><p>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the previous one-month period (April 2024).</p> |
-| Largest shifts from May 23 to May 24 | <p>Compare a selected period to the same period one year earlier. The length of the period (day, week, or month) depends on the setup of the times series in your worksheet.</p><p>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the one-month period of May 2023. |
+| Largest shifts from Apr 24 to May 24 | <p>Compare two consecutive periods in the same year. The length of the period (day, week, or month) depends on the setup of the time series in your worksheet.</p><p>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the previous one-month period (April 2024).</p> |
+| Largest shifts from May 23 to May 24 | <p>Compare a selected period to the same period one year earlier. The length of the period (day, week, or month) depends on the setup of the time series in your worksheet.</p><p>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the one-month period of May 2023. |
 
 ## Turn the Analyze demand plans with Copilot feature on or off
 
