@@ -1,5 +1,5 @@
 ---
-title: Install, enable, and set up the Demand planning app (preview)
+title: Install, enable, and set up the Demand planning app
 description: This article describes how to install, enable, and set up the Demand planning app for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Install, enable, and set up the Demand planning app (preview)
+# Install, enable, and set up the Demand planning app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 This article describes how to install, enable, and set up the Demand planning app for Microsoft Dynamics 365 Supply Chain Management. It explains how to use Power Platform admin center to install the Demand planning app in your tenant and set up the feature in Supply Chain Management.
 
@@ -56,7 +53,7 @@ Follow these steps to install the Demand planning app in Power Platform admin ce
 
 Follow these steps to enable and configure Demand planning in Supply Chain Management.
 
-1. In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the *(Preview) Demand Planning* feature.
+1. In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the *Demand Planning* feature.
 1. Go to **System administration** \> **Setup** \> **Demand planning app parameters**.
 1. On the **General** tab, in the **Demand planning app URL** field, enter the URL where the Demand planning app is installed.
 1. Go to **Master Planning** \> **Setup** \> **Master planning parameters**.
