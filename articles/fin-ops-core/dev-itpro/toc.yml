@@ -321,6 +321,8 @@ items:
             href: sysadmin/archive-so.md 
           - name: Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
             href: sysadmin/archive-inventory.md
+          - name: Archive Dynamics 365 Finance Tax transactions (preview)
+            href: sysadmin/archive-taxtrans.md
         - name: Dynamics 365 Finance archive with Dataverse long term retention FAQ (preview)
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
@@ -1858,6 +1860,8 @@ items:
           href: sysadmin/priority-based-batch-scheduling.md
         - name: Real async feature enhancements
           href: dev-tools/real-async.md
+        - name: Batch parameter versioning
+          href: sysadmin/batch-parameter-versioning.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
         - name: Daylight saving time support for active batch periods

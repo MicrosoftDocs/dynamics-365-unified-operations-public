@@ -97,7 +97,7 @@ The **Warehouse transactions** and **Inventory transactions** pages provide simi
 
 ## Archive warehouse transactions
 
-Because warehouse transactions and inventory transactions differ slightly in nature, the system can archive warehouse transactions more often than inventory transactions. Whenever warehouse work is completed (closed or canceled), the system archives all the related warehouse transactions. The archived warehouse transactions are still available through the user interface (UI), just as non-archived transactions are. However, they're moved from the storage that's optimized for fast inserts (active transactions) to the storage that's optimized for queries (archived transactions). The system can detect this distinction, and it takes the archived warehouse transactions into account when, for example, on-hand recalculation consistency checks are done or the **Trace inventory dimensions** page is used.
+Because warehouse transactions and inventory transactions differ slightly in nature, the system can archive warehouse transactions more often than inventory transactions. Whenever warehouse work is completed (closed or canceled), the system archives all the related warehouse transactions. The archived warehouse transactions are still available through the user interface (UI), just as nonarchived transactions are. However, they're moved from the storage that's optimized for fast inserts (active transactions) to the storage that's optimized for queries (archived transactions). The system can detect this distinction, and it takes the archived warehouse transactions into account when, for example, on-hand recalculation consistency checks are done or the **Trace inventory dimensions** page is used.
 
 The archival procedure is implemented by the *Archive warehouse inventory transactions* process automation background process. This process is automatically registered when you enable the *Warehouse-specific inventory transactions* feature. By default, it runs every 10 minutes. However, system administrators can change the recurrence properties, based on the actual system use.
 
@@ -114,6 +114,27 @@ To review the execution history of the *Archive warehouse inventory transactions
 1. On the **Background Processes** tab, in the grid, select the row where the **Name** field is set to *Archive warehouse inventory transactions*.
 1. Select **View most recent results** on the toolbar.
 1. The **Execution results** dialog box that appears shows a list of each process execution. Here, you can see whether each process succeeded and view its execution log.
+
+## Frequently asked questions
+
+This section provides answers to a few frequently asked questions about warehouse-specific inventory transactions.
+
+### Is Microsoft planning to decouple on-hand inventory from the InventTrans and WHSInventReserve tables?
+
+There are no current plans to decouple on-hand inventory from these tables.
+
+### What do the new transaction types represent and how are they used in the WHSInventoryTransactionTable table?
+
+The `WHSInventoryTransactionTable` table includes the following four types of transactions (as defined by `WHSInventoryTransactionTypeEnum`).
+
+- **Physical issue** – Represents an item being physically issued.
+- **Physical receipt** – Represents an item being physically received.
+- **Physical reservation** – Represents item reservations.
+- **Removed physical reservation** – Represents an explicit, separate transaction type for removing a reservation. All reservation-related transactions can be dropped during the archival process to save space, depending on your settings.
+
+### How does ItemSetId differ from a license plate, and is there any guidance on how to proceed with both going forward?
+
+`InventTrans`-based inventory wasn't designed to represent inventory operations (such as *issue*, *receipt*, and *reservation*) over a set of items. License plates (such as target license plates in warehouse work) are one example of such a *set of items*. From the perspective of the `InventTrans`-based inventory stack, a license plate is just a dimension similar to other storage dimensions in `InventDim`. The concept of item sets in the new inventory stack aims to address this gap. During initial picks, an item set is constructed, and subsequent operations (such as *put to stage*, *pick from stage*, and *put-away to bay door*) reuse that item set. This approach avoids recording redundant information about items being moved. However, license plates are still used in the new system.
 
 ## Additional resources
 

@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.39. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,18 +12,15 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.39. This version has a build number of 10.0.1860 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.39. This version has a build number of 10.0.1860 and is available on the following schedule:
 
 - **Preview of release:** January 2024
 - **General availability of release (self-update):** March 2024
 - **General availability of release (auto-update):** April 2024
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Features included in this release
 
@@ -31,8 +28,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | *Coming soon* | Enabled by default |
 | Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default |
+| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | *Coming soon* | Enabled by default |
+| Planning | Item substitution for formulas in Planning Optimization | [Item substitution for formulas](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution (Plan group) support for Planning Optimization* |
 | Warehouse management | [Optimize the customer returns process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-customer-returns-process) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default |
 | Warehouse management | Username/password and single-sign-on authentication for mobile devices | [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md) | Enabled by default |
 

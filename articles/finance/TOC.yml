@@ -1562,15 +1562,15 @@
         items:
         - name: Globalization services overview
           href: localizations/global/globalization-services-overview.md?context=/dynamics365/context/finance
-        - name: Globalization Studio workspace (preview)
+        - name: Globalization Studio workspace
           items:
-          - name: Regulatory Configuration Service merge to Globalization Studio workspace (preview)
+          - name: Regulatory Configuration Service merge to Globalization Studio workspace
             href: localizations/global/workspace/merge-rcs-to-gsw.md
-          - name: Globalization Studio workspace features (preview)
+          - name: Globalization Studio workspace features
             href: localizations/global/workspace/gsw-features.md
-          - name: Import Electronic reporting (ER) configurations from Dataverse (preview)
+          - name: Import Electronic reporting (ER) configurations from Dataverse
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
-          - name: Upload ER configurations and Globalization features as a Dataverse solution (preview)
+          - name: Upload ER configurations and Globalization features as a Dataverse solution
             href: localizations/global/workspace/gsw-upload-er-config.md
         - name: Regulatory configuration service (RCS)
           items:
@@ -4793,6 +4793,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?context=/dynamics365/context/finance
             - name: TableName2ID
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/finance
+            - name: TaxUnitConversion
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-taxunitconversion.md?context=/dynamics365/context/finance
           - name: Type conversion
             items: 
             - name: Type conversion functions

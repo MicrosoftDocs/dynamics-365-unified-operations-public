@@ -1,15 +1,15 @@
 ---
 title: Discontinue configurations in the RCS Global repository
 description: This article describes how to discontinue configurations in the RCS Global repository.
-author: gionoder
-ms.date: 02/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
+author: filatovm
+ms.date: 03/25/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: filatovm
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
 ms.assetid: 
@@ -18,6 +18,7 @@ ms.search.form: ERSolutionTable, ERWorkspace
 # Discontinue configurations in the RCS Global repository
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 This article describes how to discontinue configuration in the RCS Global repository. Previously, it was possible only to delete configurations that were no longer required. However now you can mark a released configuration as **Discontinued** in the RCS Global repository. With this functionality, you can also do the following: 
  

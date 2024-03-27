@@ -1819,6 +1819,8 @@
           href: master-planning/make-to-order-supply-automation.md
         - name: Negative days and dynamic negative days
           href: master-planning/more-about-dynamic-negative-days.md
+        - name: Dynamic positive days for last-minute orders
+          href: master-planning/dynamic-positive-days.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
         - name: Calculate requested ship dates for purchase orders
@@ -1847,6 +1849,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Item substitution for formulas
+          href: master-planning/item-substitution.md
         - name: Set up scrap to calculate raw material requirements
           href: master-planning/scrap-calculations.md
         - name: Master planning for products with limited shelf life
@@ -1877,6 +1881,8 @@
           href: master-planning/master-plans.md
         - name: Master planning setup wizard
           href: master-planning/master-planning-setup-wizard.md
+        - name: Exclude specific transactions or transaction types from master planning
+          href: master-planning/ignore-transaction-types.md
         - name: Generate a constrained plan
           href: master-planning/tasks/constrained-plan.md
       - name: Set up replenishment strategies
@@ -2531,13 +2537,13 @@
           href: pim/country-of-origin.md
         - name: Dual-use goods
           href: pim/dual-use.md
-        - name: Advanced export control
+        - name: Advanced export management
           items:
-          - name: Advanced export control overview
+          - name: Advanced export management overview
             href: pim/export-control-overview.md
-          - name: Enable and configure advanced export control
+          - name: Enable and configure advanced export management
             href: pim/export-control-configure.md
-          - name: Work with advanced export control for products, sales orders, and quotations
+          - name: Work with advanced export management for products, sales orders, and quotations
             href: pim/export-control-use.md
           - name: Extend export control sales order functionality
             href: pim/export-control-extend-sales-orders.md
@@ -2695,6 +2701,8 @@
         href: production-control/process-automation-quality-orders.md
       - name: Integrate with third-party manufacturing execution systems
         href: production-control/mes-integration.md
+      - name: React to last-minute changes in production
+        href: production-control/react-to-last-minute-changes.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
