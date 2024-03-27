@@ -54,17 +54,7 @@ Follow these steps to check the status of the **Sql row version change tracking 
 1. Return to the **License configuration** page, and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
-## Step 2: Enable your finance and operations apps to access your Dataverse environment
-
-Follow these steps to enable your finance and operations apps to access your Dataverse environment.
-
-1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select the Dataverse environment connected to your finance and operations apps environment, and open the detail view.
-1. Select the **Settings** menu on the menu bar.
-1. Go to **Product \> Features**.
-1. Set **Finance and Operations in Dataverse** to *On*.
-
-## <a name="install-copilot-app"></a>Step 3: Install the Copilot application in your finance and operations apps environment
+## <a name="install-copilot-app"></a>Step 2: Install the Copilot application in your finance and operations apps environment
 
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 
@@ -77,7 +67,7 @@ Follow these steps to install the Copilot application in your finance and operat
 
 1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. During installation, the status of the Copilot application is *Installing*. After installation is completed, the status changes to *Installed*. If an error occurs, the status changes to *Failed*. In this case, you can find details about the error in the **Notifications** field.
 
-## Step 4: Enable the required security roles
+## Step 3: Enable the required security roles
 
 Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
 
