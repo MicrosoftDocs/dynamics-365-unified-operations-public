@@ -34,7 +34,7 @@ A date value that represents the date to use to calculate the week of the year.
 
 `culture`: *[String](er-formula-supported-data-types-primitive.md#string)*
 
-The culture to use for the calculation. You can use culture codes that are supported in accordance with .NET [standards](/dotnet/api/system.globalization.cultureinfo.getcultures?view=net-5.0).
+The culture to use for the calculation. You can use culture codes that are supported in accordance with .NET [standards](/dotnet/api/system.globalization.cultureinfo.getcultures).
 
 ## Return values
 

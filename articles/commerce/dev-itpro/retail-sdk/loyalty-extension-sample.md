@@ -13,6 +13,7 @@ ms.author: shajain
 ms.search.validFrom: 2017-05-15
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: 
+ms.search.industry: Retail
 ---
 
 # Loyalty extension sample
