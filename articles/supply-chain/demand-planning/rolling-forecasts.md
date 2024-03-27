@@ -1,6 +1,6 @@
 ---
 title: Rolling forecasts
-description: This article provides information about rolling forecasts, which let you establish a regular schedule for your time series to automatically update and extend their forecast horizon based on the latest data and assumptions.
+description: This article provides information about rolling forecasts. Rolling forecasts let you establish a regular schedule that your time series follow to automatically update and extend their forecast horizon.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -45,7 +45,7 @@ Rolling forecasts can help you monitor the performance of your demand planning p
 
 You can fully automate a rolling forecast by scheduling each of its processes (importing data, running a transformation, running a calculation, running a forecast, and exporting the forecast).
 
-Follow these steps to schedule a process.
+To schedule a process, follow these steps.
 
 1. Go to one of the following pages, depending on the type of process that you want to schedule:
 
