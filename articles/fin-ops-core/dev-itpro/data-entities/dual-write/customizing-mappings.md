@@ -1,13 +1,13 @@
 ---
 title: Customize table and column mappings
-description: This article explains how to customize table and column mappings.
+description: Learn how to customize table and column mappings, add transforms, enable filtering for your data, and add new table maps.
 author: nhelgren
-ms.date: 05/30/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: nhelgren
+ms.topic: article
+ms.date: 05/30/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---

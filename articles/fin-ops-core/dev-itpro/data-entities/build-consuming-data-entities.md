@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Build and consume data entities
-description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
-author: peakerbl
-ms.date: 03/01/2022
+description: Learn how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario, including prerequisites and key concepts.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 03/01/2022
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: 1de997fb-d5c4-4668-9759-0758d141a3eb
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build and consume data entities

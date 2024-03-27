@@ -1,13 +1,13 @@
 ---
 title: Edit a legal entity after dual-write setup
-description: This article explains how to add or remove a company or legal entity after dual-write has been set up.
+description: Learn about how to add or remove a company or legal entity after dual-write has been set up, including a step-by-step overview.
 author: nhelgren
-ms.date: 07/21/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: nhelgren
+ms.topic: article
+ms.date: 07/21/2020
+ms.reviewer: sericks
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---

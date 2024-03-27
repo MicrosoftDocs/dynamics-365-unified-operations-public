@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Integration between finance and operations apps and third-party services 
-description: This article is intended to help architects and developers make sound design decisions when they implement integration scenarios.
-author: peakerbl
-ms.date: 11/23/2020
+description: Learn about integration between finance and operations apps and third-party services, including documentation access for various patterns.
+author: sericks007
+ms.author: sericks
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 11/23/2020
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-
-# ms.assetid: 
+audience: Developer 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Integration between finance and operations apps and third-party services

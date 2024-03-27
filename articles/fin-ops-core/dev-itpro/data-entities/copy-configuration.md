@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Copy configuration data between companies or legal entities overview
-description: This article describes how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
+description: Learn about how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
 author: pnghub
-ms.date: 02/02/2024
+ms.author: gned
 ms.topic: overview
+ms.date: 02/02/2024
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer, IT Pro
 ms.collection: get-started
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gned
 ms.search.validFrom: 2017-07-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 7
 
 ---

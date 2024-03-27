@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Data management error descriptions and known limitations
-description: This article describes the error messages that you might encounter in data management.
-author: peakerbl
-ms.date: 01/08/2024
+description: Learn about the error messages that you might encounter in data management, including a table that outlines possible causes of various errors.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 01/08/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2018-09-15
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 20
-
 ---
 
 # Data management error descriptions and known limitations

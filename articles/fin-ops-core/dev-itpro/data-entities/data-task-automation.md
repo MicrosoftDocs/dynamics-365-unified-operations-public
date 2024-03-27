@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Data task automation
-description: This article explains how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
-author: peakerbl
-ms.date: 05/06/2021
+description: Learn how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
+ms.date: 05/06/2021
 ms.reviewer: twheeloc
+audience: Developer
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 16
-
 ---
 
 # Data task automation

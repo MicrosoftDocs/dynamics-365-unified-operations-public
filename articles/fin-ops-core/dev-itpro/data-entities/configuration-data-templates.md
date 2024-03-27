@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Configuration data templates
-description: This article describes configuration data templates and explains how to create them.
+description: Learn about configuration data templates and how to create them, including a table that outlines the unit and level for various modules.
 author: rcarlson
-ms.date: 08/09/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 08/09/2019
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-07-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 7
 
 ---

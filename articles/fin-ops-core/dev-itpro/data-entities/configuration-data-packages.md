@@ -1,18 +1,16 @@
 ---
 title: Configuration data packages
-description: This article provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 Finance.
+description: Learn about using the configuration data packages for the July 2017 release of Microsoft Dynamics 365 Finance.
 author: rcarlson
-ms.date: 12/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: rcarlson
+ms.topic: article
+ms.date: 12/20/2017
+ms.custom:
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.custom: 
 ---
 
 # Configuration data packages

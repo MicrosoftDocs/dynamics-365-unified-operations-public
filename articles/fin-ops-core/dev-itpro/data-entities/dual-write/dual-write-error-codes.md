@@ -1,15 +1,15 @@
 ---
 title: Error codes for dual-write and Data Integrator
-description: This article describes error codes that can occur during table map and project validation for dual-write and Data Integrator.
+description: Learn about error codes that can occur during table map and project validation for dual-write and Data Integrator.
 author: jaredha
-ms.date: 03/11/2024
+ms.author: jaredha
 ms.topic: conceptual
+ms.date: 03/11/2024
 ms.custom: 
   - bap-template
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: global
-ms.author: jaredha
 ---
 
 # Error codes for dual-write and Data Integrator

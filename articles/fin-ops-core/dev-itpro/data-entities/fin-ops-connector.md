@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Application Connector
-description: This article provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
+description: Learn about the Application Connector for Microsoft Power Automate and Logic Apps, including prerequisites, triggers, and actions.
 author: pnghub
-ms.date: 03/08/2021
+ms.author: gned
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.date: 03/08/2021
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
-ms.author: gned
 ms.search.validFrom:
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-02-28
 ---
 

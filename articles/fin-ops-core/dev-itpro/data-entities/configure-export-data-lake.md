@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Install Export to Azure Data Lake add-in
-description: This article provides information about configuring the export to Azure Data Lake.
+description: Learn about configuring the export to Azure Data Lake and configuring various add-ins and Azure resources, including how to create an application in Microsoft Entra ID.
 author: MilindaV2
-ms.date: 10/16/2023
+ms.author: milindav
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 10/16/2023
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer, IT Pro
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: milindav
 ms.search.validFrom: 2020-03-03
+ms.search.form:
 ms.dyn365.ops.version: Platform Update 33
 
 ---

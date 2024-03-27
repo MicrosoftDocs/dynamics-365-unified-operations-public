@@ -1,15 +1,15 @@
 ---
 title: System requirements and prerequisites
-description: This article describes the system requirements and prerequisites that must be in place before you can enable Dual-write for finance and operations apps.
+description: Learn about the system requirements and prerequisites that must be in place before you can enable Dual-write for finance and operations apps.
 author: ericcolvinmorgan
-ms.date: 02/23/2024
+ms.author: ericmorgan
 ms.topic: conceptual
+ms.date: 02/23/2024
 ms.custom: 
   - bap-template
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: ericmorgan
 ms.search.validFrom: 2024-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ---

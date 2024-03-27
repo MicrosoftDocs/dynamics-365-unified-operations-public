@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Cross-company behavior of data entities
-description: This article provides information about how data entities interact with the cross-company concept.
-author: peakerbl
-ms.date: 06/20/2017
+description: Learn about how data entities interact with the cross-company concept, including an overview of limitations of tables and views.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: f293d97a-9f70-4c45-91d4-574731892353
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Cross-company behavior of data entities
