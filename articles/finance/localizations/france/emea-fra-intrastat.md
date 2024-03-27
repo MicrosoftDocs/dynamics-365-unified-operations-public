@@ -5,7 +5,7 @@ author: anasyash
 ms.date: 11/30/2022
 ms.topic: article
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: 

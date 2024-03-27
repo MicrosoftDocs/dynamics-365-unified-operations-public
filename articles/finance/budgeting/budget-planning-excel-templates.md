@@ -3,11 +3,10 @@
 
 title: Budget planning templates for Excel
 description: This article describes how to create Microsoft Excel templates that can be used with budget plans.
-author: panolte
-ms.date: 01/12/2018
+author: SAURABHGUPTA
+ms.date: 03/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -15,12 +14,12 @@ ms.search.form: BudgetPlanSetLayout
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: panolte
+ms.author: SAURABHGUPTA
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

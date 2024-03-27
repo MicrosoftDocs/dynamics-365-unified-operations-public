@@ -46,7 +46,7 @@ For more information, see [Configure Human resources parameters](hr-setup-parame
 Before you can use the API, the virtual tables must be generated. For more information, see [Virtual tables for Human Resources in Dataverse](hr-admin-integration-payroll-api-introduction.md#virtual-tables-for-human-resources-in-dataverse).
 
 >[!NOTE]
->For the payroll integration to work, the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight must be enabled. To enable this flight, reach out to Microsoft support.
+>For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.
 
 
 ## Enable features

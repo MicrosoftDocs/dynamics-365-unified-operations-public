@@ -2,7 +2,7 @@
 title: Reset the Financial reporting data mart
 description: This article describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
-ms.date: 09/01/2023
+ms.date: 03/01/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -80,7 +80,7 @@ If you ever restore your database from a backup or copy the database from anothe
 
 ### Stop services
 
-The following Microsoft Windows services will have open connections to the finance and operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
+The following Microsoft Windows services will have open connections to the finance and operations database. Use services.msc to stop the following services:
 
 - World wide web publishing service (on all Application Object Servers \[AOS\] computers)
 - Batch Management Service (on non-private AOS computers only)

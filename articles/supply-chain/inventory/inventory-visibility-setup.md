@@ -176,7 +176,7 @@ When you try to enable the Inventory Visibility integration batch job from Suppl
 If you receive this error, follow these steps to update your [partition schema](inventory-visibility-power-platform.md#partition-configuration) to help prevent out-of-memory issues. If you don't receive this error, you can skip this procedure.
 
 1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-all-inventory-data).
-1. Set up *Postman* to send requests to Inventory Visibility, as described in [Inventory Visibility public APIs](inventory-visibility-api.md).
+1. Set up to send requests to Inventory Visibility, as described in [Inventory Visibility public APIs](inventory-visibility-api.md).
 1. After data is deleted, call the `Get` API with a body of `none` to get all partition IDs (by using `/api/environment/{environmentId}/allpartitionids`). Review the response to confirm that data has been completely cleared. The result should be empty.
 1. Call the `Post` API with a body of `none` to change the partition schema (by using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature, and [update the configuration](inventory-visibility-power-platform.md#update-configuration).
@@ -236,7 +236,7 @@ If you need to restore a Supply Chain Management database, use the following pro
 
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration** and disable the job.
-1. Stop sending requests to Inventory Visibility from *Postman* or any other third-party systems.
+1. Stop sending requests to Inventory Visibility from any other third-party systems.
 1. In Power Apps, open the **Configuration** page for Inventory Visibility. Then select **Clear User Data** in the upper-right corner. This clears the dirty inventory data from a restored database without affecting any existing configurations.
 1. Restore your Supply Chain Management database, for example as described in [Database point-in-time restore (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) or [Point-in-time restore of the production database to a sandbox environment](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
 1. Go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration** and reenable the job.

@@ -4,7 +4,7 @@
 title: Vendor invoices overview
 description: This article provides general information about vendor invoices.
 author: abruer
-ms.date: 02/25/2022
+ms.date: 03/13/2024
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -47,6 +47,7 @@ There are several ways to enter a vendor invoice:
 - The vendor invoice journal lets you quickly enter invoices that don't reference a purchase order, in a single step.
 - Together with the vendor invoice pool, the vendor invoice register lets you quickly enter invoices to accrue the expense. You can open the associated purchase orders later to post the invoice against the expense account.
 - The **Open vendor invoices** and **Pending vendor invoices** pages let you create vendor invoices from confirmed purchase orders.
+- The **Invoice capture solution** automatically creates vendor invoices from digital invoice images. For more information, see [Invoice capture](invoice-capture-overview.md).
 
 The following discussion provides more information about how to use the **Open vendor invoices** or **Pending vendor invoices** page to create a vendor invoice from a purchase order.
 

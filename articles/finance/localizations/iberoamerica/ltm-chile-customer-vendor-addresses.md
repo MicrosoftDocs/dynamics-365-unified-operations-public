@@ -4,7 +4,7 @@ description: This topic explains how to set up records for customers and vendors
 author: Fhernandez0088
 ms.date: 09/21/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---

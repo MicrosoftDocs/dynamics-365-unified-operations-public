@@ -22,8 +22,6 @@ ms.custom: bap-template
 
 This article provides an example scenario that shows how to create inbound and outbound shipment orders via message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## How to test the creation process
 
 To try out the creation process for inbound and outbound shipment orders via messages, set the **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** options to *Yes* for a **Source system** record. You can then create shipment order messages directly on the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-using.md#maintain-messages) pages.
@@ -48,14 +46,14 @@ The same message structure logic applies to both the inbound and outbound shipme
 
 - Complete
 
-This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders that have minimal payload.
+<!-- This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders that have minimal payload.
 
-If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.
+If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.-->
 
 The example data that's provided in this article uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
 
-> [!NOTE]
-> To make messages processing easier, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated by double braces (\{\{&hellip;\}\}).
+<!-- [!NOTE]
+> To make messages processing easier, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated by double braces (\{\{&hellip;\}\}).-->
 
 ## Prerequisites
 
@@ -84,7 +82,7 @@ For the `InboundShipmentOrderMessages` inbound shipment order header message, yo
 - `OrderNumber`: *IO1*
 - `ReceivingWarehouseId`: *51*
 
-When you use [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `InboundShipmentOrderMessages` message looks like the following example.
+When you use <!--[Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with --> variables, the `InboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON example
 POST {{resource}}/data/InboundShipmentOrderMessages
@@ -134,7 +132,7 @@ For the `OutboundShipmentOrderMessages` outbound shipment order header message, 
 - `ConsigneeName` or `ReceiverName`: *Microsoft*
 - `ConsigneeCountryRegionId` or `ReceiverCountryRegionId`: *USA*
 
-When you use [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `OutboundShipmentOrderMessages` message looks like the following example.
+When you use <!-- [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with--> variables, the `OutboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON
 POST {{resource}}/data/OutboundShipmentOrderMessages

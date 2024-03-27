@@ -3,7 +3,7 @@ title: Tax integration overview
 description: This article provides an overview and introduces the flow of Tax integration.
 author: Qiuchen-Ren
 ms.author: qire
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.topic: conceptual
 ms.date: 04/25/2022
 ms.custom: bap-template
