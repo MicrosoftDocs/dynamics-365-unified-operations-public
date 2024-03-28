@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 # Credit holds for sales orders
 [!include [banner](../includes/banner.md)]
 
-This article describes the setup of rules used to place a sales order on credit hold. The credit management blocking rules can apply to an individual customer, or a group of customers. Blocking rules define responses to the following circumstances:
+This article describes how to set up rules used to place a sales order on credit hold. The credit management blocking rules can apply to an individual customer, or a group of customers. Blocking rules define responses to the following circumstances:
 
 1. Number of days overdue
 2. Accounts status
@@ -45,9 +45,9 @@ In addition, there are two parameters that control additional scenarios that blo
 
 ## Set up blocking rules and exclusion rules
 
-When a customer initiates a sales transaction, the information on the sales order is reviewed against a set of blocking rules that guide the decision of whether or not to extend credit to the customer and allow the sale to move forward. You can also define exclusions that override the blocking rules and allow a sales order to be processed. You can set up blocking rules and exclusion rules on the **Credit management > Setup > Credit management setup > Blocking rules** page.
+When a customer initiates a sales transaction, the information on the sales order is reviewed against a set of blocking rules that guides the decision of whether or not to extend credit to the customer and allow the sale to move forward. You can also define exclusions that override the blocking rules and allow a sales order to be processed. You can set up blocking rules and exclusion rules on the **Credit management > Setup > Credit management setup > Blocking rules** page.
 
-As of version 10.0.21, the blocking rules in Credit management have been re-architected in the following ways:
+As of version 10.0.21, the blocking rules in Credit management are re-architected in the following ways:
 
 - Extensibility requests have been enabled, so that you can create your own blocking rules.
 - The **Release sales order** checkbox is available for all blocking rules. Previously, it was available only for the Sales order blocking rule. When this checkbox is selected, the exclusion rule releases the sales order without considering any other rules that can block sales orders. This checkbox is available only for the **Exclusion** rule type.
@@ -166,27 +166,27 @@ Select **Credit limit used** if the blocking rule applies to the customer credit
   
 ### Rank payment terms	
 
-You can force the credit control rules to be executed when payment terms are changed. You must rank the payment terms and assign them a ranking value. If you change the payment terms on the order to payment terms that are ranked higher than the old payment terms, then the order will be sent to credit management and require approval.
+You can force the credit control rules to be executed when payment terms are changed. You must rank the payment terms and assign them a ranking value. If you change the payment terms on the order to payment terms that are ranked higher than the old payment terms, then the order is sent to credit management and require approval.
 
 You can set up the payment terms rankings on the **Credit management > Setup > Credit management setup > Rank payment terms** page.
 
 1. Select payment terms the **Terms of payment** field to rank; when you select a term, the description is displayed in the **Description** field.
-2. Select the term's rank in the **Rank** field. The values are all relative to each other so you can use 1,2,3 or 10,20,30. You can also use the same value for most of the terms of payment so that only one or two terms of payment will trigger the credit check.
+2. Select the term's rank in the **Rank** field. The values are all relative to each other so you can use 1,2,3 or 10,20,30. You can also use the same value for most of the terms of payment so that only one or two terms of payment trigger the credit check.
 
 ### Rank settlement discounts	
 
-You can force the credit control rules to be executed when settlement discounts are changed. You must rank the settlement discounts and assign them a ranking value. If you change the settlement discounts on the order to settlement discounts that are ranked higher than the old settlement discounts, then the order will be sent to credit management and require approval.
+You can force the credit control rules to be executed when settlement discounts are changed. You must rank the settlement discounts and assign them a ranking value. If you change the settlement discounts on the order to settlement discounts that are ranked higher than the old settlement discounts, then the order is sent to credit management and require approval.
 
 You can set up the payment terms rankings on the **Credit management > Setup > Credit management setup > Rank settlement discounts** page.
 
 1. Select the **Cash discount** that you want to rank. The **Description** of the settlement discount is displayed.
-2. Select the **Rank** value. The values are all relative to each other so you can use 1,2,3 or 10,20,30. You can also use the same value for most of the settlement discounts so that only one or two settlement discounts will trigger the credit check.
+2. Select the **Rank** value. The values are all relative to each other so you can use 1,2,3 or 10,20,30. You can also use the same value for most of the settlement discounts so that only one or two settlement discounts trigger the credit check.
 
 ## Sequence the application of rules
 
 Rules are run in a specific order that you change to suit the needs of your organization. 
 
-- Any exclusion rule can override all rules that might block a sales order. In each blocking rule, you can create an exclusion rule and mark the **Release Sales order** option. The order won't be put on hold if that exclusion rule is true, and no other rules will be checked.
+- Any exclusion rule can override all rules that might block a sales order. In each blocking rule, you can create an exclusion rule and mark the **Release Sales order** option. The order won't be put on hold if that exclusion rule is true, and no other rules are checked.
 - Blocking rules can place the order on hold.
 - Exclusion rules are run after blocking rules. Exclusion rules only affect the rule on which they are defined. 
 - Blocking and exclusion rules are run in Table, then Group, then All orders. Because of this order of processing, it's possible to have a blocking rule at the All level that won't run because an exclusion rule at the Table or Group level is run. This is true when the value type of the blocking and exclusion rules are the same. See the examples above in Days overdue.
