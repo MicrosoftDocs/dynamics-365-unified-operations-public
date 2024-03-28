@@ -1,20 +1,15 @@
 ---
 title: Develop and deploy custom models to on-premises environments
-description: This article describes the process of developing customizations and extensions, and deploying them to an on-premises environment.
-author: gianugo
-ms.date: 05/26/2020
+description: Learn about the process of developing customizations and extensions, and deploying them to an on-premises environment.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.technology: 
-audience: Developer, IT Pro
+ms.date: 05/26/2020
 ms.reviewer: sericks
+audience: Developer, IT Pro
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.assetid: 
-ms.service: dynamics-365
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Develop and deploy custom models to on-premises environments

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Configure your environment with a dedicated Data Management Framework service
-description: This article explains how to configure environments to use a separate, dedicated service for the Data Management Framework.
+description: Learn how to configure environments to use a separate, dedicated service for the Data Management Framework for new and existing environments.
 author: faix
-ms.date: 01/21/2024
+ms.author: osfaixat
 ms.topic: how-to
+ms.date: 01/21/2024
 ms.custom: 
   - bap-template
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry:
-ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
+ms.search.form:
 ms.dyn365.ops.version: 10.0.32
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Configure your environment with a dedicated Data Management Framework service

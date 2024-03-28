@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Delete a production finance and operations apps environment
-description: This article explains how to delete a production environment by using a self-service experience.
+description: Learn about the process of deleting a production finance and operation apps environment by using a self-service experience.
 author: laneswenka
-ms.date: 01/31/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 01/31/2024
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-12-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Delete a production finance and operations apps environment
