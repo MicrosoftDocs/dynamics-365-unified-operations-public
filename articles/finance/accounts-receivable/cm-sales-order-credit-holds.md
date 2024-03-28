@@ -38,18 +38,18 @@ This article describes how to set up rules used to place a sales order on credit
 6. Sales order amount
 7. Portion of available credit used
 
-In addition, there are two parameters that control additional scenarios that block a sales order:
+In addition, two parameters control additional scenarios that block a sales order:
 
 1. Change in payment terms
 2. Change in settlement discounts
 
 ## Set up blocking rules and exclusion rules
 
-When a customer initiates a sales transaction, the information on the sales order is reviewed against a set of blocking rules that guides the decision of whether or not to extend credit to the customer and allow the sale to move forward. You can also define exclusions that override the blocking rules and allow a sales order to be processed. You can set up blocking rules and exclusion rules on the **Credit management > Setup > Credit management setup > Blocking rules** page.
+When a customer initiates a sales transaction, the information on the sales order is reviewed against a set of blocking rules. Those rules guide the decision of whether or not to extend credit to the customer and allow the sale to move forward. You can also define exclusions that override the blocking rules and allow a sales order to be processed. You can set up blocking rules and exclusion rules on the **Credit management > Setup > Credit management setup > Blocking rules** page.
 
 As of version 10.0.21, the blocking rules in Credit management are re-architected in the following ways:
 
-- Extensibility requests have been enabled, so that you can create your own blocking rules.
+- Extensibility requests are enabled and blocking rules can be created. 
 - The **Release sales order** checkbox is available for all blocking rules. Previously, it was available only for the Sales order blocking rule. When this checkbox is selected, the exclusion rule releases the sales order without considering any other rules that can block sales orders. This checkbox is available only for the **Exclusion** rule type.
 
 Blocking rules and Credit management checkpoints are required to check the credit limit on a sales order. In versions 10.0.34 and earlier, there was a bug that allowed the credit check without the blocking rules setup. This has been fixed as of 10.0.35 and blocking rules are required with Credit management. 
@@ -65,12 +65,12 @@ Open the **Days overdue** tab if the blocking rule applies to a customer with on
    - For the **Table** range, the lookup provides a list of customers to select. 
    - Select a **Group** if the rule applies to a customer credit management group.
    - Select **All** if the rule applies to all customers. 
-3. Select **Risk group** to use criteria for applying a credit management hold on customers that are grouped by a common set of factors, such as their Dun and Bradstreet rating, the number of years that they've been in business, and the amount of time they've been your customer. If using a risk group an account group must be selected first. 
+3. Select **Risk group** to use criteria for applying a credit management hold on customers that are grouped by a common set of factors, such as their Dun and Bradstreet rating, the number of years that they've been in business, and the amount of time they've been your customer. If using a risk group, an account group must be selected first. 
 4. Select the type of rule that you are setting up. The **Blocking** option creates a rule that blocks an order. The **Exclusion** option creates a rule that excludes another rule from blocking an order. 
 5. Select a **Value type**. The default entry is a fixed number of days. If you are creating an exclusion, you can specify a fixed number of days or an amount instead. 
-6. Enter the number of days **Overdue** that is allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of days beyond the payment due date that the invoice can have before it is considered overdue. If you specified the **Value type** as an amount for an exclusion, then enter an amount and a currency for that amount. This amount represents the total amount overdue for the customer, it's not the sales order amount.
+6. Enter the number of days **Overdue** allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of days beyond the payment due date before the invoice is considered overdue. If you specified the **Value type** as an amount for an exclusion, enter an amount and a currency for that amount. This amount represents the total amount overdue for the customer, it's not the sales order amount.
 
-Example 1: I want to block sales orders (put them into a credit hold) for all customers if they have invoices more than 61 days past due. But for certain customers (or groups), I want to exclude them from a credit hold if they are less than 100 days past due. As long as the value type is the same the exclusion rule will override the blocking rule. 
+Example 1: I want to block sales orders (put them into a credit hold) for all customers if they have invoices more than 61 days past due. But for certain customers (or groups), I want to exclude them from a credit hold if they are less than 100 days past due. As long as the value type is the same, the exclusion rule overrides the blocking rule. 
 
 [![Days Overdue example with only Days value type.](./media/DaysOverdueDaysvaluetype.png)](./media/DaysOverdueDaysvaluetype.png)
 
@@ -192,7 +192,7 @@ Rules are run in a specific order that you change to suit the needs of your orga
 - Blocking and exclusion rules are run in Table, then Group, then All orders. Because of this order of processing, it's possible to have a blocking rule at the All level that won't run because an exclusion rule at the Table or Group level is run. This is true when the value type of the blocking and exclusion rules are the same. See the examples above in Days overdue.
 - Exclusions don't override the blocking rule if they are at the same level. For example, an exclusion rule at the group level won't override the blocking rule at the group level. You don't need to set up exclusions at the All level except as noted above with the use of the **Release sales order** checkbox. 
 
-The behavior of the **Credit limit used** rule will change based on the settings for the **Check credit limit for sales order** parameter found on the **Credit and collections parameters** page.
+The behavior of the **Credit limit used** rule changes based on the settings for the **Check credit limit for sales order** parameter on the **Credit and collections parameters** page.
 - If the parameter is set to **No**, then the **Credit limit used** rule isn't run. 
 - If the parameter is set to **Yes** the the **Credit limit used** rule is run.
 - Blocking rules must be setup to put the sales order in a credit hold.  
