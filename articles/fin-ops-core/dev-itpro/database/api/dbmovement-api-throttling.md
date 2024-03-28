@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Database movement API - Throttling
-description: This article provides an overview of throttling for the Database Movement application programming interface (API).
+description: Learn about an overview of throttling for the Database Movement application programming interface (API) about throttling.
 author: laneswenka
-ms.date: 02/23/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/23/2024
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.0
-
 ---
 
 # Throttling
