@@ -131,7 +131,7 @@ The following table lists the features that have been removed from Feature manag
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
+Dynamics 365 Finance version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
 
 ### Bug fixes
 
