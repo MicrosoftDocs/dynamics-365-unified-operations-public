@@ -1,6 +1,6 @@
 ---
 title: Service-based authentication for the Warehouse Management mobile app in on-premises deployments
-description: Learn how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
+description: Learn how to configure the service-based Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
 author: faix
 ms.author: osfaixat
 ms.topic: how-to

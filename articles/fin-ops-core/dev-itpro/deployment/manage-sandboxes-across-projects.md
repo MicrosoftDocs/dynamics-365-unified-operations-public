@@ -5,7 +5,6 @@ author: laneswenka
 ms.author: laswenka
 ms.topic: article
 ms.date: 04/25/2023
-ms.topic: article
 ms.reviewer: sericks
 audience: IT Admin
 ms.search.region: Global

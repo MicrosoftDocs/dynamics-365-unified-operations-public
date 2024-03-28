@@ -6,7 +6,6 @@ ms.author: osfaixat
 ms.topic: article
 ms.date: 02/16/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global

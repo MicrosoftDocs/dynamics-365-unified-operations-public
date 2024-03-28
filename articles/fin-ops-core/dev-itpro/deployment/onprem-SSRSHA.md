@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 02/08/2023
 # ms.custom: NotInTOC
 ms.reviewer: sericks
-ms.topic: article
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-21

@@ -5,7 +5,6 @@ author: faix
 ms.author: osfaixat
 ms.topic: article
 ms.date: 04/05/2022
-ms.topic: article
 ms.reviewer: sericks
 audience: IT Pro
 ms.search.region: Global
