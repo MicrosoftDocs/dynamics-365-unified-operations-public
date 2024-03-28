@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Database point-in-time restore (PITR)
-description: This article explains how to perform a point-in-time restore of a database for finance and operations.
+description: Learn how to perform a point-in-time restore of a database for finance and operations, with steps to complete for environments with Commerce functionality.
 author: LaneSwenka
-ms.date: 11/06/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 11/06/2023
+ms.reviewer: sericks
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-01-31
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Database point-in-time restore (PITR)

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Database movement operations home page
-description: This article provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
+description: Access links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
-ms.date: 11/13/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: overview
+ms.date: 11/13/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Database movement operations home page

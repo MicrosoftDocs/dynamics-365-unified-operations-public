@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Database movement toolkit
-description: This article explains how to download and use the Database movement toolkit. 
+description: Learn how to download and use the Database movement toolkit, includinig an outline of toolkit components and supported scenarios. 
 author: laneswenka
-ms.date: 11/06/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: overview
+ms.date: 11/06/2023
+ms.custom: 
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-16
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 30
 ---
 
