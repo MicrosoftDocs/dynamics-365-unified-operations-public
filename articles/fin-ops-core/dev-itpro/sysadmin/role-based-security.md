@@ -79,5 +79,15 @@ Each function, such as a form or a service, is accessed through an entry point. 
 
 In the security model, permissions group the securable objects and access levels that are required to run a function. This includes any tables, fields, forms, or server side methods that are accessed through the entry point.
 
+## Manage security objects after a service update in Dynamics 365
+To ensure your security objects are updated and aligned with the latest service update, here are some general steps you might consider following a service update
+
+- Review the updated security roles: Check the release notes or documentation provided with the service update to understand any changes to the standard security roles.
+- Audit current security settings: Before making any changes, audit your current security configurations to understand the baseline permissions and access rights.
+- Test changes in a sandbox environment: Apply the service update to a non-production environment first to see how the changes affect your security roles and business processes.
+- Update custom security roles: If you have custom security roles, you may need to update them to ensure they align with the new standard role definitions.
+- Reassign roles if necessary: After updating, reassign the security roles to your users as needed to ensure they have the appropriate access.
+- Monitor and audit post-update: Continuously monitor the system and audit the security role assignments post-update to ensure everything is functioning as expected
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
