@@ -37,7 +37,7 @@ To create a new report, follow these steps.
 After you open a report, you can edit the visuals or data fields by selecting **Edit**.
 
 >[!NOTE:]
-> You can't edit reports of the **Microsoft** type. You must duplicate them as described in the next section. The duplicate report will be a **Custom** type which can then be edited. 
+> You can't edit reports of the **Microsoft** type. You must duplicate them as described in the next section to create a **Custom** type report, which can be edited.
 
 ## Duplicate a report
 
@@ -63,7 +63,7 @@ To rename a report that isn't currently open, follow these steps.
 To rename a report that's currently open, select **Rename** on the report.
 
 >[!NOTE:]
-> You can't rename reports of the **Microsoft** type. You must duplicate them as described in the section above. The duplicate report will be a **Custom** type which can then be renamed. 
+> You can't rename reports of the **Microsoft** type. You must duplicate them as described in the section above to create **Custom** type report, which can be renamed.
 
 ## Delete a report
 
@@ -74,7 +74,7 @@ To delete one or more reports, follow these steps.
 3. Select **Delete**.
 
 >[!NOTE:]
-> You can't share reports of the **Microsoft** type. You must duplicate them as described in a section above. The duplicate report will be a **Custom** type which can be renamed. 
+> You can't delete reports of the **Microsoft** type. Only **Custom** type reports can be deleted.
 
 ## Share a report
 To share a report that isn't currently open, follow these steps:
@@ -84,7 +84,7 @@ To share a report that isn't currently open, follow these steps:
 4. Specify to provide **Edit** or **View** access to the report. 
 
 >[!NOTE:]
-> You can't share reports of the **Microsoft** type. You must duplicate them as described in a section above. The duplicate report will be a **Custom** type which can then be shared. 
+> You can't share reports of the **Microsoft** type. You must duplicate them as described in a section above to create a **Custom** type report, which can be shared.
 > Only admin users may also see an additional **Share** button. This button currently doesn't provide any use.
 >Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with others users who did not originally have access to the report.
 
