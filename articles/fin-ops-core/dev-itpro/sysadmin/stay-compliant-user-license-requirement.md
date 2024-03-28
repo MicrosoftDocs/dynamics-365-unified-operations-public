@@ -76,6 +76,9 @@ You can use the **Role to user assignment** report or the **Assign users to role
 
 For internal security and to help avoid licensing requirements for users who have left or aren't actively using the finance and operations apps, we recommend that you disable those users on the **Users** page.
 
+> [!NOTE]
+>  The System Administrator role is a special role in Microsoft Dynamics AX, granting users full access to manage system artifacts. Users assigned this role cannot be restricted or modified by other roles and are exempt from licensing requirements. This means that individuals with this role do not need to purchase additional licenses to configure and administer Dynamics 365 applications
+
 ## User license counts report
 
 You can use the **User license counts** report to get a count of required licenses per license type (for example, **Team members**, **Activity**, and **Operations**). This report is the only report that is required for customers who are on the legacy unified operations licensing model. It provides totals for Unified operations, Activity, and Team members licenses. It also provides details about each user and the licensing requirements for each assigned role. Users are listed under the highest license type. The **User counts history** report shows total counts per date without any details.
@@ -86,6 +89,7 @@ You can use the **User license counts** report to get a count of required licens
 > This report depends on the **Named user license count reports processing** batch job. To determine when the batch was last run, use the **Batch job history** page.
 
 Customers who are on the app-specific licensing model must first use the **User license counts** report to determine the licenses that are required for the **Activity** and **Team members** license types only. They must then use the **User license estimator** report for full user licenses.
+
 
 ## User license estimator report
 
