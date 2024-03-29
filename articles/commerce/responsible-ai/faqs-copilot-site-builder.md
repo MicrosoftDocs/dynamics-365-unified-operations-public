@@ -22,7 +22,7 @@ Copilot in site builder works seamlessly with Dynamics 365 Commerce site builder
 
 ## What are the capabilities of Copilot in site builder for product enrichment?
 
-The Copilot in site builder for product enrichment feature uses [Microsoft's Azure OpenAI Service](/azure/ai-services/openai/overview) to access powerful language models that analyze and generate natural language. These models have been trained on a wide body of text datasets. 
+The Copilot in site builder for product enrichment feature uses [Microsoft's Azure OpenAI Service](/azure/ai-services/openai/overview) to access powerful language models that analyze and generate natural language. These models are trained on a wide body of text datasets. 
 
 Copilot in site builder for product enrichment offers the following capabilities:
 
