@@ -1,13 +1,13 @@
 ---
 title: Edit a legal entity after dual-write setup
 description: This article explains how to add or remove a company or legal entity after dual-write has been set up.
-author: nhelgren
+author: jaredha
 ms.date: 07/21/2020
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: nhelgren
+ms.author: jaredha
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -36,11 +36,16 @@ Follow these steps to add a company or legal entity after dual-write has been se
 
 ![Legal entities tab displaying the selected company.](media/legal-entities.png)
 
-3. Select **Add legal entity** to add one or more companies to dual-write. In this example, GBSI. Select **Save**.
+3. Select **Add legal entity** to add one or more companies to dual-write. In this example, GBSI.
 
 ![Add new legal entity.](media/add-legal-entity.png)
 
-  At this point, the legal entities start updating. The table maps that are currently running or paused go through the initial write process by copying pre-existing data. Until the process is completed, we recommend that you do not perform any actions to modify your table maps. 
+4. Select whether you want to skip initial writes for the legal entities you have added to the list by selecting or un-selecting the **Skip initial writes for newly added legal entities** option, and select **Save**.
+
+   When the **Save** action is selected, the legal entities start updating. If the **Skip initial writes for newly added legal entities** option is not selected, the table maps that are currently running or paused go through the initial write process by copying pre-existing data. Until the process is completed, we recommend that you do not perform any actions to modify your table maps. 
+
+  > [!NOTE]
+  > Initial writes are supported for up to 40 legal entities. If the total number of legal entities in the list is greater than 40, initial writes will not be processed for the newly added legal entities.
 
 ![Update legal entities is in progress.](media/update-progress.png)
 
@@ -51,7 +56,7 @@ Follow these steps to add a company or legal entity after dual-write has been se
   >
   > * You remove a company when one or more table maps is in the Paused state. 
 
-4. After the process is complete, a banner displays informing you that the legal entities have been updated successfully. You can now resume updates to your table maps. 
+5. After the process is complete, a banner displays informing you that the legal entities have been updated successfully. You can now resume updates to your table maps. 
 
 ![Legal entities update succeeded.](media/legal-entities-updated.png)
 
