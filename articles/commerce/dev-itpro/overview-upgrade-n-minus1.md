@@ -4,8 +4,6 @@ description: Upgrade support and N-1 support have been enabled in the release of
 author: josaw1
 ms.date: 01/12/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
