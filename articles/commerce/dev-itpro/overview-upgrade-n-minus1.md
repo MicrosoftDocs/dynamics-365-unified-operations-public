@@ -18,7 +18,7 @@ ms.collection: get-started
 [!include [banner](../../includes/banner.md)]
 
 > [!WARNING]
-> Support for Microsoft Dynamics AX 2012 R3 has ended. Although upgrade and migration are still supported, make a note of the dates that are relevant to this end of support. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
+> Support for Microsoft Dynamics AX 2012 R3 has ended. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
 > 
 > Upgrade and N-1 support for Commerce will be ending with Dynamics 365 Commerce release version 10.0.40.
 
