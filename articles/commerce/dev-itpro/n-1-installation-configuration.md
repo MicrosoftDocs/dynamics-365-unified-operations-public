@@ -21,6 +21,8 @@ ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfil
 
 > [!WARNING]
 > Support for Microsoft Dynamics AX 2012 R3 has ended. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
+> 
+> Upgrade and N-1 support for Commerce will be ending with Dynamics 365 Commerce release version 10.0.40.
 
 This article explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Commerce Scale Unit, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 Commerce Headquarters.
 
