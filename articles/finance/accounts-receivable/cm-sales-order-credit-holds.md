@@ -135,7 +135,7 @@ Select **Sales order** if the blocking rule applies to value of the sales order.
    - Select **Table** if the rule applies to a specific customer.
    - Select **Group** if the rule is applied at the Customer group level. 
    - Select **All** if the rule applies to all customers.
-2. Once you have specified the range, you must specify the **Account/group** used in the range.
+2. After you have specified the range, you must specify the **Account/group** used in the range.
    - For the **Table** range, the lookup provides a customer lookup. 
    - Select a **Group** if the rule applies to a customer credit management group.
    - Select **All** if the rule applies to all customers. 
