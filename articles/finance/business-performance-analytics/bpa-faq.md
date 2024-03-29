@@ -6,10 +6,8 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 02/20/2024
+ms.date: 03/29/2024
 ms.topic: faq
-ms.prod: 
-ms.technology:
 ms.custom:
 audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
@@ -59,7 +57,7 @@ Business performance analytics has data for the current calendar year plus the p
 
 ### After business performance analytics is set up, how often is the data refreshed?
 
-Data is refreshed once per day, at 00:00:00 AM (UTC). To see exactly when a particular report's data was last refreshed, open the report and look at the task bar towards the top of the window. The rightmost item at the end shows when the data for the report was last refreshed. 
+Data is refreshed once per day, at 00:00:00 AM (UTC). To see exactly when a report's data was last refreshed, open the report. Towards the top of the window, the rightmost item displays when the data for the report was last refreshed. 
 
 ### How long does it take for fresh data to be available every day on business performance analytics reports?
 
