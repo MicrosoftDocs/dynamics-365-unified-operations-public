@@ -37,7 +37,7 @@ Copilot in site builder offers the following capabilities:
 
 Creating marketing and storytelling content for a specific product for e-commerce sites is key for driving customer engagement and sales, but it can be a time-consuming and challenging process for retailers. With the new Copilot capability in Commerce that is built for site builder's product enrichment workflow, you can generate persuasive, compelling, and engaging product enrichment and marketing content for your e-commerce websites. Your content is optimized for search engines to help increase customer loyalty and boost your sales conversions.
 
-## How was Copilot in site builder evaluated? What metrics are used to measure performance?
+## How was Copilot in site builder evaluated, and what metrics are used to measure performance?
 
 - Copilot in site builder underwent extensive testing where numerous texts in different languages were evaluated by language experts against various criteria. Testing was based on fictitious product catalogs that are part of the demonstration data.
 - Copilot in site builder is built in accordance with Microsoft's Responsible AI Standard. For more information, see [Empowering responsible AI practices](https://aka.ms/RAI).
@@ -49,7 +49,7 @@ Microsoft has various systems in place to ensure that Copilot capabilities remai
 - Users have the opportunity to provide feedback to report inappropriate content and improve the functionality.
 - If you encounter inappropriate generated content, you can report it to Microsoft via the [Microsoft Security Response Center reporting portal](https://go.microsoft.com/fwlink/?linkid=2249810). 
 
-Microsoft might disable the Copilot-driven features for selected customers if abuse of the functionality is detected. 
+  Microsoft might disable the Copilot-driven features for selected customers if abuse of the functionality is detected. 
 
  - Microsoft tracks user feedback to help improve suggestions. Users can provide feedback by using the like (thumbs up) or dislike (thumbs down) icon when interacting with Copilot in site builder. We gather the telemetry of these gestures for each AI output for which you submit feedback.
 - The Azure OpenAI Service stores prompts and completions from the service to monitor for abusive use and to develop and improve the quality of Azure OpenAI's content management systems. Your company data isn't used to train AI models in the Azure OpenAI service. For information about content management and filtering, see [Content filtering](/azure/cognitive-services/openai/concepts/content-filter). 
@@ -58,7 +58,7 @@ Authorized Microsoft employees can access prompt and completion data that trigge
 
 For more information, see [Data, privacy, and security for Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy#abuse-and-harmful-content-generation).
 
-## What are the limitations of Copilot in site builder? How can users minimize the impact of the Copilot in site builder limitations when using the system?
+## What are the limitations of Copilot in site builder, and how can users minimize the impact of the Copilot in site builder limitations when using the system?
 
 The underlying technology behind Copilot in site builder uses AI that has been trained on a wide range of sources, but the generated content isn't always factual or suitable. Some suggestions may even include questionable or inappropriate content. It's your responsibility to review and edit generated suggestions to ensure accuracy and appropriateness.
 
