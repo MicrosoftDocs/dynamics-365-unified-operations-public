@@ -14,7 +14,7 @@ ms.reviewer: v-chrgriffin
 
 # FAQ for Copilot in site builder
 
-These frequently asked questions (FAQ) describe the AI impact of the Copilot in site builder feature in Microsoft Dynamics 365 Commerce.
+These frequently asked questions (FAQ) describe the AI impact of the Copilot in site builder feature for product enrichment in Microsoft Dynamics 365 Commerce.
 
 ## What is Copilot in site builder?
 
