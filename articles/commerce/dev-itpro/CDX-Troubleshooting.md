@@ -6,8 +6,6 @@ description: This article provides information that will help you troubleshoot C
 author: jashanno
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jashanno
+ms.author: aneesa
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
 ---
