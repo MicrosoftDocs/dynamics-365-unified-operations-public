@@ -36,8 +36,8 @@ follows:
 - **General availability of release (self-update)**: March 2022
 - **General availability of release (auto-update)**: April 2022
 
-The 10.0.25 release brings the first wave of capabilities in the infrastructure merge. During the infrastructure merge, Microsoft Dynamics 365 Human Resources will be merged
-with the finance and operations infrastructure. However, it will continue to be licensed as an independent application, like Dynamics 365 Finance and Dynamics 365 Supply Chain 
+The 10.0.25 release brings the first wave of capabilities in the infrastructure merge. During the infrastructure merge, Microsoft Dynamics 365 Human Resources are merged
+with the finance and operations infrastructure. However, it continues to be licensed as an independent application, like Dynamics 365 Finance and Dynamics 365 Supply Chain 
 Management. For more information about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](../../human-resources/hr-infrastructure-merge-faq.md).
 
 ## Features included in this release
