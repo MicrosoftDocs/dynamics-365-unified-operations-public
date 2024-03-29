@@ -6,10 +6,9 @@ description: This article describes how to create and edit reports in business p
 author: jkhaira7
 ms.author: jkhaira 
 ms.reviewer: twheeloc
-ms.date: 12/18/2023
+ms.date: 03/29/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
+ 
 audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
@@ -36,7 +35,8 @@ To create a new report, follow these steps.
 
 After you open a report, you can edit the visuals or data fields by selecting **Edit**.
 
-Reports of the **Microsoft** type can't be edited. You must duplicate them as described in the next section. You can then edit the duplicate report. 
+>[!NOTE:]
+> You can't edit reports of the **Microsoft** type. You must duplicate them as described to create a **Custom** type report, which can be edited.
 
 ## Duplicate a report
 
@@ -61,15 +61,19 @@ To rename a report that isn't currently open, follow these steps.
 
 To rename a report that's currently open, select **Rename** on the report.
 
-## Delete a report
+>[!NOTE:]
+> You can't rename reports of the **Microsoft** type. You must duplicate them to create **Custom** type report, which can be renamed.
 
-You can't delete reports of the **Microsoft** type. You can delete only reports of the **Custom** type. You can delete multiple reports at the same time.
+## Delete a report
 
 To delete one or more reports, follow these steps.
 
 1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Select the report or reports to delete.
 3. Select **Delete**.
+
+>[!NOTE:]
+> You can't delete reports of the **Microsoft** type. Only **Custom** type reports can be deleted.
 
 ## Share a report
 To share a report that isn't currently open, follow these steps:
@@ -79,6 +83,7 @@ To share a report that isn't currently open, follow these steps:
 4. Specify to provide **Edit** or **View** access to the report. 
 
 >[!NOTE:]
+> You can't share reports of the **Microsoft** type. You must duplicate them to create a **Custom** type report, which can be shared.
 > Only admin users may also see an additional **Share** button. This button currently doesn't provide any use.
 >Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with others users who did not originally have access to the report.
 
