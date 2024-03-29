@@ -51,7 +51,7 @@ Microsoft has various systems in place to ensure that Copilot capabilities remai
 
   Microsoft might disable the Copilot-driven features for selected customers if abuse of the functionality is detected. 
 
- - Microsoft tracks user feedback to help improve suggestions. When interacting with Copilot in site builder, users can provide feedback by using the like (thumbs up) or dislike (thumbs down) symbols. Microsoft gathers the telemetry of these gestures for each AI output for which users submit feedback.
+ - Microsoft tracks user feedback to help improve suggestions. When users interact with Copilot in site builder, they can provide feedback by using the like (thumbs up) or dislike (thumbs down) symbols. Microsoft gathers the telemetry of these gestures for each AI output for which users submit feedback.
 - The Azure OpenAI Service stores prompts and completions from the service to monitor for abusive use and to develop and improve the quality of Azure OpenAI's content management systems. Your company data isn't used to train AI models in the Azure OpenAI service. For information about content management and filtering, see [Content filtering](/azure/cognitive-services/openai/concepts/content-filter). 
 
 Authorized Microsoft employees can access prompt and completion data that triggers automated systems for the purposes of investigating and verifying potential abuse. This data may be used to improve content management systems. In the event of a confirmed policy violation, Microsoft may ask you to take immediate action to remediate the issue and to prevent further abuse. Failure to address an issue may result in suspension or termination of Azure OpenAI resource access.
