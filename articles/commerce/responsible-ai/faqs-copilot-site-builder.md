@@ -2,7 +2,7 @@
 # required metadata
 
 title: FAQ for Copilot in site builder
-description: This FAQ provides information about the AI technology used in Copilot in site builder for product enrichment, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides information about the AI technology that's used in Copilot in site builder for product enrichment, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 03/29/2024
 ms.custom: 
   - responsible-ai-faqs
@@ -39,7 +39,7 @@ Creating marketing and storytelling content for a specific product for e-commerc
 
 ## How was Copilot in site builder evaluated, and what metrics are used to measure performance?
 
-- Copilot in site builder underwent extensive testing where numerous texts in different languages were evaluated by language experts against various criteria. Testing was based on fictitious product catalogs that are part of the demonstration data.
+- Copilot in site builder underwent extensive testing where language experts evaluated numerous texts in different languages against various criteria. Testing was based on fictitious product catalogs that are part of the demonstration data.
 - Copilot in site builder is built in accordance with Microsoft's Responsible AI Standard. For more information, see [Empowering responsible AI practices](https://aka.ms/RAI).
 
 ## How does Microsoft monitor the quality of generated content?
@@ -47,11 +47,11 @@ Creating marketing and storytelling content for a specific product for e-commerc
 Microsoft has various systems in place to ensure that Copilot capabilities remain operational and generate content of the highest quality.
 
 - Users have the opportunity to provide feedback to report inappropriate content and improve the functionality.
-- If you encounter inappropriate generated content, you can report it to Microsoft via the [Microsoft Security Response Center reporting portal](https://go.microsoft.com/fwlink/?linkid=2249810). 
+- If users encounter inappropriate generated content, they can report it to Microsoft via the [Microsoft Security Response Center reporting portal](https://go.microsoft.com/fwlink/?linkid=2249810). 
 
   Microsoft might disable the Copilot-driven features for selected customers if abuse of the functionality is detected. 
 
- - Microsoft tracks user feedback to help improve suggestions. Users can provide feedback by using the like (thumbs up) or dislike (thumbs down) icon when interacting with Copilot in site builder. We gather the telemetry of these gestures for each AI output for which you submit feedback.
+ - Microsoft tracks user feedback to help improve suggestions. When interacting with Copilot in site builder, users can provide feedback by using the like (thumbs up) or dislike (thumbs down) symbols. Microsoft gathers the telemetry of these gestures for each AI output for which users submit feedback.
 - The Azure OpenAI Service stores prompts and completions from the service to monitor for abusive use and to develop and improve the quality of Azure OpenAI's content management systems. Your company data isn't used to train AI models in the Azure OpenAI service. For information about content management and filtering, see [Content filtering](/azure/cognitive-services/openai/concepts/content-filter). 
 
 Authorized Microsoft employees can access prompt and completion data that triggers automated systems for the purposes of investigating and verifying potential abuse. This data may be used to improve content management systems. In the event of a confirmed policy violation, Microsoft may ask you to take immediate action to remediate the issue and to prevent further abuse. Failure to address an issue may result in suspension or termination of Azure OpenAI resource access.
@@ -60,7 +60,7 @@ For more information, see [Data, privacy, and security for Azure OpenAI Service]
 
 ## What are the limitations of Copilot in site builder, and how can users minimize the impact of the Copilot in site builder limitations when using the system?
 
-The underlying technology behind Copilot in site builder uses AI that has been trained on a wide range of sources, but the generated content isn't always factual or suitable. Some suggestions may even include questionable or inappropriate content. It's your responsibility to review and edit generated suggestions to ensure accuracy and appropriateness.
+The underlying technology behind Copilot in site builder uses AI that is trained on a wide range of sources, but the generated content isn't always factual or suitable. Some suggestions may even include questionable or inappropriate content. It's your responsibility to review and edit generated suggestions to ensure accuracy and appropriateness.
 
 Inaccurate responses might be returned when users interact with the system in languages other than the supported languages. For information about supported languages, see [Copilot international availability](https://go.microsoft.com/fwlink/?linkid=2263265) 
 
