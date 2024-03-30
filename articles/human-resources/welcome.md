@@ -6,8 +6,7 @@ description: Dynamics 365 Human Resources provides the workforce insights you ne
 author: twheeloc
 ms.date: 09/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -17,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: ["260624"]
+ms.custom: 
 ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
