@@ -32,7 +32,7 @@ The integration key is based on an alternate key of the Dataverse table. The alt
 
 ### Automated key generation
 
-Dual-write integration keys are automatically generated based on the alternate keys that are defined for the Dataverse table. If you find that any integration keys are missing or incorrect (for example, if you receive an [error code](dual-write-error-codes.md) that's related to integration keys), you can refresh the keys.
+Dual-write integration keys are automatically generated based on the alternate keys that are defined for the Dataverse table. You can refresh the integration keys if you find that any are missing or incorrect. (For example, you might learn that keys are missing or incorrect because you receive an [error code](dual-write-error-codes.md) that's related to integration keys.)
 
 To refresh integration keys, follow these steps.
 
@@ -63,7 +63,7 @@ To modify an integration key, follow these steps.
 
 For dual-write to correctly link unique records, the dual-write maps for tables that use the integration keys must meet the following requirements:
 
-- All fields of the integration key for a table must be included in the dual-write table maps for that table. Before you initialize a map, ensure that all integration key fields are mapped to a field in the finance and operations entity, so that the correct records can be found during dual-write synchronization.
+- All fields of the integration key for a table must be included in the dual-write table maps for that table. Before you initialize a map, make sure that all integration key fields are mapped to a field in the finance and operations entity. In this way, you ensure that the correct records can be found during dual-write synchronization.
 - Lookup fields, the expanded key fields of a referenced entity, must also be mapped. If a lookup field is used as part of the alternate key in Dataverse, the expanded field must also be mapped to a field in finance and operations apps in the dual-write map.
 - If a dual-write table map is bidirectionally mapped (that is, if any of the field mappings are bidirectional between finance and operations apps and Dataverse), all integration key fields must also be bidirectionally mapped.
 
