@@ -1,6 +1,6 @@
 ---
 title: Managing dual-write integration keys
-description: This article describes managing integration keys for dual-write
+description: This article describes managing integration keys for dual-write.
 author: jaredha
 ms.date: 03/29/2024
 ms.topic: how-to
@@ -23,7 +23,7 @@ Integration keys for dual-write are the natural key for an entity that uniquely 
 > [!NOTE]
 > Integration keys must only be defined for Dataverse tables. They are not required for finance and operations entities.
 
-The integration key is based on an alternate key of the Dataverse table. The alternate keys on the table facilitates simplified programming and integration with external systems. These keys are essential in cases where an external system doesn't store the globally unique identifiers (GUIDs) that uniquely identify rows in Dataverse. For more information on alternate keys in Dataverse, see [Define alternate keys to reference rows](/power-apps/maker/data-platform/define-alternate-keys-reference-records).
+The integration key is based on an alternate key of the Dataverse table. The alternate keys on the table facilitate simplified programming and integration with external systems. These keys are essential in cases where an external system doesn't store the globally unique identifiers (GUIDs) that uniquely identify rows in Dataverse. For more information on alternate keys in Dataverse, see [Define alternate keys to reference rows](/power-apps/maker/data-platform/define-alternate-keys-reference-records).
 
 > [!IMPORTANT]
 > The alternate key on the Dataverse table that's used for the integration key should only include columns for which application users aren't allowed to change the value. The integration key defines the relationship between the record in finance and operations apps and Dataverse. If a value in a column that is part of the alternate key changes for a record, it's essentially changing the identity of the record and breaks the relationship between the record in finance and operations apps and Dataverse. It's important that keys be matched between the finance and operations apps and Dataverse.
@@ -57,7 +57,7 @@ To modify an integration key, follow these steps.
 1. Select **Save** on the action ribbon.
 
 ## Configuring dual-write maps with integration key fields
-For dual-write to correctly link unique records, the dual-write maps with tables using the integration keys must adhear to the following requirements:
+For dual-write to correctly link unique records, the dual-write maps with tables using the integration keys must include the following requirements:
 - All fields of the integration key for a table must be included in the dual-write table maps for that table. Before initializing a map, ensure that all integration key fields are mapped to a field in the finance and operations entity so the correct records can be found during the dual-write synchronization.
 - Lookup fields, the expanded key fields of a referenced entity, must also be mapped. If a lookup field is used as part of the alternate key in Dataverse, the expaned field must also be mapped to a field in finance and operations apps in the dual-write map.
 - If a dual-write table map is bidirectionally mapped (that is, if any of the field mappings are bidirectional between finance and operations apps and Dataverse), then all integration key fields must also be bidirectionally mapped.
