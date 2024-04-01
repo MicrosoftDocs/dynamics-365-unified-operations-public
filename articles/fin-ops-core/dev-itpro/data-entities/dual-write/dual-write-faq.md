@@ -68,7 +68,7 @@ For more advanced finance and operations filters, see [Using Expressions in Quer
 
 ### Dual-write live synchronization introduces tight coupling across applications. What happens if one side fails? Will the other side fail too?
 
-When the integration is in live sync mode, if the sync fails on one of the apps, then the other app fails as well and users receive an error. When the integration is paused, changes are staged. They're then written when the target system is up and running. For more information about how to automatically pause integrations, see [Alert notifications](errors-and-alerts.md#alert-notifications).
+When the integration is in live synchronization mode, if the synchronization fails on one of the apps, the other app also fails, and users receive an error. When the integration is paused, changes are staged. They're then written when the target system is up and running. For more information about how to automatically pause integrations, see [Alert notifications](errors-and-alerts.md#alert-notifications).
 
 ### When live synchronization is paused and then resumed, does it follow the sequence of changes? For example, if the Name column in the finance and operations app is changed from NameA to NameB to NameC, is customer engagement data changed from NameA to NameB to NameC, or is it changed directly from NameA to NameC?
 
@@ -76,12 +76,12 @@ The integration follows the complete sequence of changes. In the example, the cu
 
 ### How do I handle a finance and operations database transfer from PROD to STAGE? What is the effect on dual-write? After the transfer, the systems are no longer in sync. Is the synchronization done automatically?
 
-Each linked environment-pair (finance and operations apps environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you're refreshing a sandbox from production, then both finance and operations app sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments need to be unlinked. After the data refresh on target environments, these tables should be cleaned up:
+Each pair of linked environments (finance and operations environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you're refreshing a sandbox from production, both the finance and operations sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments must be unlinked. After the data refresh in target environments, the following tables should be cleaned up:
 
-+ finance and operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
++ Finance and operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
 + Dataverse tables: **DualwriteRuntimeConfiguration**. 
 
-The environments need to be relinked and the maps reactivated manually.
+The environments must be relinked and the maps reactivated manually.
 
 ### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern?
 
@@ -93,11 +93,11 @@ For information about how to migrate Prospect to cash to dual-write, see [Migrat
 
 ### On finance and operations data tables, can I develop unbounded columns that flow to Dataverse by using dual-write?
 
-Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, you should monitor the performance overhead from the X++ logic that's required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, you should avoid using virtual columns to transform or calculate  values through X++ and expect that to go back to Dataverse within the same transaction.
+Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, you should monitor the performance overhead from the X++ logic that's required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, you should avoid using virtual columns to transform or calculate values through X++ and expect that to go back to Dataverse within the same transaction.
 
 ### When I use the Dataverse offline app, what happens if I can't sync the data after reconnection? Does this situation cause an inconsistent state between the Dataverse environment and the finance and operations environment?
 
-You can interact with Dataverse data offline when using the [Dynamics 365 for phones app](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets) or the [Field Service Mobile app](/dynamics365/field-service/field-service-mobile-overview) in offline mode. In both apps, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync fails, and Dataverse isn't updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes are staged and then synced with the finance and operations environment when the mapping is up and running again. For more information, see [Run model-driven apps and canvas apps on Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile).
+You can interact with Dataverse data offline when you use the [Dynamics 365 for phones app](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets) or the [Field Service Mobile app](/dynamics365/field-service/field-service-mobile-overview) in offline mode. In both apps, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data synchronization fails, and Dataverse isn't updated. When the integration is paused, you can rerun the synchronization and save your updates on the server. These changes are staged and then synced with the finance and operations environment when the mapping is up and running again. For more information, see [Run model-driven apps and canvas apps on Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile).
 
 ## Mapping concepts between apps
 
