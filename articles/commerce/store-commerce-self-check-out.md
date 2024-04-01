@@ -51,11 +51,11 @@ Note: In demo data, Houston-49 is set up as SCO register and SCO layout has been
 
 ## Support for operations
 Following consumer operations are supported:
-- **Scan and add item to cart** - **Action**: **Product sale**. Allows user to scan the items and add to the transaction. If an item is restricted from self-checkout, there is an error message displayed to seek cashier's assistance.
-- **Add rewards number** - **Action**: **Add loyalty card**. This operation will invoke a numpad to enter the loyalty account number, so that the customer can be associated to the transaction.
+- **Scan and add item to cart** - **Action**: **Product sale** Allows user to scan the items and add to the transaction. If an item is restricted from self-checkout, there is an error message displayed to seek cashier's assistance.
+- **Add rewards number** - **Action**: **Add loyalty card** This operation will invoke a numpad to enter the loyalty account number, so that the customer can be associated to the transaction.
 - **Search item code** - **Action**:**Product sale** This operation will invoke a numpad to enter the item code of the product to add to cart if the barcode is missing or wont scan.
 - **Search** - **Action**: **Search** This operation will invoke product browsing screen to be able to select product from product categories to add to cart.
-- **Pay card**- **Action**: **Pay card**This operation will enable payment of the transaction using credit/debit card only.
+- **Pay card**- **Action**: **Pay card** This operation will enable payment of the transaction using credit/debit card only.
 Once payment is processed, there will be an option to print receipt.
 
 ## Assisted sale workflow
