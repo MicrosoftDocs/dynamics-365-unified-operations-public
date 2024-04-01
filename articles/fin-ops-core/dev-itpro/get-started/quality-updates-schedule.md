@@ -55,11 +55,11 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Completed |
 | 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 14, 2024| Completed |
 | 10.0.37 PQU-2 | December 30, 2023 | January 8, 2024 to February 11, 2024| Completed |
-| 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| In-Progress |
+| 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Completed |
 | 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| In-Progress |
-| 10.0.38 PQU-1 | February 7, 2024 | February 12, 2024 to March 17, 2024| In-Progress |
-| 10.0.38 PQU-2 | March 6, 2024 | March 11, 2024 to April 14, 2024| Not Started |
-| 10.0.38 PQU-3 | April 3, 2024 | April 8, 2024 to May 12, 2024| Not Started |
+| 10.0.38 PQU-1 | February 7, 2024 | February 12, 2024 to March 17, 2024| Completed |
+| 10.0.38 PQU-2 | March 6, 2024 | March 11, 2024 to April 14, 2024| In-Progress |
+| 10.0.38 PQU-3 | April 3, 2024 | April 8, 2024 to May 12, 2024| In-Progress |
 | 10.0.38 PQU-4 | May 1, 2024 | May 6, 2024 to June 9, 2024| Not Started |
 | 10.0.38 PQU-5 | May 29, 2024 | June 3, 2024 to July 7, 2024| Not Started |
 | 10.0.38 PQU-6 | June 26, 2024 | July 1, 2024 to August 4, 2024| Not Started |
@@ -103,21 +103,6 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-3 train schedule
-
-**App version: 10.0.1725.146**
-
-**Platform version: 7.0.7068.154**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming Production Schedule |
-|---|---|---|
-| Station 1 | February 5 to February 8, 2024 | NA |
-| Station 2 | February 12 to February 15, 2024 | February 24 to February 25, 2024 |
-| Station 3 | February 13 to February 16, 2024 | February 24 to February 25, 2024 |
-| Station 4 | February 19 to February 22, 2024 | March 2 to March 3, 2024 |
-| Station 5 | February 26 to February 29, 2024 | March 9 to March 10, 2024 |
-| Station 6 | February 27 to March 1, 2024 | March 9 to March 10, 2024 |
-
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.37 Release-4 train schedule
 
 **App version: 10.0.1725.168**
@@ -133,21 +118,6 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | March 25 to March 28, 2024 | April 6 to April 7, 2024 |
 | Station 6 | March 26 to March 29, 2024 | April 7 to April 7, 2024 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.38 Release-1 train schedule
-
-**App version: 10.0.1777.115**
-
-**Platform version: 7.0.7120.116**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | February 12 to February 15, 2024 | NA |
-| Station 2 | February 19 to February 22, 2024 | March 2 to March 3, 2024 |
-| Station 3 | February 20 to February 23, 2024 | March 2 to March 3, 2024 |
-| Station 4 | February 26 to February 29, 2024 | March 9 to March 10, 2024 |
-| Station 5 | March 4 to March 7, 2024 | March 16 to March 17, 2024 |
-| Station 6 | March 5 to March 8, 2024 | March 16 to March 17, 2024 |
-
 ### <a name="schedule"></a>[New] Proactive quality update upcoming 10.0.38 Release-2 train schedule
 
 **App version: 10.0.1777.135**
@@ -162,6 +132,21 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | March 25 to March 28, 2024 | April 6 to April 7, 2024 |
 | Station 5 | April 1 to April 4, 2024 | April 13 to April 14, 2024 |
 | Station 6 | April 2 to April 5, 2024 | April 13 to April 14, 2024 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.38 Release-3 train schedule
+
+**App version: 10.0.1777.157**
+
+**Platform version: 7.0.7120.147**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | April 8 to April 11, 2024 | NA |
+| Station 2 | April 15 to April 18, 2024 | April 27 to April 28, 2024 |
+| Station 3 | April 16 to April 19, 2024 | April 27 to April 28, 2024|
+| Station 4 | April 22 to April 25, 2024 | May 4  to May 5, 2024 |
+| Station 5 | April 29 to May 2 | May 11 to May 12, 2024 |
+| Station 6 | April 30 to May 3 | May 11 to May 12, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
