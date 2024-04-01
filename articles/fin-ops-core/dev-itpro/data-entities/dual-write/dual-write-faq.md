@@ -54,14 +54,6 @@ After the bootstrapping is done, you can configure the initial synchronization t
 
 ## Dual-write administration and management
 
-### What is the purpose of the integration key, and is it mandatory?
-
-The integration key is the natural key that uniquely identifies rows. Integration keys are required only for Dataverse tables. You can manually create an integration key in dual-write. An integration key can also be automatically created from the table's alternate keys, if an alternate key is already provided for the table. Integration keys are used for the same purpose as alternate keys: they provide an efficient and accurate way to integrate data with external systems. Integration keys are essential in cases where an external system doesn't store the globally unique identifiers (GUIDs) that uniquely identify rows in Dataverse.
-
-Dual-write uses integration keys to uniquely identify rows, by using one or more table column values that represent a unique combination. For example, to identify an account row by using an integration key, you can use the account number column. Alternatively, you can use the account number column together with other columns that have values that should not change. For more information, see [Define alternate keys using Power Apps portal](/powerapps/maker/common-data-service/define-alternate-keys-portal).
-
-It's important that keys be matched between the finance and operations environment and the Dataverse environment. Otherwise, issues might occur during the initial synchronization phase.
-
 ### How do I move table maps between environments? Is version control supported for table maps?
 
 You can export maps and then import them into a different environment. You can automate the process by using Azure DevOps. You can have version control on your dual-write mappings, because the mappings are solution-aware components. For more information, see [Update table maps and export them to other environments as a solution](app-lifecycle-management.md#update-table-maps).
