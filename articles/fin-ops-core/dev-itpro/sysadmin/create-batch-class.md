@@ -1,6 +1,6 @@
 ---
 title: Create a Batch Class
-description: Create a Batch Class in Visual Studio.
+description: This article exlains how to ceate a Batch Class for Microsoft Dynamics 365 finance and operations apps to perform tasks efficiently in the backgroundin Microsoft Visual Studio.
 author: cwithfourplus
 ms.date: 04/01/2024
 ms.topic: how-to
@@ -182,11 +182,11 @@ To create a batch class, the following prerequisites must be met:
 - **Implement Transactional Integrity**: Ensure that batch class operations maintain transactional integrity, so that if there was a failure, transactions can be rolled back to prevent partial or inconsistent data updates. This helps in preserving data consistency and reliability.
 - **Use Checkpoints for Resuming**: Implement checkpoints within your batch class to track progress and facilitate resuming from the last successfully processed record if there was failure. It allows for efficient recovery without reprocessing already completed tasks.
 - **Handle Partial Failures Gracefully**: Implement error handling mechanisms to gracefully handle partial failures within batch class operations. Log errors, rollback transactions if necessary, and provide appropriate notifications for troubleshooting and resolution.
-- **Utilize Batch Concurrency Control**: Implement [batch concurrency control](priority-based-batch-scheduling.md#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation caused by concurrent access to the same data. To optimize throughput and maintain system stability, configure the batch concurrency settings appropriately based on workload characteristics and system resources .
+- **Utilize Batch Concurrency Control**: Implement [batch concurrency control](priority-based-batch-scheduling.md#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation caused by concurrent access to the same data. To optimize throughput and maintain system stability, configure the batch concurrency settings appropriately based on workload characteristics and system resources.
 - **Enable Batch History for Errors Only in Production**: Configure batch history settings to log detailed information only for error situations in production environments. This approach helps to prevent the accumulation of large batch history, especially in batch jobs with numerous tasks, or frequently recurring schedules. By limiting batch history to errors, you can effectively manage storage usage and maintain clarity in monitoring batch job performance and troubleshooting issues.
 - **Test Idempotency and Recovery**: Thoroughly test the idempotency and recovery capabilities of your batch class under various failure scenarios. Validate that retrying a failed batch job doesn't result in duplicate or inconsistent data, ensuring robustness in production environments.
 - **Monitor Batch Job Performance**: To identify any bottlenecks or areas for optimization, regularly monitor the performance of your batch jobs. Use monitoring tools and logs to track resource utilization and processing times.
-- **Schedule Batch Jobs Wisely**: Schedule batch jobs during off-peak hours to ensure it doesn't interfere with system performance and user experience. Consider workload patterns and resource availability when scheduling batch processing. For recuring workloads you can consider [active batch periods](activeperiod.md).
+- **Schedule Batch Jobs Wisely**: Schedule batch jobs during off-peak hours to ensure it doesn't interfere with system performance and user experience. Consider workload patterns and resource availability when scheduling batch processing. For recuring workloads, you can consider [active batch periods](activeperiod.md).
 - **Test Batch Jobs Thoroughly**: Perform comprehensive testing of batch jobs in a development or test environment before deploying them to production. Validate functionality, error handling, and performance under various scenarios.
 
 ## Next Steps
