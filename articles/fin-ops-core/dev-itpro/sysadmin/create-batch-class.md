@@ -44,137 +44,137 @@ To create a batch class, the following prerequisites must be met:
 
 1. **Override Methods**: Override the necessary methods provided by the **RunBaseBatch** class. The most commonly overridden methods are **run()** and **main()**.
 
-```X++
-public void run()
-{
-    // This method is the entry point for the batch class
-    super();
-}
+   ```X++
+   public void run()
+   {
+       // This method is the entry point for the batch class
+       super();
+   }
 
-public static void main(Args _args)
-{
-    // This method is used to create an instance of the batch class, prompt the user for input using dialog,
-    // and then execute the batch job using run().
-}
-```
+   public static void main(Args _args)
+   {
+       // This method is used to create an instance of the batch class, prompt the user for input using dialog,
+       // and then execute the batch job using run().
+   }
+   ```
 
-5. **Implement Batch Logic**: Inside the **run()** method, implement the logic that you want the batch job to perform. It could include data processing, calculations, or any other tasks. Inside **main()** method, instantiate batch class and invoke **run()**.
+1. Inside the **run()** method, implement the logic that you want the batch job to perform. It could include data processing, calculations, or any other tasks. Inside **main()** method, instantiate batch class and invoke **run()**.
 
-```X++
-public void run()
-{
-    // Perform batch processing tasks here
-    // For example:
-    info("Batch job started!");
-    // Your logic goes here
-    info("Batch job completed!"); 
-}
+   ```X++
+   public void run()
+   {
+       // Perform batch processing tasks here
+       // For example:
+       info("Batch job started!");
+       // Your logic goes here
+       info("Batch job completed!"); 
+   }
 
-public static void main(Args _args)
-{
-    MyBatchClass batch = new MyBatchClass();
-    // Run the batch class
-    batch.run();
-}
-```
+   public static void main(Args _args)
+   {
+       MyBatchClass batch = new MyBatchClass();
+       // Run the batch class
+       batch.run();
+   }
+   ```
 
-6. **Configure Batch Parameters**: Let's integrate the **dialog()** method into our Batch Class. The **dialog()** method allows you to prompt users for input when they schedule the batch job. 
+1. Integrate the **dialog()** method into our Batch Class. The **dialog()** method allows you to prompt users for input when they schedule the batch job. 
 
-```X++
-class MyBatchClass extends RunBaseBatch
-{
-    DialogField dialogMyParameter;
+   ```X++
+   class MyBatchClass extends RunBaseBatch
+   {
+       DialogField dialogMyParameter;
 
-    str myParameter = "Default value";
+       str myParameter = "Default value";
 
-    #define.CurrentVersion(1)
-    #localmacro.CurrentList
-        myParameter
-    #endmacro
+       #define.CurrentVersion(1)
+       #localmacro.CurrentList
+           myParameter
+       #endmacro
 
-    public container pack()
-    {
-        // This method is used by batch platform to serialize batch parameters in a container
-        return [#CurrentVersion, #CurrentList];
-    }
+       public container pack()
+       {
+           // This method is used by batch platform to serialize batch parameters in a container
+           return [#CurrentVersion, #CurrentList];
+       }
 
-    public boolean unpack(container _packedClass)
-    {
-        // This method is used by batch platform to deserialize batch parameters from stored 
-        // batch parameter container
+       public boolean unpack(container _packedClass)
+       {
+           // This method is used by batch platform to deserialize batch parameters from stored 
+           // batch parameter container
 
-        Integer version = RunBase::getVersion(_packedClass);
-        container packedData;
+           Integer version = RunBase::getVersion(_packedClass);
+           container packedData;
 
-        switch (version)
-        {
-            case #CurrentVersion:
-                [version, #CurrentList] = _packedClass;
-                break;
-            default:
-                return false;
-        }
+           switch (version)
+           {
+               case #CurrentVersion:
+                   [version, #CurrentList] = _packedClass;
+                   break;
+               default:
+                   return false;
+     }
 
-        return true;
-    }
+           return true;
+       }
 
-    public Object dialog()
-    {
-        // This method is invoked when user opens batch parameter dialog
-        // It helps to add parameters to batch class and set their default value
+       public Object dialog()
+       {
+           // This method is invoked when user opens batch parameter dialog
+           // It helps to add parameters to batch class and set their default value
 
-        DialogRunbase dialog = super();
+           DialogRunbase dialog = super();
 
-        dialogMyParameter = dialog.addField(enum2Str(Types::Integer), "My Parameter");
+           dialogMyParameter = dialog.addField(enum2Str(Types::Integer), "My Parameter");
 
-        // Set a default value of parameter
-        dialogMyParameter.value(myParameter);
+           // Set a default value of parameter
+           dialogMyParameter.value(myParameter);
 
-        return dialog;
-    }
+           return dialog;
+       }
 
-    public boolean getFromDialog()
-    {
-        // This method is invoked by batch platform to read the values of parameters from batch 
-        // parameter dialog method
-        myParameter = dialogMyParameter.value(); 
+       public boolean getFromDialog()
+       {
+           // This method is invoked by batch platform to read the values of parameters from batch 
+           // parameter dialog method
+           myParameter = dialogMyParameter.value(); 
 
-        return super();
-    }
+           return super();
+       }
 
-    public void run()
-    {
-        // This method is the entry point for the batch class
+       public void run()
+       {
+           // This method is the entry point for the batch class
         
-        info("Batch job started!");
-        // Access the parameter value entered by the user
-        info("My Parameter: " + this.myParameter);
-        // Your main batch logic goes here
-        info("Batch job completed!");
-    }
+           info("Batch job started!");
+           // Access the parameter value entered by the user
+           info("My Parameter: " + this.myParameter);
+           // Your main batch logic goes here
+           info("Batch job completed!");
+       }
 
-    public static void main(Args _args)
-    {
-        // This method is used to create an instance of the batch class, prompt the user  
-        // for input using dialog, and then execute the batch job using run().
+       public static void main(Args _args)
+       {
+           // This method is used to create an instance of the batch class, prompt the user  
+           // for input using dialog, and then execute the batch job using run().
 
-        MyBatchClass batch = new MyBatchClass();
-        if (batch.prompt())
-        {
-            batch.run();
-        }
-    }
-}
-```
+           MyBatchClass batch = new MyBatchClass();
+           if (batch.prompt())
+           {
+               batch.run();
+           }
+       }
+   }
+   ```
 
-7. **Deploy and Schedule**: Once your batch class is ready, deploy it to your Dynamics 365 Finance and Operations environment. You can then schedule the batch job to run at specific intervals using the batch job scheduler in the application.
+1. Once your batch class is ready, deploy it to your finance and operations apps environment. You can then schedule the batch job to run at specific intervals using the batch job scheduler in the application.
 
 ## Best Practices
 
 - **Implement Batch Retry Logic**: Ensure that your batch classes can be retried, meaning they can be reattempted automatically if there's failure. This helps in handling transient errors and ensures robustness in processing.
 - **Effective Error Handling**: Implement robust error handling mechanisms within your batch class to gracefully handle exceptions and errors. Log errors appropriately for troubleshooting and monitoring purposes.
 - **Short Transaction Duration**: Keep the duration of individual transactions within your batch class as short as possible to minimize locking and contention issues in the database. This helps in improving concurrency and overall system performance.
-- **Avoid Adding Too Many Tasks**: Exercise caution when adding tasks to a single batch job, as exceeding 1,000 tasks would lead to inefficiencies, and surpassing 4,000 tasks is considered excessive. It's advisable to decompose intricate Batch Job processing into smaller jobs, more manageable tasks to enhance both maintainability and performance.
+- **Avoid Adding Too Many Tasks**: Exercise caution when adding tasks to a single batch job, as exceeding 1,000 tasks leads to inefficiencies, and surpassing 4,000 tasks is considered excessive. It's advisable to decompose intricate Batch Job processing into smaller jobs, more manageable tasks to enhance both maintainability and performance.
 - **Limit Batch Task Dependencies**: Avoid excessive dependencies between batch tasks within a job. Minimize dependencies to ensure that tasks can be executed independently, improving parallelism and scalability.
 - **Optimize Batch Parameter Usage**: Efficiently use batch parameters to pass necessary information to the batch job. Avoid overloading parameters with excessive data to maintain clarity and simplicity.
 - **Keep Execution Duration Short**: Ensure that the execution duration of your batch class remains short to mitigate the effect of transient infrastructure issues. By keeping processing times brief, you can minimize the window of vulnerability and better manage system interruptions.
