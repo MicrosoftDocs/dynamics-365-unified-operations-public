@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cwithfourplus
+ms.author: vikaush
 ms.search.validFrom: 2024-03-07
 ms.dyn365.ops.version: Platform Update50
 ---
@@ -165,22 +165,24 @@ class MyBatchClass extends RunBaseBatch
 
 ## Best Practices
 
-1. **Implement Batch Retry Logic**: Ensure that your batch classes can be retried, meaning they can be reattempted automatically if there's failure. This helps in handling transient errors and ensures robustness in processing.
-2. **Effective Error Handling**: Implement robust error handling mechanisms within your batch class to gracefully handle exceptions and errors. Log errors appropriately for troubleshooting and monitoring purposes.
-3. **Short Transaction Duration**: Keep the duration of individual transactions within your batch class as short as possible to minimize locking and contention issues in the database. This helps in improving concurrency and overall system performance.
-4. **Avoid Adding Too Many Tasks**: Exercise caution when adding tasks to a single batch job, as exceeding 1,000 tasks would lead to inefficiencies, and surpassing 4,000 tasks is considered excessive. It's advisable to decompose intricate Batch Job processing into smaller jobs, more manageable tasks to enhance both maintainability and performance.
-5. **Limit Batch Task Dependencies**: Avoid excessive dependencies between batch tasks within a job. Minimize dependencies to ensure that tasks can be executed independently, improving parallelism and scalability.
-6. **Optimize Batch Parameter Usage**: Efficiently use batch parameters to pass necessary information to the batch job. Avoid overloading parameters with excessive data to maintain clarity and simplicity.
-7. **Keep Execution Duration Short**: Ensure that the execution duration of your batch class remains short to mitigate the effect of transient infrastructure issues. By keeping processing times brief, you can minimize the window of vulnerability and better manage system interruptions.
-8. **Design for Idempotency**: Design batch class operations to be idempotent, meaning that executing the same operation multiple times has the same result as executing it once. It ensures that retrying a failed batch job doesn't lead to duplicate or unintended processing, maintaining data integrity.
-9. **Implement Transactional Integrity**: Ensure that batch class operations maintain transactional integrity, so that if there was a failure, transactions can be rolled back to prevent partial or inconsistent data updates. This helps in preserving data consistency and reliability.
-10. **Use Checkpoints for Resuming**: Implement checkpoints within your batch class to track progress and facilitate resuming from the last successfully processed record if there was failure. It allows for efficient recovery without reprocessing already completed tasks.
-11. **Handle Partial Failures Gracefully**: Implement error handling mechanisms to gracefully handle partial failures within batch class operations. Log errors, rollback transactions if necessary, and provide appropriate notifications for troubleshooting and resolution.
-12. **Utilize Batch Concurrency Control**: Implement [batch concurrency control](priority-based-batch-scheduling#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation caused by concurrent access to the same data. Configure batch concurrency settings appropriately based on workload characteristics and system resources to optimize throughput and maintain system stability.
-12. **Test Idempotency and Recovery**: Thoroughly test the idempotency and recovery capabilities of your batch class under various failure scenarios. Validate that retrying a failed batch job doesn't result in duplicate or inconsistent data, ensuring robustness in production environments.
-13. **Monitor Batch Job Performance**: Regularly monitor the performance of your batch jobs to identify any bottlenecks or areas for optimization. Use monitoring tools and logs to track resource utilization and processing times.
-14. **Schedule Batch Jobs Wisely**: Schedule batch jobs during off-peak hours to ensure it doesn't interfere with system performance and user experience. Consider workload patterns and resource availability when scheduling batch processing.
-15. **Test Batch Jobs Thoroughly**: Perform comprehensive testing of batch jobs in a development or test environment before deploying them to production. Validate functionality, error handling, and performance under various scenarios.
+- **Implement Batch Retry Logic**: Ensure that your batch classes can be retried, meaning they can be reattempted automatically if there's failure. This helps in handling transient errors and ensures robustness in processing.
+- **Effective Error Handling**: Implement robust error handling mechanisms within your batch class to gracefully handle exceptions and errors. Log errors appropriately for troubleshooting and monitoring purposes.
+- **Short Transaction Duration**: Keep the duration of individual transactions within your batch class as short as possible to minimize locking and contention issues in the database. This helps in improving concurrency and overall system performance.
+- **Avoid Adding Too Many Tasks**: Exercise caution when adding tasks to a single batch job, as exceeding 1,000 tasks would lead to inefficiencies, and surpassing 4,000 tasks is considered excessive. It's advisable to decompose intricate Batch Job processing into smaller jobs, more manageable tasks to enhance both maintainability and performance.
+- **Limit Batch Task Dependencies**: Avoid excessive dependencies between batch tasks within a job. Minimize dependencies to ensure that tasks can be executed independently, improving parallelism and scalability.
+- **Optimize Batch Parameter Usage**: Efficiently use batch parameters to pass necessary information to the batch job. Avoid overloading parameters with excessive data to maintain clarity and simplicity.
+- **Keep Execution Duration Short**: Ensure that the execution duration of your batch class remains short to mitigate the effect of transient infrastructure issues. By keeping processing times brief, you can minimize the window of vulnerability and better manage system interruptions.
+- **Design for Idempotency**: Design batch class operations to be idempotent, meaning that executing the same operation multiple times has the same result as executing it once. It ensures that retrying a failed batch job doesn't lead to duplicate or unintended processing, maintaining data integrity.
+- **Implement Transactional Integrity**: Ensure that batch class operations maintain transactional integrity, so that if there was a failure, transactions can be rolled back to prevent partial or inconsistent data updates. This helps in preserving data consistency and reliability.
+- **Use Checkpoints for Resuming**: Implement checkpoints within your batch class to track progress and facilitate resuming from the last successfully processed record if there was failure. It allows for efficient recovery without reprocessing already completed tasks.
+- **Handle Partial Failures Gracefully**: Implement error handling mechanisms to gracefully handle partial failures within batch class operations. Log errors, rollback transactions if necessary, and provide appropriate notifications for troubleshooting and resolution.
+- **Utilize Batch Concurrency Control**: Implement [batch concurrency control](priority-based-batch-scheduling#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation caused by concurrent access to the same data. Configure batch concurrency settings appropriately based on workload characteristics and system resources to optimize throughput and maintain system stability.
+- **Enable Batch History for Errors Only in Production**:
+Configure batch history settings to log detailed information only for error situations in production environments. This approach helps to prevent the accumulation of large batch history, especially in batch jobs with numerous tasks or frequently recurring schedules. By limiting batch history to errors, you can effectively manage storage usage and maintain clarity in monitoring batch job performance and troubleshooting issues.
+- **Test Idempotency and Recovery**: Thoroughly test the idempotency and recovery capabilities of your batch class under various failure scenarios. Validate that retrying a failed batch job doesn't result in duplicate or inconsistent data, ensuring robustness in production environments.
+- **Monitor Batch Job Performance**: Regularly monitor the performance of your batch jobs to identify any bottlenecks or areas for optimization. Use monitoring tools and logs to track resource utilization and processing times.
+- **Schedule Batch Jobs Wisely**: Schedule batch jobs during off-peak hours to ensure it doesn't interfere with system performance and user experience. Consider workload patterns and resource availability when scheduling batch processing.
+- **Test Batch Jobs Thoroughly**: Perform comprehensive testing of batch jobs in a development or test environment before deploying them to production. Validate functionality, error handling, and performance under various scenarios.
 
 ## Next Steps
 
