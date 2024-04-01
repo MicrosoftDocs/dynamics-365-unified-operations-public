@@ -1,13 +1,13 @@
 ---
 title: Update the Visual Studio development tools
-description: This article explains how to update the development tools.
-author: gianugo
-ms.date: 07/18/2017
+description: Learn about how to update Visual Studio development tools to new versions, including how to uninstall your existing Visual Studio development tools.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-audience: Developer
+ms.date: 07/18/2017
 ms.reviewer: josaw
+audience: Developer
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
