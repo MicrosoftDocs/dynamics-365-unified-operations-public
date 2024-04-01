@@ -17,6 +17,7 @@ ms.author: vikaush
 ms.search.validFrom: 2024-03-07
 ms.dyn365.ops.version: Platform Update50
 ---
+# Create a Batch Class
 
 [!include [banner](../includes/banner.md)]
 
@@ -179,7 +180,7 @@ class MyBatchClass extends RunBaseBatch
 - **Implement Transactional Integrity**: Ensure that batch class operations maintain transactional integrity, so that if there was a failure, transactions can be rolled back to prevent partial or inconsistent data updates. This helps in preserving data consistency and reliability.
 - **Use Checkpoints for Resuming**: Implement checkpoints within your batch class to track progress and facilitate resuming from the last successfully processed record if there was failure. It allows for efficient recovery without reprocessing already completed tasks.
 - **Handle Partial Failures Gracefully**: Implement error handling mechanisms to gracefully handle partial failures within batch class operations. Log errors, rollback transactions if necessary, and provide appropriate notifications for troubleshooting and resolution.
-- **Utilize Batch Concurrency Control**: Implement [batch concurrency control](priority-based-batch-scheduling#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation caused by concurrent access to the same data. Configure batch concurrency settings appropriately based on workload characteristics and system resources to optimize throughput and maintain system stability.
+- **Utilize Batch Concurrency Control**: Implement [batch concurrency control](priority-based-batch-scheduling.md#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation caused by concurrent access to the same data. Configure batch concurrency settings appropriately based on workload characteristics and system resources to optimize throughput and maintain system stability.
 - **Enable Batch History for Errors Only in Production**:
 Configure batch history settings to log detailed information only for error situations in production environments. This approach helps to prevent the accumulation of large batch history, especially in batch jobs with numerous tasks or frequently recurring schedules. By limiting batch history to errors, you can effectively manage storage usage and maintain clarity in monitoring batch job performance and troubleshooting issues.
 - **Test Idempotency and Recovery**: Thoroughly test the idempotency and recovery capabilities of your batch class under various failure scenarios. Validate that retrying a failed batch job doesn't result in duplicate or inconsistent data, ensuring robustness in production environments.
