@@ -4,10 +4,9 @@
 title: Create consolidation groups and additional consolidation accounts
 description: This procedure shows how to create a consolidation account group and then add accounts to the group. 
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 04/01/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
+
  
 # optional metadata 
  
