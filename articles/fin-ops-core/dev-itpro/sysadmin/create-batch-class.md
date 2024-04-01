@@ -54,12 +54,12 @@ public void run()
 
 public static void main(Args _args)
 {
-    // This method is used to create an instance of the batch class, prompt the user for input using dialog(),
-    // and then execute the batch job using runBase().
+    // This method is used to create an instance of the batch class, prompt the user for input using dialog,
+    // and then execute the batch job using run().
 }
 ```
 
-5. **Implement Batch Logic**: Inside the **run()** method, implement the logic that you want the batch job to perform. It could include data processing, calculations, or any other tasks. Inside **main()** method, instantiate batch class and invoke **runBase()**.
+5. **Implement Batch Logic**: Inside the **run()** method, implement the logic that you want the batch job to perform. It could include data processing, calculations, or any other tasks. Inside **main()** method, instantiate batch class and invoke **run()**.
 
 ```X++
 public void run()
@@ -75,7 +75,7 @@ public static void main(Args _args)
 {
     MyBatchClass batch = new MyBatchClass();
     // Run the batch class
-    batch.runBase();
+    batch.run();
 }
 ```
 
@@ -157,11 +157,13 @@ class MyBatchClass extends RunBaseBatch
     public static void main(Args _args)
     {
         // This method is used to create an instance of the batch class, prompt the user  
-        // for input using dialog(), and then execute the batch job using runBase().
+        // for input using dialog, and then execute the batch job using run().
 
         MyBatchClass batch = new MyBatchClass();
-        batch.dialog();
-        batch.runBase();
+        if (batch.prompt())
+        {
+            batch.run();
+        }
     }
 }
 ```
