@@ -1,18 +1,14 @@
 ---
-# required metadata
-
 title: Create a Batch Class
 description: Create a Batch Class in Visual Studio.
 author: cwithfourplus
 ms.date: 04/01/2024
-ms.topic: article
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: vikaush
 ms.search.validFrom: 2024-03-07
 ms.dyn365.ops.version: Platform Update50
@@ -21,29 +17,32 @@ ms.dyn365.ops.version: Platform Update50
 
 [!include [banner](../includes/banner.md)]
 
-In Dynamics 365 Finance and Operations, batch processing allows you to perform tasks efficiently in the background, without impacting the performance of the system. In this tutorial, we learn how to create a Batch Class using Batch Run Base as the base class.
+In Microsoft Dynamics 365 finance and operations apps, batch processing allows you to perform tasks efficiently in the background, without impacting the performance of the system. This article explains how to create a Batch Class using Batch Run Base as the base class.
 
 ## Prerequisites
-- Access to Dynamics 365 Finance and Operations environment.
-- Basic understanding of X++ programming language.
-- Visual Studio with Dynamics 365 Finance and Operations development tools installed.
+
+To create a batch class, the following prerequisites must be met:
+
+- Access to a finance and operations apps environment.
+- Basic understanding of the X++ programming language.
+- Microsoft Visual Studio with finance and operations development tools installed.
 
 ## Create a new Batch Class using Run Base Batch
 
-1. **Open Visual Studio**: Launch Visual Studio and connect to your Dynamics 365 Finance and Operations development environment.
+1. In Visual Studio, connect to your finance and operations apps development environment.
+1. Right-click on your project in the Solution Explorer and select **Add** > **New Item**.
+1. Selec **FinNaceOperations** > **Dynamics 365 Items** > **Code** > **Class**.
+1. Give your class a meaningful name, for example, **MyBatchClass**.
+1. Inside your class, define it by extending the **RunBaseBatch** class. This class provides the basic functionality required for batch processing.
 
-2. **Create a New Class**: Right-click on your project in Solution Explorer and select **Add** > **New Item**. Choose **FinNaceOperations** > **Dynamics 365 Items** > **Code** > **Class**. Give your class a meaningful name, for example, **MyBatchClass**.
+   ```X++
+   class MyBatchClass extends RunBaseBatch
+   {
+       // Your code will go here
+   }
+   ```
 
-3. **Define the Class**: Inside your class, define it by extending the **RunBaseBatch** class. This class provides the basic functionality required for batch processing.
-
-```X++
-class MyBatchClass extends RunBaseBatch
-{
-    // Your code will go here
-}
-```
-
-4. **Override Methods**: Override the necessary methods provided by the **RunBaseBatch** class. The most commonly overridden methods are **run()** and **main()**.
+1. **Override Methods**: Override the necessary methods provided by the **RunBaseBatch** class. The most commonly overridden methods are **run()** and **main()**.
 
 ```X++
 public void run()
