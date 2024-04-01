@@ -22,7 +22,7 @@ Integration keys for dual-write are the natural key for an entity that uniquely 
 > [!NOTE]
 > Integration keys must only be defined for Dataverse tables. They are not required for finance and operations entities.
 
-The integration key is based on an alternate key of the Dataverse table. A purpose of the alternate keys on the table is to faciliate simplified programming and integration with external systems. These are essential in cases where an external system doesn't store the globally unique identifiers (GUIDs) that uniquely identify rows in Dataverse. See [Define alternate keys to reference rows](https://learn.microsoft.com/power-apps/maker/data-platform/define-alternate-keys-reference-records) for more information on alternate keys in Dataverse.
+The integration key is based on an alternate key of the Dataverse table. A purpose of the alternate keys on the table is to faciliate simplified programming and integration with external systems. These are essential in cases where an external system doesn't store the globally unique identifiers (GUIDs) that uniquely identify rows in Dataverse. See [Define alternate keys to reference rows](/power-apps/maker/data-platform/define-alternate-keys-reference-records) for more information on alternate keys in Dataverse.
 
 > [!IMPORTANT]
 > The alternate key on the Dataverse table used for the integration key should only include columns for which application users are not allowed to change the value. The integration key defines the relationship between the record in finance and operations apps and Dataverse. If a value in a column that is part of the alternate key changes for a record, it is essentially changing the identity of the record and breaks the relationship between the record in finance and operations apps and Dataverse. It's important that keys be matched between the finance and operations apps and Dataverse.
@@ -35,7 +35,7 @@ Dual-write integration keys are automatically generated based on the alternate k
 1. Verify an alternate key is created for the Dataverse table.
    - Open the [Power Apps maker portal](https://make.powerapps.com) and select your Dataverse environment.
    - Open the Dataverse table selected in the dual-write table map.
-   - Ensure at least one [alternate key](https://learn.microsoft.com/power-apps/maker/data-platform/define-alternate-keys-reference-records) has been defined for the Dataverse table.
+   - Ensure at least one [alternate key](/power-apps/maker/data-platform/define-alternate-keys-reference-records) has been defined for the Dataverse table.
 5. Open the **Dual-write administration workspace** in finance and operations apps.
 6. Select the related table map.
 7. Select the **Refresh tables** action on the action ribbon.
