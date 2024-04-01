@@ -54,7 +54,8 @@ public void run()
 
 public static void main(Args _args)
 {
-    // This method is used to create an instance of the batch class, prompt the user for input using dialog(), and then execute the batch job using runBase().
+    // This method is used to create an instance of the batch class, prompt the user for input using dialog(),
+    // and then execute the batch job using runBase().
 }
 ```
 
