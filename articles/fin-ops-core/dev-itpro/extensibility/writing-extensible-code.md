@@ -1,18 +1,15 @@
 ---
 title: Write extensible code
-description: This article provides information about how to write extensible code.
+description: Learn about how to write extensible code, including overviews on responsibilities, proven principles, and breaking changes.
 author: MichaelFruergaardPontoppidan
-ms.date: 09/18/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 09/18/2018
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.assetid: 
 ---
 
 # Write extensible code
