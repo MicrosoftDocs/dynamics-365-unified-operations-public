@@ -99,7 +99,8 @@ class MyBatchClass extends RunBaseBatch
 
     public boolean unpack(container _packedClass)
     {
-        // This method is used by batch platform to deserialize batch parameters from stored batch parameter container
+        // This method is used by batch platform to deserialize batch parameters from stored 
+        // batch parameter container
 
         Integer version = RunBase::getVersion(_packedClass);
         container packedData;
@@ -133,7 +134,8 @@ class MyBatchClass extends RunBaseBatch
 
     public boolean getFromDialog()
     {
-        // This method is invoked by batch platform to read the values of parameters from batch parameter dialog method
+        // This method is invoked by batch platform to read the values of parameters from batch 
+        // parameter dialog method
         myParameter = dialogMyParameter.value(); 
 
         return super();
@@ -150,9 +152,10 @@ class MyBatchClass extends RunBaseBatch
         info("Batch job completed!");
     }
 
-    public void main()
+    public static void main(Args _args)
     {
-        // This method is used to create an instance of the batch class, prompt the user for input using dialog(), and then execute the batch job using runBase().
+        // This method is used to create an instance of the batch class, prompt the user  
+        // for input using dialog(), and then execute the batch job using runBase().
 
         MyBatchClass batch = new MyBatchClass();
         batch.dialog();
@@ -181,7 +184,7 @@ class MyBatchClass extends RunBaseBatch
 Configure batch history settings to log detailed information only for error situations in production environments. This approach helps to prevent the accumulation of large batch history, especially in batch jobs with numerous tasks or frequently recurring schedules. By limiting batch history to errors, you can effectively manage storage usage and maintain clarity in monitoring batch job performance and troubleshooting issues.
 - **Test Idempotency and Recovery**: Thoroughly test the idempotency and recovery capabilities of your batch class under various failure scenarios. Validate that retrying a failed batch job doesn't result in duplicate or inconsistent data, ensuring robustness in production environments.
 - **Monitor Batch Job Performance**: Regularly monitor the performance of your batch jobs to identify any bottlenecks or areas for optimization. Use monitoring tools and logs to track resource utilization and processing times.
-- **Schedule Batch Jobs Wisely**: Schedule batch jobs during off-peak hours to ensure it doesn't interfere with system performance and user experience. Consider workload patterns and resource availability when scheduling batch processing.
+- **Schedule Batch Jobs Wisely**: Schedule batch jobs during off-peak hours to ensure it doesn't interfere with system performance and user experience. Consider workload patterns and resource availability when scheduling batch processing. For recuring workloads you can consider [active batch periods](activeperiod.md).
 - **Test Batch Jobs Thoroughly**: Perform comprehensive testing of batch jobs in a development or test environment before deploying them to production. Validate functionality, error handling, and performance under various scenarios.
 
 ## Next Steps
