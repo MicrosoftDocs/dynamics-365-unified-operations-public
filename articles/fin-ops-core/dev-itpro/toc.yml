@@ -1266,7 +1266,7 @@ items:
             - name: Edit a legal entity after dual-write setup
               href: data-entities/dual-write/edit-legal-entity.md
             - name: Managing dual-write integration keys
-              href: dual-write-integration-keys.md
+              href: data-entities/dual-write/dual-write-integration-keys.md
             - name: Pause dual-write for maintenance
               href: data-entities/dual-write/pause-for-maintenance.md
             - name: Error management and alert notifications
