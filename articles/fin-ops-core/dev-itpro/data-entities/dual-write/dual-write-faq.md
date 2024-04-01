@@ -1,13 +1,13 @@
 ---
 title: Dual-write FAQ
 description: This article answers frequently asked questions about dual-write.
-author: sericks007
-ms.date: 05/20/2022
+author: jaredha
+ms.date: 04/01/2024
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: ramasri
+ms.author: jaredha
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -28,7 +28,7 @@ The current plan of record is to restrict dual-write to a one-to-one (1:1) mappi
 
 ### Can I control the sequencing of maps in dual-write, as I can in Data integrator?
 
-Dual-write is transaction-based. For example, if a change in a finance and operations app triggers synchronization of multiple maps with Dataverse, by default, those changes will be sequenced in the order in which they are updated in the database. This pattern makes more sense in the context of initial synchronization. The system provides related table maps in a specified order, and you can reorder the list so that it best suits your environment.
+Dual-write is transaction-based. For example, if a change in a finance and operations app triggers synchronization of multiple maps with Dataverse, by default, those changes are sequenced in the order in which they're updated in the database. This pattern makes more sense in the context of initial synchronization. The system provides related table maps in a specified order, and you can reorder the list so that it best suits your environment.
 
 ### Do application users require any special permissions to enable or configure dual-write?
 
@@ -46,7 +46,7 @@ Legal table mapping can be done when the Dataverse environment is linked. You ca
 
 ### If dual-write solutions are installed in Dataverse, can I uninstall them?
 
-Dual-write solutions are managed solutions that can be uninstalled. However, when a managed solution is uninstalled, all components in the solution are deleted. Any data that is stored in the components is also deleted. For more information, see [Maintain managed solutions](/powerapps/developer/common-data-service/maintain-managed-solutions).
+Dual-write solutions are managed solutions that can be uninstalled. However, when a managed solution is uninstalled, all components in the solution are deleted. Any data that's stored in the components is also deleted. For more information, see [Maintain managed solutions](/powerapps/developer/common-data-service/maintain-managed-solutions).
 
 ### I have data in both a customer engagement app and a finance and operations app, and I bootstrap my existing data in the customer engagement app. If my data isn't currently aligned, can I specify a master source for the initialization run, so that all differences are applied to the target?
 
@@ -68,7 +68,7 @@ For more advanced finance and operations filters, see [Using Expressions in Quer
 
 ### Dual-write live synchronization introduces tight coupling across applications. What happens if one side fails? Will the other side fail too?
 
-When the integration is in live sync mode, if the sync fails on one of the apps, then the other app will fail as well and users will receive an error. When the integration is paused, changes are staged. They are then written when the target system is up and running. For more information about how to automatically pause integrations, see [Alert notifications](errors-and-alerts.md#alert-notifications)
+When the integration is in live sync mode, if the sync fails on one of the apps, then the other app fails as well and users receive an error. When the integration is paused, changes are staged. They're then written when the target system is up and running. For more information about how to automatically pause integrations, see [Alert notifications](errors-and-alerts.md#alert-notifications).
 
 ### When live synchronization is paused and then resumed, does it follow the sequence of changes? For example, if the Name column in the finance and operations app is changed from NameA to NameB to NameC, is customer engagement data changed from NameA to NameB to NameC, or is it changed directly from NameA to NameC?
 
@@ -76,12 +76,12 @@ The integration follows the complete sequence of changes. In the example, the cu
 
 ### How do I handle a finance and operations database transfer from PROD to STAGE? What is the effect on dual-write? After the transfer, the systems are no longer in sync. Is the synchronization done automatically?
 
-Each linked environment-pair (finance and operations apps environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you are refreshing a sandbox from production, then both finance and operations app sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments need to be unlinked. After the data refresh on target environments, these tables should be cleaned up:
+Each linked environment-pair (finance and operations apps environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you're refreshing a sandbox from production, then both finance and operations app sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments need to be unlinked. After the data refresh on target environments, these tables should be cleaned up:
 
 + finance and operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
 + Dataverse tables: **DualwriteRuntimeConfiguration**. 
 
-The environments need to be relinked and maps reactivated manually.
+The environments need to be relinked and the maps reactivated manually.
 
 ### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern?
 
@@ -93,11 +93,11 @@ For information about how to migrate Prospect to cash to dual-write, see [Migrat
 
 ### On finance and operations data tables, can I develop unbounded columns that flow to Dataverse by using dual-write?
 
-Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, you should monitor the performance overhead from the additional X++ logic that is required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, you should avoid using virtual columns to transform or calculate additional values through X++ and expect that to go back to Dataverse within the same transaction.
+Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, you should monitor the performance overhead from the X++ logic that's required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, you should avoid using virtual columns to transform or calculate  values through X++ and expect that to go back to Dataverse within the same transaction.
 
 ### When I use the Dataverse offline app, what happens if I can't sync the data after reconnection? Does this situation cause an inconsistent state between the Dataverse environment and the finance and operations environment?
 
-You can interact with Dataverse data offline when using the [Dynamics 365 for phones app](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets) or the [Field Service Mobile app](/dynamics365/field-service/field-service-mobile-overview) in offline mode. In both apps, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync will fail, and Dataverse will not be updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes will be staged and then synced with the finance and operations environment when the mapping is up and running again. For more information, see [Run model-driven apps and canvas apps on Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile).
+You can interact with Dataverse data offline when using the [Dynamics 365 for phones app](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets) or the [Field Service Mobile app](/dynamics365/field-service/field-service-mobile-overview) in offline mode. In both apps, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync fails, and Dataverse isn't updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes are staged and then synced with the finance and operations environment when the mapping is up and running again. For more information, see [Run model-driven apps and canvas apps on Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile).
 
 ## Mapping concepts between apps
 
@@ -118,7 +118,7 @@ Dual-write supports mappings only between cross-company tables or company-specif
 
 You can make Dataverse custom tables company-specific by adding a many-to-one (N:1) relationship between your custom tables and the out-of-box company table. You should also include the company foreign key as part of the table key. For more information, see [Company concept in Dataverse](../../../fin-ops/data-entities/company-data.md).
 
-To enable table maps for dual-write, you must define an alternate key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the finance and operations app. For more information, see [Criteria for linking tables](enable-entity-map.md#criteria-for-linking).
+To enable table maps for dual-write, you must define an alternate key in Dataverse. The value of the alternative key in Dataverse must match the key that's defined in the finance and operations app. For more information, see [Criteria for linking tables](enable-entity-map.md#criteria-for-linking).
 
 ### Can I merge accounts in customer engagement apps and party records in finance and operations apps while using dual-write?
 
