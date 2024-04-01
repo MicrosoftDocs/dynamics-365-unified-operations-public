@@ -145,8 +145,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 2 | April 15 to April 18, 2024 | April 27 to April 28, 2024 |
 | Station 3 | April 16 to April 19, 2024 | April 27 to April 28, 2024|
 | Station 4 | April 22 to April 25, 2024 | May 4  to May 5, 2024 |
-| Station 5 | April 29 to May 2 | May 11 to May 12, 2024 |
-| Station 6 | April 30 to May 3 | May 11 to May 12, 2024 |
+| Station 5 | April 29 to May 2, 2024 | May 11 to May 12, 2024 |
+| Station 6 | April 30 to May 3, 2024 | May 11 to May 12, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
