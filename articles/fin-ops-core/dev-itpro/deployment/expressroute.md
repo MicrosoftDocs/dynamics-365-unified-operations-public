@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Azure ExpressRoute and finance and operations apps
-description: Customers can use Microsoft Azure ExpressRoute to connect to their on-premises infrastructure.
+description: Learn about how customers can use Microsoft Azure ExpressRoute to connect to their on-premises infrastructure.
 author: PeterRFriis
-ms.date: 09/20/2019
+ms.author: peterfriis
 ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 09/20/2019
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+audience: IT Pro
 ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peterfriis
 ms.search.validFrom: 2016-11-30
+ms.search.form: 
 ms.dyn365.ops.version: Version 1611
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Azure ExpressRoute and finance and operations apps
