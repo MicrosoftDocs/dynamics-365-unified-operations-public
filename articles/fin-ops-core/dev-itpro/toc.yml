@@ -1856,7 +1856,7 @@ items:
           href: ../fin-ops/sysadmin/create-batch-job.md
         - name: Copy a batch job
           href: sysadmin/copy-batch-job.md
-        - name: Create Batch Class
+        - name: Create a batch class
           href: sysadmin/create-batch-class.md
         - name: Enable batch retries
           href: sysadmin/retryable-batch.md
