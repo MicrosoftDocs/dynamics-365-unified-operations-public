@@ -1848,20 +1848,22 @@ items:
           href: sysadmin/batch-processing-overview.md
         - name: Batch processing and batch servers
           href: sysadmin/batch-server-overview.md
+        - name: Priority-based batch scheduling
+          href: sysadmin/priority-based-batch-scheduling.md
         - name: Batch Capacity
           href: sysadmin/batch-capacity.md
         - name: Create batch jobs
           href: ../fin-ops/sysadmin/create-batch-job.md
-        - name: Enable batch retries
-          href: sysadmin/retryable-batch.md
         - name: Copy a batch job
           href: sysadmin/copy-batch-job.md
-        - name: Priority-based batch scheduling
-          href: sysadmin/priority-based-batch-scheduling.md
-        - name: Real async feature enhancements
-          href: dev-tools/real-async.md
+        - name: Create a batch class
+          href: sysadmin/create-batch-class.md
+        - name: Enable batch retries
+          href: sysadmin/retryable-batch.md
         - name: Batch parameter versioning
           href: sysadmin/batch-parameter-versioning.md
+        - name: Real async feature enhancements
+          href: dev-tools/real-async.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
         - name: Daylight saving time support for active batch periods
