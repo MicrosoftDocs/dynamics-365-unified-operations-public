@@ -27,9 +27,9 @@ This article explains how to set up Supply Chain Management to support unannounc
 To use the features described in this article, your system must meet the following requirements:
 
 - To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
+- To use the integration with SPS, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later. 
 - If you also want to print license plate labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
 
- <!--KFM: Find out whether SPS integration also requires 10.0.40 -->
 
 ## Receiving process for unannounced returns
 
@@ -178,15 +178,33 @@ To enable workers to process unannounced returns, you must create a separate mob
 
 ## Integrate return label printing with small parcel shipping
 
-<!--KFM:
+1. SPS integration with return label printing streamlines return processes, enabling Microsoft Dynamics 365 Supply Chain Management users to directly print return labels for small parcels with shipping carriers by providing a framework for communication through carrier APIs. This functionality is useful when you're shipping individual sales orders via commercial shipping carriers and want to include a return label. 
 
-Introduce what this means and why it's useful (e.g., return shipping costs automatically handled by SPS provider (but I suppose ultimately paid by "us", the vendor), so customer doesn't have to pay). 
+1. Label Contents:
+   -The shipping label includes our postage address and a barcode containing the return-details record ID (or RMA-order ID). 
 
-Explain what the label contains (I suppose "our" postage address, and a bar code with the return-details record ID (or RMA-order ID?), maybe more (such as a bar code that the SPS provider can scan, I dunno)).
+1. To enable return details with SPS integration: 
+  -	Navigate to **Transportation Management** \> **Transportation Management Parameters**.
+  -	Below the *Shipping Carriers header*, toggle **Enable Shipping Label Request Type** to *Yes*.
+  -	This setting adds a new field to the shipping carrier service, allowing customization of the request sent to the carrier.
+  -	For detailed SPS setup instructions,  refer to - https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping
 
-Then describe/summarize how to set up the integration--mostly just refer to https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping. If there are any differences or additional steps, call them out here. If that topic requires an update (maybe there's a new setting, I dunno), then go ahead and edit that topic too (with link back here), so it remains the go-to source for setting up SPS.
+## Additional Considerations:
+1. The Small Parcel Shipping engine does not come out of box and requires custom development.
+1. Configure Container packing policies: 
+    -In the Container manifest lines, set Automatic manifest at container close to Yes, and choose Transportation management.
+    - **Print container shipping label rule** - If you select *never*, container will be able to be closed without label being printed. If you select *Always*, label will always be printed and if not possible to retrieve container label, container will not be able to be closed until label is retrieved. 
+If you select *If setup exists*, for all containers that are to be packed where setup exists, we will close the container when label is retrieved. If we do not retrieve the label, we will not close the container. If the container does not have a setup we will allow closing of the container without label.
+    - **Printer name** - Select the ZPL printer that you expect your label to be printed on.
+	   - **Print container return shipping label rule** – If you select never, container will be able to be closed without label being printed and if it is not possible to retrieve container label, container will not be able to be closed until label is retrieved. If you select If setup exists, we will close the container when the label is retrieved. If we do not retrieve the label, we will not close the container. If the container does not have a setup we will allow closing of the container without label. 	
 
--->
+## Reprinting return labels
+
+1. To re-print a return label, follow the steps below: 
+
+  - Access the Return Details View via **Warehouse Management** \> **Inquiries and Reports** \> **Return Details**.
+  - On the action bar, select *Print* and then choose *Return Shipping Label*.
+  - The printer used is the one specified in the *Container packing policy*.
 
 ## Example scenarios
 
