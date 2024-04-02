@@ -2047,6 +2047,8 @@
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
         href: demand-planning/export-data.md
+      - name: Rolling forecasts
+        href: demand-planning/rolling-forecasts.md
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
