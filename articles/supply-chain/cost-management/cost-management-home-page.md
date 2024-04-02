@@ -6,8 +6,6 @@ description: Cost management lets you handle the valuation and accounting of raw
 author: JennySong-SH
 ms.date: 05/16/2023
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

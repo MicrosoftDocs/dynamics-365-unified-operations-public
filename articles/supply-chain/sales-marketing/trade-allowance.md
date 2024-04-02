@@ -6,8 +6,6 @@ description: This article describes trade allowance management for Dynamics 365 
 author: Henrikan
 ms.date: 08/17/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

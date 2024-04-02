@@ -6,8 +6,6 @@ description: This article describes the configuration of basic inventory countin
 author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

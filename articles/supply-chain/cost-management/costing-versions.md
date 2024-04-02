@@ -6,8 +6,6 @@ description: This article provides information about costing versions, how to ma
 author: JennySong-SH
 ms.date: 05/16/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

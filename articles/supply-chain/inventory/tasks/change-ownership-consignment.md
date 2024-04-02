@@ -6,8 +6,6 @@ description: This procedure shows how to change the owner of consignment invento
 author: yufeihuang
 ms.date: 08/14/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

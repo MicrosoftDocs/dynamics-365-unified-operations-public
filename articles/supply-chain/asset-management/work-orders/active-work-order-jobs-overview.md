@@ -6,8 +6,6 @@ description: This article explains active work order maintenance jobs overview i
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

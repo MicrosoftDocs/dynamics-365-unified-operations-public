@@ -6,8 +6,6 @@ description: By defining the stages for a service order and assigning them to wo
 author: sorenva
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

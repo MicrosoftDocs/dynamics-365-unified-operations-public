@@ -6,8 +6,6 @@ description: This article explains how to set up default and custom shipment con
 author: Mirzaab
 ms.date: 09/07/2022
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

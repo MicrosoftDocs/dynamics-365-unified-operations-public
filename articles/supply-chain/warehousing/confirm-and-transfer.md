@@ -6,8 +6,6 @@ description: This article explains how to use the Confirm and transfer feature, 
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

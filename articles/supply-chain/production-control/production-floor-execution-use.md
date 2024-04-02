@@ -6,8 +6,6 @@ description: This article describes how to use the production floor execution in
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

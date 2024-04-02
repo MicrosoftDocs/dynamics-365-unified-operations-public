@@ -6,8 +6,6 @@ description: This article explains how to create, process, and bill maintenance 
 author: johanhoffmann
 ms.date: 01/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

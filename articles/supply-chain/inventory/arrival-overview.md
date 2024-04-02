@@ -6,8 +6,6 @@ description: This article provides information about the Arrival overview featur
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

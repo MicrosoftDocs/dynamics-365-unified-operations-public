@@ -6,8 +6,6 @@ description: This procedure shows you how to create a sales order.
 author: Henrikan
 ms.date: 04/06/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

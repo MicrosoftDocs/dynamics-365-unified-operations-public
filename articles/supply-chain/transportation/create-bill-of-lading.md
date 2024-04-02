@@ -6,8 +6,6 @@ description: This article describes how to create a bill of lading when using wa
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

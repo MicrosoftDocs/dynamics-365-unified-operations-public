@@ -6,8 +6,6 @@ description: This article describes the purchase requisition workflow and the di
 author: Henrikan
 ms.date: 11/02/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

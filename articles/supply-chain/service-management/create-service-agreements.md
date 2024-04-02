@@ -6,8 +6,6 @@ description: This article describes how to use features in the Service managemen
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

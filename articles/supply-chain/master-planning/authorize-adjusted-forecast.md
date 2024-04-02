@@ -6,8 +6,6 @@ description: Not all forecast data must be authorized immediately. This article 
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

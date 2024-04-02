@@ -6,8 +6,6 @@ description: This article provides an overview of requests for quotation (RFQs).
 author: Henrikan
 ms.date: 10/05/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

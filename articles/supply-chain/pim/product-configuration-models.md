@@ -6,8 +6,6 @@ description: This article defines terms and concepts that are relevant to produc
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This article shows you how to create a purchase order manually.
 author: Henrikan
 ms.date: 07/18/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

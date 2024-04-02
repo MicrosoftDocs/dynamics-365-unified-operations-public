@@ -6,8 +6,6 @@ description: This article describes intercompany planning and explains how to co
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

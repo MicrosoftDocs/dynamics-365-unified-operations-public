@@ -6,8 +6,6 @@ description: This article shows how to use the load planning workbench to create
 author: Mirzaab
 ms.date: 07/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
 ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench

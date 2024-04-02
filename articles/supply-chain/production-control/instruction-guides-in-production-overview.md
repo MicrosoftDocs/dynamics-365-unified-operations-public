@@ -6,8 +6,6 @@ description: This article explains how to integrate the production management mo
 author: johanhoffmann
 ms.date: 11/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

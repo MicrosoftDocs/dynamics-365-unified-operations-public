@@ -6,8 +6,6 @@ description: This article provides an overview of Inventory management.
 author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod:
-ms.technology:
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This procedure shows how to set up and plan a dock appointment for 
 author: Weijiesa
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

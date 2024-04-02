@@ -6,8 +6,6 @@ description: Use this procedure to set up rules for ordering products in a categ
 author: Henrikan
 ms.date: 07/22/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

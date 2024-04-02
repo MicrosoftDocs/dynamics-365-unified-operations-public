@@ -6,8 +6,6 @@ description: A work cell is a specific form of resource groups that can be used 
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

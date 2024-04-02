@@ -6,8 +6,6 @@ description: This article explains how to register inbound and outbound assets i
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

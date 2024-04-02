@@ -6,8 +6,6 @@ description: Master planning takes the settings of the site and warehouse invent
 author: t-benebo
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

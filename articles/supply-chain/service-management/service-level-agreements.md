@@ -6,8 +6,6 @@ description: In a service level agreement, the customer agrees to a minimum resp
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
