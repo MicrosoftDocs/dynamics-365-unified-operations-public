@@ -2,14 +2,14 @@
 title: Stay compliant with user licensing requirements
 description: This article provides information about how you can stay compliant with the user licensing requirements for finance and operations apps.
 author: VolkerDeuss
-ms.date: 10/06/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/02/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: vodeuss
+ms.author: gned
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ---
@@ -110,7 +110,7 @@ You can view available and assigned licenses under **Licenses** in the Microsoft
 ![Microsoft 365 admin center.](media/M365-admin-center.png)
 
 ## Audit and Monitor
-Regularly audit your current security settings and monitor the system post-update to ensure compliance with the licensing requirements
+Regularly audit your current security settings and monitor the system post-update to ensure compliance with the licensing requirements.
 
 ## Additional resources
 
