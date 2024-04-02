@@ -40,6 +40,7 @@ To generate a new calculated time series by running an existing calculation prof
     - **Summary** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with.
     - **Input data** – This tab shows the full list of available time series and indicates which of them are used by the selected profile. You can change the selections as you require. For information about how to work with the settings on this tab, see the [Create and manage calculation profiles](#create-and-manage-calculation-profiles) section.
     - **Calculation model** – This tab shows the calculation that the profile does. It uses a flowchart of interconnected tiles. Each tile does a specific type of operation and has settings that let you define how that operation works. For information about how to work with the settings on this tab, see the [Create and manage calculation profiles](#create-and-manage-calculation-profiles) section.
+    - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, and the time series that was generated. Select a link in the **Time Series** column to open the time series.
 
 1. To run the profile, select **Run** on the Action Pane.
@@ -75,5 +76,7 @@ To create or edit a calculation profile, follow these steps.
 
 1. When you've finished selecting the input time series, select **Next**.
 1. On the **Select and configure calculation model** page, you can select a calculation model preset to use with your current profile. Browse the presets that are listed under **Available model presets** to preview the calculation that each preset does. You can configure settings and customize the calculation model as you require after you save the profile. Therefore, select the preset that's closest to what you're looking for, and then select **Next**. For information about how to configure settings and customize the calculation model that a profile uses, and how to create new presets, see [Design calculation models](design-calculation-models.md).
+1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
+1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. Your profile is now saved, but it hasn't yet run. If you're ready to run the calculation now, select **Run** on the Action Pane.

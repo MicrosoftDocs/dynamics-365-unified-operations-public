@@ -4,10 +4,9 @@
 title: Create account structures
 description: This procedure walks through creating an account structure. 
 author: aprilolson
-ms.date: 03/28/2023
+ms.date: 04/01/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
+  
  
 # optional metadata 
  
@@ -31,8 +30,8 @@ This procedure walks through creating an account structure. The steps use demo d
 
 1. Go to **General ledger > Chart of accounts > Structures > Configure account structures**.
 2. On the **Action pane**, click **New** to open the drop dialog.
-3. In the **Account structure** field, type a name to describe the purpose of the account structure.
-4. In the **Description** field, type a description to specify the purpose of the account structure.
+3. In the **Account structure** field, enter a name to describe the purpose of the account structure.
+4. In the **Description** field, enter a description to specify the purpose of the account structure.
 5. Click **Create**.
 6. In the **Segments and allowed values**, click **Add segment**.
 7. In the dimensions list, select the dimension to add to the account structure.
