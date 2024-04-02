@@ -90,7 +90,6 @@ You can use the **User license counts** report to get a count of required licens
 
 Customers who are on the appspecific licensing model must first use the **User license counts** report to determine the licenses that are required for the **Activity** and **Team members** license types only. They must then use the **User license estimator** report for full user licenses.
 
-
 ## User license estimator report
 
 The **User license estimator** report indicates how many combined *base* and *attach* licenses are required. For more information about *base* and *attach* licenses, see the "Base licenses and cost savings opportunities for 'attach' licenses" section of the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
@@ -112,6 +111,9 @@ You can perform a rough compliance check by using the combined total for require
 You can view available and assigned licenses under **Licenses** in the Microsoft 365 admin center.
 
 ![Microsoft 365 admin center.](media/M365-admin-center.png)
+
+## Audit and Monitor
+Regularly audit your current security settings and monitor the system postupdate to ensure compliance with the licensing requirements.
 
 ## Additional resources
 
