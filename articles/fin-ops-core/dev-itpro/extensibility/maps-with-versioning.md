@@ -3,6 +3,9 @@ title: Extend table maps that are used for versioning
 description: Learn about how to extend table maps that can be used for versioning, including an outline on how to extend PurchLine and PurchLineHistory tables with new fields.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
+ms.topic: how-to 
+ms.custom: 
+  - bap-template
 ms.date: 12/10/2017
 ms.reviewer: josaw
 audience: Developer
