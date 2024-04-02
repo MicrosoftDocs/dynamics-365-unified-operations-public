@@ -4,10 +4,8 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
-ms.date: 03/12/2024
+ms.date: 04/02/2024
 ms.topic: article
-ms.prod:  
-ms.technology: 
 
 # optional metadata
 
@@ -78,8 +76,8 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are discontinuing onboardings for all users, both Service to Service and Interactive, who are not present in the Microsoft Entra ID tenant associated with your Finance and Operations environment. Microsoft has flagged this access method as a security concern. For more infromation, refer to [Manually add a new user](../sysadmin/create-new-users.md#manually-add-a-new-user).|
-| **Replaced by another feature?**   | No, to ensure compliance among existing users, you must either extend invitations to users with the same email addresses to your Microsoft Entra ID or remove these users from the Finance and Operations system, create new user accounts within your Microsoft Entra ID, and proceed to import them accordingly. For more information, refer [How to create or delete users in Microsoft Entra ID - Microsoft Entra](https://learn.microsoft.com/entra/fundamentals/how-to-create-delete-users).|
+| **Reason for deprecation/removal** | We are discontinuing onboardings for all users, both Service to Service and Interactive, who are not present in the Microsoft Entra ID tenant associated with your Finance and Operations environment. Microsoft has flagged this access method as a security concern. For more information, see [Manually add a new user](../sysadmin/create-new-users.md#manually-add-a-new-user).|
+| **Replaced by another feature?**   | No, to ensure compliance among existing users, you must either extend invitations to users with the same email addresses to your Microsoft Entra ID or remove these users from the Finance and Operations system, create new user accounts within your Microsoft Entra ID, and proceed to import them accordingly. For more information, refer [How to create or delete users in Microsoft Entra ID - Microsoft Entra](/entra/fundamentals/how-to-create-delete-users).|
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | The rollout for sandbox environments will begin from Feb 2024 and for prod environments from March 2024. |
