@@ -5,7 +5,6 @@ author: sericks007
 ms.author: sericks
 ms.topic: article
 ms.date: 10/15/2020
-ms.topic: article
 ms.custom:
 ms.reviewer: sericks
 audience: Developer, IT Pro

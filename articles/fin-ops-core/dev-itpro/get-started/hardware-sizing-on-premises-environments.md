@@ -29,7 +29,7 @@ After you have reviewed the documentation, you can start the process of estimati
 
 All the factors shown in the following illustration contribute to sizing. The more detailed information that is collected, the more precisely you can determine sizing. Hardware sizing, without supporting data, is likely to be inaccurate. The absolute minimum requirement for necessary data is the peak transaction line load per hour.
 
-[![Hardware sizing for on-premises environments.](../../fin-ops/get-started/media/lbd-sizing-01.png)](/media/lbd-sizing-01.png)
+[![Hardware sizing for on-premises environments.](../../fin-ops/get-started/media/lbd-sizing-01.png)]
 
 Viewed from left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization. It's important to always find the peak transactional volume per hour. If there are multiple peak periods, then these periods need to be accurately defined.
 

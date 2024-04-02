@@ -119,7 +119,7 @@ SQL Server must have a high-availability HADRON setup that has at least two node
 
 The following illustration shows the minimum number of nodes that is recommended for your Service Fabric cluster.
 
-[![Recommended number of nodes for the Service Fabric cluster.](../../fin-ops/get-started/media/Minimum-infrastructure-Jan2017.png)](/media/Minimum-infrastructure-Jan2017.png)
+[![Recommended number of nodes for the Service Fabric cluster.](../../fin-ops/get-started/media/Minimum-infrastructure-Jan2017.png)]
 
 ## Processor and RAM requirements
 

@@ -27,7 +27,7 @@ In this article, you will find an overview of the components of the Help system 
 
 Finance and operations apps include conceptual overviews and other topics that are published to the [Microsoft Dynamics 365 documentation](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
 
-[![Help architecture.](../../fin-ops/get-started/media/help-architecture.png)](/media/help-architecture.png)
+[![Help architecture.](../../fin-ops/get-started/media/help-architecture.png)]
 
 The in-product Help system pulls articles from Microsoft Learn and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -42,7 +42,7 @@ On the **System parameters** page, system admins can configure access to the rel
 > - To configure Help, you must sign in by using an account in the same tenant as the tenant where the app is deployed.
 > - An LCS library can't be connected from an instance of the app that is running on a local virtual hard drive (VHD).
 
-[![System Parameters form with Help settings.](../../fin-ops/get-started/media/system-parameters_ops-1024x437.png)](/media/system-parameters_ops.png)
+[![System Parameters form with Help settings.](../../fin-ops/get-started/media/system-parameters_ops-1024x437.png)]
 
 To configure task guides for a solution, follow these steps on the **System parameters** page.
 
