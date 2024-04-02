@@ -4,17 +4,16 @@
 title: Why can't I reverse this transaction?
 description: This article describes different reasons why transactions can't be reversed. It also lists solutions for this issue.
 author: kweekley
-ms.date: 07/21/2021
+ms.date: 03/21/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -49,7 +48,7 @@ If the **Mass reversal for multiple documents** feature (also known as the Mass 
 - For some types of transactions, more than one transaction at a time can be selected and reversed from the journal that it was posted from, or from the **Voucher transactions** page. However, the individual transactions must have been reversible before the feature was turned on. Before this feature was introduced, transactions had to be reversed one at a time.
 - *Some* subledger transactions can be reversed from the journal (general journal) or the **Voucher transactions** page. They don't have to be reversed from the subledger page. For example, a vendor invoice journal could previously be reversed only from the **Vendor transactions** page. However, it can now be reversed from the General ledger side too, from the journal or the **Voucher transactions** page. Each section of this article explains the types of transactions that this benefit doesn't apply to.
 
-The Mass reversal feature does **not** enable more types of transactions to be reversed. If a transaction type could not previously be reversed, it still can't be reversed after the feature is turned on. For example, purchase order vendor invoices can't be reversed, regardless of whether the Mass reversal feature is turned on.
+The Mass reversal feature doesn't enable more types of transactions to be reversed. If a transaction type couldn't previously be reversed, it still can't be reversed after the feature is turned on. For example, purchase order vendor invoices can't be reversed, regardless of whether the Mass reversal feature is turned on.
 
 For more information about the Mass reversal feature, see [Reverse journal posting](reverse-journal-posting.md).
 
@@ -66,14 +65,10 @@ If the Mass reversal feature is turned on, one or more general ledger vouchers c
 Transactions can't be reversed for the following reasons:
 
 - General journal:
-
     - The fiscal period is on hold or permanently closed:
-
         - If the reversing date is in a fiscal period that isn't open, the transaction can't be reversed.
         - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.
-
     - The year-end close process has been run:
-
         - The transaction's accounting date is in a fiscal year that has been through a year-end close. Although a period in the fiscal year might still be open, the transaction can't be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods in it.
         - The year-end close can be reversed, and then the transaction can be reversed. This approach might not be an option. It might be easier to manually enter a reversing transaction in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close process. If a new transaction is posted to an open period of the fiscal year that has been through the year-end close process, the year-end close must be run again.
 
@@ -113,9 +108,7 @@ Transactions can't be reversed for the following reasons:
     - The reversal can be completed only if it's posted to an open fiscal period.
 
 - Year-end close:
-
     - Year-end close transactions (both closing and opening transactions) can be reversed in these ways:
-
         - If the General ledger year-end close enhancements feature is turned off, select the **Undo previous close** option in the **Year-end close** dialog box.
         - If the General ledger year-end enhancements feature is turned on, select the company and fiscal year records that were created for the year-end close on the **Year-end close** page, and then select **Reverse year-end close**.
 
@@ -151,21 +144,16 @@ Vouchers can't be reversed for the following reasons:
     - Use the **Subledger journal entries not yet transferred** page to transfer the entry to General ledger. The non-purchase order vendor invoice can then be reversed from the **Vendor transactions** page.
 
 - Settlement:
-
     - The transaction (such as an invoice or payment) is settled or marked for settlement.
-
         - You can verify whether a transaction is settled or marked for settlement by selecting **View settlements** or **Settlement \> Settlement history** on the **Vendor transactions** page.
         - You can also reverse a settlement from the **Vendor transactions** page (**Settlement \> Undo settlement**) if one of the transactions must be reversed.
 
 - The voucher contains more than one subledger transaction that was entered by using the same voucher number (One voucher issue).
 - The invoice hasn't been approved:
-
     - If the **Approval** checkbox isn't selected on the invoice, the invoice can't be reversed.
-
         - In this case, approval doesn't refer to approvals in the workflow process but to the **Approval** option on the invoice. This option is used to prevent an invoice from being paid. It's typically used for vendor invoice register invoices.
 
 - The transaction is in the invoice pool:
-
     - An invoice in the pool can't be reversed directly from the **Vendor transactions** page. Instead, it must be reversed through the cancellation process on the **Invoice approval journal** page.
 
 - The transaction has a parent invoice that has been corrected (Indian localization).
@@ -220,17 +208,13 @@ Transactions can't be reversed for the following reasons:
     - Use the **Subledger journal entries not yet transferred** page to transfer the entry to General ledger. The free text invoice can then be reversed or corrected if the corrections functionality is enabled.
 
 - Settlement:
-
     - The transaction (such as an invoice or payment) is settled or marked for settlement.
-
         - You can verify whether a transaction is settled or marked for settlement by selecting **View settlements** or **Settlement \> Settlement history** on the **Customer transactions** page.
         - You can also reverse a settlement from the **Customer transactions** page (**Settlement \> Undo settlement**) if one of the transactions must be reversed.
 
 - The transaction contains more than one subledger transaction that was entered by using the same voucher number (One voucher issue).
 - The invoice hasn't been approved:
-
     - If the **Approval** checkbox isn't selected on the invoice, the invoice can't be reversed.
-
         - In this case, approval doesn't refer to approvals in the workflow process but to the **Approval** option on the voucher lines. This option is used to prevent an invoice from being paid. Although this option is typically used in Accounts payable, it's also available for Accounts receivable invoices that are entered through journals.
 
 - The transaction has a parent invoice that has been corrected (Indian localization).
@@ -287,24 +271,19 @@ Transactions can't be reversed for the following reasons:
     - The year-end close can be reversed, and then the transaction can be reversed. This approach might not be an option. It might be easier to manually enter a reversing transaction in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close process. If a new transaction is posted to an open period of the fiscal year that has been through the year-end close process, the year-end close must be run again.
 
 - Settlement:
-
     - The transaction (payment) is settled or marked for settlement.
-
         - You can verify whether a transaction is settled or marked for settlement by selecting **View settlements** or **Settlement \> Settlement history** on the **Vendor transactions** or **Customer transactions** page.
         - You can also reverse a settlement from the **Vendor transactions** or **Customer transactions** page (**Settlement \> Undo settlement**) if one of the transactions must be reversed.
 
 - The transaction contains more than one subledger transaction that was entered by using the same voucher number (One voucher issue).
 - Bridged transactions:
-
     - If the transaction is related to a bridging payment, it can't be reversed.
     - If the bridged payment must be reversed, the payment first has to be cleared from the bridging account to the bank. The payment can then be reversed, provided that it meets the other validation criteria.
 
 - The transaction contains a bank account, but is being reversed from the **Transactions for \<main account\>** page or from an incorrect subledger, such as Accounts receivable or Accounts payable:
-
     - As this reason suggests, even when the Mass reversals feature is turned on, some subledger transactions can be reversed only from specific pages.
 
 - Bank foreign currency revaluation:
-
     - Bank foreign currency revaluation can be reversed. However, reversal might be prevented if you complete the reversal steps out of chronological order. For example, if you ran the revaluation in March and April, the March revaluation can't be reversed until the April revaluation is reversed.
 
 ### Types of transactions that can't be reversed
@@ -345,21 +324,16 @@ Transactions can't be reversed for the following reasons:
     - If the status of the value model or depreciation book for a fixed asset isn't open, the transaction can't be reversed.
 
 - Disposals:
-
     - The disposal is done through a free text invoice:
-
         - The correction of a free text invoice is blocked if it contains a fixed asset. However, if the asset is disposed of through a journal, the free text invoice can be reversed from the fixed asset record.
-
     - If the status of the value model or depreciation book for a fixed asset isn't open, the transaction can't be reversed.
 
 - Depreciation:
 
     - The depreciation **can** be reversed if subsequent depreciation is also posted. However, you will receive a warning, because this approach isn't a best practice.
     - If the status of the value model or depreciation book for a fixed asset isn't open, the transaction can't be reversed.
-
 - Transactions (or reverse transactions) for a specific asset and asset book exist for the voucher's transaction date or later.
 - The transaction contains an asset account, but is being reversed from the **Transactions for \<main account\>** page or from an incorrect subledger, such as Accounts receivable or Accounts payable:
-
     - As this reason suggests, even when the Mass reversals feature is turned on, some subledger transactions can be reversed only from specific pages.
     - If an acquisition occurs on a non-purchase order vendor invoice or a vendor invoice journal, it can be reversed only from the **Vendor transactions** page in Accounts payable.
     - If an asset is acquired from Asset leasing, it can be reversed from the **Liability transactions** page in Asset leasing.
