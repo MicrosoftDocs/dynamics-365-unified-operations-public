@@ -1,6 +1,6 @@
 ---
 title: Create a batch class
-description: This article exlains how to ceate a batch class for Microsoft Dynamics 365 finance and operations apps so that you can efficiently perform tasks in the background in Visual Studio.
+description: This article explains how to create a batch class for Microsoft Dynamics 365 finance and operations apps so that you can efficiently perform tasks in the background in Visual Studio.
 author: cwithfourplus
 ms.date: 04/01/2024
 ms.topic: how-to
@@ -178,7 +178,7 @@ To create a batch class, you must have the following prerequisites:
 - **Limit batch task dependencies.** Avoid excessive dependencies between the batch tasks in a job. Minimize dependencies to ensure that tasks can be run independently. This approach helps improve parallelism and scalability.
 - **Optimize batch parameter use.** Efficiently use batch parameters to pass necessary information to the batch job. To maintain clarity and simplicity, avoid overloading parameters with excessive data.
 - **Keep the execution duration short.** To mitigate the effect of transient infrastructure issues, ensure that the execution duration of your batch class remains short. By keeping processing times short, you can minimize the window of vulnerability and better manage system interruptions.
-- **Design for idempotency.** Design batch class operations so that they're idempotent. In other words, multiple executions of the same operation should have the same result as a single execution. This approach ensures that retries of a failed batch job don't lead to duplicate or unintended processing. Therefore, it helps maintains data integrity.
+- **Design for idempotency.** Design batch class operations so that they're idempotent. In other words, multiple executions of the same operation should have the same result as a single execution. This approach ensures that retries of a failed batch job don't lead to duplicate or unintended processing. Therefore, it helps maintain data integrity.
 - **Implement transactional integrity.** Ensure that batch class operations maintain transactional integrity. Therefore, if there's a failure, transactions can be rolled back to prevent partial or inconsistent data updates. This approach helps preserve data consistency and reliability.
 - **Use checkpoints for resumption.** Implement checkpoints in your batch class to track progress and facilitate resumption from the last successfully processed record if there's failure. This approach allows for efficient recovery without requiring reprocessing of previously completed tasks.
 - **Gracefully handle partial failures.** Implement error handling mechanisms to gracefully handle partial failures in batch class operations. Log errors, rollback transactions as required, and provide appropriate notifications for troubleshooting and resolution purposes.
