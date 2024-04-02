@@ -3,6 +3,7 @@ title: Make backing tables consumable as financial dimensions
 description: Learn about the steps that you need to follow to make a backing table usable as a Financial dimension, including code examples.
 author: RyanCCarlson2
 ms.author: rcarlson
+ms.topic: article
 ms.date: 10/04/2023
 ms.reviewer: twheeloc
 audience: Developer

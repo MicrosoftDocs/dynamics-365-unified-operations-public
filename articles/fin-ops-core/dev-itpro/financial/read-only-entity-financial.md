@@ -5,7 +5,6 @@ author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
 ms.date: 04/10/2017
-ms.topic: article
 ms.reviewer: twheeloc
 audience: Developer
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321

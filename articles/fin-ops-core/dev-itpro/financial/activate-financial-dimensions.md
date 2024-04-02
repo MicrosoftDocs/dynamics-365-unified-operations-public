@@ -5,7 +5,6 @@ author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
 ms.date: 10/02/2019
-ms.topic: article
 ms.reviewer: kfend
 audience: Developer
 ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
