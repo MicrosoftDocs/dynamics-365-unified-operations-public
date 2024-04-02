@@ -54,7 +54,7 @@ Follow these steps to check the status of the **Sql row version change tracking 
 1. Return to the **License configuration** page, and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
-## Step 3: Enable Power Platform to publish bots with AI features
+## Step 2: Enable Power Platform to publish bots with AI features
 
 To enable Power Platform to publish bots with AI features, follow these steps.
 
@@ -64,7 +64,7 @@ To enable Power Platform to publish bots with AI features, follow these steps.
 1. The **Publish bots with AI features** dialog opens. Set the slider to **Enabled**.
 1. Select **Save**.
 
-## <a name="install-copilot-app"></a>Step 4: Install the Copilot application in your finance and operations apps environment
+## <a name="install-copilot-app"></a>Step 3: Install the Copilot application in your finance and operations apps environment
 
 Follow these steps to install the Copilot application in your finance and operations apps environment.
 
@@ -73,11 +73,11 @@ Follow these steps to install the Copilot application in your finance and operat
 1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment connected to your finance and operations apps environment to install the Copilot application.
 
     > [!IMPORTANT]
-    > **Troubleshooting:** You might receive the following error message while you install the Copilot application in Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you receive this error, follow the instructions in the [Step 1: Enable the Sql row version change tracking license key](#enable-sql-key) section.
+    > **Troubleshooting:** You might receive the following error message while you install the Copilot application in Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you receive this error, follow the instructions in the [Enable the Sql row version change tracking license key](#enable-sql-key) section.
 
 1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. During installation, the status of the Copilot application is *Installing*. After installation is completed, the status changes to *Installed*. If an error occurs, the status changes to *Failed*. In this case, you can find details about the error in the **Notifications** field.
 
-## Step 3: Enable the required security roles
+## Step 4: Enable the required security roles
 
 Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
 
