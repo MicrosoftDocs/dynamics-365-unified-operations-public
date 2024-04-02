@@ -1,6 +1,6 @@
 ---
-title: Create a Batch Class
-description: This article exlains how to ceate a Batch Class for Microsoft Dynamics 365 finance and operations apps to perform tasks efficiently in the backgroundin Microsoft Visual Studio.
+title: Create a batch class
+description: This article exlains how to ceate a batch class for Microsoft Dynamics 365 finance and operations apps so that you can efficiently perform tasks in the background in Visual Studio.
 author: cwithfourplus
 ms.date: 04/01/2024
 ms.topic: how-to
@@ -13,185 +13,185 @@ ms.author: vikaush
 ms.search.validFrom: 2024-03-07
 ms.dyn365.ops.version: Platform Update50
 ---
-# Create a Batch Class
+# Create a batch class
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 finance and operations apps, batch processing allows you to perform tasks efficiently in the background, without impacting the performance of the system. This article explains how to create a Batch Class using Batch Run Base as the base class.
+In Microsoft Dynamics 365 finance and operations apps, batch processing lets you efficiently perform tasks in the background, without affecting system performance. This article explains how to create a batch class by using `RunBaseBatch` as the base class.
 
 ## Prerequisites
 
-To create a batch class, the following prerequisites must be met:
+To create a batch class, you must have the following prerequisites:
 
-- Access to a finance and operations apps environment.
-- Basic understanding of the X++ programming language.
-- Microsoft Visual Studio with finance and operations development tools installed.
+- Access to a finance and operations apps environment
+- A basic understanding of the X++ programming language
+- Visual Studio with finance and operations development tools installed
 
-## Create a new Batch Class using Run Base Batch
+## Create a batch class by using RunBaseBatch
 
 1. In Visual Studio, connect to your finance and operations apps development environment.
-1. Right-click on your project in the Solution Explorer and select **Add** > **New Item**.
-1. Select **FinNaceOperations** > **Dynamics 365 Items** > **Code** > **Class**.
-1. Give your class a meaningful name, for example, **MyBatchClass**.
-1. Inside your class, define it by extending the **RunBaseBatch** class. This class provides the basic functionality required for batch processing.
+1. In Solution Explorer, select and hold (or right-click) your project, and then select **Add** \> **New Item**.
+1. Select **FinNaceOperations** \> **Dynamics 365 Items** \> **Code** \> **Class**.
+1. Enter a meaningful name for the class, such as **MyBatchClass**.
+1. Inside the new class, define the class by extending the `RunBaseBatch` class. The `RunBaseBatch` class provides the basic functionality that's required for batch processing.
 
-   ```X++
-   class MyBatchClass extends RunBaseBatch
-   {
-       // Your code will go here
-   }
-   ```
+    ```X++
+    class MyBatchClass extends RunBaseBatch
+    {
+        // Your code will go here
+    }
+    ```
 
-1. **Override Methods**: Override the necessary methods provided by the **RunBaseBatch** class. The most commonly overridden methods are **run()** and **main()**.
+1. As required, override the methods that the `RunBaseBatch` class provides. The most commonly overridden methods are `run()` and `main()`.
 
-   ```X++
-   public void run()
-   {
-       // This method is the entry point for the batch class
-       super();
-   }
+    ```X++
+    public void run()
+    {
+        // This method is the entry point for the batch class
+        super();
+    }
 
-   public static void main(Args _args)
-   {
-       // This method is used to create an instance of the batch class, prompt the user for input using dialog,
-       // and then execute the batch job using run().
-   }
-   ```
+    public static void main(Args _args)
+    {
+        // This method is used to create an instance of the batch class, prompt the user for input using dialog,
+        // and then execute the batch job using run().
+    }
+    ```
 
-1. Inside the **run()** method, implement the logic that you want the batch job to perform. It could include data processing, calculations, or any other tasks. Inside **main()** method, instantiate batch class and invoke **run()**.
+1. Inside the `run()` method, implement the logic that you want the batch job to perform. This logic might include data processing, calculations, or any other tasks. Inside the `main()` method, instantiate the batch class, and invoke `run()`.
 
-   ```X++
-   public void run()
-   {
-       // Perform batch processing tasks here
-       // For example:
-       info("Batch job started!");
-       // Your logic goes here
-       info("Batch job completed!"); 
-   }
+    ```X++
+    public void run()
+    {
+        // Perform batch processing tasks here
+        // For example:
+        info("Batch job started!");
+        // Your logic goes here
+        info("Batch job completed!"); 
+    }
 
-   public static void main(Args _args)
-   {
-       MyBatchClass batch = new MyBatchClass();
-       // Run the batch class
-       batch.run();
-   }
-   ```
+    public static void main(Args _args)
+    {
+        MyBatchClass batch = new MyBatchClass();
+        // Run the batch class
+        batch.run();
+    }
+    ```
 
-1. Integrate the **dialog()** method into our Batch Class. The **dialog()** method allows you to prompt users for input when they schedule the batch job. 
+1. Integrate the `dialog()` method into the batch class. The `dialog()` method lets you prompt users for input when they schedule the batch job. 
 
-   ```X++
-   class MyBatchClass extends RunBaseBatch
-   {
-       DialogField dialogMyParameter;
+    ```X++
+    class MyBatchClass extends RunBaseBatch
+    {
+        DialogField dialogMyParameter;
 
-       str myParameter = "Default value";
+        str myParameter = "Default value";
 
-       #define.CurrentVersion(1)
-       #localmacro.CurrentList
-           myParameter
-       #endmacro
+        #define.CurrentVersion(1)
+        #localmacro.CurrentList
+            myParameter
+        #endmacro
 
-       public container pack()
-       {
-           // This method is used by batch platform to serialize batch parameters in a container
-           return [#CurrentVersion, #CurrentList];
-       }
+        public container pack()
+        {
+            // This method is used by batch platform to serialize batch parameters in a container
+            return [#CurrentVersion, #CurrentList];
+        }
 
-       public boolean unpack(container _packedClass)
-       {
-           // This method is used by batch platform to deserialize batch parameters from stored 
-           // batch parameter container
+        public boolean unpack(container _packedClass)
+        {
+            // This method is used by batch platform to deserialize batch parameters from stored 
+            // batch parameter container
 
-           Integer version = RunBase::getVersion(_packedClass);
-           container packedData;
+            Integer version = RunBase::getVersion(_packedClass);
+            container packedData;
 
-           switch (version)
-           {
-               case #CurrentVersion:
-                   [version, #CurrentList] = _packedClass;
-                   break;
-               default:
-                   return false;
-     }
+            switch (version)
+            {
+                case #CurrentVersion:
+                    [version, #CurrentList] = _packedClass;
+                    break;
+                default:
+                    return false;
+            }
 
-           return true;
-       }
+            return true;
+        }
 
-       public Object dialog()
-       {
-           // This method is invoked when user opens batch parameter dialog
-           // It helps to add parameters to batch class and set their default value
+        public Object dialog()
+        {
+            // This method is invoked when user opens batch parameter dialog
+            // It helps to add parameters to batch class and set their default value
 
-           DialogRunbase dialog = super();
+            DialogRunbase dialog = super();
 
-           dialogMyParameter = dialog.addField(enum2Str(Types::Integer), "My Parameter");
+            dialogMyParameter = dialog.addField(enum2Str(Types::Integer), "My Parameter");
 
-           // Set a default value of parameter
-           dialogMyParameter.value(myParameter);
+            // Set a default value of parameter
+            dialogMyParameter.value(myParameter);
 
-           return dialog;
-       }
+            return dialog;
+        }
 
-       public boolean getFromDialog()
-       {
-           // This method is invoked by batch platform to read the values of parameters from batch 
-           // parameter dialog method
-           myParameter = dialogMyParameter.value(); 
+        public boolean getFromDialog()
+        {
+            // This method is invoked by batch platform to read the values of parameters from batch 
+            // parameter dialog method
+            myParameter = dialogMyParameter.value(); 
 
-           return super();
-       }
+            return super();
+        }
 
-       public void run()
-       {
-           // This method is the entry point for the batch class
-        
-           info("Batch job started!");
-           // Access the parameter value entered by the user
-           info("My Parameter: " + this.myParameter);
-           // Your main batch logic goes here
-           info("Batch job completed!");
-       }
+        public void run()
+        {
+            // This method is the entry point for the batch class
 
-       public static void main(Args _args)
-       {
-           // This method is used to create an instance of the batch class, prompt the user  
-           // for input using dialog, and then execute the batch job using run().
+            info("Batch job started!");
+            // Access the parameter value entered by the user
+            info("My Parameter: " + this.myParameter);
+            // Your main batch logic goes here
+            info("Batch job completed!");
+        }
 
-           MyBatchClass batch = new MyBatchClass();
-           if (batch.prompt())
-           {
-               batch.run();
-           }
-       }
-   }
-   ```
+        public static void main(Args _args)
+        {
+            // This method is used to create an instance of the batch class, prompt the user 
+            // for input using dialog, and then execute the batch job using run().
 
-1. Once your batch class is ready, deploy it to your finance and operations apps environment. You can then schedule the batch job to run at specific intervals using the batch job scheduler in the application.
+            MyBatchClass batch = new MyBatchClass();
+            if (batch.prompt())
+            {
+                batch.run();
+            }
+        }
+    }
+    ```
 
-## Best Practices
+1. After the batch class is ready, deploy it to your finance and operations apps environment. You can then use the batch job scheduler in the application to schedule the batch job so that it runs at specific intervals.
 
-- **Implement Batch Retry Logic**: Ensure that your batch classes can be retried, meaning they can be reattempted automatically if there's failure. This helps in handling transient errors and ensures robustness in processing.
-- **Effective Error Handling**: Implement robust error handling mechanisms within your batch class to gracefully handle exceptions and errors. Log errors appropriately for troubleshooting and monitoring purposes.
-- **Short Transaction Duration**: Keep the duration of individual transactions within your batch class as short as possible to minimize locking and contention issues in the database. This helps in improving concurrency and overall system performance.
-- **Avoid Adding Too Many Tasks**: Exercise caution when adding tasks to a single batch job, as exceeding 1,000 tasks leads to inefficiencies, and surpassing 4,000 tasks is considered excessive. It's advisable to decompose intricate Batch Job processing into smaller jobs, more manageable tasks to enhance both maintainability and performance.
-- **Limit Batch Task Dependencies**: Avoid excessive dependencies between batch tasks within a job. Minimize dependencies to ensure that tasks can be executed independently, improving parallelism and scalability.
-- **Optimize Batch Parameter Usage**: Efficiently use batch parameters to pass necessary information to the batch job. Avoid overloading parameters with excessive data to maintain clarity and simplicity.
-- **Keep Execution Duration Short**: Ensure that the execution duration of your batch class remains short to mitigate the effect of transient infrastructure issues. By keeping processing times brief, you can minimize the window of vulnerability and better manage system interruptions.
-- **Design for Idempotency**: Design batch class operations to be idempotent, meaning that executing the same operation multiple times has the same result as executing it once. It ensures that retrying a failed batch job doesn't lead to duplicate or unintended processing, maintaining data integrity.
-- **Implement Transactional Integrity**: Ensure that batch class operations maintain transactional integrity, so that if there was a failure, transactions can be rolled back to prevent partial or inconsistent data updates. This helps in preserving data consistency and reliability.
-- **Use Checkpoints for Resuming**: Implement checkpoints within your batch class to track progress and facilitate resuming from the last successfully processed record if there was failure. It allows for efficient recovery without reprocessing already completed tasks.
-- **Handle Partial Failures Gracefully**: Implement error handling mechanisms to gracefully handle partial failures within batch class operations. Log errors, rollback transactions if necessary, and provide appropriate notifications for troubleshooting and resolution.
-- **Utilize Batch Concurrency Control**: Implement [batch concurrency control](priority-based-batch-scheduling.md#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation caused by concurrent access to the same data. To optimize throughput and maintain system stability, configure the batch concurrency settings appropriately based on workload characteristics and system resources.
-- **Enable Batch History for Errors Only in Production**: Configure batch history settings to log detailed information only for error situations in production environments. This approach helps to prevent the accumulation of large batch history, especially in batch jobs with numerous tasks, or frequently recurring schedules. By limiting batch history to errors, you can effectively manage storage usage and maintain clarity in monitoring batch job performance and troubleshooting issues.
-- **Test Idempotency and Recovery**: Thoroughly test the idempotency and recovery capabilities of your batch class under various failure scenarios. Validate that retrying a failed batch job doesn't result in duplicate or inconsistent data, ensuring robustness in production environments.
-- **Monitor Batch Job Performance**: To identify any bottlenecks or areas for optimization, regularly monitor the performance of your batch jobs. Use monitoring tools and logs to track resource utilization and processing times.
-- **Schedule Batch Jobs Wisely**: Schedule batch jobs during off-peak hours to ensure it doesn't interfere with system performance and user experience. Consider workload patterns and resource availability when scheduling batch processing. For recuring workloads, you can consider [active batch periods](activeperiod.md).
-- **Test Batch Jobs Thoroughly**: Perform comprehensive testing of batch jobs in a development or test environment before deploying them to production. Validate functionality, error handling, and performance under various scenarios.
+## Best practices
 
-## Next Steps
+- **Implement batch retry logic.** Ensure that your batch classes can be retried. In other words, they can automatically be reattempted if there's a failure. This approach helps handle transient errors and ensures robustness in processing.
+- **Implement effective error handling.** Implement robust error handling mechanisms in your batch class to gracefully handle exceptions and errors. Appropriately log errors for troubleshooting and monitoring purposes.
+- **Keep the transaction duration short.** Keep the duration of individual transactions in your batch class as short as possible to minimize locking and contention issues in the database. This approach helps improve concurrency and overall system performance.
+- **Avoid adding too many tasks.** Be careful when you add tasks to a single batch job. More than 1,000 tasks lead to inefficiencies, and more than 4,000 tasks are considered excessive. We recommend that you decompose intricate batch job processing into smaller jobs and more manageable tasks to enhance both maintainability and performance.
+- **Limit batch task dependencies.** Avoid excessive dependencies between the batch tasks in a job. Minimize dependencies to ensure that tasks can be run independently. This approach helps improve parallelism and scalability.
+- **Optimize batch parameter use.** Efficiently use batch parameters to pass necessary information to the batch job. To maintain clarity and simplicity, avoid overloading parameters with excessive data.
+- **Keep the execution duration short.** To mitigate the effect of transient infrastructure issues, ensure that the execution duration of your batch class remains short. By keeping processing times short, you can minimize the window of vulnerability and better manage system interruptions.
+- **Design for idempotency.** Design batch class operations so that they're idempotent. In other words, multiple executions of the same operation should have the same result as a single execution. This approach ensures that retries of a failed batch job don't lead to duplicate or unintended processing. Therefore, it helps maintains data integrity.
+- **Implement transactional integrity.** Ensure that batch class operations maintain transactional integrity. Therefore, if there's a failure, transactions can be rolled back to prevent partial or inconsistent data updates. This approach helps preserve data consistency and reliability.
+- **Use checkpoints for resumption.** Implement checkpoints in your batch class to track progress and facilitate resumption from the last successfully processed record if there's failure. This approach allows for efficient recovery without requiring reprocessing of previously completed tasks.
+- **Gracefully handle partial failures.** Implement error handling mechanisms to gracefully handle partial failures in batch class operations. Log errors, rollback transactions as required, and provide appropriate notifications for troubleshooting and resolution purposes.
+- **Use batch concurrency control.** Implement [batch concurrency control](priority-based-batch-scheduling.md#batch-concurrency) mechanisms to manage parallel processing and avoid excessive load on similar data entities. By controlling the degree of parallelism, you can prevent contention and performance degradation that are caused by concurrent access to the same data. To optimize throughput and maintain system stability, appropriately configure the batch concurrency settings based on workload characteristics and system resources.
+- **Enable batch history for errors only in production.** Configure batch history settings so that detailed information is logged only for error situations in production environments. This approach helps prevent the accumulation of large batch history, especially in batch jobs that have numerous tasks or in frequently recurring schedules. By limiting batch history to errors, you can effectively manage storage use and maintain clarity when you monitor batch job performance and troubleshoot issues.
+- **Test idempotency and recovery.** Thoroughly test the idempotency and recovery capabilities of your batch class in various failure scenarios. To ensure robustness in production environments, validate that retries of a failed batch job don't lead to duplicate or inconsistent data.
+- **Monitor batch job performance.** Regularly monitor the performance of your batch jobs to identify any bottlenecks or areas for optimization. Use monitoring tools and logs to track resource utilization and processing times.
+- **Wisely schedule batch jobs.** Schedule batch jobs during off-peak hours to ensure that they don't interfere with system performance and the user experience. When you schedule batch processing, consider workload patterns and resource availability. For recuring workloads, consider [active batch periods](activeperiod.md).
+- **Thoroughly test batch jobs.** Perform comprehensive testing of batch jobs in a development or test environment before you deploy them to production. Validate functionality, error handling, and performance in various scenarios.
 
-After creating a Batch Class, you can further enhance it by adding error handling, logging, and other features to make it more robust and efficient. You can also explore advanced articles such as:
+## Next steps
+
+After you create a batch class, you can enhance it by adding error handling, logging, and other features to make it more robust and efficient. You can also explore advanced articles such as the following list:
 
 - [Enable batch retries](retryable-batch.md)
 - [Batch parameter versioning](batch-parameter-versioning.md) 
