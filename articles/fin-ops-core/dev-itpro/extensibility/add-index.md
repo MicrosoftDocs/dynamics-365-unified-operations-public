@@ -3,7 +3,9 @@ title: Add indexes to tables through extension
 description: Learn how to add an index to a table through extension so that you can store additional data for access to data based on the new fields.
 author: ivanv-microsoft
 ms.author: ivanv
-ms.topic
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 03/09/2020
 ms.reviewer: josaw
 audience: Developer
