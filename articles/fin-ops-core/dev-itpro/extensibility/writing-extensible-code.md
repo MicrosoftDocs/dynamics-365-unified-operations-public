@@ -91,7 +91,6 @@ When you make your solution extensible, you also help guarantee that you won't b
 The following external resources can help you make sure that you're writing clean code:
 
 + [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
-+ [Pluralsight - Clean Code: Writing Code for Humans](https://www.pluralsight.com/courses/writing-clean-code-humans)
 + [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 + [Clean Coders](https://cleancoders.com/)
 + [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
