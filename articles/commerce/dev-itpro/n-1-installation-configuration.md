@@ -1,8 +1,8 @@
 ---
 title: Phased Rollout (N-1) installation, configuration, and cutover guide
 description: This article explains how to set up Phased Rollout (N-1) components so that your channel components can work with Microsoft Dynamics 365 Commerce Headquarters.
-author: jashanno
-ms.date: 01/12/2023
+author: aneesa
+ms.date: 04/02/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -18,9 +18,8 @@ ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfil
 [!include [banner](../../includes/banner.md)]
 
 > [!WARNING]
-> Support for Microsoft Dynamics AX 2012 R3 has ended. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
-> 
-> Upgrade and N-1 support for Commerce will be ending with Dynamics 365 Commerce release version 10.0.40.
+> - Support for Microsoft Dynamics AX 2012 R3 has ended. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
+> - Upgrade and N-1 support for Dynamics 365 Commerce end with the Commerce version 10.0.40 release.
 
 This article explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Commerce Scale Unit, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 Commerce Headquarters.
 
@@ -116,7 +115,7 @@ Follow the steps in this section to configure the N-1 components in Headquarters
 ### Working folders
 
 > [!NOTE]
-> The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct.
+> The field values described in this section are the default values that are automatically set when environments are upgraded from AX 2012 R3. You must verify that they are correct.
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Working folders**.
 2. Make sure that the following field values are set in the grid.
@@ -133,7 +132,7 @@ Follow the steps in this section to configure the N-1 components in Headquarters
 ### Channel database group
 
 > [!NOTE]
-> The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct.
+> The field values described in this section are the default values that are automatically set when environments are upgraded from AX 2012 R3. You must verify that they are correct.
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**.
 2. For each physical channel database in the AX 2012 R3 environment, on the Action Pane, select **New**, and set the following fields.
@@ -150,7 +149,7 @@ Follow the steps in this section to configure the N-1 components in Headquarters
 ### Channel database
 
 > [!NOTE]
-> The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct.
+> The field values described in this section are the default values that are automatically set when environments are upgraded from AX 2012 R3. You must verify that they are correct.
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 2. For each physical channel database in the AX 2012 R3 environment, on the Action Pane, select **New**, and set the following fields.
@@ -172,9 +171,8 @@ Follow the steps in this section to configure the N-1 components in Headquarters
 ### Channel profiles
 
 > [!IMPORTANT]
-> This section applies only if the existing AX 2012 R3 environment uses Retail Server to interact with the channel database. If direct channel database access is enabled from the AX 2012 R3 MPOS, you can skip this step.
-
-> The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct.
+> - This section applies only if the existing AX 2012 R3 environment uses Retail Server to interact with the channel database. If direct channel database access is enabled from the AX 2012 R3 MPOS, you can skip this step.
+> - The field values described in this section are the default values that are automatically set when environments are upgraded from AX 2012 R3. You must verify that they are correct.
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Channels \> Stores \> All stores**.
 2. For each Retail Server that is hosted in the N-1 environment, on the Action Pane, select **New**, and set the following fields.
