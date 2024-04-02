@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Enable just-in-time database access
-description: This article provides the steps necessary to enable database access in a just-in-time (JIT) fashion.
+description: Learn how to enable database access in a just-in-time (JIT) fashion, including an outline an outline on Microsoft-manage environments and self-service environments.
 author: laneswenka
-ms.date: 07/12/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 07/12/2021
+ms.custom: 
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-16
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 20
 ---
 
