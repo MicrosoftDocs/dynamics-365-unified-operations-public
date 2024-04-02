@@ -1,15 +1,13 @@
 ---
 title: Model aggregate data
-description: This tutorial will walk you through the process of modeling aggregate data.
+description: This tutorial walks you through the process of modeling aggregate data, including an outline of prerequisites and key concepts.
 author: MilindaV2
-ms.date: 12/18/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: milindav
+ms.topic: article
+ms.date: 12/18/2017
+ms.reviewer: sericks
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100

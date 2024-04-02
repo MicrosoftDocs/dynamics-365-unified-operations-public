@@ -1,18 +1,18 @@
 ---
 title: TAXUNITCONVERSION ER function
-description: This article provides information about how the TAXUNITCONVERSION Electronic reporting (ER) function is used.
+description: Learn about how the TAXUNITCONVERSION Electronic reporting (ER) function is used, including syntax strings, arguments, return values, and examples.
 author: johnmichalak
-ms.date: 03/25/2024
+ms.author: epodkolzina
 ms.topic: conceptual
+ms.date: 03/25/2024
 ms.custom: 
   - bap-template
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-ms.author: epodkolzina
 ms.search.validFrom: 2024-04-26
-ms.dyn365.ops.version: App AX10.0.40/Plat Update64
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.dyn365.ops.version: App AX10.0.40/Plat Update64
 ---
 
 # TAXUNITCONVERSION ER function

@@ -1,19 +1,17 @@
 ---
 title: Features available through the Power BI integration
-description: This article explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data.
-author: RichdiMSFT
-ms.date: 07/09/2020
+description: Learn about how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
+ms.date: 07/09/2020
 ms.reviewer: sericks
+audience: IT Pro
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-02-28
+ms.search.form: PowerBIConfiguration
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
-ms.search.form: PowerBIConfiguration
 ---
 
 # Features available through the Power BI integration

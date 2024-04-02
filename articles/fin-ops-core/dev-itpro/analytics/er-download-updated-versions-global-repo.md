@@ -1,19 +1,19 @@
 ---
 title: Import updated versions of ER configurations
-description: This article explains how to import updated versions of Electronic reporting (ER) configurations from the Global repository of the Configuration service.
+description: Learn about how to import updated versions of Electronic reporting (ER) configurations from the Global repository of the Configuration service.
 author: kfend
+ms.author: filatovm
 ms.date: 03/25/2024
 ms.topic: article
 ms.custom: 
   - bap-template
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-ms.author: filatovm
 ms.search.validFrom: 2016-05-31
+ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 ms.dyn365.ops.version: AX 10.0.5
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
-ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 ---
 
 # Import updated versions of ER configurations

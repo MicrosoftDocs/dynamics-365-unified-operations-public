@@ -1,15 +1,13 @@
 ---
 title: Document reporting preview options
-description: This article provides information about the options available in the embedded document reporting previewer.
-author: RichdiMSFT
-ms.date: 09/11/2020
+description: Learn about the options available in the embedded document reporting previewer, including information about exporting files and accessing preview options.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
+ms.date: 09/11/2020
 ms.reviewer: sericks
+audience: IT Pro
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
 ---
