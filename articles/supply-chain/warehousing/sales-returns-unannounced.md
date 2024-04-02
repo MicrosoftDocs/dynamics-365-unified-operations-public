@@ -178,10 +178,10 @@ To enable workers to process unannounced returns, you must create a separate mob
 
 ## Integrate return label printing with small parcel shipping
 
-1. SPS integration with return label printing streamlines return processes, enabling Microsoft Dynamics 365 Supply Chain Management users to directly print return labels for small parcels with shipping carriers by providing a framework for communication through carrier APIs. This functionality is useful when you're shipping individual sales orders via commercial shipping carriers and want to include a return label. 
+1. SPS integration with return label printing streamlines return processes, enabling Microsoft Dynamics 365 Supply Chain Management users to directly print return labels for small parcels with shipping carriers by providing a framework for communication through carrier APIs. This functionality is useful when you're shipping individual sales orders via commercial shipping carriers, which also means return shipping costs will automatically be handled via SPS carrier. 
 
 1. Label Contents:
-   -The shipping label includes our postage address and a barcode containing the return-details record ID (or RMA-order ID). 
+   -The shipping label includes our postage address and a barcode containing the return-details record ID. 
 
 1. To enable return details with SPS integration: 
   -	Navigate to **Transportation Management** \> **Transportation Management Parameters**.
@@ -190,7 +190,9 @@ To enable workers to process unannounced returns, you must create a separate mob
   -	For detailed SPS setup instructions,  refer to - https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping
 
 ## Additional Considerations:
+
 1. The Small Parcel Shipping engine does not come out of box and requires custom development.
+
 1. Configure Container packing policies: 
     -In the Container manifest lines, set Automatic manifest at container close to Yes, and choose Transportation management.
     - **Print container shipping label rule** - If you select *never*, container will be able to be closed without label being printed. If you select *Always*, label will always be printed and if not possible to retrieve container label, container will not be able to be closed until label is retrieved. 
