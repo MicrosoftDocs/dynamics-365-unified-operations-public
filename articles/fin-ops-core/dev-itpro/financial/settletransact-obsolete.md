@@ -1,15 +1,14 @@
 ---
 title: Settle transactions by using CustTrans  settleTransaction
-description: This article describes the new CustTrans  settleTransaction method and explains why CustTrans  settleTransact is now obsolete.
+description: Learn about the new CustTrans  settleTransaction method and explains why CustTrans settleTransact is now obsolete.
 author: josaw1
+ms.author: josaw
+ms.topic: article
 ms.date: 06/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
 ms.reviewer: josaw
+audience: Developer
 ms.search.region: Global
-ms.author: markskun
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: AX 10.0.4
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
