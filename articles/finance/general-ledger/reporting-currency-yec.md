@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.25
 
 # Reporting currency out of balance when the year-end close is run
 
-After you enable the **Awareness between ledger settlement and year end close** feature (the **Awareness** feature), ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when the general ledger year-end close is run. The exclusion of ledger transactions that are settled might present a challenge for customers at year-end close if a reporting currency is defined for the ledger.
+After you enable the **Enable Advanced Awareness Options** parameter (the **Awareness** feature), ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when the general ledger year-end close is run. The exclusion of ledger transactions that are settled might present a challenge for customers at year-end close if a reporting currency is defined for the ledger.
 
 Ledger settlement is done only for the accounting currency. When ledger transactions are settled, validation confirms only that the accounting currency debits equal the accounting currency credits. The reporting currency amounts for those ledger transactions aren't validated, and debits might not equal credits for them. In addition, ledger settlement doesn't automatically calculate and post a gain/loss in the reporting currency.
 
@@ -38,7 +38,7 @@ The following example goes through the steps for addressing this issue before th
 
 ## Example setup
 
-To set up this example, enable the **Awareness** feature, and set up main account 110180 for ledger settlement. The following illustration shows the ledger transactions that were posted in the DEMF legal entity. The accounting currency for DEMF is US dollars (USD), and the reporting currency is euros (EUR).
+To set up this example, enable the **Enable Advanced Awareness Options** parameter, and set up main account 110180 for ledger settlement. The following illustration shows the ledger transactions that were posted in the DEMF legal entity. The accounting currency for DEMF is US dollars (USD), and the reporting currency is euros (EUR).
 
 ![Posted ledger transactions in the reporting currency.](./media/reporting-currency-1.png)
 
