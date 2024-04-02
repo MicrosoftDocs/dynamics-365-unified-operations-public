@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: **Enable Advanced Awareness Options** parameter before year-end close using the inquiry page
+
+title: Enable Advanced Awareness Options parameter before year-end close using the inquiry page
 description: This article explains how to use the **Enable Advanced Awareness Options** parameter by using the new inquiry page before the General ledger year-end close is run.
 author: kweekley
 ms.date: 12/15/2022
