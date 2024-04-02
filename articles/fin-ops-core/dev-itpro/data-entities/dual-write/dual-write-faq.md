@@ -93,7 +93,7 @@ For information about how to migrate Prospect to cash to dual-write, see [Migrat
 
 ### On finance and operations data tables, can I develop unbounded columns that flow to Dataverse by using dual-write?
 
-Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, you should monitor the performance overhead from the X++ logic that's required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, you should avoid using virtual columns to transform or calculate values through X++ and expect that to go back to Dataverse within the same transaction.
+Yes. You can use both [computed columns and virtual columns](../data-entity-computed-columns-virtual-fields.md). However, you should monitor the performance overhead from the X++ logic that's required for reads and writes. Round-tripping within the same transaction isn't allowed. Therefore, transactions originating in Dataverse cannot use virtual columns to transform or calculate values in X++ and return the calculated value to Dataverse in the same transaction. This isn't a valid or supported use case for dual-write.
 
 ### When I use the Dataverse offline app, what happens if I can't sync the data after reconnection? Does this situation cause an inconsistent state between the Dataverse environment and the finance and operations environment?
 
