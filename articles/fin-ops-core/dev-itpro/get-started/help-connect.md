@@ -1,19 +1,17 @@
 ---
 title: Configure the Help experience for finance and operations apps
-description: This article provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
+description: Learn about the components of the Help system for finance and operations apps, including an overview of help architecture.
 author: edupont04
-ms.date: 08/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: edupont
-ms.search.region: Global
 ms.author: edupont
+ms.topic: article
+ms.date: 08/11/2021
+ms.reviewer: edupont
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SystemParameters
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
-ms.search.form: SystemParameters
 ---
 
 # Configure the Help experience for finance and operations apps

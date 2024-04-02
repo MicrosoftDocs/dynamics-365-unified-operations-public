@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Embed canvas apps from Power Apps
-description: This article explains how to embed canvas apps from Microsoft Power Apps into the client to augment the product's functionality.
+description: Learn about how to embed canvas apps from Microsoft Power Apps into the client to augment the product's functionality.
 author: jasongre
-ms.date: 09/13/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
+ms.topic: article
+ms.date: 09/13/2021
+ms.custom:
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-02-28
+ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 ms.dyn365.ops.version: Platform update 14
 ---
 

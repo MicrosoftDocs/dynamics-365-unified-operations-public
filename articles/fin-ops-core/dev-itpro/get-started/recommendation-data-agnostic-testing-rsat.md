@@ -1,15 +1,13 @@
 ---
 title: Data agnostic testing using the Regression Suite Automation Tool
-description: This article discusses the recommendations for data agnostic testing using the Regression Suite Automation Tool.
+description: Learn about the recommendations for data agnostic testing using the Regression Suite Automation Tool, including overviews on various frameworks.
 author: FrankDahl
-ms.date: 09/13/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 09/13/2019
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ---

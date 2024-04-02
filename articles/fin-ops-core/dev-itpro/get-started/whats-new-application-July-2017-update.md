@@ -1,15 +1,13 @@
 ---
 title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
+description: Learn about new or changed features in Microsoft Dynamics 365 Finance and Operations, Enterprise edition. This version was released in July 2017.
 author: sericks007
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 11/20/2020
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ROBOTS: NOINDEX, NOFOLLOW
@@ -18,8 +16,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
 
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 

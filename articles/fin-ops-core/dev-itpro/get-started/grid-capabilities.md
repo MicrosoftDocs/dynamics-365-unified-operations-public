@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Grid capabilities
-description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
+description: Learn about several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 1/17/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  DefaultDashboard
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
+ms.topic: article
+ms.date: 1/17/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-02-29
+ms.search.form:  DefaultDashboard
 ms.dyn365.ops.version: Platform update 33
 ---
 

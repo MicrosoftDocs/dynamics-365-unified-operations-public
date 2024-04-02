@@ -1,19 +1,17 @@
 ---
 title: View and export field descriptions
-description: This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
+description: Learn about how to view field descriptions and how to use the Field descriptions page to export descriptions and see field descriptions in the user interface.
 author: twheeloc
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: twheeloc
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: FieldDescriptions
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
-ms.search.form: FieldDescriptions
 ---
 
 # View and export field descriptions

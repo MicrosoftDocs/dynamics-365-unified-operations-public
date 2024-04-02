@@ -1,18 +1,16 @@
 ---
 title: What's new or changed in Dynamics 365 for Operations platform update 6 (April 2017)
-description: This article describes features that are either new or changed in Dynamics 365 for Operations platform update 6. This version was released in April 2017 and has a build number of 7.0.4509.16180.
+description: Learn about new or changed features in Dynamics 365 for Operations platform update 6. This version was released in April 2017.
 author: sericks007
-ms.date: 04/21/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 04/21/2017
+ms.custom:
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: Platform update 6
-ms.custom: 
 ms.assetid: 13d2b8a5-c2e0-4f32-a43b-7726ae20392c
 ROBOTS: NOINDEX, NOFOLLOW
 ---

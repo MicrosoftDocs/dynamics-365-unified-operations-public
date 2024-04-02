@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Personalize the user experience
-description: This article explains how you can personalize the app.
+description: Learn about how you can personalize the app and user experience, covering various subjects including system-wide options and full personalization access.
 author: jasongre
-ms.date: 06/03/2022
+ms.author: jasongre
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysUserSetup, DefaultDashboard
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 06/03/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: IT Pro
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jasongre
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysUserSetup, DefaultDashboard
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Personalize the user experience

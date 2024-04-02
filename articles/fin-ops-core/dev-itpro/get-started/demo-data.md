@@ -1,18 +1,16 @@
 ---
 title: Demo data overview
-description: This article provides an overview of the demo data.
+description: Learn about demo data via an overview, including a table that defines various legal entities and an overview of embedded analytics.
 author: sericks007
-ms.date: 09/20/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: overview
+ms.date: 09/20/2019
+ms.reviewer: sericks
+ms.collection: get-started
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ---
 
