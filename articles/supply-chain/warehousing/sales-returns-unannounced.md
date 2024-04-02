@@ -187,14 +187,15 @@ The SPS integration with return label printing streamlines the return process fu
   -	Navigate to **Transportation Management** \> **Transportation Management Parameters**.
   -	Below the *Shipping Carriers header*, toggle **Enable Shipping Label Request Type** to *Yes*.
   -	This setting adds a new field to the shipping carrier service, allowing customization of the request sent to the carrier.
-  -	For detailed SPS setup instructions,  refer to - https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping
+  -	For more detailed SPS setup instructions, see - [Small Parcel Shipping](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping).
 
 ## Additional Considerations:
 
 - The Small Parcel Shipping engine does not come out of box and requires custom development.
 
 - Configure Container packing policies: 
-    -In the Container manifest lines, set Automatic manifest at container close to Yes, and choose Transportation management.
+
+    - In the *Container manifest lines*, set *Automatic manifest at container close* to *Yes*, and choose **Transportation management**.
     - **Print container shipping label rule** - If you select *never*, container will be able to be closed without label being printed. If you select *Always*, label will always be printed and if not possible to retrieve container label, container will not be able to be closed until label is retrieved. 
 If you select *If setup exists*, for all containers that are to be packed where setup exists, we will close the container when label is retrieved. If we do not retrieve the label, we will not close the container. If the container does not have a setup we will allow closing of the container without label.
     - **Printer name** - Select the ZPL printer that you expect your label to be printed on.
@@ -202,11 +203,11 @@ If you select *If setup exists*, for all containers that are to be packed where 
 
 ## Reprinting return labels
 
-1. To re-print a return label, follow the steps below: 
+- To re-print a return label, follow the steps below: 
 
-  - Access the Return Details View via **Warehouse Management** \> **Inquiries and Reports** \> **Return Details**.
-  - On the action bar, select *Print* and then choose *Return Shipping Label*.
-  - The printer used is the one specified in the *Container packing policy*.
+   - Access the Return Details View via **Warehouse Management** \> **Inquiries and Reports** \> **Return Details**.
+   - On the action bar, select *Print* and then choose *Return Shipping Label*.
+   - The printer used is the one specified in the *Container packing policy*.
 
 ## Example scenarios
 
