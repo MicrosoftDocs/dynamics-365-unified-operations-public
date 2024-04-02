@@ -2041,14 +2041,14 @@
           href: demand-planning/design-forecast-models.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
+      - name: Rolling forecasts
+        href: demand-planning/rolling-forecasts.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
       - name: Analyze demand plans with Copilot (preview)
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
         href: demand-planning/export-data.md
-      - name: Rolling forecasts
-        href: demand-planning/rolling-forecasts.md
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
