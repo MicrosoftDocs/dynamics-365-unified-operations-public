@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Business events and Azure Service Bus Queue
-description: This article explains how to configure a Microsoft Azure Service Bus Queue endpoint.
+description: Learn how to configure a Microsoft Azure Service Bus Queue endpoint through a numbered list detailing steps on how to create an endpoint.
 author: jaredha
-ms.date: 11/08/2021
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: jaredha
+ms.topic: article
+ms.date: 11/08/2021
+# ms.custom: NotInToc
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-11-03
+ms.search.form:
 ms.dyn365.ops.version: 10.0.22
 ---
 

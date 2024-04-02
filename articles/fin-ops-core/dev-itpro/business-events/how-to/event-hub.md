@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Business events and Azure Event Hubs
 description: This tutorial describes the steps that you must follow to make business events work with Microsoft Azure Event Hubs.
 author: Sunil-Garg
-ms.date: 08/13/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 08/13/2019
+ms.custom: 
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: Platform update 28
+# ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-07-31 
-
 ---
 
 # Business events and Azure Event Hubs
