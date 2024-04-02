@@ -109,6 +109,9 @@ You can view available and assigned licenses under **Licenses** in the Microsoft
 
 ![Microsoft 365 admin center.](media/M365-admin-center.png)
 
+## Audit and Monitor
+Regularly audit your current security settings and monitor the system post-update to ensure compliance with the licensing requirements
+
 ## Additional resources
 
 For information about how to buy and license finance and operations apps, see [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
