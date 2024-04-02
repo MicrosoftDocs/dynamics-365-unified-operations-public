@@ -5,7 +5,9 @@ title: Role-based security
 description: This article provides an overview of the elements of role-based security. 
 author: gned
 ms.date: 04/02/2024
-ms.topic: article
+ms.topic: overview
+ms.custom: 
+  - bap-template
 
 # optional metadata
 
