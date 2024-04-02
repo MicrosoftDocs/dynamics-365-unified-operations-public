@@ -22,7 +22,7 @@ This article provides an overview of how customers can stay compliant with the u
 
 The licensing requirements for users are determined by the security roles that are assigned to enabled users. Security roles are built based on a hierarchy of the following elements:
 
-- Sub-roles
+- Subroles
 - Duties
 - Privileges
 - Directly referenced securable objects
@@ -54,7 +54,7 @@ Select **View permissions** to view all permissions that are currently included 
 
 ![View permissions page.](media/View-permissions2.png)
 
-You can filter the **License** column to focus on the resources for an unexpected license. The next step might be to remove those resources or modify the grants. For example, you might grant **Read** access instead of full access, and then reevaluate the impact on licensing requirements. We recommend that you first change the security configuration in a non-production environment and validate the impact before you update the production environment.
+You can filter the **License** column to focus on the resources for an unexpected license. The next step might be to remove those resources or modify the grants. For example, you might grant **Read** access instead of full access, and then reevaluate the impact on licensing requirements. We recommend that you first change the security configuration in a nonproduction environment and validate the impact before you update the production environment.
 
 The **Operations** license value indicates that a full user license for finance and operations apps is required or compliant.
 
@@ -85,7 +85,7 @@ You can use the **User license counts** report to get a count of required licens
 > [!NOTE]
 > This report depends on the **Named user license count reports processing** batch job. To determine when the batch was last run, use the **Batch job history** page.
 
-Customers who are on the app-specific licensing model must first use the **User license counts** report to determine the licenses that are required for the **Activity** and **Team members** license types only. They must then use the **User license estimator** report for full user licenses.
+Customers who are on the appspecific licensing model must first use the **User license counts** report to determine the licenses that are required for the **Activity** and **Team members** license types only. They must then use the **User license estimator** report for full user licenses.
 
 ## User license estimator report
 
@@ -99,9 +99,9 @@ If users have one indicated application license (as is the case for April in the
 
 If users have more than one indicated application license (as is the case for Brooke in the previous illustration), licenses for all apps must be assigned to them: a *base* license for one of the apps and *attach* licenses for the rest.
 
-If users have no indicated application license (as is the case for Charlie in the previous illustration), any finance and operations *base* license must be assigned to them. This license will be a license for Finance, Supply Chain Management, Commerce, Project Operations, and Human Resources. 
+If users have no indicated application license (as is the case for Charlie in the previous illustration), any finance and operations *base* license must be assigned to them. This license is a license for Finance, Supply Chain Management, Commerce, Project Operations, and Human Resources. 
 
-You can perform a rough compliance check by using the combined total for required app-specific licenses at the bottom of the report. That total must equal or be less than the total number of available *base* and *attach* licenses for finance and operations apps in the Microsoft 365 admin center.
+You can perform a rough compliance check by using the combined total for required appspecific licenses at the bottom of the report. That total must equal or be less than the total number of available *base* and *attach* licenses for finance and operations apps in the Microsoft 365 admin center.
 
 ## Available and assigned licenses
 
@@ -110,7 +110,7 @@ You can view available and assigned licenses under **Licenses** in the Microsoft
 ![Microsoft 365 admin center.](media/M365-admin-center.png)
 
 ## Audit and Monitor
-Regularly audit your current security settings and monitor the system post-update to ensure compliance with the licensing requirements.
+Regularly audit your current security settings and monitor the system postupdate to ensure compliance with the licensing requirements.
 
 ## Additional resources
 
@@ -118,7 +118,7 @@ For information about how to buy and license finance and operations apps, see [M
 
 For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
-Additional user licenses are required when multiple implementation projects exist for the same tenant. For more information, see [Multiple LCS projects and production environments on one Microsoft Entra tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#licensing-requirements).
+More user licenses are required when multiple implementation projects exist for the same tenant. For more information, see [Multiple Lifecycle Services projects and production environments on one Microsoft Entra tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#licensing-requirements).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
