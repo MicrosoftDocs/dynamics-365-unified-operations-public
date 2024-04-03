@@ -31,18 +31,19 @@ Release notes for March 2024 releases of [Dual-write core solution](https://apps
 | Bug | 3801381 | Bug fixes and code enhancements for the data synchronization pipeline between finance and operations apps and Dataverse. | General availability | 
 | Bug | 25500975 | <ul><li>Optimizing fetch for non-relational database tables to improve data sync performance between finance and operations apps and Dataverse.</li><li> Correcting column values for msdyn_datasyncexecutionsummary_elastic, sourceType, update count, and error count.</li></ul>  | General availability |
 
-### Global address book  
+### Global address book
+
 The March regular release of Dual-write GAB solution 3.5.2.52 contains the following bug fixes.
 
 | Feature | Description | Status |
-| ---|---|---|
-|Sales order page enhancements |Restricted the creation of ship to and bill to address by locking the address fields on the sales order page. Customer is expected to choose these addresses from the existing postal address entity using the **Choose ship/bill to address** lookup fields attached to the **Order** page. A new shipping/billing address can be created using the quick create new postal address page option in the same lookup field.	|General availability|
-|**Postal address** tab on accounts and contacts page|	Added postal address component as a new tab on the **Account and contact** page, keeping the **Customer address** tab as is. Postal address entity introduced with Dual-write GAB solutions has no customizations restrictions. Customers can create lookups to custom entities and can create country, county, state, entities, implement lookup filtering and easily validate addresses in Dataverse. Customers can choose to hide existing **Address** tab or hide the new **Postal address** tab, if they choose to still use customer address for address input.|General availability|
-|Xmultiple for performance|	The existing logic in Dataverse that creates customer addresses during the initial/live sync of customer records from postal addresses has been optimized to increase the sync record capacity and prevent plugin timeouts, especially when dealing with a large number of addresses associated with customers.|	General availability|
-|Bug fix	|Allowed the creation of postal address records from the **Postal address** main page. Previously, postal address could only be created using the postal address quick create page or via the quick view page attached in party page's postal address tab.|	General availability|
-|Enhancement|	Restricted customization of Microsoft GAB business rules to prevent data corruption.	|General availability|
-|Bug fix|	Fixed the issue with creation of a contact via marketing App page. Due to depth limitation, only the **Party** was created and the plugin wasn't able to create the corresponding contact entity record.|	General availability|
-|Bug fix|Fixed the update of postal address when the corresponding customer address is updated and the name is longer than 60 characters. **Postal address name** field has a restriction of 60 characters, which is now validated and truncated via GAB plugins.|	General availability|
+|---|---|---|
+| Sales order page enhancements | Restrict the creation of ship-to and bill-to addresses by locking the address fields on the sales order page. Customers are expected to select these addresses from the existing postal address entity by using the **Choose ship/bill to address** lookup fields that are attached to the **Order** page. A new shipping/billing address can be created by using the quick create new postal address page option in the same lookup field. | General availability |
+| **Postal address** tab on accounts and contacts pages | Add the postal address component as a new tab on the **Account and contact** page. The **Customer address** tab is kept as is. The postal address entity that's introduced in Dual-write GAB solutions has no customization restrictions. Customers can create lookups to custom entities. They can also create country/region, county, and state/province entities, implement lookup filtering, and easily validate addresses in Dataverse. Customers who want to continue to use the customer address for address input can hide the existing **Address** tab or the new **Postal address** tab. | General availability |
+| Xmultiple for performance | Optimize the existing logic in Dataverse that creates customer addresses during the initial/live synchronization of customer records from postal addresses. This optimization increases the synchronization record capacity and prevents plugin time-outs, especially when a large number of addresses are associated with customers. | General availability |
+| Bug fix | Enable postal address records to be created from the **Postal address** main page. Previously, postal addresses could be created only by using the postal address quick create page or the quick view page that's attached to the **Postal address** tab on the party page. | General availability |
+| Enhancement | Restrict customization of Microsoft global address book (GAB) business rules to help prevent data corruption. | General availability |
+| Bug fix | Fix an issue with the creation of a contact via the marketing app page. Because of a depth limitation, only the party was created. The plugin couldn't create the corresponding contact entity record. | General availability |
+| Bug fix | Fix the update of postal addresses when the corresponding customer address is updated and the name is longer than 60 characters. The **Postal address name** field has a limit of 60 characters. This limit is now validated and truncated via GAB plugins. | General availability |
 
 #### GAB solution details
 
