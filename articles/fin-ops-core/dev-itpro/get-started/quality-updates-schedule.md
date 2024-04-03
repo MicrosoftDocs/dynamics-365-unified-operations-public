@@ -118,7 +118,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | March 25 to March 28, 2024 | April 6 to April 7, 2024 |
 | Station 6 | March 26 to March 29, 2024 | April 7 to April 7, 2024 |
 
-### <a name="schedule"></a>[New] Proactive quality update upcoming 10.0.38 Release-2 train schedule
+### <a name="schedule"></a>Proactive quality update upcoming 10.0.38 Release-2 train schedule
 
 **App version: 10.0.1777.135**
 
@@ -133,7 +133,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | April 1 to April 4, 2024 | April 13 to April 14, 2024 |
 | Station 6 | April 2 to April 5, 2024 | April 13 to April 14, 2024 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.38 Release-3 train schedule
+### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.38 Release-3 train schedule
 
 **App version: 10.0.1777.157**
 
