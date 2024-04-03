@@ -1,15 +1,13 @@
 ---
 title: Customize App Suite reports by using extensions
-description: This article discusses a series of scenarios for customizing App Suite reports.
-author: RichdiMSFT
-ms.date: 06/20/2017
+description: Learn about how to customize App Suite reports by using extensions through a series of scenarios for customizing App Suite reports.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
+ms.date: 06/20/2017
 ms.reviewer: sericks
+audience: Developer, IT Pro
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02

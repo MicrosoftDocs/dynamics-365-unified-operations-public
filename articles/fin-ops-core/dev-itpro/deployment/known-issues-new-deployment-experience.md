@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Known issues with self-service deployment
-description: This article lists known issues that you might experience when using self-service deployment.
+description: Learn about known issues that you might experience when using self-service deployment for Lifecycle Services (LCS).
 author: rashmansur
-ms.date: 03/31/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: rashmim
+ms.topic: article
+ms.date: 03/31/2021
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: sericks
+audience: IT Pro 
+ms.search.region: Global 
 ms.search.validFrom: 2018-12-31
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Known issues with self-service deployment

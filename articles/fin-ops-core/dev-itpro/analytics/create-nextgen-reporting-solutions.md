@@ -1,15 +1,13 @@
 ---
 title: Create reporting solutions
 description: This tutorial shows how to create a report, expand predefined views, add navigation to charts, use the free-form report designer, and customize the parameters.
-author: RichdiMSFT
-ms.date: 06/20/2017
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
+ms.date: 06/20/2017
 ms.reviewer: sericks
+audience: Developer
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
