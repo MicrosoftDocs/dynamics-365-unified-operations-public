@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Report a production outage
-description: This article explains how to report a production outage through Lifecycle Services (LCS).
+description: Learn about how to report a production outage through Lifecycle Services (LCS), incluidng overviews on reporting flows and production outages.
 author: angelmarshall
-ms.date: 05/06/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: tsmarsha
-ms.search.validFrom: 2018-4-30 
+ms.topic: article
+ms.date: 05/06/2019
+ms.custom:
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2018-4-30
+ms.search.form:
 ms.dyn365.ops.version: 8.0
 ---
 
