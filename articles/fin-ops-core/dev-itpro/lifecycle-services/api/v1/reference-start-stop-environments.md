@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Start and stop environments
-description: You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
+description: Learn about how you can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
 author: jorichar
-ms.date: 08/17/2021
-ms.topic: reference
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: jorichar
+ms.topic: reference
+ms.date: 08/17/2021
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-01-31
-
 ---
 
 # Start and stop environments
