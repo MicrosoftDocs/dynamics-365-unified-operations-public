@@ -5,7 +5,6 @@ author: laneswenka
 ms.author: laswenka
 ms.topic: article
 ms.date: 04/27/2022
-ms.topic: article 
 ms.reviewer: sericks
 audience: Developer, IT Pro
 ms.search.region: Global
