@@ -24,7 +24,7 @@ By deploying a demo finance and operations environment, you gain hands-on experi
 
 If you haven’t yet purchased licenses, and you’re using a free trial, you can follow the steps in [Deploy a demo environment](../deployment/deploy-demo-environment.md) to deploy a demo environment to a Microsoft Azure subscription that you bring yourself.
 
-If you’ve already purchased licenses, you received a link to configure a special type of project in Microsoft Dynamics Lifecycle Services (LCS): an implementation project. The implementation project will let you deploy a dev/test environment and a sandbox environment. For more information about this type of environment deployment, see [Upgrade from AX 2012 - Data upgrade in sandbox environments](/migration-upgrade/data-upgrade-self-service.md).
+If you’ve already purchased licenses, you received a link to configure a special type of project in Microsoft Dynamics Lifecycle Services (LCS): an implementation project. The implementation project will let you deploy a dev/test environment and a sandbox environment. For more information about this type of environment deployment, see [Upgrade from AX 2012 - Data upgrade in sandbox environments](data-upgrade-self-service.md).
 
 > [!IMPORTANT]
 > It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
