@@ -19,7 +19,7 @@ This article provides step-by-step instructions on how to install an Internet In
 
 ## Create Azure Active Directory apps
 
-First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the CSU and one for the Store Commerce for Web app (formerly CPOS). For instructions, see [Set up a custom Retail Server app in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-retail-server-app-in-microsoft-entra-id) and [Set up a custom app for Store Commerce for Web in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id).
+First, you must create two Microsoft Entra ID (formerly known as Azure Active Directory) apps, one for the CSU and one for the Store Commerce for Web app (formerly known as Cloud point of sale or CPOS). For instructions, see [Set up a custom Retail Server app in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-retail-server-app-in-microsoft-entra-id) and [Set up a custom app for Store Commerce for Web in Microsoft Entra ID](cpos-custom-aad.md#set-up-a-custom-app-for-store-commerce-for-web-in-microsoft-entra-id).
 
 ## Create an SSL certificate for a website based on the host name
 
@@ -39,7 +39,7 @@ Import-Certificate -CertStoreLocation cert:\LocalMachine\Root -FilePath "$env:te
 4. Copy the thumbprint value of the new certificate for use later during the CSU install section.
 
 > [!NOTE]
-> If you create your SSL certificate using a method other then the PowerShell command, ensure that the SSL certificate contains the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, and `dataEncipherment`.
+> If you create your SSL certificate using a method other than the PowerShell command, ensure that the SSL certificate contains the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, and `dataEncipherment`.
 
 ## Convert the SSL certificate you created to the .CER file format
 
@@ -67,7 +67,7 @@ To convert the SSL certificate you created to the `.CER` file format, follow the
 	
 ## Add the SSL certificate to the existing CSU Entra ID app
 
-Next, you must add the SSL certificate you created and converted to the `.CER` file format to the existing CSU Entra ID app. This is required for the CSU to generate an authentication token for communication with Commerce headquarters.
+Next, you must add the SSL certificate you created and converted to the `.CER` file format to the existing CSU Entra ID app. This step is required for the CSU to generate an authentication token for communication with Commerce headquarters.
 
 To add the SSL certificate you created to the CSU Entra ID app, follow these steps.
 
@@ -131,7 +131,7 @@ To create a new channel profile in headquarters and update the existing store re
     1. For **Retail Server URL**, enter `https://<HostName>:446/RetailServer/Commerce`.  
     1. For **Cloud POS URL**, enter `https://<HostName>:446/POS`.  
 1. Go to **Retail and Commerce \> Channels \> Stores \> All Stores**.  
-1. For each store record you normally work, update the following:  
+1. For each store record you normally work, update the following fields:  
     1. For **Live Channel Database**, enter "DevSealedCSU".  
     1. For **Channel Profile**, enter "DevSealedCSUProfile".  
     1. Select **Save**.  
@@ -152,7 +152,7 @@ To update CDX data groups in headquarters, follow these steps.
 		
 ### Execute sync jobs 
 
-The following sync jobs are executed in headquarters prior to installation so that data package files are available for the CSU Async Client service once the installation is completed. If CSU installation is successful, these jobs show an applied status as the Async Client applies them. It isn't required to execute this section before CSU installation, however this step can help with early troubleshooting and verification that everything is working. 
+The following sync jobs are executed in headquarters before installation so that data package files are available for the CSU Async Client service once the installation is completed. If CSU installation is successful, these jobs show an applied status as the Async Client applies them. It isn't required to execute this section before CSU installation, however this step can help with early troubleshooting and verification that everything is working. 
 
 To execute sync jobs in headquarters, follow these steps.
 
@@ -215,7 +215,7 @@ To install the sealed CSU on the development machine, follow these steps.
 
 ## Additional steps for cloud (LCS) deployed development environments 
 
-The setup above assumes that you'll RDP into the development environment when accessing the CSU URL. To make the development environment sealed CSU accessible from outside the development VM, you must perform the following additional tasks.   
+The setup steps in [Install the sealed CSU](#install-the-sealed-csu) assume that you'll RDP into the development environment when accessing the CSU URL. To make the development environment sealed CSU accessible from outside the development VM, you must perform the following additional tasks.   
 
 > [!NOTE]
 > External accessible redirection has only been tested with Commerce version 10.0.39 and earlier. This functionality is based on redirecting the previous legacy (default) Retail Server URL to the sealed CSU on the VM. Support for this functionality will be removed in future versions along with the removal of the legacy (default) Retail Server. 
@@ -260,11 +260,11 @@ To update the IIS binding for the website, follow these steps.
 1. Select **OK**.
 1. Select **Close**.
 
-## Database restores from (UAT)
+## Database restores from UAT
 
-If you previously set up a sealed CSU using the steps above and then restored the headquarters database from another environment, you must perform the following steps to make the sealed CSU functional again. 
+If you previously set up a sealed CSU using the steps in [Install the sealed CSU](#install-the-sealed-csu) and then restored the headquarters database from another environment, you must perform the following steps to make the sealed CSU functional again. 
 
-1. Follow the steps in [Update Commerce headquarters](#update-commerce-headquarters) to recreate the records. 
+1. To recreate the records, follow the steps in [Update Commerce headquarters](#update-commerce-headquarters). 
     > [!NOTE]
     > You must use the same values for **Channel Database ID** and **Channel Profile** that you used in the previous installation. If these values are different than the previous installation, you must rerun the installer. 
 2. Check your download sessions to see if the jobs are applying. 
@@ -273,7 +273,7 @@ If you previously set up a sealed CSU using the steps above and then restored th
     - 
 ## Update the sealed CSU to a new version  
 
-To update the sealed CSU to a newer version, obtain a newer version of the Sealed CSU installer file then run the same command line arguments you used to first install the sealed CSU. 
+To update the sealed CSU to a newer version, obtain a newer version of the Sealed CSU installer file and then run the same command line arguments you used to first install the sealed CSU. 
 
 
 
