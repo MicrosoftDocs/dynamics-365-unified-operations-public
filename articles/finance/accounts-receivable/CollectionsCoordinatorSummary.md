@@ -4,10 +4,9 @@
 title: Collections coordinator summary
 description: This article describes how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
 author: JodiChristiansen
-ms.date: 08/02/2023
+ms.date: 04/04/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
