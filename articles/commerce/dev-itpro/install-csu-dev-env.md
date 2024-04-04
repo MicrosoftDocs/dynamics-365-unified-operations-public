@@ -138,7 +138,7 @@ To create a new channel profile in headquarters and update the existing store re
 
 > [!NOTE]
 > - If you receive a warning stating `The store's closing method must be set to 'Shift'`, on the **Statement/Closing** FastTab of the store, update the **Closing Method** value to **Shift**.
-> - The <HostName> value typically starts with "DEV" and can be found by opening IIS Manager and reviewing the server name value shown in the upper left corner. It can also be found on the LCS Environments page in the **VM Name** column under **Manage environment \> LOCAL ACCOUNTS**.
+> - The \<HostName\> value typically starts with "DEV" and can be found by opening IIS Manager and reviewing the server name value shown in the upper left corner. It can also be found on the LCS Environments page in the **VM Name** column under **Manage environment \> LOCAL ACCOUNTS**.
 
 ### Update CDX data groups
 
