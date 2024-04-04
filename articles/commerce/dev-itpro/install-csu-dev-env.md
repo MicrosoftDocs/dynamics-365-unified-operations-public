@@ -27,8 +27,8 @@ We need to create an SSL certificate based on the hostname for the CSU website a
 
 1. Connect to the development machine using Remote Desktop Protocol (RDP).
 1. Open a PowerShell with Administrative privilege command prompt
-1. Enter the following command
- '$cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,DigitalSignature,CRLSign -FriendlyName "$env:computerName" -KeyExportPolicy Exportable -KeySpec Signature '
+1. Enter the following command  
+ $cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,DigitalSignature,CRLSign -FriendlyName "$env:computerName" -KeyExportPolicy Exportable -KeySpec Signature
 Export-Certificate -Cert $cert -FilePath "$env:temp\https.cer"
 Import-Certificate -CertStoreLocation cert:\LocalMachine\Root -FilePath "$env:temp\https.cer"'
 
@@ -187,16 +187,6 @@ To install the sealed CSU on the development machine, follow these steps.
 > Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
 > Don't enter port 80 or 443 during installation. Entering either of these values interferes with the application object server (AOS) service that hosts the Commerce headquarters website. 
 
-## Database restores from UAT
-
-If you previously set up a sealed CSU using the steps above and then restored the HQ database from another environment, you must perform the following steps to make the sealed CSU functional again. 
-
-1. Go through the steps in [Update Commerce headquarters](#update-commerce-headquarters) to recreate the records. 
-    > [!NOTE]
-    > You must use the same values for **Channel Database ID** and **Channel Profile** that you used in the previous installation. If these values are different than the previous installation, you must rerun the installer. 
-2. Check your download sessions to see if the jobs are applying. 
-    - If the jobs are applying, then your CSU is working and you don't need to rerun the installer steps.
-    - If the download jobs aren't applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the channel database form and rerun the CSU installer using the new configuration file.  
 
 ## Additional steps for cloud (LCS) deployed development environments 
 
@@ -244,8 +234,20 @@ The IIS binding for the legacy Retail Server and Sealed CSU need to be updated t
 1. Select **Close**.
 
 
-##Updating the Sealed CSU to a new version
-To update the Sealed CSU to a newer version just obtain a newer version of the Sealed CSU installer then run the same command line arguments you used to first install the Sealed CSU. 
+## Database restores from UAT
+
+If you previously set up a sealed CSU using the steps above and then restored the HQ database from another environment, you must perform the following steps to make the sealed CSU functional again. 
+
+1. Go through the steps in [Update Commerce headquarters](#update-commerce-headquarters) to recreate the records. 
+    > [!NOTE]
+    > You must use the same values for **Channel Database ID** and **Channel Profile** that you used in the previous installation. If these values are different than the previous installation, you must rerun the installer. 
+2. Check your download sessions to see if the jobs are applying. 
+    - If the jobs are applying, then your CSU is working and you don't need to rerun the installer steps.
+    - If the download jobs aren't applying, first check the Windows Event logs to see if there are any obvious errors, then download a new configuration file from the channel database form and rerun the CSU installer using the new configuration file.
+    - 
+## Updating the Sealed CSU to a new version  
+
+To update the Sealed CSU to a newer version just obtain a newer version of the Sealed CSU installer file then run the same command line arguments you used to first install the Sealed CSU. 
 
 
 
