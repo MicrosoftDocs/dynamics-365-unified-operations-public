@@ -83,7 +83,7 @@ The rewaving process runs as a batch job that you must schedule to run as often 
 1. On the **Records to include** FastTab, you can define selection criteria for limiting the set of shipment lines to be processed.
     - Select **Filter** to open a standard query editor dialog where you can add or remove filter criteria.
     - The **Records to include** FastTab lists each field name and value that you've added using the query editor.
-    - The **Maximum number of retries** filter is always included here and its value is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system will stop trying and will mark that line as *failed*.
+    - The **Number of retries** filter is always included here and its value (5) is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system will stop trying and will mark that line as *failed*.
 
 ## Monitor the rewave process
 
