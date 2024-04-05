@@ -6,8 +6,7 @@ description: This article describes features that are either new or changed in t
 author: kfend
 ms.date: 03/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
