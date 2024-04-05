@@ -36,7 +36,7 @@ This entity provides information about the job function.
 
 ### Properties
 
-| **Property**<br><br>Physical name<br><br>_Type_ | Use | Description |
+| Property</br>**Physical name**</br>***Type***| Use | Description |
 | --- | --- | --- |
 | Description<br><br>mserp_Description<br><br>*String* | Read-only | Description of the Job function. |
 | JobFunctionId<br><br>mserp_JobFunctionId<br><br>*String* | Read-only | ID of the job function. |
