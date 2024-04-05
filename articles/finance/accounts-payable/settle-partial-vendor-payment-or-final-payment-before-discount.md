@@ -6,8 +6,7 @@ description: This article walks you through a scenario where partial payments ar
 author: angelad116
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -15,7 +14,7 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: angelading
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.assetid: 6b8e3420-b4c9-4e02-9588-598fe6d3df0d
 ms.search.region: Global
