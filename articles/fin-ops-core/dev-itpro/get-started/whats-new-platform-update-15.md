@@ -11,7 +11,7 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.custom: 
+
 ms.assetid: a765d51c-52d3-45c5-b578-63b5242c592a
 ---
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
