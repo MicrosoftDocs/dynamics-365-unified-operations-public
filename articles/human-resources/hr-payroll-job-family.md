@@ -34,8 +34,8 @@ This entity provides information about the job family.
 
 | Property</br>**Physical name**</br>***Type***| Use | Description |
 | --- | --- | --- |
-| JobFamilyId<br><br>mserp_JobFamilyId<br><br>*String* | Read-only | ID of the Job family. |
-| Description<br><br>mserp_Description<br><br>*String* | Read-only | Description of the job family. |
+| JobFamilyId<br>mserp_JobFamilyId<br>*String* | Read-only | ID of the Job family. |
+| Description<br>mserp_Description<br>*String* | Read-only | Description of the job family. |
 
 ## Example query for PayIntV1HcmJobFamilyEntity
 
