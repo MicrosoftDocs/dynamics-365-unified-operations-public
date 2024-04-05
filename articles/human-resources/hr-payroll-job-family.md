@@ -2,11 +2,10 @@
 # required metadata
 
 title: Job family entity
-description: This article provides details and an example query for the Job family entity in Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Job family entity in Microsoft Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/04/2024
 ms.topic: article
-
 
 # optional metadata
 
@@ -23,40 +22,41 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
->[Note!]
->The functionality noted in this article is available starting in Dynamics 365 Human Resources version 10.0.39.
+# Job family entity
 
-# Job family
+> [!NOTE]
+> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-### Description
-This entity provides information about the job family. 
+This article describes the Job family entity (PayIntV1HcmJobFamilyEntity) for Dynamics 365 Human Resources.
+
+## Description
+
+This entity provides information about the job family.
 
 ## Properties
 
-| Property</br>**Physical name**</br>***Type***| Use | Description |
-| --- | --- | --- |
-| JobFamilyId<br>mserp_JobFamilyId<br>*String* | Read-only | ID of the Job family. |
-| Description<br>mserp_Description<br>*String* | Read-only | Description of the job family. |
+| Property | Physical name | Type | Use | Description |
+|---|---|---|---|---|
+| JobFamilyId | mserp\_JobFamilyId | String | Read-only | The ID of the job family. |
+| Description | mserp\_Description | String | Read-only | The description of the job family. |
 
 ## Example query for PayIntV1HcmJobFamilyEntity
 
-Entity Name: mserp_payintv1hcmjobfamilyentities
-
 **Request**
 
+Entity name: mserp\_payintv1hcmjobfamilyentities
+
 ```http
-GET \[Organizaton URI\]/api/data/v9.1/mserp_payintv1hcmjobfamilyentities_
+GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmjobfamilyentities_
 ```
 
 **Response**
 
 ```json
-
-{  
-      "mserp_jobfamilyid": "Finance Jobs",  
-      "mserp_description": "Accounting, Payroll",  
-          }
-
+{
+    "mserp_jobfamilyid": "Finance Jobs",
+    "mserp_description": "Accounting, Payroll",
+}
 ```
