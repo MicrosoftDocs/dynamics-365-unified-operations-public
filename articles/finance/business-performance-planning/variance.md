@@ -6,8 +6,7 @@ description: This article describes how to use the Variance visual in the Busine
 author: ShielaSogge
 ms.date: 12/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 

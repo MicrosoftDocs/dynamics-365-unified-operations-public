@@ -4,15 +4,14 @@ description: This article describes features that are either new or changed in f
 author: sericks007
 ms.date: 10/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 
 ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
+
 ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW
 ---

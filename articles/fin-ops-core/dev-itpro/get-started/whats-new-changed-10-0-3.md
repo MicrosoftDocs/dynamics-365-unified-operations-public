@@ -4,15 +4,14 @@ description: This article describes features that are either new or changed in D
 author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 
 ms.dyn365.ops.version: Release 10.0.3
-ms.custom: 
+
 ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
 ROBOTS: NOINDEX, NOFOLLOW
 ---
