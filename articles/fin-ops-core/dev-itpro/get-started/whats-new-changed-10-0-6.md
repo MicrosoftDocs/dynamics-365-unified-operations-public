@@ -11,7 +11,7 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 
 ms.dyn365.ops.version: Release 10.0.6
-ms.custom: 
+
 ms.assetid: 
 ---
 # What's new or changed in finance and operations apps version 10.0.6 (November 2019)
