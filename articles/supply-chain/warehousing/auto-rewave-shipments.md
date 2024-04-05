@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 02/27/2024
+ms.date: 04/05/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -16,36 +16,48 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Automatic rewaving of nonallocated shipment lines automatically creates work orders for failed shipments. Therefore, those work orders don't have to be manually monitored and created.
+Automatic rewaving of nonallocated shipment lines automatically creates work orders for failed shipment lines. Therefore, those work orders don't have to be manually monitored and created.
 
-Use of this feature requires only that warehouse administrators schedule the *Auto add shipments to wave* job to run as often as it's required. Each time that the job runs, it checks for uncompleted work that can be automatically rewaved. This feature boosts operational efficiency by reducing downtime and initiating work that could not previously be completed.
+Use of this feature requires only that warehouse administrators schedule the *Auto add shipments to wave* job to run as often as it's required. Each time that the job runs, it checks for uncompleted work that can be automatically rewaved. This feature boosts operational efficiency by reducing downtime and initiating work that couldn't previously be completed.
 
-This feature is particularly beneficial for high-volume businesses, where it can significantly enhance operational speed and efficiency. Here are some examples:
+This feature is especially beneficial for high-volume businesses, where it can significantly enhance operational speed and efficiency. Here are some examples:
 
 - A retailer can support continuous packing and shipping operations, even during inventory shortages.
 - In high-velocity sales and production environments, goods can be sold before they reach the storage facility from the production line.
 
-## Standard wave workflow
+## Prerequisites
+
+To use the features described in this article, your system must meet the following requirements:
+
+- To run the *Auto add shipments to wave* batch job, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.37 or later.
+- To monitor the status of failed shipment lines using the **Failed shipment lines** page, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+
+## Wave and rewaving workflows
+
+### The standard wave workflow
 
 The wave management process involves three key steps:
 
-1. **Create a wave.** Group work orders, based on criteria such as the shipment date, priority, or item type, and add the group to a wave.
-1. **Process the wave.** Pick items from inventory, pack them, and prepare them for shipment.
-1. **Release the wave.** Ship the packed items to customers.
+1. **Create a wave** – Group work orders, based on criteria such as the shipment date, priority, or item type, and add the group to a wave.
+1. **Process the wave** – Pick items from inventory, pack them, and prepare them for shipment.
+1. **Release the wave** – Ship the packed items to customers.
 
-## Rewaving workflow
+### The rewaving workflow
 
-The rewaving workflow ensures continuous, uninterrupted warehouse operations, even when a shipment fails. It ends the need for manual monitoring of failed shipments and enables work to be automatically created and added to each wave. It proceeds in the following way:
+The rewaving workflow ensures continuous, uninterrupted warehouse operations, even when a shipment line fails. It ends the need for manual monitoring of failed shipment lines and enables work to be automatically created and added to each wave. It proceeds in the following way:
 
-1. **A shipment fails while a wave is being processed.** In this situation, the system removes the failed shipment from the wave and continues to process the rest of the wave. A failed shipment can occur if, for example, you don't have enough inventory at a particular picking location.
-1. **Create a work placeholder for the failed shipment.** The system creates a placeholder for the work that's required to process the failed shipment. It stores this placeholder in the *Failed shipment lines* table. (If this feature isn't used, a user must manually identify failed shipments and then create new work for them.)
-1. **Replenish inventory.** Inventory at the picking location is replenished according to standard warehouse operations. That inventory then becomes available for shipment in the next wave.
-1. **Automatically rewave.** At the next scheduled run of the *Auto add shipments to wave* batch job, the system checks for previously failed shipments and creates work for them.
-1. **Add work to the next wave.** The *Auto add shipments to wave* batch job adds the newly created work to the next wave for processing.
-1. **Control and remove placeholders for completed shipments.** The *Auto add shipments to wave* batch job ends by checking the *Failed shipment lines* menu table for records that were successfully processed (that is, their status is no longer *Open*) and that the *Shipment* table includes a shipment for. These records indicate shipments that were successfully rewaved. The system cleans up these placeholders by removing them from the table.
--  In the *Auto add shipments to wave* tab, in the *Records to include* header, there is a field named *Maximum number of retries*. This counter has a default value and cannot be changed. It serves as the maximum number of tries to re-wave a shipment. As this is set to 5, this means that a shipment can maximally be re-waved 5 times.
+1. **A shipment line fails while a wave is being processed** – In this situation, the system removes the failed shipment line from the wave and continues to process the rest of the wave. A failed shipment line can occur if, for example, you don't have enough inventory at a particular picking location.
+1. **Create a work placeholder for the failed shipment line** – The system creates a placeholder for the work that's required to process the failed shipment. It stores this placeholder in the 'WHSWaveProcessingRemovedShipment' table. (If you aren't using this feature on your system, a user must manually identify failed shipments and then create new work for them.)
+1. **Replenish inventory** – Inventory at the picking location is replenished according to standard warehouse operations. That inventory then becomes available for shipment in the next wave.
+1. **Automatically rewave** – At the next scheduled run of the *Auto add shipments to wave* batch job, the system checks the 'WHSWaveProcessingRemovedShipment' table for previously failed shipments and creates work for them.
+1. **Add work to the next wave** – The *Auto add shipments to wave* batch job adds the newly created work to the next wave for processing.
+1. **Control and remove placeholders for completed shipment lines** – The *Auto add shipments to wave* batch job ends by checking the 'WHSWaveProcessingRemovedShipment' table for records that were successfully processed (that is, their status is no longer *Open*) and that the *Shipment* table includes a shipment for. These records indicate shipment lines that were successfully rewaved. The system cleans up these placeholders by removing them from the table. The system will try to rewave a shipment line up to five times. If a line fails on the fifth attempt, the system stops trying and marks that line as *failed*.
 
-## Enable wave processing in batches to allow for rewaving
+## Enable rewaving for your system
+
+To enable rewaving for your system, you must set your system to process waves in batches and schedule the *Auto add shipments to wave* batch job, as described in the following subsections.
+
+### Enable wave processing in batches to allow for rewaving
 
 Before you can use rewaving, your system must be set up to process waves in batch.
 
@@ -53,7 +65,7 @@ Before you can use rewaving, your system must be set up to process waves in batc
 1. On the **General** tab, on the **Wave Processing** FastTab, set the **Process waves in batch** option to *Yes*.
 1. On the Action Pane, select **Save** to apply the new configuration.
 
-## Schedule the Auto add shipments to wave batch job
+### Schedule the Auto add shipments to wave batch job
 
 The rewaving process runs as a batch job that you must schedule to run as often as is required for your system. Follow these steps to set up the batch job.
 
@@ -68,16 +80,18 @@ The rewaving process runs as a batch job that you must schedule to run as often 
 1. Select **OK** to save your schedule for the job.
 1. Select **OK** to create the job.
 
-1. On the **Records to include** FastTab, you can define selection criteria for limiting the set of shipments to be processed.
-     -Select **Filter** to open a standard query editor dialog where you can add or remove criteria.
-     -The **Records to include** FastTab lists each field name and value that you've added using the query editor.
-     -The **Maximum retry number** filter is always included here and its value is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system will stop trying and will mark that line as *failed*.
+1. On the **Records to include** FastTab, you can define selection criteria for limiting the set of shipment lines to be processed.
+    - Select **Filter** to open a standard query editor dialog where you can add or remove filter criteria.
+    - The **Records to include** FastTab lists each field name and value that you've added using the query editor.
+    - The **Maximum number of retries** filter is always included here and its value is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system will stop trying and will mark that line as *failed*.
 
 ## Monitor the rewave process
 
-To monitor shipments that has to be re-waved, go to **Warehouse Management** \> **Shipments** \> **Failed Shipment Lines**. 
+### Monitor failed shipment lines
 
-On this page, users can monitor their failed shipments and see what specific shipment IDs failed, what their current status is, how many times system has tried to re-wave it, and the reason for the failure. 
+To monitor shipment lines that need to be rewaved, go to **Warehouse Management** \> **Shipments** \> **Failed shipment lines**. For each failed shipment line, this page lists the line ID, its current status, the reason for the failure, and how many times the system tried to rewave it.
+
+### Monitor batch job status
 
 To monitor the status of all batch jobs, adjust their schedules, and fix any issues that arise, follow these steps.
 
