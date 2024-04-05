@@ -44,7 +44,7 @@ If your system doesn't already include the features that is described in this ar
 
 Before you archive inventory transactions, you should consider the following business scenarios, because they will be affected by the operation:
 
-- When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as archived. To review the archived transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transactions archive**.
+- When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as archived. To review the archived transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transaction archive**.
 - Inventory closing can't be canceled for archived periods. 
 - Standard cost conversion can't be done for archived periods. 
 - Inventory reports that are sourced from inventory transactions will be affected when you archive inventory transactions. These reports include the inventory aging report and inventory value reports.
@@ -65,17 +65,17 @@ To archive inventory transactions, follow these steps.
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Inventory transaction archive**.
 
-    The **Inventory transactions archive** page appears and shows a list of archived process records.
+    The **Inventory transaction archive** page appears and shows a list of archived process records.
 
-    ![Inventory transactions archive page.](media/archive-inventory-empty.png "Inventory transactions archive page")
+    ![Inventory transaction archive page.](media/archive-inventory-empty.png "Inventory transaction archive page")
 
-1. On the Action Pane, select **Inventory transactions archive** to create an inventory transaction archive.
-1. In the **Inventory transactions archive** dialog box, on the **Parameters** FastTab, set the following fields:
+1. On the Action Pane, select **Inventory transaction archive** to create an inventory transaction archive.
+1. In the **Inventory transaction archive** dialog box, on the **Parameters** FastTab, set the following fields:
 
     - **From date in closed ledger period** – Select the earliest transaction date to include in the archive.
     - **To date in closed ledger period** – Select the latest transaction date to include in the archive.
 
-    ![Inventory transactions archive dialog box.](media/archive-inventory-dates.png "Inventory transactions archive dialog box")
+    ![Inventory transaction archive dialog box.](media/archive-inventory-dates.png "Inventory transaction archive dialog box")
 
     > [!NOTE]
     > Only periods that meet the [prerequisites](#prerequisites) will be available for selection.
@@ -84,13 +84,13 @@ To archive inventory transactions, follow these steps.
 1. Select **OK**.
 1. You receive a message that prompts you to confirm that you want to continue. Read the message carefully, and then select **Yes** if you want to continue.
 
-    You receive a message that states that your inventory transactions archive job has been added to the batch queue. The job will now start to archive inventory transactions from the selected period.
+    You receive a message that states that your inventory transaction archive job has been added to the batch queue. The job will now start to archive inventory transactions from the selected period.
 
 ## View archived inventory transactions
 
-The **Inventory transactions archive** page shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status.
+The **Inventory transaction archive** page shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status.
 
-![Archiving history on the Inventory transactions archive page.](media/archive-inventory-full.png "Archiving history on the Inventory transactions archive page")
+![Archiving history on the Inventory transaction archive page.](media/archive-inventory-full.png "Archiving history on the Inventory transaction archive page")
 
 In the drop-down list at the top of the page select one of the following values to filter the archives that are shown in the grid:
 

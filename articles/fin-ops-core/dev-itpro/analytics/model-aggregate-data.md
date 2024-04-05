@@ -260,7 +260,7 @@ Model a KPI definition in Visual Studio by using the aggregate measurement you d
 Next you will preview the KPI definition in the client.
 
 1. Right-click **FMTutorial**, and then click **Re-Build**. On completion of the build, select the **Synchronize ... database** option.
-2. Open Internet Explorer, and navigate to your Rainier instance base URL.
+2. Open Microsoft Edge, and navigate to your Rainier instance base URL.
 3. Navigate to the **Reservation Management workspace** under **App links** &gt; **Fleet Management** &gt; **Workspaces** &gt; **Reservation Management**.
 4. Select the KPI tile **Total Revenue**. KPI details page for T**otal Revenue** KPI will be displayed.
 5. To navigate to the newly defined KPI, select the **Show list** icon on top left. From the list of KPIs shown, select **FMTRevenuePerRental**.
