@@ -37,9 +37,9 @@ Learn more about extensibility by reading the resources listed on the [Extensibi
 
 Extensibility requests are logged using a specific project in LCS. Logged requests are collected under that same project. We recommend that you log related requests under the same LCS project as this helps maintain a holistic view on all requests for a specific solution or an implementation. Microsoft then further identifies logged requests by the organization name that is associated with the LCS account.
 
-In your LCS project, at the top of the page, select the hamburger icon and then click **Support** menu item.
+In your LCS project, at the top of the page, select the hamburger icon and then click **Work items** menu item.
 
-![Extensibility support requests.](media/extensibility-support-requests.png)
+![Extensibility support requests.](media/extensibility-work-items.jpg)
 
 You can view the list of logged extensibility support requests and their status. Click the request ID to review details of the logged request. 
 
