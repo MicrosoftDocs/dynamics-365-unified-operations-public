@@ -32,7 +32,7 @@ This entity provides information about the job family.
 
 ## Properties
 
-| **Property**<br><br>Physical name<br><br>_Type_ | **Use** | **Description** |
+| Property</br>**Physical name**</br>***Type***| Use | Description |
 | --- | --- | --- |
 | JobFamilyId<br><br>mserp_JobFamilyId<br><br>*String* | Read-only | ID of the Job family. |
 | Description<br><br>mserp_Description<br><br>*String* | Read-only | Description of the job family. |
