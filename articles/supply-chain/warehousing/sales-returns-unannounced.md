@@ -177,7 +177,7 @@ To enable workers to process unannounced returns, you must create a separate mob
 
 ## Print return labels
 
-When you use a *Return details* return process, you must print a return label for each shipment and include that label with the shipment. Printing options are established by the *container packing policy* that applies for each shipment. <!--KFM: Explain how the policy gets associated with an outgoing shipment or order. Briefly describe the standard process for how the labels get printed (triggered during packing, or what?), and mention that labels can be reprinted later if needed. -->
+When you use a *Return details* return process, you must print a return label for each shipment and include that label with the shipment. Printing options are established by the *container packing policy* that applies for each shipment. Depending on how you set up your system, return labels are typically printed as part of the container closing process, though you can also print or reprint them manually for a selected return details record at any time.
 
 The return label includes the shipping address to your returns warehouse and a barcode containing the return details record ID, which warehouse workers can scan when the package arrives at your warehouse.
 
