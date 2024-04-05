@@ -2,11 +2,10 @@
 # required metadata
 
 title: Job task entity
-description: This article provides details and an example query for the Job task entity in Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Job task entity in Microsoft Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/04/2024
 ms.topic: article
-
 
 # optional metadata
 
@@ -23,41 +22,43 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
->[Note!]
->The functionality noted in this article is available starting in Dynamics 365 Human Resources version 10.0.39.
+# Job task entity
 
-# Job task
+> [!NOTE]
+> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes the entity PayIntV1HcmJobTaskEntity for Dynamics 365 Human Resources.
+This article describes the Job task entity (PayIntV1HcmJobTaskEntity) for Dynamics 365 Human Resources.
 
-### Description
-This entity provides information about the job task. 
+## Description
 
-### Properties
-| Property</br>**Physical name**</br>***Type*** | Use | Description |
-| --- | --- | --- |
-|Description</br>mserp_Description</br>*String*|	Read-only|	Description of the job task|
-|JobTaskId </br>mserp_JobTaskId</br>*String*	|Read-only|	ID of the job task |
-|Note</br>mserp_Note</br>*String*|	Read-only|	Notes for a job task|
+This entity provides information about the job task.
 
-## Example query for Job task entity
+## Properties
+
+| Property | Physical name | Type | Use | Description |
+|---|---|---|---|---|
+| Description | mserp\_Description | String | Read-only| The description of the job task. |
+| JobTaskId | mserp\_JobTaskId | String | Read-only | The ID of the job task. |
+| Note | mserp\_Note | String | Read-only | Notes for the job task. |
+
+## Example query for PayIntV1HcmJobTaskEntity
 
 **Request**
 
-Entity Name: mserp_payintv1hcmjobtaskentities
+Entity name: mserp\_payintv1hcmjobtaskentities
 
 ```http 
-GET [Organizaton URI]/api/data/v9.1/mserp_payintv1hcmjobtaskentities
+GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmjobtaskentities
 ```
 
 **Response**
+
 ```json
 {
-      "mserp_description": "Customer calls",
-      "mserp_jobtaskid": "Customer calls",
-      "mserp_note": "This job includes communication with the customers, and stakeholders.",
-    }
+    "mserp_description": "Customer calls",
+    "mserp_jobtaskid": "Customer calls",
+    "mserp_note": "This job includes communication with the customers, and stakeholders.",
+}
 ```
-
