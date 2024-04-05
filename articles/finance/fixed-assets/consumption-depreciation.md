@@ -4,10 +4,10 @@
 title: Consumption depreciation
 description: This article gives an overview of the Consumption method of depreciation.
 author: moaamer
-ms.date: 06/20/2017
+ms.date: 04/05/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
+ms.custom: evergreen
 
 # optional metadata
 
@@ -15,7 +15,6 @@ ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.assetid: d25a681f-49a5-4bfc-aa76-1c6373e35dd8
 ms.search.region: Global
