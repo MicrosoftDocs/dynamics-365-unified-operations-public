@@ -38,9 +38,9 @@ This entity provides information about the job function.
 
 | Property</br>**Physical name**</br>***Type***| Use | Description |
 | --- | --- | --- |
-| Description<br><br>mserp_Description<br><br>*String* | Read-only | Description of the Job function. |
-| JobFunctionId<br><br>mserp_JobFunctionId<br><br>*String* | Read-only | ID of the job function. |
-| RegulatoryJobCategory<br><br>mserp_RegulatoryJobCategory<br><br>*Enum* | Read-only | Category of the job. |
+| Description<br>mserp_Description<br>*String* | Read-only | Description of the Job function. |
+| JobFunctionId<br>mserp_JobFunctionId<br>*String* | Read-only | ID of the job function. |
+| RegulatoryJobCategory<br>mserp_RegulatoryJobCategory<br>*Enum* | Read-only | Category of the job. |
 
 ## Example query for PayIntV1HcmJobFunctionEntity
 
