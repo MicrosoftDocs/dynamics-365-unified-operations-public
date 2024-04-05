@@ -4,8 +4,7 @@ description: This article describes features that are in preview in Microsoft Dy
 author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
