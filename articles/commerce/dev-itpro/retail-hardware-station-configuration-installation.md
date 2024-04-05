@@ -85,7 +85,7 @@ This article explains how to configure, download, and install the legacy Commerc
     > [!NOTE]
     > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
-6. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
+6. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 7. If needed for mass deployment or command line deployment, repeat the above steps for the configuration file download, which is a button next to the **Download** button that you previously selected.
 
     > [!NOTE]
@@ -188,7 +188,7 @@ Current security standards state that the following options should be set in a p
 - The computer that is running the Store Commerce app trusts the certificate that is used on the computer that runs Retail hardware station.
 
     - To verify this setup, in a web browser, go to the following URL: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
-    - This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock symbol appears in the address bar. When you select this symbol, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
+    - This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Microsoft Edge, a lock symbol appears in the address bar. When you select this symbol, Microsoft Edge verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
 
 - On the computer that runs Retail hardware station, the port that will be used by the hardware station is opened in the firewall.
 - Retail hardware station has properly installed merchant account information through the Install merchant information tool that runs at the end of the Retail hardware station installer.

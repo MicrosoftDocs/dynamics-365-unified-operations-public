@@ -73,7 +73,7 @@ In this section, we'll walk you through the process of exporting data displayed 
 
 ### Create an analysis report based on all rentals in Fleet Management that are marked as complete
 
-1. Open Internet Explorer, and navigate to your instance base URL and sign in.
+1. Open Microsoft Edge, and navigate to your instance base URL and sign in.
 
     1. On the cloud environment, the base URL is obtained from LCS
     2. On a local VM, the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.

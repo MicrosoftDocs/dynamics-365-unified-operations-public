@@ -42,7 +42,7 @@ This article reviews Microsoft Office integration concepts and features. The int
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products.
 
 ## Excel Data Connector add-in
-Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. 
+Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Microsoft Edge browser window. 
 
 [![Screenshot of Excel Data Connector app.](./media/1_office.png)](./media/1_office.png)
 
