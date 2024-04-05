@@ -6,9 +6,8 @@ author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
 ms.date: 11/29/2023
-ms.topic: data model
-ms.prod: 
-ms.technology:
+ms.topic: 
+
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
