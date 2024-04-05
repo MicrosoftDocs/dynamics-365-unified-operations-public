@@ -40,7 +40,7 @@ This entity provides information about the job type.
 | Property | Physical name | Type | Use | Description |
 |---|---|---|---|---|
 | Description | mserp\_description | String | Read-only | The description of the job type. |
-| exemptstatus | mserp\_exemptstatus | Enum | Read-only| A value that indicates whether the job type is exempt or not exempt from Fair Labor Standards Act (FLSA) coverage, or that indicates that FLSA doesn't apply to the job type. |
+| exemptstatus | mserp\_exemptstatus | Enum | Read-only| A value that indicates whether the job type is exempt or not exempt from Fair Labor Standards Act (FLSA) coverage. Alternatively, a value that indicates that FLSA doesn't apply to the job type. |
 | JobTypeId | mserp\_jobtypeid | String | Read-only | The ID of the job type. |
 | PaidHourly | mserp\_PaidHourly | Enum | Read-only | A value that indicates whether the job is paid hourly. |
 | CreatedBy | mserp\_System\_CreatedBy | Date time offset | Read-only | Created-by details for the job type. |
