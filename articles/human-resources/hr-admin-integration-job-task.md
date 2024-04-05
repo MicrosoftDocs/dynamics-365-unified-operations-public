@@ -61,4 +61,3 @@ GET [Organizaton URI]/api/data/v9.1/mserp_payintv1hcmjobtaskentities
     }
 ```
 
-This article describes the Payroll employee entity for Dynamics 365 Human Resources.
