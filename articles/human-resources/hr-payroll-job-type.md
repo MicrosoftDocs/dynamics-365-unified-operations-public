@@ -23,6 +23,10 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
+>[Note!]
+>The functionality noted in this article is available starting in Dynamics 365 Human Resources version 10.0.39.
+
+
 # Job type
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
