@@ -36,8 +36,7 @@ This entity provides information about the job type.
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
 |Description</br>mserp_description </br>*String*|	Read-only|	Description of the job type.   |
-|exemptstatus</br>mserp_exemptstatus</br>*Enum*|	Read-only|	Indicates whether the job type is exempt or non-exempt from the Fair labor standards Act (FLSA) coverage or indicate that the act doesn't apply 
-to the job type.|
+|exemptstatus</br>mserp_exemptstatus</br>*Enum*|	Read-only|	Indicates whether the job type is exempt or non-exempt from the Fair labor standards Act (FLSA) coverage or indicate that the act doesn't apply to the job type.|
 |JobTypeId</br>mserp_jobtypeid</br>*String*|Read-only|	ID of the job type.|
 |PaidHourly</br>mserp_PaidHourly</br>*Enum*|	Read-only	|Indicate if the job is paid hourly.|
 |CreatedBy</br>mserp_System_CreatedBy</br>*Date time offset*|	Read-only|	Details of the job type created by.|
