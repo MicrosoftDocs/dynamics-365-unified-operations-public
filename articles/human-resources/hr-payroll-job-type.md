@@ -25,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Job type
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes the entity PayIntV1HcmJobTypeEntity for Dynamics 365 Human Resources.
