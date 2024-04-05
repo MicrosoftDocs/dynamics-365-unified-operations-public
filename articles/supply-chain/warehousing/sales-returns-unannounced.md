@@ -27,9 +27,8 @@ This article explains how to set up Supply Chain Management to support unannounc
 To use the features described in this article, your system must meet the following requirements:
 
 - To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
+- To use the integration with SPS, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
 - If you also want to print license plate labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
-
- <!--KFM: Find out whether SPS integration also requires 10.0.40 -->
 
 ## Receiving process for unannounced returns
 
@@ -176,17 +175,48 @@ To enable workers to process unannounced returns, you must create a separate mob
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add the new menu items to an appropriate place in your mobile device menu structure.
 
+## Print return labels
+
+When you use a *Return details* return process, you must print a return label for each shipment and include that label with the shipment. Printing options are established by the *container packing policy* that applies for each shipment. <!--KFM: Explain how the policy gets associated with an outgoing shipment or order. Briefly describe the standard process for how the labels get printed (triggered during packing, or what?), and mention that labels can be reprinted later if needed. -->
+
+The return label includes the shipping address to your returns warehouse and a barcode containing the return details record ID, which warehouse workers can scan when the package arrives at your warehouse.
+
+Follow these steps to configure the label printing options for a container packing policy:
+
+1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container packing policies**.
+1. Select or create the container packing policy that you want to set up.
+1. On the **Container manifest** FastTab, make the following settings:
+    - **Automatic manifest at container close** – Set to *Yes*.
+    - **Manifest requirements for container** – Set to *Transportation management*.
+
+1. On the **Carrier label printing** FastTab, make the following settings:
+    - **Print container shipping label rule** – Select the rule for printing outbound shipping labels. Choose one of the following options:
+        - *Never* – Users can close containers without printing a shipping label.
+        - *Always* – A shipping label is required. Users can't close the container unless the system is able to retrieve a label. <!--KFM: What do we mean by "retrieve"? Same as print? -->
+        - *If setup exists* – For containers where a shipping label setup exists <!--KFM: Is the setup associated with each container, or with something else? -->, the system must retrieve the required label before users can close the container. For containers where no shipping label setup exists, users can close the container without printing a label.
+    - **Print container return shipping label rule** – Select the rule for printing return labels to be included in each container. Choose one of the following options:
+        - *Never* – Users can close containers without printing a return label.
+        - *Always* – A return label is required. Users can't close the container unless the system is able to retrieve a label.
+        - *If setup exists* – For containers where a return label setup exists, the system must retrieve the required label before users can close the container. For containers where no return label setup exists, users can close the container without printing a label.
+    - **Printer name** – Select the ZPL printer where the system should print shipping and/or return labels when using this container packing policy.
+
+Follow these steps to manually print or reprint a return label for a return details record:
+
+1. Go to **Warehouse management** \> **Inquiries and reports** \> **Return details**.
+1. On the list pane, select the return details record that you want to print a label for.
+1. On the Action Pane, select **Print** \> **Return shipping label**.
+1. The printer used is the one specified in the relevant *container packing policy* associated with the **Container ID** listed for the return details record.
+
 ## Integrate return label printing with small parcel shipping
 
-<!--KFM:
+Small parcel shipping (SPS) integration helps streamline the return process. It enables you to print return labels for small parcel shipping carriers and communicate through carrier APIs. Return labels make it easy for your customers to return items, with return shipping costs automatically handled by the SPS carrier.
 
-Introduce what this means and why it's useful (e.g., return shipping costs automatically handled by SPS provider (but I suppose ultimately paid by "us", the vendor), so customer doesn't have to pay). 
+Follow these steps to enable return details with SPS integration:
 
-Explain what the label contains (I suppose "our" postage address, and a bar code with the return-details record ID (or RMA-order ID?), maybe more (such as a bar code that the SPS provider can scan, I dunno)).
+1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. On the **Shipping carriers** FastTab, set **Enable shipping label request type** to *Yes*. This setting adds a new field to the shipping carrier service, which lets you customize the request sent to the carrier. <!--KFM: Where is this new field (page name)? What is the field called (label name)? How do we use it? How/why might I "customize" this? Should we add something about this to the existing SPS topic? It isn't clear how this helps us achieve the goals outlined in the intro. -->
 
-Then describe/summarize how to set up the integration--mostly just refer to https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/small-parcel-shipping. If there are any differences or additional steps, call them out here. If that topic requires an update (maybe there's a new setting, I dunno), then go ahead and edit that topic too (with link back here), so it remains the go-to source for setting up SPS.
-
--->
+For more information about how to set up SPS integration, see [Small parcel shipping](small-parcel-shipping.md).
 
 ## Example scenarios
 
@@ -228,6 +258,8 @@ You must have number sequences that generate unique return IDs and load line inv
 
 #### Enable unannounced return features
 
+Follow these steps to enable the features that are required to support unannounced returns.
+
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
 1. On the **Number sequences** tab, set the **Number sequence code** field to *ReturnID*.
 1. Set **Number sequence code** field to *LLIP*.
@@ -238,6 +270,8 @@ You must have number sequences that generate unique return IDs and load line inv
 For information about how to configure these settings, see the [Enable unannounced returns](#enable-unannounced-returns) section.
 
 #### Create return item policies
+
+Follow these steps to create return item policies for the items that are used in the scenarios.
 
 1. Go to **Warehouse management** \> **Setup** \> **Return items** \> **Return item policies**.
 1. Add a return item policy to define the conditions under which the item that's used in the scenarios can be returned.
@@ -251,12 +285,16 @@ For more information, see the [Set up return item policies](#set-up-return-item-
 
 #### Set up return item receiving policies
 
+Follow these steps to create return item receiving policies for the scenarios.
+
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**.
 1. Add two return item receiving policies: one for the *Blind return* process and one for the *Return details* process.
 
 For more information, see the [Create return item receiving policies](#create-return-item-receiving-policies) section.
 
 #### Set up mobile device menu items and menus
+
+Follow these steps to create mobile device menu items for the scenarios.
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. Create two mobile device menu items for handling unannounced returns: one for the *Blind return* process and one for the *Return details* process.
