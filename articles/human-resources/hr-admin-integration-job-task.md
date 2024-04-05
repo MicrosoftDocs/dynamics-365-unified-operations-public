@@ -3,7 +3,7 @@
 
 title: Job task entity
 description: This article provides details and an example query for the Job task entity in Dynamics 365 Human Resources.
-author: 
+author: jcart
 ms.date: 04/04/2024
 ms.topic: article
 
