@@ -6,8 +6,7 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.date: 12/13/2023
 ms.topic: faq
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
