@@ -36,9 +36,9 @@ This entity is the base entity that provides information about the job.
 
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
-| JobId<br><br>mserp_JobId<br><br>*String* | Read-only | The ID of the job. |
-| MaximumPositions<br><br>mserp_MaximumPositions<br><br>*Integer* | Read-only | Maximum allowed positions for a job. |
-| AllowUnlimitedPositions<br><br>mserp_AllowUnlimitedPositions<br><br>*NoYes* | Read-only | Allow unlimited positions for a job. |
+| JobId<br>mserp_JobId<br>*String* | Read-only | The ID of the job. |
+| MaximumPositions<br>mserp_MaximumPositions<br>*Integer* | Read-only | Maximum allowed positions for a job. |
+| AllowUnlimitedPositions<br>mserp_AllowUnlimitedPositions<br>*NoYes* | Read-only | Allow unlimited positions for a job. |
 
 ## Example query for PayIntV1HcmJobBaseEntity
 
