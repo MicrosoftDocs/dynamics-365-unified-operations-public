@@ -81,8 +81,7 @@ The changes in the inventory on-hand that happen when processing *Inbound and Ou
 
 You can use the **Warehouse management \> Periodic tasks \> Create external inventory adjustment journals** process to generate the real *Inventory adjustment journals* that will be used to update the on-hand inventory and thus keeping it synchronized between the two legal entities.
 
-To automatically post the created *Inventory adjustment journals* use the **Inventory management \> Periodic tasks \> CDS integration \> Post integration inventory journals**
-<!-- CHECK-perlynne if we got the folder name updated for .40 -->
+To automatically post the created *Inventory adjustment journals* use the **Warehouse management \> Periodic tasks \> Post external inventory adjustment journals**
 
 > [!WARNING]
 > If the *Source systems* are related to *External warehouse management systems*, turn off the *Enable warehouse inventory update logs* for the *Inbound and Outbound shipment orders*. This will prevent your inventory on-hand from being updated by inventory adjustment journal processing.
@@ -108,10 +107,6 @@ To use the Warehouse management only mode in the way shown above, you need to ha
 In the *WOM* legal entity you create a [*Source system*](wms-only-mode-setup.md#source-systems) - let's call this *SS-LE1* to handle the shipment orders and inventory on-hand update processes.
 
 In legal entity *LE1* you need to set up an *External warehouse management system* with the type `Legal entity` and link it to the [*Source system*](wms-only-mode-setup.md#source-systems) *SS-LE1* in the *WOM* legal entity. You do this setup in the **Warehouse management \> Setup \> Warehouse management integration \> External warehouse management systems** page.
-
-<!-- 10.0.41 
-A *External warehouse management system* definition creates a process automation background task automatically to handle the [message processing](../supply-chain-dev/message-processor.md) for the *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* message types. You can modify the default settings of the *Process external warehouse shipment orders updates* background task that is set to run every minute by default by going to [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
--->
 
 You can now go to the *LE1* **Warehouse management \> Setup \> Warehouse \> Warehouses** page and choose the warehouses that you want to handle externally and specify the *External warehouse management system* and the *External warehouse* name from *WOM*. You should select a *Default location* that does not use license plates. This location will be used for all the inventory changes from the external warehouses in the *LE1* legal entity.
 > [!NOTE]
