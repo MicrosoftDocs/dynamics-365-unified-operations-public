@@ -6,6 +6,7 @@ description: This article describes the Purchase order tab of the Inventory post
 author: rachelprofitt
 ms.date: 03/25/2024
 ms.topic: overview
+ms.reviewer: twheeloc
 
 
 # optional metadata

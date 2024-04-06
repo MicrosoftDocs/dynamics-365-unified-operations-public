@@ -6,8 +6,7 @@ description: This article describes how to install the business performance plan
 author: ShielaSogge
 ms.date: 11/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 
