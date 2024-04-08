@@ -41,18 +41,18 @@ The following illustration highlights the elements of the inbound process.
 Here's a high-level description of the inbound process:
 
 1. *ERP*: An external system submits an *inbound shipment order* message to Supply Chain Management.
-1. *WOM: Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. *WOM: Inbound loads are created in one of four ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
+1. *WOM*: Supply Chain Management processes the message in Warehouse management only mode and creates orders.
+1. *WOM*: Inbound loads are created in one of four ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
 
     - Manually, by using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
     - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
     - Automatically during the Warehouse Management mobile app receiving process
 
-1.*WOM: Warehouse workers uses the Warehouse Management mobile app to *register* the inbound shipment transactions.
-1. *WOM: Supply Chain Management runs [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts), and trigger *business events* for the external systems.
+1.*WOM*: Warehouse workers uses the Warehouse Management mobile app to *register* the inbound shipment transactions.
+1. *WOM*: Supply Chain Management runs [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts), and trigger *business events* for the external systems.
 1. *ERP*: The external systems read and use the [shipment receipt](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) data for further processing. For example, if purchase orders are associated with the inbound shipment orders in the external system, this processing involves purchase order invoicing.
-1. *WOM: Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+1. *WOM*: Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
 

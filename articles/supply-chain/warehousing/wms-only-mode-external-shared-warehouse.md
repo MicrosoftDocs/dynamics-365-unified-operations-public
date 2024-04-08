@@ -58,7 +58,7 @@ The following illustration highlights the elements of the outbound process.
 
 Here's a high-level description of the outbound process:
 
-1. *LE1*: *Sales order* gets created and released to the warehouse which will create shipments and *External warehouse outbound shipment order requests*, resulting in *Outbound shipment order messages* getting delivered to the *WOM* legal entity.
+1. *LE1*: *Sales order* gets created and released to the warehouse which will create shipments and **Warehouse management \> External warehouse shipment orders \> External warehouse outbound shipment order requests**, resulting in *Outbound shipment order messages* getting delivered to the *WOM* legal entity.
 1. *WOM*: Processing of the *Outbound shipment order messages* resulting in the creation of *Outbound shipment orders*.
 1. *WOM*: Inventory reservations are created either manually or automatically (depending on your configuration).
 1. *WOM*: The orders are released for further warehouse processing, either manually or automatically. If you're using outbound load planning processes, you can create loads by using the outbound load planning workbench before you release the orders.
@@ -73,7 +73,7 @@ For a more detailed description of this process and the related processes, see [
 > [*Allow load split during ship confirm*](confirm-and-transfer.md) for outbound loads is not supported for the above flow in the *WOM* legal entity.
 
 > [!NOTE]
-> When you release orders/loads to warehouse in the *LE1* legal entity, the shipments that are created will be locked until order data from the *WOM* legal entity is returned. If this does not happen or there are other problems, you can get update rights for the shipments by choosing **Claim processing ownership** on the shipments. Please ensure that only admin roles use this action.
+> When you release orders/loads to warehouse in the *LE1* legal entity, the shipments that are created will be locked having the **Outbound shipment processing ownership** equal *External* until order data from the *WOM* legal entity is returned. You can see this on the If this does not happen or there are other problems, you can get update rights for the shipments by choosing **Claim processing ownership** on the shipments. Please ensure that only admin roles use this action.
 
 ## On-hand adjustments
 
@@ -83,23 +83,14 @@ You can use the **Warehouse management \> Periodic tasks \> Create external inve
 
 To automatically post the created *Inventory adjustment journals* use the **Warehouse management \> Periodic tasks \> Post external inventory adjustment journals**
 
-> [!WARNING]
-> If the *Source systems* are related to *External warehouse management systems*, turn off the *Enable warehouse inventory update logs* for the *Inbound and Outbound shipment orders*. This will prevent your inventory on-hand from being updated by inventory adjustment journal processing.
-
 :::image type="content" source="media/wms-only-shared-warehouse-inventory-process.svg" alt-text="Internal process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inventory-process.svg":::
 
+### <a name="warehouse-inventory-update-logs"></a>Warehouse inventory update logs
 
-## <a name="warehouse-inventory-update-logs"></a>Warehouse inventory update logs
+The Warehouse inventory update log (at **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**) collects all the inventory transaction updates that lead to on-hand updates that are of interest for the related legal entities. For example, you might want to handle the information about inventory status changes.
 
-For integrations that require very quick on-hand inventory synchronization processes, you can use the Warehouse inventory update log (at **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
-
-To keep the external systems updated about inventory transactions updates that are related to inbound and outbound shipment orders, enable the **Source systems** **Enable warehouse inventory update logs** parameter for both inbound and outbound shipment orders.
-
-You can view the update log data in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** page
-
-> [!IMPORTANT]
-> Be sure to uptake the updates in the external systems in such a way that they don't cause double updates in combination with the data that's used as part of the [*Shipment receipts*](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-shared-and-external-detail-use.md#shipment-packing-slips) messages when the **Enable warehouse inventory update logs** parameter is enabled.
-
+> [!WARNING]
+> If the *Source systems* are related to *External warehouse management systems*, turn off the *Enable warehouse inventory update logs* for the *Inbound and Outbound shipment orders*. This will prevent your inventory on-hand from being updated by inventory adjustment journal processing.
 
 ## Setup example using external shared warehouse processing in D365
 
@@ -114,7 +105,7 @@ You can now go to the *LE1* **Warehouse management \> Setup \> Warehouse \> Ware
 
 ### Product master and reference data
 
-You need to have all the required warehouse management setup in the *WOM* legal entity defined for any warehouse management process, including the product master data. Note that the same *Product*/*Product variant* is used for the *Released products* in all legal entities, so you must use a separate *Source system* as the source for managing the product master data, including creating the necessary [*Source system items*](wms-only-mode-exchange-data.md#master-data) data if you share products between multiple sales subsidiaries/legal entities. In this example, we will create a new *Source system* called *PIM-D365* and make sure to assign this *Source system* as the *Product master source system* for the *SS-LE1* source system. You also need to make sure that the products have a *Tracking dimension group* with the *Owner* dimension enabled. This makes it possible to track the ownership of the inventory for each of the related legal entities.
+You need to have all the required warehouse management setup in the *WOM* legal entity defined for any warehouse management process, including the product master data. Note that the same *Product*/*Product variant* can be used for the *Released products* in all legal entities, in this case you must use a separate *Source system* as the source for managing the product master data, including creating the necessary [*Source system items*](wms-only-mode-exchange-data.md#master-data) data if you share products between multiple sales subsidiaries/legal entities. In this example, we will create a new *Source system* called *PIM-D365* and make sure to assign this *Source system* as the *Product master source system* for the *SS-LE1* source system. You also need to make sure that the products have a *Tracking dimension group* with the *Owner* dimension enabled. This makes it possible to track the ownership of the inventory for each of the related legal entities.
 You don't have to turn on the *Owner* tracking dimension for the *Released product* in the *LE1* company for this example setup, but if you do this the legal entity owner dimension value will be automatically assigned to the purchase and sales order lines, and you won't be able to change it.
 
 You can find more details about the product master data [here](wms-only-mode-exchange-data.md#master-data), but a key point to keep in mind is to use the *Non-valuated* inventory model for the products in the *WOM* legal entity and to enable the *Owner* inventory tracking dimension.
