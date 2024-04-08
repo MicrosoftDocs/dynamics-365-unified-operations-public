@@ -4,8 +4,8 @@ description: This article describes how to set up and generate a report for Fran
 author: liza-golub
 ms.date: 03/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: France
