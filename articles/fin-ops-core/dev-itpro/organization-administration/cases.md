@@ -15,7 +15,7 @@ ms.search.form: CaseDetail
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 4aa0a2da-be45-4dc3-97bf-b84bcf83144c
 ms.search.region: Global

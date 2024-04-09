@@ -6,8 +6,6 @@ description: This article describes how you can get better visibility into excep
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

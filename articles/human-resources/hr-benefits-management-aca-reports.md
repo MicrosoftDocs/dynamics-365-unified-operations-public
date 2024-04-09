@@ -166,7 +166,7 @@ You can generate ACA 1095-B and 1095-C forms, and then distribute them to each o
 
     ![Opening a file.](./media/hr-benefits-management-aca-open-file.png)
 
-6. From the Notification bar that appears at the bottom of the browser window, open the zip file, and then select the report. You can view or print the PDF file.
+6. From the notification bar that appears at the bottom of the browser window, open the zip file, and then select the report. You can view or print the PDF file.
 
     ![Sample 1095-C form.](./media/hr-benefits-management-aca-1095-c-form.png)
 

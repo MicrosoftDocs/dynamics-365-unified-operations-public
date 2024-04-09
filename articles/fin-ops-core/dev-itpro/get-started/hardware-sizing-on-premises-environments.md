@@ -6,7 +6,7 @@ ms.date: 06/02/2021
 ms.topic: article
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30

@@ -6,8 +6,6 @@ description: This article describes how to set up a batch job that automatically
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

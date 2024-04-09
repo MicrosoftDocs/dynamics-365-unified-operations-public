@@ -6,8 +6,6 @@ description: This article describes the cancel work functionality that lets ware
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

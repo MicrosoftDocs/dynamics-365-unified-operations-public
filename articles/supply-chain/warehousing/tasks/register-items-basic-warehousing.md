@@ -6,8 +6,6 @@ description: This procedure shows you how to register items using the item arriv
 author: Mirzaab
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,8 +6,6 @@ description: This article describes how to handle the Warehouse mobile scanning 
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

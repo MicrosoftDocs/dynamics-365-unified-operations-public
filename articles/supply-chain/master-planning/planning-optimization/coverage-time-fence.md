@@ -6,8 +6,6 @@ description: This article describes how to set up coverage time fences. A covera
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

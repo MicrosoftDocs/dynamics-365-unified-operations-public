@@ -6,7 +6,7 @@ ms.author: sunilg
 ms.topic: article
 ms.date: 10/14/2019
 ms.custom: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: Platform update 24

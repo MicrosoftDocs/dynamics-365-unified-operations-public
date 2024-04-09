@@ -6,8 +6,6 @@ description: This article describes how to use formatting methods to print value
 author: perlynne
 ms.date: 04/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

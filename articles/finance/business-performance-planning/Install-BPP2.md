@@ -6,8 +6,7 @@ description: This article describes the requirements for installing Microsoft Dy
 author: ShielaSogge
 ms.date: 12/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc 
 
 # optional metadata
 

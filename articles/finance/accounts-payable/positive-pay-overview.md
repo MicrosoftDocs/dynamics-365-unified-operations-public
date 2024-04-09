@@ -6,8 +6,7 @@ description: This article provides information about positive pay, which is used
 author: angelad116
 ms.date: 10/24/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -15,7 +14,7 @@ ms.search.form: BankPositivePaySummary
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: thweeloc
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2

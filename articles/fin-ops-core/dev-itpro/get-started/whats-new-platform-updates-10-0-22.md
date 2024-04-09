@@ -7,7 +7,7 @@ author: sericks007
 ms.date: 12/01/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-08-31

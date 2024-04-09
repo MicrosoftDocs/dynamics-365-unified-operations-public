@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-30
@@ -270,7 +270,7 @@ Create a corresponding task recording that you can attach to the simple business
 
         ![Save to this PC.](./media/setup_rsa_tool_35.png)
 
-    2. In the browser's Notification bar, select **Save** or **Save As** to save the file on your local computer.
+    2. In the browser's notification bar, select **Save** or **Save As** to save the file on your local computer.
 
         ![Notification bar.](./media/setup_rsa_tool_36.png)
 
@@ -326,7 +326,7 @@ Now that a task recording is attached to the business process, you must validate
 
 ## Install and Configure RSAT
 
-RSAT can be installed on any computer that runs Windows 10 and that can connect to the environment via a web browser (Internet Explorer or Google Chrome).
+RSAT can be installed on any computer that runs Windows 10 and that can connect to the environment via a web browser.
 
 > [!NOTE]
 > Before you install a new version of the tool, we recommend that you uninstall the previous version.
@@ -509,7 +509,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
         > [!NOTE]
         > If the name of the folder has spaces, execution will fail because the folder can't be found. This issue is a known issue and should be fixed in the latest version of the tool.
 
-    - **Default browser** – Select either **Internet Explorer** or **Google Chrome**. Make sure that the appropriate browser drivers have been installed.
+    - **Default browser** – Select the default web browser that you prefer. Make sure that the appropriate browser drivers have been installed.
     - **Test run timeout** – Specify the time-out period, in minutes, for test runs. When the time-out period elapses, all active windows are closed, and pending test cases fail.
     - **Test action timeout** – This field controls the time-out period, in minutes, for Finance and Operation environment server requests. Usually, the default value (2 minutes) should be enough. However, for slower environments, you might want to increase the value if errors that are related to time-outs occur.
     - **Company name** – Enter the company name to use as your default company when Excel parameter files are created. You can change the company later by editing the Excel parameter file.

@@ -6,8 +6,6 @@ description: This article describes purchase requisitions.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

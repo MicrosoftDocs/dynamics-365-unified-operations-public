@@ -6,8 +6,6 @@ description: This article explains how to create maintenance request reports in 
 author: johanhoffmann
 ms.date: 10/31/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
