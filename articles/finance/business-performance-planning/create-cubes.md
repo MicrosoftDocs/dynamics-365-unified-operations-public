@@ -6,8 +6,7 @@ description: This article describes cubes in the Business performance planning a
 author: ShielaSogge
 ms.date: 12/08/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 

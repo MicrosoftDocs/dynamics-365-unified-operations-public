@@ -6,8 +6,6 @@ description: Service agreements let you define the resources that are used in a 
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

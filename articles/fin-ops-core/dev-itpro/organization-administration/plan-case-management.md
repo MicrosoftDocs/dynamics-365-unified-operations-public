@@ -15,7 +15,7 @@ ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
 ms.search.region: Global

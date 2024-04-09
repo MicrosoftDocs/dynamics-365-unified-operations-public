@@ -1,15 +1,13 @@
 ---
 title: Help secure analytical workspaces and reports by using Power BI Embedded
-description: This article describes the recommended strategies for securing access to both the reports that are delivered by using Power BI Embedded and the data set.
-author: RichdiMSFT
-ms.date: 06/20/2017
+description: Learn the recommended strategies for securing access to both the reports that are delivered by using Power BI Embedded and the data set.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 
@@ -23,6 +21,7 @@ ms.assetid:
 > This feature is supported in Microsoft Dynamics 365 Finance, Enterprise edition (July 2017) (version 7.2) and later releases.
 
 ## Introduction
+
 This article provides a walk-through for application developers who want to help secure analytical workspaces and reports that are delivered by using Microsoft Power BI Embedded. It describes the recommended strategies for securing access to both the reports and the data set, based on viewer access rights. By using the techniques that are described in this article, you can hide reports from users and filter reports to show the data set that is appropriate for a specific user, based on the active company context.
 
 ## Prerequisites

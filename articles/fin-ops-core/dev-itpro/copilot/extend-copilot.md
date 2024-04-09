@@ -1,17 +1,17 @@
 ---
 title: Extend Copilot in finance and operations apps
-description: This article provides guidance about how to extend Copilot capabilities in finance and operations apps.
+description: Learn about how to extend Copilot capabilities in finance and operations apps through understanding examples of Copilot capabilities.
 author: jaredha
 ms.author: jaredha
-ms.reviewer: johnmichalak
-ms.search.form:
 ms.topic: overview
 ms.date: 02/08/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Extend Copilot capabilities in finance and operations apps

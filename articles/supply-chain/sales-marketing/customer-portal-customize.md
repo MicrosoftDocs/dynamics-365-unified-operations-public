@@ -6,8 +6,6 @@ description: This article explains how to customize the Customer portal after it
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

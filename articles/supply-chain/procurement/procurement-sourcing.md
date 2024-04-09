@@ -6,8 +6,6 @@ description: This article provides a list of the help articles and other resourc
 author: Henrikan
 ms.date: 09/27/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

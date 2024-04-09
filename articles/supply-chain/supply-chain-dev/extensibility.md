@@ -6,8 +6,6 @@ description: This article describes the extensibility scenarios that are support
 author: t-benebo
 ms.date: 08/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

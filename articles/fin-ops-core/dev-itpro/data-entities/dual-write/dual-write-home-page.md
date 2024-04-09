@@ -5,7 +5,7 @@ author: sericks007
 ms.date: 02/21/2023
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08

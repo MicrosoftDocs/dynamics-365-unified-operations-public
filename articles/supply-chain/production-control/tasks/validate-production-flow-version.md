@@ -6,8 +6,6 @@ description: This procedure shows how to create a new production flow and a firs
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

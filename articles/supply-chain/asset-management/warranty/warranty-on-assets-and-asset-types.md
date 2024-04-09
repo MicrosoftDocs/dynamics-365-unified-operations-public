@@ -6,8 +6,6 @@ description: This article explains how to set up warranties on assets and asset 
 author: johanhoffmann
 ms.date: 08/30/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

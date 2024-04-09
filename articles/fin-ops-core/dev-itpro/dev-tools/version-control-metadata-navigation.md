@@ -46,7 +46,7 @@ Go to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign 
 
 ### Create an Azure DevOps team project
 
-If you already have an Azure DevOps organization, go to your account in Internet Explorer. This article uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have an Azure DevOps organization, go to your account in Microsoft Edge. This article uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project.

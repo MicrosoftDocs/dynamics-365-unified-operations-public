@@ -6,8 +6,6 @@ description: This procedure shows you how to create a bank account for a vendor.
 author: Henrikan
 ms.date: 07/01/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

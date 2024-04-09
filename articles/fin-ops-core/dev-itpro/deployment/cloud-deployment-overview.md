@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Cloud deployment overview
-description: This article describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
+description: Learn about the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-ms.date: 02/08/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: overview
+ms.date: 02/08/2023
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: Platform Update 8
-
 ---
 # Cloud deployment overview
 

@@ -6,8 +6,6 @@ description: This article describes how to manage translations for products, pro
 author: t-benebo
 ms.date: 08/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
