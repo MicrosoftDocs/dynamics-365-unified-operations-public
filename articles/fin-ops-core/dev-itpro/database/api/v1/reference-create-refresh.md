@@ -6,7 +6,7 @@ ms.author: laswenka
 ms.topic: reference
 ms.date: 09/30/2019
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-09-30

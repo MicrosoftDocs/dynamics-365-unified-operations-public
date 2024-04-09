@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  SysSecConfiguration, SrsReportViewerForm
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 

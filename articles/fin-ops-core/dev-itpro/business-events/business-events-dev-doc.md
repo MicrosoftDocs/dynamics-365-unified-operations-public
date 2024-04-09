@@ -6,7 +6,7 @@ ms.author: jaredha
 ms.topic: article
 ms.date: 06/14/2022
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: Platform update 24

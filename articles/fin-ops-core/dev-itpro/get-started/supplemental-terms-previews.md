@@ -15,7 +15,7 @@ ms.technology:
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

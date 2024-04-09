@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 01/21/2024
 ms.custom: 
   - bap-template
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-21

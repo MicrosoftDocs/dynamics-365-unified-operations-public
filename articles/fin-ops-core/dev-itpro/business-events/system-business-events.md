@@ -6,7 +6,7 @@ ms.author: matgupta
 ms.topic: article
 ms.date: 02/25/2021
 # ms.custom: NotInTOC
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-31

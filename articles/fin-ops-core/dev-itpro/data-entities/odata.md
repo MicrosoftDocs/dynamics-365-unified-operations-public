@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5

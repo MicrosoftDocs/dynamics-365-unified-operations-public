@@ -5,7 +5,7 @@ author: faix
 ms.author: osfaixat
 ms.topic: article
 ms.date: 04/05/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-11-29

@@ -6,7 +6,7 @@ ms.author: rashmim
 ms.topic: article
 ms.date: 03/31/2021
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro 
 ms.search.region: Global 
 ms.search.validFrom: 2018-12-31
