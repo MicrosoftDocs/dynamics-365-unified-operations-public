@@ -45,10 +45,10 @@ This list is intended to help you consider these removals and deprecations for y
 | &nbsp;  | &nbsp;  |
 |---|---|
 | **Reason for deprecation/removal** | The **Load planning workbench** page has well-known performance issues. |
-| **Replaced by another feature?**   | Yes. The  **Load planning workbench** page has been split into two new workbench pages, which provide similar functionality with significantly improved performance. The new pages are the **Inbound load planning workbench** and the **Outbound load planning workbench**. |
+| **Replaced by another feature?**   | Yes. The  **Load planning workbench** page has been split into two new workbench pages, which together provide equivalent functionality with significantly improved performance. The new pages are **Inbound load planning workbench** and **Outbound load planning workbench**. |
 | **Product areas affected** | <p>Supply Chain Management – Warehouse management</p><p>Supply Chain Management – Transportation management</p> |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | <p>Deprecated. The **Load planning workbench** page is now hidden in the app, but you can enable it if necessary by contacting Microsoft Support. We strongly recommend that you instead use the new pages (**Inbound load planning workbench** and **Outbound load planning workbench**) because they provide similar functionality with significantly improved performance. The **Load planning workbench** page will be completely removed one year after the release of Supply Chain Management version 10.0.39.</p> |
+| **Status** | <p>Deprecated. The **Load planning workbench** page is now hidden in the app, but you can enable it if necessary by contacting Microsoft Support. We strongly recommend that you instead use the new pages (**Inbound load planning workbench** and **Outbound load planning workbench**) because they provide equivalent functionality with significantly improved performance. The **Load planning workbench** page will be completely removed from the product one year after the release of Supply Chain Management version 10.0.39.</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.37 release
 
