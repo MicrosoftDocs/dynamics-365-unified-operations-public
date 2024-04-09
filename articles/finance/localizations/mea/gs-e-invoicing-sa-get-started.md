@@ -38,6 +38,7 @@ Before you begin, make sure that the following Electronic reporting (ER) format 
 
 - Sales e-invoice (SA)
 - Project e-invoice (SA)
+- Prepayment e-invoice (SA)
 
 Follow these steps to complete the configuration.
 
@@ -61,7 +62,7 @@ Follow these steps to complete the configuration.
 
 1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md)
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and, if required, for the **Project invoice** and **Fiscal transaction document** table names.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and, if required, for the **Project invoice**, **LedgerJournalTrans (!!! to clarify !!!)**, and **Fiscal transaction document** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 1. For the **Customer Invoice journal** table name, select **Response types**.
 
@@ -116,7 +117,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** Electron
         > [!NOTE]
         > Depending on your place in the [onboarding](#onboarding) process, create either a CCSID or a PCSID, and configure it in advance in the [Key Vault parameters](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
-1. Repeat steps 4 through 9 for the **Project invoice** and **Retail simplified invoice** feature setups.
+1. If required, repeat steps 4 through 9 for the **Project invoice**, **Prepayment invoice**, and **Retail simplified invoice** feature setups.
 
     > [!NOTE]
     > For the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature, repeat steps 4 through 9 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups instead.
