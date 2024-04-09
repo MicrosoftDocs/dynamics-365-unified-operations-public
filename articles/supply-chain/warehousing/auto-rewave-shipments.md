@@ -55,7 +55,6 @@ The rewaving workflow ensures continuous, uninterrupted warehouse operations, ev
 1. **Cleanup Shipments that failed rewaving** - The *Wave processing removed Shipments Cleanup* job runs, and removes failed shipment lines from the 'WHSWaveProcessingRemovedShipment'form that were not able to be rewaved. These shipment lines will be removed from the *WHSWaveProcessingRemovedShipment* form depending on the configuration on the *Wave processing removed Shipments Cleanup*. It can be configured in a similar way to the *Auto add shipments to wave* page.
 
 If users wish to start the rewaving process from the beginning, you will need to allow the cleanup job to remove the failed shipment line that could not be rewaved, manually add it to a new wave, system will fail the shipment again, and the process will start from the beginning, with the counter on the **Failed shipment lines** page being set to 0. 
-If users would like to rewave a particular shipment an extra time, even though it has been rewaved the maximum five times, users can manually add the specific Shipment ID in the **Shipment ID** field on the *Auto add shipments to wave* page. When the batch job runs, the Shipment ID we specified will also be re-waved. If it has been rewaved the maximum 5 times, the counter will still be increased to 6 since we manually re-added it.
 
 ## Enable rewaving for your system
 
@@ -87,7 +86,7 @@ The rewaving process runs as a batch job that you must schedule to run as often 
 1. On the **Records to include** FastTab, you can define selection criteria for limiting the set of shipment lines to be processed.
     - Select **Filter** to open a standard query editor dialog where you can add or remove filter criteria.
     - The **Records to include** FastTab lists each field name and value that you've added using the query editor.
-    - The **Number of retries** filter is always included here and its value (5) is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system will stop trying and will mark that line as *failed*.
+    - The **Number of retries** filter is always included here and its value (5) is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to 5 times. If a line fails on the fifth attempt, the system will stop trying and will mark that line as *failed*.
 
 ### Schedule the cleanup job 
 
