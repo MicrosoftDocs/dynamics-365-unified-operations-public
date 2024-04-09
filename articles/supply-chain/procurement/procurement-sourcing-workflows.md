@@ -6,8 +6,6 @@ description: Some organizations require that purchase requisitions and purchase 
 author: Henrikan
 ms.date: 12/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

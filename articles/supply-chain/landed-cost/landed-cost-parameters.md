@@ -6,8 +6,6 @@ description: This article describes how to set up general information and config
 author: Weijiesa
 ms.date: 03/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

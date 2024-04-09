@@ -6,8 +6,6 @@ description: This article provides information about the Vendor collaboration mo
 author: Henrikan 
 ms.date: 05/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

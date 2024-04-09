@@ -6,8 +6,6 @@ description: The Kanban transfer board supports scanner input from a widget bar 
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

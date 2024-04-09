@@ -6,8 +6,6 @@ description: This article explains how purchasing agents can collaborate with ex
 author: Henrikan
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

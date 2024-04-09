@@ -6,8 +6,6 @@ description: This article describes how to use the On-hand list page to inspect 
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This article describes how you can use the solver strategy to impro
 author: t-benebo 
 ms.date: 02/19/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage 

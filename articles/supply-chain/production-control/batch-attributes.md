@@ -6,8 +6,6 @@ description: This article provides information about batch attributes. Batch att
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

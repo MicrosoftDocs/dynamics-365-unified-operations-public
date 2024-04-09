@@ -6,8 +6,6 @@ description: This article describes the types of forecast accuracy that Dynamics
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form: ReqDemPlanForecastDetails

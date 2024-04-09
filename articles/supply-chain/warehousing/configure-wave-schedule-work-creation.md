@@ -6,8 +6,6 @@ description: This article describes how to set up and use the Schedule work crea
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

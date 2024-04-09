@@ -6,8 +6,6 @@ description: This article explains how to set up and schedule the workload capac
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This article describes how to work with location directives. Locati
 author: Mirzaab
 ms.date: 09/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

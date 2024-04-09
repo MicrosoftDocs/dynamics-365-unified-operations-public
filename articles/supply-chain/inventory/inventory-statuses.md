@@ -6,8 +6,6 @@ description: This article describes how you can use inventory statuses to catego
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 
