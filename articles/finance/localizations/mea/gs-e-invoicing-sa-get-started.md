@@ -54,7 +54,7 @@ Follow these steps to complete the configuration.
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific method of payment.
 
 1. In the **State** field, change the state of the application-specific parameters to **Completed**. Then select **Save**.
-1. Repeat steps 2 through 8 for the **Project e-invoice (SA)** ER format configuration as required.
+1. Repeat steps 2 through 8 for the **Project e-invoice (SA)** and **Prepayment e-invoice (SA)** ER format configurations as required.
 
 ## Configure Electronic document parameters
 
@@ -62,7 +62,7 @@ Follow these steps to complete the configuration.
 
 1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md)
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and, if required, for the **Project invoice**, **LedgerJournalTrans (!!! to clarify !!!)**, and **Fiscal transaction document** table names.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and, if required, for the **Project invoice**, **Journal lines**, and **Fiscal transaction document** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 1. For the **Customer Invoice journal** table name, select **Response types**.
 
