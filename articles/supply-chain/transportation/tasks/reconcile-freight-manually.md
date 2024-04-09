@@ -11,7 +11,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
+ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile, WHSInboundLoadPlanningWorkbench
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
@@ -31,7 +31,7 @@ This procedure shows how to reconcile freight manually. This is typically done b
 
 ## Select a load to reconcile
 
-1. Go to **Transportation management \> Planning \> Load planning workbench**.
+1. Go to **Transportation management \> Planning \> Inbound load planning workbench**.
 2. Clear the **Hide shipped and received** checkbox.
 3. In the list, select the load that has load ID *00006*.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Consolidate shipments by releasing to warehouse from the load planning workbench
+title: Consolidate shipments by releasing to warehouse from the outbound load planning workbench
 description: This article presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSOutboundLoadPlanningWorkbench
 # ROBOTS:
 audience: Application User
 # ms.devlang:
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments by releasing to warehouse from the load planning workbench
+# Consolidate shipments by releasing to warehouse from the outbound load planning workbench
 
 [!include [banner](../includes/banner.md)]
 
@@ -209,11 +209,11 @@ Go to **Accounts receivable \> Orders \> All sales orders**, and create a collec
 
 1. Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.
 
-## Use the load planning workbench to create loads and release them to the warehouse
+## Use the Outbound load planning workbench to create loads and release them to the warehouse
 
 Follow these steps to create a load for each order set that you created for this scenario and then release it to the warehouse.
 
-1. Go to **Warehouse management \> Loads \> Load planning workbench**.
+1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines from one of the order sets that you created for this scenario.
 1. On the Action Pane, on the **Supply and demand** tab, select **Add \> To new load** to add the selected order lines to a new Load.
 1. In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *Stnd Load Template*.

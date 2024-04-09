@@ -11,7 +11,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSLoadPlanningWorkbench, TMSRouteWorkbench, TMSTransportationTender   
+ms.search.form: WHSLoadPlanningWorkbench, TMSRouteWorkbench, TMSTransportationTender, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
@@ -27,26 +27,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to set up a transportation tender. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company.
+This procedure shows how to set up a transportation tender. This is typically done by a transportation coordinator.
 
+1. Go to one of the following pages, depending on whether you are setting up a transportation tender for an inbound or outbound load:
+    - **Transportation management > Planning > Inbound load planning workbench**.
+    - **Transportation management > Planning > Outbound load planning workbench**.
 
-## Select a route
-1. Go to Transportation management > Planning > Load planning workbench.
-2. Clear the Hide shipped and received check box.
-3. Select the line with Load ID 00006.
-4. Click Rating and routing.
-5. Click Routes.
-
-## Create the transportation tender
-1. Click Transportation tenders.
-2. Click New.
-3. Expand the General section.
-4. In the Requested rates field, enter a number.
-5. Click Save.
-6. Click Update status.
-7. Click Submit.
-8. Select a route.
-
-
+1. Clear the **Hide shipped and received** check box.
+1. In the **Loads** grid, select a load.
+1. On the **Loads** toolbar, select **Rating and routing** \> **Routes**.
+1. On the Action Pane, select **Transportation tenders**.
+1. On the Action Pane, select **New**.
+1. Expand the **General** FastTab.
+1. In the **Requested rates** field, enter a number.
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Update status** \> **Submit**.
+1. Select a route.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

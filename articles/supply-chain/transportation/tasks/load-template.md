@@ -11,7 +11,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSLoadTemplate 
+ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench
 audience: Application User 
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -50,7 +50,7 @@ This article describes how to set up load templates, and how to associate a load
 
 ## Associate a load template with a new load
 
-1. Go to **Transportation management \> Planning \> Load planning workbench**.
+1. Go to **Transportation management \> Planning \> Outbound load planning workbench**.
 1. In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**. 
 1. Select the specific document to plan the load for.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
