@@ -5,7 +5,7 @@ author: gianugo
 ms.date: 01/10/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-02-28

@@ -15,7 +15,7 @@ ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c
 ms.search.region: Global

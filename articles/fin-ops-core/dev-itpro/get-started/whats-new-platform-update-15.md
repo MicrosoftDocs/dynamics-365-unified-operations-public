@@ -6,7 +6,7 @@ ms.date: 06/08/2018
 ms.topic: article
 ms.custom: evergreen 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-09-30

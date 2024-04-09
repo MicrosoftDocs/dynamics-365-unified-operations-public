@@ -5,7 +5,7 @@ author: RichdiMSFT
 ms.author: sericks
 ms.topic: article
 ms.date: 01/21/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4

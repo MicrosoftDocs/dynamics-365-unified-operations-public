@@ -6,7 +6,7 @@ ms.author: cgarty
 ms.topic: article
 ms.date: 01/18/2022
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global 
 ms.search.validFrom: 2019-3-31

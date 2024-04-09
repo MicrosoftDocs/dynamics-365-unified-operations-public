@@ -5,7 +5,7 @@ author: saurabhsurana
 ms.author: sasurana
 ms.topic: article
 ms.date: 03/15/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 ms.search.region: Global

@@ -5,7 +5,7 @@ author: jaredha
 ms.author: jaredha
 ms.date: 03/31/2023
 ms.topic: overview
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: Platform update 24
