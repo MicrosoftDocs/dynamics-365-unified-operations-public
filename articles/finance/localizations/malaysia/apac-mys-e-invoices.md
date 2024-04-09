@@ -23,7 +23,7 @@ This article provides information that will help you get started with Electronic
 
 After you configure Electronic invoicing, you can generate, digitally sign and submit the XML files of electronic invoices according to the regulatory [requirements](https://www.hasil.gov.my/en/e-invoice/) in Malaysia.
 
-![Electronic invoicing workflow in Malaysia](../media/apac-mys-e-invoice-workflow.jpg)
+![Electronic invoicing workflow in Malaysia](apac-mys-e-invoice-workflow.jpg)
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
@@ -104,7 +104,7 @@ Follow these steps to configure the electronic document property type that is re
 11. Save and close the **Electronic document property type applicability setup** page.
 12. Save and close the **Electronic document property types** page.
 
-![Screenshot that shows Electronic document properties configuration.](../media/apac-mys-e-invoice-properties.jpg)
+![Screenshot that shows Electronic document properties configuration.](apac-mys-e-invoice-properties.jpg)
 
 ## Configure legal entity data
 
