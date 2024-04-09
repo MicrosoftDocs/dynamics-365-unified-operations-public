@@ -40,6 +40,12 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 ## Azure Key Valut configuration
 
+Add:
+
+- Client secret
+- Client ID
+- Certificate for digital signing
+- .....anything else for Email server settings? ....
 ...............
 
 ## Electronic invoicing feature configuration
