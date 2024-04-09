@@ -70,7 +70,7 @@ Make sure that the **Globalization Studio** workspace is available in the system
 
 To activate Electronic invoicing in Globalization Studio, enable the following features in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- Globalization features
+- Globalization Studio
 - E-invoicing service workspace designer
 - Enable Globalization feature setup for Tax Calculation Service
 - Electronic reporting globalization feature Key Vault parameters
