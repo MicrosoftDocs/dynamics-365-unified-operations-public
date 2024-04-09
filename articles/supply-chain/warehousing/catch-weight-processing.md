@@ -6,8 +6,6 @@ description: This article describes how to use work templates and location direc
 author: perlynne
 ms.date: 08/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

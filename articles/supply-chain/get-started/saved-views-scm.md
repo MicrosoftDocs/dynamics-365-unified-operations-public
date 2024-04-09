@@ -6,8 +6,6 @@ description: This article describes the standard saved views that are available 
 author: kamaybac
 ms.date: 08/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

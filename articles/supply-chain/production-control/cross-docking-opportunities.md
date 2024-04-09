@@ -6,8 +6,6 @@ description: This article describes how to manage the process of cross-docking m
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

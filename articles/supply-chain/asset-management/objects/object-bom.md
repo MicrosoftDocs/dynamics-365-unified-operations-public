@@ -6,8 +6,6 @@ description: This article describes asset bills of materials (BOMs) in Asset Man
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

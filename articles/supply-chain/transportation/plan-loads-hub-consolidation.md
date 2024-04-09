@@ -6,8 +6,6 @@ description: This article describes the feature for consolidating shipments in a
 author: Weijiesa
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

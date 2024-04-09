@@ -6,8 +6,6 @@ description: This article describes how to set up load templates, and how to ass
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: how-to 
-ms.prod: 
-ms.technology: 
  
 # optional metadata 
  

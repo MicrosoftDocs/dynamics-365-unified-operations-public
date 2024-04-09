@@ -6,8 +6,6 @@ description: This article provides a procedure that shows how to delete a servic
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

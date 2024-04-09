@@ -6,8 +6,6 @@ description: This article describes the process of creating and posting an inven
 author: yufeihuang
 ms.date: 07/09/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
