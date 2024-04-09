@@ -1,6 +1,6 @@
 ---
-title: Configure Electronic invoicing parameters (preview)
-description: This article explains how to set up the Electronic invoicing parameters (preview).
+title: Configure Electronic invoicing parameters
+description: This article explains how to set up the Electronic invoicing parameters.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure Electronic invoicing parameters (preview)
+# Configure Electronic invoicing parameters
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -47,6 +47,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Fiscal documents mapping** (for Brazilian scenarios, if required)
     - **Advance invoice model mapping** (for Polish scenarios, if required)
     - **Retail fiscal document mapping** (for Saudi Arabian retail-specific scenarios, if required)
+    - **Pending vendor invoice model mapping** (for Danish responses scenarios, if required)
 
 ## Set up Electronic document parameters
 
