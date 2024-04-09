@@ -4,7 +4,7 @@ description: This article explains how to enable and use anchoring.
 author: Mirzaab
 ms.date: 07/29/2021
 ms.topic: article
-ms.search.form: WHSRFMenuItem
+ms.search.form: WHSRFMenuItem, WHSOutboundLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -214,11 +214,11 @@ Before you can try the anchoring functionality, you must create some demand. For
 
 1. Repeat step 7 to reserve each line on sales order 3.
 
-### Use the load planning workbench to create a load and release it to the warehouse
+### Use the outbound load planning workbench to create a load and release it to the warehouse
 
 Follow these steps to create a load for the orders that you created for this scenario and then release it to the warehouse.
 
-1. Go to **Warehouse management \> Loads \> Load planning workbench**.
+1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines for sales order 1 and sales order 2.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
 1. In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *Stnd Load Template*.
@@ -258,11 +258,11 @@ Follow these steps to create a load for the orders that you created for this sce
 > [!NOTE]
 > The location for all the remaining open put work lines that have the same staging location and that were generated from the same work template line will be updated to the new location.
 
-### Use the load planning workbench to add the new sales order to the existing load
+### Use the outbound load planning workbench to add the new sales order to the existing load
 
 Follow these steps to add an order to the load and then release it to the warehouse.
 
-1. Go to **Warehouse management \> Loads \> Load planning workbench**.
+1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines for sales order 3.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To existing load** to add the selected order lines to an existing load.
 1. Select **OK** to close the dialog box.

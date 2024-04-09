@@ -9,7 +9,9 @@ ms.topic: conceptual
 ms.date: 05/26/2023
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)

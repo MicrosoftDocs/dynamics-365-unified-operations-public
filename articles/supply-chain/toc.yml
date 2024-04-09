@@ -2047,6 +2047,8 @@
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
         href: demand-planning/export-data.md
+      - name: Rolling forecasts
+        href: demand-planning/rolling-forecasts.md
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
@@ -3499,7 +3501,7 @@
           items:
           - name: Plan loads using hub consolidation overview
             href: transportation/plan-loads-hub-consolidation.md
-          - name: Plan loads and shipments using the Load planning workbench
+          - name: Plan loads and shipments using the outbound load planning workbench
             href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: USMCA certification of origin
           href: transportation/usmca-certification-of-origin.md
@@ -3735,7 +3737,7 @@
             href: warehousing/consolidate-shipments-automatic.md
           - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden
             href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the load planning workbench
+          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the outbound load planning workbench
             href: warehousing/consolidate-shipments-load-planning-workbench.md
           - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
             href: warehousing/consolidate-shipments-manual-workbench.md

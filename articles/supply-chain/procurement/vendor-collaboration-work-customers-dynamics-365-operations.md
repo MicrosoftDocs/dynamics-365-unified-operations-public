@@ -6,8 +6,6 @@ description: This article describes how you can use vendor collaboration to work
 author: Henrikan
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

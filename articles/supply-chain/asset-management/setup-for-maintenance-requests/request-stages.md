@@ -6,8 +6,6 @@ description: This article describes how to set up maintenance request lifecycle 
 author: johanhoffmann
 ms.date: 04/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

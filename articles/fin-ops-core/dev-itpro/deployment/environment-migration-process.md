@@ -1,13 +1,12 @@
 ---
 title: Finance and operations apps environment migration
-description: This article describes how to move your environment from one geography to another.
+description: Learn how to move your finance and operations apps environments from one geography to another, including considerations and overviews of processes.
 author: matapg007
 ms.author: matgupta
-ms.reviewer: johnmichalak
-ms.service: dynamics-365-finance
 ms.topic: how-to
 ms.date: 05/05/2023
 ms.custom:
+ms.reviewer: johnmichalak
 ---
 
 # Finance and operations apps environment migration

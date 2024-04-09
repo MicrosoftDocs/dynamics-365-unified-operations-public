@@ -1,17 +1,18 @@
 ---
 title: Enable Copilot capabilities in finance and operations apps (preview)
-description: This article provides instructions for administrators on how to enable Copilot capabilities in finance and operations apps
+description: Learn about instructions for administrators on how to enable Copilot capabilities in finance and operations apps.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: johnmichalak
-ms.search.form:
 ms.topic: how-to
 ms.date: 02/16/2024
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+ - bap-template
+ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Enable Copilot capabilities in finance and operations apps (preview)
@@ -33,9 +34,8 @@ For information about which countries/regions and languages the Copilot capabili
 
 To enable Copilot capabilities in finance and operations apps, you must have the following prerequisites in place:
 
-- You must be running version 10.0.36 or later of finance and operations apps.
-- You must have enabled the Power Platform integration in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable dual-write for this feature.)
 - Your environment must be a cloud-deployed environment. Copilot in finance and operations apps isn't supported in cloud-hosted development environments.
+- You must have enabled the [Power Platform integration](../power-platform/enable-power-platform-integration.md) in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable Dual-write for this feature.)
 
 > [!IMPORTANT]
 > Depending on the availability of Copilot and generative AI back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
@@ -54,15 +54,15 @@ Follow these steps to check the status of the **Sql row version change tracking 
 1. Return to the **License configuration** page, and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
-## Step 2: Enable your finance and operations apps to access your Dataverse environment
+## Step 2: Enable Power Platform to publish bots with AI features
 
-Follow these steps to enable your finance and operations apps to access your Dataverse environment.
+To enable Power Platform to publish bots with AI features, follow these steps.
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select the Dataverse environment connected to your finance and operations apps environment, and open the detail view.
-1. Select the **Settings** menu on the menu bar.
-1. Go to **Product \> Features**.
-1. Set **Finance and Operations in Dataverse** to *On*.
+1. In the navigation pane, select **Settings**.
+1. In the list, select the row where the **Name** is *Publish bots with AI features*.
+1. The **Publish bots with AI features** dialog opens. Set the slider to **Enabled**.
+1. Select **Save**.
 
 ## <a name="install-copilot-app"></a>Step 3: Install the Copilot application in your finance and operations apps environment
 
@@ -73,7 +73,7 @@ Follow these steps to install the Copilot application in your finance and operat
 1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment connected to your finance and operations apps environment to install the Copilot application.
 
     > [!IMPORTANT]
-    > **Troubleshooting:** You might receive the following error message while you install the Copilot application in Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you receive this error, follow the instructions in the [Step 1: Enable the Sql row version change tracking license key](#enable-sql-key) section.
+    > **Troubleshooting:** You might receive the following error message while you install the Copilot application in Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you receive this error, follow the instructions in the [Enable the Sql row version change tracking license key](#enable-sql-key) section.
 
 1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. During installation, the status of the Copilot application is *Installing*. After installation is completed, the status changes to *Installed*. If an error occurs, the status changes to *Failed*. In this case, you can find details about the error in the **Notifications** field.
 

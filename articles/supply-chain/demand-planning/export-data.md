@@ -41,6 +41,7 @@ To run an existing data export profile, follow these steps.
     - **Get started** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with.
     - **Map columns** – This tab shows how the selected profile maps columns in Demand planning to columns in the target system. You can edit the mappings from here as you require.
     - **Define data export rules** – This tab shows any export rules that have been defined for the profile. You can edit the settings from here as you require.
+    - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab. There, you can follow the status of the new export. The page isn't automatically refreshed. To update the status information, you must select **Refresh** on the grid toolbar.
@@ -65,6 +66,9 @@ Each time that your organization has to run a new type of data export, a manager
 
 1. When you've finished selecting and setting up the time series to export, select **Next**.
 1. On the **Map columns** page, use the dropdown lists to map each column in the selected time series to the appropriate column in the target Supply Chain Management data entity. When you've finished, select **Next**.
-1. On the **Define data export rules** page, specify the target company (legal entity) and forecast model ID to export the data to. You can select **All** to export all the data to the same company and forecast model, or you can select **Custom** to set up rules for splitting the export between different forecast models. When you've finished, select **Next**.
+1. On the **Define data export rules** page, specify the target company (legal entity) and forecast model ID to export the data to. You can select **All** to export all the data to the same company and forecast model, or you can select **Custom** to set up rules for splitting the export between different forecast models.
+1. Select **Next**.
+1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
+1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. The profile is now available, but it hasn't yet run. To run it, follow the instructions in the [View and run existing data export profiles to export to Supply Chain Management](#existing-export-profiles) section.

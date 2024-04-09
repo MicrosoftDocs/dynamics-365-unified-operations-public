@@ -124,15 +124,15 @@ For enhanced reliability, retry batch jobs that are affected by interruptions. C
 > - To help maintain system stability and compatibility, ensure that you're on the [supported version](../get-started/public-preview-releases.md).
 > - Review any customizations and file uploads to mitigate potential impacts on batch job execution and system performance.
 
-### Batch throttling
+## Batch throttling
 
 The batch platform uses two types of batch throttling to ensure smooth operation.
 
-#### Batch class throttling
+### Batch class throttling
 
 Batch class throttling prevents excessive tasks by limiting the average number of executions of a specific batch class per minute per batch server. By default, the upper limit is set to 60 tasks per minute. If this limit is exceeded, the batch framework temporarily suspends the execution of new tasks of that batch class for another minute, to prevent it from monopolizing system resources.
 
-#### Batch resource-based throttling
+### Batch resource-based throttling
 
 When system resources, such as SQL database transaction units (DTUs), CPU, or memory that's allocated to the batch server, approach their capacity limits, the execution of new batch tasks is delayed. This delay enables the system to manage its resources efficiently and ensures that the existing workload doesn't overwhelm the system.
 

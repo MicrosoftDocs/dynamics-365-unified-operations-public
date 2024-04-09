@@ -4,7 +4,7 @@ description: Responsible AI FAQs provide information about the AI technology tha
 ms.date: 06/19/2023
 ms.collection:
   - bap-ai-copilot
-ms.custom: 
+ms.custom:
   - responsible-ai-faqs
 ms.topic: article
 author: kamaybac

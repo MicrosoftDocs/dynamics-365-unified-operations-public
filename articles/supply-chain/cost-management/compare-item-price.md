@@ -6,8 +6,6 @@ description: Learn how to generate a Compare item prices storage report and then
 author: JennySong-SH
 ms.date: 08/05/2022
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

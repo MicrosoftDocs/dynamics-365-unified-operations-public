@@ -6,7 +6,7 @@ ms.author: jaredha
 ms.topic: article
 ms.date: 08/25/2022
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2022-04-21
 ---

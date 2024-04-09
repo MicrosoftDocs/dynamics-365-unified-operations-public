@@ -1,20 +1,15 @@
 ---
 title: Plan and prepare for on-premises deployments
-description: This article will help you plan and prepare for your on-premises deployment.
+description: Learn how you can plan and prepare for your on-premises deployment, including an overview of difference between cloud and on-premises deployments.
 author: faix
-ms.date: 01/26/2022
-ms.topic: article
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: osfaixat
+ms.topic: article
+ms.date: 01/26/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.assetid: 
-ms.service: dynamics-365
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Plan and prepare for on-premises deployments

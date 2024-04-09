@@ -6,8 +6,6 @@ description: This article provides information about the parameters and filters 
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

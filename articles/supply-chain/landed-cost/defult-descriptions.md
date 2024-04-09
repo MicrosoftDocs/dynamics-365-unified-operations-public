@@ -6,8 +6,6 @@ description: Default descriptions can be used to update the Description field in
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

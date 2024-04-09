@@ -7,7 +7,7 @@ author: arianapadilla
 ms.date: 06/15/2022
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: arianap
 ms.search.validFrom: 2021-12-13

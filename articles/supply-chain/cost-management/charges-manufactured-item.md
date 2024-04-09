@@ -6,8 +6,6 @@ description: The constant costs of a manufactured item reflect the operation set
 author: JennySong-SH
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

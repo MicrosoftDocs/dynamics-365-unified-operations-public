@@ -5,8 +5,6 @@ description: This article explains the various options that can help you improve
 author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form: ReqCreatePlanWorkspace

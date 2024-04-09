@@ -6,8 +6,6 @@ description: This article describes how to configure product filters and filter 
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

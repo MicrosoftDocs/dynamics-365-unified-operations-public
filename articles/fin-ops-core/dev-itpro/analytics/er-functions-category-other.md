@@ -1,16 +1,17 @@
 ---
 title: List of ER functions in the business domain–specific category
-description: This article provides information about the business domain–specific functions that are supported in Electronic reporting (ER).
+description: Learn about the business domain–specific functions that are supported in Electronic reporting (ER), including a list of supported functions.
 author: kfend
-ms.date: 03/25/2024
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 03/25/2024
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # List of ER functions in the business domain–specific category

@@ -6,8 +6,6 @@ description: This article describes how the withdrawal kanban is used for materi
 author: perlynne
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

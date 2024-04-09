@@ -6,8 +6,6 @@ description: This article explains forecasts and work order integration with the
 author: johanhoffmann
 ms.date: 08/29/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

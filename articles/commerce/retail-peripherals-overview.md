@@ -790,7 +790,7 @@ You can also use other payment providers with Dynamics 365 Commerce by creating 
 
 -   The computer that is running Modern POS trusts the certificate that is used on the computer that runs the hardware station.
     -   To verify this setup, in a web browser, go to the following URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.
-    -   This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock symbol appears in the address bar. When you select this symbol, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
+    -   This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Microsoft Edge, a lock symbol appears in the address bar. When you select this symbol, Microsoft Edge verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
 -   On the computer that runs the hardware station, the port that will be used by the hardware station is opened in the firewall.
 -   The hardware station has correctly installed merchant account information through the Install merchant information tool that runs at the end of the hardware station installer.
 

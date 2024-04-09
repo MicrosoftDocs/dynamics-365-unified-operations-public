@@ -15,7 +15,7 @@ ms.search.form: SysUserSetup, SystemDate
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
 ms.search.region: Global

@@ -6,8 +6,6 @@ description: A released production order is an order that has been authorized fo
 author: johanhoffmann
 ms.date: 03/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
