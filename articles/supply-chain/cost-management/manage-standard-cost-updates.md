@@ -6,8 +6,6 @@ description: Updates to standard cost data can be managed by using two different
 author: JennySong-SH
 ms.date: 01/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This page provides a list of the help articles and other resources 
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -4,10 +4,10 @@
 title: Bonus depreciation
 description: This article provides an overview of the bonus depreciation functionality.
 author: moaamer
-ms.date: 06/20/2017
+ms.date: 04/05/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
+ms.custom: evergreen
 
 # optional metadata
 
@@ -15,7 +15,6 @@ ms.search.form: AssetBonus
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.assetid: 835ec594-744e-461c-a676-1b9abc094173
 ms.search.region: Global

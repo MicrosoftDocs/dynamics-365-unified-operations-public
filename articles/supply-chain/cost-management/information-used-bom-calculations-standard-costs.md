@@ -6,8 +6,6 @@ description: Bills of material (BOM) calculations use data from several sources 
 author: JennySong-SH
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

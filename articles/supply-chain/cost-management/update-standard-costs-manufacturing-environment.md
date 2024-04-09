@@ -6,8 +6,6 @@ description: This article provides guidance about how to update standard costs i
 author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

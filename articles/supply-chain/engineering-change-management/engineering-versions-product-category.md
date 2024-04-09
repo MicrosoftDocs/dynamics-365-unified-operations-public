@@ -6,8 +6,6 @@ description: This article provides information about the concept of engineering 
 author: t-benebo
 ms.date: 04/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

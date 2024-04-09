@@ -110,7 +110,7 @@ Use Visual Studio to build and run the **FmtChargeType** form.
 
 1.  In **Solution Explorer**, right-click the **FmtChargeType** form, and then click **Set as Startup Object**.
 2.  Press Ctrl+F5 to build and run the form.
-3.  The form opens in Internet Explorer.
+3.  The form opens in Microsoft Edge.
 4.  To add a rental charge type, click **New** in the Action Pane at the top of the form. Add the following information.
 
     | **Rental Charge Type** | **Description** |

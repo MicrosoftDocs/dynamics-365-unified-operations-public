@@ -6,8 +6,6 @@ description: You can use service template groups to sort and filter service temp
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

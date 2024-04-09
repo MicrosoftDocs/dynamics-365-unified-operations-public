@@ -6,8 +6,7 @@ description: This article explains business performance planning in Microsoft Dy
 author: ShielaSogge
 ms.date: 11/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 

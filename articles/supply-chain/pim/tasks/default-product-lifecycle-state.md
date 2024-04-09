@@ -6,8 +6,6 @@ description: This procedure shows how to create a default product lifecycle stat
 author: t-benebo 
 ms.date: 12/05/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

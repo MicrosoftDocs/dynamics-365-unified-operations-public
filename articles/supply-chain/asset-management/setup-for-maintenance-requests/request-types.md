@@ -6,8 +6,6 @@ description: This article explains how to set up a maintenance request types in 
 author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

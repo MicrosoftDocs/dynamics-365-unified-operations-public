@@ -54,3 +54,9 @@ No, Currently, a refresh of the Finance database doesn't automatically refresh D
 
 No, the inventory transaction archival scenario isn't limited for transactions. Moving average transactions and standard cost transactions can be archived if they have closed inventory.
 
+## How can I meet the requirement of my auditors who need to view the transactional data archived with Dataverse long term retention?
+
+You have an option to [view archived data](archive-view.md) in Dataverse long term retention with Microsoft Fabric.
+
+You can also view the archived data from within the Dynamics 365 Finance and Operations History table for all the different scenarios. [General Ledger example](archive-gl.md#view-historical-data-from-the-history-table).
+

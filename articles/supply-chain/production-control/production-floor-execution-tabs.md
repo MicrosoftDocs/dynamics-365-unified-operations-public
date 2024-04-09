@@ -6,8 +6,6 @@ description: This article describes how to design the content of the user interf
 author: johanhoffmann
 ms.date: 12/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

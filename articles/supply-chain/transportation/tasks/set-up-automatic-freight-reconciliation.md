@@ -6,8 +6,6 @@ description: This procedure shows how to set up data for automatic freight recon
 author: Weijiesa
 ms.date: 10/16/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -239,13 +239,13 @@ When the email is ready to be sent, the **Send** button will cause the email to 
 
 Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.
 
-1. In Internet Explorer, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+1. In Microsoft Edge, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 2. Select **US-008 Sparrow Retail**.
 3. Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 4. Click **Communicate** &gt; **Email** &gt; **Statements to contact**.
 5. Click **OK** to accept the default values in the dialog box.
 6. If you're prompted for the mail option to use, clear the **Do not ask again** check box (you can change this option from the **User options** page), select **Use an email app, such as Outlook**, and then click **OK**.
-7. If you're using Internet Explorer on your computer, open the email (.eml) file that is generated. If you're using Internet Explorer on the VM, copy the file to your computer, and open it there.
+7. If you're using Microsoft Edge on your computer, open the email (.eml) file that is generated. If you're using Microsoft Edge on the VM, copy the file to your computer, and open it there.
 8. Note the email address in the **To** field and the generated workbook attachment.
 
 ### Send mail via SMTP
@@ -262,7 +262,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 4. Set the user name and password to an appropriate email account and password.
 5. Leave **SSLRequired** turned on, and leave **SMTP port number** set to **587**.
 6. Click **Save**.
-7. In Internet Explorer, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+7. In Microsoft Edge, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 8. Select **US-008 Sparrow Retail**.
 9. Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Click **Communicate** &gt; **Email** &gt; **Statements to contact**.

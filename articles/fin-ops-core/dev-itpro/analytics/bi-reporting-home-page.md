@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: conceptual
 ms.date: 10/02/2019
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
 ms.search.region: Global

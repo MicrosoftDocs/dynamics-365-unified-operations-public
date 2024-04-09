@@ -5,7 +5,7 @@ author: MilindaV2
 ms.author: milindav
 ms.topic: article
 ms.date: 04/09/2021
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: 2018-03-30

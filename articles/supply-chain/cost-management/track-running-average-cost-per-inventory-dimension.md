@@ -6,8 +6,6 @@ description: An inventory dimension group is attached to every inventory item. T
 author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

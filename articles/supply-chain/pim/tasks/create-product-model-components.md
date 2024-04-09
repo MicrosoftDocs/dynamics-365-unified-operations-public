@@ -6,8 +6,6 @@ description: Constraint-based product configuration models use components as bui
 author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

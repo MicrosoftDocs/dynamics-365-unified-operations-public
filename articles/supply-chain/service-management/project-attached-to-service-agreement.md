@@ -6,8 +6,6 @@ description: You can attach service agreements to projects of every type except 
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
