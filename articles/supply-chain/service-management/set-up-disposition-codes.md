@@ -6,8 +6,6 @@ description: You can set up disposition codes to specify how to process an item 
 author: Henrikan
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

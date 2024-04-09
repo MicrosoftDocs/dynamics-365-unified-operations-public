@@ -6,8 +6,7 @@ description: This article provides a list of the help topics and other resources
 author: twheeloc
 ms.date: 07/04/2023
 ms.topic: welcome
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -16,12 +15,12 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["206434"]
+ms.custom: 
 ms.collection: get-started
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

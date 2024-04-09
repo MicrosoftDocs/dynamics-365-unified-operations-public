@@ -6,8 +6,6 @@ description: To get accurate demand forecasts, you require historical demand dat
 author: t-benebo
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

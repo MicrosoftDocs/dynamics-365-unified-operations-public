@@ -6,8 +6,6 @@ description: The article explains how to create asset measure types in Asset Man
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

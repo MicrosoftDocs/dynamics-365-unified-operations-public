@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Migrate document attachments from Dynamics AX 2012
 description: Learn about how to migrate document attachments from Microsoft Dynamics AX 2012, including background information and migration options.
 author: ttreen

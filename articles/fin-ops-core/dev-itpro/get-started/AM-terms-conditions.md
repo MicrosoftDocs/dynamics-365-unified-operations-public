@@ -15,7 +15,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ROBOTS: NOINDEX, NOFOLLOW 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]

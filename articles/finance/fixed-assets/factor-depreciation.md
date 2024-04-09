@@ -4,10 +4,10 @@
 title: Factor depreciation
 description: This article gives an overview of the factor depreciation method.
 author: moaamer
-ms.date: 06/20/2017
+ms.date: 04/05/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
+ms.custom: evergreen
 
 # optional metadata
 
@@ -15,7 +15,6 @@ ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global

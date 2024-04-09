@@ -6,8 +6,6 @@ description: This procedure demonstrates how to use item tracing to identify whe
 author: yufeihuang
 ms.date: 08/12/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

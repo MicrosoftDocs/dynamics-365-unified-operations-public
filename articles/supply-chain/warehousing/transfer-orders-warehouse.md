@@ -6,8 +6,6 @@ description: This article describes how you can set up warehouses for transfer o
 author: Mirzaab
 ms.date: 01/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

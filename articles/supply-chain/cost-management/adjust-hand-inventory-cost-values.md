@@ -6,8 +6,6 @@ description: Use the Adjustment of on-hand inventory page to adjust the cost val
 author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

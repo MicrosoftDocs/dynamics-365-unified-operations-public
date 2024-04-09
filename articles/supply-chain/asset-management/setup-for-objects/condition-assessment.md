@@ -6,8 +6,6 @@ description: This article explains how to create a condition assessment template
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

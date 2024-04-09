@@ -6,8 +6,6 @@ description: You can use Sales and marketing to obtain, store, and use various t
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

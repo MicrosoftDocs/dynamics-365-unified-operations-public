@@ -15,7 +15,7 @@ ms.search.form: SysAppDesignerPane
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
 ms.search.region: Global

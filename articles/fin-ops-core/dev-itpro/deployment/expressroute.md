@@ -5,7 +5,7 @@ author: PeterRFriis
 ms.author: peterfriis
 ms.topic: article
 ms.date: 09/20/2019
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
 ms.search.region: Global

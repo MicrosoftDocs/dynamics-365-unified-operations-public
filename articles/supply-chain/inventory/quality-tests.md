@@ -6,8 +6,6 @@ description: This article describes how to create tests that can be used for qua
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This procedure shows how to add a new calculation to a product conf
 author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
