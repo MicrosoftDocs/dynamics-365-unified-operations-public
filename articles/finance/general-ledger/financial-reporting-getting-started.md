@@ -195,8 +195,7 @@ There are a few common issues that can cause problems when you open Report Desig
 
 Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 
-* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone** field, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
-* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
+* Open the Windows control panel, then select **Network and Internet**. Select **Internet options**. The **Internet properties** window opens. Open the **Security** tab. Select **Trusted sites**  and then select the **Sites** button. In the **Add this website to zone** field, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. Finally, in the area labeled **Security level for this zone**, change the slider to **Medium-low**. Select **OK**.
 * Disable the pop-up blocker in your browser.
 * Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * If you're using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you're running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](../../fin-ops-core/fin-ops/get-started/system-requirements.md).

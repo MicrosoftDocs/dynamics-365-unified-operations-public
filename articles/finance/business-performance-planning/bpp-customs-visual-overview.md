@@ -6,9 +6,7 @@ description: This article provides an overview of the custom visuals in the Busi
 author: ShielaSogge
 ms.date: 12/14/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
+ms.reviewer: twheeloc
 # optional metadata
 
 ms.search.form: 

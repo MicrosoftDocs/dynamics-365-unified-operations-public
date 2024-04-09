@@ -6,8 +6,7 @@ description: This article describes how to use dataflows to load data into the B
 author: ShielaSogge
 ms.date: 12/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc 
 
 # optional metadata
 

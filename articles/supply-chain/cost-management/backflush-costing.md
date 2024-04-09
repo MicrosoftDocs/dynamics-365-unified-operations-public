@@ -6,8 +6,6 @@ description: This article introduces the concept of backflush costing that is us
 author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

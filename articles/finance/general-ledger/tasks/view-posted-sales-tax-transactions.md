@@ -4,22 +4,21 @@
 title: View posted sales tax transactions
 description: This article describes some ways to view posted sales tax transactions.
 author: twheeloc
-ms.date: 08/08/2019
+ms.date: 04/05/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
+  
  
 # optional metadata 
  
 ms.search.form: TaxTrans, TaxPeriod, TaxTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -36,7 +35,7 @@ This article describes some ways to view posted sales tax transactions. You can 
 3. Close the page.
 
 > [!NOTE]
-> The **Delete** action isn't allowed for Posted sales tax transactions.
+> The **Delete** action isn't allowed for posted sales tax transactions.
 
 ## Sales tax settlement periods page
 

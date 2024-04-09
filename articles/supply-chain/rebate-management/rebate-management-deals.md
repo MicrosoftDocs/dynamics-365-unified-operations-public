@@ -6,8 +6,6 @@ description: This article describes how to create Rebate management deals. Deals
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

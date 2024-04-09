@@ -6,8 +6,6 @@ description: In Asset Management, general parameters relating to assets, work or
 author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

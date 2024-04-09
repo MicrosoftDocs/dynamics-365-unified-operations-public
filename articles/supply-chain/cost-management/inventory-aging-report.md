@@ -6,8 +6,6 @@ description: This article presents some examples that show how to interpret the 
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

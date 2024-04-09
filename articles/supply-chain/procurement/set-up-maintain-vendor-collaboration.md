@@ -6,8 +6,6 @@ description: This article explains how to set up vendor collaboration in Dynamic
 author: Henrikan
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

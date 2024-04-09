@@ -6,8 +6,6 @@ description: This article shows you how to create purchasing policies to align w
 author: Henrikan
 ms.date: 07/31/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

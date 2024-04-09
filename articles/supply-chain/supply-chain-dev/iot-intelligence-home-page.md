@@ -6,8 +6,6 @@ description: This article explains that IoT Intelligence has now been replaced b
 author: johanhoffmann
 ms.date: 09/30/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

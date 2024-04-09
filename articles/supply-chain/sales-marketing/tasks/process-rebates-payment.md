@@ -6,8 +6,6 @@ description: This procedure demonstrates how to convert approved and processed c
 author: Henrikan
 ms.date: 11/10/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

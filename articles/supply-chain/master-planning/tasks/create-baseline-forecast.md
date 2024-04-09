@@ -6,8 +6,6 @@ description: A production planner can create a baseline forecast either by using
 author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

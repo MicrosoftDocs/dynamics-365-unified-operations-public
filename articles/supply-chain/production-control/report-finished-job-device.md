@@ -6,8 +6,6 @@ description: This article describes how to configure the system so that users of
 author: johanhoffmann
 ms.date: 08/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

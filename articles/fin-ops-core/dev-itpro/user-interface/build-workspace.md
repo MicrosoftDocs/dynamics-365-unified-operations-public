@@ -85,7 +85,7 @@ Operational workspaces can optionally include a panorama section that contains u
 ### View the workspace
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
+2. Press **Ctrl+F5** to build and run the form. The form opens in your web browser.
 
     ![Open form.](./media/fmtworkspaceinitial.png)
 
@@ -181,7 +181,7 @@ Tiles also have a refresh frequency property that controls how often the counts 
 Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
+2. Press **Ctrl+F5** to build and run the form. The form opens in your web browser.
 
     [![Rentals tile.](./media/currentrentalstile.png)](./media/currentrentalstile.png)
 
@@ -354,7 +354,7 @@ Next, you will next see how to include an additional list in the workspace. This
 Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
+2. Press **Ctrl+F5** to build and run the form. The form opens in your web browser.
 
     ![Available list.](./media/availablelist.png)
 
@@ -635,7 +635,7 @@ Actions that are performed from the workspace might expect records from the base
 Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
+2. Press **Ctrl+F5** to build and run the form. The form opens in your web browser.
 3. Click the **Returning today** vertical tab.
 4. Click **Complete rental** for the second record in the list.
 5. Set **End Mileage** to **200**, and then click **OK**. Notice that the rental that you just returned still appears in the list.
@@ -667,7 +667,7 @@ You must make sure that your lists remain up to date after a user performs an ac
 Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
+2. Press **Ctrl+F5** to build and run the form. The form opens in your web browser.
 3. Click the **Returning today** vertical tab.
 4. Click **Complete rental** for the second record in the list.
 5. Set **End Mileage** to **100**, and then click **OK**. Notice that the rental that you just returned no longer appears in the list.
