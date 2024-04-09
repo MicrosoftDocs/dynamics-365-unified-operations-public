@@ -604,9 +604,15 @@ Body:
 
 Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
 
-*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
+*NumOf(SiteID) \* NumOf(LocationID) <= 10000*.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
+
+Query by using the post method has two versions 1.0 and 2.0 respectively. 
+- Version 1.0 can only query 1 organization ID，version 2 supports querying multiple organization IDs
+- Version 1.0 can query up to 10000 distinct warehouses, where as version 2.0 returns large result in different pages
+
+#### Version 1.0
 
 ```txt
 Path:
@@ -678,6 +684,36 @@ The following example shows how to query all products in a specific site and loc
 }
 ```
 
+#### Version 2.0
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery?pageNumber={pageNumber}&pageSize={pageSize}
+Method:
+    Post
+Headers:
+    Api-Version="2.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    # Same as version 1.0
+```
+
+For version 2.0 request, the request URL contains two optional parameters `pageNumber` and `pageSize`. The results are sorted by warehouses by pages with size {pageSize}. The specified number of page {pageNumber} is returned. A request of this format returns the requests from number **({pageNumber} - 1) * {pageSize}** for the records next {pageSize} location IDs. 
+
+The response of version 2.0 is as following: 
+
+```txt
+{
+    Value: { # Response same as Api-Version=1.0 }
+    nextLink: onhand/indexquery?pageNumber={pageNumber+1}&pageSize={pageSize}
+}
+```
+
+When the request hits the last page, the nextLink value is an empty string. 
+
+
 ### <a name="query-with-get-method"></a>Query by using the get method
 
 ```txt
@@ -702,6 +738,8 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_contoso_product&siteId=iv_contoso_site&locationId=iv_contoso_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
+Querying inventory over multiple organization IDs with GET method is not supported.
+
 ## <a name="exact-query-with-post-method"></a>On-hand exact query
 
 On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
@@ -719,6 +757,12 @@ For a regular on-hand query, if you specify `"siteId": ["1","2"]` and `"location
 As you see, the regular on-hand query doesn't recognize that location A exists only in site 1, and location B exists only in site 2. Therefore, it makes redundant queries. To accommodate this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in the query body. In this case, you'll query and receive results for only site 1, location A and site 2, location B.
 
 ### <a name="exact-query-with-post-method"></a>Exact query by using the post method
+
+On hand exact query has two versions 1.0 and 2.0 respectively. 
+- Version 1.0 can only query 1 organization ID，version 2 supports querying multiple organization IDs by putting organization ID into each exact query entries
+
+
+#### Version 1.0
 
 ```txt
 Path:
@@ -791,6 +835,36 @@ The following example shows how to query all products in multiple sites and loca
     "returnNegative": true
 }
 ```
+
+#### Version 2.0
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="2.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            productId: string[],
+            keys: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+Compared to `Api-Version=1.0`, Version 2.0 has below differences
+- The filter has a `keys` field to specify `organizationID` and other inventory dimensions as `Dimensions` in `Api-Version=1.0`
+- User do not need to specify `organizationID` as a separate filter in `filters`
+
+Other fields are identical to `Api-version=1.0`
 
 ## <a name="product-search-query"></a>Query with product search
 
