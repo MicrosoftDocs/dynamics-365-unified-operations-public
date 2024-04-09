@@ -64,6 +64,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     | Correction letter | <p><b>Mapping name:</b> FD correction letter context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Correction letter mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NF-e (BR) |
     | Service Fiscal document | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
     | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
+   | LedgerJournalTrans | <p>**Mapping name:** ... context</p><p>**Configuration:** ... context model</p> | <p>**Mapping name:**  ... invoice model mapping</p><p>**Configuration:** ...invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
 
