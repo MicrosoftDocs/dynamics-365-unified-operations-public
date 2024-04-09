@@ -5,7 +5,6 @@ author: jasongre
 ms.author: jasongre
 ms.topic: overview
 ms.date: 05/26/2022
-ms.topic: overview
 ms.reviewer: josaw
 audience: Developer, IT Pro
 ms.search.region: Global

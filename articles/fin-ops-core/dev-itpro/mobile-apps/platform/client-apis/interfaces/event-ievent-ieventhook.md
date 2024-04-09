@@ -3,7 +3,7 @@ title: EventHook type<T>
 description: Learn about the EventHook type, including learning about the subscribe, unsubscribe, and unsubscribeAll methods and parameters.
 author: jasongre
 ms.author: jasongre
-ms.topic:
+ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: josaw
 audience: Developer
