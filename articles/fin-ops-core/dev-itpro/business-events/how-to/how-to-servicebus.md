@@ -6,7 +6,7 @@ ms.author: sunilg
 ms.topic: article
 ms.date: 11/04/2019
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: Platform update 27

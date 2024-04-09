@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: 
 ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28

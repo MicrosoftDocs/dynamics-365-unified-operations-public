@@ -5,7 +5,7 @@ author: laneswenka
 ms.author: laswenka
 ms.topic: article
 ms.date: 01/21/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global

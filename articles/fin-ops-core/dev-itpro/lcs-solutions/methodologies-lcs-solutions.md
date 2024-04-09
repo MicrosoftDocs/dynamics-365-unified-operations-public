@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085

@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.date: 1/11/2023
 ms.custom: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom:

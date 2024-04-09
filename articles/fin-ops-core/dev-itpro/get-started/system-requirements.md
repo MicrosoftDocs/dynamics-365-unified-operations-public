@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: e564d51d-42d3-47c5-b388-93b8219c692a
 ms.search.region: Global
