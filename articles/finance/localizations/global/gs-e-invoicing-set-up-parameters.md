@@ -1,6 +1,6 @@
 ---
-title: Configure Electronic invoicing parameters (preview)
-description: This article explains how to set up the Electronic invoicing parameters (preview).
+title: Configure Electronic invoicing parameters
+description: This article explains how to set up the Electronic invoicing parameters.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -15,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure Electronic invoicing parameters (preview)
+# Configure Electronic invoicing parameters
 
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -45,6 +45,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Fiscal documents mapping** (for Brazilian scenarios, if required)
     - **Advance invoice model mapping** (for Polish scenarios, if required)
     - **Retail fiscal document mapping** (for Saudi Arabian retail-specific scenarios, if required)
+    - **Pending vendor invoice model mapping** (for Danish responses scenarios, if required)
 
 ## Set up Electronic document parameters
 
@@ -63,7 +64,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     | Service Fiscal document | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
    | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
    | LedgerJournalTrans | <p>**Mapping name:** Prepayment invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Customer prepayments</p><p>**Configuration:** Invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
-   | ...VendInvoiceTable... | <p><b>Mapping name:</b> ... context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> ...</p><p><b>Configuration:</b> ... mapping</p> | Electronic invoicing for Malaysia |
+   | VendInvoiceJour | <p><b>Mapping name:</b> ... context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> ...</p><p><b>Configuration:</b> ... mapping</p> | Electronic invoicing for Malaysia |
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
 
