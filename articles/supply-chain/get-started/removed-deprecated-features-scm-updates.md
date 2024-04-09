@@ -44,7 +44,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The **Load planning workbench** page has well-known performance issues. |
+| **Reason for deprecation/removal** | The **Load planning workbench** page has performance issues. |
 | **Replaced by another feature?**   | Yes. The  **Load planning workbench** page has been split into two new workbench pages, which together provide equivalent functionality with significantly improved performance. The new pages are **Inbound load planning workbench** and **Outbound load planning workbench**. |
 | **Product areas affected** | <p>Supply Chain Management – Warehouse management</p><p>Supply Chain Management – Transportation management</p> |
 | **Deployment option** | Cloud and on-premises |
