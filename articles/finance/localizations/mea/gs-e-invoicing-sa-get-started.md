@@ -38,7 +38,6 @@ Before you begin, make sure that the following Electronic reporting (ER) format 
 
 - Sales e-invoice (SA)
 - Project e-invoice (SA)
-- Prepayment e-invoice (SA)
 
 Follow these steps to complete the configuration.
 
@@ -54,7 +53,7 @@ Follow these steps to complete the configuration.
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific method of payment.
 
 1. In the **State** field, change the state of the application-specific parameters to **Completed**. Then select **Save**.
-1. Repeat steps 2 through 8 for the **Project e-invoice (SA)** and **Prepayment e-invoice (SA)** ER format configurations as required.
+1. Repeat steps 2 through 8 for the **Project e-invoice (SA)** ER format configuration as required.
 
 ## Configure Electronic document parameters
 
