@@ -25,12 +25,12 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transaction consolidation* feature to consolidate data about inventory transactions to help improve system performance.
+Over time, the inventory transaction table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transaction consolidation* feature to consolidate data about inventory transaction to help improve system performance.
 
 > [!NOTE]
-> Only financially updated inventory transactions can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
+> Only financially updated inventory transaction can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transaction must have an issue status of *Sold*, and inbound inventory transaction must have a receipt status of *Purchased*.
 
-When you consolidate inventory transactions, all related transactions are moved to the `InventTrans` table. Inventory issue transactions and inventory receipt transactions are consolidated separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they are put into the summarized issue and summarized receipt transactions.
+When you consolidate inventory transaction, all related transaction are moved to the `InventTrans` table. Inventory issue transaction and inventory receipt transaction are consolidated separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they are put into the summarized issue and summarized receipt transaction.
 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
@@ -41,28 +41,28 @@ If an `itemId` and `inventDimId` combination contains only one receipt or issue 
 
 If your system doesn't already include the features that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transaction consolidation* feature. Note that this feature cannot be disabled once it has been enabled.
 
-## Things to consider before you consolidate inventory transactions
+## Things to consider before you consolidate inventory transaction
 
-Before you consolidate inventory transactions, you should consider the following business scenarios, because they will be affected by the operation:
+Before you consolidate inventory transaction, you should consider the following business scenarios, because they will be affected by the operation:
 
-- When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as consolidated. To review the consolidated transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transaction consolidation**.
+- When you audit inventory transaction from related documents, such as purchase order lines, they will be shown as consolidated. To review the consolidated transaction, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transaction consolidation**.
 - Inventory closing can't be canceled for consolidated periods. 
 - Standard cost conversion can't be done for consolidated periods. 
-- Inventory reports that are sourced from inventory transactions will be affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
+- Inventory reports that are sourced from inventory transaction will be affected when you consolidate inventory transaction. These reports include the inventory aging report and inventory value reports.
 - Inventory forecasts might be affected if they are run during the time horizon of consolidated periods.
 
 ## Prerequisites
 
-Inventory transactions can be consolidated only during periods where the following conditions are met:
+Inventory transaction can be consolidated only during periods where the following conditions are met:
 
 - The ledger period must be closed.
 - Inventory closing must be run on or after the to-period date of the consolidation.
 - The period must be at least one year before the from-period date of the consolidation.
 - There must not be any existing inventory recalculations.
 
-## Consolidate inventory transactions
+## Consolidate inventory transaction
 
-To consolidate inventory transactions, follow these steps.
+To consolidate inventory transaction, follow these steps.
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Inventory transaction consolidation**.
 
@@ -81,9 +81,9 @@ To consolidate inventory transactions, follow these steps.
 1. Select **OK**.
 1. You receive a message that prompts you to confirm that you want to continue. Read the message carefully, and then select **Yes** if you want to continue.
 
-    You receive a message that states that your inventory transaction consolidation job has been added to the batch queue. The job will now start to consolidate inventory transactions from the selected period.
+    You receive a message that states that your inventory transaction consolidation job has been added to the batch queue. The job will now start to consolidate inventory transaction from the selected period.
 
-## View consolidated inventory transactions
+## View consolidated inventory transaction
 
 The **Inventory transaction consolidation** page shows your full consolidating history. Each row in the grid shows information such as the date when the consolidation was created, the user who created it, and its status.
 
@@ -104,9 +104,9 @@ For each consolidation in the grid, the following information is provided:
 
 The toolbar above the grid provides the following buttons that you can use to work with a selected consolidation:
 
-- **Consolidated transactions** – View the full details of the selected consolidation. The **Consolidated transactions** page that appears shows all the transactions in the consolidation.
+- **Consolidated transaction** – View the full details of the selected consolidation. The **Consolidated transaction** page that appears shows all the transactions in the consolidation.
 
-    To view more information about a specific transaction on the **Consolidated transactions** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
+    To view more information about a specific transaction on the **Consolidated transaction** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
 
 - **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation has been paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.
