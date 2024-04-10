@@ -75,21 +75,15 @@ Any time that you modify the configuration and save your changes, the system sav
 
 ## Data Partition Rule
 
-Inventory Visibility add-in provides 3 ways to distribute and store user's inventory data: 
-- By Location
-- By Location and Product ID
-- By Product ID
-
-When data stored `By Location` and `By Location and Product ID`, inventory data are stored group by location IDs. Inventory operations, including queries and changes must take place in a specific location ID. 
-When data stored `By Product ID`, user are allowed to query and change inventory across locations. 
+Inventory Visibility add-in provides following ways to distribute and store user's inventory data: 
+- By Location. Choose this option if for your business whenever you do onhand query, inventory adjustment, reservation or allocation, you always know your site and warehouse information. 
+- By Product ID. Choose this option if for your business there are common cases when site or warehouse information is not always known when calling IV, for example it is common in ecommerce in-basket reservation that item does not have a fulfillment warehouse when online order was initially placed, in this case you may call IV to query onhand and make reservation with blank warehouse information.
 
 To change data partition rule, user goes to Inventory Visibility App, select `Data Partition Rule` and choose the rule preferred. Then an update configuration is required. User need to [clear all inventory data](#delete-data) before updating configuration. Otherwise, the update configuration always fails.
 
 Data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, `By Product ID` is suggested when user do a lot of query across different location IDs; `By Location` is suggested when user queries for multiple products under same location. 
 
-`By Location and Product ID` is automatically selected when user pushes data from Dynamics 365 SCM for the first time. User do not need to switch to this option manually.
-
-When using partition rule `By Location` and `By Location and product ID`, the following rule is included in the solution by default and cannot be changed. This will be set 0 of Index Hierarchy. When using `By Product ID` the rule has no effect on Inventory Visibility APIs. 
+When using partition rule `By Location`, the following rule is included in the solution by default and cannot be changed. This will be set 0 of Index Hierarchy. When using `By Product ID` the rule has no effect on Inventory Visibility APIs. 
 
 | Base dimension | Hierarchy |
 |---|---|
