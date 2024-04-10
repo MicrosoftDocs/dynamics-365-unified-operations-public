@@ -25,6 +25,9 @@ This feature is especially beneficial for high-volume businesses, where it can s
 - A retailer can support continuous packing and shipping operations, even during inventory shortages.
 - In high-velocity sales and production environments, goods can be sold before they reach the storage facility from the production line.
 
+> [!NOTE]
+> The re-waving feature is working in a way that it will pick up lines that have failed when they are waved (allocation in the wave fails) and if activated, you will be able to see the lines in the new form ready to be re-waved, using batch job.
+
 ## Prerequisites
 
 To use the features described in this article, your system must meet the following requirements:
