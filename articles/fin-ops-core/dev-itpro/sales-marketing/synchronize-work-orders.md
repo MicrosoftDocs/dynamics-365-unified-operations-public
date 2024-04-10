@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Synchronize work orders with project from Field Service to Supply Chain Management
-description: This article discusses the templates and underlying task that are used to synchronize work orders with a project number from Dynamics 365 Field Service to Dynamics 365 Supply Chain Management.
+description: Learn about the templates used to synchronize work orders with project numbers from Dynamics 365 Field Service to Dynamics 365 Supply Chain Management.
 author: Henrikan
-ms.date: 03/12/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
 ms.author: henrikan
-ms.dyn365.ops.version: 8.1.3 
+ms.topic: article
+ms.date: 03/12/2019
+ms.custom:
+ms.reviewer: kamaybac
+audience: IT Pro
+ms.search.region: global
+ms.dyn365.ops.version: 8.1.3
+ms.search.form: 
 ms.search.validFrom: 2018-12-01
-
 ---
 
 # Synchronize work orders with project from Field Service to Supply Chain Management
