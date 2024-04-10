@@ -175,6 +175,16 @@ To enable workers to process unannounced returns, you must create a separate mob
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add the new menu items to an appropriate place in your mobile device menu structure.
 
+## Integrate return label printing with small parcel shipping
+
+Small parcel shipping (SPS) integration used for retreival of the shipping labels from carriers/carrier hubs integrated via SPS interface can now be used for retreiving of the return labels from same set of integrated carriers. If you are using packing stations and you whish to retreive and print carrier based return labels that can be shipped with a package for lean return process, you can use existing SPS setup with a little twist as explained in the setup where the field is introduced. Return labels make it easy for your customers to return items, with return shipping costs automatically handled by the your carrier using a single click return identification based on carrier label in order to identify return data generated for rapid returns. 
+
+Follow these steps to enable return details with SPS integration:
+
+1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. On the **Shipping carriers** FastTab, set **Enable shipping label request type** to *Yes*. This setting adds a new field called *Print container return shipping label rule* on the **Container packing polcies** page on the **Carrier label printing** fasttab , which allows users to select wheter they *never*, *always*, or *if set up exists*, to print a return shipping label.
+For more information about how to set up SPS integration, see [Small parcel shipping](small-parcel-shipping.md).
+
 ## Print return labels
 
 When you use a *Return details* return process, you must print a return label for each shipment and include that label with the shipment. Printing options are established by the *container packing policy* that applies for each shipment. Depending on how you set up your system, return labels are typically printed as part of the container closing process, though you can also print or reprint them manually for a selected return details record at any time.
@@ -192,8 +202,8 @@ Follow these steps to configure the label printing options for a container packi
 1. On the **Carrier label printing** FastTab, make the following settings:
     - **Print container shipping label rule** – Select the rule for printing outbound shipping labels. Choose one of the following options:
         - *Never* – Users can close containers without printing a shipping label.
-        - *Always* – A shipping label is required. Users can't close the container unless the system is able to retrieve a label. <!--KFM: What do we mean by "retrieve"? Same as print? -->
-        - *If setup exists* – For containers where a shipping label setup exists <!--KFM: Is the setup associated with each container, or with something else? -->, the system must retrieve the required label before users can close the container. For containers where no shipping label setup exists, users can close the container without printing a label.
+        - *Always* – A shipping label is required. Users can't close the container unless the system is able to retrieve a label.
+        - *If setup exists* – For containers where a shipping label setup exists, the system must retrieve the required label before users can close the container. For containers where no shipping label setup exists, users can close the container without printing a label.
     - **Print container return shipping label rule** – Select the rule for printing return labels to be included in each container. Choose one of the following options:
         - *Never* – Users can close containers without printing a return label.
         - *Always* – A return label is required. Users can't close the container unless the system is able to retrieve a label.
@@ -206,17 +216,6 @@ Follow these steps to manually print or reprint a return label for a return deta
 1. On the list pane, select the return details record that you want to print a label for.
 1. On the Action Pane, select **Print** \> **Return shipping label**.
 1. The printer used is the one specified in the relevant *container packing policy* associated with the **Container ID** listed for the return details record.
-
-## Integrate return label printing with small parcel shipping
-
-Small parcel shipping (SPS) integration helps streamline the return process. It enables you to print return labels for small parcel shipping carriers and communicate through carrier APIs. Return labels make it easy for your customers to return items, with return shipping costs automatically handled by the SPS carrier.
-
-Follow these steps to enable return details with SPS integration:
-
-1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
-1. On the **Shipping carriers** FastTab, set **Enable shipping label request type** to *Yes*. This setting adds a new field to the shipping carrier service, which lets you customize the request sent to the carrier. <!--KFM: Where is this new field (page name)? What is the field called (label name)? How do we use it? How/why might I "customize" this? Should we add something about this to the existing SPS topic? It isn't clear how this helps us achieve the goals outlined in the intro. -->
-
-For more information about how to set up SPS integration, see [Small parcel shipping](small-parcel-shipping.md).
 
 ## Example scenarios
 
