@@ -2,8 +2,10 @@
 title: Electronic invoicing in Saudi Arabia
 description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia (preview).
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
+ms.date: 04/10/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -11,8 +13,6 @@ ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ms.collection: get-started
-ms.assetid: 
-ms.search.form: 
 ---
 
 # Electronic invoicing in Saudi Arabia 
@@ -57,7 +57,7 @@ Follow these steps to complete the configuration.
 
 Follow these steps to complete the configuration.
 
-1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md)
+1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and, if required, for the **Project invoice**, **Journal lines**, and **Fiscal transaction document** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
