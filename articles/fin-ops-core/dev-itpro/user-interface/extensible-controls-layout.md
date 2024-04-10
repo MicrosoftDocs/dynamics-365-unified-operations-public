@@ -3,6 +3,7 @@ title: Extensible control layout guidelines
 description: Learn about extensible control layout guidelines, including dos and don'ts for acheiving desired layouts with an outline on layout binding handlers.
 author: jasongre
 ms.author: jasongre
+ms.topic: article
 ms.date: 04/27/2020
 ms.reviewer: josaw
 audience: Developer

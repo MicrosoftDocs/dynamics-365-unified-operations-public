@@ -3,6 +3,7 @@ title: Create icons for workspace tiles
 description: Learn about creating icons for workspace tiles, including overviews on implementation details, icon creation, and examples.
 author: jasongre
 ms.author: jasongre
+ms.topic: article
 ms.date: 01/22/2021
 ms.reviewer: josaw
 audience: Developer

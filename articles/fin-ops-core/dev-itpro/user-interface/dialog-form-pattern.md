@@ -3,6 +3,7 @@ title: Dialog form pattern
 description: Learn about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel.
 author: jasongre
 ms.author: jasongre
+ms.topic: article
 ms.date: 10/08/2018
 ms.reviewer: josaw
 audience: Developer
