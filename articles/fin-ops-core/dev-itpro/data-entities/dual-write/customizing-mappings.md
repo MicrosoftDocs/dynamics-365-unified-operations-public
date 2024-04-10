@@ -58,9 +58,9 @@ The out-of-box table maps have predefined table and column mappings that enable 
     | Default | Default values are values that are applied to destination columns when no source column value is available. Use default values for columns that are required on the destination table when you have no corresponding source column. |
     | Value map | Value maps define how values that are present in one table should be mapped to values in the other table. |
 
-   In addition to adding transformation value mappings by adding or updating the mapping fields, you have the option to modify the generated JSON directly. In the **Transform** section of the slide out pane, select **Show JSON** to open the field with the generated JSON for the value mappings. When you modify and save the JSON, the value mapping fields are updated to reflect the changes made to the JSON.
+   In addition to adding transformation value mappings by adding or updating the mapping fields, you can modify the generated JSON directly. In the **Transform** section of the slide out pane, select **Show JSON** to open the field with the generated JSON for the value mappings. When you modify and save the JSON, the value mapping fields are updated to reflect the changes made to the JSON.
 
-   Directly modifying the JSON is useful where the fields may not be able to manage the values needed. For example, entering "null" in a value mapping field considers "null" as a string value rather than a `null` value. You can work around this by modifying the JSON directly. If you need to map the value "0" in finance and operations apps to a `null` value in Dataverse, you can enter the following JSON:
+   Directly modifying the JSON is useful where the fields may not be able to manage the values needed. For example, entering "null" in a value mapping field considers "null" as a string value rather than a `null` value. You can work around this situation by modifying the JSON directly. If you need to map the value "0" in finance and operations apps to a `null` value in Dataverse, you can enter the following JSON:
 
    ```json
    [
@@ -80,7 +80,7 @@ The out-of-box table maps have predefined table and column mappings that enable 
 
     ![Adding a new birthdate column.](media/add-new-field.png)
 
-6. When you've finished customizing the column mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
+6. When you finish customizing the column mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
 
     ![Specifying a publisher and a version number.](media/choose-publisher-version.png)
 
@@ -92,7 +92,7 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
     ![Filter button.](media/select-filter-icon.png)
 
-2. In the **Edit query** dialog box, specify your filters. In this example, the filter that is specified will return only accounts where the account type equals **3**.
+2. In the **Edit query** dialog box, specify your filters. In this example, the filter that is specified returns only accounts where the account type equals **3**.
 
     ![Specifying filters.](media/specify-filters.png)
 
@@ -132,7 +132,7 @@ The following example shows how to add a new table map that is named **Address b
     > [!NOTE]
     > When you [create a new solution](app-lifecycle-management.md#create-new-solution) that uses these modified table maps, you must specify the same publisher.
 
-2. Confirm the table maps that you just modified and added. Be sure to enable and test them, to ensure that they work as you expect.
+2. Confirm the table maps that you modified and added. Be sure to enable and test them, to ensure that they work as you expect.
 
     ![Confirming the table maps.](media/confirm-entity-maps.png)
 
