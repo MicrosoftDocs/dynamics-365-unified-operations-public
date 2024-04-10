@@ -1,6 +1,6 @@
 ---
-title: Archive inventory journal data in Dynamics 365 Supply Chain Management (preview)
-description: This article explains how to archive data for an inventory journal by using Microsoft Dataverse long term retention.
+title: Archive Dynamics 365 Supply Chain Management Inventory journals data (preview)
+description: This article explains how to archive Dynamics 365 Supply Chain Management Inventory journals data.
 author: epodkolz
 ms.author: epodkolzina
 ms.reviewer: twheeloc
@@ -9,11 +9,11 @@ ms.date: 3/20/2024
 ms.custom:
 
 ---
-# Archive inventory journal data in Dynamics 365 Supply Chain Management (preview)
+# Archive Dynamics 365 Supply Chain Management Inventory journals data (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-This article explains how to archive data for an inventory journal by using Microsoft Dataverse long term retention.
+This article explains how to archive Dynamics 365 Supply Chain Management Inventory journals data.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Before you archive inventory journal data, the following prerequisites must be m
 
 The **Archive with Dataverse long term retention** workspace should now be available in the **Workspaces** list in finance and operations apps.
 
-## Schedule the long term retention job
+## Set up an archival job
 
 To move inventory journal records to Dataverse long term retention, follow these steps.
 
