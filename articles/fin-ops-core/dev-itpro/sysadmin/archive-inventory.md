@@ -1,6 +1,6 @@
 ---
-title: Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
-description: This article explains how to archive inventory transaction data in Microsoft Dynamics 365 Supply Chain Management.
+title: Archive Dynamics 365 Supply Chain Management Inventory transactions data (preview)
+description: This article explains how to archive Microsoft Dynamics 365 Supply Chain Management Inventory transactions data.
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
@@ -9,11 +9,11 @@ ms.date: 2/06/2024
 ms.custom:
 
 ---
-# Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
+# Archive Dynamics 365 Supply Chain Management Inventory transactions data (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-This article explains how to archive data for inventory transactions with Dataverse long term retention.
+This article explains how to archive Dynamics 365 Supply Chain Management Inventory transactions.
 
 Currently, users can consolidate and compress the inventory transactions table (InventTrans) and archive the original records in the InventTransArchive table. For more information, see [Archive inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md).
 
@@ -43,7 +43,7 @@ If your system doesn't already include the features, follow these steps.
 
 For more information about how to archive inventory transactions, see [Archive inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md).
 
-## Schedule the long term retention job
+## Set up an archival job
 
 To move InventTransArchive records to the Dataverse long term retention, follow these steps.
 
