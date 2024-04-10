@@ -35,7 +35,7 @@ When you consolidate inventory transactions, all related transactions are moved 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
 > [!NOTE]
-> The [ with Dataverse long term retention feature](../../fin-ops-core/dev-itpro/sysadmin/-inventory.md) helps to remove record from InventTrans table to data lake for long term retension.
+> The [Archive with Dataverse long term retention feature](../../fin-ops-core/dev-itpro/sysadmin/-inventory.md) helps to remove record from InventTrans table to data lake for long term retension.
 
 ## Turn on the feature in your system
 
