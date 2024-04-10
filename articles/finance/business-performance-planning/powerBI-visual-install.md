@@ -4,7 +4,7 @@
 title: Install business performance planning visuals
 description: This article describes how to install business performance planning visuals.
 author: ShielaSogge
-ms.date: 12/07/2023
+ms.date: 04/10/2024
 ms.topic: article
 ms.reviewer: twheeloc
 
@@ -31,18 +31,33 @@ This article describes how to install business performance planning visuals. To 
 ## Prerequisites for the installation of Power BI visuals
 
 1. Import business performance planning visuals from [Microsoft AppSource](https://appsource.microsoft.com). For more information, see [Import visuals](/power-bi/developer/visuals/import-visual).
-2. Connect Power BI to your Dataverse environment. For more information, see [Connect to Dataverse using a Connector](/power-apps/maker/data-platform/data-platform-powerbi-connector?tabs=Dataverse#connect-to-dataverse-using-a-connector) or [Use Direct Query in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
+2. Connect Power BI to your Dataverse environment. For more information, see [Use Direct Query in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
 3. To work with the visuals and publish to a Power BI workspace, a Power BI license is required.  For more information, see [Licenses and subscriptions for business users](/power-bi/consumer/end-user-license).
-
 4. You must have authentication for Power BI enabled for the visuals to work.  For more information, see [Obtain Microsoft Entra access token](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
+5. When connecting to a cube in Power BI, you must select SQL server as the datasource.
 
 
    > [!NOTE]
     > You must have the **Allow custom visuals to get user Azure Active Directory access tokens** feature enabled in step 4. If this feature is not enabled, you receive the following error: **Unable to authenticate to Dataverse service**.
+   > For step 5, don't use Dataverse connector as there are limits with importing data with logical names, which is required for visuals write-back functionality. 
+
+## Connect to your data
+When connecting to the data in Power BI, you must select SQL server as the data source.
+
+To select SQL server as a data source, follow these steps: 
+1. In Power BI, go to **Get data** or select SQL Server or click on SQL Server in the ribbon (menu bar).
+2. After selecting SQL server as the data source, set the **Data connectivity** mode to **Direct query**.
+3. After the cube is selected, enable the **Load selected tables** option to automatically select any dimension tables that are used in the cube.
+4.	If prompted to login, select the **Microsoft account** tab, select **Sign in**.
+5.	On the top of the **Navigator** page, search for your cube.  Note: The names of planning cube tables have the "msdyn_xpnacube" prefix, and the names of planning dimension tables have the "msdyn_xpnadim" prefix. If you are unsure of your cube name, go to **Business performance planning** and select the cube to add.
+6.	In the cube properties section, copy the **Write back** table name and enter it in the search bar at the top of the **Navigator** page.
+7.	After the cube is found in the **Navigator** page, select the checkbox to the left of the cube name.
+8.	At the bottom of the **Navigator** page, click **Select related tables** to import the entire data model (this brings in all of the dimensions in the cube).
+9. After all the dimensions in the cube have a check mark next to them, select **Load**. This may take a few minutes. After completed, your data displays in the **Data** in Power BI.
+
 
 ### Recommendations
 
-- We recommend that you connect to SQL Server by using Direct Query. Then, after the cube is selected, enable the **Load selected tables** option to automatically select any dimension tables that are used in the cube.
 - The names of planning cube tables have the "msdyn\_xpnacube" prefix, and the names of planning dimension tables have the "msdyn\_xpnadim" prefix. Use these prefixes to search for the cube or dimensions when you connect via SQL Server and Direct Query.
 - After the cube is selected on the **Navigator** page, select **Select related tables** to automatically load data relationships between the cube and the dimension into Power BI.
 
