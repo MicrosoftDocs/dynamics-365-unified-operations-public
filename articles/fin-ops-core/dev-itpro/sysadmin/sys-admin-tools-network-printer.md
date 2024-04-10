@@ -2,7 +2,7 @@
 title: Manage access to network printers across legal entities
 description: Learn about how to use the System administration utility to set up network printers, including overviews on accessing features and supported operations.
 author: RichdiMSFT
-ms.author: richdi
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 12/11/2018
 ms.reviewer: johnmichalak
