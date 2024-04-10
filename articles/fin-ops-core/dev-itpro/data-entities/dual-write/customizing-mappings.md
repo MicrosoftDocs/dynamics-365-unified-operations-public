@@ -56,13 +56,29 @@ The out-of-box table maps have predefined table and column mappings that enable 
     | Default | Default values are values that are applied to destination columns when no source column value is available. Use default values for columns that are required on the destination table when you have no corresponding source column. |
     | Value map | Value maps define how values that are present in one table should be mapped to values in the other table. |
 
-4. You can add a new column by selecting **Add mapping** and then selecting an existing or custom column in the list.
+   In addition to adding transformation value mappings by adding or updating the maping fields, you have the option to modify the generated JSON directly. In the **Transform** section of the slideout pane, select **Show JSON** to open the field with the generated JSON for the value mappings. When you modify and save the JSON, the value mapping fields will be updated to reflect the changes made to the JSON.
+
+   Directly modifying the JSON is useful where the fields may not be able to manage the values needed. For example, entering "null" in a value mapping field will consider "null" as a string value rather than a `null` value. You can work around this by modifying the JSON directly. If you need to map the value "0" in finance and operations apps to a `null` value in Dataverse, you can enter the following JSON:
+
+   ```json
+   [
+	    {
+		    "transformType": "ValueMap",
+		    "valueMap": {
+			    "0": null
+		    }
+	    }
+    ]
+
+   ```
+
+5. You can add a new column by selecting **Add mapping** and then selecting an existing or custom column in the list.
 
     The following illustration shows an example where a new **birthdate** column is being added.
 
     ![Adding a new birthdate column.](media/add-new-field.png)
 
-5. When you've finished customizing the column mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
+6. When you've finished customizing the column mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
 
     ![Specifying a publisher and a version number.](media/choose-publisher-version.png)
 
