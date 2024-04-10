@@ -1,15 +1,13 @@
 ---
 title: Modify a workspace with a tile, list, and data cache
-description: In this tutorial, you'll create a new tile in the summary section of a workspace, build a new list, and create a data cache for the list.
+description: Learn about modifying a workspace with tiles, lists, and data caches, including prerequisites, key concepts, and overviews on various workspaces.
 author: jasongre
-ms.date: 11/30/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 11/30/2020
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

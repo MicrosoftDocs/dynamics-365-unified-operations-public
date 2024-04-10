@@ -1,15 +1,12 @@
 ---
 title: Create icons for workspace tiles
-description: This article provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.
+description: Learn about creating icons for workspace tiles, including overviews on implementation details, icon creation, and examples.
 author: jasongre
-ms.date: 01/22/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.date: 01/22/2021
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
