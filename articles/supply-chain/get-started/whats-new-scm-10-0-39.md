@@ -71,7 +71,7 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Inventory management | [Inventory Visibility diagnostic tool](../inventory/inventory-visibility-diagnostic-tool.md) |
-| Inventory management | [Use the Inventory Visibility app UI version 2 (preview)](../inventory/inventory-visibility-power-platform.md) – Many other articles about the Inventory Visibility Add-in have also been updated to reflect the new UI for the Inventory Visibility app in Power Apps. |
+| Inventory management | [Use the Inventory Visibility app UI version 2](../inventory/inventory-visibility-power-platform.md) – Many other articles about the Inventory Visibility Add-in have also been updated to reflect the new UI for the Inventory Visibility app in Power Apps. |
 | Master planning | [Safety stock pegging options](../master-planning/safety-stock-pegging.md) |
 | Sales and marketing | [Calculate sales totals when prices include sales tax](../sales-marketing/sales-tax-calculation.md) |
 | Warehouse management | [Automatic rewaving of nonallocated shipment lines](../warehousing/auto-rewave-shipments.md) |
