@@ -2,7 +2,7 @@
 title: Add-ins overview
 description: Learn about add-ins, which can be used to extend the functionality of finance and operations apps, including overviews of various add-ins.
 author: ankugo
-ms.author: ankugo
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 02/11/2022
 ms.reviewer: johnmichalak
