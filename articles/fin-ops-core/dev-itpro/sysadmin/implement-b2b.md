@@ -1,20 +1,17 @@
 ---
 title: Export business-to-business (B2B) users to Microsoft Entra ID
-description: This article provides information about implementing the business-to-business transaction functionality.
+description: Learn about implementing the business-to-business transaction functionality, including an overview on setting up invitation service applications.
 author: paulliew
-ms.date: 04/09/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: paulliew
+ms.topic: article
+ms.date: 04/09/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-10-31
-ms.dyn365.ops.version: Platform update 12
-ms.custom: 
-ms.assetid: 
 ms.search.form: B2BInvitationConfiguration
+ms.dyn365.ops.version: Platform update 12
 ---
 
 # Export business-to-business (B2B) users to Microsoft Entra ID

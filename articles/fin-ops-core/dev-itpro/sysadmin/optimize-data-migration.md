@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Optimize data migration for finance and operations apps
-description: The article provides an overview of steps and actions that you can use to optimize data migration for finance and operations apps.
+description: Learn about steps and actions that you can use to optimize data migration for finance and operations apps, including an outline on disabling change tracking.
 author: skaue-ms
-ms.date: 10/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: toskaue
+ms.topic: article
+ms.date: 10/20/2021
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
-
 ---
 
 # Optimize data migration for finance and operations apps

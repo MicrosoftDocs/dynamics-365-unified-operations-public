@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Preconfigured system accounts
-description: This article provides information about the system accounts that are preconfigured on your finance and operations environments.
+description: Learn about the system accounts that are preconfigured on your finance and operations environments with a table that outlines the purpose for various accounts.
 author: jaredha
-ms.date: 04/10/2024
+ms.author: jaredha
 ms.topic: conceptual
+ms.date: 04/10/2024
 ms.custom: 
   - bap-template
-
-# optional metadata
-
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jaredha
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
-
 ---
 
 # Preconfigured system accounts
