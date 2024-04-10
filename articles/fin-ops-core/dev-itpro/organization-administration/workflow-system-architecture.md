@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Workflow system architecture
-description: This article describes the architecture of the workflow system.
+description: Learn about the architecture of the workflow system, including a table that outlines the runtime and activity for each step.
 author: ChrisGarty
-ms.date: 08/18/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 08/18/2017
+ms.reviewer: twheeloc 
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
 ---
 
 # Workflow system architecture

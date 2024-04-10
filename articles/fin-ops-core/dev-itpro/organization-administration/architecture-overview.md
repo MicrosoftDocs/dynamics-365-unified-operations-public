@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Finance and operations application architecture
-description: This article provides an overview of the architecture of finance and operations applications.
-author: abunduc-ms
-ms.date: 04/24/2020
+description: Learn about the architecture of finance and operations applications, including definitions for various conceptual areas for cloud architecture.
+author: kfend
+ms.author: kfend
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 04/24/2020
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.collection: get-started
+audience: IT Pro
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abunduc
 ms.search.validFrom: 2018-05-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Finance and operations application architecture
