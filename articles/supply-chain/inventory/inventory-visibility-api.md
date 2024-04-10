@@ -602,7 +602,7 @@ Body:
 
 ## Query on-hand
 
-Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. When using data partition rule `By Location` or `By Location and Product ID`, the maximum limit is defined by the following equation:
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. When using data partition rule `By Location`, the maximum limit is defined by the following equation:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -639,7 +639,7 @@ The `returnNegative` parameter controls whether the results contain negative ent
 
 ### Query data stored by Location.
 
-This applies to the case when Inventory Visibility's Data Partition Rule is `By Location` and `By Location and Product ID`. 
+This applies to the case when Inventory Visibility's Data Partition Rule is `By Location`.
 
 - `organizationId` should be an array containing exactly one value.
 - `productId` can contain one or more values. If it's an empty array, the system will return all products of the specific sites and locations. In this case, `siteId` and `locationId` should not be empty.
@@ -761,7 +761,7 @@ In the body part of this request, `dimensionDataSource` is an optional parameter
 
 - `organizationId` should contain only one value, but it's still an array.
 - `productId` could contain one or more values. If it's an empty array, all products will be returned.
-- In the `dimensions` array, `siteId` and `locationId` are required if and only if using Data Partition Rule `By Location` and `By Location and Product ID`; in this case, they could appear with other elements in any order.
+- In the `dimensions` array, `siteId` and `locationId` are required if and only if using Data Partition Rule `By Location`; in this case, they could appear with other elements in any order.
 - `values` could contain one or more distinct tuples of values corresponding to `dimensions`.
 
 `dimensions` in `filters` will be automatically added to `groupByValues`.
