@@ -2,17 +2,16 @@
 title: Configure Electronic invoicing parameters
 description: This article explains how to set up the Electronic invoicing parameters in Globalization Studio.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
+ms.date: 04/10/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
 ---
 
 # Configure Electronic invoicing parameters
