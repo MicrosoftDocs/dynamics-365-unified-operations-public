@@ -37,9 +37,11 @@ The managed workflow runtime consists of the Windows Workflow Foundation and fin
 
 Logically, the workflow infrastructure is an extension and is transparent to users. Physically, both the X++ workflow and the managed workflow runtimes are hosted on AOS. The workflow infrastructure uses batch processing on AOS and .NET Interop to integrate both subsystems, and to pass messages from one subsystem to the other. The X++ code that is run in the batch processor is compiled to .NET CIL. The batch processing runs in the .NET common language runtime (CLR).
 
+<!-- Image needs to be updated
+
 The following figure shows the high-level architecture of the workflow infrastructure.
 
-[![workflow\_architecturediagram2016.](../../fin-ops/organization-administration/media/workflow_architecturediagram2016.png)](/media/workflow_architecturediagram2016.png)
+[![workflow\_architecturediagram2016.](../../fin-ops/organization-administration/media/workflow_architecturediagram2016.png)](/media/workflow_architecturediagram2016.png) -->
 
 Users can use workflow pages and controls to participate in business processes.
 
