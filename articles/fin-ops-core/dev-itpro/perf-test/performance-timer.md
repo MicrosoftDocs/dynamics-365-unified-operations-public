@@ -2,7 +2,7 @@
 title: Performance timer
 description: Access an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow.
 author: josaw1
-ms.author: chwolf
+ms.author: josaw
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: josaw
