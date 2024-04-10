@@ -30,7 +30,7 @@ Over time, the inventory transaction table (`InventTrans`) will continue to grow
 > [!NOTE]
 > Only financially updated inventory transaction can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transaction must have an issue status of *Sold*, and inbound inventory transaction must have a receipt status of *Purchased*.
 
-When you consolidate inventory transaction, all related transaction are moved to the `InventTrans` table. Inventory issue transaction and inventory receipt transaction are consolidated separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they are put into the summarized issue and summarized receipt transaction.
+When you consolidate inventory transaction, all related transactions are moved to the `InventTrans` table. Inventory issue transaction and inventory receipt transactions are consolidated separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they are put into the summarized issue and summarized receipt transaction.
 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
@@ -39,7 +39,7 @@ If an `itemId` and `inventDimId` combination contains only one receipt or issue 
 
 ## Turn on the feature in your system
 
-If your system doesn't already include the features that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transaction consolidation* feature. Note that this feature cannot be disabled once it has been enabled.
+If your system doesn't already include the feature that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transaction consolidation* feature. This feature cannot be disabled once it is enabled.
 
 ## Things to consider before you consolidate inventory transaction
 
@@ -81,7 +81,7 @@ To consolidate inventory transaction, follow these steps.
 1. Select **OK**.
 1. You receive a message that prompts you to confirm that you want to continue. Read the message carefully, and then select **Yes** if you want to continue.
 
-    You receive a message that states that your inventory transaction consolidation job has been added to the batch queue. The job will now start to consolidate inventory transaction from the selected period.
+    You receive a message that states that your inventory transaction consolidation job is added to the batch queue. The job will now start to consolidate inventory transaction from the selected period.
 
 ## View consolidated inventory transaction
 
@@ -108,7 +108,7 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
     To view more information about a specific transaction on the **Consolidated transaction** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
 
-- **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation has been paused, a check mark appears in its **Stop current update** field.
+- **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.
 
 ## Extend your code to support custom fields
