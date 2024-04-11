@@ -19,7 +19,7 @@ ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 
 This article explains how to update the development tools.
 
-Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics Lifecycle Services (LCS) site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package.
+Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics 365 Lifecycle Services site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package.
 
 While working in Visual Studio, you might receive recurring feedback requests regarding new features.
 
@@ -34,7 +34,7 @@ Set-ItemProperty HKCU:\Software\Microsoft\Dynamics\AX7\Development\Configuration
 
 ## Prerequisites
 
-To enable the use of Dynamics 365 Finance and Operations development tools, the **Visual Studio extension development** workload must be installed in your Visual Studio with the **Modeling SDK** option included.
+To enable the use of finance and operations apps development tools, the **Visual Studio extension development** workload must be installed in your Visual Studio with the **Modeling SDK** option included.
 
 If the workload isn't installed, follow these steps to add it.
 
