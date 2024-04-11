@@ -4,9 +4,9 @@ description: This article provides information about automatic rewaving of nonal
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: WHSParameters, WHSWaveProcessingRemovedShipment
 ms.topic: how-to
-ms.date: 04/05/2024
+ms.date: 04/11/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -25,8 +25,7 @@ This feature is especially beneficial for high-volume businesses, where it can s
 - A retailer can support continuous packing and shipping operations, even during inventory shortages.
 - In high-velocity sales and production environments, goods can be sold before they reach the storage facility from the production line.
 
-> [!NOTE]
-> The re-waving feature is working in a way that it will pick up lines that have failed when they are waved (allocation in the wave fails) and if activated, you will be able to see the lines in the new form ready to be re-waved, using batch job.
+The rewaving feature collects shipments lines for inventory that couldn't be allocated during initial wave processing. It adds a **Failed shipment lines** page, where you can review the lines that are ready to be rewaved. A scheduled batch job processes these lines regularly, tries again to allocate inventory for them, and adds the lines to a new wave if inventory is available.
 
 ## Prerequisites
 
@@ -49,15 +48,15 @@ The wave management process involves three key steps:
 
 The rewaving workflow ensures continuous, uninterrupted warehouse operations, even when a shipment line fails. It ends the need for manual monitoring of failed shipment lines and enables work to be automatically created and added to each wave. It proceeds in the following way:
 
-1. **A shipment line fails while a wave is being processed** – In this situation, the system removes the failed shipment line from the wave and continues to process the rest of the wave. A failed shipment line can occur if, for example, you don't have enough inventory at a particular picking location.
-1. **Create a work placeholder for the failed shipment line** – The system creates a placeholder for the work that's required to process the failed shipment. It stores this placeholder in the 'WHSWaveProcessingRemovedShipment' form. (If you aren't using this feature on your system, a user must manually identify failed shipments and then create new work for them.)
+1. **A shipment line fails while a wave is being processed** – The system removes the failed shipment line from the wave and continues to process the rest of the wave. A failed shipment line can occur if, for example, you don't have enough inventory at a particular picking location.
+1. **Create a work placeholder for the failed shipment line** – The system creates a placeholder for the work required to process the failed shipment. It stores this placeholder in the *Failed shipment lines* table. (If you aren't using this feature on your system, a user must manually identify failed shipments and then create new work for them.)
 1. **Replenish inventory** – Inventory at the picking location is replenished according to standard warehouse operations. That inventory then becomes available for shipment in the next wave.
-1. **Automatically rewave** – At the next scheduled run of the *Auto add shipments to wave* batch job, the system checks the 'WHSWaveProcessingRemovedShipment' form for previously failed shipments and creates work for them.
+1. **Automatically rewave** – At the next scheduled run of the *Auto add shipments to wave* batch job, the system checks the *Failed shipment lines* table for previously failed shipments and creates work for them.
 1. **Add work to the next wave** – The *Auto add shipments to wave* batch job adds the newly created work to the next wave for processing.
-1. **Control and remove placeholders for completed shipment lines** – The *Auto add shipments to wave* batch job ends by checking the 'WHSWaveProcessingRemovedShipment' form for records that were successfully processed (that is, their status is no longer *Open*) and that the *Shipment* form includes a shipment for. These records indicate shipment lines that were successfully rewaved. The system cleans up these placeholders by removing them from the form. The system will try to rewave a shipment line up to five times. If a line fails on the fifth attempt, the system stops trying and marks that line as *failed*.
-1. **Cleanup Shipments that failed rewaving** - The *Wave processing removed Shipments Cleanup* job runs, and removes failed shipment lines from the 'WHSWaveProcessingRemovedShipment'form that were not able to be rewaved. These shipment lines will be removed from the *WHSWaveProcessingRemovedShipment* form depending on the configuration on the *Wave processing removed Shipments Cleanup*. It can be configured in a similar way to the *Auto add shipments to wave* page.
+1. **Control and remove placeholders for completed shipment lines** – The *Auto add shipments to wave* batch job ends by checking the *Failed shipment lines* table for records that were successfully processed (that is, their status is no longer *Open*) and that the *Shipment* table includes a shipment for. These records indicate shipment lines that were successfully rewaved. The system cleans up these placeholders by removing them from the table. The system tries to rewave a shipment line up to five times. If a line fails on the fifth attempt, the system stops trying and marks that line as *Failed*.
+1. **Cleanup shipment lines that failed rewaving** - The *Wave processing removed shipments cleanup* job runs, and removes *Failed* shipment lines from the *Failed shipment lines* table. These shipment lines are removed from the *Failed shipment lines* table according to the configuration of the *Wave processing removed shipments cleanup* job.
 
-If users wish to start the rewaving process from the beginning, you will need to allow the cleanup job to remove the failed shipment line that could not be rewaved, manually add it to a new wave, system will fail the shipment again, and the process will start from the beginning, with the counter on the **Failed shipment lines** page being set to 0. 
+To restart the rewaving process from the beginning, you must allow the cleanup job to remove the failed shipment lines that couldn't be rewaved and then manually add them to a new wave. Then, if a shipment line fails again, the rewave process starts over with the retry count reset to 0.
 
 ## Enable rewaving for your system
 
@@ -87,28 +86,27 @@ The rewaving process runs as a batch job that you must schedule to run as often 
 1. Select **OK** to create the job.
 
 1. On the **Records to include** FastTab, you can define selection criteria for limiting the set of shipment lines to be processed.
-    - Select **Filter** to open a standard query editor dialog where you can add or remove filter criteria.
-    - The **Records to include** FastTab lists each field name and value that you've added using the query editor.
-    - The **Number of retries** filter is always included here and its value (5) is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to 5 times. If a line fails on the fifth attempt, the system will stop trying and will mark that line as *failed*.
+    - Select the **Filter** link to open a standard query editor dialog where you can add or remove filter criteria.
+    - The **Records to include** FastTab lists each field name and value that you added using the query editor.
+    - The **Number of retries** filter is always included here and its value (5) is read-only. This field indicates that the system will attempt to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system stops trying and marks that line as *failed*.
 
-### Schedule the cleanup job 
+### Schedule the cleanup job
 
-The cleanup job runs as a batch job that you must schedule to run as often as is required for your system. Follow these steps to set up the batch job.
+The cleanup job removes failed and old shipment lines from the *Failed shipment lines* table. You must schedule it to run as often as is required for your system. To set it up, follow these steps.
 
-1. Go to  **Warehouse Management** \> **Outbound Waves** \> **Wave Proccessing Removed Shipment** \>
+1. Go to  **Warehouse Management** \> **Outbound Waves** \> **Wave processing removed shipment cleanup**.
+1. On the **Parameters** FastTab, make the following settings:
+    - **Cleanup rewave threshold** – Enter the maximum number of retries the cleanup job allows a shipping line to have before removing it from the *Failed shipment lines* table. The *Auto add shipments to wave* batch job allows for maximum of five retires, but you could remove shipping lines sooner than this by entering a lower value here. Values larger than five have no effect.
+    - **Last update older than given number** – Enter the maximum number of days the cleanup job should allow a shipping line to remain in the *Failed shipment lines* table. It removes all shipping lines older than this.
+
 1. On the **Run in the background** FastTab, set the following fields:
 
-    - Set the **Batch processing** option to *Yes*.
-    - Make a note of the **Task description** value. The default value is *Wave Processing Removed Shipment*, but you can change it. You can use this value to monitor and edit the job on the **Batch jobs** page.
+    - **Batch processing** – Set to *Yes*.
+    - **Task description** – Note this value. The default value is *Wave Processing Removed Shipment*, but you can change it. You can use this value to monitor and edit the job on the **Batch jobs** page.
   
-1. Select the **Recurrence** link.
-1. Use the fields that are provided to set up a schedule that defines how often the cleanup job runs, and how long it runs for.
+1. Select the **Recurrence** link and use the fields that are provided to set up a schedule that defines how often the cleanup job runs, and how long it runs for.
 1. Select **OK** to save your schedule for the job.
 1. Select **OK** to create the job.
-
-On the **Parameters** FastTab, you can select the following:
-    - In the **Cleanup rewave threshold** field users can select how many times they want their shipment lines to be rewaved before they are removed from the 'WHSWaveProcessingRemovedShipment' form. That means, even as we have the default setting of five attempted re-waves, the cleanup job can remove shipments from the 'WHSWaveProcessingRemovedShipment'form earlier than after 5 attempts, by selecting a number lower than 5. This can be useful if you would only like failed shipment lines to be re-waved a maximum of say, 3 times before they are removed from the 'WHSWaveProcessingRemovedShipment' form.
-    - In the **Last update older than given number** field, users can select to remove failed shipment lines based on this critera as well. Setting this to 30 means cleanup job will run and remove all failed shipment lines with last update being older than the given number. This means, if we select 30 as our number, if we have a shipment line that was last updated 31 days ago, when the cleanup job runs, that line will be removed from the 'WHSWaveProcessingRemovedShipment' form. 
 
 ## Monitor the rewave process
 
@@ -129,5 +127,5 @@ To monitor the status of all batch jobs, adjust their schedules, and fix any iss
 
 The rewaving feature doesn't support the following processes:
 
-- Automatic work creation for inventory that's stored in locations that aren't configured for wave processing
+- Automatic work creation for inventory stored in locations that aren't configured for wave processing
 - Continuous checks on inventory levels
