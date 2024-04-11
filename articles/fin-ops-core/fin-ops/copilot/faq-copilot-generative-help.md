@@ -1,15 +1,15 @@
 ---
 title: Responsible AI FAQ for Generative help and guidance with Copilot (preview)
-description: This FAQ provides answers to frequently asked questions about the AI technology that's used in generative help and guidance with Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 11/09/2023
-ms.collection:
-  - bap-ai-copilot
-ms.custom:
-  - responsible-ai-faqs
-ms.topic: article
+description: Access answers to frequently asked questions about the AI technology that's used in generative help and guidance with Copilot.
 author: cabeln
 ms.author: cabeln
+ms.topic: article
+ms.date: 11/09/2023
+ms.custom:
+  - responsible-ai-faqs
 ms.reviewer: kamaybac
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Responsible AI FAQ for Generative help and guidance with Copilot (preview)
