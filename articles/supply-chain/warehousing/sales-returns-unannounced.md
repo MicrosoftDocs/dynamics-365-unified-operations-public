@@ -177,7 +177,7 @@ To enable workers to process unannounced returns, you must create a separate mob
 
 ## Integrate return label printing with small parcel shipping
 
-Small parcel shipping (SPS) integration lets you retrieve shipping labels from the SPS carriers or carrier hubs that you've integrated with your system. However, some customization is required. The integration supports preaddressed and prepaid return labels, which make returns more convenient for your customers. The return labels can include a bar code that identifies the return details record ID. Warehouse workers can then scan this bar code when the package arrives at your warehouse.
+Small parcel shipping (SPS) integration lets you retrieve shipping labels from the SPS carriers or carrier hubs that you integrate with your system. However, some customization is required. The integration supports preaddressed and prepaid return labels, which make returns more convenient for your customers. The return labels can include a bar code that identifies the return details record ID. Warehouse workers can then scan this bar code when the package arrives at your warehouse.
 
 For more information about how to set up SPS integration, see [Small parcel shipping](small-parcel-shipping.md).
 
@@ -188,7 +188,7 @@ Follow these steps to enable return details with SPS integration.
 
 ## Print return labels
 
-When you use a *Return details* return process, you must print a return label for each shipment and include that label with the shipment. Printing options are established by the *container packing policy* that applies to each shipment. Depending on the setup of your system, return labels are typically printed as part of the container closing process. However, you can manually print or reprint them for a selected return details record at any time.
+When you use a *Return details* return process, you must print a return label for each shipment and include that label with the shipment. The *container packing policy* that applies to each shipment establishes the printing options. Depending on the setup of your system, return labels are typically printed as part of the container closing process. However, you can manually print or reprint them for a selected return details record at any time.
 
 The return label includes the shipping address of your returns warehouse and a bar code that contains the return details record ID. Therefore, warehouse workers can scan this bar code when the package arrives at your warehouse.
 
