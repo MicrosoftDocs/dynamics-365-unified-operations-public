@@ -1719,9 +1719,9 @@
           href: inventory/inventory-visibility-product-search.md
         - name: The Inventory Visibility app in Power Apps
           items:
-          - name: Inventory Visibility app user interface versions (preview)
+          - name: Inventory Visibility app user interface versions
             href: inventory/inventory-visibility-ui-version-2.md
-          - name: Use the Inventory Visibility app UI version 2 (preview)
+          - name: Use the Inventory Visibility app UI version 2
             href: inventory/inventory-visibility-power-platform.md
           - name: Use the Inventory Visibility app UI version 1
             href: inventory/inventory-visibility-power-platform-v1.md

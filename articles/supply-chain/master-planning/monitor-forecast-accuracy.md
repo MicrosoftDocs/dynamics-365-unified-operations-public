@@ -21,7 +21,6 @@ ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.collection:
-  - bap-ai-copilot
 ---
 
 # Monitor forecast accuracy
