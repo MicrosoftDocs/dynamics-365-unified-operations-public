@@ -1103,6 +1103,22 @@ items:
           href: hr-admin-integration-payroll-api-payroll-position.md
         - name: Payroll position job
           href: hr-admin-integration-payroll-api-payroll-position-job.md
+        - name: Job task 
+          href: hr-admin-integration-job-task.md
+        - name: Payroll job type 
+          href: hr-payroll-job-type.md
+        - name: Payroll historical person name 
+          href: hr-payroll-history-person.md
+        - name: Payroll job base 
+          href: hr-payroll-job-base.md
+        - name: Payroll job family 
+          href: hr-payroll-job-family.md
+        - name: Payroll job function 
+          href: hr-payroll-job-function.md
+        - name: Payroll employment employee 
+          href: hr-employ-employee.md
+        - name: Payroll compensation fixed plan  
+          href: hr-comp-fixed.md
       - name: Leave and absence related entities
         items:
           - name: Leave balance
