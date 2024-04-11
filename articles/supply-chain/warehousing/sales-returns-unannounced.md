@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSReturnItemPolicy, WHSReturnItemReceivingPolicy, WHSRFMenuItem
 ms.topic: how-to
-ms.date: 03/05/2024
+ms.date: 04/11/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -28,7 +28,7 @@ To use the features described in this article, your system must meet the followi
 
 - To receive unannounced sales returns, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
 - To use the integration with SPS, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
-- If you also want to print license plate labels from the mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+- To print license plate labels from a mobile device, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
 
 ## Receiving process for unannounced returns
 
@@ -168,7 +168,7 @@ To enable workers to process unannounced returns, you must create a separate mob
     - **Barcode data policy** – Select the policy to use if multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](/dynamics365/supply-chain/warehousing/gs1-barcodes).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate.
     - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process. The disposition code determines the inventory status, work template, and location directive for the returned items.
-    - **Print label** – Set this option to *Yes* to always print a license plate label after all steps in the related work template have been completed (regardless of whether a print step is included in the work template).  If you want to allow the work template to print the license plate label at a different point in the process, then set this option to *No*. The license plate label provides a bar code provides the license plate ID of the license plate where the worker places the returned items. For more information, see [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md).
+    - **Print label** – Set this option to *Yes* to always print a license plate label after all steps in the related work template are finished (regardless of whether a print step is included in the work template). If you want to allow the work template to print the license plate label at a different point in the process, then set this option to *No*. The license plate label includes a bar code that provides the ID of the license plate where the worker places the returned items. For more information, see [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md).
     - **Return item receiving policy ID** – Select the [item receiving policy](#create-return-item-receiving-policies) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat steps 2 and 3 to create a menu item for the other process
@@ -177,13 +177,14 @@ To enable workers to process unannounced returns, you must create a separate mob
 
 ## Integrate return label printing with small parcel shipping
 
-Small parcel shipping (SPS) integration used for retreival of the shipping labels from carriers/carrier hubs integrated via SPS interface can now be used for retreiving of the return labels from same set of integrated carriers. If you are using packing stations and you whish to retreive and print carrier based return labels that can be shipped with a package for lean return process, you can use existing SPS setup with a little twist as explained in the setup where the field is introduced. Return labels make it easy for your customers to return items, with return shipping costs automatically handled by the your carrier using a single click return identification based on carrier label in order to identify return data generated for rapid returns. 
+Small parcel shipping (SPS) integration lets you retrieve shipping labels from the SPS carriers or carrier hubs you have integrated with your system, though some amount of customization is required. The integration supports preaddressed and prepaid return labels, which make returns and convenient for your customers. The return labels can also include a barcode that identifies the return details record ID, which warehouse workers can scan when the package arrives at your warehouse.
+
+For more information about how to set up SPS integration, see [Small parcel shipping](small-parcel-shipping.md).
 
 Follow these steps to enable return details with SPS integration:
 
 1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
-1. On the **Shipping carriers** FastTab, set **Enable shipping label request type** to *Yes*. This setting adds a new field called *Print container return shipping label rule* on the **Container packing polcies** page on the **Carrier label printing** fasttab , which allows users to select wheter they *never*, *always*, or *if set up exists*, to print a return shipping label.
-For more information about how to set up SPS integration, see [Small parcel shipping](small-parcel-shipping.md).
+1. On the **Shipping carriers** FastTab, set **Enable shipping label request type** to *Yes*. This setting adds a new field called **Print container return shipping label rule** to the **Container packing policies** page, which lets you choose the conditions under which return labels should be printed as part of the container packing process. See the next section for details about how to use this setting.
 
 ## Print return labels
 
@@ -208,7 +209,7 @@ Follow these steps to configure the label printing options for a container packi
         - *Never* – Users can close containers without printing a return label.
         - *Always* – A return label is required. Users can't close the container unless the system is able to retrieve a label.
         - *If setup exists* – For containers where a return label setup exists, the system must retrieve the required label before users can close the container. For containers where no return label setup exists, users can close the container without printing a label.
-    - **Printer name** – Select the ZPL printer where the system should print shipping and/or return labels when using this container packing policy.
+    - **Printer name** – Select the Zebra Programming Language (ZPL) printer where the system should print shipping and/or return labels when using this container packing policy.
 
 Follow these steps to manually print or reprint a return label for a return details record:
 
