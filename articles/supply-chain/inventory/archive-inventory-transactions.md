@@ -30,7 +30,7 @@ Over time, the inventory transaction table (`InventTrans`) will continue to grow
 > [!NOTE]
 > Only financially updated inventory transactions can be consolidated in a selected closed ledger period. To be consolidated, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
 
-When you consolidate inventory transactions, all related transactions are moved to the `InventTransArchive` table. Inventory issue transactions and inventory receipt transactions are consolidated separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they are put into the summarized issue and summarized receipt transactions.
+When you consolidate inventory transactions, all related transactions are moved to the `InventTransArchive` table. Inventory issue transactions and inventory receipt transactions are consolidated separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they're put into the summarized issue and summarized receipt transactions.
 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
@@ -43,13 +43,13 @@ If your system doesn't already include the feature that is described in this art
 
 ## Things to consider before you consolidate inventory transactions
 
-Before you consolidate inventory transactions, you should consider the following business scenarios, because they will be affected by the operation:
+Before you consolidate inventory transactions, you should consider the following business scenarios, because they'll be affected by the operation:
 
-- When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as consolidated. To review the consolidated transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transaction consolidation**.
+- When you audit inventory transactions from related documents, such as purchase order lines, they're shown as consolidated. To review the consolidated transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transaction consolidation**.
 - Inventory closing can't be canceled for consolidated periods.
 - Standard cost conversion can't be done for consolidated periods.
-- Inventory reports that are sourced from inventory transactions will be affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
-- Inventory forecasts might be affected if they are run during the time horizon of consolidated periods.
+- Inventory reports that are sourced from inventory transactions are affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
+- Inventory forecasts might be affected if they're run during the time horizon of consolidated periods.
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ To consolidate inventory transactions, follow these steps.
 1. Select **OK**.
 1. You receive a message that prompts you to confirm that you want to continue. Read the message carefully, and then select **Yes** if you want to continue.
 
-    You receive a message that states that your inventory transaction consolidation job is added to the batch queue. The job will now start to consolidate inventory transactions from the selected period.
+    You receive a message that states that your inventory transaction consolidation job is added to the batch queue. The job starts to consolidate inventory transactions from the selected period.
 
 ## View consolidated inventory transactions
 
@@ -113,9 +113,9 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 ## Extend your code to support custom fields
 
-If the `InventTrans` table contains one or more custom fields, then you may need to extend the code to support them, depending on how they are named.
+If the `InventTrans` table contains one or more custom fields, then you might need to extend the code to support them, depending on how they're named.
 
-- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they are 1:1 mapped. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
+- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they're 1:1 mapped. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
 - If the custom field names in the `InventTrans` table don't match the field names in the `InventtransArchive` table, then you need to add code to map them. For example, if you have a system field called  `InventTrans.CreatedDateTime`, then you must create a field in the `InventTransArchive` table with a different name (such as `InventtransArchive.InventTransCreatedDateTime`) and add extensions to the `InventTransArchiveProcessTask` and  `InventTransArchiveSqlStatementHelper` classes, as shown in the following sample code.
 
 The following sample code shows an example of how to add the required extension to the `InventTransArchiveProcessTask` class.
