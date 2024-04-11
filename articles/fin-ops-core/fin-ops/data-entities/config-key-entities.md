@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Configuration keys and data entities
-description: This article describes the relationship between configuration keys and data entities.
-author: peakerbl
-ms.date: 05/10/2019
+description: Learn about the relationship between configuration keys and data entities, including overviews on key configurations and assignments.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+ms.date: 05/10/2019
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
+audience: Application user
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 13
-
+ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ---
 
 # Configuration keys and data entities
