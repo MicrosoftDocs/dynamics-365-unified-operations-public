@@ -15,7 +15,7 @@ ms.custom:
 
 This article explains how to archive data for inventory transactions with Dataverse long term retention.
 
-The *Archive with Dataverse long term retention* feature optimize storage and system performance by moving `InventTransArchive` records to a Microsoft Azure data lake and replicating corresponding records to the `InventTransArchiveHistory` table. Records in the `InventTransArchive` table represent inventory transactions that have already been consolidated (see also [Consolidate inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md)).
+The *Archive with Dataverse long term retention* feature optimizes storage and system performance by moving `InventTransArchive` records to a Microsoft Azure data lake and replicating corresponding records to the `InventTransArchiveHistory` table. Records in the `InventTransArchive` table represent inventory transactions that have already been consolidated (see also [Consolidate inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md)).
 
 [!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
