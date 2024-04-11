@@ -43,7 +43,7 @@ This entity provides information about employee employment.
 | LegalEntityId | mserp\_LegalEntityId | String | Read-only | Details of the assigned legal entity. |
 | PersonnelNumber | mserp\_PersonnelNumber | String | Read-only | The personnel number of the worker. |
 
-## Example query for Employment employee detail entity
+## Example query for Employment employee entity
 
 **Request**
 
