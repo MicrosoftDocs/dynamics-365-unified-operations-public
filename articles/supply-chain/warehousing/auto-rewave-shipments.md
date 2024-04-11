@@ -60,7 +60,7 @@ To restart the rewaving process from the beginning, you must allow the cleanup j
 
 ## Enable rewaving for your system
 
-To enable rewaving for your system, you must set your system to process waves in batches and schedule the *Auto add shipments to wave* batch job as described in the following subsections.
+To enable rewaving for your system, you must set up your system to process waves in batches. You must also schedule the *Auto add shipments to wave* batch job.
 
 ### Enable wave processing in batches to allow for rewaving
 
@@ -84,11 +84,11 @@ The rewaving process runs as a batch job that you must schedule to run as often 
 1. Use the fields that are provided to set up a schedule that defines how often the rewaving job runs, and how long it runs for.
 1. Select **OK** to save your schedule for the job.
 1. Select **OK** to create the job.
-1. On the **Records to include** FastTab, you can define selection criteria to limit the set of shipment lines that will be processed.
+1. On the **Records to include** FastTab, you can define selection criteria to limit the set of shipment lines that's processed.
 
     - Select the **Filter** link to open a standard query editor dialog box, where you can add or remove filter criteria.
     - The **Records to include** FastTab lists each field name and value that you added by using the query editor.
-    - The **Number of retries** filter is always included, and its value (*5*) is read-only. This field indicates that the system will try to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system stops trying and marks that line as *failed*.
+    - The **Number of retries** filter is always included, and its value (*5*) is read-only. This setting indicates that the system will try to rewave each failed shipment line up to five times. If a line fails on the fifth attempt, the system stops trying and marks that line as *failed*.
 
 ### Schedule the cleanup job
 
