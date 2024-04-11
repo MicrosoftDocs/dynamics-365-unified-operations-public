@@ -4,7 +4,7 @@
 title: Consolidate inventory transactions
 description: This article describes how to consolidate inventory transaction data to help improve system performance.
 author: yufeihuang
-ms.date: 05/10/2022
+ms.date: 04/11/2024
 ms.topic: article
 
 # optional metadata
@@ -35,7 +35,7 @@ When you consolidate inventory transactions, all related transactions are moved 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
 > [!NOTE]
-> The [Archive with Dataverse long term retention feature](../../fin-ops-core/dev-itpro/sysadmin/-inventory.md) helps to remove record from InventTrans table to data lake for long term retention.
+> After consolidating your inventory transactions, you can further optimize storage and system performance my using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. For more information, see [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
 
 ## Turn on the feature in your system
 
@@ -46,8 +46,8 @@ If your system doesn't already include the feature that is described in this art
 Before you consolidate inventory transactions, you should consider the following business scenarios, because they will be affected by the operation:
 
 - When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as consolidated. To review the consolidated transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transaction consolidation**.
-- Inventory closing can't be canceled for consolidated periods. 
-- Standard cost conversion can't be done for consolidated periods. 
+- Inventory closing can't be canceled for consolidated periods.
+- Standard cost conversion can't be done for consolidated periods.
 - Inventory reports that are sourced from inventory transactions will be affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
 - Inventory forecasts might be affected if they are run during the time horizon of consolidated periods.
 
