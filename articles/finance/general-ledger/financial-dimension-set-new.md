@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: New financial dimension sets
 description: This article describes the updated functionality for financial dimension sets.
 author: rcarlson
@@ -18,7 +17,6 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2023-10-16
 ms.dyn365.ops.version: 10.0.38
-
 ---
 
 # New financial dimension sets
