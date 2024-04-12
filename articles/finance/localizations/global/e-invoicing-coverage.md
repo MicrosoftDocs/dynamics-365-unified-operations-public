@@ -4,14 +4,12 @@ description: This article describes for which countries and regions electronic i
 author: ilikond
 ms.date: 09/05/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: All
 ms.author: ikondratenko
 ms.search.validFrom: 2022-11-03
-ms.dyn365.ops.version: AX 10.0.38
+ms.dyn365.ops.version: 
 ms.custom: 
 ms.assetid: 
 ms.search.form: 
@@ -27,20 +25,20 @@ The information below complements the [Globalization Studio Release plans](../..
 for planned Electronic invoicing implementations specifically. 
 Delivery timelines may change, and projected functionality may not be released at all due to various reasons. For more information, go to [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
-## Current electronic invoicing coverage
+## Electronic invoicing coverage
 
-> [!NOTE]
-> For some countries more than one approach can be implemented simultaneously. For example, **ER** and **Service**. Either of them can be used at customers' discretion.
-
- **Country**  |                                 **Description**                                |**Approach**|
+ **Country**  |                                 **Description**                                |**Availability**|
 |----------------------|-----------------------------------------------------------------------|------------|
-| Australia            | Generation of electronic invoices for Sales and Project invoices and credit notes in the Australian extension of **PEPPOL** format.<li>Documentation for ER: [Customer electronic invoices in Australia](apac/apac-aus-nzl-e-invoices.md)</li><li>Documentation for Service: [Electronic invoicing for Australia](apac/apac-aus-nzl-electronic-invoices.md)</li>    | ER / Service|
-| Austria            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|ER / Service|
-| Belgium            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|ER / Service|
-| Brazil            | Generation and direct submission to the authorities of fiscal documents in the **NF-e** and **NFS-e** formats. Import of incoming documents into Microsoft Dynamics 365 Finance from the authorities.<li>Documentation: [NF-e process overview](latam-bra-nf-e-process.md)</li><li>Scope: [Brazilian localization](latam-bra-scope.md)</li>|Core|
-| Chile             | Generation of electronic tax documents (DTE) in country-specific format for Invoices, Debit notes, Credit notes, Export invoices, Export debit notes, Export credit note​, and Packing Slips. <p>Documentation: [Chilean electronic invoicing](iberoamerica/ltm-chile-elec-invo-conncection.md)</p> |Service|
-| China            | Invoice reporting (fapiao) support. File upload integration with **Golden Tax System** via **BaiWang** and **Asino** software. <p>Documentation: Documentation: [Golden tax system integration](apac-chn-tax-integration.md)</p> |Core|
-| Costa Rica       | Generation of E-Documents for Invoices, Credit notes and Debit notes in the country-specific format. <p>Documentation: [Electronic invoicing in Costa Rica](iberoamerica/ltm-costa-rica-ei-connec-configuration.md)</p> |Service|
+| Argentina            |    |Planned for 2024 release wave 2.|
+| Australia            | Generation of electronic invoices for Sales and Project invoices and credit notes in the Australian extension of **PEPPOL** format.<li>Documentation: [Electronic invoicing for Australia](apac/apac-aus-nzl-electronic-invoices.md)</li>    |Available|
+| Austria            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|Available|
+| Belgium            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|<li>Available</li><li>Regulatory changes expected by January 2026</li>|
+| Bolivia |  |Planned for 2024 release wave 1.|
+| Brazil            | Generation and direct submission to the authorities of fiscal documents in the **NF-e** and **NFS-e** formats. Import of incoming documents into Microsoft Dynamics 365 Finance from the authorities.<li>Documentation: [NF-e process overview](latam-bra-nf-e-process.md)</li><li>Scope: [Brazilian localization](latam-bra-scope.md)</li>|Available|
+| Chile             | Generation of electronic tax documents (DTE) in country-specific format for Invoices, Debit notes, Credit notes, Export invoices, Export debit notes, Export credit note​, and Packing Slips. <p>Documentation: [Chilean electronic invoicing](iberoamerica/ltm-chile-elec-invo-conncection.md)</p> |Available|
+| China            | Invoice reporting (fapiao) support. File upload integration with **Golden Tax System** via **BaiWang** and **Asino** software. <p>Documentation: Documentation: [Golden tax system integration](apac-chn-tax-integration.md)</p> |Available|
+| Columbia |   |Planned for 2024 release wave 1.|
+| Costa Rica       | Generation of E-Documents for Invoices, Credit notes and Debit notes in the country-specific format. <p>Documentation: [Electronic invoicing in Costa Rica](iberoamerica/ltm-costa-rica-ei-connec-configuration.md)</p> |Available|
 | Denmark | Generation and submission to the **NemHandel** or to the **Peppol network** of electronic invoices for Sales and Project invoices and credit notes in the **OIOUBL** or **PEPPOL** formats. Import of vendor electronic invoices. <li>Documentation for ER: [Customer electronic invoices in Denmark](norway/emea-dnk-e-invoices.md), [Vendor electronic invoice import in Denmark](denmark/emea-dnk-vend-e-invoice.md)</li>  <li>Documentation for Service: [Get started with Electronic invoicing for Denmark](denmark/e-invoicing-dk-get-started.md)</li>|ER / Service|
 | Egypt   | Generation and direct submission to the Egyptian Tax Authority of electronic invoices for Sales and Project invoices, credit notes and debit notes in the country-specific format. <p>Documentation: [Electronic invoicing for Egypt ](mea/e-invoicing-eg-get-started.md)</p> |Service|
 | Estonia | Generation of electronic invoices for Sales and Project invoices and credit notes in the country-specific format.  <p>Documentation: [Export of customers electronic invoices in Estonia](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-estonia-to-support-export-of-customers-electronic-invoices-in-microsoft-dynamics-365-finance-3f3295b4-62f8-ff24-169a-794379d1fce4)</p> |ER / Service|
@@ -68,12 +66,7 @@ Delivery timelines may change, and projected functionality may not be released a
 
  **Country**  |                                 **Description**                                |**Approach**|
 |----------------------|--------------------------------------------------------------------------------|------------|
-| Argentina            |Planned for 2024 release wave 2.    |Service|
-| Belgium              |Not included into Release plans yet. The functionality for electronic invoices submission in PEPPOL format is preliminary planned to be enforced by January 2026.|Service|
-| Bolivia | Planned for 2024 release wave 1. |Service|
-| Chile | Submission of Electronic Tax Document (DTE) is additionally planned for 2024 release wave 1.  |Service|
 | Columbia | Planned for 2024 release wave 1.  |Service|
-| Costa Rica | Submission of E-Documents is additionally planned for 2024 release wave 1.|Service|
 | Dominican Republic | Planned for 2024 release wave 1.  |Service|
 | Ecuador | Planned for 2024 release wave 1. |Service|
 | Guatemala | Planned for 2024 release wave 1. |Service|
