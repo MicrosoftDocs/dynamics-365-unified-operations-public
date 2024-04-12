@@ -4,23 +4,14 @@
 title: What's new or changed in Dynamics 365 for Retail (April 2019)
 description: This article describes features that are in preview in Dynamics 365 Retail. 
 author: josaw1
-ms.date: 03/05/2019
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2019-02-15 
 ms.dyn365.ops.version: Release 10
