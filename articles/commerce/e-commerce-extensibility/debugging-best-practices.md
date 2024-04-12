@@ -4,8 +4,6 @@ description: This article describes some best practices to follow when debugging
 author: samjarawan
 ms.date: 03/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

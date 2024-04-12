@@ -6,9 +6,6 @@ description: This article answers questions that are related to activities that 
 author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PayrollPayStatement

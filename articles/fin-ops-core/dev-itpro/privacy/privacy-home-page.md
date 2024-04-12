@@ -4,8 +4,6 @@ description: This article provides links to information that can help you respon
 author: josaw1
 ms.date: 08/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

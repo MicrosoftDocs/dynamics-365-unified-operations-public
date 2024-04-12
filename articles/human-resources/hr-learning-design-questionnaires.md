@@ -6,9 +6,6 @@ description: This article describes the process for creating a questionnaire.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace

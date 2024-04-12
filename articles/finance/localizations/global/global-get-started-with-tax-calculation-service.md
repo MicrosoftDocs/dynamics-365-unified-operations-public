@@ -4,8 +4,6 @@ description: This article explains how to set up Tax Calculation.
 author: EricWangChen
 ms.date: 02/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: johnmichalak
 ms.search.region: Global

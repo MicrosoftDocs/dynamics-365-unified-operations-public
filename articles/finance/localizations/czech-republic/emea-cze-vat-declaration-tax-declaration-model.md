@@ -4,8 +4,6 @@ description: This article provides information about the value-added tax (VAT) d
 author: liza-golub
 ms.date: 01/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Czech Republic

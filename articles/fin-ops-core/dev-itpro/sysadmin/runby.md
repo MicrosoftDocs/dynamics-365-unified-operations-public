@@ -6,9 +6,6 @@ description: This article provides information about the batch manager security 
 author: hasaid
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

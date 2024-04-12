@@ -6,8 +6,6 @@ description: This article explains how to change the date for a session.
 author: pvillads
 ms.date: 07/31/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

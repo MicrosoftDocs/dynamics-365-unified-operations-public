@@ -7,8 +7,6 @@ author: PeterRFriis
 ms.date: 02/08/2022
 ms.topic: article
 ms.service: dynamics-365
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

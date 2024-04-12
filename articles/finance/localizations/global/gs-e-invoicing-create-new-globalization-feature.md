@@ -4,8 +4,6 @@ description: This article explains how to create a Globalization feature (previe
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: Organizational hierarchies represent the relationships between the 
 author: sericks007
 ms.date: 01/03/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: OMHierarchyManager, OMOperatingUnit,

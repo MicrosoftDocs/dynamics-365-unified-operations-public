@@ -6,10 +6,6 @@ description: This article describes the threshold and exception limits for Tax D
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

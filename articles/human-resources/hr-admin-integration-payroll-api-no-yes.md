@@ -6,9 +6,6 @@ description: This article describes the No Yes option set in the Dynamics 365 Hu
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

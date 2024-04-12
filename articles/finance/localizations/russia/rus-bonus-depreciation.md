@@ -4,8 +4,6 @@ description: This article provides information about depreciation bonuses for Ru
 author: AdamTrukawka
 ms.date: 04/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

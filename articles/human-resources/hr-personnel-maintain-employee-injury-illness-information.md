@@ -6,8 +6,6 @@ description: This task describes how to create an injury or illness case.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: This article describes the typical processes for calculating and al
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase

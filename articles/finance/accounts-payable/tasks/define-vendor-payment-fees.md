@@ -6,8 +6,6 @@ description: Set up vendor payment fees.
 author: abruer
 ms.date: 01/08/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,8 +4,6 @@ description: This article describes how to deploy a demo environment during the 
 author: sericks007
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

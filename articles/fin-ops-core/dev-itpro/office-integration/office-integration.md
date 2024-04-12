@@ -6,9 +6,6 @@ description: This article reviews Microsoft Office integration concepts and feat
 author: jasongre
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

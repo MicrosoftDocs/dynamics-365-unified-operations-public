@@ -4,8 +4,6 @@ description: In the Sistema Publico de Escrituração Digital (SPED) fiscal text
 author: AdamTrukawka
 ms.date: 06/26/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

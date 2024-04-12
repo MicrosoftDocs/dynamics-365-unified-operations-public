@@ -6,9 +6,6 @@ description: This article provides general information about vendor invoices.
 author: abruer
 ms.date: 03/13/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

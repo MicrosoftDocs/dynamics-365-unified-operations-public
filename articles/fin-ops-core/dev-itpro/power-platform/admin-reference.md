@@ -6,9 +6,6 @@ description: This article explains how to configure virtual entities for finance
 author: pnghub
 ms.date: 03/12/2024
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

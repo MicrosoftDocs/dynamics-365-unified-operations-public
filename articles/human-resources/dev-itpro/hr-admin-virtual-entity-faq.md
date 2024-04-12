@@ -6,9 +6,6 @@ description: This article provides answers to some frequently asked questions ab
 author: jaredha
 ms.date: 08/23/2021
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

@@ -6,9 +6,6 @@ description: The article provides an overview of steps and actions that you can 
 author: skaue-ms
 ms.date: 10/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

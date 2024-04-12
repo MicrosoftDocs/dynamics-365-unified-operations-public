@@ -6,9 +6,6 @@ description: This article describes the Dynamics 365 Human Resources Applicant T
 author: andreabichsel
 ms.date: 02/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

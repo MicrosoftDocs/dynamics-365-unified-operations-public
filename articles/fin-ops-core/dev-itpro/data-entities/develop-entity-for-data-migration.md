@@ -6,9 +6,6 @@ description: This tutorial shows how to develop data entities in Microsoft Visua
 author: peakerbl
 ms.date: 10/14/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

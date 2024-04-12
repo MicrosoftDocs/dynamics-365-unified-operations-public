@@ -4,8 +4,6 @@ description: This article explains how to use the search functionality to naviga
 author: jasongre
 ms.date: 08/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

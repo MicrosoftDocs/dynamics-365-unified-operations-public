@@ -4,8 +4,6 @@ description: This article describes batch parallelism and multi-threading in Mic
 author: twheeloc
 ms.date: 02/20/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

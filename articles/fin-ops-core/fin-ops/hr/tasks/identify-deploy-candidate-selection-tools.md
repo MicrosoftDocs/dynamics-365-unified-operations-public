@@ -6,8 +6,6 @@ description: Finding a qualified pool of candidates to fill vacancies can be dif
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

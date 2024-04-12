@@ -6,9 +6,6 @@ description: This article provides information about date and time fields, and t
 author: pvillads
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysUserSetup, SystemDate

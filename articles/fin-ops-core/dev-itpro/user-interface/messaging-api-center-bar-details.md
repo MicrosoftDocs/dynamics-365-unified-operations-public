@@ -4,8 +4,6 @@ description: This article describes the messaging system.
 author: jasongre
 ms.date: 10/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

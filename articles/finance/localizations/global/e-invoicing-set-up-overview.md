@@ -4,8 +4,6 @@ description: This article provides an overview of the process for setting up and
 author: gionoder
 ms.date: 02/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

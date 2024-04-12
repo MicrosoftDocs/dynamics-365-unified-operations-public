@@ -6,8 +6,6 @@ description: This article describes new or changed features in the Microsoft Dyn
 author: joshsantana
 ms.date: 03/07/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article describes the various fixed asset depreciation methods
 author: AdamTrukawka
 ms.date: 09/20/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

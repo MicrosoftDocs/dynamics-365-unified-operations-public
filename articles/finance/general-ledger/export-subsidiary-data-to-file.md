@@ -6,9 +6,6 @@ description: This article explains how to prepare to export data from Microsoft 
 author: jinniew
 ms.date: 11/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

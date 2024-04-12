@@ -6,9 +6,6 @@ description: This article describes the allocation methods that are available in
 author: panolte
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetPlanningConfiguration

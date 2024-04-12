@@ -4,8 +4,6 @@ description: This article lists examples of public sector posting definitions th
 author: velofog
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

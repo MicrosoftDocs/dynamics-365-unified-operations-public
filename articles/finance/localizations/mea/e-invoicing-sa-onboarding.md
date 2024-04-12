@@ -4,8 +4,6 @@ description: This article explains how to onboard taxpayers and their electronic
 author: mrolecki
 ms.date: 01/18/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia

@@ -6,8 +6,6 @@ description: This topics explains how to create benefit eligibility rules and po
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,8 +6,6 @@ description: Compensation grids are used to define and maintain the pay structur
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

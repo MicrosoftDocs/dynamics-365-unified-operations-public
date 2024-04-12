@@ -6,9 +6,6 @@ description: This article describes the required configuration steps needed for 
 author: twheeloc
 ms.date: 09/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PersonnelIntegrationConfiguration

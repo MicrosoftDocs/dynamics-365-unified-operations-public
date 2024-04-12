@@ -6,9 +6,6 @@ description: This article explains how to configure the Code upgrade tile to mig
 author: LaneSwenka
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

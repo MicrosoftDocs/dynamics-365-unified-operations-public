@@ -6,8 +6,6 @@ description: This guide will help you set up an aging period definition, age cus
 author: abruer
 ms.date: 11/07/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

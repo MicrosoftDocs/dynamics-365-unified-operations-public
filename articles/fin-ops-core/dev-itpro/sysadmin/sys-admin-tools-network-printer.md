@@ -6,9 +6,6 @@ description: This article provides information about how to use the System admin
 author: RichdiMSFT
 ms.date: 12/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

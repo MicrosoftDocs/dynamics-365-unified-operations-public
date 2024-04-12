@@ -6,9 +6,6 @@ description: This article describes how to run and monitor an experiment in a th
 author:  sushma-rao 
 ms.date: 10/21/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

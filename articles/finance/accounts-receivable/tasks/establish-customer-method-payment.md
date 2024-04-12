@@ -6,8 +6,6 @@ description: This article explains how to create a method of payment for custome
 author: ShivamPandey-msft
 ms.date: 03/23/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

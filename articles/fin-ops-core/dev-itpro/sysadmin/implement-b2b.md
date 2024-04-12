@@ -4,8 +4,6 @@ description: This article provides information about implementing the business-t
 author: paulliew
 ms.date: 04/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

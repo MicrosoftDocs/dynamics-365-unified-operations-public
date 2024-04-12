@@ -6,9 +6,6 @@ description: This article describes cloud operations and servicing.
 author: laneswenka
 ms.date: 04/27/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

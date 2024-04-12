@@ -6,7 +6,6 @@ description: Configure Accounts receivable and Credit and Collections to track i
 author: ShivamPandey-msft
 ms.date: 04/12/2024
 ms.topic: overview
-ms.custom: evergreen
 
 # optional metadata
 

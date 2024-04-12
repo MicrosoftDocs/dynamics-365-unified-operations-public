@@ -6,9 +6,6 @@ description: This article explains how the rounding rule setup on the Sales tax 
 author: kailiang
 ms.date: 10/29/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxAuthority

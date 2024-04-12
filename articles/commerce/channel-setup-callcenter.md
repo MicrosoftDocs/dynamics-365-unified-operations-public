@@ -4,8 +4,6 @@ description: This article describes how to create a new call center channel in M
 author: samjarawan
 ms.date: 03/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

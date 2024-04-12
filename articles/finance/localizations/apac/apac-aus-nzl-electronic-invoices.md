@@ -4,8 +4,6 @@ description: This article provides information to help you get started with Elec
 author: ilikond
 ms.date: 09/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Australia, New Zealand

@@ -6,8 +6,6 @@ description: You can configure the system to send email messages to users when w
 author: jasongre
 ms.date: 06/01/2020
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

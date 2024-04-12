@@ -6,9 +6,6 @@ description: This article explains how to configure the properties of an approva
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

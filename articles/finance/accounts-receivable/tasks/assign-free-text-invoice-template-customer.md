@@ -6,8 +6,6 @@ description: This task demonstrates how to assign a free text invoice template t
 author: ShivamPandey-msft
 ms.date: 03/23/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: This article explains how to set up the milestone billing functiona
 author: JodiChristiansen
 ms.date: 01/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

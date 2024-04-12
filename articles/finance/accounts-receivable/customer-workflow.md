@@ -6,9 +6,6 @@ description: This article provides information about the customer workflow. You 
 author: abruer
 ms.date: 08/24/2018
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  Customer

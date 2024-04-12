@@ -6,9 +6,6 @@ description: Affordable Care Act (ACA) reporting generates forms 1095-B and 1095
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmACACoverageGroup, BenefitWorkspace, HcmBenefitSummaryPart

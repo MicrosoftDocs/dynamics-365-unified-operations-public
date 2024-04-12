@@ -6,9 +6,6 @@ description: This article lists resources that are available for system administ
 author: sericks007
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

@@ -5,8 +5,6 @@ description: This article explains how to configure administrator rights for lif
 author: twheeloc
 ms.date: 08/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 # optional metadata
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 

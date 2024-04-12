@@ -6,9 +6,6 @@ description: This article describes how to use compensation management to manage
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace

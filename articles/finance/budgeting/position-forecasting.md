@@ -6,9 +6,6 @@ description: Expenses that are related to workers often make up a large proporti
 author: panolte
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmPositionForecast

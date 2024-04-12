@@ -6,9 +6,6 @@ description: This article describes the setup that is required for Credit manage
 author: JodiChristiansen
 ms.date: 02/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

@@ -6,7 +6,6 @@ ms.date: 01/08/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.technology: 
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

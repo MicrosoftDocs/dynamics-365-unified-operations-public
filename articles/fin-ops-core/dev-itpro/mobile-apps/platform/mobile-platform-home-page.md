@@ -4,8 +4,6 @@ description: The mobile platform lets you create mobile apps for your workspaces
 author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

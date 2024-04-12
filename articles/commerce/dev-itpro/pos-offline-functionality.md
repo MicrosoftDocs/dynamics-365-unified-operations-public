@@ -6,9 +6,6 @@ description: This article provides information about offline mode for the Store 
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailTerminalTable

@@ -6,9 +6,6 @@ description: This article explains how to view the status of vendor invoices tha
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

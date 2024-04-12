@@ -6,9 +6,6 @@ description: This article describes how to split a customer when subscription bi
 author: JodiChristiansen
 ms.date: 11/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

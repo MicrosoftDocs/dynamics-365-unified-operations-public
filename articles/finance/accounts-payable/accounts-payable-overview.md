@@ -6,8 +6,6 @@ description: This article describes the pages that you use to set up basic and o
 author: abruer
 ms.date: 04/12/2024
 ms.topic: overview
-ms.custom: evergreen
-
 # optional metadata
 
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable, DeliveryReason, DeliveryTerms, DestinationCode

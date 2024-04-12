@@ -6,9 +6,6 @@ description: This article explains how to set up earning codes and earning code 
 author: twheeloc
 ms.date: 08/21/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup

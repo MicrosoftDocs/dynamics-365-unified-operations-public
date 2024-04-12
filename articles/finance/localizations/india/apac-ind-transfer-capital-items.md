@@ -6,8 +6,6 @@ description: This procedure walks you through transferring a capital item by iss
 author: AdamTrukawka
 ms.date: 10/10/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
