@@ -6,9 +6,6 @@ description: This article explains how to set up and process recurring invoices.
 author: ShivamPandey-msft
 ms.date: 03/22/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustInvoiceTemplate

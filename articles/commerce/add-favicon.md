@@ -4,8 +4,6 @@ description: This article explains how to add a favicon to your site.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

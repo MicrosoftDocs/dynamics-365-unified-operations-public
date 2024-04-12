@@ -4,8 +4,6 @@ description: This article provides information about using the Support tool to o
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

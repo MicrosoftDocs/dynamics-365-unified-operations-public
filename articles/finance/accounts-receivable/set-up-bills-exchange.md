@@ -6,9 +6,6 @@ description: This article describes the steps for setting up bills of exchange.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustBillOfExchangeJour

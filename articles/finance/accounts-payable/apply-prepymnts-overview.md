@@ -6,9 +6,6 @@ description: This article describes the capability for automatically applying pr
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

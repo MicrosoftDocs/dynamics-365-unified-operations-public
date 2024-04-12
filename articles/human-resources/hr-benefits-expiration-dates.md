@@ -6,8 +6,6 @@ description: This procedure shows how benefits can expire or be extended, and ma
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

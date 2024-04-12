@@ -6,9 +6,6 @@ description: This article describes the conceptual elements of the Personnel man
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace

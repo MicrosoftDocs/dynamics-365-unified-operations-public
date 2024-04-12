@@ -7,9 +7,6 @@ description: This article explains how to fix the issue of truncated names of in
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmPositionHierarchyView, HcmPosition

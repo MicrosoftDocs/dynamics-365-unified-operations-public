@@ -4,8 +4,6 @@ description: This article describes considerations for cookie compliance and the
 author: BrianShook
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

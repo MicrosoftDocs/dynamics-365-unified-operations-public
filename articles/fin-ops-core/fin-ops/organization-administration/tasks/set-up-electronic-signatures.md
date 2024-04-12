@@ -6,8 +6,6 @@ description: Use this procedure to set up electronic signatures.
 author: maertenm
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

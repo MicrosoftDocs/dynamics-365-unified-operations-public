@@ -4,8 +4,6 @@ description: This article provides information about exchange rates for the VAT 
 author: mrolecki
 ms.date: 07/08/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Hungary, Poland

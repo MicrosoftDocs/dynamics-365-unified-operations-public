@@ -4,8 +4,6 @@ description: In this lab you’ll create a Simple List form. A Simple List form 
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

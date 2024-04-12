@@ -6,9 +6,6 @@ description: This article describes the various transactions that can be used in
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

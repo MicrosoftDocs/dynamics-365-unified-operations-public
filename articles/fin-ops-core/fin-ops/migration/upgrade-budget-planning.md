@@ -6,9 +6,6 @@ description: This article explains what must be reconfigured and also describes 
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

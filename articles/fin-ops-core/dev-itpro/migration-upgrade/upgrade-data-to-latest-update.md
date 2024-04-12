@@ -6,9 +6,6 @@ description: This article provides instructions for upgrading your finance and o
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

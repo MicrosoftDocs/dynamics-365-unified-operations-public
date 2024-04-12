@@ -7,9 +7,6 @@ description: This article lists frequently asked questions about how to go live 
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

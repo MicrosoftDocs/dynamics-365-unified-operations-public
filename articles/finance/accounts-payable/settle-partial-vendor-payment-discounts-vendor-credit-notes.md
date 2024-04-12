@@ -4,8 +4,6 @@ description: This article walks you through a scenario where a credit memo is se
 author: angelad116
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

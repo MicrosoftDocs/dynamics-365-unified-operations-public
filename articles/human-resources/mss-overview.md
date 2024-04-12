@@ -6,9 +6,6 @@ description: This article provides an overview of the Manager self service works
 author: twheeloc
 ms.date: 03/10/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace

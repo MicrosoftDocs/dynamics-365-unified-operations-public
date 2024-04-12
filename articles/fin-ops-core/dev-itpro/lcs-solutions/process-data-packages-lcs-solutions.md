@@ -4,8 +4,6 @@ description: This article explains how to process and consume data packages in a
 author: sericks007
 ms.date: 02/28/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

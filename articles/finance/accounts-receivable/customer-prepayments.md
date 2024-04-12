@@ -6,9 +6,6 @@ description: This article explains how to set up and process customer prepayment
 author: twheeloc
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters

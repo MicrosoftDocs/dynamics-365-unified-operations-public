@@ -6,9 +6,6 @@ description: This article describes features that can help your organization com
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmADARequirement

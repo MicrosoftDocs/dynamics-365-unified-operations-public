@@ -6,8 +6,6 @@ description: This task focuses on the creation of a new job.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

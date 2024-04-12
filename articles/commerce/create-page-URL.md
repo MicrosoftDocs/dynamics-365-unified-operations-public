@@ -4,8 +4,6 @@ description: This article covers the basic concepts and procedures for creating 
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

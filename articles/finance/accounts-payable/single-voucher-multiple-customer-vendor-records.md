@@ -4,8 +4,6 @@ description: This article provides an overview of what happens when you post a s
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: global

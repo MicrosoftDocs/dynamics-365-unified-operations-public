@@ -4,8 +4,6 @@ description: This article explains how to run the POS samples.
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

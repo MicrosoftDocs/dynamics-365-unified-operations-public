@@ -6,9 +6,6 @@ description: This article provides information about data management in finance 
 author: peakerbl
 ms.date: 06/20/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

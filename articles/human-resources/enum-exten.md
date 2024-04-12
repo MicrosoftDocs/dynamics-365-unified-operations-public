@@ -6,9 +6,6 @@ description: This article provides an overview of extensibility of the Gender ba
 author: twheeloc
 ms.date: 05/23/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace

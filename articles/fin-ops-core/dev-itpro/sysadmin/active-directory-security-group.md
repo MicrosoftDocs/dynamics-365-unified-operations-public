@@ -4,8 +4,6 @@ description: This article provides information about the Active Directory securi
 author: peakerbl
 ms.date: 05/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global

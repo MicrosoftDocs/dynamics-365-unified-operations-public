@@ -4,8 +4,6 @@ description: This article will help you decide where you should assign default a
 author: abruer
 ms.date: 06/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: global

@@ -6,9 +6,6 @@ description: This article describes the Process type option set for Dynamics 365
 author: twheeloc
 ms.date: 06/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

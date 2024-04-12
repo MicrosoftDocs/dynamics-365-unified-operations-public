@@ -6,8 +6,6 @@ ms.date: 11/27/2023
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

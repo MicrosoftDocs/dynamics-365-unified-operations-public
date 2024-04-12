@@ -6,9 +6,6 @@ description: This article explains how to use demo data packages to generate dat
 author: panolte
 ms.date: 04/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

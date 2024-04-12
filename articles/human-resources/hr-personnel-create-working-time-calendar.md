@@ -6,8 +6,6 @@ description: Calendars describe the capacity and working times of operations res
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

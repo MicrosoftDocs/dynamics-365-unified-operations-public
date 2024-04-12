@@ -6,9 +6,6 @@ description: This article explains how public sector entities can use funds to d
 author: v-kiarnd
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerFund, LedgerFundType

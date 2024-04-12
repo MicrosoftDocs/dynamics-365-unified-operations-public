@@ -6,8 +6,6 @@ description: Interest codes can be set up to calculate different interest amount
 author: ShivamPandey-msft
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

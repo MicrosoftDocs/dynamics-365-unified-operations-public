@@ -6,8 +6,6 @@ description: This article explains how to specify how and when you receive servi
 author: angelmarshall
 ms.date: 03/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 ms.custom: bap-template
 # optional metadata
 

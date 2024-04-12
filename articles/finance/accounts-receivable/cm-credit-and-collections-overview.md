@@ -6,9 +6,6 @@ description: This article provides an overview of the functionality for credit a
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

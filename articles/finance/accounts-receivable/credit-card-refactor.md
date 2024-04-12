@@ -6,9 +6,6 @@ description: This article provides information about processing incomplete credi
 author: sunfzam
 ms.date: 02/14/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

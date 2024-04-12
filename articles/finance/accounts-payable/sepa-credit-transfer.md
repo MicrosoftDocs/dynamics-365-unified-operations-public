@@ -6,9 +6,6 @@ description: This article provides general information about ISO 20022 credit tr
 author: mrolecki
 ms.date: 06/20/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode

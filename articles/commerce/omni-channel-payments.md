@@ -6,9 +6,6 @@ description: This article provides an overview of omni-channel payments in Dynam
 author: BrianShook
 ms.date: 02/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
