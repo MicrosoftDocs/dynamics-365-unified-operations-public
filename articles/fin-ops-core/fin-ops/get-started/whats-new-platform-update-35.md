@@ -5,10 +5,11 @@ title: Platform updates for version 10.0.11 of finance and operations apps (July
 description: This article lists the features are included in the platform updates for version 10.0.11 of finance and operations apps.
 author: sericks007
 ms.date: 05/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
+ms.date: 04/12/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+  - evergreen
 # optional metadata
 
 # ms.search.form: 
@@ -17,8 +18,6 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
