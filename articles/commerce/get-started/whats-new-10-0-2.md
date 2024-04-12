@@ -15,11 +15,9 @@ ms.custom:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
@@ -27,7 +25,6 @@ ms.dyn365.ops.version: Release 10
 ---
 
 # What's new and changed in Dynamics 365 for Retail version 10.0.2
-
 
 [!include [banner](../../includes/banner.md)]
 
