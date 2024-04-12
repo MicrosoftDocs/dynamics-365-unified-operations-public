@@ -22,6 +22,8 @@ ms.custom: bap-template
 You can use the [*Warehouse management only mode*](wms-only-mode-overview.md) feature to handle logistic operations in a different legal entity and connect warehouses between this legal entity and the other legal entities that do all the order and financial processing.
 In addition, the warehouse management processes can track which legal entity owns the inventory for items that are shared across different entities using an owner inventory dimension.
 
+This feature works well in a single instance deployment model, if you want to link multiple tenants and one of them will handle the logistic warehouse processes. You need an integration process as explained in the [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
+
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## High-level implementation example
