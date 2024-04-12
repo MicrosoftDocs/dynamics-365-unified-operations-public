@@ -6,7 +6,7 @@ description: This article describes financial dimension sets and provides some t
 author: yukonpeegs
 ms.date: 03/07/2022
 ms.topic: article
-e# optional metadata
+# optional metadata
 
 ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 audience: Application User
