@@ -48,6 +48,7 @@ Inorder to set up the kiosk and the hardware peripherals during initial set up, 
 As part of the release shopper facing layout has been configured with limited operations and will be available in demo environment for export and import. Look for self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
 Assign the screenlayout to the **Registers** set up. 
 Note: In demo data, Houston - Register 49 is set up as SCO register and SCO layout(SCO_POC1) has been assigned to it.
+Also user 000815 is configured as sco shopper/user. And user 000813 is configured as a SCO manager in demo data.
 
 ## Support for operations
 Following consumer operations are supported:
