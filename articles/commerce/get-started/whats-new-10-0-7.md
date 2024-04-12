@@ -4,23 +4,14 @@
 title: Preview features in Dynamics 365 Retail version 10.0.7
 description: This article describes features that are new and changed in Dynamics 365 Retail. 
 author: josaw1
-ms.date: 01/09/2020
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.7
