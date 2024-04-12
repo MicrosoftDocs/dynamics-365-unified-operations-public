@@ -4,10 +4,9 @@
 title: Configure Accounts payable overview
 description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 author: abruer
-ms.date: 07/25/2019
+ms.date: 04/12/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
+This article describes the pages used to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 
 ## Prerequisites for Accounts payable setup
 
