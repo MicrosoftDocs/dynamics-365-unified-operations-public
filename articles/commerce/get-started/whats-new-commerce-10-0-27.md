@@ -5,6 +5,7 @@ title: What's new or changed in Dynamics 365 Commerce 10.0.27 (July 2022)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.27. 
 author: josaw1
 ms.date: 04/12/2024
+ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.custom:
