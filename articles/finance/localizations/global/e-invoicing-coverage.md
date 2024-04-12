@@ -33,10 +33,10 @@ Delivery timelines may change, and projected functionality may not be released a
 | Belgium            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|<li>Available</li><li>Regulatory changes expected by January 2026</li>|
 | Bolivia |  |Planned for 2024 release wave 1|
 | Brazil            | Generation and direct submission to the authorities of fiscal documents in the **NF-e** and **NFS-e** formats. Import of incoming documents into Microsoft Dynamics 365 Finance from the authorities.<li>[NF-e process overview](latam-bra-nf-e-process.md)</li>|Available|
-| Chile             | Generation of electronic tax documents (DTE) in country-specific format for Invoices, Debit notes, Credit notes, Export invoices, Export debit notes, Export credit note​, and Packing Slips. <li>Documentation: [Chilean electronic invoicing](iberoamerica/ltm-chile-elec-invo-conncection.md)</li> |Available|
+| Chile             | Generation of electronic tax documents (DTE) in country-specific format for Invoices, Debit notes, Credit notes, Export invoices, Export debit notes, Export credit note​, and Packing Slips. <li>[Chilean electronic invoicing](iberoamerica/ltm-chile-elec-invo-conncection.md)</li> |<li>Available</li><li>Submission planned for 2024 release wave 1</li>|
 | China            | Invoice reporting (fapiao) support. File upload integration with **Golden Tax System** via **BaiWang** and **Asino** software. <li>[Golden tax system integration](apac-chn-tax-integration.md)</li> |Available|
 | Columbia |   |Planned for 2024 release wave 1|
-| Costa Rica       | Generation of E-Documents for Invoices, Credit notes and Debit notes in the country-specific format. <li>[Electronic invoicing in Costa Rica](iberoamerica/ltm-costa-rica-ei-connec-configuration.md)</li> |Available|
+| Costa Rica       | Generation of E-Documents for Invoices, Credit notes and Debit notes in the country-specific format. <li>[Electronic invoicing in Costa Rica](iberoamerica/ltm-costa-rica-ei-connec-configuration.md)</li> |<li>Available</li><li>Submission planned for 2024 release wave 1</li>|
 | Denmark | Generation and submission to the **NemHandel** or to the **Peppol network** of electronic invoices for Sales and Project invoices and credit notes in the **OIOUBL** or **PEPPOL** formats. Import of vendor electronic invoices. <li>[Get started with Electronic invoicing for Denmark](denmark/e-invoicing-dk-get-started.md)</li>|Available|
 | Dominican Republic |   |Planned for 2024 release wave 1|
 | Ecuador |  |Planned for 2024 release wave 1|
@@ -55,7 +55,7 @@ Delivery timelines may change, and projected functionality may not be released a
 | Netherlands | Generation of electronic invoices for Sales and Project invoices and credit notes in the **UBL-OHNL** format. |Available|
 | New Zealand | Generation of electronic invoices for Sales and Project invoices and credit notes in the New Zealand extension of PEPPOL format. <li>[Electronic invoicing for New Zealand](apac/apac-aus-nzl-electronic-invoices.md)</li>|Available|
 | Norway  | Generation of electronic invoices for Sales and Project invoices and credit notes in the EHF format. <li>[Customer electronic invoices in Norway](norway/emea-nor-e-invoices.md)</li> |Available|
-| Panama | Generation of E-Documents for invoices in the country-specific format. <li>[Electronic invoicing for Panama](/iberoamerica/ltm-panama-ei-connec-configuration.md)</li> |Available|
+| Panama | Generation of E-Documents for invoices in the country-specific format. <li>[Electronic invoicing for Panama](/iberoamerica/ltm-panama-ei-connec-configuration.md)</li> |<li>Available</li><li>Submission planned for 2024 release wave 1</li>|
 | Paraguay |  |Planned for 2024 release wave 1|
 | Peru |  |Planned for 2024 release wave 1|
 | Poland |Generation and direct submission to the governmental KSEF system of electronic invoices for Sales, Project and Advance invoices and credit notes in a country-specific format. Import of vendor electronic invoices. <li>[Get started with Electronic invoicing for Poland](poland/e-invoicing-pol-get-started.md)</li> |Available in Public preview|
