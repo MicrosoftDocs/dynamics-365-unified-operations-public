@@ -45,7 +45,7 @@ To turn on or end shifs from cashier registers for the SCO kiosks, please ensure
 Inorder to set up the kiosk and the hardware peripherals during initial set up, your admin can login to the kiosk using their user credentials. Please ensure their screen layout is assigned to their user id in Head quarters.
 
 ## Consumer facing out of box layout
-As part of the release consumer facing layout has been configured with limited operations and will be available in demo environment for export and import. Look for self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
+As part of the release shopper facing layout has been configured with limited operations and will be available in demo environment for export and import. Look for self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
 Assign the screenlayout to the **Registers** set up. 
 Note: In demo data, Houston - Register 49 is set up as SCO register and SCO layout(SCO_POC1) has been assigned to it.
 
