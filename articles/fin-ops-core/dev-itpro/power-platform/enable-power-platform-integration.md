@@ -7,9 +7,6 @@ ms.author: laswenka
 author: laneswenka
 ms.date: 02/23/2024
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

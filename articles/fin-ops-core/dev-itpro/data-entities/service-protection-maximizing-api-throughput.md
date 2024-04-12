@@ -6,9 +6,6 @@ description: This article describes strategies that can help you manage throttli
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

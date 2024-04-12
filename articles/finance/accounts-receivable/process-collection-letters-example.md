@@ -6,8 +6,6 @@ description: This article goes through an example that shows the process of crea
 author: JodiChristiansen
 ms.date: 03/23/2023
 ms.topic: how-to 
-ms.prod: 
-ms.technology: 
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: This article explains the process of provisioning a new production 
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

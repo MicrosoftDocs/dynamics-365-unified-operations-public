@@ -6,9 +6,6 @@ description: This article answers some frequently asked questions about credit s
 author: JodiChristiansen
 ms.date: 10/15/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

@@ -6,9 +6,6 @@ description: This article provides information about cross rates in Microsoft Dy
 author: abruer
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

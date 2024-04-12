@@ -6,9 +6,6 @@ description: This article explains setup variations in pay cycles, how to genera
 author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PayrollPayCycle

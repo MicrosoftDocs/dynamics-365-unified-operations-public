@@ -6,9 +6,6 @@ description: The article describes the steps for entering beginning balances for
 author: twheeloc
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: PayrollEarningStatement

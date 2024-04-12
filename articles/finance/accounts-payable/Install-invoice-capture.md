@@ -6,9 +6,6 @@ description: This article provides information about how to install the Invoice 
 author: sunfzam
 ms.date: 02/01/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

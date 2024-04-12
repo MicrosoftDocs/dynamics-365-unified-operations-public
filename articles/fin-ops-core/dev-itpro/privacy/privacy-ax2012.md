@@ -4,8 +4,6 @@ description: This article can help businesses that use Microsoft Dynamics AX 201
 author: ryanc
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

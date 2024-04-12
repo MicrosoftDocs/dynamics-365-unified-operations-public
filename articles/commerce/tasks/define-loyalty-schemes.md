@@ -6,8 +6,6 @@ description: This procedure walks through how to define a loyalty scheme.
 author: jashanno
 ms.date: 11/14/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

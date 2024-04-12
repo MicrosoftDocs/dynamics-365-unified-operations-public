@@ -4,8 +4,6 @@ description: This article provides an overview of the various authentication flo
 author: samjarawan
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -6,8 +6,6 @@ description: Create payment fees for customer payments.
 author: ShivamPandey-msft
 ms.date: 03/24/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

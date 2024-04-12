@@ -6,8 +6,6 @@ description: Settle a postdated check issued to a vendor when the bank has clear
 author: kweekley
 ms.date: 11/15/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

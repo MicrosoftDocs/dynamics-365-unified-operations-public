@@ -6,8 +6,6 @@ description: An operating unit is an organization that is used to divide the con
 author: sericks007
 ms.date: 08/14/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

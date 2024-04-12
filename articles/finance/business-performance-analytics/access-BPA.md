@@ -8,8 +8,6 @@ ms.author: jkhaira
 ms.reviewer: twheeloc 
 ms.date: 12/12/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology:
 ms.custom:
 audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics

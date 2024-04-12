@@ -6,9 +6,6 @@ description: This article describes the process for enrolling workers in garnish
 author: twheeloc
 ms.date: 04/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, PayrollDisposableIncome, PayrollWorkerGarnishmentRule

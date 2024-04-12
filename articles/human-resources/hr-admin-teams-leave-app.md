@@ -6,9 +6,6 @@ description: This article introduces the Microsoft Dynamics 365 Human Resources 
 author: twheeloc
 ms.date: 03/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FeatureManagementWorkspace

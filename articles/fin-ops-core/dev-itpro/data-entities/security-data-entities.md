@@ -6,9 +6,6 @@ description: This article provides information about security for data entities.
 author: peakerbl
 ms.date: 03/11/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

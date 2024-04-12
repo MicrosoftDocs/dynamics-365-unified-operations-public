@@ -6,9 +6,6 @@ description: This article describes the high level steps needed to build mobile 
 author: jasongre
 ms.date: 06/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

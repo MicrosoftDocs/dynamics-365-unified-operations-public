@@ -6,9 +6,6 @@ description: This article explains how to set up and add credit limit adjustment
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

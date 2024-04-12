@@ -6,8 +6,6 @@ description: This task will show you how to create benefit elements which will b
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

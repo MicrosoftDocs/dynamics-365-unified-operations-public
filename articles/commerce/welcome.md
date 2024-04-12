@@ -6,9 +6,6 @@ description: Home page for Dynamics 365 Commerce.
 author: josaw
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

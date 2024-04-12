@@ -6,9 +6,6 @@ description: This article provides information about advance invoices for Easter
 author: EvgenyPopovMBS
 ms.date: 07/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustParameters

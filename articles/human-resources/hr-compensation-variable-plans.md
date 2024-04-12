@@ -6,9 +6,6 @@ description: This article describes the components that must be set up before yo
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan, HcmCompensationWorkspace

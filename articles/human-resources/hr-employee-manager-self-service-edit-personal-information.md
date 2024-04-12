@@ -6,9 +6,6 @@ description: This article describes how to edit personal information in Employee
 author: twheeloc
 ms.date: 05/25/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace

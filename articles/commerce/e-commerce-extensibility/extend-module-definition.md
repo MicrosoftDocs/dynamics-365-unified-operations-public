@@ -4,8 +4,6 @@ description: This article describes how to extend a module definition file.
 author: samjarawan
 ms.date: 10/25/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

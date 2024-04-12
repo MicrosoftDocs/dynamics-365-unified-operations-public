@@ -6,9 +6,6 @@ description: This article explains how to create blank checks for a bank account
 author: angelad116
 ms.date: 03/24/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankChequeTable

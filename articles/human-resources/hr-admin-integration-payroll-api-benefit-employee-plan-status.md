@@ -6,9 +6,6 @@ description: This article describes the Benefit employee plan status option set 
 author: marcelbf
 ms.date: 07/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

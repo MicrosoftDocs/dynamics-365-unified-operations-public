@@ -7,8 +7,6 @@ author: laneswenka
 ms.date: 01/14/2021
 ms.topic: article
 ms.service: dynamics-365
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

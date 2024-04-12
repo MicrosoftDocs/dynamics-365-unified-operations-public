@@ -6,8 +6,6 @@ description: This procedure walks through the process of setting up a mass hire 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

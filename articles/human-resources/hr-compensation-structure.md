@@ -6,8 +6,6 @@ description: This article explains how to create a fixed compensation plan and e
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

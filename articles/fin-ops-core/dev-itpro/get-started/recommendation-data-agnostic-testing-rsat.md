@@ -4,8 +4,6 @@ description: This article discusses the recommendations for data agnostic testin
 author: FrankDahl
 ms.date: 09/13/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

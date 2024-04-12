@@ -6,9 +6,6 @@ description: This article explains how to set up and process recurring vendor in
 author: sunfzam
 ms.date: 2/1/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

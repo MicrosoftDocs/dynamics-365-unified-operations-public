@@ -6,9 +6,6 @@ description: This article provides information about the Vendor transactions lis
 author: sunfzam
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  VendTrans

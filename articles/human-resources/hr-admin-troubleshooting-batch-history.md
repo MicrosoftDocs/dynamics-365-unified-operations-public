@@ -6,9 +6,6 @@ description: This article explains how to improve performance in Microsoft Dynam
 author: twheeloc
 ms.date: 08/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: BatchJob, BatchJobEnhanced

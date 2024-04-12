@@ -4,8 +4,6 @@ description: This article explains how to create and modify methodologies in Mic
 author: sericks007
 ms.date: 04/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

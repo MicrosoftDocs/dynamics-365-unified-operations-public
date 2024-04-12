@@ -6,9 +6,6 @@ description: This article describes the Party contact entity for Dynamics 365 Hu
 author: jaredha
 ms.date: 01/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

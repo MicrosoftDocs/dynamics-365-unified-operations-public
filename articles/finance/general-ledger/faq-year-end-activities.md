@@ -6,9 +6,6 @@ description: This article lists questions that can arise when closing a year, an
 author: moaamer
 ms.date: 12/01/2022
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

@@ -6,9 +6,6 @@ description: This article explains how to resolve when a customer can't access p
 author: twheeloc
 ms.date: 09/13/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HCMOrganizationAdministrationWorkspace

@@ -4,8 +4,6 @@ description: You can issue a fiscal document to a customer who bought goods from
 author: AdamTrukawka
 ms.date: 06/24/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

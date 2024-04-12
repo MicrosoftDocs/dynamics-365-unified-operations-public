@@ -6,8 +6,6 @@ description: This task recording walks you through the setup of Sales tax and It
 author: twheeloc
 ms.date: 05/23/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

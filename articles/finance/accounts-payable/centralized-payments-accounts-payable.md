@@ -6,9 +6,6 @@ description: Organizations that include multiple legal entities can create and m
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans

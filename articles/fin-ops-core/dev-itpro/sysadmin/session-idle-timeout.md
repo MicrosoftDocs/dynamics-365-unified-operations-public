@@ -6,9 +6,6 @@ description: This article describes how to set the session inactivity timeout.
 author: paulliew
 ms.date: 11/19/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

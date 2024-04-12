@@ -4,8 +4,6 @@ description: This article explains how to configure inventory buffers and invent
 author: boycezhu
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

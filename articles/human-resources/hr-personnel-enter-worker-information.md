@@ -6,8 +6,6 @@ description: After a recruiter has created a mass hire project and generated the
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

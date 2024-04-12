@@ -6,9 +6,6 @@ description: Cost accounting is an independent module that requires master data 
 author: twheeloc
 ms.date: 09/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMDimension

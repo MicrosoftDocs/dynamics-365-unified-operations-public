@@ -6,10 +6,7 @@ description: This article describes the updated functionality for financial dime
 author: rcarlson
 ms.date: 10/16/2023
 ms.topic: article
-ems.prod: 
-ms.technology: 
-
-# optional metadata
+e# optional metadata
 
 ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 audience: Application User

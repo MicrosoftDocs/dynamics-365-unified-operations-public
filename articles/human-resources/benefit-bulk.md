@@ -6,9 +6,6 @@ description: This article describes features of the Benefit bulk update page.
 author: twheeloc
 ms.date: 03/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace

@@ -6,8 +6,6 @@ description: This procedure shows how to change the reporting relationship for a
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: Data entry for workers in Dynamics 365 Human Resources provides qui
 author: twheeloc
 ms.date: 01/31/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

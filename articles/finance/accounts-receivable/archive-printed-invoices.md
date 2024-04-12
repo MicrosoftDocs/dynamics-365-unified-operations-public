@@ -4,8 +4,6 @@ description: This article explains how to enable archiving to store printed cust
 author: mrolecki
 ms.date: 09/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
