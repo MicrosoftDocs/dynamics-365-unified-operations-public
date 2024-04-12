@@ -10,10 +10,7 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.custom: 
-ms.assetid: 
 ms.search.industry: retail
-ms.devlang: 
 ---
 
 # Cash out gift card balance for a retail customer
