@@ -170,6 +170,18 @@ Follow these steps to configure the electronic document property type that is re
 8. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
 9. In the **Registration number** field, enter a valid SST registration number  for the customer.
 
+## Configure funding sources
+
+If business processes assume issuing of **Project** invoices then perform the following additional configuration steps.
+
+1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+2. Create a new project contract, or select an existing project contract.
+3. On **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
+4. On **Funding source details** page, on the **Other** FastTab, in the **Contact** section, in the **Contact ID** field, select a valid contact person.
+
+   > [!NOTE]
+   > Available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid electronic mail address. This email address will be used for further sending of generated e-invoices to the customer.
+
 ## Configure sales tax codes
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
