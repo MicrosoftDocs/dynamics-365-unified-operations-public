@@ -17,8 +17,6 @@ ms.search.form:
 
 # Electronic invoicing coverage for supported and planned countries and regions
 
-[!include [banner](../includes/banner.md)]
-
 This article describes current Electronic invoicing geographical coverage in Microsoft Dynamics 365 Finance and known plans for upcoming electronic invoicing implementations. 
 
 The information below complements the [Globalization Studio Release plans](../../release-plan/2024wave1/finance-supply-chain/dynamics365-finance/planned-features#globalization-studio) 
@@ -35,11 +33,12 @@ Delivery timelines may change, and projected functionality may not be released a
 | Belgium            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|<li>Available</li><li>Regulatory changes expected by January 2026</li>|
 | Bolivia |  |Planned for 2024 release wave 1.|
 | Brazil            | Generation and direct submission to the authorities of fiscal documents in the **NF-e** and **NFS-e** formats. Import of incoming documents into Microsoft Dynamics 365 Finance from the authorities.<li>Documentation: [NF-e process overview](latam-bra-nf-e-process.md)</li><li>Scope: [Brazilian localization](latam-bra-scope.md)</li>|Available|
-| Chile             | Generation of electronic tax documents (DTE) in country-specific format for Invoices, Debit notes, Credit notes, Export invoices, Export debit notes, Export credit note​, and Packing Slips. <p>Documentation: [Chilean electronic invoicing](iberoamerica/ltm-chile-elec-invo-conncection.md)</p> |Available|
-| China            | Invoice reporting (fapiao) support. File upload integration with **Golden Tax System** via **BaiWang** and **Asino** software. <p>Documentation: Documentation: [Golden tax system integration](apac-chn-tax-integration.md)</p> |Available|
+| Chile             | Generation of electronic tax documents (DTE) in country-specific format for Invoices, Debit notes, Credit notes, Export invoices, Export debit notes, Export credit note​, and Packing Slips. <li>Documentation: [Chilean electronic invoicing](iberoamerica/ltm-chile-elec-invo-conncection.md)</li> |Available|
+| China            | Invoice reporting (fapiao) support. File upload integration with **Golden Tax System** via **BaiWang** and **Asino** software. <li>Documentation: [Golden tax system integration](apac-chn-tax-integration.md)</li> |Available|
 | Columbia |   |Planned for 2024 release wave 1.|
-| Costa Rica       | Generation of E-Documents for Invoices, Credit notes and Debit notes in the country-specific format. <p>Documentation: [Electronic invoicing in Costa Rica](iberoamerica/ltm-costa-rica-ei-connec-configuration.md)</p> |Available|
-| Denmark | Generation and submission to the **NemHandel** or to the **Peppol network** of electronic invoices for Sales and Project invoices and credit notes in the **OIOUBL** or **PEPPOL** formats. Import of vendor electronic invoices. <li>Documentation for ER: [Customer electronic invoices in Denmark](norway/emea-dnk-e-invoices.md), [Vendor electronic invoice import in Denmark](denmark/emea-dnk-vend-e-invoice.md)</li>  <li>Documentation for Service: [Get started with Electronic invoicing for Denmark](denmark/e-invoicing-dk-get-started.md)</li>|ER / Service|
+| Costa Rica       | Generation of E-Documents for Invoices, Credit notes and Debit notes in the country-specific format. <li>Documentation: [Electronic invoicing in Costa Rica](iberoamerica/ltm-costa-rica-ei-connec-configuration.md)</li> |Available|
+| Denmark | Generation and submission to the **NemHandel** or to the **Peppol network** of electronic invoices for Sales and Project invoices and credit notes in the **OIOUBL** or **PEPPOL** formats. Import of vendor electronic invoices. <li>Documentation for Service: [Get started with Electronic invoicing for Denmark](denmark/e-invoicing-dk-get-started.md)</li>|Available|
+| Dominican Republic |   |Planned for 2024 release wave 1.|
 | Egypt   | Generation and direct submission to the Egyptian Tax Authority of electronic invoices for Sales and Project invoices, credit notes and debit notes in the country-specific format. <p>Documentation: [Electronic invoicing for Egypt ](mea/e-invoicing-eg-get-started.md)</p> |Service|
 | Estonia | Generation of electronic invoices for Sales and Project invoices and credit notes in the country-specific format.  <p>Documentation: [Export of customers electronic invoices in Estonia](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-estonia-to-support-export-of-customers-electronic-invoices-in-microsoft-dynamics-365-finance-3f3295b4-62f8-ff24-169a-794379d1fce4)</p> |ER / Service|
 | Finland  | Generation of electronic invoices for Sales and Project invoices and credit notes in the **Finvoice** format. <p>Documentation: [Export of customers electronic invoices in Finland](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-finland-to-support-export-of-customers-electronic-invoices-in-microsoft-dynamics-365-finance-72a33347-e68c-5b39-dbbb-ee9a59d3671f)</p> |ER / Service|
@@ -60,14 +59,11 @@ Delivery timelines may change, and projected functionality may not be released a
 | PEPPOL| Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format. This country-independent functionality can be used “as is” if no country-specific amendments are supposed or can be used as the base for further modifications. <p>Documentation: [Export of customers electronic invoices in PEPPOL BIS 3 format](https://support.microsoft.com/en-us/topic/an-update-for-european-union-to-support-export-of-customers-electronic-invoices-in-peppol-bis-3-format-for-microsoft-dynamics-365-814d09db-dae7-6c5e-034c-797687078bac), [Import vendor electronic invoices in PEPPOL format](europe/emea-peppol-import.md)</p>  |ER / Service|
 
 
-## Planned electronic invoicing coverage
-
-
 
  **Country**  |                                 **Description**                                |**Approach**|
 |----------------------|--------------------------------------------------------------------------------|------------|
-| Columbia | Planned for 2024 release wave 1.  |Service|
-| Dominican Republic | Planned for 2024 release wave 1.  |Service|
+
+
 | Ecuador | Planned for 2024 release wave 1. |Service|
 | Guatemala | Planned for 2024 release wave 1. |Service|
 | Malaysia | Planned for 2024 release wave 1. |Service|
