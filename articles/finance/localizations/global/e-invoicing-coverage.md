@@ -78,5 +78,3 @@ Delivery timelines may change, and projected functionality may not be released a
 
 - [Globalization Studio overview](global/globalization-studio-overview.md)
 - [Electronic invoicing overview](global/e-invoicing-service-overview.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
