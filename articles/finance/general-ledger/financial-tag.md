@@ -6,7 +6,7 @@ description: This article describes financial tags.
 author: kweekley
 ms.date: 09/23/2023
 ms.topic: article
-e# optional metadata
+# optional metadata
 
 ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 audience: Application User
