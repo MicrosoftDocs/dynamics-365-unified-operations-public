@@ -12,14 +12,14 @@ ms.reviewer: johnmichalak
 
 # Store Commerce self-checkout
 
-This article describes how to enable self-check out within Store commerce app and all of the features that are available as part of 10.0.40 release.
+This article describes how to enable self-check out within Store commerce app and all of the related features that are available as part of 10.0.40 release.
 
 ## Enabling Self-checkout
 To enable self-check out, admins would need to go into **Feature Management**, check for new updates and select feature **Configure POS self-checkout register** and enable it.
 
 ## Business value
 Point of sale customers can turn on kiosk based Self-checkout on existing store commerce app re-using existing workflows.
-This relase allows for your consumers to use self-checkout terminals to scan or search for items, add to cart and pay by credit/debit only.
+This relase allows for your shoppers to use self-checkout terminals to scan or search for items, add to cart and pay by credit/debit only.
 
 ## Configuration in Head Quarters
 To enable self-checkout for a register do the following:
@@ -37,17 +37,17 @@ Goto **Released products** and set **Blocked at self-checkout** to **yes**
 
 ## Self-checkout device activation and kiosk login
 To enable only consumer applicable operations in a self-checkout kiosk, a new/generic user with limited permissions should be created that will be used to login to the kiosk.
-A new **permission group** called **SCO kiosk** has been created with gated permissions so that the new SCO user can be assigned to this permission group that will only allow for consumer operations such as scan and pay.
+A new **permission group** called **SCO kiosk** has been created with limited permissions so that the new SCO user can be assigned to this permission group that will only allow for consumer operations such as scan and pay.
 
 ### Login process
 The cashier or the store manager is expected to activate the selfcheckout device using their permissions, turn on shifts for the "SCO user" and then login to the kiosk using the SCO user id so that consumers can carry out self-checkout throughout the day.
 To turn on or end shifs from cashier registers for the SCO kiosks, please ensure to set the **Allow manage shared shift** to **yes** for cashier user permissions.
+Inorder to set up the kiosk and the hardware peripherals during initial set up, your admin can login to the kiosk using their user credentials. Please ensure their screen layout is assigned to their user id in Head quarters.
 
 ## Consumer facing out of box layout
 As part of the release consumer facing layout has been configured with limited operations and will be available in demo environment for export and import. Look for self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
 Assign the screenlayout to the **Registers** set up. 
-Note: In demo data, Houston-49 is set up as SCO register and SCO layout has been assigned to it.
-<insert image of out of box layout>
+Note: In demo data, Houston - Register 49 is set up as SCO register and SCO layout(SCO_POC1) has been assigned to it.
 
 ## Support for operations
 Following consumer operations are supported:
