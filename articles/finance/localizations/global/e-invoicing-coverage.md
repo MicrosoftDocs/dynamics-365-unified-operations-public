@@ -21,7 +21,7 @@ This article describes current Electronic invoicing geographical coverage in Mic
 
 ## Introduction
 
-Electronic invoicing, or e-invoicing, is the process of sending and receiving invoices in a digital format. E-invoicing is rapidly becoming an important part of business processes and an essential part of compliance with the global and country-cpesific regulatory requirements for both, buyers and suppliers.
+Electronic invoicing, or e-invoicing, is the process of sending and receiving invoices in a digital format. E-invoicing is rapidly becoming an important part of business processes and an essential part of compliance with the global and country-specific regulatory requirements for both, buyers and suppliers.
 
 Besides that, e-invoicing has several advantages over traditional paper-based invoicing, such as:
  - Reducing errors and disputes by eliminating manual data entry and validation
@@ -30,11 +30,9 @@ Besides that, e-invoicing has several advantages over traditional paper-based in
  - Improving customer satisfaction and retention by offering convenience and flexibility
  - Supporting environmental sustainability by reducing paper waste and carbon footprint
 
+Microsoft permanently monitors legislative requirements changes in e-invoicing area for all supported countries and regions and delivers regulatory updates in timely manner. During extending geographical coverages, Microsoft prioritize e-invoicing as one of the most important requirements.
 
 
-our wide coverage for all out of the box countries
-
-our monitoring of the legislation
 
 ## Electronic invoicing coverage
 
