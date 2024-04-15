@@ -32,6 +32,11 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Point of sale | Native bar code scanning for mobile apps | The Store Commerce app can now scan bar codes and QR codes to with the rear-facing camera on an Android o iOS mobile device without requiring the licensing of a 3rd party app. Workflows where bar code scanning is enables include adding items to a transaction, processing a return, price checks and inventory operations. | Admins |
+| Point of sale | Streamlined workflow for adding items to a transaction from the product page. | When adding an item to the cart from the product description page or search results, a confirmation dialog is now displays with the list of products being added, and navigation options to go to the transaction or stay on the product or search page. Additionally, a new configuration option in the Visual profile in Headquarters can be used to bypass the confirmation dialog and take the user directly to the transaction when an item is added to the sale. | Automatically / Admins | 
+| Point of sale | Display store phone number on store location page in POS | Store associates can now view a store’s phone number on the store location page in POS. The store’s phone number is useful for store associates in their daily tasks for contacting the store, or providing the phone number to a customer.  The store phone number has been already available in e-Commerce and Call Center. Now it is available in POS, including a mobile view and an offline mode. | Automatically |
+| Point of sale | Reset button grids at the end of a transaction | To reduce confusion and provide a consistent experience for point of sale users, the default button grid assigned to the first tab will be restored when a transaction is completed, suspended or voided. | Automatically |
+| Point of sale | Configure display of search results | The default view for displaying search results can now be configured in the Visual profile in Headquarters. Before this release, the default view for search results was list view, but we received feedback from customers that they prefer card view, especially on mobile devices. | Admins |
 
 
 ## Additional resources
