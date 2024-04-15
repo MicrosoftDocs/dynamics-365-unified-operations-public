@@ -21,9 +21,8 @@ This article describes current Electronic invoicing geographical coverage in Mic
 
 ## Electronic invoicing coverage
 
-The information below complements the [Globalization Studio Release plans](../../release-plan/2024wave1/finance-supply-chain/dynamics365-finance/planned-features#globalization-studio) 
-for planned Electronic invoicing implementations specifically. 
-Delivery timelines may change, and projected functionality may not be released at all due to various reasons. For more information, go to [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
+> [!NOTE]
+> Delivery timelines for the mentioned below planned implementations may change, and projected functionality may not be released at all due to various reasons. For more information, go to [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
  **Country**  |                                 **Description**                                |**Availability**|
 |----------------------|-----------------------------------------------------------------------|------------|
