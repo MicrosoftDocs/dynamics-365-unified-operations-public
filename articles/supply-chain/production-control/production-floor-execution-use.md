@@ -164,19 +164,22 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 Workers and managers can use the production floor exectuion interface to register batch and serial numbers for material and components used in manufacturing processes and associate these to batch and serial numbers for the products that are being produced. This enables manufacturers to optimize their processes, enhance product quality, and respond quickly to any issues that arise.
 
-### Register batch and serial numbers for finished products and their components
+## Register batch and serial numbers for finished products and their components (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
 
 To register tracked components for the finished items for any production order, follow these steps:
 1. Open any of the following pages:
-- Production order list or details
-- Picking list journal line
-- Route card journal line
-- Job card journal line
-- Report as finished journal line
-- Current operations
-- Production order Start dialog
-- Production order Report as finished dialog
-
+    - Production order list or details
+    - Picking list journal line
+    - Route card journal line
+    - Job card journal line
+    - Report as finished journal line
+    - Current operations
+    - Production order Start dialog
+    - Production order Report as finished dialog
+    
 2. Select the production order you want to register batch or serial numbers for.
 3. From the Action Pane, find the tab includes a button called **Track components** and select that button.
 4. The **Tracked components** page opens.
@@ -184,7 +187,7 @@ To register tracked components for the finished items for any production order, 
 - If you are using a scanner, scan the bar code of the first finished product you want to register.
 - If you are using a keyboard, enter the batch or serial number of the first product you want to register and then select **Submit**.
 6. The **Scan mode** switches to **Component**. Now you are ready register a component batch or serial number.
-- If you are using GS1 barcodes, then your system may be able to detect which component you are scanning, so you can just scan the component bar code, which includes both he component item number and its serial or batch number.
+- If you are using [GS1 barcodes](../warehousing/gs1-barcodes.md), then your system may be able to detect which component you are scanning, so you can just scan the component bar code, which includes both he component item number and its serial or batch number.
 - If you are using simple barcodes, or are entering using a keyboard, first select a component on the Component FastTab grid and then enter or scan the batch or serial number for that component.
 7. Repeat the previous step until you have registered all of the component the current finished product.’
 8. Set **Scan mode** back to **Product** and repeat this procedure until you have registered all finished products and their components for the current production order. At any time, you can review and correct the registrations you have made so far by selecting **View associations** from the **Finished products** FastTab toolbar to open the **Tracked components** associations page. See the next section for details about how to work with this page.
