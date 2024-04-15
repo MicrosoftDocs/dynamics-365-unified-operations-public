@@ -32,7 +32,7 @@ Besides that, e-invoicing has several advantages over traditional paper-based in
 
 Microsoft permanently monitors legislative requirements changes in e-invoicing area for all supported countries and regions and delivers regulatory updates in timely manner. During extending geographical coverages, Microsoft prioritize e-invoicing as one of the most important requirements.
 
-
+The next chapter contains the detailed information about e-invoicing "out-of-the-box" functionality for already supported countries including upcomig regulatory changes as well as plans for new countries implementations.
 
 ## Electronic invoicing coverage
 
