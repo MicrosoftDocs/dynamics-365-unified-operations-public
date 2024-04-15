@@ -202,7 +202,7 @@ During the lead qualification process, you can provide both a business phone num
     | Company (field) | Exact Match |
     | Relationship Type (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Accounts.](media/duplicate-rule-1.PNG)
 
@@ -218,7 +218,7 @@ During the lead qualification process, you can provide both a business phone num
     | Last Name (field) | Exact Match |
     | Company (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Contacts.](media/duplicate-rule-2.PNG)
 
