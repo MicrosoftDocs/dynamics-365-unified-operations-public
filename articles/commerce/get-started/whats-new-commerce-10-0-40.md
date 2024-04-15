@@ -37,7 +37,7 @@ The following table lists the features that are included in this release. We mig
 | Point of sale | Display store phone number on store location page in POS | Store associates can now view a store’s phone number on the store location page in POS. The store’s phone number is useful for store associates in their daily tasks for contacting the store, or providing the phone number to a customer.  The store phone number has been already available in e-Commerce and Call Center. Now it is available in POS, including a mobile view and an offline mode. | Automatically |
 | Point of sale | Reset button grids at the end of a transaction | To reduce confusion and provide a consistent experience for point of sale users, the default button grid assigned to the first tab will be restored when a transaction is completed, suspended or voided. | Automatically |
 | Point of sale | Configure display of search results | The default view for displaying search results can now be configured in the Visual profile in Headquarters. Before this release, the default view for search results was list view, but we received feedback from customers that they prefer card view, especially on mobile devices. | Admins |
-
+| Point of sale | Store commerce self-checkout | POS customers can turn on kiosk based self-checkout for their shoppers to be able to scan and pay for items by credit card. | Admins |
 
 ## Additional resources
 
