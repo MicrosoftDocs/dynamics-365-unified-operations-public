@@ -4,7 +4,7 @@
 title: Configure the production floor execution interface
 description: This article describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
-ms.date: 11/07/2022
+ms.date: 15/04/2024
 ms.topic: article
 
 # optional metadata
@@ -95,6 +95,16 @@ As of Supply Chain Management version 10.0.25, this feature is turned on by defa
 <!-- KFM: Preview until further notice -->
 
 This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
+
+### Tracked components (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+This feature lets users and managers register batch and serial numbers for material and components used in manufacturing processes and associate these to batch and serial numbers for the products that are being produced. This enables manufacturers to optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can utilize the item tracing report to effectively track batch and serial numbers registered through the Tracked Components feature.
+
+
+
 
 > [!IMPORTANT]
 >

@@ -157,6 +157,78 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ![Report scrap dialog box.](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
 
+## Track component serial and batch numbers for finished products (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Workers and managers can use the production floor exectuion interface to register batch and serial numbers for material and components used in manufacturing processes and associate these to batch and serial numbers for the products that are being produced. This enables manufacturers to optimize their processes, enhance product quality, and respond quickly to any issues that arise.
+
+### Register batch and serial numbers for finished products and their components
+
+To register tracked components for the finished items for any production order, follow these steps:
+1. Open any of the following pages:
+- Production order list or details
+- Picking list journal line
+- Route card journal line
+- Job card journal line
+- Report as finished journal line
+- Current operations
+- Production order Start dialog
+- Production order Report as finished dialog
+
+2. Select the production order you want to register batch or serial numbers for.
+3. From the Action Pane, find the tab includes a button called **Track components** and select that button.
+4. The **Tracked components** page opens.
+5. When you open the page, the **Batch or serial number** field is automatically in focus, and the **Scan mode** is set to **Product** (which means you are about to enter a finished product batch or serial number). 
+- If you are using a scanner, scan the bar code of the first finished product you want to register.
+- If you are using a keyboard, enter the batch or serial number of the first product you want to register and then select **Submit**.
+6. The **Scan mode** switches to **Component**. Now you are ready register a component batch or serial number.
+- If you are using GS1 barcodes, then your system may be able to detect which component you are scanning, so you can just scan the component bar code, which includes both he component item number and its serial or batch number.
+- If you are using simple barcodes, or are entering using a keyboard, first select a component on the Component FastTab grid and then enter or scan the batch or serial number for that component.
+7. Repeat the previous step until you have registered all of the component the current finished product.’
+8. Set **Scan mode** back to **Product** and repeat this procedure until you have registered all finished products and their components for the current production order. At any time, you can review and correct the registrations you have made so far by selecting **View associations** from the **Finished products** FastTab toolbar to open the **Tracked components** associations page. See the next section for details about how to work with this page.
+
+The **Tracked components** page indicates the registration status of each finished product and its components using one of the following values:
+- ***Not started***: No batch or serial number has been associated with the product.
+- ***In progress***: An association has been established, but only for a partial quantity of the started quantity for the line. In the **Components** section, you can use the quantities in **Started, Consumption, and Remaining quantity**, to track how much quantity that has been allocated.
+- ***Completed***: There is no remaining quantity to be allocated.
+
+The **Status** of the finished product represents the combined status of all its components.
+
+### Review and edit batch and serial numbers for finished products and their components
+
+Use the **View association** page to review and edit batch and serial numbers for finished products and their components. See the previous section for instructions on how to find this page for a selected production order.
+
+#### Finished products
+
+The **Finished products** section lists the registrations done for batch and serial numbers for the finished product that is being produced in a selected production order. The toolbar in this section provides the following buttons:
+- **Create** – Add a new row to the grid so you can register the serial or batch number for a missing finished product.
+- **Remove** – Remove one or more selected finished products.
+- **Report as finished** – Report a selected row as finished. If necessary, you can first edit the **Good quantity** and/or **Error quantity** values for batch products as needed.
+
+#### Components
+
+The **Components** section lists the components for the finished product selected in the **Finished products** grid. For each component, it shows the registered batch or serial number and allows you to enter or correct these values. The toolbar in this section provides the following buttons:
+- **Create** – Add a new row to the grid so you can register the serial or batch number for a missing component.
+- **Remove** – Remove one or more selected component.
+- **Pick** – Manually pick the quantity that is planned to be consumed, as specified in the Consumption field.
+- **Adjust consumption** – Generate a production picking list journal to manually adjust the consumption. In this case, the quantity specified in the **Consumption** field will be defaulted to the picking list journal.
+
+### How workers use the Production Floor Execution interface to track components
+
+Workers can register serial and batch numbers for tracked components and the finished products they are producing in the production floor execution interface.
+To enable this option, add a new button **Tracked components**. Learn how to configure the user interface here: XXXX
+Workers proceed as follows when registering tracked components:
+
+1. When a production job is started workers select the **Tracked component** button to register the link between serial and batch number for the product and components. 
+2. The worker is asked to scan the serial or batch number for the product. This is the product that is being manufactured. 
+3. The work selects a component being added to the product and then scans the serial or batch number of that component.
+4. The worker continues working until all components are scanned.
+5. The worker inspects the screen and can adjust the registrations as needed using the buttons at the bottom of the screen.
+6. The worker selects the **Next** button and processes to process the next item in the production order until all products are registered.
+
+
 ## Adjust material consumption and make material reservations (preview)
 
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
