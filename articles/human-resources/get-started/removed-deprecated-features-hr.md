@@ -41,15 +41,13 @@ This list is intended to help you consider these removals and deprecations for y
 |**Replaced by another feature** |Customers can choose from different 3rd party solutions available on AppSource as well as other integrations with Dynamics 365 Human Resources. |
 |**Product areas affected** | Microsoft is retiring support of the tax updates for the US payroll feature in Dynamics 365 Finance. |
 
-
-
 ### New LCS project creation in Human resources (stand-alone) 
 
-[Provision Human resources](/hr-admin-setup-provision)
+[Provision Human resources](../hr-admin-setup-provision.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced with project creation on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq). |
+| **Reason for deprecation/removal** | Replaced with project creation on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](../hr-infrastructure-merge-faq.md). |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
@@ -59,7 +57,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced with environment provisioning on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq.md). |
+| **Reason for deprecation/removal** | Replaced with environment provisioning on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](../hr-infrastructure-merge-faq.md). |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
