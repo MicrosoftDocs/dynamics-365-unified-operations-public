@@ -35,5 +35,6 @@ originally published.
 This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was 
 originally published.
 
-| Module or feature area | Feature name | More information | Enabled by |
-|---|---|---|---|
+| Feature name | More information | 
+|---|---|
+| Streamlined employee entry	|Streamlined employee entry page will be mandatory starting in Dynamics 365 Human Resources 10.0.41 release. |
