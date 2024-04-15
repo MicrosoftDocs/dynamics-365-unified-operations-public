@@ -37,8 +37,8 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation** | Tax updates are being retired for the US payroll feature in Microsoft Dynamics 365 Finance after the 10.0.40 release. The US payroll feature still works, but additional tax updates will not be available. Customers should consult with their implementation partner to find the best solution for their payroll needs going forward. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance).|
-|**Replaced by another feature** |Customers can choose from different 3rd party solutions available on AppSource as well as other integrations with Dynamics 365 Human Resources. |
+| **Reason for deprecation** | Tax updates are being retired for the US payroll feature in Microsoft Dynamics 365 Finance after the 10.0.40 release. The US payroll feature still works, but additional tax updates won't be available. Customers should consult with their implementation partner to find the best solution for their future payroll needs. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance).|
+|**Replaced by another feature** |Customers can choose from different third party solutions available on AppSource and other integrations with Dynamics 365 Human Resources. |
 |**Product areas affected** | Microsoft is retiring support of the tax updates for the US payroll feature in Dynamics 365 Finance. |
 
 ### New LCS project creation in Human resources (stand-alone) 
