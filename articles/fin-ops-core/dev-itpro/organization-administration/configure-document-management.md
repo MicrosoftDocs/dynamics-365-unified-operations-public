@@ -129,9 +129,9 @@ Document preview (WOPI) doesn't work in environments where an IP safe list is en
 
 Here are some other configuration options to consider:
 
-- On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Turn on this option only when it's required.
+- On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allowlist. If you set this option to **Yes**, you disable attachments on all other tables. Turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. When SharePoint is used as a document type, users can upload only documents that have a maximum file size of 262 megabytes (MB).
-- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine whether attachments are opened in place, or in a new window or on a new tab. You should consider turning on this option especially if you're using SharePoint to store attachments, because this option prevents the finance and operations user session from being reset when attachments are opened. This option is available as of version 10.0.23.
+- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine whether attachments are opened in place, or in a new window or on a new tab. You should consider turning on this option especially if you use SharePoint to store attachments, because this option prevents the finance and operations user session from being reset when attachments are opened. This option is available as of version 10.0.23.
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments
@@ -334,9 +334,9 @@ Yes. SharePoint storage is supported natively and can be selected as the storage
 
 By default, attachments are saved in Azure Blob storage automatically as part of the product cloud offering.
 
-### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
+### If I accidentally delete an attachment stored in Azure Blob Storage, can it be restored?
 
-If an attachment that's stored in Azure Blob storage is accidentally deleted, it can't be restored or recovered because it's permanently deleted, and the reference to it is also deleted.
+When you delete attachments that are stored in Azure Blob Storage, they're permanently deleted. The references to those attachments are also deleted. Therefore, if you accidentally delete an attachment, it can't be restored or recovered.
 
 ### Is the database information about attachments stored separately from the attachments themselves?
 
