@@ -32,7 +32,7 @@ Besides that, e-invoicing has several advantages over traditional paper-based in
 
 Microsoft permanently monitors legislative requirements changes in e-invoicing area for all supported countries and regions and delivers regulatory updates in timely manner. During extending geographical coverages, Microsoft prioritize e-invoicing as one of the most important requirements.
 
-The next chapter contains the detailed information about e-invoicing "out-of-the-box" functionality for already supported countries including upcomig regulatory changes as well as plans for new countries implementations.
+The next chapter contains the detailed information about e-invoicing "out-of-the-box" functionality for already supported countries, including upcomig regulatory changes, as well as plans for new countries implementations.
 
 ## Electronic invoicing coverage
 
@@ -62,18 +62,18 @@ The next chapter contains the detailed information about e-invoicing "out-of-the
 | Guatemala |  |Planned for 2024 release wave 1|
 | Hungary | Generation and submission to the governmental Real-time invoice reporting (RTIR) platform of required data in the country-specific format. <li>[Online invoicing system](../hungary/emea-hun-online-invoicing.md)</li> |Available|
 | India   | Generation and submission to the governmental Invoice Registration Portal (IRP) of electronic invoices for Sales and Project invoices and credit notes in the country-specific format. <li>[Electronic invoices in India](../india/apac-ind-e-invoices.md)</li> |Available|
-| Indonesia | Generation and files upload integration with the tax authorities software electronic invoices for Sales and Project invoices, credit notes and debit notes in the country-specific format. Import of vendor electronic invoices. <li>[Get started with electronic invoicing for Indonesia](indonesia/e-invoicing-id-get-started.md)</li> |Available|
+| Indonesia | Generation and files upload integration with the tax authorities software electronic invoices for Sales and Project invoices, credit notes and debit notes in the country-specific format. Import of vendor electronic invoices. <li>[Get started with electronic invoicing for Indonesia](../indonesia/e-invoicing-id-get-started.md)</li> |Available|
 | Italy |Generation and direct submission to SDI system of electronic invoices for Sales and Project invoices and credit notes in the **FatturaPA** format. Import of vendor electronic invoices. <li>[Customer electronic invoices](../italy/emea-ita-e-invoices.md)</li> <li>[Vendor electronic invoices](../italy/emea-ita-vend-e-invoices.md)</li> <li>[Import of vendors electronic invoices](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-italy-to-support-import-of-vendors-electronic-invoices-in-microsoft-dynamics-ax-and-microsoft-dynamics-365-331ea49f-4d49-f968-6ed8-f369759a689b)</li>  <li>[Direct integration of Italian electronic invoices with SDI](../italy/e-invoicing-ita-fatturapa-get-started.md)</li>|Available|
 | Malaysia | Generation and direct submission to IRBM of electronic invoices for Sales, Project and Self invoices and credit notes in the Australian extension of **PEPPOL PINT** format. |Planned for 2024 release wave 1|
 | Mexico | Generation and submission of the **CFDI** electronic documents to PAC **Interfactura**. Import of vendor electronic invoices. <li>[Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md)</li> |Available|
 | Netherlands | Generation of electronic invoices for Sales and Project invoices and credit notes in the **UBL-OHNL** format. |Available|
-| New Zealand | Generation of electronic invoices for Sales and Project invoices and credit notes in the New Zealand extension of PEPPOL format. <li>[Electronic invoicing for New Zealand](../apac/apac-aus-nzl-electronic-invoices.md)</li>|Available|
-| Norway  | Generation of electronic invoices for Sales and Project invoices and credit notes in the EHF format. <li>[Customer electronic invoices in Norway]../(norway/emea-nor-e-invoices.md)</li> |Available|
-| Panama | Generation of E-Documents for invoices in the country-specific format. <li>[Electronic invoicing for Panama](..//iberoamerica/ltm-panama-ei-connec-configuration.md)</li> |<li>Available</li><li>Submission planned for 2024 release wave 1</li>|
+| New Zealand | Generation of electronic invoices for Sales and Project invoices and credit notes in the New Zealand extension of PEPPOL format. <li>[Electronic invoicing for New Zealand](../apac/gs-apac-aus-nzl-electronic-invoices.md)</li>|Available|
+| Norway  | Generation of electronic invoices for Sales and Project invoices and credit notes in the EHF format. <li>[Customer electronic invoices in Norway](../norway/emea-nor-e-invoices.md)</li> |Available|
+| Panama | Generation of E-Documents for invoices in the country-specific format. <li>[Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md)</li> |<li>Available</li><li>Submission planned for 2024 release wave 1</li>|
 | Paraguay |  |Planned for 2024 release wave 1|
 | Peru |  |Planned for 2024 release wave 1|
 | Poland |Generation and direct submission to the governmental KSEF system of electronic invoices for Sales, Project and Advance invoices and credit notes in a country-specific format. Import of vendor electronic invoices. <li>[Get started with Electronic invoicing for Poland](../poland/e-invoicing-pol-get-started.md)</li> |Available in Public preview|
-| Saudi Arabia | Generation and direct submission to **ZATCA** electronic invoices for Customer prepayments, Sales and Project invoices, credit notes and debit notes in the country-specific format. <li>[Customer electronic invoices in Saudi Arabia](mea/emea-sau-e-invoices.md)</li> |Available|
+| Saudi Arabia | Generation and direct submission to **ZATCA** electronic invoices for Customer prepayments, Sales and Project invoices, credit notes and debit notes in the country-specific format. <li>[Customer electronic invoices in Saudi Arabia](../mea/gs-e-invoicing-sa-get-started.md)</li> |Available|
 | Spain | Generation of electronic invoices for Sales and Project invoices and credit notes in the **FacturaE** format.  |<li>Available</li><li>Regulatory changes expected by July 2025</li>|
 | Spain | Generation and submission to the governmental **SII** system of required data in the country-specific format. <li>[Immediate Supply of Information on VAT (SII)](../spain/emea-esp-sii.md)</li> |Available|
 | Uruguay | Electronic Fiscal Receipt (CFE).  |Planned for 2024 release wave 1|
@@ -82,5 +82,5 @@ The next chapter contains the detailed information about e-invoicing "out-of-the
 
 ## Additional resources
 
-- [Globalization Studio overview](global/globalization-studio-overview.md)
-- [Electronic invoicing overview](global/e-invoicing-service-overview.md)
+- [Electronic invoicing overview](gs-e-invoicing-service-overview.md)
+- [Globalization Studio overview](globalization-studio-overview.md)
