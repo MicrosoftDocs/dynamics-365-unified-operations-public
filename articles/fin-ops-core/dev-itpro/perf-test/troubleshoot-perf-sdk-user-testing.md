@@ -4,8 +4,6 @@ description: This article provides troubleshooting information for issues that y
 author: josaw1
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

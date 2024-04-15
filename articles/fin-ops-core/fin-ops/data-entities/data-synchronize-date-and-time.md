@@ -27,7 +27,7 @@ This dual conversion causes dates to change between applications. For example, t
 
 3. Under **Source date format**, select **CSV-Unicode**.
 
-   [![Change source date format to UTC.](../../dev-itpro/data-entities/media/data-source-date-format.png)](/media/data-source-date-format.png)
+   <!-- [![Change source date format to UTC.](../../dev-itpro/data-entities/media/data-source-date-format.png)](/media/data-source-date-format.png) -->
 
 4. Change **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
 

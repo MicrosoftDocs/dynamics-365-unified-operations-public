@@ -6,9 +6,6 @@ description: This article describes how to use the module CSS optimization featu
 author: samjarawan
 ms.date: 08/05/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

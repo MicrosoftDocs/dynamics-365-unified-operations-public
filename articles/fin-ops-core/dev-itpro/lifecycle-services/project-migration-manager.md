@@ -6,9 +6,6 @@ description: This article explains how to use the Project migration manager to m
 author: LaneSwenka
 ms.date: 05/10/2023
 ms.topic: article
-ms.prod:
-ms.technology:
-
 # optional metadata
 
 # ms.search.form:

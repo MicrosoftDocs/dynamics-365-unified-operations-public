@@ -6,9 +6,6 @@ description: This article describes accruals, and provides information about how
 author: aprilolson
 ms.date: 11/21/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerAccuralTable

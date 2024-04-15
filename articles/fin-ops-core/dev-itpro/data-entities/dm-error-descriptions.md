@@ -6,9 +6,6 @@ description: This article describes the error messages that you might encounter 
 author: peakerbl
 ms.date: 01/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,9 +6,6 @@ description: You can accrue leave and absence in Dynamics 365 Human Resources fo
 author: twheeloc
 ms.date: 09/13/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

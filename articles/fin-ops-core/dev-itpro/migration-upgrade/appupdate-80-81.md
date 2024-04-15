@@ -6,9 +6,6 @@ description: This article explains the steps required to update existing finance
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -4,8 +4,6 @@ description: Actions are an essential component of any enterprise resource plann
 author: jasongre
 ms.date: 02/08/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article describes out-of-box support for incremental capture a
 author: BrianShook
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

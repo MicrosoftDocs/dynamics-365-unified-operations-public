@@ -6,8 +6,6 @@ description: You can create goals, add activities to goals, track measurements, 
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

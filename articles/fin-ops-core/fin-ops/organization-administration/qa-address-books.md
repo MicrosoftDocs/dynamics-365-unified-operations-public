@@ -6,9 +6,6 @@ description: This article provides answers to frequently asked questions related
 author: msftbrking 
 ms.date: 03/13/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable

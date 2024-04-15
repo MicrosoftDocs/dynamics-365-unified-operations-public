@@ -6,8 +6,6 @@ description: Billing code custom fields allow you to collect values for billing 
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

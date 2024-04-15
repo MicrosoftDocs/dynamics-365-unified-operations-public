@@ -4,8 +4,6 @@ description: This article describes recommended practices for testing and perfor
 author: andreashofmann1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

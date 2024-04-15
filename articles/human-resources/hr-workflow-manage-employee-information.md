@@ -6,9 +6,6 @@ description: This article explains how you can use workflows to manage employee 
 author: twheeloc
 ms.date: 07/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: WorkflowParametersAdmin, WorkflowtableListPageRnr, WorkflowStatus

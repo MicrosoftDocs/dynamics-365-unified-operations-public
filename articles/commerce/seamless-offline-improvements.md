@@ -6,9 +6,6 @@ description: This article provides an overview of improvements that provide a se
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

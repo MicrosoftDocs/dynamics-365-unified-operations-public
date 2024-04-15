@@ -6,9 +6,6 @@ description: Organizations that include multiple legal entities can create and m
 author: ShivamPandey-msft
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalTransCustPaym

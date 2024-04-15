@@ -6,8 +6,6 @@ description: This article explains how to set up number sequences on an individu
 author: SunilGarg  
 ms.date: 08/16/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

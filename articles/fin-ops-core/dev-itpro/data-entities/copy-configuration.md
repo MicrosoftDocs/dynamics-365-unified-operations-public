@@ -8,9 +8,6 @@ ms.date: 02/02/2024
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

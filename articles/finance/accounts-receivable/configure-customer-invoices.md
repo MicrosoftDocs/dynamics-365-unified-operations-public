@@ -6,9 +6,6 @@ description: A customer invoice for a sales order is a bill that is related to a
 author: ShivamPandey-msft
 ms.date: 03/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustFreeInvoice

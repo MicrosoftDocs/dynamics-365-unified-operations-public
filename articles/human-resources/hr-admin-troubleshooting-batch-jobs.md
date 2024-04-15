@@ -6,9 +6,6 @@ description: This article explains how to resolve performance issues with Micros
 author: twheeloc
 ms.date: 06/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: BatchJob, BatchJobEnhanced

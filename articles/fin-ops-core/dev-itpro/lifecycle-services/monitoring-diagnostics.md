@@ -6,9 +6,6 @@ description: This article describes the tools that Microsoft Dynamics Lifecycle 
 author: angelmarshall
 ms.date: 05/25/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

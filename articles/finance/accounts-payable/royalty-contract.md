@@ -6,9 +6,6 @@ description: This article describes royalty contract management for Microsoft Dy
 author: t-benebo
 ms.date: 08/02/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment 

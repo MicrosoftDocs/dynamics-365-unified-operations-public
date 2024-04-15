@@ -6,9 +6,6 @@ description: This article describes customer posting profiles, which control the
 author: JodiChristiansen
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustPosting, CustVendExternalItem

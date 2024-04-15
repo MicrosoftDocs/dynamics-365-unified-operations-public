@@ -6,9 +6,6 @@ description: This article provides an overview of Accounts payable.
 author: sunfzam
 ms.date: 03/13/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendInvoiceWorkspace 

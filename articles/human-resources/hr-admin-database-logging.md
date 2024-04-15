@@ -7,9 +7,6 @@ description: You can track changes to tables and fields in Dynamics 365 Human Re
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

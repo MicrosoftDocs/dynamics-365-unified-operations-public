@@ -6,8 +6,6 @@ description: This article explains how to create benefit elements which will be 
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

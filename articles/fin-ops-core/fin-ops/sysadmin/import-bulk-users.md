@@ -6,8 +6,6 @@ description: This procedure can be used by system administrators to manually imp
 author: pnghub
 ms.date: 07/07/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

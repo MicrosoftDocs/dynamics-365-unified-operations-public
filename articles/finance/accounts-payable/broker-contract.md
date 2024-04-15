@@ -6,9 +6,6 @@ description: This article describes broker contract management by automating adm
 author: t-benebo
 ms.date: 06/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHierarchy, PdsRebateAgreementLineInfoPart, MCRRoyaltyTable

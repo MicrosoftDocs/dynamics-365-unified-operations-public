@@ -6,9 +6,6 @@ description: This article explains how to set up positive pay and generate posit
 author: panolte
 ms.date: 06/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankPositivePayFormat

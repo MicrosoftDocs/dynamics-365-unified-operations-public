@@ -6,9 +6,6 @@ description: This article describes the bundle functionality that is included in
 author: bking
 ms.date: 01/04/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

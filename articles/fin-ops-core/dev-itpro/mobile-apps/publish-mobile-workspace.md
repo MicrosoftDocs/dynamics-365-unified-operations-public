@@ -6,9 +6,6 @@ description: This article describes the steps that system administrators must fo
 author: sericks007
 ms.date: 05/26/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysAppDesignerPane

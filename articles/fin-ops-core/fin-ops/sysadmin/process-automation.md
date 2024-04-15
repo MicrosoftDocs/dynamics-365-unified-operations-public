@@ -6,9 +6,6 @@ description: This article provides details about how process automation allows s
 author: RyanCCarlson2
 ms.date: 06/29/2022
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ProcessScheduleSeries

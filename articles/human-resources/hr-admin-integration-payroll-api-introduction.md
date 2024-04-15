@@ -6,9 +6,6 @@ description: This article describes the Dynamics 365 Human Resources Payroll int
 author: twheeloc
 ms.date: 02/03/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

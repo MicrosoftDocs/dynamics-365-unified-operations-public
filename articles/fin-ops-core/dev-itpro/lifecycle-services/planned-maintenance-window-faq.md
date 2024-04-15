@@ -6,9 +6,6 @@ description: This article provides answers to frequently asked questions about t
 author: angelmarshall
 ms.date: 02/25/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

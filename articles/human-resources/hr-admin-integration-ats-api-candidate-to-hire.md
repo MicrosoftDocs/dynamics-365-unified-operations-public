@@ -6,9 +6,6 @@ description: This article describes the Candidate to hire entity for Dynamics 36
 author: jaredha
 ms.date: 12/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

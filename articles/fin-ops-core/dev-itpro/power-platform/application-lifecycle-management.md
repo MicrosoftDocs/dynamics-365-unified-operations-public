@@ -6,9 +6,6 @@ description: This article explains the application lifecycle for solutions that 
 author: Sunil-Garg
 ms.date: 07/13/2020
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

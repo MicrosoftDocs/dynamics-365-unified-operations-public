@@ -6,9 +6,6 @@ description: This article explains how to resolve issues with batch jobs that ar
 author: twheeloc
 ms.date: 03/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: BatchJob, BatchJobEnhanced

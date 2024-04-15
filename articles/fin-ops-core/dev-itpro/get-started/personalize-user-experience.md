@@ -6,9 +6,6 @@ description: This article explains how you can personalize the app.
 author: jasongre
 ms.date: 06/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysUserSetup, DefaultDashboard

@@ -4,8 +4,6 @@ description: This article explains how to configure an email channel for Office 
 author: baryshnikova
 ms.date: 12/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer:
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article provides information about enhanced batch forms.
 author: hasaid
 ms.date: 03/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

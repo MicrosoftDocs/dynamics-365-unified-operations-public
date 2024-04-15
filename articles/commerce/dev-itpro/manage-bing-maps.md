@@ -4,8 +4,6 @@ description: This article describes how to manage Bing Maps for your application
 author: ShalabhjainMSFT
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

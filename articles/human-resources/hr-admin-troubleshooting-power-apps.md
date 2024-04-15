@@ -6,9 +6,6 @@ description: This article explains what to do if the admin can't create an envir
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: SystemAdministrationWorkspaceForm

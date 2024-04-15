@@ -4,8 +4,6 @@ description: This article provides information about how to set up the Configura
 author: gianugo
 ms.date: 10/16/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

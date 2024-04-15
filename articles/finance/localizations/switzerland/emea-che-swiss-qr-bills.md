@@ -4,8 +4,6 @@ description: This article provides information about how to generate QR-bills (Q
 author: AdamTrukawka
 ms.date: 03/25/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Switzerland

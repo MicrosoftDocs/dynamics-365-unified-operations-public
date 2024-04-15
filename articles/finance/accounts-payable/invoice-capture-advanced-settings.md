@@ -6,9 +6,6 @@ description: This article provides information about advanced settings in the In
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

@@ -4,8 +4,6 @@ description: This article shows how to use customizations to add extension point
 author: josaw1
 ms.date: 03/29/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
