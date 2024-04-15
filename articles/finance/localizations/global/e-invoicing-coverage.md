@@ -19,6 +19,23 @@ ms.search.form:
 
 This article describes current Electronic invoicing geographical coverage in Microsoft Dynamics 365 Finance and known plans for upcoming electronic invoicing implementations. 
 
+## Introduction
+
+Electronic invoicing, or e-invoicing, is the process of sending and receiving invoices in a digital format. E-invoicing is rapidly becoming an important part of business processes and an essential part of compliance with the global and country-cpesific regulatory requirements for both, buyers and suppliers.
+
+Besides that, e-invoicing has several advantages over traditional paper-based invoicing, such as:
+ - Reducing errors and disputes by eliminating manual data entry and validation
+ - Increasing cash flow and visibility by speeding up the invoice approval and payment cycle
+ - Lowering operational costs by saving time, paper, postage, and storage space
+ - Improving customer satisfaction and retention by offering convenience and flexibility
+ - Supporting environmental sustainability by reducing paper waste and carbon footprint
+
+
+
+our wide coverage for all out of the box countries
+
+our monitoring of the legislation
+
 ## Electronic invoicing coverage
 
 > [!NOTE]
