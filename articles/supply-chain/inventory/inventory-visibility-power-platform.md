@@ -73,17 +73,23 @@ Any time that you modify the configuration and save your changes, the system sav
 
 1. Select **Confirm Update** to apply your configuration change.
 
-## Data Partition Rule
+## <a name="data-partition"></a>Data partition rule
 
-Inventory Visibility add-in provides following ways to distribute and store user's inventory data: 
-- By Location. Choose this option if for your business whenever you do onhand query, inventory adjustment, reservation or allocation, you always know your site and warehouse information. 
-- By Product ID. Choose this option if for your business there are common cases when site or warehouse information is not always known when calling IV, for example it is common in ecommerce in-basket reservation that item does not have a fulfillment warehouse when online order was initially placed, in this case you may call IV to query onhand and make reservation with blank warehouse information.
+Inventory Visibility can distribute and store inventory data in either of the following ways:
 
-To change data partition rule, user goes to Inventory Visibility App, select `Data Partition Rule` and choose the rule preferred. Then an update configuration is required. User need to [clear all inventory data](#delete-data) before updating configuration. Otherwise, the update configuration always fails.
+- *By location* – Choose this option if you always know site and warehouse information when you make on-hand queries, inventory adjustments, inventory reservations or inventory allocations through Inventory Visibility.
+- *By product ID* – Choose this option if you often don't know site or warehouse information when calling Inventory Visibility. For example, when making e-commerce in-basket reservations, the fulfillment warehouse might be unknown when online orders are initially placed. In this case, it's important to be able to call Inventory Visibility to query on-hand inventory and make reservations without providing warehouse information.
 
-Data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, `By Product ID` is suggested when user do a lot of query across different location IDs; `By Location` is suggested when user queries for multiple products under same location. 
+To change the data partition rule, follow these steps:
 
-When using partition rule `By Location`, the following rule is included in the solution by default and cannot be changed. This will be set 0 of Index Hierarchy. When using `By Product ID` the rule has no effect on Inventory Visibility APIs. 
+1. Open the Inventory Visibility app
+1. Select **Data partition rule** and choose the rule you want to use.
+1. [Clear all inventory data](#delete-data).
+1. [Update the configuration](#update-configuration) to apply your changes. (The update-configuration operation will fail if you don't clear the data first.)
+
+The data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, we recommend using the *By product ID* option if you often query across different locations. However, we recommend using the *By location* option if you more often query for multiple products at the same location.
+
+When using the *By location* partition rule, the rule in the following table is included in the solution by default and can't be changed (this becomes set 0 of the index hierarchy). When using *By product ID*, the rule has no effect on Inventory Visibility APIs.
 
 | Base dimension | Hierarchy |
 |---|---|

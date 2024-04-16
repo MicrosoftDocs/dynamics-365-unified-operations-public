@@ -155,7 +155,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> If data partition rule is selected as `By Product ID`, [partition configuration](inventory-visibility-power-platform.md#partition-configuration), `siteId` and `locationId` are optional dimensions; otherwise they're required dimensions. This also applies to below APIs: allocation, soft reserve, change schedule. 
+> If your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*, `siteId` and `locationId` are optional dimensions. Otherwise they're required dimensions. This rule also applies to the allocation, soft reserve, and change schedule APIs.
 
 The following subsections provide examples that show how to use these APIs.
 
@@ -602,7 +602,7 @@ Body:
 
 ## Query on-hand
 
-Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. When using data partition rule `By Location`, the maximum limit is defined by the following equation:
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. When your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By location*, the maximum limit is defined by the following equation:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -633,28 +633,28 @@ Body:
     }
 ```
 
-In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. 
+In the body part of this request, `dimensionDataSource` is an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*.
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
-### Query data stored by Location.
+### Query data stored by location
 
-This applies to the case when Inventory Visibility's Data Partition Rule is `By Location`.
+This section applies when your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By location*.
 
 - `organizationId` should be an array containing exactly one value.
-- `productId` can contain one or more values. If it's an empty array, the system will return all products of the specific sites and locations. In this case, `siteId` and `locationId` should not be empty.
-- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations of the specific products. In this case, `productId` should not be empty.
+- `productId` can contain one or more values. If it's an empty array, the system will return all products for the specified sites and locations. In this case, `siteId` and `locationId` shouldn't be empty.
+- `siteId` and `locationId` are used for partitioning. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations for the specified products. In this case, `productId` shouldn't be empty.
 
 We recommend to use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#index).
 
-### Query data stored by Product ID
+### Query data stored by product ID
 
-There are two required fields for `filters`: `organizationId`, `productId`.
+This section applies when your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*. In this case, two `filters` fields are required: `organizationId`, `productId`.
 
 - `organizationId` should be an array containing exactly one value.
 - `productId` should be an array with at least one value.
 
-For dimensions `siteId` and `locationId`, unlike when storing data by location, when not specified the inventory of a given product ID will be aggregated across all sites and / or locations. 
+Unlike when storing data by location, if you don't specify values for `siteId` and `locationId`, inventory information for each product ID will be aggregated across all sites and/or locations.
 
 > [!NOTE]
 > If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
@@ -761,7 +761,7 @@ In the body part of this request, `dimensionDataSource` is an optional parameter
 
 - `organizationId` should contain only one value, but it's still an array.
 - `productId` could contain one or more values. If it's an empty array, all products will be returned.
-- In the `dimensions` array, `siteId` and `locationId` are required if and only if using Data Partition Rule `By Location`; in this case, they could appear with other elements in any order.
+- In the `dimensions` array, `siteId` and `locationId` are required if and only if your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By location*. In this case, they could appear with other elements in any order.
 - `values` could contain one or more distinct tuples of values corresponding to `dimensions`.
 
 `dimensions` in `filters` will be automatically added to `groupByValues`.
