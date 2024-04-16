@@ -1,13 +1,13 @@
 ---
 title: Loyalty overview
 description: This article describes the loyalty capabilities within Dynamics 365 Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
-author: josaw1
-ms.date: 03/05/2023
+author: chun817
+ms.date: 04/26/2024
 ms.topic: overview
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: chuzho
 ms.search.validFrom: 2016-02-28
 ms.collection: get-started
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
@@ -17,6 +17,7 @@ ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 # Loyalty overview
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the retailer's brand. In Dynamics 365 Commerce, you can set up simple or complex loyalty programs that apply across your legal entities in any commerce channel. This article describes the loyalty capabilities within Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 
