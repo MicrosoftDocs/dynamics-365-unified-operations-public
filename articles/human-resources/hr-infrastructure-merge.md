@@ -5,8 +5,9 @@
 title: Dynamics 365 Human Resources infrastructure merge overview
 description: This article describes the Microsoft Dynamics 365 Human Resources infrastructure merge.
 author: twheeloc
-ms.date: 10/25/2023
+ms.date: 04/16/2024
 ms.topic: overview
+ms.custom: evergreen
 # optional metadata
 
 ms.search.form: 
