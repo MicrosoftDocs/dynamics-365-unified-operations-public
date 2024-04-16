@@ -26,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Dynamics 365 Human Resources infrastructure merge 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## Dynamics Human Resources 365
 
