@@ -22,7 +22,7 @@ Before you can pay a worker, you must set up payroll information about the worke
 
 For more information, see [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
 
-[![Flow of worker and position tasks.](../media/worker-tasks.gif)](/media/worker-tasks.gif)
+[![Flow of worker and position tasks.](../media/worker-tasks.gif)]
 
 ## Adding payroll periods to positions
 
