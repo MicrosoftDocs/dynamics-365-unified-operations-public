@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.25
 
 ## Preparing for the **Enable advanced awareness options** parameter after year-end close
 
-A major change of the **Enable advanced awareness options** parameter (the **Awareness** feature) is that ledger settlement can't be done across fiscal years. This cross-year limitation is relevant only to ledger settlement, not to Accounts receivable or Accounts payable settlements.
+A major change of the **Enable advanced awareness options** parameter is that ledger settlement can't be done across fiscal years. This cross-year limitation is relevant only to ledger settlement, not to Accounts receivable or Accounts payable settlements.
 
 Before the **Enable advanced awareness options** parameter is enabled, the fiscal year that will undergo the year-end close must not have any ledger transactions that are settled across fiscal years. Specifically, any transactions that were posted into the fiscal year that you're running the year-end close for must be unsettled from transactions that were posted into a different fiscal year. The transactions can then be resettled against transactions in the same fiscal year.
 
