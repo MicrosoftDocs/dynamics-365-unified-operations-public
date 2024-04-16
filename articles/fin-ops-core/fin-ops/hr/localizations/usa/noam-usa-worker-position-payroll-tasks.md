@@ -6,9 +6,6 @@ description: Before you can pay a worker, you must set up payroll information ab
 author: twheeloc
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion

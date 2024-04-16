@@ -6,9 +6,6 @@ description: This article describes the Recruiting request education entity for 
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

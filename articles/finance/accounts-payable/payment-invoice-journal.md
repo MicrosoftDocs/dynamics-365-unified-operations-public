@@ -6,9 +6,6 @@ description: This article describes how to add a payment to the vendor invoice j
 author: sunfzam
 ms.date: 01/31/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

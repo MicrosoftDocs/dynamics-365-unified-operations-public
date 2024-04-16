@@ -6,8 +6,6 @@ description: Conditional questions allow you to specify what follow-up question 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

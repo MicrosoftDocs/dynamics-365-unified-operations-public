@@ -6,9 +6,6 @@ description: This article describes the various elements that make up a workflow
 author: ChrisGarty
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

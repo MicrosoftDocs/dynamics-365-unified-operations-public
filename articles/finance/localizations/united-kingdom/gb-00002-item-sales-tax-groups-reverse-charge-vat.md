@@ -4,8 +4,6 @@ description: This task walks you through setting up item sales tax groups, assig
 author: EricWangChen
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom

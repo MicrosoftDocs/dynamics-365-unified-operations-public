@@ -6,9 +6,6 @@ description: This article describes the integration between Microsoft Dynamics 3
 author: anschmidt  
 ms.date: 02/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

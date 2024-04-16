@@ -6,9 +6,6 @@ description: Use the following procedure to configure the properties of the appr
 author: ChrisGarty
 ms.date: 02/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

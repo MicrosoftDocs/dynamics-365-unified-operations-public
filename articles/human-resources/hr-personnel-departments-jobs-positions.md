@@ -6,9 +6,6 @@ description: This article describes conceptual information about departments, jo
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace

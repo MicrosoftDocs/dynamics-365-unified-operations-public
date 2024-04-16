@@ -6,9 +6,6 @@ description: This article explains how to use shared number sequences to copy a 
 author: sunfzam
 ms.date: 06/13/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  VendTable

@@ -4,8 +4,6 @@ description: This article describes an archival job in Microsoft Dynamics 365 Co
 author: BrianShook
 ms.date: 01/10/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

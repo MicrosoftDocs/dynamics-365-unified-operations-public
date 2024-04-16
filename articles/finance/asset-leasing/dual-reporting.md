@@ -6,9 +6,6 @@ description: This article guides you through an example that shows how you can f
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetLeaseBookMaster

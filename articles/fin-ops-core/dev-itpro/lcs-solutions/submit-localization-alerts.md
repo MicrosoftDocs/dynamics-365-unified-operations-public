@@ -4,8 +4,6 @@ description: This article describes how to use Microsoft Dynamics Lifecycle Serv
 author: kfend
 ms.date: 12/14/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: global

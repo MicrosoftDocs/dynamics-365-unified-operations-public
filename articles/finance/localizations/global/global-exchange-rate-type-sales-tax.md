@@ -4,8 +4,6 @@ description: This article explains the logic for calculating sales tax on the sp
 author: epodkolz
 ms.date: 02/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

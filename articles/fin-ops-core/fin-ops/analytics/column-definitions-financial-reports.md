@@ -4,8 +4,6 @@ description: This article provides information about column definitions. A colum
 author: aprilolson
 ms.date: 10/10/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

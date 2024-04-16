@@ -6,9 +6,6 @@ description: This article explains how to set up the workspace that is related t
 author: abruer
 ms.date: 02/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

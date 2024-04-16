@@ -4,8 +4,6 @@ description: The tools for Visual Studio include a number of add-ins that suppor
 author: jasongre
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

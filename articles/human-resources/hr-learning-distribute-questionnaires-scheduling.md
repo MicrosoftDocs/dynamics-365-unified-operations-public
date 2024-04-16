@@ -6,8 +6,6 @@ description: Questionnaire scheduling allows you to plan and distribute question
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

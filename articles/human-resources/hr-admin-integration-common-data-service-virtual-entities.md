@@ -6,9 +6,6 @@ description: This article shows how to configure, generate, update existing virt
 author: twheeloc
 ms.date: 02/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CDSIntegrationAdministration

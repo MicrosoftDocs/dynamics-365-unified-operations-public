@@ -6,9 +6,6 @@ description: This article describes the process of setting up collections proces
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  CustomerCollectionManagerWorkspace

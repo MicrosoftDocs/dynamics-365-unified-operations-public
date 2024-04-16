@@ -4,8 +4,6 @@ description: This article provides an overview of the Help system for finance an
 author: edupont04
 ms.date: 10/24/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: edupont
 ms.search.region: Global

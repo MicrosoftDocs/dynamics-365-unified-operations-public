@@ -4,8 +4,6 @@ description: This article summarizes answers to questions that are frequently as
 author: josaw1
 ms.date: 06/30/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: global

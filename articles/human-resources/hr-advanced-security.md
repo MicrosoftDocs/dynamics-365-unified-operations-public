@@ -6,9 +6,6 @@ description: This article explains how to set up worker access by legal entity.
 author: twheeloc
 ms.date: 11/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace

@@ -5,9 +5,6 @@ description: This article explains how to import addresses in the State Address 
 author: epodkolz
 ms.date: 06/29/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

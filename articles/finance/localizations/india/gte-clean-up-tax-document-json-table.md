@@ -6,9 +6,6 @@ description: This article explains how free up space in the database by removing
 author: prabhatb
 ms.date: 06/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -4,8 +4,6 @@ description: This article provides information about the Issue search tool on Mi
 author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

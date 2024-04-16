@@ -6,9 +6,6 @@ description: This article explains how to report a production outage through Lif
 author: angelmarshall
 ms.date: 05/06/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

@@ -6,9 +6,6 @@ description: This tutorial shows how to build an entity and how to consume some 
 author: peakerbl
 ms.date: 03/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

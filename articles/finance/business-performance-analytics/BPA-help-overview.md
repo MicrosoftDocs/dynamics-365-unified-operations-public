@@ -7,8 +7,6 @@ ms.author: jiwo
 ms.reviewer: twheeloc 
 ms.date: 09/7/2023
 ms.topic: welcome
-ms.prod: 
-ms.technology:
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User

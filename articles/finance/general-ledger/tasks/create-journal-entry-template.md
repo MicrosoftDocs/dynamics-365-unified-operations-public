@@ -6,8 +6,6 @@ description: Posted journal vouchers can be saved as Voucher templates and appli
 author: aprilolson
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,7 +4,6 @@ description: This article describes features that are either new or changed in o
 author: sericks007
 ms.date: 03/14/2018
 ms.topic: article
-ms.technology: 
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

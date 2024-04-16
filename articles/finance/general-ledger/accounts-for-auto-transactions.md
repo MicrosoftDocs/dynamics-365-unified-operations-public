@@ -6,9 +6,6 @@ description: This article explains how accounts for automatic transactions are u
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerSystemAccounts

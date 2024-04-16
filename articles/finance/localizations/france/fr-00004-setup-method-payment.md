@@ -6,8 +6,6 @@ description: The procedure walks you through setting up methods of payment so th
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

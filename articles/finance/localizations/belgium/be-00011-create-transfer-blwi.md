@@ -4,8 +4,6 @@ description: This procedure walks you through creating BLWI report for Belgium.
 author: AdamTrukawka
 ms.date: 07/12/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Belgium

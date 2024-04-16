@@ -6,9 +6,6 @@ description: This article describes the journal types that you can set up for fi
 author: kweekley
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalSetup

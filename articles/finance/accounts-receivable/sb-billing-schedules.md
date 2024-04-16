@@ -6,9 +6,6 @@ description: This article explains how to create, delete, and edit billing sched
 author: JodiChristiansen
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

@@ -6,9 +6,6 @@ description: This article describes the Collections coordinator overview and wor
 author: JodiChristiansen
 ms.date: 01/25/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

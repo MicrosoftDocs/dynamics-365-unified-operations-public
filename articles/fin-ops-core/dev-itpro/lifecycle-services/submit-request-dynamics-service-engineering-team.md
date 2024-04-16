@@ -6,9 +6,6 @@ description: This article explains how you can submit service requests directly 
 author: laneswenka
 ms.date: 04/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,9 +6,6 @@ description: This article provides information about project deferrals, which le
 author: msftbrking
 ms.date: 05/06/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

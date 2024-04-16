@@ -6,9 +6,6 @@ description: This article provides an overview of the Benefits management email 
 author: twheeloc  
 ms.date: 08/01/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

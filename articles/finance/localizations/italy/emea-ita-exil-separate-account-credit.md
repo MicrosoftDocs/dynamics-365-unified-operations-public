@@ -4,8 +4,6 @@ description: This article explains how to set up and use separate accounts for c
 author: mrolecki
 ms.date: 09/16/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy

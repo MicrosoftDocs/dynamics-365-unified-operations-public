@@ -6,9 +6,6 @@ description: This article describes how to set up benefits that workers and thei
 author: twheeloc
 ms.date: 02/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollBenefitCalculationRateSetup

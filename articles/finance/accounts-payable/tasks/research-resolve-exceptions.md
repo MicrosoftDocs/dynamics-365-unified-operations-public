@@ -6,8 +6,6 @@ description: Vendor invoice policies are run when you post a vendor invoice by u
 author: abruer
 ms.date: 02/11/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

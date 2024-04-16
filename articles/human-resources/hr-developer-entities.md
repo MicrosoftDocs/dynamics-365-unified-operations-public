@@ -6,9 +6,6 @@ description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable ext
 author: twheeloc
 ms.date: 12/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

@@ -6,9 +6,6 @@ description: This article discusses potential implications of reversing a fixed 
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetTrans

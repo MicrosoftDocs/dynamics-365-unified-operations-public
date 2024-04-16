@@ -6,9 +6,6 @@ description: This article explains how to waive, reinstate, and reverse charges 
 author: ShivamPandey-msft
 ms.date: 03/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustInterestJourList 

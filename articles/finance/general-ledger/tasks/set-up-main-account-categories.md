@@ -6,8 +6,6 @@ description: This article explains how to set up main account categories in Dyna
 author: aprilolson
 ms.date: 03/23/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

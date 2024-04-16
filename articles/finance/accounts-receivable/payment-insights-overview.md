@@ -6,9 +6,6 @@ description: This article describes the payment insights capability that helps i
 author: ShivamPandey-msft
 ms.date: 11/06/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

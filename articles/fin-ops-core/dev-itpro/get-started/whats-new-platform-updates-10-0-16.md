@@ -6,9 +6,6 @@ description: This article lists the features that are included in the platform u
 author: sericks007
 ms.date: 11/30/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

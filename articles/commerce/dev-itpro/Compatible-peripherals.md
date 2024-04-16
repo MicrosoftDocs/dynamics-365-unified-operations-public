@@ -6,9 +6,6 @@ description: This article lists peripheral devices that have been tested for com
 author: BrianShook
 ms.date: 11/30/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 # ms.search.form:  RetailHardwareProfile
 audience: IT Pro

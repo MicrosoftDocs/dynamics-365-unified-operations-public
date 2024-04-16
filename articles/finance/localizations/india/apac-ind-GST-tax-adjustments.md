@@ -6,9 +6,6 @@ description: This article explains how to adjust tax amounts on purchase and sal
 author: kfend
 ms.date: 06/05/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
