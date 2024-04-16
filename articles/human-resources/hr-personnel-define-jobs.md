@@ -4,7 +4,7 @@
 title: Define new jobs
 description: This task focuses on the creation of a new job. 
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 04/16/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -44,7 +44,7 @@ This task focuses on the creation of a new job. It will be completed using manua
 
     Position assignments that exceed this number won't be allowed.
 
-10. In the **Description** section, in the **Note** field, enter **Enter a standard description for the Job**.
+10. In the **Description** section, in the **Note** field, **Enter a standard description for the Job**.
 
     This description applies to all positions that are assigned to the job that you're defining.
 
