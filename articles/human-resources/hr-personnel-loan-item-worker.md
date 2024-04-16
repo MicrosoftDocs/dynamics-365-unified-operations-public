@@ -4,7 +4,7 @@
 title: Loan item to a worker
 description: This procedure shows how to loan an item to a worker and record the worker returning an item. 
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 04/16/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -23,8 +23,6 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Loan item to a worker
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
