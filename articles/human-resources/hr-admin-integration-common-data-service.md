@@ -4,7 +4,7 @@
 title: Configure Dataverse integration
 description: This article describes the integration between Microsoft Dataverse and Dynamics 365 Human Resources. 
 author: twheeloc
-ms.date: 08/19/2021
+ms.date: 04/19/2024
 ms.topic: article
 # optional metadata
 
@@ -24,9 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure Dataverse integration
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
