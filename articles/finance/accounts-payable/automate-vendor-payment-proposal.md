@@ -6,9 +6,6 @@ description: This article explains how organizations that pay vendors on a recur
 author: kweekley
 ms.date: 06/08/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

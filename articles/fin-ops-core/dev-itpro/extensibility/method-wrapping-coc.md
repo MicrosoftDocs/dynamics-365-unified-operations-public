@@ -1,15 +1,13 @@
 ---
 title: Class extension - Method wrapping and Chain of Command
-description: This article discusses how to extend the business logic of public and protected methods by using method wrapping.
-author: gianugo
-ms.date: 12/18/2018
+description: Learn about how to extend the business logic of public and protected methods by using method wrapping, with code examples for models.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
+ms.date: 12/18/2018
 ms.reviewer: josaw
+audience: Developer
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ---

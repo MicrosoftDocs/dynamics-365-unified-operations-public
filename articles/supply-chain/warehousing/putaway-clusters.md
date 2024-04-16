@@ -6,8 +6,6 @@ description: Putaway clusters offer a way to pick multiple license plates at the
 author: Mirzaab
 ms.date: 10/19/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

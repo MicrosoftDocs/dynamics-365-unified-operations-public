@@ -6,9 +6,6 @@ description: This article provides details and an example query for the Payroll 
 author: twheeloc
 ms.date: 06/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

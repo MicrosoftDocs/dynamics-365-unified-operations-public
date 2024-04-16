@@ -4,8 +4,6 @@ description: This article provides an overview of the client-side design APIs an
 author: jasongre
 ms.date: 05/26/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

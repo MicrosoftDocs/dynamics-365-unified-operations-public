@@ -6,9 +6,6 @@ description: Compensation processing allows you to calculate new base compensati
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmCompensationWorkspace

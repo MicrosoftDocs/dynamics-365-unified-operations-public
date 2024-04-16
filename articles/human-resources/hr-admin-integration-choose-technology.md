@@ -6,9 +6,6 @@ description: This article provides information about integrating with data manag
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

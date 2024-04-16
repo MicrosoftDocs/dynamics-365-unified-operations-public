@@ -6,8 +6,6 @@ description: This article describes how to set up Microsoft Dynamics 365 Supply 
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

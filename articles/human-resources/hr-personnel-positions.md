@@ -6,9 +6,6 @@ description: This article describes the conceptual elements that a position can 
 author: twheeloc
 ms.date: 06/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace

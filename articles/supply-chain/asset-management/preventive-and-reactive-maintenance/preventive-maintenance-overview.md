@@ -6,8 +6,6 @@ description: This article explains preventive maintenance in Asset Management.
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

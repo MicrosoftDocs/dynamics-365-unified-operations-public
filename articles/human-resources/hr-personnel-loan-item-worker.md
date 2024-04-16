@@ -6,8 +6,6 @@ description: This procedure shows how to loan an item to a worker and record the
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

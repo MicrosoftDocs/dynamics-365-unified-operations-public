@@ -6,9 +6,6 @@ description: You can automatically extract and import the XML from the Nota Fisc
 author: v-gonode
 ms.date: 12/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EFDocumentReceivedXML_BR  

@@ -4,10 +4,8 @@ description: In Microsoft Dynamics Lifecycle Services, you can record informatio
 author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-02-28

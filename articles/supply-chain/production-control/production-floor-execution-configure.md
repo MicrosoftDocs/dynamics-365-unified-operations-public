@@ -6,8 +6,6 @@ description: This article describes how to create one or more configurations for
 author: johanhoffmann
 ms.date: 11/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

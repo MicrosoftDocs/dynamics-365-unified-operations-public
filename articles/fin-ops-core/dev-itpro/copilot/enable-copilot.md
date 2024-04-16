@@ -1,18 +1,18 @@
 ---
 title: Enable Copilot capabilities in finance and operations apps (preview)
-description: This article provides instructions for administrators on how to enable Copilot capabilities in finance and operations apps.
+description: Learn about instructions for administrators on how to enable Copilot capabilities in finance and operations apps.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: johnmichalak
-ms.search.form:
 ms.topic: how-to
-ms.date: 03/27/2024
-audience: Application User
-ms.search.region: Global
-ms.custom: 
+ms.date: 02/16/2024
+ms.custom:
  - bap-template
+ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Enable Copilot capabilities in finance and operations apps (preview)

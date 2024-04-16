@@ -6,8 +6,6 @@ description: Update and index subscription sales prices
 author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

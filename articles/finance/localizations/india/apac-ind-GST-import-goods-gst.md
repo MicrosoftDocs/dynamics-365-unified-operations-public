@@ -6,9 +6,6 @@ description:  This article explains how to import goods that have Goods and Serv
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

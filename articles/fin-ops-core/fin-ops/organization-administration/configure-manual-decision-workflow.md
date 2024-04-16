@@ -6,9 +6,6 @@ description: This article explains how to configure the properties of a manual d
 author: ChrisGarty
 ms.date: 06/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

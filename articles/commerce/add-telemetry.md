@@ -4,8 +4,6 @@ description: This article describes how to add client-side script code to your s
 author: bicyclingfool
 ms.date: 09/29/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

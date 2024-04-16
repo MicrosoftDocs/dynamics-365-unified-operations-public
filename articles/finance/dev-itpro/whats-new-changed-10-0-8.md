@@ -6,9 +6,6 @@ description: This article describes features that are new or changed in Dynamics
 author: kfend
 ms.date: 01/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

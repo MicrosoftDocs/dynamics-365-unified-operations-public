@@ -6,9 +6,6 @@ description: This article shows how to mark an employee as ready to pay in Dynam
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

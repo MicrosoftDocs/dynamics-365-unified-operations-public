@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Refresh database
-description: This article explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
+description: Learn how to perform a refresh of a database for Microsoft Dynamics 365 Finance, including an overview of known issues.
 author: LaneSwenka
-ms.date: 11/06/2023
+ms.author: laswenka
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.date: 11/06/2023
+ms.reviewer: johnmichalak
 audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: sericks
-# ms.tgt_pltfrm:
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
-# ms.search.industry:
-ms.author: laswenka
 ms.search.validFrom: 2016-09-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Refresh database

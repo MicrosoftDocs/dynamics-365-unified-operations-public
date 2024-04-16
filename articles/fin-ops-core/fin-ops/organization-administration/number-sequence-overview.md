@@ -6,9 +6,6 @@ description: Number sequences are used to generate readable, unique identifiers 
 author: SunilGarg
 ms.date: 05/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration

@@ -6,9 +6,6 @@ description: This article introduces the budget funds available feature and prov
 author: RyanCCarlson2
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetControlConfiguration

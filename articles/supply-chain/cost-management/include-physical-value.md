@@ -6,8 +6,6 @@ description: You use the Include physical value check box on the Inventory model
 author: JennySong-SH
 ms.date: 10/31/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

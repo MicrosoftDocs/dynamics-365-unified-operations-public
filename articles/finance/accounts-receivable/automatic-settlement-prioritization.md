@@ -6,9 +6,6 @@ description: This article describes how transactions are settled if you select A
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym

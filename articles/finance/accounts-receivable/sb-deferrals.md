@@ -5,9 +5,6 @@ description: This article explains how to set up revenue and expense deferrals i
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

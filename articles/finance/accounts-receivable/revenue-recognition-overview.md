@@ -6,9 +6,6 @@ description: This article provides information about the Revenue recognition fea
 author: bking
 ms.date: 03/15/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  Customer

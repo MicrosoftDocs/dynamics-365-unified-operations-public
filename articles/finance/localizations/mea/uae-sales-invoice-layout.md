@@ -6,9 +6,6 @@ description: This article includes country/region-specific information about how
 author: liza-golub
 ms.date: 06/07/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

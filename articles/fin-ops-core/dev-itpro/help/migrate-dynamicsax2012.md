@@ -4,8 +4,6 @@ description: This article describes how to reuse content from Microsoft Dynamics
 author: bholtorf
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

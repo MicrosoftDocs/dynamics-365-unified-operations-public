@@ -6,9 +6,6 @@ description: Restrict employees from editing contact details in Dynamics 365 Hum
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EssWorkspace

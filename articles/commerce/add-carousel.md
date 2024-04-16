@@ -4,8 +4,6 @@ description: This article covers carousel modules and describes how to add them 
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

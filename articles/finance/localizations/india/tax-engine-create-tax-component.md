@@ -6,9 +6,6 @@ description: This article explains how to create tax components manually and by 
 author: EricWangChen
 ms.date: 09/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable

@@ -6,8 +6,6 @@ description: This article explains how the production planner can see whether a 
 author: t-benebo
 ms.date: 11/04/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

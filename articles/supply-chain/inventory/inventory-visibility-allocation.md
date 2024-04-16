@@ -58,11 +58,7 @@ The following illustration shows the allocation hierarchy and allocation groups.
 
 [<img src="media/inventory-visibility-allocation-hierarchy.png" alt="Inventory Visibility allocation hierarchy." title="Inventory Visibility allocation hierarchy" width="720" />](media/inventory-visibility-allocation-hierarchy.png)
 
-## Turn on and set up inventory allocation in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## Turn on and set up inventory allocation in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
@@ -72,8 +68,6 @@ To set up inventory allocation, you must complete the following tasks, which are
 - Set up the *available to allocate* calculated measure (and include the *allocated* physical measure in the calculation).
 - Set up your allocation groups.
 - Update the configuration to activate your new settings.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Enable the inventory allocation feature
 

@@ -6,9 +6,6 @@ description: This article provides an overview of batch processing.
 author: snagamalla
 ms.date: 02/09/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

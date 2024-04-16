@@ -6,9 +6,6 @@ description: This article explains how to collect invoice files from different s
 author: sunfzam
 ms.date: 07/19/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

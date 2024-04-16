@@ -6,8 +6,6 @@ description: Use Warehouse management to monitor and automate warehouse processe
 author: Mirzaab
 ms.date: 04/20/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

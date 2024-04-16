@@ -6,9 +6,6 @@ description: This article explains how to use the **Enable Advanced Awareness Op
 author: kweekley
 ms.date: 12/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

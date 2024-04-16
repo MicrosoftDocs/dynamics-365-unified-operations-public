@@ -4,8 +4,6 @@ description: This article provides information about the European Union (EU) sal
 author: AdamTrukawka
 ms.date: 05/26/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

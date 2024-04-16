@@ -6,9 +6,6 @@ description: This article describes the integration between Microsoft Dataverse 
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CDSIntegrationAdministration

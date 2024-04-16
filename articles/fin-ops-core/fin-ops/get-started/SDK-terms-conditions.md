@@ -6,9 +6,6 @@ description: These license terms are an agreement between you and Microsoft Corp
 author: ShellyBakke
 ms.date: 09/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

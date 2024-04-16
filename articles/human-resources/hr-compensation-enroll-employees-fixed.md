@@ -6,8 +6,6 @@ description: The compensation and benefits manager can assign employees to fixed
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

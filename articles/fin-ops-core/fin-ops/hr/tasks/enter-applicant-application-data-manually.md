@@ -6,8 +6,6 @@ description: This procedure shows how to manually maintain information about app
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

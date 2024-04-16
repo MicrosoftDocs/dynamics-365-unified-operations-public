@@ -4,8 +4,6 @@ description: This article explains how to add a new custom field to the Totals p
 author: josaw1
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -6,8 +6,6 @@ description: Departments are operating units that represent a functional area of
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

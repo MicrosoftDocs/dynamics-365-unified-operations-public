@@ -4,8 +4,6 @@ description: This article provides information about the Personal data report fo
 author: josaw1
 ms.date: 10/02/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

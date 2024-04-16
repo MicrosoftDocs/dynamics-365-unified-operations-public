@@ -2,10 +2,8 @@
 title: Electronic invoicing setup (preview)
 description: This article provides an overview of the process for setting up and configuring Electronic invoicing (preview).
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/10/2024
+ms.topic: overview
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -13,8 +11,7 @@ ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ms.custom: 
-ms.assetid: 
-ms.search.form: 
+  - bap-template
 ---
 
 # Electronic invoicing setup (preview)
@@ -70,7 +67,7 @@ Make sure that the **Globalization Studio** workspace is available in the system
 
 To activate Electronic invoicing in Globalization Studio, enable the following features in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- Globalization features
+- Globalization Studio
 - E-invoicing service workspace designer
 - Enable Globalization feature setup for Tax Calculation Service
 - Electronic reporting globalization feature Key Vault parameters

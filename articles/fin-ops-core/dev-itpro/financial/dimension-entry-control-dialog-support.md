@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Support for Dimension Entry controls on dialogs
-description: Describes the code pattern for putting a Dimension Entry control on a dialog.
+description: Learn about the code pattern for putting a Dimension Entry control on a dialog, including code examples for old models and current releases.
 author: RyanCCarlson2
-ms.date: 02/06/2019
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 02/06/2019
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: ec5f2f8c-eb9b-4fbe-a388-be145b2bf98b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Support for Dimension Entry controls on dialogs

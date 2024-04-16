@@ -6,9 +6,6 @@ description: This article walks you through a scenario where a cash discount is 
 author: ShivamPandey-msft
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym

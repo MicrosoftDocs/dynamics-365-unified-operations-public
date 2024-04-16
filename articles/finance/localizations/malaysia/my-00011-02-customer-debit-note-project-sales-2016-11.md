@@ -6,8 +6,6 @@ description: This task walks you through creating and printing project debit not
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

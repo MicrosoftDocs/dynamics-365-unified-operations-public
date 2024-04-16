@@ -4,10 +4,8 @@ description: This article provides an overview of the configuration data package
 author: rcarlson
 ms.date: 12/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2017-06-26

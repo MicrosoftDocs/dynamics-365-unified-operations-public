@@ -6,9 +6,6 @@ description: This article contains answers to questions that you might have if y
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmPositionActionDetail, HcmPersonnelManagementWorkspace

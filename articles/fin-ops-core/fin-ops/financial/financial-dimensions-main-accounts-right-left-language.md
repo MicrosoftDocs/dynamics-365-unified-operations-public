@@ -6,9 +6,6 @@ description: This article describes decisions that you need to make when you use
 author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

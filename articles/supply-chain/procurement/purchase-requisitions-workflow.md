@@ -6,8 +6,6 @@ description: The workflow process moves purchase requisitions through the review
 author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

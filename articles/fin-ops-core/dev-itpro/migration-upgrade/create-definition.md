@@ -4,10 +4,8 @@ description: This article explains how to create migration groups to upgrade fro
 author: peakerbl
 ms.date: 09/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-06-21

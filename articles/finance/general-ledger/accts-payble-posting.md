@@ -6,9 +6,6 @@ description: This article explains how postings are configured in Accounts payab
 author: rachel-profitt
 ms.date: 01/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendPosting, VendPaymMode, VendCashDiscount, MarkupTable\_Vend, VendPaymFee

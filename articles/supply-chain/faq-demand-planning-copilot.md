@@ -7,7 +7,7 @@ ms.reviewer: kamaybac
 ms.date: 04/01/2024
 ms.collection:
   - bap-ai-copilot
-ms.custom: 
+ms.custom:
   - responsible-ai-faqs
 ms.topic: article
 ---

@@ -6,9 +6,6 @@ description: The following article lists the pages that support the close Accoun
 author: ShivamPandey-msft
 ms.date: 06/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

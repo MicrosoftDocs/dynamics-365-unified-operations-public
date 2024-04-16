@@ -4,10 +4,8 @@ description: This article describes features that are either new or changed in D
 author: sericks007
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2018-12-31

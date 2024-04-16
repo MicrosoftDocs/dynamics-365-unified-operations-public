@@ -4,8 +4,6 @@ description: This article explains how to use self-service to configure and inst
 author: jashanno
 ms.date: 01/31/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
@@ -135,17 +133,17 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
     > - TransactionServiceAzureAuthority should have the value `https://<ADFS FQDN including .com>/adfs`.
     > - TransactionServiceAzureResource should have the base URL value of the **StoreSystemAosUrl** edited as shown above. For instance, based on the above example `https://myContosoURL.com` would be used as the value, removing the **/namespaces/AXSF/** portion of the URL.
 
-5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
+5. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 
     Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site \> Always allow**. Then select **Download** again.
 
 6. On the Action Pane, select **Download**.
 7. On the drop-down menu, select **Commerce Scale Unit package**.
-8. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
+8. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 
     The correct installation package is automatically selected for download, based on the Commerce Scale Unit package on the selected channel database.
 
-9. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on the type of browser.)
+9. After the setup installer has been saved, on the notification bar, select **Run**. (This step might differ, depending on the type of browser.)
 
 ### Run the Commerce Scale Unit installer
 
