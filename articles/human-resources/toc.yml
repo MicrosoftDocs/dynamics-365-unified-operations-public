@@ -113,8 +113,6 @@ items:
           href: dev-itpro/hr-admin-virtual-entity-faq.md
         - name: Configure integration with Dataverse  
           href: hr-dataverse-integration.md
-        - name: Configure integration with Finance
-          href: hr-admin-integration-finance.md
         - name: Configure integration with Dayforce
           href: hr-admin-integration-dayforce.md
         - name: Create a recurring data export app
