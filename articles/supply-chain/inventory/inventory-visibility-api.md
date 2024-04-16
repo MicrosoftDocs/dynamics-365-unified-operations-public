@@ -604,7 +604,7 @@ Body:
 
 Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
 
-*NumOf(SiteID) \* NumOf(LocationID) <= 10000*.
+*NumOf(SiteID) &times; NumOf(LocationID) <= 10,000*.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
 
@@ -616,8 +616,8 @@ The query by post API is available in two versions. The following table outlines
 | Can query up to 10,000 distinct warehouses. | Can return large results as multiple pages. |
 
 <!-- KFM notes:
-- We say V1 can "query" up to 10,000 warehouses. Do we mean that queries can return results for up to 10,000 warehouses, or do we mean that we can specify up to 10,000 warehouses in the request?
-- We don't say whether V2 can now "query" more than 10,000 warehouses. Can it? Is there a limit?
+- How does the 10,000 warehouse limit mentioned here relate to the limit calculation we provide in the intro to this section? Are we just repeating that?
+- We don't say whether V2 can now query more than 10,000 warehouses. Can it? Is there a limit? How does the paging feature contrast to the info for v1?
 -->
 
 The following subsections show how to use each API version.
