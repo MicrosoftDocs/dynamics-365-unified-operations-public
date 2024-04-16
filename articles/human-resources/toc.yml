@@ -95,16 +95,6 @@ items:
         items:
         - name: Provision Human Resources in the finance and operations infrastructure
           href: hr-admin-setup-provision-fo.md
-        - name: Provision Human Resources in the stand-alone infrastructure
-          items:
-          - name: Provision Human Resources
-            href: hr-admin-setup-provision.md
-          - name: Copy an instance
-            href: hr-admin-setup-copy-instance.md
-          - name: Remove an instance
-            href: hr-admin-setup-remove-instance.md
-          - name: Update process
-            href: hr-admin-setup-update-process.md
       - name: Set up data integration
         items:
         - name: Choose a data integration technology
