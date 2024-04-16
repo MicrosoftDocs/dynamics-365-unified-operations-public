@@ -608,11 +608,21 @@ Use the *Query on-hand* API to fetch current on-hand inventory data for your pro
 
 ### <a name="query-with-post-method"></a>Query by using the post method
 
-Query by using the post method has two versions 1.0 and 2.0 respectively. 
-- Version 1.0 can only query 1 organization ID，version 2 supports querying multiple organization IDs
-- Version 1.0 can query up to 10000 distinct warehouses, where as version 2.0 returns large result in different pages
+The query by post API is available in two versions. The following table outlines the differences.
 
-#### Version 1.0
+| API version 1.0 | API version 2.0 |
+|---|---|
+| Can only query one organization ID. | Can query multiple organization IDs. |
+| Can query up to 10,000 distinct warehouses. | Can return large results as multiple pages. |
+
+<!-- KFM notes:
+- We say V1 can "query" up to 10,000 warehouses. Do we mean that queries can return results for up to 10,000 warehouses, or do we mean that we can specify up to 10,000 warehouses in the request?
+- We don't say whether V2 can now "query" more than 10,000 warehouses. Can it? Is there a limit?
+-->
+
+The following subsections show how to use each API version.
+
+#### Query by post API version 1.0
 
 ```txt
 Path:
@@ -684,7 +694,7 @@ The following example shows how to query all products in a specific site and loc
 }
 ```
 
-#### Version 2.0
+#### Query by post API version 2.0
 
 ```txt
 Path:
@@ -700,9 +710,16 @@ Body:
     # Same as version 1.0
 ```
 
-For version 2.0 request, the request URL contains two optional parameters `pageNumber` and `pageSize`. The results are sorted by warehouses by pages with size {pageSize}. The specified number of page {pageNumber} is returned. A request of this format returns the requests from number **({pageNumber} - 1) * {pageSize}** for the records next {pageSize} location IDs. 
+The request format for API version 2.0 is similar to that of version 1.0, but also supports two optional parameters: `pageNumber` and `pageSize`, which allow the system to split a single large result into several smaller documents. The results are sorted by warehouse (locationId), and the parameters are used as follows to split results into pages:
 
-The response of version 2.0 is as following: 
+- `pageSize` establishes the number of warehouses (locationId values) that are returned in each page. <!--KFM: I assumed the unit of {pageSize} is the number of warehouses (locationId values). Correct? -->
+- `pageNumber` establishes the page number that's returned.
+
+A request of this format returns on-hand inventory data starting from warehouse number *({pageNumber} &minus; 1) &times; {pageSize}* and includes data for the next *{pageSize}* warehouses.
+
+<!-- KFM:  I have assumed that `locationId` is actually a warehouse ID. (Usually in SCM, we use a **Site > Warehouse > Location** hierarchy, with each warehouse having many "locations" within it, so this is confusing). Am I correct? -->
+
+API version 2.0 responds with a document that uses the following structure:
 
 ```txt
 {
@@ -711,8 +728,9 @@ The response of version 2.0 is as following:
 }
 ```
 
-When the request hits the last page, the nextLink value is an empty string. 
+When the request reaches the last warehouse (locationId), the `nextLink` value is an empty string.
 
+API version 2.0 also lets you specify more than one organization ID in your request. To do so, include a comma-separated list of organization IDs in the `organizationId` filter of your request document. For example, `"organizationId": ["org1", "org2", "org3"]`. <!--KFM: I assumed this. Please confirm whether it is correct. -->
 
 ### <a name="query-with-get-method"></a>Query by using the get method
 
@@ -738,9 +756,9 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_contoso_product&siteId=iv_contoso_site&locationId=iv_contoso_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
-Querying inventory over multiple organization IDs with GET method is not supported.
+The system doesn't support querying inventory over multiple organization IDs with the GET method.
 
-## <a name="exact-query-with-post-method"></a>On-hand exact query
+## On-hand exact query
 
 On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
 
@@ -756,13 +774,15 @@ For a regular on-hand query, if you specify `"siteId": ["1","2"]` and `"location
 
 As you see, the regular on-hand query doesn't recognize that location A exists only in site 1, and location B exists only in site 2. Therefore, it makes redundant queries. To accommodate this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in the query body. In this case, you'll query and receive results for only site 1, location A and site 2, location B.
 
-### <a name="exact-query-with-post-method"></a>Exact query by using the post method
+### <a name="exact-query-with-post-method"></a>On-hand exact query query using the post method
 
-On hand exact query has two versions 1.0 and 2.0 respectively. 
-- Version 1.0 can only query 1 organization ID，version 2 supports querying multiple organization IDs by putting organization ID into each exact query entries
+The on-hand exact query by post API is available in two versions. The following table outlines the differences.
 
+| API version 1.0 | API version 2.0 |
+|---|---|
+| Can only query one organization ID. | Can query multiple organization IDs. |
 
-#### Version 1.0
+#### On-hand exact query by post API version 1.0
 
 ```txt
 Path:
@@ -836,7 +856,7 @@ The following example shows how to query all products in multiple sites and loca
 }
 ```
 
-#### Version 2.0
+#### On-hand exact query by post API version 2.0
 
 ```txt
 Path:
@@ -860,11 +880,13 @@ Body:
         returnNegative: boolean,
     }
 ```
-Compared to `Api-Version=1.0`, Version 2.0 has below differences
-- The filter has a `keys` field to specify `organizationID` and other inventory dimensions as `Dimensions` in `Api-Version=1.0`
-- User do not need to specify `organizationID` as a separate filter in `filters`
 
-Other fields are identical to `Api-version=1.0`
+API version 2.0 differs from version 1.0 in the following ways:
+
+- The `filter` section now has a `keys` field instead of a `dimensions` field. The `keys` field works like the `dimensions` field in version 1.0, but also allows you add `organizationID` among the other inventory dimensions (such as `siteId` and `locationId`, which are required). You can specify the keys in any order.
+- You don't need to specify `organizationID` as a separate filter in `filters` <!--KFM: Do we mean it's optional? Or is it now unsupported? -->
+
+Other fields are identical to API version 1.0.
 
 ## <a name="product-search-query"></a>Query with product search
 
