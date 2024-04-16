@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Set up payroll for workers
 description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits.
 author: twheeloc
-ms.date: 11/01/2017
+ms.author: twheeloc
 ms.topic: article
-# optional metadata
-
-ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/01/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: d6530f02-bbee-4d8e-94e7-173aecb4452e
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: d6530f02-bbee-4d8e-94e7-173aecb4452e
 ---
 
 # Set up payroll for workers
