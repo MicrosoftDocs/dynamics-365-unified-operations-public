@@ -1,6 +1,6 @@
 ---
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS 
-description: Learn about the Microsoft Preview software licnese terms, which are an agreement between you and Microsoft Corporation (or one of its affiliates). 
+description: Learn about the Microsoft Preview software license terms, which are an agreement between you and Microsoft Corporation (or one of its affiliates). 
 author: ShellyBakke
 ms.author: smiller
 ms.topic: article
