@@ -34,7 +34,8 @@ In Microsoft Dynamics 365 Finance version 10.0.25, the **Awareness between ledge
 
 The default setting for **Enable advanced awareness options** is **No**, and its activation depends on the **Enable ledger settlements** parameter, which must be set to **Yes** for it to become active. The other two paremeters, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements**, are dependent on the status of **Enable advanced awareness options**. If the latter is set to **Yes**, these parameters can be enabled.
 
-[!NOTE] It is crucial to note that once **Enable advanced awareness options** is set to **Yes**, it is strongly advised not to revert it to **No**, as doing so might impact the period-end close process.
+>[!NOTE]
+>It's crucial to note that once **Enable advanced awareness options** is set to **Yes**, it is strongly advised not to revert it to **No**, as doing so might impact the period-end close process.
 
 During general ledger year-end close, ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year. This enhancement ensures that only unsettled ledger transactions are included in the opening balance. It's important when general ledger foreign currency revaluation is run. Foreign currency revaluation is run only for ledger transactions that have a status of **Not settled**. However, before enabling the **Enable ledger settlements** parameter, the opening balance summarized both transaction that have a status of **Settled** and those that have a status of **Not settled**, and the status of the summarized amount was set to **Not settled**.
 
