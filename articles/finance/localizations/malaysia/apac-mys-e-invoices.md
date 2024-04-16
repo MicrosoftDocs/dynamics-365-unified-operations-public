@@ -37,7 +37,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Obtain a **digital signature certificate** from one of [Malaysian Certification Authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). The certificate will be used for digital signing of generated electronic invoices.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
-- [Configure an email channel for Office 365 Exchange Online](../global/gs-e-invoicing-configure-email-for-exchange.md).
+- Configure electronic mail settings as described in [Configure an email channel for Office 365 Exchange Online](../global/gs-e-invoicing-configure-email-for-exchange.md).
 
 ## Azure Key Valut configuration
 
@@ -52,6 +52,16 @@ Add the following required elements in the Azure Key Vault:
   - For the **User name**
   - For the **Client ID**
   - For the **Client secret**
+
+## Electronic invoicing parameters configuration
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field select the reference to the Azure Key Valut created in the previous chapter.
+1. In the **SAS token secret** field, select the..........................................
+1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
+1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create a new element the respective **Type** for each certificate or secret described in the previous chapter.
+   > [!NOTE]
+   > The values in the **Name** column should coincide with the names the certificates or secrets described in the previous chapter.
 
 ## Electronic invoicing feature configuration
 
