@@ -104,4 +104,4 @@ Follow these steps if your organization wants to use the **Enable advanced aware
     - When you begin the year-end close for 2023, if transactions are still found that were settled across fiscal years, the year-end close process will immediately notify you. This situation might occur if users settled transactions across fiscal years before the **Enable Advanced Awareness Options** parameter was enabled.
     - If 2022 and 2023 transactions are still settled, you'll have to disable the **Enable advanced awareness options** parameter again and then repeat the previous steps to unsettle those transactions. This approach is required because 2022 is closed, and transactions can't be unsettled in a closed fiscal year.
 
-After the year-end close for 2022 is successfully run, you can leave the **Enable advanced awareness options** parameter enabled from now on.
+After the year-end close for 2022 is successfully run, you can leave the **Enable advanced awareness options** parameter enabled.
