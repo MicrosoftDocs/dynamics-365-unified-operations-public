@@ -25,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 # Restrict editing of personal information
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 

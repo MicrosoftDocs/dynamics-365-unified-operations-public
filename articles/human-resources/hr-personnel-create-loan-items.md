@@ -4,7 +4,7 @@
 title: Create loan items
 description: Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 04/16/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -23,8 +23,6 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create loan items
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

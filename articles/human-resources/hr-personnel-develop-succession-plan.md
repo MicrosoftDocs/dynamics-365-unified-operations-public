@@ -4,7 +4,7 @@
 title: Develop a succession plan
 description: As your organization grows, you must begin succession planning.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 04/16/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -23,9 +23,6 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Develop a succession plan
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
