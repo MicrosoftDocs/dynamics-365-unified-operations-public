@@ -23,16 +23,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Maintain employee injury and illness information
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
-
 It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
-
-
 
 This task recording describes the basic steps for creating an injury or illness case. In addition to the details of the injury or illness, a case status is tracked. By default, cases have a status of **Open**. You can manage the status by using the **Case status** menu item at the top of the page.
 
