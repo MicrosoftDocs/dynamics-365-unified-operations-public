@@ -225,3 +225,10 @@ Follow these steps to complete the configuration.
 
     > [!NOTE]
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific sales tax code.
+
+
+## Issue electronic invoices
+
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices from **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+
+You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type.
