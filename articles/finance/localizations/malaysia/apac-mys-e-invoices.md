@@ -32,23 +32,26 @@ After you configure Electronic invoicing, you can generate, digitally sign and s
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Malaysia.
-- Your company must be a registered tax payer in Malaysia and have the following registration numbers: Tax Identification Number (**TIN**), Sales and Service Tax Number (**SST**), and National Registration Identity Card (**NRIC**).
+- Your company must be a registered tax payer in Malaysia and have the following registration numbers: Tax Identification Number (**TIN**), Business registration number (**BRN**), and Sales and Service Tax Number (**SST**).
 - Obtain **Client ID** and **Client secret** in the Inland Revenue Board of Malaysia (**IRBN**) [Lembaga Hasil Dalam Negeri Malaysia (LHDN)](https://www.hasil.gov.my/). These credentials will be used for extablishing of secure connection to the IRBN portal.
 - Obtain a **digital signature certificate** from one of [Malaysian Certification Authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). The certificate will be used for digital signing of generated electronic invoices.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- [Configure an email channel for Office 365 Exchange Online](../global/gs-e-invoicing-configure-email-for-exchange.md).
 
 ## Azure Key Valut configuration
 
-Add:
+Create an Azure Key Vault to store required certificates and secrets issued for you company. For more information, refer to [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
-- Client secret
-- Client ID
-- Certificate for digital signing
-- .....anything else for Email server settings? ....
-  - Email: User name
-  - Email: Client ID
-  - Email: Client secret ...............
+Add the following required elements in the Azure Key Vault:
+
+- The secret for the **Client secret** to establish secure communication to IRBN.
+- The secret for the **Client ID** for secure communication to IRBN.
+- The **certificate** for digital signing of outgoing electronic invoices.
+- The following **secrets** required of electronic mails sending:
+  - For the **User name**
+  - For the **Client ID**
+  - For the **Client secret**
 
 ## Electronic invoicing feature configuration
 
@@ -81,7 +84,7 @@ Some of the parameters from the **Electronic invoicing for Malaysia** Electronic
 ## Configure registration numbers
 <a id="NRIC"></a>
 > [!NOTE]
-> The registration numbers of **Enterprise ID (COID)** category will be used as **National Registration Identity Card (NRIC)** numbers while generating output files of electronic invoices. If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
+> The registration numbers of **Enterprise ID (COID)** category will be used as **Business registration number (BRN)** numbers while generating output files of electronic invoices. If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
 
 1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 2. Create a registration type.
@@ -128,8 +131,8 @@ Follow these steps to configure the electronic document property type that is re
 2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's Tax Identification Number (TIN).
 3. On the Action Pane, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-5. In the **Registration type** field, select the [NRIC](#NRIC) registration type that you created earlier.
-6. In the **Registration number** field, enter a valid legal entity NRIC registration number. 
+5. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
+6. In the **Registration number** field, enter a valid legal entity BRN registration number. 
 7. Select **Add** to create a new registration ID.
 8. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
 9. In the **Registration number** field, enter a valid legal entity SST registration number.
@@ -166,8 +169,8 @@ Follow these steps to configure the electronic document property type that is re
 2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid Tax Identification Number (TIN) for the customer. T
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-5. In the **Registration type** field, select the [NRIC](#NRIC) registration type that you created earlier.
-6. In the **Registration number** field, enter a valid NRIC registration number for the customer. 
+5. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
+6. In the **Registration number** field, enter a valid BRN registration number for the customer. 
 7. Select **Add** to create a new registration ID.
 8. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
 9. In the **Registration number** field, enter a valid SST registration number  for the customer.
