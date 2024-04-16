@@ -1,18 +1,19 @@
 ---
 title: What's new or changed in Platform updates
-description: This article points to topics that describe the new and changed features in each Platform update for finance and operations apps.
+description: Access various resources and topics that describe the new and changed features in each Platform update for finance and operations apps.
 author: johnmichalak
-ms.date: 01/03/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 01/03/2024
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 61
-ms.collection: get-started
 ms.assetid: 
 ---
+
 # What's new or changed in Platform updates
 
 [!include [banner](../../../finance/includes/banner.md)]
