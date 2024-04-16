@@ -1,15 +1,14 @@
 ---
 title: Automate ledger settlements
 description: This article provides information about the Automate ledger settlements process.
-author: abruer
-ms.date: 9/19/2023
+author: moaamer
+ms.date: 4/19/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: abruer
+ms.author: moaamer
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.assetid: 
@@ -21,7 +20,7 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-In Microsoft Dynamics 365 Finance version 10.0.31, the **Automate ledger settlements process** feature is available in the **Feature management** workspace. However, from version 10.0.40, this functionality will be relocated from Feature Management to the General Ledger parameters, specifically under the Ledger Settlement page. These features will now be managed through parameters titled **Enable Process Automation for Ledger Settlement**. You can enable the **Enable Process Automation for Ledger Settlement** parameter only if the **Enable Advanced Awareness Options** parameter has been enabled.
+In Microsoft Dynamics 365 Finance version 10.0.31, the **Automate ledger settlements process** feature is available in the **Feature management** workspace. Beginning in version 10.0.40, this functionality is enabled on the **General Ledger parameters** page, under the **Ledger settlements** page. These features are managed through the **Enable process automation for ledger settlement** parameter. You can enable the **Enable Process Automation for Ledger Settlement** parameter only if the **Enable Advanced Awareness Options** parameter has been enabled.
 
 Ledger settlement is the process of matching debit and credit transactions in the general ledger. Organizations that perform ledger settlement activities on a recurring schedule can now automate the process. During the automatic ledger settlement process, a debit transaction and a credit transaction can be automatically matched only if their amounts in the accounting currency are equal. For example, a debit amount of $1.00 can be automatically matched to a credit amount of $1.00. However, a debit value of $1.00 can't be automatically matched to two credits, each of which is valued at $0.50. Partial matching of ledger transaction amounts isn't supported.
 
