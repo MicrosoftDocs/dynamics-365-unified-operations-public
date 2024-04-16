@@ -46,7 +46,9 @@ Add:
 - Client ID
 - Certificate for digital signing
 - .....anything else for Email server settings? ....
-...............
+  - Email: User name
+  - Email: Client ID
+  - Email: Client secret ...............
 
 ## Electronic invoicing feature configuration
 
