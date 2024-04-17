@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Company directory mobile workspace
-description: This article provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
+description: Learn about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
-ms.date: 05/24/2022
-ms.topic: article
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jcart
-ms.search.validFrom: 2017-06-30 
+ms.topic: article
+ms.date: 05/24/2022
+ms.custom:
+ms.reviewer: sericks
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update 
 ---
 

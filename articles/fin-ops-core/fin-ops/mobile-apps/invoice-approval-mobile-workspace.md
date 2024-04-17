@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Invoice approvals mobile workspace
-description: This article provides information about the Invoice approvals mobile workspace.
-author: abruer 
-ms.date: 05/24/2022
+description: Learn about the Invoice approvals mobile workspace, including prerequisites and outlines and how to download and sign into the mobile app.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 05/24/2022
+ms.custom:
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: abruer
-ms.search.validFrom: 2017-06-30 
+ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update 
 ---
 
