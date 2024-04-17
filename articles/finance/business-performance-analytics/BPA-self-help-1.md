@@ -1,7 +1,7 @@
 ---
 
 title: Business performance analytics self-help error - Missing fiscal calendar for general ledger
-description: This article provides information about the Missing fiscal calendar for general ledger error (error code ERR00001) in business performance analytics.
+description: This article provides information about the Missing fiscal calendar for general ledger error (error code ERR00001) in Business performance analytics.
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
@@ -16,7 +16,7 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 # Business performance analytics self-help error - Missing fiscal calendar for general ledger
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 ## Missing fiscal calendar for GL: Error code: ERR00001 [Type: Error]
 
