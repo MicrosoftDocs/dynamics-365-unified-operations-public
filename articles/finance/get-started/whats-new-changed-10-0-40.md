@@ -44,6 +44,7 @@ This section contains a table that lists the enhancements that are included in t
 |Cash and bank management|Modern bank reconciliation|Redesigned bank reconciliation report is available when feature "Modern bank reconciliation" is turned on. The new report saves snapshots by bank reconciliation cut-off date. Both unreconciled transaction details and reconciled transaction details are available in the report.|Feature management|
 |Cash and bank management|Modern bank reconciliation|Matching ID field is available when feature "Modern bank reconciliation" is turned on. A unique matching ID is generated when bank statement transactions are matched. This ID is displayed on matched transaction tab.|Feature management|
 |Cash and bank management|Modern bank reconciliation|Matching type field is available when feature "Modern bank reconciliation" is turned on. Matching type indicates how the bank statement transactions are reconciled such as matching with bank document, generate voucher, etc. This ID is displayed on matched transaction tab.|Feature management|
+|Cash and bank management|Modern bank reconciliation|If a bank statement transaction is posted to gneeral ledger as a voucher, relevant company transaction will be displayed on company transaction form.|Feature management|
 
 
 
