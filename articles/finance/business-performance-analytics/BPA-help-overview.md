@@ -1,7 +1,7 @@
 ---
 
 title: Business performance analytics self-help
-description: This article provides information about business performance analytics self-help.
+description: This article provides information about Business performance analytics self-help.
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
@@ -16,11 +16,11 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 # Business performance analytics self-help
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, business performance analytics logs information in the `Bpa self help logs` table in Microsoft Dataverse. This table provides insights into issues and helps you take appropriate action.
+To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the `Bpa self help logs` table in Microsoft Dataverse. This table provides insights into issues and helps you take appropriate action.
 
-### Access the business performance analytics self help logs table
+### Access the Business performance analytics self help logs table
 
 To access the `Bpa self help logs` table, follow these steps.
 
