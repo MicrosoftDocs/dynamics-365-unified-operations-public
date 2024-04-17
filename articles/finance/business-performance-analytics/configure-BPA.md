@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Business performance analytics
-description: This article describes how to configure Business performance analytics.
+description: This article describes how to complete the prerequisites for Business performance analytics.
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
@@ -14,14 +14,14 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ms.audience: administrator
 ---
 
-# Set up Business performance analytics
+# Business performance analytics prerequisites
 
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-This article describes how to configure Business performance analytics.
+This article describes the prerequisites to installing Business performance analytics.
 
-To complete the following procedures and successfully configure Business performance analytics, you must have the following privileges:
+To complete the following procedures and successfully complete the prerequisites for Business performance analytics, you must have the following privileges:
 
 - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
   Follow these steps to confirm that you have these privileges:
@@ -34,6 +34,9 @@ To complete the following procedures and successfully configure Business perform
   2. Select **Users** > **Users**.
   3. Click **Installing user** > **Roles**. Confirm the necessary permissions.
 - The **Organization Admin** role to create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
+
+## Availability
+Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
 
 ## Configure Microsoft Power Platform
 
