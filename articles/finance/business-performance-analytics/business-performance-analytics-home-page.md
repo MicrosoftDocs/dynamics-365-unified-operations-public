@@ -52,31 +52,6 @@ A Tier-2 environment (multi-box) is required to preview business performance ana
 
 Business performance analytics requires Dynamics 365 Finance version 10.0.38 (Application version 10.0.1777.72) or later.
 
-
-## Set up business performance analytics
-
-### Set up business performance analytics environment
-
-Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
-
-### Install business performance analytics
-
-After business performance analytics is configured, it can be installed. For more information, see [Install business performance analytics](install-bpa.md).
-
-### Set up security 
-
-Security in business performance analytics can be set up at the role level and also at the row/dimension level. For more information about how to set up security in business performance analytics, see [Set up security in business performance analytics](set-up-security.md).
-
-## Use business performance analytics 
-
-### Reports in business performance analytics 
-
-Business performance analytics reports can be customized in Power BI. For more information about reports in business performance analytics, see [Reports in business performance analytics](Reports-in-BPA.md).
-
-### How to create and edit reports
-
-Business performance analytics lets user create and edit reports. For more information, see [How to create and edit reports](how-to-create-and-edit-reports.md).
-
 ### Business analytics self-help
 
 To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. For more information, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
