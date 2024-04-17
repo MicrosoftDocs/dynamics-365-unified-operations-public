@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and edit business performance analytics reports
-description: This article describes how to create and edit reports in business performance analytics.
+title: Create and edit Business performance analytics reports
+description: This article describes how to create and edit reports in Business performance analytics.
 author: jkhaira7
 ms.author: jkhaira 
 ms.reviewer: twheeloc
@@ -13,10 +13,10 @@ audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
-# Create and edit business performance analytics reports
+# Create and edit Business performance analytics reports
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. 
 
@@ -24,11 +24,11 @@ Business performance analytics lets you create or customize reports that include
 
 To create a new report, follow these steps.
 
-1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
+1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Click **New**. Select either a Power BI or an Excel report.
 3. Select **Start with a blank report** – Enter a report name and click **Create**.
  - If you selected a Power BI report, the report will open directly in your browser. You can then start to add data fields and build the report.
- - If you selected a Microsoft Excel report, you will be prompted to open a local copy of the report on your desktop. The first time creating a business performance analytics Microsoft Excel report, you may have to download and install an add-in. 
+ - If you selected a Microsoft Excel report, you will be prompted to open a local copy of the report on your desktop. The first time creating a Business performance analytics Microsoft Excel report, you may have to download and install an add-in. 
  
 
 ## Edit a report
@@ -42,7 +42,7 @@ After you open a report, you can edit the visuals or data fields by selecting **
 
 To duplicate a report that isn't currently open, follow these steps.
 
-1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
+1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. 2. Select the report to duplicate. (You can duplicate only one report at a time.)
 3. Select **Duplicate**. The duplicate report becomes available on the **Reports** page. 
 
@@ -54,7 +54,7 @@ After the report is duplicated, you receive a "Report duplicated" message that c
 
 To rename a report that isn't currently open, follow these steps.
 
-1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
+1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Select the report to rename. (You can rename only one report at a time.)
 3. Select **Rename**.
 4. Enter a new name, and then save it.
@@ -68,7 +68,7 @@ To rename a report that's currently open, select **Rename** on the report.
 
 To delete one or more reports, follow these steps.
 
-1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
+1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Select the report or reports to delete.
 3. Select **Delete**.
 
@@ -77,7 +77,7 @@ To delete one or more reports, follow these steps.
 
 ## Share a report
 To share a report that isn't currently open, follow these steps:
-1. In business performance analytics, in the Data explorer section, go to **Reports**.
+1. In Business performance analytics, in the Data explorer section, go to **Reports**.
 2. Select the report to share and select **Share**.
 3. A dropdown will open to copy a link to share with another user or enter an email address and send an in-app notification. You can send an email to the recipient when a file isn't shared.
 4. Specify to provide **Edit** or **View** access to the report. 
@@ -89,7 +89,7 @@ To share a report that isn't currently open, follow these steps:
 
 ## Remove edit columns and edit filters buttons
 
-Pages in the business performance analytics app may display **Edit columns** and **Edit filters** buttons. The button's functionality is controlled by the administrator for the environment. The administrator can activate or deactivate these buttons at any time by going to the Power Platform Admin Center. Select **Settings** > **Product** > **Feature**. Activate or deactivate these buttons by turning on or off the **Show the Edit column button on views** and **Show the Edit filter button on views**. 
+Pages in the Business performance analytics app may display **Edit columns** and **Edit filters** buttons. The button's functionality is controlled by the administrator for the environment. The administrator can activate or deactivate these buttons at any time by going to the Power Platform Admin Center. Select **Settings** > **Product** > **Feature**. Activate or deactivate these buttons by turning on or off the **Show the Edit column button on views** and **Show the Edit filter button on views**. 
 
 
 
