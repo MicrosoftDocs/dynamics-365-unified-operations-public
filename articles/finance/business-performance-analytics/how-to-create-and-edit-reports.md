@@ -35,7 +35,7 @@ To create a new report, follow these steps.
 
 After you open a report, you can edit the visuals or data fields by selecting **Edit**.
 
->[!NOTE:]
+>[!NOTE]
 > You can't edit reports of the **Microsoft** type. You must duplicate them as described to create a **Custom** type report, which can be edited.
 
 ## Duplicate a report
@@ -61,7 +61,7 @@ To rename a report that isn't currently open, follow these steps.
 
 To rename a report that's currently open, select **Rename** on the report.
 
->[!NOTE:]
+>[!NOTE]
 > You can't rename reports of the **Microsoft** type. You must duplicate them to create **Custom** type report, which can be renamed.
 
 ## Delete a report
@@ -72,7 +72,7 @@ To delete one or more reports, follow these steps.
 2. Select the report or reports to delete.
 3. Select **Delete**.
 
->[!NOTE:]
+>[!NOTE]
 > You can't delete reports of the **Microsoft** type. Only **Custom** type reports can be deleted.
 
 ## Share a report
@@ -82,7 +82,7 @@ To share a report that isn't currently open, follow these steps:
 3. A dropdown will open to copy a link to share with another user or enter an email address and send an in-app notification. You can send an email to the recipient when a file isn't shared.
 4. Specify to provide **Edit** or **View** access to the report. 
 
->[!NOTE:]
+>[!NOTE]
 > You can't share reports of the **Microsoft** type. You must duplicate them to create a **Custom** type report, which can be shared.
 > Only admin users may also see an additional **Share** button. This button currently doesn't provide any use.
 >Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with others users who did not originally have access to the report.
