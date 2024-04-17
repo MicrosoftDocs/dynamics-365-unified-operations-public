@@ -32,7 +32,7 @@ Any processes that are disabled in feature management won't show when the featur
 
 One of the key benefits of process automation is the ability to see the scheduled work in a simple calendar view.  This view allows you to see work for a week at a time. You'll see this view on the right side of the **Process automation** page. It will be populated with the scheduled work for the selected series.
 
-[![Process automation calendar.](../../dev-itpro/sysadmin/media/CalendarView2.png)](/media/CalendarView2.png)
+[![Process automation calendar.](../../dev-itpro/sysadmin/media/CalendarView2.png)]
 
 ## Occurrence changes
 
