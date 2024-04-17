@@ -29,6 +29,8 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+|Cash and bank management|Bank account lifecycle management|This feature enables approval workflow for bank account activation, modification and deactivation. It also provides bank account change history for auditing purpose. |Feature management|
+
 
 ## Feature enhancements included in this release
 
@@ -36,6 +38,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+
 
 
 ### Bug fixes
