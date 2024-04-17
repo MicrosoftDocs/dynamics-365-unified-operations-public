@@ -87,7 +87,7 @@ The template to import bank statement lines is:
 -   REVERSAL	
 -   TRADINGPARTY
 
-For more information, see [Data entities overview](../../fin-ops-core/dev-itpro/data-entities/data-entities).
+For more information, see [Data entities overview](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 
 ## Validate the bank statement
