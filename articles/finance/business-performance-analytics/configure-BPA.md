@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up business performance analytics
-description: This article describes how to configure business performance analytics.
+title: Set up Business performance analytics
+description: This article describes how to configure Business performance analytics.
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
@@ -14,14 +14,14 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ms.audience: administrator
 ---
 
-# Set up business performance analytics
+# Set up Business performance analytics
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-This article describes how to configure business performance analytics.
+This article describes how to configure Business performance analytics.
 
-To complete the following procedures and successfully configure business performance analytics, you must have the following privileges:
+To complete the following procedures and successfully configure Business performance analytics, you must have the following privileges:
 
 - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
   Follow these steps to confirm that you have these privileges:
@@ -37,7 +37,7 @@ To complete the following procedures and successfully configure business perform
 
 ## Configure Microsoft Power Platform
 
-To configure Microsoft Power Platform for business performance analytics, follow these steps.
+To configure Microsoft Power Platform for Business performance analytics, follow these steps.
 
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/).
 2. Go to the details page of the implementation project that's used to manage the Dynamics 365 Finance environment.
@@ -50,17 +50,17 @@ To configure Microsoft Power Platform for business performance analytics, follow
 Microsoft Entra must be configured so that it can be used with Microsoft Power Platform. The following setup must be completed.
 
 1. In the Azure portal, go to the [license assignment page](https://ms.portal.azure.com/#view/Microsoft_Microsoft Entra ID_IAM/LicensesMenuBlade/~/Products). Sign in using the credentials of the tenant administrator.
-2. Apply a Dynamics 365 Finance or equivalent license to the user who's installing business performance analytics.
+2. Apply a Dynamics 365 Finance or equivalent license to the user who's installing Business performance analytics.
 
 For more information, see [Assign or remove licenses](/azure/active-directory/fundamentals/license-users-groups).
 
 ## Move data from a production environment to a sandbox environment
 
-To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](../../fin-ops-core/dev-itpro/database/dbmovement-operations.md). This data is loaded into business performance analytics and is a prerequisite for the installation of business performance analytics.
+To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](../../fin-ops-core/dev-itpro/database/dbmovement-operations.md). This data is loaded into Business performance analytics and is a prerequisite for the installation of Business performance analytics.
 
 ## Power App users 
 
-Before business performance analytics can be installed, confirm the users are enabled in Dynamics 365 Finance.
+Before Business performance analytics can be installed, confirm the users are enabled in Dynamics 365 Finance.
 
 1. In Dynamics 365 Finance, go to **System Administration \> Users**.
 2. In filters, add **IsMicrosoftAccount Isexactly true**.
@@ -71,7 +71,7 @@ Before business performance analytics can be installed, confirm the users are en
 
 ## Required configurations in Dynamics 365 Finance
 
-The following setup is required in the Dynamics 365 Finance before you can install business performance analytics.
+The following setup is required in the Dynamics 365 Finance before you can install Business performance analytics.
 
 1. Turn on maintenance mode by using Lifecycle Services.
 
