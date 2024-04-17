@@ -6,8 +6,6 @@ description: Periodic journals are sometimes called recurring journals because t
 author: aprilolson
 ms.date: 03/21/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

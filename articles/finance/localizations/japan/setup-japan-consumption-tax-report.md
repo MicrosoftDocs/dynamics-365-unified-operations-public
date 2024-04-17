@@ -4,8 +4,6 @@ description: This task walks you through setting up the system to support the Ja
 author: kfend
 ms.date: 12/02/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Japan

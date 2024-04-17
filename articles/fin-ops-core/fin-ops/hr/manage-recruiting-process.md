@@ -6,9 +6,6 @@ description: This article describes a concept that recruiters can use to track t
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMApplication, HRMRecruitingTable

@@ -6,9 +6,6 @@ description: This article describes tasks such as reprinting pay statements, and
 author: twheeloc
 ms.date: 04/24/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalTransPayrollDisbursement, PayrollPayStatement

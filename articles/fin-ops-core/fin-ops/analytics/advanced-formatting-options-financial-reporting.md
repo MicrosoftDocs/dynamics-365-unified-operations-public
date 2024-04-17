@@ -4,8 +4,6 @@ description: This article describes advanced formatting functions, including fil
 author: panolte
 ms.date: 04/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global

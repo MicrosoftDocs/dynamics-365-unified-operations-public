@@ -6,9 +6,6 @@ description: This article explains how to configure the various properties of a 
 author: ChrisGarty
 ms.date: 07/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

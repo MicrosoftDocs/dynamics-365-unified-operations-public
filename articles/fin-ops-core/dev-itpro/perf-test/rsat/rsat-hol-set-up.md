@@ -4,10 +4,8 @@ description: This article is a tutorial that shows how to set up and install Reg
 author: frankdahl
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-30

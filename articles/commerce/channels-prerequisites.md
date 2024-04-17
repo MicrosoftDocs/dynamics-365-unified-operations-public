@@ -4,8 +4,6 @@ description: This article presents an overview of channels setup prerequisites i
 author: samjarawan
 ms.date: 02/21/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

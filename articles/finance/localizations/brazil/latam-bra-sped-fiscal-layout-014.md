@@ -4,8 +4,6 @@ description: This article explains how to set up and generate SPED fiscal statem
 author: AdamTrukawka
 ms.date: 01/21/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

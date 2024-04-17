@@ -6,9 +6,6 @@ description: This article describes what is included in the Credit and collectio
 author: ShivamPandey-msft
 ms.date: 12/06/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  CustomerCollectionManagerWorkspace

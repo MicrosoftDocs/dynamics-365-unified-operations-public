@@ -6,8 +6,6 @@ description: This article describes how an item that has site and warehouse as c
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

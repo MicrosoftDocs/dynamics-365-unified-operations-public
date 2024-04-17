@@ -6,16 +6,13 @@ description: This article provides a brief overview of the mechanics of synchron
 author: peakerbl
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4

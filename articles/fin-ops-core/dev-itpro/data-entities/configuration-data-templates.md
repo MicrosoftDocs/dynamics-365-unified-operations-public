@@ -6,16 +6,13 @@ description: This article describes configuration data templates and explains ho
 author: rcarlson
 ms.date: 08/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 

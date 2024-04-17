@@ -6,9 +6,6 @@ description: This article provides general information about how to use the Elec
 author: mrolecki
 ms.date: 06/14/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

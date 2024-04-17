@@ -6,8 +6,6 @@ description: This article explains how transport management lets you divide geog
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

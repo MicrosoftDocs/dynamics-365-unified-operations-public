@@ -4,8 +4,6 @@ description: This article provides information about how to set up and generate 
 author: liza-golub
 ms.date: 09/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Switzerland

@@ -6,8 +6,6 @@ description: This article provides a procedure that shows how to create time win
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

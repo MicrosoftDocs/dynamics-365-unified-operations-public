@@ -6,9 +6,6 @@ description: Optimize and troubleshoot performance of Dataverse virtual table qu
 author: twheeloc
 ms.date: 04/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

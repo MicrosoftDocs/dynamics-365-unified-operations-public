@@ -6,9 +6,6 @@ description: This article describes the processes for creating working time temp
 author: twheeloc
 ms.date: 11/22/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmLeaveType, WorkTimeTable

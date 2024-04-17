@@ -6,9 +6,6 @@ description: This article discusses fiscal calendars, fiscal years and periods a
 author: aprilolson
 ms.date: 02/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FiscalCalendars

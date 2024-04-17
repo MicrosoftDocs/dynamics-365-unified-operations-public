@@ -6,9 +6,6 @@ description: This article provides information about how to edit internal data o
 author: kweekley
 ms.date: 08/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

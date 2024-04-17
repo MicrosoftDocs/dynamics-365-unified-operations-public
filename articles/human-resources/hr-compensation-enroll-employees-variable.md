@@ -6,8 +6,6 @@ description: The Compensation and Benefits manager can enroll employees in varia
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

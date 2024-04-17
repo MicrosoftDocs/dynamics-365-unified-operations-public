@@ -4,8 +4,6 @@ description: This article offers information for complying with requests for dat
 author: josaw1
 ms.date: 05/18/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

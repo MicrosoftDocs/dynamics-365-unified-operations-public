@@ -6,8 +6,6 @@ description: This article describes the options for setting up discounts for tra
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

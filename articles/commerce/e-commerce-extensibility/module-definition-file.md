@@ -4,8 +4,6 @@ description: This article covers the module definition file in Microsoft Dynamic
 author: samjarawan
 ms.date: 01/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

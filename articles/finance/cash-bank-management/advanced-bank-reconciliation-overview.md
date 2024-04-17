@@ -6,9 +6,6 @@ description: This article describes the flow for the advanced bank reconciliatio
 author: EricWang
 ms.date: 1/16/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankReconciliationMatchRule

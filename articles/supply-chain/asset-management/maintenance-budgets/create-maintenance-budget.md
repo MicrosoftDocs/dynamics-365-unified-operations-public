@@ -6,8 +6,6 @@ description: This article explains how to create a maintenance budget in Asset M
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

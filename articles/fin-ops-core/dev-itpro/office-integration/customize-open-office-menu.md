@@ -6,16 +6,13 @@ description: This article provides information about the Open in Office menu, an
 author: jasongre
 ms.date: 05/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
 ms.search.region: Global

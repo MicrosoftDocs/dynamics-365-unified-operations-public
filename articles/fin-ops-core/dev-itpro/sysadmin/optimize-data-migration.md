@@ -6,15 +6,12 @@ description: The article provides an overview of steps and actions that you can 
 author: skaue-ms
 ms.date: 10/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

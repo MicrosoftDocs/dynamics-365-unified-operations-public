@@ -6,9 +6,6 @@ description: This article provides terms and conditions for add-ins to finance a
 author: ChristianRytt
 ms.date: 01/09/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

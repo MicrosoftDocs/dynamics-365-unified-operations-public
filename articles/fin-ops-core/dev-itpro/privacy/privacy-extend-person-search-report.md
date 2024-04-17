@@ -4,8 +4,6 @@ description: This article walks you through the process of extending the Person 
 author: josaw1
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

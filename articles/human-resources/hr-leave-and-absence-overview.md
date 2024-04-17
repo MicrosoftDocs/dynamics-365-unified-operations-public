@@ -6,9 +6,6 @@ description: In Dynamics 365 Human Resources, the Leave and absence workspace pr
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

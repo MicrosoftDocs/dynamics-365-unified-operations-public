@@ -6,8 +6,6 @@ description: Open-ended questions enable respondents to provide their own respon
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

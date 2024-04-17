@@ -6,8 +6,6 @@ description: This article describes the inventory reservation policy that lets b
 author: perlynne
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

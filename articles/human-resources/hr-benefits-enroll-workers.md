@@ -6,8 +6,6 @@ description: This procedure shows how to enroll a single worker in one or more b
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

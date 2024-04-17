@@ -6,8 +6,6 @@ description: This article shows how to create, print, and post collection letter
 author: ShivamPandey-msft
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

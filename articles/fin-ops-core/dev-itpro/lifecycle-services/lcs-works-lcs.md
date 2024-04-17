@@ -6,9 +6,6 @@ description: This article describes Microsoft Dynamics 365 Lifecycle Services fo
 author: angelmarshall
 ms.date: 02/08/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

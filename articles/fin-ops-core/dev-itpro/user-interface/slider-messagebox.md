@@ -4,8 +4,6 @@ description: There are two dialogs that replace the existing dialog box, the Sli
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

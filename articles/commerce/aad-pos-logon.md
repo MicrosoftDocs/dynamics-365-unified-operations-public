@@ -4,8 +4,6 @@ description: This article explains how to configure Microsoft Entra ID as the au
 author: boycezhu
 ms.date: 09/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

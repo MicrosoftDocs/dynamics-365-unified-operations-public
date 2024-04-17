@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: article
 ms.date: 07/09/2020
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-07-08

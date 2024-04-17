@@ -4,8 +4,6 @@ description: This article describes how to set up Azure Key Vault to provide sec
 author: samjarawan
 ms.date: 10/12/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

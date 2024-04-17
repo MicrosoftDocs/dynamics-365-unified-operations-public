@@ -8,7 +8,7 @@ ms.date: 05/12/2022
 ms.topic: article
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2022-05-12

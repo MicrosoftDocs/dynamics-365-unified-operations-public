@@ -6,9 +6,6 @@ description: Sometimes, customers make a payment that is less than the amount of
 author: ShivamPandey-msft
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustPaymEntry

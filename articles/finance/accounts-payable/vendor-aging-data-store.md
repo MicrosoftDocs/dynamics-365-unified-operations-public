@@ -6,9 +6,6 @@ description: This article describes the process of using external storage for ve
 author: sunfzam
 ms.date: 04/15/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

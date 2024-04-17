@@ -4,8 +4,6 @@ description: This article contains the guidelines that apply to all forms. This 
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

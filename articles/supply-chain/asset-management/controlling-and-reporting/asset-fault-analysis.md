@@ -6,8 +6,6 @@ description: This article explains asset fault analysis in Asset Management.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

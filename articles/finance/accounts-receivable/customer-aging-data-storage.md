@@ -6,9 +6,6 @@ description: This article describes the process of using external storage for cu
 author: JodiChristiansen
 ms.date: 03/13/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

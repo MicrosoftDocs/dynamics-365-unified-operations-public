@@ -6,16 +6,13 @@ description: The article shows which features are supported in Cloud and on-prem
 author: sericks007
 ms.date: 01/14/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global

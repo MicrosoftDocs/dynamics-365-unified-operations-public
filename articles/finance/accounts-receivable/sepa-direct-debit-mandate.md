@@ -6,9 +6,6 @@ description: A Single Euro Payment Area (SEPA) direct debit lets a creditor coll
 author: ShivamPandey-msft
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustParameters

@@ -5,7 +5,7 @@ author: LaneSwenka
 ms.author: laswenka
 ms.topic: article
 ms.date: 01/10/2023
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-01-31

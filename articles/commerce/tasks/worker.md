@@ -4,8 +4,6 @@ description: This procedure demonstrates how to configure a worker as a sales re
 author: josaw1
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

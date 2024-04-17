@@ -6,8 +6,6 @@ description: This procedure shows how to create a new category hierarchy and ass
 author: t-benebo
 ms.date: 07/11/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

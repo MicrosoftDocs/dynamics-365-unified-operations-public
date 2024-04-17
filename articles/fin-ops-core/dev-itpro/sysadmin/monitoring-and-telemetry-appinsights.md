@@ -6,9 +6,6 @@ description: This article explains how to use, set up, and configure the Applica
 author: LaneSwenka
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod:
-ms.technology:
-
 # optional metadata
 
 # ms.search.form:

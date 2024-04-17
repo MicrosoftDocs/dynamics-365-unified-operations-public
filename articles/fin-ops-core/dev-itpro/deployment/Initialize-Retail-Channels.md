@@ -5,7 +5,7 @@ author: aneesmsft
 ms.author: aneesa
 ms.topic: article
 ms.date: 03/08/2024
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-04-30

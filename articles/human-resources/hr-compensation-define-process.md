@@ -6,8 +6,6 @@ description: Compensation processes are used to determine new compensation amoun
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: This article describes the setup options for Revenue recognition, a
 author: bking
 ms.date: 08/16/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Customer

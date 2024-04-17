@@ -6,9 +6,6 @@ description: This article explains how to use financial tags to display the desc
 author: Prabhatb-ship-it
 ms.date: 2/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustPosting, CustPaymMode, CustCashDiscount, CommissionPosting, MarkupTable\_Cust, CustPaymFee

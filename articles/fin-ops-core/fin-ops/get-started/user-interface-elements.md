@@ -4,8 +4,6 @@ description: This article describes the user interface (UI) elements in the app.
 author: jasongre
 ms.date: 08/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

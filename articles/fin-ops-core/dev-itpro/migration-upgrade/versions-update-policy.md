@@ -6,9 +6,6 @@ description: This article outlines the lifecycle and support policies for the fi
 author: hmahl
 ms.date: 09/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysAbout

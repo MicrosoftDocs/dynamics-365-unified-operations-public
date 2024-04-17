@@ -5,8 +5,6 @@ description: This article explains how to generate Unified Payments Interface (U
 author: prabhatb2011
 ms.date: 01/31/2022
 ms.topic: article
-ms.prod:
-ms.technology:
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: India

@@ -4,8 +4,6 @@ description: This article explains where to find events from Commerce-specific c
 author: ShalabhjainMSFT
 ms.date: 12/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

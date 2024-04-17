@@ -6,9 +6,6 @@ description: This article describes the standard payroll reports that are provid
 author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: PayrollEarningStatement

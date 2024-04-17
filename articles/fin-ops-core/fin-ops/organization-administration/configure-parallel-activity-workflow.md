@@ -6,9 +6,6 @@ description: To configure a parallel activity, complete the following procedures
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

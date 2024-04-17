@@ -4,8 +4,6 @@ description: This article explains how to configure and process electronic invoi
 author: AnupamChansoriya
 ms.date: 02/14/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: 
 ms.search.region: Indonesia

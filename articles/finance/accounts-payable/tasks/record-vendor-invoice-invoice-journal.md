@@ -6,8 +6,6 @@ description: This task guide will show how to record vendor invoices that are no
 author: abruer
 ms.date: 02/08/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

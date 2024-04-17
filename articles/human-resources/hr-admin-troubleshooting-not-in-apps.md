@@ -6,9 +6,6 @@ description: This article explains what to do if Microsoft Dynamics 365 Human Re
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: SystemAdministrationWorkspaceForm

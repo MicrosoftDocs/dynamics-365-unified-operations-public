@@ -6,8 +6,6 @@ description: This article describes how to archive inventory transaction data to
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

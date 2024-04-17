@@ -6,9 +6,6 @@ description: Accounting distributions are used to define how an amount will be a
 author: ShivamPandey-msft
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustFreeInvoice

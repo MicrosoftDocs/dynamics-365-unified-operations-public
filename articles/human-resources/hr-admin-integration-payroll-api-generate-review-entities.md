@@ -6,9 +6,6 @@ description: This article describes how to generate and review payroll entities.
 author: twheeloc
 ms.date: 04/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

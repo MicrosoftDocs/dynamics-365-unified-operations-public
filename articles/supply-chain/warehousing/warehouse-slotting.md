@@ -6,8 +6,6 @@ description: This article provides information about warehouse slotting. Warehou
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable

@@ -6,15 +6,12 @@ description: This article describes the authentication and authorization models 
 author: jaredha
 ms.date: 07/26/2022
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.search.region: Global

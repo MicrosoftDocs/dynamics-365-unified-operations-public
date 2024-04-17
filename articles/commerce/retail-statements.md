@@ -6,9 +6,6 @@ description: This article describes how statements are created and posted in Mic
 author: ashishmsft
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailParameters

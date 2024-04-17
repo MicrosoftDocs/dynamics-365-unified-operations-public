@@ -6,9 +6,6 @@ description: This article explains how to optimize performance when you're using
 author: twheeloc
 ms.date: 08/17/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: BatchJob, BatchJobEnhanced

@@ -6,8 +6,6 @@ description: This article explains how to set up work policies.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,9 +6,6 @@ description: This article explains how you can view vendor invoices and submit i
 author: abruer
 ms.date: 01/15/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendInvoiceWorkspace 

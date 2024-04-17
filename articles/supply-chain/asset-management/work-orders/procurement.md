@@ -6,8 +6,6 @@ description: This article explains procurement in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
