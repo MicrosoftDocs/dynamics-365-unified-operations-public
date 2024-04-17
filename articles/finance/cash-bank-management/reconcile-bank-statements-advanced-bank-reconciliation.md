@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains the reconciliation process.  
 
-## Import an electronic bank statement
+## Import an electronic bank statement by using Electronic Reporting
 
 You import your bank statements by using the **Import statement** action on the **Bank statements** page. On the bank statement, the bank account is identified through a combination of values that are set on the bank account details. These values include the bank name, bank account number, routing number, Society for Worldwide Interbank Financial Telecommunication (SWIFT) code, and International Bank Account Number (IBAN). 
 
@@ -48,6 +48,47 @@ If any statements in the electronic file can't be associated with a bank account
 You can use a zip file to upload multiple statement files to Finance in a single process. To import multiple bank statement files for multiple accounts, combine all the bank statement files into one zip file. In the **Import bank statements** dialog box, set the **Import statement for multiple bank accounts in all legal entities** option to **Yes**. Click **Browse** to select the zip file that contains the bank statement files, and then click **Upload**. The import process will recognize the zip file and upload each statement that is included in it, regardless of the legal entity of the bank account.
 
 A **Reconcile after import** option is available. When you set this option to **Yes**, the system automatically validates the bank statement, creates a new bank reconciliation and worksheet, and runs the Default matching rule set when the bank statement is uploaded. This functionality automates the process up to the point where transactions must be manually matched.
+
+## Import an electronic bank statement by using data entity
+
+You can import your bank statements by using data entity framework. Two entities are available:
+-   Bank statement header
+-   Bank statement lines
+
+The template to import bank statement header is:
+-   STATEMENTID
+-   BANKACCOUNT
+-   CURRENCY
+-   OPENINGBALANCE
+-   ENDINGBALANCE
+-   FROMDATE	
+-   TODATE
+
+The template to import bank statement lines is:
+-   LINENUMBER	
+-   BANKACCOUNT	
+-   STATEMENTID	
+-   BOOKINGDATE	
+-   AMOUNT	
+-   BANKSTATEMENTTRANSACTIONCODE	
+-   COUNTERAMOUNT	
+-   COUNTERCURRENCY	
+-   COUNTEREXCHANGERATE	
+-   CREDITORREFERENCEINFORMATION	
+-   DOCUMENTNUMBER	
+-   ENTRYREFERENCE	
+-   INSTRUCTEDAMOUNT	
+-   INSTRUCTEDCURRENCY	
+-   INSTRUCTEDEXCHANGERATE	
+-   LINESTATUS	
+-   REFERENCENUMBER	
+-   RELATEDBANK	
+-   RELATEDBANKACCOUNT	
+-   REVERSAL	
+-   TRADINGPARTY
+
+Refer to [Data entities overview - Finance & Operations | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities) for details.
+
 
 ## Validate the bank statement
 To validate a statement, on the **Bank statements** page, click **Validate**. Bank statements must be validated before they can be reconciled. This step is automatically completed if you set the **Reconcile after import** option to **Yes** at the time of import. 
