@@ -38,6 +38,12 @@ To complete the following procedures and successfully complete the prerequisites
 ## Availability
 Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
 
+## System requirements
+A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+
+## Version requirements
+Business performance analytics requires Dynamics 365 Finance version 10.0.38 (Application version 10.0.1777.72) or later.
+
 ## Configure Microsoft Power Platform
 
 To configure Microsoft Power Platform for Business performance analytics, follow these steps.
