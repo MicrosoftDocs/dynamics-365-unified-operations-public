@@ -57,7 +57,7 @@ Add the following required elements in the Azure Key Vault:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field select the reference to the Azure Key Valut created in the previous chapter.
-1. In the **SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
+1. In the **SAS token secret** field, select the name of the storage account secret **URL** that must be used to authenticate access to the storage account.
 1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
 1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create a new element the respective **Type** for each certificate or secret described in the previous chapter.
    > [!NOTE]
