@@ -6,7 +6,7 @@ description: This article explains how to access Business performance analytics.
 author: jkhaira7
 ms.author: jkhaira
 ms.reviewer: twheeloc 
-ms.date: 12/12/2023
+ms.date: 04/12/2024
 ms.topic: conceptual
 ms.custom:
 audience: Application User
@@ -29,7 +29,7 @@ After Business performance analytics is installed, there are several ways to acc
 
 ### Access Business performance analytics from finance and operations apps
 
-A shortcut to access Business performance analytics in Dynamics 365 finance and operations will be visible to users with one of the following duties assigned:  
+A shortcut to access Business performance analytics in Dynamics 365 finance and operations are visible to users with one of the following duties assigned:  
  - View manage bank accounts workspace
  - Maintain budget plans
  - View cash flow all companies workspace
@@ -53,9 +53,9 @@ A shortcut to access Business performance analytics in Dynamics 365 finance and 
  - Inquire into fixed assets
 
 
-To open Business performance analytics directly from Dynamics 365 finance and operations apps, first confirm that the following prerequisites are met:
+To open Business performance analytics directly from Dynamics 365 finance and operations apps, confirm the following prerequisites are met:
 
-- In Power Platform admin center, **Finance and Operations in Dataverse** must be enabled.
+- In Power Platform admin center, **Finance and Operations in Dataverse** is enabled.
 - The **Basic user** role must be assigned to the user in Dataverse.
 - The user must be a Business performance analytics app user.
 
