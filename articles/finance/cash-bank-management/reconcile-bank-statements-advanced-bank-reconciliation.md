@@ -87,7 +87,7 @@ The template to import bank statement lines is:
 -   REVERSAL	
 -   TRADINGPARTY
 
-For more information, see [Data entities overview - Finance & Operations | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities).
+For more information, see [Data entities overview](../../fin-ops-core/dev-itpro/data-entities/data-entities).
 
 
 ## Validate the bank statement
