@@ -31,7 +31,7 @@ Before installing Business performance analytics, check to make sure [all the pr
 
 To install Business performance analytics, follow these steps. 
 
-1. Select the link that Microsoft provides from Step 6 above. 
+1. Request the [install link](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2V_9HFL4cRGtih_PMMDw1dUMFZHOUlUNlpVN1c4V1VJM0RNNlk2UkQ1MC4u) then select the link Microsoft will provide. 
 2. Select **Get it now**. The page will navigate to the Power Platform admin center. 
 3. In the Power Platform admin center, select the Microsoft Power Platform environment to install the application into. 
 4. Accept the terms and conditions, and then select **Install**. This will start the installation of Business performance analytics in the selected environment. 
