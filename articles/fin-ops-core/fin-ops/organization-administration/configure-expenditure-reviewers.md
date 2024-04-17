@@ -5,7 +5,6 @@ author: rachel-profitt
 ms.author: raprofit
 ms.topic: article
 ms.date: 06/25/2021
-ms.topic: article
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

@@ -64,7 +64,7 @@ Organizations in a hierarchy can share parameters, policies, and transactions. A
 
 ## Using Organizational Hierarchies in Financial Reporting
 
-Organizational Hierarchies can be selected as a **Tree type** option in Financial Reporting. Financial reporting will select the current effective hierarch as noted by hierarchy. For more information, see [Reporting tree definitions in Financial Reports](/dev-itpro/analytics/financial-reporting-tree-definitions.md).
+Organizational Hierarchies can be selected as a **Tree type** option in Financial Reporting. Financial reporting will select the current effective hierarch as noted by hierarchy. <!-- Following link has been moved. For more information, see [Reporting tree definitions in Financial Reports](/dev-itpro/analytics/financial-reporting-tree-definitions.md). -->
 
 ## Additional resources
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
