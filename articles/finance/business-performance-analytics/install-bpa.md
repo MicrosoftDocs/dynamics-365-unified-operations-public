@@ -8,8 +8,6 @@ ms.author: jiwo
 ms.reviewer: twheeloc 
 ms.date: 12/12/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology:
 ms.custom:
 audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
@@ -27,7 +25,7 @@ This article describes how to install business performance analytics. The admini
 
 Before installing business performance analytics, complete the following [steps](configure-bpa.md): 
 1. [Configure Microsoft Power Platform](configure-bpa.md#configure-microsoft-power-platform)
-2. [Configure the Azure AD tenant](configure-bpa.md#configure-the-azure-ad-tenant)
+2. [Configure the Microsoft Entra tenant](configure-bpa.md#configure-the-microsoft-entra-tenant)
 3. [Enable Power Apps users](configure-bpa.md#power-app-users)
 4. [Required configurations in Dynamics 365 Finance](configure-bpa.md#required-configurations-in-dynamics-365-finance)
 5. [Required configurations in Power Platform Admin Center](configure-bpa.md#required-configurations-in-power-platform-admin-center)
@@ -57,8 +55,3 @@ To access reports in business performance analytics, follow these steps.
 2. Select **Apps** to open business performance analytics.
 3. The available reports will be displayed. 
 4. For more information about setting up security, see [Set up security in business performance analytics](set-up-security.md).
-
-
-
-
-   

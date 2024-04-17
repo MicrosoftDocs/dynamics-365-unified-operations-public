@@ -6,8 +6,6 @@ description: This procedure demonstrates how to create a free text invoice templ
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

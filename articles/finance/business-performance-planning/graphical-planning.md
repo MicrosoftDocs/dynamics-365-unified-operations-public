@@ -6,9 +6,7 @@ description: This article describes how to use the Graphical planning visual in 
 author: ShielaSogge
 ms.date: 12/08/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
+ms.reviewer: twheeloc
 # optional metadata
 
 ms.search.form: 

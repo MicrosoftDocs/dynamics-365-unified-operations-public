@@ -6,15 +6,12 @@ description: This article explains how to define the tax rate type and assign it
 author: EricWangChen 
 ms.date: 03/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India

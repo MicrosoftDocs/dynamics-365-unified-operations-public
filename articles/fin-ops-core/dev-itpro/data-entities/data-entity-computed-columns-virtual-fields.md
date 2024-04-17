@@ -6,9 +6,6 @@ description: This article provides information about computed and virtual fields
 author: jaredha
 ms.date: 10/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

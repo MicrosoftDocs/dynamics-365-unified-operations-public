@@ -6,8 +6,6 @@ description: To model subcontracted work for lean manufacturing, you must create
 author: johanhoffmann
 ms.date: 06/23/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -10,6 +10,7 @@ ms.date: 01/06/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
 ---
 
 # Demand forecasting overview

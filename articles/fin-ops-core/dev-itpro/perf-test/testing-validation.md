@@ -4,8 +4,6 @@ description: This tutorial shows you how to create and run test cases.
 author: gianugo
 ms.date: 04/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -6,16 +6,13 @@ description: This article describes retry operations that can be implemented if 
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

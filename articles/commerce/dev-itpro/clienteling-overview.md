@@ -98,7 +98,7 @@ After you've completed this procedure, sales associates can open the customer de
 
 ## Turn on the integration of Customer Insights with Commerce
 
-To turn on the integration of Customer Insights with Commerce, you must make sure that you have an active instance of Customer Insights in the tenant where Commerce is provisioned. You must also have an Azure Active Directory (Azure AD) user account that has an Azure subscription.
+To turn on the integration of Customer Insights with Commerce, you must make sure that you have an active instance of Customer Insights in the tenant where Commerce is provisioned. You must also have a Microsoft Entra user account that has an Azure subscription.
 
 Follow these steps to set up the integration.
 

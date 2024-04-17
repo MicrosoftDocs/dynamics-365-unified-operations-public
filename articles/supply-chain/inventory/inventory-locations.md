@@ -6,8 +6,6 @@ description: Inventory locations are used with basic warehousing (WMS I) to dete
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

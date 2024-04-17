@@ -6,8 +6,6 @@ description: The production floor execution interface is set up for every device
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

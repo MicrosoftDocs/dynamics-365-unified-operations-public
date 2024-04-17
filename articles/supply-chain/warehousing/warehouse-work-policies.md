@@ -6,8 +6,6 @@ description: This article explains how to set up work policies.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -61,6 +59,7 @@ On the **Work order types** FastTab, add all the work order types, and the relat
 | Finished goods putaway | All related processes |
 | Transfer receipt | License plate receiving (and putaway) |
 | Purchase orders | <ul><li>License plate receiving (and putaway)</li><li>Load item receiving (and putaway)</li><li>Purchase order line receiving (and putaway)</li><li>Purchase order item receiving (and putaway)</li></ul> |
+| Inbound shipment order | <ul><li>License plate receiving (and putaway)</li><li>Load item receiving (and putaway)</li><li>Inbound shipment order line receiving (and putaway)</li><li>Inbound shipment order item receiving (and putaway)</li></ul> |
 
 To set up a work policy so that it applies to several work processes of the same work order type, add a separate line for each work process to the grid.
 
@@ -95,6 +94,8 @@ Previously, the system supported receiving only at the default location that is 
 - Load item receiving (and putaway)
 - Purchase order line receiving (and putaway)
 - Purchase order item receiving (and putaway)
+- Inbound shipment order line receiving (and putaway)
+- Inbound shipment order item receiving (and putaway)
 
 The **To location** setting for a menu item overrides the default receiving location for the warehouse, for all orders that are processed by using that menu item.
 

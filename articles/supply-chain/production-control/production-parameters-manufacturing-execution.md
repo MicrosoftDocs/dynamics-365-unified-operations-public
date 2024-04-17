@@ -6,8 +6,6 @@ description: This article provides information about the setup of production par
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,9 +6,6 @@ description: This article shows how to set up benefit plans in Dynamics 365 Huma
 author: twheeloc
 ms.date: 09/29/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart

@@ -1,14 +1,11 @@
 ---
 # required metadata
 
-title: View vendor invoice automation results (preview)
+title: View vendor invoice automation results 
 description: This article explains how to view the status of vendor invoices that are in the automated submit-to-workflow process.
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

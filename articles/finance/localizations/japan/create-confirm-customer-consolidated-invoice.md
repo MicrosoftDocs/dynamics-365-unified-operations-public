@@ -6,15 +6,13 @@ description: This article explains how to consolidate customer invoices each mon
 author: kfend
 ms.date: 10/04/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: CustConsInvoice_JP   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan

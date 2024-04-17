@@ -6,8 +6,6 @@ description: This procedure walks through the steps for using variant weights to
 author: t-benebo
 ms.date: 11/14/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

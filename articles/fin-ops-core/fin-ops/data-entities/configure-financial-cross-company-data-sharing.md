@@ -6,8 +6,6 @@ description: This procedure shows how to configure, enable, validate, and resolv
 author: aprilolson
 ms.date: 06/26/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

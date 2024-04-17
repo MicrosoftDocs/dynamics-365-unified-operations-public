@@ -6,8 +6,6 @@ description: This article describes how to invoice a sales order, including merg
 author: ShivamPandey-msft
 ms.date: 03/25/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

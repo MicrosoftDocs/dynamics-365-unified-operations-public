@@ -6,9 +6,6 @@ description: This article explains the process of submitting vendor invoices to 
 author: abruer
 ms.date: 02/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

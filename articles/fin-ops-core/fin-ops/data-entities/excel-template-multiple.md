@@ -6,9 +6,6 @@ description: This article describes how to import data using Excel data entity t
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

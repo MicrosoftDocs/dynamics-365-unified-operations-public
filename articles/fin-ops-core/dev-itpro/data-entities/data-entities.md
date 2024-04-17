@@ -6,9 +6,6 @@ description: This article describes data entities, the scenarios that they suppo
 author: peakerbl
 ms.date: 04/28/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

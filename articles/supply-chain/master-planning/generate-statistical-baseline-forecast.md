@@ -6,8 +6,6 @@ description: This article provides information about the parameters and filters 
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -23,7 +21,7 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.collection:
 ---
 
 # Generate a statistical baseline forecast

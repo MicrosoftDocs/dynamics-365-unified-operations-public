@@ -6,9 +6,6 @@ description: This article describes the capability for automating your vendor in
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

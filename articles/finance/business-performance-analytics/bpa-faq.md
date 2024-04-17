@@ -6,10 +6,8 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 12/14/2023
+ms.date: 03/29/2024
 ms.topic: faq
-ms.prod: 
-ms.technology:
 ms.custom:
 audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
@@ -59,14 +57,14 @@ Business performance analytics has data for the current calendar year plus the p
 
 ### After business performance analytics is set up, how often is the data refreshed?
 
-Data is refreshed once per day, at 00:00:00 AM (UTC).
+Data is refreshed once per day, at 00:00:00 AM (UTC). To see exactly when a report's data was last refreshed, open the report. Towards the top of the window, the rightmost item displays when the data for the report was last refreshed. 
 
 ### How long does it take for fresh data to be available every day on business performance analytics reports?
 
 The amount of time that's required depends on the volume of data. However, there should be fresh data every 24 hours.
 
 ### How do I uninstall business performance analytics?
-There are two options available to uninstall business performance analytics. 
+There are two options available to uninstall business performance analytics. If you need to install business performance analytics after uninstalling, wait four hours before installing.
 
 Option one:
 

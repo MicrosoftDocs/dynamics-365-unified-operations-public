@@ -6,8 +6,6 @@ description: This article explains how to set up all required number sequences a
 author: SunilGarg
 ms.date: 07/18/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

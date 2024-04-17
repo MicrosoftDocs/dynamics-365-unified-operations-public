@@ -4,10 +4,8 @@ description: This article explains how to create and work with Business process 
 author: sericks007
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972

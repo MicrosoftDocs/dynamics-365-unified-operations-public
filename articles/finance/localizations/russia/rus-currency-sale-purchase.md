@@ -4,10 +4,8 @@ description: This article describes the functionality for registering transactio
 author: AdamTrukawka
 ms.date: 02/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2018-10-28

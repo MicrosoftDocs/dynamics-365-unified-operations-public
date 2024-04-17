@@ -6,15 +6,13 @@ description: This procedure walks you through the steps of protesting bill of ex
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustOpenTrans   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France

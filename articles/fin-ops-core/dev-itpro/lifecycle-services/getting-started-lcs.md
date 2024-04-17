@@ -6,16 +6,13 @@ description: This article explains how partners can get started with Microsoft D
 author: angelmarshall
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82

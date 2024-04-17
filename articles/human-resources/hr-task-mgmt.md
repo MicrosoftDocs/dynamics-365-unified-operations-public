@@ -6,9 +6,6 @@ description: This article explains the task management functionality that is ava
 author: twheeloc
 ms.date: 09/06/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

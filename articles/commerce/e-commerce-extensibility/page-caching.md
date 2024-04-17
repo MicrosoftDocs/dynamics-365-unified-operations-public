@@ -4,8 +4,6 @@ description: This article describes how to configure page caching in Microsoft D
 author: samjarawan
 ms.date: 08/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -6,15 +6,12 @@ description: This article provides links to documentation resources for the Unit
 author: kfend
 ms.date: 09/07/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: United Kingdom

@@ -4,8 +4,6 @@ description: This article provides an overview of module development in Microsof
 author: samjarawan
 ms.date: 10/20/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

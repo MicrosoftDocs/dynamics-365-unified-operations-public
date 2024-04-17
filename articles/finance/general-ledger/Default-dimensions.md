@@ -6,9 +6,6 @@ description: This article explains the components that make up the chart of acco
 author: aprilolson
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerChartofAccounts,DimensionDetails

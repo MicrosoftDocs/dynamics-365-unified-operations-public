@@ -3,7 +3,7 @@ title: Modifications on switch functions and the front end
 description: This article explains the modifications that are required on switch functions and the front end to integrate a new transaction.
 author: Qiuchen-Ren
 ms.author: qire
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.topic: conceptual
 ms.date: 04/25/2022
 ms.custom: bap-template

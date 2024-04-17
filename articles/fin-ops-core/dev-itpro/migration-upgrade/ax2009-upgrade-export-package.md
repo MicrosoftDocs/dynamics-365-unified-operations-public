@@ -4,10 +4,8 @@ description: This article explains how to export a data package for migration fr
 author: sericks007
 ms.date: 06/26/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2018-06-21

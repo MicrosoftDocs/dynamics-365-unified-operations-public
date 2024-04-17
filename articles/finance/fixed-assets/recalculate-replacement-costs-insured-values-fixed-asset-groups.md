@@ -6,9 +6,6 @@ description: This article explains the process to update the replacement costs a
 author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

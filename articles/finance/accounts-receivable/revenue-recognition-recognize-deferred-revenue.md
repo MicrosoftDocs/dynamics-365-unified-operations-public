@@ -6,9 +6,6 @@ description: This article provides information about how to recognize revenue by
 author: bking
 ms.date: 08/16/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Customer

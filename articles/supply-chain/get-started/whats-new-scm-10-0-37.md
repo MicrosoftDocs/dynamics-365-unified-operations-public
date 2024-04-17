@@ -9,7 +9,9 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)
@@ -31,7 +33,7 @@ The following table lists the features that are included in this release. We mig
 | Asset management | Material availability check on maintenance work orders | [Material availability check for work orders](../asset-management/work-orders/material-availability-check-work-orders.md) |  Feature management:<br>*(Preview) Material availability check on maintenance work orders* |
 | Inventory and logistics | [Integrate Inventory Visibility with Dynamics 365 Commerce](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-inventory-visibility-dynamics-365-commerce) | *Coming soon* | Enabled by default |
 | Manufacturing and asset management | [Over-pick materials for production orders and batch orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/over-pick-materials-production-orders-batch-orders) | [Over-pick materials for production and batch orders](../warehousing/over-pick-materials-for-production-and-batch-orders.md) | Feature management:<br>*Over-pick materials for production orders and batch orders* |
-| Warehouse management | Auto add shipments to waves | *Coming soon* | Enabled by default |
+| Warehouse management | [Automatically re-wave to add unfulfilled lines to new waves](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/automatically-re-wave-add-unfulfilled-lines-new-waves) | [Automatic rewaving of nonallocated shipment lines](../warehousing/auto-rewave-shipments.md) | Enabled by default |
 | Warehouse management | [Automatically update documents when receiving purchase orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/automatically-update-documents-when-receiving-purchase-orders) | [Mark a load as receive complete](../warehousing/inbound-load-handling.md#receive-complete-confirm) | Enabled by default |
 | Warehouse management | Confirm serial numbers during picking | [Batch, serial, and license plate confirmation](../warehousing/batch-and-license-plate-confirmation.md) | Enabled by default |
 | Warehouse management | Warehouse mobile devices workspace | [Warehouse mobile devices workspace](../warehousing/mobile-device-workspace.md) | Enabled by default |

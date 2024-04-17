@@ -6,15 +6,13 @@ description: This article explains how to create and print a vendor self-billed 
 author: kfend
 ms.date: 08/01/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: LedgerParameters, DefaultDashboard, PurchTable, PurchCreateOrder, EnumLookupForm_RU, InventItemIdLookupPurchase, TaxGroupLookup, TaxTmpWorkTrans, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, SrsReportViewerForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia

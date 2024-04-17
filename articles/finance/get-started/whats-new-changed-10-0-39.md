@@ -4,10 +4,9 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.39 (April 2024)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.39 preview release.
 author: twheeloc
-ms.date: 1/19/2024
+ms.date: 2/19/2024
 ms.topic: faq
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -17,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -57,6 +55,8 @@ The following table lists the features that are included in this release. We mig
 | Cash and bank management | Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation | This feature provides additional exchange rate type options for accounts payable and accounts receivable foreign currency revaluation. Users can define an accounting currency exchange rate type and a reporting currency exchange rate type per legal entity, or per customer and vendor group. In this way, they can override the default type in the ledger setup when they run foreign currency revaluation. | Feature management |
 | Cash and bank management | Exchange rate type enhancement for bank foreign currency revaluation | This feature provides additional exchange rate type options for bank foreign currency revaluation. Users can define an accounting currency exchange rate type and a reporting currency exchange rate type per legal entity or bank account. In this way, they can override the default type in the ledger setup when they run foreign currency revaluation. | Feature management |
 | Tax | Universal tax rate API | The connection to an external tax solution provider helps simplify and reduce the effort of maintaining the tax rates and tax applicability rules for Tax calculation. This benefit is especially critical when you implement Tax calculation for countries/regions where a significant number of tax jurisdictions must be covered. The Universal Tax Rate API is a set of standard application programming interfaces that Microsoft has defined in Tax calculation, based on the taxable document data model. It's an extended feature of Tax calculation that enables external tax services to be connected under the same framework. | Feature management |
+| System administration | Archive with Dataverse long term retention | This feature lets you archive data for select high volume areas of the product. The data archive is performed by a micro-service and a connection to Dataverse. You must first install the service from the Power platform admin center (PPAC). | Feature management |
+
 
 ## Feature enhancements included in this release
 
@@ -71,9 +71,7 @@ The following table lists the feature enhancements that are included in this rel
 | Cash and bank management | Bank statements | The performance of BAI2 format bank statement import is improved. |
 | Cash and bank management | Bank reconciliation | Financial tags are supported in advanced bank reconciliation. |
 | Credit and collections | Credit and collections workspace (preview) | A new **Collections coordinator** overview page has been added to the workspace. This new page is enabled by the same feature in Feature management. The new overview page shows activities that are assigned to the collections agent (coordinator). It includes separate lists for the customers that have the highest balance and the aging balance report that has the oldest balances. Select the customer name in any list to go to the existing **Collections coordinator** workspace detail page, which has an updated layout. |
-|Credit and collections |  Collections process automation  |  **Track step in collections process automation** is a new option in the **Setup collection process automation parameters** page. Set this parameter to **Yes** to track the last step completed in the collections process automation details. This ensures that every invoice goes through all process automation steps and send all collection letters in the sequence, regardless of when the invoice starts the process. For example, if a customer has disputed an invoice and then it's resolved at a later date, the collections process automation will start at the first step and send the first collection letter. For more information, see [Collections process automation](../accounts-receivable/collections-process-automate.md). 
-
-
+|Credit and collections |  Collections process automation  |  **Track step in collections process automation** is a new option in the **Setup collection process automation parameters** page. Set this parameter to **Yes** to track the last step completed in the collections process automation details. This ensures that every invoice goes through all process automation steps and send all collection letters in the sequence, regardless of when the invoice starts the process. For example, if a customer has disputed an invoice and then it's resolved at a later date, the collections process automation will start at the first step and send the first collection letter. For more information, see [Collections process automation](../accounts-receivable/collections-process-automate.md). |
 | Tax | Prepayment handling | Tax calculation supports the **Prepayment handling** page when the journal business process is enabled on the **Tax calculation parameters** page. |
 
 ## Features turned on by default in this release
@@ -131,7 +129,7 @@ The following table lists the features that have been removed from Feature manag
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
+Dynamics 365 Finance version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
 
 ### Bug fixes
 

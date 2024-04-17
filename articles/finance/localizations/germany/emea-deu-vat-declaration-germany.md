@@ -2,12 +2,12 @@
 title: VAT declaration (Germany)
 description: This article describes how to set up and generate an advance value-added tax (VAT) declaration for Germany in the official XML format.
 author: liza-golub
-ms.date: 03/10/2022
+ms.date: 02/29/2024
 ms.topic: article
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 
 ---
 
@@ -70,7 +70,7 @@ The advance VAT declaration in Germany contains the following information.
 
 | Row | Box – tax base | Box – tax amount | Description                                                                        | Lookup result                                                                                        |
 |-----|----------------|------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| 29  | 46             | 47               | Other services of an entrepreneur, based on the rest of the Community area.        | 40-BeneficiaryTaxDebtor<br>40-UseTaxBeneficiaryTaxDebtor (46/47/66)                                                                              |
+| 29  | 46             | 47               | Other services of an entrepreneur, based on the rest of the Community area.        | 40-BeneficiaryTaxDebtor<br>40-UseTaxBeneficiaryTaxDebtor (46/47/67)                                                                              |
 | 30  | 73             | 74               | Sales that fall under section 13b (2) no. 3 of UStG.                               | 41-BeneficiaryTaxDebtorRealEstateTransfer<br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67) |
 | 31  | 84             | 85               | Other services that fall under section 13b (2) no. 1, 2, and 4 through 12 of UStG. | 42-BeneficiaryTaxDebtorOther<br>42-UseTaxBeneficiaryTaxDebtorOther (84/85/67)                           |
 
@@ -88,7 +88,7 @@ The advance VAT declaration in Germany contains the following information.
 
 | Row | Box – tax amount | Description                                                                                                | Lookup result                                                                                                                                                                |
 |-----|------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 37  | 66               | Input invoice tax amounts from other companies, services, and intra-community triangular transactions.     | 55-InputTax 40-UseTaxBeneficiaryTaxDebtor (46/47/66)<br>74-BadDebtsWriteOffInputTax (66/37) – with minus sign                                                                   |
+| 37  | 66               | Input invoice tax amounts from other companies, services, and intra-community triangular transactions.     | 55-InputTax 40-UseTaxBeneficiaryTaxDebtor (46/47/67)<br>74-BadDebtsWriteOffInputTax (66/37) – with minus sign.                                                                   |
 | 38  | 61               | Input tax amounts from the intra-community acquisition of goods.                                           | 56-InputTaxEUPurchase 34-UseTaxEUPurchaseStandard (89/61)<br>35-UseTaxEUPurchaseReduced (93/61)<br>36-UseTaxEUPurchaseOtherRates (95/98/61)<br>37-UseTaxEUPurchaseVehicles (94/96/61) |
 | 39  | 62               | Incurred import sales tax.                                                                                 | 57-InputTaxImport                                                                                                                                                            |
 | 40  | 67               | Input tax amounts from services within the meaning of section 13b of UStG.                                        | 58-InputTaxServices<br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67)<br>42-UseTaxBeneficiaryTaxDebtorOther (84/85/67)                                                 |

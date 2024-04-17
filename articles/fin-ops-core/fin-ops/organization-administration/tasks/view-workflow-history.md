@@ -6,8 +6,6 @@ description: This article describes the steps to view the status of a document t
 author: jasongre
 ms.date: 07/09/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

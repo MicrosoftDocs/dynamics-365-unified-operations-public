@@ -6,8 +6,6 @@ description: This article describes how to create one or more configurations for
 author: johanhoffmann
 ms.date: 11/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -111,6 +109,8 @@ There are two versions of this feature. One supports items that *are not* enable
 
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Report on catch weight items
 

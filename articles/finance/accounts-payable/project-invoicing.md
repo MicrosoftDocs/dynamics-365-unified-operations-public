@@ -6,9 +6,6 @@ description: This article provides an overview of project invoicing for Time and
 author: TaylorVH
 ms.date: 07/10/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage

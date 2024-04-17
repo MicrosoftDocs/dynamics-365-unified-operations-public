@@ -6,9 +6,6 @@ description: Human resources administrators and managers can use the courses fea
 author: twheeloc
 ms.date: 03/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace

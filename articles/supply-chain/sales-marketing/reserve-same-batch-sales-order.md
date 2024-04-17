@@ -6,8 +6,6 @@ description: This article explains how to set up a product to allow reservation 
 author: Henrikan
 ms.date: 03/17/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

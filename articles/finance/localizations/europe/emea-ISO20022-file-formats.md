@@ -4,10 +4,8 @@ description: This article explains how to import payment files of the ISO 20022 
 author: AdamTrukawka
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: atrukawk
 ms.search.validFrom: 2017-06-01

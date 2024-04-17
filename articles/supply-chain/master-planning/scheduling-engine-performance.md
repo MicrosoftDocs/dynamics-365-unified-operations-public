@@ -6,8 +6,6 @@ description: This article provides information about the scheduling engine and h
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

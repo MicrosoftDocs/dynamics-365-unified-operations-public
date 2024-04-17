@@ -7,9 +7,6 @@ description: This page provides guidance on how to prepare for a go-live with Dy
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

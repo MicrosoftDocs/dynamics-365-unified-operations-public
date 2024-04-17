@@ -4,8 +4,6 @@ description: This article describes how to design Electronic reporting configura
 author: kfend
 ms.date: 03/24/2021
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global

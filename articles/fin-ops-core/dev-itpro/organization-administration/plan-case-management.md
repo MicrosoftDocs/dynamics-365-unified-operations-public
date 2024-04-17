@@ -6,16 +6,13 @@ description: This article describes the considerations and decisions that you mu
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
 ms.search.region: Global

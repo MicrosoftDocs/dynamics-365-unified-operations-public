@@ -1,27 +1,17 @@
 ---
 title: Scripts for resolving issues in on-premises environments
-description: This article will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
+description: Learn scripts that you can use to resolve issues in on-premises environments, including PowerShell cripts for script execution prepartation.
 author: faix
-ms.date: 01/02/2023
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
+ms.topic: article
+ms.date: 01/02/2023
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-11-30
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 30
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Scripts for resolving issues in on-premises environments

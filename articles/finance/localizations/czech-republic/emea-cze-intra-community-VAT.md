@@ -4,10 +4,8 @@ description: This article provides information about how intra-community value-a
 author: AdamTrukawka
 ms.date: 07/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Czech Republic
 ms.author: atrukawk
 ms.search.validFrom: 2019-06-01

@@ -6,9 +6,6 @@ description: Almost every company that uses Financials functionality in Microsof
 author: panolte
 ms.date: 10/16/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetParameters

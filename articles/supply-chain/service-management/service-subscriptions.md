@@ -6,8 +6,6 @@ description: Subscriptions are based on a time-and-materials project. You can cr
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

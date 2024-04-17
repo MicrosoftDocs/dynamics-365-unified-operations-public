@@ -6,15 +6,12 @@ description: This article provides an overview of functionality that is specific
 author: kfend
 ms.date: 09/12/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: Russia

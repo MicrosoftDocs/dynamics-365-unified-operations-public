@@ -6,9 +6,6 @@ description: This article describes deferral schedules in revenue and expense de
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

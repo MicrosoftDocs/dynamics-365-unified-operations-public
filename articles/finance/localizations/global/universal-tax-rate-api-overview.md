@@ -2,12 +2,10 @@
 title: Connect to an external tax solution provider via the Universal Tax Rate API
 description: This article explains the overall scope of the Universal Tax Rate API feature for Tax calculation.
 author: Kai-Cloud
-ms.date: 01/22/2024
+ms.date: 03/27/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -39,7 +37,7 @@ Through this extension, external tax solution providers can provide tax rate det
 
 The following functionality is available via the Universal Tax Rate API that the tax solution providers support:
 
-- **Encrypted connection** – The Universal Tax Rate API supports an encrypted connection via Azure Key Vault. This connection helps ensure the security and privacy of data that's transmitted between the API and external tax solution providers.
+- **Encrypted connection** – The Universal Tax Rate API supports an encrypted connection via Azure Key Vault. This connection helps ensure the security and privacy of data that's transmitted to external tax solution providers.
 - **Address validation** – This functionality lets you validate addresses that are maintained in the global address book. It helps ensure accurate tax calculations by confirming that addresses are valid and complete.
 - **Sales tax calculation** – External tax solution providers can use the Universal Tax Rate API to calculate sales tax, based on factors such as the location and the product type.
 - **Posted tax transactions** – This functionality enables tax transaction postings in the external tax solution system of the tax solution providers. Tax reporting is generated after the posting in the external tax solution system.
@@ -55,7 +53,7 @@ We recommend that you import and set up your Tax calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 |---|---|
-| 10.0.39 | Tax Calculation Data Model for ISV Integration 40.61.4 |
+| 10.0.39 | Tax Calculation Data Model for ISV Integration 40.65.5 |
 
 ## Enable a tax solution provider
 
@@ -74,7 +72,7 @@ To enable a tax solution provider, follow these steps.
 1. Import the tax calculation data models provided by Microsoft from the global repository or the Dataverse repository via Globalization Studio.
     - **Configuration providers** \> **Microsoft** \> **Repositories** \> **Global** \> **Open** \> **Import**
          
-        - Tax Calculation Data Model for ISV integration.xml (version 40.61.4)
+        - Tax Calculation Data Model for ISV integration.xml (version 40.65.5)
      
       > [!NOTE]
       > If you want to import the tax data model from the Dataverse repository, make sure you have enabled the option **Enable Finance and Operations User Impersonation in Dataverse** under **Power Platform admin center** \> **Environments** \> **your environment id** \> **settings** \> **Features**.
@@ -84,7 +82,7 @@ To enable a tax solution provider, follow these steps.
 
     - **Tax configurations** \> **Exchange** \> **Load from XML**
 
-        - ISV tax configuration.xml (version 40.61.4.x)
+        - ISV tax configuration.xml (version 40.65.5.x)
 
     - **Tax calculation** \> **Import from JSON**
 
@@ -113,7 +111,8 @@ For more information about supported countries/regions, contact your tax solutio
 
 ## Available tax solution providers
 
-- [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342)
-- [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284)
+- [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
+- [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
+- [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (planned)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

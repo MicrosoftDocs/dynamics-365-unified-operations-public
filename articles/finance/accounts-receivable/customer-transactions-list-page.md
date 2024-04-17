@@ -6,9 +6,6 @@ description: This article provides information about the Customer transactions l
 author: abruer
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  CustTrans

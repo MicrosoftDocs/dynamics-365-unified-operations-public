@@ -6,9 +6,6 @@ description: This article is intended to provide a practical approach to designi
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

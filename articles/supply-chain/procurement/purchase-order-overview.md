@@ -1,8 +1,8 @@
 ---
 title: Purchase order overview
 description: This article provides general information about purchase orders (POs) and links to other articles that are related to the various stages that a PO goes through.
-author: GalynaFedorova
-ms.author: gfedorova
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 ms.topic: overview

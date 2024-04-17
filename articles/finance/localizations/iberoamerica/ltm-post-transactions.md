@@ -4,7 +4,7 @@ description: This article explains how to set up transaction posting for Latin A
 author: Fhernandez0088
 ms.date: 10/13/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---

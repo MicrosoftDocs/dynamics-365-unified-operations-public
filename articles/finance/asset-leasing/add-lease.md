@@ -1,14 +1,11 @@
 ---
 # required metadata
 
-title: Add or copy leases (Preview)
+title: Add or copy leases 
 description: This article describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
 author: moaamer
 ms.date: 03/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

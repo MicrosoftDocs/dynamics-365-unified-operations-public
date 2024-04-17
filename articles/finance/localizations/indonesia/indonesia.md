@@ -4,10 +4,8 @@ description: This article provides an overview of functionality that is specific
 author: AdamTrukawka
 ms.date: 12/09/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Indonesia
 ms.author: atrukawk
 ms.search.validFrom: 2021-09-30

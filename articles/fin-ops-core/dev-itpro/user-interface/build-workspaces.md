@@ -4,8 +4,6 @@ description: This article provides detailed information about workspaces and the
 author: jasongre
 ms.date: 02/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

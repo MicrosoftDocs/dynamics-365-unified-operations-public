@@ -4,7 +4,7 @@ description: This article explains how to set up legal entity and tax informatio
 author: Fhernandez0088
 ms.date: 10/10/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---

@@ -6,16 +6,13 @@ description: This article provides an overview of various aspects that you must 
 author: skaue-ms
 ms.date: 11/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  
 # ROBOTS:
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

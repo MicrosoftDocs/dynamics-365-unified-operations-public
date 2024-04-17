@@ -4,7 +4,7 @@ description: This article explains how to use payment methods in customer paymen
 author: Cpicon85 
 ms.date: 10/23/2023 
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon 
 ms.custom: bap-template
 ---

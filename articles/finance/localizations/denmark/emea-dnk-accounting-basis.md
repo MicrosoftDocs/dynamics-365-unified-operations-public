@@ -4,10 +4,8 @@ description: This article explains how to set up and generate the Accounting bas
 author: liza-golub
 ms.date: 08/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Denmark
 ms.author: egolub
 ms.search.validFrom: 

@@ -6,17 +6,13 @@ description: This article describes the process that is used to calculate Tax De
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # 
 # ms.tgt_pltfrm: 
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef

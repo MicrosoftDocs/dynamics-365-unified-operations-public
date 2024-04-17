@@ -6,9 +6,6 @@ description: Configure the workflow Message Processing batch job as critical
 author: ChrisGarty
 ms.date: 05/11/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  BatchJob

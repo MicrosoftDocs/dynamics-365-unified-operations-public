@@ -6,8 +6,6 @@ description: This article shows how to enable the automatic printing of a Serial
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: This article explains how to configure the Invoice capture solution
 author: sunfzam
 ms.date: 11/20/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

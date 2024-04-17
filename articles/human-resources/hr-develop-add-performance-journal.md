@@ -6,8 +6,6 @@ description: The performance journal contains information on how employees met t
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

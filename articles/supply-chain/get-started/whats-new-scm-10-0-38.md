@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Dynamics Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.38. 
 author: kamaybac
 ms.author: kamaybac
@@ -9,10 +9,12 @@ ms.topic: conceptual
 ms.date: 10/27/2023
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
-# What's new or changed in Dynamics Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,8 +43,8 @@ The following table lists the features that are included in this release. We mig
 | Inventory and logistics | [View and manage inventory with a new mobile app](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/view-manage-inventory-new-mobile-app) | [Inventory On-hand mobile app](../inventory/inventory-onhand-mobile-app.md) | Enabled by default |
 | Manufacturing and asset management | Change the asset type of existing assets | [Change the asset type of existing assets](../asset-management/objects/change-asset-type.md) | Feature management:<br>*(Preview) Change types on assets and functional locations*  |
 | Manufacturing and asset management | Change the functional location type of existing functional locations | [Change the type of existing functional locations](../asset-management/functional-locations/change-functional-location-type.md) | Feature management:<br>*(Preview) Change types on assets and functional locations*  |
-| Manufacturing and asset management | [React to last-minute changes in production](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/react-last-minute-changes-production) | [Feature enhancements included in this release](#enhancements) | <p>Feature&nbsp;management:</p><ul><li>*Dynamic positive days for Planning Optimization*</li><li>*Prevent production orders to be released when full material is not available*</li><li>*Use of margins for scheduling orders*</li></ul> |
-| Master planning | Demand planning app for Dynamics 365 Supply Chain Management | [Demand planning home page](../demand-planning/demand-planning-home-page.md) | Feature management:<br>*(Preview) Demand Planning* |
+| Manufacturing and asset management | [React to last-minute changes in production](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/react-last-minute-changes-production) | [React to last-minute changes in production](../production-control/react-to-last-minute-changes.md)<br><br>[Dynamic positive days for last-minute orders](../master-planning/dynamic-positive-days.md)<br><br>See also the [Feature enhancements included in this release](#enhancements) section.</p> | <p>Feature&nbsp;management:</p><ul><li>*Production order route change*</li><li>*Change BOM item*</li><li>*Dynamic positive days for Planning Optimization*</li><li>*Prevent production orders to be released when full material is not available*</li><li>*Use of margins for scheduling orders*</li></ul> |
+| Master planning | Demand planning app for Dynamics 365 Supply Chain Management | [Demand planning home page](../demand-planning/demand-planning-home-page.md) | Feature management:<br>*Demand Planning* |
 | Master planning | Prioritize existing supply over required BOM/route in Planning Optimization | [Demand-specified BOM or formula versions and/or routes](../master-planning/coverage-settings.md#specify-versions-routes) | Feature management:<br>*Prioritize existing supply over required BOM/route in Planning Optimization* |
 | Procurement | [Inform vendors about when to ship items](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/inform-vendors-about-when-ship-items) | [Calculate requested ship dates for purchase orders](../master-planning/supplier-requested-confirmed-dates.md) | Feature management:<br>*Supplier requested and confirmed shipment dates* |
 | Warehouse management | [Operate warehouses connected to external order management systems](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/operate-warehouses-connected-external-order-management-systems) | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*(Preview) Warehouse management only mode* |
@@ -57,7 +59,6 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Module | Feature name in feature management | More information |
 |---|---|---|
 | Asset management | (Preview) Asset Management enhancements | Supervisors can now configure how work order start dates should be defaulted when changing the work order state. Choose between the scheduled/expected start date (current behavior) and actual start date (new option).<br><br>Supervisors can now configure how work order end dates should be defaulted when changing the work order state. Choose between the scheduled/expected end date (current behavior) and actual end date (new option).<br><br>Supervisors can now configure how the system should set the default value for the scheduled start date when dispatching a work order line. Choose between the expected start date from the work order header (current behavior) and scheduled start date from the work order line (new option).<br><br>Supervisors can now configure how the system should copy the description from a maintenance request to a work order. Choose between copying the description to the work order header (current behavior) or copying the description to the work order line. |
-| Master planning | Dynamic positive days for Planning Optimization | Enables Planning Optimization to be set up with positive days at the coverage group or master plan level. The feature also adds support for dynamic positive days, which ensure that current on-hand inventory or other supply is used within the lead time while creating new supply to fulfill demand outside of the lead time. |
 | Master planning | (Preview) Enable ATP calculations to consider user-modified delivery schedules applied to sales order lines | Enables available-to-promise (ATP) calculations to consider user-modified delivery schedules applied to sales order lines. Users working on the **Delivery schedule** page with ATP delivery date control enabled can adjust the delivery schedule for each line according to demand and expect the ATP calculation to reflect those adjustments. Without this feature, ATP calculations ignore user-modified schedules, which could produce less accurate results. |
 | Master planning | Positive days for Planning Optimization | Enables the system to consider positive days settings when running Planning Optimization. |
 | Master planning | Show batch job status as Error when applicable for Planning Optimization | Adds a new setting called **Show batch job status as Error when applicable** to the **Master planning parameters** page. When this parameter is set to *Yes*, master planning batch jobs are marked as an error if at least one error was found when calculating supply or processing the batch job. Set the parameter to *No* to show all completed master planning batch jobs as *Ended*, regardless of whether errors occurred during the run. |
@@ -66,8 +67,6 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Master planning | Use of margins for scheduling orders | Adds the option to consider the use of receipt margin, issue margin, and reorder margin when scheduling a production order. |
 | Procurement and sourcing | Synchronize updates of the Requested ship and receipt dates on intercompany sales and purchase order lines | Lets you control whether the requested ship and receipt dates are synchronized across intercompany sales and purchase order lines. It adds new settings to both the **Purchase order policies** and **Sales order policies** tabs of the **Intercompany** setup page for customers and vendors. |
 | Product information management | (Preview) Enable product inquiry in-app Copilot chat functionality. | Enables product inquiry in-app Copilot chat functionality. |
-| Production control | Change BOM item | Lets you change one BOM item to another in estimated or scheduled production orders. This includes the ability to use up the on-hand inventory of an existing item and substitute it for a new one once the on-hand has been used. |
-| Production control | Production order route change | Lets you change a production order route of multiple scheduled production orders at the same time. |
 | Production control | Standard cost financial posting of a production/batch order with a scrap account method. | Enables the system to financially update a fully scrapped production or batch order with a scrap account method. |
 | Sales and marketing | Enable attribute-based pricing by company | Enables you to use attribute-based pricing by company. |
 | Sales and marketing | (Preview) Pricing management for pricing rule cleanup | Pricing management for pricing rule cleanup. |
@@ -78,7 +77,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).<!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).
 
 ### Bug fixes
 

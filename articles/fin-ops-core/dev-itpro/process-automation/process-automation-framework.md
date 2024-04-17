@@ -4,10 +4,8 @@ description: This article provides an overview of development that uses the proc
 author: RyanCCarlson2
 ms.date: 05/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10

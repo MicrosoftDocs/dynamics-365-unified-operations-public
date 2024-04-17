@@ -6,9 +6,6 @@ description: This article explains how to use Electronic reporting to set up the
 author: angelad116
 ms.date: 03/30/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankStatementFormat

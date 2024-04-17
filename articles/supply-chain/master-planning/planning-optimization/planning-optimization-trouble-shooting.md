@@ -96,7 +96,9 @@ Follow these steps to review your setup and remove time fences and other options
 
 ### Reduce scheduling time
 
-Reduce the scheduling time by following the instructions in [Improve scheduling engine performance](../scheduling-engine-performance.md).
+It's always beneficial to review your scheduling configuration to optimize run times. To check whether scheduling is the main reason that Planning Optimization is timing out, try disabling finite capacity in the plan settings and then rerun planning to see if the issue is solved.
+
+For more information about how to reduce scheduling times, see [Improve scheduling engine performance](../scheduling-engine-performance.md).
 
 ### Plan only for the products you need
 
@@ -269,6 +271,14 @@ If you try to run capable to promise (CTP) from a sales order when Planning Opti
 This is related to a pending feature that is planned as part of the support for production orders.
 
 **Fix:** Avoid CTP calculations when Planning Optimization is enabled until CTP support is available.
+
+## Error message about active planning dimensions not matching
+
+After running a master plan, you might receive the following error:
+
+> Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
+
+If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is being tracked by serial number, then the serial number dimension can't be used as a coverage dimension because the system doesn't know which serial numbers should be supplied. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
 
 ## Additional resources
 

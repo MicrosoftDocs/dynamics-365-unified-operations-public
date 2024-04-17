@@ -6,9 +6,6 @@ description: This article explains how to set up Human resources parameters acro
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace

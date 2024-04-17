@@ -4,10 +4,8 @@ description: This article provides information about how to set up and generate 
 author: AdamTrukawka
 ms.date: 03/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.author: atrukawk
 ms.search.validFrom: 
@@ -62,7 +60,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Set up sales tax codes
 
-Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
+Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](../europe/emea-vat-reporting.md#sales-tax-codes-for-tax-reporting) and [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
 ## <a name="generate-print-finnish"></a>Generate a sales tax payment and print the Finnish sales tax report
 

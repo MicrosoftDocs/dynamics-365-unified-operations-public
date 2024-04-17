@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
+ms.custom: evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.28 (August 2022)

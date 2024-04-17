@@ -6,15 +6,12 @@ description: This article describes the configuration for calculations of the IC
 author: Kai-Cloud
 ms.date: 06/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 ms.custom: 

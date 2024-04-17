@@ -4,10 +4,8 @@ description: This article explains how to set up and generate the Taxable Paymen
 author: AdamTrukawka
 ms.date: 08/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: APAC
 ms.author: atrukawk
 ms.search.validFrom: 2023-08-10

@@ -4,10 +4,8 @@ description: The mandat de paiement is used by the director to notify and author
 author: brpotter
 ms.date: 12/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: France
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28

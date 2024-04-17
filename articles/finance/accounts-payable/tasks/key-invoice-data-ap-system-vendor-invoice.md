@@ -6,8 +6,6 @@ description: This task guide will help you create a vendor invoice from a purcha
 author: abruer
 ms.date: 03/22/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

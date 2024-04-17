@@ -4,8 +4,6 @@ description: This article provides an overview of Commerce Data Exchange and its
 author: josaw1
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: global
