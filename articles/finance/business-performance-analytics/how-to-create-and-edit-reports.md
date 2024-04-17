@@ -43,7 +43,7 @@ After you open a report, you can edit the visuals or data fields by selecting **
 To duplicate a report that isn't currently open, follow these steps.
 
 1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
-2. 2. Select the report to duplicate. (You can duplicate only one report at a time.)
+2. Select the report to duplicate. (You can duplicate only one report at a time.)
 3. Select **Duplicate**. The duplicate report becomes available on the **Reports** page. 
 
 To duplicate a report that's currently open, select **Duplicate** on the report.
