@@ -20,8 +20,8 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 
 This article describes the financial reports that are available out-of-the-box in Business performance analytics. These reports have been designed to provide a detailed overview of an organization's financial health, so that stakeholders can make informed decisions and drive business success. These reports use a robust data model in Microsoft Power BI. Therefore, they're not only accurate and insightful, but can also easily be customized to suit the needs of your organization.
 
-> [!NOTE]
-> Out-of-the-box reports are Microsoft-type reports. These types of reports are limited in their capacity to be updated as users can't rename, delete, or edit the reports. If a user wishes to rename or edit a Microsoft-type report, they should duplicate the report and make the changes with the duplicate.
+> [!Important]
+> Out-of-the-box reports are Microsoft-type reports. These types of reports are limited in their capacity to be updated as users can't rename, delete, or edit the reports. If a user wishes to rename or edit a Microsoft-type report, they should duplicate the report to make a Custom type report and then make the changes with the duplicate.
 
 ## Record to report
 
