@@ -73,7 +73,7 @@ Download and install the finance and operations mobile app:
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-[![Pull to refresh.](../../dev-itpro/mobile-apps/media/pull-to-refresh-list-of-workspaces-183x300.png)](/media/pull-to-refresh-list-of-workspaces.png)
+[![Pull to refresh.](../../dev-itpro/mobile-apps/media/pull-to-refresh-list-of-workspaces-183x300.png)]
 
 ## View the company directory by using the mobile workspace
 1.	In the mobile app, select the **Company directory** workspace. A list of employees is shown.

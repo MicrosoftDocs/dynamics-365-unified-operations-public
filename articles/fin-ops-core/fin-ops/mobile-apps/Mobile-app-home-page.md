@@ -33,7 +33,7 @@ The mobile app enables your organization to make its business processes availabl
 ## Elements of the mobile app
 Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions. 
 
-[![Navigation concepts in the mobile app.](../../dev-itpro/mobile-apps/media/mobilephoneapp1-1024x536.png)](/media/mobilephoneapp1.png)
+[![Navigation concepts in the mobile app.](../../dev-itpro/mobile-apps/media/mobilephoneapp1-1024x536.png)]
 
 1. When you start the app, you go to the **dashboard**.
 2. On the dashboard, you can see a list of **workspaces** that have been published.
@@ -47,7 +47,7 @@ Navigation in the mobile app consists of four basic concepts: the dashboard, wor
 ## Implementation process
 The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces. 
 
-[![Mobile apps implementation process.](../../dev-itpro/mobile-apps/media/Mobile-implementation-process-5.png)](/media/Mobile-implementation-process-5.png)
+[![Mobile apps implementation process.](../../dev-itpro/mobile-apps/media/Mobile-implementation-process-5.png)]
 
 The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces. The numbers in the first column correspond to the numbered steps in the previous illustration.
 
