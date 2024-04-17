@@ -171,7 +171,7 @@ When you try to enable the Inventory Visibility integration batch job from Suppl
 
 If you receive this error, follow these steps to update your [partition schema](inventory-visibility-power-platform.md#data-partition) to help prevent out-of-memory issues. If you don't receive this error, you can skip this procedure.
 
-1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-all-inventory-data).
+1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-data).
 1. Set up *Postman* to send requests to Inventory Visibility, as described in [Inventory Visibility public APIs](inventory-visibility-api.md).
 1. After data is deleted, call the `Get` API with a body of `none` to get all partition IDs (by using `/api/environment/{environmentId}/allpartitionids`). Review the response to confirm that data has been completely cleared. The result should be empty.
 1. Call the `Post` API with a body of `none` to change the partition schema (by using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
