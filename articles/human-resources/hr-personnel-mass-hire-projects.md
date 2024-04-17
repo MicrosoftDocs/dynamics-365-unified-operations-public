@@ -25,12 +25,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Mass hire projects
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
 
 Mass hire projects allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
 

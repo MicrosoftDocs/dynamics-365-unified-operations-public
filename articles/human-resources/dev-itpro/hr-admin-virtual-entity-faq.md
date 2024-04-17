@@ -23,9 +23,6 @@ ms.dyn365.ops.version: 10.0.12
 
 # Human Resources virtual tables FAQ
 
-
-[!INCLUDE [PEAP](../../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../../includes/applies-to-hr.md)]
 
 This article provides answers to some frequently asked questions about virtual tables in Dynamics 365 Human Resources.
