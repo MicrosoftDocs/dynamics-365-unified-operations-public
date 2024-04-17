@@ -23,7 +23,7 @@ This article describes how to install Business performance analytics. The admini
 
 ## Install Business performance analytics 
 
-Before installing Business performance analytics, complete the following [steps](configure-bpa.md): 
+Before installing Business performance analytics, complete the following prerequisite steps as outlined in [Business performance analytics prerequisites](configure-bpa.md): 
 1. [Configure Microsoft Power Platform](configure-bpa.md#configure-microsoft-power-platform)
 2. [Configure the Microsoft Entra tenant](configure-bpa.md#configure-the-microsoft-entra-tenant)
 3. [Enable Power Apps users](configure-bpa.md#power-app-users)
