@@ -6,8 +6,6 @@ description: This article explains how to set up payment terms for vendor invoic
 author: abruer
 ms.date: 02/11/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

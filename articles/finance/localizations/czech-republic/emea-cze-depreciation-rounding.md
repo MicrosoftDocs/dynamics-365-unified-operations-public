@@ -6,9 +6,6 @@ description: This article explains how you can round fixed asset depreciation am
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetDepreciationProfile

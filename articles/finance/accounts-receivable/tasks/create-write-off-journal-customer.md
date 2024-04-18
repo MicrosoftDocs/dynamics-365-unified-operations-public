@@ -6,8 +6,6 @@ description: This task guide will show you how to set up the parameters for writ
 author: ShivamPandey-msft
 ms.date: 05/23/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,8 +4,6 @@ description: This article describes how to globalize modules by using the Cultur
 author: samjarawan
 ms.date: 12/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article explains how to get started with Electronic invoicing 
 author: ilikond
 ms.date: 08/14/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Australia, New Zealand

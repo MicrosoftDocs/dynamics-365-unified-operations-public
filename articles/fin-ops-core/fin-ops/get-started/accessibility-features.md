@@ -4,8 +4,6 @@ description: This article describes the functionality that is designed to help u
 author: jasongre
 ms.date: 12/02/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

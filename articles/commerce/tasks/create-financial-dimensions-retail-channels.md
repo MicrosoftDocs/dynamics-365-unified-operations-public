@@ -6,8 +6,6 @@ description: This procedure walks through creating a commerce channel financial 
 author: jashanno
 ms.date: 11/14/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

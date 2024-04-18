@@ -6,8 +6,6 @@ description: This article provides an overview of the process for setting up and
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

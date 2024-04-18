@@ -7,9 +7,6 @@ description: This article describes some of the more common channel mapping scen
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

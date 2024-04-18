@@ -6,9 +6,6 @@ description: This article provides links to documentation resources for Spain.
 author: kfend
 ms.date: 05/26/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,8 +6,6 @@ description: Vendors that have questions related to an RFP can submit their ques
 author: Henrikan
 ms.date: 01/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

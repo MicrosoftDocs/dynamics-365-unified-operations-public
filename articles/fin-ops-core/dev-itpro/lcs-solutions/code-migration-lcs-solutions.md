@@ -4,10 +4,8 @@ description: This article describes how to upgrade and analyze your code in Micr
 author: sericks007
 ms.date: 06/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d

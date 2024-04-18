@@ -4,8 +4,6 @@ description: This article describes how to manage search engine optimization (SE
 author: phinneyridge
 ms.date: 01/31/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

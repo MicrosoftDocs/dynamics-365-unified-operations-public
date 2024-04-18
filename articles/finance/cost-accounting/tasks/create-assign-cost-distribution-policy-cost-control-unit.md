@@ -4,8 +4,6 @@ description: Cost distribution rules are used to distribute costs that have been
 author: twheeloc
 ms.date: 03/27/2023
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

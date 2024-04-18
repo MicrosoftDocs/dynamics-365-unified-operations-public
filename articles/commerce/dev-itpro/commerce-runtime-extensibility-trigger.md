@@ -4,8 +4,6 @@ description: This article explains trigger support for the Microsoft Dynamics 36
 author: josaw1
 ms.date: 11/14/2023
 ms.topic: article
-ms.prod:
-ms.technology:
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

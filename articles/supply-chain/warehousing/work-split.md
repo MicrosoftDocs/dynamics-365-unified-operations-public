@@ -6,8 +6,6 @@ description: This article provides information about work split functionality. T
 author: Mirzaab
 ms.date: 10/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

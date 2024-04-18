@@ -4,8 +4,6 @@ description: This article describes the default report for trial balances. It al
 author: abruer
 ms.date: 06/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

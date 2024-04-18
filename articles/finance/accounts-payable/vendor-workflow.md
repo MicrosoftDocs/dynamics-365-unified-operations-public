@@ -6,9 +6,6 @@ description: Modify vendor information and use workflow to approve it.
 author: sunfzam
 ms.date: 03/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  Vendor

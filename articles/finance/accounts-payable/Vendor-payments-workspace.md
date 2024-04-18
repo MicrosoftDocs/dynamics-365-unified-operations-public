@@ -4,8 +4,6 @@ description: This article provides information about the Vendor payments workspa
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

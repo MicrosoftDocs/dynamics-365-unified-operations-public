@@ -6,9 +6,6 @@ description: This article answers frequently asked questions about the workflow 
 author: ChrisGarty 
 ms.date: 02/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

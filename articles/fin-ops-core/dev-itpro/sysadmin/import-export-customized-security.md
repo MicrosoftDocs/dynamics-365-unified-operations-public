@@ -4,10 +4,8 @@ description: The article explains how a customized security configuration can be
 author: peakerbl
 ms.date: 9/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31

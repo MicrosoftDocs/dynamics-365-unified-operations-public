@@ -6,15 +6,12 @@ description: These topics describe the programs, tools, and processes available 
 author: alejandra-cabrales
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.search.region: Global

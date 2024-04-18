@@ -5,8 +5,6 @@ description: This article is the building and installation guide for the sample 
 author: EvgenyPopovMBS
 ms.date: 12/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Sweden

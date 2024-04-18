@@ -6,9 +6,6 @@ description: This article describes the options that are available for setting u
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

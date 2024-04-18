@@ -6,9 +6,6 @@ description: This article describes how to set up server-to-server authenticatio
 author: jaredha
 ms.date: 03/11/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

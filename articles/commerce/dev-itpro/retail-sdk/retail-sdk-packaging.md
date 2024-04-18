@@ -4,8 +4,6 @@ description: This article explains how to create a deployable package for Micros
 author: josaw1
 ms.date: 11/30/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

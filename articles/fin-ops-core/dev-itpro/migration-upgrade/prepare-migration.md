@@ -4,10 +4,8 @@ description: This article describes how the code upgrade service and Visual Stud
 author: gianugo
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-02-28

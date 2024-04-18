@@ -6,16 +6,13 @@ description: This article reviews Microsoft Office integration concepts and feat
 author: jasongre
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33

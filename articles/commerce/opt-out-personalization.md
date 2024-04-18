@@ -4,8 +4,6 @@ description: This article explains how you can let customers opt out of receivin
 author: bebeale
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

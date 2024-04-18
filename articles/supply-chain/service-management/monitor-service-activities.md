@@ -6,8 +6,6 @@ description: The Dispatch board form provides an at-a-glance status update for t
 author: sorenva
 ms.date: 05/04/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

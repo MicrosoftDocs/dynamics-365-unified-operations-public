@@ -6,8 +6,6 @@ description: This article introduces the quality and nonconformance management f
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
-ms.prod:
-ms.technology:
 
 # optional metadata
 

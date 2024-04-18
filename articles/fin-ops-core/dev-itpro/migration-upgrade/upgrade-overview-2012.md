@@ -6,9 +6,6 @@ description:  This article describes the process that customers who currently ru
 author: LaneSwenka
 ms.date: 07/21/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

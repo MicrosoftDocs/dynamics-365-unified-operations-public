@@ -6,9 +6,6 @@ description: This article explains how to set up bank account numbers for the Br
 author: gionoder
 ms.date: 01/20/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

@@ -4,8 +4,6 @@ description: This article demonstrates how to create a record template so that f
 author: peakerbl
 ms.date: 07/29/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveR
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

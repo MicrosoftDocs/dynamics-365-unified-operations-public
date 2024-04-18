@@ -4,8 +4,6 @@ description: Localization ISV solution providers must undertake their regulatory
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: global

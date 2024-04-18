@@ -6,8 +6,6 @@ description: This article walks through an example procedure where a call center
 author: josaw1
 ms.date: 08/05/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

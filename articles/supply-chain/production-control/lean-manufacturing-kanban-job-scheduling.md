@@ -6,8 +6,6 @@ description: This article provides information about visual control over kanban 
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

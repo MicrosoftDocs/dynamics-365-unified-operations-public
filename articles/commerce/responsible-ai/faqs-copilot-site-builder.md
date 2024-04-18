@@ -6,6 +6,8 @@ description: This FAQ provides information about the AI technology that's used i
 ms.date: 03/29/2024
 ms.custom: 
   - responsible-ai-faqs
+ms.collection:
+  - bap-ai-copilot
 ms.topic: article
 author: ashishmsft
 ms.author: asharchw

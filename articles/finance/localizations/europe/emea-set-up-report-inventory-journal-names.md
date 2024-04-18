@@ -4,8 +4,6 @@ description: When you use configurable inventory reports based on electronic rep
 author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland

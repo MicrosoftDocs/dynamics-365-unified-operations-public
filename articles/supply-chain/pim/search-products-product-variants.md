@@ -6,8 +6,6 @@ description: Use the **Item number** field to search for products and product va
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

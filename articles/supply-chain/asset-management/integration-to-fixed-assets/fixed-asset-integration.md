@@ -6,8 +6,6 @@ description: This article explains how to integrate the Asset management and Fix
 author: johanhoffmann 
 ms.date: 04/17/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

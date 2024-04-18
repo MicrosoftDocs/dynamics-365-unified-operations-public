@@ -7,7 +7,7 @@ ms.topic: article
 ms.date: 02/16/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-06-30
 ms.search.form: [Operations AOT form name to tie this article to]

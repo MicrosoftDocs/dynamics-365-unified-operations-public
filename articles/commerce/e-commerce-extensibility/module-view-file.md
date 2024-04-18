@@ -4,8 +4,6 @@ description: This article covers the module view file in Microsoft Dynamics 365 
 author: samjarawan
 ms.date: 02/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

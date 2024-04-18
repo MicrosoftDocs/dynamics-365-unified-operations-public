@@ -6,16 +6,13 @@ description: The global address book can help you understand the relationships a
 author: msftbrking
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DirPartyTable, DirPartyTableRoles
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074

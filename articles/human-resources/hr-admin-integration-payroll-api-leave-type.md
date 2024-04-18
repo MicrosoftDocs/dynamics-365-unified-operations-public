@@ -6,9 +6,6 @@ description: This article provides details and an example query for the leave ty
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

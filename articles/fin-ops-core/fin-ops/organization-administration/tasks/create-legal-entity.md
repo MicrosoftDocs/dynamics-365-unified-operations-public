@@ -6,8 +6,6 @@ description: A legal entity is an organization that is identified through regist
 author: twheeloc
 ms.date: 01/25/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

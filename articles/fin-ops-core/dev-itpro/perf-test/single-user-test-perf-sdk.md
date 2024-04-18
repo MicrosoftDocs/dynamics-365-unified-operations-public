@@ -4,8 +4,6 @@ description: This article explains how to do single-user testing by using Micros
 author: josaw1
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article shows you how to create custom fields through the user
 author: jasongre
 ms.date: 09/15/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysCustomFieldManageFields

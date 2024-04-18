@@ -4,8 +4,6 @@ description: This article describes how to create a reference to an original inv
 author: AdamTrukawka
 ms.date: 09/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global

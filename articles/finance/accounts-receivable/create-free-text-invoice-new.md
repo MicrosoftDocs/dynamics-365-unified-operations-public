@@ -6,8 +6,6 @@ description: This article explains how to create free text invoices.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

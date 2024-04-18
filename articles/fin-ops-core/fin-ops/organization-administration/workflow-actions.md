@@ -6,9 +6,6 @@ description: This article explains the actions that each participant in a workfl
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

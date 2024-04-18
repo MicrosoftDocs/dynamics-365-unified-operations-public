@@ -4,8 +4,6 @@ description: This article describes how to set up custom email templates for spe
 author: bicyclingfool
 ms.date: 11/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
