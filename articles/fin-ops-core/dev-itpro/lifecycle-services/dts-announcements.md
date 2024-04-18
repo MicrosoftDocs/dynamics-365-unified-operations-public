@@ -21,13 +21,9 @@ ms.dyn365.ops.version: 2012
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
 
-## Service Degradation: Increased Translation Request Failures  
+## DTS will stop supporting Dynamics NAV by June 1, 2024  
 
-There's an increase in failed translation requests, and we're working to resolve this issue with the Microsoft Translator team. You may see some failed requests complete after being reran, in that case you'll receive a completion email.
-
-We understand the inconvenience that this issue causes, and we appreciate your patience and continuous support for DTS.
-
-Should you require immediate support, contact the support team at dtssup@microsoft.com.
+Mainstream support for Dynamics NAV 2018 ended on Jan 10, 2023. DTS will end support for Dynamics NAV 2018 and prior versions by June 1, 2024.
 
 ## Dynamics 365 Translation Service Connector release
 
