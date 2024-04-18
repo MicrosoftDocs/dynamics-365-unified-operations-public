@@ -1,12 +1,12 @@
 ---
 title: Inventory Visibility adjustment offset
-description: This article describes how to offset the inventory adjustments that were previously updated in Inventory Visibility via post o-nhand change APIs, and are later also updated in Dynamics 365 Supply Chain Management. it is required to offset from Supply Chain Management to Inventory Visibility of the previously adjusted inventory measures and quantity so that the same inventory quantity are not updated twice
+description: This article describes how to offset inventory adjustments that were updated through Inventory Visibility and later also updated in Dynamics 365 Supply Chain Management. To prevent inventory quantities from being updated twice, you must offset the previously adjusted inventory from Supply Chain Management to Inventory Visibility.
 author: yufeihuang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/07/2024
+ms.date: 04/18/2024
 audience: Application User
 ms.custom: 
   - bap-template
@@ -14,7 +14,14 @@ ms.custom:
 
 # Inventory Visibility adjustment offset
 
-This article describes how to offset the inventory adjustments that were previously updated in Inventory Visibility via post on-hand change APIs, and are later also updated in Dynamics 365 Supply Chain Management. It is required to offset from Supply Chain Management to Inventory Visibility of the previously adjusted inventory measures and quantity so that the same inventory quantity are not updated twice.
+This article describes how to offset inventory adjustments that were updated through Inventory Visibility and later also updated in Dynamics 365 Supply Chain Management. To prevent  inventory quantities from being updated twice, you must offset the previously adjusted inventory from Supply Chain Management to Inventory Visibility.
+
+For example, you might have an external sales system (such as a point of sale (POS) or e-commerce system) that makes external sales transactions. You have a data source called *POS* in Inventory Visibility and a physical measure called *Sold*, which captures externally sold quantities. Suppose your external system registers a sale of 10 units of item ID A0001, including all relevant dimensions. When you recreate the transaction in Supply Chain Management, if the recreated transaction is a sales order, you must set up sales order offset mappings. If you're using an inventory adjustment journal to post inventory changes that are registered using your POS systems, you must set up inventory adjustment journal offset mappings.
+
+When you sync or import external sales orders and inventory adjustment journals from Inventory Visibility into Supply Chain Management, you'll see that two new columns have been added to the relevant tables: `OFFSETDATASOURCE` and `OFFSETPHYSICALMEASURE`. Be sure to populate these two columns with the data source and physical measure values that you set up in your inventory offset configuration (as described later in this article). When sales orders and inventory adjustment journals are created in Supply Chain Management, you can view the data source and physical measure mappings on the sales order or journal lines.  
+
+> [!NOTE]
+> Supply Chain Management transactions lines that are to be offset are added to the regular data sync batch job between Supply Chain Management and Inventory Visibility. Therefore, you can expect a delay of about one minute before you can view the data being offset in Inventory Visibility.
 
 ## Prerequisites
 
@@ -23,28 +30,23 @@ To use the features described in this article, your system must meet the followi
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
 - The feature that is named *Inventory Visibility integration with inventory adjustment offset* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Inventory Visibility must be installed and the basic integration between Supply Chain Management and Inventory Visibility must be set up, as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
-- You must be using **/api/environment/{environmentId}/onhand** or **/api/environment/{environmentId}/onhand/bulk** APIs to make inventory adjustments/post on-hand change events to Inventory Visibility. For details regarding these two APIs, see[Create one on-hand change event](inventory-visibility-api#create-one-onhand-change-event) and [Create multiple change events](inventory-visibility-api#create-multiple-onhand-change-events)
+- You must be using the **/api/environment/{environmentId}/onhand** and/or **/api/environment/{environmentId}/onhand/bulk** APIs to make inventory adjustments and post on-hand change events to Inventory Visibility. For details regarding these two APIs, see [Create one on-hand change event](inventory-visibility-api#create-one-onhand-change-event) and [Create multiple change events](inventory-visibility-api#create-multiple-onhand-change-events)
 
 ## Enable and set up the feature
 
-1. Go to Inventory management > Inventory Visibility > Inventory Visibility integration parameters > on the **Inventory Visibility integration parameters** screen, you will see a new menu item **Inventory adjustment offset**. Currently there are two Supply Chain Management transaction types that supports automatic offset - Sales order, and Inventory adjustment journal
-1. Choose which type of transaction you want to set up the adjustment offset.
+Follow these steps to enable and set up the Inventory Visibility adjustment offset feature.
 
-    For example, You may have your external sales systems (such as POS or e-commerce system) that takes the external sales transactions. And you have created a data source **POS** in Inventory Visibility and a physical measure **sold** to capture the external sold quantities. Let's say the sold quantities are 10 for respective item with dimensions. When you re-create the transaction in Supply Chain Management, if the recreated transaction is sales order, you need to set up sales order offset mappings. If you are using inventory adjustment journal to post the inventory changes happened in your POS systems, you will need to set up the Inventory adjustment journal offset
+1. Go to **Inventory management** \> **Inventory Visibility** \> **Inventory Visibility integration parameters**.
+1. Open the **Inventory adjustment offset** tab.
+1. The page includes two FastTabs (**Sales order** and **Inventory adjustment journal**), each of which represents a type of transaction for which you can set up automatic adjustment offsets. Open the appropriate FastTab and make the following settings:
+    - **Inventory Visibility offset data source** – Specify the data source you post inventory adjustments to using Inventory Visibility (for example, *POS*).
+    - **Inventory Visibility offset physical measure** – Specify the physical measure you use to record the adjustment quantity changes in Inventory Visibility (for example, *Sold*).
+    - **Offset trigger** – Choose the record status that should trigger the offset. For sales orders, you can choose *Create* or *Invoice*. For inventory adjustment journals, you can choose *Create* or *Post*.
+            - *Example 1*: You have a POS system that registers external sales order transactions using the *POS* data source and *Sold* physical measure. Each transaction represents inventory that was consumed and paid for in the store. Therefore you would trigger the offset when the sales order reaches *Invoiced* status in Supply Chain Management.
+            - *Example 2*: You have an e-commerce website that posts inventory adjustments to Inventory Visibility using the *Ecommerce* data source and *On order* physical measure. When you create a new sales order in Supply Chain Management, you would trigger the offset at the *Created* status.
 
-1. Let's continue using the Sales order offset set up as an example, you will need to input the **Inventory Visibility offset datasource** as the data source you posted inventory adjustments in Inventory Visibility, for example 'POS'
-1. You also need to input the **Inventory Visibility offset physical measure** you record the adjustment quantity changes in Inventory Visibility, for example 'sold'
-1. Next, you set up when you'd like the offset to be triggered, for sales order you have three trigger statuses to choose - create and invoiced; for inventory adjustment journal you have two statuses to to choose - create and post.
-    - In our example, since the external transactions as POS.sold, that means the inventory has already been sold/consumed in store and payment completed, therefore you can choose status "invoiced" for this sales order data source and physical measure offset mapping.
-    - In your practice, if you have multiple data sources and physical measures in Inventory Visibility that have quantity being adjusted, you can continue add new lines on the configuration. Another example can be for your e-commerce website, you take a new order and posted inventory adjustment to Inventory Visibility recorded under Ecommerce.on order (datasource.physical measure), then if you create a new sales order in Supply Chain Management, you can trigger offset at 'created' status
+    - **Site**, **Warehouse**, **Inventory status**, **Location**, **License plate**, **Batch number**, and **Serial number** – Each of these check boxes represents a storage or tracking dimension. Select the check box for each dimension that the system should match when offsetting back to Inventory Visibility. Deselect each dimension that should be *excluded* when matching records. For product and inventory dimensions that aren't listed here (such as color, size, or style) the system will match exactly the values specified on the sales order line or journal line when offsetting back to Inventory Visibility. *Make sure that only the relevant storage and tracking dimensions are selected.*
+        - *Example 1*: An external system makes inventory adjustments or on-hand changes through Inventory Visibility by specifying Item ID, color, size, site, and warehouse. Later, when you create a matching sales order in Supply Chain Management, you enter matching item and inventory dimensions, but *you also add a batch number*, which isn't known to the external system. In this case, you should deselect **Batch number** and **Serial number** because these values aren't submitted by the external system and shouldn't be matched when doing the offset.
+        - *Example 2*: Your process allows site or warehouse information to be changed when recreating an inventory adjustment transaction in Supply Chain Management. For instance, an external system might adjust inventory for item A0001 in site 1, without specifying a warehouse (in e-commerce, it's common that the fulfillment warehouse isn't known when an order is first submitted). The fulfillment warehouse (warehouse 13) is specified later in Supply Chain Management. To allow this type of offset to work correctly, you should deselect the **Warehouse** dimension for the appropriate row.
 
-1. On the same setting row you can see several storage and tracking dimension checkboxes. Selecting those dimensions means when offseting back to Inventory Visibility, you'd like those dimensions also to be matched. Deselect the dimensions means you want to **EXCLUDE** certain dimensions when doing offset. For other product and inventory dimensions that are not listed here (such as color size style or other customized dimensions) , it will be exact match of what you have inputted on the sales order line or journal line when offsetting back to Inventory Visibility.
-    - For example, you have previously made inventory adjustment/on-hand change in Inventory Visibility for item 1000, color red, size S in site 1, warehouse 11. When you later create sales order in Supply Chain Management, you entered the same item with same inventory dimensions, but in addition **you also added batch number** which was not maintained when you first update the inventory change to Inventory Visibility. In this case, when offset from Supply Chain Management, you should deselect batch ID and serial number as these two are not needed/maintained in Inventory Visibility previously.
-    - Another example is you may change the inventory adjustment site or warehouse information when recreating the transaction in Supply Chain Management. For instance, item 1000 is adjusted in Inventory Visibility in site 1, and no warehouse information being specified (this is common in e-commerce in-basket reservation that item does not have a fulfillment warehouse when online order was initially placed). But later in Supply Chain Management you may update the actual fulfillment warehouse to site 1, warehouse 13. In order to offset correctly, you need to deselect 'warehouse' dimension in the settings. As in this case warehouse location, batch ID and serial number are not relevant, make sure they are not selected either. *Make sure only the relevant storage and tracking dimensions are selected*.
-
-1. When sync/import the external sales order/inventory adjustment journals into Supply Chain Management, you will see two new columes being added already - **OFFSETDATASOURCE** and **OFFSETPHYSICALMEASURE**, make sure you populate these two columes with the correct datasouce and mapping you have set up in the configuration previously. for example, POS/Ecommerce for datasource; and sold/on order for physical measure
-
-When sales orders/inventory adjustment journals are created successfully in Supply Chain Management, you can view and check the datasource and physical measure mappings on the sales or journal lines.  
-
-> [!NOTE]
-> The Supply Chain Management transactions lines that are to be offset are added to the regular data sync batch job between Supply Chain Management and Inventory Visibility, therefore you may expect approx. one minute delay to view the data being offset correctly in Inventory Visibility.
+1. If you need to set up more offsets for sales order or inventory adjustment journals, then select **Add line** from the appropriate FastTab toolbar and repeat the previous steps for each new line.
