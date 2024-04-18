@@ -23,7 +23,6 @@ ms.dyn365.ops.version: Version 10.0.27
 ---
 # Dynamics 365 Human Resources recruitment
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

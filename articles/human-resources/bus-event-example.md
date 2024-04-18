@@ -28,8 +28,6 @@ ms.dyn365.ops.version: Human Resources
 
 This article provides an example of a business event.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 ## Set up a flow for assigned task notification
 
 1. Sign in to the [Microsoft Power Apps maker portal](https://make.powerapps.com/).
