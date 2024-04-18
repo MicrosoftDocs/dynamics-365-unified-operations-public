@@ -35,9 +35,9 @@ This enumeration provides the option set of status values for candidate screenin
 
 | Value | Label | Description |
 | --- | --- | --- |
-| 200000000 | Not Complete | The candidate has not yet completed the screening. |
-| 200000001 | Pass | The candidate has passed the screening. |
-| 200000002 | Fail | The candidate has failed the screening. |
+| 200000000 | Not Complete | The candidate hasn't completed the screening. |
+| 200000001 | Pass | The candidate passed the screening. |
+| 200000002 | Fail | The candidate failed the screening. |
 
 ## See also
 
