@@ -48,25 +48,29 @@ When global journals are posted, if the selected journals span multiple companie
 
 ### Changes in the journal posting process when the top picking pattern is used
 
+>[!IMPORTANT]
+> Beginning with Dynamics 365 release 10.0.39, users can select top picking pattern for batch job posting, which provides additional performance gains, reducing system usage and a more balanced workload on tasks by optimizing the concurrent tasks.
+
 The journal posting process has the following changes when the top picking pattern is used:
 
 - Adding a journal:
-
     - Every individual journal is added to the journal posting job.
     - When journals are split into multiple journals, the split journals are added to the journal posting job.
 
 - Retrieving a journal:
-
     - The journal posting process retrieves one journal from the queue and posts it.
 
 - Deleting a record:
-
     - The journal posting process cleans up all records that are older than 14 days.
     - The process removes records from the posting queue after the record is retrieved.
 
 - Posting:
-
     - Each batch task continues to post journals until all journals are posted from the posting queue.
+
+ - Batch job history:
+    -    Top picking posting mechanism splits the posting process into multiple parallel sub-tasks to improve the overall performance. If one of the sub-tasks fails, other tasks will continue to work, the overall status of the batch job will show as **Ended**.
+    -    To see the job history, go to batch job history, drill down on batch job Id, and **InfoLog** section. For more information, see [Create a batch job](../fin-ops/sysadmin/create-batch-job.md).
+  
 
 ### Related classes and tables
 
