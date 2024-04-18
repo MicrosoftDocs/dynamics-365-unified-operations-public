@@ -613,7 +613,7 @@ The query by post API is available in two versions. The following table outlines
 | API version 1.0 | API version 2.0 |
 |---|---|
 | Can only query one organization ID. | Can query multiple organization IDs. |
-| Can query up to 10,000 distinct warehouses. | Can return large results as multiple pages. |
+| Can query up to 10,000 combinations of sites and warehouses. | Can query over 10,000 combinations of sites and warehouses, and can return large results as multiple pages. |
 
 <!-- KFM notes:
 - How does the 10,000 warehouse limit mentioned here relate to the limit calculation we provide in the intro to this section? Are we just repeating that?
@@ -725,12 +725,10 @@ Body:
 
 The request format for API version 2.0 is similar to that of version 1.0, but also supports two optional parameters: `pageNumber` and `pageSize`, which allow the system to split a single large result into several smaller documents. The results are sorted by warehouse (locationId), and the parameters are used as follows to split results into pages:
 
-- `pageSize` establishes the number of warehouses (locationId values) that are returned in each page. <!--KFM: I assumed the unit of {pageSize} is the number of warehouses (locationId values). Correct? -->
+- `pageSize` establishes the number of warehouses (locationId values) that are returned in each page.
 - `pageNumber` establishes the page number that's returned.
 
 A request of this format returns on-hand inventory data starting from warehouse number *({pageNumber} &minus; 1) &times; {pageSize}* and includes data for the next *{pageSize}* warehouses.
-
-<!-- KFM:  I have assumed that `locationId` is actually a warehouse ID. (Usually in SCM, we use a **Site > Warehouse > Location** hierarchy, with each warehouse having many "locations" within it, so this is confusing). Am I correct? -->
 
 API version 2.0 responds with a document that uses the following structure:
 
@@ -743,7 +741,7 @@ API version 2.0 responds with a document that uses the following structure:
 
 When the request reaches the last warehouse (locationId), the `nextLink` value is an empty string.
 
-API version 2.0 also lets you specify more than one organization ID in your request. To do so, include a comma-separated list of organization IDs in the `organizationId` filter of your request document. For example, `"organizationId": ["org1", "org2", "org3"]`. <!--KFM: I assumed this. Please confirm whether it is correct. -->
+API version 2.0 also lets you specify more than one organization ID in your request. To do so, include a comma-separated list of organization IDs in the `organizationId` filter of your request document. For example, `"organizationId": ["org1", "org2", "org3"]`.
 
 ### <a name="query-with-get-method"></a>Query by using the get method
 
