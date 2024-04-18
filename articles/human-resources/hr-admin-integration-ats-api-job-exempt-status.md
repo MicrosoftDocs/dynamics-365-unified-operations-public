@@ -6,6 +6,7 @@ description: This article describes the Job exempt status option set for Dynamic
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
+ms.custom: evergreen
 # optional metadata
 
 # ms.search.form: 
@@ -36,8 +37,8 @@ This enumeration specifies the option set for FLSA job exempt status values. Thi
 | Value | Label | Description |
 | --- | --- | --- |
 | 200000000 | Exempt | The job has an exempt status based on FLSA guidelines. |
-| 200000001 | NonExempt | The job has a non-exempt status based on FLSA guidelines. |
-| 200000002 | Does Not Apply | FLSA status guidelines do not apply to the job. |
+| 200000001 | NonExempt | The job has a nonexempt status based on FLSA guidelines. |
+| 200000002 | Does Not Apply | FLSA status guidelines don't apply to the job. |
 
 ## See also
 
