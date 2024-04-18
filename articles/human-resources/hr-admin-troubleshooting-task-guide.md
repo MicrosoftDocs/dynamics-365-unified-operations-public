@@ -26,9 +26,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Save task guides to LCS and replay them
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Environment details** 

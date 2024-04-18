@@ -24,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Benefit employee plan status
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

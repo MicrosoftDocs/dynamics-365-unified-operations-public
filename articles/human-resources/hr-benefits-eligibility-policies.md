@@ -26,7 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Benefit eligibility policies
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -25,9 +25,6 @@ ms.dyn365.ops.version: Platform update 24
 
 # Optimize performance with auto cleanup tasks
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Issue**

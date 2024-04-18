@@ -24,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Generate payroll entities
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Use this OData function to generate the entities needed for payroll integration. If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity. The response contains an operation ID that you can monitor so you know when the generation process has completed.
 

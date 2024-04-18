@@ -26,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Submit a leave request to workflow
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
