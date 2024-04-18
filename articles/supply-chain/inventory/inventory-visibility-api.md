@@ -613,7 +613,7 @@ The query by post API is available in two versions. The following table outlines
 | API version 1.0 | API version 2.0 |
 |---|---|
 | Can only query one organization ID. | Can query multiple organization IDs. |
-| Can query up to 10,000 combinations of sites and warehouses. | Can query over 10,000 combinations of sites and warehouses, and can return large results as multiple pages. |
+| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites and warehouses |
 
 <!-- KFM notes:
 - How does the 10,000 warehouse limit mentioned here relate to the limit calculation we provide in the intro to this section? Are we just repeating that?
@@ -894,8 +894,8 @@ Body:
 
 API version 2.0 differs from version 1.0 in the following ways:
 
-- The `filter` section now has a `keys` field instead of a `dimensions` field. The `keys` field works like the `dimensions` field in version 1.0, but also allows you add `organizationID` among the other inventory dimensions (such as `siteId` and `locationId`, which are required). You can specify the keys in any order.
-- You don't need to specify `organizationID` as a separate filter in `filters` <!--KFM: Do we mean it's optional? Or is it now unsupported? -->
+- The `filter` section now has a `keys` field instead of a `dimensions` field. The `keys` field works like the `dimensions` field in version 1.0. You can specify the keys in any order.
+- `filters` should no longer contain entry `organizationId`; `organizationId` should be put in "keys", e.g., `keys: ["organizationId", "siteId", "locationId"]` <!--KFM: Do we mean it's optional? Or is it now unsupported? -->
 
 Other fields are identical to API version 1.0.
 
