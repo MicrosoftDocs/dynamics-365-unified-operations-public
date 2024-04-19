@@ -23,7 +23,7 @@ This article describes how to set up and generate a value-added tax (VAT) declar
 
 The VAT declaration feature for Lithuania supports filing a VAT return for companies with [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database.
 
-## VAT declaration overview
+## <a name="vat-declaration-overview"></a> VAT declaration overview
 
 To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of operation that's subject to reporting in the VAT declaration for Lithuania. 
 Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate available sales tax transaction attributes 
@@ -70,8 +70,54 @@ Use this information to correctly associate tax transaction attributes with the 
 | Triangular trade: Phase III | not reported | 25, 32, 35<br><br> | PurchaseTriangularTradePhaseIII | 32/25/35 Triangular trade (purchase): Phase III | 32/25/35 Trikampė prekyba: III grandis |
 | Cases where the "reserve" rule applies for the purchase of goods from another EU Member State | 21  | 25, 34 | EUPurchaseGoodsReserve | 21/25/34 Cases where the "reserve" rule applies for the purchase of goods from another Member State | 21/25/34 Atvejai, kai dėl prekių įsigijimo iš kitos valstybės narės taikoma „rezervo“ taisyklė |
 
+For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this article.
 
+## Set up the VAT declaration for Lithuania
 
+These tasks will prepare your Finance environment to generate the electronic file for the VAT declaration for Lithuania and preview the VAT amounts in Excel format.
+
+- [Import ER configurations](#import-er).
+- [Set up application-specific parameters for VAT declaration fields](#set-up).
+- [Set up the VAT reporting format to preview amounts in Excel](#setup-preview).
+- [Set up electronic messages](#setup-em).
+- [Set up the VAT registration number of the company that's reporting VAT](#vat-id).
+
+### <a name="import-er"></a>Import ER configurations
+
+Open the **Electronic reporting** workspace, and import the latest versions of these ER formats under **Tax declaration model**:
+
+- VAT Declaration XML (LT)
+- VAT Declaration Excel (LT)
+
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+### <a name="set-up"></a>Set up application-specific parameters for VAT declaration fields
+
+To automatically generate the VAT declaration, associate available sales tax transaction attributes (sales tax code, tax classifier) in Finance and lookup results in the ER configuration.
+
+> [!NOTE]
+> We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
+Follow these steps to define which of the available sales tax transaction attributes (sales tax code, tax classifier) in Finance generates which field of the VAT declaration for Lithuania.
+
+1. Go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
+2. Select the **VAT declaration XML (LT)** configuration, and then, on the Action Pane, select **Configurations** \> **Application specific parameters setup**.
+3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
+4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
+
+    | Field     | Description |
+    |-----------|---|
+    | **Lookup result** | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article. |
+    | **Tax code**  | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
+    | **Transaction classifier** | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value.</p> |
+
+    > [!NOTE]
+    > Associate all sales tax codes (or combinations of a sales tax code, tax classifier) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
+
+5. In the **State** field, change the value to **Completed**.
+6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
+7. Select the **VAT declaration Excel (LT)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (LT)**.
+8. In the **State** field, select **Completed**.
 
 ## Set up sales tax authorities
 
