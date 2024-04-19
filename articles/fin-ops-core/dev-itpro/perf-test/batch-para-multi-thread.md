@@ -2,7 +2,7 @@
 title: Batch parallelism and multi-threading in Dynamics 365 finance and operations apps
 description: This article describes batch parallelism and multi-threading in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
-ms.date: 02/20/2024
+ms.date: 04/20/2024
 ms.topic: article
 audience: Developer
 ms.reviewer: twheeloc
