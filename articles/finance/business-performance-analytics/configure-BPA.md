@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Business performance analytics
+title: Install prerequisites for Business performance analytics
 description: This article describes how to complete the prerequisites for Business performance analytics.
 author: jinniew
 ms.author: jiwo
