@@ -613,12 +613,7 @@ The query by post API is available in two versions. The following table outlines
 | API version 1.0 | API version 2.0 |
 |---|---|
 | Can only query one organization ID. | Can query multiple organization IDs. |
-| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites and warehouses |
-
-<!-- KFM notes:
-- How does the 10,000 warehouse limit mentioned here relate to the limit calculation we provide in the intro to this section? Are we just repeating that?
-- We don't say whether V2 can now query more than 10,000 warehouses. Can it? Is there a limit? How does the paging feature contrast to the info for v1?
--->
+| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites and warehouses. Can return results in multiple pages. |
 
 The following subsections show how to use each API version.
 
@@ -723,9 +718,9 @@ Body:
     # Same as version 1.0
 ```
 
-The request format for API version 2.0 is similar to that of version 1.0, but also supports two optional parameters: `pageNumber` and `pageSize`, which allow the system to split a single large result into several smaller documents. The results are sorted by warehouse (locationId), and the parameters are used as follows to split results into pages:
+The request format for API version 2.0 is similar to that of version 1.0, but also supports two optional parameters: `pageNumber` and `pageSize`, which allow the system to split a single large result into several smaller documents. The results are sorted by warehouse (`locationId`), and the parameters are used as follows to split results into pages:
 
-- `pageSize` establishes the number of warehouses (locationId values) that are returned in each page.
+- `pageSize` establishes the number of warehouses (`locationId` values) that are returned in each page.
 - `pageNumber` establishes the page number that's returned.
 
 A request of this format returns on-hand inventory data starting from warehouse number *({pageNumber} &minus; 1) &times; {pageSize}* and includes data for the next *{pageSize}* warehouses.
@@ -739,7 +734,7 @@ API version 2.0 responds with a document that uses the following structure:
 }
 ```
 
-When the request reaches the last warehouse (locationId), the `nextLink` value is an empty string.
+When the request reaches the last warehouse (`locationId`), the `nextLink` value is an empty string.
 
 API version 2.0 also lets you specify more than one organization ID in your request. To do so, include a comma-separated list of organization IDs in the `organizationId` filter of your request document. For example, `"organizationId": ["org1", "org2", "org3"]`.
 
@@ -894,8 +889,8 @@ Body:
 
 API version 2.0 differs from version 1.0 in the following ways:
 
-- The `filter` section now has a `keys` field instead of a `dimensions` field. The `keys` field works like the `dimensions` field in version 1.0. You can specify the keys in any order.
-- `filters` should no longer contain entry `organizationId`; `organizationId` should be put in "keys", e.g., `keys: ["organizationId", "siteId", "locationId"]` <!--KFM: Do we mean it's optional? Or is it now unsupported? -->
+- The `filters` section now has a `keys` field instead of a `dimensions` field. The `keys` field works like the `dimensions` field in version 1.0, but can now also include `organizationId`. You can specify the keys in any order.
+- The `filters` section no longer supports the `organizationId` field. Instead, you can include `organizationId` among the dimensions in the `keys` field (for example, `keys: ["organizationId", "siteId", "locationId"]`) and define organization ID values at the matching position in the `values` field (for example, `values: ["SCM_IV", "iv_contoso_site_1", "iv_contoso_location_1"]`).
 
 Other fields are identical to API version 1.0.
 
