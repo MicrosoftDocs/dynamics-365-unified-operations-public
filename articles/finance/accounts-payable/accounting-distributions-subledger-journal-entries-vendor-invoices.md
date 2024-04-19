@@ -4,7 +4,7 @@
 title: Accounting distributions and journal entries for vendor invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: sunfzam
-ms.date: 12/15/2023
+ms.date: 04/15/2024
 ms.topic: article
 # optional metadata
 
@@ -238,7 +238,10 @@ Accounting distributions for taxes cannot be created until taxes are calculated.
 -   Post the vendor invoice.
 
 ## Post document with distribution process splitting
-When processing long invoice documents, the memory usage can be optimized by activating the batch processing feature by navigating to the **Pending vendor invoice list form**, selecting **Process > Setup > Batch**. Once the invoice posting is initiated by clicking the **"Post"** button in the current form, the batch job **"Post document with distribution process splitting"** will be triggered. This process is only enabled when the "Enable vendor invoice posting to split distribution steps" feature is activated.
+When processing long invoice documents, the memory usage can be optimized by activating the **Batch processing** feature. 
+1. To enable this feature, go to **Pending vendor invoice list**.
+2. Select **Process > Setup > Batch**.
+3. After clicking **"Post"**, the **"Post document with distribution process splitting"** post job is triggered. This process is enabled when the **Enable vendor invoice posting to split distribution steps** feature is activated.
 
 ## Subledger journals for vendor invoices
 Before you post a vendor invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts. This view of the full accounting entry is called a subledger journal. 
