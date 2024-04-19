@@ -71,8 +71,6 @@ The following blogs provide information about Dynamics 365 Supply Chain Manageme
 - [Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/)
 - [Dynamics AX Manufacturing R&D Team Blog (archive)](/archive/blogs/axmfg/)
 
-There are many articles about manufacturing and supply chain management on the  and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
-
 ## eLearning courses
 
 For online courses and training, check out [Dynamics 365 Supply Chain Management](/training/dynamics365/scm).
