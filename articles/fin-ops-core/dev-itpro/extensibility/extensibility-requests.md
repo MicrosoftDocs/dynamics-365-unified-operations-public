@@ -1,11 +1,11 @@
 ---
 title: Extensibility requests
 description: Learn about how to file a request for additional extension points for Finance and Operations to prepare you for building solutions using extensions.
-author: FrankDahl
-ms.author: fdahl
+author: dgorn
+ms.author: dgornfdahl
 ms.topic: article
-ms.date: 06/02/2018
-ms.reviewer: josaw
+ms.date: 04/19/2024
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-07-01
