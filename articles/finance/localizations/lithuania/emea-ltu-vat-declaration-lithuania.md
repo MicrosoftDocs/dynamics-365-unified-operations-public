@@ -19,17 +19,18 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and generate a value-added tax (VAT) declaration for Lithuania in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel.
+This article describes how to set up and generate a value-added tax (VAT) declaration for Lithuania in the XML format and how to preview it in Microsoft Excel.
 
-The VAT declaration feature for Lithuania supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database. For each version of Finance that's listed in the following table, these capabilities are supported as of the specified build number.
+The VAT declaration feature for Lithuania supports filing a VAT return for companies with [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database.
 
 ## VAT declaration overview
 
 To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of operation that's subject to reporting in the VAT declaration for Lithuania. 
 Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate available sales tax transaction attributes 
 (sales tax code, tax classifier) with the lookup result of the **Report field lookup** lookup field. 
-In the following table, the "Lookup result" column shows the lookup result that's preconfigured for a specific VAT declaration field (tag) in the VAT declaration format. 
-Use this information to correctly associate tax transaction attributes with the lookup result and then with the field (tag) of the VAT declaration.
+In the following table, the "Lookup result" column shows the lookup result that's preconfigured for a specific VAT declaration field in the VAT declaration format. 
+Use this information to correctly associate tax transaction attributes with the lookup result and then with the field of the VAT declaration.
+
 
 
 
