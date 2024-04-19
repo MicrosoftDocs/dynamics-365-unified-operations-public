@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Accounting distributions are used to define how an amount will be accounted for, how the expense, tax, or charges are accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
+Accounting distributions are used to define how an amount, the expense, tax, or charges are accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized has one or more accounting distributions. 
 
 ## Accounting distributions 
 
@@ -40,7 +40,7 @@ You can use the following buttons in the Vendor invoice page to view, and possib
 
 If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that's not stocked. If the vendor invoice line doesn't reference a purchase order line, you can delete an accounting distribution. You can't split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you can't change the amounts or percentages.
 > [!NOTE]                                                                                                                                 
-> If the parent line contains an item that's not stocked and the accounting distributions are split, the child line is automatically split to match the financial dimensions of the parent line. The accounting distributions for the child line can't be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
+> If the parent line contains an item that's not stocked and the accounting distributions are split, the child line is automatically split to match the financial dimensions of the parent line. The accounting distributions for the child line can't be additionally split or deleted. Depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
 
 ## Distributing amounts
 When you enter a vendor invoice, each amount is distributed as follows.
@@ -260,7 +260,7 @@ The following situations use the original posting process:
 - Invoice posting with budget control enabled
 - Project invoice posting
 - PO/invoice with Terms of payment of Cash 
-- Invoice posting with AP parameter auto-settlement enabled 
+- Invoice posting with Accounts payable parameter auto-settlement enabled 
 
 
 
