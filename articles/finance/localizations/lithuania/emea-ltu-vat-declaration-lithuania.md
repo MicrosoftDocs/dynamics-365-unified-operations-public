@@ -119,6 +119,72 @@ Follow these steps to define which of the available sales tax transaction attrib
 7. Select the **VAT declaration Excel (LT)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (LT)**.
 8. In the **State** field, select **Completed**.
 
+### <a name="setup-preview"></a>Set up the VAT reporting format to preview amounts in Excel
+
+1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
+2. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and select the tax authority.
+3. In the **Report layout** field, select **Default**.
+4. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+5. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (EE)** ER format.
+
+This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
+
+If you're configuring the VAT declaration for Estonia in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
+
+1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **EST**, select the **VAT Declaration Excel (EE)** ER format.
+
+### <a name="setup-em"></a>Set up electronic messages
+
+Electronic messaging (EM) functionality is provided to maintain the different processes that are used in electronic reporting for different document types. For more information about electronic messages, see [Electronic messaging](../../general-ledger/electronic-messaging.md).
+
+#### <a name="import-em"></a>Download and import the data package that has example settings for electronic messages
+
+The process of setting up the **Electronic messages** functionality to generate the VAT declaration for Estonia in XML format and preview it in Excel has many steps. Because the data of some entities is used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. You can extend these settings or create your own.
+
+> [!NOTE]
+> Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
+
+1. In [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **EE VAT declaration - KMD - EM setup v.\#**. The downloaded file is named **EE VAT declaration - KMD - EM setup v.\#.zip**. Always download the latest version of the package that's available in Lifecycle Services.
+2. In Finance, in the **Data management** workspace, select **Import**.
+3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
+4. On the **Selected entities** FastTab, select **Add file**.
+5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
+6. Select **Close**.
+7. After the data entities are uploaded, on the Action Pane, select **Import**.
+8. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and validate the electronic message processing that you imported (**EE VAT declaration**).
+
+For more information about how you can use the data management framework, see [Data management](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+
+#### Configure electronic messages
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
+2. Select the line for **EE Populate VAT return records**, and then select **Edit query**.
+3. Use the filter to specify the settlement periods to include on the report.
+4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+
+### <a id="vat-id"></a>Set up the VAT registration number of the company that's reporting VAT
+
+To generate the VAT declaration, you must configure the tax registration number of your organization.
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. Select the legal entity, and then select **Registration IDs**.
+3. Select or create the address in Estonia, and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that's dedicated to Estonia and that uses the **VAT ID** registration category.
+5. In the **Registration number** field, enter the tax number.
+6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+
+For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
+
+Follow these steps to define the VAT registration number that EM uses during generation of the VAT declaration for Estonia.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **EE VAT declaration** processing.
+2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Estonia.
+3. Save your changes.
+
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **EE VAT declaration** processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category.
+
+
 ## Set up sales tax authorities
 
 To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. 
