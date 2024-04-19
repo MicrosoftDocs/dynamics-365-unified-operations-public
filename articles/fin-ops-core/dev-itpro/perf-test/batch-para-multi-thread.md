@@ -69,7 +69,7 @@ The journal posting process has the following changes when the top picking patte
 
  - Batch job history:
     -    Top picking posting mechanism splits the posting process into multiple parallel sub-tasks to improve the overall performance. If one of the sub-tasks fails, other tasks will continue to work, the overall status of the batch job will show as **Ended**.
-    -    To see the job history, go to batch job history, drill down on batch job Id, and **InfoLog** section. For more information, see [Create a batch job](../fin-ops/sysadmin/create-batch-job.md).
+    -    To see the job history, go to batch job history, drill down on batch job Id, and **InfoLog** section. For more information, see [Create a batch job](../../fin-ops/sysadmin/create-batch-job.md).
   
 
 ### Related classes and tables
