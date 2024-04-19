@@ -49,11 +49,11 @@ You can use a zip file to upload multiple statement files to Finance in a single
 
 A **Reconcile after import** option is available. When you set this option to **Yes**, the system automatically validates the bank statement, creates a new bank reconciliation and worksheet, and runs the Default matching rule set when the bank statement is uploaded. This functionality automates the process up to the point where transactions must be manually matched.
 
-You can also import your bank statements periodically from SharePoint folder by using Electronic Reporting. To makre use of this capability, users should adhere to the following steps:
+You can also import your bank statements periodically from SharePoint folder by using Electronic Reporting. To import bank statements, follow these steps:
 
--   Follow this article [**Configure data import from SharePoint**](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint?context=%2Fdynamics365%2Fcontext%2Ffinance) to complete SharePoint configuration for the bank statement format.
--   Enable feature **Automatic importing bank statement from SharePoint folder** in Feature management workspace.
--   Enable **Batch processing** during the bank statement import and configure **Recurrence** settings. This will allow for periodic importation of bank statements from the configured SharePoint folder in the statement format.
+-   Configure SharePoint for a bank statement format. For more information, see [Configure data import from SharePoint](../../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?context=%2Fdynamics365%2Fcontext%2Ffinance).
+-   In **Feature management**, enable the **Automatic importing bank statement from SharePoint folder** feature. 
+-   Enable **Batch processing** during the bank statement import and configure **Recurrence** settings. This allows bank statements to be imported from the configured SharePoint folder in the statement format.
 
 ## Import an electronic bank statement by using data entity
 
