@@ -37,7 +37,7 @@ The application lifecycle for an end-to-end solution using finance and operation
 
 ## Solution management
 
-Virtual entities for finance and operations don't exist in Dataverse until they are created. Virtual entities must be created inside a solution. The MicrosoftOperationsERPVE solution is used for this purpose. This solution will contain all the virtual entities that are created from an instance of finance and operations.
+Virtual entities for finance and operations don't exist in Dataverse until they are created. Virtual entities must be created inside a solution. The MicrosoftOperationsERPVE (Dynamics 365 ERP Virtual Entities) solution is used for this purpose. This solution will contain all the virtual entities that are created from an instance of finance and operations.
 
 MicrosoftOperationsERPVE is a [managed solution](/powerapps/developer/common-data-service/introduction-solutions). By definition, a managed solution can't be modified after it has been generated. However, MicrosoftOperationsERPVE is a managed solution that grants privileges to update the components (that is, virtual entities) that are inside it. Therefore, new virtual entities can be added to the solution as they are created, and existing virtual entities can be updated as required. Nevertheless, the privileges to modify the managed solution are available only to the platform itself. Users can't make changes directly to the solution.
 
@@ -50,9 +50,9 @@ When a solution that depends on MicrosoftOperationsERPVE is exported, placeholde
 
 The following list describes other solutions that finance and operations virtual entities require to work, and that must be available in the Dataverse environment:
 
-- **MicrosoftOperationsERPCatalog** – This solution provides a catalog of the available entities in a finance and operations instance. It also provides the connection that is used to set up a configuration. For more information, see the later sections of this article.
-- **MicrosoftOperationsVESupport** – This solution provides the virtual entity provider for finance and operations apps. The provider can communicate with finance and operations apps and Dataverse. For more information, see the next section.
-- **Dynamics365Company** – This solution adds the Company entity, which is referenced by all finance and operations entities that have a **PrimaryCompanyContext** metadata value.
+- **MicrosoftOperationsERPCatalog (Microsoft Operations ERP Catalog)** – This solution provides a catalog of the available entities in a finance and operations instance. It also provides the connection that is used to set up a configuration. For more information, see the later sections of this article.
+- **MicrosoftOperationsVESupport (Dynamics Operations Virtual Entity Support)** – This solution provides the virtual entity provider for finance and operations apps. The provider can communicate with finance and operations apps and Dataverse. For more information, see the next section.
+- **Dynamics365Company (Dynamics 365 Company)** – This solution adds the Company entity, which is referenced by all finance and operations entities that have a **PrimaryCompanyContext** metadata value.
 
 All these solutions must be present in an environment. Otherwise, virtual entities won't work with finance and operations apps. These solutions are packaged together to allow for easier portability across environments.
 
