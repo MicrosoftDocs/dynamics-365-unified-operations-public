@@ -32,15 +32,15 @@ Accounting distributions are used to define how an amount will be accounted for,
 ## Accounting distributions 
 
 You can use the following buttons in the Vendor invoice page to view, and possibly modify, the accounting distributions for each amount on the vendor invoice.
--   **Distribute amounts** – View and modify the accounting distributions for an individual line and any child lines, such as taxes or charges. You can view and modify the accounting distributions for the child line directly from the **Sales tax transactions** page or the **Charges transactions** page.
+-   **Distribute amounts** – View and modify the accounting distributions for an individual line and any child lines. You can view and modify the accounting distributions for the child line directly from the **Sales tax transactions** page or the **Charges transactions** page.
     -   Modify vendor invoice header amounts, such as charges or currency rounding amounts.
     -   Modify vendor invoice line amounts.
--   **View distributions** – View the accounting distributions for all lines on the document. You cannot modify the accounting distributions from this view.
+-   **View distributions** – View the accounting distributions for all lines on the document. You can't modify the accounting distributions from this view.
     -   View header and line amounts.
 
-If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that is not stocked. If the vendor invoice line does not reference a purchase order line, you can also delete an accounting distribution. You can't split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you cannot change the amounts or percentages.
+If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that's not stocked. If the vendor invoice line doesn't reference a purchase order line, you can delete an accounting distribution. You can't split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you can't change the amounts or percentages.
 > [!NOTE]                                                                                                                                 
-> If the parent line contains an item that's not stocked and the accounting distributions are split, the child line is automatically split to match the financial dimensions of the parent line. The accounting distributions for the child line cannot be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
+> If the parent line contains an item that's not stocked and the accounting distributions are split, the child line is automatically split to match the financial dimensions of the parent line. The accounting distributions for the child line can't be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
 
 ## Distributing amounts
 When you enter a vendor invoice, each amount is distributed as follows.
@@ -244,9 +244,9 @@ When processing long invoice documents, memory usage can be optimized by activat
 3. After clicking **"Post"**, the **"Post document with distribution process splitting"** post job is triggered. This process is enabled when the **Enable vendor invoice posting to split distribution steps** feature is activated.
 
 ## Subledger journals for vendor invoices
-Before you post a vendor invoice, view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts. This view of the full accounting entry is called a subledger journal. 
+Before you post a vendor invoice, view the full accounting entry of the invoice, which includes debits, and credits, to verify that the invoice is being posted to the correct accounts. This view of the full accounting entry is called a subledger journal. 
 
-If the subledger journal entry is incorrect when you preview it before you journalize the vendor invoice, you can't modify the subledger journal entry. Instead, modify the accounting distributions or the posting profile. The accounting distributions are used to define one side of the accounting entry, the debit or the credit. The offsetting subledger journal account entry is created by using the posting profiles, such as from the vendor account or tax.
+If the subledger journal entry is incorrect when you preview it before you journalize the vendor invoice, you can't modify the subledger journal entry. Instead, modify the accounting distributions or the posting profile. The accounting distributions are used to define one side of the accounting entry, the debit, or the credit. The offsetting subledger journal account entry is created by using the posting profiles, such as from the vendor account or tax.
 
 ## Split vendor invoice posting 
 
