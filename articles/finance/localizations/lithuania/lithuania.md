@@ -31,12 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides links to documentation resources for Lithuania. 
 
-- [EU sales list for Lithuania](emea-ltu-eu-sales-list.md)
 - [Fixed asset repair statement](emea-ltu-fixed-asset-repair-statement.md)
 - [Generate a fixed asset transfer between warehouses document](lt-00003-fixed-asset-transfer.md)
 - [Invoice and packing slip numbering](../europe/emea-invoices-packing-slips-numbering.md)
-- [VAT statement details](emea-ltu-vat-statement-details.md)
+- [EU sales list for Lithuania](emea-ltu-eu-sales-list.md)
 - [Lithuanian Intrastat](emea-ltu-intrastat.md)
+- [VAT declaration](emea-ltu-vat-declaration-lithuania.md)
 - [i.SAF reporting](emea-ltu-isaf.md)
 - [Standard Audit File for Tax (SAF-T)](emea-ltu-saf-t.md)
 
