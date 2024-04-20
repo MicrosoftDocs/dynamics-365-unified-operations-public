@@ -124,11 +124,11 @@ Follow these steps to define which of the available sales tax transaction attrib
 
     | Field | Description |
     |---|---|
-    | Lookup result | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article. |
-    | Tax code | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
-    | Transaction classifier | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value.</p> |
-    | Item sales tax group | Use the **Item sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
-    | Sales tax group | Use the **Sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
+    | **Lookup result** | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article. |
+    | **Tax code** | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
+    | **Transaction classifier** | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value.</p> |
+    | **Item sales tax group** | Use the **Item sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
+    | **Sales tax group** | Use the **Sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
 
     > [!NOTE]
     > Associate all sales tax codes (or combinations of a sales tax code, tax classifier, item sales tax group, and sales tax group) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
@@ -212,9 +212,9 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
     | Field | Description |
     |---|---|
-    | From date | Select the start date of the reporting period. |
-    | Settlement period | Select the settlement period. |
-    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
+    | **From date** | Select the start date of the reporting period. |
+    | **Settlement period** | Select the settlement period. |
+    | **Sales tax payment version** | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
 
 3. Select **OK**, and then, in the next dialog box, set the following fields.
 
@@ -230,8 +230,7 @@ If the VAT registration number isn't specified in the **Tax registration number*
     | **Submitter person** | Select a person who will submit the VAT declaration. |
 
 4. Specify parameters of the batch processing on the **Run in the background** FastTab and enable the **Batch processing** checkbox to run the report in batch.
-5. Select **OK**, and review the Excel report.
-6. When the report is executed in batch, generated file can be found on **Organization administration** > **Electronic reporting** > **Electronic reporting jobs** page as attachment to the batch job.
+5. Select **OK**, and review the Excel report. When the report is executed in batch, generated file can be found on **Organization administration** > **Electronic reporting** > **Electronic reporting jobs** page as attachment to the batch job.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
