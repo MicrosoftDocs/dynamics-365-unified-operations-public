@@ -104,6 +104,8 @@ Open the **Electronic reporting** workspace, and import the latest versions of t
 - VAT Declaration XML (EE)
 - VAT Declaration Excel (EE)
 
+Import **Tax declaration model mapping** under **Tax declaration model** and mark it **Default for model mapping**.
+
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ### <a name="set-up"></a>Set up application-specific parameters for VAT declaration fields
