@@ -229,7 +229,9 @@ If the VAT registration number isn't specified in the **Tax registration number*
     | Declaration period type | Select the declaration period type in the list: **Normal period** (the default value) or **Bankruptcy period**. |
     | Submitter person | Select a person who will submit the VAT declaration. |
 
-4. Select **OK**, and review the Excel report.
+4. Specify parameters of the batch processing on the **Run in the background** FastTab and enable the **Batch processing** checkbox to run the report in batch.
+5. Select **OK**, and review the Excel report.
+6. When the report is executed in batch, generated file can be found on **Organization administration** > **Electronic reporting** > **Electronic reporting jobs** page as attachment to the batch job.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
