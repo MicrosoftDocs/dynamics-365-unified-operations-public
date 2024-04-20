@@ -220,14 +220,14 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
     | Field | Description |
     |---|---|
-    | Report composition | <p>Select one or more of the following values in the lookup list to specify which parts the report must include:</p><ul><li>Declaration body</li><li>Sales Annex - Part A</li><li>Purchases Annex - Part B</li></ul> |
-    | Summarize sales per partner | Select this checkbox to report information in Sales annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part A, and amounts are summarized per partner. |
-    | Summarize purchases per partner | Select this checkbox to report information in Purchase annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part B, and amounts are summarized per partner. |
-    | Number of cars used for business purposes | Specify the number of cars that were acquired solely (100 percent) for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
-    | Number of cars used partially for business purposes | Specify the number of cars that were acquired partially for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
-    | Invoice threshold | Specify the threshold to apply for reporting invoices in Sales annexes and Purchase annexes. Invoices where the amounts are below the specified threshold aren't included in the annexes. |
-    | Declaration period type | Select the declaration period type in the list: **Normal period** (the default value) or **Bankruptcy period**. |
-    | Submitter person | Select a person who will submit the VAT declaration. |
+    | **Report composition** | <p>Select one or more of the following values in the lookup list to specify which parts the report must include:</p><ul><li>Declaration body</li><li>Sales Annex - Part A</li><li>Purchases Annex - Part B</li></ul> |
+    | **Summarize sales per partner** | Select this checkbox to report information in Sales annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part A, and amounts are summarized per partner. |
+    | **Summarize purchases per partner** | Select this checkbox to report information in Purchase annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part B, and amounts are summarized per partner. |
+    | **Number of cars used for business purposes** | Specify the number of cars that were acquired solely (100 percent) for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
+    | **Number of cars used partially for business purposes** | Specify the number of cars that were acquired partially for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
+    | **Invoice threshold** | Specify the threshold to apply for reporting invoices in Sales annexes and Purchase annexes. Invoices where the amounts are below the specified threshold aren't included in the annexes. |
+    | **Declaration period type** | Select the declaration period type in the list: **Normal period** (the default value) or **Bankruptcy period**. |
+    | **Submitter person** | Select a person who will submit the VAT declaration. |
 
 4. Specify parameters of the batch processing on the **Run in the background** FastTab and enable the **Batch processing** checkbox to run the report in batch.
 5. Select **OK**, and review the Excel report.
@@ -238,7 +238,7 @@ If the VAT registration number isn't specified in the **Tax registration number*
 Sales tax payment transactions are produced by the [Settle and post sales tax](../../general-ledger/tasks/create-sales-tax-payment.md) job procedure that settles sales tax balances in the sales tax accounts and offsets them to the sales tax settlement account for a given period. After the **Settle and post sales tax** job procedure is completed for an interval of the sales tax settlement period, you can generate the VAT declaration in Excel from the **Sales tax payments** page.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
-2. Select **Print report**, and then select **OK**.
+2. Select **Print report**, specify report's parameters as described in [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) and then select **OK**.
 3. Review the Excel file that's generated for the selected sales tax payment line.
 
     > [!NOTE]
