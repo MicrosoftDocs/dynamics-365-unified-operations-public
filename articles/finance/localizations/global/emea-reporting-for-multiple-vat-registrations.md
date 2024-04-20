@@ -30,6 +30,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [France](../france/emea-reporting-multiple-vat-registrations-fr.md)
 - [Germany](../germany/emea-reporting-multiple-vat-registrations-de.md)
 - [Italy](../italy/emea-reporting-multiple-vat-registrations-it.md)
+- [Lithuania](../lithuania/emea-reporting-multiple-vat-registrations-lt.md)
 - [Netherlands](../netherlands/emea-reporting-multiple-vat-registrations-nl.md)
 - [Norway](../norway/emea-reporting-multiple-vat-registrations-no.md)
 - [Poland](../poland/emea-reporting-multiple-vat-registrations-pl.md)
@@ -290,6 +291,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](../poland/emea-pol-vat-declaration.md) |
     | 10.0.36 | Estonia  | Tax declaration model.version.150<br>Tax declaration model mapping.version.150.317<br>VAT Declaration XML (EE).version.150.21<br>VAT Declaration Excel (EE).version.150.21.17 | [VAT declaration (Estonia)](../estonia/emea-est-vat-declaration.md) |
     | 10.0.39 | Italy  | Tax declaration model.version.153<br>Tax declaration model mapping (IT).version.153.320.4<br>VAT Declaration PDF (IT).version.153.19 | [Configure and report Italian sales tax books](../italy/emea-ita-sales-tax-books.md) |
+    | 10.0.41 | Lithuania  | Tax declaration model.version.156<br>Tax declaration model mapping.version.156.326<br>VAT Declaration XML (LT).version.156.5<br>VAT Declaration Excel (LT).version.156.5 | [Configure and report Italian sales tax books](../lithuania/emea-ltu-vat-declaration-lithuania.md) |
 
     > [!NOTE]
     > The VAT declaration of Poland (JPK-V7) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7, VDEK)](../poland/emea-pol-vdek.md).
