@@ -34,13 +34,13 @@ The following illustration shows how the flow works for each process.
 
 A blind return is a return where no RMA order or return details record exists in advance, and where no original sales order or shipment must be specified during receiving. During the *Return item receiving* process, workers must use the mobile app to identify and confirm the following information:
 
-- **Customer account/Source system** – The source who is returning the item. *Customer account* is used for *Sales return orders* and *Source system* is used when using [*Inbound shipment orders*](wms-only-mode-using.md#inbound-shipment-orders) as part of the [Warehouse management only mode](wms-only-mode-overview.md) process.
+- **Customer account or Source system** – The source who is returning the item. *Customer account* is used for sales return orders and *source system* is used when using [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders) as part of the [Warehouse management only mode](wms-only-mode-overview.md) process.
 - **Item number and quantity** – The items that are being returned and the quantity that's being returned for each item.
 - **License plate ID** – The license plate of the location where the incoming items are stored after they're received.
 - **Disposition code** – Depending on the setup of the mobile device menu item, workers might be able to select a disposition code to specify what should be done with the returned products. If this option isn't shown in the app during receiving, a Supply Chain Management user must enter a disposition code when they complete the mixed license plate.
 
 > [!NOTE]
-> When running the return process for [*Inbound shipment orders*](wms-only-mode-using.md#inbound-shipment-orders) you must as well define [Source system disposition codes](#source-system-disposition-codes).
+> When running the return process for [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders), you must also define [source system disposition codes](#source-system-disposition-codes).
 
 ### <a name="return-details-process"></a> Return details process
 
@@ -81,8 +81,8 @@ Before you can use blind returns and/or automatic generation of return details d
 
     For more information about how to set up number sequences for these purposes, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
-> [!NOTE]
-> When running the return process for [*Inbound shipment orders*](wms-only-mode-using.md#inbound-shipment-orders) you must active the **Enable returns process** parameter on the individual [*Source systems*](wms-only-mode-setup.md#source-systems) and make sure to assign the *Number sequence code* using the the [*Inbound shipment orders*](wms-only-mode-using.md#inbound-shipment-orders).
+    > [!NOTE]
+    > When running the return process for [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders) you must turn on the **Enable returns process** option for each relevant [source system](wms-only-mode-setup.md#source-systems) and assign the **Number sequence code** to use for generating order numbers for [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
 
 1. If you plan to use the *Return details* process, on the **Loads** tab, set the **Enable sales load line picking route** option to *Yes*. This setting enables load lines to be linked to sales line inventory transactions. The linking is done at the shipment level. This option uses the *Load line inventory pick* number sequence when work is completed and containers are closed.
 1. On the **General** tab, on the **Returns** FastTab, set the following options:
@@ -115,8 +115,7 @@ For more information about mobile disposition codes and how to set them up, see 
 
 #### <a name="source-system-disposition-codes"></a> Source system disposition codes
 
-The *Source system disposition codes* are used when processing [*Inbound shipment orders*](wms-only-mode-using.md#inbound-shipment-orders) as part of the [Warehouse management only mode](wms-only-mode-overview.md).
-For this process you must specify the [*Source systems*](wms-only-mode-setup.md#source-systems) identifier for the association between the internal disposition code and the source system.
+*Source system disposition codes* are used when processing [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders) as part of the [Warehouse management only mode](wms-only-mode-overview.md) process. If you are using Warehouse management only mode, you must specify the [source systems](wms-only-mode-setup.md#source-systems) identifier for the association between the internal disposition code and the source system.
 
 ### Set up return item policies
 
