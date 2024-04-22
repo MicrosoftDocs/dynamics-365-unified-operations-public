@@ -3,7 +3,7 @@
  
 title: Process collection letters example
 description: This article goes through an example that shows the process of creating, printing, and posting collection letters. 
-author: JodiChristiansen
+author: sunitacharya
 ms.date: 03/23/2023
 ms.topic: how-to 
  
@@ -17,7 +17,7 @@ ms.reviewer: twheeloc
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jchrist
+ms.author: sunitacharya
 ms.search.validFrom: 2021-02-03 
 ms.dyn365.ops.version: 10.0.16
 

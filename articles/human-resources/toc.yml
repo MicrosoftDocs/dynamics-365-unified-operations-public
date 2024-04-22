@@ -897,8 +897,6 @@ items:
         href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Security for virtual table integrations  
         href: hr-security-config.md
-      - name: Configure integration with Finance
-        href: hr-admin-integration-finance.md
       - name: Human resources to resource integration
         href: hr-admin-integration-hr-rm.md
       - name: Create links from Human resources to another environment
