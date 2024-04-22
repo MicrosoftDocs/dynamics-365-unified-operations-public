@@ -157,7 +157,7 @@ When you generate the **Vendor open transactions** report, the following default
 You can use the filters under the **Record to include** field to further limit the transaction data that is included on the report.
 
 
-### Invoice number length extension
+## Invoice number length extension
 
 With Dynamics 365 Finance version 10.0.40 or higher, you can enable the feature **"Extend the length of invoice number for vendor invoice"** to extend the invoice number from 20 characters to 50 characters in vendor invoice and invoice journal. Before enabling the feature, please create the LCS tickets to open the flight **EnableEdtStringDatabaseStringLengthAttributeInComputation**.
 
