@@ -78,4 +78,4 @@ Yes. Users can upload multiple invoices (a maximum of 20 files) simultaneously.
 
 ### What languages of invoices are supported?
 
-For a complete list of supported languages, see the [Document intelligence page](/azure/ai-services/document-intelligence/concept-invoice?view=doc-intel-3.1.0.md#supported-languages-and-locales).
+For a complete list of supported languages, see the [Document intelligence page](/azure/ai-services/document-intelligence/concept-invoice).
