@@ -18,7 +18,7 @@ ms.reviewer: twheeloc
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 ms.search.region: USA
 ms.search.industry: Public sector
-ms.author: leizi2015
+ms.author: raynezou
 ms.search.validFrom: 2011-01-14
 ms.dyn365.ops.version: AX 10.0.17
 
