@@ -3,7 +3,7 @@
 
 title: Online financial consolidations
 description: This article describes online financial consolidations in General ledger.
-author: aprilolson
+author: jchrist
 ms.date: 12/07/2022
 ms.topic: article
 # optional metadata
@@ -17,7 +17,7 @@ ms.reviewer: twheeloc
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: jchrist
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 
