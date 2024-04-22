@@ -6,8 +6,6 @@ description: This article provides information about the Arrival overview featur
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 
@@ -17,7 +15,7 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: ["274363"]
+ms.custom:
 ms.collection: get-started
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global

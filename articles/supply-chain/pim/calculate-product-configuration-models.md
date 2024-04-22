@@ -6,8 +6,6 @@ description: This article describes calculations for product configuration model
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

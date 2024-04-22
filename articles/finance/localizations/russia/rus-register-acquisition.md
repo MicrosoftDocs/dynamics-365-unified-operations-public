@@ -4,10 +4,8 @@ description: This article walks you through registering fixed assets acquisition
 author: AdamTrukawka
 ms.date: 10/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2018-10-28

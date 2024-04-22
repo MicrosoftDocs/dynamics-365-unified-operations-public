@@ -6,15 +6,12 @@ description: This article explains how to set up the FTA Tax Audit File (FAF) in
 author: liza-golub
 ms.date: 06/07/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: United Arab Emirates (UAE)

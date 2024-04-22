@@ -6,9 +6,6 @@ description: This article points to resources that will help you in your organiz
 author: sericks007
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -157,7 +157,7 @@ Follow these steps to set up Intune to support managed configuration for Windows
     - **OMA-URI** – Enter the following value:
 
         ```txt
-        ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson
+        ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson
         ```
 
     - **Data type** – Select *String*.

@@ -6,9 +6,6 @@ description: This article provides information about using allocation terms on a
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, AllocationTerms

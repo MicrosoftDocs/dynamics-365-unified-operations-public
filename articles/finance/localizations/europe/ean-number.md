@@ -4,10 +4,8 @@ description: This article provides information about European article numbering 
 author: kfend
 ms.date: 12/07/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30

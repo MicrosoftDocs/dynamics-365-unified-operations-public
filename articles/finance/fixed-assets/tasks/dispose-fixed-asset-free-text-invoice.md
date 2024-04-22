@@ -6,8 +6,6 @@ description: This article explains how to acquire a fixed asset using the acquis
 author: moaamer
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,8 +6,6 @@ description: You can create service orders for one service agreement or for seve
 author: sorenva
 ms.date: 01/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

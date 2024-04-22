@@ -6,9 +6,6 @@ description: This article describes how to set up the parameters for multiple el
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

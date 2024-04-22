@@ -6,8 +6,6 @@ ms.date: 02/09/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

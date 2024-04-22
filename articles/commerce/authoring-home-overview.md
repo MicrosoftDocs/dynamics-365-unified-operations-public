@@ -4,8 +4,6 @@ description: This article provides an overview of the Microsoft Dynamics 365 Com
 author: bicyclingfool
 ms.date: 02/13/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -101,7 +99,7 @@ To create a new website, follow these steps.
 1. Select **Next**.
 1. On the **Locale defaults** page, select the default locale for each channel, and then select **Next**.
 1. On the **Review and finish** page, review the configuration, and make any changes that are required.
-1. Select **Save and publish**. The new website is created.   
+1. Select **Save and publish**. The new website is created.  
 
 > [!NOTE]
 > Creation of a new website can take up to 60 seconds. After the process is completed, a notification appears in the notification area. Additionally, the website appears in the site list and has the site name that you entered.

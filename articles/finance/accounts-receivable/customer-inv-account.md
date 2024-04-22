@@ -4,8 +4,6 @@ description: This article describes customer and invoice accounts in Microsoft D
 author: Prabhatb-ship-it
 ms.date: 02/20/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

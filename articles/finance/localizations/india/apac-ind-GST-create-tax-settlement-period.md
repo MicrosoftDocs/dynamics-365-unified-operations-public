@@ -4,10 +4,8 @@ description: This article explains how to create a tax settlement period. This t
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: India
 ms.author: wangchen
 ms.search.validFrom: 2019-06-01

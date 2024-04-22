@@ -6,8 +6,6 @@ description: This article explains how to use the formula designer to analyze an
 author: johanhoffmann 
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

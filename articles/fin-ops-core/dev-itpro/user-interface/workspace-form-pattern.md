@@ -4,8 +4,6 @@ description: This article discusses workspace form patterns. Workspaces are the 
 author: jasongre
 ms.date: 03/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

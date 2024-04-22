@@ -4,8 +4,6 @@ description: This article presents an overview of channels in Microsoft Dynamics
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

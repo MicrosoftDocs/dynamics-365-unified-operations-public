@@ -6,8 +6,6 @@ description: Cycle count plans guide the actual counting operations. You can req
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

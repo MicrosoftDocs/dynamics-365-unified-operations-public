@@ -6,8 +6,6 @@ description: This article describes the steps for preparing to maintain costs fo
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

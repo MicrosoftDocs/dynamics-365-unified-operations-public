@@ -4,10 +4,8 @@ description: This article provides information about how to generate the Declara
 author: AdamTrukawka
 ms.date: 07/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

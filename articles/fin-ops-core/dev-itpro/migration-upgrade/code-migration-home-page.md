@@ -4,10 +4,8 @@ description: This article provides links to topics about code migration.
 author: jasongre
 ms.date: 03/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28

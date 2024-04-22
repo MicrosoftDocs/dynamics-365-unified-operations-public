@@ -6,8 +6,6 @@ description: This guide shows how to create an accessorial assignment, carrier a
 author: Weijiesa
 ms.date: 11/14/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

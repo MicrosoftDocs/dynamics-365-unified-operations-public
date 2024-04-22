@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 03/04/2024
+ms.date: 04/02/2024
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -30,6 +30,48 @@ Release notes for March 2024 releases of [Dual-write core solution](https://apps
 | Bug | 3833504 | Critical bug fix for asynchronous processing with Dual-write. | General availability |
 | Bug | 3801381 | Bug fixes and code enhancements for the data synchronization pipeline between finance and operations apps and Dataverse. | General availability | 
 | Bug | 25500975 | <ul><li>Optimizing fetch for non-relational database tables to improve data sync performance between finance and operations apps and Dataverse.</li><li> Correcting column values for msdyn_datasyncexecutionsummary_elastic, sourceType, update count, and error count.</li></ul>  | General availability |
+
+### Global address book
+
+The March regular release of Dual-write GAB solution 3.5.2.52 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Sales order page enhancements | Restrict the creation of ship-to and bill-to addresses by locking the address fields on the sales order page. Customers are expected to select these addresses from the existing postal address entity by using the **Choose ship/bill to address** lookup fields that are attached to the **Order** page. A new shipping/billing address can be created by using the quick create new postal address page option in the same lookup field. | General availability |
+| **Postal address** tab on accounts and contacts pages | Add the postal address component as a new tab on the **Account and contact** page. The **Customer address** tab is kept as is. The postal address entity that's introduced in Dual-write GAB solutions has no customization restrictions. Customers can create lookups to custom entities. They can also create country/region, county, and state/province entities, implement lookup filtering, and easily validate addresses in Dataverse. Customers who want to continue to use the customer address for address input can hide the existing **Address** tab or the new **Postal address** tab. | General availability |
+| Xmultiple for performance | Optimize the existing logic in Dataverse that creates customer addresses during the initial/live synchronization of customer records from postal addresses. This optimization increases the synchronization record capacity and prevents plugin time-outs, especially when a large number of addresses are associated with customers. | General availability |
+| Bug fix | Enable postal address records to be created from the **Postal address** main page. Previously, postal addresses could be created only by using the postal address quick create page or the quick view page that's attached to the **Postal address** tab on the party page. | General availability |
+| Enhancement | Restrict customization of Microsoft global address book (GAB) business rules to help prevent data corruption. | General availability |
+| Bug fix | Fix an issue with the creation of a contact via the marketing app page. Because of a depth limitation, only the party was created. The plugin couldn't create the corresponding contact entity record. | General availability |
+| Bug fix | Fix the update of postal addresses when the corresponding customer address is updated and the name is longer than 60 characters. The **Postal address name** field has a limit of 60 characters. This limit is now validated and truncated via GAB plugins. | General availability |
+
+#### GAB solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.2.35 | 3.5.2.52 |
+| Dynamics365GABExtended | Yes | 3.5.2.35 | 3.5.2.52 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.2.35| 3.5.2.52 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.2.35 | 3.5.2.52 |
+| Dynamics365GABPartyCommon | Yes | 3.5.2.35 | 3.5.2.52 |
+
+### Global address book
+The March release of Dual-write GAB solution 3.5.2.35 contains the following bug fixes.
+
+| Feature | Description | Status |
+| ---|---|---|
+|Bug fix |Dataverse solutions must be CAB based by August 21st.|	General availability|
+|Bug fix |Dual-write Global address book plugin county isn't propagated properly in CE|	General availability|
+
+#### GAB solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.2.2 | 3.5.2.35 |
+| Dynamics365GABExtended | Yes | 3.5.2.2 | 3.5.2.35 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.2.2| 3.5.2.35 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.2.2 | 3.5.2.35 |
+| Dynamics365GABPartyCommon | Yes | 3.5.2.2 | 3.5.2.35 |
 
 ## January 2024
 Release notes for January 2024 releases of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>

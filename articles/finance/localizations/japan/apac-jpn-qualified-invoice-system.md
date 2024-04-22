@@ -6,16 +6,13 @@ description: This article provides information about the Qualified Invoice Syste
 author: ankviklis
 ms.date: 08/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 ms.search.region: Japan

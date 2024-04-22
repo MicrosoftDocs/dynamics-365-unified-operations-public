@@ -4,10 +4,8 @@ description: This article explains how to configure and submit vendor electronic
 author: mrolecki
 ms.date: 09/22/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: mrolecki
 ms.search.validFrom: 2021-12-01

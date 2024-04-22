@@ -6,16 +6,13 @@ description: This article lists the features that are included in the platform u
 author: sericks007
 ms.date: 12/08/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:

@@ -6,9 +6,6 @@ description: This article describes the differences between the deferral posting
 author: JodiChristiansen
 ms.date: 6/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

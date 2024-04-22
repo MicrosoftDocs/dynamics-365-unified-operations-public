@@ -4,10 +4,8 @@ description: This article provides information about foreign currency revaluatio
 author: mrolecki
 ms.date: 09/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: mrolecki
 ms.search.validFrom: 2018-10-31

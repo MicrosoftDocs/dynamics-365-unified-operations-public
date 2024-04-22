@@ -6,9 +6,6 @@ description: This article describes capabilities in Microsoft Dynamics 365 Finan
 author: kweekley
 ms.topic: article
 ms.date: 6/13/2023
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable

@@ -4,10 +4,8 @@ description: This article provides information about purchase duties in Austria.
 author: AdamTrukawka
 ms.date: 07/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Austria
 ms.author: atrukawk
 ms.search.validFrom: 2016-05-31

@@ -4,10 +4,8 @@ description: This article describes how to handle notification and registration 
 author: mrolecki
 ms.date: 12/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2023-12-30

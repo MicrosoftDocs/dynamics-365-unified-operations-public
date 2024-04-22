@@ -6,16 +6,13 @@ description: Lifecycle Services provides methodologies that you can use to ensur
 author: angelmarshall
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 ms.search.region: Global

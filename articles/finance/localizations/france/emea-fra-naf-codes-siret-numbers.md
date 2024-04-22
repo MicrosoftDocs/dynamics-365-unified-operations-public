@@ -6,15 +6,12 @@ description: This article explains the purpose and usage of Nomenclature des Act
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CompanyNAFCode
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: France
 # ms.search.industry: 

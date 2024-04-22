@@ -6,9 +6,6 @@ description: This article describes the parameters that affect automated collect
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  CustomerCollectionManagerWorkspace

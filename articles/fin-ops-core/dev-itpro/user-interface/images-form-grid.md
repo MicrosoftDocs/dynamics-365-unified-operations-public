@@ -4,8 +4,6 @@ description: This article describes the steps for displaying images on a page or
 author: jasongre
 ms.date: 07/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

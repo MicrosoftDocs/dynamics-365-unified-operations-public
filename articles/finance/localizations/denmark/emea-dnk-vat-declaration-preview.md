@@ -5,7 +5,7 @@ author: liza-golub
 ms.date: 09/01/2022
 ms.topic: article
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: egolub
 ms.search.validFrom: 

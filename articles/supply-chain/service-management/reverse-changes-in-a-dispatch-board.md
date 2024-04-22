@@ -6,8 +6,6 @@ description: This article describes how to reverse unsaved modifications that yo
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

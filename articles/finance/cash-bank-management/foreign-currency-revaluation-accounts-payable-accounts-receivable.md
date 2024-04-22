@@ -6,9 +6,6 @@ description: This article provides information about the foreign currency revalu
 author: ericwangchen
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment

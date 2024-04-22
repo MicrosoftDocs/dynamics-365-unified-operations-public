@@ -4,10 +4,8 @@ description: This article explains how to post a fiscal document received from t
 author: AdamTrukawka
 ms.date: 06/24/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-06-30

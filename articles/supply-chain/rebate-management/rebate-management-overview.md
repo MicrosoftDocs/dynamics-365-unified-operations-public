@@ -6,8 +6,6 @@ description: This article provides an overview of the Rebate management module f
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

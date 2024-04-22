@@ -4,8 +4,6 @@ description: This article describes how to limit a user's access to a workspace.
 author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

@@ -1,17 +1,17 @@
 ---
 title: Use application context with Copilot
-description: This article provides guidance about how to use application context with Copilot.
+description: Learn about how to use application context with Copilot, including an outline of default contextual variables, navigation context, page context, and user context.
 author: jaredha
 ms.author: jaredha
-ms.reviewer: johnmichalak
-ms.search.form:
 ms.topic: how-to
 ms.date: 02/08/2024
-audience: Developer
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
+audience: Developer
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Use application context with Copilot

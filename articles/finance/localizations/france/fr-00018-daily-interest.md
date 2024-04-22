@@ -6,15 +6,13 @@ description: Indicate the interest calculation on an invoice.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: SalesTableListPage, SalesEditLines   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France

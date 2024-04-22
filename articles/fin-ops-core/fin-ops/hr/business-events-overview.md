@@ -6,9 +6,6 @@ description: This article provides an overview of business events.
 author: twheeloc
 ms.date: 05/06/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace

@@ -6,9 +6,6 @@ description: Every two weeks, we provide a new release for Microsoft Dynamics 36
 author: twheeloc
 ms.date: 12/09/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace

@@ -6,9 +6,6 @@ description: Use the Data management workspace to create and manage data import 
 author: pnghub
 ms.date: 08/01/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

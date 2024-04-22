@@ -4,10 +4,8 @@ description: This article points to resources that will help you understand the 
 author: sericks007
 ms.date: 07/31/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad

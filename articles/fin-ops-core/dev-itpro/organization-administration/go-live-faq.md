@@ -6,15 +6,12 @@ description: This article lists frequently asked questions about how to go live 
 author: alejandra-cabrales
 ms.date: 06/22/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

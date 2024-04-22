@@ -6,9 +6,6 @@ description: This article describes the relationship between configuration keys 
 author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

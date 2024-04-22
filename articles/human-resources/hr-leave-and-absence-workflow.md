@@ -6,9 +6,6 @@ description: Create a Leave and absence request workflow to manage leave request
 author: twheeloc
 ms.date: 03/22/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

@@ -4,8 +4,6 @@ description: This article describes how to set or change your site's theme in Mi
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

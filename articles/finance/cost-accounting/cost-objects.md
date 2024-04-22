@@ -6,9 +6,6 @@ description: When you analyze costs, you use cost element dimensions to determin
 author: AndersGirke
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMDimensionMember, CAMCostObject

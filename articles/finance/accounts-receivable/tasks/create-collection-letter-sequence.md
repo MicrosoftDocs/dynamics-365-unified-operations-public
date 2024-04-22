@@ -6,8 +6,6 @@ description: Use this procedure to create a collection letter sequence.
 author: JodiChristiansen
 ms.date: 02/22/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

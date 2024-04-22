@@ -6,8 +6,6 @@ description: This article provides information about how to manage planned order
 author: t-benebo
 ms.date: 12/10/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

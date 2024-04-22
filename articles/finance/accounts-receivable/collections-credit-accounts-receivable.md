@@ -6,9 +6,6 @@ description: Accounts receivable collections information is managed in one centr
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable

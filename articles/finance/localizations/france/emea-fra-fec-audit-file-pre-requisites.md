@@ -4,10 +4,8 @@ description: This article describes the prerequisites that must be set up before
 author: liza-golub
 ms.date: 07/27/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: France
 ms.author: egolub
 ---

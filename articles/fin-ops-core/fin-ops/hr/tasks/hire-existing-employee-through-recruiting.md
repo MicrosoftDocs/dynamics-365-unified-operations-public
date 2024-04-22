@@ -6,8 +6,6 @@ description: Sometimes open positions can be filled by candidates who are alread
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

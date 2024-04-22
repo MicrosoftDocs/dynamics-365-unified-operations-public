@@ -1,5 +1,5 @@
 ---
-title: Transform data (preview)
+title: Transform data
 description: This article describes how to transform the imported data in a selected table into time series. You can then use the time series to create a forecast, do a comparison to a forecast, or do calculations.
 author: t-benebo
 ms.author: benebotg
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Transform data (preview)
+# Transform data
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Transformations let you transform the imported data in a selected table into time series. You can then use the time series to create a forecast, do a comparison to a forecast, or do calculations. For example, you might want to shift the historical demand time from last year by 12 months, so that it can be used as the basis for next year's forecast. Alternatively, you might want to combine daily historical demand data into monthly buckets, because you run planning on a monthly basis.
 
@@ -32,8 +29,6 @@ Each transformation profile takes a selected [main table](tables.md) as its inpu
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to update the time series as they require.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## View and run existing transformation profiles
 
 You have to run a transformation profile only as often as you import new data into the relevant tables. Some profiles must be run only occasionally, whereas others must be run almost every time that a user works with the app.
@@ -47,6 +42,7 @@ To update your time series by running an existing transformation profile, follow
 
     - **Summary** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with. Although you can also change the owner and adjust the time bucket, you typically shouldn't change these details for existing profiles. For information about how to work with the settings on this tab, see the [Create and manage transformation profiles](#create-transformation-profiles) section.
     - **Transformations** – This tab shows details about the transformation that the profile will process. For information about how to work with the settings on this tab, see the [Create and manage transformation profiles](#create-transformation-profiles) section.
+    - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, and the time series that was updated. Select a link in the **Time Series** column to open the time series.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab. There, you can follow the status of the new transformation. The page isn't automatically refreshed. To update the status information, you must select **Refresh** on the grid toolbar.
@@ -87,5 +83,8 @@ To create or edit a transformation profile, follow these steps.
     Each time that you add a data column, it's added to the list in the right column of the dialog box. Therefore, you can view your previous selections while you explore the different tables. Under **Dimension**, the order reflects the order that you selected the dimensions in.
 
 1. When you've finished selecting data columns, select **OK**.
+1. Select **Next**.
+1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
+1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. The profile is now saved, but it hasn't yet run. If you're ready to create a time series now, select **Run** on the Action Pane.

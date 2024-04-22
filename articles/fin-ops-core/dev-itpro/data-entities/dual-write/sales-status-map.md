@@ -5,7 +5,7 @@ author: dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-25

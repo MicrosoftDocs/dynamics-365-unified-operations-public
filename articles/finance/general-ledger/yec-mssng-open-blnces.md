@@ -6,9 +6,6 @@ description: This article explains why opening balances might be missing when yo
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

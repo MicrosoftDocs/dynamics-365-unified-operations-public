@@ -6,9 +6,6 @@ description: This article goes through a reallocation scenario where a line is r
 author: bking
 ms.date: 12/21/2020
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Customer

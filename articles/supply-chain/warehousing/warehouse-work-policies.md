@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Work policies
 description: This article explains how to set up work policies.
 author: perlynne
-ms.date: 07/31/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSWorkPolicy
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
-ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: 10.0.13
+ms.reviewer: kamaybac
+ms.search.form: WHSWorkPolicy
+ms.topic: how-to
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Work policies
@@ -33,7 +21,8 @@ This article explains how to set up the system and the Warehouse Management mobi
 A work policy controls whether warehouse work is created when a manufactured item is reported as finished, or when goods are received by using the Warehouse Management mobile app. You set up each work policy by defining the conditions where it applies: the work order types and processes, the inventory location, and (optionally) the products. For example, a purchase order for product *A0001* must be received in location *RECV* in warehouse *24*. Later, the product is consumed in another process at location *RECV*. In this case, you can set up a work policy to prevent putaway work from being created when a worker reports product *A0001* as received in location *RECV*.
 
 > [!NOTE]
-> - For a work policy to be active, you must define at least one location for it on the **Inventory locations** FastTab of the **Work policies** page. 
+>
+> - For a work policy to be active, you must define at least one location for it on the **Inventory locations** FastTab of the **Work policies** page.
 > - You can't specify the same location for multiple work policies.
 > - The **Print label** option for mobile device menu items won't print a license plate label unless work was created.
 
@@ -307,6 +296,5 @@ For more information about mobile device menu items, see [Set up mobile devices 
 For more information about license plate receiving and work policies, see [License plate receiving via the Warehouse Management mobile app](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

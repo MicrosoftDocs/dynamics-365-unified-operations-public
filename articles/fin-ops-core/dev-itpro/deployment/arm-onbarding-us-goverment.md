@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects
-description: This article explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors. This article applies to Azure US government projects.
+description: Learn how to complete the Microsoft Azure Resource Manager onboarding process for your connectors. This article applies to Azure US government projects.
 author: saurabhsurana
-ms.date: 02/08/2024
-ms.topic: article
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: sasurana
+ms.topic: article
+ms.date: 02/08/2024
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-07-31
 ---
 
@@ -50,16 +48,16 @@ Complete the following procedures to authorize the Lifecycle Services deployment
 
 #### Authorize the workflow
 
-Be sure that you have Azure Active Directory (Azure AD) PowerShell cmdlets installed. For more information, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+Be sure that you have Microsoft Entra ID PowerShell cmdlets installed. For more information, see [Install Microsoft Entra ID PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-The following two app IDs must be authorized on the Azure AD tenant:
+The following two app IDs must be authorized on the Microsoft Entra tenant:
 
 - 68fdae24-7da6-4d2d-82b6-fd78a0f38eb7
 - 913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0
 
 Follow these steps to authorize the app IDs on the tenant. Complete this procedure for each application.
 
-1. Sign in via the Azure AD PowerShell cmdlet. Use the tenant administrator account to sign in.
+1. Sign in via the Microsoft Entra PowerShell cmdlet. Use the tenant administrator account to sign in.
 
     ```powershell
     Connect-AzureAD 
@@ -89,7 +87,7 @@ Follow these steps to assign the **Contributor** role to the **Dynamics Deployme
 
 1. In the [Azure Government portal](https://portal.azure.us), on the **Subscription** tab, select the Azure subscription, and then select the **Access Control (IAM)** item on the navigation menu.
 2. Select **Add**, and then select **Add role assignment**.
-3. In the **Add role assignment** dialog box, set the **Role** field to **Contributor**, and set the **Assign access to** field to **Azure AD user, group, or service principal**. In the **Select** field, search for and select **Dynamics Deployment Services \[wsfed-enabled\]**. Then select **Save**.
+3. In the **Add role assignment** dialog box, set the **Role** field to **Contributor**, and set the **Assign access to** field to **Microsoft Entra user, group, or service principal**. In the **Select** field, search for and select **Dynamics Deployment Services \[wsfed-enabled\]**. Then select **Save**.
 
     > [!NOTE]
     > Some Azure subscriptions have a **Users** item instead of an **Access control (IAM)** item on the navigation menu. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**. Then select **Select**.
@@ -123,8 +121,10 @@ Follow these steps to enable the Azure connector.
 
 #### Configure the Azure subscription tag
 
+
 1. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Tags**.
 2. Enter the **Name** and **Value** from the information presented above and select **Apply**.
+
 
 #### Configure deployment settings
 

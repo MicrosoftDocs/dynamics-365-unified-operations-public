@@ -6,9 +6,6 @@ description: This article describes how accrued project costs from purchase rece
 author: mukumarm 
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CostControlCommittedCost

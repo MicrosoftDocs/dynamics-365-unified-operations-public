@@ -4,8 +4,6 @@ description: This article gives an overview of NFC-e fiscal document functionali
 author: EvgenyPopovMBS
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Brazil

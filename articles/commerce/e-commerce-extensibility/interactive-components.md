@@ -4,8 +4,6 @@ description: This article covers interactive components that let site authors ed
 author: samjarawan
 ms.date: 08/06/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

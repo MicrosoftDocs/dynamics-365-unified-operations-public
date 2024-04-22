@@ -4,8 +4,6 @@ description: This article describes how to view field descriptions and how to us
 author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global

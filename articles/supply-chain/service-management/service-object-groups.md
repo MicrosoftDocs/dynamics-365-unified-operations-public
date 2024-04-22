@@ -6,8 +6,6 @@ description: Object groups are useful for sorting and filtering the data about o
 author: sorenva
 ms.date: 05/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

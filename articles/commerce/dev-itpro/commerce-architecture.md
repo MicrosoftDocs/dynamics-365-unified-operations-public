@@ -4,8 +4,6 @@ description: This article provides an overview of all components in the Microsof
 author: samjarawan
 ms.date: 01/30/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -21,13 +19,11 @@ ms.search.form: RetailITWorkspace
 
 [!include [banner](../includes/banner.md)]
 
-
-
 This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products. 
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
-![Dynamics 365 Commerce Component Overview](../media/Commerce_Architecture_Component_Overview.png)
+:::image type="content" source="../media/Commerce_Architecture_Component_Overview.png" alt-text="Dynamics 365 Commerce Component Overview" lightbox="../media/Commerce_Architecture_Component_Overview.png":::
 
 ## Architecture benefits
 
@@ -121,7 +117,7 @@ The ability to bring the Commerce Scale Units to edge computing helps accommodat
 
 #### Content management system
 
-A fully featured content management system (CMS) is integrated directly into the e-commerce platform. In addition to rich indexing features, the CMS provides lifecycle management for marketing materials that supplement the product information that is managed by the headless commerce engine. It includes features for localization and multi-item publishing through releases. The system is built on top of a scalable, resilient Azure infrastructure that includes Azure Active Directory (Azure AD) and Azure Cosmos DB.
+A fully featured content management system (CMS) is integrated directly into the e-commerce platform. In addition to rich indexing features, the CMS provides lifecycle management for marketing materials that supplement the product information that is managed by the headless commerce engine. It includes features for localization and multi-item publishing through releases. The system is built on top of a scalable, resilient Azure infrastructure that includes Microsoft Entra and Azure Cosmos DB.
 
 #### Digital asset management
 

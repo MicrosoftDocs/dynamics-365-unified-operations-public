@@ -6,17 +6,13 @@ description: This article provides detailed information about Indian Tax Deducte
 author: kailiang
 ms.date: 03/19/2021
 ms.topic: overview
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # 
 # ms.tgt_pltfrm: 
 ms.collection: get-started

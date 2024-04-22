@@ -6,9 +6,6 @@ description: Set up types of leave that employees can take in Dynamics 365 Human
 author: twheeloc
 ms.date: 02/16/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

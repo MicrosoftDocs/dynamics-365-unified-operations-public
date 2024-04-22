@@ -6,9 +6,6 @@ description: This article answers frequently asked questions about the Invoice c
 author: sunfzam
 ms.date: 08/21/2023
 ms.topic: faq
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

@@ -4,10 +4,8 @@ description: This article provides information about reporting for multiple valu
 author: liza-golub
 ms.date: 01/17/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: egolub
 ms.search.validFrom: 
@@ -289,6 +287,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8<br>VAT Declaration XML (DK).version.101.15.7 | [VAT declaration (Denmark)](../denmark/emea-dnk-vat-declaration-denmark.md) |
     | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](../poland/emea-pol-vat-declaration.md) |
     | 10.0.36 | Estonia  | Tax declaration model.version.150<br>Tax declaration model mapping.version.150.317<br>VAT Declaration XML (EE).version.150.21<br>VAT Declaration Excel (EE).version.150.21.17 | [VAT declaration (Estonia)](../estonia/emea-est-vat-declaration.md) |
+    | 10.0.39 | Italy  | Tax declaration model.version.153<br>Tax declaration model mapping (IT).version.153.320.4<br>VAT Declaration PDF (IT).version.153.19 | [Configure and report Italian sales tax books](../italy/emea-ita-sales-tax-books.md) |
 
     > [!NOTE]
     > The VAT declaration of Poland (JPK-V7) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7, VDEK)](../poland/emea-pol-vdek.md).

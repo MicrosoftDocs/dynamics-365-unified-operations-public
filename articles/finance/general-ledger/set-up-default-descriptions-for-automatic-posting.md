@@ -6,9 +6,6 @@ description: This article explains how to set up default text that is used to de
 author: aprilolson
 ms.date: 02/10/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

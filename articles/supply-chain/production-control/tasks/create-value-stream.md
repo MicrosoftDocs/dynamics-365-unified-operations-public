@@ -6,8 +6,6 @@ description: Value streams are operating units, that group one or multiple produ
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

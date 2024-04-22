@@ -6,16 +6,13 @@ description: This article explains how to set up bank account numbers for the Br
 author: gionoder
 ms.date: 01/20/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Brazil

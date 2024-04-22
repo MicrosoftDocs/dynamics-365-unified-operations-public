@@ -6,8 +6,6 @@ description: This article describes how to build sales price models with sales p
 author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

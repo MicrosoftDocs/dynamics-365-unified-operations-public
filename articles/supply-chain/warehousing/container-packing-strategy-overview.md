@@ -4,7 +4,7 @@ description: This article describes the differences between container packing st
 author: Mirzaab
 ms.date: 08/09/2022
 ms.topic: article
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSOutboundLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.collection: get-started
@@ -342,7 +342,7 @@ To create a second sales order, follow these steps.
 
 To create a load for each order that you created for this scenario and then release it to the warehouse, follow these steps.
 
-1. Go to **Warehouse management \> Loads \> Load planning workbench**.
+1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines from the sales orders that you created for this scenario.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**. The selected order lines are added to a new load.
 1. In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *40' Container*.

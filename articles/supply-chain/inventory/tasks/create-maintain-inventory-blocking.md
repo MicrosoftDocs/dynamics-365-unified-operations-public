@@ -6,8 +6,6 @@ description: This article describes how to use an inventory blocking to prevent 
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

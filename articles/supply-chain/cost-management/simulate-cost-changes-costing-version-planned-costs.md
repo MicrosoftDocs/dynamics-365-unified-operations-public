@@ -6,8 +6,6 @@ description: This article explains how you can simulate the effects of cost chan
 author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
