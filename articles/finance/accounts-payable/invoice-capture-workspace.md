@@ -6,9 +6,6 @@ description: This article provides information about the Invoice capture solutio
 author: sunfzam
 ms.date: 11/20/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage

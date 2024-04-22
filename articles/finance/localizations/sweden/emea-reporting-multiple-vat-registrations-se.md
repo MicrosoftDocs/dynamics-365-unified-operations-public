@@ -4,10 +4,8 @@ description: This article explains how to support multiple value-added tax (VAT)
 author: liza-golub
 ms.date: 7/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Sweden
 ms.author: egolub
 ms.search.validFrom: 2023-04-10

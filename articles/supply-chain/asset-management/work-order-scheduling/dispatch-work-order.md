@@ -6,8 +6,6 @@ description: This article explains how to dispatch a work order in Asset Managem
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

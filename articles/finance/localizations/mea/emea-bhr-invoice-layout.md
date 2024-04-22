@@ -4,10 +4,8 @@ description: This article explains how to configure the invoice layout for Bahra
 author: mrolecki
 ms.date: 09/08/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Bahrain
 ms.author: mrolecki
 ms.search.validFrom: 2020-06-03

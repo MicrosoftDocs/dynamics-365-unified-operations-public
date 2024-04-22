@@ -4,10 +4,8 @@ description: This article provides an overview of the demo data.
 author: sericks007
 ms.date: 09/20/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28

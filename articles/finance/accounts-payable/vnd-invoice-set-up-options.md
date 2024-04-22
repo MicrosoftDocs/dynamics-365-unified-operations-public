@@ -1,14 +1,11 @@
 ---
 # required metadata
 
-title: Setup options for vendor invoice automation (Preview)
+title: Setup options for vendor invoice automation 
 description: This article describes the options that are available for setting up and configuring vendor invoice automation.
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

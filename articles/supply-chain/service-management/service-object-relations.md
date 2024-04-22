@@ -6,8 +6,6 @@ description: You can create service object relations between a service object an
 author: sorenva
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

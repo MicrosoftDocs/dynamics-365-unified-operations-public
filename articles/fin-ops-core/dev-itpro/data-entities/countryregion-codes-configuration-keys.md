@@ -6,9 +6,6 @@ description: This article provides scenarios that are applicable from an impleme
 author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

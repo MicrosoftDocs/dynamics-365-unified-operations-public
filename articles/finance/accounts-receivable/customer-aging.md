@@ -4,10 +4,9 @@
 title: Customer aging report
 description: The Customer aging report displays the balances that are due from customers, sorted by date interval, or aging period.
 author: JodiChristiansen
-ms.date: 10/06/2020
+ms.date: 03/26/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -55,7 +54,7 @@ When you generate this report, the following default parameters are displayed. Y
 </tr>
 <tr class="even">
 <td><p><strong>Include transactions without a billing classification</strong></p></td>
-<td><p>If this check box is selected, all transactions that do not have a billing classification assigned to them will be displayed on the report.</p>
+<td><p>If this checkbox is selected, all transactions that don't have a billing classification assigned to them will be displayed on the report.</p>
 <div class="alert">
 
 **Note:** This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.</P>
@@ -85,7 +84,7 @@ When you generate this report, the following default parameters are displayed. Y
 </tr>
 <tr class="even">
 <td><p><strong>Aging period definition</strong></p></td>
-<td><p>Select an aging period definition. The <strong>Interval</strong> field is not used if you select an aging period definition.</p>
+<td><p>Select an aging period definition. The <strong>Interval</strong> field isn't used if you select an aging period definition.</p>
 <p>Aging period definitions that have more than six aging periods cannot be used on the printed report.</p>
 <div class="alert">
 
@@ -103,21 +102,21 @@ When you generate this report, the following default parameters are displayed. Y
 <td><p>Define the period to use by entering the number of the day or month units in each period. For example, to view aging information by week, enter 7 in this field and select <strong>Day</strong> in the <strong>Day/Mth</strong> field.</p>
 <div class="alert">
 
-**Note:** The information that you enter in this field is used only if you have not selected an aging period definition. Otherwise, the printing direction is defined on the aging period definition.</P>
+**Note:** The information that you enter in this field is used only if you haven't selected an aging period definition. Otherwise, the printing direction is defined on the aging period definition.</P>
 
 
 </div></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Day/Mth</strong></p></td>
-<td><p>Select the unit, either <strong>Day</strong> or <strong>Month</strong>, that is used to define the period in the <strong>Interval</strong> field.</p></td>
+<td><p>Select the unit, either <strong>Day</strong> or <strong>Month</strong>, that's used to define the period in the <strong>Interval</strong> field.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Printing direction</strong></p></td>
 <td><p>Select whether to calculate balances and print the aging report for past or future periods. The dates are evaluated relative to the date that is selected in the <strong>Balance as on</strong> field. Select <strong>Backward</strong> to show information for past periods. Select <strong>Forward</strong> to show information for future periods.</p>
 <div class="alert">
   
-<STRONG>Note:</STRONG> The information that you enter in this field is used only if you have not selected an aging period definition.</P>
+<STRONG>Note:</STRONG> The information that you enter in this field is used only if you haven't selected an aging period definition.</P>
 
 
 </div></td>
@@ -128,7 +127,7 @@ When you generate this report, the following default parameters are displayed. Y
 </tr>
 <tr class="even">
 <td><p><strong>Include amounts in transaction currency</strong></p></td>
-<td><p>Select to include amounts in the transaction currency in addition to amounts in the accounting currency. If this check box is not selected, the amounts on the report are displayed only in the accounting currency.</p></td>
+<td><p>Select to include amounts in the transaction currency in addition to amounts in the accounting currency. If this checkbox is not selected, the amounts on the report are displayed only in the accounting currency.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Negative balance</strong></p></td>

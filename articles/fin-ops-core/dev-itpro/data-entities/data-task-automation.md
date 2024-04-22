@@ -6,9 +6,6 @@ description: This article explains how you can use data task automation to repea
 author: peakerbl
 ms.date: 05/06/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

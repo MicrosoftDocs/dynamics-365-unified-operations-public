@@ -6,8 +6,6 @@ description: Transportation management engines define the logic that is used to 
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

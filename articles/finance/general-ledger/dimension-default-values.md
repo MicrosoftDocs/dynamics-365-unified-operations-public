@@ -6,9 +6,6 @@ description: This article describes the rules that define how financial dimensio
 author: kweekley
 ms.date: 09/04/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalTransDaily, LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, LedgerJournalTransCustPaym

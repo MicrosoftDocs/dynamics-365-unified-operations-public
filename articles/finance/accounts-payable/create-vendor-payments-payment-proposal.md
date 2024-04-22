@@ -6,9 +6,6 @@ description: This article provides an overview of the payment proposal options a
 author: abruer
 ms.date: 06/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalTransVendPaym

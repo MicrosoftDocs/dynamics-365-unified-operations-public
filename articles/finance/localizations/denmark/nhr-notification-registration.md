@@ -4,10 +4,8 @@ description: This article describes how to handle notification and registration 
 author: mrolecki
 ms.date: 12/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2023-12-30
@@ -33,7 +31,9 @@ Existing users receive a notification in the form of a feature callout whenever 
 
 If the company isn't registered with the NHR, you receive the following notification: "Your company is not registered in NemHandelsRegistret." You can complete the registration process directly from the notification by selecting the **Register in NemHandel** link. This link takes you to the external NemHandel content.
 
-If the company is already registered, a valid Central Business Register (CVR) number and European Article Number (EAN) are entered in the registration IDs for your legal entity, and the notification doesn't appear.
+If the company is already registered, a valid Central Business Register (CVR) number and European Article Number (EAN) are entered in the registration IDs for your legal entity, and the notification doesn't appear. To set up CVR number of your legal entity, use the **VAT ID** registration category. To set up EAN of your legal entity, use the **EAN** registration category.
+
+For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
 
 > [!NOTE]
 > A notification appears on the **Legal entities** page for all the users who have access to this page. Through an API call to NemHandel, registration is confirmed based on the company's CVR number from the registration IDs for the legal entity.

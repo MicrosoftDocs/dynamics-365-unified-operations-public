@@ -6,8 +6,6 @@ description: Use this procedure to set the default values and security policies 
 author: msftbrking 
 ms.date: 07/23/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

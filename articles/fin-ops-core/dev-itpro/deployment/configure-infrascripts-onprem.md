@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Configure the infrastructure scripts for your Finance + Operations (on-premises) deployment
-description: This article explains how to configure the infrastructure scripts that are provided to deploy Microsoft Dynamics 365 Finance + Operations (on-premises).
+description: Learn how to configure the infrastructure scripts that are provided to deploy Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 12/22/2022
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: osfaixat
+ms.topic: article
+ms.date: 12/22/2022
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: 
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Configure the infrastructure scripts for your Finance + Operations (on-premises) deployment
@@ -504,7 +490,7 @@ As it did for the gMSAs, Contoso has added the **-prod** suffix to all its other
 
 According to the setup guide, the infrastructure scripts will automatically generate the information for the **SQLCluster** certificate, provided that the **SQLCluster** configuration is specified further down in the configuration template. Therefore, Contoso has left everything blank except the **ProtectTo** field.
 
-Because this isn't its first environment, Contoso has already registered the **OnpremLocalAgent** certificate against its Azure Active Directory (Azure AD) tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
+Because this isn't its first environment, Contoso has already registered the **OnpremLocalAgent** certificate against its Microsoft Entra tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
 
 Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* environments. Because they're specifying the configuration for their *production* environment, they've left the **disabled** attribute of the **RSAT** certificate set to **true**.
 

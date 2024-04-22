@@ -6,9 +6,6 @@ description: This article describes several powerful features of the grid contro
 author: jasongre
 ms.date: 1/17/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  DefaultDashboard

@@ -6,8 +6,6 @@ description: This article describes how to use the On-hand list page to inspect 
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -93,7 +91,7 @@ To customize the selection of inventory dimensions that is shown, follow these s
 
 ## <a name="grid-filters"></a>Filter on the output of the inventory on-hand list
 
-You can select any column heading in the **On-hand** grid to sort or filter by values in that column. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
+Several columns in the **On-hand** grid let you sort or filter by values in that column by selecting the column heading. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
 
 > [!NOTE]
 > You can't filter and sort by all columns. Most of the quantity columns don't include sorting and filtering controls, because they are calculated fields. The **On order** column is an exception.

@@ -6,9 +6,6 @@ description: This article explains how to set up and modify general budget reser
 author: AlexRenney
 ms.date: 04/25/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN

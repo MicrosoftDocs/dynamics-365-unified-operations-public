@@ -6,9 +6,6 @@ description: This article provides information about the Accounting source explo
 author: RyanCCarlson2
 ms.date: 10/31/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AccountingSourceExplorer

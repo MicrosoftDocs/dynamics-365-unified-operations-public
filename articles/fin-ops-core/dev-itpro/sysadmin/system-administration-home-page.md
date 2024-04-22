@@ -6,16 +6,13 @@ description: This article lists resources that are available for system administ
 author: sericks007
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
@@ -125,7 +122,7 @@ The process automation framework allows administrators to view and create automa
 - [License codes and configuration keys report](license-codes-configuration-keys-report.md)
 - [Maintenance mode](maintenance-mode.md)
 - [Preconfigured system accounts](pre-configured-system-accounts.md)
-- [Export business-to-business (B2B) users to Azure Active Directory](implement-b2b.md)
+- [Export business-to-business (B2B) users to Microsoft Entra ID](implement-b2b.md)
 - [Set the session inactivity timeout](session-idle-timeout.md)
 - [Build OData metadata cache when AOS starts](odata-warmup.md)
 - [Configure and manage database logging](configure-manage-database-log.md)

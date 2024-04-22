@@ -4,10 +4,8 @@ description: This article provides information about the Fiscal journal report i
 author: liza-golub
 ms.date: 05/22/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: liza-golub
 ms.search.validFrom: 

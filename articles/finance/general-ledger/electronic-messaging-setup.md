@@ -4,8 +4,6 @@ description: This article provides information about how to set up Electronic me
 author: AdamTrukawka
 ms.date: 11/18/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global

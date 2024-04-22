@@ -6,9 +6,6 @@ description: Before you set up organizations and organization hierarchies, make 
 author: sericks007
 ms.date: 02/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit

@@ -5,11 +5,8 @@ title: Environment lifecycle operations - Core concepts
 description: This article explains the core concepts for environment lifecycle operations when finance and operations apps are connected to Microsoft Dataverse by using Power Platform Integration.
 ms.author: laswenka
 author: laneswenka
-ms.date: 05/02/2023
+ms.date: 02/23/2024
 ms.topic: overview
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
@@ -35,7 +32,7 @@ To learn more about Power Platform Integration, watch our TechTalk on the [Micro
 
 ## Terminology differences between Lifecycle Services and Power Platform admin center
 
-For environment lifecycle operations, there are some terminology and technical differences between similar activities that admins perform in the two admin portals, Microsoft Dynamics Lifecycle Services and Power Platform admin center. The follow table is a quick reference for each operation type and explains any nuances between the two experiences.
+For environment lifecycle operations, there are some terminology and technical differences between similar activities that admins perform in the two admin portals, Microsoft Dynamics Lifecycle Services and Power Platform admin center. The following table is a quick reference for each operation type and explains any nuances between the two experiences.
 
 | Lifecycle operation | Lifecycle Services terminology | Power Platform admin center terminology | Comments |
 | ------------------- | ------------------------------ | --------------------------------------- | -------- |
@@ -49,7 +46,7 @@ For environment lifecycle operations, there are some terminology and technical d
 
 ## Scenarios supported when Power Platform Integration is enabled
 
-When Power Platform Integration is enabled, the finance and operations apps instance is connected to a Dataverse instance. Therefore, your conceptually whole environment has two halves that you must consider. For example, a sandbox will consist of two environments: one environment in Lifecycle Services and one connected environment in Power Platform admin center.
+When Power Platform Integration is enabled, the finance and operations apps instance is connected to a Dataverse instance. Therefore, your conceptually whole environment has two halves that you must consider. For example, a sandbox consists of two environments: one environment in Lifecycle Services and one connected environment in Power Platform admin center.
 
 This duality of each conceptual environment has an impact on the lifecycle operations that are listed in the previous section. The following subsection lists each end-to-end scenario and links to detailed articles that walk through each one.
 
@@ -59,5 +56,10 @@ The following list of continually updated scenario articles provides a walkthrou
 
 - [Connect finance and operations apps with a new Microsoft Dataverse instance](./environment-lifecycle-connect-finops-new-dv.md)
 - [Connect finance and operations apps with an existing Microsoft Dataverse instance](./environment-lifecycle-connect-finops-existing-dv.md)
+- [Change the type of connected environments](./environment-lifecycle-change-env-type-dv.md)
+- [Database and environment movements when Power Platform Integration is enabled](./environment-lifecycle-database-movements.md)
+- [Set up developer cloud-hosted environments by using Power Platform Integration](./environment-lifecycle-development-environments.md)
+- [Edit the properties of connected Dataverse environments](./environment-lifecycle-edit-properties-dv.md)
+- [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,23 +4,14 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.8 (February 2020)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.8. 
 author: josaw1
-ms.date: 01/29/2020
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2020-01-31 
 ms.dyn365.ops.version: 10.0.8
@@ -42,7 +33,7 @@ The following features are included in this release. The feature titles link to 
 - [Invoke Dynamics 365 Fraud Protection during e-commerce checkout](/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
 - [Recommendations](/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
 - [Product recommendations in POS](/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
-- [Azure Active Directory business to customer tenant per channel](/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
+- [Microsoft Entra business to customer tenant per channel](/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
 
 
 ## Additional resources

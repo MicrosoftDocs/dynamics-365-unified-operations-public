@@ -4,10 +4,8 @@ description: This article provides links to documentation resources for the Unit
 author: kfend
 ms.date: 07/25/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: kfend
 ms.search.validFrom: 2016-02-28

@@ -6,8 +6,6 @@ description: This article describes the functionality that lets you run an Inven
 author: JennySong-SH
 ms.date: 11/11/2019
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

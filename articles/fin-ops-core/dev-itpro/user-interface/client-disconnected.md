@@ -4,7 +4,6 @@ description: This article describes what happens when a client machine can't acc
 author: jasongre
 ms.date: 01/10/2024
 ms.topic: article
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

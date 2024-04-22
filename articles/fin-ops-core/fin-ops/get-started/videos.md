@@ -6,9 +6,6 @@ description: This page lists Microsoft-created "how-to" and Tech talk videos rel
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

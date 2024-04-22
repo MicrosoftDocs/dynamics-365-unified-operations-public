@@ -6,9 +6,6 @@ description: The purchasing legal entity that is involved in an intercompany tra
 author: abruer
 ms.date: 02/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PurchLineMatchingPolicy

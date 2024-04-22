@@ -6,9 +6,6 @@ description: This article describes the functionality for automatically generati
 author: sunfzam
 ms.date: 12/17/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

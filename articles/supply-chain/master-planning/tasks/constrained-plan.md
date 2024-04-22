@@ -6,8 +6,6 @@ description: This article explains how to create a plan that takes into account 
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

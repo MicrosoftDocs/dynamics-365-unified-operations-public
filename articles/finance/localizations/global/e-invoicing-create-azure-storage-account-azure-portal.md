@@ -4,10 +4,8 @@ description: This article explains how to create an Azure storage account for El
 author: gionoder
 ms.date: 02/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gionoder
 ms.search.validFrom: 

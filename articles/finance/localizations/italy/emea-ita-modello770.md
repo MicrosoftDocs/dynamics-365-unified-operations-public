@@ -4,10 +4,8 @@ description: This article provides information about the Modello 770 report for 
 author: mrolecki
 ms.date: 07/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: mrolecki
 ms.search.validFrom: 2017-12-31

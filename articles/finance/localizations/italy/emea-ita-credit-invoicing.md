@@ -4,10 +4,8 @@ description: This article explains how to set up and use the credit invoicing fu
 author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: atrukawk
 ms.search.validFrom: 2019-09-17

@@ -6,9 +6,6 @@ description: This article explains how to change the accounting or reporting cur
 author: kweekley
 ms.date: 03/01/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

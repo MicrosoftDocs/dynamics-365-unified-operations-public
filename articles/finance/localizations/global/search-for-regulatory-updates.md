@@ -4,10 +4,8 @@ description: This article provides links to planned and released country/region-
 author: AdamTrukawka
 ms.date: 01/20/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: kfend
 ms.dyn365.ops.version: 10

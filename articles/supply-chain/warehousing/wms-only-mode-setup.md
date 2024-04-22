@@ -23,6 +23,8 @@ ms.custom:
 
 <!-- KFM: Preview until further notice -->
 
+This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
+
 ## <a name="feature-management"></a>Turn on Warehouse management only mode
 
 To use the Warehouse management only mode capability, your system must meet the following requirements:

@@ -6,8 +6,6 @@ description: You can specify that you want to automatically reuse an existing co
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

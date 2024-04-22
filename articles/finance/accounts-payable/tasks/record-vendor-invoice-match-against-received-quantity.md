@@ -6,8 +6,6 @@ description: When you receive an invoice from a vendor for goods or services on 
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

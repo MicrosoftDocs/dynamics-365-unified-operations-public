@@ -4,10 +4,8 @@ description: Commitments are budget control source documents used by public sect
 author: brpotter
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: France
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28

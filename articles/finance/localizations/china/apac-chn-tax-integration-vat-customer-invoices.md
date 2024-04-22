@@ -4,10 +4,8 @@ description: You can generate value-added tax (VAT) customer invoices, and then 
 author: mrolecki
 ms.date: 05/23/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30

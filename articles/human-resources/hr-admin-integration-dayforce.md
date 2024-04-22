@@ -6,9 +6,6 @@ description: This article describes the required configuration steps needed for 
 author: twheeloc
 ms.date: 09/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PersonnelIntegrationConfiguration
@@ -28,11 +25,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure integration with Dayforce
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 > [!NOTE]
-> The functionality noted in this article is only available for existing Ceridian Dayforce customers using 'V1' Dayforce integration with Dynamics 365 Human Resources. All new customers should work with the payroll provider to use API based payroll integration. 
+> The functionality noted in this article is only available for existing Ceridian Dayforce customers using 'V1' Dayforce integration with Dynamics 365 Human Resources. All new customers should work with the payroll provider to use API based payroll integration.
+
+For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking. 
+ 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

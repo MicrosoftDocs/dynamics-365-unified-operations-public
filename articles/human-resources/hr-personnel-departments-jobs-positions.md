@@ -6,9 +6,6 @@ description: This article describes conceptual information about departments, jo
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Organize your workforce by using departments, jobs, and positions
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -6,8 +6,7 @@ description: This article provides information about the Sales order tab of the 
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 

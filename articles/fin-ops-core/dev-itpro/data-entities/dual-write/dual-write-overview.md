@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06

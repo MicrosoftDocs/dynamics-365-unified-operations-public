@@ -4,10 +4,8 @@ description: This article explains how to enable multi-batch processing for Good
 author: EricWangChen
 ms.date: 09/03/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: India
 ms.author: wangchen
 ms.search.validFrom: 2019-09-03

@@ -6,8 +6,6 @@ description: This article gives an overview of the various steps that make up th
 author: angelmarshall
 ms.date: 09/29/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 ms.custom: bap-template
 # optional metadata
 

@@ -4,8 +4,6 @@ description: This article explains how you can allocate document bank charges to
 author: AdamTrukawka
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: 
 ms.search.region: Saudi Arabia

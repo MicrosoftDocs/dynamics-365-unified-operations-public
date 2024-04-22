@@ -6,8 +6,7 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.date: 12/13/2023
 ms.topic: faq
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -17,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -66,6 +65,7 @@ The following table lists the feature enhancements that are included in this rel
 | General Ledger | Enhanced main account delete functionality | Main account records along with master records used in a financial journal have improved delete behavior. The enhanced behavior scans to check if the records are used in a transaction or on a setup page. The scan results shows what to clear (if possible) and try the delete action again.| 
 | Tax regulatory reporting | Tax declaration model mapping | This enhancement impacts all VAT declarations that use the Tax declaration model mapping: Austria, Bahrain, Belgium, Czechia, Denmark, Egypt, Finland, France, Germany, Hungary, Indonesia, Malaysia, Netherlands, New Zealand, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom. The new version of the [Tax declaration model mapping - 136.302](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=819950&dbType=3&qc=8f64cac76f77df0328c110150b0ba0875154bb6f6bda44a38c5af33202fb172f) or higher, significantly improves performance and memory consumption of all dependent VAT declarations and covers more credit-note specific scenarios. |
 | Data Management | Job history cleanup | By default, job history entries and related staging table data that are older than 90 days are automatically deleted.[More details.](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md)| 
+| Revenue and expense deferrals | Cost deferrals for stocked service items | Stocked service items will now post with both consumption and revenue deferrals. Previously, only revenue deferrals were created for stocked service items.| 
 
 ## Features turned on by default in this release
 

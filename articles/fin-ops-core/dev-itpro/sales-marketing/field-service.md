@@ -6,9 +6,6 @@ description: This article provides an overview of the Integration with Microsoft
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

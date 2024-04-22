@@ -7,7 +7,7 @@ author: ttreen
 ms.date: 08/02/2021
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2021-07-01

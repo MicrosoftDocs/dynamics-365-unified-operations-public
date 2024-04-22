@@ -4,10 +4,8 @@ description: This article provides information about fixed asset depreciation fo
 author: AdamTrukawka
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Hungary
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

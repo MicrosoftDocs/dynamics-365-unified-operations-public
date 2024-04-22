@@ -6,8 +6,6 @@ description: This procedure shows how to settle transactions between ledger acco
 author: aprilolson
 ms.date: 10/03/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

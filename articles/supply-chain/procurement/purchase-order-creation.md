@@ -1,8 +1,8 @@
 ---
 title: Create purchase orders
 description: This article describes the process and options when you manually create a purchase order.
-author: GalynaFedorova
-ms.author: gfedorova
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart
 ms.topic: how-to

@@ -6,8 +6,6 @@ description: This article provides information about how to consolidate two or m
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

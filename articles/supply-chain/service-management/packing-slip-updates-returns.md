@@ -3,11 +3,10 @@
 
 title: Packing slip updates for returns  
 description: Before returned items can be received into inventory, the packing slip for the order to which they belong must be updated.
-author: sorenva
+author: Henrikan
+ms.author: henrikan
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +20,6 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,7 +28,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Packing slip updates for returns  
 
 [!include [banner](../includes/banner.md)]
-
 
 Before returned items can be received into inventory, the packing slip for the order to which they belong must be updated. Just as the invoice update process is the update to the financial transaction, the packing slip update process is the physical update of the inventory record, which means that it commits the changes to inventory. In the case of returns, the steps that are assigned to the disposition action are implemented during the packing slip update.
 
@@ -46,11 +43,6 @@ When you update a packing slip for a returned item that is from a sales agreemen
 
 ## See also
 
-[Perform invoice updates for returns](perform-invoice-updates-for-returns.md)
-
-  
-
-
-
+- [Perform invoice updates for returns](perform-invoice-updates-for-returns.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

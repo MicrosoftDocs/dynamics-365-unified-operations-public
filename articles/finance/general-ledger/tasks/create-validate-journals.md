@@ -4,10 +4,9 @@
 title: Create and validate journals
 description: This procedure creates and validates journals and journal lines. 
 author: panolte
-ms.date: 08/29/2018
+ms.date: 04/01/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
+ 
  
 # optional metadata 
  

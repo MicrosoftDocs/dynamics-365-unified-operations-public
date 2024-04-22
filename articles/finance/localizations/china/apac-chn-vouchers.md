@@ -4,10 +4,8 @@ description: This article describes Chinese vouchers and how they are used in Mi
 author: AdamTrukawka
 ms.date: 03/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

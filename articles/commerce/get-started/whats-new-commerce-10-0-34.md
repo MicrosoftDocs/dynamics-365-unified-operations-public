@@ -2,10 +2,12 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.34 (July 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.34. 
 author: josaw1
-ms.date: 04/21/2023
+ms.date: 04/12/2024
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw

@@ -5,7 +5,6 @@ author: johanhoffmann
 ms.date: 05/04/2022
 ms.topic: article
 ms.search.form:
-ms.technology:
 audience: Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global

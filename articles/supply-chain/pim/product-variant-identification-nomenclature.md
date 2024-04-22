@@ -6,8 +6,6 @@ description: This article describes how you can set up a product number nomencla
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

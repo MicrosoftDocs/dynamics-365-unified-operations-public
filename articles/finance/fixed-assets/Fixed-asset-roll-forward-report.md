@@ -6,9 +6,6 @@ description: This article explains how to use the Fixed assets roll forward repo
 author: moaamer
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

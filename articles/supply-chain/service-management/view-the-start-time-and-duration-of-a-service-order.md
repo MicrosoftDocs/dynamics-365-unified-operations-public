@@ -6,8 +6,6 @@ description: You can view when the work on the service order was started and whe
 author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

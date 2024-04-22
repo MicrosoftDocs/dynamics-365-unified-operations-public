@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Business events in Microsoft Power Automate
 description: This article provides information about the business events that are available for consumption in Microsoft Power Automate via the application connector.
 author: Sunil-Garg
-ms.date: 10/18/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 10/18/2021
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: Platform update 24
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-02-28
 ---
 
@@ -39,7 +30,7 @@ It's important that you understand business events. For more information, see th
 
 ### Using the finance and operations connector
 
-The finance and operations connector communicates directly with finance and operations apps to establish subscriptions, but it's triggered by Dataverse at runtime. The connector can connect to any instance of finance and operations apps on the Azure Active Directory (Azure AD) tenant. 
+The finance and operations connector communicates directly with finance and operations apps to establish subscriptions, but it's triggered by Dataverse at runtime. The connector can connect to any instance of finance and operations apps on the Microsoft Entra tenant. 
 
 After the **When a Business Event occurs** trigger is added to a flow, the following information must be provided:
 
@@ -105,4 +96,3 @@ This approach is applicable to any messaging or event platform that is used as a
 For information about how to use business events in Microsoft Flow, see [Consume business events in Microsoft Flow](how-to/how-to-flow.md). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

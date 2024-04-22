@@ -6,8 +6,6 @@ description: This article explains how to set up preferred maintenance workers i
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,9 +6,6 @@ description: This article explains the features that are available for end-to-en
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendEditInvoiceHeaderStagingListPage 

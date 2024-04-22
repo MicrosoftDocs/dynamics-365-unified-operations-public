@@ -6,8 +6,7 @@ description: This article describes dimensions and how they're used in Microsoft
 author: ShielaSogge
 ms.date: 12/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 
@@ -163,4 +162,4 @@ You can delete a dimension that isn't being used in a cube.
 1. On **Dimensions** page, select the dimension in the left preview pane.
 1. Select **Delete**.
 
-When a dimension is deleted, the cube isn't updated. However, the Power BI visuals might be affected.
+

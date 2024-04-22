@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Self-service deployment overview
-description: This article provides an overview of self-service deployment.
+description: Learn about self-service deployment via an overview, including an overview of new features and differences in Lifecycle Services (LCS) experiences.
 author: rashmansur
-ms.date: 05/29/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: rashmim
+ms.topic: overview
+ms.date: 05/29/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global 
 ms.search.validFrom: 2018-12-31
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Self-service deployment overview

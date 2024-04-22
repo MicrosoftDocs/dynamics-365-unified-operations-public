@@ -4,10 +4,8 @@ description: This article provides information about financial reporting for Rus
 author: AdamTrukawka
 ms.date: 07/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2018-10-28

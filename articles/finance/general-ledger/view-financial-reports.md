@@ -6,9 +6,6 @@ description: This article describes how to view and explore financial reports in
 author: kweekley
 ms.date: 11/22/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

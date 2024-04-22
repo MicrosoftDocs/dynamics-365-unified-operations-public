@@ -6,15 +6,12 @@ description: In France, you can apply a penalty when a customer payment is past 
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustInvoiceJournal, CustFormletterParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: France
 # ms.search.industry: 

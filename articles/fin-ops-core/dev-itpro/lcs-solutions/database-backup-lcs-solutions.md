@@ -4,10 +4,8 @@ description: This article provides information about the database backup that is
 author: sericks007
 ms.date: 04/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030

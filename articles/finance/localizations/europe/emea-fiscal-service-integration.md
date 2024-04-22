@@ -4,10 +4,8 @@ description: This article provides information about the fiscal service integrat
 author: AdamTrukawka
 ms.date: 01/17/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Czech Republic
 ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
