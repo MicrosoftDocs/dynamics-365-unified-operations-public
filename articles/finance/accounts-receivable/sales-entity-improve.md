@@ -22,43 +22,38 @@ changes made and the benefits they bring.
 
 ## Overview
 
-The previous implementation suffered from inefficiencies caused by nested views that duplicated larger tables, resulting in multiple queries to fetch the required data. To address this, we have removed all views 
-from the existing entities and introduced new versions called Sales Invoice Headers V4 and Sales Invoice Lines V4.
+The previous implementation suffered from inefficiencies caused by nested views that duplicated larger tables, resulting in multiple queries to fetch the required data. To address this, all views have been removed from existing entities and introduced new versions **Sales invoice headers V4** and **Sales invoice lines V4**.
 
-The new entities no longer rely on inefficient views but instead directly fetch all columns from the data sources, allowing for faster data retrieval. In addition, we have eliminated all computer columns 
-responsible for row-by-row processing, further improving performance.
+The new entities no longer rely on inefficient views but directly fetch all columns from the data sources, allowing for faster data retrieval. In addition, all computer columns have been eliminated that were responsible for row-by-row processing, further improving performance.
 
-Previously, the Total Discount Amount column was present in the header entity. In the latest version, we have exposed this information through three separate columns: Cash Discount, End Discount, and Total Line 
-Discount. The Total Discount Amount can now be calculated as the sum of these three columns.
+Previously, the **Total discount amount** column was present in the header entity. In the latest version, this information can be found through three separate columns: **Cash discount**, **End discount**, and **Total line discount**. The **Total discount amount** is now calculated as the sum of these three columns.
 
-Another improvement is the exposure of the Product Name column as two separate columns: Product Name and Product Variant Name. This change eliminates the need for computed columns and allows users to retrieve the
-product name from either the variant (if it exists) or the product itself.
+The **Product name** column is now two separate columns: **Product name** and **Product variant name**. This eliminates the need for computed columns and allows users to retrieve the product name from either the variant (if it exists) or the product itself.
 
-In the Sales Invoice Lines V4 entity, we have introduced two new columns: Line Total Charge Amount and Line Total Tax Amount. Previously, these values were fetched from separate views, but now they are directly
+In the **Sales invoice lines V4** entity, there are two new columns: **Line total charge amount** and **Line total tax amount**. Previously, these values were fetched from separate views, but now they are directly
 sourced from the **CustInvoiceTrans** Table. Calculation logic has been implemented to compute these values for new sales orders and free text invoices.
 
-Similarly, in the header V4 entity, the Invoice Header Tax Amount field, previously obtained from the **CustInvoiceJourTotalTaxAmountView**, is now sourced from the **CustInvoiceJourTable**. By removing 
-unnecessary views and refining our data sources, we have significantly improved performance.
+Similarly, in the header V4 entity, the **Invoice header tax amount** field, previously obtained from the **CustInvoiceJourTotalTaxAmountView**, is now sourced from the **CustInvoiceJourTable**. By removing 
+unnecessary views and refining data sources, performance is significantly improved.
 
-To ensure a smooth transition, we have created a **SysSetup** Async script that updates the newly created columns for existing records in the **CustInvoiceJour** and **CustInvoiceTrans** Tables. When customers
-upgrade to version 10.0.41, the **CustInvoiceTaxFieldsSysSetup** script will automatically create a batch job responsible for updating the Total Tax, Total Charge, and Header Tax fields in the respective tables. 
-Please note that this script may take a few hours to complete.
+To ensure a smooth transition, a **SysSetup** async script is available to update the newly created columns for existing records in the **CustInvoiceJour** and **CustInvoiceTrans** tables. When customers
+upgrade to version 10.0.41, the **CustInvoiceTaxFieldsSysSetup** script automatically creates a batch job responsible for updating the **Total tax**, **Total charge**, and **Header tax** fields in the respective tables. 
 
-To address the performance issues reported by customers, we have made these necessary improvements. We encourage users to utilize the Sales Invoice Headers V4 and Sales Invoice Lines V4 entities for improved 
-performance and efficiency.
+>[!NOTE]
+> This script may take a few hours to complete.
 
-Additionally, it is worth mentioning that we have encountered several incidents related to performance issues with our Sales Invoice Header and Sales Invoice Line entities. These incidents have been resolved 
-through the changes outlined, ensuring a smoother experience for our customers.
+To address the performance issues reported by customers, we have made these necessary improvements. Users are encouraged to utilize the **Sales invoice headers V4** and **Sales invoice lines V4** entities for improved performance and efficiency.
 
-For more information and updates on the status of the batch job, user can check the Batch Job page under -
+Several incidents have been reported that are related to performance issues with **Sales invoice header** and **Sales invoice line** entities. These incidents are resolved through the changes outlined, ensuring a smoother experience for our customers.
 
-**System Administration > Inquiries > Batch Jobs**. Look for the job description containing "**CustInvoiceTaxFieldsSysSetup**."
+For more information and updates on the status of the batch job, follow these steps:
 
-The performance and efficiency of our sales invoice entities have been significantly enhanced by eliminating inefficient views, computed columns, and introducing optimized versions. 
+1. Go to **System administration > Inquiries > Batch jobs**.
+2. Find the job description containing "**CustInvoiceTaxFieldsSysSetup**."
 
-**Learn article:**  
+### Additional information
 
-[SalesInvoiceHeaderEntity or SalesInvoiceHeaderV2Entity performance issues | AI ERP (eng.ms)](https://eng.ms/docs/cloud-ai-platform/business-applications-and-platform/bap-ai-erp/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/tsgs/finance/accountsreceivable/salesorderinvoicing/salesorderinvoicingentities/salesinvoiceheaderentityorsalesinvoiceheaderv2entityperformanceissues)
+For more information, see [SalesInvoiceHeaderEntity or SalesInvoiceHeaderV2Entity performance issues](../../cloud-ai-platform/business-applications-and-platform/bap-ai-erp/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/tsgs/finance/accountsreceivable/salesorderinvoicing/salesorderinvoicingentities/salesinvoiceheaderentityorsalesinvoiceheaderv2entityperformanceissues)
 
-[Slow performance or high DTU for SalesInvoiceLineEntity and SalesInvoiceLineV2Entity | AI ERP (eng.ms)](https://eng.ms/docs/cloud-ai-platform/business-applications-and-platform/bap-ai-erp/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/tsgs/finance/accountsreceivable/salesorderinvoicing/salesorderinvoicingentities/slowperformanceorhighdtuforsalesinvoicelineentityandsalesinvoicelinev2entity)
+For more information, see [Slow performance or high DTU for SalesInvoiceLineEntity and SalesInvoiceLineV2Entity](../../../cloud-ai-platform/business-applications-and-platform/bap-ai-erp/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/tsgs/finance/accountsreceivable/salesorderinvoicing/salesorderinvoicingentities/slowperformanceorhighdtuforsalesinvoicelineentityandsalesinvoicelinev2entity)
 
