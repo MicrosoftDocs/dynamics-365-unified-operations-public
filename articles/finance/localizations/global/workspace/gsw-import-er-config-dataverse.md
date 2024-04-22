@@ -22,9 +22,10 @@ This article explains how to import Electronic reporting (ER) configurations fro
 ## Set up integration with Dataverse and import the Globalization solution
 
 To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
-1. Create new security role as described in [Create or edit a security role](https://learn.microsoft.com/power-platform/admin/create-edit-security-role)
-2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File,Electronic Reporting Configurations Index File, Globalization Feature File, Globalization Features Index File**. 
-3. Assign created security role to users as described in [Assign security roles](https://learn.microsoft.com/power-platform/admin/assign-security-roles) 
+
+1. Create new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role)
+2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, Globalization Features Index File**. 
+3. Assign created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles) 
 
 You can now import the Globalization solution by following these steps.
 
