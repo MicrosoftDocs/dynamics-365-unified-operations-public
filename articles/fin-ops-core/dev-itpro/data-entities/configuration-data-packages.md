@@ -18,11 +18,6 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
-> [!IMPORTANT]
-> This article applies only to the July 2017 release of Microsoft Dynamics 365 Finance. If you are running a later release, refer to the article [Copy configuration data between companies or legal entities overview](copy-configuration.md). 
-
 Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS). These data packages can help improve the repeatability of implementations and accelerate the configuration.
 
 Data packages contain configuration entity spreadsheets. These entity spreadsheets contain best practice data that you can use to create an initial golden build. The data entities in the data packages are also sequenced appropriately to help guarantee a successful single-click import of the data. 
