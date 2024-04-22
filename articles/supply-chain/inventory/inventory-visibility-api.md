@@ -604,9 +604,20 @@ Body:
 
 Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. When your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By location*, the maximum limit is defined by the following equation:
 
-*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
+*NumOf(SiteID) &times; NumOf(LocationID) <= 10,000*.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
+
+The query by post API is available in two versions. The following table outlines the differences.
+
+| API version 1.0 | API version 2.0 |
+|---|---|
+| Can only query one organization ID. | Can query multiple organization IDs. |
+| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites and warehouses. Can return results in multiple pages. |
+
+The following subsections show how to use each API version.
+
+#### Query by post API version 1.0
 
 ```txt
 Path:
@@ -691,6 +702,42 @@ The following example shows how to query all products in a specific site and loc
 }
 ```
 
+#### Query by post API version 2.0
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery?pageNumber={pageNumber}&pageSize={pageSize}
+Method:
+    Post
+Headers:
+    Api-Version="2.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    # Same as version 1.0
+```
+
+The request format for API version 2.0 is similar to that of version 1.0, but also supports two optional parameters: `pageNumber` and `pageSize`, which allow the system to split a single large result into several smaller documents. The results are sorted by warehouse (`locationId`), and the parameters are used as follows to split results into pages:
+
+- `pageSize` establishes the number of warehouses (`locationId` values) that are returned in each page.
+- `pageNumber` establishes the page number that's returned.
+
+A request of this format returns on-hand inventory data starting from warehouse number *({pageNumber} &minus; 1) &times; {pageSize}* and includes data for the next *{pageSize}* warehouses.
+
+API version 2.0 responds with a document that uses the following structure:
+
+```txt
+{
+    Value: { # Response same as Api-Version=1.0 }
+    nextLink: onhand/indexquery?pageNumber={pageNumber+1}&pageSize={pageSize}
+}
+```
+
+When the request reaches the last warehouse (`locationId`), the `nextLink` value is an empty string.
+
+API version 2.0 also lets you specify more than one organization ID in your request. To do so, include a comma-separated list of organization IDs in the `organizationId` filter of your request document. For example, `"organizationId": ["org1", "org2", "org3"]`.
+
 ### <a name="query-with-get-method"></a>Query by using the get method
 
 ```txt
@@ -715,7 +762,9 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_contoso_product&siteId=iv_contoso_site&locationId=iv_contoso_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
-## <a name="exact-query-with-post-method"></a>On-hand exact query
+The system doesn't support querying inventory over multiple organization IDs with the GET method.
+
+## On-hand exact query
 
 On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
 
@@ -731,7 +780,15 @@ For a regular on-hand query, if you specify `"siteId": ["1","2"]` and `"location
 
 As you see, the regular on-hand query doesn't recognize that location A exists only in site 1, and location B exists only in site 2. Therefore, it makes redundant queries. To accommodate this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in the query body. In this case, you'll query and receive results for only site 1, location A and site 2, location B.
 
-### <a name="exact-query-with-post-method"></a>Exact query by using the post method
+### <a name="exact-query-with-post-method"></a>On-hand exact query query using the post method
+
+The on-hand exact query by post API is available in two versions. The following table outlines the differences.
+
+| API version 1.0 | API version 2.0 |
+|---|---|
+| Can only query one organization ID. | Can query multiple organization IDs. |
+
+#### On-hand exact query by post API version 1.0
 
 ```txt
 Path:
@@ -804,6 +861,38 @@ The following example shows how to query all products in multiple sites and loca
     "returnNegative": true
 }
 ```
+
+#### On-hand exact query by post API version 2.0
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="2.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            productId: string[],
+            keys: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+API version 2.0 differs from version 1.0 in the following ways:
+
+- The `filters` section now has a `keys` field instead of a `dimensions` field. The `keys` field works like the `dimensions` field in version 1.0, but can now also include `organizationId`. You can specify the keys in any order.
+- The `filters` section no longer supports the `organizationId` field. Instead, you can include `organizationId` among the dimensions in the `keys` field (for example, `keys: ["organizationId", "siteId", "locationId"]`) and define organization ID values at the matching position in the `values` field (for example, `values: ["SCM_IV", "iv_contoso_site_1", "iv_contoso_location_1"]`).
+
+Other fields are identical to API version 1.0.
 
 ## <a name="product-search-query"></a>Query with product search
 
