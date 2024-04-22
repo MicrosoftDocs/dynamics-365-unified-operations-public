@@ -33,7 +33,7 @@ This section contains a table that lists the features that are included in this 
 |Cash and bank management|Customer and vendor netting|This feature enables netting capability between open customer balances and open vendor balances. Customer and vendor payment journals are no longer created to settle open vendor and customer transactions. Instead, netting journals are created. This feature is general available in Dynamics 365 Finance version 10.0.40.|Feature management|
 |Accounts receivable |	Improve performance and efficiency of Sales invoice entities.|	To enhance the performance and efficiency of our sales invoice entities, we have made significant improvements by eliminating inefficient views and computed columns. The new entities no longer rely on inefficient views but instead directly fetch all columns from the data sources, allowing for faster data retrieval.|Feature management|	 
 |Accounts payable|	Post document with distribution process splitting	|This feature optmizes the memory usage and avoids memory overflow when handling long invoices by splitting the disturbution prcesss as an individual batch tasks. |	Feature management |
-
+ |Accounts payable  |	Extend the length of vendor invoice numbers |	This feature extends the invoice number from 20 characters to 50 characters in the vendor invoice and invoice journal. Before enabling the feature, create a LCS tickets to open the flight EableEdtStringDatabaseStringLengthAttributeInComputation.  |	Default off |
 
 ## Feature enhancements included in this release
 
