@@ -8,6 +8,7 @@ ms.date: 04/24/2024
 ms.custom:
 ms.search.form: 
 audience: Application User
+ms.topic: how-to
 
 ---
 # Display the company logo on the customer account statement
