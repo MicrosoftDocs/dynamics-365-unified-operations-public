@@ -83,8 +83,14 @@ Work template definitions play an important role in the definition of warehouse 
 
 If multiple workers must be able to process work for some of your warehouse operations, you might want to use the concept of *staging* for the inventory and separate the work execution into different work classes.
 
-#### <a name="warehouse-management-parameters-work"></a>Define general warehouse work policies
-Section **Warehouse management \> Setup \> Warehouse management parameters - General - Work** lets you configure different policies that influence how warehouse work is created and handled, such as default work priority value, policies for deferred work processing, work transaction date policies, and other settings. Each field has tooltip help. Hover your mouse pointer over a field's label to see the tooltip.
+### <a name="warehouse-management-parameters-work"></a>General warehouse work policies
+
+General warehouse work policies let you influence how warehouse work is created and handled. You can set up policies to control options such as default work priority values, deferred work processing, work transaction dates, and more. To view and set these policies, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Open the **General** tab.
+1. Expand the **Work** FastTab.
+1. Select policies and set other work options available on this FastTab. Each field has tooltip help. To see the tooltip for a field, hover your mouse pointer over the relevant field label.
 
 ### Work pools
 
