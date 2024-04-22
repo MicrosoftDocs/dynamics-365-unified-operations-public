@@ -31,7 +31,7 @@ This FAQ is intended to provide clarity about the service updates, processes, an
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 > [!IMPORTANT]
-> An important change is coming to the service update release schedule. The number of service updates that are released annually is being reduced from seven to four. This change affects the preview availability, general availability (self-update), and end-of-service dates for version 10.0.38, and it goes into full effect as of version 10.0.39 (the "April" 2024 release).
+> The number of service updates that are released annually is now reduced from seven to four. This change affects the preview availability, general availability (self-update), and end-of-service dates for version 10.0.38, and it went into full effect as of version 10.0.39 (the "April" 2024 release).
 
 ### What's changing with the new release cadence?
 
@@ -45,8 +45,24 @@ The following changes are being implemented:
 - The maximum number of consecutive updates that can be paused is reduced from three to one. However, because release durations are extended, the same minimum of two service updates per year is maintained.
 - We're introducing another autoupdate window for each service update, starting with version 10.0.39. For more information, see the FAQ for autoupdate section in this article.
 
+### Is the change from the maximum of three pauses to one already in effect?
+
+Yes. Beginning with 10.0.39 (the April'24 release) you are only able to pause a maximum of one update. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for GA (self-update) and autoupdate dates by version.
+
+The following table shows the allowed pauses through the transition based on your installed versions, starting 10.0.35,36 and 37 which are non compliant since the release of 10.0.39. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+
+> [!NOTE]
+> If your LCS project has environments on older, non-compliant versions like 10.0.35, 10.0.36, or 10.0.37, pausing the upcoming auto-update (e.g., 10.0.39 May auto-update) is not supported. To comply, update all environments to the current version (10.0.39) in the next auto-update window. You can also self-update to a compliant version (e.g., 10.0.38 as of April 22, 2024) to pause an upcoming auto-update. Microsoft cannot make exceptions for projects with environments on non-compliant versions. Upgrade to a supported version to use the pause functionality.
+
+| On 10.0.35 | On 10.0.36  | On 10.0.37  | On 10.0.38  | On 10.0.39   |
+|------------|-------------|-------------|-------------|--------------------|
+| 10.0.36 release can be paused. | 10.0.37 release can be paused. | 10.0.38 release can be paused. | 10.0.39 release can be paused. |10.0.40 release can be paused|
+| 10.0.37 release can be paused. | 10.0.38 release can be paused. | Must take 10.0.39 release, in one of the two autoupdate windows. | Must take 10.0.40 release in one of the two autoupdate windows. | Must take 10.0.41 release in one of the two autoupdate windows. |
+| 10.0.38 release can be paused. | Must take 10.0.39 release, autoupdate windows for pausing not applicable. | |  |  |
+| Must take 10.0.39 release, autoupdate windows for pausing not applicable. | | |  |  |
+
 ### What can I expect with the new (autoupdate) cadence?
-Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring seven days prior to production. For more information regarding how this pause policy works, see the **Is the change from the maximum of three pauses to one already in effect** section later in this article.
+Beginning version 10.0.39, the service update autoupdate window is divided into two windows that are separated by approximately a four-week gap. This change provides customers with greater flexibility in scheduling their autoupdates. Autoupdate Window one closely resembles the historical approach of OneVersion service updates. Autoupdate Window two allows you to schedule your update for four weeks later. Apart from this, autoupdates continues to function as before, with UAT sandbox updates occurring seven days prior to production. Additionally please note that if your LCS project has environments on older, non-compliant versions like 10.0.35, 10.0.36, or 10.0.37, pausing the upcoming auto-update (e.g., 10.0.39 May auto-update) is not supported. To comply, update all environments to the current version (10.0.39) in the next auto-update window. You can also self-update to a compliant version (e.g., 10.0.38 as of April 22, 2024) to pause an upcoming auto-update. Microsoft cannot make exceptions for projects with environments on non-compliant versions. Upgrade to a supported version to use the pause functionality.
 
 ### Does the new release schedule affect when I can schedule autoupdates?
 Yes, with version 10.0.39, there are two autoupdate windows to choose from for every service update. Customers can then select a weekend for the second autoupdate, which commences one month after the first autoupdate instance. There isn't a change in how autoupdates are scheduled in Microsoft Dynamics Lifecycle Services and when those autoupdates occur. The only change is which service updates are released each year. 
@@ -58,21 +74,7 @@ In the example above, if a customer opts out of both autoupdate windows for the 
 > [!IMPORTANT]
 > Customers are explicitly required to pause both autoupdate windows to pause a release if they are eligible to do so, based on the pause policy. Pausing the first autoupdate window will not auto pause the second window.
 
-### Is the change from the maximum of three pauses to one already in effect?
 
-No, the enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled autoupdates for version 10.0.38 are completed. From a release version perspective, beginning with 10.0.39 you'll only be able to pause a maximum of one update. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for GA (self-update) and autoupdate dates by version.
-
-The following table shows the allowed pauses through the transition based on your installed version. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
-
-> [!NOTE]
-> Maximum pause of one release is allowed after 10.0.38 autoupdate schedule is complete.
-
-| On 10.0.35 | On 10.0.36  | On 10.0.37  | On 10.0.38  | On 10.0.39   |
-|------------|-------------|-------------|-------------|--------------------|
-| 10.0.36 release can be paused. | 10.0.37 release can be paused. | 10.0.38 release can be paused. | 10.0.39 release can be paused. |10.0.40 release can be paused|
-| 10.0.37 release can be paused. | 10.0.38 release can be paused. | Must take 10.0.39 release, in one of the two autoupdate windows. | Must take 10.0.40 release in one of the two autoupdate windows. | Must take 10.0.41 release in one of the two autoupdate windows. |
-| 10.0.38 release can be paused. | Must take 10.0.39 release, autoupdate windows for pausing not applicable. | |  |  |
-| Must take 10.0.39 release, autoupdate windows for pausing not applicable. | | |  |  |
 
 ### When does the new service update release cadence take effect?
 
@@ -88,6 +90,13 @@ Yes. To enable version 10.0.38 to act as a transition release, some release mile
 - General availability for self-update occurs a month earlier, on December 22, 2023.
 - There's no change to the general availability broadcast (autoupdate) dates.
 - The servicing window is extended from April 12 to August 9, 2024.
+
+### How does this change affect pausing updates for non-compliant versions like 10.0.35, 10.0.36, and 10.0.37?
+If your LCS project has any environment (default or sandbox or production)  on non-compliant versions like 10.0.35, 10.0.36, or 10.0.37, pausing 10.0.39 is not supported. To comply, update all environments to the current version (10.0.39) in the next auto-update window. You can also self-update all environments to 10.0.38 to pause 10.0.39. See the auto-update policy change for details.
+
+Is it possible to stop the 10.0.39 auto-update from happening even though I'm on a version that is not compliant (see related question above)?
+At this time Microsoft cannot make exceptions for projects that have environments on versions that are out of compliance. Please upgrade to a supported version to use the pause functionality
+
 
 ### Can the updates be delayed? What's the policy?
 
