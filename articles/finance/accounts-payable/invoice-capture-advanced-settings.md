@@ -3,7 +3,7 @@
 
 title: Invoice capture solution advanced settings
 description: This article provides information about advanced settings in the Invoice capture solution.
-author: sunfzam
+author: leizi2015
 ms.date: 09/25/2022
 ms.topic: overview
 # optional metadata
@@ -18,7 +18,7 @@ ms.collection: get-started
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: zezhangzhao
+ms.author: leizi2015
 ms.search.validFrom: 2022-09-28
 ms.dyn365.ops.version: 
 
