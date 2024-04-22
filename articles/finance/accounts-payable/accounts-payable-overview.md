@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Configure Accounts payable overview
-description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
-author: abruer
-ms.date: 04/12/2024
-ms.topic: overview
-# optional metadata
-
-ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable, DeliveryReason, DeliveryTerms, DestinationCode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to set up basic and optional functionality for Accounts payable, including setup steps that you must complete before you start to set up Accounts payable.
+author: twheeloc
 ms.author: shpandey
+ms.topic: overview
+ms.date: 04/12/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable, DeliveryReason, DeliveryTerms, DestinationCode
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ---
 
 # Configure Accounts payable overview

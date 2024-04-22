@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Invoice capture FAQ
-description: This article answers frequently asked questions about the Invoice capture solution.
+description: Access answers to frequently asked questions about the Invoice capture solution, including questions about error messages.
 author: sunfzam
-ms.date: 08/21/2023
-ms.topic: faq
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: zezhangzhao
+ms.topic: faq
+ms.date: 08/21/2023
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: 
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Invoice capture FAQ

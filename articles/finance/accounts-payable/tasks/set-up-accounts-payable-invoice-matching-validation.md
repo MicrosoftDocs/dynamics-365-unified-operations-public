@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up Accounts payable invoice matching validation
-description: This article provides information on how to set up Accounts payable invoice matching validation. 
-author: abruer
+description: Learn about on how to set up Accounts payable invoice matching validation, including an outline on determining which validations to use. 
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: VendParameters   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendParameters
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up Accounts payable invoice matching validation
 
 [!include [banner](../../includes/banner.md)]
