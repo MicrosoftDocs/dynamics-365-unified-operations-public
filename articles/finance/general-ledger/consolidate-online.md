@@ -57,5 +57,5 @@ All consolidation records are kept in history and can be seen in the grid for au
 - Select **Reviewed** to show only those consolidation records that have marked Reviewed.
 - Mark the **Show reversed** checkbox to include reversed records in the grid. 
 
-
+To learn more about Consolidation templates and how to set them up see [Consolidation templates](Consolidation-templates.md)
 
