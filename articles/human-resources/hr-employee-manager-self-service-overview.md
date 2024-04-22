@@ -27,8 +27,6 @@ ms.dyn365.ops.version: Human Resources
 # Employee self service overview
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article provides an overview of the Employee self service workspace.

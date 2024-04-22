@@ -27,8 +27,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Personnel actions FAQ
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks. 

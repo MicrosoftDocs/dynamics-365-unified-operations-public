@@ -84,7 +84,6 @@ Procurement and sourcing covers all steps from identifying a need for product an
 ## Prices and discounts
 -   [Purchase agreements](purchase-agreements.md)
 -   [Create a purchase agreement](tasks/create-purchase-agreement.md)
--   [Vendor rebates](/dynamics/s-e/) (white paper)
 
 ## Product receipt and invoicing
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)

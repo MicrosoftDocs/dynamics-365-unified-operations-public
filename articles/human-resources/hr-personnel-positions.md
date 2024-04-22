@@ -25,9 +25,6 @@ ms.dyn365.ops.version: Version 1611
 
 # Positions
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes the conceptual elements that a position can include. It also provides examples that show how you can use those elements in your organization.

@@ -25,9 +25,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Manage items that are lent to workers
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Loan items are records that help managers track the physical items that your company lends to its workers. 

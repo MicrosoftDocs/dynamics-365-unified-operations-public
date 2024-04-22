@@ -26,9 +26,6 @@ ms.dyn365.ops.version: Version 1611
 
 # View and manage address changes
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article explains how you can view and manage address changes on the **Edit personal details** page (which you open from the **Employee self service** workspace) or the **Worker** details page in Dynamics 365 Human Resources.

@@ -24,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Server-to-server authentication for the ATS integration API
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

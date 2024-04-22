@@ -95,16 +95,6 @@ items:
         items:
         - name: Provision Human Resources in the finance and operations infrastructure
           href: hr-admin-setup-provision-fo.md
-        - name: Provision Human Resources in the stand-alone infrastructure
-          items:
-          - name: Provision Human Resources
-            href: hr-admin-setup-provision.md
-          - name: Copy an instance
-            href: hr-admin-setup-copy-instance.md
-          - name: Remove an instance
-            href: hr-admin-setup-remove-instance.md
-          - name: Update process
-            href: hr-admin-setup-update-process.md
       - name: Set up data integration
         items:
         - name: Choose a data integration technology
@@ -123,8 +113,6 @@ items:
           href: dev-itpro/hr-admin-virtual-entity-faq.md
         - name: Configure integration with Dataverse  
           href: hr-dataverse-integration.md
-        - name: Configure integration with Finance
-          href: hr-admin-integration-finance.md
         - name: Configure integration with Dayforce
           href: hr-admin-integration-dayforce.md
         - name: Create a recurring data export app
@@ -909,8 +897,6 @@ items:
         href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Security for virtual table integrations  
         href: hr-security-config.md
-      - name: Configure integration with Finance
-        href: hr-admin-integration-finance.md
       - name: Human resources to resource integration
         href: hr-admin-integration-hr-rm.md
       - name: Create links from Human resources to another environment
