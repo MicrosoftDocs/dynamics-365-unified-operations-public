@@ -475,7 +475,7 @@ To set up menus for mobile devices, follow these steps:
 1. Use the up arrow and down arrow buttons next to the **Menu structure** column to arrange the items in the menu.
 
     > [!TIP]
-    > Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, you should add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click it in the **Menu structure** column and select **Hide**. To show it again, right-click on a hidden item and select **Show**.
+    > Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, you should add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**.
 
 1. On the Action Pane, select **Save**.
 
