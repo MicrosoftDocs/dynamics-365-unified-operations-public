@@ -14,6 +14,8 @@ ms.search.region: Global
 
 ---
 
+# What's new or changed in Dynamics 365 Finance 10.0.40 (June 2024)
+
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
