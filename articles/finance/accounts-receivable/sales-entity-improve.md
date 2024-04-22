@@ -51,9 +51,4 @@ For more information and updates on the status of the batch job, follow these st
 1. Go to **System administration > Inquiries > Batch jobs**.
 2. Find the job description containing "**CustInvoiceTaxFieldsSysSetup**."
 
-### Additional information
-
-For more information, see [SalesInvoiceHeaderEntity or SalesInvoiceHeaderV2Entity performance issues](../../cloud-ai-platform/business-applications-and-platform/bap-ai-erp/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/tsgs/finance/accountsreceivable/salesorderinvoicing/salesorderinvoicingentities/salesinvoiceheaderentityorsalesinvoiceheaderv2entityperformanceissues).
-
-For more information, see [Slow performance or high DTU for SalesInvoiceLineEntity and SalesInvoiceLineV2Entity](../../../cloud-ai-platform/business-applications-and-platform/bap-ai-erp/aierp-finance/d365-finance-application-core-services/dynamics-365-ai-erp/tsgs/finance/accountsreceivable/salesorderinvoicing/salesorderinvoicingentities/slowperformanceorhighdtuforsalesinvoicelineentityandsalesinvoicelinev2entity).
 
