@@ -18,7 +18,7 @@ ms.custom:
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: leizi2015
+ms.author: raynezou
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
 
