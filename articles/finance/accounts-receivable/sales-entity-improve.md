@@ -15,6 +15,8 @@ ms.custom:
 # Improve performance and efficiency of sales invoice entities
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
 
 To enhance the performance and efficiency of our sales invoice entities, significant improvements have been made by eliminating inefficient views, and computed columns. This article provides an overview of the
 changes made.
