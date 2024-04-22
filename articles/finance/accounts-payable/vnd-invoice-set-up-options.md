@@ -17,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: leizi2015
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
 
