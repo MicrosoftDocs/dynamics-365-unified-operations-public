@@ -18,7 +18,7 @@ ms.collection: get-started
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: leizi2015
+ms.author: raynezou
 ms.search.validFrom: 2022-09-28
 ms.dyn365.ops.version: 
 
