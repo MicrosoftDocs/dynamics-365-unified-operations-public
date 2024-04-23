@@ -62,7 +62,7 @@ Follow the procedures in this section to configure Collections coordinator summa
 
 ### Install Copilot
 
-1. In Partner Center, go to the [Copilot in Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92) solution.
+1. In Partner Center, go to the [Copilot in Microsoft Dynamics 365 Finance] <!-- The following link is broken: (https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92) --> solution.
 1. Accept the terms and conditions, and then select **Install**. The Copilot solution is installed in the selected environment.
 1. Go to the environment page for the selected environment.
 1. Select **Dynamics 365 apps** to check the status of the installation. While the installation is occurring, the status is **Installing**. After the installation is completed, the status is changed to **Installed**.
