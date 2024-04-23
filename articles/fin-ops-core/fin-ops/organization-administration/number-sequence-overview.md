@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Number sequences overview
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.
 author: SunilGarg
-ms.date: 05/03/2023
-ms.topic: overview
-# optional metadata
-
-ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: overview
+ms.date: 05/03/2023
+ms.reviewer: sericks
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
 ms.dyn365.ops.version: AX 7.0.0
-contributors: 
-- saurabh-kuchhal
-
+ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ---
 
 # Number sequences overview

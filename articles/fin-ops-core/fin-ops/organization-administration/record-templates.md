@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Record templates overview
-description: This article introduces the concept of record templates and explains how they can be used to create records that share information.
+description: Learn about the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
-ms.date: 07/25/2019
-ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 61ada2d8-84c3-44bc-b4c5-516b1aeac3d1
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: sericks
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 61ada2d8-84c3-44bc-b4c5-516b1aeac3d1
 ---
 
 # Record templates overview

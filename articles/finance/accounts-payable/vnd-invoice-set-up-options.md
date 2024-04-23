@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Setup options for vendor invoice automation 
-description: This article describes the options that are available for setting up and configuring vendor invoice automation.
+description: Learn about the options that are available for setting up and configuring vendor invoice automation, including overviews on parameters.
 author: sunfzam
-ms.date: 02/14/2022
+ms.author: shpandey
 ms.topic: article
-# optional metadata
-
-ms.search.form:  
+ms.date: 02/14/2022
+ms.custom: 
+ms.reviewer: twheeloc  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raynezou
 ms.search.validFrom: 2017-08-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Setup options for vendor invoice automation
