@@ -4,10 +4,8 @@
 title: Terminate schedule lines
 description: This topic describes how to setup the consolidation templates to use with the Consolidate online functionality. 
 author: JodiChristiansen
-ms.date: 02/07/2024
+ms.date: 04/23/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
