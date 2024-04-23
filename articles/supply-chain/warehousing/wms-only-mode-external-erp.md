@@ -1,5 +1,5 @@
 ---
-title: Work with Warehouse management only mode in Supply Chain Management (preview)
+title: Warehouse management only mode with external ERP systems (preview)
 description: This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode with external ERP system (preview)
+# Warehouse management only mode with external ERP systems (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

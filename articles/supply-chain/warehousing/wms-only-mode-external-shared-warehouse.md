@@ -1,5 +1,5 @@
 ---
-title: External shared warehouse processing (preview)
+title: Warehouse management only mode with external shared warehouses (preview)
 description: This article provides information about running Warehouse management only mode with external shared warehouse processing, which enables the integration of the warehouse management (WMS) functionality in separate legal entity handling requests from multiple sales subsidiaries/LEs in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode with external shared warehouse (preview)
+# Warehouse management only mode with external shared warehouses (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
