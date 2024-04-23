@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Accounting distributions and journal entries for vendor invoices
-description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
+description: Learn about accounting distributions, which are used to define how an amount will be accounted for on vendor invoices.
 author: sunfzam
-ms.date: 12/15/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: VendEditInvoice
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shpandey
+ms.topic: article
+ms.date: 12/15/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendEditInvoice
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ---
 
 # Accounting distributions and journal entries for vendor invoices
