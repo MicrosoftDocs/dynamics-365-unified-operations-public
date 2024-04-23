@@ -53,7 +53,7 @@ To automatically generate the report, first create enough sales tax codes to kee
 | 9erikord-sales | KMD2-9%special | KMD2-9%erikord | 2 | 9erikord | Not included | **Special procedure** for VAT taxation at a rate of 9% (line 2 of VAT return (KMD)) | Käibemaksu maksustamise erikord 9% määraga (käibemaksudeklaratsiooni (KMD) rida 2) |
 | 9-selfsupply | KMD2.1-9%selfsupply | KMD2.1-9%selfsupply | 2 | 9 | Not included | Self-supply of goods or services taxable at 9% (line 2 of VAT return) | 9% määraga maksustatav kauba või teenuse omatarve (KMD rida 2) |
 | EUAcquisitionsServicesUseTax-9 | KMD2UseTaxEU\_S-9% | KMD2UseTaxEU\_S-9% | 2 and 6 | Not included | Not included | UseTax Intra-Community acquisitions of services received from a taxable person of another Member State, total, incl. (line 2, 6 without 6.1 of VAT return) at a rate of 9% | UseTax auba ühendusesisene teise liikmesriigi maksukohustuslaselt saadud teenused kokku (KMD rida 2, 6 ilma 6.1) - 9% |
-| EUAcquisitionsGoodsUseTax-9 | KMD2UseTaxEU\_G-9% | KMD2UseTaxEU\_G-9% | 2,  6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of goods (line 2, 6.1 of VAT return) at a rate of 9% | UseTax Kauba ühendusesisene soetamine (KMD rida 2, 6.1) - 9% |
+| EUAcquisitionsGoodsUseTax-9 | KMD2UseTaxEU\_G-9% | KMD2UseTaxEU\_G-9% | 2, 6.1, and 6 | Not included | Not included | UseTax Intra-Community acquisitions of goods (line 2, 6.1 of VAT return) at a rate of 9% | UseTax Kauba ühendusesisene soetamine (KMD rida 2, 6.1) - 9% |
 | OtherAcquisitionAct411UseTax-9 | KMD1UseTaxAcq411-9% | KMD1UseTaxAcq411-9% | 2, 7.1, and 7 | 9 | Included | UseTax Acquisition of immovables, scrap metal, precious metal, and metal products subject to value-added tax under the special arrangements (VAT Act §41¹) (line 2, 7.1 of VAT return) at a rate of 9% | UseTax Erikorra alusel maksustatava kinnisasja, metallijäätmete, väärismetalli ja metalltoodete soetamine (KMS § 411) (KMD rida 2, 7.1) - 9% |
 | OtherAcquisitionUseTax-9 | KMD1UseTaxAcqOther-9% | KMD1UseTaxAcqOther-9% | 2 and 7 | 9, PurchAnnex | Not included | UseTax Acquisition of other goods and services subject to VAT incl. (line 2, 7 of VAT return) at a rate of 9% | UseTax Muu kauba soetamine ja teenuse saamine, mida maksustatakse käibemaksuga (KMD rida 2, 7) - 9% |
 | 5-sales | KMD21-5% | KMD21-5% | 21 | 5 | Not included | Acts and transactions subject to tax at a rate of 5% (line 21 of VAT return) | 5% määraga maksustatavad toimingud ja tehingud (KMD rida 21) |
@@ -104,7 +104,7 @@ Open the **Electronic reporting** workspace, and import the latest versions of t
 - VAT Declaration XML (EE)
 - VAT Declaration Excel (EE)
 
-Import **Tax declaration model mapping** under **Tax declaration model** and mark it **Default for model mapping**.
+Import **Tax declaration model mapping** under **Tax declaration model**, and mark it **Default for model mapping**.
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -124,11 +124,11 @@ Follow these steps to define which of the available sales tax transaction attrib
 
     | Field | Description |
     |---|---|
-    | **Lookup result** | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article. |
-    | **Tax code** | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
-    | **Transaction classifier** | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value.</p> |
-    | **Item sales tax group** | Use the **Item sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
-    | **Sales tax group** | Use the **Sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
+    | Lookup result | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article. |
+    | Tax code | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
+    | Transaction classifier | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value.</p> |
+    | Item sales tax group | Use the **Item sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
+    | Sales tax group | Use the **Sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
 
     > [!NOTE]
     > Associate all sales tax codes (or combinations of a sales tax code, tax classifier, item sales tax group, and sales tax group) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
@@ -212,32 +212,32 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
     | Field | Description |
     |---|---|
-    | **From date** | Select the start date of the reporting period. |
-    | **Settlement period** | Select the settlement period. |
-    | **Sales tax payment version** | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
+    | From date | Select the start date of the reporting period. |
+    | Settlement period | Select the settlement period. |
+    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
 
 3. Select **OK**, and then, in the next dialog box, set the following fields.
 
     | Field | Description |
     |---|---|
-    | **Report composition** | <p>Select one or more of the following values in the lookup list to specify which parts the report must include:</p><ul><li>Declaration body</li><li>Sales Annex - Part A</li><li>Purchases Annex - Part B</li></ul> |
-    | **Summarize sales per partner** | Select this checkbox to report information in Sales annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part A, and amounts are summarized per partner. |
-    | **Summarize purchases per partner** | Select this checkbox to report information in Purchase annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part B, and amounts are summarized per partner. |
-    | **Number of cars used for business purposes** | Specify the number of cars that were acquired solely (100 percent) for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
-    | **Number of cars used partially for business purposes** | Specify the number of cars that were acquired partially for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
-    | **Invoice threshold** | Specify the threshold to apply for reporting invoices in Sales annexes and Purchase annexes. Invoices where the amounts are below the specified threshold aren't included in the annexes. |
-    | **Declaration period type** | Select the declaration period type in the list: **Normal period** (the default value) or **Bankruptcy period**. |
-    | **Submitter person** | Select a person who will submit the VAT declaration. |
+    | Report composition | <p>Select one or more of the following values in the lookup list to specify which parts the report must include:</p><ul><li>Declaration body</li><li>Sales Annex - Part A</li><li>Purchases Annex - Part B</li></ul> |
+    | Summarize sales per partner | Select this checkbox to report information in Sales annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part A, and amounts are summarized per partner. |
+    | Summarize purchases per partner | Select this checkbox to report information in Purchase annexes grouped by partner. If this checkbox is selected, the invoice number and date aren't mandatory fields in part B, and amounts are summarized per partner. |
+    | Number of cars used for business purposes | Specify the number of cars that were acquired solely (100 percent) for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
+    | Number of cars used partially for business purposes | Specify the number of cars that were acquired partially for business purposes. If no value is entered, the system collects the number from referenced inventory transactions. |
+    | Invoice threshold | Specify the threshold to apply for reporting invoices in Sales annexes and Purchase annexes. Invoices where the amounts are below the specified threshold aren't included in the annexes. |
+    | Declaration period type | Select the declaration period type in the list: **Normal period** (the default value) or **Bankruptcy period**. |
+    | Submitter person | Select a person who will submit the VAT declaration. |
 
-4. Specify parameters of the batch processing on the **Run in the background** FastTab and enable the **Batch processing** checkbox to run the report in batch.
-5. Select **OK**, and review the Excel report. When the report is executed in batch, generated file can be found on **Organization administration** > **Electronic reporting** > **Electronic reporting jobs** page as attachment to the batch job.
+4. On the **Run in the background** FastTab, specify parameters of the batch processing, and select the **Batch processing** checkbox to run the report in batch mode.
+5. Select **OK**, and review the Excel report. When the report is run in batch mode, you can find the generated file as an attachment of the batch job on the **Electronic reporting jobs** page (**Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**).
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
 Sales tax payment transactions are produced by the [Settle and post sales tax](../../general-ledger/tasks/create-sales-tax-payment.md) job procedure that settles sales tax balances in the sales tax accounts and offsets them to the sales tax settlement account for a given period. After the **Settle and post sales tax** job procedure is completed for an interval of the sales tax settlement period, you can generate the VAT declaration in Excel from the **Sales tax payments** page.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
-2. Select **Print report**, specify report's parameters as described in [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) and then select **OK**.
+2. Select **Print report**, specify report parameters as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
 3. Review the Excel file that's generated for the selected sales tax payment line.
 
     > [!NOTE]
