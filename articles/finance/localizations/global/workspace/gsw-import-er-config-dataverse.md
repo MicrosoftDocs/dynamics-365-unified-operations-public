@@ -29,7 +29,7 @@ To use this functionality, you should have a Dataverse environment that's connec
 
 You can now import the Globalization solution by following these steps.
 
-1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-crm/mscrm.d365-globalizationartifacts-preview?flightCodes=a0bc3ba0711a4558bf3a2932a66dc11d) on AppSource.
+1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on AppSource.
 1. Select **Get it now**.
 1. Fill in the required data.
 1. Select an environment, and then select **Install**.
