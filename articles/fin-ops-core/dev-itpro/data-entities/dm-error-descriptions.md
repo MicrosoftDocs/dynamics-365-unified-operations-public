@@ -27,8 +27,6 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article documents the scenarios where specific errors are seen. It doesn't provide a complete list of errors and scenarios. However, keep checking back, because the list is continuously updated.
 
 ## Import to target failed due to an update conflict as more than one process is trying to update the same record at the same time

@@ -30,8 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article describes how you can use the data management framework to manage data entities and data entity packages in finance and operations.
 
 The data management framework consists of the following concepts:

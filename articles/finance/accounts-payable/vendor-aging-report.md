@@ -3,7 +3,7 @@
 
 title: Vendor aging report
 description: This article provides information about the Vendor aging report that's available in Microsoft Dynamics 365 Finance.
-author: sunfzam
+author: leizi2015
 ms.date: 02/13/2023
 ms.topic: overview
 # optional metadata
@@ -18,7 +18,7 @@ ms.collection: get-started
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: zezhangzhao
+ms.author: raynezou
 ms.search.validFrom: 2022-09-28
 ms.dyn365.ops.version: 
 

@@ -3,7 +3,7 @@
  
 title: Process collection letters
 description: This article shows how to create, print, and post collection letters. 
-author: ShivamPandey-msft
+author: sunitacharya
 ms.date: 03/28/2023
 ms.topic: how-to 
  
@@ -17,7 +17,7 @@ ms.reviewer: twheeloc
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: sunitacharya
 ms.search.validFrom: 2018-12-01 
 ms.dyn365.ops.version: 8.1.3
 

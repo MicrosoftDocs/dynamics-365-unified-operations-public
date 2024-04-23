@@ -3,7 +3,7 @@
 
 title: Accounts receivable posting
 description: This article explains how postings are configured in Accounts receivable and provides examples of posting configurations.
-author: rachel-profitt
+author: rcarlson
 ms.date: 12/03/2021
 ms.topic: article
 # optional metadata
@@ -18,7 +18,7 @@ ms.custom:
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: rcarlson
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
 
