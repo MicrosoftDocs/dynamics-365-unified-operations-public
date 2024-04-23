@@ -45,7 +45,7 @@ The following example inserts a new record into the CustTable table. The **Accou
 ```xpp
 ttsBegin;
     CustTable custTable;
-    select forUpdate custTable;
+    custTable.initValue();
     custTable.AccountNum = '2000';
     custTable.CustGroup = '1';
     custTable.insert();
