@@ -94,6 +94,21 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 ### Initiate the Go-live Readiness Review in the portal
 
+There are 2 options to proceed with the Go-Live review. You can choose either one of the following options. Please note that the Option 2 will be deprecated in few weeks.
+
+#### Option 1 - Self-Service Create/Join the Project in the Dynamics 365 Implementation Portal
+By following this option, the steps of creating the project, adding the admin/users and submitting the Go-Live review can be performed by the Partner/Customer in the Dynamics 365 Implementation Portal without involving Microsoft. With the introduction of the Onboarding Wizard in the Portal, these steps have been simplified for Self-service.
+
+1. The first step is to create the Project in Portal. Please follow the steps [here](https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-portal/onboard-project) to create/join the project.
+2. Please ensure that the Project admin on the project is from **customer** organization. This user from Customer organization can then add additional users and also serve as the key participant of the Go-live Readiness review. Please refer to [Admin](https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-portal/manage-projects#admin) section to understand how to add/remove users.
+3. Once the project is created, the project team can create and perform review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registered on portal can access this article. 
+
+> [!Note]
+> Please note that, if you follow the above method, you need **not** follow the Option 2 steps below. Please move to the next step of [submitting the review](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/prepare-go-live?context=%2Fdynamics365%2Fcontext%2Fcommerce#submit-the-review)
+
+#### Option 2 - Share details with Microsoft to create the Project 
+Please follow the below steps if you have any issues creating the project via the Dynamics 365 Implementation Portal/blocked from creating project due to any other reason. This option will be deprecated in few weeks and we highly encourage you to follow Option 1 whenever possible.
+
 1. The project team decides who from the **customer** organization will be the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be granted only to the member of the customer organization. Microsoft grants access to this user and this user will manage access for other team members. 
 
 2. Project team sends an e-mail to d365fogl@microsoft.com and includes the following information:
@@ -109,6 +124,9 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 4. The admin adds more project team members.
 5. Project team creates the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registered on portal can access this article. 
 
+> [!NOTE]
+> If you encounter any issue with the portal, contact the portal Support team by selecting **Contact us** in the upper-right corner of the portal or sending an email to <ftd365ip-support@microsoft.com>. In the email, specify the ID of your project in Lifecycle Services, and provide details that describe the issue.
+
 ### Submit the review
 
 - The project team should provide answers to all questions in the review. The review process in the portal supports multi-user scenarios. Multiple team members can provide details for the go-live review at the same time.
@@ -119,9 +137,6 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 - Microsoft FastTrack reviews the project and provides a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. **The review might require up to three business days for the initial report, plus more time for any risk mitigation that is required.**
 - Users who have been selected as **Review participants** in the portal receive email communication that provides updates about the review.
 - When all critical risks have been addressed, and the review has been completed, Microsoft enables the production environment slot in the Lifecycle Services project. The customer/partner can then trigger the production environment deployment.
-
-> [!NOTE]
-> If you encounter any issue with the portal, contact the portal Support team by selecting **Contact us** in the upper-right corner of the portal or sending an email to <ftd365ip-support@microsoft.com>. In the email, specify the ID of your project in Lifecycle Services, and provide details that describe the issue.
 
 ## Production environment deployment
 
