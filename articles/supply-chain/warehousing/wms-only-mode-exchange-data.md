@@ -32,13 +32,14 @@ Many different integration methodologies can be used for these three categories.
 For consistent communication, several types of master and reference data must be synced and available to both systems. One example is the product master data. This type of data can be imported into Supply Chain Management via the following messages that are related to product master data:
 
 - `SourceSystemProductMessages` – Used to create products and released products, including product masters for variants.
-  > [!TIP]
-  > [Record templates](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) are useful for the product import because you can include the **TemplateName** in your messages and make sure that the required reference fields for the released products are assigned.
 - `SourceSystemProductVariantMessages` – Used to create variants for product masters where **ProductSubtype** = *ProductMaster*.
 - `SourceSystemProductSpecificUnitOfMeasureConversionMessages` – Used to create product-specific unit-of-measure conversions.
 - `SourceSystemProductBarcodeMessages` – Used to create the product bar code setup.
 - `SourceSystemProductGlobalTradeItemNumberMessages` - Used to create the Global Trade Item Number (GTIN) for the products.
 - `SourceSystemProductDocumentAttachmentMessages` - Used to attach product documents and product images etc.
+
+> [!TIP]
+> [Record templates](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) are useful when importing products because you can include the **TemplateName** in your messages and make sure that the required reference fields for the released products are assigned.
 
 Like shipment orders, these messages are validated during message processing and automatically link the product information to a [source system record](wms-only-mode-setup.md#source-systems) via the *Source system items* entity. The external system can use [business events](#business-events) to monitor how the status of messages changes during message processing.
 
@@ -72,25 +73,19 @@ You can import the required master data into Supply Chain Management by using [d
 
 ### View and maintain source system product messages
 
-In Warehouse management only mode, you can view, update, and create the product messages. Therefore, you can quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message will get versioned and non editable. Go to one of the following pages under **Warehouse management** \> **Source system products** to view and maintain the messages:
+In Warehouse management only mode, you can view, update, and create product messages. Therefore, you can quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message will be versioned and non-editable. Go to one of the following pages to view and maintain the messages:
 
-- **Source system product messages**
-- **Source system product variant messages**
-- **Source system product barcode messages**
-- **Source system product document attachment messages**
-- **Source system product global trade item number messages**
-- **Source system product specific unit of measure conversion messages**
+- **Warehouse management** \> **Source system products** \> **Source system product messages**
+- **Warehouse management** \> **Source system products** \> **Source system product variant messages**
+- **Warehouse management** \> **Source system products** \> **Source system product barcode messages**
+- **Warehouse management** \> **Source system products** \> **Source system product document attachment messages**
+- **Warehouse management** \> **Source system products** \> **Source system product global trade item number messages**
+- **Warehouse management** \> **Source system products** \> **Source system product specific unit of measure conversion messages**
 
-The **Warehouse integration monitoring** workspace lets you keep track of how many *Source system product messages* are *Queued* and *Failed*.
+The **Warehouse integration monitoring** workspace lets you keep track of how many source system product messages are *Queued* and *Failed*.
 
 > [!NOTE]
-> The `Enable manual source system product message creation` parameter on a [source system record](wms-only-mode-setup.md#source-systems) makes it possible to manually create messages in the above mentioned pages. Be aware that the manually created messages do not get versioned like the messages getting imported via integration.
-
-<!-- ### Test creating products by using messages
-
-You can try to submit messages to create products by using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman).
-
-If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection. -->
+> You can set each source system to either allow or prevent users from manually creating messages in the listed pages. To set this option, open the relevant [source system](wms-only-mode-setup.md#source-systems) record and set **Enable manual source system product message creation** to *Yes* allow manual messages or *No* to prevent them. Be aware that manually created messages aren't versioned like messages imported via integration are.
 
 ### Consigner and consignee information
 
@@ -137,8 +132,8 @@ Several out-of-box business events are supported for warehouse integrations. The
 | `SysMessageProcessorMessageProcessedBusinessEvent` | Message processor message failed |
 | `WhsWaveExecutedBusinessEvent` | Wave executed |
 | `WHSQualityOrderValidatedBusinessEvent` | Quality order validated |
-| `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` |  Inbound shipment order request created (can be used to integrate D365 SCM to another WMS) |
-| `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created (can be used to integrate D365 SCM to another WMS) |
+| `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` |  Inbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
+| `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
 
 At a minimum, we recommend that you use the following business events for an external ERP integration:
 
@@ -149,4 +144,4 @@ At a minimum, we recommend that you use the following business events for an ext
 
 ## On-hand adjustments
 
-It is essential to keep the on-hand data aligned when integrating an ERP system and a warehouse management system. There are some processes that help with this as part of the Warehouse management only mode implementation approach. You can learn more about how the inventory on-hand update process works [here](wms-only-mode-external-erp.md#on-hand-updates-between-systems).
+It is essential to keep on-hand inventory data aligned when integrating an ERP system and a warehouse management system. Several processes exist that help with this as part of the Warehouse management only mode implementation approach. For more information about how the inventory on-hand update process works, see [On-hand inventory updates between systems](wms-only-mode-external-erp.md#on-hand-updates-between-systems).

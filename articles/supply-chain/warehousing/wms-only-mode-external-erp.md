@@ -29,9 +29,9 @@ In addition, the warehouse management processes can track ownership of the inven
 
 ## High-level implementation example
 
-The warehouse management only mode is running in D365 SCM legal entity *WOM* that deals with logistics warehouse operations for an external ERP system that manage the order and financial processing.
+The warehouse management only mode is running in the Supply Chain Management legal entity *WOM* that deals with logistics warehouse operations for an external ERP system that manage the order and financial processing.
 
-:::image type="content" source="media/wms-only-erp-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-erp-integration.svg":::
+:::image type="content" source="media/wms-only-erp-integration.svg" alt-text="Warehouse management only mode with external ERP system." lightbox="media/wms-only-erp-integration.svg":::
 
 ## Inbound process example (External ERP system integration)
 
