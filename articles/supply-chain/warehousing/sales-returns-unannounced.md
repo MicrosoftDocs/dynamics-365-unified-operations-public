@@ -87,13 +87,13 @@ Before you can use blind returns and/or automatic generation of return details d
     - **Enable return details creation** – Set this option to *Yes* to enable return details to be created when a container is closed and during shipment confirmation. This option is required only for the *Return details* process.
     - **Enable return order creation from mobile device** – Set this option to *Yes* to enable return orders to be created from a mobile device flow. The flow uses mixed license plate receiving planned lines. This option is required for both the *Return details* process and the *Blind return* process.
 
-1. If you are using [Warehouse management only mode](wms-only-mode-overview.md), then you must set up returns for each source system by following these steps:
+1. If you're using [Warehouse management only mode](wms-only-mode-overview.md), then you must set up returns for each source system by following these steps:
     1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
     1. From the list pane, select the source system you want to set up for returns.
     1. Make the following settings on the **Inbound shipment orders** FastTab:
         - **Enable returns process** – Set to *Yes* to enable the return process for the current source system.
         - **Number sequence code** – Select the number sequence to use to generate order numbers for [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
-        - **Return order type** – Enter text used to stamp the created inbound shipment order. This is used to distinguish return orders from other inbound shipment orders.
+        - **Return order type** – Enter text used to stamp the created inbound shipment order. This value is used to distinguish return orders from other inbound shipment orders.
     1. Repeat these steps for each relevant source system.
 
 ### Set up disposition codes
@@ -121,7 +121,7 @@ For more information about mobile disposition codes and how to set them up, see 
 
 #### <a name="source-system-disposition-codes"></a> Source system disposition codes
 
-If you are using [Warehouse management only mode](wms-only-mode-overview.md), then you must map local dispositions codes with the *source system disposition codes* used in each relevant [source systems](wms-only-mode-setup.md#source-systems). This codes are used when processing [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
+If you're using [Warehouse management only mode](wms-only-mode-overview.md), then you must map local dispositions codes with the *source system disposition codes* used in each relevant [source systems](wms-only-mode-setup.md#source-systems). These codes are used when processing [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
 
 To set up source system disposition codes, follow these steps:
 
@@ -168,10 +168,10 @@ You must define the required return item receiving policies before you create th
     - **Description** – Enter a short description of the policy.
     - **Return process** – Select the type of return process that the policy represents (*Return details* or *Blind return*).
 
-1. If you set **Return process** to *Blind return*, then the **Create return order** setting becomes available. Use this setting to control which type of return order the system will create to manage the blind return. Choose one of the following values:
+1. If you set **Return process** to *Blind return*, then the **Create return order** setting becomes available. Use this setting to control which type of return order the system should create to manage the blind return. Choose one of the following values:
 
-    - *Return order* – The system creates a return order for each blind return.
-    - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each blind return. Choose this option if you are using [Warehouse management only mode](wms-only-mode-overview.md) .
+    - *Return order* – The system creates a return order for each blind return. Choose this option unless you're using [Warehouse management only mode](wms-only-mode-overview.md).
+    - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each blind return. Choose this option if you're using [Warehouse management only mode](wms-only-mode-overview.md).
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat this procedure to add a return item receiving policy for the other process.
 
@@ -198,7 +198,7 @@ To enable workers to process unannounced returns, you must create a separate mob
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add the new menu items to an appropriate place in your mobile device menu structure.
 
-## Example scenarios for sales return order creation process
+## Example scenarios for the sales return order creation process
 
 This section provides example scenarios that show how to set up and process unannounced returns.
 
@@ -318,7 +318,7 @@ The returned products have now been put onto a mixed license plate for further p
 After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](sales-returns.md).
 
 > [!TIP]
-> Instead of using the web client page [Mixed license plate receiving](mixed-license-plate-receiving.md) to *Complete license plates* you can create and use a [detour](warehouse-app-detours.md) mobile device menu item with the activity code *Complete mixed license plate*.
+> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. See also [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
 
 ## Example scenario 2: Customer return with a return details policy
 
@@ -414,6 +414,9 @@ The returned products have now been put onto a mixed license plate for further p
 1. On the Action Pane, on the **License plate** tab, select **Complete license plate** to complete the mixed license plate receiving.
 
 After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](sales-returns.md).
+
+> [!TIP]
+> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. See also [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
 
 ## Example scenario 3: Nonpacking scenarios for return details
 
