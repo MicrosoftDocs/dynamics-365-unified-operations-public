@@ -81,14 +81,20 @@ Before you can use blind returns and/or automatic generation of return details d
 
     For more information about how to set up number sequences for these purposes, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
-    > [!NOTE]
-    > When running the return process for [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders) you must turn on the **Enable returns process** option for each relevant [source system](wms-only-mode-setup.md#source-systems) and assign the **Number sequence code** to use for generating order numbers for [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
-
 1. If you plan to use the *Return details* process, on the **Loads** tab, set the **Enable sales load line picking route** option to *Yes*. This setting enables load lines to be linked to sales line inventory transactions. The linking is done at the shipment level. This option uses the *Load line inventory pick* number sequence when work is completed and containers are closed.
 1. On the **General** tab, on the **Returns** FastTab, set the following options:
 
     - **Enable return details creation** – Set this option to *Yes* to enable return details to be created when a container is closed and during shipment confirmation. This option is required only for the *Return details* process.
     - **Enable return order creation from mobile device** – Set this option to *Yes* to enable return orders to be created from a mobile device flow. The flow uses mixed license plate receiving planned lines. This option is required for both the *Return details* process and the *Blind return* process.
+
+1. If you are using [Warehouse management only mode](wms-only-mode-overview.md), then you must set up returns for each source system by following these steps:
+    1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
+    1. From the list pane, select the source system you want to set up for returns.
+    1. Make the following settings on the **Inbound shipment orders** FastTab:
+        - **Enable returns process** – Set to *Yes* to enable the return process for the current source system.
+        - **Number sequence code** – Select the number sequence to use to generate order numbers for [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
+        - **Return order type** – Enter text used to stamp the created inbound shipment order. This is used to distinguish return orders from other inbound shipment orders.
+    1. Repeat these steps for each relevant source system.
 
 ### Set up disposition codes
 
@@ -115,7 +121,17 @@ For more information about mobile disposition codes and how to set them up, see 
 
 #### <a name="source-system-disposition-codes"></a> Source system disposition codes
 
-*Source system disposition codes* are used when processing [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders) as part of the [Warehouse management only mode](wms-only-mode-overview.md) process. If you are using Warehouse management only mode, you must specify the [source systems](wms-only-mode-setup.md#source-systems) identifier for the association between the internal disposition code and the source system.
+If you are using [Warehouse management only mode](wms-only-mode-overview.md), then you must map local dispositions codes with the *source system disposition codes* used in each relevant [source systems](wms-only-mode-setup.md#source-systems). This codes are used when processing [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
+
+To set up source system disposition codes, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source system disposition codes**.
+1. On the Action pane, select **New** to add a new code. Then make the following settings for the new code:
+    - **Disposition code** – Select the local disposition code that you want to map.
+    - **Source system** – Select the source system that you want to map the local disposition code to.
+    - **Source system disposition code** – Enter the disposition code that is used in the source system.
+
+1. Repeat the previous step until you have set up all of the disposition codes that you need to map.
 
 ### Set up return item policies
 
@@ -152,10 +168,12 @@ You must define the required return item receiving policies before you create th
     - **Description** – Enter a short description of the policy.
     - **Return process** – Select the type of return process that the policy represents (*Return details* or *Blind return*).
 
-1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat this procedure to add a return item receiving policy for the other process.
+1. If you set **Return process** to *Blind return*, then the **Create return order** setting becomes available. Use this setting to control which type of return order the system will create to manage the blind return. Choose one of the following values:
 
-> [!NOTE]
-> You can use the [*Inbound shipment order*](wms-only-mode-using.md#inbound-shipment-orders) process as part of the [Warehouse management only mode](wms-only-mode-overview.md) when selecting the **Return process** equal *Blind return* by selecting *Inbound shipment order* in the **Created return order** field.
+    - *Return order* – The system creates a return order for each blind return.
+    - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each blind return. Choose this option if you are using [Warehouse management only mode](wms-only-mode-overview.md) .
+
+1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat this procedure to add a return item receiving policy for the other process.
 
 ### Set up mobile device menu items
 
