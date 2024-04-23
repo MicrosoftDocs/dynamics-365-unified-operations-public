@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/general-ledger/cant-reverse-transctns.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/cant-reverse-transactions",
+      "redirect_document_id": "false"
+    },  
+    {
       "source_path": "articles/finance/general-ledger/yec-mssng-open-blnces.md",
       "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/year-end-close-miss-opening-balances",
       "redirect_document_id": "false"
