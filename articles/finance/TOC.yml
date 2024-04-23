@@ -424,6 +424,8 @@
         href: accounts-receivable/tasks/create-sales-order-invoices.md
       - name: Create a customer invoice
         href: accounts-receivable/configure-customer-invoices.md
+      - name: Improve performance of Sales entities
+        href: accounts-receivable/sales-entity-improve.md
       - name: Customer transactions list page
         href: accounts-receivable/customer-transactions-list-page.md
       - name: Customer and invoice accounts
