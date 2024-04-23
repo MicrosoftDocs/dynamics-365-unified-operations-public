@@ -1,6 +1,6 @@
 ---
-title: Use self checkout
-description: This article explains how to use self checkout
+title: Enable the Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
+description: This article explains how to enable Self-checkout and related features in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview).
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
@@ -10,25 +10,25 @@ ms.custom:
 ms.reviewer: johnmichalak
 ---
 
-# Store Commerce self-checkout
+# Enable the Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
 
-This article describes how to enable self-check out within Store commerce app and all of the related features that are available as part of 10.0.40 release.
+This article explains how to enable Self-checkout and related features in the Store Commerce app in Microsoft Dynamics 365 Commerce.
 
 ## Enabling Self-checkout
-To enable self-check out, admins would need to go into **Feature Management**, check for new updates and select feature **Configure POS self-checkout register** and enable it.
+To enable self-checkout, admins would need to go into **Feature Management**, check for new updates and select feature **Configure POS self-checkout register** and enable it.
 
 ## Business value
 Point of sale customers can turn on kiosk based Self-checkout on existing store commerce app re-using existing workflows.
-This relase allows for your shoppers to use self-checkout terminals to scan or search for items, add to cart and pay by credit/debit only.
+This release allows your shoppers to use self-checkout terminals to scan or search for items, add to cart and pay by credit/debit only.
 
 ## Configuration in Head Quarters
-To enable self-checkout for a register do the following:
+To enable self-checkout for a register, do the following:
 Goto **Register** set up and set **self-checkout** to **yes**
 The presence of such flag will drive the following behavior:
 - **Enable task recorder** will be set to **off**
 - **Hardware station** options will be set to **No**.
 - **Auto log off** will be turned off.
-Additionally based on this flag following changes are made in point of sale to tailor consumer operations:
+Additionally, based on this flag following changes are made in point of sale to tailor consumer operations:
   - Header and side navigation bars will be hidden if the **self-checkout** flag at register is set to **yes**.
   - Navigating to payment methods from totals will be disabled.
 
@@ -40,51 +40,33 @@ To enable only consumer applicable operations in a self-checkout kiosk, a new/ge
 A new **permission group** called **SCO kiosk** has been created with limited permissions so that the new SCO user can be assigned to this permission group that will only allow for consumer operations such as scan and pay.
 
 ### Login process
-The cashier or the store manager is expected to activate the selfcheckout device using their permissions, turn on shifts for the "SCO user" and then login to the kiosk using the SCO user id so that consumers can carry out self-checkout throughout the day.
-To turn on or end shifs from cashier registers for the SCO kiosks, please ensure to set the **Allow manage shared shift** to **yes** for cashier user permissions.
-Inorder to set up the kiosk and the hardware peripherals during initial set up, your admin can login to the kiosk using their user credentials. Please ensure their screen layout is assigned to their user id in Head quarters.
+The cashier or the store manager is expected to activate the Self-checkout device using their permissions, turn on shifts for the "SCO user" and then login to the kiosk using the SCO user id so that consumers can carry out self-checkout throughout the day.
+To turn on or end shifts from cashier registers for the SCO kiosks, please ensure to set the **Allow manage shared shift** to **yes** for cashier user permissions.
+In order to set up the kiosk and the hardware peripherals during initial set up, your admin can login to the kiosk using their user credentials. Please ensure their screen layout is assigned to their user id in Headquarters.
 
 ## Consumer facing out of box layout
-As part of the release shopper facing layout has been configured with limited operations and will be available in demo environment for export and import. Look for self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
-Assign the screenlayout to the **Registers** set up. 
+As part of the release shopper-facing layout has been configured with limited operations and will be available in demo environment for export and import. Look for Self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
+Assign the screen layout to the **Registers** set up. 
 Note: In demo data, Houston - Register 49 is set up as SCO register and SCO layout(SCO_POC1) has been assigned to it.
-Also user 000815 is configured as sco shopper/user. And user 000813 is configured as a SCO manager in demo data.
+Also, user 000815 is configured as sco shopper/user. And user 000813 is configured as a SCO manager in demo data.
 
 ## Support for operations
 Following consumer operations are supported:
-- **Scan and add item to cart** - **Action**: **Product sale** Allows user to scan the items and add to the transaction. If an item is restricted from self-checkout, there is an error message displayed to seek cashier's assistance.
-- **Add rewards number** - **Action**: **Add loyalty card** This operation will invoke a numpad to enter the loyalty account number, so that the customer can be associated to the transaction.
-- **Search item code** - **Action**:**Product sale** This operation will invoke a numpad to enter the item code of the product to add to cart if the barcode is missing or wont scan.
+- **Scan and add item to cart** - **Action**: **Product sale** Allows user to scan the items and add them to the transaction. If an item is restricted from self-checkout, there is an error message displayed to seek cashier's assistance.
+- **Add rewards number** - **Action**: **Add loyalty card** This operation will invoke a numpad to enter the loyalty account number, so that the customer can be associated with the transaction.
+- **Search item code** - **Action**:**Product sale** This operation will invoke a numpad to enter the item code of the product to add to cart if the barcode is missing or won’t scan.
 - **Search** - **Action**: **Search** This operation will invoke product browsing screen to be able to select product from product categories to add to cart.
 - **Pay card**- **Action**: **Pay card** This operation will enable payment of the transaction using credit/debit card only.
-Once payment is processed, there will be an option to print receipt.
+Once payment is processed, there will be an option to print receipts.
 
 ## Assisted sale workflow
 To provide support for cashier assistance during self-checkout a new operation **Call for assistance** has been created.
 A new action **Allow request for assistance** has been created and associated with this operation. When a consumer selects this operation, manager or store associate will be required to sign/swipe in to perform one of the following elevated operations.
 - **Void**: This has two options **Void transaction** to void the whole transaction and **Void item** to select the item to void the item. Only one item can be selected at a time to perform the operation.
 - **Tax override**: This has two options **Override line tax** to apply an exempt code and void tax for a line and **Override transaction** to void the tax for entire transaction.
-- **Suspend transaction**: This allows store associate to suspend the transaction from kiosk and resume from a regular cashier non-sco register.
-- **Price override**: This allows to override price of an item by choosing the item.
+- **Suspend transaction**: This allows store associates to suspend the transaction from kiosk and resume from a regular cashier non-sco register.
+- **Price override**: This allows you to override price of an item by choosing the item.
 - **Add discount**: This has two options **Discount%** to apply discount% and **Discount amount** to apply a discount amount to the line item.
-- **Logout**: This allows the store associate to logout of the kiosk.
+- **Logout**: This allows the store associate to log out of the kiosk.
 - **Cancel**: This allows the store associate to cancel out of the **Call for assistance** operation.
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
