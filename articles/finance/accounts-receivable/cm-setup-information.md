@@ -3,7 +3,7 @@
 
 title: Credit management setup
 description: This article describes the setup that is required for Credit management.
-author: JodiChristiansen
+author: sunitacharya
 ms.date: 02/15/2022
 ms.topic: article
 # optional metadata
@@ -18,7 +18,7 @@ ms.reviewer: twheeloc
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: sunitacharya
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

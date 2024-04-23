@@ -3,7 +3,7 @@
 
 title: Automated vendor invoicing processes overview
 description: This article describes the capability for automating your vendor invoice processing and the benefits of using an automated process. 
-author: abruer
+author: leizi2015
 ms.date: 02/12/2021
 ms.topic: overview
 # optional metadata
@@ -17,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: raynezou
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
 

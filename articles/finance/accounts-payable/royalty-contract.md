@@ -3,7 +3,7 @@
 
 title: Royalty contract management
 description: This article describes royalty contract management for Microsoft Dynamics 365 Finance.
-author: t-benebo
+author: leizi2015
 ms.date: 08/02/2018
 ms.topic: article
 # optional metadata
@@ -16,7 +16,7 @@ ms.reviewer: twheeloc
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: benebotg
+ms.author: raynezou
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---

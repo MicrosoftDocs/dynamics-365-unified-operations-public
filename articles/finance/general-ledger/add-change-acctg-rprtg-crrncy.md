@@ -3,7 +3,7 @@
 
 title: Change the accounting or reporting currency 
 description: This article explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
-author: kweekley
+author: rcarlson
 ms.date: 03/01/2023
 ms.topic: conceptual
 # optional metadata
@@ -16,7 +16,7 @@ ms.reviewer: twheeloc
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: rcarlson
 ms.search.validFrom: 2023-03-05
 ms.dyn365.ops.version: 10.0.14
 
