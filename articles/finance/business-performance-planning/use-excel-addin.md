@@ -4,7 +4,7 @@
 title: Configure and use the Excel add-in for business performance planning
 description: This article describes how to configure and use the Microsoft Excel add-in for business performance planning.
 author: ShielaSogge
-ms.date: 03/15/2024
+ms.date: 04/23/2024
 ms.topic: article
 ms.reviewer: twheeloc
 
