@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Credit management setup
-description: This article describes the setup that is required for Credit management.
-author: sunitacharya
-ms.date: 02/15/2022
+description: Learn about the setup that is required for credit management, including overviews on credit management workflows, blocking rules, and account statuses.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/15/2022
+ms.custom:  
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sunitacharya
-ms.search.validFrom: 
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
 ---
 

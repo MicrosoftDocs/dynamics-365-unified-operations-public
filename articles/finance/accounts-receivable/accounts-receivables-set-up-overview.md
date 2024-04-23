@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Configure Accounts receivable and credit and collections
-description: Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
-author: ShivamPandey-msft
-ms.date: 04/12/2024
-ms.topic: overview
-
-# optional metadata
-
-ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsAgent, CustCollectionsPool, CustGroup, CustParameters, CustPaymMode, CustPosting, CustVendReportInterval, Interest, PaymTerm, Reasons
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: overview
+ms.date: 04/12/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsAgent, CustCollectionsPool, CustGroup, CustParameters, CustPaymMode, CustPosting, CustVendReportInterval, Interest, PaymTerm, Reasons
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ---
 
 # Configure Accounts receivable and credit and collections

@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Credit management parameters setup
-description: This article describes the options that you can use to configure Credit management to meet your business's requirements.
+description: Learn about the options that you can use to configure Credit management to meet your business's requirements, including an outline on credit parameters.
 author: JodiChristiansen
-ms.date: 10/09/2023
-ms.topic: article
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 10/09/2023
+ms.custom:  
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
-
 ---
 
 # Credit management parameters setup

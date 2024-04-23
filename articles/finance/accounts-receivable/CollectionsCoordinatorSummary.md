@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Collections coordinator summary
-description: This article describes how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
+description: Learn about how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
 author: JodiChristiansen
-ms.date: 04/04/2024
-ms.topic: conceptual
-
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: conceptual
+ms.date: 04/04/2024
+ms.reviewer: twheeloc
+ms.collection: bap-ai-copilot
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2023-06-05
 ms.dyn365.ops.version: 10.0.24
-ms.collection: bap-ai-copilot   
-
+ms.search.form:    
 ---
+
 # Collections coordinator summary
 
 > [!NOTE]
