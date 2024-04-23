@@ -31,7 +31,7 @@ This feature works well in a single instance deployment model, if you want to li
 
 The warehouse management only mode is active with an external shared warehouse in the legal entity *WOM* that deals with logistics warehouse operations for two sales subsidiaries that manage the order and financial processing in the legal entities *LE1* and *LE2*.
 
-:::image type="content" source="media/wms-only-D365-shared-warehouse-integration.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-D365-shared-warehouse-integration.svg":::
+:::image type="content" source="media/wms-only-d365-shared-warehouse-integration.svg" alt-text="Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-shared-warehouse-integration.svg":::
 
 ## Inbound example process (Shared warehouse in D365)
 

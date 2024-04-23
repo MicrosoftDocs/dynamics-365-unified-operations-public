@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 01/29/2024
+ms.date: 04/27/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -35,18 +35,30 @@ You can [start a free trial of Dynamics 365 Supply Chain Management](https://go.
 
 :::image type="content" source="media/wms-only-high-level-integrations.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-high-level-integrations.svg":::
 
-The solution is very flexible. Therefore, you can choose the configuration of features and systems that best fits your business needs. Here are a few examples of ways that you can integrate Supply Chain Management warehouse management mode:
+The solution is very flexible. Therefore, you can choose the configuration of features and systems that best fits your business needs. The following subsections provide a few examples of how you can integrate Supply Chain Management warehouse management mode.
 
-- Use Supply Chain Management to handle only warehouse operations, and use an external system to handle all orders and financial processing.
+### Handle all orders and financial processing in an external system
+
+The following high-level diagram that shows Supply Chain Management being used to handle warehouse operations only, with an external system being used to handle all orders and financial processing
+
 :::image type="content" source="media/wms-only-erp-integration.svg" alt-text="Warehouse management only mode with external ERP system." lightbox="media/wms-only-erp-integration.svg":::
+
 For this type of implementation, you must configure the warehouse management processes as part of Supply Chain Management. For a more detailed description of this process and the related processes, see [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
 
-- Create a separate legal entity in the Supply Chain Management deployment that manages the warehouse management processes for Dynamics 365 itself, including tracking the ownership of shared items using an owner inventory dimension.
-:::image type="content" source="media/wms-only-d365-sharedwarehouse-integration.svg" alt-text="Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-sharedwarehouse-integration.svg":::
- For a more detailed description of this process and the related processes, see [Warehouse management only mode with external shared warehouse](wms-only-mode-external-shared-warehouse.md).
+### Use a separate legal entity to manage warehouse management processes for other legal entities in Supply Chain Management
 
-- Use Supply Chain Management to handle warehousing plus a wider range of processes (such as sales, purchase, and production orders), and also use it to handle warehouse operations for other ERP and order processing systems.
+The following high-level diagram shows a system using a separate Supply Chain Management legal entity to manage warehouse management processes for other legal entities, including tracking the ownership of shared items using an owner inventory dimension
+
+:::image type="content" source="media/wms-only-d365-shared-warehouse-integration.svg" alt-text="Warehouse management only mode with external shared warehouse." lightbox="media/wms-only-d365-shared-warehouse-integration.svg":::
+
+For a more detailed description of this process and the related processes, see [Warehouse management only mode with external shared warehouse](wms-only-mode-external-shared-warehouse.md).
+
+### Handle logistic warehouse processes for both internal and external integrations
+
+The following high-level diagram shows a system using Supply Chain Management to handle warehousing plus a wider range of processes (such as sales, purchase, and production orders), while also using it to handle warehouse operations for other ERP and order processing systems.
+
 :::image type="content" source="media/wms-only-d365-wms-and-erp-integration.svg" alt-text="Handle logistic warehouse processes for both internal and external integrations." lightbox="media/wms-only-d365-wms-and-erp-integration.svg":::
+
 For this type of implementation, the same warehouse instance can handle all the logistic warehouse processes for both internal and external integrations.
 
 ## Unsupported processes

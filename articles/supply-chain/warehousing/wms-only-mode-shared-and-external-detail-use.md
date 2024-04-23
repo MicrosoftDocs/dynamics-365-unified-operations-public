@@ -5,7 +5,8 @@ author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner
-ms.date: 01/29/2024
+ms.topic: how-to
+ms.date: 04/27/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
