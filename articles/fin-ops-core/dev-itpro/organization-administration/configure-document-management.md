@@ -91,7 +91,7 @@ SharePoint communication works for the current user only if the following condit
 If documents that are stored in SharePoint aren't opened or don't appear in preview, follow these steps to troubleshoot the issue.
 
 1. Verify that the Admin account has an associated email account. You can verify or change the associated email account on the **User** page. If an associated email account isn't set up, you must add the email account and provider via the OData Excel add-in. By default, the email address isn't present in the Excel design. The user must edit the Excel design, add all fields, apply the change, and refresh. You can then update the Admin account.
-2. After the Admin account has an associated email account, sign in to Dynamics as the admin.
+2. After the Admin account has an associated email account, sign in to Dynamics 365 as the admin.
 3. Open an attachment that's stored in SharePoint.
 4. Sign in by using a different user account that has read access to the attachments page and the configured SharePoint folder. Verify that this user account can open and preview the attachment.
 
@@ -110,10 +110,10 @@ To specify file types, follow these steps.
 The attachments preview uses the Web app Open Platform Interface (WOPI) that Office Online Server provides. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is `https://onenote.officeapps.live.com`, which points to the cloud-based WOPI server.
 
 > [!NOTE]
-> For the following situations, you must adjust the **Office Web Apps Server** field as specified.
+> For the following situations, you must adjust the **Office Web Apps Server** value:
 >
-> - For environments in China, use https://onenote.partner.officewebapps.cn. 
-> - For environments in the Government Community Cloud (GCC), use https://gb4-onenote.officeapps.live.com.
+> - For environments in China, use `https://onenote.partner.officewebapps.cn`. 
+> - For environments in the Government Community Cloud (GCC), use `https://gb4-onenote.officeapps.live.com`.
 
 ### For a Dynamics 365 Finance + Operations (on-premises) environment
 
@@ -146,14 +146,14 @@ As of version 10.0.16/Platform update 40, a history mechanism is available for r
 
 ### Configuration of document attachment history
 
-Document attachment history can be enabled (or disabled) by going to **Document management parameters** \> **General** \> **History** \> **Enable document history**. The default history retention period is 180 days, but this value can be modified as needed using the **Number of days to retain history** field.
+To enable (or disable) document attachment history, go to **Document management parameters** \> **General** \> **History** \> **Enable document history**. The default setting of the **Number of days to retain history** field is 180 days, but you can change it as you require.
 
 ### Viewing an attachment's history
 
 There are two entry points for viewing the history of a record attachment:
 
 - When you're looking at the attachments for a specific record (see the [Accessing document management attachments](#accessing-document-management-attachments) section), you can view the history for the current set of attachments on the **Attachments** page by selecting **Document history** on the Action Pane.
-- Administrators can select the **Document history** button in the **History** section of the **Document management parameters** page. This action opens the **Document history** page, which shows a list of all attachments in the system. You can then drill into any record to see the detailed history for the selected attachment.
+- Administrators can select the **Document history** button in the **History** section of the **Document management parameters** page. This action opens the **Document history** page, which shows a list of all attachments in the system. You can then drill into any record to view the detailed history for the selected attachment.
 
 ## Attachment recovery
 
@@ -177,7 +177,7 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 
 - Immediately after deletion, the user can use the undo link in the **Attachment deleted** notification.
 - On the **Attachments** page, a **Deleted attachments** button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.
-- In **System administration** \> **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
+- At **System administration** \> **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
 
 ## Scanning attachments for viruses and malicious code
 
@@ -240,15 +240,15 @@ public final class ScanDocuments
 
 ## [Developer] Specifying valid content types when attaching documents programmatically
 
-The following APIs from the `DocumentManagement` class allow developers to specify the file content type (MIME type) of the file being attached:
+The following APIs from the `DocumentManagement` class let developers specify the file content type (MIME type) of the file that's being attached:
 
 - attachFileToCommon()
 - attachFile()
 - attachFileToDocuRef()
 
-If this file content type isn't specified correctly, the attached document might not behave as expected. Therefore, if you use these APIs, you should consider one of the following courses of action:
+If the file content type isn't specified correctly, the attached document might not behave as expected. Therefore, if you use these APIs, you should consider one of the following courses of action:
 
-- Pass **null** for the `_fileContentType` parameter in any of the preceding APIs. Doing so allows the correct content type to be inferred from the file name.
+- Pass **null** for the `_fileContentType` parameter in any of the preceding APIs. This course of action enables the correct content type to be inferred from the file name.
 - Switch to using one of the following methods that don't include a `_fileContentType` parameter. This course of action helps prevent the possibility that incorrect file content types are passed.
 
     - **attachFileForRecord()**, which replaces **attachFileToCommon()**
@@ -280,7 +280,7 @@ To export attachments, follow these steps.
     |--------------------------------|-------------|---------------|
     | From date                      | Specify the first date of the period that you want to export attachments for. The export job applies this period to the **Date field name** value of the selected tables that are configured to export attachments. | 1/1/2023 |
     | To date                        | Specify the last date of the period that you want to export attachments for. The export job applies this period to the **Date field name** value of the selected tables that are configured to export attachments. | 12/31/2023 |
-    | File type                      | Specify the file type that's used to create an archive of exported attachments. This file type must be set up as described in the [Configure file types](#configure-file-types) section. Select **File** in the list of file types. Alternatively, use a similar custom file type that you set up with a **Attach file** value in the **Class** property of the document type. | File |
+    | File type                      | Specify the file type that's used to create an archive of exported attachments. This file type must be set up as described in the [Configure file types](#configure-file-types) section. Select **File** in the list of file types. Alternatively, use a similar custom file type that you set up with an **Attach file** value in the **Class** property of the document type. | File |
     | Compression level              | <p>This parameter determines how much the data in an archive is compressed. Specifically, it defines whether a compression operation emphasizes speed or compression size. Select one of the following options:</p><ul><li>**Fastest** – The compression operation should be completed as quickly as possible, even if the resulting file isn't optimally compressed.</li><li>**No compression** – No compression should be done on the file.</li><li>**Optimal** (default) – The compression operation should optimally balance compression speed and output size.</li></ul> | Optimal |
     | Maximum file size in megabytes | Use this parameter to limit the size of the created archive. The value redefines the value that's set for the **Maximum file size in megabytes** parameter on the **Document management parameters** page for a specific execution of the **Export attachments** job. If the size of the archive file exceeds the value that you set here, multiple files are created and attached. A large **Maximum file size in megabytes** value might affect the performance of job execution. | 90 |
     | Include metadata               | If you set this option to **Yes**, the system includes **Note** and **URL** type attachments and the metadata of **File** type attachments in the export job. Exported metadata is exported as separate JavaScript Object Notation (JSON) files. If you leave this option set to **No** (the default value), only attachments of the **File** type are exported without metadata. | Yes |
@@ -368,7 +368,7 @@ Although attachments can be exported, that capability isn't a standard capabilit
 
 ### How can attachments be extracted from the system?
 
-To extract attachments, an Attachments entity must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for "Attachment" under the **AOT** \> **Data Model** \> **Data Entities** node.
+To extract attachments, you must build an Attachments entity for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can review the examples in Application explorer. To find these examples, search for "Attachment" under the **AOT** \> **Data Model** \> **Data Entities** node.
 
 ### How does the document preview work for attachments stored in SharePoint?
 
