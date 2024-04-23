@@ -31,7 +31,7 @@ In the **Sales invoice lines V4** entity, there are two new columns: **Line tota
 
 Similarly, in the header V4 entity, the **Invoice header tax amount** field that was previously obtained from the **CustInvoiceJourTotalTaxAmountView** view is now sourced from the **CustInvoiceJourTable** table. The removal of unnecessary views and refinement of data sources help improve performance.
 
-To ensure a smooth transition, a **SysSetup** async script is available. This script updates the newly created columns for existing records in the **CustInvoiceJour** and **CustInvoiceTrans** tables. When customers upgrade to version 10.0.41, the **CustInvoiceTaxFieldsSysSetup** script automatically creates a batch job that's responsible for updating the **Total tax**, **Total charge**, and **Header tax** fields in the appropriate tables.
+To ensure a smooth transition, a **SysSetup** async script is available. This script updates the newly created columns for existing records in the **CustInvoiceJour** and **CustInvoiceTrans** tables. When customers upgrade to version 10.0.40, the **CustInvoiceTaxFieldsSysSetup** script automatically creates a batch job that's responsible for updating the **Total tax**, **Total charge**, and **Header tax** fields in the appropriate tables.
 
 > [!NOTE]
 > This script might take a few hours to run.
