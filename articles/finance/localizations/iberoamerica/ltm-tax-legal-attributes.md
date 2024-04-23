@@ -4,7 +4,7 @@ description: This article explains how to add the tax and legal information that
 author: Fhernandez0088
 ms.date: 08/30/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---

@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, TaxTmpWorkTrans, SalesEditLines,  SrsReportViewerForm, CustFreeInvoice, CustTableLookup, DimensionLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia

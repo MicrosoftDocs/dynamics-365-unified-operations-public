@@ -5,7 +5,7 @@ author: AdamTrukawka
 ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: 

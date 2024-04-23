@@ -244,8 +244,6 @@ items:
             - name: Security and data entities
               href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?context=/dynamics365/context/human-resources
             - name: Use third-party service testing utilities
-              href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?context=/dynamics365/context/human-resources
-            - name: Create read-only entities that expose financial dimensions
               href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?context=/dynamics365/context/human-resources
           - name: Bring your own database
             href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?context=/dynamics365/context/human-resources
@@ -611,6 +609,22 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
+    - name: Time and attendance
+      items:
+      - name: Time and attendance information
+        href: hr-about-time-and-attendance-information.md
+      - name: Set up time and attendance information
+        href: hr-set-up-time-and-attendance-information.md
+      - name: Register time for workers
+        href: hr-register-time.md
+      - name: Communicate with and deploy assignments to workers
+        href: hr-communicate-and-deploy-assignments.md
+      - name: Calculate, approve, and transfer registrations
+        href: hr-about-calculate-approve-transfer-registrations.md
+      - name: Work planner and time profiles
+        href: hr-about-work-planner-time-profiles.md
+      - name: Update time and attendance information
+        href: hr-update-time-and-attendance-information.md
     - name: Task management
       items:
       - name: Overview

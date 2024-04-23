@@ -1685,7 +1685,7 @@ This article contains a list of entities eligible for copilot.
 - SVC_ODataViewOverrideWithoutTable_DE
 - SVC_ODataViewOverrideWithTable_DE
 - SVC_ThrowExceptionDataEntity
-- SysAADClientTableEntity
+- SysMicrosoft Entra IDClientTableEntity
 - SysCompositeHeaderTableEntity
 - SysCompositeHeaderTestLineEntity
 - SysCompositeLineChildTableEntity

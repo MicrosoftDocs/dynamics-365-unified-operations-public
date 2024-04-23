@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Australia, New Zealand
 ms.author: ikondratenko
 ms.search.validFrom: 2023-09-01

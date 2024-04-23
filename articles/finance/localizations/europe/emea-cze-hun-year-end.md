@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Czech Republic, Hungary

@@ -21,8 +21,6 @@ ms.custom: bap-template
 
 *Calculation models* let you arrange and configure tiles to define the calculation that's done by a calculation profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## Create and customize a calculation model
 
 To create and customize a calculation model, you must first open an existing calculation profile. (For more information, see [Work with calculation profiles](calculation-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.

@@ -20,7 +20,7 @@ ms.search.validFrom: 2020-01-06
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during initial synchronization.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Microsoft Entra tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## Check for initial synchronization errors in a finance and operations app
 
@@ -71,9 +71,9 @@ You might receive the following error message during initial synchronization:
 To fix the issue, follow these steps.
 
 1. Sign in to the finance and operations app.
-2. On the **Azure Active Directory applications** page, delete the **DtAppID** client, and then add it again.
+2. On the **Microsoft Entra applications** page, delete the **DtAppID** client, and then add it again.
 
-![DtAppID client in the list of Azure AD applications.](media/aad_applications.png)
+![DtAppID client in the list of Microsoft Entra applications.](media/aad_applications.png)
 
 ## Self-reference or circular reference failures during initial synchronization
 
@@ -240,4 +240,3 @@ Initial synchronization might fail for records that have a zero value for a pric
 The issue is with the **Language locale** value under **Source data formats** in the **Data management** module. Change the value of the **Language locale** field to **en-us**, and then try again.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

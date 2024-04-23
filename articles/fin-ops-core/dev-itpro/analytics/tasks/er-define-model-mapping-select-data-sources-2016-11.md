@@ -18,8 +18,9 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappin
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. The data sources will be bound to individual components of the selected data model at design time and populate business data to that data model at run-time. In this example, you will select data sources for an existing data model that has been created for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Create a new data model" procedure.
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. The data sources are bound to individual components of the selected data model at design time and populate business data to that data model at runtime. In this example, you select data sources for an existing data model created for the sample company Litware, Inc. 
 
+To perform these steps, you must first complete the steps in the [Create a new data model](er-financial-dimensions-data-source-1?context=%2Fdynamics365%2Fcontext%2Ffinance#create-a-new-data-model) procedure.
 
 ## Open the Electronic Reporting configurations tree
 1. Go to Organization administration > Workspaces > Electronic reporting.
