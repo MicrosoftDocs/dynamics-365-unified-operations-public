@@ -6,8 +6,6 @@ description: Public-sector organizations can use advanced ledger entries to crea
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

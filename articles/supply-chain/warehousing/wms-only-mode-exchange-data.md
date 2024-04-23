@@ -29,8 +29,6 @@ Warehouse management only mode requires that you set up integration between exte
 
 Many different integration methodologies can be used for these three categories. This article describes the recommended integration process.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## <a name="master-data"></a>Master and reference data
 
 For consistent communication, several types of master and reference data must be synced and available to both systems. One example is the product master data. This type of data can be imported into Supply Chain Management via the following messages that are related to product master data:
@@ -90,11 +88,11 @@ The **Warehouse integration monitoring** workspace lets you keep track of how ma
 > [!NOTE]
 > The `Enable manual source system product message creation` parameter on a [source system record](wms-only-mode-setup.md#source-systems) makes it possible to manually create messages in the above mentioned pages. Be aware that the manually created messages do not get versioned like the messages getting imported via integration.
 
-### Test creating products by using messages
+<!-- ### Test creating products by using messages
 
 You can try to submit messages to create products by using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman).
 
-If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.
+If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection. -->
 
 ### Consigner and consignee information
 

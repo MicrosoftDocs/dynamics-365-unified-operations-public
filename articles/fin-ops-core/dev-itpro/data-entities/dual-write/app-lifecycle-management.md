@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20

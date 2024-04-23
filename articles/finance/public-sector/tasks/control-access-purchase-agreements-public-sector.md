@@ -6,8 +6,6 @@ description: You can make sure that only approved departments can access a purch
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

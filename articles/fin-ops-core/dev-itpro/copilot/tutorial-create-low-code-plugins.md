@@ -1,17 +1,17 @@
 ---
 title: Extend Copilot capabilities with low-code plugins
-description: This article provides a tutorial for using Microsoft Copilot Studio to create low-code plugins for Copilot in finance and operations apps.
+description: Learn how to use Microsoft Copilot Studio to create low-code plugins for Copilot in finance and operations apps through a tutorial.
 author: jaredha
 ms.author: jaredha
-ms.reviewer: johnmichalak
-ms.search.form:
 ms.topic: how-to
 ms.date: 02/08/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Extend Copilot capabilities with low-code plugins

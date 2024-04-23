@@ -6,9 +6,6 @@ description: This article explains how to set up and process bridged customer pa
 author: rachel-profitt
 ms.date: 02/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustPaymMode, VendPaymMode, LedgerJournalTable, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, LedgerJournalTransDaily

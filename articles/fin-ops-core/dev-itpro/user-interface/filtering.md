@@ -4,8 +4,6 @@ description: This article explains the filtering options that are available.
 author: jasongre
 ms.date: 03/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

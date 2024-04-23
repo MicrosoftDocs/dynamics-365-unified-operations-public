@@ -6,16 +6,13 @@ description: This article explains how to submit repair information for a fixed 
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Lithuania
 # ms.search.industry: 

@@ -6,9 +6,6 @@ description: This article provides information about currency revaluation postin
 author: moaamer
 ms.date: 01/10/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerClosingSheet

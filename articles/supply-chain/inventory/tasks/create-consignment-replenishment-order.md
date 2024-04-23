@@ -6,8 +6,6 @@ description: This article explains how to create a consignment replenishment ord
 author: yufeihuang
 ms.date: 08/19/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

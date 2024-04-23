@@ -6,9 +6,6 @@ description: This article provides information about the Cash position inquiry. 
 author: velofog
 ms.date: 10/07/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]

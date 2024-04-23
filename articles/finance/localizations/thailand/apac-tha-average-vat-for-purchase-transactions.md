@@ -4,10 +4,8 @@ description: This article provides information about average value-added tax (VA
 author: AdamTrukawka
 ms.date: 03/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: atrukawk
 ms.search.validFrom: 

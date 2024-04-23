@@ -6,15 +6,12 @@ description:  This article provides information about the stock transfer functio
 author: EvgenyPopovMBS
 ms.date: 06/29/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: InventTransferOrders, ReqParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India

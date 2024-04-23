@@ -6,9 +6,6 @@ description: This article provides an overview of check number validation functi
 author: wangchen
 ms.date: 11/06/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

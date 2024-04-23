@@ -7,8 +7,6 @@ author: faix
 ms.date: 02/23/2024
 ms.topic: article
 ms.service: dynamics-365
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]
@@ -47,7 +45,7 @@ When you purchase a subscription, it's assigned to your Microsoft Online Service
 
 Before you can create your Lifecycle Services project and begin creating on-premises environments, you need to follow the [Provisioning guide](https://mbs2.microsoft.com/fileexchange/?fileID=7ddd6ddf-aa22-402a-baa1-5405ce0b1076) to obtain an on-premises license.
 
-If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. When you sign in to [Lifecycle Services](https://lcs.dynamics.com), select to use this account for sign-in if you want to use the same Azure Active Directory (Azure AD) tenant for the on-premises environment.
+If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. When you sign in to [Lifecycle Services](https://lcs.dynamics.com), select to use this account for sign-in if you want to use the same Microsoft Entra tenant for the on-premises environment.
 
 After you've signed in to Lifecycle Services, a cloud project is automatically provisioned for you. However, you need an on-premises project. To create a new on-premises project, follow the [Start a new Lifecycle Services project guide](/dynamics365/project-operations/environment/create-lcs-project) and select the **On-premises implementation** project type. The Lifecycle Services project lets you deploy an on-premises environment. For more information about how to get started with your Lifecycle Services project, see [Set up on-premises projects in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 

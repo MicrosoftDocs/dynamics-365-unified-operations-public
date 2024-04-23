@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: How workers use the production floor execution interface
 description: This article describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
-ms.date: 01/24/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgProductionFloorExecution
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
-ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.24
+ms.reviewer: kamaybac
+ms.search.form: JmgProductionFloorExecution
+ms.topic: how-to
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # How workers use the production floor execution interface

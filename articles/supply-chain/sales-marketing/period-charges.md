@@ -18,19 +18,19 @@ ms.custom: bap-template
 
 Period charges let you charge customers when a collection of orders that were invoiced over a specified period failed to meet specific criteria. The *Period charges* feature supports the setup of period charge rules that identify these invoices and define applicable charges. Charges can be calculated based on a minimum charge amount (such as minimum delivery fee), a minimum order quantity, or a combination of both.
 
-## Prerequisites
-
-Before you can use this feature, your system must meet the following requirements:
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The feature that's named *Period charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
 The *Period charges* feature introduces the following changes to your system:
 
 - Fields are added to the **Accounts receivable parameters** page to control the period charge calculations.
 - Details are added to the **Free text invoice** details page to accommodate free text invoices that are created for period charges.
 - A new page that's named **Period charge rule** is added under **Accounts receivable** \> **Charges setup** on the navigation pane.
 - A new page that's named **Calculate period charge** is added under **Accounts receivable** \> **Periodic tasks** on the navigation pane.
+
+## Prerequisites
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.38 or later.
+- The feature that's named *Period charges* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure period charges
 

@@ -1,5 +1,5 @@
 ---
-title: Import data into Demand planning (preview)
+title: Import data into Demand planning
 description: This article describes how to import data from different sources and file types, and also data that is stored in a Microsoft Azure data lake.
 author: t-benebo
 ms.author: benebotg
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Import data into Demand planning (preview)
+# Import data into Demand planning
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 You can import data from a range of sources and file types. For example, you can import data directly from Microsoft Dynamics 365 Supply Chain Management or by importing text files in Excel or comma-separated values (CSV) format. You can also import data that's stored in an Azure data lake. Before you import the data into Demand planning, you can use Power Query to transform it as you require.
 
@@ -26,8 +23,6 @@ The Demand planning app lets you build a collection of *import profiles*. Each p
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to update the data as they require.
 
 In addition, you can use the standard user interface (UI) to import your custom data entities into custom tables or add custom fields that you've extended in the standard tables. No developer is required.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## <a name="existing-import-profiles"></a>View and run existing data import profiles
 
@@ -41,6 +36,8 @@ To update your data by running an existing data import profile, follow these ste
     The details page for the selected profile appears. It contains the following tabs:
 
     - **Summary** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with.
+    - **Configure provider** – This tab lets you view and edit the settings that are specific to the data provider that the profile uses.  For information about how to work with the settings on this tab, see the [Create and manage data import profiles](#create-and-manage-data-import-profiles) section.
+    - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, the provider that was used, the table that was updated, and the number of records that were imported. Links to more information are provided.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab. There, you can follow the status of the new import. The page isn't automatically refreshed. To update the status information, you must select **Refresh** on the grid toolbar.
@@ -63,7 +60,10 @@ To import directly from Supply Chain Management (and other finance and operation
 1. On the **Select data provider** page, select the **Microsoft finance and operations apps** tile.
 1. A setup wizard is opened. On the **Get started** page, enter a name and description for the new profile. Then select **Next**.
 1. On the **Configure data provider** page, in the **Connection URL** field, enter the URL of your Supply Chain Management environment. Then select **Next**.
-1. The **Entity selection** page lists every Supply Chain Management data entity that the solution supports out of the box. It also shows which Demand planning table each data entity maps to. Turn on the **Enabled** option for each entity that you want to import from for the new profile. Then select **Next**. All Supply Chain Management data entities are supported and can be imported. Note that a table must previously be created in the Demand Planning app before you can map the fields. 
+1. The **Entity selection** page lists every Supply Chain Management data entity that the solution supports out of the box. It also shows which Demand planning table each data entity maps to. Turn on the **Enabled** option for each entity that you want to import from for the new profile. All Supply Chain Management data entities are supported and can be imported. Note that a table must previously be created in the Demand Planning app before you can map the fields.
+1. Select **Next**.
+1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
+1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. You're returned to the **Active Import Data Profiles** page, which now shows the new profile in the list. The profile is now available, but it hasn't yet run. To run it, follow the instructions in the [View and run existing data import profiles](#existing-import-profiles) section.
 
@@ -88,6 +88,8 @@ To import from a text or workbook file that was exported from an external system
     - *Selected* – Delete all the data that's currently in the target table. You might use this option if, for example, the incoming data includes all the required records that are already in your table, and/or you haven't selected a key field for the table. This option ensures that you won't have any duplicate records, but it also deletes all the data that's currently in the target table.
     - *Cleared* – Keep all the data that's currently in the target table. You might use this option if, for example, the incoming data is an incremental export that contains only new records, and/or you've selected key fields for the table. Incoming records that have key field values that match existing records will update those records, whereas incoming records that have unique key field values will create new records. If your key fields aren't configured and mapped correctly, there's a risk that this option will create duplicate records.
 
+1. Select **Next**.
+1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
 1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. You're returned to the **Active Import Data Profiles** page, which now shows the new profile in the list. The profile is now available, but it hasn't yet run. To run it, follow the instructions in the [View and run existing data import profiles](#existing-import-profiles) section.

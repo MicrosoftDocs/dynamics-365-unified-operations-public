@@ -6,9 +6,6 @@ description: This article provides information about Form I-9 verification.
 author: ShielaSogge
 ms.date: 06/19/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Hcmi9DocumentInquiry, Hcmi9DocumentTypeExpireList, Hcmi9DocumentType 

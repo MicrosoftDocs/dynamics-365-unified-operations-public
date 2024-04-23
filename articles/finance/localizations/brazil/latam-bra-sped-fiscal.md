@@ -4,10 +4,8 @@ description: This article explains how to set up and generate SPED fiscal export
 author: AdamTrukawka
 ms.date: 08/27/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2017-12-31

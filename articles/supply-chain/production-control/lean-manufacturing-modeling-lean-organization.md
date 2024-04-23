@@ -6,8 +6,6 @@ description: The article provides information about the key concepts in modeling
 author: johanhoffmann
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

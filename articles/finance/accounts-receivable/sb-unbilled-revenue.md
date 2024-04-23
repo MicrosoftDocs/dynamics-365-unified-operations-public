@@ -6,9 +6,6 @@ description: This article explains how to set up items and accounts to use the u
 author: JodiChristiansen
 ms.date: 10/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

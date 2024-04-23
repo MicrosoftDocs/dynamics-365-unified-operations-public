@@ -2,12 +2,12 @@
 title: Secure one-box development environments
 description: This article describes how to help secure one-box developer environments.
 author: mnordick
-ms.date: 11/29/2023
+ms.date: 03/14/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: mnordick
 ms.search.validFrom: 2022-09-13
@@ -72,7 +72,7 @@ The following table shows the regional instances of Lifecycle Services.
 
 - If you're using a higher-level firewall outside the virtual network's network security group, you must allow a broader range of inbound ports from the Lifecycle Services source IP addresses. This requirement exists because the load balancer is configured to map a randomized port in the range 50000–65535 to well-known ports, such as the ports for WinRM and RDP. Deployment from Lifecycle Services requires that ports in this range be accessible.
 - The HTTPS port (443) doesn't have to be exposed externally, and it isn't used during deployment or management operations.
-- Outbound internet access must remain open from the virtual network. Finance and operations apps require internet access for various product functionalities. For example, access to Azure Active Directory (Azure AD) is required for authentication.
+- Outbound internet access must remain open from the virtual network. Finance and operations apps require internet access for various product functionalities. For example, access to Microsoft Entra is required for authentication.
 
 Deployment to a custom virtual network is an advanced configuration. The preceding guidance is provided as an outline of the requirements that help you successfully use a custom virtual network. An incorrect virtual network configuration can prevent deployment or management operations from Lifecycle Services. Therefore, make sure that you understand how the customizations might affect external integrations.
 
@@ -83,7 +83,7 @@ Deployment to a custom virtual network is an advanced configuration. The precedi
 
 Microsoft Defender and Azure Well-Architected security assessments provide general security guidance that applies to any Azure resources that you provision in your subscription, including your one-box development environment resources.
 
-When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, these restrictions break some integration scenarios, such as export to Microsoft Excel, that require that files are externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner must consider if those recommendations are applicable to their needs.
+When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, these restrictions break some integration scenarios, such as export to Microsoft Excel, that requires that files are externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner must consider if those recommendations are applicable to their needs.
 
 ## External integrations
 
@@ -91,7 +91,7 @@ Your one-box development environment can integrate with your Microsoft Entra ten
 
 - Import users.
 - Import Microsoft Entra ID groups.
-- Import Electronic reporting (ER) configurations.
+- Import Electronic reporting (ER) configurations. For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
 To use these capabilities, you must configure certificate access to your tenant.
 
@@ -117,17 +117,31 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. Add the environment URL as a redirect URI for the application. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
-6. Assign the API permissions for the application:
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, replace the value of the `audienceUris` key with the application ID/client ID.
+    ```
+    <securityTokenHandlerConfiguration>
+    <audienceUris>
+    <add value="spn:<your application ID>" />
+    </audienceUris>
+    ```
+6. Add the environment URL as a redirect URI for the application under **Web App** platform. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
+7. Add the environment OAUTH URL (EnvironmentURL/oauth) as a redirect URI for the application under **Web App** platform.
+8. Assign the API permissions for the application:
 
     1. Go to **API Permissions**, select **Add a Permission**, and add the following permissions:
 
         - **Dynamics ERP** – This permission is required to access finance and operations environments.
         - **Microsoft Graph** (**User.Read.All** and **Group.Read.All** permissions of the **Application** type)
+        - **Dynamics Lifecycle service** (permission of type **Delegated**)
 
     2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
-
-For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+9. Clear any cached configurations for LCS access using the SQL query on AX DB:
+     ```
+     DELETE FROM SYSOAUTHCONFIGURATION where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+  
+     DELETE FROM  SYSOAUTHUSERTOKENS where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+     ```
+10. Perform IISRESET from administrator command prompt.    
 
 ## Frequently asked questions
 

@@ -21,8 +21,6 @@ ms.dyn365.ops.version: 10.0.30
 
 In the *product quality* scenario, a sensor is set up to measure the quality of a product batch on the shop floor. If a measurement falls outside a defined threshold for the product, a notification is shown on the supervisor's dashboard. For example, a sensor is measuring the moisture of a food product that comes out of the production line. If the measurement is outside the allowed minimum or maximum value for moisture for the product, a notification is generated.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
-
 ## Scenario dependencies
 
 The *product quality* scenario has the following dependencies:

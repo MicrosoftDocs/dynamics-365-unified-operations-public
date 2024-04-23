@@ -6,9 +6,6 @@ description: The article describes the performance improvements from automatical
 author: Livbjerg
 ms.date: 10/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

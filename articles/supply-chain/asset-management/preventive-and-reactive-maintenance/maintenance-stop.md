@@ -6,8 +6,6 @@ description: This article explains how maintenance downtime is used to get an ov
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

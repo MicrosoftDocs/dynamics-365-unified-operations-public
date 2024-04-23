@@ -1,5 +1,5 @@
 ---
-title: Use custom Azure Machine Learning algorithms in Demand planning (preview)
+title: Use custom Azure Machine Learning algorithms in Demand planning
 description: This article describes how to continue to use custom Microsoft Azure Machine Learning algorithms that you already use for demand forecasting in Dynamics 365 Supply Chain Management while you use the Demand planning app.
 author: t-benebo
 ms.author: benebotg
@@ -14,18 +14,13 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Use your own custom Azure Machine Learning algorithms in Demand planning (preview)
+# Use your own custom Azure Machine Learning algorithms in Demand planning
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app.
 
 This article describes the setup that is required to enable the Demand planning app to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Set up a new Microsoft Entra application
 
@@ -87,6 +82,6 @@ Follow these steps to set up a forecast that uses your own Azure Machine Learnin
 
 1. Create a new forecast profile as described in [Create and manage forecast profiles](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
-1. After you've created and saved the profile, select the **Forecast model** tab. (For more information, see [Design forecast models (preview)](design-forecast-models.md).)
+1. After you've created and saved the profile, select the **Forecast model** tab. (For more information, see [Design forecast models](design-forecast-models.md).)
 1. Set up your model. Include a **Finance and operations – Azure Machine Learning** tile in the position where you want to run your algorithm.
 1. Complete the model by adding a **Save** block.

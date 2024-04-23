@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Set up and deploy on-premises environments (Application 10.0.32 and later)
-description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
+description: Learn how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
 author: faix
-ms.date: 02/08/2023
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: osfaixat
+ms.topic: article
+ms.date: 02/08/2023
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
+ms.search.form:
 ms.dyn365.ops.version: Platform update 56
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Set up and deploy on-premises environments (Application 10.0.32 and later)
@@ -85,7 +71,7 @@ Finance + Operations (on-premises) bits are distributed through Microsoft Dynami
 
 ## Authentication
 
-The on-premises application works with AD&nbsp;FS. To interact with Lifecycle Services, you must also configure Azure Active Directory (Azure AD). To complete the deployment and configure the Lifecycle Services local agent, you must have Azure AD. If you don't already have an Azure AD tenant, you can get one for free by using one of the options that Azure AD provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+The on-premises application works with AD&nbsp;FS. To interact with Lifecycle Services, you must also configure Microsoft Entra ID. To complete the deployment and configure the Lifecycle Services local agent, you must have Microsoft Entra ID. If you don't already have an Microsoft Entra tenant, you can get one for free by using one of the options that Microsoft Entra ID provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
@@ -272,7 +258,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
 | SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
-| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Azure AD tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
+| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
 You can use the wildcard SSL certificate for your domain to combine the Service Fabric Server certificate and the AOS SSL certificate. Here's an example of a Service Fabric Server certificate that's combined with an AOS SSL certificate.
 
@@ -666,7 +652,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
 ### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the tenant
 
-An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations (on-premises) through Lifecycle Services. To establish connectivity from Lifecycle Services to the Finance + Operations (on-premises) tenant, you must configure a certificate that enables the local agent to act on behalf of your Azure AD tenant (for example, contoso.onmicrosoft.com).
+An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations (on-premises) through Lifecycle Services. To establish connectivity from Lifecycle Services to the Finance + Operations (on-premises) tenant, you must configure a certificate that enables the local agent to act on behalf of your Microsoft Entra tenant (for example, contoso.onmicrosoft.com).
 
 Use the on-premises agent certificate that you acquired from a CA or the self-signed certificate that you generated by using scripts. The on-premises agent certificate can be reused across multiple sandbox and production environments per tenant.
 
@@ -767,6 +753,10 @@ You can verify that everything has been configured correctly by running the foll
 
     | Release | Database |
     |---------|----------|
+    | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Demo Data |
+    | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Empty Data |
+    | Version 10.0.38 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.38 Demo Data |
+    | Version 10.0.38 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.38 Empty Data |
     | Version 10.0.35 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.35 Demo Data |
     | Version 10.0.35 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.35 Empty Data |
     | Version 10.0.32 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.32 Demo Data |

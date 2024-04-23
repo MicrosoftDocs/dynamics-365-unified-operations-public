@@ -6,8 +6,6 @@ description: A template bill of materials (BOM) provides a standardized list of 
 author: sorenva
 ms.date: 09/19/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

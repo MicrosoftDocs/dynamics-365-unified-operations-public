@@ -4,10 +4,8 @@ description: This article explains how to activate and set up the integration of
 author: gionoder
 ms.date: 01/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: gionoder
 ms.search.validFrom: 

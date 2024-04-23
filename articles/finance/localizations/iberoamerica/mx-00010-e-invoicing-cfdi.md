@@ -4,10 +4,8 @@ description: This article walks you through creating and posting a customer invo
 author: AdamTrukawka
 ms.date: 08/03/2021
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.author: atrukawk
 ms.search.validFrom: 2016-06-30

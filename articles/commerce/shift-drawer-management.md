@@ -4,8 +4,6 @@ description: This article explains how to set up and use shifts in Commerce poin
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

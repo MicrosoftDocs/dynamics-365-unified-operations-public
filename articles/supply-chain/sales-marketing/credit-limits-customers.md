@@ -6,8 +6,6 @@ description: This article provides an overview of how credit limits work in Dyna
 author: Henrikan
 ms.date: 11/16/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -4,7 +4,7 @@ description: The article describes how to set up and use value-added tax (VAT) b
 author: Cpicon85 
 ms.date: 09/20/2023 
 ms.topic: conceptual
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon
 ms.custom: bap-template
 ---

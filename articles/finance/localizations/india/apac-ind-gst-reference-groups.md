@@ -4,10 +4,8 @@ description: This article explains how to set up reference number groups for Goo
 author: EricWangChen
 ms.date: 02/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: India
 ms.author: wangchen
 ms.search.validFrom: 2018-01-31

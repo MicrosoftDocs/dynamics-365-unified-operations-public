@@ -6,9 +6,6 @@ description: Learn about creating Open in Office experiences for Excel and Word.
 author: jasongre
 ms.date: 03/18/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

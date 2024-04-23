@@ -6,8 +6,6 @@ description: This article explains how to use the invoice register to create inv
 author: abruer
 ms.date: 07/31/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

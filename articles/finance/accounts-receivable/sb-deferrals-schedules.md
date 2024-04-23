@@ -3,12 +3,9 @@
 
 title: Deferral schedules in revenue and expense deferrals
 description: This article describes deferral schedules in revenue and expense deferrals.
-author: JodiChristiansen
+author: bking
 ms.date: 11/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  
@@ -20,7 +17,7 @@ ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jchrist
+ms.author: bking
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
 

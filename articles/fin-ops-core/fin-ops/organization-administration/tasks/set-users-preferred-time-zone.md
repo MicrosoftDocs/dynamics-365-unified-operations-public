@@ -6,8 +6,6 @@ description: This article explains how a user in the System Administrator role c
 author: pvillads
 ms.date: 07/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

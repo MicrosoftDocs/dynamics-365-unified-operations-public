@@ -6,9 +6,6 @@ description: The Immigration Reform and Control Act requires US employers to ver
 author: ShielaSogge
 ms.date: 01/10/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
-
 # optional metadata 
 
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document   

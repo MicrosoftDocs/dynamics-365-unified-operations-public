@@ -6,16 +6,13 @@ description: This article provides answers to frequently asked questions (FAQs) 
 author: yukonpeegs
 ms.date: 10/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global

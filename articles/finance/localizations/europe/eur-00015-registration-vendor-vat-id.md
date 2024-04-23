@@ -4,10 +4,8 @@ description: This article explains how to add VAT registration IDs and a tax exc
 author: AdamTrukawka
 ms.date: 08/01/2023
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: atrukawk
 ms.search.validFrom: 2016-06-30

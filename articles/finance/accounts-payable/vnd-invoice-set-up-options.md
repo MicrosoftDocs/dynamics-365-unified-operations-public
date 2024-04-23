@@ -6,9 +6,6 @@ description: This article describes the options that are available for setting u
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  
@@ -20,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: raynezou
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
 

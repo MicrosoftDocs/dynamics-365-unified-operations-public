@@ -4,10 +4,8 @@ description: This article explains how to register and set up advance holders fo
 author: mrolecki
 ms.date: 07/25/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: mrolecki
 ms.search.validFrom: 2018-10-28

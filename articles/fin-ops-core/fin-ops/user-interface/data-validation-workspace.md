@@ -4,8 +4,6 @@ description: The Data validation checklist workspace lets you track data validat
 author: bking
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -18,8 +16,6 @@ ms.search.form: DataValidationWorkspace
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides an overview of the **Data validation checklist workspace** and the associated configuration.
 

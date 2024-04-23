@@ -6,9 +6,6 @@ description: Modify vendor information and use workflow to approve it.
 author: sunfzam
 ms.date: 03/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  Vendor
@@ -19,7 +16,7 @@ ms.reviewer: twheeloc
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: raynezou
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ---

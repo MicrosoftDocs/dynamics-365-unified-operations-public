@@ -6,8 +6,6 @@ description: This procedure shows how to calculate minimum coverage proposals ba
 author: johanhoffmann
 ms.date: 08/09/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

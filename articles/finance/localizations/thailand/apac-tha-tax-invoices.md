@@ -4,10 +4,8 @@ description: This article explains how to set up tax invoices and when they are 
 author: AdamTrukawka
 ms.date: 04/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: atrukawk
 ms.search.validFrom: 

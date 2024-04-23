@@ -4,8 +4,6 @@ description: This article describes how you can prepare content so that it can b
 author: edupont04
 ms.date: 04/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

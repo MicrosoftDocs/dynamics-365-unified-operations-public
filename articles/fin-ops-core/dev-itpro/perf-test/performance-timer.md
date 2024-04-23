@@ -4,8 +4,6 @@ description: This article provides an overview of the Performance timer, which i
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

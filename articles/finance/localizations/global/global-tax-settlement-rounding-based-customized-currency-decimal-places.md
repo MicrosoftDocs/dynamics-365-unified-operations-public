@@ -6,16 +6,13 @@ description: This article explains how to do tax settlement rounding that is bas
 author: shtao
 ms.date: 09/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 # ms.custom: 

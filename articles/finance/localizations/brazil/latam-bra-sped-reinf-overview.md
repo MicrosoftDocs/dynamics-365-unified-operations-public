@@ -4,10 +4,8 @@ description: This article provides information about how you can use Fiscal book
 author: AdamTrukawka
 ms.date: 08/09/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

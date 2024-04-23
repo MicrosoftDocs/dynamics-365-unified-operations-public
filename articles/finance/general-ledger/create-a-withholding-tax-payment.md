@@ -6,9 +6,6 @@ description: The Withholding tax payment job procedure settles withholding tax b
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

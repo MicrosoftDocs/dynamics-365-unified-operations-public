@@ -4,10 +4,8 @@ description: This article provides information about the Inventory adjustment wi
 author: AdamTrukawka
 ms.date: 02/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2018-10-28

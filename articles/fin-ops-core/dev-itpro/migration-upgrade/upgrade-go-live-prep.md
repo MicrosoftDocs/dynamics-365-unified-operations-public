@@ -4,10 +4,8 @@ description: This article describes how you can help ensure that the source Dyna
 author: LaneSwenka
 ms.date: 02/17/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16

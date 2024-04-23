@@ -7,7 +7,7 @@ author: jorichar
 ms.date: 01/14/2022
 ms.topic: reference
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jorichar

@@ -6,8 +6,6 @@ description: Use this procedure to set up additional address books for your orga
 author: msftbrking 
 ms.date: 08/09/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: This article defines the key terms that are used in Cost accounting
 author: aprilolson
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMCostAccountingLedger

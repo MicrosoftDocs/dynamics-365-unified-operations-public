@@ -4,10 +4,8 @@ description: This article explains how you can help save time and simplify bank 
 author: mrolecki
 ms.date: 11/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: mrolecki
 ms.search.validFrom: 2019-11-29

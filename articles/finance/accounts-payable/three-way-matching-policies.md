@@ -3,12 +3,9 @@
 
 title: Three-way matching policies
 description: This article provides examples of three-way matching.
-author: abruer
+author: leizi2015
 ms.date: 02/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendInvoicePostingHistory
@@ -20,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: raynezou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

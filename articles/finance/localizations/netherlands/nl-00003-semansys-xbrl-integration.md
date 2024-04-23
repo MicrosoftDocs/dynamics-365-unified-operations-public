@@ -6,15 +6,13 @@ description: This procedure walks you through using Dutch functionality to expor
 author: mrolecki
 ms.date: 05/28/2020
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: Dialog   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Netherlands

@@ -6,8 +6,6 @@ description: This article describes maintenance job type categories and maintena
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

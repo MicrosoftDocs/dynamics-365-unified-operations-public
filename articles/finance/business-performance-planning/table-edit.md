@@ -6,9 +6,7 @@ description: This article describes how to use the Table edit visual in the Busi
 author: ShielaSogge
 ms.date: 12/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
+ms.reviewer: twheeloc
 # optional metadata
 
 ms.search.form: 

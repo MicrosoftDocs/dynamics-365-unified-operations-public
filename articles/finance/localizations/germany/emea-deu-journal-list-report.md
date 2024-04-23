@@ -6,16 +6,13 @@ description: This article explains what the German journal list report is used f
 author: EvgenyPopovMBS
 ms.date: 05/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalizeReport
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Germany
 # ms.search.industry: 

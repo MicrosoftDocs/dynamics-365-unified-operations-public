@@ -4,10 +4,8 @@ description: This article provides information about the lifecycle of Globalizat
 author: gionoder
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gionoder
 ms.search.validFrom: 

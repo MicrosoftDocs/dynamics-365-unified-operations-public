@@ -4,10 +4,8 @@ description: This article explains how to configure and use registration numbers
 author: mrolecki
 ms.date: 09/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Egypt
 ms.author: mrolecki
 ms.search.validFrom: 2021-02-01

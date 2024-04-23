@@ -4,10 +4,8 @@ description: This article explains how to create a Microsoft Azure key vault for
 author: gionoder
 ms.date: 02/14/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: gionoder
 ms.search.validFrom: 

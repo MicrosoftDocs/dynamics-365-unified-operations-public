@@ -6,9 +6,6 @@ description: This article provides an overview of batch processing.
 author: snagamalla
 ms.date: 02/09/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -47,7 +44,9 @@ Use batch groups to categorize batch tasks and run them on specific servers. The
 
 For example, server A is set up to print reports, and server B is set up to send electronic documents. You can use batch groups to make sure that reporting tasks are run on server A and electronic documents are processed by server B.
 
-For more information, see [Batch processing and batch servers](batch-server-overview.md).
+For more information, see: 
+- [Batch processing and batch servers](batch-server-overview.md)
+- [Batch capacity](batch-capacity.md)
 
 
 ## Batch functions

@@ -6,8 +6,6 @@ description: This article provides information about tag counting, which you use
 author: yufeihuang
 ms.date: 06/10/2019
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

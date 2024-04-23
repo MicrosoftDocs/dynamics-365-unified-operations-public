@@ -4,10 +4,8 @@ description: This article provides an overview of the process for setting up and
 author: AdamTrukawka
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

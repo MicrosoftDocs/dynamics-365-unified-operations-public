@@ -6,8 +6,6 @@ description: This article provides an overview of subscription workflow.
 author: sorenva
 ms.date: 05/07/2018
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

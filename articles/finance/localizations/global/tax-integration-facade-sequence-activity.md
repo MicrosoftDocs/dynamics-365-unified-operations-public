@@ -3,7 +3,7 @@ title: Facade, sequence, and activities in tax integration
 description: This article introduces the features and functions that must be implemented to integrate a new transaction.
 author: Qiuchen-Ren
 ms.author: qire
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.topic: conceptual
 ms.date: 04/25/2022
 ms.custom: bap-template

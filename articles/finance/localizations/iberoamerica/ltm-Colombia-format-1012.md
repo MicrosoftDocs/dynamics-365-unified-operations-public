@@ -4,7 +4,7 @@ description: This article explains how to set up and issue a format 1012 file fo
 author: Fhernandez0088
 ms.date: 11/30/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---

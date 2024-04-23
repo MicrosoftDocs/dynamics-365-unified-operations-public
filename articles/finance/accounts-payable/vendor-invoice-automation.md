@@ -3,12 +3,9 @@
 
 title: Invoice automation for scanned documents
 description: This article explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
-author: abruer
+author: leizi2015
 ms.date: 03/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: VendEditInvoiceHeaderStagingListPage 
@@ -19,7 +16,7 @@ ms.reviewer: twheeloc
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: raynezou
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ---

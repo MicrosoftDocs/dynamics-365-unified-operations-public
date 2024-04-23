@@ -4,10 +4,8 @@ description: This article provides information about split periods in periodic j
 author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30

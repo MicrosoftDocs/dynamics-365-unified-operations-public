@@ -4,10 +4,8 @@ description: This procedure walks you through adding BAS report boxes and genera
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Australia
 ms.author: kfend
 ms.search.validFrom: 2016-06-30

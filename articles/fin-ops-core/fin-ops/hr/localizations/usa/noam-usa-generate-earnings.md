@@ -6,9 +6,6 @@ description: This article describes the various ways that you can generate earni
 author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement

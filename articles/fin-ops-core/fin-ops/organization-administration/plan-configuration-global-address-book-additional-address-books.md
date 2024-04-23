@@ -6,9 +6,6 @@ description: This article describes the considerations and decisions that you mu
 author: msftbrking 
 ms.date: 01/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
