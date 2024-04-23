@@ -51,7 +51,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By May 1, 2025, we plan to no longer support the Sales tax report for Lithuania design based on reporting codes including **VAT declaration (LT)** Electronic reporting (ER) format under **VAT declaration model**, **Main economic activity code** and **Deduction percent** fields on **General ledger parameters** > **Sales tax** page. New **VAT declaration XML (LT)** and **VAT declaration Excel (LT)** ER formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By May 1, 2025, we plan to no longer support the Sales tax report for Lithuania design that's based on reporting codes, including the **VAT declaration (LT)** Electronic reporting (ER) format under the **VAT declaration model**, **Main economic activity code**, and **Deduction percent** fields on the **Sales tax** tab of the **General ledger parameters** page. New **VAT declaration XML (LT)** and **VAT declaration Excel (LT)** ER formats are introduced under the **Tax declaration** model. |
 
 ## Features removed or deprecated in the Finance 10.0.39 release
 
