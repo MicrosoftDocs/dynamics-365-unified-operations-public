@@ -5,8 +5,6 @@ author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
-
-
 ms.topic: how-to
 ms.date: 01/29/2024
 audience: Application User

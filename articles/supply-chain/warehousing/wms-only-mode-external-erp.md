@@ -1,12 +1,12 @@
 ---
 title: Warehouse management only mode with external ERP systems (preview)
-description: This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
+description: This article explains how to perform day-to-day warehousing tasks when you are using Warehouse only mode to integrate with an external ERP system.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSInventoryUpdateLog
 ms.topic: how-to
-ms.date: 01/29/2024
+ms.date: 04/27/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -19,11 +19,12 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
+This article explains how to perform day-to-day warehousing tasks when you are using Warehouse only mode to integrate with an external ERP system.
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
 You can use the [*Warehouse management only mode*](wms-only-mode-overview.md) feature to handle logistic operations and connect warehouses to external ERPs that do all the order and financial processing.
+
 In addition, the warehouse management processes can track ownership of the inventory for items that are shared across different source systems using an owner inventory dimension.
 
 ## High-level implementation example
@@ -49,7 +50,7 @@ Here's a high-level description of the inbound process:
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
     - Automatically during the Warehouse Management mobile app receiving process
 
-1.*WOM*: Warehouse workers uses the Warehouse Management mobile app to *register* the inbound shipment transactions.
+1. *WOM*: Warehouse workers uses the Warehouse Management mobile app to *register* the inbound shipment transactions.
 1. *WOM*: Supply Chain Management runs [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts), and trigger *business events* for the external systems.
 1. *ERP*: The external systems read and use the [shipment receipt](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) data for further processing. For example, if purchase orders are associated with the inbound shipment orders in the external system, this processing involves purchase order invoicing.
 1. *WOM*: Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).

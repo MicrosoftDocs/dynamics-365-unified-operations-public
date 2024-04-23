@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog, WHSExternalInventoryAdjustment
 ms.topic: overview
-ms.date: 01/29/2024
+ms.date: 04/27/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -19,7 +19,8 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-You can use the [*Warehouse management only mode*](wms-only-mode-overview.md) feature to handle logistic operations in a different legal entity and connect warehouses between this legal entity and the other legal entities that do all the order and financial processing.
+You can use [Warehouse management only mode](wms-only-mode-overview.md) to handle logistic operations in a different legal entity and connect warehouses between this legal entity and the other legal entities that do all the order and financial processing.
+
 In addition, the warehouse management processes can track which legal entity owns the inventory for items that are shared across different entities using an owner inventory dimension.
 
 This feature works well in a single instance deployment model, if you want to link multiple tenants and one of them will handle the logistic warehouse processes. You need an integration process as explained in the [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
