@@ -1,1 +1,728 @@
-<svg width="4090" height="2067" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden"><defs><clipPath id="clip0"><rect x="173" y="343" width="4090" height="2067"/></clipPath><image width="244" height="244" xlink:href="data:image/png;base64,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" preserveAspectRatio="none" id="img1"></image><image width="244" height="244" xlink:href="data:image/png;base64,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" preserveAspectRatio="none" id="img2"></image></defs><g clip-path="url(#clip0)" transform="translate(-173 -343)"><rect x="2603.5" y="345.5" width="1657" height="2062" stroke="#BF8B00" stroke-width="4.58333" stroke-miterlimit="8" fill="#FFE399" fill-opacity="0.65098"/><rect x="175.5" y="359.5" width="1717" height="2048" stroke="#2F528F" stroke-width="4.58333" stroke-miterlimit="8" fill="#4472C4" fill-opacity="0.4"/><rect x="211" y="378" width="1645" height="157" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="#005A9F"/><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="700" font-size="83" transform="matrix(1 0 0 1 959.064 487)">ERP</text><rect x="2646.5" y="377.5" width="1564" height="158" stroke="#AE5A21" stroke-width="4.58333" stroke-miterlimit="8" fill="#ED7D31"/><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="92" transform="matrix(1 0 0 1 2733.08 487)">Warehouse management </text><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="92" transform="matrix(1 0 0 1 3718.5 487)">only</text><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="700" font-size="92" transform="matrix(1 0 0 1 3903.55 487)">mode</text><rect x="982" y="1981" width="857" height="360" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="#005A9F"/><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1110.76 2192)">Update on</text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1493.98 2192)">-</text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1527.21 2192)">hand</text><path d="M2569.18 1596.06 1929.41 1594.84 1929.42 1590.25 2569.18 1591.47ZM1933.97 1606.3 1906.5 1592.5 1934.03 1578.8Z"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1965.92 1778)">On</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 2063.89 1778)">-</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 2089.1 1778)">hand</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 2278.16 1778)">data</text><path d="M2482.5 1625.5 2643.5 1625.5 2643.5 1785.5 2482.5 1785.5ZM2518 1645.5 2578 1645.5 2608 1675.5 2608 1765.5 2518 1765.5Z" fill="#FFB900" fill-rule="evenodd"/><path d="M2518 1645.5 2578 1645.5 2578 1675.5 2608 1675.5 2608 1765.5 2518 1765.5Z" fill="#CD9500" fill-rule="evenodd"/><path d="M2578 1645.5 2578 1675.5 2608 1675.5Z" fill="#996F00" fill-rule="evenodd"/><path d="M2518 1645.5 2578 1645.5 2608 1675.5 2608 1765.5 2518 1765.5ZM2608 1675.5 2578 1675.5 2578 1645.5" stroke="#FFFFFF" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><rect x="2482.5" y="1625.5" width="161" height="160" stroke="#FFFFFF" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/><rect x="2878.5" y="819.5" width="786" height="287" stroke="#AE5A21" stroke-width="4.58333" stroke-miterlimit="8" fill="#ED7D31"/><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 2935.43 988)">Counting/Adjustments</text><path d="M2880 1386.8C3199.83 1417.85 3199.83 1355.75 3519.63 1355.75L3519.63 1194.34 2880 1194.34ZM2932.7 1194.34 2932.7 1173.42 3567.96 1173.42 3567.96 1335.83C3543.82 1335.83 3519.63 1336.96 3519.63 1336.96L3519.63 1194.34ZM2982.23 1173.42 2982.23 1153 3623 1153 3623 1314.91C3595.48 1314.91 3567.96 1315.75 3567.96 1315.75L3567.96 1173.42Z" fill="#FFB900" fill-rule="evenodd"/><path d="M2880 1194.34 3519.63 1194.34 3519.63 1355.75C3199.83 1355.75 3199.83 1417.85 2880 1386.8ZM2932.7 1194.34 2932.7 1173.42 3567.96 1173.42 3567.96 1335.83C3543.82 1335.83 3519.63 1336.96 3519.63 1336.96M2982.23 1173.42 2982.23 1153 3623 1153 3623 1314.91C3595.48 1314.91 3567.96 1315.75 3567.96 1315.75" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 2916.19 1317)">On</text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 3013.01 1317)">-</text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 3042.23 1317)">hand updates</text><use width="100%" height="100%" xlink:href="#img1" fill="none" transform="translate(2667 1164)"></use><rect x="970" y="1413" width="860" height="398" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="#005A9F"/><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1087.74 1593)">Request on</text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1495.66 1593)">-</text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1528.89 1593)">hand </text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1048.63 1692)">update information</text><path d="M2452.87 1705.3 1932.41 1702.9 1932.43 1698.31 2452.89 1700.72ZM1936.94 1714.38 1909.5 1700.5 1937.06 1686.88Z"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1921.26 1568)">Business events</text><path d="M2516.68 1481.5 2527.65 1505.14 2523.13 1507.93 2536.94 1528.19 2532.42 1531.58 2549.5 1565.5 2520.53 1539.5 2526.06 1535.89 2508.06 1519.24 2514.51 1514.1 2495.5 1496.63Z" stroke="#AE5A21" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="#FFB900" fill-rule="evenodd"/><path d="M2472.68 1490.5 2483.65 1514.14 2479.13 1516.93 2492.94 1537.19 2488.42 1540.58 2505.5 1574.5 2476.53 1548.5 2482.06 1544.89 2464.06 1528.24 2470.51 1523.1 2451.5 1505.63Z" stroke="#AE5A21" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="#FFB900" fill-rule="evenodd"/><rect x="211" y="1985" width="548" height="358" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="#005A9F"/><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 346.222 2195)">Costing</text><path d="M4.36041e-06-1.71875 119.337-1.71845 119.337 1.71905-4.36041e-06 1.71875ZM114.754-13.7497 142.254 0.000360892 114.754 13.7503Z" transform="matrix(-1 0 0 1 957.754 2155.5)"/><use width="100%" height="100%" xlink:href="#img2" fill="none" transform="translate(2657 839)"></use><rect x="2870.5" y="1484.5" width="786" height="287" stroke="#AE5A21" stroke-width="4.58333" stroke-miterlimit="8" fill="#ED7D31"/><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 2983.48 1609)">On</text><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 3070.56 1609)">-</text><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 3092.91 1609)">hand inventory </text><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 2949.31 1697)">source system report</text><path d="M2578.18 1004.06 1938.41 1002.84 1938.42 998.252 2578.18 999.473ZM1942.97 1014.3 1915.5 1000.5 1943.03 986.803Z"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1955.63 978)">Business events</text><path d="M2549.68 874.5 2560.65 897.863 2556.13 900.618 2569.94 920.638 2565.42 923.981 2582.5 957.5 2553.53 931.812 2559.06 928.246 2541.06 911.792 2547.51 906.709 2528.5 889.448Z" stroke="#AE5A21" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="#FFB900" fill-rule="evenodd"/><path d="M2510.07 881.5 2521.25 905.144 2516.64 907.933 2530.71 928.194 2526.1 931.577 2543.5 965.5 2513.99 939.503 2519.62 935.894 2501.29 919.242 2507.86 914.097 2488.5 896.628Z" stroke="#AE5A21" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="#FFB900" fill-rule="evenodd"/><path d="M2679.5 1649C2679.5 1584.66 2731.66 1532.5 2796 1532.5 2860.34 1532.5 2912.5 1584.66 2912.5 1649 2912.5 1713.34 2860.34 1765.5 2796 1765.5 2731.66 1765.5 2679.5 1713.34 2679.5 1649Z" stroke="#000000" stroke-width="0" stroke-linejoin="round" stroke-miterlimit="10" fill="#ED7D31" fill-rule="evenodd"/><path d="M2679.5 1649C2679.5 1584.66 2731.66 1532.5 2796 1532.5 2860.34 1532.5 2912.5 1584.66 2912.5 1649 2912.5 1713.34 2860.34 1765.5 2796 1765.5 2731.66 1765.5 2679.5 1713.34 2679.5 1649Z" stroke="#C8C8C8" stroke-width="1.14583" stroke-linecap="square" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/><g><g><g><path d="M41.5822 114.6 79.7822 76.3999 58.4937 76.3999C65.4572 62.8708 79.5832 53.5197 95.8978 53.5197 106.443 53.5197 116.192 57.4989 123.553 64.0645L162.35 64.0645C150.611 38.9958 125.145 21.8854 95.8978 21.8854 61.876 21.8854 33.226 44.9645 24.8698 76.3999L3.38229 76.3999 41.5822 114.6Z" fill="#FFFFFF" transform="matrix(1 0 0 1 2699 1549)"/><path d="M188.214 114.6 150.014 76.3999 111.814 114.6 133.302 114.6C126.338 128.129 112.212 137.48 95.8978 137.48 85.353 137.48 75.6041 133.501 68.2426 126.935L29.2468 126.935C41.1843 152.004 66.452 169.114 95.8978 169.114 129.92 169.114 158.57 146.035 166.926 114.6L188.214 114.6Z" fill="#FFFFFF" transform="matrix(1 0 0 1 2699 1549)"/></g></g></g><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1910.54 2291)">Log </text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 2046.89 2291)">update</text><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 2303.05 2291)">data</text><path d="M2634 2292.31C3327.05 2335.12 3327.05 2249.51 4020.02 2249.51L4020.02 2027 2634 2027ZM2748.19 2027 2748.19 1998.15 4124.74 1998.15 4124.74 2222.06C4072.42 2222.06 4020.02 2223.61 4020.02 2223.61L4020.02 2027ZM2855.52 1998.15 2855.52 1970 4244 1970 4244 2193.21C4184.37 2193.21 4124.74 2194.37 4124.74 2194.37L4124.74 1998.15Z" fill="#FFB900" fill-rule="evenodd"/><path d="M2634 2027 4020.02 2027 4020.02 2249.51C3327.05 2249.51 3327.05 2335.12 2634 2292.31ZM2748.19 2027 2748.19 1998.15 4124.74 1998.15 4124.74 2222.06C4072.42 2222.06 4020.02 2223.61 4020.02 2223.61M2855.52 1998.15 2855.52 1970 4244 1970 4244 2193.21C4184.37 2193.21 4124.74 2194.37 4124.74 2194.37" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 2717.91 2187)">Warehouse inventory update log data</text><path d="M2567.18 2207.06 1927.41 2205.84 1927.42 2201.25 2567.18 2202.47ZM1931.97 2217.3 1904.5 2203.5 1932.03 2189.8Z"/><path d="M2568.18 2144.06 1928.41 2142.84 1928.42 2138.25 2568.18 2139.47ZM1932.97 2154.3 1905.5 2140.5 1933.03 2126.8Z"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="83" transform="matrix(1 0 0 1 1923.96 2095)">Business events</text><path d="M2487.68 2036.5 2498.65 2059.86 2494.12 2062.62 2507.94 2082.64 2503.42 2085.98 2520.5 2119.5 2491.53 2093.81 2497.05 2090.25 2479.05 2073.79 2485.5 2068.71 2466.5 2051.45Z" stroke="#AE5A21" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="#FFB900" fill-rule="evenodd"/><path d="M2530.07 2024.5 2541.25 2048.14 2536.64 2050.93 2550.71 2071.19 2546.1 2074.58 2563.5 2108.5 2533.99 2082.5 2539.62 2078.89 2521.29 2062.24 2527.86 2057.1 2508.5 2039.63Z" stroke="#AE5A21" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="#FFB900" fill-rule="evenodd"/><path d="M2469.5 2223.5 2630.5 2223.5 2630.5 2382.5 2469.5 2382.5ZM2505.28 2243.37 2564.91 2243.37 2594.72 2273.19 2594.72 2362.62 2505.28 2362.62Z" fill="#FFB900" fill-rule="evenodd"/><path d="M2505.28 2243.37 2564.91 2243.37 2564.91 2273.19 2594.72 2273.19 2594.72 2362.62 2505.28 2362.62Z" fill="#CD9500" fill-rule="evenodd"/><path d="M2564.91 2243.37 2564.91 2273.19 2594.72 2273.19Z" fill="#996F00" fill-rule="evenodd"/><path d="M2505.28 2243.37 2564.91 2243.37 2594.72 2273.19 2594.72 2362.62 2505.28 2362.62ZM2594.72 2273.19 2564.91 2273.19 2564.91 2243.37" stroke="#FFFFFF" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><rect x="2469.5" y="2223.5" width="161" height="159" stroke="#FFFFFF" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/><path d="M802.5 824.752C1247.6 854.269 1247.6 795.235 1692.65 795.235L1692.65 641.802 802.5 641.802ZM875.838 641.802 875.838 621.911 1759.91 621.911 1759.91 776.306C1726.3 776.306 1692.65 777.376 1692.65 777.376L1692.65 641.802ZM944.771 621.911 944.771 602.5 1836.5 602.5 1836.5 756.415C1798.2 756.415 1759.91 757.217 1759.91 757.217L1759.91 621.911Z" fill="#005A9F" fill-rule="evenodd"/><path d="M802.5 641.802 1692.65 641.802 1692.65 795.235C1247.6 795.235 1247.6 854.269 802.5 824.752ZM875.838 641.802 875.838 621.911 1759.91 621.911 1759.91 776.306C1726.3 776.306 1692.65 777.376 1692.65 777.376M944.771 621.911 944.771 602.5 1836.5 602.5 1836.5 756.415C1798.2 756.415 1759.91 757.217 1759.91 757.217" stroke="#FFFFFF" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 916.103 725)">Master data </text><text fill="#FFFFFF" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 1320.58 725)">updates</text><path d="M1863 578 2024 578 2024 737 1863 737ZM1898.78 597.875 1958.41 597.875 1988.22 627.687 1988.22 717.125 1898.78 717.125Z" fill="#005A9F" fill-rule="evenodd"/><path d="M1898.78 597.875 1958.41 597.875 1958.41 627.687 1988.22 627.687 1988.22 717.125 1898.78 717.125Z" fill="#004880" fill-rule="evenodd"/><path d="M1958.41 597.875 1958.41 627.687 1988.22 627.687Z" fill="#00365F" fill-rule="evenodd"/><path d="M1898.78 597.875 1958.41 597.875 1988.22 627.687 1988.22 717.125 1898.78 717.125ZM1988.22 627.687 1958.41 627.687 1958.41 597.875" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><rect x="1863" y="578" width="161" height="159" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/><text font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 2044.63 647)">Master data</text><path d="M0.008923-2.29165 597.07 0.0331276 597.052 4.61643-0.008923 2.29165ZM592.531-11.443 619.978 2.41401 592.424 16.0568Z" transform="matrix(1 0 0 -1 1935.5 769.914)"/><path d="M2583.5 623.5 2683.5 623.5 2683.5 733.5 2583.5 733.5ZM2605.38 641 2642.88 641 2661.63 659.75 2661.63 716 2605.38 716Z" fill="#FFB900" fill-rule="evenodd"/><path d="M2605.38 641 2642.88 641 2642.88 659.75 2661.63 659.75 2661.63 716 2605.38 716Z" fill="#CD9500" fill-rule="evenodd"/><path d="M2642.88 641 2642.88 659.75 2661.63 659.75Z" fill="#996F00" fill-rule="evenodd"/><path d="M2605.38 641 2642.88 641 2661.63 659.75 2661.63 716 2605.38 716ZM2661.63 659.75 2642.88 659.75 2642.88 641" stroke="#FFFFFF" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><rect x="2583.5" y="623.5" width="100" height="110" stroke="#FFFFFF" stroke-width="3.4375" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/><path d="M2718 784.214C3123.07 813.859 3123.07 754.57 3528.09 754.57L3528.09 600.472 2718 600.472ZM2784.74 600.472 2784.74 580.494 3589.3 580.494 3589.3 735.559C3558.71 735.559 3528.09 736.633 3528.09 736.633L3528.09 600.472ZM2847.47 580.494 2847.47 561 3659 561 3659 715.581C3624.15 715.581 3589.3 716.386 3589.3 716.386L3589.3 580.494Z" fill="#FFB900" fill-rule="evenodd"/><path d="M2718 600.472 3528.09 600.472 3528.09 754.57C3123.07 754.57 3123.07 813.859 2718 784.214ZM2784.74 600.472 2784.74 580.494 3589.3 580.494 3589.3 735.559C3558.71 735.559 3528.09 736.633 3528.09 736.633M2847.47 580.494 2847.47 561 3659 561 3659 715.581C3624.15 715.581 3589.3 716.386 3589.3 716.386" stroke="#FFFFFF" stroke-width="3.89583" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"/><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 2815.48 718)">Master data </text><text fill="#FFFFFF" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="73" transform="matrix(1 0 0 1 3191.57 718)">updates</text></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1207.9491"
+   height="619.12872"
+   overflow="hidden"
+   version="1.1"
+   id="svg66"
+   sodipodi:docname="wms-only-internal-wom-process.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview66"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5960938"
+     inkscape:cx="597.39599"
+     inkscape:cy="269.09447"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg66" />
+  <defs
+     id="defs1">
+    <image
+       width="71"
+       height="70"
+       xlink:href="data:image/png;base64,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"
+       preserveAspectRatio="none"
+       id="img0" />
+    <image
+       width="71"
+       height="71"
+       xlink:href="data:image/png;base64,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"
+       preserveAspectRatio="none"
+       id="img1" />
+  </defs>
+  <g
+     id="g66"
+     transform="translate(-42.604014,-90.846794)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect1" />
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect2" />
+    <rect
+       x="757.5"
+       y="100.5"
+       width="482"
+       height="600"
+       stroke="#bf8b00"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffe399"
+       fill-opacity="0.65098"
+       id="rect3" />
+    <rect
+       x="51.500099"
+       y="104.5"
+       width="499"
+       height="596"
+       stroke="#2f528f"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#4472c4"
+       fill-opacity="0.4"
+       id="rect4" />
+    <rect
+       x="61.500099"
+       y="110.5"
+       width="479"
+       height="46"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect5" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(279,141)"
+       id="text5">ERP</text>
+    <rect
+       x="770.5"
+       y="110.5"
+       width="455"
+       height="46"
+       stroke="#ae5a21"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ed7d31"
+       id="rect6" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="27px"
+       transform="translate(795.078,142)"
+       id="text6">Warehouse management only mode</text>
+    <rect
+       x="286.5"
+       y="576.5"
+       width="249"
+       height="105"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect7" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(323.131,637)"
+       id="text7">Update on</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(434.611,637)"
+       id="text8">-</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(444.278,637)"
+       id="text9">hand</text>
+    <path
+       d="m 747.278,464.535 -186.113,-0.356 0.003,-1.333 186.113,0.355 z m -184.786,2.98 -7.992,-4.015 8.008,-3.985 z"
+       id="path9" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(571.905,517)"
+       id="text10">On</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(600.405,517)"
+       id="text11">-</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(607.739,517)"
+       id="text12">hand data</text>
+    <path
+       d="m 722.5,473.5 h 47 v 46 h -47 z m 10.563,5.75 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path12" />
+    <path
+       d="m 733.063,479.25 h 17.25 v 8.625 h 8.625 v 25.875 h -25.875 z"
+       fill="#cd9500"
+       fill-rule="evenodd"
+       id="path13" />
+    <path
+       d="m 750.313,479.25 v 8.625 h 8.625 z"
+       fill="#996f00"
+       fill-rule="evenodd"
+       id="path14" />
+    <path
+       d="m 733.063,479.25 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z m 25.875,8.625 h -8.625 v -8.625"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15" />
+    <rect
+       x="722.5"
+       y="473.5"
+       width="47"
+       height="46"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect15" />
+    <rect
+       x="837.5"
+       y="238.5"
+       width="229"
+       height="84"
+       stroke="#ae5a21"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ed7d31"
+       id="rect16" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(853.942,287)"
+       id="text16">Counting/Adjustments</text>
+    <path
+       d="m 838.5,403.811 c 92.98,9.072 92.98,-9.072 185.95,-9.072 V 347.58 H 838.5 Z m 15.32,-56.231 v -6.114 h 184.68 v 47.455 c -7.02,0 -14.05,0.329 -14.05,0.329 v -41.67 z m 14.4,-6.114 V 335.5 h 186.28 v 47.307 c -8,0 -16,0.247 -16,0.247 v -41.588 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path16" />
+    <path
+       d="m 838.5,347.58 h 185.95 v 47.159 c -92.97,0 -92.97,18.144 -185.95,9.072 z m 15.32,0 v -6.114 h 184.68 v 47.455 c -7.02,0 -14.05,0.329 -14.05,0.329 M 868.22,341.466 V 335.5 h 186.28 v 47.307 c -8,0 -16,0.247 -16,0.247"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path17" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(848.345,384)"
+       id="text17">On</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(876.511,384)"
+       id="text18">-</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(885.011,384)"
+       id="text19">hand updates</text>
+    <use
+       width="100%"
+       height="100%"
+       xlink:href="#img0"
+       fill="none"
+       transform="translate(776,339)"
+       id="use19" />
+    <rect
+       x="282.5"
+       y="411.5"
+       width="250"
+       height="116"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect19" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(316.435,463)"
+       id="text20">Request on</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(435.101,463)"
+       id="text21">-</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(444.768,463)"
+       id="text22">hand</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(305.055,492)"
+       id="text23">update information</text>
+    <path
+       d="m 713.571,496.898 -151.408,-0.7 0.007,-1.334 151.408,0.7 z m -150.09,2.639 -7.981,-4.037 8.018,-3.963 z"
+       id="path23" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(558.913,456)"
+       id="text24">Business events</text>
+    <path
+       d="m 732.776,431.5 3.25,6.756 -1.341,0.796 4.094,5.789 -1.34,0.967 5.061,9.692 -8.584,-7.428 1.637,-1.031 -5.333,-4.758 1.911,-1.47 -5.631,-4.991 z"
+       stroke="#ae5a21"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path24" />
+    <path
+       d="m 719.776,434.5 3.25,6.756 -1.341,0.796 4.094,5.789 -1.34,0.967 5.061,9.692 -8.584,-7.428 1.637,-1.031 -5.333,-4.758 1.911,-1.47 -5.631,-4.991 z"
+       stroke="#ae5a21"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path25" />
+    <rect
+       x="61.500099"
+       y="578.5"
+       width="160"
+       height="104"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect25" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(100.719,638)"
+       id="text25">Costing</text>
+    <path
+       d="M 1.26848e-6,-0.5 34.7162,-0.499912 v 1 L -1.26848e-6,0.5 Z M 33.3829,-3.99991 l 8,4.000014987 -8,3.999975013 z"
+       transform="matrix(-1,0,0,1,278.883,627.5)"
+       id="path26" />
+    <use
+       width="100%"
+       height="100%"
+       xlink:href="#img1"
+       fill="none"
+       transform="translate(773,244)"
+       id="use26" />
+    <rect
+       x="835.5"
+       y="432.5"
+       width="229"
+       height="83"
+       stroke="#ae5a21"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ed7d31"
+       id="rect26" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(867.922,468)"
+       id="text26">On</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(893.255,468)"
+       id="text27">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(899.755,468)"
+       id="text28">hand inventory</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(857.982,494)"
+       id="text29">source system report</text>
+    <path
+       d="m 750.278,292.535 -186.113,-0.356 0.003,-1.333 186.113,0.355 z m -184.786,2.98 -7.992,-4.015 8.008,-3.985 z"
+       id="path29" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(568.911,284)"
+       id="text30">Business events</text>
+    <path
+       d="m 741.776,254.5 3.25,7.037 -1.341,0.83 4.094,6.03 -1.34,1.007 5.061,10.096 -8.584,-7.737 1.637,-1.074 -5.333,-4.956 1.911,-1.532 -5.631,-5.199 z"
+       stroke="#ae5a21"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path30" />
+    <path
+       d="m 730.776,256.5 3.25,7.037 -1.341,0.83 4.094,6.03 -1.34,1.007 5.061,10.096 -8.584,-7.737 1.637,-1.074 -5.333,-4.956 1.911,-1.532 -5.631,-5.199 z"
+       stroke="#ae5a21"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path31" />
+    <path
+       d="m 779.5,480.5 c 0,-18.778 15.222,-34 34,-34 18.778,0 34,15.222 34,34 0,18.778 -15.222,34 -34,34 -18.778,0 -34,-15.222 -34,-34 z"
+       stroke="#000000"
+       stroke-width="0"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ed7d31"
+       fill-rule="evenodd"
+       id="path32" />
+    <path
+       d="m 779.5,480.5 c 0,-18.778 15.222,-34 34,-34 18.778,0 34,15.222 34,34 0,18.778 -15.222,34 -34,34 -18.778,0 -34,-15.222 -34,-34 z"
+       stroke="#c8c8c8"
+       stroke-width="0.333333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path33" />
+    <g
+       id="g37">
+      <g
+         id="g36">
+        <g
+           id="g35">
+          <path
+             d="m 11.974,33 11,-11 h -6.1302 c 2.0052,-3.8958 6.0729,-6.5885 10.7708,-6.5885 3.0364,0 5.8437,1.1458 7.9635,3.0364 H 46.75 C 43.3698,11.2292 36.0365,6.30208 27.6146,6.30208 17.8177,6.30208 9.56771,12.9479 7.16146,22 H 0.973958 Z"
+             fill="#ffffff"
+             transform="matrix(1.01818,0,0,1,785,451)"
+             id="path34" />
+          <path
+             d="m 54.1979,33 -11,-11 -11,11 h 6.1875 c -2.0052,3.8958 -6.0729,6.5885 -10.7708,6.5885 -3.0365,0 -5.8438,-1.1458 -7.9636,-3.0364 H 8.42188 c 3.43752,7.2187 10.71352,12.1458 19.19272,12.1458 9.7969,0 18.0469,-6.6458 20.4531,-15.6979 z"
+             fill="#ffffff"
+             transform="matrix(1.01818,0,0,1,785,451)"
+             id="path35" />
+        </g>
+      </g>
+    </g>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(555.792,666)"
+       id="text37">Log update data</text>
+    <path
+       d="m 766.5,667.789 c 201.887,12.522 201.887,-12.522 403.75,-12.522 V 590.174 H 766.5 Z m 33.264,-77.615 v -8.439 h 400.996 v 65.501 c -15.24,0 -30.51,0.454 -30.51,0.454 v -57.516 z m 31.267,-8.439 V 573.5 H 1235.5 v 65.297 c -17.37,0 -34.74,0.34 -34.74,0.34 v -57.402 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path37" />
+    <path
+       d="m 766.5,590.174 h 403.75 v 65.093 c -201.863,0 -201.863,25.044 -403.75,12.522 z m 33.264,0 v -8.439 h 400.996 v 65.501 c -15.24,0 -30.51,0.454 -30.51,0.454 M 831.031,581.735 V 573.5 H 1235.5 v 65.297 c -17.37,0 -34.74,0.34 -34.74,0.34"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path38" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(790.665,637)"
+       id="text38">Warehouse inventory update log data</text>
+    <path
+       d="m 747.278,642.535 -186.113,-0.356 0.003,-1.333 186.113,0.355 z m -184.786,2.98 -7.992,-4.015 8.008,-3.985 z"
+       id="path39" />
+    <path
+       d="m 747.278,623.535 -186.113,-0.356 0.003,-1.333 186.113,0.355 z m -184.786,2.98 -7.992,-4.015 8.008,-3.985 z"
+       id="path40" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(559.698,609)"
+       id="text40">Business events</text>
+    <path
+       d="m 723.776,592.5 3.25,7.037 -1.341,0.83 4.094,6.03 -1.34,1.007 5.061,10.096 -8.584,-7.737 1.637,-1.074 -5.333,-4.956 1.911,-1.532 -5.631,-5.199 z"
+       stroke="#ae5a21"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path41" />
+    <path
+       d="m 736.383,589.5 3.048,6.756 -1.257,0.796 3.838,5.789 -1.257,0.967 4.745,9.692 -8.047,-7.428 1.535,-1.031 -5,-4.758 1.791,-1.47 -5.279,-4.991 z"
+       stroke="#ae5a21"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path42" />
+    <path
+       d="m 718.5,647.5 h 47 v 46 h -47 z m 10.563,5.75 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path43" />
+    <path
+       d="m 729.063,653.25 h 17.25 v 8.625 h 8.625 v 25.875 h -25.875 z"
+       fill="#cd9500"
+       fill-rule="evenodd"
+       id="path44" />
+    <path
+       d="m 746.313,653.25 v 8.625 h 8.625 z"
+       fill="#996f00"
+       fill-rule="evenodd"
+       id="path45" />
+    <path
+       d="m 729.063,653.25 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z m 25.875,8.625 h -8.625 v -8.625"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path46" />
+    <rect
+       x="718.5"
+       y="647.5"
+       width="47"
+       height="46"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect46" />
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(26.4733,31)"
+       id="text46">wms</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(74.3066,31)"
+       id="text47">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(83.3066,31)"
+       id="text48">only</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(127.473,31)"
+       id="text49">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(136.473,31)"
+       id="text50">internal</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(214.5,31)"
+       id="text51">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(223.5,31)"
+       id="text52">wom</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(275.24,31)"
+       id="text53">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="24px"
+       transform="translate(284.24,31)"
+       id="text54">process.svg</text>
+    <path
+       d="m 233.5,239.963 c 129.569,8.561 129.569,-8.561 259.125,-8.561 V 186.899 H 233.5 Z m 21.349,-53.064 v -5.769 h 257.355 v 44.781 c -9.783,0 -19.579,0.311 -19.579,0.311 v -39.323 z m 20.066,-5.769 V 175.5 H 534.5 v 44.642 c -11.148,0 -22.296,0.233 -22.296,0.233 V 181.13 Z"
+       fill="#005a9f"
+       fill-rule="evenodd"
+       id="path54" />
+    <path
+       d="m 233.5,186.899 h 259.125 v 44.503 c -129.556,0 -129.556,17.122 -259.125,8.561 z m 21.349,0 v -5.769 h 257.355 v 44.781 c -9.783,0 -19.579,0.311 -19.579,0.311 M 274.915,181.13 V 175.5 H 534.5 v 44.642 c -11.148,0 -22.296,0.233 -22.296,0.233"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path55" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(266.503,211)"
+       id="text55">Master data updates</text>
+    <path
+       d="m 542.5,168.5 h 47 v 47 h -47 z m 10.281,5.875 h 17.625 l 8.813,8.813 v 26.437 h -26.438 z"
+       fill="#005a9f"
+       fill-rule="evenodd"
+       id="path56" />
+    <path
+       d="m 552.781,174.375 h 17.625 v 8.813 h 8.813 v 26.437 h -26.438 z"
+       fill="#004880"
+       fill-rule="evenodd"
+       id="path57" />
+    <path
+       d="m 570.406,174.375 v 8.813 h 8.813 z"
+       fill="#00365f"
+       fill-rule="evenodd"
+       id="path58" />
+    <path
+       d="m 552.781,174.375 h 17.625 l 8.813,8.813 v 26.437 h -26.438 z m 26.438,8.813 h -8.813 v -8.813"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path59" />
+    <rect
+       x="542.5"
+       y="168.5"
+       width="47"
+       height="47"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect59" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(594.802,188)"
+       id="text59">Master</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(661.169,188)"
+       id="text60">data</text>
+    <path
+       d="M 0.00259578,-0.666662 173.693,0.00963711 173.688,1.34296 -0.00259578,0.666662 Z M 172.373,-3.32886 l 7.984,4.031117 -8.015,3.968823 z"
+       transform="matrix(1,0,0,-1,563.5,224.202)"
+       id="path60" />
+    <path
+       d="m 751.5,181.5 h 29 v 32 h -29 z m 6.344,5.125 h 10.875 l 5.437,5.438 v 16.312 h -16.312 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path61" />
+    <path
+       d="m 757.844,186.625 h 10.875 v 5.438 h 5.437 v 16.312 h -16.312 z"
+       fill="#cd9500"
+       fill-rule="evenodd"
+       id="path62" />
+    <path
+       d="m 768.719,186.625 v 5.438 h 5.437 z"
+       fill="#996f00"
+       fill-rule="evenodd"
+       id="path63" />
+    <path
+       d="m 757.844,186.625 h 10.875 l 5.437,5.438 v 16.312 h -16.312 z m 16.312,5.438 h -5.437 v -5.438"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path64" />
+    <rect
+       x="751.5"
+       y="181.5"
+       width="29"
+       height="32"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect64" />
+    <path
+       d="m 791.5,228.925 c 117.516,8.689 117.516,-8.689 235.02,-8.689 V 175.069 H 791.5 Z m 19.363,-53.856 v -5.855 h 233.417 v 45.45 c -8.87,0 -17.76,0.315 -17.76,0.315 v -39.91 z m 18.2,-5.855 V 163.5 H 1064.5 v 45.308 c -10.11,0 -20.22,0.236 -20.22,0.236 v -39.83 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path65" />
+    <path
+       d="m 791.5,175.069 h 235.02 v 45.167 c -117.504,0 -117.504,17.378 -235.02,8.689 z m 19.363,0 v -5.855 h 233.417 v 45.45 c -8.87,0 -17.76,0.315 -17.76,0.315 M 829.063,169.214 V 163.5 H 1064.5 v 45.308 c -10.11,0 -20.22,0.236 -20.22,0.236"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path66" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(819.05,209)"
+       id="text66">Master data updates</text>
+  </g>
+</svg>

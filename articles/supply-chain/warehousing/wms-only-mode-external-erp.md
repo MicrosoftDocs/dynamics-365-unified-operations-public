@@ -33,13 +33,13 @@ The following illustration shows an example where Warehouse management only mode
 
 :::image type="content" source="media/wms-only-erp-integration.svg" alt-text="Warehouse management only mode with external ERP system." lightbox="media/wms-only-erp-integration.svg":::
 
-## Inbound process example (External ERP system integration)
+## Inbound process example (external ERP system integration)
 
 The following illustration highlights the elements of the inbound process.
 
 :::image type="content" source="media/wms-only-inbound-wom-process.svg" alt-text="Inbound process for Warehouse management only mode." lightbox="media/wms-only-inbound-wom-process.svg":::
 
-Here's a high-level description of the inbound process:
+Here's a high-level description of the inbound process. Steps starting with *ERP* are done by the ERP system. Steps starting with *WOM* are done by Supply Chain Management in Warehouse management only mode.
 
 1. *ERP*: An external system submits an *inbound shipment order* message to Supply Chain Management.
 1. *WOM*: Supply Chain Management processes the message in Warehouse management only mode and creates orders.
@@ -52,7 +52,7 @@ Here's a high-level description of the inbound process:
 
 1. *WOM*: Warehouse workers uses the Warehouse Management mobile app to *register* the inbound shipment transactions.
 1. *WOM*: Supply Chain Management runs [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts), and trigger *business events* for the external systems.
-1. *ERP*: The external systems read and use the [shipment receipt](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) data for further processing. For example, if purchase orders are associated with the inbound shipment orders in the external system, this processing involves purchase order invoicing.
+1. *ERP*: The external system reads and uses the [shipment receipt](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) data for further processing. For example, if purchase orders are associated with the inbound shipment orders in the external system, this processing involves purchase order invoicing.
 1. *WOM*: Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
@@ -63,7 +63,7 @@ The following illustration highlights the elements of the outbound process.
 
 :::image type="content" source="media/wms-only-outbound-wom-process.svg" alt-text="Outbound process for Warehouse management only mode." lightbox="media/wms-only-outbound-wom-process.svg":::
 
-Here's a high-level description of the outbound process:
+Here's a high-level description of the inbound process. Steps starting with *ERP* are done by the ERP system. Steps starting with *WOM* are done by Supply Chain Management in Warehouse management only mode.
 
 1. *ERP*: An external system submits an *outbound shipment order* message.
 1. *WOM*: Supply Chain Management processes the message in Warehouse management only mode and creates orders.
@@ -87,13 +87,13 @@ The following illustration shows the internal processes that are used for Wareho
 
 :::image type="content" source="media/wms-only-internal-wom-process.svg" alt-text="Internal process for Warehouse management only mode." lightbox="media/wms-only-internal-wom-process.svg":::
 
-The **Warehouse management** module uses the [counting journal](../inventory/inventory-journals.md#counting) to support multiple on-hand inventory update processes. For more information about the counting process, see [Cycle counting](cycle-counting.md).
+The Warehouse management module uses the [counting journal](../inventory/inventory-journals.md#counting) to support multiple on-hand inventory update processes. For more information about the counting process, see [Cycle counting](cycle-counting.md).
 
-As part of the journal posting process, Supply Chain Management triggers a business event, and external systems can read about the updates through the [counting journal entities](/common-data-model/schema/core/operationscommon/entities/supplychain/inventoryandwarehousemanagement/inventinventorycountingjournallineentity). It's important to act only on the updated quantities, to avoid becoming out of sync because of the updates. The following scenario provides an example.
+As part of the journal posting process, Supply Chain Management triggers a business event, and external systems can read about the updates through the [counting journal entities](/common-data-model/schema/core/operationscommon/entities/supplychain/inventoryandwarehousemanagement/inventinventorycountingjournallineentity). It's important to act only on the updated quantities to avoid becoming out of sync because of the updates. The following scenario provides an example.
 
 ## Example scenario: Updating on-hand inventory between systems
 
-At the start of this scenario, on-hand information about item number A0001 is in sync between the external ERP system and the Supply Chain Management warehouse management system (WMS), as shown in the following table.
+At the start of this scenario, on-hand information about item number A0001 is in sync between the external ERP system (ERP) and the Supply Chain Management warehouse management system (WMS), as shown in the following table.
 
 | Item number | ERP on-hand | WMS on-hand |
 |-------------|-------------|-------------|
@@ -132,7 +132,7 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 | A0001       | 11 pcs      | 11 pcs      |
 
 > [!NOTE]
-> Make sure that each of your items is assigned to an item model group that's configured as described in the [Master data](#master-data) section. In this way, you don't have configure [inventory postings](../../finance/general-ledger/inventory-posting.md) and [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when you make adjustments via the [counting journal](../inventory/tasks/define-inventory-counting-processes.md).
+> Make sure that each of your items is assigned to an item model group that's configured as described in the [Master and reference data](wms-only-mode-exchange-data.md#master-data). In this way, you don't have configure [inventory postings](../../finance/general-ledger/inventory-posting.md) and [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when you make adjustments via the [counting journal](../inventory/tasks/define-inventory-counting-processes.md).
 
 ## On-hand inventory reconciliation
 
