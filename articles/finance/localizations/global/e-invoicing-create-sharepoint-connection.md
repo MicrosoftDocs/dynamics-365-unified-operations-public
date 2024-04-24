@@ -1,5 +1,5 @@
 ---
-title: Configure a SharePoint connection
+title: Configure a SharePoint connection (RCS)
 description: This article explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site.
 author: gionoder
 ms.date: 12/15/2021
@@ -15,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure a SharePoint connection
+# Configure a SharePoint connection (RCS)
 
 [!include [banner](../../includes/banner.md)]
 
