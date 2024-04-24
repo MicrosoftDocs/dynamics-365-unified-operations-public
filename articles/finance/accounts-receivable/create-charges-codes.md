@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Create charges codes
-description: This article explains how to configure charges codes for both Accounts payable and Accounts receivable. 
-author: prabhatb
-ms.date: 03/23/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: MarkupTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to configure charges codes for both Accounts payable and Accounts receivable, including a step-by-step process on setting up charges codes. 
+author: prabhatb-ship-it
 ms.author: prabhatb
+ms.topic: article
+ms.date: 03/23/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-03
+ms.search.form: MarkupTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Create charges codes
