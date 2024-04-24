@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business performance planning excel add-in FAQ
+title: Business performance planning Excel add-in FAQ
 description: This article provides answers to frequently asked questions about the Microsoft Excel add-in for business performance planning.
 author: ShielaSogge
 ms.date: 04/23/2024
@@ -24,42 +24,47 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: 
 
 ---
-# Excel add-in for business performance planning FAQ
+# Business performance planning Excel add-in FAQ
 
 [!include [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Microsoft Excel add-in for business performance planning.
 
-## I don't see the Business performance add-in on my downloaded Excel workbook after installing it from my business performance planning app? 
+## After I install the Business performance add-in from the business performance planning app, I don't see it in my downloaded Excel workbook. What should I do?
 
-To see the add-in tab on your Excel workbook, follow these steps:
- - Click **Enable content** when you open the downloaded excel workbook. 
+To make the tab for the add-in visible in your Excel workbook, follow this step.
 
-If this doesn't work, follow the instructions below. 
-1. Confirm other add-ins are disabled and restart Excel.
-2. **File** > **Options**. This opens Excel options.
+- When you open the downloaded Excel workbook, select **Enable content**.
+
+If that approach doesn't work, follow these steps.
+
+1. Confirm that other add-ins are disabled, and then restart Excel.
+2. Select **File** \> **Options** to open Excel options.
 3. Select **Add-ins**.
-4. Select **Manage com add-ins**, click **Go**.
-5. The available add-ins are displayed. Uncheck the other COM (Component Object Model) add-ins, click **OK**.
+4. In the **Manage** field, select **COM Add-ins**. Then select **Go**.
+5. The available Component Object Model (COM) add-ins are shown. Clear the checkbox for each of the other add-ins, and then select **OK**.
 6. Close all open Excel workbooks.
-7. Restart your downloaded Excel workbook.
-8. Click **Enable content**. 
+7. Reopen your downloaded Excel workbook.
+8. Select **Enable content**.
 
-## When I connect to data, I can't select the cube/dimension tables because the selection window is inconsistently empty. 
+## When I connect to data, I can't select the cube/dimension tables because the selection window is inconsistently empty. What should I do?
 
-This issue occurs when working with multiple monitors or more than just your laptop screen. This is a known bug that is being actively worked on to resolve. 
-To work around this issue:
-Either drag the table selection window to your main monitor (laptop screen). The user interface should appear. 
- - Or -   
-Duplicate your screen and begin interacting with table selections and authentication prompts. 
+This issue occurs when you work with multiple monitors or more than just your laptop display. It's a known bug that we're actively working to fix.
 
-## After connecting to data, I only see my Cube data connected. What about my Dimension data? 
-After connecting to your database server, confirm that all the Dimension tables and Cube that you want to bring into your data model in Excel are selected. 
-You can also follow these steps:  
-1. To select multiple items, check the box.
-2. Select your Cube.
-3. Click **Select related tables**.
-4. Wait until Excel selects everything. Click **Load**. 
+To work around this issue, follow one of these steps.
 
-## After creating my pivot table, I'm not able to modify values in the pivot table. I get an error that the source table name is incorrect. 
-The relationship between your cube and dimension tables aren't set up correctly. For more information, see [Configure and use the Excel add-in for business performance planning](use-excel-addin.md). 
+- Drag the table selection window to your main monitor (laptop display). The user interface should appear.
+- Duplicate your screen, and begin to interact with table selections and authentication prompts.
+
+## After I connect to data, I see only my cube data connected. How do I see my dimension data connected?
+
+After you connect to your database server, confirm that all the cube and dimension tables that you want to bring into your data model in Excel are selected. You can also follow these steps.
+
+1. To select multiple items, select the checkbox.
+2. Select your cube.
+3. Select **Select related tables**.
+4. Wait until Excel selects everything. Then select **Load**.
+
+## After I create my PivotTable, I can't modify values in it. An error message states that the source table name is incorrect. What should I do?
+
+The relationship between your cube and dimension tables isn't set up correctly. For more information, see [Configure and use the Excel add-in for business performance planning](use-excel-addin.md).
