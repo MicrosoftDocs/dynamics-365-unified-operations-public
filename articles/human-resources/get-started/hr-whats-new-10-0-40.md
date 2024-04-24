@@ -43,7 +43,7 @@ originally published.
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
+Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
 
 ### Bug fixes
 
@@ -57,13 +57,13 @@ For information about regulatory updates for finance and operations apps, see [R
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2024 release wave 2 plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2024 release wave 2 plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-human-resources). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Human Resources](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Human Resources.
+The [Removed or deprecated features in Dynamics 365 Human Resources](removed-deprecated-features-hr.md) article describes features that have been removed or deprecated for Dynamics 365 Human Resources.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Human Resources](removed-deprecated-features-finance.md) article 12 months prior to the removal.
+
