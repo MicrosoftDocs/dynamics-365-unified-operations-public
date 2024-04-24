@@ -6,8 +6,6 @@ description: Report as finished is a production stage. At this stage, a finished
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,9 +6,6 @@ description: This article provides answers to some frequently asked questions (F
 author: twheeloc
 ms.date: 01/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

@@ -4,10 +4,8 @@ description: This article provides information about Polish VAT reporting and th
 author: mrolecki
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31

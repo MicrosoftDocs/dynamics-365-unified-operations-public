@@ -4,10 +4,8 @@ description: This article provides information about how to build an OData metad
 author: hasaid
 ms.date: 03/25/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2020-01-01

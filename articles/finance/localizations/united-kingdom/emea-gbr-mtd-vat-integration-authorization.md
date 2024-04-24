@@ -4,10 +4,8 @@ description: This article explains how to authorize your Microsoft Dynamics 365 
 author: AdamTrukawka
 ms.date: 08/17/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.author: atrukawk
 ms.search.validFrom: 2021-08-07

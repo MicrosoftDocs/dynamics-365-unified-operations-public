@@ -6,9 +6,6 @@ description: This article describes the relationship between configuration keys 
 author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -29,9 +26,6 @@ ms.dyn365.ops.version: Platform update 13
 # Configuration keys and data entities
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
 

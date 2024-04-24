@@ -6,9 +6,6 @@ description: This article explains how to adjust sales tax by using general jour
 author: kailiang
 ms.date: 08/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

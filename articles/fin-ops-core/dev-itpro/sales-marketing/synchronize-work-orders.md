@@ -6,9 +6,6 @@ description: This article discusses the templates and underlying task that are u
 author: Henrikan
 ms.date: 03/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

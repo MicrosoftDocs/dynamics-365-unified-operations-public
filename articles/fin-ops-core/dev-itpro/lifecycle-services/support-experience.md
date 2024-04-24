@@ -4,10 +4,8 @@ description: This article provides information about the support experience for 
 author: sericks007
 ms.date: 09/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28

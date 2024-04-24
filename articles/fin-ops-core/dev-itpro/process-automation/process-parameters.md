@@ -4,10 +4,8 @@ description: This article describes how to implement custom parameters in the pr
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10

@@ -4,7 +4,7 @@ description: This article provides information about the parameter configuration
 author: Fhernandez0088
 ms.date: 04/28/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 	
 ms.custom: bap-template
 ---

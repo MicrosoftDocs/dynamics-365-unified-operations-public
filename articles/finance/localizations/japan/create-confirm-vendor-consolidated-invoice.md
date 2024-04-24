@@ -4,10 +4,8 @@ description: This article explains how to consolidate vendor invoices each month
 author: kfend
 ms.date: 10/04/2021
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30

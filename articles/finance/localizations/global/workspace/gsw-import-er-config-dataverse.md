@@ -1,6 +1,6 @@
 ---
-title: Import Electronic reporting (ER) configurations from Dataverse (preview)
-description: This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse (preview).
+title: Import Electronic reporting (ER) configurations from Dataverse
+description: This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse.
 author: filatovm
 ms.author: filatovm
 ms.topic: how-to
@@ -11,34 +11,32 @@ ms.reviewer: johnmichalak
 
 ---
 
-# Import Electronic reporting (ER) configurations from Dataverse (preview)
+# Import Electronic reporting (ER) configurations from Dataverse
 
 [!INCLUDE[banner](../../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse.
 
 ## Set up integration with Dataverse and import the Globalization solution
 
-To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment. To validate that this setup is in place, follow these steps.
+To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
 
-1. In [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to the environment.
-1. Select **Settings**.
-1. On the **Product** tab, select **Features**.
-1. Set the **Enable Finance and Operations User Impersonation in Dataverse** option to **On** if it isn't already.
-1. Select **Save**.
+1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
+2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
+3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles). 
 
 You can now import the Globalization solution by following these steps.
 
-1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-crm/mscrm.d365-globalizationartifacts-preview?flightCodes=a0bc3ba0711a4558bf3a2932a66dc11d) on AppSource.
+1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on AppSource.
 1. Select **Get it now**.
 1. Fill in the required data.
 1. Select an environment, and then select **Install**.
 
 ## Import configurations from Dataverse
 
-A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Global repository enables. Therefore, you can import single and filtered configurations.
+A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Dataverse enables. Therefore, you can import single and filtered configurations.
 
 ### Open the Dataverse configuration repository
 
@@ -72,7 +70,7 @@ To import a single configuration, follow these steps.
 
 1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
 1. On the **Versions** FastTab, select the required version of the selected ER configuration.
-1. Select **Import** to download the selected version from the Global repository to the current Dynamics 365 Finance instance.
+1. Select **Import** to download the selected version from the Dataverse to the current Dynamics 365 Finance instance.
 
     > [!NOTE]
     > The **Import** button is unavailable for ER configuration versions that are already present in the current Dynamics 365 Finance instance.
@@ -86,7 +84,7 @@ To import filtered configurations, follow these steps.
 1. On the **Configuration repository** page, on the **Filter** FastTab, in the **Tags** grid, add any tags that are needed.
 1. In the **Country/region applicability** field, select the appropriate country/region codes.
 1. Select **Apply filter**.
-1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from the Global repository to the current Dynamics 365 Finance instance.
+1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from Dataverse to the current Dynamics 365 Finance instance.
 1. Select **Reset filter** to clean up the specified selection conditions.
 
 :::image type="content" source="media/gsw-config-repo-reset-filter.png" alt-text="Screenshot of the Configuration repository page, where a Country/region applicability filter is applied.":::
@@ -98,7 +96,7 @@ To import filtered configurations, follow these steps.
 
 ## Related resources
 
-- [Get started with Tax Calculation - Hibh-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
+- [Get started with Tax Calculation - High-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
 - [Globalization feature components](../e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

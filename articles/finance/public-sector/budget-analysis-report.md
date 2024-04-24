@@ -6,9 +6,6 @@ description: This article describes the Budget analysis report, which is used to
 author: v-kiarnd
 ms.date: 07/08/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]

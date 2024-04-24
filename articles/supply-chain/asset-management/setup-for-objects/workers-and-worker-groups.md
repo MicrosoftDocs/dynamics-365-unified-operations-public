@@ -6,8 +6,6 @@ description: This article explains maintenance workers and worker groups in Asse
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

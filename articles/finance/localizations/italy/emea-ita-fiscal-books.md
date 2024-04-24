@@ -4,10 +4,8 @@ description: The article describes how to set up and use Italian sales tax books
 author: liza-golub
 ms.date: 06/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30

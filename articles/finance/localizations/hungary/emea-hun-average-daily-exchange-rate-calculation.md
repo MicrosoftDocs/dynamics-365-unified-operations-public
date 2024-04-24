@@ -4,10 +4,8 @@ description: This article explains how to calculate the average currency exchang
 author: AdamTrukawka
 ms.date: 03/30/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Hungary
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

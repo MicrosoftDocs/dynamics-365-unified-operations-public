@@ -1,22 +1,14 @@
 ---
-# required metadata
-
 title: Cloud-hosted environments can't use business events or virtual entities and receive a 400 error
-description: This article provides information that can help you troubleshoot business events in cloud-hosted environments.
+description: Learn about how you can troubleshoot business events in cloud-hosted environments, including a PowerShell script.
 author: ramasri
-ms.date: 06/26/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
 ms.author: ramasri
+ms.topic: article
+ms.date: 06/26/2023
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ---
 
 # Cloud-hosted environments can't use business events or virtual entities and receive a 400 error

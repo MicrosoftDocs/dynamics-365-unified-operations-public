@@ -4,10 +4,8 @@ description: This article provides information about Quarterly VAT communication
 author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: atrukawk
 ---

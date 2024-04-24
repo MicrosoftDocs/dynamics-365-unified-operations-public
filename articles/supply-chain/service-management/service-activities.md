@@ -6,8 +6,6 @@ description: Create service activities to define and maintain tasks in a service
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

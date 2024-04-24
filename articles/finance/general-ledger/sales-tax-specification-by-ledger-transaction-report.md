@@ -6,9 +6,6 @@ description: This article explains how to use the Sales tax specification by led
 author: EricWang
 ms.date: 08/19/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxTable

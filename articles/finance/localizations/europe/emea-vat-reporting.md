@@ -4,10 +4,8 @@ description: This article provides general information about how to set up and g
 author: liza-golub
 ms.date: 03/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Australia, Japan, Latvia, Lithuania
 ms.author: egolub
 ms.search.validFrom: 2016-11-30

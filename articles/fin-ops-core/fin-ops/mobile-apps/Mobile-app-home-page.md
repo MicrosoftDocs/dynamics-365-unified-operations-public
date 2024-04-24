@@ -4,8 +4,6 @@ description: This article describes the finance and operations (Dynamics 365) mo
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global

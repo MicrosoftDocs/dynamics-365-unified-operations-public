@@ -6,8 +6,6 @@ description: This task focuses on preparing a process kanban job when all materi
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

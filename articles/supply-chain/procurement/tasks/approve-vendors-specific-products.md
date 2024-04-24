@@ -6,8 +6,6 @@ description: This procedure shows you how to approve vendors for specific produc
 author: Henrikan
 ms.date: 07/22/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

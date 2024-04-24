@@ -6,8 +6,6 @@ description: This procedure shows how to quickly create a new formula by copying
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

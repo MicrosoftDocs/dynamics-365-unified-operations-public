@@ -4,10 +4,8 @@ description: This article provides information about how to set up a VAT declara
 author: liza-golub
 ms.date: 07/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: egolub
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable

@@ -6,9 +6,6 @@ description: The article provides an overview of cleanup routines in Microsoft D
 author: dvliegen
 ms.date: 02/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

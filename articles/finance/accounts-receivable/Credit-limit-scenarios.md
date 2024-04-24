@@ -6,9 +6,6 @@ description: This article describes how the customer credit limit is checked whe
 author: JodiChristiansen
 ms.date: 06/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

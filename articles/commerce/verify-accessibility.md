@@ -4,8 +4,6 @@ description: This article describes how to verify the accessibility of page cont
 author: josaw1
 ms.date: 03/10/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

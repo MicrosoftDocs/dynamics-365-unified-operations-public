@@ -6,8 +6,6 @@ description: When you create a subscription, the sales price is derived from the
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

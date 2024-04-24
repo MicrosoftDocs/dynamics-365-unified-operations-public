@@ -5,7 +5,7 @@ author: pnghub
 ms.author: gned
 ms.reviewer: johnmichalak
 ms.topic: conceptual
-ms.date: 03/08/2024
+ms.date: 03/29/2024
 ms.custom:
 
 ---
@@ -19,7 +19,7 @@ This article describes how to set up and manage archive data in Microsoft Dynami
 
 To prepare your environment to archive data, follow these steps.
 
-1. Refresh your PROD data in your sandbox instance to align it with your production instance.
+1. To align it with your production instance, refresh your PROD data in your sandbox instance.
 1. Ensure that your sandbox instance is on the latest version of Finance version 10.0.39. Be sure to apply the latest quality updates for Finance version 10.0.39.
 1. Enable license configuration for SQL row version change tracking:
 
@@ -35,13 +35,10 @@ To prepare your environment to archive data, follow these steps.
 To archive data, follow these steps to confirm that the Dataverse archive add-in can be installed.
 
 1. In [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/applications), go to **Environments**, select the environment, and then select **Dynamics 365 apps**. Ensure that the Power Platform environment is a [Managed Environment](/power-platform/admin/managed-environment-overview).
-1. Update the **Finance and operations virtual entity** app if the status is **Update available**.
-> [!Note]
-> Known Issue: [Download msft_DataArchivalBaseComponents](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/blob/main/Dataverse/msft_DataArchivalBaseComponents/README.md) component to enable Finance and Operation data to synch to Dataverse long term retention
-
+2. Update the **Finance and operations virtual entity** app if the status is **Update available**.
  
-1. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
-2. Install Dynamics 365 Archive with Dataverse Long Term Retention - From the Power Platform admin center, Click on Install App and search for Dynamics 365 Archive with Dataverse Long Term Retention (Preview). Select and click install. If you already have the app installed, you should install the latest update.
+3. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
+4. Install Dynamics 365 Archive with Dataverse Long Term Retention - From the Power Platform admin center, Click on Install App and search for Dynamics 365 Archive with Dataverse Long Term Retention (Preview). Select and click install. If you already have the app installed, you should install the latest update.
 
 
 
@@ -80,8 +77,8 @@ The **Job status** column that's visible for each archive scenario captures the 
 |---|---|
 | Scheduled | A job is scheduled, but it isn't being processed yet. Details about the scheduled date and time are available on the dashboard. |
 | In progress | The archive job is in progress. Some of the interim stages in the archive job might be completed. |
-| Complete | All stages of the archive job have been completed. |
-| Failed | The archive job has failed. |
+| Complete | All stages of the archive job are complete. |
+| Failed | The archive job failed. |
 
 You can view the detailed progress log for each archive job by selecting **View progress** \> **View detailed logs**.
 
@@ -95,13 +92,14 @@ You can view the detailed progress log for each archive job by selecting **View 
 | Initiating long term retention | The long-term retention job is activated. |
 | Initial sync for \<*tablename*\> in progress \[x of y records synced\] |Initial synchronization to the Dataverse long term retention is in progress. |
 | Initial sync for \<*tablename*\> completed | Initial synchronization to the Dataverse long term retention is completed. |
-| Retention in progress \[x of y records of \<*tablename*\> marked\] | The process is marking records in the finance and operations live application table for archiving, and the equivalent records in the Dataverse long term retention are being updated as retained. |
+| Marking in progress \[x of y records of \<*tablename*\> marked\] | The process is marking records in the finance and operations live application table for archiving, and the equivalent records in the Dataverse long term retention are being updated as retained. |
 | Reconciliation in progress | <p>Reconciliation is in progress to verify that the records that are marked as retained in Dataverse long term retention match the records that are marked for archiving in the finance and operations live application tables.|
 | Reconciliation completed | Reconciliation for all finance and operations entities are completed. |
 | Pending move to history | The move to history process is waiting to begin. |
 | Initiating move to history | The move to history process is activated. |
-| Staging data for move to history in progress | Data is in the staging/queueing process for the move to history. |
-| Staging data for move to history completed | Staging/queueing has completed. |
+| Staging data for move to history in progress \[x of y records of \<*tablename*\> staged\]| Data is in the staging/queueing process for the move to history. |
+| Staging data for move to history completed for \<*tablename*\> | Staging/queueing completed. |
+| Staging data for move to history completed for all tables | Staging/queueing completed. |
 | Move to history in progress \[x of y records of \<*tablename*\> moved\] | Data is being moved from live tables to history tables. |
-| Completed archival of table \<*tablename*\> | The move to history process has completed for the specified table. |
-| The archive job is complete | The end-to-end archival process has completed for all tables in the functional scenario. |
+| Completed archival of table \<*tablename*\> | The move to history process completed for the specified table. |
+| The archive job is complete | The end-to-end archival process completed for all tables in the functional scenario. |

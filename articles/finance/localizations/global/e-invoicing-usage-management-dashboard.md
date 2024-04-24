@@ -4,10 +4,8 @@ description: This article explains how to use the Usage management dashboard to 
 author: gionoder
 ms.date: 06/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gionoder
 ms.search.validFrom: 2020-07-08

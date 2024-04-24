@@ -7,8 +7,6 @@ description: This article describes how to add fault registrations to work order
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

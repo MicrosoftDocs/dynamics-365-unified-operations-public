@@ -4,8 +4,6 @@ description: This article describes how to test e-commerce site pages for custom
 author: samjarawan
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

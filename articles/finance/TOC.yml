@@ -176,17 +176,17 @@
           href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/finance
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/finance
-        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+        - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
           href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/finance      
         - name: Move environments between data centers
           href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/finance      
         - name: Move licenses between agreement types
           href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/finance 
-        - name: Move LCS implementation projects to different Azure AD tenants
+        - name: Move LCS implementation projects to different Microsoft Entra tenants
           href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/finance
         - name: Move LCS implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/finance 
-        - name: Multiple LCS projects and production environments on one Azure AD tenant
+        - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/finance    
     - name: Finance troubleshooting and FAQs
       href: finance-troubleshooting.md
@@ -203,7 +203,9 @@
         - name: Vendor posting profiles
           href: accounts-payable/vendor-posting-profiles.md   
         - name: Default offset accounts for vendor invoice journals and invoice approval journals
-          href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md  
+          href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md 
+        - name: Vendor invoice dates
+          href: accounts-payable/vendor-invoice-dates.md            
         - name: Accounting distributions and subledger journal entries for vendor invoices
           href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md           
         - name: Copy vendors by using shared number sequences
@@ -272,6 +274,10 @@
           href: accounts-payable/vendor-invoices-workspace.md
         - name: Recurring vendor invoices
           href: accounts-payable/recurring-invoice.md
+      - name: Vendor invoice workspace
+        items:
+        - name: Vendor invoice center
+          href: accounts-payable/vendor-invoice-workspace.md
       - name: Accounts payable reports   
         items:
         - name: Vendor aging report
@@ -304,8 +310,6 @@
         href: general-ledger/accts-payble-posting.md
       - name: Create charges codes
         href: accounts-receivable/create-charges-codes.md
-      - name: Vendor invoice dates
-        href: accounts-payable/vendor-invoice-dates.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
         href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
       - name: Mobile invoice approvals
@@ -1306,30 +1310,6 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
-      - name: Troubleshooting
-        items: 
-        - name: Change the accounting or reporting currency
-          href: general-ledger/add-change-acctg-rprtg-crrncy.md
-        - name: Change or reassign a ledger calendar
-          href: general-ledger/change-mdfy-clndr-to-ledger.md
-        - name: Reverse settings on journals and lines
-          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
-        - name: Year-end close missing opening balances
-          href: general-ledger/yec-mssng-open-blnces.md
-        - name: How do I set up balancing financial dimensions?
-          href: general-ledger/set-up-balance-dimensions.md
-        - name: Open financial journal templates in Office
-          href: general-ledger/open-fincl-jrnls-in-office.md
-        - name: Default financial dimensions on financial journals
-          href: general-ledger/dimension-default-values.md
-        - name: Journal posting failure due to imbalance
-          href: general-ledger/posting-fail-imbalance.md
-        - name: Why can't I reverse this transaction?
-          href: general-ledger/cant-reverse-transctns.md
-        - name: Intercompany journals and financial dimensions  
-          href: general-ledger/intercompany-journal.md
-        - name: General journal posting performance  
-          href: general-ledger/posting-performance.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1558,15 +1538,15 @@
         items:
         - name: Globalization services overview
           href: localizations/global/globalization-services-overview.md?context=/dynamics365/context/finance
-        - name: Globalization Studio workspace (preview)
+        - name: Globalization Studio workspace
           items:
-          - name: Regulatory Configuration Service merge to Globalization Studio workspace (preview)
+          - name: Regulatory Configuration Service merge to Globalization Studio workspace
             href: localizations/global/workspace/merge-rcs-to-gsw.md
-          - name: Globalization Studio workspace features (preview)
+          - name: Globalization Studio workspace features
             href: localizations/global/workspace/gsw-features.md
-          - name: Import Electronic reporting (ER) configurations from Dataverse (preview)
+          - name: Import Electronic reporting (ER) configurations from Dataverse
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
-          - name: Upload ER configurations and Globalization features as a Dataverse solution (preview)
+          - name: Upload ER configurations and Globalization features as a Dataverse solution
             href: localizations/global/workspace/gsw-upload-er-config.md
         - name: Regulatory configuration service (RCS)
           items:
@@ -1600,7 +1580,7 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing (preview)
+        - name: Electronic Invoicing
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
@@ -1622,6 +1602,8 @@
                 href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
                 href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
@@ -1700,6 +1682,8 @@
                 href: localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
                 href: localizations/global/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
+              - name: Create Azure resources using Azure PowerShell or ARM templates
+                href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
             - name: Set up environments
               items:
               - name: Configure service environments and connected applications
@@ -4433,7 +4417,7 @@
       items: 
       - name: Business performance analytics
         href: business-performance-analytics/business-performance-analytics-home-page.md
-      - name: Configure business performance analytics
+      - name: Install prerequisites for business performance analytics
         href: business-performance-analytics/configure-BPA.md
       - name: Install business performance analytics
         href: business-performance-analytics/install-bpa.md
@@ -4459,6 +4443,8 @@
         href: business-performance-planning/bpp-app-install.md
       - name: Install Power BI visuals
         href: business-performance-planning/powerBI-visual-install.md
+      - name: Install the Excel add-in
+        href: business-performance-planning/install-excel-add.md
       - name: Dimensions
         items:
         - name: Creating and maintaining dimensions
@@ -4491,6 +4477,10 @@
           href: business-performance-planning/comments.md
         - name: Allocation method
           href: business-performance-planning/allocation.md
+      - name: Excel add-in
+        items:
+        - name: Configure and use the Excel add-in
+          href: business-performance-planning/use-excel-addin.md
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview
@@ -4783,6 +4773,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?context=/dynamics365/context/finance
             - name: TableName2ID
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/finance
+            - name: TaxUnitConversion
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-taxunitconversion.md?context=/dynamics365/context/finance
           - name: Type conversion
             items: 
             - name: Type conversion functions

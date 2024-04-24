@@ -4,10 +4,8 @@ description: This article provides information about issuing a corrective or rev
 author: AdamTrukawka
 ms.date: 08/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2019-06-28

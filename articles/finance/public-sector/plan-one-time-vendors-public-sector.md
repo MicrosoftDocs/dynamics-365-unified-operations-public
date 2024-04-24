@@ -4,8 +4,6 @@ description: This article explains how organizations in the public sector can pr
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

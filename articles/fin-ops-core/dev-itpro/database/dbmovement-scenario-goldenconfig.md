@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Golden configuration promotion
-description: This article explains a golden configuration promotion for finance and operations.
+description: Learn about a golden configuration promotion for finance and operations, prerequisites and what to know before starting.
 author: LaneSwenka
-ms.date: 10/27/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 10/27/2023
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global 
 ms.search.validFrom: 2019-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Golden configuration promotion

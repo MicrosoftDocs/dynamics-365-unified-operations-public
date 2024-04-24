@@ -1,18 +1,16 @@
 ---
 title: Compensation Power BI content
-description: This article describes the Compensation Power BI content. It explains how to access reports and provides information about the data model used.
+description: Learn about the Compensation Power BI content. It explains how to access reports and provides information about the data model used.
 author: jcart1106
-ms.date: 12/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jcart
+ms.topic: article
+ms.date: 12/19/2017
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
 ms.search.form: HcmCompensationWorkspace
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Compensation Power BI content

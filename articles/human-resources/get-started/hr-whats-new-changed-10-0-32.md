@@ -6,8 +6,7 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.date: 01/17/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -17,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

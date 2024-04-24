@@ -6,8 +6,6 @@ description: This procedure shows how the benefit eligibility process works.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -27,7 +25,6 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 # Benefit eligibility process
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

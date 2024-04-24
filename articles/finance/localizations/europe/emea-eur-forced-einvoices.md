@@ -4,10 +4,8 @@ description: This article explains how to set up and use the functionality for f
 author: mrolecki
 ms.date: 02/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Europe
 ms.author: mrolecki
 ms.search.validFrom: 2019-12-01

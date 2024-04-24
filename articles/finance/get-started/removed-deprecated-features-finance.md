@@ -6,9 +6,6 @@ description: This article describes features that have been removed, or that are
 author: twheeloc
 ms.date: 02/22/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,8 +6,6 @@ description: This article provides an overview about managing maintenance reques
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

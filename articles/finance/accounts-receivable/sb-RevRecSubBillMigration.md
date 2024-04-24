@@ -6,9 +6,6 @@ description: This article explains how to move in-progress revenue schedules in
 author: msftbrking
 ms.date: 05/15/2023
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

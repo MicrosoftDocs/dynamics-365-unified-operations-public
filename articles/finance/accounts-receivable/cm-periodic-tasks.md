@@ -6,9 +6,6 @@ description: This article describes the periodic tasks that are part of the proc
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

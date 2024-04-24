@@ -4,8 +4,6 @@ description: This article demonstrates how to add a custom control to a non-scre
 author: josaw1
 ms.date: 12/08/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

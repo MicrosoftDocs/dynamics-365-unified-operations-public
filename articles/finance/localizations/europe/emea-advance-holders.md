@@ -4,10 +4,8 @@ description: This article provides information about advance holder functionalit
 author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

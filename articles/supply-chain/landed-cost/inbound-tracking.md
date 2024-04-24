@@ -6,8 +6,6 @@ description: This article explains how you can use the Inbound tracking page to 
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -2,12 +2,12 @@
 title: Japan consumption tax report
 description: This article explains how to set up and generate the Japan consumption tax report for legal entities in Japan.
 author: liza-golub
-ms.date: 06/10/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 03/13/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.author: egolub
 ms.search.validFrom: 2016-02-28
@@ -84,10 +84,13 @@ The following table provides an example of sales tax reporting codes for Japan. 
 | 8308           | Bad debt | <ul><li>Sales tax receivable</li></ul> |
 | 8310           | Bad debt - paid | <ul><li>Sales tax on purchase credit note</li></ul> |
 |                | **Adjustments** | |
-| 221            | Adjustment (addition or subtraction) amount of consumption tax related to fixed assets subject to adjustment when taxable sales ratio changes | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note</li></ul> |
-| 222            | Adjustment (addition or subtraction) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note</li></ul> |
-| 223            | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note </li></ul> |
-| 2014           | Amount of adjustment (addition or subtraction) to the amount of consumption tax in case you do not receive (receive) exemption from tax liability | <ul><li>Sales tax payable</li><li>Sales tax on purchase credit note</li><li>Sales tax receivable</li><li>Sales tax on purchase credit note</li></ul> |
+| 8221           | Adjustment (addition) amount of consumption tax related to fixed assets subject to adjustment when taxable sales ratio changes | <ul><li>Sales tax receivable</li></ul> |
+| 8222           | Adjustment (addition) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | <ul><li>Sales tax receivable</li></ul> |
+| 8223           | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | <ul><li>Sales tax receivable</li></ul> |
+| 8014           | Amount of adjustment (addition) to the amount of consumption tax in case you do not receive exemption from tax liability | <ul><li>Sales tax receivable</li></ul> |
+| 7221           | Adjustment (subtraction) amount of consumption tax related to fixed assets subject to adjustment when taxable sales ratio changes | <ul><li>Sales tax on sales credit note</li></ul> |
+| 7222           | Adjustment (subtraction) amount when fixed assets subject to adjustment are converted to taxable business use (tax-exempt business use) | <ul><li>Sales tax on sales credit note</li></ul> |
+| 7014           | Amount of adjustment (subtraction) to the amount of consumption tax in case you receive exemption from tax liability | <ul><li>Sales tax on sales credit note</li></ul> |
 
 ## Set up sales tax codes
 
@@ -176,16 +179,16 @@ Set up ledger accounts for bad debt and collected bad debt that will be used to 
     | Item11 | Amount of consideration paid for specified taxable purchases | The value of this field is calculated as the sum of consumption tax amounts of (\[210\] + \[8210\] – \[9210\] – \[7210\]) by tax rate. |
     | Item12 | Consumption tax amount related to specified tax purchases | The value of this field is **0** (zero). |
     | Item13 | Amount of consumption tax relating to taxable freight | The value of this field is calculated as **Item9** + **Item10** + **Item11**. |
-    | Item14 | Amount of consumption tax adjustment (addition & subtraction) in the event tax liability exemption status is granted or lost | |
+    | Item14 | Amount of consumption tax adjustment (addition & subtraction) in the event tax liability exemption status is granted or lost | The value of this field is calculated as \[8014\] - \[7014\]. |
     | Item15 | Total amount of taxes on taxable purchases, etc. （⑩＋⑫＋⑬±⑭） | The value of this field is calculated as the sum of consumption tax amounts of (\[208\] + \[8208\] – \[9208\] – \[7208\]) by tax rate. |
     | Item16 | Taxable sales are 500 million yen or less, and if the taxable sales ratio is 95% or more (Amount of ⑮) | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item15**. |
     | Item17 | Portion of ⑮ required for taxable sales only | If the value of the **Ratio of taxable sales** field is less than 0.95, or if amount of the transfer value of taxable assets is less than 500 million yen and **Individual method** is selected, the value of this field is calculated as \[208\] + \[8208\] + \[9208\] + \[7208\]. |
     | Item18 | Portion of ⑮ required for both taxable and non-taxable sales | If the value of the **Ratio of taxable sales** field is less than 0.95, or if amount of the transfer value of taxable assets is less than 500 million yen and **Individual method** is selected, the value of this field is calculated as \[215\] + \[8215\] – \[9215\] – \[7215\]. |
     | Item19 | Amount of deductible taxes on taxable purchases, etc based on the itemized method 〔⑰＋（⑱×④／⑦）〕 | If the value of the **Ratio of taxable sales** field is less than 0.95, or if amount of the transfer value of taxable assets is less than 500 million yen and **Individual method** is selected, the value of this field is calculated as **Item17** + **Item18** × **Ratio of taxable sales**. Otherwise, the value is **0** (zero). |
     | Item20 | Amount of deductible taxes on taxable purchases, etc. based on proportional method （⑮×④／⑦） | If the value of the **Ratio of taxable sales** field is less than 0.95, or if amount of the transfer value of taxable assets is less than 500 million yen and **Lump sum method** is selected, the value of this field is calculated as **Item15** × **Ratio of taxable sales**. Otherwise, the value is **0** (zero). |
-    | Item21 | Amount of consumption tax adjustment (addition and subtraction) relating to fixed assets subject to adjustment in the event of a change in the taxable sales ratio | The value of this field is calculated as \[221\]. |
-    | Item22 | Amount of consumption tax adjustment (addition & subtraction) in the event fixed assets subject to adjustment are converted is to taxable or are non-taxable business assets | The value of this field is calculated as \[222\]. |
-    | Item23 | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | The value of this field is calculated as \[223\]. |
+    | Item21 | Amount of consumption tax adjustment (addition and subtraction) relating to fixed assets subject to adjustment in the event of a change in the taxable sales ratio | The value of this field is calculated as \[8221\] - \[7221\]. |
+    | Item22 | Amount of consumption tax adjustment (addition & subtraction) in the event fixed assets subject to adjustment are converted is to taxable or are non-taxable business assets | The value of this field is calculated as \[8222\] - \[7222\]. |
+    | Item23 | Additional amount when a residential rental building is provided (transferred) for tax rental purposes | The value of this field is calculated as \[8223\]. |
     | Item24 | Deductible tax on purchase. When 〔Amount of （⑯、⑲、or ⑳）±㉑±㉒＋㉓〕 is positive | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item16** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Individual method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item19** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Lump sum method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item20** + **Item21** + **Item22** + **Item23**. Positive result. |
     | Item25 | Tax adjustment for excess deduction. When 〔Amount of （⑯、⑲、or ⑳）±㉑±㉒＋㉓〕 is negative | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item16** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Individual method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item19** + **Item21** + **Item22** + **Item23**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Lump sum method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item20** + **Item21** + **Item22** + **Item23**. Negative result. |
     | Item26 | Amount of consumption tax relating to recovered bad debt | <p>The value of this field is calculated as \[8310\].</p><p><strong>Note:</strong> The amount of reporting code 8310 is related to the ledger account that's set up in the <strong>Collected bad debt</strong> field on the <strong>Tax reporting accounts</strong> page. For more information, see the <a href="#set-up-tax-reporting-accounts-for-bad-debts">Set up tax reporting accounts for bad debts</a> section of this article.</p> |

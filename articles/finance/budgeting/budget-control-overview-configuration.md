@@ -6,9 +6,6 @@ description: This article introduces the budget control feature and provides inf
 author: panolte
 ms.date: 03/28/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetControlConfiguration

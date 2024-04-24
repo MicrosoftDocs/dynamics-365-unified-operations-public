@@ -4,8 +4,6 @@ description: This article explains how to set up a value-added tax (VAT) declara
 author: liza-golub
 ms.date: 01/15/2024
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Estonia

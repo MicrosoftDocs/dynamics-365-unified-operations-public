@@ -6,9 +6,6 @@ description: This article provides information about reallocation, which enables
 author: bking
 ms.date: 02/22/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Customer

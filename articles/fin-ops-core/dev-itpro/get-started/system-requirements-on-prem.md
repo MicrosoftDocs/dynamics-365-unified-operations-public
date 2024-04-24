@@ -7,15 +7,13 @@ author: PeterRFriis
 ms.date: 02/08/2022
 ms.topic: article
 ms.service: dynamics-365
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global

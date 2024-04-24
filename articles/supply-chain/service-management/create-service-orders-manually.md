@@ -6,8 +6,6 @@ description: You can create service orders manually by using a service agreement
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

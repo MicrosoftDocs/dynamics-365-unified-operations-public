@@ -4,10 +4,8 @@ description: This article explains how to set up the reverse charge value-added 
 author: EricWangChen
 ms.date: 10/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: wangchen
 ms.search.validFrom: 2017-06-30

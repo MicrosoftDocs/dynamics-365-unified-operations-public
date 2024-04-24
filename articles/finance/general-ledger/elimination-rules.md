@@ -3,12 +3,9 @@
 
 title: Elimination rules
 description: This article provides information about elimination rules and the various options for reporting about eliminations.
-author: aprilolson
+author: jchrist
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerEliminationRule
@@ -20,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

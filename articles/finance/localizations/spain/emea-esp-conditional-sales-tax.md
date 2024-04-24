@@ -4,10 +4,8 @@ description: This article provides information about promissory notes or bills o
 author: AdamTrukawka
 ms.date: 04/25/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

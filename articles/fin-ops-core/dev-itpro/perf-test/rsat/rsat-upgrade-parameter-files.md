@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.custom: 
   - bap-template
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12

@@ -6,9 +6,6 @@ description: You can track your worker's skills in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 03/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace

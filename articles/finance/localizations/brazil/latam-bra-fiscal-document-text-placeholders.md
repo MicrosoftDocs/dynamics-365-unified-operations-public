@@ -4,10 +4,8 @@ description: Fiscal document text placeholders are predefined tags that represen
 author: AdamTrukawka
 ms.date: 08/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

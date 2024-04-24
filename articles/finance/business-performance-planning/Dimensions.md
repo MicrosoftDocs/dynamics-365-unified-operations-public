@@ -6,8 +6,7 @@ description: This article describes dimensions and how they're used in Microsoft
 author: ShielaSogge
 ms.date: 12/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 

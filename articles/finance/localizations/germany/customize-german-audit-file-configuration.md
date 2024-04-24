@@ -6,15 +6,13 @@ description: This procedure shows how to customize the German audit file configu
 author: mrolecki
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERTableNameLookup, ERModelGDPdUFunctionEditor,  ERExpressionDesignerFormula   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany

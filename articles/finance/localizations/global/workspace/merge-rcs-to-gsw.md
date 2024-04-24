@@ -1,6 +1,6 @@
 ---
-title: Regulatory Configuration Service merge to the Globalization Studio workspace (preview)
-description: This article explains the Regulatory Configuration Service (RCS) merge to the Globalization Studio workspace (preview).
+title: Regulatory Configuration Service merge to the Globalization Studio workspace
+description: This article explains the Regulatory Configuration Service (RCS) merge to the Globalization Studio workspace.
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -11,10 +11,10 @@ ms.reviewer: johnmichalak
 
 ---
 
-# Regulatory Configuration Service merge to the Globalization Studio workspace (preview)
+# Regulatory Configuration Service merge to the Globalization Studio workspace
 
 [!INCLUDE[banner](../../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 In version 10.0.39, the functionality of Regulatory Configuration Service (RCS) is merged to the Microsoft Dynamics 365 Finance **Globalization Studio** workspace.
@@ -49,5 +49,9 @@ The UX for the configuration of tax features remains consistent and is unaffecte
 **Timeline**
 
 Be aware that Microsoft will enable the Tax Calculation service in all environments. Activities that are related to the discontinuation of the Tax Calculation service as an add-in will be aligned with the timeline that has been set for RCS.
+
+## Additional resources
+- [Globalization Studio workspace features](gsw-features.md)
+- [Import Electronic reporting (ER) configurations from Dataverse](gsw-import-er-config-dataverse.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

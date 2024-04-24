@@ -7,8 +7,6 @@ ms.author: sakuchha
 author: saurabh-kuchhal
 ms.date: 02/23/2024
 ms.topic: how-to
-ms.prod:
-ms.technology: 
 ms.reviewer: johnmichalak
 
 # optional metadata

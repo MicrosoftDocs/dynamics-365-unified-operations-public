@@ -6,8 +6,6 @@ description: This article describes how to set up cost rules for various inbound
 author: Weijiesa
 ms.date: 01/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -4,8 +4,6 @@ description: This article covers the command-line interface (CLI) commands that 
 author: samjarawan
 ms.date: 11/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

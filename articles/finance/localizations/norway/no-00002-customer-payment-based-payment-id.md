@@ -6,15 +6,13 @@ description: This article explains how to set up and maintain Norwegian payment 
 author: kfend
 ms.date: 08/01/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Norway

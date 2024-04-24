@@ -6,16 +6,13 @@ description: This article explains how the mouseDblClick() override has been dep
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: ba33ee49-2053-4e3c-b0fa-123c9410265d
 ms.search.region: Global

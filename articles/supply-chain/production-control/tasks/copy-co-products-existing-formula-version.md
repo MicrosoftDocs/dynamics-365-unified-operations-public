@@ -6,8 +6,6 @@ description: This procedure shows how to copy co-products from an existing formu
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,10 +4,8 @@ description: Microsoft Dynamics 365 Finance users can process inflation adjustme
 author: AdamTrukawka
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28

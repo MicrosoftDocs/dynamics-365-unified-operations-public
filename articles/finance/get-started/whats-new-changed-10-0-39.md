@@ -6,8 +6,7 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.date: 2/19/2024
 ms.topic: faq
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -17,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -132,7 +130,7 @@ The following table lists the features that have been removed from Feature manag
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
+Dynamics 365 Finance version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
 
 ### Bug fixes
 
