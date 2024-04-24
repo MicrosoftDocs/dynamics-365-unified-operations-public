@@ -28,10 +28,11 @@ Before you can follow the procedures in this article, your system must meet the 
 
 ### Version requirements
 
-Your system must meet the following version requirements:
+To use the features described in this topic, your system must meet the following version requirements:
 
 - You must be running Supply Chain Management version 10.0.39 or later.
-- You must be running [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.XXX. <!--KFM: Update when solution ID is provided by HenrikJ-->
+- You must be running [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.312 or later.
+- If you've deployed the dual-write global address book (GAB) solution, you must be running version 3.5.2.72 or later of the GAB solution.
 
 ### Number sequence requirements
 
@@ -96,15 +97,17 @@ Follow these steps if you're running Supply Chain Management version 10.0.39 or 
     | Dynamics 365 Sales order headers (salesorders) | 1.0.2.1 | New map with discount customer groups and delivery date control. |
     | Dynamics 365 Sales order lines (salesorderdetails) | 1.0.1.0 | New map with delivery date control. |
     | Dynamics 365 Sales quotation header (quotes) | 1.0.4.1 | New map for the quotation revision feature with ownership change capability, prospect integration, discount customer groups, and delivery date control. |
-    | Dynamics 365 Sales quotation lines (quotedetails) | 1.0.0.0 | Existing map for quotation lines. |
+    | Dynamics 365 Sales quotation lines (quotedetails) | 1.0.1.0 | Existing map for quotation lines. |
     | Dynamics 365 Sales prospects (accounts) | 1.0.0.1 | New map for prospects of the *Organization* type. |
     | Dynamics 365 Sales prospects (contacts) | 1.0.0.1 | New map for prospects of the *Person* type. |
-    | CDS Contacts V2 (contacts) | 1.0.0.0 | New map for prospect contact persons. |
     | Customers V3 (accounts) | 1.0.1.5 | New map for setting the relationship type when the *Dynamics 365 Sales prospects* map is running. This map removes **PartyNumber** and other party-related fields, such as fields for the name, personal details, postal address, and electronic contact address. |
     | Customers V3 (contacts) | 1.0.1.5 | New map for setting the relationship type when the *Dynamics 365 Sales prospects* map is running. This map removes **PartyNumber** and other party-related fields, such as fields for the name, personal details, postal address, and electronic contact address. |
     | Total discount customer groups | 1.0.0.0 | New map for Total discount customer groups. |
     | Line discount customer groups | 1.0.0.0 | New map for Line discount customer groups. |
     | Multiline discount customer groups | 1.0.0.0 | New map for Multiline discount customer groups. |
+
+    > [!IMPORTANT]
+    > Don't run the CDS Contacts V2 map in Supply Chain Management. You must instead run this map in the GAB solution.
 
 1. On the **Dual-write** page, make sure that all the maps in the previous table show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
@@ -134,7 +137,7 @@ Follow these steps if you're running Supply Chain Management version 10.0.39 or 
     | Dynamics 365 Sales order headers (salesorders) | 1.0.2.0 | New map with discount customer groups and delivery date control. |
     | Dynamics 365 Sales order lines (salesorderdetails) | 1.0.1.0 | New map with delivery date control. |
     | Dynamics 365 Sales quotation header (quotes) | 1.0.4.0 | New map for the quotation revision feature with ownership change capability, prospect integration, discount customer groups, and delivery date control. |
-    | Dynamics 365 Sales quotation lines (quotedetails) | 1.0.0.0 | Existing map for quotation lines. |
+    | Dynamics 365 Sales quotation lines (quotedetails) | 1.0.1.0 | Existing map for quotation lines. |
     | Dynamics 365 Sales prospects (accounts) | 1.0.0.0 | New map for prospects of the *Organization* type. |
     | Dynamics 365 Sales prospects (contacts) | 1.0.0.0 | New map for prospects of the *Person* type. |
     | CDS Contacts V2 (contacts) | 1.0.0.0 | New map for prospect contact persons. |
@@ -171,7 +174,7 @@ Follow these steps if you're running Supply Chain Management version 10.0.38 or 
     | Dynamics 365 Sales order headers (salesorders) | 1.0.0.0 | Existing map for sales orders. |
     | Dynamics 365 Sales order lines (salesorderdetails) | 1.0.0.0 | Existing map for sales order lines. |
     | Dynamics 365 Sales quotation header (quotes) | 1.0.1.0 | New map for the quotation revision feature with ownership change capability. |
-    | Dynamics 365 Sales quotation lines (quotedetails) | 1.0.0.0 | Existing map for quotation lines. |
+    | Dynamics 365 Sales quotation lines (quotedetails) | 1.0.1.0 | Existing map for quotation lines. |
     | Total discount customer groups | 1.0.0.0 | New map for Total discount customer groups. |
     | Line discount customer groups | 1.0.0.0 | New map for Line discount customer groups. |
     | Multiline discount customer groups | 1.0.0.0 | New map for Multiline discount customer groups. |
