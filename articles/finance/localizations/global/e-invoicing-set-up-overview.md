@@ -1,6 +1,6 @@
 ---
 title: Electronic invoicing setup
-description: This article provides an overview of the process for setting up and configuring Electronic invoicing.
+description: This article provides an overview of the process for setting up and configuring Electronic invoicing (RCS).
 author: gionoder
 ms.date: 02/28/2022
 ms.topic: article
