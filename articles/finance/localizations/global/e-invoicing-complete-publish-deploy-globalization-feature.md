@@ -1,6 +1,6 @@
 ---
-title: Complete, publish, and deploy a Globalization feature
-description: This article provides information about the lifecycle of Globalization features.
+title: Complete, publish, and deploy a Globalization feature (RCS)
+description: This article provides information about the lifecycle of Globalization features (RCS).
 author: gionoder
 ms.date: 12/15/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Complete, publish, and deploy a Globalization feature
+# Complete, publish, and deploy a Globalization feature (RCS)
 
 [!include [banner](../../includes/banner.md)]
 
