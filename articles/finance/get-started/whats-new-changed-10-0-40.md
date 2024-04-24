@@ -41,7 +41,7 @@ This section contains a table that lists the features that are included in this 
 |Credit and collections|	Customer balance statistics deletion job|	Users now have the ability to efficiently manage long-term data stored in the Customer balance statistics table. This enhancement includes a **Delete outdated balance statistics records** periodic task designed to remove unnecessary records from the table, thus alleviating potential performance impacts associated with data overload. **Customer balance statistics deletion job** is enabled in **Feature management**. |	Feature management|
 |Credit and collections|	Customer account rename data maintenance |	By introducing a new data maintenance page, we've streamlined data consistency. This page allows customers to view and manually retry failed updates. |	Feature management|
 |General ledger | Consolidation templates |Consolidation online templates allow you to setup the consolidation information one time and use it each time the consolidation process is performed. The **Consolidate online** page has been updated to show all consolidation runs, reruns and reversals. Enable the **Consolidate online using templates** feature in **Feature management** to use this functionality. |Feature management  |      
-| General ledger	 | Reverse related journals | This feature reverses all related journals in a single step. As part of the 'auto-split' of a large journal, multiple journals can be created from one large journal. Users can now reverse all journals at once. For more information, see [Reverse journal posting](../../general-ledger/reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split). |  |
+| General ledger	 | Reverse related journals | This feature reverses all related journals in a single step. As part of the 'auto-split' of a large journal, multiple journals can be created from one large journal. Users can now reverse all journals at once. For more information, see [Reverse journal posting](/general-ledger/reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split). |  |
 
 
 
@@ -70,7 +70,7 @@ This section contains a table that lists the enhancements that are included in t
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
+Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
 
 ### Bug fixes
 
