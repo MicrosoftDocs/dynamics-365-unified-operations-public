@@ -1,5 +1,5 @@
 ---
-title: Globalization feature components
+title: Globalization feature components (RCS)
 description: This article provides an overview of Globalization feature components.
 author: ilikond
 ms.date: 01/29/2024
@@ -15,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Globalization feature components
+# Globalization feature components (RCS)
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
