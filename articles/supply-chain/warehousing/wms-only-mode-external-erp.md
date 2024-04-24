@@ -23,13 +23,13 @@ This article explains how to perform day-to-day warehousing tasks when you are u
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-You can use the [*Warehouse management only mode*](wms-only-mode-overview.md) feature to handle logistic operations and connect warehouses to external ERPs that do all the order and financial processing.
+One way to use [Warehouse management only mode](wms-only-mode-overview.md) is to allow Supply Chain Management to handle logistic operations and connect warehouses to external ERPs that do all the order and financial processing.
 
 In addition, the warehouse management processes can track ownership of the inventory for items that are shared across different source systems using an owner inventory dimension.
 
 ## High-level implementation example
 
-The warehouse management only mode is running in the Supply Chain Management legal entity *WOM* that deals with logistics warehouse operations for an external ERP system that manage the order and financial processing.
+The following illustration shows an example where Warehouse management only mode is running in the Supply Chain Management legal entity *WOM*, which deals with logistics warehouse operations for an external ERP system, which manages order and financial processing.
 
 :::image type="content" source="media/wms-only-erp-integration.svg" alt-text="Warehouse management only mode with external ERP system." lightbox="media/wms-only-erp-integration.svg":::
 
