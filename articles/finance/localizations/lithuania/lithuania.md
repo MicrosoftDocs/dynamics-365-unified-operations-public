@@ -1,21 +1,12 @@
 ---
-# required metadata
-
 title: Lithuania overview
 description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Lithuania. 
 author: kfend
 ms.date: 07/25/2019
 ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
 ms.search.region: Lithuania
-# ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
