@@ -1,21 +1,12 @@
 ---
-# required metadata
-
 title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: VStamberg
 ms.date: 01/03/2023
 ms.topic: article
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
