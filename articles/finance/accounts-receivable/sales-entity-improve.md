@@ -20,7 +20,7 @@ ms.custom:
 To significantly improve the performance and efficiency of our sales invoice entities, Microsoft has eliminated inefficient views and computed columns. This article provides an overview of the changes.
 
 In previous implementations, nested views that duplicated larger tables caused inefficiencies. As a result, multiple queries were needed to fetch the required data. To address this issue, we removed all views from existing entities and introduced new versions, **Sales invoice headers V4** and **Sales invoice lines V4**. The new entities don't rely on inefficient views but fetch all columns directly from the data sources. Therefore, data retrieval is faster.
-
+ 
 To further improve performance, we eliminated all computed columns that are responsible for row-by-row processing.
 
 Previously, the **Total discount amount** column was in the header entity. In the latest version, this information is found in three separate columns: **Cash discount**, **End discount**, and **Total line discount**. The **Total discount amount** value is now calculated as the sum of these three columns.
