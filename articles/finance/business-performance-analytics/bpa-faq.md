@@ -44,7 +44,7 @@ The following errors are likely to occur if another operation is in progress dur
 4. Select the link to retry the installation, and monitor the app installation process.
 
 ### Why isn't my data showing up in Business performance analytics? 
-To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the "Bpa self help logs table" in Microsoft Dataverse. To learn more see [Business performance analytics self-help](BPA-help-overview.md).
+To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the "Bpa self help logs table" in Microsoft Dataverse. To learn more see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
 ### When will data be available in reports after the Business performance analytics is installed for the first time?
 
