@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing setup
+title: Electronic invoicing configuration
 description: This article provides an overview of the process for setting up and configuring Electronic invoicing.
 author: ilikond
 ms.date: 04/10/2024
@@ -14,7 +14,7 @@ ms.custom:
   - bap-template
 ---
 
-# Electronic invoicing setup
+# Electronic invoicing configuration
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
