@@ -28,8 +28,7 @@ All the secrets and certificates that are used in the Electronic invoicing servi
 2. Go to **Settings** \> **Access policies**, and select **Add Access Policy**.
 3. In the **Secret permissions** field, select the **Get** and **List** operations.
 
-    [![Secret permissions set for the Get and List operations on the Add access policy page.](../media/add-access-policy-page.png)](/media/add-access-policy-page.png)
-
+    [![Secret permissions set for the Get and List operations on the Add access policy page.](../media/add-access-policy-page.png)
 4. In the **Certificate permissions** field, select the **Get** and **List** operations.
 5. In the **Select principal** field, select **None selected**.
 6. In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.
