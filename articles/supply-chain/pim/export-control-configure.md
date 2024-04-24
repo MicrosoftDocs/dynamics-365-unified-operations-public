@@ -1,28 +1,28 @@
 ---
-title: Enable and configure advanced export control
-description: Learn how to enable and configure advanced export control in Microsoft Dynamics 365 Supply Chain Management.
+title: Enable and configure advanced export management
+description: Learn how to enable and configure advanced export management in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: COOExportControlParameters
 ms.topic: how-to
-ms.date: 08/29/2023
+ms.date: 02/15/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Enable and configure advanced export control
+# Enable and configure advanced export management
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 ## Prerequisites
 
-Before you can use advanced export control, your system must meet the following requirements:
+Before you can use advanced export management, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.36 or later.
-- The feature that's named *(Preview) Advanced export control configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Advanced export management configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Your Supply Chain Management environment must be [linked to a Dataverse environment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ## Install the export control app
@@ -79,31 +79,34 @@ Follow these steps to grant the application permissions in Power Platform admin 
 Follow these steps to enable the functionality and configure the application in Supply Chain Management.
 
 1. Sign in to Supply Chain Management.
-1. Go to **Product information management \> Setup \> Product compliance \> Country of Origin \> (Preview) Advanced export control configuration**.
-1. On the **General** tab, set the following fields:
-
-    - **Advanced export control functionality enabled** – Set this option to *Yes* to turn on advanced export control functionality in your system.
-    - **Validate data in Dataverse** – Set this option to *Yes* to ensure that the system checks all sales orders and shipments against the export rules that are defined in the Dataverse app. The check confirms whether your company is allowed to sell or ship each item on an order, according to the rules that are established for the relevant jurisdiction.
-    - **Track sales order check history** – Set this option to *Yes* to keep a log of the order check history. Set it to *No* if you don't need this log.
+1. Go to **Product information management \> Setup \> Product compliance \> Country of Origin \> Advanced export management configuration**.
+1. On the **General** tab, review and set the following fields:
+    - **Linked Dataverse environment URL** – This read-only field shows the URL of the Dataverse environment that's linked to your Supply Chain Management environment. Your advanced export management jurisdictions, codes, restrictions, exceptions, and licenses are defined in this Dataverse environment.
     - **Application ID** – Paste the application (client) ID of your new app. (You should have copied this ID when you registered the app in the Azure portal.)
     - **Application secret** – Paste the client secret of your new app. (You should have copied this secret when you registered the app in the Azure portal.)
 
-    The **Linked Dataverse environment URL** field shows the URL of the Dataverse environment that's linked to your Supply Chain Management environment. Your advanced export control jurisdictions, codes, restrictions, exceptions, and licenses are defined in this Dataverse environment.
+    As you enter values into these fields, the system checks whether it can use them to connect to Dataverse and whether the required solution is installed there. The three checkboxes under the **Status** heading will automatically update to show a checkmark as each test passes. If one or more tests fail, make sure that the advanced export management solution is successfully installed, and that the specified Microsoft Entra application has the *Export control application* security role in Dataverse. When all three boxes show a check, continue to the next step.
 
-1. On the Action Pane, select **Save**. The system checks whether it can connect, and whether the appropriate solution is installed. If you receive any errors, make sure that the advanced export control solution is successfully installed, and that the specified Microsoft Entra application has the *Export control application* security role in Dataverse.
-1. Select **Synchronize country/region list** to copy the existing list of country/region codes from Supply Chain Management to the Dataverse solution. This list is used when rules are defined. Each time that you change the country/region code list, you must return to the **Advanced export control configuration** page and select **Synchronize country/region list** again to sync the changes. The language of the user who selects this button is used to sync the names of the countries/regions.
+1. The following settings appear after all of the tests have passed. Set each option as required.
+    - **Advanced export management functionality enabled** – Set this option to *Yes* to turn on advanced export management functionality in your system.
+    - **Validate data in Dataverse** – Set this option to *Yes* to ensure that the system checks all sales orders and shipments against the export rules that are defined in the Dataverse app. The check confirms whether your company is allowed to sell or ship each item on an order, according to the rules that are established for the relevant jurisdiction.
+    - **Track sales order check history** – Set this option to *Yes* to keep a log of the order check history. Set it to *No* if you don't need this log.
+
+1. Select **Synchronize country/region list** to copy the existing list of country/region codes from Supply Chain Management to the Dataverse solution. This list is used when rules are defined. Each time that you change the country/region code list, you must return to the **Advanced export management configuration** page and select **Synchronize country/region list** again to sync the changes. The language of the user who selects this button is used to sync the names of the countries/regions.
 
 ## Configure jurisdictions for each legal entity
 
-You must configure the set of jurisdictions that are available for each legal entity (company). For companies where no jurisdictions are enabled, advanced export control features aren't available on sales orders, items, or products. Instead, simpler [dual-use goods](dual-use.md) functionality is provided. If at least one jurisdiction is enabled for a legal entity, the dual-use goods functionality is hidden on pages in that legal entity, and advanced export control functionality is shown instead.
+You must configure the set of jurisdictions that are available for each legal entity (company). For companies where no jurisdictions are enabled, advanced export management features aren't available on sales orders, items, or products. Instead, simpler [dual-use goods](dual-use.md) functionality is provided. If at least one jurisdiction is enabled for a legal entity, the dual-use goods functionality is hidden on pages in that legal entity, and advanced export management functionality is shown instead.
 
 Follow these steps to configure the jurisdictions for a legal entity.
 
 1. Sign in to Supply Chain Management.
 1. Use the company picker to select the legal entity that you want to configure.
-1. Go to **Product information management \> Setup \> Product compliance \> Country of Origin \> (Preview) Advanced export control configuration**.
-1. On the **Jurisdictions in use in this company** tab, the grid shows the jurisdictions that are enabled for the legal entity. Initially, the grid is blank. Use the buttons on the toolbar to add or remove jurisdictions as you require.
+1. Go to **Product information management \> Setup \> Product compliance \> Country of Origin \> Advanced export management configuration**.
+1. On the **Jurisdictions in use in this company** tab, the grid shows the jurisdictions that are enabled for the current legal entity. Initially, the grid is blank. Use the buttons on the toolbar to add or remove jurisdictions as you require.
 
     [<img src="media/export-control-jurisdictions-in-use.png" alt="Jurisdictions in use." title="Jurisdictions in use" width="720" />](media/export-control-jurisdictions-in-use.png#lightbox)
+
+1. For each jurisdiction, choose whether that jurisdiction is active and choose whether to skip sales order and/or sales quotation checks for that jurisdiction.
 
 1. On the Action Pane, select **Save**.

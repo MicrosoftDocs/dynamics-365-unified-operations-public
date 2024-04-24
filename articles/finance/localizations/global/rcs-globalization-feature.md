@@ -4,10 +4,8 @@ description: This article explains how to use Microsoft Regulatory Configuration
 author: kfend
 ms.date: 06/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2020-05-01
@@ -19,6 +17,7 @@ ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 # Regulatory Configuration Services (RCS) - Globalization features
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can use Microsoft Regulatory Configuration Services (RCS) to create a Globalization feature that can be used in Globalization services, such as an e-invoicing service. RCS lets you perform these tasks:
 

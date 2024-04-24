@@ -6,9 +6,6 @@ description: This article provides general information about the settlement proc
 author: angelad116
 ms.date: 07/30/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans

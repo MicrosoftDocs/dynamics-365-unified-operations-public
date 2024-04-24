@@ -6,16 +6,13 @@ description: If you do business with vendors that are subject to United States 1
 author: abruer
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Tax1099Fields, Tax1099Summary
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3
 ms.search.region: USA

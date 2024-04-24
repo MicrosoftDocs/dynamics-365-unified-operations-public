@@ -6,15 +6,12 @@ description: This article provides a list of planned and released regulatory upd
 author: VStamberg
 ms.date: 01/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Global

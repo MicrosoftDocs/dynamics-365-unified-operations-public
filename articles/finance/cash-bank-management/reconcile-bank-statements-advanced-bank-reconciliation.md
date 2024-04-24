@@ -4,10 +4,9 @@
 title: Reconcile bank statements by using advanced bank reconciliation
 description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains the reconciliation process.  
 author: EricWangChen
-ms.date: 06/30/2023
+ms.date: 03/20/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -59,7 +58,6 @@ Bank statement validation verifies the following details:
 -   The bank statement currency matches the bank account currency.
 -   The opening balance of the statement equals the closing balance of the previous statement for the bank account.
 -   The date doesn’t overlap the date for another bank statement for the same bank account.
--   There are no gaps in the dates for statements for the bank account.
 -   Dates on the statement lines are between the from-date and to-date of the bank statement.
 -   The opening balance and summarized line amounts equal the ending balance.
 

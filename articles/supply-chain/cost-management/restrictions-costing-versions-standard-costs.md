@@ -6,8 +6,6 @@ description: This article describes the restrictions that apply to a costing ver
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

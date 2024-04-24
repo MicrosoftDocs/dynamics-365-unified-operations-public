@@ -4,8 +4,6 @@ description: This article describes the capabilities for validating serialized i
 author: hhainesms
 ms.date: 06/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

@@ -6,9 +6,6 @@ description: Dynamics 365 Human Resources uses tier codes with benefit rates tha
 author: twheeloc
 ms.date: 04/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

@@ -6,8 +6,6 @@ description: This article explains how to create attribute types in Asset Manage
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

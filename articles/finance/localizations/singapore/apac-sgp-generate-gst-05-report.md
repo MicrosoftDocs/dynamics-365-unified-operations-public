@@ -4,10 +4,8 @@ description: This article explains the functionality for generating Singapore GS
 author: AdamTrukawka
 ms.date: 12/05/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Singapore
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28

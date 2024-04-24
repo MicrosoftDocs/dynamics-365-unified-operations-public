@@ -6,9 +6,6 @@ description: This article provides information about project deferrals, which le
 author: msftbrking
 ms.date: 05/06/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  
@@ -29,7 +26,7 @@ ms.dyn365.ops.version: 10.0.34
 # Project deferrals
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 Subscription billing enables organizations to manage revenue and expense deferrals through deferral schedules. Projects help you plan, create, manage, control, and complete customer-focused work for your organization.
 

@@ -6,8 +6,6 @@ description: A dispatch board is the central location from which you can view th
 author: sorenva
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

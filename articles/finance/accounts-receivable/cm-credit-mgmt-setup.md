@@ -6,9 +6,6 @@ description: This article describes the options that you can use to configure Cr
 author: JodiChristiansen
 ms.date: 10/09/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

@@ -4,10 +4,8 @@ description: This article explains how to create an Electronic reporting (ER) co
 author: kfend
 ms.date: 01/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2020-02-01
@@ -19,6 +17,7 @@ ms.search.form: ERSolutionTable, ERWorkspace, RCS
 # Create ER configurations in Regulatory Configuration Services (RCS) and upload them to the Global repository
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can use Microsoft Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations and publish them so that they can be used in your organization.
 

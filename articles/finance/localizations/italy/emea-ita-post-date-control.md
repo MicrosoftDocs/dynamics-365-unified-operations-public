@@ -4,10 +4,8 @@ description: This article explains how to configure chronology control for invoi
 author: mrolecki
 ms.date: 02/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: mrolecki
 ms.search.validFrom: 2021-03-15

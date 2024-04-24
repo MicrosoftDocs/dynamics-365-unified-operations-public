@@ -6,9 +6,6 @@ description: A plan type in Microsoft Dynamics 365 Human Resources is a high-lev
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

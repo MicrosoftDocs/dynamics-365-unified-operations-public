@@ -4,7 +4,7 @@ description: Responsible AI FAQs provide information about the AI technology tha
 ms.date: 06/19/2023
 ms.collection:
   - bap-ai-copilot
-ms.custom: 
+ms.custom:
   - responsible-ai-faqs
 ms.topic: article
 author: kamaybac
@@ -18,5 +18,6 @@ ms.reviewer: kamaybac
 
 [!INCLUDE[responsible-ai-features](../includes/responsible-ai-features.md)]
 
+- [Responsible AI FAQ for Analyze demand plans with Copilot (preview)](faq-demand-planning-copilot.md)
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
 - [Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)](faq-inventory-query.md)

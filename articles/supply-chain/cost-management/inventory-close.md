@@ -6,8 +6,6 @@ description: As part of the process to settle issue transactions with receipt tr
 author: JennySong-SH
 ms.date: 04/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

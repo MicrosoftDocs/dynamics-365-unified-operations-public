@@ -17,9 +17,6 @@ ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 
 ## Entity design principles

@@ -4,8 +4,6 @@ description: This article explains how to set up and use chronological numbers f
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global

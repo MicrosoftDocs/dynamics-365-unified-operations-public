@@ -4,21 +4,18 @@
 title: Preconfigured system accounts
 description: This article provides information about the system accounts that are preconfigured on your finance and operations environments.
 author: jaredha
-ms.date: 05/26/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/10/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 
 # optional metadata
 
-ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jaredha
@@ -49,6 +46,7 @@ Preconfigured system accounts are included on deployed environments so that Micr
 | ScaleUnitManagement | Communication with the Scale Unit Manager portal. This account is automatically added when you upgrade to version 10.0.23. |
 | ScaleUnitPipeline | Maintaining and tracking communication between the scale units. This account is automatically added when you upgrade to version 10.0.19. |
 | SysHealthServiceUser or Axping (depending on the deployed product version) | Monitoring the availability and health of the environment, and providing alerts as required. |
+| ArchiveServiceApp | Archive service application account used for moving finance and operations data to Dataverse long term retention. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

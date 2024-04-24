@@ -6,9 +6,6 @@ description: This article lists the keyboard shortcuts that are available when y
 author: ShivamPandey-msft
 ms.date: 08/24/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]

@@ -4,10 +4,8 @@ description: This procedure walks you through setting up Chinese vouchers with s
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.author: kfend
 ms.search.validFrom: 2016-06-30

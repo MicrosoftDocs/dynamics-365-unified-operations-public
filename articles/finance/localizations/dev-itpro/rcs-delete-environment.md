@@ -4,10 +4,8 @@ description: This article explains how a Regulatory Configuration Service (RCS) 
 author: kfend
 ms.date: 06/14/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2021-01-01

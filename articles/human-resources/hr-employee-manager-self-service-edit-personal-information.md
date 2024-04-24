@@ -6,9 +6,6 @@ description: This article describes how to edit personal information in Employee
 author: twheeloc
 ms.date: 05/25/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Edit personal information
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

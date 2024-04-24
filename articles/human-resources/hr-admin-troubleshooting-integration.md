@@ -6,9 +6,6 @@ description: This article explains what data is synchronized in a Human Resource
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: SystemAdministrationWorkspaceForm
@@ -29,9 +26,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Integration with Finance FAQ
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
@@ -42,7 +36,7 @@ This article answers common questions associated about what data is synchronized
 
 No. If you edit the Human Resources application user, the integration between Human Resources and Dataverse might fail. The following table shows the default settings for the Talent application user.
 
-| Full Name | Application ID | Azure AD Object ID | Application ID URI |
+| Full Name | Application ID | Microsoft Entra Object ID | Application ID URI |
 | --- | --- | --- | --- |
 | Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
@@ -192,4 +186,3 @@ Refresh the data entities in Finance by going to **Data management \> Framework 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

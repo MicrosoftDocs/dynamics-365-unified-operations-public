@@ -4,10 +4,9 @@
 title: Workers without employment
 description: Workers with no future, active, or historical employment with your organization appear on the Workers without employment page. 
 author: twheeloc
-ms.date: 11/03/2021
-ms.topic: 
-ms.prod:  
-ms.technology:  
+ms.date: 04/16/2024
+ms.topic: article
+
  
 # optional metadata 
  
@@ -26,8 +25,6 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Workers without employment
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

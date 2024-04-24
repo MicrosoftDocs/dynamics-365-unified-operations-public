@@ -6,15 +6,12 @@ description: This article explains how to customize tax configurations by adding
 author: Kai-Cloud
 ms.date: 10/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 ms.custom: 

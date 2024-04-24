@@ -6,9 +6,6 @@ description: This article provides an overview of the security architecture of f
 author: pnghub 
 ms.date: 08/14/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
@@ -38,7 +35,7 @@ When you understand the security architecture, you can more easily customize sec
 ## Authentication
 By default, only authenticated users who have user rights can establish a connection. 
 
-Microsoft Azure Active Directory is a primary identity provider. To access the system, users must be provisioned into a finance and operations instance and should have a valid Azure Active Directory account in an authorized tenant.
+Microsoft Entra ID is a primary identity provider. To access the system, users must be provisioned into a finance and operations instance and should have a valid Microsoft Entra account in an authorized tenant.
 
 ## Authorization
 Authorization is the control of access to finance and operations applications. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the finance and operations client. 

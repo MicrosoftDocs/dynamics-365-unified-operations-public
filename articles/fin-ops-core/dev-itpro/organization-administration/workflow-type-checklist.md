@@ -4,8 +4,6 @@ description: This article describes the steps that are required to create a new 
 author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global

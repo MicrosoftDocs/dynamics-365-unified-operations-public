@@ -6,16 +6,13 @@ description: This article provides details about the programming model that is r
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
 ms.search.region: Global

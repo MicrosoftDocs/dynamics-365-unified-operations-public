@@ -4,10 +4,8 @@ description: This article explains how to write off a deferral and how to revers
 author: AdamTrukawka
 ms.date: 06/28/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2019-06-28

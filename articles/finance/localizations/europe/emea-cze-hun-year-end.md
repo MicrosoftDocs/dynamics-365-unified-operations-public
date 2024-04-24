@@ -6,15 +6,12 @@ description: This article provides information about the year-end closing proces
 author: EvgenyPopovMBS
 ms.date: 05/18/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Czech Republic, Hungary

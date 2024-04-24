@@ -4,10 +4,8 @@ description: The article describes how to set up and use returnable packaging fo
 author: mrolecki
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30

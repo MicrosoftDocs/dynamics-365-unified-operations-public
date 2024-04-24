@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Address books FAQ
-description: This article provides answers to frequently asked questions related to address books. 
-author: msftbrking 
-ms.date: 07/03/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirPartyCheckDuplicate, DirPartyTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
-ms.search.region: Global
-# ms.search.industry: 
+description: Access answers to frequently asked questions related to address books, including questions about duplicate records and bulk adding and deleting party records. 
+author: msftbrking
 ms.author: brking
+ms.topic: article
+ms.date: 03/13/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 ---
 
 # Address books FAQ
@@ -115,8 +103,8 @@ When you import addresses, the **IsLocationOwner** field should be set to **Yes*
 
 For more information about how to change the location owner of an imported address, see [Managing location owners](./global-address-book-location-owner.md).
 
-## If the party type is Legal entity, Organization, or Team, will the global address book synchronize the customer record in Customer experience?
+## If the party type is Legal entity or Team, will the global address book synchronize the customer record?
 
-No, the global address book won't synchronize the two fields in Customer experience. Because V3 mapping supports only the **Organization** party type, the record doesn't reach Dataverse, and no errors are displayed. A separate party record of the **Organization** type must be created.
+No, the global address book won't synchronize the customer. Because Customer's V3 mapping supports only the **Person** party type for contacts and **Organization** party type for accounts, the record doesn't reach Dataverse, and no errors are displayed. A separate party record of the **Person** or **Organization** types must be created.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

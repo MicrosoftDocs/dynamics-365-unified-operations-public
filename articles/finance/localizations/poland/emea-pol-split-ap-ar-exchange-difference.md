@@ -4,10 +4,8 @@ description: This article explains how to split the realized exchange difference
 author: AdamTrukawka
 ms.date: 04/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: atrukawk
 ms.search.validFrom: 2020-04-01

@@ -4,10 +4,8 @@ description: This article provides links to documentation resources for Saudi Ar
 author: kfend
 ms.date: 10/26/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia
 ms.author: kfend
 ms.search.validFrom: 2016-02-28

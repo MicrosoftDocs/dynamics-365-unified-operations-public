@@ -6,8 +6,7 @@ description: The performance management process lets employees document and disc
 author: twheeloc
 ms.date: 02/23/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -17,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: ["221024"]
+ms.custom: 
 ms.collection: get-started
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global

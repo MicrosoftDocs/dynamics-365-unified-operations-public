@@ -6,8 +6,6 @@ description: This article explains how to review collections information as well
 author: ShivamPandey-msft
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

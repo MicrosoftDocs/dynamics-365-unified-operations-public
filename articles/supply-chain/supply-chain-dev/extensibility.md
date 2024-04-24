@@ -6,8 +6,6 @@ description: This article describes the extensibility scenarios that are support
 author: t-benebo
 ms.date: 08/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -31,6 +29,9 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../../finance/includes/banner.md)]
 
 This article describes the extensibility scenarios that are related to master planning and supported in Planning Optimization.
+
+> [!TIP]
+> If you've finished developing an extension and want to set up an end-to-end testing environment, see [Unified developer experience for planning optimization (preview)](planning-optimization-dev.md).
 
 ## Custom processing when master planning is completed
 

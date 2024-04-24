@@ -4,8 +4,6 @@ description: This article covers delivery options modules and explains how to co
 author: anupamar-ms
 ms.date: 02/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

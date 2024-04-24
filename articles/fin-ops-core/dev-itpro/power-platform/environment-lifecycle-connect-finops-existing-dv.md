@@ -5,10 +5,8 @@ title: Connect finance and operations apps with an existing Microsoft Dataverse 
 description: This article explains how to connect finance and operations apps with an existing Microsoft Dataverse instance.
 ms.author: sakuchha
 author: saurabh-kuchhal
-ms.date: 11/07/2023
+ms.date: 02/23/2024
 ms.topic: how-to
-ms.prod:
-ms.technology: 
 ms.reviewer: johnmichalak
 
 # optional metadata
@@ -38,6 +36,10 @@ This article goes through the following steps.
 
 As an example of this scenario, a customer who is live with the Dynamics 365 Field Service application in a Dataverse-based environment through Power Platform admin center wants to connect their new finance and operations apps environment to it. This operation unlocks popular features such as dual-write, virtual entities, and out-of-box business events between the back-office and front-office applications.
 
+## Power Platform connection isn't reversible
+
+Connecting, or linking as it's also referred, a finance and operations apps environment to a Microsoft Dataverse instance isn't reversible.  The integration between the two systems is done via the infrastructure and disconnecting them would result in data loss. If you wish to delete the Microsoft Dataverse instance, you may follow the guide - [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md).
+
 ## Prerequisites
 
 The following prerequisites must be in place before you set up the Microsoft Power Platform integration:
@@ -50,7 +52,7 @@ The following prerequisites must be in place before you set up the Microsoft Pow
 
     :::image type="content" source="media/ppi-ppac-governance-environmentcreation.png" alt-text="Screenshot of the Power Platform settings page.":::
 
-- For organizations that **don't allow everyone** to create Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Azure Active Directory (Azure AD). To make this change, you must be assigned to the **Global administrator** role.
+- For organizations that **don't allow everyone** to create Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Microsoft Entra ID. To make this change, you must be assigned to the **Global administrator** role.
 
     - Dynamics 365 Service Admin
     - Power Platform Admin
@@ -63,7 +65,7 @@ In Lifecycle Services, go to your sandbox or production environment, and select 
 
 :::image type="content" source="media/Scenario1_Step1.png" alt-text="Screenshot of the Power Platform Integration FastTab.":::
 
-A Power Platform environment ID should already be listed on the **Power Platform Integration** FastTab. The specified environment is the "initial Power Platform environment" that's the free placeholder environment created in Power Platform admin center for every sandbox and production environment in Lifecycle Services. There's a one-to-one (1:1) relationship, and it is eventually the migration path to Power Platform admin center.
+A Power Platform environment ID should already be listed on the **Power Platform Integration** FastTab. The specified environment is the "initial Power Platform environment" that's the free placeholder environment created in Power Platform admin center for every sandbox and production environment in Lifecycle Services. There's a one-to-one (1:1) relationship, and it's eventually the migration path to Power Platform admin center.
 
 In this scenario, you already have a Power Platform environment where Field Service is installed. The Initial Power Platform environment is disconnected from finance and operations apps and can then be deleted if you want.
 

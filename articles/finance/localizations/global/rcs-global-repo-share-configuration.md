@@ -4,10 +4,8 @@ description: This article explains how to share Electronic reporting (ER) config
 author: kfend
 ms.date: 05/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2020-02-01
@@ -19,6 +17,7 @@ ms.search.form: ERSolutionTable, ERWorkspace, RCS
 # Share Electronic reporting (ER) configurations in Regulatory Configuration Services (RCS) Global repository with external organizations
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 You can use Microsoft Regulatory Configuration Services (RCS) to share Electronic reporting (ER) configurations and then publish them to external organizations.
 

@@ -3,11 +3,10 @@
 
 title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
-author: kfend
-ms.date: 08/14/2020
+author: twheeloc
+ms.date: 03/14/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -15,13 +14,13 @@ ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,15 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit 
-entries. These entries are classified using the accounts that are listed in a chart of accounts. 
+Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit entries. These entries are classified using the accounts that are listed in a chart of accounts. 
 
  - [Plan your chart of accounts](plan-chart-of-accounts.md)
  - [Main account types](main-account-types.md)
 
-You can allocate, or distribute, monetary amounts to one or more accounts or account and dimension combinations based on allocation 
-rules. There are two types of allocations: fixed and variable. You can also settle transactions between ledger accounts and revalue 
-currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same database or in separate databases.
+You can allocate, or distribute, monetary amounts to one or more accounts or account and dimension combinations based on allocation rules. There are two types of allocations: fixed and variable. You can also settle transactions between ledger accounts and revalue currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same database or in separate databases.
 
 - [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
 - [General ledger account balances](general-ledger-account-balances.md)
@@ -48,12 +44,7 @@ currency amounts. At the end of a fiscal year, you must generate closing transac
 [![Business process.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## Sales tax
-Every company collects and pays taxes to various tax authorities. The rules and rates vary by country/region, state, county, and city.
-In addition, the rules must be updated periodically when tax authorities change their requirements. Sales tax codes contain the basic 
-information about how much you collect and pay to the authorities. When you set up sales tax codes, you define the amounts or 
-percentages that must be collected. You also define the various methods by which those amounts or percentages are applied to 
-transaction amounts. The topics in this section provide information about how to set up sales tax codes for the methods and rates that 
-your tax authorities require.
+Every company collects and pays taxes to various tax authorities. The rules and rates vary by country/region, state, county, and city. In addition, the rules must be updated periodically when tax authorities change their requirements. Sales tax codes contain the basic information about how much you collect and pay to the authorities. When you set up sales tax codes, you define the amounts or percentages that must be collected. You also define the various methods by which those amounts or percentages are applied to transaction amounts. The topics in this section provide information about how to set up sales tax codes for the methods and rates that your tax authorities require.
 
  - [Sales tax overview](indirect-taxes-overview.md)
  - [Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md)

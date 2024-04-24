@@ -6,8 +6,6 @@ description: Recurring invoices are used to invoice customers regularly for the 
 author: ShivamPandey-msft
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

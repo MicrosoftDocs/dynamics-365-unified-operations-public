@@ -4,10 +4,8 @@ description: This article walks you through an example that shows how to set up 
 author: AdamTrukawka
 ms.date: 11/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 

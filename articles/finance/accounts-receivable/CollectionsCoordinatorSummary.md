@@ -4,10 +4,9 @@
 title: Collections coordinator summary
 description: This article describes how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
 author: JodiChristiansen
-ms.date: 08/02/2023
+ms.date: 04/04/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
@@ -23,6 +22,7 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2023-06-05
 ms.dyn365.ops.version: 10.0.24
+ms.collection: bap-ai-copilot   
 
 ---
 # Collections coordinator summary
@@ -76,19 +76,6 @@ Follow the procedures in this section to configure Collections coordinator summa
 1. Accept the terms and conditions, and then select **Install**. The Copilot solution is installed in the selected environment.
 1. Go to the environment page for the selected environment.
 1. Select **Dynamics 365 apps** to check the status of the installation. While the installation is occurring, the status is **Installing**. After the installation is completed, the status is changed to **Installed**.
-
-### Grant Dataverse consent for user impersonation
-
-You must grant explicit consent for Dynamics 365 finance and operations apps to impersonate Dataverse users.
-
-1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
-1. Select **Settings** at the top of the page.
-1. Expand **Product**, and select **Features**.
-1. Find **Finance and Operations in Dataverse**.
-1. Set the **Enable finance and operations user impersonation in Dataverse** option to **On**.
-
-> [!NOTE]
-> For more information, see [Managed feature settings](/power-platform/admin/settings-features).
 
 ### Assign roles to Dataverse users
 

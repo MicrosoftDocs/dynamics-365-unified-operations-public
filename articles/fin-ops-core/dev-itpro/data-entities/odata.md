@@ -7,9 +7,6 @@ author: peakerbl
 ms.date: 06/19/2020
 
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -17,7 +14,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5

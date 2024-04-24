@@ -2,10 +2,12 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.32 (April 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.32. 
 author: josaw1
-ms.date: 03/17/2023
+ms.date: 04/12/2024
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
@@ -32,7 +34,7 @@ The following table lists the features that are included in this release. We mig
 | Extensibility  | Enable OpenAPI (Swagger) specification for local self-hosted Commerce Scale Unit (CSU) | OpenAPI specification is a widely accepted standard used to provide API descriptions for REST APIs. A [local self-hosted Commerce Scale Unit (CSU)](../dev-itpro/setup-local-dev-env.md#local-self-hosted-csu) now has OpenAPI specification enabled by default. The API specification can be accessed via the "/swagger" endpoint. | On by default |
 | Payments | Include shipping address in Adyen authorizations for additional fraud protection. | The Dynamics 365 Payment Connector for Adyen adds support for sending the user's values for the **Shipping Address** and **Shopper Email** fields with transactions where shipping to the customer is involved. These fields can be used by Adyen's Fraud Protection rules to help identify fraudulent purchase attempts. These fields will be included for online channels, Call Center, or Point of Sale (POS) when a customer is selecting the ship-to address. Fields that exist in the checkout process are newly included at the time of transactional interaction with the Adyen Payment Gateway. |  On by default |
 | Point of sale  | New network and connectivity health checks | New tests in the POS health check operation provide key information during troubleshooting of network or performance-related issues on a POS terminal. In addition, the health check operation can now be accessed directly from the **POS Settings** page. | On by default |
-| Self-service installers (Sealed)  | Store Commerce token capture and automated uninstallation of Modern POS. | By using new installer parameters, the Store Commerce installer can capture the device token that's used by Modern POS and then uninstall Modern POS. Therefore, Store Commerce can be used without requiring Azure Active Directory (Azure AD) credentials during device activation. | On by default |
+| Self-service installers (Sealed)  | Store Commerce token capture and automated uninstallation of Modern POS. | By using new installer parameters, the Store Commerce installer can capture the device token that's used by Modern POS and then uninstall Modern POS. Therefore, Store Commerce can be used without requiring Microsoft Entra credentials during device activation. | On by default |
 | Self-service installers (Sealed)  | .NET 6 is now a prerequisite. | .NET 6 is now a required installation for all sealed installers. Store Commerce has gained various performance improvements through the uptake of requirement. | On by default |
 | Pricing and discounts | [Improved pricing computation performance by using flattened discount tables](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-pricing-computation-performance-using-flattened-discount-tables) | <p>This feature optimizes the discount publishing and lookup procedures of the Dynamics 365 Commerce pricing engine by using a flattened data schema. With this feature enabled, discount data configured in Commerce headquarters is denormalized before it's sent to channel databases. The publishing of flattened discount data occurs automatically when a discount is enabled. This process helps achieve faster discount lookup and computation at runtime.<p>This feature was initially introduced in Commerce version 10.0.23 and is enabled by default in version 10.0.32 and above. If you haven't yet enabled this feature and are upgrading to Commerce version 10.0.32 or above, ensure that you run the **Initialize commerce scheduler** and **1020 (Prices and discounts)** distribution schedule after the system upgrade. | On by default |
 

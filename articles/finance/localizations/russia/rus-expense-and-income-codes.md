@@ -4,10 +4,8 @@ description: This article provides information about the expense and income code
 author: AdamTrukawka
 ms.date: 08/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: kfend
 ms.search.validFrom: 2019-03-01

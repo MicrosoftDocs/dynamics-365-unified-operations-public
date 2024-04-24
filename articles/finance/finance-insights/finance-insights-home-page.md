@@ -6,9 +6,6 @@ description: Finance insights provides configurable and extensible models to hel
 author: ShivamPandey-msft
 ms.date: 10/11/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

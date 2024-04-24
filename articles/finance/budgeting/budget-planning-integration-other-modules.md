@@ -6,9 +6,6 @@ description: Budget plans can be generated from several, different resources. Th
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetPlanGenerate

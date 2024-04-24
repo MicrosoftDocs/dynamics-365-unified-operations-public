@@ -6,9 +6,6 @@ description: Step-by-step guidance to use when you're considering purchasing Dyn
 author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

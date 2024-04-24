@@ -6,8 +6,6 @@ description: This article explains how to identify and resolve conflicts in segr
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

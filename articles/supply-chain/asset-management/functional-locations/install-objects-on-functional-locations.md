@@ -6,8 +6,6 @@ description: This article explains how to install assets on functional locations
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

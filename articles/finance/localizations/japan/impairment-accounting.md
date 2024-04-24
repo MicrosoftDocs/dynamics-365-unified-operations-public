@@ -4,10 +4,8 @@ description: Use this task to learn how to define impairment accounting common p
 author: kfend
 ms.date: 02/28/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30

@@ -4,8 +4,6 @@ description: You can extend the in-product Help pane with custom Help content.
 author: brentholtorf
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

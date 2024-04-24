@@ -6,9 +6,6 @@ description: This article describes how to use the functionality on the Document
 author: ryanCCarlson2
 ms.date: 07/19/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

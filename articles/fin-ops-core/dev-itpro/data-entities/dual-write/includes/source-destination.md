@@ -45,6 +45,8 @@ Finance and operations app | Customer engagement app | Description
 [Customers V3](#116) | contacts |
 [Decision making roles](#224) | msdyn_decisionmakingroles |
 [Default order settings](#172) | msdyn_productdefaultordersettings |
+[DV released distinct products](#242) | products |
+[DV released products](#243) | msdyn_sharedproductdetails |
 [Dynamics 365 Sales feature management states](#237) | msdyn_supplychainfeaturestates |
 [Dynamics 365 Sales order headers](#238) | salesorders |
 [Dynamics 365 Sales order lines](#239) | salesorderdetails |

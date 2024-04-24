@@ -4,7 +4,6 @@ description: This article outlines the lifecycle and support policies for Micros
 author: faix
 ms.date: 10/02/2023
 ms.topic: conceptual
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 

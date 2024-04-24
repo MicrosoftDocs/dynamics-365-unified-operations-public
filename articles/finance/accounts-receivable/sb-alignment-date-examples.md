@@ -6,9 +6,6 @@ description: This article provides examples that show how alignment dates work i
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

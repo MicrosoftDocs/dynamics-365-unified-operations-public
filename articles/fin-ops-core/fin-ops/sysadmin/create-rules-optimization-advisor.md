@@ -4,8 +4,6 @@ description: This article discusses how to add new rules to Optimization advisor
 author: kamaybac
 ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: global

@@ -1,8 +1,8 @@
 ---
 title: Get started with setting up the Warehouse management module
 description: This article explains how to work with the built-in wizards and checklists that help you quickly and efficiently set up and configure the Warehouse management module.
-author: GalynaFedorova
-ms.author: gfedorova 
+author: Mirzaab
+ms.author: mirzaab 
 ms.reviewer: kamaybac
 ms.search.form: WHSWarehouseInitiationWizard, WHSManagementInitiationWizard, WHSImplementationWorkspace, WHSImplementationTaskListPage
 ms.topic: how-to
@@ -119,7 +119,7 @@ The following table summarizes the configurations that the wizard does.
 | Inventory status | Create | <p>Inventory statuses are used to categorize and keep track of inventory. The wizard will create an initial inventory status value and use the name that you specify.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other inventory statuses by going to **Warehouse management \> Setup \> Inventory \> Inventory statuses**.</p> |
 | Default work user and password | Create | <p>The default work user is used for automated work transactions. The wizard will create an initial work user and use the user name and password that you specify.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other work users by going to **Warehouse management \> Setup \> Worker**.</p> |
 | Mobile device menu | Create | <p>The mobile device menu contains the menu items that the mobile device shows to warehouse workers. The wizard will create an initial mobile device menu and use the mobile device name and description that you specify.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other mobile device menus by going to **Warehouse management \> Setup \>Mobile device \> Mobile device menu**.</p> |
-| Load posting methods | Regenerate | <p>Load posting methods are used when a load is released to the warehouse from the load planning workbench. The wizard will generate or regenerate the load posting methods.</p><p>After you complete the wizard, you can manually regenerate and/or edit the method list by going to **Warehouse management \> Setup \> Load posting methods**.</p> |
+| Load posting methods | Regenerate | <p>Load posting methods are used when a load is released to the warehouse from the outbound load planning workbench. The wizard will generate or regenerate the load posting methods.</p><p>After you complete the wizard, you can manually regenerate and/or edit the method list by going to **Warehouse management \> Setup \> Load posting methods**.</p> |
 | Wave processing methods | Regenerate | <p>Wave processing methods are used to perform the actions that are created by a wave template. The wizard will generate or regenerate the wave processing methods.</p><p>After you complete the wizard, you can manually regenerate and/or edit the method list by going to **Warehouse management \> Setup \> Waves \> Wave process methods**.</p> |
 | Warehouse management parameters | Set up | <p>Based on settings that you specify while you run the wizard, the wizard will initialize several settings on the **Warehouse management parameters** page (**Warehouse management \> Setup \> Warehouse management parameters**). The following values will be set:</p><ul><li>User location profile</li><li>Location types</li><li>Default work user ID</li><li>Default inventory status</li></ul> |
 

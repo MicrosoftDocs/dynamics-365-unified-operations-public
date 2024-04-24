@@ -3,11 +3,10 @@
 
 title: Budget planning overview
 description: This article describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
-author: panolte
-ms.date: 01/11/2018
+author: SAURABHGUPTA
+ms.date: 03/11/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen 
 
 # optional metadata
 
@@ -15,13 +14,13 @@ ms.search.form: BudgetPlanningConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: panolte
+ms.author: SAURABHGUPTA
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
