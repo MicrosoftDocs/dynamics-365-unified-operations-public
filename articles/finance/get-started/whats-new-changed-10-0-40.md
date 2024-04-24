@@ -40,7 +40,7 @@ This section contains a table that lists the features that are included in this 
 |Credit and collections|	Credit and collections workspace |The Collections coordinator workspace centralizes essential collection information for collections agent (coordinator), enabling streamlined customer communication and decision-making. It offers an overview of customer accounts, activities, and balances, facilitating efficient collections management. |Feature management |
 |Credit and collections|	Customer balance statistics deletion job|	Users now have the ability to efficiently manage long-term data stored in the Customer balance statistics table. This enhancement includes a **Delete outdated balance statistics records** periodic task designed to remove unnecessary records from the table, thus alleviating potential performance impacts associated with data overload. **Customer balance statistics deletion job** is enabled in **Feature management**. |	Feature management|
 |Credit and collections|	Customer account rename data maintenance |	By introducing a new data maintenance page, we've streamlined data consistency. This page allows customers to view and manually retry failed updates. |	Feature management|
-
+|General ledger | Consolidation templates |Consolidation online templates allow you to setup the consolidation information one time and use it each time the consolidation process is performed. The **Consolidate online** page has been updated to show all consolidation runs, reruns and reversals. Enable the **Consolidate online using templates** feature in **Feature management** to use this functionality. |Feature management  |      
 
 
 ## Feature enhancements included in this release
