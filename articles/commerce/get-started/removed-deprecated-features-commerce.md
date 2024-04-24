@@ -4,8 +4,6 @@ description: This article describes features that have been removed, or that are
 author: josaw1
 ms.date: 03/10/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

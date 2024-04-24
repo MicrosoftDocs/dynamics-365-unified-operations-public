@@ -6,9 +6,6 @@ description: This article explains how to add a new location and party relations
 author: ShivamPandey-msft
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

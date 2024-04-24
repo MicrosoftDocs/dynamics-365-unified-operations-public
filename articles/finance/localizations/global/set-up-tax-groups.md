@@ -6,9 +6,6 @@ description: This article explains how to set up tax groups in the Tax Calculati
 author: wangchen
 ms.date: 02/09/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
-
 # optional metadata 
 
 ms.search.form: TaxTable, TaxData   

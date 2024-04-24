@@ -6,9 +6,6 @@ description: How and when transactions are settled can be complex subjects, so i
 author: angelad116
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters

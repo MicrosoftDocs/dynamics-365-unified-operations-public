@@ -6,16 +6,13 @@ description: This article describes how to modify connected flowcharts, create a
 author: AngelMarshall 
 ms.date: 02/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global

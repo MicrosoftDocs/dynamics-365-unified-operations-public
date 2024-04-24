@@ -6,9 +6,6 @@ description: This article answers some frequently asked questions about collecti
 author: JodiChristiansen
 ms.date: 01/31/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

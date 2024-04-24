@@ -6,8 +6,6 @@ description: This article describes how to find and use the various types of inq
 author: Weijiesa
 ms.date: 02/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

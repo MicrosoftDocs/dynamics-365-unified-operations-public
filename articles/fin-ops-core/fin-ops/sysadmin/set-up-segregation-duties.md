@@ -6,8 +6,6 @@ description: You can set up rules to separate tasks that must be performed by di
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,8 +4,6 @@ description: This procedure walks through configuring and running a recurrent ba
 author: jashanno
 ms.date: 08/06/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

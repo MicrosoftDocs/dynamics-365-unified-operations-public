@@ -6,9 +6,6 @@ description: This article explains how to configure buy online, pick up in store
 author: BrianShook
 ms.date: 05/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

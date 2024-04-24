@@ -155,7 +155,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> Because of the constraints of the [partition configuration](inventory-visibility-power-platform.md#partition-configuration), `siteId` and `locationId` are required dimensions.
+> If your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*, `siteId` and `locationId` are optional dimensions. Otherwise they're required dimensions. This rule also applies to the allocation, soft reserve, and change schedule APIs.
 
 The following subsections provide examples that show how to use these APIs.
 
@@ -602,11 +602,22 @@ Body:
 
 ## Query on-hand
 
-Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. When your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By location*, the maximum limit is defined by the following equation:
 
-*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
+*NumOf(SiteID) &times; NumOf(LocationID) <= 10,000*.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
+
+The query by post API is available in two versions. The following table outlines the differences.
+
+| API version 1.0 | API version 2.0 |
+|---|---|
+| Can only query one organization ID. | Can query multiple organization IDs. |
+| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites and warehouses. Can return results in multiple pages. |
+
+The following subsections show how to use each API version.
+
+#### Query by post API version 1.0
 
 ```txt
 Path:
@@ -633,15 +644,28 @@ Body:
     }
 ```
 
-In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, and `locationId`.
-
-- `organizationId` should contain only one value, but it's still an array.
-- `productId` can contain one or more values. If it's an empty array, the system will return all products of the specific sites and locations. In this case, `siteId` and `locationId` should not be empty.
-- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations of the specific products. In this case, `productId` should not be empty.
-
-We recommend that you use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#index).
+In the body part of this request, `dimensionDataSource` is an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*.
 
 The `returnNegative` parameter controls whether the results contain negative entries.
+
+### Query data stored by location
+
+This section applies when your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By location*.
+
+- `organizationId` should be an array containing exactly one value.
+- `productId` can contain one or more values. If it's an empty array, the system will return all products for the specified sites and locations. In this case, `siteId` and `locationId` shouldn't be empty.
+- `siteId` and `locationId` are used for partitioning. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations for the specified products. In this case, `productId` shouldn't be empty.
+
+We recommend to use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#index).
+
+### Query data stored by product ID
+
+This section applies when your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*. In this case, two `filters` fields are required: `organizationId`, `productId`.
+
+- `organizationId` should be an array containing exactly one value.
+- `productId` should be an array with at least one value.
+
+Unlike when storing data by location, if you don't specify values for `siteId` and `locationId`, inventory information for each product ID will be aggregated across all sites and/or locations.
 
 > [!NOTE]
 > If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
@@ -678,6 +702,42 @@ The following example shows how to query all products in a specific site and loc
 }
 ```
 
+#### Query by post API version 2.0
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery?pageNumber={pageNumber}&pageSize={pageSize}
+Method:
+    Post
+Headers:
+    Api-Version="2.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    # Same as version 1.0
+```
+
+The request format for API version 2.0 is similar to that of version 1.0, but also supports two optional parameters: `pageNumber` and `pageSize`, which allow the system to split a single large result into several smaller documents. The results are sorted by warehouse (`locationId`), and the parameters are used as follows to split results into pages:
+
+- `pageSize` establishes the number of warehouses (`locationId` values) that are returned in each page.
+- `pageNumber` establishes the page number that's returned.
+
+A request of this format returns on-hand inventory data starting from warehouse number *({pageNumber} &minus; 1) &times; {pageSize}* and includes data for the next *{pageSize}* warehouses.
+
+API version 2.0 responds with a document that uses the following structure:
+
+```txt
+{
+    Value: { # Response same as Api-Version=1.0 }
+    nextLink: onhand/indexquery?pageNumber={pageNumber+1}&pageSize={pageSize}
+}
+```
+
+When the request reaches the last warehouse (`locationId`), the `nextLink` value is an empty string.
+
+API version 2.0 also lets you specify more than one organization ID in your request. To do so, include a comma-separated list of organization IDs in the `organizationId` filter of your request document. For example, `"organizationId": ["org1", "org2", "org3"]`.
+
 ### <a name="query-with-get-method"></a>Query by using the get method
 
 ```txt
@@ -702,7 +762,9 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_contoso_product&siteId=iv_contoso_site&locationId=iv_contoso_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
-## <a name="exact-query-with-post-method"></a>On-hand exact query
+The system doesn't support querying inventory over multiple organization IDs with the GET method.
+
+## On-hand exact query
 
 On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
 
@@ -718,7 +780,15 @@ For a regular on-hand query, if you specify `"siteId": ["1","2"]` and `"location
 
 As you see, the regular on-hand query doesn't recognize that location A exists only in site 1, and location B exists only in site 2. Therefore, it makes redundant queries. To accommodate this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in the query body. In this case, you'll query and receive results for only site 1, location A and site 2, location B.
 
-### <a name="exact-query-with-post-method"></a>Exact query by using the post method
+### <a name="exact-query-with-post-method"></a>On-hand exact query query using the post method
+
+The on-hand exact query by post API is available in two versions. The following table outlines the differences.
+
+| API version 1.0 | API version 2.0 |
+|---|---|
+| Can only query one organization ID. | Can query multiple organization IDs. |
+
+#### On-hand exact query by post API version 1.0
 
 ```txt
 Path:
@@ -748,7 +818,7 @@ In the body part of this request, `dimensionDataSource` is an optional parameter
 
 - `organizationId` should contain only one value, but it's still an array.
 - `productId` could contain one or more values. If it's an empty array, all products will be returned.
-- In the `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
+- In the `dimensions` array, `siteId` and `locationId` are required if and only if your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By location*. In this case, they could appear with other elements in any order.
 - `values` could contain one or more distinct tuples of values corresponding to `dimensions`.
 
 `dimensions` in `filters` will be automatically added to `groupByValues`.
@@ -791,6 +861,38 @@ The following example shows how to query all products in multiple sites and loca
     "returnNegative": true
 }
 ```
+
+#### On-hand exact query by post API version 2.0
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="2.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            productId: string[],
+            keys: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+API version 2.0 differs from version 1.0 in the following ways:
+
+- The `filters` section now has a `keys` field instead of a `dimensions` field. The `keys` field works like the `dimensions` field in version 1.0, but can now also include `organizationId`. You can specify the keys in any order.
+- The `filters` section no longer supports the `organizationId` field. Instead, you can include `organizationId` among the dimensions in the `keys` field (for example, `keys: ["organizationId", "siteId", "locationId"]`) and define organization ID values at the matching position in the `values` field (for example, `values: ["SCM_IV", "iv_contoso_site_1", "iv_contoso_location_1"]`).
+
+Other fields are identical to API version 1.0.
 
 ## <a name="product-search-query"></a>Query with product search
 

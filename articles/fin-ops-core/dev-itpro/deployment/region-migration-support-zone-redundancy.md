@@ -1,6 +1,6 @@
 ---
 title: Region migration to support zone redundancy FAQ
-description: This article answers frequently asked questions about the migration process and the considerations for supporting zone redundancy.
+description: Access frequently asked questions about the migration process and the considerations for supporting zone redundancy.
 author: rashmim
 ms.author: rashmim
 ms.topic: conceptual 

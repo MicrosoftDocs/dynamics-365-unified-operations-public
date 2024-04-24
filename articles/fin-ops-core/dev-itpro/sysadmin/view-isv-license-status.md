@@ -4,10 +4,8 @@ description: The article explains how to view the status of an independent softw
 author: Peakerbl
 ms.date: 04/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2021-01-31

@@ -4,8 +4,6 @@ description: This article answers frequently asked questions about the functiona
 author: EricWangChen
 ms.date: 10/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

@@ -3,11 +3,9 @@
  
 title: Create a free text invoice
 description: This article explains how to create free text invoices. 
-author: abruer
+author: prabhatb
 ms.date: 02/15/2022
 ms.topic: article 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -19,7 +17,7 @@ ms.reviewer: twheeloc
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: prabhatb
 ms.search.validFrom: 2018-08-30 
 ms.dyn365.ops.version: 8.0.4
 

@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Flexible warehouse-level dimension reservation policy
 description: This article describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
 author: perlynne
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2020-01-15
-ms.dyn365.ops.version: 10.0.13
-
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: conceptual
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Flexible warehouse-level dimension reservation policy
@@ -859,7 +844,7 @@ The following tables provide an overview that shows how the system handles order
 
 - The container consolidation rule for packing by directive unit has limitations. For order-committed reservations, we recommend that you not use container build templates where the **Pack by directive unit** field is enabled. In the current design, location directives aren't used when warehouse work is created. Therefore, only the lowest unit in the unit sequence group (the inventory unit) is applied during the containerization wave step.
 
-## See also
+## Next steps
 
 - [Batch numbers in Warehouse management](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)

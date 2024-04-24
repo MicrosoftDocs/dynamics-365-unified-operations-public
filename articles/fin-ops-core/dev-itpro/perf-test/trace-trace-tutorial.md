@@ -4,8 +4,6 @@ description: This tutorial provides guidelines for taking traces.
 author: ttreen
 ms.date: 11/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

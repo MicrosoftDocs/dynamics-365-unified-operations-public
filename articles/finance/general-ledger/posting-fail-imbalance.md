@@ -6,9 +6,6 @@ description: This article explains why debits and credits might not be balanced 
 author: kweekley
 ms.date: 08/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

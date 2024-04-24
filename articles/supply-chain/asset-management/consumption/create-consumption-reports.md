@@ -6,8 +6,6 @@ description: This article explains how to create consumption reports in Asset Ma
 author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

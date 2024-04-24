@@ -4,8 +4,6 @@ description: This article explains specific settings for posting value-added tax
 author: AdamTrukawka
 ms.date: 07/23/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

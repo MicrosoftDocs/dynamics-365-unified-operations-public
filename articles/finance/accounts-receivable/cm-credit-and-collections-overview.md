@@ -3,12 +3,9 @@
 
 title: Credit and collections overview
 description: This article provides an overview of the functionality for credit and collections.
-author: JodiChristiansen
+author: sunitacharya
 ms.date: 09/04/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  
@@ -21,7 +18,7 @@ ms.reviewer: twheeloc
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: sunitacharya
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

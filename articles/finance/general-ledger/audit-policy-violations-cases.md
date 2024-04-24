@@ -6,9 +6,6 @@ description: The article explains how audit cases are generated from violations 
 author: panolte
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule

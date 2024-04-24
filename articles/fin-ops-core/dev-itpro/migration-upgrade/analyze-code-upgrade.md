@@ -6,9 +6,6 @@ description: This article explains how to use the Code upgrade service in Micros
 author: ttreen
 ms.date: 09/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,9 +6,6 @@ description: This article points to articles that describe the new and changed f
 author: josaw1
 ms.date: 02/22/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

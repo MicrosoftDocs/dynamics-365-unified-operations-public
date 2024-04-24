@@ -6,15 +6,12 @@ description: This article describes the types of support that are involved in th
 author: PedroTubal
 ms.date: 10/12/2021
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC
 ms.search.region: Global

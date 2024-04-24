@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Positive pay overview
-description: This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank. 
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about positive pay, which is used to generate an electronic list of checks that can be presented to a bank.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankPositivePaySummary
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: thweeloc
-# ms.tgt_pltfrm: 
+ms.date: 10/24/2022
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-05-31
+ms.search.form: BankPositivePaySummary
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ---
 
 # Positive pay overview

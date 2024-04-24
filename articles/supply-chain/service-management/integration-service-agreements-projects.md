@@ -6,8 +6,6 @@ description: When you work with service agreements and service agreement lines, 
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

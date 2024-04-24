@@ -4,8 +4,6 @@ description: This article explains how to manually create deferrals and how to g
 author: AdamTrukawka
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

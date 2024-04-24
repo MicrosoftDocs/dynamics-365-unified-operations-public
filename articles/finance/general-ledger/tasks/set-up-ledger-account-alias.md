@@ -6,8 +6,6 @@ description: This procedure shows how to create an account alias that provides a
 author: aprilolson
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

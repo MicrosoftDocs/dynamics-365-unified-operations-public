@@ -4,8 +4,6 @@ description: This article describes how to split the solution into separate mode
 author: kfend
 ms.date: 06/17/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: kfend
 ms.search.region: Global

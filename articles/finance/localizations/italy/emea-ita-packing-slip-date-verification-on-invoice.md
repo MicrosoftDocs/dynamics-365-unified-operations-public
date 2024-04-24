@@ -4,8 +4,6 @@ description: For Italy, the invoice date is verified on packing slips and invoic
 author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy

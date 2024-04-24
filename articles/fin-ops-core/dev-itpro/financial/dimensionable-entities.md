@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Make backing tables consumable as financial dimensions
-description: This article provides the steps that you need to follow to make a backing table usable as a Financial dimension.
+description: Learn about the steps that you need to follow to make a backing table usable as a Financial dimension, including code examples.
 author: RyanCCarlson2
-ms.date: 10/04/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 10/04/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Make backing tables consumable as financial dimensions

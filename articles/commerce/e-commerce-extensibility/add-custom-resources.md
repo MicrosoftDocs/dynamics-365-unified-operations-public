@@ -4,8 +4,6 @@ description: This article describes how to add custom static resources to your S
 author: samjarawan
 ms.date: 05/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

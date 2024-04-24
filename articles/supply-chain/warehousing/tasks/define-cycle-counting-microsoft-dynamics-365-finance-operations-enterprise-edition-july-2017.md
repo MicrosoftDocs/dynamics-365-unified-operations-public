@@ -6,8 +6,6 @@ description: Cycle counting is a warehouse process that you can use to audit on-
 author: Mirzaab
 ms.date: 08/12/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem

@@ -4,8 +4,6 @@ description: This article explains how you can extend the Microsoft Help system 
 author: edupont04
 ms.date: 04/13/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global

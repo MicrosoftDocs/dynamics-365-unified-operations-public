@@ -4,8 +4,6 @@ description: This article explains the functionality that is available in the po
 author: hhainesms
 ms.date: 01/06/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

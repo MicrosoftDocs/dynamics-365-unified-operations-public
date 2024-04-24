@@ -31,56 +31,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
-        - name: Human Resources 10.0.39 (merged infrastructure)          
+        - name: Human Resources 10.0.39        
           href: ./get-started/hr-whats-new-10-0-39.md  
-        - name: Human Resources 10.0.38 (merged infrastructure)          
+        - name: Human Resources 10.0.38         
           href: ./get-started/hr-whats-new-10-0-38.md   
-        - name: Human Resources 10.0.37 (merged infrastructure)          
+        - name: Human Resources 10.0.37     
           href: ./get-started/hr-whats-new-10-0-37.md  
-        - name: Human Resources 10.0.36 (merged infrastructure)          
-          href: ./get-started/hr-whats-new-10-0-36.md                             
-        - name: What's new in Dynamics 365 Human Resources (stand-alone)
-          items: 
-          - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
-            href: hr-whats-new-2022-12-12.md         
-          - name: What's new in Dynamics 365 Human Resources (stand-alone) archives 2021
-            href: hr-admin-whats-new.md    
-          - name: November 29, 2021
-            href: hr-whats-new-2021-11-29.md
-          - name: October 5, 2021
-            href: hr-whats-new-2021-10-04.md
-          - name: September 20, 2021
-            href: hr-whats-new-2021-09-20.md
-          - name: September 6, 2021
-            href: hr-whats-new-2021-09-06.md
-          - name: August 23, 2021
-            href: hr-whats-new-2021-08-23.md
-          - name: August 9, 2021
-            href: hr-whats-new-2021-08-09.md
-          - name: July 26, 2021
-            href: hr-whats-new-2021-07-26.md
-          - name: July 12, 2021
-            href: hr-whats-new-2021-07-12.md
-          - name: June 22, 2021
-            href: hr-whats-new-2021-06-22.md
-          - name: May 20, 2021
-            href: hr-whats-new-2021-05-20.md
-          - name: May 3, 2021
-            href: hr-whats-new-2021-05-03.md
-          - name: April 19, 2021
-            href: hr-whats-new-2021-04-19.md
-          - name: April 5, 2021
-            href: hr-whats-new-2021-04-05.md
-          - name: March 22, 2021
-            href: hr-whats-new-2021-03-22.md
-          - name: March 8, 2021 
-            href: hr-whats-new-2021-03-08.md
-          - name: February 22, 2021
-            href: hr-whats-new-2021-02-22.md
-          - name: January 28, 2021
-            href: hr-whats-new-2021-01-28.md
-          - name: January 21, 2021
-            href: hr-whats-new-2021-01-21.md
+        - name: Human Resources 10.0.36      
+          href: ./get-started/hr-whats-new-10-0-36.md                       
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -137,16 +95,6 @@ items:
         items:
         - name: Provision Human Resources in the finance and operations infrastructure
           href: hr-admin-setup-provision-fo.md
-        - name: Provision Human Resources in the stand-alone infrastructure
-          items:
-          - name: Provision Human Resources
-            href: hr-admin-setup-provision.md
-          - name: Copy an instance
-            href: hr-admin-setup-copy-instance.md
-          - name: Remove an instance
-            href: hr-admin-setup-remove-instance.md
-          - name: Update process
-            href: hr-admin-setup-update-process.md
       - name: Set up data integration
         items:
         - name: Choose a data integration technology
@@ -165,8 +113,6 @@ items:
           href: dev-itpro/hr-admin-virtual-entity-faq.md
         - name: Configure integration with Dataverse  
           href: hr-dataverse-integration.md
-        - name: Configure integration with Finance
-          href: hr-admin-integration-finance.md
         - name: Configure integration with Dayforce
           href: hr-admin-integration-dayforce.md
         - name: Create a recurring data export app
@@ -609,6 +555,22 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
+    - name: Time and attendance
+      items:
+      - name: Time and attendance information
+        href: hr-about-time-and-attendance-information.md
+      - name: Set up time and attendance information
+        href: hr-set-up-time-and-attendance-information.md
+      - name: Register time for workers
+        href: hr-register-time.md
+      - name: Communicate with and deploy assignments to workers
+        href: hr-communicate-and-deploy-assignments.md
+      - name: Calculate, approve, and transfer registrations
+        href: hr-about-calculate-approve-transfer-registrations.md
+      - name: Work planner and time profiles
+        href: hr-about-work-planner-time-profiles.md
+      - name: Update time and attendance information
+        href: hr-update-time-and-attendance-information.md
     - name: Task management
       items:
       - name: Overview
@@ -935,8 +897,6 @@ items:
         href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Security for virtual table integrations  
         href: hr-security-config.md
-      - name: Configure integration with Finance
-        href: hr-admin-integration-finance.md
       - name: Human resources to resource integration
         href: hr-admin-integration-hr-rm.md
       - name: Create links from Human resources to another environment
@@ -1087,6 +1047,22 @@ items:
           href: hr-admin-integration-payroll-api-payroll-position.md
         - name: Payroll position job
           href: hr-admin-integration-payroll-api-payroll-position-job.md
+        - name: Job task 
+          href: hr-admin-integration-job-task.md
+        - name: Payroll job type 
+          href: hr-payroll-job-type.md
+        - name: Payroll historical person name 
+          href: hr-payroll-history-person.md
+        - name: Payroll job base 
+          href: hr-payroll-job-base.md
+        - name: Payroll job family 
+          href: hr-payroll-job-family.md
+        - name: Payroll job function 
+          href: hr-payroll-job-function.md
+        - name: Payroll employment employee 
+          href: hr-employ-employee.md
+        - name: Payroll compensation fixed plan  
+          href: hr-comp-fixed.md
       - name: Leave and absence related entities
         items:
           - name: Leave balance

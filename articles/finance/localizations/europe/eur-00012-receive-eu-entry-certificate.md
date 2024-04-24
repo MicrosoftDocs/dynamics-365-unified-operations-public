@@ -6,8 +6,6 @@ description: This procedure walks you through registering an EU entry certificat
 author: mrolecki
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

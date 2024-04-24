@@ -6,9 +6,6 @@ description: This article describes the periodic tasks that are available in Rec
 author: JodiChristiansen
 ms.date: 02/22/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

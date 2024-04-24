@@ -6,9 +6,6 @@ description: This article describes recurring integrations, including the proces
 author: pnghub
 ms.date: 10/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

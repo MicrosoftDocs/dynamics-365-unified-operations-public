@@ -1,18 +1,16 @@
 ---
 title: Reporting and analytics with Power BI home page
-description: This article points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
+description: Learn about resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
-ms.date: 10/02/2019
-ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: conceptual
+ms.date: 10/02/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ---
 

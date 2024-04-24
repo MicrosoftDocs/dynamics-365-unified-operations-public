@@ -1,17 +1,17 @@
 ---
 title: Enable generative help and guidance with Copilot (preview)
-description: This article describes how administrators can enable generative help and guidance with Copilot in finance and operations apps.
+description: Learn about how administrators can enable generative help and guidance with Copilot in finance and operations apps.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 12/05/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Enable generative help and guidance with Copilot (preview)

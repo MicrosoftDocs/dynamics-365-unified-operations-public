@@ -6,8 +6,6 @@ description:  This article explains how to approve vendors for specific procurem
 author: Henrikan
 ms.date: 07/30/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

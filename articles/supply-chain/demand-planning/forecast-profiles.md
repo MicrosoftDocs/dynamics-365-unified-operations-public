@@ -1,5 +1,5 @@
 ---
-title: Work with forecast profiles (preview)
+title: Work with forecast profiles
 description: This article describes how to work with forecast profiles. Forecast profiles prepare the data of an existing time series and then run forecasting algorithms to create a new time series that predicts demand over a coming period.
 author: t-benebo
 ms.author: benebotg
@@ -14,12 +14,9 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Work with forecast profiles (preview)
+# Work with forecast profiles
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 The Demand planning app lets you build a collection of *forecast profiles*. Each profile takes an existing time series as input, prepares the data, and then runs forecasting algorithms to create a new time series that predicts demand over a coming period.
 
@@ -38,6 +35,7 @@ To generate a new forecast by running an existing forecast profile, follow these
     - **Horizon and time buckets** – This tab shows the granularity (bucket size) that the forecast will be made at (daily, weekly, or monthly) and the number of buckets that will be included in the forecast. You can modify the selections as you require. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-profile) section.
     - **Input data** – This tab shows the full list of available time series and indicates which of them are used by the profile. You can change the selections as you require. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-profile) section.
     - **Forecast model** – This tab shows the forecast calculation that the profile does. It uses a flowchart of interconnected tiles. Each tile does a specific type of operation and has settings that let you define how that operation works. For information about how to work with the settings on this tab, see the [Create and manage forecast profiles](#create-profile) section.
+    - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, and the time series that was generated. Select a link in the **Time Series** column to open the time series.
 
 1. To run the profile, select **Run** on the Action Pane.
@@ -77,5 +75,7 @@ To create or edit a forecast profile, follow these steps.
 
 1. When you've finished selecting the input time series, select **Next**.
 1. On the **Select a forecasting model preset** page, you can select a forecast model preset to use with your current profile. Browse the presets that are listed under **Available model presets** to preview the forecast that each preset makes. You can configure settings and customize the forecast model as you require after you save the profile. Therefore, select the preset that's closest to what you're looking for, and then select **Next**. For information about how to configure settings and customize the forecast model that a profile uses, and how to create new presets, see [Design forecast models](design-forecast-models.md).
+1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
+1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. The profile is now saved, but it hasn't yet run. If you're ready to run the forecast now, select **Run** on the Action Pane.

@@ -4,8 +4,6 @@ description: This article walks you through creating a purchase order that inclu
 author: EricWangChen
 ms.date: 03/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: India

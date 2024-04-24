@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/general-ledger/cant-reverse-transctns.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/cant-reverse-transactions",
+      "redirect_document_id": "false"
+    },  
+    {
+      "source_path": "articles/finance/general-ledger/yec-mssng-open-blnces.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/year-end-close-miss-opening-balances",
+      "redirect_document_id": "false"
+    },  
+    {
+      "source_path": "articles/finance/general-ledger/rvrs-settgs-on-jrnls-lines.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/vouchers-not-reversed-posting-journal",
+      "redirect_document_id": "false"
+    },     
+    {
+      "source_path": "articles/finance/general-ledger/set-up-balance-dimensions.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/set-up-balance-dimensions",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/finance/general-ledger/dimension-default-values.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/dimension-default-values",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/finance/general-ledger/posting-fail-imbalance.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/posting-fail-imbalance",
+      "redirect_document_id": "false"
+    },            
+    {
+      "source_path": "articles/finance/general-ledger/open-fincl-jrnls-in-office.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/custom-excel-template-financial-journals-not-available",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/general-ledger/add-change-acctg-rprtg-crrncy.md",
+      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency",
+      "redirect_document_id": "false"
+    },    
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/third-party-service-test.md",
       "redirect_url": "dynamics365/fin-ops-core/fin-ops",
       "redirect_document_id": "false"

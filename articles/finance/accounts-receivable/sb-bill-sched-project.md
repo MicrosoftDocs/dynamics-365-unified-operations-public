@@ -6,9 +6,6 @@ description: This article provides information about the Billing schedules with 
 author: JodiChristiansen
 ms.date: 01/27/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

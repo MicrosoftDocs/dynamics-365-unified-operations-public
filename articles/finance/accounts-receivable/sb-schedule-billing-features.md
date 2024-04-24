@@ -5,9 +5,6 @@ description: This article explains the features of billing schedules, such as pr
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  

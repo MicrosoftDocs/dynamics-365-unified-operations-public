@@ -6,9 +6,6 @@ description: This article describes real async feature enhancements.
 author: twheeloc
 ms.date: 10/25/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

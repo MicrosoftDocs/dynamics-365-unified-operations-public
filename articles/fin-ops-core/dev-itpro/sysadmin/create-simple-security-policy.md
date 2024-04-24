@@ -6,15 +6,12 @@ description: This article explains how to create a simple security policy that s
 author: Peakerbl
 ms.date: 07/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.assetid: 

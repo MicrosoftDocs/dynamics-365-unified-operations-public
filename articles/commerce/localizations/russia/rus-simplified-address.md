@@ -4,8 +4,6 @@ description: This article describes the simplified Russian address format and ex
 author: EvgenyPopovMBS
 ms.date: 08/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Russia

@@ -6,8 +6,6 @@ description: This article explains work orders and fixed assets in Asset Managem
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

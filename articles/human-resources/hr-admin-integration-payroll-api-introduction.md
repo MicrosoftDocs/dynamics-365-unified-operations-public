@@ -6,9 +6,6 @@ description: This article describes the Dynamics 365 Human Resources Payroll int
 author: twheeloc
 ms.date: 02/03/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Payroll integration API introduction
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 >[!NOTE]
 >For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.

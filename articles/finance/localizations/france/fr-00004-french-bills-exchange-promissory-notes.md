@@ -6,8 +6,6 @@ description: The French bill of exchange remittance report displays details abou
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

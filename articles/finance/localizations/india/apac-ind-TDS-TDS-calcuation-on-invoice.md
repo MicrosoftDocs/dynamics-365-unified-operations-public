@@ -6,10 +6,6 @@ description: This article provides a reference for transactions where the Tax De
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

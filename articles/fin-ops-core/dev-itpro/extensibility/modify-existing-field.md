@@ -1,18 +1,15 @@
 ---
 title: Modify existing fields in a table through extension
-description: This article provides information about how to modify an existing field in a table.
+description: Learn about how to modify an existing field in a table, including the process of creating an extension for the table.
 author: ivanv-microsoft
-ms.date: 04/24/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: article
+ms.date: 04/24/2019
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.assetid: 
 ---
 
 # Modify existing fields in a table through extension

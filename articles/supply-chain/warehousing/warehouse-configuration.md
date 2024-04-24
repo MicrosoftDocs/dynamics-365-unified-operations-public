@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 ms.topic: conceptual
-ms.date: 12/02/2022
+ms.date: 04/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -102,7 +102,7 @@ As the name suggests, location directives are used to direct the work transactio
 
 To make it easier and quicker to define the actions that are associated with each location directive line, use one of the predefined strategies. For example, you can use the *Empty location with no incoming work* strategy to search for free locations in a warehouse, or you can use *FEFO batch reservation* strategy for outbound sales picking.
 
-## Additional resources
+## Next steps
 
 - [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md)
 - [Get started with setting up the Warehouse management module](get-started-with-setting-up-module.md)

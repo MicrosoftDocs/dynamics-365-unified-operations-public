@@ -1,13 +1,12 @@
 ---
 title: Geo to geo migration overview
-description: This article provides an overview of the process for moving between geographies.
+description: Learn about an overview of the process for moving between geographies, including general considerations and environment migration considerations.
 author: matapg007
 ms.author: matgupta
-ms.reviewer: johnmichalak
-ms.service: dynamics-365-finance
 ms.topic: how-to
 ms.date: 05/10/2023
 ms.custom:
+ms.reviewer: johnmichalak
 ---
 # Geo to geo migration overview
 

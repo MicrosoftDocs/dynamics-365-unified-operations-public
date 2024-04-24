@@ -6,8 +6,6 @@ description: This task walks through the steps for creating a Bank facility agre
 author: angelad116
 ms.date: 11/15/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

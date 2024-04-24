@@ -6,8 +6,6 @@ description: This article describes the fields that are required to be populated
 author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

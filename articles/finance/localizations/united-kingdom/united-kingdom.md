@@ -6,9 +6,6 @@ description: This article provides links to documentation resources for the Unit
 author: kfend
 ms.date: 09/07/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

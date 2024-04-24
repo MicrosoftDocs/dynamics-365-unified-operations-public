@@ -4,8 +4,6 @@ description: This article describes the General ledger functionality that's avai
 author: TaylorVH
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
