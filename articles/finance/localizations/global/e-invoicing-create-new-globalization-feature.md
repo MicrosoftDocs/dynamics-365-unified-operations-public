@@ -1,6 +1,6 @@
 ---
 title: Create a Globalization feature
-description: This article explains how to create a Globalization feature.
+description: This article explains how to create a Globalization feature (RCS).
 author: gionoder
 ms.date: 02/14/2022
 ms.topic: article
