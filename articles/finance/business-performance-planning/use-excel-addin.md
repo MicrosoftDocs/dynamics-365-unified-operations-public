@@ -68,8 +68,8 @@ To create a PivotTable that's based on a data model, follow these steps.
 2. Configure the PivotTable by bringing fact data, amounts, or values from your cube into the **Values** section.
 3. Bring dimensions that describe the fact data in as rows, columns, and filters of your PivotTable. Examples of these dimensions include cost centers, scenarios, regions, or years.
 4. Auto detect relationships between cube and dimension tables.
-   
-Excel gives a message at the top of your pivot table pane that there's no relationships between the tables and a call to action to either auto detect the relationships or create the relationships manually. Confirm that auto detect relationships set the releationships up accurately. The relationships generally are based on primary key(ID field) in dimension tables. Occasionally, you might have to create the relationships manually.
+
+A message at the top of the PivotTable pane notifies you that there are no relationships between the tables. It prompts you to either auto detect the relationships or manually create them. Confirm that auto detect relationships accurately set up the relationships. The relationships are generally based on the primary key (ID field) in dimension tables. Occasionally, you might have to manually create the relationships.
 
 ## Begin planning
 
