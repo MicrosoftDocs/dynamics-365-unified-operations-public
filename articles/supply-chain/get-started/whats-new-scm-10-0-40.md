@@ -31,7 +31,11 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| XXXX | XXXX | XXXX  | Feature management:<br>*XXXX*  |
+| Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default  |
+| Inventory and logistics | [Reproduce business documents that include product bundles](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/reproduce-business-documents-that-include-product-bundles) | *Coming soon* | Feature management:<br>*(Preview) Product bundles in journals*  |
+| Inventory and logistics | [Query and manage inventory without site or warehouse info](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/query-post-reserve-inventory-without-specifying-site-or-warehouse) | [Data partition rule](../inventory/inventory-visibility-power-platform.md#data-partition) | Enabled by default |
+| Manufacturing and asset management | [Track and trace serial and batch numbers for manufacturing](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/track-trace-serial-batch-numbers-manufacturing) | *Coming soon* | Feature management:<br>*Tracked components* |
+| Warehouse Management | [Inspect and process returned items more efficiently](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/inspect-process-returned-items-more-efficiently) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default  |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 
@@ -41,10 +45,28 @@ Some of these features aren't visible on your system until you turn them on in [
 
 | Feature enhancement | Description |
 |---|---|
-|<p>**Module:** Warehouse management</p><p>**Enhancement:** *Hide mobile device menu items in the menus*</p><p>**Feature management name:** *(None)*</p> | <p>This feature lets you conceal your mobile device menu items from the mobile device menu layout by right clicking on them in the Mobile device menu page and choosing *Show* or *Hide* when you are in edit mode. This is useful for [detour](warehouse-app-detours.md) menu items, which need to be in a menu structure before they can be set up as detours in the *Mobile device steps*.</p><p>For more information, see [Mobile device menu](../warehousing/configure-mobile-devices-warehouse.md#mobile-device-menu). |
-|<p>**Module:** Warehouse management</p><p>**Enhancement:** *Location blocking causes policy*</p><p>**Feature management name:** *(None)*</p> | <p>Adds a new policy for the *Blocking causes* that can apply to each location as a reason for *Input blocked* and/or *Output blocked*. The new policy determines whether warehouse work location processing should also be blocked.</p><p>For more information, see [Define location blocking causes](../warehousing/configure-locations-wms-enabled-warehouse.md#define-location-blocking-causes). |
-|<p>**Module:** Warehouse management</p><p>**Enhancement:** *Minimum amount of characters required for license plate numbers*</p><p>**Feature management name:** *(None)*</p> | <p></p><p>By specifying a **Minimum amount of characters required for license plate numbers** on the *Warehouse management parameters* page, the system will prevent the creation of license plate Ids that are too short. This can help avoid the error of scanning a location barcode instead of a license plate barcode by a warehouse worker.</p><p>To enable this capability, go to the **Warehouse management parameters** page, open the **General** tab, expand the **License plates** FastTab and set **Restrict license plate by** equal to *Minimum length* and specify a number value in **Minimum amount of characters required for license plate numbers**.</p> |
-|<p>**Module:** Warehouse management</p><p>**Enhancement:** *Work transaction date policy*</p><p>**Feature management name:** *(None)*</p> | <p>With this feature, the warehouse work transaction dates can be adjusted to a different time zone than the one used by the system. It can be configured to change the transaction dates according to the time zones of the company, the site or the users preferred time zone.</p><p>For more information, see [Define general warehouse work policies](../warehousing/warehouse-configuration.md#warehouse-management-parameters-work). |
+| <p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *(Preview) Ubiquitous Buying*</p> | Enables an API for the Ubiquitous Buying eProcurement Dataverse application, to simplify purchase requisition creation for non-expert buyers. |
+| <p>**Module:** Master planning</p><p>**Feature management name:** *Exclude items without on-order quantity for Planning Optimization.*</p> | Adds an option to the master plan for excluding items without on-order quantity. This can be used for improving planning performance when there are many products defined and they rarely have demand but cannot be excluded using the recommended product lifecycle state. |
+
+
+
+
+
+
+
+
+
+
+| <p>**Module:** Master planning</p><p>**Feature management name:** *XXX*</p> |
+
+
+
+
+
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Hide mobile device menu items in the menus*</p><p>**Feature management name:** *(None)*</p> | <p>This feature lets you conceal your mobile device menu items from the mobile device menu layout by right clicking on them in the Mobile device menu page and choosing *Show* or *Hide* when you are in edit mode. This is useful for [detour](warehouse-app-detours.md) menu items, which need to be in a menu structure before they can be set up as detours in the *Mobile device steps*.</p><p>For more information, see [Mobile device menu](../warehousing/configure-mobile-devices-warehouse.md#mobile-device-menu). |
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Location blocking causes policy*</p><p>**Feature management name:** *(None)*</p> | <p>Adds a new policy for the *Blocking causes* that can apply to each location as a reason for *Input blocked* and/or *Output blocked*. The new policy determines whether warehouse work location processing should also be blocked.</p><p>For more information, see [Define location blocking causes](../warehousing/configure-locations-wms-enabled-warehouse.md#define-location-blocking-causes). |
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Minimum amount of characters required for license plate numbers*</p><p>**Feature management name:** *(None)*</p> | <p></p><p>By specifying a **Minimum amount of characters required for license plate numbers** on the *Warehouse management parameters* page, the system will prevent the creation of license plate Ids that are too short. This can help avoid the error of scanning a location barcode instead of a license plate barcode by a warehouse worker.</p><p>To enable this capability, go to the **Warehouse management parameters** page, open the **General** tab, expand the **License plates** FastTab and set **Restrict license plate by** equal to *Minimum length* and specify a number value in **Minimum amount of characters required for license plate numbers**.</p> |
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Work transaction date policy*</p><p>**Feature management name:** *(None)*</p> | <p>With this feature, the warehouse work transaction dates can be adjusted to a different time zone than the one used by the system. It can be configured to change the transaction dates according to the time zones of the company, the site or the users preferred time zone.</p><p>For more information, see [Define general warehouse work policies](../warehousing/warehouse-configuration.md#warehouse-management-parameters-work). |
 
 
 
