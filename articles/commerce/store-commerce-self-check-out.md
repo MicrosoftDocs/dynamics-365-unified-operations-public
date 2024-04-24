@@ -1,5 +1,5 @@
 ---
-title: Enable the Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
+title: Enable Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
 description: This article explains how to enable Self-checkout and related features in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview).
 author: anush6121
 ms.author: anvenkat 
@@ -10,19 +10,15 @@ ms.custom:
 ms.reviewer: johnmichalak
 ---
 
-# Enable the Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
+# Enable Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article explains how to enable Self-checkout (SCO) and related features in the Store Commerce app in Microsoft Dynamics 365 Commerce.
 
-## Enabling Self-checkout
+Point of sale customers can turn on kiosk-based Self-checkout on an existing Store Commerce app reusing existing workflows. This feature allows your shoppers to use Self-checkout terminals to scan or search for items, add items to a shopping cart, and pay fo the items using a credit card or debit card.
 
-To enable self-checkout, administrators need to go to **Feature Management**, check for new updates, select the **Configure POS self-checkout register** feature, and enable it.
-
-## Business value
-
-Point of sale customers can turn on kiosk-based Self-checkout on an existing Store Commerce app reusing existing workflows. This release allows your shoppers to use self-checkout terminals to scan or search for items, add the items to a shoppingcart, and pay fo the items using a credit card or debit card.
+To enable self-checkout, administrators need to go to **Feature Management**, check for new updates, select **Configure POS self-checkout register**, and enable it.
 
 ## Configuration in Headquarters
 
@@ -46,7 +42,7 @@ Go to **Released products** and set **Blocked at self-checkout** to **Yes**.
 
 To enable only the consumer applicable operations in a self-checkout kiosk, create a new, generic user that has limited permissions and is used to log in on the kiosk.
 
-A new **permission group** called **SCO kiosk** was created with limited permissions. Assigned to this permission group to the new, generic user you created to only allow for consumer operations such as scan and pay.
+A new **permission group** called **SCO kiosk** was created with limited permissions. Assign to this permission group to the new, generic user you created to only allow for consumer operations such as scan and pay.
 
 ### Login process
 
@@ -57,30 +53,29 @@ In order to set up the kiosk and the hardware peripherals during initial set up,
 
 ## Consumer facing out of box layout
 
-As part of the release, the shopper-facing layout has been configured with limited operations and is available in demo environment for export and import. Look for Self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
+The shopper-facing layout is configured with limited operations and is available in demo environment for export and import. Look for Self-checkout(SCO) layout in **Screen layouts** under **Retail and Commerce**.
 Assign the screen layout to the **Registers** set up. 
 
 > [!NOTE]
 > In demo data, Houston - Register 49 is set up as SCO register and SCO layout(SCO_POC1) has been assigned to it.
-Also, user 000815 is configured as SCO shopper/user. And user 000813 is configured as a SCO manager in demo data.
+>
+> Also, user 000815 is configured as SCO shopper/user. And user 000813 is configured as a SCO manager in demo data.
 
 ## Support for operations
 
 Following consumer operations are supported:
 
-- **Scan and add item to cart** - **Action**: **Product sale** Allows user to scan the items and add them to the transaction. If an item is restricted from self-checkout, there's an error message displayed to seek cashier's assistance.
+- **Scan and add item to cart** - **Action**: **Product sale** Allows the customer to scan the items and add them to the transaction. If an item is restricted from Self-checkout, an error message displays to seek assistance from a cashier.
 - **Add rewards number** - **Action**: **Add loyalty card** This operation invokes a numpad to enter the loyalty account number, so that the customer can be associated with the transaction.
 - **Search item code** - **Action**:**Product sale** This operation invokes a numpad to enter the item code of the product to add to cart if the barcode is missing or won’t scan.
 - **Search** - **Action**: **Search** This operation invokes product browsing screen to be able to select product from product categories to add to cart.
 - **Pay card**- **Action**: **Pay card** This operation enables payment of the transaction using credit/debit card only.
 
-Once payment is processed, there's an option to print receipts.
+Once payment is processed, there's an option to print a receipt.
 
 ## Assisted sale workflow
 
-To provide support for cashier assistance during self-checkout, a new operation **Call for assistance** has been created.
-
-A new action **Allow request for assistance** has been created and associated with this operation. When a consumer selects this operation, a manager or a store associate is required to sign/swipe in to perform one of the following elevated operations.
+The **Call for assistance** operation provides support for cashier assistance during Self-checkout. The **Allow request for assistance** action was created and associated with this operation. When a consumer selects this operation, a manager or a store associate is required to sign/swipe in to perform one of the following elevated operations.
 
 - **Void**: This operation has two options **Void transaction** to void the whole transaction and **Void item** to select the item to void the item. Only one item can be selected at a time to perform the operation.
 - **Tax override**: This operation has two options **Override line tax** to apply an exempt code and void tax for a line and **Override transaction** to void the tax for entire transaction.
