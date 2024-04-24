@@ -45,31 +45,26 @@ Some of these features aren't visible on your system until you turn them on in [
 
 | Feature enhancement | Description |
 |---|---|
-| <p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *(Preview) Ubiquitous Buying*</p> | Enables an API for the Ubiquitous Buying eProcurement Dataverse application, to simplify purchase requisition creation for non-expert buyers. |
+| <p>**Module:** Cost management</p><p>**Feature management name:** *Clean up "Potential conflicts - inventory and general ledger" and "Potential conflicts - work in process and general ledger" report data*</p> | Provides a way to clean up the **Potential conflicts - inventory and general ledger** and **Potential conflicts - work in process and general ledger** report storage data. |
+| <p>**Module:** Inventory and warehouse management</p><p>**Feature management name:** *Correct item that is not visible in released products form manually*</p> | Lets you manually correct items that aren't visible on the released products page. To use this feature, go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Correct item that is not visible in released products form manually**. |
+| <p>**Module:** Inventory and warehouse management</p><p>**Feature management name:** *Dimension history for documents report data clean up*</p> | Cleans up report data from the dimension history for documents, which includes purchase packing slips, purchase confirmations, sales packing slips, sales invoices, sales quotations, picking lists, and vendor invoices. |
 | <p>**Module:** Master planning</p><p>**Feature management name:** *Exclude items without on-order quantity for Planning Optimization.*</p> | Adds an option to the master plan for excluding items without on-order quantity. This can be used for improving planning performance when there are many products defined and they rarely have demand but cannot be excluded using the recommended product lifecycle state. |
-
-
-
-
-
-
-
-
-
-
-| <p>**Module:** Master planning</p><p>**Feature management name:** *XXX*</p> |
-
-
-
-
-
+| <p>**Module:** Master planning</p><p>**Feature management name:** *Freezing time fence for Planning optimization*</p> | Adds support for Freezing time fences for Planning optimization. |
+| <p>**Module:** Master planning</p><p>**Feature management name:** *(Preview) Inherit inventory status for planned intercompany demand orders*</p> | Adds an option in master plans that allows intercompany orders to inherit inventory status from intercompany supply instead of applying a default value. To use this functionality, inventory statuses must exist on both companies and be identified by inventory status ID. |
+| <p>**Module:** Master planning</p><p>**Feature management name:** *Item substitution for bill of materials in Planning optimization*</p> | Allows you to indicate substitute items that could be used in a bill of materials whenever there is not enough on-hand of the main item. Indicate products that could substitute the main component by priority and planning will automatically pick the one with available on-hand inventory following the priorities indicated in the plan group. This functionality is available for Planning Optimization and not for the deprecated planning engine. |
+| <p>**Module:** Master planning</p><p>**Feature management name:** *Transport days support for Planning Optimization*</p> | Enables transport days for Planning Optimization. Transport days are used to define the number of days between a given shipping warehouse and a destination address or other warehouse. |
+| <p>**Module:** Master planning</p><p>**Feature management name:** *Use rounding for unit of measures in Planning Optimization*</p> | Ensures that the rounding rule provided by the unit of measure of an item is respected when replenishing through a purchase order. If the rounded quantity doesn't cover the replenishment requirements, the rounding rule will be ignored and the quantity will be rounded up instead. |
+| <p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *(Preview) Ubiquitous Buying*</p> | Enables an API for the Ubiquitous Buying eProcurement Dataverse application, to simplify purchase requisition creation for non-expert buyers. |
+| <p>**Module:** Production control</p><p>**Feature management name:** *List view for reporting job progress from the production floor execution interface*</p> | Workers reporting job progress from the production floor execution interface can now choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time. Previously, only the detail view was available. |
+| <p>**Module:** Sales and marketing</p><p>**Feature management name:** *Recalculate delivery dates upon creation of direct delivery*</p> | Adds a parameter called **Recalculate delivery dates** to the **Create direct delivery** dialog available from the **Sales Orders** page. When this parameter is set to *Yes*, the system recalculates the requested receipt date and requested ship date when creating a direct delivery order line if the confirmed receipt date isn't set on the sales order header and the delivery date control isn't set to *None*. Furthermore, for an intercompany order, the **Update requested receipt date with a confirmed date** parameter on the intercompany policy is respected. This means that even if a confirmed receipt is set on the sales order, the header recalculation still occurs for an intercompany order if this parameter is turned on and the direct delivery date control isn't set to *None*. |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Hide mobile device menu items in the menus*</p><p>**Feature management name:** *(None)*</p> | <p>This feature lets you conceal your mobile device menu items from the mobile device menu layout by right clicking on them in the Mobile device menu page and choosing *Show* or *Hide* when you are in edit mode. This is useful for [detour](warehouse-app-detours.md) menu items, which need to be in a menu structure before they can be set up as detours in the *Mobile device steps*.</p><p>For more information, see [Mobile device menu](../warehousing/configure-mobile-devices-warehouse.md#mobile-device-menu). |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Location blocking causes policy*</p><p>**Feature management name:** *(None)*</p> | <p>Adds a new policy for the *Blocking causes* that can apply to each location as a reason for *Input blocked* and/or *Output blocked*. The new policy determines whether warehouse work location processing should also be blocked.</p><p>For more information, see [Define location blocking causes](../warehousing/configure-locations-wms-enabled-warehouse.md#define-location-blocking-causes). |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Minimum amount of characters required for license plate numbers*</p><p>**Feature management name:** *(None)*</p> | <p></p><p>By specifying a **Minimum amount of characters required for license plate numbers** on the *Warehouse management parameters* page, the system will prevent the creation of license plate Ids that are too short. This can help avoid the error of scanning a location barcode instead of a license plate barcode by a warehouse worker.</p><p>To enable this capability, go to the **Warehouse management parameters** page, open the **General** tab, expand the **License plates** FastTab and set **Restrict license plate by** equal to *Minimum length* and specify a number value in **Minimum amount of characters required for license plate numbers**.</p> |
+| <p>**Module:** Warehouse management</p><p>**Feature management name:** *Advanced address maintenance*</p> | Lets you delete unused historical addresses on the **Manage addresses** page. The address type selection is shown in a tab-based format instead of a dropdown list. |
+| <p>**Module:** Warehouse management</p><p>**Feature management name:** *(Preview) Context-aware worker summary screen in WMA*</p> | The AI-enhanced warehouse home screen in the Warehouse management mobile app leverages advanced generative AI technology to provide warehouse workers with a personalized dashboard at the beginning of their shifts. |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Work transaction date policy*</p><p>**Feature management name:** *(None)*</p> | <p>With this feature, the warehouse work transaction dates can be adjusted to a different time zone than the one used by the system. It can be configured to change the transaction dates according to the time zones of the company, the site or the users preferred time zone.</p><p>For more information, see [Define general warehouse work policies](../warehousing/warehouse-configuration.md#warehouse-management-parameters-work). |
 
-
-
+<!-- KFM: Check for these:
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you get more out of existing features.
@@ -77,6 +72,8 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | XXXX | XXXX |
+
+-->
 
 ## Additional resources
 
