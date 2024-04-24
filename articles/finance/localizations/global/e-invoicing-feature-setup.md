@@ -1,6 +1,6 @@
 ---
 title: Work with feature setups
-description: This article explains how to set up Electronic invoicing features.
+description: This article explains how to set up Electronic invoicing features (RCS).
 author: gionoder
 ms.date: 12/15/2021
 ms.topic: article
