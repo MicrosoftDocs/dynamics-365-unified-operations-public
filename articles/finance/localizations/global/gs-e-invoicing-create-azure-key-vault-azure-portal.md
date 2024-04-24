@@ -1,5 +1,5 @@
 ---
-title: Create an Azure key vault in the Azure portal
+title: Configure an Azure key vault in the Azure portal
 description: This article explains how to create a Microsoft Azure key vault for Electronic invoicing.
 author: ilikond
 ms.date: 01/29/2024
@@ -15,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Create an Azure key vault in the Azure portal
+# Configure an Azure key vault in the Azure portal
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
