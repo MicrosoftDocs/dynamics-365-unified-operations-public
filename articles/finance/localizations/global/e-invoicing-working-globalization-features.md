@@ -1,6 +1,6 @@
 ---
 title: Globalization feature components (RCS)
-description: This article provides an overview of Globalization feature components.
+description: This article provides an overview of Globalization feature components (RCS).
 author: gionoder
 ms.date: 02/11/2022
 ms.topic: article
