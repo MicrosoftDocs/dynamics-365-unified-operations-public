@@ -160,7 +160,7 @@ In the Danish SAF-T report, main accounts that are used in Finance must be assoc
 
 ## Export attachments
 
-As of Finance version 10.0.40, the **Export attachments** feature is available in Document management. Use this feature to export files that are attached to records of tables in Finance to supplement your SAF-T file as required. For more information, see [Export attachments](../../../fin-ops-core/dev-itpro/organization-administration/configure-document-management#export-attachments).
+As of Finance version 10.0.40, the **Export attachments** feature is available in Document management. Use this feature to export files that are attached to records of tables in Finance to supplement your SAF-T file as required. For more information, see [Export attachments](../../../fin-ops-core/dev-itpro/organization-administration/configure-document-management#export-attachments.md).
 
 Selection of tables to export attachments for is company-specific and might depend on the particular request. For example, to supplement sections of source documents that are reported in SAF-T, select the following set of tables in Finance to export attachments.
 
