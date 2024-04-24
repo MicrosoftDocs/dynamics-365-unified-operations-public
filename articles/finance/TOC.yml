@@ -1828,10 +1828,6 @@
                 href: localizations/france/emea-reporting-multiple-vat-registrations-fr.md
               - name: Germany 
                 href: localizations/germany/emea-reporting-multiple-vat-registrations-de.md
-              - name: Italy 
-                href: localizations/italy/emea-reporting-multiple-vat-registrations-it.md
-              - name: Lithuania 
-                href: localizations/lithuania/emea-reporting-multiple-vat-registrations-lt.md
               - name: Netherlands 
                 href: localizations/netherlands/emea-reporting-multiple-vat-registrations-nl.md
               - name: Norway 
@@ -3584,18 +3580,18 @@
             href: localizations/lithuania/emea-ltu-fixed-asset-repair-statement.md
           - name: Generate a fixed asset transfer between warehouses document
             href: localizations/lithuania/lt-00003-fixed-asset-transfer.md
-          - name: EU sales list
-            href: localizations/lithuania/emea-ltu-eu-sales-list.md
+          - name: VAT statement details
+            href: localizations/lithuania/emea-ltu-vat-statement-details.md
           - name: Lithuanian Intrastat
             href: localizations/lithuania/emea-ltu-intrastat.md
-          - name: VAT declaration
-            href: localizations/lithuania/emea-ltu-vat-declaration-lithuania.md
           - name: i.SAF reporting for Lithuania
             href: localizations/lithuania/emea-ltu-isaf.md
           - name: Standard Audit File for Tax (SAF-T) for Lithuania
             href: localizations/lithuania/emea-ltu-saf-t.md
           - name: Set up the transfer documents for goods movement inside a company
             href: localizations/europe/set-up-transfer-documents-goods-movement-inside-company.md
+          - name: EU sales list
+            href: localizations/lithuania/emea-ltu-eu-sales-list.md
         - name: Malaysia
           items:
           - name: Malaysia overview
