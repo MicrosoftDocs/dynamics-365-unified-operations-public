@@ -1,6 +1,6 @@
 ---
-title: Work with Electronic reporting (ER) configurations (preview)
-description: This article provides an overview of the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace (preview).
+title: Work with Electronic reporting (ER) configurations 
+description: This article provides an overview of the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -15,10 +15,9 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Work with Electronic reporting (ER) configurations (preview)
+# Work with Electronic reporting (ER) configurations
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Electronic reporting (ER) configurations are one of the main sets of components of Electronic invoicing features. An ER configuration contains the setup of the file structure and a set of transformation rules for transforming data in two ways:
 
