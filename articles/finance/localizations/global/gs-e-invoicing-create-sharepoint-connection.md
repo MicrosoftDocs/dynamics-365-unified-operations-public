@@ -1,5 +1,5 @@
 ---
-title: Configure a SharePoint connection
+title: Create a SharePoint connection
 description: This article explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site.
 author: ilikond
 ms.date: 01/29/2024
@@ -15,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure a SharePoint connection
+# Create a SharePoint connection
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
