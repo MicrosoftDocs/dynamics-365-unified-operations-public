@@ -4,10 +4,8 @@ description: This article contains information about how to troubleshoot the Reg
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01

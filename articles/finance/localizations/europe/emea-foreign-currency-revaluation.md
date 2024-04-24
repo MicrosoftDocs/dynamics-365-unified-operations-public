@@ -6,15 +6,12 @@ description: This article provides information about foreign currency revaluatio
 author: panolte
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
 # ms.search.industry: 

@@ -4,10 +4,8 @@ description: RB/SL is a depreciation method that is used in France. Depreciation
 author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: France
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28

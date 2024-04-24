@@ -3,12 +3,9 @@
 
 title: Correct a free text invoice
 description: This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
-author: abruer
+author: prabhatb
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustFreeInvoice
@@ -20,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: prabhatb
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

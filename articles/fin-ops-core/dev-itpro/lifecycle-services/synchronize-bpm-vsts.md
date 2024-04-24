@@ -4,16 +4,13 @@ description: This article provides information about how to synchronize a BPM li
 author: amarshall
 ms.date: 09/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global

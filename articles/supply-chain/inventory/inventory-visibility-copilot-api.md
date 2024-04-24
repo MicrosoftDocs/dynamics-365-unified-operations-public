@@ -45,9 +45,15 @@ And Copilot could respond with the following answer:
 
 ## Prerequisites
 
-To use natural-language inventory search with Copilot, your system must meet the following requirement:
+To use natural-language inventory search with Copilot API, your system must meet the following requirement:
 
 - You must be running Inventory Visibility version 1.2.2.54 or newer.
+
+To use the Copilot sidecar panel in the Inventory Visibility app, your system must meet the following requirement:
+
+- You must be running Inventory Visibility version 1.2.2.127 or newer.
+
+For instructions on how to check your Inventory Visibility version and how to update to the latest version, see [Update the Inventory Visibility Add-in](inventory-visibility-setup.md#update-add-in)
 
 ## Country/region availability and language support
 
@@ -60,7 +66,16 @@ Users of the Inventory Visibility app can use Copilot to ask questions about inv
 
 ### Open the Copilot panel
 
-To open the Copilot panel from anywhere in the Inventory Visibility app, select the **Copilot** button :::image type="icon" source="media/copilot-icon.png" border="false"::: in the top-right corner.
+Follow these steps to open the Copilot sidecar panel in the Inventory Visibility app.
+
+1. In Power Apps, open the **Inventory Visibility** app.
+1. In the **Address** field of your browser, append the following parameters to the URL to enable the Copilot sidecar panel to load.
+
+    ```text
+    &flags=FCB.InitializeCopilotSidePaneOnBoot%3Dtrue%2CFCB.UsePVAInCopilot%3Dtrue%2CFCB.IsPPAPIHostedBotEnabled%3Dtrue&useServerResources=true
+    ```
+
+1. To open the panel, select the **Copilot** button :::image type="icon" source="media/copilot-icon.png" border="false"::: in the top-right corner.
 
 ### Chat with Copilot
 
@@ -98,7 +113,6 @@ The following example shows sample body content.
 ```
 
 You can choose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
-
 
 ## See also
 

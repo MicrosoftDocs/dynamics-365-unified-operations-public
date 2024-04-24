@@ -6,8 +6,6 @@ description: This procedure shows how to create a cost rollup policy and create 
 author: panolte
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

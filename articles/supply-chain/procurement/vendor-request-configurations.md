@@ -3,11 +3,9 @@
 
 title: Vendor request configurations
 description: This article describes the fields that are required to be populated in a new vendor request.
-author: GalynaFedorova
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -19,7 +17,7 @@ ms.reviewer: kamaybac
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2017-12-31 
 ms.dyn365.ops.version: 7.3
 ---

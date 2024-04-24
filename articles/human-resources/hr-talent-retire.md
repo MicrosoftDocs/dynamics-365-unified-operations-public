@@ -6,9 +6,6 @@ description: This article describes the retirement of the Dynamics 365 Talent - 
 author: twheeloc
 ms.date: 01/27/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceDocumentRuleType, BenefitWorkspace, HcmBenefitSummaryPart

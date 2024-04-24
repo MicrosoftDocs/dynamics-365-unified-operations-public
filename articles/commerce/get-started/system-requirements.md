@@ -29,7 +29,7 @@ The web application can run in any of the following web browsers that run on the
 - Apple Safari (latest publicly available version)
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Store Commerce for web device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
+> It is possible for the Safari browser to show an error during device activation of a Store Commerce for web device due to a Microsoft Entra token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
 >
 > As of release 10.0.17, Internet Explorer is no longer a supported web browser.
 

@@ -4,8 +4,6 @@ description: This article is an overview of the compliance guidance that is prov
 author: BrianShook
 ms.date: 01/08/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

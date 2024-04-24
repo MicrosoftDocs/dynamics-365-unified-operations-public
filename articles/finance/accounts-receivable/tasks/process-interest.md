@@ -6,8 +6,6 @@ description: This procedure shows how to create, print, and post interest notes.
 author: ShivamPandey-msft
 ms.date: 09/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

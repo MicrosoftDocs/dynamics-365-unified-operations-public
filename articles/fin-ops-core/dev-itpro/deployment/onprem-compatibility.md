@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
-description: This article explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
+description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 9/21/2022
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2021-06-30 
+ms.topic: article
+ms.date: 02/16/2024
+# ms.custom: [used by loc for topics migrated from the wiki]
+audience: IT Pro
+ms.reviewer: johnmichalak
+ms.search.region: Global
+ms.search.validFrom: 2021-06-30
+ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 44 
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
@@ -38,11 +26,13 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft Windows Server 2019 | 10.0.17          | Not available |
+| Microsoft Windows Server 2022 | 10.0.38          | Not available |
+| Microsoft Windows Server 2019 | 10.0.17          | 10.0.41       |
 | Microsoft Windows Server 2016 | Original release | 10.0.26       |
 
 > [!NOTE]
 > Only en-US operating system installations are supported.
+> These software requirements are relevant to all non-Microsoft managed environments, including development boxes, cloud-hosted environments, and similar setups.
 
 ## Microsoft SQL Server
 
@@ -56,7 +46,8 @@ This section covers the following SQL Server components:
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft SQL Server 2019     | 10.0.21          | Not available |
+| Microsoft SQL Server 2022 (CU12)     | 10.0.39          | Not available |
+| Microsoft SQL Server 2019     | 10.0.21          | 10.0.44       |
 | Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
 | Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
 
@@ -69,11 +60,12 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 
 | Version                                                     | Supported since  | End of life   |
 |-------------------------------------------------------------|------------------|---------------|
+| Active Directory Federation Services on Windows Server 2022 | 10.0.38          | Not available |
 | Active Directory Federation Services on Windows Server 2019 | 10.0.17          | Not available |
 | Active Directory Federation Services on Windows Server 2016 | Original release | 10.0.26       |
 
 > [!IMPORTANT]
-> - AD FS on Windows Server 2016 only supports authentication through the Azure Active Directory Authentication Library (ADAL).
+> - AD FS on Windows Server 2016 only supports authentication through the Microsoft Entra Authentication Library (ADAL).
 > - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019 
 > (MSAL). For more information, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 > - After July 1, 2022, any customers still using AD FS on Windows Server 2016 will no longer be able to use the Office add-ins. This is irrespective of the Microsoft Dynamics 365 Finance + Operations (on-premises) version that they are running.

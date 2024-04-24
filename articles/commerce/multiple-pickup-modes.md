@@ -6,9 +6,6 @@ description: This article explains the functionality in Microsoft Dynamics 365 C
 author: hhainesms
 ms.date: 12/06/2022
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

@@ -4,10 +4,8 @@ description: This article explains how depreciation is calculated for additional
 author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28

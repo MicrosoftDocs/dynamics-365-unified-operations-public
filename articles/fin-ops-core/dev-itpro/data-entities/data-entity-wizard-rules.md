@@ -6,9 +6,6 @@ description: This article provides information about the natural key expansion o
 author: peakerbl
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -29,9 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data entity wizard rules
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
 

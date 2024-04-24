@@ -6,8 +6,6 @@ description: This article provides an overview of how to work with service order
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,15 +6,13 @@ description: This procedure walks you through setting up OIOUBL electronic invoi
 author: mrolecki
 ms.date: 02/02/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: CustParameters, OMLegalEntity, UnitOfMeasure, ExtCodeTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark

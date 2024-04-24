@@ -4,8 +4,6 @@ description: This article describes some best practices to follow when developin
 author: samjarawan
 ms.date: 10/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

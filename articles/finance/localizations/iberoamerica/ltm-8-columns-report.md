@@ -4,7 +4,7 @@ description: The article describes how to set up and use the Chile 8 Columns rep
 author: Cpicon85 
 ms.date: 9/29/2023 
 ms.topic: article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon 
 ms.custom: bap-template
 ---

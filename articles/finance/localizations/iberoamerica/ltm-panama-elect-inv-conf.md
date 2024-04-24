@@ -4,7 +4,7 @@ description: This article explains how to generate electronic invoices in XML fo
 author: Fhernandez0088
 ms.date: 10/20/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---

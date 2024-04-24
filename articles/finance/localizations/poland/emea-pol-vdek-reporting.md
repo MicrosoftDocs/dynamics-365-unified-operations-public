@@ -4,10 +4,8 @@ description: This article explains how to run a VAT declaration with registers (
 author: liza-golub
 ms.date: 07/11/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: egolub
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable

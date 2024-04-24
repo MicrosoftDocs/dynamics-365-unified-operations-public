@@ -1,27 +1,16 @@
 ---
-# required metadata
-
-title: View vendor invoice automation results (preview)
-description: This article explains how to view the status of vendor invoices that are in the automated submit-to-workflow process.
-author: abruer
-ms.date: 10/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+title: View vendor invoice automation results 
+description: Learn about how to view the status of vendor invoices that are in the automated submit-to-workflow process, including overviews of various statuses.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 10/16/2020
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-09-08
+ms.search.form:
 ms.dyn365.ops.version: 10.0.14
 ---
 

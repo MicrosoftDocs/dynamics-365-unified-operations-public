@@ -6,16 +6,13 @@ description: This article provides information about how to set up Goods and Ser
 author: mrolecki
 ms.date: 08/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfiguration_MY
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
 ms.search.region: Malaysia

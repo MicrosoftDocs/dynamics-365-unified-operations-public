@@ -6,9 +6,6 @@ description: This article shows how a journal is automatically balanced when a b
 author: kweekley
 ms.date: 07/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerParameters

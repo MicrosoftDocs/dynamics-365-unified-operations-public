@@ -6,8 +6,6 @@ description: This article explains maintenance plans in Asset Management.
 author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

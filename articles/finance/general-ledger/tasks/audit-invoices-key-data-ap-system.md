@@ -6,8 +6,6 @@ description: This article shows how to audit invoices and key data in accounts p
 author: kweekley
 ms.date: 03/24/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

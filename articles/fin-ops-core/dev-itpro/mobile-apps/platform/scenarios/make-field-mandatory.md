@@ -4,8 +4,6 @@ description: This article explains how to use workspace classes to make a field 
 author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

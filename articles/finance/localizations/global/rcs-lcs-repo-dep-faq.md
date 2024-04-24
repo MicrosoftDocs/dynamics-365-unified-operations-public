@@ -4,10 +4,8 @@ description: This article provides information about the deprecation of Microsof
 author: kfend
 ms.date: 10/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2020-05-01
@@ -18,6 +16,7 @@ ms.search.form: RCS, Regulatory Configuration Services, Localization, LCS storag
 # Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 The use of Microsoft Dynamics Lifecycle Services (LCS) as a storage repository for Electronic reporting (ER) configurations is being deprecated. This deprecation will involve the following changes:
 

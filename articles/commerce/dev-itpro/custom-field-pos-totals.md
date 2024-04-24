@@ -4,8 +4,6 @@ description: This article explains how to add a new custom field to the Totals p
 author: josaw1
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -76,7 +74,7 @@ You must then complete this step in the POS extension project.
 
 10. Select the **1440x960 – Full** layout size, and then select **Layout designer**.
 11. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
-12. After the designer is installed, you're asked for Azure Active Directory (Azure AD) credentials. Enter the information to start the designer.
+12. After the designer is installed, you're asked for Microsoft Entra credentials. Enter the information to start the designer.
 13. In the designer, drag the **Totals panel** control from the left pane to the screen layout. If the layout already includes a **Totals** panel, the control appears dimmed in the left pane.
 14. In the screen layout, right-click the **Totals panel**, and then select **Customize**.
 15. In the **Customization - Totals panel** dialog box, the **SAMPLE** custom field should appear in the **Available fields** list. Move it to either the left column or the right column by using the arrow buttons.

@@ -6,16 +6,13 @@ description: This article provides information about the Transactions on settlem
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustVendTransPostingLog_RU
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 # ms.search.industry: 

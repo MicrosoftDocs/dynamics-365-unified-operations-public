@@ -4,7 +4,7 @@ description: This article provides information about how to use the LATAM extens
 author: cpicon85 
 ms.date: 01/31/2023
 ms.topic: article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon 
 ms.custom: bap-template
 --- 

@@ -6,8 +6,6 @@ description: This article provides a procedure that shows how to create service 
 author: sorenva
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

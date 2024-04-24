@@ -6,9 +6,6 @@ description: This article provides an overview of the setup of the Fixed assets 
 author: moaamer
 ms.date: 01/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetTable

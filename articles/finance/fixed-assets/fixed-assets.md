@@ -4,10 +4,9 @@
 title: Fixed assets home page
 description: This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. 
 author: moaamer
-ms.date: 08/31/2017
+ms.date: 03/22/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen 
 
 # optional metadata
 
@@ -15,7 +14,7 @@ ms.search.form: AssetWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
@@ -33,12 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
 
-You can set up and enter acquisition information for fixed assets, and then manage the assets by depreciating them and setting a 
-capitalization threshold to determine depreciation. You can calculate adjustments to the fixed assets, and also dispose of them. 
-When you use General ledger together with Fixed assets, you can view the current value of all fixed assets. The way in which fixed 
-assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region. 
-Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and 
-write-downs of fixed assets. The Fixed assets functionality incorporates many of these standards and rules.
+You can set up and enter acquisition information for fixed assets, and then manage the assets by depreciating them and setting a capitalization threshold to determine depreciation. You can calculate adjustments to the fixed assets, and also dispose of them. When you use General ledger together with Fixed assets, you can view the current value of all fixed assets. The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region. Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets. The Fixed assets functionality incorporates many of these standards and rules.
 
 [![Business process.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
@@ -55,9 +49,6 @@ Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to
 You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 finance and operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.
-
-#### Task guides
-Additional help is available as task guides. To access task guides, click the Help button on any page.
 
 #### Videos
 

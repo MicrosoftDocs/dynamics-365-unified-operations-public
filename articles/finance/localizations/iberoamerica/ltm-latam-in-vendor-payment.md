@@ -4,7 +4,7 @@ description: This article explains how to use payment methods in vendor payments
 author: Cpicon85 
 ms.date: 10/18/2023 
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon 
 ms.custom: bap-template
 ---

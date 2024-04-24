@@ -6,8 +6,6 @@ description: Modify a Service BOM.
 author: sorenva
 ms.date: 05/03/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

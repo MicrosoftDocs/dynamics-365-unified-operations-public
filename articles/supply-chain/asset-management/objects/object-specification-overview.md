@@ -6,8 +6,6 @@ description: This article provides an overview of asset attributes in Asset Mana
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -17,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: ["2214"]
+ms.custom:
 ms.collection: get-started
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global

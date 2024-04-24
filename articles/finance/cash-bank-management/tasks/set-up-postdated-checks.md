@@ -6,8 +6,6 @@ description: This article explains how to specify whether to post journal entrie
 author: kweekley
 ms.date: 11/15/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

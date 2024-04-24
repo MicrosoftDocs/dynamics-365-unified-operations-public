@@ -6,16 +6,13 @@ description: This article reviews the workflow system in finance and operations.
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 0e3aa2cd-2327-45ba-bf38-0ef543fa8f67
 ms.search.region: Global

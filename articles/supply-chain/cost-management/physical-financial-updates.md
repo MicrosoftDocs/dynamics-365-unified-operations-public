@@ -6,8 +6,6 @@ description: This article provides an overview of which types of transactions in
 author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

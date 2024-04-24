@@ -4,10 +4,8 @@ description: This article explains how to configure and generate the withholding
 author: AdamTrukawka
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: 2021-12-02

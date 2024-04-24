@@ -6,9 +6,6 @@ description: This article describes the default report for income statements. It
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

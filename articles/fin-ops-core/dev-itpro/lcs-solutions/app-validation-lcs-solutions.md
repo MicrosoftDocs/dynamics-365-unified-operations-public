@@ -4,10 +4,8 @@ description: This article provides information about the requirements that are u
 author: sericks007
 ms.date: 04/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41

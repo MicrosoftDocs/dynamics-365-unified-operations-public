@@ -4,10 +4,8 @@ description: This article explains how to set up and use vehicles and realty as 
 author: AdamTrukawka
 ms.date: 03/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2018-10-28

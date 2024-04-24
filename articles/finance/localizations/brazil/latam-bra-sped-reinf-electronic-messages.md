@@ -4,10 +4,8 @@ description: This article explains how to set up electronic messages for SPED-Re
 author: AdamTrukawka
 ms.date: 04/09/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

@@ -6,8 +6,6 @@ description: This procedure shows how to find the price and/or discount for a pr
 author: Henrikan
 ms.date: 11/10/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

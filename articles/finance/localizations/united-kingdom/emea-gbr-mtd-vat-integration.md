@@ -4,10 +4,8 @@ description: This article explains how to set up and use the Making Tax Digital 
 author: AdamTrukawka
 ms.date: 09/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: United Kingdom
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28

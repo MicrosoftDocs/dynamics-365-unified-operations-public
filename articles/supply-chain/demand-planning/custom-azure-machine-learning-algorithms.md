@@ -1,5 +1,5 @@
 ---
-title: Use custom Azure Machine Learning algorithms in Demand planning (preview)
+title: Use custom Azure Machine Learning algorithms in Demand planning
 description: This article describes how to continue to use custom Microsoft Azure Machine Learning algorithms that you already use for demand forecasting in Dynamics 365 Supply Chain Management while you use the Demand planning app.
 author: t-benebo
 ms.author: benebotg
@@ -10,20 +10,17 @@ ms.date: 11/15/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
-# Use your own custom Azure Machine Learning algorithms in Demand planning (preview)
+# Use your own custom Azure Machine Learning algorithms in Demand planning
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app.
 
 This article describes the setup that is required to enable the Demand planning app to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Set up a new Microsoft Entra application
 
@@ -35,28 +32,40 @@ Follow the steps in this section to create a new Microsoft Entra application in 
 1. In the **Certificates & secrets** section of the new Microsoft Entra application, create a secret for the application as described in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 1. Make a note of the application ID and its secret. You'll need these details later.
 
-## Assign access for the new Microsoft Entra application to the Azure Machine Learning workspace
+## Assign access for the new Microsoft Entra application to the Azure Machine Learning workspace and Azure Machine Learning workspace storage account
 
 Follow these steps to assign access for the new Microsoft Entra application to the Azure Machine Learning workspace.
 
 1. In the [Azure portal](https://portal.azure.com/), go to the resource group that contains your Azure Machine Learning workspace.
-1. On the left navigation, select **Access control**.
+1. On the left navigation pane, select **Access control**.
 1. On the **Role assignments** tab, select **Add** to add a new role assignment.
-1. On the **Privileged administrator roles** tab, select **Contributor**.
+1. On the **Privileged administrator roles** tab, select *Contributor*.
 1. Select **Next**.
 1. Select the **User, group, or service principal** option.
 1. Select **Select members**. Use the filter on the menu on the right to find the name of the Microsoft Entra application that you created, and then select it.
 1. The application now appears in the **Members** list. Select **Next**.
 1. On the **Review \+ assign** tab, select **Next**.
 
-The application is now listed in the **All** section of the **Role assignments** tab.
+Follow these steps to assign access for the new Microsoft Entra application to the storage account that Azure Machine Learning workspace is connected to.
+
+1. In the [Azure portal](https://portal.azure.com/), go to the resource group that contains your storage account (the storage account that your Azure Machine Learning workspace is using).
+1. On the left navigation pane, select **Access control**.
+1. On the **Role assignments** tab, select **Add** to add a new role assignment.
+1. On the **Job function roles** tab, select *Storage account contributor* and *Storage blob data contributor*. To find these roles quickly, enter *storage contributor* into the **Search** field.
+1. Select **Next**.
+1. Select the **User, group, or service principal** option.
+1. Select **Select members**. Use the filter on the menu on the right to find the name of the Microsoft Entra application that you created, and then select it.
+1. The application now appears in the **Members** list. Select **Next**.
+1. On the **Review \+ assign** tab, select **Next**.
+
+The application is now listed in the **All** section of the **Role assignments** tab on both the Azure Machine Learning workspace and the storage account.
 
 ## Connect to the Azure Machine Learning service from Demand planning
 
 Follow these steps to set up the Azure Machine Learning service connection in Demand planning.
 
 1. Sign in to the Demand planning app.
-1. On the left navigation, select **Custom Azure ML**.
+1. On the left navigation pane, select **Custom Azure ML**.
 1. Select the plus sign (**&plus;**) button to create a new connection, and set the following fields for it:
 
     - **Name** – Enter a name for the connection.
@@ -73,6 +82,6 @@ Follow these steps to set up a forecast that uses your own Azure Machine Learnin
 
 1. Create a new forecast profile as described in [Create and manage forecast profiles](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
-1. After you've created and saved the profile, select the **Forecast model** tab. (For more information, see [Design forecast models (preview)](design-forecast-models.md).)
+1. After you've created and saved the profile, select the **Forecast model** tab. (For more information, see [Design forecast models](design-forecast-models.md).)
 1. Set up your model. Include a **Finance and operations – Azure Machine Learning** tile in the position where you want to run your algorithm.
 1. Complete the model by adding a **Save** block.

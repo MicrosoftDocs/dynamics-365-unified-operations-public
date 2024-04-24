@@ -6,8 +6,6 @@ description: This article explains the maintenance worker calendar in relation t
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

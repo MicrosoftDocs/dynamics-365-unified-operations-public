@@ -6,9 +6,6 @@ description: This article explains relational modeling concepts using virtual en
 author: Sunil-Garg
 ms.date: 09/16/2022
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

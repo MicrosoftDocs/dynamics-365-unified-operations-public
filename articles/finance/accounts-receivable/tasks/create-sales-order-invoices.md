@@ -3,11 +3,9 @@
  
 title: Create sales order invoices
 description: This article describes how to invoice a sales order, including merging invoices and batch processing. 
-author: ShivamPandey-msft
+author: prabhatb
 ms.date: 03/25/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -19,7 +17,7 @@ ms.reviewer: twheeloc
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: prabhatb
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

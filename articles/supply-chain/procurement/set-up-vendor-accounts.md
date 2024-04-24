@@ -1,8 +1,8 @@
 ---
 title: Set up vendor accounts
 description: This article describes the types of information that you must specify when you create a new vendor account.
-author: GalynaFedorova
-ms.author: gfedorova
+author: Henrikan
+ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 ms.topic: how-to
@@ -57,8 +57,6 @@ You can create vendor contacts from scratch. Alternatively, you can copy details
 > Adding a contact for a vendor isn't the same as adding contact information for that vendor. Although you might add general contact information for a vendor, you might also have several specific people who are contacts at that company, and who all have their own contact information.  
 
 You can't delete a contact person record if the contact is referenced on a document. Instead, you can inactivate the contact.  
-
-You can add vendor contacts to your personal contacts in Microsoft 365. However, you must first set up synchronization between Supply Chain Management and Microsoft 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
 
 ## Vendors in different legal entities
 

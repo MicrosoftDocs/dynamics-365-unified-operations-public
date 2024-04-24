@@ -6,8 +6,6 @@ description: Create a trading partner code and assign it to a government agency 
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

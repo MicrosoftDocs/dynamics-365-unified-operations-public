@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Database Movement API - Versioning and support
-description: This article provides an overview of the versioning and breaking change policies for the Database Movement application programming interface (API).
+description: Learn about an overview of the versioning and breaking change policies for the Database Movement application programming interface (API) about versioning and support.
 author: laneswenka
-ms.date: 02/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/20/2020 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.0
-
 ---
 
 # Versioning and support

@@ -4,8 +4,6 @@ description: This article covers the order lookup module and explains how to con
 author: bicyclingfool
 ms.date: 09/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

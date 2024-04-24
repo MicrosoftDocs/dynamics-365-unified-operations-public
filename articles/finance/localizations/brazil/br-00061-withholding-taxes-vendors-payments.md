@@ -4,10 +4,8 @@ description: You can use the Journal voucher page to enter and post payments tha
 author: AdamTrukawka
 ms.date: 06/26/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-06-30

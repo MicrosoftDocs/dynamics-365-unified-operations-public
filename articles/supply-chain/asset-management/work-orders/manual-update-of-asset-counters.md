@@ -6,8 +6,6 @@ description: This article describes manual update of asset counters in Asset Man
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

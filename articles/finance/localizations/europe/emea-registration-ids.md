@@ -4,10 +4,8 @@ description: This article provides information about setting up and using regist
 author: kfend
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30

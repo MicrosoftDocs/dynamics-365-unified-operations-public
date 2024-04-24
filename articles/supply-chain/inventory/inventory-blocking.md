@@ -6,8 +6,6 @@ description: This article provides an overview of inventory blocking, which is p
 author: yufeihuang
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

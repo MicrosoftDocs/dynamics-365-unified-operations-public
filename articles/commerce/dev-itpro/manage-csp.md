@@ -4,8 +4,6 @@ description: This article describes how to manage Content Security Policy (CSP) 
 author: samjarawan
 ms.date: 11/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

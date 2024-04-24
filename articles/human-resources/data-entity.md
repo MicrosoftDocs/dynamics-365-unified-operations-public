@@ -6,9 +6,6 @@ description: This article provides information about the data entities and templ
 author: jcart
 ms.date: 01/26/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

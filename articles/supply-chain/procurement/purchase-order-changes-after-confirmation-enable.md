@@ -10,6 +10,8 @@ ms.date: 07/06/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Enable Copilot support for managing changes to confirmed purchase orders

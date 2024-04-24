@@ -6,9 +6,6 @@ description: This article provides information about the Single Euro Payments Ar
 author: ShivamPandey-msft
 ms.date: 08/22/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable

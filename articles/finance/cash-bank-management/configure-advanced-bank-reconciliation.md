@@ -6,9 +6,6 @@ description: Advanced bank reconciliation allows you to import electronic bank s
 author: angelad116
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  BankReconciliationMatchRule, BankReconciliationMatchRuleSet

@@ -4,8 +4,6 @@ description: This article provides information about the inquiries and reports f
 author: AdamTrukawka
 ms.date: 08/17/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: 
 ms.search.region: Russia

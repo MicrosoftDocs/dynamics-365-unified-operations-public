@@ -4,10 +4,8 @@ description: This article explains how to generate fiscal documents for a load f
 author: AdamTrukawka
 ms.date: 06/05/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2017-12-31

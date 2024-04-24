@@ -68,8 +68,8 @@ Next, on the **Key Vault parameters** page, you must specify the parameters for 
 
 - **Name** and **Description** – The name and description of the Key Vault storage.
 - **Key Vault URL** – The URL of the Key Vault storage.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
+- **Key Vault client** – An interactive client ID of the Microsoft Entra application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
+- **Key Vault secret key** – A secret key that is associated with the Microsoft Entra application that is used for authentication in the Key Vault storage.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
 Next, you must configure a connector for your certificates that are stored in Key Vault or local certificate storage. This connector is used for signing on the channel side.

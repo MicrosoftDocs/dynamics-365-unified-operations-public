@@ -4,10 +4,8 @@ description: This article provides information about the Fixed assets module for
 author: AdamTrukawka
 ms.date: 12/02/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2019-01-04

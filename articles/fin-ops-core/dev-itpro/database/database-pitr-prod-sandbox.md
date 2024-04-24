@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Point-in-time restore of the production database to a sandbox environment
-description: This article describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
+description: Learn how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-ms.date: 11/06/2023
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
-audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: sericks
-# ms.tgt_pltfrm:
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 11/06/2023
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-02-29
+ms.search.form:
 ms.dyn365.ops.version: Platform update 33
-
 ---
 
 # Point-in-time restore of the production database to a sandbox environment
@@ -62,7 +50,6 @@ To determine the root cause of the failure, use the **Environment change history
 When you refresh a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, some elements of the database aren't copied over to the target environment. Here are some examples:
 
 * Email addresses in the LogisticsElectronicAddress table.
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 * Simple Mail Transfer Protocol (SMTP) Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.

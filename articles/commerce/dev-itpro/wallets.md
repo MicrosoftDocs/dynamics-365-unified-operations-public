@@ -6,9 +6,6 @@ description: This article provides an overview of wallet payment support for Mic
 author: BrianShook
 ms.date: 03/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
