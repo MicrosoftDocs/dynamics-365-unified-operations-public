@@ -43,7 +43,7 @@ To restrict specific products from being offered at SCO, follow this step.
 
 ## SCO device activation and kiosk sign-in
 
-To enable only operations that are applicable to consumers on an SCO kiosk, create a new, generic user that has limited permissions and that's used to sign in on the kiosk.
+To enable only operations that are applicable to consumers on an SCO kiosk, create a new, generic user that has limited permissions and is used to sign in on the kiosk.
 
 A new **SCO kiosk** permission group was created that has limited permissions. Assign this permission group to the new, generic user that you created. The user can then perform only consumer operations such as scan and pay.
 
