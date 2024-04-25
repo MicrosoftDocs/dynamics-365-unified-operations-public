@@ -4,8 +4,6 @@ description: This article reviews the different options for content delivery net
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

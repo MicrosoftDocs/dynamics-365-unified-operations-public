@@ -4,8 +4,6 @@ description: Use this procedure to set up Belgisch Luxemburgs Wissel Instituut (
 author: AdamTrukawka
 ms.date: 07/12/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Belgium

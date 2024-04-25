@@ -7,8 +7,6 @@ description: This article provides information about the Asset management mobile
 author: johanhoffmann 
 ms.date: 05/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

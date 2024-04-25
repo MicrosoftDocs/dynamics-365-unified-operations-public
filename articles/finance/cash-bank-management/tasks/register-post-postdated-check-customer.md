@@ -6,8 +6,6 @@ description: You can register details of a postdated check received from a custo
 author: kweekley
 ms.date: 11/15/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

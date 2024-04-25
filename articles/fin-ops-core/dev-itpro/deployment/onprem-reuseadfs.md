@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.date: 03/03/2020
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-03-31

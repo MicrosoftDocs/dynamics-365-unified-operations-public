@@ -6,9 +6,6 @@ description: This article provides details about the integration of Microsoft Dy
 author: tulsijhaveri
 ms.date: 1/17/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

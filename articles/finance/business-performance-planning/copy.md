@@ -6,8 +6,7 @@ description: This article describes how to use the Copy visual in the Business p
 author: ShielaSogge
 ms.date: 12/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 

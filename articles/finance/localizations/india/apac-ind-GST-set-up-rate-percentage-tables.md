@@ -6,9 +6,6 @@ description: This article explains how to set up rate and percentage tables.
 author: EricWangChen
 ms.date: 03/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

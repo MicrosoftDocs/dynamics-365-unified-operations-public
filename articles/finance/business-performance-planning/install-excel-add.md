@@ -6,6 +6,7 @@ description: This article describes how to install the Microsoft Excel add-in fo
 author: ShielaSogge
 ms.date: 03/15/2024
 ms.topic: article
+ms.reviewer: twheeloc
 
 # optional metadata
 

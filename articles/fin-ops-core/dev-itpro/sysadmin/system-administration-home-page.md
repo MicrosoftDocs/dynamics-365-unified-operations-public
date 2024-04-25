@@ -6,16 +6,13 @@ description: This article lists resources that are available for system administ
 author: sericks007
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b

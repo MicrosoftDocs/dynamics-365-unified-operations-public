@@ -6,8 +6,6 @@ description: This article explains asset lifecycle states and lifecycle models i
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

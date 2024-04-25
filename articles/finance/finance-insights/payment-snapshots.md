@@ -6,9 +6,6 @@ description: This article describes the snapshots feature, which lets you save a
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

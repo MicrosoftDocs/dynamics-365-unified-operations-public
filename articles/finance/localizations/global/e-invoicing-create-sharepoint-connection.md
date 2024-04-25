@@ -1,15 +1,13 @@
 ---
-title: Configure a SharePoint connection
-description: This article explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site.
-author: gionoder
+title: Configure a SharePoint connection (RCS)
+description: This article explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site (RCS).
+author: ilikond
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
@@ -17,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure a SharePoint connection
+# Configure a SharePoint connection (RCS)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -39,7 +37,7 @@ The Electronic invoicing service can read files from Microsoft SharePoint folder
     Follow these guidelines:
 
     - Don't use the same app registration for different services.
-    - Follow the [password policy recommendations](/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide).
+    - Follow the [password policy recommendations](/microsoft-365/admin/misc/password-policy-recommendations).
     - Set up rotation of passwords. During rotation, create a new client secret for the app registration, update the key vault, and then delete the old secret.
 
 2. Save the **App Registration secret** and **Application (client) ID** values as two new secrets in the key vault in the setup of your Electronic invoicing environment.

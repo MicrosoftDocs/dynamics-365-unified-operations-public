@@ -6,8 +6,6 @@ description: This article provides an overview of how to work with service inter
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

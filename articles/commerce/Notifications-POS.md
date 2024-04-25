@@ -6,9 +6,6 @@ description: This article describes how to enable order notifications in the poi
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  RetailOperations, RetailFunctionalityProfile

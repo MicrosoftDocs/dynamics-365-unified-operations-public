@@ -6,8 +6,6 @@ description: Users are internal employees of your organization, or external cust
 author: pnghub
 ms.date: 03/12/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

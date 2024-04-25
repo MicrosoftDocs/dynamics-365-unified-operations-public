@@ -6,9 +6,6 @@ description: This article provides information about the purchase of zero-rated 
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

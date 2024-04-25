@@ -4,10 +4,8 @@ description: This article describes cross-company data sharing, which is a mecha
 author: peakerbl
 ms.date: 06/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-05-31

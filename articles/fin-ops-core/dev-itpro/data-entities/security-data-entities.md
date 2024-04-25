@@ -6,9 +6,6 @@ description: This article provides information about security for data entities.
 author: peakerbl
 ms.date: 03/11/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -30,8 +27,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 > [!NOTE]
 > Data entities do not support the Extensible Data Security (XDS) concepts.

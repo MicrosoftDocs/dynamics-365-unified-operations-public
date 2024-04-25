@@ -6,8 +6,6 @@ description: This article describes how to set up data for rating profiles.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: how-to 
-ms.prod: 
-ms.technology: 
  
 # optional metadata 
  

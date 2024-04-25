@@ -6,9 +6,6 @@ description: This article describes the functionality for validating store trans
 author: analpert
 ms.date: 01/31/2022
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

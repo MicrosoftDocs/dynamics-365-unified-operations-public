@@ -6,8 +6,6 @@ description: View compliance with service level agreements.
 author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -5,7 +5,7 @@ author: rashmansur
 ms.author: rashmim
 ms.topic: overview
 ms.date: 05/29/2020
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global 
 ms.search.validFrom: 2018-12-31

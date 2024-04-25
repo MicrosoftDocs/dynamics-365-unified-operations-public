@@ -6,8 +6,6 @@ description: A manufactured item’s constant costs reflect the operation setup 
 author: JennySong-SH
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

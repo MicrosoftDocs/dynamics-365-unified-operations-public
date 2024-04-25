@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up SEPA direct debit mandate
-description: A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account, provided that the customer has granted a signed mandate to the creditor.
-author: ShivamPandey-msft
-ms.date: 01/12/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
-ms.search.region: Global
-# ms.search.industry: 
+description: A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account if the customer has granted a signed mandate to the creditor.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 01/12/2018
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
 ---
 
 # Set up SEPA direct debit mandate

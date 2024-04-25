@@ -4,8 +4,6 @@ description: This article explains how to configure and generate the VAT return 
 author: AdamTrukawka
 ms.date: 08/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Bahrain

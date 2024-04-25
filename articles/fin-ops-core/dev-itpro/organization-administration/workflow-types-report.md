@@ -6,9 +6,6 @@ description: This article points you to a report that lists the available workfl
 author: ChrisGarty
 ms.date: 02/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

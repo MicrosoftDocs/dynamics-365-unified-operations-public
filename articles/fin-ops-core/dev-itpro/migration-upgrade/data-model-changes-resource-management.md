@@ -4,10 +4,8 @@ description: This article provides information about the Project resource schedu
 author: laneswenka
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31

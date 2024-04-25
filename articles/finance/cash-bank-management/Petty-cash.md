@@ -4,8 +4,6 @@ description: This article provides information about the global petty cash funct
 author: EricWang
 ms.date: 01/18/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: 

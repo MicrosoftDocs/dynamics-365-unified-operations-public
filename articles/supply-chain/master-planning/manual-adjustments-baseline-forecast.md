@@ -6,8 +6,6 @@ description: This article explains how you can make manual adjustments to a base
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

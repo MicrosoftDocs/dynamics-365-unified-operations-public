@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
@@ -60,18 +60,18 @@ On the **Dual-write** page, you might receive an error message that resembles th
 
 To fix the issue, first follow these steps to make sure that the columns are in the table.
 
-1. Sign in to the VM for the finance and operations app.
-2. Go to **Workspaces \> Data management**, select the **Framework parameters** tile, and then, on the **Table settings** tab, select **Refresh table list** to refresh the tables.
-3. Go to **Workspaces \> Data management**, select the **Data tables** tab, and make sure that the table is listed. If the table isn't listed, sign in to the VM for the finance and operations app, and make sure the table is available.
+1. Sign into your finance and operations apps environment.
+2. Go to **Workspaces \> Data management**, select the **Framework parameters** tile, and then, on the **Entity settings** tab, select **Refresh entity list** to refresh the entities.
+3. Go to **Workspaces \> Data management**, select the **Data entities** tab, and make sure that the entity is listed. 
 4. Open the **Table mapping** page from the **Dual-write** page in the finance and operations app.
-5. Select **Refresh table list** to automatically fill the columns in the table mappings.
+5. Select **Refresh tables** to automatically fill the columns in the table mappings.
 
 If the issue still isn't fixed, follow these steps.
 
 > [!IMPORTANT]
 > These steps guide you through the process of deleting a table and then adding it again. To avoid issues, be sure to follow the steps exactly.
 
-1. In the finance and operations app, go to **Workspaces \> Data management**, and select the **Data tables** tile.
+1. In the finance and operations app, go to **Workspaces \> Data management**, and select the **Data entities** tile.
 2. Find the table that is missing the attribute. Click **Modify target mapping** in the toolbar.
 3. On the **Map staging to target** pane, click **Generate mapping**.
 4. Open the **Table mapping** page from the **Dual-write** page in the finance and operations app.

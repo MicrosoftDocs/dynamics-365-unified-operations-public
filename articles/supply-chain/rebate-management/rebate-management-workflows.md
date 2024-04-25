@@ -6,8 +6,6 @@ description: This article explains how to set up a Rebate management deal workfl
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

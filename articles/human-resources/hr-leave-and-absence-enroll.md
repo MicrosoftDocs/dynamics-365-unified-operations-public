@@ -6,9 +6,6 @@ description: Assign employees and contractors to leave plans in Dynamics 365 Hum
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

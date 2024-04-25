@@ -6,9 +6,6 @@ description: Compensation processing allows you to calculate new base compensati
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmCompensationWorkspace
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Process compensation
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

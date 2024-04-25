@@ -4,8 +4,6 @@ description: This article provides information about Russian address formats and
 author: AdamTrukawka
 ms.date: 11/05/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

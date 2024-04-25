@@ -6,9 +6,6 @@ description: This article explains how to revise an advance payment that include
 author: EricWangChen
 ms.date: 06/03/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

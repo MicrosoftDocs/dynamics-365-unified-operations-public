@@ -6,8 +6,6 @@ description: This article describes the warehouse app event processing used to p
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

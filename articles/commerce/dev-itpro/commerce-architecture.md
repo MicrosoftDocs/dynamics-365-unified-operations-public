@@ -4,8 +4,6 @@ description: This article provides an overview of all components in the Microsof
 author: samjarawan
 ms.date: 01/30/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -21,13 +19,11 @@ ms.search.form: RetailITWorkspace
 
 [!include [banner](../includes/banner.md)]
 
-
-
 This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products. 
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
-![Dynamics 365 Commerce Component Overview](../media/Commerce_Architecture_Component_Overview.png)
+:::image type="content" source="../media/Commerce_Architecture_Component_Overview.png" alt-text="Dynamics 365 Commerce Component Overview" lightbox="../media/Commerce_Architecture_Component_Overview.png":::
 
 ## Architecture benefits
 

@@ -6,8 +6,6 @@ description: This article explains how to work with the various reports that are
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

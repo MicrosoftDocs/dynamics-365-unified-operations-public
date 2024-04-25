@@ -4,8 +4,6 @@ description: This article explains how to clear bank statement transactions in a
 author: EricWang
 ms.date: 01/18/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: 

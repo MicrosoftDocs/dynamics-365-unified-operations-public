@@ -6,8 +6,6 @@ description: This procedure shows you how to create a purchase order for a one-t
 author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

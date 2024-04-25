@@ -6,9 +6,6 @@ description: This article describes the default reports for trial balances. It a
 author: jinniew
 ms.date: 05/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerTrialBalanceListPage 

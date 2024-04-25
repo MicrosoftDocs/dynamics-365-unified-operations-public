@@ -6,8 +6,6 @@ description: This article describes how positions are an important element of th
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -25,12 +23,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up positions
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
 
 Positions are an important element of the lower level of an organization hierarchy. A position is an individual instance of a job. For example, the position, "Sales manager (East)," is one of the positions that is associated with the job, "Sales manager." A position exists in a department and may have only one worker associated with it. In this task we will walk through the steps required to create a position. This procedure is intended for Human Resources Specialists.
 

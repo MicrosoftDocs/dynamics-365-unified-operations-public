@@ -1,31 +1,18 @@
 ---
-# required metadata
-
 title: Credit and collections overview
-description: This article provides an overview of the functionality for credit and collections.
-author: JodiChristiansen
-ms.date: 09/04/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the functionality for credit and collections, including overviews on credit management and collections management.
+author: twheeloc
 ms.author: twheeloc
-ms.search.validFrom: 
+ms.topic: overview
+ms.date: 09/04/2019
+ms.reviewer: twheeloc  
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
-
 ---
+
 # Credit and collections overview
 
 [!include [banner](../includes/banner.md)]

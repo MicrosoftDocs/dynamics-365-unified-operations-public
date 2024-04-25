@@ -2,18 +2,17 @@
 title: What's new and changed in Platform update 31 for finance and operations apps (January 2020)
 description: This article describes features that are in preview in Platform update 31 for finance and operations apps.
 author: tonyafehr
-ms.date: 03/10/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/12/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+  - evergreen 
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.custom: 
-ms.assetid: 
 ---
 # What's new and changed in Platform update 31 for finance and operations apps (January 2020)
 

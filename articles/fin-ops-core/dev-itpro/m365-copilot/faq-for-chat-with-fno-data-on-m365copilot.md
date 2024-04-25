@@ -6,8 +6,6 @@ description: This article explains how to use Microsoft 365 Copilot to chat with
 author: ramasri
 ms.date: 10/27/2023
 ms.topic: conceptual
-ms.prod:
-ms.technology: 
 ms.collection:
   - bap-ai-copilot
 

@@ -4,10 +4,10 @@
 title: Round-off amount for depreciation calculations
 description: This article discusses the Round-off depreciation field that is found on the Book setup pages.
 author: moaamer
-ms.date: 06/20/2017
+ms.date: 04/05/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
+ms.custom: evergreen 
 
 # optional metadata
 
@@ -15,7 +15,6 @@ ms.search.form: AssetBookTable, AssetDepBookTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
 ms.search.region: Global

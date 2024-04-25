@@ -6,9 +6,6 @@ description: During a consolidation, you gather transactions from several sets o
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

@@ -4,8 +4,6 @@ description: Use this procedure to create a sales quotation that uses Brazilian 
 author: AdamTrukawka
 ms.date: 06/24/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

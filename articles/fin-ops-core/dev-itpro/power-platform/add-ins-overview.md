@@ -6,16 +6,12 @@ description: This article provides information about add-ins, which can be used 
 author: ankugo
 ms.date: 02/11/2022
 ms.topic: overview
-ms.prod:
-
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global

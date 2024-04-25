@@ -1,5 +1,5 @@
 ---
-title: Use the Inventory Visibility app UI version 2 (preview)
+title: Use the Inventory Visibility app UI version 2
 description: This article describes how to use the Inventory Visibility app UI version 2.
 author: yufeihuang
 ms.author: yufeihuang
@@ -12,16 +12,13 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Use the Inventory Visibility app UI version 2 (preview)
+# Use the Inventory Visibility app UI version 2
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This article describes how to use the Inventory Visibility app, which runs in Microsoft Power Apps.
 
 The Inventory Visibility app offers two versions of a model-driven user experience for visualization. Users can now choose between the new user interface (referred to as *UI version 2* in this article) and the old (legacy) user interface (referred to as *UI version 1* in this article).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 
@@ -73,11 +70,23 @@ Any time that you modify the configuration and save your changes, the system sav
 
 1. Select **Confirm Update** to apply your configuration change.
 
-## Partition configuration
+## <a name="data-partition"></a>Data partition rule
 
-<!--KFM: Why is this section here? What does this have to do with the app? -->
+Inventory Visibility can distribute and store inventory data in either of the following ways:
 
-Partition configuration controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. The following partition configuration is included in the solution by default. Therefore, *you don't have to set it up yourself*.
+- *By location* – Choose this option if you always know site and warehouse information when you make on-hand queries, inventory adjustments, inventory reservations or inventory allocations through Inventory Visibility.
+- *By product ID* – Choose this option if you often don't know site or warehouse information when calling Inventory Visibility. For example, when making e-commerce in-basket reservations, the fulfillment warehouse might be unknown when online orders are initially placed. In this case, it's important to be able to call Inventory Visibility to query on-hand inventory and make reservations without providing warehouse information.
+
+To change the data partition rule, follow these steps:
+
+1. Open the Inventory Visibility app
+1. Select **Data partition rule** and choose the rule you want to use.
+1. [Clear all inventory data](#delete-data).
+1. [Update the configuration](#update-configuration) to apply your changes. (The update-configuration operation will fail if you don't clear the data first.)
+
+The data partition rule controls how data is distributed. Operations that are performed inside the same partition provide better performance, at lower cost, than operations that cross partitions. Therefore, we recommend using the *By product ID* option if you often query across different locations. However, we recommend using the *By location* option if you more often query for multiple products at the same location.
+
+When using the *By location* partition rule, the rule in the following table is included in the solution by default and can't be changed (this becomes set 0 of the index hierarchy). When using *By product ID*, the rule has no effect on Inventory Visibility APIs.
 
 | Base dimension | Hierarchy |
 |---|---|
@@ -196,7 +205,7 @@ If necessary, you can delete all configurations except those in the *fno* and *@
 1. On the **Delete all configurations** tile, select **Manage**.
 1. You're prompted to confirm the deletion. Select **OK** to continue.
 
-## Delete all inventory data
+## <a name="delete-data"></a> Delete all inventory data
 
 If necessary, you can delete all Inventory Visibility data, except configurations, in both the cache and Dataverse. Deleted data can't be restored, and users are blocked until deletion is completed.
 
