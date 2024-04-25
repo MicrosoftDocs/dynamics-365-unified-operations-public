@@ -5,13 +5,7 @@ author: jaredha
 ms.author: jaredha
 ms.topic: article
 ms.date: 08/25/2022
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-ms.assetid: 
 ms.search.region: Global
 ms.search.validFrom: 2022-04-16
 ms.search.form: 
