@@ -4,8 +4,6 @@ description: This article provides information about the Automate ledger settlem
 author: abruer
 ms.date: 9/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

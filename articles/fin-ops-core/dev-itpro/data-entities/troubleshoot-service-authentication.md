@@ -5,6 +5,7 @@ author: pnghub
 ms.author: gned
 ms.topic: article
 ms.date: 06/20/2017
+ms.topic: article
 ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b

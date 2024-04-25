@@ -4,8 +4,6 @@ description: This article provides guidelines that you should follow when you sp
 author: jasongre
 ms.date: 04/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

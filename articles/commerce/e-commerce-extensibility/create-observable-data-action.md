@@ -4,8 +4,6 @@ description: This article describes how to create an observable data action in M
 author: samjarawan
 ms.date: 04/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

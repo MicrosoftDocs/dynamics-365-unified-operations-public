@@ -4,8 +4,6 @@ description: This article explains how to restore previously deducted VAT amount
 author: AdamTrukawka
 ms.date: 11/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

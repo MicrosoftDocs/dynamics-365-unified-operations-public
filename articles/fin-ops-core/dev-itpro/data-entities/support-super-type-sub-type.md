@@ -5,13 +5,14 @@ author: twheeloc
 ms.author: twheeloc
 ms.topic: article
 ms.date: 06/20/2017
+ms.topic: article
 ms.reviewer: twheeloc
-audience: Developer
 ms.assetid: d59cefc0-be94-42e9-a22e-87493985dbcd
-ms.search.region: Global 
+ms.search.region: Global
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Super types and sub types

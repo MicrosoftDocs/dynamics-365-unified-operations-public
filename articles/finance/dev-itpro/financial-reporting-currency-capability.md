@@ -6,9 +6,6 @@ description: Financial reporting includes features that support complex currency
 author: panolte
 ms.date: 07/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

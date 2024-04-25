@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Vendor payments for a partial amount
-description: Sometimes, you might make a payment to a vendor that is less than the amount of an invoice. This article describes the various options for handling this situation. 
-author: angelad116
-ms.date: 10/24/2022
+description: Sometimes, you might make a payment to a vendor that is less than the amount of an invoice. Learn about the various options for handling this situation. 
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
 ---
 
 # Vendor payments for a partial amount

@@ -6,9 +6,6 @@ description: This article explains the options in the Origin field on the Sales 
 author: kailiang
 ms.date: 01/11/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxTable

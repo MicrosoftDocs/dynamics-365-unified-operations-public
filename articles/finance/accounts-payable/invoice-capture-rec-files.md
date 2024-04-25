@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Invoice capture received files
-description: This article explains how to collect invoice files from different sources in Invoice capture.
+description: Learn about how to collect invoice files from different sources in Invoice capture, including an outline on views in received files.
 author: sunfzam
-ms.date: 07/19/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: zezhangzhao
+ms.topic: overview
+ms.date: 07/19/2023
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: 
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Invoice capture received files

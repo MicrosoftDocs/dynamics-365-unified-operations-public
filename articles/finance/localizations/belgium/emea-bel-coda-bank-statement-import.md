@@ -4,8 +4,6 @@ description: This article includes information about CODA, which is a report for
 author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Belgium

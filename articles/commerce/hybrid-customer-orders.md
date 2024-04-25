@@ -6,9 +6,6 @@ description: A hybrid customer order is a single order, which contains products 
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

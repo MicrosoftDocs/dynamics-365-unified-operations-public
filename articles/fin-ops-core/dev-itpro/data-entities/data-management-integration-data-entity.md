@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: overview
 ms.date: 07/25/2019
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4

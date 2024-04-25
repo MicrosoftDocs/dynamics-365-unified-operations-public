@@ -4,8 +4,6 @@ description: This article provides an overview of the localization of Microsoft 
 author: EvgenyPopovMBS
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Russia

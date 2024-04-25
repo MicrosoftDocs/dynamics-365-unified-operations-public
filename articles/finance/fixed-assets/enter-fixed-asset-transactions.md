@@ -6,9 +6,6 @@ description: This article describes the different methods available for creating
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetTable, PurchCreateOrder

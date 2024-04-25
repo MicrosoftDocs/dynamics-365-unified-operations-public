@@ -6,8 +6,6 @@ description: The settle and post sales tax job procedure settles sales tax balan
 author: twheeloc
 ms.date: 01/04/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

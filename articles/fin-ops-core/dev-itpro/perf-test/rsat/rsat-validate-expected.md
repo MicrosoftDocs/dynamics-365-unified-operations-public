@@ -4,8 +4,6 @@ description: This article shows how to use the Regression suite automation for v
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

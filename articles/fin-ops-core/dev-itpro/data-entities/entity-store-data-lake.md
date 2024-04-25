@@ -5,7 +5,7 @@ author: MilindaV2
 ms.author: milindav
 ms.topic: article
 ms.date: 09/23/2020
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.assetid: 
 ms.search.region: Global

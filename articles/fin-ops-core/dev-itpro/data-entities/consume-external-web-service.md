@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.date: 11/10/2017
 ms.topic: article
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global

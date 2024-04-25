@@ -5,8 +5,8 @@ author: rcarlson
 ms.author: rcarlson
 ms.topic: article
 ms.date: 12/20/2017
-ms.custom:
-ms.reviewer: sericks
+ms.topic: article
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-26
@@ -17,11 +17,6 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
-> [!IMPORTANT]
-> This article applies only to the July 2017 release of Microsoft Dynamics 365 Finance. If you are running a later release, refer to the article [Copy configuration data between companies or legal entities overview](copy-configuration.md). 
 
 Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS). These data packages can help improve the repeatability of implementations and accelerate the configuration.
 

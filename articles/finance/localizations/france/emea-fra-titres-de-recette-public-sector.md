@@ -4,8 +4,6 @@ description: The titre de recette is used by the director to notify and authoriz
 author: brpotter
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: France

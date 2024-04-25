@@ -6,9 +6,6 @@ description: This article describes the feature that posts detailed vendor and c
 author: kweekley
 ms.date: 01/12/2023
 ms.topic: article
-ems.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DimensionFocus, LedgerTrialBalanceListPage

@@ -12,7 +12,6 @@ audience: Developer, IT Pro
 ms.collection: get-started
 ms.search.region: Global
 ms.search.validFrom: 2017-07-31
-ms.search.form: 
 ms.dyn365.ops.version: Platform update 7
 
 ---
@@ -20,8 +19,6 @@ ms.dyn365.ops.version: Platform update 7
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 There are two options for copying configuration data in finance and operations:
 

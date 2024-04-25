@@ -6,9 +6,6 @@ description: You can use the Forecast position summary and Forecast position det
 author: velofog
 ms.date: 10/29/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -4,9 +4,8 @@ description: Learn about integration between finance and operations apps and thi
 author: sericks007
 ms.author: sericks
 ms.topic: overview
-ms.date: 11/23/2020
-ms.reviewer: sericks
-audience: Developer 
+ms.date: 11/23/2020 
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: 

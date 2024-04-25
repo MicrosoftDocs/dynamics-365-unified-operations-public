@@ -4,8 +4,6 @@ description: This article describes capabilities that let you reverse vouchers f
 author: twheeloc
 ms.date: 02/21/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

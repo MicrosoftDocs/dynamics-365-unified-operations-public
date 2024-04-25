@@ -5,10 +5,8 @@ author: jaredha
 ms.author: jaredha
 ms.topic: article
 ms.date: 05/04/2022
-ms.custom:
-ms.reviewer: sericks 
+ms.reviewer: johnmichalak
 audience: Developer
-ms.assetid: 
 ms.search.region: Global
 ms.search.validFrom: 2022-04-16
 ms.search.form: 

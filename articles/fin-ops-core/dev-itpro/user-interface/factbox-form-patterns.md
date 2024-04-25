@@ -4,8 +4,6 @@ description: This article provides information about the FactBox form patterns. 
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

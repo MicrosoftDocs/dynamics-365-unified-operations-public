@@ -4,8 +4,6 @@ description: This article provides details about the point of sale (POS) operati
 author: josaw1
 ms.date: 08/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

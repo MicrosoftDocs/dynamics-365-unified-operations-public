@@ -4,8 +4,6 @@ description: This article describes how to modify an existing site page in Micro
 author: josaw1
 ms.date: 04/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

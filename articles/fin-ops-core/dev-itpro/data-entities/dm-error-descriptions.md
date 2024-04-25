@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 01/08/2024
 ms.reviewer: twheeloc
 audience: Developer
-ms.assetid: 
 ms.search.region: Global
 ms.search.validFrom: 2018-09-15
 ms.search.form: 
@@ -17,8 +16,6 @@ ms.dyn365.ops.version: Platform update 20
 # Data management error descriptions and known limitations
 
 [!include [banner](../includes/banner.md)]
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article documents the scenarios where specific errors are seen. It doesn't provide a complete list of errors and scenarios. However, keep checking back, because the list is continuously updated.
 

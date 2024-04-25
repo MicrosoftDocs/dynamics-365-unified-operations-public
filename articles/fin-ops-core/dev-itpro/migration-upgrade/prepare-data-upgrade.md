@@ -4,8 +4,6 @@ description: This article describes each task in the Microsoft Dynamics AX 2012 
 author: gianugo
 ms.date: 06/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

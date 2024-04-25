@@ -4,8 +4,6 @@ description: This article explains how to set up and generate the Tax reconcilia
 author: liza-golub
 ms.date: 07/11/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Iceland, Norway

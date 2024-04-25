@@ -6,8 +6,6 @@ description: This procedure walks you through setting up OIOUBL electronic invoi
 author: mrolecki
 ms.date: 02/02/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

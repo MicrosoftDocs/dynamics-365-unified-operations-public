@@ -4,8 +4,6 @@ description: This article lists the system requirements for setting up a Microso
 author: samjarawan
 ms.date: 08/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

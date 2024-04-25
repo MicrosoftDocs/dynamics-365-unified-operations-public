@@ -7,8 +7,6 @@ author: faix
 ms.date: 9/16/2022
 ms.topic: article
 ms.service: dynamics-365
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]

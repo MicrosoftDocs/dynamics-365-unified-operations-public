@@ -6,9 +6,6 @@ description: This article provides detailed information about the import format 
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

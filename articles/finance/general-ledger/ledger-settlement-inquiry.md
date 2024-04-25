@@ -6,9 +6,6 @@ description: This article describes the Ledger settlement inquiry window
 author: kweekley
 ms.date: 05/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerClosingSheet

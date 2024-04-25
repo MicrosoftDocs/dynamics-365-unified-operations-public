@@ -1,7 +1,7 @@
 ---
 
 title: Business performance analytics data model
-description: This article provides information about the business performance analytics data model.
+description: This article provides information about the Business performance analytics data model.
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 

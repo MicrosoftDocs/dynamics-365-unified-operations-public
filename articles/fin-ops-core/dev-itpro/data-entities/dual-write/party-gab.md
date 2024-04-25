@@ -179,7 +179,7 @@ During the lead qualification process, you can provide both a business phone num
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | This is a new map added as part of this release.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
-    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
+    `CDS location roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
 
 8. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
@@ -202,7 +202,7 @@ During the lead qualification process, you can provide both a business phone num
     | Company (field) | Exact Match |
     | Relationship Type (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Accounts.](media/duplicate-rule-1.PNG)
 
@@ -218,7 +218,7 @@ During the lead qualification process, you can provide both a business phone num
     | Last Name (field) | Exact Match |
     | Company (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Contacts.](media/duplicate-rule-2.PNG)
 

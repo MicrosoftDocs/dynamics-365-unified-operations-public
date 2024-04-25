@@ -18,9 +18,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
 
 ### Customer table schema

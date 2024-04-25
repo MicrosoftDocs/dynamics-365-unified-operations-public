@@ -6,9 +6,6 @@ description: This article describes how to set up server-to-server authenticatio
 author: jaredha
 ms.date: 03/11/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Server-to-server authentication for the ATS integration API
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -4,8 +4,6 @@ description: This article provides information about how to indicate when the ta
 author: AdamTrukawka
 ms.date: 01/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom

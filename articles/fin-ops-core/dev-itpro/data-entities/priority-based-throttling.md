@@ -5,7 +5,7 @@ author: jaredha
 ms.author: jaredha
 ms.topic: article
 ms.date: 08/25/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer 
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global

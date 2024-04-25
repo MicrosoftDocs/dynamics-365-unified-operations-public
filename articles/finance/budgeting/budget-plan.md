@@ -6,9 +6,6 @@ description: The objective of this lab is to provide a guided view of Microsoft 
 author: panolte
 ms.date: 06/25/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetPlanningConfiguration

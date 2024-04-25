@@ -6,9 +6,6 @@ description: This article describes data synchronization with Commerce Data Exch
 author: jashanno
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailTerminalTable, RetailDevice

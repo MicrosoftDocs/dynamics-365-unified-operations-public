@@ -4,8 +4,6 @@ description: This article provides information about the Custom Filter Group sub
 author: jasongre
 ms.date: 04/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

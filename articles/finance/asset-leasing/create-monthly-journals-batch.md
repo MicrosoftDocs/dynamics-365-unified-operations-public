@@ -6,9 +6,6 @@ description: This article explains how to create journal entries in a batch to h
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Dialog

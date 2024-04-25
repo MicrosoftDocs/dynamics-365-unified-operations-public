@@ -4,8 +4,6 @@ description: This article explains how to set up dimension control for settlemen
 author: AdamTrukawka
 ms.date: 10/28/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

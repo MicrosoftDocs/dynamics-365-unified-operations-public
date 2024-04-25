@@ -1,15 +1,13 @@
 ---
 title: Electronic invoicing setup
-description: This article provides an overview of the process for setting up and configuring Electronic invoicing.
-author: gionoder
+description: This article provides an overview of the process for setting up and configuring Electronic invoicing (RCS).
+author: ilikond
 ms.date: 02/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 

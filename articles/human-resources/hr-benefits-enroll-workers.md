@@ -6,8 +6,6 @@ description: This procedure shows how to enroll a single worker in one or more b
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -26,7 +24,6 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 # Enroll and remove benefits from workers
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

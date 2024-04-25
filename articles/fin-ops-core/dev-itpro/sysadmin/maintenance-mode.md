@@ -6,9 +6,6 @@ description: This article describes maintenance mode, which is a system-wide set
 author: laneswenka
 ms.date: 01/29/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysConfiguration
