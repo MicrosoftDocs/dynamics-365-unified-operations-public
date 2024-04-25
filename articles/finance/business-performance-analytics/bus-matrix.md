@@ -1,3 +1,29 @@
+---
+
+title: Business performance analytics bus matrix data model
+description: This article provides information about the relationship between facts and dimensions as parto f the Business performance analytics data model.
+author: caryl henry
+ms.author: carylhenry
+ms.reviewer: twheeloc 
+ms.date: 4/24/2024
+ms.topic: article 
+
+ms.custom:
+ms.search.form: business-performance-analytics
+audience: Application User
+ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
+---
+
+# Business performance analytics bus matrix
+
+# Definitions
+Facts represent a business metric of interest. In the context of Business performance analytics, facts are record-type data such as transactions, orders, and records. Each fact is associated with one or more dimension. Dimensions represent descriptive data elements to provide more information for the facts associated with them.
+
+# Bus matrix
+
+The bus matrix table below shows the relationship between facts and dimensions. The rows represent the dimensions used in Business performance analytics while the columns represent the different facts used in Business performance analytics.
+
+
 | Dimensions                       | Budget | Budget reservation | General ledger | Product receipt | Purchase invoice | Purchase invoice matching | Purchase order | Purchase payment | Purchase payment matching | Purchase requisition | Purchase sub-ledger | Sales invoice | Sales payment | Sales payment matching | Sales sub-ledger |
 | -------------------------------- | ------ | ------------------ | -------------- | --------------- | ---------------- | ------------------------- | -------------- | ---------------- | ------------------------- | -------------------- | ------------------- | ------------- | ------------- | ---------------------- | ---------------- |
 | Asset                            |        |                    |                |                 | X                |                           |                |                  |                           |                      |                     |               |               |                        |                  |
