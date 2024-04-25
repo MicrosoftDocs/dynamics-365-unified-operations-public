@@ -1,6 +1,6 @@
 ---
 title: Warehouse management only mode with external ERP systems (preview)
-description: This article explains how to perform day-to-day warehousing tasks when you are using Warehouse only mode to integrate with an external ERP system.
+description: This article explains how to perform day-to-day warehousing tasks when you're using Warehouse only mode to integrate with an external ERP system.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This article explains how to perform day-to-day warehousing tasks when you are using Warehouse only mode to integrate with an external ERP system.
+This article explains how to perform day-to-day warehousing tasks when you're using Warehouse only mode to integrate with an external ERP system.
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
@@ -41,7 +41,7 @@ The following illustration highlights the elements of the inbound process.
 
 Here's a high-level description of the inbound process. Steps starting with *ERP* are done by the ERP system. Steps starting with *WOM* are done by Supply Chain Management in Warehouse management only mode.
 
-1. *ERP*: An external system submits an *inbound shipment order* message to Supply Chain Management.
+1. *ERP*: An external system submits an inbound shipment order message to Supply Chain Management.
 1. *WOM*: Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. *WOM*: Inbound loads are created in one of four ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
 
@@ -50,7 +50,7 @@ Here's a high-level description of the inbound process. Steps starting with *ERP
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
     - Automatically during the Warehouse Management mobile app receiving process
 
-1. *WOM*: Warehouse workers uses the Warehouse Management mobile app to *register* the inbound shipment transactions.
+1. *WOM*: Warehouse workers use the Warehouse Management mobile app to *register* the inbound shipment transactions.
 1. *WOM*: Supply Chain Management runs [receiving completed](wms-only-mode-shared-and-external-detail-use.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts), and trigger *business events* for the external systems.
 1. *ERP*: The external system reads and uses the [shipment receipt](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) data for further processing. For example, if purchase orders are associated with the inbound shipment orders in the external system, this processing involves purchase order invoicing.
 1. *WOM*: Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
@@ -65,7 +65,7 @@ The following illustration highlights the elements of the outbound process.
 
 Here's a high-level description of the inbound process. Steps starting with *ERP* are done by the ERP system. Steps starting with *WOM* are done by Supply Chain Management in Warehouse management only mode.
 
-1. *ERP*: An external system submits an *outbound shipment order* message.
+1. *ERP*: An external system submits an outbound shipment order message.
 1. *WOM*: Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. *WOM*: Inventory reservations are created in one of two ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
 
@@ -132,7 +132,7 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 | A0001       | 11 pcs      | 11 pcs      |
 
 > [!NOTE]
-> Make sure that each of your items is assigned to an item model group that's configured as described in the [Master and reference data](wms-only-mode-exchange-data.md#master-data). In this way, you don't have configure [inventory postings](../../finance/general-ledger/inventory-posting.md) and [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when you make adjustments via the [counting journal](../inventory/tasks/define-inventory-counting-processes.md).
+> Make sure that each of your items is assigned to an item model group that's configured as described in [Master and reference data](wms-only-mode-exchange-data.md#master-data). In this way, you don't have to configure [inventory postings](../../finance/general-ledger/inventory-posting.md) and [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when you make adjustments using the [counting journal](../inventory/tasks/define-inventory-counting-processes.md).
 
 ## On-hand inventory reconciliation
 
@@ -140,9 +140,9 @@ Warehouse management only mode can generate data for an on-hand inventory reconc
 
 To create the header and line data, you must specify **Source system** and **As of date** values. You must also select the level of inventory dimensions that the report should be generated for.
 
-When inventory that's related to *inbound shipment orders* is received, the on-hand inventory is physically updated based on the status of the registered inventory transactions. When inventory is shipped via *outbound shipment orders*, the physical on-hand inventory is reduced based on the `Picked` inventory transactions. This physical inventory on-hand representation of the registered and picked items remains until the related *Shipment receipt* and *Shipment packing slip* journals are posted as part of the [background finalization processes](wms-only-mode-setup.md#background-processes). To include this part of the physical on-hand inventory in the export, be sure to enable the **Include Registered and Picked inventory quantities** parameter.
+When inventory that's related to inbound shipment orders is received, on-hand inventory is physically updated based on the status of the registered inventory transactions. When inventory is shipped via outbound shipment orders, the physical on-hand inventory is reduced based on the *Picked* inventory transactions. This physical inventory on-hand representation of the registered and picked items remains until the related *Shipment receipt* and *Shipment packing slip* journals are posted as part of the [background finalization processes](wms-only-mode-setup.md#background-processes). To include this part of the physical on-hand inventory in the export, be sure to enable the **Include Registered and Picked inventory quantities** parameter.
 
-The external system will be informed about the available data via the `WHSSourceSystemInventoryOnhandReportBusinessEvent` business event. It can read the data via the `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines` data entities.
+The external system is informed about the available data via the `WHSSourceSystemInventoryOnhandReportBusinessEvent` business event. It can read the data via the `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines` data entities.
 
 > [!TIP]
 > If you run the **Create source system on-hand inventory** report as a recurring batch job, the **As of date** value is ignored, and data is generated based on the current processing date. For example, you set up the recurrence so that it has a **Start date** value of yesterday, and you set the job to run once per day. In this case, every day, the batch job automatically generates on-hand inventory data for the previous day.
@@ -151,9 +151,9 @@ The external system will be informed about the available data via the `WHSSource
 
 For integrations that require very quick on-hand inventory synchronization processes, you can use the Warehouse inventory update log (at **Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
 
-To keep the external systems updated about inventory transactions updates that are related to inbound and outbound shipment orders, enable the **Source systems** **Enable warehouse inventory update logs** parameter for both inbound and outbound shipment orders.
+To keep the external systems updated about inventory transaction updates that are related to inbound and outbound shipment orders, **Enable warehouse inventory update logs** to *Yes* for the relevant [source systems](wms-only-mode-setup.md#source-systems), both for inbound and for outbound shipment orders.
 
-You can view the update log data in the **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log** page
+To view the update log, go to **Warehouse management \> Inquiries and reports \> Physical inventory reconciliation \> Warehouse inventory update log**.
 
 > [!IMPORTANT]
 > Be sure to uptake the updates in the external systems in such a way that they don't cause double updates in combination with the data that's used as part of the [*Shipment receipts*](wms-only-mode-shared-and-external-detail-use.md#shipment-receipts) and [*Shipment packing slips*](wms-only-mode-shared-and-external-detail-use.md#shipment-packing-slips) messages when the **Enable warehouse inventory update logs** parameter is enabled.
