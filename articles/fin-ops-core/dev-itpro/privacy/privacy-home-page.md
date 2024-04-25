@@ -1,16 +1,16 @@
 ---
 title: Respond to privacy data requests resources
-description: This article provides links to information that can help you respond to a data rights request.
+description: Access links to resources that can help you respond to a data rights request, including product-specific considerations.
 author: josaw1
-ms.date: 08/01/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/01/2023
+ms.reviewer: josaw
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Respond to privacy data requests resources

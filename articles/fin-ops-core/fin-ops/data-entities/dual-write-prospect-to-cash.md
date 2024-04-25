@@ -1,13 +1,13 @@
 ---
 title: Quote-to-cash in dual-write
-description: This article provides information about Quote-to-cash in dual-write.
+description: Learn about Quote-to-cash in dual-write, including outlines on prerequisites, mapping setup, and sales quotations.
 author: RamaKrishnamoorthy
-ms.date: 01/07/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 01/07/2021
+ms.reviewer: sericks
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2020-01-27
 ---
 
