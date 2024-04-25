@@ -6,9 +6,6 @@ description: This article provides links to documentation resources for Sweden.
 author: kfend
 ms.date: 03/04/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

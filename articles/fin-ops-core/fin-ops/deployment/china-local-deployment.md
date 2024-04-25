@@ -6,9 +6,6 @@ description: This article provides information about Microsoft Dynamics 365 Fina
 author: kfend
 ms.date: 01/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

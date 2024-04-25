@@ -6,9 +6,6 @@ description: This article explains how to move your Microsoft Dynamics 365 Finan
 author: ttreen
 ms.date: 02/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

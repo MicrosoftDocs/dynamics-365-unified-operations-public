@@ -4,8 +4,6 @@ description: This article presents an architectural overview of Microsoft Dynami
 author: samjarawan
 ms.date: 11/20/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

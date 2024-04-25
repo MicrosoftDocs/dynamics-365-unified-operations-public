@@ -4,8 +4,6 @@ description: This article describes why, when, and how to use Cascading Style Sh
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

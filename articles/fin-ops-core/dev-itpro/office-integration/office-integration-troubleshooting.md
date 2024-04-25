@@ -6,9 +6,6 @@ description: This article provides answers to questions, tips, and troubleshooti
 author: jasongre
 ms.date: 04/12/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: OfficeAppParameters, SysEmailParameters

@@ -6,9 +6,6 @@ description: This article describes financial consolidations and currency transl
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

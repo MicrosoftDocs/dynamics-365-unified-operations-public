@@ -6,9 +6,6 @@ description: This article describes how to prorate employee contribution amounts
 author: twheeloc
 ms.date: 01/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace

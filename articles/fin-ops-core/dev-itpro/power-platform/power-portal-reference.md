@@ -6,9 +6,6 @@ description: This article explains how Power Apps portals can be used with finan
 author: Sunil-Garg
 ms.date: 07/13/2020
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

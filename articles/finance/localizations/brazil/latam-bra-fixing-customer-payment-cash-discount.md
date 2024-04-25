@@ -4,8 +4,6 @@ description: This article explains how to enable recalculation of cash discounts
 author: kfend
 ms.date: 10/16/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

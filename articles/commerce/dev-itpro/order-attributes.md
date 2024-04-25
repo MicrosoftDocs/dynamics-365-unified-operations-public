@@ -4,8 +4,6 @@ description: This article explains how to edit and set attributes values for ord
 author: josaw1
 ms.date: 09/25/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

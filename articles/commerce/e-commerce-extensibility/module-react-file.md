@@ -4,8 +4,6 @@ description: This article provides information about the module React component 
 author: samjarawan
 ms.date: 02/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

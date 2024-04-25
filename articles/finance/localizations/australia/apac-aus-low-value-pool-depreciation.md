@@ -4,8 +4,6 @@ description: This article provides information about the low-value pool deprecia
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Australia

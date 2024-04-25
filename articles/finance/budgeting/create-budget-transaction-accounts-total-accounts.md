@@ -6,9 +6,6 @@ description: This article provides an overview of the process for creating budge
 author: panolte
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetControlConfiguration, BudgetPlanGenerate

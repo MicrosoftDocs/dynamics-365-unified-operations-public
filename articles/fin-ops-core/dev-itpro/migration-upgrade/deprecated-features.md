@@ -6,9 +6,6 @@ description: This article describes features that have been removed, or that wer
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

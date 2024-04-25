@@ -6,9 +6,6 @@ description: This article explains how the reporting currency can be out of bala
 author: kweekley
 ms.date: 12/12/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

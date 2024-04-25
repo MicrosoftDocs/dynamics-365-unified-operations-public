@@ -4,8 +4,6 @@ description: This article provides information about VAT declaration for Netherl
 author: AdamTrukawka
 ms.date: 02/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

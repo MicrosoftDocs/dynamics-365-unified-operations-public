@@ -4,8 +4,6 @@ description: This article describes how to set up and use the extended sign-on f
 author: boycezhu
 ms.date: 01/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

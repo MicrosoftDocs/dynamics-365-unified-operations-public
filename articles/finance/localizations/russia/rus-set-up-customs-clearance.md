@@ -6,9 +6,6 @@ description: This article explains how to set up the registration information th
 author: AdamTrukawka
 ms.date: 09/12/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 #ms.search.form:

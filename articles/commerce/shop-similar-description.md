@@ -4,8 +4,6 @@ description: This article describes how to enable ""shop similar description"" p
 author: bebeale
 ms.date: 01/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

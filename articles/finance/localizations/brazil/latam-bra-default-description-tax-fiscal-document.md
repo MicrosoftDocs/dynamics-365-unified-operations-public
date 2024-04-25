@@ -6,9 +6,6 @@ description: This article explains how to set up default descriptions for vouche
 author: gionoder
 ms.date: 03/18/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR

@@ -4,8 +4,6 @@ description: This article contains information about how to install and configur
 author: FrankDahl
 ms.date: 11/27/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

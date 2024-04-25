@@ -6,9 +6,6 @@ description: This article explains how to set up half-yearly depreciation, so th
 author: EvgenyPopovMBS
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetDepreciationProfile

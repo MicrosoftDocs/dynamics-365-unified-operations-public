@@ -1,11 +1,9 @@
 ---
 title: Set up Electronic invoicing parameters
-description: This article explains how to set up the Electronic invoicing parameters.
+description: This article explains how to set up the Electronic invoicing parameters (RCS).
 author: ilikond
 ms.date: 06/30/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

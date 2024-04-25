@@ -4,8 +4,6 @@ description: New to Dynamics 365 Commerce? We've put together some guidance to h
 author: josaw1
 ms.date: 09/28/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

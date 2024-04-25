@@ -6,9 +6,6 @@ description: You can add custom fields to pages in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 03/10/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Custom fields
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: article
 ms.date: 05/26/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article explains how to register an integration point in the I
 author: liza-golub
 ms.date: 02/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Norway

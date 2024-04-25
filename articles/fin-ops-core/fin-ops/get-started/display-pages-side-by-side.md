@@ -4,8 +4,6 @@ description: This article explains how to display pages side-by-side.
 author: jasongre
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article explains how to configure and generate the GST return 
 author: AdamTrukawka
 ms.date: 09/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: New Zealand

@@ -6,9 +6,6 @@ description: In this tutorial, you will use and build Office integration experie
 author: jasongre
 ms.date: 05/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
