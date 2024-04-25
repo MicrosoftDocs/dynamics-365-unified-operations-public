@@ -6,8 +6,6 @@ description: You can define a service agreement as a template and copy the lines
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

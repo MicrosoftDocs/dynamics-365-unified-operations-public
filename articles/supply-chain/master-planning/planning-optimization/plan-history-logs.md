@@ -6,8 +6,6 @@ description: This article explains how to view the history of planning jobs.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,9 +6,6 @@ description: A sequence number needs to be added to the bank statement import en
 author: angelad116
 ms.date: 06/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

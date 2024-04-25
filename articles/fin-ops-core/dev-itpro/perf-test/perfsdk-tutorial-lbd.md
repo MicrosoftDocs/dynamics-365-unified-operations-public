@@ -212,7 +212,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
     > [!NOTE]
     > Sometimes, Visual Studio might not update the list of tests after you create a test script from a task recording. In this case, restart Visual Studio, and then reopen Test Explorer.
 
-4. Run the sample single-user test by right-clicking **CreatePurchReq**. Alternatively, you can run the test that you created from your task recording. When you run the test, Internet Explorer should be started, and it should replay the scenario that you recorded.
+4. Run the sample single-user test by right-clicking **CreatePurchReq**. Alternatively, you can run the test that you created from your task recording. When you run the test, Microsoft Edge should be started, and it should replay the scenario that you recorded.
 
 ## Run a multiuser load test by using the Performance SDK
 

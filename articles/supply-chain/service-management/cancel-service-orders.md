@@ -6,8 +6,6 @@ description: You can cancel a service order or service order line from the servi
 author: sorenva
 ms.date: 01/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

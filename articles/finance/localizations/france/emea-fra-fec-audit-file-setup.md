@@ -4,8 +4,6 @@ description: This article explains how to prepare your Microsoft Dynamics 365 Fi
 author: liza-golub
 ms.date: 07/27/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: France

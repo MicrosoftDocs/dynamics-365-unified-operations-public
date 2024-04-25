@@ -6,8 +6,6 @@ description: This article explains how to integrate the Asset management module 
 author: johanhoffmann 
 ms.date: 04/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -36,7 +34,6 @@ Before you can attach guides to Asset management work orders, you must complete 
 
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
 - [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
-- [Turn on flight](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for the **MRGuidesFeature** feature. (For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
 - [Turn on the following configuration keys](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the **License configuration** page:
 
     - Asset management \> Asset management mixed reality

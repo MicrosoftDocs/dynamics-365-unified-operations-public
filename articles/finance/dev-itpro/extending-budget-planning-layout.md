@@ -6,9 +6,6 @@ description: This article explains how to extend the number of columns in the Bu
 author: panolte
 ms.date: 07/24/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]

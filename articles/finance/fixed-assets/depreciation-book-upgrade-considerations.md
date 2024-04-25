@@ -6,9 +6,6 @@ description: This article describes the current book functionality in Fixed asse
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

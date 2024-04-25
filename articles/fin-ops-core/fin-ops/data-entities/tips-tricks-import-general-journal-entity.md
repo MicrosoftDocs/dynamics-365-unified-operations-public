@@ -6,9 +6,6 @@ description: Learn how to import data into the General journal by using the Gene
 author: rcarlson
 ms.date: 02/02/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -29,8 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Importing vouchers by using the General journal entity
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides tips for importing data into the General journal by using the General journal entity. Find technical information about the entity at [General journal entity](../../dev-itpro/data-entities/entity-general-journal.md).
 

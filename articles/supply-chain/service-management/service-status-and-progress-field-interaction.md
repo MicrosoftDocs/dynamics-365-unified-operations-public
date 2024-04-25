@@ -6,8 +6,6 @@ description: In the Service orders form, the Progress field on the header reflec
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

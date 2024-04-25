@@ -4,10 +4,8 @@ description: This article describes queries in the SQL Insights tab and how they
 author: sericks007
 ms.date: 11/09/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gned
 ms.search.validFrom: 2016-11-30

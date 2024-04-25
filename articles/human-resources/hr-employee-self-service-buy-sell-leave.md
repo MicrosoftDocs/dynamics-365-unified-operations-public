@@ -6,9 +6,6 @@ description: This article describes how to submit requests to buy and sell leave
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ESSLeaveBuyRequestEntry, EssWorkspace

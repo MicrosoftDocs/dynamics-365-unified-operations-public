@@ -4,8 +4,6 @@ description: Use the CFDI – Electronic invoices form to view, email, export, o
 author: AdamTrukawka
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Mexico

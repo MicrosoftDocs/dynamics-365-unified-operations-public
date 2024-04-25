@@ -5,10 +5,6 @@ description: This article gives an overview of the functionality for Global CFDI
 author: EvgenyPopovMBS
 ms.date: 06/29/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-
 # optional metadata
 # ms.search.form:  
 audience: Application User

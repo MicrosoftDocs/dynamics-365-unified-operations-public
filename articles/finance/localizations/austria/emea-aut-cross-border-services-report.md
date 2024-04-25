@@ -4,8 +4,6 @@ description: This article explains how to use the Cross-border services report.
 author: AdamTrukawka
 ms.date: 04/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: 
 ms.reviewer: johnmichalak
 ms.search.region: 

@@ -6,9 +6,6 @@ description: This article lists the mobile workspaces that are available for use
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

@@ -4,10 +4,9 @@
 title: Cost accounting home page
 description: This article provides a list of the help topics and other resources that are available for Cost accounting.
 author: aprilolson
-ms.date: 04/25/2018
+ms.date: 03/25/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
@@ -17,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["256254"]
 ms.collection: get-started
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global

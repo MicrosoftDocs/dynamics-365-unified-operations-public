@@ -4,8 +4,6 @@ description: This article explains how to tag intermediary digital sales for NF-
 author: gionoder
 ms.date: 07/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

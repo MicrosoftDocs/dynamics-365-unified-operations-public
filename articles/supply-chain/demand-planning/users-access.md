@@ -1,5 +1,5 @@
 ---
-title: Security roles and row-level security in Demand planning (preview)
+title: Security roles and row-level security in Demand planning
 description: This article describes how to set up users, security roles, and row-level security for the Demand planning app.
 author: t-benebo
 ms.author: benebotg
@@ -12,10 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Security roles and row-level security in Demand planning (preview)
+# Security roles and row-level security in Demand planning
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This article describes how to set up users, security roles, and access rules for the Demand planning app. It explains how to configure security roles and duties in Supply Chain Management and how to assign security roles for accessing the app and its various features on Power Platform. It also explains how to set up row-level security within the Demand planning app.
 

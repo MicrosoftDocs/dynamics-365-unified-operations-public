@@ -6,8 +6,6 @@ description: With service subscriptions, you manually accrue revenue in the peri
 author: sorenva
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

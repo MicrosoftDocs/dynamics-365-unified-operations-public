@@ -6,9 +6,6 @@ description: This article includes information about impairment accounting for f
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP

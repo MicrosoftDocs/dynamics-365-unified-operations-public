@@ -2,15 +2,14 @@
 title: Integrate with third-party manufacturing execution systems
 description: This article explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
 author: johanhoffmann
-ms.date: 08/09/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2021-10-01
-ms.dyn365.ops.version: 10.0.23
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Integrate with third-party manufacturing execution systems

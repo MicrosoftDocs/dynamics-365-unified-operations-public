@@ -6,16 +6,13 @@ description: This article explains the process for moving to the latest update o
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ms.search.region: Global

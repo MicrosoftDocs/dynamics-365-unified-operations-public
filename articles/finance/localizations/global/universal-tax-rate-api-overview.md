@@ -2,12 +2,10 @@
 title: Connect to an external tax solution provider via the Universal Tax Rate API
 description: This article explains the overall scope of the Universal Tax Rate API feature for Tax calculation.
 author: Kai-Cloud
-ms.date: 01/22/2024
+ms.date: 03/27/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -115,5 +113,6 @@ For more information about supported countries/regions, contact your tax solutio
 
 - [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
 - [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
+- [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (planned)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

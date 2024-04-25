@@ -6,9 +6,6 @@ description: This article explains how to use the Ledger settlements page to set
 author: kweekley
 ms.date: 10/27/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  LedgerTransSettlement

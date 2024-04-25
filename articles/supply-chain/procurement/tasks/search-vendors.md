@@ -6,8 +6,6 @@ description: Learn how to search for vendors based on specific criteria.
 author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

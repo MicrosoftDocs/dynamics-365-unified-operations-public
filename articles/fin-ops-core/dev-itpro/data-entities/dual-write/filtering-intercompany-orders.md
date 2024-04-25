@@ -5,7 +5,7 @@ author: negudava
 ms.date: 11/09/2020
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: negudava
 ms.search.validFrom: 2020-01-06

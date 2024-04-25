@@ -4,8 +4,6 @@ description: Use this procedure to learn how to create an equipment group and co
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Japan

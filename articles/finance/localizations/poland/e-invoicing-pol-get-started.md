@@ -4,8 +4,6 @@ description: This article provides information that will help you get started wi
 author: ikondratenko
 ms.date: 01/02/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Poland

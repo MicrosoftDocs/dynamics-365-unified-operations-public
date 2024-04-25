@@ -6,16 +6,13 @@ description: This article explains how to translate a documentation file for a M
 author: abmotgi 
 ms.date: 10/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global

@@ -6,16 +6,13 @@ description: Supplemental Terms of Use for Microsoft Dynamics 365 Previews.
 author: ShellyBakke
 ms.date: 09/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

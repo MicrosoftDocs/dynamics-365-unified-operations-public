@@ -6,9 +6,6 @@ description: Use the Data management workspace to create and manage data import 
 author: pnghub
 ms.date: 08/01/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -29,9 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data import and export jobs overview
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, cleanup, or convert data before you move it.
 

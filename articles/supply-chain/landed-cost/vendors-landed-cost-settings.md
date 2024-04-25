@@ -6,8 +6,6 @@ description: This article describes the new fields that are added to the existin
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

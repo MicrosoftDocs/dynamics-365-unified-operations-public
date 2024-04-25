@@ -4,8 +4,6 @@ description: This article provides information about price adjustments and disco
 author: josaw1
 ms.date: 10/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

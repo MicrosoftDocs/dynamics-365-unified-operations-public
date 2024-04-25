@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Support for different dimension patterns
 description: To support different dimension patterns, a set of framework data entities can be used as data sources in other entities that involve dimensions.
 author: RyanCCarlson2
-ms.date: 11/10/2017
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 11/10/2017
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Support for different dimension patterns

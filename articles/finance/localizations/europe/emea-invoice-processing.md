@@ -5,9 +5,6 @@ description: This article provides information about invoice processing for East
 author: EvgenyPopovMBS
 ms.date: 02/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 ms.search.form: CustParameters, VendParameters
 audience: Application User

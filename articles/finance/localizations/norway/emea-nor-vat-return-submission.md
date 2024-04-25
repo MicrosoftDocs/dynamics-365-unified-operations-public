@@ -4,8 +4,6 @@ description: This article explains how to submit a VAT return to the Altinn web 
 author: AdamTrukawka
 ms.date: 12/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Norway

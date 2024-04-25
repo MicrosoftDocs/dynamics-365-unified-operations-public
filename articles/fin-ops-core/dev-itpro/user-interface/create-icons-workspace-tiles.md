@@ -4,8 +4,6 @@ description: This article provides guidelines and recommendations for creating a
 author: jasongre
 ms.date: 01/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

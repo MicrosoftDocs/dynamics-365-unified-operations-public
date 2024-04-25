@@ -4,8 +4,6 @@ description: This article provides information about importing the requirements 
 author: AdamTrukawka
 ms.date: 03/24/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: France

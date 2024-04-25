@@ -6,8 +6,6 @@ description: The related voucher window shows the voucher from the offset compan
 author: aprilolson
 ms.date: 05/5/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

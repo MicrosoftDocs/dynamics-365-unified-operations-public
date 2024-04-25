@@ -6,8 +6,6 @@ description: When you use cycle count plans to create counting work, you can gui
 author: Mirzaab
 ms.date: 06/23/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable

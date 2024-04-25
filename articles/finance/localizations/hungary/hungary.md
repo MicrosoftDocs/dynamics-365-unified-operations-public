@@ -6,9 +6,6 @@ description: This article provides links to Microsoft Dynamics 365 Finance docum
 author: kfend
 ms.date: 09/04/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -4,8 +4,6 @@ description: Code that executes in business logic can make runtime modifications
 author: jasongre
 ms.date: 05/24/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 07/30/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14

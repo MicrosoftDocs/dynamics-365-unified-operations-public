@@ -6,9 +6,6 @@ description:  This article describes the process that customers who currently ru
 author: LaneSwenka
 ms.date: 07/21/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  
@@ -37,6 +34,9 @@ Finance and operations apps provide an upgrade path that customers who currently
 
 > [!IMPORTANT]
 > Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) can't currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren't sure whether your system can be upgraded, run the Upgrade analyzer tool.
+
+> [!TIP]
+> AIM (Accelerate, Innovate, Move) is a new campaign and offering that provides qualified on-premises business applications customers a tailored path to the cloud with access to a dedicated team of migration advisors, expert business value and technology assessments, investment offers, tools, and migration support.  Talk to your Microsoft representative or partner today to see if you qualify for various migration offers, including the AIM migration assessment. To learn more about the AIM assessment, please visit the [AIM Assessment page](/dynamics365/get-started/aim-migration/aim-assessment).
 
 ## Overview
 

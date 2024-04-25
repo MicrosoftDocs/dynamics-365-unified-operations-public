@@ -4,8 +4,6 @@ description: This article explains how to set up SPED-Reinf events by using Fisc
 author: AdamTrukawka
 ms.date: 05/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

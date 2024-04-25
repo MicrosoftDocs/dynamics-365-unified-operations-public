@@ -6,8 +6,6 @@ description: When you set up the Landed cost module, you can define several sets
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This article explains warranty agreements in Asset Management.
 author: johanhoffmann
 ms.date: 08/24/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

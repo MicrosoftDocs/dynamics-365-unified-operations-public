@@ -5,7 +5,7 @@ author: pnghub
 ms.author: gned
 ms.reviewer: johnmichalak
 ms.topic: conceptual
-ms.date: 03/14/2024
+ms.date: 03/29/2024
 ms.custom:
 
 ---
@@ -35,13 +35,10 @@ To prepare your environment to archive data, follow these steps.
 To archive data, follow these steps to confirm that the Dataverse archive add-in can be installed.
 
 1. In [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/applications), go to **Environments**, select the environment, and then select **Dynamics 365 apps**. Ensure that the Power Platform environment is a [Managed Environment](/power-platform/admin/managed-environment-overview).
-1. Update the **Finance and operations virtual entity** app if the status is **Update available**.
-> [!Note]
-> Known Issue: [Download msft_DataArchivalBaseComponents](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/blob/main/Dataverse/msft_DataArchivalBaseComponents/README.md) component to enable Finance and Operation data to synch to Dataverse long term retention
-
+2. Update the **Finance and operations virtual entity** app if the status is **Update available**.
  
-1. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
-2. Install Dynamics 365 Archive with Dataverse Long Term Retention - From the Power Platform admin center, Click on Install App and search for Dynamics 365 Archive with Dataverse Long Term Retention (Preview). Select and click install. If you already have the app installed, you should install the latest update.
+3. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
+4. Install Dynamics 365 Archive with Dataverse Long Term Retention - From the Power Platform admin center, Click on Install App and search for Dynamics 365 Archive with Dataverse Long Term Retention (Preview). Select and click install. If you already have the app installed, you should install the latest update.
 
 
 

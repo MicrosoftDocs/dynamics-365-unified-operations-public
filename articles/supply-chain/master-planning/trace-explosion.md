@@ -6,8 +6,6 @@ description: This article explains how you can use tracing to explore the causes
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
