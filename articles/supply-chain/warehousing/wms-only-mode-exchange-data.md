@@ -36,7 +36,7 @@ For consistent communication, several types of master and reference data must be
 - `SourceSystemProductSpecificUnitOfMeasureConversionMessages` – Used to create product-specific unit-of-measure conversions.
 - `SourceSystemProductBarcodeMessages` – Used to create the product bar code setup.
 
-Like shipment orders, these messages are validated during message processing and automatically link the product information to a [source system record](wms-only-mode-setup.md#source-systems) via the *Source system items* entity. The external system can use [business events](#business-events) to monitor how the status of shipment order messages changes during message processing.
+Like shipment orders, these messages are validated during message processing and automatically link the product information to a [source system record](wms-only-mode-setup.md#source-systems) via the *Source system items* entity. The external system can use [business events](#business-events) to monitor how the message state changes during message processing.
 
 Only one [source system record](wms-only-mode-setup.md#source-systems) can be marked as the external system that maintains the product master data that's related to the unique reference for a released product or item number. You can view and maintain this data by using the **Source system items** page.
 
