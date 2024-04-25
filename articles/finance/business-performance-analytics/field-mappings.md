@@ -3,7 +3,7 @@
 title: Business performance analytics business field mappings
 description: This article provides information about field mappings in business performance analytics.
 author: carylhenry
-ms.author: caryl henry
+ms.author: carylhenry
 ms.reviewer: twheeloc 
 ms.date: 4/24/2024
 ms.topic: article 
