@@ -1,16 +1,16 @@
 ---
 title: Privacy overview
-description: This article provides information about the user log functionality in finance and operations apps.
+description: Learn about the user log functionality in finance and operations apps, including a table that outlines scenarios and implementations for various roles.
 author: ToddLefor
-ms.date: 07/23/2019
-ms.topic: overview
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: tlefor
+ms.topic: overview
+ms.date: 07/23/2019
+ms.reviewer: josaw
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Privacy overview
