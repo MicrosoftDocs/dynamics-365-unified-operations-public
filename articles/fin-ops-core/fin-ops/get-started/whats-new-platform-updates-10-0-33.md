@@ -1,21 +1,19 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.33 of finance and operations apps (April 2023)
-description: This article lists the features that are included in the platform updates for version 10.0.33 of finance and operations apps.
+description: Learn about the features that are included in the platform updates for version 10.0.33 of finance and operations apps released in April 2023.
 author: twheeloc
-ms.date: 04/12/2024
+ms.author: sericks
 ms.topic: conceptual
+ms.date: 04/12/2024
 ms.custom: 
   - bap-template
   - evergreen
-audience: Application User
 ms.reviewer: sericks
+audience: Application User
 ms.search.region: Global
-ms.author: sericks
 ms.search.validFrom: 2022-10-14
-
 ---
+
 # Platform updates for version 10.0.33 of finance and operations apps (April 2023)
 
 [!include [banner](../../../finance/includes/banner.md)]
