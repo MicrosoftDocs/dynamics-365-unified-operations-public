@@ -6,8 +6,7 @@ description: This article explains the Inventory posting tab on the Inventory po
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
 
 # optional metadata
 

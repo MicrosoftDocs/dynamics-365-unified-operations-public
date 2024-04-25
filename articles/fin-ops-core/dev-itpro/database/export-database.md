@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Export a database
-description: This article explains how to export a database for finance and operations.
+description: Learn how to export a database for finance and operations, including processes for self-service exporting of databases and known issues.
 author: LaneSwenka
-ms.date: 11/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 11/13/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Export a database

@@ -6,9 +6,6 @@ description: This article provides information about Tax engine applicability.
 author: EricWangChen
 ms.date: 10/07/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability

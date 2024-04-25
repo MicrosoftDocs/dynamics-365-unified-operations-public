@@ -6,8 +6,6 @@ description: This article describes the hierarchy that is used to identify the p
 author: johanhoffmann
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

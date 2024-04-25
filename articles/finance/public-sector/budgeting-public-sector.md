@@ -6,9 +6,6 @@ description: This overview introduces you to the budgeting functionality that is
 author: panolte
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetControlApportionments, BudgetControlConfiguration, BudgetControlStatistics, BudgetParameters

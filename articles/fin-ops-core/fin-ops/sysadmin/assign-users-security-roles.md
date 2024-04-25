@@ -6,8 +6,6 @@ description: To access finance and operations apps, users must be assigned to se
 author: Peakerbl
 ms.date: 02/09/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

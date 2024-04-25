@@ -4,8 +4,6 @@ description: This article describes how to set up and use Dynamics 365 Finance t
 author: AdamTrukawka
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Spain

@@ -6,8 +6,6 @@ description: This procedure walks through creating channel-specific sales price 
 author: josaw1
 ms.date: 08/12/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

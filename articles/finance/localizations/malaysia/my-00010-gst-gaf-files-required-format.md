@@ -6,8 +6,6 @@ description: This procedure walks you through generating the Malaysia GAF file.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -51,7 +49,7 @@ This procedure walks you through generating the Malaysia GAF file. You must be i
     * Save the GAF xml report.  
     * Click Save as and navigate to the location to save the file.    
     * Open and validate the GAF xml file.  
-    * Click Open and select Internet explorer'.  Validate the GAF xml file and then close the xml file.    
+    * Click Open and select Microsoft Edge.  Validate the GAF xml file and then close the xml file.    
 
 
 

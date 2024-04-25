@@ -4,8 +4,6 @@ description: This article points to topics that describe the new and changed fea
 author: johnmichalak
 ms.date: 01/03/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

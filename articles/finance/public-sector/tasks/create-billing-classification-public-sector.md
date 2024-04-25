@@ -6,8 +6,6 @@ description: Public-sector organizations can use billing classifications to help
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

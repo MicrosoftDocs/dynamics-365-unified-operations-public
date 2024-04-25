@@ -6,8 +6,6 @@ description: When you create cover and signature pages for a payment report, you
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

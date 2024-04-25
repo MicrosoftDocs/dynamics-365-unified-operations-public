@@ -6,8 +6,6 @@ description: This article describes how you can use immediate replenishment to r
 author: Mirzaab
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

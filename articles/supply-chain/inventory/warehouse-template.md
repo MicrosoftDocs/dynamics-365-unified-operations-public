@@ -6,8 +6,6 @@ description: This article explains how to set up a warehouse by using a warehous
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog

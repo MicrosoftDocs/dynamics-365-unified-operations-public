@@ -6,8 +6,6 @@ description: This article provides guidelines for using total cost allocation (T
 author: JennySong-SH
 ms.date: 04/15/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

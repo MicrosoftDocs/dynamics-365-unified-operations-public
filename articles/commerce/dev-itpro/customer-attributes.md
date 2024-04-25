@@ -4,8 +4,6 @@ description: This article provides information about customer attributes and exp
 author: josaw1
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: global

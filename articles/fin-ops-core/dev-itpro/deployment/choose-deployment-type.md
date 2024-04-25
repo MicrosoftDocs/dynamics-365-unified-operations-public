@@ -1,19 +1,18 @@
 ---
 title: Deployment options
-description: Finance and operations apps can run in the cloud or on-premises. This article provides information about the different deployment options.
+description: Finance and operations apps can run in the cloud or on-premises. Learn about the cloud and on-premises deployment options and the benefits of both options.
 author: LaneSwenka
-ms.date: 11/30/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 11/30/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.assetid: 
 ---
+
 # Deployment options
 
 [!include [banner](../includes/banner.md)]

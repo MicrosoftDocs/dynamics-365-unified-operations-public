@@ -5,7 +5,7 @@ author: josaw
 ms.date: 09/06/2019
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2019-07-15

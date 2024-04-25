@@ -6,8 +6,6 @@ description: This article explains how to get an overview of target entities in 
 author: johanhoffmann
 ms.date: 09/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

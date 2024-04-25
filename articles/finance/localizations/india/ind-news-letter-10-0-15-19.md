@@ -6,9 +6,6 @@ description: This article describes new or changed functionality for Indian Good
 author: prabhatb
 ms.date: 06/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

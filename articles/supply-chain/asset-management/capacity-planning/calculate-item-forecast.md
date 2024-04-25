@@ -6,8 +6,6 @@ description: This article explains how to calculate item forecast in Asset Manag
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,16 +6,13 @@ description: This article points you to a report that lists the license codes an
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c
 ms.search.region: Global

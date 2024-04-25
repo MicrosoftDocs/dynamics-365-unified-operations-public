@@ -6,9 +6,6 @@ description: This article describes new or changed functionality that was releas
 author: prabhatb
 ms.date: 10/08/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

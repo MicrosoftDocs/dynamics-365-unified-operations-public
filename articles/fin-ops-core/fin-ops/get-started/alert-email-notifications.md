@@ -6,9 +6,6 @@ description: This article provides information about how to set up rules that se
 author: RichdiMSFT
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EventCreateRule

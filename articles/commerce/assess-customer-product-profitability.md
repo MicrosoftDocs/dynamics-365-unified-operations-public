@@ -4,8 +4,6 @@ description: This article explains how you can use the in-memory and real-time a
 author: ashishmsft
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

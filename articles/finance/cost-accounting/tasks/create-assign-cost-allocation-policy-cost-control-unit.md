@@ -6,8 +6,6 @@ description: Use this procedure to create and assign a cost allocation policy an
 author: twheeloc
 ms.date: 06/28/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

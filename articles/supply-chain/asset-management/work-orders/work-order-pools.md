@@ -6,8 +6,6 @@ description: This article describes how to work with work order pools in Asset M
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

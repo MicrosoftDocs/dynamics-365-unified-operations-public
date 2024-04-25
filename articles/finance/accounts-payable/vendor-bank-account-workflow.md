@@ -1,13 +1,13 @@
 ---
 title: Vendor bank account workflow
-description: This article describes how to set up vendor bank account approval.
-author: GalynaFedorova
-ms.author: gfedorova
-ms.reviewer: kamaybac
-ms.search.form: VendBankAccount
+description: Learn about how to set up vendor bank account approval, including prerequisites and step-by-step processes for setting up and updating vendor bank account approvals.
+author: kamaybac
+ms.author: kamaybac
 ms.topic: how-to
 ms.date: 02/15/2023
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: VendBankAccount
 ---
 
 # Vendor bank account workflow

@@ -6,9 +6,6 @@ description: This article explains how to move your subscriptions and Lifecycle 
 author: RicardoCaeiroPro
 ms.date: 07/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

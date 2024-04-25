@@ -6,15 +6,12 @@ description: This article provides an overview for Microsoft Power Platform inte
 author: Sunil-Garg
 ms.date: 05/19/2022
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global

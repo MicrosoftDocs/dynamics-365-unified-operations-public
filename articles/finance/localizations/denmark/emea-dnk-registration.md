@@ -4,8 +4,6 @@ description: This article provides detailed information about how Dynamics 365 F
 author: liza-golub
 ms.date: 01/31/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Denmark

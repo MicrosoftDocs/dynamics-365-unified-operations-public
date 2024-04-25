@@ -6,9 +6,6 @@ description: This article provides information about generating a financial repo
 author: jinniew
 ms.date: 03/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

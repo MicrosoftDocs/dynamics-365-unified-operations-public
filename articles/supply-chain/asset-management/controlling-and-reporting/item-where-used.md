@@ -6,8 +6,6 @@ description: This article explains how to get an overview of where an item is us
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

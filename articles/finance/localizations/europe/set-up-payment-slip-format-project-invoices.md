@@ -6,8 +6,6 @@ description: This article explains how to attach printed payment slips to projec
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,8 +4,6 @@ description: This article describes how you, as a data controller, can use Micro
 author: shielasogge
 ms.date: 02/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

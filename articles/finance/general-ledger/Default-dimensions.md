@@ -3,12 +3,9 @@
 
 title: Financial dimensions and posting 
 description: This article explains the components that make up the chart of accounts and how the components work together.
-author: aprilolson
+author: rcarlson
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerChartofAccounts,DimensionDetails
@@ -20,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 

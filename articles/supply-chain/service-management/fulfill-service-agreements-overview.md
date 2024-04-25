@@ -6,8 +6,6 @@ description: This article provides an overview of the tasks to fulfill service a
 author: sorenva
 ms.date: 05/03/2018
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

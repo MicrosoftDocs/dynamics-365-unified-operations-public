@@ -4,8 +4,6 @@ description: The article describes how to associate a workflow document class wi
 author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global

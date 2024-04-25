@@ -1719,9 +1719,9 @@
           href: inventory/inventory-visibility-product-search.md
         - name: The Inventory Visibility app in Power Apps
           items:
-          - name: Inventory Visibility app user interface versions (preview)
+          - name: Inventory Visibility app user interface versions
             href: inventory/inventory-visibility-ui-version-2.md
-          - name: Use the Inventory Visibility app UI version 2 (preview)
+          - name: Use the Inventory Visibility app UI version 2
             href: inventory/inventory-visibility-power-platform.md
           - name: Use the Inventory Visibility app UI version 1
             href: inventory/inventory-visibility-power-platform-v1.md
@@ -1737,6 +1737,8 @@
           href: inventory/inventory-visibility-preload-on-hand.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
           href: inventory/inventory-onhand-consistency-check.md
+        - name: Inventory Visibility adjustment offset
+          href: inventory/inventory-visibility-adjustment-offset.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation
@@ -1865,6 +1867,8 @@
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
+        - name: Intercompany planning groups for demand forecasting
+          href: demand-planning/intercompany-planning-groups-demand-forecasting.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Coverage time fences
@@ -1943,6 +1947,8 @@
           items:
           - name: Demand forecasting overview
             href: master-planning/introduction-demand-forecasting.md
+          - name: Intercompany planning groups for demand forecasting
+            href: demand-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Demand forecasting setup
             href: master-planning/demand-forecasting-setup.md
           - name: Generate a statistical baseline forecast
@@ -2047,6 +2053,11 @@
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
         href: demand-planning/export-data.md
+      - name: Rolling forecasts
+        href: demand-planning/rolling-forecasts.md
+      - name: Intercompany planning groups for demand forecasting
+        href: demand-planning/intercompany-planning-groups-demand-forecasting.md
+     
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
@@ -3499,7 +3510,7 @@
           items:
           - name: Plan loads using hub consolidation overview
             href: transportation/plan-loads-hub-consolidation.md
-          - name: Plan loads and shipments using the Load planning workbench
+          - name: Plan loads and shipments using the outbound load planning workbench
             href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: USMCA certification of origin
           href: transportation/usmca-certification-of-origin.md
@@ -3735,7 +3746,7 @@
             href: warehousing/consolidate-shipments-automatic.md
           - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden
             href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the load planning workbench
+          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the outbound load planning workbench
             href: warehousing/consolidate-shipments-load-planning-workbench.md
           - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
             href: warehousing/consolidate-shipments-manual-workbench.md

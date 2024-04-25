@@ -6,8 +6,6 @@ description: This procedures walks through how to add a main account to an exist
 author: aprilolson
 ms.date: 03/29/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

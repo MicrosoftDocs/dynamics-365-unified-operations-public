@@ -4,8 +4,6 @@ description: This article describes how to embed a credit card receipt from a pa
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

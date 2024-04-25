@@ -6,8 +6,6 @@ description: This article shows how to set up financial dimension default templa
 author: aprilolson
 ms.date: 07/30/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

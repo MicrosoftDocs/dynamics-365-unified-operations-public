@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Configure the Warehousing app for on-premises deployments
-description: This article describes the prerequisites for the warehousing app for on-premises deployments.
+description: Learn about the prerequisites for the warehousing app for on-premises deployments, including an overview of certification.
 author: faix
-ms.date: 04/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: osfaixat
+ms.topic: article
+ms.date: 04/05/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global 
 ms.search.validFrom: 2017-12-04
+ms.search.form: 
 ms.dyn365.ops.version: 7.3
-
 ---
+
 # Configure the Warehousing app for on-premises deployments
 
 [!include [banner](../includes/banner.md)]
@@ -60,8 +48,8 @@ After a device is authenticated with Finance + Operations (on-premises), each wo
 For details about each authentication method and how to set it up, see the following articles:
 
 
-- **User-based authentication:** [User-based authentication for the Warehouse Management mobile app](warehousing-onprem-serviceauth.md)
-- **Service-based authentication (deprecated):** [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
+- **User-based authentication:** [User-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
+- **Service-based authentication (deprecated):** [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-serviceauth.md)
 
 > [!IMPORTANT]
 > Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](../../../supply-chain/warehousing/warehouse-app-user-based-auth-faq.md).

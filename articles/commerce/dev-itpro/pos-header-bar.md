@@ -4,8 +4,6 @@ description: This article explains how to add a new custom button to the POS hea
 author: josaw1
 ms.date: 09/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

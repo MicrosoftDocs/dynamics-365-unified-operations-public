@@ -4,8 +4,6 @@ description: This article provides information about the deprecation of Microsof
 author: kfend
 ms.date: 10/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

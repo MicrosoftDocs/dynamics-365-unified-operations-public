@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Certificate rotation
-description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
+description: Learn how to place existing certificates and update the references within the environment to use the new certificates.
 author: faix
-ms.date: 08/16/2023
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
+ms.topic: article
+ms.date: 08/16/2023
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global 
 ms.search.validFrom: 2019-04-30
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 25 
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Certificate rotation

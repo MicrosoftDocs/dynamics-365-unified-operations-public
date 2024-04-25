@@ -6,8 +6,6 @@ description: This procedure demonstrates how to process customer rebates from cl
 author: Henrikan
 ms.date: 06/25/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,8 +6,6 @@ description: This article explains how to create a new fixed asset group.
 author: moaamer
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

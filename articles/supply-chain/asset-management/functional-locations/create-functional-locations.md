@@ -6,8 +6,6 @@ description: This article explains how to create a functional location in Asset 
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

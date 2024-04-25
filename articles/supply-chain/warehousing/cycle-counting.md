@@ -6,8 +6,6 @@ description: This article describes how you can use cycle counting with the ware
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

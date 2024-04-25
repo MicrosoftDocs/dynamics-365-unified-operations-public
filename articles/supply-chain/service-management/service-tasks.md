@@ -6,8 +6,6 @@ description: Use service tasks to describe the task to be completed during a ser
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

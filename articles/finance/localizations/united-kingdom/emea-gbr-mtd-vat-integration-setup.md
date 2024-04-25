@@ -4,8 +4,6 @@ description: This article explains how to set up Making Tax Digital for value-ad
 author: AdamTrukawka
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom

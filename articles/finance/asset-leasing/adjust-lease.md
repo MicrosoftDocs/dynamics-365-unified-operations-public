@@ -6,9 +6,6 @@ description: The article explains how to adjust a lease. Adjustment might be req
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

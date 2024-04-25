@@ -6,8 +6,6 @@ description: This article explains how to grant workers permission to prepare pu
 author: Henrikan
 ms.date: 08/20/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

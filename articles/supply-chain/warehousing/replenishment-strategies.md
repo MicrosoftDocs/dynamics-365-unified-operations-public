@@ -6,8 +6,6 @@ description: This article provides information about replenishment strategies an
 author: Mirzaab
 ms.date: 10/29/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

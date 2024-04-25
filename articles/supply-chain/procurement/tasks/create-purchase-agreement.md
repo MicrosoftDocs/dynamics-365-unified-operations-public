@@ -6,8 +6,6 @@ description: This article guides you through the creation of a purchase agreemen
 author: Henrikan
 ms.date: 07/18/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,9 +6,6 @@ description: In this article, you will learn about lookup features and will rece
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

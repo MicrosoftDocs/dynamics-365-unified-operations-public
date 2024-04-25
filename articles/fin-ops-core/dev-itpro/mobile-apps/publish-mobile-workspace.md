@@ -6,16 +6,13 @@ description: This article describes the steps that system administrators must fo
 author: sericks007
 ms.date: 05/26/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysAppDesignerPane
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
 ms.search.region: Global

@@ -74,7 +74,7 @@ You only have to create one Microsoft Entra ID app registration. All your device
 
 ## How many Microsoft Entra ID users do I need?
 
-We recommend that you set up one Microsoft Entra ID user for each device. This approach makes it easy to block the Microsoft Entra ID user for just one device if that device is stolen or damaged. (For more information, see [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).) However, you can use a single Microsoft Entra ID user for all your devices if you prefer. Your choice depends on your licensing strategy and risk tolerance.
+We **strongly recommend** that you set up one Microsoft Entra ID user for each device. This approach makes it easy to block the Microsoft Entra ID user for just one device if that device is stolen or damaged. (For more information, see [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).) However, if you prefer, it's possible to use a single Microsoft Entra ID user for all your devices. Keep in mind, though, that this setup can lead to confusion in Supply Chain Management; for example, this setup associates all warehouse processes with a single system user, even when multiple warehouse workers process work using multiple warehouse devices. Your choice depends on your licensing strategy and risk tolerance.
 
 ## Do I have to map users on the Microsoft Entra ID applications page in Supply Chain Management when I use user-based authentication?
 

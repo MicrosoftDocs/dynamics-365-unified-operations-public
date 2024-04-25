@@ -29,7 +29,7 @@ In this tutorial, you’ll take a tour of the Fleet Management sample. The overv
 ## Installing the demo data
 To work with the sample, you must install the provided demo data.
 
-1.  In the virtual machine (VM), open Internet Explorer and navigate to the application's base URL.
+1.  In the virtual machine (VM), open Microsoft Edge and navigate to the application's base URL.
 2.  Sign in.
 3.  On the dashboard, open the navigation pane and go to **Fleet Management \> Setup\> Fleet setup**. 
 
@@ -47,7 +47,7 @@ To work with the sample, you must install the provided demo data.
 ## Use the Fleet Management application to rent a vehicle
 Remember that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
 
-1.  Open Internet Explorer, and sign into the finance and operations application.
+1.  Open Microsoft Edge, and sign into the finance and operations application.
 2.  To return to the **Dashboard**, select the product name in the top-left corner of the page.
 
     > [!div class="mx-imgBorder"]
