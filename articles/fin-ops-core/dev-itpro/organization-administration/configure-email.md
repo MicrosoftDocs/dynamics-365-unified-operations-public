@@ -6,9 +6,6 @@ description: The behavior of the email subsystem is influenced by a combination 
 author: jasongre
 ms.date: 01/04/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysEmailParameters

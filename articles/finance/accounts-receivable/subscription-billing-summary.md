@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Subscription billing overview
-description: This article describes subscription billing in Microsoft Dynamics 365 Finance.
+description: Learn about subscription billing in Microsoft Dynamics 365 Finance, including overviews of various types of billing modules.
 author: JodiChristiansen
-ms.date: 03/13/2024
-ms.topic: article
-
-
-# optional metadata
-
-ms.search.form: CustPosting, CustVendExternalItem
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 03/13/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-02-09
+ms.search.form: CustPosting, CustVendExternalItem
 ms.dyn365.ops.version: 10.0.25
-
+ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ---
 
 # Subscription billing overview

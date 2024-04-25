@@ -4,8 +4,6 @@ description: This article walks you through the process of setting up and calcul
 author: AdamTrukawka
 ms.date: 05/18/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Poland

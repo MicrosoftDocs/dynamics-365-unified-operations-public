@@ -4,7 +4,6 @@ description: This article explains how to add a data filter in the German audit 
 author: AdamTrukawka
 ms.date: 02/09/2021
 ms.topic: article
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Austria, Germany

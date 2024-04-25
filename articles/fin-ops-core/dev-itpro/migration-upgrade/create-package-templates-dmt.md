@@ -4,8 +4,6 @@ description: This article explains how to create package templates that you can 
 author: peakerbl
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

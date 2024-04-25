@@ -4,8 +4,6 @@ description: This article explains how to configure up Italy-specific settings f
 author: AdamTrukawka
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy

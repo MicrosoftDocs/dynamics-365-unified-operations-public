@@ -6,8 +6,6 @@ description: The performance journal contains information on how employees met t
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -28,7 +26,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Add to your performance journal and send praise to someone
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

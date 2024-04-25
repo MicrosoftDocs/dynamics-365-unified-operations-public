@@ -6,9 +6,6 @@ description: This article provides general information about questionnaires, and
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Questionnaires
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

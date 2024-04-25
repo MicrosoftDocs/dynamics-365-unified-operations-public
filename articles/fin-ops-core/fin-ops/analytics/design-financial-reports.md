@@ -4,8 +4,6 @@ description: This article provides exercises that walk you through viewing and c
 author: jcart1106
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

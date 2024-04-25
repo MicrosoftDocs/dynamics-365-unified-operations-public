@@ -4,8 +4,6 @@ description: This article provides information about the user log functionality 
 author: ToddLefor
 ms.date: 07/23/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

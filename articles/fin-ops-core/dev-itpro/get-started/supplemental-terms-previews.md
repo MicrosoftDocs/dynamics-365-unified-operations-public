@@ -6,9 +6,6 @@ description: Supplemental Terms of Use for Microsoft Dynamics 365 Previews.
 author: ShellyBakke
 ms.date: 09/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

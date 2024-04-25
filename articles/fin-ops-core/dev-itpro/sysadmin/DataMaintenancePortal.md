@@ -6,9 +6,6 @@ description: This article provides details about how to use simple scheduling pr
 author: RyanCCarlson2
 ms.date: 03/02/2021
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DataMaintenance

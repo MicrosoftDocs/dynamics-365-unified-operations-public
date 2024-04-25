@@ -6,8 +6,6 @@ description: Sales tax is calculated and posted to main accounts that are specif
 author: twheeloc
 ms.date: 07/01/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

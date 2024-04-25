@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Accounting distributions
-description: This article provides information about accounting distributions and describes available processing options.
+description: Learn about accounting distributions and describes available processing options, including an overview on distribute amounts.
 author: sunfzam
-ms.date: 06/13/2023
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AccountingDistribution
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/13/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: AccountingDistribution
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 ---
 
 # Accounting distributions

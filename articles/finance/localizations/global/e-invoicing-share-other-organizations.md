@@ -4,8 +4,6 @@ description: This article explains how to share Globalization features with exte
 author: gionoder
 ms.date: 02/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article gives an overview of the functionality for postponed r
 author: EvgenyPopovMBS
 ms.date: 06/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Brazil

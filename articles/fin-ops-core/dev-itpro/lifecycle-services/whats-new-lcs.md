@@ -6,9 +6,6 @@ description: This article provides links to the release plans, major announcemen
 author: laneswenka
 ms.date: 06/30/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -4,8 +4,6 @@ description: In this tutorial, you'll create a new tile in the summary section o
 author: jasongre
 ms.date: 11/30/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: Learn how to create shareable, secured URLs to forms and records.
 author: josaw1
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

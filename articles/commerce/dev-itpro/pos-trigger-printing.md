@@ -4,8 +4,6 @@ description: This article describes how to use triggers to capture events that o
 author: josaw1
 ms.date: 11/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article provides a link to the list of available symbols.
 author: jasongre
 ms.date: 03/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

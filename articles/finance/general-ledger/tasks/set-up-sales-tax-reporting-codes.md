@@ -6,8 +6,6 @@ description: The Sales tax reporting codes refer to a field number that's listed
 author: twheeloc
 ms.date: 08/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

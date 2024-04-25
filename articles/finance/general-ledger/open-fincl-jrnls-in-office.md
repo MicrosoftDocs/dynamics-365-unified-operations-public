@@ -6,9 +6,6 @@ description: This article describes issues that might occur when you create cust
 author: kweekley
 ms.date: 05/14/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

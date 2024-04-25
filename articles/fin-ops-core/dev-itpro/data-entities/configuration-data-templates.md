@@ -6,9 +6,6 @@ description: This article describes configuration data templates and explains ho
 author: rcarlson
 ms.date: 08/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: Platform update 7
 # Configuration data templates
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace.
 

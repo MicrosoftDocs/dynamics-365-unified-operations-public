@@ -4,8 +4,6 @@ description: This article provides information about sales taxes for Saudi Arabi
 author: AdamTrukawka
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia

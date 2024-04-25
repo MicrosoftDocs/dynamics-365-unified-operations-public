@@ -6,9 +6,6 @@ description: This article provides an overview of case management, including pla
 author: kfend
 ms.date: 11/20/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CaseDetail

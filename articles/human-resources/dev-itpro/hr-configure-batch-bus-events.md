@@ -14,8 +14,6 @@ ms.custom:
 
 # Configure batch-based business events
 
-[!INCLUDE [PEAP](../../includes/peap-2.md)]
-
 Customers can configure business events to run in a batch. This capability gives customers an easy way to configure and set up business events that are linked to a point in time. Business events that are available to run in a batch can be found at **Human resources shared parameters** \> **Business events**.
 
 ## Examples

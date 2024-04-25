@@ -6,9 +6,6 @@ description: This article provides details about the end of  mainstream support 
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

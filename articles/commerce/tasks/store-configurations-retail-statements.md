@@ -6,8 +6,6 @@ description: This procedure walks through configurations for the store that affe
 author: jashanno
 ms.date: 08/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

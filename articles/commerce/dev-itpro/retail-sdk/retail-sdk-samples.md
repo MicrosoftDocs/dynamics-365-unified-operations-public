@@ -4,8 +4,6 @@ description: This article describes how to extend Commerce store receipts.
 author: josaw1
 ms.date: 03/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
