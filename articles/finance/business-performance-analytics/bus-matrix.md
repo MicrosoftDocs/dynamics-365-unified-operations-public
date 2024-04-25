@@ -3,7 +3,7 @@
 title: Business performance analytics business matrix data model
 description: This article provides information about the relationship between facts and dimensions as part of the Business performance analytics data model.
 author: carylhenry
-ms.author: caryl henry
+ms.author: carylhenry
 ms.reviewer: twheeloc 
 ms.date: 4/24/2024
 ms.topic: article 
