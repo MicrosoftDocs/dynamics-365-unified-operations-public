@@ -6,9 +6,6 @@ description: This article explains how organizations in the public sector can us
 author: v-kiarnd
 ms.date: 11/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField

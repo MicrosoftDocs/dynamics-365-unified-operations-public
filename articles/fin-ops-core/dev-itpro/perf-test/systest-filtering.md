@@ -4,8 +4,6 @@ description: This article outlines attributes that can be used with SysTest clas
 author: gianugo
 ms.date: 01/22/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

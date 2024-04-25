@@ -4,8 +4,6 @@ description: This article provides information about how to create a one-time ve
 author: TaylorVH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

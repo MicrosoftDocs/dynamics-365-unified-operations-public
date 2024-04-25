@@ -6,9 +6,6 @@ description: This article provides information about data management in finance 
 author: peakerbl
 ms.date: 06/20/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -32,8 +29,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes how you can use the data management framework to manage data entities and data entity packages in finance and operations.
 

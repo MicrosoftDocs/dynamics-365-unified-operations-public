@@ -4,8 +4,6 @@ description: This procedure shows how to use a previously defined record templat
 author: peakerbl
 ms.date: 08/12/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global

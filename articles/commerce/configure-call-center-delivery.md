@@ -6,9 +6,6 @@ description: This article describes how to set up modes of delivery and charges 
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters

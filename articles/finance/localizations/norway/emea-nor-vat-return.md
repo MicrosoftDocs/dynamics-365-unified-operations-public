@@ -4,8 +4,6 @@ description: This article provides information about the VAT return with direct 
 author: AdamTrukawka
 ms.date: 03/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Norway

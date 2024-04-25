@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 01/29/2024
+ms.date: 04/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom:
@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default |
-| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | [Inventory Visibility adjustment offset](../inventory/inventory-visibility-adjustment-offset.md) | Enabled by default |
 | Planning | Item substitution for formulas in Planning Optimization | [Item substitution for formulas](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution (Plan group) support for Planning Optimization* |
 | Warehouse management | [Optimize the customer returns process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-customer-returns-process) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default |
 | Warehouse management | Username/password and single-sign-on authentication for mobile devices | [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md) | Enabled by default |
@@ -71,7 +71,7 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Inventory management | [Inventory Visibility diagnostic tool](../inventory/inventory-visibility-diagnostic-tool.md) |
-| Inventory management | [Use the Inventory Visibility app UI version 2 (preview)](../inventory/inventory-visibility-power-platform.md) – Many other articles about the Inventory Visibility Add-in have also been updated to reflect the new UI for the Inventory Visibility app in Power Apps. |
+| Inventory management | [Use the Inventory Visibility app UI version 2](../inventory/inventory-visibility-power-platform.md) – Many other articles about the Inventory Visibility Add-in have also been updated to reflect the new UI for the Inventory Visibility app in Power Apps. |
 | Master planning | [Safety stock pegging options](../master-planning/safety-stock-pegging.md) |
 | Sales and marketing | [Calculate sales totals when prices include sales tax](../sales-marketing/sales-tax-calculation.md) |
 | Warehouse management | [Automatic rewaving of nonallocated shipment lines](../warehousing/auto-rewave-shipments.md) |

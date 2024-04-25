@@ -6,9 +6,6 @@ description: This article explains how to make Entity store available as a Micro
 author: MilindaV2
 ms.date: 09/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

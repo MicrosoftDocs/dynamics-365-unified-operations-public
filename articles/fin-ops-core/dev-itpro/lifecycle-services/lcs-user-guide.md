@@ -6,9 +6,6 @@ description: This article provides information about the tools that are availabl
 author: angelmarshall
 ms.date: 07/02/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

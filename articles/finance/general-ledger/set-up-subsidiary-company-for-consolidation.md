@@ -6,9 +6,6 @@ description: This article explains how to work with charts of accounts for conso
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

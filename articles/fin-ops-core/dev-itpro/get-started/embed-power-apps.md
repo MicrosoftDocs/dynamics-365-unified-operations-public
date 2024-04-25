@@ -6,9 +6,6 @@ description: This article explains how to embed canvas apps from Microsoft Power
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl

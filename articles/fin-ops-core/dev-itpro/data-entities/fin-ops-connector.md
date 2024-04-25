@@ -6,9 +6,6 @@ description: This article provides information about the Application Connector f
 author: pnghub
 ms.date: 03/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

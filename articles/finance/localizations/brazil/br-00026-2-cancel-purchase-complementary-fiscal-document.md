@@ -4,8 +4,6 @@ description: You can cancel an incorrect purchase complementary fiscal document 
 author: AdamTrukawka
 ms.date: 06/26/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

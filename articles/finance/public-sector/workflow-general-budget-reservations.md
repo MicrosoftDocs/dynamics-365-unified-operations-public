@@ -6,9 +6,6 @@ description: This article explains how to set up general budget reservations and
 author: AlexRenney
 ms.date: 04/24/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN

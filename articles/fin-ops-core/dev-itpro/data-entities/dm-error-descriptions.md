@@ -6,9 +6,6 @@ description: This article describes the error messages that you might encounter 
 author: peakerbl
 ms.date: 01/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -29,8 +26,6 @@ ms.dyn365.ops.version: Platform update 20
 # Data management error descriptions and known limitations
 
 [!include [banner](../includes/banner.md)]
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article documents the scenarios where specific errors are seen. It doesn't provide a complete list of errors and scenarios. However, keep checking back, because the list is continuously updated.
 

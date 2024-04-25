@@ -4,8 +4,6 @@ description: This article explains how to configure and generate the SPT Masa PP
 author: AdamTrukawka
 ms.date: 11/30/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Indonesia

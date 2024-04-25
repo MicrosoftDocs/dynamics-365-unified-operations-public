@@ -6,9 +6,6 @@ description: This article explains how to configure your system to use the capab
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

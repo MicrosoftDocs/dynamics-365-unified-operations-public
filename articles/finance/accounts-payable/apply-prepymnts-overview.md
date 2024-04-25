@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: Automatically apply prepayments to vendor invoices
-description: This article describes the capability for automatically applying prepayments to vendor invoices.
+description: Learn about the capability for automatically applying prepayments to vendor invoices, which is created for purchase orders as parts of purchase agreements.
 author: sunfzam
-ms.date: 10/19/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shpandey
+ms.topic: overview
+ms.date: 10/19/2021
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-
 ---
 
 # Automatically apply to vendor invoices

@@ -4,8 +4,6 @@ description: This article provides information about how to maintain not valuabl
 author: AdamTrukawka
 ms.date: 11/06/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

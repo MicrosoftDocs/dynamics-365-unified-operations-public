@@ -6,8 +6,6 @@ description: A cost controller can use this procedure to map a cost element dime
 author: twheeloc
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

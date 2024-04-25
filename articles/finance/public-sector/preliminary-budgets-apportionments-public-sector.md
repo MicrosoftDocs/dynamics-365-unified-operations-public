@@ -4,8 +4,6 @@ description: This article covers creating a preliminary budget, and setting up b
 author: velofog
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article explains how to set up payment amount types in Asset l
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetLeaseIndexRevaluation

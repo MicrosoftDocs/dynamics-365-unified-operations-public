@@ -4,8 +4,6 @@ description: Every month, for each fiscal establishment, the tax credit amount i
 author: AdamTrukawka
 ms.date: 06/26/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

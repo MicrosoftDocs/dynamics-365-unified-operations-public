@@ -4,8 +4,6 @@ description: Finance and operations apps provides many self-service support opti
 author: kfend
 ms.date: 10/02/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: China (PRC)

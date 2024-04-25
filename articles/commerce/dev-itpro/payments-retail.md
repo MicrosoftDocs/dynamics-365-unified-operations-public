@@ -4,8 +4,6 @@ description: This article answers frequently ask questions about payment options
 author: josaw1
 ms.date: 05/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: If you use books, you can change the depreciation conventions for g
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
