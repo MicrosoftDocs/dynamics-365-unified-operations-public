@@ -5,7 +5,6 @@ author: rcarlson
 ms.author: rcarlson
 ms.topic: article
 ms.date: 12/20/2017
-ms.topic: article
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
