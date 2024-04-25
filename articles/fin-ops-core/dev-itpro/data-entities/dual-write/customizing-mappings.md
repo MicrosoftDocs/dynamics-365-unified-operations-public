@@ -6,7 +6,7 @@ ms.date: 05/30/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: twheeloc
-audience: Developer
+ms.author: nhelgren
 ms.search.region: Global
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
