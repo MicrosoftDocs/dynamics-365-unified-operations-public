@@ -1,13 +1,13 @@
 ---
 title: Version control, metadata search, and navigation
-description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models.
-author: gianugo
-ms.date: 03/31/2023
+description: This tutorial walks you through configuring Azure DevOps to enable source control on your models and helps you learn about productivity features in development tools.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-audience: Developer
+ms.date: 03/31/2023
 ms.reviewer: josaw
+audience: Developer
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d

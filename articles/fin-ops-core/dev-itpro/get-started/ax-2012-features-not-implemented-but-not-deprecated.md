@@ -6,9 +6,6 @@ description: This article lists features of Microsoft Dynamics AX 2012 that were
 author: sericks007
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

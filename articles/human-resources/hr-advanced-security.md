@@ -6,9 +6,6 @@ description: This article explains how to set up worker access by legal entity.
 author: twheeloc
 ms.date: 11/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace
@@ -47,16 +44,8 @@ For example, a user has access to the **Worker** page and has access only to the
 
 The information that's shown varies, depending on the application that you're using.
 
-## Dynamics 365 Human Resources stand-alone
 
-If the feature for restricting access to worker information is enabled, the restricted user will see a blank value in some lists that contain the worker's name.
-
-For example, a user who has access only to the USMF legal entity will experience the following behavior:
-
-- In the **Active positions** list, the **Worker** column will be blank for Aaron's position, because the user doesn't have access to employees in the USSI legal entity.
-- If the user drills down on the worker's name, a blank **Worker** page will appear.
-
-## Dynamics 365 Human Resources on Finance infrastructure
+## Dynamics 365 Human Resources 
 
 If the feature for restricting access to worker information is enabled, the restricted user will see the worker's name in some lists.
 
@@ -66,7 +55,7 @@ For example, a user who has access only to the USMF legal entity will experience
 - If the user drills down on the worker's name, a blank **Worker** page will appear.
 
 > [!TIP]
-> If you're using Dynamics 365 Human resources on Finance infrastructure and want restricted users to see blank values for worker names, you can add the **Restrict access to workers** security privilege to the user roles on the **Security configuration** page.
+> If you're using Dynamics 365 Human resources and want restricted users to see blank values for worker names, you can add the **Restrict access to workers** security privilege to the user roles on the **Security configuration** page.
 
 After you enable the feature, you must complete some extra steps to set permissions for each user whose view must be restricted.
 

@@ -6,9 +6,6 @@ description: This article will help you learn how to post Tax Deducted at Source
 author: EricWangChen
 ms.date: 07/08/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

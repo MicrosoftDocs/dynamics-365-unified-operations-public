@@ -6,9 +6,6 @@ description: This article describes the Cash overview Power BI content. It expla
 author: ericwangchen
 ms.date: 08/24/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  BankTreasurerWorkspace

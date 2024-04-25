@@ -6,9 +6,6 @@ description: This article provides an overview of the shortcut key combinations 
 author: jasongre
 ms.date: 01/29/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

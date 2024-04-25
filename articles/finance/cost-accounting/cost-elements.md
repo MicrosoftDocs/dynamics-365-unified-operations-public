@@ -6,9 +6,6 @@ description: As one of the core pillars in Cost accounting, cost element dimensi
 author: AndersGirke
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMDimension

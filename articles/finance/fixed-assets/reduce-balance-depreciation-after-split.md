@@ -6,9 +6,6 @@ description: This article describes the method that is used in Fixed assets to c
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

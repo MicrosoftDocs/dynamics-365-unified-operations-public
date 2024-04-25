@@ -4,9 +4,6 @@ description: This article provides information about additional tasks that you c
 author: AngelMarshall 
 ms.date: 06/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

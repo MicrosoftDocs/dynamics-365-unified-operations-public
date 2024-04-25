@@ -6,9 +6,6 @@ description: You can settle the amount remaining from settlement activity by app
 author: angelad116
 ms.date: 01/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans

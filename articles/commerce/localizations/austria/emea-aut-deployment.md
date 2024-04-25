@@ -4,8 +4,6 @@ description: This article is a deployment guide for the Commerce localization fo
 author: josaw1
 ms.date: 01/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Austria

@@ -4,8 +4,6 @@ description: This article provides information about using Task guides and BPM t
 author: gianugo
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

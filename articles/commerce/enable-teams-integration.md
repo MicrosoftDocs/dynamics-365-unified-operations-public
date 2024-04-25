@@ -4,8 +4,6 @@ description: This article describes how to enable Microsoft Dynamics 365 Commerc
 author: gvrmohanreddy
 ms.date: 02/17/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

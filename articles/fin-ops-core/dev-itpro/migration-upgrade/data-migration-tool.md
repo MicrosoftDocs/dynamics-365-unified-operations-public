@@ -4,8 +4,6 @@ description: This article describes how to use the Data migration tool (DMT) to 
 author: peakerbl
 ms.date: 06/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

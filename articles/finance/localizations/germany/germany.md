@@ -4,8 +4,6 @@ description: This article provides an overview of Dynamics 365 Finance functiona
 author: AdamTrukawka
 ms.date: 05/09/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Germany

@@ -4,7 +4,6 @@ description: This article lists the hardware sizing requirements for an on-premi
 author: sericks007
 ms.date: 06/02/2021
 ms.topic: article
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article describes reporting tree definitions. A reporting tree
 author: jinniew
 ms.date: 04/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

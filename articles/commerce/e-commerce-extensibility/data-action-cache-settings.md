@@ -4,8 +4,6 @@ description: This article covers cache settings for data actions in Microsoft Dy
 author: samjarawan
 ms.date: 04/06/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

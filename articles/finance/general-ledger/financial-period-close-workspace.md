@@ -3,12 +3,9 @@
 
 title: Financial period close workspace
 description: This article provides an overview of the Financial period close workspace and the associated configuration.
-author: kweekley
+author: moaamer
 ms.date: 11/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerPeriodCloseProjectWorkspace
@@ -20,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -6,9 +6,6 @@ description: This article describes capabilities that are related to the subledg
 author: RyanCCarlson2
 ms.date: 02/08/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable

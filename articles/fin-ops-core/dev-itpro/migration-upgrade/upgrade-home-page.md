@@ -4,8 +4,6 @@ description: This article shows where to find information about upgrading, updat
 author: LaneSwenka
 ms.date: 07/23/2019
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

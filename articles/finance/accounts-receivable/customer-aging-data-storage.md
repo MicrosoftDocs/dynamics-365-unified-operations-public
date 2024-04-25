@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Customer aging data storage
-description: This article describes the process of using external storage for customer aging data. You can run the Customer aging data storage process to make the output available for export to an external system.
+description: Learn about the process of using external storage for customer aging data. You can run this data to make the output available for export to an external system.
 author: JodiChristiansen
-ms.date: 03/13/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 03/13/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Customer aging data storage

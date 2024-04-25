@@ -4,8 +4,6 @@ description: This article describes features that are either new or changed in M
 author: sericks007
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

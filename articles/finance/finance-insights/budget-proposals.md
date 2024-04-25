@@ -6,9 +6,6 @@ description: This article describes the process for using a machine learning mod
 author: ShivamPandey-msft
 ms.date: 10/11/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: BudgetProposalConfiguration, BudgetProposalConfigurationWizard  

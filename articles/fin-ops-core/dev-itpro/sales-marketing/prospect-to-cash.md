@@ -6,9 +6,6 @@ description: This article provides an overview of the Prospect to cash solution 
 author: Henrikan 
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustTable, SalesTable, EcoResProductListPage

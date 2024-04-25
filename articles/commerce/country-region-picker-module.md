@@ -4,8 +4,6 @@ description: This article covers the country/region picker module and describes 
 author: bicyclingfool
 ms.date: 04/06/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

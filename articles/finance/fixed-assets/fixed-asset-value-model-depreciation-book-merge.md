@@ -6,9 +6,6 @@ description: In previous releases, there were two valuation concepts for fixed a
 author: moaamer
 ms.date: 10/14/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

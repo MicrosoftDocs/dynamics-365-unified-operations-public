@@ -4,8 +4,6 @@ description: This article provides answers to some frequently asked questions ab
 author: jinniew
 ms.date: 03/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article explains how to create an Electronic reporting (ER) co
 author: kfend
 ms.date: 01/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article describes the Data management framework's package REST
 author: pnghub
 ms.date: 11/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

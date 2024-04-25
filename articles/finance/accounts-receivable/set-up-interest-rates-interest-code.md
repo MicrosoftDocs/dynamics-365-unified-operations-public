@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up interest rates for an interest code
 description: Interest codes contain settings that determine when interest is charged and how it is calculated on overdue accounts.
-author: ShivamPandey-msft
-ms.date: 02/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Interest
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3b945333-1eaf-4658-ab5a-1a7791a7eb40
-ms.search.region: Global
-# ms.search.industry: 
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 02/17/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: Interest
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3b945333-1eaf-4658-ab5a-1a7791a7eb40
 ---
 
 # Set up interest rates for an interest code

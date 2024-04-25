@@ -1,19 +1,16 @@
 ---
 title: Vendor payments workspace
-description: This article provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
-author: abruer
-ms.date: 10/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
+description: Learn about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 10/16/2020
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
-ms.assetid: 
 ms.search.form: VendPaymentWorkspace
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Vendor payments workspace

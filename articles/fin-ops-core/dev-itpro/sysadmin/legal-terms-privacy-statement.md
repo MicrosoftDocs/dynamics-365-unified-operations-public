@@ -4,8 +4,6 @@ description: This article explains how administrators can add links to their org
 author: jasongre
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

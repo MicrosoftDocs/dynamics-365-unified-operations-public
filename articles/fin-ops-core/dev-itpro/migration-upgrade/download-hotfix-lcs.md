@@ -6,9 +6,6 @@ description: This article covers what updates you should expect to see, and how 
 author: AngelMarshall
 ms.date: 09/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

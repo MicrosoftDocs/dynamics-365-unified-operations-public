@@ -4,8 +4,6 @@ description: This article describes how to edit and audit cash and carry and cas
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
