@@ -6,9 +6,6 @@ description: This article provides an overview of the support for e-commerce sit
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

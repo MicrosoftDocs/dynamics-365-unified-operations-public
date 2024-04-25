@@ -6,9 +6,6 @@ description: The Benefit statement report explains the benefits that an employee
 author: twheeloc
 ms.date: 09/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmACACoverageGroup, BenefitWorkspace, HcmBenefitSummaryPart

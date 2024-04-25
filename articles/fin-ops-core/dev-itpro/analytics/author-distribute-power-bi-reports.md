@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: article
 ms.date: 12/02/2021
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: Developer, IT Pro
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5

@@ -4,8 +4,6 @@ description: People of the Islamic faith whose annual earnings exceed a level ca
 author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia

@@ -6,9 +6,6 @@ description: This article describes the method that fixed assets uses to calcula
 author: moaamer
 ms.date: 08/17/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxTable

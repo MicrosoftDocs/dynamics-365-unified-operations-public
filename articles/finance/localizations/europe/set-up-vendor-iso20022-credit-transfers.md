@@ -6,8 +6,6 @@ description: This procedure demonstrates how to set up the vendor and vendor spe
 author: mrolecki
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

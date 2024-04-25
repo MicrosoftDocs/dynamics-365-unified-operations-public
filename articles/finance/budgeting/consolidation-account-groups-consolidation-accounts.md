@@ -3,12 +3,9 @@
 
 title: Consolidation account groups and additional consolidation accounts
 description: This article provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
-author: panolte
+author: jchrist
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerConsolidateAccountGroup
@@ -20,7 +17,7 @@ ms.reviewer: kfend
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: panolte
+ms.author: jchrist
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

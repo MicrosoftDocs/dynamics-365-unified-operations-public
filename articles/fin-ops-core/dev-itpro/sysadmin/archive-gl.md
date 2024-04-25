@@ -1,19 +1,19 @@
 ---
-title: Archive data in Dynamics 365 Finance General ledger (preview)
-description: This article explains how to archive data in Microsoft Dynamics 365 Finance General ledger.
+title: Archive Dynamics 365 Finance General ledger data (preview)
+description: This article explains how to archive Microsoft Dynamics 365 Finance General ledger data.
 author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
 ms.topic: conceptual
-ms.date: 2/13/2024
+ms.date: 4/10/2024
 ms.custom:
 
 ---
-# Archive data in Dynamics 365 Finance General ledger (preview)
+# Archive Dynamics 365 Finance General ledger data (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
-This article explains how to archive data in Microsoft Dynamics 365 Finance General ledger.
+This article explains how to archive Microsoft Dynamics 365 Finance General ledger data.
 
 > [!IMPORTANT]
 > - General ledger archiving can occur only for fiscal years that the year-end close process has been run for.

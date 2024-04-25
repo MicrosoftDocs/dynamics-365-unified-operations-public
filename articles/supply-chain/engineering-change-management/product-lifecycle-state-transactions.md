@@ -6,8 +6,6 @@ description: This article explains how you can control which transactions are al
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

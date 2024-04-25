@@ -6,9 +6,6 @@ description: A department is an operating unit that represents a category or fun
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Create departments and include them in the department hierarchy
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

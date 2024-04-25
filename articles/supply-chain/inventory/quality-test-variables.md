@@ -6,8 +6,6 @@ description: This article describes how to create test variables that can be use
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

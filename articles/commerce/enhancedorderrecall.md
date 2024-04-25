@@ -6,9 +6,6 @@ description: This article explains feature capabilities available for improved o
 author: hhainesms
 ms.date: 03/12/2021
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

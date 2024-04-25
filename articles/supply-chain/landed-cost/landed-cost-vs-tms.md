@@ -6,8 +6,6 @@ description: Microsoft Dynamics 365 Supply Chain Management provides two differe
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

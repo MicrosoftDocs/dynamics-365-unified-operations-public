@@ -6,8 +6,6 @@ description: This article explains service level and description in Asset Manage
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

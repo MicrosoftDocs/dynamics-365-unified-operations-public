@@ -6,9 +6,6 @@ description: Human resources administrators and managers can use the courses fea
 author: twheeloc
 ms.date: 03/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Create a course
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

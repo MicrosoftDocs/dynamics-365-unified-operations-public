@@ -6,9 +6,6 @@ description: This article describes the adjustment that is made to lease the lia
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetLeaseIndexRevaluation

@@ -4,8 +4,6 @@ description: This article explains how to get help with finance and operations a
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: twheeloc
 ms.search.region: Global

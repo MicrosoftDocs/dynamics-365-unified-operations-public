@@ -4,10 +4,8 @@ description: Apply SSRS hotfixes to a one-box development environment.
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28

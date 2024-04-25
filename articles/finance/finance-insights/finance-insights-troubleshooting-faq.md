@@ -6,9 +6,6 @@ description: This article lists issues that can occur when you use Finance insig
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

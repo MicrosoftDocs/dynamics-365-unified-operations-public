@@ -4,10 +4,8 @@ description: This article describes features that are in preview in Dynamics 365
 author: sericks007
 ms.date: 03/14/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 20189-XX-XX

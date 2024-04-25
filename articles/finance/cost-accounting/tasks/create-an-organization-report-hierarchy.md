@@ -6,8 +6,6 @@ description: Use this procedure to create a report hierarchy for organization re
 author: twheeloc
 ms.date: 10/30/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

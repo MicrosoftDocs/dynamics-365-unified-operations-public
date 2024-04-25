@@ -4,8 +4,6 @@ description: After a sales invoice for a service is issued in São Paulo city, y
 author: AdamTrukawka
 ms.date: 06/27/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

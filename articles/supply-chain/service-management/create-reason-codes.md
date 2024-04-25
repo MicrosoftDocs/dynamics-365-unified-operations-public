@@ -6,8 +6,6 @@ description: You can create reason codes to explain why you are updating a stage
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

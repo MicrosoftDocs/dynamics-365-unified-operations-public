@@ -6,16 +6,13 @@ description: This article lists the system requirements for the current version 
 author: sericks007
 ms.date: 02/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: e564d51d-42d3-47c5-b388-93b8219c692a
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article covers ""Add product to cart"" settings and describes 
 author: anupamar-ms
 ms.date: 07/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

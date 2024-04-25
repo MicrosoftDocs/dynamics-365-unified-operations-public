@@ -4,8 +4,6 @@ description: This procedure walks you through how to create a corrective invoice
 author: kfend
 ms.date: 12/06/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Spain

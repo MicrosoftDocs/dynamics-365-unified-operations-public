@@ -6,9 +6,6 @@ description: This article describes the steps that you can take to understand th
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

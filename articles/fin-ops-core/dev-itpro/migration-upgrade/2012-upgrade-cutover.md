@@ -4,10 +4,8 @@ description: This article explains the final cutover process from Dynamics AX 20
 author: gianugo
 ms.date: 03/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2018-03-31

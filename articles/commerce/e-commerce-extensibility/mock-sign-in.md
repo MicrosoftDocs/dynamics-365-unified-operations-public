@@ -4,8 +4,6 @@ description: This article describes how to mock a signed-in user in a Dynamics 3
 author: samjarawan
 ms.date: 01/31/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

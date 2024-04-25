@@ -6,7 +6,7 @@ ms.author: sericks
 ms.topic: article
 ms.date: 08/12/2019
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: Platform update 27

@@ -6,7 +6,7 @@ ms.author: peterfriis
 ms.topic: article
 ms.date: 03/05/2020
 ms.custom: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30

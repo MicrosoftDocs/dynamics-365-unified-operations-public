@@ -4,8 +4,6 @@ description: This article provides information about the Drop Dialog form patter
 author: jasongre
 ms.date: 10/08/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

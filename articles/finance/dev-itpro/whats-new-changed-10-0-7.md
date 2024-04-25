@@ -6,9 +6,6 @@ description: This article describes features that are either new or changed in D
 author: kfend
 ms.date: 12/05/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

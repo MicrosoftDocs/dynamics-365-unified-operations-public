@@ -4,8 +4,6 @@ description: This article explains how to turn on, set up, and use the feature f
 author: mrolecki
 ms.date: 10/28/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy

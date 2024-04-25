@@ -6,8 +6,6 @@ description: This article describes how to work with folios. A folio typically c
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

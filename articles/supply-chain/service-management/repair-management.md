@@ -6,8 +6,6 @@ description: Group problems systematically to help with the suggestion of soluti
 author: sorenva
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

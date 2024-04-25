@@ -6,8 +6,6 @@ description: This procedure shows how to assign a product lifecycle state to a r
 author: t-benebo
 ms.date: 12/05/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

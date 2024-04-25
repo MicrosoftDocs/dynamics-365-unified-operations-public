@@ -6,16 +6,13 @@ description: A composite entity is a concept that allows you to build a single e
 author: peakerbl
 ms.date: 03/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
 ms.search.region: Global

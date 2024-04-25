@@ -7,7 +7,7 @@ ms.topic: article
 ms.date: 02/16/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-06-30
 ms.search.form: [Operations AOT form name to tie this article to]
@@ -46,7 +46,8 @@ This section covers the following SQL Server components:
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft SQL Server 2019     | 10.0.21          | Not available |
+| Microsoft SQL Server 2022 (CU12)     | 10.0.39          | Not available |
+| Microsoft SQL Server 2019     | 10.0.21          | 10.0.44       |
 | Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
 | Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
 

@@ -4,8 +4,6 @@ description: You can enter a CIAP transaction in two ways - post a fiscal docume
 author: AdamTrukawka
 ms.date: 06/26/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

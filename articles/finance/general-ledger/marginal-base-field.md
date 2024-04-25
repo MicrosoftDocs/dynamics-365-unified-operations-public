@@ -6,9 +6,6 @@ description: This article explains how the values in the fields Marginal base an
 author: kailiang
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxTable

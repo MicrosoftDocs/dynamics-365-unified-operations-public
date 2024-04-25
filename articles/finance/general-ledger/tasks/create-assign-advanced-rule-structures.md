@@ -6,8 +6,6 @@ description: This article explains how to create and assign an advanced rule str
 author: aprilolson
 ms.date: 05/19/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,15 +6,12 @@ description: This article is a list of frequently asked questions about finance 
 author: Sunil-Garg
 ms.date: 08/03/2022
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
