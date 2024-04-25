@@ -4,8 +4,6 @@ description: This article provides information about how to analyze and manage s
 author: Peakerbl
 ms.date: 05/05/2020
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global

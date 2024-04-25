@@ -5,7 +5,6 @@ author: Henrikan
 ms.author: henrikan
 ms.topic: article
 ms.date: 06/10/2019
-ms.custom:
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global

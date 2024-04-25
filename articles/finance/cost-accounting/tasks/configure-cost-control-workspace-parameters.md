@@ -6,8 +6,6 @@ description: Use this procedure to configure the Cost control workspace so that 
 author: twheeloc
 ms.date: 03/27/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

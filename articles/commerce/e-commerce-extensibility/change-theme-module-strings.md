@@ -4,8 +4,6 @@ description: This article describes how to change module library strings from wi
 author: samjarawan
 ms.date: 03/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

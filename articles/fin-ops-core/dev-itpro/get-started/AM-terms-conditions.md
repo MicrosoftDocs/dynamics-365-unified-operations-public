@@ -6,9 +6,6 @@ description: Full description that appears in the search results. Often the firs
 author: ShellyBakke
 ms.date: 04/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

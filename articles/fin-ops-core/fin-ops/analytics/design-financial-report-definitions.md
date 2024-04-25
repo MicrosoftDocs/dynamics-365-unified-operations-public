@@ -4,8 +4,6 @@ description: This article provides information about report definitions.
 author: aprilolson
 ms.date: 11/22/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

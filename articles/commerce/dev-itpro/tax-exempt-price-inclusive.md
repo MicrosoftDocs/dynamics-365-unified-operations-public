@@ -6,9 +6,6 @@ description: This article describes functionality for tax exemption calculations
 author: BrianShook
 ms.date: 09/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

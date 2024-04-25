@@ -6,9 +6,6 @@ description: This article explains how to configure an exchange on a return in D
 author: josaw1
 ms.date: 07/28/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

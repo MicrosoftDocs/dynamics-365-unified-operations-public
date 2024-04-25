@@ -4,8 +4,6 @@ description: The following procedure lists the steps that system administrators 
 author: jasongre
 ms.date: 06/21/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

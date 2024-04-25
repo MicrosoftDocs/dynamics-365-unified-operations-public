@@ -4,8 +4,6 @@ description: This article provides information about Primary forms for NVFA, Wor
 author: AdamTrukawka
 ms.date: 04/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

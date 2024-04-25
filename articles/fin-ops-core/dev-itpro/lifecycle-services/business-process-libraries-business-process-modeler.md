@@ -4,8 +4,6 @@ description: This article explains how to view a business process library, how t
 author: gianugo
 ms.date: 02/20/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

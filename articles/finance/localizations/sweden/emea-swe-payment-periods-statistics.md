@@ -4,8 +4,6 @@ description: This article explains how to set up and generate the statistics of 
 author: AdamTrukawka
 ms.date: 09/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: APAC

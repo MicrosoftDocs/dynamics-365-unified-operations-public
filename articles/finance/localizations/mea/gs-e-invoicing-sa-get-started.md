@@ -1,11 +1,9 @@
 ---
-title: Electronic invoicing in Saudi Arabia - Phase two (preview)
-description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia (preview).
+title: Electronic invoicing in Saudi Arabia - Phase two
+description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -17,10 +15,9 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Electronic invoicing in Saudi Arabia - Phase two (preview)
+# Electronic invoicing in Saudi Arabia - Phase two
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
 

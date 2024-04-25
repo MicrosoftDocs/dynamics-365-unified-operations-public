@@ -4,8 +4,6 @@ description: This article covers header modules and describes how to create page
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

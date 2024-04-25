@@ -6,8 +6,6 @@ description: This task creates a Bank facility and posting profile that is neede
 author: kweekley
 ms.date: 11/15/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,8 +4,6 @@ description: This article explains how the pre-extended columns in the channel d
 author: josaw1
 ms.date: 02/22/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

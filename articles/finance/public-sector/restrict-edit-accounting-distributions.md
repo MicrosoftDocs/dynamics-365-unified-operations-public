@@ -6,9 +6,6 @@ description: This article explains how to require that the financial dimensions 
 author: v-kiarnd
 ms.date: 10/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]

@@ -6,9 +6,6 @@ description: This article answers some commonly asked questions regarding interc
 author: kweekley
 ms.date: 04/05/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

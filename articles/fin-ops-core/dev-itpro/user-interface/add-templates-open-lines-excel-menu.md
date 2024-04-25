@@ -4,8 +4,6 @@ description: This article describes how you can promote a template to the Open l
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

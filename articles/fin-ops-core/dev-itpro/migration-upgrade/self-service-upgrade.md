@@ -6,9 +6,6 @@ description: This article describes the process for moving to the latest update 
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

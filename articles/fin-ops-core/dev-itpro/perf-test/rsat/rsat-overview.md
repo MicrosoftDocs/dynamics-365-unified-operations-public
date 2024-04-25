@@ -4,8 +4,6 @@ description: The Regression suite automation tool (RSAT) lets you record busines
 author: FrankDahl
 ms.date: 11/27/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

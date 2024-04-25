@@ -6,9 +6,6 @@ description: This article is intended to help architects and developers make sou
 author: peakerbl
 ms.date: 11/23/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

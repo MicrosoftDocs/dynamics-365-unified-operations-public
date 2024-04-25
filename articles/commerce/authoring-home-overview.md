@@ -4,8 +4,6 @@ description: This article provides an overview of the Microsoft Dynamics 365 Com
 author: bicyclingfool
 ms.date: 02/13/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article explains how to set up rules to alert customer service
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans

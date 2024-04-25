@@ -4,8 +4,6 @@ description: This article describes how to use the data action instance cache in
 author: samjarawan
 ms.date: 08/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

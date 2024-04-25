@@ -4,8 +4,6 @@ description: This article provides details about the value-added tax (VAT) setup
 author: liza-golub
 ms.date: 09/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom

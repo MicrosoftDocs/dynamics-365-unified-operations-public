@@ -4,8 +4,6 @@ description: This article provides an overview that will help you start to devel
 author: samjarawan
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

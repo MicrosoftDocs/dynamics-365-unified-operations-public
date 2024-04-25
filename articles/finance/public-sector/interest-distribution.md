@@ -6,9 +6,6 @@ description: This article explains how to set up your participating cash account
 author: v-kiarnd
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PSNLedgerInterestDistributionRules, PSNLedgerInterestDistributionResults

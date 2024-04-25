@@ -4,8 +4,6 @@ description: This article describes best practices for enabling accessibility in
 author: jasongre
 ms.date: 08/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

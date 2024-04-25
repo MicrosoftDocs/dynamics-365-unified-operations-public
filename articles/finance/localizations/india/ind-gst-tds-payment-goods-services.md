@@ -6,9 +6,6 @@ description: This article provides information about how to deduct GST-TDS on pa
 author: EricWangChen
 ms.date: 07/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

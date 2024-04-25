@@ -6,9 +6,6 @@ description: This article provides an overview of Extensible Data Security (XDS)
 author: pnghub
 ms.date: 08/09/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

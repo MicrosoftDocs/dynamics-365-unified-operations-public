@@ -4,8 +4,6 @@ description: In Japan, consolidated invoices can be enabled to fit the Japanese 
 author: kfend
 ms.date: 08/01/2023
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Japan

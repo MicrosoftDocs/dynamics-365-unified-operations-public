@@ -6,9 +6,6 @@ description: This article describes how to use the saved views features.
 author: jasongre
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DefaultDashboard

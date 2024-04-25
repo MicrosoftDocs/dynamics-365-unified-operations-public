@@ -6,9 +6,6 @@ description: This article provides information about extending tax engine config
 author: kailiang
 ms.date: 05/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable

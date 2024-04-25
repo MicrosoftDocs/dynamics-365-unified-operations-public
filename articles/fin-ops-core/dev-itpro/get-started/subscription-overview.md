@@ -6,9 +6,6 @@ description: This article provides answers to frequently asked questions about s
 author: skaue-ms
 ms.date: 08/11/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

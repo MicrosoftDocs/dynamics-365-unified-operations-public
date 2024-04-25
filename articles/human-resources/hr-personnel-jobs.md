@@ -6,9 +6,6 @@ description: This article describes the conceptual elements that a job can inclu
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
@@ -28,8 +25,6 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up the components of a job
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

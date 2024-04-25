@@ -4,8 +4,6 @@ description: This article describes various ways that you can extend the commerc
 author: josaw1
 ms.date: 08/31/2022
 ms.topic: article
-ms.prod:
-ms.technology:
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

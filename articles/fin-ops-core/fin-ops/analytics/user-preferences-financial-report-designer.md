@@ -4,8 +4,6 @@ description: This article describes how to set user preferences to customize you
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

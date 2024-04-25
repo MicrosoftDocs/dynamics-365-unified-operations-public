@@ -6,9 +6,6 @@ description: This article explains how to restart individual services in environ
 author: laneswenka
 ms.date: 03/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

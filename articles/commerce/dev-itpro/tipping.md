@@ -6,9 +6,6 @@ description: This article describes the support for accepting tips on payment te
 author: BrianShook
 ms.date: 11/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
