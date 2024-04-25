@@ -4,8 +4,6 @@ description: You can cancel a CFDI electronic invoice that was previously valida
 author: AdamTrukawka
 ms.date: 06/29/2022
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Mexico

@@ -46,7 +46,7 @@ Three major themes are implemented in demand forecasting:
   - You can download the Demand forecasting experiments, change them to meet your business requirements, publish them as a web service on Azure, and use them to generate demand forecasts. The experiments are available for download if you've purchased a Supply Chain Management subscription for a production planner as enterprise-level user.
   - You can download any of the currently available demand prediction experiments from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Whereas the Demand forecasting experiments are automatically integrated with Supply Chain Management, customers and partners must handle the integration of experiments that they download from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Therefore, experiments from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) aren't as straightforward to use as the finance and operations Demand forecasting experiments. You must modify the code of the experiments so that they use the finance and operations application programming interface (API).
   - You can create your own experiments in Microsoft Azure Machine Learning studio (classic), publish them as services on Azure, and use them to generate demand forecasts.
-  - If you don’t require high performance, or if you don't require that a large amount of data be processed, you can use the Machine Learning free tier. We recommend that you always start from this tier, especially during implementation and testing phases. If you require higher performance and additional storage, you can use the Machine Learning standard tier. This tier requires an Azure subscription and involves additional costs. For details about Machine Learning pricing, see [Machine Learning Studio pricing](https://aka.ms/machine-learning-price-info).
+  - If you don't require high performance, or if you don't require that a large amount of data be processed, you can use the Machine Learning free tier. We recommend that you always start from this tier, especially during implementation and testing phases. If you require higher performance and additional storage, you can use the Machine Learning standard tier. This tier requires an Azure subscription and involves additional costs. For details about Machine Learning pricing, see [Machine Learning Studio pricing](https://aka.ms/machine-learning-price-info).
 - **Forecast reduction at any decoupling point** – Demand forecasting in builds on this functionality, which lets you forecast both dependent and independent demand at any decoupling point.
 
 ## Basic flow in demand forecasting
@@ -86,8 +86,8 @@ The first part of authorizing forecast (**Demand forecast UOM \> Inventory UOM**
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
 - [Monitor forecast accuracy](monitor-forecast-accuracy.md)
 - [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+- [Intercompany planning groups for demand forecasting](../demand-planning/intercompany-planning-groups-demand-forecasting.md)  
 - [Video: Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -6,9 +6,6 @@ description: This article provides an overview of the architecture of finance an
 author: abunduc-ms
 ms.date: 04/24/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

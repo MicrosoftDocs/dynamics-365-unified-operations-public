@@ -4,8 +4,6 @@ description: This article describes the various elements that are used on the pa
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

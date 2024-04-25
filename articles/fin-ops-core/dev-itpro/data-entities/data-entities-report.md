@@ -4,8 +4,6 @@ description: This article describes how to get information about the standard da
 author: peakerbl
 ms.date: 09/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global

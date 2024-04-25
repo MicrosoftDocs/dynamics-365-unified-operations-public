@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Control warehouse work by using work templates and location directives
 description: This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: perlynne
-ms.date: 10/20/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2020-10-09
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
+ms.topic: how-to
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Control warehouse work by using work templates and location directives
@@ -74,7 +62,7 @@ Location directives determine *where* items should be picked and *where* they sh
 
 ## Additional resources
 
-- Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
+- Video: [Warehouse management configuration deep dive](https://www.youtube.com/watch?v=kVwIaFxHxy8)
 - Help article: [Work with location directives](create-location-directive.md)
 
 

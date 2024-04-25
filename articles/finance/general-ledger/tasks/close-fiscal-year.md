@@ -6,8 +6,6 @@ description: This procedure steps through the year end close process that transf
 author: aprilolson
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

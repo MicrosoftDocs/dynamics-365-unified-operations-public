@@ -6,8 +6,6 @@ description: Questionnaire statistics can be used to calculate averages, totals,
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -26,7 +24,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Analyzing questionnaire results
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

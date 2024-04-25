@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
-ms.date: 04/02/2024
+ms.date: 04/16/2024
 ms.topic: article
 
 # optional metadata
@@ -42,7 +42,7 @@ Detailed information about objects in finance and operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
-| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You'll receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant Id}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application Id\}'(Finance and operations environment name) in that tenant". The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account. The user will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
+| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You'll receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant Id}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application Id\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account". The user will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |

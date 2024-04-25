@@ -6,9 +6,6 @@ description: This article explains the concepts that are related to controlling 
 author: josaw1
 ms.date: 08/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy

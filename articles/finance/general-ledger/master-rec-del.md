@@ -6,9 +6,6 @@ description: This article describes how to delete master records that are used i
 author: rcarlson
 ms.date: 03/01/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

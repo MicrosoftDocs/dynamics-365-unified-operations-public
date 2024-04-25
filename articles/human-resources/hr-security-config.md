@@ -6,9 +6,6 @@ description: This article explains an architecture for building an integration b
 author: twheeloc
 ms.date: 11/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CDSIntegrationAdministration

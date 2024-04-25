@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Authentication and authorization
-description: This article describes the authentication and authorization models for user synchronization and permissions between finance and operations apps and Microsoft Power Platform. 
+description: Learn about the authentication and authorization models for user synchronization and permissions between finance and operations apps and Microsoft Power Platform. 
 author: jaredha
-ms.date: 07/26/2022
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.search.region: Global
-# ms.search.industry:
 ms.author: jaredha
+ms.topic: article
+ms.date: 07/26/2022
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-10-14
+ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 ---
 # Authentication and authorization

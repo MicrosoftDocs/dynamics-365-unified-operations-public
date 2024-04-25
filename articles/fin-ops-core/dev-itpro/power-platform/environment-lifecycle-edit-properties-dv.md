@@ -1,12 +1,12 @@
 ---
 title: Edit the properties of connected Dataverse environments
-description: This article explains how to edit the properties of a Microsoft Dataverse environment when finance and operations apps are integrated with Microsoft Power Platform.
+description: Learn about how to edit the properties of a Microsoft Dataverse environment when finance and operations apps are integrated with Microsoft Power Platform.
 author: abunduc-ms
 ms.author: abunduc
-ms.date: 06/02/2023
 ms.topic: conceptual
-ms.reviewer: johnmichala
+ms.date: 06/02/2023
 ms.custom: bap-template
+ms.reviewer: johnmichala
 ---
 
 # Edit the properties of connected Dataverse environments

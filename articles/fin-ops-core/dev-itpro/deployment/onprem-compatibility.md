@@ -46,7 +46,8 @@ This section covers the following SQL Server components:
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft SQL Server 2019     | 10.0.21          | Not available |
+| Microsoft SQL Server 2022 (CU12)     | 10.0.39          | Not available |
+| Microsoft SQL Server 2019     | 10.0.21          | 10.0.44       |
 | Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
 | Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
 

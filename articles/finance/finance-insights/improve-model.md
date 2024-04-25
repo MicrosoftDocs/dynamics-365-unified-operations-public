@@ -6,9 +6,6 @@ description: This article describes features that you can use to improve the per
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

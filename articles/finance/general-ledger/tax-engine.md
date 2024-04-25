@@ -6,9 +6,6 @@ description: This article provides an overview of the Tax engine functionality i
 author: kailiang
 ms.date: 12/15/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable

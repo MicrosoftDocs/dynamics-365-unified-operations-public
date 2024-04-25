@@ -6,9 +6,6 @@ description: This article provides guidance about how to prepare for the go-live
 author: alejandra-cabrales
 ms.date: 08/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

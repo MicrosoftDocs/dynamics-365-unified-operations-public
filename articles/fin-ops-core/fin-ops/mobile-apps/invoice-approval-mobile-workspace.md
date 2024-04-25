@@ -6,9 +6,6 @@ description: This article provides information about the Invoice approvals mobil
 author: abruer 
 ms.date: 05/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]

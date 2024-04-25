@@ -48,8 +48,8 @@ After a device is authenticated with Finance + Operations (on-premises), each wo
 For details about each authentication method and how to set it up, see the following articles:
 
 
-- **User-based authentication:** [User-based authentication for the Warehouse Management mobile app](warehousing-onprem-serviceauth.md)
-- **Service-based authentication (deprecated):** [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
+- **User-based authentication:** [User-based authentication for the Warehouse Management mobile app](warehousing-onprem-userauth.md)
+- **Service-based authentication (deprecated):** [Service-based authentication for the Warehouse Management mobile app](warehousing-onprem-serviceauth.md)
 
 > [!IMPORTANT]
 > Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](../../../supply-chain/warehousing/warehouse-app-user-based-auth-faq.md).

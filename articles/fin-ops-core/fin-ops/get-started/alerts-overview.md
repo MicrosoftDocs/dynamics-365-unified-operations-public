@@ -6,9 +6,6 @@ description: This article provides general information about alerts. You can use
 author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EventCreateRule

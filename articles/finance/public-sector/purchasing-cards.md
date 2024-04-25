@@ -4,8 +4,6 @@ description: This article explains how to setup and track purchasing card transa
 author: velofog
 ms.date: 09/03/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

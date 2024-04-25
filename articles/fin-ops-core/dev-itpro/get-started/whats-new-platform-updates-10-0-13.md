@@ -6,9 +6,6 @@ description: This article lists the features are included in the platform update
 author: sericks007
 ms.date: 10/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

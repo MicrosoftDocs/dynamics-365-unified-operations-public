@@ -4,8 +4,6 @@ description: This article provides information about Acceptance test library cre
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

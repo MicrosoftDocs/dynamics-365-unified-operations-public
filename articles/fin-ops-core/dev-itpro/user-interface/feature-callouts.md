@@ -4,8 +4,6 @@ description: Trigger feature callouts raise awareness of new capabilities to use
 author: jasongre
 ms.date: 05/16/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
