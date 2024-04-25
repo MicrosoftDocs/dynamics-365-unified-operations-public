@@ -77,8 +77,6 @@ The products sold by your organization may come in variants differentiated by di
 > [!TIP]
 > For examples that show how sales totals and discounts are calculated when prices include and exclude sales tax, including information about how related values are shown in the **Totals** dialog box, see [Calculate sales totals when prices include sales tax](../sales-tax-calculation.md).
 
-## Sales order creation performance enhancement
 
-The new feature introduced with application 10.0.26 version reduces the extra record creation for tables **SourceDocumentHeader** and **SourceDocumentLine**. Performance is improved and storage size is reduced because these records aren't created. These underlying source document framework tables aren't used for sales orders in the product at this time and there are no scheduled plans to utilize them. Enabling this feature is considered a safe change for improved performance.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
