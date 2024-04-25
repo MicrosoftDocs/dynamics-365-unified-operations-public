@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Review collections information
-description: This article explains how to review collections information as well as various setup options and collections transactions. 
-author: ShivamPandey-msft
-ms.date: 03/28/2023
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to review collections information as well as various setup options and collections transactions.
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Review collections information
 
 [!include [banner](../../includes/banner.md)]

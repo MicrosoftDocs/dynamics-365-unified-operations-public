@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Automatic settlement and prioritization
-description: This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
-author: ShivamPandey-msft
-ms.date: 01/30/2019
-ms.topic: article
-# optional metadata
-
-ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 01/30/2019
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ---
 
 # Automatic settlement and prioritization
