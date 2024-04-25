@@ -4,8 +4,6 @@ description: This article describes how to install the Adventure Works theme in 
 author: anupamar-ms
 ms.date: 12/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

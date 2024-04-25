@@ -4,8 +4,6 @@ description: This article describes how to build custom pages in Microsoft Dynam
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

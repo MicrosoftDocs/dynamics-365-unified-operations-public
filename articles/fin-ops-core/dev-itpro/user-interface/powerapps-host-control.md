@@ -4,8 +4,6 @@ description: By using the Power Apps Host control, you can embed an app from Pow
 author: jasongre
 ms.date: 04/25/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

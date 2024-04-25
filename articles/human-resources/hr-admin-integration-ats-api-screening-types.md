@@ -6,9 +6,6 @@ description: This article describes the Screening types entity for Dynamics 365 
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Screening types
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

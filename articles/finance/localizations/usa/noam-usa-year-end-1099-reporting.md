@@ -6,9 +6,6 @@ description: If you do business with vendors that are subject to United States 1
 author: abruer
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Tax1099Fields, Tax1099Summary

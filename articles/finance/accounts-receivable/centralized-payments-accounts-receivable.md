@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Centralized payments for Accounts receivable
-description: Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same transaction doesn't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
-author: ShivamPandey-msft
-ms.date: 01/30/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransCustPaym
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 01/30/2023
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransCustPaym
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Centralized payments for Accounts receivable

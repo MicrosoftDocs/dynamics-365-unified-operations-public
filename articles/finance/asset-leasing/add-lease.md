@@ -6,9 +6,6 @@ description: This article describes how to create a new lease by entering inform
 author: moaamer
 ms.date: 03/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

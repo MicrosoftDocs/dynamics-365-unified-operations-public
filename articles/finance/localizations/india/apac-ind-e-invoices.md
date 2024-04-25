@@ -6,9 +6,6 @@ description: This topic explains how to set up and submit electronic invoices an
 author: mrolecki
 ms.date: 07/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

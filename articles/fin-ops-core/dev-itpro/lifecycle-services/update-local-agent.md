@@ -7,8 +7,6 @@ author: faix
 ms.date: 01/24/2024
 ms.topic: article
 ms.service: dynamics-365
-ms.technology:
-
 # optional metadata
 
 # ms.search.form: 

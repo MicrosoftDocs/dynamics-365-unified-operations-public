@@ -6,9 +6,6 @@ description: This article explains how to set up and maintain PRODCOM in Microso
 author: EvgenyPopovMBS
 ms.date: 07/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWithCode, InventProdComParameters, InventProdComTable

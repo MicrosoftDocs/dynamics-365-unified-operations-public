@@ -6,8 +6,6 @@ description: The Compensation and Benefits manager can enroll employees in varia
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -27,7 +25,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Enroll an employee in a variable compensation plan
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

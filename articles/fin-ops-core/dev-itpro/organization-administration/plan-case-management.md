@@ -6,9 +6,6 @@ description: This article describes the considerations and decisions that you mu
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity

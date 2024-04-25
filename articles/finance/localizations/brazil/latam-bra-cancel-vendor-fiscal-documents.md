@@ -4,8 +4,6 @@ description: This article provides information about how to cancel a vendor fisc
 author: gionoder
 ms.date: 06/05/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

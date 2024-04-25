@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Credit holds for sales orders
-description: This article describes how to set up rules used to place a sales order on credit hold. 
+description: Learn about how to set up rules used to place a sales order on credit hold, including an outline on setting up blocking rules and exclusion rules. 
 author: JodiChristiansen
-ms.date: 03/28/2024
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 03/28/2024
+ms.custom:  
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
-
 ---
 
 # Credit holds for sales orders

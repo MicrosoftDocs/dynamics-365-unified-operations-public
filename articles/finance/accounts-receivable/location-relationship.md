@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Add location and party relationship types
-description: This article explains how to add a new location and party relationship type.
-author: ShivamPandey-msft
-ms.date: 05/01/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to add a new location and party relationship type, including step-by-step process for adding location roles and party relationship types.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 05/01/2018
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-05-02
+ms.search.form: 
 ms.dyn365.ops.version: AX 8.0.0
-
+ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 ---
 
 # Add location and party relationship types 

@@ -6,9 +6,6 @@ description: This article provides information about the functionality to suppor
 author: velofog
 ms.date: 04/2/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PSNCanadianHSTTaxFeature

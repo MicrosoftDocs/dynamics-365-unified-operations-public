@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Specify the cross rate
-description: This article provides information about cross rates in Microsoft Dynamics 365 Finance. 
-author: abruer
-ms.date: 05/16/2018
+description: Learn about cross rates in Microsoft Dynamics 365 Finance, including a step-by-step process outlining how to specify cross rates. 
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
+ms.date: 05/16/2018
+ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Specify the cross rate

@@ -6,9 +6,6 @@ description: This article explains how to post Tax Deducted at Source (TDS)/Tax 
 author: kfend
 ms.date: 07/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

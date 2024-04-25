@@ -1,11 +1,9 @@
 ---
-title: Complete and deploy a Globalization feature (preview)
-description: This article provides information about the lifecycle of Globalization features (preview).
+title: Complete and deploy a Globalization feature
+description: This article provides information about the lifecycle of Globalization features.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -17,10 +15,9 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Complete and deploy a Globalization feature (preview)
+# Complete and deploy a Globalization feature
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Electronic invoicing feature versions
 

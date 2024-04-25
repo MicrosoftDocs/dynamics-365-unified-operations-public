@@ -6,8 +6,6 @@ description: Use this procedure to manage the general ledger data source for a c
 author: twheeloc
 ms.date: 03/27/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

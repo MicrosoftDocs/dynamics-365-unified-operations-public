@@ -4,8 +4,6 @@ description: This article explains how to the lease of a fixed asset and the sub
 author: AdamTrukawka
 ms.date: 07/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

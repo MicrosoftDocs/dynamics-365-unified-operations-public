@@ -4,8 +4,6 @@ description: This article contains links to topics about developing user interfa
 author: jasongre
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

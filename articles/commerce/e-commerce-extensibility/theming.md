@@ -4,8 +4,6 @@ description: This article presents an overview of online site theming in Microso
 author: samjarawan
 ms.date: 11/22/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

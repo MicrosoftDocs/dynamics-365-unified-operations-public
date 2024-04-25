@@ -6,9 +6,6 @@ description: This article provides a list of help topics about removed or deprec
 author: sericks007
 ms.date: 05/27/2021
 ms.topic: article
-ms.prod:
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

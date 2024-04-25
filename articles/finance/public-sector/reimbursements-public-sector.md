@@ -4,8 +4,6 @@ description: This article answers common questions related to reimbursements in 
 author: JodiChristiansen
 ms.date: 11/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

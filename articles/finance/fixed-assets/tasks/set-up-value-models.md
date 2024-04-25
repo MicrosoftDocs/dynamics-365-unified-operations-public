@@ -6,8 +6,6 @@ description: This procedure shows you to how create a new fixed asset book and a
 author: moaamer
 ms.date: 05/23/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

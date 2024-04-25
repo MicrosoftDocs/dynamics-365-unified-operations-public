@@ -4,8 +4,6 @@ description: Move a fixed asset from one department to another and verify the tr
 author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Lithuania

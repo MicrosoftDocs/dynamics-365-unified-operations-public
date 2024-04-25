@@ -4,8 +4,6 @@ description: This article describes the tables supported for duplicate and maste
 author: RamaKrishnamoorthy
 ms.date: 01/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

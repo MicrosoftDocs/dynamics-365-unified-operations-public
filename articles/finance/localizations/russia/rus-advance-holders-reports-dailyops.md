@@ -4,8 +4,6 @@ description: This article shows how to generate subledgers from source documents
 author: mrolecki
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia
