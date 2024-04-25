@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Open in Excel experiences FAQ
-description: Learn about creating Open in Office experiences for Excel and Word.
+description: Learn about creating Open in Office experiences for Excel and Word, including learning about what are open in Excel experiences.
 author: jasongre
-ms.date: 03/18/2022
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 03/18/2022
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
 ---
 
 # Open in Excel experiences FAQ
