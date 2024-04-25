@@ -33,6 +33,18 @@ To make product bundle functionality available, you must turn it on for your sys
 > [!NOTE]
 > When you first turn on the *Product bundle* feature, the system checks whether it includes any released products where the **Revenue recognition bundle** option is set to *Yes*. If it does, the system creates a batch job that automatically upgrades the records for those products so that they will work with the *Product bundle* feature. Likewise, if the system includes any uncanceled sales orders that have lines that contain revenue recognition bundle items, those sales order lines are also upgraded so that they will work with the *Product bundle* feature. This behavior should provide a seamless experience as you transition from using revenue recognition bundles to using product bundles. The upgrade is done as part of a Data maintenance portal action.
 
+In Supply Chain Management version 10.0.40 or higher the *Product bundles in journals* feature is introduced. This feature extends the *Product bundle* feature. 
+
+To make *Product bundles in journals* available, you must turn it on for your system.
+
+1. Go to **System administration \> Workspaces \> Feature management**. (For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
+1. On the **All** tab, use the **Filter** field to search for the feature that's named *Product bundles in journals*.
+1. Select the feature in the list, and then select **Enable now** to enable it.
+
+> [!NOTE]
+> When you turn on the *Product bundles in journals* feature, the system creates a batch job that automatically upgrades sales confirmation journal lines, sales packing slip journal lines, and sales invoice journal lines that contain product bundles and for which sales order lines exist such that sales confirmations and sales invoices can be reprinted correctly once sales order lines are deleted. The upgrade is done as part of a Data maintenance portal action. This feature is in released in public preview in 10.0.40.
+
+
 ## Set up product bundles
 
 Bundle items are released products that include components. You set up bundle items by using the bill of materials (BOM) functionality. When a product bundle item is entered on a sales order, revenue is posted for the individual components, not for the product bundle item.
