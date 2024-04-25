@@ -1,13 +1,13 @@
 ---
 title: Language and locale descriptors in Help
-description: This article maps the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content.
+description: Learn about the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content.
 author: edupont04
-ms.date: 02/11/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: edupont
+ms.topic: article
+ms.date: 02/11/2023
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---

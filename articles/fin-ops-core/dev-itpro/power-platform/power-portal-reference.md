@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Power Apps portals with finance and operations
-description: This article explains how Power Apps portals can be used with finance and operations.
+description: Learn about how Power Apps portals can be used with finance and operations, including an overview on ananymous access from Power Apps portals.
 author: Sunil-Garg
-ms.date: 07/13/2020
-ms.topic: article
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: sunilg
+ms.topic: article
+ms.date: 07/13/2020
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 

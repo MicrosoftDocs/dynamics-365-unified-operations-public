@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Environment lifecycle operations - Core concepts
-description: This article explains the core concepts for environment lifecycle operations when finance and operations apps are connected to Microsoft Dataverse by using Power Platform Integration.
-ms.author: laswenka
+description: Learn about the core concepts for environment lifecycle operations when finance and operations apps are connected to Microsoft Dataverse.
 author: laneswenka
-ms.date: 02/23/2024
+ms.author: laswenka
 ms.topic: overview
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 02/23/2024
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
 ms.collection: get-started
+audience: Developer, IT Pro
 ms.search.region: Global
-# ms.search.industry:
 ms.search.validFrom: 2021-10-13
+ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 ---
 # Environment lifecycle operations - Core concepts

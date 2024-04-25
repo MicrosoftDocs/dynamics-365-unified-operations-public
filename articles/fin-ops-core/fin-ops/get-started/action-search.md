@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Action search
-description: This article describes the action search functionality. Action search will help you find and run actions on a page.
+description: Learn about the action search functionality. Action search will help you find and run actions on a page. Access an overview about action search versus navigation search.
 author: jasongre
-ms.date: 03/09/2020
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 03/09/2020
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ---
 
 # Action search

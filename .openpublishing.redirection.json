@@ -34,11 +34,6 @@
       "source_path": "articles/finance/general-ledger/open-fincl-jrnls-in-office.md",
       "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/custom-excel-template-financial-journals-not-available",
       "redirect_document_id": "false"
-    }, 
-    {
-      "source_path": "articles/finance/general-ledger/add-change-acctg-rprtg-crrncy.md",
-      "redirect_url": "troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency",
-      "redirect_document_id": "false"
     },    
     {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/third-party-service-test.md",
