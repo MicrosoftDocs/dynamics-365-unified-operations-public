@@ -135,7 +135,7 @@ Several out-of-box business events are supported for warehouse integrations. The
 | `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` | Inbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
 | `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
 
-At a minimum, we recommend that you use the following business events for integration with an external ERP:
+At a minimum, we recommend that you use the following business events for an external ERP integration:
 
 - `InventCountingJournalPostedBusinessEvent` – This event announces that an on-hand inventory adjustment has occurred and indicates where detailed information about the update can be found.
 - `WHSSourceSystemInventoryOnhandReportBusinessEvent` – This event announces that an on-hand inventory report has been generated and indicates where detailed information about the update can be found.
