@@ -19,7 +19,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.40. This version has a build number of 7.0.NNNN.NN and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.40. This version has a build number of 10.0.1935.5 and is available on the following schedule:
 
 - **Preview of release:** April 2024
 - **General availability of release (self-update):** May 2024
@@ -94,4 +94,4 @@ Before any feature is removed from the product, the deprecation notice will be a
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=NNNNNNN).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
