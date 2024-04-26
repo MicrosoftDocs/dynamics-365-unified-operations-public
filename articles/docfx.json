@@ -38,9 +38,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/dynamics-365-unified-operations-public",
-      "feedback_product_url": "https://ideas.dynamics.com",
+      "feedback_system": "Standard",
+            "feedback_product_url": "https://ideas.dynamics.com",
       "contributors_to_exclude": [
         "OpenLocalizationService",
         "buck1ey",
