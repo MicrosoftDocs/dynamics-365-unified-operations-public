@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Create client plugins for Copilot in finance and operations apps
+title: Create client plugins for Copilot in finance and operations apps
 description: This article provides a step-by-step tutorial of an example creating client plugins to extend the capabilities of Copilot in finance and operations
 author: jaredha
 ms.author: jaredha
@@ -92,7 +92,7 @@ In your unified developer environment, create an X++ class that defines the navi
    - **Object**: SysCopilotChatCustomNavigateAction
 4. Save and deploy the code to your environment.
 
-## Create a topic to invoke the action
+## Step 2: Create a topic to invoke the action
 For this example you will create two topics in the **Copilot in finance and operations** chatbot in  Copilot Studio. The first topic intiates teh plugin when the user enters a prompt in Copilot indicating intent to navigate to a form. When the topic is triggered, it will determine the input parameters for the action and send them as an event to X++ to call the action.
 
 1. Open the **Copilot in finance and operations** chatbot in Copilot Studio.
@@ -114,7 +114,7 @@ For this example you will create two topics in the **Copilot in finance and oper
 5. Create an **End current topic** node to end the topic.
 6. **Save** the new topic.
 
-## Create a topic for returned output parameters
+## Step 3: Create a topic for returned output parameters
 The second topic receives the output parameters returned from the X++ class, and returns the response to the user in the Copilot chat panel.
 
 1. In the **Copilot in finance and operations** chatbot, create a new topic.
@@ -136,7 +136,7 @@ The second topic receives the output parameters returned from the X++ class, and
 5. **Save** the topic.
 6. **Publish** the changes to the changes to the chatbot.
 
-## Test the plugin
+## Step 4: Test the plugin
 Once you've created your action in X++ and the topics to manage the execution and response, and published and deployed the code, the Copilot chat then has a new capability enabling users to navigate to forms in the application as part of a Copilot natural language chat in finance and operations apps. For example, the user can enter prompts in the Copilot chat panel like:
 - "Open form: Default dashboard" - This prompt will navigate the client to the DefaultDashboard form.
 - "Navigate to page" - This prompt will provide the user with a list of menu items that are available to the user, based on permissions, from which they can select. Note the list can be fairly large depending on permissions, and is capped at 500 menu items.
