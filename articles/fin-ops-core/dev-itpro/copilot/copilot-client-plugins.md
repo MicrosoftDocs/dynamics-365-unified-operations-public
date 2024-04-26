@@ -18,7 +18,7 @@ ms.custom: bap-template
 
 **Client plugins** or client actions are Copilot plugins that invoke client code, and are available for users within the context of client experiences of finance and operations apps. Developers are able to define plugins that convert the functionality, operations, and business logic of the X++ code base into actions the user can invoke and communicate with in natural language through the Copilot interface. For example, with client plugins Copilot in finance and operations can be extended to let the user perform application actions, fill in form values, or ask questions requiring calculations and business logic from the application by entering prompts in natural language in Copilot.
 
-For a step-by-step tutorial for creating a client plugin, see [Tutorial: Create client plugins for Copilot in finance and operations apps](tutorial-create-client-plugins.md).
+This topic contains detail on the components and options of client plugins. For a step-by-step tutorial for creating a client plugin, see [Tutorial: Create client plugins for Copilot in finance and operations apps](tutorial-create-client-plugins.md).
 
 > [!IMPORTANT]
 > - Developing client plugins is available only in the [unified developer experience](https://learn.microsoft.com/power-platform/developer/unified-experience/finance-operations-dev-overview). See [Tutorial: Install the Finance and Operations Provisioning App](https://learn.microsoft.com/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app) for information on creating a unified developer environment from the [unified admin experience for finance and operations apps](https://learn.microsoft.com/power-platform/admin/unified-experience/finance-operations-apps-overview).
