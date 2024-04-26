@@ -106,8 +106,8 @@ When processing shipment orders, you may receive the following error, even thoug
 
 This error occurs because released products and variants must be linked to a source system through the [Source system items](wms-only-mode-exchange-data.md#master-data) data entity. This is crucial for recording how item and variant numbers must be handled for each external [source system](wms-only-mode-setup.md#source-systems).
 
-## Why aren't any *external inventory updates* recorded after running *external shared warehouse* processing?
+## Why aren't any external inventory updates recorded after I run external shared warehouse processing?
 
-One typical case is to create a counting journal for an item, which adjusts the on-hand inventory for the chosen warehouse. Before you proceed, make sure that the **Warehouse inventory update log** page shows the information you need for this adjustment. If it doesn't, you must verify that all of the required **Source system** and **Source system item** settings are in place.
+In one typical case, you create a counting journal for an item, which adjusts the on-hand inventory for the selected warehouse. Before you proceed, make sure that the **Warehouse inventory update log** page shows the information that you need for this adjustment. If it doesn't, you must verify that all the required **Source system** and **Source system item** settings are in place.
 
-Even if the warehouse inventory update log has the correct information, it will only send the data to the **External inventory updates** page for the warehouse inventory dimensions that are connected through the external warehouse management system and the relevant warehouses. For more information about how to configure this process, see [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md).
+Even if the warehouse inventory update log has the correct information, it sends the data to the **External inventory updates** page only for the warehouse inventory dimensions that are connected through the external warehouse management system and the relevant warehouses. For more information about how to configure this process, see [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md).
