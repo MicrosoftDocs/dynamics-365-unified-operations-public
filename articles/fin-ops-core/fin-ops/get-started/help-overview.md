@@ -1,18 +1,18 @@
 ---
 title: Help system (contains video)
-description: This article provides an overview of the Help system for finance and operations apps.
+description: Learn about the Help system for finance and operations apps, including an overviews on task guide and in-app help options.
 author: edupont04
-ms.date: 10/24/2023
-ms.topic: overview
-audience: Application User
-ms.reviewer: edupont
-ms.search.region: Global
 ms.author: edupont
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: overview
+ms.date: 10/24/2023
+ms.reviewer: edupont
 ms.collection: get-started
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: SystemParameters
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ---
 
 # Help system

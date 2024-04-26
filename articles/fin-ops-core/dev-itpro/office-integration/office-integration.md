@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Office integration overview
-description: This article reviews Microsoft Office integration concepts and features.
+description: Learn about Microsoft Office integration concepts and features, including overviews on the Excel Data Connector add-in and document management.
 author: jasongre
-ms.date: 07/25/2019
-ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak 
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ---
 
 # Office integration overview

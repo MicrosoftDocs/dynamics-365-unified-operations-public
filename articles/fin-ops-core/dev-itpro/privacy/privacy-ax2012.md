@@ -1,13 +1,13 @@
 ---
 title: Respond to requests for personal data in AX 2012
-description: This article can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under various privacy laws and regulations.
+description: Learn about how to comply with requests from a data subject concerning their personal data under various privacy laws and regulations.
 author: ryanc
-ms.date: 04/21/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ryanc
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
