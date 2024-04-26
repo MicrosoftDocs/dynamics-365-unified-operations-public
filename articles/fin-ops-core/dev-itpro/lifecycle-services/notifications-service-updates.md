@@ -6,9 +6,6 @@ description: This article explains the various ways that you can be notified abo
 author: angelmarshall
 ms.date: 07/02/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

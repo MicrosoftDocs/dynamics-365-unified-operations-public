@@ -6,9 +6,6 @@ description: This article describes how to use compensation management to manage
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
@@ -30,7 +27,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Compensation plans
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

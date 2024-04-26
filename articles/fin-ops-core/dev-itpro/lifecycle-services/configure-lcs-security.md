@@ -6,9 +6,6 @@ description: This article explains how security in Microsoft Dynamics Lifecycle 
 author: AngelMarshall
 ms.date: 03/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -4,8 +4,6 @@ description: This article provides an overview of account management pages in Mi
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

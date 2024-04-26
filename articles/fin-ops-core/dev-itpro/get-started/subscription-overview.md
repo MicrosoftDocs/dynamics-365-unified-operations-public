@@ -5,7 +5,7 @@ author: skaue-ms
 ms.author: toskaue
 ms.topic: overview
 ms.date: 08/11/2020
-ms.reviewer: sericks
+ms.reviewer: joihnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-05-30

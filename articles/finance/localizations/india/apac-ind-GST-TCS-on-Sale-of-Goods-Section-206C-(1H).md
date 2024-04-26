@@ -6,9 +6,6 @@ description: This article provides information about the functionality for Tax C
 author: prabhatb
 ms.date: 03/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

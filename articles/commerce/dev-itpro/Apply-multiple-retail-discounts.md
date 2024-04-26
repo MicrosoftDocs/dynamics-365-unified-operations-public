@@ -4,8 +4,6 @@ description: This article reviews all the factors considered when multiple disco
 author: ShalabhjainMSFT
 ms.date: 12/31/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: global

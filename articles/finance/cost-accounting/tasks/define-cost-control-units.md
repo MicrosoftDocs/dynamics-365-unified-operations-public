@@ -4,8 +4,6 @@ description: This procedure shows how to define cost control units in the cost a
 author: twheeloc
 ms.date: 03/27/2023
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global

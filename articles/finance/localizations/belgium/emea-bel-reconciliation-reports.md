@@ -4,8 +4,6 @@ description: This article describes the standard reports that Microsoft Dynamics
 author: liza-golub
 ms.date: 06/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Belgium

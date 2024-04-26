@@ -6,9 +6,6 @@ description: You can use flex credit programs in Microsoft Dynamics 365 Human Re
 author: twheeloc
 ms.date: 04/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitCreditPrograms, BenefitWorkspace, HcmBenefitSummaryPart

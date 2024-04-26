@@ -4,8 +4,6 @@ description: This article explains how to enable and configure auto charges by c
 author: gvrmohanreddy
 ms.date: 03/30/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

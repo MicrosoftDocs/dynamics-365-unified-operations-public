@@ -6,9 +6,6 @@ description: This article describes location owners and explains how to change t
 author: jaredha
 ms.date: 08/16/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DirPartyTable, DirPartyTableRoles

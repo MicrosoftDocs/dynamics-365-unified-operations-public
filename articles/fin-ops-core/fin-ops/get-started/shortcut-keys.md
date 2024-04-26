@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Keyboard shortcuts
-description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
+description: Learn about the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 01/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ---
 
 # Keyboard shortcuts

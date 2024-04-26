@@ -6,8 +6,6 @@ description: Use this procedure to configure access rights for a cost object con
 author: twheeloc
 ms.date: 03/27/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

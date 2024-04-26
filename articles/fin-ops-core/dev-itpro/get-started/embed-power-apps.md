@@ -5,7 +5,6 @@ author: jasongre
 ms.author: jasongre
 ms.topic: article
 ms.date: 09/13/2021
-ms.custom:
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global

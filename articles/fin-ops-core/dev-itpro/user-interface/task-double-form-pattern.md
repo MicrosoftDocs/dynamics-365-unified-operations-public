@@ -4,8 +4,6 @@ description: This article provides information about the Task Double form patter
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

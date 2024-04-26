@@ -4,8 +4,6 @@ description: This article describes how to configure the customer account paymen
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article describes the architecture of the workflow system.
 author: ChrisGarty
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

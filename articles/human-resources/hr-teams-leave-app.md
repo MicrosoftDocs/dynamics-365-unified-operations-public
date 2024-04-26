@@ -6,9 +6,6 @@ description: This article shows how to request time off in the Dynamics 365 Huma
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeaveAbsenceWorkspace

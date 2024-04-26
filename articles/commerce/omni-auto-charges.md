@@ -4,8 +4,6 @@ description: This article describes capabilities for managing other order charge
 author: hhainesms
 ms.date: 03/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

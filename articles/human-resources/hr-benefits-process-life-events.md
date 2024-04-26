@@ -6,9 +6,6 @@ description: During the employee lifecycle in Microsoft Dynamics 365 Human Resou
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer

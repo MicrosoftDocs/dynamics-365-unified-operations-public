@@ -4,8 +4,6 @@ description: This article provides information about resolution 13/2019, and how
 author: AdamTrukawka
 ms.date: 10/22/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

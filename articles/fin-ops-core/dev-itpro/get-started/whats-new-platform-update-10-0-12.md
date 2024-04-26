@@ -6,7 +6,7 @@ ms.author: sericks
 ms.topic: article
 ms.date: 10/15/2021
 ms.custom:
-ms.reviewer: sericks 
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.assetid:
 ms.search.region: Global

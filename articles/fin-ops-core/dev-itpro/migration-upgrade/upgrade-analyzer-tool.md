@@ -4,8 +4,6 @@ description: This article explains how to use the Upgrade analysis report to pla
 author: ttreen
 ms.date: 07/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

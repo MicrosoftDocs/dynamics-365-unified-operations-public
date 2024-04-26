@@ -6,9 +6,6 @@ description: This article provides a list of planned and released regulatory upd
 author: VStamberg
 ms.date: 01/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:

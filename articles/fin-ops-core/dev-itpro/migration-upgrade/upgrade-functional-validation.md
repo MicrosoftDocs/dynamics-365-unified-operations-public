@@ -4,8 +4,6 @@ description: This article explains how to perform a functional test pass to vali
 author: LaneSwenka
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

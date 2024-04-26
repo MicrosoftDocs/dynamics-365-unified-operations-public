@@ -6,9 +6,6 @@ description: This article describes the security reports that help you understan
 author:  peakerbl
 ms.date: 08/14/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  SysSecConfiguration, SrsReportViewerForm

@@ -1,28 +1,17 @@
 ---
-# required metadata
 title: Set up and generate positive pay files by using Electronic reporting
-description: This article explains how to set up positive pay by using Electronic reporting.
-author: panolte
-ms.date: 03/20/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankPositivePayFormat
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to set up positive pay by using Electronic reporting, including outlines on security for positive pay files.
+author: twheeloc
 ms.author: twheeloc
+ms.topic: article
+ms.date: 03/20/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: BankPositivePayFormat
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ---
 
 # Set up positive pay files by using Electronic reporting

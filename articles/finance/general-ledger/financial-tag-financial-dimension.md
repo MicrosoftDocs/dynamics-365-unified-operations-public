@@ -6,9 +6,6 @@ description: This article describes the differences between financal tags and fi
 author: kweekley
 ms.date: 01/23/2023
 ms.topic: article
-ems.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail

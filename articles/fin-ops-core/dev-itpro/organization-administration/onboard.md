@@ -6,9 +6,6 @@ description: This article describes how to onboard a project by using Microsoft 
 author: OlgaPetrovaFT
 ms.date: 06/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

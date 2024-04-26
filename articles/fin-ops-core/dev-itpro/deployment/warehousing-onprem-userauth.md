@@ -30,7 +30,7 @@ Device code flow authentication simplifies the authentication process, because u
 - The device code flow isn't fully supported by mobile mass deployment (MDM) systems such as Intune.
 
 > [!IMPORTANT]
-> All Microsoft Entra ID accounts that are used to sign in via the device code flow must be granted only the minimum set of permissions that they require to perform their warehousing tasks. Permissions should be strictly limited to warehouse mobile device user activities. Never use an admin account to sign in to devices.
+> All active directory accounts that are used to sign in via the device code flow must be granted only the minimum set of permissions that they require to perform their warehousing tasks. Permissions should be strictly limited to warehouse mobile device user activities. Never use an admin account to sign in to devices.
 
 ## Lifetime of AD FS device code refresh tokens
 
@@ -55,7 +55,7 @@ For more information about `SSOLifetime`, see [AD&nbsp;FS single sign-on setting
 
 ## <a name="create-service"></a>Create a native application in AD FS
 
-To enable the Warehouse Management mobile app to interact with a specific Dynamics 365 Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task.
+To enable the Warehouse Management mobile app to interact with a specific Dynamics 365 Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in AD FS. The following procedure shows one way to complete this task.
 
 1. Decide which device types your native application supports. For example, you might want to support Windows, Android, and iOS devices.
 1. Make a note of the redirect URIs for each device type. You'll need these URIs when you create the native application in AD&nbsp;FS.

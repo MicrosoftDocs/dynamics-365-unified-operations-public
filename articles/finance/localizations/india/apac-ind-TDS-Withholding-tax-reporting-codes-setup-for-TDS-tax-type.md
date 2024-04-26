@@ -6,10 +6,6 @@ description: Withholding tax reporting codes are used to generate Form 26Q and F
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

@@ -6,9 +6,6 @@ description: This article provides information about copying a batch job and bat
 author: Peakerbl
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
