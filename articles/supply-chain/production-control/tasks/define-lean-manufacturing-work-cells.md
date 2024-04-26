@@ -25,7 +25,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-A work cell is a specific form of resource groups that can be used in lean manufacturing process activities. Work cells have input and output locations and a capacity definition based on a production flow model. To learn more about the basic concepts of lean manufacturing work cells and capacity calculations, see the white papers on Lean manufacturing. The demo data company used to create this procedure is USMF
+A work cell is a specific form of resource groups that can be used in lean manufacturing process activities. Work cells have input and output locations and a capacity definition based on a production flow model. The demo data company used to create this procedure is USMF
 
 
 ## Create a work cell. 

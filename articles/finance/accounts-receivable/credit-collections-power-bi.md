@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Credit and collections management Power BI content
-description: This article describes what is included in the Credit and collections management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
-author: ShivamPandey-msft
-ms.date: 12/06/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form:  CustomerCollectionManagerWorkspace
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn what is included in the Credit and collections management Power BI content, including an outline on how to access the Power BI reports.
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2017-06-30 
+ms.topic: article
+ms.date: 12/06/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2017-06-30
+ms.search.form:  CustomerCollectionManagerWorkspace
 ms.dyn365.ops.version: July 2017 update 
 ---
 

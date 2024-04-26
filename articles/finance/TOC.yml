@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.40 (June)
+          href: get-started/whats-new-changed-10-0-40.md
         - name: Finance 10.0.39 (April)
           href: get-started/whats-new-changed-10-0-39.md  
         - name: Finance 10.0.38 (February)
@@ -1310,30 +1312,6 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
-      - name: Troubleshooting
-        items: 
-        - name: Change the accounting or reporting currency
-          href: general-ledger/add-change-acctg-rprtg-crrncy.md
-        - name: Change or reassign a ledger calendar
-          href: general-ledger/change-mdfy-clndr-to-ledger.md
-        - name: Reverse settings on journals and lines
-          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
-        - name: Year-end close missing opening balances
-          href: general-ledger/yec-mssng-open-blnces.md
-        - name: How do I set up balancing financial dimensions?
-          href: general-ledger/set-up-balance-dimensions.md
-        - name: Open financial journal templates in Office
-          href: general-ledger/open-fincl-jrnls-in-office.md
-        - name: Default financial dimensions on financial journals
-          href: general-ledger/dimension-default-values.md
-        - name: Journal posting failure due to imbalance
-          href: general-ledger/posting-fail-imbalance.md
-        - name: Why can't I reverse this transaction?
-          href: general-ledger/cant-reverse-transctns.md
-        - name: Intercompany journals and financial dimensions  
-          href: general-ledger/intercompany-journal.md
-        - name: General journal posting performance  
-          href: general-ledger/posting-performance.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1604,7 +1582,7 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing (preview)
+        - name: Electronic Invoicing
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
@@ -4437,7 +4415,7 @@
       items: 
       - name: Business performance analytics
         href: business-performance-analytics/business-performance-analytics-home-page.md
-      - name: Configure business performance analytics
+      - name: Install prerequisites for business performance analytics
         href: business-performance-analytics/configure-BPA.md
       - name: Install business performance analytics
         href: business-performance-analytics/install-bpa.md

@@ -3,7 +3,7 @@
 
 title: Main account types
 description: The main account types determine how a main account is used in the chart of accounts.
-author: aprilolson
+author: jchrist
 ms.date: 11/21/2022
 ms.topic: article
 # optional metadata
@@ -17,7 +17,7 @@ ms.reviewer: twheeloc
 ms.assetid: e55b9c0e-597b-46d4-b453-81c780939b6d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

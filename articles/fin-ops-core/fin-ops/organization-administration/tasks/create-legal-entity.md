@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a legal entity
-description: A legal entity is an organization that is identified through registration with a legal authority. 
+description: Learn about how to create a legal entity, an organization that is identified through registration with a legal authority. 
 author: twheeloc
-ms.date: 01/25/2024
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: OMLegalEntity, OMNewLegalEntity   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 01/25/2024
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: OMLegalEntity, OMNewLegalEntity  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a legal entity
 
 [!include [banner](../../includes/banner.md)]

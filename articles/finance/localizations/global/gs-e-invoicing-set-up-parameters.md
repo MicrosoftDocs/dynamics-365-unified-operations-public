@@ -1,6 +1,6 @@
 ---
-title: Configure Electronic invoicing parameters (preview)
-description: This article explains how to set up the Electronic invoicing parameters (preview).
+title: Configure Electronic invoicing parameters
+description: This article explains how to set up the Electronic invoicing parameters.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -15,10 +15,9 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure Electronic invoicing parameters (preview)
+# Configure Electronic invoicing parameters
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Import ER configurations from the repository
 

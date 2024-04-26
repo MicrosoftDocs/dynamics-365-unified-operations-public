@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Revenue recognition overview  (contains video)
-description: This article provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
-author: bking
-ms.date: 03/15/2022
+description: Learn about the Revenue recognition feature, which provides a flexible framework for defining company-specific rules for recognizing revenue prices and schedules.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-# optional metadata
-
-ms.search.form:  Customer
-audience: Application User
-# ms.devlang: 
+ms.date: 03/15/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-
+audience: Application User
 ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
 ms.search.validFrom: 2018-08-30
+ms.search.form:  Customer
 ms.dyn365.ops.version: 8.0.4
-
 ---
 
 # Revenue recognition overview
