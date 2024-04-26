@@ -2,7 +2,7 @@
 # required metadata
 
 title: HCM Compensation fixed plan entity
-description: This article provides details and an example query for the Compensation fixed plan table entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the PayIntV1HcmCompFixedEmplEntity in Microsoft Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/10/2024
 ms.topic: article
