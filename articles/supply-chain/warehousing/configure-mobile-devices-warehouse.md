@@ -248,7 +248,7 @@ You can set up a menu item that creates work for another worker after an initial
 
 ## Configure menu items to process existing work
 
-In addition to setting up menu items to create warehouse work, you can set up menu items to process work that has already been created. Set the **Mode** field to **Work**, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. The work class can also be used to grant access to specific user roles or to separate processing for different types of operations. The following table describes the options that are available. The option can be chosen under the **Directed by** field in the **Mobile device menu items** page.
+In addition to setting up menu items to create warehouse work, you can set up menu items to process work that has already been created. Set the **Mode** field to *Work*, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. The work class can also be used to grant access to specific user roles or to separate processing for different types of operations. The following table describes the options that are available. The option can be chosen under the **Directed by** field in the **Mobile device menu items** page.
 
 <table>
 <thead>
