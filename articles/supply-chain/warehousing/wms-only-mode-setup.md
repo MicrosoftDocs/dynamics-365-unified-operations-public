@@ -82,9 +82,9 @@ If the order numbers that the external system provides don't match the order num
 - *Load line inventory pick*
 - *Internal consigner's account number*
 - *Internal consignee's account number*
-- *External warehouse outbound shipment order origin id*
+- *External warehouse outbound shipment order origin ID*
 - *External warehouse inbound shipment order origin*
-- *External warehouse outbound shipment order update id*
+- *External warehouse outbound shipment order update ID*
 - *External warehouse inbound shipment order update*
 
 > [!TIP]

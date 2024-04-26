@@ -25,7 +25,7 @@ This article explains how to use Warehouse only mode to perform day-to-day wareh
 
 ## Monitor the integration
 
-To monitor the integration between the external systems/legal entities with Microsoft Dynamics 365 Supply Chain Management, go to **Warehouse management** \> **Workspaces** \> **Warehouse integration monitoring**. From the **Warehouse integration monitoring** page, you can perform the following tasks:
+To monitor the integration between the external systems or legal entities with Microsoft Dynamics 365 Supply Chain Management, go to **Warehouse management** \> **Workspaces** \> **Warehouse integration monitoring**. From the **Warehouse integration monitoring** page, you can perform the following tasks:
 
 - Get an overview of integration messages.
 - Go to pages that have related information and functionality, such as the [**Message processor messages**](warehouse-message-processor-messages.md) page.
