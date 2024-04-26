@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Prepayment invoices vs. prepayments
-description: This article describes and contrasts the two methods that organizations can use for advance payments (prepayments). 
-author: abruer
-ms.date: 03/24/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransVendPaym, PurchTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the definition and the contracts between the two methods that organizations can use for advance payments (prepayments).
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 03/24/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransVendPaym, PurchTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ---
 
 # Prepayment invoices vs. prepayments

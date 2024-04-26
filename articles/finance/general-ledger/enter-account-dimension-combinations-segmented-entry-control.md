@@ -6,9 +6,6 @@ description: This article describes how to enter account and dimension combinati
 author: aprilolson
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DimensionConfigureAccountStructure

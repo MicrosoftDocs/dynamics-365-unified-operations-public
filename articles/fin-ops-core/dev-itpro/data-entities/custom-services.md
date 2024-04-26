@@ -6,9 +6,6 @@ description: This article describes how to create a custom service.
 author: peakerbl
 ms.date: 02/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

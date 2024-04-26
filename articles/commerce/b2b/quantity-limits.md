@@ -4,8 +4,6 @@ description: This article describes how to set product quantity limits for busin
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

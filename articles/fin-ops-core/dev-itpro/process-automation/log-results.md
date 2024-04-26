@@ -4,8 +4,6 @@ description: This article describes how to log results and messages from process
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

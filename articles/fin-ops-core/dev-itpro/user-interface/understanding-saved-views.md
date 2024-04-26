@@ -4,8 +4,6 @@ description: This article explains some of the technical aspects of saved views 
 author: jasongre
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

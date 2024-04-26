@@ -4,8 +4,6 @@ description: This article provides information about tax branches for Thailand.
 author: AdamTrukawka
 ms.date: 01/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: 
 ms.reviewer: johnmichalak
 ms.search.region: 

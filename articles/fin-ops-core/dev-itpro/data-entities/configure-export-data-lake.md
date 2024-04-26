@@ -6,9 +6,6 @@ description: This article provides information about configuring the export to A
 author: MilindaV2
 ms.date: 10/16/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

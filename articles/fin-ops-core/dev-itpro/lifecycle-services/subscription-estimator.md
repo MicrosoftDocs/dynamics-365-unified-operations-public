@@ -6,9 +6,6 @@ description: This article explains how to use the Subscription estimator tool th
 author: angelmarshall
 ms.date: 01/25/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

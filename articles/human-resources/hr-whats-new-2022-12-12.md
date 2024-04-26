@@ -6,9 +6,6 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.date: 12/12/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
 # optional metadata
 
 ms.search.form:

@@ -1,16 +1,17 @@
 ---
 title: Development tools tutorial
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools.
-author: gianugo
+author: josaw1
+ms.author: josaw
+ms.topic: article
 ms.date: 06/14/2023
 ms.topic: article
-audience: Developer
 ms.reviewer: josaw
+ms.collection: get-started
+audience: Developer
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 ---
 

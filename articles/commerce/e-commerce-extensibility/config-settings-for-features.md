@@ -4,8 +4,6 @@ description: This article describes how global configuration properties in Micro
 author: samjarawan
 ms.date: 07/30/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

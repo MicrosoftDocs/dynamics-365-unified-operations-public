@@ -4,8 +4,6 @@ description: The article provides information about how independent software ven
 author: FrankDahl
 ms.date: 05/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global

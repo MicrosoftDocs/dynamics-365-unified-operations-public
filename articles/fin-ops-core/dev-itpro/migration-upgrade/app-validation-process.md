@@ -6,9 +6,6 @@ description: This article describes the tasks that you might have to perform aft
 author: LaneSwenka
 ms.date: 11/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

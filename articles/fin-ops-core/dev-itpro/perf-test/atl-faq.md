@@ -4,8 +4,6 @@ description: This article provides answers to frequently asked questions about t
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

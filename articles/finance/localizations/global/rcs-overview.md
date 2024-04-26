@@ -4,8 +4,6 @@ description: This article provides an overview of the capabilities of Regulatory
 author: kfend
 ms.date: 06/04/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article covers various properties that can be configured in th
 author: samjarawan
 ms.date: 12/05/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article describes tools that Microsoft Dynamics Lifecycle Serv
 author: laneswenka
 ms.date: 03/06/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

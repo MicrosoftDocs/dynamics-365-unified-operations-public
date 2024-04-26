@@ -6,9 +6,6 @@ description: This article provides information about reduction entries for fixed
 author: EricWangChen
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP

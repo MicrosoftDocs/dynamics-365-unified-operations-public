@@ -6,9 +6,6 @@ description: This article describes new or changed functionality for India local
 author: prabhatb
 ms.date: 10/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

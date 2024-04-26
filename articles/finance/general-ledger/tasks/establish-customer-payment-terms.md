@@ -7,9 +7,6 @@ author: aprilolson
 ms.author: aolson
 ms.date: 02/06/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:
-
 # optional metadata
 
 ms.search.form: PaymDay, PaymTerm, CashDisc   

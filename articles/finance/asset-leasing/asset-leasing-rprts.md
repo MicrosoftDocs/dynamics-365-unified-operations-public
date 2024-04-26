@@ -6,9 +6,6 @@ description: This article lists and briefly describes the reports that are avail
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysOperationTemplateForm 

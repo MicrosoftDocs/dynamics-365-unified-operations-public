@@ -6,8 +6,6 @@ description: This procedure walks you through various methods used to create ven
 author: kweekley
 ms.date: 05/24/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

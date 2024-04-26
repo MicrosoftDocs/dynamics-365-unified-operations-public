@@ -4,8 +4,6 @@ description: This article provides information about how to create or edit a BPM
 author: sericks007
 ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

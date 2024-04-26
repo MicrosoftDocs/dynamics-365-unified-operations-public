@@ -6,9 +6,6 @@ description: The global address book can help you understand the relationships a
 author: msftbrking
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DirPartyTable, DirPartyTableRoles

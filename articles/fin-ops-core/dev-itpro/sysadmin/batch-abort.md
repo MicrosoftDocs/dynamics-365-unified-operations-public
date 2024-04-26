@@ -6,9 +6,6 @@ description: This article explains how to cancel a batch job that is running.
 author: karimelazzouni
 ms.date: 11/17/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

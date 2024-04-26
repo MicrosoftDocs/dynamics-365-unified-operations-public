@@ -6,9 +6,6 @@ description: This article provides an overview of the security architecture of f
 author: pnghub 
 ms.date: 08/14/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
