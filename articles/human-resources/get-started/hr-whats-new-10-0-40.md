@@ -16,7 +16,7 @@ ms.search.region: Global
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.40. This version has a build number of 7.0.NNNN.NN and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.40. This version has a build number of 10.0.1935.5 and is available on the following schedule:
 
 - **Preview of release:** April 2024
 - **General availability of release (self-update):** May 2024
@@ -47,7 +47,7 @@ Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxx).
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
 
 ### Regulatory updates
 
