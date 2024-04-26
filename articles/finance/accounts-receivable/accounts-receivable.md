@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Accounts receivable home page
-description: Use Accounts receivable to track customer invoices and incoming payments.
+description: Learn about the Accounts receivable home page, including outlines on setting up Accounts receivable, subscription billings, and setting up credit and collections.
 author: JodiChristiansen
-ms.date: 03/22/2024
-ms.topic: conceptual
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form:  CustomerInvoiceWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: conceptual
+ms.date: 03/22/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:  CustomerInvoiceWorkspace
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ---
 
 # Accounts receivable home page

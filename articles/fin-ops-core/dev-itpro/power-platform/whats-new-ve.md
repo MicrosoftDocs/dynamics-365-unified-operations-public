@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: What's new or changed in the Virtual Entity solution provider?
-description: This article describes new features and bug fixes that have been released in the Virtual Entity solution provider for finance and operations apps.
+description: Learn about new features and bug fixes that have been released in the Virtual Entity solution provider for finance and operations apps.
 author: RamaKrishnamoorthy
-ms.date: 06/22/2023
-ms.topic: conceptual
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: conceptual
+ms.date: 06/22/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2023-06-1
 ---
 

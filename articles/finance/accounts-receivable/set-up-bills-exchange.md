@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Set up bills of exchange
-description: This article describes the steps for setting up bills of exchange.
-author: ShivamPandey-msft
-ms.date: 09/17/2018
-ms.topic: article
-# optional metadata
-
-ms.search.form: CustBillOfExchangeJour
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: f2077165-da90-4359-ab12-e05717728dc7
-ms.search.region: global
-# ms.search.industry: 
+description: Learn about the steps for setting up bills of exchange, including overviews on setting up posting profiles for bills of exchange and payment fees for bills of exchange.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 09/17/2018
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2016-11-30
+ms.search.form: CustBillOfExchangeJour
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: f2077165-da90-4359-ab12-e05717728dc7
 ---
 
 # Set up bills of exchange

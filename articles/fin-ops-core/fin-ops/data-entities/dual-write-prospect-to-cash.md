@@ -1,12 +1,12 @@
 ---
 title: Prospect-to-cash in dual-write
-description: This article provides information about Quote-to-cash in dual-write.
+description: Learn about prospect-to-cash in dual-write, including outlines on prerequisites, mapping setup, and sales quotations.
 author: henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 03/20/2024
+ms.date: 04/26/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template

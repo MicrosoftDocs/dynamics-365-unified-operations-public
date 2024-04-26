@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Finance and operations virtual entities FAQ
-description: This article is a list of frequently asked questions about finance and operations virtual entities.
+description: Access a list of frequently asked questions about finance and operations virtual entities, including answers to questions relating to versions of environments.
 author: Sunil-Garg
-ms.date: 08/03/2022
-ms.topic: article
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: sunilg
+ms.topic: article
+ms.date: 08/03/2022
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 

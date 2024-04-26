@@ -1,13 +1,13 @@
 ---
 title: Work with feature setups
-description: This article explains how to set up Electronic invoicing features.
-author: gionoder
+description: This article explains how to set up Electronic invoicing features (RCS).
+author: ilikond
 ms.date: 12/15/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
