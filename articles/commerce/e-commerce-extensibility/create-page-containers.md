@@ -4,8 +4,6 @@ description: This article describes how to create a page container module in Mic
 author: samjarawan
 ms.date: 09/14/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

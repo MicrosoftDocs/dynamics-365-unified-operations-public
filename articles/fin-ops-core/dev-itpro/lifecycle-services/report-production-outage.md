@@ -6,7 +6,7 @@ ms.author: tsmarsha
 ms.topic: article
 ms.date: 05/06/2019
 ms.custom:
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-4-30

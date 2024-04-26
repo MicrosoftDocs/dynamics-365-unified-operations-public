@@ -4,8 +4,6 @@ description: This article describes how you can customize existing field descrip
 author: josaw1
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

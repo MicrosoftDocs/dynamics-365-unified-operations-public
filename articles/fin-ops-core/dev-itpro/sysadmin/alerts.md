@@ -6,9 +6,6 @@ description: This article explains how to set up alerts for batch jobs.
 author: hasaid
 ms.date: 03/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

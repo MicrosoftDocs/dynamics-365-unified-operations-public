@@ -4,8 +4,6 @@ description: This article explains how to test the cutover process between turni
 author: gianugo
 ms.date: 08/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

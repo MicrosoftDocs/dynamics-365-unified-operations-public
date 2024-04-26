@@ -6,9 +6,6 @@ description: This article provides information about project accounting that use
 author: AlexRenney
 ms.date: 04/25/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BudgetReservation_PSN 

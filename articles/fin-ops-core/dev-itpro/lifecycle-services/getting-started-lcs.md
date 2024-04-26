@@ -5,7 +5,7 @@ author: angelmarshall
 ms.author: tsmarsha
 ms.topic: article
 ms.date: 06/20/2017
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
 ms.search.region: Global

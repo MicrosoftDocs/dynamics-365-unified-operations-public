@@ -4,8 +4,6 @@ description: This article describes how to deploy a developer topology that supp
 author: josaw1
 ms.date: 01/21/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

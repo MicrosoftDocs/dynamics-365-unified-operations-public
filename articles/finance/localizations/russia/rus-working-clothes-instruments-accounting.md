@@ -4,8 +4,6 @@ description: This article provides information about how to maintain working clo
 author: AdamTrukawka
 ms.date: 10/04/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

@@ -6,9 +6,6 @@ description: In Japan, lump-sum assets, low-value assets, and deferred assets ar
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetDepreciationProfile

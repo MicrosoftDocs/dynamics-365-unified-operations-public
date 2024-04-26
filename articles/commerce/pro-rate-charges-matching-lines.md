@@ -4,8 +4,6 @@ description: This article describes additional capabilities for calculating and 
 author: hhainesms
 ms.date: 03/30/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

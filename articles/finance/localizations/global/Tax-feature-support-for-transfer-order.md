@@ -6,9 +6,6 @@ description: This article explains the new tax feature support for transfer orde
 author: Kai-Cloud
 ms.date: 02/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:

@@ -1,36 +1,22 @@
 ---
-# required metadata
-
 title: Importing vouchers by using the General journal entity
-description: Learn how to import data into the General journal by using the General journal entity.  
+description: Learn how to import data into the General journal by using the General journal entity, including outlines on setup and journal batch numbers.  
 author: rcarlson
-ms.date: 02/02/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 02/02/2024
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 ---
 
 # Importing vouchers by using the General journal entity
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides tips for importing data into the General journal by using the General journal entity. Find technical information about the entity at [General journal entity](../../dev-itpro/data-entities/entity-general-journal.md).
 

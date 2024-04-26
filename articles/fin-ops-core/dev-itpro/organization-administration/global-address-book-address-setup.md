@@ -6,9 +6,6 @@ description: This article describes how to set up address formats for the global
 author: jaredha
 ms.date: 09/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DirPartyTable, DirPartyTableRoles

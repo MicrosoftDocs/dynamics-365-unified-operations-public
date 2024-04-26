@@ -6,7 +6,7 @@ ms.author: laswenka
 ms.topic: article
 ms.date: 06/30/2020
 ms.custom: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29

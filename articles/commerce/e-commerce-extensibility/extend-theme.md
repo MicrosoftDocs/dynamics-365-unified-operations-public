@@ -4,8 +4,6 @@ description: This article describes how to extend a theme from a base theme for 
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

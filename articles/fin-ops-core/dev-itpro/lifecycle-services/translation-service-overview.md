@@ -6,7 +6,7 @@ ms.author: sericks
 ms.topic: overview
 ms.date: 10/25/2021
 ms.custom: ["6154"]
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.collection: get-started 
 audience: Developer, IT Pro
 ms.search.region: Global

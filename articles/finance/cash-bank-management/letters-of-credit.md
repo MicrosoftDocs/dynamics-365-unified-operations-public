@@ -6,9 +6,6 @@ description: Letters of credit are bank documents that are commonly used for the
 author: angelad116
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankLCImport

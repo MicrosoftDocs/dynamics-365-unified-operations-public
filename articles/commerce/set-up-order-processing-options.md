@@ -6,9 +6,6 @@ description: This article provides information about how to process orders for c
 author: josaw1
 ms.date: 02/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace

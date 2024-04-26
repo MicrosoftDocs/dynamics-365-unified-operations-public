@@ -4,8 +4,6 @@ description: This article explains how to apply the latest platform update to yo
 author: LaneSwenka
 ms.date: 08/16/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

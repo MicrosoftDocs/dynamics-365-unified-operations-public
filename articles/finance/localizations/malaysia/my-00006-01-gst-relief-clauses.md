@@ -6,8 +6,6 @@ description: After you complete these procedures, when you generate a tax invoic
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

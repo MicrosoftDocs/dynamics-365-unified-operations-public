@@ -1,16 +1,15 @@
 ---
 title: Deploy assets by using Azure Pipelines
-description: This article explains how you can deploy assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using pipelines in Azure DevOps.
-author: gianugo
-ms.date: 01/17/2024
+description: Learn about how you can deploy assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using pipelines in Azure DevOps.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-audience: Developer
+ms.date: 01/17/2024
 ms.reviewer: twheeloc
+audience: Developer
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Deploy assets by using Azure Pipelines

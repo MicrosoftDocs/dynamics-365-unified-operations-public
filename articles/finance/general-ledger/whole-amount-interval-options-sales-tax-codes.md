@@ -6,9 +6,6 @@ description: This article explains the options for the Calculation method field 
 author: kailiang
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxData, TaxTable

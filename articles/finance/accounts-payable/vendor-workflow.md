@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Vendor workflow
-description: Modify vendor information and use workflow to approve it.
+description: Learn about the vendor overflow, including overviews on setting up the vendor workflow and changing vendor information and submitting changes to the workflow.
 author: sunfzam
-ms.date: 03/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  Vendor
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 03/21/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-08-30
+ms.search.form: Vendor
 ms.dyn365.ops.version: 8.0.4
 ---
 

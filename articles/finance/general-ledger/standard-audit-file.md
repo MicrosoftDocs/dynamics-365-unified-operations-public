@@ -4,8 +4,6 @@ description: This article explains how to generate the Standard Audit File for T
 author: AdamTrukawka
 ms.date: 06/20/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.author: atrukawk

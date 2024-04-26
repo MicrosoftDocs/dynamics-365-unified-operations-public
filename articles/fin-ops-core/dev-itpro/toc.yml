@@ -21,8 +21,6 @@ items:
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-39.md
         - name: Platform updates for version 10.0.38 (February 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-38.md
-        - name: Platform updates for version 10.0.37 (November 2023)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-37.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -317,15 +315,15 @@ items:
           items:
           - name: Archive Dynamics 365 Finance General ledger (preview)
             href: sysadmin/archive-gl.md
-          - name: Archive Dynamics 365 Supply Chain transactions (preview)
+          - name: Archive Dynamics 365 Finance Tax transactions (preview)
+            href: sysadmin/archive-taxtrans.md
+          - name: Archive Dynamics 365 Supply Chain Sales orders (preview)
             href: sysadmin/archive-so.md 
-          - name: Archive inventory transaction data in Dynamics 365 Supply Chain Management (preview)
+          - name: Archive Dynamics 365 Supply Chain inventory transactions (preview)
             href: sysadmin/archive-inventory.md
           - name: Archive Dynamics 365 Supply Chain inventory journals (preview)
             href: sysadmin/archive-inventory-journal.md
-          - name: Archive Dynamics 365 Finance Tax transactions (preview)
-            href: sysadmin/archive-taxtrans.md
-        - name: Dynamics 365 Finance archive with Dataverse long term retention FAQ (preview)
+        - name: Dynamics 365 archive with Dataverse long term retention FAQ (preview)
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
       items: 
@@ -1313,16 +1311,20 @@ items:
                 href: data-entities/dual-write/ledger-mapping.md            
               - name: Integrated tax master
                 href: data-entities/dual-write/tax-mapping.md
-            - name: Quote-to-cash with Dynamics 365 Sales
+            - name: Prospect-to-cash with Dynamics 365 Sales
               items:
-              - name: Quote-to-cash in dual-write
+              - name: Prospect-to-cash in dual-write
                 href: ../fin-ops/data-entities/dual-write-prospect-to-cash.md
               - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md
               - name: Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md
+              - name: Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales
+                href: ../fin-ops/data-entities/prospects-in-prospect-to-cash-enable.md                
               - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md
+              - name: Work with prospects in prospect-to-cash with Dynamics 365 Sales
+                href: ../fin-ops/data-entities/prospects-in-prospect-to-cash-use.md
               - name: Sync on-demand with the Supply Chain Management pricing engine
                 href: ../fin-ops/data-entities/pricing-engine.md
               - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
@@ -1388,8 +1390,7 @@ items:
               - name: Dual-write error codes
                 href: data-entities/dual-write/dual-write-error-codes.md
               - name: Error codes for the table map health check
-                href: data-entities/dual-write/table-map-health-check.md
-                  
+                href: data-entities/dual-write/table-map-health-check.md                  
       - name: Virtual entities
         items:
         - name: Virtual entities overview
@@ -2280,6 +2281,8 @@ items:
         href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot (preview)
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
+      - name: Responsible AI FAQ for Suggested questions within Copilot (preview)
+        href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 

@@ -4,7 +4,7 @@ description: Learn about how to view a business process library, how to copy and
 author: sericks007
 ms.date: 02/20/2024
 ms.topic: article
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.author: sericks

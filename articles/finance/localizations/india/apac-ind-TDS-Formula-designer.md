@@ -6,10 +6,6 @@ description: This article provides an example of how Tax Deducted at Source (TDS
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
