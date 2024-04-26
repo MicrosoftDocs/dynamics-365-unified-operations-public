@@ -1,21 +1,19 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.26 of finance and operations apps (May 2022)
-description: This article lists the features that are included in the platform updates for version 10.0.26 of finance and operations apps.
+description: Learn about the features that are included in the platform updates for version 10.0.26 of finance and operations apps released in May 2022.
 author: sericks007
-ms.date: 04/12/2024
+ms.author: sericks
 ms.topic: conceptual
+ms.date: 04/12/2024
 ms.custom: 
   - bap-template
   - evergreen
-audience: Application User
 ms.reviewer: sericks
+audience: Application User
 ms.search.region: Global
-ms.author: sericks
 ms.search.validFrom: 2022-03-04
-
 ---
+
 # Platform updates for version 10.0.26 of finance and operations apps (May 2022)
 
 [!include [banner](../../../finance/includes/banner.md)]

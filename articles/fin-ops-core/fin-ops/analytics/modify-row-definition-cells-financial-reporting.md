@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Modify row definition cells
-description: This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
+description: Learn about what is required for each cell in a row definition on a financial report and understand how to enter that information.
 author: aprilolson
-ms.date: 08/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 08/11/2021
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ---
 
 # Modify row definition cells

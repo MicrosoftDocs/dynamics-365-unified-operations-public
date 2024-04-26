@@ -6,9 +6,6 @@ description: In Japan, invoices are consolidated each month for payment. This ar
 author: EricWangChen
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP

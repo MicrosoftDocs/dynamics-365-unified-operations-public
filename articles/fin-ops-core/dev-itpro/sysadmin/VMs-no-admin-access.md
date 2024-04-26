@@ -6,9 +6,6 @@ description: This article provides answers to frequently asked questions (FAQs) 
 author: yukonpeegs
 ms.date: 10/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

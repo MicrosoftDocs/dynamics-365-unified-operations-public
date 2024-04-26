@@ -173,10 +173,10 @@ When you try to enable the Inventory Visibility integration batch job from Suppl
 
 > Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility add-in. Contact Inventory Visibility Support Team at `inventvisibilitysupp@microsoft.com` for more info.
 
-If you receive this error, follow these steps to update your [partition schema](inventory-visibility-power-platform.md#partition-configuration) to help prevent out-of-memory issues. If you don't receive this error, you can skip this procedure.
+If you receive this error, follow these steps to update your [partition schema](inventory-visibility-power-platform.md#data-partition) to help prevent out-of-memory issues. If you don't receive this error, you can skip this procedure.
 
-1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-all-inventory-data).
-1. Set up to send requests to Inventory Visibility, as described in [Inventory Visibility public APIs](inventory-visibility-api.md).
+1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-data).
+1. Set up a system to send [API requests](inventory-visibility-api.md) to Inventory Visibility.
 1. After data is deleted, call the `Get` API with a body of `none` to get all partition IDs (by using `/api/environment/{environmentId}/allpartitionids`). Review the response to confirm that data has been completely cleared. The result should be empty.
 1. Call the `Post` API with a body of `none` to change the partition schema (by using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature, and [update the configuration](inventory-visibility-power-platform.md#update-configuration).

@@ -1,19 +1,20 @@
 ---
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 28 (July 2019)
-description: This article describes features that are in preview in Dynamics 365 for Finance and Operations platform update 28 (July 2019).
+description: Learn about features that are in preview in Dynamics 365 for Finance and Operations platform update 28 (July 2019).
 author: sericks007
-ms.date: 04/12/2024
+ms.author: sericks
 ms.topic: conceptual
+ms.date: 04/12/2024
 ms.custom: 
   - bap-template
   - evergreen
-audience: Application User
 ms.reviewer: sericks
+audience: Application User
 ms.search.region: Global
-ms.author: sericks
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform 28
 ---
+
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 28 (July 2019)
 
 [!include [banner](../includes/banner.md)]

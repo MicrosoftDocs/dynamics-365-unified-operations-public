@@ -6,8 +6,6 @@ description: This procedure steps through creating advanced rules for journals.
 author: aprilolson
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

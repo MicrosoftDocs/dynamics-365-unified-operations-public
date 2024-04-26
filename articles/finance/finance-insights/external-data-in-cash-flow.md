@@ -6,9 +6,6 @@ description: This article describes the setup steps that must be completed so th
 author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable

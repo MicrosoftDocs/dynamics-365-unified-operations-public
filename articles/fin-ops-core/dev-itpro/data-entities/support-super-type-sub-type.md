@@ -6,9 +6,6 @@ description: Describes support for inheritance patterns in data entities.
 author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -29,9 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Super types and sub types
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Describes support for inheritance patterns in data entities.
 

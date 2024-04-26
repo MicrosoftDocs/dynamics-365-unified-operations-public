@@ -4,8 +4,6 @@ description: This article describes how to enable automatic linking of identity 
 author: BrianShook
 ms.date: 02/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

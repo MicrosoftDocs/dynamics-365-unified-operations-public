@@ -4,8 +4,6 @@ description: This article provides an overview of the certificate profiles that 
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

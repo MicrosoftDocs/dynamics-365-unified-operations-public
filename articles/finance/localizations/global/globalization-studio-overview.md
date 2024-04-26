@@ -5,8 +5,6 @@ description: This article provides information about the Globalization Studio.
 author: Filatovm
 ms.date: 09/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

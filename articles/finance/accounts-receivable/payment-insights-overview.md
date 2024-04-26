@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Customer payment insights
-description: This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
-author: ShivamPandey-msft
-ms.date: 11/06/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn aboutthe payment insights capability that helps improve understanding of individual customers' typical payment practices.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: overview
+ms.date: 11/06/2023
+ms.reviewer: kfend
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-11-06
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.8
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Customer payment insights 

@@ -6,9 +6,6 @@ description: This article walks through the prerequisites and the broad steps th
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

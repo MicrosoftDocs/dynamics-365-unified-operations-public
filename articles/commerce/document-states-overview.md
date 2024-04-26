@@ -4,8 +4,6 @@ description: This article covers the various document states of page elements in
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

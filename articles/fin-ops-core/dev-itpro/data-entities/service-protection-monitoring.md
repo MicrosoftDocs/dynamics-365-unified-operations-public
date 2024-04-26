@@ -6,9 +6,6 @@ description: This article provides information about the tools that are availabl
 author: jaredha
 ms.date: 08/25/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

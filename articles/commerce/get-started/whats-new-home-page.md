@@ -8,7 +8,6 @@ ms.date: 02/22/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-
 # optional metadata
 
 # ms.search.form: 

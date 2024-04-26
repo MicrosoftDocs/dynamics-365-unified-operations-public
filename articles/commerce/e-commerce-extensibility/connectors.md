@@ -4,8 +4,6 @@ description: This article describes connectors and explains how to configure and
 author: samjarawan
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

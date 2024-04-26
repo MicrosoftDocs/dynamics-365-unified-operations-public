@@ -6,9 +6,6 @@ description: This article provides an overview of inventory posting profiles.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: InventPosting, InventTrans

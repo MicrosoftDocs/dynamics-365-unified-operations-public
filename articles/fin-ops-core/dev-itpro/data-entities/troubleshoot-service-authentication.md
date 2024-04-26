@@ -6,9 +6,6 @@ description: This article provides some tips for troubleshooting issues that inv
 author: pnghub
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,9 +6,6 @@ description: This article describes settlement for centralized payments for Micr
 author: angelad116
 ms.date: 11/22/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CustOpenTrans 

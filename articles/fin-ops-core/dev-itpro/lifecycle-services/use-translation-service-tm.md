@@ -6,9 +6,6 @@ description: This article describes when and where translation memory files can 
 author: abmotgi
 ms.date: 10/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

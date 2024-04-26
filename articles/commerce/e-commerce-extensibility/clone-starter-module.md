@@ -6,9 +6,6 @@ description: This article describes how to clone a module library module in Micr
 author: samjarawan
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

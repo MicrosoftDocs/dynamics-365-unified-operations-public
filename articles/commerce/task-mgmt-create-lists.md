@@ -4,8 +4,6 @@ description: This article describes how to create task lists and add tasks to th
 author: gvrmohanreddy
 ms.date: 11/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article explains what to expect when you use Date and Time fie
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmPersonnelManagementWorkspace

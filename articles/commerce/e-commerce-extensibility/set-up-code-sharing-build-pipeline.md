@@ -6,9 +6,6 @@ description: This article describes how to set up code sharing with Microsoft Az
 author: samjarawan
 ms.date: 03/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

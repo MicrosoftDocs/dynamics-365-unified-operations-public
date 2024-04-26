@@ -4,8 +4,6 @@ description: There are several ways to create cost elements in Cost accounting.
 author: kfend
 ms.date: 08/29/2022
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
