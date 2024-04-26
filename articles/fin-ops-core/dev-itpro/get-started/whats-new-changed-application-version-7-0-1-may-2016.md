@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in Dynamics AX application version 7.0.1 (May 2016)
-description: This article describes features that are either new or changed in Microsoft Dynamics AX application version 7.0.1. This version was released in May 2016 and has a build number of 7.0.1265.23014.
+description: Learn about new or changed features in Microsoft Dynamics AX application version 7.0.1. This version was released in May 2016.
 author: sericks007
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: f0bbc78f-87fc-40e9-b46a-6655893f69be

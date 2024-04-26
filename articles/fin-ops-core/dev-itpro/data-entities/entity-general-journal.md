@@ -1,13 +1,10 @@
 ﻿---
 title: General journal entity
-description: Learn the definition of the General journal data entity in finance and operations migration projects with Dynamics 365.
-ms.date: 02/02/2024
-ms.topic: conceptual
+description: Learn about the General journal data entity in finance and operations migration projects with Dynamics 365 via a summary.
 author: edupont04
 ms.author: epegors
-searchScope: dynamics-365-daf
-ms.service: dynamics-365
-ms.subservice: guidance
+ms.topic: conceptual
+ms.date: 02/02/2024
 ms.collection: FastTrack
 ---
 
