@@ -20,8 +20,8 @@ This article describes how to set up and manage archive data in Microsoft Dynami
 To prepare your environment to archive data, follow these steps.
 
 1. To align it with your production instance, refresh your PROD data in your sandbox instance.
-1. Ensure that your sandbox instance is on the latest version of Finance version 10.0.39. Be sure to apply the latest quality updates for Finance version 10.0.39.
-1. Enable license configuration for SQL row version change tracking:
+1. Ensure that your sandbox instance is on the latest version of D365 Finance and Operations version 10.0.39 or greater. Be sure to apply the latest quality updates for the version.
+1. Under license configuration ensure **SQL row version change tracking** is enabled. If not enable SQL row version change tracking using the following steps:
 
     1. In Microsoft Dynamics Lifecycle Services, select the environment, and then select **Maintain** \> **Enable Maintenance Mode**.
     1. Sign in to Finance, and go to **System administrator** \> **Setup** \> **License configuration**. Select the **SQL row version change tracking** checkbox, and then select **Save**.
@@ -40,31 +40,21 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 3. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
 4. Install Dynamics 365 Archive with Dataverse Long Term Retention - From the Power Platform admin center, Click on Install App and search for Dynamics 365 Archive with Dataverse Long Term Retention (Preview). Select and click install. If you already have the app installed, you should install the latest update.
 
-
-
-## Enable Synapse link profile creation in the Power Apps maker portal
-
-1. In Notepad, create a URL that has the following format: `https://make.preview.powerapps.com/environments/@@DATAVERSER_ENV_ID@@/exporttodatalake?athena.mdl=true`. Replace `@@DATAVERSER_ENV_ID@@` with the globally unique identifier (GUID) of the environment. You can find this value in the **Environment ID** field under **Power platform environment information** on the **Environment details** page in Lifecycle Services.
-1. Open the URL in a new browser window.
-1. Select Microsoft OneLake and Manage tables. Search for **Bientity**, select the entities that appear in the list, and then select **Save**. 
-
-> [!NOTE]
-> 1. Refer to the table list in the archive customizations document, and select the correct entities for each functional scenario that you plan to archive.
->   
-> 2. Don't select all tables. Otherwise, data from all the live application tables is synced to tables in the Dataverse long term retention.
-
 ### Enable Finance and Operation data archival with Dataverse long term retention  
 
 1. In Dynamics 365 Finance and Operations, go to **Feature management**.
 1. Select the **Archive with Dataverse long term retention** feature for overall archival service integration. This feature enables all supported Dynamics 365 Finance and Operations functional scenarios for archiving with Dataverse long-term retention.
 2. The **Archive with Dataverse long term retention** workspace should be available in the **Workspaces** list in Finance and Operations.
 
-<br/>
-
 ### Scheduling an archive job
-Finance and Operations archive jobs can be scheduled from the archive workspace for supported functional scenarios using the new long term retention job wizard. 
+> [!NOTE]
+> Before scheduling an archive job check for for custom fields on the archive tables by running [validate archive table schema script](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/tree/main/Finance%20and%20Operations/SQL%20Scripts). If custom fields are found, follow [Archive customization](archive-custom.md) instructions to include these fields in the data archive.
+
+- Finance and Operations archive jobs can be scheduled from the archive workspace for supported functional scenarios using the new long term retention job wizard. 
 - While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process runs during the scheduled window. The other asynchronous archive processes for Dataverse long term retention occur continuously even outside of the scheduled duration.
 - Only one archive job across all scenarios runs at any given point of time.  The scheduled job starts running only after the previous archive job completes.
+
+> [!IMPORTANT]
 > Known Issue: When submitting a new archive job for the first time, you may see this error **An error occured while accessing the archive service. Please check your archive service installation**. Workaround - Wait for 15 minutes before re-submitting the archive job.
 
 ## View archive job progress
