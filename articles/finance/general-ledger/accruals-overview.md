@@ -3,7 +3,7 @@
 
 title: Accruals overview
 description: This article describes accruals, and provides information about how to set them up and create transactions.
-author: aprilolson
+author: jchrist
 ms.date: 11/21/2022
 ms.topic: overview
 # optional metadata
@@ -18,7 +18,7 @@ ms.collection: get-started
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

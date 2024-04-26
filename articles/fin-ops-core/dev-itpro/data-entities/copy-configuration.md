@@ -29,8 +29,6 @@ ms.dyn365.ops.version: Platform update 7
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 There are two options for copying configuration data in finance and operations:
 
 - To move data between instances, you must first export it from one company, and then import it to another company.

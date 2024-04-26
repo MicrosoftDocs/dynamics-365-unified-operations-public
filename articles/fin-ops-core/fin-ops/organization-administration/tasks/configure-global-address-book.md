@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Configure the global address book
-description: Use this procedure to set the default values and security policies for the global address book. 
-author: msftbrking 
-ms.date: 07/23/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: DirParameters   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Use this procedure to set the default values and security policies for the global address book, including a step-by-step procedure. 
+author: msftbrking
 ms.author: brking
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/23/2019
+ms.custom:
+ms.reviewer: sericks 
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DirParameters 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Configure the global address book
 
 [!include [banner](../../includes/banner.md)]

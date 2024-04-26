@@ -42,7 +42,7 @@ The following features are included in this release. Follow the links to the [re
 
 - [Create and view certifications on the vendor collaboration interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - For more information, see [Maintain vendor certification](../../finance/public-sector/manage-vendor-certification.md).
 
-- [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md).
+- [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Consolidate inventory transactions](../inventory/archive-inventory-transactions.md).
 
 - [Rebate management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - For more information, see [Rebate management module overview](../rebate-management/rebate-management-overview.md).
 

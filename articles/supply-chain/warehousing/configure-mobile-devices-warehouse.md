@@ -4,7 +4,7 @@ description: This article describes how to configure the menu items that warehou
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
-ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings, WHSRFMenu
 ms.topic: how-to
 ms.date: 10/14/2022
 audience: Application User
@@ -16,21 +16,20 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+This article describes how to configure the menu items that warehouse workers use to perform their work in the Warehouse management mobile app.
 
-> [!NOTE]
-> This article applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
+For example, you can use the **Mobile device menu items** page to configure menu items for the following tasks:
 
 - Process an inquiry or perform an activity, such as printing a label, generating license plate numbers, starting a production order, or quickly looking up information about items in a location.
 - Create work that will be performed through another process. For example, receiving an item for a purchase order can create putaway work for another worker.
-- Perform work that was created by another process (existing work), such as putaway work that was created when an item was received for a purchase order.
+- Perform work that was created by another process (existing work), such as putaway work that was created when an item was received for a purchase order, or picking work related to a sales order.
+
+## Configure menu items for activities and inquiries
 
 To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**.
 
 > [!NOTE]
 > Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the "Additional menu item options" section later in this article.
-
-## Configure menu items for activities and inquiries
 
 If the **Mode** field for a menu item is set to **Indirect**, you can create a menu item to perform a general activity or inquiry that doesn't create work. Examples include reprinting license plate labels and an inquiry about the items in a location. The following table lists the options that are available.
 
@@ -450,7 +449,7 @@ You can set up work confirmations that require that a worker use a mobile device
 The following table describes the various work types that you can use work confirmations with.
 
 | Option | Description |
-|------------------------|----------------------------------------------------------------------------|
+|--|--|
 | Pick | Require confirmation when items are picked. |
 | Put | Require confirmation when items are put in a location. |
 | Counting | Require confirmation during cycle counting. |
@@ -463,6 +462,31 @@ The following table describes the various work types that you can use work confi
 
 > [!NOTE]
 > You can require product confirmation only for pick and put work types.
+
+## <a name="mobile-device-menu"></a>Set up mobile device menus
+
+The menu items that you create using the **Mobile device menu items** page will only become available to mobile device users after you add them to one or more menus using the **Mobile device menu** page.
+
+On the **Work users** page (**Warehouse management** \> **Setup** \> **Worker**), you can choose the top-level menu that each worker has access to on the mobile app (see also [Mobile device user accounts](mobile-device-work-users.md)). This way, you can set up a system that supports several different menu structures, where each worker only sees the menu items that are relevant to them.
+
+To set up menus for mobile devices, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
+1. Do one of the following actions:
+    - To add a new menu or submenu, on the Action Pane, select **New**.
+    - To edit an existing menu or submenu, on the list pane, select the menu you want to edit. Then, on the Action Pane, select **Edit**.
+
+1. In the header of the menu, make the following settings:
+    - **Name**: Enter a name for the menu or submenu. This is an internal name and must be unique. You can't edit this field after you save the record.
+    - **Description**: Enter a short description for the menu or submenu.
+
+1. In the **Mobile device menus** section, find and select a menu item or submenu you'd like to add in the **Available menus and menu items** column. Then select the right arrow button to move selected item to the **Menu structure** column.
+1. Use the up arrow and down arrow buttons next to the **Menu structure** column to arrange the items in the menu.
+
+    > [!TIP]
+    > Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, you should add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**.
+
+1. On the Action Pane, select **Save**.
 
 ## Additional resources
 

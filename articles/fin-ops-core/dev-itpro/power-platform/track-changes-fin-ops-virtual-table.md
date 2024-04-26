@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Track changes for finance and operations virtual tables in Dataverse (Preview)
-description: This article explains how to enable Track changes for finance and operations virtual tables in Microsoft Dataverse.
+description: Learn about how to enable Track changes for finance and operations virtual tables in Microsoft Dataverse, including prerequisites to tracking changes.
 author: peakerbl
-ms.date: 12/20/2022
+ms.author: johnmichalak
 ms.topic: article
-# optional metadata
-
-# ms.search.form:
+ms.date: 12/20/2022
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
 ms.search.region: Global
-# ms.search.industry:
-ms.author: peakerbl
 ms.search.validFrom: 2022-10-10
+ms.search.form:
 ms.dyn365.ops.version: 10.0.31
 ---
 

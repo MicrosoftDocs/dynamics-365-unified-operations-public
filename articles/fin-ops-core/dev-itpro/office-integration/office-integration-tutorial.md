@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Office integration tutorial
 description: In this tutorial, you will use and build Office integration experiences that involve Excel, Word, document management, and email. 
 author: jasongre
-ms.date: 05/24/2021
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2021
+ms.reviewer: twheeloc 
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
 ---
 
 # Office integration tutorial

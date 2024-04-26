@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set a user's preferred time zone
-description: This article explains how a user in the System Administrator role can set the time zone for a user. 
+description: Learn about how a user in the System Administrator role can set the time zone for a user, including a step-by-step process. 
 author: pvillads
-ms.date: 07/08/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SysUserManagement, SysUserSetup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/08/2019
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysUserManagement, SysUserSetup 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set a user's preferred time zone
 
 [!include [banner](../../includes/banner.md)]
