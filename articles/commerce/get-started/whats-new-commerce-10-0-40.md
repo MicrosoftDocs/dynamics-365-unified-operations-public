@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.40
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.40. This version has a build number of 10.0.NNNNN and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.40. This version has a build number of 10.0.1935.5 and is available on the following schedule:
 
 - **Preview of release:** April 2024
 - **General availability of release (self-update):** May 2024
@@ -33,8 +33,8 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Point of sale | Native bar code scanning for mobile apps | The Store Commerce app can now scan bar codes and QR codes with the rear-facing camera on an Android or iOS mobile device without requiring the licensing of a third party app. Workflows where bar code scanning is enabled include adding items to a transaction, processing a return, price checks, and inventory operations. | Admins |
-| Point of sale | Streamlined workflow for adding items to a transaction from the product page. | When adding an item to the cart from the product description page or search results, a confirmation dialog is now displays with the list of products being added. Navigation options to go to the transaction or stay on the product or search page are added. Additionally, a new configuration option in the Visual profile in Headquarters can be used to bypass the confirmation dialog and take the user directly to the transaction when an item is added to the sale. | Automatically / Admins | 
-| Point of sale | Display the store phone number on the store location page in poin of sale (POS) | Store associates can now view a store’s phone number on the store location page in POS. The store’s phone number is useful for store associates in their daily tasks for contacting the store or providing the phone number to a customer. The store phone number was already available in e-Commerce and Call Center. Now it's available in POS, including a mobile view and an offline mode. | Automatically |
+| Point of sale | Streamlined workflow for adding items to a transaction from the product page. | When you add an item to the cart from the product description page or search results, a confirmation dialog is now displays with the list of products being added. Navigation options to go to the transaction or stay on the product or search page are added. Additionally, a new configuration option in the Visual profile in Headquarters can be used to bypass the confirmation dialog and take the user directly to the transaction when an item is added to the sale. | Automatically / Admins | 
+| Point of sale | Display the store phone number on the store location page in point of sale (POS) | Store associates can now view a store’s phone number on the store location page in POS. The store’s phone number is useful for store associates in their daily tasks for contacting the store or providing the phone number to a customer. The store phone number was already available in e-Commerce and Call Center. Now it's available in POS, including a mobile view and an offline mode. | Automatically |
 | Point of sale | Reset button grids at the end of a transaction | To reduce confusion and provide a consistent experience for point of sale users, the default button grid assigned to the first tab is restored when a transaction is completed, suspended, or voided. | Automatically |
 | Point of sale | Configure display of search results | The default view for displaying search results can now be configured in the Visual profile in Headquarters. Before this release, the default view for search results was list view, but we received feedback from customers that they prefer card view, especially on mobile devices. | Admins |
 | Point of sale | Store commerce self-checkout | POS customers can turn on kiosk based self-checkout for their shoppers to be able to scan and pay for items by credit card. | Admins |
@@ -51,23 +51,23 @@ Microsoft Dynamics 365 Commerce version 10.0.40 includes platform updates. To le
   
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.39, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=NNNNN).
+For information about the bug fixes included in each of the updates that are part of version 10.0.39, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
 
 ### Dynamics 365 and industry clouds: 2024 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2024 release wave 1 plan](/dynamics365/release-plan/2024wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365 and industry clouds: 2024 release wave 1 plan](/dynamics365/release-plan/2024wave1/). We captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Commerce features
 
-The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that have been removed or deprecated for Commerce.
+The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that are removed or deprecated for Commerce.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months before removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
