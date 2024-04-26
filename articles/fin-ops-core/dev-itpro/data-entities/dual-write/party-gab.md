@@ -1,13 +1,13 @@
 ---
 title: Party and global address book
-description: This article describes the Party and global address book functionality of dual-write.
+description: Learn about the Party and global address book functionality of dual-write, including a table that describes various row types for contacts.
 author: RamaKrishnamoorthy
-ms.date: 08/22/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 08/22/2023
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2021-02-22
 ---
 
