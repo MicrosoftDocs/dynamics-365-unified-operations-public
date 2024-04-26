@@ -670,6 +670,8 @@
         href: cash-bank-management/cash-flow-forecasting.md
       - name: Troubleshoot Cash flow forecasting setup
         href: cash-bank-management/cash-flow-forecasting-tsg.md
+      - name: Bank account lifecycle management
+        href: cash-bank-management/bank-acct-workflow.md
       - name: Bank management workspace
         href: cash-bank-management/Bank-management-workspace.md
       - name: Bank foreign currency revaluation
