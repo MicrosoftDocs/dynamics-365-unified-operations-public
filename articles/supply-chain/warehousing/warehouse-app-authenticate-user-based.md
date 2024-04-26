@@ -63,20 +63,35 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. On the **Authentication** page for the new app, set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
 1. Select **Add a platform**.
 1. In the **Configure platform** dialog box, select **Mobile and desktop applications**.
-1. In the **Configure Desktop \+ devices** dialog box, set the **Custom redirect URIs** field to *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*.
+1. In the **Configure Desktop \+ devices** dialog box, set the **Custom redirect URIs** field to the following value:
+
+    ``` text
+    ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
+    ```
+
 1. Select **Configure** to save your settings and close the dialog boxes.
 1. You return to the **Authentication** page, which now shows your new platform configuration. Select **Add a platform** again.
 1. In the **Configure platform** dialog box, select **Android**.
 1. In the **Configure your Android app** dialog box, set the following fields:
 
-    - **Package name** – Enter *com.microsoft.warehousemanagement*.
-    - **Signature hash** – Enter *hpavxC1xAIAr5u39m1waWrUbsO8=*.
+    - **Package name** – Enter the following value:
+
+        ``` text
+        com.microsoft.warehousemanagement
+        ```
+
+    - **Signature hash** – Enter the following value:
+
+        ``` text
+        hpavxC1xAIAr5u39m1waWrUbsO8=
+        ```
 
 1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
 1. Select **Add a platform** again.
 1. In the **Configure platform** dialog box, select **iOS / macOS**.
 1. In the **Configure your iOS or macOS app** dialog box, set the **Bundle ID** field to *com.microsoft.WarehouseManagement*.
 1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
+1. In the **Advanced settings** section, set **Allow public client flows** to *Yes*.
 1. In the **Manage** list, select **API permissions**.
 1. Select **Add a permission**.
 1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.

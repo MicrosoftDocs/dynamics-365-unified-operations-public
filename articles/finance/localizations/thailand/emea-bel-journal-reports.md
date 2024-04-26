@@ -4,10 +4,8 @@ description: This article explains how to work with journal reports that are spe
 author: AdamTrukawka
 ms.date: 04/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Thailand
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

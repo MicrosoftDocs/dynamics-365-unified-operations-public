@@ -6,16 +6,13 @@ description: This article explains how to configure and use the Canada Goods and
 author: EricWangChen
 ms.date: 08/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: GST/HST, GIFT
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb

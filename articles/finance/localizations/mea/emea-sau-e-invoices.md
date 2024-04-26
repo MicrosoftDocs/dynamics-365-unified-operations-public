@@ -4,10 +4,8 @@ description: This article explains how to configure and submit customer electron
 author: mrolecki
 ms.date: 11/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia
 ms.author: mrolecki
 ms.search.validFrom: 2021-10-15

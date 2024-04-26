@@ -6,8 +6,6 @@ description: This article describes how to set up multi-leg journeys for the Lan
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

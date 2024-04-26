@@ -6,15 +6,13 @@ description: This procedure walks you through adding a bank account to a custome
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
 ms.search.form: CustTable, CustBankAccounts, LogisticsPostalAddress, LogisticsPostalAddressGrid, SysLookupMultiSelectGrid   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France

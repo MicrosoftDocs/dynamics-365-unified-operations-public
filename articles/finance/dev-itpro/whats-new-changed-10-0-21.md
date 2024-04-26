@@ -6,9 +6,6 @@ description: This article describes features that are either new or changed in t
 author: kfend
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

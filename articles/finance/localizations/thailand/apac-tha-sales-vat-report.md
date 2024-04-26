@@ -4,10 +4,8 @@ description: This article describes the reports in Microsoft Dynamics 365 Financ
 author: AdamTrukawka
 ms.date: 01/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: atrukawk
 ms.search.validFrom: 1900-01-02

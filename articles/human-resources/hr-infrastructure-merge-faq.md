@@ -7,9 +7,6 @@ description: This article answers frequently asked questions about the infrastru
 author: twheeloc
 ms.date: 11/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

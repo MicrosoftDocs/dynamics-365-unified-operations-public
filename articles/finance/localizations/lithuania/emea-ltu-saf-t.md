@@ -4,10 +4,8 @@ description: This article explains how to set up and generate the Standard Audit
 author: liza-golub
 ms.date: 05/26/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Lithuania
 ms.author: egolub
 ms.search.validFrom: 

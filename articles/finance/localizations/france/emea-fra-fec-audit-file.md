@@ -4,10 +4,8 @@ description: This article provides information about the Fichier des écritures 
 author: AdamTrukawka
 ms.date: 05/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: France
 ms.author: atrukawk
 ---

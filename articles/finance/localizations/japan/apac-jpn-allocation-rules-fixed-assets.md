@@ -6,15 +6,12 @@ description: This article answers some frequently asked questions about fixed as
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Japan
 # ms.search.industry: 

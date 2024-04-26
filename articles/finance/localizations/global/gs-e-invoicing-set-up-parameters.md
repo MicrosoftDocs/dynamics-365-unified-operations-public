@@ -17,7 +17,6 @@ ms.dyn365.ops.version: 10.0.39
 # Configure Electronic invoicing parameters
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Import ER configurations from the repository
 

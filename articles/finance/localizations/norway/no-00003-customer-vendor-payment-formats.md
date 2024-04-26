@@ -4,10 +4,8 @@ description: This task walks you through setting up and maintaining Norwegian pa
 author: EricWangChen
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Norway
 ms.author: wangchen
 ms.search.validFrom: 2016-06-30

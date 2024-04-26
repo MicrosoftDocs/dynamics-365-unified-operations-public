@@ -6,16 +6,13 @@ description: This article provides information about the split payment accountin
 author: EvgenyPopovMBS
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxBookSection, TaxGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Italy
 # ms.search.industry: 

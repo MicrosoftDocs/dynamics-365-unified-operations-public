@@ -6,9 +6,6 @@ description: This article provides information that will help you plan the chart
 author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, LedgerConsolidateAccountGroup, MainAccountConsolidateAccount, DimensionDetails, MainAccountDetails

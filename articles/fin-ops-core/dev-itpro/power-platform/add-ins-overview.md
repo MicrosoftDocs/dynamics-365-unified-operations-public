@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Add-ins overview
-description: This article provides information about add-ins, which can be used to extend the functionality of finance and operations apps.
+description: Learn about add-ins, which can be used to extend the functionality of finance and operations apps, including overviews of various add-ins.
 author: ankugo
-ms.date: 02/11/2022
+ms.author: johnmichalak
 ms.topic: overview
-ms.prod:
-
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
+ms.date: 02/11/2022
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-
 ms.search.region: Global
-# ms.search.industry:
-ms.author: ankugo
 ms.search.validFrom: 2021-02-28
+ms.search.form:
 ms.dyn365.ops.version: 10.0.15
 ---
 

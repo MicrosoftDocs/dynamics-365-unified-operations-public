@@ -6,15 +6,12 @@ description: This article provides information about the strategy and scope of t
 author: kfend
 ms.date: 08/21/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 #ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.suite: 
 # ms.tgt_pltfrm: 
 # ms.custom: 

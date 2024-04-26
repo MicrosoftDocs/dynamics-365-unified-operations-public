@@ -4,8 +4,6 @@ description: This article provides information about the functionality for multi
 author: liza-golub
 ms.date: 02/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

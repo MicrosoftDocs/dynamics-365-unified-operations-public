@@ -1,28 +1,30 @@
 ---
-title: Configure Azure resources for Electronic invoicing (preview)
-description: This article provides an overview of the process for setting up Microsoft Azure resources for Electronic invoicing (preview).
+title: Configure Azure resources for Electronic invoicing
+description: This article provides an overview of the process for setting up Microsoft Azure resources for Electronic invoicing.
 author: ilikond
-ms.date: 01/21/2022
+ms.date: 03/13/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39 
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
 ---
 
-# Configure Azure resources for Electronic invoicing (preview)
+# Configure Azure resources for Electronic invoicing
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The process of setting up Microsoft Azure resources for Electronic invoicing has three steps. The first two steps, "Create an Azure key vault in the Azure portal" and "Create an Azure storage account in the Azure portal," are mandatory. The third step, "Configure a SharePoint connection," is optional.
+The process for setting up Microsoft Azure resources for Electronic invoicing has three steps. The first two steps, "Create an Azure key vault in the Azure portal" and "Create an Azure storage account in the Azure portal," are mandatory. The third step, "Configure a SharePoint connection," is optional. These steps can be completed by using any of the following methods:
+
+- Use the Azure portal user interface (UI).
+- Run an Azure PowerShell script.
+- Deploy an Azure Resource Manager (ARM) template.
+
+If you prefer to use the Azure portal UI, continue with this article. If you prefer to use the PowerShell script or an ARM template, see [Create Azure resources using Azure PowerShell or ARM templates](e-invoicing-set-up-azure-resources-automation.md).
 
 ## Create an Azure key vault in the Azure portal
 

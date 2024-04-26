@@ -1,5 +1,5 @@
 ---
-title: Design calculation models (preview)
+title: Design calculation models
 description: This article provides information about calculation models. These models let you arrange and configure tiles to define the calculation that is done by a calculation profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 author: t-benebo
 ms.author: benebotg
@@ -12,16 +12,11 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Design calculation models (preview)
+# Design calculation models
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 *Calculation models* let you arrange and configure tiles to define the calculation that's done by a calculation profile. Each model presents a flowchart that graphically represents the calculation that the model does.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Create and customize a calculation model
 

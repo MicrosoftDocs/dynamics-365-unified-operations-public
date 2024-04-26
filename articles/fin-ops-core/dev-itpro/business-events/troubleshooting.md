@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Troubleshoot business events
-description: This article provides information about troubleshooting business events.
+description: Learn about troubleshooting business events, including a table that outlines possible resolutions for various issues.
 author: Sunil-Garg
-ms.date: 10/31/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 10/31/2022
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: Platform update 24
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-02-28
 ---
 

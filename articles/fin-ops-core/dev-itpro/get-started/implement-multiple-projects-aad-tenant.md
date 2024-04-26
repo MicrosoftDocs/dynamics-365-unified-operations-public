@@ -6,15 +6,12 @@ description: This article explains how to implement multiple LCS projects and pr
 author: ClaudiaBetz-Haubold 
 ms.date: 02/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

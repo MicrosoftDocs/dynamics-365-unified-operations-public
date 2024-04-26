@@ -18,7 +18,6 @@ ms.collection: get-started
 # Electronic invoicing in Saudi Arabia 
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
 

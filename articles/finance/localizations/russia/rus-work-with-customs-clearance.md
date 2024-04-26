@@ -6,15 +6,12 @@ description: This article explains how to work with customs clearance of product
 author: AdamTrukawka
 ms.date: 08/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 #ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.suite: 
 # ms.tgt_pltfrm: 
 # ms.custom: 

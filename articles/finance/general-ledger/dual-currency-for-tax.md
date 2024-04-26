@@ -6,9 +6,6 @@ description: This article explains how to extend dual currency accounting featur
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxTable

@@ -4,10 +4,8 @@ description: This article explains how to set up customer certificates and secre
 author: gionoder
 ms.date: 03/06/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gionoder
 ms.search.validFrom: 

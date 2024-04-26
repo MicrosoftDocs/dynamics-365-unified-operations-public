@@ -4,10 +4,8 @@ description: This article provides information about the updates to the XML layo
 author: gionoder
 ms.date: 08/18/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: gionoder
 ms.search.validFrom: 2021-02-05

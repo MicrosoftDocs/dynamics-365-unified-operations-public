@@ -1,17 +1,15 @@
 ---
 title: Secure one-box development environments
-description: This article describes how to help secure one-box developer environments.
+description: Learn about how to help secure one-box developer environments, including outlines on default congigurations and how to deploy to a custom virtual network.
 author: mnordick
-ms.date: 11/29/2023
-ms.topic: how-to
+ms.author: mnordick
+ms.date: 03/14/2024
 ms.custom: 
   - bap-template
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mnordick
 ms.search.validFrom: 2022-09-13
-
 ---
 
 # Secure one-box development environments
@@ -83,7 +81,7 @@ Deployment to a custom virtual network is an advanced configuration. The precedi
 
 Microsoft Defender and Azure Well-Architected security assessments provide general security guidance that applies to any Azure resources that you provision in your subscription, including your one-box development environment resources.
 
-When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, these restrictions break some integration scenarios, such as export to Microsoft Excel, that require that files are externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner must consider if those recommendations are applicable to their needs.
+When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, these restrictions break some integration scenarios, such as export to Microsoft Excel, that requires that files are externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner must consider if those recommendations are applicable to their needs.
 
 ## External integrations
 
@@ -91,7 +89,7 @@ Your one-box development environment can integrate with your Microsoft Entra ten
 
 - Import users.
 - Import Microsoft Entra ID groups.
-- Import Electronic reporting (ER) configurations.
+- Import Electronic reporting (ER) configurations. For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
 To use these capabilities, you must configure certificate access to your tenant.
 
@@ -117,17 +115,31 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. Add the environment URL as a redirect URI for the application. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
-6. Assign the API permissions for the application:
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, replace the value of the `audienceUris` key with the application ID/client ID.
+    ```
+    <securityTokenHandlerConfiguration>
+    <audienceUris>
+    <add value="spn:<your application ID>" />
+    </audienceUris>
+    ```
+6. Add the environment URL as a redirect URI for the application under **Web App** platform. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
+7. Add the environment OAUTH URL (EnvironmentURL/oauth) as a redirect URI for the application under **Web App** platform.
+8. Assign the API permissions for the application:
 
     1. Go to **API Permissions**, select **Add a Permission**, and add the following permissions:
 
         - **Dynamics ERP** – This permission is required to access finance and operations environments.
         - **Microsoft Graph** (**User.Read.All** and **Group.Read.All** permissions of the **Application** type)
+        - **Dynamics Lifecycle service** (permission of type **Delegated**)
 
     2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
-
-For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+9. Clear any cached configurations for LCS access using the SQL query on AX DB:
+     ```
+     DELETE FROM SYSOAUTHCONFIGURATION where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+  
+     DELETE FROM  SYSOAUTHUSERTOKENS where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+     ```
+10. Perform IISRESET from administrator command prompt.    
 
 ## Frequently asked questions
 

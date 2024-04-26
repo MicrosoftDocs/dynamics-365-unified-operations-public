@@ -4,7 +4,7 @@ description: This article provides information about how to configure field list
 author: Fhernandez0088
 ms.date: 09/05/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---

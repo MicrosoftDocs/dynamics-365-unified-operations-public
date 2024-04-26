@@ -4,8 +4,6 @@ description: This article describes how to consume the Retail Server APIs in ext
 author: josaw1
 ms.date: 01/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -28,7 +26,7 @@ External applications can consume the OData service through HTTPS. Retail Server
     - **C\# proxy** – Server-side and native applications can consume the C\# binary (class library) to access the APIs and other entities.
     - **TypeScript proxy** – Client applications can consume the .ts proxy file to access the APIs and other entities.
 
-- **OData client** – The APIs can also be consumed from OData clients, from Postman, or by generating an HTTPS request to the Retail Server URL.
+- **OData client** – The APIs can also be consumed from OData clients, or by generating an HTTPS request to the Retail Server URL.
 
 To browse the metadata, open the Retail Server URL in the following format in a web browser. The result is a list of all the Retail Server APIs, and input and output parameters.
 
@@ -104,7 +102,7 @@ The client secret is also known as an *application password*. It's a string valu
 6. On the Action Pane, select **Save**.
 7. Go to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule**, and run Commerce Data Exchange (CDX) job **1110**.
 
-## Access the APIs by using Postman
+<!-- ## Access the APIs by using Postman
 
 Several third-party tools let you authenticate with Azure services, compose and send Web API requests, and view responses. Postman is one of the most popular tools. [Download and install the Postman client tool](https://www.postman.com/).
 
@@ -168,7 +166,7 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
     > [!NOTE]
     > For **access_token**, copy and paste the **access_token** value that was generated in the authorization request. Then prefix it with **id_token**.
 
-After the request has finished running, the response body will contain the customer order history.
+After the request has finished running, the response body will contain the customer order history. -->
 
 ## Access the Retail Server APIs by using a console application
 

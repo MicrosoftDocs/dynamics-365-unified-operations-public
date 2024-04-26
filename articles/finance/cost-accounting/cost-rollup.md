@@ -6,9 +6,6 @@ description: This article provides information about how to determine the correc
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy

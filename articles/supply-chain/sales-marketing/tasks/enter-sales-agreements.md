@@ -6,8 +6,6 @@ description: This article explains how to create a sales agreement that commits 
 author: Henrikan
 ms.date: 08/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

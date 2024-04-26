@@ -4,10 +4,8 @@ description: This article explains how to set up and print predefined notes for 
 author: mrolecki
 ms.date: 10/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Italy
 ms.author: mrolecki
 ms.search.validFrom: 2019-11-29

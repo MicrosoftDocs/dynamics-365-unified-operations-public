@@ -6,15 +6,12 @@ description: This article answers some of the frequently asked questions about b
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ms.search.region: Japan

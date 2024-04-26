@@ -4,8 +4,6 @@ description: This article how to test forms using custom patterns.
 author: jasongre
 ms.date: 07/08/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

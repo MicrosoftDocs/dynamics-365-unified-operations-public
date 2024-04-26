@@ -4,10 +4,8 @@ description: Lifecycle Services (LCS) for Microsoft Dynamics provides an environ
 author: sericks007
 ms.date: 06/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28

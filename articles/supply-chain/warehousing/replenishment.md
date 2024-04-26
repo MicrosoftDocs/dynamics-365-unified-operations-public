@@ -6,9 +6,7 @@ description: This article describes the replenishment strategies that are availa
 author: Mirzaab
 ms.date: 02/19/2020
 ms.topic: overview
-ms.prod: 
 
-ms.technology: 
 
 # optional metadata
 

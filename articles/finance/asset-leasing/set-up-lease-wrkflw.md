@@ -6,9 +6,6 @@ description: The article explains how to set up an approval workflow that will r
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: WorkflowTableListPageRnr
@@ -36,7 +33,7 @@ The article explains how to set up an approval workflow that will run when a new
 2. On the **Lease workflow** page, select **New**.
 3. In the dialog box that appears, under **Workflow type**, select the **Lease workflow** link.
 
-    The application is opened. After it runs, sign in to Azure Active Directory (Azure AD) to be redirected to the workflow application.
+    The application is opened. After it runs, sign in to Microsoft Entra ID to be redirected to the workflow application.
 
 4. Drag the **Lease workflow approval** element onto the workflow.
 5. Connect one node from **Start** to **Lease workflow approval**. Then connect **Lease workflow approval** to **End**.

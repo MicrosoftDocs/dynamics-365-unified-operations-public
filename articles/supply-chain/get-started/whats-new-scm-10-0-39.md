@@ -1,29 +1,28 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.39. 
 author: kamaybac
 ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 01/29/2024
+ms.date: 04/19/2024
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.39. This version has a build number of 10.0.1860 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.39. This version has a build number of 10.0.1860 and is available on the following schedule:
 
 - **Preview of release:** January 2024
 - **General availability of release (self-update):** March 2024
 - **General availability of release (auto-update):** April 2024
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Features included in this release
 
@@ -31,7 +30,10 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | *Coming soon* | Enabled by default |
+| Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default |
+| Inventory and logistics | [Enable prospects in prospect-to-cash with dual-write](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enable-prospects-prospect-to-cash-dual-write) | [Work with prospects in prospect-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/prospects-in-prospect-to-cash-use.md) | Feature management:<br>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* |
+| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | [Inventory Visibility adjustment offset](../inventory/inventory-visibility-adjustment-offset.md) | Enabled by default |
+| Planning | Item substitution for formulas in Planning Optimization | [Item substitution for formulas](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution (Plan group) support for Planning Optimization* |
 | Warehouse management | [Optimize the customer returns process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-customer-returns-process) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default |
 | Warehouse management | Username/password and single-sign-on authentication for mobile devices | [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md) | Enabled by default |
 
@@ -58,7 +60,6 @@ Some of these features aren't visible on your system until you turn them on in [
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Sort on requested date in Net requirements form*</p>| Adds an option that lets you sort by using the **Requested date** field instead of the **Requirement date** field on the **Net requirements** page. |
 |<p>**Module:** Product information management</p><p>**Feature management name:** *Allow hazardous material divisions with same division codes in different material classes*</p>| Lets users create hazardous material divisions that have the same division code in different hazardous material classes. The feature creates a new data table to enable divisions that have the same code and moves data to this new table. |
 |<p>**Module:** Production control</p><p>**Feature management name:** *Default order settings for Change production order BOM item*</p>| Updates the *Change BOM item* feature so that your default order settings are used to set the from-item and to-item. |
-|<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p>| Enables the integration of prospects between Dynamics 365 Sales and Supply Chain Management over dual-write. Prospects in Supply Chain Management integrate with account type *Prospect* in Dynamics 365 Sales. The lifecycle of a prospect from creation to converting into a customer is supported from both Dynamics 365 Sales and Supply Chain Management and is seamlessly integrated into the quotation winning process. With this feature, it's possible to use the prospect on a quotation in Supply Chain Management and as a potential customer in Dynamics 365 Sales. This feature adds a parameter to the **Accounts receivable parameters** page, which lets you turn the functionality on or off.<br><br>**Important**: This feature is a component of the upcoming [Enable prospects in prospect-to-cash with dual-write](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enable-prospects-prospect-to-cash-dual-write) functionality. Some of the components required to fully support this functionality won't be available until a future release of dual-write becomes available. Until then, this feature will have no effect, so we recommend against enabling it for now. |
 |<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Faster vendor search*</p>| Improves the performance of the **Vendor search** dialog box by implementing an improved data model. |
 |<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Replace alternative item defaults on sales lines*</p>| Adds a new parameter, **Replace alternative item defaults on sales lines**, to the **General** tab of the **Accounts Receivable parameters** page. When this parameter is set to *Yes*, and alternative items must always be used, all item-dependent information (such as financial dimensions and units of measure) from the alternative item replace the original item information on the sales order line. When the parameter is set to *No*, all the information from the original item remains on the sales order line, and no replacements are made. When you first enable this feature, the parameter is set to *Yes* by default. Therefore, the system behaves just as it does without this feature. |
 |<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Sales referenced data export policy*</p>| Adds the following parameters to the **General** tab of the **Accounts receivable parameters** page: **Skip referenced data during change tracking** and **Skip sales quotation referenced data during change tracking**. When these two parameters are enabled, changes to referenced data doesn't cause sales orders, sales order lines, sales quotations, and/or sales quotation lines to be included in the next incremental export. By turning off these parameters, you can help incremental exports run more quickly. |
@@ -70,7 +71,7 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Inventory management | [Inventory Visibility diagnostic tool](../inventory/inventory-visibility-diagnostic-tool.md) |
-| Inventory management | [Use the Inventory Visibility app UI version 2 (preview)](../inventory/inventory-visibility-power-platform.md) – Many other articles about the Inventory Visibility Add-in have also been updated to reflect the new UI for the Inventory Visibility app in Power Apps. |
+| Inventory management | [Use the Inventory Visibility app UI version 2](../inventory/inventory-visibility-power-platform.md) – Many other articles about the Inventory Visibility Add-in have also been updated to reflect the new UI for the Inventory Visibility app in Power Apps. |
 | Master planning | [Safety stock pegging options](../master-planning/safety-stock-pegging.md) |
 | Sales and marketing | [Calculate sales totals when prices include sales tax](../sales-marketing/sales-tax-calculation.md) |
 | Warehouse management | [Automatic rewaving of nonallocated shipment lines](../warehousing/auto-rewave-shipments.md) |

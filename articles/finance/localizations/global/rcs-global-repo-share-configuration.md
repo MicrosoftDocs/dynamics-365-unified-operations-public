@@ -4,10 +4,8 @@ description: This article explains how to share Electronic reporting (ER) config
 author: kfend
 ms.date: 05/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2020-02-01

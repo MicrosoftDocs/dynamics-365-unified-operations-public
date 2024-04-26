@@ -4,10 +4,8 @@ description: This article provides information about the Payment terms report, a
 author: AdamTrukawka
 ms.date: 05/06/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.author: atrukawk
 ms.search.validFrom: 

@@ -4,8 +4,6 @@ description: This article describes the rich, powerful messaging system in finan
 author: jasongre
 ms.date: 01/17/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: twheeloc
 ms.search.region: Global

@@ -6,9 +6,6 @@ description: This article explains how to set up integration between Microsoft D
 author: jaredha
 ms.date: 10/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

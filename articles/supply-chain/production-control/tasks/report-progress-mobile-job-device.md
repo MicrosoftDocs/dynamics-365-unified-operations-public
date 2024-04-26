@@ -6,8 +6,6 @@ description: This procedure shows you how to start and report progress on a prod
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

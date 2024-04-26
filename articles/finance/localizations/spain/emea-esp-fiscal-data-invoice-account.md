@@ -4,10 +4,8 @@ description: For legal entities in Spain, the Use fiscal data from invoice accou
 author: AdamTrukawka
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30

@@ -4,8 +4,6 @@ description: This article describes recommended practices for Microsoft Dynamics
 author: andreashofmann1
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

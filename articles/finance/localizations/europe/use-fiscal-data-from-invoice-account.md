@@ -4,10 +4,8 @@ description: This article provides information about how to enable fiscal data t
 author: EricWangChen
 ms.date: 01/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: wangchen
 ms.search.validFrom: 2020-02-03

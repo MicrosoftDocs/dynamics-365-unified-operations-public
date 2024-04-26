@@ -6,9 +6,6 @@ description: This article explains how to set up reconciliation matching rules a
 author: angelad116
 ms.date: 11/22/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet

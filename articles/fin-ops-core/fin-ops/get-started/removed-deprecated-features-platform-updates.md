@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Removed or deprecated platform features
-description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
+description: Learn about features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
-ms.date: 03/12/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2020-02-29 
+ms.topic: article
+ms.date: 04/16/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2020-02-29
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 33
-
 ---
+
 # Removed or deprecated platform features
 
 [!include [banner](../../../finance/includes/banner.md)]
@@ -37,17 +26,52 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
-## Feature deprecation effective March 2024
+## Feature deprecation effective May 2024
 
-### Non-Entra ID external user sign-in 
+### Support for unregistered Microsoft account and external Microsoft Entra ID users
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Entra ID tenant that's used for your finance and operations apps environment. Microsoft has identified this type of access as a security issue. For more information, see [Manually add a new user](../sysadmin/create-new-users.md#manually-add-a-new-user).|
-| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Microsoft Entra admin center. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
+| **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
+| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You'll receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant Id}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application Id\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account". The user will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
+| **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. End of support date is targeted for March 2024. |
+| **Status**                         | End of support date is targeted for May 2024. |
+
+## Feature deprecation effective April 2024
+
+### Tokens without an environment URL in finance and operations apps 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | To enhance security compliance, we're deprecating the use of tokens that aren't acquired with the resource or audience that's set as the environment URL in finance and operations apps. |
+| **Replaced by another feature?**   | To ensure the security and integrity of your system and data, we strongly encourage all our customers to ensure that tokens are acquired only with the resource or audience that's set as the environment URL. Failure to comply with this requirement will result in API calls in finance and operations apps beginning to fail. We encourage all developers and administrators to update their token acquisition processes accordingly to avoid any disruption in API functionality. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | To enhance security compliance, support for tokens with an audience claim value other than the environment URL will be removed by April 2024 for non-production environments and by May 2024 for production environments. |
+
+### Multitenant apps without a service principal in the Microsoft Entra ID tenant 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Multitenant apps that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant Open Authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant will no longer be authenticated. Finance and operations APIs will start to fail from these apps in deprecated environments. To review your onboarded applications, in finance and operations apps, go to **System administration** > **Setup** > **Microsoft Entra applications**. For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application). |
+| **Replaced by another feature?**   | To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). Note – If application onboarding isn't expected, remove that app or replace with a compliant app that has a client service principal in tenant. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for non-production environments and by April 2024 for production environments. |
+
+## Feature deprecation effective March 2024
+
+### Non Microsoft Entra ID external user sign-in 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We're discontinuing onboardings for all users, both Service to Service and Interactive, who aren't present in the Microsoft Entra ID tenant associated with your Finance and Operations environment. Microsoft has flagged this access method as a security concern. For more information, see [Manually add a new user](../sysadmin/create-new-users.md#manually-add-a-new-user).|
+| **Replaced by another feature?**   | No, to ensure compliance among existing users, you must either extend invitations to users with the same email addresses to your Microsoft Entra ID or remove these users from the Finance and Operations system, create new user accounts within your Microsoft Entra ID, and proceed to import them accordingly. For more information, refer [How to create or delete users in Microsoft Entra ID - Microsoft Entra](/entra/fundamentals/how-to-create-delete-users).|
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | The rollout for sandbox environments will begin from Feb 2024 and for prod environments from March 2024. |
 
 ## Feature deprecation effective February 2024
 
@@ -73,7 +97,7 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The **Inquiries** > **User Log** is a legacy page that was built for the older client/server architecture. The information on this page isn't always accurate and can be misleading. |
-| **Replaced by another feature?**   | In Microsoft Dynamics 365 finance and operations apps, this information is captured in telemetry and Lifecycle Services has details. For more information, see [Track user sign-ins](../../dev-itpro/lifecycle-services/user-logins.md). |
+| **Replaced by another feature?**   | In finance and operations apps, this information is captured in telemetry and Lifecycle Services has details. For more information, see [Track user sign-ins](../../dev-itpro/lifecycle-services/user-logins.md). |
 | **Product areas affected**         | System Administration  |
 | **Deployment option**              | All |
 | **Status**                         | The User Log page will be removed by Jan 12 2024 (10.0.38/PU62) |
@@ -133,7 +157,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | AX 2012 versions | Yes | No | No |
 | Work items stored in Lifecycle Services storage | Yes | Yes | No |
 | Hotfix requests | Yes | Yes | No |
-
+ 
 
 ### Transport Layer Security (TLS) RSA cipher suites
 
@@ -179,7 +203,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We're removing support for XML URL resolution since it has been identified as a potential security vulnerability. This means that external resources associated with XML files are no longer resolved.  |
-| **Replaced by another feature?**   | No. |
+| **Replaced by another feature?**   | No |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. |

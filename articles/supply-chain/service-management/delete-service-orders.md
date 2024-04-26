@@ -6,8 +6,6 @@ description: Delete service orders
 author: sorenva
 ms.date: 01/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

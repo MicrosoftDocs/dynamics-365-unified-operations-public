@@ -6,9 +6,6 @@ description: This article provides an overview of the process of bank foreign cu
 author: ericwangchen
 ms.date: 07/31/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BankCurrencyRevalHistory

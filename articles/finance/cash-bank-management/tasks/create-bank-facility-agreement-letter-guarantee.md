@@ -6,8 +6,6 @@ description: This task creates a bank facility agreement to process a letter of 
 author: angelad116
 ms.date: 11/15/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,7 +4,7 @@ description: This article explains how to set up records for customers and vendo
 author: Cpicon85
 ms.date: 12/07/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-cpicon
 ms.custom: bap-template
 ---

@@ -4,16 +4,13 @@ description: This article provides information about the Project onboarding wiza
 author: vetrivicky
 ms.date: 06/20/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

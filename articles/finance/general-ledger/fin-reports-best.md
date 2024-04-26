@@ -6,9 +6,6 @@ description: This article provides tips and best practices for optimizing financ
 author: aprilolson
 ms.date: 04/04/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

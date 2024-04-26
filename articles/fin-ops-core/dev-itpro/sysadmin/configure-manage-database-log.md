@@ -4,10 +4,8 @@ description: This article describes how to set up database logging, how to manag
 author: Peakerbl
 ms.date: 06/11/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28

@@ -4,7 +4,7 @@ description: This article how to configure the LATAM invoice layout format when 
 author: Fhernandez0088
 ms.date: 10/09/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe
 ms.custom: bap-template
 ---

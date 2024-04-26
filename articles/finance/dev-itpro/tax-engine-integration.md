@@ -6,9 +6,6 @@ description: This article provides information about Tax engine integration.
 author: kailiang
 ms.date: 2/8/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable

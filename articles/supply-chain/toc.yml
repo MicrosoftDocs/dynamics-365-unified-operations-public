@@ -1707,7 +1707,7 @@
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
-      - name: Archive inventory transactions
+      - name: Consolidate inventory transactions
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
         items:
@@ -1719,9 +1719,9 @@
           href: inventory/inventory-visibility-product-search.md
         - name: The Inventory Visibility app in Power Apps
           items:
-          - name: Inventory Visibility app user interface versions (preview)
+          - name: Inventory Visibility app user interface versions
             href: inventory/inventory-visibility-ui-version-2.md
-          - name: Use the Inventory Visibility app UI version 2 (preview)
+          - name: Use the Inventory Visibility app UI version 2
             href: inventory/inventory-visibility-power-platform.md
           - name: Use the Inventory Visibility app UI version 1
             href: inventory/inventory-visibility-power-platform-v1.md
@@ -1737,6 +1737,8 @@
           href: inventory/inventory-visibility-preload-on-hand.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
           href: inventory/inventory-onhand-consistency-check.md
+        - name: Inventory Visibility adjustment offset
+          href: inventory/inventory-visibility-adjustment-offset.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation
@@ -1819,6 +1821,8 @@
           href: master-planning/make-to-order-supply-automation.md
         - name: Negative days and dynamic negative days
           href: master-planning/more-about-dynamic-negative-days.md
+        - name: Dynamic positive days for last-minute orders
+          href: master-planning/dynamic-positive-days.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
         - name: Calculate requested ship dates for purchase orders
@@ -1847,6 +1851,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Item substitution for formulas
+          href: master-planning/item-substitution.md
         - name: Set up scrap to calculate raw material requirements
           href: master-planning/scrap-calculations.md
         - name: Master planning for products with limited shelf life
@@ -1861,6 +1867,8 @@
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
+        - name: Intercompany planning groups for demand forecasting
+          href: demand-planning/intercompany-planning-groups-demand-forecasting.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Coverage time fences
@@ -1877,6 +1885,8 @@
           href: master-planning/master-plans.md
         - name: Master planning setup wizard
           href: master-planning/master-planning-setup-wizard.md
+        - name: Exclude specific transactions or transaction types from master planning
+          href: master-planning/ignore-transaction-types.md
         - name: Generate a constrained plan
           href: master-planning/tasks/constrained-plan.md
       - name: Set up replenishment strategies
@@ -1937,6 +1947,8 @@
           items:
           - name: Demand forecasting overview
             href: master-planning/introduction-demand-forecasting.md
+          - name: Intercompany planning groups for demand forecasting
+            href: demand-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Demand forecasting setup
             href: master-planning/demand-forecasting-setup.md
           - name: Generate a statistical baseline forecast
@@ -2003,7 +2015,7 @@
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
-    - name: Demand planning (preview)
+    - name: Demand planning
       items:
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md
@@ -2037,8 +2049,15 @@
           href: demand-planning/custom-azure-machine-learning-algorithms.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
+      - name: Analyze demand plans with Copilot (preview)
+        href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
         href: demand-planning/export-data.md
+      - name: Rolling forecasts
+        href: demand-planning/rolling-forecasts.md
+      - name: Intercompany planning groups for demand forecasting
+        href: demand-planning/intercompany-planning-groups-demand-forecasting.md
+     
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
@@ -2529,13 +2548,13 @@
           href: pim/country-of-origin.md
         - name: Dual-use goods
           href: pim/dual-use.md
-        - name: Advanced export control
+        - name: Advanced export management
           items:
-          - name: Advanced export control overview
+          - name: Advanced export management overview
             href: pim/export-control-overview.md
-          - name: Enable and configure advanced export control
+          - name: Enable and configure advanced export management
             href: pim/export-control-configure.md
-          - name: Work with advanced export control for products, sales orders, and quotations
+          - name: Work with advanced export management for products, sales orders, and quotations
             href: pim/export-control-use.md
           - name: Extend export control sales order functionality
             href: pim/export-control-extend-sales-orders.md
@@ -2693,6 +2712,8 @@
         href: production-control/process-automation-quality-orders.md
       - name: Integrate with third-party manufacturing execution systems
         href: production-control/mes-integration.md
+      - name: React to last-minute changes in production
+        href: production-control/react-to-last-minute-changes.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
@@ -3489,7 +3510,7 @@
           items:
           - name: Plan loads using hub consolidation overview
             href: transportation/plan-loads-hub-consolidation.md
-          - name: Plan loads and shipments using the Load planning workbench
+          - name: Plan loads and shipments using the outbound load planning workbench
             href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: USMCA certification of origin
           href: transportation/usmca-certification-of-origin.md
@@ -3725,7 +3746,7 @@
             href: warehousing/consolidate-shipments-automatic.md
           - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden
             href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the load planning workbench
+          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the outbound load planning workbench
             href: warehousing/consolidate-shipments-load-planning-workbench.md
           - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
             href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3857,6 +3878,8 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
+          - name: Set up a mobile device menu item for completing mixed license plates
+            href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
@@ -4013,6 +4036,8 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
+      - name: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
+        href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)

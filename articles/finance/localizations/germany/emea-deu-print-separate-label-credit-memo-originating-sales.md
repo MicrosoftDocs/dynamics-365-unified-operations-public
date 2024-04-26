@@ -6,16 +6,13 @@ description: This article explains how to specify the label that appears on cred
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: OMLegalEntity
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Germany
 # ms.search.industry: 

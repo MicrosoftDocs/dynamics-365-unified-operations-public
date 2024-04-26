@@ -4,10 +4,8 @@ description: This article provides information about creating tax registers and 
 author: AdamTrukawka
 ms.date: 08/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 

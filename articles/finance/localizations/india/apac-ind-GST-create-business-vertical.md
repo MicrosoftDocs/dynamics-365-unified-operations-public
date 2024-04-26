@@ -6,15 +6,12 @@ description: This article explains how to create a business vertical. This task 
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxBusinessVerticalsTable_IN
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India

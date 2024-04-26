@@ -4,10 +4,8 @@ description: This article provides information about reporting for multiple valu
 author: liza-golub
 ms.date: 01/17/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: egolub
 ms.search.validFrom: 

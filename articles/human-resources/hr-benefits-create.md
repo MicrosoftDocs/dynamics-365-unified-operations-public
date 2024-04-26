@@ -6,8 +6,6 @@ description: This task will show you how to create benefit elements which will b
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -27,7 +25,6 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 # Create a new benefit
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

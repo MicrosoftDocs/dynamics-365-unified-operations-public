@@ -6,16 +6,13 @@ description: This article explains how you can submit service requests directly 
 author: laneswenka
 ms.date: 04/15/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
 ms.search.region: Global

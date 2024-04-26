@@ -6,8 +6,6 @@ description: This article describes the bill of materials (BOM) level that is na
 author: JennySong-SH
 ms.date: 08/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

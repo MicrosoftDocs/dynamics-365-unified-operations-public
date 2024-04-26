@@ -6,8 +6,6 @@ description: This article describes how to create maintenance downtime registrat
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
