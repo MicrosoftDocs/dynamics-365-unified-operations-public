@@ -4,8 +4,6 @@ description: This article describes how to sign up with Adyen and set up the Mic
 author: Reza-Assadi
 ms.date: 02/15/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

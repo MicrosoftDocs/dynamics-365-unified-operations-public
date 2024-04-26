@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Entity modeling
-description: This article explains relational modeling concepts using virtual entities for finance and operations entities.
+description: Learn about relational modeling concepts using virtual entities for finance and operations entities, including an overview on generating virtual entities.
 author: Sunil-Garg
-ms.date: 09/16/2022
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: sunilg
+ms.topic: article
+ms.date: 09/16/2022
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 

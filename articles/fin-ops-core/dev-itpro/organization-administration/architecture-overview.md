@@ -5,7 +5,7 @@ author: kfend
 ms.author: kfend
 ms.topic: overview
 ms.date: 04/24/2020
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758

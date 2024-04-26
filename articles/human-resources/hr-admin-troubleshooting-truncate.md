@@ -7,9 +7,6 @@ description: This article explains how to fix the issue of truncated names of in
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmPositionHierarchyView, HcmPosition
@@ -29,9 +26,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Avoid text truncation on the position hierarchy and export to Visio
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

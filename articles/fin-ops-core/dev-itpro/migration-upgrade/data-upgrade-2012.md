@@ -6,9 +6,6 @@ description: This article explains the end-to-end process for upgrading from Mic
 author: laneswenka
 ms.date: 08/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

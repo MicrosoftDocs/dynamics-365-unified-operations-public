@@ -4,8 +4,6 @@ description: This article provides information on how to set up, create, and man
 author: AdamTrukawka
 ms.date: 09/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

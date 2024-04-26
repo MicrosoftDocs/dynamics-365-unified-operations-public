@@ -4,8 +4,6 @@ description: This article describes how to deploy a new Dynamics 365 Commerce e-
 author: josaw1
 ms.date: 07/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

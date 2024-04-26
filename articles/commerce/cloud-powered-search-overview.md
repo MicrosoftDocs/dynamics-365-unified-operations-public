@@ -4,8 +4,6 @@ description: This article gives an overview of cloud-powered search in Microsoft
 author: ashishmsft
 ms.date: 02/08/2024
 ms.topic: overview
-ms.prod:
-ms.technology:
 audience: Application user
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

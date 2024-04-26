@@ -4,8 +4,6 @@ description: This article explains how to handle services that are purchased tho
 author: AdamTrukawka
 ms.date: 11/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

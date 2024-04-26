@@ -1,39 +1,24 @@
 ---
-# required metadata
-
 title: Data management overview
-description: This article provides information about data management in finance and operations. 
-author: peakerbl
-ms.date: 06/20/2022
+description: Learn about data management in finance and operations, including overviews of data entities and data migrations. 
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 06/20/2022
 ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
 ms.collection: get-started
+audience: Developer, IT Pro
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Data management overview
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes how you can use the data management framework to manage data entities and data entity packages in finance and operations.
 

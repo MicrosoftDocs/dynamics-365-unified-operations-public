@@ -6,8 +6,6 @@ description: This procedure walks through the creation and acquisition of a fixe
 author: moaamer
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

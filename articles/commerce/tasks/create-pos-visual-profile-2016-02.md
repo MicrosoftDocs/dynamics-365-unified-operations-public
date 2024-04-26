@@ -6,8 +6,6 @@ description: This procedure walks through creating a new point of sale (POS) vis
 author: jashanno
 ms.date: 08/24/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

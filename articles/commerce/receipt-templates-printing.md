@@ -6,9 +6,6 @@ description: This article describes how to modify form layouts to control how re
 author: BrianShook
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailFormLayout

@@ -4,8 +4,6 @@ description: Users in legal entities in Poland can generate a Standard Audit Fil
 author: AdamTrukawka
 ms.date: 05/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Poland

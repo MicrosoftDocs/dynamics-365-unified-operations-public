@@ -7,9 +7,6 @@ description: This article explains how to turn on the Delayed tax calculation fe
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxTable

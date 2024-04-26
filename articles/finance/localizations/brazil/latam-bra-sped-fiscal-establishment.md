@@ -4,8 +4,6 @@ description: This article explains how to set up the Fiscal Establishment dimens
 author: AdamTrukawka
 ms.date: 08/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

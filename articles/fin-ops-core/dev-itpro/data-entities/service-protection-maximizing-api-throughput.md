@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Maximize API throughput
-description: This article describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
+description: Learn about strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 author: jaredha
-ms.date: 05/04/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jaredha
+ms.topic: article
+ms.date: 05/04/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2022-04-16
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 52
-
 ---
 
 # Maximize API throughput

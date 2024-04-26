@@ -6,8 +6,6 @@ description: This article explains how to process an allocation request in Dynam
 author: aprilolson
 ms.date: 03/15/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

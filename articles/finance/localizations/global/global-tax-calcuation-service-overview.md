@@ -4,8 +4,6 @@ description: This article explains the overall scope and features of the Tax Cal
 author: EricWangChen
 ms.date: 02/09/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: johnmichalak
 ms.search.region: Global

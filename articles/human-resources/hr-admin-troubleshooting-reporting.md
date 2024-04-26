@@ -6,9 +6,6 @@ description: This article explains how to customize Microsoft Dynamics 365 Human
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmPersonnelManagementWorkspace, LeaveAbsenceWorkspace, HcmTalentBenefitWorkspace, HcmCompensationWorkspace, HcmEmployeeDevelopmentWorkspace, HcmLearningWorkspace
@@ -28,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Reporting options
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
