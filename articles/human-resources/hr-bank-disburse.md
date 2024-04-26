@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the entity **PayIntV1BankAccountDisbursementEntity** for Dynamics 365 Human Resources.
+This article describes the Bank account disbursement entity (PayIntV1BankAccountDisbursementEntity) for Dynamics 365 Human Resources.
 
 ## Description
 
@@ -37,39 +37,38 @@ This entity provides information about bank account disbursement.
 
 | Property | Physical name | Type | Use | 
 |---|---|---|---|
-| Amount| mserp_Amount| Real | Read-only |
-| Remainder |mserp_Remainder| Int64 | Read-only |
-| LegalEntity|mserp_LegalEntity|Int64 | Read-only  |
-| LineNumber|mserp_LineNumber|Real| Read-only  |
-| AccountIdentification|mserp_AccountIdentification|Int64 | Read-only  |
-| Company|mserp_Company| String |Read-only |
-| AccountIdentificationId|mserp_AccountIdentificationId| String| Read-only  |
-| Worker| mserp_Worker| Int64 | Read-only |
-| PersonnelNumber|mserp_PersonnelNumber|String |Read-only  |
-| Priority|mserp_Priority| Real | Read-only  |
+| Amount | mserp\_Amount | Real | Read-only |
+| Remainder | mserp\_Remainder | Int64 | Read-only |
+| LegalEntity | mserp\_LegalEntity | Int64 | Read-only |
+| LineNumber | mserp\_LineNumber | Real | Read-only |
+| AccountIdentification | mserp\_AccountIdentification | Int64 | Read-only |
+| Company | mserp\_Company | String | Read-only |
+| AccountIdentificationId | mserp\_AccountIdentificationId | String | Read-only |
+| Worker | mserp\_Worker | Int64 | Read-only |
+| PersonnelNumber | mserp\_PersonnelNumber | String | Read-only |
+| Priority | mserp\_Priority | Real | Read-only |
 
 ## Example query for PayIntV1BankAccountDisbursementEntity
 
-Entity Name: mserp_payintv1bankaccountdisbursemententities_
+Entity name: mserp\_payintv1bankaccountdisbursemententities\_
 
 **Request**
 
 ```HTTP
-
-GET \[Organizaton URI\]/api/data/v9.1/mserp_payintv1bankaccountdisbursemententities_
+GET [Organization URI]/api/data/v9.1/mserp_payintv1bankaccountdisbursemententities_
 ```
 
 **Response**
 
-```JSONCopy
+```JSON
 {  
-      "mserp_amount": 0,  
-      "mserp_remainder": 200000001,  
-      "mserp_linenumber": 100,  
-      "mserp_company": "USMF",  
-      "mserp_accountidentificationid": "Checking1",  
-      "mserp_personnelnumber": "000028",  
-      "mserp_priority": 100,  
-      "mserp_primaryfield": "000028 | Checking1 | USMF"  
-    }
+    "mserp_amount": 0,  
+    "mserp_remainder": 200000001,  
+    "mserp_linenumber": 100,  
+    "mserp_company": "USMF",  
+    "mserp_accountidentificationid": "Checking1",  
+    "mserp_personnelnumber": "000028",  
+    "mserp_priority": 100,  
+    "mserp_primaryfield": "000028 | Checking1 | USMF"  
+}
 ```
