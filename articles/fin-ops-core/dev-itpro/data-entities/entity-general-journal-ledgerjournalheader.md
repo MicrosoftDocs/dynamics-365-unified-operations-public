@@ -1,13 +1,10 @@
 ﻿---
 title: LedgerJournalHeader entity
-description: Learn the definition of the LedgerJournalHeader data entity in finance and operations migration projects with Dynamics 365.
-ms.date: 02/02/2024
-ms.topic: conceptual
+description: Learn about the LedgerJournalHeader data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
 ms.author: epegors
-searchScope: dynamics-365-daf
-ms.service: dynamics-365
-ms.subservice: guidance
+ms.topic: conceptual
+ms.date: 02/02/2024
 ms.collection: FastTrack
 ---
 

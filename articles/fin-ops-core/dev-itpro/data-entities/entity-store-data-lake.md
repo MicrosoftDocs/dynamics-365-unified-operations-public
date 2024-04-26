@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Make Entity store available as a Data Lake
-description: This article explains how to make Entity store available as a Microsoft Azure Data Lake.
+description: Learn how to make Entity store available as a Microsoft Azure Data Lake, including learning how to create storage accounts and and Key Vaults.
 author: MilindaV2
-ms.date: 09/23/2020
+ms.author: milindav
 ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 09/23/2020
 ms.reviewer: johnmichalak
-
-# ms.tgt_pltfrm: 
+audience: Developer, IT Pro
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: milindav
 ms.search.validFrom: 2018-12-03
+ms.search.form:
 ms.dyn365.ops.version: Platform Update 23
-
 ---
 
 # Make Entity store available as a Data Lake
