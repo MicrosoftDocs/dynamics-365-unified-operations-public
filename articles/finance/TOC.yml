@@ -414,6 +414,8 @@
         href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
       - name: Create a free text invoice template
         href: accounts-receivable/create-free-text-invoice-template-new.md  
+      - name: Add a company logo to a report
+        href: accounts-receivable/remove-logo-cust-stmt.md
       - name: Correct a free text invoice
         href: accounts-receivable/correct-free-text-invoice.md
       - name: Assign a free text invoice template to a customer
