@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.40 (June)
+          href: get-started/whats-new-changed-10-0-40.md
         - name: Finance 10.0.39 (April)
           href: get-started/whats-new-changed-10-0-39.md  
         - name: Finance 10.0.38 (February)
@@ -412,6 +414,8 @@
         href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
       - name: Create a free text invoice template
         href: accounts-receivable/create-free-text-invoice-template-new.md  
+      - name: Add a company logo to a report
+        href: accounts-receivable/remove-logo-cust-stmt.md
       - name: Correct a free text invoice
         href: accounts-receivable/correct-free-text-invoice.md
       - name: Assign a free text invoice template to a customer
@@ -424,6 +428,8 @@
         href: accounts-receivable/tasks/create-sales-order-invoices.md
       - name: Create a customer invoice
         href: accounts-receivable/configure-customer-invoices.md
+      - name: Improve performance of Sales entities
+        href: accounts-receivable/sales-entity-improve.md
       - name: Customer transactions list page
         href: accounts-receivable/customer-transactions-list-page.md
       - name: Customer and invoice accounts
@@ -664,6 +670,8 @@
         href: cash-bank-management/cash-flow-forecasting.md
       - name: Troubleshoot Cash flow forecasting setup
         href: cash-bank-management/cash-flow-forecasting-tsg.md
+      - name: Bank account lifecycle management
+        href: cash-bank-management/bank-acct-workflow.md
       - name: Bank management workspace
         href: cash-bank-management/Bank-management-workspace.md
       - name: Bank foreign currency revaluation
@@ -1580,7 +1588,7 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing (preview)
+        - name: Electronic Invoicing
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
@@ -4476,6 +4484,8 @@
       - name: Excel add-in
         items:
         - name: Configure and use the Excel add-in
+          href: business-performance-planning/use-excel-addin.md
+        - name: Business performance planning Excel add-in FAQ
           href: business-performance-planning/use-excel-addin.md
     - name: Electronic reporting
       items:

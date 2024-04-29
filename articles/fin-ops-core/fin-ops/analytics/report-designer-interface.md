@@ -1,17 +1,17 @@
 ---
 title: Report Designer interface
-description: This article explains how to navigate through Report designer and how to use the various options to meet your specific requirements.
+description: Learn about how to navigate through Report designer and how to use the various options to meet your specific requirements.
 author: aprilolson
-ms.date: 11/22/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: aolson
+ms.topic: article
+ms.date: 11/22/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
-ms.search.form: FinancialReports
 ---
 
 # Report Designer interface

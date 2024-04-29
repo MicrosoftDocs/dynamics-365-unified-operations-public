@@ -1,13 +1,13 @@
 ---
 title: Associate a workflow document class with a workflow type
-description: The article describes how to associate a workflow document class with a workflow type.
+description: Learn about how to associate a workflow document class with a workflow type, including an overview on binding a document class to a workflow type.
 author: josaw1
-ms.date: 06/19/2019
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: tfehr
+ms.topic: article
+ms.date: 06/19/2019
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004

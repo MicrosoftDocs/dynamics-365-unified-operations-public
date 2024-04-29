@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
 author: pnghub
-ms.date: 03/12/2024
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: gned
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/12/2024
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create new users
 
 [!include [banner](../../../finance/includes/banner.md)]

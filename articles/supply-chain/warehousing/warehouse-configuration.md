@@ -83,6 +83,15 @@ Work template definitions play an important role in the definition of warehouse 
 
 If multiple workers must be able to process work for some of your warehouse operations, you might want to use the concept of *staging* for the inventory and separate the work execution into different work classes.
 
+### <a name="warehouse-management-parameters-work"></a>General warehouse work policies
+
+General warehouse work policies let you influence how warehouse work is created and handled. You can set up policies to control options such as default work priority values, deferred work processing, work transaction dates, and more. To view and set these policies, follow these steps:
+
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
+1. Open the **General** tab.
+1. Expand the **Work** FastTab.
+1. Select policies and set other work options available on this FastTab. Each field has tooltip help. To see the tooltip for a field, hover your mouse pointer over the relevant field label.
+
 ### Work pools
 
 Work pools are used to organize work into groups. For example, you can create a work pool to classify work that occurs in a particular warehouse location. For all work types except counting, you can assign a work pool to a work template. For cycle counting, you can assign a work pool on the following pages:

@@ -2,12 +2,12 @@
 title: Build and debug projects
 description: This tutorial uses the Fleet Management app to show you how to set breakpoints, modify code, and build the result.
 author: pvillads
-ms.date: 02/06/2019
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: pvillads
+ms.topic: article
+ms.date: 02/06/2019
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282

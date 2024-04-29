@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Data management error descriptions and known limitations
-description: This article describes the error messages that you might encounter in data management.
-author: peakerbl
-ms.date: 01/08/2024
+description: Learn about the error messages that you might encounter in data management, including a table that outlines possible causes of various errors.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 01/08/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 
+audience: Developer
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2018-09-15
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 20
-
 ---
 
 # Data management error descriptions and known limitations
@@ -116,7 +106,7 @@ When you run an export in a development environment, an error occurs if the expo
 Data management (DMF/DIXF) export to Excel has a 255-character limit.
 
 - The Data management (DMF) export job truncates data that has the Excel file type if there are more than 255 characters.
-- This limitation is a known SSIS limitation. Data that has more than 255 characters is truncated when you export to the Excel file type. For more information, see [Export long text values](/sql/integration-services/load-data-to-from-excel-with-ssis?view=sql-server-ver16#export-long-text-values).
+- This limitation is a known SSIS limitation. Data that has more than 255 characters is truncated when you export to the Excel file type. For more information, see [Export long text values](/sql/integration-services/load-data-to-from-excel-with-ssis#export-long-text-values).
 - To export data by using the Data management (DMF) export job, use a different file type.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

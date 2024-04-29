@@ -1,19 +1,19 @@
 ---
 title: What's new or changed in finance and operations apps home page
-description: This page points you to article that can help you learn about the new features in the latest finance and operations applications.
+description: Access links to resources that can help you learn about the new features in the latest finance and operations applications.
 author: twheeloc
-ms.date: 03/08/2024
-ms.topic: article
-ms.custom: evergreen 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-09-30
-ms.dyn365.ops.version: Platform update 2
+ms.topic: article
+ms.date: 03/08/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-09-30
 ms.search.form: DefaultDashboard
+ms.dyn365.ops.version: Platform update 2
+ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ---
 
 # What's new or changed in finance and operations apps home page

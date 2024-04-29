@@ -1,13 +1,13 @@
 ---
 title: Create a query for a workflow type
-description: This article describes how to create a query for a workflow type.
+description: Learn about how to create a query for a workflow type, including a step-by-step process that walks you thorugh the process.
 author: josaw1
-ms.date: 06/19/2019
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: tfehr
+ms.topic: article
+ms.date: 06/19/2019
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004

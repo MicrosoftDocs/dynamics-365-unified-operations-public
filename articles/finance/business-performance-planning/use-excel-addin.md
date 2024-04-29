@@ -4,7 +4,7 @@
 title: Configure and use the Excel add-in for business performance planning
 description: This article describes how to configure and use the Microsoft Excel add-in for business performance planning.
 author: ShielaSogge
-ms.date: 03/15/2024
+ms.date: 04/23/2024
 ms.topic: article
 ms.reviewer: twheeloc
 
@@ -67,6 +67,9 @@ To create a PivotTable that's based on a data model, follow these steps.
 1. On the Excel ribbon, on the **Insert** tab, select **Pivot table from data model**. Your cube and dimension tables should be shown.
 2. Configure the PivotTable by bringing fact data, amounts, or values from your cube into the **Values** section.
 3. Bring dimensions that describe the fact data in as rows, columns, and filters of your PivotTable. Examples of these dimensions include cost centers, scenarios, regions, or years.
+4. Auto detect relationships between cube and dimension tables.
+
+A message at the top of the PivotTable pane notifies you that there are no relationships between the tables. It prompts you to either auto detect the relationships or manually create them. Confirm that auto detect relationships accurately set up the relationships. The relationships are generally based on the primary key (ID field) in dimension tables. Occasionally, you might have to manually create the relationships.
 
 ## Begin planning
 
