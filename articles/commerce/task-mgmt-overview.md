@@ -4,8 +4,6 @@ description: This article provides an overview of task management for managers a
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

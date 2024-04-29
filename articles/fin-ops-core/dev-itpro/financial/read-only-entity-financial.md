@@ -18,9 +18,6 @@ ms.search.validFrom: 2016-11-30
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
-
 In this article, we describe how to build an entity for registered transactions that are registered. 
 
 > [!NOTE] 

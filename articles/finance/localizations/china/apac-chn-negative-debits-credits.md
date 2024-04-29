@@ -4,8 +4,6 @@ description: This article shows how to display credit and debit amounts for ledg
 author: AdamTrukawka
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)

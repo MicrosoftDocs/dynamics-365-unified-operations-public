@@ -6,9 +6,6 @@ description: Companies in Germany and some other countries/regions are legally r
 author: liza-golub
 ms.date: 03/11/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ERWorkspace

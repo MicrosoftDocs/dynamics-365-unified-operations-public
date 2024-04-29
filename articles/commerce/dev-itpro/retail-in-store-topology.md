@@ -4,8 +4,6 @@ description: This article provides information about the various Dynamics 365 Co
 author: Reza-Assadi
 ms.date: 02/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

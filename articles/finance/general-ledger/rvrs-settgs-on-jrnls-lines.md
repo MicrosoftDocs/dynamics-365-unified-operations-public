@@ -6,9 +6,6 @@ description: This article addresses why a reversing entry that was entered on a 
 author: kweekley
 ms.date: 04/29/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

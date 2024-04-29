@@ -4,8 +4,6 @@ description: This article describes how to add a privacy policy page to your sit
 author: v-chgri
 ms.date: 08/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

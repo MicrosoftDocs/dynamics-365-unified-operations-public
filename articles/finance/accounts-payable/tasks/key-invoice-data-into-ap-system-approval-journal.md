@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Key invoice data into accounts payable using an approval journal
-description: This article explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
-author: abruer
-ms.date: 07/31/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.
+author: twheeloc
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/31/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Key invoice data into accounts payable using an approval journal
 
 [!include [banner](../../includes/banner.md)]

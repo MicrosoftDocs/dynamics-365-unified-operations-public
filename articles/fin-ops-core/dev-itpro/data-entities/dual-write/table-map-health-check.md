@@ -1,15 +1,13 @@
 ---
 title: Errors codes for the table map health check
-description: This article describes error codes for the table map health check.
+description: Learn about error codes for the table map health check, including a table that provides messages and details associated with various error codes.
 author: RamaKrishnamoorthy
-ms.date: 04/01/2024
-ms.topic: conceptual
-ms.custom: 
-  - bap-template
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 05/31/2022
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2021-10-04
 ---
 

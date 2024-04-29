@@ -4,8 +4,6 @@ description: The Construction Industry Scheme (CIS) is a scheme in the United Ki
 author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom

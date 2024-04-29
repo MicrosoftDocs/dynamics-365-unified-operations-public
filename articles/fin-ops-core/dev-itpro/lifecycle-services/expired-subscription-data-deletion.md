@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Expired subscriptions and data deletion
-description: This article provides information about data deletion that occurs after a finance and operations apps subscription expires. It also explains how to clean up cloud-hosted environments deployed to an Azure subscription after a project is deleted.
+description: Learn about data deletion that occurs after a finance and operations apps subscription expires, including cleaning up environments deployed to Azure subscriptions.
 author: LaneSwenka
-ms.date: 02/17/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/17/2023
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-08-16
 ---
 

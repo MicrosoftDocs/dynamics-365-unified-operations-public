@@ -6,8 +6,6 @@ description: This article explains how to create and enter NAF codes for legal e
 author: EvgenyPopovMBS
 ms.date: 09/10/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

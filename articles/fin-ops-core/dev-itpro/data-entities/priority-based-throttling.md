@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Throttling prioritization
-description: This article provides information about priority-based throttling for OData and custom service-based integrations.
+description: Learn about priority-based throttling for OData and custom service-based integrations, including how to determine prioritization.
 author: jaredha
-ms.date: 08/25/2022
+ms.author: jaredha
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 08/25/2022
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer 
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jaredha
 ms.search.validFrom: 2020-07-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 37
-
 ---
 
 # Throttling prioritization

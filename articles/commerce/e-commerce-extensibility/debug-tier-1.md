@@ -4,8 +4,6 @@ description: This article describes how to set up an e-commerce online developme
 author: samjarawan
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

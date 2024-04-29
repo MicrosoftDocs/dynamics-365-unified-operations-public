@@ -6,9 +6,6 @@ description: This article provides information about how to set up Goods and Ser
 author: mrolecki
 ms.date: 08/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfiguration_MY

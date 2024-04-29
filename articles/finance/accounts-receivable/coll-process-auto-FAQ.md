@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Collections process automation FAQ
-description: This article answers some frequently asked questions about collections process automation.
+description: Access answers to some frequently asked questions about collections process automation, including questions about automation setup.
 author: JodiChristiansen
-ms.date: 01/31/2024
-ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: conceptual
+ms.date: 01/31/2024
+ms.reviewer: twheeloc
+ms.collection: bap-ai-copilot 
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2023-06-05
 ms.dyn365.ops.version: 10.0.24
-ms.collection: bap-ai-copilot 
-
+ms.search.form: 
 ---
+
 # Collections process automation FAQ
 
 This article answers some frequently asked questions about the setup of collections process automation. 

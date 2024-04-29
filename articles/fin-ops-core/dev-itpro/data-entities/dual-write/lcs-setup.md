@@ -1,15 +1,15 @@
 ---
 title: Dual-write setup from Lifecycle Services
-description: This article explains how to set up a dual-write connection from Microsoft Dynamics 365 Lifecycle Services.
+description: Learn how to set up a dual-write connection from Microsoft Dynamics 365 Lifecycle Services, including prerequisites and the setup process.
 author: laneswenka
-ms.date: 02/23/2024
+ms.author: laswenka
 ms.topic: how-to
+ms.date: 02/23/2024
 ms.custom: 
   - bap-template
-audience: Application User, IT Pro
 ms.reviewer: johnmichalak
+audience: Application User, IT Pro
 ms.search.region: global
-ms.author: laswenka
 ms.search.validFrom: 2020-01-06
 ---
 

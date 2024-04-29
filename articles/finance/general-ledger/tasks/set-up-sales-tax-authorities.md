@@ -6,8 +6,6 @@ description: Sales tax authorities are entities to which collected sales tax nee
 author: twheeloc
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -6,8 +6,6 @@ description: This article provides information about how to create and reverse a
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

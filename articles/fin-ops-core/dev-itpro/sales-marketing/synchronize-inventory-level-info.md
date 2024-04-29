@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Synchronize inventory level information from Supply Chain Management to Field Service 
-description: This article discusses the templates and underlying tasks that are used to synchronize inventory-level information from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
+description: Learn about the templates and underlying tasks used to synchronize inventory-level information from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 author: Henrikan
-ms.date: 05/07/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
 ms.author: henrikan
-ms.dyn365.ops.version: 8.1.3 
+ms.topic: article
+ms.date: 05/07/2019
+ms.reviewer: kamaybac
+audience: IT Pro
+ms.search.region: global
+ms.dyn365.ops.version: 8.1.3
+ms.search.form: 
 ms.search.validFrom: 2018-12-01
-
 ---
 
 # Synchronize inventory level information from Supply Chain Management to Field Service 

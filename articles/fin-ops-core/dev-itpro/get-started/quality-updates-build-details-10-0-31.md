@@ -1,13 +1,13 @@
 ---
 title: Version 10.0.31 PQU release 3 build information
-description: This article provides information about the version 10.0.31 proactive quality update (PQU) release 3 build. 
+description: Learn about the version 10.0.31 proactive quality update (PQU) release 3 build, including a table that provides titles for various work items. 
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
 ms.date: 04/05/2023
 ms.custom: bap-template
-audience: Developer, IT Pro
 ms.reviewer: johnmichalak
+audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-08-19
 ms.search.form:

@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Data entities overview
-description: This article describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
-author: peakerbl
-ms.date: 04/28/2023
+description: Learn about data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 04/28/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
+audience: Developer
 ms.assetid: 89ee656f-3a91-42cd-a189-11744cd2415b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -31,8 +20,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 

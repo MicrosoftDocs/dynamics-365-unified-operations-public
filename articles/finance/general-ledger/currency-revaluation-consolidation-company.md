@@ -6,9 +6,6 @@ description: This article describes how to revalue currency in a consolidation c
 author: aprilolson
 ms.date: 10/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerExchAdjHist

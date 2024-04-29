@@ -4,8 +4,6 @@ description: This article provides an overview of cross-company data sharing. Th
 author: RamaKrishnamoorthy
 ms.date: 02/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
