@@ -4,7 +4,7 @@ description: Learn about how to use application context with Copilot, including 
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 02/08/2024
+ms.date: 04/29/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
@@ -115,7 +115,7 @@ The user context provides contextual information about the user.
 | Name | Type | Description |
 | --- | --- | --- |
 | dataAreaId | String | The legal entity that the user is currently signed in to. |
-| userLanguageId | String | The language code that's selected for the user in [User options](../get-started/personalize-user-experience.md#system-wide-options-for-the-current-user). |
+| userLanguageId | String | The language code selected for the user in [User options](../get-started/personalize-user-experience.md#system-wide-options-for-the-current-user). |
 
 **Sample payload**
 
