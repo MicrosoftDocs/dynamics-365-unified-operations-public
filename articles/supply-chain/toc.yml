@@ -2794,6 +2794,8 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
+          - name: Register and track batch/serial numbers for finished products and their components (preview)
+            href: production-control/tracked-components.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
@@ -2988,6 +2990,8 @@
             href: production-control/substitute-items-bom-lines.md
           - name: Registration for manufacturing execution
             href: production-control/registration-manufacturing-execution.md
+          - name: Register and track batch/serial numbers for finished products and their components (preview)
+            href: production-control/tracked-components.md
           - name: Production feedback
             href: production-control/production-feedback.md
           - name: Time and attendance registration
