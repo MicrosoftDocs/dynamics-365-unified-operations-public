@@ -94,7 +94,7 @@ The invoice journal that's created after posting occurs doesn't include the pare
 
 The invoice journal must not include the parent item from the product bundle, because any processes that are performed after the invoice is posted are based on that invoice journal. For example, if you create a credit note from the **Sell** tab of the Action Pane, the credit note that's created will include the component items but not the parent item.
 
-## Product bundles in journals (preview)
+## <a name="bundles-journals"></a>Product bundles in journals (preview)
 
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 
