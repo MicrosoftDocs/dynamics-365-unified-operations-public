@@ -4,7 +4,7 @@ description: Access examples of three-way matching, which summarize situations, 
 author: twheeloc
 ms.author: shpandey
 ms.topic: article
-ms.date: 02/11/2022
+ms.date: 04/29/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
