@@ -5,7 +5,7 @@ author: pnghub
 ms.author: gned
 ms.reviewer: johnmichalak
 ms.topic: conceptual
-ms.date: 03/29/2024
+ms.date: 04/29/2024
 ms.custom:
 
 ---
@@ -20,12 +20,12 @@ This article describes how to set up and manage archive data in Microsoft Dynami
 To prepare your environment to archive data, follow these steps.
 
 1. To align it with your production instance, refresh your PROD data in your sandbox instance.
-1. Ensure that your sandbox instance is on the latest version of D365 Finance and Operations version 10.0.39 or greater. Be sure to apply the latest quality updates for the version.
-1. Under license configuration ensure **SQL row version change tracking** is enabled. If not enable SQL row version change tracking using the following steps:
+2. Ensure that your sandbox instance is on the latest version of D365 Finance and Operations version 10.0.39 or greater. Be sure to apply the latest quality updates for the version.
+3. Under license configuration, ensure **SQL row version change tracking** is enabled. If **SQL row version change tracking** isn't enabled, follow these steps:
 
-    1. In Microsoft Dynamics Lifecycle Services, select the environment, and then select **Maintain** \> **Enable Maintenance Mode**.
-    1. Sign in to Finance, and go to **System administrator** \> **Setup** \> **License configuration**. Select the **SQL row version change tracking** checkbox, and then select **Save**.
-    1. In Lifecycle Services, select the environment, and then select **Maintain** \> **Disable Maintenance Mode**.  
+    1. In Microsoft Dynamics Lifecycle Services, select the environment, and go to **Maintain** \> **Enable Maintenance Mode**.
+    2. Sign into Finance, and go to **System administrator** \> **Setup** \> **License configuration**. Select the **SQL row version change tracking** checkbox, and then select **Save**.
+    3. In Lifecycle Services, select the environment, and then select **Maintain** \> **Disable Maintenance Mode**.  
 
 > [!NOTE]
 > If the Microsoft Power Platform environment isn't set up for the sandbox instance, complete the setup in Lifecyle Services.
@@ -38,7 +38,10 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 2. Update the **Finance and operations virtual entity** app if the status is **Update available**.
  
 3. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
-4. Install Dynamics 365 Archive with Dataverse Long Term Retention - From the Power Platform admin center, Click on Install App and search for Dynamics 365 Archive with Dataverse Long Term Retention (Preview). Select and click install. If you already have the app installed, you should install the latest update.
+4. Install **Dynamics 365 Archive with Dataverse long term retention** from the Power Platform admin center.
+5. Click **Install App**.
+6. Search for **Dynamics 365 Archive with Dataverse long term retention (Preview)**.
+7. Select and click **Install**. If you already have the app installed, you should install the latest update.
 
 ### Enable Finance and Operation data archival with Dataverse long term retention  
 
@@ -48,14 +51,15 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 
 ### Scheduling an archive job
 > [!NOTE]
-> Before scheduling an archive job check for for custom fields on the archive tables by running [validate archive table schema script](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/tree/main/Finance%20and%20Operations/SQL%20Scripts). If custom fields are found, follow [Archive customization](archive-custom.md) instructions to include these fields in the data archive.
+> Before scheduling an archive job, check for custom fields in archive tables by running [validate archive table schema script](https://github.com/MicrosoftDocs/D365FnOArchiveWithDataverseLongTermRetention/tree/main/Finance%20and%20Operations/SQL%20Scripts). If custom fields are found, follow [Archive customization](archive-custom.md) instructions to include these fields in the data archive.
 
 - Finance and Operations archive jobs can be scheduled from the archive workspace for supported functional scenarios using the new long term retention job wizard. 
 - While you can schedule a time during which you would like the job to run in order to minimize impact on other database operations, only the move to history process runs during the scheduled window. The other asynchronous archive processes for Dataverse long term retention occur continuously even outside of the scheduled duration.
 - Only one archive job across all scenarios runs at any given point of time.  The scheduled job starts running only after the previous archive job completes.
 
 > [!IMPORTANT]
-> Known Issue: When submitting a new archive job for the first time, you may see this error **An error occured while accessing the archive service. Please check your archive service installation**. Workaround - Wait for 15 minutes before re-submitting the archive job.
+> Known issue: When submitting a new archive job for the first time, you may see this error: **An error occured while accessing the archive service. Please check your archive service installation**.
+> Workaround - Wait for 15 minutes before re-submitting the archive job.
 
 ## View archive job progress
 
@@ -65,17 +69,17 @@ The **Job status** column that's visible for each archive scenario captures the 
 
 | Job status | Description |
 |---|---|
-| Scheduled | A job is scheduled, but it isn't being processed yet. Details about the scheduled date and time are available on the dashboard. |
-| In progress | The archive job is in progress. Some of the interim stages in the archive job might be completed. |
-| Complete | All stages of the archive job are complete. |
-| Failed | The archive job failed. |
+| **Scheduled** | A job is scheduled, but it isn't being processed yet. Details about the scheduled date and time are available on the dashboard. |
+| **In progress** | The archive job is in progress. Some of the interim stages in the archive job might be completed. |
+| **Complete** | All stages of the archive job are complete. |
+| **Failed** | The archive job failed. |
 
 You can view the detailed progress log for each archive job by selecting **View progress** \> **View detailed logs**.
 
 > [!NOTE]
-> The "In progress" prefix indicates that the end-to-end archival process is ongoing, even if individual stages are completed.
+> The **In progress** status indicates that the end-to-end archival process is ongoing, even if individual stages are completed.
 
-### View information in the Finance and Operations archive workspace
+### View information in the finance and operations archive workspace
 
 | Information | Description |
 |---|---|
