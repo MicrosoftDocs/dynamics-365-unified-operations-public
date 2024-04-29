@@ -4,8 +4,6 @@ description: This article describes how to manage customer information in Commer
 author: EvgenyPopovMBS
 ms.date: 12/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Brazil

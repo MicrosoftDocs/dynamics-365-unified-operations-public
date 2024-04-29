@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 01/04/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysEmailParameters
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 01/04/2024
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysEmailParameters
 ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
 ---
 
 # Configure and send email

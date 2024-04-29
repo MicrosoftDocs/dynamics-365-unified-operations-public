@@ -1,19 +1,17 @@
 ---
 title: Financial report components
-description: This article describes how the components, or building blocks, of report definitions are used in financial reporting.
+description: Learn about how the components, or building blocks, of report definitions are used in financial reporting, including an outline on the building blocks of a report.
 author: aprilolson
-ms.date: 10/27/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: aolson
+ms.topic: article
+ms.date: 10/27/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
-ms.search.form: FinancialReports
 ---
 
 # Financial report components

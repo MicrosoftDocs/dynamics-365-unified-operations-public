@@ -6,9 +6,6 @@ description: This article describes how the Cash flow forecasting feature predic
 author: ShivamPandey-msft
 ms.date: 12/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

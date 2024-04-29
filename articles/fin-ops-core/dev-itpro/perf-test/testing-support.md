@@ -4,8 +4,6 @@ description: This article describes the options for testing in Visual Studio.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

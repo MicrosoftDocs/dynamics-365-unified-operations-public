@@ -4,8 +4,6 @@ description: This article gives an overview of the Adventure Works theme and des
 author: anupamar-ms
 ms.date: 12/03/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

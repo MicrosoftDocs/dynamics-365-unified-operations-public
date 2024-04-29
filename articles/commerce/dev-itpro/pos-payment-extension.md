@@ -4,8 +4,6 @@ description: This article describes how to implement the core payment logic in t
 author: josaw1
 ms.date: 11/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

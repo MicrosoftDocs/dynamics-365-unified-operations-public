@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Workflow FAQ
-description: This article answers frequently asked questions about the workflow system.
-author: ChrisGarty 
-ms.date: 02/08/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Access frequently asked questions about the workflow system, including questions about notifications and workflow approval.
+author: ChrisGarty
 ms.author: cgarty
+ms.topic: article 
+ms.date: 02/08/2024
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Workflow FAQ

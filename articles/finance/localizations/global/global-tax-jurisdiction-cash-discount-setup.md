@@ -4,8 +4,6 @@ description: This article provides information about the setup of cash discount 
 author: EricWangChen
 ms.date: 04/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

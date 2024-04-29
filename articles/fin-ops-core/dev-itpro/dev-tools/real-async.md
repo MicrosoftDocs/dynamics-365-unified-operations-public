@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Real async feature enhancements
-description: This article describes real async feature enhancements.
+description: Learn about real async feature enhancements to SysOperations, including an outline on how to enable the real async feature with examples.
 author: twheeloc
-ms.date: 10/25/2023
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+ms.date: 10/25/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: Application user
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2023-12-01
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Real async feature enhancements

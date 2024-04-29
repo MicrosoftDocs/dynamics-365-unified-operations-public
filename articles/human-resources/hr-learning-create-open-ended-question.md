@@ -6,8 +6,6 @@ description: Open-ended questions enable respondents to provide their own respon
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -26,7 +24,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Create an open ended question
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -1,15 +1,13 @@
 ---
 title: Create a Globalization feature
-description: This article explains how to create a Globalization feature.
-author: gionoder
+description: This article explains how to create a Globalization feature (RCS).
+author: ilikond
 ms.date: 02/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 

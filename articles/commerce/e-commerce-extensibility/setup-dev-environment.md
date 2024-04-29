@@ -4,8 +4,6 @@ description: This article describes how to set up a development environment for 
 author: samjarawan
 ms.date: 03/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

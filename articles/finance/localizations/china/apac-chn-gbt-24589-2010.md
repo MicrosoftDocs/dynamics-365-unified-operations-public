@@ -4,8 +4,6 @@ description: This article explains how to export accounting data to several XML 
 author: AdamTrukawka
 ms.date: 06/17/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

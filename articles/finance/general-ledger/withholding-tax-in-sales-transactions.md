@@ -6,9 +6,6 @@ description: This article explains how to enable the calculation of withholding 
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

@@ -6,9 +6,6 @@ description: This article explains how to set up company-specific parameters in 
 author: twheeloc
 ms.date: 03/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Set up and process bridged payments
-description: This article explains how to set up and process bridged customer payments. A bridged payment is a payment that is posted to the general ledger in two steps.
+description: Learn how to set up and process bridged customer payments. A bridged payment is a payment that is posted to the general ledger in two steps.
 author: rachel-profitt
-ms.date: 02/23/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPaymMode, VendPaymMode, LedgerJournalTable, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, LedgerJournalTransDaily
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 04/29/2024
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-03
+ms.search.form: CustPaymMode, VendPaymMode, LedgerJournalTable, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, LedgerJournalTransDaily
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Set up and process bridged payments

@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in dual-write
-description: This article provides links to the release plans, major announcements, and documentation for dual-write.
+description: Access links to the release plans, major announcements, and documentation for dual-write, including a table that provides descriptions and number for various bug types.
 author: jaredha
-ms.date: 04/02/2024
+ms.author: jaredha
 ms.topic: whats-new
+ms.date: 03/04/2024
 ms.custom: 
   - bap-template
-audience: Developer, IT Pro
 ms.reviewer: johnmichalak
+audience: Developer, IT Pro
 ms.search.region: Global
-ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---

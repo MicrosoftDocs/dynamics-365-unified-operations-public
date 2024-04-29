@@ -6,9 +6,6 @@ description: This article describes the functionality that records an impairment
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

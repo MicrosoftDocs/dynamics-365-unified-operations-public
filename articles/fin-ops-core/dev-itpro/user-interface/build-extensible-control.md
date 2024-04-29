@@ -4,8 +4,6 @@ description: This article describes how to create new application controls that 
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

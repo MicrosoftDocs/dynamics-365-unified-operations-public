@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Vendor invoice dates
-description: This article describes the dates that appear on vendor invoices. It also explains how to automatically adjust the posting date.
+description: Learn about the dates that appear on vendor invoices. It also explains how to automatically adjust the posting date.
 author: sunfzam
-ms.date: 3/14/2024
-ms.topic: article
-
-
-# optional metadata
-
-ms.search.form: VendParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shpandey
+ms.topic: article
+ms.date: 3/14/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-08-30
+ms.search.form: VendParameters
 ms.dyn365.ops.version: 10.0.23
-
 ---
 
 # Vendor invoice dates

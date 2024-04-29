@@ -6,9 +6,6 @@ description: This article walks you through the process of creating and posting 
 author: AdamTrukawka
 ms.date: 01/05/2018
 ms.topic: article
-ms.prod:
-ms.technology:
-
 # optional metadata
 
 # ms.search.form:

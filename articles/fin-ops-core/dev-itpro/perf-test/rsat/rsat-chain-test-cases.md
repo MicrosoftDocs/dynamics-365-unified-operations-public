@@ -4,8 +4,6 @@ description: This article shows how the Regression Suite Automation Tool can be 
 author: FrankDahl
 ms.date: 11/27/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: Global

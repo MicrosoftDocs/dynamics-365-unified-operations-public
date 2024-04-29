@@ -6,9 +6,6 @@ description: This article provides information that will help you choose among m
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetLeaseDetail

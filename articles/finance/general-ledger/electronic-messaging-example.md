@@ -4,8 +4,6 @@ description: This article provides an example that shows how to set up and use e
 author: AdamTrukawka
 ms.date: 07/06/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global

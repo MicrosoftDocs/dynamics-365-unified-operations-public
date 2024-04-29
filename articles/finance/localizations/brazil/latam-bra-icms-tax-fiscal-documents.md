@@ -4,8 +4,6 @@ description: This article explains the concept of tax fiscal documents and descr
 author: AdamTrukawka
 ms.date: 08/08/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

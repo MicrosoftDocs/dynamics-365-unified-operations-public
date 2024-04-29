@@ -4,8 +4,6 @@ description: This article provides information on how to set up and transfer a E
 author: AdamTrukawka
 ms.date: 02/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 

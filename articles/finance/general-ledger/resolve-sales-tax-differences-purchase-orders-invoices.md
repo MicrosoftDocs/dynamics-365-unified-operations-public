@@ -6,9 +6,6 @@ description: This article explains how to resolve sales tax differences between 
 author: kailiang
 ms.date: 09/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

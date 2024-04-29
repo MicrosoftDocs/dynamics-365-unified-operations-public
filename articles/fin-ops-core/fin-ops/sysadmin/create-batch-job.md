@@ -1,19 +1,20 @@
 ---
 title: Create a batch job
-description: A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing.
+description: Learn about how to create batch jobs, which are groups of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing.
 author: matapg007
-ms.date: 03/18/2024
+ms.author: matgupta
 ms.topic: how-to
+ms.date: 03/18/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: matgupta
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: BatchJob, SysRecurrence, BatchAlerts
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create a batch job
 
 [!include [banner](../../../finance/includes/banner.md)]
