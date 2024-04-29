@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Generate and post recurring free text invoices
-description: Recurring invoices are used to invoice customers regularly for the same amount. 
-author: ShivamPandey-msft
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysLookupMultiSelectGrid, CustRecurrenceInvoiceGroup, CustFreeInvoice, CustRecurrenceInvoiceTotals   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Recurring invoices are used to invoice customers regularly for the same amount. Learn how to generate and post recurring free text invoices.
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysLookupMultiSelectGrid, CustRecurrenceInvoiceGroup, CustFreeInvoice, CustRecurrenceInvoiceTotals
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Generate and post recurring free text invoices
 
 [!include [banner](../../includes/banner.md)]

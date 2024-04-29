@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Preconfigured system accounts
-description: This article provides information about the system accounts that are preconfigured on your finance and operations environments.
+description: Learn about the system accounts that are preconfigured on your finance and operations environments with a table that outlines the purpose for various accounts.
 author: jaredha
-ms.date: 05/26/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jaredha
+ms.topic: conceptual
+ms.date: 04/10/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
-
 ---
 
 # Preconfigured system accounts
@@ -49,6 +36,7 @@ Preconfigured system accounts are included on deployed environments so that Micr
 | ScaleUnitManagement | Communication with the Scale Unit Manager portal. This account is automatically added when you upgrade to version 10.0.23. |
 | ScaleUnitPipeline | Maintaining and tracking communication between the scale units. This account is automatically added when you upgrade to version 10.0.19. |
 | SysHealthServiceUser or Axping (depending on the deployed product version) | Monitoring the availability and health of the environment, and providing alerts as required. |
+| ArchiveServiceApp | Archive service application account used for moving finance and operations data to Dataverse long term retention. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

@@ -1,15 +1,13 @@
 ---
 title: Set up technical support for finance and operations apps
-description: This article provides information about the support experience for cloud and on-premises deployments.
+description: Learn about the support experience for cloud and on-premises deployments, including prerequisites and an outline on creating an Azure DevOps project.
 author: sericks007
-ms.date: 09/01/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 09/01/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002

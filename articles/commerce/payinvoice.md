@@ -6,9 +6,6 @@ description: This article describes how to configure Dynamics 365 Commerce to su
 author: josaw1
 ms.date: 11/14/2018
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

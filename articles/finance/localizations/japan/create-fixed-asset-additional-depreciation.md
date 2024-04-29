@@ -4,8 +4,6 @@ description: In Japan, a fixed asset is permitted to post an additional deprecia
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Japan

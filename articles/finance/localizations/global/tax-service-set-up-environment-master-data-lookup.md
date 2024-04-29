@@ -6,9 +6,6 @@ description: This article explains how to set up and enable the tax calculation 
 author: kai-cloud
 ms.date: 02/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:

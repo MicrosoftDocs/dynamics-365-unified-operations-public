@@ -4,8 +4,6 @@ description: This article explains how to configure and use vendor electronic in
 author: ilikond
 ms.date: 10/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Denmark

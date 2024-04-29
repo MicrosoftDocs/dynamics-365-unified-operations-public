@@ -6,8 +6,6 @@ description: This procedure walks through the process of creating a new deprecia
 author: moaamer
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

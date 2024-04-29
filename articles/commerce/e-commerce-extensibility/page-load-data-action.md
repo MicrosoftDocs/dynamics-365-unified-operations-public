@@ -4,8 +4,6 @@ description: This article covers page load data actions in Microsoft Dynamics 36
 author: samjarawan
 ms.date: 05/18/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

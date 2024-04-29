@@ -4,8 +4,6 @@ description: This article describes how to configure ""gift with purchase"" prom
 author: ShalabhjainMSFT
 ms.date: 04/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

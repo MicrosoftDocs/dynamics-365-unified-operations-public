@@ -4,8 +4,6 @@ description: This article explains how to set up advance notices for Commerce fo
 author: EvgenyPopovMBS
 ms.date: 07/05/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: josaw
 ms.search.region: Czech Republic, Hungary, Poland

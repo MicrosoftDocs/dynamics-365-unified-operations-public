@@ -6,9 +6,6 @@ description: This article provides information about global withholding tax func
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerParameters

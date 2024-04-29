@@ -1,15 +1,15 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Norway
 description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
-author: AdamTrukawka
-ms.date: 09/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+author: liza-golub
+ms.date: 04/11/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Norway
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -30,11 +30,12 @@ Beginning January 2020, all companies in Norway are required by the Norwegian Ta
 To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, complete the following setup tasks:
 
 1. [Import Electronic reporting (ER) configurations](#import).
-2. [Set up the tax registration numbers of the company](#registration-number).
-3. [Set up the ER format on the **General ledger parameters** page](#parameters).
-4. [Associate sales tax codes used in Finance with Norwegian standard value-added tax (VAT) codes](#sales).
-5. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#main).
-6. [Enable features in Feature management](#features).
+2. [Set up the organization registration number](#organization-number).
+3. [Set up the tax registration numbers of the company](#registration-number).
+4. [Set up the ER format on the **General ledger parameters** page](#parameters).
+5. [Associate sales tax codes used in Finance with Norwegian standard value-added tax (VAT) codes](#sales).
+6. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#main).
+7. [Enable features in Feature management](#features).
 
 ### <a name="import"></a> Import ER configurations
 
@@ -52,6 +53,13 @@ Import the most recent versions of the configurations. The version description u
 
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
+
+### <a name="organization-number"></a> Set up the organization registration number
+
+Organization registration number of the legal entity is reported in SAF-T file in the **Header** \> **Company** \> **RegistrationNumber** field. To configure the organization registration number that should be reported in the **RegistrationNumber** field, follow these steps.
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
+2. On the **Bank account information** FastTab, assign the organization number to the **Routing code** field.
 
 ### <a name="registration-number"></a> Set up the company tax registration numbers
 

@@ -6,9 +6,6 @@ description: This article explains how to customize tax configurations to extend
 author: kai-cloud
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:

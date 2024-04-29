@@ -1,15 +1,13 @@
 ---
 title: Create shareable, secured URLs (deep links)
-description: Learn how to create shareable, secured URLs to forms and records.
+description: Learn how to create shareable, secured URLs to forms and records, with overviews on the purpose of shareable URLs, security, and usage.
 author: josaw1
-ms.date: 07/09/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 07/09/2018
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96

@@ -1,13 +1,13 @@
 ---
 title: Party and global address book
-description: This article describes the Party and global address book functionality of dual-write.
+description: Learn about the Party and global address book functionality of dual-write, including a table that describes various row types for contacts.
 author: RamaKrishnamoorthy
-ms.date: 08/22/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 08/22/2023
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2021-02-22
 ---
 
@@ -179,7 +179,7 @@ During the lead qualification process, you can provide both a business phone num
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | This is a new map added as part of this release.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
-    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
+    `CDS location roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
 
 8. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
@@ -202,7 +202,7 @@ During the lead qualification process, you can provide both a business phone num
     | Company (field) | Exact Match |
     | Relationship Type (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Accounts.](media/duplicate-rule-1.PNG)
 
@@ -218,7 +218,7 @@ During the lead qualification process, you can provide both a business phone num
     | Last Name (field) | Exact Match |
     | Company (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Contacts.](media/duplicate-rule-2.PNG)
 

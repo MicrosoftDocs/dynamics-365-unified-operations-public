@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Add credit management information for customers
-description: This article explains how to add credit management information for a customer.
+description: Learn about how to add credit management information for a customer, including outlines on customer information and temporary credit limits.
 author: JodiChristiansen
-ms.date: 09/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 09/04/2019
+ms.custom: 
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
 
 # Add credit management information for customers

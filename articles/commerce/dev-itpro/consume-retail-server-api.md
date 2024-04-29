@@ -4,8 +4,6 @@ description: This article describes how to consume the Retail Server APIs in ext
 author: josaw1
 ms.date: 01/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

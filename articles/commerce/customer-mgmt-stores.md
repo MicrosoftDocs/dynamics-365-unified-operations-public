@@ -4,8 +4,6 @@ description: This article explains how retailers can enable customer management 
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

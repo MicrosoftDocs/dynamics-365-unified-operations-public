@@ -48,15 +48,9 @@ Soft reservations are usually created, consumed, and canceled by using API calls
 >
 > By default, the offset function is automatically turned on when you enable the soft reservation feature.
 
-## <a name="turn-on"></a>Turn on and set up the reservation feature in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## <a name="turn-on"></a>Turn on and set up the reservation feature in UI version 2
 
 This section and its subsections apply when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Turn on the reservation feature
 

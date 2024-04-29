@@ -1,13 +1,12 @@
 ---
 title: Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
-description: This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps.
+description: Learn about how to archive data in Microsoft Dynamics 365 finance and operations apps, including an overview on business application data lifecycles.
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 4/10/2024
 ms.custom:
-
+ms.reviewer: twheeloc
 ---
 
 # Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
@@ -37,9 +36,10 @@ Finance and operations apps enable organizations to achieve the following benefi
 This feature currently supports archiving the following types of finance and operations data with Dataverse long term retention:
 
 - Dynamics 365 Finance General ledger
-- Dynamics 365 Supply Chain Management inventory transactions
-- Dynamics 365 Supply Chain Management sales orders
 - Dynamics 365 Finance Tax transactions
+- Dynamics 365 Supply Chain Management Inventory transactions
+- Dynamics 365 Supply Chain Management Inventory journals
+- Dynamics 365 Supply Chain Management Sales orders
 
 Support for additional data types is planned in future releases.
 

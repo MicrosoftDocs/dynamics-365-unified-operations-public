@@ -5,9 +5,6 @@ description: This article describes how depreciation batch proposals work and ex
 author: abruer
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
-
 # optional metadata 
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 

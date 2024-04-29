@@ -6,8 +6,6 @@ description: Cost behavior is the classification of costs as either fixed or var
 author: twheeloc
 ms.date: 06/27/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

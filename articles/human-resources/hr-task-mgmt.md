@@ -6,9 +6,6 @@ description: This article explains the task management functionality that is ava
 author: twheeloc
 ms.date: 09/06/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -28,7 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Task management
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Task management lets you create tasks that must be completed to hire (onboard), terminate (offboard), and transfer (transition) employees. Task management uses the concept of checklists. A checklist is of a list of onboarding, offboarding, or transition tasks. Task management uses checklists to group tasks together, and to assign them to individuals or groups. The checklist functionality for onboarding, offboarding, and transitions is similar.
 

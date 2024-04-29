@@ -4,8 +4,6 @@ description: You can use the one-click designer to design different Store Commer
 author: josaw1
 ms.date: 02/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

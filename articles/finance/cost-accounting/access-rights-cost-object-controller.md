@@ -6,9 +6,6 @@ description: This article provides information about access rights for cost obje
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMCostControlWorkspace, CAMParameters

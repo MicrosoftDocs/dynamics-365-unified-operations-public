@@ -6,9 +6,6 @@ description: This article provides an overview of Commerce Data Exchange, includ
 author: jashanno
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod:
-ms.technology:
-
 # optional metadata
 
 ms.search.form: RetailTerminalTable, RetailDevice
