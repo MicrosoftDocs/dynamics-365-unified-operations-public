@@ -4,7 +4,7 @@ description: Learn about deferral schedules in revenue and expense deferrals, in
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/04/2021
+ms.date: 04/29/2024
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global

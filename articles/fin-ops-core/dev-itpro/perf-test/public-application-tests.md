@@ -1,15 +1,15 @@
 ---
 title: Public application tests
-description: This article describes a collection of tests that cover the standard functionality of finance and operations apps.
+description: Learn about a collection of tests that cover the standard functionality of finance and operations apps, with a table defining various names.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 04/21/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Developer, IT Pro
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Public application tests

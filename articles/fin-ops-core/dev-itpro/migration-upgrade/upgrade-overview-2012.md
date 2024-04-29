@@ -1,23 +1,15 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 to finance and operations 
-description:  This article describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to finance and operations.
+description: Learn about the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to finance and operations.
 author: LaneSwenka
-ms.date: 07/21/2023
-ms.topic: overview
-# optional metadata
-
-# ms.search.form:  
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: overview
+ms.date: 07/21/2023
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-16
+ms.search.form:  
 ms.dyn365.ops.version: Platform update 8
 ---
 

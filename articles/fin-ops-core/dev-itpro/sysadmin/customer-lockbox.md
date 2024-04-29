@@ -1,15 +1,15 @@
 ---
 title: Use Customer Lockbox to manage secure access to customer data
-description: This article explains how to set up Customer Lockbox, and how access requests are initiated, tracked, and stored for later reviews and audits.
+description: Learn about how to set up Customer Lockbox, and how access requests are initiated, tracked, and stored for later reviews and audits.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 03/17/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Use Customer Lockbox to manage secure access to customer data

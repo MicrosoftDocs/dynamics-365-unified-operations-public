@@ -1,13 +1,13 @@
 ---
 title: View archived data in Dataverse long-term retention (preview)
-description: This article describes how to view archived data in Microsoft Dataverse long-term retention.
+description: Learn about how to view archived data in Microsoft Dataverse long-term retention, including an overview on viewing data by using Fabric.
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
 ms.topic: conceptual
 ms.date: 03/26/2024
 ms.custom: 
   - bap-template
+ms.reviewer: twheeloc
 ---
 
 # View archived data in Dataverse long-term retention (preview)
