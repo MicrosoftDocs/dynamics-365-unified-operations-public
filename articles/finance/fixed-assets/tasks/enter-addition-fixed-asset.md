@@ -6,8 +6,6 @@ description: This procedure shows how to add an addition to an existing fixed as
 author: moaamer
 ms.date: 03/28/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

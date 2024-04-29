@@ -6,9 +6,6 @@ description: This article explains how sales taxes are calculated for different 
 author: EricWangChen
 ms.date: 08/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxTable

@@ -6,8 +6,6 @@ description: This procedure walks through the process of importing a letter of c
 author: kweekley
 ms.date: 11/15/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

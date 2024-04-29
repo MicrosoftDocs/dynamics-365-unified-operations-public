@@ -6,9 +6,6 @@ description: This article describes the configuration settings for Asset leasing
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetLeasePostingAccounts

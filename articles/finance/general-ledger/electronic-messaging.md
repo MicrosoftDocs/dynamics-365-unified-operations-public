@@ -4,8 +4,6 @@ description: This article provides overview and setup information for electronic
 author: AdamTrukawka
 ms.date: 01/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global

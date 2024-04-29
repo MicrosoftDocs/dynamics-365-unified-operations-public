@@ -6,9 +6,6 @@ description: This article provides information about how to utilize the compleme
 author: gionoder
 ms.date: 12/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:   

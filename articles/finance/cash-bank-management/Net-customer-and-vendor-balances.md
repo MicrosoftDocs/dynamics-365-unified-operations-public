@@ -6,9 +6,6 @@ description: This article explains customer and vendor balance netting in Micros
 author: wangchen
 ms.date: 10/26/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

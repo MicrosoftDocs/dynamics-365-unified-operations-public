@@ -1,13 +1,13 @@
 ---
 title: Unified product experience
-description: This article describes the integration of product data between finance and operations apps and Dataverse.
+description: Learn about the integration of product data between finance and operations apps and Dataverse, including a table outlining various templates.
 author: t-benebo
-ms.date: 03/05/2024
-ms.topic: article
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 03/05/2024
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2019-07-15
 ---
 

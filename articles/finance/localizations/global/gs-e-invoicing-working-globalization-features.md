@@ -1,11 +1,9 @@
 ---
-title: Globalization feature components (preview)
-description: This article provides an overview of Globalization feature components (preview).
+title: Globalization feature components
+description: This article provides an overview of Globalization feature components.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -17,10 +15,9 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Globalization feature components (preview)
+# Globalization feature components
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 A Globalization feature is a set of components that define the rules for data transformation in Electronic reporting (ER) configurations. These components include instructions for processing electronic documents and then sending them to or receiving them from external channels. They also include conditions that define when a feature should be run for the incoming business data.
 

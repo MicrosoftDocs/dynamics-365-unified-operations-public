@@ -6,10 +6,6 @@ description: This article provides detailed information about Indian Tax Deducte
 author: kailiang
 ms.date: 03/19/2021
 ms.topic: overview
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

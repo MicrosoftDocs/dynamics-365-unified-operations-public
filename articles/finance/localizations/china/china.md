@@ -4,8 +4,6 @@ description: This article provides an overview of functionality specific to Chin
 author: kfend
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)

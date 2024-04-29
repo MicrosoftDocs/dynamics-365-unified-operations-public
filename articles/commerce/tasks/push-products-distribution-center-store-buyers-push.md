@@ -6,8 +6,6 @@ description: This procedure walks through the steps to create and process a Buye
 author: BrianShook
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

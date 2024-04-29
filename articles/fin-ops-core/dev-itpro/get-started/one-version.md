@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: One Version service updates FAQ
-description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
+description: Learn about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: josaw1
-ms.date: 03/18/2024
-ms.topic: article
-ms.custom: bap-template
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: josaw
-ms.search.validFrom: 2018-10-31 
+ms.topic: article
+ms.date: 03/18/2024
+ms.custom: bap-template
+ms.reviewer: josaw
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2018-10-31
+ms.search.form:
 ms.dyn365.ops.version: 8.1
 ---
 

@@ -4,8 +4,6 @@ description: This article covers templates and layouts in Microsoft Dynamics 365
 author: phinneyridge
 ms.date: 10/26/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

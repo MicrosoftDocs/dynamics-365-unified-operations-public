@@ -1,13 +1,13 @@
 ---
 title: Proactive quality updates FAQ
-description: This article provides answers to frequently asked questions about proactive quality updates (PQUs).
+description: Access answers to frequently asked questions about proactive quality updates (PQUs), including questions about how to know what's included in a PQU.
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
 ms.date: 04/05/2023
 ms.custom: bap-template
-audience: Developer, IT Pro
 ms.reviewer: johnmichalak
+audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-08-19
 ms.search.form:

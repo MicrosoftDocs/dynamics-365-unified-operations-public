@@ -4,7 +4,6 @@ description: This article provides information about the management of customer 
 author: AdamTrukawka
 ms.date: 02/28/2024
 ms.topic: article
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy

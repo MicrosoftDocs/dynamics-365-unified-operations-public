@@ -4,8 +4,6 @@ description: This article contains a high-level summary of some frequently used 
 author: samjarawan
 ms.date: 11/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

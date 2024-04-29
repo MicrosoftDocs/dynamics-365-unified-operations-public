@@ -6,9 +6,6 @@ description: This article describes the trickle feed-based order creation for st
 author: analpert
 ms.date: 01/11/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

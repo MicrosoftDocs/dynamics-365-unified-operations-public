@@ -6,9 +6,6 @@ description: This article explains how to improve performance in Microsoft Dynam
 author: twheeloc
 ms.date: 08/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: BatchJob, BatchJobEnhanced
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: Platform update 24
 
 
 # Optimize performance with auto cleanup tasks
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -6,9 +6,6 @@ description: This article explains how to use cash control to define transaction
 author: v-kiarnd
 ms.date: 09/21/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: [Operations AOT form name to tie this article to]

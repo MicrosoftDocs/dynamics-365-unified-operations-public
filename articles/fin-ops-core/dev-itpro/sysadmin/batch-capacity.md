@@ -1,19 +1,13 @@
 ---
-# required metadata
-
 title: Batch capacity
-description: This article provides information about the batch capacity.
+description: Learn about the batch capacity, including overviews on batch auto scaling and how to increase batch capacities.
 author: cwithfourplus
-ms.date: 03/07/2024
+ms.author: johnmichalak
 ms.topic: article
-audience: IT Pro
-# ms.devlang: 
+ms.date: 03/07/2024
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: vikaush
 ms.search.validFrom: 2024-03-07
 ms.dyn365.ops.version: Platform Update50
 ---

@@ -6,8 +6,6 @@ description: This article explains how to set up withholding tax.
 author: twheeloc
 ms.date: 05/23/2023  
 ms.topic: how-to  
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

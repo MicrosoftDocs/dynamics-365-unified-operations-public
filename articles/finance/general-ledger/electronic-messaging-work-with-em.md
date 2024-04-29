@@ -4,8 +4,6 @@ description: This article provides information about how to work with the Electr
 author: AdamTrukawka
 ms.date: 07/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global

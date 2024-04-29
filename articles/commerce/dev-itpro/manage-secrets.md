@@ -4,8 +4,6 @@ description: This article explains how to manage secrets when you're using an ex
 author: ShalabhjainMSFT
 ms.date: 04/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

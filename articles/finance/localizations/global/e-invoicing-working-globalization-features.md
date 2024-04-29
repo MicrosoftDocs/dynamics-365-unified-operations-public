@@ -1,15 +1,13 @@
 ---
-title: Globalization feature components
-description: This article provides an overview of Globalization feature components.
-author: gionoder
+title: Globalization feature components (RCS)
+description: This article provides an overview of Globalization feature components (RCS).
+author: ilikond
 ms.date: 02/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
@@ -17,7 +15,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Globalization feature components
+# Globalization feature components (RCS)
 
 [!include [banner](../../includes/banner.md)]
 

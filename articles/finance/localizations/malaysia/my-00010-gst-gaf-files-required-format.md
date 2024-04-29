@@ -6,8 +6,6 @@ description: This procedure walks you through generating the Malaysia GAF file.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

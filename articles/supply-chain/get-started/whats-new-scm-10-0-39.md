@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 01/29/2024
+ms.date: 04/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom:
@@ -31,16 +31,17 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default |
-| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [Enable prospects in prospect-to-cash with dual-write](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enable-prospects-prospect-to-cash-dual-write) | [Work with prospects in prospect-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/prospects-in-prospect-to-cash-use.md) | Feature management:<br>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* |
+| Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | [Inventory Visibility adjustment offset](../inventory/inventory-visibility-adjustment-offset.md) | Enabled by default |
 | Planning | Item substitution for formulas in Planning Optimization | [Item substitution for formulas](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution (Plan group) support for Planning Optimization* |
 | Warehouse management | [Optimize the customer returns process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-customer-returns-process) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default |
 | Warehouse management | Username/password and single-sign-on authentication for mobile devices | [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md) | Enabled by default |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
-Some of these features aren't visible on your system until you turn them on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) using the name listed here for the *Feature management name* (additional configuration may also be needed). Features that don't show a feature management name are visible by default as of this version of Supply Chain Management, but typically add a new option that you need to select to use the new functionality.
+Some of these features aren't visible on your system until you turn them on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) using the name listed here for the *Feature management name* (additional configuration may also be needed). Features that don't show a feature management name are visible by default as of this version of Supply Chain Management, but typically add a new configuration option that you need to set to use the new functionality.
 
 | Feature enhancement | Description |
 |---|---|
@@ -59,7 +60,6 @@ Some of these features aren't visible on your system until you turn them on in [
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Sort on requested date in Net requirements form*</p>| Adds an option that lets you sort by using the **Requested date** field instead of the **Requirement date** field on the **Net requirements** page. |
 |<p>**Module:** Product information management</p><p>**Feature management name:** *Allow hazardous material divisions with same division codes in different material classes*</p>| Lets users create hazardous material divisions that have the same division code in different hazardous material classes. The feature creates a new data table to enable divisions that have the same code and moves data to this new table. |
 |<p>**Module:** Production control</p><p>**Feature management name:** *Default order settings for Change production order BOM item*</p>| Updates the *Change BOM item* feature so that your default order settings are used to set the from-item and to-item. |
-|<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales*</p>| Enables the integration of prospects between Dynamics 365 Sales and Supply Chain Management over dual-write. Prospects in Supply Chain Management integrate with account type *Prospect* in Dynamics 365 Sales. The lifecycle of a prospect from creation to converting into a customer is supported from both Dynamics 365 Sales and Supply Chain Management and is seamlessly integrated into the quotation winning process. With this feature, it's possible to use the prospect on a quotation in Supply Chain Management and as a potential customer in Dynamics 365 Sales. This feature adds a parameter to the **Accounts receivable parameters** page, which lets you turn the functionality on or off.<br><br>**Important**: This feature is a component of the upcoming [Enable prospects in prospect-to-cash with dual-write](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enable-prospects-prospect-to-cash-dual-write) functionality. Some of the components required to fully support this functionality won't be available until a future release of dual-write becomes available. Until then, this feature will have no effect, so we recommend against enabling it for now. |
 |<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Faster vendor search*</p>| Improves the performance of the **Vendor search** dialog box by implementing an improved data model. |
 |<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Replace alternative item defaults on sales lines*</p>| Adds a new parameter, **Replace alternative item defaults on sales lines**, to the **General** tab of the **Accounts Receivable parameters** page. When this parameter is set to *Yes*, and alternative items must always be used, all item-dependent information (such as financial dimensions and units of measure) from the alternative item replace the original item information on the sales order line. When the parameter is set to *No*, all the information from the original item remains on the sales order line, and no replacements are made. When you first enable this feature, the parameter is set to *Yes* by default. Therefore, the system behaves just as it does without this feature. |
 |<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Sales referenced data export policy*</p>| Adds the following parameters to the **General** tab of the **Accounts receivable parameters** page: **Skip referenced data during change tracking** and **Skip sales quotation referenced data during change tracking**. When these two parameters are enabled, changes to referenced data doesn't cause sales orders, sales order lines, sales quotations, and/or sales quotation lines to be included in the next incremental export. By turning off these parameters, you can help incremental exports run more quickly. |
@@ -89,11 +89,11 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.39 includes platform updates
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.39, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=886261).
 
-### Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan
+### Dynamics 365: 2024 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan](/dynamics365/release-plan/2023wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2024 release wave 1 plan](/dynamics365/release-plan/2024wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

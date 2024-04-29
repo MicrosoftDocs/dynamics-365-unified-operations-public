@@ -4,8 +4,6 @@ description: This article explains how to create a format configuration for Elec
 author: kfend
 ms.date: 08/02/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global

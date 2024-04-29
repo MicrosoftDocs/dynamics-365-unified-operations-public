@@ -4,11 +4,8 @@
 title: Differences between financial tags and financial dimensions
 description: This article describes the differences between financal tags and financial dimensions.
 author: kweekley
-ms.date: 01/23/2023
+ms.date: 04/29/2024
 ms.topic: article
-ems.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail

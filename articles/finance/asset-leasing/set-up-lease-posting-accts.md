@@ -6,9 +6,6 @@ description: This article lists the posting accounts that are required for Asset
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetLeasePostingAccounts

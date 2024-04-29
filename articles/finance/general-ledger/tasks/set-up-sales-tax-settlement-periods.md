@@ -6,8 +6,6 @@ description: This article explains how to set up sales tax settlement periods in
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

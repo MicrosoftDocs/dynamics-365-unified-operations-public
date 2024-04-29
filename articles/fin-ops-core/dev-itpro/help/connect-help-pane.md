@@ -1,15 +1,13 @@
 ---
 title: Connect a custom Help website to the Help pane
-description: You can extend the in-product Help pane with custom Help content.
+description: Learn about how you can extend the in-product Help pane with custom Help content, including an outline on how to customize language fallback.
 author: brentholtorf
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: bholtorf
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: josaw
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---
