@@ -9,7 +9,7 @@ ms.topic: article
 # optional metadata
 ms.custom: 
   - bap-template
-  - custom
+  - evergreen
 
 ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 audience: Application User
