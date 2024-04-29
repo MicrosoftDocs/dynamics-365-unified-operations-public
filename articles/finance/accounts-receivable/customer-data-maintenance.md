@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 
 On a customer record, the **Rename** function is used to rename the unique record of a customer. This updates all references from an old name to the new name entered. This action can fail for many reasons related to table structure and the amount of data. 
 
-The **Customer account rename data maintenance** feature allows out of sync records (the ones with the old account) to continue processing so all records are updated to the new name. 
+The **Customer account rename data maintenance** feature continues processing the out of sync records (the ones with the old account) so all records are updated to the new name. 
 
 ## Customer account rename data maintenance
 
