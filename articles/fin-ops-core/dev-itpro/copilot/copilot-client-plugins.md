@@ -1,6 +1,6 @@
 ---
 title: Create client plugins for Copilot in finance and operations apps
-description: This article provides guidance on creating client plugins to extend the capabilities of Copilot in finance and operations
+description: This article provides guidance on creating client plugins to extend the capabilities of Copilot in finance and operations.
 author: jaredha
 ms.author: jaredha
 ms.reviewer: johnmichalak
@@ -23,7 +23,7 @@ This topic contains details on the components and options of client plugins. For
 
 > [!IMPORTANT]
 > - Developing client plugins is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). See [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app) for information on creating a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview).
-> - The ability to extend Copilot in finance and operations with client plugins is available on finance and operations version 10.0.40 and higher. See [Service update availability](../get-started/public-preview-releases.md) for more information on release schedules for finance and operations apps.
+> - The ability to extend Copilot in finance and operations with client plugins is available on finance and operations version 10.0.40 and higher. For more information on release schedules for finance and operations apps, see [Service update availability](../get-started/public-preview-releases.md).
 > - This is a preview feature. It is subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ## Architecture of client plugins
@@ -37,7 +37,7 @@ For more information on the plugin architecture and execution, see [Architecture
 In X++ you must create a class that is called and can execute code when Copilot Studio invokes the method. The new class must be a subclass extending the `SysCopilotChatAction` class.
 
 ### Data contract
-The method must be defined as a data contract. This enables passing complex data types as input and output parameters of the method, so serialization and deserialization of the parameters isn't required for the communication Copilot Studio. Define the method as a data contract by decorating it with the `DataContract` attribute. See [Using Data Contracts in X++](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x) for more information in implementing data contracts in X++.
+The method must be defined as a data contract. This enables passing complex data types as input and output parameters of the method, so serialization and deserialization of the parameters isn't required for the communication Copilot Studio. Define the method as a data contract by decorating it with the `DataContract` attribute. For more information in implementing data contracts in X++, see [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
 
 ### Provide the action definition
 Decorate the class with the `SysCopilotChatActionDefinition` function to define the action.
@@ -45,11 +45,11 @@ Decorate the class with the `SysCopilotChatActionDefinition` function to define 
 #### Parameters
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| IdentifierName | string | An identifier for the plugin action. This is the identifier defined for the event that is sent from Copilot Studio to finance and operations apps, the event returning output parameters from finance and operations apps to Copilot Studio. Use the [identifierStr](../dev-ref/xpp-compile-time-functions#identifierstr) compile-time function to convert the identifier to a string. | 
+| IdentifierName | string | An identifier for the plugin action. This is the identifier defined for the event that is sent from Copilot Studio to finance and operations apps, the event returning output parameters from finance and operations apps to Copilot Studio. Use the [identifierStr](../dev-ref/xpp-compile-time-functions.md#identifierstr) compile-time function to convert the identifier to a string. | 
 | Name | string | A descriptive name provided for the action. | 
-| Description | string | A natural language description of the action. This field is not currently used by Copilot but should be provided in the definition. In a future release this property will be used to enhance intelligent orchestration of plugins by linking the action to user intent. | 
+| Description | string | A natural language description of the action. This field isn't currently used by Copilot but should be provided in the definition. In a future release this property will be used to enhance intelligent orchestration of plugins by linking the action to user intent. | 
 | MenuItemName | string | The menu item associated with the action.<br><br> User permissions to invoke the client action are determined by defining permissions to the menu item selected in this parameter. You can use an existing menu item or create a new one to associate with the action. |
-| MenuItemType | securingMenuItemType | The [MenuItemType](https://learn.microsoft.com/dotnet/api/dynamics.ax.application.menuitemtype) value for the menu item defined in the MenuItemName parameter. |
+| MenuItemType | securingMenuItemType | The [MenuItemType](/dotnet/api/dynamics.ax.application.menuitemtype) value for the menu item defined in the MenuItemName parameter. |
 
 #### Example
 
@@ -65,12 +65,12 @@ Decorate the class with the `SysCopilotChatActionDefinition` function to define 
 The action type is a mechanism for controlling the availability of the action to Copilot. This allows you to define the appropriate context in which the action should be available to be performed by the user with Copilot.
 
 #### Global actions
-Global actions have no specific application context and are available for the user to perform on any form in the application, any time the Copilot chat panel is open. Define a client action as global by decorating the method with the `SysCopilotChatGlobalAction` attribute.
+Global actions have no specific application context and are available for the user to perform on any form in the application, anytime the Copilot chat panel is open. Define a client action as global by decorating the method with the `SysCopilotChatGlobalAction` attribute.
 
 #### Form actions
 Form actions are only applicable in the context of a specific form. For example, the action may invoke a form action like approving an invoice record or performing a calculation on data that is available when on a specific form. 
 
-Decorate the method with one or more `ExportMetadata` attributes to define the form or forms on which the action is available. The action is then only considered in the Copilot plugin orchestration if the user is on one of the forms defined for the action. The action will otherwise be ignored by the orchestration.
+Decorate the method with one or more `ExportMetadata` attributes to define the form or forms on which the action is available. The action is then only considered in the Copilot plugin orchestration if the user is on one of the forms defined for the action. The action is otherwise be ignored by the orchestration.
 
 The following example defines the action as a form action available on the `Batch` and `BatchGroup` forms.
 
@@ -81,7 +81,7 @@ The following example defines the action as a form action available on the `Batc
 ```
 
 #### Runtime actions
-Runtime actions are available at any point the developer defines they are available in code by adding the action to, or removing the action from, a list of available actions. 
+Runtime actions are available at any point the developer defines they're available in code by adding the action to, or removing the action from, a list of available actions. 
 
 Use `SysCopilotChatAction::addToCopilotRuntimeActions` to add the client action to the list of available actions.
 
@@ -104,10 +104,10 @@ Use the `SysCopilotChatActionInputParameter` function to define the properties o
 
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| description | string | A natural language description of the parameter. This is not currently used by Copilot, but should be provided in the definition. In a future release it will be used to enhance intelligent orchestration of plugins by linking the parameter to the user's natural language prompt. |
+| description | string | A natural language description of the parameter. This isn't currently used by Copilot, but should be provided in the definition. In a future release it will be used to enhance intelligent orchestration of plugins by linking the parameter to the user's natural language prompt. |
 | isRequired | boolean | Determines whether a value must be defined for the parameter |
 
-You must also define an accessor method for each parameter to get and set the variables. The following example shows defining a `menuItemName` input parameter for a navigation action that will navigate the client to the form defined for this parameter.
+You must also define an accessor method for each parameter to get and set the variables. The following example shows defining a `menuItemName` input parameter for a navigation action that navigates the client to the form defined for this parameter.
 
 ```x++
     [DataMember('menuItemName'),
@@ -126,9 +126,9 @@ Use the `SysCopilotChatActionOutputParameter` function to define the properties 
 
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| description | string | A natural language description of the parameter. This is not currently used by Copilot but should be provided in the definition. In a future release it will be used to enhance intelligent orchestration of plugins by linking the parameter to the user's natural language prompt. |
+| description | string | A natural language description of the parameter. This isn't currently used by Copilot but should be provided in the definition. In a future release it will be used to enhance intelligent orchestration of plugins by linking the parameter to the user's natural language prompt. |
 
-You must define an accessor method for each output parameter. The following example shows defining a `navResponse` output parameter for a client action, which will the action response sent back to Copilot and can be displayed to the user in the chat session.
+You must define an accessor method for each output parameter. The following example shows defining a `navResponse` output parameter for a client action, which is the action response sent back to Copilot and can be displayed to the user in the chat session.
 
 ```x++
     [DataMember('navResponse'),
@@ -141,7 +141,7 @@ You must define an accessor method for each output parameter. The following exam
 ```
 
 ### Defining the execution of the client action
-Create an instance of the `SysCopilotChatActionDefinitionAttribute` class to define business logic that should execute for action and set any output parameter values. When calling `executeAction`, the output parameters will be reserialized and returned in the event payload to Copilot Studio.
+Create an instance of the `SysCopilotChatActionDefinitionAttribute` class to define business logic that should execute for action and set any output parameter values. When you call `executeAction`, the output parameters is reserialized and returned in the event payload to Copilot Studio.
 
 For example, if your Copilot action is to navigate to a form in the client, you can use the following to perform the navigation and define a message to be set as the output parameter to be sent to Copilot.
 
@@ -172,6 +172,6 @@ When the user enters a prompt in the Copilot chat panel with the intent of invok
 In your topic or plugin in Copilot Studio, create an **Event activity** node that defines the event to send to X++ and the event payload to be included as input parameters for the client action. The **Name** property for the event activity is the `IdentifierName` parameter defined in the `SysCopilotChatActionDefinition` attribute of your X++ class. The **Value** property of the event activity is a JSON string defining the values for the input parameters to be sent to the X++ class.
 
 ### Receiving output parameters of the client action
-Your client action may have output parameters that you want to return as a natural language response to the user in Copilot or to continue with additional action. When the client action is executed in X++ the output parameters are sent as an event to Copilot Studio.
+Your client action may have output parameters that you want to return as a natural language response to the user in Copilot or to continue with another action. When the client action is executed in X++, the output parameters are sent as an event to Copilot Studio.
 
-In Copilot Studio, you will need a separate topic created to receive the response from the X++ class. Create a topic with an **Event received** trigger. The **Event name** property of the trigger must be the value of the `IdentifierName` parameter defined in the `SysCopilotChatActionDefinition` attribute of your X++ class. The **System.Activity.Text** variable is set to the event payload as a JSON string. You can add a **Parse value** node to the topic to parse the **System.Activity.Text** value for the values of the client action output parameters.
+In Copilot Studio, you need a separate topic created to receive the response from the X++ class. Create a topic with an **Event received** trigger. The **Event name** property of the trigger must be the value of the `IdentifierName` parameter defined in the `SysCopilotChatActionDefinition` attribute of your X++ class. The **System.Activity.Text** variable is set to the event payload as a JSON string. You can add a **Parse value** node to the topic to parse the **System.Activity.Text** value for the values of the client action output parameters.
