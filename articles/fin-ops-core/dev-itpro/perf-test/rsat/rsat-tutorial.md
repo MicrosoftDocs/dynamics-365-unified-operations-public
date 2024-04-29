@@ -1,13 +1,13 @@
 ---
 title: Regression suite automation tool tutorial
-description: This article shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting.
+description: Learn about how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting.
 author: FrankDahl
-ms.date: 11/28/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 11/28/2023
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ---
