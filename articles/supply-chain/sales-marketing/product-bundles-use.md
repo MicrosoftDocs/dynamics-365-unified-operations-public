@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: Customer
 ms.topic: how-to
-ms.date: 04/24/2023
+ms.date: 04/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -60,15 +60,6 @@ However, because the printed confirmation report is the external-facing document
 
 [<img src="media/product-bundle-03.png" alt="Printed confirmation report that shows only the parent item." title="Printed confirmation report that shows only the parent item" width="720" />](media/product-bundle-03.png#lightbox)
 
-After the sales order is confirmed, the parent item is still shown on the sales order, but its status is changed to *Canceled*. An additional status *Bundle line status*  represents the overall status accross the components part of the product bundle. Use this status to identify the overall  status of the product bundle and its components in the sales order lines. An icon is introduced in the type columm. Use this icon to gain easy insight into which of the orderlines is a product bundle and which is a component. Additionally, the net amount is tracked in the **Bundle net amount** field.
-
-The Sales confirmation journal lines contain product bundle related information. This information is presented in the columm *bundle parent*. For each component journal line part of a bundle, the *bundle parent* columm field will have the lot ID of the bundle and the name. Using the *Group by* option on the *bundle parent* columm gives an easy visual on which components belong to which bundle. 
-
-The product bundle related information in the journal lines ensures that it is possible to reprint the sales confirmation correctly once the sales order is deleted.  
-
-> [!NOTE]
-> Bundle line status and bundle icon are introduced as part of *Product bundles in journals* feature. Sales confirmation journal line bundle related information is introduced as part of *Product bundles in journals* feature.
-
 ### Allocate prices to component items
 
 The sum of the component items must equal the **Bundle net amount** value of the parent item, because that value is the amount that's presented to the customer when creating the invoice. To ensure that the invoice matches the amounts that are posted to the general ledger, edits to the component items are limited. For example, the site and warehouse can't be changed, because those changes might trigger a price change based on a trade agreement.
@@ -93,13 +84,6 @@ Each product bundle must be shipped and invoiced as a full bundle. For example, 
 
 A partial amount can be shipped and invoiced only if the quantity is reduced for all components of the bundle. For example, a quantity of *5* of the *Laptop bundle* item is entered on a sales order. After the sales order is confirmed, the three component items are shown on the sales order, and the quantity of each is *5*. By default, the quantity of each component is set to *5* during shipping and invoicing. However, you can adjust the quantity to *3* for all three component items. In this case, three full product bundles will be shipped and invoiced. The remaining two product bundle items (a quantity of *2* of each of the three component items) can be shipped and invoiced later.
 
-The Sales packing slip journal lines contain product bundle related information. This information is presented in the columm *bundle parent*. For each component journal line part of a bundle, the *bundle parent* columm field will have the lot ID of the bundle and the name. Using the *Group by* option on the *bundle parent* columm gives an easy visual on which components belong to which bundle. 
-
-The product bundle related information in the journal lines ensures that it is possible to reprint the sales packing slip correctly once the sales order is deleted.  
-
-> [!NOTE]
-> Sales packing slip bundle related information is introduced as part of *Product bundles in journals* feature.
-
 ### Invoice the sales order
 
 The final step is to invoice the sales order. As for the sales order, the invoice dialog box shows the component items, whereas the printed invoice shows only the parent item.
@@ -108,30 +92,49 @@ The invoice journal that's created after posting occurs doesn't include the pare
 
 The invoice journal must not include the parent item from the product bundle, because any processes that are performed after the invoice is posted are based on that invoice journal. For example, if you create a credit note from the **Sell** tab of the Action Pane, the credit note that's created will include the component items but not the parent item.
 
-The Sales invoice journal lines contain product bundle related information. This information is presented in the columm *bundle parent*. For each component journal line part of a bundle, the *bundle parent* columm field will have the lot ID of the bundle and the name. Using the *Group by* option on the *bundle parent* columm gives an easy visual on which components belong to which bundle. 
+## Product bundles in journals (preview)
 
-The product bundle related information in the journal lines ensures that it is possible to reprint the sales invoice correctly once the sales order is deleted.  
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 
-> [!NOTE]
-> Sales invoice bundle related information is introduced as part of *Product bundles in journals* feature.
+The *Product bundles in journals* feature extends the *Product bundle* feature. It enables the system to preserve detailed product-bundle information in its database, which means that you'll be able to reprint original sales order confirmations and invoices even after the related sales order has been deleted or archived and purged. You'll also be better able to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, it's also possible to exchange order confirmations and invoices that include product bundles electronically.
 
-### Entity support for exporting sales confirmation and sales invoice with bundle and component line information
-The following data entities exist in support of the related bundle information in the journal lines for sales confirmation and sales invoice. Using these entities will allow you to send sales order confirmations and sales invoices including product bundles lines to you customers. 
+This section describes the changes introduced by the *Product bundles in journals* feature, which build on those features already described in this article.
 
-#### Sales confirmation
-*Sales order confirmation bundle parent lines*: This entity includes both root and intermediate bundle parent lines. Apply a filter on the *journal line type* as criteria for which lines to include. Select *bundle parent* to include the bundle parent only. 
-*Sales order confirmation lines including bundle component*: This entity includes standard sales order conformation transactions and bundle components If available.​ Apply a filter on the *journal line type* as criteria for which lines to include. Select *standard* to exclude any components. 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
-With this setup, the data exported will be similar to the sales confirmation printed. 
+### Changes in sales confirmation journals
 
-#### Sales invoice
-*Sales invoice bundle parent lines*: This entity includes both root and intermediate bundle parent lines. Apply a filter on the *journal line type* as criteria for which lines to include. Select *bundle parent* to include the bundle parent only. 
-*Sales invoice lines including bundle component*: This entity includes standard invoice transactions and bundle components if available.​  Apply a filter on the *journal line type* as criteria for which lines to include. Select *standard* to exclude any components. 
+After a sales order is confirmed, the parent item is still shown on the sales order, but its status is changed to *Canceled*. An additional status, **Bundle line status**, represents the overall status across the components part of the product bundle. Use this status to identify the overall status of the product bundle and its components in the sales order lines. An icon in the **Type** column lets you know which of the order lines is a product bundle and which is a component. The net amount is tracked in the **Bundle net amount** field.
 
-With this setup, the data exported will be similar to the sales invoice printed. 
+Sales confirmation journal lines now contain information related to product bundles. This information is presented in the **Bundle parent** column. For each component journal line that is part of a bundle, the **Bundle parent** column shows the lot ID and name of the bundle. Use the **Group by** option on the **Bundle parent** column to see which components belong to which bundle.
 
-> [!NOTE]
-> These entities are  introduced as part of *Product bundles in journals* feature.
+Product bundle information in the journal lines makes it possible to reprint sales confirmations correctly even after the sales order is deleted.  
+
+### Changes in packing slip journals
+
+Sales packing slip journal lines now contain information related to product bundles. This information is presented in the **Bundle parent** column. For each component journal line part of a bundle, the **Bundle parent** column field shows the lot ID and name of the bundle. Use the **Group by** option on the **Bundle parent** column to see which components belong to which bundle.
+
+Product bundle information in the journal lines makes it possible to reprint sales packing slips correctly even after the sales order is deleted.  
+
+### Changes in sales invoice journals
+
+Sales invoice journal lines now contain information related to product bundles. This information is presented in the **Bundle parent** column. For each component journal line part of a bundle, the **Bundle parent** column field shows the lot ID and name of the bundle. Use the **Group by** option on the **Bundle parent** column to see which components belong to which bundle.
+
+Product bundle information in the journal lines makes it possible to reprint sales invoices correctly even after the sales order is deleted.  
+
+### Entity support for exporting sales confirmations and invoiced with bundle information
+
+The following data entities support bundle information in journal lines for sales confirmations and sales invoices. These entities allow you to send sales order confirmations and sales invoices that include product bundles lines to your customers.
+
+- **Sales order confirmation bundle parent lines** – Includes both root and intermediate bundle parent lines. To set criteria for which lines to include, apply a filter on the *journal line type*. Select *bundle parent* to include the bundle parent only.
+
+- **Sales order confirmation lines including bundle component** – Includes standard sales order conformation transactions and bundle components, if available.​ To set criteria for which lines to include, apply a filter on the *journal line type*. Select *standard* to exclude any components.
+
+- **Sales invoice bundle parent lines** – Includes both root and intermediate bundle parent lines. To set criteria for which lines to include, apply a filter on the *journal line type*. Select *bundle parent* to include the bundle parent only.
+
+- **Sales invoice lines including bundle component** – Includes standard invoice transactions and bundle components, if available.​ To set criteria for which lines to include, apply a filter on the *journal line type*. Select *standard* to exclude any components.
+
+The data exported through these entities is similar to that printed on sales confirmations and sales invoices.
 
 ## Important limitations
 
