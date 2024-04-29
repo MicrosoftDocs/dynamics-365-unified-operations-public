@@ -28,8 +28,8 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Copilot in finance and operations | Extend Copilot with client plugins | Developers can extend Copilot in finance and operations with client actions, based in application logic, invoked in natural language from the Copilot chat panel. See [Create client plugins for Copilot in finance and operations apps](../../dev-itpro/copilot/copilot-client-plugins.md) for more information. | Default |
-| Copilot in finance and operations | Extend Copilot with record context | The context of the record currently viewed by the user in the application is available in Copilot to create contextual plugins. See [Using application context with Copilot](../../dev-itpro/copilot/copilot-application-context.md) for more information. | Default |
+| Copilot in finance and operations | Extend Copilot with client plugins | Developers can extend Copilot in finance and operations with client actions, based in application logic, invoked in natural language from the Copilot chat panel. For more information, see [Create client plugins for Copilot in finance and operations apps](../../dev-itpro/copilot/copilot-client-plugins.md). | Default |
+| Copilot in finance and operations | Extend Copilot with record context | The context of the record currently viewed by the user in the application is available in Copilot to create contextual plugins. For more information, see [Using application context with Copilot](../../dev-itpro/copilot/copilot-application-context.md). | Default |
 
 ## Feature enhancements included in this release
 
