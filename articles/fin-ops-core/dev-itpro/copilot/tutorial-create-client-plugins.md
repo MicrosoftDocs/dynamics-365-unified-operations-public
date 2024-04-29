@@ -28,7 +28,7 @@ Here's an overview of the steps in this tutorial:
 
 ### Prerequisites
 This tutorial has the following prerequisites:
-1. You must have a unified developer environment. Developing client plugins is available only in the [unified developer experience](https://learn.microsoft.com/power-platform/developer/unified-experience/finance-operations-dev-overview). For information on creating a unified developer environment from the [unified admin experience for finance and operations apps](https://learn.microsoft.com/power-platform/admin/unified-experience/finance-operations-apps-overview), see [Tutorial: Install the Finance and Operations Provisioning App](https://learn.microsoft.com/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
+1. You must have a unified developer environment. Developing client plugins is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). For information on creating a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview), see [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
 2. You must have version 10.0.40 or higher of finance and operations apps. for more information on release schedules for finance and operations apps, see [Service update availability](../get-started/public-preview-releases.md).
 3. Copilot in finance and operations apps must be enabled in your environment. For instructions, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
@@ -93,7 +93,7 @@ In your unified developer environment, create an X++ class that defines the navi
 4. Save and deploy the code to your environment.
 
 ## Step 2: Create a topic to invoke the action
-For this example you create two topics in the **Copilot in finance and operations** chatbot in  Copilot Studio. The first topic initiates the plugin when the user enters a prompt in Copilot indicating intent to navigate to a form. When the topic is triggered, it determines the input parameters for the action and send them as an event to X++ to call the action.
+For this example you create two topics in the **Copilot in finance and operations** chatbot in  Copilot Studio. The first topic initiates the plugin when the user enters a prompt in Copilot indicating intent to navigate to a form. When the topic is triggered, it determines the input parameters for the action and sends them as an event to X++ to call the action.
 
 1. Open the **Copilot in finance and operations** chatbot in Copilot Studio.
 2. Create a new topic named "CustomClientNavigation" with the following trigger phrases:
@@ -118,7 +118,7 @@ For this example you create two topics in the **Copilot in finance and operation
 The second topic receives the output parameters returned from the X++ class, and returns the response to the user in the Copilot chat panel.
 
 1. In the **Copilot in finance and operations** chatbot, create a new topic.
-  - Set the trigger type to **Event received**. For more information, see [Changing the trigger for a topic](https://learn.microsoft.com/microsoft-copilot-studio/authoring-triggers#changing-the-trigger-for-a-topic).
+  - Set the trigger type to **Event received**. For more information, see [Changing the trigger for a topic](/microsoft-copilot-studio/authoring-triggers#changing-the-trigger-for-a-topic).
   - In the **On Event Activity properties** pane, set the **Event name** to "MS.ServerForm.CopilotExample.ClientNavigate".
 3. Create a **Parse value** node to parse the JSON string from the event payload.
     - **Parse value**: `System.Activity.Text`
