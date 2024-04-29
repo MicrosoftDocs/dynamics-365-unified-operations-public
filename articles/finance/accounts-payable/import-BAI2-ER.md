@@ -4,7 +4,7 @@ description: Learn about how to use Electronic reporting to set up the advanced 
 author: twheeloc
 ms.author: shpandey
 ms.topic: article
-ms.date: 03/30/2022
+ms.date: 04/29/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

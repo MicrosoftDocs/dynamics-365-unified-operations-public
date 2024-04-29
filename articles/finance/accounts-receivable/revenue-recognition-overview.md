@@ -4,7 +4,7 @@ description: Learn about the Revenue recognition feature, which provides a flexi
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/29/2022
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global 
