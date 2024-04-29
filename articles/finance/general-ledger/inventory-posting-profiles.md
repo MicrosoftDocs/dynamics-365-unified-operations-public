@@ -45,7 +45,7 @@ Each inventory subledger transaction contains:
  - Warehouse 
  - Location 
 
-Inventory subledger transactions create two entries in the general ledger through the physical posting and the financial posting. For more information, go to [Physical and financial updates](/supply-chain/cost-management/physical-financial-updates.md).
+Inventory subledger transactions create two entries in the general ledger through the physical posting and the financial posting. For more information, go to [Physical and financial updates](../../supply-chain/cost-management/physical-financial-updates.md).
 The following example is a purchase order with three lines. For this example, assume that the entire order is for a single site and warehouse. Each purchase order line has a single related InventTrans record—also known as an inventory transaction —and each line is for a quantity of 10. The following diagram shows the relationship of one purchase order header to three purchase order lines, each with one InventTrans record.
 
 ![Relationship diagram for a purchase order with three lines each with one InventTrans record.](./media/InventTransRelationship.PNG)
@@ -84,11 +84,11 @@ The **Inventory transactions** page contains the following fields.
 the packing slip posting for a sales order or of the product receipt posting for a purchase order.                             |
 | Financial date   | The date the inventory transaction is closed and the cost is recorded in the general ledger. For example, the posting date on the invoice 
 generation for a sales or purchase order. Updates to the reference document are not allowed after the financial date is populated. |
-| Reference        | Indicates the source of the transaction and the type of document that's displayed in the **Number** field. For example, sales order, purchase order, or transfer order receipt.                                                 |
-| Number           | Indicates the reference ID for a transaction. For example, if the **Reference** field indicates sales order, the **Number** field indicates the sales order number.                                                       |
+| Reference        | Indicates the source of the transaction and the type of document that's displayed in the **Number** field. For example, sales order, purchase order, or transfer order receipt.           |
+| Number           | Indicates the reference ID for a transaction. For example, if the **Reference** field indicates sales order, the **Number** field indicates the sales order number.                |
 | Receipt (status) | For inventory transactions that are receipts, this field indicates the status of the receipt. For example, a purchase order is a receipt, and the status might be **Ordered** or **Purchased**.                                                            |
-| Issue (status)   | For inventory transactions that are issues, this field indicates the status of the issue. For example, a sales order is an issue, and the status might be **On order** or **Sold**.                         |
-| Quantity         | The quantity of the inventory transaction. Positive numbers are used for receipts to inventory while negative numbers are used for issues from inventory.                                                                                                                          |
+| Issue (status)   | For inventory transactions that are issues, this field indicates the status of the issue. For example, a sales order is an issue, and the status might be **On order** or **Sold**.        |
+| Quantity         | The quantity of the inventory transaction. Positive numbers are used for receipts to inventory while negative numbers are used for issues from inventory.                          |
 | Unit             | The unit of measure that the quantity is expressed in.                                                                                   |
 | CW quantity      | The catch weight quantity for the transaction. For more information, go to [About catch weight items](/dynamicsax-2012/appuser-itpro/about-catch-weight-items.).       |
 | CW unit          | The catch weight unit of measure the catch weight quantity is expressed in.                                                         |
@@ -107,7 +107,7 @@ The following table describes **Receipt** status.
 | Ordered            | The initial status of any inventory transaction that represents a receipt. This includes purchase orders with a positive quantity, production orders, or sales order returns with a negative quantity.                                                   |
 | Registered         | This status is used when a two-step receiving process is in place or when item arrival is used to indicate that product has arrived. It's used when batch or serial numbers are "allocated" or registered to the order. For more information about item arrival, go to [Arrival overview](/supply-chain/inventory/arrival-overview.md). |
 | Received           | This status is used when the transaction is physically updated. For a purchase order, this is when the product receipt is posted. For a sales order return, this is when the packing slip is posted.                                                                            |
-| Purchased          | This status is used when the transaction is financially updated. For a purchase order or sales order return, this is when the invoice is generated.                                                                                             |
+| Purchased          | This status is used when the transaction is financially updated. For a purchase order or sales order return, this is when the invoice is generated.                           |
 
 ### Issue status
 
