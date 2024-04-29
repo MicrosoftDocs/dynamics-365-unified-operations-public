@@ -4,8 +4,6 @@ description: This article explains how to set up officials in Microsoft Dynamics
 author: AdamTrukawka
 ms.date: 07/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

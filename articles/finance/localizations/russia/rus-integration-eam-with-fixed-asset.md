@@ -4,8 +4,6 @@ description: This article provides information about the integration of the Asse
 author: AdamTrukawka
 ms.date: 01/31/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

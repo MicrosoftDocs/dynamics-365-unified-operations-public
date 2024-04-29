@@ -6,9 +6,6 @@ description: For vendors who are liable to withholding tax, you can assign the d
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

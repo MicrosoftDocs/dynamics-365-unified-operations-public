@@ -4,8 +4,6 @@ description: This walkthrough was created using the demo company DEMF with count
 author: EricWangChen
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: United Kingdom

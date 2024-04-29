@@ -6,9 +6,6 @@ description: This article explains how in-memory, real-time aggregate models are
 author: MilindaV2
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

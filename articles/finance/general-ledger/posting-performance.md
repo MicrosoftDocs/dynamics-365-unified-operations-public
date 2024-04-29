@@ -6,9 +6,6 @@ description: The article suggests ways to troubleshoot performance issues when y
 author: Livbjerg
 ms.date: 02/24/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

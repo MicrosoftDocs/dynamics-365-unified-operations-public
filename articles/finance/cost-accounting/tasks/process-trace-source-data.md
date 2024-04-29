@@ -6,8 +6,6 @@ description: All data processing is run by jobs.
 author: twheeloc
 ms.date: 03/27/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

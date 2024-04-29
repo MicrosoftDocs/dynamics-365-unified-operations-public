@@ -6,9 +6,6 @@ description: This article provides answers to questions that you might have when
 author: angelad116
 ms.date: 03/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerCovParameters

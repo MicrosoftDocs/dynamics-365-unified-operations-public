@@ -4,8 +4,6 @@ description: For Japan, the depreciation of the asset retirement obligations (AR
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Japan

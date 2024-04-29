@@ -4,8 +4,6 @@ description: You can create a purchase request for quotation (RFQ), and when you
 author: AdamTrukawka
 ms.date: 06/28/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

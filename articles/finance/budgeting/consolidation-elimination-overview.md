@@ -6,9 +6,6 @@ description: This article provides general information about the consolidation a
 author: panolte
 ms.date: 11/11/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerConsolidate

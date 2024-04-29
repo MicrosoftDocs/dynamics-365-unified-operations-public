@@ -1,13 +1,13 @@
 ---
 title: Dual-write FAQ
-description: This article answers frequently asked questions about dual-write.
-author: jaredha
-ms.date: 04/01/2024
+description: Read answers to frequently asked questions about dual-write including questions about dual-write setup, administration, management, and mapping concepts between apps.
+author: sericks007
+ms.author: ramasri
 ms.topic: article
+ms.date: 05/20/2022
+ms.reviewer: sericks
 audience: Developer
-ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: jaredha
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
 ---

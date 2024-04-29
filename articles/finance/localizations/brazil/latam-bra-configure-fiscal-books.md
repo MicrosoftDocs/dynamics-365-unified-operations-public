@@ -6,9 +6,6 @@ description: This article explains how to configure fiscal books. Fiscal books h
 author:  v-gonode
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  FBTaxStatement_BR

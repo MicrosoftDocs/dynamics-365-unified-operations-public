@@ -4,8 +4,6 @@ description: This article provides information about the file upload control. Th
 author: jasongre
 ms.date: 07/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

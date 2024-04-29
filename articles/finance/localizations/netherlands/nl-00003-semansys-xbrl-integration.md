@@ -6,8 +6,6 @@ description: This procedure walks you through using Dutch functionality to expor
 author: mrolecki
 ms.date: 05/28/2020
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

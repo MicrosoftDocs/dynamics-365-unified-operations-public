@@ -6,9 +6,6 @@ description: This article explains the new performance enhancement for the accou
 author: RyanCCarlson2
 ms.date: 10/31/2022
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

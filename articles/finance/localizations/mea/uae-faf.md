@@ -6,9 +6,6 @@ description: This article explains how to set up the FTA Tax Audit File (FAF) in
 author: liza-golub
 ms.date: 06/07/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,8 +6,6 @@ description: This article explains how to create a new fixed asset record from t
 author: moaamer
 ms.date: 10/06/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

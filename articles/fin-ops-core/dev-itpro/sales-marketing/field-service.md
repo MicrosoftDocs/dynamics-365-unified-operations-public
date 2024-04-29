@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Integration with Microsoft Dynamics 365 Field Service overview
-description: This article provides an overview of the Integration with Microsoft Dynamics 365 Field Service. 
+description: Learn about the Integration with Microsoft Dynamics 365 Field Service, including an overview of system requirements.
 author: Henrikan
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
 ms.author: henrikan
-ms.dyn365.ops.version: July 2017 update 
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: kamaybac
+audience: IT Pro
+ms.search.region: global
+ms.dyn365.ops.version: July 2017 update
+ms.search.form: 
 ms.search.validFrom: 2017-07-8
-
 ---
 
 # Integration with Microsoft Dynamics 365 Field Service overview

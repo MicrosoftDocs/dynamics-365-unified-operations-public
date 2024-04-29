@@ -6,9 +6,6 @@ description: This article describes how to set up the integration between Fixed 
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: AssetParameters

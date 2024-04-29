@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Troubleshoot service authentication issues
-description: This article provides some tips for troubleshooting issues that involve service authentication.
+description: Access some tips for troubleshooting issues that involve service authentication, including reviewing event logs.
 author: pnghub
-ms.date: 06/20/2017
+ms.author: gned
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gned
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Troubleshoot service authentication issues

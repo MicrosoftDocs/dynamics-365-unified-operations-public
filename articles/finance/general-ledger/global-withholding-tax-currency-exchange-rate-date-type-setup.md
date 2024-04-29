@@ -6,9 +6,6 @@ description: This article explains how to enable the global setup of the withhol
 author: kailiang
 ms.date: 08/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

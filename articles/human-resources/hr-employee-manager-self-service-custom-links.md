@@ -6,9 +6,6 @@ description: This article describes how to create custom links in Manager self s
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -28,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Create custom links in Manager self service
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -4,8 +4,6 @@ description: This article explains how to set up the Data migration tool (DMT) s
 author: pnghub
 ms.date: 09/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

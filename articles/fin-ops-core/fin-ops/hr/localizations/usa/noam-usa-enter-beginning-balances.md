@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Enter payroll beginning balances
-description: The article describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes.
+description: Learn about the steps for entering beginning balances for earning codes, deductions, benefits, and taxes, including an overview on what to do in case of mistakes.
 author: twheeloc
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: PayrollEarningStatement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: anbichse
+ms.topic: article
+ms.date: 11/20/2020
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
+ms.search.form: PayrollEarningStatement
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ---
 
 # Enter payroll beginning balances

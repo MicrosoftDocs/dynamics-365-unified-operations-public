@@ -6,9 +6,6 @@ description: This article provides information about the Bank management workspa
 author: music727
 ms.date: 02/15/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:  BankTreasurerWorkspace

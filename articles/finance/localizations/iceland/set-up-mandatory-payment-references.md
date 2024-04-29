@@ -6,8 +6,6 @@ description: This article explains how to set up a mandatory payment reference f
 author: kfend
 ms.date: 08/01/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

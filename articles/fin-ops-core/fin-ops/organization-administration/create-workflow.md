@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Create workflows overview
-description: This article explains how to create a workflow.
+description: Learn about how to create a workflow, including outlines on opening the workflow editor and configuring the properties of a workflow.
 author: ChrisGarty
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: ["195583"]
-ms.collection: get-started
-ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: overview
+ms.date: 07/25/2019
+ms.custom: ["195583"]
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-08-30
+ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 ms.dyn365.ops.version: Platform update 2
-
+ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ---
 
 # Create workflows overview

@@ -6,9 +6,6 @@ description: This article provides information about Intrastat reporting for the
 author: mrolecki
 ms.date: 04/17/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: Intrastat

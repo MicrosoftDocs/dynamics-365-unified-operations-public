@@ -4,8 +4,6 @@ description: This article provides information about accounts payable debt tax r
 author: AdamTrukawka
 ms.date: 04/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia
