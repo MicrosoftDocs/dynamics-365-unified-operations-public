@@ -147,13 +147,6 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ![Report scrap dialog box.](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
 
-## Track component batch/serial numbers for finished products (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
-Workers and managers can use the production floor execution interface to register batch/serial numbers for material and components used in manufacturing processes and associate these to batch/serial numbers for the products that are being produced. This enables manufacturers to optimize their processes, enhance product quality, and respond quickly to any issues that arise.
-
 ## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components (preview)
 
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
@@ -165,13 +158,13 @@ Workers can use the production floor execution interface to register batch/seria
 
 Workers proceed as follows when registering tracked components:
 
-1. On starting a production job, the worker selects the **Tracked component** button to register the link between batch/serial number for the product and components.
+1. On starting a production job, the worker selects the **Tracked component** button to start registering batch/serial number for the product and its components.
 
     :::image type="content" source="media/tracked-components-pfe.png" alt-text="Register tracked components in the production floor execution interface." lightbox="media/tracked-components-pfe.png":::
 
-1. The interface asks worker to scan the batch/serial number for the product. This is the product that is being manufactured.
-1. The worker selects the component being added to the product and then scans the batch/serial number of that component.
-1. The worker continues working until all components are scanned.
+1. The interface asks the worker to scan the batch/serial number for the product. This is the product that is being manufactured.
+1. The worker selects a component being added to the product and then scans the batch/serial number of that component.
+1. The worker continues adding and scanning components until all of them are registered.
 1. The worker inspects the screen and can adjust the registrations as needed using the buttons at the bottom of the screen.
 1. The worker selects the **Next** button and proceeds to process the next item in the production order until all products are registered.
 

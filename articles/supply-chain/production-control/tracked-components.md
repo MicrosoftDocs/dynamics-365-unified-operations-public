@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: preview until further notice -->
 
 Workers and managers can register batch/serial numbers for material and components used in manufacturing processes and associate these with batch/serial numbers for the products that are produced. This enables manufacturers to optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can utilize the item tracing report to effectively track batch/serial numbers registered through the Tracked Components feature.
@@ -46,7 +46,7 @@ To register tracked components for the finished items for any production order, 
 
 1. Select the production order you want to register batch or serial numbers for.
 1. From the Action Pane, find the tab includes a button called **Track components** and select that button.
-1. The **Tracked components** page opens. When you open the page, the **Batch or serial number** field is automatically in focus, and the **Scan mode** is set to *Product* (which means you're about to enter a finished product batch or serial number).
+1. The **Tracked components** page opens. When you open the page, the **Serial or batch number** field is automatically in focus, and the **Scan mode** is set to *Product* (which means you're about to enter a finished product batch or serial number).
     - If you're using a scanner, scan the bar code of the first finished product you want to register.
     - If you're using a keyboard, enter the batch or serial number of the first product you want to register and then select **Submit**.
 
@@ -89,4 +89,4 @@ The **Components** section lists the components for the finished product selecte
 
 ## Additional resources
 
-- [How workers use the production floor execution interface](production-floor-execution-use.md)
+- [How workers use the production floor execution interface](production-floor-execution-use.md#tracked-components)
