@@ -4,7 +4,7 @@
 title: Inventory posting profiles
 description: This article provides an overview of inventory posting profiles.  
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.date: 04/29/2024
 ms.topic: overview
 # optional metadata
 
