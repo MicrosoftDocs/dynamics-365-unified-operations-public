@@ -147,7 +147,7 @@ This feature lets admins add a numpad control to the sign-in page for the produc
 
 To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Enable use of a numpad in the sign-in page* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-### Tracked components (preview)
+### <a name="tracked-components"></a>Tracked components (preview)
 
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
