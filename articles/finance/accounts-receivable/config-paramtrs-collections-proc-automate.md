@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Configure parameters for collection process automation
-description: This article describes the parameters that affect automated collection processes and provides guidance for setting them so that the automated process reflects your intentions and expectations.
+description: Learn about the parameters that affect automated collection processes and provides guidance for setting them to reflect your intentions and expectations.
 author: JodiChristiansen
-ms.date: 08/05/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form:  CustomerCollectionManagerWorkspace
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shpandey
-ms.search.validFrom: 2017-08-26 
+ms.topic: article
+ms.date: 08/05/2021
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2017-08-26
+ms.search.form:  CustomerCollectionManagerWorkspace
 ms.dyn365.ops.version: 10.0.13 
 ---
 

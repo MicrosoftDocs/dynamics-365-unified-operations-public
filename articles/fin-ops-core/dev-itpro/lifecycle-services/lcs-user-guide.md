@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Lifecycle Services (LCS) user guide
-description: This article provides information about the tools that are available in Lifecycle Services and when to use them as you move through the phases of your work.
+description: Learn about the tools that are available in Lifecycle Services and when to use them as you move through the phases of your work.
 author: angelmarshall
-ms.date: 07/02/2019
-ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: overview
+ms.date: 07/02/2019
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
 ---
 
 # Lifecycle Services (LCS) user guide

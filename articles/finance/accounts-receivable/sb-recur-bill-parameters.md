@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Recurring contract billing parameters
-description: This article explains how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
-author: JodiChristiansen
-ms.date: 11/04/2021
+description: Learn how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/04/2021
 ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jchrist
 ms.search.validFrom: 2021-11-05
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Recurring contract billing parameters

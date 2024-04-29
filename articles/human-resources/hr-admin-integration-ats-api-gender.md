@@ -24,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Gender
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,10 +35,10 @@ This enumeration provides the option set of genders for the candidate. This is a
 
 | Value | Label | Description |
 | --- | --- | --- |
-| 200000000 | None | No gender has been specified. |
+| 200000000 | None | No gender is specified. |
 | 200000001 | Male | Male. |
 | 200000002 | Female | Female. |
-| 200000003 | NonSpecific | Selection for a non-specific gender. |
+| 200000003 | Non-Specific | Selection for a nonspecific gender. |
 
 ## See also
 

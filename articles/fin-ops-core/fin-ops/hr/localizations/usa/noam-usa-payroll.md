@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: US Payroll overview
-description: Payroll provides full gross-to-net processing for employees in the United States.
+description: Learn about payroll, which full gross-to-net processing for employees in the United States, including overviews on payroll setup and taxes.
 author: twheeloc
-ms.date: 04/04/2024
+ms.author: twheeloc
 ms.topic: overview
-
-# optional metadata
-
-# ms.search.form: PayrollWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+ms.date: 04/04/2024
 ms.custom: ["248434"]
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: PayrollWorkspace
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
 ---
 
 # US Payroll overview

@@ -3,7 +3,7 @@
 
 title: Financial dimension sets
 description: This article describes financial dimension sets and provides some tips for optimizing their use.
-author: yukonpeegs
+author: rcarlson
 ms.date: 03/07/2022
 ms.topic: article
 # optional metadata
@@ -15,7 +15,7 @@ ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: epegors
+ms.author: rcarlson
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
 

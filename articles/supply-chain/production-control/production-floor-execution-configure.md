@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: Configure the production floor execution interface
 description: This article describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
-ms.date: 15/04/2024
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: JmgProductionFloorExecutionConfiguration
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
-ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Configure the production floor execution interface

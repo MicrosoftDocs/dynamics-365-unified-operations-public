@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Prepare for go-live
-description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
+description: Learn about how to prepare for the go-live for finance and operations apps, including a table that lists the key steps in the go-live process.
 author: alejandra-cabrales
-ms.date: 08/29/2023
-ms.topic: article
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: alcabral
+ms.topic: article
+ms.date: 08/29/2023
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-01-31
+ms.search.form: 
 ms.dyn365.ops.version: July 2017 update
 ---
 

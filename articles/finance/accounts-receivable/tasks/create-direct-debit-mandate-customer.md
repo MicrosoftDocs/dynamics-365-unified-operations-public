@@ -1,27 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a direct debit mandate for a customer
-description: This task guide demonstrates how to create a direct debit mandate and use it on an invoice. 
-author: ShivamPandey-msft
-ms.date: 04/05/2024
-ms.topic: how-to 
- 
- 
-# optional metadata 
- 
-ms.search.form: CustTable, CustBankAccounts, BankAccountTable, CustPaymMode, CustDirectDebitMandate, BankAccountTableLookUp, SrsReportViewerForm,  LogisticsAddressCityLookup, CustFreeInvoice, CustTableLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to create a direct debit mandate and use it on an invoice, including step-by-step processes for creating bank accounts and defining payment methods. 
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/05/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustTable, CustBankAccounts, BankAccountTable, CustPaymMode, CustDirectDebitMandate, BankAccountTableLookUp, SrsReportViewerForm,  LogisticsAddressCityLookup, CustFreeInvoice, CustTableLookup   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a direct debit mandate for a customer
 
 [!include [banner](../../includes/banner.md)]

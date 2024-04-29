@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Three-way matching policies
-description: This article provides examples of three-way matching.
-author: abruer
-ms.date: 02/11/2022
-ms.topic: article
-# optional metadata
-
-ms.search.form: VendInvoicePostingHistory
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
-ms.search.region: Global
-# ms.search.industry: 
+description: Access examples of three-way matching, which summarize situations, provide prerequisites, and provide further information about scenarios.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 02/11/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendInvoicePostingHistory
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ---
 
 # Three-way matching policies

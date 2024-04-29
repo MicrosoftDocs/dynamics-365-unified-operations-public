@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Accounts payable home page
-description: This article provides an overview of Accounts payable.
+description: Learn about the Accounts payable home page, including overviews on setting up Accounts payable and configuring vendor invoices and accounts.
 author: sunfzam
-ms.date: 03/13/2024
-ms.topic: conceptual
-# optional metadata
-
-ms.search.form: VendInvoiceWorkspace 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: conceptual
+ms.date: 03/13/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: VendInvoiceWorkspace 
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ---
 
 # Accounts payable home page

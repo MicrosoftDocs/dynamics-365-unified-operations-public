@@ -26,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Manage features in Human Resources
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -1,18 +1,18 @@
 ---
 title: Help system (contains video)
-description: This article provides an overview of the Help system for finance and operations apps.
+description: Learn about the Help system for finance and operations apps, including an overviews on task guide and in-app help options.
 author: edupont04
-ms.date: 10/24/2023
-ms.topic: overview
-audience: Application User
-ms.reviewer: edupont
-ms.search.region: Global
 ms.author: edupont
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: overview
+ms.date: 10/24/2023
+ms.reviewer: edupont
 ms.collection: get-started
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: SystemParameters
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ---
 
 # Help system
@@ -42,19 +42,15 @@ The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn i
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
-## Generative help and guidance with Copilot (preview)
-
-[!INCLUDE [preview-banner-section](../../../supply-chain/includes/preview-banner-section.md)]
+## Generative help and guidance with Copilot
 
 *Generative help and guidance with Copilot* provides a conversational guide that's always nearby and ready to help. Users can ask questions in natural language. Copilot then identifies the relevant content in the documentation and composes a targeted response to the question.
-
-[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
 After generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="../copilot/media/copilot-icon.png" border="false"::: at the top of the page.
 
 [<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
 
-For more information, see [Generative help and guidance with Copilot (preview)](../copilot/copliot-generative-help.md).
+For more information, see [Generative help and guidance with Copilot](../copilot/copliot-generative-help.md).
 
 ## Get notified about changes through an RSS feed
 
