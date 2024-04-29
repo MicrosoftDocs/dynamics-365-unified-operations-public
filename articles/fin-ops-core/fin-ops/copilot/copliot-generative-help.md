@@ -14,20 +14,13 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Generative help and guidance with Copilot (preview)
+# Generative help and guidance with Copilot
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
 Copilot provides in-app help and guidance that uses the power of generative AI to give contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation though the extensive capabilities of finance and operations apps.
 
 [<img src="media/copilot-homepage-explain-worflow.png" alt="Screenshot of the Copilot help pane in the user experience." title="Screenshot of the Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
-
-[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
-
-## Prerequisites
-
-Before you can use generative help and guidance with Copilot in finance and operations apps, the feature and its prerequisites must be installed and enabled on your system, as described in [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copliot-generative-help.md).
 
 ## How Copilot works for in-app help and guidance
 
@@ -60,4 +53,4 @@ Microsoft is committed to applying [responsible AI practices](../../dev-itpro/re
 ## See also
 
 - For administrators: [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copliot-generative-help.md)
-- [Responsible AI FAQ for Generative help and guidance with Copilot](faq-copilot-generative-help.md)
+- [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](faq-copilot-generative-help.md)
