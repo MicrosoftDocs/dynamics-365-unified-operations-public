@@ -60,6 +60,8 @@ However, because the printed confirmation report is the external-facing document
 
 [<img src="media/product-bundle-03.png" alt="Printed confirmation report that shows only the parent item." title="Printed confirmation report that shows only the parent item" width="720" />](media/product-bundle-03.png#lightbox)
 
+After the sales order is confirmed, the parent item is still shown on the sales order, but its status is changed to *Canceled*. Additionally, the net amount is tracked in the **Bundle net amount** field. This amount is required to print the invoice, because the invoice shows the parent item, not the component items.
+
 ### Allocate prices to component items
 
 The sum of the component items must equal the **Bundle net amount** value of the parent item, because that value is the amount that's presented to the customer when creating the invoice. To ensure that the invoice matches the amounts that are posted to the general ledger, edits to the component items are limited. For example, the site and warehouse can't be changed, because those changes might trigger a price change based on a trade agreement.
@@ -145,6 +147,12 @@ The following important limitations apply when you use product bundle items:
 - Product bundle items aren't supported in direct deliveries.
 - Product bundle items aren't supported in delivery schedules.
 - The delivery type of the sales order line for bundle components is always *Stock*, regardless of the direct delivery setting on the released product.
+- Unless you are using the *(Preview) Product bundles in journals* feature, you can only reprint an invoice or sales order confirmation if the related sales order that includes the product bundle order lines still exists. If the sales order lines have been deleted, the reprinted invoices and sales order confirmations include the component items but not the parent item.
 - Miscellaneous charges that are added to a parent item line aren't allocated to the component item lines when the parent item is exploded.
+
+## Additional resources
+
+- [Product bundles overview](product-bundles-overview.md)
+- [Enable and set up product bundles](product-bundles-setup.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

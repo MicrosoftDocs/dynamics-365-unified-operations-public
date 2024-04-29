@@ -77,4 +77,9 @@ Each product bundle item must be set up as a released product on the **Released 
 
 The component items must be then assigned to the product bundle (BOM parent) item on the **BOM versions** page. To open this page, open the product bundle item on the **Released products** page. Then, on the Action Pane, on the **Engineer** tab, select **BOM versions**. For more information, see [Bills of materials and formulas](../production-control/bill-of-material-bom.md).
 
+## Additional resources
+
+- [Product bundles overview](product-bundles-overview.md)
+- [Sell and allocate product bundles](product-bundles-use.md)
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
