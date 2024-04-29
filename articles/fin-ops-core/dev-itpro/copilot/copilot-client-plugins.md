@@ -19,7 +19,7 @@ ms.custom:
 
 **Client plugins** or client actions are Copilot plugins that invoke client code and are available for users within the context of client experiences of finance and operations apps. Developers can define plugins that convert the functionality, operations, and business logic of the X++ code base into actions the user can invoke and communicate with in natural language through the Copilot interface. For example, with client plugins Copilot in finance and operations can be extended to let the user perform application actions, fill in form values, or ask questions requiring calculations and business logic from the application by entering prompts in natural language in Copilot.
 
-This topic contains details on the components and options of client plugins. For a step-by-step tutorial for creating a client plugin, see [Tutorial: Create client plugins for Copilot in finance and operations apps](tutorial-create-client-plugins.md).
+This article contains details on the components and options of client plugins. For a step-by-step tutorial for creating a client plugin, see [Tutorial: Create client plugins for Copilot in finance and operations apps](tutorial-create-client-plugins.md).
 
 > [!IMPORTANT]
 > - Developing client plugins is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). See [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app) for information on creating a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview).
@@ -141,7 +141,7 @@ You must define an accessor method for each output parameter. The following exam
 ```
 
 ### Defining the execution of the client action
-Create an instance of the `SysCopilotChatActionDefinitionAttribute` class to define business logic that should execute for action and set any output parameter values. When you call `executeAction`, the output parameters is reserialized and returned in the event payload to Copilot Studio.
+Create an instance of the `SysCopilotChatActionDefinitionAttribute` class to define business logic that should execute for action and set any output parameter values. When you call `executeAction`, the output parameters are reserialized and returned in the event payload to Copilot Studio.
 
 For example, if your Copilot action is to navigate to a form in the client, you can use the following to perform the navigation and define a message to be set as the output parameter to be sent to Copilot.
 
