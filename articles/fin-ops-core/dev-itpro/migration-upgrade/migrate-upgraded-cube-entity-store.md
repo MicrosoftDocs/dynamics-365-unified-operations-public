@@ -6,9 +6,6 @@ description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 
 author: MilindaV2
 ms.date: 08/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

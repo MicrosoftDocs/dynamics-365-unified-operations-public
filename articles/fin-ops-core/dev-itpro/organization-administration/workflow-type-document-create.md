@@ -1,15 +1,13 @@
 ---
 title: Create a workflow document class
-description: This article describes how to create a workflow document class.
+description: Learn about how to create a workflow document class, including an overview on how to add a calculated field to the workflow document class.
 author: josaw1
-ms.date: 06/19/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: tfehr
+ms.topic: article
+ms.date: 06/19/2019
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 

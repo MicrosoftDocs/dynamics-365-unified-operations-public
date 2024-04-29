@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Maintenance mode
-description: This article describes maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
+description: Learn about maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
 author: laneswenka
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysConfiguration
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 01/29/2024
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysConfiguration
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ---
 
 # Maintenance mode

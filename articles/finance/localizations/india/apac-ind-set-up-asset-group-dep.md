@@ -6,8 +6,6 @@ description: You can use asset group depreciation for assets that are similar an
 author: AdamTrukawka
 ms.date: 10/10/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

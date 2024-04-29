@@ -1,31 +1,18 @@
 ---
-# required metadata
-
 title: Clean up the batch job table
-description: This article describes how to clean up the batch job table.
+description: Learn about how to clean up the batch job table, including a step-by-step process that details the run batch job cleanup process.
 author: snagamalla
-ms.date: 02/09/2024
+ms.author: snagamalla
 ms.topic: how-to
+ms.date: 02/09/2024
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid:
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: snagamalla
 ms.search.validFrom: 2024-03-15
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 63
-
 ---
 
 # Clean up the batch job table

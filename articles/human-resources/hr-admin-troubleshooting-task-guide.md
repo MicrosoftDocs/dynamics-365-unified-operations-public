@@ -6,9 +6,6 @@ description: This article explains how to save task guides to Microsoft Dynamics
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -28,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Save task guides to LCS and replay them
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

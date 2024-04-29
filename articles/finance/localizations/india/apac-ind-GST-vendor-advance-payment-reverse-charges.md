@@ -6,9 +6,6 @@ description: This article explains how to create vendor advance payments that ha
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,9 +6,6 @@ description: This article describes how the **Retained earnings calculation** en
 author: jinniew
 ms.date: 09/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

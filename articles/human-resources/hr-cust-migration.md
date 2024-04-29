@@ -7,9 +7,6 @@ description: This article describes customer migration of Microsoft Dynamics 365
 author: twheeloc
 ms.date: 12/02/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

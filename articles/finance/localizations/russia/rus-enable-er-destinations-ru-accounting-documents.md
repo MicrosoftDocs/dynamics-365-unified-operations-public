@@ -4,8 +4,6 @@ description: This article explains how to configure Electronic reporting (ER) de
 author: AdamTrukawka
 ms.date: 02/02/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

@@ -6,8 +6,6 @@ description: Fund types are categories that you can use to group funds for detai
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

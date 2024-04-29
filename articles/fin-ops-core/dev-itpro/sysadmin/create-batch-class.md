@@ -1,18 +1,19 @@
 ---
 title: Create a batch class
-description: This article explains how to create a batch class for Microsoft Dynamics 365 finance and operations apps so that you can efficiently perform tasks in the background in Visual Studio.
+description: Learn about how to create a batch class for Microsoft Dynamics 365 finance and operations apps to efficiently perform tasks in the background in Visual Studio.
 author: cwithfourplus
-ms.date: 04/01/2024
+ms.author: johnmichalak
 ms.topic: how-to
+ms.date: 04/01/2024
 ms.custom: 
   - bap-template
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-ms.author: vikaush
 ms.search.validFrom: 2024-03-07
 ms.dyn365.ops.version: Platform Update50
 ---
+
 # Create a batch class
 
 [!include [banner](../includes/banner.md)]

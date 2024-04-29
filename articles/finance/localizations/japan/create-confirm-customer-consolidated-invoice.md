@@ -6,8 +6,6 @@ description: This article explains how to consolidate customer invoices each mon
 author: kfend
 ms.date: 10/04/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

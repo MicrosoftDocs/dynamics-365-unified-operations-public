@@ -6,10 +6,6 @@ description: This article explains how to settle periodic Tax Deducted at Source
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

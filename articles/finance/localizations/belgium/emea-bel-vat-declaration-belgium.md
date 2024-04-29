@@ -4,8 +4,6 @@ description: This article provides information about the VAT declaration for Bel
 author: AdamTrukawka
 ms.date: 06/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Belgium

@@ -6,8 +6,6 @@ description: This article explains how to set up a customer bank account and a c
 author: mrolecki
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

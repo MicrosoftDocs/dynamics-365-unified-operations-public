@@ -4,8 +4,6 @@ description: This article provides information about how you can create point of
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article explains how to set up the VAT statement for legal ent
 author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Latvia

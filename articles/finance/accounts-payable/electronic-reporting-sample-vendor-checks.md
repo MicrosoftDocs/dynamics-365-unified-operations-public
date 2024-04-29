@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Electronic reporting sample vendor checks
-description: This article provides general information about how to use the Electronic reporting sample check formats.
+description: Learn about how to use the Electronic reporting sample check formats, including outlines on checking formats and the setup process.
 author: mrolecki
-ms.date: 06/14/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/14/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global 
 ms.search.validFrom: 2017-06-30
+ms.search.form: 
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Electronic reporting sample vendor checks

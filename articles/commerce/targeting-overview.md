@@ -4,8 +4,6 @@ description: This article describes how to create, edit, and manage audiences an
 author: sushma-rao
 ms.date: 03/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

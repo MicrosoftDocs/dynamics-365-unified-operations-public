@@ -6,9 +6,6 @@ description: This article provides details about the programming model that is r
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,9 +6,6 @@ description: This article describes the Cash flow forecasting capability.
 author: ShivamPandey-msft
 ms.date: 12/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

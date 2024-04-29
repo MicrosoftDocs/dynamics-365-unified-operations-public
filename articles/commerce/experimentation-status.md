@@ -6,9 +6,6 @@ description: This article explains what status an experiment has in the experime
 author:  sushma-rao 
 ms.date: 10/21/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

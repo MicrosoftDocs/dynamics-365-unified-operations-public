@@ -4,8 +4,6 @@ description: This article provides information about the architecture and config
 author: ShalabhjainMSFT
 ms.date: 06/20/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

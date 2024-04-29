@@ -1,19 +1,17 @@
 ---
 title: Vendor posting profiles
-description: Vendor posting profiles control the posting of vendor transactions to the general ledger.
-author: abruer
-ms.date: 11/21/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
+description: Vendor posting profiles control the posting of vendor transactions to the general ledger. Learn how to create a posting profile.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 04/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendPosting
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
-ms.search.form: VendPosting
 ---
 
 # Vendor posting profiles

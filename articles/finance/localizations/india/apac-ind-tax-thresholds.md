@@ -6,9 +6,6 @@ description: This article provides information about tax thresholds for India.
 author: EricWangChen
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ROBOTS: 

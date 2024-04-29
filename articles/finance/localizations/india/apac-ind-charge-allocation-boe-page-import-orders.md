@@ -6,9 +6,6 @@ description: This article provides information about charge allocation for impor
 author: EricWangChen
 ms.date: 03/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

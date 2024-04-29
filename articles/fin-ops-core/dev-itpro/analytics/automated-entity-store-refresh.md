@@ -18,9 +18,6 @@ ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 ## Overview
 
 Entity store refresh is automated and managed by the system. Administrators do not need to schedule or monitor the Entity store refresh with the system batch schedules. The refresh operation is based on anticipated latency. This functionality is enabled in Platform update 23. As an administrator you do need to opt-in to use this feature.   

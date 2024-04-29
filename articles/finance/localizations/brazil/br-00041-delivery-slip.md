@@ -4,8 +4,6 @@ description: You can post a delivery slip for a sales order that has multiple sa
 author: AdamTrukawka
 ms.date: 06/24/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Brazil

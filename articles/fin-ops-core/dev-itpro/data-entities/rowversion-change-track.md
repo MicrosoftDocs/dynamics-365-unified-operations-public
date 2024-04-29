@@ -1,24 +1,16 @@
 ---
 title: Row version change tracking for tables and data entities
-description: This article explains how to enable row version change tracking for data entities and tables for finance and operations apps.
+description: Learn how to enable row version change tracking for data entities and tables for finance and operations apps, includinga a table with comments for various rules.
 author: pngub
-ms.date: 02/07/2024
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: gned
+ms.topic: article
+ms.date: 02/07/2024
+ms.reviewer: johnmichalak
+# ms.custom: NotInToc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2022-10-10
+ms.search.form:
 ms.dyn365.ops.version: 10.0.31
 ---
 

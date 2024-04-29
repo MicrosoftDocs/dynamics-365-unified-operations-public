@@ -4,8 +4,6 @@ description: This article describes how to add a copyright notice to your e-Comm
 author: josaw1
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

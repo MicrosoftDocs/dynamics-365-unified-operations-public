@@ -6,10 +6,6 @@ description: This article provides reference information about the different pay
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

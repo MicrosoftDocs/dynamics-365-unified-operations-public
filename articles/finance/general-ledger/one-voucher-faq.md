@@ -6,9 +6,6 @@ description: This article answers frequently asked questions about the One vouch
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation

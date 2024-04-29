@@ -1,13 +1,13 @@
 ---
 title: Separated Dual-write Application Orchestration package
-description: The Dual-write Application Orchestration package is no longer a single package but has been separated into smaller packages. This article explains the solutions and maps that each package contains, and its dependency on other packages.
+description: The Dual-write Application Orchestration package has been separated into smaller packages. Learn how the solutions and maps that each package contains other packages.
 author: RamaKrishnamoorthy
-ms.date: 05/04/2023
-ms.topic: article
-audience: IT Pro
-ms.custom: "separate-solution"
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 05/04/2023
+ms.custom: "separate-solution"
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2021-11-29
 ---
 
