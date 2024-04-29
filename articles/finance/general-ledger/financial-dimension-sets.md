@@ -4,9 +4,12 @@
 title: Financial dimension sets
 description: This article describes financial dimension sets and provides some tips for optimizing their use.
 author: rcarlson
-ms.date: 03/07/2022
+ms.date: 04/29/2024
 ms.topic: article
 # optional metadata
+ms.custom: 
+  - bap-template
+  - custom
 
 ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 audience: Application User
