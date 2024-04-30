@@ -1,17 +1,13 @@
 ---
-# required metadata
-
 title: Install prerequisites for Business performance analytics
-description: This article describes how to complete the prerequisites for Business performance analytics.
+description: Learn how to complete the prerequisites for Business performance analytics, including outlines on availability, and systema and version requirements.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 12/20/2023
 ms.topic: conceptual
+ms.date: 12/20/2023
 ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
-ms.audience: administrator
 ---
 
 # Business performance analytics installation prerequisites

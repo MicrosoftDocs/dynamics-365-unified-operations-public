@@ -1,17 +1,15 @@
 ---
-# required metadata
-
 title: Business performance analytics FAQ
-description: This article answers frequently asked questions about Business performance analytics.
+description: Access answers to frequently asked questions about Business performance analytics, including questions about signing up for public previews of analytics.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 03/29/2024
 ms.topic: faq
+ms.date: 03/29/2024
 ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
+
 # Business performance analytics FAQ
 
 This article answers frequently asked questions about Business performance analytics.
