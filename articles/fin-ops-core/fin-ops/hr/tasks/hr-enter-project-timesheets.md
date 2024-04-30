@@ -1,24 +1,17 @@
 --- 
-# required metadata 
- 
 title: Enter project timesheets
-description: This procedure lets you create a timesheet by using an empty timesheet page. 
+description: Learn about how to enter project timesheets, including a step-by-step process that details how to create timesheets.
 author: twheeloc
+ms.author: anbichse
+ms.topic: how-to
 ms.date: 04/10/2024
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form: HcmPersonnelManagementWorkspace
+ms.custom:
+ms.reviewer: twheeloc  
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: anbichse
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: HcmPersonnelManagementWorkspace
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 

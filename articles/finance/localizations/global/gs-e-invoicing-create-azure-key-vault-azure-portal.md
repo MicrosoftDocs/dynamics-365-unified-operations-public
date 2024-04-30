@@ -1,6 +1,6 @@
 ---
-title: Create an Azure key vault in the Azure portal (preview)
-description: This article explains how to create a Microsoft Azure key vault for Electronic invoicing (preview).
+title: Configure an Azure key vault in the Azure portal
+description: This article explains how to create a Microsoft Azure key vault for Electronic invoicing.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -15,10 +15,9 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Create an Azure key vault in the Azure portal (preview)
+# Configure an Azure key vault in the Azure portal
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 All the secrets and certificates that are used in the Electronic Invoicing service must be stored in a Microsoft Azure key vault. This approach helps ensure that you don't work directly with the secrets, and that the secrets are securely stored. When you must use digital signing or secure a connection to external web services, set the reference to the Key Vault secrets and certificates instead of using the secrets and certificates directly.
 

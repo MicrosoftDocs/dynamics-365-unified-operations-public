@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Export to Data Lake in finance and operations apps
-description: This article explains how to choose data in a finance and operations apps environment so that the data is available in a data lake.
+description: Learn how to choose data in a finance and operations apps environment so that the data is available in a data lake.
 author: MilindaV2
-ms.date: 10/27/2023
+ms.author: milindav
 ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 10/27/2023
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer, IT Pro
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: milindav
 ms.search.validFrom: 2020-03-01
+ms.search.form: 
 ms.dyn365.ops.version: Platform Update 34
-
 ---
 
 # Export to Data Lake in finance and operations apps 

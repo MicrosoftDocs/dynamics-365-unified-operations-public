@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Royalty contract management
-description: This article describes royalty contract management for Microsoft Dynamics 365 Finance.
-author: leizi2015
-ms.date: 08/02/2018
+description: Learn about royalty contract management for Microsoft Dynamics 365 Finance, including outlines on audience, purpose, and royalty contracts.
+author: t-benebo
+ms.author: benebotg
 ms.topic: article
-# optional metadata
-
-ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/29/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raynezou
 ms.search.validFrom: 2018-01-31
+ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment
 ms.dyn365.ops.version: July 2017 update
 ---
 

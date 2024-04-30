@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Change the date for a session
-description: This article explains how to change the date for a session.
+description: Learn how to change the date for a session, which you can use to back-date journal entries or source documents as needed.
 author: pvillads
-ms.date: 07/31/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SystemDate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/31/2019
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SystemDate  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Change the date for a session
 
 [!include [banner](../../includes/banner.md)]

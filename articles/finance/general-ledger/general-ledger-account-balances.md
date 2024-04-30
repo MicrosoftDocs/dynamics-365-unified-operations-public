@@ -3,9 +3,9 @@
 
 title: General ledger account balances
 description: This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports. 
-author: aprilolson
-ms.date: 03/29/2024
+author: JodiChristiansen
 ms.topic: article
+ms.date: 4/22/2024
 
 
 # optional metadata
@@ -45,7 +45,7 @@ The trial balance is a list page that shows all of the balances of an account an
 
 When a user changes the parameters the balances are refreshed. The user can also pick what dimension set they want to view balances for and whether each of the dimensions show in separate columns. 
 
-Users can drill down on the balances to view the transactions that make up the balance.    
+Users can drill down on the balances to view the transactions that make up the balance.
 
 
 ## Trial balance snapshots
@@ -97,8 +97,6 @@ To view the results, go to **General ledger** \> **Inquiries and reports** \> **
 
 
 For more information, see [View financial reports](view-financial-reports.md).
-
-
 
 
 

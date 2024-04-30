@@ -1,19 +1,20 @@
 ---
 title: What's new or changed in Platform update 29 for finance and operations apps (October 2019)
-description: This article describes features in Platform update 29 for finance and operations apps.
+description: Learn about features in Platform update 29 for finance and operations apps, including overviews on feature management.
 author: sericks007
-ms.date: 04/12/2024
+ms.author: sericks
 ms.topic: conceptual
+ms.date: 04/12/2024
 ms.custom: 
   - bap-template
   - evergreen 
-audience: Application User
 ms.reviewer: sericks
+audience: Application User
 ms.search.region: Global
-ms.author: sericks
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
 ---
+
 # What's new or changed in Platform update 29 for finance and operations apps (October 2019)
 
 [!include [banner](../includes/banner.md)]

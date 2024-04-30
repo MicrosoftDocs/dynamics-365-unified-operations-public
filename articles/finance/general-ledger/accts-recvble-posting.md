@@ -4,7 +4,7 @@
 title: Accounts receivable posting
 description: This article explains how postings are configured in Accounts receivable and provides examples of posting configurations.
 author: rcarlson
-ms.date: 12/03/2021
+ms.date: 04/29/2024
 ms.topic: article
 # optional metadata
 
