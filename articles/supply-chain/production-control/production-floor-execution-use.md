@@ -152,21 +152,22 @@ When a worker completes or partially completes a job, they can report scrap by s
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
-Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products they are producing. For details about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
+Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-Workers proceed as follows when registering tracked components:
+Workers follow these steps to register tracked components.
 
-1. On starting a production job, the worker selects the **Tracked component** button to start registering batch/serial number for the product and its components.
+1. When you start a production job, select **Tracked component** to start to register batch/serial numbers for the product and its components.
 
-    :::image type="content" source="media/tracked-components-pfe.png" alt-text="Register tracked components in the production floor execution interface." lightbox="media/tracked-components-pfe.png":::
+    :::image type="content" source="media/tracked-components-pfe.png" alt-text="Screenshot of the page for registering tracked components in the production floor execution interface." lightbox="media/tracked-components-pfe.png":::
 
-1. The interface asks the worker to scan the batch/serial number for the product. This is the product that is being manufactured.
-1. The worker selects a component being added to the product and then scans the batch/serial number of that component.
-1. The worker continues adding and scanning components until all of them are registered.
-1. The worker inspects the screen and can adjust the registrations as needed using the buttons at the bottom of the screen.
-1. The worker selects the **Next** button and proceeds to process the next item in the production order until all products are registered.
+1. When the interface prompts you, scan the batch/serial number of the product that's being manufactured.
+1. Select a component to add to the product, and then scan the batch/serial number of that component.
+1. Continue to add and scan components until all of them are registered.
+1. Reviews the on-screen information, and make any required adjustments to the registrations by using the buttons at the bottom of the page.
+1. Select **Next**.
+1. Continue to process items on the production order until all products are registered.
 
 ## Adjust material consumption and make material reservations (preview)
 
