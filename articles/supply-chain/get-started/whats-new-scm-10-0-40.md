@@ -36,7 +36,7 @@ The following table lists the features that are included in this release. We mig
 | Inventory and logistics | [Query and manage inventory without site or warehouse info](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/query-post-reserve-inventory-without-specifying-site-or-warehouse) | [Data partition rule](../inventory/inventory-visibility-power-platform.md#data-partition) | Enabled by default |
 | Manufacturing and asset management | [Track and trace serial and batch numbers for manufacturing](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/track-trace-serial-batch-numbers-manufacturing) | *Coming soon* | Feature management:<br>*Tracked components* |
 | Warehouse Management | [Inspect and process returned items more efficiently](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/inspect-process-returned-items-more-efficiently) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default  |
-| Warehouse Management | Operate external shared warehouse with Warehouse management only mode | *Coming soon* | Feature management:<br>*Warehouse management only mode*  |
+| Warehouse Management | Operate external shared warehouse with Warehouse management only mode | [Warehouse management only mode with external shared warehouses (preview)](../warehousing/wms-only-mode-external-shared-warehouse.md) | Feature management:<br>*Warehouse management only mode*  |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 

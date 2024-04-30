@@ -58,7 +58,7 @@ For a more detailed description of this process and the related processes, see [
 
 The following high-level diagram shows an example where a system uses Supply Chain Management to handle warehousing, plus a wider range of processes (such as sales, purchase, and production orders). At the same time, it also uses Supply Chain Management to handle warehouse operations for other ERP and order processing systems.
 
-:::image type="content" source="media/wms-only-d365-wms-and-erp-integration.svg" alt-text=Diagram that shows logistic warehouse processes being handled for both internal and external integrations." lightbox="media/wms-only-d365-wms-and-erp-integration.svg":::
+:::image type="content" source="media/wms-only-d365-wms-and-erp-integration.svg" alt-text="Diagram that shows logistic warehouse processes being handled for both internal and external integrations." lightbox="media/wms-only-d365-wms-and-erp-integration.svg":::
 
 For this type of implementation, the same warehouse instance can handle all the logistic warehouse processes for both internal and external integrations.
 
