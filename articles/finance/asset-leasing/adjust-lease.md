@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Adjust leases
-description: The article explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change.
+description: Learn how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change.
 author: moaamer
-ms.date: 03/18/2022
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 03/18/2022
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.14
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Adjust leases

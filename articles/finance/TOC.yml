@@ -438,6 +438,8 @@
         href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
         href: accounts-receivable/close-accounts-receivable.md
+      - name: Customer rename data maintenance
+        href: accounts-receivable/customer-data-maintenance.md
       - name: Revenue recognition
         items:
         - name: Revenue recognition overview
