@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Import letter of credit
-description: This procedure walks through the process of importing a letter of credit. 
+description: Learn about the procedure for importing a letter of credit, including a step-by-step process for creating a purchase order with a letter of credit. 
 author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/15/2022
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Import letter of credit
 
 [!include [banner](../../includes/banner.md)]
