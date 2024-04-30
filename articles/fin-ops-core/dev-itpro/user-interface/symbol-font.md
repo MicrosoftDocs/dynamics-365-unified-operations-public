@@ -1,13 +1,13 @@
 ---
 title: Dynamics Symbol font
-description: This article provides a link to the list of available symbols.
+description: Learn about the Dynamics Symbol font, which defines the set of out-of-box symbols that are available in the product.
 author: jasongre
-ms.date: 03/20/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 03/20/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 32e3235e-46b0-4fd9-a138-ff712191ba84

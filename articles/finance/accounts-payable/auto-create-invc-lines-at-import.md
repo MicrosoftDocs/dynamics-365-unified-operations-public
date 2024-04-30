@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Generate invoice lines when you import vendor invoices
-description: This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
+description: Learn about the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 author: sunfzam
-ms.date: 12/17/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shpandey
+ms.topic: article
+ms.date: 12/17/2023
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-
 ---
 
 # Generate invoice lines when you import vendor invoices

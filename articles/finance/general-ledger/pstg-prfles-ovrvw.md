@@ -3,8 +3,8 @@
 
 title: Posting profiles overview
 description: This article explains how posting profiles are used throughout Microsoft Dynamics 365 apps.
-author: rachel-profitt
-ms.date: 12/03/2021
+author: rcarlson
+ms.date: 04/29/2024
 ms.topic: article
 # optional metadata
 
@@ -14,11 +14,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: evergreen
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: rcarlson
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
 

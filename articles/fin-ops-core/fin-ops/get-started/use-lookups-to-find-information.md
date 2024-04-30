@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Find information by using lookups
-description: In this article, you will learn about lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
+description: Learn about lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ---
 
 # Find information by using lookups

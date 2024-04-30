@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.40 (July 2024)
+          href: get-started/whats-new-scm-10-0-40.md
         - name: Supply Chain Management 10.0.39 (April 2024)
           href: get-started/whats-new-scm-10-0-39.md
         - name: Supply Chain Management 10.0.38 (February 2024)
           href: get-started/whats-new-scm-10-0-38.md
-        - name: Supply Chain Management 10.0.37 (November 2023)
-          href: get-started/whats-new-scm-10-0-37.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1707,7 +1707,7 @@
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
-      - name: Archive inventory transactions
+      - name: Consolidate inventory transactions
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
         items:
@@ -3878,6 +3878,8 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
+          - name: Set up a mobile device menu item for completing mixed license plates
+            href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
@@ -4012,10 +4014,14 @@
           href: warehousing/wms-only-mode-overview.md
         - name: Enable and configure warehouse management only mode
           href: warehousing/wms-only-mode-setup.md
+        - name: Warehouse management only mode with external ERP systems
+          href: warehousing/wms-only-mode-external-erp.md
+        - name: Warehouse management only mode with external shared warehouses
+          href: warehousing/wms-only-mode-external-shared-warehouse.md
         - name: Exchange data between systems
           href: warehousing/wms-only-mode-exchange-data.md
         - name: Work with warehouse management only mode in Supply Chain Management
-          href: warehousing/wms-only-mode-using.md
+          href: warehousing/wms-only-mode-shared-and-external-detail-use.md
         - name: Example of using inbound and outbound shipment orders
           href: warehousing/wms-only-mode-example.md
         - name: Warehouse management only mode frequently asked questions

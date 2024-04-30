@@ -1,15 +1,15 @@
 ---
 title: Guidance for dual-write setup
-description: This article describes the scenarios that are supported for dual-write setup.
+description: Understand the scenarios that are supported for dual-write setup, including various examples that provide guidance for dual-write setups.
 author: RamaKrishnamoorthy
-ms.date: 12/04/2023
+ms.author: ramasri
 ms.topic: how-to
+ms.date: 12/04/2023
 ms.custom: 
   - bap-template
-audience: Application User, IT Pro
 ms.reviewer: johnmichalak
+audience: Application User, IT Pro
 ms.search.region: global
-ms.author: ramasri
 ms.search.validFrom: 2020-01-06
 ---
 

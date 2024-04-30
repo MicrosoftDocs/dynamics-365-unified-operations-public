@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Batch processing and batch servers
-description: This article describes batch processing and batch servers, and how to plan for their use.
+description: Learn about batch processing and batch servers and how to plan for their use, including overviews on batch server topology planning and batch throttling.
 author: raanandm
-ms.date: 03/21/2024
-ms.topic: overview
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: raanandm
+ms.topic: overview
+ms.date: 03/21/2024
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: IT Pro 
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ---
 
 # Batch processing and batch servers

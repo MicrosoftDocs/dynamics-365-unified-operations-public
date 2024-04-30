@@ -24,11 +24,31 @@ When master planning suggests a date for placing a planned order, it also consid
 
 ## Prerequisites
 
-Before you can calculate requested ship dates, your system must meet the following requirements:
+To calculate requested shipment dates for purchase orders, your system must meet the following requirements:
 
 - You must be running Dynamics 365 Supply Chain Management version 10.0.38 or later.
-- The feature that's named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - You must be using Planning Optimization, not the [deprecated master planning engine](deprecated-master-planning-overview.md).
+
+Additional requirements apply based on which version of Supply Chain Management you are running, as described in the following subsections.
+
+### Supply Chain Management versions 10.0.38 or 10.0.39
+
+If you are running Supply Chain Management version 10.0.38 or 10.0.39, the feature that's named *Supplier requested and confirmed shipment dates* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Supply Chain Management version 10.0.40 or later
+
+Starting in version 10.0.40 (and later), the *Supplier requested and confirmed shipment dates* feature is no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Instead, the feature is always available and is controlled by a setting on the **Procurement and sourcing parameters** page. The setting is turned off by default for all legal entities unless you had previously turned on the *Supplier requested and confirmed shipment dates* feature in feature management (before upgrading to version 10.0.40 or later), in which case the setting will be turned on for all legal entities.
+
+To turn on the feature, follow these steps:
+
+1. Use the company picker to select the legal entity (company) where you want to calculate requested shipment dates for purchase orders.
+1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
+1. Open the **Delivery** tab.
+1. Set **Supplier requested and confirmed shipment dates** to *Yes* to make the feature available to the current legal entity. Set to *No* to hide the feature for the current legal entity.
+1. Repeat this procedure for each legal entity where you want to turn on (or turn off) the option.
+
+> [!NOTE]
+> If you use intercompany trade, then each of the legal entities involved must have this option turned on to allow requested shipment dates to be calculated for intercompany purchase orders.
 
 ## Requested and confirmed receipt dates on purchase orders
 

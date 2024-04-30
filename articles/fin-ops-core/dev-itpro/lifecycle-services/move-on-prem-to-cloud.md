@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Move Lifecycle Services implementation projects from on-premises to the cloud
-description: This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
+description: Learn about how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: ttreen
-ms.date: 02/28/2024
-ms.topic: article
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: marwalke
-ms.search.validFrom: 2020-09-30 
+ms.topic: article
+ms.date: 02/28/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2020-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
 ---
 

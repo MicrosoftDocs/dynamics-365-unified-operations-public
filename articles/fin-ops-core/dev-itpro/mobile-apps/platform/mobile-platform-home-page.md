@@ -1,17 +1,16 @@
 ---
 title: Mobile platform resources
-description: The mobile platform lets you create mobile apps for your workspaces.
+description: Learn about mobile platform resources and how you can create mobile apps for your workspaces, including resources for getting started.
 author: jasongre
-ms.date: 05/26/2022
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: josaw
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.collection: get-started
-ms.assetid: 
 ---
 
 # Mobile platform resources

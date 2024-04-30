@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Collections process automation
-description: This article describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity, or a collection letter to be sent to the customer. 
-author: JodiChristiansen
-ms.date: 03/12/2021
+description: Learn about the process of setting up collections process strategies that automatically identify customer invoices that require email reminders.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-# optional metadata
-
-ms.search.form:  CustomerCollectionManagerWorkspace
+ms.date: 03/12/2021
+ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: shpandey
 ms.search.validFrom: 2017-08-26 
+ms.search.form:  CustomerCollectionManagerWorkspace
 ms.dyn365.ops.version: 10.0.13 
 ---
 
