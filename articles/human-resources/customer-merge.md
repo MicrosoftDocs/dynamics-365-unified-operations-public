@@ -69,3 +69,19 @@ Security is paramount in this scenario. It's essential to configure access roles
 
 ## How should we approach merging HR data into existing FinOps data that already contains basic worker records? How do we handle merging workers and other elements like positions?
 This is a key consideration. If HR master data is already established, there's typically no need to duplicate efforts. However, a thorough analysis is crucial to determine which data sets need merging and any incremental updates that may be necessary.
+
+## What are challenges and considerations during the customer merge process?
+Several significant challenges and considerations emerge during the customer merge process, including:
+- Global Address Book (GAB)
+- Number Sequence
+- Custom Field
+- Security Configuration
+- Batch Jobs/Periodic Tasks
+- Custom Code (X++ or addon)
+- Personalization/Saved Views
+- Integrations
+- Extended solutions
+
+We've addressed and provided recommendations for these key challenges and considerations in our Customer Merge Techtalk. Please refer to the published Techtalk for further details. https://www.youtube.com/watch?v=Du5UOeb4I0I
+
+
