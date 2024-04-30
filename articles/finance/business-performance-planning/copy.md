@@ -5,7 +5,6 @@ author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
 ms.date: 12/03/2023
-ms.topic: article
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
