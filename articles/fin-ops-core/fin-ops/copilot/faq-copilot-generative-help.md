@@ -1,15 +1,15 @@
 ---
-title: Responsible AI FAQ for Generative help and guidance with Copilot
-description: Access answers to frequently asked questions about the AI technology that's used in generative help and guidance with Copilot.
-author: cabeln
-ms.author: cabeln
-ms.topic: article
-ms.date: 11/09/2023
-ms.custom:
-  - responsible-ai-faqs
-ms.reviewer: kamaybac
+title: Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps
+description: This FAQ provides answers to frequently asked questions about the AI technology that's used in generative help and guidance with Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 04/24/2024
 ms.collection:
   - bap-ai-copilot
+ms.custom:
+  - responsible-ai-faqs
+ms.topic: article
+author: cabeln
+ms.author: cabeln
+ms.reviewer: kamaybac
 ---
 
 # Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps
@@ -20,7 +20,7 @@ This FAQ provides answers to frequently asked questions about the AI technology 
 
 ## What is Generative help and guidance with Copilot?
 
-The *Generative help and guidance with Copilot* helps users by providing in-app help guidance with the help of the power of generative AI.
+The *Generative help and guidance with Copilot* feature helps users by providing in-app help guidance with the help of the power of generative AI.
 
 It uses [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to directly access the breadth of public documentation so it can offer precise assistance for using the extensive capabilities of Microsoft finance and operations apps.
 
