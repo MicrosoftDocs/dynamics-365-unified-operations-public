@@ -152,13 +152,13 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
-This feature lets workers and managers register batch/serial numbers for material and components used in manufacturing processes and associate these to batch/serial numbers for the products that are produced. This enables manufacturers to optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can utilize the item tracing report to effectively track batch/serial numbers registered through the Tracked Components feature.
+This feature lets workers and managers register batch/serial numbers for materials and components that are used in manufacturing processes. They can then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
 
-To use this feature, your system must meet the following requirements:
+Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
-- The feature that is named *Tracked components* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- You must make the feature available to workers by adding a *Tracked components* button to the appropriate tab and toolbar, as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
+- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- You must make the feature available to workers by adding a **Tracked components** button to the appropriate tab and toolbar, as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 For more information about this feature, see [Register batch/serial numbers for finished products and their components (preview)](production-floor-execution-use.md#tracked-components).
 
