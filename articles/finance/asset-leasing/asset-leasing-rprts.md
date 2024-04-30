@@ -1,6 +1,6 @@
 ---
 title: Asset leasing reports
-description: learn about the reports that are available in asset leasing, with outlines on asset movement, the differences report, and payment forecasts.
+description: Learn about the reports that are available in asset leasing, with outlines on asset movement, the differences report, and payment forecasts.
 author: moaamer
 ms.author: moaamer
 ms.topic: article
