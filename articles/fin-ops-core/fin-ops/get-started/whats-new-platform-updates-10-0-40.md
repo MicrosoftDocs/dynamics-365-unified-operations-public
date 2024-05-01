@@ -28,8 +28,8 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Copilot in finance and operations | Extend Copilot with client plugins | Developers can extend Copilot in finance and operations with client actions, based in application logic, invoked in natural language from the Copilot chat panel. For more information, see [Create client plugins for Copilot in finance and operations apps](../../dev-itpro/copilot/copilot-client-plugins.md). | Default |
-| Copilot in finance and operations | Extend Copilot with record context | The context of the record currently viewed by the user in the application is available in Copilot to create contextual plugins. For more information, see [Using application context with Copilot](../../dev-itpro/copilot/copilot-application-context.md). | Default |
+| Copilot in finance and operations apps | Extend Copilot with client plugins | Developers can extend Copilot in finance and operations apps by creating client actions that are based on application logic and invoked in natural language from the Copilot chat panel. For more information, see [Create client plugins for Copilot in finance and operations apps](../../dev-itpro/copilot/copilot-client-plugins.md). | Default |
+| Copilot in finance and operations apps | Extend Copilot with record context | The context of the record that the user is currently viewing in the application is available in Copilot and can be used to create contextual plugins. For more information, see [Use application context with Copilot](../../dev-itpro/copilot/copilot-application-context.md). | Default |
 
 ## Feature enhancements included in this release
 
@@ -38,12 +38,11 @@ This section contains a table that lists the enhancements that are included in t
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 
-
 ### Bug fixes
 
 For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
 
-### Dynamics 365: 2023 release wave 1 plan
+### Dynamics 365: 2024 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
