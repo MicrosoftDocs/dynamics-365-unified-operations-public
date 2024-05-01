@@ -102,10 +102,10 @@ To automatically post the inventory adjustment journals, go to **Warehouse manag
 The Warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**) collects all the inventory transaction updates that lead to on-hand updates that are of interest for the related legal entities. For example, you might want to handle information about inventory status changes.
 
 > [!TIP]
->For example, if you want to adjust the inventory in the warehouse only mode legal entity without affecting the back-end sales legal entity or causing duplicate adjustments through the warehouse inventory log update process, you can use an Inventory journal name with the *Exclude from warehouse inventory update logs* setting turned on. This will prevent the journal posting from being logged.
+>For example, if you want to adjust the inventory in the warehouse only mode legal entity without affecting the order legal entity or causing duplicate adjustments through the warehouse inventory log update process, you can use an Inventory journal name with the *Exclude from warehouse inventory update logs* setting turned on. This will prevent the journal posting from being logged.
 
 > [!IMPORTANT]
-> For [source systems](wms-only-mode-setup.md#source-systems) that are related to external warehouse management systems, turn off the **Enable warehouse inventory update logs** option for inbound and outbound shipment orders. In this way, you prevent inventory adjustment journal processing from updating your on-hand inventory.
+> For [source systems](wms-only-mode-setup.md#source-systems) that are related to external warehouse management systems, keep the **Enable warehouse inventory update logs** option turned off for inbound and outbound shipment orders. In this way, you prevent inventory adjustment journal processing from updating your on-hand inventory in the order legal entities.
 
 ## Example setup that uses external shared warehouse processing in Supply Chain Management
 
