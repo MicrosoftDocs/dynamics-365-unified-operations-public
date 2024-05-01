@@ -43,8 +43,9 @@ The following errors are likely to occur if another operation is in progress dur
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
 
-### Why isn't my data showing up in Business performance analytics? 
-To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the "Bpa self help logs table" in Microsoft Dataverse. To learn more see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
+### Why isn't my data showing up in Business performance analytics?
+
+To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the **Bpa self help logs** table in Microsoft Dataverse. To learn more, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
 ### When will data be available in reports after the Business performance analytics is installed for the first time?
 
@@ -212,4 +213,3 @@ When a new release of Business performance analytics is available, you can updat
 
 As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of Business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install Business performance analytics.
 Any new data changes done in Dynamics 365 finance and operations UI can still be seen in Business performance analytics. The limitation above is only for changes via data movement from production to sandbox.
-
