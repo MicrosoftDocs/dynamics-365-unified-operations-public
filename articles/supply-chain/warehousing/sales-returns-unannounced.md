@@ -384,7 +384,7 @@ The returned products have now been put onto a mixed license plate for further p
 After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](sales-returns.md).
 
 > [!TIP]
-> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. See also [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
+> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. See also [Set up a mobile device menu item for completing mixed license plates (preview)](mobile-device-complete-mixed-lp-menu.md).
 
 ## Example scenario 2: Customer return with a return details policy
 

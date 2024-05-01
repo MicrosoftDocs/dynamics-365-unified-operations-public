@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Business performance planning overview
-description: This article explains business performance planning in Microsoft Dynamics 365 Finance.
+description: Learn about business performance planning in Microsoft Dynamics 365 Finance, including overviews on key concepts, terms, and an example.
 author: ShielaSogge
-ms.date: 11/28/2023
-ms.topic: article
-ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 11/28/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: Human Resources
-
 ---
+
 # Business performance planning overview
 
 As businesses grow and evolve, planning becomes a critical part of putting strategic goals into operation. However, planning is often complex and time consuming because of disconnected systems, large volumes of data, and manual processes. These issues lead to inaccuracies, delays, and a high total cost of ownership (TCO). At a time when businesses are looking to take full advantage of key opportunities, they lack visibility into data relationships and any outliers.
