@@ -1,15 +1,15 @@
 ---
 title: Enable batch retries
-description: This article describes how to enable automatic retries on batch jobs and tasks when failures occur.
+description: Learn about how to enable automatic retries on batch jobs and tasks when failures occur, including an overview on retrying mechanisms for batch tasks.
 author: matapg007
-ms.date: 03/18/2024
+ms.author: johnmichalak
 ms.topic: how-to
+ms.date: 03/18/2024
 ms.custom: 
   - bap-template
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-ms.author: matgupta
 ms.search.validFrom: 2021-05-31
 ---
 

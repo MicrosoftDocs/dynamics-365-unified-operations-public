@@ -4018,10 +4018,14 @@
           href: warehousing/wms-only-mode-overview.md
         - name: Enable and configure warehouse management only mode
           href: warehousing/wms-only-mode-setup.md
+        - name: Warehouse management only mode with external ERP systems
+          href: warehousing/wms-only-mode-external-erp.md
+        - name: Warehouse management only mode with external shared warehouses
+          href: warehousing/wms-only-mode-external-shared-warehouse.md
         - name: Exchange data between systems
           href: warehousing/wms-only-mode-exchange-data.md
         - name: Work with warehouse management only mode in Supply Chain Management
-          href: warehousing/wms-only-mode-using.md
+          href: warehousing/wms-only-mode-shared-and-external-detail-use.md
         - name: Example of using inbound and outbound shipment orders
           href: warehousing/wms-only-mode-example.md
         - name: Warehouse management only mode frequently asked questions

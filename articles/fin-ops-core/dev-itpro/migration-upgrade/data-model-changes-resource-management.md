@@ -1,13 +1,13 @@
 ---
 title: Project resource scheduling data model
-description: This article provides information about the Project resource scheduling data model.
+description: Learn about the Project resource scheduling data model, including outlines on physical data models and changes that affect tables and fields.
 author: laneswenka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: sericks
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: 46d23d3e-b5ef-43a7-ae9d-a1e202cc8abc

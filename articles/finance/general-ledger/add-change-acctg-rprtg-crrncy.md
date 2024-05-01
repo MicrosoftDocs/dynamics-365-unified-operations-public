@@ -4,10 +4,12 @@
 title: Change the accounting or reporting currency 
 description: This article explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
 author: rcarlson
-ms.date: 03/01/2023
+ms.date: 04/29/2024
 ms.topic: conceptual
 # optional metadata
-
+ms.custom: 
+  - bap-template
+  - evergreen 
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
