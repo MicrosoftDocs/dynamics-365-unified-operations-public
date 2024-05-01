@@ -422,5 +422,36 @@ $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 Write-Output "Successfully updated the configuration and enabled DixfService."
 ```
 
+## <a name="disableMR"></a>TSG\_DisableMRDeployment.ps1
+
+The following script is used to prevent the Financial Reporting service from being deployed.
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [string]
+    $AgentShare
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$modulesJsonPath = "$basePath\SetupModules.json"
+
+$modulesJson = Get-Content $modulesJsonPath | ConvertFrom-Json
+
+Write-Host "Disabling FinancialReporting component..."
+$modulesJson.components = $modulesJson.components | Where-Object name -ne "financialreporting"
+$modulesJson | ConvertTo-Json -Depth 20 | Out-File $modulesJsonPath
+Write-Host "Finished Disabling FinancialReporting component."
+```
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
