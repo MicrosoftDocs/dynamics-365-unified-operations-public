@@ -66,7 +66,7 @@ You can configure a batch group on the **Batch group** page (**System administra
 
 ## Enable priority-based batch scheduling
 
-In Platform update 31, the new [priority-based batch scheduling](priority-based-batch-scheduling.md) feature optimizes how batch jobs are run. If contention is identified in the batch framework, consider enabling priority-based batch scheduling.
+In Platform update 31, the new [priority-based batch scheduling](priority-based-batch-scheduling.md) feature optimizes how batch jobs are run. If contention is identified in the batch platform, consider enabling priority-based batch scheduling.
 
 ## Configure the maximum number of batch threads
 
