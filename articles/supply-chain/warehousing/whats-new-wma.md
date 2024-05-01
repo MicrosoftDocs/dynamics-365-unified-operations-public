@@ -35,7 +35,7 @@ This version of the Warehouse Management mobile app introduces the following new
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- Fixed an issue that prevented action buttons from respecting the Button position setting.
+- Fixed an issue that prevented action buttons from respecting the **Button position** user setting.
 
 ## Version 2.2.1.0
 
