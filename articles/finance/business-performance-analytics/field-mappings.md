@@ -1,7 +1,7 @@
 ---
 
 title: Business performance analytics business field mappings
-description: This article provides information about field mappings in business performance analytics.
+description: This article provides information about field mappings in Business performance analytics.
 author: carylhenry
 ms.author: carylhenry
 ms.reviewer: twheeloc 
@@ -14,12 +14,12 @@ audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
-# Business performance analytics field mappings
+# Business performance analytics business field mappings
 
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-| Dimension                        | Business performance analytics table field     | Finance and operations field           | Power BI data name                            |
+| Dimension                        | Business performance analytics table field     | Finance and operations apps field      | Microsoft Power BI data name                  |
 | -------------------------------- | ---------------------------------------------- | -------------------------------------- | --------------------------------------------- |
 | dmo_sellingpartypostaladdressdim | dmo_sellingpartypostaladdress                  | LogisticsPostalAddress.Address         | Dim - Selling party.Columns.Postal address    |
 | dmo_sellingpartypostaladdressdim | dmo_sellingpartypostaladdresscity              | LogisticsPostalAddress.City            | Dim - Selling party.Columns.City              |
