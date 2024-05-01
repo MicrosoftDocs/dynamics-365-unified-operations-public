@@ -18,18 +18,18 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. To see all available reports, click **Reports** in the **Data explorer** pane on the left side. Click **Refresh** to ensure you have the most up-to-date reports available.
+Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. To view all available reports, select **Reports** in the **Data explorer** pane on the left. Select **Refresh** to ensure that you have the most up-to-date reports.
 
 ## Create a new report
 
 To create a new report, follow these steps.
 
 1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
-2. Click **New**. Select either a Power BI or an Excel report.
-3. Select **Start with a blank report** – Enter a report name and click **Create**.
- - If you selected a Power BI report, the report will open directly in your browser. You can then start to add data fields and build the report.
- - If you selected a Microsoft Excel report, you will be prompted to open a local copy of the report on your desktop. The first time creating a Business performance analytics Microsoft Excel report, you may have to download and install an add-in. 
- 
+2. Select **New**. Select either a Power BI or an Excel report.
+3. Select **Start with a blank report** – Enter a report name and select **Create**.
+
+    - If you selected a Power BI report, the report will open directly in your browser. You can then start to add data fields and build the report.
+    - If you selected a Microsoft Excel report, you will be prompted to open a local copy of the report on your desktop. The first time creating a Business performance analytics Microsoft Excel report, you may have to download and install an add-in. 
 
 ## Edit a report
 
@@ -85,12 +85,8 @@ To share a report that isn't currently open, follow these steps:
 >[!NOTE]
 > You can't share reports of the **Microsoft** type. You must duplicate them to create a **Custom** type report, which can be shared.
 > Only admin users may also see an additional **Share** button. This button currently doesn't provide any use.
->Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with others users who did not originally have access to the report.
+> Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with other users who did not originally have access to the report.
 
 ## Remove edit columns and edit filters buttons
 
 Pages in the Business performance analytics app may display **Edit columns** and **Edit filters** buttons. The button's functionality is controlled by the administrator for the environment. The administrator can activate or deactivate these buttons at any time by going to the Power Platform Admin Center. Select **Settings** > **Product** > **Feature**. Activate or deactivate these buttons by turning on or off the **Show the Edit column button on views** and **Show the Edit filter button on views**. 
-
-
-
-
