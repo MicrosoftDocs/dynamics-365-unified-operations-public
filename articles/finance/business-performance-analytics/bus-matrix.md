@@ -14,18 +14,18 @@ audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
-# Business performance analytics matrix
+# Business performance analytics business matrix data model
 
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-
 ## Definitions
-Facts represent a business metric of interest. In business performance analytics, facts are record-type data such as transactions, orders, and records. Each fact is associated with one or more dimension. Dimensions represent descriptive data elements to provide more information for the facts associated with them.
+
+*Facts* represent business metrics of interest. In Business performance analytics, facts are record-type data, such as transactions, orders, and records. Each fact is associated with one or more *dimensions*. Dimensions represent descriptive data elements and provide more information about the facts that are associated with them.
 
 ### Business matrix
 
-The business matrix table below shows the relationship between facts and dimensions. The rows represent the dimensions used in Business performance analytics while the columns represent the different facts used in Business performance analytics.
+The following business matrix table shows the relationship between facts and dimensions. Rows represent the dimensions that are used in Business performance analytics. Columns represent the different facts that are used in Business performance analytics.
 
 
 | Dimensions  | Budget | Budget reservation | General ledger | Product receipt | Purchase invoice | Purchase invoice matching | Purchase order | Purchase payment | Purchase payment matching | Purchase requisition | Purchase sub-ledger | Sales invoice | Sales payment | Sales payment matching | Sales sub-ledger |
