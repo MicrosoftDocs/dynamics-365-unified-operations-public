@@ -1,14 +1,14 @@
 ---
 title: Invalid users in Dynamics 365 Finance
-description: This article describes how to address invalid users in Microsoft Dynamics 365 Finance.
+description: Learn about how to address invalid users in Microsoft Dynamics 365 Finance, including outlines on different types of invalid users.
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
 ms.topic: conceptual
 ms.date: 2/06/2024
 ms.custom:
-
+ms.reviewer: twheeloc
 ---
+
 # Invalid users in Dynamics 365 Finance
 
 Users in any Microsoft Dynamics 365 finance and operations environment must comply with Microsoft guidelines to avoid sign-in failures. As of Dynamics 365 Finance version 10.0.39, administrators can use the **Invalid users** page to view details about invalid users.

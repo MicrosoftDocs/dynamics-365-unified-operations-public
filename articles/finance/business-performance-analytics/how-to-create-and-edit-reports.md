@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Create and edit Business performance analytics reports
-description: This article describes how to create and edit reports in Business performance analytics.
+description: Learn how to create and edit reports in Business performance analytics, including outlines on duplicating, renaming, sharing, and deleting reports.
 author: jkhaira7
 ms.author: jkhaira 
 ms.reviewer: twheeloc
 ms.date: 04/25/2024
+ms.author: jkhaira
+
 ms.topic: conceptual
- 
+ms.date: 03/29/2024
+ms.reviewer: twheeloc
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
 # Create and edit Business performance analytics reports

@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Accounting source explorer
-description: This article provides information about the Accounting source explorer page, which you can use for detailed analysis of the source information behind general ledger accounting entries.
+description: Learn about the Accounting source explorer page, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 author: RyanCCarlson2
-ms.date: 10/31/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: AccountingSourceExplorer
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 57b95899-7298-43c0-8034-45b5d993cbf2
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 10/31/2023
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AccountingSourceExplorer
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 57b95899-7298-43c0-8034-45b5d993cbf2
 ---
 
 # Accounting source explorer

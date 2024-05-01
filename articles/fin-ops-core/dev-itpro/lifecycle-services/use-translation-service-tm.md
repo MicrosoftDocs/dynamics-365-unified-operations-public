@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Translation memory files
-description: This article describes when and where translation memory files can be created, edited, and used to result in a quality translation output file.
-author: abmotgi
-ms.date: 10/24/2021
+description: Learn about when and where translation memory files can be created, edited, and used to result in a quality translation output file.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 10/24/2021
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 
+audience: Developer, IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.3.0
-
+ms.assetid: 
 ---
 
 # Translation memory files

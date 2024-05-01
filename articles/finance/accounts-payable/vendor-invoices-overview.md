@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Vendor invoices overview
-description: This article provides general information about vendor invoices.
-author: abruer
-ms.date: 03/13/2024
+description: Learn about vendor invoices, which are requests for payment for products and services, including an outline on submitting invoices.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 03/13/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Vendor invoices overview

@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Clean up the batch job history 
-description: This article provides information about how to clean up the batch job history.
+description: Learn about how to clean up the batch job history, including an overview on batch job history clean-up and a step-by-step process.
 author: snagamalla
-ms.date: 02/09/2024
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: snagamalla
+ms.topic: article
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak 
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-03-08
+ms.search.form:
 ms.dyn365.ops.version: Platform update 25
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Clean up the batch job history

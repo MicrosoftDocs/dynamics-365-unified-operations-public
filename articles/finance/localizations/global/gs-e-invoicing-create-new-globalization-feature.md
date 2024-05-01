@@ -1,6 +1,6 @@
 ---
-title: Create Globalization features (preview)
-description: This article explains how to create a Globalization feature (preview).
+title: Create Globalization features
+description: This article explains how to create a Globalization feature.
 author: ilikond
 ms.date: 01/29/2024
 ms.topic: article
@@ -15,10 +15,9 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Create Globalization features (preview)
+# Create Globalization features
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can create an Electronic invoicing feature from scratch, or you can base it on an existing feature. When you create a feature from scratch, you must manually add Electronic reporting (ER) configurations and other components, such as the feature setup and application setup details. When you create a feature that's based on an existing feature, the new feature inherits all the base feature's configurations and parameters. You can review what's copied from the base feature to the new feature.
 

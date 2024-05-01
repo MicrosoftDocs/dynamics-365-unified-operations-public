@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Record a vendor invoice in the invoice journal
-description: This task guide will show how to record vendor invoices that are not associated with purchase orders. 
-author: abruer
+description: Learn about how to record vendor invoices that are not associated with purchase orders, including a step-by-step process. 
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/08/2023
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: VendInvoiceWorkspace, LedgerJournalTable, LedgerJournalTransVendInvoice   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendInvoiceWorkspace, LedgerJournalTable, LedgerJournalTransVendInvoice
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Record a vendor invoice in the invoice journal
 
 [!include [banner](../../includes/banner.md)]

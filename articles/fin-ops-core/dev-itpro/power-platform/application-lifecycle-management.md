@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Application lifecycle management for solutions that use virtual entities
-description: This article explains the application lifecycle for solutions that use virtual entities for finance and operations.
+description: Learn about the application lifecycle for solutions that use virtual entities for finance and operations, including an overview on solution management.
 author: Sunil-Garg
-ms.date: 07/13/2020
-ms.topic: article
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: sunilg
+ms.topic: article
+ms.date: 07/13/2020
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-10-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 ---
 

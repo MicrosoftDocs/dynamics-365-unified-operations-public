@@ -48,7 +48,7 @@ The following illustration shows the **Show taxes breakup in order summary** che
 
 ## Additional resources
 
-[Sales tax overview](/finance/general-ledger/indirect-taxes-overview)
+[Sales tax overview](../finance/general-ledger/indirect-taxes-overview.md)
 
 [Configure sales tax for online orders](sales-tax-config.md)
 

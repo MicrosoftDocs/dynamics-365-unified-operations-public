@@ -63,6 +63,8 @@ You can configure mobile device menu items that use one of the following **Work 
 - *Purchase order line receiving*
 - *Transfer order item receiving*
 - *Transfer order line receiving*
+- *Inbound shipment order item receiving*
+- *Inbound shipment order line receiving*
 - *Load item receiving*
 - *License plate receiving*
 

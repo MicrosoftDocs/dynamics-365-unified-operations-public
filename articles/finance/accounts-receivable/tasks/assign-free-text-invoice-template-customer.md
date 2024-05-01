@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Assign a free text invoice template to a customer
-description: This task demonstrates how to assign a free text invoice template to a customer. 
-author: ShivamPandey-msft
-ms.date: 03/23/2023
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: CustTable, CustRecurrenceInvoice   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to assign a free text invoice template to a customer intended for users responsible for managing A/R invoices, including a step-by-step process. 
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: how-to
+ms.date: 03/23/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User  
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30 
+ms.search.form: CustTable, CustRecurrenceInvoice  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Assign a free text invoice template to a customer
 
 [!include [banner](../../includes/banner.md)]
