@@ -6,9 +6,6 @@ description: This article explains how to import and manually create postal code
 author: EvgenyPopovMBS
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LogisticsAddressSetup

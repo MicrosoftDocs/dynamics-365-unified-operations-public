@@ -1,13 +1,12 @@
 ---
 title: Set up and manage archive data in Dynamics 365 Finance (preview)
-description: This article describes how to set up and manage archive data in Microsoft Dynamics 365 Finance. 
+description: Learn about how to set up and manage archive data in Microsoft Dynamics 365 Finance, including an overview on preparing environments.
 author: pnghub
 ms.author: gned
-ms.reviewer: johnmichalak
 ms.topic: conceptual
 ms.date: 03/29/2024
 ms.custom:
-
+ms.reviewer: johnmichalak
 ---
 # Set up and manage archive data in Dynamics 365 Finance (preview)
 

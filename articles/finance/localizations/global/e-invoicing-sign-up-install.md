@@ -4,8 +4,6 @@ description: This article provides information about how to sign up for and inst
 author: anuchansoriya
 ms.date: 01/22/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

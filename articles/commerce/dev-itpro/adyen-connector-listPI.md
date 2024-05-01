@@ -4,8 +4,6 @@ description: This article describes how to save payment instruments by using the
 author: BrianShook
 ms.date: 05/13/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

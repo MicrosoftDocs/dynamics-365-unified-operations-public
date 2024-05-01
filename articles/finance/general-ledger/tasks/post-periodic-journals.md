@@ -4,10 +4,8 @@
 title: Post periodic journals
 description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. 
 author: aprilolson
-ms.date: 03/21/2023
+ms.date: 04/17/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

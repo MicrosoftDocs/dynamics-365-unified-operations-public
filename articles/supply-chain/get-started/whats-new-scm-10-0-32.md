@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 01/30/2023
+ms.date: 04/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom:
@@ -187,7 +187,7 @@ We have recently added or significantly updated the following help articles. The
 | Supply Chain Management development | [Create and process message queues and message types](../supply-chain-dev/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
-| Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md)
+| Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md) |
 
 ## Additional resources
 

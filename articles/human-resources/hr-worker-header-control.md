@@ -6,9 +6,6 @@ description: This article provides information about the personalizable header c
 author: twheeloc
 ms.date: 09/06/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Revenue recognition reallocation
-description: This article provides information about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed. It includes links to other topics that describe how to recognize revenue in multiple scenarios.
-author: bking
-ms.date: 02/22/2023
+description: Learn about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Customer
-audience: Application User
-# ms.devlang: 
+ms.date: 02/22/2023
+ms.custom: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User
 ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
 ms.search.validFrom: 2020-12-21
+ms.search.form: Customer
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Revenue recognition reallocation

@@ -6,9 +6,6 @@ description: This article explains the configuration steps that will enable your
 author: ShivamPandey-msft
 ms.date: 10/11/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

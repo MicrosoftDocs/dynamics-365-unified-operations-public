@@ -186,7 +186,7 @@ Follow these steps to enable new containers to be created on the packing flow pa
 
 ## Add a detour for closing a container
 
-You'll now add another [detour](warehouse-app-detours.md) so that workers can close a container from within the packing flow. 
+You'll now add another [detour](warehouse-app-detours.md) so that workers can close a container from within the packing flow.
 
 Follow these steps to enable containers to be closed on the packing flow page that prompts workers to scan an item.
 
@@ -454,6 +454,9 @@ Your new mobile device menu items are now ready to be added to the mobile device
 1. On the Action Pane, select **Save**.
 1. In the list pane on the left, select the *Main* menu.
 1. In the **Available menus and menu items** list, in the **Menus** section, select your new *Inquire* menu. Then select the **Add** button (right arrow) to move that item into the **Menu structure** list.
+
+    > [!TIP]
+    > Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, you should add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**.
 
 ## Configure detours in your mobile device steps
 

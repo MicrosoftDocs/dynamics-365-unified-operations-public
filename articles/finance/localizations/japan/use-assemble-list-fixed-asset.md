@@ -4,8 +4,6 @@ description: In Japan, you can transfer an inventory item to a fixed asset.
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Japan

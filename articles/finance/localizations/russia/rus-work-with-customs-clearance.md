@@ -6,9 +6,6 @@ description: This article explains how to work with customs clearance of product
 author: AdamTrukawka
 ms.date: 08/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 #ms.search.form:

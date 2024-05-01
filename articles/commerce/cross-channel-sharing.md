@@ -4,8 +4,6 @@ description: This article describes how to enable and use the cross-channel shar
 author: josaw1
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

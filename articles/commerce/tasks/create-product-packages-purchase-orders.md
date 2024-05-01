@@ -6,8 +6,6 @@ description: This procedure walks through creating a product package and using i
 author: josaw1
 ms.date: 11/14/2017
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

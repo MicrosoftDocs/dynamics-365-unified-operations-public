@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Periodic credit management tasks
-description: This article describes the periodic tasks that are part of the process of managing credit limits for customers. 
+description: Learn about the periodic tasks that are part of the process of managing credit limits for customers, including an overview on updating risk scores. 
 author: JodiChristiansen
-ms.date: 09/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 04/24/2024
+ms.custom:  
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
-
 ---
 
 # Periodic credit management tasks
@@ -32,6 +19,23 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 This article describes the periodic tasks that are part of the process of managing credit limits for customers.
+
+## Calculate balance statistics
+
+You can run the **Calculate balance statistics** process to update the calculation of balance statistics that are shown on the **Balance statistics inquiry** page. This information calculates risk scores and the values that are shown in the credit statistics FactBoxes on the **Customer** page.
+
+When you run the process, customer balance statistics are updated immediately. To set up a batch job to run the process, set the **Batch processing** option to **Yes**.
+
+## Force credit hold
+
+Instead of using blocking reasons to put a sales order on a credit hold, you can use the **Force credit hold** periodic task to put multiple sales orders on hold. 
+To run this process, follow these steps.
+
+1. Go to **Credit and collections** \> **Periodic tasks** \> **Credit management** \> **Force credit hold**.
+1. Select a reason.
+1. Use the filter to restrict the credit hold to specific sales order numbers and customer accounts.
+1. Select **OK** to run the process.
+1. After the process is completed, use the Action center to view the sales orders that were put on hold.
 
 ## Update risk scores
 
@@ -44,11 +48,10 @@ As businesses evolve and circumstances change, the credit risks for a given cust
 - **Average balance** – This score is based on the accounts receivable balance for the previous 12-month period.
 - **Credit management group**, **Account status**, and **Country** – These scores use information from the customer.
 
-## Update customer balance statistics
+## Delete outdated balance statistics records
 
-You can run the **Update customer balance statistics** process to update the calculation of balance statistics that is shown on the **Balance statistics inquiry** page. This information is used to calculate risk scores and the values that are shown in the credit statistics FactBoxes on the **Customer** page.
+When the **Customer balance statistics deletion job** feature is enabled in Feature management, you can use the **Delete outdated balance statistics records** periodic task to remove records from the Customer balance statistics table. If performance is affected when you run the **Calculate balance statistics** process, the table has many old records that slow down the calculation. This periodic task lets you remove older records that aren't used in the calculation but are still stored in the table.
 
-When you run the process, it updates customer balance statistics for a single customer. To set up a batch job to run the process for multiple customers, you can use the **Calculate balance statistics** page (**Credit management \> Periodic tasks \> Calculate balance statistics**).
-
+By default, the **Delete records until** field is set to one year before the current date. All records from before that date in the Customer balance statistics table are removed. You can enter a different date, depending on the number of months that's specified in the **Balance statistics** field on the **Credit and collections parameters** page. For example, if you're using 12 months of history to calculate balance statistics, the **Balance statistics** field is set to **12**. In this case, to ensure that you have 12 months of history for the calculation of balance statistics, you can't set the **Delete records until** to a date that's earlier than one year ago. If you try, you receive the following message: "The date can't be after MM/DD/YYYY because of the number of months specified under 'Balance statistics' in Credit and collections parameters." You must enter a later date. After you enter a valid date, select **OK** to remove all records from before that date in the table.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

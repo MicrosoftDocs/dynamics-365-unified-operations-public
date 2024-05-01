@@ -4,8 +4,6 @@ description: This article explains how to control the Tender procedure identific
 author: AdamTrukawka
 ms.date: 02/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy

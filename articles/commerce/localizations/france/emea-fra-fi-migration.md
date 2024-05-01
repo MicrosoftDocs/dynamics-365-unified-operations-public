@@ -4,8 +4,6 @@ description: This article explains how to migrate from the legacy digital signin
 author: EvgenyPopovMBS
 ms.date: 08/23/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: France

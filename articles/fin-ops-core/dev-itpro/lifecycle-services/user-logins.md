@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Track user sign-ins 
-description: This article explains how to create an audit log of users who have signed in and used finance and operations apps.
+description: Learn about how to create an audit log of users who have signed in to your Dynamics environments and used finance and operations apps.
 author: angelmarshall
-ms.date: 11/02/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: article
+ms.date: 11/02/2017
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-
+ms.assetid: 
 ---
+
 # Track user sign-ins 
  
 [!include [banner](../includes/banner.md)]

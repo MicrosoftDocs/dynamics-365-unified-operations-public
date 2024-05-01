@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Vendor invoice center workspace overview
-description: This article provides information about the Vendor invoice center workspace.
+description: Learn about the Vendor invoice center workspace, including outlines on manual entry stages, automation stages, and workflow stages.
 author: leizi2015
-ms.date: 3/19/2024
-ms.topic: overview
-
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: zezhangzhao
+ms.topic: overview
+ms.date: 3/19/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: 
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Vendor invoice center workspace overview

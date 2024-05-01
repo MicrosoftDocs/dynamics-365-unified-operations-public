@@ -1,27 +1,19 @@
 --- 
-# required metadata 
- 
 title: Deposit customer payments
-description: Deposit customer payments. 
-author: ShivamPandey-msft
-ms.date: 04/05/2024
-ms.topic: how-to 
- 
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to deposit customer payments, including a step-by-step process that outlines the process of depositing payments.
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/05/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Deposit customer payments
 
 [!include [banner](../../includes/banner.md)]

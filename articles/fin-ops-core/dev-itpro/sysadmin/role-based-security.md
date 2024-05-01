@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Role-based security
-description: This article provides an overview of the elements of role-based security. 
+description: Learn about the elements of role-based security, including overviews of security roles, duties, privileges, and permissions.
 author: gned
-ms.date: 04/02/2024
+ms.author: gned
 ms.topic: overview
+ms.date: 04/02/2024
 ms.custom: 
   - bap-template
-
-# optional metadata
-
-ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 48cfdd5a-7d04-4969-93ac-6cd6d10d5a09
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gned
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 48cfdd5a-7d04-4969-93ac-6cd6d10d5a09
 ---
 
 # Role-based security
