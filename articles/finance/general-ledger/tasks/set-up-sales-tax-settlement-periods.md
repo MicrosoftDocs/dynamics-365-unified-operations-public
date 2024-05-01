@@ -40,12 +40,13 @@ This task uses the USMF demo company.
 9. Enter the number of Period interval units per period. For example, a quarter has 3 months.
 10. Select or clear the **Use batch processing for sales tax settlement** check box. The settlement process for the settlement period can be processed as batch job in the background. This is recommended for a large number of tax transactions within a period interval.
 11. Select or clear the **Prevent generating offset tax transactions** check box. By default, the system generates offset tax transactions during the settlement process, which cause can performance issue if there are a large number of tax transactions within a period interval. Select this check box to prevent generating offset tax transactions.
-12. Expand the **Period intervals** tab.
-13. Select **Add**.
-14. In the **From date** field in the new row, enter a date.
-15. In the **To date** field, enter a date.
-16. Select **New period interval**. Once the first period interval has been entered, new periods can be created automatically. You can come back and add new period intervals as required.  
-17. Close the page.
+12. Select or clear the **Include corrections** check box. The parameter is available starting from the 10.0.41 version by enabling the **Enable “Include corrections” option on Sales tax settlement periods** feature in the **Feature management** workspace. The **Include corrections** option affects the sales tax settlement process and periodic sales tax reporting and lets you control the **Include corrections** option for each sales tax settlement period instead of the whole legal entity.
+13. Expand the **Period intervals** tab.
+14. Select **Add**.
+15. In the **From date** field in the new row, enter a date.
+16. In the **To date** field, enter a date.
+17. Select **New period interval**. Once the first period interval has been entered, new periods can be created automatically. You can come back and add new period intervals as required.  
+18. Close the page.
 
 
 
