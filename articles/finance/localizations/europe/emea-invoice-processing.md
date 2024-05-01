@@ -34,8 +34,8 @@ This article briefly describes some country/region-specific scenarios, such as i
 </thead>
 <tbody>
 <tr>
-<td>Accounts receivable and Accounts payable dates for VAT</td>
-<td>Czech Republic, Poland</td>
+<td>Accounts payable dates for VAT</td>
+<td>Czech Republic, Spain</td>
 <td>
 <p>When goods are purchased from European Union (EU) countries/regions, there is an obligation of self-assessment of VAT:</p>
 <ul>
