@@ -253,7 +253,7 @@ This article explains how to add a Microsoft SQL Server Integration Services (SS
 
     1. Repeat these step for any additional DIXF nodes.
 
-1. Add in the predeployment script to enable the DIXF service. If you don't have the base predeployment script, set up the script, and enable the *TSG\_EnableGMSAForAOS.ps1* script. In the main predeployment script, uncomment the line for the DIXF script, and confirm that the DIXF share that you created in the previous step is set. For more information, see [Scripts for resolving issues in on-premises environments](../deployment/onprem-tsg-implementations.md).
+1. Add in the predeployment script to enable the DIXF service. If you don't have the base predeployment script, set up the script, and enable the [TSG_EnableDixfService.ps1](./onprem-tsg-implementations.md#enableDixf) script. In the main predeployment script, uncomment the line for the DIXF script, and confirm that the DIXF share that you created in the previous step is set. For more information, see [Scripts for resolving issues in on-premises environments](../deployment/onprem-tsg-implementations.md).
 1. Sign in to Lifecycle Services, and select the project and environment. Select **Maintain** \> **Update settings**, and then select **Prepare**. After the configuration is downloaded, select **Update** in Lifecycle Services to complete the process.
 
 ## <a name="appendix-a"></a>Appendix A
