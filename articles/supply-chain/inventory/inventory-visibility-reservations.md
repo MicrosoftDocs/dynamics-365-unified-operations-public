@@ -31,15 +31,15 @@ Soft reservations help organizations achieve a single source of truth for availa
 - The organization has at least two different systems that are directly taking outbound orders.
 - The organization is very strict and wants to prevent double-booking of product inventory, which can happen if multiple systems are able to overbook the last piece of stock. This situation is prevented when all order systems can make instant soft reservation API calls to Inventory Visibility, which provides a single source of truth for inventory availability.
 
-[<img src="media/inventory-visibility-soft-reservation.png" alt="Inventory Visibility soft reservation." title="Inventory Visibility soft reservation" width="720" />](media/inventory-visibility-soft-reservation.png)
+:::image type="content" source="media/inventory-visibility-soft-reservation.svg" alt-text="Inventory Visibility soft reservation." lightbox="media/inventory-visibility-soft-reservation.svg":::
 
 The previous illustration shows how soft reservation works and highlights the following operations:
 
 - Your initial inventory level is synced to Inventory Visibility from Microsoft Dynamics 365 Supply Chain Management.
-- You have two order taking systems running in parallel (Ecommerce system, and Dynamics 365 SCM), in real-life case you can have more systems.
+- You have two order-taking systems running in parallel (an e-commerce system and Supply Chain Management). In an actual case, you could have more systems.
 - Soft reservations are posted from each of your order channels or systems to Inventory Visibility. Inventory Visibility validates inventory availability and tries to make a soft reservation. If soft reservation succeeds, Inventory Visibility adds to the soft reserved quantity, deducts from the available for reservation (AFR) quantity, and respond with a soft reservation ID.
-- When Sales Order A was soft reserved in IV, your physical inventory quantity remains the same in Dynamics 365 SCM because Sales Order A has not been synced into Dynamics 365 SCM.
-- Now call center placed Sales Order B directly in Dynamics 365 SCM, now with soft reservation call to IV from Sales Order B, despite in Dynamics 365 SCM it still shows 100 qty available, IV knows there’s only 90 qtys available therefore would fail the soft reservation request. Of course users still have the option to decide to block or continue proceeding the Sales Order B processing (if oversell is allowed) in Dynamics 365 SCM.
+- When sales order A is soft reserved in Inventory Visibility, your physical inventory quantity remains the same in Supply Chain Management because sales order A hasn't been synced to Supply Chain Management.
+- Now, the call center enters sales order B directly in Supply Chain Management, which makes a soft reservation call to Inventory Visibility. Even though Supply Chain Management still shows 100 pieces available, Inventory Visibility knows there's only 90 pieces available, so the soft reservation request fails. Nevertheless, the call center user can still choose to block or continue processing sales order B in Supply Chain Management (if overselling is allowed).
 - You can then sync either single or aggregated soft-reserved orders (order lines) into Supply Chain Management to make hard reservations and release to the warehouse or update the final inventory quantity.
 - You can set the system to [offset soft reservations](#offset-scm) when physical inventory is updated in Supply Chain Management.
 
@@ -52,13 +52,7 @@ Soft reservations are usually created, consumed, and canceled by using API calls
 
 ## <a name="turn-on"></a>Turn on and set up the reservation feature in UI version 2
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
-
 This section and its subsections apply when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Turn on the reservation feature
 
@@ -257,24 +251,18 @@ A successful soft reservation request returns a *soft reservation ID* for each r
 
 You can trigger a soft reservation from a Supply Chain Management sales order and then make an offset back to Inventory Visibility when the order lines are hard reserved (that is, changed to a status of *Reserve physical*, *Reserve ordered*, *Picked*, and so on). The process differs slightly, depending on the soft reservation feature that you're using (*Inventory Visibility integration with reservation offset* or *Inventory Visibility integration with soft reservation on sales order lines*).
 
-**Inventory Visibility integration with soft reservation on sales order lines** 
+- *Inventory Visibility integration with soft reservation on sales order lines* – This feature lets you avoid double booking by making a soft reservation after you create a sales order line in Supply Chain Management. The soft reservation automatically offsets when this line reaches a status of *Reserve ordered*, *Reserve physical*, *Pick*, and so on.
 
-This feature allows you to easily make a soft reservation once you create a sales order line in Supply Chain Management to avoid double-booking from another channel. And the soft reservation will automatically offset after this line is **reserve ordered**, **reserve physical**, **pick**, and so on. 
-
-**Inventory Visibility integration with reservation offset** 
-
-This feature allows users to offset the soft reservation which is done outside of Supply Chain Management. 
-
-You can soft reserve directly from soft reservation Api or other customization channel, and fill in reservation id in sales order line in Supply Chain Management, and this feature will automatically offset the soft reservation once the status is scarify the condition as your settings. 
+- *Inventory Visibility integration with reservation offset* – This feature lets you offset soft reservations that were made outside of Supply Chain Management. You can soft reserve directly from the soft reservation API (or another customization channel) and then enter the reservation ID into the corresponding sales order line in Supply Chain Management. This feature automatically offsets the soft reservation once the line status fulfills the conditions established by your settings.
 
 ### Turn on the feature in Supply Chain Management
 
-Sign in to Supply Chain Management, and make sure that you've enabled the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Sign in to Supply Chain Management and make sure that you've enabled the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 - *Inventory Visibility integration with reservation offset* – This feature requires Supply Chain Management version 10.0.22 or later.
 - *Inventory Visibility integration with soft reservation on sales order lines* – This feature is recommended if you're running Supply Chain Management version 10.0.33 or later.
 
-Compatibility between the features is established from version 10.0.1627.63 for 10.0.34 and version 10.0.1591.98 for 10.0.35 onward, including all subsequent versions such as 10.0.36, 10.0.37, and beyond. Prior to these specified versions, the features are not compatible with each other. We recommend upgrading to a newer version if you require both features that are incompatible in the current version.
+These features are compatible with each other as of build 10.0.1591.98 of Supply Chain Management version 10.0.34 and build 10.0.1627.63 of Supply Chain Management version 10.0.35 (and all builds of versions 10.0.36 and higher). Prior to these versions, the features aren't compatible with each other, so you should only enable the one you want to use. We recommend upgrading to a newer version if you require both features.
 
 ### Configure additional settings if the "Inventory Visibility integration with soft reservation on sales order lines" feature is enabled
 
@@ -418,6 +406,7 @@ To check for failed reservation offsets, go to **Inventory Management** \> **Per
 
 ### Cancel or revert a soft reservation
 
-If an original order line is canceled or deleted, and you must revert the corresponding soft reservation. You can:
-- post a soft reservation event with a negative quantity that has the exact same information in your API query body.
-- post a unreserve request with the same quantity and its reservation id. Refer [unreserve api](inventory-visibility-api.md#reverse-reservation-events) for more information.
+If an original order line is canceled or deleted, and you must revert the corresponding soft reservation, take one of the following actions:
+
+- Post a soft reservation event with a negative quantity that has the same exact information in your API query body.
+- Post an unreserve request with the same quantity and reservation ID. See [Reverse reservation events](inventory-visibility-api.md#reverse-reservation-events) for more information.
