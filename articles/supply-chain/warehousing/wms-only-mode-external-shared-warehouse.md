@@ -23,10 +23,11 @@ This article explains how to run Warehouse management only mode with external sh
 
 You can use [Warehouse management only mode](wms-only-mode-overview.md) to handle logistics operations in a legal entity that's dedicated to warehousing operations. You can then connect warehouses between that legal entity and other legal entities that do all the order and financial processing. In addition, warehouse management processes can use an owner inventory dimension to track which legal entity owns the inventory for items that are shared across legal entities.
 
-This feature works well in a single-instance deployment model, in case you want to link multiple tenants, one of which handles the logistics warehouse processes you need an integration process like the one that's described in [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
+This feature works without modifications in a single-instance deployment model, in case you want to link multiple tenants, one of which handles the logistics warehouse processes you need an integration process like the one that's described in [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
 
-For integrations between multiple Dynamics 365 instances you can use the following technical documentation work items:
-- [Integrate your Dynamics 365 apps with other solutions](../../guidance/implementation-guide/integrate-other-solutions.md)
+To use *Warehouse management only mode* in a multi-instance deployment you will need to use the [standard integration process](../../guidance/implementation-guide/integrate-other-solutions.md).
+
+The below describes the specifics about the *Warehouse management only mode* integration:
 - [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md)
 - [Exchange data between systems](wms-only-mode-exchange-data.md)
 - [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
