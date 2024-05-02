@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Business performance planning custom visuals overview
-description: This article provides an overview of the custom visuals in the Business performance planning application.
+description: Access an overview of the custom visuals in the Business performance planning application, including outlines on matrix planning, reporting, and variance.
 author: ShielaSogge
-ms.date: 12/14/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 12/14/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Business performance planning custom visuals overview
 
 [!include [banner](../includes/banner.md)]

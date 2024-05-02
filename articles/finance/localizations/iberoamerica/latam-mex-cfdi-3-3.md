@@ -4,10 +4,8 @@ description: This article provides information about Comprobante Fiscal Digital 
 author: AdamTrukawka
 ms.date: 10/16/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Mexico
 ms.author: atrukawk
 ms.search.validFrom: 2017-12-01

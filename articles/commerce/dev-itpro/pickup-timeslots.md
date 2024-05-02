@@ -4,8 +4,6 @@ description: This article describes how to create, configure, and update custome
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

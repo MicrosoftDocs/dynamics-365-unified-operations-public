@@ -1,15 +1,15 @@
 ---
 title: Enable table maps for dual-write
-description: This article describes how the table maps work for dual-write.
+description: Learn about how the table maps work for dual-write, including a table that outlines available actions for various statuses.
 author: nhelgren
-ms.date: 12/04/2023
+ms.author: nhelgren
 ms.topic: how-to
+ms.date: 12/04/2023
 ms.custom: 
   - bap-template
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---

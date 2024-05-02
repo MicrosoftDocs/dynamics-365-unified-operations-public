@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Embed third-party apps 
-description: This article explains how to embed third-party apps to augment the product's functionality.
+description: This article explains how to embed third-party apps to augment the product's functionality, including an overview on embedding wesites on existing pages.
 author: jasongre
-ms.date: 09/13/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
+ms.topic: article
+ms.date: 09/13/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-04-30
+ms.search.form: DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
 ms.dyn365.ops.version: 10.0.19
-
 ---
 
 # Embed third-party apps

@@ -1,13 +1,11 @@
 ---
 title: Set up Electronic invoicing parameters
-description: This article explains how to set up the Electronic invoicing parameters.
+description: This article explains how to set up the Electronic invoicing parameters (RCS).
 author: ilikond
-ms.date: 06/30/2022
+ms.date: 02/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: ikondratenko
 ms.search.validFrom: 
@@ -71,6 +69,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     | FiscalDocument_BR | <p>**Mapping name:** Fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Fiscal documents mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NF-e (BR) |
     | Correction letter | <p>**Mapping name:** FD correction letter context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Correction letter mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NF-e (BR) |
     | Service Fiscal document | <p>**Mapping name:** Fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Fiscal documents mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
+    | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
 
 If you derive a configuration from the configuration that is mentioned in the preceding table, define the new configuration.
 

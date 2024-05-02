@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Prepare for go-live
-description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
+description: Learn about how to prepare for the go-live for finance and operations apps, including a table that lists the key steps in the go-live process.
 author: alejandra-cabrales
-ms.date: 08/29/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: alcabral
+ms.topic: article
+ms.date: 08/29/2023
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-01-31
+ms.search.form: 
 ms.dyn365.ops.version: July 2017 update
 ---
 
@@ -99,7 +89,7 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 1. The project team decides who from the **customer** organization will be the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be granted only to the member of the customer organization. Microsoft grants access to this user and this user will manage access for other team members. 
 
-2. Project team sends an e-mail to d365fogl@microsoft.com and includes the following information:
+2. Project team sends an e-mail to [d365fogl@microsoft.com](mailto:d365fogl@microsoft.com) and includes the following information:
 
    - Confirmation that the project is ready to start the Go-live Readiness Review. Carefully review prerequisites for the Go-live readiness review that are described in the earlier section of this article.
    - Confirmation of the Lifecycle Services project ID or Lifecycle Services project URL.

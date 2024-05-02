@@ -6,8 +6,6 @@ description: This procedure demonstrates how to create and update a sales quotat
 author: Henrikan
 ms.date: 06/26/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,10 +4,8 @@ description: This article provides information about Belgium annual VAT listing 
 author: AdamTrukawka
 ms.date: 09/09/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Belgium
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28

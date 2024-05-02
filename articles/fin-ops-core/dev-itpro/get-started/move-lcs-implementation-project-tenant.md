@@ -1,41 +1,30 @@
 ---
-# required metadata
-
-title: Move Lifecycle Services implementation projects to different Azure AD tenants
-description: This article explains how to move your subscriptions and Lifecycle Services Implementation project to a different Azure AD tenant.
-author: RicardoCaeiroPro
-ms.date: 07/18/2023
+title: Move Lifecycle Services implementation projects to different Microsoft Entra tenants
+description: Learn about how to move your subscriptions and Lifecycle Services Implementation project to a different Microsoft Entra tenant.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
+ms.date: 07/18/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: v-ricaei
-ms.search.validFrom: 2018-05-30 
+ms.search.validFrom: 2018-05-30
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0
 ---
 
-# Move Lifecycle Services implementation projects to different Azure AD tenants
+# Move Lifecycle Services implementation projects to different Microsoft Entra tenants
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-You can move your subscriptions and your Microsoft Dynamics Lifecycle Services Implementation project to a different Microsoft Azure Active Directory (Azure AD) tenant. Here are some scenarios where this move might be required:
+You can move your subscriptions and your Microsoft Dynamics Lifecycle Services Implementation project to a different Microsoft Microsoft Entra tenant. Here are some scenarios where this move might be required:
 
-- Subscriptions were accidentally purchased against the incorrect Azure AD tenant.
+- Subscriptions were accidentally purchased against the incorrect Microsoft Entra tenant.
 
     > [!NOTE]
-    > If you're a cloud service provider, and you sell subscriptions for finance and operations apps to an existing customer, you must request a reseller relationship with that customer to put the subscriptions on the customer's existing Azure AD tenant. If you create a new customer record for the customer in Microsoft Partner Center, you create a new Azure AD tenant for the customer.
+    > If you're a cloud service provider, and you sell subscriptions for finance and operations apps to an existing customer, you must request a reseller relationship with that customer to put the subscriptions on the customer's existing Microsoft Entra tenant. If you create a new customer record for the customer in Microsoft Partner Center, you create a new Microsoft Entra tenant for the customer.
 
-- The customer changes the structure of the Azure AD tenant after the subscription is purchased.
+- The customer changes the structure of the Microsoft Entra tenant after the subscription is purchased.
 
 The process for moving your subscriptions and all related artifacts has four main steps, as shown in the following illustration.
 
@@ -43,7 +32,7 @@ The process for moving your subscriptions and all related artifacts has four mai
 
 ## Activate subscriptions on the new tenant
 
-Work with your cloud service provider or volume license reseller to activate the subscriptions against the new Azure AD tenant. All subscriptions for users, and for add-on environments, must be activated.
+Work with your cloud service provider or volume license reseller to activate the subscriptions against the new Microsoft Entra tenant. All subscriptions for users, and for add-on environments, must be activated.
 
 ### Cloud service provider
 
@@ -76,7 +65,7 @@ On the new tenant, you will get a new Lifecycle Services project that you must i
 	3. Update your Business process modeler (BPM) library.
 
 > [!IMPORTANT]
-> During this period, you'll have two parallel Lifecycle Services projects. You can verify the name and ID of the Azure AD tenant that is associated with an Lifecycle Services project on the **Subscriptions available** page in Lifecycle Services.
+> During this period, you'll have two parallel Lifecycle Services projects. You can verify the name and ID of the Microsoft Entra tenant that is associated with an Lifecycle Services project on the **Subscriptions available** page in Lifecycle Services.
 
 ## Move your sandbox environments to the new tenant
 1. Deploy the nonproduction environments in the new Lifecycle Services project.
@@ -92,7 +81,7 @@ On the new tenant, you will get a new Lifecycle Services project that you must i
         WHERE ID = 'Admin'
         ```
 5. Reimport all other users that have the correct security identifier (SID) and identity provider.
-6. Run the following commands to update the tenant ID in the appropriate tables. You can verify the Azure AD tenant ID that is associated with an Lifecycle Services project on the **Subscriptions available** page in Lifecycle Services.
+6. Run the following commands to update the tenant ID in the appropriate tables. You can verify the Microsoft Entra tenant ID that is associated with an Lifecycle Services project on the **Subscriptions available** page in Lifecycle Services.
 	
 	```sql
 	Update POWERBICONFIG set TENANTID = 'newtenantid' where TENANTID = 'oldtenantid'
@@ -104,7 +93,7 @@ On the new tenant, you will get a new Lifecycle Services project that you must i
 7. Fully configure the environments. As part of this step, configure the integration endpoints.
 8. Perform smoke tests on the user acceptance testing (UAT) environment in the new Lifecycle Services project. These tests should focus on user sign-in, integrations, workflows, printing, reporting, and similar processes that depend on configuration and user information.
 
-Depending on your solution and scope, you might have to perform more steps on the new Azure AD tenant. These steps might include registering applications (for recurring integrations and warehouse management), adding domains, and setting up directory synchronization to enable single sign-on (SSO).
+Depending on your solution and scope, you might have to perform more steps on the new Microsoft Entra tenant. These steps might include registering applications (for recurring integrations and warehouse management), adding domains, and setting up directory synchronization to enable single sign-on (SSO).
 
 Calls to web services are allowed only from the **home** tenant for the environment. For example, the original tenant was companya.com, and integration ran as `services\@companya.com`. In this case, when you switch tenants to companyb.com, you can no longer use `services\@companya.com` for web service calls, even if you update **userInfo.networkdomain** to `https://sts.windows.net/companyb.com`.
 
@@ -166,13 +155,13 @@ Before requesting the production environment, ensure that all prerequisites are 
 9. Request to copy database and blob storage from the old production environment to the new production environment. Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include Lifecycle Services IDs and environment IDs from source and target projects in the support ticket.
 	 
   - This process requires interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
-  - After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you need to reimport all users from the new Azure Active Directory tenant. 
+  - After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you need to reimport all users from the new Microsoft Entra tenant. 
   - You need to validate the new production environment to ensure that all business processes are successful. 
   - If you encounter an issue after the migration, file a support ticket.
 
 ## Tear down the Lifecycle Services project on the old tenant
 
-After the new Lifecycle Services project on the new Azure AD tenant is fully functional, you must stop, deallocate, and delete the environments on the old Lifecycle Services project. When you've finished, the **Configure** button becomes available for each environment. If you already had a production environment on the old tenant, you must file a support ticket to have it deleted.
+After the new Lifecycle Services project on the new Microsoft Entra tenant is fully functional, you must stop, deallocate, and delete the environments on the old Lifecycle Services project. When you've finished, the **Configure** button becomes available for each environment. If you already had a production environment on the old tenant, you must file a support ticket to have it deleted.
 
 You should save any remaining artifacts from the Asset library that you might require later.
 
@@ -181,7 +170,7 @@ Microsoft reserves the right to disable the customer's account and delete the cu
 
 ## Suspend subscriptions on the old tenant
 
-After all the environments have been deleted, and you've saved the Lifecycle Services artifacts that you require, work with your cloud service provider or Volume Licensing Support to suspend all the licenses on the old Azure AD tenant.
+After all the environments have been deleted, and you've saved the Lifecycle Services artifacts that you require, work with your cloud service provider or Volume Licensing Support to suspend all the licenses on the old Microsoft Entra tenant.
 
 - **Cloud service provider** - Suspend the existing subscriptions against the old tenant.
 - **Volume Licensing Support** - Call Volume Licensing Support to confirm that you've completed the work and that the subscriptions can now be suspended against the old tenant.

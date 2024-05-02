@@ -6,9 +6,6 @@ description: This article describes how to configure Microsoft Power Platform so
 author: jiwo
 ms.date: 11/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FinancialReports

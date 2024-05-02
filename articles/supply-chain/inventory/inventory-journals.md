@@ -6,8 +6,6 @@ description: This article describes how you can use inventory journals to post v
 author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

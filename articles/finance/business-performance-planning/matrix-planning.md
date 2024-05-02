@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Matrix planning visual
-description: This article describes how to use the Matrix planning visual in the Business performance planning application.
+description: Learn how to use the Matrix planning visual in the Business performance planning application, including outlines on benefits, prerequisites, and installation.
 author: ShielaSogge
-ms.date: 12/07/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 12/07/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version:
-
 ---
+
 # Matrix planning visual
 
 This article describes how to use the **Matrix planning** visual in the Business performance planning application.

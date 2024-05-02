@@ -6,9 +6,6 @@ description: By mapping different cost element dimension members to a common set
 author: AndersGirke
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping

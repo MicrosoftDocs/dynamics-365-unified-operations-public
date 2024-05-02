@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Power Apps portals with finance and operations
-description: This article explains how Power Apps portals can be used with finance and operations.
+description: Learn about how Power Apps portals can be used with finance and operations, including an overview on ananymous access from Power Apps portals.
 author: Sunil-Garg
-ms.date: 07/13/2020
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: sunilg
+ms.topic: article
+ms.date: 07/13/2020
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 
@@ -49,7 +39,7 @@ Fully authenticated user access from Power Apps portals to finance and operation
 
 Because Power Apps portals authentication is linked to the Contacts entity in Dataverse, a mapping must be established between the Dataverse contact and the corresponding user in finance and operations. This mapping can be done by adding entries to the **msdyn\_externalportalusermapping** entity. From a security perspective, the scope of virtual entities that are made available to authenticated users must be configured as **Global** in the Power Apps portal.
 
-When authenticated users from a different tenant need to be added to finance and operations as users, you must use the [Create new user](../sysadmin/tasks/create-new-users.md) process in finance and operations. This process adds cross-tenant users as Microsoft Azure Active Directory (Azure AD) business-to-business (B2B) guest users.
+When authenticated users from a different tenant need to be added to finance and operations as users, you must use the [Create new user](../sysadmin/tasks/create-new-users.md) process in finance and operations. This process adds cross-tenant users as Microsoft Microsoft Entra business-to-business (B2B) guest users.
 
 > [!NOTE]
 > Access from the Power Apps Portal will fail if the user (authenticated or anonynous) has been assigned the System administrator role in any finance and operations apps.

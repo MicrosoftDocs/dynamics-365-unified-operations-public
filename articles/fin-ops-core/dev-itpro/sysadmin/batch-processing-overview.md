@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Batch processing overview
-description: This article provides an overview of batch processing.
+description: Learn about batch processing, which includes an overview on batch functions, with a collection of links to various resources.
 author: snagamalla
-ms.date: 02/09/2024
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: snagamalla
+ms.topic: overview
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: IT Pro 
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Batch processing overview
@@ -47,7 +35,9 @@ Use batch groups to categorize batch tasks and run them on specific servers. The
 
 For example, server A is set up to print reports, and server B is set up to send electronic documents. You can use batch groups to make sure that reporting tasks are run on server A and electronic documents are processed by server B.
 
-For more information, see [Batch processing and batch servers](batch-server-overview.md).
+For more information, see: 
+- [Batch processing and batch servers](batch-server-overview.md)
+- [Batch capacity](batch-capacity.md)
 
 
 ## Batch functions

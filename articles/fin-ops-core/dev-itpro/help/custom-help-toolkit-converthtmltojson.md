@@ -1,13 +1,13 @@
 ---
 title: The ConvertHtmlToJson tool
-description: This article describes the ConvertHtmlToJson tool that converts HTML files to JSON files for finance and operations apps.
+description: Learn about the ConvertHtmlToJson tool that converts HTML files to JSON files for finance and operations apps.
 author: brentholtorf
-ms.date: 04/06/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: bholtorf
+ms.topic: article
+ms.date: 04/06/2023
+ms.reviewer: josaw
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---

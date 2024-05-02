@@ -6,15 +6,12 @@ description: This article provides information about the new Indian tax legislat
 author: EricWangChen
 ms.date: 10/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India

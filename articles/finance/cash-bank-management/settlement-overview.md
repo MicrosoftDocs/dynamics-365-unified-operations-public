@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Settlement overview
-description: This article provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
-author: angelad116
-ms.date: 07/30/2021
+description: Learn about the settlement process, including outliens about transaction types that can be settled and the timing and process for settling them.
+author: kfend
+ms.author: kfend
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/30/2021
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2018-10-31
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 ms.dyn365.ops.version: 8.1
-
+ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ---
 
 # Settlement overview

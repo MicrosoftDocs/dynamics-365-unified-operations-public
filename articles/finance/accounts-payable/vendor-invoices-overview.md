@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Vendor invoices overview
-description: This article provides general information about vendor invoices.
-author: abruer
-ms.date: 02/25/2022
+description: Learn about vendor invoices, which are requests for payment for products and services, including an outline on submitting invoices.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 03/13/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Vendor invoices overview
@@ -47,6 +35,7 @@ There are several ways to enter a vendor invoice:
 - The vendor invoice journal lets you quickly enter invoices that don't reference a purchase order, in a single step.
 - Together with the vendor invoice pool, the vendor invoice register lets you quickly enter invoices to accrue the expense. You can open the associated purchase orders later to post the invoice against the expense account.
 - The **Open vendor invoices** and **Pending vendor invoices** pages let you create vendor invoices from confirmed purchase orders.
+- The **Invoice capture solution** automatically creates vendor invoices from digital invoice images. For more information, see [Invoice capture](invoice-capture-overview.md).
 
 The following discussion provides more information about how to use the **Open vendor invoices** or **Pending vendor invoices** page to create a vendor invoice from a purchase order.
 

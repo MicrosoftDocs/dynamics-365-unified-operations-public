@@ -6,8 +6,6 @@ description: This article provides an overview of requests for quotation (RFQs).
 author: Henrikan
 ms.date: 10/05/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -17,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: ["2154"]
+ms.custom:
 ms.collection: get-started
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global

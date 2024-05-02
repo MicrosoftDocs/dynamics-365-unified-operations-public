@@ -4,8 +4,6 @@ description: This article describes how to set up and use cash management featur
 author: EvgenyPopovMBS
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: josaw
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia

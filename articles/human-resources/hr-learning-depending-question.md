@@ -6,8 +6,6 @@ description: Conditional questions allow you to specify what follow-up question 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -26,7 +24,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Make a question dependent on the answer of the previous question
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

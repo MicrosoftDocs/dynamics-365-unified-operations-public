@@ -6,8 +6,6 @@ description: Fixed assets should be assigned to the correct fixed assets group.
 author: moaamer
 ms.date: 05/04/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

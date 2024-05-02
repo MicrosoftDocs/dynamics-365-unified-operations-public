@@ -4,10 +4,9 @@
 title: Create ledger accrual transactions
 description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes. 
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 04/01/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
+
  
 # optional metadata 
  
@@ -34,8 +33,8 @@ This task guide steps through generating ledger accrual transactions that are ba
 3. Click to follow the link in the **Journal batch number** field.
 4. In the list, mark the selected row.
 5. In the **Account** field, specify the desired values.
-    * In this example, we are defining the expense for the insurance. It will be come periodic expense amount.  
-6. In the **Description** field, type a value.
+     In this example, we are defining the expense for the insurance. It will be come periodic expense amount.  
+6. In the **Description** field, enter a value.
 7. In the **Debit** field, enter a number.
 8. In the **Offset account** field, specify the desired values.
 9. Click **Functions**.

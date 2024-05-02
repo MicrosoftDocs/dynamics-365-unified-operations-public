@@ -4,8 +4,6 @@ description: This article provides answers to frequently asked questions regardi
 author: Reza-Assadi
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

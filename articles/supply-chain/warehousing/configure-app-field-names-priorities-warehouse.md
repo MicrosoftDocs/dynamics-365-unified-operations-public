@@ -6,8 +6,6 @@ description: This article describes how to define and configure names and priori
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

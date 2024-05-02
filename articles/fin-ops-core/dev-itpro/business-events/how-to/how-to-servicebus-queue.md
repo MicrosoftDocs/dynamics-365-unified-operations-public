@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Business events and Azure Service Bus Queue
-description: This article explains how to configure a Microsoft Azure Service Bus Queue endpoint.
+description: Learn how to configure a Microsoft Azure Service Bus Queue endpoint through a numbered list detailing steps on how to create an endpoint.
 author: jaredha
-ms.date: 11/08/2021
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: jaredha
+ms.topic: article
+ms.date: 11/08/2021
+# ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-11-03
+ms.search.form:
 ms.dyn365.ops.version: 10.0.22
 ---
 
@@ -39,14 +29,14 @@ This article explains how to configure a Microsoft Azure Service Bus Queue endpo
 
 4. In the **Endpoint name** field, enter the name of the endpoint.
 5. Set up Azure Key Vault to provide the secret to the Azure messaging resource.
-6. Set up the Azure Active Directory (Azure AD) application ID and application secret.
+6. Set up the Microsoft Entra application ID and application secret.
 7. Back in the **Configure new endpoint** dialog box, in the **Queue name** field, enter the name that you created for the Service Bus queue  in the Azure Service Bus Queue configuration in Azure.
 
     ![Service Bus Queue name in the Azure Service Bus Queue configuration in Azure.](../../media/BusinessEventsSBQueueName.PNG)
 
-8. In the **Azure Active Directory application ID** field, enter the application ID that you created in Azure AD in the Azure portal.
+8. In the **Microsoft Entra application ID** field, enter the application ID that you created in Microsoft Entra ID in the Azure portal.
 
-    ![Application ID in Azure AD in the Azure portal.](../../media/businesseventsaad1.png)
+    ![Application ID in Microsoft Entra ID in the Azure portal.](../../media/businesseventsaad1.png)
 
 9. In the **Azure application secret** field, enter the secret value for the application.
 

@@ -4,8 +4,6 @@ description: This article describes how to add module configuration fields in Mi
 author: samjarawan
 ms.date: 12/08/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global

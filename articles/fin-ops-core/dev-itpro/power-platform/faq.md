@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Finance and operations virtual entities FAQ
-description: This article is a list of frequently asked questions about finance and operations virtual entities.
+description: Access a list of frequently asked questions about finance and operations virtual entities, including answers to questions relating to versions of environments.
 author: Sunil-Garg
-ms.date: 08/03/2022
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: sunilg
+ms.topic: article
+ms.date: 08/03/2022
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 
@@ -55,7 +45,7 @@ Generally, users see all entities where **IsPublic** is set to **Yes**. These en
 
 Any **interactive user** of Microsoft Power Platform who tries to access finance and operations data through a virtual entity must also exist as a user in finance and operations. Therefore, technically, not *all* users have to be users in finance and operations. Only those users who access finance and operations data through virtual entities must be users in finance and operations.
 
-A **S2S application user** can also be used to call into virtual entities. For this kind of integration, the application user must be set up in **System administration > Setup > Configure Azure Active Directory Applications**. This allows for applications to integrate with finance and operations using virtual entities.
+A **S2S application user** can also be used to call into virtual entities. For this kind of integration, the application user must be set up in **System administration > Setup > Configure Microsoft Entra Applications**. This allows for applications to integrate with finance and operations using virtual entities.
 
 ### Where do I find the catalog entity?
 
@@ -148,9 +138,9 @@ For additional information about the impact of configuration keys on data entiti
 
 ### I'm getting an error that the call was rejected by finance and operations apps as not authorized. How do I work around this?
 
-When running a query against a virtual entity you may get an error response with the message, "A token was obtained to call Finance and Operations, but the call was rejected by Finance and Operations as not authorized. Verify that the AAD application value is specified in the Azure Active Directory application for in Finance and Operations, and that the associated user account has privileges to call the CDSVirtualEntity web service."
+When running a query against a virtual entity you may get an error response with the message, "A token was obtained to call Finance and Operations, but the call was rejected by Finance and Operations as not authorized. Verify that the Microsoft Entra application value is specified in the Microsoft Entra application for in Finance and Operations, and that the associated user account has privileges to call the CDSVirtualEntity web service."
 
-This error can be the result of the default integration applications being removed from the environment. Verify that the two following applications are listed in the **Azure Active Directory applications** page in the finance and operations apps environment. These applications are added to the environment by default. Dataverse virtual entities for finance and operations apps are unable to gain authorization to the finance and operations environment if these applications are removed from the list.
+This error can be the result of the default integration applications being removed from the environment. Verify that the two following applications are listed in the **Microsoft Entra applications** page in the finance and operations apps environment. These applications are added to the environment by default. Dataverse virtual entities for finance and operations apps are unable to gain authorization to the finance and operations environment if these applications are removed from the list.
 
 | Client ID | Name | User ID |
 | --------- | ---- | ------- |
@@ -158,4 +148,3 @@ This error can be the result of the default integration applications being remov
 | f1752846-f0df-4766-96f5-c109adf67d7f | PowerPlatRuntimeApp | PowerPlatformApp |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

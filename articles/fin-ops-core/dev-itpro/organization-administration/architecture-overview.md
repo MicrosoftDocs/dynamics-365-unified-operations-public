@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Finance and operations application architecture
-description: This article provides an overview of the architecture of finance and operations applications.
-author: abunduc-ms
-ms.date: 04/24/2020
+description: Learn about the architecture of finance and operations applications, including definitions for various conceptual areas for cloud architecture.
+author: kfend
+ms.author: kfend
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.date: 04/24/2020
+ms.reviewer: johnmichalak
 ms.collection: get-started
+audience: IT Pro
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abunduc
 ms.search.validFrom: 2018-05-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Finance and operations application architecture
@@ -39,16 +27,16 @@ The cloud architecture consists of these conceptual areas:
 
 - **Subscription** – A subscription to finance and operations apps gives you an online cloud environment (or multiple environments) and experience.
 - **Licenses** – Customers must purchase subscription licenses (SLs) for their organization, or for their affiliates' employees and on-site agents, vendors, or contractors who directly or indirectly access finance and operations apps. These apps are licensed through Microsoft Volume Licensing and the Microsoft Cloud Solution Provider (CSP) program. For more information, download the latest [Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
-- **Tenant** – In Microsoft Azure Active Directory (AAD), a tenant represents an organization. It's a dedicated instance of the AAD service that an organization receives and owns when it creates a relationship with Microsoft (for example, by signing up for a Microsoft cloud service, such as Azure, Microsoft Intune, or Microsoft 365). Every AAD tenant is distinct and separate from other AAD tenants. For more information about AAD tenants, see [How to get an Azure Active Directory Tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+- **Tenant** – In Microsoft Entra ID (Microsoft Entra ID), a tenant represents an organization. It's a dedicated instance of the Microsoft Entra service that an organization receives and owns when it creates a relationship with Microsoft (for example, by signing up for a Microsoft cloud service, such as Azure, Microsoft Intune, or Microsoft 365). Every Microsoft Entra tenant is distinct and separate from other Microsoft Entra tenants. For more information about Microsoft Entra tenants, see [How to get a Microsoft Entra Tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
     A tenant houses the company's user information. This information includes passwords, user profile data, permissions, and related information. The tenant also contains groups, applications, and other information that pertains to an organization and its security.
 
     The tenant is created when customers sign up for their first subscription to any Microsoft online service, such as Microsoft 365, Microsoft Dynamics 365, or Azure. Any later subscriptions to the same online services or other online services can be grouped within the same tenant.
 
-    An organization can have multiple AAD tenants. If there are multiple tenants, make sure that any subscriptions for finance and operations apps are associated with the correct tenant.
+    An organization can have multiple Microsoft Entra tenants. If there are multiple tenants, make sure that any subscriptions for finance and operations apps are associated with the correct tenant.
 
-- **Azure Active Directory (AAD)** – AAD is the multi-tenant, cloud-based directory and identity management service from Microsoft that combines core directory services, application access management, and identity protection in a single solution. For more information, see [Azure Active Directory](/azure/active-directory/). Finance and operations apps use AAD as the store for identity. Access to AAD is provided as part of a subscription to finance and operations apps.
-- **Microsoft 365 admin center** – Microsoft 365 admin center is the subscription management portal that Microsoft 365 provides for administrators. It's used to provide management functions for users (AAD) and subscriptions. As part of these management functions, it provides information about service health. For more information, see [About the Microsoft 365 admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23).
+- **Microsoft Entra ID (Microsoft Entra ID)** – Microsoft Entra ID is the multi-tenant, cloud-based directory and identity management service from Microsoft that combines core directory services, application access management, and identity protection in a single solution. For more information, see [Microsoft Entra ID](/azure/active-directory/). Finance and operations apps use Microsoft Entra ID as the store for identity. Access to Microsoft Entra ID is provided as part of a subscription to finance and operations apps.
+- **Microsoft 365 admin center** – Microsoft 365 admin center is the subscription management portal that Microsoft 365 provides for administrators. It's used to provide management functions for users (Microsoft Entra ID) and subscriptions. As part of these management functions, it provides information about service health. For more information, see [About the Microsoft 365 admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23).
 
     > [!NOTE]
     > You don't have to have an Microsoft 365 license to deploy finance and operations apps. However, you might require a license for specific Office integration scenarios. For more information, see [Office integration overview](../office-integration/office-integration.md).
@@ -68,4 +56,3 @@ The cloud architecture consists of these conceptual areas:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

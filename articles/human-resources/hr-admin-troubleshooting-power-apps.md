@@ -6,9 +6,6 @@ description: This article explains what to do if the admin can't create an envir
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: SystemAdministrationWorkspaceForm
@@ -28,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Can't create an environment in the Power Apps Admin center
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

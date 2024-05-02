@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Register and post a postdated check for a vendor
-description: You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher. 
+description: Learn how you can register the details of a postdated check before you issue the check to a vendor by using the journal voucher, including a step-by-step process.
 author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/15/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Register and post a postdated check for a vendor
 
 [!include [banner](../../includes/banner.md)]

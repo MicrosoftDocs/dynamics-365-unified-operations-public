@@ -1,13 +1,13 @@
 ---
 title: Run multi-user testing by using the Performance SDK
-description: This article explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
+description: Learn about how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 author: kennysaelen
-ms.date: 06/04/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: kesaelen
+ms.topic: article
+ms.date: 06/04/2020
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
 ---
@@ -18,8 +18,15 @@ ms.dyn365.ops.version: AX 10.0.0
 
 This article explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 
-  > [!IMPORTANT]
-  > Visual Studio 2019 is the last version of Visual Studio that includes web performance and load testing features and will be deprecated in the future. We suggest using Apache JMeter for performance testing. For more information, see [JMeter](https://jmeter.apache.org/).
+> [!IMPORTANT]
+> Visual Studio 2019 is the last version of Visual Studio that includes web performance and load testing features and will be deprecated in the future. We suggest using Apache JMeter for performance testing. For more information, see [JMeter](https://jmeter.apache.org/).
+>
+> JMeter is owned by Apache, and therefore isn't supported by Microsoft. However, the following series of blog posts provides some helpful tips for using JMeter with Dynamics 365 finance and operations apps.
+>
+> - [Part 1 - Dynamics 365 finance and operations apps performance testing with JMeter - Introduction](https://community.dynamics.com/blogs/post/?postid=587b9524-30c9-422c-a5f8-4e3726f749b8)
+> - [Part 2 - Dynamics 365 finance and operations apps performance testing with JMeter - Execution](https://community.dynamics.com/blogs/post/?postid=4fc1ab59-1948-ee11-be6d-00224827e8f9)
+> - [Part 3 – Dynamics 365 finance and operations apps performance testing with JMeter - Result Analysis](https://community.dynamics.com/blogs/post/?postid=d1e5e04d-34da-ee11-a73d-6045bdb9f2e1)
+> - [Part 4 – Dynamics 365 finance and operations apps performance testing with JMeter - Tips and Troubleshooting](https://community.dynamics.com/blogs/post/?postid=42ec2e60-59b4-ee11-92bd-002248511ab4)
 
 ## Prerequisites
 

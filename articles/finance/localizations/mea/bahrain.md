@@ -4,10 +4,8 @@ description: This article provides an overview of functionality specific to Bahr
 author: mrolecki
 ms.date: 09/15/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Bahrain
 ms.author: mrolecki
 ms.search.validFrom: 2020-06-04

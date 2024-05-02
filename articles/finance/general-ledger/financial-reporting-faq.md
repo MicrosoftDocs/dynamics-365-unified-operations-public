@@ -6,8 +6,8 @@ description: This article provides answers to some frequently asked questions ab
 author: jinniew
 ms.date: 07/07/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
+ms.reviewer: twheeloc
+
 
 # optional metadata
 

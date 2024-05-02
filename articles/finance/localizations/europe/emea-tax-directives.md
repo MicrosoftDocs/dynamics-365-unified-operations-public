@@ -4,10 +4,8 @@ description: You can specify to include an explanation of sales tax codes on sal
 author: EricWangChen
 ms.date: 09/17/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Türkiye, United Kingdom
 ms.author: wangchen
 ms.search.validFrom: 2017-06-30

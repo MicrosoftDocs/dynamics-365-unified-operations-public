@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Bank statement file import troubleshooting
-description: This article explains how to fix issues are caused by small differences in the bank statement file.
-author: angelad116
-ms.date: 03/29/2021
+description: Learn how to fix issues are caused by small differences in the bank statement file, including outlines on timezone differences and transformations.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankStatementFormat
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 03/29/2021
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
+audience: Application User
 ms.search.region: global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: BankStatementFormat
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ---
 
 # Bank statement file import troubleshooting

@@ -1,16 +1,16 @@
 ---
 title: Configure non-administrator users to use the Regression suite automation tool (RSAT)
-description: This article explains how to grant privileged resources to users in RSAT version 2.2 and later.
+description: Learn about how to grant privileged resources to users in RSAT version 2.2 and later, including an overview on enabling non-administrator RSAT use.
 author: FrankDahl
-ms.date: 03/09/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 03/09/2021
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-03-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Configure non-administrator users to use RSAT

@@ -4,10 +4,8 @@ description: This article provides information about the substitution/adjustment
 author: AdamTrukawka
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Thailand
 ms.author: atrukawk
 ms.search.validFrom: 2017-06-30

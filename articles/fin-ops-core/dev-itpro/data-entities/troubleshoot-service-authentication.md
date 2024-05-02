@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Troubleshoot service authentication issues
-description: This article provides some tips for troubleshooting issues that involve service authentication.
-author: nimakms
-ms.date: 06/20/2017
+description: Access some tips for troubleshooting issues that involve service authentication, including reviewing event logs.
+author: pnghub
+ms.author: gned
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Troubleshoot service authentication issues
@@ -47,12 +35,12 @@ When you troubleshoot service authentication issues, there are a few basic and c
 2. View the contents in the form of name-value pairs. See the example that follows.
 3. Verify that the following information is correct:
 
-    - **"aud"** – The value corresponds to the Microsoft Azure Active Directory (Azure AD) resource concept. Here are some typical issues that involve "aud":
+    - **"aud"** – The value corresponds to the Microsoft Microsoft Entra resource concept. Here are some typical issues that involve "aud":
 
         - The **"aud"** segment of the JWT contains a URI that has a trailing slash.
         - The **"aud"** segment of the JWT contains a URI that uses an incorrect capitalization style. The URI must be all lowercase.
 
-    - **"appid"** – The value corresponds to the Azure AD Native Client App ID (or Service App ID).
+    - **"appid"** – The value corresponds to the Microsoft Entra Native Client App ID (or Service App ID).
     - **"upn"** – The value corresponds to the user who is being authenticated through a Native Client App.
 
 The following illustration shows an example of the contents of the JWT.
@@ -74,7 +62,7 @@ You can also look at the event logs of the instance machine, if you have access 
 - If the second method works, you can compare the JWTs from each method.
 
 ## Known issues
-### AADSTS65001: The user or administrator hasn't consented to use the application
+### Microsoft EntraSTS65001: The user or administrator hasn't consented to use the application
 
 - The **"aud"** segment of the JWT might contain a URI that has a trailing slash. The slash must be removed.
 - The **"aud"** segment of the JWT might contain a URI that uses an incorrect capitalization style. The URI must be all lowercase.

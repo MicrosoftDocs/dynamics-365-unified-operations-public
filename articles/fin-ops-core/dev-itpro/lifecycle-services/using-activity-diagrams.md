@@ -1,27 +1,17 @@
 ---
 title: Work with activity diagrams in Business process modeler libraries
-description: This article provides information about how you can use activity diagrams in a BPM library.
-author: AngelMarshall 
-ms.date: 06/15/2020
+description: Learn about how you can use activity diagrams in a BPM library, including an overview on browsing activity diagrams.
+author: AngelMarshall
+ms.author: tsmarsha
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/15/2020
+ms.reviewer: johnmichalak 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tsmarsha
-ms.search.validFrom: 
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 2012
-
 ---
 
 # Work with activity diagrams in Business process modeler libraries

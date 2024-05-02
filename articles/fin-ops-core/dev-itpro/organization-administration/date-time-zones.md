@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Date/time data and time zones
-description: This article provides information about date and time fields, and time zones.
+description: Learn about the three types of date and time fields that correspond to different data types in the database and time zones.
 author: pvillads
-ms.date: 06/20/2017
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysUserSetup, SystemDate
-# ROBOTS: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: pvillads
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysUserSetup, SystemDate
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
 ---
 
 # Date/time data and time zones

@@ -4,8 +4,6 @@ description: This article covers the shipping address module and explains how to
 author: anupamar-ms
 ms.date: 02/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

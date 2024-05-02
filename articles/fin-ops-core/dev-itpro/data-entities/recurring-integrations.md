@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Recurring integrations
-description: This article describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
-author: peakerbl
-ms.date: 10/07/2021
+description: Learn about recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
+author: pnghub
+ms.author: gned
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/07/2021
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Recurring integrations
@@ -43,7 +31,7 @@ Recurring integration does the following things:
     ![Set up recurring integrations.](./media/set-up-recurring.png)
 
 ## Authorization for the integration REST API
-The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (Azure AD) and give it appropriate permission to the application. When you create and enable a recurring job, you're prompted to enter the Azure AD application ID that will interact with that recurring job. Therefore, be sure to make a note of the application ID.
+The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Entra ID (Azure AD) and give it appropriate permission to the application. When you create and enable a recurring job, you're prompted to enter the Azure AD application ID that will interact with that recurring job. Therefore, be sure to make a note of the application ID.
 
 > [!NOTE]
 > This feature is not supported with Dynamics 365 Finance + Operations (on-premises).
@@ -110,7 +98,7 @@ In the message body, you can the pass the data as a memory stream.
 **Example**
 
 ```Console
-POST https://usncax1aos.cloud.onebox.dynamics.com/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
+POST https://usncax1aos.cloud.onebox.dynamics.com/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-Microsoft Entra ID9C2C47B64%7D?entity=Customer%20Groups
 ```
 
 To get the activity ID, on the **Manage scheduled data jobs** page, in the **ID** field, copy the globally unique identifier (GUID).
@@ -225,4 +213,3 @@ The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in appl
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

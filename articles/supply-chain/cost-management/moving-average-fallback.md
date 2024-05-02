@@ -6,8 +6,6 @@ description: This article provides information about fallback cost sequences for
 author: JennySong-SH
 ms.date: 03/25/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

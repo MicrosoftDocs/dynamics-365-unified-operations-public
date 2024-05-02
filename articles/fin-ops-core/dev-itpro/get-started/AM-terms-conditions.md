@@ -1,35 +1,22 @@
 ---
-# required metadata
-
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
-description: Full description that appears in the search results. Often the first paragraph of your article.
+description: Learn about the Microsoft preview software license terms, which are an agreement between you and Microsoft or its affiliates.
 author: ShellyBakke
-ms.date: 04/18/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ROBOTS: NOINDEX, NOFOLLOW 
-ms.reviewer: sericks
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: smiller
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 04/18/2019
+ms.reviewer: johnmichalak
+audience: IT Pro
+ROBOTS: NOINDEX, NOFOLLOW 
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
-
 ---
 
 # MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
-[!include [banner](../../../finance/includes/banner.md)] 
 
+[!include [banner](../../../finance/includes/banner.md)] 
 
 ## MICROSOFT DYNAMICS 365 FOR FINANCE AND OPERATIONS, ASSET MAINTENANCE (PREVIEW)
 

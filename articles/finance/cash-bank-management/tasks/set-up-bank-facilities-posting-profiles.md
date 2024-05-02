@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up bank facilities and posting profiles for letters of guarantee
-description: This task creates a Bank facility and posting profile that is needed to process a letter of guarantee. 
+description: Learn about the process of creating a bank facility and posting profile that is needed to process a letter of guarantee.
 author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/15/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up bank facilities and posting profiles for letters of guarantee
 
 [!include [banner](../../includes/banner.md)]

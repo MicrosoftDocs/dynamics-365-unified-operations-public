@@ -6,8 +6,6 @@ description: Template information can be copied to either a service agreement or
 author: sorenva
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
-description: Supplemental Terms of Use for Microsoft Dynamics 365 Previews.
+description: Learn about supplemental terms of use for Microsoft Dynamics 365 previews, which are made available to you on the condition that you agree to the terms.
 author: ShellyBakke
-ms.date: 09/12/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-ROBOTS: NOINDEX, NOFOLLOW
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: smiller
-ms.search.validFrom: 2018-10-31 
+ms.topic: article
+ms.date: 09/12/2019
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2018-10-31
+ms.search.form:
 ms.dyn365.ops.version: 8.0
 ---
 

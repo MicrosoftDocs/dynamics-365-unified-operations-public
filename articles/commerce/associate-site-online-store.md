@@ -6,9 +6,6 @@ description: This article explains how to bind your Microsoft Dynamics 365 Comme
 author: bicyclingfool
 ms.date: 07/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

@@ -6,8 +6,6 @@ description: This article shows how to manually create a bar code using the item
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

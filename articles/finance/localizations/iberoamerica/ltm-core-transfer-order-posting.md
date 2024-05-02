@@ -4,7 +4,7 @@ description: This article provides information about inventory transfer order po
 author: Fhernandez0088
 ms.date: 05/26/2023
 ms.topic: Article
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---

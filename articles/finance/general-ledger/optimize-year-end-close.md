@@ -6,9 +6,6 @@ description: This article describes the Optimize year-end close service add-in t
 author: moaamer
 ms.date: 12/02/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LedgerClosingSheet

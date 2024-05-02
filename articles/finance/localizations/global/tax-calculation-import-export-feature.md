@@ -6,15 +6,12 @@ description: This article provides information about the import and export funct
 author: Kai-Cloud
 ms.date: 02/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form:
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 
 # ms.tgt_pltfrm: 
 ms.custom: 

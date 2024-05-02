@@ -4,10 +4,8 @@ description: This article provides information about transfer orders for Brazil.
 author: gionoder
 ms.date: 09/13/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: gionoder
 ms.search.validFrom: 2017-12-31

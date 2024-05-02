@@ -4,10 +4,8 @@ description: This article provides information about the extension to the Financ
 author: AdamTrukawka
 ms.date: 11/01/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.author: atrukawk
 ms.search.validFrom: 2021-11-01
 ms.dyn365.ops.version: AX 10.0.21

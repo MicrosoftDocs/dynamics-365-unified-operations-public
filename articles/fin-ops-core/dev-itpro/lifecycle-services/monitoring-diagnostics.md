@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
-description: This article describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
+description: Learn about the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
 author: angelmarshall
-ms.date: 05/25/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: article
+ms.date: 05/25/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form:
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ---
 
 # Monitoring and diagnostics tools in Lifecycle Services (LCS)
@@ -139,7 +127,7 @@ You can use the filters on this page to narrow the information logs. Here are so
 > The page doesn't load data by default. To load the data that is required in order to show the page, you must select the time duration and then select **Submit time**.
 
 > [!IMPORTANT]
-> The Activity monitoring tool retains data for only 30 days.
+> The Activity monitoring tool retains data for only 16 days.
 
 ### Raw information logs
 

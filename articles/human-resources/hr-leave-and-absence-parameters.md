@@ -6,9 +6,6 @@ description: This article describe how to define human resources parameters for 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

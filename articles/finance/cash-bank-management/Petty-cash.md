@@ -1,26 +1,24 @@
 ---
 title: Petty cash
-description: This article provides information about the global petty cash functionality that is available in all countries.
-author: EricWang
-ms.date: 01/18/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: 
+description: Learn about the global petty cash functionality that is available in all countries, including prerequisites and processes for setting up accounts.
+author: EricWangChen
 ms.author: wangchen
+ms.topic: article
+ms.date: 01/18/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 
-ms.custom: 
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
 # Petty cash 
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the petty cash functionality that extends existing localization features as a global feature for all countries and regions. For more information, see [Petty cash for Eastern Europe and Russia](/localizations/europe/emea-petty-cash.md). 
+This article provides information about the petty cash functionality that extends existing localization features as a global feature for all countries and regions. <!-- The following is a broken link -- For more information, see [Petty cash for Eastern Europe and Russia](/localizations/europe/emea-petty-cash). -->
 
 You can use the petty cash functionality to automate the receipt and expenditure of cash, the creation of primary documents, and the printing of related reports. 
 

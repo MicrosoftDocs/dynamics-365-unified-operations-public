@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Set up on-premises projects in Lifecycle Services (LCS)
-description: This article provides information about the process of setting up an on-premises project in Microsoft Dynamics Lifecycle Services (LCS). 
+description: Learn about the process of setting up an on-premises project in Microsoft Dynamics Lifecycle Services (LCS), including environment limits. 
 author: PeterRFriis
-ms.date: 08/09/2022
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: peterfriis
+ms.topic: article
+ms.date: 08/09/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 search.app:
   - financeandoperationsonprem-docs
@@ -30,7 +18,7 @@ search.app:
 
 [!include [banner](../includes/banner.md)]
 
-You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Dynamics 365 Finance + Operations (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Price List flow, see the article, [Buy Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
+You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Dynamics 365 Finance + Operations (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Price List flow, see the article, [Buy Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md), to create an Microsoft Entra account or use an existing Microsoft Entra account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
 
  [![On-premises implementation project.](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
 

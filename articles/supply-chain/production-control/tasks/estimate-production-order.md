@@ -6,8 +6,6 @@ description: You can run this procedure by using the USMF demo data company or y
 author: johanhoffmann
 ms.date: 11/11/2016
 ms.topic: how-to
-ms.prod:  
-ms.technology:  
 
 # optional metadata
 

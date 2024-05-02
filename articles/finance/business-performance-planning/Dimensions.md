@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Business performance planning dimensions
-description: This article describes dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning.
+description: Learn about dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning, including an outline on creating dimensions.
 author: ShielaSogge
-ms.date: 12/12/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 12/12/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Business performance planning dimensions
 
 This article describes dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning.
@@ -163,4 +151,4 @@ You can delete a dimension that isn't being used in a cube.
 1. On **Dimensions** page, select the dimension in the left preview pane.
 1. Select **Delete**.
 
-When a dimension is deleted, the cube isn't updated. However, the Power BI visuals might be affected.
+

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Letters of credit and import collections
-description: This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankLCImport
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: BankLCImport
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ---
 
 # Letters of credit and import collections

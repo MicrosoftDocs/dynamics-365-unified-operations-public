@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Settle remainder
-description: You can settle the amount remaining from settlement activity by applying that amount to a ledger account.
-author: angelad116
-ms.date: 01/29/2023
+description: Learn how you can settle the amount remaining from settlement activity by applying that amount to a ledger account, including an outline on setting up defaults.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
-# ROBOTS: 
+ms.date: 01/29/2023
+ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2018-12-01
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Settle remainder

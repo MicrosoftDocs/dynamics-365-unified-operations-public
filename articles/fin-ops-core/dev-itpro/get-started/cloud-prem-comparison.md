@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Comparison of cloud and on-premises features
-description: The article shows which features are supported in Cloud and on-premises.
+description: Learn about which features are supported in Cloud and on-premises, including a table that outlines features and cloud availability for various areas.
 author: sericks007
-ms.date: 01/14/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 01/14/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-11-29
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 9
 ---
 

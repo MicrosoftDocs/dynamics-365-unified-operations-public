@@ -1,15 +1,13 @@
 ---
 title: AX 2009 migration - Install the Data migration tool
-description: This article explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009.
-author: Peakerbl
-ms.date: 09/13/2018
+description: Learn about how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009.
+author: pnghub
+ms.author: gned
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/13/2018
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---
@@ -92,7 +90,7 @@ Go to the location to where you extracted the zip file, and find **defaultvalue.
     - **Tenant URL** – Enter the URL for the application tenant. If you aren't sure of the tenant, see the web.config file for the finance and operations applications.
 
     > [!NOTE}
-    > In the Azure Portal, when you create a new app in the Azure Active Directory (AAD), you can select from two options. **Web API** and **Native**. In this instance, select **Native** and grant permissions to native AAD app.
+    > In the Azure Portal, when you create a new app in the Microsoft Entra (Microsoft Entra ID), you can select from two options. **Web API** and **Native**. In this instance, select **Native** and grant permissions to native Microsoft Entra app.
 
 ## Multi-box setup
 For a multi-box setup, you must have the following machines:

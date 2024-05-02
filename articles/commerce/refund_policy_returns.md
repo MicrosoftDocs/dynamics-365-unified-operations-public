@@ -4,8 +4,6 @@ description: This article explains how to set up a returns and refunds policy fo
 author: ShalabhjainMSFT
 ms.date: 07/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

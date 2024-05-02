@@ -1,15 +1,13 @@
 ---
 title: Set up technical support for finance and operations apps
-description: This article provides information about the support experience for cloud and on-premises deployments.
+description: Learn about the support experience for cloud and on-premises deployments, including prerequisites and an outline on creating an Azure DevOps project.
 author: sericks007
-ms.date: 09/01/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 09/01/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
@@ -20,7 +18,7 @@ ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
 
 ## Prerequisites
 
-Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created when you set up a subscription for one of the finance and operations apps.
+Before you can set up technical support, you must acquire a Microsoft Microsoft Entra account. This account is created when you set up a subscription for one of the finance and operations apps.
 
 ## Create an Azure DevOps project
 The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that an Azure DevOps project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the Azure DevOps project, and must authorize LCS to access Azure DevOps on their own behalf. Most users don't have access to LCS or Azure DevOps. Therefore, in the Azure DevOps project, you should create a special system account that can be used to submit issues.
@@ -29,7 +27,7 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 
 1.  Go to <https://www.visualstudio.com/>.
 2.  Click **Sign in** in the upper-right corner.
-3.  Sign in by using an AAD account that is in the tenant that your subscription is linked to. If the browser already has your credentials, you won't see the sign-in page and should instead click your name in the upper-right corner.
+3.  Sign in by using a Microsoft Entra account that is in the tenant that your subscription is linked to. If the browser already has your credentials, you won't see the sign-in page and should instead click your name in the upper-right corner.
 4.  On the right side of the page, under **Accounts**, click **Create a free account now**.
 5.  Specify an account URL, and then click **Create Account**.
 6.  Name your project, and specify a process template. Your project should now be created.
@@ -44,7 +42,7 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 
 ### Create the Support system user
 
-1.  Create a new user in your Azure AD tenant, and enter a descriptive name, such as **LcsCpsSystemAccount**.
+1.  Create a new user in your Microsoft Entra tenant, and enter a descriptive name, such as **LcsCpsSystemAccount**.
 2.  In the upper-left corner, click **Team Services**.
 3.  On the **Users** tab, click **Add**, and invite the system user that you created in step 1. For this user, select **Stakeholder**.
 4.  In the upper-left corner, click **Team Services** again.

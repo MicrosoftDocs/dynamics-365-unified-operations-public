@@ -1,13 +1,12 @@
 ---
 title: Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
-description: This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps.
+description: Learn about how to archive data in Microsoft Dynamics 365 finance and operations apps, including an overview on business application data lifecycles.
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 4/10/2024
 ms.custom:
-
+ms.reviewer: twheeloc
 ---
 
 # Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
@@ -17,7 +16,7 @@ ms.custom:
 This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
 > [!NOTE]
-> This feature doesn't limit the total number of records that can be archived. However, the largest table that can be archived is limited to a maximum of 100 million records. We recommend that you trim any table that have more than 100 million records.
+> This feature doesn't limit the total number of records that can be archived. However, the current limitation in the initial synchronization of data replication to Dataverse is limited to a maximum of 100 million records in the largest table. Prior to testing this feature, it's recommended to trim any tables that have more than 100 million records. 
 
 ## Business application data lifecycle
 
@@ -37,8 +36,10 @@ Finance and operations apps enable organizations to achieve the following benefi
 This feature currently supports archiving the following types of finance and operations data with Dataverse long term retention:
 
 - Dynamics 365 Finance General ledger
-- Dynamics 365 Supply Chain Management inventory transactions
-- Dynamics 365 Supply Chain Management sales orders
+- Dynamics 365 Finance Tax transactions
+- Dynamics 365 Supply Chain Management Inventory transactions
+- Dynamics 365 Supply Chain Management Inventory journals
+- Dynamics 365 Supply Chain Management Sales orders
 
 Support for additional data types is planned in future releases.
 
@@ -48,11 +49,11 @@ Application administrators can schedule archival jobs and specify criteria for s
 
 When an archival job is initiated from the Finance and operations archive workspace, it has the following stages:
 
-1. Data from the live application tables in the functional scenario that's being archived is replicated to Dataverse long term retention.
-1. Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
-1. The live table records are marked as retained (archived) in Dataverse long term retention.
-1. A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
-1. Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations database and deleted from the live application tables. Application-specific inquiry pages access this history table data from the live application. Data from history tables can be either restored to the live table or permanently purged. This functionality is not yet supported.
+ -  Data from the live application tables in the functional scenario that's being archived is replicated to Dataverse long term retention.
+ -  Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
+ -  The live table records are marked as retained (archived) in Dataverse long term retention.
+ -  A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
+ -  Live application data that was previously marked as ready for archiving is moved to history tables in the Dynamics 365 finance database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
 
 ## Customization
 

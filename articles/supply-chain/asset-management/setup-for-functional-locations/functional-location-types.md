@@ -6,8 +6,6 @@ description: This article describes how to create functional location types in A
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

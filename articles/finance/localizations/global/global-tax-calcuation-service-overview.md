@@ -4,8 +4,6 @@ description: This article explains the overall scope and features of the Tax Cal
 author: EricWangChen
 ms.date: 02/09/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -110,6 +108,7 @@ The following table lists the transactions supported in the corresponding versio
 
 | Version | Transactions |
 |---------|--------------|
+| 10.0.38 | Project invoice proposal<br> Journals (Hour/Expense/Item/Fee)<br> Project quotations<br> Intercompany customer invoice<br> Microsoft Dynamics 365 Project Operations integration journal |
 | 10.0.36 | Invoice register<br>Invoice approval<br>Invoice pool |
 | 10.0.29 | Periodic journals |
 | 10.0.28 | Vendor payment journal<br>Customer payment journal | 

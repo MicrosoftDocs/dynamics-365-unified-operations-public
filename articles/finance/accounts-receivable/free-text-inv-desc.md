@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Use financial tags to display free text invoice descriptions
-description: This article explains how to use financial tags to display the description of free text invoices.
-author: prabhatb
-ms.date: 2/08/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPosting, CustPaymMode, CustCashDiscount, CommissionPosting, MarkupTable\_Cust, CustPaymFee
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to use financial tags to display the description of free text invoices, including outlines on uses of financial tags and requirements.
+author: Prabhatb-ship-it
 ms.author: prabhatb
+ms.topic: article
+ms.date: 2/08/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-03
+ms.search.form: CustPosting, CustPaymMode, CustCashDiscount, CommissionPosting, MarkupTable\_Cust, CustPaymFee
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Use financial tags to display free text invoice descriptions

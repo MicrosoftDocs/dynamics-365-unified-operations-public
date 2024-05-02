@@ -1,42 +1,39 @@
 ---
-title: Export business-to-business (B2B) users to Azure Active Directory
-description: This article provides information about implementing the business-to-business transaction functionality.
+title: Export business-to-business (B2B) users to Microsoft Entra ID
+description: Learn about implementing the business-to-business transaction functionality, including an overview on setting up invitation service applications.
 author: paulliew
-ms.date: 04/09/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: paulliew
+ms.topic: article
+ms.date: 04/09/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-10-31
-ms.dyn365.ops.version: Platform update 12
-ms.custom: 
-ms.assetid: 
 ms.search.form: B2BInvitationConfiguration
+ms.dyn365.ops.version: Platform update 12
 ---
 
-# Export business-to-business (B2B) users to Azure Active Directory
+# Export business-to-business (B2B) users to Microsoft Entra ID
 
 [!include [banner](../includes/banner.md)]
 
-You can automatically export business-to-business (B2B) users to Azure Active Directory (Azure AD). 
+You can automatically export business-to-business (B2B) users to Microsoft Entra ID. 
 
-In the past, B2B users were exported manually to a .csv file. Then the Azure AD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal. 
+In the past, B2B users were exported manually to a .csv file. Then the Microsoft Entra tenant administrator had to use this file to manually add the users to Microsoft Entra using the Azure portal. 
 
-To enable the automatic export feature, a one-time setup and configuration process must be completed. When the process is completed, you can use the **Provision Azure AD B2B user** workflow task to automatically export B2B users to Azure AD.
+To enable the automatic export feature, a one-time setup and configuration process must be completed. When the process is completed, you can use the **Provision Microsoft Entra B2B user** workflow task to automatically export B2B users to Microsoft Entra ID.
 
 The one-time set up and configuration means that you'll need to: 
-1. Set up a B2B invitation service application in Azure AD.
+1. Set up a B2B invitation service application in Microsoft Entra ID.
 2. Configure the B2B invitation service settings in finance and operations.
 
-### Set up a B2B invitation service application in Azure AD
-The tenant administrator of your Azure AD tenant will need to complete the following steps.
+### Set up a B2B invitation service application in Microsoft Entra ID
+The tenant administrator of your Microsoft Entra tenant will need to complete the following steps.
 
 1. Log on to the [Azure portal](https://portal.azure.com) as the tenant administrator. 
 
-2. Click **Azure Active Directory** > **Properties**.
+2. Click **Microsoft Entra ID** > **Properties**.
 
 3. Copy the **Directory ID** (this is the tenant ID) and save it. You will need this later.
 
@@ -94,7 +91,7 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 
 7. **Save** the settings.
 
-Now you can start using the **Provision Azure AD B2B user** workflow task in your workflows to automatically export B2B users to Azure AD.
+Now you can start using the **Provision Microsoft Entra B2B user** workflow task in your workflows to automatically export B2B users to Microsoft Entra ID.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

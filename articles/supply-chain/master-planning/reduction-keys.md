@@ -6,8 +6,6 @@ description: This article provides examples that show how to set up a reduction 
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: To reduce the number of days of an existing subscription fee, you c
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

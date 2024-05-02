@@ -4,22 +4,14 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.27 (July 2022)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.27. 
 author: josaw1
-ms.date: 04/29/2022
+ms.date: 04/12/2024
 ms.topic: article
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2022-04-30 
 ms.dyn365.ops.version: 10.0.27
@@ -45,8 +37,8 @@ The following table lists the features that are included in this release. We mig
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |B2B   | Enable customer-specific catalogs    |   This feature enables customers to create Commerce product catalogs for Commerce business-to-business (B2B) sites. Creating catalogs allows customers to identify online stores that products are offered in, add products they want to include, and enhance product offerings by adding merchandising details. Customers can create multiple catalogs for each B2B online store.</br></br>For more information, see [Create Commerce catalogs for B2B sites](../catalogs-b2b-sites.md).   | Feature management<p>*Enable use of multiple catalogs on retail channels*   |
-|E-commerce    |   Web API authentication transfer to e-commerce using Azure Active Directory B2C (Azure AD B2C) | This feature enables customers to pass a valid Azure AD B2C token into an e-commerce site from an external service. Users authenticated against the Azure AD B2C tenant from a separate application or service can be sent to the e-commerce site to continue browsing as a signed-in authenticated user. | Developer opt-in |
-| Globalization  |  Support of Global CFDI version 4.0 in electronic invoices for Mexico |   The Electronic Invoicing functionality for Mexico (Comprobante Fiscal Digital por Internet - CFDI) has been extended to meet the regulatory requirement for the version 4.0 of the Global CFDI format. The feature adds required changes to the layout including the following main changes:<p><p>- New retail-specific element "InformacionGlobal". <p>- Aggregation of all receipts that were issued to final consumers during a given period. <p>For more information, see [Global CFDI electronic invoices for Mexico](/finance/localizations/latam-mex-global-cfdi-3-3).     | CFDI version in Electronic invoice parameters. For more information, see [Electronic invoices (CFDI)](/finance/localizations/latam-mex-CFDI-electronic-invoices). |
+|E-commerce    |   Web API authentication transfer to e-commerce using Microsoft Entra ID B2C (Microsoft Entra B2C) | This feature enables customers to pass a valid Microsoft Entra B2C token into an e-commerce site from an external service. Users authenticated against the Microsoft Entra B2C tenant from a separate application or service can be sent to the e-commerce site to continue browsing as a signed-in authenticated user. | Developer opt-in |
+| Globalization  |  Support of Global CFDI version 4.0 in electronic invoices for Mexico |   The Electronic Invoicing functionality for Mexico (Comprobante Fiscal Digital por Internet - CFDI) has been extended to meet the regulatory requirement for the version 4.0 of the Global CFDI format. The feature adds required changes to the layout including the following main changes:<p><p>- New retail-specific element "InformacionGlobal". <p>- Aggregation of all receipts that were issued to final consumers during a given period. <p>For more information, see [Global CFDI electronic invoices for Mexico](/dynamics365/finance/localizations/latam-mex-global-cfdi-3-3).     | CFDI version in Electronic invoice parameters. For more information, see [Electronic invoices (CFDI)](/dynamics365/finance/localizations/latam-mex-CFDI-electronic-invoices). |
 | Globalization  | Display fiscal registration process details in POS             |      The feature provides a possibility to review the fiscal integration state, queue of audit events, connection parameters, and other related information on the **Settings** page of Commerce POS.<p><p>For more information, see [Set up the fiscal integration for Commerce channels](../localizations/setting-up-fiscal-integration-for-retail-channel.md)             |   Feature management<p>*Fiscal integration technical profiles overrides*             |
 | Globalization  |    NF525 certification update for France           |    This update includes new capabilities according to the NF525 certification requirements for France:<p><p>-	Register the Void item audit event in the POS audit event log, and digitally sign it.<p>-	Export the Z-Report for a closed shift from Commerce HQ to an XML file.<p>The new *(France) Enable additional audit events in POS* feature provides the possibility to enable the registration and digital signing of all audit events for France without the need to explicitly enable corresponding extensions of Commerce runtime (CRT) and Commerce POS.<p>For more information, see [Cash register functionality for France.](../localizations/emea-fra-cash-registers.md).          | Feature management<p>*(France) Enable additional audit events in POS*<p>*(France) Enable exporting Z-Report to file*|     
 | Payments  |  Enable Google Pay with Dynamics 365 Payment Connector for Adyen | E-commerce customers can use Google Pay on cart and checkout pages that are configured with the express checkout module. | Developer opt-in   |
@@ -82,4 +74,3 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

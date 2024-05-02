@@ -4,10 +4,8 @@ description: This article describes the strategy and scope for tax, finance, and
 author: AdamTrukawka
 ms.date: 10/16/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2018-04-30

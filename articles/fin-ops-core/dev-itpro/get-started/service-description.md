@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Service description for finance and operations apps
-description: This article provides the service description for finance and operations apps.
+description: Learn about the service description for finance and operations apps, including an overview on operating models.
 author: tomhig
-ms.date: 11/06/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: whigginb
+ms.topic: article
+ms.date: 11/06/2023
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-09-03
-
 ---
 
 # Service description for finance and operations apps
@@ -278,7 +275,7 @@ Microsoft has invested in an extensive toolset to monitor and diagnose customers
 
 | Microsoft responsibilities | Customer responsibilities |
 |---|---|
-| <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Azure Active Directory \[Azure AD\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be terminated after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there's expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use Lifecycle Services to report a [production outage](../lifecycle-services/report-production-outage.md).</li></ul> |
+| <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Microsoft Entra \[Microsoft Entra\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be terminated after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there's expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use Lifecycle Services to report a [production outage](../lifecycle-services/report-production-outage.md).</li></ul> |
 
 By submitting support requests online, via Lifecycle Services, customers enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should only be used  if the online option isn't available. For more information, see [Phone support options](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
@@ -422,4 +419,3 @@ Microsoft services finance and operations environments on consistent basis throu
 ### User
 
 A single person who uses finance and operations environments, and who is associated with a customer's tenant.
-

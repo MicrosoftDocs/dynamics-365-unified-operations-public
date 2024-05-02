@@ -1,13 +1,13 @@
 ---
 title: Performance SDK and multiuser testing in on-premises environments
-description: This article explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
+description: Learn about how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
 author: ytong
-ms.date: 03/22/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: ytong
+ms.topic: article
+ms.date: 03/22/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
 ---
@@ -212,7 +212,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
     > [!NOTE]
     > Sometimes, Visual Studio might not update the list of tests after you create a test script from a task recording. In this case, restart Visual Studio, and then reopen Test Explorer.
 
-4. Run the sample single-user test by right-clicking **CreatePurchReq**. Alternatively, you can run the test that you created from your task recording. When you run the test, Internet Explorer should be started, and it should replay the scenario that you recorded.
+4. Run the sample single-user test by right-clicking **CreatePurchReq**. Alternatively, you can run the test that you created from your task recording. When you run the test, Microsoft Edge should be started, and it should replay the scenario that you recorded.
 
 ## Run a multiuser load test by using the Performance SDK
 

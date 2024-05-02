@@ -6,9 +6,6 @@ description: This article lists the steps needed to add the additional BankTrans
 author: angelad116
 ms.date: 10/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

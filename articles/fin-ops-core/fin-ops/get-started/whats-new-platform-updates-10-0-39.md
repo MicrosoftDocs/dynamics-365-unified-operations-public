@@ -1,19 +1,18 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.39 of finance and operations apps (March 2024)
-description: This article lists the features that are included in the platform updates for version 10.0.39 of finance and operations apps.
+description: Learn aboutthe features that are included in the platform updates for version 10.0.39 of finance and operations apps released in March 2024.
 author: johnmichalak
-ms.date: 02/20/2024
+ms.author: johnmichalak
 ms.topic: conceptual
+ms.date: 04/12/2024
 ms.custom: 
   - bap-template
-audience: Application User
+  - evergreen
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: johnmichalak
-
 ---
+
 # Platform updates for version 10.0.39 of finance and operations apps (March 2024)
 
 [!include [banner](../includes/banner.md)]
@@ -50,6 +49,8 @@ This section contains a table that lists the enhancements that are included in t
 | Business Events | Fixed the issue where Batch Business Events were always raised in DAT entity while Job was in any other business entity. | | |
 | Row version change tracking for tables and data entities | Row version change tracking | Finance and operations apps have a change tracking functionality option available that's known as row version change tracking. Change tracking enables incremental synchronization of Finance and Operations apps to Microsoft Dataverse and is a prerequisite for several features. This feature is available since version 10.0.34. With version 10.0.39 the feature is enabled by default in all finance and operations apps environments. In version 10.0.39, the SysRowVersionNumber column is deprecated and replaced by SysRowVersion column for all out-of-the-box tables. For more information on  managing risks, see [Enable row version change tracking functionality](../../dev-itpro/data-entities/rowversion-change-track.md#enable-row-version-change-tracking-functionality). | Default |
 | Generating ISV licenses | SHA256 algorithm for generating ISV licenses | SHA256 - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure SHA256 algorithm for generating ISV licenses. This [replaces](removed-deprecated-features-platform-updates.md#isv-licenses-generated-using-sha1-algorithm-signature-version-1) the SHA1 algorithm. | Default |
+| System Administration | Application users must be present in your Microsoft Entra ID tenant. | Admins can use the new Invalid Users form to determine and [fix invalid users](/dynamics365/fin-ops-core/fin-ops/sysadmin/invalid-users) in the application. | Default |
+
 
 This replaces the SHA1 algorithm. 
 

@@ -1,15 +1,15 @@
 ---
 title: System requirements and prerequisites
-description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
+description: Learn about the system requirements and prerequisites that must be in place before you can enable Dual-write for finance and operations apps.
 author: ericcolvinmorgan
-ms.date: 01/31/2024
+ms.author: ericmorgan
 ms.topic: conceptual
+ms.date: 02/23/2024
 ms.custom: 
   - bap-template
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: ericmorgan
 ms.search.validFrom: 2024-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -22,7 +22,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Verify requirements and grant access
 
-In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the automation built into that process should handle the set up steps documented on this page. If you're receiving errors like the following, these errors indicate failures occurred during the Lifecycle Services provisioning process:
+In general, if performing [Dual-write setup from Lifecycle Services](lcs-setup.md) the automation built into that process should handle the setup steps documented on this page. If you're receiving errors like the following, these errors indicate failures occurred during the Lifecycle Services provisioning process:
 
 | Error code | Error message |
 | --- | --- |
@@ -35,7 +35,7 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
 1. Grant Dataverse access so that it can connect to finance and operations apps.
 
-    1. Open your instance of the finance and operations app, search and navigate to Microsoft Entra ID applications.
+    1. Open your instance of the finance and operations app, search, and navigate to Microsoft Entra ID applications.
     2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that is used to connect from Dataverse to the finance and operations app.
     3. On the new row for the client, select an application user that is enabled and has the appropriate privileges for Dual-write data management.
     4. Repeat the previous three steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
@@ -55,8 +55,11 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
     + **Applications**: Add users to the following applications. The application users must be assigned to a security role that has **Create**, **Read**, **Write**, and **Delete** permissions on all tables in Microsoft Dataverse configured for Dual-write.
 
-        + f1752846-f0df-4766-96f5-c109adf67d7f
+        + 00000015-0000-0000-c000-000000000000
         + 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b
+
+        > [!NOTE]
+        > Application ID **00000015-0000-0000-c000-000000000000** is not a requirement in Cloud Hosted Environments (CHEs) managed by customers. This application ID is only required in Microsoft managed environments.  
 
     + **Security roles**: Select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through Dual-write.
 
@@ -75,11 +78,11 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
     **Related health check result:**<br>
     *The finance and operations app can connect to the Dataverse*<br>
     *Before you can enable Dual-write, you must grant access to the apps to connect to each other<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID f1752846-f0df-4766-96f5-c109adf67d7f exists<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 00000015-0000-0000-c000-000000000000 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
     > [!NOTE]
-    > When a record is created in finance and operations apps, the **Owner** field will be set when the data is written to Dataverse, even if the matched record exists in Dataverse. Because Dual-write uses the app user that has the ID **f1752846-f0df-4766-96f5-c109adf67d7f** to communicate with Dataverse, the **Modified by** field will be set to the app user.
+    > When a record is created in finance and operations apps, the **Owner** field will be set when the data is written to Dataverse, even if the matched record exists in Dataverse. Because Dual-write uses the app user that has the ID **00000015-0000-0000-c000-000000000000** to communicate with Dataverse, the **Modified by** field will be set to the app user.
 
 3. Provide app consent in the tenant.
    For Dual-write core solution version 1.0.16.0 or later, this step is no longer needed.
@@ -92,7 +95,7 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
 4. Install **Dual-write application solutions**.
 
-    In the navigation pane in Power Apps, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
+    In the navigation pane in Power Apps, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview)), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwfne?tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
 
     + Customers, products, and vendors.
     + End-to-end process flows like quote to cash.
@@ -117,6 +120,6 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
 ## Next steps
 
-[Enable table maps for dual-write](enable-entity-map.md)
+[Enable table maps for Dual-write](enable-entity-map.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

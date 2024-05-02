@@ -1,15 +1,15 @@
 ---
 title: Dual-write setup from Lifecycle Services
-description: This article explains how to set up a dual-write connection from Microsoft Dynamics 365 Lifecycle Services.
+description: Learn how to set up a dual-write connection from Microsoft Dynamics 365 Lifecycle Services, including prerequisites and the setup process.
 author: laneswenka
-ms.date: 02/16/2024
+ms.author: laswenka
 ms.topic: how-to
+ms.date: 02/23/2024
 ms.custom: 
   - bap-template
-audience: Application User, IT Pro
 ms.reviewer: johnmichalak
+audience: Application User, IT Pro
 ms.search.region: global
-ms.author: laswenka
 ms.search.validFrom: 2020-01-06
 ---
 
@@ -64,6 +64,20 @@ Certificates in your Microsoft Entra tenant are no longer installed in new one-b
    - In the **Business unit** drop-down list, select the root business unit for the environment.
    - In the **Security roles** text box, select a security role with create, read, update, and delete permissions on Dataverse tables used for dual-write, such as the **System Administrator** role.
    - Select **Create**.
+6. Enable the "DualWriteUnoAuthenticationFnoToCds" flight:
+   - Open SQL Server Management Studio and connect to the "AXDB" on your one-box environment.
+   - Run the following SQL script to enable the "DualWriteUnoAuthenticationFnoToCds" flight:
+
+    ```sql
+    DECLARE @flightName NVARCHAR(100) = 'DualWriteUnoAuthenticationFnoToCds';
+    IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)
+    INSERT INTO SYSFLIGHTING(FLIGHTNAME, ENABLED, FLIGHTSERVICEID, PARTITION)
+    SELECT @flightName, 1, 12719367, RECID FROM DBO.[PARTITIONS];
+    ELSE
+    UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;
+    ```
+
+    - Restart the Application Object Server (AOS) service.
 
 > [!NOTE]
 > If permissions for the application user are not configured for your one-box environment, you may receive the following error message during dual-write sync operations:
@@ -84,7 +98,7 @@ If you receive this warning, try one of the following solutions:
 - If your Lifecycle Services environment hasn't ever been set up for Power Platform integration, you can connect to the Dataverse instance that is configured in dual-write by following the instructions in this article.
 - If your Lifecycle Services environment is already set up for Power Platform integration, you should reset your dual-write connection to the one specified by Lifecycle Services using the [Reset dual-write connections](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/reset).
 
-In the past a manual support ticket option was available, but that was before option 1 above existed.  Microsoft no longer supports manual relinking requests via Support tickets.
+In the past a manual support ticket option was available, but that was before option 1 above existed. Microsoft no longer supports manual relinking requests via Support tickets.
 
 ### Incorrect permissions on service principal
 

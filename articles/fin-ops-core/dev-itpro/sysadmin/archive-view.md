@@ -1,14 +1,15 @@
 ---
 title: View archived data in Dataverse long-term retention (preview)
-description: This article describes how to view archived data in Microsoft Dataverse long-term retention.
+description: Learn about how to view archived data in Microsoft Dataverse long-term retention, including an overview on viewing data by using Fabric.
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
 ms.topic: conceptual
-ms.date: 2/06/2024
-ms.custom:
-
+ms.date: 03/26/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: twheeloc
 ---
+
 # View archived data in Dataverse long-term retention (preview)
 
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
@@ -35,7 +36,7 @@ To view the archived data in Dataverse, follow these steps.
 The data in the Dataverse-managed data lake is available in Dataverse tables that have the "mserp\_" prefix. In Dataverse tables that have this prefix, you can use the `msft\_datastate` column to filter the data through a SQL `WHERE` clause:
 
 - To filter for inactive (archived) application data: `WHERE msft_datastate=1`
-- To filter for active (live) application data: `WHERE msft_datastate=0`
+- To filter for active (live) application data: `WHERE msft_datastate=0 or msft_datastate=NULL'
 
 You can also access archived data by using a model-driven app that's created in Power Apps and that uses Dataverse Advanced Find. Alternatively, you can build canvas apps in Power Apps.
 

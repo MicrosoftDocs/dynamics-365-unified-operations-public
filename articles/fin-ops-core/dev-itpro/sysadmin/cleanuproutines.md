@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
-description: The article provides an overview of cleanup routines in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: Learn about cleanup routines in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, including a table defining various system administration paths.
 author: dvliegen
-ms.date: 02/09/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: dvliegen
+ms.topic: article
+ms.date: 02/09/2024
+ms.custom: 
+ms.reviewer: johnmichalak 
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-10-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
-
 ---
 
 # Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
@@ -50,8 +39,8 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 
 | Path | Description |
 |------|-------------|
-| In the **Data management** workspace, select **Job history cleanup**. | <p>By default, job history entries and related staging table data that are older than 90 days are automatically deleted (starting September 2023). To configure a job history retention period of less than 90 days, use the Execution history cleanup feature in Data management. It replaces the earlier Staging cleanup routine, which is now obsolete (deprecated).</p><p>The following tables are cleaned up:</p><ul><li>All staging tables</li><li>DMFSTAGINGVALIDATIONLOG</li><li>DMFSTAGINGEXECUTIONERRORS</li><li>DMFSTAGINGLOGDETAIL</li><li>DMFSTAGINGLOG</li><li>DMFDEFINITIONGROUPEXECUTIONHISTORY</li><li>DMFEXECUTION</li><li>DMFDEFINITIONGROUPEXECUTION</li></ul> |
-| In the **Data management** workspace, select the **Staging cleanup** tile. | This cleanup routine should no longer be used, because it's obsolete. Instead, use the Job history cleanup routine. |
+| In the **Data management** workspace, select **Job history cleanup**. | <p>By default, job history entries and related staging table data that are older than 90 days are automatically deleted (starting September 2023). To configure a job history retention period of less than 90 days, use the Execution history cleanup feature in Data management. It replaces the earlier Staging cleanup routine, which is now obsolete (deprecated).</p><p>The following tables are cleaned up:</p><ul><li>All staging tables</li><li>DMFSTAGINGVALIDATIONLOG</li><li>DMFSTAGINGEXECUTIONERRORS</li><li>DMFSTAGINGLOGDETAIL</li><li>DMFSTAGINGLOG</li><li>DMFDEFINITIONGROUPEXECUTIONHISTORY</li><li>DMFEXECUTION</li><li>DMFDEFINITIONGROUPEXECUTION</li><li>DMFDEFINITIONGROUPEXECUTIONPROGRESS</li></ul> |
+
 
 ## General ledger
 

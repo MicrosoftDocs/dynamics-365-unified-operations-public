@@ -4,8 +4,6 @@ description: This article covers online platform extensibility in Microsoft Dyna
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
