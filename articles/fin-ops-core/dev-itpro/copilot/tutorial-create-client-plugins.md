@@ -26,7 +26,7 @@ Here's an overview of the steps in this tutorial.
 
 1. Create a client-side action in X++ that defines the logic to invoke for the action.
 2. In Copilot Studio, create a topic that's triggered by a Copilot prompt to go to a defined form, and that invokes the client action that you created in step 1.
-3. Create a topic that's triggered by the completed client action and that returns a response to the user in the Copilot chat pane.
+3. Create a topic that's triggered by the completed client action and returns a response to the user in the Copilot chat pane.
 
 ### Prerequisites
 
@@ -106,7 +106,7 @@ In your unified developer environment, create an X++ class that defines the navi
 For this example, you create two topics in the **Copilot in Finance and Operation** chatbot in Copilot Studio. The first topic initiates the plugin when the prompt that a user enters in Copilot indicates intent to go to a form. When this topic is triggered, it determines the input parameters for the action and sends them as an event to X++ to call the action.
 
 1. In Copilot Studio, open the **Copilot in Finance and Operation** chatbot.
-2. Create a topic that's named **CustomClientNavigation** and that has the following trigger phrases:
+2. Create a topic that's named **CustomClientNavigation** and has the following trigger phrases:
 
     - "Navigate to form"
     - "Open page"
