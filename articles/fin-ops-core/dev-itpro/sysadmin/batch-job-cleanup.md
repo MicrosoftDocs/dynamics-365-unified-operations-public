@@ -23,9 +23,6 @@ Over time, new batch jobs are created for specific user actions, one-time jobs a
 
 In version 10.0.39 (Platform update 63), the **System administration** module includes a **Batch job clean-up** page that simplifies the process of cleaning up the batch job table. To open this page, go to **System administration** \> **Periodic tasks** \> **Batch job clean-up**.
 
-> [!NOTE]
-> We recommend that you regularly clean up the batch job table, and that you do this cleanup outside business hours.
-
 ## Run batch job cleanup
 
 To quickly clean up the records in the batch job table, follow these steps.
@@ -39,5 +36,12 @@ To quickly clean up the records in the batch job table, follow these steps.
 1. In the **Created by** field, specify the user ID of the person who created the job.
 1. In the **Withhold**, **Error**, **Finished**, and **Canceled** terminal status fields, select at least one option to delete the batch jobs.
 1. Select **OK**.
+
+## Best Practice
+
+- We recommend that you regularly clean up the batch job table, and that you do this cleanup outside business hours.
+- It's advisable to avoid from running multiple **Batch job clean-up** Jobs simultaneously. This precaution is necessary because simultaneous runs might lead to database deadlocks, especially considering the typically high volume of data involved.
+- If you need to execute multiple tasks within the **Batch job clean-up**, each with different criteria, it's best to run them one after another in sequence. Running these tasks concurrently could result in deadlocks, as the cleanup processes might overlap, particularly when deleting large amounts of data from Batch tables.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
