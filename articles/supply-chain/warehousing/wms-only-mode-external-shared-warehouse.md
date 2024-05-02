@@ -80,7 +80,7 @@ Here's a high-level description of the inbound process. Steps that start with *L
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
 
 > [!IMPORTANT]
-> For the preceding flow, the [**Allow load split during ship confirm**](confirm-and-transfer.md) option for outbound loads isn't supported in the *WOM* legal entity. Likewise, planned cross-docking information isn't automatically transferred from sales subsidiary legal entities to the *Warehouse management only mode* process.
+> For the preceding flow, the [**Allow load split during ship confirm**](confirm-and-transfer.md) option for outbound loads isn't supported in the *WOM* legal entity. Likewise, planned cross-docking information isn't automatically transferred from the sales subsidiary legal entities to the *Warehouse management only mode* process.
 
 > [!NOTE]
 > When you release orders or loads to the warehouse in the *LE1* legal entity, the shipments that are created are locked with **Outbound shipment processing ownership** set to *External* until order data from the *WOM* legal entity is returned. If order data isn't returned, or if other issues occur, you can get update rights for the shipments by selecting the **Claim processing ownership** action on the shipments. Only admin roles should be granted permission to use this action.
