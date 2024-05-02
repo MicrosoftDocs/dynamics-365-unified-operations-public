@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Extend tax engine configurations
-description: This article provides information about extending tax engine configurations.
-author: kailiang
-ms.date: 05/24/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: India
-# ms.search.industry: 
+description: Learn about extending tax engine configurations, including prerequisites and a table that provides full names for various tax terms.
+author: Kai-Cloud
 ms.author: kailiang
+ms.topic: article
+ms.date: 05/24/2021
+ms.reviewer: kfend
+audience: IT Pro 
+ms.search.region: India
 ms.search.validFrom: 2017-12-31
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Extend tax engine configurations 
