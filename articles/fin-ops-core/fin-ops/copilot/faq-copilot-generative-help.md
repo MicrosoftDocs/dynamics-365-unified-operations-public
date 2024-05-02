@@ -20,7 +20,7 @@ This FAQ provides answers to frequently asked questions about the AI technology 
 
 ## What is Generative help and guidance with Copilot?
 
-The *Generative help and guidance with Copilot* helps users by providing in-app help guidance with the help of the power of generative AI.
+The *Generative help and guidance with Copilot* feature helps users by providing in-app help guidance with the help of the power of generative AI.
 
 It uses [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to directly access the breadth of public documentation so it can offer precise assistance for using the extensive capabilities of Microsoft finance and operations apps.
 

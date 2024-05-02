@@ -4,9 +4,9 @@ description: This article explains how to use Warehouse only mode to perform day
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner
 ms.topic: how-to
-ms.date: 01/29/2024
+ms.date: 04/27/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -21,9 +21,11 @@ ms.custom: bap-template
 
 This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Monitor the integration
 
-To monitor the integration between the external systems and Microsoft Dynamics 365 Supply Chain Management, go to **Warehouse management** \> **Workspaces** \> **Warehouse integration monitoring**. From the **Warehouse integration monitoring** page, you can perform the following tasks:
+To monitor the integration between the external systems or legal entities with Microsoft Dynamics 365 Supply Chain Management, go to **Warehouse management** \> **Workspaces** \> **Warehouse integration monitoring**. From the **Warehouse integration monitoring** page, you can perform the following tasks:
 
 - Get an overview of integration messages.
 - Go to pages that have related information and functionality, such as the [**Message processor messages**](warehouse-message-processor-messages.md) page.
@@ -78,28 +80,6 @@ If you're already familiar with Supply Chain Management, you might recognize tha
 
 In addition to using entity messages to create outbound shipment orders, you can enable manual outbound shipment order creation for one or more source systems. Users can then create inbound shipment orders directly on the **Outbound shipment orders** page. To enable manual outbound shipment order creation, go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**, and set the **Enable manual outbound shipment order creation** option to *Yes* for the relevant source system. This setting activates the **New** button on the **Inbound shipment orders** page. For shipment orders that are created without message processing, the **External order type** field has the value *Manual order* instead of *Outbound shipment order*.
 
-## Inbound process
-
-The following illustration highlights the elements of the inbound process.
-
-:::image type="content" source="media/wms-only-inbound-wom-process.svg" alt-text="Inbound process for Warehouse management only mode." lightbox="media/wms-only-inbound-wom-process.svg":::
-
-Here's a high-level description of the inbound process:
-
-1. An external system submits an *inbound shipment order* message to Supply Chain Management.
-1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. Inbound loads are created in one of four ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
-
-    - Manually, by using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
-    - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
-    - Automatically during [message processing](../supply-chain-dev/message-processor.md)
-    - Automatically during the Warehouse Management mobile app receiving process
-
-1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions.
-1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-using.md#shipment-receipts), and trigger *business events* for the external systems.
-1. The external systems read and use the [shipment receipt](wms-only-mode-using.md#shipment-receipts) data for further processing. For example, if purchase orders are associated with the inbound shipment orders in the external system, this processing involves purchase order invoicing.
-1. Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
-
 ## <a name="receiving-completed"></a>Receiving completed process
 
 The *receiving completed* process updates the load status to *Received* and generates [shipment receipts](#shipment-receipts). The shipment receipts then trigger a business event for the external systems.
@@ -143,31 +123,6 @@ External systems can be informed via [business events](wms-only-mode-exchange-da
 - `ShipmentReceiptJournalLines` – The shipment receipt line data.
 - `ShipmentReceiptTransactionDimensions` – The detailed shipment receipt line data.
 
-## Outbound process
-
-The following illustration highlights the elements of the outbound process.
-
-:::image type="content" source="media/wms-only-outbound-wom-process.svg" alt-text="Outbound process for Warehouse management only mode." lightbox="media/wms-only-outbound-wom-process.svg":::
-
-Here's a high-level description of the outbound process:
-
-1. An external system submits an *outbound shipment order* message.
-1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. Inventory reservations are created in one of two ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
-
-    - Automatically by the [message processor](../supply-chain-dev/message-processor.md)
-    - Manually, as part of the release process
-
-1. The orders are released for further warehouse processing, either manually or automatically (by running the *Automatic release of outbound shipment orders* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)).
-1. Depending on the setup of your [wave template](wave-templates.md) definitions, warehouse work might be created and released immediately.
-1. The outbound warehouse work is processed, and the status of the related outbound shipment order line transactions is updated to *Picked*.
-1. The loads are outbound ship confirmed. As a result, *business events* and a [*shipment packing slip*](wms-only-mode-using.md#shipment-packing-slips) are created for the external system.
-1. The external system reads the shipment packing slip and uses its data for further processing (such as for sales order invoicing for sales orders that are associated with outbound shipment orders).
-1. Supply Chain Management finalizes the outbound shipment order by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
-
-> [!NOTE]
-> You can reverse the shipment confirmation only if the related outbound shipment order line transactions haven't yet been finalized.
-
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
 
 To view detailed line transactions that are related to shipped inventory, and to print a report, go to **Warehouse management** \> **Outbound shipment orders** \> **Shipment packing slips**, and select **Preview/Print**. To control the printed inventory dimension values, go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**, and then, on the **Reports** tab, select an option for **Shipment packing slip**.
@@ -184,6 +139,9 @@ External systems can be informed via [business events](wms-only-mode-exchange-da
 - `ShipmentPackingSlipJournalHeaders` – The shipment packing slip header data.
 - `ShipmentPackingSlipJournalLines` – The shipment packing slip line data.
 - `ShipmentPackingSlipTransactionDimensions` – The detailed shipment packing slip line data.
+
+> [!NOTE]
+> You can reverse the shipment confirmation only if the related outbound shipment order line transactions haven't yet been finalized.
 
 ## <a name="maintain-messages"></a>View and maintain shipment order messages
 
@@ -208,4 +166,3 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 
 > [!WARNING]
 > In a production environment, manually entered messages and field updates can cause data inconsistencies between the external source system and Supply Chain Management. For example, you might change an item number to a value that isn't known to the external system. This type of update will probably cause issues in progress information flows. The issues might even be impossible to correct in the external system. We recommend that you use user roles and security privileges to restrict access to this functionality to as few people as possible.
-

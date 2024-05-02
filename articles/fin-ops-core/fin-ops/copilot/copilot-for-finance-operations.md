@@ -1,6 +1,6 @@
 ---
 title: Overview of Copilot capabilities in finance and operations apps
-description: This article provides information about Copilot capabilities in finance and operations apps and explains how to use them.
+description: Learn about Copilot capabilities in finance and operations apps and explains how to use them, including an outline on responsible use of AI.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac

@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Business performance planning Excel add-in FAQ
-description: This article provides answers to frequently asked questions about the Microsoft Excel add-in for business performance planning.
+description: Access answers to frequently asked questions about the Microsoft Excel add-in for business performance planning, including questions about installation.
 author: ShielaSogge
-ms.date: 04/23/2024
-ms.topic: article
-ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 04/23/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Business performance planning Excel add-in FAQ
 
 [!include [banner](../includes/banner.md)]

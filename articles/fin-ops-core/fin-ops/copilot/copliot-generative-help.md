@@ -1,5 +1,5 @@
 ---
-title: Generative help and guidance with Copilot (preview)
+title: Generative help and guidance with Copilot
 description: Copilot provides in-app help and guidance that uses the power of generative AI to give contextual support to users. This article provides information about this feature, its prerequisites, and how it works.
 author: cabeln
 ms.author: cabeln

@@ -1,17 +1,13 @@
 ---
-# required metadata
-
 title: Install prerequisites for Business performance analytics
-description: This article describes how to complete the prerequisites for Business performance analytics.
+description: Learn how to complete the prerequisites for Business performance analytics, including outlines on availability, and systema and version requirements.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 12/20/2023
 ms.topic: conceptual
+ms.date: 05/01/2024
 ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
-ms.audience: administrator
 ---
 
 # Business performance analytics installation prerequisites
@@ -91,16 +87,15 @@ The following setup is required in the Dynamics 365 Finance before you can insta
 
     1. Go to **System administration \> License configuration**.
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
-    3. Confirm that the following checkboxes are enabled:
-        - **General ledger** - **Budget**, **Reversing entries**, **Sales tax**
+    3. Confirm that the following checkboxes and sub-checkboxes are enabled:
+        - **General ledger** - Budget, Reversing entries, Sales tax
         - **Fixed assets**
-        - **Bank**
-        - **Trade**
-        - **Trade agreements**
+        - **Bank** - Check, Deposit slip, Negotiable instrument - Bill of exchange
+        - **Trade** Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management
+        - **Trade agreements** - Price/discount
         - **Project**
-        - **Procurement 1**
+        - **Procurement 1** - Purchase requisition
         - **Process distribution**
-        - **Retail channels**
         - **Service management**
        
         

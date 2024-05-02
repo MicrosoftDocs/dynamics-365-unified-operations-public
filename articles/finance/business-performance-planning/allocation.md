@@ -1,29 +1,18 @@
 ---
-# required metadata
-
-title: Allocation visual
-description: This article describes how to use the Allocation visual in the Business performance planning application.
+title: Allocation method
+description: Learn how to use the Allocation method in the Business performance planning application, including outlines on how allocation applies at different data levels.
 author: ShielaSogge
-ms.date: 12/08/2023
-ms.topic: article
-ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 12/08/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Allocation method
 
 [!include [banner](../includes/banner.md)]

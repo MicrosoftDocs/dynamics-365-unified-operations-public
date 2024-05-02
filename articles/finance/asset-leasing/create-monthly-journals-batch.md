@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Create monthly journal entries in a batch
-description: This article explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.
+description: Learn about how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.
 author: moaamer
-ms.date: 08/10/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: Dialog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 08/10/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: Dialog
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Create monthly journal entries in a batch
