@@ -95,10 +95,7 @@ The following setup is required in the Dynamics 365 Finance before you can insta
         - **Trade agreements** - Price/discount
         - **Project**
         - **Procurement 1** - Purchase requisition
-        - **Process distribution**
         - **Service management**
-       
-        
        
 3. When you've finished, disable maintenance mode.
 
