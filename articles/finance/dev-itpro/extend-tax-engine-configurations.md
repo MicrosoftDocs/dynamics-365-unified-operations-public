@@ -498,15 +498,15 @@ After the status is updated to **Complete**, the configuration is ready for depl
 1. Go to **Extension configuration**, and then select **Rebase**. 
 2. In the **Rebase** dialog box, in the **Target version** field, change the target version to latest Microsoft version.
 
-	[![Rebase step 1.](../general-ledger/media/extend-tax-engine-configurations-rebase1.png)](/media/extend-tax-engine-configurations-rebase1.png)
+	[![Rebase step 1.](../general-ledger/media/extend-tax-engine-configurations-rebase1.png)]
 
 	If there is a conflict, you will receive a warning message.
 	
-	[![Rebase step 2.](../general-ledger/media/extend-tax-engine-configurations-rebase2.png)](/media/extend-tax-engine-configurations-rebase2.png)
+	[![Rebase step 2.](../general-ledger/media/extend-tax-engine-configurations-rebase2.png)]
 
 3. To resolve the conflict, select **Designer** to open the rebased extension configuration.
 
-	[![Rebase step 3.](../general-ledger/media/extend-tax-engine-configurations-rebase3.png)](/media/extend-tax-engine-configurations-rebase3.png)
+	[![Rebase step 3.](../general-ledger/media/extend-tax-engine-configurations-rebase3.png)]
 
 4. Select one of the following three ways to resolve the conflict:
 
@@ -516,6 +516,6 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 5. After you resolve the conflict, the **Resolved** check box is marked.
 
-	[![rebase step 4.](../general-ledger/media/extend-tax-engine-configurations-rebase4.png)](/media/extend-tax-engine-configurations-rebase4.png)
+	[![rebase step 4.](../general-ledger/media/extend-tax-engine-configurations-rebase4.png)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
