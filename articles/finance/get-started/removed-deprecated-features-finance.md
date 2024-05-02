@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: twheeloc
-ms.date: 02/22/2024
+ms.date: 05/02/2024
 ms.topic: article
 # optional metadata
 
@@ -68,12 +68,13 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced 22 existing fields starting with SystemGenerated* with three new fields in the DimensionAttributeValueCombination table and DimensionAttributeValueSet table |
+| **Reason for deprecation/removal** | Replaced 22 existing fields starting with SystemGenerated* with three new fields in the DimensionAttributeValueCombination table and DimensionAttributeValueSet table. |
 | **Replaced by another feature?**   | N/A |
 | **Product areas affected**         | Developer |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes will be removed by December 27, 2024. The reason for this change is improved performance and reduced storage costs. All access to these fields should be internal only to the core Financial dimension API's and no action is required if using our API's. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references asap. The fields will be removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
-=======
+| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes will be removed by December 27, 2024. The reason is improved performance and reduced storage costs. All access to these fields should be internal only to the core Financial dimension API's and no action is required if using our API's. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references asap. The fields will be removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
+
+
 ### Electronic Invoicing integration using Microsoft Dataverse
 
 | &nbsp;  | &nbsp;  |
