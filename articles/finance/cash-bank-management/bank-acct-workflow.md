@@ -1,17 +1,17 @@
 ---
 title: Bank account lifecycle management
-description: This article explains how to enable an approval workflow for bank accounts in the Cash and bank management module.
-author: EricWang
-ms.date: 04/18/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: 
+description: Learn how to enable an approval workflow for bank accounts in the Cash and bank management module, including prerequisites and a step-by-step process.
+author: EricWangChen
 ms.author: wangchen
+ms.topic: article
+ms.date: 04/18/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 2024-04-29
-ms.dyn365.ops.version: 
-ms.custom: 
 ms.search.form: 
+ms.dyn365.ops.version:  
 ---
 
 # Bank account lifecycle management
