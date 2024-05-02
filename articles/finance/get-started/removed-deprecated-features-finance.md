@@ -48,7 +48,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By February 1, 2025, we plan to no longer support the Sales tax report for Estonia (Estonian report layout). New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By February 1, 2025, the Sales tax report for Estonia (Estonian report layout) will not be supported. New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
 
 ### Sales tax (Italy) SSRS format, Italian report layout, menu item
 
@@ -94,7 +94,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports **Dataverse solution for Electronic invoicing**. This plugin is no longer required by the new version of the globalization feature for Electronic invoicing in Indonesia. |
+| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports **Dataverse solution for Electronic invoicing**. This plugin isn't required by the new version of the globalization feature for Electronic invoicing in Indonesia. |
 
 ### TaxYearlyCom_IT, TaxYearlyComReport_IT tables for Italian Yearly tax communication
 
