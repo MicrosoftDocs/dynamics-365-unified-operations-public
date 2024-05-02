@@ -4,7 +4,7 @@ description: Learn about how to clean up the batch job table, including a step-b
 author: snagamalla
 ms.author: snagamalla
 ms.topic: how-to
-ms.date: 02/09/2024
+ms.date: 05/02/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -41,7 +41,7 @@ To quickly clean up the records in the batch job table, follow these steps.
 
 - We recommend that you regularly clean up the batch job table, and that you do this cleanup outside business hours.
 - It's advisable to avoid running multiple **Batch job clean-up** Jobs simultaneously. This precaution is necessary because simultaneous runs might lead to database deadlocks, especially considering the typically high volume of data involved.
-- If you need to execute multiple tasks within the **Batch job clean-up**, each with different criteria, it's best to run them one after another in sequence. Running these tasks concurrently could result in deadlocks, as the cleanup processes might overlap, particularly when deleting large amounts of data from Batch tables.
+- If you need to run multiple tasks within the **Batch job clean-up**, each with different criteria, it's best to run them one after another in sequence. Running these tasks concurrently could result in deadlocks, as the cleanup processes might overlap, particularly when deleting large amounts of data from Batch tables.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
