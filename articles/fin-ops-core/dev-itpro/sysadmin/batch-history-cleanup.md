@@ -4,7 +4,7 @@ description: Learn about how to clean up the batch job history, including an ove
 author: snagamalla
 ms.author: snagamalla
 ms.topic: article
-ms.date: 02/09/2024
+ms.date: 05/02/2024
 ms.reviewer: johnmichalak 
 audience: IT Pro
 ms.search.region: Global
@@ -48,6 +48,6 @@ The custom batch job lets you apply other filtering, based on criteria such as s
 
 - We recommend that you regularly clean up the batch job history, and that you do this cleanup outside of business hours.
 - It's advisable to avoid running multiple Batch History Cleanup Jobs simultaneously. This precaution is necessary because simultaneous runs might lead to database deadlocks, especially considering the typically high volume of data involved.
-- If you need to execute multiple tasks within the **Batch job history clean-up (custom)**, each with different criteria, it's best to run them one after another in sequence. Running these tasks concurrently could result in deadlocks, as the cleanup processes might overlap, particularly when deleting large amounts of data from History tables.
+- If you need to run multiple tasks within the **Batch job history clean-up (custom)**, each with different criteria, it's best to run them one after another in sequence. Running these tasks concurrently could result in deadlocks, as the cleanup processes might overlap, particularly when deleting large amounts of data from History tables.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
