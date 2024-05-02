@@ -72,7 +72,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | N/A |
 | **Product areas affected**         | Developer |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes will be removed by December 27, 2024. The reason is improved performance and reduced storage costs. All access to these fields should be internal only to the core Financial dimension API's and no action is required if using our API's. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references asap. The fields will be removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
+| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes will be removed by December 27, 2024 to improve performance and reduce storage costs. All access to these fields should be internal only to the core Financial dimension API's and no action is required if using our API's. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references asap. The fields will be removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
 
 
 ### Electronic Invoicing integration using Microsoft Dataverse
