@@ -19,11 +19,19 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This article explains how to run Warehouse management only mode with external shared warehouse processing. This approach enables warehouse management (WMS) functionality to be integrated into a separate legal entity that handles requests from multiple sales subsidiaries/legal entities in Microsoft Dynamics 365 Supply Chain Management.
+This article explains how to use Warehouse management only mode to support external shared warehouse processing. This approach enables warehouse management (WMS) functionality to be consolidated into a separate legal entity that handles requests from multiple sales subsidiaries (legal entities) in Microsoft Dynamics 365 Supply Chain Management.
 
-You can use [Warehouse management only mode](wms-only-mode-overview.md) to handle logistics operations in a legal entity that's dedicated to warehousing operations. You can then connect warehouses between that legal entity and other legal entities that do all the order and financial processing. In addition, warehouse management processes can use an owner inventory dimension to track which legal entity owns the inventory for items that are shared across legal entities.
+You can use [Warehouse management only mode](wms-only-mode-overview.md) to handle logistics operations in a legal entity that's dedicated to warehousing operations. You can then connect warehouses between that legal entity and other legal entities that do all the order and financial processing. In addition, warehouse management processes can use an *owner* inventory dimension to track which legal entity owns the inventory for items that are shared across legal entities.
 
-This feature works well in a single-instance deployment model where you want to link multiple tenants, one of which handles the logistics warehouse processes. For this approach, you need an integration process like the one that's described in [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
+This feature works without modifications in a single-instance deployment model. If you want to link between multiple instances, one of which handles logistics and warehouse processes, you must set up an integration process like the one that's described in [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
+
+To use *Warehouse management only mode* in a multi-instance deployment, you must use the [standard integration process](/dynamics365/guidance/implementation-guide/integrate-other-solutions).
+
+The following articles provide detailed information about how *Warehouse management only mode* works:
+
+- [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md)
+- [Exchange data between systems](wms-only-mode-exchange-data.md)
+- [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
@@ -72,7 +80,7 @@ Here's a high-level description of the inbound process. Steps that start with *L
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
 
 > [!IMPORTANT]
-> For the preceding flow, [*Allow load split during ship confirm*](confirm-and-transfer.md) for outbound loads isn't supported in the *WOM* legal entity.
+> For the preceding flow, the [**Allow load split during ship confirm**](confirm-and-transfer.md) option for outbound loads isn't supported in the *WOM* legal entity. Likewise, planned cross-docking information isn't automatically transferred from the sales subsidiary legal entities to the *Warehouse management only mode* process.
 
 > [!NOTE]
 > When you release orders or loads to the warehouse in the *LE1* legal entity, the shipments that are created are locked with **Outbound shipment processing ownership** set to *External* until order data from the *WOM* legal entity is returned. If order data isn't returned, or if other issues occur, you can get update rights for the shipments by selecting the **Claim processing ownership** action on the shipments. Only admin roles should be granted permission to use this action.
@@ -83,7 +91,7 @@ The following illustration shows how on-hand inventory adjustments are handled w
 
 :::image type="content" source="media/wms-only-shared-warehouse-inventory-process.svg" alt-text="Diagram of the inventory process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inventory-process.svg":::
 
-Changes in on-hand inventory that are the result of inbound and outbound shipment orders are handled when *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* operations are processed by the [message processor](../supply-chain-dev/message-processor.md) in the *LE1* legal entity. However, other warehouse movements, such as warehouse counting operations, must also ensure that on-hand inventory is the same between the *WOM* legal entity and any related order processing legal entities, such as *LE1*. Therefore, Warehouse management only mode records all the changes in warehouse inventory in the warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This data is used to automatically create external inventory adjustments for the relevant legal entities via the *Publish warehouse inventory update log updates* [process automation background process](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). (By default, this background process runs every 10 minutes.)
+Changes in on-hand inventory that are the result of inbound and outbound shipment orders are handled when *Receive external warehouse inbound shipment order update* and *Receive external warehouse outbound shipment order update* operations are processed by the [message processor](../supply-chain-dev/message-processor.md) in the *LE1* legal entity. However, other warehouse movements, such as warehouse counting operations, must also ensure that on-hand inventory is the same between the *WOM* legal entity and any related order processing legal entities, such as *LE1*. Therefore, Warehouse management only mode can record the changes in warehouse inventory in the warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**). This data is used to automatically create external inventory adjustments for the relevant legal entities via the *Publish warehouse inventory update log updates* [process automation background process](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). (By default, this background process runs every 10 minutes.)
 
 You can use the *Create external inventory adjustment journals* process (**Warehouse management** \> **Periodic tasks** \> **Create external inventory adjustment journals**) to generate the inventory adjustment journals that are used to update the on-hand inventory. In this way, you can keep inventory information synced between the two legal entities.
 
@@ -93,8 +101,11 @@ To automatically post the inventory adjustment journals, go to **Warehouse manag
 
 The Warehouse inventory update log (**Warehouse management** \> **Inquiries and reports** \> **Physical inventory reconciliation** \> **Warehouse inventory update log**) collects all the inventory transaction updates that lead to on-hand updates that are of interest for the related legal entities. For example, you might want to handle information about inventory status changes.
 
+> [!TIP]
+>For example, if you want to adjust the inventory in the warehouse only mode legal entity without affecting the order legal entity or causing duplicate adjustments through the warehouse inventory log update process, you can use an Inventory journal name with the *Exclude from warehouse inventory update logs* setting turned on. This will prevent the journal posting from being logged.
+
 > [!IMPORTANT]
-> For [source systems](wms-only-mode-setup.md#source-systems) that are related to external warehouse management systems, turn off the **Enable warehouse inventory update logs** option for inbound and outbound shipment orders. In this way, you prevent inventory adjustment journal processing from updating your on-hand inventory.
+> For [source systems](wms-only-mode-setup.md#source-systems) that are related to external warehouse management systems, keep the **Enable warehouse inventory update logs** option turned off for inbound and outbound shipment orders. In this way, you prevent inventory adjustment journal processing from updating your on-hand inventory in the sales subsidiary legal entities.
 
 ## Example setup that uses external shared warehouse processing in Supply Chain Management
 
