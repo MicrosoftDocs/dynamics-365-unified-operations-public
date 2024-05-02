@@ -19,15 +19,16 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This article explains how to run Warehouse management only mode with external shared warehouse processing. This approach enables warehouse management (WMS) functionality to be integrated into a separate legal entity that handles requests from multiple sales subsidiaries/legal entities in Microsoft Dynamics 365 Supply Chain Management.
+This article explains how to use Warehouse management only mode to support external shared warehouse processing. This approach enables warehouse management (WMS) functionality to be consolidated into a separate legal entity that handles requests from multiple sales subsidiaries (legal entities) in Microsoft Dynamics 365 Supply Chain Management.
 
-You can use [Warehouse management only mode](wms-only-mode-overview.md) to handle logistics operations in a legal entity that's dedicated to warehousing operations. You can then connect warehouses between that legal entity and other legal entities that do all the order and financial processing. In addition, warehouse management processes can use an owner inventory dimension to track which legal entity owns the inventory for items that are shared across legal entities.
+You can use [Warehouse management only mode](wms-only-mode-overview.md) to handle logistics operations in a legal entity that's dedicated to warehousing operations. You can then connect warehouses between that legal entity and other legal entities that do all the order and financial processing. In addition, warehouse management processes can use an *owner* inventory dimension to track which legal entity owns the inventory for items that are shared across legal entities.
 
-This feature works without modifications in a single-instance deployment model, in case you want to link multiple tenants, one of which handles the logistics warehouse processes you need an integration process like the one that's described in [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md).
+This feature works without modifications in a single-instance deployment model. If you want to link multiple tenants, one of which handles logistics and warehouse processes, you must set up an integration process like the one that's described in [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md). <!-- KFM: Confirm meaning with Per. How is an instance different from a tenant? -->
 
-To use *Warehouse management only mode* in a multi-instance deployment you will need to use the [standard integration process](../../guidance/implementation-guide/integrate-other-solutions.md).
+To use *Warehouse management only mode* in a multi-instance deployment, you must use the [standard integration process](/dynamics365/guidance/implementation-guide/integrate-other-solutions).
 
-The below describes the specifics about the *Warehouse management only mode* integration:
+The following articles provide detailed information about how *Warehouse management only mode* works:
+
 - [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md)
 - [Exchange data between systems](wms-only-mode-exchange-data.md)
 - [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
@@ -79,9 +80,7 @@ Here's a high-level description of the inbound process. Steps that start with *L
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-shared-and-external-detail-use.md).
 
 > [!IMPORTANT]
-> For the preceding flow, [*Allow load split during ship confirm*](confirm-and-transfer.md) for outbound loads isn't supported in the *WOM* legal entity.
->
-> Likewise, planned cross docking information does not get automatically transfer from a sales subsidiary legal entity to the *Warehouse management only mode* process.
+> For the preceding flow, the [**Allow load split during ship confirm**](confirm-and-transfer.md) option for outbound loads isn't supported in the *WOM* legal entity. Likewise, planned cross-docking information isn't automatically transferred from sales subsidiary legal entities to the *Warehouse management only mode* process.
 
 > [!NOTE]
 > When you release orders or loads to the warehouse in the *LE1* legal entity, the shipments that are created are locked with **Outbound shipment processing ownership** set to *External* until order data from the *WOM* legal entity is returned. If order data isn't returned, or if other issues occur, you can get update rights for the shipments by selecting the **Claim processing ownership** action on the shipments. Only admin roles should be granted permission to use this action.
@@ -106,7 +105,7 @@ The Warehouse inventory update log (**Warehouse management** \> **Inquiries and 
 >For example, if you want to adjust the inventory in the warehouse only mode legal entity without affecting the order legal entity or causing duplicate adjustments through the warehouse inventory log update process, you can use an Inventory journal name with the *Exclude from warehouse inventory update logs* setting turned on. This will prevent the journal posting from being logged.
 
 > [!IMPORTANT]
-> For [source systems](wms-only-mode-setup.md#source-systems) that are related to external warehouse management systems, keep the **Enable warehouse inventory update logs** option turned off for inbound and outbound shipment orders. In this way, you prevent inventory adjustment journal processing from updating your on-hand inventory in the order legal entities.
+> For [source systems](wms-only-mode-setup.md#source-systems) that are related to external warehouse management systems, keep the **Enable warehouse inventory update logs** option turned off for inbound and outbound shipment orders. In this way, you prevent inventory adjustment journal processing from updating your on-hand inventory in the sales subsidiary legal entities.
 
 ## Example setup that uses external shared warehouse processing in Supply Chain Management
 
