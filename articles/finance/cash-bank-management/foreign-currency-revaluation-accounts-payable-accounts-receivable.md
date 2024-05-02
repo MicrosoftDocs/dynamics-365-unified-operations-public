@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Currency revaluation for Accounts payable and Accounts receivable
-description: This article provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
+description: Learn about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable.
 author: ericwangchen
-ms.date: 10/24/2022
-ms.topic: article
-# optional metadata
-
-ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 10/24/2022
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ---
 
 # Currency revaluation for Accounts payable and Accounts receivable
