@@ -28,7 +28,7 @@ The following table describes the reports that are related to the record-to-repo
 
 | Report                             | Finance and operations report | Purpose |
 | ---------------------------------- | ----------------------------- | ------- |
-| Balance sheet                      | Balance sheet                 | This report provides a view of the organization's financial position for the year. The page includes **Legal entity** and **Fiscal period** filters. The account category setup in finance and operations apps is used to create the structure of the balance sheet. |
+| Balance sheet                      | Balance sheet                 | This report provides a view of the organization's financial position for the year. The account category setup in finance and operations apps is used to create the structure of the balance sheet. |
 | Budget vs actual                   | Budget vs actual              | This report compares the planned budget to actual financial amounts to help organizations identify areas where spending is in line with expectations and areas that require more attention. |
 | Financial performance              | Not applicable                | This report provides an in-depth analysis of a company's financial performance. It highlights key metrics, such as revenue, expenses, net income, and cash flow. |
 | General ledger dimension details   | Dimension statement           | This report breaks the general ledger down into its constituent dimensions to offer detailed insights into each aspect of the organization's financial transactions. |
