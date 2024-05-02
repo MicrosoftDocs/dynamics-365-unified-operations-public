@@ -37,7 +37,7 @@ For more information about the plugin architecture and execution, see [Architect
 
 ## Defining the action in X++
 
-In X++ you must create a class that's called and that can run code when Copilot Studio invokes the method. The new class must be a subclass that extends the `SysCopilotChatAction` class.
+In X++, you must create a class that's called and can run code when Copilot Studio invokes the method. The new class must be a subclass that extends the `SysCopilotChatAction` class.
 
 ### Data contract
 
@@ -69,7 +69,7 @@ To define the action, decorate the class with the `SysCopilotChatActionDefinitio
 
 ### Define the action type
 
-The action type is a mechanism for controlling the availability of the action to Copilot. It lets you to define the context in which the action should be available for users to perform by using Copilot.
+The action type is a mechanism for controlling the availability of the action to Copilot. It lets you define the context in which the action should be available for users to perform by using Copilot.
 
 #### Global actions
 
