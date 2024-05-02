@@ -64,7 +64,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.38 release
 
-### Financial Dimension data model changes
+### Financial Dimension data model changes  
 
 | &nbsp;  | &nbsp;  |
 |---|---|
