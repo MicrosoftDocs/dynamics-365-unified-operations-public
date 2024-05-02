@@ -38,7 +38,7 @@ Before you can use this feature, the following prerequisites must be in place:
 
 - You must update any customizations that rely on inventory transactions that will be replaced by warehouse transactions. For more information, see the [Audit and update your customizations to support warehouse transactions](#audit-customizations) section of this article.
 - You must be running Dynamics 365 Supply Chain Management version 10.0.32 or later.
-- The feature that's named *Warehouse-specific inventory transactions* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Starting in Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.
+- If you are running Supply Chain Management version 10.0.35 or earlier, the feature that's named *Warehouse-specific inventory transactions* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In newer versions, this feature is fully integrated into the product, so it's either mandatory or no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="audit-customizations"></a>Audit and update your customizations to support warehouse transactions
 
