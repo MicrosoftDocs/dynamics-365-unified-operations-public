@@ -30,7 +30,7 @@ You can use business-to-business (B2B) functionality to include these users in M
 
 ## Users whose telemetry ID doesn't match the object ID from Microsoft Entra ID
 
-For sign-in functionality to work correctly, the telemetry ID of a user in finance and operations apps must be aligned with the object ID of the same user in Microsoft Entra ID. If the IDs don't match, we recommend that you delete and then reimport the user. For more information, see [Find the user object ID](/partner-center/find-ids-and-domain-names.md#find-the-user-object-id).
+For sign-in functionality to work correctly, the telemetry ID of a user in finance and operations apps must be aligned with the object ID of the same user in Microsoft Entra ID. If the IDs don't match, we recommend that you delete and then reimport the user. For more information, see [Find the user object ID](/partner-center/find-ids-and-domain-names#find-the-user-object-id).
 
 1. Verify that a user who has the corresponding email address exists in your Microsoft Entra ID.
 2. Delete the user from finance and operations apps. Note the user roles before deleting so the roles can be added back after reimporting the users. 
