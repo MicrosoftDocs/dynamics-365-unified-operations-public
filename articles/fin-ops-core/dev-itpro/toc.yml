@@ -17,6 +17,8 @@ items:
           href: ../fin-ops/get-started/whats-new-home-page.md
         - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
           href: get-started/whats-new-platform-updates-vcruntime.md
+        - name: Platform updates for version 10.0.40 (June 2024)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-40.md
         - name: Platform updates for version 10.0.39 (March 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-39.md
         - name: Platform updates for version 10.0.38 (February 2024)
@@ -2267,11 +2269,15 @@ items:
           href: copilot/copilot-architecture.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
+        - name: Create client plugins for Copilot in finance and operations apps
+          href: copilot/copilot-client-plugins.md
         - name: Tutorials
           items:
           - name: Extending Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
-      - name: Enable generative help and guidance with Copilot
+          - name: Create client plugins for Copilot in finance and operations apps
+            href: copilot/tutorial-create-client-plugins.md
+      - name: Enable generative help and guidance with Copilot (preview)
         href: copilot/enable-copliot-generative-help.md
     - name: Responsible AI
       items:
