@@ -4429,7 +4429,7 @@
         href: business-performance-analytics/install-bpa.md
       - name: Business performance analytics data model
         href: business-performance-analytics/business-performance-analytics-data-model.md
-      - name: Business performance matrix
+      - name: Bus matrix
         href: business-performance-analytics/bus-matrix.md
       - name: Set up security in business performance analytics 
         href: business-performance-analytics/set-up-security.md

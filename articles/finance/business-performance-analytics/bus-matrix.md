@@ -1,6 +1,6 @@
 ---
 
-title: Business performance analytics business matrix data model
+title: Business performance analytics bus matrix data model
 description: This article provides information about the relationship between facts and dimensions as part of the Business performance analytics data model.
 author: carylhenry
 ms.author: carylhenry
@@ -14,18 +14,18 @@ audience: Application User
 ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
-# Business performance analytics business matrix data model
+# Business performance analytics bus matrix data model
 
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 ## Definitions
 
-*Facts* represent business metrics of interest. In Business performance analytics, facts are record-type data, such as transactions, orders, and records. Each fact is associated with one or more *dimensions*. Dimensions represent descriptive data elements and provide more information about the facts that are associated with them.
+A *bus matrix* shows the relationship between facts and dimensions. *Facts* represent business metrics of interest. In Business performance analytics, facts are record-type data, such as transactions, orders, and records. Each fact is associated with one or more *dimensions*. Dimensions represent descriptive data elements and provide more information about the facts that are associated with them.
 
-### Business matrix
+### Bus matrix
 
-The following business matrix table shows the relationship between facts and dimensions. Rows represent the dimensions that are used in Business performance analytics. Columns represent the different facts that are used in Business performance analytics.
+The following business matrix table shows the relationship between facts and dimensions in the context of Business performance analytics. Rows represent dimensions, while columns represent facts.
 
 
 | Dimensions  | Budget | Budget reservation | General ledger | Product receipt | Purchase invoice | Purchase invoice matching | Purchase order | Purchase payment | Purchase payment matching | Purchase requisition | Purchase sub-ledger | Sales invoice | Sales payment | Sales payment matching | Sales sub-ledger |
