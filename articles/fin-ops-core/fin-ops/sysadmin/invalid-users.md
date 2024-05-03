@@ -4,7 +4,7 @@ description: Learn about how to address invalid users in Microsoft Dynamics 365 
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 5/03/2024
 ms.custom:
 ms.reviewer: twheeloc
 ---
@@ -30,13 +30,13 @@ You can use business-to-business (B2B) functionality to include these users in M
 
 ## Users whose telemetry ID doesn't match the object ID from Microsoft Entra ID
 
-For sign-in functionality to work correctly, the telemetry ID of a user in finance and operations apps must be aligned with the object ID of the same user in Microsoft Entra ID. If the IDs don't match, we recommend that you delete and then reimport the user.
+For sign-in functionality to work correctly, the telemetry ID of a user in finance and operations apps must be aligned with the object ID of the same user in Microsoft Entra ID. If the IDs don't match, we recommend that you delete and then reimport the user. For more information, see [Find the user object ID](../../partner-center/find-ids-and-domain-names.md#find-the-user-object-id).
 
 1. Verify that a user who has the corresponding email address exists in your Microsoft Entra ID.
-2. Delete the user from finance and operations apps.
+2. Delete the user from finance and operations apps. Note the user roles before deleting so the roles can be added back after reimporting the users. 
 3. Reimport the user. For more information, see [Create new users](create-new-users.md).
 
-If this process is challenging or requires substantial effort, administrators can update the email address on the **Users** page. That change repopulates the object ID for the new email.
+If this process is challenging or requires substantial effort, administrators can update the email address on the **Users** page to a different user email that is present in Entra and change it back to the original email of the user. That change repopulates the object ID for the new email.
 
 ## Users whose email address contains an invalid "MAIL#" prefix
 
