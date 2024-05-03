@@ -2269,11 +2269,15 @@ items:
           href: copilot/copilot-architecture.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
+        - name: Create client plugins for Copilot in finance and operations apps
+          href: copilot/copilot-client-plugins.md
         - name: Tutorials
           items:
           - name: Extending Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
-      - name: Enable generative help and guidance with Copilot
+          - name: Create client plugins for Copilot in finance and operations apps
+            href: copilot/tutorial-create-client-plugins.md
+      - name: Enable generative help and guidance with Copilot (preview)
         href: copilot/enable-copliot-generative-help.md
     - name: Responsible AI
       items:
