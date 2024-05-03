@@ -1,26 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Create sales orders
 description: This procedure shows you how to create a sales order. 
 author: Henrikan
-ms.date: 04/06/2022
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
-audience: Application User
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.reviewer: kamaybac
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
+ms.topic: how-to
+ms.date: 05/03/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
+
 # Create sales orders
 
 [!include [banner](../../includes/banner.md)]
@@ -76,7 +67,5 @@ The products sold by your organization may come in variants differentiated by di
 
 > [!TIP]
 > For examples that show how sales totals and discounts are calculated when prices include and exclude sales tax, including information about how related values are shown in the **Totals** dialog box, see [Calculate sales totals when prices include sales tax](../sales-tax-calculation.md).
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
