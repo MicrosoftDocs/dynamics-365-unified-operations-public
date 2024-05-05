@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Configuration for Finance insights
-description: This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
-author: ShivamPandey-msft
-ms.date: 10/11/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 10/11/2023
+ms.reviewer: twheeloc
+ms.search.form: 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
+
 # Configuration for Finance insights
 
 [!include [banner](../includes/banner.md)]
