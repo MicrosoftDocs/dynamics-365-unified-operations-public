@@ -35,7 +35,7 @@ Customer merge entails the following:
 - Manual process initiated by the customer
 - Data integration with existing finance and operations environment
 
-# General questions about customer merge
+## General questions about customer merge
 
 ## What is the recommendation from Microsoft?
 The decision to proceed with customer merge post-migration is discretionary and lies with the customer and business stakeholders. There is no strict timeline imposed for this process. Microsoft advises customers to conduct a thorough assessment, considering organizational objectives and weighing the pros and cons before making a decision.
@@ -56,7 +56,7 @@ Microsoft offers additional Data entities to facilitate customer merging, with t
 No, the target environment's name and link remain unchanged unless you redeploy the instance.
 
 ## After the merge, what changes occur in the HR environment? Is it automatically deleted?
-Upon completing the customer merge, it's your responsibility to deprovision both the Sandbox and Production environments from source environment, as well as the related Dataverse environment. Following this, you can proceed it with the LCS project. https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/delete-production-environment
+Upon completing the customer merge, it's your responsibility to deprovision both the Sandbox and Production environments from source environment, as well as the related Dataverse environment. Following [Delete a production finance and operations apps environment](../fin-ops-core/dev-itpro/deployment/delete-production-environment.md), you can proceed it with the LCS project.
 
 ## Will I need to reinstall the Expense mobile app after merging into Finance environment?
 Yes, if the target environment lacks the relevant mobile apps, such as the Dynamics 365 Expense Management app, it's necessary to install all required apps in the merged environment after the customer merge.
