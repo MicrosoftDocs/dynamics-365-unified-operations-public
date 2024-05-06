@@ -100,7 +100,7 @@ There are two options to proceed with the Go-live readiness review. You can choo
 Submitting the Go-live readiness review can be performed by partners and customer in the Dynamics 365 Implementation portal without involving Microsoft. The Onboarding Wizard in the Implementation portal has simplified the steps to create the project, add the admin and users, and submitting the Go-Live review for self-service.
 
 1. Create the project in Implementation portal. For more information about creating and joining the project, see [Create or join a project in the Implementation Portal](/dynamics365/guidance/implementation-portal/onboard-project).
-1. Please ensure that the project admin on the project is from the **customer** organization. This user from the customer organization can then add additional users and serve as the key participant in the Go-live readiness review. For more information about adding users, see [Admin](/dynamics365/guidance/implementation-portal/manage-projects#admin) section .
+1. Ensure that the project admin on the project is from the **customer** organization. This user from the customer organization can then add more users and serve as the key participant in the Go-live readiness review. For more information about adding users, see [Admin](/dynamics365/guidance/implementation-portal/manage-projects#admin) section.
 1. Once the project is created, the project team can create and perform the Go-live readiness review in the portal using the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registered on portal can access this article. 
 
   > [!Note]
@@ -108,7 +108,7 @@ Submitting the Go-live readiness review can be performed by partners and custome
 
 #### Option 2 - Share details with Microsoft to create the Project 
 
-Please follow the below steps if you have any issues creating the project via the Dynamics 365 Implementation Portal/blocked from creating project due to any other reason. This option will be deprecated in few weeks, and we highly encourage you to follow Option 1 whenever possible.
+Follow the below steps if you have any issues creating the project via the Dynamics 365 Implementation Portal/blocked from creating project due to any other reason. This option will be deprecated in few weeks, and we highly encourage you to follow Option 1 whenever possible.
 
 1. The project team decides who from the **customer** organization is the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be granted only to the member of the customer organization. Microsoft grants access to this user and this user manages access for other team members. 
 
@@ -116,7 +116,7 @@ Please follow the below steps if you have any issues creating the project via th
 
    - Confirmation that the project is ready to start the Go-live Readiness Review. Carefully review prerequisites for the Go-live readiness review that are described in the earlier section of this article.
    - Confirmation of the Lifecycle Services project ID or Lifecycle Services project URL.
-   - Confirmation of the planned Go-live date (when live operations starts in Production). Make sure this date is reflected in the Lifecycle Services correctly.
+   - Confirmation of the planned Go-live date (when live operations start in Production). Make sure this date is reflected in the Lifecycle Services correctly.
    - Confirmation by when it's required to have Production environment deployed. Building a cutover plan allows to determine by which date environment should be available. 
    - Confirmation who should be granted admin access for this project on Portal. It's required that admin access is granted to the member of the customer organization (unless it's an internal implementation by the partner). 
    - Indicate in the e-mail if it's an internal implementation for a partner organization. 
@@ -131,13 +131,13 @@ Please follow the below steps if you have any issues creating the project via th
 ### Submit the review
 
 - The project team should provide answers to all questions in the review. The review process in the portal supports multi-user scenarios. Multiple team members can provide details for the go-live review at the same time.
-- When answers have been provided to all the questions in the Go-live Readiness Review, submit the review to Microsoft by selecting **Submit**.
+- When answers are provided to all the questions in the Go-live Readiness Review, submit the review to Microsoft by selecting **Submit**.
 
 ### After the review is submitted in the portal
 
 - Microsoft FastTrack reviews the project and provides a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. **The review might require up to three business days for the initial report, plus more time for any risk mitigation that is required.**
-- Users who have been selected as **Review participants** in the portal receive email communication that provides updates about the review.
-- When all critical risks have been addressed, and the review is completed, Microsoft enables the production environment slot in the Lifecycle Services project. The customer/partner can then trigger the production environment deployment.
+- Users who are selected as **Review participants** in the portal receive email communication that provides updates about the review.
+- When all critical risks are addressed, and the review is completed, Microsoft enables the production environment slot in the Lifecycle Services project. The customer/partner can then trigger the production environment deployment.
 
 ## Production environment deployment
 
@@ -153,7 +153,7 @@ The production environment should be deployed to the same datacenter where your 
 
 Production deployment takes approximately 30 minutes. When deployment is completed, an email notification is sent to the environment administrator.
 
-The production environment is sized based on the number of licenses that have been allocated to the Lifecycle Services project and the transaction volumes in the [Subscription estimator](../lifecycle-services/subscription-estimator.md).
+The production environment is sized based on the number of licenses that are allocated to the Lifecycle Services project and the transaction volumes in the [Subscription estimator](../lifecycle-services/subscription-estimator.md).
 
 After production is deployed, the project team can apply the deployable package by following the instructions in [Promote an update to production environments](../deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments) and then migrate the data. For data migration, we recommend that you prepare and validate data in a nonproduction environment and then [copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
