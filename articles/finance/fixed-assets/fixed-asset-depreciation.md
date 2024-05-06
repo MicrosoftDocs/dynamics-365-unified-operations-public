@@ -1,18 +1,17 @@
 ---
 title: Fixed asset depreciation
-description: This article provides an overview of depreciation in Fixed assets.
+description: Learn about depreciation in Fixed assets, including outlines on depreciation adjustment, extraordinary depreciation, and special depreciation allowance.
 author: moaamer
-ms.date: 03/03/2024
-ms.topic: article
-
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: moaamer
+ms.topic: article
+ms.date: 03/03/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetBonus, AssetBookTable
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
-ms.search.form: AssetBonus, AssetBookTable
 ---
 
 # Fixed asset depreciation

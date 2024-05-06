@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Depreciation methods and conventions
-description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 Finance.
+description: Learn about the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 Finance, including additional resources.
 author: moaamer
-ms.date: 04/05/2024
-ms.topic: article
-ms.reviewer: twheeloc
-ms.custom: evergreen 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ---
 
 # Depreciation methods and conventions
