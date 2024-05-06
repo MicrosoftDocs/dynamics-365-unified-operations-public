@@ -4,7 +4,7 @@ description: Learn about the Vendor aging report that's available in Microsoft D
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 02/13/2023
+ms.date: 04/29/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

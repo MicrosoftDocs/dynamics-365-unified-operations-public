@@ -4,9 +4,12 @@
 title: Financial dimensions and posting 
 description: This article explains the components that make up the chart of accounts and how the components work together.
 author: rcarlson
-ms.date: 10/24/2022
+ms.date: 04/29/2024
 ms.topic: article
 # optional metadata
+ms.custom: 
+  - bap-template
+  - evergreen
 
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 # ROBOTS: 

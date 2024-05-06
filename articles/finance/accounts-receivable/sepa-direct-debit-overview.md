@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: SEPA direct debit overview
-description: This article provides information about the Single Euro Payments Area (SEPA), which is set up by the European Commission.   
-author: ShivamPandey-msft
-ms.date: 08/22/2017
-ms.topic: overview
-# optional metadata
-
-ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the Single Euro Payments Area (SEPA), which is set up by the European Commission, including answers to various questions.   
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: overview
+ms.date: 08/22/2017
+ms.reviewer: kfend
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ---
 
 # SEPA direct debit overview

@@ -1,18 +1,21 @@
 ---
 title: What's new or changed in Platform updates
-description: This article points to topics that describe the new and changed features in each Platform update for finance and operations apps.
+description: Access various resources and topics that describe the new and changed features in each Platform update for finance and operations apps.
 author: johnmichalak
-ms.date: 01/03/2024
+ms.author: johnmichalak
+ms.date: 04/26/2024
 ms.topic: article
-audience: Application User
+ms.custom: 
+  - bap-template 
 ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
 ms.search.region: Global
-ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 61
-ms.collection: get-started
-ms.assetid: 
+
 ---
+
 # What's new or changed in Platform updates
 
 [!include [banner](../../../finance/includes/banner.md)]
@@ -21,6 +24,7 @@ To see what's new or changed in the Platform updates for finance and operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Platform updates for 10.0.40 | 7.0.7279.17 | June 2024    | [Platform updates for version 10.0.40 of finance and operations apps](whats-new-platform-updates-10-0-40.md)  |
 | Platform updates for 10.0.39 | 7.0.7198.18 | March 2024    | [Platform updates for version 10.0.39 of finance and operations apps](whats-new-platform-updates-10-0-39.md)  |
 | Platform updates for 10.0.38 | 7.0.7120 | February 2024    | [Platform updates for version 10.0.38 of finance and operations apps](whats-new-platform-updates-10-0-38.md)  |
 | Platform updates for 10.0.37 | 7.0.7068 | November 2023    | [Platform updates for version 10.0.37 of finance and operations apps](whats-new-platform-updates-10-0-37.md)  |

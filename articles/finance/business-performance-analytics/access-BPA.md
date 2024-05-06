@@ -1,17 +1,13 @@
 ---
-# required metadata
-
 title: Access Business performance analytics
-description: This article explains how to access Business performance analytics.
+description: Learn about how to access Business performance analytics, including an outline on how to share performance analytics with users.
 author: jkhaira7
 ms.author: jkhaira
-ms.reviewer: twheeloc 
-ms.date: 04/12/2024
 ms.topic: conceptual
 ms.custom:
+ms.date: 04/12/2024
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
-ms.audience: administrator
 ---
 
 # Access Business performance analytics

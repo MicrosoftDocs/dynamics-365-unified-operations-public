@@ -1,8 +1,6 @@
 ---
-# required metadata
-
 title: Prepare for go-live
-description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
+description: Learn about how to prepare for the go-live for finance and operations apps, including a table that lists the key steps in the go-live process.
 author: alejandra-cabrales
 ms.date: 05/06/2024
 ms.topic: how-to
@@ -12,6 +10,7 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: alcabral
 ms.search.validFrom: 2018-01-31
+ms.search.form: 
 ms.dyn365.ops.version: July 2017 update
 ---
 
@@ -113,7 +112,7 @@ Please follow the below steps if you have any issues creating the project via th
 
 1. The project team decides who from the **customer** organization is the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be granted only to the member of the customer organization. Microsoft grants access to this user and this user manages access for other team members. 
 
-1. Project team sends an e-mail to d365fogl@microsoft.com and includes the following information:
+2. Project team sends an e-mail to [d365fogl@microsoft.com](mailto:d365fogl@microsoft.com) and includes the following information:
 
    - Confirmation that the project is ready to start the Go-live Readiness Review. Carefully review prerequisites for the Go-live readiness review that are described in the earlier section of this article.
    - Confirmation of the Lifecycle Services project ID or Lifecycle Services project URL.

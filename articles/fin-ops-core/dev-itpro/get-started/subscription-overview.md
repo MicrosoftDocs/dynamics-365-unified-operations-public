@@ -1,23 +1,15 @@
 ---
-# required metadata
-
 title: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
-description: This article provides answers to frequently asked questions about subscriptions and licenses, Microsoft Entra tenants, and LCS Implementation projects.
+description: Access answers to frequently asked questions about subscriptions and licenses, Microsoft Entra tenants, and LCS Implementation projects.
 author: skaue-ms
-ms.date: 08/11/2020
-ms.topic: overview
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: toskaue
-ms.search.validFrom: 2018-05-30 
+ms.topic: overview
+ms.date: 08/11/2020
+ms.reviewer: joihnmichalak
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2018-05-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0
 ---
 
