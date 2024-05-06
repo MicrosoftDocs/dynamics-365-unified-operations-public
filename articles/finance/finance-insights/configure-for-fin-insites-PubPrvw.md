@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Configuration for Finance insights - version 10.0.20 and later
-description: This article explains how to configure your system to use the capabilities that are available in Finance insights in version 10.0.20 and later.
-author: ShivamPandey-msft
-ms.date: 06/16/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-ROBOTS: noindex,nofollow
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to configure your system to use the capabilities that are available in Finance insights in version 10.0.20 and later.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 06/16/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-03
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.20
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
+
 # Configuration for Finance insights - version 10.0.20 and later
 
 [!include [banner](../includes/banner.md)]
