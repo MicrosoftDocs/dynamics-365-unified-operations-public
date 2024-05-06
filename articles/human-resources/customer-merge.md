@@ -5,7 +5,7 @@ title: Human Resources customer merge FAQ
 description: This article answers frequently asked questions about the merge of Microsoft Dynamics 365 Human Resources to the finance and operations merged infrastructure. 
 author: Edison Lai
 ms.date: 04/24/2024
-ms.topic: overview
+ms.topic: article
 # optional metadata
 
 ms.search.form: 
@@ -19,7 +19,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: Edison Lai
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2024-04-29
 ms.dyn365.ops.version: Human Resources
 
 ---
