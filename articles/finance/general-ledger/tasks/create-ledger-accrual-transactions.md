@@ -1,25 +1,16 @@
 --- 
-# required metadata 
- 
 title: Create ledger accrual transactions
-description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes. 
+description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes, including a step-by-step process based on accrual schemes. 
 author: aprilolson
-ms.date: 04/01/2024
-ms.topic: how-to 
-
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/01/2024
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create ledger accrual transactions

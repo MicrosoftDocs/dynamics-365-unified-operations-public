@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Accounts payable postings
-description: This article explains how postings are configured in Accounts payable and provides examples of posting configurations.
+description: Learn how postings are configured in Accounts payable with examples of posting configurations and on outline on methods of payment posting accounts.
 author: leizi2015
-ms.date: 01/19/2022
-ms.topic: article
-# optional metadata
-
-ms.search.form: VendPosting, VendPaymMode, VendCashDiscount, MarkupTable\_Vend, VendPaymFee
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: raynezou
+ms.topic: article
+ms.date: 01/19/2022
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-03
+ms.search.form: VendPosting, VendPaymMode, VendCashDiscount, MarkupTable\_Vend, VendPaymFee
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Accounts payable posting
