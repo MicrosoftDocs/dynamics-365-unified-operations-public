@@ -1,6 +1,6 @@
 --- 
 title: Change a fixed asset group
-description: Fixed assets should be assigned to the correct fixed assets group. Learn about changing these fixed asset groups with a step-by-step process. 
+description: Fixed assets should be assigned to the correct fixed assets group. Learn about changing these fixed asset groups with a step-by-step process.
 author: moaamer
 ms.author: moaamer
 ms.topic: how-to

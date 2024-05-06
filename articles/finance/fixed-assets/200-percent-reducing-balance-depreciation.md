@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: 200 percent reducing balance depreciation
-description: This article presents an overview of the 200 percent reducing balance method of depreciation.
+description: Learn about the 200 percent reducing balance method of depreciation, including an outline on selecting a depreciation year and an example.
 author: moaamer
+ms.author: moaamer
+ms.topic: article
 ms.date: 04/05/2024
 ms.topic: article
-ms.reviewer: twheeloc
 ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: moaamer
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ---
 
 # 200 percent reducing balance depreciation

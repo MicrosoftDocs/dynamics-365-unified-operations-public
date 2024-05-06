@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Straight line life remaining depreciation
-description: This article gives an overview of the Straight line life remaining method of depreciation.
+description: Learn about the Straight line life remaining method of depreciation, including an example of straight line depreciation of an unchanged fixed asset.
 author: moaamer
-ms.date: 04/05/2024
-ms.topic: article
-ms.reviewer: twheeloc
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ---
 
 # Straight line life remaining depreciation

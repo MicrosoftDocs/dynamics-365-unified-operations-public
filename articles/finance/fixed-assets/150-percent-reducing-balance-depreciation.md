@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: 150 percent reducing balance depreciation
-description: This article presents an overview of the 150 percent reducing balance method of depreciation.
+description: Learn about the the 150 percent reducing balance method of depreciation, including an outline on the selection of depreciation year and an example.
 author: moaamer
+ms.author: moaamer
+ms.topic: article
 ms.date: 04/05/2024
 ms.topic: article
-ms.reviewer: twheeloc
 ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: moaamer
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ---
 
 # 150 percent reducing balance depreciation
