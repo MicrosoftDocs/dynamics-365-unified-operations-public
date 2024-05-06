@@ -1,6 +1,26 @@
 {
   "redirections": [
      {
+      "source_path": "articles/finance/cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-cant-be-settled",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/cash-bank-management/settlement-overview-resolve-issues",
+      "redirect_document_id": "false"
+    }, 
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-report-designer-issues-with-event-viewer",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
+      "redirect_document_id": "false"
+    }, 
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-issues-connecting-to-financial-reporting",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/unable-to-connect-financial-reporting-server",
+      "redirect_document_id": "false"
+    },
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshooting-issues-opening-report-designer",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
+      "redirect_document_id": "false"
+    },     
+     {
       "source_path": "articles/finance/general-ledger/cant-reverse-transctns.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/cant-reverse-transactions",
       "redirect_document_id": "false"
