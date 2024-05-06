@@ -44,9 +44,9 @@ The decision to proceed with customer merge post-migration is discretionary and 
 Integrating HR functions into FO operations can lead to streamlined processes and improved efficiency, such as streamlined processes and enhanced efficiency. By way of example, consider the integration between Finance and HR systems that some customers currently maintain. Following the merge, this integration could be eliminated, simplifying management. Additionally, benefits include easier control over ALM, a single LCS, elimination of separate versioning and branches for different environments, reduced overhead in managing updates and deployments for two separate systems, and seamless data integration across platforms.
  
 ## We have 1 Sandbox in the HR project and 2 Sandboxes in Finance project. Will we end up with 3 Sandboxes in total after customer merge?
-No, in this scenario, you will only have two Sandboxes at the conclusion of the single LCS project. The Sandbox from the HR environment will not be carried over to the Finance project.
+No, in this scenario, you can only have two Sandboxes at the conclusion of the single LCS project. The Sandbox from the HR environment can not be carried over to the Finance project.
 
-## How can Microsoft assist in the customer merge process?
+## How can Microsoft support the customer merge process?
 If you face any obstacles while merging customers, the best course of action is to initiate a support ticket to request assistance from Microsoft. Our support engineers will provide professional assistance for your problem.
 
 ## What tool does Microsoft offer for customer merge?
@@ -56,9 +56,9 @@ Microsoft offers additional Data entities to facilitate customer merging, with t
 No, the target environment's name and link remain unchanged unless you redeploy the instance.
 
 ## After the merge, what changes occur in the HR environment? Is it automatically deleted?
-Upon completing the customer merge, it's your responsibility to deprovision both the Sandbox and Production environments from source environment, as well as the related Dataverse environment. Following [Delete a production finance and operations apps environment](../fin-ops-core/dev-itpro/deployment/delete-production-environment.md), you can proceed it with the LCS project.
+Upon completing the customer merge, it's your responsibility to deprovision both the Sandbox and Production environments from source environment, and the related Dataverse environment. Refer to [Delete a production finance and operations apps environment](../fin-ops-core/dev-itpro/deployment/delete-production-environment.md), you can proceed it with the LCS project.
 
-## Will I need to reinstall the Expense mobile app after merging into Finance environment?
+## Should I need to reinstall the Expense mobile app after merging into Finance environment?
 Yes, if the target environment lacks the relevant mobile apps, such as the Dynamics 365 Expense Management app, it's necessary to install all required apps in the merged environment after the customer merge.
  
 ## Can I limit system administration access after merging, such that only HR administrators can access HR data?
