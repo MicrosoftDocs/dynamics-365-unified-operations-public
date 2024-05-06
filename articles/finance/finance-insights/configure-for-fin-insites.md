@@ -31,7 +31,7 @@ Follow these steps to deploy the environments.
 1. In LCS, create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.21 or later.
 
     > [!NOTE]
-    > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+    > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) <!-- The following link has been moved an no longer works. For more information, see [Environment planning] (/fin-ops-core/fin-ops/imp-lifecycle/environment-planning). -->
 
 2. If you're configuring Finance insights in a sandbox environment, you might have to copy production data to that environment before predictions will work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to adequately train the prediction model. 
 

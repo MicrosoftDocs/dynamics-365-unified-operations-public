@@ -5,7 +5,6 @@ author: moaamer
 ms.author: moaamer
 ms.topic: article
 ms.date: 04/05/2024
-ms.topic: article
 ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User

@@ -2,7 +2,7 @@
 title: Create a depreciation proposal
 description: Learn how depreciation batch proposals work and explains how to propose depreciation for fixed assets, including a step-by-step process. 
 author: abruer
-ms.author: abruer
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/28/2023
 ms.custom:

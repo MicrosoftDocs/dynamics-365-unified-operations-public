@@ -3,7 +3,7 @@ title: Calculate fixed asset depreciation across legal entities
 description: Learn about how to calculate fixed asset depreciation, which can be run across legal entities in a single step, including step-by-step processes.
 author: moaamer
 ms.author: moaamer
-ms.topic; how-to
+ms.topic: how-to
 ms.date: 03/28/2023
 ms.custom:
 ms.reviewer: twheeloc
