@@ -4,7 +4,7 @@ description: Learn about the options that you can use to configure Credit manage
 author: JodiChristiansen
 ms.author: twheeloc
 ms.topic: article
-ms.date: 10/09/2023
+ms.date: 05/07/2024
 ms.custom:  
 ms.reviewer: twheeloc 
 audience: Application User
@@ -41,7 +41,7 @@ There are four FastTabs in the **Credit** section where you can change the param
 
 You can set the timing that is used to check sales orders for credit issues. The **Credit management checkpoint** FastTab identifies the document posting processes that include processing of credit management rules. You can also check the credit rules while you do either a pro-forma posting or a full posting of the sales order. Select the checkboxes to define the posting processes that should put an order on hold if an issue is found after the credit management blocking rules are processed.
 
-You can also define the number of grace days before the credit rules are checked again. Although you can specify that the credit management rules are checked at posting, the rules won't be checked for the specified number of grace days. For example, you confirm a sales order on day one, and you specify two grace days for the confirmation step. In this case, credit rules won't be checked at the next posting step (for example, creation of a packing slip or invoicing of the order) until day four. On or after day four, the rules will be checked again when posting occurs, and the number of grace days will be changed to the value that is specified for the next posting checkpoint. Grace days are only applied after the sales order is released from a credit hold, they are not used when a sales order is initially checked. 
+You can also define the number of grace days before the credit rules are checked again. Although you can specify that the credit management rules are checked at posting, the rules won't be checked for the specified number of grace days. For example, you confirm a sales order on day one, and you specify two grace days for the confirmation step. In this case, credit rules won't be checked at the next posting step (for example, creation of a packing slip or invoicing of the order) until day four. On or after day four, the rules will be checked again when posting occurs, and the number of grace days will be changed to the value that is specified for the next posting checkpoint. Grace days are applied after the sales order is released from a credit hold. Grace days aren't used when a sales order is initially checked. 
 
 If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set up to run credit management rules. If you release the sales order without posting and then run the same order processing step again, the credit rules will be checked again. For example, an order is put on hold after a confirmation, and you release it either with or without posting. In this case, the order will be put on hold again if you confirm it again. Use grace days if the order should move on to the next processing step without being held again.
 
