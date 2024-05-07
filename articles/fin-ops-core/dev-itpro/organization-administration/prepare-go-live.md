@@ -104,7 +104,7 @@ Submitting the Go-live readiness review can be performed by partners and custome
 1. Once the project is created, the project team can create and perform the Go-live readiness review in the portal using the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registered on portal can access this article. 
 
   > [!Note]
-  > If you follow this method, you **don't** need to follow the stesp in Option 2. To continue, see the [submit the review](prepare-go-live.md?context=%2Fdynamics365%2Fcontext%2Fcommerce#submit-the-review) section later in this article.
+  > If you follow this method, you **don't** need to follow the steps in Option 2. To continue, see the [submit the review](prepare-go-live.md?context=%2Fdynamics365%2Fcontext%2Fcommerce#submit-the-review) section later in this article.
 
 #### Option 2 - Share details with Microsoft to create the Project 
 
