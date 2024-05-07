@@ -111,4 +111,4 @@ The **Call for assistance** operation provides support for cashier assistance du
 - **Logout** – This operation lets the store associate sign out of the kiosk.
 - **Cancel** – This operation lets the store associate cancel out of the **Call for assistance** operation.
 
-![Call for assistance.](media/call-for-assistance.png)
+![Call for assistance.](media/Call-for-assistance.png)
