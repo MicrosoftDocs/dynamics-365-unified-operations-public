@@ -44,6 +44,7 @@ The following illustration shows an example of a delivery options module on a ch
 | Custom CSS class name | Text | A custom Cascading Style Sheets (CSS) class name that will be used to render this module, if applicable. |
 | Filter Delivery Mode Option | **Do not filter** or **Non-shipping modes** | A value that specifies whether the delivery options module should filter out all non-shipping delivery modes. |
 | Auto select a delivery option | **Do not filter**, **Auto select delivery option and show summary**, or **Auto select delivery option and don't show summary** | This property automatically applies the first available delivery option to checkout without requiring the user to select it. It should be used only if there is one available delivery option. This property is supported as of the Commerce version 10.0.19 release. |
+|Enable multiple delivery options for an order| **True** or **False** | If this optional property is set to True, then if the system cannot find a common mode of delivery for the order lines, then the system will group the order lines to find appropriate mode of deliveries for each group of order lines. If this property is not enabled, and the system cannot find a common mode of delivery for the order lines, then the system throws an error message. This property is supported as of the 10.0.40 release. |
 
 ## Add a delivery options module to a checkout page and set the required properties
 
