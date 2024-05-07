@@ -1,36 +1,35 @@
 ---
-title: Enable Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
-description: This article explains how to enable Self-checkout and related features in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview).
+title: Enable self-checkout in the Store Commerce app (preview)
+description: This article describes how to enable self-checkout and related features in the Microsoft Dynamics 365 Commerce Store Commerce app (preview).
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
-ms.date: 03/19/2024
+ms.date: 05/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
 ---
 
-# Enable Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
+# Enable self-checkout in the Store Commerce app (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how to enable Self-checkout (SCO) and related features in the Store Commerce app in Microsoft Dynamics 365 Commerce.
+This article describes how to enable self-checkout and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
-Point of sale (POS) customers can reuse existing workflows to turn on kiosk-based SCO in an existing Store Commerce app. Your shoppers can then use SCO terminals to scan or search for items, add items to a shopping cart, and pay for the items by using a credit card or debit card.
+Point of sale (POS) customers can reuse existing workflows to turn on kiosk-based self-checkout (SCO) in an existing Store Commerce app. Customers can then use SCO terminals to scan or search for items, add items to a shopping cart, and pay for the items by using a credit card or debit card.
 
-To enable SCO, administrators must go to **Feature Management**, check for new updates, select **Configure POS self-checkout register**, and enable it.
+To enable SCO, in Commerce headquarters administrators must go to **Feature Management**, check for new updates, select the **Configure POS self-checkout register** feature, and enable it.
 
 ## Configuration in Commerce headquarters
 
-To enable SCO for a register, follow this step.
-
-- Go to the **Register** setup, and set **Self-checkout** to **Yes**.
+To enable SCO for a register, in headquarters go to the register setup under **POS Registers** and set **Self-checkout** to **Yes**.
 
 The presence of the **Self-checkout** flag drives the following behavior:
 
-- **Enable task recorder** is set to **off**.
-- **Hardware station** options are set to **No**.
-- **Auto log off** is turned off.
+- **Enable task and test recorder** is set to **No**.
+- **HARDWARESTATION** options **Select upon tendering** and **Select at start of transaction** are set to **No**.
+- **AUTO LOGOFF/LOCK** option **After each transaction** is set to **No**.
+
 ![selfcheckout register.](media/selfcheckout-register.png)
 
 Additionally, if the **Self-checkout** flag at the register is set to **Yes**, the following changes are made in POS to tailor consumer operations:
@@ -39,20 +38,17 @@ Additionally, if the **Self-checkout** flag at the register is set to **Yes**, t
 - Navigation to payment methods from totals is disabled.
 
 > [!NOTE]
-> If the store associate or manager has **manage device** set to **yes** in POS position permissions, the header and
-> side navigation bars will still be visible on the self-checkout register. This allows store associates to perform any
-> set up or admin tasks easily without switching to a cashier register.
+> If the store associate or manager has **Manage device** set to **Yes** on the **POS position permissions** form in headquarters, the header and side navigation bars are still visible on the self-checkout register, which allows store associates to perform setup or administrator tasks without having to switch to a cashier register.
 
 ![Permissions.](media/permissions.png)
-To restrict specific products from being offered at SCO, follow this step.
 
-- Go to **Released products**, and set **Blocked at self-checkout** to **Yes**.
+To restrict specific products from being offered at SCO, in headquarters go to **Released products** and set **Blocked at self-checkout** to **Yes**.
 
 ## SCO device activation and kiosk sign-in
 
 To enable only operations that are applicable to consumers on an SCO kiosk, create a new, generic user that has limited permissions and is used to sign in on the kiosk.
 
-A new **SCO kiosk** permission group was created that has limited permissions. Assign this permission group to the new, generic user that you created. The user can then perform only consumer operations such as scan and pay.
+A new **SCO kiosk** permission group was created that has limited permissions. Assign this permission group to the new, generic user that you created. The user can then only perform consumer operations such as scan and pay.
 
 ### Sign-in process
 
