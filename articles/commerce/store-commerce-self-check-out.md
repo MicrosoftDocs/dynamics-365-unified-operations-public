@@ -37,6 +37,11 @@ Additionally, if the **Self-checkout** flag at the register is set to **Yes**, t
 - Header and side navigation bars are hidden.
 - Navigation to payment methods from totals is disabled.
 
+> [!NOTE]
+> If the store associate or manager has **manage device** set to **yes** in POS position permissions, the header and
+> side navigation bars will still be visible on the self-checkout register. This allows store associates to perform any
+> set up or admin tasks easily without switching to a cashier register.
+
 To restrict specific products from being offered at SCO, follow this step.
 
 - Go to **Released products**, and set **Blocked at self-checkout** to **Yes**.
