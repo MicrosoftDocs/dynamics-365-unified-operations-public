@@ -1,22 +1,14 @@
 ---
-# required metadata
-
 title: Sales order posting
-description: This article provides information about the Sales order tab of the inventory posting profile page.   
+description: Learn about the Sales order tab of the inventory posting profile page, including a sample posting profile configuration.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
+ms.date: 04/25/2022
 ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: InventPosting, InventItemGroup
-# ROBOTS: 
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventItemGroup
 ---
 
 # Sales order posting

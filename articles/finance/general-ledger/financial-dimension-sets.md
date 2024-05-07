@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Financial dimension sets
-description: This article describes financial dimension sets and provides some tips for optimizing their use.
+description: Learn about financial dimension sets and provides some tips for optimizing their use, including an outline on dimension set balances.
 author: rcarlson
-ms.date: 04/29/2024
+ms.author: rcarlson
 ms.topic: article
-# optional metadata
+ms.date: 04/29/2024
 ms.custom: 
   - bap-template
   - evergreen
-
-ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
-audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2021-03-23
+ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: 10.0.16
-
 ---
 
 # Financial dimension sets

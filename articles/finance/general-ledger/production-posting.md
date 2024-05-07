@@ -1,22 +1,14 @@
 ---
-# required metadata
-
 title: Production order posting
-description: This article provides information about different types of production order posting.  
+description: Learn about different types of production order posting, including outlines on material consumption and reporting finished goods and error quantities.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
+ms.date: 04/25/2022
 ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: InventPosting, InventItemGroup, ProdGroup, WrkCtrTable, WrkCtrResourceGroup, ProjCategory, CostSheetDesigner
-# ROBOTS: 
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventItemGroup, ProdGroup, WrkCtrTable, WrkCtrResourceGroup, ProjCategory, CostSheetDesigner
 ---
 
 # Production postings

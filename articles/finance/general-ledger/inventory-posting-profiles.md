@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Inventory posting profiles
-description: This article provides an overview of inventory posting profiles.  
+description: Learn about inventory posting profiles, including overviews on inventory transactions and configuring an inventory posting profile.
 author: rachelprofitt
-ms.date: 04/29/2024
-ms.topic: overview
-# optional metadata
-
-ms.search.form: InventPosting, InventTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: raprofit
+ms.topic: overview
+ms.date: 04/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventPosting, InventTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ---
 
 # Inventory posting profiles

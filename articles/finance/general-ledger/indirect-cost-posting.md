@@ -1,22 +1,14 @@
 ---
-# required metadata
-
 title: Indirect cost posting
-description: This article explains how to post indirect costs, create cost groups, and add nodes to the costing sheet for indirect costs.
+description: Learn how to post indirect costs, create cost groups, and add nodes to the costing sheet for indirect costs, including step-by-step processes.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
+ms.date: 04/25/2022
 ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: CostSheetDesigner, BOMCostGroup, ProjCategory, CostingVersion, CostSheetCalculationFactor
-# ROBOTS: 
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: CostSheetDesigner, BOMCostGroup, ProjCategory, CostingVersion, CostSheetCalculationFactor
 ---
 
 # Indirect cost posting

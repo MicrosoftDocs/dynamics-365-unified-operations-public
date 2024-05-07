@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Financial reporting FAQ
-description: This article provides answers to some frequently asked questions about Financial reporting.
+description: Access answers to some frequently asked questions about Financial reporting, including questions about restricting access and error messages.
 author: jinniew
-ms.date: 07/07/2021
-ms.topic: conceptual
-ms.reviewer: twheeloc
-
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: conceptual
+ms.date: 07/07/2021
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-01-13
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Financial reporting FAQ

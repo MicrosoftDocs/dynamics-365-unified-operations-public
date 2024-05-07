@@ -1,22 +1,14 @@
 ---
-# required metadata
-
 title: Standard cost variance posting
-description: This article provides information about setting up posting profiles for standard costing.
+description: Learn about setting up posting profiles for standard costing, including a sample posting profile configuration and table giving details for posting types.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
+ms.date: 04/25/2022
 ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: InventPosting, InventItemGroup
-# ROBOTS: 
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventItemGroup
 ---
 
 # Standard cost variance posting
