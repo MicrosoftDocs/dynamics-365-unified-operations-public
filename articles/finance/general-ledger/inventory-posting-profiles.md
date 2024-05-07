@@ -81,7 +81,7 @@ generation for a sales or purchase order. Updates to the reference document are 
 | Issue (status)   | For inventory transactions that are issues, this field indicates the status of the issue. For example, a sales order is an issue, and the status might be **On order** or **Sold**.        |
 | Quantity         | The quantity of the inventory transaction. Positive numbers are used for receipts to inventory while negative numbers are used for issues from inventory.                          |
 | Unit             | The unit of measure that the quantity is expressed in.                                                                                   |
-| CW quantity      | The catch weight quantity for the transaction. For more information, go to [About catch weight items](../../dynamicsax-2012/appuser-itpro/about-catch-weight-items.).       |
+| CW quantity      | The catch weight quantity for the transaction. <!-- Outdated link -- For more information, go to [About catch weight items](../../dynamicsax-2012/appuser-itpro/about-catch-weight-items.).  -->     |
 | CW unit          | The catch weight unit of measure the catch weight quantity is expressed in.                                                         |
 | Cost amount      | The final cost of the inventory transaction. This field is populated when a transaction is financially updated. Depending on the costing methodology, the Inventory close and adjustment process might update this field.                            |
 

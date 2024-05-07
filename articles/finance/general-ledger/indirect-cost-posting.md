@@ -39,7 +39,7 @@ The exact process that is used to calculate indirect costs might vary slightly f
 6. Maintain the cost for your indirect costs in the costing version.
 
 > [!NOTE]
-> You can use the **Cost accounting** module to accumulate costs and determine your overhead from different sources, such as production, projects, and the general ledger. For more information, see [Cost accounting](/cost-accounting/cost-accounting-home-page.md).
+> You can use the **Cost accounting** module to accumulate costs and determine your overhead from different sources, such as production, projects, and the general ledger. For more information, see [Cost accounting](../cost-accounting/cost-accounting-home-page.md).
 
 > [!IMPORTANT]
 > Different regulatory establishments have published guidance about the types of costs that can be included as indirect costs or overhead in the cost of your finished goods. Before you start to configure indirect costs, we recommend that you check with your accountant and local regulations to ensure that you're compliant.
