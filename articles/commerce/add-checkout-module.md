@@ -65,6 +65,13 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
 
+| Property name | Values | Description |
+|----------------|--------|-------------|
+| Enable customer reference | **True** or **False** |  If this optional property is set to True, then the customer can provide a reference number during checkout. This gets saved to the order header. This feature was added in Commerce version 10.0.40.|
+| Enable customer requisition | **True** or **False** | If this optional property is set to True, then the customer can provide a requisition number during checkout. This gets saved to the order header. The customer view this information on their order history and can filter their orders using this number. This feature was added in Commerce version 10.0.40.|
+| Enable cart note | **True** or **False** | If this optional property is set to True, then the customer can provide delivery instructions or any other information during checkout. This information gets saved as a Note attachment to the order header.This feature was added in Commerce version 10.0.40. |
+
+
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
 - **Checkout terms and conditions** – This module shows rich text that contains the terms and conditions and a check box for the customer input. The check box is optional and configurable. The input is captured by the module and can be used as a check before order placement is triggered, but it isn't included in the order summary information. This module can be added to the checkout container, checkout section container, or terms and conditions slot, according to business needs. If it's added to the checkout container or checkout section container slot, it will appear as a step in the checkout process. If it's added to the terms and conditions slot, it will appear near the order placement button.
