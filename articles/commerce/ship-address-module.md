@@ -40,6 +40,7 @@ The following illustration shows an example of a new shipping address module on 
 | Show address type | **True** or **False** | If this optional property is set to **True**, an address type, such as **Home** or **Business**, will be shown. If no address type is specified, the address will automatically be saved as **Type**=**Other**. |
 | Enable auto suggestion| **True** or **False** | If this optional property is set to **True**, automatic address suggestions will be provided. These suggestions are powered by Bing Maps. For information about how to set up Bing Maps integration for your site, see [Store selector module](store-selector.md). This feature is available as of the Commerce version 10.0.15 release.|
 |Auto suggest options| A number| If automatic address suggestions are enabled, you can specify additional options, such as the maximum number of suggestions that should be provided.|
+|Enable multiple shipping addresses for an order| **True** or **False**| If this optional property is set to True, then the customer can select multiple shipping addresses for an order by selecting a shipping address for each order line. This feature is available as of the 10.0.40 release.|
 
 ## Add a shipping address module to a checkout page and set the required properties
 
