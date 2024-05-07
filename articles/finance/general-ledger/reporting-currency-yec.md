@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Reporting currency out of balance when the year-end close is run
-description: This article explains how the reporting currency can be out of balance when the year-end close is run.
+description: Learn how the reporting currency can be out of balance when the year-end close is run, including an outline on posting reporting currency gain/loss.
 author: moaamer
-ms.date: 04/12/2024
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom:
-# ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 04/12/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
 # Reporting currency out of balance when the year-end close is run

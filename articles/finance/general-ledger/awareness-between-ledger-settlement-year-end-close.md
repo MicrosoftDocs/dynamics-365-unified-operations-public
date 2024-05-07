@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Awareness between ledger settlement and year-end close
-description: This article provides information about enhancements which impact ledger settlements and the General ledger year-end close.
+description: Learn about enhancements which impact ledger settlements and the General ledger year-end close, including an outline on how to set up the ledger settlement.
 author: moaamer
-ms.date: 04/16/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom:
-# ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 04/16/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
 # **Awareness between ledger settlement and year-end close**

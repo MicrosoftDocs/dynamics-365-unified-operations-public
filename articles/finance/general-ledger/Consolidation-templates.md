@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Consolidate online templates
-description: This topic describes how to set up the consolidation templates to use with the Consolidate online functionality.
+description: Learn how to set up the consolidation templates to use with the Consolidate online functionality, including an outline on financial dimensions.
 author: JodiChristiansen
-ms.date: 04/23/2024
-ms.topic: article
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 04/23/2024
+ms.custom: 539093
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2021-11-05
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Consolidate online templates

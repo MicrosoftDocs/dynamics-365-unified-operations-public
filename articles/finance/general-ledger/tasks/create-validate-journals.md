@@ -1,27 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create and validate journals
-description: This procedure creates and validates journals and journal lines. 
+description: Learn about the procedure for creating and validating journals and journal lines, including a step-by-step process using the USMF demo company. 
 author: panolte
+ms.author: kfend
+ms.topic: how-to
 ms.date: 04/01/2024
-ms.topic: how-to 
- 
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransDaily   
+ms.custom:
+ms.reviewer: kfend    
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and validate journals
 
 [!include [banner](../../includes/banner.md)]

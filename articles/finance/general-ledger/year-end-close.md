@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Year-end close
-description: This article describes the required setup and steps for running the general ledger year-end close process. 
+description: Learn about the required setup and steps for running the general ledger year-end close process, including an outline on defining year-end close templates. 
 author: MOAAMER
-ms.date: 03/22/2024
-ms.topic: article
-ms.custom: evergreen 
-
-# optional metadata
-
-ms.search.form: LedgerClosingSheet
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 03/22/2024
+ms.custom: evergreen 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerClosingSheet
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Year-end close
