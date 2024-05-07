@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Austria overview
-description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Austria.
+description: Access an overview of Dynamics 365 Finance functionality that is specific to Austria, including overviews on depreciation, material fees, and purchase duties.
 author: kfend
-ms.date: 03/04/2022
-ms.topic: overview
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Austria
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 03/04/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria
 ms.search.validFrom: 2016-05-31
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Austria overview

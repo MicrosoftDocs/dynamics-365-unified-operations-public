@@ -1,13 +1,13 @@
 ---
 title: VAT declaration (Austria)
-description: This article describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format
+description: Learn how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format.
 author: AdamTrukawka
-ms.date: 03/10/2022
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/10/2022
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

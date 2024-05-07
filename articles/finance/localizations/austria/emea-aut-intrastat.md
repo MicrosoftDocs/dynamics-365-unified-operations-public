@@ -1,13 +1,13 @@
 ---
 title: Austrian Intrastat
-description: This article contains information about the Austrian Intrastat report.
+description: Learn about the Austrian Intrastat report, including an outline on setting up Intrastat, intrastat transfer, and provides examples.
 author: AdamTrukawka
-ms.date: 09/15/2021
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/15/2021
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Packing material fee calculation for Austria
-description: This article provides information about packing material rates and fees in Austria.
+description: Learn about packing material rates and fees in Austria, including a table that defines various prerequisites and an outline on manually creating transactions.
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
-ms.topic: article
-# optional metadata
-
-ms.search.form: InventPackagingMaterialTransPurch
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Austria
-# ms.search.industry: 
 ms.author: epopov
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria
 ms.search.validFrom: 2016-11-30
+ms.search.form: InventPackagingMaterialTransPurch
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Packing material fee calculation for Austria

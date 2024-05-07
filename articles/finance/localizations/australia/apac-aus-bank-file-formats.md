@@ -1,18 +1,17 @@
 ---
 title: Bank file formats for Australian banks
-description: This article provides information about Australian banks and the file formats that they accept for electronic payments.
+description: Learn about Australian banks and the file formats that they accept for electronic payments, including a table that provides the interface for bank names.
 author: AdamTrukawka
-ms.date: 07/23/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Australia
 ms.author: atrukawk
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: article
+ms.date: 07/23/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Australia
+ms.search.validFrom: 2016-02-28
 ms.search.form: 
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Bank file formats for Australian banks
