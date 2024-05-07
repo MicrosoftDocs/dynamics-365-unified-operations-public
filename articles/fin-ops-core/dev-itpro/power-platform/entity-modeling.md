@@ -1,15 +1,15 @@
 ---
 title: Entity modeling
 description: Learn about relational modeling concepts using virtual entities for finance and operations entities, including an overview on generating virtual entities.
-author: Sunil-Garg
-ms.author: sunilg
+author: Kanna-Manickavasagam
+ms.author: smkannapiran
 ms.topic: article
 ms.date: 09/16/2022
 ms.custom: NotInToc
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
-ms.search.validFrom: 2020-05-31
+ms.search.validFrom: 2024-05-31
 ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
@@ -29,11 +29,11 @@ Building an app requires capabilities to perform relational modeling between ent
 
 ## Generating virtual entities
 
-By default, virtual entities for finance and operations apps don't exist in Dataverse. A user must query the catalog entity to view the entities that are available in the linked instance of finance and operations apps. From the catalog, the user can select one or more entities, and then request that Dataverse generate the virtual entities. This procedure is explained in later sections.
+By default, virtual entities for finance and operations apps don't exist in Dataverse. A user must query the catalog entity to view the entities that are available in the linked instance of finance and operations apps. From the catalog, the user can select one or more entities, and then request that Dataverse generate virtual tables in Dataverse for these Finance and Operations entities . This procedure is explained in later sections.
 
 ## Entity fields
 
-When a virtual entity is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual entity in Dataverse. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in the finance and operations app.
+When a virtual entity is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual table in Dataverse. In an ideal case, the total number of fields will be the same in both F&O entities and Dataverse virtual tables, unless there is a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in the finance and operations app.
 
 The rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
 
@@ -75,21 +75,21 @@ Data types that are supported in Dataverse but not in finance and operations app
 
 In finance and operations entities can have one or more fields of various data types as the entity key. An entity key uniquely identifies a record in a finance and operations entity. Additionally, a record in an entity can be uniquely identified by a record ID primary key of the Int64 type.
 
-In Dataverse, the primary key is always a globally unique identifier (GUID). The GUID-based primary key enables a record in an entity in Dataverse to be uniquely identified.
+In Dataverse, the primary key is always a globally unique identifier (GUID). The GUID-based primary key enables a record in a Dataverse table to be uniquely identified.
 
 To bridge the implementation gap between finance and operations apps and Dataverse, the primary key of a virtual entity for finance and operations apps is a GUID (to comply with Dataverse). This GUID consists of the data entity ID in the first 4 bytes, and the record ID of the root data source in the entity as the last 8 bytes. This design satisfies Dataverse's requirement that a GUID be used as the entity key. It also enables the table ID and record ID to be used to uniquely identify the finance and operations entity record.
 
-When using entities in finance and operations apps, you need to ensure that the root data source will always have a unique RecID. If this design is violated, duplicate GUID's will show up in Dataverse for the corresponding virtual entity. Aggregate views are not supported via virtual entities for the same reason because these views may not have unique RecIDs.
+When using entities in finance and operations apps, you need to ensure that the root data source will always have a unique RecID. If this design is violated, duplicate GUID's will show up in Dataverse for the corresponding virtual table. Aggregate views are not supported via virtual tables for the same reason because these views may not have unique RecIDs.
 
 ## Primary field
 
-In Dataverse, each entity must have a primary field. This field must be a single field of the string type. The primary field is used in Dataverse in the following scenarios:
+In Dataverse, each table must have a primary field. This field must be a single field of the string type. The primary field is used in Dataverse in the following scenarios:
 
 - The default views that are created for an entity include the primary field.
 - The quick view form for an entity includes the primary field.
 - A lookup to another entity is added to a page and shows the data from the primary field.
 
-Based on this use of the primary field in Dataverse, the primary field for a finance and operations virtual entity is designed to use the entity key of the corresponding entity in the finance and operations app.
+Based on this use of the primary field in Dataverse, the primary field for a finance and operations virtual table is designed to use the entity key of the corresponding entity in the finance and operations app.
 
 Because the primary field in Dataverse is expected to have only one field of the string type, whereas the finance and operations entity key can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
 
@@ -99,17 +99,17 @@ Because the primary field in Dataverse is expected to have only one field of the
 ## Relations
 
 > [!IMPORTANT]
-> A write transaction that spans a virtual entity and a native entity is not supported. We do not recommend using this form of transaction, as there is no way to ensure consistency.
+> A write transaction that spans a virtual table and a native entity is not supported. We do not recommend using this form of transaction, as there is no way to ensure consistency.
 
-Relations in finance and operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Dataverse. Note that many-to-many (n:n) relations aren't supported in finance and operations.
+Relations in finance and operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual table in Dataverse. Note that many-to-many (n:n) relations aren't supported in finance and operations.
 
-For example, in finance and operations apps, if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Dataverse. The schema name of this relationship in Dataverse uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 92 characters. Any relation where the schema name will produce a name that exceeds 92 characters won't be generated in the virtual entity in Dataverse.
+For example, in finance and operations apps, if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual table Table A in Dataverse. The schema name of this relationship in Dataverse uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 92 characters. Any relation where the schema name will produce a name that exceeds 92 characters won't be generated in the virtual entity in Dataverse.
 
 The external name of this relationship uses the naming convention **FK\_\<relation name\>**. The external name is used to determine the relation in the finance and operations app when the query that is sent and built.
 
-When a relationship is generated for a virtual entity in Dataverse, a new field of the lookup type is also added to the source entity. In the preceding example, when the relationship is created, a new lookup field that uses the naming convention **mserp\_fk\_\<target\_entity\>\_id** is added to source entity Entity A. Because there can be several relations in a finance and operations entity, the same number of lookup fields (one per related entity) will be created in the source virtual entity. When this lookup field is added to a page or a view, it will show the primary field value from the related entity.
+When a relationship is generated for a virtual table in Dataverse, a new field of the lookup type is also added to the source entity. In the preceding example, when the relationship is created, a new lookup field that uses the naming convention **mserp\_fk\_\<target\_entity\>\_id** is added to source entity Entity A. Because there can be several relations in a finance and operations entity, the same number of lookup fields (one per related entity) will be created in the source virtual entity. When this lookup field is added to a page or a view, it will show the primary field value from the related entity.
 
-A relationship in the virtual entity in Dataverse will be generated only if the related entity in the relation already exists as a virtual entity in Dataverse. In the preceding example, if Entity B doesn't exist as a virtual entity in Dataverse, the relation to Entity B won't be created in Entity A when Entity A is generated as a virtual entity. This relation will be added to Entity A only when Entity B is generated as a virtual entity. Therefore, when a virtual entity is generated for the finance and operations app, validations are done to ensure that only relationships that can be complete and functional are generated in the virtual entity that is being generated.
+A relationship in the virtual table in Dataverse will be generated only if the related entity in the relation already exists as a virtual table in Dataverse. In the preceding example, if Entity B doesn't exist as a virtual table in Dataverse, the relation to Entity B won't be created in Entity A when Entity A is generated as a virtual table. This relation will be added to Entity A only when Entity B is generated as a virtual table. Therefore, when a virtual table is generated for the finance and operations app, validations are done to ensure that only relationships that can be complete and functional are generated in the virtual table that is being generated.
 
 In summary, a relationship to another finance and operations virtual entity might not exist in the virtual entity for either of the following reasons:
 
