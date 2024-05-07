@@ -31,6 +31,7 @@ The presence of the **Self-checkout** flag drives the following behavior:
 - **Enable task recorder** is set to **off**.
 - **Hardware station** options are set to **No**.
 - **Auto log off** is turned off.
+![selfcheckout register.](media/selfcheckout-register.png)
 
 Additionally, if the **Self-checkout** flag at the register is set to **Yes**, the following changes are made in POS to tailor consumer operations:
 
@@ -42,6 +43,7 @@ Additionally, if the **Self-checkout** flag at the register is set to **Yes**, t
 > side navigation bars will still be visible on the self-checkout register. This allows store associates to perform any
 > set up or admin tasks easily without switching to a cashier register.
 
+![Permissions.](media/permissions.png)
 To restrict specific products from being offered at SCO, follow this step.
 
 - Go to **Released products**, and set **Blocked at self-checkout** to **Yes**.
@@ -62,7 +64,9 @@ To set up the kiosk and the hardware peripherals during initial setup, your admi
 
 ## Consumer-facing out-of-box layout
 
-The shopper-facing layout is configured with limited operations and is available in the demo environment for export and import. Look for the SCO layout in **Screen layouts** under **Retail and Commerce**. Assign the screen layout to the **Registers** setup. 
+The shopper-facing layout is configured with limited operations and is available in the demo environment for export and import. Look for the SCO layout in **Screen layouts** under **Retail and Commerce**. Assign the screen layout to the **Registers** setup.
+
+![outofbox layout.](media/outofbox-layout.png)
 
 > [!NOTE]
 > In demo data, Houston - Register 49 is set up as an SCO register, and the SCO layout (**SCO\_POC1**) is assigned to it.
@@ -106,3 +110,5 @@ The **Call for assistance** operation provides support for cashier assistance du
 
 - **Logout** – This operation lets the store associate sign out of the kiosk.
 - **Cancel** – This operation lets the store associate cancel out of the **Call for assistance** operation.
+
+![Call for assistance.](media/call-for-assistance.png)
