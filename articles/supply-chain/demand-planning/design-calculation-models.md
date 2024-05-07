@@ -79,7 +79,7 @@ You can use this type of tile only if your calculation model has at least two in
 
 - **Step name** – The specific name of the tile. This name is also shown in the flowchart.
 - **Description** – A short description of the tile.
-- **Crated by** – The user who created the tile.
+- **Created by** – The user who created the tile.
 - **Value 1** – The first series in the calculation (*a(x)*), which is on the left side of the operator. Select *Input 1* or *Input 2*.
 - **Operator** – The operator that's applied between the first series (**Value 1**) and the second series (**Value 2**). Select whether to add (\+), subtract (\-), multiply (\*), or divide (/).
 - **Value 2** – The second series in the calculation (*b(x)*), which is on the right side of the operator. Select *Input 1* or *Input 2*.
@@ -101,7 +101,7 @@ In this formula:
 
 - **Step name** – The specific name of the tile. This name is also shown in the flowchart.
 - **Description** – A short description of the tile.
-- **Crated by** – The user who created the tile.
+- **Created by** – The user who created the tile.
 - **Value 1** – The first series in the calculation (*a(x)*), which is on the left side of the operator. Select *Input 1* or *Input 2*.
 - **Operator** – The operator that's applied. Select whether to add (\+), subtract (\-), multiply (\*), or divide (/).
 - **Constant** – The constant value that's applied to each time series value by using the selected operator.
@@ -120,7 +120,7 @@ In this formula, *t* is an integer that represents the number of days, months, o
 
 - **Step name** – The specific name of the tile. The name is also shown in the flowchart.
 - **Description** – A short description of the tile.
-- **Crated by** – The user who created the tile.
+- **Created by** – The user who created the tile.
 - **Time value** – The amount of time to shift the input time series forward by. The amount is in the unit that's specified in the **Time unit** field.
 - **Time unit** – The unit that applies to the time value.
 
@@ -142,7 +142,7 @@ In this formula:
 
 - **Step name** – The specific name of the tile. The name is also shown in the flowchart.
 - **Description** – A short description of the tile.
-- **Crated by** – The user who created the tile.
+- **Created by** – The user who created the tile.
 - **Apply ABS** – Set this option to *Yes* to use the absolute value (distance from zero) of the input series. Set it to *No* to use the literal value (including +/\- signs) of the input series.
 - **Operator** – The logical operator that's applied for the comparison against the constant value.
 - **Constant** – The constant value to compare against the input time series.
@@ -172,7 +172,7 @@ f(x) = a(x) &times; Price(product-ID)
 
 - **Step name** – The specific name of the tile. The name is also shown in the flowchart.
 - **Description** – A short description of the tile.
-- **Crated by** – The user who created the tile.
+- **Created by** – The user who created the tile.
 - **Primary price list** – Select the primary data table that contains your price list. The list includes all the tables that are currently defined for use with Demand planning. (For more information, see [Set up tables](import-data.md).) The price list must include columns for product IDs and prices.
 - **Fallback price list** – If the system can't find a matching price in the primary price list, it checks any price list that you select here.
 
@@ -190,7 +190,7 @@ You can use this type of tile only if your calculation model has at least two in
 
 - **Step name** – The specific name of the tile. This name is also shown in the flowchart.
 - **Description** – A short description of the tile.
-- **Crated by** – The user who created the tile.
+- **Created by** – The user who created the tile.
 - **Value 1** – The first series in the calculation (*a(x)*). Select *Input 1* or *Input 2*.
 - **Value 2** – The second series in the calculation (*b(x)*). Select *Input 1* or *Input 2*.
 
