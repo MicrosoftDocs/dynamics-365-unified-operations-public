@@ -1,22 +1,38 @@
 ---
-title: Item substitution for formulas and BOM
-description: This article describes how to set up item substitution for formulas or bill of materials in master planning.
+title: Item substitution for formulas and bills of materials
+description: This article describes how to set up item substitution for formulas or bills of material in master planning.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: ReqDemPlanImportForecastDialog
 ms.topic: how-to
-ms.date: 03/07/2024
+ms.date: 05/07/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Item substitution for formulas
+# Item substitution for formulas and bills of materials
 
 [!include [banner](../includes/banner.md)]
 
-You can use substitute materials only during planning for items that use formulas. 
+You can use substitute materials during planning for items that use formulas or bills of materials. <!-- KFM Copilot suggestion to review: When you set up item substitution for a formula or bill of materials, you can specify a group of items that can serve as substitutes for a particular material. You can also specify the priority of each substitute material in the group. When master planning runs, it uses the preferred material if it's available. If the preferred material isn't available, master planning uses the substitute material that has the highest priority and is available. If no substitute materials are available, master planning creates a planned order for the preferred material. -->
+
+## Prerequisites
+
+Before you can use substitution in planning for formulas, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
+- The feature that's named *Item substitution (Plan group) support for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+Before you can use substitution in planning for bills of materials, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+- The feature that's named *Item substitution for bill of materials in Planning optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+## Item substitution for formulas
+
+### Example scenario: Substituting ingredients in a formula
 
 Consider the following scenario: A food manufacturing company is making an item from a formula that has 20 ingredients. One of the ingredients in the formula can be replaced by one of two other ingredients. However, because those two ingredients are more expensive than the preferred ingredient, substitution is used only when the preferred ingredient is out of stock.
 
@@ -26,14 +42,7 @@ To set up the substitution, create a formula line for each of the three ingredie
 
 If you have a demand for the finished item, master planning determines whether the demand for ingredient A can be covered. If it can't, master planning looks at ingredients B and C in order of priority. If one of these ingredients is on hand, it's used (according to its priority) when a batch order is firmed for the formula. If none of the ingredients are on hand, master planning creates a planned order for the preferred ingredient (ingredient A).
 
-## Prerequisites
-
-Before you can use substitution in planning for formulas, your system must meet the following requirements:
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
-- The feature that's named *Item substitution (Plan group) support for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-## Set up item substitution
+### Set up item substitution for formulas
 
 Follow these steps to set up item substitution for a formula:
 
@@ -52,7 +61,7 @@ Follow these steps to set up item substitution for a formula:
 
 1. Repeat the previous step for each additional substitute material.
 
-## Shelf life and item substitution for formulas
+### Shelf life and item substitution for formulas
 
 When material substitution is used with products that have a limited shelf life, master planning always ensures that the shelf life of all materials is respected.
 
@@ -76,11 +85,11 @@ For example, a formula item is set up in the following way:
 
 Master planning first selects material A, which has an available quantity of *4*. Because the required quantity is *10*, there isn't enough of material A. Therefore, master planning determines whether it can use the existing purchase order for the substitute (material B) for the remaining quantity. However, because the available receipt date of the substitute is later than the expiry date of the on-hand inventory of material A, the substitute isn't used. Instead, master planning creates a planned order for a quantity of *6* of material A to fulfill the remaining material that's required.
 
-# Item substitution for bill of materials
+## Item substitution for bills of materials
 
-You can use substitute materials only during planning for items that use bill of materials. 
+### Example scenario: Substituting components in a bill of materials
 
-Consider the following scenario: A manufacturing company is making an item from a bill of materials that has 20 components. One of the components in the bill of materials can be replaced by other ones, maybe the same item with different item number. 
+Consider the following scenario: A manufacturing company is making an item from a bill of materials that has 20 components. One of the components in the bill of materials can be replaced by other ones, maybe the same item with different item number.
 
 For this scenario, the material that can be replaced (the preferred component) is named ingredient A. The two materials that can replace it are named ingredient B and ingredient C.
 
@@ -88,14 +97,7 @@ To set up the substitution, create a formula line for each of the three ingredie
 
 If you have a demand for the finished item, master planning determines whether the demand for ingredient A can be covered. If it can't, master planning looks at ingredients B and C in order of priority. If one of these ingredients is on hand, it's used (according to its priority) when a batch order is firmed for the formula. If none of the ingredients are on hand, master planning creates a planned order for the preferred ingredient (ingredient A).
 
-## Prerequisites
-
-Before you can use substitution in planning for formulas, your system must meet the following requirements:
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
-- The feature that's named *Item substitution (Plan group) support for Planning Optimization* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-- ## Set up item substitution for bill of materials 
+### Set up item substitution for bills of materials
 
 Follow these steps to set up item substitution for a bill of materials:
 
@@ -111,5 +113,3 @@ Follow these steps to set up item substitution for a bill of materials:
     - **Plan group** – Enter the same name that you entered for the preferred material.
     - **Priority** – Enter a number that indicates the priority of this material in the plan group. The lower the number, the higher the priority. Each material in the plan group must have a unique priority number.
     - **Quantity** – Enter *0*. This field isn't used for substitutes. The quantity of the preferred material (that is, the one that has the lowest priority) defines the quantity for all the materials in the plan group.
-
-
