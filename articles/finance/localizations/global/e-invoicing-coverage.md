@@ -41,8 +41,8 @@ The next chapter contains the detailed information about e-invoicing "out-of-the
 
  **Country**  |                                 **Description**                                |**Availability**|
 |----------------------|-----------------------------------------------------------------------|------------|
-| Argentina            | Generation of electronic documents in the predefined XML formats and submission through WebServices to AFIP.  |Planned for 2024 release wave 2|
-| Australia            | Generation of electronic invoices for Sales and Project invoices and credit notes in the Australian extension of **PEPPOL** format.<li>[Electronic invoicing for Australia](../apac/gs-apac-aus-nzl-electronic-invoices.md)</li>    |Available|
+| Argentina            | Generation of electronic documents in the predefined XML formats and submission through WebServices to AFIP.  |Planned for 2025 release wave 1|
+| Australia            | Generation of electronic invoices for Sales and Project invoices and credit notes in the Australian extension of **PEPPOL** format.<li>Learn more here: [Electronic invoicing for Australia](../apac/gs-apac-aus-nzl-electronic-invoices.md)</li>    |Available|
 | Austria            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|Available|
 | Belgium            | Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format|<li>Available</li><li>Regulatory changes expected by January 2026</li>|
 | Bolivia | Generation of electronic invoices with the right to fiscal credit, invoices without the right to fiscal credit, and adjustment documents in XML format. |Planned for 2024 release wave 1|
