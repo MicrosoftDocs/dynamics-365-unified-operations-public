@@ -48,6 +48,9 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 
 The **Archive with Dataverse long term retention** workspace should now be available in the **Workspaces** list in Finance.
 
+> [!IMPORTANT]
+> When testing in the sandbox environment, and the largest table for the scenario being tested has more than 100 million records, it is recommended to use a higher than tier2 sandbox environment. The higher tier supports faster processing of the initial synch, of your finance and operations apps entities to the Dataverse managed data lake.
+
 ### Schedule an archive job
 
 > [!NOTE]
