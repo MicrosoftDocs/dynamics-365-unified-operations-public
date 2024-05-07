@@ -58,7 +58,7 @@ The Store Commerce mobile apps require Dynamics 365 Commerce, and specifically t
 
 | Prerequisite | Android | iOS  |
 | ------------ | ------- | ---- |
-| OS version   | 9.0     | 17.4 |
+| OS version   | 8.1     | 17.4 |
 
 ## Install the app
 
