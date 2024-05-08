@@ -15,6 +15,7 @@ ms.dyn365.ops.version: AX 10.0.39
 # Get started with Electronic invoicing for Malaysia (preview)
 
 [!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information that will help you get started with Electronic invoicing for Malaysia. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
