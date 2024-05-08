@@ -1,16 +1,17 @@
 ---
 title: Set up NF-e federal parameters (Brazil)
-description: You can set up Nota Fiscal eletrônica (NF-e) web services, rejection codes, and schemas to generate an NF-e.
+description: Learn how you can set up Nota Fiscal eletrônica (NF-e) web services, rejection codes, and schemas to generate an NF-e, including a step-by-step process.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 06/26/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Set up NF-e federal parameters (Brazil)
 
 [!include [banner](../../includes/banner.md)]

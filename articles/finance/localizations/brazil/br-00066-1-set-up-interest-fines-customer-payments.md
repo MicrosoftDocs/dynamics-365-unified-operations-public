@@ -1,16 +1,17 @@
 ---
 title: Set up interest and fines on customer payments (Brazil)
-description: Use this procedure to set up interest and fines on customer payments.
+description: Learn how to use this procedure to set up interest and fines on customer payments, including a step-by-step process using the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 06/26/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Set up interest and fines on customer payments (Brazil)
 
 [!include [banner](../../includes/banner.md)]

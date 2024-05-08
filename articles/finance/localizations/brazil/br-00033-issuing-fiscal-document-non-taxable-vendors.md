@@ -1,17 +1,18 @@
 ---
 title: Issue fiscal documents for vendors (Brazil)
-description: You can create and post vendor invoices on behalf of nontaxpayer vendors.
+description: Learn how you can create and post vendor invoices on behalf of nontaxpayer vendors, including a step-by-step process using the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 06/26/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
+
 # Issue fiscal documents for vendors (Brazil)
 
 [!include [banner](../../includes/banner.md)]

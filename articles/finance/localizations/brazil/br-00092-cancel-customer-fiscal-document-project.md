@@ -1,16 +1,17 @@
 ---
 title: Cancel a customer fiscal document (project) (Brazil)
-description: You can cancel a customer invoice for a project.
+description: Learn how you can cancel a customer invoice for a project or fiscal document, including a step-by-step process using the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 06/26/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Cancel a customer fiscal document (project) (Brazil)
 
 [!include [banner](../../includes/banner.md)]

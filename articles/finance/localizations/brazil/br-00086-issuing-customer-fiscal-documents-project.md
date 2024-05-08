@@ -1,17 +1,18 @@
 ---
 title: Issue customer fiscal documents (project) (Brazil)
-description: You can issue a fiscal document for a project.
+description: Learn how you can issue customer fiscal documents for a project, including a step-by-step process using the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/24/2017
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 06/24/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
+
 # Issue customer fiscal documents (project) (Brazil)
 
 [!include [banner](../../includes/banner.md)]

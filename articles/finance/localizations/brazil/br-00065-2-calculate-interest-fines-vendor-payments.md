@@ -1,16 +1,17 @@
 ---
 title: Calculate interest and fines on vendor payments (Brazil)
-description: You can apply interest and fines on vendor payments that are delayed.
+description: Learn how you can apply interest and fines on vendor payments that are delayed, including a step-by-step process using the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 06/26/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Calculate interest and fines on vendor payments (Brazil)
 
 [!include [banner](../../includes/banner.md)]

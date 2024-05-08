@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Set up and maintain PRODCOM
-description: This article explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 Finance. 
+description: Learn how to set up and maintain PRODCOM in Microsoft Dynamics 365 Finance, including an outline on assigning PRODCOM properties to an item.
 author: EvgenyPopovMBS
-ms.date: 07/22/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWithCode, InventProdComParameters, InventProdComTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Belgium
-# ms.search.industry: 
 ms.author: epopov
+ms.topic: article
+ms.date: 07/22/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Belgium
 ms.search.validFrom: 2016-11-30
+ms.search.form: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWithCode, InventProdComParameters, InventProdComTable
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Set up and maintain PRODCOM
