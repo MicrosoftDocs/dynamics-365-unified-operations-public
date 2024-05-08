@@ -10,7 +10,11 @@
       "redirect_url": "/human-resources/hr-app",
       "redirect_document_id": "false"
     },   
-    
+    {
+      "source_path": "articles/human-resources/hr-admin-teams-leave-app.md",
+      "redirect_url": "/human-resources/hr-app",
+      "redirect_document_id": "false"
+    },   
      {
       "source_path": "articles/finance/general-ledger/add-change-acctg-rprtg-crrncy.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/add-change-accounting-reporting-currency",
