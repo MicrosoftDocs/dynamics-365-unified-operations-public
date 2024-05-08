@@ -41,7 +41,7 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 3. Select **New**, and then select **Leave and absence request**. 
 
-4. When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.
+4. When the **Open this file?** message box appears, select **Open**, and sign in with your company credentials.
 
 5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json).
 
@@ -96,7 +96,7 @@ The following leave request statuses are used:
 The following workflow statuses are used for leave requests:
 
 - **In review** – The leave request was submitted. When a leave request is in review, the workflow has been triggered for the next steps.
-- **Cancelled** – A user decided to cancel the workflow.
+- **Canceled** – A user decided to cancel the workflow.
 - **Completed** – No further action is required.
 
 ## See also
