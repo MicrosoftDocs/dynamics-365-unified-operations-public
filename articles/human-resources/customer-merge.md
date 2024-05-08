@@ -82,6 +82,6 @@ Several significant challenges and considerations emerge during the customer mer
 - Integrations
 - Extended solutions
 
-We addressed and provided recommendations for these key challenges and considerations in [Dynamics 365 Human Resources Infrastructure Customer merge](https://www.youtube.com/watch?v=Du5UOeb4I0I).
+We addressed and provided recommendations for these key challenges and considerations in [Dynamics 365 Human Resources Infrastructure Customer merge](https://community.dynamics.com/blogs/post/?postid=d9decee4-8b06-ef11-9f89-7c1e5216c747).
 
 
