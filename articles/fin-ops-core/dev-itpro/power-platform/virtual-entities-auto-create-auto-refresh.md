@@ -10,7 +10,8 @@ ms.search.region: Global
 ms.search.validFrom: 2024-05-31
 ---
 
-# Virtual entities auto create
+# Virtual Entities Auto Create and Refresh
+
 
 [!include[banner](../includes/banner.md)]
 
@@ -24,13 +25,36 @@ ms.search.validFrom: 2024-05-31
 
 ## Overview
 
-Users kickstart virtualization by marking F&O entities to be relevant for virtualization, setting off automatic synchronization with Dataverse.DBSync is the batch job, which is an integral part of the release package is triggered as a background batch job. DBSync logs its activity in the CDSVirtualEntityList table. Once the DBSync process concludes, the scheduled CDSVirtualEntityRefreshBatch job ensures all changes are successfully propagated to Dataverse. Governed by the CDSVirtualEntityAutoRefresh feature, this job seamlessly synchronizes F&O metadata with Dataverse, eliminating the need for manual intervention for both create and updates to F&O entity. The batch jobs are set to run automatically. The batch job retries automatically up to 3 times in case of failures, with the retry limit fixed and retry attempts are not configurable. If the batch job fails after these attempts, users can check the job log for details on the failure and request for the batch job for auto-create or auto-refresh to be triggered by creating an incident ticket.
+Today, any changes in F&O Data entity are not visible to Dataverse until there is a manual refresh from Dataverse. This feature aims to automatically refresh all virtual entity metadata reliably and efficiently, ensuring timely updates in the Dataverse. This would remove the requirement of manually refreshing the entity from Dataverse.
+This also paves way for automatically creating virtual entities in Dataverse for F&O Data entities.
 
-![Architecture of virtual entities for auto create and refresh.](media/VE_Create_Refresh_Architecture.png)
+## Details
+![Architecture of virtual entities for auto create and refresh.](media/AutoCreate_Refresh_Overview.png)
 
-## Virtual entity Auto Create
+**Auto Refresh:**
+* This feature activates upon package deployment.
+* If modifications to an existing Dataverse F&O Virtual Entity are included in the deployed package, an X++ batch job (CDSVirtualEntityRefreshBatch) is triggered. This job executes approximately thirty minutes after the package deployment.
 
-Discover the "Auto create" feature in Finance and Operations, which facilitates effortless synchronization of F&O entities with Dataverse as virtual tables. By simply flagging Dataverse.AutoCreate property to "Yes". F&O entities with this property set to "Yes" are enabled for automatic synchronization. This process runs in the background as a batch operation as explained above, generating corresponding virtual tables in Dataverse. Remember, each F&O entity requiring virtualization must be enabled individually within F&O.
+**Auto Create:**
+* This feature activates after Auto Refresh upon package deployment.
+* Any designated F&O Data Entity with Dataverse.AutoCreate metadata property set to Yes will automatically be enabled as a Virtual Entity in the linked Dataverse environment.
+* The enabling process is managed by another batch job (CDSVirtualEntityAutoCreateBatch), which runs approximately ninety minutes following the package deployment.
 
-## Virtual entity Auto Refresh
-The Auto Refresh feature ensures that any modifications made to F&O entities are automatically synced with Dataverse. These modifications encompass alterations to column properties, addition of new columns, or deletion of existing columns. Details of these changes are logged in the CDSVirtualEntityList table for updating by DBSync. A background batch job handles the auto refresh process, scheduled to start in the background and retry automatically up to 3 times in case of failures. This retry limit is fixed and cannot be configured.
+**Auto Delete:**
+
+Note: There is no Auto Delete feature. If an F&O Data Entity that is already enabled in the linked Dataverse environment is deleted, no action is taken automatically. The admin must manually delete the Virtual Entity in Dataverse.
+
+Each failed entity refresh will be automatically retried up to 3 times. This retry limit is fixed and cannot be configured.
+
+## Monitoring
+
+* The status of the new batch jobs can be monitored using the existing Batch Jobs form.
+* Additionally, the status of Automatic Metadata Synchronizations can be checked using a newly created form.
+* To view the results of automatic metadata synchronizations, navigate to the new Finance and Operations form named "Virtual entity metadata sync status"
+* All automatically created and refreshed entities will be displayed within this form.
+  * In case of successful synchronization, the "Last refresh time" field will indicate the time of the successful synchronization.
+  * In case of a failed synchronization:
+    * Personalize the grid within this form by adding the "IsTransientFailure" field for enhanced visibility and troubleshooting.
+    * The "Failure message" field will provide details about the error.
+    * The "IsTransientFailure" field will indicate whether the failure is transient and if a retry will be attempted.
+![Virtual entity metadata sync status form](media/VEMetadataSyncStatus.png)
