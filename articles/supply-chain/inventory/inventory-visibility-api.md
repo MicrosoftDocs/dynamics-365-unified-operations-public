@@ -39,6 +39,7 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/onhand/unreserve` | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
 | `/api/environment/{environmentId}/onhand/unreserve/bulk` | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
 | `/api/environment/{environmentId}/onhand/reserve/resyncjob` |Post | [Clean up reservation data](#clean-up-reservation-data) |
+| `/api/environment/{environmentId}/getJobProgress` | Get | [Get job execution progress](#get-job-execution-progress) |
 | `/api/environment/{environmentId}/onhand/changeschedule` | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
 | `/api/environment/{environmentId}/onhand/changeschedule/bulk` | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
 | `/api/environment/{environmentId}/onhand/indexquery` | Post | [Query by using the post method](#query-with-post-method) (recommended) |
@@ -598,6 +599,32 @@ Body:
         "iv",
         "pos"
     ]
+```
+
+If the clean up job is successfully created, a job ID will be returned in the response, which can be used to [get job execution progress](#get-job-execution-progress).
+
+## Get job execution progress
+
+The *get job execution progress* API is used to obtain the execution progress of a job. A job ID is required to identify the job.
+
+```txt
+Path:
+    /api/environment/{environmentId}/getJobProgress
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    jobId
+```
+
+Here's a sample get URL.
+
+```txt
+/api/environment/{environmentId}/getJobProgress?jobId=SomeJob:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
 ## Query on-hand
