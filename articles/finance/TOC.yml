@@ -1604,7 +1604,7 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing (preview)
+        - name: Electronic Invoicing
           items:
           - name: Electronic Invoicing overview
             href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
@@ -1676,6 +1676,8 @@
               href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia - onboarding
               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+            - name: Malaysia (preview)
+              href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance 
           - name: Electronic Invoicing FAQ
             href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
