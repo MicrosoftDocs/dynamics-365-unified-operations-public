@@ -20,11 +20,11 @@ This article describes the warehouse handling process for outbound loads.
 
 An outbound load is a set of shipments from a warehouse destined for various locations, such as customer addresses or other warehouses. Usually, it's linked to a physical delivery vehicle like a shipping container or truck. It's a component of the warehouse management's outbound procedure, which involves organizing, picking, packaging, and sending goods to complete orders. Outbound loads can be formed both manually or automatically, and their creation depends on predefined outbound operations that influence their dependencies and functional effects.
 
-Each outbound load can be associated with one or more order line quantities, and your system might also contain transportation plans. For more information about how to create and manage outbound transportation, see [Transportation management overview](../transportation/transportation-management-overview.md).
+Each outbound load can be associated with one or more order line quantities for sales orders, transfer orders, and outbound shipment orders. Your system might also contain transportation plans. For more information about how to create and manage outbound transportation, see [Transportation management overview](../transportation/transportation-management-overview.md).
 
 ## Overview: How outbound loads are created, registered, and shipped
 
-This illustration offers an overview of how outbound loads for sales orders (as an example) are managed. If the order lines must be processed by an externally managed warehouse, then the outbound flow will separate and proceed exclusively under the Warehouse management only mode process through *outbound shipment orders*.  For more information about on this method, see [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md).
+This illustration offers an overview of how outbound loads for sales orders (as an example) are managed. If the order lines must be processed by an externally managed warehouse, then the outbound flow will separate and proceed exclusively under the Warehouse management only mode process through *outbound shipment orders*. For more information about on this method, see [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md).
 
 :::image type="content" source="media/outbound-load-process.svg" alt-text="The outbound load handling process." lightbox="media/outbound-load-process.svg":::
 
