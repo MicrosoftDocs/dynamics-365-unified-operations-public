@@ -104,13 +104,13 @@ To activate a device on a Store Commerce mobile app, follow these steps.
 1. Select the register that you associated with the device that you created in Commerce headquarters.
 1. Your device should now be activated. You can sign in to the register by using the operator ID and password for of worker who is associated with the store that you selected. 
 
-For more information about device activation, see [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation.md).
+For more information about device activation, see [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 
 ## Peripheral setup
-The Store Commerce apps for Android and iOS can communicate with most commonly used peripherals that use network protocols for connectivity. Peripherals that require OPOS drivers or direct USB connection typically require a shared hardware station. For more information about network peripherals, see the [Support for network peripherals](../dev-itpro/network-peripherals.md) help topic. 
+The Store Commerce apps for Android and iOS can communicate with most commonly used peripherals that use network protocols for connectivity. Peripherals that require OPOS drivers or direct USB connection typically require a shared hardware station. For more information about network peripherals, see the [Support for network peripherals](network-peripherals.md) help topic. 
 
 ### Receipt Printer
-The network protocols for Epson and Star printers enable receipt printing on mobile devices running Store Commerce app. For more information, see the [Support for network peripherals](network-peripherals#epson-or-star-micronics-receipt-printer-and-a-cash-drawer) help topic. 
+The network protocols for Epson and Star printers enable receipt printing on mobile devices running Store Commerce app. For more information, see the [Support for network peripherals](network-peripherals.md#epson-or-star-micronics-receipt-printer-and-a-cash-drawer) help topic. 
 
 ### Cash drawer
 Cash drawers that are connectted through an Epson or Star receipt printer's d/k port are supported. Cash drawer configuration in the hardware profile is very similar to that of the receipt printer it is connected to. Use "Network" for Drawer setting, specify "Epson" or "Star" for the Device name, and enter the printer's IP address into the IP address field for the Cash drawer setting in the register's IP Addresses view. 
@@ -130,7 +130,7 @@ To enable native scanning in Store Commerce app, go to Dynamics 365 Headquarters
 
 ### Payment terminal
 
-See the [Payment terminals and PIN pads](../retail-peripherals-overview#payment-terminals-and-pin-pads.md) section of the [Retail Peripherals](../retail-peripherals-overview.md) help topic for information about how to connect Store Commerce mobile app to a payment terminal. 
+See the [Payment terminals and PIN pads](../retail-peripherals-overview.md#payment-terminals-and-pin-pads) section of the [Retail Peripherals](../retail-peripherals-overview.md) help topic for information about how to connect Store Commerce mobile app to a payment terminal. 
 
 ## Additional resources
 
