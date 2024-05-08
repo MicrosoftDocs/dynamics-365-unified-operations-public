@@ -2,7 +2,7 @@
 title: Entity modeling
 description: Learn about relational modeling concepts using virtual entities for finance and operations entities, including an overview on generating virtual entities.
 author: Kanna-Manickavasagam
-ms.author: smkannapiran
+ms.author: mkannapiran
 ms.topic: article
 ms.date: 09/16/2022
 ms.custom: NotInToc
@@ -23,17 +23,17 @@ ms.dyn365.ops.version: 10.0.12
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for finance and operations apps, while service update 189 is required for Microsoft Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 >
-> The public entity name that is exposed in Dataverse metadata for the finance and operations virtual entity uses the physical name of the finance and operations entity. This could be different from the public name of the entity as exposed by the OData metadata.
+> The public entity name that is exposed in Dataverse metadata for the finance and operations virtual table uses the physical name of the finance and operations entity. This could be different from the public name of the entity as exposed by the OData metadata.
 
-Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Dataverse must work together to enable the desired user experience. This article explains concepts of relational modeling that can be implemented using virtual entities for finance and operations.
+Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual tables, there will be scenarios where virtual etables and native tables in Dataverse must work together to enable the desired user experience. This article explains concepts of relational modeling that can be implemented using virtual tables for finance and operations.
 
 ## Generating virtual entities
 
-By default, virtual entities for finance and operations apps don't exist in Dataverse. A user must query the catalog entity to view the entities that are available in the linked instance of finance and operations apps. From the catalog, the user can select one or more entities, and then request that Dataverse generate virtual tables in Dataverse for these Finance and Operations entities . This procedure is explained in later sections.
+By default, virtual tables for finance and operations apps don't exist in Dataverse. A user must query the catalog entity to view the entities that are available in the linked instance of finance and operations apps. From the catalog, the user can select one or more entities, and then request that Dataverse generate virtual tables in Dataverse for these Finance and Operations entities . This procedure is explained in later sections.
 
 ## Entity fields
 
-When a virtual entity is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual table in Dataverse. In an ideal case, the total number of fields will be the same in both F&O entities and Dataverse virtual tables, unless there is a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in the finance and operations app.
+When a virtual table is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual table in Dataverse. In an ideal case, the total number of fields will be the same in both F&O entities and Dataverse virtual tables, unless there is a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in the finance and operations app.
 
 The rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
 
@@ -56,7 +56,7 @@ Fields of the *real* and *long* data types in finance and operations apps are mo
 | Dataverse has higher scale.        | Not applicable |
 | Finance and operations apps have higher scale.     | Dataverse shows the finance and operations value, even if it exceeds 100 billion. However, there will be a loss of precision. For example, 987,654,100,000,000,000 is shown in Dataverse as "987,654,099,999,999,900". If the value of this field is edited in Dataverse, Dataverse validation throws an error that the value exceeds the maximum value before that value is sent to the finance and operations app. |
 
-The following data types in finance and operations apps aren't supported in Dataverse. Fields of these data types in finance and operations entities won't be made available in the corresponding virtual entities in Dataverse. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this article.
+The following data types in finance and operations apps aren't supported in Dataverse. Fields of these data types in finance and operations entities won't be made available in the corresponding virtual tables in Dataverse. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this article.
 
 - AnyType
 - BLOB
@@ -94,7 +94,7 @@ Based on this use of the primary field in Dataverse, the primary field for a fin
 Because the primary field in Dataverse is expected to have only one field of the string type, whereas the finance and operations entity key can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
 
 > [!NOTE]
-> After a virtual entity for finance and operations apps is generated in the associated Dataverse environment, the primary key and primary field can't be modified. To change a primary field, you must remove the entity from the Dataverse environment. For information about how to disable virtual entities and remove the entity metadata from the Dataverse environment, see [Disable virtual entities](enable-virtual-entities.md#disable-virtual-entities). After the primary fields are changed in the finance and operations app, you can then re-enable the entity. For information, see [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities).
+> After a virtual table for finance and operations apps is generated in the associated Dataverse environment, the primary key and primary field can't be modified. To change a primary field, you must remove the table from the Dataverse environment. For information about how to disable virtual tables and remove the F&O entity metadata from the Dataverse environment, see [Disable virtual entities](enable-virtual-entities.md#disable-virtual-entities). After the primary fields are changed in the finance and operations app, you can then re-enable the entity. For information, see [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities).
 
 ## Relations
 
@@ -120,31 +120,31 @@ Note that if an error is encountered when any part of a finance and operations v
 
 ### Native entity–to–native entity relationships
 
-Native entity–to–native entity relationships are the standard Dataverse functionality, where relationships are resolved by using the GUID of the related entity. (This GUID is the entity key.) The GUID identifies the unique entity record in the related entity.
+Native table–to–native table relationships are the standard Dataverse functionality, where relationships are resolved by using the GUID of the related entity. (This GUID is the entity key.) The GUID identifies the unique entity record in the related table.
 
 ### Virtual table–to–virtual table relationships
 
-The relationships between two finance and operations virtual entities are driven by the relation metadata in the finance and operations entities. As was explained earlier, these relations are generated as relationships in Dataverse when the virtual entity is generated. As in the behavior for native entities in Dataverse, these relationships use the GUID to identify the unique record of the finance and operations entity key. Semantically, the GUID on the finance and operations virtual entity behaves like the GUID on the native Dataverse table. For information about the implementation of the GUID in finance and operations virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this article.
+The relationships between two finance and operations virtual tables are driven by the relation metadata in the finance and operations entities. As was explained earlier, these relations are generated as relationships in Dataverse when the virtual table is generated. As in the behavior for native tables in Dataverse, these relationships use the GUID to identify the unique record of the finance and operations entity key. Semantically, the GUID on the finance and operations virtual entity behaves like the GUID on the native Dataverse table. For information about the implementation of the GUID in finance and operations virtual tables, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this article.
 
-In the preceding example, the GUID of the related entity is the entity key of Entity B and will be used to build queries to identify a record in the finance and operations app. The relation that Entity A has to Entity B will be used.
+In the preceding example, the GUID of the related table is the entity key of Entity B and will be used to build queries to identify a record in the finance and operations app. The relation that Entity A has to Entity B will be used.
 
 Therefore, in effect, the entity name is the only information that is used in a relation that comes from the finance and operations app. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the finance and operations entity isn't used at all.
 
 ### Virtual table–to–native table relationship
 
-As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Dataverse table (including in native entity–to–native entity relationships) or in a finance and operations virtual entity (including in virtual entity–to–virtual entity relationships). However, consider an example where you want to show finance and operations sales orders for Account A in Dataverse. The query that is sent to the finance and operations app for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Dataverse, because the sales orders must be filtered for a specific account in Dataverse. However, because the finance and operations app doesn't have any information about the GUID of the entity in Dataverse, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that finance and operations understands.
+As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Dataverse table (including in native table–to–native table relationships) or in a finance and operations virtual table (including in virtual table–to–virtual table relationships). However, consider an example where you want to show finance and operations sales orders for Account A in Dataverse. The query that is sent to the finance and operations app for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Dataverse, because the sales orders must be filtered for a specific account in Dataverse. However, because the finance and operations app doesn't have any information about the GUID of the entity in Dataverse, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that finance and operations understands.
 
-Therefore, how can the GUID of the accounts entity in Dataverse be replaced with finance and operations fields in such a way that the query that is sent to the finance and operations app will return the correct list of sales orders?
+Therefore, how can the GUID of the accounts table in Dataverse be replaced with finance and operations fields in such a way that the query that is sent to the finance and operations app will return the correct list of sales orders?
 
-To solve this issue and enable a rich set of scenarios that allows for virtual entity–to–native entity relationships, relationships can be added to this type of entity. The relation will appear as a relationship when the virtual entity is synced.
+To solve this issue and enable a rich set of scenarios that allows for virtual table–to–native table relationships, relationships can be added to this type of entity. The relation will appear as a relationship when the virtual table is synced.
 
-In the above example, the relationship between the SalesOrderHeader virtual entity and the Account native entity should be based on the Account Number and Company fields. By default, the native account entity in Dataverse does not have a company field. For this example, we will add a company lookup field named new_testcompany to the native Account entity.
+In the above example, the relationship between the SalesOrderHeader virtual table and the Account native table should be based on the Account Number and Company fields. By default, the native account entity in Dataverse does not have a company field. For this example, we will add a company lookup field named new_testcompany to the native Account entity.
 
-Next, we add a new key named new_accountcompanyidx, which specifies that (accountnumber, new_testcompany) together represent a unique row in the account entity in Dataverse.
+Next, we add a new key named new_accountcompanyidx, which specifies that (accountnumber, new_testcompany) together represent a unique row in the account table in Dataverse.
 
-The next step is to define this relationship in X++. The following example shows sample X++ code. The names of the fields, index, and mapping information should match the names of the fields and indexes created in Dataverse. In this example, a relationship named “synthaccount” will be created between the virtual SalesorderHeader entity and the native account entity in Dataverse. The mapped fields make up the new_accountcompanyidx index. The display name for the relationship will be @SYS11307. Note the backslash at the start of the display name. This ensures that the label defines the relationship, so that it is appropriately translated.
+The next step is to define this relationship in X++. The following example shows sample X++ code. The names of the fields, index, and mapping information should match the names of the fields and indexes created in Dataverse. In this example, a relationship named “synthaccount” will be created between the virtual SalesorderHeader table and the native account table in Dataverse. The mapped fields make up the new_accountcompanyidx index. The display name for the relationship will be @SYS11307. Note the backslash at the start of the display name. This ensures that the label defines the relationship, so that it is appropriately translated.
 
-The field mapping indicates which field on the virtual entity maps to the field on the native entity. In the field mapping, the key is the virtual entity field, and the value is the native entity field.
+The field mapping indicates which field on the virtual table maps to the field on the native table. In the field mapping, the key is the virtual table field, and the value is the native table field.
 
 ```x++
 [CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', 'accountcompanyidx', '\@SYS11307')]
@@ -160,7 +160,7 @@ The field mapping indicates which field on the virtual entity maps to the field 
         return fieldMapping;
     }
 ```
-The next step is to generate or refresh the virtual entity to get the new relationship. Note that relationships between a virtual entity and a native entity cannot be updated in Dataverse once it is created. The only way to make an update is to physically remove the relationship, refresh the entity, and then physically re-add the relationship in order to resolve the issue.
+The next step is to generate or refresh the virtual table to get the new relationship. Note that relationships between a virtual table and a native table cannot be updated in Dataverse once it is created. The only way to make an update is to physically remove the relationship, refresh the entity, and then physically re-add the relationship in order to resolve the issue.
 
 This relationship looks like a typical GUID-based relationship, but has extra metadata to translate query filters on the relationship into restrictions on the backing fields. The query that is now generated will have a WHERE clause that is based on the fields that finance and operations apps recognize. That query will then return the filtered list of sales orders, as expected.
 

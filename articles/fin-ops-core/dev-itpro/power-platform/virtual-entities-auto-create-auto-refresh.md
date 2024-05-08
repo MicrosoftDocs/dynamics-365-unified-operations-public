@@ -15,10 +15,12 @@ ms.search.validFrom: 2024-05-31
 [!include[banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Auto create features is supported by installing release package PU63 and Auto refresh is supported by installing release package PU62 or PU63.
+> Supported Release Information
+• ## Auto Refresh ## : Supported in PU62 or later by clicking the hotfix link here --> https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=933259 
+• ## Auto Create ##: Supported in PU63 or later by clicking the hotfix link here --> https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=933259 . PU63 supports both Auto create and refresh. 
 
 
-## Architecture
+## Overview
 
 Users kickstart virtualization by marking F&O entities to be relevant for virtualization, setting off automatic synchronization with Dataverse.DBSync is the batch job, which is an integral part of the release package is triggered as a background batch job. DBSync logs its activity in the CDSVirtualEntityList table. Once the DBSync process concludes, the scheduled CDSVirtualEntityRefreshBatch job ensures all changes are successfully propagated to Dataverse. Governed by the CDSVirtualEntityAutoRefresh feature, this job seamlessly synchronizes F&O metadata with Dataverse, eliminating the need for manual intervention for both create and updates to F&O entity. The batch jobs are set to run automatically. The batch job retries automatically up to 3 times in case of failures, with the retry limit fixed and retry attempts are not configurable. If the batch job fails after these attempts, users can check the job log for details on the failure and request for the batch job for auto-create or auto-refresh to be triggered by creating an incident ticket.
 
