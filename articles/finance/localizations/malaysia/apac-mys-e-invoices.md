@@ -60,6 +60,14 @@ Some of the parameters from the **(Preview) Malaysian electronic invoicing (MY)*
 
     ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)
 
+    > [!NOTE]
+    > With the described setup you will be able to issue electronic invoices for the following **posted** source documents:
+    >  - Customer invoices based on sales orders
+    >  - Free text invoices
+    >  - Project invoices
+    >  - Self invoices, based on vendor invoices from foreign vendors
+    >  - Credit notes and debit notes for all the types of invoices described above
+
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes, and close the page.
 
