@@ -1052,7 +1052,7 @@ items:
         - name: Bank account disbursement
           href: human-resources/hr-bank-disburse.md
         - name: Worker contact
-          href: human-resources/hr-worker-contact.md
+          href: human-resources/hr-worker-contact.md 
         - name: HCM Compensation fixed plan 
           href: human-resources/hr-hcm-comp-fix.md
         - name: Job task 
