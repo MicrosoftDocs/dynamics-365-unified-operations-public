@@ -2,26 +2,26 @@
 title: Get started with Electronic invoicing for Malaysia
 description: This article explains how to get started with Electronic invoicing for Malaysia in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 02/13/2024
+ms.date: 05/01/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Malaysia
 ms.author: ikondratenko
-ms.search.validFrom: 2024-06-01
-ms.dyn365.ops.version: AX 10.0.40
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
+ms.search.validFrom: 2024-05-01
+ms.dyn365.ops.version: AX 10.0.39
 ---
 
-# Get started with Electronic invoicing for Malaysia
+# Get started with Electronic invoicing for Malaysia (preview)
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
 This article provides information that will help you get started with Electronic invoicing for Malaysia. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
 After you configure Electronic invoicing, you can generate, digitally sign and submit the XML files of electronic invoices according to the regulatory [requirements](https://www.hasil.gov.my/en/e-invoice/) in Malaysia.
+
+> [!NOTE]
+> The functionality is currently at **Preview** stage. Only generation of electronic invoices XML files is implemented. Further steps such as digital signing and submission to the authorities will be added when the functionality is **Generally Available**.
 
 ![Electronic invoicing workflow in Malaysia](apac-mys-e-invoice-workflow.jpg)
 
@@ -37,42 +37,13 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Obtain a **digital signature certificate** from one of [Malaysian Certification Authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). The certificate will be used for digital signing of generated electronic invoices.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
-- Configure electronic mail settings as described in [Configure an email channel for Office 365 Exchange Online](../global/gs-e-invoicing-configure-email-for-exchange.md).
-
-## Azure Key Valut configuration
-
-Create an Azure Key Vault to store required certificates and secrets issued for you company. For more information, refer to [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
-
-Add the following required elements in the Azure Key Vault:
-
-- The secret for the **Client secret** to establish secure communication to IRBN.
-- The secret for the **Client ID** for secure communication to IRBN.
-- The **certificate** for digital signing of outgoing electronic invoices.
-- The following **secrets** required of electronic mails sending:
-  - For the **User name**
-  - For the **Client ID**
-  - For the **Client secret**
-
-## Electronic invoicing parameters configuration
-
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field select the reference to the Azure Key Valut created in the previous chapter.
-1. In the **SAS token secret** field, select the name of the storage account secret **URL** that must be used to authenticate access to the storage account.
-1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
-1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create a new element the respective **Type** for each certificate or secret described in the previous chapter.
-   > [!NOTE]
-   > The values in the **Name** column should coincide with the names the certificates or secrets described in the previous chapter.
 
 ## Electronic invoicing feature configuration
 
-Some of the parameters from the **Electronic invoicing for Malaysia** Electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
+Some of the parameters from the **(Preview) Malaysian electronic invoicing (MY)** Electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
 
-1. Import the latest version of the **Electronic invoicing for Malaysia** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **(Preview) Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
-1. ====Connection settings=======
-1. ====Email action parameters (if necessary)=====
-................
-
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Electronic document parameters configuration
@@ -80,7 +51,7 @@ Some of the parameters from the **Electronic invoicing for Malaysia** Electronic
 1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
-    > After you import the **Electronic invoicing for Malaysia** Electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes.
+    > After you import the **(Preview) Malaysian electronic invoicing (MY)** Electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
@@ -212,6 +183,7 @@ Make sure that the following Electronic reporting (ER) format configurations are
 
 - Sales invoice (MY)
 - Project invoice (MY)
+- Self invoice (MY)
 
 Follow these steps to complete the configuration.
 
