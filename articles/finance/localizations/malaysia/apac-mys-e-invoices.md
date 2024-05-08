@@ -207,6 +207,8 @@ Follow these steps to complete the configuration.
     > [!NOTE]
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific sales tax code.
 
+1. In the **State** field, select the **Completed** value and then **Save**.
+1. Repeat steps 2 - 8 for the **Project invoice (MY)** and **Self invoice (MY)** format configurations if required.
 
 ## Issue electronic invoices
 
