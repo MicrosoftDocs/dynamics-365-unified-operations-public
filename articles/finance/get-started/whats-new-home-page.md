@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 
-description: This article points to topics that describe the new and changed features in each release of Dynamics 365 Finance
+description: Access topics that describe the new and changed features in each release of Dynamics 365 Finance with a table that provides availability for various versions.
 author: twheeloc
-ms.date: 04/26/2024
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 04/26/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-02-29
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.9
-
 ---
+
 # What's new or changed in Dynamics 365 Finance 
 
 [!include [banner](../includes/banner.md)]
