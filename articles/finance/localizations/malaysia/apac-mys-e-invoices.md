@@ -54,10 +54,10 @@ Some of the parameters from the **(Preview) Malaysian electronic invoicing (MY)*
     > After you import the **(Preview) Malaysian electronic invoicing (MY)** Electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Vendor Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](../media/apac_aus_nzl_einvoice_parameters.jpg)
+    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes, and close the page.
