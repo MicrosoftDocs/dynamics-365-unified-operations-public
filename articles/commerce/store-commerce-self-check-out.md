@@ -32,13 +32,13 @@ The presence of the **Self-checkout** flag drives the following behavior:
 
 ![selfcheckout register.](media/selfcheckout-register.png)
 
-Additionally, if the **Self-checkout** flag at the register is set to **Yes**, the following changes are made in POS to tailor consumer operations:
+If the **Self-checkout** flag at the register is set to **Yes**, the following changes are made in POS to tailor consumer operations:
 
 - Header and side navigation bars are hidden.
 - Navigation to payment methods from totals is disabled.
 
 > [!NOTE]
-> If the store associate or manager has **Manage device** set to **Yes** on the **POS position permissions** form in headquarters, the header and side navigation bars are still visible on the self-checkout register, which allows store associates to perform setup or administrator tasks without having to switch to a cashier register.
+> If **Manage device** is set to **Yes** on the **POS position permissions** form in headquarters, the header and side navigation bars are still visible on the self-checkout register, which allows store associates to perform setup or administrator tasks without having to switch to a cashier register.
 
 ![Permissions.](media/permissions.png)
 
@@ -46,9 +46,10 @@ To restrict specific products from being offered at SCO, in headquarters go to *
 
 ## SCO device activation and kiosk sign-in
 
-To enable only operations that are applicable to consumers on an SCO kiosk, create a new, generic user that has limited permissions and is used to sign in on the kiosk.
+To enable only operations that are applicable to consumers on an SCO kiosk, follow these steps.
 
-A new **SCO kiosk** permission group was created that has limited permissions. Assign this permission group to the new, generic user that you created. The user can then only perform consumer operations such as scan and pay.
+1. Create a new, generic user with limited permissions that's used to sign in to the kiosk.
+1. Assign the **SCO kiosk** permission group to the new user. The **SCO kiosk** permission group has limited permissions, so the new user can only perform consumer operations such as scan and pay.
 
 ### Sign-in process
 
@@ -56,32 +57,31 @@ Either the cashier or the store manager must use their permissions to activate S
 
 To enable shifts for SCO kiosks to be turned on or ended from cashier registers, be sure to set **Allow manage shared shift** to **Yes** for cashier user permissions.
 
-To set up the kiosk and the hardware peripherals during initial setup, your admin can use their user credentials to sign in on the kiosk. Ensure that their screen layout is assigned to their user ID in Headquarters.
+To set up the kiosk and the hardware peripherals during initial setup, your administrator can use their user credentials to sign in on the kiosk. Ensure that their screen layout is assigned to their user ID in headquarters.
 
-## Consumer-facing out-of-box layout
+## Customer-facing out-of-box layout
 
-The shopper-facing layout is configured with limited operations and is available in the demo environment for export and import. Look for the SCO layout in **Screen layouts** under **Retail and Commerce**. Assign the screen layout to the **Registers** setup.
+The customer-facing layout is configured with limited operations and is available in the demo environment for export and import. Look for the SCO layout in **Screen layouts** under **Retail and Commerce**. Assign the screen layout to the **Registers** setup.
 
 ![outofbox layout.](media/outofbox-layout.png)
 
 > [!NOTE]
-> In demo data, Houston - Register 49 is set up as an SCO register, and the SCO layout (**SCO\_POC1**) is assigned to it.
->
-> Additionally, in demo data, user 000815 is configured as an SCO shopper/user, and user 000813 is configured as an SCO manager.
+> - In demo data, **Houston - Register 49** is set up as an SCO register, and the SCO layout (**SCO\_POC1**) is assigned to it.
+> - in demo data, user 000815 is configured as an SCO customer, and user 000813 is configured as an SCO manager.
 
 ## Support for operations
 
-The following consumer operations are supported.
+The following customer operations are supported.
 
 | Operation | Action | Description |
 |---|---|---|
-| Scan and add item to cart | Product sale | This operation lets the customer scan items and add them to the transaction. If an item is restricted from SCO, an error message instructs the customer to ask a cashier for help. |
-| Add rewards number | Add loyalty card | This operation invokes a numpad that the customer can use to enter their loyalty account number. In this way, the customer can be associated with the transaction. |
-| Search item code | Product sale | This operation invokes a numpad that the customer can use to enter the item code of a product. In this way, the customer can add the product to the cart if the bar code is missing or can't be scanned. |
-| Search | Search | This operation invokes a product browsing page where the customer can select products from product categories to add them to the cart. |
-| Pay card | Pay card | This operation enables payment of the transaction by using a credit/debit card only. |
+| Scan and add item to cart | Product sale | Allows a customer to scan items and add them to a transaction. If an item is restricted from SCO, an error message instructs the customer to ask a cashier for help. |
+| Add rewards number | Add loyalty card | Brings up a numeric keypad that a customer can use to enter their loyalty account number to associate themselves with the transaction. |
+| Search item code | Product sale | Brings up a numeric keypad that a customer can use to enter the item code of a product. Customers can then add the product to the cart if the bar code is missing or can't be scanned. |
+| Search | Search | Brings up a product browsing page where the customer can select products from product categories to add them to the cart. |
+| Pay card | Pay card | Enables payment of a transaction using only a credit or debit card. |
 
-After payment is processed, there's an option to print a receipt.
+After payment is processed, an option is presented to print a receipt.
 
 ## Assisted sale workflow
 
