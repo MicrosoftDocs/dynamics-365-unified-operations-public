@@ -16,8 +16,9 @@ ms.search.validFrom: 2024-05-31
 
 > [!IMPORTANT]
 > Supported Release Information
-[Auto Refresh] : Supported in PU62 or later by clicking the hotfix link here --> https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=933259 
-[Auto Refresh] : Supported in PU63 or later by clicking the hotfix link here --> https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=933259 . PU63 supports both Auto create and refresh.
+
+Auto Refresh : Supported in PU62 or later by clicking the hotfix link here --> https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=933259 
+[!Auto Create] : Supported in PU63 or later by clicking the hotfix link here --> https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=933259 . PU63 supports both Auto create and refresh.
 Or click this link 
 
 
