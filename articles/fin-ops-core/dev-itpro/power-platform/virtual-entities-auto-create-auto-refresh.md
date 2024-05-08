@@ -18,6 +18,7 @@ ms.search.validFrom: 2024-05-31
 > Supported Release Information
 
 **Auto Refresh :** Supported platform versions - PU62 (7.0.7120.170) or PU63 (7.0.7198.123) or PU64 (7.0.7279.31) or later 
+
 **Auto Create :** Supported platform versions - PU63 (7.0.7198.123) or PU64 (7.0.7279.31) or later
 
 
