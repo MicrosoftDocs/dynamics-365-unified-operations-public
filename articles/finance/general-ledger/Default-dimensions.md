@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Financial dimensions and posting 
-description: This article explains the components that make up the chart of accounts and how the components work together.
+description: Learn about the components that make up the chart of accounts and how the components work together, including an outline on the order for default dimensions.
 author: rcarlson
-ms.date: 04/29/2024
+ms.author: rcarlson
 ms.topic: article
-# optional metadata
+ms.date: 04/29/2024
 ms.custom: 
   - bap-template
   - evergreen
-
-ms.search.form: LedgerChartofAccounts,DimensionDetails
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerChartofAccounts,DimensionDetails
 ms.dyn365.ops.version: July 2017 update
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Financial dimensions and posting 

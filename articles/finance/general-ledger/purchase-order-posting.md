@@ -1,23 +1,14 @@
 ---
-# required metadata
-
 title: Purchase order posting
-description: This article describes the Purchase order tab of the Inventory posting profiles page.
+description: Learn about the purchase order tab of the inventory posting profiles page, including an overview on fixed receipt price posting.
 author: rachelprofitt
-ms.date: 03/25/2024
+ms.author: raprofit
 ms.topic: overview
+ms.date: 03/25/2024
 ms.reviewer: twheeloc
-
-
-# optional metadata
-
-ms.search.form: InventPosting, InventTrans
-# ROBOTS: 
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventTrans
 ---
 
 # Purchase order posting

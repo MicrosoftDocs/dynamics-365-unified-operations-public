@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Inventory posting profiles
-description: This article provides an overview of inventory posting profiles.  
+description: Learn about inventory posting profiles, including overviews on inventory transactions and configuring an inventory posting profile.
 author: rachelprofitt
-ms.date: 04/29/2024
-ms.topic: overview
-# optional metadata
-
-ms.search.form: InventPosting, InventTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: raprofit
+ms.topic: overview
+ms.date: 04/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventPosting, InventTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ---
 
 # Inventory posting profiles
@@ -90,7 +81,7 @@ generation for a sales or purchase order. Updates to the reference document are 
 | Issue (status)   | For inventory transactions that are issues, this field indicates the status of the issue. For example, a sales order is an issue, and the status might be **On order** or **Sold**.        |
 | Quantity         | The quantity of the inventory transaction. Positive numbers are used for receipts to inventory while negative numbers are used for issues from inventory.                          |
 | Unit             | The unit of measure that the quantity is expressed in.                                                                                   |
-| CW quantity      | The catch weight quantity for the transaction. For more information, go to [About catch weight items](../../dynamicsax-2012/appuser-itpro/about-catch-weight-items.).       |
+| CW quantity      | The catch weight quantity for the transaction.   |
 | CW unit          | The catch weight unit of measure the catch weight quantity is expressed in.                                                         |
 | Cost amount      | The final cost of the inventory transaction. This field is populated when a transaction is financially updated. Depending on the costing methodology, the Inventory close and adjustment process might update this field.                            |
 
