@@ -602,7 +602,7 @@ items:
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage leave requests in Teams  
-        href: hr-teams-leave-app.md
+        href: hr-app.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave
