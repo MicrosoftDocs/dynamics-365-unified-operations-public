@@ -21,7 +21,7 @@ This article provides information that will help you get started with Electronic
 After you configure Electronic invoicing, you can generate, digitally sign and submit the XML files of electronic invoices according to the regulatory [requirements](https://www.hasil.gov.my/en/e-invoice/) in Malaysia.
 
 > [!NOTE]
-> The functionality is currently at **Preview** stage. Only generation of electronic invoices XML files is implemented. Further steps such as digital signing and submission to the authorities will be added when the functionality is **Generally Available**.
+> The functionality is currently at **Preview** stage. Only *generation* of electronic invoices XML files is implemented. Further steps such as digital signing and submission to the authorities will be added when the functionality is **Generally Available**.
 
 ![Electronic invoicing workflow in Malaysia](apac-mys-e-invoice-workflow.jpg)
 
@@ -33,8 +33,8 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 - The primary address of the legal entity must be in Malaysia.
 - Your company must be a registered tax payer in Malaysia and have the following registration numbers: Tax Identification Number (**TIN**), Business registration number (**BRN**), and Sales and Service Tax Number (**SST**).
-- Obtain **Client ID** and **Client secret** in the Inland Revenue Board of Malaysia (**IRBN**) [Lembaga Hasil Dalam Negeri Malaysia (LHDN)](https://www.hasil.gov.my/). These credentials will be used for extablishing of secure connection to the IRBN portal.
-- Obtain a **digital signature certificate** from one of [Malaysian Certification Authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). The certificate will be used for digital signing of generated electronic invoices.
+- *(Not required for Preview)* Obtain **Client ID** and **Client secret** in the Inland Revenue Board of Malaysia (**IRBN**) [Lembaga Hasil Dalam Negeri Malaysia (LHDN)](https://www.hasil.gov.my/). These credentials will be used for extablishing of secure connection to the IRBN portal.
+- *(Not required for Preview)* Obtain a **digital signature certificate** from one of [Malaysian Certification Authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). The certificate will be used for digital signing of generated electronic invoices.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
