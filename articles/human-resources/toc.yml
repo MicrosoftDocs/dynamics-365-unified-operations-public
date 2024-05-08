@@ -602,7 +602,7 @@ items:
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage leave requests in Teams  
-        href: hr-teams-leave-app.md
+        href: hr-app.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave
@@ -1048,13 +1048,13 @@ items:
         - name: Payroll position job
           href: hr-admin-integration-payroll-api-payroll-position-job.md
         - name: Worker 
-          href: human-resources/hr-worker.md
+          href: hr-worker.md
         - name: Bank account disbursement
-          href: human-resources/hr-bank-disburse.md
+          href: hr-bank-disburse.md
         - name: Worker contact
-          href: human-resources/hr-worker-contact.md
+          href: hr-worker-contact.md 
         - name: HCM Compensation fixed plan 
-          href: human-resources/hr-hcm-comp-fix.md
+          href: hr-hcm-comp-fix.md
         - name: Job task 
           href: hr-admin-integration-job-task.md
         - name: Payroll job type 

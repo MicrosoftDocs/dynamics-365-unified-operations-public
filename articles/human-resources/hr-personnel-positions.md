@@ -4,7 +4,7 @@
 title: Positions
 description: This article describes the conceptual elements that a position can include. It also provides examples that show how you can use those elements in your organization.
 author: twheeloc
-ms.date: 06/24/2021
+ms.date: 05/08/2024
 ms.topic: article
 # optional metadata
 
