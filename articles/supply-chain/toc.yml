@@ -2794,6 +2794,8 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
+          - name: Register and track batch/serial numbers for finished products and their components (preview)
+            href: production-control/tracked-components.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
@@ -2988,6 +2990,8 @@
             href: production-control/substitute-items-bom-lines.md
           - name: Registration for manufacturing execution
             href: production-control/registration-manufacturing-execution.md
+          - name: Register and track batch/serial numbers for finished products and their components (preview)
+            href: production-control/tracked-components.md
           - name: Production feedback
             href: production-control/production-feedback.md
           - name: Time and attendance registration
@@ -3878,7 +3882,7 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
-          - name: Set up a mobile device menu item for completing mixed license plates
+          - name: Set up a mobile device menu item for completing mixed license plates (preview)
             href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
@@ -4014,10 +4018,14 @@
           href: warehousing/wms-only-mode-overview.md
         - name: Enable and configure warehouse management only mode
           href: warehousing/wms-only-mode-setup.md
+        - name: Warehouse management only mode with external ERP systems
+          href: warehousing/wms-only-mode-external-erp.md
+        - name: Warehouse management only mode with external shared warehouses
+          href: warehousing/wms-only-mode-external-shared-warehouse.md
         - name: Exchange data between systems
           href: warehousing/wms-only-mode-exchange-data.md
         - name: Work with warehouse management only mode in Supply Chain Management
-          href: warehousing/wms-only-mode-using.md
+          href: warehousing/wms-only-mode-shared-and-external-detail-use.md
         - name: Example of using inbound and outbound shipment orders
           href: warehousing/wms-only-mode-example.md
         - name: Warehouse management only mode frequently asked questions

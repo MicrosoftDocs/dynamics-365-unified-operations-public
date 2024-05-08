@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: twheeloc
-ms.date: 02/22/2024
+ms.date: 05/02/2024
 ms.topic: article
 # optional metadata
 
@@ -36,7 +36,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
-## Features removed or deprecated in the Finance 10.0.39 release
+## Features removed or deprecated in the Finance 10.0.39 release 
 
 ### Sales tax report for Estonia (design based on reporting codes)
 
@@ -48,7 +48,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By February 1, 2025, we plan to no longer support the Sales tax report for Estonia (Estonian report layout). New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By February 1, 2025, the Sales tax report for Estonia (Estonian report layout) will not be supported. New **VAT declaration XML (EE)** and **VAT declaration Excel (EE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
 
 ### Sales tax (Italy) SSRS format, Italian report layout, menu item
 
@@ -64,6 +64,17 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.38 release
 
+### Financial Dimension data model changes  
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced 22 existing fields starting with SystemGenerated* with three new fields in the DimensionAttributeValueCombination table and DimensionAttributeValueSet table. |
+| **Replaced by another feature?**   | N/A |
+| **Product areas affected**         | Developer |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 22, 2023. These 22 fields and related indexes will be removed by December 27, 2024 to improve performance and reduce storage costs. All access to these fields should be internal only to the core Financial dimension API's and no action is required if using our API's. If any direct access to these fields is enabled by a customization, make the necessary changes to remove these direct references asap. The fields will be removed in Dynamics 365 Finance release 10.0.42 in December of 2024.|
+
+
 ### Electronic Invoicing integration using Microsoft Dataverse
 
 | &nbsp;  | &nbsp;  |
@@ -74,6 +85,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Finance 10.0.38 release no longer supports **Electronic Invoicing integration using Microsoft Dataverse**. This feature is no longer required by the new version of the globalization feature for Electronic invoicing in Indonesia. |
 
+
 ### Dataverse solution for Electronic invoicing
 
 | &nbsp;  | &nbsp;  |
@@ -82,7 +94,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports **Dataverse solution for Electronic invoicing**. This plugin is no longer required by the new version of the globalization feature for Electronic invoicing in Indonesia. |
+| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports **Dataverse solution for Electronic invoicing**. This plugin isn't required by the new version of the globalization feature for Electronic invoicing in Indonesia. |
 
 ### TaxYearlyCom_IT, TaxYearlyComReport_IT tables for Italian Yearly tax communication
 
@@ -93,6 +105,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Finance 10.0.38 release no longer supports the `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` tables for Italian Yearly tax communication. They are replaced with new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables for Italian Yearly tax communication. |
+
 
 ## Features removed or deprecated in the Finance 10.0.36 release
 

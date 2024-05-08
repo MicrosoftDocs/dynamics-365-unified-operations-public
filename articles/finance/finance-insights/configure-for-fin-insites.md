@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Configuration for Finance insights
-description: This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
-author: ShivamPandey-msft
-ms.date: 10/11/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 10/11/2023
+ms.reviewer: twheeloc
+ms.search.form: 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
+
 # Configuration for Finance insights
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +31,7 @@ Follow these steps to deploy the environments.
 1. In LCS, create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.21 or later.
 
     > [!NOTE]
-    > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+    > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) <!-- The following link has been moved an no longer works. For more information, see [Environment planning] (/fin-ops-core/fin-ops/imp-lifecycle/environment-planning). -->
 
 2. If you're configuring Finance insights in a sandbox environment, you might have to copy production data to that environment before predictions will work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to adequately train the prediction model. 
 

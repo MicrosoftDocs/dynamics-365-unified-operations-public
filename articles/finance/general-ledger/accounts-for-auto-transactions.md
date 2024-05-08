@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Accounts for automatic transactions
-description: This article explains how accounts for automatic transactions are used for posting through Microsoft Dynamics 365, and provides examples for key accounts for automatic transactions.
+description: Learn how accounts for automatic transactions are used for posting through Microsoft Dynamics 365, with examples for key accounts for automatic transactions.
 author: jchrist
-ms.date: 12/03/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: LedgerSystemAccounts
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 12/03/2021
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-03
+ms.search.form: LedgerSystemAccounts
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Accounts for automatic transactions

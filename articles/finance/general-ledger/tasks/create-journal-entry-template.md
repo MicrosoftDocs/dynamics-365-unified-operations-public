@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a journal entry using template
-description: Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher. 
+description: Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher, including a step-by-step process.
 author: aprilolson
-ms.date: 04/18/2024
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/18/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a journal entry using template
 
 [!include [banner](../../includes/banner.md)]

@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Balance sheet financial reports
-description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
+description: Learn about the default reports for balance sheets. It also describes the building blocks that are associated with these reports.
 author: jinniew
-ms.date: 10/10/2022
-ms.topic: article
-# optional metadata
-
-ms.search.form: FinanicalReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 10/10/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: FinanicalReports
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ---
 
 # Balance sheet financial reports

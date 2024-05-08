@@ -1,14 +1,13 @@
 ---
 title: Use customer-managed keys to control encryption keys for data at rest
-description: This article explains how to set up customer-managed keys for finance and operations environments to control encryption keys for data at rest.
+description: Learn about how to set up customer-managed keys for finance and operations environments to control encryption keys for data at rest.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 07/19/2023
 ms.custom: bap-template
-
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Use customer-managed keys to control encryption keys for data at rest

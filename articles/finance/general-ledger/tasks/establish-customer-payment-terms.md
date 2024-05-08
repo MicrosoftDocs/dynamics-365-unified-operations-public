@@ -1,26 +1,19 @@
 --- 
-# required metadata
-
 title: Establish customer payment terms
-description: This article desribes how to establish customer payment terms and how they're connected to setting up due dates and payment discounts for customers.
+description: Learn how to establish customer payment terms and how they're connected to setting up due dates and payment discounts for customers.
 author: aprilolson
 ms.author: aolson
+ms.topic: how-to
 ms.date: 02/06/2024
-ms.topic: how-to 
-# optional metadata
-
-ms.search.form: PaymDay, PaymTerm, CashDisc   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: PaymDay, PaymTerm, CashDisc
 ms.dyn365.ops.version: Version 7.0.0 
-
 ---
+
 # Establish customer payment terms
 
 Payment terms determine how you manage due dates and payment discounts. Dynamics 365 Finance includes payment methods that businesses often use. You can add any payment methods that your organization prefers.

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Plan your chart of accounts
-description: This article provides information that will help you plan the chart of accounts for your organization.
+description: Learn how to plan the chart of accounts for your organization, which include a structured list of a legal entity's general ledger accounts.
 author: aprilolson
-ms.date: 03/02/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/02/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 ---
 
 # Plan your chart of accounts

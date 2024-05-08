@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Close the general ledger at period end
-description: This article describes the tasks that are typically completed when performing a period closing for General ledger. 
+description: Learn about the tasks that are typically completed when performing a period closing for General ledger, including a list of optional steps for period ends. 
 author: moaamer
-ms.date: 08/01/2017
-ms.topic: article
-# optional metadata
-
-ms.search.form: LedgerPeriodCloseWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 08/01/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerPeriodCloseWorkspace
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ---
 
 # Close the general ledger at period end

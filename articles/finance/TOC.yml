@@ -438,6 +438,8 @@
         href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
         href: accounts-receivable/close-accounts-receivable.md
+      - name: Customer rename data maintenance
+        href: accounts-receivable/customer-data-maintenance.md
       - name: Revenue recognition
         items:
         - name: Revenue recognition overview
@@ -4427,6 +4429,8 @@
         href: business-performance-analytics/install-bpa.md
       - name: Business performance analytics data model
         href: business-performance-analytics/business-performance-analytics-data-model.md
+      - name: Bus matrix
+        href: business-performance-analytics/bus-matrix.md
       - name: Set up security in business performance analytics 
         href: business-performance-analytics/set-up-security.md
       - name: Access business performance analytics
@@ -4486,7 +4490,7 @@
         - name: Configure and use the Excel add-in
           href: business-performance-planning/use-excel-addin.md
         - name: Business performance planning Excel add-in FAQ
-          href: business-performance-planning/use-excel-addin.md
+          href: business-performance-planning/bpp-excel-faq.md
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview
