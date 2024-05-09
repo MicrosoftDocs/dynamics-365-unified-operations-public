@@ -2,13 +2,13 @@
 title: Get started with Electronic invoicing for Malaysia
 description: This article explains how to get started with Electronic invoicing for Malaysia in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 05/01/2024
+ms.date: 05/10/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Malaysia
 ms.author: ikondratenko
-ms.search.validFrom: 2024-05-01
+ms.search.validFrom: 2024-05-10
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
