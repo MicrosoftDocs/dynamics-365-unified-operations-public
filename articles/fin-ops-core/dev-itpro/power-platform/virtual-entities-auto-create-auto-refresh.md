@@ -59,4 +59,4 @@ Each failed entity refresh will be automatically retried up to 3 times. This ret
 
 ## Notes
 * **Refresh Batch Job History Limitation:** With each package deployment, the Refresh batch job is recreated, limiting the availability of refresh job history to the last package deployment only. This behavior persists in the current version. We are aware of this limitation and plan to address it in future releases.
-* **Auto Delete Feature:** Please note that there is currently no Auto Delete feature implemented. If an F&O Data Entity that is already enabled in the linked Dataverse environment is deleted, no action is taken automatically. Administrators are required to manually delete the Virtual Entity in Dataverse.
+* **Auto Delete Feature:** Please note that there is currently no Auto Delete feature implemented. If an F&O Data Entity that is already enabled in the linked Dataverse environment is deleted, no action is taken automatically. Administrators are required to manually delete the Virtual Table in Dataverse.
