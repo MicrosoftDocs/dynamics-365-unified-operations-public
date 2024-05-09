@@ -68,9 +68,9 @@ A checkout module shows an order summary and provides the functionality for plac
 
 | Property name | Values | Description |
 |----------------|--------|-------------|
-| Enable customer reference | **True** or **False** |  If this optional property is set to **True**, then a customer can provide a reference number during checkout, which gets saved to the order header. This feature was added in Commerce version 10.0.40.|
-| Enable customer requisition | **True** or **False** | If this optional property is set to **True**, then a customer can provide a requisition number during checkout, which gets saved to the order header. Customers view this information on their order history and can filter their orders using this number. This feature was added in Commerce version 10.0.40.|
-| Enable cart note | **True** or **False** | If this optional property is set to **True**, then a customer can provide delivery instructions or any other information during checkout. This information gets saved as a note attachment to the order header. This feature was added in Commerce version 10.0.40. |
+| Enable customer reference | **True** or **False** |  If this optional property is set to **True**, then a customer can provide a reference number during checkout, which gets saved to the order header. This feature was added in the Commerce version 10.0.40 release.|
+| Enable customer requisition | **True** or **False** | If this optional property is set to **True**, then a customer can provide a requisition number during checkout, which gets saved to the order header. Customers view this information on their order history and can filter their orders using this number. This feature was added in the Commerce version 10.0.40 release.|
+| Enable cart note | **True** or **False** | If this optional property is set to **True**, then a customer can provide delivery instructions or any other information during checkout. This information gets saved as a note attachment to the order header. This feature was added in the Commerce version 10.0.40 release. |
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
