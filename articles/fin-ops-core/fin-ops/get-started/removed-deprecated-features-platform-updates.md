@@ -51,7 +51,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | To enhance security compliance, support for tokens with an audience claim value other than the environment URL will be removed by April 2024 for non-production environments and by May 2024 for production environments. |
 
-To troubleshoot unauthorized 401 errors, see [Troubleshoot unauthorized 401 errors](/dev-itpro/data-entities/troubleshoot-401.md).
+To troubleshoot unauthorized 401 errors, see [Troubleshoot unauthorized 401 errors](../../dev-itpro/data-entities/troubleshoot-401/).
 
 ### Multitenant apps without a service principal in the Microsoft Entra ID tenant 
 
@@ -63,7 +63,7 @@ To troubleshoot unauthorized 401 errors, see [Troubleshoot unauthorized 401 erro
 | **Deployment option**              | All |
 | **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for non-production environments and by April 2024 for production environments. |
 
-To troubleshoot unauthorized 401 errors, see [Troubleshoot unauthorized 401 errors](/dev-itpro/data-entities/troubleshoot-401.md).
+To troubleshoot unauthorized 401 errors, see [Troubleshoot unauthorized 401 errors](../../dev-itpro/data-entities/troubleshoot-401).
 
 ## Feature deprecation effective March 2024
 
