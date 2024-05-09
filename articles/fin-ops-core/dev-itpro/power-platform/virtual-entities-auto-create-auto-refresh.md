@@ -40,10 +40,6 @@ This also paves way for automatically creating virtual entities in Dataverse for
 * Any designated F&O Data Entity with Dataverse.AutoCreate metadata property set to Yes will automatically be enabled as a Virtual Entity in the linked Dataverse environment.
 * The enabling process is managed by another batch job (CDSVirtualEntityAutoCreateBatch), which runs approximately ninety minutes following the package deployment.
 
-**Auto Delete:**
-
-Note: There is no Auto Delete feature. If an F&O Data Entity that is already enabled in the linked Dataverse environment is deleted, no action is taken automatically. The admin must manually delete the Virtual Entity in Dataverse.
-
 Each failed entity refresh will be automatically retried up to 3 times. This retry limit is fixed and cannot be configured.
 
 ## Monitoring
@@ -58,3 +54,8 @@ Each failed entity refresh will be automatically retried up to 3 times. This ret
     * The "Failure message" field will provide details about the error.
     * The "IsTransientFailure" field will indicate whether the failure is transient and if a retry will be attempted.
 ![Virtual entity metadata sync status form](media/VEMetadataSyncStatus.png)
+
+
+## Notes
+* **Refresh Batch Job History Limitation:** With each package deployment, the Refresh batch job is recreated, limiting the availability of refresh job history to the last package deployment only. This behavior persists in the current version. We are aware of this limitation and plan to address it in future releases.
+* **Auto Delete Feature:** Please note that there is currently no Auto Delete feature implemented. If an F&O Data Entity that is already enabled in the linked Dataverse environment is deleted, no action is taken automatically. Administrators are required to manually delete the Virtual Entity in Dataverse.
