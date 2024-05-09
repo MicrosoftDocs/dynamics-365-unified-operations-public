@@ -37,7 +37,7 @@ This also paves way for automatically creating virtual entities in Dataverse for
 
 **Auto Create:**
 * This feature is activated after Auto Refresh package deployment.
-* Any designated Microsoft Dynamics 365 Finance and Operations Data entity with Dataverse.AutoCreate metadata property set to Yes will automatically be enabled as a Virtual Entity in the linked Dataverse environment.
+* Any designated Microsoft Dynamics 365 Finance and Operations Data entity with "Dataverse.AutoCreate" metadata property set to "Yes" will automatically be enabled as a Virtual Entity in the linked Dataverse environment.
 * The enabling process is managed by another batch job (CDSVirtualEntityAutoCreateBatch), which runs approximately ninety minutes following the package deployment.
 
 Each failed entity refresh will be automatically retried up to 3 times. This retry limit is fixed and cannot be configured.
@@ -53,7 +53,7 @@ Each failed entity refresh will be automatically retried up to 3 times. This ret
     * Personalize the grid within this form by adding the "IsTransientFailure" field for enhanced visibility and troubleshooting.
     * The "Failure message" field will provide details about the error.
     * The "IsTransientFailure" field will indicate whether the failure is transient and if a retry will be attempted.
-    * For entities marked as failed with Refresh Needed unchecked, manual refreshing from Dataverse is required after resolving the issue. Please note that this action must be taken by the user as the system does not automatically address these issues.
+    * For entities marked as failed with Refresh Needed unchecked, manual refreshing from Dataverse is required after resolving the issue. Please note that this action must be taken by the user as the system does not automatically address these issues.  You can refer to [Web service error codes]([https://www.example.com](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/reference/web-service-error-codes)) for understanding any error codes in the failure message.
 ![Virtual entity metadata sync status form](media/VEMetadataSyncStatus.png)
 
 
