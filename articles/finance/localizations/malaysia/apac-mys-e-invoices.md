@@ -24,7 +24,6 @@ After you configure Electronic invoicing, you can generate, digitally sign and s
 > [!NOTE]
 > The functionality is currently at **Preview** stage. Only *generation* of electronic invoices XML files is implemented. Further steps such as digital signing and submission to the authorities will be added when the functionality is **Generally Available**.
 
-![Electronic invoicing workflow in Malaysia](apac-mys-e-invoice-workflow.jpg)
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
