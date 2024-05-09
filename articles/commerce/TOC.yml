@@ -1334,15 +1334,15 @@
             href: add-cart-module.md
           - name: Cart icon module
             href: cart-icon-module.md
-          - name: Checkout module
+          - name: Checkout module (preview)
             href: add-checkout-module.md
           - name: Checkout module error reference codes
             href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
-          - name: Shipping address module
+          - name: Shipping address module (preview)
             href: ship-address-module.md
-          - name: Delivery options module
+          - name: Delivery options module (preview)
             href: delivery-options-module.md
           - name: Pickup information module
             href: pickup-info-module.md
