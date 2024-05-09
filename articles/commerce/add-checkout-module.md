@@ -36,7 +36,7 @@ A checkout module shows an order summary and provides the functionality for plac
 | Checkout heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A heading for the checkout module. |
 | Order summary heading | Heading text | A heading for the order summary section of the module. |
 | Cart line items heading | Heading text | A heading for cart line items that are shown in the checkout module. |
-| Show shipping charges on line item | **True** or **False** | If this property is set to **True**, the shipping charges that are applicable for line items will be shown on cart lines. If the **Header charge with no proration** feature is turned on in Commerce headquarters, the shipping charge will be applied at the header level, not the line level. This feature was added in Commerce version 10.0.13. |
+| Show shipping charges on line item | **True** or **False** | If this property is set to **True**, the shipping charges that are applicable for line items are shown on cart lines. If the **Header charge with no proration** feature is turned on in Commerce headquarters, the shipping charge is applied at the header level, not the line level. This feature was added in Commerce version 10.0.13. |
 
 ## Modules that can be used in the checkout module
 
@@ -69,12 +69,12 @@ A checkout module shows an order summary and provides the functionality for plac
 | Property name | Values | Description |
 |----------------|--------|-------------|
 | Enable customer reference | **True** or **False** |  If this optional property is set to **True**, then a customer can provide a reference number during checkout, which gets saved to the order header. This feature is available as of the Commerce version 10.0.40 release.|
-| Enable customer requisition | **True** or **False** | If this optional property is set to **True**, then a customer can provide a requisition number during checkout, which gets saved to the order header. Customers view this information on their order history and can filter their orders using this number. This feature is available as of the Commerce version 10.0.40 release..|
+| Enable customer requisition | **True** or **False** | If this optional property is set to **True**, then a customer can provide a requisition number during checkout, which gets saved to the order header. Customers view this information on their order history and can filter their orders using this number. This feature is available as of the Commerce version 10.0.40 release.|
 | Enable cart note | **True** or **False** | If this optional property is set to **True**, then a customer can provide delivery instructions or any other information during checkout. This information gets saved as a note attachment to the order header. This feature is available as of the Commerce version 10.0.40 release. |
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
-- **Checkout terms and conditions** – This module shows rich text that contains the terms and conditions and a check box for the customer input. The check box is optional and configurable. The input is captured by the module and can be used as a check before order placement is triggered, but it isn't included in the order summary information. This module can be added to the checkout container, checkout section container, or terms and conditions slot, according to business needs. If it's added to the checkout container or checkout section container slot, it will appear as a step in the checkout process. If it's added to the terms and conditions slot, it will appear near the order placement button.
+- **Checkout terms and conditions** – This module shows rich text that contains the terms and conditions and a check box for the customer input. The check box is optional and configurable. The input is captured by the module and can be used as a check before order placement is triggered, but it isn't included in the order summary information. This module can be added to the checkout container, checkout section container, or terms and conditions slot, according to business needs. If the module is added to the checkout container or checkout section container slot, it appears as a step in the checkout process. If the module is added to the terms and conditions slot, it appears near the order placement button.
 
     The following image shows an example of terms and conditions on a checkout page.
 
