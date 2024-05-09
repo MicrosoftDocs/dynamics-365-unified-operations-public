@@ -25,7 +25,7 @@ Delivery options modules let customers select a mode of delivery such as shippin
 
 For information about how to configure modes of delivery, see [Online channel setup](channel-setup-online.md) and [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-Each delivery mode can have an associated charge. For more information about how to configure charges for an online store, see [Omni-channel Advanced autocharges](omni-autocharges.md).
+Each delivery mode can have an associated charge. For more information about how to configure charges for an online store, see [Omni-channel Advanced autocharges](omni-auto-charges.md).
 
 In Commerce version 10.0.13, the delivery options module was updated to support the **Header charges without proration** and **Shipping as a line charge** features. If proration is turned off, the Commerce workflow doesn't allow a mixed mode of delivery for the items in the cart. In other words, some items are selected for shipment, but others are selected for pickup. The **Header charges without proration** feature requires that the **Enable consistent delivery mode handling in channel** flag is turned on in Commerce headquarters. When the feature flag is turned on, shipping charges are applied at either the header level or the line level, depending on the configuration in Commerce headquarters.
 
