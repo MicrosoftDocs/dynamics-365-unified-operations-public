@@ -53,6 +53,7 @@ Each failed entity refresh will be automatically retried up to 3 times. This ret
     * Personalize the grid within this form by adding the "IsTransientFailure" field for enhanced visibility and troubleshooting.
     * The "Failure message" field will provide details about the error.
     * The "IsTransientFailure" field will indicate whether the failure is transient and if a retry will be attempted.
+    * For the failed entities with Refresh Needed = unchecked, manual refresh would be needed from Dataverse after fixing the issue.
 ![Virtual entity metadata sync status form](media/VEMetadataSyncStatus.png)
 
 
