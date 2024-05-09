@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the petty cash functionality that extends existing localization features as a global feature for all countries and regions. <!-- The following is a broken link -- For more information, see [Petty cash for Eastern Europe and Russia](/localizations/europe/emea-petty-cash). -->
+This article provides information about the petty cash functionality that extends existing localization features as a global feature for all countries and regions. For more information, see [Petty cash for Eastern Europe and Russia](../../localizations/europe/emea-petty-cash). 
 
 You can use the petty cash functionality to automate the receipt and expenditure of cash, the creation of primary documents, and the printing of related reports. 
 
