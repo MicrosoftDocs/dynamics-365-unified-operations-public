@@ -72,7 +72,7 @@ A delivery options module can be added only to a checkout module. For more infor
 
 [Online channel setup](channel-setup-online.md)
 
-[Omni-channel Advanced autocharges](omni-autocharges.md)
+[Omni-channel Advanced autocharges](omni-auto-charges.md)
 
 [Prorate header charges to match sales lines](pro-rate-charges-matching-lines.md)
 
