@@ -174,15 +174,15 @@ Finance and operations enums are modeled as OptionSets in Dataverse. When a virt
 
 ## Company
 
-A finance and operations entity can be bound to a company, or it can be global. The virtual entity for a finance and operations entity that is bound to a company will have a relationship to the cdm\_company entity in Dataverse. The cdm\_company entity is a native entity in Dataverse and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup field is also created in the virtual entity for the related entity (cdm\_company in this case). This lookup field is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A field that is named **Company Code** is also added in the virtual entity. The value is a four-character string. This field must be used in programming.
+A finance and operations entity can be bound to a company, or it can be global. The virtual entity for a finance and operations entity that is bound to a company will have a relationship to the cdm\_company table in Dataverse. The cdm\_company table is a native table in Dataverse and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup field is also created in the virtual table for the related table (cdm\_company in this case). This lookup field is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A field that is named **Company Code** is also added in the virtual entity. The value is a four-character string. This field must be used in programming.
 
 ## Attachments
 
 Attachments in finance and operations entities are supported on a per-entity basis. For example, an invoice header entity will implement an invoice-related attachments entity to [enable attachments via entities](../../fin-ops/organization-administration/configure-document-management.md#how-can-attachments-be-extracted-from-the-system).
 
-Entities of this type will have relations with the corresponding attachments entity in the finance and operations app. Therefore, they will follow the same pattern as the other relations that were discussed earlier. In other words, finance and operations entities that have implemented attachments functionality will also make attachments available by using virtual entities. Finance and operations entities that don't support attachments also won't support attachments when they are virtualized in Dataverse.
+Entities of this type will have relations with the corresponding attachments entity in the finance and operations app. Therefore, they will follow the same pattern as the other relations that were discussed earlier. In other words, finance and operations entities that have implemented attachments functionality will also make attachments available by using virtual tables. Finance and operations entities that don't support attachments also won't support attachments when they are virtualized in Dataverse.
 
-Note that finance and operations virtual entities support only the reading of attachments. They don't currently support the creation, update, or deletion of attachments by using virtual entities.
+Note that finance and operations virtual tables support only the reading of attachments. They don't currently support the creation, update, or deletion of attachments by using virtual tables.
 
 ## OData actions
 
@@ -196,7 +196,7 @@ Input and output parameters of the following types are supported. If an input or
 - Boolean
 - Date/Datetime
 
-Here are some examples of OData actions that are supported in finance and operations entities, but that aren't supported in the corresponding virtual entities in Dataverse:
+Here are some examples of OData actions that are supported in finance and operations entities, but that aren't supported in the corresponding virtual tables in Dataverse:
 
 - RetailStoreTenderTypeTable.queryDistinctTenderTypeIdAndName (a collection of RetailStoreTenderTypeTable entity)
 - DocumentRoutingClientApp.syncPrinters (DocumentRoutingClientApp entity)
@@ -205,17 +205,17 @@ Here are some examples of OData actions that are supported in finance and operat
 
 ## Labels and localization
 
-Labels that are defined on metadata, such as entity names and field names in finance and operations apps, are retrieved when virtual entities are generated in Dataverse. The labels are retrieved by passing the list of language locales that are installed in Dataverse. The finance and operations app returns each label as a list of locale/value sets that are then used to construct a label instance in Dataverse. Only the language packs that exist at the time of entity generation or update are included. Additionally, only labels that the finance and operations app has provided a translation for are included. Any missing translations revert to the label ID, such as **\@SYS:DataEntity**. After a new language pack is installed in Dataverse, existing entities must be updated to pick up the new label information, if labels in that language exist in the finance and operations app.
+Labels that are defined on metadata, such as entity names and field names in finance and operations apps, are retrieved when virtual tables are generated in Dataverse. The labels are retrieved by passing the list of language locales that are installed in Dataverse. The finance and operations app returns each label as a list of locale/value sets that are then used to construct a label instance in Dataverse. Only the language packs that exist at the time of entity generation or update are included. Additionally, only labels that the finance and operations app has provided a translation for are included. Any missing translations revert to the label ID, such as **\@SYS:DataEntity**. After a new language pack is installed in Dataverse, existing entities must be updated to pick up the new label information, if labels in that language exist in the finance and operations app.
 
 Any runtime labels are returned in the language of the current user context. In other words, they are returned in the language that is specified on that user's UserInfo record in the finance and operations app. This behavior also applies to error messages.
 
 ## Error handling
 
-Finance and operations apps create, read, update, and delete (CRUD) business logic on entities and backing tables is run when it's called through the virtual entity in Dataverse. If any exception is thrown on the finance and operations app side, the last message in the error log is returned to Dataverse and is thrown as an InvalidPluginExecutionException exception that contains the message from the finance and operations app. Because the app code runs in the context of the user, the language of the error message is based on the language that is specified on the UserInfo record in the app. If any messages that are written to the finance and operations info log don't result in an exception, they aren't shown in Dataverse.
+Finance and operations apps create, read, update, and delete (CRUD) business logic on entities and backing tables is run when it's called through the virtual table in Dataverse. If any exception is thrown on the finance and operations app side, the last message in the error log is returned to Dataverse and is thrown as an InvalidPluginExecutionException exception that contains the message from the finance and operations app. Because the app code runs in the context of the user, the language of the error message is based on the language that is specified on the UserInfo record in the app. If any messages that are written to the finance and operations info log don't result in an exception, they aren't shown in Dataverse.
 
 ## Calculated/unmapped fields
 
-Calculated and unmapped fields in finance and operations entities are also available in the corresponding virtual entities in Dataverse.
+Calculated and unmapped fields in finance and operations entities are also available in the corresponding virtual tables in Dataverse.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

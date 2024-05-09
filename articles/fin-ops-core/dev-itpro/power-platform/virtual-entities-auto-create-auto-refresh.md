@@ -36,7 +36,7 @@ This also paves way for automatically creating virtual entities in Dataverse for
 * If modifications to an existing Dataverse F&O Virtual Entity are included in the deployed package, an X++ batch job (CDSVirtualEntityRefreshBatch) is triggered. This job executes approximately thirty minutes after the package deployment.
 
 **Auto Create:**
-* This feature activates after Auto Refresh upon package deployment.
+* This feature is activated after Auto Refresh package deployment.
 * Any designated F&O Data Entity with Dataverse.AutoCreate metadata property set to Yes will automatically be enabled as a Virtual Entity in the linked Dataverse environment.
 * The enabling process is managed by another batch job (CDSVirtualEntityAutoCreateBatch), which runs approximately ninety minutes following the package deployment.
 
