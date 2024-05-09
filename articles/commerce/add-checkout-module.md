@@ -1,8 +1,8 @@
 ---
-title: Checkout module
+title: Checkout module (preview)
 description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-ms.date: 01/30/2023
+ms.date: 05/09/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -12,9 +12,10 @@ ms.search.validFrom: 2019-10-31
 
 ---
 
-# Checkout module
+# Checkout module (preview)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to add a checkout module to a page and set the required properties.
 
@@ -67,10 +68,9 @@ A checkout module shows an order summary and provides the functionality for plac
 
 | Property name | Values | Description |
 |----------------|--------|-------------|
-| Enable customer reference | **True** or **False** |  If this optional property is set to True, then the customer can provide a reference number during checkout. This gets saved to the order header. This feature was added in Commerce version 10.0.40.|
-| Enable customer requisition | **True** or **False** | If this optional property is set to True, then the customer can provide a requisition number during checkout. This gets saved to the order header. The customer view this information on their order history and can filter their orders using this number. This feature was added in Commerce version 10.0.40.|
-| Enable cart note | **True** or **False** | If this optional property is set to True, then the customer can provide delivery instructions or any other information during checkout. This information gets saved as a Note attachment to the order header.This feature was added in Commerce version 10.0.40. |
-
+| Enable customer reference | **True** or **False** |  If this optional property is set to **True**, then a customer can provide a reference number during checkout, which gets saved to the order header. This feature was added in Commerce version 10.0.40.|
+| Enable customer requisition | **True** or **False** | If this optional property is set to **True**, then a customer can provide a requisition number during checkout, which gets saved to the order header. Customers view this information on their order history and can filter their orders using this number. This feature was added in Commerce version 10.0.40.|
+| Enable cart note | **True** or **False** | If this optional property is set to **True**, then a customer can provide delivery instructions or any other information during checkout. This information gets saved as a note attachment to the order header. This feature was added in Commerce version 10.0.40. |
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
