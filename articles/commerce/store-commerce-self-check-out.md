@@ -1,6 +1,6 @@
 ---
 title: Enable self-checkout in the Store Commerce app (preview)
-description: This article describes how to enable self-checkout and related features in the Microsoft Dynamics 365 Commerce Store Commerce app (preview).
+description: This article describes how to enable self-checkout and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
@@ -15,6 +15,9 @@ ms.reviewer: johnmichalak
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes how to enable self-checkout and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
+
+> [!IMPORTANT]
+> For the self-check out feature to function, you must be running Commerce version 10.0.40, Commerce Scale Unit (CSU) version 9.50 (10.0.40), and Store Commerce version 10.0.40.
 
 Point of sale (POS) customers can reuse existing workflows to turn on kiosk-based self-checkout (SCO) in an existing Store Commerce app. Customers can then use SCO terminals to scan or search for items, add items to a shopping cart, and pay for the items by using a credit card or debit card.
 
