@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Accounts receivable posting
-description: This article explains how postings are configured in Accounts receivable and provides examples of posting configurations.
+description: Learn how postings are configured in Accounts receivable with examples of posting configurations and an outline on posting accounts for methods of payment.
 author: rcarlson
-ms.date: 12/03/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: CustPosting, CustPaymMode, CustCashDiscount, CommissionPosting, MarkupTable\_Cust, CustPaymFee
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 04/29/2024
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-03
+ms.search.form: CustPosting, CustPaymMode, CustCashDiscount, CommissionPosting, MarkupTable\_Cust, CustPaymFee
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Accounts receivable posting

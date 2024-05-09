@@ -1,17 +1,13 @@
 ---
-# required metadata
-
 title: Install Business performance analytics
-description: This article describes how to install Business performance analytics
+description: Learn how to install Business performance analytics, including a step-by-step installation process and an outline on accessing reports in Business performance analytics.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 12/12/2023
 ms.topic: conceptual
+ms.date: 12/12/2023
 ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
-ms.audience: administrator
 ---
 
 # Install Business performance analytics

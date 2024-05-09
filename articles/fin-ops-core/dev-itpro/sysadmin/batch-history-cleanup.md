@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Clean up the batch job history 
-description: This article provides information about how to clean up the batch job history.
+description: Learn about how to clean up the batch job history, including an overview on batch job history clean-up and a step-by-step process.
 author: snagamalla
-ms.date: 02/09/2024
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: snagamalla
+ms.topic: article
+ms.date: 05/02/2024
+ms.reviewer: johnmichalak 
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-03-08
+ms.search.form:
 ms.dyn365.ops.version: Platform update 25
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Clean up the batch job history
@@ -33,9 +24,6 @@ Two pages added to the **System administration** module make it easy to clean up
 
 - System administration > Periodic tasks > Batch job history clean-up
 - System administration > Periodic tasks > Batch job history clean-up (custom)
-
-> [!NOTE]
-> We recommend that you regularly clean up the batch job history, and that you do this cleanup outside of business hours.
 
 ## Batch job history clean-up
 
@@ -56,6 +44,10 @@ The custom batch job lets you apply other filtering, based on criteria such as s
 4. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
 5. Select **OK**.
 
+## Best Practice
 
+- We recommend that you regularly clean up the batch job history, and that you do this cleanup outside of business hours.
+- It's advisable to avoid running multiple Batch History Cleanup Jobs simultaneously. This precaution is necessary because simultaneous runs might lead to database deadlocks, especially considering the typically high volume of data involved.
+- If you need to run multiple tasks within the **Batch job history clean-up (custom)**, each with different criteria, it's best to run them one after another in sequence. Running these tasks concurrently could result in deadlocks, as the cleanup processes might overlap, particularly when deleting large amounts of data from History tables.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

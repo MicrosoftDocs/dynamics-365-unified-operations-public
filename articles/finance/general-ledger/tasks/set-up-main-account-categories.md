@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up main account categories
-description: This article explains how to set up main account categories in Dynamics 365 Finance. 
+description: Learn how to set up main account categories in Dynamics 365 Finance, including outlines on creating a main account category and link main accounts. 
 author: aprilolson
-ms.date: 04/18/2024
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: MainAccountCategory, MainAccountCategoryLink   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/18/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: MainAccountCategory, MainAccountCategoryLink
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up main account categories
 
 [!include [banner](../../includes/banner.md)]

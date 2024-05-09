@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Financial tags 
-description: This article describes financial tags.
+description: Learn about financial tags, including outlines on setup, the process of creating financial tags, and entering financial tag values on transactions.
 author: kweekley
-ms.date: 09/23/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 09/23/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-23
+ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: 10.0.16
-
 ---
 
 # Financial tags

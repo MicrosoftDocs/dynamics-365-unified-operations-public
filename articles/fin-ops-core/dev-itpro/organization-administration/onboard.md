@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: Onboard an implementation project
-description: This article describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS), including an overview of the Microsoft 365 Admin Center.
 author: OlgaPetrovaFT
-ms.date: 06/21/2022
+ms.author: johnmichalak 
 ms.topic: article
-# optional metadata
-
-# ms.search.form:  
+ms.date: 06/21/2022
+ms.custom:
+ms.reviewer: johnmichalak 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: olpetrov
 ms.search.validFrom: 2018-01-31
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update
 ---
 

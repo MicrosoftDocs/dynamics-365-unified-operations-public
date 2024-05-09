@@ -1,7 +1,7 @@
 items:
 - name: Dynamics 365 Human Resources
   items:
-  - name: Dynamics 365 Human Resources
+  - name: Dynamics 365 Human Resources 
     items:
     - name: Dynamics 365 Human Resources documentation
       href: index.yml
@@ -31,14 +31,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
-        - name: Human Resources 10.0.39        
+        - name: Human Resources 10.0.40
+          href: ./get-started/hr-whats-new-10-0-40.md
+        - name: Human Resources 10.0.39 
           href: ./get-started/hr-whats-new-10-0-39.md  
-        - name: Human Resources 10.0.38         
+        - name: Human Resources 10.0.38      
           href: ./get-started/hr-whats-new-10-0-38.md   
-        - name: Human Resources 10.0.37     
-          href: ./get-started/hr-whats-new-10-0-37.md  
-        - name: Human Resources 10.0.36      
-          href: ./get-started/hr-whats-new-10-0-36.md                       
+        - name: Human Resources 10.0.37        
+          href: ./get-started/hr-whats-new-10-0-37.md   
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -602,7 +602,7 @@ items:
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage leave requests in Teams  
-        href: hr-teams-leave-app.md
+        href: hr-app.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave
@@ -1047,6 +1047,14 @@ items:
           href: hr-admin-integration-payroll-api-payroll-position.md
         - name: Payroll position job
           href: hr-admin-integration-payroll-api-payroll-position-job.md
+        - name: Worker 
+          href: hr-worker.md
+        - name: Bank account disbursement
+          href: hr-bank-disburse.md
+        - name: Worker contact
+          href: hr-worker-contact.md 
+        - name: HCM Compensation fixed plan 
+          href: hr-hcm-comp-fix.md
         - name: Job task 
           href: hr-admin-integration-job-task.md
         - name: Payroll job type 

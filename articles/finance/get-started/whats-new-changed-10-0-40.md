@@ -1,17 +1,15 @@
 ---
-# required metadata
 title: What's new or changed in Dynamics 365 Finance 10.0.40 (June 2024)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.40 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.40 preview release distributed in June 2024.
 author: twheeloc
-ms.date: 4/26/2024
 ms.author: twheeloc
 ms.topic: faq
+ms.date: 4/26/2024
 ms.custom:   
   - bap-template
   - evergreen
 ms.reviewer: twheeloc
 ms.search.region: Global
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.40 (June 2024)
@@ -67,7 +65,7 @@ This section contains a table that lists the enhancements that are included in t
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
+Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
 
 ### Bug fixes
 

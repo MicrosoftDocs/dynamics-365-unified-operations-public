@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Production support and monitoring
-description: This article describes the types of support that are involved in the project lifecycle and best practices for monitoring your environments.
+description: Learn about the types of support that are involved in the project lifecycle and best practices for monitoring your environments.
 author: PedroTubal
-ms.date: 10/12/2021
+ms.author: johnmichalak
 ms.topic: article
-# optional metadata
-
-# ms.search.form:
-audience: IT Pro
-# ms.devlang: 
+ms.date: 10/12/2021
+ms.custom: NotInTOC
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry:
-ms.author: v-petbal
 ms.search.validFrom: 2021-03-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Production support and monitoring

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Priority-based batch scheduling
-description: This article provides information about the functionality for priority-based batch scheduling.
+description: Learn about the functionality for priority-based batch scheduling, including outlines on batch groups and batch jobs.
 author: matapg007
-ms.date: 03/18/2024
+ms.author: johnmichalak
 ms.topic: conceptual
+ms.date: 03/18/2024
 ms.custom: 
   - bap-template
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: matgupta
 ms.search.validFrom: 2019-10-29
+ms.search.form: 
 ms.dyn365.ops.version: Platform Update31
-
 ---
 
 # Priority-based batch scheduling 
@@ -199,7 +189,8 @@ In Platform update 58, you can turn on the **Batch concurrency control** feature
 > [!IMPORTANT]
 > - This feature is available with version 10.0.34 (PU 58) as **(Preview) Batch concurrency control** .
 > - This feature is generally available starting with 10.0.38 (PU 62).
-> - This feature is enabled by default for all new instances with version 10.0.39 (PU 63).
+> - This feature is enabled by default with version 10.0.39 (PU 63).
+> - This feature is mandatory starting with version 10.0.41 (PU 65).
 
 ### Prerequisites
 
@@ -210,7 +201,6 @@ As a prerequisite, the **Batch Priority Based Scheduling** feature must be enabl
 Batch jobs are a common way to perform background tasks, such as data processing, reporting, or integration. However, if too many batch tasks are running at the same time, they can cause performance issues or resource contention. For example, one of your batch jobs runs every hour and processes a large amount of data. Another batch job runs every 15 minutes and has high priority. Without batch concurrency control, you can't ensure that the high-priority batch job gets enough resources to run smoothly and in a timely manner.
 
 > [!NOTE]
-> - This feature is available as of version 10.0.34.
 > - If concurrency control isn't required, the **Max concurrency** field on the **Batch group** page should be set to **0** (zero).
 > - The feature isn't recommended for batch jobs that have more than 5,000 concurrent, ready-to-run tasks, because it might degrade performance of batch scheduling.
 > - If the **Max concurrency** value exceeds the total number of batch threads that are available in the environment, the feature is ineffective.

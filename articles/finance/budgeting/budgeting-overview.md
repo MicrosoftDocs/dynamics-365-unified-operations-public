@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Budgeting home page
-description: This article provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
-author: panolte
-ms.date: 03/28/2024
+description: Learn about the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-
-
-# optional metadata
-
-ms.search.form: BudgetPlanningWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 03/28/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetPlanningWorkspace
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ---
 
 # Budgeting home page
