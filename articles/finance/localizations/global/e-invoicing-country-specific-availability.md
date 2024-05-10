@@ -62,5 +62,6 @@ The following table shows the Electronic invoicing features that are currently i
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
+| Malaysia | (Preview) Malaysian electronic invoicing (MY) | Sales invoices, project invoices, and self invoices |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 | Poland | Polish KSeF submission (PL) | Sales invoices, project invoices, and advance invoices |
