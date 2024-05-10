@@ -96,7 +96,7 @@ If you select **By quantity** in the **Calculation origin** field, the tax amoun
 For example, the tax code is set up as 1.20 per unit. On a sales invoice line, 25 units of an item are sold. In this case, the tax amount is calculated as 25 × 1.20 = 30.00.
 
 > [!NOTE] 
-> Unit conversion isn't supported for **By quantity** calculation. However, you can create multiple tax codes in RCS for different units and maintain converted tax rates by quantity.
+> If the transaction is entered in a unit other than the unit that's specified on the tax code, the unit is automatically converted based on the unit conversions that are set up on the **Unit conversions** page. This function is available starting from the 10.0.40 update.  
 
 ### By margin
 
