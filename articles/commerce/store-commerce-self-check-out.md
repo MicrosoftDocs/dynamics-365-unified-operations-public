@@ -19,7 +19,7 @@ This article describes how to enable self-checkout (SCO) and related features in
 > [!IMPORTANT]
 > To enable the self-checkout and related features in the Store Commerce app, you must be running Commerce version 10.0.40, Store Commerce version 10.0.40, and Commerce Scale Unit (CSU) version 9.50.
 
-Point of sale (POS) customers can reuse existing workflows to turn on kiosk-based self-checkout (SCO) in an existing Store Commerce app. Customers can then use SCO terminals to scan or search for items, add items to a shopping cart, and pay for the items by using a credit card or debit card.
+Point of sale (POS) customers can reuse existing workflows to turn on kiosk-based SCO in an existing Store Commerce app. Customers can then use SCO terminals to scan or search for items, add items to a shopping cart, and pay for items by using a credit card or debit card.
 
 ## Enable the SCO feature
 
@@ -36,13 +36,13 @@ To configure SCO for a register, in headquarters go to the register setup under 
 
 The enabling of the **Self-checkout** feature results in the following behavior:
 
-- **Enable task and test recorder** is set to **No**.
+- **TASK AND TASK RECORDERS** option **Enable task and test recorder** is set to **No**.
 - **HARDWARESTATION** options **Select upon tendering** and **Select at start of transaction** are set to **No**.
 - **AUTO LOGOFF/LOCK** option **After each transaction** is set to **No**.
 
 ![selfcheckout register.](media/selfcheckout-register.png)
 
-When the **Self-checkout** option at the register is set to **Yes**, the following changes are made in POS to tailor consumer operations:
+When the **Self-checkout** option at the register is set to **Yes**, the following changes are made in POS for consumer operations:
 
 - Header and side navigation bars are hidden.
 - Navigation to payment methods from totals is disabled.
