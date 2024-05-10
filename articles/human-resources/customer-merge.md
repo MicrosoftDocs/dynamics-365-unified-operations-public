@@ -43,34 +43,34 @@ The decision to proceed with customer merge post-migration is discretionary and 
 ### Would there be any cost benefit if we consolidate HR into F&O and operate as a unified system?
 Integrating HR functions into F&O operations can lead to streamlined processes and improved efficiency, such as streamlined processes and enhanced efficiency. By way of example, consider the integration between Finance and HR systems that some customers currently maintain. Following the merge, this integration could be eliminated, simplifying management. Additionally, benefits include easier control over Application Lifecycle Management, a single LCS project, elimination of separate versioning and branches for different environments, reduced overhead in managing updates and deployments for two separate systems, and seamless data integration across platforms.
  
-## We have one Sandbox in the HR project and two Sandboxes in Finance project. Will we end up with three Sandboxes in total after customer merge?
+### We have one Sandbox in the HR project and two Sandboxes in Finance project. Will we end up with three Sandboxes in total after customer merge?
 No, in this scenario, you can only have two Sandboxes at the conclusion of the single LCS project. The Sandbox from the HR environment can not be carried over to the Finance project.
 
-## How can Microsoft support the customer merge process?
+### How can Microsoft support the customer merge process?
 If you face any obstacles while merging customers, the best course of action is to initiate a support ticket to request assistance from Microsoft. Our support engineers will provide professional assistance for your problem.
 
-## What tool does Microsoft offer for customer merge?
+### What tool does Microsoft offer for customer merge?
 Microsoft offers extra Data entities to facilitate customer merging, with the Data Management Framework (DMF) serving as the primary standard tool for data migration. To initiate the process, identify and compile a list of applicable data entities. In cases where the out-of-the-box (OOB) Data entities are inadequate, customized Data entities may need to be explored.
 
-## Can the application URL be modified after merging?
+### Can the application URL be modified after merging?
 No, the target environment's name and link remain unchanged unless you redeploy the instance.
 
-## After the merge, what changes occur in the HR environment? Is it automatically deleted?
+### After the merge, what changes occur in the HR environment? Is it automatically deleted?
 Upon completing the customer merge, it's your responsibility to deprovision both the Sandbox and Production environments from source environment, and the related Dataverse environment. Refer to [Delete a production finance and operations apps environment](../fin-ops-core/dev-itpro/deployment/delete-production-environment.md), you can proceed it with the LCS project.
 
-## Should I need to reinstall the Expense mobile app after merging into Finance environment?
+### Should I need to reinstall the Expense mobile app after merging into Finance environment?
 Yes, if the target environment lacks the relevant mobile apps, such as the Dynamics 365 Expense Management app, it's necessary to install all required apps in the merged environment after the customer merge.
  
-## Can I limit system administration access after merging, such that only HR administrators can access HR data?
+### Can I limit system administration access after merging, such that only HR administrators can access HR data?
 No, individuals with the System Administrator security role maintain unrestricted access to the entire system, without module-specific limitations.
 
-## How should attachments for employee data be managed in a merged infrastructure while ensuring data security, especially considering the security protocols previously applied to separate infrastructures?
+### How should attachments for employee data be managed in a merged infrastructure while ensuring data security, especially considering the security protocols previously applied to separate infrastructures?
 Security is paramount in this scenario. It's essential to configure access roles meticulously, granting permissions only to necessary individuals for employee-related forms. However, it's crucial to note that system administrators retain access to all data. If there are concerns regarding data security, merging infrastructures may not be advisable.
 
-## How should we approach merging HR data into existing FinOps data that already contains basic worker records? How do we handle merging workers and other elements like positions?
+### How should we approach merging HR data into existing FinOps data that already contains basic worker records? How do we handle merging workers and other elements like positions?
 This is a key consideration. If HR master data is already established, there's typically no need to duplicate efforts. However, a thorough analysis is crucial to determine which data sets need to merge and any incremental updates that may be necessary.
 
-## What are challenges and considerations during the customer merge process?
+### What are challenges and considerations during the customer merge process?
 Several significant challenges and considerations emerge during the customer merge process, including:
 - Global Address Book (GAB)
 - Number Sequence
