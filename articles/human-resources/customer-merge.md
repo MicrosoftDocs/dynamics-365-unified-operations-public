@@ -4,7 +4,7 @@
 title: Human Resources customer merges FAQ
 description: This article answers frequently asked questions about the merge of Microsoft Dynamics 365 Human Resources to the finance and operations merged infrastructure. 
 author: Edison-MS
-ms.date: 04/24/2024
+ms.date: 05/10/2024
 ms.topic: article
 # optional metadata
 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ## What is customer merge?
 
-Customer merge refers to the process wherein customers migrate their Human Resources environments from standalone infrastructure to the Finance and Operations infrastructure as part of an infrastructure merge. If customers already have an existing Finance and Operations system, customers have the flexibility to choose between maintaining two separate environments or consolidating them into one system.
+Customer merge refers to the process wherein customers migrate their Human Resources environments from standalone infrastructure to the Finance and operations infrastructure as part of an infrastructure merge. If customers already have an existing Finance and operations system, customers have the flexibility to choose between maintaining two separate environments or consolidating them into one system.
  
 Customer merge entails the following:
 - An optional step
@@ -35,12 +35,12 @@ Customer merge entails the following:
 - Manual process initiated by the customer
 - Data integration with existing finance and operations environment
 
-## General questions about customer merge
+### General questions about customer merge
 
-## What is the recommendation from Microsoft?
+### What is the recommendation from Microsoft?
 The decision to proceed with customer merge post-migration is discretionary and lies with the customer and business stakeholders. There is no strict timeline imposed for this process. Microsoft advises customers to conduct a thorough assessment, considering organizational objectives and weighing the pros and cons before making a decision.
   
-## Would there be any cost benefit if we consolidate HR into F&O and operate as a unified system?
+### Would there be any cost benefit if we consolidate HR into F&O and operate as a unified system?
 Integrating HR functions into F&O operations can lead to streamlined processes and improved efficiency, such as streamlined processes and enhanced efficiency. By way of example, consider the integration between Finance and HR systems that some customers currently maintain. Following the merge, this integration could be eliminated, simplifying management. Additionally, benefits include easier control over Application Lifecycle Management, a single LCS project, elimination of separate versioning and branches for different environments, reduced overhead in managing updates and deployments for two separate systems, and seamless data integration across platforms.
  
 ## We have one Sandbox in the HR project and two Sandboxes in Finance project. Will we end up with three Sandboxes in total after customer merge?
