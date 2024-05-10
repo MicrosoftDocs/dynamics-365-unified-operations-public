@@ -3,7 +3,7 @@ title:  What's new or changed in Dynamics 365 Human Resources (June 2024)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.40 preview release.
 author: twheeloc
 ms.author: twheeloc
-ms.date: 04/26/2024
+ms.date: 05/10/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
