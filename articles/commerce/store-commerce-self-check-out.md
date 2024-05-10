@@ -69,7 +69,7 @@ To set up the kiosk and the hardware peripherals during initial setup, an admini
 
 ## Configure the out-of-box customer-facing SCO layout
 
-The out-of-box customer-facing SCO layout is configured with limited operations and is available in the demo environment for export and import. 
+The out-of-box customer-facing SCO layout available in the demo environment for export and import is configured with limited operations, as shown in the following example image. 
 
 ![Out-of-box customer-facing SCO layout](media/outofbox-layout.png)
 
@@ -79,7 +79,7 @@ To use the out-of-box customer-facing SCO layout, go to **Retail and Commerce \>
 > - In demo data, **Houston - Register 49** is set up as an SCO register, and the SCO layout (**SCO\_POC1**) is assigned to it.
 > - In demo data, user **000815** is configured as an SCO customer, and user **000813** is configured as an SCO manager.
 
-## Support for operations
+## Supported customer operations
 
 The following customer operations are supported.
 
@@ -110,5 +110,3 @@ The **Call for assistance** operation provides support for cashier assistance du
     - **Discount amount** – Apply a discount amount to the line item.
 - **Logout** – This operation allows the store associate sign out of the kiosk.
 - **Cancel** – This operation allows the store associate cancel out of the **Call for assistance** operation.
-
-![Call for assistance flyout menu](media/Call-for-assistance.png)
