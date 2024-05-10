@@ -90,6 +90,8 @@ Your one-box development environment can integrate with your Microsoft Entra ten
 - Import users.
 - Import Microsoft Entra ID groups.
 - Import Electronic reporting (ER) configurations. For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+- Report execution using WCF service.
+- Data Task Automation.
 
 To use these capabilities, you must configure certificate access to your tenant.
 
@@ -115,10 +117,11 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. In the **wif.config** file under **K:\\AosService\\webroot\\**, replace the value of the `audienceUris` key with the application ID/client ID.
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId.
     ```
     <securityTokenHandlerConfiguration>
     <audienceUris>
+    <add value="spn:00000015-0000-0000-c000-000000000000" />
     <add value="spn:<your application ID>" />
     </audienceUris>
     ```
