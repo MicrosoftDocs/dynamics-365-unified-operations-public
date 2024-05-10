@@ -64,7 +64,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     | Service Fiscal document | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
    | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
    | LedgerJournalTrans | <p>**Mapping name:** Prepayment invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Customer prepayments</p><p>**Configuration:** Invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
-   | VendInvoiceJour | <p><b>Mapping name:</b> ... context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> ...</p><p><b>Configuration:</b> ... mapping</p> | Electronic invoicing for Malaysia |
+   | VendInvoiceJour | <p><b>Mapping name:</b> Self invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Self invoice</p><p><b>Configuration:</b> Self invoice model mapping</p> | Electronic invoicing for Malaysia |
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
 
