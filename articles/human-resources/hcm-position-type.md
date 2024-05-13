@@ -2,7 +2,7 @@
 # required metadata
 
 title: HCM position type entity
-description: This article provides details and an example query for the Job type entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Position type entity in Microsoft Dynamics 365 Human Resources.
 author: jcart
 ms.date: 05/10/2024
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Job type entity (payintv1hcmpositiontypeentities) for Dynamics 365 Human Resources.
+This article describes the Job postition type entity (payintv1hcmpositiontypeentities) for Dynamics 365 Human Resources.
 
 Physical name: mserp_payintv1hcmpositiontypeentities
 
