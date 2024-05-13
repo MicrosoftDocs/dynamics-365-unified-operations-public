@@ -39,7 +39,7 @@ Changes made in Microsoft Dynamics 365 Finance and Operations on Data entity are
 * In Microsoft Dynamics 365 Finance and Operations, the user has to set "Dataverse.AutoCreate" metadata property value to "Yes" to enable automatic creation of Virtual Table in the linked Dataverse environment.
 * The automatic virtual table creation in Dataverse from F&O is managed through a batch job (CDSVirtualEntityAutoCreateBatch). This batch is triggered ninety (90) minutes after successful deployment of feature package.
 
-** Failure ** arising due to automatic create or refresh has an automatic retry process. The automatic retry is currently fixed at 3 times and cannot be configured. 
+**Failure** due to automatic create or automatic refresh batch job is addressed through an automatic retry process. Auto create and Auto refresh batch jobs are set to retry 3 times after a failure. The retry setting is fixed and cannot be modified or configured. 
 
 ## Monitoring
 
