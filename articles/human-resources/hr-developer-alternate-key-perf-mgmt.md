@@ -16,39 +16,41 @@ ms.custom:
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## List of fields
-To enable the set-based operations on data entities for the below list of tables in performance management, below is a list of fields as alternate keys as part of Dynamics 365 Human Resources release 10.0.40 or 
-later.
+The following table shows the fields that are available as alternate keys in Microsoft Dynamics 365 Human Resources release 10.0.40 and later to enable set-based operations on data entities for specific tables in performance management.
 
-|Table |                                                 Fields|
-|-----|-------|
-|HcmPerfJournalLinks                 |     LinkId|
-|HcmPerfJournalComment            | CommentId|
-|HcmPerfJournal                    |           EntryId|
-|HcmDiscussionTemplate              |  TemplateId|
+| Table | Field |
+|---|---|
+| HcmPerfJournalLinks | LinkId |
+| HcmPerfJournalComment | CommentId |
+| HcmPerfJournal | EntryId |
+| HcmDiscussionTemplate | TemplateId |
 
-### Upgrade
+## Upgrade error
 
-While upgrading the environments, some of the environments might encounter errors due to customization or old demo data. 
-**Exception: System.InvalidOperationException: Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name**.
+When you upgrade the environments, some of them might encounter the following error because of customizations or old demo data:
 
->[!Note]
-> Uniqueness is enforced for these fields as part of previous upgrades. Due to customizations, backend database interventions, or very old demo data, fields containing non-unique records result in DBsync errors and
-> the upgrade fails.  
+> Exception: System.InvalidOperationException: Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name.
+
+> [!NOTE]
+> Uniqueness for the preceding fields is enforced as part of previous upgrades. Because of customizations, back-end database interventions, or very old demo data, fields that contain non-unique records lead to DBsync errors and upgrade failure.
 
 ### Mitigation
-To avoid the error, follow these steps before upgrading the environment. 
-1.	Go to **Batch job** or go to **System administration > Inquiries > Batch job**.
-2.	Filter the **Job description** with each of following for specific tables:
-	  - HcmPerfJournalLinksUpdateLinkIds.updateLinkIds
+
+To avoid the error, follow these steps before you upgrade the environments.
+
+1. Go to **Batch job**, or go to **System administration** \> **Inquiries** \> **Batch job**.
+2. Filter **Job description** by each of the following values for specific tables:
+
+    - HcmPerfJournalLinksUpdateLinkIds.updateLinkIds
     - HcmPerfJournalCommentUpdateCommentIds.updateCommentIds
     - HcmPerfJournalUpdateEntryIds.updateEntryIds
     - HcmDiscussionTemplateUpdateTemplateIds.updateTemplateIds
 
->[!Note]
-> The selected batch job should have a batch task. Select the batch job that contains tasks.
+    > [!NOTE]
+    > The selected batch job should have a batch task. Select the batch job that contains tasks.
 
-3. Change the status of the batch job to **Waiting**. This re-executes the job and removes the duplicates for the specific table.
-4. The upgrade can now be started. 
+3. Change the status of the batch job to **Waiting**. The job is rerun and removes the duplicates for the specific table.
+4. You can now start the upgrade.
 
-[!Note] if you don’t see the Batch job or if you run into an error after running the Batch job, contact Microsoft support. 
+> [!NOTE]
+> If you don't see the batch job, or if you encounter an error after you run it, contact Microsoft Support.
