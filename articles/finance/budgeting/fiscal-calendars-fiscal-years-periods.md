@@ -4,7 +4,8 @@ description: Learn about fiscal calendars, fiscal years and periods and how to u
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 02/23/2023
+ms.date: 05/13/2024
+ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

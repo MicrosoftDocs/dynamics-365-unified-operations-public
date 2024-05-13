@@ -4,7 +4,7 @@ description: Learn about inventory posting profiles, including overviews on inve
 author: rachelprofitt
 ms.author: raprofit
 ms.topic: overview
-ms.date: 04/29/2024
+ms.date: 05/13/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
