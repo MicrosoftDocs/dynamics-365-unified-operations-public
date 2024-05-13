@@ -2,7 +2,7 @@
 title: Configure Electronic invoicing parameters
 description: This article explains how to set up the Electronic invoicing parameters in Globalization Studio.
 author: ilikond
-ms.date: 04/10/2024
+ms.date: 05/13/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
