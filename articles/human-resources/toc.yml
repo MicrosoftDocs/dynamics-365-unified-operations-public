@@ -1055,6 +1055,18 @@ items:
           href: hr-worker-contact.md 
         - name: HCM Compensation fixed plan 
           href: hr-hcm-comp-fix.md
+        - name: HCM position type entity
+          href: hcm-position-type.md
+        - name: HCM unions entity
+          href: hcm-union.md
+        - name: Variable compensation type entity  
+          href: variable-comp.md
+        - name: Leave bank transaction entity
+          href: hr-leave-bank-trans.md
+        - name: Payroll position details entity
+          href: hr-payroll-position.md
+        - name: HCM Position hierachy type entity
+          href: hcm-position-hierachy-type.md
         - name: Job task 
           href: hr-admin-integration-job-task.md
         - name: Payroll job type 
