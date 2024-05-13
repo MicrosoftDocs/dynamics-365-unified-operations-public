@@ -1652,6 +1652,8 @@
               href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
+            - name: Electronic invoicing coverage
+              href: localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/finance
             - name: Availability of Electronic Invoicing features
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Australia and New Zealand
