@@ -32,7 +32,7 @@ originally published.
 |---|---|
 | Streamlined employee entry	|Streamlined employee entry page will be mandatory starting in Dynamics 365 Human Resources 10.0.41 release. |
 | Additional payroll entities | Additional entities are available for Dynamics 365 Human Resources payroll integration. |
-| Alternate key | Additional fields are available as alternate keys in Performance management. For more information, see [Alternate keys in Performance management](hr-developer-alternate-key-perf-mgmt.md). |
+| Alternate key | Additional fields are available as alternate keys in performance management. For more information, see [Alternate keys in performance management tables](hr-developer-alternate-key-perf-mgmt.md). |
 
 ## Additional resources
 
