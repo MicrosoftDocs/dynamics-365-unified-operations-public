@@ -6,9 +6,6 @@ description: This article explains how to set up and report value-added tax (VAT
 author: liza-golub
 ms.date: 06/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

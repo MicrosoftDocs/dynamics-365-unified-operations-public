@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a cost rollup policy
-description: This procedure shows how to create a cost rollup policy and create rules for the policy. 
-author: panolte
+description: This procedure shows how to create a cost rollup policy and create rules for the policy. Learn about how to create policies and create rules for rollup policies.
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a cost rollup policy
 
 [!include [banner](../../includes/banner.md)]

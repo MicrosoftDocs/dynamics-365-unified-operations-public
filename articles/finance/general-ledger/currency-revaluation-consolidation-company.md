@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Currency revaluation in a consolidation company
-description: This article describes how to revalue currency in a consolidation company. 
+description: Learn how to revalue currency in a consolidation company, including outlines on company setups, original transactions, and exchange rates. 
 author: aprilolson
-ms.date: 10/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerExchAdjHist
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 10/02/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerExchAdjHist
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 ---
 
 # Currency revaluation in a consolidation company

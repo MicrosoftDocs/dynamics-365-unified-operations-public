@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Tax engine overview
-description: This article provides an overview of the Tax engine functionality in Microsoft Dynamics 365 Finance.
+description: Learn about the Tax engine functionality in Microsoft Dynamics 365 Finance, a table that defines various key concepts and an outline on tax calculations.
 author: kailiang
-ms.date: 12/15/2017
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.search.region: India
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: overview
+ms.date: 12/15/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2017-12-31
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Tax engine overview

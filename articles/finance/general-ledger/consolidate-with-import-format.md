@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Import format for consolidation
-description: This article provides detailed information about the import format that is used when you consolidate financial data from multiple legal entities.
+description: Learn about the import format that is used when you consolidate financial data from multiple legal entities, including a table showing the format for record tables.
 author: jinniew
-ms.date: 10/09/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-ms.reviewer: kfend
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 10/09/2020
+ms.custom: 
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-5-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Import format for consolidation

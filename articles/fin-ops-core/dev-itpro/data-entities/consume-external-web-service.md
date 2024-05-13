@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Consume external web services
-description: This article describes how to consume external web services in finance and operations apps.
-author: peakerbl
+description: Learn how to consume external web services in finance and operations apps, including various X++ examples for creating classes and web services.
+author: sericks007
+ms.author: sericks
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Consume external web services

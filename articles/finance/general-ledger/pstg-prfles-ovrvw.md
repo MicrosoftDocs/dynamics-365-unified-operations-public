@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Posting profiles overview
-description: This article explains how posting profiles are used throughout Microsoft Dynamics 365 apps.
-author: rachel-profitt
-ms.date: 12/03/2021
+description: Learn how posting profiles are used throughout Microsoft Dynamics 365 apps, including overviews on posting types and detail settings for a posting profile.
+author: rcarlson
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/29/2024
+ms.custom: evergreen
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kweekley
 ms.search.validFrom: 2022-01-03
+ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Posting profiles overview

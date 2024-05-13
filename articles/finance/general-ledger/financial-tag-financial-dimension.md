@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Differences between financial tags and financial dimensions
-description: This article describes the differences between financal tags and financial dimensions.
+description: Learn about the differences between financal tags and financial dimensions, including a table that outlines the functionality for dimensions and tags.
 author: kweekley
-ms.date: 01/23/2023
-ms.topic: article
-ems.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 04/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Differences between financial tags and financial dimensions
@@ -42,5 +31,5 @@ The following table describes, in detail, the differences between financial dime
 | Non-reusable values | Dimensions should never be used to track non-reusable values, such as document numbers or reference numbers. This type of data will cause your chart of accounts to explode, because of the uniqueness of so many ledger accounts. Therefore, performance will be negatively affected, especially around the year-end close and during foreign currency revaluation and consolidations. | Tags should be used to track non-reusable values, such as document numbers or reference numbers. |
 | Ability to activate or deactivate | New financial dimensions can be activated, but the system must be in maintenance mode. Financial dimensions can't be deactivated. Instead, they can be removed from an account structure, so that they're no longer used by any legal entities that use that account structure. | Tags can be activated or deactivated at any time. |
 | Ability to delete | Dimensions can't be deleted if they're referenced anywhere, such as on a posted transaction. If the dimension references an entity, the entity and entity values can't be deleted. This restriction helps maintain referential integrity. | <p>Tags can't be deleted. This restriction helps maintain the tag values that have been entered on posted transactions. However, tags can be deactivated at any time.</p><p>If a tag references an entity for a list, no reference to that entity is maintained. For example, if the tag is mapped to the Customer name entity, customers can be deleted, because the tag values hold no reference to the customer. In addition, if a customer name is changed, the customer name isn't updated in the tag values.</p> |
-| Ability to edit after posting | Dimension values can't be edited on posted transactions, because any change to the ledger account will directly affect financial statements. | Tag values are used only for internal analysis and processing. Therefore, they can be added, removed, or edited on posted transactions by using the **Allow edits to internal data on general ledger vouchers** feature. An audit trail is maintained for all edits that are made to the tag values after posting. |
+| Ability to edit after posting | Dimension values can't be edited on posted transactions, because any change to the ledger account will directly affect financial statements. | Tag values are used only for internal analysis and processing. Therefore, they can be added, removed, or edited on posted transactions by using the **Edit internal voucher data** feature. An audit trail is maintained for all edits that are made to the tag values after posting. |
 | Global or legal entity specific? | Dimensions are set up globally, and they are "assigned" to each legal entity through the account structures. Dimensions also have legal entity overrides, so that the same dimension can be active in one legal entity but inactive in another legal entity. | Tags are set up at the legal entity level. They can be shared by using the **Shared data** feature. The tags and custom tag values can be copied to each legal entity by using the data management entities. |

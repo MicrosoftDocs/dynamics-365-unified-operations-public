@@ -11,7 +11,6 @@ audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ms.collection:
-  - bap-ai-copilot
 ---
 
 # Demand forecasting setup
@@ -67,6 +66,8 @@ To set up your intercompany planning groups, follow these steps.
     - **Automatic copy to dynamic plan** – Select this checkbox to copy the result of the plan to the dynamic plan.
 
 1. By default, if no item allocation keys are assigned to intercompany planning group members, a demand forecast is calculated for all items that are assigned to all item allocation keys from all companies. Additional filtering options for companies and item allocation keys are available in the **Generate statistical baseline forecast** dialog box (**Master planning \> Forecasting \> Demand forecasting \> Generate statistical baseline forecast**). To assign item allocation keys to a company in the selected intercompany planning group, select the company, and then, on the **Intercompany planning group members** FastTab, select **Item allocation keys** on the toolbar.
+
+To learn more, see [Intercompany planning groups for demand forecasting](../demand-planning/intercompany-planning-groups-demand-forecasting.md)
 
 > [!IMPORTANT]
 > Be careful to include only relevant item allocation keys in each intercompany planning group. Unnecessary items might cause increased costs when you use Azure Machine Learning.

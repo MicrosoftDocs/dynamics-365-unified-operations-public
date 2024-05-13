@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Calculate fixed asset depreciation across legal entities
-description: Fixed asset depreciation can be run across legal entities in a single step. 
+description: Learn about how to calculate fixed asset depreciation, which can be run across legal entities in a single step, including step-by-step processes.
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, LedgerJournalTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, LedgerJournalTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Calculate fixed asset depreciation across legal entities
 
 [!include [banner](../../includes/banner.md)]

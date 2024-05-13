@@ -1,20 +1,19 @@
 ---
 title: Cross-company data sharing for developers
-description: This article describes cross-company data sharing for developers. This is a mechanism for sharing reference and group data among companies in a deployment.
+description: Learn about cross-company data sharing for developers. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
-ms.date: 01/08/2024
+ms.author: ramasri
 ms.topic: how-to
+ms.date: 01/08/2024
 ms.custom: 
   - bap-template
-ms.technology: 
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-ms.author: ramasri
 ms.search.validFrom: 2022-01-27
+ms.search.form: SysDataSharingConfiguration
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
-ms.search.form: SysDataSharingConfiguration
 ---
 
 # Cross-company data sharing for developers

@@ -1,18 +1,17 @@
 ---
 title: Create a cost accounting ledger
-description: A cost accounting ledger represents the overall reporting unit.
+description: Learn about cost accounting ledgers, which represents the overall reporting unit, including a step-by-step process on creating a cost accounting ledger.
 author: twheeloc
-ms.date: 03/27/2023
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: kfend
+ms.topic: how-to
+ms.date: 03/27/2023
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Create a cost accounting ledger
 
 [!include [banner](../../includes/banner.md)]

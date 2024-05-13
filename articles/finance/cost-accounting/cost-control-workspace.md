@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Cost control workspace
-description: This article provides information about the Cost control workspace. This workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions can access reports. 
-author: AndersGirke
-ms.date: 06/16/2017
+description: Learn about the Cost control workspace, a central point where managers who are responsible for controlling a cost object or a set of cost objects.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/16/2017
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
+ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Cost control workspace 

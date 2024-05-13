@@ -6,9 +6,6 @@ description: This article provides information about progressive withholding tax
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans

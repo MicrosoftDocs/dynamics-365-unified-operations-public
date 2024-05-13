@@ -6,7 +6,7 @@ ms.author: matgupta
 ms.topic: article
 ms.date: 02/25/2021
 # ms.custom: NotInTOC
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-31
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include[banner](../includes/banner.md)]
 
-The batch framework emits the following system business events.
+The batch platform emits the following system business events.
 
 | Business event | Description | Module |
 |----------------|-------------|--------|

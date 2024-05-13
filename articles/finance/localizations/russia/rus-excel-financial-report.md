@@ -4,8 +4,6 @@ description: This article walks you through the process of creating an Electroni
 author: AdamTrukawka
 ms.date: 07/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Russia

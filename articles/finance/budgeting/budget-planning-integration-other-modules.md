@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Budget planning integration with other modules
-description: Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
-author: panolte
-ms.date: 01/12/2018
+description: Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetPlanGenerate
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/12/2018
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetPlanGenerate
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ---
 
 # Budget planning integration with other modules

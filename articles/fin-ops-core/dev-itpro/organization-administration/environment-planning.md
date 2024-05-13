@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Environment planning
-description: This article provides an overview of various aspects that you must consider while you plan for your project's environment.
+description: Learn about various aspects that you must consider while you plan for your project's environment, including an overview of environment types.
 author: skaue-ms
-ms.date: 11/04/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS:
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: toskaue
+ms.topic: article
+ms.date: 11/04/2022
+ms.custom: 
+ms.reviewer: johnmichalak  
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-08-01
+ms.search.form:
 ms.dyn365.ops.version: Finance and operations
-
 ---
 
 # Environment planning

@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Multiple LCS projects and environments on one Microsoft Entra tenant
-description: This article explains how to implement multiple LCS projects and production environments on the same Microsoft Entra tenant.
-author: ClaudiaBetz-Haubold 
-ms.date: 02/03/2022
+description: Learn about how to implement multiple LCS projects and production environments on the same Microsoft Entra tenant.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
+ms.date: 02/03/2022
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: chaubold
-ms.search.validFrom: 2018-05-30 
+ms.search.validFrom: 2018-05-30
+ms.search.form:  
 ms.dyn365.ops.version: AX 7.0
 ---
 

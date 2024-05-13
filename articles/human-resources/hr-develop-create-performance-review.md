@@ -4,10 +4,8 @@
 title: Create performance reviews
 description: This article explains how to create a performance review and describes the purpose for each section of the review. 
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 05/08/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -26,7 +24,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Create performance reviews
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

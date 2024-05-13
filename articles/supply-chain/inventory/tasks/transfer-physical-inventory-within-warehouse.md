@@ -6,8 +6,6 @@ description: This procedure walks you through the process of creating and postin
 author: yufeihuang
 ms.date: 08/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

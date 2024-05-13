@@ -6,9 +6,6 @@ description: This article provides an overview of network peripherals that are s
 author: BrianShook
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

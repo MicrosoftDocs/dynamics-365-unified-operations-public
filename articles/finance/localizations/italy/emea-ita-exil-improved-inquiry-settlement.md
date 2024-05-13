@@ -4,8 +4,6 @@ description: This article explains how you can view information about invoice an
 author: mrolecki
 ms.date: 11/21/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Italy

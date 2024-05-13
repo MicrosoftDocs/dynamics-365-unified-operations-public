@@ -1,26 +1,17 @@
 ---
-# required metadata 
 title: Create a depreciation proposal
-description: This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. 
+description: Learn how depreciation batch proposals work and explains how to propose depreciation for fixed assets, including a step-by-step process. 
 author: abruer
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
-
-# optional metadata 
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset   
-audience: Application User 
-# ms.devlang:
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User   
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 ms.dyn365.ops.version: Version 7.0.0
-
 ---
 
 # Create a depreciation proposal

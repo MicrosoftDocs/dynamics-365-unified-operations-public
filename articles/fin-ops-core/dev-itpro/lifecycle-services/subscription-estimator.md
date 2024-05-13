@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Subscription estimator in Lifecycle Services (LCS)
-description: This article explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS).
+description: Learn about how to use the Subscription estimator tool that is available in Lifecycle Services, including answers to frequently asked questions.
 author: angelmarshall
-ms.date: 01/25/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: article
+ms.date: 01/25/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 12
-
 ---
+
 # Subscription estimator in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]

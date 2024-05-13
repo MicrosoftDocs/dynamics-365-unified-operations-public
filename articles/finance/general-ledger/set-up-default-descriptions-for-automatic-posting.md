@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Set up default descriptions for automatic posting
-description: This article explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using free-form text or by selecting fixed variables.
-author: aprilolson
-ms.date: 02/10/2023
+description: Learn how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger.
+author: jchrist
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/10/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 
+audience: Application User
 ms.search.region: global
-# ms.search.industry: 
-ms.author: aolson
 ms.search.validFrom: 2019-07-30
+ms.search.form: 
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Set up default descriptions for automatic posting

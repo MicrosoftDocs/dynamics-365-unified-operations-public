@@ -6,8 +6,6 @@ description: This article defines terms and concepts that are relevant to produc
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: ["4031"]
+ms.custom:
 ms.collection: get-started
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global

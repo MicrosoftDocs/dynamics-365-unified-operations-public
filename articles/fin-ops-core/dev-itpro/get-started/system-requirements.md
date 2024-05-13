@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: System requirements for cloud deployments
-description: This article lists the system requirements for the current version of finance and operations apps.
+description: Learn about the system requirements for the current version of finance and operations apps, including an outline on supported web browsers.
 author: sericks007
-ms.date: 02/08/2022
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 02/08/2022
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: e564d51d-42d3-47c5-b388-93b8219c692a
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
 ms.search.validFrom: 2016-08-30
+ms.search.form:
 ms.dyn365.ops.version: Platform update 8
-
 ---
 
 # System requirements for cloud deployments

@@ -4,8 +4,6 @@ description: This article explains how to move NF-e XML files out of your Micros
 author: gionoder
 ms.date: 11/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global

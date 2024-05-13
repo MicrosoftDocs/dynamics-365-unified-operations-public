@@ -4,8 +4,6 @@ description: This article explains how to use self-service to configure and inst
 author: jashanno
 ms.date: 01/31/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

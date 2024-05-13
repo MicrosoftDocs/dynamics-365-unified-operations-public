@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Create advanced rules for journals
-description: This procedure steps through creating advanced rules for journals. 
+description: Learn about the process of creating advanced rules for journals, including a step-by-step process for setting up journal control.
 author: aprilolson
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalSetup, LedgerJournalControl, CompanyLookup, LedgerJournalPostControl   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalSetup, LedgerJournalControl, CompanyLookup, LedgerJournalPostControl
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create advanced rules for journals

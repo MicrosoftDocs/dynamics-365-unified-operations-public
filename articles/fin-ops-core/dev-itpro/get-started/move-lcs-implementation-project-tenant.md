@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Move Lifecycle Services implementation projects to different Microsoft Entra tenants
-description: This article explains how to move your subscriptions and Lifecycle Services Implementation project to a different Microsoft Entra tenant.
-author: RicardoCaeiroPro
-ms.date: 07/18/2023
+description: Learn about how to move your subscriptions and Lifecycle Services Implementation project to a different Microsoft Entra tenant.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: IT Pro
-# ms.devlang: 
+ms.date: 07/18/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: v-ricaei
-ms.search.validFrom: 2018-05-30 
+ms.search.validFrom: 2018-05-30
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0
 ---
 

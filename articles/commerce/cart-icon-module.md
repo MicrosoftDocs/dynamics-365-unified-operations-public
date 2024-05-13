@@ -4,8 +4,6 @@ description: This article covers the cart icon module and describes how to add i
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

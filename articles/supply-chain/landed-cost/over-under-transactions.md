@@ -6,8 +6,6 @@ description: This article provides information that will help you set up the det
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

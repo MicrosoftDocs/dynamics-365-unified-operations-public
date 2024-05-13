@@ -4,8 +4,6 @@ description: Container modules help you control the layout when you build comple
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

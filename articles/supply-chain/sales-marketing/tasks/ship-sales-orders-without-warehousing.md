@@ -6,8 +6,6 @@ description: This article explains how to update a sales order when products are
 author: Henrikan
 ms.date: 08/20/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

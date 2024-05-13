@@ -1,11 +1,11 @@
 ---
-title: Electronic invoicing in Saudi Arabia - Phase two (preview)
+title: Electronic invoicing in Saudi Arabia
 description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia (preview).
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 04/10/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -13,14 +13,11 @@ ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ms.collection: get-started
-ms.assetid: 
-ms.search.form: 
 ---
 
-# Electronic invoicing in Saudi Arabia - Phase two (preview)
+# Electronic invoicing in Saudi Arabia 
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
 
@@ -59,9 +56,9 @@ Follow these steps to complete the configuration.
 
 Follow these steps to complete the configuration.
 
-1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md)
+1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Project invoice**, and **Fiscal transaction document** table names.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and, if required, for the **Project invoice**, **Journal lines**, and **Fiscal transaction document** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 1. For the **Customer Invoice journal** table name, select **Response types**.
 
@@ -116,7 +113,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** Electron
         > [!NOTE]
         > Depending on your place in the [onboarding](#onboarding) process, create either a CCSID or a PCSID, and configure it in advance in the [Key Vault parameters](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
-1. Repeat steps 4 through 9 for the **Project invoice** and **Retail simplified invoice** feature setups.
+1. If required, repeat steps 4 through 9 for the **Project invoice**, **Prepayment invoice**, and **Retail simplified invoice** feature setups.
 
     > [!NOTE]
     > For the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature, repeat steps 4 through 9 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups instead.
@@ -131,8 +128,15 @@ Onboarding is mandatory for all taxpayers who are subject to electronic invoicin
 
 Onboarding is an essential part of the Electronic invoicing configuration. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](gs-e-invoicing-sa-onboarding.md).
 
+## Issue electronic invoices
+
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](../e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+
+You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type.
+
 ## Additional resources
 
 - [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md)
+- [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

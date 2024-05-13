@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Audit invoices and key data in accounts payable
-description: This article shows how to audit invoices and key data in accounts payable. 
+description: Learn how to audit invoices and key data in accounts payable, including a step-by-step process for creating a purchase order.
 author: kweekley
-ms.date: 03/24/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/24/2023
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Audit invoices and key data in accounts payable
 
 [!include [banner](../../includes/banner.md)]

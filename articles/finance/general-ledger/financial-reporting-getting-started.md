@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Financial reporting overview
-description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
+description: Learn about where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 11/28/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 11/28/2023
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ---
 
 # Get started with financial reporting 
@@ -189,82 +177,6 @@ The slipstream process is fully automated and doesn't require any customer actio
     - S patching or other infrastructure downtime
     - AOT package deployments
 
-## Troubleshooting issues opening Report Designer
-
-There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
-
-Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
-
-* Open the Windows control panel, then select **Network and Internet**. Select **Internet options**. The **Internet properties** window opens. Open the **Security** tab. Select **Trusted sites**  and then select the **Sites** button. In the **Add this website to zone** field, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. Finally, in the area labeled **Security level for this zone**, change the slider to **Medium-low**. Select **OK**.
-* Disable the pop-up blocker in your browser.
-* Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
-* If you're using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you're running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
-* If you're using Microsoft Edge with a Chrome browser, you don't need to install a ClickOnce extension for Edge Chromium. However, you must enable the ClickOnce option in order to download the Report Designer client. If you're running incognito mode, make sure the ClickOnce extension is enabled for incognito mode.
-
-    1. Open a new browser in Microsoft Edge.
-    2. Enter **edge://flags** and select **Enter**.
-    3. Search for the **ClickOnce Support** option or use this direct link: **edge://flags/#edge-click-once**.
-    4. Set the drop-down menu option to **Enabled**.
-    5. Select **Restart Browser**.
-
-Issue 2: The user hasn't been assigned the required permissions to use Financial reporting. 
-
-* To verify if the user doesn't have permission, select **Yes** on the error, "Unable to connect to the Financial reporting server. Select Yes if you want to continue and specify a different server address." Then select **Test Connection**. If you don't have permission, you see a message that says, "Connection attempt failed. User doesn't have appropriate permissions to connect to the server. Contact your system administrator."
-* Required permissions are listed above in [Granting security access to Financial reporting](#granting-security-access-to-financial-reporting). Security in Financial reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
-* The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It might take up to 10 minutes for any permission changes to take effect in Financial reporting. 
-
-    If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial reporting. 
-
-* It might be possible that another error has prevented **Dynamics user to Financial reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
-
-Issue 3: You can proceed past the **ClickOnce Report Designer** sign-in page, but are unable to complete sign in within Report Designer. 
-
-* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial reporting server. If there's a difference of more than five minutes, the system won't allow sign in. 
-* If the time on your computer differs from the time on Financial reporting server, we recommend enabling the Windows option to set your computer's time automatically. 
-
-## Troubleshoot report designer issues with Event viewer
-
-You can use the Event viewer to analyze some of the issues that arise when using Financial reporting. 
-
-### What happens when you have connections issues with Financial reporting? 
-
-Here are some steps you can take to make your conversation with Microsoft support more effective and bring you to a quicker resolution. 
- 
-The following steps walk through the process of turning on Event viewer messages for Financial reporting. The logs that Event viewer generates will help support engineers to identify the source of the connection issue quickly. Submit copies of these logs together with your ticket when contacting support.
-
-
-1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](//download.microsoft.com/download/3/0/0/3008047d-ff50-45fa-8427-e4eddc517bd7/RegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e%20(3).zip).
-2. Make sure Windows Event viewer is closed.
-3. Open an Administrator PowerShell command prompt and go to the directory where RegisterETW.ps1 is located.
-4. Run the following command: .\RegisterETW.ps1 
-
-    A successful output in PowerShell will be verified with the message, **Competed RegisterETW script**.
-
-    Reopen Event viewer, and you now see these logs under **Microsoft > Dynamics**: 
-
-    * MR-Client
-    * MR-DVT
-    * MR-Integration
-    * MR-Logger
-    * MR-Reporting
-    * MR_SchedulerTasks
-    * MR-Sql
-    * MR-TraceManager
-
-5. Reproduce the issue in the report designer.
-6. Export the MR-Logger events using the Event viewer.
-
-## Troubleshoot issues connecting to Financial reporting
-
-Issue: You receive the error "Unable to Connect to the Financial reporting server."
-
-* Determine if the issue occurs in Chrome and Edge internet browsers.
-* If the issue occurs only in one browser, it could be ClickOnce issue. 
-* When you get the connection error message, select **Test** to test the connection to see what message appears. 
-* The issue could be the result of another user not having access to Financial reporting. If a user doesn't have access, they'll receive a message stating they don't have permission.
-* If the issue occurs on multiple browsers, make sure the time clock on your workstation is set to Auto.
-* Work with a user that has security administrator's rights in Dynamics 365 Finance, and admin rights to the network domain, to sign in to your workstation to see if they're able to connect. If they're able to connect, the issue might be related to network permissions.
-* On the workstation, temporarily disable the firewall. If you're then able to connect to Report Designer, the issue is with your firewall. Work with your organization's IT department to resolve the issue.
 
 ## Additional resources
 

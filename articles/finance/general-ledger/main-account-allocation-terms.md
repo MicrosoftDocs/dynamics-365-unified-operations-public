@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Allocation terms
-description: This article provides information about using allocation terms on a main account. 
+description: Learn about using allocation terms on a main account, including a step-by-step process for creating an allocation term on a main account. 
 author: rachel-profitt
-ms.date: 06/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, AllocationTerms
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: raprofit
+ms.topic: article
+ms.date: 06/15/2020
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-06-15
+ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, AllocationTerms
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 ---
 
 # Allocation terms

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Intercompany accounting setup
-description: This article explains how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals, vendor invoice journals, and payment journals.
+description: Learn how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals.
 author: kweekley
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerInterCompany
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 1362297b-7a51-4930-b822-2b204a2e3c37
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerInterCompany
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 1362297b-7a51-4930-b822-2b204a2e3c37
 ---
 
 # Intercompany accounting setup

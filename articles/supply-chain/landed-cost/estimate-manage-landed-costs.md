@@ -6,8 +6,6 @@ description: The system uses your auto cost setup to determine an estimate for y
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

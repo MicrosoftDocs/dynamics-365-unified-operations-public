@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Ledger journal types
-description: This article describes the journal types that you can set up for financial journals.
+description: Learn about the journal types that you can set up for financial journals, including a table that outlines the purpose of various journal types.
 author: kweekley
-ms.date: 10/10/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalSetup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 10/10/2018
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalSetup
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ---
 
 # Ledger journal types

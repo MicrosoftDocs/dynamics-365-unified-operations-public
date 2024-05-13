@@ -1,15 +1,13 @@
 ---
 title: Regression suite automation tool installation and configuration
-description: This article contains information about how to install and configure the Regression suite automation tool (RSAT).
+description: Learn about how to install and configure the Regression suite automation tool (RSAT), including prerequisites and an overview of the installation process.
 author: FrankDahl
-ms.date: 11/27/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 11/27/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -213,6 +211,8 @@ Use the **Download** button to retrieve the certificate bundle as a .zip file.
 
 You can now run your tests against the environment using this certificate. The certificate is autorotated by Microsoft before it expires, at which time you need to download a new version of this certificate starting from step 1 above. For self-service environments, this is rotated every 60 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
 
+<!-- Link appears to be outdated and needs to be replaced.
+
 ## Manual configuration of authentication certificates
 
 Optionally, you can manually configure the RSAT authentication certificate.
@@ -220,7 +220,7 @@ Optionally, you can manually configure the RSAT authentication certificate.
 If you aren't familiar with this process, get help from your system administrator. Make sure you have Windows Kits installed on your machine. If you don't have Windows Kits installed on your machine, you can download the Windows 10 SDK from [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk). You need these components for the steps described in this document.
 
 + Windows SDK Signing Tools for Desktop Apps
-+ Windows SDK for UWP-Managed Apps.
++ Windows SDK for UWP-Managed Apps. -->
 
 ### Generate the certificate
 

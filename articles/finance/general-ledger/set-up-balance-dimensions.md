@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: How do I set up balancing financial dimensions?
-description: This article describes the options for setting up and using the Balancing financial dimension feature.
+description: Learn about the options for setting up and using the Balancing financial dimension feature, including an outline on the symptom and resolution.
 author: kweekley
-ms.date: 08/25/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DimensionDetails
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 08/25/2021
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-08-17
+ms.search.form: DimensionDetails
 ms.dyn365.ops.version: 10.0.210
 ---
 

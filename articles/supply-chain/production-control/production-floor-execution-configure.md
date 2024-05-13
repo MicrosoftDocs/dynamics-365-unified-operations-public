@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Configure the production floor execution interface
 description: This article describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
-ms.date: 11/07/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgProductionFloorExecutionConfiguration
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
-ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Configure the production floor execution interface
@@ -101,6 +89,7 @@ This feature enables workers to use the production floor execution interface to 
 > [!IMPORTANT]
 >
 > - *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* is a preview feature. *Register material consumption on the production floor execution interface (non-WMS)* is generally available.
+> - Preview features are subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
@@ -157,6 +146,23 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 This feature lets admins add a numpad control to the sign-in page for the production floor execution interface. Workers can then sign in by using the numpad to enter their badge ID or personal number.
 
 To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Enable use of a numpad in the sign-in page* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+
+### <a name="tracked-components"></a>Tracked components (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+This feature lets workers and managers register batch/serial numbers for materials and components that are used in manufacturing processes. They can then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+- The feature that's named *Tracked components* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- You must make the feature available to workers by adding a **Tracked components** button to the appropriate tab and toolbar, as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
+
+For more information about this feature, see [Register batch/serial numbers for finished products and their components (preview)](production-floor-execution-use.md#tracked-components).
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Work with production floor execution configurations
 

@@ -4,8 +4,6 @@ description: This article explains how set up and generate a report about operat
 author: AdamTrukawka
 ms.date: 06/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: 
 ms.search.region: Russia

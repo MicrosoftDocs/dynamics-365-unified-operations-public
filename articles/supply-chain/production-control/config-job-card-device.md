@@ -6,8 +6,6 @@ description: This article describes the various options for configuring the job 
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

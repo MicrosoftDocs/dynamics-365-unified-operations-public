@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Snapshots overview
-description: This article describes the snapshots feature, which lets you save a cash flow forecast for analysis or comparison with actuals later. When you generate a cash flow forecast, you can save that forecast as a "snapshot." You can then use that snapshots to edit the accounts that were included in the forecast, or compare the forecast in the snapshot to actuals.
-author: ShivamPandey-msft
-ms.date: 11/03/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the snapshots feature, which lets you save a cash flow forecast for analysis or comparison with actuals later, including an outline on compring forecasts.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: overview
+ms.date: 11/03/2021
+ms.reviewer: kfend
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-19
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Snapshots overview

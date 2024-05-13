@@ -2,23 +2,21 @@
 title: Configure Electronic invoicing parameters
 description: This article explains how to set up the Electronic invoicing parameters in Globalization Studio.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
+ms.date: 04/10/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
 ---
 
 # Configure Electronic invoicing parameters
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Import ER configurations from the repository
 
@@ -53,15 +51,15 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
 1. On the **Electronic document** tab, above the **Electronic reporting** grid, select **Add**.
 1. Depending on the scenarios that you want to support, enter the following information in the grid, and then save your changes.
 
-    | Table name | Document context | Electronic document model mapping | Features that it's required for |
-    |------------|------------------|-----------------------------------|---------------------------------|
-    | CustInvoiceJour | <p><b>Mapping name:</b> Customer invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Customer Invoice</p><p><b>Configuration:</b> Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li><li>Australian electronic invoice (AU)</li><li>New Zealand electronic invoice (NZ)</li><li>(Preview) Malaysian electronic invoicing (MY)</li></ul> |
-    | ProjInvoiceJour | <p><b>Mapping name:</b> Project invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Project Invoice</p><p><b>Configuration:</b> Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li><li>Australian electronic invoice (AU)</li><li>New Zealand electronic invoice (NZ)</li><li>(Preview) Malaysian electronic invoicing (MY)</li></ul> |
-    | CzCustAdvanceInvoiceTable | <p><b>Mapping name:</b> Advance invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Advance invoice model mapping</p><p><b>Configuration:</b> Advance invoice model mapping</p> | Polish electronic invoice (PL) |
-    | RetailTransactionFiscalTransDocumentView | <p><b>Mapping name:</b> Retail fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Retail fiscal document</p><p><b>Configuration:</b> Retail fiscal document mapping</p> | Saudi Arabian electronic invoice (SA) |
-    | FiscalDocument\_BR | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NF-e (BR) |
-    | Correction letter | <p><b>Mapping name:</b> FD correction letter context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Correction letter mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NF-e (BR) |
-    | Service Fiscal document | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
+   | Table name | Document context | Electronic document model mapping | Features that it's required for |
+   |------------|------------------|-----------------------------------|---------------------------------|
+   | CustInvoiceJour | <p><b>Mapping name:</b> Customer invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Customer Invoice</p><p><b>Configuration:</b> Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li><li>Australian electronic invoice (AU)</li><li>New Zealand electronic invoice (NZ)</li><li>(Preview) Malaysian electronic invoicing (MY)</li></ul> |
+   | ProjInvoiceJour | <p><b>Mapping name:</b> Project invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Project Invoice</p><p><b>Configuration:</b> Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li><li>Australian electronic invoice (AU)</li><li>New Zealand electronic invoice (NZ)</li><li>(Preview) Malaysian electronic invoicing (MY)</li></ul> |
+   | CzCustAdvanceInvoiceTable | <p><b>Mapping name:</b> Advance invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Advance invoice model mapping</p><p><b>Configuration:</b> Advance invoice model mapping</p> | Polish electronic invoice (PL) |
+   | RetailTransactionFiscalTransDocumentView | <p><b>Mapping name:</b> Retail fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Retail fiscal document</p><p><b>Configuration:</b> Retail fiscal document mapping</p> | Saudi Arabian electronic invoice (SA) |
+   | FiscalDocument\_BR | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NF-e (BR) |
+   | Correction letter | <p><b>Mapping name:</b> FD correction letter context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Correction letter mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NF-e (BR) |
+   | Service Fiscal document | <p><b>Mapping name:</b> Fiscal document context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Fiscal documents mapping</p><p><b>Configuration:</b> Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
    | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
    | LedgerJournalTrans | <p>**Mapping name:** Prepayment invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Customer prepayments</p><p>**Configuration:** Invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
    | VendInvoiceJour | <p><b>Mapping name:</b> Self invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Self invoice</p><p><b>Configuration:</b> Self invoice model mapping</p> | (Preview) Malaysian electronic invoicing (MY) |

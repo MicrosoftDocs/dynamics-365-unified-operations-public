@@ -6,7 +6,7 @@ ms.author: sericks
 ms.topic: article
 ms.date: 10/21/2021
 ms.custom:
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global 
 ms.search.validFrom: 2016-08-30 
@@ -16,9 +16,6 @@ ms.dyn365.ops.version: Platform update 2
 # Bring your own database (BYOD)
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). 
 

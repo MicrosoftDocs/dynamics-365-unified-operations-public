@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Provider templates for statistical dimension members and measure providers
-description: This article provides information about statistical dimension members and statistical measure provider templates. 
-author: AndersGirke
-ms.date: 06/16/2017
+description: Learn about statistical dimension members and statistical measure provider templates, including an overview on statistical measure provider templates. 
+author: AndersEvenGirke
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/16/2017
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User  
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
+ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid:
 ---
 
 # Provider templates for statistical dimension members and measure providers

@@ -4,8 +4,6 @@ description: This article explains how to grant users access to the authoring en
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: global

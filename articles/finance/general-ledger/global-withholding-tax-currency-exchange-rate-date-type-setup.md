@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Enable the global withholding tax currency exchange rate type and date type setup
-description: This article explains how to enable the global setup of the withholding tax currency exchange rate type and date type.
+description: Learn how to enable the global setup of the withholding tax currency exchange rate type and date type, including a step-by-step process.
 author: kailiang
-ms.date: 08/02/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 08/02/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-08-01
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.29
-
+ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ---
 
 # Enable the global withholding tax currency exchange rate type and date type setup

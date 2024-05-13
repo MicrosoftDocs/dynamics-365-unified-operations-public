@@ -6,8 +6,6 @@ description: This article explains how to use first in, first out (FIFO) and las
 author: Mirzaab
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

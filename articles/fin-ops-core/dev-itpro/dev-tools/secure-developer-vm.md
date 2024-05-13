@@ -1,17 +1,16 @@
 ---
 title: Secure one-box development environments
-description: This article describes how to help secure one-box developer environments.
+description: Learn about how to help secure one-box developer environments, including outlines on default congigurations and how to deploy to a custom virtual network.
 author: mnordick
-ms.date: 03/14/2024
+ms.author: mnordick
+ms.date: 05/10/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: mnordick
 ms.search.validFrom: 2022-09-13
-
 ---
 
 # Secure one-box development environments
@@ -92,6 +91,8 @@ Your one-box development environment can integrate with your Microsoft Entra ten
 - Import users.
 - Import Microsoft Entra ID groups.
 - Import Electronic reporting (ER) configurations. For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+- Report execution using WCF service.
+- Data Task Automation.
 
 To use these capabilities, you must configure certificate access to your tenant.
 
@@ -117,10 +118,11 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. In the **wif.config** file under **K:\\AosService\\webroot\\**, replace the value of the `audienceUris` key with the application ID/client ID.
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId.
     ```
     <securityTokenHandlerConfiguration>
     <audienceUris>
+    <add value="spn:00000015-0000-0000-c000-000000000000" />
     <add value="spn:<your application ID>" />
     </audienceUris>
     ```

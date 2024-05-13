@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Change a fixed asset group
-description: Fixed assets should be assigned to the correct fixed assets group. 
+description: Fixed assets should be assigned to the correct fixed assets group. Learn about changing these fixed asset groups with a step-by-step process.
 author: moaamer
-ms.date: 05/04/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetTable, AssetChangeGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 05/04/2022
+ms.custom:
+ms.reviewer: kfend 
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetTable, AssetChangeGroup   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Change a fixed asset group
 
 [!include [banner](../../includes/banner.md)]

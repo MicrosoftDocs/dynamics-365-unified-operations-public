@@ -1,27 +1,16 @@
 ---
 title: Synchronize BPM libraries with Azure DevOps
-description: This article provides information about how to synchronize a BPM library in LCS with Azure DevOps.
+description: Learn about how to synchronize a BPM library in LCS with Azure DevOps, including outlines for LCS project settings.
 author: amarshall
-ms.date: 09/01/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 09/01/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: 2012
-
 ---
 
 # Synchronize BPM libraries with Azure DevOps

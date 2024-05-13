@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Case management overview
-description: This article provides an overview of case management, including planning, tracking, and analyzing, in Microsoft Dynamics AX. 
+description: Learn about case management, including planning, tracking, and analyzing, in Microsoft Dynamics, with various examples. 
 author: kfend
-ms.date: 11/20/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CaseDetail
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 4aa0a2da-be45-4dc3-97bf-b84bcf83144c
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 11/20/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CaseDetail
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 4aa0a2da-be45-4dc3-97bf-b84bcf83144c
 ---
 
 # Case management overview

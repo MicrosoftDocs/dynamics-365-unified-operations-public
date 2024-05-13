@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up fixed assets
-description: This article provides an overview of the setup of the Fixed assets module.
+description: Learn about the setup of the Fixed assets module, including outlines on depreciation profiles, books, and fixed asset posting profiles and groups.
 author: moaamer
-ms.date: 01/19/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: saraschi
+ms.topic: article
+ms.date: 01/19/2023
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ---
 
 # Set up fixed assets

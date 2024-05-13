@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Batch manager security role
-description: This article provides information about the batch manager security role that is used to manage batch job.
+description: Learn about the batch manager security role that is used to manage batch job, including an overview on assigning batch manager roles to users.
 author: hasaid
-ms.date: 10/25/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: hasaid
+ms.topic: article
+ms.date: 10/25/2018
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-08-15
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 20
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Batch manager security role

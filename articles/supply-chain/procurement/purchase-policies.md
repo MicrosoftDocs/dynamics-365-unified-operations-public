@@ -6,8 +6,6 @@ description: This article provides information about purchasing policies. A purc
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

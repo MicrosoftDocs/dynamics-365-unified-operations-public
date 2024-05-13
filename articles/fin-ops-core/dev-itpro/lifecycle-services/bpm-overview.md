@@ -1,28 +1,17 @@
 ---
 title: Business process modeler (BPM) in Lifecycle Services (LCS)
-description: This article provides information about the Business process modeler tool in Lifecycle Services (LCS).
-author: AngelMarshall 
-ms.date: 06/15/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the Business process modeler tool in Lifecycle Services (LCS), including prerequistes and a step-by-step process of getting started.
+author: AngelMarshall
 ms.author: tsmarsha
-ms.search.validFrom: 
+ms.topic: overview
+ms.date: 06/15/2020
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 2012
-
 ---
 
 # Business process modeler (BPM) in Lifecycle Services (LCS)

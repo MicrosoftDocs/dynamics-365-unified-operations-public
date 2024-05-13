@@ -1,19 +1,19 @@
 ---
 title: What's new or changed in finance and operations apps version 10.0.6 (November 2019)
-description: This article describes features that are either new or changed in finance and operations apps version 10.0.6. This version will be released in October.
+description: Learn about new or changed features in finance and operations apps version 10.0.6. This version was released in November 2019.
 author: sericks007
-ms.date: 10/01/2019
-ms.topic: article
-ms.custom: evergreen
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 10/01/2019
+ms.custom:
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
-ms.dyn365.ops.version: Release 10.0.6
-
+ms.dyn365.ops.version: Release 10.0.6 
 ms.assetid: 
 ---
+
 # What's new or changed in finance and operations apps version 10.0.6 (November 2019)
 
 [!include [banner](../../../finance/includes/banner.md)]

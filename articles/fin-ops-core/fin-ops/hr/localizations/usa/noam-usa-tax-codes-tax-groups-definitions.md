@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Tax codes, tax groups, and posting definitions FAQ
-description: This article answers frequently asked questions about tax and posting definitions.
+description: Access a list of frequently asked questions about tax and posting definitions, including questions about mass-updating tax codes and mass-creating tax groups.
 author: twheeloc
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxCode, PayrollTaxGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4
+audience: Application User
 ms.search.region: USA
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-11-30
+ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxCode, PayrollTaxGroup
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4
 ---
 
 # Tax codes, tax groups, and posting definitions FAQ

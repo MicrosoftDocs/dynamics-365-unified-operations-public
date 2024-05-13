@@ -1,15 +1,13 @@
 ---
 title: Work with the Electronic messages functionality
-description: This article provides information about how to work with the Electronic messages (EM) functionality.
+description: Learn about how to work with the Electronic messages (EM) functionality, including outlines on various statuses for electronic messages.
 author: AdamTrukawka
-ms.date: 07/07/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 07/07/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.21
 ---

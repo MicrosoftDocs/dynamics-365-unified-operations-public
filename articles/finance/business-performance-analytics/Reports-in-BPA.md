@@ -1,34 +1,34 @@
 ---
-# required metadata
-
-title: Reports in business performance analytics
-description: This article describes reports that are related to the record-to-report value chain in business performance analytics.
+title: Reports in Business performance analytics
+description: Learn about reports that are related to the record-to-report value chain in business performance analytics, including a table outlining various aspects of reports.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 04/24/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology:
+ms.date: 04/24/2023
 ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 ---
 
-# Reports in business performance analytics
+# Reports in Business performance analytics
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-This article describes the financial reports that are available in business performance analytics. These reports have been designed to provide a detailed overview of an organization's financial health, so that stakeholders can make informed decisions and drive business success. These reports use a robust data model in Microsoft Power BI. Therefore, they're not only accurate and insightful, but can also easily be customized to suit the needs of your organization.
+This article describes the financial reports that are available out of the box in Business performance analytics. These reports were designed to provide a detailed overview of an organization's financial health, so that stakeholders can make informed decisions and drive business success. To better understand these reports, stakeholders can use the slicer, filter pane, and drill-in functions. The availability of these functions depends on the report. Slicers are filters that are available directly on the report page, whereas the filter pane must be opened before users can access the filters in it. When users hover over a table, the drill-in functionality is available in the upper right. Users must first select the direction that they want to drill in. They can then select a data point to reference where they want to drill from.
+
+All reports use a data model in Microsoft Power BI. They can also easily be customized to suit the needs of your organization. For more information, see [Create business performance analytics reports](how-to-create-and-edit-reports.md).
+
+> [!Important]
+> Out-of-the-box reports are Microsoft-type reports. These types of reports are limited in their capacity to be updated as users can't rename, delete, or edit this type of report. If a user wishes to rename or edit a Microsoft type report, they should duplicate the report to make a Custom type report and then make the changes with the duplicate.
 
 ## Record to report
 
-The following table describes the reports that are related to the record-to-report value chain in business performance analytics.
+The following table describes the reports that are related to the record-to-report value chain in Business performance analytics.
 
 | Report                             | Finance and operations report | Purpose |
 | ---------------------------------- | ----------------------------- | ------- |
-| Balance sheet                      | Balance sheet                 | This report provides a view of the organization's financial position for the year. The page includes **Legal entity** and **Fiscal period** filters. The account category setup in finance and operations apps is used to create the structure of the balance sheet. |
+| Balance sheet                      | Balance sheet                 | This report provides a view of the organization's financial position for the year. The account category setup in finance and operations apps is used to create the structure of the balance sheet. |
 | Budget vs actual                   | Budget vs actual              | This report compares the planned budget to actual financial amounts to help organizations identify areas where spending is in line with expectations and areas that require more attention. |
 | Financial performance              | Not applicable                | This report provides an in-depth analysis of a company's financial performance. It highlights key metrics, such as revenue, expenses, net income, and cash flow. |
 | General ledger dimension details   | Dimension statement           | This report breaks the general ledger down into its constituent dimensions to offer detailed insights into each aspect of the organization's financial transactions. |

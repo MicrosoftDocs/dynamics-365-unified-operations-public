@@ -6,8 +6,6 @@ ms.date: 10/04/2023
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
 ms.reviewer: johnmichalak
 ms.search.region: 
 ms.author: kailiang

@@ -1,19 +1,17 @@
 ---
 title: Reverse journal posting
-description: This article describes capabilities that let you reverse vouchers from the voucher transaction list or from financial journals.
+description: Learn about capabilities that let you reverse vouchers from the voucher transaction list or from financial journals, including on outline on reversing journals.
 author: twheeloc
-ms.date: 02/21/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: twheeloc
+ms.topic: article
+ms.date: 02/21/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerTransVoucher, LedgerJournalTable
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.form: LedgerTransVoucher, LedgerJournalTable
 ---
 
 # Reverse journal posting

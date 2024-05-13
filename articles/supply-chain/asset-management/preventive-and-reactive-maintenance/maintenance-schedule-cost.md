@@ -6,8 +6,6 @@ description: This article explains maintenance schedule cost in Asset Management
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

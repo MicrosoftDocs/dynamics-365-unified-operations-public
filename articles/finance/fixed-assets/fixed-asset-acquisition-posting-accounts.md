@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Fixed asset acquisition posting accounts
-description: This article explains how to set up General ledger posting accounts for acquiring assets.
+description: Learn about how to set up General ledger posting accounts for acquiring assets, with an outline on offset accounts and balance sheet accounts.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetPosting
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetPosting
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ---
 
 # Fixed asset acquisition posting accounts

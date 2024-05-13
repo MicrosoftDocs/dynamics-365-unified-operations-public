@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a journal entry using template
-description: Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher. 
+description: Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher, including a step-by-step process.
 author: aprilolson
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/18/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a journal entry using template
 
 [!include [banner](../../includes/banner.md)]
@@ -50,8 +41,8 @@ Posted journal vouchers can be saved as Voucher templates and applied in a new j
 18. Click **Functions**.
 19. Click **Save voucher** template.
 20. This procedure assumes a **Percent Template** type. Click **OK**.
-    - Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.
-    - Amount: The actual amounts will be stored and applied.  
+    - **Percent** - The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.
+    - **Amount** - The actual amounts will be stored and applied.  
 21. Click **General journals**.
 22. Click **New**.
 23. In the **Name** field, click the drop-down button to open the lookup.

@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Restart environment services
-description: This article explains how to restart individual services in environments that are deployed through Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to restart individual services in environments that are deployed through Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 03/15/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 03/15/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global 
 ms.search.validFrom: 2018-03-05
+ms.search.form: 
 ms.dyn365.ops.version: 7.3
 ---
 

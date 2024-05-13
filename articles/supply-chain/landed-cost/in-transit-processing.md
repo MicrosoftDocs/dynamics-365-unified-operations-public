@@ -6,8 +6,6 @@ description: This article describes how to work with goods-in-transit orders. Wh
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

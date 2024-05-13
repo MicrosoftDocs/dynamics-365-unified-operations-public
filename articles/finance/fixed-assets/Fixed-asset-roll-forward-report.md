@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Fixed assets roll forward report
-description: This article explains how to use the Fixed assets roll forward report.
+description: Learn how to use the Fixed assets roll forward report, which reports for individual fixed assets, including a table that defines various fields.
 author: moaamer
-ms.date: 01/08/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 01/08/2018
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-12-20
+ms.search.form: 
 ms.dyn365.ops.version: 7.3
-
+ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ---
+
 # Fixed assets roll forward report
 
 [!include [banner](../includes/banner.md)]

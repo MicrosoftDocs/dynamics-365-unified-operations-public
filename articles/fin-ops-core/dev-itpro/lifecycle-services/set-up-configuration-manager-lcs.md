@@ -1,15 +1,13 @@
 ---
 title: Set up Configuration manager
-description: This article provides information about how to set up the Configuration manager.
-author: gianugo
-ms.date: 10/16/2019
+description: Learn about how to set up the Configuration manager, including outlines on installing and configuring local components.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 10/16/2019
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba

@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Extend tax engine configurations
-description: This article provides information about extending tax engine configurations.
-author: kailiang
-ms.date: 05/24/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: India
-# ms.search.industry: 
+description: Learn about extending tax engine configurations, including prerequisites and a table that provides full names for various tax terms.
+author: Kai-Cloud
 ms.author: kailiang
+ms.topic: article
+ms.date: 05/24/2021
+ms.reviewer: kfend
+audience: IT Pro 
+ms.search.region: India
 ms.search.validFrom: 2017-12-31
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Extend tax engine configurations 
@@ -509,15 +498,15 @@ After the status is updated to **Complete**, the configuration is ready for depl
 1. Go to **Extension configuration**, and then select **Rebase**. 
 2. In the **Rebase** dialog box, in the **Target version** field, change the target version to latest Microsoft version.
 
-	[![Rebase step 1.](../general-ledger/media/extend-tax-engine-configurations-rebase1.png)](/media/extend-tax-engine-configurations-rebase1.png)
+	[![Rebase step 1.](../general-ledger/media/extend-tax-engine-configurations-rebase1.png)]
 
 	If there is a conflict, you will receive a warning message.
 	
-	[![Rebase step 2.](../general-ledger/media/extend-tax-engine-configurations-rebase2.png)](/media/extend-tax-engine-configurations-rebase2.png)
+	[![Rebase step 2.](../general-ledger/media/extend-tax-engine-configurations-rebase2.png)]
 
 3. To resolve the conflict, select **Designer** to open the rebased extension configuration.
 
-	[![Rebase step 3.](../general-ledger/media/extend-tax-engine-configurations-rebase3.png)](/media/extend-tax-engine-configurations-rebase3.png)
+	[![Rebase step 3.](../general-ledger/media/extend-tax-engine-configurations-rebase3.png)]
 
 4. Select one of the following three ways to resolve the conflict:
 
@@ -527,6 +516,6 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 5. After you resolve the conflict, the **Resolved** check box is marked.
 
-	[![rebase step 4.](../general-ledger/media/extend-tax-engine-configurations-rebase4.png)](/media/extend-tax-engine-configurations-rebase4.png)
+	[![rebase step 4.](../general-ledger/media/extend-tax-engine-configurations-rebase4.png)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,29 +1,23 @@
 ---
-# required metadata
-
-title: Set up business performance analytics
-description: This article describes how to configure business performance analytics.
+title: Install prerequisites for Business performance analytics
+description: Learn how to complete the prerequisites for Business performance analytics, including outlines on availability, and systema and version requirements.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 12/20/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology:
+ms.date: 05/01/2024
 ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
-ms.audience: administrator
 ---
 
-# Set up business performance analytics
+# Business performance analytics installation prerequisites
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for Business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-This article describes how to configure business performance analytics.
+This article describes the prerequisites to installing Business performance analytics.
 
-To complete the following procedures and successfully configure business performance analytics, you must have the following privileges:
+To complete the following procedures and successfully complete the prerequisites for Business performance analytics, you must have the following privileges:
 
 - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
   Follow these steps to confirm that you have these privileges:
@@ -37,9 +31,18 @@ To complete the following procedures and successfully configure business perform
   3. Click **Installing user** > **Roles**. Confirm the necessary permissions.
 - The **Organization Admin** role to create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
 
+## Availability
+Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
+
+## System requirements
+A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+
+## Version requirements
+Business performance analytics requires Dynamics 365 Finance version 10.0.38 (Application version 10.0.1777.72) or later.
+
 ## Configure Microsoft Power Platform
 
-To configure Microsoft Power Platform for business performance analytics, follow these steps.
+To configure Microsoft Power Platform for Business performance analytics, follow these steps.
 
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/).
 2. Go to the details page of the implementation project that's used to manage the Dynamics 365 Finance environment.
@@ -52,17 +55,17 @@ To configure Microsoft Power Platform for business performance analytics, follow
 Microsoft Entra must be configured so that it can be used with Microsoft Power Platform. The following setup must be completed.
 
 1. In the Azure portal, go to the [license assignment page](https://ms.portal.azure.com/#view/Microsoft_Microsoft Entra ID_IAM/LicensesMenuBlade/~/Products). Sign in using the credentials of the tenant administrator.
-2. Apply a Dynamics 365 Finance or equivalent license to the user who's installing business performance analytics.
+2. Apply a Dynamics 365 Finance or equivalent license to the user who's installing Business performance analytics.
 
 For more information, see [Assign or remove licenses](/azure/active-directory/fundamentals/license-users-groups).
 
 ## Move data from a production environment to a sandbox environment
 
-To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](../../fin-ops-core/dev-itpro/database/dbmovement-operations.md). This data is loaded into business performance analytics and is a prerequisite for the installation of business performance analytics.
+To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](../../fin-ops-core/dev-itpro/database/dbmovement-operations.md). This data is loaded into Business performance analytics and is a prerequisite for the installation of Business performance analytics.
 
 ## Power App users 
 
-Before business performance analytics can be installed, confirm the users are enabled in Dynamics 365 Finance.
+Before Business performance analytics can be installed, confirm the users are enabled in Dynamics 365 Finance.
 
 1. In Dynamics 365 Finance, go to **System Administration \> Users**.
 2. In filters, add **IsMicrosoftAccount Isexactly true**.
@@ -73,7 +76,7 @@ Before business performance analytics can be installed, confirm the users are en
 
 ## Required configurations in Dynamics 365 Finance
 
-The following setup is required in the Dynamics 365 Finance before you can install business performance analytics.
+The following setup is required in the Dynamics 365 Finance before you can install Business performance analytics.
 
 1. Turn on maintenance mode by using Lifecycle Services.
 
@@ -84,19 +87,15 @@ The following setup is required in the Dynamics 365 Finance before you can insta
 
     1. Go to **System administration \> License configuration**.
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
-    3. Confirm that the following checkboxes are enabled:
-        - **General ledger** - **Budget**, **Reversing entries**, **Sales tax**
+    3. Confirm that the following checkboxes and sub-checkboxes are enabled:
+        - **General ledger** - Budget, Reversing entries, Sales tax
         - **Fixed assets**
-        - **Bank**
-        - **Trade**
-        - **Trade agreements**
+        - **Bank** - Check, Deposit slip, Negotiable instrument - Bill of exchange
+        - **Trade** Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management
+        - **Trade agreements** - Price/discount
         - **Project**
-        - **Procurement 1**
-        - **Process distribution**
-        - **Retail channels**
+        - **Procurement 1** - Purchase requisition
         - **Service management**
-       
-        
        
 3. When you've finished, disable maintenance mode.
 

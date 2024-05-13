@@ -1,25 +1,16 @@
 --- 
-# required metadata 
- 
 title: Define audit policies for source documents
-description: This article explains how to set up and run audit policy rules. 
+description: Learn how to set up and run audit policy rules and define audit policies for source documents, including a step-by-step process using the USMF demo company.
 author: panolte
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 04/05/2024
-ms.topic: how-to 
- 
- 
-# optional metadata 
- 
-ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Define audit policies for source documents

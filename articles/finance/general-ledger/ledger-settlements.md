@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Ledger settlements
-description: This article explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
+description: Learn how to use the Ledger settlements page to settle ledger transactions and reverse settlements, including an outline on ledger settlement features.
 author: kweekley
-ms.date: 10/27/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  LedgerTransSettlement
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom:
-# ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 10/27/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-11-30
+ms.search.form: LedgerTransSettlement
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Ledger settlements

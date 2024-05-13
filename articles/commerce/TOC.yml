@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.40 (June 2024)
+          href: get-started/whats-new-commerce-10-0-40.md
         - name: Commerce 10.0.39 (April 2024)
           href: get-started/whats-new-commerce-10-0-39.md
         - name: Commerce 10.0.38 (February 2024)
           href: get-started/whats-new-commerce-10-0-38.md
-        - name: Commerce 10.0.37 (November 2023)
-          href: get-started/whats-new-commerce-10-0-37.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -388,6 +388,8 @@
             href: dev-itpro/store-commerce-faq.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
+          - name: Enable self-checkout in the Store Commerce app (preview)
+            href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
@@ -1332,15 +1334,15 @@
             href: add-cart-module.md
           - name: Cart icon module
             href: cart-icon-module.md
-          - name: Checkout module
+          - name: Checkout module (preview)
             href: add-checkout-module.md
           - name: Checkout module error reference codes
             href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
-          - name: Shipping address module
+          - name: Shipping address module (preview)
             href: ship-address-module.md
-          - name: Delivery options module
+          - name: Delivery options module (preview)
             href: delivery-options-module.md
           - name: Pickup information module
             href: pickup-info-module.md

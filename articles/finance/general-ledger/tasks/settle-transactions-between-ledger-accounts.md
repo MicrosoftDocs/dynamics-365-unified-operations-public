@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Settle transactions between ledger accounts
-description: This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement. 
+description: Learn how to settle transactions between ledger accounts and cancel a ledger settlement, including step-by-step processes on canceling ledger settlements. 
 author: aprilolson
-ms.date: 10/03/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 10/03/2018
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Settle transactions between ledger accounts
 
 [!include [banner](../../includes/banner.md)]

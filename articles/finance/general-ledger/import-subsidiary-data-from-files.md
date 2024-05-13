@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Import subsidiary data from files
-description: This article explains how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance.
+description: Learn how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance, including a step-by-step process.
 author: jinniew
-ms.date: 10/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-ms.reviewer: twheeloc
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 10/09/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-12-01
+ms.search.form: 
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Import subsidiary data from files

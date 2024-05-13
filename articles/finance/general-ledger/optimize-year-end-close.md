@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Optimize year-end close
-description: This article describes the Optimize year-end close service add-in that's available for the general ledger year-end close process.
+description: Learn about the Optimize year-end close service add-in that's available for the general ledger year-end close process, including an outline on improved performance.
 author: moaamer
-ms.date: 12/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerClosingSheet
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 12/02/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-11-28
+ms.search.form: LedgerClosingSheet
 ms.dyn365.ops.version: AX 10.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Optimize year-end close 

@@ -1,5 +1,80 @@
 {
   "redirections": [
+     {
+      "source_path": "articles/finance/finance-insights/finance-insights-troubleshooting-faq.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/finance-insights/finance-insights-troubleshooting-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/human-resources/hr-teams-leave-app.md",
+      "redirect_url": "/human-resources/hr-app",
+      "redirect_document_id": "false"
+    },   
+    {
+      "source_path": "articles/human-resources/hr-admin-teams-leave-app.md",
+      "redirect_url": "/human-resources/hr-app",
+      "redirect_document_id": "false"
+    },   
+     {
+      "source_path": "articles/finance/general-ledger/add-change-acctg-rprtg-crrncy.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/add-change-accounting-reporting-currency",
+      "redirect_document_id": "false"
+    },    
+     {
+      "source_path": "articles/finance/cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-cant-be-settled",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/cash-bank-management/settlement-overview-resolve-issues",
+      "redirect_document_id": "false"
+    }, 
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-report-designer-issues-with-event-viewer",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
+      "redirect_document_id": "false"
+    }, 
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshoot-issues-connecting-to-financial-reporting",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/unable-to-connect-financial-reporting-server",
+      "redirect_document_id": "false"
+    },
+     {
+      "source_path": "articles/finance/general-ledger/financial-reporting-getting-started.md#troubleshooting-issues-opening-report-designer",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer",
+      "redirect_document_id": "false"
+    },     
+     {
+      "source_path": "articles/finance/general-ledger/cant-reverse-transctns.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/cant-reverse-transactions",
+      "redirect_document_id": "false"
+    },  
+     {
+      "source_path": "articles/finance/general-ledger/yec-mssng-open-blnces.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/year-end-close-miss-opening-balances",
+      "redirect_document_id": "false"
+    },  
+     {
+      "source_path": "articles/finance/general-ledger/rvrs-settgs-on-jrnls-lines.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/vouchers-not-reversed-posting-journal",
+      "redirect_document_id": "false"
+    },     
+     {
+      "source_path": "articles/finance/general-ledger/set-up-balance-dimensions.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/set-up-balance-dimensions",
+      "redirect_document_id": "false"
+    },    
+     {
+      "source_path": "articles/finance/general-ledger/dimension-default-values.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/dimension-default-values",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/finance/general-ledger/posting-fail-imbalance.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/posting-fail-imbalance",
+      "redirect_document_id": "false"
+    },     
+    {
+      "source_path": "articles/finance/general-ledger/open-fincl-jrnls-in-office.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/custom-excel-template-financial-journals-not-available",
+      "redirect_document_id": "false"
+    },    
     {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/third-party-service-test.md",
       "redirect_url": "dynamics365/fin-ops-core/fin-ops",
@@ -27597,6 +27672,11 @@
     {
       "source_path": "articles/commerce/cost.md",
       "redirect_url": "/dynamics365/commerce/dom-costs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/wms-only-mode-using.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/wms-only-mode-shared-and-external-detail-use",
       "redirect_document_id": false
     }
   ]

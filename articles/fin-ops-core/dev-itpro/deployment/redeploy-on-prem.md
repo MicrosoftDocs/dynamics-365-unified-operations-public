@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.date: 10/14/2020
 ms.custom: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30

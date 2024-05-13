@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up bonus depreciation
-description: This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book. 
+description: Learn how to create a special depreciation allowance and associate it with a fixed asset book, including a process for creating special depreciations.
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up bonus depreciation
 
 [!include [banner](../../includes/banner.md)]

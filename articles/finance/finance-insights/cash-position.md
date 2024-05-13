@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Cash position
-description: This article describes how the Cash flow forecasting feature predicts an organization's cash position for specific times. It also describes the options that are available for showing forecasts for different periods. 
-author: ShivamPandey-msft
-ms.date: 12/21/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how the Cash flow forecasting feature predicts an organization's cash position for specific times, including options for showing forecasts for different periods.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 12/21/2021
+ms.reviewer: kfend 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-11-06
+ms.search.form:
 ms.dyn365.ops.version: AX 10.0.8
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Cash position

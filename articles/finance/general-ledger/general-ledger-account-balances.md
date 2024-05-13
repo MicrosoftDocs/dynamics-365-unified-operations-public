@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: General ledger account balances
-description: This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports. 
-author: aprilolson
-ms.date: 03/29/2024
-ms.topic: article
-
-
-# optional metadata
-
-ms.search.form: LedgerTrialBalanceListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about two ways to view general ledger account balances - the Trial balance list page and financial reports, including an outline on trail balance snapshots.
+author: JodiChristiansen
 ms.author: aolson
+ms.topic: article
+ms.date: 4/22/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerTrialBalanceListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
 ---
 
 # General ledger account balances
@@ -45,7 +34,7 @@ The trial balance is a list page that shows all of the balances of an account an
 
 When a user changes the parameters the balances are refreshed. The user can also pick what dimension set they want to view balances for and whether each of the dimensions show in separate columns. 
 
-Users can drill down on the balances to view the transactions that make up the balance.    
+Users can drill down on the balances to view the transactions that make up the balance.
 
 
 ## Trial balance snapshots
@@ -97,8 +86,6 @@ To view the results, go to **General ledger** \> **Inquiries and reports** \> **
 
 
 For more information, see [View financial reports](view-financial-reports.md).
-
-
 
 
 

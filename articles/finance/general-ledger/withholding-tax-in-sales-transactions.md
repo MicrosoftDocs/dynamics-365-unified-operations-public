@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Withholding tax in sales transactions
-description: This article explains how to enable the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default withholding tax group. 
+description: Learn how to enable the calculation of withholding tax for selected customers, including step-by-step processes and outlines on assigning tax groups.
 author: kailiang
+ms.author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2020-01-12
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.16
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Withholding tax in sales transactions

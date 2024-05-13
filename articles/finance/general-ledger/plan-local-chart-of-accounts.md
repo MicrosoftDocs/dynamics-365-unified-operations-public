@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Plan your local chart of accounts
-description: This article provides information that will help you plan the chart of accounts when you have requirements for statutory/local requirements for your organization.
+description: Learn about what will help you plan the chart of accounts when you have requirements for statutory/local requirements for your organization.
 author: VeselinaE
-ms.date: 10/07/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, LedgerConsolidateAccountGroup, MainAccountConsolidateAccount, DimensionDetails, MainAccountDetails
-ROBOTS: 
-audience: Application User
-ms.devlang: 
-ms.reviewer: twheeloc
-ms.tgt_pltfrm: 
-ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
-ms.search.region: Global
-ms.search.industry: 
 ms.author: veneva
+ms.topic: article
+ms.date: 10/07/2021
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 10/07/2021
+ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, LedgerConsolidateAccountGroup, MainAccountConsolidateAccount, DimensionDetails, MainAccountDetails
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 ---
 
 # Plan your local chart of accounts

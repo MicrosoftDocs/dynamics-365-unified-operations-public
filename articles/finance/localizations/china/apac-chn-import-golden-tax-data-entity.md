@@ -4,8 +4,6 @@ description: This article explains how to import the Chinese Golden Tax files in
 author: mrolecki
 ms.date: 12/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)

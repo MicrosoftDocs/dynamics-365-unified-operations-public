@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Publish journal lines and documents from Excel
-description: This article explains how to enter and publish lines for general journals from Microsoft Excel. It includes information about the various templates that you can use, depending on the type of transactions that you're entering.
+description: Learn how to enter and publish lines for general journals from Microsoft Excel, including an outline about the various templates that you can use.
 author: kweekley
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
 ---
 
 # Publish journal lines and documents from Excel

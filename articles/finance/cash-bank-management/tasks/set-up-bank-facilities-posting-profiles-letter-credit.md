@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up bank facilities and posting profiles for letter of credit
-description: This procedure walks through creating a Bank facility and posting profile required to process Letters of credit. 
+description: Learn how to create a Bank facility and posting profile required to process Letters of credit, including multiple step-by-step processes. 
 author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 11/15/2022
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up bank facilities and posting profiles for letter of credit
 
 [!include [banner](../../includes/banner.md)]

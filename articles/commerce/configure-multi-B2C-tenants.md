@@ -4,8 +4,6 @@ description: This article describes when and how to set up multiple per-channel 
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

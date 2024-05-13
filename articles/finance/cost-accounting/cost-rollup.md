@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Cost rollup policy and overhead calculation 
-description: This article provides information about how to determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability. 
-author: AndersGirke
-ms.date: 06/16/2017
+description: Learn how to determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability.
+author: AndersEvenGirke
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/16/2017
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
+ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy 
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Cost rollup policy and overhead calculation 
