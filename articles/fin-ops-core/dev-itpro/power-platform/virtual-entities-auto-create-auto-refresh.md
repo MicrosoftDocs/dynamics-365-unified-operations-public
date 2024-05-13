@@ -25,8 +25,8 @@ ms.search.validFrom: 2024-05-31
 
 ## Overview
 
-Today, any changes in Microsoft Dynamics 365 Finance and Operations Data entity are not visible to Dataverse until there is a manual refresh from Dataverse. This feature aims to automatically refresh all virtual entity metadata reliably and efficiently, ensuring timely updates in the Dataverse. This would remove the requirement of manually refreshing the entity from Dataverse.
-This also paves way for automatically creating virtual entities in Dataverse for Microsoft Dynamics 365 Finance and Operations Data entities.
+Today, any changes in Microsoft Dynamics 365 Finance and Operations Data entity are not visible to Dataverse until there is a manual refresh from Dataverse. This feature aims to automatically refresh all virtual table metadata reliably and efficiently, ensuring timely updates in the Dataverse. This would remove the requirement of manually refreshing F&O entity into Dataverse.
+This also paves way for automatically creating virtual tables in Dataverse for Microsoft Dynamics 365 Finance and Operations Data entities.
 
 ## Details
 ![Architecture of virtual entities for auto create and refresh.](media/AutoCreate_Refresh_Overview.png)
@@ -37,7 +37,7 @@ This also paves way for automatically creating virtual entities in Dataverse for
 
 **Auto Create:**
 * This feature is activated after Auto Refresh package deployment.
-* Any designated Microsoft Dynamics 365 Finance and Operations Data entity with "Dataverse.AutoCreate" metadata property set to "Yes" will automatically be enabled as a Virtual Entity in the linked Dataverse environment.
+* Any designated Microsoft Dynamics 365 Finance and Operations Data entity with "Dataverse.AutoCreate" metadata property set to "Yes" will automatically be enabled as a Virtual Table in the linked Dataverse environment.
 * The enabling process is managed by another batch job (CDSVirtualEntityAutoCreateBatch), which runs approximately ninety minutes following the package deployment.
 
 Each failed entity refresh will be automatically retried up to 3 times. This retry limit is fixed and cannot be configured.
@@ -47,7 +47,7 @@ Each failed entity refresh will be automatically retried up to 3 times. This ret
 * The status of the new batch jobs can be monitored using the existing Batch Jobs form.
 * Additionally, the status of Automatic Metadata Synchronizations can be checked using a newly created form.
 * To view the results of automatic metadata synchronizations, navigate to the new Finance and Operations form named "Virtual entity metadata sync status"
-* All automatically created and refreshed entities will be displayed within this form.
+* All automatically created and refreshed F&O entities will be displayed within this form.
   * In case of successful synchronization, the "Last refresh time" field will indicate the time of the successful synchronization.
   * In case of a failed synchronization:
     * Personalize the grid within this form by adding the "IsTransientFailure" field for enhanced visibility and troubleshooting.
