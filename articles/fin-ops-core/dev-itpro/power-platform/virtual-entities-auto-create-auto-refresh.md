@@ -25,26 +25,25 @@ ms.search.validFrom: 2024-05-31
 
 ## Overview
 
-Today, any changes in Microsoft Dynamics 365 Finance and Operations Data entity are not visible to Dataverse until there is a manual refresh from Dataverse. This feature aims to automatically refresh all virtual table metadata reliably and efficiently, ensuring timely updates in the Dataverse. This would remove the requirement of manually refreshing F&O entity into Dataverse.
-This also paves way for automatically creating virtual tables in Dataverse for Microsoft Dynamics 365 Finance and Operations Data entities.
+Changes made in Microsoft Dynamics 365 Finance and Operations on Data entity are visible to Dataverse through a manual refresh in Dataverse. The Auto Create and Refresh capability in Finance and Operations enables automatic metadata creation or modification in Dataverse immediately, reliably and efficiently. Automatic refresh of metadata ensures timely updates in Dataverse from Finance and Operations (F&O). Enabling Automatic Create and Refresh capability eliminates the need to manually refresh F&O entity into Dataverse. This capability paves way for automatically creating virtual tables in Dataverse for Microsoft Dynamics 365 Finance and Operations Data entities.
 
 ## Details
 ![Architecture of virtual entities for auto create and refresh.](media/AutoCreate_Refresh_Overview.png)
 
 **Auto Refresh:**
-* This feature activates upon package deployment.
-* If modifications to an existing Dataverse Microsoft Dynamics 365 Finance and Operations Data entity are included in the deployed package, an X++ batch job (CDSVirtualEntityRefreshBatch) is triggered. This job executes approximately thirty minutes after the package deployment.
+* Virtual Table Auto Refresh feature is activated when the supported version of package is deployed. Supported platform versions are - PU62 (7.0.7120.170) or PU63 (7.0.7198.123) or PU64 (7.0.7279.31) or later.
+* The package when deployed in Microsoft Dynamics 365 Finance and Operations will trigger an an X++ batch job (CDSVirtualEntityRefreshBatch). This batcj job is triggered thirty (30) minutes after successful deployment of feature package.
 
 **Auto Create:**
-* This feature is activated after Auto Refresh package deployment.
-* Any designated Microsoft Dynamics 365 Finance and Operations Data entity with "Dataverse.AutoCreate" metadata property set to "Yes" will automatically be enabled as a Virtual Table in the linked Dataverse environment.
-* The enabling process is managed by another batch job (CDSVirtualEntityAutoCreateBatch), which runs approximately ninety minutes following the package deployment.
+* Auto create capability is activated when the supported version of the feature is deployed. Supported platform versions - PU63 (7.0.7198.123) or PU64 (7.0.7279.31) or later.
+* In Microsoft Dynamics 365 Finance and Operations, the user has to set "Dataverse.AutoCreate" metadata property value to "Yes" to enable automatic creation of Virtual Table in the linked Dataverse environment.
+* The automatic virtual table creation in Dataverse from F&O is managed through a batch job (CDSVirtualEntityAutoCreateBatch). This batch is triggered ninety (90) minutes after successful deployment of feature package.
 
-Each failed entity refresh will be automatically retried up to 3 times. This retry limit is fixed and cannot be configured.
+** Failure ** arising due to automatic create or refresh has an automatic retry process. The automatic retry is currently fixed at 3 times and cannot be configured. 
 
 ## Monitoring
 
-* The status of the new batch jobs can be monitored using the existing Batch Jobs form.
+* The status of the auto create or auto refresh batch jobs can be monitored using the existing Batch Jobs form.
 * Additionally, the status of Automatic Metadata Synchronizations can be checked using a newly created form.
 * To view the results of automatic metadata synchronizations, navigate to the new Finance and Operations form named "Virtual entity metadata sync status"
 * All automatically created and refreshed F&O entities will be displayed within this form.
