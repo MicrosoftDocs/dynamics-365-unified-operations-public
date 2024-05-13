@@ -1,16 +1,16 @@
 ---
 title: Notification and registration for the NemHandelsRegistret in Denmark
-description: This article describes how to handle notification and registration with the NemHandelsRegistret (NHR) in Denmark.
+description: Learn how to handle notification and registration with the NemHandelsRegistret (NHR) in Denmark, including outlines on notification types.
 author: mrolecki
-ms.date: 12/07/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: kfend
+ms.topic: article
+ms.date: 12/07/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: nemhandel, NemHandelsRegistret, notification, registration, denmark
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Notification and registration for the NemHandelsRegistret in Denmark

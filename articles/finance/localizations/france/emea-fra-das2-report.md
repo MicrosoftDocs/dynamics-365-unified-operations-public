@@ -1,13 +1,13 @@
 ---
 title: DAS-2 report
-description: This article guides you through the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
+description: Learn about the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance with an overview on vendor configuration.
 author: AdamTrukawka
-ms.date: 12/20/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: France
 ms.author: atrukawk
+ms.topic: article
+ms.date: 12/20/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: France
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,17 +1,17 @@
 ---
 title: VAT declaration for Estonia
-description: This article explains how to set up a value-added tax (VAT) declaration for legal entities in Estonia.
+description: Learn how to set up a value-added tax (VAT) declaration for legal entities in Estonia, including an overview on VAT declarations.
 author: liza-golub
-ms.date: 01/15/2024
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Estonia
 ms.author: egolub
-ms.search.validFrom: 2024-01-15
-ms.dyn365.ops.version: AX 7.0.1
+ms.topic: how-to
+ms.date: 01/15/2024
 ms.custom: 266904
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Estonia
+ms.search.validFrom: 2024-01-15
 ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # VAT declaration for Estonia

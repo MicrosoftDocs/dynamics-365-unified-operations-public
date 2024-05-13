@@ -1,16 +1,16 @@
 ---
 title: Registration IDs
-description: This article provides information about setting up and using registration IDs.
+description: Learn about setting up and using registration IDs, including outlines on registration type creation assigning registration types to registration categories.
 author: kfend
-ms.date: 11/08/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: kfend
+ms.topic: article
+ms.date: 11/08/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Registration IDs

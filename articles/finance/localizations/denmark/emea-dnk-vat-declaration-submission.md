@@ -1,13 +1,13 @@
 ---
 title: Submit a VAT return in XML format to the Danish Tax Agency
-description: This article describes how to set up, generate, and submit a value-added tax (VAT) declaration for Denmark in XML format.
+description: Learn how to set up, generate, and submit a value-added tax (VAT) declaration for Denmark in XML format, including prerequisites.
 author: liza-golub
-ms.date: 01/17/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: egolub
+ms.topic: article
+ms.date: 01/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

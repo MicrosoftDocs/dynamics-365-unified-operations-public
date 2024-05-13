@@ -1,22 +1,16 @@
 ---
-# required metadata
-
 title: Configure fiscal books
-description: This article explains how to configure fiscal books. Fiscal books help you consolidate fiscal and statutory books into electronic files, so that you can fulfill the requirements under SPED.
-author:  v-gonode
-ms.date: 04/04/2017
+description: Learn how to configure fiscal books, which help you consolidate fiscal and statutory books into electronic files, letting you fulfill the requirements under SPED.
+author: v-gonode
+ms.author: kfend
 ms.topic: article
-# optional metadata
-
-ms.search.form:  FBTaxStatement_BR
-audience: Application User
-# ms.devlang: 
+ms.date: 04/04/2017
+ms.custom:
 ms.reviewer: johnmichalak
-# ms.custom: 
+audience: Application User
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author:  kfend
 ms.search.validFrom: 2017-06-30
+ms.search.form: FBTaxStatement_BR
 ms.dyn365.ops.version: July 2017 update
 ---
 

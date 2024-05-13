@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Intrastat overview
-description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
+description: Learn about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
 author: mrolecki
-ms.date: 04/17/2023
-ms.topic: overview
-# optional metadata
-
-ms.search.form: Intrastat
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.search.industry: 
 ms.author: mrolecki
+ms.topic: overview
+ms.date: 04/17/2023
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-11-30
+ms.search.form: Intrastat
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Intrastat overview

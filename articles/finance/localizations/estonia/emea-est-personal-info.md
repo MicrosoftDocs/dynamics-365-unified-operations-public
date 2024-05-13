@@ -1,13 +1,13 @@
 ---
 title: Personal information requests for Estonia
-description: This article provides information about personal information requests for Estonia.
+description: Learn about personal information requests for Estonia, including an outline on various reports that are available and additional resources.
 author: AdamTrukawka
-ms.date: 04/21/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Estonia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Estonia
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

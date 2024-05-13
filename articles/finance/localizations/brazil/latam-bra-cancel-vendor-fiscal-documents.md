@@ -1,13 +1,13 @@
 ---
 title: Cancel vendor fiscal documents
-description: This article provides information about how to cancel a vendor fiscal document for Brazil.
+description: Learn about how to cancel a vendor fiscal document for Brazil, which creates negative purchase orders and run the fiscal book integration process.
 author: gionoder
-ms.date: 06/05/2018
+ms.author: johnmichalak
 ms.topic: article
-audience: Application User
+ms.date: 06/05/2018
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Brazil
-ms.author: gionoder
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

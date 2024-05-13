@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Estonia overview
-description: This article provides an overview of functionality specific to Estonia.
+description: Learn about functionality specific to Estonia and resources that should be considered for legal entities with a primary address in Estonia.
 author: kfend
-ms.date: 07/25/2019
-ms.topic: overview
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
-ms.search.region: Estonia
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Estonia
 ms.search.validFrom: 2016-05-31
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Estonia overview

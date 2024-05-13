@@ -1,13 +1,13 @@
 ---
 title: Generate fiscal documents for a load
-description: This article explains how to generate fiscal documents for a load for Brazil.
+description: Learn how to generate fiscal documents for a load for Brazil, including outlines on sales orders, prerequisites, and generating fiscal documents for a load.
 author: AdamTrukawka
-ms.date: 06/05/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/05/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: View transactions on settlement for Eastern Europe
-description: This article provides information about the Transactions on settlement page for customers and vendors.
+description: Learn about the Transactions on settlement page for customers and vendors, including a list of scenarios in which you can view settlement-related information.
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
+ms.author: evgenypopov
 ms.topic: article
-# optional metadata
-
-ms.search.form: CustVendTransPostingLog_RU
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: CustVendTransPostingLog_RU
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # View transactions on settlement for Eastern Europe

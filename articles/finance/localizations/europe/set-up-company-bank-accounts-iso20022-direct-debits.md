@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up company bank accounts for ISO20022 direct debits
-description: This article explains how to set up company-specific bank account information that's required to generate customer payment files. 
+description: Learn how to set up company-specific bank account information, such as IBAN and SWIFT codes, that's required to generate customer payment files. 
 author: mrolecki
-ms.date: 08/01/2023
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up company bank accounts for ISO20022 direct debits
 
 [!include [banner](../../includes/banner.md)]

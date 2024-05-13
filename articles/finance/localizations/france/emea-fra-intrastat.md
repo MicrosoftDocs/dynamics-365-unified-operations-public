@@ -1,16 +1,15 @@
 ---
 title: French Intrastat
-description: This article contains information about Intrastat declaration in France.
+description: Learn about Intrastat declaration in France, including an outline ons etting up Intrastat and a table that outlines report levels for various fields.
 author: anasyash
-ms.date: 11/30/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 11/30/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
 ---
-
 
 # French Intrastat
 

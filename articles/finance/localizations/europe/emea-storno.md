@@ -1,13 +1,13 @@
 ---
 title: Storno accounting
-description: Storno accounting is the practice of using negative numbers to reverse original journal account entries.
+description: Storno accounting is the practice of using negative numbers to reverse original journal account entries, including an example.
 author: kfend
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

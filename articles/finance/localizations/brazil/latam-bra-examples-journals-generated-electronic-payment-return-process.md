@@ -1,13 +1,13 @@
 ---
 title: Journals generated during the electronic payment return process for Brazil
-description: This article shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
+description: Learn how payment journals are generated when you  post the return file for electronic payments. Approved payment lines in return files are posted to journals.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ---

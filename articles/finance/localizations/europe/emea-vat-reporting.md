@@ -1,16 +1,16 @@
 ---
 title: Tax reporting by reporting codes
-description: This article provides general information about how to set up and generate the tax statement.
+description: Learn about general information about how to set up and generate the tax statement, including a tax statement overview.
 author: liza-golub
-ms.date: 03/24/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Australia, Japan, Latvia, Lithuania
 ms.author: egolub
+ms.topic: article
+ms.date: 03/24/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Australia, Japan, Latvia, Lithuania
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Tax reporting by reporting codes

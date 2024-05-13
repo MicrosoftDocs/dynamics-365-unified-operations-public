@@ -1,13 +1,13 @@
 ---
 title: VAT declaration (Finland)
-description: This article describes how to set up and generate a value-added tax (VAT) declaration for Finland.
+description: Learn how to set up and generate a value-added tax (VAT) declaration for Finland, including a table that defines various field IDs.
 author: AdamTrukawka
-ms.date: 11/03/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Finland
 ms.author: atrukawk
+ms.topic: article
+ms.date: 11/03/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Finland
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

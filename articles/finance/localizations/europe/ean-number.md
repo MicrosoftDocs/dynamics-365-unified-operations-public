@@ -1,16 +1,16 @@
 ---
 title: European article numbering (EAN) location numbers
-description: This article provides information about European article numbering (EAN) location numbers.
+description: Learn about European article numbering (EAN) location numbers, including an outline on EAN location numbers in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.date: 12/07/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: kfend
+ms.topic: article
+ms.date: 12/07/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: E
+ms.dyn365.ops.version: Version 1611
 ---
 
 # European article numbering (EAN) location numbers

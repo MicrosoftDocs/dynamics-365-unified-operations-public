@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up customers and customer bank accounts for ISO20022 direct debits
-description: This article explains how to set up a customer bank account and a customer direct debit mandate which are required to generate customer payment files like the ISO20022 direct debit. 
+description: Learn how to set up a customer bank account and a customer direct debit mandate, which are required to generate customer payment files.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up customers and customer bank accounts for ISO20022 direct debits
 
 [!include [banner](../../includes/banner.md)]

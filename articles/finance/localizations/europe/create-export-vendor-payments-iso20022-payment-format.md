@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create and export vendor payments using ISO20022 payment format
-description: This article explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example. 
+description: Learn how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example. 
 author: mrolecki
-ms.date: 08/01/2023
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and export vendor payments using ISO20022 payment format
 
 [!include [banner](../../includes/banner.md)]

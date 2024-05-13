@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Set up bank account numbers for Brazil
-description: This article explains how to set up bank account numbers for the Brazilian localization.
+description: Learn how to set up bank account numbers for the Brazilian localization, including a step-by-step process for creating a bank account number in the require format.
 author: gionoder
-ms.date: 01/20/2022
+ms.author: johnmichalak
 ms.topic: overview
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/20/2022
+ms.custom:
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
+audience: Application User
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: gionoder
 ms.search.validFrom: 2022-01-20
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
 
 # Set up bank account numbers for Brazil

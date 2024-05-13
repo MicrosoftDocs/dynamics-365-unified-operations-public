@@ -1,13 +1,13 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Denmark
-description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have a primary address in Denmark.
+description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have a primary address in Denmark.
 author: liza-golub
-ms.date: 05/22/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Denmark
 ms.author: egolub
+ms.topic: article
+ms.date: 05/22/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Denmark
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

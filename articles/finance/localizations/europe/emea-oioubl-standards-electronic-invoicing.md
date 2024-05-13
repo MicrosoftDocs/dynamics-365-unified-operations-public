@@ -1,24 +1,17 @@
 ---
-# required metadata
 title: Supported standards for electronic invoicing in Europe
-description: This article explains the level of coverage that exists for electronic invoicing for Europe. 
+description: Learn about the level of coverage that exists for electronic invoicing for Europe, including an outline on electronic invoice formats.
 author: mrolecki
-ms.date: 11/19/2020
+ms.author: mrolecki
 ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/19/2020
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
 ms.search.industry: 
-ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Supported standards for electronic invoicing in Europe

@@ -1,17 +1,17 @@
 ---
 title: NF-e custom certificate validation
-description: This article provides information about enabling and using the NF-e custom certificate.
+description: Learn about enabling and using the NF-e custom certificate. The automatic certificate update can switch this property to no longer be enabled.
 author: gionoder
-ms.date: 07/29/2021
+ms.author: johnmichalak
 ms.topic: article
-audience: Application User
+ms.date: 07/29/2021
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: gionoder
 ms.search.validFrom: 2020-07-08
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.12
 ms.assetid: 
-ms.search.form: 
 ---
 
 # NF-e custom certificate validation

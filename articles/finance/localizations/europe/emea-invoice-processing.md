@@ -1,21 +1,16 @@
 ---
-# required metadata
 title: Invoice processing
-description: This article provides information about invoice processing for Eastern Europe.
+description: Learn about invoice processing for Eastern Europe, including an overview on country/region-specific scenarios, such as intra-communit value-added tax.
 author: EvgenyPopovMBS
-ms.date: 02/02/2022
+ms.author: evgenypopov
 ms.topic: article
-# optional metadata
-ms.search.form: CustParameters, VendParameters
-audience: Application User
-# ms.devlang: 
+ms.date: 02/02/2022
+ms.custom:
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2017-06-30
+ms.search.form: CustParameters, VendParameters
 ms.dyn365.ops.version: July 2017 update
 ---
 

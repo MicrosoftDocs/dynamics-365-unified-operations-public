@@ -1,17 +1,17 @@
 ---
 title: Tax attributes for Brazil
-description: This article explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
+description: Learn how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
+ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 92b0cf1b-51ec-4611-bf8e-db4cd10ffed0
-ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 ---
 
 # Tax attributes for Brazil
