@@ -87,7 +87,7 @@ On the *learn.microsoft.com* website, each documentation article encourages you 
 ## Contribute to the documentation
 
 You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. 
-For more information, see [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute.md), which is published by the team that built the Microsoft Learn site.
+For more information, see [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
