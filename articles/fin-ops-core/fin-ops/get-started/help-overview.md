@@ -4,7 +4,7 @@ description: Learn about the Help system for finance and operations apps, includ
 author: edupont04
 ms.author: edupont
 ms.topic: overview
-ms.date: 10/24/2023
+ms.date: 05/13/2024
 ms.reviewer: edupont
 ms.collection: get-started
 audience: Application User
@@ -86,13 +86,8 @@ On the *learn.microsoft.com* website, each documentation article encourages you 
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. The following video shows how you can contribute to our documentation.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
-
-The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
-
-For more information, see the [Microsoft Learn contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. 
+For more information, see [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute.md), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
