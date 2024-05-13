@@ -60,7 +60,6 @@ Once the warehouse tasks are finished for a load, a subsequent shipment confirma
 Processing the *Packing slip* from a load updates the related sales order line transactions to *Deducted*, allowing the invoicing process to commence. The background process **Warehouse management \> Periodic \> Load packing slip posting** runs for *Shipped* outbound loads with **Load packing slip background process** setting *Queued*. Upon successful posting, the value shifts to *None*. Should any errors occur during posting, the status alters to *Error*, requiring attention to the details in the generated batch job info log.
 
 For the *Load packing slip posting* to operate in the background, proper configuration of **Warehouse management \> Setup \> Packing \> Packing slip posting parameters** is needed. Remember that if printing is included in this process, avoid printing to screen since this task will execute in the background within a batch job.
-<!-- PATH OK ? -->
 
 > [!TIP]
 > By setting the **Packing slip creation policy** to *Shipment* for the load, and supplying each associated shipment with a **Preallocated packing slip id** and **Preallocated packing slip document date** in the *PACKING SLIP POSTING PARAMETERS* section, enables automatic distribution of sales packing slips for each shipment based on the predetermined values.
