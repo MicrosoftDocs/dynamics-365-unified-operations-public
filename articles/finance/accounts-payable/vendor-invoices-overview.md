@@ -4,7 +4,7 @@ description: Learn about vendor invoices, which are requests for payment for pro
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 03/13/2024
+ms.date: 05/13/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -143,6 +143,9 @@ When you generate the **Vendor open transactions** report, the following default
 - **Open transactions per** – Enter a date to include transactions that are open as of that date. If you don't enter a date, this field is set to the maximum date. (The maximum date is the latest date that the system will accept, December 31, 2154.) By default, the next time that the report is run, this field will be set to the last date that was entered in it.
 
 You can use the filters under the **Record to include** field to further limit the transaction data that is included on the report.
+
+### Extend invoice number length
+Beginning in Dynamics 365 Finance version 10.0.40 and later, you can enable the **Extend the length of invoice number for vendor invoice** feature to increase the invoice number from 20 characters to 50 characters in the vendor invoice and invoice journal. Before enabling the feature, create a ticket in Lifeccycle services to open the **EnableEdtStringDatabaseStringLengthAttributeInComputation** flight.
 
 ## Additional resources
 
