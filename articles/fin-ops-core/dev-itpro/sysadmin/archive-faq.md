@@ -32,7 +32,7 @@ No, data restore from Dataverse long term retention to live tables isn't support
 
 ## What if I don't want to use long-term retention? I just need to delete data from the Finance database.
 
-Purge history is planned for a future release.
+Purge from history is planned for a future release.
 
 ## Will I save the maximum database capacity if I purge data from history tables?
 
@@ -59,4 +59,12 @@ No, the inventory transaction archival scenario isn't limited for transactions. 
 You have an option to [view archived data](archive-view.md) in Dataverse long term retention with Microsoft Fabric.
 
 You can also view the archived data from within the Dynamics 365 Finance and Operations History table for all the different scenarios. [General Ledger example](archive-gl.md#view-historical-data-from-the-history-table).
+
+## I export Dynamics 365 Finance and Operations application data to my own data lake. If I archive data from my live Dynamics 365 Finance and Operations application tables, will the archived data be removed from my own data lake?
+
+Any application data copied to your own data lake with [Azure Synapse Link](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), will not be deleted, from your data lake, when you archive with Dataverse long term retention.
+
+Any application data copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database) or [Export to data lake](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake) will be deleted, from your data lake, when you archive with Dataverse long term retention.
+
+
 
