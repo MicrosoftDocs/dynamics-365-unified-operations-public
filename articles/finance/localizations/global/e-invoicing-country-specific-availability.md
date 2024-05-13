@@ -2,7 +2,7 @@
 title: Availability of Electronic invoicing features by country or region
 description: This article provides information about the out-of-box features that are available for each country or region.
 author: ilikond
-ms.date: 02/12/2024
+ms.date: 05/13/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: johnmichalak
