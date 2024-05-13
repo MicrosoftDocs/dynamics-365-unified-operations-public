@@ -3,41 +3,39 @@ title: Supported electronic invoicing countries and regions
 description: This article describes for which countries and regions electronic invoicing is supported or planned in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.date: 09/05/2023
-ms.topic: article
-audience: Application User
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: All
 ms.author: ikondratenko
 ms.search.validFrom: 2022-11-03
 ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
 ---
 
 # Electronic invoicing coverage for supported and planned countries and regions
 
-This article describes current Electronic invoicing geographical coverage in Microsoft Dynamics 365 Finance and known plans for upcoming electronic invoicing implementations. 
+This article describes current electronicinvoicing geographical coverage in Microsoft Dynamics 365 Finance and known plans for upcoming electronic invoicing implementations. 
 
 ## Introduction
 
-Electronic invoicing, or e-invoicing, is the process of sending and receiving invoices in a digital format. E-invoicing is rapidly becoming an important part of business processes and an essential part of compliance with the global and country-specific regulatory requirements for both, buyers and suppliers.
+Electronic invoicing, or e-invoicing, is the process of sending and receiving invoices in a digital format. E-invoicing is rapidly becoming an important part of business processes and an essential part of compliance with the global and country-specific regulatory requirements for both buyers and suppliers.
 
-Besides that, e-invoicing has several advantages over traditional paper-based invoicing, such as:
- - Reducing errors and disputes by eliminating manual data entry and validation
- - Increasing cash flow and visibility by speeding up the invoice approval and payment cycle
- - Lowering operational costs by saving time, paper, postage, and storage space
- - Improving customer satisfaction and retention by offering convenience and flexibility
- - Supporting environmental sustainability by reducing paper waste and carbon footprint
+E-invoicing has several advantages over traditional paper-based invoicing, such as:
+ - Reducing errors and disputes by eliminating manual data entry and validation.
+ - Increasing cash flow and visibility by speeding up the invoice approval and payment cycle.
+ - Lowering operational costs by saving time, paper, postage, and storage space.
+ - Improving customer satisfaction and retention by offering convenience and flexibility.
+ - Supporting environmental sustainability by reducing paper waste and carbon footprint.
 
-Microsoft permanently monitors legislative requirements changes in e-invoicing area for all supported countries and regions and delivers regulatory updates in timely manner. During extending geographical coverages, Microsoft prioritize e-invoicing as one of the most important requirements.
+Microsoft monitors legislative requirements changes in the e-invoicing area for all supported countries and regions, and delivers regulatory updates in a timely manner. During extending geographical coverages, Microsoft prioritize e-invoicing as one of the most important requirements.
 
-The next chapter contains the detailed information about e-invoicing "out-of-the-box" functionality for already supported countries, including upcomig regulatory changes, as well as plans for new countries implementations.
+The next section contains detailed information about e-invoicing "out-of-the-box" functionality for already supported countries, including upcoming regulatory changes, as well as plans for new countries implementations.
 
-## Electronic invoicing coverage
+## electronicinvoicing coverage
 
 > [!NOTE]
-> Delivery timelines for the mentioned below planned implementations may change, and projected functionality may not be released at all due to various reasons. For more information, go to [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
+> Delivery timelines for planned implementations mentioned below may change, and projected functionality may not be released at all due to various reasons. For more information, go to [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
  **Country**  |                                 **Description**                                |**Availability**|
 |----------------------|-----------------------------------------------------------------------|------------|
@@ -57,7 +55,7 @@ The next chapter contains the detailed information about e-invoicing "out-of-the
 | Egypt   | Generation and direct submission to the Egyptian Tax Authority of electronic invoices for Sales and Project invoices, credit notes and debit notes in the country-specific format. <li>Learn more here: [Electronic invoicing for Egypt ](../mea/e-invoicing-eg-get-started.md)</li> |Available|
 | Estonia | Generation of electronic invoices for Sales and Project invoices and credit notes in the country-specific format.  <li>Learn more here: [Export of customers electronic invoices in Estonia](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-estonia-to-support-export-of-customers-electronic-invoices-in-microsoft-dynamics-365-finance-3f3295b4-62f8-ff24-169a-794379d1fce4)</li> |Available|
 | Finland  | Generation of electronic invoices for Sales and Project invoices and credit notes in the **Finvoice** format. <li>Learn more here: [Export of customers electronic invoices in Finland](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-finland-to-support-export-of-customers-electronic-invoices-in-microsoft-dynamics-365-finance-72a33347-e68c-5b39-dbbb-ee9a59d3671f)</li> |Available|
-| France  | Generation and submission to the **Chorus Pro** of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format. Import of vendor electronic invoices. <li>Learn more here: [Get started with Electronic invoicing for France](../france/e-invoicing-fr-get-started.md)</li> |Available|
+| France  | Generation and submission to the **Chorus Pro** of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format. Import of vendor electronic invoices. <li>Learn more here: [Get started with electronicinvoicing for France](../france/e-invoicing-fr-get-started.md)</li> |Available|
 | Germany  | Generation of electronic invoices for Sales and Project invoices and credit notes in the **xRechnung** format <li>Learn more here: [Customer electronic invoices in Germany](../germany/emea-deu-cust-e-invoices.md)</li> |Available|
 | Guatemala | Generation of electronic invoices in a file structured in the country-specific XML format. |Planned for 2024 release wave 1|
 | Hungary | Generation and submission to the governmental Real-time invoice reporting (RTIR) platform of required data in the country-specific format. <li>Learn more here: [Online invoicing system](../hungary/emea-hun-online-invoicing.md)</li> |Available|
@@ -72,11 +70,11 @@ The next chapter contains the detailed information about e-invoicing "out-of-the
 | Panama | Generation of e-documents for invoices in the country-specific format. <li>Learn more here: [Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md)</li> |<li>Available</li><li>Submission planned for 2024 release wave 1</li>|
 | Paraguay | Generation of electronic documents and electronic tax documents in the standardized country-specific XML format. |Planned for 2024 release wave 1|
 | Peru | Generation of electronic invoicing documents in the standard XML format based on UBL V2.1 and adopted by SUNAT, also known as CPE (Electronic Payment Vouchers). |Planned for 2024 release wave 1|
-| Poland |Generation and direct submission to the governmental KSEF system of electronic invoices for Sales, Project and Advance invoices and credit notes in a country-specific format. Import of vendor electronic invoices. <li>Learn more here: [Get started with Electronic invoicing for Poland](../poland/e-invoicing-pol-get-started.md)</li> |<li>Available in Public preview</li><li>Enforcement planned by February 2026</li>|
+| Poland |Generation and direct submission to the governmental KSEF system of electronic invoices for Sales, Project and Advance invoices and credit notes in a country-specific format. Import of vendor electronic invoices. <li>Learn more here: [Get started with electronicinvoicing for Poland](../poland/e-invoicing-pol-get-started.md)</li> |<li>Available in Public preview</li><li>Enforcement planned by February 2026</li>|
 | Saudi Arabia | Generation and direct submission to **ZATCA** electronic invoices for Customer prepayments, Sales and Project invoices, credit notes and debit notes in the country-specific format. <li>Learn more here: [Customer electronic invoices in Saudi Arabia](../mea/gs-e-invoicing-sa-get-started.md)</li> |Available|
 | Spain | Generation of electronic invoices for Sales and Project invoices and credit notes in the **FacturaE** format.  |<li>Available</li><li>Regulatory changes expected by July 2025</li>|
 | Spain | Generation and submission to the governmental **SII** system of required data in the country-specific format. <li>Learn more here: [Immediate Supply of Information on VAT (SII)](../spain/emea-esp-sii.md)</li> |Available|
-| Uruguay | Generation of Electronic Fiscal Receipt (CFE) based on the XML standard with a syntax defined and maintained by the DGI.  |Planned for 2024 release wave 1|
+| Uruguay | Generation of electronicFiscal Receipt (CFE) based on the XML standard with a syntax defined and maintained by the DGI.  |Planned for 2024 release wave 1|
 | PEPPOL| Generation of electronic invoices for Sales and Project invoices and credit notes in the **PEPPOL** format. This country-independent functionality can be used “as is” if no country-specific amendments are supposed or can be used as the base for further modifications. <p>Learn more here:</p><li>[Export of customers electronic invoices in PEPPOL BIS 3 format](https://support.microsoft.com/en-us/topic/an-update-for-european-union-to-support-export-of-customers-electronic-invoices-in-peppol-bis-3-format-for-microsoft-dynamics-365-814d09db-dae7-6c5e-034c-797687078bac)</li> <li>[Import vendor electronic invoices in PEPPOL format](../europe/emea-peppol-import.md)</li>  |Available|
 
 
