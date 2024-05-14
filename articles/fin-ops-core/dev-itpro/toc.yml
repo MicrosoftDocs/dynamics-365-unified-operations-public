@@ -63,8 +63,6 @@ items:
             href: data-entities/services-home-page.md
           - name: Service authentication troubleshooting
             href: data-entities/troubleshoot-service-authentication.md
-          - name: Troubleshoot 401 errors
-            href: data-entities/troubleshoot-401.md
         - name: OData
           href: data-entities/odata.md
         - name: Custom service development

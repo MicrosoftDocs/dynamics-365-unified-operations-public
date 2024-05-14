@@ -4,7 +4,7 @@ description: Learn how to set up default text that is used to describe accountin
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 02/10/2023
+ms.date: 05/10/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
