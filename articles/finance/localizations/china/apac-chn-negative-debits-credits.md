@@ -1,17 +1,17 @@
 ---
 title: Display debit and credit amounts in ledger accounts for China
-description: This article shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China.
+description: Learn how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China.
 author: AdamTrukawka
-ms.date: 03/21/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: China (PRC)
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/21/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
+ms.search.form: LedgerParameters
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
-ms.search.form: LedgerParameters
 ---
 
 # Display debit and credit amounts in ledger accounts for China

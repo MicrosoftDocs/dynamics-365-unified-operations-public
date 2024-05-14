@@ -1,15 +1,15 @@
 ---
 title: Sales tax applicability and sales tax group determination logic
-description: This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
+description: Learn about the logic for determining sales tax applicability and sales tax groups in the tax feature setup, including an overview on matching logic.
 author: EricWangChen
-ms.date: 02/09/2024
+ms.author: wangchen
 ms.topic: conceptual
+ms.date: 02/09/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: 
-ms.author: wangchen
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.21
 ---

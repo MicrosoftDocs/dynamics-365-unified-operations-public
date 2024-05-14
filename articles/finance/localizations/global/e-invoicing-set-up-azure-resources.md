@@ -1,15 +1,15 @@
 ---
 title: Set up Azure resources for Electronic invoicing
-description: This article provides an overview of the process for setting up Microsoft Azure resources for Electronic invoicing (RCS).
+description: Learn about the process for setting up Microsoft Azure resources for Electronic invoicing (RCS), including an overview on creating an Azure key.
 author: amkedi
-ms.date: 03/13/2024
+ms.author: amkedi
 ms.topic: overview
+ms.date: 03/13/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: amkedi
 ---
 
 # Set up Azure resources for Electronic invoicing

@@ -1,13 +1,13 @@
 ---
 title: Estonian Intrastat
-description: This article contains information about the Estonian Intrastat report.
+description: Learn about the Estonian Intrastat report, including prerequisites, an outline on setting up Intrastat, and a table that defines various field names.
 author: AdamTrukawka
-ms.date: 01/11/2022
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 01/11/2022
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

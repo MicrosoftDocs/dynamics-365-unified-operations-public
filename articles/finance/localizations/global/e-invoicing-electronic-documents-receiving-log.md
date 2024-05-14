@@ -1,17 +1,17 @@
 ---
 title: Receive electronic documents
-description: This article explains how to work with incoming electronic documents.
+description: Learn how to work with incoming electronic documents, including a step-by-step process for receiving electronic invoices.
 author: ilikond
-ms.date: 02/12/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 02/12/2024
 ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region:
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Receive electronic documents 

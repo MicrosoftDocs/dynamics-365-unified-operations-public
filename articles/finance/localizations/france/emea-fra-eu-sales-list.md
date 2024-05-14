@@ -1,13 +1,13 @@
 ---
 title: EU Sales list for France
-description: This article provides information about the European Union (EU) sales list report for services (Déclaration européenne de services DES).
+description: Learn about the European Union (EU) sales list report for services (Déclaration européenne de services DES), including an overview on setup.
 author: AdamTrukawka
-ms.date: 03/04/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/04/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

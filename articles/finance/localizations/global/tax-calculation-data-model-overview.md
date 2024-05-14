@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Tax calculation data model
-description: This article provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
+description: Learn about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
 author: kailiang
-ms.date: 02/09/2024
-ms.topic: overview
-# optional metadata
-
-ms.search.form:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: johnmichalak
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: overview
+ms.date: 02/09/2024
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
-
 ---
+
 # Tax calculation data model
 
 This article provides information about how the field values in the tax data model are determined in tax calculation transactions.

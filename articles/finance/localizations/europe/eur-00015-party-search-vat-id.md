@@ -1,17 +1,18 @@
 ---
 title: EUR-00015 Party search using VAT ID
-description: This procedure shows how to complete a party search using a registration ID.
+description: Learn how to complete a party search using a registration ID, including a step-by-step process completing a party search using a registration ID.
 author: AdamTrukawka
-ms.date: 08/29/2018
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: DirPartyTable, DirPartTaxRegistrationSearch
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # EUR-00015 Party search using VAT ID
 
 [!include [banner](../../includes/banner.md)]

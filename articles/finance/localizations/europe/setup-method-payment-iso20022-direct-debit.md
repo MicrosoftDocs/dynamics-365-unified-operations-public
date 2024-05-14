@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Setup method of payment for ISO20022 direct debit
-description: This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting. 
+description: Learn how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: CustPaymMode   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustPaymMode
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Setup method of payment for ISO20022 direct debit
 
 [!include [banner](../../includes/banner.md)]

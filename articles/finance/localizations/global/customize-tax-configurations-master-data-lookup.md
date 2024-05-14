@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Customize tax configurations for master data lookup
-description: This article explains how to customize tax configurations to extend master data lookup functionality.
+description: Learn how to customize tax configurations to extend master data lookup functionality, including a process for importing tax configurations from Microsoft.
 author: kai-cloud
-ms.date: 10/28/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: johnmichalak
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: pashao
+ms.topic: article
+ms.date: 10/28/2021
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-04-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 
@@ -52,7 +44,7 @@ Follow the steps in this article to customize tax configurations to extend maste
 1. On the **Tax configurations** page, select **Customization data model**, and then select **Designer**.
 2. Select the ellipsis button (**...**), and then select the **Reference model** view.
 
-    [![Reference model.](../media/pic2.png)](/media/pic2.png)
+    [![Reference model.](../media/pic2.png)]
 
 3. Create the customized reference model. The customized model is a root model. The customized entity is a record list. The customized field is a string field that you want to use in the lookup. You can add more fields as you require.
 4. Select the ellipsis button (**...**), and then select the **Taxable document** view.
@@ -61,7 +53,7 @@ Follow the steps in this article to customize tax configurations to extend maste
     1. Select **Select reference model**.
     2. Select **Customized model**, and then select **OK**. The reference model name is updated to the value of the **Natural key** field.
 
-        [![Select reference model dialog box.](../media/pic5.png)](/media/pic5.png)
+        [![Select reference model dialog box.](../media/pic5.png)]
 
     3. Select **Save**, and then select **Complete**.
 
@@ -75,7 +67,7 @@ Follow the steps in this article to customize tax configurations to extend maste
 6. In the **Target model** field, select the **Customization data model** data model.
 7. Select **Create configuration**.
 
-    [![Create configuration drop-down dialog box.](../media/pic6.png)](/media/pic6.png)
+    [![Create configuration drop-down dialog box.](../media/pic6.png)]
 
 8. Select **Customization model mapping**, and set the **Connected application** field to the connection that was created in step 8 in [Set up an environment for master data lookup](tax-service-set-up-environment-master-data-lookup.md).
 9. Set the **Default for model mapping** field to **Yes**.
@@ -85,8 +77,7 @@ Follow the steps in this article to customize tax configurations to extend maste
 1. On the **Tax configurations** page, select **Customization model mapping**.
 2. Select **Designer**, and then select **Customization Model**.
 
-    [![Customization Model.](../media/pic8.png)](/media/pic8.png)
-
+    [![Customization Model.](../media/pic8.png)]
 ## Map a model mapping to a Dataverse entity
 
 1. On the **Model mapping designer** page, select **Customization Model**, and then select **Designer**.
@@ -96,15 +87,15 @@ Follow the steps in this article to customize tax configurations to extend maste
 5. In the second **Name** field, select an entity.
 6. Select **OK**.
 
-    [!['Table' data source properties dialog box.](../media/pic9.png)](/media/pic9.png)
+    [!['Table' data source properties dialog box.](../media/pic9.png)]
 
 7. Select **Customized Dataverse** and **Customized entity**, and then select **Bind**.
 
-    [![Customized Dataverse and Customized entity binding.](../media/pic10.png)](/media/pic10.png)
+    [![Customized Dataverse and Customized entity binding.](../media/pic10.png)]
 
 8. Under **Customized Dataverse** and **Customized field**, select a field, and then select **Bind**.
 
-    [![Customized Dataverse and Customized field binding.](../media/pic11.png)](/media/pic11.png)
+    [![Customized Dataverse and Customized field binding.](../media/pic11.png)]
 
 9. Select **Save**, and then select **Complete**.
 
@@ -119,7 +110,7 @@ Follow the steps in this article to customize tax configurations to extend maste
 7. In the **Data model** field, select **Customization data model**.
 8. In the **Data model version** field, select the corresponding data model version.
 
-    [![Properties section.](../media/pic13.png)](/media/pic13.png)
+    [![Properties section.](../media/pic13.png)]
 
 9. Select **Complete**.
 

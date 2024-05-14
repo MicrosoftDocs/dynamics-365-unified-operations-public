@@ -1,13 +1,13 @@
 ---
 title: SPED fiscal ICMS-IPI layout 014
-description: This article explains how to set up and generate SPED fiscal statement layout 014.
+description: Learn how to set up and generate SPED fiscal statement layout 014, including outlines on classification of fiscal establishments and incoming fiscal documents.
 author: AdamTrukawka
-ms.date: 01/21/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 01/21/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
 ---

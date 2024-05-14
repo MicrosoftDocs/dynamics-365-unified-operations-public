@@ -1,16 +1,16 @@
 ---
 title: Taxable Payments Annual Report
-description: This article explains how to set up and generate the Taxable Payments Annual Report (TPAR).
+description: Learn how to set up and generate the Taxable Payments Annual Report (TPAR), including outlines on configuration and how to prepare a TPAR.
 author: AdamTrukawka
-ms.date: 08/29/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: APAC
 ms.author: atrukawk
+ms.topic: article
+ms.date: 08/29/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: APAC
 ms.search.validFrom: 2023-08-10
-ms.dyn365.ops.version: 
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Taxable Payments Annual Report

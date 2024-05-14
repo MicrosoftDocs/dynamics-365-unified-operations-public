@@ -1,16 +1,16 @@
 ---
 title: Reporting for multiple VAT registrations
-description: This article provides information about reporting for multiple value-added tax (VAT) registrations.
+description: Learn about reporting for multiple value-added tax (VAT) registrations, including prerequisites and an outline on activating feature for specific legal entity.
 author: liza-golub
-ms.date: 01/17/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: egolub
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 01/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Reporting for multiple VAT registrations 
