@@ -4,7 +4,7 @@ description: Learn about accruals and how to set them up and create transactions
 author: jchrist
 ms.author: jchrist
 ms.topic: overview
-ms.date: 11/21/2022
+ms.date: 05/13/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

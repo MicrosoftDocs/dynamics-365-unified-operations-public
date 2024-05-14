@@ -4,7 +4,7 @@ description: Learn how accounts for automatic transactions are used for posting 
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 12/03/2021
+ms.date: 05/13/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User

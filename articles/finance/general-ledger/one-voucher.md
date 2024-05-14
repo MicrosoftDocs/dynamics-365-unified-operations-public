@@ -4,7 +4,7 @@ description: Learn about One voucher for financial journals, which lets you ente
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 04/05/2023
+ms.date: 05/09/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -83,7 +83,7 @@ The following business scenarios have been identified as scenarios that customer
 | Customer reimbursement | If the Reimbursement periodic task is run from Accounts receivable, it creates a transaction to move the balance from a customer to a vendor. The vendor is the same party as the customer. | Yes | |
 | Fixed asset maintenance: Catch-up depreciation, splitting an asset, and calculating depreciation on disposal | Catch-up deprecation, splitting of an asset, and calculation of depreciation for asset disposal all used to create a single voucher. | No | As of Finance version 10.0.21, fixed asset transactions that are created for catch-up depreciation, splitting of an asset, and calculation of depreciation for asset disposal use different voucher numbers. |
 | Bills of exchange and promissory notes | Bills of exchange and promissory notes move the customer or vendor balance from one Accounts receivable or Accounts payable ledger account to another, based on the state of the payment. Because the same customer or vendor is always used in the voucher, no reporting issues exist. | Yes | | 
-| Netting | If a customer and vendor are the same party, the balances for the vendor and customer are netted against each other. This approach minimizes the exchange of money between an organization and the customer/vendor party. | Yes/No | Netting can be accomplished by entering the increase and decrease in separate vouchers, and then posting the offset to a clearing ledger account. For some organizations, this approach requires too much overhead. Therefore, they choose to use One voucher instead. |
+| Netting | If a customer and vendor are the same party, the balances for the vendor and customer are netted against each other. This approach minimizes the exchange of money between an organization and the customer/vendor party. | No | As of Microsoft Dynamics 365 Finance version 10.0.40, there's the **Customer and vendor netting** feature. The netting feature automatically creates two separate vouchers for the vendor and customer. For more information, see [Net vendor and customer balances](../cash-bank-management/net-customer-and-vendor-balances.md). |
 | Transfer balances | An organization might have to transfer a balance from one vendor to another, either because of a mistake or because another vendor has taken over the liability. Transfers of this type also occur for account types such as **Customer** and **Bank**. | Yes/No | Balance transfers from one account (vendor, customer, bank, and so on) to another can be done through separate vouchers, and the offset can be posted to a clearing ledger account. For some organizations, this approach requires too much overhead. Therefore, they choose to use One voucher instead. |
 | Settling multiple unposted payments to the same invoice | This scenario is typically found in organizations where customers can use multiple methods of payment to pay for purchases. In this scenario, the organization must be able to record multiple unposted payments and settle them against the customer invoice. | No | A new feature that was added in Finance enables multiple unposted payments to be settled against a single invoice. |
 | Country/region-specific features | The **Single Administrative Document (SAD)** feature for Poland currently requires that transactions be grouped together, and the voucher number is used for this purpose. There might be additional country/region-specific features that require the One voucher functionality. | Yes | |
@@ -101,8 +101,6 @@ Because of the issues that can occur when One voucher is used, the following opt
 - Some transactions might continue to be entered through the journal in a single voucher, but additional data might be tracked to correctly identify transactional details.
 - A combination of new features might be used, but transactions for the business scenarios might continue to be entered in the journal by using a single voucher.
 
-Depending on the approach for each business scenario, only parts of the One voucher functionality might be deprecated.
-
 As new features are introduced, your organization must continuously evaluate whether the **Allow multiple transactions within one voucher** option on the **General ledger parameter** page can be turned off. We recommend that you not use One voucher for integrations unless you require the functionality for one of the documented functional gaps.
 
-After all the functional gaps are filled, Microsoft will communicate what portions of One voucher will be deprecated. If some portions are deprecated, the deprecation won't be effective for at least one year after all features are introduced and communication is provided to all customers.
+As functional gaps are filled, Microsoft will communicate the new features to be used instead of One voucher. For some business scenarios, such as a vendor invoice with multiple lines, One voucher will continue to be used but with enhancements. Those enhancements will be communicated as they are delivered. 

@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Removed or deprecated features in Dynamics 365 Finance 
-description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
+description: Learn about features that have been removed, or that are planned for removal from Dynamics 365 Finance, with an outline on features removed.
 author: twheeloc
-ms.date: 05/02/2024
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2020-03-02 
+ms.topic: article
+ms.date: 05/02/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2020-03-02
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 33
-
 ---
 
 # Removed or deprecated features in Dynamics 365 Finance

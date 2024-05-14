@@ -4,7 +4,7 @@ description: Learn about the process of setting up collections process strategie
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 03/12/2021
+ms.date: 05/12/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
