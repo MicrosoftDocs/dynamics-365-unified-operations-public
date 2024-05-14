@@ -3631,7 +3631,7 @@
           - name: Set up GST relief clauses
             href: localizations/malaysia/my-00006-01-gst-relief-clauses.md
           - name: SST-02 declaration for Malaysia
-            href: localizations/mea/apac-mys-sst-declaration.md
+            href: localizations/apac/apac-mys-sst-declaration.md
         - name: Mexico
           items:
           - name: Mexico overview
@@ -4093,11 +4093,11 @@
           - name: Saudi Arabia overview
             href: localizations/mea/saudi-arabia.md
           - name: Sales tax
-            href: localizations/mea/apac-sau-sales-tax.md
+            href: localizations/apac/apac-sau-sales-tax.md
           - name: Zakat reporting for Saudi Arabia
             href: localizations/mea/emea-sau-zakat-reporting.md     
           - name: Allocate bank document charges to a shipment
-            href: localizations/mea/apac-sau-allocate-bank-document-charges-shipment.md
+            href: localizations/apac/apac-sau-allocate-bank-document-charges-shipment.md
           - name: Customer electronic invoices in Saudi Arabia
             href: localizations/mea/emea-sau-e-invoices.md
         - name: Singapore
