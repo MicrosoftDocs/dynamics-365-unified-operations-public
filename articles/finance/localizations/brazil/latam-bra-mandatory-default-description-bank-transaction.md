@@ -2,7 +2,7 @@
 title: Mandatory default descriptions for posting of bank transactions
 description: Learn how to set up mandatory descriptions for bank account reconciliation transactions, including a step-by-step process for enabling features.
 author: gionoder
-ms.author: johmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/18/2022
 ms.reviewer: johnmichalak

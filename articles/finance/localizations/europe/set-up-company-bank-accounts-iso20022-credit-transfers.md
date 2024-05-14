@@ -9,7 +9,8 @@ ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User 
 ms.search.region: Global
-ms.search.validFrom: 2016-06-30ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 

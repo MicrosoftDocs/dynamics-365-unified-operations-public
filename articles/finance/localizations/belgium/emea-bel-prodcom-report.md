@@ -2,7 +2,7 @@
 title: Set up and maintain PRODCOM
 description: Learn how to set up and maintain PRODCOM in Microsoft Dynamics 365 Finance, including an outline on assigning PRODCOM properties to an item.
 author: EvgenyPopovMBS
-ms.author: epopov
+ms.author: evgenypopov
 ms.topic: article
 ms.date: 07/22/2021
 ms.reviewer: johnmichalak

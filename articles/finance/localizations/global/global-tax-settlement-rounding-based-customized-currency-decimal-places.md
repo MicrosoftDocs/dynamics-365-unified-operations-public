@@ -32,6 +32,6 @@ Because of the high value of the currency in Gulf countries/regions, the **amoun
 
 Enable this feature when you have customized decimal places For example, enable it if you've extended the **amount** data type to three or more decimal places. Tax settlements can use the same rounding precision. You can set the **Round-off** field to the corresponding precision when you configure sales tax authorities in the **Tax** module.
 
-[![Round-off field set to three decimal places for a sales tax authority on the Sales tax authorities page.](../media/tax-settle-tax-authority-round-off.png)](/media/tax-settle-tax-authority-round-off.png)
+[![Round-off field set to three decimal places for a sales tax authority on the Sales tax authorities page.](../media/tax-settle-tax-authority-round-off.png)]
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
