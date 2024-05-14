@@ -49,6 +49,14 @@ A data entity should provide a holistic object that encapsulates the relevant bu
 
 **Result:** &lt;prefix&gt;&lt;ConceptualName&gt;Entity
 
+
+### Data entity label
+
+| Do                                                                                                                                                                                                                                                                                                | Don’t                                        |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| Use a unique label for your entity, ensure no other entities are using the same label.                                                                                                                                                                                                                        | Reuse an existing label, do not use the same label for more than 1 entity.          |
+
+
 ### Data entity field names
 
 | Do                                                                                                                                                                                                                                                                                                         | Don’t                                                                                                                                |
