@@ -48,16 +48,16 @@ This entity provides information about the payroll position details.
 | PayCycle | mserp_PayCycle | Int64 | Read-only |
 | AnnualRegularHours | mserp_AnnualRegularHours | Real | Read-only |
 | PayPeriodOvertimeHours | mserp_PayPeriodOvertimeHours | Real | Read-only |
-| mserp_Positions | Positions | Int64 | Read-only |
-| mserp_Schedule | Schedule | String | Read-only |
-| mserp_ScheduleLegalEntity | ScheduleLegalEntity | String | Read-only |
-| mserp_ValidFrom | ValidFrom | Datetime offset | Read-only |
-| mserp_ValidTo | ValidTo | Datetime offset | Read-only |
-| mserp_BenefitId | BenefitId | String | Read-only |
-| mserp_PaidByLegalEntity | PaidByLegalEntity | String | Read-only |
-| mserp_DefaultEarningCodeId | DefaultEarningCodeId | String | Read-only |
-| mserp_PayCycleId | PayCycleId | String | Read-only |
-| mserp_PositionId | PositionId | String | Read-only |
+|Positions| mserp_Positions | Int64 | Read-only |
+| Schedule| mserp_Schedule | String | Read-only |
+| ScheduleLegalEntity | mserp_ScheduleLegalEntity |String | Read-only |
+| ValidFrom| mserp_ValidFrom |Datetime offset | Read-only |
+| ValidTo| mserp_ValidTo |  Datetime offset | Read-only |
+| BenefitId| mserp_BenefitId | String | Read-only |
+| PaidByLegalEntity| mserp_PaidByLegalEntity | String | Read-only |
+| DefaultEarningCodeId| mserp_DefaultEarningCodeId  | String | Read-only |
+| PayCycleId| mserp_PayCycleId | String | Read-only |
+| PositionId | mserp_PositionId | String | Read-only |
 
 ## Example query for the Payroll position details entity
 
