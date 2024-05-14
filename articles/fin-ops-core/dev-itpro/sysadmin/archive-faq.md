@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about archiving data i
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 05/14/2024
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -32,9 +32,9 @@ No, data restore from Dataverse long term retention to live tables isn't support
 
 ## What if I don't want to use long-term retention? I just need to delete data from the Finance database.
 
-Purge history is planned for a future release.
+Purge from history is planned for a future release.
 
-## Will I save the maximum database capacity if I purge data from history tables?
+## Do I save the maximum database capacity if I purge data from history tables?
 
 For full savings, users can purge data from history tables.
 
@@ -56,7 +56,15 @@ No, the inventory transaction archival scenario isn't limited for transactions. 
 
 ## How can I meet the requirement of my auditors who need to view the transactional data archived with Dataverse long term retention?
 
-You have an option to [view archived data](archive-view.md) in Dataverse long term retention with Microsoft Fabric.
+You can [view archived data](archive-view.md) in Dataverse long term retention with Microsoft Fabric.
 
 You can also view the archived data from within the Dynamics 365 Finance and Operations History table for all the different scenarios. [General Ledger example](archive-gl.md#view-historical-data-from-the-history-table).
+
+## I export finance and operations application data to my own data lake. If I archive data from my live finance and operations application tables, will the archived data be removed from my own data lake?
+
+Application data copied to your own data lake using [Azure Synapse Link,](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) isn't deleted from your data lake when you archive with Dataverse long term retention.
+
+Application data that's copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](../analytics/export-entities-to-your-own-database.md) or [Export to data lake](../data-entities/finance-data-azure-data-lake.md) are deleted from your data lake when you archive with Dataverse long term retention.
+
+
 
