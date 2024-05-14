@@ -10,7 +10,7 @@ ms.date: 05/14/2024
 ms.reviewer: johnmichalak
 ---
 
-# Virtual Entities Auto Create and Refresh
+# Create and refresh virtual entities automatically
 
 
 [!include[banner](../includes/banner.md)]
