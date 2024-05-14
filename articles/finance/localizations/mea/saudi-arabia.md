@@ -18,9 +18,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides links to documentation resources for Saudi Arabia. 
 
-- [Sales tax](apac-sau-sales-tax.md)
+- [Sales tax](apac/apac-sau-sales-tax.md)
 - [Zakat reporting](emea-sau-zakat-reporting.md)
-- [Allocate bank document charges to a shipment](apac-sau-allocate-bank-document-charges-shipment.md)
+- [Allocate bank document charges to a shipment](apac/apac-sau-allocate-bank-document-charges-shipment.md)
 - [Customer electronic invoices](emea-sau-e-invoices.md)
 
 ## Additional resources
