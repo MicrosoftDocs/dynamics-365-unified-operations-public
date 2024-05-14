@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about archiving data i
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 05/14/2024
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -60,11 +60,11 @@ You have an option to [view archived data](archive-view.md) in Dataverse long te
 
 You can also view the archived data from within the Dynamics 365 Finance and Operations History table for all the different scenarios. [General Ledger example](archive-gl.md#view-historical-data-from-the-history-table).
 
-## I export Dynamics 365 Finance and Operations application data to my own data lake. If I archive data from my live Dynamics 365 Finance and Operations application tables, will the archived data be removed from my own data lake?
+## I export finance and operations application data to my own data lake. If I archive data from my live finance and operations application tables, will the archived data be removed from my own data lake?
 
-Any application data copied to your own data lake with [Azure Synapse Link](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), will not be deleted, from your data lake, when you archive with Dataverse long term retention.
+Application data copied to your own data lake using [Azure Synapse Link](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), isn't deleted from your data lake when you archive with Dataverse long term retention.
 
-Any application data copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database) or [Export to data lake](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake) will be deleted, from your data lake, when you archive with Dataverse long term retention.
+Application data that's copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](../analytics/export-entities-to-your-own-database.md) or [Export to data lake](../data-entities/finance-data-azure-data-lake.md) are deleted from your data lake when you archive with Dataverse long term retention.
 
 
 
