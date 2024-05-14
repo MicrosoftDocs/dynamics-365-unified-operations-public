@@ -24,13 +24,13 @@ This article helps you learn about about automatically creating and refreshing v
 > - **Auto Create :** Supported platform versions - PU63 (7.0.7198.123) or PU64 (7.0.7279.31) or later.
 
 
-Changes made in Microsoft Dynamics 365 Finance and Operations on Data entity are visible to Dataverse through a manual refresh in Dataverse. The Auto Create and Refresh capability in Finance and Operations enables automatic metadata creation or modification in Dataverse immediately, reliably and efficiently. Automatic refresh of metadata ensures timely updates in Dataverse from finance and operations apps. Enabling Automatic Create and Refresh capability eliminates the need to manually refresh finance and operations entity into Dataverse. This capability paves way for automatically creating virtual tables in Dataverse for Microsoft Dynamics 365 Finance and Operations Data entities.
+Changes made in Finance and Operations apps on Data entity are visible to Dataverse through a manual refresh in Dataverse. The Auto Create and Refresh capability in Finance and Operations enables automatic metadata creation or modification in Dataverse immediately, reliably and efficiently. Automatic refresh of metadata ensures timely updates in Dataverse from finance and operations apps. Enabling Automatic Create and Refresh capability eliminates the need to manually refresh finance and operations entity into Dataverse. This capability paves way for automatically creating virtual tables in Dataverse for Finance and Operations apps data entities.
 
 ![Architecture of virtual entities for auto create and refresh.](media/AutoCreate_Refresh_Overview.png)
 
 **Auto Refresh:**
 * Virtual Table Auto Refresh feature is activated when the supported version of package is deployed. Supported platform versions are - PU62 (7.0.7120.170) or PU63 (7.0.7198.123) or PU64 (7.0.7279.31) or later.
-* The package when deployed in Microsoft Dynamics 365 Finance and Operations triggers an X++ batch job (CDSVirtualEntityRefreshBatch). This batch job is triggered 30 minutes after successful deployment of feature package.
+* The package when deployed in Finance and Operation apps, triggers an X++ batch job (CDSVirtualEntityRefreshBatch). This batch job is triggered 30 minutes after successful deployment of feature package.
 
 **Auto Create:**
 * Auto create capability is activated when the supported version of the feature is deployed. Supported platform versions - PU63 (7.0.7198.123) or PU64 (7.0.7279.31) or later.
@@ -56,4 +56,4 @@ Changes made in Microsoft Dynamics 365 Finance and Operations on Data entity are
 
 ## Notes
 * **Refresh Batch Job History Limitation:** With each package deployment, the Refresh batch job is recreated, limiting the availability of refresh job history to the last package deployment only. This behavior persists in the current version. Microsoft is aware of this limitation and plan to address it in future releases.
-* **Auto Delete Feature:** Please note that there currently isn't an Auto Delete feature implemented. If a Microsoft Dynamics 365 Finance and Operations Data Entity that is already enabled in the linked Dataverse environment is deleted, no action is taken automatically. Administrators are required to manually delete the Virtual Table in Dataverse.
+* **Auto Delete Feature:** Please note that there currently isn't an Auto Delete feature implemented. If a Finance and Operations apps Data Entity that is already enabled in the linked Dataverse environment is deleted, no action is taken automatically. Administrators are required to manually delete the Virtual Table in Dataverse.
