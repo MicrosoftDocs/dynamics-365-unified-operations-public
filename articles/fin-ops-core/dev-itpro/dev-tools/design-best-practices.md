@@ -1,11 +1,13 @@
 ---
 title: Design principles and best practices for data entities
 description: Learn about design principles for data entities, including multiple tables that outline do's and don't's for naming guidelines.
-author: twheeloc
-ms.author: twheeloc
-ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: twheeloc
+author: pnghub
+ms.author: gned
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 05/14/2024
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
