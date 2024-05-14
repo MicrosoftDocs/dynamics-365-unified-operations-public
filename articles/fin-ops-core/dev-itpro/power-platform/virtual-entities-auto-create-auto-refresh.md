@@ -2,7 +2,7 @@
 title: Virtual entities auto create and auto refresh
 description: Learn about auto create and auto refresh of virtual entities for finance and operations to Dataverse
 author: mkannapiran
-ms.author: kannapiran.manickavasaga
+ms.author: kamanick
 ms.topic: auto create and refresh
 ms.date: 05/14/2024
 ms.reviewer: johnmichalak
