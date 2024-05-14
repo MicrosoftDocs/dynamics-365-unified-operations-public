@@ -69,7 +69,7 @@ To create a default customer, follow these steps.
 1. In the **Middle name** drop-down list, select or enter a name (for example, "Retail").
 1. In the **Last name** drop-down list, select or enter a name (for example, "Customer").
 1. In the **Currency** drop-down list, select or enter a currency (for example, "USD").
-1. In the **Currency** drop-down list, select the customer group created previously.
+1. In the **Customer group** drop-down list, select the customer group created previously.
 1. In the **Address books**  drop-down list, select an existing customer address book.
 1. Select **Save** to save and return to customer details screen for the new customer.
 
