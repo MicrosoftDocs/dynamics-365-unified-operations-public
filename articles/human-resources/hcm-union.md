@@ -28,10 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
+This article describes the HCM unions entity (payintv1hcmunionsentities) for Dynamics 365 Human Resources.
 
-This article describes the Job type entity (payintv1hcmunionsentities) for Dynamics 365 Human Resources.
-
-Physical name: mserp_ payintv1hcmunionsentities
+Physical name: mserp_payintv1hcmunionsentities
 
 ## Description
 
@@ -41,27 +40,26 @@ This entity provides information about the payroll position details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| name|mserp_name|String | Read-only |
-| Negotiator|mserp_negotiator|Enum | Read-only |
-| UnionID|mserp_UnionID|String | Read-only |
+| name | mserp_name | String | Read-only |
+| Negotiator | mserp_negotiator | Enum | Read-only |
+| UnionID | mserp_UnionID | String | Read-only |
 
-## Example query for HCM unions entity
+## Example query for the HCM unions entity
 
-Entity Name: mserp__payintv1hcmunionsentities
+Entity name: mserp__payintv1hcmunionsentities
 
 **Request**
 
 ```HTTP
-GET \[Organizaton URI\]/api/data/v9.1/mserp_payintv1hcmunionsentities
+GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmunionsentities
 ```
 
 **Response**
 
 ```JSON
-
 {  
-      "mserp_name": "United Consultants of America",  
-      "mserp_negotiator": 200000001,  
-      "mserp_unionid": "UCA",  
-    }
+    "mserp_name": "United Consultants of America",  
+    "mserp_negotiator": 200000001,  
+    "mserp_unionid": "UCA",  
+}
 ```
