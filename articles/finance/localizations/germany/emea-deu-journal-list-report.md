@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: German journal list report
-description: This article explains what the German journal list report is used for, who typically uses it, and how to run it.
+description: Learn about what the German journal list report is used for, who typically uses it, and how to run it, including a step-by-step proces.
 author: EvgenyPopovMBS
-ms.date: 05/09/2022
+ms.author: evgenypopov
 ms.topic: article
-# optional metadata
-
-ms.search.form: LedgerJournalizeReport
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/09/2022
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Germany
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalizeReport
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # German journal list report

@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Customize tax configurations for master data lookup
-description: This article explains how to customize tax configurations to extend master data lookup functionality.
+description: Learn how to customize tax configurations to extend master data lookup functionality, including a process for importing tax configurations from Microsoft.
 author: kai-cloud
-ms.date: 10/28/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: johnmichalak
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: pashao
+ms.topic: article
+ms.date: 10/28/2021
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-04-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 

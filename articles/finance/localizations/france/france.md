@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: France overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for France. 
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for France to help you set up legal entities with a primary address in France. 
 author: kfend
-ms.date: 03/04/2022
-ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
-ms.search.region: France
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 03/04/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: France
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # France overview

@@ -1,18 +1,17 @@
 ---
 title: Availability of Electronic invoicing features by country or region
-description: This article provides information about the out-of-box features that are available for each country or region.
+description: Learn about the out-of-box features that are available for each country or region, including overviews on generally available features.
 author: ilikond
-ms.date: 02/12/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
+ms.topic: article
+ms.date: 02/12/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Availability of Electronic invoicing features by country or region

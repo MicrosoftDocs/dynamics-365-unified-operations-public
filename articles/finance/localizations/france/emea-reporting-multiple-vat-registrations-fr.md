@@ -1,13 +1,13 @@
 ---
 title: Support for multiple VAT registration numbers in reporting for France
-description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for France.
+description: Learn how to support multiple value-added tax (VAT) registration numbers in reporting for France with a table that outlines versions for various report names.
 author: liza-golub
-ms.date: 7/13/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: France
 ms.author: egolub
+ms.topic: article
+ms.date: 7/13/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: France
 ms.search.validFrom: 2023-04-10
 ms.dyn365.ops.version: AX 10.0.13
 ---

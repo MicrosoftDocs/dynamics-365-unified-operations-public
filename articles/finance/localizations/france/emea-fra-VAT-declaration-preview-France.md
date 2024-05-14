@@ -1,15 +1,15 @@
 ---
 title: VAT declaration (France)
-description: This article describes how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration.
+description: Learn how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration, including a VAT declaration preview overview.
 author: liza-golub
-ms.date: 03/10/2022
+ms.author: egolub
 ms.topic: article
+ms.date: 03/10/2022
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: France
-ms.author: egolub
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: AX 10.0.21
 ---

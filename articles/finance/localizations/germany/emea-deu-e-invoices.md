@@ -1,16 +1,16 @@
 ---
 title: Customer electronic invoices in Germany (DE-00022)
-description: This article explains how to set up and process customer electronic invoices in Germany.
+description: Learn how to set up and process customer electronic invoices in Germany, including prerequisites and an outline on customer electronic invoices.
 author: mrolecki
-ms.date: 10/05/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Germany
 ms.author: mrolecki
+ms.topic: article
+ms.date: 10/05/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Germany
 ms.search.validFrom: 2020-01-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.16
-ms.search.form: 
 ---
 
 # Customer electronic invoices in Germany (DE-00022)

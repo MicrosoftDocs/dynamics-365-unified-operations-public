@@ -1,18 +1,17 @@
 ---
 title: Complete, publish, and deploy a Globalization feature (RCS)
-description: This article provides information about the lifecycle of Globalization features (RCS).
+description: Learn about the lifecycle of Globalization features (RCS), including an overview on electronic invoicing feature versions.
 author: ilikond
-ms.date: 12/15/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
+ms.topic: article
+ms.date: 12/15/2021
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Complete, publish, and deploy a Globalization feature (RCS)

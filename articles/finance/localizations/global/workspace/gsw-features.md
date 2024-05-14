@@ -1,6 +1,6 @@
 ---
 title: Globalization Studio workspace features
-description: This article explains the features of the Globalization Studio workspace.
+description: Learn about the features of the Globalization Studio workspace including overviews of the version, configurations, and setups components.
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -8,7 +8,6 @@ ms.date: 01/29/2023
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-
 ---
 
 # Globalization Studio workspace features 
