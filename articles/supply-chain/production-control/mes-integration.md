@@ -122,9 +122,9 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Optional |Enum (RouteDependent \| Always \| Never) |
 | `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Yes \| No) |
-| `ProductionJournalNameId` | Optional | String |
-| `PickingListProductionJournalNameId` | Optional | String|
-| `RouteCardProductionJournalNameId` | Optional | String |
+| `JournalNameId` | Optional | String |
+| `PickingListJournalNameId` | Optional | String|
+| `RouteCardJournalNameId` | Optional | String |
 | `FromOperationNumber` | Optional | Integer|
 | `ToOperationNumber` | Optional | Integer|
 | `InventoryLotId` | Optional | String |
