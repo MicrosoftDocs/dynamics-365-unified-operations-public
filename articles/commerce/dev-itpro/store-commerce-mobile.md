@@ -30,11 +30,11 @@ The Store Commerce mobile apps retain full functional parity with current Retail
 
 ## App architecture
 
-The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when it's deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render Store Commerce for web directly from the Commerce Scale Unit (CSU), and connect to Headless Commerce and Commerce headquarters via the CSU. The shell application model enables Store Commerce apps to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
+The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render Store Commerce for web directly from the Commerce Scale Unit (CSU), and connect to Headless Commerce and Commerce headquarters via the CSU. The shell application model enables Store Commerce apps to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
 
-To update a Store Commerce mobile app, just update the CSU. All new POS functionality and features will automatically be picked up by the app. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
+To update a Store Commerce mobile app, just update the CSU. All new POS functionality and features are automatically picked up by the app. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
 
-The shell apps are serviced through app store updates. When a minor version reaches general availability (GA), Microsoft will publish it to the app stores. Microsoft might also publish patches between minor version updates to release high-priority bug fixes.
+The shell apps are serviced through app store updates. When a minor version reaches general availability (GA), Microsoft publishes it to the app stores. Microsoft might also publish patches between minor version updates to release high-priority bug fixes.
 
 ## Feature parity with Store Commerce for Windows
 
@@ -90,9 +90,9 @@ You can create a new register and associate it with the device that you created,
 
 ### Screen layout setup
 
-If you're repurposing a screen layout that is included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app will automatically select the included compact layout if the screen resolution of your device is less than 480 &times; 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
+If you're repurposing a screen layout that is included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 &times; 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
 
-After devices and registers have been configured, in Commerce headquarters, go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules**, and run the registers job.
+After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules** and run the registers job.
 
 ## Activate a device
 
@@ -117,7 +117,7 @@ The network protocols for Epson and Star printers enable receipt printing on mob
 
 ### Cash drawer
 
-Cash drawers that are connected through an Epson or Star receipt printer's drawer kick (DK) port are supported. The cash drawer configuration in the hardware profile is very similar to that of the receipt printer to which it's connected. Specify "Network" for the **Drawer setting**, specify "Epson" or "Star" for the **Device name**, and then in the **Cash drawer** setting in the register's IP Addresses view, enter the printer's IP address into the **IP address** field. 
+Cash drawers that are connected through an Epson or Star receipt printer's drawer kick (DK) port are supported. The cash drawer configuration in the hardware profile is similar to that of the receipt printer to which it's connected. Specify "Network" for the **Drawer setting**, specify "Epson" or "Star" for the **Device name**, and then in the **Cash drawer** setting in the register's IP Addresses view, enter the printer's IP address into the **IP address** field. 
 
 ### Barcode scanner
 
