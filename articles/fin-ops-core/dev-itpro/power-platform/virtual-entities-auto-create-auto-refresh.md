@@ -26,12 +26,12 @@ Changes that are made on data entities in finance and operations apps are visibl
 
 ![Diagram of the architecture of virtual entities for the Auto Create and Refresh capability.](media/AutoCreate_Refresh_Overview.png)
 
-## Auto Refresh
+**Auto Refresh**
 
 * The Virtual Table Auto Refresh feature is activated when the supported version of the package is deployed. Supported platform versions are PU62 (7.0.7120.170), PU63 (7.0.7198.123), PU64 (7.0.7279.31), or later.
 * When the package is deployed in finance and operation apps, it triggers an X++ batch job (CDSVirtualEntityRefreshBatch). This batch job is triggered 30 minutes after successful deployment of the feature package.
 
-## Auto Create
+**Auto Create**
 
 * The Auto Create capability is activated when the supported version of the feature is deployed. Supported platform versions are PU63 (7.0.7198.123), PU64 (7.0.7279.31), or later.
 * In finance and operations apps, the user must set the value of the **Dataverse.AutoCreate** metadata property to *Yes* to enable automatic creation of virtual tables in the linked Dataverse environment.
