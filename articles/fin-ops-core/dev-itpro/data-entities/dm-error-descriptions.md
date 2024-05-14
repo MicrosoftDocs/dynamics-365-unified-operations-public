@@ -1,10 +1,12 @@
 ---
 title: Data management error descriptions and known limitations
 description: Learn about the error messages that you might encounter in data management, including a table that outlines possible causes of various errors.
-author: twheeloc
-ms.author: twheeloc
-ms.topic: article
-ms.date: 01/08/2024
+author: pnghub
+ms.author: gned
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 05/14/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -109,4 +111,8 @@ Data management (DMF/DIXF) export to Excel has a 255-character limit.
 - This limitation is a known SSIS limitation. Data that has more than 255 characters is truncated when you export to the Excel file type. For more information, see [Export long text values](/sql/integration-services/load-data-to-from-excel-with-ssis#export-long-text-values).
 - To export data by using the Data management (DMF) export job, use a different file type.
 
+
+> [!NOTE]
+> When doing Data management export to file and downloading to file, an extra period(.) will be appended to the end of file name.
+> 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
