@@ -28,7 +28,7 @@ This article provides links to documentation resources for Malaysia.
 - [Print GST tax invoices](my-00005-print-gst-tax-invoices.md)
 - [Self-billed invoices](my-00007-self-billed-invoices.md)
 - [Set up GST relief clauses](my-00006-01-gst-relief-clauses.md)
-- [SST-02 declaration for Malaysia](../mea/apac-mys-sst-declaration.md)
+- [SST-02 declaration for Malaysia](../apac/apac-mys-sst-declaration.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/malaysia.html)
