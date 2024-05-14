@@ -1,10 +1,12 @@
 ---
 title: Data management error descriptions and known limitations
 description: Learn about the error messages that you might encounter in data management, including a table that outlines possible causes of various errors.
-author: twheeloc
-ms.author: twheeloc
-ms.topic: article
-ms.date: 01/08/2024
+author: pnghub
+ms.author: gned
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 05/14/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
