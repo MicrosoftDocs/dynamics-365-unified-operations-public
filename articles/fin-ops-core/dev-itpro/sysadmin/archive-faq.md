@@ -62,7 +62,7 @@ You can also view the archived data from within the Dynamics 365 Finance and Ope
 
 ## I export finance and operations application data to my own data lake. If I archive data from my live finance and operations application tables, will the archived data be removed from my own data lake?
 
-Application data copied to your own data lake using [Azure Synapse Link](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), isn't deleted from your data lake when you archive with Dataverse long term retention.
+Application data copied to your own data lake using [Azure Synapse Link](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), isn't deleted from your data lake when you archive with Dataverse long term retention.
 
 Application data that's copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](../analytics/export-entities-to-your-own-database.md) or [Export to data lake](../data-entities/finance-data-azure-data-lake.md) are deleted from your data lake when you archive with Dataverse long term retention.
 
