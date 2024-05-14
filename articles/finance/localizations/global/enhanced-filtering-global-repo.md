@@ -1,19 +1,18 @@
 ---
 title: RCS enhanced filtering in the RCS/Global repository
-description: This article describes enhanced filtering capabilities for the RCS Global repository, which have been improved to include the additional filters.
+description: Learn about enhanced filtering capabilities for the RCS Global repository, which have been improved to include the additional filters.
 author: kfend
-ms.date: 03/25/2024
-ms.topic: conceptual
-ms.custom: 
-  - bap-template 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: conceptual
+ms.date: 03/25/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: AX 10.0.9
-ms.assetid: 
 ms.search.form: ERSolutionTable, ERWorkspace
+ms.dyn365.ops.version: AX 10.0.9
 ---
 
 # RCS enhanced filtering options for finding configurations in the RCS/Global repository

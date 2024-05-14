@@ -1,13 +1,13 @@
 ---
 title: Reverse charge mechanism for VAT/GST scheme
-description: This article explains how to set up the reverse charge value-added tax (VAT) for European countries/regions, Saudi Arabia, and Singapore.
+description: Learn how to set up the reverse charge value-added tax (VAT) for European countries/regions, Saudi Arabia, and Singapore.
 author: EricWangChen
-ms.date: 10/05/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: wangchen
+ms.topic: article
+ms.date: 10/05/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---

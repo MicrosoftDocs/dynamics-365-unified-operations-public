@@ -1,14 +1,13 @@
 ---
-# required metadata
 title: Globalization Studio overview
-description: This article provides information about the Globalization Studio.
+description: Learn about the Globalization Studio, including outlines on no-code/low-code globalization tools and services and multi-country localization content.
 author: Filatovm
-ms.date: 09/19/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 09/19/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 2022-09-20
 ms.dyn365.ops.version: 10.0.30
 ---

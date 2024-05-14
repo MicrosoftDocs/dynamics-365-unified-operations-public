@@ -1,16 +1,16 @@
 ---
 title: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
-description: This article provides information about the ICMS tax benefits and exemptions in fiscal documents for Brazil.
+description: Learn about the ICMS tax benefits and exemptions in fiscal documents for Brazil, including overviews on turning on the technical note feature and adding tags.
 author: gionoder
-ms.date: 12/01/2020
+ms.author: johnmichalak
 ms.topic: article
-audience: Application User
+ms.date: 12/01/2020
+ms.custom:
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Brazil
-ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-ms.custom: 
 ---
 
 # NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e

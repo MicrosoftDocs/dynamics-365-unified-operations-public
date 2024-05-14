@@ -1,6 +1,6 @@
 ---
 title: Import Electronic reporting (ER) configurations from Dataverse
-description: This article explains how to import Electronic reporting (ER) configurations from Microsoft Dataverse.
+description: Learn how to import Electronic reporting (ER) configurations from Microsoft Dataverse, including an overview on importing the Globalization solution.
 author: filatovm
 ms.author: filatovm
 ms.topic: how-to

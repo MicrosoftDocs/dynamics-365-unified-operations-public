@@ -1,18 +1,17 @@
 ---
 title: Configure feature setups
-description: This article explains how to set up Electronic invoicing features.
+description: Learn how to set up Electronic invoicing features, including outlines and step-by-step processes for adding feature setups and editing feature setups.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
+ms.topic: article
+ms.date: 01/29/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: AX 10.0.39 
-ms.custom: 
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.39
 ---
 
 # Configure feature setups
