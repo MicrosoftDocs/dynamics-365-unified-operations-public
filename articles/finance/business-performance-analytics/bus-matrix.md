@@ -25,7 +25,7 @@ A *bus matrix* shows the relationship between facts and dimensions. *Facts* repr
 
 ### Bus matrix
 
-The following business matrix table shows the relationship between facts and dimensions in the context of Business performance analytics. Rows represent dimensions, while columns represent facts.
+The following business matrix table shows the relationship between facts and dimensions in the context of Business performance analytics. Rows represent dimensions, while columns represent facts. If a cell in the matrix below contains an "X," then the fact corresponding to that cell's column contains the dimension corresponding to that cell's row.   
 
 
 | Dimensions  | Budget | Budget reservation | General ledger | Product receipt | Purchase invoice | Purchase invoice matching | Purchase order | Purchase payment | Purchase payment matching | Purchase requisition | Purchase sub-ledger | Sales invoice | Sales payment | Sales payment matching | Sales sub-ledger |
