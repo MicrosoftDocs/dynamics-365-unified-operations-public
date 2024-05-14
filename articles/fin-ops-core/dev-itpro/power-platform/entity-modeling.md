@@ -2,7 +2,7 @@
 title: Entity modeling
 description: Learn about relational modeling concepts using virtual entities for finance and operations entities, including an overview on generating virtual entities.
 author: mkannapiran
-ms.author: mkannapiran
+ms.author: kannapiran.manickavasaga
 ms.topic: article
 ms.date: 05/14/2024
 ms.custom: NotInToc
