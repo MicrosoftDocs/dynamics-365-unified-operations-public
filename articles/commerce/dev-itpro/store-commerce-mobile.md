@@ -55,7 +55,7 @@ The following table compares the capabilities of the Store Commerce app across W
 
 ## Prerequisites
 
-The Store Commerce mobile apps require Dynamics 365 Commerce, specifically the Commerce headquarters and CSU components. The following table lists the minimum operating system (OS) and CSU versions that are required by the Android and iOS mobile apps. 
+The Store Commerce mobile apps require the CSU and Commerce headquarters components of Dynamics 365 Commerce. The following table lists the minimum operating system (OS) and CSU versions that are required by the Android and iOS mobile apps. 
 
 | Prerequisite | Android | iOS  |
 | ------------ | ------- | ---- |
@@ -99,7 +99,7 @@ After devices and registers are configured, in Commerce headquarters go to **Ret
 To activate a device on a Store Commerce mobile app, follow these steps.
 
 1. Open the app on the mobile device.
-1. Enter the CPOS URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
+1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
 1. Sign in by using the credentials of a worker who has permission to manage devices.
 1. Select the store that is associated with the register that you created or reused in Commerce headquarters.
 1. Select the register that you associated with the device that you created in Commerce headquarters.
