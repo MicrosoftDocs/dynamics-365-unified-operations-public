@@ -1,9 +1,10 @@
 ---
 title: Virtual entities auto create and auto refresh
 description: Learn about auto create and auto refresh of virtual entities for finance and operations to Dataverse
-ms.author: mkannapiran
+author: mkannapiran
+ms.author: kannapiran.manickavasaga
 ms.topic: auto create and refresh
-ms.date: 05/06/2024
+ms.date: 05/14/2024
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -52,7 +53,7 @@ Changes made in Microsoft Dynamics 365 Finance and Operations on Data entity are
     * Personalize the grid within this form by adding the "IsTransientFailure" field for enhanced visibility and troubleshooting.
     * The "Failure message" field will provide details about the error.
     * The "IsTransientFailure" field will indicate whether the failure is transient and if a retry will be attempted.
-    * For entities marked as failed with Refresh Needed unchecked, manual refreshing from Dataverse is required after resolving the issue. Please note that this action must be taken by the user as the system does not automatically address these issues.  You can refer to [Web service error codes](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/reference/web-service-error-codes) for understanding any error codes in the failure message.
+    * For entities marked as failed with Refresh Needed unchecked, manual refreshing from Dataverse is required after resolving the issue. Please note that this action must be taken by the user as the system does not automatically address these issues.  You can refer to [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) for understanding any error codes in the failure message.
 ![Virtual entity metadata sync status form](media/VEMetadataSyncStatus.png)
 
 
