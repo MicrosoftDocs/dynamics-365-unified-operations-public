@@ -386,7 +386,7 @@
             href: dev-itpro/store-commerce-capabilities.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
-          - name: Store Commerce app for mobile platforms
+          - name: Store Commerce app for mobile platforms (preview)
             href: dev-itpro/store-commerce-mobile.md
           - name: Enable Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
             href: store-commerce-self-check-out.md
