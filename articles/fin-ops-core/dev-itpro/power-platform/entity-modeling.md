@@ -25,26 +25,26 @@ ms.dyn365.ops.version: 10.0.12
 >
 > The public entity name that is exposed in Dataverse metadata for the finance and operations virtual table uses the physical name of the finance and operations entity. This could be different from the public name of the entity as exposed by the OData metadata.
 
-Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual tables, there are scenarios where virtual tables and native tables in Dataverse must work together to enable the desired user experience. This article explains concepts of relational modeling that can be implemented using virtual tables for finance and operations.
+Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual tables, there are scenarios where virtual tables and native tables in Dataverse must work together to enable the desired user experience. This article explains concepts of relational modeling that can be implemented using virtual tables for finance and operations apps.
 
 ## Generating virtual entities
 
-By default, virtual tables for finance and operations apps don't exist in Dataverse. A user must query the catalog entity to view the entities that are available in the linked instance of finance and operations apps. From the catalog, the user can select one or more entities, and then request that Dataverse generate virtual tables in Dataverse for these Finance and Operations entities. This procedure is explained in later sections.
+By default, virtual tables for finance and operations apps don't exist in Dataverse. A user must query the catalog entity to view the entities that are available in the linked instance of finance and operations apps. From the catalog, the user can select one or more entities, and then request that Dataverse generate virtual tables in Dataverse for these finance and operations entities. This procedure is explained in later sections.
 
 ## Entity fields
 
-When a virtual table is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual table in Dataverse. In an ideal case, the total number of fields are the same in both finance and operations entities and Dataverse virtual tables, unless there's a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in the finance and operations app.
+When a virtual table is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual table in Dataverse. In an ideal case, the total number of fields is the same in both finance and operations entities and Dataverse virtual tables, unless there's a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in the finance and operations app.
 
 The rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
 
-| Data type in finance and operations | Modeled data type in Dataverse |
+| Data type in finance and operations apps | Modeled data type in Dataverse |
 |-------------------------------------|------------------------------------------|
 | Real                                | Decimal<br><br>For information about the possible mismatch, see the next table.</p> |
 | Long                                | Decimal, where the precision equals 0 (zero) |
 | Int                                 | Integer |
 | String (nonmemo), String (memo)    | String – single line of text, String – multiple lines of text |
-| UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in finance and operations is surfaced as a null value in Dataverse. |
-| Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in finance and operations is surfaced as an empty value in Dataverse. |
+| UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in finance and operations apps is surfaced as a null value in Dataverse. |
+| Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in finance and operations apps is surfaced as an empty value in Dataverse. |
 | Enum                                | Picklist<br><br>Finance and operations enumerations (enums) are generated as global OptionSets in Dataverse. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Dataverse aren't guaranteed to be stable between the systems. Therefore, you shouldn't rely on them, especially with extensible enums, because these enums don't have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. |
 
 Fields of the *real* and *long* data types in finance and operations apps are modeled as the *decimal* data type in Dataverse. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
@@ -101,7 +101,7 @@ Because the primary field in Dataverse is expected to have only one field of the
 > [!IMPORTANT]
 > A write transaction that spans a virtual table and a native entity is not supported. We do not recommend using this form of transaction, as there isn't a way to ensure consistency.
 
-Relations in finance and operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual table in Dataverse. Note that many-to-many (n:n) relations aren't supported in finance and operations.
+Relations in finance and operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual table in Dataverse. Note that many-to-many (n:n) relations aren't supported in finance and operations apps.
 
 For example, in finance and operations apps, if Entity A has a foreign key to Entity B, this relation is modeled as an n:1 relationship in virtual table Table A in Dataverse. The schema name of this relationship in Dataverse uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 92 characters. Any relation where the schema name produces a name that exceeds 92 characters won't be generated in the virtual entity in Dataverse.
 
@@ -132,7 +132,7 @@ Therefore, in effect, the entity name is the only information that is used in a 
 
 ### Virtual table–to–native table relationship
 
-As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Dataverse table (including in native table–to–native table relationships) or in a finance and operations virtual table (including in virtual table–to–virtual table relationships). However, consider an example where you want to show finance and operations sales orders for Account A in Dataverse. The query that is sent to the finance and operations app for this relationship has a WHERE clause on the GUID of the entity key of the native accounts entity in Dataverse, because the sales orders must be filtered for a specific account in Dataverse. However, because the finance and operations app doesn't have any information about the GUID of the entity in Dataverse, the query won't return any sales orders. The query is successful only if the WHERE clause has conditions that are based on the fields that finance and operations understand.
+As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Dataverse table (including in native table–to–native table relationships) or in a finance and operations virtual table (including in virtual table–to–virtual table relationships). However, consider an example where you want to show finance and operations sales orders for Account A in Dataverse. The query that is sent to the finance and operations app for this relationship has a WHERE clause on the GUID of the entity key of the native accounts entity in Dataverse, because the sales orders must be filtered for a specific account in Dataverse. However, because the finance and operations app doesn't have any information about the GUID of the entity in Dataverse, the query won't return any sales orders. The query is successful only if the WHERE clause has conditions that are based on the fields that the finance and operations app understands.
 
 Therefore, how can the GUID of the accounts table in Dataverse be replaced with finance and operations fields in such a way that the query that is sent to the finance and operations app returns the correct list of sales orders?
 
@@ -142,7 +142,7 @@ In the above example, the relationship between the SalesOrderHeader virtual tabl
 
 Next, we add a new key named new_accountcompanyidx, which specifies that (accountnumber, new_testcompany) together represent a unique row in the account table in Dataverse.
 
-The next step is to define this relationship in X++. The following example shows sample X++ code. The names of the fields, index, and mapping information should match the names of the fields and indexes created in Dataverse. In this example, a relationship named “synthaccount” is created between the virtual SalesorderHeader table and the native account table in Dataverse. The mapped fields make up the new_accountcompanyidx index. The display name for the relationship is @SYS11307. Note the backslash at the start of the display name. This ensures that the label defines the relationship, so that it's appropriately translated.
+The next step is to define this relationship in X++. The following example shows sample X++ code. The names of the fields, index, and mapping information should match the names of the fields and indexes created in Dataverse. In this example, a relationship named "synthaccount" is created between the virtual SalesorderHeader table and the native account table in Dataverse. The mapped fields make up the new_accountcompanyidx index. The display name for the relationship is @SYS11307. Note the backslash at the start of the display name. This ensures that the label defines the relationship, so that it's appropriately translated.
 
 The field mapping indicates which field on the virtual table maps to the field on the native table. In the field mapping, the key is the virtual table field, and the value is the native table field.
 
@@ -160,7 +160,7 @@ The field mapping indicates which field on the virtual table maps to the field o
         return fieldMapping;
     }
 ```
-The next step is to generate or refresh the virtual table to get the new relationship. Note that relationships between a virtual table and a native table can't be updated in Dataverse once it's created. The only way to make an update is to physically remove the relationship, refresh the entity, and then physically readd the relationship in order to resolve the issue.
+The next step is to generate or refresh the virtual table to get the new relationship. Note that relationships between a virtual table and a native table can't be updated in Dataverse once it's created. The only way to make an update is to physically remove the relationship, refresh the entity, and then physically re-add the relationship in order to resolve the issue.
 
 This relationship looks like a typical GUID-based relationship, but has extra metadata to translate query filters on the relationship into restrictions on the backing fields. The query that is now generated has a WHERE clause that is based on the fields that finance and operations apps recognize. That query then returns the filtered list of sales orders, as expected.
 
@@ -170,7 +170,7 @@ Native entity–to–virtual entity relationships work much like native entity�
 
 ## Enums
 
-Finance and operations enums are modeled as OptionSets in Dataverse. When a virtual entity for finance and operations is generated, the required enums are generated as OptionSets. If an OptionSet already exists, it's used instead.
+Finance and operations enums are modeled as OptionSets in Dataverse. When a virtual entity for finance and operations apps is generated, the required enums are generated as OptionSets. If an OptionSet already exists, it's used instead.
 
 ## Company
 
