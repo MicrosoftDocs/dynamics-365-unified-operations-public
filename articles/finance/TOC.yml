@@ -4444,7 +4444,9 @@
       - name: Business performance analytics reports
         href: business-performance-analytics/Reports-in-BPA.md
       - name: Create business performance analytics reports  
-        href: business-performance-analytics/how-to-create-and-edit-reports.md     
+        href: business-performance-analytics/how-to-create-and-edit-reports.md
+      - name: Business performance analytics Excel add-in
+        href:  business-performance-analytics/bpa-excel.md
     - name: Business performance planning
       items:
       - name: Business performance planning overview
