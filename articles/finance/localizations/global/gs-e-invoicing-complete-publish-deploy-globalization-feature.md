@@ -1,18 +1,17 @@
 ---
 title: Complete and deploy a Globalization feature
-description: This article provides information about the lifecycle of Globalization features.
+description: Learn about the lifecycle of Globalization features, including overviews on electronic invoicing feature versions and deploying and remove feature versions.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
+ms.topic: article
+ms.date: 01/29/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39 
-ms.custom: 
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.39 
 ---
 
 # Complete and deploy a Globalization feature

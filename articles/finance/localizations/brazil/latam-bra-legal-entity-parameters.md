@@ -1,17 +1,17 @@
 ---
 title: Parameters for legal entities in Brazil
-description: To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This article explains how to set the parameters to specify this information.
+description: To submit tax statements reporting performance, a Brazilian legal entity requires fiscal information. Learn how to set the parameters to specify this information.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
+ms.search.form: Accountant_BR, AccountantElectronicAddress_BR, AccountantPostalAddress_BR, BrazilParameters, FiscalEstablishment_BR, FiscalEstablishmentGroup_BR
 ms.dyn365.ops.version: Version 1611
 ms.assetid: af0951b7-078d-49ea-9655-1037dbd0bfe1
-ms.search.form: Accountant_BR, AccountantElectronicAddress_BR, AccountantPostalAddress_BR, BrazilParameters, FiscalEstablishment_BR, FiscalEstablishmentGroup_BR
 ---
 
 # Parameters for legal entities in Brazil
@@ -24,7 +24,7 @@ To collect and submit tax statements that report on performance, a Brazilian leg
 
 A Brazilian legal entity is organized by fiscal establishments that function in the same way and are in the same operations of a branch. There is a primary fiscal establishment that is considered the Matriz, and related fiscal establishments that are located in other states or outside Brazil. The following illustration shows the structure of a Brazilian legal entity and related fiscal establishments. 
 
-[![structure of a Brazilian legal entity and related fiscal establishments.](../media/bralegalentity-236x300.png)](/media/bralegalentity.png)
+[![structure of a Brazilian legal entity and related fiscal establishments.](../media/bralegalentity-236x300.png)]
 
 ## Fiscal establishments
 A fiscal establishment is a physical location of a legal entity, such as a subsidiary, branch, plant, distribution center, warehouse, or store, that requires a Cadastro Nacional da Pessoa Jurídica (CNPJ) or Inscrição Estadual (IE) tax registration number. A legal entity can have multiple fiscal establishments. Fiscal establishments issue and receive fiscal documents, and assess and pay taxes. You can perform the following tasks:

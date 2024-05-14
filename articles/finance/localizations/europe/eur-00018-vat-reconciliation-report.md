@@ -1,16 +1,16 @@
 ---
 title: EUR-00018 VAT reconciliation report
-description: This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.
+description: Learn how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities, including a step-by-step process.
 author: AdamTrukawka
-ms.date: 08/29/2018
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: MainAccountLookup
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # EUR-00018 VAT reconciliation report
 

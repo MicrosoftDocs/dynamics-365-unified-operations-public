@@ -1,13 +1,13 @@
 ---
 title: EU Sales list for Germany
-description: This article provides information about the European Union (EU) sales list report for Germany.
+description: Learn about the European Union (EU) sales list report for Germany, including a list of various fields that are included on the German EU sales list report.
 author: AdamTrukawka
-ms.date: 03/02/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/02/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

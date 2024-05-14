@@ -1,16 +1,16 @@
 ---
 title: Referenced fiscal documents for Brazil
-description: This article provides an overview of referenced fiscal documents that are used in Brazil.
+description: Learn about referenced fiscal documents that are used in Brazil, including examples and outlines on fiscal references and documents.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: FiscalDocument_BR, SalesEditLines, TmpFiscalReference_BR
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Referenced fiscal documents for Brazil
