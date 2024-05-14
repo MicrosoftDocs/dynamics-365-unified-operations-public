@@ -17,7 +17,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> The authentication methods that are described in this topic are now deprecated. We strongly recommend that you authenticate with [User-based authentication](../../../supply-chain/warehousing/warehouse-app-user-based-auth-faq) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md).
+> The authentication methods that are described in this topic are now deprecated. We strongly recommend that you authenticate with [device code flow](warehousing-onprem-userauth.md) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md).
 
 Authentication with Microsoft Active Directory Federation Services (AD&nbsp;FS) provides a secure way of authenticating a mobile device with Dynamics 365 Finance + Operations (on-premises) environments. The Warehouse Management mobile app supports the following types of service-based authentication:
 
