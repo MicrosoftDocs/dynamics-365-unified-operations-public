@@ -104,9 +104,9 @@ For each consolidation in the grid, the following information is provided:
 
 The toolbar above the grid provides the following buttons that you can use to work with a selected consolidation:
 
-- **Consolidated transaction** – View the full details of the selected consolidation. The **Consolidated transaction** page that appears shows all the transactions in the consolidation.
+- **Consolidated transactions** – View the full details of the selected consolidation. The **Consolidated transactions** page that appears shows all the transactions in the consolidation.
 
-    To view more information about a specific transaction on the **Consolidated transaction** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
+    To view more information about a specific transaction on the **Consolidated transactions** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
 
 - **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.
