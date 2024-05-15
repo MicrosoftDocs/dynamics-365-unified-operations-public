@@ -1,5 +1,5 @@
 ---
-title: Get started with electronic invoicing for Malaysia (preview)
+title: Get started with electronic invoicing for Malaysia
 description: This article explains how to get started with electronic invoicing for Malaysia in Microsoft Dynamics 365 Finance (preview).
 author: ilikond
 ms.date: 05/13/2024
@@ -13,17 +13,13 @@ ms.search.validFrom: 2024-05-09
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
-# Get started with electronic invoicing for Malaysia (preview)
+# Get started with electronic invoicing for Malaysia
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides information to help you get started with electronic invoicing for Malaysia. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
 After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices according to the [regulatory requirements in Malaysia](https://www.hasil.gov.my/en/e-invoice/).
-
-> [!NOTE]
-> This functionality is currently in **preview**. During this stage, only the *generation* of electronic invoice XML files is implemented. Further steps, such as digital signing and submission to the authorities, will be added when the functionality becomes **generally available**.
 
 ![Diagram of the electronic invoicing workflow in Malaysia.](apac-mys-e-invoice-workflow.jpg)
 
@@ -36,8 +32,8 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 - The primary address of the legal entity must be in Malaysia.
 - Your company must be a registered taxpayer in Malaysia and must have the following registration numbers: Tax Identification Number (TIN), business registration number (BRN), and Sales and Service Tax (SST) number.
-- *(Not required for preview)* Obtain **Client ID** and **Client secret** values in the [Inland Revenue Board of Malaysia (IRBN)](https://www.hasil.gov.my/) (Lembaga Hasil Dalam Negeri Malaysia \[LHDN\]). These values serve as credentials that are used to establish a secure connection to the IRBN portal.
-- *(Not required for preview)* Obtain a digital signature certificate from one of the [Malaysian certification authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). This certificate is used for digital signing of generated electronic invoices.
+- Obtain **Client ID** and **Client secret** values in the [Inland Revenue Board of Malaysia (IRBN)](https://www.hasil.gov.my/) (Lembaga Hasil Dalam Negeri Malaysia \[LHDN\]). These values serve as credentials that are used to establish a secure connection to the IRBN portal.
+- Obtain a digital signature certificate from one of the [Malaysian certification authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). This certificate is used for digital signing of generated electronic invoices.
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
