@@ -250,8 +250,8 @@ The following situations use the original posting process:
 - Invoice posting with prepayment application
 - Invoice posting with budget control enabled
 - Project invoice posting
-- PO/invoice with Terms of payment of Cash 
-- Invoice posting with Accounts payable parameter auto-settlement enabled 
+- PO/invoice with Terms of payment of Cash (Supported in 0.39)
+- Invoice posting with Accounts payable parameter auto-settlement enabled (Supported in 0.39)
 
 
 
