@@ -50,16 +50,16 @@ Warehouse *work* is used to control any warehouse operation performed by a wareh
 
 **Outbound load shipment confirmation**
 
-Once the warehouse tasks are finished for a load, a subsequent shipment confirmation procedure can be executed, updating the **Load status** to *Shipped* and the **Load packing slip background process** will be updated from *None* to *Queued*. This process may function as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md), depending on the configuration.
+Once the warehouse tasks are finished for a load, a subsequent shipment confirmation procedure can be executed, updating the **Load status** to *Shipped* and the **Load packing slip background posting status** will be updated from *None* to *Queued*. This process may function as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md), depending on the configuration.
 
 > [!NOTE]
 > When using the [Confirm and transfer](confirm-and-transfer.md) capability a new load can get created for the load lines that weren't fully picked.
 
 <a name="load-packing-slip-posting"></a> **Load packing slip posting**
 
-Processing the *Packing slip* from a load updates the related sales order line transactions to *Deducted*, allowing the invoicing process to commence. The background process **Warehouse management \> Periodic \> Load packing slip posting** runs for *Shipped* outbound loads with **Load packing slip background process** setting *Queued*. Upon successful posting, the value shifts to *None*. Should any errors occur during posting, the status alters to *Error*, requiring attention to the details in the generated batch job info log.
+Processing the *Packing slip* from a load updates the related sales order line transactions to *Deducted*, allowing the invoicing process to commence. The background process **Warehouse management \> Periodic \> Load packing slip posting** runs for *Shipped* outbound loads with **Load packing slip background posting status** setting *Queued*. Upon successful posting, the status shifts to *None*. Should any errors occur during posting, the status alters to *Error*, requiring attention to the details in the generated batch job info log. The background posting procedure requires a status marked as *Queued*, yet it's possible to manually post a load packing slip even if an *Error* is indicated. Upon successful posting, the status will change to *None*.
 
-For the *Load packing slip posting* to operate in the background, proper configuration of **Warehouse management \> Setup \> Packing \> Packing slip posting parameters** is needed. Remember that if printing is included in this process, avoid printing to screen since this task will execute in the background within a batch job.
+For the *Load packing slip posting* to operate in the background, proper configuration of **Warehouse management \> Setup \> Inventory \> Packing slip posting parameters** is needed. Remember that if printing is included in this process, avoid printing to screen since this task will execute in the background within a batch job.
 
 > [!TIP]
 > By setting the **Packing slip creation policy** to *Shipment* for the load, and supplying each associated shipment with a **Preallocated packing slip id** and **Preallocated packing slip document date** in the *PACKING SLIP POSTING PARAMETERS* section, enables automatic distribution of sales packing slips for each shipment based on the predetermined values.
