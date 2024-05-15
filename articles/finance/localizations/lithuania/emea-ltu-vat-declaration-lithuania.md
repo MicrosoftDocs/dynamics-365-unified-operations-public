@@ -25,7 +25,7 @@ The VAT declaration feature for Lithuania supports filing a VAT return for compa
 
 To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of operation that's subject to reporting in the VAT declaration for Lithuania. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate available sales tax transaction attributes (sales tax code, tax classifier) with the lookup result of the **Report field lookup** lookup field. 
 
-In the following table, the "Lookup result" column shows the lookup result that's preconfigured for a specific VAT declaration field in the VAT declaration format. 
+In the following table, the **Lookup result** column shows the lookup result that's preconfigured for a specific VAT declaration field in the VAT declaration format. 
 Use this information to correctly associate tax transaction attributes with the lookup result and then with the field of the VAT declaration.
 
 | Operation description | FR0600: Tax Base<br>(sum without VAT) | FR0600: VAT amount | Lookup result<br>(ReportFieldLookup) | Lookup result description label EN | Lookup result description label LT |
@@ -160,6 +160,13 @@ For more information about how you can use the data management framework, see [D
 3. Use the filter to specify the settlement periods to include on the report.
 4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
+You can specify default values for **Deduction percent** and **Main economic activity** parameters of your VAT declaration in additional fields of electronic messages.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **LT VAT declaration** processing.
+2. On the **Message additional fields** FastTab, in the **DeductionPercent** (Kalendorinių metų proporcinis PVM atskaitos procentas) field, define the deduction percent that will be used further in reporting as default value.
+3. On the **Message additional fields** FastTab, in the **MainEconomicActivity** (Pagrindinė vykdomos veiklos rūšis) field, define the main economic activity code that will be used further in reporting as default value.
+4. Save your changes.
+
 ### <a id="vat-id"></a>Set up the registration numbers of the company that's reporting FR0600
 
 The FR0600 form of the VAT declaration in Lithuania includes the following fields to identify the reporting company:
@@ -208,9 +215,9 @@ If the VAT registration number isn't specified in the **Tax registration number*
     |---|---|
     | Report date | Specify the date when report is prepared. |
     | Declaration period type | Select **Initial** to prepare a file for initial submission in the reporting period. Select **Corrected** to prepare a file to submit a corrected VAT declaration. |
-    | Contact person | Select a contact person in the lookup list. |
+    | Contact person | Select a contact person in the lookup list. This parameter is available in XML format only. |
     | Main economic activity code | Specify the main economic activity code for your company. |
-    | Pro rata coefficient | Specify the pro rata coefficient for the reporting period. |
+    | Deduction percent | Specify the deduction percent for the reporting period. |
 
 4. On the **Run in the background** FastTab, specify parameters of the batch processing, and select the **Batch processing** checkbox to run the report in batch mode.
 5. Select **OK**, and review the Excel report. When the report is run in batch mode, you can find the generated file as an attachment of the batch job on the **Electronic reporting jobs** page (**Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**).
@@ -248,7 +255,7 @@ The following procedure applies to the electronic message processing example tha
 14. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
 15. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file.
 16. Review the amounts in the Excel document, and then select **Generate report**.
-17. To generate the VAT declaration in TXT format, in the **Run processing** dialog box, select **LT VAT Generate report**, and then select **OK**.
+17. To generate the VAT declaration in XML format, in the **Run processing** dialog box, select **LT VAT Generate report**, and then select **OK**.
 18. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section, and then select **OK**.
 19. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, download the file, and use it for your submission to the tax authority.
 
