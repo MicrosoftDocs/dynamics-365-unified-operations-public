@@ -96,7 +96,7 @@ The dual-write Human Resources package contains the solutions and maps that are 
 
 ## Enable dual-write maps
 
-Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. For more information, see [Enable dual-write for existing finance and operations apps](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
+Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. For more information, see [Guidance for dual-write setup](../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
 
 ## Integration process
 
@@ -105,6 +105,9 @@ By installing and applying the **Dynamics 365 Human Resources Integration to URS
 In addition to providing dual-write maps, the solution includes virtual entities. Because the solution takes a dependency on virtual entities for skills and certificates, those skills and certificates are automatically generated after the dual-write package is installed.
 
 Relevant business events are registered in Human Resources. Then, when there are changes to the entities, Dataverse can consume those changes.
+
+> [!NOTE]
+> The Dynamics 365 HR Integration to URS app allows the **Worker** field to be editable when a new bookable resource is created. The Worker field isn't editable for an existing resource or once the record is saved. However, the linking for an existing resource to a worker can be manually made in the back-end dataverse through the Power Platform.
 
 ## Create skills
 
