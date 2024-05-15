@@ -2277,7 +2277,7 @@ items:
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
-      - name: Enable generative help and guidance with Copilot (preview)
+      - name: Enable generative help and guidance with Copilot
         href: copilot/enable-copliot-generative-help.md
     - name: Responsible AI
       items:
