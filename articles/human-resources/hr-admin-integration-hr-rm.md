@@ -4,8 +4,9 @@
 title: Human resources to bookable resource integration
 description: This article provides details about the integration of Microsoft Dynamics 365 Human Resources workers to bookable resources.
 author: tulsijhaveri
-ms.date: 1/17/2024
+ms.date: 5/15/2024
 ms.topic: article
+ms.reviewer: twheeloc
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
@@ -99,11 +100,12 @@ The dual-write Human Resources package contains the solutions and maps that are 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. For more information, see [Guidance for dual-write setup](../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
 
 > [!IMPORTANT]
-> It is recommended to refresh the entity list to ensure the most updated versions of entities are reflected.
+> It's recommended to refresh the entity list to ensure the most updated versions of entities are reflected.
 
-### Apply Solution
-- Navigate to Finance and Operations > Data Management > Dual-write
-- Select Apply solution and apply the following solutions: 
+### Apply solution
+1. Go to **Data management** > **Dual-write**.
+2. Select **Apply solution**.
+3. Apply the following solutions: 
   - Dynamics 365 Human Resources entity maps
   - HCM Scheduling 
 
@@ -111,9 +113,10 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 
 ### Run Dual-write table maps
-Before you start dual-write on an entity, you can run an initial synchronization to handle existing data on both sides: Finance and operations apps and customer engagement apps.  For guidance, see [Enable table maps for dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md). 
+Before you start dual-write on an entity, you can run an initial synchronization to handle existing data on both Finance and operations apps and customer engagement apps. For more information, see [Enable table maps for dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md). 
 
-Select appropriate table maps to run the dual-write maps for worker to bookable resource integration. For enabling worker to bookable resource integration select: 
+Select appropriate table maps to run the dual-write maps for the worker to bookable resource integration. 
+To enable worker to bookable resource integration select the following: 
 - Worker (cdm_workers)
 - Skills (Dual-write) (characteristics)
 - Certificate type (Dual-write) (characteristics)
@@ -129,7 +132,7 @@ In addition to providing dual-write maps, the solution includes virtual entities
 Relevant business events are registered in Human Resources. Then, when there are changes to the entities, Dataverse can consume those changes.
 
 > [!NOTE]
-> The Dynamics 365 HR Integration to URS app allows the **Worker** field to be editable when a new bookable resource is created. The Worker field isn't editable for an existing resource or once the record is saved. However, the linking for an existing resource to a worker can be manually made in the back-end dataverse through the Power Platform.
+> The Dynamics 365 Human Resources integration to URS app allows the **Worker** field to be editable when a new bookable resource is created. The **Worker** field isn't editable for an existing resource or after the record is saved. However, linking an existing resource to a worker can be manually made in dataverse through the Power Platform.
 
 ## Create skills
 
