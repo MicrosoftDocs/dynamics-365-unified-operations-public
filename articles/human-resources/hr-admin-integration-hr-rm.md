@@ -98,6 +98,21 @@ The dual-write Human Resources package contains the solutions and maps that are 
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. For more information, see [Guidance for dual-write setup](../fin-ops-core/dev-itpro/data-entities/dual-write/connection-setup.md).
 
+> [!IMPORTANT]
+> It is recommended to refresh the entity list to ensure the most updated versions of entities are reflected.
+
+### Apply Solution
+- Navigate to Finance and Operations > Data Management > Dual-write
+- Select Apply solution and apply the following solutions: 
+  - Dynamics 365 Human Resources entity maps
+  - HCM Scheduling 
+
+![DW_ApplySolution](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/129548753/f8e33ed9-e9d6-45b1-b6f2-692369ac1ec1)
+
+
+### Run Dual-write table maps
+Before you start dual-write on an entity, you can run an initial synchronization to handle existing data on both sides: Finance and operations apps and customer engagement apps.  For guidance, see [Enable table maps for dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md). 
+
 ## Integration process
 
 By installing and applying the **Dynamics 365 Human Resources Integration to URS** solution, organizations can integrate the catalog of skills, certificates, and related information in Human Resources with the characteristics table in Dataverse. The integration also includes mapping for rating models and rating levels.
