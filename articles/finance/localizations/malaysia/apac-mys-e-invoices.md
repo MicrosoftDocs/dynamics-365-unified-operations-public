@@ -37,6 +37,34 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
+## Azure Key Valut configuration
+
+Create an Azure Key Vault to store required certificates and secrets issued for your company. For more information, refer to [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+
+Add the following required elements in the Azure Key Vault:
+
+- The secret for the **Client secret** to establish secure communication to IRBN.
+- The secret for the **Client ID** for secure communication to IRBN.
+- The **certificate** for digital signing of outgoing electronic invoices.
+
+> [!NOTE]
+> If you need to configure emailing of e-invoices' XML files to buyers directly from the invoicing service then add the following **secrets** required of electronic mails sending specifically:
+> - For the **User name**
+> - For the **Client ID**
+> - For the **Client secret**
+>   
+>   For more details how to configure electronic mail settings, refer to [Configure an email channel for Office 365 Exchange Online](../global/gs-e-invoicing-configure-email-for-exchange.md).
+
+## Electronic invoicing parameters configuration
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field select the reference to the Azure Key Valut created in the previous chapter.
+1. In the **SAS token secret** field, select the name of the storage account secret **URL** that must be used to authenticate access to the storage account.
+1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
+1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create a new element the respective **Type** for each certificate or secret described in the previous chapter.
+   > [!NOTE]
+   > The values in the **Name** column should coincide with the names the certificates or secrets described in the previous chapter.
+
 ## Electronic invoicing feature configuration
 
 Some of the parameters from the **(Preview) Malaysian electronic invoicing (MY)** electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
