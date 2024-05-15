@@ -1407,6 +1407,8 @@ items:
           href: power-platform/admin-reference.md
         - name: Enable Dataverse virtual entities
           href: power-platform/enable-virtual-entities.md
+        - name: Create and refresh virtual entities automatically
+          href: power-platform/virtual-entities-auto-create-auto-refresh.md
         - name: Track changes for virtual tables in Dataverse
           href: power-platform/track-changes-fin-ops-virtual-table.md
         - name: Power Apps portals with finance and operations
