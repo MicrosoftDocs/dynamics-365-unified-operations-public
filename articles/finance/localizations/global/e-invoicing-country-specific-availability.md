@@ -44,6 +44,7 @@ The following table shows the Electronic invoicing features that are generally a
 | Germany | German electronic invoice (DE) | Sales invoices and project invoices |
 | Indonesia | Indonesian electronic invoice (ID) | Sales invoices, project invoices, and vendor invoices |
 | Italy | FatturaPA (IT) | Sales invoices and project invoices |
+| Malaysia | [Malaysian electronic invoicing (MY)](../malaysia/apac-mys-e-invoices.md) | Sales invoices, project invoices, and self invoices |
 | Netherlands | Dutch electronic invoice (NL) | Sales invoices and project invoices |
 | New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Norway | Norwegian electronic invoice (NO) | Sales invoices and project invoices |
@@ -59,6 +60,5 @@ The following table shows the Electronic invoicing features that are currently i
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
-| Malaysia | (Preview) Malaysian electronic invoicing (MY) | Sales invoices, project invoices, and self invoices |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 | Poland | Polish KSeF submission (PL) | Sales invoices, project invoices, and advance invoices |
