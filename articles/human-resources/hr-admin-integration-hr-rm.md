@@ -113,6 +113,13 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 ### Run Dual-write table maps
 Before you start dual-write on an entity, you can run an initial synchronization to handle existing data on both sides: Finance and operations apps and customer engagement apps.  For guidance, see [Enable table maps for dual-write](../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md). 
 
+Select appropriate table maps to run the dual-write maps for worker to bookable resource integration. For enabling worker to bookable resource integration select: 
+- Worker (cdm_workers)
+- Skills (Dual-write) (characteristics)
+- Certificate type (Dual-write) (characteristics)
+- Rating models (ratingmodels)
+- Rating level (ratingvalues)
+
 ## Integration process
 
 By installing and applying the **Dynamics 365 Human Resources Integration to URS** solution, organizations can integrate the catalog of skills, certificates, and related information in Human Resources with the characteristics table in Dataverse. The integration also includes mapping for rating models and rating levels.
