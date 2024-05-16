@@ -3,10 +3,13 @@ title: Intercompany planning groups for demand forecasting
 description: Learn about intercompany planning groups and how they contribute to demand forecasting, which optimizes logistics operations across multiple companies.
 author: dereklh77
 ms.author: v-heuerderek
+ms.reviewer: kamaybac
+ms.search.form:
 ms.topic: overview
 ms.date: 04/15/2024
 audience: Application User
-ms.search.region: Global
+ms.custom: 
+  - bap-template
 ---
 
 # Intercompany planning groups for demand forecasting
@@ -30,7 +33,7 @@ To further understand intercompany planning groups for demand forecasting, under
 
 A plan in one company can include planned intercompany demand that is related to orders from another company's plan. This capability is useful, because it provides full visibility into planned orders across companies. It also ensures that all required planned supply orders are created, but without requiring that planned orders be firmed for the intercompany demand.
 
-In order to propagate the demand throughout the intercompany chain, you must set parameters to ensure that planned purchase orders are automatically firmed; that is, orders can't be changed in terms of time or quantity. Set up the **Firming time fence** on the Coverage group, or the **Firming time fence** in the Master plan. 
+In order to propagate the demand throughout the intercompany chain, you must set parameters to ensure that planned purchase orders are automatically firmed; that is, orders can't be changed in terms of time or quantity. Set up the **Firming time fence** on the Coverage group, or the **Firming time fence** in the Master plan.
 
 If no **Firming time fence** is set up, no intercompany purchase orders are created automatically. Only the first execution of the master scheduling results in planned orders; however, because the intercompany purchase order is not actually created, no intercompany sales order is created, and, therefore, no additional intercompany purchase orders are created, and so on.
 
@@ -52,22 +55,21 @@ To learn more, see [Demand forecasting setup](../master-planning/demand-forecast
 
 All partners must use the same intercompany chart of accounts and, if needed, the same intercompany dimensions. You can save time when you set up the partnership by using the chart of accounts and dimensions for one of the partners as a baseline for the intercompany chart of accounts and dimensions. The company that you use as the baseline is called the *synchronization partner*. Typically, the synchronization partner is the headquarter company, but it doesn't have to be.
 
-On the **Intercompany Setup** page, each partner specifies the synchronization partner in the **Synchronization Partner** field. Afterward, the intercompany chart of accounts and intercompany dimensions are automatically specified for them, based on the setup for the synchronization partner. The partners then use the **Intercompany Chart of Accounts Mapping** and **Intercompany Dimension Mapping** pages to map their chart of accounts and dimensions to the intercompany chart of accounts and dimensions, and vice versa. 
+On the **Intercompany Setup** page, each partner specifies the synchronization partner in the **Synchronization Partner** field. Afterward, the intercompany chart of accounts and intercompany dimensions are automatically specified for them, based on the setup for the synchronization partner. The partners then use the **Intercompany Chart of Accounts Mapping** and **Intercompany Dimension Mapping** pages to map their chart of accounts and dimensions to the intercompany chart of accounts and dimensions, and vice versa.
 
 > [!NOTE]
 > It's important to map accounts and dimensions in both directions. That is, both to the intercompany chart of accounts and dimensions, and from them to your own accounts and dimensions.
 
-- Exchange the following authentication settings. Each partner can get this information from their registered app.
+Exchange the following authentication settings. Each partner can get this information from their registered app.
 
-  - Client ID
-  - Client secret
-  - Token endpoint
-  - Redirect URL
+- Client ID
+- Client secret
+- Token endpoint
+- Redirect URL
 
 Run the **IC Partner Cross-Environment Setup** assisted setup guide in all companies to specify the information. To start the guide, on the **Intercompany Partner** page, use the **Connect Externally Setup** action.  
 
 ## Related resources
 
-- [Demand planning home page](demand-planning-home-page.md)  
 - [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)  
 - [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md)  
