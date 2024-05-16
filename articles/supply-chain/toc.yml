@@ -1867,8 +1867,6 @@
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
-        - name: Intercompany planning groups for demand forecasting
-          href: demand-planning/intercompany-planning-groups-demand-forecasting.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Coverage time fences
@@ -2055,9 +2053,6 @@
         href: demand-planning/export-data.md
       - name: Rolling forecasts
         href: demand-planning/rolling-forecasts.md
-      - name: Intercompany planning groups for demand forecasting
-        href: demand-planning/intercompany-planning-groups-demand-forecasting.md
-     
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
