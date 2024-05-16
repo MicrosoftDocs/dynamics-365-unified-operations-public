@@ -2,7 +2,6 @@
 title: Rebate management posting setup
 description: This article describes how to set up posting profiles. Posting profiles are used to determine posting entries for Rebate management calculation lines.
 author: sherry-zheng
-ms.date: 02/19/2021
 ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: TAMRebatePosting
