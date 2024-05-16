@@ -7,7 +7,7 @@ ms.topic: article
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
-ms.author: hhaines
+ms.author: shajain
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10
 ms.custom: 
