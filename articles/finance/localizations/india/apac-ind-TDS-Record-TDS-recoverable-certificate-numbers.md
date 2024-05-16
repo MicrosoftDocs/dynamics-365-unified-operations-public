@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Record TDS recoverable certificate numbers
-description: This article explains how to use the Recoverable certificates page to record the certificate numbers and dates for Tax Deducted at Source (TDS) certificates that are received for a specific vendor, customer, or ledger.
+description: Learn how to use the Recoverable certificates page to record the certificate numbers and dates for Tax Deducted at Source (TDS) certificates.
 author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 02/12/2021
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-02-12
+ms.search.form:
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Record TDS recoverable certificate numbers

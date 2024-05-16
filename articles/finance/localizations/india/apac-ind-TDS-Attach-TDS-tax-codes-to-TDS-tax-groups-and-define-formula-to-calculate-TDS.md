@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS
-description: This article explains how to set up Tax Deducted at Source (TDS) tax groups and attach TDS tax codes to TDS tax groups. To calculate TDS for a TDS tax group, you must define the formula for TDS tax codes that are attached to it.
+description: Learn how to set up Tax Deducted at Source (TDS) tax groups, and attach TDS tax codes to TDS tax groups, and define the formula for TDS tax codes.
 author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 02/12/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-02-12
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS

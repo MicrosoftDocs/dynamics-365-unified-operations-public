@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Charges allocation on Bill of entry page for import orders
-description: This article provides information about charge allocation for import orders.
+description: Learn about about charge allocation for import orders, including outlines on key changes introduced, enabling features, and creating purchase orders.
 author: EricWangChen
-ms.date: 03/21/2022
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 03/21/2022
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User 
+ms.search.region: India
 ms.search.validFrom: 2022-03-01
+ms.search.form:
 ms.dyn365.ops.version:
-
 ---
 
 # Charges allocation on Bill of entry page for import orders

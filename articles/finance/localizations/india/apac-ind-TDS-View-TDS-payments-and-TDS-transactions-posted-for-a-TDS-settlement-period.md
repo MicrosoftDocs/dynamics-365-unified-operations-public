@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: View posted TDS payments and transactions for a TDS settlement period
-description: This article explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
+description: Learn how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period, including a step-by-step process.
 author: kailiang
-ms.date: 03/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 03/12/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-02-12
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # View posted TDS payments and transactions for a TDS settlement period
