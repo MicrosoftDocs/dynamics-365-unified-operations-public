@@ -91,7 +91,7 @@ The following setup is required in the Dynamics 365 Finance before you can insta
         - **General ledger** - Budget, Reversing entries, Sales tax
         - **Fixed assets**
         - **Bank** - Check, Deposit slip, Negotiable instrument - Bill of exchange
-        - **Trade** Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management
+        - **Trade** - Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management - Material handling equipment interface
         - **Trade agreements** - Price/discount
         - **Project**
         - **Procurement 1** - Purchase requisition
