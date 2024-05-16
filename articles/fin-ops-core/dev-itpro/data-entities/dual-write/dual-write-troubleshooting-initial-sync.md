@@ -15,8 +15,6 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during initial synchronization.
 
 > [!IMPORTANT]
@@ -27,6 +25,16 @@ This article provides troubleshooting information for dual-write integration bet
 After you enable the mapping templates, the status of the maps should be **Running**. If the status is **Not running**, errors occurred during initial synchronization. To view the errors, select the **Initial sync details** tab on the **Dual-write** page.
 
 ![Error on the Initial sync details tab.](media/initial_sync_status.png)
+
+In some cases it may seem like the initial sync is stuck. If you see the initial sync status as **Running** for a long time, you can dig further into the status by examining the **FinOps job name** details in FnO. The following screenshots show how these items are related:
+
+1. From the table map screen, select the **Initial sync details** tab, and click on the desired execution. This will take you to the **Execution details** screen, which will provide the **FinOps job name**.
+
+    ![Initial sync details tab.](media/initial_sync_execution_details.png)
+
+2. Navigate to Data Management in FinOps and find the **Job history** section. Search for the **FinOps job name** from step 1 in the **Execution group id** column. Once selected, you can click the **Excution details** button for additional detail about the status of the job.
+
+    ![FinOps job name in Data Management.](media/initial_sync_finops_job.png)
 
 ## You can't complete initial synchronization: 400 Bad Request
 

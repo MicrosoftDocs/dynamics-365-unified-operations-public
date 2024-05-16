@@ -15,8 +15,6 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-
 During business processes, Microsoft Dynamics 365 users often gather information about their customers. This information is recorded as activities and notes. This article describes the integration of note data in dual-write.
 
 Customer information can be classified in the following ways:
@@ -103,6 +101,9 @@ You can also create a URL.
 ## Templates
 
 Note integration includes a collection of table maps that work together during data interaction, as shown in the following table.
+
+> [!NOTE]
+> These templates are compatible with live sync only, and currently do not support initial sync.
 
 | Finance and operations app | Customer engagement app | Description |
 |----------------------------|-------------------------|-------------|
