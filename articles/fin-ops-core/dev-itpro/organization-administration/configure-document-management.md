@@ -2,15 +2,13 @@
 title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 05/16/2024
 ms.author: jasongre
+ms.date: 05/16/2024
 ms.topic: article
 ms.date: 01/05/2022
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
-ms.search.form:
 ms.dyn365.ops.version: July 2017 update 
 ---
 
