@@ -1,18 +1,18 @@
 ---
 title: Japan consumption tax report
-description: This article explains how to set up and generate the Japan consumption tax report for legal entities in Japan.
+description: Learn how to set up and generate the Japan consumption tax report for legal entities in Japan, including a process for enabling the consumption tax report.
 author: liza-golub
-ms.date: 03/13/2024
+ms.author: egolub
 ms.topic: how-to
+ms.date: 03/13/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Japan
-ms.author: egolub
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.form: LedgerConsumptionTaxCalcTrans_JP,LedgerConsumptionTaxCalcTrans2023_JP, LedgerConsumptionTaxReportTrans_JP, LedgerConsumptionTaxReportTrans2023_JP
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Japan consumption tax report

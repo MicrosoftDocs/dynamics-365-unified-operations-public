@@ -1,18 +1,18 @@
 ---
 title: Configure and report Italian sales tax books
-description: This article explains how to configure and generate Italian sales tax books.
+description: Learn how to configure and generate Italian sales tax books, including prerequisites and an outline on configuring book sales tax books.
 author: liza-golub
-ms.date: 03/04/2024
+ms.author: egolub
 ms.topic: how-to
+ms.date: 03/04/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Italy
-ms.author: egolub
 ms.search.validFrom: 2024-02-22
-ms.dyn365.ops.version: Version 1611
 ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, TaxBookSection, TaxBookSectionLookupVoucherSeries, TaxBookStatus, TaxBookTable, VendParameters, LedgerParameters
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Configure and report Italian sales tax books
