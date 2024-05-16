@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Service request tracing
-description: This article provides information about the client request identifier that you should include in headers to enable requests to be traced through the finance and operations service and help with troubleshooting.
+description: Learn about the client request identifier that you should include in headers to enable requests to be traced through the finance and operations service.
 author: jaredha
-ms.date: 04/07/2022
-ms.topic: article
-audience: IT Pro, Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: jaredha
+ms.topic: article
+ms.date: 04/07/2022
+ms.reviewer: sericks
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2022-04-07
-
 ---
 
 # Service request tracing

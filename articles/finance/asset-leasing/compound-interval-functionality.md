@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Compounding interval functionality
-description: This article provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals.
+description: Access information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals, including various examples.
 author: moaamer
-ms.date: 04/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: AssetLeaseDetail
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/12/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: AssetLeaseDetail
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Compounding interval functionality

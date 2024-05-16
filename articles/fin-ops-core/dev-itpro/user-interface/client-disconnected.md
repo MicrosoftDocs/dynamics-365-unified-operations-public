@@ -1,17 +1,15 @@
 ---
 title: Client internet connectivity
-description: This article describes what happens when a client machine can't access the internet in on-premises deployments.
+description: Learn about client internet connectivity, including an overview of degredations of lack of internet access and client internet connectivity options.
 author: jasongre
-ms.date: 01/10/2024
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 01/10/2024
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.assetid: 
-ms.service: dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---

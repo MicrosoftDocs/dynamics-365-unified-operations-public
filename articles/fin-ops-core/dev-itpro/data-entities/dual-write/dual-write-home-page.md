@@ -1,16 +1,16 @@
 ---
 title: Dual-write home page
-description: This article provides links to information about dual-write.
+description: Access various links to information about dual-write, including resources for dual-write setup and managing dual-write after setup.
 author: sericks007
-ms.date: 02/21/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 02/21/2023
+ms.reviewer: sericks
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Dual-write home page

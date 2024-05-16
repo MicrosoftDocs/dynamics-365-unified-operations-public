@@ -1,17 +1,13 @@
 ---
-# required metadata
-
 title: Set up security for Business performance analytics
-description: This article explains how to set up security for Business performance analytics.
+description: Learn how to set up security for Business performance analytics, including outlines for the admin role, the process of setting up roles, and dimension security.
 author: jkhaira7
 ms.author: jkhaira
-ms.reviewer: twheeloc 
-ms.date: 12/12/2023
 ms.topic: conceptual
+ms.date: 12/12/2023
 ms.custom:
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
-ms.audience: administrator
 ---
 
 # Set up security for Business performance analytics

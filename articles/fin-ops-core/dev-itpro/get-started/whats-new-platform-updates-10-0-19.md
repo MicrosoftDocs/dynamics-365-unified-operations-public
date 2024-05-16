@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.19 of finance and operations apps (June 2021)
-description: This article lists the features that are included in the platform updates for version 10.0.19 of finance and operations apps.
+description: Learn about the features that are included in the platform updates for version 10.0.19 of finance and operations apps.
 author: sericks007
-ms.date: 06/28/2021
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 06/28/2021
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-04-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.19
-
 ---
+
 # Platform updates for version 10.0.19 of finance and operations apps (June 2021)
 
 [!include [banner](../includes/banner.md)]

@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.14 of finance and operations apps (November 2020)
-description: This article lists the features are included in the platform updates for version 10.0.14 of finance and operations apps.
+description: Learn aboutthe features are included in the platform updates for version 10.0.14 of finance and operations apps.
 author: sericks007
-ms.date: 10/15/2020
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 10/15/2020
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-08-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.14
-
 ---
+
 # Platform updates for version 10.0.14 of finance and operations apps (November 2020)
 
 [!include [banner](../includes/banner.md)]

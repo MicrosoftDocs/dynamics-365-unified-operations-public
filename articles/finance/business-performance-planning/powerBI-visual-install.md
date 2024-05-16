@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Install business performance planning visuals
-description: This article describes how to install business performance planning visuals.
+description: Learn how to install business performance planning visuals, including prerequisites and a step-by-step process for connecting your data.
 author: ShielaSogge
-ms.date: 04/10/2024
-ms.topic: article
-ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 04/10/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Install business performance planning visuals
 
 This article describes how to install business performance planning visuals. To fully use the Business performance planning application, you must also install Microsoft Power BI visuals. For more information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).

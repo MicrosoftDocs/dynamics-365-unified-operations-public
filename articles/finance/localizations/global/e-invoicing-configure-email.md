@@ -1,18 +1,17 @@
 ---
 title: Configure email channels
-description: This article explains how to configure an email channel to receive electronic invoices.
+description: Learn how to configure an email channel to receive electronic invoices.
 author: ilikond
-ms.date: 02/12/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
+ms.topic: article
+ms.date: 02/12/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Configure email channels

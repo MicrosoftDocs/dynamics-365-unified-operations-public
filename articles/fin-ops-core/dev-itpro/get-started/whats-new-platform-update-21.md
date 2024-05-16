@@ -1,18 +1,19 @@
 ---
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (November 2018)
-description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 21. This version was released in November 2018.
+description: Learn about new or changed features in Dynamics 365 for Finance and Operation platform update 21. This version was released in November 2018.
 author: sericks007
-ms.date: 01/09/2019
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 01/09/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-09-30
-ms.dyn365.ops.version: Platform 21
-ms.custom: 
+ms.dyn365.ops.version: Platform 21 
 ms.assetid: a765a61c-52a3-47c5-b579-68b9249c592b
 ---
+
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (November 2018)
 
 [!include [banner](../../../finance/includes/banner.md)]

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Batch processing and batch servers
-description: This article describes batch processing and batch servers, and how to plan for their use.
+description: Learn about batch processing and batch servers and how to plan for their use, including overviews on batch server topology planning and batch throttling.
 author: raanandm
-ms.date: 03/21/2024
-ms.topic: overview
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: raanandm
+ms.topic: overview
+ms.date: 03/21/2024
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: IT Pro 
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ---
 
 # Batch processing and batch servers
@@ -31,9 +21,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes batch processing and batch servers, and how to plan for their use.
 
-The batch framework provides an asynchronous, server-based batch processing environment that can process tasks across multiple instances of Application Object Server (AOS).
+The batch platform provides an asynchronous, server-based batch processing environment that can process tasks across multiple instances of Application Object Server (AOS).
 
-You should become familiar with the following aspects of the batch framework:
+You should become familiar with the following aspects of the batch platform:
 
 - A **batch job** is a process that is used to achieve a specific goal. A batch job consists of one or more batch tasks.
 - A **batch task** is an activity that is run by a batch job. You can add batch tasks that have multiple types of dependencies to a batch job. You can also configure AOS instances to run multiple threads, each of which runs a task. All batch tasks that are waiting to be run can be run by any available AOS instance that is configured as a batch server. To improve throughput and reduce overall execution time, you can define a batch job as many tasks and then use a batch server to run the tasks against all available AOS instances.
@@ -130,7 +120,7 @@ The batch platform uses two types of batch throttling to ensure smooth operation
 
 ### Batch class throttling
 
-Batch class throttling prevents excessive tasks by limiting the average number of executions of a specific batch class per minute per batch server. By default, the upper limit is set to 60 tasks per minute. If this limit is exceeded, the batch framework temporarily suspends the execution of new tasks of that batch class for another minute, to prevent it from monopolizing system resources.
+Batch class throttling prevents excessive tasks by limiting the average number of executions of a specific batch class per minute per batch server. By default, the upper limit is set to 60 tasks per minute. If this limit is exceeded, the batch platform temporarily suspends the execution of new tasks of that batch class for another minute, to prevent it from monopolizing system resources.
 
 ### Batch resource-based throttling
 
@@ -145,6 +135,6 @@ In essence, the delay mechanism serves as a proactive measure to optimize resour
 For information that can help you use Lifecycle Services to diagnose performance issues, see [Troubleshooting SQL performance](../lifecycle-services/performancetroubleshooting.md#details).
 
 > [!NOTE]
-> The batch framework can detect situations where there are no non-throttled tasks to schedule and run at any given time. In these situations, the batch tries to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
+> The batch platform can detect situations where there are no non-throttled tasks to schedule and run at any given time. In these situations, the batch tries to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Create performance reviews
 description: This article explains how to create a performance review and describes the purpose for each section of the review. 
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 05/08/2024
 ms.topic: how-to 
  
 # optional metadata 

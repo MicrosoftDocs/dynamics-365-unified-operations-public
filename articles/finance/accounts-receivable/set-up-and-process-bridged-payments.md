@@ -4,7 +4,7 @@ description: Learn how to set up and process bridged customer payments. A bridge
 author: rachel-profitt
 ms.author: kweekley
 ms.topic: article
-ms.date: 02/23/2023
+ms.date: 04/29/2024
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User

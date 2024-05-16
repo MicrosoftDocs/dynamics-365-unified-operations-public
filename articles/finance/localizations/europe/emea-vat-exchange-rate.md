@@ -1,18 +1,18 @@
 ---
 title: VAT exchange rate overview
-description: This article provides information about exchange rates for the VAT calculation that's available for the Czech Republic, Hungary, and Poland.
+description: Learn about exchange rates for the VAT calculation that's available for the Czech Republic, Hungary, and Poland, including prerequisites.
 author: mrolecki
-ms.date: 07/08/2021
-ms.topic: overview
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.topic: overview
+ms.date: 07/08/2021
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
+audience: Application User
+ms.search.region: Czech Republic, Hungary, Poland
+ms.search.validFrom: 2016-11-30
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
+ms.dyn365.ops.version: Version 1611
+ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 ---
 
 # VAT exchange rate overview

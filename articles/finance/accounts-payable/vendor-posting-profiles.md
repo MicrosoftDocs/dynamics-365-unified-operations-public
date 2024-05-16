@@ -4,7 +4,7 @@ description: Vendor posting profiles control the posting of vendor transactions 
 author: twheeloc
 ms.author: shpandey
 ms.topic: article
-ms.date: 11/21/2022
+ms.date: 04/29/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

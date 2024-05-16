@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1268.0959"
+   height="651.08173"
+   overflow="hidden"
+   version="1.1"
+   id="svg66"
+   sodipodi:docname="wms-only-shared-warehouse-inventory-process.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview66"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5960938"
+     inkscape:cx="628.09594"
+     inkscape:cy="291.02301"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg66" />
+  <defs
+     id="defs1">
+    <image
+       width="70"
+       height="70"
+       xlink:href="data:image/png;base64,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"
+       preserveAspectRatio="none"
+       id="img0" />
+  </defs>
+  <g
+     id="g66"
+     transform="translate(-11.904063,-68.918257)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect1" />
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect2" />
+    <rect
+       x="28.500099"
+       y="77.500099"
+       width="1234"
+       height="638"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#f2f2f2"
+       fill-opacity="0.4"
+       id="rect3" />
+    <rect
+       x="757.5"
+       y="126.5"
+       width="482"
+       height="574"
+       stroke="#bf8b00"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffe399"
+       fill-opacity="0.65098"
+       id="rect4" />
+    <rect
+       x="51.500099"
+       y="126.5"
+       width="499"
+       height="580"
+       stroke="#2f528f"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#4472c4"
+       fill-opacity="0.4"
+       id="rect5" />
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="32px"
+       transform="translate(354.899,108)"
+       id="text5">Dynamics 365 Supply Chain Management</text>
+    <rect
+       x="62.500099"
+       y="134.5"
+       width="479"
+       height="46"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect6" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(136.091,166)"
+       id="text6">ORDER LEGAL ENTITY 1 (LE1)</text>
+    <rect
+       x="771.5"
+       y="134.5"
+       width="455"
+       height="46"
+       stroke="#ae5a21"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ed7d31"
+       id="rect7" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(786.332,165)"
+       id="text7">DISTRIBUTION LEGAL</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1038.67,165)"
+       id="text8">ENTITY (WOM)</text>
+    <rect
+       x="283.5"
+       y="510.5"
+       width="250"
+       height="75"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect8" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(320.687,556)"
+       id="text9">Update on</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(432.167,556)"
+       id="text10">-</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(441.833,556)"
+       id="text11">hand</text>
+    <rect
+       x="287.5"
+       y="312.5"
+       width="250"
+       height="115"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect11" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(309.963,349)"
+       id="text12">External warehouse</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(361.956,378)"
+       id="text13">inventory</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(347.269,407)"
+       id="text14">adjustments</text>
+    <rect
+       x="137.5"
+       y="453.5"
+       width="159"
+       height="104"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect14" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(176.321,514)"
+       id="text15">Costing</text>
+    <path
+       d="m 344.5,505.092 c 74.901,11.5 74.901,-11.5 149.793,-11.5 V 433.813 H 344.5 Z m 12.341,-71.279 v -7.75 h 148.77 v 60.154 c -5.655,0 -11.318,0.416 -11.318,0.416 v -52.82 z m 11.6,-7.75 V 418.5 H 518.5 v 59.967 c -6.444,0 -12.889,0.312 -12.889,0.312 v -52.716 z"
+       fill="#005a9f"
+       fill-rule="evenodd"
+       id="path15" />
+    <path
+       d="m 344.5,433.813 h 149.793 v 59.779 c -74.892,0 -74.892,23 -149.793,11.5 z m 12.341,0 v -7.75 h 148.77 v 60.154 c -5.655,0 -11.318,0.416 -11.318,0.416 M 368.441,426.063 V 418.5 H 518.5 v 59.967 c -6.444,0 -12.889,0.312 -12.889,0.312"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path16" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(363.139,458)"
+       id="text16">Journal</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(363.139,483)"
+       id="text17">processing</text>
+    <rect
+       x="820.5"
+       y="297.5"
+       width="229"
+       height="84"
+       stroke="#ae5a21"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ed7d31"
+       id="rect17" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(844.666,333)"
+       id="text18">On</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(869.999,333)"
+       id="text19">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(876.499,333)"
+       id="text20">hand adjustment</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(899.492,359)"
+       id="text21">updates</text>
+    <path
+       d="m 834.5,692.41 c 130.43,13.8 130.43,-13.8 260.85,-13.8 V 606.875 H 834.5 Z m 21.491,-85.535 v -9.3 h 259.069 v 72.185 c -9.85,0 -19.71,0.5 -19.71,0.5 v -63.385 z m 20.2,-9.3 V 588.5 H 1137.5 v 71.96 c -11.22,0 -22.44,0.375 -22.44,0.375 v -63.26 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path21" />
+    <path
+       d="m 834.5,606.875 h 260.85 v 71.735 c -130.42,0 -130.42,27.6 -260.85,13.8 z m 21.491,0 v -9.3 h 259.069 v 72.185 c -9.85,0 -19.71,0.5 -19.71,0.5 M 876.191,597.575 V 588.5 H 1137.5 v 71.96 c -11.22,0 -22.44,0.375 -22.44,0.375"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path22" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(882.996,656)"
+       id="text22">On</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(908.33,656)"
+       id="text23">-</text>
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(914.83,656)"
+       id="text24">hand inventory</text>
+    <use
+       width="100%"
+       height="100%"
+       xlink:href="#img0"
+       fill="none"
+       transform="translate(767,303)"
+       id="use24" />
+    <path
+       d="m 772.5,645.5 c 0,-18.778 15.222,-34 34,-34 18.778,0 34,15.222 34,34 0,18.778 -15.222,34 -34,34 -18.778,0 -34,-15.222 -34,-34 z"
+       stroke="#000000"
+       stroke-width="0"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#ed7d31"
+       fill-rule="evenodd"
+       id="path24" />
+    <path
+       d="m 772.5,645.5 c 0,-18.778 15.222,-34 34,-34 18.778,0 34,15.222 34,34 0,18.778 -15.222,34 -34,34 -18.778,0 -34,-15.222 -34,-34 z"
+       stroke="#c8c8c8"
+       stroke-width="0.333333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path25" />
+    <g
+       id="g29">
+      <g
+         id="g28">
+        <g
+           id="g27">
+          <path
+             d="m 790.192,649.6 11.2,-11.2 h -6.242 c 2.042,-3.967 6.183,-6.708 10.967,-6.708 3.091,0 5.95,1.166 8.108,3.091 H 825.6 c -3.442,-7.35 -10.908,-12.366 -19.483,-12.366 -9.975,0 -18.375,6.766 -20.825,15.983 h -6.3 z"
+             fill="#ffffff"
+             id="path26" />
+          <path
+             d="m 833.183,649.6 -11.2,-11.2 -11.2,11.2 h 6.3 c -2.041,3.967 -6.183,6.708 -10.966,6.708 -3.092,0 -5.95,-1.166 -8.109,-3.091 h -11.433 c 3.5,7.35 10.908,12.366 19.542,12.366 9.975,0 18.375,-6.766 20.825,-15.983 z"
+             fill="#ffffff"
+             id="path27" />
+        </g>
+      </g>
+    </g>
+    <path
+       d="m 775.5,480.827 c 155.828,12.394 155.828,-12.395 311.64,-12.395 V 404.004 H 775.5 Z m 25.675,-76.823 v -8.353 h 309.515 v 64.833 c -11.77,0 -23.55,0.449 -23.55,0.449 v -56.929 z m 24.134,-8.353 V 387.5 H 1137.5 v 64.631 c -13.41,0 -26.81,0.337 -26.81,0.337 v -56.817 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path29" />
+    <path
+       d="m 775.5,404.004 h 311.64 v 64.428 c -155.812,0 -155.812,24.789 -311.64,12.395 z m 25.675,0 v -8.353 h 309.515 v 64.833 c -11.77,0 -23.55,0.449 -23.55,0.449 M 825.309,395.651 V 387.5 H 1137.5 v 64.631 c -13.41,0 -26.81,0.337 -26.81,0.337"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path30" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(795,437)"
+       id="text30">Warehouse inventory update</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(891.993,462)"
+       id="text31">log data</text>
+    <path
+       d="m 751.278,446.535 -186.113,-0.356 0.003,-1.333 186.113,0.355 z m -184.786,2.98 -7.992,-4.015 8.008,-3.985 z"
+       id="path31" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(567.56,469)"
+       id="text32">Inventory update log</text>
+    <path
+       d="m 725.5,390.5 h 47 v 46 h -47 z m 10.563,5.75 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path32" />
+    <path
+       d="m 736.063,396.25 h 17.25 v 8.625 h 8.625 v 25.875 h -25.875 z"
+       fill="#cd9500"
+       fill-rule="evenodd"
+       id="path33" />
+    <path
+       d="m 753.313,396.25 v 8.625 h 8.625 z"
+       fill="#996f00"
+       fill-rule="evenodd"
+       id="path34" />
+    <path
+       d="m 736.063,396.25 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z m 25.875,8.625 h -8.625 v -8.625"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path35" />
+    <rect
+       x="725.5"
+       y="390.5"
+       width="47"
+       height="46"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect35" />
+    <rect
+       x="287.5"
+       y="621.5"
+       width="249"
+       height="75"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="#005a9f"
+       id="rect36" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(363.897,653)"
+       id="text36">On</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(395.564,653)"
+       id="text37">-</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(405.231,653)"
+       id="text38">hand</text>
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(297.124,682)"
+       id="text39">reconciliation process</text>
+    <path
+       d="m 531.5,400.5 h 32 v 33 h -32 z m 7,4.5 h 12 l 6,6 v 18 h -18 z"
+       fill="#005a9f"
+       fill-rule="evenodd"
+       id="path39" />
+    <path
+       d="m 538.5,405 h 12 v 6 h 6 v 18 h -18 z"
+       fill="#004880"
+       fill-rule="evenodd"
+       id="path40" />
+    <path
+       d="m 550.5,405 v 6 h 6 z"
+       fill="#00365f"
+       fill-rule="evenodd"
+       id="path41" />
+    <path
+       d="m 538.5,405 h 12 l 6,6 v 18 h -18 z m 18,6 h -6 v -6"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path42" />
+    <rect
+       x="531.5"
+       y="400.5"
+       width="32"
+       height="33"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect42" />
+    <path
+       d="m 541.5,186.5 h 47 v 46 h -47 z m 10.563,5.75 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z"
+       fill="#005a9f"
+       fill-rule="evenodd"
+       id="path43" />
+    <path
+       d="m 552.063,192.25 h 17.25 v 8.625 h 8.625 v 25.875 h -25.875 z"
+       fill="#004880"
+       fill-rule="evenodd"
+       id="path44" />
+    <path
+       d="m 569.313,192.25 v 8.625 h 8.625 z"
+       fill="#00365f"
+       fill-rule="evenodd"
+       id="path45" />
+    <path
+       d="m 552.063,192.25 h 17.25 l 8.625,8.625 v 25.875 h -25.875 z m 25.875,8.625 h -8.625 v -8.625"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path46" />
+    <rect
+       x="541.5"
+       y="186.5"
+       width="47"
+       height="46"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect46" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(593.439,230)"
+       id="text46">Master</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(659.806,230)"
+       id="text47">data</text>
+    <path
+       d="m 558.5,243.833 h 186.113 v 1.334 H 558.5 Z m 184.78,-3.333 8,4 -8,4 z"
+       id="path47" />
+    <path
+       d="m 739.5,205.5 h 29 v 32 h -29 z m 6.344,5.125 h 10.875 l 5.437,5.438 v 16.312 h -16.312 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path48" />
+    <path
+       d="m 745.844,210.625 h 10.875 v 5.438 h 5.437 v 16.312 h -16.312 z"
+       fill="#cd9500"
+       fill-rule="evenodd"
+       id="path49" />
+    <path
+       d="m 756.719,210.625 v 5.438 h 5.437 z"
+       fill="#996f00"
+       fill-rule="evenodd"
+       id="path50" />
+    <path
+       d="m 745.844,210.625 h 10.875 l 5.437,5.438 v 16.312 h -16.312 z m 16.312,5.438 h -5.437 v -5.438"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path51" />
+    <rect
+       x="739.5"
+       y="205.5"
+       width="29"
+       height="32"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect51" />
+    <path
+       d="m 776.5,267.319 c 134.305,10.733 134.305,-10.733 268.59,-10.733 V 200.792 H 776.5 Z m 22.129,-66.527 v -7.234 h 266.761 v 56.144 c -10.14,0 -20.3,0.389 -20.3,0.389 v -49.299 z m 20.8,-7.234 V 186.5 H 1088.5 v 55.969 c -11.56,0 -23.11,0.292 -23.11,0.292 v -49.203 z"
+       fill="#ffb900"
+       fill-rule="evenodd"
+       id="path52" />
+    <path
+       d="m 776.5,200.792 h 268.59 v 55.794 c -134.285,0 -134.285,21.466 -268.59,10.733 z m 22.129,0 v -7.234 h 266.761 v 56.144 c -10.14,0 -20.3,0.389 -20.3,0.389 M 819.429,193.558 V 186.5 H 1088.5 v 55.969 c -11.56,0 -23.11,0.292 -23.11,0.292"
+       stroke="#ffffff"
+       stroke-width="1.13333"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path53" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(820.819,241)"
+       id="text53">Master data updates</text>
+    <path
+       d="m 235.5,275.508 c 129.569,10.095 129.569,-10.094 259.125,-10.094 V 212.941 H 235.5 Z m 21.349,-62.567 v -6.803 h 257.355 v 52.802 c -9.783,0 -19.579,0.366 -19.579,0.366 v -46.365 z m 20.066,-6.803 V 199.5 H 536.5 v 52.637 c -11.148,0 -22.296,0.275 -22.296,0.275 v -46.274 z"
+       fill="#005a9f"
+       fill-rule="evenodd"
+       id="path54" />
+    <path
+       d="m 235.5,212.941 h 259.125 v 52.473 c -129.556,0 -129.556,20.189 -259.125,10.094 z m 21.349,0 v -6.803 h 257.355 v 52.802 c -9.783,0 -19.579,0.366 -19.579,0.366 M 276.915,206.138 V 199.5 H 536.5 v 52.637 c -11.148,0 -22.296,0.275 -22.296,0.275"
+       stroke="#ffffff"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       fill-rule="evenodd"
+       id="path55" />
+    <text
+       fill="#ffffff"
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(268.2,237)"
+       id="text55">Master data updates</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(26.4733,29)"
+       id="text56">wms</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(68.6399,29)"
+       id="text57">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(76.4733,29)"
+       id="text58">only</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(115.307,29)"
+       id="text59">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(123.14,29)"
+       id="text60">shared</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(183.787,29)"
+       id="text61">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(191.62,29)"
+       id="text62">warehouse</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(290.1,29)"
+       id="text63">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(297.933,29)"
+       id="text64">inventory</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(384.16,29)"
+       id="text65">-</text>
+    <text
+       font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+       font-weight="600"
+       font-size="21px"
+       transform="translate(391.993,29)"
+       id="text66">process.svg</text>
+  </g>
+</svg>

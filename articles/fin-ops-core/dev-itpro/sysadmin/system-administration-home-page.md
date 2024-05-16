@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: System administration home page
-description: This article lists resources that are available for system administrators.
+description: Acess resources that are available for system administrators, including resources to One Version and implementation management with Lifecycle Services.
 author: sericks007
-ms.date: 11/20/2020
-ms.topic: article
-# optional metadata
-
-ms.search.form: SystemAdministrationWorkspaceForm
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 11/20/2020
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SystemAdministrationWorkspaceForm
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
 ---
 
 # System administration home page

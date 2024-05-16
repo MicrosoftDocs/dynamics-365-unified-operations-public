@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Variance visual
-description: This article describes how to use the Variance visual in the Business performance planning application.
+description: Learn how to use the Variance visual in the Business performance planning application, including outlines on benefits, prerequisites, and installation.
 author: ShielaSogge
-ms.date: 12/07/2023
-ms.topic: article
-ms.reviewer: twheeloc
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 12/07/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Variance visual
 
 This article describes how to use the **Variance** visual in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).

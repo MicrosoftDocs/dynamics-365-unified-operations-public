@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Manage leases through the Lease import framework
-description: This article explains how to use the Lease import framework to adjust multiple leases at the same time.
+description: Learn how to use the Lease import framework to adjust multiple leases at the same time, including a table that defines various process types.
 author: moaamer
-ms.date: 04/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: AssetLeaseLeaseImportHeader
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/12/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: AssetLeaseLeaseImportHeader
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Manage leases through the Lease import framework

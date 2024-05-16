@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: What's new in Dynamics Translation Service 
-description: This article describes new or changed features in the Microsoft Dynamics Translation Service.
+description: Learn about new or changed features in the Microsoft Dynamics Translation Service, including overviews on service degradation and incident updates.
 author: joshsantana
-ms.date: 03/07/2023
-ms.topic: overview
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: joshsantana
+ms.topic: overview
+ms.date: 03/07/2023
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ---

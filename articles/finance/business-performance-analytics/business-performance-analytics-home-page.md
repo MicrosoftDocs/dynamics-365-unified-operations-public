@@ -1,16 +1,14 @@
 ---
-
 title: Business performance analytics home page
-description: This article provides information about Business performance analytics.
+description: Learn about Business performance analytics, including outlines on turning data into action to improve business performance.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 04/17/2024
 ms.topic: welcome
+ms.date: 04/17/2024
 ms.custom:
-ms.search.form: business-performance-analytics
+ms.reviewer: twheeloc 
 audience: Application User
-ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
+ms.search.form: business-performance-analytics
 ---
 
 # About Business performance analytics

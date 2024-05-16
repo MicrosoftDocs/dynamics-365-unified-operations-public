@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Year-end activities FAQ 
-description: This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
+description: Access answers to questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
 author: moaamer
-ms.date: 12/01/2022
-ms.topic: conceptual
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: conceptual
+ms.date: 12/01/2022
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-12-14
+ms.search.form:
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Year-end activities FAQ 

@@ -1,18 +1,17 @@
 ---
 title: Regulatory Configuration Service
-description: This article provides an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
+description: Access an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
 author: kfend
-ms.date: 06/04/2021
-ms.topic: overview
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: AX 10.0.9
+ms.topic: overview
+ms.date: 06/04/2021
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2020-02-01
 ms.search.form: RCS, Regulatory Configuration Services, Localization
+ms.dyn365.ops.version: AX 10.0.9
 ---
 # Regulatory Configuration Service
 

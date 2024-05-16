@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
-description: This article describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
+description: Learn about the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
-ms.date: 9/16/2022
-ms.topic: article
-ms.service: dynamics-365
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2020-06-30 
+ms.topic: article
+ms.date: 9/16/2022
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2020-06-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 search.app:
   - financeandoperationsonprem-docs

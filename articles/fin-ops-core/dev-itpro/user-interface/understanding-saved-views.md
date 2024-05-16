@@ -1,13 +1,13 @@
 ---
 title: Build forms that fully utilize saved views
-description: This article explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
+description: Learn about some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
-ms.date: 01/30/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 01/30/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
 ms.search.form: SysUserSetup, DefaultDashboard

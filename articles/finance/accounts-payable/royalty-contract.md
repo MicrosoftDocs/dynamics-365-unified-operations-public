@@ -4,7 +4,7 @@ description: Learn about royalty contract management for Microsoft Dynamics 365 
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 08/02/2018
+ms.date: 04/29/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User

@@ -1,16 +1,16 @@
 ---
 title: Task recorder resources
-description: This article describes how to use Task recorder to record business processes.
+description: Learn about how to use Task recorder to record business processes, including overviews on starting new recordings and recording a business process.
 author: jasongre
-ms.date: 09/11/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 09/11/2020
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.form: SysTaskRecorderPane
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Task recorder resources

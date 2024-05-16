@@ -1,12 +1,12 @@
 ---
 title: Retrieve environment metadata via Logic Apps tutorial
-description: This tutorial shows how to use the Microsoft Dynamics Lifecycle Services API to fetch details about your environments.
+description: Learn about how to use the Microsoft Dynamics Lifecycle Services API to fetch details about your environments through learning to create workflows and call endpoints.
 author: laneswenka
-ms.reviewer: johnmichalak
-ms.component: pa-admin
+ms.author: laswenka
 ms.topic: how-to
 ms.date: 11/13/2023
-ms.author: laswenka
+ms.reviewer: johnmichalak
+ms.component: pa-admin
 search.audienceType: 
   - admin
 ms.custom:

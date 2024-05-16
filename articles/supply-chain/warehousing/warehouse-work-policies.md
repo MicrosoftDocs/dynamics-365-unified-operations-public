@@ -26,14 +26,12 @@ A work policy controls whether warehouse work is created when a manufactured ite
 > - You can't specify the same location for multiple work policies.
 > - The **Print label** option for mobile device menu items won't print a license plate label unless work was created.
 
-## Turn on the required features
+## Prerequisites
 
-To make all the functionality that is described in this article available in your system, turn on the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+If you are running Supply Chain Management version 10.0.35 or older, then you must turn on the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In newer versions, these features are fully integrated into the product, so they're either mandatory or no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 - *License plate receiving enhancements*
 - *Work policy enhancements for inbound work*
-
-As of Supply Chain Management version 10.0.32, both of these features are on by default. As of Supply Chain Management version 10.0.36, both of these features are mandatory and can't be turned off.
 
 ## The Work policies page
 

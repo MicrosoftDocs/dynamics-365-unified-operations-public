@@ -1,18 +1,17 @@
 ---
 title: Configure a SharePoint connection (RCS)
-description: This article explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site (RCS).
+description: Learn how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site (RCS), including a step-by-step process.
 author: ilikond
-ms.date: 12/15/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 12/15/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Configure a SharePoint connection (RCS)

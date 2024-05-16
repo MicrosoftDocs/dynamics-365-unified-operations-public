@@ -1,13 +1,13 @@
 ---
 title: Batch parameter versioning
-description: This article provides information about batch parameter versioning and explains how you can use it to avoid issues that are related to pack/unpack.
+description: Learn about batch parameter versioning and explains how you can use it to avoid issues that are related to pack/unpack.
 author: raanandm
-ms.date: 03/20/2024
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: cwithfourplus
-ms.search.region: Global
 ms.author: raanandm
+ms.topic: article
+ms.date: 03/20/2024
+ms.reviewer: cwithfourplus
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2024-03-20
 ---
 

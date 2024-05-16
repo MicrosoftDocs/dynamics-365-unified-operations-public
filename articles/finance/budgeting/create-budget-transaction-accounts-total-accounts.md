@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Create a budget from transaction accounts and total accounts
-description: This article provides an overview of the process for creating budgets based on total accounts. It also explains how to turn on budget control for total accounts, if budget control is required.
-author: panolte
-ms.date: 06/20/2017
+description: Learn about the process for creating budgets based on total accounts and how to turn on budget control for total accounts, if budget control is required.
+author: kfend
+ms.author: kfend
 ms.topic: article
-# optional metadata
-
-ms.search.form: BudgetControlConfiguration, BudgetPlanGenerate
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: fb1bb2d3-445c-402f-a9a3-aa6503eed78e
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetControlConfiguration, BudgetPlanGenerate
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: fb1bb2d3-445c-402f-a9a3-aa6503eed78e
 ---
 
 # Create a budget from transaction accounts and total accounts

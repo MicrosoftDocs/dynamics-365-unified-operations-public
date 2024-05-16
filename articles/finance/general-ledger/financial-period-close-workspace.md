@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Financial period close workspace
-description: This article provides an overview of the Financial period close workspace and the associated configuration.
+description: Learn about the Financial period close workspace and the associated configuration, including outlines on financial period types.
 author: moaamer
-ms.date: 11/15/2022
-ms.topic: article
-# optional metadata
-
-ms.search.form: LedgerPeriodCloseProjectWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 11/15/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerPeriodCloseProjectWorkspace
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ---
 
 # Financial period close workspace

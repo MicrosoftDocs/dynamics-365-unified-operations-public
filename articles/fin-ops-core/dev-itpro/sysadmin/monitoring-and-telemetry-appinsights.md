@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Monitoring and telemetry using Application Insights
-description: This article explains how to use, set up, and configure the Application Insights integration for finance and operations apps.
+description: Learn about how to use, set up, and configure the Application Insights integration for finance and operations apps.
 author: LaneSwenka
-ms.date: 04/21/2023
-ms.topic: article
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
-audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:
-ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: twheeloc
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-09-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ---
 
 # Monitoring and telemetry using Application Insights

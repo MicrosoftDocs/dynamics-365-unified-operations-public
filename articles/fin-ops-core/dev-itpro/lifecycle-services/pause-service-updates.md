@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Pause service updates through Lifecycle Services (LCS)
-description: This article explains how to pause service updates to your environments.
-author: josaw1 
-ms.date: 03/20/2024
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to pause service updates to your environments, including overviews on who can pause and what parts of the service get paused.
+author: josaw1
 ms.author: josaw
-ms.search.validFrom: 2019-03-31 
+ms.topic: article
+ms.date: 03/20/2024
+ms.custom:
+ms.reviewer: josaw  
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2019-03-31
+ms.search.form:
 ms.dyn365.ops.version: Platform update 24 
-
 ---
 
 # Pause service updates through Lifecycle Services (LCS)

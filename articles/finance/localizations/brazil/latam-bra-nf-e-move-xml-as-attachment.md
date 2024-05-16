@@ -1,17 +1,17 @@
 ---
 title: Move NF-e XML files as attachments
-description: This article explains how to move NF-e XML files out of your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management database and make them available as attachments instead.
+description: Learn how to move NF-e XML files out of your Microsoft Dynamics 365 Finance or Supply Chain Management database and make them available as attachments instead.
 author: gionoder
-ms.date: 11/11/2021
+ms.author: johnmichalak
 ms.topic: article
-audience: Application User
+ms.date: 11/11/2021
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: gionoder
 ms.search.validFrom: 2022-01-27
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.25
 ms.assetid: 
-ms.search.form: 
 ---
 
 # Move NF-e XML files as attachments

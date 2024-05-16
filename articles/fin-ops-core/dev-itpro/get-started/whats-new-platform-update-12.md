@@ -1,17 +1,16 @@
 ---
 title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12 (November 2017)
-description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
+description: Learn about new or changed features in Dynamics 365 Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
 author: sericks007
-ms.date: 01/17/2018
-ms.topic: article
-ms.custom: evergreen
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 01/17/2018
+ms.custom:
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-09-30
-ms.dyn365.ops.version: Platform update 12
-
+ms.dyn365.ops.version: Platform update 12 
 ms.assetid: e577d51d-42d2-47c5-b388-93c8219c692a
 ROBOTS: NOINDEX, NOFOLLOW
 ---

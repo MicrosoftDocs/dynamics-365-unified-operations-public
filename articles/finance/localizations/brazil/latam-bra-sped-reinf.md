@@ -1,16 +1,16 @@
 ---
 title: SPED-Reinf events
-description: This article explains how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework.
+description: Learn how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework, including outlines on actions and booking periods.
 author: AdamTrukawka
-ms.date: 08/10/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 08/10/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 8.1
 ms.search.form: 
+ms.dyn365.ops.version: 8.1
 ---
 
 # SPED-Reinf events

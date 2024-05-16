@@ -1,13 +1,13 @@
 ---
 title: Filtering options
-description: This article explains the filtering options that are available.
+description: Learn about the filtering options that are available, including various tables that define the available filter options.
 author: jasongre
-ms.date: 03/07/2022
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 03/07/2022
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452

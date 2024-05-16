@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot live synchronization issues
-description: This article provides troubleshooting information that can help you fix issues with live synchronization.
+description: Learn about how you can fix issues with live synchronization, including issues relating to error messages when creating rows and saving table data.
 author: RamaKrishnamoorthy
-ms.date: 08/01/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 08/01/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-03-16
 ---
 

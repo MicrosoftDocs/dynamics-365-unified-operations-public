@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Asset leasing conventions
-description: This article describes conventions for leased assets.
+description: Learn about the conventions for leased assets, including a table that defines various conventions for leasing assets and steps for viewing and assigning assets.
 author: moaamer
-ms.date: 04/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: AssetLease
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/12/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-1-28
+ms.search.form: AssetLease
 ms.dyn365.ops.version: 10.0.17
-
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Asset leasing conventions

@@ -1,15 +1,15 @@
 ---
 title: Upgrade parameter files
-description: This article explains how to upgrade the parameter files that are used with Regression suite automation tool (RSAT).
+description: Learn about how to upgrade the parameter files that are used with Regression suite automation tool (RSAT) with an overview of the upgrade process.
 author: FrankDahl
-ms.date: 11/27/2023
+ms.author: fdahl
 ms.topic: how-to
+ms.date: 11/27/2023
 ms.custom: 
   - bap-template
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
 ---

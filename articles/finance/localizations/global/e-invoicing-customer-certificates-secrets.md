@@ -1,18 +1,17 @@
 ---
 title: Customer certificates and secrets
-description: This article explains how to set up customer certificates and secrets in Electronic invoicing.
+description: Learn how to set up customer certificates and secrets in Electronic invoicing, including an overview for creating certificates and secrets.
 author: gionoder
-ms.date: 03/06/2023
+ms.author: johnmichalak
 ms.topic: article
-audience: Application User
+ms.date: 03/06/2023
+ms.custom:
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Customer certificates and secrets

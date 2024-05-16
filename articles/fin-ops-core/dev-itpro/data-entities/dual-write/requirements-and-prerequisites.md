@@ -1,15 +1,15 @@
 ---
 title: System requirements and prerequisites
-description: This article describes the system requirements and prerequisites that must be in place before you can enable Dual-write for finance and operations apps.
+description: Learn about the system requirements and prerequisites that must be in place before you can enable Dual-write for finance and operations apps.
 author: ericcolvinmorgan
-ms.date: 02/23/2024
+ms.author: ericmorgan
 ms.topic: conceptual
+ms.date: 02/23/2024
 ms.custom: 
   - bap-template
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: ericmorgan
 ms.search.validFrom: 2024-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -95,7 +95,7 @@ Before Dual-write enablement, reference [system requirements for Dual-write](dua
 
 4. Install **Dual-write application solutions**.
 
-    In the navigation pane in Power Apps, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
+    In the navigation pane in Power Apps, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview)), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwfne?tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
 
     + Customers, products, and vendors.
     + End-to-end process flows like quote to cash.

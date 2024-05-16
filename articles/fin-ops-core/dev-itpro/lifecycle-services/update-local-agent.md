@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Update the local agent
-description: This article explains how to update the local agent.
+description: Learn about how to update the local agent, including a table that outlines capabilities for various local agent versions.
 author: faix
-ms.date: 01/24/2024
-ms.topic: article
-ms.service: dynamics-365
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: osfaixat
+ms.topic: article
+ms.date: 01/24/2024
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-12-05
+ms.search.form:
 ms.dyn365.ops.version: 7.3
 search.app:
   - financeandoperationsonprem-docs
+ms.assetid: 
 ---
 # Update the local agent
 

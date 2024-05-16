@@ -1,13 +1,13 @@
 ---
 title: Right-to-left language support and bidirectional text
-description: This article discusses the issue of bidirectional text and how it's handled.
+description: Learn about right-to-left language support and bidirectional text, including an example of right-to-left language support with Microsoft Word.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e

@@ -1,15 +1,15 @@
 ---
 title: Stay compliant with user licensing requirements
-description: This article provides information about how you can stay compliant with the user licensing requirements for finance and operations apps.
+description: Learn about how you can stay compliant with the user licensing requirements for finance and operations apps per role.
 author: VolkerDeuss
-ms.date: 04/02/2024
+ms.author: gned
 ms.topic: how-to
+ms.date: 04/02/2024
 ms.custom: 
   - bap-template
-audience: IT Pro
 ms.reviewer: johnmichalak
+audience: IT Pro
 ms.search.region: Global
-ms.author: gned
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ---

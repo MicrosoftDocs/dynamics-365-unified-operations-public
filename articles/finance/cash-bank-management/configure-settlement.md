@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Configure settlement
-description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
-author: angelad116
-ms.date: 05/16/2018
+description: Learn about the parameters that are used for settlement for both Accounts payable and Accounts receivable, including an outline on fixed dimensions on accounts.
+author: kfend
+ms.author: kfend
 ms.topic: article
-# optional metadata
-
-ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
-audience: Application User
-# ms.devlang: 
+ms.date: 05/16/2018
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ---
 
 # Configure settlement

@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up sales tax settlement periods
-description: This article explains how to set up sales tax settlement periods in Dynamics 365 Finance.
+description: Learn how to set up sales tax settlement periods in Dynamics 365 Finance, including a step-by-step process using the USMF demo company.
 author: twheeloc
-ms.date: 08/05/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: TaxPeriod   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/05/2019
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxPeriod
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up sales tax settlement periods
 
 [!include [banner](../../includes/banner.md)]

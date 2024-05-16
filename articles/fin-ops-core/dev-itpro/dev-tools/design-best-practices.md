@@ -1,11 +1,13 @@
 ---
 title: Design principles and best practices for data entities
 description: Learn about design principles for data entities, including multiple tables that outline do's and don't's for naming guidelines.
-author: twheeloc
-ms.author: twheeloc
-ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: twheeloc
+author: pnghub
+ms.author: gned
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 05/14/2024
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -48,6 +50,14 @@ A data entity should provide a holistic object that encapsulates the relevant bu
 | Give the entity a conceptual name that is aligned with the name in the en-us UI. For example, the conceptual name of the entity that exposes records from the InventTable table should be named **ReleasedProduct**, so that the full name of the entity will be **EcoResReleasedProductEntity**. |                                              |
 
 **Result:** &lt;prefix&gt;&lt;ConceptualName&gt;Entity
+
+
+### Data entity label
+
+| Do                                                                                                                                                                                                                                                                                                | Don’t                                        |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| Use a unique label for your entity, ensure no other entities are using the same label.                                                                                                                                                                                                                        | Reuse an existing label, do not use the same label for more than 1 entity.          |
+
 
 ### Data entity field names
 

@@ -1,18 +1,17 @@
 ---
 title: Import vendor electronic invoices in PEPPOL format
-description: This article explains how to configure and use the vendor electronic invoice import in PEPPOL format in Microsoft Dynamics 365 Finance.
+description: Learn how to configure and use the vendor electronic invoice import in PEPPOL format in Microsoft Dynamics 365 Finance, including prerequisites.
 author: ilikond
-ms.date: 11/13/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Europe
 ms.author: ikondratenko
-ms.search.validFrom: 2023-01-01
-ms.dyn365.ops.version: AX 10.0.32
+ms.topic: article
+ms.date: 11/13/2023
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Europe
+ms.search.validFrom: 2023-01-01
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.32
 ---
 
 # Import vendor electronic invoices in PEPPOL format

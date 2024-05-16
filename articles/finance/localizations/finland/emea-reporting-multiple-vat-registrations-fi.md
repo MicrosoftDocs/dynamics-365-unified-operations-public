@@ -1,13 +1,13 @@
 ---
 title: Support for multiple VAT registration numbers in reporting for Finland
-description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Finland.
+description: Learn how to support multiple value-added tax (VAT) registration numbers in reporting for Finland, including a table that provides format versions for report names.
 author: liza-golub
-ms.date: 7/13/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Finland
 ms.author: egolub
+ms.topic: article
+ms.date: 7/13/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Finland
 ms.search.validFrom: 2023-04-10
 ms.dyn365.ops.version: AX 10.0.13
 ---

@@ -1,13 +1,13 @@
 ---
 title: Messaging system for finance and operations apps
-description: This article describes the rich, powerful messaging system in finance and operations apps.
+description: Learn about the messaging system in finance and operations apps, including overviews on where messages surface and examples.
 author: jasongre
-ms.date: 01/17/2024
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 01/17/2024
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4

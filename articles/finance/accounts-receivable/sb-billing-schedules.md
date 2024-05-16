@@ -4,7 +4,7 @@ description: Learn about how to create, delete, and edit billing schedules, incl
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 01/30/2023
+ms.date: 04/29/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

@@ -1,29 +1,27 @@
 ---
 title: What's new or changed in Finance and Operations version 10.0.1 (April 2019)
-description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 10.0.1. This version will be released in April.
+description: Learn about new or changed features in Dynamics 365 Finance and Operations version 10.0.1. This version was released in April 2019.
 author: sericks007
-ms.date: 10/02/2019
-ms.topic: article
-ms.custom: evergreen
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 10/02/2019
+ms.custom:
+ms.reviewer: sericks
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: Release 10.0.1
-
 ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
 ROBOTS: NOINDEX, NOFOLLOW
 ---
+
 # What's new or changed in Finance and Operations version 10.0.1 (April 2019)
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 10.0.1. This version will be released in April and has a build number of 10.0.51. For more information about version 10.0.1, see [Additional resources](#additional-resources).
 
 To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.1](../../../commerce/get-started/whats-new-10-0-1.md).
-
 
 ## Enable edit for externally maintained fields
 

@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Use Azure Data Explorer to query raw information logs
-description: This article explains how to use Azure Data Explorer to query raw information logs.
+description: Learn about how to use Azure Data Explorer to query raw information logs, including sample queries with code examples.
 author: andreashofmann1
-ms.date: 09/13/2021
-ms.topic: article
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: andreash
+ms.topic: article
+ms.date: 09/13/2021
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-08-20
 ---
 

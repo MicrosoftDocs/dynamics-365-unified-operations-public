@@ -1,5 +1,5 @@
 ---
-title: Set up a mobile device menu item for completing mixed license plates
+title: Set up a mobile device menu item for completing mixed license plates (preview)
 description: This article explains how to set up a mobile device menu item that helps streamline warehouse operations by letting workers continue to process an incoming shipment immediately after they register its arrival.
 author: Mirzaab
 ms.author: mirzaab
@@ -12,9 +12,11 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Set up a mobile device menu item for completing mixed license plates
+# Set up a mobile device menu item for completing mixed license plates (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.40 GA -->
 
 This article explains how to set up the *Complete mixed license plate* mobile device flow. This flow helps streamline warehouse operations by letting workers continue to process an incoming shipment immediately after they register its arrival.
 
@@ -25,6 +27,8 @@ Mixed license plate receiving helps warehouse managers achieve these goals:
 - **Optimize workflows.** The system can be configured to create work records for each registration. Alternatively, the license plate receiving and putaway process can be used as a single operation.
 
 You can add this capability directly to the mobile device menu, so that workers can run the flow by itself. Alternatively, you can set up a *detour* to make the flow available immediately after a related flow (such as the flow for receiving a purchase order or sales return). A detour is a menu item that can be opened from a step in a main task. Detours let workers "park" the current task, perform another task, and then return to the original task without losing any information.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 

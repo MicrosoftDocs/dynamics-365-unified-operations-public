@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Configure account structures
-description: This article provides information about account structures and financial dimensions.
+description: Learn about account structures and financial dimensions, including an example and outlines on segments, allowed values, and account structure activation.
 author: aprilolson
-ms.date: 03/14/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: LedgerEliminationRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/14/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerEliminationRule
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ---
 
 # Configure account structures

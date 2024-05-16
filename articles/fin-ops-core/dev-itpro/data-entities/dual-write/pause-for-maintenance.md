@@ -1,13 +1,13 @@
 ---
 title: Pause dual-write for maintenance
-description: This article explains how to pause a table map.
+description: Learn how to pause a dual-write table map for maintenance, how to resume syncronization, and skip to live synchronization.
 author: nhelgren
-ms.date: 10/20/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: jaredha
+ms.topic: article
+ms.date: 10/20/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Data management package REST API
-description: This article describes the Data management framework's package REST API.
+description: Learn about the data management framework's package REST API, including a table that outlines recurring integration APIs for various decision points.
 author: pnghub
-ms.date: 11/04/2022
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: gned
+ms.topic: article
+ms.date: 11/04/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-03-31
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 5
-
 ---
 
 # Data management package REST API

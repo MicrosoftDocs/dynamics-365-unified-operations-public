@@ -1,16 +1,16 @@
 ---
 title: Customize the user interface
-description: This article describes how to customize the user interface by using the process automation framework.
+description: Learn about how to customize the user interface by using the process automation framework, including an overview of the weekly calendar view.
 author: RyanCCarlson2
-ms.date: 09/10/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: rcarlson
+ms.topic: article
+ms.date: 09/10/2020
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Customize the user interface

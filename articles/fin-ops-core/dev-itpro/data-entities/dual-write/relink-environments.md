@@ -1,13 +1,13 @@
 ---
 title: Unlink and relink dual-write environments
-description: This article describes how to unlink, clear the key tables, and then relink dual-write environments.
+description: Learn how to unlink, clear the key tables, and then relink dual-write environments, including various scenarios and known issues.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 04/07/2021
+ms.reviewer: sericks
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: 
 ---
