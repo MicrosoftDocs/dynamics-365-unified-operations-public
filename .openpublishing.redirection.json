@@ -27678,6 +27678,11 @@
       "source_path": "articles/supply-chain/warehousing/wms-only-mode-using.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/wms-only-mode-shared-and-external-detail-use",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/rebate-management/rebate-management-enable.md",
+      "redirect_url": "/dynamics365/supply-chain/rebate-management/rebate-management-overview",
+      "redirect_document_id": false
     }
   ]
 }
