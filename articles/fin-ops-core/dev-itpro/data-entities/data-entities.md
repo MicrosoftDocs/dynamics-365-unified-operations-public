@@ -194,6 +194,8 @@ Entities in an environment must be refreshed using the following guidelines.
 -   When configuration keys are modified, entity list must be refreshed manually from **Data management > Framework parameters > Entity settings > Refresh entity list**.
 
 Refreshing the entity list ensures all entities are available in the environment and that the entities have the latest metadata.
+> [!NOTE]
+> When adding new entities, ensure every entity uses a unique label for the Label property. This includes Independent software vendor(ISV) entities. If there is more than one entity using the same label, entities could be missing after doing entity list refresh. You could also have issues with existing data management projects when a different entity is assigned due to same label usage. Test thoroughly in your pre-production and development environments as this issue cannot be fixed in production. You will have to fix the duplicate label usage and redeploy the package.
 
 ## Configuration keys and data entities
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
