@@ -5,7 +5,6 @@ author: jasongre
 ms.author: jasongre
 ms.date: 05/16/2024
 ms.topic: article
-ms.date: 01/05/2022
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
