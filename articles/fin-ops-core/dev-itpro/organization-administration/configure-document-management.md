@@ -2,14 +2,10 @@
 title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-<<<<<<< revert-18037-revert-18022-liza-lt-vat-928069
-ms.date: 03/14/2024
-=======
+ms.date: 05/16/2024
 ms.author: jasongre
->>>>>>> main
 ms.topic: article
 ms.date: 01/05/2022
-ms.custom: 
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
