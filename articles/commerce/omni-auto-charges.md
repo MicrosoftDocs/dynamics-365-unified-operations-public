@@ -182,7 +182,7 @@ If reason codes have been captured for overwritten charges, a new report is also
 If the **Use advanced auto-charges** parameter is set to **Yes**, the existing Commerce parameter for **Refund shipping charges** is no longer applicable. To indicate which charges should be systematically refunded to a customer when using advanced auto charges, ensure the related charges code has been configured as **Refundable** on the **Charges code** setup page. Make sure that the settings have been synchronized to your Commerce channel databases through distribution schedule processing.
 
 > [!TIP]
-> For guidance that will help you ensure that line-level refundable charges are calculated based on the quantity that is returned, see [Refundable charges are not calculated based on the quantity returned](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
+> For guidance to help you ensure that line-level refundable charges are calculated based on the quantity that is returned, see [Refundable charges are miscalculated based on the quantity returned](/troubleshoot/dynamics-365/commerce/payments/refund-miscalculated-partial-return).
 
 ### Refunding charges on a return order transaction
 
