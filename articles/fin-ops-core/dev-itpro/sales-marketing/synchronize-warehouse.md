@@ -21,7 +21,7 @@ ms.search.validFrom: 2018-12-01
 
 This article discusses the templates and underlying tasks that are used to synchronize warehouses from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-[![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSWarehouseOW.png)](/media/FSWarehouseOW.png)
+![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSWarehouseOW.png)
 
 ## Templates and tasks
 The following template and underlying tasks are used to run synchronization of warehouses from Supply Chain Management to Field Service.
@@ -67,7 +67,7 @@ The following illustration shows the template mapping in Data integration.
 
 ### Warehouses (Supply Chain Management to Field Service): Warehouse
 
-[![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/Warehouse1.png)](/media/Warehouse1.png)
+![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/Warehouse1.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

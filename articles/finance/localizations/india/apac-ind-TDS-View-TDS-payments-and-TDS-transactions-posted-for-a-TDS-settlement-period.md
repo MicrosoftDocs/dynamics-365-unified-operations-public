@@ -32,7 +32,7 @@ This article explains how to view the Tax Deducted at Source (TDS) payments and 
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 
-    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-50.png)](/media/apac-ind-TDS-50.png)
+   ![Withholding tax settlement periods page.](../media/apac-ind-TDS-50.png)](/media/apac-ind-TDS-50.png)
 
 2. On the **Withholding tax settlement periods** page, select **Withholding tax payments** to open the **Withholding tax payments** page, where you can view the TDS settlements that were made for a specific TDS settlement period.
 

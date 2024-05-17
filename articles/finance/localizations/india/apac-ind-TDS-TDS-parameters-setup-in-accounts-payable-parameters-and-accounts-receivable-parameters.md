@@ -1,23 +1,14 @@
 ---
-# required metadata
-
 title: Set TDS parameters in Accounts payable and Accounts receivable
 description: This article explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/17/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-# 
-# ms.tgt_pltfrm: 
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
@@ -39,12 +30,14 @@ This article explains how to set parameters in Accounts payable and Accounts rec
     - **Prompt** – Users receive a message that prompts them to update the TDS group on the order lines.
 4. Select **OK**.
 
-    [![Update order lines dialog box.](../media/apac-ind-TDS-26.PNG)](/media/apac-ind-TDS-26.PNG)
+   :::image type="content" source="../media/apac-ind-TDS-26.PNG" alt-text="Screenshot of the Update order lines dialog box."::: 
 
-5. Go to **Tax \> Setup \> Parameters \> Accounts payable parameters**.
-6. On the **General** tab, on the **Split based on delivery information** FastTab, set the **Product receipt** option to **Yes** to post and split a product receipt that has different delivery addresses and tax account numbers (TANs). If this option is set to **No**, you can't post a purchase packing slip that has different delivery addresses and TANs.
-7. Set the **Invoice** option to **Yes** to post and split a purchase invoice that has different delivery addresses and TANs.
 
-    [![Split based on delivery information FastTab.](../media/apac-ind-TDS-25.png)](/media/apac-ind-TDS-25.png)
+6. Go to **Tax \> Setup \> Parameters \> Accounts payable parameters**.
+7. On the **General** tab, on the **Split based on delivery information** FastTab, set the **Product receipt** option to **Yes** to post and split a product receipt that has different delivery addresses and tax account numbers (TANs). If this option is set to **No**, you can't post a purchase packing slip that has different delivery addresses and TANs.
+8. Set the **Invoice** option to **Yes** to post and split a purchase invoice that has different delivery addresses and TANs.
 
-8. Close the page.
+   :::image type="content" source="../media/apac-ind-TDS-25.png" alt-text="Screenshot of the Split based on delivery information FastTab."::: 
+
+
+10. Close the page.

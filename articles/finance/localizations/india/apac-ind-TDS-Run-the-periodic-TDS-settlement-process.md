@@ -32,7 +32,7 @@ This article explains how to settle periodic Tax Deducted at Source (TDS).
 
 1. Go to **Tax \> Declarations \> Withholding tax \> Withholding tax payment**.
 
-    [![Withholding tax payment dialog box.](../media/apac-ind-TDS-47.png)](/media/apac-ind-TDS-47.png)
+   ![Withholding tax payment dialog box.](../media/apac-ind-TDS-47.png)](/media/apac-ind-TDS-47.png)
 
 2. In the **Withholding tax payment** dialog box, in the **Tax type** field, select **TDS**.
 3. In the **Tax Account Number (TAN)** field, select the Tax Account Number (TAN) to run the settlement process for.
