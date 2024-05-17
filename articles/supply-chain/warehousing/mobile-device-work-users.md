@@ -101,6 +101,8 @@ For each user record that you created in the previous section, you must create a
     - **Maximum percentage limit** – Enter the highest percentage limit that a cycle count can vary from the expected count without requiring approval by a cycle count supervisor.
     - **Maximum quantity limit** – Enter the total quantity that the entered quantity can differ from the expected quantity (in units) without requiring approval by a cycle count supervisor.
     - **Maximum value limit** – Enter the maximum amount that the cost of the inventory can differ from the expected cost without requiring approval by a cycle count supervisor.
+    > [!NOTE]
+    > To skip the supervisor confirmation, all limit checks have to succeed, so you need to set values in all three fields mentioned above. These can be set to a high value to accept any quantity difference, as long as the recorded value is small enough.
 
 1. On the Action Pane, select **Save**.
 1. If you added a new mobile device user account, the **Set password** dialog box appears, where you can create a simple password that the user can use to sign in to the mobile app. Enter the simple password two times, and then select **Save password** to continue.
