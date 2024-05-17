@@ -32,7 +32,7 @@ This article explains how to settle Tax Deducted at Source (TDS) payments to TDS
 
 1. Go to **Accounts payable \> Payments \> Vendor payment journal**.
 
-    [![Vendor payment journal page.](../media/apac-ind-TDS-51.png)](/media/apac-ind-TDS-51.png)
+   ![Vendor payment journal page.](../media/apac-ind-TDS-51.png)](/media/apac-ind-TDS-51.png)
 
 2. On the **Vendor payment journal** page, select **New** to create a journal line.
 3. In the **Account** field, select the TDS authority vendor to settle TDS payments to.

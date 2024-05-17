@@ -31,7 +31,7 @@ This article explains how to set up withholding tax component groups, such as **
 
 1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax component groups**.
 
-    [![Withholding tax component groups page.](../media/apac-ind-TDS-8.png)](/media/apac-ind-TDS-8.png)
+   ![Withholding tax component groups page.](../media/apac-ind-TDS-8.png)]
 
 2. In the **Tax type** field, select **TDS** to set up withholding tax component groups for the TDS tax type.
 3. On the Action Pane, select **New** to create a line.

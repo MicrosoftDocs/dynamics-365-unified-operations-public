@@ -16,7 +16,7 @@ ms.reviewer: johnmichalak
 
 ms.search.region: United Arab Emirates (UAE)
 # ms.search.industry: 
-ms.author: liza-golub
+ms.author: egolub
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -34,4 +34,4 @@ To achieve consistent printout results, set up other data in the system so that 
 
 The following illustration shows an example of the printout for a free text invoice.
 
-[![Example of a free text invoice printout.](../media/uae_vat_15.jpg)](/media/uae_vat_15.jpg)
+![Example of a free text invoice printout.](../media/uae_vat_15.jpg)
