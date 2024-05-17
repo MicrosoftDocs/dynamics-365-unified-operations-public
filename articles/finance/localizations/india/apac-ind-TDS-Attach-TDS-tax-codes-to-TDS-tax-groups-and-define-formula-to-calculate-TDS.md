@@ -34,7 +34,7 @@ Follow these steps to set up a TDS tax group, attach TDS tax codes to it, and de
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax groups**.
 
-    [![Withholding tax groups page.](../media/apac-ind-TDS-29.png)](/media/apac-ind-TDS-29.png)
+   ![Withholding tax groups page.](../media/apac-ind-TDS-29.png)](/media/apac-ind-TDS-29.png)
 
 2. On the Action Pane, select **New** to create a withholding tax group for TDS, and enter the required details.
 3. In the **Tax type** field, select **TDS**.
@@ -44,7 +44,7 @@ Follow these steps to set up a TDS tax group, attach TDS tax codes to it, and de
 7. To prevent the tax group from being calculated in transactions, select the **Exempt** check box.
 8. On the Action Pane, select **Designer** to open the formula designer, so that you can define the formula for calculating TDS for the TDS tax group. On the **Designer** page, the **Taxes** tab shows the TDS tax codes that have been selected for the TDS tax group.
 
-    [![Designer page.](../media/apac-ind-TDS-30.png)](/media/apac-ind-TDS-30.png)
+    ![Designer page.](../media/apac-ind-TDS-30.png)](/media/apac-ind-TDS-30.png)
 
 9. On the **Calculation** tab, select **Alt+N** to create a line. The **ID** field shows the automatically generated priority ID for TDS calculation.
 10. In the **Tax code** field, select the TDS tax code to define the formula for. All the TDS tax codes that have been selected for the TDS tax group are available for selection in this field.
