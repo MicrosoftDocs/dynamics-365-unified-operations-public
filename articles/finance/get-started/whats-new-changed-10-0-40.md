@@ -60,6 +60,7 @@ This section contains a table that lists the enhancements that are included in t
 | Tax calculation - Universal tax rate API | Support setting up error handling for tax solution providers | A new **Retrieve ISV Error Messages Codes** API type is introduced in the tax feature. This new API type lets independent software vendors (ISVs) define their own error codes and messages. When you select **Sync result codes** on the **Error Handling** tab of the **Tax calculation parameters** page, you receive a list of error codes from the API that's specified in the tax feature. These error codes are stored in the database. | |
 | Credits and collections | Customer payment journals | Payment journals that have multiple payment lines that have an undisputed collections status are now faster and more efficient. | |
 | Credits and collections | Customer aging report | Performance is improved when the aging bucket balances are calculated on the customer aging report. | |
+| General ledger| Awareness between ledger settlement and year-end close |The awareness feature, including its dependent features for automating ledger settlements and posting foreign currency gains/losses, has been moved to **General ledger parameters**. These options, found on the **Ledger settlement** page, are controlled by the **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** settings.| |
 
 ## Additional resources
 
