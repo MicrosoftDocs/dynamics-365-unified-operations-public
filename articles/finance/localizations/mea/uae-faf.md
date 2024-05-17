@@ -16,7 +16,7 @@ ms.reviewer: johnmichalak
 
 ms.search.region: United Arab Emirates (UAE)
 # ms.search.industry: 
-ms.author: liza-golub
+ms.author: egolub
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
