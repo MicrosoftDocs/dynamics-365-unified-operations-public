@@ -32,7 +32,7 @@ This article explains how to set up tax codes for Tax Deducted at Source (TDS).
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax codes**.
 
-   ![Withholding tax codes page.](../media/apac-ind-TDS-17.png)](/media/apac-ind-TDS-17.png)
+   ![Withholding tax codes page.](../media/apac-ind-TDS-17.png)
 
 2. On the Action Pane, select **New** to create a withholding tax code for TDS, and enter the required details.
 3. On the **General** FastTab, in the **Tax type** field, select **TDS** to categorize the tax code as a TDS tax code.
