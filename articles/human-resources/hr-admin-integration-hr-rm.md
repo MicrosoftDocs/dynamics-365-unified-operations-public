@@ -109,7 +109,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
   - Dynamics 365 Human resources entity maps
   - HCM Scheduling 
 
-![DW_ApplySolution]./media/DW_ApplySolution.png)
+![Dual write Apply Solution](./media/DW_ApplySolution.png)
 
 
 ### Run Dual-write table maps
