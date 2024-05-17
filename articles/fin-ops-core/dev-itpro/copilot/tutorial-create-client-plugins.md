@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-*Client plugins*, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. Developers can extend the Copilot chat capabilities in finance and operations apps by defining plugins that convert the functionality, operations, and business logic of the X++ code base into actions that users can invoke through natural language. For more information about client plugins and syntax, see [Create client plugins for Copilot in finance and operations apps](tutorial-create-client-plugins.md).
+*Client plugins*, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. Developers can extend the Copilot chat capabilities in finance and operations apps by defining plugins that convert the functionality, operations, and business logic of the X++ code base into actions that users can invoke through natural language. For more information about client plugins and syntax, see [Create client plugins for Copilot in finance and operations apps](copilot-client-plugins.md).
 
 ## Scenario
 
