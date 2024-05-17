@@ -32,7 +32,7 @@ This article explains how to set up payment schedules with Tax Deducted at Sourc
 
 1. Go to **Accounts payable \> Payment setup \> Payment schedules**.
 
-    [![Payment schedules page.](../media/apac-ind-TDS-27.png)](/media/apac-ind-TDS-27.png)
+   ![Payment schedules page.](../media/apac-ind-TDS-27.png)](/media/apac-ind-TDS-27.png)
 
 2. On the Action Pane, select **New** to create a payment schedule, and enter the required details.
 3. In the **Allocation** field, select the method to use to allocate the payment for the payment schedule:
