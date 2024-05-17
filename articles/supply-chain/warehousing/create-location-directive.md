@@ -90,6 +90,7 @@ The following table lists the fields that are specific to particular work order 
 | FastTab | Field | Work order type |
 |---|---|---|
 | Location directives | Locate by | Purchase orders |
+| Location directives | Locate by | Transfer receipt |
 | Location directives | Applicable disposition code | Purchase orders |
 | Location directives | Disposition code | Purchase orders |
 | Location directives | Applicable disposition code | Finished goods put away |
@@ -184,17 +185,18 @@ The fields on the **Location directives** FastTab are specific to the work order
 - **Applicable disposition code** – Specify whether the disposition code of the location directive must match the disposition code that is applied when the item is received, or whether the location directive can be selected based on any disposition code. If you select *Exact match*, and the **Disposition code** field is blank, only blank disposition codes will be considered for this location directive.
 
     > [!NOTE]
-    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this article.
+    > This field is available only for selected work order types. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this article.
 
-- **Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the [Cluster putaway feature](putaway-clusters.md) feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
+- <a name="locate-by"></a>**Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the [Cluster putaway feature](putaway-clusters.md) feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
 
     > [!NOTE]
-    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
+    > Depending on the order type, this field has different options and is only accessible for some work order types.
+    > You can use the `ASN` option for both *Transfer receipt* and *Purchase orders*.
 
 - **Disposition code** – This field is used for location directives that have a work order type of *Purchase orders*, *Finished goods putaway*, or *Return orders*, and a work type of *Put*. Use it to guide the flow to use a specific location directive, depending on the disposition code that a worker selected in the Warehouse Management mobile app. For example, you can direct returned goods to an inspection location before they are returned to stock. A disposition code can be linked to an inventory status. In this way, it can be used to change the inventory status as part of a receiving process. For example, you have a disposition code, *QA*, that sets the inventory status to *QA*. You can then have a separate location directive to move that inventory to a quarantine location.
 
     > [!NOTE]
-    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
+    > This field is available only for selected work order types. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
 
 ## Warehouse selection FastTab
 
