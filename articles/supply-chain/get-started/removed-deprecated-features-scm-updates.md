@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 19/05/2024
+ms.date: 05/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
