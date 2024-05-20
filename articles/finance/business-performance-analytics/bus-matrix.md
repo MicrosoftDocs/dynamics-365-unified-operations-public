@@ -5,7 +5,7 @@ description: This article provides information about the relationship between fa
 author: carylhenry
 ms.author: carylhenry
 ms.reviewer: twheeloc 
-ms.date: 5/04/2024
+ms.date: 5/17/2024
 ms.topic: article 
 
 ms.custom:
@@ -25,13 +25,13 @@ A *bus matrix* shows the relationship between facts and dimensions. *Facts* repr
 
 ### Bus matrix
 
-The following business matrix table shows the relationship between facts and dimensions in the context of Business performance analytics. Rows represent dimensions, while columns represent facts.
+The following business matrix table shows the relationship between facts and dimensions in the context of Business performance analytics. Rows represent dimensions, while columns represent facts. If a cell in the matrix below contains an "X," then the fact corresponding to that cell's column contains the dimension corresponding to that cell's row.   
 
 
 | Dimensions  | Budget | Budget reservation | General ledger | Product receipt | Purchase invoice | Purchase invoice matching | Purchase order | Purchase payment | Purchase payment matching | Purchase requisition | Purchase sub-ledger | Sales invoice | Sales payment | Sales payment matching | Sales sub-ledger |
 | ------- | ------ | --- | -- | ----- | ---------- | ----------- | -------------- | --------- | ------------- | --------- | ----- | ------------- | ------------- | ---------------------- | ---------------- |
 | Asset    |        |      |        |          | X                |          |          |            |        |          |             |               |               |                        |                  |
-| Bank account     |        |      |         |         |      |       |      |        |          |          |                     |               | X             |                        |                  |
+| Bank account     |        |      |         |         |      |       |      |        |          |          |       |               | X             |                        |                  |
 | Budget reservation number   |        | X     |      |       |       |     |      |                  |     |     |                     |               |               |                        |                  |
 | Buying party   |        |       |                |      |       |      |       |     |        |    |                     | X             | X             | X                      | X                |
 | Currency       | X      |     | X              | X               | X                |    | X              | X                |      |        | X       |      | X             | X     | X                |

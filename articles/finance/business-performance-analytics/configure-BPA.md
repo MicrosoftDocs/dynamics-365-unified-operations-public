@@ -5,6 +5,7 @@ author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
 ms.date: 05/20/2024
+
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -90,7 +91,7 @@ Before you install Business performance analytics, the following setup is requir
         - **General ledger** - Budget, Reversing entries, Sales tax
         - **Fixed assets**
         - **Bank** - Check, Deposit slip, Negotiable instrument - Bill of exchange
-        - **Trade** Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management
+        - **Trade** - Charges, Invoice matching, Return orders, Delivery date control, Warehouse and Transportation management - Material handling equipment interface
         - **Trade agreements** - Price/discount
         - **Project**
         - **Procurement 1** - Purchase requisition
