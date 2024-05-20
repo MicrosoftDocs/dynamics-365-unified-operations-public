@@ -366,7 +366,7 @@
             href: ../finance/localizations/russia/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
     - name: Distributed hybrid topology
       items:
-      - name: Scale unit capability for Supply Chain Management is currently paused
+      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
         href: cloud-edge/cloud-edge-landing-page.md
     - name: Asset management
       items:
@@ -3875,7 +3875,7 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
-          - name: Set up a mobile device menu item for completing mixed license plates (preview)
+          - name: Set up a mobile device menu item for completing mixed license plates
             href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
@@ -4005,7 +4005,7 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
-      - name: Warehouse management only mode (preview)
+      - name: Warehouse management only mode
         items:
         - name: Warehouse management only mode overview
           href: warehousing/wms-only-mode-overview.md
