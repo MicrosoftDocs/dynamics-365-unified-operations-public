@@ -4,7 +4,7 @@ description: Learn about reports that are related to the record-to-report value 
 author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 05/20/2023
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -41,19 +41,19 @@ The following table describes the reports that are related to the procure-to-pay
 
 | Report                    | Finance and operations report | Purpose                                                                                                                         |
 | ------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Purchase Orders           | Not applicable        | This report provides detailed information about purchase orders, including order dates, supplier details, items ordered, and quantities.   |
-| Vendor Aging              | Vendor aging report           | This report helps organizations track outstanding vendor invoices by age, allowing them to manage cash flow and vendor relationships effectively. |
-| Vendor Invoices           | Vendor invoice transaction report         | This report summarizes all vendor invoices received, including invoice dates, amounts, and payment status.                                   |
-| Vendor Payments           | Vendor posted payment journal report         | This report outlines payments made to vendors, detailing payment dates, amounts, and associated purchase orders or invoices.                  |
-| Vendor Transaction Details| Not applicable       | This report presents a comprehensive view of all transactions with vendors, including orders, invoices, payments, and credits.              |
+| Purchase orders           | Not applicable        | This report provides detailed information about purchase orders, including order dates, supplier details, items ordered, and quantities.   |
+| Vendor aging              | Vendor aging report           | This report helps organizations track outstanding vendor invoices by age, allowing them to manage cash flow and vendor relationships effectively. |
+| Vendor invoices           | Vendor invoice transaction report         | This report summarizes all vendor invoices received, including invoice dates, amounts, and payment status.                       |
+| Vendor payments           | Vendor posted payment journal report         | This report outlines payments made to vendors, detailing payment dates, amounts, and associated purchase orders or invoices.       |
+| Vendor transaction details| Not applicable       | This report presents a comprehensive view of all transactions with vendors, including orders, invoices, payments, and credits.              |
 
-## Order to Cash
+## Order to cash
 
 The following table describes the reports that are related to the procure-to-pay value chain in Business performance analytics. Additional reports will be added as we incrementally release the Order to Cash value chain.
 
 | Report                   | Finance and operations report | Purpose                                                                                                                     |
 | ------------------------ | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Sales Aging              | Sales aging report            | This report helps organizations track outstanding customer invoices by age, enabling effective management of receivables and cash flow. |
-| Sales Transaction Details| Transactions report        | This report provides a detailed view of all sales transactions, including order dates, customer details, items sold, and amounts.        |
+| Sales aging              | Sales aging report            | This report helps organizations track outstanding customer invoices by age, enabling effective management of receivables and cash flow. |
+| Sales transaction details| Transactions report        | This report provides a detailed view of all sales transactions, including order dates, customer details, items sold, and amounts.        |
 
 
