@@ -46,7 +46,7 @@ This list is intended to help you consider these removals and deprecations for y
 |---|---|
 | Reason for deprecation/removal | The scale unit capability for Microsoft Dynamics 365 Supply Chain Management has been paused for new customers since July 2022 and is now deprecated. |
 | Replaced by another feature? | Yes. [Warehouse management only mode](../warehousing/wms-only-mode-overview.md) replaces some of the functionality planned for scale units and adds many new architectural and integration possibilities. |
-| Product areas affected | Supply Chain Management - Warehouse management<br><br>Supply Chain Management - Production control |
+| Product areas affected | Supply Chain Management – Warehouse management<br><br>Supply Chain Management – Production control |
 | Deployment options | Cloud and on-premises |
 | Status | The scale unit capability for Microsoft Dynamics 365 Supply Chain Management has been paused for new customers since July 2022. The capability is formally deprecated as of Supply Chain Management version 10.0.40 and will be completely removed for all customers one year after the release of that version. |
 
