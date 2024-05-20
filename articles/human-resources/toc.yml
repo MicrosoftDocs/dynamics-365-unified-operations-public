@@ -19,8 +19,10 @@ items:
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
         href: hr-migration-issues.md
-      - name: Human Resources customer merge 
+      - name: Human Resources customer merge overview FAQ 
         href: hr-customer-merge.md 
+      - name: Human Resources customer merge FAQ
+        href: customer-merge.md
       - name: Human Resources migration go-live readiness review 
         href: hr-migration-admin-go-live-readiness-review.md
     - name: What's new or changed
