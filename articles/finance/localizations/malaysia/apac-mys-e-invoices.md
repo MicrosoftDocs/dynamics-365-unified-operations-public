@@ -97,7 +97,19 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Vendor Invoice journal**, and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)
+    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)   
+1. For each table name, select **Response types** and then select **New**.
+1. In the **Response type** field, enter !!!!!!!TO CLARIFY which exactly resnose name should be enetred!!!!!!!!!!!!!!!!!!!!.
+1. In the **Description** field, enter **Process response**.
+1. In the **Submission status** field, select **Pending**.
+1. In the **Model mapping** field, select **Response message import**. The configuration is **Malaysia response message import (MY)** !!!!!!!TO CLARIFY the names !!!!!!!!!!!!!!!!!!!!. 
+1. Select **New** to create another record.
+1. In the **Response type** field, enter **ResponseData** !!!!!!!TO CLARIFY which exactly resnose name should be enetred!!!!!!!!!!!!!!!!!!!!..
+1. In the **Description** field, enter **Process response data**.
+1. In the **Submission status** field, select **Pending**.
+1. In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**. !!!!!!!TO CLARIFY Project and Self !!!!!!!!!!!!!!!!!!!!.
+1. In the **Model mapping** field, select **Response data import**. The configuration is !!!!!!!TO CLARIFY Project and Self !!!!!!!!!!!!!!!!!!!!.
+1. Select **Save**, and close the page.
 
     > [!NOTE]
     > The setup that's described here lets you issue electronic invoices for the following **posted** source documents:
@@ -109,31 +121,7 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
     > - Credit notes and debit notes for all the previously described invoice types
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
-1. Save your changes, and close the page.
-
-===================================================
-On the **Electronic document types** page, select **Add** to create a record.
-6. In the **Table name** field, add **CustInvoiceJour**.
-7. In the **Context** field, add a reference to the **Customer invoice context** mapping name. The configuration is **Customer invoice context model**.
-8. In the **Electronic document mapping** field, add a reference to the **Customer invoice** mapping name. The configuration is **Invoice model mapping**.
-9. Select **Save**.
-10. On **Response types** page, select **Add**.
-11. In the **Response type** field, enter **Response**.
-12. In the **Description** field, enter **Process response**.
-13. In the **Submission status** field, select **Pending**.
-14. In the **Model mapping** field, select **Response message import**. The configuration is **Egypt response message import (EG)**.
-15. Select **Save**.
-16. Select **Add**.
-17. In the **Response type** field, enter **ResponseData**.
-18. In the **Description** field, enter **Process response data**.
-19. In the **Submission status** field, select **Pending**.
-20. In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
-21. In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
-22. Select **Save**, and close the page.
-23. Close the page.
-====================================================================================
-
-
+1. Save your changes of **Electronic document parameters**, and close the page.
 
 ## <a id="NRIC"></a>Configure registration numbers
 
