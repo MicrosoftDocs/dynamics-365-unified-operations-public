@@ -1,5 +1,5 @@
 ---
-title: Warehouse management only mode overview (preview)
+title: Warehouse management only mode overview
 description: This article provides information about Warehouse management only mode, which enables the integration of warehouse management (WMS) functionality in Microsoft Dynamics 365 Supply Chain Management with external enterprise resource planning (ERP) and order management systems.
 author: perlynne
 ms.author: perlynne
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode overview (preview)
+# Warehouse management only mode overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 *Warehouse management only mode* lets you set up a legal entity in Microsoft Dynamics 365 Supply Chain Management that's dedicated to warehouse management processes. This legal entity can then provide warehousing services to other legal entities in Supply Chain Management. Alternatively, it can provide warehousing services to external enterprise resource planning (ERP) systems or order management systems. There are two basic scenarios:
 

@@ -1,5 +1,5 @@
 ---
-title: Exchange data between systems (preview)
+title: Exchange data between systems
 description: This article explains how to exchange data and business events between systems in Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Exchange data between systems (preview)
+# Exchange data between systems
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Warehouse management only mode requires that you set up integration between external systems and the Microsoft Dynamics 365 Supply Chain Management system. The following categories of interactions are required:
 
