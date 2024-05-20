@@ -47,15 +47,7 @@ Add the following required elements in the Azure Key Vault:
 - The secret for the **Client ID** for secure communication to IRBN.
 - The **Certificate** for digital signing of outgoing electronic invoices.
 
-> [!NOTE]
-> If you need to configure emailing of e-invoices' XML files to buyers directly from the invoicing service then add the following **secrets** required of electronic mails sending specifically:
-> - For the **User name**
-> - For the **Client ID**
-> - For the **Client secret**
->   
->   For more details how to configure electronic mail settings, refer to [Configure an email channel for Office 365 Exchange Online](../global/gs-e-invoicing-configure-email-for-exchange.md).
-
-## Electronic invoicing parameters configuration
+## Electronic invoicing Key Vault parameters configuration
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field select the reference to the Azure Key Valut created in the previous chapter.
