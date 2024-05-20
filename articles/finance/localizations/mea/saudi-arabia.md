@@ -1,13 +1,13 @@
 ---
 title: Saudi Arabia overview
-description: This article provides links to documentation resources for Saudi Arabia.
+description: Access links to documentation resources for Saudi Arabia, including links that direct to resources about sales tax, Zakat reporting, and electronic invoices.
 author: kfend
-ms.date: 10/26/2021
-ms.topic: overview
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Saudi Arabia
 ms.author: kfend
+ms.topic: overview
+ms.date: 10/26/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Saudi Arabia
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

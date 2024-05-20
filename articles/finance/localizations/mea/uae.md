@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: United Arab Emirates (UAE) overview
-description: This article provides links to documentation resources for the United Arab Emirates (UAE).
+description: Access links to documentation resources for the United Arab Emirates (UAE), including an outline on activating the UAE functionality.
 author: liza-golub
-ms.date: 06/07/2023
+ms.author: egolub
 ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/07/2023
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
+audience: Application User
 ms.search.region: United Arab Emirates (UAE)
-# ms.search.industry: 
-ms.author: liza-golub
 ms.search.validFrom: 2017-06-30
+ms.search.form: 
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # United Arab Emirates (UAE) overview

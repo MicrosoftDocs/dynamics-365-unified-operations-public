@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Poland overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Poland. 
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for Poland, including links to resources about tax information. 
 author: kfend
-ms.date: 01/07/2022
-ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Poland
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 01/07/2022
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: Application User
+ms.search.region: Poland
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Poland overview

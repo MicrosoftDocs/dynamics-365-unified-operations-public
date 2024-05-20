@@ -1,16 +1,16 @@
 ---
 title: Customer electronic invoices in Denmark
-description: This article explains how to set up and process electronic invoices in Denmark.
+description: Learn how to set up and process electronic invoices in Denmark, including prerequisites and anoutline on importing electronic reporting configurations.
 author: mrolecki
-ms.date: 12/20/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Norway
 ms.author: mrolecki
+ms.topic: article
+ms.date: 12/20/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2021-01-01
-ms.dyn365.ops.version: 10.0.21
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Customer electronic invoices in Denmark

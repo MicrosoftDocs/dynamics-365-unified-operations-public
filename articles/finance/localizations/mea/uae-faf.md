@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates
-description: This article explains how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE).
+description: Learn how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE).
 author: liza-golub
-ms.date: 06/07/2023
+ms.author: egolub
 ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/07/2023
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
+audience: Application User
 ms.search.region: United Arab Emirates (UAE)
-# ms.search.industry: 
-ms.author: liza-golub
 ms.search.validFrom: 2017-06-30
+ms.search.form: 
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates

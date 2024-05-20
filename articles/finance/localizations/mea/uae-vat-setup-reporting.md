@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Set up and report value-added tax (VAT)
-description: This article explains how to set up and report value-added tax (VAT).
+description: Learn how to set up and report value-added tax (VAT), including outlines on configuring legal entities for VAT and configuring the tax authority.
 author: liza-golub
-ms.date: 06/07/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: UAE
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.date: 06/07/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: UAE
 ms.dyn365.ops.version: Version 1611
+ms.search.form: 
 ms.search.validFrom: 2019-05-29
-
 ---
 
 # Set up and report value-added tax (VAT)

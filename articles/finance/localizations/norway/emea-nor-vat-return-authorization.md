@@ -1,13 +1,13 @@
 ---
 title: Authorize interoperation with ID-porten and Altinn web services
-description: This article explains how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services.
+description: Learn how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 02/12/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Norway
 ms.author: egolub
+ms.topic: article
+ms.date: 02/12/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2022-11-18
 ---
 
