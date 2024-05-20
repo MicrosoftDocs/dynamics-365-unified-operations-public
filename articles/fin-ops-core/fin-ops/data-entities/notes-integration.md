@@ -4,8 +4,8 @@ description: Learn about the integration of note data in dual-write, including a
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: article
-ms.date: 02/22/2021
-ms.reviewer: sericks
+ms.date: 05/20/2024
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: global
 ms.search.validFrom: 2020-01-06
