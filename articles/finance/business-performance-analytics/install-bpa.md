@@ -35,7 +35,7 @@ To install Business performance analytics, follow these steps.
 3. In the Power Platform admin center, select the Microsoft Power Platform environment to install the application into. 
 4. Accept the terms and conditions, and then select **Install**. This will start the installation of Business performance analytics in the selected environment. 
 5. Go to the environment page for the selected environment, click **Dynamics 365 apps** to check status of the installation. During installation the status is **Installing**. On completion, the status will change to **Installed**. Refer to the Frequently Asked Questions if the status has a different value.
-6. Set up your users to open Business performance analytics directly from Dynamics 365 finance and operations apps. For more information, see [Access Business performance analytics](access_BPA.md). 
+6. Set up your users to open Business performance analytics directly from Dynamics 365 finance and operations apps. For more information, see [Access Business performance analytics](access-bpa.md). 
 7. Set up security. For more information, see [Set up security in Business performance analytics](set-up-security.md).
 
 >[!NOTE]
