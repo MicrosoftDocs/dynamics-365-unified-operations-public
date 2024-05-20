@@ -182,7 +182,7 @@ The slipstream process is fully automated and doesn't require any customer actio
 
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
-- [Troubleshoot report designer issues with Event Viewer](../financial-reporting/troubleshoot-report-designer-with-event-viewer.md)
+- [Troubleshoot report designer issues with Event Viewer](../../troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
