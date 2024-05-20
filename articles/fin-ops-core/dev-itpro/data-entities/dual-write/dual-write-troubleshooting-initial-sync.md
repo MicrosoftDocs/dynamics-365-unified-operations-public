@@ -3,9 +3,11 @@ title: Troubleshoot issues during initial synchronization
 description: Learn about how you can fix issues that might occur during initial synchronization, including issues relating to checking for errors.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
-ms.date: 06/24/2022
-ms.reviewer: sericks
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 05/20/2024
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-01-06
@@ -26,13 +28,13 @@ After you enable the mapping templates, the status of the maps should be **Runni
 
 ![Error on the Initial sync details tab.](media/initial_sync_status.png)
 
-In some cases it may seem like the initial sync is stuck. If you see the initial sync status as **Running** for a long time, you can dig further into the status by examining the **FinOps job name** details in FnO. The following screenshots show how these items are related:
+In some cases, it may seem like the initial sync is stuck. If you see the initial sync status as **Running** for a long time, you can dig further into the status by examining the **FinOps job name** details in finance and operations apps. The following screenshots show how these items are related:
 
-1. From the table map screen, select the **Initial sync details** tab, and click on the desired execution. This will take you to the **Execution details** screen, which will provide the **FinOps job name**.
+1. From the table map screen, select the **Initial sync details** tab, and select the desired execution. This takes you to the **Execution details** screen, that provides the **FinOps job name**.
 
     ![Initial sync details tab.](media/initial_sync_execution_details.png)
 
-2. Navigate to Data Management in FinOps and find the **Job history** section. Search for the **FinOps job name** from step 1 in the **Execution group id** column. Once selected, you can click the **Excution details** button for additional detail about the status of the job.
+2. Navigate to Data Management in finance and operations apps and find the **Job history** section. Search for the **FinOps job name** from step 1 in the **Execution group id** column. Once selected, you can select the **Excution details** button for additional detail about the status of the job.
 
     ![FinOps job name in Data Management.](media/initial_sync_finops_job.png)
 
