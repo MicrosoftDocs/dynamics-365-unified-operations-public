@@ -62,9 +62,9 @@ Add the following required elements in the Azure Key Vault:
 1. In the **SAS token secret** field, select the name of the storage account secret **URL** that must be used to authenticate access to the storage account.
 1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
 1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create new elements of the respective **Type** for each certificate or secret described in the previous chapter.
- - The **Client secret** element of the **Secret** type.
- - The **Client ID** element of the **Secret** type.
- - The **Certificate** element of the **Certificate** type.
+ - <a id="ClSec"></a>The **Client secret** element of the **Secret** type.
+ - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
+ - <a id="DigCert"></a>The **Certificate** element of the **Certificate** type.
 
    > [!NOTE]
    > The values in the **Name** column should coincide with the names the certificates or secrets described in the previous chapter.
@@ -78,12 +78,12 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup, and select **Edit**.
 1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **TO CLARIFY Sign ... document ...**.
-1. In the **Parameters** section, select **Certificate name**, and then select the name of the digital certificate that you created.
+1. In the **Parameters** section, select **Certificate name**, and then select the name of the [digital certificate](#DigCert) that you created.
 1. In the **Processing pipeline** section, select **TO CLARIFY Integrate with MY !!!!!!!!**.
-1. In the **Parameters** section, select **Secret name**, and then select the name of the secret that you created.
-1. Select **Client ID**, and then select the name of the Client ID that you created. 
+1. In the **Parameters** section, select **Secret name**, and then select the name of the [secret](#ClSec) that you created.
+1. Select **Client ID**, and then select the name of the [client ID](#ClID) that you created. 
 1. Select **Save**, and close the page.
-1. Repeat the steps 4 through 8 for the **Project invoice derived** and **Self invoice derived** feature setups.
+1. Repeat the steps 4 through 10 for the **Project invoice derived** and **Self invoice derived** feature setups.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
