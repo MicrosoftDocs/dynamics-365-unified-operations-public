@@ -640,7 +640,7 @@ Next, import your report designs from Report designer by using the file that was
 
 ## Other resources
 
-[What are the estimated Data Mart integration intervals?](/finance/general-ledger/financial-reporting-faq.md#what-are-the-estimated-data-mart-integration-intervals)
+[What are the estimated Data Mart integration intervals?](../../../finance/general-ledger/financial-reporting-faq.md#what-are-the-estimated-data-mart-integration-intervals)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
