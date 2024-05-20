@@ -71,6 +71,13 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that the **Draft** version is selected.
+1. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup, and select **Edit**.
+1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **TO CLARIFY Sign ... document ...**.
+1. In the **Parameters** section, select **Certificate name**, and then select the name of the digital certificate that you created.
+1. In the **Processing pipeline** section, select **TO CLARIFY Integrate with MY !!!!!!!!**. 
+1. Select **Save**, and close the page.
+1. Repeat the steps 4 through 8 for the **Project invoice derived** and **Self invoice derived** feature setups.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
@@ -97,6 +104,30 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes, and close the page.
+
+===================================================
+On the **Electronic document types** page, select **Add** to create a record.
+6. In the **Table name** field, add **CustInvoiceJour**.
+7. In the **Context** field, add a reference to the **Customer invoice context** mapping name. The configuration is **Customer invoice context model**.
+8. In the **Electronic document mapping** field, add a reference to the **Customer invoice** mapping name. The configuration is **Invoice model mapping**.
+9. Select **Save**.
+10. On **Response types** page, select **Add**.
+11. In the **Response type** field, enter **Response**.
+12. In the **Description** field, enter **Process response**.
+13. In the **Submission status** field, select **Pending**.
+14. In the **Model mapping** field, select **Response message import**. The configuration is **Egypt response message import (EG)**.
+15. Select **Save**.
+16. Select **Add**.
+17. In the **Response type** field, enter **ResponseData**.
+18. In the **Description** field, enter **Process response data**.
+19. In the **Submission status** field, select **Pending**.
+20. In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
+21. In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
+22. Select **Save**, and close the page.
+23. Close the page.
+====================================================================================
+
+
 
 ## <a id="NRIC"></a>Configure registration numbers
 
