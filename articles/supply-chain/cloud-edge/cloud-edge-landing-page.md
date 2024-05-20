@@ -1,5 +1,5 @@
 ---
-title: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers for new customers
+title: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
 description: This article explains that the scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
 author: Mirzaab
 ms.date: 07/06/2022
