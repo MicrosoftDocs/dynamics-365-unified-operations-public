@@ -4,7 +4,7 @@ description: Learn how to reset the Financial reporting data mart for Microsoft 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/01/2024
+ms.date: 05/20/2024
 ms.reviewer: twheeloc
 audience: IT Pro, Developer
 ms.search.region: Global
@@ -640,7 +640,7 @@ Next, import your report designs from Report designer by using the file that was
 
 ## Other resources
 
-[What are the estimated Data Mart integration intervals?](..\..\finance\general-ledger\financial-reporting-faq#what-are-the-estimated-data-mart-integration-intervals)
+[What are the estimated Data Mart integration intervals?](..\..\finance\general-ledger\financial-reporting-faq.md#what-are-the-estimated-data-mart-integration-intervals)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
