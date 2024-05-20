@@ -3,7 +3,9 @@ title: Note integration
 description: Learn about the integration of note data in dual-write, including an outline on creating a note in a customer engagement app.
 author: RamaKrishnamoorthy
 ms.author: ramasri
-ms.topic: article
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 05/20/2024
 ms.reviewer: johnmichalak
 audience: Application User
