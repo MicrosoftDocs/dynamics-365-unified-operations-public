@@ -4,7 +4,7 @@ description: Learn how to install Business performance analytics, including a st
 author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 12/12/2023
+ms.date: 05/20/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -15,8 +15,10 @@ audience: Application User
 >[!NOTE]
 >The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. Participate in our Public preview here: <https://aka.ms/InstallBPA>.
 
+This article describes how to install Business performance analytics. 
 
-This article describes how to install Business performance analytics. **The administrator who completed the configuration steps should complete the installation steps**.    
+>[!Important]
+>The administrator who completed the configuration steps should complete the installation steps.    
 
 ## Install Business performance analytics 
 
@@ -33,8 +35,8 @@ To install Business performance analytics, follow these steps.
 3. In the Power Platform admin center, select the Microsoft Power Platform environment to install the application into. 
 4. Accept the terms and conditions, and then select **Install**. This will start the installation of Business performance analytics in the selected environment. 
 5. Go to the environment page for the selected environment, click **Dynamics 365 apps** to check status of the installation. During installation the status is **Installing**. On completion, the status will change to **Installed**. Refer to the Frequently Asked Questions if the status has a different value.
-6. Set up your users to open Business performance analytics directly from Dynamics 365 finance and operations apps [Access Business performance analytics(access_BPA.md)] 
-7. Set up security, see [Set up security in Business performance analytics](set-up-security.md).
+6. Set up your users to open Business performance analytics directly from Dynamics 365 finance and operations apps. For more information, see [Access Business performance analytics](access_BPA.md). 
+7. Set up security. For more information, see [Set up security in Business performance analytics](set-up-security.md).
 
 >[!NOTE]
 >If you uninstall and install Business performance analytics, any new reports that were created won't be saved.
