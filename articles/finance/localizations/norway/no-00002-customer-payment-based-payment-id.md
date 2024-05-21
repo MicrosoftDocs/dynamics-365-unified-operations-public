@@ -45,7 +45,8 @@ A payment identification (ID) is a unique identifier for customer payments that 
 
    - **Modulo 10** – The total length of the payment ID is divided by 10. The remainder is the check number.
    - **Modulo 11** – The total length of the payment ID is divided by 11. The remainder is the check number.
-   - **(None)** – No check number is calculated.  
+   - **(None)** – No check number is calculated.
+   - **Modulo 731** - The check number is calculated using the 7-3-1 method specified by the Estonian Bank Association for reference numbers.
 
 4. Select **Save**. After the record is saved, you can preview the selected payment ID in the **Payment ID test** field.
 5. Go to **Accounts receivable** > **Payments setup** > **Payment ID per country/region** and select **New**.
