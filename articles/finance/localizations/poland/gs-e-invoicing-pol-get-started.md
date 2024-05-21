@@ -48,9 +48,9 @@ Add the following required elements in the Azure Key Vault:
 1. In the **SAS token secret** field, select the name of the storage account secret **URL** that must be used to authenticate access to the storage account.
 1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
 1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create new elements of the respective **Type** for each secret described in the previous chapter.
- - <a id="ClSec"></a>The **token** element of the **Secret** type.
+ - <a id="Tok"></a>The **token** element of the **Secret** type.
  - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
- - <a id="DigCert"></a>The **Public key** element of the **Secret** type.
+ - <a id="PK"></a>The **Public key** element of the **Secret** type.
 
    > [!NOTE]
    > The values in the **Name** column should coincide with the names the secrets described in the previous chapter.
@@ -64,18 +64,13 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Submit invoice to KSeF** action.
-6. In the **Parameters** section, select **Client ID**, and then select the name of the secret that you previously created for the legal entity's tax identification number.
-7. Select **Token**, and then select the name of the digital certificate that you created.
-8. Select **Public key**, and then select the name of the secret that you created for the public key.
-9. Select **Service URI**, and make sure that a valid URI is configured. To get the testing and production URIs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
-10. Select the **Archive name** parameter, and then enter the name which must contain at least **5** characters.
-11. In the **Processing pipeline** section, select the **(Preview) KSeF get batch status from e-invoice system** action.
-12. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
-13. Select **Save**, and close the page.
-14. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setup, and then select **Edit**.
-15. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
-16. Select **Save** (if you made any changes), and close the page.
-17. Repeat steps 14 through 16 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+6. In the **Parameters**, select the **Client ID** parameter, and then, in the **Value** field, select the name of the [Client ID](#ClID) that you previously created.
+7. Select **Public key** parameter, and then, in the **Value** field, select the name of the [Public key](#PK) that you previously created.
+8. Select **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
+9. Select **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment depending on implementation stage: *Test*, *Demo* or *Prod*.
+10. Repeat steps 5 through 9 for the **Get invoice status from KSeF** action.
+11. Select **Save**, and close the page.
+12. Repeat steps 4 through 11 for the **Submit project invoice derived** and **Submit advance invoice derived** feature setups if required.
 
 ## Finance configuration
 
