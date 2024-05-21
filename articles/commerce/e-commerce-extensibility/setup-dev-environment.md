@@ -2,10 +2,10 @@
 title: Set up a development environment
 description: This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 03/28/2022
+ms.date: 05/21/2024
 ms.topic: article
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
