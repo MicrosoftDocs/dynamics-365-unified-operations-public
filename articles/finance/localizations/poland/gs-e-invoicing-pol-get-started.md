@@ -40,7 +40,7 @@ Add the following required elements in the Azure Key Vault:
 - The secret for the the obtained **Public key**.
 
   > [!NOTE]
-  > The value of the public key must be additionally wrapped with **----BEGIN PUBLIC KEY----** and **----END PUBLIC KEY----** commands.
+  > The value of the public key must be additionally wrapped with the following commands. <p>**----BEGIN PUBLIC KEY----**</p> ... <p>**----END PUBLIC KEY----**</p> 
 
 ## Electronic invoicing Key Vault parameters configuration
 
