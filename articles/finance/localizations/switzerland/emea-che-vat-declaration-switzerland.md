@@ -1,16 +1,16 @@
 ---
 title: VAT declaration (Switzerland)
-description: This article provides information about how to set up and generate a value-added tax declaration for Switzerland.
+description: Learn about how to set up and generate a value-added tax declaration for Switzerland, including an outline and process on configuring system parameters.
 author: liza-golub
-ms.date: 09/15/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Switzerland
 ms.author: egolub
+ms.topic: article
+ms.date: 09/15/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Switzerland
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
+ms.dyn365.ops.version: Version 1611
 ---
 
 # VAT declaration (Switzerland)
