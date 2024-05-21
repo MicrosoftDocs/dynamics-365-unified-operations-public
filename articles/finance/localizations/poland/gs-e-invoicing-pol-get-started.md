@@ -24,8 +24,8 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The primary address of the legal entity must be in Poland.
 - The legal entity must be registered as a taxpayer in Poland and must have a valid tax identification number (*Numer identyfikacji podatkowej*, or NIP).
-- Login to the Polish National system for electronic invoicing ([KSeF](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature or qualified seal and obtain a non-expiring token that will be then used by the Invoicing Service to secure communicate to KSEF.
-- Public key https://ksef.mf.gov.pl/
+- Login to the Polish National system for electronic invoicing ([Krajowy System e-Faktur [KSeF]](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature or qualified seal and obtain a non-expiring **token** that will be then used by the Invoicing Service to secure communicate to KSEF.
+- Obtain the **Public key (PEM)** from the respective [KSeF environment](https://ksef.mf.gov.pl/) which can be of test, pre-production or production type.
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
