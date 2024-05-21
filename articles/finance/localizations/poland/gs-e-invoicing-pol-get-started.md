@@ -69,6 +69,8 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 7. Select **Public key** parameter, and then, in the **Value** field, select the name of the [Public key](#PK) that you previously created.
 8. Select **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
 9. Select **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment depending on implementation stage: *Test*, *Demo* or *Prod*.
+
+   ![Screenshot of the feature setup configuration.](e-inv-pol-feature-setup.jpg)
 10. Repeat steps 5 through 9 for the **Get invoice status from KSeF** action.
 11. Select **Save**, and close the page.
 12. Repeat steps 4 through 11 for the **Submit project invoice derived** and **Submit advance invoice derived** feature setups if required.
