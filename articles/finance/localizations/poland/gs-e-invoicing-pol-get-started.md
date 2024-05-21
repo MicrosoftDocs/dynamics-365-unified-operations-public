@@ -57,15 +57,15 @@ Add the following required elements in the Azure Key Vault:
 
 ##  Electronic invoicing feature configuration
 
-Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
+Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required so that they better reflect your business operations.
 
-1. Import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. Import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Submit batch** feature setup, and then select **Edit**.
-5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **(Preview) KSeF send batch to e-invoice system** action.
+4. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup, and then select **Edit**.
+5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Submit invoice to KSeF** action.
 6. In the **Parameters** section, select **Client ID**, and then select the name of the secret that you previously created for the legal entity's tax identification number.
-7. Select **Certificate name**, and then select the name of the digital certificate that you created.
+7. Select **Token**, and then select the name of the digital certificate that you created.
 8. Select **Public key**, and then select the name of the secret that you created for the public key.
 9. Select **Service URI**, and make sure that a valid URI is configured. To get the testing and production URIs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
 10. Select the **Archive name** parameter, and then enter the name which must contain at least **5** characters.
