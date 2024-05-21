@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: NO-00002 Customer payment based on payment ID
 description: This article explains how to set up and maintain Norwegian payment IDs. 
-author: kfend
-ms.date: 08/01/2023
+author: kailiang
+ms.date: 05/21/2024
 ms.topic: how-to 
- 
-# optional metadata 
- 
+ms.custom: 
+  - bap-template 
 ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal   
-audience: Application User 
-# ms.devlang:  
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Norway
-# ms.search.industry: 
-ms.author: kfend
+ms.author: kailiang
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # NO-00002 Customer payment based on payment ID
 
 [!include [banner](../../includes/banner.md)]
@@ -45,7 +38,8 @@ A payment identification (ID) is a unique identifier for customer payments that 
 
    - **Modulo 10** – The total length of the payment ID is divided by 10. The remainder is the check number.
    - **Modulo 11** – The total length of the payment ID is divided by 11. The remainder is the check number.
-   - **(None)** – No check number is calculated.  
+   - **(None)** – No check number is calculated.
+   - **Modulo 731** - The check number is calculated using the 7-3-1 method specified by the Estonian Bank Association for reference numbers.
 
 4. Select **Save**. After the record is saved, you can preview the selected payment ID in the **Payment ID test** field.
 5. Go to **Accounts receivable** > **Payments setup** > **Payment ID per country/region** and select **New**.
