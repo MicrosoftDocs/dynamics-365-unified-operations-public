@@ -77,9 +77,9 @@ To set up dimension groups, follow these steps.
 
 Within a given dimension group, a record must satisfy all the filter conditions for the data to be visible to the user on a report. If there are any conflicting criteria or non-valid combinations, no data will be shown.
 
-### Examples
+### Dimension group examples
 
-#### Example 1
+#### Dimension group example 1
 
 A user is assigned one dimension group, **Test dimension group**. This dimension group has the following filters:
 
@@ -89,7 +89,7 @@ A user is assigned one dimension group, **Test dimension group**. This dimension
 
 If the cost center and department numbers are linked so that they must match, no data will be available to the user who's assigned this dimension group.
 
-#### Example 2
+#### Dimension group example 2
 
 A user is assigned one dimension group, **Test dimension group**. This dimension group has the following filters:
 
@@ -99,7 +99,7 @@ A user is assigned one dimension group, **Test dimension group**. This dimension
 
 If all cost centers have values that are below 10000, there will be no valid combinations. Therefore, no data will be available to the user who's assigned this dimension group.
 
-#### Example 3
+#### Dimension group example 3
 
 If a user is assigned two or more dimension groups, a record must satisfy the filter conditions of at least one of them for the data to be visible to the user on a report. For this example, a user is assigned two dimension groups: **Test dimension group** and **Group x**. These dimension groups have the following filters:
 
@@ -117,7 +117,7 @@ If a user is assigned two or more dimension groups, a record must satisfy the fi
 
 The user will be able to view records for legal entities USMF and CNMF. For legal entity USMF, the user will see all cost centers and all department combinations. For legal entity CNMF, the user will see only records where the cost center is between 000001 and 000003 and the department is Marketing 01.
 
-#### Example 4
+#### Dimension group example 4
 
 If a user is assigned an **All access** dimension group or a dimension group that has no filters, the user will have full visibility into the data on a report. For example, a user is assigned a dimension group that has the following filters:
 

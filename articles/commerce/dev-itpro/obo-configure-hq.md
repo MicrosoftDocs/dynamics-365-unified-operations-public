@@ -30,7 +30,7 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters \> Identity Providers**.
 1. Under **Identity providers**, select **Add**, and then set the following fields:
 
-    1. **Issuer:** Enter `https://sts.windows.net/<TENANTID>`, where `<TENANTID>` is the ID of your Microsoft Entra business-to-business (B2B) tenant.
+    1. **Issuer:** Enter `https://sts.windows.net/<TENANTID>/`, where `<TENANTID>` is the ID of your Microsoft Entra business-to-business (B2B) tenant.
     1. **Type:** Select **Microsoft Entra ID**.
     1. **Name:** Enter a name for the identity provider.
 

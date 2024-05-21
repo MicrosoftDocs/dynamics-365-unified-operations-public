@@ -366,7 +366,7 @@
             href: ../finance/localizations/russia/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
     - name: Distributed hybrid topology
       items:
-      - name: Scale unit capability for Supply Chain Management is currently paused
+      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
         href: cloud-edge/cloud-edge-landing-page.md
     - name: Asset management
       items:
@@ -1867,8 +1867,6 @@
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
-        - name: Intercompany planning groups for demand forecasting
-          href: demand-planning/intercompany-planning-groups-demand-forecasting.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Coverage time fences
@@ -2055,9 +2053,6 @@
         href: demand-planning/export-data.md
       - name: Rolling forecasts
         href: demand-planning/rolling-forecasts.md
-      - name: Intercompany planning groups for demand forecasting
-        href: demand-planning/intercompany-planning-groups-demand-forecasting.md
-     
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
@@ -3026,8 +3021,6 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
-        - name: Turn the Rebate management module on or off
-          href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
         - name: Rebate management deal workflows
@@ -3882,7 +3875,7 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
-          - name: Set up a mobile device menu item for completing mixed license plates (preview)
+          - name: Set up a mobile device menu item for completing mixed license plates
             href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
@@ -4012,7 +4005,7 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
-      - name: Warehouse management only mode (preview)
+      - name: Warehouse management only mode
         items:
         - name: Warehouse management only mode overview
           href: warehousing/wms-only-mode-overview.md

@@ -1,5 +1,5 @@
 ---
-title: Work with Warehouse management only mode in Supply Chain Management (preview)
+title: Work with Warehouse management only mode in Supply Chain Management
 description: This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 author: perlynne
 ms.author: perlynne
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Work with Warehouse management only mode in Supply Chain Management (preview)
+# Work with Warehouse management only mode in Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 

@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 05/19/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -37,6 +37,18 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
 | **Status** | <p>Supported until version 10.0.40. As of version 10.0.41, inventory transactions will be deprecated for tracking on-hand inventory for internal warehouse operations. Existing customers will be able to continue using this scenario after that version, but new features and bug fixes for this scenario will only be implemented for [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md).</p><p>Approximately one year after the release of version 10.0.41, support for this scenario will be removed and all customers will be required to move to [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) for tracking on-hand inventory for internal warehouse operations.</p> |
+
+## Features removed or deprecated in the Supply Chain Management 10.0.40 release
+
+### Scale unit capability for Supply Chain Management
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| Reason for deprecation/removal | The scale unit capability for Microsoft Dynamics 365 Supply Chain Management has been paused for new customers since July 2022 and is now deprecated. |
+| Replaced by another feature? | Yes. [Warehouse management only mode](../warehousing/wms-only-mode-overview.md) replaces some of the functionality planned for scale units and adds many new architectural and integration possibilities. |
+| Product areas affected | Supply Chain Management – Warehouse management<br><br>Supply Chain Management – Production control |
+| Deployment options | Cloud and on-premises |
+| Status | The scale unit capability for Microsoft Dynamics 365 Supply Chain Management has been paused for new customers since July 2022. The capability is formally deprecated as of Supply Chain Management version 10.0.40 and will be completely removed for all customers one year after the release of that version. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.39 release
 
@@ -148,6 +160,4 @@ This list is intended to help you consider these removals and deprecations for y
 
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

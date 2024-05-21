@@ -4,7 +4,7 @@
 title: Finance home page
 description: This article provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 author: twheeloc
-ms.date: 07/04/2023
+ms.date: 05/15/2024
 ms.topic: welcome
 
 
