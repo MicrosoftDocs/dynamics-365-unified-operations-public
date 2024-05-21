@@ -19,7 +19,7 @@ items:
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
         href: hr-migration-issues.md
-      - name: Human Resources customer merge overview FAQ 
+      - name: Human Resources customer merge overview  
         href: hr-customer-merge.md 
       - name: Human Resources customer merge FAQ
         href: customer-merge.md
