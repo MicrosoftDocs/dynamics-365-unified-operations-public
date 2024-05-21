@@ -89,6 +89,8 @@ Some additional parameters must be configured directly in Finance.
     - In the **Submission status** field, select **Pending**.
     - In the **Model mapping** field, select **KSeF response data import format (PL)**.
 
+    ![Screenshot of the setup of the Response type on the Electronic document tab of the Electronic document parameters page.](e-inv-pol-response-type.jpg)
+
 8. Repeat steps 5 through 6 for the **Project invoice** and **Advance invoice** electronic documents.
 9. In the **Feature management** workspace, the **Export channels for electronic invoicing integration** feature must be enabled. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 10. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
