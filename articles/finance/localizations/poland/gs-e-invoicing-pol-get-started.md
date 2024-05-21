@@ -22,27 +22,11 @@ This article provides information that will help you get started with Electronic
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
+- The primary address of the legal entity must be in Poland.
 - The legal entity must be registered as a taxpayer in Poland and must have a valid tax identification number (*Numer identyfikacji podatkowej*, or NIP).
-- A valid certificate for digital signing must be obtained from the appropriate authorities.
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
-
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-
-- Activate the integration between your Finance or Supply Chain Management app and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
-- Create certificates and secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
-
-    - The secret for the legal entity's tax identification number
-    - The secret that will contain the public key that is provided by the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef))
-    - The certificate for digital signing
-
-- Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-
-    - Sales e-invoice (PL)
-    - Project e-invoice (PL)
-    - Advance e-invoice (PL)
+- ...provided by the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
+- Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Country/region-specific configuration for the Polish electronic invoice (PL) feature
 
