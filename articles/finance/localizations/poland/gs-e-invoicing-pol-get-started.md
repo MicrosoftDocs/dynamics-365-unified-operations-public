@@ -60,7 +60,7 @@ Add the following required elements in the Azure Key Vault:
 
 Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required so that they better reflect your business operations.
 
-1. Import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Go to **Globalization Studio** \> **Electronic invoicing** tile, and import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup, and then select **Edit**.
@@ -84,30 +84,20 @@ Some additional parameters must be configured directly in Finance.
 
    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](e-inv-pol-doc-parameters.jpg) 
 6. For the **Customer Invoice journal** table name, select **Response types**.
-7. Create a response type that has the same name that was defined for the related variable of the **To client** type in the corresponding feature setups in RCS. Enter the following values:
+7. Select **New** to create a response type, and enter the following values:
 
+    - In the **Response type** field, enter **ResponseData** - the default value.
     - In the **Submission status** field, select **Pending**.
     - In the **Model mapping** field, select **KSeF response data import format (PL)**.
 
     ![Screenshot of the setup of the Response type on the Electronic document tab of the Electronic document parameters page.](e-inv-pol-response-type.jpg)
     > [!NOTE]
-    > The values in the **Name**...
+    > **ResponseData** is the default name for the response type. If you need to change it, make sure that is coincides with the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio** \> **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Polish electronic invoice (PL)** Electronic invoicing feature is selected. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup, and then select **Edit** or **View** depending on feature version status.
     > 
     > ![Screenshot of the setup of the Response variable of the Feature setup.](e-inv-pol-response-data.jpg)
     
-
-9. Repeat steps 5 through 6 for the **Project invoice** and **Advance invoice** electronic documents.
-10. In the **Feature management** workspace, the **Export channels for electronic invoicing integration** feature must be enabled. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-11. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-12. <a id="ExportChannel"></a>Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
-13. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
-14. Open the **DataChannel** definition for editing in designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
-15. In the **Value** field, select **Edit**, and enter the data channel name. The value is the name of the data channel that is configured in the **Export channel** section for the **Submit batch** feature setup in RCS.
-16. Save your changes, and complete the derived configuration.
-17. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-18. <a id="channel"></a>On the **Integration channels** tab, add a channel that has the same name that was used in step 13.
-19. In the **Company** column, enter a required legal entity code. In the **Document context** column, refer to the derived configuration.
-20. Save your changes, and close the page.
+8. Repeat steps 6 through 7 for the **Project invoice** and **Advance invoice** electronic documents.
+9. Save your changes, and close the page.
 
 ## Finance business data configuration
 
