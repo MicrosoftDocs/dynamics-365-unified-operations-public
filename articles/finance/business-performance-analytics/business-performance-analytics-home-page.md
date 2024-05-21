@@ -19,6 +19,8 @@ ms.search.form: business-performance-analytics
 ## Turn data into action to improve business performance
 Finance and operations departments grapple with an array of data-related challenges that significantly impact their productivity, accuracy, and strategic decision-making. Outdated data sources and fragmented tools hinder their ability to extract, integrate, and analyze data effectively. To address these issues, a robust data warehouse solution becomes indispensable.
 
+Check out this [TechTalk](https://www.youtube.com/watch?v=Qb6uo_er6nE&t=10s) for more information about Business performance analytics.
+
 ### The role of data warehousing in Dynamics 365 Finance and Operations
 A data warehouse serves as the foundation for modern finance and operations operations. Data is consolidated from various sources across different locations and systems, creating a centralized repository. This repository ensures that financial institutions have reliable, up-to-date, and accurate data for business intelligence. Key benefits include:
 
