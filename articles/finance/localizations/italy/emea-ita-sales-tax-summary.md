@@ -5,7 +5,6 @@ author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.date: 03/04/2024
-ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

@@ -24,7 +24,7 @@ This article explains how to record the Tax Deducted at Source (TDS) concession 
 2. In the **Tax type** field, select **TDS** to record concession certificates for the TDS tax type.
 3. On the **Overview** tab, select **Alt+N** to create a line.
 
-    [![Header of the new line.](../media/apac-ind-TDS-34.png)](/media/apac-ind-TDS-34.png)
+    [![Header of the new line.](../media/apac-ind-TDS-34.png)]
 
 4. In the **Withholding tax code** field, select the TDS tax code that the vendor concession certificates are issued for. The **Withholding tax code name** field shows the name of the TDS tax code.
 5. In the **From date** and **To date** fields, define the period of validity for the concession certificate that uses the TDS tax code to calculate TDS for the vendor on a concessional basis.
@@ -41,6 +41,6 @@ This article explains how to record the Tax Deducted at Source (TDS) concession 
 
 11. In the **Certificate** field, enter the TDS concession certificate number.
 
-    [![Certificate FastTab.](../media/apac-ind-TDS-33.png)](/media/apac-ind-TDS-33.png)
+    [![Certificate FastTab.](../media/apac-ind-TDS-33.png)]
 
 12. Close the page.

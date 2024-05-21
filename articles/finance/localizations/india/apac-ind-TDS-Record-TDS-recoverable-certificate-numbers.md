@@ -24,7 +24,7 @@ Follow these steps to record the TDS certificate numbers and dates.
 
 1. Go to **Tax \> Indirect tax \> Withholding tax \> Recoverable certificates**.
 
-    [![Recoverable certificates page.](../media/apac-ind-TDS-49.png)](/media/apac-ind-TDS-49.png) 
+    [![Recoverable certificates page.](../media/apac-ind-TDS-49.png)]
 
 2. On the **Recoverable certificates** page, in the **Tax type** field, select **TDS**.
 3. Select **New** to create a record.

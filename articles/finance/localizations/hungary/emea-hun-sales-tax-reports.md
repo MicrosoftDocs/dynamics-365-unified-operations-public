@@ -169,7 +169,7 @@ This example can be done in the **DEMF** legal entity.
 
 5. Select **Create report**.
 6. In the **Sales tax declaration information** dialog box, set the **Include use-tax** option to **Yes**.
-7. Select **OK**, and review [the generated report](https://mbs.microsoft.com/files/customer/AX/Downloads/Taxupdates/SalesTaxDeclarationInformation.xlsx).
+7. Select **OK**, and review the generated report. <!-- Broken link (https://mbs.microsoft.com/files/customer/AX/Downloads/Taxupdates/SalesTaxDeclarationInformation.xlsx) -->
 
 ### Generate and print the Itemized VAT statement report
 
@@ -185,7 +185,7 @@ This example can be done in the **DEMF** legal entity.
 
 6. Select **Clear period**, and then select **Create report**.
 7. In the **Sales tax declaration information** dialog box, set the **Include use-tax** option to **Yes**.
-8. Select **OK**, and review [the generated report](https://mbs.microsoft.com/files/customer/AX/Downloads/Taxupdates/ItemizedVATStatement.xlsx).
+8. Select **OK**, and review the generated report. <!-- broken link (https://mbs.microsoft.com/files/customer/AX/Downloads/Taxupdates/ItemizedVATStatement.xlsx)  -->
 
 The **Itemized VAT statement** report contains the following data:
 

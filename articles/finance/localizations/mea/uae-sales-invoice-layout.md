@@ -25,4 +25,4 @@ To achieve consistent printout results, set up other data in the system so that 
 
 The following illustration shows an example of the printout for a free text invoice.
 
-[![Example of a free text invoice printout.](../media/uae_vat_15.jpg)](/media/uae_vat_15.jpg)
+[![Example of a free text invoice printout.](../media/uae_vat_15.jpg)]

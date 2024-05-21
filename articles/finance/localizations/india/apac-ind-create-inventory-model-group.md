@@ -5,7 +5,6 @@ author: AdamTrukawka
 ms.custom:
 ms.topic: how-to
 ms.author: atrukawk
-ms.topic: how-to
 ms.date: 10/10/2022
 ms.reviewer: johnmichalak 
 audience: Application User  

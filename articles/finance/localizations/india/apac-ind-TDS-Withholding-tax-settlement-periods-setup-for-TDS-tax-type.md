@@ -22,7 +22,7 @@ This article explains how to set up settlement periods for Tax Deducted at Sourc
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 
-    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-13.png)](/media/apac-ind-TDS-13.png)
+    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-13.png)]
 
 2. In the **Tax type** field, select **TDS** to set up withholding tax settlement periods for the TDS tax type.
 3. Select **New** to create a line.
@@ -38,6 +38,6 @@ This article explains how to set up settlement periods for Tax Deducted at Sourc
     > [!NOTE]
     > To run the periodic TDS settlement process, go to **General ledger \> Periodic \> Withholding tax \> Withholding tax payment**.
 
-    [![Withholding tax payment page.](../media/apac-ind-TDS-15.png)](/media/apac-ind-TDS-15.png)
+    [![Withholding tax payment page.](../media/apac-ind-TDS-15.png)]
 
 12. Close the page.

@@ -22,7 +22,7 @@ This article lists the steps for calculating Tax Deducted at Source (TDS) on jou
 
 Begin by opening the **General journals** page (**General ledger > Journal entries > General journals**).
 
-[![General journals.](../media/apac-ind-TDS-57.png)](/media/apac-ind-TDS-57.png)
+[![General journals.](../media/apac-ind-TDS-57.png)]
 
 1. Create journal lines using the journal forms that are listed in the table. Select the account type and offset account type and enter the amount for the transaction. 
 

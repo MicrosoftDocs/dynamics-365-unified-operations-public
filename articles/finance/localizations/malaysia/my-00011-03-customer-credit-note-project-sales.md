@@ -3,7 +3,7 @@ title: MY-00011 03 Generate Customer Credit note for Project sales
 description: Learn about creating and printing a project credit note for GST, including a step-by-step process for creating project credit notes. 
 author: EvgenyPopovMBS
 ms.author: evgenypopov
-ms.topic:
+ms.topic: article
 ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: johnmichalak
