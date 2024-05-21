@@ -81,24 +81,26 @@ Some additional parameters must be configured directly in Finance.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Advance invoice** table names.
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-5. For the **Customer Invoice journal** table name, select **Response types**.
-6. Create a response type that has the same name that was defined for the related variable of the **To client** type in the corresponding feature setups in RCS. Enter the following values:
+
+   ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](e-inv-pol-doc-parameters.jpg) 
+6. For the **Customer Invoice journal** table name, select **Response types**.
+7. Create a response type that has the same name that was defined for the related variable of the **To client** type in the corresponding feature setups in RCS. Enter the following values:
 
     - In the **Submission status** field, select **Pending**.
     - In the **Model mapping** field, select **KSeF response data import format (PL)**.
 
-7. Repeat steps 5 through 6 for the **Project invoice** and **Advance invoice** electronic documents.
-8. In the **Feature management** workspace, the **Export channels for electronic invoicing integration** feature must be enabled. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-9. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-10. <a id="ExportChannel"></a>Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
-11. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
-12. Open the **DataChannel** definition for editing in designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
-13. In the **Value** field, select **Edit**, and enter the data channel name. The value is the name of the data channel that is configured in the **Export channel** section for the **Submit batch** feature setup in RCS.
-14. Save your changes, and complete the derived configuration.
-15. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-16. <a id="channel"></a>On the **Integration channels** tab, add a channel that has the same name that was used in step 13.
-17. In the **Company** column, enter a required legal entity code. In the **Document context** column, refer to the derived configuration.
-18. Save your changes, and close the page.
+8. Repeat steps 5 through 6 for the **Project invoice** and **Advance invoice** electronic documents.
+9. In the **Feature management** workspace, the **Export channels for electronic invoicing integration** feature must be enabled. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+10. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
+11. <a id="ExportChannel"></a>Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
+12. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
+13. Open the **DataChannel** definition for editing in designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
+14. In the **Value** field, select **Edit**, and enter the data channel name. The value is the name of the data channel that is configured in the **Export channel** section for the **Submit batch** feature setup in RCS.
+15. Save your changes, and complete the derived configuration.
+16. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+17. <a id="channel"></a>On the **Integration channels** tab, add a channel that has the same name that was used in step 13.
+18. In the **Company** column, enter a required legal entity code. In the **Document context** column, refer to the derived configuration.
+19. Save your changes, and close the page.
 
 ## Finance business data configuration
 
