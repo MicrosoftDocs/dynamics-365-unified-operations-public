@@ -31,7 +31,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 ## Azure Key Valut configuration
 
-Create an Azure Key Vault to store required certificates and secrets issued for your company. For more information, refer to [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+Create an Azure Key Vault to store required secrets issued for your company. For more information, refer to [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
 Add the following required elements in the Azure Key Vault:
 
@@ -47,15 +47,15 @@ Add the following required elements in the Azure Key Vault:
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field select the reference to the Azure Key Valut created in the previous chapter.
 1. In the **SAS token secret** field, select the name of the storage account secret **URL** that must be used to authenticate access to the storage account.
 1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
-1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create new elements of the respective **Type** for each certificate or secret described in the previous chapter.
- - <a id="ClSec"></a>The **Client secret** element of the **Secret** type.
+1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create new elements of the respective **Type** for each secret described in the previous chapter.
+ - <a id="ClSec"></a>The **token** element of the **Secret** type.
  - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
- - <a id="DigCert"></a>The **Certificate** element of the **Certificate** type.
+ - <a id="DigCert"></a>The **Public key** element of the **Secret** type.
 
    > [!NOTE]
-   > The values in the **Name** column should coincide with the names the certificates or secrets described in the previous chapter.
+   > The values in the **Name** column should coincide with the names the secrets described in the previous chapter.
 
-## Country/region-specific configuration for the Polish electronic invoice (PL) feature
+##  Electronic invoicing feature configuration
 
 Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
