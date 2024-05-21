@@ -131,6 +131,8 @@ Several out-of-box business events are supported for warehouse integrations. The
 | `WHSQualityOrderValidatedBusinessEvent` | Quality order validated |
 | `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` | Inbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
 | `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
+| `WHSEWInboundShipmentOrderUpdateChangedStatusBusinessEvent` | Inbound shipment order update is being processed and hence changed status (can be used to integrate Supply Chain Management with another WMS) |
+| `WHSEWOutboundShipmentOrderUpdateChangedStatusBusinessEvent` | Outbound shipment order update is being processed and hence changed status (can be used to integrate Supply Chain Management with another WMS) |
 
 At a minimum, we recommend that you use the following business events for integration with an external ERP system:
 
