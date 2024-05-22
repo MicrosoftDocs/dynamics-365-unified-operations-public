@@ -16,6 +16,7 @@ ms.reviewer: kamaybac
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This FAQ provides answers to frequently asked questions about the *Suggested questions within Copilot* AI feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 

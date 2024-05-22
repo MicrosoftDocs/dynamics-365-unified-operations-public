@@ -1,13 +1,13 @@
 ---
 title: Register fixed assets acquisitions (Russia)
-description: This article walks you through registering fixed assets acquisitions for Microsoft Dynamics 365 Finance in Russia.
+description: Learn about registering fixed assets acquisitions for Microsoft Dynamics 365 Finance in Russia, including a step-by-step process.
 author: AdamTrukawka
-ms.date: 10/12/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/12/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

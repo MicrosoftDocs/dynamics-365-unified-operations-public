@@ -1,16 +1,16 @@
 ---
 title: Tax Calculation overview
-description: This article explains the overall scope and features of the Tax Calculation capability.
+description: Learn about the overall scope and features of the Tax Calculation capability, including outlines on versions, data flows, and supported transactions.
 author: EricWangChen
-ms.date: 02/09/2024
-ms.topic: overview
-audience: Application user
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: wangchen
+ms.topic: overview
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-04-01
-ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Tax Calculation overview

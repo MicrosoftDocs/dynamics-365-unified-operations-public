@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Awareness between ledger settlement parameter before the year-end close
-description: This article explains how to use the **Enable advanced awareness options** parameter before the General ledger year-end close process is run.
+description: Learn how to use the **Enable advanced awareness options** parameter before the General ledger year-end close process is run.
 author: moaamer
-ms.date: 04/16/2024
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom:
-# ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 04/16/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
 # Awareness between ledger settlement parameter before year-end close

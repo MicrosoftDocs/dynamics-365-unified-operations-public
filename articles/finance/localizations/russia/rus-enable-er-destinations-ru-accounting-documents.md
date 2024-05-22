@@ -1,13 +1,13 @@
 ---
 title: Enable Electronic reporting (ER) destinations to store Russian accounting documents
-description: This article explains how to configure Electronic reporting (ER) destinations for post-processing Russian accounting documents that are generated in Microsoft Excel and Word.
+description: Learn how to configure Electronic reporting (ER) destinations for post-processing Russian accounting documents that are generated in Microsoft Excel and Word.
 author: AdamTrukawka
-ms.date: 02/02/2022
-ms.topic: overview
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: overview
+ms.date: 02/02/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: 10.0.25
 ---

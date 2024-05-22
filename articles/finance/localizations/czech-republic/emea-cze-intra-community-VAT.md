@@ -1,13 +1,13 @@
 ---
 title: Intra-community VAT
-description: This article provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic.
+description: Learn about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic, including a process on setting up system to compile VAT.
 author: AdamTrukawka
-ms.date: 07/23/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Czech Republic
 ms.author: atrukawk
+ms.topic: article
+ms.date: 07/23/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Czech Republic
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 
 ---

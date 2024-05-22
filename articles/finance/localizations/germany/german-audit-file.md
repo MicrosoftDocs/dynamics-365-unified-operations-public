@@ -1,26 +1,17 @@
 --- 
-# required metadata 
- 
 title: Generate German audit file
-description: This procedure walks you through generating a German audit file. 
+description: Learn about how to generate a German audit file with a step-by-step process using the DEMF demo company with Germany as the region of legal entity primary address.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form:  
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Germany
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User 
+ms.search.region: Germany
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: Version 7.0.0
-
 ---
 
 # Generate German audit file

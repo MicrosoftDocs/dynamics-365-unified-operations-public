@@ -1,13 +1,13 @@
 ---
 title: German Intrastat
-description: This article contains information about Intrastat declaration in Germany.
+description: Learn about Intrastat declaration in Germany, including a table that shows the fields that are included in the German Intrastat declaration.
 author: AdamTrukawka
-ms.date: 09/09/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/09/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

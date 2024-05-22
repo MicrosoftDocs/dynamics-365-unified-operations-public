@@ -50,10 +50,7 @@ The following illustration shows the components of the abandoned cart connector 
 
 ## Obtain the code sample
 
-The abandoned cart connector sample app is included in the Retail SDK as of version 10.0.16. The code can be found under **\\RetailSDK\\Code\\SampleExtensions\\RetailServer\\Extensions.AbandonedCartSample**. For more information about the Retail SDK and where to obtain it, see [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md).
-
-> [!NOTE]
-> Although the sample code was first made available in version 10.0.16 builds, it's compatible with version 10.0.13 and later builds of Retail Server.
+The abandoned cart connector sample app is included in the [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions). The code can be found in project [AbandonedCartSample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.50/src/Extensions.AbandonedCartSample).
 
 ## Prerequisites and dependencies
 

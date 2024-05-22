@@ -4,7 +4,7 @@ description: Learn about the key terms that are used in Cost accounting, includi
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 08/31/2017
+ms.date: 05/15/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -13,6 +13,7 @@ ms.search.validFrom: 2016-11-30
 ms.search.form: CAMCostAccountingLedger
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
+ms.custom: evergreen
 ---
 
 # Cost accounting terminology

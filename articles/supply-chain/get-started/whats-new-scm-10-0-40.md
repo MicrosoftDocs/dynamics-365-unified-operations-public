@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.40 (July 2024)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.40. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,18 +12,15 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.40 (July 2024)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.40. This version has a build number of 10.0.1935 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.40. This version has a build number of 10.0.1935 and is available on the following schedule:
 
 - **Preview of release:** April 2024
-- **General availability of release (self-update):** June 2024
-- **General availability of release (auto-update):** July 2024
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+- **General availability of release (self-update):** May 2024
+- **General availability of release (auto-update):** June 2024
 
 ## Features included in this release
 
@@ -37,10 +34,10 @@ The following table lists the features that are included in this release. We mig
 | Inventory and logistics | [Query and manage inventory without site or warehouse info](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/query-post-reserve-inventory-without-specifying-site-or-warehouse) | [Data partition rule](../inventory/inventory-visibility-power-platform.md#data-partition) | Enabled by default |
 | Manufacturing and asset management | [Track and trace serial and batch numbers for manufacturing](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/track-trace-serial-batch-numbers-manufacturing) | [Register and track batch/serial numbers for finished products and their components (preview)](../production-control/tracked-components.md) | Feature management:<br>*Tracked components* |
 | Planning | Rolling forecasts for demand planning | [Rolling forecasts](../demand-planning/rolling-forecasts.md) | Enabled by default |
-| Warehouse Management | Complete mixed license plates from a mobile device | [Set up a mobile device menu item for completing mixed license plates (preview)](../warehousing/mobile-device-complete-mixed-lp-menu.md) | Enabled by default |
+| Warehouse Management | Complete mixed license plates from a mobile device | [Set up a mobile device menu item for completing mixed license plates](../warehousing/mobile-device-complete-mixed-lp-menu.md) | Enabled by default |
 | Warehouse Management | [Inspect and process returned items more efficiently](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/inspect-process-returned-items-more-efficiently) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default |
 | Warehouse Management | Monitor the status of failed shipment lines | [Automatic rewaving of nonallocated shipment lines](../warehousing/auto-rewave-shipments.md) | Enabled by default |
-| Warehouse Management | Operate external shared warehouse with Warehouse management only mode | [Warehouse management only mode with external shared warehouses (preview)](../warehousing/wms-only-mode-external-shared-warehouse.md) | Feature management:<br>*Warehouse management only mode*  |
+| Warehouse Management | Operate external shared warehouse with Warehouse management only mode | [Warehouse management only mode with external shared warehouses](../warehousing/wms-only-mode-external-shared-warehouse.md) | Feature management:<br>*Warehouse management only mode*  |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 
@@ -72,7 +69,7 @@ Some of these features aren't visible on your system until you turn them on in [
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of Finance and Operations apps (July 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-40.md).<!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of Finance and Operations apps (June 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
 
 ### Bug fixes
 

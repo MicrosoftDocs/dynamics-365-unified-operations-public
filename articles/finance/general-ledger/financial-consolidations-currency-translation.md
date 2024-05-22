@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Financial consolidations and currency translation overview
-description: This article describes financial consolidations and currency translation in General ledger.
+description: Learn about financial consolidations and currency translation in General ledger, including outlines on audience, approach, consolidations, and benefits.
 author: jinniew
-ms.date: 10/07/2021
-ms.topic: overview
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: overview
+ms.date: 10/07/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-5-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Financial consolidations and currency translation overview

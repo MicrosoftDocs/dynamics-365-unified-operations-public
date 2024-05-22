@@ -1,17 +1,17 @@
 ---
 title: Bill of materials comparison for China
-description: This article provides information about BOM comparison for China.
+description: A product might be accompanied by several versions of its bill of materials in its lifecycle, because many products are redesigned to meet changing requirements. 
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: China (PRC)
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
+ms.search.form: InventBOMComparison_CN
 ms.dyn365.ops.version: Version 1611
 ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3
-ms.search.form: InventBOMComparison_CN
 ---
 
 # Bill of materials comparison for China

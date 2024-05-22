@@ -1,13 +1,13 @@
 ---
 title: Lithuanian Intrastat
-description: This article contains information about the Lithuanian Intrastat report.
+description: Learn about the Lithuanian Intrastat report, including a table that defines various field names and an outline on setting up Intrastat.
 author: AdamTrukawka
-ms.date: 05/19/2022
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 05/19/2022
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

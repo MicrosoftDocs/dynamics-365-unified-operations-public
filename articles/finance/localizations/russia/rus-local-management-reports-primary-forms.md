@@ -1,18 +1,17 @@
 ---
 title: Advance holders reports
-description: This article describes the Advance holder reports that are available for Russia.
+description: Learn about the Advance holder reports that are available for Russia, including an outline on Advance holder blaance reports and a table that defines fields.
 author: AdamTrukawka
-ms.date: 10/05/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
-ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.topic: article
+ms.date: 10/05/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
+ms.search.validFrom: 2018-10-31
 ms.search.form: 
+ms.dyn365.ops.version: 8.1
 ---
 
 # Advance holders reports

@@ -1,27 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create account structures
-description: This procedure walks through creating an account structure. 
+description: Learn about the process of creating account structures, including a step-by-step process using the demo data company USMF.
 author: aprilolson
-ms.date: 04/01/2024
-ms.topic: how-to 
-  
- 
-# optional metadata 
- 
-ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/01/2024
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create account structures
 
 [!include [banner](../../includes/banner.md)]

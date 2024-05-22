@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.29 (October 2022)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.29 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.29 preview release, distributed in October 2022.
 author: kfend
-ms.date: 07/29/2022
-ms.topic: article
-ms.custom: evergreen
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.date: 07/29/2022
+ms.custom: evergreen
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-08-01
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.29
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.29 (October 2022)

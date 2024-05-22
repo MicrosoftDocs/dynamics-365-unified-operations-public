@@ -1,16 +1,16 @@
 ---
 title: Tax invoice numbering for Indonesia (ID-00002)
-description: This article explains how to configure and use tax invoice numbering in Indonesia.
+description: Learn how to configure and use tax invoice numbering in Indonesia, including prerequisites and an outline on setting up tax invoice numbering.
 author: AdamTrukawka
-ms.date: 06/14/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: 
-ms.search.region: Indonesia
 ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.23
+ms.topic: article
+ms.date: 06/14/2022
+ms.reviewer: 
+audience: Application User
+ms.search.region: Indonesia
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.23
 ---
 
 # Tax invoice numbering for Indonesia 

@@ -7,6 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
+ms.date: 5/20/2024
 ---
 
 # Business performance analytics FAQ
@@ -14,11 +15,7 @@ audience: Application User
 This article answers frequently asked questions about Business performance analytics.
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of Business performance analytics, contact <bpaquestions@service.microsoft.com>.
-
-### How do I sign up for the public preview of Business performance analytics?
-
-We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback. To sign up for public preview, follow the steps listed [here](install-bpa.md).
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. Participate in our public preview here: <https://aka.ms/InstallBPA>.
 
 ### What's the estimated time that's required to set up Business performance analytics?
 

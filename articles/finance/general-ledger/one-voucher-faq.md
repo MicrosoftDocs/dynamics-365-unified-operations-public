@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: One voucher FAQ
-description: This article answers frequently asked questions about the One voucher functionality. One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
+description: Access answers frequently asked questions about the One voucher functionality, including questions about when vouchers are deprecated.
 author: kweekley
-ms.date: 11/05/2018
-ms.topic: article
-# optional metadata
-
-ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 11/05/2018
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-03-16
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 ms.dyn365.ops.version: 8.0.2
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # One voucher FAQ

@@ -2,15 +2,14 @@
 title: Manage deductions using the deduction workbench
 description: This article describes how to use the deduction workbench to process customer payments that include deductions.
 author: sherry-zheng
-ms.date: 08/02/2021
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: chuzheng
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.reviewer: kamaybac
+ms.search.form: TAMDeduction
+ms.topic: how-to
+ms.date: 05/15/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Manage deductions using the deduction workbench
@@ -22,7 +21,7 @@ This article describes how to use the deduction workbench to process customer pa
 A customer who is owed a rebate can decide not to wait for a rebate payout. Instead, the customer can send a payment that includes a deduction for the amount of the rebate. To handle this type of transaction, you can use the deduction workbench to match deductions to open credit transactions, split deductions, deny deductions, and write off deductions.
 
 > [!NOTE]
-> The deduction workbench has been part of the sales and marketing functionality in Microsoft Dynamics 365 Supply Chain Management for a long time. However, it has now been enhanced so that it also works with the newer **Rebate management** module. This article describes how to use both older features and Rebate management features of the deduction workbench. However, if you haven't [turned on the **Rebate management** module for your system](rebate-management-enable.md), some of the functionality that is described here won't be available to you.
+> The deduction workbench has been part of the sales and marketing functionality in Microsoft Dynamics 365 Supply Chain Management for a long time. However, it has now been enhanced so that it also works with the newer **Rebate management** module. This article describes how to use both older features and Rebate management features of the deduction workbench.
 
 ## Prerequisites
 
