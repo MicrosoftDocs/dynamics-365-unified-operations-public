@@ -3,8 +3,8 @@
 
 title: Human Resources home page
 description: Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas.
-author: twheeloc
-ms.date: 09/03/2022
+author: jcart
+ms.date: 05/22/2024
 ms.topic: article
 
 
