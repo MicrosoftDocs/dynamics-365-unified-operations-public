@@ -6,6 +6,8 @@ ms.author: sericks
 ms.topic: article
 ms.date: 10/27/2021
 ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
