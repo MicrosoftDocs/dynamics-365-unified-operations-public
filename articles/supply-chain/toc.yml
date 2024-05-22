@@ -3521,7 +3521,7 @@
           href: transportation/transportation-management-discount.md
         - name: LTL classes
           href: transportation/ltl-class.md
-        - name: NMFC codes
+        - name: Work with NMFC codes in Dynamics 365 Supply Chain Management
           href: transportation/nmfc-codes.md
         - name: Schedule appointments
           items:
