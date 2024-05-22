@@ -1,16 +1,16 @@
 ---
 title: Update the carry-forward budget after reductions in purchase orders and invoices
-description: This article describes how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
+description: Learn how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
 author: TaylorVH
-ms.date: 6/13/2023
+ms.author: twheeloc
 ms.topic: article
-audience: Application User
+ms.date: 6/13/2023
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: TaylorVH
 ms.search.validFrom: 2022-02-01
-ms.dyn365.ops.version: Version 1611
 ms.search.form: LedgerFund
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Update the carry-forward budget after reductions in purchase orders and invoices
