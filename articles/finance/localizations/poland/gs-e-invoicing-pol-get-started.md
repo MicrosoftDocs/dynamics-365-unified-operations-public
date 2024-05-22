@@ -74,6 +74,10 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 10. Repeat steps 5 through 9 for the **Get invoice status from KSeF** action.
 11. Select **Save**, and close the page.
 12. Repeat steps 4 through 11 for the **Submit project invoice derived** and **Submit advance invoice derived** feature setups if required.
+13. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+
+   > [!NOTE]
+   > Before the completion and deployment of the feature check if the configuration of the import of [incoming electronic invoices](#Import) is required.
 
 ## Configure electronic document parameters
 
@@ -176,7 +180,7 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Receive incoming electronic invoices
 
-Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
+<a id="Import"></a>Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
 
 1. Go to **Globalization Studio** \> **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
 2. On the **Setups** tab, in the grid, select **Import vendor invoice derived**, and then select **Edit**.
@@ -196,7 +200,8 @@ Complete the following additional configuration steps for the same version of th
 
 ![Screenshot of the output file configuration in the feature setup.](e-inv-pol-import-outputfile.jpg)
 
-10. Select **Save**, and close the page. 
+10. Select **Save**, and close the page.
+11. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Finance configuration
 
