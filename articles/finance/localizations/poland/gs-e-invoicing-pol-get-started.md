@@ -189,20 +189,21 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ![Screenshot of the import channel configuration in the feature setup.](e-inv-pol-import-channel.jpg)
 
-4. Select **Public key** parameter, and then, in the **Value** field, select the name of the [Public key](#PK) that you previously created.
-5. Select **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
-6. Select **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment depending on implementation stage: *Test*, *Demo* or *Prod*.
-7. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSEF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
-8. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
+4. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [Client ID](#ClID) that you previously created.
+5. Select **Public key** parameter, and then, in the **Value** field, select the name of the [Public key](#PK) that you previously created.
+6. Select **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
+7. Select **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment depending on implementation stage: *Test*, *Demo* or *Prod*.
+8. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSEF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
+9. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
 
 ![Screenshot of the import applicability rules configuration in the feature setup.](e-inv-pol-import-apprules.jpg)
 
-9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
+10. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
 
 ![Screenshot of the output file configuration in the feature setup.](e-inv-pol-import-outputfile.jpg)
 
-10. Select **Save**, and close the page.
-11. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+11. Select **Save**, and close the page.
+12. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Finance configuration
 
