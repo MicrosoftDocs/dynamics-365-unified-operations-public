@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Define GSTINs and reference number sequences
-description: This article explains how to define Goods and Services Tax Identification Numbers (GSTINs) and reference number sequences for legal entity, warehouse, vendor, and customer masters. This task is part of the master data setup that is required to make the India localization solution for GST available.
+description: Learn how to define Goods and Services Tax Identification Numbers and reference number sequences for legal entity, warehouse, vendor, and customer masters.
 author: EricWangChen
-ms.date: 06/04/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 06/04/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Define GSTINs and reference number sequences

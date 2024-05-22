@@ -1,12 +1,12 @@
 ---
 title: Sales point prefixes for Latin America
-description: This article provides information about the sales point prefix configuration for Latin America.
+description: Learn about the sales point prefix configuration for Latin America, including prerequisites and an outline on setting up sales point prefixes.
 author: Fhernandez0088
-ms.date: 01/31/2023
-ms.topic: Article
-ms.reviewer: johnmichalak
 ms.author: v-federicohe 
+ms.topic: article
+ms.date: 01/31/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Sales point prefixes for Latin America

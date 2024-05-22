@@ -1,13 +1,13 @@
 ---
 title: Correspondence of accounts
-description: This article provides information about correspondence of accounts in Russia.
+description: Learn about correspondence of accounts in Russia, including a table that outlines how types of correspondence are affected by correspondence.
 author: AdamTrukawka
-ms.date: 04/03/2019
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/03/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

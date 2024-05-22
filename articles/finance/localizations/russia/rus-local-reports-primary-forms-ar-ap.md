@@ -1,13 +1,13 @@
 ---
 title: Local reports and primary forms in Accounts receivable and Accounts payable
-description: This article explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365.
+description: Learn how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365.
 author: AdamTrukawka
-ms.date: 01/21/2022
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 01/21/2022
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 
