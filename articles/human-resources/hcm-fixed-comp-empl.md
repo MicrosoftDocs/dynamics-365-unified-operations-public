@@ -41,7 +41,7 @@ This entity provides information about the employee fixed compensation details.
 ## Properties
 
 | Physical name| Property |Type | Use |
-| --- | --- |
+|---|---|---|---|
 | mserp_Action|Action|String | Read-only|
 | mserp_Currency|Currency|String | Read-only|
 | mserp_Dimension|Dimension|Int64 | Read-only|
@@ -67,7 +67,7 @@ This entity provides information about the employee fixed compensation details.
 | mserp_RefPointSetupId|RefPointSetupId|String | Read-only|
 
 
-## Example query for HCM Fixed compensation employee entity**
+## Example query for HCM Fixed compensation employee entity
 
 Entity Name: mserp_payintv1hcmcompfixedemplentities
 
