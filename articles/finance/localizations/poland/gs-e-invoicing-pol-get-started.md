@@ -172,7 +172,7 @@ Follow these steps to enter additional invoice data.
 
 ## Issue electronic invoices
 
-After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate and submit electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
 You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information about the submission log, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
@@ -275,14 +275,13 @@ If no purchase order is found, the system raises a warning but continues to impo
 
 If no related **Non-stock** products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as **DEFAULT\_ITEM**, and the product must belong to an item model group where the **Stocked product** checkbox is cleared in the inventory policy. If no default item is configured in the system, the import process fails, and a related error message is shown.
 
-To view the receipt logs for electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
+To view the receipt logs for electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**. 
+For more information about how to receive electronic invoices, see [Receive electronic documents](../global/e-invoicing-electronic-documents-receiving-log.md).
 
-To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
+To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**. 
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](../e-invoicing-get-started.md)
+- [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
