@@ -172,29 +172,29 @@ After you complete all the required configuration steps, you can generate and su
 
 You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information about the submission log, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-e-inv-pol-submission-log.jpg
+![Screenshot of the submission log.](e-inv-pol-submission-log.jpg)
 
 ## Receive incoming electronic invoices
 
 Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
 
-1. In RCS, on the **Globalization features** tile, on the **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
-2. On the **Setups** tab, in the grid, select **Import vendor invoice**, and then select **Edit**.
+1. Go to **Globalization Studio** \> **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
+2. On the **Setups** tab, in the grid, select **Import vendor invoice derived**, and then select **Edit**.
 3. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
 
-e-inv-pol-import-channel.jpg
+![Screenshot of the import channel configuration in the feature setup.](e-inv-pol-import-channel.jpg)
 
-4. Select the **Service URI** parameter, and make sure that a valid URI is configured.
-5. Select the **Client ID** parameter, and then select the name of the secret that contains the client identifier.
-6. Select the **Certificate name** parameter, and then select the name of the digital certificate that you created.
+4. Select **Public key** parameter, and then, in the **Value** field, select the name of the [Public key](#PK) that you previously created.
+5. Select **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
+6. Select **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment depending on implementation stage: *Test*, *Demo* or *Prod*.
 7. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSEF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
 8. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
 
-e-inv-pol-import-apprules.jpg
+![Screenshot of the import applicability rules configuration in the feature setup.](e-inv-pol-import-apprules.jpg)
 
 9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
 
-e-inv-pol-import-outputfile.jpg
+![Screenshot of the output file configuration in the feature setup.](e-inv-pol-import-outputfile.jpg)
 
 10. Select **Save**, and close the page. 
 
@@ -209,16 +209,12 @@ Some additional parameters must be configured directly in Finance.
 
 2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
 3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-
-    > [!NOTE]
-    > The derived configuration must differ from the [configuration](#ExportChannel) that's used for the invoice *submission* setup. 
-
 4. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
 5. Open the **DataChannel** definition for editing in the designer.
 6. In the **Data sources** tree, expand the **$Context\_Channel** container.
 7. In the **Value** field, select **Edit**, and then enter the data channel name.
 
-e-inv-pol-import-config.jpg
+![Screenshot of the output channel configuration in Electronic reporting.](e-inv-pol-import-config.jpg)
 
 8. Save your changes, and complete the derived configuration.
 9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -227,7 +223,7 @@ e-inv-pol-import-config.jpg
 12. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
 13. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 
-e-inv-pol-import-output.jpg
+![Screenshot of the import channel configuration in Electronic document parameters.](e-inv-pol-import-output.jpg)
 
 14. Select **Save**, and close the page.
 
