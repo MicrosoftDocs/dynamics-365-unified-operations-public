@@ -185,7 +185,7 @@ You can inquire about the results of a submission by going to **Organization adm
 
 1. Go to **Globalization Studio** \> **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
 2. On the **Setups** tab, in the grid, select **Import vendor invoice derived**, and then select **Edit**.
-3. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
+3. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the [name of the data channel](#ImpChn). Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
 
 ![Screenshot of the import channel configuration in the feature setup.](e-inv-pol-import-channel.jpg)
 
@@ -218,7 +218,7 @@ Some additional parameters must be configured directly in Finance.
 4. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
 5. Open the **DataChannel** definition for editing in the designer.
 6. In the **Data sources** tree, expand the **$Context\_Channel** container.
-7. In the **Value** field, select **Edit**, and then enter the data channel name.
+7. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the data channel name.
 
 ![Screenshot of the output channel configuration in Electronic reporting.](e-inv-pol-import-config.jpg)
 
