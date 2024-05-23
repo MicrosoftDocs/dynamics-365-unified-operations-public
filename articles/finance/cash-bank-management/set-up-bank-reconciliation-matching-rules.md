@@ -1,11 +1,11 @@
 ---
 title: Set up bank reconciliation matching rules
 description: Learn how to set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process.
-author: kfend
-ms.author: kfend
+author: EricWangChen
+ms.author: wangchen
 ms.topic: article
-ms.date: 11/22/2022
-ms.reviewer: kfend
+ms.date: 05/22/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
