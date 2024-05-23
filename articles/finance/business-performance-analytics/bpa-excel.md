@@ -5,10 +5,8 @@ description: This article provides information about the business performance an
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 1/11/2024
+ms.date: 05/23/2024
 ms.topic: welcome
-ms.prod: 
-ms.technology:
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
