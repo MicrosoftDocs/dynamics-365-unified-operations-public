@@ -28,10 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
+This article describes the Employee detail entity (payintv1employmentdetailentity) for Dynamics 365 Human Resources.
 
-This article describes the Job type entity (payintv1employmentdetailentity) for Dynamics 365 Human Resources.
-
-Physical name: mserp_payintv1employmentdetailentity
+Physical name: mserp\_payintv1employmentdetailentity
 
 ## Description
 
@@ -41,60 +40,59 @@ This entity provides information about the employee details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| mserp_AdjustedWorkerStartDate AdjustedWorkerStartDate|Date Time Offset | Read-only |
-| mserp_EmployerQuantity EmployerNoticeAmount|Int | Read-only |
-| mserp_EmployerUnit|EmployerUnit|Enum | Read-only |
-| mserp_LastDateWorked LastDateWorked|Date Time Offset | Read-only |
-| mserp_TerminationDate|TransitionDate|Date Time Offset | Read-only |
-| mserp_Effective|Effective|Date Time Offset | Read-only |
-| mserp_Expiration|Expiration|Date Time Offset | Read-only |
-| mserp_WorkerNoticeAmount WorkerNoticeAmount|Int | Read-only |
-| mserp_WorkerStartDate WorkerStartDate|Date Time Offset | Read-only |
-| mserp_WorkerUnitOfNotice WorkerUnitOfNotice|Enum | Read-only |
-| mserp_Status|Status|Enum | Read-only |
-| mserp_EmploymentStartDate EmploymentStartDate|Date Time Offset | Read-only |
-| mserp_EmploymentEndDate EmploymentEndDate|Date Time Offset | Read-only |
-| mserp_Company|Company|String | Read-only |
-| mserp_PersonnelNumber PersonnelNumber|String | Read-only |
-| mserp_WorkerType|WorkerType|Enum | Read-only |
-| mserp_BenifitsEmploymentType BenefitsEmploymentType|String | Read-only |
-| mserp_EmploymentCategory EmploymentCategory|String | Read-only |
-| mserp_ReasonCodeId|ReasonCodeId|Int64 | Read-only |
+| mserp\_AdjustedWorkerStartDate | AdjustedWorkerStartDate | Date Time Offset | Read-only |
+| mserp\_EmployerQuantity | EmployerNoticeAmount | Int | Read-only |
+| mserp\_EmployerUnit | EmployerUnit | Enum | Read-only |
+| mserp\_LastDateWorked | LastDateWorked | Date Time Offset | Read-only |
+| mserp\_TerminationDate | TransitionDate | Date Time Offset | Read-only |
+| mserp\_Effective | Effective | Date Time Offset | Read-only |
+| mserp\_Expiration | Expiration | Date Time Offset | Read-only |
+| mserp\_WorkerNoticeAmount | WorkerNoticeAmount | Int | Read-only |
+| mserp\_WorkerStartDate | WorkerStartDate | Date Time Offset | Read-only |
+| mserp\_WorkerUnitOfNotice | WorkerUnitOfNotice | Enum | Read-only |
+| mserp\_Status | Status | Enum | Read-only |
+| mserp\_EmploymentStartDate | EmploymentStartDate | Date Time Offset | Read-only |
+| mserp\_EmploymentEndDate | EmploymentEndDate | Date Time Offset | Read-only |
+| mserp\_Company | Company | String | Read-only |
+| mserp\_PersonnelNumber | PersonnelNumber | String | Read-only |
+| mserp\_WorkerType | WorkerType | Enum | Read-only |
+| mserp\_BenifitsEmploymentType | BenefitsEmploymentType | String | Read-only |
+| mserp\_EmploymentCategory | EmploymentCategory | String | Read-only |
+| mserp\_ReasonCodeId | ReasonCodeId | Int64 | Read-only |
 
+## Example query for the Employee detail entity
 
-## Example query for employment detail entity
-
-Entity Name: mserp_payintv1employmentdetailentity
+Entity name: mserp\_payintv1employmentdetailentity
 
 **Request**
 
-```HTTPCopy
-GET \[Organizaton URI\]/api/data/v9.1/payintv1employmentdetailentity
+```HTTP
+GET [Organization URI]/api/data/v9.1/payintv1employmentdetailentity
 ```
 
 **Response**
 
 ```JSON
 {
-"mserp_employerquantity": 0,
-"mserp_employerunit": 200000000,
-"mserp_effective": "2012-09-11T20:30:58Z",
-"mserp_expiration": "2154-12-31T23:59:59Z",
-"mserp_workernoticeamount": 0,
-"mserp_workerstartdate": "2010-02-01T08:00:00Z",
-"mserp_workerunitofnotice": 200000000,
-"mserp_status": 200000000,
-"mserp_employmentstartdate": "2006-02-01T08:00:00Z",
-"mserp_employmentenddate": "2154-12-31T23:59:59Z",
-"mserp_company": "USMF",
-"mserp_personnelnumber": "000001",
-"mserp_workertype": 200000000,
-"mserp_benifitsemploymenttype": "",
-"mserp_employmentcategory": "",
-"mserp_reasoncodeid": 0,
-"mserp_reasoncodeid_bigint": 0,
-"mserp_adjustedworkerstartdate": null,
-"mserp_terminationdate": null,
-"mserp_lastdateworked": null,
+    "mserp_employerquantity": 0,
+    "mserp_employerunit": 200000000,
+    "mserp_effective": "2012-09-11T20:30:58Z",
+    "mserp_expiration": "2154-12-31T23:59:59Z",
+    "mserp_workernoticeamount": 0,
+    "mserp_workerstartdate": "2010-02-01T08:00:00Z",
+    "mserp_workerunitofnotice": 200000000,
+    "mserp_status": 200000000,
+    "mserp_employmentstartdate": "2006-02-01T08:00:00Z",
+    "mserp_employmentenddate": "2154-12-31T23:59:59Z",
+    "mserp_company": "USMF",
+    "mserp_personnelnumber": "000001",
+    "mserp_workertype": 200000000,
+    "mserp_benifitsemploymenttype": "",
+    "mserp_employmentcategory": "",
+    "mserp_reasoncodeid": 0,
+    "mserp_reasoncodeid_bigint": 0,
+    "mserp_adjustedworkerstartdate": null,
+    "mserp_terminationdate": null,
+    "mserp_lastdateworked": null,
 }
 ```
