@@ -94,15 +94,15 @@ After you've completed this procedure, sales associates can open the customer de
 
 ## Integration of Customer Insights with Commerce
 
-Commerce clienteling feature can be further enhanced by integrating additional data from the the Dynamics 365 Customer Insights application into Commerce. The integration of Customer Insights with Commerce lets retailers select one or more measures that should be shown on the customer card in the client book. For example, retailers can use the data in Customer Insights to calculate the "churn probability" for a customer and define the "next best action." These values must be defined as measures in Customer Insights application. Once the integration of Customer Insights into Commerce is enabled, this data will be shown on the customer card in the Client Book and can provide crucial information to sales associates. For more information about Customer Insights, see the [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) documentation. For more information about measures, see [Measures](/dynamics365/ai/customer-insights/pm-measures).
+Commerce clienteling feature can be further enhanced by integrating additional data from the Dynamics 365 Customer Insights application into Commerce. The integration of Customer Insights with Commerce lets retailers select one or more measures that should be shown on the customer card in the client book. For example, retailers can use the data in Customer Insights to calculate the "churn probability" for a customer and define the "next best action." These values must be defined as measures in Customer Insights application. Once the integration of Customer Insights into Commerce is enabled, this data will be shown on the customer card in the Client Book and can provide crucial information to sales associates. For more information about Customer Insights, see the [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) documentation. For more information about measures, see [Measures](/dynamics365/ai/customer-insights/pm-measures).
 
 > [!NOTE]
-> The integration of Commerce data into Customer Insights application is much more complex and requires customized data transforms to be implemented 
+> The integration of Commerce data into Customer Insights application is much more complex and requires customized data transforms to be implemented.
 
 To turn on the integration of Customer Insights with Commerce, you must make sure that you have an active instance of Customer Insights in the tenant where Commerce is provisioned. You must also have a Microsoft Entra user account that has an Azure subscription.
 
 > [!IMPORTANT]
-Prior to integrating Customer Insights with Commerce, retailers should first fully configure Customer Insights [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) and configute measures in Customer Insights application, see [Measures](/dynamics365/ai/customer-insights/pm-measures)
+Prior to integrating Customer Insights with Commerce, retailers should first fully configure Customer Insights [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) and configure measures in Customer Insights application, see [Measures](/dynamics365/ai/customer-insights/pm-measures).
 
 Follow these steps to set up the integration of Customer insights with Commerce:
 
