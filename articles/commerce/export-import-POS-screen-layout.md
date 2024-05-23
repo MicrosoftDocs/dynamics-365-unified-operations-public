@@ -44,7 +44,8 @@ The following document describes the procedure to export and import POS screen l
 ### Adding related tables
 If additional filters are needed you can also add related tables . Example Add layout sizes to export only a particular size or sizes from selected list of layouts.
 To do this you would need to add Layout size in the entity through a table join.
-- Select **POS screen layout button grid zones** , **POS screen layout image zones** and **Retailtilllayoutconfigurationentity** one at a time.
+- Select **POS screen layout button grid zones** , **POS screen layout image zones** and 
+  **Retailtilllayoutconfigurationentity** one at a time.
 - Select **filter** on the row and select **joins** tab
 - Highlight the entity and select **+Add table join**
 - Select **Layout sizes (Name)**
@@ -52,12 +53,31 @@ To do this you would need to add Layout size in the entity through a table join.
 - Repeat this for the other 2 entities.
 - Go to each of the 3 entities , select **filter**
 - Then **+Add** and select from drop down **Layout sizes** on the table column.
-- Select **Name** on the field column and input the layout size in the criteria (Example **1536*864-Full**). This will only export this layout size.
+- Select **Name** on the field column and input the layout size in the criteria (Example **1536*864-Full**). This will 
+  only export this layout size.
 
   ### Export and download package
-  Once all of the entities are updated with right filters, you can select **export** from the top menu bar. This will initiate a batch job.
-  Once the batch job is complete, verify the status of all the entities which should be **successful**
-  Now select **download package** to download the xml package on to your machine. Verify the package contens from the download location.
+  Once all of the entities are updated with right filters, you can select **export** from the top menu bar. This will 
+  initiate a batch job.
+  Once the batch job is complete, verify the status of all the entities which should be **successful**.
+  Now select **download package** to download the xml package on to your machine. Verify the package contens from the 
+  download location.
+
+  ## Import screen layout data in a new environment.
+  To import screen layout data from the export, follow the steps below.
+ - In the new enviroment head quarters , go to **Data management** and select **Import**.
+ - Provide a group name **Import POS layouts** and select **Add file** under selected entities.
+ - Select **Package** on **source data format**.
+ - Choose the package and select **upload and add** and **close**.
+ - Once the entities are loaded select **entity sequence**.
+ - Select **auto sequence** to sequence the entities considering the dependencies and select **OK**.
+ - Select **Import** from the top menu bar.
+ - Verify the **Execution summary** and ensure that the status for all entities are **succeeded**
+ - Verify the screen layouts, button grids and visual profiles are now updated.
+ - Run scheduler jobs after assigning the layouts to the store, register or user level.
+ - Login to point of sale and verify the layouts.
+
+    
 
   
 
