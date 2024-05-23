@@ -20,7 +20,7 @@ ms.assetid: ae071f04-f038-4b17-812d-0a241ed15521
 
 Advanced bank reconciliation allows you to import electronic bank statements and automatically reconcile with bank transactions in Microsoft Dynamics 365 Finance. This article explains the set up processes for reconciliation.  
 
-There are a number of pieces that must be set up before using the advanced bank reconciliation functionality. For more information about setting up bank statement import, see [Set up the advanced bank reconciliation import using Electronic reporting](/accounts-payable/import-bai2-er.md). Requirements for set up of the reconciliation process are detailed below.
+There are a number of pieces that must be set up before using the advanced bank reconciliation functionality. For more information about setting up bank statement import, see [Set up the advanced bank reconciliation import using Electronic reporting](../accounts-payable/import-bai2-er.md). Requirements for set up of the reconciliation process are detailed below.
 
 ## Transaction codes
 Transaction codes can be used as part of the bank reconciliation matching rules. Transaction codes help to match only the same types of transactions between Finance and your bank statement. In order to do this type of matching, you must first define transaction types used for bank transactions from Finance, then map those types to statement transaction codes used by your bank. Transaction types for bank transactions are defined on the **Bank transaction type** page. This is also where you define the main account to be used for postings associated with that transaction type. 
