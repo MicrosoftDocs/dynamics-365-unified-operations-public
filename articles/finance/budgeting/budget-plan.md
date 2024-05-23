@@ -1,11 +1,11 @@
 ---
 title: Budget planning
 description: Access an illustration of a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration. 
-author: panolte
-ms.author: sigitac
+author: jchrist
+ms.author: jchrist
 ms.topic: article
 ms.date: 06/25/2018
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
