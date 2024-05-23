@@ -4,7 +4,7 @@ description: Learn about the budget control feature and how to configure budget 
 author: jchrist  
 ms.author: jchrist
 ms.topic: overview
-ms.date: 03/28/2022
+ms.date: 05/23/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.custom: evergreen
