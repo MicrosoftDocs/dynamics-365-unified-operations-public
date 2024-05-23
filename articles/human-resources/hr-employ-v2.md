@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Job type entity (payintv1hcmemploymentv2entities) for Dynamics 365 Human Resources.
+This article describes the HCM employment V2 entity (payintv1hcmemploymentv2entities) for Dynamics 365 Human Resources.
 
-Physical name: mserp_payintv1hcmemploymentv2entities
+Physical name: mserp\_payintv1hcmemploymentv2entities
 
 ## Description
 
@@ -40,41 +40,40 @@ This entity provides information about the employment details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| mserp_Dimension|Dimension|Int64 | Read-only |
-| mserp_DimensionDisplayValue DimensionDisplayValue|String | Read-only |
-| mserp_RegulatoryEstablishment RegulatoryEstablishment|Int64 | Read-only |
-| mserp_RegulatoryEstablishmentId RegulatoryEstablishmentId|String | Read-only |
-| mserp_WorkerType|WorkerType|Enum | Read-only |
-| mserp_LegalEntity|LegalEntity|Int64 | Read-only |
-| mserp_LegalEntityId|LegalEntityId|String | Read-only |
-| mserp_EmploymentStartDate EmploymentStartDate|Date time offset | Read-only |
-| mserp_EmploymentEndDate EmploymentEndDate|Date time offset | Read-only |
-| mserp_Worker|Worker|Int64 | Read-only |
-| mserp_PersonnelNumber PersonnelNumber|String | Read-only |
-| mserp_EmploymentId|EmploymentId|String | Read-only |
+| mserp\_Dimension | Dimension | Int64 | Read-only |
+| mserp\_DimensionDisplayValue | DimensionDisplayValue | String | Read-only |
+| mserp\_RegulatoryEstablishment | RegulatoryEstablishment | Int64 | Read-only |
+| mserp\_RegulatoryEstablishmentId | RegulatoryEstablishmentId | String | Read-only |
+| mserp\_WorkerType | WorkerType | Enum | Read-only |
+| mserp\_LegalEntity | LegalEntity | Int64 | Read-only |
+| mserp\_LegalEntityId | LegalEntityId | String | Read-only |
+| mserp\_EmploymentStartDate | EmploymentStartDate | Date time offset | Read-only |
+| mserp\_EmploymentEndDate | EmploymentEndDate | Date time offset | Read-only |
+| mserp\_Worker | Worker | Int64 | Read-only |
+| mserp\_PersonnelNumber | PersonnelNumber | String | Read-only |
+| mserp\_EmploymentId | EmploymentId | String | Read-only |
 
-## Example query for HCM position detail entity
+## Example query for the HCM employment V2 entity
 
-Entity Name: mserp_payintv1hcmemploymentv2entities
+Entity name: mserp\_payintv1hcmemploymentv2entities
 
 **Request**
 
-```HTTPCopy
-GET \[Organizaton URI\]/api/data/v9.1/payintv1hcmemploymentv2entities
+```HTTP
+GET [Organization URI]/api/data/v9.1/payintv1hcmemploymentv2entities
 ```
 
 **Response**
 
-```JSONCopy
+```JSON
 {
-"mserp_dimensiondisplayvalue": "--026",
-"mserp_regulatoryestablishmentid": "Seattle",
-"mserp_workertype": 200000000,
-"mserp_legalentityid": "USMF",
-"mserp_employmentstartdate": "2006-02-01T08:00:00Z",
-"mserp_employmentenddate": "2154-12-31T23:59:59Z",
-"mserp_personnelnumber": "000001",
-"mserp_employmentid": "000006201",
+    "mserp_dimensiondisplayvalue": "--026",
+    "mserp_regulatoryestablishmentid": "Seattle",
+    "mserp_workertype": 200000000,
+    "mserp_legalentityid": "USMF",
+    "mserp_employmentstartdate": "2006-02-01T08:00:00Z",
+    "mserp_employmentenddate": "2154-12-31T23:59:59Z",
+    "mserp_personnelnumber": "000001",
+    "mserp_employmentid": "000006201",
 }
 ```
-
