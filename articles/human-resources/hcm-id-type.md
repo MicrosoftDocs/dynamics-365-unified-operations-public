@@ -28,46 +28,44 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Job type entity (payintv1hcmidentificationtypeentities) for Dynamics 365 Human Resources.
+This article describes the HCM identification type entity (payintv1hcmidentificationtypeentities) for Dynamics 365 Human Resources.
 
-Physical name: mserp_payintv1hcmidentificationtypeentities
+Physical name: mserp\_payintv1hcmidentificationtypeentities
 
 ## Description
 
 This entity provides information about the identification type details.
 
-**Properties**
+## Properties
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| mserp_Description|Description|String | Read-only |
-| mserp_IdentificationTypeId IdentificationTypeId|String | Read-only |
-| mserp_CheckDuplicates CheckDuplicates|Enum | Read-only |
-| mserp_AllowedValues|AllowedValues|Enum | Read-only |
-| mserp_IdentificationNumberFormat IdentificationNumberFormat|String | Read-only |
-| mserp_FixedLength|FixedLength|Int | Read-only |
+| mserp\_Description | Description | String | Read-only |
+| mserp\_IdentificationTypeId | IdentificationTypeId | String | Read-only |
+| mserp\_CheckDuplicates | CheckDuplicates | Enum | Read-only |
+| mserp\_AllowedValues | AllowedValues | Enum | Read-only |
+| mserp\_IdentificationNumberFormat | IdentificationNumberFormat | String | Read-only |
+| mserp\_FixedLength | FixedLength | Int | Read-only |
 
+## Example query for the HCM identification type entity
 
-## Example query for HCM identification type entity
-
-Entity Name: mserp_payintv1hcmidentificationtypeentities
+Entity name: mserp\_payintv1hcmidentificationtypeentities
 
 **Request**
 
-```HTTPCopy
-GET \[Organizaton URI\]/api/data/v9.1/payintv1hcmidentificationtypeentities
+```HTTP
+GET [Organization URI]/api/data/v9.1/payintv1hcmidentificationtypeentities
 ```
 
 **Response**
 
-```JSONCopy
-
+```JSON
 {
-"mserp_description": "Alien/Admission no.",
-"mserp_identificationtypeid": "Alien/Admission",
-"mserp_checkduplicates": 200000000,
-"mserp_allowedvalues": 200000000,
-"mserp_identificationnumberformat": "",
-"mserp_fixedlength": 0,
+    "mserp_description": "Alien/Admission no.",
+    "mserp_identificationtypeid": "Alien/Admission",
+    "mserp_checkduplicates": 200000000,
+    "mserp_allowedvalues": 200000000,
+    "mserp_identificationnumberformat": "",
+    "mserp_fixedlength": 0,
 }
 ```
