@@ -1,6 +1,6 @@
 ---
 title: Collections coordinator summary
-description: Learn about how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
+description: Learn about how the Collections coordinator summary feature shows AI-generated text in the Summary by Copilot field on the Collections coordinator workspace.
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: conceptual
@@ -20,91 +20,30 @@ ms.search.form:
 > [!NOTE]
 > Some or all of the functionality that's mentioned in this article is available as part of a preview release. The content and the functionality are subject to change.
 
-Enable the **Collections coordinator summary** feature to get an AI-generated summary of a customer's account and revenue in the **Collections coordinator** workspace, and to send AI-generated reminder emails. This feature is powered by Microsoft Azure OpenAI's large language model and is designed to reduce the time that you must spend reviewing collections details for your customers.
+This article describes how to enable the optional Summary by Copilot on the **Collections coordinator workspace**. For more information on how to use this workspace see the [Collection coordinator workspace](collectionsworkspace.md).
+
+
+## Turn on Copilot support for the Collections coordinator workspace
+The features **Collections coordinator workspace** and **Collections coordinator summary** are on by default in 10.0.38 in Microsoft Dynamics 365 Finance. 
+
+> [!NOTE]
+> As of version 10.0.40, and in the proactive quality updates (PQUs) for version 10.0.39 and 10.0.38, the features **Collections coordinator workspace** and **Collections coordinator summary** are set to On by default in Feature management. If they are not set to On by default you will need to enable them in Feature management.
+
+The workspace can be used either with or without its AI-powered Copilot functionality. To use the Copilot functionality in the workspace the **Copilot in Microsoft Dynamics 365 Finance** app must be installed on your Dataverse environment. For more information see Enable Copilot in Microsoft Dynamics 365 Finance. 
+
+Use this feature to get an AI-generated summary of a customer's overdue invoices, payment history and remaining credit in the **Collections coordinator workspace** and to create a draft reminder email that is AI-generated. This feature is powered by Microsoft Azure OpenAI's large language model and is designed to reduce the time that you must spend reviewing collections details for your customers. 
 
 This feature has three purposes:
 
 - Provide customer account information.
 - Help you make better decisions about your customers.
-- Increase efficiency by drafting reminder emails that you can edit and then send to your customers.
+- Increase efficiency by drafting reminder emails that you can edit and then send to your customers.. 
 
-## Prerequisites
+## Country/region and language availability
+This copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154/). While it can be used in other languages, it may not function as intended. Language quality may vary based on the user’s interaction or system settings, which may impact accuracy and the user experience. 
 
-### Version requirements
-
-Collections coordinator summary requires the latest hotfix on Dynamics 365 Finance version 10.0.34 (10.0.1591.107) and version 10.0.35 (10.0.1627.70) and later.
-
-### Location and language requirements
-
-Collections coordinator summary is currently supported only in the United States. It's available only to users who are configured to use United States English as their language in Finance.
-
-### Role requirements
-
-To complete the configuration procedures in the next section, you must have the following roles:
-
-- The **System administrator** and **System customizer** roles in Power Platform admin center.
-- The **System administrator** role in Finance.
-- The **Organization Admin** role, so that you can create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to you in the **Project security** role field in Lifecycle Services.
-
-## Configure Collections coordinator summary
-
-Follow the procedures in this section to configure Collections coordinator summary.
-
-### Configure Power Platform admin center
-
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the left menu, select **Resources** \> **Dynamics 365 installed apps**.
-1. Select **Resources** \> **Dynamics 365 installed apps**.
-1. Find **Finance and Operations Virtual entity**. The status should be **Update available**.
-1. Select the ellipsis button (**&hellip;**), and then select **Update** on the menu.
-1. Accept the terms of service, and then select **Update**.
-1. You can check the status of the update. While the update is occurring, the status is **Installing**. After the update is completed, the status is changed to **Installed**.
-
-### Install Copilot
-
-1. In Partner Center, go to the [Copilot in Microsoft Dynamics 365 Finance] <!-- The following link is broken: (https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92) --> solution.
-1. Accept the terms and conditions, and then select **Install**. The Copilot solution is installed in the selected environment.
-1. Go to the environment page for the selected environment.
-1. Select **Dynamics 365 apps** to check the status of the installation. While the installation is occurring, the status is **Installing**. After the installation is completed, the status is changed to **Installed**.
-
-### Assign roles to Dataverse users
-
-Users in Dataverse must be assigned the **Finance and Operations AI** role and the **AIB** role.
-
-1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
-1. Select **Settings** at the top of the page.
-1. Expand **Users and Permissions**, and select **Security roles**.
-1. Find the **Finance and Operations AI** role.
-1. Use the ellipsis button (**&hellip;**) to add new members to the role.
-1. Find the **AIB** role.
-1. Use the ellipsis button (**&hellip;**) to add new members to the role.
-
-> [!NOTE]
-> For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges?wt.mc_id=ppac_inproduct_settings).
-
-### Enable SQL change tracking in Lifecycle Services
-
-1. In Lifecycle Services, find your environment and select **Full details**.
-2. Select **Maintain** and **Enable maintenance mode**.
-3. Log into Dynamics 365 finance and operations.
-4. Go to **System administration > Setup > License configuration**.
-5. On the **Configuration keys** tab, mark **SQL row version change tracking (Preview)**
-6. Save changes.
-7. In Lifecycle Services, select **Maintain** and **Exit Maintenance mode**. 
-
-### Enable Collections coordinator summary
-
-1. In Finance, open the **Feature management** workspace.
-1. On the **All** tab, search for and select **(Preview) Collections coordinator summary**.
-1. Select **Learn more** to learn more about the AI terms.
-1. Select **Enable**.
-
-> [!IMPORTANT]
-> The **(Preview) Collections coordinator workspace** feature must also be enabled. This feature makes the **Collections coordinator workspace** available. For more information, see [Collection coordinator workspace](collectionsworkspace.md).
- 
-## View summary text
-
-As soon as a customer is selected in the **Customer account** field in the **Collections coordinator** workspace, the AI-generated content appears below the data points. Azure OpenAI is used to generate the results, based on data in Finance and the provided prompts. All calculations are done in Finance. The summary is based on the amounts for the selected customer's payment history for the past year, outstanding debt amount, and year-to-date revenue.
+## Summary by Copilot
+Navigate to **Credit and collections > Workspaces > Collections coordinator workspace**. This page gives an overview of activities assigned to a collections coordinator (collections agent), the customers with the highest balances and the customers with the most overdue amounts. To get to the **Collections coordinator details select any customer name** or when a Customer account is selected at the top, **View customer details** can be selected. This takes you to the detailed page where you can see the Summary by Copilot. Azure OpenAI is used to generate the results in the Balances and payment history, based on the data in Finance and the provided prompts. All calculations are done in Finance. The summary is based on the amounts for the selected customer’s payment history for the past year, outstanding debt amount and invoices for the last six months.  
 
 ## Generate a reminder email
 
