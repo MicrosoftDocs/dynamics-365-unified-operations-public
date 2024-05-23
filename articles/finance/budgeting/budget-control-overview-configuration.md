@@ -1,8 +1,8 @@
 ---
 title: Budget control overview
 description: Learn about the budget control feature and how to configure budget control to optimize management of your organization's financial resources.
-author: twheeloc  
-ms.author: twheeloc
+author: jchrist  
+ms.author: jchrist
 ms.topic: overview
 ms.date: 03/28/2022
 ms.reviewer: twheeloc
