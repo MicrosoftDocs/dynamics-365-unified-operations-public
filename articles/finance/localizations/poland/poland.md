@@ -2,7 +2,7 @@
 title: Poland overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Poland, including links to resources about tax information. 
 author: liza-golub
-ms.author: liza-golub
+ms.author: egolub
 ms.topic: overview
 ms.date: 05/23/2024
 ms.custom: evergreen
