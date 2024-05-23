@@ -1,6 +1,6 @@
 ---
-title: Transparency notes for Dynamics 365 Finance
-description: Learn about transparency notes for Microsoft Dynamics 365 Finance, with information on how AI is used, how it was tested and evaluated, and any limitations.
+title: Transparency FAQs for Dynamics 365 Finance
+description: Learn about transparency FAQs for Microsoft Dynamics 365 Finance, with information on how AI is used, how it was tested and evaluated, and any limitations.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
@@ -9,13 +9,13 @@ ms.custom: transparency-note
 ms.reviewer: twheeloc
 ---
 
-# Transparency notes for Dynamics 365 Finance
+# Transparency FAQs for Dynamics 365 Finance
 
 An AI system includes not only the technology but also the people who use it, the people who are affected by it, and the environment that it's deployed in. To create a system that's suitable for its intended purpose, you must understand how the technology works, what its capabilities and limitations are, and how you can achieve the best performance.
 
-Microsoft transparency notes are intended to help you understand how AI technology works, the choices that system owners can make and how those choices influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. They include information about how AI is used, how it was tested and evaluated, and any specific limitations. You can use transparency notes when you develop or deploy your own system, or you can share them with the people who will use or be affected by your system.
+Microsoft transparency FAQs are intended to help you understand how AI technology works, the choices that system owners can make and how those choices influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. They include information about how AI is used, how it was tested and evaluated, and any specific limitations. You can use transparency FAQs when you develop or deploy your own system, or you can share them with the people who will use or be affected by your system.
 
-Transparency notes are part of a broader effort to put Microsoft AI principles into practice. For more information, see [Responsible AI principles from Microsoft](https://www.microsoft.com/ai/responsible-ai).
+Transparency FAQs are part of a broader effort to put Microsoft AI principles into practice. For more information, see [Responsible AI principles from Microsoft](https://www.microsoft.com/ai/responsible-ai).
 
 ## AI-driven features in this app
 
