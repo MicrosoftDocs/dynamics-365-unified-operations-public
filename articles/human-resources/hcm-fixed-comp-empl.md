@@ -28,11 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-**HCM Fixed Compensation employee entity**
+This article describes the HCM Fixed Compensation employee entity (payintv1hcmcompfixedemplentities) for Dynamics 365 Human Resources.
 
-This article describes the Job type entity (payintv1hcmcompfixedemplentities) for Dynamics 365 Human Resources.
-
-Physical name: mserp_payintv1hcmcompfixedemplentities
+Physical name: mserp\_payintv1hcmcompfixedemplentities
 
 ## Description
 
@@ -42,78 +40,72 @@ This entity provides information about the employee fixed compensation details.
 
 | Physical name| Property |Type | Use |
 |---|---|---|---|
-| mserp_Action|Action|String | Read-only|
-| mserp_Currency|Currency|String | Read-only|
-| mserp_Dimension|Dimension|Int64 | Read-only|
-| mserp_LineNumber|LineNumber|Real | Read-only|
-| mserp_PayFrequency|PayFrequency|String | Read-only|
-| mserp_PayRate|PayRate|Real | Read-only|
-| mserp_Amount|Amount|Real | Read-only|
-| mserp_Plan|Plan|String | Read-only|
-| mserp_PlanId|PlanId|String | Read-only|
-| mserp_Position|Position|Int64 | Read-only|
-| mserp_ProcessType|ProcessType|Enum | Read-only|
-| mserp_Step|Step|String | Read-only|
-| mserp_Reference|Reference|Int64 | Read-only|
-| mserp_Type|Type|Enum | Read-only|
-| mserp_EffectiveDate|EffectiveDate|Date time offset | Read-only|
-| mserp_ExpirationDate|ExpirationDate|Date time offset | Read-only|
-| mserp_Worker|Worker|Int64 | Read-only|
-| mserp_PositionId|PositionId|String | Read-only|
-| mserp_PersonnelNumber PersonnelNumber|String | Read-only|
-| mserp_DimensionDisplayValue DimensionDisplayValue|String | Read-only|
-| mserp_CompensationLevel CompensationLevel|Int64 | Read-only|
-| mserp_CompensationLevelId CompensationLevelId|String | Read-only|
-| mserp_RefPointSetupId|RefPointSetupId|String | Read-only|
+| mserp\_Action | Action | String | Read-only |
+| mserp\_Currency | Currency | String | Read-only |
+| mserp\_Dimension | Dimension | Int64 | Read-only |
+| mserp\_LineNumber | LineNumber | Real | Read-only |
+| mserp\_PayFrequency | PayFrequency | String | Read-only |
+| mserp\_PayRate | PayRate | Real | Read-only |
+| mserp\_Amount | Amount | Real | Read-only |
+| mserp\_Plan | Plan | String | Read-only |
+| mserp\_PlanId | PlanId | String | Read-only |
+| mserp\_Position | Position | Int64 | Read-only |
+| mserp\_ProcessType | ProcessType | Enum | Read-only |
+| mserp\_Step | Step | String | Read-only |
+| mserp\_Reference | Reference | Int64 | Read-only |
+| mserp\_Type | Type | Enum | Read-only |
+| mserp\_EffectiveDate | EffectiveDate | Date time offset | Read-only |
+| mserp\_ExpirationDate | ExpirationDate | Date time offset | Read-only |
+| mserp\_Worker | Worker | Int64 | Read-only |
+| mserp\_PositionId | PositionId | String | Read-only |
+| mserp\_PersonnelNumber | PersonnelNumber | String | Read-only |
+| mserp\_DimensionDisplayValue | DimensionDisplayValue | String | Read-only |
+| mserp\_CompensationLevel | CompensationLevel | Int64 | Read-only |
+| mserp\_CompensationLevelId | CompensationLevelId | String | Read-only |
+| mserp\_RefPointSetupId | RefPointSetupId | String | Read-only |
 
+## Example query for the HCM Fixed compensation employee entity
 
-## Example query for HCM Fixed compensation employee entity
-
-Entity Name: mserp_payintv1hcmcompfixedemplentities
+Entity name: mserp\_payintv1hcmcompfixedemplentities
 
 **Request**
 
 ```HTTP
-
-_GET \[Organizaton URI\]/api/data/v9.1/payintv1hcmcompfixedemplentities_
+GET [Organization URI]/api/data/v9.1/payintv1hcmcompfixedemplentities
 ```
-
 
 **Response**
 
-```JSONCopy
-
+```JSON
 {
-
-"mserp_action": "Hire",
-"mserp_currency": "USD",
-"mserp_dimension": 0,
-"mserp_dimension_bigint": 0,
-"mserp_linenumber": 0,
-"mserp_payfrequency": "Hourly",
-"mserp_payrate": 19,
-"mserp_amount": 39520,
-"mserp_plan": "StepC",
-"mserp_planid": "StepC",
-"mserp_position": 22565421004,
-"mserp_position_bigint": 22565421004,
-"mserp_processtype": 200000003,
-"mserp_step": "Step 2",
-"mserp_reference": 0,
-"mserp_reference_bigint": 0,
-"mserp_type": 200000003,
-"mserp_effectivedate": "2008-03-05T00:00:00Z",
-"mserp_expirationdate": "2016-01-01T00:00:00Z",
-"mserp_worker": 22565420995,
-"mserp_worker_bigint": 22565420995,
-"mserp_positionid": "000001",
-"mserp_personnelnumber": "000023",
-"mserp_dimensiondisplayvalue": "",
-"mserp_compensationlevel": 16928090052,
-"mserp_compensationlevel_bigint": 16928090052,
-"mserp_compensationlevelid": "S2",
-"mserp_refpointsetupid": "Steps",
-"mserp_dataareaid": "usmf",
+    "mserp_action": "Hire",
+    "mserp_currency": "USD",
+    "mserp_dimension": 0,
+    "mserp_dimension_bigint": 0,
+    "mserp_linenumber": 0,
+    "mserp_payfrequency": "Hourly",
+    "mserp_payrate": 19,
+    "mserp_amount": 39520,
+    "mserp_plan": "StepC",
+    "mserp_planid": "StepC",
+    "mserp_position": 22565421004,
+    "mserp_position_bigint": 22565421004,
+    "mserp_processtype": 200000003,
+    "mserp_step": "Step 2",
+    "mserp_reference": 0,
+    "mserp_reference_bigint": 0,
+    "mserp_type": 200000003,
+    "mserp_effectivedate": "2008-03-05T00:00:00Z",
+    "mserp_expirationdate": "2016-01-01T00:00:00Z",
+    "mserp_worker": 22565420995,
+    "mserp_worker_bigint": 22565420995,
+    "mserp_positionid": "000001",
+    "mserp_personnelnumber": "000023",
+    "mserp_dimensiondisplayvalue": "",
+    "mserp_compensationlevel": 16928090052,
+    "mserp_compensationlevel_bigint": 16928090052,
+    "mserp_compensationlevelid": "S2",
+    "mserp_refpointsetupid": "Steps",
+    "mserp_dataareaid": "usmf",
 }
 ```
-
