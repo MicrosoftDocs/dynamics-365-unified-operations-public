@@ -18,7 +18,7 @@ ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 
 [!include [banner](../includes/banner.md)]
 
-The objective of this lab is to provide a guided view of Microsoft Dynamics 365 Finance functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks:
+The objective of this lab is to provide a guided view of Microsoft Dynamics 365 Finance functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration. This lab focuses specifically on the following business processes or tasks:
 - Creating organizational hierarchy for budget planning and configuring user security
 - Defining budget plan scenarios, budget plan columns, layouts and Excel templates
 - Creating and activating budget planning process
@@ -28,7 +28,7 @@ The objective of this lab is to provide a guided view of Microsoft Dynamics 365 
 
 ## Prerequisites 
 
-For this tutorial, you’ll need to access the Microsoft Dynamics 365 Finance environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with administrator credentials. When signing in, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the application using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” check box. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
+For this tutorial, you need to access the Microsoft Dynamics 365 Finance environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with administrator credentials. When signing in, you **MUST** select the **Keep me signed in** checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the application using a browser other than Edge, then you’ll be prompted to sign in within the Excel App. When you click **Sign in** in the Excel App, a popup window opens and when signing in, select the **Keep me signed in** checkbox. If clicking **Sign in** in the Excel App doesn’t do anything, clear the cookie cache.
 
 ## **Scenario overview**
 Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF). As FY2016 approaches, Julia needs to work on setting up the company’s budget for the upcoming year. Budget preparation looks as follows:
@@ -50,19 +50,19 @@ Julia uses the following Excel template to prepare the budget:
 ### **Task 1: Create organizational hierarchy**
 As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only. 
 
-1.1. Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click the New button.
+1.1. Go to **Organization hierarchies** and click **New**.
 
 ![Organization hierarchies.](./media/screenshot3.png) 
 
-1.2. Type the name for the organizational hierarchy in the Name box and click Assign purpose.
+1.2. Type the name for the organizational hierarchy in the **Name** box and click **Assign purpose**.
 
-1.3. Select the Budget planning purpsose, click Add, and assign the newly created organizational hierarchy. 
+1.3. Select the **Budget planning purpose**, click **Add**, and assign the newly created organizational hierarchy. 
 
 [![Assign purpose.](./media/screenshot5.png)](./media/screenshot5.png)
 
-1.4. Repeat the step above for the Security organizational purpose. Close the form when done.
+1.4. Repeat the step above for the Security organizational purpose. Close the page when done.
 
-1.5. In the Organizational Hierarchies form, click View. Click Edit in the Hierarchy designer, and create a hierarchy by clicking Insert.
+1.5. In the **Organizational hierarchies** page, click **View**. Click **Edit** in the **Hierarchy designer**, and create a hierarchy by clicking **Insert**.
 
 [![Insert.](./media/screenshot7.png)](./media/screenshot7.png) 
 
@@ -70,7 +70,7 @@ As all the budgeting process happens in the Finance department, therefore Julia 
 
 [![Finance.](./media/screenshot8.png)](./media/screenshot8.png)
 
-1.7. When done, click Publish and Close. Select 1/1/2015 as the effective date for hierarchy publishing.
+1.7. When done, click **Publish and Close**. Select 1/1/2015 as the effective date for hierarchy publishing.
 
 [![Effective date.](./media/screenshot9.png)](./media/screenshot9.png)
 
@@ -80,41 +80,41 @@ Budget planning uses special security policies to configure access to budget pla
 2.1. Switch to DEMF legal entity context. 
 
 
-2.2. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In the Parameters tab, set the Security model value to Based on security organizations. 
+2.2. Go to **Budgeting** > **Setup** > **Budget planning** > **Budget planning configuration**. In the **Parameters** tab, set the **Security model value** to **Based on security organizations**. 
 
 [![Parameters.](./media/screenshot11.png)](./media/screenshot11.png) 
 
-2.3. Navigate to System administration &gt; Users &gt; Users. Give user Admin (Julia Funderburk) Budget manager role. 
+2.3. Go to **System administration** > **Users** > **Users**. Give user Admin (Julia Funderburk) Budget manager role. 
 
 [![Budget manager.](./media/screenshot12.png)](./media/screenshot12.png) 
 
-2.4. Pick user role and click Assign organizations. 
+2.4. Pick user role and click **Assign organizations**. 
 
 [![Assign organizations.](./media/screenshot13.png)](./media/screenshot13.png)
 
-2.5. Select “Grant access to specific organizations”. Pick the Organizational hierarchy created in the first step. Pick Finance node, and click the Grant with children button. 
+2.5. Select **Grant access to specific organizations**. Pick the Organizational hierarchy created in the first step. Pick Finance node, and click **Grant with children**. 
 
-***Important!*** *Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity* 
+>[!Important]
+>Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity* 
 
 ### Task 3: Create scenarios
-3.1. Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration. In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted. 
+3.1. Go to **Budgeting** > **Setup** > **Budget planning** > **Budget planning configuration**. In the **Scenarios** page, note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted. 
 
-*Note: You can create new scenarios for this exercise if desired and use those instead.* 
+>[!Note]
+>You can create new scenarios for this exercise if desired and use those instead.
 
 [![New scenarios.](./media/screenshot15.png)](./media/screenshot15.png) 
-
-*Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*
 
 ### Task 4: Create budget plan columns
 Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout. In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year. Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity. In this lab we will use Data entity to fill in the values. 
 
-4.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration, open the Columns page. Click the Office button on the top right corner of the form, and pick Columns (unfiltered). 
+4.1. In **Budgeting** > **Setup** > **Budget planning** > **Budget planning configuration**, open the **Columns** page. Click **Office** button on the top right corner of the form, and pick Columns (unfiltered). 
 
 [![Columns unfiltered.](./media/screenshot16.png)](./media/screenshot16.png) 
 
-4.2. The system will open an Excel workbook to be used for filling in the values. If prompted, click Enable Editing and Trust this app. 
+4.2. An Excel workbook is opened to be used for filling in the values. If prompted, click **Enable editing** and **Trust this app**. 
 
-4.3. We will need more columns to fill the values in. Click Design on the right side pane to add the columns to the grid. 
+4.3. We will need more columns to fill the values in. Click **Design** on the right side pane to add the columns to the grid. 
 
 [![Design.](./media/screenshot19.png)](./media/screenshot19.png) 
 
@@ -133,7 +133,7 @@ Budget plan columns are either Monetary or quantity based columns that can be us
 ### Task 5: Create budget plan document layouts and templates
 Layout defines how budget plan document lines grid is going to look like when user opens budget plan document. It is also possible to switch the layout for budget plan document to see the same data in different angles. Now, with columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table used to create budget data (see section Scenario overview in this lab) 
 
-5.1. In the Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration, open the Layouts page. Create a new layout for Monthly budget entry:
+5.1. In the **Budgeting** > **Setup** > **Budget planning** > **Budget planning configuration**, open the **Layouts** page. Create a new layout for Monthly budget entry:
 
 -   Pick MA+BU dimension set to include Main accounts and Business units to the layout.
 -   List all budget plan columns created in the previous step in the Elements section. Make all but Previous year actuals editable.
@@ -143,9 +143,10 @@ Layout defines how budget plan document lines grid is going to look like when us
 
 Based on the budget plan layout definition we can create an Excel template to be used as an alternative way to edit Budget data. As Excel template has to match budget plan layout definition, you won’t be able to edit budget plan layout after generating Excel template, therefore this task should be done after all layout components are defined. 
 
-5.2. For the layout created in the 5.1. step, click button Template &gt; Generate. Confirm the warning message. To view the template, click Template &gt; View. 
+5.2. For the layout created in the 5.1. step, click **Template** > **Generate**. Confirm the warning message. To view the template, click **Template** > **View**. 
 
-*Note: Make sure to select “Save as” and select the place where template should be stored in order to edit it. If user selects “Open” in the dialog without saving, the changes done to the file will not be retained when the file is closed.* 
+>[!Note]
+>Make sure to select **Save as** and select the place where template should be stored in order to edit it. If user selects “Open” in the dialog without saving, the changes done to the file will not be retained when the file is closed.
 [![Template view.](./media/screenshot25.png)](./media/screenshot25.png) 
 
 5.3. &lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload. 
@@ -154,7 +155,7 @@ Based on the budget plan layout definition we can create an Excel template to be
 ### Task 6: Create a budget planning process
 Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans. Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans. 
 
-6.1. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process, and create a new record.
+6.1. Navigate to **Budgeting** > **Setup** > **Budget planning** > **Budget planning process**, and create a new record.
 
 -   Budget planning process – DEMF budgeting FY2016
 -   Budget cycle – FY2016
