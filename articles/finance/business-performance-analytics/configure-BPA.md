@@ -13,8 +13,7 @@ audience: Application User
 
 # Prerequisites to installing Business performance analytics 
 
-> [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. To participate in the public preview please start here: <https://aka.ms/installBPA>.
+[This article is prerelease documentation and is subject to change.]
 
 ## Before you install
 Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
