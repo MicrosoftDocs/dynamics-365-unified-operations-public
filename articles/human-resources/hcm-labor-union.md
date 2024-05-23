@@ -28,39 +28,38 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Job type entity (payintv1hcmlaborunionentities) for Dynamics 365 Human Resources.
+This article describes the HCM Labor union entity (payintv1hcmlaborunionentities) for Dynamics 365 Human Resources.
 
-Physical name: mserp_payintv1hcmlaborunionentities
+Physical name: mserp\_payintv1hcmlaborunionentities
 
 ## Description
 
-This entity provides information about the labour union details.
+This entity provides information about the labor union details.
 
 ## Properties
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| mserp_Name |name|String | Read-only |
-| mserp_EntitledToNegotiate|EntitledToNegotiate|Enum | Read-only |
-| mserp_UnionId|UnionID|String | Read-only |
+| mserp\_Name | name | String | Read-only |
+| mserp\_EntitledToNegotiate | EntitledToNegotiate | Enum | Read-only |
+| mserp\_UnionId | UnionID | String | Read-only |
 
-## Example query for HCM identification type entity
+## Example query for the HCM Labor union entity
 
-Entity Name: mserp_payintv1hcmlaborunionentities
+Entity name: mserp\_payintv1hcmlaborunionentities
 
 **Request**
 
 ```HTTP
-GET \[Organizaton URI\]/api/data/v9.1/payintv1hcmlaborunionentities
+GET [Organization URI]/api/data/v9.1/payintv1hcmlaborunionentities
 ```
 
 **Response**
 
 ```JSON
-
 {
-"mserp_name": "United Consultants of America",
-"mserp_entitledtonegotiate": 200000001,
-"mserp_unionid": "UCA",
+    "mserp_name": "United Consultants of America",
+    "mserp_entitledtonegotiate": 200000001,
+    "mserp_unionid": "UCA",
 }
 ```
