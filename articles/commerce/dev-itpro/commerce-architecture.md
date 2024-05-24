@@ -2,10 +2,10 @@
 title: Dynamics 365 Commerce architecture overview
 description: This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-ms.date: 01/30/2023
+ms.date: 05/24/2024
 ms.topic: overview
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
@@ -135,7 +135,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Customer Insights
 
-Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Dynamics 365 Customer Insights integration with Dynamics 365 Commerce](clienteling-overview.md#integration-with-dynamics-365-customer-insights).
+Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Integrate Customer Insights with Commerce](#integrate-customer-insights-with-commerce).
 
 #### Azure cognitive search
 
