@@ -4,7 +4,7 @@ description: Learn about the integration of product data between finance and ope
 author: t-benebo
 ms.author: ramasri
 ms.topic: article
-ms.date: 03/05/2024
+ms.date: 25/05/2024
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
@@ -234,8 +234,8 @@ If other Dynamics 365 apps have products that aren't present in finance and oper
 
 ### Migration of large product data
 
-The product data is desinged to flow from finance and operations apps to Dataverse, so the product data should always be imported into finance and operations app first, and then the data can be synced to Dataverse using initial syncronization.
-Dual-Write has a limitation on the number of records that can be imported during the initial syncronization, see [Considerations for initial synchronization](initial-sync-guidance.md#constraints) for more information. If the number of records exceeds the limit, the data can be imported in batches, by filtering data. The administrator can use filtering option on the appropriate dual-write map to sync only part of the data to Dataverse. To learn about filtering data for dual-write, see [Customize table and column mappings](customizing-mappings.md#filter-your-data).
+The product data is designed to flow from finance and operations apps to Dataverse. Therefore, it's crucial to first import the product data into finance and operations app, after which it can be synchronized to Dataverse using initial synchronization. Dual-write has a limitation on the number of records that can be imported during the initial synchronization. If the number of records exceeds the limit, the data can be imported in batches, by applying query filters. The administrator can use filtering option on the relevant Dual-write map to sync only part of the data to Dataverse. For more information about data filtering for Dual-write, see [Customize table and column mappings](customizing-mappings.md#filter-your-data).
+For more information about the constraints of Dual-write initial synchronization, see [Considerations for initial synchronization](initial-sync-guidance.md#constraints).
 
 ### Install dual-write after a finance and operations environment and a Dataverse environment (with Field Service) is deployed
 
