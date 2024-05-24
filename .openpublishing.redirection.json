@@ -1,7 +1,17 @@
 {
   "redirections": [
     {
-      "source_path": "articles/human-resources/hr-admin-whats-new.md.md",
+      "source_path": "articles/finance/localizations/brazil/e-invoicing-bra-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/brazil/latam-bra-nf-e-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/iberoamerica/e-invoicing-mex-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/iberoamerica/latam-mex-cfdi-electronic-invoices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/human-resources/hr-admin-whats-new.md",
       "redirect_url": "/dynamics365/human-resources/whats-new-home-page",
       "redirect_document_id": "false"
     },
