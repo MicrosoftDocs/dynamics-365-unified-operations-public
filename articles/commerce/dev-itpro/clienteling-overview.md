@@ -4,7 +4,7 @@
 title: Clienteling overview
 description: This article provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
-ms.date: 11/16/2022
+ms.date: 05/24/2024
 ms.topic: overview
 audience: IT Pro
 ms.reviewer: josaw
@@ -20,7 +20,6 @@ ms.search.validFrom: 2018-10-01
 # Clienteling overview
 
 [!include [banner](../includes/banner.md)]
-
 
 Many retailers, especially high-end specialty retailers, want their sales associates to form long-term relationships with their key customers. The associates are expected to know about these customers' likes and dislikes, purchase history, product preferences, and important dates, such as anniversaries and birthdays. Associates need a place where they can capture this information and easily find it when it's required. If this information is available in a single view, the associates can easily target customers who meet specific criteria. For example, they can find all customers who prefer to shop for handbags, or customers who have an important event approaching, such as a birthday or anniversary.
 
@@ -74,7 +73,7 @@ To turn on the clienteling functionality in your environment, follow these steps
     - Set the display order for these attributes. This display order determines which attributes should be shown on the customer card in the client book. A display order of 1 is considered higher than a display order of 2. Therefore, the attribute that has a display order of 1 will be shown before to the attribute that has a display order of 2.
 
     > [!NOTE]
-    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created, for authentication purposes. (For information about the requirements, see the [Integration of Customer Insights with Commerce](#integration-of-customer-insights-with-commerce) section later in this article.) If Customer Insights is turned on, and you select one or more measures that should be shown on the customer card, those measures will be shown first. Next, client book attribute groups will be shown, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute will be shown on the customer card. (The client book attribute that is shown will be the attribute that has the highest display order.)
+    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created for authentication purposes. (For information about the requirements, see [Integration of Customer Insights with Commerce](#integration-of-customer-insights-with-commerce).) If Customer Insights is turned on and you select one or more measures that should be shown on the customer card, those measures are shown first. Client book attribute groups are shown next, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute are shown on the customer card. The client book attribute displayed is the attribute that has the highest display order.
 
 6. On the **Commerce parameters** page, on the **Clienteling** tab, in the **Client book attribute group** field, select the attribute group that you just created.
 
@@ -92,9 +91,9 @@ After you've completed this procedure, sales associates can open the customer de
 
 ![Example of a client book.](../media/client_book.png "Example of a client book")
 
-## Integration of Customer Insights with Commerce
+## Integrate Customer Insights with Commerce
 
-Commerce clienteling feature can be further enhanced by integrating additional data from the Dynamics 365 Customer Insights application into Commerce. The integration of Customer Insights with Commerce lets retailers select one or more measures that should be shown on the customer card in the client book. For example, retailers can use the data in Customer Insights to calculate the "churn probability" for a customer and define the "next best action." These values must be defined as measures in Customer Insights application. Once the integration of Customer Insights into Commerce is enabled, this data will be shown on the customer card in the Client Book and can provide crucial information to sales associates. For more information about Customer Insights, see the [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) documentation. For more information about measures, see [Measures](/dynamics365/ai/customer-insights/pm-measures).
+You can further enhance the Commerce clienteling feature by integrating additional data from the Dynamics 365 Customer Insights application into Commerce. The integration of Customer Insights with Commerce lets retailers select one or more measures that should be shown on the customer card in the client book. For example, retailers can use the data in Customer Insights to calculate the "churn probability" for a customer and then define the "next best action." These values must be defined as measures in the Customer Insights application. Once you enable the integration of Customer Insights with Commerce, this data is shown on the customer card in the Client Book and can provide crucial information to sales associates. For more information about Customer Insights, see [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview). For more information about measures, see [Measures](/dynamics365/ai/customer-insights/pm-measures).
 
 > [!NOTE]
 > The integration of Commerce data into Customer Insights application is much more complex and requires customized data transforms to be implemented.
@@ -102,11 +101,11 @@ Commerce clienteling feature can be further enhanced by integrating additional d
 To turn on the integration of Customer Insights with Commerce, you must make sure that you have an active instance of Customer Insights in the tenant where Commerce is provisioned. You must also have a Microsoft Entra user account that has an Azure subscription.
 
 > [!IMPORTANT]
-Prior to integrating Customer Insights with Commerce, retailers should first fully configure Customer Insights [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) and configure measures in Customer Insights application, see [Measures](/dynamics365/ai/customer-insights/pm-measures).
+Prior to integrating Customer Insights with Commerce, retailers should first fully configure [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) and configure [measures](/dynamics365/ai/customer-insights/pm-measures) in the Customer Insights application.
 
-Follow these steps to set up the integration of Customer insights with Commerce:
+To set up the integration of Customer insights with Commerce, follow these steps.
 
-1. In the Azure portal, register a new application (for example, "CI_Access_name") and make a note of the application name, application ID, and secret. This information will be used for service-to-service authentication between Commerce and Customer Insights. Note the secret safely, as it will be required to save it in the key vault. For the following example, use CI_Access_name, CI_Access_AppID, CI_Access_Secret for the application name, application ID, and secret respectively. For more information, see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+1. In the Azure portal, register a new application (for example, "CI_Access_name") and make a note of the application name, application ID, and secret. This information is used for service-to-service authentication between Commerce and Customer Insights. Note the secret safely, as you will be required to save it in the key vault. For the following example, use "CI_Access_name", "CI_Access_AppID", and "CI_Access_Secret" for the application name, application ID, and secret, respectively. For more information, see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Take steps so that you will remember to change the secret before it expires. Otherwise, the integration will unexpectedly stop.
@@ -130,7 +129,7 @@ Follow these steps to set up the integration of Customer insights with Commerce:
 
 After you update the fields, select **Validate** to ensure the secret can be accessed by the Commerce application.
 
-8. In Commerce headquarters, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the **Application ID** to "CI_Access_AppID" (from step 1 above). For **Secret name**, select the name of the secret entered in step 7 above ("CISecret"). Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, an error message will be displayed, and this option will be set to **No**. 
+8. In Commerce headquarters, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the **Application ID** to "CI_Access_AppID" (from step 1 above). For **Secret name**, select the name of the secret entered in step 7 above ("CISecret"). Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, an error message is displayed, and this option is set to **No**. 
 
 You can have multiple environments in Customer Insights, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Commerce, the customer account number is the customer ID.) The remaining three properties are the measures that will be shown on the customer card in the client book. You can select up to three measures to show on the customer card. However, you are not required to select any measures. As mentioned previously, the system shows these values first, and then it shows the values for the client book attribute group.
 
