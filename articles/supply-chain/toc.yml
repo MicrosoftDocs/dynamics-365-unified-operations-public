@@ -707,7 +707,7 @@
         href: cost-management/inventory-costing-faq.md
       - name: Prerequisites for standard costs
         items:
-        - name: Prerequisites for standard costs overview
+        - name: Prerequisites for standard costs
           href: cost-management/prerequisites-standard-costs.md
         - name: Standard cost conversion overview
           href: cost-management/standard-cost-conversion-overview.md
