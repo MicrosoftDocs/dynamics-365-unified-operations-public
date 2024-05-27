@@ -2,16 +2,13 @@
 title: Package configurations and deploy them to an online environment
 description: This article describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
 author: samjarawan
-ms.date: 02/20/2020
+ms.date: 05/28/2024
 ms.topic: article
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: niholman
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
-ms.assetid: 
 ---
 
 # Package configurations and deploy them to an online environment
