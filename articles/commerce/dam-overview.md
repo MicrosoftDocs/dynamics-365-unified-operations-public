@@ -2,16 +2,13 @@
 title: Digital asset management overview
 description: This article provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
 author: josaw1
-ms.date: 03/03/2020
+ms.date: 05/28/2024
 ms.topic: overview
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: niholman
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
-ms.assetid: 
-ms.search.industry: 
 ---
 
 # Digital asset management overview
