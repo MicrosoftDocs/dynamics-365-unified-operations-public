@@ -21,6 +21,7 @@ This article explains how to import Electronic reporting (ER) configurations fro
 
 ## Set up integration with Dataverse and import the Globalization solution
 
+This functionality is leveraging [Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview).
 To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
 
 1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
