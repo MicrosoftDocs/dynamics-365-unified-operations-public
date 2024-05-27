@@ -24,17 +24,17 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ### New features introduced in version 2.3.3.0
 
-This version of the Warehouse Management mobile app introduces the following new features: 
+This version of the Warehouse Management mobile app introduces the following new features:
 
-- Added a cloud authentication method that doesn't require you to register or maintain your own Microsoft Azure Entra ID application. 
-- Added intent scanning for Android, which improves scanner integration on devices that support it. 
+- Simplified user and device authentication by providing an option that doesn't require you to register or maintain your own Microsoft Azure Entra ID application.
+- Added intent scanning for Android, which improves scanner integration on devices that support it.
 
 ### New fixes and improvements in version 2.3.3.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- Fixed an issue that striped non-GS1 symbology values when scanning. 
+- Fixed an issue that striped non-GS1 symbology values when scanning.
 
 ## Version 2.3.2.0
 
