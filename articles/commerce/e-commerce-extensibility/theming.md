@@ -5,7 +5,7 @@ author: samjarawan
 ms.date: 05/28/2024
 ms.topic: overview
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
