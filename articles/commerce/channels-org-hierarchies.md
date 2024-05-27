@@ -17,9 +17,9 @@ ms.search.validFrom: 2020-01-20
 
 This article describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 
-Before creating channels, you'll want to ensure you have set up your organization hierarchies.
+Before creating channels, you must set up your organization hierarchies.
 
-You can use organization hierarchies to view and report on your business from various perspectives. For example, you can set up one hierarchy for tax, legal, or statutory reporting. You can then set up another hierarchy to report financial information that is not legally required, but that is used for internal reporting.
+You can use organization hierarchies to view and report on your business from various perspectives. For example, you can set up one hierarchy for tax, legal, or statutory reporting. You can then set up another hierarchy to report financial information that isn't legally required, but that is used for internal reporting.
 
 Before you create an organization hierarchy, you must create organizations. For more information, see [Create legal entities](channels-legal-entities.md) or [Create operating units](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json).
 
@@ -39,7 +39,7 @@ To create an organizational hierarchy, follow these steps.
 1. In the **Purpose** section, select **Assign purpose**.
 1. In the list, find and select the desired record. Select a purpose to assign to your organization hierarchy.
 1. In the **Assigned hierarchies** section, select **Add**.
-1. In the list, mark the selected row. Find the hierarchy you just created.
+1. In the list, mark the selected row. Find the hierarchy you created.
 1. Select **OK**.
 
 The following image shows an example organizational hierarchy created for a fictitious "Adventure Works" set of stores.
@@ -53,9 +53,9 @@ To add organizations to a hierarchy, follow these steps.
 1. In the list, find and select the desired record. Select your hierarchy.
 1. On the action pane, select **View**.
 1. Add organizations, as necessary.
-1. To add an organization, select **Edit** and then select **Insert**. When you are done making changes you can save a draft and publish the changes.
+1. To add an organization, select **Edit** and then select **Insert**. When you're done making changes, you can save a draft and publish the changes.
 
-The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall", "Outlet", "Online" and "Call Center" channels. Various retail, call center and online channels can then be added to each.
+The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall," "Outlet," "Online," and "Call Center" channels. Various retail, call center, and online channels can then be added to each.
 
 ![Example hierarchy designer.](media/hierarchy-designer.png)
 
