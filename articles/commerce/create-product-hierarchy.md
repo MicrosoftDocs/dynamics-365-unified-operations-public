@@ -28,7 +28,7 @@ A Commerce product hierarchy is used to define the overall product hierarchy for
 To create and configure a Commerce product hierarchy, follow these steps.
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Commerce product hierarchy**.
-1. If no hierachy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
+1. If no hierarchy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
 1. Under **General**:
     1. In the **Name** box, enter a name.
     1. In the **Description** box, enter a description.
@@ -41,15 +41,15 @@ To add hierarchy nodes, follow these steps.
 
 1. On the action pane, select **Edit category hierarchy**.
 1. Select the parent node you want to add a new node to, and then select **New category node**.
-1. In the **General** section provide a **Name**, **Description**, **Friendly name** and **Keywords**.
+1. In the **General** section, provide a **Name**, **Description**, **Friendly name**, and **Keywords**.
 1. Under **General**:
     1. In the **Name** box, enter a name.
     1. In the **Description** box, enter a description.
     1. In the **Friendly name** box, enter a friendly name.
     1. In the **Keywords** box, enter relevant keywords.
-    1. In the **Display order**box, enter a number for the display order (optional).
+    1. In the **Display order** box, enter a number for the display order (optional).
 1. On the action pane, select **Save**.
-1. Repeat the steps above to add additional nodes.
+1. Repeat the previous steps to add more nodes.
 
 The following image shows the creation of a new product hierarchy node.
 
@@ -65,7 +65,7 @@ Category attribute groups can also be assigned to each group as required.
 
 [Manage product categories and products ](category-management-product-creation.md)
 
-[Change the sort order for merchandizing entities](custom-order-categories-nav-retail-prod-hierarchy.md)
+[Change the sort order for merchandising entities](custom-order-categories-nav-retail-prod-hierarchy.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
