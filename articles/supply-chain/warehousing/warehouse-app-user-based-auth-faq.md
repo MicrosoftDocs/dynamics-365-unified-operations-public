@@ -86,7 +86,7 @@ You can choose any of the scenarios described in the following table. Your choic
 |---|---|
 | Use the same Microsoft Entra ID for all devices | *Not recommended.*<br><br>Using a single Microsoft Entra ID user for all your devices is less secure than other scenarios and can lead to confusion in Supply Chain Management. For example, this setup associates all warehouse processes with a single system user, even when multiple warehouse workers process work using multiple warehouse devices. |
 | Use a unique Microsoft Entra ID for each device | Each worker must manually sign in to the app when they start using the device.<br><br>When you set up one Microsoft Entra ID user for each device, it's easy to block the Microsoft Entra ID user for just one device if that device is stolen or damaged. (For more information, see [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).) |
-| Use a unique Microsoft Entra ID for each worker | Supports [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso), so once a worker has signed in to a device, they're automatically signed in to Warehouse Management mobile app and all other apps that use the same Microsoft Entra ID. |
+| Use a unique Microsoft Entra ID for each worker | Supports [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso), so once a worker has signed in to a device, they're automatically signed in to the Warehouse Management mobile app and all other apps that use the same Microsoft Entra ID. |
 
 For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
