@@ -2,16 +2,13 @@
 title: Set up organization hierarchies
 description: This article describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 015/28/2024
 ms.topic: article
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
-ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
+ms.author: mashneer
+ms.search.validFrom: 2020-01-20: 
 ---
 # Set up organization hierarchies
 
