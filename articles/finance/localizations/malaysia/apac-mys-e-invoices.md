@@ -161,10 +161,11 @@ Follow these steps to configure the structure of the postal address to define al
    - City name
    - Street
    - State code
-     > [!NOTE]
-     > For the **States**, on the **State/province** tab, in the **State code** field, additionally define the official state code according to the [published requirements](https://sdk.myinvois.hasil.gov.my/codes/state-codes/).
-     > 
-     > ![Screenshot that shows address configuration.](apac-mys-e-invoice-address.jpg)
+    
+   > [!NOTE]
+   > For the **States**, on the **State/province** tab, in the **State code** field, additionally define the official state code according to the [published requirements](https://sdk.myinvois.hasil.gov.my/codes/state-codes/).
+   > 
+   > ![Screenshot that shows address configuration.](apac-mys-e-invoice-address.jpg)
 
 ## Configure legal entity data
 
