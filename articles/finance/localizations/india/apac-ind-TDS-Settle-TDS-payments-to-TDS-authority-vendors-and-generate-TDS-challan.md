@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Settle TDS payments to TDS authority vendors and generate TDS challan
-description: This article explains how to settle Tax Deducted at Source (TDS) payments to TDS authority vendors.
+description: Learn how to settle Tax Deducted at Source (TDS) payments to TDS authority vendors, including a step-by-step process and an example.
 author: kailiang
-ms.date: 03/12/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 03/12/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-02-12
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Settle TDS payments to TDS authority vendors and generate TDS challan
@@ -32,7 +22,7 @@ This article explains how to settle Tax Deducted at Source (TDS) payments to TDS
 
 1. Go to **Accounts payable \> Payments \> Vendor payment journal**.
 
-   ![Vendor payment journal page.](../media/apac-ind-TDS-51.png)](/media/apac-ind-TDS-51.png)
+    [![Vendor payment journal page.](../media/apac-ind-TDS-51.png)]
 
 2. On the **Vendor payment journal** page, select **New** to create a journal line.
 3. In the **Account** field, select the TDS authority vendor to settle TDS payments to.

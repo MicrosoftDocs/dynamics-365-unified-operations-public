@@ -12,6 +12,8 @@ ms.search.form: business-performance-analytics
 ---
 
 # Business performance analytics data model 
+[This article is prerelease documentation and is subject to change.]
+
 
 ## Dimensional data model
 
