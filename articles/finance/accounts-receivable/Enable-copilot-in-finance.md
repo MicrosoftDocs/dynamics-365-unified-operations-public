@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Terminate schedule lines
-description: This topic describes how to enable the copilot functionality in Microsoft Dynamics 365 Finance. 
+title: Enable Copilot in Dynamics 365 Finance
+description: This topic describes how to enable the functionality related to Copilot in Microsoft Dynamics 365 Finance. 
 author: JodiChristiansen
 ms.date: 05/23/2024
 ms.topic: article
@@ -35,7 +35,7 @@ This article describes the features available using the app **Copilot in Microso
 To enable Copilot capabilities in Microsoft Dynamics 365 Finance, you must be running version 10.0.38 or later in Microsoft Dynamics 365 Finance.  
 
 > [!NOTE]
-> As of version 10.0.40, and in the proactive quality updates (PQUs) for version 10.0.39 and 10.0.38, the required app **Copilot in Microsoft Dynamics 365 Finance** is deployed in the Dataverse environment that’s associated with the organization where you’re running Microsoft Dynamics 365 Finance.   
+> As of version 10.0.40, and in the proactive quality updates (PQUs) for version 10.0.39 and 10.0.38, the required app **Copilot in Microsoft Dynamics 365 Finance** is installed in the Dataverse environment that’s associated with the organization where you’re running Microsoft Dynamics 365 Finance.   
 
 ## Country/region and language availability 
 
