@@ -152,6 +152,18 @@ Follow these steps to configure the electronic document property type that's req
 
 ![Screenshot that shows electronic document properties configuration.](apac-mys-e-invoice-properties.jpg)
 
+## Configure address structure
+
+Follow these steps to configure the structure of the postal address to define all required elements.
+
+1. Go to **Organization administration** \> **Globall address book** \> **Addresses** \> **Address setup** and make sure that the following mandatory elements are configured.
+   - Country code
+   - City name
+   - Street
+   - State code
+     > [!NOTE]
+     > For the **States** additionally define the official codes according to the [published requirements](https://sdk.myinvois.hasil.gov.my/codes/state-codes/).
+
 ## Configure legal entity data
 
 ### Enter the address
