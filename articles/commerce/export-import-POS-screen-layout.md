@@ -94,8 +94,14 @@ To do this you would need to add Layout size in the entity through a table join.
  - Provide a group name **Import POS layouts** and select **Add file** under selected entities.
  - Select **Package** on **source data format**.
  - Choose the package from where you downloaded and select **upload and add** and **close**.
+   
+  ![Import.](media/POSimport.png)
+   
  - Once the entities are loaded select **entity sequence**.
  - Select **auto sequence** to sequence the entities considering the dependencies and select **OK**.
+
+   ![autosequence.](media/autosequence.png)
+   
  - Select **Import** from the top menu bar.
  - Verify the **Execution summary** and ensure that the status for all entities are **succeeded**
  - Verify the screen layouts, button grids and visual profiles are now updated.
