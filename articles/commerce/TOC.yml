@@ -1028,7 +1028,7 @@
         href: tasks/run-job-post-statements.md
       - name: Configure store settings that affect retail statements
         href: tasks/store-configurations-retail-statements.md
-      - name: Posting of online sales and payments
+      - name: Post online sales and payments
         href: tasks/posting-online-sales-payments.md
     - name: Manage worker tasks
       items:
