@@ -40,7 +40,11 @@ The following document describes the procedure to export and import POS screen l
       
 - Use **filter** column to only select specific layouts for export. Example **SCO**.
 
-  ![POS entity filter.](media/POSentityfilter.png)
+  ![Buttongridbutton.](media/buttongridbuttons.png)
+  ![Buttongridfilter.](media/buttongridfilter.png)
+  ![retailtilllayout.](media/retailtilllayout.png)
+  ![screenlayoutfilter.](media/screenlayoutfilter.png)
+  ![visualprofile.](media/visualprofilefilter.png)
   
 - select the following entities and apply the filter as follows. In the example we are trying to filter all the screenlayouts and button grids that begin with **SCO**
     - **RetailTillLayoutConfigurationEntity** - select **filter** and enter **SCO** against **screen layout ID**
@@ -48,9 +52,7 @@ The following document describes the procedure to export and import POS screen l
     - **POS button grid buttons** - select **filter** and enter **SCO** against **Button grid ID**
     - **POS screen layouts** - select **filter** and enter **SCO** against **Screen layout ID**
     - **POS visual profiles** - select **filter** and enter **SCO** against **Profile number**
-**Note** - Filtering by specific values will mitigate the risk of accidental override in the import environments.
-
-![Filtering layout name.](media/filterforlayoutname.png)
+!Note** - Filtering by specific values will mitigate the risk of accidental override in the import environments.
 
 - Additionally if you want to filter specific range of images select the **Image ID** in **POS layout images** table and specify the image range example **60000..600026**.
    This selection will export all images from 60000 to 600026.
@@ -91,7 +93,7 @@ To do this you would need to add Layout size in the entity through a table join.
  - In the new enviroment head quarters , go to **Data management** and select **Import**.
  - Provide a group name **Import POS layouts** and select **Add file** under selected entities.
  - Select **Package** on **source data format**.
- - Choose the package and select **upload and add** and **close**.
+ - Choose the package from where you downloaded and select **upload and add** and **close**.
  - Once the entities are loaded select **entity sequence**.
  - Select **auto sequence** to sequence the entities considering the dependencies and select **OK**.
  - Select **Import** from the top menu bar.
