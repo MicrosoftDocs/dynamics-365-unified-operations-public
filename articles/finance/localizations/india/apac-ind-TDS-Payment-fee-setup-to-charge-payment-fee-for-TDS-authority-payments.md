@@ -4,17 +4,8 @@ description: Learn how to set up payment fees that are charged for Tax Deducted 
 author: kailiang
 ms.author: kailiang
 ms.date: 05/16/2023
-ms.topic: article
 ms.reviewer: johnmichalak
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.author: kailiang
 ms.topic: article
-ms.date: 02/12/2021
-ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-02-12
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.17
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
