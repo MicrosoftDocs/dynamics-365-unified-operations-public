@@ -1,6 +1,6 @@
 ---
 title: Get started with Electronic invoicing for Poland
-description: The article provides information that will help you get started with Electronic invoicing for Poland in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: The article provides information that will help you get started with Electronic invoicing for Poland.
 author: ikondratenko
 ms.date: 05/22/2024
 ms.topic: how-to
@@ -77,8 +77,7 @@ To review and update the the **Polish electronic invoice (PL)** electronic invoi
 1. Select the **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
 1. Select **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment depending on implementation stage: *Test*, *Demo*, or *Prod*.
 
-   ![Screenshot of the feature setup configuration.](e-inv-pol-feature-setup.jpg)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+   :::image type="content" source="e-inv-pol-feature-setup.jpg" alt-text="Screenshot of the feature setup configuration."::: 
 
 1. Repeat steps 5 through 9 for the **Get invoice status from KSeF** action.
 1. Select **Save** and close the page.
@@ -97,8 +96,7 @@ Some additional parameters must be configured directly in Finance.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Advance invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-   ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](e-inv-pol-doc-parameters.jpg)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+   :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page."::: 
  
 1. For the **Customer Invoice journal** table name, select **Response types**.
 1. Select **New** to create a response type, and enter the following values:
@@ -107,14 +105,12 @@ Some additional parameters must be configured directly in Finance.
    - In the **Submission status** field, select **Pending**.
    - In the **Model mapping** field, select **KSeF response data import format (PL)**.
 
-   ![Screenshot of the setup of the Response type on the Electronic document tab of the Electronic document parameters page.](e-inv-pol-response-type.jpg)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+   :::image type="content" source="e-inv-pol-response-type.jpg" alt-text="Screenshot of the setup of the Response type on the Electronic document tab of the Electronic document parameters page."::: 
 
    > [!NOTE]
    > **ResponseData** is the default name for the response type. If you need to change it, make sure that is coincides with the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio** \> **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Polish electronic invoice (PL)** Electronic invoicing feature is selected. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup, and then select **Edit** or **View** depending on feature version status.
    > 
-   > ![Screenshot of the setup of the Response variable of the Feature setup.](e-inv-pol-response-data.jpg)
-   > :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+   > :::image type="content" source="e-inv-pol-response-data.jpg" alt-text="Screenshot of the setup of the Response variable of the Feature setup."::: 
     
 1. Repeat steps 6 through 7 for the **Project invoice** and **Advance invoice** electronic documents.
 1. Save your changes and close the page.
@@ -169,8 +165,7 @@ You can add any additional arbitrary data to invoices. This data will be put in 
 1. Add as many additional document properties as you require.
 1. Save your changes and return to the **Electronic document property types** page.
 
-   ![Property type added on the Electronic document property types page.](../media/e-invoicing-pol-parameters.jpg)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+   :::image type="content" source="../media/e-invoicing-pol-parameters.jpg" alt-text="Property type added on the Electronic document property types page."::: 
 
 
 #### Enter additional data
@@ -181,8 +176,7 @@ Follow these steps to enter additional invoice data.
 1. Select an invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
 1. Enter a required value. This value will be used in the *Wartosc* field in the resulting XML file of an e-invoice.
 
-    ![Value entered on the Electronic document properties page.](../media/e-invoicing-pol-values.jpg)
-   :::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+   :::image type="content" source="../media/e-invoicing-pol-values.jpg" alt-text="Value entered on the Electronic document properties page."::: 
 
 > [!NOTE]
 > You can enter additional data for project invoices in a similar way at **Project management and accounting** \> **Project invoices** \> **Project invoice**.
@@ -193,7 +187,7 @@ After you complete all the required configuration steps, you can generate and su
 
 You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information about the submission log, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-![Screenshot of the submission log.](e-inv-pol-submission-log.jpg)
+:::image type="content" source="e-inv-pol-submission-log.jpg" alt-text="Screenshot of the submission log."::: 
 
 ## Receive incoming electronic invoices
 
@@ -203,8 +197,7 @@ You can inquire about the results of a submission by going to **Organization adm
 1. On the **Setups** tab, in the grid, select **Import vendor invoice derived**, and then select **Edit**.
 1. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the [name of the data channel](#ImpChn). Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
 
-![Screenshot of the import channel configuration in the feature setup.](e-inv-pol-import-channel.jpg)
-:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+:::image type="content" source="e-inv-pol-import-channel.jpg" alt-text="Screenshot of the import channel configuration in the feature setup."::: 
 
 1. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [Client ID](#ClID) that you previously created.
 1. Select **Public key** parameter, and then, in the **Value** field, select the name of the [Public key](#PK) that you previously created.
@@ -213,12 +206,11 @@ You can inquire about the results of a submission by going to **Organization adm
 1. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSEF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
 1. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
 
-![Screenshot of the import applicability rules configuration in the feature setup.](e-inv-pol-import-apprules.jpg)
+:::image type="content" source="e-inv-pol-import-apprules.jpg" alt-text="Screenshot of the import applicability rules configuration in the feature setup."::: 
 
 1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
 
-![Screenshot of the output file configuration in the feature setup.](e-inv-pol-import-outputfile.jpg)
-:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+:::image type="content" source="e-inv-pol-import-outputfile.jpg" alt-text="Screenshot of the output file configuration in the feature setup."::: 
 
 1. Select **Save** and close the page.
 1. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
@@ -239,9 +231,7 @@ Some additional parameters must be configured directly in Finance.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
 1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the data channel name.
 
-![Screenshot of the output channel configuration in Electronic reporting.](e-inv-pol-import-config.jpg)
-:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
-
+:::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting."::: 
 
 1. Save your changes and complete the derived configuration.
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -250,8 +240,7 @@ Some additional parameters must be configured directly in Finance.
 1. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
 1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 
-![Screenshot of the import channel configuration in Electronic document parameters.](e-inv-pol-import-output.jpg)
-:::image type="content" source="media/folder-with-same-name-as-article-file/image-description.png" alt-text="Alt text that describes the content of the image."::: 
+:::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters."::: 
 
 1. Select **Save** and close the page.
 
