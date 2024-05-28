@@ -91,6 +91,8 @@ To review and update the the **Polish electronic invoice (PL)** electronic invoi
 
 Some additional parameters must be configured directly in Finance.
 
+To configure electronic document parameters, follow these steps.
+
 1. Make sure that the country/region-specific ER configurations that are required for Poland are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Advance invoice** table names.
@@ -123,7 +125,11 @@ The primary address of the legal entity must be in Poland.
 
 ### Configure legal entity data
 
+To configure the legal entity data, complete the steps in each of the following sections.
+
 #### Enter a legal entity's address
+
+To enter a legal entity's address, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
@@ -133,12 +139,18 @@ The primary address of the legal entity must be in Poland.
 
 #### Enter a legal entity's tax registration number
 
+To enter a legal entity't tax registration number, follow these steps.
+
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's tax identification number (NIP).
 
 ### Configure customer data
 
+To configure the customer data, complete the steps in each of the following sections.
+
 #### Enter a customer's address
+
+To enter a customer's address, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Addresses** FastTab, add a valid address for the customer.
@@ -148,6 +160,8 @@ The primary address of the legal entity must be in Poland.
 
 #### Enter a customer's tax registration number
 
+To enter a customer' tax registration number, follow these steps.
+
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's tax identification number (NIP).
 
@@ -156,6 +170,8 @@ The primary address of the legal entity must be in Poland.
 You can add any additional arbitrary data to invoices. This data will be put in a special section of electronic invoices that is named *DodatkowyOpis*.
 
 #### Configure electronic document properties
+
+To configure electronic document properties, follow these steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to add a property type.
@@ -167,10 +183,9 @@ You can add any additional arbitrary data to invoices. This data will be put in 
 
    :::image type="content" source="../media/e-invoicing-pol-parameters.jpg" alt-text="Property type added on the Electronic document property types page."::: 
 
+#### Enter additional invoice data
 
-#### Enter additional data
-
-Follow these steps to enter additional invoice data.
+To ender invoice additional date, follow these steps.
 
 1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 1. Select an invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
@@ -191,7 +206,7 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Receive incoming electronic invoices
 
-<a id="Import"></a>Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
+<a id="Import"></a>Complete the following configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
 
 1. Go to **Globalization Studio** \> **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
 1. On the **Setups** tab, in the grid, select **Import vendor invoice derived**, and then select **Edit**.
