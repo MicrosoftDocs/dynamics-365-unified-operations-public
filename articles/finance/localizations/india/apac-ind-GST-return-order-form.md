@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Return orders
-description: This article explains how to create a return order.
+description: Learn how to create a return order, including step-by-step processes on navigating the return order page and sales order page.
 author: EricWangChen
-ms.date: 06/04/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 06/04/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Return orders

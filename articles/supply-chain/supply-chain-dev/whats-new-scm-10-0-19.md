@@ -2,15 +2,15 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management version 10.0.19 (June 2021) 
 description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.19. 
 author: kamaybac
-ms.date: 04/23/2021
-ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Developer, IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2021-04-23
-ms.dyn365.ops.version: 10.0.19
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: conceptual
+ms.date: 05/28/2024
+audience: Application User
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management version 10.0.19 (June 2021)
@@ -61,7 +61,7 @@ We have recently added or significantly updated the following help articles. The
 | Procurement and sourcing | [Category requests from vendors](../procurement/category-requests-from-vendors.md) |
 | Product information management | [Manage unit of measure](../pim/tasks/manage-unit-measure.md)<br><br>[Product configuration model calculations](../pim/config-model-calculations.md) |
 | Production control | [Unified number sequence for job IDs](../production-control/unified-job-ids.md) |
-| Transportation management | [LTL classes](../transportation/ltl-class.md)<br><br>[NMFC codes](../transportation/nmfc-codes.md) |
+| Transportation management | [LTL classes](../transportation/ltl-class.md)<br><br>[Work with NMFC codes in Dynamics 365 Supply Chain Management](../transportation/nmfc-codes.md) |
 | Warehouse management, wave creation and processing | [Wave creation and processing](../warehousing/wave-processing.md)<br><br>[Warehouse parameters for wave processing](../warehousing/wave-warehouse-parameters.md)<br><br>[Wave templates](../warehousing/wave-templates.md)<br><br>[Wave allocation](../warehousing/wave-allocation-method.md)<br><br>[Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerization](../warehousing/wave-containerization.md)<br><br>[Wave execution notifications](../warehousing/wave-execution-notifications.md) |
 
 ## Additional resources

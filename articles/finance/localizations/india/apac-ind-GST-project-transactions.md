@@ -1,13 +1,13 @@
 ---
 title: Goods and Service Tax (GST) project transactions
-description: This article provides information about transactions for Goods and Service Tax (GST) projects.
+description: Learn about transactions for Goods and Service Tax (GST) projects, including processes for creating project categories and project quotations.
 author: EricWangChen
-ms.date: 07/23/2019
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: India
 ms.author: wangchen
+ms.topic: article
+ms.date: 07/23/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: 7.3.1
 ---

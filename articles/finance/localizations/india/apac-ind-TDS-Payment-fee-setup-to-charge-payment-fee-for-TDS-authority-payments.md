@@ -1,15 +1,13 @@
 ---
 title: Set up payment fees for TDS authority payments
-description: This article explains how to set up payment fees that are charged for Tax Deducted at Source (TDS) authority payments.
+description: Learn how to set up payment fees that are charged for Tax Deducted at Source (TDS) authority payments, including a step-by-step process.
 author: kailiang
 ms.author: kailiang
 ms.date: 05/16/2023
-ms.topic: article
 ms.reviewer: johnmichalak
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
-ms.search.region: Global
-ms.search.validFrom: 2021-02-12
+ms.topic: article
 ms.dyn365.ops.version: AX 10.0.17
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Set up payment fees for TDS authority payments
@@ -20,8 +18,7 @@ This article explains how to set up payment fees that are charged for Tax Deduct
 
 1. Go to **Accounts payable \> Payment setup \> Payment fee**.
 
-   :::image type="content" source="../media/apac-ind-TDS-28.png" alt-text="Screenshot of the Payment fee page."::: 
-
+    [![Payment fee page.](../media/apac-ind-TDS-28.png)]
 
 3. Select **New** to create a payment fee, and enter the required details.
 4. In the **Fee type** field, select the type of payment fee:
@@ -36,9 +33,9 @@ This article explains how to set up payment fees that are charged for Tax Deduct
 6. Enter the other required details.
 7. On the Action Pane, select **Payment fee setup** to open the **Payment fee setup** page, where you can set up payment fees for various combinations of banks, methods of payment, payment specifications, currencies, and date intervals.
 
-   :::image type="content" source="../media/apac-ind-TDS-21.png" alt-text="Screenshot of the Payment fee setup page."::: 
+    [![Payment fee setup page.](../media/apac-ind-TDS-21.png)]
 
-9. On the **Overview** tab, in the **Groupings** field, specify which banks you're setting up the payment fee for:
+7. On the **Overview** tab, in the **Groupings** field, specify which banks you're setting up the payment fee for:
 
     - **Table** – The fee is valid for a specific bank account.
     - **Group** – The fee is valid for a specific bank group.
@@ -64,11 +61,10 @@ This article explains how to set up payment fees that are charged for Tax Deduct
 21. In the **Item sales tax group** field, select the item sales tax group to use to calculate the item sales tax for the fee amount.
 22. Select the **Interval** tab. 
 
-    :::image type="content" source="../media/apac-ind-TDS-23.png" alt-text="Screenshot of the Interval tab."::: 
+    [![Interval tab.](../media/apac-ind-TDS-23.png)]
 
-
-24. In the **Days** field, enter the number of days between the posting date (discounting date) of the payment and the due date of the promissory note.
-25. In the **Percentage/Amount** field, select whether the specification is a percentage or a set amount.
-26. In the **Fee amount** field, enter the amount of the fee as either a percentage of the payment or the amount for one payment.
-27. Close the **Payment fee setup** page.
-28. Close the **Payment fee** page.
+23. In the **Days** field, enter the number of days between the posting date (discounting date) of the payment and the due date of the promissory note.
+24. In the **Percentage/Amount** field, select whether the specification is a percentage or a set amount.
+25. In the **Fee amount** field, enter the amount of the fee as either a percentage of the payment or the amount for one payment.
+26. Close the **Payment fee setup** page.
+27. Close the **Payment fee** page.

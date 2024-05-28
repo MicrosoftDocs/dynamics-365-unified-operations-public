@@ -1,8 +1,8 @@
 ---
 title: Single voucher with multiple customer or vendor records
 description: Learn about what happens when you post a single voucher with multiple customer or vendor records, which will be discontinued in future versions of Dynamics 365 Finance.
-author: twheeloc
-ms.author: shpandey
+author: sunfzam
+ms.author: zezhangzhao
 ms.topic: article
 ms.date: 08/22/2017
 ms.reviewer: twheeloc

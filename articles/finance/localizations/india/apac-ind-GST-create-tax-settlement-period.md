@@ -1,13 +1,13 @@
 ---
 title: Create a tax settlement period
-description: This article explains how to create a tax settlement period. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
+description: Learn how to create a tax settlement period, part of the master data setup required to make the India localization solution for Goods and Services Tax available.
 author: EricWangChen
-ms.date: 06/04/2019
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: India
 ms.author: wangchen
+ms.topic: article
+ms.date: 06/04/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 ---

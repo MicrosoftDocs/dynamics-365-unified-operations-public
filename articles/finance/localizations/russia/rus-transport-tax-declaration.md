@@ -1,16 +1,16 @@
 ---
 title: Transport tax declaration (Russia)
-description: This article provides information about the Transport tax declaration for Russia.
+description: Learn about the Transport tax declaration for Russia, including outlines on setting up transport taxes and setting up tax allowances.
 author: AdamTrukawka
-ms.date: 06/11/2019
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/11/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2019-01-04
-ms.dyn365.ops.version: 10.0.1
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.1
 ---
 
 # Transport tax declaration (Russia)

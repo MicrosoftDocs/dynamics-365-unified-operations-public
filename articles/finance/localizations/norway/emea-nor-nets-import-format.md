@@ -1,16 +1,16 @@
 ---
 title: Nets import format
-description: This article provides information about importing payment information in the Nets format.
+description: Learn about importing payment information in the Nets format, including an outline and step-by-step process in importing Nets bank files.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Norway
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Nets import format

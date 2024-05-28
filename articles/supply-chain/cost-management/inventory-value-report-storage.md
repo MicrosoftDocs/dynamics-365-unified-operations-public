@@ -2,15 +2,14 @@
 title: Inventory value reports
 description: This article explains how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities and amounts.
 author: JennySong-SH
-ms.date: 11/28/2022
-ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: yanansong
-ms.search.validFrom: 2021-10-19
-ms.dyn365.ops.version: 10.0.9
+ms.reviewer: kamaybac
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
+ms.topic: how-to
+ms.date: 05/27/2024
+audience: Application User
+ms.custom:
+  - bap-template
 ---
 
 # Inventory value reports

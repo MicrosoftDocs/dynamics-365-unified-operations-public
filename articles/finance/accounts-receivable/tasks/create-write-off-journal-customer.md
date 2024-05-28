@@ -1,10 +1,10 @@
 --- 
 title: Create a write-off journal for a customer
 description: Learn about how to create a write-off journal for customers, including how to set up the parameters for write-offs and then write off transactions.
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: prabhatb-ship-it
+ms.author: prabhatb
 ms.topic: how-to
-ms.date: 05/23/2023
+ms.date: 05/23/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 

@@ -1,16 +1,16 @@
 ---
 title: Fixed asset counting (Russia)
-description: This article provides information about fixed asset counting for Russia.
+description: Learn about fixed asset counting for Russia, including a step-by-step process for registering fixed asset counting, which is done before the annual reporting.
 author: AdamTrukawka
-ms.date: 09/18/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/18/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ms.search.form: RAssetTable, RAssetComponents
+ms.dyn365.ops.version: 8.1
 ---
 
 # Fixed asset counting (Russia)

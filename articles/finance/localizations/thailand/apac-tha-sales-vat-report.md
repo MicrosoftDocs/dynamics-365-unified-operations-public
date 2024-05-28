@@ -1,13 +1,13 @@
 ---
 title: VAT reports
-description: This article describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
+description: Learn about the reports that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
 author: AdamTrukawka
-ms.date: 01/25/2021
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: atrukawk
+ms.topic: article
+ms.date: 01/25/2021
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: 
 ms.search.validFrom: 1900-01-02
 ms.dyn365.ops.version: 
 ms.search.scope: 

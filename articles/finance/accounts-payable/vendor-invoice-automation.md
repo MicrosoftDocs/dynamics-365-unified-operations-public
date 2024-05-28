@@ -1,8 +1,8 @@
 ---
 title: Invoice automation for scanned documents
 description: Learn about the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
-author: twheeloc
-ms.author: shpandey
+author: sunfzam
+ms.author: zezhangzhao
 ms.topic: article
 ms.date: 03/24/2021
 ms.custom:

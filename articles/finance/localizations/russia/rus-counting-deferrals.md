@@ -1,16 +1,16 @@
 ---
 title: Deferrals counting (Russia)
-description: This article explains how to do deferrals counting.
+description: Learn how to do deferrals counting, including a table that defines various tabs and a step-by-step process creating deferrals and post writing-off transactions.
 author: AdamTrukawka
-ms.date: 06/28/2019
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/28/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.dyn365.ops.version: 10.0.1
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.1
 ---
 
 # Deferrals counting (Russia)

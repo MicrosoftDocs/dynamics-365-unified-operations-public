@@ -6,10 +6,12 @@ ms.author: weijiesa
 ms.reviewer: kamaybac
 ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 ms.topic: how-to
-ms.date: 10/17/2022
+ms.date: 05/22/2024
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Commercial invoices

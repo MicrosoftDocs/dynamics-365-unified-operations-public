@@ -1,13 +1,13 @@
 ---
 title: Tax reimbursement documents for Hungary
-description: This article explains how to set up and create tax reimbursement documents for Hungary.
+description: Learn how to set up and create tax reimbursement documents for Hungary, including outlines on setting up parameters and default exchange rates.
 author: AdamTrukawka
-ms.date: 03/27/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Austria
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/27/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ---
