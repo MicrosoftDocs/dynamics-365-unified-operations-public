@@ -12,8 +12,7 @@ audience: Application User
 
 # Install Business performance analytics
 
->[!NOTE]
->The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. Participate in our Public preview here: <https://aka.ms/InstallBPA>.
+[This article is prerelease documentation and is subject to change.]
 
 This article describes how to install Business performance analytics. 
 

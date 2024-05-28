@@ -1,16 +1,16 @@
 ---
 title: Competence date for transactions in Italy
-description: This article provides information about the competence date for transactions functionality in Italy.
+description: Learn about the competence date for transactions functionality in Italy, including a step-by-step process for turning on the competence date functionality.
 author: AdamTrukawka
-ms.date: 05/22/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Italy
 ms.author: atrukawk
+ms.topic: article
+ms.date: 05/22/2023
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-ms.custom: 
 ---
 
 # Competence date for transactions in Italy

@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: TDS on purchases of goods
-description: This article will help you learn how to post Tax Deducted at Source (TDS) on purchases of goods in Microsoft Dynamics 365.
+description: Learn how to post Tax Deducted at Source (TDS) on purchases of goods in Microsoft Dynamics 365, including an outline on threshold limit amounts.
 author: EricWangChen
-ms.date: 07/08/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 07/08/2019
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: India
+ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
 
 # TDS on purchases of goods

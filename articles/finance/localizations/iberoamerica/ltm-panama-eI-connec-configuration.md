@@ -1,12 +1,12 @@
 ---
 title: Set up electronic invoicing for Panama
-description: This article explains how to set up Microsoft Dynamics 365 Finance and Regulatory Configuration Service (RCS) to use electronic invoices formats for Panama.
-author: Cpicon85 
+description: Learn how to set up Microsoft Dynamics 365 Finance and Regulatory Configuration Service (RCS) to use electronic invoices formats for Panama.
+author: Cpicon85
+ms.author: v-cpicon
+ms.topic: article
 ms.date: 02/15/2024 
-ms.topic: Article
-ms.reviewer: johnmichalak
-ms.author: v-cpicon 
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Set up electronic invoicing for Panama

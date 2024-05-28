@@ -1,10 +1,10 @@
 ---
 title: Credit and collections overview
 description: Learn about the functionality for credit and collections, including overviews on credit management and collections management.
-author: twheeloc
-ms.author: twheeloc
+author: prabhatb-ship-it
+ms.author: prabhatb
 ms.topic: overview
-ms.date: 09/04/2019
+ms.date: 05/23/2024
 ms.reviewer: twheeloc  
 audience: Application User
 ms.search.region: Global

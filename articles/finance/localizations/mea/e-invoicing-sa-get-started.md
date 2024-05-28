@@ -1,18 +1,17 @@
 ---
 title: Get started with Electronic invoicing for Saudi Arabia - Phase two
-description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia (RCS).
+description: Learn about what will help you get started with phase two of Electronic invoicing for Saudi Arabia (RCS), including prerequisites.
 author: mrolecki
-ms.date: 11/22/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Saudi Arabia
 ms.author: mrolecki
-ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: AX 10.0.21
+ms.topic: article
+ms.date: 11/22/2022
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
+audience: Application User
+ms.search.region: Saudi Arabia
+ms.search.validFrom: 2021-10-15
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.21
 ---
 
 # Get started with Electronic invoicing for Saudi Arabia - Phase two
