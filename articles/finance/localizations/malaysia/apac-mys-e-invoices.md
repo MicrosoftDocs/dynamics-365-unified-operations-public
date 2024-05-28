@@ -158,6 +158,7 @@ Follow these steps to configure the structure of the postal address to define al
 
 1. Go to **Organization administration** \> **Globall address book** \> **Addresses** \> **Address setup** and make sure that the following mandatory elements are configured.
    - Country code
+   - Postal code
    - City name
    - Street
    - State code
