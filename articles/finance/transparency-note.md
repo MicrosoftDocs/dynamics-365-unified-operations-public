@@ -4,7 +4,7 @@ description: Learn about transparency FAQs for Microsoft Dynamics 365 Finance, w
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 6/15/2023
+ms.date: 5/29/2024
 ms.custom: transparency-note
 ms.reviewer: twheeloc
 ---
