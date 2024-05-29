@@ -3,7 +3,7 @@
 
 title: Cancel service orders  
 description: You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
-author: sorenva
+author: ChristianRytt
 ms.date: 01/19/2023
 ms.topic: article
 
@@ -19,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
