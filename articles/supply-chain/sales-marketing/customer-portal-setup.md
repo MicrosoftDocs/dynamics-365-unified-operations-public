@@ -71,7 +71,7 @@ After provisioning is completed, you can access the Customer portal on the **Act
 
 ## Update the Customer portal
 
-More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You will have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
+Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You will have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
 
 ## Additional resources
 
