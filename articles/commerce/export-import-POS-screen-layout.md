@@ -1,6 +1,6 @@
 ---
-title: Move point of sale screen layouts to a new environment
-description: This article describes how to move point of sale screen layouts to a new environment in Microsoft Dynamics 365 Commerce.
+title: Export point of sale screen layouts to a new environment
+description: This article describes how to export point of sale screen layouts to a new environment in Microsoft Dynamics 365 Commerce.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: article 
@@ -15,11 +15,13 @@ ms.search.validFrom: 2024-01-20
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to move point of sale screen layouts to a new environment in Microsoft Dynamics 365 Commerce.
+This article describes how to export point of sale screen layouts to a new environment in Microsoft Dynamics 365 Commerce.
 
 The following document describes the procedure to export and import POS screen layouts to a new environment.
 
 ## Export layout data
+
+In this example, we'll export layout data specific to self-checkout (SCO).
 
 To export layout data from an environment, follow these steps.
 
@@ -37,8 +39,7 @@ To export layout data from an environment, follow these steps.
   
 1. In the dialog, in the **Target data format** drop-down list, select **XML-Element**.
 1. Set the **Skip staging** option to **No**.
-
-For each of the following entities, filter for the entity under **Entities**, select the entity result in the **Entity** column, and select **Add selected**.
+1. For each of the following entities, filter for the entity under **Entities**, select the entity result in the **Entity** column, and select **Add selected**.
     - **Layout sizes** (Include this entity only when you're exporting new layout sizes that don't exist in the new environment.)
     - **RetailTillLayoutConfigurationEntity**
     - **POS button grid**
@@ -48,31 +49,33 @@ For each of the following entities, filter for the entity under **Entities**, se
     - **POS screen layout button grid zones**
     - **POS screen layout image zones**
     - **POS visual profiles**
-      
-    ![POS export entities.](media/POSexportedentities.png)
-      
-- Use **filter** column to only select specific layouts for export. Example **SCO**.
+1. Select **Close** to close the dialog.     
+    ![POS export entities.](media/POSexportedentities.png)    
+1. For the **RetailTillLayoutConfigurationEntity** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID**, in the **Criteria** column, enter "SCO", and then select **OK**. 
+1. For the **POS button grid** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Button grid ID**, in the **Criteria** column, enter "SCO", and then select **OK**.
+1. For the **POS button grid buttons** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Button grid ID**, in the **Criteria** column, enter "SCO", and then select **OK**.
+1. For the **POS screen layouts** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID*, in the **Criteria** column, enter "SCO", and then select **OK**.
+1. For the **POS visual profiles** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Profile number**, in the **Criteria** column, enter "SCO", and then select **OK**.
 
-  ![Buttongridbutton.](media/buttongridbuttons.png)
-  ![Buttongridfilter.](media/buttongridfilter.png)
-  ![retailtilllayout.](media/retailtilllayout.png)
-  ![screenlayoutfilter.](media/screenlayoutfilter.png)
-  ![visualprofile.](media/visualprofilefilter.png)
-  
-- select the following entities and apply the filter as follows. In the example we're trying to filter all the screen layouts and button grids that begin with **SCO**
-    - **RetailTillLayoutConfigurationEntity** - select **filter** and enter **SCO** against **screen layout ID**
-    - **POS button grid** - select **filter** and enter **SCO** against **Button grid ID** 
-    - **POS button grid buttons** - select **filter** and enter **SCO** against **Button grid ID**
-    - **POS screen layouts** - select **filter** and enter **SCO** against **Screen layout ID**
-    - **POS visual profiles** - select **filter** and enter **SCO** against **Profile number**
+    > [!NOTE]
+    > Filtering by specific criteria mitigates the risk of accidental override in the import environment.
 
-> [!NOTE]
-> Filtering by specific values will mitigate the risk of accidental override in the import environments.
+    ![Buttongridbutton.](media/buttongridbuttons.png)
+    ![Buttongridfilter.](media/buttongridfilter.png)
+    ![retailtilllayout.](media/retailtilllayout.png)
+    ![screenlayoutfilter.](media/screenlayoutfilter.png)
+    ![visualprofile.](media/visualprofilefilter.png)
 
-- Additionally if you want to filter specific range of images select the **Image ID** in **POS layout images** table and specify the image range example **60000..600026**.
-   This selection will export all images from 60000 to 600026.
+1. If you want to filter for a specific range of images, follow these steps:
+    1. For the **POS layout images** entity, in the **Filter** column, select the funnel symbol.
+    1. In the **Inquiry** dialog, for the entity where the **Field** value is **Image ID**, in the **Criteria** column, enter a number range for the image IDs in the format \<Image ID start\>..\<Image ID end\> (for example "60000..60026"), and then select **OK**. For this example, the selection exports all images with image IDs from 60000 to 600026.
 
-  ![Screenlayout image filter.](media/screenlayoutimagefilter.png)
+    ![Screenlayout image filter.](media/screenlayoutimagefilter.png)
 
 ### Add related tables
 
