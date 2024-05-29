@@ -3,7 +3,7 @@
 
 title: Develop and establish service agreements overview
 description: Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.
-author: sorenva
+author: ChristianRytt
 ms.date: 07/25/2019
 ms.topic: overview
 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
