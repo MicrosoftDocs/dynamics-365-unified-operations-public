@@ -1558,6 +1558,8 @@
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
           - name: Upload ER configurations and Globalization features as a Dataverse solution
             href: localizations/global/workspace/gsw-upload-er-config.md
+          - name: Create a Dataverse solution using upload into repository
+            href: localizations/global/workspace/gsw-upload-into-repository.md
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
