@@ -17,6 +17,8 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
+
 This article describes how to view and create inventory forecasts. You can create and view supply and demand forecast lines for items, item groups, item allocation keys, customer accounts, customer groups, vendor accounts, and vendor groups.
 
 For each forecast line, you can select the forecast model that is used. You can then specify the item or item group, plus the quantity or the transaction amount. You can also set up a time schedule for allocating the forecast quantity.

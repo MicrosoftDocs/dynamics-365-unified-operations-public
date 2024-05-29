@@ -1,0 +1,2 @@
+> [!TIP]
+> This article describes demand-forecasting functionality that's built into Dynamics 365 Supply Chain Management. For an even better planning and forecasting experience, we recommend that you try The Demand planning app for Microsoft Dynamics 365 Supply Chain Management, which is Microsoft's next-generation collaborative demand-planning solution. For details, see the [Demand planning home page](/dynamics365/supply-chain/demand-planning/demand-planning-home-page).

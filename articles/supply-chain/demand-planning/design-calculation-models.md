@@ -176,6 +176,19 @@ f(x) = a(x) &times; Price(product-ID)
 - **Primary price list** – Select the primary data table that contains your price list. The list includes all the tables that are currently defined for use with Demand planning. (For more information, see [Set up tables](import-data.md).) The price list must include columns for product IDs and prices.
 - **Fallback price list** – If the system can't find a matching price in the primary price list, it checks any price list that you select here.
 
+### Phase in/out tiles
+
+Phase in/out tiles modify the values of a data column in a time series to simulate the gradual phase in of a new element (such as a new product or warehouse) or phase out of an old element. The phase in/out calculation lasts for a specific period and uses values drawn from the same time series (from either the same data column being adjusted or another one representing a similar element).
+
+Phase in/out tiles have the following fields that you can set:
+
+- **Step name** – The specific name of the tile. This name is also shown in the flowchart.
+- **Description** – A short description of the tile.
+- **Created by** – The user who created the tile.
+- **Rule group** – The name of the rule group that defines the calculation to be made by the tile.
+
+For more information about phase in/out functionality, including details of how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-inout.md).
+
 ### Ratio in percentage tiles
 
 *Ratio in percentage* tiles calculate a ratio in percentage, based on two input time series. You might use this type of tile, for example, to calculate the error percentage of a previous forecast, based on a historical demand and forecast time series.

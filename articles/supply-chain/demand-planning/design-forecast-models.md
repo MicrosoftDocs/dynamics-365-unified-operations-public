@@ -126,11 +126,28 @@ This section describes the purpose of each type of forecast tile. It also explai
 - *Prophet* – Facebook Prophet
 - *Best fit model*
 
-## Finance and operations – Azure Machine Learning tiles
+### Finance and operations – Azure Machine Learning tiles
 
 If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
 
 For information about how to set up the Demand planning app to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
+
+### Phase in/out tiles
+
+Phase in/out tiles modify the values of a data column in a time series to simulate the gradual phase in of a new element (such as a new product or warehouse) or phase out of an old element. The phase in/out calculation lasts for a specific period and uses values drawn from the same time series (from either the same data column being adjusted or another one representing a similar element).
+
+Phase in/out tiles have the following fields that you can set:
+
+- **Step name** – The specific name of the tile. This name is also shown in the flowchart.
+- **Description** – A short description of the tile.
+- **Created by** – The user who created the tile.
+- **Rule group** – The name of the rule group that defines the calculation to be made by the tile.
+
+When you are setting up your forecast model, the position of the phase in/out tile affects the calculation result. To apply the phase in/out calculation to the historical sales numbers, then place the phase in/out tile before the forecast tile (as shown on the left side of the following illustration). To apply the phase in/out calculation to the forecasted result, then place the phase in/out tile after the after tile (as shown on the right side of the following illustration).
+
+:::image type="content" source="media/phase-tile-position.png" alt-text="The position of phase in/out tiles affect calculation result." lightbox="media/phase-tile-position.png":::
+
+For more information about phase in/out functionality, including details of how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-inout.md).
 
 ### Save tiles
 
