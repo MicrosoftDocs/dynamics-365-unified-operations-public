@@ -18,6 +18,10 @@ ms.reviewer: twheeloc
 
 Yes, it requires use of a Tier-2 or greater Sandbox instance. It won't work on Tier CHE. 
 
+## How long will my archival job take to complete?
+
+Data archival jobs are assigned a lower priority by the application. The duration of an archival job is dependent upon the data volumes. A job can take around 7-14 days based on data volume.
+
 ## After data is archived, can I access the live data and the archived data from Dataverse long term retention?
 
 Yes, you can use Microsoft Fabric (with the Power BI option) to query live and archived data. Dataverse makes it easy to set up Fabric.
@@ -29,10 +33,6 @@ Yes, an application-specific inquiry page is available so that you can view arch
 ## Can I restore data from Dataverse long term retention back to live tables?
 
 No, data restore from Dataverse long term retention to live tables isn't supported. 
-
-## What if I don't want to use long-term retention? I just need to delete data from the Finance database.
-
-Purge from history is planned for a future release.
 
 ## Do I save the maximum database capacity if I purge data from history tables?
 
@@ -65,6 +65,20 @@ You can also view the archived data from within the Dynamics 365 Finance and Ope
 Application data copied to your own data lake using [Azure Synapse Link,](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) isn't deleted from your data lake when you archive with Dataverse long term retention.
 
 Application data that's copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](../analytics/export-entities-to-your-own-database.md) or [Export to data lake](../data-entities/finance-data-azure-data-lake.md) are deleted from your data lake when you archive with Dataverse long term retention.
+
+## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform is failing?
+Please ensure that all the prerequisite setup steps are completed, as incorrect setup can lead to installation failure.
+
+Please also ensure that you have logged into your Dynamics 365 Finance and Operations application in the last 30 days, as installation can fail if the organization has been tagged as dormant. If you are logging in for the first time after 30 days, it may take up to 4 hours for your organization to be flagged as active. 
+
+If you encounter the following error messages during the install attempt, then wait for a few minutes and retry till it succeeds:
+ - Status code 503 (Service unavailable)
+ - Status code 500 (Solution operation failed due to another import blocking the operation)
+ - Solution import progress has been stuck
+
+If you encounter a ‘Cannot insert duplicate key exception when executing non-query’ error when trying to upgrade the app, then please delete the ‘ArchiveServicePermissions_PROD’ solution from the maker portal solutions page and then reattempt the upgrade.
+
+
 
 
 
