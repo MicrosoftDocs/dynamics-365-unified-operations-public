@@ -147,7 +147,7 @@ When you are setting up your forecast model, the position of the phase in/out ti
 
 :::image type="content" source="media/phase-tile-position.png" alt-text="The position of phase in/out tiles affect calculation result." lightbox="media/phase-tile-position.png":::
 
-For more information about phase in/out functionality, including details of how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-inout.md).
+For more information about phase in/out functionality, including details of how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-in-out.md).
 
 ### Save tiles
 

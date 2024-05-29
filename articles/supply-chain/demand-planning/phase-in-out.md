@@ -40,13 +40,13 @@ To be able to add this calculation to a forecast model, you'd set up a phase in/
 
 The following table shows an example of forecasted sales before applying the phase in and phase out calculations.
 
-|            | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+| Product    | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Speaker V1 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 |
 
 The following table shows an example of forecasted sales after applying the phase in and phase out calculations.
 
-|            | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+| Product    | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Speaker V1 | 60  | 60  | 60  | 60  | 60  | 60  | 25  | 25  | 25  | 25  | 25  | 25  |
 | Speaker V2 | 40  | 40  | 40  | 40  | 40  | 40  | 75  | 75  | 75  | 75  | 75  | 75  |

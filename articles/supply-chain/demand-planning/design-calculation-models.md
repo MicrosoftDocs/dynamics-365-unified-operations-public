@@ -187,7 +187,7 @@ Phase in/out tiles have the following fields that you can set:
 - **Created by** – The user who created the tile.
 - **Rule group** – The name of the rule group that defines the calculation to be made by the tile.
 
-For more information about phase in/out functionality, including details of how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-inout.md).
+For more information about phase in/out functionality, including details of how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-in-out.md).
 
 ### Ratio in percentage tiles
 
