@@ -1,6 +1,6 @@
 ---
-title: Install, enable, and set up the Demand planning app
-description: This article describes how to install, enable, and set up the Demand planning app for Microsoft Dynamics 365 Supply Chain Management.
+title: Install, enable, and set up Demand planning
+description: This article describes how to install, enable, and set up Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -12,11 +12,11 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Install, enable, and set up the Demand planning app
+# Install, enable, and set up Demand planning
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to install, enable, and set up the Demand planning app for Microsoft Dynamics 365 Supply Chain Management. It explains how to use Power Platform admin center to install the Demand planning app in your tenant and set up the feature in Supply Chain Management.
+This article describes how to install, enable, and set up Demand planning in Microsoft Dynamics 365 Supply Chain Management. It explains how to use Power Platform admin center to install Demand planning in your tenant and set up the feature in Supply Chain Management.
 
 ## Prerequisites
 
@@ -27,20 +27,20 @@ To use Demand planning with Supply Chain Management, you must be running one of 
 - Supply Chain Management version 10.0.38 (any build) or later
 
 > [!IMPORTANT]
-> **The Demand planning app no longer supports Supply Chain Management "Cloud hosted" environments.**
+> **Demand planning no longer supports Supply Chain Management "Cloud hosted" environments.**
 >
-> As of February 28, 2024, the Demand planning app no longer supports Supply Chain Management environments of type "Cloud hosted". Thereafter, you can no longer import, export, or synchronize data between the Demand planning app and Supply Chain Management environments of this type.
+> As of February 28, 2024, Demand planning no longer supports Supply Chain Management environments of type "Cloud hosted". Thereafter, you can no longer import, export, or synchronize data between Demand planning and Supply Chain Management environments of this type.
 >
-> If you are running a "Cloud hosted" environment of Supply Chain Management and wish to continue using Demand planning, then you must switch to a Supply Chain Management environment of type "Tier-2" or above or set up a [unified development environment](/power-platform/developer/unified-experience/finance-operations-dev-overview). You must then create new import and export profiles in your Demand planning app and configure them to connect to your new Supply Chain Management environment.
+> If you are running a "Cloud hosted" environment of Supply Chain Management and wish to continue using Demand planning, then you must switch to a Supply Chain Management environment of type "Tier-2" or above or set up a [unified development environment](/power-platform/developer/unified-experience/finance-operations-dev-overview). You must then create new import and export profiles in Demand planning and configure them to connect to your new Supply Chain Management environment.
 
-## Install the Demand planning app in Power Platform admin center
+## Install Demand planning in Power Platform admin center
 
 > [!IMPORTANT]
 > You must install Demand planning on the same tenant as your Supply Chain Management environment to ensure that the built-in import and export profiles can be used to import and export data.
 >
 > Due to a current technical limitation, you can't install Demand planning on your tenant's default environment.
 
-Follow these steps to install the Demand planning app in Power Platform admin center.
+Follow these steps to install Demand planning in Power Platform admin center.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Resources** \> **Dynamics 365 apps** on the left navigation pane.
@@ -55,7 +55,7 @@ Follow these steps to enable and configure Demand planning in Supply Chain Manag
 
 1. In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the *Demand Planning* feature.
 1. Go to **System administration** \> **Setup** \> **Demand planning app parameters**.
-1. On the **General** tab, in the **Demand planning app URL** field, enter the URL where the Demand planning app is installed.
+1. On the **General** tab, in the **Demand planning app URL** field, enter the URL where Demand planning is installed.
 1. Go to **Master Planning** \> **Setup** \> **Master planning parameters**.
 1. On the **Number sequences** tab, in the grid, find the row where the **Reference** field is set to *Demand forecast sequence number*. Then select the link in the **Number sequence** column for that row.
 1. On the details page for the selected number sequence, on the **Performance** FastTab, set the following field:

@@ -56,7 +56,7 @@ The best fit model uses machine learning to determine which of the other availab
 
 ### Custom Azure Machine Learning algorithm
 
-If you have a custom Microsoft Azure Machine Learning algorithm that you want to use with your forecasting models, you can use it in the Demand planning app.
+If you have a custom Microsoft Azure Machine Learning algorithm that you want to use with your forecasting models, you can use it in Demand planning.
 
 ## Create and customize a forecast model
 
@@ -128,9 +128,9 @@ This section describes the purpose of each type of forecast tile. It also explai
 
 ### Finance and operations – Azure Machine Learning tiles
 
-If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
+If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use Demand planning. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
 
-For information about how to set up the Demand planning app to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
+For information about how to set up Demand planning to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
 
 ### Phase in/out tiles
 
