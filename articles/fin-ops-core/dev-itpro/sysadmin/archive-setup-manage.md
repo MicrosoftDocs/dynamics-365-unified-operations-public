@@ -14,6 +14,23 @@ ms.reviewer: johnmichalak
 
 This article describes how to set up and manage archive data in Microsoft Dynamics 365 Finance.
 
+## Required privileges
+- In Power Platform: 
+  - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+    Follow these steps to confirm that you have these privileges:
+    1. In the Power Platform Admin Center, go to **Environments**.
+    2. Select the relevant environment.
+    3. In the **Access** section, select users.
+    4. Click **Installing user** > **Roles**. Confirm the necessary privileges.
+- In Microsoft Dynamics 365 Finance:
+   - The **System administrator** role in Microsoft Dynamics 365 Finance.
+    Follow these steps to confirm that you have these privileges:
+    1. In Dynamics 365 Finance, go to **System administration**.
+    2. Select **Users** > **Users**.
+    3. Click **Installing user** > **Roles**. Confirm the necessary permissions.
+- In Microsoft Dynamics Lifecycle Services:
+  - The **Organization Admin** role to create environments. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
+
 ## Prepare the environment
 
 To prepare your environment to archive data, follow these steps.
