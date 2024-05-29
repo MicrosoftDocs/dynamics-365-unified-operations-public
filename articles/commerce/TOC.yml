@@ -389,7 +389,7 @@
           - name: Store Commerce app for mobile platforms (preview)
             href: dev-itpro/store-commerce-mobile.md
           - name: Export POS screen layouts for import to a new environment
-          - href: export-pos-layouts.md
+            href: export-pos-layouts.md
           - name: Enable self-checkout in the Store Commerce app (preview)
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
