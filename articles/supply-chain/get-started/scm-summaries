@@ -1,0 +1,58 @@
+title: Summarization in Dynamics 365 Supply Chain Management 10.0.23 
+description: This article describes new summarization features in different forms in Microsoft Dynamics 365 Supply Chain Management. 
+author: benebotg
+ms.date: 05/29/2024
+ms.topic: article
+# ms.search.form: [Operations AOT form name to tie this article to]
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2021-10-15
+ms.dyn365.ops.version: 10.0.23
+ms.custom: evergreen
+---
+
+# Context aware summarization in Dynamics 365 Supply Chain Management 
+
+Powered by AI capabilities, new summaries will be available in the most used forms enabled by default for all users. 
+
+These features will be enabled by default on release 10.0.40 and they will be available on 10.0.38 PQU-5 and 10.0.39 PQU-3
+## Warehouse mobile app insights
+
+It shows the number of pick work lines, receive work lines and how many warehouse workers are online in the given warehouse where the user logged in. 
+
+It also gives insights into the kind of work, such as that it may be mostly picking sales orders, and the zone and location where most may be picked. It will also indicate the average load of items per order, average weight and volume of the items. 
+
+It is available from 10.0.38 release enabling the feature in feature management "Context-aware woker summary screen in WMA"
+It also needs the WMA app version 2.3.2.0 or higher. 
+
+## Product hover summary
+
+When hovering over the item number in any form it will add a product summary according to your most used forms and context. 
+
+To enable it, turn on the feature on feature management "Product summary when hovering on item"
+
+
+## Released product details summary
+
+On the released product details it will add a product summary according to your most used forms and context. Feature: Product details summary
+
+## Vendor summary
+
+Vendor summary includes status information and additional insights for the vendor. The vendor's information provided as status and insight cover vendor currency, accounting currency, vendor hold status, number of purchase orders, posted vendor invoices, and payment status. It also includes number of overdue vendor invoices, purchasing agreements, and active rebates agreements. 
+
+
+## Purchase order summary
+
+It gives an overview of what is the status of the purchase order (number of lines confirmed/received/invoiced and if partially or fully) and selected insights (summary of lines that are overdue or nearly overdue (receipt date equal current date). 
+Feature management: Purchase order summary
+
+
+## Sales order summary
+
+It gives an overview of what is the status of the sales order (number of lines confirmed/received/invoiced and if partially or fully) and selected insights (summary of lines that are overdue or nearly overdue (ship date equal current date). 
+Feature management: Sales order insights
+
+
+
