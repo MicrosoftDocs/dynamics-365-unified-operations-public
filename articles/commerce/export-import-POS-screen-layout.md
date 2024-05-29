@@ -23,31 +23,33 @@ The following document describes the procedure to export and import POS screen l
 
 To export layout data from an environment, follow these steps.
 
-1. From the headquarters environment you want to export from, go to **Data management \> Framework parameters**.
+1. In the Commerce headquarters environment from which you want to export data, go to **Data management \> Framework parameters**.
 1. Select **Entity settings**.
 1. Under **Advanced entity configuration settings**, select **Refresh entity list**. The message "The refresh entity list job is added to the queue" appears at the top of the screen.
-1. Go to **Batch jobs \> System Administration \> Inquiries** and verify that the refresh entity list job has successfully completed.
+1. Go to **Batch jobs \> System Administration \> Inquiries** and verify that the refresh entity list job has completed successfully.
   
     ![batchjob.](media/batchjobentity.png)
   
-1. Go to **Data management \> Export** and create a new record with the group name **Export POS layouts**.
+1. Go to **Data management \> Export** and under **Group name**, enter the name "Export POS layouts" for the new record.
 1. Under **Selected entities** select **+Add multiple**.
   
     ![selecting entities.](media/selectentities.png)
   
-1. In the dialog, under **JOB DETAILS**, from the **Target data format** drop-down list, select **XML-Element**, andd set the **Skip staging** option to **No**.
-- Filter **Entity** column and select below list of entities and **add selected**. You'll then see all the entities added.
-    - **Layout sizes** (include this only when you're exporting new layout sizes that don't exist in the new environment.)
+1. In the dialog, in the **Target data format** drop-down list, select **XML-Element**.
+1. Set the **Skip staging** option to **No**.
+
+For each of the following entities, filter for the entity under **Entities**, select the entity result in the **Entity** column, and select **Add selected**.
+    - **Layout sizes** (Include this entity only when you're exporting new layout sizes that don't exist in the new environment.)
     - **RetailTillLayoutConfigurationEntity**
     - **POS button grid**
     - **POS button grid buttons**
-    - **POs layout images**
+    - **POS layout images**
     - **POS screen layouts**
     - **POS screen layout button grid zones**
     - **POS screen layout image zones**
     - **POS visual profiles**
       
- ![POS export entities.](media/POSexportedentities.png)
+    ![POS export entities.](media/POSexportedentities.png)
       
 - Use **filter** column to only select specific layouts for export. Example **SCO**.
 
