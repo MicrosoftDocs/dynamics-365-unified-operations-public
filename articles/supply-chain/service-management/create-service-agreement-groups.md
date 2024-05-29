@@ -1,14 +1,14 @@
 ---
 title: Create service agreement groups  
 description: This article provides a procedure that shows how to create service agreement groups.
-author: sorenva
+author: ChristianRytt
 ms.date: 06/15/2020
 ms.topic: article
 ms.search.form: SMAAgreementGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
