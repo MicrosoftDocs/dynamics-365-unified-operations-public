@@ -14,7 +14,7 @@ ms.search.validFrom: 2024-05-01
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
-# Get started with Electronic invoicing for Poland
+# Electronic invoicing for Poland
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -111,9 +111,7 @@ To configure electronic document parameters, follow these steps.
 
    > [!NOTE]
    > **ResponseData** is the default name for the response type. If you need to change it, make sure that is coincides with the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio** \> **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Polish electronic invoice (PL)** Electronic invoicing feature is selected. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup, and then select **Edit** or **View** depending on feature version status.
-   > 
-   > :::image type="content" source="e-inv-pol-response-data.jpg" alt-text="Screenshot of the setup of the Response variable of the Feature setup."::: 
-    
+      
 1. Repeat steps 6 through 7 for the **Project invoice** and **Advance invoice** electronic documents.
 1. Save your changes and close the page.
 
@@ -180,9 +178,7 @@ To configure electronic document properties, follow these steps.
 1. On the **Electronic document property type applicability setup** page, in **Table name** field, select **Customer invoice journal** and **Project invoice**.
 1. Add as many additional document properties as you require.
 1. Save your changes and return to the **Electronic document property types** page.
-
-   :::image type="content" source="../media/e-invoicing-pol-parameters.jpg" alt-text="Property type added on the Electronic document property types page."::: 
-
+   
 #### Enter additional invoice data
 
 To ender invoice additional date, follow these steps.
@@ -190,8 +186,6 @@ To ender invoice additional date, follow these steps.
 1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 1. Select an invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
 1. Enter a required value. This value will be used in the *Wartosc* field in the resulting XML file of an e-invoice.
-
-   :::image type="content" source="../media/e-invoicing-pol-values.jpg" alt-text="Value entered on the Electronic document properties page."::: 
 
 > [!NOTE]
 > You can enter additional data for project invoices in a similar way at **Project management and accounting** \> **Project invoices** \> **Project invoice**.
@@ -202,8 +196,6 @@ After you complete all the required configuration steps, you can generate and su
 
 You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information about the submission log, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-:::image type="content" source="e-inv-pol-submission-log.jpg" alt-text="Screenshot of the submission log."::: 
-
 ## Receive incoming electronic invoices
 
 <a id="Import"></a>Complete the following configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
@@ -211,22 +203,13 @@ You can inquire about the results of a submission by going to **Organization adm
 1. Go to **Globalization Studio** \> **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
 1. On the **Setups** tab, in the grid, select **Import vendor invoice derived**, and then select **Edit**.
 1. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the [name of the data channel](#ImpChn). Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
-
-:::image type="content" source="e-inv-pol-import-channel.jpg" alt-text="Screenshot of the import channel configuration in the feature setup."::: 
-
 1. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [Client ID](#ClID) that you previously created.
 1. Select **Public key** parameter, and then, in the **Value** field, select the name of the [Public key](#PK) that you previously created.
 1. Select **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
 1. Select **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment depending on implementation stage: *Test*, *Demo* or *Prod*.
 1. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSEF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
 1. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
-
-:::image type="content" source="e-inv-pol-import-apprules.jpg" alt-text="Screenshot of the import applicability rules configuration in the feature setup."::: 
-
 1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
-
-:::image type="content" source="e-inv-pol-import-outputfile.jpg" alt-text="Screenshot of the output file configuration in the feature setup."::: 
-
 1. Select **Save** and close the page.
 1. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
