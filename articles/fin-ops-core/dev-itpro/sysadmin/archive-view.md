@@ -1,6 +1,6 @@
 ---
-title: View archived data in Dataverse long-term retention (preview)
-description: Learn about how to view archived data in Microsoft Dataverse long-term retention, including an overview on viewing data by using Fabric.
+title: View or delete archived data in Dataverse long-term retention (preview)
+description: Learn about how to view or delete archived data in Microsoft Dataverse long-term retention, including an overview on viewing data by using Fabric.
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
@@ -41,3 +41,7 @@ The data in the Dataverse-managed data lake is available in Dataverse tables tha
 You can also access archived data by using a model-driven app that's created in Power Apps and that uses Dataverse Advanced Find. Alternatively, you can build canvas apps in Power Apps.
 
 For information about the limitations of these options, see [Limitations for retrieval of retained data](/power-apps/maker/data-platform/data-retention-view#limitations-for-retrieval-of-retained-data).
+
+### Delete archived data from the Dataverse-managed data lake
+
+For information on how to delete long term retained data from the Dataverse managed data lake, please refer to [Delete data in bulk](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/delete-data-bulk?tabs=sdk).
