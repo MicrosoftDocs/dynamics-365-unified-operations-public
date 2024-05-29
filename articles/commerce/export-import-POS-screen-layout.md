@@ -1,6 +1,6 @@
 ---
-title: Export point of sale screen layouts to a new environment
-description: This article describes how to export point of sale screen layouts to a new environment in Microsoft Dynamics 365 Commerce.
+title: Export point of sale screen layouts for import to a new environment
+description: This article describes how to export point of sale screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: article 
@@ -11,11 +11,11 @@ ms.reviewer: v-chrgriffin
 ms.search.validFrom: 2024-01-20
 ---
 
-# Move POS screen layouts to a new environment
+# Export POS screen layouts for import to a new environment
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to export point of sale screen layouts to a new environment in Microsoft Dynamics 365 Commerce.
+This article describes how to export point of sale screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 
 The following document describes the procedure to export and import POS screen layouts to a new environment.
 
@@ -58,7 +58,7 @@ To export layout data from an environment, follow these steps.
 1. For the **POS button grid buttons** entity, in the **Filter** column, select the funnel symbol.
 1. In the **Inquiry** dialog, for the entity where the **Field** value is **Button grid ID**, in the **Criteria** column, enter "SCO", and then select **OK**.
 1. For the **POS screen layouts** entity, in the **Filter** column, select the funnel symbol.
-1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID*, in the **Criteria** column, enter "SCO", and then select **OK**.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID**, in the **Criteria** column, enter "SCO", and then select **OK**.
 1. For the **POS visual profiles** entity, in the **Filter** column, select the funnel symbol.
 1. In the **Inquiry** dialog, for the entity where the **Field** value is **Profile number**, in the **Criteria** column, enter "SCO", and then select **OK**.
 
@@ -79,10 +79,29 @@ To export layout data from an environment, follow these steps.
 
 ### Add related tables
 
-If additional filters are needed you can also add related tables . Example Add layout sizes to export only a particular size or sizes from selected list of layouts.
-To do this you would need to add Layout size in the entity through a table join.
-- Select **POS screen layout button grid zones** , **POS screen layout image zones** and 
-  **Retailtilllayoutconfigurationentity** one at a time.
+If you require additional filters, you can add related tables. For example, you could add the **Layout sizes** table to export only a specific size or sizes from the selected list of layouts. To add this table, you need to add layout size in the entity through a table join.
+
+1. Select the rows for **POS screen layout button grid zones**, **POS screen layout image zones**, and **RetailTillLayoutConfigurationEntity**.
+1. For the **POS screen layout button grid zones** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, select the **Joins** tab.
+1. Highlight the entity name, and then select **+ Add table join**.
+1. Select **Layout sizes (Name)**, and select **Select** to confirm, and then and select **OK**
+1. For the **POS screen layout image zones** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, select the **Joins** tab.
+1. Highlight the entity name, and then select **+ Add table join**.
+1. Select **Layout sizes (Name)**, and select **Select** to confirm, and then and select **OK**
+1. For the **RetailTillLayoutConfigurationEntity** entity, in the **Filter** column, select the funnel symbol.
+1. In the **Inquiry** dialog, select the **Joins** tab.
+1. Highlight the entity name, and then select **+ Add table join**.
+1. Select **Layout sizes (Name)**, and select **Select** to confirm, and then and select **OK**
+1. For each of the three entity rows, do the following:
+    1. In the **Filter** column, select the funnel symbol.
+    1. Select **+Add**, and on the **Table** column drop-down list, select **Layout sizes**.
+-   1. On the **Field** column drop-down list, select **Name**. 
+    1. On the **Criteria** column, enter the layout size in the format \<image width in pixels\>\*\<image height in pixels\>-Full (for example, "1536*864-Full"). This criteria then only exports this layout size.
+-----------------
+
+- Select **POS screen layout button grid zones**, **POS screen layout image zones** and **Retailtilllayoutconfigurationentity** one at a time.
 - Select **filter** on the row and select **joins** tab
 - Highlight the entity and select **+Add table join**
 - Select **Layout sizes (Name)**
