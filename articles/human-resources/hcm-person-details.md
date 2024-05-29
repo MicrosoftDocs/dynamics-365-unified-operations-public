@@ -27,62 +27,58 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Job type entity (payintv1hcmpersondetailsentities) for Dynamics 365 Human Resources.
+This article describes the HCM person details entities (payintv1hcmpersondetailsentities) for Dynamics 365 Human Resources.
 
-Physical name: mserp_payintv1hcmpersondetailsentities
+Physical name: mserp\_payintv1hcmpersondetailsentities
 
 ## Description
 
-This entity provides information about the person details.
+These entities provide information about the person details.
 
 ## Properties
 
 | Property | Physical name | Type | Use | 
 |---|---|---|---|
-| mserp_IsDisabledVeteran IsDisabledVeteran | Enum | Read-only |
-| mserp_ExpatriateRulingValidTo ExpatriateRulingValidTo | Date time offset | Read-only |
-| mserp_ExpatriateRulingValidFrom ExpatriateRulingValidFrom | Date time offset | Read-only |
-| mserp_IsExpatriateRulingApplicable IsExpatriateRulingApplicable | Enum | Read-only |
-| mserp_MaritalStatus | MaritalStatus | Enum | Read-only |
-| mserp_MilitaryServiceEndDate MilitaryServiceEndDate | Date time offset | Read-only |
-| mserp_MilitaryServiceStartDate MilitaryServiceStartDate | Date time offset | Read-only |
-| mserp_NumberOfDependents NumberOfDependents | Int | Read-only |
-| mserp_Person | Person | Int64 | Read-only |
-| mserp_PartyNumber | PartyNumber | String | Read-only |
-| mserp_ValidFrom | ValidFrom | Date time offset | Read-only |
-| mserp_ValidTo | ValidTo | Date time offset | Read-only |
-| mserp_VeteranStatus | VeteranStatus | Int64 | Read-only |
-| mserp_VeteranStatusId VeteranStatusId | Read-only |
+| mserp\_IsDisabledVeteran | IsDisabledVeteran | Enum | Read-only |
+| mserp\_ExpatriateRulingValidTo | ExpatriateRulingValidTo | Date time offset | Read-only |
+| mserp\_ExpatriateRulingValidFrom | ExpatriateRulingValidFrom | Date time offset | Read-only |
+| mserp\_IsExpatriateRulingApplicable | IsExpatriateRulingApplicable | Enum | Read-only |
+| mserp\_MaritalStatus | MaritalStatus | Enum | Read-only |
+| mserp\_MilitaryServiceEndDate | MilitaryServiceEndDate | Date time offset | Read-only |
+| mserp\_MilitaryServiceStartDate | MilitaryServiceStartDate | Date time offset | Read-only |
+| mserp\_NumberOfDependents | NumberOfDependents | Int | Read-only |
+| mserp\_Person | Person | Int64 | Read-only |
+| mserp\_PartyNumber | PartyNumber | String | Read-only |
+| mserp\_ValidFrom | ValidFrom | Date time offset | Read-only |
+| mserp\_ValidTo | ValidTo | Date time offset | Read-only |
+| mserp\_VeteranStatus | VeteranStatus | Int64 | Read-only |
+| mserp\_VeteranStatusId | VeteranStatusId | | Read-only |
 
+## Example query for the HCM person details entities
 
-## Example query for HCM person details entity
-
-_Entity Name: mserp_payintv1hcmpersondetailsentities_
+Entity name: mserp\_payintv1hcmpersondetailsentities
 
 **Request**
 
 ```HTTP
-
-GET \[Organizaton URI\]/api/data/v9.1/payintv1hcmpersondetailsentities
+GET [Organization URI]/api/data/v9.1/payintv1hcmpersondetailsentities
 ```
 
 **Response**
 
-```JSONCopy
-
+```JSON
 {
-
-"mserp_isdisabledveteran": 200000000,
-"mserp_isexpatriaterulingapplicable": 200000000,
-"mserp_maritalstatus": 200000001,
-"mserp_numberofdependents": 2,
-"mserp_partynumber": "000000032",
-"mserp_validfrom": "2012-09-11T20:09:56Z",
-"mserp_validto": "2154-12-31T23:59:59Z",
-"mserp_veteranstatusid": "",
-"mserp_militaryservicestartdate": null,
-"mserp_expatriaterulingvalidto": null,
-"mserp_militaryserviceenddate": null,
-"mserp_expatriaterulingvalidfrom": null
+    "mserp_isdisabledveteran": 200000000,
+    "mserp_isexpatriaterulingapplicable": 200000000,
+    "mserp_maritalstatus": 200000001,
+    "mserp_numberofdependents": 2,
+    "mserp_partynumber": "000000032",
+    "mserp_validfrom": "2012-09-11T20:09:56Z",
+    "mserp_validto": "2154-12-31T23:59:59Z",
+    "mserp_veteranstatusid": "",
+    "mserp_militaryservicestartdate": null,
+    "mserp_expatriaterulingvalidto": null,
+    "mserp_militaryserviceenddate": null,
+    "mserp_expatriaterulingvalidfrom": null
 }
 ```
