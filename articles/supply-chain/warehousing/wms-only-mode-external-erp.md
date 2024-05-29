@@ -1,5 +1,5 @@
 ---
-title: Warehouse management only mode with external ERP systems (preview)
+title: Warehouse management only mode with external ERP systems
 description: This article explains how to perform day-to-day warehousing tasks when you use Warehouse only mode to integrate with an external ERP system.
 author: perlynne
 ms.author: perlynne
@@ -12,12 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode with external ERP systems (preview)
+# Warehouse management only mode with external ERP systems
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 This article explains how to perform day-to-day warehousing tasks when you use Warehouse only mode to integrate with an external enterprise resource planning (ERP) system.
 

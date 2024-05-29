@@ -386,9 +386,9 @@
             href: dev-itpro/store-commerce-capabilities.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
-          - name: Store Commerce app for mobile platforms
+          - name: Store Commerce app for mobile platforms (preview)
             href: dev-itpro/store-commerce-mobile.md
-          - name: Enable Self-checkout in the Store Commerce app in Microsoft Dynamics 365 Commerce (preview)
+          - name: Enable self-checkout in the Store Commerce app (preview)
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
@@ -1028,7 +1028,7 @@
         href: tasks/run-job-post-statements.md
       - name: Configure store settings that affect retail statements
         href: tasks/store-configurations-retail-statements.md
-      - name: Posting of online sales and payments
+      - name: Post online sales and payments
         href: tasks/posting-online-sales-payments.md
     - name: Manage worker tasks
       items:
@@ -1334,15 +1334,15 @@
             href: add-cart-module.md
           - name: Cart icon module
             href: cart-icon-module.md
-          - name: Checkout module
+          - name: Checkout module (preview)
             href: add-checkout-module.md
           - name: Checkout module error reference codes
             href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
-          - name: Shipping address module
+          - name: Shipping address module (preview)
             href: ship-address-module.md
-          - name: Delivery options module
+          - name: Delivery options module (preview)
             href: delivery-options-module.md
           - name: Pickup information module
             href: pickup-info-module.md
@@ -1510,7 +1510,7 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
-      - name: Set up Microsoft Clarity in Dynamics 36 Commerce
+      - name: Set up Microsoft Clarity in Dynamics 365 Commerce
         href: dev-itpro/set-up-clarity.md
       - name: Set up Operational Insights
         href: dev-itpro/operational-insights.md

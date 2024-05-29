@@ -1,13 +1,13 @@
 ---
 title: SPED ECD
-description: This article explains how to set up and generate SPED ECD text files.
+description: Learn how to set up and generate SPED ECD text files, including an outline on setting up requirements for the SPED ECD tax statement.
 author: AdamTrukawka
-ms.date: 08/27/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 08/27/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

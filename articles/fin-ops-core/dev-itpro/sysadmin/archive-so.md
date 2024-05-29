@@ -24,7 +24,7 @@ The following prerequisites must be met before sales orders can be archived:
 
 ## Install the solution in Microsoft Power Platform
 
-For information about how to install the solution in Microsoft Power Platform, see [Set up and management](archive-setup.md).
+For information about how to install the solution in Microsoft Power Platform, see [Set up and management](archive-setup-manage.md).
 
 ## Turn on the feature in Dynamics 365 Supply Chain Management
 

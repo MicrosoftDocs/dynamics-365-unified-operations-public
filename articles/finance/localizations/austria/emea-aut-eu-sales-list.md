@@ -1,11 +1,11 @@
 ---
 title: EU Sales list for Austria
-description: This article provides information about the European Union (EU) sales list report for Austria.
+description: Learn about the European Union (EU) sales list report for Austria, including a step-by-step process for setup and a work with the EU sales list.
 author: AdamTrukawka
 ms.date: 03/04/2022
 ms.topic: article
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: 
 ms.author: atrukawk
 ms.search.validFrom: 

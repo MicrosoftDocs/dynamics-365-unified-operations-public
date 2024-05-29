@@ -1,16 +1,15 @@
 ---
 title: Cross-border services report
-description: This article explains how to use the Cross-border services report.
+description: Learn how to use the Cross-border services report, including a step-by-step process for setup and an outline on working with the Cross-border services report.
 author: AdamTrukawka
-ms.date: 04/08/2021
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/08/2021
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-ms.search.scope: 
 ---
 
 # Cross-border services report

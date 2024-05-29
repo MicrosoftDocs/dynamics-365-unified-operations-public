@@ -1,15 +1,15 @@
 ---
 title: Configure Azure resources for Electronic invoicing
-description: This article provides an overview of the process for setting up Microsoft Azure resources for Electronic invoicing.
+description: Learn about the process for setting up Microsoft Azure resources for Electronic invoicing, including an overview on creating an Azure key vault.
 author: ilikond
-ms.date: 03/13/2024
-ms.topic: overview
-ms.custom: 
-  - bap-template 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
+ms.topic: overview
+ms.date: 03/13/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39 
 ---

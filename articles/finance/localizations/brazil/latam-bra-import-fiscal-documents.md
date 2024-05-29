@@ -1,17 +1,17 @@
 ---
 title: Import fiscal documents for Brazil
-description: This article describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
+description: Learn about the functionality for direct import fiscal documents that is available for the Brazilian localization, including an outline on import declarations.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
+ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, PurchImportDeclarationList_BR, VendEditInvoice
 ms.dyn365.ops.version: Version 1611
 ms.assetid: b2389297-1359-498f-b755-c20574248ae1
-ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, PurchImportDeclarationList_BR, VendEditInvoice
 ---
 
 # Import fiscal documents for Brazil

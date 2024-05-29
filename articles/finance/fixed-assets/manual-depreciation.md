@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Manual depreciation
-description: This article gives an overview of the manual depreciation method.
+description: Learn about the manual depreciation method, including examples with tables that illustrate percentages and calculations for various interval numbers.
 author: moaamer
-ms.date: 04/05/2024
-ms.topic: article
-ms.reviewer: twheeloc
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ---
 
 # Manual depreciation

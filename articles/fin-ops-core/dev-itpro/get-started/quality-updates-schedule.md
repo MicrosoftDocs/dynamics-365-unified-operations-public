@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 01/29/2024
+ms.date: 05/07/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -65,7 +65,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.38 PQU-7 | July 24, 2024 | July 29, 2024 to September 1, 2024| Not Started |
 | 10.0.38 PQU-8 | August 28, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-1 | April 10, 2024 | April 15, 2024 to May 19 2024| In-Progress |
-| 10.0.39 PQU-2 | May 8, 2024 | May 13, 2024 to June 16, 2024| Not Started |
+| 10.0.39 PQU-2 | May 8, 2024 | May 13, 2024 to June 16, 2024| In-Progress |
 | 10.0.39 PQU-3 | June 5, 2024 | June 10, 2024 to July 14, 2024| Not Started |
 | 10.0.39 PQU-4 | July 3, 2024 | July 8, 2024 to August 11, 2024| Not Started |
 | 10.0.39 PQU-5 | July 31, 2024 | August 5, 2024 to September 8, 2024| Not Started |
@@ -117,7 +117,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | April 29 to May 2, 2024 | May 11 to May 12, 2024 |
 | Station 6 | April 30 to May 3, 2024 | May 11 to May 12, 2024 |
 
-### <a name="schedule"></a>[New] Proactive quality update upcoming 10.0.38 Release-4 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.38 Release-4 train schedule
 
 **App version: 10.0.1777.184**
 
@@ -146,6 +146,21 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | April 29 to May 2, 2024 | May 11 to May 12, 2024 |
 | Station 5 | May 6 to May 9, 2024 | May 18 to May 19, 2024 |
 | Station 6 | May 7 to May 10, 2024 | May 18 to May 19, 2024 |
+
+### <a name="schedule"></a>[New] Proactive quality update upcoming 10.0.39 Release-2 train schedule
+
+**App version: 10.0.1860.109**
+
+**Platform version: 7.0.7198.128**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | May 13 to May 16, 2024 | NA |
+| Station 2 | May 20 to May 23, 2024 | June 1 to June 2, 2024 |
+| Station 3 | May 21 to May 24, 2024 | June 1 to June 2, 2024|
+| Station 4 | May 27 to May 30, 2024 | June 8 to June 9, 2024 |
+| Station 5 | June 3 to June 6, 2024 | June 15 to June 16, 2024 |
+| Station 6 | June 4 to June 7, 2024 | June 15 to June 16, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).

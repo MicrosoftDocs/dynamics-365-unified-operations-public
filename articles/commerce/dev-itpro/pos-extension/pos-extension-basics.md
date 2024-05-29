@@ -1,22 +1,21 @@
 ---
 title: POS extension basics
-description: This article describes the basic concepts of Point of Sale (POS) extension.
+description: This article describes the basic concepts of point of Sale (POS) extension in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/13/2021
+ms.date: 05/28/2024
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
+ms.author: bennettray
 ms.search.validFrom: 2020-04-13
-ms.dyn365.ops.version: AX 10.0.18
 ---
 
 # POS extension basics
 
 [!include [banner](../../../includes/banner.md)]
 
-This article describes the basic concepts of Point of Sale (POS) extension. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article describes the basic concepts of point of Sale (POS) extension in Microsoft Dynamics 365 Commerce. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 Extension developers can create customizations by using the POS API library. The POS APIs let you customize both business logic and user interface (UI) layers of POS.
 

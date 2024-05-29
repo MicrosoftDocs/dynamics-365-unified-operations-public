@@ -1,11 +1,12 @@
 ---
 title: Customer payments for a partial amount
 description: Customers can make payments that are less than the amount of an invoice. The options that are available to you depend on your business requirements and configuration.
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: prabhatb-ship-it
+ms.author: prabhatb
 ms.topic: article
 ms.date: 01/08/2018
-ms.reviewer: kfend
+ms.reviewer: twheeloc
+ms.custom: evergreen
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -22,10 +23,10 @@ Sometimes, customers make a payment that is less than the amount of an invoice. 
 
 ## Partial payment with no discount
 
-Customers might make a partial payment because they just don't have enough cash on hand to pay the invoice in full, or because there is a dispute about an item on the invoice. In this situation, the invoice can be partially settled with the payment. The invoice will remain open and will show a balance.
+Customers might make a partial payment. In this situation, the invoice can be partially settled with the payment. The invoice remains open and shows a balance.
 
 ## Discount amounts
-You can offer customers a cash discount for paying an invoice before the due date. For example, you enter an invoice for 100.00 that specifies a 2-percent cash discount if the invoice is paid within 10 days. The due-date terms are 30 days. If you receive a payment of 98.00 within 10 days, you enter the payment for 98.00. Then, when the invoice is marked for settlement, the cash discount it taken automatically.
+You can offer customers a cash discount for paying an invoice before the due date. For example, you enter an invoice for 100.00 that specifies a 2-percent cash discount if the invoice is paid within 10 days. The due-date terms are 30 days. If you receive a payment of 98.00 within 10 days, you enter the payment for 98.00. Then, when the invoice is marked for settlement, the cash discount is taken automatically.
 
 ## Partial payments with cash discounts
 When customers make a partial payment, they might plan to make an additional partial payment to fully settle the invoice. To take a cash discount for a partial payment, you must set the **Calculate cash discounts for partial payments** option to **Yes** on the **Accounts receivable parameters** page. 

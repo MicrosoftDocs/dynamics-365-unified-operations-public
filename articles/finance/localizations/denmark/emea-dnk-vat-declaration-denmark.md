@@ -1,13 +1,13 @@
 ---
 title: VAT declaration of Denmark overview
-description: This article describes how to set up and generate an advance value-added tax (VAT) declaration for Denmark.
+description: Learn how to set up and generate an advance value-added tax (VAT) declaration for Denmark, including an outline on sharing customer data.
 author: liza-golub
-ms.date: 08/22/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: egolub
+ms.topic: article
+ms.date: 08/22/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

@@ -4,8 +4,10 @@ description: Learn about the features that are included in the platform updates 
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 10/27/2021
+ms.date: 05/22/2024
 ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -43,7 +45,8 @@ We have recently added or significantly updated the following help topics. They 
 |--------------|-----------------------|
 | Power Platform integration | [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md)<br>[Virtual entities overview](../power-platform/virtual-entities-overview.md)<br>[Add-ins overview](../power-platform/add-ins-overview.md)<br>[What's new or changed in dual-write](../data-entities/dual-write/whats-new-dual-write.md)<br>[Dual-write setup from Lifecycle Services](../data-entities/dual-write/lcs-setup.md)<br>[User-specified team owner](../data-entities/dual-write/user-specified-team-owner.md)<br>[Enable dual-write for existing finance and operations apps](../data-entities/dual-write/enable-dual-write.md)<br>[Use the dual-write wizard to link your environments](../data-entities/dual-write/link-your-environment.md) |
 | Office integration | [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md) |
-| Database| [Point-in-time restore of the production database to a sandbox environment](../database/database-pitr-prod-sandbox.md)<br>[Database point-in-time restore (PITR)](../database/database-point-in-time-restore.md)<br>[Refresh database](../database/database-refresh.md)<br>[Golden configuration promotion](../database/dbmovement-scenario-goldenconfig.md) |
+| Database| [Point-in-time restore of the production database to a sandbox environment](../database/database-pitr-prod-sandbox.md)<br>[Database point-in-time restore (PITR)](../database/database-point-in-time-restore.md)<br>[Refresh database](../database/database-refresh.md) |
+)<br>[Golden configuration promotion](../database/dbmovement-scenario-goldenconfig.md) |
 | User productivity| [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md)<br>[Saved views](../../fin-ops/get-started/saved-views.md)<br>[Configure document management](../../fin-ops/organization-administration/configure-document-management.md) |
 | Self-service deployment   | [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md)  |
 | On-premises deployment| [Set up and deploy on-premises environments (Platform update 41 and later)](../deployment/setup-deploy-on-premises-pu41.md) |

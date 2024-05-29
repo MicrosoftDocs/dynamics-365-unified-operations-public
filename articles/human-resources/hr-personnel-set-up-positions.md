@@ -4,7 +4,7 @@
 title: Set up positions
 description: This article describes how positions are an important element of the lower level of an organization hierarchy. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 05/08/2024
 ms.topic: how-to 
  
 # optional metadata 
