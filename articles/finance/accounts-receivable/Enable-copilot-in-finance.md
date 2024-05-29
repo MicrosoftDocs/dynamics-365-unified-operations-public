@@ -58,7 +58,7 @@ Depending on the availability of Copilot and generative AI back-office services 
 
 ## Allow cross-region data movement for your Dataverse environment 
 
-Depending on the availability of Copilot and generative AI back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](../../fin-ops-core/dev-itpro/co-pilot/enable-copilot.md). 
+Depending on the availability of Copilot and generative AI back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md). 
 
 > [!Important]
 > If cross-region data movement is required, but it’s not selected, deployment of the Copilot app will fail, users won’t be able to see the copilot summary, or the copilot summary will not provide answers, depending on the situation.  
