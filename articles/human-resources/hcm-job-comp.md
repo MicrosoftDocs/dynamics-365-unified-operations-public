@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: HCM Job Compensation entities
+title: HCM job compensation entities
 description: This article provides details and an example query for the HCM Job Compensation entities in Microsoft Dynamics 365 Human Resources.
 author: jcart
 ms.date: 05/24/2024
@@ -22,12 +22,12 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# HCM Job Compensation entities
+# HCM job compensation entities
 
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Job type entity (payintv1hcmjobcompensationentities) for Dynamics 365 Human Resources.
+This article describes the HCM job compensation entities (payintv1hcmjobcompensationentities) for Dynamics 365 Human Resources.
 
 Physical name: mserp_payintv1hcmjobcompensationentities
 
