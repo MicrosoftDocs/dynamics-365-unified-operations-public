@@ -27,6 +27,7 @@ ms.collection:
 # Generate a statistical baseline forecast
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
 

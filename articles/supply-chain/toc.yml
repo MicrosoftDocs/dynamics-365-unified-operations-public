@@ -1945,10 +1945,10 @@
           items:
           - name: Demand forecasting overview
             href: master-planning/introduction-demand-forecasting.md
-          - name: Intercompany planning groups for demand forecasting
-            href: demand-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Demand forecasting setup
             href: master-planning/demand-forecasting-setup.md
+          - name: Intercompany planning groups for demand forecasting
+            href: master-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Generate a statistical baseline forecast
             href: master-planning/generate-statistical-baseline-forecast.md
           - name: Make manual adjustment to the baseline forecast
