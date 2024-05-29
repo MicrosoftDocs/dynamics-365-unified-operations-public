@@ -1,19 +1,20 @@
 ---
 title: Change the depreciation method during the asset life for book
-description: In Japan, you can change the depreciation method during the service life of a fixed asset.
+description: In Japan, you can change the depreciation method during the service life of a fixed asset. Learn about changing depreciation profiles with a step-by-step process.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Japan
 ms.author: atrukawk
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_JP
   - AssetUndepreciatedBalancedSchedule_JP
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Change the depreciation method during the asset life for book
 
 [!include [banner](../../includes/banner.md)]

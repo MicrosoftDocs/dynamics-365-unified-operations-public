@@ -1,12 +1,12 @@
 ---
 title: Customer sets for Latin America
-description: This article provides information about the customer set configuration for Latin America.
+description: Learn about the customer set configuration for Latin America, including prerequisites and an outline for setting up a customer set.
 author: Fhernandez0088
-ms.date: 01/31/2023
-ms.topic: Article
-ms.reviewer: johnmichalak
 ms.author: v-federicohe 
+ms.topic: article
+ms.date: 01/31/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Customer sets for Latin America

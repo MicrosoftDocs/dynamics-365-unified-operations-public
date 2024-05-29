@@ -2,28 +2,22 @@
 # required metadata
 
 title: Recall order operation in POS
-description: This article explains feature capabilities available for improved order recall pages in POS.
+description: This article describes feature capabilities available for improved order recall pages in POS in Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 03/12/2021
+ms.date: 05/28/2024
 ms.topic: article
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom:
-ms.search.region: global
-# ms.search.industry:
-ms.author: hhaines
-ms.search.validFrom:
-ms.dyn365.ops.version: 10.0.15
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: shajain
+ms.search.validFrom: 2019-06-30
 ---
 
 # Recall order operation in POS
 
 [!include [banner](includes/banner.md)]
+
+This article describes feature capabilities available for improved order recall pages in POS in Microsoft Dynamics 365 Commerce.
 
 The **Recall order** operation in the Commerce point of sale (POS) provides updated order search and filtering features and order-specific information. This feature is available in Commerce versions 10.0.15 and later.
 

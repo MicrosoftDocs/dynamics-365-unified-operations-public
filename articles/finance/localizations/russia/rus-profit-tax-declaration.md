@@ -1,16 +1,16 @@
 ---
 title: Profit tax declaration
-description: This article provides information about the profit tax declaration for Russia.
+description: Learn about the profit tax declaration for Russia, including an outline and step-by-step process for setting up the profit tax declaration.
 author: AdamTrukawka
-ms.date: 03/17/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/17/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2020-01-29
-ms.dyn365.ops.version: 10.0.9
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.9
 ---
 
 # Profit tax declaration

@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Attach a day-based calendar to a fixed asset book (India)
-description: This procedure walks you through attaching a day-based calendar to a fixed asset book. 
+description: Learn about attaching a day-based calendar to a fixed asset book, including a step-by-step process using the INMF demo data company.
 author: AdamTrukawka
-ms.date: 10/10/2022
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: India
-# ms.search.industry: 
 ms.author: atrukawk
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 10/10/2022
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User  
+ms.search.region: India
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Attach a day-based calendar to a fixed asset book (India)
 
 [!include [banner](../../includes/banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Warehouse management only mode FAQ (preview)
+title: Warehouse management only mode FAQ
 description: This article provides answers to frequently asked questions about Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
@@ -12,12 +12,10 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode FAQ (preview)
+# Warehouse management only mode FAQ
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!-- KFM: Preview until further notice -->
 This article provides answers to frequently asked questions about Warehouse management only mode.
 
 ## What should I do when a message is shown as Failed in the message processor?

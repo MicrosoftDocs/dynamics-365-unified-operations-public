@@ -1028,7 +1028,7 @@
         href: tasks/run-job-post-statements.md
       - name: Configure store settings that affect retail statements
         href: tasks/store-configurations-retail-statements.md
-      - name: Posting of online sales and payments
+      - name: Post online sales and payments
         href: tasks/posting-online-sales-payments.md
     - name: Manage worker tasks
       items:
@@ -1510,7 +1510,7 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
-      - name: Set up Microsoft Clarity in Dynamics 36 Commerce
+      - name: Set up Microsoft Clarity in Dynamics 365 Commerce
         href: dev-itpro/set-up-clarity.md
       - name: Set up Operational Insights
         href: dev-itpro/operational-insights.md

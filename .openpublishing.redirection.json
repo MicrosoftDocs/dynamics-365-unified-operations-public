@@ -1,8 +1,38 @@
 {
   "redirections": [
-     {
+    {
+      "source_path": "articles/finance/localizations/brazil/e-invoicing-bra-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/brazil/latam-bra-nf-e-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/iberoamerica/e-invoicing-mex-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/iberoamerica/latam-mex-cfdi-electronic-invoices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/human-resources/hr-admin-whats-new.md",
+      "redirect_url": "/dynamics365/human-resources/whats-new-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/finance-insights/finance-insights-troubleshooting-faq.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/finance-insights/finance-insights-troubleshooting-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/business-performance-analytics/bus-matrix.md",
+      "redirect_url": "/finance/business-performance-analytics/business-performance-analytics-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/business-performance-analytics/field-mappings.md",
+      "redirect_url": "/finance/business-performance-analytics/business-performance-analytics-home-page",
+      "redirect_document_id": "false"
+    },      
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/real-async.md",
+      "redirect_url": "/fin-ops-core/fin-ops",
       "redirect_document_id": "false"
     },
     {

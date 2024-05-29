@@ -1,12 +1,12 @@
 ---
 title: Post packing slips for Latin America
-description: This article explains how to post packing slips for Latin America.
+description: Learn how to post packing slips for Latin America, including prerequisites and a step-by-step process for posting a packing slip from sales orders.
 author: Fhernandez0088
-ms.date: 06/05/2023
-ms.topic: Article
-ms.reviewer: johnmichalak
 ms.author: v-federicohe 
+ms.topic: article
+ms.date: 06/05/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Post packing slips for Latin America

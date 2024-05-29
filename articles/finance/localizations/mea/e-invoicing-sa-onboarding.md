@@ -1,18 +1,17 @@
 ---
 title: Electronic invoicing onboarding in Saudi Arabia
-description: This article explains how to onboard taxpayers and their electronic invoicing software with Saudi Arabian tax authorities.
+description: Learn how to onboard taxpayers and their electronic invoicing software with Saudi Arabian tax authorities, including an overview of the onboarding process.
 author: mrolecki
-ms.date: 01/18/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Saudi Arabia
 ms.author: mrolecki
-ms.search.validFrom: 2022-07-15
-ms.dyn365.ops.version: AX 10.0.28
+ms.topic: article
+ms.date: 01/18/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Saudi Arabia
+ms.search.validFrom: 2022-07-15
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.28
 ---
 
 # Electronic invoicing onboarding in Saudi Arabia
