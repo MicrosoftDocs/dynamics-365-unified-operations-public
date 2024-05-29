@@ -1,5 +1,5 @@
 ---
-title: Export point of sale screen layouts for import to a new environment
+title: Export point of sale screen layouts for import to a new environment (preview)
 description: This article describes how to export point of sale screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 author: anush6121
 ms.author: anvenkat 
@@ -11,9 +11,10 @@ ms.reviewer: v-chrgriffin
 ms.search.validFrom: 2024-01-20
 ---
 
-# Export POS screen layouts for import to a new environment
+# Export POS screen layouts for import to a new environment (preview)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to export point of sale screen (POS) layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 
