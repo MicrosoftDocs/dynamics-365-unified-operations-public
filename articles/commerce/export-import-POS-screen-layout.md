@@ -19,20 +19,23 @@ This article describes how to move point of sale screen layouts to a new environ
 
 The following document describes the procedure to export and import POS screen layouts to a new environment.
 
-## Export layout-related data
+## Export layout data
 
-- From the headquarters environment you need to export, go to **Data management** > **Framework parameters** and select **Entity settings**
-- Under **Advanced entity configuration settings** select **Refresh entity list**. You'll see a message **The refresh entity list job is added to the queue** as an information message on the top of the screen.
-- Go to **Batch jobs** > **System Administration** > **Inquiries** and verify that the **Refresh entity list job was successfully completed**
+To export layout data from an environment, follow these steps.
+
+1. From the headquarters environment you want to export from, go to **Data management \> Framework parameters**.
+1. Select **Entity settings**.
+1. Under **Advanced entity configuration settings**, select **Refresh entity list**. The message "The refresh entity list job is added to the queue" appears at the top of the screen.
+1. Go to **Batch jobs \> System Administration \> Inquiries** and verify that the refresh entity list job has successfully completed.
   
-  ![batchjob.](media/batchjobentity.png)
+    ![batchjob.](media/batchjobentity.png)
   
-- Go to **Data management** > **Export** and create a new record with group name  **Export POS layouts**.
-- Under **Selected entities** select **Add multiple** .
+1. Go to **Data management \> Export** and create a new record with the group name **Export POS layouts**.
+1. Under **Selected entities** select **+Add multiple**.
   
-  ![selecting entities.](media/selectentities.png)
+    ![selecting entities.](media/selectentities.png)
   
-- On the pop-up screen, select target data format as **XML-Element**, ensure to select **skip staging** to **No**
+1. In the dialog, under **JOB DETAILS**, from the **Target data format** drop-down list, select **XML-Element**, andd set the **Skip staging** option to **No**.
 - Filter **Entity** column and select below list of entities and **add selected**. You'll then see all the entities added.
     - **Layout sizes** (include this only when you're exporting new layout sizes that don't exist in the new environment.)
     - **RetailTillLayoutConfigurationEntity**
