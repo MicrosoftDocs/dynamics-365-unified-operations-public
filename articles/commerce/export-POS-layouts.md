@@ -1,5 +1,5 @@
 ---
-title: Export point of sale screen layouts for import to a new environment (preview)
+title: Export point of sale screen layouts for import to a new environment
 description: This article describes how to export point of sale screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 author: anush6121
 ms.author: anvenkat 
@@ -11,10 +11,9 @@ ms.reviewer: v-chrgriffin
 ms.search.validFrom: 2024-01-20
 ---
 
-# Export POS screen layouts for import to a new environment (preview)
+# Export POS screen layouts for import to a new environment
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to export point of sale screen (POS) layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 
@@ -42,15 +41,15 @@ To export screen layout data from an environment, follow these steps.
     - **POS visual profiles**
 1. Select **Close** to close the dialog.
 1. For the **RetailTillLayoutConfigurationEntity** entity, in the **Filter** column, select the funnel symbol.
-1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID**, in the **Criteria** column, enter criteria text (for example, "SCO"), and then select **OK**. 
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID**, in the **Criteria** column, enter criteria text (for example, "SCO\*"), and then select **OK**. 
 1. For the **POS button grid** entity, in the **Filter** column, select the funnel symbol.
-1. In the **Inquiry** dialog, for the entity where the **Field** value is **Button grid ID**, in the **Criteria** column, enter criteria text (for example, "SCO"), and then select **OK**.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Button grid ID**, in the **Criteria** column, enter criteria text (for example, "SCO\*"), and then select **OK**.
 1. For the **POS button grid buttons** entity, in the **Filter** column, select the funnel symbol.
-1. In the **Inquiry** dialog, for the entity where the **Field** value is **Button grid ID**, in the **Criteria** column, enter criteria text (for example, "SCO"), and then select **OK**.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Button grid ID**, in the **Criteria** column, enter criteria text (for example, "SCO\*"), and then select **OK**.
 1. For the **POS screen layouts** entity, in the **Filter** column, select the funnel symbol.
-1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID**, in the **Criteria** column, enter criteria text (for example, "SCO"), and then select **OK**.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Screen layout ID**, in the **Criteria** column, enter criteria text (for example, "SCO\*"), and then select **OK**.
 1. For the **POS visual profiles** entity, in the **Filter** column, select the funnel symbol.
-1. In the **Inquiry** dialog, for the entity where the **Field** value is **Profile number**, in the **Criteria** column, enter criteria text (for example, "SCO"), and then select **OK**.
+1. In the **Inquiry** dialog, for the entity where the **Field** value is **Profile number**, in the **Criteria** column, enter criteria text (for example, "SCO\*"), and then select **OK**.
 
     > [!NOTE]
     > Filtering by specific criteria mitigates the risk of accidental override in the import environment.
@@ -82,7 +81,7 @@ To add the **Layout sizes** table, follow these steps.
     1. In the **Filter** column, select the funnel symbol.
     1. Select **+Add**, and on the **Table** column drop-down list, select **Layout sizes**.
     1. On the **Field** column drop-down list, select **Name**. 
-    1. On the **Criteria** column, enter the layout size in the format \<image width in pixels\>\*\<image height in pixels\>-Full (for example, "1536*864-Full"). The system then only exports this layout size.
+    1. On the **Criteria** column, enter the layout size in the format \<image width in pixels\>\x\<image height in pixels\> – Full (for example, "1536x864 – Full"). The system then only exports this layout size.
 
 ### Export and download package
 
