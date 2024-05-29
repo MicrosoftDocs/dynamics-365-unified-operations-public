@@ -229,7 +229,7 @@ Some additional parameters must be configured directly in Finance.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
 1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the data channel name.
 
-:::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting."::: 
+   :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting."::: 
 
 1. Save your changes and complete the derived configuration.
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -238,7 +238,7 @@ Some additional parameters must be configured directly in Finance.
 1. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
 1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
 
-:::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters."::: 
+   :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters."::: 
 
 1. Select **Save** and close the page.
 
