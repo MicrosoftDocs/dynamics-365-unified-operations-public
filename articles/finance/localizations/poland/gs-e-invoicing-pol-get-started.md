@@ -1,5 +1,5 @@
 ---
-title: Get started with Electronic invoicing for Poland
+title: Electronic invoicing for Poland
 description: The article provides information that will help you get started with Electronic invoicing for Poland.
 author: ikondratenko
 ms.date: 05/22/2024
@@ -14,7 +14,7 @@ ms.search.validFrom: 2024-05-01
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
-# Get started with Electronic invoicing for Poland
+# Electronic invoicing for Poland
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
