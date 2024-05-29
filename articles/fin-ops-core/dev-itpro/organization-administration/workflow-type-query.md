@@ -2,7 +2,7 @@
 title: Create a query for a workflow type
 description: Learn about how to create a query for a workflow type, including a step-by-step process that walks you thorugh the process.
 author: josaw1
-ms.author: tfehr
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/19/2019
 ms.reviewer: twheeloc
