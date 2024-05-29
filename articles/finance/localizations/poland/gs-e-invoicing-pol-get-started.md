@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing for Poland
+title: Get started with Electronic invoicing for Poland
 description: The article provides information that will help you get started with Electronic invoicing for Poland.
 author: ikondratenko
 ms.date: 05/22/2024
