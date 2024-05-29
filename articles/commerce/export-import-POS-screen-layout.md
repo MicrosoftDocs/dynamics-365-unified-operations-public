@@ -87,7 +87,7 @@ To add the **Layout sizes** table, follow these steps.
 
 Once all of the entities are updated with right filters, on the Action Pane, select **Export**. This action initiates a batch job.
 
-Once the batch job is completes, verify that the **Execution status** for all the entities is **Successful**. Next, select **Download package** to download the XML package to your local machine. Verify that the package contents from the download location are correct.
+Once the batch job is completed, verify that the **Execution status** for all the entities is **Successful**. Next, select **Download package** to download the XML package to your local machine. Verify that the package contents from the download location are correct.
 
 ## Import screen layout data to a new environment
 
