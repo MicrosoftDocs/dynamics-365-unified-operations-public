@@ -4,7 +4,7 @@ description: This article describes how to export point of sale screen layouts f
 author: anush6121
 ms.author: anvenkat 
 ms.topic: article 
-ms.date: 05/23/2024
+ms.date: 05/29/2024
 ms.custom: 
   - bap-template
 ms.reviewer: v-chrgriffin
@@ -15,7 +15,7 @@ ms.search.validFrom: 2024-01-20
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to export point of sale screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
+This article describes how to export point of sale screen (POS) layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 
 The following document describes the procedure to export and import POS screen layouts to a new environment.
 
@@ -32,7 +32,7 @@ To export layout data from an environment, follow these steps.
   
     ![batchjob.](media/batchjobentity.png)
   
-1. Go to **Data management \> Export** and under **Group name**, enter the name "Export POS layouts" for the new record.
+1. Go to **Data management \> Export** and under **Group name**, enter a name (for example, "Export POS layouts").
 1. Under **Selected entities** select **+Add multiple**.
   
     ![selecting entities.](media/selectentities.png)
@@ -116,38 +116,37 @@ If you require additional filters, you can add related tables. For example, you 
 
 ### Export and download package
 
-  Once all of the entities are updated with right filters, you can select **export** from the top menu bar. This will 
-  initiate a batch job.
+Once all of the entities are updated with right filters, you can select **export** from the top menu bar. This will initiate a batch job.
 
 ![export.](media/export.png)
 
-  Once the batch job is complete, verify the status of all the entities which should be **successful**.
-  Now select **download package** to download the xml package on to your machine. Verify the package contens from the 
-  download location.
+Once the batch job is complete, verify the status of all the entities which should be **successful**. Now select **download package** to download the xml package on to your machine. Verify the package contens from the download location.
   
 ![Download package.](media/download-package.png)
 
 ## Import screen layout data in a new environment
 
-To import screen layout data from the export, follow the steps below.
+To import the screen layout data you exported to a new environment, follow these steps.
 
- - In the new environment headquarters , go to **Data management** and select **Import**.
- - Provide a group name **Import POS layouts** and select **Add file** under selected entities.
- - Select **Package** on **source data format**.
- - Choose the package from where you downloaded and select **upload and add** and **close**.
+1. In headquarters for the new environment, go to **Data management \> Import**.
+1. For **Group name**, enter a name (for example, "Import POS layouts").
+1. Under **Selected entities**, select **+ Add file**.
+1. In the **Add file** dialog, in the **Source data format** drop-down list, select **Package**.
+1. Under **UPLOAD IMPORT FILES**, select **Upload and add**, find and select the package that you exported, and select **Open**.
+1. In the **Add file** dialog, select **Close**.
    
-  ![Import.](media/POSimport.png)
+    ![Import.](media/POSimport.png)
    
- - Once the entities are loaded select **entity sequence**.
- - Select **auto sequence** to sequence the entities considering the dependencies and select **OK**.
+1. After the entities are loaded, on the Action Pane select **Entity sequence**.
+1. Select **Auto sequence** to sequence the entities considering the dependencies, and then select **OK**.
 
-   ![autosequence.](media/autosequence.png)
+    ![autosequence.](media/autosequence.png)
    
- - Select **Import** from the top menu bar.
- - Verify the **Execution summary** and ensure that the status for all entities is **Succeeded**.
- - Verify the screen layouts, button grids and visual profiles are now updated.
- - Run scheduler jobs after assigning the layouts to the store, register or user level.
- - Sign in to the point of sale and verify the layouts.
+1. On the Action Pane, select **Import**.
+1. Verify the **Execution summary** and confirm that the status for all entities is **Succeeded**.
+1. Verify that the screen layouts, button grids, and visual profiles are updated.
+1. Run scheduler jobs after assigning the layouts to the store, register, or user levels.
+1. Sign in to the POS and verify the layouts.
 
     
 
