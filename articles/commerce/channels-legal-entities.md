@@ -9,7 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2020-01-20
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 # Create legal entities
 
