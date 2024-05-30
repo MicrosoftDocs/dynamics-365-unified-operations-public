@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ---
 
-# Budgeting overview
+# Create budget register entries
 
 [!include [banner](../includes/banner.md)]
 
