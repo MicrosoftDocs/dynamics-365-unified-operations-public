@@ -68,13 +68,13 @@ Device code flow is a user-based authentication method that lets you enter a Mic
 
 For more information, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
 
-## How many Microsoft Entra ID app registrations do I have to set up in Azure?
+## How many Microsoft Entra ID apps do I need to register in Azure?
 
-The Warehouse Management mobile app uses a Microsoft Entra ID web service application to authenticate and connect to your Supply Chain Management environment. You can choose to use a global application that's provided and maintained by Microsoft, or you can create your own custom web service application in Microsoft Entra ID.
+The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can choose to use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID.
 
-We recommend using the global application because it easier to set up, use, and maintain. When you use this option, you don't need to set up any Microsoft Entra ID app registrations in Azure. All of your devices can connect through the global application.
+We recommend using the global application because it easier to set up, use, and maintain. When you use this option, you don't need to register any Microsoft Entra ID applications in Azure. All of your devices can connect through the global application.
 
-If you have specific requirements that aren't met by the global application (such as with some on-premises environments), you can create a custom web service application as described in [Create a custom web service application in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). You still only need to create one Microsoft Entra ID app registration. All of your devices can then connect through it.
+If you have specific requirements that aren't met by the global application (such as with some on-premises environments), you can register your own application in Microsoft Entra ID as described in [Register an application in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). You still only need to create one Microsoft Entra ID app registration. All of your devices can then connect through it.
 
 For instructions on how to configure your devices to connect using either of these methods, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
@@ -104,7 +104,7 @@ No. The maximum session time-out period is 90 days.
 
 ## Will the current worker sign-in page change or be removed?
 
-The worker sign-in page is required for some authentication scenarios, but can be skipped for others (such as when using single sign-on). For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
+The worker sign-in page is required for some authentication scenarios, but can be skipped for others (such as when you have a [default user ID](mobile-device-work-users.md#set-wma-users) set for the warehouse worker account). For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
 ## How can I sign out a device?
 

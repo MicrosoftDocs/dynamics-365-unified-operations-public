@@ -130,7 +130,7 @@ You can import connection settings from either a file or a QR code. For both app
 | `"IsEditable"` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
 | `"IsDefaultConnection"` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `"CertificateThumbprint"` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
-| `"UseBroker"` | (Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. |
+| `"UseBroker"` | (Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication. Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. It works with the following authentication systems:<ul><li>Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only)</li><li>Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal))</li><li>[Integrated Windows authentication (IWA)](/entra/identity-platform/msal-authentication-flows#integrated-windows-authentication-iwa)</li></ul>  |
 | `"AuthCloud"` | Specify which type of Microsoft Entra ID app registration to authenticate with. Set it to one of the following values:<ul><li>`"AzureGlobal"` – Authenticate using a global Microsoft Entra ID application that is registered and maintained by Microsoft (recommended). If you choose this option, you don't need to register or maintain your own Microsoft Entra ID app, and you shouldn't specify `"ActiveDirectoryTenant"` or `"ActiveDirectoryClientAppId"` values for this connection. </li><li>`"Manual"` – Authenticate through your own, custom Microsoft Entra ID app registration. If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify values for `"ActiveDirectoryTenant"` and `"ActiveDirectoryClientAppId"` for this connection.</li></ul> |
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
@@ -139,12 +139,12 @@ The following example shows a valid connection settings file that contains two c
 {
     "ConnectionList": [
         {
-            "ConnectionName": "usernamePasswordAG",
+            "ConnectionName": "Connection1",
             "ActiveDirectoryResource": "https://yourenvironment1.cloudax.dynamics.com",
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
-            "ConnectionType": "UsernamePassword",
+            "ConnectionType": "DeviceCode",
             "AuthCloud": "AzureGlobal"
         },
         {
