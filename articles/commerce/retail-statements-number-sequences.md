@@ -11,7 +11,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-04-12
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Set up number sequences for retail statements

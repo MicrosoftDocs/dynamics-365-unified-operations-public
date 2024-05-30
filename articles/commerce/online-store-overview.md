@@ -11,6 +11,9 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-09-30
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # E-commerce site overview

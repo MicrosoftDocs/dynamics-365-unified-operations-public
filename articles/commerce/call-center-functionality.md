@@ -11,6 +11,9 @@ ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-02-28
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Call center sales functionality
