@@ -238,16 +238,9 @@ If business processes assume that **project invoices** are issued, follow these 
     > [!NOTE]
     > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address. This email address will be used to send generated electronic invoices to the customer.
 
-## Configure sales tax codes
-
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-1. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-1. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code that you selected in step 2.
-1. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
-1. Define exempt codes used in the event of non-taxable, zero-rated, or exempted operations.
-
 ## Configure the application-specific parameters
+
+This setup is required to establish mapping between Sales Tax codes used in the system and legally required [Tax types](https://sdk.myinvois.hasil.gov.my/codes/tax-types/#list).
 
 Make sure that the following ER format configurations are imported:
 
@@ -270,6 +263,17 @@ Follow these steps to complete the configuration.
 
 1. In the **State** field, select **Completed**. Then select **Save**.
 1. Repeat steps 2 through 8 for the **Project invoice (MY)** and **Self invoice (MY)** format configurations, as required.
+
+## Configure sales tax codes
+
+To cover scenarios of non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system.
+
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes** and add required exempt codes with descriptions.
+1. Save and closed the page.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
+1. In the **Setup** section, select a row with a required sales tax code, and, in the **Exempt** column, mark it as an exempt. 
+1. In the **Exempt code** field, refer to the one of exempt codes created at step 1.
+1. Save and closed the page.
 
 ## Issue electronic invoices
 
