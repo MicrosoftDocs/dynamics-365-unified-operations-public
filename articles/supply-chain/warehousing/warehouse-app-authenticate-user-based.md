@@ -40,7 +40,7 @@ Device code authentication simplifies the authentication process, because users 
 - You should create a unique Microsoft Entra ID user account for each device or human worker. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities*.
 - As a worker is signing in using the Warehouse Management mobile app, they are shown a generated device code that expires after 15 minutes and is then hidden by the app. To continue with the sign in, the worker must generate a new code by selecting **Connect** once more in the app.
 - If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
-- Single sign-on (SSO) isn't supported when you use device code flow authentication together with a mobile mass deployment (MDM) system (such as Intune) to distribute the Warehouse Management mobile app. You can still use an MDM to deliver the app to each mobile device and deliver a `connections.json` file that sets up connections using device code. The only difference is that workers must sign in manually when they start to use the app.
+- Single sign-on (SSO) isn't supported when you use device code flow authentication together with a mobile mass deployment (MDM) system (such as Intune) to distribute the Warehouse Management mobile app. You can still use an MDM to deliver the app to each mobile device and deliver a `connections.json` file that sets up connections using device code. The only difference is that workers must sign in manually when they start to use the app (just once).
 
 ## <a name="usernamePasswordFlow"></a>Username/password authentication
 
