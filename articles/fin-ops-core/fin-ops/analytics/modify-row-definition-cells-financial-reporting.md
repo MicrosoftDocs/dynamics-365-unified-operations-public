@@ -383,7 +383,6 @@ The **Link to financial dimensions** cell contains links to the financial data t
 | Link type that is selected       | The description of the Link column changes to this |
 |----------------------------------|----------------------------------------------------|
 | Financial Dimensions             | Link to Financial Dimensions                       |
-| Report Worksheet                 | Financial Reporting Report                         |
 
 ### Specify a dimension or range
 
