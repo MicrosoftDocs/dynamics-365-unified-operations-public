@@ -11,6 +11,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-06-30
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Recall order operation in POS
