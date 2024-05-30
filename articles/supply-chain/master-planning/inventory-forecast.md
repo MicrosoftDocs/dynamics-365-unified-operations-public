@@ -38,7 +38,7 @@ There are also other ways to create forecast lines:
 - [Generate the forecast by using a Microsoft Azure Machine Learning web service](demand-forecasting-setup.md).
 - [Import demand or supply forecast lines by using the data management framework (ForecastDemandForecastEntryStaging and ForecastSupplyForecastEntryStaging data entities)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
-As the table in step 1 show, there are different ways to access the pages that are used.
+As the table in step 1 shows, there are different ways to access the pages that are used.
 
 1. Depending on the type of entity that you want to create a forecast for, and the type of forecast that you want to create, open a supply, demand, or inventory forecast page as described in the following table.
 
