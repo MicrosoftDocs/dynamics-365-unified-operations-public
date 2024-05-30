@@ -78,7 +78,8 @@ To use the out-of-box customer-facing SCO layout, go to **Retail and Commerce \>
 > [!NOTE]
 > - In demo data, **Houston - Register 49** is set up as an SCO register, and the SCO layout (**SCO\_POC1**) is assigned to it. If you update an existing demo environment, feel free to mark any register of your choice with **Self checkout** as **yes** and assign the SCO layout.
 > - In demo data, user **000815** is configured as an SCO customer, and user **000813** is configured as an SCO manager.
-> - If these users do not exist in your demo enviroment, feel free to assign **SCO kiosk** permission group to the shopper user that you want to use from your enviroment. 
+> - If these users do not exist in your demo enviroment, feel free to assign **SCO kiosk** permission group to the shopper user that you want to use from your enviroment.
+
 
 ## Supported customer operations
 
@@ -111,3 +112,6 @@ The **Call for assistance** operation provides support for cashier assistance du
     - **Discount amount** – Apply a discount amount to the line item.
 - **Logout** – This operation allows the store associate sign out of the kiosk.
 - **Cancel** – This operation allows the store associate cancel out of the **Call for assistance** operation.
+
+> [!NOTE]
+> - If you are updating your demo environment with self-checkout configuration, you must add the operation **718 - Allow request for assistance** manually by going into **POS operations** > **New** > **Operation id** - **718** > **Permission ID** - **1002**. **Check user access** and **User operation** must be checked. 
