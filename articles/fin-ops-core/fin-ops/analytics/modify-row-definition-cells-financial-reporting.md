@@ -4,7 +4,7 @@ description: Learn about what is required for each cell in a row definition on a
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 08/11/2021
+ms.date: 05/30/2024
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
