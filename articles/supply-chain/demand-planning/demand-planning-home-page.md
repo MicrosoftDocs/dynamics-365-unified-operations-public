@@ -20,7 +20,7 @@ ms.collection:
 
 Inaccurate forecasts and demand plans can lead to lost revenue and inefficiency in the supply chain. However, forecasts that are infused with intelligence lead to more accurate and effective demand plans. Direct impact can be measured in improved revenue and fewer stockouts. Operating expenses are reduced in supply chains that require fewer fire drills.
 
-*Demand planning in Microsoft Dynamics 365 Supply Chain Management* is Microsoft's next-generation collaborative demand-planning solution. This app is powered by best-in-class forecasting algorithms and models, and offers immersive user experiences, intelligent reports, and analytics. It empowers organizations to build an agile, resilient, and sustainable demand planning practice that's fueled by intelligence and collaboration.
+*Demand planning in Microsoft Dynamics 365 Supply Chain Management* is Microsoft's next-generation collaborative demand planning solution. This app is powered by best-in-class forecasting algorithms and models, and offers immersive user experiences, intelligent reports, and analytics. It empowers organizations to build an agile, resilient, and sustainable demand planning practice that's fueled by intelligence and collaboration.
 
 Demand planning provides the following capabilities:
 
