@@ -77,7 +77,7 @@ A production planner can create a baseline forecast either by using time series 
 ## Visualize the demand forecast
 
 1. Go to **Master planning > Forecasting > Demand forecasting > Adjusted demand forecast**.
-2. In the aggregated view table, select the cell in row 1, column 2. This is the second month for which you have created forecast.
+2. In the aggregated view table, select the cell in row 1, column 2. This is the second month for which you have created a forecast.
 3. Set **QtyCell** to *400*.
     * In the cell, enter a different number than the one that was forecasted, for example, 400.  
 4. You have made a manual adjustment to the forecast. Notice the graphical indication in the next step.
