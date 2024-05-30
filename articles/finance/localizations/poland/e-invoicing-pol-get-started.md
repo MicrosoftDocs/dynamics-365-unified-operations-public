@@ -1,5 +1,5 @@
 ---
-title: Electronic invoicing for Poland
+title: Get started with Electronic invoicing for Poland
 description: Learn about what will help you get started with Electronic invoicing for Poland in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: ikondratenko
 ms.author: ikondratenko
