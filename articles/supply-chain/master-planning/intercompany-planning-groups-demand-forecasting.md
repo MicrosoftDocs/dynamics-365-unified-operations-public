@@ -21,7 +21,7 @@ This article describes how you can use intercompany planning groups during the d
 
 Collaboration is a vital aspect for many large-scale projects. When working with other legal entities (companies) during the development of a product or service, you can create intercompany planning groups to assist you during the demand forecasting process.
 
-This gives all companies involved a greater understanding of the anticipated revenue that the product or service will generate and give all companies the information necessary to devise and conduct business plans accordingly.
+This gives all companies involved a greater understanding of the anticipated revenue that the product or service will generate. It also gives them the information necessary to devise and conduct business plans accordingly.
 
 Many organizations utilize other companies within their organization to oversee various facets within collaborations and projects. Logistics operations that depend on other companies are handled by using intercompany sales and purchases since each legal entity has a separate chart of accounts.
 
@@ -40,7 +40,7 @@ To propagate the demand throughout the intercompany chain, you must set paramete
 
 If no **Firming time fence** is set up, no intercompany purchase orders are created automatically. Only the first execution of the master scheduling results in planned orders; however, because the intercompany purchase order is not actually created, no intercompany sales order is created, and, therefore, no additional intercompany purchase orders are created, and so on.
 
-To learn more, see [Demand forecasting setup](../master-planning/demand-forecasting-setup.md#intercompany-planning-groups).
+To learn more, see [Intercompany planning groups](../master-planning/demand-forecasting-setup.md#intercompany-planning-groups).
 
 <!-- KFM: The following text needs to be verified against SCM pages and settings. I think this text is describing Business Central, not SCM. 
 
