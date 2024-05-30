@@ -10,6 +10,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-06-30 
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 # Create call center orders
 
