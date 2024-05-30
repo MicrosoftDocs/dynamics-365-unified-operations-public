@@ -139,7 +139,7 @@ When this option is used, the following behavior occurs:
 
 #### Example 1: Transactions – dynamic period
 
-Here a simple example that shows how the **Transactions - dynamic period** method works.
+Here is a simple example that shows how the **Transactions - dynamic period** method works.
 
 For this example, you include the following demand forecast in a master plan.
 
@@ -166,7 +166,7 @@ In this case, the following planned orders are created.
 
 #### Example 2: Transactions – dynamic period
 
-In most cases, systems are set up so that transactions reduce demand forecast in specific forecast periods: weeks, months, and so on. These periods are defined in the reduction key. However, the time between two demand forecast lines can also *imply* a period.
+In most cases, systems are set up so that transactions reduce demand forecasts in specific forecast periods: weeks, months, and so on. These periods are defined in the reduction key. However, the time between two demand forecast lines can also *imply* a period.
 
 For this example, you create a demand forecast for the following dates and quantities.
 
