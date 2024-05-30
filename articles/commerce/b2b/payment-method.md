@@ -10,6 +10,9 @@ ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.search.form: RetailOperations
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Configure the customer account payment method for B2B e-commerce sites

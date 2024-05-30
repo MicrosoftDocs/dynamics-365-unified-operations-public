@@ -10,7 +10,9 @@ ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-04-30
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Configure call center delivery modes and charges

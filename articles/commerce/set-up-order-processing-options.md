@@ -11,6 +11,9 @@ ms.author: shajain
 ms.search.validFrom: 2016-02-28
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Set up call center channels

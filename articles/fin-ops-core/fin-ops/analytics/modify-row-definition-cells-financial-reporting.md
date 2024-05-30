@@ -4,7 +4,7 @@ description: Learn about what is required for each cell in a row definition on a
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 08/11/2021
+ms.date: 05/30/2024
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
@@ -383,7 +383,6 @@ The **Link to financial dimensions** cell contains links to the financial data t
 | Link type that is selected       | The description of the Link column changes to this |
 |----------------------------------|----------------------------------------------------|
 | Financial Dimensions             | Link to Financial Dimensions                       |
-| Report Worksheet                 | Financial Reporting Report                         |
 
 ### Specify a dimension or range
 

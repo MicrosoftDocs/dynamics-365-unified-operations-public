@@ -1558,6 +1558,8 @@
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
           - name: Upload ER configurations and Globalization features as a Dataverse solution
             href: localizations/global/workspace/gsw-upload-er-config.md
+          - name: Create a Dataverse solution using upload into repository
+            href: localizations/global/workspace/gsw-upload-into-repository.md
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
@@ -1666,6 +1668,8 @@
               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
             - name: Malaysia (preview)
               href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance 
+            - name: Poland (preview)
+              href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance 
           - name: Electronic Invoicing FAQ
             href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
