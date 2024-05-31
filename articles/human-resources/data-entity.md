@@ -36,7 +36,6 @@ Multiple Data Management Framework (DMF) entities have been added for the 10.0.3
 
 | Module | New entity coverage | Notes |  
 |--------|---------------------|-------|
-
 | Personnel management | I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position | |
 | Attachment entities for a Worker | Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank account, Injury and incidents, Identification | All entities include "Attachment" in the target entity name. |
 | Attachment entities | Job, Employment terms, Certificate types, Position, Dir party, electronic address, benefit plan employee, cade detail, fixed comp, Variable comp, Courses, Leave request, Discussions, Goals, Performance Journal, Certificates | All entities include "Attachment" in the target entity name. |
