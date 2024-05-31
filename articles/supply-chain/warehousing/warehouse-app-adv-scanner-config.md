@@ -18,6 +18,7 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 On most mobile devices, the Warehouse Management mobile app can capture scanned barcode input right out of the box, so all you need to do is install the app, set up the connection to Supply Chain Management, and start scanning. However, some devices might require advanced configuration to make their barcode-scanner hardware interact correctly with the Warehouse Management app.
+
 One common method for integrating scanning hardware with the Warehouse Management app is to configure your mobile device to provide *intent output* for barcode scanning. This technique allows the barcode scanner to submit scanned data directly to the Warehouse Management app rather than send it as simulated keystroke input. If you're experiencing compatibility issues with your barcode scanner, then setting up your device to use intent output might enable you to solve them.
 
 This article explains how to set up a mobile device to provide intent output for barcode scanning. If your barcode scanner is already working fine with the Warehouse Management app, then you don't need to read this article.
