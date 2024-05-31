@@ -1,25 +1,14 @@
 --- 
-# required metadata 
- 
 title: Set up sales tax settlement periods
 description: This article explains how to set up sales tax settlement periods in Dynamics 365 Finance.
-author: twheeloc
-ms.date: 08/05/2019
+author: liza-golub
+ms.author: egolub
+ms.date: 05/31/2024
 ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: TaxPeriod   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
+
 ---
 # Set up sales tax settlement periods
 
@@ -40,7 +29,7 @@ This task uses the USMF demo company.
 9. Enter the number of Period interval units per period. For example, a quarter has 3 months.
 10. Select or clear the **Use batch processing for sales tax settlement** check box. The settlement process for the settlement period can be processed as batch job in the background. This is recommended for a large number of tax transactions within a period interval.
 11. Select or clear the **Prevent generating offset tax transactions** check box. By default, the system generates offset tax transactions during the settlement process, which cause can performance issue if there are a large number of tax transactions within a period interval. Select this check box to prevent generating offset tax transactions.
-12. Select or clear the **Include corrections** check box. By default, its value is copied from the **General ledger parameters** page, **Sales tax** tab. The parameter is available starting from the 10.0.41 version by enabling the **Enable “Include corrections” option on Sales tax settlement periods** feature in the **Feature management** workspace. The **Include corrections** option affects the sales tax settlement process and periodic sales tax reporting and lets you control the **Include corrections** option for each sales tax settlement period instead of the whole legal entity.
+12. Select or clear the **Include corrections** check box. By default, its value is copied from the **General ledger parameters** page, **Sales tax** tab. The parameter is available starting from version 10.0.41 by enabling the **Enable “Include corrections” option on Sales tax settlement periods** feature in the **Feature management** workspace. The **Include corrections** option affects the sales tax settlement process and periodic sales tax reporting and lets you control the **Include corrections** option for each sales tax settlement period instead of the whole legal entity.
 13. Expand the **Period intervals** tab.
 14. Select **Add**.
 15. In the **From date** field in the new row, enter a date.
