@@ -27,11 +27,11 @@ To use Demand planning with Supply Chain Management, you must be running one of 
 - Supply Chain Management version 10.0.38 (any build) or later
 
 > [!IMPORTANT]
-> **Demand planning no longer supports Supply Chain Management "Cloud hosted" environments.**
+> **Demand planning no longer supports Supply Chain Management *Cloud hosted* environments.**
 >
-> As of February 28, 2024, Demand planning no longer supports Supply Chain Management environments of type "Cloud hosted". Thereafter, you can no longer import, export, or synchronize data between Demand planning and Supply Chain Management environments of this type.
+> As of February 28, 2024, Demand planning no longer supports Supply Chain Management environments of the *Cloud hosted* type. After that date, you can no longer import, export, or sync data between Demand planning and Supply Chain Management environments of this type.
 >
-> If you are running a "Cloud hosted" environment of Supply Chain Management and wish to continue using Demand planning, then you must switch to a Supply Chain Management environment of type "Tier-2" or above or set up a [unified development environment](/power-platform/developer/unified-experience/finance-operations-dev-overview). You must then create new import and export profiles in Demand planning and configure them to connect to your new Supply Chain Management environment.
+> If you're running a Supply Chain Management *Cloud hosted* environment and want to continue to use Demand planning, you must either switch to a Supply Chain Management environment of the *Tier-2* type or higher, or set up a [unified development environment](/power-platform/developer/unified-experience/finance-operations-dev-overview). You must then create new import and export profiles in Demand planning and configure them to connect to your new Supply Chain Management environment.
 
 ## Install Demand planning in Power Platform admin center
 
