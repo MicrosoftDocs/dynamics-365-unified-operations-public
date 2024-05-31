@@ -4,7 +4,7 @@ description: Learn about how to view or delete archived data in Microsoft Datave
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 03/26/2024
+ms.date: 05/31/2024
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -44,4 +44,4 @@ For information about the limitations of these options, see [Limitations for ret
 
 ### Delete archived data from the Dataverse-managed data lake
 
-For information on how to delete long term retained data from the Dataverse managed data lake, please refer to [Delete data in bulk](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/delete-data-bulk?tabs=sdk).
+For information about how to delete long term retained data from the Dataverse managed data lake, see [Delete data in bulk](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/delete-data-bulk?tabs=sdk).
