@@ -4,8 +4,9 @@ description: Learn about how to archive data in Microsoft Dynamics 365 finance a
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 4/10/2024
-ms.custom:
+ms.custom: 
+  - bap-template
+ms.date: 5/31/2024
 ms.reviewer: twheeloc
 ---
 
@@ -57,7 +58,7 @@ When an archival job is initiated from the Finance and operations archive worksp
 
 ## Restoring data from history tables to live tables
 
-Data from history tables can be restored back to live tables from the archive workspace. When data is restored back from history tables to live tables, the corresponding archived data in Dataverse long term retention will also go through a status change from inactive to active, as the data is no longer considered to be archived. 
+Data from history tables can be restored back to live tables from the archive workspace. When data is restored back from history tables to live tables, the corresponding archived data in Dataverse long term retention also goes through a status change from inactive to active, as the data is no longer considered to be archived. 
 
 ## Customization
 
