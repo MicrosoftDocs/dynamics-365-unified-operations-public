@@ -44,4 +44,4 @@ For information about the limitations of these options, see [Limitations for ret
 
 ### Delete archived data from the Dataverse-managed data lake
 
-For information about how to delete long term retained data from the Dataverse managed data lake, see [Delete data in bulk](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/delete-data-bulk?tabs=sdk).
+For information about how to delete long term retained data from the Dataverse managed data lake, see [Delete data in bulk](/power-apps/developer/data-platform/delete-data-bulk?tabs=sdk).
