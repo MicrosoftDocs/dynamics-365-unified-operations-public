@@ -178,9 +178,9 @@ f(x) = a(x) &times; Price(product-ID)
 
 ### Phase in/out tiles
 
-Phase in/out tiles modify the values of a data column in a time series to simulate the gradual phasing in of a new element (such as a new product or warehouse) or phasing out of an old element. The phase in/out calculation lasts for a specific period and uses values that are drawn from the same time series (from either the same data column that is being adjusted or another data column that represents a similar element).
+*Phase in/out* tiles modify the values of a data column in a time series to simulate the gradual phasing in of a new element (such as a new product or warehouse) or phasing out of an old element. The phase in/out calculation lasts for a specific period and uses values that are drawn from the same time series (from either the same data column that is being adjusted or another data column that represents a similar element).
 
-Phase in/out tiles have the following fields that you can set:
+*Phase in/out* tiles have the following fields that you can set:
 
 - **Step name** – The specific name of the tile. This name is also shown in the flowchart.
 - **Description** – A short description of the tile.
