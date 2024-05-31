@@ -1,8 +1,8 @@
 --- 
 title: Record a vendor invoice in the invoice journal
 description: Learn about how to record vendor invoices that are not associated with purchase orders, including a step-by-step process. 
-author: twheeloc
-ms.author: twheeloc
+author: sunfzam
+ms.author: Raynezou
 ms.topic: how-to
 ms.date: 02/08/2023
 ms.custom:
