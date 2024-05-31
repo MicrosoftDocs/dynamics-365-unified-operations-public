@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the Microsoft Ex
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/23/2024
+ms.date: 05/31/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -42,6 +42,7 @@ This issue occurs when you work with multiple monitors or more than just your la
 
 To work around this issue, follow one of these steps.
 
+- Go to **File** > **Options**. On the **General** tab, > **User interface options**, select **Optimize for compatibility (application restart required)**.
 - Drag the table selection window to your main monitor (laptop display). The user interface should appear.
 - Duplicate your screen, and begin to interact with table selections and authentication prompts.
 
