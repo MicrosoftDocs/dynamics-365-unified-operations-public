@@ -134,20 +134,20 @@ For information about how to set up Demand planning to connect to and use your A
 
 ### Phase in/out tiles
 
-Phase in/out tiles modify the values of a data column in a time series to simulate the gradual phase in of a new element (such as a new product or warehouse) or phase out of an old element. The phase in/out calculation lasts for a specific period and uses values drawn from the same time series (from either the same data column being adjusted or another one representing a similar element).
+Phase in/out tiles modify the values of a data column in a time series to simulate the gradual phasing in of a new element (such as a new product or warehouse) or phasing out of an old element. The phase in/out calculation lasts for a specific period and uses values that are drawn from the same time series (from either the same data column that is being adjusted or another data column that represents a similar element).
 
 Phase in/out tiles have the following fields that you can set:
 
 - **Step name** – The specific name of the tile. This name is also shown in the flowchart.
 - **Description** – A short description of the tile.
 - **Created by** – The user who created the tile.
-- **Rule group** – The name of the rule group that defines the calculation to be made by the tile.
+- **Rule group** – The name of the rule group that defines the calculation that the tile does.
 
-When you are setting up your forecast model, the position of the phase in/out tile affects the calculation result. To apply the phase in/out calculation to the historical sales numbers, then place the phase in/out tile before the forecast tile (as shown on the left side of the following illustration). To apply the phase in/out calculation to the forecasted result, then place the phase in/out tile after the after tile (as shown on the right side of the following illustration).
+When you set up your forecast model, the position of the phase in/out tile affects the calculation result. To apply the phase in/out calculation to the historical sales numbers, put the phase in/out tile before the forecast tile (as shown on the left side of the following illustration). To apply the phase in/out calculation to the forecasted result, put the phase in/out tile after the forecast tile (as shown on the right side of the following illustration).
 
-:::image type="content" source="media/phase-tile-position.png" alt-text="The position of phase in/out tiles affect calculation result." lightbox="media/phase-tile-position.png":::
+:::image type="content" source="media/phase-tile-position.png" alt-text="Screenshots that show the phase in/out tile in different positions relative to the forecast tile." lightbox="media/phase-tile-position.png":::
 
-For more information about phase in/out functionality, including details of how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-in-out.md).
+For more information about phase in/out functionality, including details about how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-in-out.md).
 
 ### Save tiles
 
