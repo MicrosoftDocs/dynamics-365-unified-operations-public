@@ -4,8 +4,9 @@ description: Learn about how to archive data in Microsoft Dynamics 365 finance a
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 4/10/2024
-ms.custom:
+ms.custom: 
+  - bap-template
+ms.date: 5/31/2024
 ms.reviewer: twheeloc
 ---
 
@@ -54,6 +55,10 @@ When an archival job is initiated from the Finance and operations archive worksp
  -  The live table records are marked as retained (archived) in Dataverse long term retention.
  -  A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
  -  Live application data that was previously marked as ready for archiving is moved to history tables in the Dynamics 365 finance database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
+
+## Restoring data from history tables to live tables
+
+Data from history tables can be restored back to live tables from the archive workspace. When data is restored back from history tables to live tables, the corresponding archived data in Dataverse long term retention also goes through a status change from inactive to active, as the data is no longer considered to be archived. 
 
 ## Customization
 
