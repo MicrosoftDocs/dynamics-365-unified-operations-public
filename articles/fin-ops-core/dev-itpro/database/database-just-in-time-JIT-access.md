@@ -15,13 +15,13 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../includes/banner.md)]
 
-This article provides the steps necessary to enable database access using a just-in-time (JIT) fashion. This is useful if access to the database is required for various troubleshooting efforts, running unplanned queries, or data upgrade problem solving. This process is available for both Lifecycle Services managed environments and PPAC managed environments. For more information about the available environment types, see [Deployment overview](../deployment/cloud-deployment-overview.md).
+This article provides the steps necessary to enable database access using a just-in-time (JIT) fashion. JTT is useful if access to the database is required for various troubleshooting efforts, running unplanned queries, or data upgrade problem solving. This process is available for both Lifecycle Services managed environments and PPAC managed environments. For more information about the available environment types, see [Deployment overview](../deployment/cloud-deployment-overview.md).
 
 ## Lifecycle Services Managed Self-service environments
 
 The self-service environment type never had Remote Desktop Protocol (RDP) access or static database accounts. However, it's still possible to access the database.
 
-From the environment details page for your sandbox environment, select **Maintain** > **Enable access**, and then in the dialog box, add the IP address of your source environment. This firewall entry expires after 8 hours or it is lost after the database is replaced by a database movement operation (whichever comes first).  This includes operations such as database refresh or database import.
+From the environment details page for your sandbox environment, select **Maintain** > **Enable access**, and then in the dialog box, add the IP address of your source environment. This firewall entry expires after 8 hours or it's lost after the database is replaced by a database movement operation (whichever comes first) including operations such as database refresh or database import.
 
 You also need to enter which type of access you require in the **Database Accounts** section. The available options include read or read-write access. Enter a short reason description and then select **Request access**.
 ![Request access option.](media/sql-jit2.png)
