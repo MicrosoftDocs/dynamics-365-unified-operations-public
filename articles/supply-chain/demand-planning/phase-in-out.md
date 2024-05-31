@@ -1,6 +1,6 @@
-﻿---
+---
 title: Use phase in/out functionality to simulate planned changes
-description: This article explains how to use phase in/out functionality to set up forecasts and calculations that simulate changes you're planning to make.
+description: This article explains how to use phase in/out functionality to set up forecasts and calculations that simulate changes that you plan to make.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -14,37 +14,37 @@ ms.custom:
 
 # Use phase in/out functionality to simulate planned changes
 
-Phase in/out functionality lets you set up forecasts and calculations that simulate changes you're planning to make, such as:
+Phase in/out functionality lets you set up forecasts and calculations that simulate changes that you plan to make. Here are some examples:
 
-- Phasing out a product that's no longer popular or is leaving the market
-- Phasing in a new product
-- Replacing an older product with a new, similar one
-- Opening a new store or warehouse that should be similar to an existing one
+- Phase out a product that's no longer popular or that's leaving the market.
+- Phase in a new product.
+- Replace an older product with a new, similar one.
+- Open a new store or warehouse that should be similar to an existing one.
 
-To apply this type of calculation, add a *phase in/out tile* to the relevant calculation model or forecast model. The phase in/out tile uses a *phase in/out rule group* to modify a selected data column using values found in the same column or another column of the time series. Each phase in/out rule group defines selection criteria that identify input and output columns, a time period during which to apply the calculation, and a scaling factor to apply during that period.
+To apply calculations of this type, add a *Phase in/out* tile to the relevant calculation model or forecast model. The *Phase in/out* tile uses a *phase in/out rule group* to modify a selected data column based on values that are found in the same column or another column of the time series. Each phase in/out rule group defines selection criteria that identify input and output columns, a period to apply the calculation during, and a scaling factor to apply during that period.
 
 ## Example: Phase in a new product that replaces an existing product
 
-Suppose you're introducing a new product (Speaker V2) that replaces a similar existing product (Speaker V1). You expect that customers will increasingly choose the new speaker, but the total number of speakers sold each month will remain about the same as last year, following a familiar seasonal sales pattern. Therefore, you could add the following phase in/out calculations to next year's forecast:
+You're introducing a new product (Speaker V2) that replaces a similar existing product (Speaker V1). You expect that customers will increasingly choose the new speaker. However, you also expect that the total number of speakers that are sold each month will remain about the same as last year and follow a familiar seasonal sales pattern. Therefore, you add the following phase in/out calculations to next year's forecast:
 
-- For the first six months of next year, you offer Speaker V2 at a premium price. Therefore, you predict Speaker V2 will sell 40% of the quantity that Speaker V1 did for the same month the previous year. Speaker V1 will make up the difference and continue to sell 60% as much as last year.
-- After six months, you'll lower the price of Speaker V2 slightly. So, for the last half of next year, you predict Speaker V2 will sell 75% of the quantity that Speaker V1 did, with Speaker V1 still selling 25%.
-- After a year, you expect Speaker V2 to completely replace sales of Speaker V1.
+- For the first six months of next year, you will offer Speaker V2 at a premium price. Therefore, you predict that the quantity of Speaker V2 that you sell will be 40 percent of the quantity of Speaker V1 that you sold during the same month last year. Speaker V1 will make up the difference, and you will sell 60 percent of the quantity that you sold last year.
+- After six months, you will slightly lower the price of Speaker V2. Therefore, for the last half of next year, you predict that the quantity of Speaker V2 that you sell will be 75 percent of the quantity of Speaker V1 that you sold last year. The quantity of Speaker V1 that you sell will be 25 percent of the quantity that you sold last year.
+- After a year, you expect that sales of Speaker V2 will completely replace sales of Speaker V1.
 
-To be able to add this calculation to a forecast model, you'd set up a phase in/out rule group with the following rules:
+To add this calculation to a forecast model, you set up a phase in/out rule group that has the following rules:
 
-- **Phase in rule 1** – Applies from January to June. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 40%, and add that to the forecast quantity for Speaker V2 (which is currently zero, since it's a new product).
-- **Phase out rule 1** – Applies from January to June. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 60%, and set that as the new forecast quantity for Speaker V1.
-- **Phase in rule 2** – Applies from July to December. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 75%, and add that to the forecast quantity for Speaker V2.
-- **Phase out rule 2** – Applies from July to December. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 25%, and set that as the new forecast quantity for Speaker V1.
+- **Phase in rule 1** – This rule applies from January through June. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 40 percent, and add the result to the forecast quantity for Speaker V2. (The forecast quantity for Speaker V2 is currently 0 \[zero\], because it's a new product.)
+- **Phase out rule 1** – This rule applies from January through June. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 60 percent, and set the result as the new forecast quantity for Speaker V1.
+- **Phase in rule 2** – This rule applies from July through December. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 75 percent, and add the result to the forecast quantity for Speaker V2.
+- **Phase out rule 2** – This rule applies from July through December. For each month, select the forecast quantity based on last year's sales of Speaker V1, multiply it by 25 percent, and set the result as the new forecast quantity for Speaker V1.
 
-The following table shows an example of forecasted sales before applying the phase in and phase out calculations.
+The following table shows an example of forecasted sales before the phase in and phase out calculations are applied.
 
 | Product    | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Speaker V1 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 |
 
-The following table shows an example of forecasted sales after applying the phase in and phase out calculations.
+The following table shows an example of forecasted sales after the phase in and phase out calculations are applied.
 
 | Product    | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -53,44 +53,49 @@ The following table shows an example of forecasted sales after applying the phas
 
 ## Manage phase in/out rule groups
 
-Use phase in/out rule groups to define the phase in/out calculations to be applied in your forecast and calculation models. To create, view, or edit a rule group, follow these steps:
+Use phase in/out rule groups to define the phase in/out calculations that are applied in your forecast and calculation models. To create, view, or edit a rule group, follow these steps.
 
 1. On the navigation pane, select **Configuration** \> **Phase in/out**.
+1. Follow one of these steps:
 
-1. Do one of the following steps:
-    - To create a new rule group, select **New** on the Action Pane. A wizard guides you through the steps of creating the group.
-    - To view or edit an existing rule group, find it in the grid and select the link for it in the **Name** column to open the details page of your selected group.
+    - To create a new rule group, select **New** on the Action Pane. A wizard guides you through the steps for creating the group.
+    - To view or edit an existing rule group, select the link for it in the **Name** column of the grid to open its details page.
 
-1. The details page and wizard pages provide nearly identical settings. Use them to make the following settings:
+1. The details page and wizard pages provide nearly identical fields that you can set:
+
     - **Name** – Enter a name for the rule group.
     - **Description** – Enter a short description of the rule group.
-    - **Owner** – Select the user account that owns the rule group. (This setting is only available in the wizard.)
-    - **Active** – Set to *Yes* or*No*. Only active rules groups can be assigned the phase in/out tiles of your forecast or calculation models.
-    - **Rules** – Use these settings to define the phase in/out calculations made by the group. See the next section for details about how to use these settings.
+    - **Owner** – Select the user account that owns the rule group. (This field is available only in the wizard.)
+    - **Active** – Set this option to *Yes* or *No*. Only active rules groups can be assigned to the phase in/out tiles of your forecast or calculation models.
+    - **Rules** – Use the fields on this tab to define the phase in/out calculations that the group does. For information about how to use these fields, see the next section.
 
-1. If you're creating a new group, select **Review and finish** on the last page to save your rule group and open its details page. If you're editing an existing group, save your settings by selecting **Save** or **Save & close** on the Action Pane.
+1. Follow one of these steps:
+
+    - If you're creating a new group, select **Review and finish** on the last wizard page to save your rule group and open its details page.
+    - If you're editing an existing group, save your settings by selecting **Save** or **Save & close** on the Action Pane.
 
 ## Set up rules
 
-Each rule group must have at least one rule and might have several. You set up rules using the **Rules** tab of the details page or the **Add rules** page of the new-group wizard, both of which work the same.
+Each rule group must have at least one rule and might have several rules. You set up rules on the **Rules** tab of either the details page or the **Add rules** page of the new group wizard. The process is the same in both places.
 
-Use the buttons on the toolbar to add, remove, and edit rules. You can include as many rules as you need for each group. Each time you add or edit a rule, the **Edit rule** dialog opens.
+Use the buttons on the toolbar to add, remove, and edit rules. You can include as many rules as you need for each group. Each time that you add or edit a rule, the **Edit rule** dialog box appears.
 
-:::image type="content" source="media/edit-rule-dialog.png" alt-text="The Edit rule dialog." lightbox="media/edit-rule-dialog.png":::
+:::image type="content" source="media/edit-rule-dialog.png" alt-text="Screenshot of the Edit rule dialog box." lightbox="media/edit-rule-dialog.png":::
 
-Use the **Edit rule** dialog to make the following settings for each rule:
+In the **Edit rule** dialog box, set the following fields for each rule:
 
-- **Rule name** – Enter a name for the rule. Choose a value that makes it easy to identify in the rule list.
-- **Start date** – Enter the first date where the rule should apply.
-- **End date** – Enter the last date where the rule should apply. For phase-in rules, data will stop being copied on this date (by this date, you should have actual sales data to base your forecasts on). For phase-out rules, time-series values will fall to zero on this date unless another phase-out rule applies immediately after this one.
-- **Rule type** – Identify they type of rule it is by selecting one of the following values:
-    - *Phase in* – The rule takes a value from the data column identified in the **Copy data from** section, multiplies it by the **Uplift/reduction factor (%)** value, and adds the result to the data column identified in the **Apply data to** section.
-    - *Phase out* – The rule takes a value from the data column identified in the **Copy data from** section, multiplies it by the **Uplift/reduction factor (%)** value, and sets the result as the new value for the data column identified in the **Copy data from** section.
+- **Rule name** – Enter a name for the rule. Choose a name that makes the rule easy to identify in the rule list.
+- **Start date** – Enter the first date when the rule should apply.
+- **End date** – Enter the last date when the rule should apply. For a phase in rule, data will stop being copied on this date. (By this date, you should have actual sales data to base your forecasts on.) For a phase out rule, time series values will fall to 0 (zero) on this date unless another phase out rule applies immediately after this rule.
+- **Rule type** – Select one of the following values to specify the type of rule:
+
+    - *Phase in* – The rule takes a value from the data column that's identified in the **Copy data from** section, multiplies it by the **Uplift/reduction factor (%)** value, and adds the result to the data column that's identified in the **Apply data to** section.
+    - *Phase out* – The rule takes a value from the data column that's identified in the **Copy data from** section, multiplies it by the **Uplift/reduction factor (%)** value, and sets the result as the new value for the data column that's identified in the **Copy data from** section.
 
 - **Uplift/reduction factor (%)** – Specify a factor (as a percentage) to apply to the input time series values.
-- **Copy data from** – Specify criteria for selecting input values for the calculation. You can use the **Add condition button** to add as many rows as you need. The data tables listed are those defined in Demand planning (see also [View and customize tables for holding imported data](tables.md)). You might typically use this setting to identify a product from the product table that you want to phase in or out.
-- **Apply data to** – This setting only applies for phase-in rules (phase-out rules always apply to the same data columns identified in the **Copy data from** section). Specify criteria for selecting the data column to which the phase-in rule applies. You might typically use this setting to identify a new product that you're phasing in. You can use the **Add condition button** to add as many rows as you need.
+- **Copy data from** – Use this section to specify criteria for selecting input values for the calculation. You can use the **Add condition** button to add as many rows as you need. The data tables that are listed are those that are defined in Demand planning. (For more information, see [View and customize tables for holding imported data](tables.md).) You typically use this section to identify a product from the product table that you want to phase in or out.
+- **Apply data to** – This section applies only to phase in rules. (Phase out rules always apply to the same data columns that are identified in the **Copy data from** section.) Specify criteria for selecting the data column that the phase in rule applies to. You typically use this section to identify a new product that you're phasing in. You can use the **Add condition** button to add as many rows as you need.
 
 ## Assign rule groups to phase in/out tiles
 
-When you're done setting up your rule groups, you're ready to use them by placing phase in/out tiles at the appropriate positions in your calculation models and forecast models. For details about how to do this, see [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
+After you finish setting up your rule groups, you can use them by putting *Phase in/out* tiles at the appropriate positions in your calculation models and forecast models. For more information, see [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
