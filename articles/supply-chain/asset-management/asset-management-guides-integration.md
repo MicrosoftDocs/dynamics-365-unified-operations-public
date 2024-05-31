@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
-description: This article explains how to integrate the Asset management module in Microsoft  Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
-author: johanhoffmann 
-ms.date: 04/28/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn how to integrate the Asset management module to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
+author: johanhoffmann
 ms.author: johanho
+ms.topic: article
+ms.date: 04/28/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-04-28
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 
