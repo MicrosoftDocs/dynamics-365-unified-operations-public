@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Asset manufacturers and models
-description: This article explains how to set up asset manufacturers and related models in Asset Management.
+description: Learn how to set up asset manufacturers and related models in Asset Management, including a process for setting up product-model relations.
 author: johanhoffmann
-ms.date: 06/26/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 06/26/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Asset manufacturers and models

@@ -9,6 +9,9 @@ ms.reviewer: v-chrgriffin
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2019-09-30
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Trickle feed-based order creation for retail store transactions

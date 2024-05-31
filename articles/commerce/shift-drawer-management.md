@@ -11,6 +11,9 @@ ms.author: shajain
 ms.search.validFrom: 2016-02-28
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Shift and cash drawer management
