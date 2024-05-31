@@ -75,9 +75,9 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. In the **Parameters** section, select the **Client secret** parameter, and then, in the **Value** field, select the name of the [secret](#ClSec) that you created.
 1. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [client ID](#ClID) that you created.
 1. In the **Parameters** section, select the **Web service URL** and **Login service URL** parameters. In the **Value** fields, enter the testing or production URLs depending on the implementation stage. Review the list of available URLs in [MyInvois system environment URLs](https://sdk.myinvois.hasil.gov.my/faq/#what-are-the-environment-urls).
-1. Repeat steps 8 through 10 for the **Integrate with MyInvois (Get document)** action.
+1. Repeat steps 7 through 10 for the **Integrate with MyInvois (Get document)** action.
 1. Select **Save**, and close the page.
-1. Repeat the steps 4 through 11 for the **Project invoice derived** and **Self invoice derived** feature setups.
+1. Repeat the steps 4 through 12 for the **Project invoice derived** and **Self invoice derived** feature setups.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
