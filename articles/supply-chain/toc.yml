@@ -3843,6 +3843,8 @@
             href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
             href: warehousing/mobile-barcode-support.md
+          - name: Advanced barcode scanner configuration
+            href: warehousing/warehouse-app-adv-scanner-config.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
         - name: Set up fields and menus for mobile devices
