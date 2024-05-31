@@ -1,11 +1,11 @@
 ---
 title: Automatic settlement and prioritization
 description: Learn about how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page.
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: prabhatb-ship-it
+ms.author: prabhatb
 ms.topic: article
 ms.date: 01/30/2019
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -30,11 +30,11 @@ The following sections describe how transactions are settled for each method.
 ## Example transactions
 The examples of settlements later in this article are based on the following transactions. All transactions are for customer 2050.
 
-| Transaction   | Date        | Amount | Cash discount terms | Cash discount date | Comments                                                                                                                                                                                      |
-|---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Invoice 1     | August 15   | 100.00 | 2%14, Net 30        | August 29          |                                                                                                                                                                                               |
-| Invoice 2     | September 1 | 250.00 | 2%14, Net 30        | September 15       |                                                                                                                                                                                               |
-| Invoice 3     | October 15  | 500.00 | 2% 14/Net 30        | October 29         |                                                                                                                                                                                               |
+| Transaction   | Date        | Amount | Cash discount terms | Cash discount date | Comments                                                     |
+|---------------|-------------|--------|---------------------|--------------------|---------------------------------------------------------------------------------|
+| Invoice 1     | August 15   | 100.00 | 2%14, Net 30        | August 29          |                                                                              |
+| Invoice 2     | September 1 | 250.00 | 2%14, Net 30        | September 15       |                                                                                 |
+| Invoice 3     | October 15  | 500.00 | 2% 14/Net 30        | October 29         |                                                                    |
 | Interest note | October 15  | 7.00   |                     |                    | This interest note is for invoice 1 and invoice 2. The amount is calculated as 2-percent interest on amounts that are 30 or more days past due. For example, 0.02 × (100.00 + 250.00) = 7.00. |
 
 ## User-defined settlement priority

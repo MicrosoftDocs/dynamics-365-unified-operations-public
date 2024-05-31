@@ -1,16 +1,16 @@
 ---
 title: Set up officials (Russia)
-description: This article explains how to set up officials in Microsoft Dynamics 365 Finance in Russia.
+description: Learn how to set up officials in Microsoft Dynamics 365 Finance in Russia, including an outline on setting up officials who generate transportation invoices.
 author: AdamTrukawka
-ms.date: 07/11/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 07/11/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ms.search.form: OfficialsTable_RU
+ms.dyn365.ops.version: 8.1
 ---
 
 # Set up officials (Russia)

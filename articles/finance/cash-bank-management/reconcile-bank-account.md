@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Reconcile a bank account
-description: This article describes how to reconcile a bank account.
-author: angelad116
-ms.date: 03/16/2024
+description: Learn about how to reconcile a bank account, including a step-by-step process and an outline on canceling bank statement reconciliation.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
- 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 03/16/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: angelading
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
+ms.search.validFrom: 
+ms.search.form:
 ms.dyn365.ops.version: 10.0.5
 ---
 

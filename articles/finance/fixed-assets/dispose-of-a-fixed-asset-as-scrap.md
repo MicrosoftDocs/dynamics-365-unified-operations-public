@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Dispose of a fixed asset as scrap
-description: The article describes the process of eliminating transactions for a fixed asset that was disposed of as scrap.
+description: Learn about the process of eliminating transactions for a fixed asset that was disposed of as scrap, including a table defining transaction types.
 author: moaamer
-ms.date: 01/19/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 01/19/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-14
+ms.search.form: TaxTable
 ms.dyn365.ops.version: 10.0.6
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Dispose of a fixed asset as scrap

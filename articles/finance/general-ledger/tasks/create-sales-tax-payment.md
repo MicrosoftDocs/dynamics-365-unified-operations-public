@@ -10,6 +10,7 @@ ms.custom:
 ms.reviewer: johnmichalak
 
 ---
+
 # Create a sales tax payment
 
 [!include [banner](../../includes/banner.md)]

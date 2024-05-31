@@ -2,7 +2,7 @@
 title: Create a workflow category
 description: Learn about how to create a workflow category, including an overview on binding a workflow type to a workflow category.
 author: josaw1
-ms.author: tfehr
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/19/2019
 ms.reviewer: twheeloc

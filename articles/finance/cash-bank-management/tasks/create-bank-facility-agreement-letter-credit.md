@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a bank facility agreement for a letter of credit
-description: This task walks through the steps for creating a Bank facility agreement to process a Letter of credit. 
-author: angelad116
+description: Learn about the process of creating a bank facility agreement for a letter of credit, including a detailed step-by-step process, which uses the demo company "USMF".
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 11/15/2022
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocumentFacilityAgreementExtension, DefaultDashboard   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocumentFacilityAgreementExtension, DefaultDashboard
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a bank facility agreement for a letter of credit
 
 [!include [banner](../../includes/banner.md)]

@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: General ledger and Financial reporting overview
-description: Use General ledger to define and manage the legal entity’s financial records.  
+description: Use General ledger to define and manage the legal entity’s financial records. Learn more about sales tax and access additional resources.
 author: twheeloc
-ms.date: 03/14/2024
-ms.topic: overview
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: GeneralJournalEntryWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: overview
+ms.date: 03/14/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: GeneralJournalEntryWorkspace
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ---
 
 # General ledger home page

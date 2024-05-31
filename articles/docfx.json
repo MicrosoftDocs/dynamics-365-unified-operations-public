@@ -43,7 +43,9 @@
       "contributors_to_exclude": [
         "OpenLocalizationService",
         "buck1ey",
-        "bishalgoswami"
+        "bishalgoswami",
+        "kimberleybrown",
+        "nathlaroche"
       ],
       "layout": "Conceptual",
       "searchScope": [

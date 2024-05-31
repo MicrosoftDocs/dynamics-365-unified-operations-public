@@ -1558,6 +1558,8 @@
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
           - name: Upload ER configurations and Globalization features as a Dataverse solution
             href: localizations/global/workspace/gsw-upload-er-config.md
+          - name: Create a Dataverse solution using upload into repository
+            href: localizations/global/workspace/gsw-upload-into-repository.md
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
@@ -1652,6 +1654,8 @@
               href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
+            - name: Electronic invoicing coverage
+              href: localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/finance
             - name: Availability of Electronic Invoicing features
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Australia and New Zealand
@@ -1662,6 +1666,10 @@
               href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia - onboarding
               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+            - name: Malaysia (preview)
+              href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance 
+            - name: Poland (preview)
+              href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance 
           - name: Electronic Invoicing FAQ
             href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
@@ -1754,8 +1762,6 @@
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Australia and New Zealand
               href: localizations/apac/apac-aus-nzl-electronic-invoices.md
-            - name: Get started with Electronic Invoicing for Brazil
-              href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Denmark
               href: localizations/denmark/e-invoicing-dk-get-started.md
             - name: Get started with Electronic Invoicing for Egypt
@@ -1764,8 +1770,6 @@
               href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Indonesia
               href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-            - name: Get started with the Electronic Invoicing for Mexico
-              href: localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Poland
               href: localizations/poland/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Saudi Arabia - Phase one
@@ -1838,6 +1842,10 @@
                 href: localizations/france/emea-reporting-multiple-vat-registrations-fr.md
               - name: Germany 
                 href: localizations/germany/emea-reporting-multiple-vat-registrations-de.md
+              - name: Italy 
+                href: localizations/italy/emea-reporting-multiple-vat-registrations-it.md
+              - name: Lithuania 
+                href: localizations/lithuania/emea-reporting-multiple-vat-registrations-lt.md
               - name: Netherlands 
                 href: localizations/netherlands/emea-reporting-multiple-vat-registrations-nl.md
               - name: Norway 
@@ -3590,18 +3598,18 @@
             href: localizations/lithuania/emea-ltu-fixed-asset-repair-statement.md
           - name: Generate a fixed asset transfer between warehouses document
             href: localizations/lithuania/lt-00003-fixed-asset-transfer.md
-          - name: VAT statement details
-            href: localizations/lithuania/emea-ltu-vat-statement-details.md
+          - name: EU sales list
+            href: localizations/lithuania/emea-ltu-eu-sales-list.md
           - name: Lithuanian Intrastat
             href: localizations/lithuania/emea-ltu-intrastat.md
+          - name: VAT declaration
+            href: localizations/lithuania/emea-ltu-vat-declaration-lithuania.md
           - name: i.SAF reporting for Lithuania
             href: localizations/lithuania/emea-ltu-isaf.md
           - name: Standard Audit File for Tax (SAF-T) for Lithuania
             href: localizations/lithuania/emea-ltu-saf-t.md
           - name: Set up the transfer documents for goods movement inside a company
             href: localizations/europe/set-up-transfer-documents-goods-movement-inside-company.md
-          - name: EU sales list
-            href: localizations/lithuania/emea-ltu-eu-sales-list.md
         - name: Malaysia
           items:
           - name: Malaysia overview
@@ -3627,7 +3635,7 @@
           - name: Set up GST relief clauses
             href: localizations/malaysia/my-00006-01-gst-relief-clauses.md
           - name: SST-02 declaration for Malaysia
-            href: localizations/mea/apac-mys-sst-declaration.md
+            href: localizations/apac/apac-mys-sst-declaration.md
         - name: Mexico
           items:
           - name: Mexico overview
@@ -4089,11 +4097,11 @@
           - name: Saudi Arabia overview
             href: localizations/mea/saudi-arabia.md
           - name: Sales tax
-            href: localizations/mea/apac-sau-sales-tax.md
+            href: localizations/apac/apac-sau-sales-tax.md
           - name: Zakat reporting for Saudi Arabia
             href: localizations/mea/emea-sau-zakat-reporting.md     
           - name: Allocate bank document charges to a shipment
-            href: localizations/mea/apac-sau-allocate-bank-document-charges-shipment.md
+            href: localizations/apac/apac-sau-allocate-bank-document-charges-shipment.md
           - name: Customer electronic invoices in Saudi Arabia
             href: localizations/mea/emea-sau-e-invoices.md
         - name: Singapore
@@ -4438,7 +4446,9 @@
       - name: Business performance analytics reports
         href: business-performance-analytics/Reports-in-BPA.md
       - name: Create business performance analytics reports  
-        href: business-performance-analytics/how-to-create-and-edit-reports.md     
+        href: business-performance-analytics/how-to-create-and-edit-reports.md
+      - name: Business performance analytics Excel add-in
+        href:  business-performance-analytics/bpa-excel.md
     - name: Business performance planning
       items:
       - name: Business performance planning overview

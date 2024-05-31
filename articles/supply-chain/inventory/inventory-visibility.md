@@ -2,15 +2,14 @@
 title: Inventory Visibility Add-in overview
 description: This article explains what Inventory Visibility is and describes its features.
 author: yufeihuang
-ms.date: 11/04/2022
-ms.topic: overview
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: yufeihuang
-ms.search.validFrom: 2020-10-26
-ms.dyn365.ops.version: 10.0.15
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 05/27/2024
+audience: Application User
+ms.custom:
+  - bap-template
 ---
 
 # Inventory Visibility Add-in overview

@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Add data fields in tax configurations
-description: This article explains how to customize tax configurations by adding data fields.
+description: Learn how to customize tax configurations by adding data fields, including step-by-step processes for customizing tax data models and tax configurations.
 author: Kai-Cloud
-ms.date: 10/21/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: johnmichalak
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 10/21/2021
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-04-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 

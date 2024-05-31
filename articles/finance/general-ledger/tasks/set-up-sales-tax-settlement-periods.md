@@ -10,6 +10,7 @@ ms.custom:
 ms.reviewer: johnmichalak
 
 ---
+
 # Set up sales tax settlement periods
 
 [!include [banner](../../includes/banner.md)]

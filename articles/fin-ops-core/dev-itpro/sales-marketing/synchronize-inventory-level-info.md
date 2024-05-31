@@ -21,7 +21,7 @@ ms.search.validFrom: 2018-12-01
 
 This article discusses the templates and underlying tasks that are used to synchronize inventory-level information from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-[![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSOnHandOW.png)](/media/FSOnHandOW.png)
+![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/FSOnHandOW.png)
 
 ## Templates and tasks
 The following template and underlying tasks are used to synchronize inventory on-hand levels from Supply Chain Management to Field Service.
@@ -79,7 +79,7 @@ You can apply filters with Advanced Query and Filtering so that only certain pro
 
 ### Product inventory (Supply Chain Management to Field Service): Product inventory
 
-[![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSinventoryLevel1.png)](/media/FSinventoryLevel1.png)
+![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSinventoryLevel1.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,17 +1,16 @@
 ---
 title: Electronic invoicing FAQ
-description: This article provides information about frequently asked questions regarding Electronic invoicing.
+description: Access answers to frequently asked questions regarding Electronic invoicing, including questions about the importance of electronic invoicing.
 author: gionoder
-ms.date: 04/21/2021
+ms.author: johnmichalak
 ms.topic: article
-audience: Application User
+ms.date: 04/21/2021
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: gionoder
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: AX 10.0.17
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.17
 ---
 
 # Electronic Invoicing FAQ

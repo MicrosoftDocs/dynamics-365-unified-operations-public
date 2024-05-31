@@ -1,8 +1,8 @@
 ---
 title: Register time for workers
 description: Learn how to register planned absences for individual workers and groups of workers in Dynamics 365 Human Resources.
-author: tonyafehr
-ms.author: tfehr
+author: twheeloc
+ms.author: twheeloc
 ms.date: 01/24/2024
 ms.topic: article
 f1_keywords:

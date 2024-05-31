@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Include GST when calculating tax collections
-description: This article explains how to include Goods and Services Tax (GST) when you calculate tax collections.
+description: Learn how to include Goods and Services Tax (GST) when you calculate tax collections, including processes for setting up GST requirements and creating sales orders.
 author: EricWangChen
-ms.date: 06/04/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 06/04/2019
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Include GST when calculating tax collections

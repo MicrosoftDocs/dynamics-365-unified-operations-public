@@ -61,7 +61,7 @@ This is also referred to as [Golden configuration promotion](dbmovement-scenario
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields are cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
 * [Maintenance mode](../sysadmin/maintenance-mode.md) settings are disabled even if it was enabled in source.
-* Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Enable Power Platform Integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 * Any [change-tracking on entities](../data-entities/entity-change-track.md) are disabled.
 * [Service endpoints](../business-events/managing-business-event-endpoints.md) for business events and data events are removed.
 

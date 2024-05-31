@@ -1,17 +1,18 @@
 ---
 title: GB-00002 Set up reverse charge VAT item groups, rules, and parameters
-description: This task walks you through setting up reverse charge item groups, applicability rules for purchasing and for sales purposes, and reverse charge parameters for the United Kingdom.
+description: Learn about setting up reverse charge item groups, applicability rules for purchasing and for sales purposes, and reverse charge parameters for the United Kingdom.
 author: EricWangChen
-ms.date: 08/29/2018
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: United Kingdom
 ms.author: wangchen
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: ReverseChargeItemGroup_W, EcoResCategorySingleLookup, ReverseChargeRule_W, LedgerParameters, TaxGroupLookup
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # GB-00002 Set up reverse charge VAT item groups, rules, and parameters
 
 [!include [banner](../../includes/banner.md)]

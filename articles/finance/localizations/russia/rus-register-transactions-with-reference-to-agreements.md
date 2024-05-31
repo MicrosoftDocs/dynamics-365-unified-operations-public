@@ -1,13 +1,13 @@
 ---
 title: Register transactions with reference to agreements
-description: This article provides information about registering agreements transactions.
+description: Learn about registering agreements transactions, including an outline on registering payments from customers or payments to vendors.
 author: AdamTrukawka
-ms.date: 02/06/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 02/06/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

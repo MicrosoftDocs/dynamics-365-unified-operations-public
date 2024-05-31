@@ -1,13 +1,13 @@
 ---
 title: Latvian Intrastat
-description: This article contains information about the Latvian Intrastat report.
+description: Learn about the Latvian Intrastat report, including a table that defines various fields on the Intrastat declaration and an outline on setting up Intrastat.
 author: AdamTrukawka
-ms.date: 01/18/2022
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 01/18/2022
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: Global
 ms.search.validFrom: 
 ---
 

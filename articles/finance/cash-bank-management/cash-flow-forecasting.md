@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Cash flow forecasting
-description: This article provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
-author: angelad116
-ms.date: 07/31/2023
+description: Learn about the cash flow forecasting process, including outlines on how cash flow forecasting is integrated with other modules in the system.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-# optional metadata
-
-ms.search.form:  LedgerCovParameters
-audience: Application User
-# ms.devlang: 
+ms.date: 07/31/2023
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2017-06-30
+ms.search.form: LedgerCovParameters
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Cash flow forecasting
