@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about archiving data i
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 05/14/2024
+ms.date: 05/31/2024
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -66,7 +66,8 @@ Application data copied to your own data lake using [Azure Synapse Link,](/power
 
 Application data that's copied to your own data lake, based on non Azure Synapse Link tools like [Bring your own database-BYOD](../analytics/export-entities-to-your-own-database.md) or [Export to data lake](../data-entities/finance-data-azure-data-lake.md) are deleted from your data lake when you archive with Dataverse long term retention.
 
-## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform is failing?
+## What should I do if the installation or upgrade of the Dynamics 365 Archive with Dataverse long term retention app from Power Platform fails?
+
 Please ensure that all the prerequisite setup steps are completed, as incorrect setup can lead to installation failure.
 
 Please also ensure that you have logged into your Dynamics 365 Finance and Operations application in the last 30 days, as installation can fail if the organization has been tagged as dormant. If you are logging in for the first time after 30 days, it may take up to 4 hours for your organization to be flagged as active. 
