@@ -29,7 +29,7 @@ You also need to enter which type of access you require in the **Database Accoun
 When the page is refreshed, the database account is shown with its expiry time.
 ![Database account shown with the expiry time.](media/sql-jit3.png)
 
-You can now use tools like SQL Server Management Studio (SSMS) to connect to the database, using the accounts from Lifecycle Services and the IP address that you enabled. Note that Lifecycle Services shows the server and database in the following format: **serverName\databaseName**.  To connect in SSMS, you need to append the domain name suffix, such as **serverName.database.windows.net** if you are in Azure public cloud. On the **Options** tab in the SSMS connection window, you also need to explicitly enter the databaseName value in the **Database** field to successfully connect.
+You can now use tools like SQL Server Management Studio (SSMS) to connect to the database, using the accounts from Lifecycle Services and the IP address that you enabled. Lifecycle Services shows the server and database in the following format: **serverName\databaseName**.  To connect in SSMS, you need to append the domain name suffix, such as **serverName.database.windows.net** if you are in Azure public cloud. On the **Options** tab in the SSMS connection window, you also need to explicitly enter the databaseName value in the **Database** field to successfully connect.
 
 > [!NOTE]
 > The domain name suffix might be different for Government Community Cloud (GCC).
