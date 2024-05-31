@@ -32,7 +32,7 @@ originally published.
 |---|---|
 | Streamlined employee entry	|Streamlined employee entry page will be mandatory starting in Dynamics 365 Human Resources 10.0.41 release. |
 | Additional payroll entities | Additional entities are available for Dynamics 365 Human Resources payroll integration. |
-| Alternate key | Additional fields are available as alternate keys in performance management. For more information, see [Alternate keys in performance management tables](../human-resources/hr-developer-alternate-key-perf-mgmt.md). |
+| Alternate key | Additional fields are available as alternate keys in performance management. For more information, see [Alternate keys in performance management tables](/hr-developer-alternate-key-perf-mgmt.md). |
 
 ## Additional resources
 
@@ -44,9 +44,6 @@ Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, s
 
 For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
 
-### Regulatory updates
-
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2024 release wave 1 plan
 
