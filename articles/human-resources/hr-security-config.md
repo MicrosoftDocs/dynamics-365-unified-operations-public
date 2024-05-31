@@ -33,7 +33,6 @@ This article describes an architecture for using [Microsoft Dataverse virtual ta
 The following articles provide more information about the concepts in this article:
 
 - [Virtual entities overview](../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md)
-- [Use OAuth authentication with Microsoft Dataverse (Dataverse)](../fin-ops-core/developer/data-platform/authenticate-oauth.md)
 - [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 - [Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization.md)
 
