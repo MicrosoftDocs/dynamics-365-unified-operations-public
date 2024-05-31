@@ -33,8 +33,7 @@ Multiple Data Management Framework (DMF) entities have been added for the 10.0.3
 > To see the new entities, you might have to refresh the entity list in your environment. In the **Data management** workspace, select the **Framework parameters** tile, and then, on the **Entity settings** tab, select **Refresh entity list**.
 
 
-
-| Module | New entity coverage | Notes |  
+| Module | New entity coverage | Notes |
 |--------|---------------------|-------|
 | Personnel management | I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position | |
 | Attachment entities for a Worker | Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank account, Injury and incidents, Identification | All entities include "Attachment" in the target entity name. |
