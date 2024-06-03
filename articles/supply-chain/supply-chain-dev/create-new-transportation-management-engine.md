@@ -152,12 +152,12 @@ This section explains how to set up Supply Chain Management to use a TMS engine,
 ## Tips and tricks
 
 - If you’re using development tools for Supply Chain Management, it's useful to add a new project to your solution. If you set this project as your startup project and start a debugging session, you can debug both X++ and C\# code in the same debugging session.
-- Every time that you change and recompile your ThirdPartyTMSEngines project, you must manually copy the resulting assembly to the binary location or deploy through a deployment package. Otherwise, you might run by using a stale assembly.
+- Every time that you change and recompile your ThirdPartyTMSEngines project, you must deploy through a deployment package. Otherwise, you might run by using a stale assembly.
 - After you execute TMS-specific operations inSupply Chain Management, the Internet Information Services (IIS) worker process might lock the ThirdPartyTMSEngines assembly so that the assembly can’t be updated. In this case, restart the w3svc process.
 
 ### Whitepaper
 
-For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management)
+For more information, download the following white paper (written to support AX2012, but still partial applies for Dynamics 365 Supply Chain Management)
 
 - [Implementing and deploying Transportation management engines](https://download.microsoft.com/download/b/5/f/b5ff8fef-3918-4c1d-92d5-b67eb0971684/ImplementingAndDeployingTransportationManagementEnginesInAX.pdf)
 
