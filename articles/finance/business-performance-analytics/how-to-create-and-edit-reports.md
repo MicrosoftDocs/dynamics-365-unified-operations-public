@@ -15,7 +15,8 @@ audience: Application User
 
 Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. To view all available reports, select **Reports** in the **Data explorer** pane on the left. Select **Refresh** to ensure that you have the most up-to-date reports.
 
-For more information, see [Ledger to subledger](https://www.microsoft.com/videoplayer/embed/{ID}).
+For more information, see the following: 
+> [!VIDEOhttps://www.microsoft.com/videoplayer/embed/RW1lNCQ].
 
 ## Create a new report
 
