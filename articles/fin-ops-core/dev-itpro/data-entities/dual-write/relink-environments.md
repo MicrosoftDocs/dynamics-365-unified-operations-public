@@ -33,7 +33,7 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 
 ## Scenario: Backup and restore
 
-When you back up and restore an environment, you may see unexpected data movement or errors if a previous Dual-write connection was established with this environment. This issue occurs because the data in the key tables is not cleared. To mitigate this issue, follow these steps:
+When you back up and restore an environment, you may see unexpected data movement or errors if a previous Dual-write connection was established with the backup/restore environment and table maps weren't stopped. This issue occurs because data in key tables was not cleared. To mitigate this issue, follow these steps:
 
 1. Sign in to the targeted Finance and Operations app.
 2. Delete the data from the following tables:
