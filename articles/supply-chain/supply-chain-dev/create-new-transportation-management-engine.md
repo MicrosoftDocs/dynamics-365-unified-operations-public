@@ -118,14 +118,30 @@ This section explains how to create a class library that has a TMS engine implem
 
 ## Deploy the TMS engine as a package
 
-One way to deploy third-party TMS engines is through a deployment package. This approach is recommended in a production environment. In a development environment, you can manually copy the assemblies, as described in the next section, "Set up a TMS engine in Supply Chain Management." To deploy the engine as a package, follow these steps.
+One way to deploy third-party TMS engines is through a deployment package. To deploy the engine as a package, follow these steps.
 
-1. On the **Dynamics 365** &gt; **Deploy** menu, click <strong>Create Deployment Package</strong>.
-2. In the **Create Deployment Package** dialog box, select the TMSEngines model, and enter the path where you want to store your package files.
+1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Model Management \> Create Model**.
 
-   ![Selecting the TMSEngines model .](../transportation/media/071.png)
+1. Create a new model called *TMSSmallParcelShippingDemo* and make it reference the *ApplicationSuite* and *ApplicationPlatform* models in the select referenced packages step.
 
-3. You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](../../fin-ops-core/dev-itpro/deployment/install-deployable-package.md).
+    :::image type="content" source="media/visual-studio-create-model.png" alt-text="Create a model in Visual Studio":::
+
+1. Create a project in the new model and add the downloaded `TMSSmallParcelShippingEngine.dll` file to the references for the new project.
+
+    :::image type="content" source="media/visual-studio-solution-explorer.png" alt-text="The solution explorer in Visual Studio":::
+
+1. On the **Solution Explorer** pane, right-click and select **Build Solution** to compile the project and make sure the reference is added to the AOT node.
+
+    :::image type="content" source="media/visual-studio-aot-node.png" alt-text="The AOT node in Visual Studio":::
+
+1. Go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model.
+
+1. In Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to LCS.
+
+1. After the validation completes, go to **Environments \> {Your Environment ID} \> Maintain \> Apply updates**, select the deployable package, and apply.
+
+> [!NOTE]
+> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, please contact your LCS administrator for support.
 
 ## Set up the TMS engine in Supply Chain Management
 
