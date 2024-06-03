@@ -40,8 +40,11 @@ To utilize this feature, please ensure to update your preferred language in Dyna
 
 The user must have at least one of the following menu item accesses to view the summary data:
 
-- Customer transactions
-- Sales transactions 
+- CustTrans
+- SalesTable
+- SalesAgreementListPage
+- PDSRebateAgreements
+- TAMRebateDeal
 
 ### Enable Customer page summary
 
