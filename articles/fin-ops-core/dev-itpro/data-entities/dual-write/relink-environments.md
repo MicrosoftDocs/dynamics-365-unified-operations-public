@@ -16,11 +16,11 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 
-When you unlink and relink dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to reset the connection, and delete the data in the key tables.
+When you unlink and relink Dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to reset the connection, and delete the data in the key tables.
 
 ## Scenario: Reset linking
 
-If you want to reset your existing sandbox Dataverse instance that is linked for dual-write or you want to change the linking to a the Dataverse instance currently targeted in Lifecycle Services, then follow these steps:
+If you want to reset your existing sandbox Dataverse instance that is linked for Dual-write or you want to change the linking to the Dataverse instance currently targeted in Lifecycle Services, then follow these steps:
 
 > [!NOTE]
 > If you are receiving a message in Lifecycle Services that "Microsoft has detected that your environment is linked via Dual-write to a different Power Platform environment" the following steps will help you to resolve the issue when a previous link has been established.
@@ -32,7 +32,7 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 
 ## Scenario: Backup and restore
 
-When you back up and restore an environment, you may see unexpected data movement if a previous Dual-write connection was established with this environment. This issue occurs because the data in the key tables is not cleared. To mitigate this issue, follow these steps:
+When you back up and restore an environment, you may see unexpected data movement or errors if a previous Dual-write connection was established with this environment. This issue occurs because the data in the key tables is not cleared. To mitigate this issue, follow these steps:
 
 1. Sign in to the targeted Finance and Operations app.
 2. Delete the data from the following tables:
