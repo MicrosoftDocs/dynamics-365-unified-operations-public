@@ -17,6 +17,8 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
+
 This article describes how to view and create inventory forecasts. You can create and view supply and demand forecast lines for items, item groups, item allocation keys, customer accounts, customer groups, vendor accounts, and vendor groups.
 
 For each forecast line, you can select the forecast model that is used. You can then specify the item or item group, plus the quantity or the transaction amount. You can also set up a time schedule for allocating the forecast quantity.
@@ -36,7 +38,7 @@ There are also other ways to create forecast lines:
 - [Generate the forecast by using a Microsoft Azure Machine Learning web service](demand-forecasting-setup.md).
 - [Import demand or supply forecast lines by using the data management framework (ForecastDemandForecastEntryStaging and ForecastSupplyForecastEntryStaging data entities)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
-As the table in step 1 show, there are different ways to access the pages that are used.
+As the table in step 1 shows, there are different ways to access the pages that are used.
 
 1. Depending on the type of entity that you want to create a forecast for, and the type of forecast that you want to create, open a supply, demand, or inventory forecast page as described in the following table.
 
