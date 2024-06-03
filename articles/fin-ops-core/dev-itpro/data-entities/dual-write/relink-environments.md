@@ -25,10 +25,11 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 > [!NOTE]
 > If you are receiving a message in Lifecycle Services that "Microsoft has detected that your environment is linked via Dual-write to a different Power Platform environment" the following steps will help you to resolve the issue when a previous link has been established.
 
-1. Sign in to the finance and operations app.
-2. Stop all entity maps.
-3. Ensure the environment targeted via Lifecycle Services has been properly configured. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
-4. Click the **Reset** button to reset all Dual-write connections and configurations. The [Reset dual-write connections](reset.md) documentation provides additional detail on this process.
+1. Sign in to the Finance and Operations app.
+2. Navigate to **Data management** > **Dual-write**.
+3. Stop all entity maps.
+4. Ensure the environment targeted via Lifecycle Services has been properly configured. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
+5. Click the **Reset** button to reset all Dual-write connections and configurations. The [Reset dual-write connections](reset.md) documentation provides additional detail on this process.
 
 ## Scenario: Backup and restore
 
