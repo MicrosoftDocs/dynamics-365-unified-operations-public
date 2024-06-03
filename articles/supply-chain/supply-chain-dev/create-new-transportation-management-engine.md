@@ -134,17 +134,18 @@ One way to deploy third-party TMS engines is through a deployment package. To de
 This section explains how to set up Supply Chain Management to use a TMS engine, and shows how the new engine that we have created is used in rate shopping. The example in this section uses the USMF demo data company.
 
 1. Create a new engine as described in the "Create a new TMS engine" section.
-2. Build your solution.
-3. Copy the resulting assembly into the binary location of the Supply Chain Management server, \[AOSWebRoot\]bin. **Note:** This step is relevant only in a development environment. In a production environment, you should deploy through a deployment package. For instructions, see the previous section, "Deploy the TMS engine as a package."
-4. In Supply Chain Management, on the **Rate engines** page, create a new rating engine. The engine should point to the engine assembly that is produced by building the engine class library and the engine class that you implemented.
+1. Build your solution.
+1. Deploy the TMS engine DLL file through a deployment package. For instructions, see the previous section, "Deploy the TMS engine as a package."
+   
+1. In Supply Chain Management, on the **Rate engines** page, create a new rating engine. The engine should point to the engine assembly that is produced by building the engine class library and the engine class that you implemented.
 
    ![Creating a new rating engine on the Rate engines page.](../transportation/media/081.png)
 
-5. Create a shipping carrier that uses the Sample rate engine. Because our engine doesn't use any data, you don’t have to assign a rate master.
+1. Create a shipping carrier that uses the Sample rate engine. Because our engine doesn't use any data, you don’t have to assign a rate master.
 
     :::image type="content" source="../transportation/media/092.png" alt-text="Creating a new shipping carrier." lightbox="../transportation/media/092.png":::
 
-6. On the **Rate route workbench** page, click **Rate shop**. You should see a rate of 100.00 from SampleCarrier, as shown in the following screen shot. In this example, we are rate shopping for a route from warehouse 24 to customer US-004. However, but because the rate is hard-coded, you will always see a rate of 100.00.
+1. On the **Rate route workbench** page, click **Rate shop**. You should see a rate of 100.00 from SampleCarrier, as shown in the following screen shot. In this example, we are rate shopping for a route from warehouse 24 to customer US-004. However, but because the rate is hard-coded, you will always see a rate of 100.00.
 
     :::image type="content" source="../transportation/media/101.png" alt-text="Rate route workbench." lightbox="../transportation/media/101.png":::
 
