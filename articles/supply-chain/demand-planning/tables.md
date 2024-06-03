@@ -20,7 +20,7 @@ Data that's imported into Demand planning must be loaded into tables that are se
 
 ## View tables
 
-To view the full list of tables that are available to the Demand planning app, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
+To view the full list of tables that are available to Demand planning, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
 
 - The **Name** column shows the name of each table. Select a table name to view and edit details about that table, including column definitions, relationships, and data.
 - The **Is System** column indicates whether each table is a standard table that's provided by the system or a custom table that was added by a user. It shows one of the following values:

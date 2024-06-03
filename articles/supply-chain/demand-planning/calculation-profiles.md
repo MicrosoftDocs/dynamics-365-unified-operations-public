@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-The Demand planning app lets you build a collection of *calculation profiles*. Each profile takes one or more existing time series as input, and applies a set of predefined calculations to generate a new time series as output.
+Demand planning in Microsoft Dynamics 365 Supply Chain Management lets you build a collection of *calculation profiles*. Each profile takes one or more existing time series as input, and applies a set of predefined calculations to generate a new time series as output.
 
 Here are some examples of purposes that you might use calculations for:
 
