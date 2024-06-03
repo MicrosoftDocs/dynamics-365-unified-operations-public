@@ -1,6 +1,6 @@
 ---
 title: Collections coordinator summary
-description: Learn about how the Collections coordinator summary feature shows AI-generated text in the Summary by Copilot field on the Collections coordinator workspace.
+description: Learn how the Collections coordinator summary feature shows AI-generated text in the Summary by Copilot field in the Collections coordinator workspace.
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: conceptual
@@ -20,37 +20,42 @@ ms.search.form:
 > [!NOTE]
 > Some or all of the functionality that's mentioned in this article is available as part of a preview release. The content and the functionality are subject to change.
 
-This article describes how to enable the optional **Summary by Copilot** on the **Collections coordinator workspace**. For more information on how to use this workspace, see the [Collection coordinator workspace](collectionsworkspace.md).
-
+This article explains how to enable the optional **Summary by Copilot** field in the **Collections coordinator** workspace. For more information about how to use this workspace, see the [Collections coordinator workspace](collectionsworkspace.md).
 
 ## Turn on Copilot support for the Collections coordinator workspace
-The **Collections coordinator workspace** and **Collections coordinator summary** features are on by default in 10.0.38 in Microsoft Dynamics 365 Finance. 
+
+The **Collections coordinator workspace** and **Collections coordinator summary** features are on by default in Microsoft Dynamics 365 Finance version 10.0.38. 
 
 > [!NOTE]
-> Starting in Dynamics 365 Finance version 10.0.40, and in the proactive quality updates (PQUs) for version 10.0.39 and 10.0.38, the **Collections coordinator workspace** and **Collections coordinator summary** features are **On** by default in Feature management. If they're not set to **On by default**, you'll need to enable them in Feature management.
+> In Dynamics 365 Finance version 10.0.40 and later, and in the proactive quality updates (PQUs) for versions 10.0.39 and 10.0.38, the **Collections coordinator workspace** and **Collections coordinator summary** features are turned on by default in Feature management. If they aren't set to **On by default**, you must enable them in Feature management.
 
-The workspace can be used either with or without its AI-powered Copilot functionality. To use the Copilot functionality in the workspace the **Copilot in Microsoft Dynamics 365 Finance** app must be installed on your Dataverse environment. For more information see Enable Copilot in Microsoft Dynamics 365 Finance. 
+The **Collections coordinator** workspace can be used either with or without its AI-powered copilot functionality. To use the copilot functionality in the workspace, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Enable Copilot in Microsoft Dynamics 365 Finance](Enable-copilot-in-finance.md).
 
-Use this feature to get an AI-generated summary of a customer's overdue invoices, payment history and remaining credit in the **Collections coordinator workspace** and to create a draft reminder email that is AI-generated. This feature is powered by Microsoft Azure OpenAI's large language model and is designed to reduce the time that you must spend reviewing collections details for your customers. 
+Use this feature to get an AI-generated summary of a customer's overdue invoices, payment history, and remaining credit in the **Collections coordinator** workspace, and to get an AI-generated draft of a reminder email. This feature is powered by Azure OpenAI Service's large language model and is designed to reduce the time that you must spend reviewing collections details for your customers. 
 
 This feature has three purposes:
+
 - Provide customer account information.
 - Help you make better decisions about your customers.
-- Increase efficiency by drafting reminder emails that you can edit and then send to your customers.. 
+- Increase efficiency by drafting reminder emails that you can edit and then send to your customers.
 
 ## Country/region and language availability
-This copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154/). While it can be used in other languages, it may not function as intended. Language quality may vary based on the user’s interaction or system settings, which may impact accuracy and the user experience. 
+
+For information about the languages that this Copilot feature was validated for, see [Explore Copilot features by geography and languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although the feature can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience. 
 
 ## Summary by Copilot
-Go to **Credit and collections > Workspaces > Collections coordinator** workspace. This page displays an overview of activities assigned to a collections coordinator (collections agent), the customers with the highest balances and the customers with the most overdue amounts. To get to the **Collections coordinator details**, select any customer name or when a Customer account is selected at the top, select **View customer details**. This will display a detailed page where you can see **Summary by Copilot**. Azure OpenAI is used to generate the results in the **Balances and payment history**, based on the data in Finance and the provided prompts. All calculations are done in Finance. The summary is based on the amounts for the selected customer’s payment history for the past year, outstanding debt amount and invoices for the last six months.  
+
+Go to **Credit and collections** \> **Workspaces** \> **Collections coordinator** to open the **Collections coordinator** workspace, The page shows an overview of the activities that are assigned to a collections coordinator (collections agent), the customers who have the highest balances, and the customers who have the most overdue amounts.
+
+To get to the **Collections coordinator details** page, select any customer name. Alternatively, when a Customer account is selected at the top of the page, select **View customer details**. The **Collections coordinator details** page includes the **Summary by Copilot** field. Azure OpenAI is used to generate the results in **Balances and payment history**, based on data in Finance and the provided prompts. All calculations are done in Finance. The summary is based on the amounts for the selected customer's payment history for the past year, outstanding debt amount, and invoices for the last six months.
 
 ## Generate a reminder email
 
-To have AI generate a draft email in the form of a reminder letter, select **Create reminder email**. The following message will be displayed:
+To have AI generate a draft email in the form of a reminder letter, select **Create reminder email**. The following message is shown:
 
-A reminder email will be created with AI. Make sure AI-generated content is complete, accurate, and appropriate before using. Do you want to create the email?
+> A reminder email will be created with AI. Make sure AI-generated content is complete, accurate, and appropriate before using. Do you want to create the email?
 
-To return to the **Collections coordinator** workspace without generating an email, select **No**. To generate and open a draft email in your default email service, select **Yes**. Azure OpenAI services incorporates robust filters and safeguards to help prevent offensive, destructive, or abusive content from being created by using this feature.
+To return to the **Collections coordinator** workspace without generating an email, select **No**. To generate and open a draft email in your default email service, select **Yes**. Azure OpenAI incorporates robust filters and safeguards to help prevent offensive, destructive, or abusive content from being created by using this feature.
 
 > [!NOTE]
 > The email is generated by using AI and Finance data, and the content is a suggestion. It's your responsibility to review and edit the suggested content to ensure that it's complete, accurate, and appropriate before you send the email.
