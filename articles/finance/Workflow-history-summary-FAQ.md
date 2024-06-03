@@ -21,7 +21,7 @@ Workflow history summary is a feature in Microsoft Dynamics 365 Finance powered 
 
 This summary uses existing workflow history information in a customer’s Dynamics 365 Finance or Dynamics 365 Supply Chain Management application.  
 
-## What are Workflow history summary's intended use(s)?
+## What are Workflow history summary's intended use?
 
 A workflow approver will use this feature to view a summary of the workflow at the top of the workflow history page. This summary is more concise and brings the most important information to the top of the page to improve efficiency. Recent workflow history is the most recent approval or reject request change or resubmit records of the workflow.  
 
@@ -44,4 +44,4 @@ The AI-generated text and draft email options are optional and can be turned off
 
 ## See also
 
-- [Collections coordinator summary](../accounts-receivable/collectionscoordinatorsummary.md)
+- [Collections coordinator summary](../../accounts-receivable/collectionscoordinatorsummary.md)
