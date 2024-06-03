@@ -16,51 +16,34 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 
+When you unlink and relink dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to reset the connection, and delete the data in the key tables.
 
+## Scenario: Reset linking
 
-When you unlink and relink dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
+If you want to reset your existing sandbox Dataverse instance that is linked for dual-write or you want to change the linking to a the Dataverse instance currently targeted in Lifecycle Services, then follow these steps:
 
-The mappings are preserved when you unlink and relink, because the mappings are stored in Dataverse.
-
-## Scenario: Dual-write is enabled between production environments
-
-In this scenario, dual-write is enabled between finance and operations and Dataverse production environments. You want to back up the finance and operations production environment (source) and restore it to finance and operations UAT environment (destination). Once you restore, follow these steps on the finance and operations UAT environment:
-
-1. Stop all table maps.
-2. Unlink the dual-write connection as the finance and operations UAT environment will be pointing towards Dataverse production environment.
-3. Delete the data from the key tables.
-
-    - **DualWriteProjectConfiguration**
-    - **DualWriteProjectFieldConfiguration**
-    - **BusinessEventsDefinition**
-
-4. You may want to relink finance and operations UAT environment against Dataverse UAT environment. 
-5. Enable the maps.
-
-If the backup and restore processes are running on Dataverse, then follow these steps:
-
-1. Sign in to finance and operations UAT environment.
-2. Stop all table maps.
-3. Unlink the dual-write connection as the Dataverse UAT environment will be pointing towards finance and operations production environment.
-4. Delete the data from the **Dual Write Runtime Configurations** table on Dataverse.
-5. You may want to relink finance and operations UAT environment against Dataverse UAT environment.
-6. Enable the maps.
-
-## Scenario: Reset or change linking
-
-If you want to reset your existing sandbox Dataverse instance that is linked for dual-write or you want to change the linking to a different Dataverse instance, then follow these steps:
+> [!NOTE]
+> If you are receiving a message in Lifecycle Services that "Microsoft has detected that your environment is linked via Dual-write to a different Power Platform environment" the following steps will help you to resolve the issue when a previous link has been established.
 
 1. Sign in to the finance and operations app.
 2. Stop all entity maps.
-3. Unlink the dual-write connection between finance and operations app and Dataverse.
-5. Reset the Dataverse environment.
-6. Delete the data from the key tables in the finance and operations app.
+3. Ensure the environment targeted via Lifecycle Services has been properly configured. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
+4. Click the **Reset** button to reset all Dual-write connections and configurations. The [Reset dual-write connections](reset.md) documentation provides additional detail on this process.
+
+## Scenario: Backup and restore
+
+When you back up and restore an environment, you may see unexpected data movement if a previous Dual-write connection was established with this environment. This issue occurs because the data in the key tables is not cleared. To mitigate this issue, follow these steps:
+
+1. Sign in to the targeted Finance and Operations app.
+2. Delete the data from the following tables:
 
     - **DualWriteProjectConfiguration**
     - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
-7. Set up dual-write on the environment that you want to reset. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
+3. Sign in to the targeted Dataverse environment.
+4. Delete the data from the **Dual Write Runtime Configurations** table.
+5. Reset the connection as detailed above to re-establish applicable connections.
 
 ## Known issues
 
@@ -77,4 +60,3 @@ Follow these steps to mitigate the error:
 5. Select the **Delete** icon.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-
