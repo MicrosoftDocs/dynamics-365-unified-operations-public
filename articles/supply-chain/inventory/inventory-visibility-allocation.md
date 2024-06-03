@@ -4,12 +4,12 @@ description: This article explains how to set up and use the inventory allocatio
 author: yufeihuang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: 
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 06/03/2024
 audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.custom: 
+  - bap-template
 ---
 
 # Inventory Visibility inventory allocation
@@ -45,7 +45,7 @@ The following terms and concepts are useful in discussions of inventory allocati
 
 - **Allocation group** – The group that owns the allocation, such as a sales channel, customer group, or order type.
 - **Allocation group name** – The name of each allocation group. For example, *web* or *store* might be the name of the sales channel allocation group, whereas *VIP* or *normal* might be the name of the customer allocation group.
-- **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. A maximum of eight levels of hierarchy are supported. For example, you could define *Channel* as hierarchy level 0, *Region* as level 1, and *Customer group* as level 2. During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you could create an allocation of 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group. <!--KFM: Do we still use these group labels? The don't seem to appear in the UI (anymore?). I think these are now labeled as "group levels"? -->
+- **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. A maximum of eight levels of hierarchy are supported. For example, you could define *Channel* as hierarchy level 0, *Region* as level 1, and *Customer group* as level 2. During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you could create an allocation of 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
 - **Available to allocate** – The *virtual common pool* that indicates the quantity that's available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
 - **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups. It's deducted at the same time that the consumed quantity is added.
 - **Consumed** – A physical measure that indicates the quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the Allocated physical measure is automatically reduced.
@@ -117,7 +117,7 @@ Follow these steps to set up the *available to allocate* calculated measure:
 
 ### Set up your allocation groups and hierarchy
 
-Every allocation that's created in Inventory Visibility must be assigned to a specific *allocation group*. You can create up to eight allocation groups, each of which has a name and a level. Level is necessary to establish a group hierarchy.
+Every allocation that's created in Inventory Visibility must be assigned to a specific *allocation group*. You can create up to eight allocation groups, each of which has a name and a level. A level is required to establish a group hierarchy.
 
 Each level is defined as an integer from *0* (zero) through *7*, representing the order in which the groups are used in the allocation hierarchy. The group that's assigned to level *0* is the highest level in the hierarchy, and the group that's assigned to level *7* is the lowest level in the hierarchy.
 
@@ -163,13 +163,13 @@ Follow these steps to enable inventory allocation and set up allocation groups i
 1. Configure the *available to allocate* calculated measure and the *allocated* physical measure.
 
     1. On the **Calculated Measure** tab, review the initial calculated measure, which is named *@iv\.@available\_to\_allocate*.
-    1. Edit the formula to meet your business needs by adding and removing physical measures. Be sure to include the *@iv\.@allocated* physical measure in the formula. <!--KFM: There is no measure with this name in my env. -->
+    1. Edit the formula to meet your business needs by adding and removing physical measures. Be sure to include the *@iv\.@allocated* physical measure in the formula.
 
 1. Set up your allocation groups and hierarchy.
 
     1. Select the **Allocation** tab.
     1. In the default allocation configuration, there are four levels of hierarchy. These levels, from highest to lowest, are *Channel* (group level 0), *customerGroup* (group level 1), *Region* (group level 2), and *OrderType* (group level 3). You can edit the groups by working in the **Edit configuration** field. To remove an existing allocation group, select the **X** next to its name. To add an allocation group, enter the name directly in the **Edit configuration** field.
-    1. When you've finished editing the groups, select **Save**. <!--KFM: This didn't seem to work when I tried it. -->
+    1. When you've finished editing the groups, select **Save**.
 
 1. Update the configuration to activate your new settings.
 

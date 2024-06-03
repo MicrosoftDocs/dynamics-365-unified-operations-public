@@ -2,15 +2,14 @@
 title: Inventory Visibility public APIs
 description: This article describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 10/17/2023
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: yufeihuang
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.22
+ms.reviewer: kamaybac
+ms.search.form: 
+ms.topic: how-to
+ms.date: 06/03/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Inventory Visibility public APIs
@@ -235,7 +234,7 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API can create change events, just as the [single-event API](#create-one-onhand-change-event) can. The only difference is that this API can create multiple records at the same time. Therefore, the `Path` and `Body` values differ. For this API, `Body` provides an array of records. The maximum number of records is 512. Therefore, the on-hand change bulk API can support up to 512 change events at a time. 
+This API can create change events, just as the [single-event API](#create-one-onhand-change-event) can. The only difference is that this API can create multiple records at the same time. Therefore, the `Path` and `Body` values differ. For this API, `Body` provides an array of records. The maximum number of records is 512. Therefore, the on-hand change bulk API can support up to 512 change events at a time.
 
 For example, a retail store POS machine processed the following two transactions:
 
@@ -441,7 +440,7 @@ The following example shows a successful response.
     "message": "",
     "statusCode": 200
 }
-``` 
+```
 
 ### <a name="create-multiple-reservation-events"></a>Create multiple reservation events
 
@@ -605,7 +604,7 @@ If the clean up job is successfully created, a job ID will be returned in the re
 
 ## Get job execution progress
 
-The *get job execution progress* API is used to obtain the execution progress of a job. A job ID is required to identify the job.
+Use the *get job execution progress* API to obtain the execution progress of a job. A job ID is required to identify the job.
 
 ```txt
 Path:
