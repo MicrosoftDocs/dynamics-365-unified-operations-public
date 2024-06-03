@@ -1,6 +1,6 @@
 ---
 title: Workflow history summary FAQ
-description: Access answers to some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance.
+description: This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
@@ -23,7 +23,7 @@ This summary uses existing workflow history information in a customer’s Dynami
 
 ## What are Workflow history summary's intended use(s)?
 
-A workflow approver will use this feature to view a summary of the workflow at the top of the workflow history page. This summary is more concise and brings the most important information to the top of the page to improve efficiency. Recent workflow history is the most recent approval/rejection/request change/resubmit records of the workflow.  
+A workflow approver will use this feature to view a summary of the workflow at the top of the workflow history page. This summary is more concise and brings the most important information to the top of the page to improve efficiency. Recent workflow history is the most recent approval or reject request change or resubmit records of the workflow.  
 
 ## How was Workflow history summary evaluated? What metrics are used to measure performance?
 
@@ -31,7 +31,7 @@ The AI-generated summary was evaluated based existing workflow history of the sa
 
 ## What are the limitations of Workflow history summary? How can users minimize the impact of Workflow history summary's limitations when they use the system?
 
-- The summary is based on the current workflow history that the user is viewing. Only the most recent 3 or 4 actions are displayed in chronological order starting with the session date.   
+- The summary is based on the current workflow history that the user is viewing. Only the most recent actions are displayed in chronological order starting with the session date.   
 - This Copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154/). While it can be used in other languages, it may not function as intended. Language quality may vary based on the user’s interaction or system settings which may impact accuracy and the user experience.   
 
 ## What operational factors and settings allow for effective and responsible use of Workflow history summary?
@@ -44,4 +44,4 @@ The AI-generated text and draft email options are optional and can be turned off
 
 ## See also
 
-- [Collections coordinator summary](CollectionsCoordinatorSummary.md)
+- [Collections coordinator summary](/accounts-receivable/collectionscoordinatorsummary.md)
