@@ -103,4 +103,9 @@ It isn't always obvious whether another process is using the same tables as your
 
 When you set up your database export connection, consider which type of index you want to be created. By default, a clustered column store index is created. This type of index makes `select` queries fast and can therefore help with reports on the destination table. However, it makes `insert` and `delete` operations slow.
 
-You can turn off the use of the clustered column store index. In this case, the index of the tables that you publish will be based on your staging table key. It's faster to insert or delete by using the staging table index than the clustered column store index. If you've already published by using the clustered column store index, you can still add an index for the staging table key columns yourself.
+## Improve export data performance by adding filter to export query
+
+Add filter to data export query and reduce the number of records exported to improve performance
+1. Go to Data management workspace.
+1. From the list of data export projects select a project and apply the required filter to reduce the number of records that will be exportedWhen you set.
+  
