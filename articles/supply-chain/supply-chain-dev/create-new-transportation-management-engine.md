@@ -143,11 +143,11 @@ This section explains how to set up Supply Chain Management to use a TMS engine,
 
 1. Create a shipping carrier that uses the Sample rate engine. Because our engine doesn't use any data, you don’t have to assign a rate master.
 
-    :::image type="content" source="../transportation/media/092.png" alt-text="Creating a new shipping carrier." lightbox="../transportation/media/092.png":::
+    ![Creating a new shipping carrier.](../transportation/media/092.png)
 
 1. On the **Rate route workbench** page, click **Rate shop**. You should see a rate of 100.00 from SampleCarrier, as shown in the following screen shot. In this example, we are rate shopping for a route from warehouse 24 to customer US-004. However, but because the rate is hard-coded, you will always see a rate of 100.00.
 
-    :::image type="content" source="../transportation/media/101.png" alt-text="Rate route workbench." lightbox="../transportation/media/101.png":::
+    ![Rate route workbench.](../transportation/media/101.png)
 
 ## Tips and tricks
 
