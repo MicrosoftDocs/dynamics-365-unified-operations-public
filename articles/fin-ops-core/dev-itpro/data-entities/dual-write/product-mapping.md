@@ -232,9 +232,9 @@ Then, when the synchronization is enabled and takes place, the products from fin
 
 If other Dynamics 365 apps have products that aren't present in finance and operations apps, the administrator can use **EcoResReleasedProductCreationV2Entity** to import those products into finance and operations apps. Then match the product data from finance and operations apps and other Dynamics 365 apps as previously described.
 
-### Migration of large product data
+### Migration of a large amount of product data
 
-Product data is designed to flow from your finance and operations apps to Dataverse. Therefore, you must import product data into your finance and operations app first and then synchronize it to Dataverse using initial synchronization. Dual-write limits the number of records that you can import during an initial synchronization. If your number of records exceeds this limit, then split the data into batches by applying query filters to the relevant dual-write map.
+Product data is designed to flow from your finance and operations apps to Dataverse. Therefore, you must import product data into your finance and operations app first, and then synchronize it to Dataverse using initial synchronization. Dual-write limits the number of records that you can import during an initial synchronization. If your number of records exceeds this limit, then split the data into batches by applying query filters to the relevant dual-write map.
 
 For more information about filtering data for dual-write, see [Customize table and column mappings](customizing-mappings.md#filter-your-data).
 
