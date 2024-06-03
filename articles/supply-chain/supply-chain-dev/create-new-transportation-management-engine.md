@@ -120,21 +120,7 @@ This section explains how to create a class library that has a TMS engine implem
 
 One way to deploy third-party TMS engines is through a deployment package. To deploy the engine as a package, follow these steps.
 
-1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Model Management \> Create Model**.
-
-1. Create a new model called *TMSSmallParcelShippingDemo* and make it reference the *ApplicationSuite* and *ApplicationPlatform* models in the select referenced packages step.
-
-    :::image type="content" source="media/visual-studio-create-model.png" alt-text="Create a model in Visual Studio":::
-
-1. Create a project in the new model and add the downloaded `TMSSmallParcelShippingEngine.dll` file to the references for the new project.
-
-    :::image type="content" source="media/visual-studio-solution-explorer.png" alt-text="The solution explorer in Visual Studio":::
-
-1. On the **Solution Explorer** pane, right-click and select **Build Solution** to compile the project and make sure the reference is added to the AOT node.
-
-    :::image type="content" source="media/visual-studio-aot-node.png" alt-text="The AOT node in Visual Studio":::
-
-1. Go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model.
+1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model created in the above section.
 
 1. In Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to LCS.
 
