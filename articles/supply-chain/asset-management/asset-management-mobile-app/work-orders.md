@@ -1,15 +1,15 @@
 ---
 title: Manage work orders using the Asset Management mobile app
-description: This article describes how maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders.
+description: Learn how maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders with an outline on user requirements.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 09/19/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Manage work orders using the Asset Management mobile app

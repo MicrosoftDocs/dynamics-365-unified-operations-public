@@ -1,16 +1,16 @@
 ---
 title: Maintenance plans
-description: This article explains maintenance plans in Asset Management.
+description: Learn about maintenance plans in Asset Management, including an outline and step-by-step process on setting up maintenance plans.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 ms.topic: how-to
 ms.date: 05/22/2024
-audience: Application User
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 ---
 
 # Maintenance plans
