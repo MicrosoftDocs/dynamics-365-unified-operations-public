@@ -12,6 +12,7 @@ ms.custom:
   - bap-template
 ---
 
+<!--KFM:  @Chris, please edit this entire topic, thanks. -->
 
 # Advanced barcode scanner configuration
 
