@@ -234,8 +234,11 @@ If other Dynamics 365 apps have products that aren't present in finance and oper
 
 ### Migration of large product data
 
-The product data is designed to flow from finance and operations apps to Dataverse. Therefore, it's crucial to first import the product data into finance and operations app, after which it can be synchronized to Dataverse using initial synchronization. Dual-write has a limitation on the number of records that can be imported during the initial synchronization. If the number of records exceeds the limit, the data can be imported in batches, by applying query filters. The administrator can use filtering option on the relevant Dual-write map to sync only part of the data to Dataverse. For more information about data filtering for Dual-write, see [Customize table and column mappings](customizing-mappings.md#filter-your-data).
-For more information about the constraints of Dual-write initial synchronization, see [Considerations for initial synchronization](initial-sync-guidance.md#constraints).
+Product data is designed to flow from your finance and operations apps to Dataverse. Therefore, you must import product data into your finance and operations app first and then synchronize it to Dataverse using initial synchronization. Dual-write limits the number of records that you can import during an initial synchronization. If your number of records exceeds this limit, then split the data into batches by applying query filters to the relevant dual-write map.
+
+For more information about filtering data for dual-write, see [Customize table and column mappings](customizing-mappings.md#filter-your-data).
+
+For more information about the constraints of dual-write initial synchronization, see [Considerations for initial synchronization](initial-sync-guidance.md#constraints).
 
 ### Install dual-write after a finance and operations environment and a Dataverse environment (with Field Service) is deployed
 
