@@ -118,10 +118,12 @@ To get a security service token, follow these steps.
     - **URL:** `https://securityservice.operations365.dynamics.com/token`
     - **Method:** `POST`
     - **HTTP header:**
+
         | Key | Value |
         |--|--|
         | Api-Version | 1.0 |
         | Content-Type | application/json |
+
     - **Body content:** Include the JSON request that you created in the previous step.
 
     You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here's an example.
