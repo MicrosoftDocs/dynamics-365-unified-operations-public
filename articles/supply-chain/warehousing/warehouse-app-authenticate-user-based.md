@@ -38,9 +38,9 @@ When you use device code authentication, the Warehouse Management mobile app gen
 Device code authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
 
 - You should create a unique Microsoft Entra ID user account for each device or human worker. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities*.
-- As a worker is signing in using the Warehouse Management mobile app, they are shown a generated device code that expires after 15 minutes and is then hidden by the app. To continue with the sign in, the worker must generate a new code by selecting **Connect** once more in the app.
+- While a worker is signing in by using the Warehouse Management mobile app, a generated device code is shown to them. This code expires after 15 minutes and is then hidden by the app. If the code expires before sign-in is completed, the worker must generate a new code by selecting **Connect** again in the app.
 - If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
-- Single sign-on (SSO) isn't supported when you use device code flow authentication together with a mobile mass deployment (MDM) system (such as Intune) to distribute the Warehouse Management mobile app. You can still use an MDM to deliver the app to each mobile device and deliver a `connections.json` file that sets up connections using device code. The only difference is that workers must sign in manually when they start to use the app (just once).
+- Single sign-on (SSO) isn't supported when you use device code flow authentication together with a mobile mass deployment (MDM) system (such as Intune) to distribute the Warehouse Management mobile app. You can still use an MDM system to deliver the app to each mobile device and deliver a `connections.json` file that sets up connections using device code. The only difference is that workers must manually sign in when they start to use the app. (This step is required only once.)
 
 ## <a name="usernamePasswordFlow"></a>Username/password authentication
 
@@ -48,12 +48,12 @@ When you use username/password authentication, each human worker must enter the 
 
 ## <a name="create-service"></a>Register an application in Microsoft Entra ID (optional)
 
-The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can choose to use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure provided in this section. We recommend using the global application because it easier to set up, use, and maintain (see also [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)).
+The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure in this section.
 
 > [!IMPORTANT]
-> In most situations, we recommend using the global Microsoft Entra ID application, which means that you can skip this section. However, if you have specific requirements that are not met by the global application (such as with some on-premises environments), you can register your own application as described here.
+> In most situations, we recommend that you use the global Microsoft Entra ID application, because it's easier to set up, use, and maintain. (For more information, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).) In that case, you can skip this section. However, if you have specific requirements that the global application doesn't meet (such as the requirements for some on-premises environments), you can register your own application as described here.
 
-The following procedure shows one way to register an application in Microsoft Entra ID. For detailed information and alternatives, see the links after the procedure.
+The following procedure shows one way to register an application in Microsoft Entra ID. For detailed information and alternatives, use the links after the procedure.
 
 1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
 1. Enter the name and password of the user who has access to the Azure subscription.
