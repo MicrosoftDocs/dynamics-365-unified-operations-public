@@ -7,6 +7,7 @@ ms.topic: article
 ms.custom: faq
 ms.date: 5/29/2024
 ms.reviewer: twheeloc
+ms.collection: bap-ai-copilot
 ---
 
 # Collections coordinator summary: FAQ
