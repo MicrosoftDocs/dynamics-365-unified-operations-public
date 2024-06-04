@@ -640,6 +640,8 @@
         href: budgeting/budget-control-overview-configuration.md
       - name: Budgeting overview
         href: budgeting/basic-budgeting-overview-configuration.md
+      - name: Create budget register entries
+        href: budgeting/budget-register-entries.md
       - name: Budget funds available
         href: budgeting/budget-funds-available.md
       - name: Position forecasting
