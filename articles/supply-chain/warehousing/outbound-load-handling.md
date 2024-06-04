@@ -33,7 +33,11 @@ The following options are set up as part of the **Warehouse management \> Setup 
 - Fill entire shipment - This configuration allows you to confirm that warehouse wave processing will only proceed with shipments when it is possible to create warehouse work for the full quantities of the shipment lines.
 
 ### How to define the *Outbound shipment processing policy* defaulting on orders
-<!-- Juraj -->
+<!-- Juraj
+ 
+For WOM from Source system
+Customer ???
+-->
 
 ## Overview: How outbound loads are created, registered, and shipped
 
