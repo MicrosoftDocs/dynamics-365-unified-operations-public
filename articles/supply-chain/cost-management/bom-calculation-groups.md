@@ -9,7 +9,6 @@ ms.reviewer: kamaybac
 audience: Application User 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 ms.dyn365.ops.version: AX 7.0.0
