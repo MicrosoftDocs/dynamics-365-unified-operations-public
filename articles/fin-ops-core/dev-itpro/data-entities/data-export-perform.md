@@ -4,9 +4,10 @@ description: Access tips that can help improve performance during export, includ
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 7/25/2023
-ms.custom:
-ms.reviewer: twheeloc
+ms.custom: 
+  - bap-template
+ms.date: 06/04/2024
+ms.reviewer: johnmichalak
 ---
 
 # Data entity export performance tips
@@ -109,3 +110,5 @@ Add filter to data export query and reduce the number of records exported to imp
 1. Go to Data management workspace.
 1. From the list of data export projects select a project and apply the required filter to reduce the number of records that will be exportedWhen you set.
   
+   :::image type="content" source="media/export-data.png" alt-text="Screenshot of data export with the Filter button highlighed."::: 
+
