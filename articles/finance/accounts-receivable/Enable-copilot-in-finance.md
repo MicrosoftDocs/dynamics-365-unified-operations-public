@@ -6,7 +6,7 @@ description: This article explains how to enable the functionality that's relate
 author: JodiChristiansen
 ms.date: 05/23/2024
 ms.topic: article
-
+ms.collection: bap-ai-copilot
 
 # optional metadata
 
