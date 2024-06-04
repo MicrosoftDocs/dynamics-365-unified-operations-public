@@ -4,7 +4,7 @@ description: This article describes how to export point of sale (POS) screen lay
 author: anush6121
 ms.author: anvenkat 
 ms.topic: article 
-ms.date: 05/29/2024
+ms.date: 06/04/2024
 ms.custom: 
   - bap-template
 ms.reviewer: v-chrgriffin
