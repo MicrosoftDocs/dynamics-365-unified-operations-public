@@ -98,14 +98,14 @@ The data source is named *@iv*. It includes the following set of default physica
 - *@consumed*
 - *@cumulative\_consumed*
 
-To use allocation, you must correctly set up the formula for the *available to allocate* calculated measure (*@iv\.@available\_to\_allocate*). For example, you have the *onordered* physical measure in the *fno* data source and the *inbound* physical measure in the *pos* data source. You can then allocate on-hand stock for the sum of *fno.onordered* and *pos.inbound*. In this case, *@iv\.@available\_to\_allocate* should contain *pos.inbound* and *fno.onordered* in the formula. Here's an example calculation:
+To use allocation, you must correctly set up the formula for the *available to allocate* calculated measure (*&#64;iv&#46;&#64;available&#95;to&#95;allocate*). For example, you have the *onordered* physical measure in the *fno* data source and the *inbound* physical measure in the *pos* data source. You can then allocate on-hand stock for the sum of *fno.onordered* and *pos.inbound*. In this case, *&#64;iv&#46;&#64;available&#95;to&#95;allocate* should contain *pos.inbound* and *fno.onordered* in the formula. Here's an example calculation:
 
-*@iv\.@available\_to\_allocate* = *fno.onordered* + *pos.inbound* – *@iv\.@allocated*
+*&#64;iv&#46;&#64;available&#95;to&#95;allocate* = *fno.onordered* + *pos.inbound* – *&#64;iv&#46;&#64;allocated*
 
 > [!NOTE]
 > The *@iv* data source is a predefined data source, and the physical measures in *@iv* that have an at sign (@) as a prefix are predefined measures. These measures are the predefined configuration for the allocation feature. Therefore, don't change or delete them. Otherwise, you're likely to encounter unexpected errors when you use the allocation feature.
 >
-> You can add new physical measures to the predefined *@iv\.@available\_to\_allocate* calculated measure. However, you must not change its name.
+> You can add new physical measures to the predefined *&#64;iv&#46;&#64;available&#95;to&#95;allocate* calculated measure. However, you must not change its name.
 
 Follow these steps to set up the *available to allocate* calculated measure:
 
@@ -113,7 +113,7 @@ Follow these steps to set up the *available to allocate* calculated measure:
 1. On the **Data source settings** tile, select **Manage**.
 1. Open the data source that's named *@iv*.
 1. In the **Calculated Measures** section, open the record that's named *@available\_to\_allocate* if it exists. Otherwise, create a record where the **Calculated measure name** value is *@available\_to\_allocate*, and **Save** the new record.
-1. In the **Calculated measure details** section, add the physical measures that you want to use to calculate your available-to-allocate quantities. Be sure to include the *@iv\.@allocated* physical measure in the formula.
+1. In the **Calculated measure details** section, add the physical measures that you want to use to calculate your available-to-allocate quantities. Be sure to include the *&#64;iv&#46;&#64;allocated* physical measure in the formula.
 
 ### Set up your allocation groups and hierarchy
 
@@ -162,8 +162,8 @@ Follow these steps to enable inventory allocation and set up allocation groups i
 
 1. Configure the *available to allocate* calculated measure and the *allocated* physical measure.
 
-    1. On the **Calculated Measure** tab, review the initial calculated measure, which is named *@iv\.@available\_to\_allocate*.
-    1. Edit the formula to meet your business needs by adding and removing physical measures. Be sure to include the *@iv\.@allocated* physical measure in the formula.
+    1. On the **Calculated Measure** tab, review the initial calculated measure, which is named *&#64;iv&#46;&#64;available&#95;to&#95;allocate*.
+    1. Edit the formula to meet your business needs by adding and removing physical measures. Be sure to include the *&#64;iv&#46;&#64;allocated* physical measure in the formula.
 
 1. Set up your allocation groups and hierarchy.
 
