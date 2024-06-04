@@ -113,5 +113,5 @@ To add a filter to an export query, follow these steps.
 1. Go to the **Data management** workspace.
 1. From the list of data export projects, select a project and apply a filter to reduce the number of records that are exported.
   
-   :::image type="content" source="media/export-data.png" alt-text="Screenshot of a data export projects with the Filter button highlighted."::: 
+   :::image type="content" source="media/export-data.png" alt-text="Screenshot of data export projects with the Filter button highlighted."::: 
 
