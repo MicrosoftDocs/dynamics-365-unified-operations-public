@@ -5,7 +5,6 @@ author: JennySong-SH
 ms.author: yanansong
 ms.topic: article
 ms.date: 5/29/2020
-ms.topic: article
 ms.custom:
 ms.reviewer: kamaybac
 audience: Application User
