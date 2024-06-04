@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 05/07/2024
+ms.date: 06/04/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -108,6 +108,8 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Platform version: 7.0.7120.168**
 
+**Unified Environment Provisioning Application Version: 10.0.38.7**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming Production Schedule |
 |---|---|---|
 | Station 1 | May 6 to May 9, 2024 | NA |
@@ -123,6 +125,8 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Platform version: 7.0.7120.179**
 
+**Unified Environment Provisioning Application Version: 10.0.38.8**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | June 3 to June 6, 2024 | NA |
@@ -137,6 +141,8 @@ The following table shows the high-level train schedule. It includes a descripti
 **App version: 10.0.1860.109**
 
 **Platform version: 7.0.7198.128**
+
+**Unified Environment Provisioning Application Version: 10.0.39.6**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
