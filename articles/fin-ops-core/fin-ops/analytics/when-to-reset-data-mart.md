@@ -3,14 +3,12 @@ title: Data mart resets FAQ
 description: Access answers to some frequently asked questions about data mart resets, including questions about when and when not to perform a data mart reset.
 author: jinniew
 ms.author: jiwo
-ms.topic: article
-ms.date: 03/21/2022
-ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-05-06
-ms.search.form: 
-ms.dyn365.ops.version: 10.0.15
+ms.topic: faq
+ms.custom: 
+  - bap-template
+ms.date: 06/04/2024
+ms.reviewer: johnmichalak
+
 ---
 
 # Data mart resets FAQ
