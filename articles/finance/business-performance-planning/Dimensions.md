@@ -4,7 +4,7 @@ description: Learn about dimensions and how they're used in Microsoft Dynamics 3
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/12/2023
+ms.date: 06/04/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -109,8 +109,11 @@ After you create a dimension, you might want to add more dimension values or add
 You can make the following changes to dimensions in the business performance planning app:
 
 - Edit data in Excel.
+- Add a new row of data.
+- Delete a row of data.
 - Add a new column of data.
 - Delete a column of data.
+- Add a linked column.
 - Delete the dimension.
 
 ### Edit data in Excel
@@ -131,6 +134,23 @@ After you publish your changes from Excel, select **Refresh** on the dimension t
 
 When you create a new row of data or edit a cell value, you must select to refresh your data in Power BI to view the additional dimension values, rows, or columns.
 
+
+### Add a new row of data 
+
+To add new rows of data to a dimension, follow these steps:
+1. Go to the **Dimension detail** page, select **+New row**.
+2. Once the new row(s) of data has been entered, select to save your changes.
+3. When you create a new row of data or edit a cell value, you must select to refresh your data in Power BI to view the additional dimension values, rows, or columns. 
+
+### Delete a row of data 
+
+To delete a row of data in a dimension, follow these steps: 
+1. On the **Dimension detail** page, select **Delete row**.
+2. You will be prompted to confirm the deletion of the row.
+
+>[!Note]
+>If the dimension value is included a cube, the dimension value cannot be deleted.  
+
 ### Add a new column of data
 
 To add a new column of data to any dimension, follow these steps.
@@ -143,6 +163,23 @@ The new column is added as the last column in the dimension. If you add a new co
 ### Delete a column of data
 
 You can delete a column of data in a dimension. When a column of data in a dimension is deleted, the cube isn't updated. However, the Power BI visuals might be affected.
+
+### Add a linked column 
+
+A linked column provides the ability to create a restricted list of values to be used when creating a new dimension value.  
+
+For example: I want to have a Scenario dimension to track my various scenarios, like Budget 2025. I want the scenario dimension to have the attributes of **Scenario name**, **Scenario description**, and **Status**. However, I want to use a specific list of values for the status, such as **Not started**, **In review**, or **Approved**. I don't want users to be able to assign ad hoc statuses to the scenarios.   To accomplish this, I'll create a scenario dimension that contains the **Scenario name** and **Description**. Next, I’ll create a secondary dimension for the **Status** that contains the **Status name** and **Status description** fields. 
+
+After the status dimension is created and populated with the statuses, navigate back to the **Scenario dimension** and select to add a linked column that points to the **Status dimensions**. When adding new **Scenarios to the scenario dimension**, select from a list of status values. 
+
+To add a linked column, follow these steps.
+1. Go to the **Dimension detail** page.
+2. Select **New linked** column.
+3. Enter the **Target column** name. The **Target column** name is the name of the new column that is being added to the dimension. Following the example above, the **Target column** name would be **Status**.
+4. Enter the **Source dimension**. Following the product example above, select the **Status dimension**.
+5. Select the **Source** column. Continuing with the product category example, the **Source** column would be the **Status** name.
+6. Select **Add**. 
+
 
 ### Delete the dimension
 
