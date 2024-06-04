@@ -6,7 +6,7 @@ description: This topic describes the copilot capabilities on the Workflow histo
 author: JodiChristiansen
 ms.date: 06/03/2024
 ms.topic: article
-
+ms.collection: bap-ai-copilot
 
 # optional metadata
 
