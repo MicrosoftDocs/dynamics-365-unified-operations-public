@@ -49,7 +49,7 @@ The planning contributor has the following privileges:
 The planning viewer has the following privileges:
  - Read data
 
-For more information, see [Assigning roles in the Power Platform](../../power-platform/admin/assign-security-roles).
+For more information, see [Assigning roles in the Power Platform](../../power-platform/admin/assign-security-roles.md).
 
 ### Set up dimension security
 
