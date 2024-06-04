@@ -7,6 +7,7 @@ ms.topic: article
 ms.custom: faq
 ms.date: 6/15/2023
 ms.reviewer: twheeloc
+ms.collection: bap-ai-copilot
 ---
 
 # Workflow history summary: Transparency FAQ
