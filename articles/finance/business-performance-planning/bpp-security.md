@@ -4,7 +4,7 @@ description: This article describes how to set up security for business performa
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/28/2023
+ms.date: 06/04/2024
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -49,7 +49,7 @@ The planning contributor has the following privileges:
 The planning viewer has the following privileges:
  - Read data
 
-For more information, see [Assigning roles in the Power Platform](../../power-platform/admin/assign-security-roles.md).
+For more information, see [Assigning roles in the Power Platform](/power-platform/admin/assign-security-roles).
 
 ### Set up dimension security
 
