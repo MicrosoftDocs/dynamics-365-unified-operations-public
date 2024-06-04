@@ -68,25 +68,25 @@ Device code flow is a user-based authentication method that lets you enter a Mic
 
 For more information, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
 
-## How many Microsoft Entra ID apps do I need to register in Azure?
+## How many Microsoft Entra ID apps do I have to register in Azure?
 
-The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can choose to use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID.
+The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID.
 
-We recommend using the global application because it easier to set up, use, and maintain. When you use this option, you don't need to register any Microsoft Entra ID applications in Azure. All of your devices can connect through the global application.
+We recommend that you use the global application, because it's easier to set up, use, and maintain. In this case, you don't have to register any Microsoft Entra ID applications in Azure. All your devices can connect through the global application.
 
-If you have specific requirements that aren't met by the global application (such as with some on-premises environments), you can register your own application in Microsoft Entra ID as described in [Register an application in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). You still only need to create one Microsoft Entra ID app registration. All of your devices can then connect through it.
+If you have specific requirements that the global application doesn't meet (such as the requirements for some on-premises environments), you can register your own application in Microsoft Entra ID as described in [Register an application in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). You still have to create just one Microsoft Entra ID app registration. All your devices can then connect through it.
 
-For instructions on how to configure your devices to connect using either of these methods, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
+For information about how to configure your devices to connect through either of these methods, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
 ## How many Microsoft Entra ID users do I need?
 
-You can choose any of the scenarios described in the following table. Your choice depends on your licensing strategy and risk tolerance.
+You can choose any of the scenarios that are described in the following table. Your choice depends on your licensing strategy and risk tolerance.
 
 | Scenario | Notes |
 |---|---|
-| Use the same Microsoft Entra ID for all devices | *Not recommended.*<br><br>Using a single Microsoft Entra ID user for all your devices is less secure than other scenarios and can lead to confusion in Supply Chain Management. For example, this setup associates all warehouse processes with a single system user, even when multiple warehouse workers process work using multiple warehouse devices. |
-| Use a unique Microsoft Entra ID for each device | Each worker must manually sign in to the app when they start using the device.<br><br>When you set up one Microsoft Entra ID user for each device, it's easy to block the Microsoft Entra ID user for just one device if that device is stolen or damaged. (For more information, see [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).) |
-| Use a unique Microsoft Entra ID for each worker | Supports [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso), so once a worker has signed in to a device, they're automatically signed in to the Warehouse Management mobile app and all other apps that use the same Microsoft Entra ID. |
+| Use the same Microsoft Entra ID for all devices | <p>*Not recommended.*</p><p>This scenario, where you use a single Microsoft Entra ID user for all your devices, is less secure than other scenarios. It can lead to confusion in Supply Chain Management. For example, all warehouse processes are associated with a single system user, even when multiple warehouse workers use multiple warehouse devices to process work.</p> |
+| Use a unique Microsoft Entra ID for each device | <p>Each worker must manually sign in to the app when they start to use the device.</p><p>When you set up one Microsoft Entra ID user for each device, it's easy to block the Microsoft Entra ID user for just one device if that device is stolen or damaged. (For more information, see [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).) |
+| Use a unique Microsoft Entra ID for each worker | [Single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) is supported. Therefore, a worker who signs in to a device is automatically signed in to the Warehouse Management mobile app and all other apps that use the same Microsoft Entra ID. |
 
 For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
@@ -104,7 +104,7 @@ No. The maximum session time-out period is 90 days.
 
 ## Will the current worker sign-in page change or be removed?
 
-The worker sign-in page is required for some authentication scenarios, but can be skipped for others (such as when you have a [default user ID](mobile-device-work-users.md#set-wma-users) set for the warehouse worker account). For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
+Although the worker sign-in page is required in some authentication scenarios, it can be skipped in others (for example, when a [default user ID](mobile-device-work-users.md#set-wma-users) is set for the warehouse worker account). For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
 ## How can I sign out a device?
 
@@ -116,7 +116,7 @@ Follow these steps to sign out the Microsoft Entra ID account that's signed in o
 
 ## Can I just use the Microsoft Entra ID as a worker and skip the worker sign-in page?
 
-Yes. You can map Microsoft Entra ID users to worker IDs in Supply Chain Management. Workers are then able to authenticate the app with Supply Chain Management and sign in as a worker at the same time. See also [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
+Yes. You can map Microsoft Entra ID users to worker IDs in Supply Chain Management. Workers can then authenticate the app with Supply Chain Management and sign in as a worker at the same time. For more information, see [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).
 
 ## Can I mass deploy the mobile app with user-based authentication?
 
@@ -124,7 +124,7 @@ Yes. For details and instructions, see [Mass deploy the mobile app with user-bas
 
 ## What about single sign-on? Will I be able to use the mobile app alongside Microsoft Teams to chat with my coworkers?
 
-Yes, [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) is supported. Among other capabilities, SSO lets you chat with coworkers over Microsoft Teams while you use the same account to sign in to the Warehouse Management mobile app.
+Yes, [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) is supported. Among other capabilities, SSO lets you chat with coworkers through Microsoft Teams while you use the same account to sign in to the Warehouse Management mobile app.
 
 If you're using SSO and sign out from one SSO app (such as Microsoft Teams), you'll also be signed out of all other apps that use that same account (including the Warehouse Management mobile app).
 
