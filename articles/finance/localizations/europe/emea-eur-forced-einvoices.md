@@ -3,7 +3,7 @@ title: Forced electronic invoices generation
 description: Learn how to set up and use the functionality for forced generation of electronic invoices, including prerequisites and an outline on post invoices.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: how-toe
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/04/2024
