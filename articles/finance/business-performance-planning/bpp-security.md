@@ -81,7 +81,7 @@ To set security on a dimension, follow these steps.
 
     - **Grant full access to all dimension values** – Select this option if users should automatically get read and write privileges to all existing dimension values and any new dimension values that are created in the future.
     - **Grant read-only access to all dimension values** – Select this option if users should automatically get read privileges to all existing dimension values and any new dimension values that are created in the future.
-    - **Grant row-level access** – If you select this option, four additional options become available:
+    - **Grant row-level access** – If you select this option, four other options become available:
 
         - **Grant full access** – Select this option if users should automatically get read and write privileges to all existing dimension values, but not to any dimension values that are created in the future. Read and write privileges to those dimension values must be explicitly granted.
         - **Grand read-only access** – Select this option if users should automatically get read privileges to all existing dimension values, but not to any dimension values that are created in the future. Read privileges to those dimension values must be explicitly granted.
@@ -164,7 +164,12 @@ To view the list of dimension groups that a user is currently assigned to, follo
 1. Open the **Users list** page, and select a user.
 1. Select **View access**. The dimension groups that the user has access to are shown on the left side of the page, and the dimension access details are shown on the right side.
 
-In the **Dimension group details** section, the dimension values are shown below the dimension, and the access level is shown to the right of the dimension values. If the dimension value is shown as **ALL**, the user has access to all dimension values that currently exist and will also have access to any new dimension values that are created in the future. If the dimension value is shown as a list of dimension values, the user has access to the dimension values that are listed but won't have access to dimension values that are created in the future. The user can have two types of access to dimension values: read-only access or full access. Full access allows the user to create, update, or delete a dimension value.
+In the **Dimension group details** section, the dimension values are shown below the dimension, and the access level is shown to the right of the dimension values.
+
+- If the dimension value is shown as **ALL**, the user has access to all dimension values that currently exist. The user will also have access to any new dimension values that are created in the future.
+- If the dimension value is shown as a list of dimension values, the user has access to the dimension values that are listed. However, the user won't have access to dimension values that are created in the future.
+
+The user can have two types of access to dimension values: read-only access or full access. Full access allows the user to create, update, or delete a dimension value.
 
 > [!NOTE]
 > A dimension value can't be deleted if it already exists in a cube.
@@ -174,5 +179,5 @@ In the **Dimension group details** section, the dimension values are shown below
 - A user's role determines whether that user can create new dimensions. For example, a power user can create new dimensions, but a contributor can't. To create dimensions, users need the **Maintain dimensions** privilege.
 - For all visuals except **Table edit**, users need access to at least one dimension value for each dimension in the cube.
 - By default, only the user who creates a new dimension value can see it, unless the **Grant full access to all dimension values** or **Grant read-only access to all dimension values** option is selected for the dimension group. Other users can see the dimension value only if read or write access to the dimension value is granted to them.
-- When new users are added, if dimensions already exist, the users can't see any data in the dimensions until they are assigned to a dimension group.
-- If users are assigned to multiple dimension groups, and the groups contain some of the same dimensions, the user is granted the highest privilege set that the dimensions have among all the groups.
+- If dimensions already exist when new users are added, the new users can't see any data in the dimensions until they're assigned to a dimension group.
+- Users can be assigned to multiple dimension groups. If those groups contain some of the same dimensions, the user is granted the highest privilege that is set for the dimensions among all the groups.
