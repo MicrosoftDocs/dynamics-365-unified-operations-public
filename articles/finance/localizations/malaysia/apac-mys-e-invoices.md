@@ -92,21 +92,25 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
     ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)   
-1. For each table name, select **Response types** and then select **New**.
-1. In the **Response type** field, enter !!!!!!!TO CLARIFY which exactly resnose name should be enetred!!!!!!!!!!!!!!!!!!!!.
-1. In the **Description** field, enter **Process response**.
-1. In the **Submission status** field, select **Pending**.
-1. In the **Model mapping** field, select **Response message import**. The configuration is **Malaysia response message import (MY)** !!!!!!!TO CLARIFY the names !!!!!!!!!!!!!!!!!!!!. 
-1. Select **New** to create another record.
-1. In the **Response type** field, enter **ResponseData** !!!!!!!TO CLARIFY which exactly resnose name should be enetred!!!!!!!!!!!!!!!!!!!!..
-1. In the **Description** field, enter **Process response data**.
-1. In the **Submission status** field, select **Pending**.
-1. In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**. !!!!!!!TO CLARIFY Project and Self !!!!!!!!!!!!!!!!!!!!.
-1. In the **Model mapping** field, select **Response data import**. The configuration is !!!!!!!TO CLARIFY Project and Self !!!!!!!!!!!!!!!!!!!!.
+1. For each table name, select **Response types** Select **New** to create a response type, and enter the following values:
+
+    - In the **Response type** field, enter **ResponseData** (the default value).
+    - In the **Description** field, enter any meaning full name or leave it empty.
+    - In the **Submission status** field, select **Pending**.
+    - In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
+      - TBD Project and Self !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+    - In the **Model mapping** field, select **Malaysia response data import format (MY)**.
+
+    :::image type="content" source="e-inv-pol-response-type.jpg" alt-text="Screenshot of the setup of the new response type on the Electronic document tab of the Electronic document parameters page.":::
+
+    > [!NOTE]
+    > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Malaysian electronic invoicing (MY)** feature is selected. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
+
+1. !!!!!!!!!!!!!!!!!!!!.
 1. Select **Save**, and close the page.
 
     > [!NOTE]
-    > The setup that's described here lets you issue electronic invoices for the following **posted** source documents:
+    > The setup that's described here lets you submit electronic invoices for the following **posted** source documents:
     >
     > - Customer invoices that are based on sales orders
     > - Free text invoices
