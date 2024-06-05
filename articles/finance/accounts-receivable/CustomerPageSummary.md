@@ -64,4 +64,5 @@ It gives two outputs. The first output is a summary of current customer status. 
 For additional information, see
 
 - [Transparency FAQ](CustomerPageSummaryFAQ.md)
+- [Enable Copilot in Dynamics 365 Finance](https://go.microsoft.com/fwlink/?linkid=2274122)
 - [Legal information](https://go.microsoft.com/fwlink/?linkid=2173149)
