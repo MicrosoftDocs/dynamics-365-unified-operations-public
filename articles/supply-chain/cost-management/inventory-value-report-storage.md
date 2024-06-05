@@ -1,15 +1,15 @@
 ---
 title: Inventory value reports
-description: This article explains how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities and amounts.
+description: Learn how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities.
 author: JennySong-SH
 ms.author: yanansong
-ms.reviewer: kamaybac
-ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 ---
 
 # Inventory value reports

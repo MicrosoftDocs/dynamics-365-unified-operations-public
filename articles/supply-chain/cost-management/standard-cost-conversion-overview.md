@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Standard cost conversion overview
-description: This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
+description: Learn how to set up and run a standard cost conversion, to be completed after you've completed the prerequisites for a standard cost conversion. 
 author: JennySong-SH
-ms.date: 06/20/2017
+ms.author: yanansong
 ms.topic: overview
-
-# optional metadata
-
-ms.search.form: CostingVersion, InventStdCostConv
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: CostingVersion, InventStdCostConv
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ---
 
 # Standard cost conversion overview
