@@ -1,16 +1,14 @@
 ---
 title: Advanced notes management
 description: Learn how to set up and print predefined notes for customers, vendors, and products, including prerequisites and an outline on setting up advanced notes.
-author: mrolecki
-ms.author: mrolecki
+author: prabhatb 
+ms.author: prabhatb 
 ms.topic: article
-ms.date: 10/15/2021
+ms.custom: 
+  - bap-template
+ms.date: 06/05/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: Italy
-ms.search.validFrom: 2019-11-29
-ms.search.form: MCROrderNotes
-ms.dyn365.ops.version: 10.0.8
+
 ---
 
 # Advanced notes management
