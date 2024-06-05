@@ -21,23 +21,21 @@ This article answers some frequently asked questions about the customer page sum
 
 ## What is customer page summary?
 
-Customer page summary is a feature of Dynamics 365 Finance that is powered by Azure Open AI's large language model. It shows AI-generated summary text on the **Customer page**. The summary info is displayed at the top of the customer page when the user opens it.
+Customer page summary is a feature of Dynamics 365 Finance powered by Azure Open AI's large language model. It shows AI-generated summary text on the **Customer page**. The summary information is displayed at the top of the customer page when the user opens it.
 
-## What can customer page summary do? 
+## What does the customer page summary display? 
 
-It uses historical customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, delayed order lines as inputs. These data come from customer’s Dynamics 365 Finance environment only.
-
-It gives two outputs. The first output is a summary of current customer status. The second output is selective insights under this customer account.
+It uses historical customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, delayed order lines as inputs. The data comes from customer’s Dynamics 365 Finance environment only. The **Customer page summary** displays a summary of current customer status and selective insights about the customer account.
 
 ## What is the customer page summary’s intended use?
 
-The intended use is for the users having access to customer page form to quickly get a summary of the customer status and insights. It can reduce the time spent on switching between modules to query relevant customer transactions and improve operational efficiency.
+The intended use is for the users having access to the customer page to quickly get a summary of the customer status and insights. It reduces the time spent on switching between modules to query relevant customer transactions and improve operational efficiency.
 
 ## How was customer page summary evaluated? What metrics are used to measure performance?
 
 The AI-generated summary was evaluated based on the existing transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). All calculations are done in Finance, not through Azure Open AI, and verified against the same data during the testing process. 
 
-## What are the limitations of customer page summary? How can users minimize the impact of customer page summary’s limitations when using the system?
+## What are the limitations of customer page summary? How can users minimize the impact of customer page summary’s limitations?
 
 The summary provides a comprehensive view of the past year’s customer transactions, starting from the session date. It includes yearly aggregated data of customer invoices, customer payments, sales orders, overdue invoices, delayed order lines. It doesn’t encompass the full range of these transactions.
 
@@ -45,7 +43,7 @@ This Copilot feature was validated for [these languages](https://go.microsoft.co
 
 ## What operational factors and settings allow for effective and responsible use of customer page summary?
 
-Processing of the customer transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines) cannot be changed by the end users. This processing is performed by Dynamics 365 Finance using Azure Open AI's large language model.
+Processing of the customer transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines) can't be changed by the end users. This processing is performed by Dynamics 365 Finance using Azure Open AI's large language model.
 
 This feature can be turned off or on by the system administrator in **Feature management** using the **Customer page summary**.
 
