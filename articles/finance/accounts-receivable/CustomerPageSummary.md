@@ -21,7 +21,7 @@ Enable the **Customer page summary** feature to get an AI-generated summary of a
 
 This feature has two purposes:
 
-- Provide customer account status, outliers, and risks.
+- Provide customer account status and insights.
 - Help you make better decisions about your customers.
 
 ## Prerequisites
