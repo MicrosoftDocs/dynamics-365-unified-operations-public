@@ -1,17 +1,17 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.38. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.38 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
 ms.date: 04/19/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)

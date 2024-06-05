@@ -1,15 +1,15 @@
 ---
 title: Design calculation models
-description: This article provides information about calculation models. These models let you arrange and configure tiles to define the calculation that is done by a calculation profile. Each model presents a flowchart that graphically represents the calculation that the model does.
+description: Learn about calculation models, which let you arrange and configure tiles to define the calculation that is done by a calculation profile.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Design calculation models
