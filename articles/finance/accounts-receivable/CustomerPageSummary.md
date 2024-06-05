@@ -30,12 +30,6 @@ This feature has two purposes:
 
 Customer page summary requires the latest hotfix on Dynamics 365 Finance version 10.0.39.
 
-### Language requirements
-
-This Copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154). While it can be used in other languages, it may not function as intended. Language quality may vary based on the user’s interaction or system settings which may impact accuracy and the user experience. 
-
-To utilize this feature, please ensure to update your preferred language in Dynamics 365 Finance to one of these supported languages.
-
 ### Role requirements
 
 The user must have at least one of the following menu item accesses to view the summary data:
