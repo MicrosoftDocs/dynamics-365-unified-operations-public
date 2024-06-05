@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Update standard costs for a new manufactured item
-description: This article provides guidance for updating standard costs for a new manufactured item. 
+description: Learn about updating standard costs for a new manufactured item, including a list of guidelines for defining costing versions.
 author: JennySong-SH
+ms.author: yanansong
 ms.date: 06/20/2017
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: CostingVersion, InventStdCostConv
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: ba64b70f-3f4c-4373-9a7d-8fd07c45a8cf
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: CostingVersion, InventStdCostConv
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: ba64b70f-3f4c-4373-9a7d-8fd07c45a8cf
 ---
 
 # Update standard costs for a new manufactured item
