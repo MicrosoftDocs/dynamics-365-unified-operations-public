@@ -1,18 +1,17 @@
 ---
 title: Process incoming electronic documents
-description: This article provides an overview of the processing for incoming electronic documents.
+description: Learn about the processing for incoming electronic documents, which can be processed via being imported or preprocessign when passing applications.
 author: ilikond
-ms.date: 02/12/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 02/12/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
 # Process incoming electronic documents

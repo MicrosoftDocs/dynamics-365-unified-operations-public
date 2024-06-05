@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Asset Management parameters
-description: In Asset Management, general parameters relating to assets, work orders, and work order scheduling must be set up.
+description: Learn about Asset Management, general parameters relating to assets, work orders, and work order scheduling, including an outline on the Assets tab.
 author: johanhoffmann
-ms.date: 02/18/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EntAssetParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 02/18/2020
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: EntAssetParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Asset Management parameters

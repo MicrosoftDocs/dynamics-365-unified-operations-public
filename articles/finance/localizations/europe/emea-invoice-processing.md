@@ -1,6 +1,6 @@
 ---
 title: Invoice processing
-description: This article provides information about invoice processing for Eastern Europe.
+description: Learn about invoice processing for Eastern Europe, including an overview on country/region-specific scenarios, such as intra-communit value-added tax.
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.date: 06/05/2024
@@ -8,8 +8,7 @@ ms.topic: article
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
+
 ---
 
 # Invoice processing

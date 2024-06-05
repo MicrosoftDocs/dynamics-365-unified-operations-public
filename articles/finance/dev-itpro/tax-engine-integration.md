@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Tax engine integration
-description: This article provides information about Tax engine integration.
-author: kailiang
-ms.date: 2/8/2024
-ms.topic: article
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: India
-# ms.search.industry: 
+description: Learn about Tax engine integration, including outlines on tax engine integration models, debugging, and various examples.
+author: Kai-Cloud
 ms.author: kailiang
+ms.topic: article
+ms.date: 2/8/2024
+ms.reviewer: twheeloc
+audience: IT Pro 
+ms.search.region: India
 ms.search.validFrom: 2017-12-31
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Tax engine integration

@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Financial dimensions
-description: This article describes the various types of financial dimensions and how they're set up.
+description: Learn about the various types of financial dimensions and how they're set up, including outlines on custom dimensions, activating dimensions, and translations.
 author: aprilolson
-ms.date: 03/07/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/07/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Financial dimensions

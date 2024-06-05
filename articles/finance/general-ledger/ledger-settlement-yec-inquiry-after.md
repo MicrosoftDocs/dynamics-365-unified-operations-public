@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Enable advanced awareness options parameter after year-end close using the inquiry page
-description: This article explains how to use the **Enable advanced awareness options** parameter by using the new inquiry page after the General ledger year-end close is run.
+description: Learn how to use the Enable advanced awareness options parameter by using the new inquiry page after the General ledger year-end close is run.
 author: moaamer
-ms.date: 04/15/2024
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom:
-# ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 04/15/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-01-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
-# **Enable advanced awareness options** parameter after year-end close using the inquiry page
+# Enable advanced awareness options parameter after year-end close using the inquiry page
 
 A major change of the **Enable advanced awareness options** parameter is that ledger settlement can't be done across fiscal years. This cross-year limitation is relevant only to ledger settlement, not to Accounts receivable or Accounts payable settlements.
 

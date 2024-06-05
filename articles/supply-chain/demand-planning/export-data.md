@@ -29,7 +29,7 @@ The file is saved as a CSV file in your local download folder.
 
 ## <a name="existing-export-profiles"></a>View and run existing data export profiles to export to Supply Chain Management
 
-The Demand planning app lets you build a collection of *export profiles*. Each profile exports data to a specific Supply Chain Management instance. Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to export as they require.
+Demand planning lets you build a collection of *export profiles*. Each profile exports data to a specific Supply Chain Management instance. Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to export as they require.
 
 To run an existing data export profile, follow these steps.
 

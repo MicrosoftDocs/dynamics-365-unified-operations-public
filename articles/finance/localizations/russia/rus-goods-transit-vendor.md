@@ -1,16 +1,16 @@
 ---
 title: Goods in transit from vendor
-description: This article provides information about the settings and actions that are required for the Counting act for goods in transit (INV-6) report.
+description: Learn about the settings and actions that are required for the Counting act for goods in transit (INV-6) report, with an outline on setting up inventory profiles.
 author: AdamTrukawka
-ms.date: 05/20/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 05/20/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.dyn365.ops.version: 8.1.2
 ms.search.form: 
+ms.dyn365.ops.version: 8.1.2
 ---
 
 # Goods in transit from vendor (Russia)

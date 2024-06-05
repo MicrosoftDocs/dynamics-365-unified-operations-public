@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Close the fiscal year
-description: This procedure steps through the year end close process that transfers balances to a new fiscal year. 
+description: Learn about how to close the fiscal year with a procedure that steps through year-end close, including an outline on validating year-end close parameters.
 author: aprilolson
-ms.date: 03/28/2023
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc     
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Close the fiscal year
 
 [!include [banner](../../includes/banner.md)]

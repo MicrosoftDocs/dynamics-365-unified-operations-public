@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Goods-in-transit processing
 description: This article describes how to work with goods-in-transit orders. When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
 author: Weijiesa
-ms.date: 01/13/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
-ms.search.validFrom: 2021-01-13
-ms.dyn365.ops.version: 10.0.17
+ms.reviewer: kamaybac
+ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
+ms.topic: how-to
+ms.date: 05/22/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Goods-in-transit processing

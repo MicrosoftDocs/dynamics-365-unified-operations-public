@@ -1,13 +1,13 @@
 ---
 title: Transactions through intermediary
-description: This article provides information about the functionality for accounting intermediary deals that are made by an agent.
+description: Learn about the functionality for accounting intermediary deals that are made by an agent, including a process on setting up an inventory profile.
 author: AdamTrukawka
-ms.date: 03/03/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/03/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

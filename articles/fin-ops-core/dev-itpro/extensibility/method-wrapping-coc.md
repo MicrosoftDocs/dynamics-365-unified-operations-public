@@ -420,9 +420,6 @@ In a CoC extension method, the next call must not be called conditionally. Howev
     }
 ```
 
-### Extensions of extensions are not yet supported
-Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future release.
-
 ### Extensions of constructors
 Constructors cannot be extended. A **new** method that is defined on an extension class will define a constructor for the extension class itself. Additionally, the **new** method has to be public, and it can't have any arguments. For more information, see [Constructors](class-extensions.md#constructors).
 

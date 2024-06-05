@@ -4,7 +4,7 @@ description: Access links to the release plans, major announcements, and documen
 author: jaredha
 ms.author: jaredha
 ms.topic: whats-new
-ms.date: 03/04/2024
+ms.date: 05/04/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -19,6 +19,28 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## May 2024
+
+### Global address book
+
+The May regular release of Dual-write GAB solution 3.5.2.89 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+|Bug fix |Fix for creating contacts with last name greater than 25 characters, CE isn't able to create a party record due to disparity between the allowed max field length between contact and party entity.	|General availability|
+|Bug fix|	Removed **Add existing postal address** from **Postal address** tab, sharing postal addresses between parties isn't supported. In some specific cases, like contact for party creation.|	General availability|
+
+#### GAB solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.2.52 | 3.5.2.89 |
+| Dynamics365GABExtended | Yes | 3.5.2.52| 3.5.2.89 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.2.52| 3.5.2.89 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.2.52| 3.5.2.89|
+| Dynamics365GABPartyCommon | Yes | 3.5.2.52 | 3.5.2.89 |
+
 
 ## March 2024
 Release notes for March 2024 releases of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>

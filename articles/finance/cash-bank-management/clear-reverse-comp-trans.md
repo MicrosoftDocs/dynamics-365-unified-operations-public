@@ -1,17 +1,17 @@
 ---
 title: Clear reversal company transactions in advanced bank reconciliation
-description: This article explains how to clear transactions in advanced bank reconciliation.
-author: EricWang
-ms.date: 01/22/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: 
+description: Learn about how to clear transactions in advanced bank reconciliation, including prerequisites and various step-by-step processes.
+author: EricWangChen
 ms.author: wangchen
+ms.topic: article
+ms.date: 01/22/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.search.form: 
+ms.search.form:
+ms.dyn365.ops.version:   
 ---
 
 # Clear reversal company transactions in advanced bank reconciliation 

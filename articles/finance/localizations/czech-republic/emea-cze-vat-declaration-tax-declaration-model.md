@@ -1,17 +1,16 @@
 ---
 title: VAT declaration (Czech Republic)
-description: This article provides information about the value-added tax (VAT) declaration for the Czech Republic.
+description: Learn about the value-added tax (VAT) declaration for the Czech Republic, including overviews on taxable transactions, VAT deductions, and and tax calculations.
 author: liza-golub
-ms.date: 01/04/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Czech Republic
 ms.author: egolub
+ms.topic: article
+ms.date: 01/04/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Czech Republic
 ms.search.validFrom: 2017-07-20
-ms.dyn365.ops.version: 10.0.13
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # VAT declaration (Czech Republic)

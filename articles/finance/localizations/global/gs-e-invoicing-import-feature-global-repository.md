@@ -1,18 +1,17 @@
 ---
 title: Import features from the repository
-description: This article explains how to import Globalization features from the Dataverse repository.
+description: Learn how to import Globalization features from the Dataverse repository, including a step-by-step process for importing features.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39
+ms.topic: article
+ms.date: 01/29/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2024-01-29
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.39
 ---
 
 # Import features from the repository

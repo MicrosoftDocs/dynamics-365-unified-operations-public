@@ -1,13 +1,13 @@
 ---
 title: Payment times reporting schema
-description: This article explains how to set up, create, and generate the Payment times reporting schema for Australia.
+description: Learn how to set up, create, and generate the Payment times reporting schema for Australia, including outlines on configuration and statistics on invoices.
 author: AdamTrukawka
-ms.date: 09/14/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Australia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/14/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Australia
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

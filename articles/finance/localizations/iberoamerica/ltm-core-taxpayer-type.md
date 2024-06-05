@@ -1,12 +1,12 @@
 ---
 title: Taxpayer types for Latin America 
-description: This article provides information about the taxpayer type configuration for Latin America. 
+description: Learn about the taxpayer type configuration for Latin America, including prerequisites and a process for setting up a taxpayer type.
 author: Fhernandez0088
+ms.author: v-federicohe
+ms.topic: article
 ms.date: 01/31/2023
-ms.topic: Article
-ms.reviewer: johnmichalak
-ms.author: v-federicohe 
 ms.custom: bap-template
+ms.reviewer: johnmichalak 
 ---
 
 # Taxpayer types for Latin America 

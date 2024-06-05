@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Automatic update of asset counters
-description: This article describes automatic update of asset counters in Asset Management.
+description: Learn about the automatic update of asset counters in Asset Management, including a step-by-step process on updating the related asset counters.
 author: johanhoffmann
-ms.date: 10/15/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 10/15/2019
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Automatic update of asset counters

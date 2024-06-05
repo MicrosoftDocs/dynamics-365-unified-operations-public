@@ -1,6 +1,6 @@
 ---
 title: Analyze demand plans with Copilot (preview)
-description: This article provides information about the Demand planning app for Microsoft Dynamics 365 Supply Chain Management. This app lets you use Copilot to analyze your demand plans.
+description: Demand planning in Microsoft Dynamics 365 Supply Chain Management lets you use Copilot to analyze your demand plans.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -20,7 +20,7 @@ ms.collection:
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!--KFM: Preview until further notice -->
 
-The Demand planning app for Microsoft Dynamics 365 Supply Chain Management lets you use Copilot to analyze your demand plans. You can select from a set of predefined questions. The app then provides answers in real time by using natural language.
+Demand planning in Microsoft Dynamics 365 Supply Chain Management lets you use Copilot to analyze your demand plans. You can select from a set of predefined questions. The app then provides answers in real time by using natural language.
 
 By using Copilot, you can quickly gain valuable insights across multiple dimensions. You can use these insights to improve operational efficiency, increase profitability, and improve customer satisfaction.
 
@@ -45,7 +45,7 @@ For example, a demand planner is interested in learning the most significant fac
 
 ## Prerequisites
 
-To use Copilot to analyze demand plans, you must be running the general availability (GA) version of the Demand planning app for Supply Chain Management.
+To use Copilot to analyze demand plans, you must be running the general availability (GA) version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
 ## Country/region availability and language support
 

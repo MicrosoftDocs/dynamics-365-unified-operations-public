@@ -2,7 +2,7 @@
 title: Create a SubmitToWorkflow class
 description: Learn about how to create a SubmitToWorkflow class, including an outline of the creation procedure with X++ code examples.
 author: josaw1
-ms.author: tfehr
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/19/2019
 ms.reviewer: twheeloc

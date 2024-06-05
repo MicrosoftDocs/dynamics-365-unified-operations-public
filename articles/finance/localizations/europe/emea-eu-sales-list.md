@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: EU Sales list reporting
-description: This article provides information about European Union (EU) Sales list reporting.
+description: Learn about European Union (EU) Sales list reporting, including overviews on EU Sales list reporting, the reporting process, and prerequisites.
 author: EvgenyPopovMBS
-ms.date: 06/14/2022
+ms.author: evgenypopov
 ms.topic: article
-# optional metadata
-
-ms.search.form: EUSalesList
-audience: Application User
-# ms.devlang: 
+ms.date: 06/14/2022
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-02-28
+ms.search.form: EUSalesList
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # EU sales list reporting

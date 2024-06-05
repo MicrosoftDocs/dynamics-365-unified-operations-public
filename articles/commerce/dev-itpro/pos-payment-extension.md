@@ -2,14 +2,13 @@
 title: Point of sale (POS) payment extension
 description: This article describes how to implement the core payment logic in the payment device or payment connector using the Hardware station APIs.
 author: josaw1
-ms.date: 11/08/2021
+ms.date: 05/28/2024
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
+ms.author: bennettray
 ms.search.validFrom: 2017-09-01
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 # Point of sale (POS) payment extension
