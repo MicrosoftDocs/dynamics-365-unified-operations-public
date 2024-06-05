@@ -78,7 +78,7 @@ To use the out-of-box customer-facing SCO layout, go to **Retail and Commerce \>
 > [!NOTE]
 > - In demo data, **Houston - Register 49** is set up as an SCO register, and the SCO layout (**SCO\_POC1**) is assigned to it. If you update an existing demo environment, for any register of your choice you can  set the **Self-checkout** option to **Yes** and assign it the SCO layout.
 > - In demo data, user **000815** is configured as an SCO customer, and user **000813** is configured as an SCO manager. If these users don't exist in your demo enviroment, you can assign the **SCO kiosk** permission group to the customer you want to use instead.
-> - To download the SCO out-of-the-box layout along with the permission group, use the package [https://download.microsoft.com/download/1/8/2/182fcc7e-183a-48ff-b883-ee2f329e6581/SCO demo layout and perms.zip](https://download.microsoft.com/download/1/8/2/182fcc7e-183a-48ff-b883-ee2f329e6581/SCO demo layout and perms.zip).
+> - To download the SCO out-of-the-box layout along with the permission group, use the package [https://download.microsoft.com/download/1/8/2/182fcc7e-183a-48ff-b883-ee2f329e6581/SCO demo layout and perms.zip](https://download.microsoft.com/download/1/8/2/182fcc7e-183a-48ff-b883-ee2f329e6581/SCO%20demo%20layout%20and%20perms.zip).
 > - For instructions on how to export POS screen layouts for import to a new environment, see [Export POS screen layouts for import to a new environment](export-pos-layouts.md).
 
 ## Supported customer operations
@@ -114,4 +114,4 @@ The **Call for assistance** operation provides support for cashier assistance du
 - **Cancel** – This operation allows the store associate cancel out of the **Call for assistance** operation.
 
 > [!NOTE]
-> If you are updating your demo environment with a self-checkout configuration, in Commerce headquarters you must manually add the **718 - Allow request for assistance** operation. To add this operation, go to **POS operations** and select **+New**. In the new row, enter "718" for **Operation ID**, enter a name for **Operation name**, enter "1002" for **Permission ID**, and select both the **Check user access** and **User operation** checkboxes. 
+> If you are updating your demo environment with a self-checkout configuration, in Commerce headquarters you must manually add the **718 - Allow request for assistance** operation. To add this operation, go to **POS operations** and select **+New**. In the new row, enter "718" for **Operation ID**, enter a name for **Operation name**, enter "1002" for **Permission ID**, select both the **Check user access** and **User operation** checkboxes, and then select **Save**. 
