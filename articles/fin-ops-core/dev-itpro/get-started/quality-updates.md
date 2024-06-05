@@ -21,7 +21,7 @@ This article provides information about proactive quality updates (PQUs). It exp
 
 ## What are PQUs?
 
-PQUs are cumulative builds of hotfixes that are delivered with [near-zero downtime](../deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean). PQUs follow a push model, where updates are applied to a Microsoft Dynamics Lifecycle Services environment in the background and have minimal impact on customers. Every PQU is deployed region by region, by following a "safe deployment process" that tracks issues that are found within each region during deployment. The safe deployment process helps identify and fix issues before the PQU is deployed to more regions. PQUs are 100-percent automated and contain important bug fixes that are ready after the service update is generally available.
+PQUs are cumulative builds of hotfixes that are delivered with [near-zero downtime](../deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean). PQUs follow a push model, where updates are applied to a Microsoft Dynamics Lifecycle Services environment in the background and have minimal impact on customers. Every PQU is deployed region by region, by following a "safe deployment process" that tracks issues that are found within each region during deployment. The safe deployment process helps identify and fix issues before the PQU is deployed to more regions. PQUs are 100-percent automated and contain important bug fixes and high-priority product features that are ready after the service update is generally available.
 
 ## Why is Microsoft introducing PQUs?
 
