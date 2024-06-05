@@ -97,11 +97,13 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
     - In the **Response type** field, enter **ResponseData** (the default value).
     - In the **Description** field, enter any meaning full name or leave it empty.
     - In the **Submission status** field, select **Pending**.
-    - In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
-      - TBD Project and Self !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+    - In the **Data entity name** field, select: 
+      - **SalesInvoiceHeaderV2Entity** while configuring **Customer Invoice journal**.
+      - **!!!!!!!!!** while configuring **Project invoice**.
+      - **??????????** while configuring **Vendor Invoice journal**.
     - In the **Model mapping** field, select **Malaysia response data import format (MY)**.
 
-    :::image type="content" source="e-inv-pol-response-type.jpg" alt-text="Screenshot of the setup of the new response type on the Electronic document tab of the Electronic document parameters page.":::
+    ![Screenshot that response types configuration.](apac-mys-e-invoice-address.jpg)
 
     > [!NOTE]
     > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Malaysian electronic invoicing (MY)** feature is selected. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
@@ -170,9 +172,7 @@ Follow these steps to configure the structure of the postal address to define al
     
    > [!NOTE]
    > For the **States**, on the **State/province** tab, in the **State code** field, additionally define the official state code according to the [published requirements](https://sdk.myinvois.hasil.gov.my/codes/state-codes/).
-   > 
-   > ![Screenshot that shows address configuration.](apac-mys-e-invoice-address.jpg)
-
+   
 ## Configure legal entity data
 
 ### Enter the address
