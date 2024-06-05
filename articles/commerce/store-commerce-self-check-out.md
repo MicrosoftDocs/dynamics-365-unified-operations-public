@@ -7,7 +7,7 @@ ms.topic: article
 ms.date: 06/05/2024
 ms.custom: 
   - bap-template
-ms.reviewer: johnmichalak
+ms.reviewer: v-chrgriffin
 ---
 
 # Enable self-checkout in the Store Commerce app (preview)
