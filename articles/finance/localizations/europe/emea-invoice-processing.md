@@ -1,20 +1,13 @@
 ---
-# required metadata
 title: Invoice processing
 description: This article provides information about invoice processing for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 02/02/2022
+ms.author: evgenypopov
+ms.date: 06/05/2024
 ms.topic: article
-# optional metadata
-ms.search.form: CustParameters, VendParameters
-audience: Application User
-# ms.devlang: 
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---
