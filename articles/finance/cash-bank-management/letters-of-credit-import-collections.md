@@ -41,7 +41,11 @@ An import collection is an agreement between the bank and the exporter (seller),
 An import collection helps guarantee that the seller is paid when the buyer collects the shipping documents to take delivery of the imported goods.
 
 
-
+For more information about this functionality in Dynamics 365 Finance, please see the following topics:
+-   [Import letter of credit](tasks/import-letter-credit.md)
+-   [Export letter of credit](tasks/export-letter-credit.md)
+-   [Set up bank facilities and posting profiles for letter of credit](tasks/set-up-bank-facilities-posting-profiles-letter-credit.md)
+-   [Create a bank facility agreement for a letter of credit](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
