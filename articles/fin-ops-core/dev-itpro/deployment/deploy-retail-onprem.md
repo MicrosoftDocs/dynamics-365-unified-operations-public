@@ -12,6 +12,8 @@ ms.search.region: Global
 ms.search.validFrom: 2018-10-31
 # ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 8.1.1
+ms.service: 
+  - dynamics-365-op
 ---
 
 # Installation steps for Retail channel components in an on-premises environment
