@@ -1,6 +1,6 @@
 ---
 title: Customer page summary responsible AI FAQ
-description: This article answers some frequently asked questions about the customer page summary feature in Microsoft Dynamics 365 Finance.
+description: This article answers some frequently asked questions about the Customer page summary feature in Microsoft Dynamics 365 Finance.
 author: EricWang
 ms.author: wangchen
 ms.topic: conceptual
@@ -15,37 +15,37 @@ ms.dyn365.ops.version: 10.0.39
 ms.search.form:    
 ---
 
-# Customer page summary: FAQ
+# Customer page summary responsible AI FAQ
 
-This article answers some frequently asked questions about the customer page summary feature in Microsoft Dynamics 365 Finance.
+This article answers some frequently asked questions about the **Customer page summary** feature in Microsoft Dynamics 365 Finance.
 
-## What is customer page summary?
+## What is Customer page summary?
 
-Customer page summary is a feature of Dynamics 365 Finance powered by Azure Open AI's large language model. It shows AI-generated summary text on the **Customer page**. The summary information is displayed at the top of the customer page when the user opens it.
+Customer page summary is a feature in Dynamics 365 Finance that is powered by Azure Open AI Service's large language model. It shows AI-generated summary text at the top of the customer page when a user opens it.
 
-## What does the customer page summary display? 
+## What does Customer page summary show?
 
-It uses historical customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, delayed order lines as inputs. The data comes from customer’s Dynamics 365 Finance environment only. The **Customer page summary** displays a summary of current customer status and selective insights about the customer account.
+Customer page summary uses historical customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines as inputs. This data comes only from the customer's Finance environment. Customer page summary shows a summary of the current customer status and selected insights into the customer account.
 
-## What is the customer page summary’s intended use?
+## What is Customer page summary's intended use?
 
-The intended use is for the users having access to the customer page to quickly get a summary of the customer status and insights. It reduces the time spent on switching between modules to query relevant customer transactions and improve operational efficiency.
+Users who have access to the customer page can quickly get a summary of the customer status and insights. The feature reduces the time that users must spend switching between modules to query relevant customer transactions and helps improve operational efficiency.
 
-## How was customer page summary evaluated? What metrics are used to measure performance?
+## How was Customer page summary evaluated? What metrics are used to measure performance?
 
-The AI-generated summary was evaluated based on the existing transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). All calculations are done in Finance, not through Azure Open AI, and verified against the same data during the testing process. 
+The AI-generated summary was evaluated based on the existing transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). All calculations are done in Finance, not through Azure Open AI, and are verified against the same data during the testing process.
 
-## What are the limitations of customer page summary? How can users minimize the impact of customer page summary’s limitations?
+## What are the limitations of Customer page summary? How can users minimize the impact of those limitations?
 
-The summary provides a comprehensive view of the past year’s customer transactions, starting from the session date. It includes yearly aggregated data of customer invoices, customer payments, sales orders, overdue invoices, delayed order lines. It doesn’t encompass the full range of these transactions.
+The summary provides a comprehensive view of the past year's customer transactions, starting from the session date. It includes yearly aggregated data of customer invoices, customer payments, sales orders, overdue invoices, and delayed order lines. It doesn't encompass the full range of these transactions.
 
-This Copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154). While it can be used in other languages, it may not function as intended. Language quality may vary based on the user’s interaction or system settings which may impact accuracy and the user experience. 
+This Copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although it can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
 
-## What operational factors and settings allow for effective and responsible use of customer page summary?
+## What operational factors and settings allow for effective and responsible use of Customer page summary?
 
-Processing of the customer transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines) can't be changed by the end users. This processing is performed by Dynamics 365 Finance using Azure Open AI's large language model.
+System users can't change the processing of the customer transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). Dynamics 365 Finance performs this processing by using Azure Open AI's large language model.
 
-This feature can be turned off or on by the system administrator in **Feature management** using the **Customer page summary**.
+The system administrator can turn this feature off or on in Feature management by using the **Customer page summary** feature.
 
 ## See also
 
