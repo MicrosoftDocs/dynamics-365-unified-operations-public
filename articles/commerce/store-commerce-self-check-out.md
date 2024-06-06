@@ -13,7 +13,6 @@ ms.reviewer: v-chrgriffin
 # Enable self-checkout in the Store Commerce app
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to enable self-checkout (SCO) and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
