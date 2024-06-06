@@ -6,8 +6,6 @@ description: This article explains how negative on-hand is handled.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -1,23 +1,20 @@
 ---
-title: Create an Azure storage account in the Azure portal
-description: This article explains how to create an Azure storage account for Electronic invoicing.
-author: gionoder
-ms.date: 02/14/2022
+title: Create an Azure storage account in the Azure portal (RCS)
+description: Learn how to create an Azure storage account for Electronic invoicing, including a step-by-step process for storing tokens in Azure key vaults.
+author: ilikond
+ms.author: ikondratenko
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 02/14/2022
+ms.custom:
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
-# Create an Azure storage account in the Azure portal
+# Create an Azure storage account in the Azure portal (RCS)
 
 [!include [banner](../../includes/banner.md)]
 

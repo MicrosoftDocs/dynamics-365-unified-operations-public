@@ -6,8 +6,6 @@ description: This article explains how you can use one or more engineering compa
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

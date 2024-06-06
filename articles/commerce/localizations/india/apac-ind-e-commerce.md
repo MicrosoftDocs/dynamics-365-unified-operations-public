@@ -4,8 +4,6 @@ description: This article gives an overview of the Microsoft Dynamics 365 Commer
 author: EvgenyPopovMBS
 ms.date: 04/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: India

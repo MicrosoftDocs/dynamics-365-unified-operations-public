@@ -6,8 +6,6 @@ description: This article provides an overview of engineering change management,
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

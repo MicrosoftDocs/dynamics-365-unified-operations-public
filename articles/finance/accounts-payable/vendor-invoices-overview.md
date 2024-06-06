@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Vendor invoices overview
-description: This article provides general information about vendor invoices.
-author: abruer
-ms.date: 03/13/2024
+description: Learn about vendor invoices, which are requests for payment for products and services, including an outline on submitting invoices.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/13/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
 ms.search.validFrom: 2016-02-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Vendor invoices overview
@@ -155,6 +143,9 @@ When you generate the **Vendor open transactions** report, the following default
 - **Open transactions per** – Enter a date to include transactions that are open as of that date. If you don't enter a date, this field is set to the maximum date. (The maximum date is the latest date that the system will accept, December 31, 2154.) By default, the next time that the report is run, this field will be set to the last date that was entered in it.
 
 You can use the filters under the **Record to include** field to further limit the transaction data that is included on the report.
+
+### Extend invoice number length
+Beginning in Dynamics 365 Finance version 10.0.40 and later, you can enable the **Extend the length of invoice number for vendor invoice** feature to increase the invoice number from 20 characters to 50 characters in the vendor invoice and invoice journal. Before enabling the feature, create a ticket in Lifeccycle services to open the **EnableEdtStringDatabaseStringLengthAttributeInComputation** flight.
 
 ## Additional resources
 

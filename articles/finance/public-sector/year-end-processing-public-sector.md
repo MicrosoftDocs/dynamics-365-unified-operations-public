@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Year-end processing in the public sector
-description: This article provides information about year-end processing for public sector organizations.
+description: Learn about year-end processing for public sector organizations, including answers to various frequently asked questions.
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchYearEndClose
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
+ms.search.form: PurchYearEndClose
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98
 ---
 
 # Year-end processing in the public sector

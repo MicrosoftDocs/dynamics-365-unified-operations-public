@@ -6,8 +6,6 @@ description: During a demand explosion, if an item has a default order type of P
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

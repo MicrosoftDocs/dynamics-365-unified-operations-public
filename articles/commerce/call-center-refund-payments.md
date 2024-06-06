@@ -4,8 +4,6 @@ description: This article explains how payment refunds are generated through cal
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

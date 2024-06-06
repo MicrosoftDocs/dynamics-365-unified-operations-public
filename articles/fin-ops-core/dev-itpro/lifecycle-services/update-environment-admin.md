@@ -1,18 +1,14 @@
 ---
-# required metadata
-
 title: Update the environment administrator
-description: This article explains how to change the environment administrator for a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to change the environment administrator for a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 04/28/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global 
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 04/28/2023
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global 
 ms.search.validFrom: 2018-03-05
-
 ---
 
 # Update the environment administrator

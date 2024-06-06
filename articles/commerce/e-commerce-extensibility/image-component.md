@@ -6,9 +6,6 @@ description: This article describes how to use the Image component in the online
 author: samjarawan
 ms.date: 12/14/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

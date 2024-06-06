@@ -6,8 +6,6 @@ description: This article describes how to set a default reservation principle f
 author: johanhoffmann
 ms.date: 08/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

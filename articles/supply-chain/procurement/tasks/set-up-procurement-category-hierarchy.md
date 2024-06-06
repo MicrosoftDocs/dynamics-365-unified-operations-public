@@ -6,8 +6,6 @@ description: This procedure shows you how to create new nodes in a procurement c
 author: Henrikan
 ms.date: 06/21/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

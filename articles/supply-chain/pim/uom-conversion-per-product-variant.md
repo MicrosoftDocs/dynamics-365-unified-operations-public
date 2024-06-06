@@ -6,8 +6,6 @@ description: This article explains how to set up unit of measure conversions for
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

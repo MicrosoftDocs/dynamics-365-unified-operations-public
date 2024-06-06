@@ -1,26 +1,22 @@
 ---
-title: Globalization feature components (preview)
-description: This article provides an overview of Globalization feature components (preview).
+title: Globalization feature components
+description: Access an overview of Globalization feature components, including an overview on acessing electronic invoicing feature components.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39
+ms.topic: article
+ms.date: 01/29/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2024-01-29
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.39
 ---
 
-# Globalization feature components (preview)
+# Globalization feature components
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 A Globalization feature is a set of components that define the rules for data transformation in Electronic reporting (ER) configurations. These components include instructions for processing electronic documents and then sending them to or receiving them from external channels. They also include conditions that define when a feature should be run for the incoming business data.
 

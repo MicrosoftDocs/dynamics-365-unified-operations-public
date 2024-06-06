@@ -4,8 +4,6 @@ description: This article provides recommendations that can help secure Store Co
 author: josaw1
 ms.date: 02/17/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

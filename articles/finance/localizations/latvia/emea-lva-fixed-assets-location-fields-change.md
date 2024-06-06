@@ -1,18 +1,16 @@
 ---
 title: Fixed assets location change tracking for Latvia
-description: This article provides information about the change tracking functionality for fixed asset location fields for legal entities with a primary address in Latvia.
+description: Learn about the change tracking functionality for fixed asset location fields for legal entities with a primary address in Latvia.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Latvia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Latvia
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: AssetTable
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Fixed assets location change tracking for Latvia

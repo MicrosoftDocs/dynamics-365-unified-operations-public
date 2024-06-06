@@ -6,9 +6,6 @@ description: This article describes the Feature management feature and how you c
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: FeatureManagementWorkspace
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Manage features in Human Resources
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

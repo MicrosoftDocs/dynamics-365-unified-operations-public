@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Configure Dataverse virtual entities
-description: This article explains how to configure virtual entities for finance and operations apps in Microsoft Dataverse.
+description: Learn about how to configure virtual entities for finance and operations apps in Microsoft Dataverse, including overviews on authentication and authorization.
 author: pnghub
-ms.date: 03/12/2024
-ms.topic: article
-ms.prod:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
 ms.author: gned
+ms.topic: article
+ms.date: 03/12/2024
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-05-31
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 

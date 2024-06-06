@@ -1,13 +1,13 @@
 ---
 title: Contribute to the Help (contains video)
-description: This article provides tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
+description: Learn about tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
-ms.date: 04/13/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: edupont
+ms.topic: article
+ms.date: 04/13/2023
+ms.reviewer: josaw
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---

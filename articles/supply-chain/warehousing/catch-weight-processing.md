@@ -1,42 +1,27 @@
 ---
-# required metadata
-
 title: Catch weight product processing with warehouse management
 description: This article describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
-ms.date: 08/13/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2019-1-31
-ms.dyn365.ops.version: 8.1.3
-
+ms.reviewer: kamaybac
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
+ms.topic: how-to
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Catch weight product processing with warehouse management
 
 [!include [banner](../includes/banner.md)]
 
-## Feature exposure
+## Prerequisites
 
-To use warehouse management to process catch weight products, you must use a license configuration key to turn on the functionality. Go to **System administration \> Setup \> License configuration**. Then, on the **Configuration keys** tab, expand **Trade \> Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**.
+To use warehouse management to process catch weight products, you must use a license configuration key to turn on the functionality. Go to **System administration \> Setup \> License configuration**. Then, on the **Configuration keys** tab, expand **Trade \> Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**. Both the **Warehouse and Transportation management** license configuration key and the **Process distribution \> Catch weight** license configuration keys must also be turned on.
 
 > [!NOTE]
-> Both the **Warehouse and Transportation management** license configuration key and the **Process distribution \> Catch weight** license configuration keys must also be turned on. To set the configuration keys for catch weight, you must also turn on the feature by using the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. The main feature that must be turned on is *Catch weight product processing with warehouse management*. Two related but optional features that you might want to turn on are *Inventory status changes for catch weight products* and *Use existing catch weight tags when reporting production orders as finished*. As of Supply Chain Management version 10.0.36, all three of these features are mandatory and can't be turned off.
+> If you are running version 10.0.35 or older, you must turn on the *Catch weight product processing with warehouse management* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can set the configuration keys for catch weight. In newer versions, this feature is fully integrated into the product, so it's either mandatory or no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 After the license configuration key is turned on, when you create a released product, you can select **Catch weight**. You can also associate the released product with a storage dimension group that the **Use warehouse management processes** parameter is selected for.
 

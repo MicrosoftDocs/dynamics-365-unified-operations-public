@@ -4,8 +4,6 @@ description: This article provides an overview of the cash register functionalit
 author: EvgenyPopovMBS
 ms.date: 04/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: India

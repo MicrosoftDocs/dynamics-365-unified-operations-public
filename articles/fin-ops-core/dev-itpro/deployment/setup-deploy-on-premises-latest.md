@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Set up and deploy on-premises environments (Application 10.0.32 and later)
-description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
+description: Learn how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
 author: faix
-ms.date: 02/08/2023
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: osfaixat
+ms.topic: article
+ms.date: 02/08/2023
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
+ms.search.form:
 ms.dyn365.ops.version: Platform update 56
-search.app:
-  - financeandoperationsonprem-docs
 ---
 
 # Set up and deploy on-premises environments (Application 10.0.32 and later)
@@ -767,6 +753,10 @@ You can verify that everything has been configured correctly by running the foll
 
     | Release | Database |
     |---------|----------|
+    | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Demo Data |
+    | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Empty Data |
+    | Version 10.0.38 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.38 Demo Data |
+    | Version 10.0.38 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.38 Empty Data |
     | Version 10.0.35 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.35 Demo Data |
     | Version 10.0.35 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.35 Empty Data |
     | Version 10.0.32 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.32 Demo Data |

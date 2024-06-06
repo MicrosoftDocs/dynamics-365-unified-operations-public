@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Budgeting overview
-description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in finance and operations or load them from a third-party program.
-author: panolte
-ms.date: 10/16/2023
+description: Learn about the minimum configuration that is required in order to create budgets in finance and operations or load them from a third-party program.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/16/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
+audience: Application User
 ms.search.region: global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ---
 
 # Budgeting overview

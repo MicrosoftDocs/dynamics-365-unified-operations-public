@@ -1,26 +1,22 @@
 ---
-title: Configure a SharePoint connection (preview)
-description: This article explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site (preview).
+title: Create a SharePoint connection
+description: Learn how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site, including an outline on granting access to folders.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39
+ms.topic: article
+ms.date: 01/29/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2024-01-29
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.39
 ---
 
-# Configure a SharePoint connection (preview)
+# Create a SharePoint connection
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The Electronic Invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that Electronic invoicing can access a specific SharePoint site, you must provide the site credentials to the Electronic Invoicing service. Additionally, to ensure that the credentials are securely stored, don't provide them directly. Instead, store them in an Azure key vault, and provide a Key Vault secret.
 

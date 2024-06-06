@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Shift depreciation calculation for Indian fixed assets
-description: This article walks you through the process of calculating shift depreciation for India fixed assets in Microsoft Dynamics 365 Finance.
+description: Learn about the process of calculating shift depreciation for India fixed assets in Microsoft Dynamics 365 Finance, including examples.
 author: AdamTrukawka
-ms.date: 01/05/2018
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: AssetShiftDepreciationProfile_IN, AssetDepreciationProfile
-audience: Application User
-# ms.devlang:
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: India
-# ms.search.industry:
 ms.author: atrukawk
+ms.topic: article
+ms.date: 01/05/2018
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2017-12-31
+ms.search.form: AssetShiftDepreciationProfile_IN, AssetDepreciationProfile
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Shift depreciation calculation for Indian fixed assets

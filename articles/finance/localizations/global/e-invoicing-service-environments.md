@@ -1,20 +1,17 @@
 ---
 title: Service environments
-description: This article provides information about service environments for Electronic invoicing and explains how to set them up.
+description: Learn about service environments for Electronic invoicing and explains how to set them up, including an outline on service environment statuses.
 author: gionoder
-ms.date: 02/28/2022
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.date: 02/28/2022
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
 # Service environments

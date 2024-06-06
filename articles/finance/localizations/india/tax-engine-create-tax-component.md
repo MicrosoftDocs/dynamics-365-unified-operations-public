@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Create tax components
-description: This article explains how to create tax components manually and by using predefined rules.
+description: Learn how to create tax components manually and by using predefined rules, including outlines on creating tax types and creating tax components.
 author: EricWangChen
-ms.date: 09/10/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 09/10/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 07/30/2019
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Create tax components

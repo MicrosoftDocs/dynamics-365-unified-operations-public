@@ -6,9 +6,6 @@ description: This article describes how to change the display name of the Employ
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EssWorkspace
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Change Employee self service workspace name
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

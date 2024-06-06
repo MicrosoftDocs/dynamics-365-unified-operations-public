@@ -6,8 +6,6 @@ description: This article explains how pay is calculated based on worker registr
 author: johanhoffmann
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

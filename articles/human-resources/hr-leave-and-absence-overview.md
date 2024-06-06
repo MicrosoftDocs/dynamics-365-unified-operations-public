@@ -4,11 +4,8 @@
 title: Leave and absence overview
 description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 05/08/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

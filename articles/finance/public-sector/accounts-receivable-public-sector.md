@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Accounts receivable in the public sector overview
-description: This article describes the Accounts receivable functionality that is available for the public sector.
+description: Learn about the Accounts receivable functionality that is available for the public sector, including answers to various questions.
 author: v-kiarnd
-ms.date: 07/25/2019
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: a411ec87-a209-471c-a141-5f5a92f2e45e
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a411ec87-a209-471c-a141-5f5a92f2e45e
 ---
 
 # Accounts receivable in the public sector overview

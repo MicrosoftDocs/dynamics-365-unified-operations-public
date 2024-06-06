@@ -1,19 +1,17 @@
 ---
 title: Configure system parameters to report sales tax books for Italy
-description: This article explains how to configure system parameters to report sales tax books for legal entities in Italy.
+description: Learn how to configure system parameters to report sales tax books for legal entities in Italy, including an outline on the address of the legal entity.
 author: liza-golub
-ms.date: 03/04/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Italy
 ms.author: egolub
+ms.topic: article
+ms.date: 03/04/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2016-11-30
+ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 ms.dyn365.ops.version: Version 1611
 ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
-ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 ---
 
 # Configure system parameters to report sales tax books for Italy

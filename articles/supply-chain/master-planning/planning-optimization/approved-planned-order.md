@@ -6,8 +6,6 @@ description: This article provides information about how to view, manage, and ap
 author: t-benebo
 ms.date: 04/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

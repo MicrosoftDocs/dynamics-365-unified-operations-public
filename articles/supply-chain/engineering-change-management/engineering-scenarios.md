@@ -6,8 +6,6 @@ description: This article provides an end-to-end walkthrough that shows how to w
 author: t-benebo
 ms.date: 08/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

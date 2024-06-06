@@ -14,6 +14,8 @@ ms.custom: bap-template
 
 # Inventory Visibility diagnostic tool
 
+[!include [banner](../includes/banner.md)]
+
 This article describes how to set up and use the Inventory Visibility diagnostic tool. This tool helps identify and fix discrepancies between on-hand inventory records in Microsoft Dynamics 365 Supply Chain Management and on-hand inventory records in the `fno` data source in Inventory Visibility.
 
 ## Set up the Inventory Visibility diagnostic tool

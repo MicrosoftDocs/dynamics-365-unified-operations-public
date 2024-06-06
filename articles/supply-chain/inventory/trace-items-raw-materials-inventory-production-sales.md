@@ -6,8 +6,6 @@ description: This article describes how you can use item tracing to identify whe
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

@@ -4,27 +4,16 @@
 title: E-commerce site overview
 description: This article provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 11/05/2020
+ms.date: 05/28/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: stuharg
+ms.search.region: Global
+ms.author: shajain
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # E-commerce site overview

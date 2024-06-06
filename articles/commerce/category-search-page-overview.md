@@ -4,8 +4,6 @@ description: This article provides an overview of the default category landing p
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

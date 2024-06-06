@@ -4,8 +4,6 @@ description: This article describes how certain payment types can be restricted 
 author: josaw1
 ms.date: 03/05/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

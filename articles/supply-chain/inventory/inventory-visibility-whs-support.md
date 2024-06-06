@@ -69,15 +69,9 @@ If you're using the new user interface for the Inventory Visibility app ([UI ver
 1. On the navigation pane, select **Configuration**.
 1. On the **Feature management & settings** tab, turn on the *Advanced warehouse inventory* feature.
 
-## <a name="truncate"></a>Choose whether to truncate unused dimensions (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## <a name="truncate"></a>Choose whether to truncate unused dimensions
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md). If you want to use the feature that's described here, but you're still using UI version 1, consider updating to UI version 2.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 When you use the WMS feature, you can choose to truncate dimensions that you aren't using. The system can then accept queries that exclude specific dimensions. This functionality helps increase query performance and reduce the amount of storage that's required for the feature. Unused dimensions are truncated by default when you sync WMS data from Supply Chain Management, unless one or more of the following dimensions are included in your [index hierarchy](inventory-visibility-power-platform.md#index):
 

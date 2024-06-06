@@ -1,17 +1,15 @@
 ---
 title: Use formulas as parameters
-description: This article explains how to use formulas with the Regression suite automation tool (RSAT) to modify test parameters.
+description: Learn about how to use formulas with the Regression suite automation tool (RSAT) to modify test parameters, including code examples.
 author: FrankDahl
-ms.date: 11/24/2023
+ms.author: fdahl
 ms.topic: conceptual
+ms.date: 11/24/2023
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: fdahl
 ms.search.validFrom: 2023-11-17
 ms.dyn365.ops.version: AX 7.0.0
 ---

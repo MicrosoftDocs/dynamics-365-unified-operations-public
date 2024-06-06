@@ -4,11 +4,8 @@
 title: Personnel management workspace
 description: This article describes the conceptual elements of the Personnel management workspace. 
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 05/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
@@ -28,9 +25,6 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Personnel management workspace
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

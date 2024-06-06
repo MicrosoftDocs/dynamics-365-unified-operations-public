@@ -26,7 +26,7 @@ Each data source configuration includes the following components:
 - Calculated measures
 
 > [!NOTE]
-> If you recently transitioned from UI version 1 to UI version 2, see the [Differences between Inventory Visibility UI version 1 and UI version 2 (preview)](#differences-between-v1-and-v2) section of this article to learn what has changed. 
+> If you recently transitioned from UI version 1 to UI version 2, see the [Differences between Inventory Visibility UI version 1 and UI version 2](#differences-between-v1-and-v2) section of this article to learn what has changed. 
 >
 > For new installations, we recommend that you use UI version 2 from the start. If you're still using UI version 1, we recommend that you test the new version and then [upgrade to UI version 2](inventory-visibility-ui-version-2.md) as soon as possible.
 
@@ -34,15 +34,9 @@ Each data source configuration includes the following components:
 
 Before you begin, install and set up the Inventory Visibility Add-in as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
-## <a name="differences-between-v1-and-v2"></a>Differences between Inventory Visibility UI version 1 and UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## <a name="differences-between-v1-and-v2"></a>Differences between Inventory Visibility UI version 1 and UI version 2
 
 The Inventory Visibility app in Microsoft Power Apps supports [two versions of the user interface](inventory-visibility-ui-version-2.md): UI version 1 and UI version 2. Each version uses a different and independent collection of configuration settings. Therefore, you must choose which version you prefer to use.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 When you're setting up data sources, UI version 2 differs from UI version 1 in the following ways:
 
@@ -62,15 +56,9 @@ Each data source represents a system that your data comes from. Example data sou
 > [!IMPORTANT]
 > When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
-### Add a data source in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+### Add a data source in UI version 2 
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To add a data source in UI version 2, follow these steps.
 
@@ -140,15 +128,9 @@ External systems can access Inventory Visibility through its RESTful APIs. For t
 
 By configuring a dimension mapping, you can send the external dimensions directly to Inventory Visibility. Inventory Visibility will then automatically convert external dimensions to base dimensions.
 
-### Add dimension mappings in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+### Add dimension mappings in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To add a dimension mapping in UI version 2, follow these steps.
 
@@ -209,15 +191,9 @@ Inventory Visibility provides a list of default physical measures that are mappe
 
 If your data source is Supply Chain Management, you don't have to recreate the default physical measures. However, for external data sources, you can create new physical measures as you require.
 
-### Add physical measures in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+### Add physical measures in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To add a physical measure in UI version 2, follow these steps.
 
@@ -263,15 +239,9 @@ You can use Inventory Visibility to query on both inventory physical measures an
 
 The configuration lets you define a set of calculated measure formulas that includes modifiers of addition or subtraction to get the total aggregated output quantity.
 
-### Add calculated measures in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+### Add calculated measures in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To add a calculated measure in UI version 2, follow these steps.
 

@@ -4,8 +4,6 @@ description: This article explains how to extend the POS Dual display view so th
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

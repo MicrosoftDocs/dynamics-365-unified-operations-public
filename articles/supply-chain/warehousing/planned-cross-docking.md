@@ -6,8 +6,6 @@ description: This article describes advanced planned cross-docking, where the in
 author: Mirzaab
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form:  WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking

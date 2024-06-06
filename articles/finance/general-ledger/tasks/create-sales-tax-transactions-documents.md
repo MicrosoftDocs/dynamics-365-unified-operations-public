@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create sales tax transactions on documents
-description: Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines. 
+description: Learn about how sales tax is calculated by providing a sales tax group and an item sales tax group on document lines, including a step-by-step process.
 author: twheeloc
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTrans   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: twheeloc    
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTrans 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create sales tax transactions on documents
 
 [!include [banner](../../includes/banner.md)]

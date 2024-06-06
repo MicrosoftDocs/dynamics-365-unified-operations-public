@@ -4,8 +4,6 @@ description: This article describes how to test data actions with mock data.
 author: samjarawan
 ms.date: 07/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

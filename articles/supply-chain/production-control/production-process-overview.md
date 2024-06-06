@@ -6,10 +6,12 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
 ms.topic: overview
-ms.date: 01/09/2023
+ms.date: 04/19/2024
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Production process overview
@@ -66,7 +68,7 @@ The following steps in the production life cycle can occur for all order types o
 1. **Ended** – Before production is ended, actual costs are calculated for the quantity that was produced. All estimated costs of material, labor, and overhead are reversed and replaced with actual costs. If you select the **End job** check box when you run the cost calculation, the production order status changes to **Ended**. This status prevents any additional costs from being posted to a completed production order.
 1. **Period closure** – Some cost accounting principles, such as periodic average, back-flush costing, FIFO, or LIFO, require periodic activities to close the inventory or financial period. Typically, the system tries to report all material and resource consumption, and also corrections of inventory and scrap, before the periods are closed. This reporting is typically done by using inventory movement journals or adjustment journals. The goal is to assess the economic performance of operating units per period. In some cases, when long-running production orders are used that span the financial reporting periods, production journals are used to report the production progress and resource consumption by the end of the period.
 
-## Additional resources
+## Next steps
 
 - [Production feedback](production-feedback.md)
 - [Product configuration models overview](../pim/product-configuration-models.md)

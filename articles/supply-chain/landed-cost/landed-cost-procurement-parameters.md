@@ -6,8 +6,6 @@ description: This article describes how to set up the relevant Procurement and s
 author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

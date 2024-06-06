@@ -6,8 +6,6 @@ description: This article provides an overview of the outbound process in Invent
 author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod:
-ms.technology:
 
 # optional metadata
 
@@ -17,7 +15,7 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: ["274363"]
+ms.custom:
 ms.collection: get-started
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global

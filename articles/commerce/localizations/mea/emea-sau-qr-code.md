@@ -4,8 +4,6 @@ description: This article provides an overview of the functionality for printing
 author: EvgenyPopovMBS
 ms.date: 02/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Saudi Arabia

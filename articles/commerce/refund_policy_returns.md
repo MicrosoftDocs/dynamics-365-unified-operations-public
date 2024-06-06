@@ -1,28 +1,23 @@
 ---
 title: Create and update a returns and refunds policy for a channel
-description: This article explains how to set up a returns and refunds policy for a channel.
+description: This article decribes how to set up a returns and refunds policy for a channel in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 07/13/2021
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-01-21
-ms.dyn365.ops.version: Retail 10.0.9 update
-ms.custom: 
-ms.search.industry: Retail
 ---
 
 # Create and update a returns and refunds policy for a channel
 
 [!include [banner](includes/banner.md)]
 
-The channel return policy in Dynamics 365 Commerce enables retailers to set enforcements on which payment tenders can be allowed for processing a return on a point of sale (POS) device.  
+This article decribes how to set up a returns and refunds policy for a channel in Microsoft Dynamics 365 Commerce.
 
-This article describes the steps to set up a returns and refunds policy for a channel.
+The channel return policy in Dynamics 365 Commerce enables retailers to set enforcements on which payment tenders can be allowed for processing a return on a point of sale (POS) device.  
 
 The scope of the policy is currently limited to setting the payment tenders that can be allowed for a channel. The "allowed" list is based on the payment methods used to make the purchase. For example:
 

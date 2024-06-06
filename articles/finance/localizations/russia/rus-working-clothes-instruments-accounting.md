@@ -1,18 +1,16 @@
 ---
 title: Working clothes/special rigging accounting (Russia)
-description: This article provides information about how to maintain working clothes and special rigging for Russia.
+description: Learn about how to maintain working clothes and special rigging for Russia, including an outline on working clothes and special rigging accounting.
 author: AdamTrukawka
-ms.date: 10/04/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/04/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
+ms.dyn365.ops.version: 8.1
 ---
 
 # Working clothes/special rigging accounting (Russia)

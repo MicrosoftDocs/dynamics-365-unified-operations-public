@@ -6,8 +6,6 @@ description: This article describes the options for operations scheduling. You c
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

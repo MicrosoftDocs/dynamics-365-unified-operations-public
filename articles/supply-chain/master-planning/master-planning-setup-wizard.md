@@ -6,8 +6,6 @@ description: This article describes how to run the master planning setup wizard 
 author: t-benebo
 ms.date: 10/21/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

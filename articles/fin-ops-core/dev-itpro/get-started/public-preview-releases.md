@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Service update availability
-description: This article provides information about the different release options.
+description: Learn about service update availability and the different release options, including an overview on targeted release schedules.
 author: hmahl
-ms.date: 03/18/2024
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: hmahl
+ms.topic: article
+ms.date: 03/18/2024
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: IT Pro 
+ms.search.region: Global
 ms.search.validFrom: 2017-10-31
+ms.search.form:
 ms.dyn365.ops.version: Platform update 11
-
 ---
 
 # Service update availability

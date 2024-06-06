@@ -6,8 +6,6 @@ description: This article describes the on-hand entries cleanup job, which helps
 author: perlynne
 ms.date: 04/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

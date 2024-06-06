@@ -4,8 +4,6 @@ description: This article explains how to use guided device activation for Store
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

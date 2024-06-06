@@ -1,12 +1,12 @@
 ---
 title: Archive customization (preview)
-description: This article describes how the archive feature in Microsoft Dynamics 365 Finance supports table customizations.
+description: Learn about how the archive feature in Microsoft Dynamics 365 Finance supports table customizations, including code examples.
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
 ms.topic: conceptual
 ms.date: 2/06/2024
 ms.custom:
+ms.reviewer: twheeloc
 
 ---
 # Archive customization (preview)

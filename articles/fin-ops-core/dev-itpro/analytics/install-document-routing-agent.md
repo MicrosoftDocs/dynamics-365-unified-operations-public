@@ -1,19 +1,17 @@
 ---
 title: Install the Document Routing Agent to enable network printing
-description: This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
-author: RichdiMSFT
-ms.date: 09/01/2022
+description: Learn how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/01/2022
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysCorpNetPrinterList
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
-ms.search.form: SysCorpNetPrinterList
 ---
 
 # Install the Document Routing Agent to enable network printing
@@ -30,6 +28,7 @@ This article describes how to install and configure the Document Routing Agent. 
 - The Microsoft Entra ID (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
 - The Document Routing Agent requires .NET 4.7.2 or later and Adobe Acrobat Reader 32-bit or 64-bit on the client.
 - Configure Adobe client print settings to prevent document scaling.
+- The person installing the Document Routing Agent and configuring printers needs to have the "Document routing client" security role.
 
 Network printers that are registered for applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
 
@@ -42,7 +41,7 @@ This article will help you with the following tasks:
 - Use administration pages to manage access to network printers.
 
 ## Install the Document Routing Agent
-Applications use the Document Routing Agent to manage the spooling of documents to network printer devices. You can obtain the client by using direct links that are embedded in the web application. Use the following procedure to download the application to your local computer. You will then be able to access both local and network printers that are connected to your computer, from a single deployment.
+Applications use the Document Routing Agent to manage the spooling of documents to network printer devices. You can obtain the client by using direct links that are embedded in the web application. Use the following procedure to download the application to your local computer. You will then be able to access both local and network printers that are connected to your computer, from a single deployment. Ensure the user installing the agent has the "Document routing client" security role. 
 
 1. Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
 2. On the **Options** tab, in the **Application** group, click **Download document routing agent installer**.

@@ -6,8 +6,6 @@ description: This procedure demonstrates how to efficiently create quotations of
 author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

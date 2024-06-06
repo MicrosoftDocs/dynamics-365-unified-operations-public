@@ -6,8 +6,6 @@ description: This procedure shows how to start a production order on the shop fl
 author: johanhoffmann
 ms.date: 11/11/2016
 ms.topic: how-to
-ms.prod:  
-ms.technology:  
 
 # optional metadata
 

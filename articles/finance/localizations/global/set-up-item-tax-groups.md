@@ -1,26 +1,16 @@
 ---
-# required metadata 
-
 title: Set up item tax groups
-description: This article explains how to set up item tax groups in the Tax Calculation service. 
+description: Learn how to set up item tax groups in the Tax Calculation service, including overviews and processes for setting up and configuring tax groups. 
 author: wangchen
-ms.date: 02/09/2024
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
-
-# optional metadata 
-
-ms.search.form: TaxTable, TaxData   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: wangchen
-ms.search.validFrom: 2021-10-26 
+ms.topic: how-to
+ms.date: 02/09/2024
+ms.custom: 
+ms.reviewer: johnmichalak    
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2021-10-26
+ms.search.form: TaxTable, TaxData
 ms.dyn365.ops.version: Version 10.0.21 
 ---
 

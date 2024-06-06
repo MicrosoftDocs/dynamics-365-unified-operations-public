@@ -6,12 +6,10 @@ description: This article describes how to manage the process of cross-docking m
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
-ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
+ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate, WHSOutboundLoadPlanningWorkbench
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -101,7 +99,7 @@ After a product is reported as finished at the production line it is transferred
 4.  Set up loads so that they are created automatically for transfer orders. In the warehouse parameters, set up loads so that they are created automatically when transfer orders are created. A load is a prerequisite for making the transfer order eligible for cross-docking.
 5.  Set up the item load mapping. Go to the **Item load mapping** page, and set up a standard load template for the **CarAudio** item group. This mapping will automatically insert the load template on the load when the transfer order is created.
 6.  Create a transfer order. Create the transfer order for item number L0101. Quantity = 20.
-7.  Release the transfer order from the load planning workbench. On the **Ship** tab, select the menu item for the load planning workbench and on the **Release** menu of the load line, select **Release to warehouse**. An open wave line of type **Transfer issue** now exists for the transfer order.
+7.  Release the transfer order from the outbound load planning workbench. On the **Ship** tab, select the menu item for the outbound load planning workbench and on the **Release** menu of the load line, select **Release to warehouse**. An open wave line of type **Transfer issue** now exists for the transfer order.
 8.  Create a production order. Go to the **Production order** list page, and create a production order for product L0101. Quantity = 20. Estimate and start the production order. Note that the **Post picking list now** field remains set to **No**.
 9.  Report as finished from the mobile device. Go to the mobile device portal and select menu item **Report as finished and put away**. Now report as finished L0101 from the handheld device. Quantity = 10. Note that the put location is **BAYDOOR**. This location is found from the **Transfer issue** location directive for the **Put** work order type. Also notice that work of the type **Transfer issue** has been created and completed. Go to the transfer order work details to verify the work.
 10. Now report additional 10 pieces from the mobile device. Note that the put location again is **BAYDOOR**. Also notice that a new work of type **Transfer issue** has been created for the 10 pieces.
@@ -113,9 +111,9 @@ After a product is reported as finished at the production line it is transferred
 
 1.  Change the cross-docking policy. Change the cross-docking policy that you created in scenario 1 by selecting the **Cross docking demand requires location** check box.
 2.  Create a new transfer order.
-3.  Open the **Load planning workbench**.
-4.  From the load planning workbench, go to the **Loads** section, and select **Appointment schedule** on the **Transportation** menu to create a new appointment schedule. Note that the appointment schedule has a reference to the transfer order in the **Order number** field. In the **Planned start date/time at location** field, you can set the date and time for the appointment. This date and time will be used when cross-docking demand is prioritized during the cross-docking process. The date and time that you set in this field will update the **Scheduled load shipping date and time** field on the corresponding load. The location on the **Shipping details** FastTab determines the location that the transfer order is shipped on.
-5.  On the **Load planning workbench** release to the warehouse.
+3.  Open the **Outbound load planning workbench**.
+4.  From the outbound load planning workbench, go to the **Loads** section, and select **Appointment schedule** on the **Transportation** menu to create a new appointment schedule. Note that the appointment schedule has a reference to the transfer order in the **Order number** field. In the **Planned start date/time at location** field, you can set the date and time for the appointment. This date and time will be used when cross-docking demand is prioritized during the cross-docking process. The date and time that you set in this field will update the **Scheduled load shipping date and time** field on the corresponding load. The location on the **Shipping details** FastTab determines the location that the transfer order is shipped on.
+5.  On the **Outbound load planning workbench** release to the warehouse.
 6.  Create a production order for item number **L0101**, and set the status to **Started**, with a quantity of 20.
 7.  Report as finished from the mobile device.
 8.  Go to the mobile device portal, and select the **Report as finished and put away** menu item.

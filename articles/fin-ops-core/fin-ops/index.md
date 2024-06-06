@@ -4,8 +4,6 @@ description: Documentation for finance and operations apps.
 author: josaw1
 ms.date: 04/13/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

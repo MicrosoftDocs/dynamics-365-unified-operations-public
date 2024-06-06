@@ -1,12 +1,13 @@
 ---
 title: X++ syntax
-description: This article contains the syntax reference for X++.
+description: Learn about the syntax reference for X++, including a table that outlines descriptions for various reserved keywords.
 author: josaw1
-ms.date: 07/22/2019
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 07/22/2019
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

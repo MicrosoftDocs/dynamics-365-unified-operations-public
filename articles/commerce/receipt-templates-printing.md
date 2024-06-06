@@ -6,9 +6,6 @@ description: This article describes how to modify form layouts to control how re
 author: BrianShook
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailFormLayout
@@ -64,7 +61,7 @@ Use the form layout designer to graphically create the layout of the form docume
 1. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Receipt formats**.
 2. On the **Receipt format** page, select a form layout, and then click **Designer**.
 3. Click **Run** to start to install the Commerce designer host.
-4. On the Notification bar that appears at the bottom of the Internet Explorer window, click **Open** to start to install the one-click designer. (The Notification bar might appear in a different location in other browsers.) The progress indicator shows the progress of the installation process.
+4. On the notification bar that appears at the bottom of the Microsoft Edge window, click **Open** to start to install the one-click designer. (The notification bar might appear in a different location in other browsers.) The progress indicator shows the progress of the installation process.
 5. After the installation is completed, enter your Commerce user name and password, and then click **Sign in** to start the designer.
 6. After your credentials are validated and the designer starts, you can start to design the receipt format or modify an existing format.
 7. To create the elements of the form, select the **Header**, **Lines**, or **Footer** section, and then drag an element from that section to the workspace. Most elements contain variables that are automatically populated with data from the database. Other elements, such as **Text**, let you print custom text on the receipt.

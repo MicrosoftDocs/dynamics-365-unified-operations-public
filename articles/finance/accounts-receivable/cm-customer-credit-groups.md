@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Customer credit groups
-description: This article provides information about customer credit groups.
+description: Learn about customer credit groups, including a step-by-step process that outlines how to set up customer credit groups.
 author: JodiChristiansen
-ms.date: 04/14/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 04/14/2020
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
-
 ---
 
 # Customer credit groups

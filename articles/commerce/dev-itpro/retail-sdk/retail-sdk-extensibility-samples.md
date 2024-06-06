@@ -4,8 +4,6 @@ description: The Retail SDK includes extensibility samples. These samples are a 
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

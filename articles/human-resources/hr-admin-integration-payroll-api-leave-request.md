@@ -6,9 +6,6 @@ description: This article provides details and an example query for the leave re
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Leave request
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

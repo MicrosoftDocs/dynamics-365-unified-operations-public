@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Address books FAQ
-description: This article provides answers to frequently asked questions related to address books. 
-author: msftbrking 
-ms.date: 03/13/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirPartyCheckDuplicate, DirPartyTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
-ms.search.region: Global
-# ms.search.industry: 
+description: Access answers to frequently asked questions related to address books, including questions about duplicate records and bulk adding and deleting party records. 
+author: msftbrking
 ms.author: brking
+ms.topic: article
+ms.date: 03/13/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 ---
 
 # Address books FAQ

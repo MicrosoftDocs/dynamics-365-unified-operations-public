@@ -1,15 +1,13 @@
 ---
 title: Tax invoices
-description: This article explains how to set up tax invoices and when they are generated.
+description: Learn how to set up tax invoices and when they are generated, including outlines on preliminary setup and how to work with tax invoices.
 author: AdamTrukawka
-ms.date: 04/07/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/07/2021
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.search.scope: 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Generate consolidated financial statements
-description: This article describes the various scenarios where you might generate consolidated financial statements.
+description: Learn about the various scenarios where you might generate consolidated financial statements, including an outline on consolidations across legal entities.
 author: aprilolson
-ms.date: 07/09/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 07/09/2018
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-5-31
+ms.search.form:
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Generate consolidated financial statements

@@ -4,8 +4,6 @@ description: This article explains how to configure a domain name for a Microsof
 author: josaw1
 ms.date: 09/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: global

@@ -6,8 +6,6 @@ description: This article focuses on the setup of a mobile device menu item.
 author: Mirzaab
 ms.date: 08/16/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

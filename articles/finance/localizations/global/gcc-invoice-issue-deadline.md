@@ -1,18 +1,16 @@
 ---
 title: Invoice issue deadline (GBL)
-description: This article provides information about how to calculate the due dates for issuing customer invoices.
+description: Learn about how to calculate the due dates for issuing customer invoices, including prerequisites and a step-by-step process for setup.
 author: AdamTrukawka
-ms.date: 10/06/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: GBL
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/06/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: GBL
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: 10.0.13
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Invoice issue deadline (GBL)

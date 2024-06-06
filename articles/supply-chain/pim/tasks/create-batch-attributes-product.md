@@ -6,8 +6,6 @@ description: This procedure shows how to create a batch attribute, assign defaul
 author: t-benebo
 ms.date: 11/14/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

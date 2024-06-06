@@ -6,9 +6,6 @@ description: This article provides an example of a business event.
 author: twheeloc
 ms.date: 03/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -30,8 +27,6 @@ ms.dyn365.ops.version: Human Resources
 # Business event example
 
 This article provides an example of a business event.
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 ## Set up a flow for assigned task notification
 

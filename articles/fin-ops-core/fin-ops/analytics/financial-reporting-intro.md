@@ -1,20 +1,18 @@
 ---
 title: Financial reporting
-description: Financial reporting allows financial and business professionals to create, maintain, deploy, and view financial statements.
+description: Learn about financial reporting, which allows financial and business professionals to create, maintain, deploy, and view financial statements.
 author: aprilolson
-ms.date: 12/01/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.topic: article
+ms.date: 12/01/2017
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-11-30
 ms.search.form: FinanicalReportingSetup
+ms.dyn365.ops.version: Version 1611
+ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ---
 
 # Financial reporting

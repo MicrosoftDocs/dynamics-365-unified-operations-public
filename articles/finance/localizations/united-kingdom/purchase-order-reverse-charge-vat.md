@@ -1,21 +1,20 @@
 ---
 title: GB-00002 Create a purchase order that includes items subject to reverse charge VAT
-description: This task walks you through creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom.
+description: Learn about creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom, including a step-by-step process.
 author: EricWangChen
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: United Kingdom
 ms.author: wangchen
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - PurchTable, PurchCreateOrder, TaxTmpWorkTrans
   - DefaultDashboard
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # GB-00002 Create a purchase order that includes items subject to reverse charge VAT
 
 [!include [banner](../../includes/banner.md)]

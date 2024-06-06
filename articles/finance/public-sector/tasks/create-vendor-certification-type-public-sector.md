@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a vendor certification type in the public sector
-description: This article provides information about how to create and assign vendor certification types in the public sector. 
+description: Learn about how to create and assign vendor certification types in the public sector, including an outline and step-by-step process. 
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendCertificationType   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendCertificationType  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a vendor certification type in the public sector
 
 [!include [banner](../../includes/banner.md)]

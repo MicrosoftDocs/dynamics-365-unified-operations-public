@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Monitor API throttling
-description: This article provides information about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
+description: Learn about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
 author: jaredha
-ms.date: 08/25/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jaredha
+ms.topic: article
+ms.date: 08/25/2022
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2022-04-16
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 52
-
 ---
 
 # Monitor API throttling

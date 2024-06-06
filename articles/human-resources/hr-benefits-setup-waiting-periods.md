@@ -6,9 +6,6 @@ description: In Microsoft Dynamics 365 Human Resources, waiting days establish a
 author: twheeloc  
 ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

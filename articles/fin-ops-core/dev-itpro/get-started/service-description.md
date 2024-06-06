@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Service description for finance and operations apps
-description: This article provides the service description for finance and operations apps.
+description: Learn about the service description for finance and operations apps, including an overview on operating models.
 author: tomhig
-ms.date: 11/06/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: whigginb
+ms.topic: article
+ms.date: 11/06/2023
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-09-03
-
 ---
 
 # Service description for finance and operations apps

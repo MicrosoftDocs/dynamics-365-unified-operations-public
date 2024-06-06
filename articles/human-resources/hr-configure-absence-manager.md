@@ -6,9 +6,6 @@ description: This article explains how to set up the Absence manager role for ma
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace, LeaveAbsenceManager

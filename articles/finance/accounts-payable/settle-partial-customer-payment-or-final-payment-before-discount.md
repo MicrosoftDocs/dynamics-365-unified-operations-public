@@ -1,19 +1,17 @@
 ---
 title: Settle partial and final payments in full before the discount date
-description: This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about various scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 10/24/2022
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 ---
 
 # Settle partial and final payments in full before the discount date

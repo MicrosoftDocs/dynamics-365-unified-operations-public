@@ -7,9 +7,6 @@ description: This article lists issues that can occur during the Microsoft Dynam
 author: twheeloc
 ms.date: 02/17/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

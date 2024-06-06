@@ -6,8 +6,6 @@ description: This procedure focuses on moving planned process kanban jobs to a d
 author: johanhoffmann
 ms.date: 11/07/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

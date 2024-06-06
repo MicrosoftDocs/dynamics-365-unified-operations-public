@@ -6,8 +6,6 @@ description: This procedure shows you how to create a purchase return order by u
 author: Henrikan
 ms.date: 06/25/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -4,8 +4,6 @@ description: This article describes the e-Commerce Platform SDK.
 author: josaw1
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

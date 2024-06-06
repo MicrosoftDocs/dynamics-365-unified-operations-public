@@ -6,8 +6,6 @@ description: This article demonstrates how to create a delivery schedule for a p
 author: Henrikan
 ms.date: 08/01/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

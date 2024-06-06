@@ -6,8 +6,6 @@ description: This article explains how to keep track of products that are identi
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

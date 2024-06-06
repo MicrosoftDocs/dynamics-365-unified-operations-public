@@ -7,8 +7,6 @@ author: Henrikan
 ms.author: henrikan
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

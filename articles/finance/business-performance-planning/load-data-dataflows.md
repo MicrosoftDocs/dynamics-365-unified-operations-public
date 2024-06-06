@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Load data into Business performance planning using dataflows
-description: This article describes how to use dataflows to load data into the Business performance planning application.
+description: Learn how to use dataflows to load data into the Business performance planning application, including a process for populating dimensions and cubes.
 author: ShielaSogge
-ms.date: 12/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 12/13/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: Human Resources
-
 ---
+
 # Load data into Business performance planning using dataflows
 
 [!include [banner](../includes/banner.md)]

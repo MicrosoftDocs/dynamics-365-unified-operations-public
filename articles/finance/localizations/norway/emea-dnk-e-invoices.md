@@ -1,18 +1,16 @@
 ---
 title: Customer electronic invoices in Denmark
-description: This article explains how to set up and process electronic invoices in Denmark.
+description: Learn how to set up and process electronic invoices in Denmark, including prerequisites and anoutline on importing electronic reporting configurations.
 author: mrolecki
-ms.date: 12/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Norway
 ms.author: mrolecki
+ms.topic: article
+ms.date: 12/20/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2021-01-01
-ms.dyn365.ops.version: 10.0.21
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Customer electronic invoices in Denmark
@@ -92,7 +90,7 @@ Follow these steps to configure methods of payment.
 
 When you generate electronic invoices in OIOUBL format, the tax information in the output XML file must be hierarchically structured in a specific way.
 
-The top level of the hierarchy is **Tax Scheme**. For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). 
+The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears to be broken For the official list of tax schemes that are applicable to the OIOUBL format, see [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). -->
 
 The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 

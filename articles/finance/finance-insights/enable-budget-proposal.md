@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Enable Budget proposal
-description: This article explains how to configure the Budget proposal feature in Finance Insights.
-author: ShivamPandey-msft
-ms.date: 10/11/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to configure the Budget proposal feature in Finance Insights by navigating through the Budgeting widget and selecting the Enable feature option.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 10/11/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-24
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.13
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
+
 # Enable Budget proposal
 
 [!include [banner](../includes/banner.md)]

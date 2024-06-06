@@ -4,8 +4,6 @@ description: This article explains how to create and select page layouts in Micr
 author: josaw1
 ms.date: 04/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

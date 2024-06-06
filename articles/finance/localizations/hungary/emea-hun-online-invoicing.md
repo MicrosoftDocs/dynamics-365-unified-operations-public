@@ -1,18 +1,16 @@
 ---
 title: Online invoicing system
-description: This article describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
+description: Learn how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: AdamTrukawka
-ms.date: 09/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Hungary
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/20/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Hungary
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 10.0.0
 ms.search.form: AssetParameters
+ms.dyn365.ops.version: 10.0.0
 ---
 
 # Online invoicing system

@@ -4,8 +4,6 @@ description: This article describes how and when to use modules in Microsoft Dyn
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

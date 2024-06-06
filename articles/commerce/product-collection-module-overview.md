@@ -4,8 +4,6 @@ description: This article provides an overview of product collection modules in 
 author: v-chgri
 ms.date: 07/18/2023
 ms.topic: overview
-ms.prod:
-ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

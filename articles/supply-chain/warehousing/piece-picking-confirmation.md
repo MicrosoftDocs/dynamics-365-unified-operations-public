@@ -6,8 +6,6 @@ description: Piece picking allows you to confirm each piece of inventory through
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

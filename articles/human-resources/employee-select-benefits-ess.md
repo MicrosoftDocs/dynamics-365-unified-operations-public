@@ -5,9 +5,6 @@ description: This article describes how employees can select or update their ben
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: EssWorkspace, 

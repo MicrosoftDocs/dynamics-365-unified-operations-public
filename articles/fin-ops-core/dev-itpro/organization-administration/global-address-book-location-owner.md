@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Global address book and location owners
-description: This article describes location owners and explains how to change the owner in the global address book.
+description: Learn about location owners and explains how to change the owner in the global address book, including an overview on assigning location ownership.
 author: jaredha
-ms.date: 08/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirPartyTable, DirPartyTableRoles
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jaredha
+ms.topic: article
+ms.date: 08/16/2021
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-08-16
+ms.search.form: DirPartyTable, DirPartyTableRoles
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Global address book and location owners

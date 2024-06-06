@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Fixed assets integration
-description: Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
+description: Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also integrate purchase orders.
 author: moaamer
-ms.date: 03/05/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 03/05/2019
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ---
 
 # Fixed assets integration

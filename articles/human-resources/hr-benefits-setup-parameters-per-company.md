@@ -5,8 +5,6 @@ description: This article describes how to configure parameters for Benefits man
 author: twheeloc
 ms.date: 8/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 # optional metadata
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 

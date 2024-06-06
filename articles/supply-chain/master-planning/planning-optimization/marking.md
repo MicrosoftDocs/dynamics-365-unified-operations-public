@@ -6,8 +6,6 @@ description: This article provides information about the options that are availa
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

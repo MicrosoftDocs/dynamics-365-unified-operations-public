@@ -4,8 +4,6 @@ description: This article describes how to provision Microsoft Teams by using or
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

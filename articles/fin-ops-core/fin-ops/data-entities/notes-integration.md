@@ -1,13 +1,15 @@
 ---
 title: Note integration
-description: This article describes the integration of note data in dual-write.
+description: Learn about the integration of note data in dual-write, including an outline on creating a note in a customer engagement app.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 05/20/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 
@@ -15,22 +17,20 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-
 During business processes, Microsoft Dynamics 365 users often gather information about their customers. This information is recorded as activities and notes. This article describes the integration of note data in dual-write.
 
 Customer information can be classified in the following ways:
 
 + **Actionable information that a Dynamics 365 user handles on behalf of a customer** – For example, Contoso (a Dynamics 365 user) is conducting a game show. One of Contoso's customers (a customer) wants to attend the game show. The customer asks a Contoso employee to book a slot in the game show for them. The booking occurs in Contoso's event attendee's calendar.
 + **Actionable information for a Dynamics 365 user** – For example, a customer who is purchasing a Surface unit enters special instructions that indicate that the device should be gift wrapped before delivery. These instructions are actionable information that should be handled by the Contoso employee who is responsible for packaging.
-+ **Non-actionable information** – For example, a customer visits the Contoso store and, during their conversation with a store associate, expresses interest in *Halo* games and gaming accessories. The store associate makes a note of this information. The product recommendations engine then uses it to make recommendations to the customer.
++ **Nonactionable information** – For example, a customer visits the Contoso store and, during their conversation with a store associate, expresses interest in *Halo* games and gaming accessories. The store associate makes a note of this information. The product recommendations engine then uses it to make recommendations to the customer.
 
-In general, actionable information is captured as *activities* in finance and operations apps and customer engagement apps. Non-actionable information is captured as *notes* in finance and operations apps, and as *annotations* in customer engagement apps.
+In general, actionable information is captured as *activities* in finance and operations apps and customer engagement apps. Nonactionable information is captured as *notes* in finance and operations apps, and as *annotations* in customer engagement apps.
 
 > [!TIP]
-> Although notes are intended for non-actionable information, the apps won't prevent you from using them to store and handle actionable information if you want to use them in that way.
+> Although notes are intended for nonactionable information, the apps won't prevent you from using them to store and handle actionable information if you want to use them in that way.
 
-Microsoft is currently releasing functionality for note integration. (Functionality for activity integration will be released later.) Note integration is available for customers, vendors, sales orders, and purchase orders.
+Microsoft is currently releasing functionality for note integration. (Functionality for activity integration will release later.) Note integration is available for customers, vendors, sales orders, and purchase orders.
 
 ## Create a note in a customer engagement app
 
@@ -61,7 +61,7 @@ Any updates to the note are synced back and forth between the finance and operat
 
 ## Create a note in a finance and operations app
 
-You can also create a note in a finance and operations app, and it will be synced to a customer engagement app.
+You can also create a note in a finance and operations app, and it will sync to a customer engagement app.
 
 To create a note in a finance and operations app and then sync it to a customer engagement app, follow these steps.
 
@@ -77,7 +77,7 @@ To create a note in a finance and operations app and then sync it to a customer 
 
     ![New note on the timeline in the customer engagement app.](../../dev-itpro/data-entities/dual-write/media/notes-fo-3.png)
 
-You can classify a note as either internal or external.
+You can classify a note as either internal, or external.
 
 - In the finance and operations app, on the **Attachments** page, open the note, and then, in the **Restriction** field, select **Internal** or **External**.
 
@@ -104,6 +104,9 @@ You can also create a URL.
 
 Note integration includes a collection of table maps that work together during data interaction, as shown in the following table.
 
+> [!NOTE]
+> These templates are compatible with live sync only, and currently do not support initial sync.
+
 | Finance and operations app | Customer engagement app | Description |
 |----------------------------|-------------------------|-------------|
 | [Customer Attachments](../../dev-itpro/data-entities/dual-write/mapping-reference.md#230) | Annotations | Businesses that use plain text and URLs to capture customer-specific information (for both organizations and persons). |
@@ -113,7 +116,7 @@ Note integration includes a collection of table maps that work together during d
 
 ## Limitations
 
-Once you install the notes solution, you cannot uninstall it. 
+Once you install the notes solution, you can't uninstall it. 
 
 For more information, see [Dual-write mapping reference](../../dev-itpro/data-entities/dual-write/mapping-reference.md).
 

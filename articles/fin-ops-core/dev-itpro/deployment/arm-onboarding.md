@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Complete the Azure Resource Manager onboarding process
-description: This article explains how to complete the Azure Resource Manager onboarding process for your connectors. 
+description: Learn how to complete the Azure Resource Manager onboarding process for your connectors, including known limitations. 
 author: saurabhsurana
-ms.date: 03/15/2022
+ms.author: sasurana
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 03/15/2022
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sasurana
 ms.search.validFrom: 2016-08-30
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 2
-
 ---
 
 # Complete the Azure Resource Manager onboarding process

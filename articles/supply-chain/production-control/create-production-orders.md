@@ -6,8 +6,6 @@ description: When a production order is created, a request is initiated to start
 author: johanhoffmann
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: The Purchasing cXML Enhancements feature builds on the existing ext
 author: Henrikan
 ms.date: 08/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

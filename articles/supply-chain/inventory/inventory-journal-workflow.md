@@ -6,8 +6,6 @@ description: This article describes how to set up and use inventory journal appr
 author: yufeihuang
 ms.date: 08/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

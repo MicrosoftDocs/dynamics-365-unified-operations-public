@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Fixed asset revaluation groups
-description: This article provides information about fixed asset revaluation groups for Spain.
+description: Learn about fixed asset revaluation groups for Spain, including an outline on revaluation group setup and a table that defines various fields.
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetRevaluationGroup, AssetBookTable
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-11-30
+ms.search.form: AssetRevaluationGroup, AssetBookTable
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Fixed asset revaluation groups

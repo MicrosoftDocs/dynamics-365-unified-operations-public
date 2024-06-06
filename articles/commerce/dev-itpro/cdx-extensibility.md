@@ -4,8 +4,6 @@ description: This article explains how you can extend the Commerce initializatio
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

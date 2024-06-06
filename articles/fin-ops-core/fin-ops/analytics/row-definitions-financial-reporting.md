@@ -1,19 +1,17 @@
 ---
 title: Row definitions in financial report designer
-description: A row definition is a report component, or building block, that specifies the contents of each row on a financial report.
+description: Learn about row definitions in financial report designer, including outlines on creating and opening row definitions.
 author: aprilolson
-ms.date: 11/22/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: aolson
+ms.topic: article
+ms.date: 11/22/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
-ms.search.form: FinancialReports
 ---
 
 # Row definitions in financial report designer

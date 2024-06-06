@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Configure approval processes in a workflow
-description: Use the following procedure to configure the properties of the approval process.
+description: Learn how to configure the approval processes in a workflow, including outlines on naming the approval process and specifying when notifications are sent.
 author: ChrisGarty
-ms.date: 02/08/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 02/08/2024
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ---
 
 # Configure approval processes in a workflow

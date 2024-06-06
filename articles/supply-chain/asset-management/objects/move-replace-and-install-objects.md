@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Move, replace, and install assets
-description: This article explains how to move, replace, and install assets in Asset Management.
+description: Learn how to move, replace, and install assets in Asset Management, including outlines and step-by-step processes for each type of asset.
 author: johanhoffmann
-ms.date: 06/26/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetObjectReplace, EntAssetObjectInstallLookup, EntAssetObjectMove, EntAssetObjectTableEditSubObjects
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 06/26/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: EntAssetObjectReplace, EntAssetObjectInstallLookup, EntAssetObjectMove, EntAssetObjectTableEditSubObjects
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Move, replace, and install assets

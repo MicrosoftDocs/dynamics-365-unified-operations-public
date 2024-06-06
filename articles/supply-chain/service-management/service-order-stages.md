@@ -3,11 +3,9 @@
 
 title: Service order stages  
 description: By defining the stages for a service order and assigning them to workers, you control the flow of a service order through the tasks that various people perform in the service organization.
-author: sorenva
+author: ChristianRytt
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

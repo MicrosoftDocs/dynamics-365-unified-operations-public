@@ -6,8 +6,6 @@ description: This procedure shows how benefits can expire or be extended, and ma
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -28,7 +26,6 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 # Manage benefit expiration dates
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

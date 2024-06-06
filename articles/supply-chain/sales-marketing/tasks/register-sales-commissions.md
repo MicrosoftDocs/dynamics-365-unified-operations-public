@@ -6,8 +6,6 @@ description: This article explains how sales commissions are calculated and regi
 author: Henrikan
 ms.date: 08/06/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

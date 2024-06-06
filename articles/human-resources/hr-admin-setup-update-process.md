@@ -6,9 +6,6 @@ description: Microsoft Dynamics 365 Human Resources is a true software as a serv
 author: twheeloc
 ms.date: 12/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

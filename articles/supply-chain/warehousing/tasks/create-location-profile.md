@@ -6,8 +6,6 @@ description: This article explains how to create a location profile in Dynamics 
 author: Mirzaab
 ms.date: 07/29/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

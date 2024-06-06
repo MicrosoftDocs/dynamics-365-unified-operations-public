@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Restrict editing of accounting distributions on invoices
-description: This article explains how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice.
+description: Learn how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice.
 author: v-kiarnd
-ms.date: 10/14/2020
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 10/14/2020
+ms.custom:
 ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
-ms.search.industry: public sector
-ms.author: v-kiarnd
 ms.search.validFrom: 2020-10-15
+ms.search.form:
 ms.dyn365.ops.version: 10.0.15
-
 ---
 
 # Restrict editing of accounting distributions on invoices

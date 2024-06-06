@@ -1,33 +1,21 @@
 --- 
-# required metadata 
- 
 title: Enter project timesheets
-description: This procedure lets you create a timesheet by using an empty timesheet form. 
+description: Learn about how to enter project timesheets, including a step-by-step process that details how to create timesheets.
 author: twheeloc
-ms.date: 01/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form: HcmPersonnelManagementWorkspace
+ms.author: anbichse
+ms.topic: how-to
+ms.date: 04/10/2024
+ms.custom:
+ms.reviewer: twheeloc  
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: anbichse
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: HcmPersonnelManagementWorkspace
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Enter project timesheets
-
-
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 This procedure lets you create a timesheet by using an empty timesheet page. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments on the **My favorites** page. By default, the **All timesheets** list page shows all your timesheets for the current period. You can use the **Show** field on the **My timesheets** page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The **USSI** demo data company was used to create this procedure.
 

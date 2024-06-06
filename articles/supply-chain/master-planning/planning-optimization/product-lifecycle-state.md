@@ -6,8 +6,6 @@ description: This article explains how to exclude products based on their lifecy
 author: t-benebo
 ms.date: 11/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

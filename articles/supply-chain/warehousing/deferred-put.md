@@ -6,8 +6,6 @@ description: This article describes the functionality that makes deferred proces
 author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask

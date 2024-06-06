@@ -4,8 +4,6 @@ description: This article covers extended warranties and describes how to create
 author: josaw1
 ms.date: 02/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

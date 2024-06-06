@@ -6,9 +6,6 @@ description: You can enable employees to buy and sell leave in Dynamics 365 Huma
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeaveBuySellPolicy, LeavePlanFormPart, LeaveAbsenceWorkspace

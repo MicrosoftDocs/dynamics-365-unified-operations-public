@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Vendor transactions list page
-description: This article provides information about the Vendor transactions list page for Microsoft Dynamics 365 Finance.
+description: Learn about the Vendor transactions list page for Microsoft Dynamics 365 Finance, including outlines on settlements and transaction filters.
 author: sunfzam
-ms.date: 08/24/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  VendTrans
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 08/24/2018
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global 
 ms.search.validFrom: 2018-10-31
+ms.search.form:  VendTrans
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Vendor transactions list page

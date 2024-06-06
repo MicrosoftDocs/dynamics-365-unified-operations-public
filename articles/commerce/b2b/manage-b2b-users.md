@@ -4,8 +4,6 @@ description: This article describes how to add, delete, and edit business partne
 author: josaw1
 ms.date: 11/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

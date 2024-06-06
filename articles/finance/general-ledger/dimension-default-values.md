@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Default financial dimensions on financial journals 
-description: This article describes the rules that define how financial dimension values are set on transactions that are entered through financial journals. It also includes details for scenarios where fixed dimensions are used.
+description: Learn about the rules that define how financial dimension values are set on transactions that are entered through financial journals.
 author: kweekley
-ms.date: 09/04/2021
-ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransDaily, LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, LedgerJournalTransCustPaym
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: conceptual
+ms.date: 09/04/2021
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-12-14
+ms.search.form: LedgerJournalTransDaily, LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, LedgerJournalTransCustPaym
 ms.dyn365.ops.version: 10.0.17
-
 ---
 
 # Default financial dimensions on financial journals

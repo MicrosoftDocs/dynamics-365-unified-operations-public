@@ -4,7 +4,7 @@ description: This article describes the warehouse handling process for inbound l
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench
 ms.topic: how-to
 ms.date: 08/30/2023
 audience: Application User
@@ -295,8 +295,8 @@ In this procedure, you will manually create a purchase order and an associated l
     - **Quantity:** *10*
 
 1. On the Action Pane, on the **Purchase** tab, select **Actions \> Confirm**. The order status is now *Confirmed*.
-1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Load planning workbench**.
-1. On the **Load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
+1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Inbound load planning workbench**.
+1. On the **Inbound load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
 1. In the **Load template assignment** dialog box, set the **Load template ID** field to *20' Container*.
 1. Select **OK** to close the dialog box and return to the workbench.
 1. In the **Loads** section, select **Load ID** to open the newly created load.
@@ -397,16 +397,16 @@ You will also learn how to set the purchase order line so that you can receive a
 
 1. On the **Line details** FastTab, on the **Delivery** tab, set the **Overdelivery** field to *20*.
 1. On the Action Pane, on the **Purchase** tab, select **Actions \> Confirm**. The order status is now *Confirmed*.
-1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Load planning workbench**.
-1. On the **Load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
+1. On the Action Pane, on the **Warehouse** tab, select **Actions \> Inbound load planning workbench**.
+1. On the **Inbound load planning workbench** page, on the Action Pane, on the **Supply and demand** tab, select **Add \> To new load**.
 1. In the **Load template assignment** dialog box, set the **Load template ID** field to *20' Container*. On the **Details** tab, change the **Quantity** value from *10* to *5* to partially add the purchase order line quantity.
 1. Select **OK** to apply your settings and close the dialog box.
 1. Repeat steps 8 through 10 to create a second load. This time, the **Quantity** field should already be set to *5*.
-1. On the **Load planning workbench** page, in the **Loads** grid, select the **Load ID** value for the first load that you created. The **Load details** page appears and shows the selected load. Follow these steps:
+1. On the **Inbound load planning workbench** page, in the **Loads** grid, select the **Load ID** value for the first load that you created. The **Load details** page appears and shows the selected load. Follow these steps:
 
     1. On the Action Pane, on the **Ship and receive** tab, select **Confirm \> Inbound shipment**.
     1. Notice that the **Load status** value has changed to *Shipped*.
-    1. Select the close button to return to the **Load planning workbench** page.
+    1. Select the close button to return to the **Inbound load planning workbench** page.
 
 1. Repeat the previous step for the second load that you created.
 1. Make a note of the two **Load ID** values that appear in the **Loads** grid.

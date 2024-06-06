@@ -4,8 +4,6 @@ description: This article provides information about the accessibility features 
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

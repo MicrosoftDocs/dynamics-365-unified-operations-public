@@ -6,8 +6,6 @@ description: This article shows how to set up Transportation management modes an
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

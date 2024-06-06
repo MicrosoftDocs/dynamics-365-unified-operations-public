@@ -6,9 +6,6 @@ description: This article describes the Person screening entity for Dynamics 365
 author: jaredha
 ms.date: 12/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Person screening
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -6,9 +6,6 @@ description: This article explains how to set up tasks in Task management in Mic
 author: twheeloc
 ms.date: 10/12/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -28,7 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up tasks in Task management
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 In versions of Microsoft Dynamics 365 Human Resources before version 10.0.30, users who wanted to edit a task had to individually edit that task on each checklist that contained it. However, as of Human Resources version 10.0.30, users can select how edited tasks are handled. If a task that is being edited is on a checklist, the **Enable task management upgrade** option must be selected on the **Task management** tab of the **Human resources shared parameters** page to enable the checklist to use the edited task.
 

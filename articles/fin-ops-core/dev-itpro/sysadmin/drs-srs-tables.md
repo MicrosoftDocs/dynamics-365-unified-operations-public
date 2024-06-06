@@ -1,19 +1,17 @@
 ---
 title: Tables supported for duplicate and master record data sharing
-description: This article describes the tables supported for duplicate and master record data sharing. These are mechanisms for sharing reference and group data among companies in a deployment.
+description: Learn about the tables supported for duplicate and master record data sharing. These are mechanisms for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
-ms.date: 01/23/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 01/23/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2022-01-27
+ms.search.form: SysDataSharingConfiguration
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
-ms.search.form: SysDataSharingConfiguration
 ---
 
 # Tables supported for duplicate record data sharing

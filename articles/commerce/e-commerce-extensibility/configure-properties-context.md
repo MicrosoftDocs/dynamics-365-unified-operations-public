@@ -4,8 +4,6 @@ description: This article describes how to configure module properties so that t
 author: samjarawan
 ms.date: 12/01/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

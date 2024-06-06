@@ -6,8 +6,6 @@ description: This article describes how to automate the containerization of load
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

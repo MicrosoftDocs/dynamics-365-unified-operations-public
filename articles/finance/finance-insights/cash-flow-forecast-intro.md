@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Cash forecast
-description: This article describes the Cash flow forecasting capability.
-author: ShivamPandey-msft
-ms.date: 12/21/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the cash flow forecasting capability, including outlines on challenges for accurate cash flow forecasting and details of the Cash flow forecasts capability.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 12/21/2021
+ms.reviewer: kfend
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-19
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Cash forecast

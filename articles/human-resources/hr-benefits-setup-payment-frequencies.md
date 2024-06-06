@@ -6,9 +6,6 @@ description: Microsoft Dynamics 365 Human Resources uses payment frequencies to 
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

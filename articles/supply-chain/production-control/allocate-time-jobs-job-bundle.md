@@ -6,8 +6,6 @@ description: In Manufacturing execution, you can bundle jobs. You can then start
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

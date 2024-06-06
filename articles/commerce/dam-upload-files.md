@@ -4,8 +4,6 @@ description: This article describes how to upload binary files other than images
 author: josaw1
 ms.date: 03/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

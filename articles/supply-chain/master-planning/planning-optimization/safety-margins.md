@@ -6,8 +6,6 @@ description: This article describes how safety margins work during master planni
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

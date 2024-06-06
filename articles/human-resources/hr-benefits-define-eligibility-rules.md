@@ -6,8 +6,6 @@ description: This topics explains how to create benefit eligibility rules and po
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -27,7 +25,6 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 # Define benefit eligibility rules and policies
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

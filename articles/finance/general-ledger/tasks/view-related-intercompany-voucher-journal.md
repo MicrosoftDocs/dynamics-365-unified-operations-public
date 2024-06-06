@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: View related intercompany voucher from journal
-description: The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal. 
+description: The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.
 author: aprilolson
-ms.date: 05/5/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 05/5/2022
+ms.custom:
+ms.reviewer: twheeloc    
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # View related intercompany voucher from journal
 
 [!include [banner](../../includes/banner.md)]

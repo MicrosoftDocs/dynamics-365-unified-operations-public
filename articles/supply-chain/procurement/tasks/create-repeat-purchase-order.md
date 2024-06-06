@@ -6,8 +6,6 @@ description: This article shows you how to create a repeat purchase order (PO) b
 author: Henrikan
 ms.date: 09/30/2020
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

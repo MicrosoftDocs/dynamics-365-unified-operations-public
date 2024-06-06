@@ -1,18 +1,16 @@
 ---
 title: Ledger translation (Russia)
-description: This article provides information about using translation to transfer accounting transactions from one company to another.
+description: Learn about using translation to transfer accounting transactions from one company to another, including definitions for various voucher types.
 author: AdamTrukawka
-ms.date: 10/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/02/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.dyn365.ops.version: 10.0.1
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.1
 ---
 
 # Ledger translation (Russia)

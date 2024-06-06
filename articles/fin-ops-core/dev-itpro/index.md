@@ -4,8 +4,6 @@ description: This page helps developers and IT Pros get started with finance and
 author: josaw1
 ms.date: 06/20/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
 audience: IT Pro, Developer
 ms.reviewer: josaw
 ms.search.region: Global

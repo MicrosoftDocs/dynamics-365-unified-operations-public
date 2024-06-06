@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Landed cost parameters setup
 description: This article describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
 author: Weijiesa
-ms.date: 03/03/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ITMParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
-ms.search.validFrom: 2020-12-07
-ms.dyn365.ops.version: 10.0.17
+ms.reviewer: kamaybac
+ms.search.form: ITMParameters
+ms.topic: how-to
+ms.date: 05/22/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Landed cost parameters setup
@@ -48,7 +35,6 @@ The following table describes the fields that are available on the **General** F
 | Use shipping rate | A shipping rate is set for a defined period and is used to estimated costs of goods that use multiple currencies. Set this option to *Yes* to use a shipping rate. |
 | Exchange rate type | The default collection of exchange rates that is used for multi-currency calculations for a voyage and voyage costs. |
 | Update purchase order quantity | Select what occurs if a user changes the quantity on a purchase order line:<ul><li>**Accept** – The voyage quantity is automatically adjusted.</li><li>**Warning** – If the line is attached to a voyage, a warning is shown, but the voyage quantity is updated.</li><li>**Error** – If the line is attached to a voyage, an error message is shown, and the purchase order can't be updated. Therefore, the order line must first be removed from the voyage.</li></ul> |
-
 
 ### Costing FastTab
 
@@ -94,7 +80,7 @@ The following table describes the fields that are available on the **Defaults** 
 
 ## Status updates tab
 
-The system uses status values to indicate the status of each voyage. Voyage status values can automatically be applied to voyages via voyage tracking or periodic batch jobs. Alternatively, you can manually apply them by opening the voyage and then selecting a status in the **Voyage update** group on the **Manage** tab of the Action Pane. 
+The system uses status values to indicate the status of each voyage. Voyage status values can automatically be applied to voyages via voyage tracking or periodic batch jobs. Alternatively, you can manually apply them by opening the voyage and then selecting a status in the **Voyage update** group on the **Manage** tab of the Action Pane.
 
 You can create as many voyage status values as you want. However, four of them must be defined as used for a special purpose on the **Status updates** tab of the **Landed cost parameters** page. The following table describes the fields that are available there.
 
@@ -131,11 +117,9 @@ The settings on this tab establish the default dimensions for each designated pa
 
 The **Number sequences** tab of the **Landed cost parameters** page lists each type of reference number sequence that Landed cost requires, but that isn't shared across legal entities. For each reference in the list, select a number sequence code.
 
-
 ## Shared number sequences tab
 
 The **Shared number sequences** tab of the **Landed cost parameters** page lists each type of reference number sequence that is shared across legal entities for Landed cost. Currently, there is just one number sequence in the list. This number sequence is used for the voyage ID.
-
 
 ## Feature visibility tab
 

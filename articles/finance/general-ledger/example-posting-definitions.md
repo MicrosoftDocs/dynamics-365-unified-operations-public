@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Posting definition examples
-description: This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
+description: Access examples that show how posting definitions are used for purchase order encumbrances and budget appropriations for various account structures and dimensions.
 author: kweekley
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
 ---
 
 # Posting definition examples

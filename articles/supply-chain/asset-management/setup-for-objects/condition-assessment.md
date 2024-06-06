@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Condition assessment
-description: This article explains how to create a condition assessment template and registration on an asset in Asset Management.
+description: Learn how to create a condition assessment template and registration on an asset in Asset Management, including a step-by-step process.
 author: johanhoffmann
+ms.author: johanho
 ms.date: 06/26/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetObjectCondition, EntAssetConditionTemplate 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: EntAssetObjectCondition, EntAssetConditionTemplate 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Condition assessment

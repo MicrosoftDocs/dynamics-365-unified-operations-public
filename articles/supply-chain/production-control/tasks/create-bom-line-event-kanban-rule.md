@@ -6,8 +6,6 @@ description: This task focuses on the setup needed to create an event kanban rul
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -1,18 +1,15 @@
 ---
-# required metadata
-
 title: Export a copy of the standard user acceptance testing (UAT) database
-description: This article explains a database export scenario for finance and operations.
+description: Learn about a database export scenario for finance and operations, including known limitations and prerequisites.
 author: LaneSwenka
-ms.date: 02/13/2024
-ms.topic: article
-audience: IT Pro, Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/13/2024
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Export a copy of the standard user acceptance testing (UAT) database

@@ -1,23 +1,14 @@
 ---
-# required metadata
-
 title: Sales order posting
-description: This article provides information about the Sales order tab of the inventory posting profile page.   
+description: Learn about the Sales order tab of the inventory posting profile page, including a sample posting profile configuration.
 author: rachelprofitt
-ms.date: 04/25/2022
+ms.author: raprofit
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventPosting, InventItemGroup
-# ROBOTS: 
+ms.date: 04/25/2022
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: raprofit
-
+ms.search.form: InventPosting, InventItemGroup
 ---
 
 # Sales order posting
@@ -63,7 +54,7 @@ To post the deferred (estimated) revenue value to the general ledger when you ge
 > We generally recommend that you enable the options **Post physical inventory** and **Post packing slip in ledger**. Enabling these options can help to accelerate month-end closing procedures, because no deferrals will need to be manually calculated and posted. Additionally, financial statements will reflect the deferred amounts automatically without manual intervention.
 
 > [!IMPORTANT]
-> The **Post to Deferred Revenue Account on Sales Delivery** option isn't used with revenue recognition. For more information about Revenue recognition, go to [Revenue recognition overview](/accounts-receivable/revenue-recognition-overview.md)
+> The **Post to Deferred Revenue Account on Sales Delivery** option isn't used with revenue recognition. For more information about Revenue recognition, go to [Revenue recognition overview](../accounts-receivable/revenue-recognition-overview.md).
 
 ## Sample posting profile configuration 
 
@@ -94,9 +85,9 @@ The following table shows examples of the default posting types with sample main
 
 ## Sales category posting
 
-As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by sales categories. For more information about setting up a category hierarchy and assigning categories to products, go to [Create a hierarchy of product classification](/supply-chain/pim/tasks/create-hierarchy-product-classification.md) and [Classify a product using category hierarchies](/supply-chain/pim/tasks/classify-product-category-hierarchies.md).
+As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by sales categories. For more information about setting up a category hierarchy and assigning categories to products, go to [Create a hierarchy of product classification](../../supply-chain/pim/tasks/create-hierarchy-product-classification.md) and [Classify a product using category hierarchies](../../supply-chain/pim/tasks/classify-product-category-hierarchies.md).
 
-After you create a category hierarchy, you must assign the hierarchy to one or more types. To use a category hierarchy on sales orders, you must assign the category to the Sales category hierarchy type. For more information, go to [About category hierarchies](/dynamicsax-2012/appuser-itpro/about-category-hierarchies.md).
+After you create a category hierarchy, you must assign the hierarchy to one or more types. To use a category hierarchy on sales orders, you must assign the category to the Sales category hierarchy type. <!-- outdated link - For more information, go to [About category hierarchies](/dynamicsax-2012/appuser-itpro/about-category-hierarchies.md). -->
 
 ## Create revenue posting by sales category
 

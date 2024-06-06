@@ -6,9 +6,6 @@ description: You can study sales trends and patterns in real time in Dynamics 36
 author: ashishmsft
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailChannelReport, SysReportViewerForm, RetailStoreManagementWorkspace

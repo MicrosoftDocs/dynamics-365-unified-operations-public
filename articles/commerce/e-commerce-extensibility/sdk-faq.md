@@ -4,8 +4,6 @@ description: This article summarizes answers to questions frequently asked by us
 author: samjarawan
 ms.date: 03/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

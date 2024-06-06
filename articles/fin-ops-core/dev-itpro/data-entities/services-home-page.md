@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Service endpoints overview
-description: This article describes the service endpoints that are available.
+description: Learn about the service endpoints that are available, including a table that lists services avaialable for various service endpoints.
 author: pnghub
-ms.date: 06/22/2020
+ms.author: gned
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 06/22/2020
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gned
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service endpoints overview

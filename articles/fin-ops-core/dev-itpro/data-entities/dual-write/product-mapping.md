@@ -1,13 +1,13 @@
 ---
 title: Unified product experience
-description: This article describes the integration of product data between finance and operations apps and Dataverse.
+description: Learn about the integration of product data between finance and operations apps and Dataverse, including a table outlining various templates.
 author: t-benebo
-ms.date: 03/05/2024
-ms.topic: article
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 05/24/2024
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2019-07-15
 ---
 
@@ -231,6 +231,14 @@ Then, when the synchronization is enabled and takes place, the products from fin
 ### Migration of product data from other Dynamics 365 apps to finance and operations apps
 
 If other Dynamics 365 apps have products that aren't present in finance and operations apps, the administrator can use **EcoResReleasedProductCreationV2Entity** to import those products into finance and operations apps. Then match the product data from finance and operations apps and other Dynamics 365 apps as previously described.
+
+### Migration of a large amount of product data
+
+Product data is designed to flow from your finance and operations apps to Dataverse. Therefore, you must import product data into your finance and operations app first, and then synchronize it to Dataverse using initial synchronization. Dual-write limits the number of records that you can import during an initial synchronization. If your number of records exceeds this limit, then split the data into batches by applying query filters to the relevant dual-write map.
+
+For more information about filtering data for dual-write, see [Customize table and column mappings](customizing-mappings.md#filter-your-data).
+
+For more information about the constraints of dual-write initial synchronization, see [Considerations for initial synchronization](initial-sync-guidance.md#constraints).
 
 ### Install dual-write after a finance and operations environment and a Dataverse environment (with Field Service) is deployed
 

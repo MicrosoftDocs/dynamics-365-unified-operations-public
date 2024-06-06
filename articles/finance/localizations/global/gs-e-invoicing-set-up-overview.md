@@ -1,26 +1,22 @@
 ---
-title: Electronic invoicing setup (preview)
-description: This article provides an overview of the process for setting up and configuring Electronic invoicing (preview).
+title: Electronic invoicing configuration
+description: Learn about the process for setting up and configuring Electronic invoicing, including an overview on installing the add-in for electronic invoicing microservices.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
+ms.topic: overview
+ms.date: 04/10/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
 ---
 
-# Electronic invoicing setup (preview)
+# Electronic invoicing configuration
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The article provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that's specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality.
 
@@ -70,7 +66,7 @@ Make sure that the **Globalization Studio** workspace is available in the system
 
 To activate Electronic invoicing in Globalization Studio, enable the following features in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- Globalization features
+- Globalization Studio
 - E-invoicing service workspace designer
 - Enable Globalization feature setup for Tax Calculation Service
 - Electronic reporting globalization feature Key Vault parameters

@@ -1,13 +1,13 @@
 ---
 title: Commands for determining how elements are used
-description: This article reviews the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application.
-author: gianugo
-ms.date: 06/20/2017
+description: Learn about the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-audience: Developer
+ms.date: 06/20/2017
 ms.reviewer: josaw
+audience: Developer
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff

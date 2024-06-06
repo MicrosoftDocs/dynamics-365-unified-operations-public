@@ -1,15 +1,13 @@
 ---
 title: Multiple VAT registration numbers
-description: This article provides information about the functionality for multiple value-added tax (VAT) registration numbers.
+description: Learn about the functionality for multiple value-added tax (VAT) registration numbers, including prerequisites and an outline on enabling features.
 author: liza-golub
-ms.date: 02/09/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.18
 ---

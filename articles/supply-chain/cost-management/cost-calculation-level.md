@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Cost calculation level
-description: This article describes the bill of materials (BOM) level that is named Cost calculation level. This BOM level excludes production and batch orders from its calculations.
+description: Learn about the bill of materials (BOM) level that is named Cost calculation level. This BOM level excludes production and batch orders from its calculations.
 author: JennySong-SH
-ms.date: 08/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: yanansong
+ms.topic: article
+ms.date: 08/05/2022
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-04-23
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
+
 # Cost calculation level
 
 [!include [banner](../includes/banner.md)]

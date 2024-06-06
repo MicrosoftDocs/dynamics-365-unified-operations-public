@@ -1,6 +1,6 @@
 ---
-title: Upload ER configurations and Globalization features as a Dataverse solution (preview)
-description: This article explains how to upload Electronic reporting (ER) configurations and Globalization features as a Microsoft Dataverse solution (preview).
+title: Upload ER configurations and Globalization features as a Dataverse solution
+description: Learn how to upload Electronic reporting (ER) configurations and Globalization features as a Microsoft Dataverse solution.
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 
@@ -8,13 +8,12 @@ ms.date: 01/29/2023
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-
 ---
 
-# Upload ER configurations and Globalization features as a Dataverse solution (preview)
+# Upload ER configurations and Globalization features as a Dataverse solution
 
 [!INCLUDE[banner](../../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
 You can use Microsoft Dataverse solutions for Application Lifecycle Management (ALM) scenarios. For example, you can move Electronic reporting (ER) configurations to other environments or share them with other tenants via AppSource.

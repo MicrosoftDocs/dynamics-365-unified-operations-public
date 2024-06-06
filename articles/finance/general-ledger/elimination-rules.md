@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Elimination rules
-description: This article provides information about elimination rules and the various options for reporting about eliminations.
-author: aprilolson
-ms.date: 01/11/2018
+description: Learn about elimination rules and the various options for reporting about eliminations, including examples for various transaction types.
+author: jchrist
+ms.author: jchrist
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerEliminationRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/13/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aolson
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerEliminationRule
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ---
 
 # Elimination rules

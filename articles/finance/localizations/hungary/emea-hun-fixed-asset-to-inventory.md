@@ -1,18 +1,16 @@
 ---
 title: Move a fixed asset to inventory
-description: This article describes country/region-specific functionality for Hungary that lets you transfer fixed assets to inventory at the net book value. The status of the fixed asset is set to Scrapped, and the net book value is set to 0 (zero). Additionally, the quantity of a product in inventory is set to 1, and the cost price is set to the net book value of the fixed asset.
+description: Learn about country/region-specific functionality for Hungary that lets you transfer fixed assets to inventory at the net book value.
 author: AdamTrukawka
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Hungary
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Hungary
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: InventJournalAsset
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Move a fixed asset to inventory

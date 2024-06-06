@@ -6,8 +6,6 @@ description: This article describes the batch balancing process.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

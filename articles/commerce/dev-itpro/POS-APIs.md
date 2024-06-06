@@ -4,8 +4,6 @@ description: This article contains a list of available POS APIs and how to acces
 author: josaw1
 ms.date: 11/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: global

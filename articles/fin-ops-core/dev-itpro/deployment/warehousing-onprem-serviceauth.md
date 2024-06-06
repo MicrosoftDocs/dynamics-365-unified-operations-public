@@ -1,13 +1,13 @@
 ---
 title: Service-based authentication for the Warehouse Management mobile app in on-premises deployments
-description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment by using service-based authentication.
+description: Learn how to configure the service-based Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Finance + Operations (on-premises) environment.
 author: faix
 ms.author: osfaixat
-ms.reviewer: johnmichalak
 ms.topic: how-to
+ms.date: 02/02/2024
 ms.custom: 
   - bap-template
-ms.date: 02/02/2024
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ---
@@ -17,7 +17,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> The authentication methods that are described in this topic are now deprecated. We strongly recommend that you authenticate by using the [device code flow](warehousing-onprem-serviceauth.md) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md).
+> The authentication methods that are described in this topic are now deprecated. We strongly recommend that you authenticate with [device code flow](warehousing-onprem-userauth.md) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md).
 
 Authentication with Microsoft Active Directory Federation Services (AD&nbsp;FS) provides a secure way of authenticating a mobile device with Dynamics 365 Finance + Operations (on-premises) environments. The Warehouse Management mobile app supports the following types of service-based authentication:
 

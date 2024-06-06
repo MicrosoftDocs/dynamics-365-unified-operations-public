@@ -6,8 +6,6 @@ description: This article provides an overview and description of the lean manuf
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

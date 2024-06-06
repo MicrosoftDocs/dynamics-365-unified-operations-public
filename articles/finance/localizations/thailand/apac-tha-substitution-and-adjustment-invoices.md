@@ -1,18 +1,16 @@
 ---
 title: Substitution/adjustment tax invoices for Thailand
-description: This article provides information about the substitution/adjustment tax invoice feature. This feature lets you track the printing of copies of tax invoices. You can also track adjustments that are made to customer information in the tax invoice header.
+description: Learn about the tax invoice feature, which lets you track the printing of copies of tax invoices and adjustments made to customer information.
 author: AdamTrukawka
-ms.date: 06/16/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Thailand
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/16/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Thailand
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
 ms.search.form: CustInvoiceJournal, CustInvoiceJourAdjustment, ProjInvoiceListPage, CustParameters
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Substitution/adjustment tax invoices for Thailand

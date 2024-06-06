@@ -6,9 +6,6 @@ description: This article provides a list of the help topics and other resources
 author: twheeloc
 ms.date: 09/05/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
@@ -28,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Administration overview
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

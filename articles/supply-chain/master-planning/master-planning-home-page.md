@@ -5,7 +5,7 @@ author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
-ms.topic: home-page
+ms.topic: overview
 ms.date: 01/06/2023
 audience: Application User
 ms.search.region: Global

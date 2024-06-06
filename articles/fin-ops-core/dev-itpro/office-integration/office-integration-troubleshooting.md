@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Troubleshoot the Office integration
-description: This article provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
+description: Access answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 04/12/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: OfficeAppParameters, SysEmailParameters
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 04/12/2022
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: OfficeAppParameters, SysEmailParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 ---
 
 # Troubleshoot the Office integration

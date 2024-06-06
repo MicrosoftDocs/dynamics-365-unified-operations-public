@@ -6,9 +6,6 @@ description: This article describes how to skip the "Change due" dialog box in t
 author: BrianShook
 ms.date: 10/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

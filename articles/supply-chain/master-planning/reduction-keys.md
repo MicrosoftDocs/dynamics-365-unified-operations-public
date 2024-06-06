@@ -6,8 +6,6 @@ description: This article provides examples that show how to set up a reduction 
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -29,6 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Forecast reduction keys
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article provides information about the different methods that are used to reduce forecast requirements. It includes examples of the results of each method. It also explains how to create, set up, and use a forecast reduction key. Some methods use a forecast reduction key to reduce forecast requirements.
 
@@ -93,7 +92,7 @@ If you set the **Method used to reduce forecast requirements** field to *Transac
 
 The qualified demand is defined by the **Reduce forecast by** field on the **Coverage groups** page. If you set the **Reduce forecast by** field to *Orders*, only sales order transactions are considered qualified demand. If you set it to *All transactions*, any non-intercompany issue inventory transactions are considered qualified demand. If intercompany sales orders should also be considered qualified demand, set the **Include intercompany orders** option to *Yes*.
 
-Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will not reduce previous or future periods. 
+Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will not reduce previous or future periods.
 
 The value of the **Percent** field on the reduction key lines isn't used when the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key*. Only the dates are used to define the reduction key period.
 
@@ -131,7 +130,7 @@ If you select **Transactions - dynamic period**, the forecast requirements are r
 
 When this option is used, the following behavior occurs:
 
-- Reduction keys aren't required or used. 
+- Reduction keys aren't required or used.
 - If the forecast is completely reduced, the forecast requirements for the current forecast become 0 (zero).
 - If there is no future forecast, forecast requirements from the last forecast that was entered are reduced.
 - The demand forecast reduction time fence isn't included in the forecast reduction calculation. Instead, the coverage group time fence is used for forecast reduction.
@@ -140,7 +139,7 @@ When this option is used, the following behavior occurs:
 
 #### Example 1: Transactions – dynamic period
 
-Here a simple example that shows how the **Transactions - dynamic period** method works.
+Here is a simple example that shows how the **Transactions - dynamic period** method works.
 
 For this example, you include the following demand forecast in a master plan.
 
@@ -167,7 +166,7 @@ In this case, the following planned orders are created.
 
 #### Example 2: Transactions – dynamic period
 
-In most cases, systems are set up so that transactions reduce demand forecast in specific forecast periods: weeks, months, and so on. These periods are defined in the reduction key. However, the time between two demand forecast lines can also *imply* a period.
+In most cases, systems are set up so that transactions reduce demand forecasts in specific forecast periods: weeks, months, and so on. These periods are defined in the reduction key. However, the time between two demand forecast lines can also *imply* a period.
 
 For this example, you create a demand forecast for the following dates and quantities.
 
@@ -209,7 +208,7 @@ A forecast reduction key is used in the **Transactions - reduction key** and **P
 
 1. Go to **Master planning \> Setup \> Coverage \> Reduction keys**.
 2. Select **New** to create a reduction key.
-3. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name. 
+3. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name.
 4. Define the periods and the reduction key percentage in each period:
 
     - The **Effective date** field indicates the date when creation of the periods starts. When the **Use the effective date** option is set to **Yes**, the periods start on the effective date. When it's set to **No**, the periods start on the date when master planning is run.
@@ -236,6 +235,5 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 ## Additional resources
 
 - [Master plans overview](master-plans.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

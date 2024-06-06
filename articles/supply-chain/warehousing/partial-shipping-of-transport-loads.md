@@ -6,8 +6,6 @@ description: This article explains how you can partially ship a load and postpon
 author: Mirzaab
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

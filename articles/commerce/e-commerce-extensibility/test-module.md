@@ -4,8 +4,6 @@ description: This article describes how to test a module by previewing and debug
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

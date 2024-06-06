@@ -1,19 +1,18 @@
 ---
 title: Integration of the Asset management module with the Fixed asset (Russia) module
-description: This article provides information about the integration of the Asset management module with the Fixed asset (Russia) module.
+description: Learn about the integration of the Asset management module with the Fixed asset (Russia) module, including a process for relating an asset to a Russian fixed asset.
 author: AdamTrukawka
-ms.date: 01/31/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: overview
+ms.date: 01/31/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2022-01-27
-ms.dyn365.ops.version: 10.0.25
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.25
 ---
+
 # Integration of the Asset management module with the Fixed asset (Russia) module
 
 [!include [banner](../../includes/banner.md)]

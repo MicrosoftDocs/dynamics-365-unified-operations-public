@@ -4,8 +4,6 @@ description: This article provides an overview of processing for prepayment tran
 author: EvgenyPopovMBS
 ms.date: 08/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Russia

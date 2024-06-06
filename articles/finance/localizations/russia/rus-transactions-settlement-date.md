@@ -1,18 +1,16 @@
 ---
 title: Set up dimension control for settlements (Russia)
-description: This article explains how to set up dimension control for settlements in Russia.
+description: Learn how to set up dimension control for settlements in Russia, including an outline on setting up accounts payable parameters for dimensions control.
 author: AdamTrukawka
-ms.date: 10/28/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/28/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ms.search.form: VendParameters
+ms.dyn365.ops.version: 8.1
 ---
 
 # Set up dimension control for settlements (Russia)

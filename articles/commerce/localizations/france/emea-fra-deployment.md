@@ -6,9 +6,6 @@ description: This article is a deployment guide for the Commerce localization fo
 author: EvgenyPopovMBS
 ms.date: 08/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form:  

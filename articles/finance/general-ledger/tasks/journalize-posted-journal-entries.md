@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Journalize posted journal entries
-description: This procedure shows how to journalize posted journal entries. 
+description: Learn how to journalize posted journal entries, including a step-by-step process for journalizing posted journal entries using the USMF dem data company. 
 author: aprilolson
-ms.date: 03/09/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerParameters, SysQueryForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/09/2022
+ms.custom:
+ms.reviewer: kfend  
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerParameters, SysQueryForm 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Journalize posted journal entries
 
 [!include [banner](../../includes/banner.md)]

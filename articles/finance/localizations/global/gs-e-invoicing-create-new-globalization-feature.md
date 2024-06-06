@@ -1,26 +1,22 @@
 ---
-title: Create Globalization features (preview)
-description: This article explains how to create a Globalization feature (preview).
+title: Create Globalization features
+description: Learn how to create a Globalization feature, including outlines on creating a feature based on an existing feature and creating a feature from scratch.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39 
+ms.topic: article
+ms.date: 01/29/2024
 ms.custom: 
-ms.assetid: 
-ms.search.form: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2024-01-29
+ms.search.form:
+ms.dyn365.ops.version: 10.0.39
 ---
 
-# Create Globalization features (preview)
+# Create Globalization features
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can create an Electronic invoicing feature from scratch, or you can base it on an existing feature. When you create a feature from scratch, you must manually add Electronic reporting (ER) configurations and other components, such as the feature setup and application setup details. When you create a feature that's based on an existing feature, the new feature inherits all the base feature's configurations and parameters. You can review what's copied from the base feature to the new feature.
 

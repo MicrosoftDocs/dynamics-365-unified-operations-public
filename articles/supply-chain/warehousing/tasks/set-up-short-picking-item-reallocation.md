@@ -6,8 +6,6 @@ description: This article shows how to enable warehouse workers to quickly find 
 author: Mirzaab
 ms.date: 06/29/2020
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

@@ -1,13 +1,13 @@
 ---
 title: Dual-write limits for live synchronization
-description: This article describes the limits when dual-write is used to write data to finance and operations apps and Microsoft Dataverse.
+description: Learn about the limits when dual-write is used to write data to finance and operations apps and Microsoft Dataverse.
 author: nhelgren
-ms.date: 08/31/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: nhelgren
+ms.topic: article
+ms.date: 08/31/2021
+ms.reviewer: sericks
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,15 +1,13 @@
 ---
 title: Allocation of miscellaneous charges in proportion to weight and volume
-description: This article provides information about allocating miscellaneous charges.
+description: Learn about allocating miscellaneous charges, including a process for allocating charges according to weight or volume of goods.
 author: AdamTrukawka
-ms.date: 10/28/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/28/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

@@ -1,5 +1,5 @@
 ---
-title: View and customize tables for holding imported data (preview)
+title: View and customize tables for holding imported data
 description: To accommodate data that is imported into Demand planning, tables must be set up with the required fields and relations. This article describes the predefined tables that the app includes. It also explains how to customize the tables and create new ones.
 author: t-benebo
 ms.author: benebotg
@@ -12,18 +12,15 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# View and customize tables for holding imported data (preview)
+# View and customize tables for holding imported data
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Data that's imported into Demand planning must be loaded into tables that are set with the fields and relations that are required to accommodate the incoming data. Demand planning includes a set of predefined tables that support the most useful standard data that you'll probably want to import from Microsoft Dynamics 365 Supply Chain Management. If you've customized your tables in Supply Chain Management, you can use the tools that are provided to reproduce the custom fields. You can also create new custom tables to store data from Supply Chain Management and other sources.
 
 ## View tables
 
-To view the full list of tables that are available to the Demand planning app, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
+To view the full list of tables that are available to Demand planning, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
 
 - The **Name** column shows the name of each table. Select a table name to view and edit details about that table, including column definitions, relationships, and data.
 - The **Is System** column indicates whether each table is a standard table that's provided by the system or a custom table that was added by a user. It shows one of the following values:

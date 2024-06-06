@@ -6,8 +6,6 @@ description: This article provides an overview of pick line grouping.
 author: Mirzaab
 ms.date: 12/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

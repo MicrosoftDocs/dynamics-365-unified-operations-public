@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Rebate management groups
 description: This article describes how to set up Rebate management groups. Rebate management groups can be used during rebate calculations and can be attached to a master record.
 author: sherry-zheng
-ms.date: 02/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TAMRebateGroup
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
-ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
+ms.reviewer: kamaybac
+ms.search.form: TAMRebateGroup
+ms.topic: how-to
+ms.date: 05/15/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Rebate management groups
@@ -150,7 +137,7 @@ To add items to a group based on your category hierarchy, follow these steps.
 1. Select the group to manage.
 1. On the Action Pane, select **Add items**.
 1. In the **Add items** dialog box, in the **Category hierarchy** field, select a top-level category.
-1. The item hierarchy is opened in the left pane. Select the hierarchy level that you're looking for. 
+1. The item hierarchy is opened in the left pane. Select the hierarchy level that you're looking for.
 1. Items from the selected hierarchy and hierarchy level are now listed in the right pane. Follow these steps to work with the pane:
 
     - Select the check box for each item that you want to add.

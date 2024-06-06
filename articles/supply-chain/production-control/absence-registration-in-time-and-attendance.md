@@ -6,8 +6,6 @@ description: This article explains how to handle absence registrations in Time a
 author: johanhoffmann
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

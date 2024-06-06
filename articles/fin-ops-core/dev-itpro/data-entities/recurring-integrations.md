@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Recurring integrations
-description: This article describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
+description: Learn about recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: pnghub
-ms.date: 10/07/2021
+ms.author: gned
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 10/07/2021
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gned
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Recurring integrations

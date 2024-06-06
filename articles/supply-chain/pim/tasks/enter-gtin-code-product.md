@@ -6,8 +6,6 @@ description: GTIN codes are assigned by the GS1 organization.
 author: t-benebo
 ms.date: 07/20/2023
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

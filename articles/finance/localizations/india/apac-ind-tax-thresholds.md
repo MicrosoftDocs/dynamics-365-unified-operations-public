@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Tax thresholds for India FAQ
-description: This article provides information about tax thresholds for India.
+description: Learn about tax thresholds for India, including outlines on different types of threshold limits and where you can use the threshold limits.
 author: EricWangChen
-ms.date: 01/08/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.suite: 
-# ms.tgt_pltfrm: 
-ms.search.region: India
-# # ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 01/08/2018
+ms.reviewer: johnmichalak
+audience: Application user
+ms.search.region: India
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
-
 ---
 
 # Tax thresholds for India FAQ

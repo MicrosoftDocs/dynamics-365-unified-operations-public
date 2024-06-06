@@ -6,8 +6,6 @@ description: This article describes how to set up a simple work template to be u
 author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

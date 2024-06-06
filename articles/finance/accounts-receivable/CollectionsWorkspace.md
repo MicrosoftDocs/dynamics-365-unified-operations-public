@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Collections coordinator workspace
-description: This article describes the Collections coordinator overview and workspace, including the aged balances and customer timeline summary.
+description: Learn about the Collections coordinator overview and workspace, including the aged balances and customer timeline summary.
 author: JodiChristiansen
-ms.date: 01/25/2024
-ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: conceptual
+ms.date: 01/25/2024
+ms.reviewer: twheeloc
+ms.collection: bap-ai-copilot 
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2023-06-05
-ms.dyn365.ops.version: 10.0.34
-ms.collection: bap-ai-copilot   
-
+ms.search.form:
+ms.dyn365.ops.version: 10.0.34  
 ---
 
 # Collections coordinator workspace

@@ -6,8 +6,6 @@ description: This article provides an overview of the most common tasks that you
 author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

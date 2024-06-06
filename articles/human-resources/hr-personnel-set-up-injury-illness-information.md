@@ -6,8 +6,6 @@ description: Employers need to know when their employees suffer injuries or illn
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -24,9 +22,6 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up injury and illness information
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

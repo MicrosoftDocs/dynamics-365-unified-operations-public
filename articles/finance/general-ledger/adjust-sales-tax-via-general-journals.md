@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Adjust sales tax via general journals
-description: This article explains how to adjust sales tax by using general journals.
-author: kailiang
-ms.date: 08/08/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: 
-# ms.search.industry: 
+description: Learn how to adjust sales tax by using general journals so that you can balance a tax account, record specific tax transactions, or correct discrepancies.
+author: Kai-Cloud
 ms.author: kailiang
+ms.topic: article
+ms.date: 08/08/2022
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 2022-08-03
+ms.search.form: 
 ms.dyn365.ops.version:
-
 ---
 
 # Adjust sales tax via general journals

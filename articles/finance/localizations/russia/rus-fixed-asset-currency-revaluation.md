@@ -1,18 +1,16 @@
 ---
 title: Fixed asset currency revaluation
-description: This article provides information about fixed asset currency revaluation for Russia.
+description: Learn about fixed asset currency revaluation for Russia, including a step-by-step process for revaluing the currency of fixed assets.
 author: AdamTrukawka
-ms.date: 10/31/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/31/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
 ms.search.form: LedgerJournalTable
+ms.dyn365.ops.version: 8.1
 ---
 
 # Fixed asset currency revaluation

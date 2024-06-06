@@ -4,8 +4,6 @@ description: This article provides an overview of the application programming in
 author: samjarawan
 ms.date: 09/14/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

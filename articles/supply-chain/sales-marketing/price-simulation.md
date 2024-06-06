@@ -6,8 +6,6 @@ description: This article provides information about price simulation for quotat
 author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

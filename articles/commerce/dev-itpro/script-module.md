@@ -4,8 +4,6 @@ description: This article covers external and inline script modules and describe
 author: samjarawan
 ms.date: 05/18/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

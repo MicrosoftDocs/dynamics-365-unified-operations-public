@@ -1,15 +1,13 @@
 ---
 title: Calculate tax on prices when Prices include taxes is enabled
-description: This article provides information about the functionality for calculating tax on prices when the Prices include taxes option is enabled.
+description: Learn about the functionality for calculating tax on prices when the Prices include taxes option is enabled, including an overview on aspects of tax codes.
 author: EricWangChen
-ms.date: 07/28/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 07/28/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.21
 ---

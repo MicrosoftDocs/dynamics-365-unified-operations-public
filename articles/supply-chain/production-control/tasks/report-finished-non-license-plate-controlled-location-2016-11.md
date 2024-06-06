@@ -6,8 +6,6 @@ description: This task guide shows an example of reporting as finished to a loca
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

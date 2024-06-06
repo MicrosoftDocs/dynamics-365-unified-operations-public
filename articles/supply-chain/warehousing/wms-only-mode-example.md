@@ -1,5 +1,5 @@
 ---
-title: Example of using inbound and outbound shipment orders (preview)
+title: Example of using inbound and outbound shipment orders
 description: This article provides an example scenario that shows how to create inbound and outbound shipment orders. 
 author: perlynne
 ms.author: perlynne
@@ -12,10 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Example of using inbound and outbound shipment orders (preview)
+# Example of using inbound and outbound shipment orders
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 <!-- KFM: Preview until further notice -->
@@ -24,7 +23,7 @@ This article provides an example scenario that shows how to create inbound and o
 
 ## How to test the creation process
 
-To try out the creation process for inbound and outbound shipment orders via messages, set the **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** options to *Yes* for a **Source system** record. You can then create shipment order messages directly on the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-using.md#maintain-messages) pages.
+To try out the creation process for inbound and outbound shipment orders via messages, set the **Enable manual outbound shipment order message creation** and **Enable manual inbound shipment order message creation** options to *Yes* for a **Source system** record. You can then create shipment order messages directly on the [**Outbound shipment order messages** and **Inbound shipment order messages**](wms-only-mode-shared-and-external-detail-use.md#maintain-messages) pages.
 
 Another quick way to post example messages is to use [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests.
 

@@ -6,8 +6,6 @@ description: This article explains how to create Customer portal user accounts a
 author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

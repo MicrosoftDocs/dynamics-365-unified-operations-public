@@ -6,8 +6,6 @@ description: This article demonstrates how to create a direct delivery for a sal
 author: Henrikan  
 ms.date: 07/11/2019  
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

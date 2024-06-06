@@ -4,10 +4,8 @@
 title: Create a mass hire project
 description: This procedure walks through the process of setting up a mass hire project. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 04/16/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -24,9 +22,6 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a mass hire project
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

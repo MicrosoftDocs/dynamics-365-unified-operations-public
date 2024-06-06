@@ -1,15 +1,13 @@
 ---
 title: Cash flow tax registers
-description: This article provides information about cash flow tax registers.
+description: Learn about cash flow tax registers, including outlines on the cash payment receipt and cash payment issue types of tax registers.
 author: AdamTrukawka
-ms.date: 08/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: atrukawk
+ms.topic: article
+ms.date: 08/16/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

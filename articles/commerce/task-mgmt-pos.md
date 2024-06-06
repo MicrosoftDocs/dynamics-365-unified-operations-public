@@ -4,8 +4,6 @@ description: This article describes task management in the Microsoft Dynamics 36
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

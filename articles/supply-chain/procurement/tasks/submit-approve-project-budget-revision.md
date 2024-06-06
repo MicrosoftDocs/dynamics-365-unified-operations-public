@@ -6,8 +6,6 @@ description: This procedure provides information about revising a project budget
 author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

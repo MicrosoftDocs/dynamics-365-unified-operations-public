@@ -1,17 +1,17 @@
 ---
 title: Use application context with Copilot
-description: This article provides guidance about how to use application context with Copilot.
+description: Learn about how to use application context with Copilot, including an outline of default contextual variables, navigation context, page context, and user context.
 author: jaredha
 ms.author: jaredha
-ms.reviewer: johnmichalak
-ms.search.form:
 ms.topic: how-to
-ms.date: 02/08/2024
-audience: Developer
-ms.search.region: Global
+ms.date: 04/29/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ms.collection:
   - bap-ai-copilot
+audience: Developer
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Use application context with Copilot
@@ -67,10 +67,13 @@ The navigation context provides the list of finance and operations navigation me
 
 ### Page context
 
-The page context is the page that's open for the user in the current session.
+The page context is the page that's open for the user in the current session, including record information for the record that's currently shown on the page.
 
 **Variable name:** Global.PA\_Copilot\_ServerForm\_PageContext<br>
 **Type:** Record
+
+> [!NOTE]
+> The fields that provide the current record context are available only in version 10.0.40 and later. These fields include `rootTableName`, `rootTableRecId`, `titleField1Name`, `titleField1Value`, `titleField2Name`, and `titleField2Value`. 
 
 **Properties**
 
@@ -78,13 +81,25 @@ The page context is the page that's open for the user in the current session.
 | --- | --- | --- |
 | caption | String | The page caption of the current page. |
 | metadataName | String | The metadata name of the page. |
+| rootTableName | String | The name of the root table of the page. | 
+| rootTableRecId | Integer | The table record ID of the root table for the record that's currently shown on the page. |
+| titleField1Name | String | The name of the first title field at the top of the page. | 
+| titleField1Value | String | The value of the first title field at the top of the page, populated with the value for the record that's currently shown on the page. |
+| titleField2Name | String | The name of the second title field at the top of the page. |
+| titleField2Value | String | The value of the second title field at the top of the page, populated with the value for the record that's currently shown on the page. |
 
 **Sample payload**
 
 ```json
 {
-  "caption": "Courses",
-  "metadataName": "HRMCourseTable"
+  "caption":"Vendors",
+  "metadataName":"VendTable",
+  "rootTableName":"DirPartyTable",
+  "rootTableRecId":22565449580,
+  "titleField1Name":"PartyNumber",
+  "titleField1Value":"1001",
+  "titleField2Name":"Name",
+  "titleField2Value":"Acme Office Supplies"
 }
 ```
 
@@ -100,7 +115,7 @@ The user context provides contextual information about the user.
 | Name | Type | Description |
 | --- | --- | --- |
 | dataAreaId | String | The legal entity that the user is currently signed in to. |
-| userLanguageId | String | The language code that's selected for the user in [User options](../get-started/personalize-user-experience.md#system-wide-options-for-the-current-user). |
+| userLanguageId | String | The language code selected for the user in [User options](../get-started/personalize-user-experience.md#system-wide-options-for-the-current-user). |
 
 **Sample payload**
 

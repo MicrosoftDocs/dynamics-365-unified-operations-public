@@ -4,8 +4,6 @@ description: This article describes how to implement URL redirects in bulk by up
 author: BrianShook
 ms.date: 05/16/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

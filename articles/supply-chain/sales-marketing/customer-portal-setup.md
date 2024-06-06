@@ -6,8 +6,6 @@ description: This article provides licensing details and setup instructions for 
 author: Henrikan
 ms.date: 06/08/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

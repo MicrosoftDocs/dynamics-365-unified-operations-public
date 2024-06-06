@@ -4,8 +4,6 @@ description: This article describes how to enable and use Linked refunds.
 author: josaw1
 ms.date: 05/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

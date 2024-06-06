@@ -1,18 +1,16 @@
 ---
 title: Customer electronic invoices in Egypt
-description: This article explains how to configure and submit customer electronic invoices in Egypt.
+description: Learn how to configure and submit customer electronic invoices in Egypt, including prerequisites and an outline on configuring registration numbers.
 author: mrolecki
-ms.date: 02/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Egypt
 ms.author: mrolecki
+ms.topic: article
+ms.date: 02/01/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Egypt
 ms.search.validFrom: 2021-02-01
-ms.dyn365.ops.version: 10.0.17
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # Customer electronic invoices in Egypt

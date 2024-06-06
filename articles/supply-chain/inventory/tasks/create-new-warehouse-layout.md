@@ -6,8 +6,6 @@ description: This article describes how to set up information about the location
 author: yufeihuang
 ms.date: 07/29/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

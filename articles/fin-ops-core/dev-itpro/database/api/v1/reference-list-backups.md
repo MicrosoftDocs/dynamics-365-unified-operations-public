@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Database movement API - Reference - v1 - List database backups
-description: This article provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
+description: Learn about a reference for version 1 (v1) of the Database Movement application programming interface (API) for listing database backups.
 author: laneswenka
-ms.date: 09/30/2019
-ms.topic: reference
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: reference
+ms.date: 09/30/2019
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.0
-
 ---
 
 # List database backups

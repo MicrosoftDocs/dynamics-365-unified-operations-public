@@ -1,18 +1,16 @@
 ---
 title: Set up and use PKWiU codes for Poland
-description: This article walks you through setting up the PKWiU code for Poland.
+description: Learn about setting up the PKWiU code for Poland, including an outline on assigning a PKWiU code to the sales category hierarchy.
 author: AdamTrukawka
-ms.date: 09/20/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Poland
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/20/2018
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 
 ---
 
 # Set up and use PKWiU codes for Poland

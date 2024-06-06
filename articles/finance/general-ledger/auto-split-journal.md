@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Automatic split of large financial journals
-description: The article describes the performance improvements from automatically splitting large financial journals into multiple journals.
+description: Learn about the performance improvements from automatically splitting large financial journals into multiple journals, including a feature summary and benefits.
 author: Livbjerg
-ms.date: 10/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: JLivbjerg
+ms.topic: article
+ms.date: 10/13/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-5-1
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.28
-
 ---
 
 # Automatic split of large financial journals

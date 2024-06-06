@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Office integration overview
-description: This article reviews Microsoft Office integration concepts and features.
+description: Learn about Microsoft Office integration concepts and features, including overviews on the Excel Data Connector add-in and document management.
 author: jasongre
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: johnmichalak 
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ---
 
 # Office integration overview
@@ -42,7 +30,7 @@ This article reviews Microsoft Office integration concepts and features. The int
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products.
 
 ## Excel Data Connector add-in
-Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. 
+Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Microsoft Edge browser window. 
 
 [![Screenshot of Excel Data Connector app.](./media/1_office.png)](./media/1_office.png)
 

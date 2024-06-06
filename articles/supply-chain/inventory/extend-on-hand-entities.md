@@ -6,8 +6,6 @@ description: This article provides an example that shows how to add extended fie
 author: yufeihuang
 ms.date: 07/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

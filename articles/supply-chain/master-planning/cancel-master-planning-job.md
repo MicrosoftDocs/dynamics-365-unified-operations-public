@@ -6,8 +6,6 @@ description: This article explains how to cancel an active planning job that use
 author: t-benebo
 ms.date: 05/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

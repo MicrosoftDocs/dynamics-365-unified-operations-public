@@ -1,20 +1,17 @@
 ---
 title: Create an Azure key vault in the Azure portal
-description: This article explains how to create a Microsoft Azure key vault for Electronic invoicing.
-author: gionoder
-ms.date: 02/14/2021
+description: Learn how to create a Microsoft Azure key vault for Electronic invoicing (RCS), including a step-by-step process for setting references to the key vault.
+author: ilikond
+ms.author: ikondratenko
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.date: 02/14/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Create an Azure key vault in the Azure portal
@@ -30,8 +27,7 @@ All the secrets and certificates that are used in the Electronic invoicing servi
 2. Go to **Settings** \> **Access policies**, and select **Add Access Policy**.
 3. In the **Secret permissions** field, select the **Get** and **List** operations.
 
-    [![Secret permissions set for the Get and List operations on the Add access policy page.](../media/add-access-policy-page.png)](/media/add-access-policy-page.png)
-
+    [![Secret permissions set for the Get and List operations on the Add access policy page.](../media/add-access-policy-page.png)
 4. In the **Certificate permissions** field, select the **Get** and **List** operations.
 5. In the **Select principal** field, select **None selected**.
 6. In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.

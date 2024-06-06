@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot issues related to solution awareness
-description: This article provides troubleshooting information that can help you fix issues that are related to solution awareness.
+description: Learn about how you can fix issues that are related to solution awareness, including issues involving error messages on the dual-write page.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 03/16/2020
+ms.reviewer: sericks
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 

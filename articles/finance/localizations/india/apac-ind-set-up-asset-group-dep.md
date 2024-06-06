@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up asset group depreciation for depreciation books (India)
-description: You can use asset group depreciation for assets that are similar and for those assets that have the same number of years of life. 
+description: You can use asset group depreciation for assets that are similar and for those assets that have the same number of years of life.
 author: AdamTrukawka
-ms.date: 10/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: India
-# ms.search.industry: 
 ms.author: atrukawk
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 10/10/2022
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User  
+ms.search.region: India
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up asset group depreciation for depreciation books (India)
 
 [!include [banner](../../includes/banner.md)]

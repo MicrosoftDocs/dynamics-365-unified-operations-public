@@ -1,15 +1,13 @@
 ---
 title: Classification of localization features
-description: This article explains the difference between regulatory and competitive feature and shows how the feature type is used in the title of the feature.
+description: Learn about the difference between regulatory and competitive feature and shows how the feature type is used in the title of the feature.
 author: kfend
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: global
 ms.author: kfend
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86

@@ -1,20 +1,17 @@
 ---
 title: Create tax registers and the tax register journal
-description: This article provides information about creating tax registers and the tax register journal.
+description: Learn about creating tax registers and the tax register journal, including a table that provides comments for various tax register types.
 author: AdamTrukawka
-ms.date: 08/05/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 08/05/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Create tax registers and the tax register journal

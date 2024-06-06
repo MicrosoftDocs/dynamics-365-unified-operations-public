@@ -1,19 +1,18 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.39 of finance and operations apps (March 2024)
-description: This article lists the features that are included in the platform updates for version 10.0.39 of finance and operations apps.
+description: Learn aboutthe features that are included in the platform updates for version 10.0.39 of finance and operations apps released in March 2024.
 author: johnmichalak
-ms.date: 02/20/2024
+ms.author: johnmichalak
 ms.topic: conceptual
+ms.date: 04/12/2024
 ms.custom: 
   - bap-template
-audience: Application User
+  - evergreen
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Global
-ms.author: johnmichalak
-
 ---
+
 # Platform updates for version 10.0.39 of finance and operations apps (March 2024)
 
 [!include [banner](../includes/banner.md)]

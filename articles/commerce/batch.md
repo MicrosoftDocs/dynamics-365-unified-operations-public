@@ -6,9 +6,6 @@ description: This article describes the improved handling of batch-tracked items
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

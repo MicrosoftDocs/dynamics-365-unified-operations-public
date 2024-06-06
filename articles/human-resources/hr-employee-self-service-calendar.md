@@ -6,9 +6,6 @@ description: View and create team calendars in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EssWorkspace

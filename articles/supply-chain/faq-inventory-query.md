@@ -4,7 +4,7 @@ description: This FAQ provides answers to frequently asked questions about the A
 ms.date: 11/07/2023
 ms.collection:
   - bap-ai-copilot
-ms.custom: 
+ms.custom:
   - responsible-ai-faqs
 ms.topic: article
 author: Weijiesa

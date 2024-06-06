@@ -1,18 +1,16 @@
 ---
 title: Fixed assets disposal for Poland
-description: This article provides information about fixed asset disposal functionality for users in legal entities in Poland.
+description: Learn about fixed asset disposal functionality for users in legal entities in Poland, including an outline on templates for fixed asset disposal.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Poland
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Fixed assets disposal for Poland

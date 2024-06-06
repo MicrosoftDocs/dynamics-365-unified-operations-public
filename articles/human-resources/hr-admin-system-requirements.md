@@ -6,9 +6,6 @@ description: This article lists the system requirements for Microsoft Dynamics 3
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

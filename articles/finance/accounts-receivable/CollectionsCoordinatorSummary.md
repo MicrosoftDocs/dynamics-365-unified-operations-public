@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Collections coordinator summary
-description: This article describes how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
+description: Learn about how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
 author: JodiChristiansen
-ms.date: 08/02/2023
-ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: conceptual
+ms.date: 04/04/2024
+ms.reviewer: twheeloc
+ms.collection: bap-ai-copilot
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2023-06-05
 ms.dyn365.ops.version: 10.0.24
-ms.collection: bap-ai-copilot   
-
+ms.search.form:    
 ---
+
 # Collections coordinator summary
 
 > [!NOTE]
@@ -73,23 +62,10 @@ Follow the procedures in this section to configure Collections coordinator summa
 
 ### Install Copilot
 
-1. In Partner Center, go to the [Copilot in Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92) solution.
+1. In Partner Center, go to the [Copilot in Microsoft Dynamics 365 Finance] <!-- The following link is broken: (https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92) --> solution.
 1. Accept the terms and conditions, and then select **Install**. The Copilot solution is installed in the selected environment.
 1. Go to the environment page for the selected environment.
 1. Select **Dynamics 365 apps** to check the status of the installation. While the installation is occurring, the status is **Installing**. After the installation is completed, the status is changed to **Installed**.
-
-### Grant Dataverse consent for user impersonation
-
-You must grant explicit consent for Dynamics 365 finance and operations apps to impersonate Dataverse users.
-
-1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
-1. Select **Settings** at the top of the page.
-1. Expand **Product**, and select **Features**.
-1. Find **Finance and Operations in Dataverse**.
-1. Set the **Enable finance and operations user impersonation in Dataverse** option to **On**.
-
-> [!NOTE]
-> For more information, see [Managed feature settings](/power-platform/admin/settings-features).
 
 ### Assign roles to Dataverse users
 

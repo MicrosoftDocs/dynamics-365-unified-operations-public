@@ -6,9 +6,6 @@ description: View leave analytics, accruals and balances, and balance trends in 
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

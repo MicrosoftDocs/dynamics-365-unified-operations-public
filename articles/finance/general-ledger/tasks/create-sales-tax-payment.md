@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a sales tax payment
-description: The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period. 
+description: The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account.
 author: twheeloc
-ms.date: 01/04/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: Dialog   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 01/04/2022
+ms.custom:
+ms.reviewer: twheeloc    
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: Dialog
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a sales tax payment
 
 [!include [banner](../../includes/banner.md)]

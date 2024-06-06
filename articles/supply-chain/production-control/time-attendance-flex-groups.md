@@ -6,8 +6,6 @@ description: This article describes how flex groups are used in Time and attenda
 author: johanhoffmann
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

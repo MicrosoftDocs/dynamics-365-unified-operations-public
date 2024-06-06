@@ -4,8 +4,6 @@ description: This article provides an overview of payment authorization expirati
 author: BrianShook
 ms.date: 05/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

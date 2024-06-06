@@ -6,8 +6,6 @@ description: This article explains how you can enable change management for exis
 author: t-benebo
 ms.date: 02/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

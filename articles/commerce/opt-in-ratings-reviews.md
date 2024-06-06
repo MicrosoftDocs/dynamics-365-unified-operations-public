@@ -4,8 +4,6 @@ description: This article explains how to opt in to use ratings and reviews on y
 author: gvrmohanreddy
 ms.date: 02/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

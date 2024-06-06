@@ -6,9 +6,6 @@ description: You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a M
 author: twheeloc
 ms.date: 07/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm

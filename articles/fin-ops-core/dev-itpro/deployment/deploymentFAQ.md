@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Self-service deployment FAQ
-description: This article provides answers to some frequently asked questions about self-service deployment.
+description: This frequently asked questions article answers to some frequently asked questions about self-service deployment.
 author: rashmansur
-ms.date: 12/04/2023
+ms.author: rashmim
 ms.topic: faq
+ms.date: 12/04/2023
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.reviewer: johnmichalak
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: johnmichalak
 ms.search.region: Global 
-# ms.search.industry: 
-ms.author: rashmim
 ms.search.validFrom: 2018-12-31
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Self-service deployment FAQ

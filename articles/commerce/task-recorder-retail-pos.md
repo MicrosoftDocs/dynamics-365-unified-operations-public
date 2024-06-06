@@ -4,8 +4,6 @@ description: This article describes how to use the task recorder in Microsoft Dy
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

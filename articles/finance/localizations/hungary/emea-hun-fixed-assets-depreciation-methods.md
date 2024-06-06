@@ -1,19 +1,17 @@
 ---
 title: Fixed assets depreciation methods for Hungary
-description: This article provides information about fixed asset depreciation for legal entities in Hungary.
+description: Learn about fixed asset depreciation for legal entities in Hungary, including an overview on the straight line depreciation method.
 author: AdamTrukawka
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Hungary
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Hungary
 ms.search.validFrom: 2016-11-30
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: Version 1611
 ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
-ms.search.form: AssetDepreciationProfile
 ---
 
 # Fixed assets depreciation methods for Hungary

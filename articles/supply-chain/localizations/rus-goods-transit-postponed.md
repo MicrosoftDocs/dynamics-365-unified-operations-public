@@ -6,8 +6,6 @@ description: This article explains how to register the shipment and transfer the
 author: kfend
 ms.date: 04/24/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

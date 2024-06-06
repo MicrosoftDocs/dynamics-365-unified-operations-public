@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Fixed asset depreciation conventions
-description: This article describes depreciation conventions for fixed assets.
+description: Learn about depreciation conventions for fixed assets, including a table that defines various depreciation conventions.
 author: moaamer
-ms.date: 09/04/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/04/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ---
 
 # Fixed asset depreciation conventions

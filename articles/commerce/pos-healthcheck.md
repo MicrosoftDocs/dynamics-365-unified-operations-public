@@ -6,9 +6,6 @@ description: This article describes the health check operation in Microsoft Dyna
 author: BrianShook
 ms.date: 04/26/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

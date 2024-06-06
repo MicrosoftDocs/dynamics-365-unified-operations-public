@@ -1,20 +1,17 @@
 ---
 title: Electronic Invoicing service ISV last-mile connector
-description: This article explains how to configure and use the Electronic Invoicing service ISV connector.
+description: Learn how to configure and use the Electronic Invoicing service ISV connector, including prerequisites and an outline on integration.
 author: ikondratenko
-ms.date: 01/02/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 2023-12-01
-ms.dyn365.ops.version: AX 10.0.37
+ms.topic: article
+ms.date: 01/02/2024
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2023-12-01
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.37
 ---
 
 # Electronic Invoicing service ISV last-mile connector

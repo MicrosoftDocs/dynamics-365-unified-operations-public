@@ -6,9 +6,6 @@ description: This article provides general information about product recommendat
 author: Moonma
 ms.date: 10/19/2023
 ms.topic: overview
-ms.prod:
-ms.technology:
-
 # optional metadata
 
 ms.search.form:

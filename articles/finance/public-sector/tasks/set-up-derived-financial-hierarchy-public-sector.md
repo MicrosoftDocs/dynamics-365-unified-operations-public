@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up a derived financial hierarchy in the public sector
-description: This article provides information about using derived financial hierarchies to work with posted transaction data for main and full account numbers and financial dimension values. 
+description: Learn about using derived financial hierarchies to work with posted transaction data for main and full account numbers and financial dimension values.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchyLegalEntities, LedgerDerivedFinHierarchies   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchyLegalEntities, LedgerDerivedFinHierarchies
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up a derived financial hierarchy in the public sector
 
 [!include [banner](../../includes/banner.md)]

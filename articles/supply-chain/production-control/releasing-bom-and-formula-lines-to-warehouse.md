@@ -6,8 +6,6 @@ description: This article describes the process for releasing raw material for B
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

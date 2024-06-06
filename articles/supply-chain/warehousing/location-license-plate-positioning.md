@@ -6,8 +6,6 @@ description: License plate location positioning lets you see where a license pla
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable

@@ -6,8 +6,6 @@ description: This article explains how to record receipt of goods directly on a 
 author: Henrikan
 ms.date: 07/09/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

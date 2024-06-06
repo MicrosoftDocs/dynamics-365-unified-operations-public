@@ -6,9 +6,6 @@ description: This article describes the coverage options in Microsoft Dynamics 3
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

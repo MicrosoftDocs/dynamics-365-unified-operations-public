@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 10/27/2022 
+ms.date: 05/22/2024 
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -60,7 +60,7 @@ Each tile shows the number of items that were ordered and the number of items th
 
 ![Vendors not OTIF tab on the Details and impact FastTab.](media/sra-details-impact.png "Vendors not OTIF tab on the Details and impact FastTab")
 
-Select a tile to view the list of order lines that have been counted by that tile.
+Select a tile to view the list of order lines that were counted by that tile.
 
 ### Links FastTab
 

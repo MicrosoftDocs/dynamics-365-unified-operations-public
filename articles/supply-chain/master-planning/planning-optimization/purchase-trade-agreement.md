@@ -6,8 +6,6 @@ description: This article describes how master planning can find the vendor and/
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

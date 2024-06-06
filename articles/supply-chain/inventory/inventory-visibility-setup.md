@@ -2,15 +2,14 @@
 title: Install the Inventory Visibility Add-in
 description: This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
-ms.date: 03/03/2023
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: yufeihuang
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 05/27/2024
+audience: Application User
+ms.custom:
+  - bap-template
 ---
 
 # Install and set up Inventory Visibility
@@ -23,10 +22,10 @@ This article describes how to install the Inventory Visibility Add-in for Micros
 You must use [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2) to install the Inventory Visibility Add-in. Lifecycle Services is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 > [!TIP]
-> If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features. 
+> If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
 >
 > If you're experiencing technical issues or running into exceptions, you can get help by sending email directly to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) (please be sure to include your Supply Chain Management environment ID).
-> 
+>
 > For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 
 ## Inventory Visibility prerequisites
@@ -173,10 +172,10 @@ When you try to enable the Inventory Visibility integration batch job from Suppl
 
 > Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility add-in. Contact Inventory Visibility Support Team at `inventvisibilitysupp@microsoft.com` for more info.
 
-If you receive this error, follow these steps to update your [partition schema](inventory-visibility-power-platform.md#partition-configuration) to help prevent out-of-memory issues. If you don't receive this error, you can skip this procedure.
+If you receive this error, follow these steps to update your [partition schema](inventory-visibility-power-platform.md#data-partition) to help prevent out-of-memory issues. If you don't receive this error, you can skip this procedure.
 
-1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-all-inventory-data).
-1. Set up to send requests to Inventory Visibility, as described in [Inventory Visibility public APIs](inventory-visibility-api.md).
+1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-data).
+1. Set up a system to send [API requests](inventory-visibility-api.md) to Inventory Visibility.
 1. After data is deleted, call the `Get` API with a body of `none` to get all partition IDs (by using `/api/environment/{environmentId}/allpartitionids`). Review the response to confirm that data has been completely cleared. The result should be empty.
 1. Call the `Post` API with a body of `none` to change the partition schema (by using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature, and [update the configuration](inventory-visibility-power-platform.md#update-configuration).

@@ -1,18 +1,16 @@
 ---
 title: Report 340 for Spain
-description: This article provides information about how to set up and generate Report 340 for Spain.
+description: Learn about how to set up and generate Report 340 for Spain, including outlines on entries included in Report 340 and generating a Spanish VAT book.
 author: AdamTrukawka
-ms.date: 05/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Spain
 ms.author: atrukawk
+ms.topic: article
+ms.date: 05/02/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: 
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Report 340 for Spain

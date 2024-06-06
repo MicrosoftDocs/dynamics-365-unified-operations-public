@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Set up customs clearance
-description: This article explains how to set up the registration information that reflects the customs clearance process for products that are transported across the border of the Russian Federation.
+description: Learn how to set up the registration information that reflects the customs clearance process for products transported across the border of the Russian Federation.
 author: AdamTrukawka
-ms.date: 09/12/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: 
-# ms.search.industry: 
 ms.author: atrukawk
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 09/12/2022
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: 
+ms.dyn365.ops.version:
+ms.search.form:
 ms.search.validFrom: 
 ---
 

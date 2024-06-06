@@ -1,32 +1,18 @@
 ---
-# required metadata
-
 title: Sales tax overview
-description: This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
+description: Learn about the sales tax system, including a table that defines and provides the requirement status for various setup activities.
 author: kailiang
-ms.date: 10/28/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxAuthority, TaxPeriod, TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: overview
+ms.date: 03/28/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ---
 
 # Sales tax overview
@@ -55,35 +41,35 @@ Every transaction that sales tax needs to be calculated and posted for must have
 
 The following table describes the entities and the sequence for the tax setup.
 
-| Setup activity                                                  | Required/Optional and description                                                                                                                                                                                                                                                                                         |
-|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Create main accounts.                                           | Required. Before you can set up the sales tax functionality, the main accounts that the company uses to pay and record taxes must be created.                                                                                                                                                                             |
-| Set up ledger posting groups for sales tax.                     | Required. Ledger posting groups define the main accounts for recording and paying sales taxes.   For more information, see [Set up Ledger posting groups for sales tax](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
-| Set up sales tax authorities.                                   | Required. Sales tax authorities are the entities that tax must be reported and paid to.    For more information, see [Set up sales tax authorities](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
-| Set up sales tax settlement periods.                            | Required. Sales tax settlement periods contain information about when and how often sales tax must be reported and paid. They are related to a sales tax authority.                                                                                                                                                       |
-| Set up sales tax reporting codes.                               | Optional. Sales tax reporting codes can be assigned to sales tax codes to report amounts for multiple sales tax codes under one sales tax reporting code. For more information, see [Set up sales tax reporting codes](tasks/set-up-sales-tax-reporting-codes.md).                                         |
-| Set up sales tax codes.                                         | Required. Sales tax codes contain the tax rates and calculation rules for each sales tax. Sales tax codes are related to a sales tax settlement period and a ledger posting group. For more information, see [Set up sales tax codes](tasks/set-up-sales-tax-codes.md).                                |
-| Set up sales tax groups.                                        | Required. Sales tax groups contain a list of sales codes that apply for the party (customer or vendor) of a transaction. For a given transaction, the intersection of sales tax codes in the sales tax group and the item sales tax group determines the sales tax codes that apply to that transaction.                  |
-| Set up item sales tax groups.                                   | Required. Item sales tax groups contain a list of sales codes that apply for the resource (product, service, and so on) of a transaction. For a given transaction, the intersection of sales tax codes in the sales tax group and the item sales tax group determines the sales tax codes that apply to that transaction. For more information, see [Set up sales tax groups and item sales tax groups](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
-| Set up sales tax parameters on the application parameter pages. | Required. Different areas, such as General ledger, Accounts receivable, and Accounts payable, must set up parameters for correct calculation of indirect taxes. Although most of these parameters have default values, they must be modified to fit each company's requirements.                                          |
+| Setup activity                                                  | Required/Optional and description                        |
+|-----------------------------------------------------------------|----------------------------------------------------------------|
+| Create main accounts                                  | Required. Before you can set up the sales tax functionality, the main accounts that the company uses to pay and record taxes must be created.  |
+| Set up ledger posting groups for sales tax                     | Required. Ledger posting groups define the main accounts for recording and paying sales taxes. For more information, see [Set up Ledger posting groups for sales tax](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Set up sales tax authorities                                   | Required. Sales tax authorities are the entities that tax must be reported and paid to. For more information, see [Set up sales tax authorities](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
+| Set up sales tax settlement periods                            | Required. Sales tax settlement periods contain information about when and how often sales tax must be reported and paid. They are related to a sales tax authority.                                                                                                                                                       |
+| Set up sales tax reporting codes                               | Optional. Sales tax reporting codes can be assigned to sales tax codes to report amounts for multiple sales tax codes under one sales tax reporting code. For more information, see [Set up sales tax reporting codes](tasks/set-up-sales-tax-reporting-codes.md).                                         |
+| Set up sales tax codes                                         | Required. Sales tax codes contain the tax rates and calculation rules for each sales tax. Sales tax codes are related to a sales tax settlement period and a ledger posting group. For more information, see [Set up sales tax codes](tasks/set-up-sales-tax-codes.md).                                |
+| Set up sales tax groups                                        | Required. Sales tax groups contain a list of sales codes that apply for the party (customer or vendor) of a transaction. For a given transaction, the intersection of sales tax codes in the sales tax group and the item sales tax group determines the sales tax codes that apply to that transaction.                  |
+| Set up item sales tax groups                                   | Required. Item sales tax groups contain a list of sales codes that apply for the resource (product, service, and so on) of a transaction. For a given transaction, the intersection of sales tax codes in the sales tax group and the item sales tax group determines the sales tax codes that apply to that transaction. For more information, see [Set up sales tax groups and item sales tax groups](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
+| Set up sales tax parameters on the application parameter pages | Required. Different areas, such as General ledger, Accounts receivable, and Accounts payable, must set up parameters for correct calculation of indirect taxes. Although most of these parameters have default values, they must be modified to fit each company's requirements.                                          |
 
 ## Sales tax on transactions
-On every transaction (sales/purchase document lines, journals, and so on), you must enter a sales tax group and an item sales tax group to calculate sales tax. Default groups are specified in master data (for example, customer, vendor, item, and procurement category), but you can manually change the groups on a transaction if you must. Both groups contain a list of sales tax codes, and the intersection of the two lists of sales tax codes determines the list of applicable sales tax codes for the transaction. 
+On every transaction (sales/purchase document lines, or journals), you must enter a sales tax group and an item sales tax group to calculate sales tax. Default groups are specified in master data (for example, customer, vendor, item, and procurement category), but you can manually change the groups on a transaction if you must. Both groups contain a list of sales tax codes, and the intersection of the two lists of sales tax codes determines the list of applicable sales tax codes for the transaction. 
 
 On every transaction, you can look up the calculated sales tax by opening the **Sales tax transaction** page. You can look up the sales tax for a document line or for the whole document. For certain documents (for example, vendor invoice and general journals), you can adjust the calculated sales tax if the original document shows deviant amounts.
 
 ## Sales tax settlement and reporting
-Sales tax must be reported and paid to tax authorities at regulated intervals (monthly, quarterly, and so on). You can settle tax accounts for the interval and offset the balances to the tax settlement account, as specified in the ledger posting groups. You can access this functionality on the **Settle and post sales tax** page. You must specify the sales tax settlement period that sales tax should be settled for. 
+Sales tax must be reported and paid to tax authorities at regulated intervals (monthly, quarterly). You can settle tax accounts for the interval and offset the balances to the tax settlement account, as specified in the ledger posting groups. You can access this functionality on the **Settle and post sales tax** page. You must specify the sales tax settlement period that sales tax should be settled for. 
 
 After the sales tax has been paid, the balance on the sales tax settlement account should be balanced against the bank account. If the sales tax authority that is specified on the sales tax settlement period is related to a vendor account, the sales tax balance is posted as an open vendor invoice and can be included in the regular payment proposal.
 
 ## Conditional sales tax
 Conditional sales tax is a sales tax that is paid proportionally to the actual amount that is paid on an invoice. Conversely, standard sales tax is calculated at invoicing time. Conditional sales tax must be paid to the sales tax authority when the payment is posted, not when the invoice is posted. When the invoice is posted, the transaction must be reported on the sales tax book report. However, the transaction must be excluded from the sales tax payment report. 
 
-If you select the Conditional sales tax check box in the General ledger parameters form, no sales tax can be deducted until you have paid the invoice. This is a legal requirement in some countries/regions.
+If you select the **Conditional sales tax** checkbox on the **General ledger parameters** page, no sales tax can be deducted until you have paid the invoice. This is a legal requirement in some countries/regions.
 
 > [!NOTE]
-> When you select the Conditional sales tax check box, you must set up sales tax codes and sales tax groups, and also create ledger posting groups, to support the functionality. |
+> When you select the **Conditional sales tax** checkbox, you must set up sales tax codes and sales tax groups, and also create ledger posting groups, to support the functionality. 
 
 ###  Example
 
@@ -91,7 +77,7 @@ You settle sales taxes each month. On June 15, you create a customer invoice of 
 -   The sales tax is 25 percent, or 2,500.
 -   The invoice payment is due July 30.
 
-You typically would have to settle and pay 2,500 to the tax authority when the invoice is posted in June, even though you have not received the payment from the customer. 
+You typically would have to settle and pay 2,500 to the tax authority when the invoice is posted in June, even though you haven't received the payment from the customer. 
 
 However, if you are using a conditional sales tax, you settle with the tax authority when you receive the payment from the customer on July 30.
 

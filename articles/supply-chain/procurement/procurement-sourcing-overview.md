@@ -6,8 +6,6 @@ description: This article gives an overview of the functionality that's availabl
 author: Henrikan
 ms.date: 05/06/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

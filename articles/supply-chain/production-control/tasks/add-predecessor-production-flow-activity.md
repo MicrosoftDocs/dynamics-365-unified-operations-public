@@ -6,8 +6,6 @@ description: In a production flow version, all activities must be sequenced.
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -33,7 +31,7 @@ This procedure shows how to associate a predecessor to an activity.
 
 To perform this task, you need a production flow that has the Draft version with at least two activities that can be connected. 
 
-To learn more, read the white paper "Production flows and activities in lean manufacturing."
+To learn more, read the white paper [Lean manufacturing: Production flows and activities](https://go.microsoft.com/fwlink/?linkid=213164).
 
 
 ## Find the production flow and version

@@ -4,8 +4,6 @@ description: This article describes how to design Electronic reporting (ER) conf
 author: kfend
 ms.date: 06/19/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global

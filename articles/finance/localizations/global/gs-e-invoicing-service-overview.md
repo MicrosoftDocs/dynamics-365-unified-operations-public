@@ -1,26 +1,22 @@
 ---
-title: Electronic Invoicing service overview (preview)
-description: This article provides an overview of Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management (preview).
+title: Electronic Invoicing service overview
+description: Learn about Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, including an overview on service availability.
 author: ilikond
-ms.date: 01/21/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39
+ms.topic: overview
+ms.date: 01/21/2022
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
-ms.search.form: 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2024-01-29
+ms.search.form:
+ms.dyn365.ops.version: 10.0.39
 ---
 
-# Electronic Invoicing service overview (preview)
+# Electronic Invoicing service overview
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Electronic invoicing for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is a hyper-scalable multitenant service that enables configurable processing of electronic invoices and configurable electronic documents exchange. The processing and integration rules are fully configurable, and the logic is run outside Finance and Supply Chain Management. The service is targeted mainly at processing electronic invoices in various scenarios. However, it can be configured for other scenarios for different types of documents.
 

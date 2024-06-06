@@ -1,15 +1,13 @@
 ---
 title: Troubleshoot the Regression suite automation tool
-description: This article contains information about how to troubleshoot the Regression suite automation tool (RSAT).
+description: Learn about how to troubleshoot the Regression suite automation tool (RSAT), including overviews on playback logs, generator logs, and test playback errors.
 author: FrankDahl
-ms.date: 01/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 01/15/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 ---

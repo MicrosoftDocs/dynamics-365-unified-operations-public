@@ -4,8 +4,6 @@ description: This article explains how an IT Pro can set up Commerce activation 
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

@@ -6,8 +6,6 @@ description: This article provides information about system-directed work sequen
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable

@@ -4,8 +4,6 @@ description: This article describes how to use bar codes in Dynamics 365 Commerc
 author: josaw1
 ms.date: 09/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

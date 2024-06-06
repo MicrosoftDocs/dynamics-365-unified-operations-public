@@ -1,13 +1,13 @@
 ---
 title: Data entity export performance tips
-description: This article provides tips that can help improve performance during export.
+description: Access tips that can help improve performance during export, including an overview of limiting the number of data sources.
 author: pnghub
 ms.author: gned
-ms.reviewer: twheeloc
 ms.topic: conceptual
-ms.date: 7/25/2023
-ms.custom:
-
+ms.custom: 
+  - bap-template
+ms.date: 06/04/2024
+ms.reviewer: johnmichalak
 ---
 
 # Data entity export performance tips
@@ -18,7 +18,7 @@ This article provides tips that can help improve performance during export.
 
 ## Avoid computed columns that have JOINS
 
-Computed columns should not have joins. Instead, add all the tables that are required for the computation as data sources.
+Computed columns shouldn't have joins. Instead, add all the tables that are required for the computation as data sources.
 
 Computed columns are computed values that SQL Server must return as part of the process of running the data entity view. They have many possible uses, such as returning default values, casing logic, and formatting values. Computed column formula must be written so that SQL Server can quickly compute values and doesn't need large amounts of storage space.
 
@@ -87,11 +87,11 @@ Incremental export queries for change data on the tables in the data entity and 
 
 Over time, the amount of data in staging tables that are used to export entities through staging, or to import them, can build up. The result is slower imports and exports.
 
-If the row count in a staging table is over 20 million, the table's data must be reduced. From the **Data management** workspace, you can schedule a batch data cleanup job that looks for and removes staging data that's related to old imports or exports. When you schedule this job, increase the number of hours that it's allowed to run, and run it daily. The default value of two hours per day often isn't enough. Six or eight hours work better. The job stops when it runs out of data to remove.
+If the row count in a staging table is over 20 million, the table's data must be reduced. From the **Data management** workspace, you can schedule a batch data cleanup job that looks for and removes staging data that's related to old imports or exports. When you schedule this job, increase the number of hours that it can run, and run it daily. The default value of two hours per day often isn't enough. Six or eight hours work better. The job stops when it runs out of data to remove.
 
 ## Don't add custom or customized entities in production until you test them with your data in your sandbox
 
-Sometimes, performance issue don't show up in development environments because of the amount of data. However, they do show up when you test with actual data in your sandbox environment. Therefore, always test the export of new entities in your sandbox. If the export process is slow, improve it before you deploy the entities to production.
+Sometimes, performance issues don't show up in development environments because of the amount of data. However, they do show up when you test with actual data in your sandbox environment. Therefore, always test the export of new entities in your sandbox. If the export process is slow, improve it before you deploy the entities to production.
 
 ## Prevent blocking of your destination tables during export
 
@@ -104,4 +104,14 @@ It isn't always obvious whether another process is using the same tables as your
 
 When you set up your database export connection, consider which type of index you want to be created. By default, a clustered column store index is created. This type of index makes `select` queries fast and can therefore help with reports on the destination table. However, it makes `insert` and `delete` operations slow.
 
-You can turn off the use of the clustered column store index. In this case, the index of the tables that you publish will be based on your staging table key. It's faster to insert or delete by using the staging table index than the clustered column store index. If you've already published by using the clustered column store index, you can still add an index for the staging table key columns yourself.
+## Improve export data performance by adding a filter to an export query
+
+Add a filter to a data export query to reduce the number of records exported and improve performance.
+
+To add a filter to an export query, follow these steps.
+
+1. Go to the **Data management** workspace.
+1. From the list of data export projects, select a project and apply a filter to reduce the number of records that are exported.
+  
+   :::image type="content" source="media/export-data.png" alt-text="Screenshot of data export projects with the Filter button highlighted."::: 
+

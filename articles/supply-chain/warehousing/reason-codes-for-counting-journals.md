@@ -6,8 +6,6 @@ description: This article describes how to set up and apply reason codes for cou
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

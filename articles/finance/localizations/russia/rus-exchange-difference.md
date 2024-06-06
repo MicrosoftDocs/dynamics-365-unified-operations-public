@@ -1,15 +1,13 @@
 ---
 title: Set up exchange rates for currency transactions
-description: This article explains how to set up exchange rates for currency transactions in Russia.
+description: Learn how to set up exchange rates for currency transactions in Russia, including a step-by-step process for setting up the loss or gain calculations.
 author: AdamTrukawka
-ms.date: 10/28/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: kfend
+ms.topic: article
+ms.date: 10/28/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

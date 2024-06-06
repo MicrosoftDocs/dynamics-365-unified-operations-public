@@ -6,9 +6,6 @@ description: This article describes how to set up rounding rules in Dynamics 365
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

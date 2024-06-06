@@ -1,19 +1,16 @@
 ---
 title: Commerce data residency
-description: This article provides information about data residency considerations when deploying the Commerce Scale Unit (cloud).
-author: jashanno
-ms.date: 10/06/2020
+description: Access information about data residency considerations when deploying the Commerce Scale Unit (cloud), including prerequisites.
+author: josaw
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
+ms.date: 10/06/2020
 ms.reviewer: josaw
+audience: IT Pro
 ms.search.region: Global
-ms.author: jashanno
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: 8
 ---
-
 
 # Commerce data residency
 

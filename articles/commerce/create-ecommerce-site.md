@@ -4,8 +4,6 @@ description: This article describes the steps and information required to create
 author: bicyclingfool
 ms.date: 03/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: global

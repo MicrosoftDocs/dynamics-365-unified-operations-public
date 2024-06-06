@@ -6,8 +6,6 @@ description: This article explains how to use the inbound consignment inventory 
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

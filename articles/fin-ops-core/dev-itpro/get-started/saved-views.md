@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Saved views
-description: This article describes how to use the saved views features.
+description: Learn about how to use the saved views features, including overviews on switching between views, changing default views, and creating and modifying views.
 author: jasongre
-ms.date: 11/21/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DefaultDashboard
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 11/21/2022
+ms.custom:
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-07-31
+ms.search.form: DefaultDashboard
 ms.dyn365.ops.version: Platform update 28
-
 ---
 
 # Saved views

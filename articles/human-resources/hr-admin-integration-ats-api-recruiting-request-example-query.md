@@ -6,9 +6,6 @@ description: This article provides an example query for the Recruiting request e
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +24,6 @@ ms.dyn365.ops.version: Human Resources
 # Example query for Recruiting request
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

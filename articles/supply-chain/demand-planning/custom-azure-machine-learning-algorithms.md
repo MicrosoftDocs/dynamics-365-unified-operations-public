@@ -1,6 +1,6 @@
 ---
-title: Use custom Azure Machine Learning algorithms in Demand planning (preview)
-description: This article describes how to continue to use custom Microsoft Azure Machine Learning algorithms that you already use for demand forecasting in Dynamics 365 Supply Chain Management while you use the Demand planning app.
+title: Use custom Azure Machine Learning algorithms in Demand planning
+description: This article describes how to continue to use custom Microsoft Azure Machine Learning algorithms that you already use for demand forecasting in Dynamics 365 Supply Chain Management while you use Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -14,20 +14,17 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Use your own custom Azure Machine Learning algorithms in Demand planning (preview)
+# Use your own custom Azure Machine Learning algorithms in Demand planning
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!-- KFM: Preview until further notice -->
+If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
-If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app.
-
-This article describes the setup that is required to enable the Demand planning app to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
+This article describes the setup that is required to enable Demand planning to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
 
 ## Set up a new Microsoft Entra application
 
-Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables the Demand planning app to connect to your Azure Machine Learning algorithms. (For more information about how to set up a Microsoft Entra application, see [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).)
+Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables Demand planning to connect to your Azure Machine Learning algorithms. (For more information about how to set up a Microsoft Entra application, see [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).)
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) by using an account that has at least *Cloud Application Administrator* privileges.
 1. Register a new Microsoft Entra application as described in [Create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
@@ -67,7 +64,7 @@ The application is now listed in the **All** section of the **Role assignments**
 
 Follow these steps to set up the Azure Machine Learning service connection in Demand planning.
 
-1. Sign in to the Demand planning app.
+1. Sign in to Demand planning.
 1. On the left navigation pane, select **Custom Azure ML**.
 1. Select the plus sign (**&plus;**) button to create a new connection, and set the following fields for it:
 
@@ -85,6 +82,6 @@ Follow these steps to set up a forecast that uses your own Azure Machine Learnin
 
 1. Create a new forecast profile as described in [Create and manage forecast profiles](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
-1. After you've created and saved the profile, select the **Forecast model** tab. (For more information, see [Design forecast models (preview)](design-forecast-models.md).)
+1. After you've created and saved the profile, select the **Forecast model** tab. (For more information, see [Design forecast models](design-forecast-models.md).)
 1. Set up your model. Include a **Finance and operations – Azure Machine Learning** tile in the position where you want to run your algorithm.
 1. Complete the model by adding a **Save** block.

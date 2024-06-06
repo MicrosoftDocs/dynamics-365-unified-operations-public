@@ -45,17 +45,11 @@ There are eight distinct physical measures across those two ATP calculated measu
 
 For more information about calculated measures, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures).
 
-## <a name="setup"></a>Turn on and set up on-hand change scheduling and ATP in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## <a name="setup"></a>Turn on and set up on-hand change scheduling and ATP in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
 Before you can use ATP, you must set up one or more calculated measures to calculate the ATP quantities. You must also turn on the feature and configure ATP settings in Microsoft Power Apps.
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 Follow these steps to turn on the *On-hand change schedule* feature in Power Apps and configure the ATP settings.
 

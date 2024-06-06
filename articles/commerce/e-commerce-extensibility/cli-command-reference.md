@@ -2,19 +2,15 @@
 title: CLI command reference
 description: This article covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 11/02/2022
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: bennettray
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
-ms.assetid: 
 ---
+
 # CLI command reference
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +33,7 @@ For information about each command, see the entries in this article, or use the 
 yarn start <--verbose>
 ```
 
-This command will build and launch the Node server using the port defined in the .env file.
+This command builds and launches the Node server using the port defined in the .env file.
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
@@ -59,7 +55,7 @@ yarn start --verbose
 yarn build <--verbose>
 ```
 
-This command will perform a complete build on the customization code.
+This command performs a complete build on the customization code.
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
@@ -233,7 +229,7 @@ yarn msdyn365 optimize-module-css adventureWorks --requiredStyles=00-settings,01
 yarn msdyn365 pack <--verbose>
 ```
 
-This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package will then be uploaded to the Node server by using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
+This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package is then uploaded to the Node server using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
 
 The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
 

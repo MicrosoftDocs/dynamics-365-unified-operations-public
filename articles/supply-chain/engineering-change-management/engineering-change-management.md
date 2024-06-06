@@ -6,8 +6,6 @@ description: This article provides information about engineering change manageme
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

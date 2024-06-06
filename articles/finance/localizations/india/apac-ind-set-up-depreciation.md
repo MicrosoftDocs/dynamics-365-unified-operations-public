@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up parameters to calculate depreciation (India)
-description: This procedure walks you through setting up fixed assets parameters to calculate depreciation based on the Companies Act of India and to generate the Depreciation schedule report. 
+description: Learn about setting up fixed assets parameters to calculate depreciation based on the Companies Act of India and to generate the Depreciation schedule report. 
 author: AdamTrukawka
-ms.date: 10/10/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: India
-# ms.search.industry: 
 ms.author: atrukawk
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 10/10/2022
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User   
+ms.search.region: India
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up parameters to calculate depreciation (India)
 
 [!include [banner](../../includes/banner.md)]

@@ -6,8 +6,6 @@ description: Delivery schedules allow you to track order line quantity when you 
 author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

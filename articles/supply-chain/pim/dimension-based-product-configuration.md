@@ -6,8 +6,6 @@ description: Dimension-based product configuration represents a simple solution 
 author: t-benebo
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

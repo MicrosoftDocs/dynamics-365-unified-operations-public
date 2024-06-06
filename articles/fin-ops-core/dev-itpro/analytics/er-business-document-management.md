@@ -1,19 +1,17 @@
 ---
 title: Business document management overview
-description: This article provides information about how to use the Business document management feature of the ER framework.
+description: Learn about how to use the Business document management feature of the ER framework, including learning about supported Microsoft 365 applications.
 author: kfend
-ms.date: 04/23/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: overview
+ms.date: 04/23/2021
+ms.reviewer: kfend
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-08-01
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 ms.dyn365.ops.version: 10.0.5
 ms.assetid: 
-ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 ---
 
 # Business document management overview

@@ -6,8 +6,6 @@ description: Lean schedule groups are defined to group and distinguish products 
 author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

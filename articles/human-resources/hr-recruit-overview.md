@@ -6,8 +6,6 @@ description: This article describes recruitment in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 04/22/2022
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -25,7 +23,6 @@ ms.dyn365.ops.version: Version 10.0.27
 ---
 # Dynamics 365 Human Resources recruitment
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

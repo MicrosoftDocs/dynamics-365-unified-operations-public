@@ -6,8 +6,6 @@ description: This guide shows how to create a fuel index region, a fuel index an
 author: Weijiesa
 ms.date: 11/14/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
 ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex

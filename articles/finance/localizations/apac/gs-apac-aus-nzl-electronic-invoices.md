@@ -1,26 +1,22 @@
 ---
-title: Get started with Electronic invoicing for Australia and New Zealand (preview)
-description: This article provides information to help you get started with Electronic invoicing for Australia and New Zealand (preview) in Microsoft Dynamics 365 Finance.
+title: Get started with Electronic invoicing for Australia and New Zealand
+description: Learn about how to get started with Electronic invoicing for Australia and New Zealand in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Australia, New Zealand
 ms.author: ikondratenko
+ms.topic: article
+ms.date: 01/29/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Australia, New Zealand
 ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: AX 10.0.39
-ms.custom: 
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.39
 ---
 
-# Get started with Electronic invoicing for Australia and New Zealand (preview)
+# Get started with Electronic invoicing for Australia and New Zealand
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).

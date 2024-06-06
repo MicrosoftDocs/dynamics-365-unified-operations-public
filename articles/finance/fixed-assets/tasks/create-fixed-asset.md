@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Create a fixed asset
-description: This article explains how to create a new fixed asset record from the Fixed asset list page.
+description: Learn how to manually create a new fixed asset record from the Fixed asset list page and import fixed assets, including a step-by-step process.
 author: moaamer
-ms.date: 10/06/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetTable, AssetBook   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 10/06/2023
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetTable, AssetBook
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a fixed asset
 
 [!include [banner](../../includes/banner.md)]

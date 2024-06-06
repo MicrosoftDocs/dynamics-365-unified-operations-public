@@ -6,8 +6,6 @@ description: This article describes how you can use the BOM designer page to des
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

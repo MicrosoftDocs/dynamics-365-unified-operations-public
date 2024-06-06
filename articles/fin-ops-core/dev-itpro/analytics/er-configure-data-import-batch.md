@@ -1,20 +1,19 @@
 ---
 title: Import data from manually selected files in batch mode
-description: This article explains how to import data from manually selected files in batch mode.
+description: Learn about how to import data from manually selected files in batch mode, included learning about prerequisites and configurations.
 author: kfend
-ms.date: 01/07/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 01/07/2022
+ms.reviewer: kfend
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2022-01-01
+ms.search.form: ERSolutionTable, ERImportFormatSourceTable, ERWorkspace
 ms.dyn365.ops.version: Release 10.0.25
 ms.assetid: 
-ms.search.form: ERSolutionTable, ERImportFormatSourceTable, ERWorkspace
 ---
+
 # Import data from manually selected files in batch mode
 
 [!include[banner](../includes/banner.md)]

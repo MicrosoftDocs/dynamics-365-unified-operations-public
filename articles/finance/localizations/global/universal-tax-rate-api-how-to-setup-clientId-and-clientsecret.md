@@ -1,21 +1,18 @@
 ---
 title: Set up a client ID and a client secret
-description: This article explains how to set up a client ID and a client secret for the Universal Tax Rate API.
+description: Learn how to set up a client ID and a client secret for the Universal Tax Rate API, including prerequisites and an outline on creating a key vault.
 author: Kai-Cloud
-ms.date: 01/20/2024
+ms.author: hailxu
 ms.topic: overview
+ms.date: 01/20/2024
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-audience: Application user
 ms.reviewer: johnmichalak
+audience: Application user
 ms.search.region: Global
-ms.author: hailxu
 ms.search.validFrom: 2024-02-01
-ms.dyn365.ops.version: 10.0.39
-ms.search.form: 
-uid: D365.CFO.FunctionalTraining.Finance.Tax.TaxCalculationService.TaxCalculationConnector.Desgin.SetupClientIdClientSecreteGTEPlus
+ms.search.form:
+ms.dyn365.ops.version: 10.0.39 
 ---
 
 # Set up a client ID and a client secret

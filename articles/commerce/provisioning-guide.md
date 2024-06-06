@@ -4,8 +4,6 @@ description: This article explains how to provision a Microsoft Dynamics 365 Com
 author: josaw1
 ms.date: 06/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

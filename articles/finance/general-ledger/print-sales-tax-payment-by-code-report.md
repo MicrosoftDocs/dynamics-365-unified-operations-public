@@ -1,18 +1,16 @@
 ---
 title: Print the Sales tax payment by code report
-description: This article provides information about the settings and actions that are required to print the Sales tax payment by code report in the accounting or tax code currency.
+description: Learn about the settings and actions that are required to print the Sales tax payment by code report in the accounting or tax code currency.
 author: AdamTrukawka
-ms.date: 05/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 05/27/2020
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-04-08
-ms.dyn365.ops.version: 10.0.11
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Print the Sales tax payment by code report 

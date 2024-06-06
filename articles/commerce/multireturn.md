@@ -6,9 +6,6 @@ description: This article describes the functionality enabling returns across mu
 author: josaw1
 ms.date: 08/27/2020
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

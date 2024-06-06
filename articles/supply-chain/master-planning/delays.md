@@ -6,8 +6,6 @@ description: This article provides information about delayed dates in master pla
 author: t-benebo
 ms.date: 03/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

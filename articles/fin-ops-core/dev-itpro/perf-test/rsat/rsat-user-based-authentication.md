@@ -1,17 +1,17 @@
 ---
 title: User-based authentication
-description: This article explains how to configure user-based authentication so that it can be used with the Regression suite automation tool (RSAT).
+description: Learn about how to configure user-based authentication so that it can be used with the Regression suite automation tool (RSAT).
 author: FrankDahl
-ms.date: 11/23/2023
-ms.topic: how-to
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2023-11-15
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: how-to
+ms.date: 11/23/2023
 ms.custom: 
   - bap-template
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
+ms.search.validFrom: 2023-11-15
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # User-based authentication

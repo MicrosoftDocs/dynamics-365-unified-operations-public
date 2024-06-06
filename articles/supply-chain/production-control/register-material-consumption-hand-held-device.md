@@ -6,8 +6,6 @@ description: This article describes a workflow that enables registration of raw 
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

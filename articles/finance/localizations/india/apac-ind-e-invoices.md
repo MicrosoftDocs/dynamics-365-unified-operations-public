@@ -1,27 +1,14 @@
 ---
-# required metadata
-
 title: Electronic invoices in India
-description: This topic explains how to set up and submit electronic invoices and e-Way Bill information in India.
-author: mrolecki
-ms.date: 07/01/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
+description: Learn how to set up and submit electronic invoices and e-Way Bill information in India, including an outline on setting up electronic invoices.
+author: ilikond
+ms.author: ikondratenko
+ms.date: 06/04/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
-ms.author: mrolecki
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 ---
 
 # Electronic invoices in India

@@ -6,8 +6,6 @@ description: This article focuses on scheduling a production order with operatio
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

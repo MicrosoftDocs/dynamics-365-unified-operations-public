@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Bank foreign currency revaluation 
-description: This article provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
+description: Learn about the process of bank foreign currency revaluation, including outlines on setup, running the process, and reversal of revaluation transactions.
 author: ericwangchen
-ms.date: 07/31/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankCurrencyRevalHistory
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 07/31/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
 ms.search.validFrom: 2019-03-08
+ms.search.form: BankCurrencyRevalHistory
 ms.dyn365.ops.version: 10.0
-
 ---
 
 # Bank foreign currency revaluation

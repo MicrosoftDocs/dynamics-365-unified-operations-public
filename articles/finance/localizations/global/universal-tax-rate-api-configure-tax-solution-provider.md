@@ -1,20 +1,18 @@
 ---
 title: Configure a tax solution provider
-description: This article explains how to configure a tax solution provider for Tax calculation.
+description: Learn how to configure a tax solution provider for Tax calculation, including a step-by-step process for configuring a tax solution provider.
 author: Kai-Cloud
-ms.date: 10/04/2023
+ms.author: kailiang
 ms.topic: how-to
+ms.date: 10/04/2023
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
 ms.reviewer: johnmichalak
 ms.search.region: 
-ms.author: kailiang
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Configure a tax solution provider
 
 [!INCLUDE[banner](../../includes/banner.md)]

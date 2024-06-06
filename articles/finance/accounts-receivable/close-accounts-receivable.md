@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Close Accounts receivable
-description: The following article lists the pages that support the close Accounts receivable business process.
-author: ShivamPandey-msft
-ms.date: 06/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the pages that support the close Accounts receivable business process, including a table that outlines the usage for various page names.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 06/13/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
 ---
 
 # Close Accounts receivable

@@ -6,9 +6,6 @@ description: This article explains an architecture for building an integration b
 author: twheeloc
 ms.date: 11/19/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CDSIntegrationAdministration
@@ -36,9 +33,6 @@ This article describes an architecture for using [Microsoft Dataverse virtual ta
 The following articles provide more information about the concepts in this article:
 
 - [Virtual entities overview](../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md)
-- [Get started with virtual tables (entities)](../fin-ops-core/developer/data-platform/virtual-entities/get-started-ve.md)
-- [Use multi-tenant server-to-server authentication (Microsoft Dataverse)](../fin-ops-core/developer/data-platform/use-multi-tenant-server-server-authentication.md)
-- [Use OAuth authentication with Microsoft Dataverse (Dataverse)](../fin-ops-core/developer/data-platform/authenticate-oauth.md)
 - [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 - [Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization.md)
 

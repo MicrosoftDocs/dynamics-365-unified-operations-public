@@ -1,14 +1,14 @@
 ---
 title: Entities eligible for copilot
-description: This article contains a list of entities eligible for copilot.
-author: ramasri
+description: Access a list of the entities eligible for copilot, organized by alphabetical order.
+author: RamaKrishnamoorthy 
 ms.author: ramasri
 ms.topic: conceptual
 ms.date: 10/30/2023
-ms.reviewer: johnmichalak
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot 
+ms.reviewer: johnmichalak
 ---
 
 # Entities eligible for copilot

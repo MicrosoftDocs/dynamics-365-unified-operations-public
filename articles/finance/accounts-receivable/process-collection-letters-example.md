@@ -1,28 +1,17 @@
 --- 
-# required metadata 
- 
 title: Process collection letters example
-description: This article goes through an example that shows the process of creating, printing, and posting collection letters. 
-author: JodiChristiansen
-ms.date: 03/23/2023
-ms.topic: how-to 
-ms.prod: 
-ms.technology: 
- 
-# optional metadata 
- 
-ms.search.form: CustPosting, CustCollectionLetterNote
-audience: Application User 
-# ms.devlang: 
+description: Access an example that shows the process of creating, printing, and posting collection letters, including a table that defines various collection letter codes. 
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
+ms.date: 05/13/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jchrist
-ms.search.validFrom: 2021-02-03 
+ms.search.validFrom: 2021-02-03
+ms.search.form: CustPosting, CustCollectionLetterNote
 ms.dyn365.ops.version: 10.0.16
-
 ---
 
 # Process collection letters example

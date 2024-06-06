@@ -4,8 +4,6 @@ description: This article describes how to sync product ratings in Microsoft Dyn
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

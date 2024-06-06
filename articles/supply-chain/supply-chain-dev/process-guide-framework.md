@@ -6,8 +6,6 @@ description: This article provides information about the process guide framework
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

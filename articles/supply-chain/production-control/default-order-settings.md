@@ -6,10 +6,12 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 04/19/2024
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Default order settings for dimensions and product variants

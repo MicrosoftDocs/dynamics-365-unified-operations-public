@@ -1,15 +1,13 @@
 ---
 title: Support for multiple VAT registration numbers in reporting for Italy
-description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Italy.
+description: Learn how to support multiple value-added tax (VAT) registration numbers in reporting for Italy, including a table the provides details for report names.
 author: liza-golub
-ms.date: 10/25/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Italy
 ms.author: egolub
+ms.topic: article
+ms.date: 10/25/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2023-04-10
 ms.dyn365.ops.version: AX 10.0.36
 ---

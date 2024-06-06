@@ -1,20 +1,17 @@
 ---
 title: Procurement and sourcing in the public sector
-description: This article explains the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
+description: Learn about the public sector Procurement and sourcing functionality, including purchase order codes, vendor certification types, purchase order line amounts.
 author: velofog
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: velofog
 ms.search.validFrom: 2016-02-28
+ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
-ms.search.industry: Public sector
-ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
 ---
 
 # Procurement and sourcing in the public sector

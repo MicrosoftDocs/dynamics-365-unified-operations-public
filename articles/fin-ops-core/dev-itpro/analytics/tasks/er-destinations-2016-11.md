@@ -4,8 +4,6 @@ description: This procedure demonstrates how to set up and use different destina
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global

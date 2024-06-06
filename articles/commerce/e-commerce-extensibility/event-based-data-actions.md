@@ -4,8 +4,6 @@ description: This article describes how to use event-based data actions.
 author: samjarawan
 ms.date: 10/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

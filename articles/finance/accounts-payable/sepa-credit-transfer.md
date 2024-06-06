@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: SEPA credit transfer overview
-description: This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
+description: Learn about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
 author: mrolecki
-ms.date: 06/20/2017
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mrolecki
+ms.topic: overview
+ms.date: 06/20/2017
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ---
 
 # SEPA credit transfer overview

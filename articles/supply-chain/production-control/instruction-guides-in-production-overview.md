@@ -6,8 +6,6 @@ description: This article explains how to integrate the production management mo
 author: johanhoffmann
 ms.date: 11/13/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -128,7 +126,7 @@ To configure how Guides appear on the shop floor, go to **Mixed Reality \> Dynam
 
 Set the following fields:
 
-- **Microsoft Dataverse URL** - Specify the URL for the Microsoft Dataverse environment where you create your Guides. The format is "contoso.crm4.dynamics.com", where the first part of the URL is typically named after your organization (such as "contoso."), the second part is specific to the data region of your environment (such as "crm4."), and the last part is the domain (such as "dynamics.com"). One way to find the right URL is to go to [home.dynamics.com](https://home.dynamics.com/) and then open your Guides app. When Guides opens, you will see the URL in the address bar of your browser (only take the base URL, which should resemble the previous example). This value is used to compose addresses for your guides and will be encoded into the QR codes."
+- **Microsoft Dataverse URL** - Specify the URL for the Microsoft Dataverse environment where you create your Guides. The format is "contoso.crm4.dynamics.com", where the first part of the URL is typically named after your organization (such as "contoso."), the second part is specific to the data region of your environment (such as "crm4."), and the last part is the domain (such as "dynamics.com"). One way to find the right URL is to go to the [Microsoft 365 apps page](https://www.office.com/apps) and then open your Guides app. When Guides opens, you will see the URL in the address bar of your browser (only take the base URL, which should resemble the previous example). This value is used to compose addresses for your guides and will be encoded into the QR codes."
 - **QR code size** - Set the size of the rendered QR code. We recommend choosing a size that will fill most of your display screen, but not more. Typically, *15* is a good value.
 - **QR code error correction level** - Set the granularity of the QR code. Higher granularity can help increase the code's reliability, but your **QR code size** must be large enough to support the level of detail required by your selected correction level.
 

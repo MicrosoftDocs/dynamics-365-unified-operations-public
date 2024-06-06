@@ -1,20 +1,17 @@
 ---
 title: Advance reports with budget control (Russia)
-description: This article shows how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors.
+description: Learn how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors.
 author: mrolecki
-ms.date: 11/16/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: mrolecki
-ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.topic: article
+ms.date: 11/16/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
+ms.search.validFrom: 2018-10-31
 ms.search.form: 
+ms.dyn365.ops.version: 8.1
 ---
 
 # Advance reports with budget control (Russia)

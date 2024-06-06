@@ -1,15 +1,13 @@
 ---
 title: Validate expected values
-description: This article shows how to use the Regression suite automation for validation of expected values.
+description: Learn about how to use the Regression suite automation for validation of expected values, including how to validate the state of a control.
 author: FrankDahl
-ms.date: 01/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 01/15/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 ---

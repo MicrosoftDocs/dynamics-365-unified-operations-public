@@ -6,9 +6,6 @@ description: Dynamics 365 Human Resources uses reason codes to explain why an em
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

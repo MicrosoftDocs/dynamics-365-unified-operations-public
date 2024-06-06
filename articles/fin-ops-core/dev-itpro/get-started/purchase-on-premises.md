@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Buy Finance + Operations (on-premises)
-description: This article explains how to purchase and deploy Microsoft Dynamics 365 Finance + Operations (on-premises).
-author: faix 
-ms.date: 02/23/2024
-ms.topic: article
-ms.service: dynamics-365
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn about how to purchase and deploy Microsoft Dynamics 365 Finance + Operations (on-premises), with an outline on purchasing Dynamics 365 cloud subscription licenses.
+author: faix
 ms.author: osfaixat
-ms.search.validFrom: 2017-06-30 
+ms.topic: article
+ms.date: 02/23/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: Platform update 8 
 search.app:
   - financeandoperationsonprem-docs

@@ -2,18 +2,13 @@
 title: Create a default customer
 description: This article describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
-ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
+ms.author: mashneer
+ms.search.validFrom: 2020-01-20 
 ---
 # Create a default customer
 
@@ -71,7 +66,7 @@ To create a default customer, follow these steps.
 1. In the **Middle name** drop-down list, select or enter a name (for example, "Retail").
 1. In the **Last name** drop-down list, select or enter a name (for example, "Customer").
 1. In the **Currency** drop-down list, select or enter a currency (for example, "USD").
-1. In the **Currency** drop-down list, select the customer group created previously.
+1. In the **Customer group** drop-down list, select the customer group created previously.
 1. In the **Address books**  drop-down list, select an existing customer address book.
 1. Select **Save** to save and return to customer details screen for the new customer.
 

@@ -1,13 +1,13 @@
 ---
 title: Develop and customize home page
-description: This article provides links to topics about development.
+description: Access links to topics about development, including an overview for finance and operations apps enabling enterprise resource planning applications.
 author: twheeloc
-ms.date: 06/13/2022
-ms.topic: article
-audience: Developer
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: twheeloc
+ms.topic: article
+ms.date: 06/13/2022
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started

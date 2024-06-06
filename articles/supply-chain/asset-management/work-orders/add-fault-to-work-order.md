@@ -1,33 +1,18 @@
 ---
-
-# required metadata
-
 title: Add fault to work order
-description: This article describes how to add fault registrations to work orders in Asset Management.
+description: Learn how to add faults that were set up in the fault designer to a work order in Asset Management, including a step-by-step process.
 author: johanhoffmann
-ms.date: 10/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 10/15/2019
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.5
-
 ---
-
 
 # Add fault to work order
 

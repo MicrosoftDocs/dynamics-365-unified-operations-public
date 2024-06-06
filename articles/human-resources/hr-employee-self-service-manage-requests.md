@@ -6,9 +6,6 @@ description: View and approve leave and absence requests in Dynamics 365 Human R
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EssWorkspace

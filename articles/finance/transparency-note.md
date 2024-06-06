@@ -1,11 +1,11 @@
 ---
 title: Transparency notes for Dynamics 365 Finance
-description: This article provides information about transparency notes for Microsoft Dynamics 365 Finance. Transparency notes describe the AI technology that's used in Finance. They include information about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 6/15/2023
-ms.custom: transparency-note
-ms.topic: article
+description: Learn about transparency notes for Microsoft Dynamics 365 Finance, with information on how AI is used, how it was tested and evaluated, and any limitations.
 author: twheeloc
 ms.author: twheeloc
+ms.topic: article
+ms.date: 6/15/2023
+ms.custom: transparency-note
 ms.reviewer: twheeloc
 ---
 

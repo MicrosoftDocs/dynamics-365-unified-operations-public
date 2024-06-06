@@ -6,9 +6,6 @@ description: This article describes how to set eligibility rules and options in 
 author: twheeloc
 ms.date: 09/24/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

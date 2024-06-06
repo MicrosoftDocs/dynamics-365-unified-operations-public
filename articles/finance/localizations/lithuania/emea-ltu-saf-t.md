@@ -1,15 +1,13 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Lithuania
-description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
+description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
 author: liza-golub
-ms.date: 05/26/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Lithuania
 ms.author: egolub
+ms.topic: article
+ms.date: 05/26/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Lithuania
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

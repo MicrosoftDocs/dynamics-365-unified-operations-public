@@ -6,9 +6,6 @@ description: Create a buy and sell leave request workflow to manage to buy and s
 author: twheeloc
 ms.date: 08/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

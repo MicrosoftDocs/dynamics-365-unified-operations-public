@@ -6,8 +6,6 @@ description: This article explains how to manage mobile device user settings for
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -4,8 +4,6 @@ description: This article shows how you can use a trigger to block an invoice or
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

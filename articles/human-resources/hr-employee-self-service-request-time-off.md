@@ -6,9 +6,6 @@ description: Request time off in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EssWorkspace

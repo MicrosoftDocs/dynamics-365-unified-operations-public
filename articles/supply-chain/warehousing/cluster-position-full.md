@@ -6,8 +6,6 @@ description: This article provides information about the Cluster position full f
 author: Mirzaab
 ms.date: 08/25/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

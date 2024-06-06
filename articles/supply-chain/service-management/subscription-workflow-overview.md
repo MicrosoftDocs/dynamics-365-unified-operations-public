@@ -3,11 +3,9 @@
 
 title: Subscription workflow overview 
 description: This article provides an overview of subscription workflow. 
-author: sorenva
+author: ChristianRytt
 ms.date: 05/07/2018
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

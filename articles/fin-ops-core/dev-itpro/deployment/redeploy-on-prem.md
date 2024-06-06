@@ -1,21 +1,16 @@
 ---
 title: Redeploy on-premises environments
-description: This article provides information about redeploying an on-premises environment.
+description: Learn about redeploying an on-premises environment, including overviews on how to save and redeploy your configurations.
 author: faix
-ms.date: 10/14/2020
-ms.topic: article
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: osfaixat
+ms.topic: article
+ms.date: 10/14/2020
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.custom: 
-ms.assetid: 
-ms.service: dynamics-365
-search.app:
-  - financeandoperationsonprem-docs
 ---
 # Redeploy on-premises environments
 

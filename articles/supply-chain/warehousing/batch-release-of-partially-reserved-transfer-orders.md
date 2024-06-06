@@ -6,8 +6,6 @@ description: This article describes how to set up and apply batch release of par
 author: perlynne
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -6,8 +6,6 @@ description: This article provides an overview of features that are related to h
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

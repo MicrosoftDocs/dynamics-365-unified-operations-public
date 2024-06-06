@@ -1,15 +1,13 @@
 ---
 title: Prepare content for use with the Help pane
-description: This article describes how you can prepare content so that it can be used with the Help pane.
+description: Learn about how you can prepare content so that it can be used with the Help pane, including a table that defines multiple properties.
 author: edupont04
-ms.date: 04/12/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: edupont
+ms.topic: article
+ms.date: 04/12/2023
+ms.reviewer: josaw
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Tax calculation rounding rules
-description: This article provides information about the rounding rules in the tax calculation parameters.
+description: Learn about the rounding rules in the tax calculation parameters, including outlines on rounding precision, the rounding method, and the calculation method.
 author: kailiang
-ms.date: 02/09/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: johnmichalak
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 02/09/2024
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
-
 ---
+
 # Tax calculation rounding rules
 
 [!include [banner](../../includes/banner.md)]

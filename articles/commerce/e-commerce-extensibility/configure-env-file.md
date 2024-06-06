@@ -4,8 +4,6 @@ description: This article describes how to configure the development environment
 author: samjarawan
 ms.date: 03/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

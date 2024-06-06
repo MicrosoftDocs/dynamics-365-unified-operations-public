@@ -4,8 +4,6 @@ description: This article explains how to set up geo detection and redirection f
 author: bicyclingfool
 ms.date: 04/06/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

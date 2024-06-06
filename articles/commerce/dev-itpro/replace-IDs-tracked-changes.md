@@ -4,8 +4,6 @@ description: This article describes how to replace user IDs that are associated 
 author: BrianShook
 ms.date: 04/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
