@@ -17,9 +17,6 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 To create a workflow, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields that the workflow uses. This article describes how to bind a workflow document class to a workflow type.
 
 > [!NOTE]

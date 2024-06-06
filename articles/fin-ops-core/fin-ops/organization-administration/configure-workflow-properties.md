@@ -18,9 +18,6 @@ ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to configure the various properties of a workflow.
 
 To configure the properties of a workflow, open the workflow in the workflow editor. Click the canvas of the workflow editor, and then click **Properties** to open the **Properties** page. You can then use the following procedures to configure the various properties of the workflow.
