@@ -11,7 +11,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.assetid: 
-ms.service: dynamics-365
+ms.service: 
+  - dynamics-365
+  - dynamics-365-op
+
 search.app:
   - financeandoperationsonprem-docs
 ---
