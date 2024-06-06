@@ -4,7 +4,7 @@
 title: Buy and sell leave
 description: This article describes how to submit requests to buy and sell leave in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 05/26/2024
 ms.topic: article
 # optional metadata
 
@@ -31,17 +31,17 @@ In Dynamics 365 Human Resources, you can submit requests to buy and sell leave b
 
 ## Request to buy leave
 
-1. In the **Employee self service** workspace, select **Buy leave request** in the **Time Off Balances** tile. 
+1. In the **Employee self service** workspace, select **Buy leave request** in the **Time Off balances** tile. 
 
 2. Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to buy. 
 
 3. Select **Submit** when you're ready to submit your request. 
 
-Your balances will either automatically update or go through an approval process before updating. This depends on how the buy policy has been configured.
+Your balances either automatically update or go through an approval process before updating, depending how the buy policy has been configured.
 
 ## Request to sell leave
 
-1. In the **Employee self service** workspace, select **Sell leave request** in the **Time Off Balances** tile. 
+1. In the **Employee self service** workspace, select **Sell leave request** in the **Time Off balances** tile. 
 
 2. Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to sell. 
 
