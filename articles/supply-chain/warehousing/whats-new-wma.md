@@ -24,17 +24,17 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ### New features introduced in version 2.3.3.0
 
-This version of the Warehouse Management mobile app introduces the following new features: 
+This version of the Warehouse Management mobile app introduces the following new features:
 
-- Added a cloud authentication method that doesn't require you to register or maintain your own Microsoft Azure Entra ID application. 
-- Added intent scanning for Android, which improves scanner integration on devices that support it. 
+- Simplified authentication setup by providing an option that doesn't require that you register or maintain your own Microsoft Entra ID application.
+- Added intent scanning for Android, which improves scanner integration on devices that support it.
 
 ### New fixes and improvements in version 2.3.3.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- Fixed an issue that striped non-GS1 symbology values when scanning. 
+- Fixed an issue that striped non-GS1 symbology values when scanning.
 
 ## Version 2.3.2.0
 
@@ -76,7 +76,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
-- Improved username and password authentication. Now, if the domain name is present in the connection configuration, then you can sign in using only the alias part of the Entra ID account username (rather than a complete email address). The app will retrieve the domain name from the connection configuration. You can still sign in using the full email address as the username if you prefer.
+- Improved username and password authentication. Now, if the domain name is present in the connection configuration, then you can sign in using only the alias part of the Microsoft Entra ID account username (rather than a complete email address). The app will retrieve the domain name from the connection configuration. You can still sign in using the full email address as the username if you prefer.
 - Fixed an issue where a selected value wasn't respected when moving back and forth within detours.
 - Fixed an issue where the page would sometimes be rendered incorrectly when the device was in landscape mode and the user had selected to never show the *quantity spinner*.
 - The app now moves back to the **Select connection** page if the device code expires (after 15 minutes of inactivity) instead of showing an ambiguous error message.
@@ -154,7 +154,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
-- Wi-Fi strength indicator: Indicates the strength of the Wi-Fi connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It’s also possible to log Wi-Fi strength measurements among the telemetry data collected in Application Insights.
+- Wi-Fi strength indicator: Indicates the strength of the Wi-Fi connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It's also possible to log Wi-Fi strength measurements among the telemetry data collected in Application Insights.
 - Configuration mode: Intended for developers and advanced users, configuration mode provides a deeper understanding of how the app works. It can display and edit the XML code used to build and customize the user interface. For more information about this XML code, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
 
 ### New fixes and improvements in version 2.1.15.0
