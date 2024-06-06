@@ -41,7 +41,7 @@ Workflow history can be used either with or without its AI-powered copilot funct
 
 Use this feature to get an AI-generated summary of the workflow history that you're viewing on the **Workflow history** page. The submitter, submission date, current status, approval or rejection, request change actions, due dates, and comments are summarized for you. This feature is powered by Azure OpenAI Service's large language model. It's designed to reduce the time that you spend searching the workflow history for the most important details, so that you can approve documents quickly and efficiently.
 
-For more information, see [Workflow history summary: Transparency FAQ](../../copilot/workflow-history-summary-FAQ.md).
+For more information, see [Workflow history summary: Transparency FAQ](../copilot/workflow-history-summary-FAQ.md).
 
 This feature has two purposes:
 
