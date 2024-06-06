@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Workers responsible for approving nonconformances
-description: This article describes how to configure workers that are responsible for approving nonconformances.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn how to configure workers that are responsible for approving nonconformances with an outline on enabling a user for nonconformance processing.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventTestTable
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 03/23/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
+ms.search.form: InventTestTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
 # Workers responsible for approving nonconformances
