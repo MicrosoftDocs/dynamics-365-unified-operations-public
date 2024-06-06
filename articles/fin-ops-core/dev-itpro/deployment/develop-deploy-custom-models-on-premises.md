@@ -10,6 +10,8 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
+ms.service: 
+  - dynamics-365-op
 ---
 
 # Develop and deploy custom models to on-premises environments
