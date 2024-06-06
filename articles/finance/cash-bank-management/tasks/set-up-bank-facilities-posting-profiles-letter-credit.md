@@ -4,7 +4,7 @@ description: Learn how to create a Bank facility and posting profile required to
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 06/06/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -18,10 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks through creating a Bank facility and posting profile required to process Letters of credit. 
-
-This tasks uses the demo company 'USMF'.
-
+This document below explains the process of setting up bank facilities and posting profiles which are required to process letters of credit.
 
 ## General ledger parameter
 1. Go to **Cash and bank management > Setup > Cash and bank management parameters**.
@@ -51,15 +48,13 @@ This tasks uses the demo company 'USMF'.
 ## Bank posting profile
 1. Go to **Cash and bank management > Setup > Bank documents posting profile**.
 2. Click **New**.
-3. In the **Account/Group number** field, click the drop-down button to open the lookup.
-4. In the list, find and select the desired record.
-5. In the list, click the link in the selected row.
-6. Select the main account for settlement.
-    * This account is used when calculating cash flow forecast.  
-7. In the **Charges account** field, select the account for expense transactions.
-8. In the **Margin account** field, select the account for margin transactions.
-    * This account is debited when the opening margin is posted and credited when the payment is posted.  
-9. Click **Save**.
+3. In the **Account code** field select **Group** if you would like to define a posting profile for a facility group, or **Table** to create a posting profile for a specific facility type.
+4. In the **Account/Group number** field, click the drop-down button to see the lookup values.
+5. In the list, find and select the desired record.
+6. Select the main account for settlement in the **Settle account** field. This account is used when calculating cash flow forecast.  
+8. In the **Charges account** field, select the account for expense transactions.
+9. In the **Margin account** field, select the account for margin transactions. This account is debited when the opening margin is posted and credited when the payment is posted.  
+10. Click **Save**.
 
 
 
