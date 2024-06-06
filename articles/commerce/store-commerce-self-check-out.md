@@ -1,5 +1,5 @@
 ---
-title: Enable self-checkout in the Store Commerce app (preview)
+title: Enable self-checkout in the Store Commerce app
 description: This article describes how to enable self-checkout and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: anush6121
 ms.author: anvenkat 
@@ -10,9 +10,10 @@ ms.custom:
 ms.reviewer: v-chrgriffin
 ---
 
-# Enable self-checkout in the Store Commerce app (preview)
+# Enable self-checkout in the Store Commerce app
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to enable self-checkout (SCO) and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
