@@ -18,9 +18,6 @@ ms.assetid: 541e6012-4680-4684-8494-e9b5ca4684ee
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article provides an overview about how to configure and filter workspaces.
 
 ## Configuring a workspace

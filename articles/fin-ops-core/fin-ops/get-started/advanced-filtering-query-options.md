@@ -18,9 +18,6 @@ ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.
 
 ## Advanced query syntax
@@ -178,7 +175,7 @@ See the table in the next section for additional details about <strong>SysQueryR
 </td>
 </tr>
 <tr>
-<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td>
+<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td> 
 <td>Find all dates after the specified relative date.</td>
 <td>
 <ul>
