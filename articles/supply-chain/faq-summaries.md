@@ -1,6 +1,6 @@
 ---
 title: Responsible AI FAQ for AI summaries with Copilot
-description: This FAQ provides answers to frequently asked questions about the AI technology that's used in AI summaries with Microsoft Copilot in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides answers to frequently asked questions about the AI technology that's used in AI summaries with Microsoft Copilot in Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 06/06/2024
 ms.collection:
   - bap-ai-copilot
@@ -16,17 +16,17 @@ ms.reviewer: kamaybac
 
 [!include [banner](../includes/banner.md)]
 
-This FAQ provides answers to frequently asked questions about the AI technology that's used in AI summaries with Microsoft Copilot in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+This FAQ provides answers to frequently asked questions about the AI technology that's used in AI summaries with Microsoft Copilot in Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
 ## What are AI summaries with Copilot?
 
-AI summaries with Copilot are available on many of the most-used pages in Dynamics 365 Supply Chain Management. These summaries provide a quick overview of the most important information that's related to the page, personalized for the current user. Summaries can include information such as the number of lines on a purchase order, the number of items in a warehouse, or the number of overdue invoices for a vendor.
+AI summaries with Copilot are available on many of the most-used pages in Supply Chain Management. These summaries provide a quick overview of the most important information that's related to the page, personalized for the current user. Summaries can include information such as the number of lines on a purchase order, the number of items in a warehouse, or the number of overdue invoices for a vendor.
 
 The information that Copilot provides depends on the current page and user context. For example, the information can vary based on the other pages that the user works with the most, and it's limited based on the user's security roles and permissions.
 
-## What are capabilities of AI summaries with Copilot?
+## What are the capabilities of AI summaries with Copilot?
 
-AI summaries with Copilot use information available on the pages where they appear, and other related pages, and use Copilot to generate natural-language summaries of that information. Copilot uses the *gpt-3.5-turbo* generative AI model to generate the natural-language content. Summaries and content are generated from data records stored in the system, including products, purchase orders, and vendors.
+AI summaries with Copilot use Copilot to generate natural-language summaries of information that's available on the pages where they appear and other related pages. Copilot uses the *gpt-3.5-turbo* generative AI model to generate the natural-language content. Summaries and content are generated from data records that are stored in the system, including products, purchase orders, and vendors.
 
 ## What is the intended use of AI summaries with Copilot?
 
@@ -34,15 +34,15 @@ This section describes the intended use for each of the available summaries.
 
 ### Warehouse Management mobile app insights
 
-Warehouse Management mobile app insights give workers information about the number of lines to be picked as open work, the number of workers online at the warehouse, and the type of work to be picked.
+Warehouse Management mobile app insights give workers information about the number of lines that must be picked as open work, the number of workers who are online at the warehouse, and the type of work that must be picked.
 
 ### Product hover and released product summaries
 
-Many different kinds of people need product information, including sellers, planners, purchasers, and more. Unlike product information managers, people working in these roles often lack deep knowledge of each product and where all of its information can be found in the system. Product summaries provide high-level information about what each product is, its availability, and its purchase and sale information.
+Many different people need product information, including sellers, planners, and purchasers. Unlike product information managers, people who work in these roles often lack deep knowledge of each product and where all its information can be found in the system. Product summaries provide high-level information about what each product is, its availability, and its purchase and sale information.
 
 ### Purchase order summaries
 
-Each purchase order summary shows an overview of a selected purchase order's status. For example, it could show the number of partially or fully confirmed, received, and invoiced lines. It could also show other selected insights, such as a summary of lines that are overdue or nearly overdue. Each summary helps focus users' attention on the most important or unusual things about an order.
+Each purchase order summary shows an overview of a selected purchase order's status. For example, it can show the number of partially or fully confirmed, received, and invoiced lines. It can also show other selected insights, such as a summary of lines that are overdue or nearly overdue. Each summary helps focus users' attention on the most important or unusual things about an order.
 
 ### Sales order summaries
 
@@ -50,9 +50,9 @@ Sales order summaries are similar to purchase order summaries, but for sales ord
 
 ### Vendor summaries
 
-Intelligent vendor summaries include information about vendor on-hold status, active contracts, rebates, open purchase orders, outliers, and risks. Each summary indicates the vendor's account number, vendor currency, and accounting currency. Purchase orders, posted vendor invoices, and payment status information is provided. Overdue vendor invoices, purchasing agreements, and active rebates are also shown. Risks stem from overdue purchase lines, delivery trends, vendor history, and potential foreign exchange losses from outstanding invoices.
+Intelligent vendor summaries include information about vendor on-hold status, active contracts, rebates, open purchase orders, outliers, and risks. Each summary indicates the vendor's account number, vendor currency, and accounting currency. Purchase orders, posted vendor invoices, and payment status information are provided. Overdue vendor invoices, purchasing agreements, and active rebates are also shown. Risks arise from overdue purchase lines, delivery trends, vendor history, and potential foreign exchange losses from outstanding invoices.
 
-## How was AI summaries with Copilot evaluated? What metrics are used to measure performance?
+## How were AI summaries with Copilot evaluated? What metrics are used to measure performance?
 
 AI summaries with Copilot underwent substantial testing before they were released. They rely on user feedback to report inappropriate content.
 
@@ -62,7 +62,7 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 ## What are the limitations of AI summaries with Copilot? How can users minimize the impact of these limitations?
 
-AI summaries with Copilot use Copilot to generate summaries of information on the page where they appear and on other related pages. Not all pages are used.
+AI summaries with Copilot use Copilot to generate summaries of information on the page where they appear and other related pages. Not all pages are used.
 
 The generated content should never be used without manual review or supervision.
 
@@ -70,8 +70,8 @@ The generated content should never be used without manual review or supervision.
 
 When you use the feature, follow these recommendations:
 
-- Make sure that your company has sufficient control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
-- Always review the generated summaries before you make decisions based on the information provided.
+- Make sure that your company has enough control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
+- Always review the generated summaries before you make decisions based on the information that's provided.
 
 ## See also
 
