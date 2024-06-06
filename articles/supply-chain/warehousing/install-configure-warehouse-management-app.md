@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.topic: how-to
-ms.date: 06/15/2023
+ms.date: 05/27/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -121,16 +121,17 @@ You can import connection settings from either a file or a QR code. For both app
 
 | Parameter | Description |
 |---|---|
-| `ConnectionName` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
-| `ActiveDirectoryClientAppId` | Specify the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).) |
-| `ActiveDirectoryResource` | Specify the root URL of Supply Chain Management. |
-| `ActiveDirectoryTenant` | Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
-| `Company` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"Certificate"`](warehouse-app-authenticate-service-based.md), [`"ClientSecret"`](warehouse-app-authenticate-service-based.md), [`"DeviceCode"`](warehouse-app-authenticate-user-based.md), and [`"UsernamePassword"`](warehouse-app-authenticate-user-based.md). The default value is `"DeviceCode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
-| `IsEditable` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
-| `IsDefault` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
-| `CertificateThumbprint` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
-| `UseBroker` | (Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) and Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. |
+| `"ConnectionName"` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
+| `"ActiveDirectoryClientAppId"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"` (recommended).</p><p>Specify the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)</p> |
+| `"ActiveDirectoryResource"` | Specify the root URL of Supply Chain Management. |
+| `"ActiveDirectoryTenant"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"` (recommended).</p><p>Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).</p> |
+| `"Company"` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
+| `"ConnectionType"` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"Certificate"`](warehouse-app-authenticate-service-based.md), [`"ClientSecret"`](warehouse-app-authenticate-service-based.md), [`"DeviceCode"`](warehouse-app-authenticate-user-based.md), and [`"UsernamePassword"`](warehouse-app-authenticate-user-based.md). The default value is `"DeviceCode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
+| `"IsEditable"` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
+| `"IsDefaultConnection"` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
+| `"CertificateThumbprint"` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
+| `"UseBroker"` | <p>(Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication. Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. It works with the following authentication systems:</p><ul><li>Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only)</li><li>Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal))</li><li>[Integrated Windows authentication (IWA)](/entra/identity-platform/msal-authentication-flows#integrated-windows-authentication-iwa)</li></ul> |
+| `"AuthCloud"` | <p>Specify the type of Microsoft Entra ID app registration to authenticate with:</p><ul><li>`"AzureGlobal"` – Authenticate by using a global Microsoft Entra ID application that's registered and maintained by Microsoft (recommended). If you choose this option, you don't have to register or maintain your own Microsoft Entra ID app, and you shouldn't specify `"ActiveDirectoryTenant"` or `"ActiveDirectoryClientAppId"` values for this connection.</li><li>`"Manual"` – Authenticate through your own custom Microsoft Entra ID app registration. If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify `"ActiveDirectoryTenant"` and `"ActiveDirectoryClientAppId"` values for this connection.</li></ul> |
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
 
@@ -138,15 +139,13 @@ The following example shows a valid connection settings file that contains two c
 {
     "ConnectionList": [
         {
-            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection1",
-            "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
-            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "ActiveDirectoryResource": "https://yourenvironment1.cloudax.dynamics.com",
             "Company": "USMF",
-            "IsEditable": false,
-            "IsDefaultConnection": true,
-            "CertificateThumbprint": "aaaabbbbcccccdddddeeeeefffffggggghhhhiiiii",
-            "ConnectionType": "Certificate"
+            "IsEditable": true,
+            "IsDefaultConnection": false,
+            "ConnectionType": "DeviceCode",
+            "AuthCloud": "AzureGlobal"
         },
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
@@ -154,30 +153,45 @@ The following example shows a valid connection settings file that contains two c
             "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
             "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
             "Company": "USMF",
-            "IsEditable": true,
-            "IsDefaultConnection": false,
-            "ConnectionType": "ClientSecret"
+            "IsEditable": false,
+            "IsDefaultConnection": true,
+            "CertificateThumbprint": "aaaabbbbcccccdddddeeeeefffffggggghhhhiiiii",
+            "ConnectionType": "Certificate",
+            "AuthCloud": "Manual"
         },
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection3",
-            "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
+            "ActiveDirectoryResource": "https://yourenvironment3.cloudax.dynamics.com",
             "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
-            "ConnectionType": "DeviceCode"
+            "ConnectionType": "ClientSecret",
+            "AuthCloud": "Manual"
         },
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection4",
-            "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
+            "ActiveDirectoryResource": "https://yourenvironment4.cloudax.dynamics.com",
+            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "Company": "USMF",
+            "IsEditable": true,
+            "IsDefaultConnection": false,
+            "ConnectionType": "DeviceCode",
+            "AuthCloud": "Manual"
+        },
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection5",
+            "ActiveDirectoryResource": "https://yourenvironment5.cloudax.dynamics.com",
             "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
             "UseBroker": true,
-            "ConnectionType": "UsernamePassword"
+            "ConnectionType": "UsernamePassword",
+            "AuthCloud": "Manual"
         }
     ]
 }
@@ -233,6 +247,14 @@ If you don't have a file or QR code, you can manually configure the app on the d
 1. Select **Input manually**. The **New Connection** page appears and shows the settings that are required to manually enter the connection details.
 1. Enter the following information:
 
+    - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
+    - **Environment URL** – Specify the root URL of Supply Chain Management.
+
+        > [!IMPORTANT]
+        > - Don't end this value with a slash (/).
+        > - Ensure that the HTTPS (SSL) certificate is valid.
+
+    - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
     - **Authentication method** – Select one of the following values to specify the method that you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure.
 
         - *Device code* – Authenticate by using the device code flow. This method is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
@@ -240,22 +262,19 @@ If you don't have a file or QR code, you can manually configure the app on the d
         - *Client secret (Deprecated)* – Authenticate by using a client secret. This method is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
         - *Certificate (Deprecated)* – Authenticate by using a certificate. This method is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
 
-    - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
-    - **Microsoft Entra ID client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Microsoft Entra ID client secret** – This field is available only when **Authentication method** is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Certificate thumbprint** – This field is available only for Windows devices and only when **Authentication method** is set to *Certificate (Deprecated)*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Environment URL** – Specify the root URL of Supply Chain Management.
+    - **Cloud** – Specify the type of Microsoft Entra ID app registration to authenticate with:
 
-        > [!IMPORTANT]
-        > Don't end this value with a slash (/).
-        > Ensure the HTTPS (SSL) certificate is valid.
+        - *Azure Global* – Authenticate by using the global Microsoft Entra ID application that's registered and maintained by Microsoft (recommended).
+        - *Manual* – Authenticate through your own [custom Microsoft Entra ID app registration](warehouse-app-authenticate-user-based.md#create-service).
 
-    - **Microsoft Entra ID tenant** – Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
+    - **Microsoft Entra ID client ID** – This field is available only when the **Cloud** field is set to *Manual*. Enter the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Microsoft Entra ID tenant** – This field is available only when the **Cloud** field is set to *Manual*. Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
+    - **Microsoft Entra ID client secret** – This field is available only when the **Authentication method** field is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Certificate thumbprint** – This field is available only for Windows devices, and only when the **Authentication method** field is set to *Certificate (Deprecated)*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Use Broker** – This option applies only when the **Authentication method** field is set to *Username and password*. It determines whether a broker is used for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set this option to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password.
     - **Domain name** – This field applies only when the **Authentication method** field is set to *Username and password*. You can use it to make sign-in easier for workers. If you don't set this field, workers must enter their full Microsoft Entra ID user principal name to sign in. A user principal name has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Nevertheless, workers can still enter their full user principal name.)
 
